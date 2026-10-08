@@ -34,13 +34,13 @@ DEACETYLASE	human	Q969S8	HDAC10	Q969S8	7	147	Polyamine deacetylase HDAC10 (EC 3.
 DEACETYLASE	human	Q96DB2	HDAC11	Q96DB2	12	264	Histone deacetylase 11 (HD11) (EC 3.5.1.98)	w
 DEACETYLASE	human	Q96EB6	SIRT1	Q96EB6	72	593	NAD-dependent protein deacetylase sirtuin-1 (hSIRT1) (EC 2.3	w
 DEACETYLASE	human	Q96ST3	SIN3A	Q96ST3	105	744	Paired amphipathic helix protein Sin3a (Histone deacetylase 	w
-DEACETYLASE	human	Q9BQ69	MACROD1	Q9BQ69	8	86	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	w
+DEACETYLASE	human	Q9BQ69	MACROD1	Q9BQ69	25	102	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	w
 DEACETYLASE	human	Q9BY41	HDAC8	Q9BY41	17	314	Histone deacetylase 8 (HD8) (EC 3.5.1.98) (Protein deacetyla	w
 DEACETYLASE	human	Q9H0E3	SAP130	Q9H0E3	65	344	Histone deacetylase complex subunit SAP130 (130 kDa Sin3-ass	w
 DEACETYLASE	human	Q9H7L9	SUDS3	Q9H7L9	42	340	Sin3 histone deacetylase corepressor complex component SDS3 	w
 DEACETYLASE	human	Q9HAJ7	SAP30L	Q9HAJ7	73	442	Histone deacetylase complex subunit SAP30L (HCV non-structur	w
 DEACETYLASE	human	Q9NRC8	SIRT7	Q9NRC8	68	1078	NAD-dependent protein deacetylase sirtuin-7 (EC 2.3.1.286) (	w
-DEACETYLASE	human	Q9NTG7	SIRT3	Q9NTG7	126	497	NAD-dependent protein deacetylase sirtuin-3, mitochondrial (	w
+DEACETYLASE	human	Q9NTG7	SIRT3	Q9NTG7	134	504	NAD-dependent protein deacetylase sirtuin-3, mitochondrial (	w
 DEACETYLASE	human	Q9NX46	ADPRS	Q9NX46	5	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glycohydrolase ARH3) (	w
 DEACETYLASE	human	Q9UBN7	HDAC6	Q9UBN7	77	988	Protein deacetylase HDAC6 (EC 3.5.1.-) (E3 ubiquitin-protein	w
 DEACETYLASE	human	Q9UKV0	HDAC9	Q9UKV0	33	199	Histone deacetylase 9 (HD9) (EC 3.5.1.98) (Histone deacetyla	w
@@ -66,7 +66,7 @@ DEACETYLASE	yeast	P06700	SIR2	P06700	17	115	NAD-dependent histone deacetylase SI
 DEACETYLASE	yeast	P32561	RPD3	P32561	7	139	Histone deacetylase RPD3	w
 DEACETYLASE	yeast	P53096	HOS2	P53096	5	84	Probable histone deacetylase HOS2	w
 DEACETYLASE	yeast	P53685	HST1	P53685	3	46	NAD-dependent protein deacetylase HST1	w
-DEACETYLASE	yeast	P53686	HST2	P53686	1	20	NAD-dependent protein deacetylase HST2	w
+DEACETYLASE	yeast	P53686	HST2	P53686	2	21	NAD-dependent protein deacetylase HST2	w
 DEACETYLASE	yeast	P53687	HST3	P53687	1	20	NAD-dependent histone deacetylase HST3	w
 DEACETYLASE	yeast	P53688	HST4	P53688	0	16	NAD-dependent histone deacetylase HST4	w
 DEACETYLASE	yeast	P53973	HDA1	P53973	1	73	Histone deacetylase HDA1	w
@@ -77,6 +77,7 @@ DEACETYLASE	yeast	Q08923	CTI6	Q08923	8	49	Histone deacetylase complex subunit CT
 DEACETYLASE	yeast	Q12214	HOS1	Q12214	2	49	Histone deacetylase HOS1	w
 DEACETYLASE	zebrafish	A0A0R4IAH0	hdac4	A0A0R4IAH0	9	82	Histone deacetylase	w
 DEACETYLASE	zebrafish	A0A2R8QUG9	sirt7	A0A2R8QUG9	8	67	NAD-dependent protein deacetylase sirtuin-7	w
+DEACETYLASE	zebrafish	A0A8M3AUK3	sirt3	A0A8M3AUK3	4	4	NAD-dependent protein deacetylase sirtuin-3, mitochondrial i	w
 DEACETYLASE	zebrafish	A0A8M6Z193	hdac7b	A0A8M6Z193	9	71	Histone deacetylase 4 isoform X1	w
 DEACETYLASE	zebrafish	A1L2B7	sirt3	A1L2B7	11	56	NAD-dependent protein deacetylase sirtuin-3, mitochondrial	w
 DEACETYLASE	zebrafish	A2BIR6	ydjc	A2BIR6	0	1	Carbohydrate deacetylase	w
@@ -101,7 +102,7 @@ DEACETYLASE-LIKE	human	Q5VUY0	AADACL3	Q5VUY0	1	65	Arylacetamide deacetylase-like
 DEACETYLASE-LIKE	human	Q5VUY2	AADACL4	Q5VUY2	4	72	Arylacetamide deacetylase-like 4 (EC 3.1.1.-)	w
 DEACETYLASE-LIKE	human	Q6P093	AADACL2	Q6P093	0	63	Arylacetamide deacetylase-like 2 (EC 3.1.1.-)	w
 DEACETYLASE-RELATED	human	Q9UKV0	HDAC9	Q9UKV0	33	199	Histone deacetylase 9 (HD9) (EC 3.5.1.98) (Histone deacetyla	w
-DEACYLASE	fly	FBgn0029783	Sirt4	Q8IRR5	36	418	NAD-dependent protein deacylase Sirt4 (EC 2.3.1.286) (Regula	w
+DEACYLASE	fly	FBgn0029783	Sirt4	Q8IRR5	39	421	NAD-dependent protein deacylase Sirt4 (EC 2.3.1.286) (Regula	w
 DEACYLASE	fly	FBgn0037898	Dtd	Q9VGP0	0	2	D-aminoacyl-tRNA deacylase (EC 3.1.1.96) (Gly-tRNA(Ala) deac	w
 DEACYLASE	fly	FBgn0039737	CG7920	Q9VAC1	3	131	Acetyl-CoA hydrolase (EC 3.1.2.1) (Acetyl-CoA deacylase)	w
 DEACYLASE	fly	FBgn0039774	CDase	Q9VA70	17	299	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.23) (Neutral	w
@@ -124,16 +125,16 @@ DEACYLASE	human	Q96FN9	DTD2	Q96FN9	1	43	D-aminoacyl-tRNA deacylase 2 (EC 3.1.1.9
 DEACYLASE	human	Q96IU4	ABHD14B	Q96IU4	6	93	Putative protein-lysine deacylase ABHD14B (EC 2.3.1.-) (Alph	w
 DEACYLASE	human	Q9NR71	ASAH2	Q9NR71	0	27	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.-) (EC 3.5.1	w
 DEACYLASE	human	Q9NRC8	SIRT7	Q9NRC8	68	1078	NAD-dependent protein deacetylase sirtuin-7 (EC 2.3.1.286) (	w
-DEACYLASE	human	Q9NXA8	SIRT5	Q9NXA8	28	139	NAD-dependent protein deacylase sirtuin-5, mitochondrial (EC	w
-DEACYLASE	worm	Q20480	sir-2.2	Q20480	2	37	NAD-dependent protein deacylase sir-2.2	w
+DEACYLASE	human	Q9NXA8	SIRT5	Q9NXA8	38	148	NAD-dependent protein deacylase sirtuin-5, mitochondrial (EC	w
+DEACYLASE	worm	Q20480	sir-2.2	Q20480	3	38	NAD-dependent protein deacylase sir-2.2	w
 DEACYLASE	worm	Q20481	sir-2.3	Q20481	1	15	NAD-dependent protein deacylase sir-2.3	w
 DEACYLASE	worm	Q9XUP4	pqn-68	Q9XUP4	0	14	D-aminoacyl-tRNA deacylase	w
 DEACYLASE	yeast	P53264	CLD1	P53264	0	1	Cardiolipin-specific deacylase 1, mitochondrial	w
 DEACYLASE	yeast	Q07648	DTD1	Q07648	0	7	D-aminoacyl-tRNA deacylase	w
 DEACYLASE	zebrafish	F1QGC8	dtd1	F1QGC8	0	1	D-aminoacyl-tRNA deacylase 1	w
-DEACYLASE	zebrafish	F1QHM6	sirt4	F1QHM6	3	53	NAD-dependent protein deacylase	w
+DEACYLASE	zebrafish	F1QHM6	sirt4	F1QHM6	9	60	NAD-dependent protein deacylase	w
 DEACYLASE	zebrafish	Q68EL2	dtd2	Q68EL2	0	1	D-aminoacyl-tRNA deacylase 2	w
-DEACYLASE	zebrafish	Q6DHI5	sirt5	Q6DHI5	5	89	NAD-dependent protein deacylase sirtuin-5, mitochondrial	w
+DEACYLASE	zebrafish	Q6DHI5	sirt5	Q6DHI5	8	92	NAD-dependent protein deacylase sirtuin-5, mitochondrial	w
 DEACYLASE	zebrafish	Q7T387	abhd14b	Q7T387	0	8	Putative protein-lysine deacylase ABHD14B	w
 DEAD	fly	FBgn0004556	Dbp73D	P26802	5	50	Probable ATP-dependent RNA helicase Dbp73D (DEAD box protein	w
 DEAD	fly	FBgn0004795	retn	Q24573	104	414	Protein dead ringer (Protein retained)	w
@@ -148,7 +149,7 @@ DEAD	fly	FBgn0036754	ais	Q9VVK8	1	29	Probable ATP-dependent RNA helicase DDX52 (
 DEAD	fly	FBgn0036816	Indy	Q9VVT2	5	230	Protein I'm not dead yet (INDY transporter protein) (drIndy)	w
 DEAD	fly	FBgn0037561	CG9630	Q9VHU1	7	122	Probable ATP-dependent RNA helicase DDX55 homolog (DEAD box 	w
 DEAD	fly	FBgn0038916	dnd	Q9VD64	7	67	Dead end (RE02160p)	w
-DEAD	fly	FBgn0086130	Dbp21E2	Q9VPT3	3	79	DEAD box protein 21E2 (LD21669p)	w
+DEAD	fly	FBgn0086130	Dbp21E2	Q9VPT3	4	80	DEAD box protein 21E2 (LD21669p)	w
 DEAD	fly	FBgn0260006	drd	Q8IR42	0	14	Drop dead (EC 2.3.1.-) (RE74651p)	w
 DEAD	fly	FBgn0260466	Indy2	Q9VDQ0	1	6	Protein I'm not dead yet 2	w
 DEAD	haemophilus-influenzae	P44586	deaD	P44586	0	76	ATP-dependent RNA helicase DeaD	
@@ -190,7 +191,7 @@ DEAD	human	Q9H4L7	SMARCAD1	Q9H4L7	18	270	SWI/SNF-related matrix-associated actin
 DEAD	human	Q9H8H2	DDX31	Q9H8H2	21	384	ATP-dependent DNA helicase DDX31 (EC 5.6.2.-) (DEAD box prot	w
 DEAD	human	Q9NQI0	DDX4	Q9NQI0	9	111	Probable ATP-dependent RNA helicase DDX4 (EC 3.6.4.13) (DEAD	w
 DEAD	human	Q9NR30	DDX21	Q9NR30	35	677	Nucleolar RNA helicase 2 (EC 3.6.4.13) (DEAD box protein 21)	w
-DEAD	human	Q9NUL7	DDX28	Q9NUL7	15	281	Probable ATP-dependent RNA helicase DDX28 (EC 3.6.4.13) (Mit	w
+DEAD	human	Q9NUL7	DDX28	Q9NUL7	19	285	Probable ATP-dependent RNA helicase DDX28 (EC 3.6.4.13) (Mit	w
 DEAD	human	Q9NUU7	DDX19A	Q9NUU7	14	164	ATP-dependent RNA helicase DDX19A (EC 3.6.4.13) (DDX19-like 	w
 DEAD	human	Q9NVP1	DDX18	Q9NVP1	44	577	ATP-dependent RNA helicase DDX18 (EC 3.6.4.13) (DEAD box pro	w
 DEAD	human	Q9NXZ2	DDX43	Q9NXZ2	0	95	Probable ATP-dependent RNA helicase DDX43 (EC 3.6.4.13) (Can	w
@@ -222,7 +223,7 @@ DEAD5	human	Q9UMR2	DDX19B	Q9UMR2	15	317	ATP-dependent RNA helicase DDX19B (EC 3.
 DEADBEAT	fly	FBgn0284444	ddbt	A2VEN4	0	0	Deadbeat, isoform B (Deadbeat, isoform C) (IP18037p) (IP1813	w
 DEADC1	human	Q7Z6V5	ADAT2	Q7Z6V5	10	170		
 DEADENYLASE	fly	FBgn0011725	twin	Q8IMX1	43	476	poly(A)-specific ribonuclease (EC 3.1.13.4) (Carbon cataboli	w
-DEADENYLASE	human	Q6L8Q7	PDE12	Q6L8Q7	8	134	2',5'-phosphodiesterase 12 (2'-PDE) (2-PDE) (EC 3.1.4.-) (Mi	w
+DEADENYLASE	human	Q6L8Q7	PDE12	Q6L8Q7	11	137	2',5'-phosphodiesterase 12 (2'-PDE) (2-PDE) (EC 3.1.4.-) (Mi	w
 DEADENYLATI	fly	FBgn0035397	PAN3	Q95RR8	86	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
 DEADENYLATI	human	Q58A45	PAN3	Q58A45	10	143	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
 DEADENYLATI	worm	P34653	panl-3	P34653	5	30	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
@@ -255,11 +256,11 @@ DEAF1	zebrafish	B3DHN2	deaf1	B3DHN2	0	4	DEAF1 transcription factor	w
 DEAF1	zebrafish	B3DHN2	deaf1	B3DHN2	0	4	DEAF1 transcription factor	w
 DEAF1_HUMAN	human	O75398	DEAF1	O75398	77	387		
 DEAFNESS	human	B1AK53	ESPN	B1AK53	48	156	Espin (Autosomal recessive deafness type 36 protein) (Ectopl	w
-DEAFNESS	human	O60220	TIMM8A	O60220	7	103	Mitochondrial import inner membrane translocase subunit Tim8	w
+DEAFNESS	human	O60220	TIMM8A	O60220	9	105	Mitochondrial import inner membrane translocase subunit Tim8	w
 DEAFNESS	human	Q0ZLH3	PJVK	Q0ZLH3	3	62	Pejvakin (Autosomal recessive deafness type 59 protein)	w
 DEAFNESS	human	Q9P202	WHRN	Q9P202	24	109	Whirlin (Autosomal recessive deafness type 31 protein)	w
 DEAFNESS	human	Q9UGK8	SERGEF	Q9UGK8	12	76	Secretion-regulating guanine nucleotide exchange factor (Dea	w
-DEAFNESS	human	Q9Y5J9	TIMM8B	Q9Y5J9	5	88	Mitochondrial import inner membrane translocase subunit Tim8	w
+DEAFNESS	human	Q9Y5J9	TIMM8B	Q9Y5J9	7	90	Mitochondrial import inner membrane translocase subunit Tim8	w
 DEAH	fly	FBgn0032194	ath	Q9VL25	6	63	ATP-dependent RNA helicase DHX33 (EC 3.6.4.13) (DEAH box pro	w
 DEAH	human	O43143	DHX15	O43143	61	681	ATP-dependent RNA helicase DHX15 (EC 3.6.4.13) (ATP-dependen	w
 DEAH	human	Q08211	DHX9	Q08211	24	790	ATP-dependent RNA helicase A (EC 3.6.4.13) (DEAH box protein	w
@@ -312,7 +313,7 @@ DEAMINASE	human	P27487	DPP4	P27487	31	679	Dipeptidyl peptidase 4 (EC 3.4.14.5) (
 DEAMINASE	human	P32320	CDA	P32320	0	148	Cytidine deaminase (EC 3.5.4.5) (Cytidine aminohydrolase)	w
 DEAMINASE	human	P32321	DCTD	P32321	1	71	Deoxycytidylate deaminase (EC 3.5.4.12) (dCMP deaminase)	w
 DEAMINASE	human	P46926	GNPDA1	P46926	3	119	Glucosamine-6-phosphate deaminase 1 (GlcN6P deaminase 1) (EC	w
-DEAMINASE	human	P52758	RIDA	P52758	0	65	2-iminobutanoate/2-iminopropanoate deaminase (EC 3.5.99.10) 	w
+DEAMINASE	human	P52758	RIDA	P52758	1	66	2-iminobutanoate/2-iminopropanoate deaminase (EC 3.5.99.10) 	w
 DEAMINASE	human	P55265	ADAR	P55265	61	374	Double-stranded RNA-specific adenosine deaminase (DRADA) (EC	w
 DEAMINASE	human	P78563	ADARB1	P78563	58	499	Double-stranded RNA-specific editase 1 (EC 3.5.4.37) (RNA-ed	w
 DEAMINASE	human	Q01432	AMPD3	Q01432	4	90	AMP deaminase 3 (EC 3.5.4.6) (AMP deaminase isoform E) (Eryt	w
@@ -324,7 +325,7 @@ DEAMINASE	human	Q8NCV1	ADAD2	Q8NCV1	1	32	Adenosine deaminase domain-containing p
 DEAMINASE	human	Q8TDQ7	GNPDA2	Q8TDQ7	4	114	Glucosamine-6-phosphate deaminase 2 (GlcN6P deaminase 2) (EC	w
 DEAMINASE	human	Q8WW27	APOBEC4	Q8WW27	3	19	Putative deaminase APOBEC-4 (EC 3.5.4.-) (Apolipoprotein B m	w
 DEAMINASE	human	Q96EY9	ADAT3	Q96EY9	8	202	tRNA-specific adenosine-34 deaminase regulatory subunit ADAT	w
-DEAMINASE	human	Q96GA7	SDSL	Q96GA7	3	77	Serine dehydratase-like (Cancerous serine dehydratase) (cSDH	w
+DEAMINASE	human	Q96GA7	SDSL	Q96GA7	4	78	Serine dehydratase-like (Cancerous serine dehydratase) (cSDH	w
 DEAMINASE	human	Q96M93	ADAD1	Q96M93	4	22	Adenosine deaminase domain-containing protein 1 (Testis nucl	w
 DEAMINASE	human	Q9BUB4	ADAT1	Q9BUB4	0	50	tRNA-specific adenosine deaminase 1 (hADAT1) (EC 3.5.4.34) (	w
 DEAMINASE	human	Q9BWV3	CDADC1	Q9BWV3	1	38	dCTP deaminase (EC 3.5.4.13) (Cytidine and dCMP deaminase do	w
@@ -379,8 +380,8 @@ DEAMINASE-LIKE	fly	FBgn0037661	Ada	Q9VHH7	0	9	Adenosine deaminase-like protein (
 DEAMINASE-LIKE	human	Q6DHV7	MAPDA	Q6DHV7	5	61	N6-Methyl-AMP deaminase (EC 3.5.4.-) (Adenosine deaminase-li	w
 DEAMINASE-LIKE	worm	Q8IG39	adal-1	Q8IG39	0	1	Adenosine deaminase-like protein	w
 DEAMINASE-LIKE	zebrafish	Q8JFW4	adat3	Q8JFW4	1	5	Probable inactive tRNA-specific adenosine deaminase-like pro	w
-DEAMINATED	human	Q86X76	NIT1	Q86X76	0	113	Deaminated glutathione amidase (dGSH amidase) (EC 3.5.1.128)	w
-DEAMINATED	yeast	P47016	NIT2	P47016	0	1	Deaminated glutathione amidase	w
+DEAMINATED	human	Q86X76	NIT1	Q86X76	1	114	Deaminated glutathione amidase (dGSH amidase) (EC 3.5.1.128)	w
+DEAMINATED	yeast	P47016	NIT2	P47016	1	2	Deaminated glutathione amidase	w
 DEAMINATED	zebrafish	A0AB32TTV2	nit1	A0AB32TTV2	0	4	Deaminated glutathione amidase	w
 DEAQ	human	Q8TE96	DQX1	Q8TE96	8	125	ATP-dependent RNA helicase homolog DQX1 (DEAQ box polypeptid	w
 DEATH	fly	FBgn0003997	hid	Q24106	16	95	Cell death protein hid (Protein head involution defective) (	w
@@ -402,20 +403,20 @@ DEATH	human	O00220	TNFRSF10A	O00220	48	344	Tumor necrosis factor receptor superf
 DEATH	human	O14737	PDCD5	O14737	15	134	Programmed cell death protein 5 (TF-1 cell apoptosis-related	w
 DEATH	human	O14763	TNFRSF10B	O14763	54	337	Tumor necrosis factor receptor superfamily member 10B (Death	w
 DEATH	human	O14798	TNFRSF10C	O14798	34	147	Tumor necrosis factor receptor superfamily member 10C (Antag	w
-DEATH	human	O43521	BCL2L11	O43521	63	685	Bcl-2-like protein 11 (Bcl2-L-11) (Bcl2-interacting mediator	w
+DEATH	human	O43521	BCL2L11	O43521	65	687	Bcl-2-like protein 11 (Bcl2-L-11) (Bcl2-interacting mediator	w
 DEATH	human	O60543	CIDEA	O60543	20	90	Lipid transferase CIDEA (Cell death activator CIDE-A) (Cell 	w
 DEATH	human	O75340	PDCD6	O75340	27	266	Programmed cell death protein 6 (Apoptosis-linked gene 2 pro	w
 DEATH	human	O75509	TNFRSF21	O75509	31	167	Tumor necrosis factor receptor superfamily member 21 (Death 	w
 DEATH	human	O75618	DEDD	O75618	63	402	Death effector domain-containing protein (DEDPro1) (Death ef	w
 DEATH	human	O95429	BAG4	O95429	45	327	BAG family molecular chaperone regulator 4 (BAG-4) (Bcl-2-as	w
-DEATH	human	O95831	AIFM1	O95831	44	606	Apoptosis-inducing factor 1, mitochondrial (EC 1.6.99.-) (Pr	w
+DEATH	human	O95831	AIFM1	O95831	50	612	Apoptosis-inducing factor 1, mitochondrial (EC 1.6.99.-) (Pr	w
 DEATH	human	P0DPE3	TMDD1	P0DPE3	3	15	Transmembrane and death domain protein 1	w
-DEATH	human	P55957	BID	P55957	14	108	BH3-interacting domain death agonist (p22 BID) (BID) [Cleave	w
+DEATH	human	P55957	BID	P55957	19	113	BH3-interacting domain death agonist (p22 BID) (BID) [Cleave	w
 DEATH	human	P61803	DAD1	P61803	11	118	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 DEATH	human	P78560	CRADD	P78560	8	107	Death domain-containing protein CRADD (Caspase and RIP adapt	w
 DEATH	human	Q13158	FADD	Q13158	15	264	FAS-associated death domain protein (FAS-associating death d	w
 DEATH	human	Q13546	RIPK1	Q13546	115	1474	Receptor-interacting serine/threonine-protein kinase 1 (EC 2	w
-DEATH	human	Q14154	DELE1	Q14154	8	33	DAP3-binding cell death enhancer 1 (DAP3-binding cell death 	w
+DEATH	human	Q14154	DELE1	Q14154	18	43	DAP3-binding cell death enhancer 1 (DAP3-binding cell death 	w
 DEATH	human	Q14690	PDCD11	Q14690	79	479	Protein RRP5 homolog (NF-kappa-B-binding protein) (NFBP) (Pr	w
 DEATH	human	Q15116	PDCD1	Q15116	111	403	Programmed cell death protein 1 (Protein PD-1) (hPD-1) (CD a	w
 DEATH	human	Q15628	TRADD	Q15628	51	381	Tumor necrosis factor receptor type 1-associated DEATH domai	w
@@ -435,20 +436,20 @@ DEATH	human	Q8WXF8	DEDD2	Q8WXF8	55	365	DNA-binding death effector domain-contain
 DEATH	human	Q8WXG6	MADD	Q8WXG6	12	221	MAP kinase-activating death domain protein (Differentially e	w
 DEATH	human	Q92851	CASP10	Q92851	22	133	Caspase-10 (CASP-10) (EC 3.4.22.63) (Apoptotic protease Mch-	w
 DEATH	human	Q92934	BAD	Q92934	52	202	Bcl2-associated agonist of cell death (BAD) (Bcl-2-binding c	w
-DEATH	human	Q969V5	MUL1	Q969V5	21	127	Mitochondrial ubiquitin ligase activator of NFKB 1 (EC 2.3.2	w
+DEATH	human	Q969V5	MUL1	Q969V5	22	128	Mitochondrial ubiquitin ligase activator of NFKB 1 (EC 2.3.2	w
 DEATH	human	Q96AQ7	CIDEC	Q96AQ7	13	85	Lipid transferase CIDEC (Cell death activator CIDE-3) (Cell 	w
 DEATH	human	Q9BQ51	PDCD1LG2	Q9BQ51	68	583	Programmed cell death 1 ligand 2 (PD-1 ligand 2) (PD-L2) (PD	w
 DEATH	human	Q9BRP1	PDCD2L	Q9BRP1	18	133	uS5 assembly chaperone PDCD2L (Programmed cell death protein	w
-DEATH	human	Q9BRQ8	AIFM2	Q9BRQ8	6	122	Ferroptosis suppressor protein 1 (FSP1) (EC 1.6.5.-) (Apopto	w
+DEATH	human	Q9BRQ8	AIFM2	Q9BRQ8	16	132	Ferroptosis suppressor protein 1 (FSP1) (EC 1.6.5.-) (Apopto	w
 DEATH	human	Q9BUL8	PDCD10	Q9BUL8	30	203	Programmed cell death protein 10 (Cerebral cavernous malform	w
 DEATH	human	Q9C000	NLRP1	Q9C000	17	290	NACHT, LRR and PYD domains-containing protein 1 (EC 3.4.-.-)	w
 DEATH	human	Q9H305	CDIP1	Q9H305	6	33	Cell death-inducing p53-target protein 1 (Cell death involve	w
 DEATH	human	Q9H7X2	C1orf115	Q9H7X2	7	83	Required for drug-induced death protein 1	w
 DEATH	human	Q9HB75	PIDD1	Q9HB75	12	191	p53-induced death domain-containing protein 1 (EC 3.4.21.-) 	w
-DEATH	human	Q9NP92	MRPS30	Q9NP92	11	234	Large ribosomal subunit protein mL65 (39S ribosomal protein 	w
+DEATH	human	Q9NP92	MRPS30	Q9NP92	13	236	Large ribosomal subunit protein mL65 (39S ribosomal protein 	w
 DEATH	human	Q9NQS1	AVEN	Q9NQS1	7	49	Cell death regulator Aven	w
 DEATH	human	Q9NZQ7	CD274	Q9NZQ7	115	951	Programmed cell death 1 ligand 1 (PD-L1) (PDCD1 ligand 1) (P	w
-DEATH	human	Q9P0J0	NDUFA13	Q9P0J0	26	387	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+DEATH	human	Q9P0J0	NDUFA13	Q9P0J0	27	388	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
 DEATH	human	Q9UBP9	GULP1	Q9UBP9	17	95	PTB domain-containing engulfment adapter protein 1 (Cell dea	w
 DEATH	human	Q9UER7	DAXX	Q9UER7	57	447	Death domain-associated protein 6 (Daxx) (hDaxx) (ETS1-assoc	w
 DEATH	human	Q9UHD4	CIDEB	Q9UHD4	10	132	Lipid transferase CIDEB (Cell death activator CIDE-B) (Cell 	w
@@ -472,6 +473,7 @@ DEATH	worm	Q9XWD6	ced-1	Q9XWD6	3	17	Cell death abnormality protein 1	w
 DEATH	zebrafish	A0A0R4IXF0	fadd	A0A0R4IXF0	2	61	FAS-associated death domain protein	w
 DEATH	zebrafish	A0A8M1NDG5	ankdd1a	A0A8M1NDG5	0	7	Ankyrin repeat and death domain-containing protein 1A	w
 DEATH	zebrafish	A0A8M6YTH0	dedd1	A0A8M6YTH0	0	5	Death effector domain-containing 1	w
+DEATH	zebrafish	B2KKY9	bim	B2KKY9	4	4	Bcl-2 interacting mediator of cell death	w
 DEATH	zebrafish	B8JLR1	pdcd6ip	B8JLR1	7	81	Programmed cell death 6-interacting protein	w
 DEATH	zebrafish	E7F8D4	nradd	E7F8D4	3	14	Neurotrophin receptor-associated death domain	w
 DEATH	zebrafish	E9QFQ1	pidd1	E9QFQ1	10	189	P53-induced death domain protein 1	w
@@ -482,13 +484,14 @@ DEATH	zebrafish	Q0PKX8	tnfsf10l4	Q0PKX8	4	32	Death ligand 3	w
 DEATH	zebrafish	Q1L8Y5	pdcd4b	Q1L8Y5	5	24	Programmed cell death protein 4	w
 DEATH	zebrafish	Q1LUU4	daxx	Q1LUU4	18	107	Death domain-associated protein 6	w
 DEATH	zebrafish	Q1MTH6	pdcd2	Q1MTH6	1	6	Programmed cell death 2	w
-DEATH	zebrafish	Q4V925	badb	Q4V925	14	17	BCL2 associated agonist of cell death b isoform 1	w
+DEATH	zebrafish	Q4V925	badb	Q4V925	15	18	BCL2 associated agonist of cell death b isoform 1	w
 DEATH	zebrafish	Q5XJP2	cradd	Q5XJP2	1	2	CASP2 and RIPK1 domain-containing adaptor with death domain	w
 DEATH	zebrafish	Q6DHN2	dedd	Q6DHN2	0	5	Death effector domain-containing protein	w
 DEATH	zebrafish	Q6NWL1	pdcd10b	Q6NWL1	5	24	Programmed cell death protein 10-B	w
 DEATH	zebrafish	Q6PHH3	pdcd10a	Q6PHH3	5	24	Programmed cell death protein 10-A	w
 DEATH	zebrafish	Q7T3D5	pdcd6	Q7T3D5	8	28	Programmed cell death protein 6	w
 DEATH	zebrafish	Q7ZUZ4	pdcd5	Q7ZUZ4	0	1	Programmed cell death protein 5	w
+DEATH	zebrafish	Q9I9N3	zfMcl-1a	Q9I9N3	1	1	Cell death regulator Mcl-1a	w
 DEATH	zebrafish	Q9I9N5	tradd	Q9I9N5	11	90	Tumor necrosis factor receptor type 1-associated DEATH domai	w
 DEATH-ASSOCIATED	fly	FBgn0015247	Diap2	Q24307	33	233	Death-associated inhibitor of apoptosis 2 (Apoptosis 2 inhib	w
 DEATH-ASSOCIATED	fly	FBgn0052666	Drak	Q0KHT7	346	1110	Death-associated protein kinase related (EC 2.7.11.1)	w
@@ -497,7 +500,7 @@ DEATH-ASSOCIATED	fly	FBgn0263864	Dark	Q7KLI1	2	60	Apaf-1 related killer DARK (Ap
 DEATH-ASSOCIATED	human	A0PJW8	DAPL1	A0PJW8	22	279	Death-associated protein-like 1 (Early epithelial differenti	w
 DEATH-ASSOCIATED	human	O43293	DAPK3	O43293	278	1467	Death-associated protein kinase 3 (DAP kinase 3) (EC 2.7.11.	w
 DEATH-ASSOCIATED	human	P51397	DAP	P51397	2	32	Death-associated protein 1 (DAP-1)	w
-DEATH-ASSOCIATED	human	P51398	DAP3	P51398	37	607	Small ribosomal subunit protein mS29 (EC 3.6.5.-) (28S ribos	w
+DEATH-ASSOCIATED	human	P51398	DAP3	P51398	46	615	Small ribosomal subunit protein mS29 (EC 3.6.5.-) (28S ribos	w
 DEATH-ASSOCIATED	human	P53355	DAPK1	P53355	13	237	Death-associated protein kinase 1 (DAP kinase 1) (EC 2.7.11.	w
 DEATH-ASSOCIATED	human	P78344	EIF4G2	P78344	15	179	Eukaryotic translation initiation factor 4 gamma 2 (eIF-4-ga	w
 DEATH-ASSOCIATED	human	Q8IYL9	GPR65	Q8IYL9	11	161	G protein-coupled receptor 65 (Psychosine receptor) (T-cell 	w

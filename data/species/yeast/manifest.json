@@ -53,18 +53,34 @@
     "pairsFpr5": 11,
     "pairsFpr1": 3
    }
+  },
+  {
+   "id": "mitomatch-559292",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Saccharomyces cerevisiae orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 183,
+    "pairs": 172,
+    "predictions": 172,
+    "runs": 172,
+    "pairsFpr10": 163,
+    "pairsFpr5": 139,
+    "pairsFpr1": 88
+   }
   }
  ],
  "counts": {
-  "proteins": 5762,
-  "pairs": 159992,
-  "predictions": 164301,
-  "runs": 160041,
-  "pairsFpr10": 10427,
-  "pairsFpr5": 6176,
-  "pairsFpr1": 1563,
-  "pairsInSeveral": 45,
-  "pairsTested": 159992
+  "proteins": 5763,
+  "pairs": 160067,
+  "predictions": 164473,
+  "runs": 160213,
+  "pairsFpr10": 10508,
+  "pairsFpr5": 6238,
+  "pairsFpr1": 1604,
+  "pairsInSeveral": 142,
+  "pairsTested": 160067
  },
  "files": {
   "proteins": "proteins.json",

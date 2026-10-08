@@ -91,7 +91,7 @@ EXCHANGE	human	Q5JS13	RALGPS1	Q5JS13	7	65	Ras-specific guanine nucleotide-releas
 EXCHANGE	human	Q5JSL3	DOCK11	Q5JSL3	9	49	Dedicator of cytokinesis protein 11 (Activated Cdc42-associa	w
 EXCHANGE	human	Q5T2W1	PDZK1	Q5T2W1	9	121	Na(+)/H(+) exchange regulatory cofactor NHE-RF3 (NHERF-3) (C	w
 EXCHANGE	human	Q5VV41	ARHGEF16	Q5VV41	19	209	Rho guanine nucleotide exchange factor 16 (Ephexin-4)	w
-EXCHANGE	human	Q6J4K2	SLC8B1	Q6J4K2	1	46	Mitochondrial sodium/calcium exchanger protein (Na(+)/K(+)/C	w
+EXCHANGE	human	Q6J4K2	SLC8B1	Q6J4K2	4	49	Mitochondrial sodium/calcium exchanger protein (Na(+)/K(+)/C	w
 EXCHANGE	human	Q6ZSZ5	ARHGEF18	Q6ZSZ5	30	86	Rho guanine nucleotide exchange factor 18 (114 kDa Rho-speci	w
 EXCHANGE	human	Q71RS6	SLC24A5	Q71RS6	1	32	Sodium/potassium/calcium exchanger 5 (Na(+)/K(+)/Ca(2+)-exch	w
 EXCHANGE	human	Q7LDG7	RASGRP2	Q7LDG7	25	266	RAS guanyl-releasing protein 2 (Calcium and DAG-regulated gu	w
@@ -227,7 +227,7 @@ EXCHANGER	fly	FBgn0033326	CG14743	A1Z7I2	0	4	Sodium/calcium exchanger membrane r
 EXCHANGER	fly	FBgn0033599	CG13223	A1Z8H3	0	6	Sodium/calcium exchanger membrane region domain-containing p	w
 EXCHANGER	fly	FBgn0037238	CG1090	Q9VN12	0	5	Probable sodium/potassium/calcium exchanger CG1090 (Na(+)/K(	w
 EXCHANGER	fly	FBgn0040297	Nhe2	B7YZY2	5	22	Sodium/hydrogen exchanger	w
-EXCHANGER	fly	FBgn0284252	Letm1	P91927	1	97	Mitochondrial proton/calcium exchanger protein (Leucine zipp	w
+EXCHANGER	fly	FBgn0284252	Letm1	P91927	2	98	Mitochondrial proton/calcium exchanger protein (Leucine zipp	w
 EXCHANGER	human	O14745	NHERF1	O14745	36	261	Na(+)/H(+) exchange regulatory cofactor NHE-RF1 (NHERF-1) (E	w
 EXCHANGER	human	O43826	SLC37A4	O43826	0	103	Glucose-6-phosphate exchanger SLC37A4 (Glucose-6-phosphate t	w
 EXCHANGER	human	O60721	SLC24A1	O60721	3	13	Sodium/potassium/calcium exchanger 1 (Na(+)/K(+)/Ca(2+)-exch	w
@@ -250,7 +250,7 @@ EXCHANGER	human	Q4ZJI4	SLC9B1	Q4ZJI4	2	15	Sodium/hydrogen exchanger 9B1 (Na(+)/H
 EXCHANGER	human	Q5T2W1	PDZK1	Q5T2W1	9	121	Na(+)/H(+) exchange regulatory cofactor NHE-RF3 (NHERF-3) (C	w
 EXCHANGER	human	Q5TAH2	SLC9C2	Q5TAH2	2	35	Sodium/hydrogen exchanger 11 (Na(+)/H(+) exchanger 11) (NHE-	w
 EXCHANGER	human	Q6AI14	SLC9A4	Q6AI14	9	47	Sodium/hydrogen exchanger 4 (Na(+)/H(+) exchanger 4) (NHE-4)	w
-EXCHANGER	human	Q6J4K2	SLC8B1	Q6J4K2	1	46	Mitochondrial sodium/calcium exchanger protein (Na(+)/K(+)/C	w
+EXCHANGER	human	Q6J4K2	SLC8B1	Q6J4K2	4	49	Mitochondrial sodium/calcium exchanger protein (Na(+)/K(+)/C	w
 EXCHANGER	human	Q6U841	SLC4A10	Q6U841	12	77	Sodium-driven chloride bicarbonate exchanger (Solute carrier	w
 EXCHANGER	human	Q70Z35	PREX2	Q70Z35	8	129	Phosphatidylinositol 3,4,5-trisphosphate-dependent Rac excha	w
 EXCHANGER	human	Q71RS6	SLC24A5	Q71RS6	1	32	Sodium/potassium/calcium exchanger 5 (Na(+)/K(+)/Ca(2+)-exch	w
@@ -283,7 +283,7 @@ EXCHANGER	worm	Q20273	slc-9b.1	Q20273	0	1	Cation/H+ exchanger domain-containing 
 EXCHANGER	worm	Q22409	CELE_T11G6.2	Q22409	0	6	Sugar phosphate exchanger 3	w
 EXCHANGER	worm	Q8T5S1	nhx-2	Q8T5S1	0	3	Na(+)/H(+) exchanger protein 2	w
 EXCHANGER	worm	Q9XU88	slc-9b.2	Q9XU88	0	2	Cation/H+ exchanger domain-containing protein	w
-EXCHANGER	worm	Q9XVM0	letm-1	Q9XVM0	0	6	Mitochondrial proton/calcium exchanger protein	w
+EXCHANGER	worm	Q9XVM0	letm-1	Q9XVM0	1	7	Mitochondrial proton/calcium exchanger protein	w
 EXCHANGER	yeast	P25596	GEX1	P25596	0	4	Glutathione exchanger 1	w
 EXCHANGER	yeast	P36173	GEX2	P36173	0	2	Glutathione exchanger 2	w
 EXCHANGER	yeast	Q04121	NHX1	Q04121	0	19	Endosomal/prevacuolar sodium/hydrogen exchanger	w
@@ -294,14 +294,15 @@ EXCHANGER	zebrafish	B6DUH7	slc26a3.1	B6DUH7	0	22	Anion exchanger SLC26A3	w
 EXCHANGER	zebrafish	B7ZVJ6	slc9a3.1	B7ZVJ6	6	9	Sodium/hydrogen exchanger	w
 EXCHANGER	zebrafish	E7EZB6	enox2	E7EZB6	0	1	Ecto-NOX disulfide-thiol exchanger 2	w
 EXCHANGER	zebrafish	F1QSJ6	slc9a6a	F1QSJ6	0	7	Sodium/hydrogen exchanger	w
-EXCHANGER	zebrafish	Q1LY46	letm1	Q1LY46	2	99	Mitochondrial proton/calcium exchanger protein	w
+EXCHANGER	zebrafish	Q1LY46	letm1	Q1LY46	3	100	Mitochondrial proton/calcium exchanger protein	w
 EXCHANGER	zebrafish	Q5U3T2	slc37a1	Q5U3T2	0	2	Glucose-6-phosphate exchanger SLC37A1	w
 EXCHANGER	zebrafish	Q7SY29	slc37a2	Q7SY29	0	2	Glucose-6-phosphate exchanger SLC37A2	w
 EXCHANGER	zebrafish	X1WCA2	enox1	X1WCA2	0	1	Ecto-NOX disulfide-thiol exchanger 1	w
 EXCHANGER-LIKE	human	Q4ZJI4	SLC9B1	Q4ZJI4	2	15	Sodium/hydrogen exchanger 9B1 (Na(+)/H(+) exchanger-like dom	w
 EXCHANGER-LIKE	human	Q86UD5	SLC9B2	Q86UD5	2	22	Sodium/hydrogen exchanger 9B2 (Na(+)/H(+) exchanger NHA2) (N	w
 EXCHANGING	human	O95199	RCBTB2	O95199	6	85	RCC1 and BTB domain-containing protein 2 (Chromosome condens	w
-EXCHANGING	human	Q96I51	RCC1L	Q96I51	12	177	RCC1-like G exchanging factor-like protein (RCC1-like protei	w
+EXCHANGING	human	Q96I51	RCC1L	Q96I51	17	182	RCC1-like G exchanging factor-like protein (RCC1-like protei	w
+EXCHANGING	zebrafish	A3KNL0	si:dkeyp-36f5.3	A3KNL0	4	4	RCC1-like G exchanging factor-like protein	w
 EXCISION	fly	FBgn0002887	mus201	Q4U2Q5	5	44	FI23547p1 (Mutagen-sensitive 201, isoform C) (Mutagen-sensit	w
 EXCISION	fly	FBgn0026777	Rad23	Q9V3W9	21	174	UV excision repair protein RAD23	w
 EXCISION	fly	FBgn0037301	Mms19	Q95U54	3	23	MMS19 nucleotide excision repair protein	w

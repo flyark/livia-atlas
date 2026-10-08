@@ -16,11 +16,12 @@ GLO1	yeast	P50107	GLO1	P50107	0	4	Glyoxalase I
 GLO1	zebrafish	Q6P696	glo1	Q6P696	0	9	Lactoylglutathione lyase	
 GLO2	arabidopsis-thaliana	Q9LRS0	GLO2	Q9LRS0	0	23	Glycolate oxidase 2	
 GLO2	candida-albicans-237561	A0A1D8PID4	GLO2	A0A1D8PID4	0	4	hydroxyacylglutathione hydrolase	
-GLO2	human	Q16775	HAGH	Q16775	13	142		
+GLO2	human	Q16775	HAGH	Q16775	32	161		
 GLO2	oryza-sativa-subsp-japonica	Q7XPR4	GLO2	Q7XPR4	0	4	Glycolate oxidase 2	
-GLO2	schizosaccharomyces-pombe	Q9UT36	glo2	Q9UT36	0	2	Probable hydroxyacylglutathione hydrolase glo2	
+GLO2	schizosaccharomyces-pombe	Q9UT36	glo2	Q9UT36	2	4	Probable hydroxyacylglutathione hydrolase glo2	
 GLO2	yeast	Q05584	GLO2	Q05584	1	17	Hydroxyacylglutathione hydrolase, cytoplasmic isozyme	
-GLO2_HUMAN	human	Q16775	HAGH	Q16775	13	142		
+GLO2_DANRE	zebrafish	Q6P963	hagh	Q6P963	12	29		
+GLO2_HUMAN	human	Q16775	HAGH	Q16775	32	161		
 GLO3	arabidopsis-thaliana	Q24JJ8	GLO3	Q24JJ8	0	18	Peroxisomal (S)-2-hydroxyacid oxidase GLO3	
 GLO3	candida-albicans-237561	Q5A7M1	GLO3	Q5A7M1	4	10	ADP-ribosylation factor GTPase-activating protein	
 GLO3	oryza-sativa-subsp-japonica	Q7FAS1	GLO3	Q7FAS1	0	4	Glycolate oxidase 3	
@@ -46,7 +47,7 @@ GLOB	pseudomonas-aeruginosa	Q9I2T1	gloB	Q9I2T1	0	19	Hydroxyacylglutathione hydro
 GLOB	salmonella-typhimurium	Q8ZRM2	gloB	Q8ZRM2	0	24	Hydroxyacylglutathione hydrolase	
 GLOB	shigella-dysenteriae-serotype-1	Q32JQ1	gloB	Q32JQ1	0	15	Hydroxyacylglutathione hydrolase	
 GLOB1	fly	FBgn0027657	glob1	Q9VF15	18	230	GEO09476p1 (Globin 1, isoform A) (Globin 1, isoform B) (Glob	
-GLOB2	dictyostelium-discoideum	Q54EJ5	gloB2	Q54EJ5	0	3	Glyoxylase B2	
+GLOB2	dictyostelium-discoideum	Q54EJ5	gloB2	Q54EJ5	1	4	Glyoxylase B2	
 GLOB2	fly	FBgn0250846	glob2	Q4V6L1	1	6	Globin 2 (IP08207p)	
 GLOB3	fly	FBgn0037385	glob3	Q9I7P6	0	5	Globin 3 (IP07107p)	
 GLOBAL	yeast	P43554	SWP82	P43554	1	35	SWI/SNF global transcription activator complex subunit SWP82	w
@@ -96,9 +97,12 @@ GLOBULIN	zebrafish	Q64HD0	shbg	Q64HD0	0	24	Sex hormone-binding globulin	w
 GLOC	escherichia-coli-83333	P75849	gloC	P75849	0	19	Hydroxyacylglutathione hydrolase GloC	
 GLOC	haemophilus-influenzae	Q57544	gloC	Q57544	0	8	Hydroxyacylglutathione hydrolase GloC	
 GLOD-4	worm	Q09253	glod-4	Q09253	0	12	Glyoxalase 1	
-GLOD4	human	Q9HC38	GLOD4	Q9HC38	9	124	Glyoxalase domain-containing protein 4	
-GLOD4	mus-musculus	Q9CPV4	Glod4	Q9CPV4	0	2	Glyoxalase domain-containing protein 4	
-GLOD4_HUMAN	human	Q9HC38	GLOD4	Q9HC38	9	124		
+GLOD4	human	Q9HC38	GLOD4	Q9HC38	19	134	Glyoxalase domain-containing protein 4	
+GLOD4	mus-musculus	Q9CPV4	Glod4	Q9CPV4	2	4	Glyoxalase domain-containing protein 4	
+GLOD4	pan-troglodytes	A0A2I3S500	GLOD4	A0A2I3S500	9	10	Glyoxalase domain containing 4	
+GLOD4	rattus-norvegicus	Q5I0D1	Glod4	Q5I0D1	0	1	Glyoxalase domain-containing protein 4	
+GLOD4.L	xenopus-laevis	Q6GPJ6	glod4.L	Q6GPJ6	0	1	MGC84515 protein	
+GLOD4_HUMAN	human	Q9HC38	GLOD4	Q9HC38	19	134		
 GLOD5	dictyostelium-discoideum	Q54L71	glod5	Q54L71	0	1	Glyoxalase domain-containing protein 5 homolog	
 GLOD5	human	A6NK44	GLOD5	A6NK44	0	25	Glyoxalase domain-containing protein 5	
 GLOD5	mus-musculus	Q9D8I3	Glod5	Q9D8I3	0	1	Glyoxalase domain-containing protein 5	
@@ -114,5 +118,5 @@ GLORUND	fly	FBgn0259139	glo	Q9VGH5	3	106	AT27789p (Glorund, isoform A) (Glorund,
 GLOS	fly	FBgn0029686	Glos	Q9W4N9	2	20	Gaulos, isoform A (Gaulos, isoform B) (RE16777p)	
 GLOSSY8	zea-mays	O24478	glossy8	O24478	2	7	B-keto acyl reductase	
 GLOX1	arabidopsis-thaliana	Q9FYG4	GLOX1	Q9FYG4	3	40	Aldehyde oxidase GLOX1	
-GLOXD1	human	Q96IR7	HPDL	Q96IR7	0	48		
+GLOXD1	human	Q96IR7	HPDL	Q96IR7	4	52		
 GLO_140	fly	FBgn0259139	glo	Q9VGH5	3	106		

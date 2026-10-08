@@ -55,15 +55,15 @@ CYP-37B1	worm	O17851	cyp-37b1	O17851	0	2	Cytochrome P450
 CYP-40	human	Q08752	PPID	Q08752	33	221	Peptidyl-prolyl cis-trans isomerase D (PPIase D) (EC 5.2.1.8	w
 CYP-42A1	worm	Q9U1R5	cyp-42a1	Q9U1R5	0	2	Cytochrome P450 4V2	
 CYP-43A1	worm	O17329	cyp-43a1	O17329	1	4	Cytochrome P450	
-CYP-44A1	worm	Q09660	cyp-44A1	Q09660	2	25	Probable cytochrome P450 CYP44	
+CYP-44A1	worm	Q09660	cyp-44A1	Q09660	3	25	Probable cytochrome P450 CYP44	
 CYP-60	human	Q13356	PPIL2	Q13356	27	324	RING-type E3 ubiquitin-protein ligase PPIL2 (EC 2.3.2.27) (C	w
 CYP-71	cladophialophora-carrionii	A0A1C1CBM9	CYP-71	A0A1C1CBM9	0	4	Putative P450 monooxygenase	
-CYP-D	human	P30405	PPIF	P30405	97	673	Peptidyl-prolyl cis-trans isomerase F, mitochondrial (PPIase	w
-CYP-M	human	P30405	PPIF	P30405	97	673	Peptidyl-prolyl cis-trans isomerase F, mitochondrial (PPIase	w
+CYP-D	human	P30405	PPIF	P30405	121	695	Peptidyl-prolyl cis-trans isomerase F, mitochondrial (PPIase	w
+CYP-M	human	P30405	PPIF	P30405	121	695	Peptidyl-prolyl cis-trans isomerase F, mitochondrial (PPIase	w
 CYP-S1	human	P23284	PPIB	P23284	101	806	Peptidyl-prolyl cis-trans isomerase B (PPIase B) (EC 5.2.1.8	w
 CYP1	candida-albicans-237561	P22011	CYP1	P22011	1	55	Peptidyl-prolyl cis-trans isomerase	
 CYP1	cladophialophora-carrionii	A0A1C1CPK8	cyp1	A0A1C1CPK8	12	104	Peptidyl-prolyl cis-trans isomerase	
-CYP1	fly	FBgn0004432	Cyp1	P25007	52	488	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	
+CYP1	fly	FBgn0004432	Cyp1	P25007	58	493	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	
 CYP1	glycine-max	A0A0R0HEL8	CYP1	A0A0R0HEL8	29	417	Peptidyl-prolyl cis-trans isomerase	
 CYP1	glycine-max	Q8W171	Cyp1	Q8W171	34	418	Peptidyl-prolyl cis-trans isomerase 1	
 CYP10	cladophialophora-carrionii	A0A1C1C8R6	CYP10	A0A1C1C8R6	5	59	Peptidyl-prolyl cis-trans isomerase	
@@ -71,17 +71,20 @@ CYP10	glycine-max	I1NJE8	CYP10	I1NJE8	41	657	Peptidyl-prolyl cis-trans isomerase
 CYP10	leishmania-infantum	A4IDA1	CYP10	A4IDA1	6	158	Peptidyl-prolyl cis-trans isomerase	
 CYP11	glycine-max	A0A0R0ETG1	CYP11	A0A0R0ETG1	23	418	Peptidyl-prolyl cis-trans isomerase	
 CYP11	leishmania-infantum	A4I042	CYP11	A4I042	3	65	Peptidyl-prolyl cis-trans isomerase	
-CYP11A	human	P05108	CYP11A1	P05108	9	63		
-CYP11A1	human	P05108	CYP11A1	P05108	9	63	Cholesterol side-chain cleavage enzyme, mitochondrial (EC 1.	
-CYP11A1	mus-musculus	Q9QZ82	Cyp11a1	Q9QZ82	2	6	Cholesterol side-chain cleavage enzyme, mitochondrial	
-CYP11A1	rattus-norvegicus	P14137	Cyp11a1	P14137	2	6	Cholesterol side-chain cleavage enzyme, mitochondrial	
+CYP11A	human	P05108	CYP11A1	P05108	20	74		
+CYP11A1	human	P05108	CYP11A1	P05108	20	74	Cholesterol side-chain cleavage enzyme, mitochondrial (EC 1.	
+CYP11A1	mus-musculus	Q9QZ82	Cyp11a1	Q9QZ82	10	15	Cholesterol side-chain cleavage enzyme, mitochondrial	
+CYP11A1	pan-troglodytes	G2HDT8	CYP11A1	G2HDT8	11	11	Cholesterol side-chain cleavage enzyme, mitochondrial	
+CYP11A1	rattus-norvegicus	P14137	Cyp11a1	P14137	8	12	Cholesterol side-chain cleavage enzyme, mitochondrial	
 CYP11A1.1	zebrafish	Q7SYJ6	cyp11a1.1	Q7SYJ6	3	14	Cholesterol side-chain cleavage enzyme, mitochondrial	
-CYP11A1.2	zebrafish	A0A8M9Q8E0	cyp11a1.2	A0A8M9Q8E0	3	14	Cholesterol side-chain cleavage enzyme, mitochondrial	
-CYP11B1	human	P15538	CYP11B1	P15538	7	31	Cytochrome P450 11B1, mitochondrial (CYP11B1) (CYPXIB1) (Cyt	
+CYP11A1.2	zebrafish	A0A8M9Q8E0	cyp11a1.2	A0A8M9Q8E0	5	16	Cholesterol side-chain cleavage enzyme, mitochondrial	
+CYP11A1.S	xenopus-laevis	A0A1L8GTC0	cyp11a1.S	A0A1L8GTC0	3	3	Cholesterol side-chain cleavage enzyme, mitochondrial	
+CYP11B1	human	P15538	CYP11B1	P15538	25	50	Cytochrome P450 11B1, mitochondrial (CYP11B1) (CYPXIB1) (Cyt	
 CYP11B1	mus-musculus	Q3TG86	Cyp11b1	Q3TG86	2	7	steroid 11beta-monooxygenase	
-CYP11B2	human	P19099	CYP11B2	P19099	6	43	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	
-CYP11B2	mus-musculus	P15539	Cyp11b2	P15539	2	7	Cytochrome P450 11B2, mitochondrial	
-CYP11B3	rattus-norvegicus	P30100	Cyp11b3	P30100	2	8	Cytochrome P450 11B3, mitochondrial	
+CYP11B1	pan-troglodytes	H2QWT4	CYP11B1	H2QWT4	19	20	steroid 11beta-monooxygenase	
+CYP11B2	human	P19099	CYP11B2	P19099	23	60	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	
+CYP11B2	mus-musculus	P15539	Cyp11b2	P15539	8	15	Cytochrome P450 11B2, mitochondrial	
+CYP11B3	rattus-norvegicus	P30100	Cyp11b3	P30100	9	16	Cytochrome P450 11B3, mitochondrial	
 CYP12	human	Q9UNU6	CYP8B1	Q9UNU6	1	48		
 CYP12	leishmania-infantum	A4HRE3	CYP12	A4HRE3	0	28	Putative cyclophilin 12	
 CYP121	mycobacterium-tuberculosis	P9WPP7	cyp121	P9WPP7	5	111	Mycocyclosin synthase	
@@ -155,7 +158,7 @@ CYP1A1	rattus-norvegicus	P00185	Cyp1a1	P00185	3	26	Cytochrome P450 1A1
 CYP1A2	human	P05177	CYP1A2	P05177	3	104	Cytochrome P450 1A2 (EC 1.14.14.1) (CYPIA2) (Cholesterol 25-	
 CYP1A2	mus-musculus	P00186	Cyp1a2	P00186	0	20	Cytochrome P450 1A2	
 CYP1A2	rattus-norvegicus	P04799	Cyp1a2	P04799	0	20	Cytochrome P450 1A2	
-CYP1ALPHA	human	O15528	CYP27B1	O15528	10	145		
+CYP1ALPHA	human	O15528	CYP27B1	O15528	23	158		
 CYP1B1	human	Q16678	CYP1B1	Q16678	18	121	Cytochrome P450 1B1 (EC 1.14.14.1) (CYPIB1) (Hydroperoxy ico	
 CYP1B1	mus-musculus	Q64429	Cyp1b1	Q64429	0	14	Cytochrome P450 1B1	
 CYP1B1	rattus-norvegicus	Q64678	Cyp1b1	Q64678	1	14	Cytochrome P450 1B1	
@@ -186,10 +189,12 @@ CYP22	glycine-max	A0A0R0H0C1	CYP22	A0A0R0H0C1	68	490	Peptidyl-prolyl cis-trans i
 CYP23	arabidopsis-thaliana	Q8LDR3	CYP23	Q8LDR3	10	105	Peptidyl-prolyl cis-trans isomerase CYP23	
 CYP23	glycine-max	I1LFL7	CYP23	I1LFL7	54	657	Peptidyl-prolyl cis-trans isomerase	
 CYP24	glycine-max	C6SV97	CYP24	C6SV97	22	416	Peptidyl-prolyl cis-trans isomerase	
-CYP24	human	Q07973	CYP24A1	Q07973	9	145		
-CYP24A1	human	Q07973	CYP24A1	Q07973	9	145	1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial (24	
-CYP24A1	mus-musculus	Q64441	Cyp24a1	Q64441	1	24	1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial	
-CYP24A1	rattus-norvegicus	Q09128	Cyp24a1	Q09128	1	10	1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial	
+CYP24	human	Q07973	CYP24A1	Q07973	18	154		
+CYP24A1	human	Q07973	CYP24A1	Q07973	18	154	1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial (24	
+CYP24A1	mus-musculus	Q64441	Cyp24a1	Q64441	6	30	1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial	
+CYP24A1	pan-troglodytes	H2R8V0	CYP24A1	H2R8V0	4	5	Cytochrome P450 family 24 subfamily A member 1	
+CYP24A1	rattus-norvegicus	Q09128	Cyp24a1	Q09128	5	14	1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial	
+CYP24A1L	zebrafish	A3KNB0	cyp24a1l	A3KNB0	4	6	1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial	
 CYP25	glycine-max	I1MZ24	CYP25	I1MZ24	35	416	Peptidyl-prolyl cis-trans isomerase	
 CYP26	glycine-max	A0A0R4J4I9	CYP26	A0A0R4J4I9	24	414	Peptidyl-prolyl cis-trans isomerase	
 CYP26	human	O43174	CYP26A1	O43174	5	80		
@@ -209,19 +214,23 @@ CYP26C1	mus-musculus	B2RXA7	Cyp26c1	B2RXA7	0	5	Cytochrome P450 26C1
 CYP26C1	rattus-norvegicus	D4AAL3	Cyp26c1	D4AAL3	0	5	Cytochrome P450, family 26, subfamily C, polypeptide 1	
 CYP26C1	zebrafish	A1L1M2	cyp26c1	A1L1M2	0	8	Cytochrome P450 26C1	
 CYP27	glycine-max	I1N9L1	CYP27	I1N9L1	52	416	peptidylprolyl isomerase	
-CYP27	human	Q02318	CYP27A1	Q02318	6	103		
-CYP27A1	human	Q02318	CYP27A1	Q02318	6	103	Sterol 26-hydroxylase, mitochondrial (EC 1.14.15.15) (5-beta	
-CYP27A1	mus-musculus	Q9DBG1	Cyp27a1	Q9DBG1	1	13	Sterol 26-hydroxylase, mitochondrial	
-CYP27A1	rattus-norvegicus	P17178	Cyp27a1	P17178	1	6	Sterol 26-hydroxylase, mitochondrial	
+CYP27	human	Q02318	CYP27A1	Q02318	14	111		
+CYP27A1	human	Q02318	CYP27A1	Q02318	14	111	Sterol 26-hydroxylase, mitochondrial (EC 1.14.15.15) (5-beta	
+CYP27A1	mus-musculus	Q9DBG1	Cyp27a1	Q9DBG1	5	17	Sterol 26-hydroxylase, mitochondrial	
+CYP27A1	pan-troglodytes	K7CD19	CYP27A1	K7CD19	9	9	Cytochrome P450 family 27 subfamily A member 1	
+CYP27A1	rattus-norvegicus	P17178	Cyp27a1	P17178	5	10	Sterol 26-hydroxylase, mitochondrial	
 CYP27A1.1	zebrafish	F1Q7H1	cyp27a1.1	F1Q7H1	3	8	Cytochrome P450, family 27, subfamily A, polypeptide 7	
-CYP27A1.2	zebrafish	E9QJ06	cyp27a1.2	E9QJ06	3	8	Cytochrome P450, family 27, subfamily A, polypeptide 1, gene	
+CYP27A1.2	zebrafish	E9QJ06	cyp27a1.2	E9QJ06	6	12	Cytochrome P450, family 27, subfamily A, polypeptide 1, gene	
 CYP27A1.4	zebrafish	F1QAE0	cyp27a1.4	F1QAE0	3	8	Cytochrome P450 27A1.4	
 CYP27A2	zebrafish	E7F3G8	cyp27a2	E7F3G8	3	8	Si:ch211-113j14.1	
 CYP27A3	zebrafish	B0UYB4	cyp27a3	B0UYB4	3	8	Cytochrome P450	
-CYP27B	human	O15528	CYP27B1	O15528	10	145		
-CYP27B1	human	O15528	CYP27B1	O15528	10	145	25-hydroxyvitamin D-1 alpha hydroxylase, mitochondrial (EC 1	
-CYP27B1	mus-musculus	O35084	Cyp27b1	O35084	0	9	25-hydroxyvitamin D-1 alpha hydroxylase, mitochondrial	
-CYP27B1	rattus-norvegicus	O35132	Cyp27b1	O35132	1	9	25-hydroxyvitamin D-1 alpha hydroxylase, mitochondrial	
+CYP27B	human	O15528	CYP27B1	O15528	23	158		
+CYP27B1	human	O15528	CYP27B1	O15528	23	158	25-hydroxyvitamin D-1 alpha hydroxylase, mitochondrial (EC 1	
+CYP27B1	mus-musculus	O35084	Cyp27b1	O35084	8	20	25-hydroxyvitamin D-1 alpha hydroxylase, mitochondrial	
+CYP27B1	pan-troglodytes	H2Q6C4	CYP27B1	H2Q6C4	12	12	Cytochrome P450 family 27 subfamily B member 1	
+CYP27B1	rattus-norvegicus	O35132	Cyp27b1	O35132	9	19	25-hydroxyvitamin D-1 alpha hydroxylase, mitochondrial	
+CYP27B1	zebrafish	A0A097HUX0	cyp27b1	A0A097HUX0	4	4	25-hydroxyvitamin D-1alpha-hydroxylase	
+CYP27B1.S	xenopus-laevis	A0A1L8HA53	cyp27b1.S	A0A1L8HA53	1	4	25-hydroxyvitamin D-1 alpha hydroxylase, mitochondrial	
 CYP27C1	human	Q4G0S4	CYP27C1	Q4G0S4	5	26	Cytochrome P450 27C1 (EC 1.14.19.53) (All-trans retinol 3,4-	
 CYP27C1	zebrafish	A8WGA0	cyp27c1	A8WGA0	3	8	Cytochrome P450 27C1	
 CYP28	arabidopsis-thaliana	O65220	CYP28	O65220	1	133	Peptidyl-prolyl cis-trans isomerase CYP28, chloroplastic	
@@ -346,7 +355,7 @@ CYP2X12	zebrafish	A0A1L1QZC0	cyp2x12	A0A1L1QZC0	0	6	Cytochrome P450 2F2
 CYP2X7	zebrafish	F1QSM3	cyp2x7	F1QSM3	1	6	Cytochrome P450 2X7	
 CYP3	cladophialophora-carrionii	A0A1C1CEP9	cyp3	A0A1C1CEP9	18	91	Peptidyl-prolyl cis-trans isomerase	
 CYP3	glycine-max	A0A0R0JF58	CYP3	A0A0R0JF58	27	417	Peptidyl-prolyl cis-trans isomerase	
-CYP3	human	P30405	PPIF	P30405	97	673		
+CYP3	human	P30405	PPIF	P30405	121	695		
 CYP3	leishmania-infantum	A4I050	CyP3	A4I050	8	79	peptidylprolyl isomerase	
 CYP3	schizosaccharomyces-pombe	O74729	cyp3	O74729	5	22	Peptidyl-prolyl cis-trans isomerase cyp3	
 CYP30	glycine-max	I1L648	CYP30	I1L648	83	421	Peptidyl-prolyl cis-trans isomerase CYP30	
@@ -415,7 +424,7 @@ CYP40	leishmania-infantum	A4IC14	CYP40	A4IC14	7	28	peptidylprolyl isomerase
 CYP41	glycine-max	I1LJ10	CYP41	I1LJ10	29	415	Peptidyl-prolyl cis-trans isomerase	
 CYP42	glycine-max	I1J7Y9	CYP42	I1J7Y9	42	353	Peptidyl-prolyl cis-trans isomerase	
 CYP43	glycine-max	I1K8X2	CYP43	I1K8X2	16	415	peptidylprolyl isomerase	
-CYP44	worm	Q09660	cyp-44A1	Q09660	2	25	Probable cytochrome P450 CYP44	w
+CYP44	worm	Q09660	cyp-44A1	Q09660	3	25	Probable cytochrome P450 CYP44	w
 CYP45	glycine-max	A0A0R4J2N7	CYP45	A0A0R4J2N7	27	351	Peptidyl-prolyl cis-trans isomerase	
 CYP46	glycine-max	K7KIK5	CYP46	K7KIK5	14	415	peptidylprolyl isomerase	
 CYP46	human	Q9Y6A2	CYP46A1	Q9Y6A2	3	66		
@@ -427,7 +436,7 @@ CYP46A1.5	zebrafish	A0A0N4SU47	cyp46a1.5	A0A0N4SU47	0	70	Cholesterol 24-hydroxyl
 CYP47	glycine-max	I1K194	CYP47	I1K194	24	412	PPIase cyclophilin-type domain-containing protein	
 CYP48	glycine-max	I1KE04	CYP48	I1KE04	12	296	PPIase cyclophilin-type domain-containing protein	
 CYP49	glycine-max	K7L1Z9	CYP49	K7L1Z9	6	111	Peptidyl-prolyl cis-trans isomerase	
-CYP49A1	fly	FBgn0033524	Cyp49a1	Q9V5L3	0	3	Probable cytochrome P450 49a1 (EC 1.14.-.-) (CYPXLIXA1)	
+CYP49A1	fly	FBgn0033524	Cyp49a1	Q9V5L3	2	5	Probable cytochrome P450 49a1 (EC 1.14.-.-) (CYPXLIXA1)	
 CYP4A10	mus-musculus	O88833	Cyp4a10	O88833	0	3	Cytochrome P450 4A10	
 CYP4A10	rattus-norvegicus	P08516	Cyp4a10	P08516	0	3	Cytochrome P450 4A10	
 CYP4A11	human	Q02928	CYP4A11	Q02928	3	54	Cytochrome P450 4A11 (EC 1.14.14.1) (20-hydroxyeicosatetraen	
@@ -742,6 +751,7 @@ CYP7B1	human	O75881	CYP7B1	O75881	1	72	Cytochrome P450 7B1 (24-hydroxycholestero
 CYP7B1	mus-musculus	Q60991	Cyp7b1	Q60991	0	3	Cytochrome P450 7B1	
 CYP7B1	rattus-norvegicus	Q63688	Cyp7b1	Q63688	0	4	25-hydroxycholesterol 7-alpha-hydroxylase	
 CYP7B1	zebrafish	E7FEI0	cyp7b1	E7FEI0	0	9	Cytochrome P450 7B1	
+CYP7_CAEEL	worm	P52015	cyn-7	P52015	12	96		
 CYP8	cladophialophora-carrionii	A0A1C1C9K0	cyp8	A0A1C1C9K0	11	94	Peptidyl-prolyl cis-trans isomerase-like 2	
 CYP8	glycine-max	I1K1S1	CYP8	I1K1S1	49	590	peptidylprolyl isomerase	
 CYP8	human	Q16647	PTGIS	Q16647	2	97		
@@ -873,7 +883,7 @@ CYPCCCXVIA1	fly	FBgn0035790	Cyp316a1	Q9VS78	1	3	Probable cytochrome P450 316a1 (
 CYPCCCXVIIA1	fly	FBgn0033982	Cyp317a1	Q9V776	0	2	Probable cytochrome P450 317a1 (EC 1.14.-.-) (CYPCCCXVIIA1)	w
 CYPCCCXVIIIA1	fly	FBgn0030369	Cyp318a1	Q9VYQ5	1	5	Probable cytochrome P450 318a1 (EC 1.14.-.-) (CYPCCCXVIIIA1)	w
 CYPD	dictyostelium-discoideum	Q9UA41	cypD	Q9UA41	1	34	Peptidyl-prolyl cis-trans isomerase D, mitochondrial	
-CYPD	human	P30405	PPIF	P30405	97	673	Peptidyl-prolyl cis-trans isomerase F, mitochondrial (PPIase	w
+CYPD	human	P30405	PPIF	P30405	121	695	Peptidyl-prolyl cis-trans isomerase F, mitochondrial (PPIase	w
 CYPD	human	Q08752	PPID	Q08752	33	221		
 CYPD	salmonella-typhimurium	Q8ZRB8	cypD	Q8ZRB8	2	13	Periplasmic chaperone PpiD	
 CYPE	dictyostelium-discoideum	Q9NI62	cypE	Q9NI62	5	87	Peptidyl-prolyl cis-trans isomerase cypE	
@@ -881,6 +891,7 @@ CYPE	fly	FBgn0015031	cype	Q9VMS1	20	101	Cyclope, isoform A (Cyclope, isoform B) 
 CYPH	human	O43447	PPIH	O43447	38	255		
 CYPHER	fly	FBgn0030001	cyr	Q9W3K2	1	2	Cypher, isoform B (Cypher, isoform C) (FI18759p1)	w
 CYPHER	human	O75112	LDB3	O75112	9	49	LIM domain-binding protein 3 (Protein cypher) (Z-band altern	w
+CYPH_YEAST	yeast	P14832	CPR1	P14832	10	184		
 CYPIA1	human	P04798	CYP1A1	P04798	11	231	Cytochrome P450 1A1 (CYPIA1) (EC 1.14.14.1) (Cytochrome P450	w
 CYPIA2	human	P05177	CYP1A2	P05177	3	104	Cytochrome P450 1A2 (EC 1.14.14.1) (CYPIA2) (Cholesterol 25-	w
 CYPIB1	human	Q16678	CYP1B1	Q16678	18	121	Cytochrome P450 1B1 (EC 1.14.14.1) (CYPIB1) (Hydroperoxy ico	w
@@ -961,9 +972,9 @@ CYPVIT3	fly	FBgn0033697	Cyp6t3	Q9V676	0	10	Probable cytochrome P450 6t3 (EC 1.14
 CYPVIU1	fly	FBgn0033121	Cyp6u1	Q9V979	0	2	Probable cytochrome P450 6u1 (EC 1.14.-.-) (CYPVIU1)	w
 CYPVIV1	fly	FBgn0031126	Cyp6v1	Q9VRB3	0	8	Probable cytochrome P450 6v1 (EC 1.14.-.-) (CYPVIV1)	w
 CYPVIW1	fly	FBgn0033065	Cyp6w1	Q9V9L1	0	3	Probable cytochrome P450 6w1 (EC 1.14.-.-) (CYPVIW1)	w
-CYPXIA1	human	P05108	CYP11A1	P05108	9	63	Cholesterol side-chain cleavage enzyme, mitochondrial (EC 1.	w
-CYPXIB1	human	P15538	CYP11B1	P15538	7	31	Cytochrome P450 11B1, mitochondrial (CYP11B1) (CYPXIB1) (Cyt	w
-CYPXIB2	human	P19099	CYP11B2	P19099	6	43	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
+CYPXIA1	human	P05108	CYP11A1	P05108	20	74	Cholesterol side-chain cleavage enzyme, mitochondrial (EC 1.	w
+CYPXIB1	human	P15538	CYP11B1	P15538	25	50	Cytochrome P450 11B1, mitochondrial (CYP11B1) (CYPXIB1) (Cyt	w
+CYPXIB2	human	P19099	CYP11B2	P19099	23	60	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
 CYPXIIA4	fly	FBgn0038681	Cyp12a4	Q9VE00	1	9	Probable cytochrome P450 12a4, mitochondrial (EC 1.14.-.-) (	w
 CYPXIIA5	fly	FBgn0038680	Cyp12a5	Q9VE01	0	6	Probable cytochrome P450 12a5, mitochondrial (EC 1.14.-.-) (	w
 CYPXIIB2	fly	FBgn0034387	Cyp12b2	Q9V8M2	2	9	Probable cytochrome P450 12b2, mitochondrial (EC 1.14.-.-) (	w
@@ -972,7 +983,7 @@ CYPXIID1	fly	FBgn0050489	Cyp12d1-p	P82712	1	78	Probable cytochrome P450 12d1 pro
 CYPXIID1	fly	FBgn0053503	Cyp12d1-d	Q7KR10	1	48	Probable cytochrome P450 12d1 distal, mitochondrial (EC 1.14	w
 CYPXIIE1	fly	FBgn0037817	Cyp12e1	Q9VGZ0	0	7	Probable cytochrome P450 12e1, mitochondrial (EC 1.14.-.-) (	w
 CYPXIX	human	P11511	CYP19A1	P11511	9	113	Aromatase (EC 1.14.14.14) (CYPXIX) (Cytochrome P-450AROM) (C	w
-CYPXLIXA1	fly	FBgn0033524	Cyp49a1	Q9V5L3	0	3	Probable cytochrome P450 49a1 (EC 1.14.-.-) (CYPXLIXA1)	w
+CYPXLIXA1	fly	FBgn0033524	Cyp49a1	Q9V5L3	2	5	Probable cytochrome P450 49a1 (EC 1.14.-.-) (CYPXLIXA1)	w
 CYPXVII	human	P05093	CYP17A1	P05093	2	63	Steroid 17-alpha-hydroxylase/17,20 lyase (EC 1.14.14.19) (17	w
 CYPXVIIIA1	fly	FBgn0010383	Cyp18a1	Q95078	1	5	Cytochrome P450 18a1 (EC 1.14.-.-) (CYPXVIIIA1)	w
 CYPXXVIIIA5	fly	FBgn0028940	Cyp28a5	Q9V419	0	8	Probable cytochrome P450 28a5 (EC 1.14.-.-) (CYPXXVIIIA5)	w

@@ -11,7 +11,7 @@ ENZYME	fly	FBgn0013717	not	Q9VVR1	13	70	Ubiquitin carboxyl-terminal hydrolase no
 ENZYME	fly	FBgn0015320	Ubc2	P52485	24	98	Ubiquitin-conjugating enzyme E2-24 kDa (EC 2.3.2.23) (E2 ubi	w
 ENZYME	fly	FBgn0015321	Ubc4	P52486	27	78	Ubiquitin-conjugating enzyme E2-22 kDa (EC 2.3.2.23) (E2 ubi	w
 ENZYME	fly	FBgn0017456	Ubc84D	P52487	15	47	Ubiquitin-conjugating enzyme E2-18 kDa (EC 2.3.2.23) (E2 ubi	w
-ENZYME	fly	FBgn0020236	Acly	Q7KN85	0	162	ATP-citrate synthase (EC 2.3.3.8) (ATP-citrate (pro-S-)-lyas	w
+ENZYME	fly	FBgn0020236	Acly	Q7KN85	1	163	ATP-citrate synthase (EC 2.3.3.8) (ATP-citrate (pro-S-)-lyas	w
 ENZYME	fly	FBgn0023143	Uba1	Q8T0L3	24	232	E1 ubiquitin-activating enzyme (EC 6.2.1.45) (Ubiquitin-acti	w
 ENZYME	fly	FBgn0026316	Ubc10	Q7K738	14	60	Ubiquitin-conjugating enzyme E2-18 kDa (EC 2.3.2.23) (Ubiqui	w
 ENZYME	fly	FBgn0027780	CG13401	Q9VLL0	0	10	Beta-alanine-activating enzyme (EC 6.2.1.-) (Acyl-CoA synthe	w
@@ -52,7 +52,7 @@ ENZYME	fly	FBgn0035853	UbcE2M	Q9VSF3	10	112	Nedd8-conjugating enzyme UbcE2M (EC 
 ENZYME	fly	FBgn0036180	Duba	Q9VTK7	5	10	ubiquitinyl hydrolase 1 (EC 3.4.19.12) (Deubiquitinating enz	w
 ENZYME	fly	FBgn0036813	Atg3	Q9VVS6	7	63	Ubiquitin-like-conjugating enzyme ATG3 (Autophagy-related pr	w
 ENZYME	fly	FBgn0037435	CG18048	Q8SX24	0	2	tRNA:m(4)X modification enzyme TRM13 (EC 2.1.1.225)	w
-ENZYME	fly	FBgn0037637	IscU	Q9VHK6	6	49	GEO04668p1 (GH01635p) (Iron-sulfur cluster assembly enzyme)	w
+ENZYME	fly	FBgn0037637	IscU	Q9VHK6	12	55	GEO04668p1 (GH01635p) (Iron-sulfur cluster assembly enzyme)	w
 ENZYME	fly	FBgn0037987	CG14739	Q9VGD6	1	11	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
 ENZYME	fly	FBgn0038398	sxe2	Q9VEY9	54	391	GH15759p (Sex-specific enzyme 2, isoform A) (Sex-specific en	w
 ENZYME	fly	FBgn0038515	CG5823	Q9VEJ4	3	30	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
@@ -89,7 +89,7 @@ ENZYME	human	O94782	USP1	O94782	29	193	Ubiquitin carboxyl-terminal hydrolase 1 (
 ENZYME	human	O94966	USP19	O94966	17	175	Ubiquitin carboxyl-terminal hydrolase 19 (EC 3.4.19.12) (Deu	w
 ENZYME	human	O95352	ATG7	O95352	25	492	Ubiquitin-like modifier-activating enzyme ATG7 (ATG12-activa	w
 ENZYME	human	P04053	DNTT	P04053	10	150	DNA nucleotidylexotransferase (EC 2.7.7.31) (Terminal additi	w
-ENZYME	human	P05108	CYP11A1	P05108	9	63	Cholesterol side-chain cleavage enzyme, mitochondrial (EC 1.	w
+ENZYME	human	P05108	CYP11A1	P05108	20	74	Cholesterol side-chain cleavage enzyme, mitochondrial (EC 1.	w
 ENZYME	human	P09958	FURIN	P09958	71	481	Furin (EC 3.4.21.75) (Dibasic-processing enzyme) (Paired bas	w
 ENZYME	human	P0C7Q5	SLC35G4	P0C7Q5	2	18	Solute carrier family 35 member G4 (Acyl-malonyl-condensing 	w
 ENZYME	human	P0C7Q6	SLC35G6	P0C7Q6	1	24	Solute carrier family 35 member G6 (Acyl-malonyl-condensing 	w
@@ -98,18 +98,18 @@ ENZYME	human	P0DPD8	EEF1AKMT4-ECE2	P0DPD8	6	12	EEF1AKMT4-ECE2 readthrough transc
 ENZYME	human	P12821	ACE	P12821	11	283	Angiotensin-converting enzyme (ACE) (EC 3.4.15.1) (Dipeptidy	w
 ENZYME	human	P13798	APEH	P13798	3	142	Acylamino-acid-releasing enzyme (AARE) (EC 3.4.19.1) (Acyl-p	w
 ENZYME	human	P14735	IDE	P14735	16	1037	Insulin-degrading enzyme (EC 3.4.24.56) (Abeta-degrading pro	w
-ENZYME	human	P19099	CYP11B2	P19099	6	43	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
+ENZYME	human	P19099	CYP11B2	P19099	23	60	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
 ENZYME	human	P22314	UBA1	P22314	36	398	Ubiquitin-like modifier-activating enzyme 1 (EC 6.2.1.45) (P	w
-ENZYME	human	P23368	ME2	P23368	2	116	NAD-dependent malic enzyme, mitochondrial (NAD-ME) (EC 1.1.1	w
+ENZYME	human	P23368	ME2	P23368	3	117	NAD-dependent malic enzyme, mitochondrial (NAD-ME) (EC 1.1.1	w
 ENZYME	human	P29122	PCSK6	P29122	19	197	Proprotein convertase subtilisin/kexin type 6 (EC 3.4.21.-) 	w
 ENZYME	human	P29466	CASP1	P29466	27	259	Caspase-1 (CASP-1) (EC 3.4.22.36) (Interleukin-1 beta conver	w
-ENZYME	human	P30044	PRDX5	P30044	15	260	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepress	w
+ENZYME	human	P30044	PRDX5	P30044	17	262	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepress	w
 ENZYME	human	P31941	APOBEC3A	P31941	6	168	DNA dC->dU-editing enzyme APOBEC-3A (A3A) (EC 3.5.4.38) (Pho	w
 ENZYME	human	P35125	USP6	P35125	12	133	Ubiquitin carboxyl-terminal hydrolase 6 (EC 3.4.19.12) (Deub	w
 ENZYME	human	P35573	AGL	P35573	2	102	Glycogen debranching enzyme (Glycogen debrancher) [Includes:	w
 ENZYME	human	P36269	GGT5	P36269	1	66	Glutathione hydrolase 5 proenzyme (EC 3.4.19.13) (Gamma-glut	w
 ENZYME	human	P40818	USP8	P40818	49	225	Ubiquitin carboxyl-terminal hydrolase 8 (EC 3.4.19.12) (Deub	w
-ENZYME	human	P40939	HADHA	P40939	32	598	Trifunctional enzyme subunit alpha, mitochondrial (78 kDa ga	w
+ENZYME	human	P40939	HADHA	P40939	36	604	Trifunctional enzyme subunit alpha, mitochondrial (78 kDa ga	w
 ENZYME	human	P41226	UBA7	P41226	17	98	Ubiquitin-like modifier-activating enzyme 7 (Ubiquitin-activ	w
 ENZYME	human	P41238	APOBEC1	P41238	9	130	C->U-editing enzyme APOBEC-1 (EC 3.5.4.-) (Apolipoprotein B 	w
 ENZYME	human	P42892	ECE1	P42892	29	202	Endothelin-converting enzyme 1 (ECE-1) (EC 3.4.24.71)	w
@@ -121,14 +121,14 @@ ENZYME	human	P49427	CDC34	P49427	41	460	Ubiquitin-conjugating enzyme E2 R1 (EC 2
 ENZYME	human	P49459	UBE2A	P49459	48	458	Ubiquitin-conjugating enzyme E2 A (EC 2.3.2.23) (E2 ubiquiti	w
 ENZYME	human	P49862	KLK7	P49862	75	284	Kallikrein-7 (hK7) (EC 3.4.21.117) (Serine protease 6) (Stra	w
 ENZYME	human	P50876	RNF144A	P50876	9	127	E3 ubiquitin-protein ligase RNF144A (EC 2.3.2.31) (RING fing	w
-ENZYME	human	P51659	HSD17B4	P51659	3	195	Peroxisomal multifunctional enzyme type 2 (MFE-2) (17-beta-h	w
+ENZYME	human	P51659	HSD17B4	P51659	3	196	Peroxisomal multifunctional enzyme type 2 (MFE-2) (17-beta-h	w
 ENZYME	human	P51668	UBE2D1	P51668	205	671	Ubiquitin-conjugating enzyme E2 D1 (EC 2.3.2.23) ((E3-indepe	w
 ENZYME	human	P51784	USP11	P51784	40	674	Ubiquitin carboxyl-terminal hydrolase 11 (EC 3.4.19.12) (Deu	w
 ENZYME	human	P51965	UBE2E1	P51965	121	327	Ubiquitin-conjugating enzyme E2 E1 (EC 2.3.2.23) ((E3-indepe	w
 ENZYME	human	P53396	ACLY	P53396	4	283	ATP-citrate synthase (EC 2.3.3.8) (ATP-citrate (pro-S-)-lyas	w
 ENZYME	human	P54578	USP14	P54578	42	555	Ubiquitin carboxyl-terminal hydrolase 14 (EC 3.4.19.12) (Deu	w
 ENZYME	human	P54922	ADPRH	P54922	3	70	ADP-ribosylhydrolase ARH1 (EC 3.2.2.19) (ADP-ribose-L-argini	w
-ENZYME	human	P55084	HADHB	P55084	26	475	Trifunctional enzyme subunit beta, mitochondrial (TP-beta) [	w
+ENZYME	human	P55084	HADHB	P55084	32	481	Trifunctional enzyme subunit beta, mitochondrial (TP-beta) [	w
 ENZYME	human	P56817	BACE1	P56817	18	169	Beta-secretase 1 (EC 3.4.23.46) (Aspartyl protease 2) (ASP2)	w
 ENZYME	human	P60604	UBE2G2	P60604	48	158	Ubiquitin-conjugating enzyme E2 G2 (EC 2.3.2.23) (E2 ubiquit	w
 ENZYME	human	P61077	UBE2D3	P61077	191	483	Ubiquitin-conjugating enzyme E2 D3 (EC 2.3.2.23) ((E3-indepe	w
@@ -144,10 +144,10 @@ ENZYME	human	P63279	UBE2I	P63279	134	773	SUMO-conjugating enzyme UBC9 (EC 2.3.2.
 ENZYME	human	P68036	UBE2L3	P68036	97	305	Ubiquitin-conjugating enzyme E2 L3 (EC 2.3.2.23) (E2 ubiquit	w
 ENZYME	human	P78563	ADARB1	P78563	58	499	Double-stranded RNA-specific editase 1 (EC 3.5.4.37) (RNA-ed	w
 ENZYME	human	Q04446	GBE1	Q04446	4	193	1,4-alpha-glucan-branching enzyme (EC 2.4.1.18) (Brancher en	w
-ENZYME	human	Q08426	EHHADH	Q08426	7	290	Peroxisomal bifunctional enzyme (PBE) (PBFE) (L-bifunctional	w
+ENZYME	human	Q08426	EHHADH	Q08426	12	295	Peroxisomal bifunctional enzyme (PBE) (PBFE) (L-bifunctional	w
 ENZYME	human	Q0WX57	USP17L24	Q0WX57	5	43	Ubiquitin carboxyl-terminal hydrolase 17-like protein 24 (EC	w
 ENZYME	human	Q13107	USP4	Q13107	9	289	Ubiquitin carboxyl-terminal hydrolase 4 (EC 3.4.19.12) (Deub	w
-ENZYME	human	Q13162	PRDX4	Q13162	12	257	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
+ENZYME	human	Q13162	PRDX4	Q13162	17	262	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
 ENZYME	human	Q13404	UBE2V1	Q13404	9	179	Ubiquitin-conjugating enzyme E2 variant 1 (UEV-1) (CROC-1) (	w
 ENZYME	human	Q13564	NAE1	Q13564	8	172	NEDD8-activating enzyme E1 regulatory subunit (Amyloid beta 	w
 ENZYME	human	Q14694	USP10	Q14694	53	320	Ubiquitin carboxyl-terminal hydrolase 10 (EC 3.4.19.12) (Deu	w
@@ -163,7 +163,7 @@ ENZYME	human	Q6NTF7	APOBEC3H	Q6NTF7	7	144	DNA dC->dU-editing enzyme APOBEC-3H (E
 ENZYME	human	Q6QN14	USP17L6P	Q6QN14	6	23	Ubiquitin carboxyl-terminal hydrolase 17-like protein 6 (EC 	w
 ENZYME	human	Q6R6M4	USP17L2	Q6R6M4	6	73	Ubiquitin carboxyl-terminal hydrolase 17 (USP17) (EC 3.4.19.	w
 ENZYME	human	Q70CQ1	USP49	Q70CQ1	23	156	Ubiquitin carboxyl-terminal hydrolase 49 (EC 3.4.19.12) (Deu	w
-ENZYME	human	Q70CQ3	USP30	Q70CQ3	18	160	Ubiquitin carboxyl-terminal hydrolase 30 (EC 3.4.19.12) (Deu	w
+ENZYME	human	Q70CQ3	USP30	Q70CQ3	21	163	Ubiquitin carboxyl-terminal hydrolase 30 (EC 3.4.19.12) (Deu	w
 ENZYME	human	Q70CQ4	USP31	Q70CQ4	9	117	Ubiquitin carboxyl-terminal hydrolase 31 (EC 3.4.19.12) (Deu	w
 ENZYME	human	Q70EK9	USP51	Q70EK9	21	97	Ubiquitin carboxyl-terminal hydrolase 51 (EC 3.4.19.12) (Deu	w
 ENZYME	human	Q70EL2	USP45	Q70EL2	13	65	Ubiquitin carboxyl-terminal hydrolase 45 (EC 3.4.19.12) (Deu	w
@@ -214,20 +214,20 @@ ENZYME	human	Q96KT7	SLC35G5	Q96KT7	2	17	Solute carrier family 35 member G5 (Acyl
 ENZYME	human	Q96LR5	UBE2E2	Q96LR5	81	234	Ubiquitin-conjugating enzyme E2 E2 (EC 2.3.2.23) (E2 ubiquit	w
 ENZYME	human	Q96M02	C10orf90	Q96M02	3	16	(E2-independent) E3 ubiquitin-conjugating enzyme FATS (EC 2.	w
 ENZYME	human	Q96MH6	TMEM68	Q96MH6	4	74	DGAT1/2-independent enzyme synthesizing storage lipids (DIES	w
-ENZYME	human	Q96Q11	TRNT1	Q96Q11	2	71	CCA tRNA nucleotidyltransferase 1, mitochondrial (EC 2.7.7.7	w
+ENZYME	human	Q96Q11	TRNT1	Q96Q11	4	73	CCA tRNA nucleotidyltransferase 1, mitochondrial (EC 2.7.7.7	w
 ENZYME	human	Q96RU2	USP28	Q96RU2	24	221	Ubiquitin carboxyl-terminal hydrolase 28 (EC 3.4.19.12) (Deu	w
 ENZYME	human	Q9BQG2	NUDT12	Q9BQG2	3	53	NAD-capped RNA hydrolase NUDT12 (DeNADding enzyme NUDT12) (E	w
 ENZYME	human	Q9BTV7	CABLES2	Q9BTV7	14	41	CDK5 and ABL1 enzyme substrate 2 (Interactor with CDK3 2) (I	w
 ENZYME	human	Q9BVG9	PTDSS2	Q9BVG9	6	129	Phosphatidylserine synthase 2 (PSS-2) (PtdSer synthase 2) (E	w
 ENZYME	human	Q9BWT3	PAPOLG	Q9BWT3	22	152	Poly(A) polymerase gamma (PAP-gamma) (EC 2.7.7.19) (Neo-poly	w
-ENZYME	human	Q9BXR0	QTRT1	Q9BXR0	2	75	Queuine tRNA-ribosyltransferase catalytic subunit 1 (EC 2.4.	w
+ENZYME	human	Q9BXR0	QTRT1	Q9BXR0	4	77	Queuine tRNA-ribosyltransferase catalytic subunit 1 (EC 2.4.	w
 ENZYME	human	Q9BXU7	USP26	Q9BXU7	5	73	Ubiquitin carboxyl-terminal hydrolase 26 (EC 3.4.19.12) (Deu	w
 ENZYME	human	Q9BYF1	ACE2	Q9BYF1	66	1206	Angiotensin-converting enzyme 2 (EC 3.4.17.23) (Angiotensin-	w
 ENZYME	human	Q9C0C9	UBE2O	Q9C0C9	231	731	(E3-independent) E2 ubiquitin-conjugating enzyme (EC 2.3.2.2	w
 ENZYME	human	Q9GZZ9	UBA5	Q9GZZ9	14	176	Ubiquitin-like modifier-activating enzyme 5 (Ubiquitin-activ	w
 ENZYME	human	Q9H0E7	USP44	Q9H0E7	26	130	Ubiquitin carboxyl-terminal hydrolase 44 (EC 3.4.19.12) (Deu	w
 ENZYME	human	Q9H0Y0	ATG10	Q9H0Y0	13	262	Ubiquitin-like-conjugating enzyme ATG10 (EC 2.3.2.-) (Autoph	w
-ENZYME	human	Q9H1K1	ISCU	Q9H1K1	16	199	Iron-sulfur cluster assembly enzyme ISCU (NifU-like N-termin	w
+ENZYME	human	Q9H1K1	ISCU	Q9H1K1	25	206	Iron-sulfur cluster assembly enzyme ISCU (NifU-like N-termin	w
 ENZYME	human	Q9H832	UBE2Z	Q9H832	38	131	Ubiquitin-conjugating enzyme E2 Z (EC 2.3.2.23) (E2 ubiquiti	w
 ENZYME	human	Q9H8M7	MINDY3	Q9H8M7	11	103	Ubiquitin carboxyl-terminal hydrolase MINDY-3 (EC 3.4.19.12)	w
 ENZYME	human	Q9H9J4	USP42	Q9H9J4	13	142	Ubiquitin carboxyl-terminal hydrolase 42 (EC 3.4.19.12) (Deu	w
@@ -403,7 +403,7 @@ ENZYME	worm	Q93571	ubc-25	Q93571	1	8	Ubiquitin-conjugating enzyme E2 25	w
 ENZYME	worm	Q95017	ubc-9	Q95017	7	53	SUMO-conjugating enzyme UBC9	w
 ENZYME	worm	Q95XX0	ubc-13	Q95XX0	26	81	Ubiquitin-conjugating enzyme E2 13	w
 ENZYME	worm	Q966M6	dbr-1	Q966M6	0	13	Lariat debranching enzyme	w
-ENZYME	worm	Q9GYT0	ech-1.2	Q9GYT0	1	16	Trifunctional enzyme subunit alpha, mitochondrial	w
+ENZYME	worm	Q9GYT0	ech-1.2	Q9GYT0	1	17	Trifunctional enzyme subunit alpha, mitochondrial	w
 ENZYME	worm	Q9N2W9	ubc-8	Q9N2W9	2	6	E2 ubiquitin-conjugating enzyme	w
 ENZYME	worm	Q9N363	dcap-1	Q9N363	7	71	mRNA-decapping enzyme 1	w
 ENZYME	worm	Q9N369	atg-3	Q9N369	4	36	Ubiquitin-like-conjugating enzyme ATG3	w
@@ -452,15 +452,16 @@ ENZYME	zebrafish	A0A8M1N1R7	si:ch211-191d15.2	A0A8M1N1R7	6	44	Iron-sulfur cluste
 ENZYME	zebrafish	A0A8M1N820	atg10	A0A8M1N820	1	27	Ubiquitin-like-conjugating enzyme ATG10	w
 ENZYME	zebrafish	A0A8M1N8S9	sumf1	A0A8M1N8S9	2	10	Formylglycine-generating enzyme precursor	w
 ENZYME	zebrafish	A0A8M2B975	uba1	A0A8M2B975	27	114	E1 ubiquitin-activating enzyme	w
+ENZYME	zebrafish	A0A8M9PQQ8	hsd17b4	A0A8M9PQQ8	0	1	peroxisomal multifunctional enzyme type 2 isoform X1	w
 ENZYME	zebrafish	A0A8M9PY01	uba6	A0A8M9PY01	24	113	Ubiquitin-like modifier-activating enzyme 6	w
 ENZYME	zebrafish	A0A8M9Q830	cables2a	A0A8M9Q830	1	2	CDK5 and ABL1 enzyme substrate 2 isoform X1	w
-ENZYME	zebrafish	A0A8M9Q8E0	cyp11a1.2	A0A8M9Q8E0	3	14	Cholesterol side-chain cleavage enzyme, mitochondrial	w
+ENZYME	zebrafish	A0A8M9Q8E0	cyp11a1.2	A0A8M9Q8E0	5	16	Cholesterol side-chain cleavage enzyme, mitochondrial	w
 ENZYME	zebrafish	A2BIR4	ube2l3b	A2BIR4	24	117	E2 ubiquitin-conjugating enzyme	w
 ENZYME	zebrafish	A3KQ55	mepce	A3KQ55	3	17	7SK snRNA methylphosphate capping enzyme	w
 ENZYME	zebrafish	A4QNV0	ube2j2	A4QNV0	4	12	Ubiquitin-conjugating enzyme E2 J2	w
 ENZYME	zebrafish	A4QNX5	ube2d4	A4QNX5	45	124	E2 ubiquitin-conjugating enzyme	w
 ENZYME	zebrafish	A4QPA0	me3	A4QPA0	2	4	Malic enzyme	w
-ENZYME	zebrafish	A5PN55	me2	A5PN55	2	8	Malic enzyme	w
+ENZYME	zebrafish	A5PN55	me2	A5PN55	3	9	Malic enzyme	w
 ENZYME	zebrafish	A7MBT5	ube2e1	A7MBT5	28	90	E2 ubiquitin-conjugating enzyme	w
 ENZYME	zebrafish	A7MC82	me1	A7MC82	2	4	Malic enzyme	w
 ENZYME	zebrafish	A7YT47	hadhaa	A7YT47	6	124	Trifunctional enzyme subunit alpha, mitochondrial	w
@@ -493,7 +494,7 @@ ENZYME	zebrafish	Q6DHH9	ube2r2	Q6DHH9	11	90	E2 ubiquitin-conjugating enzyme	w
 ENZYME	zebrafish	Q6IQS6	sae1	Q6IQS6	4	95	SUMO-activating enzyme subunit 1	w
 ENZYME	zebrafish	Q6NY82	ube2f	Q6NY82	4	42	NEDD8-conjugating enzyme UBE2F	w
 ENZYME	zebrafish	Q6NY98	rngtt	Q6NY98	2	37	mRNA-capping enzyme	w
-ENZYME	zebrafish	Q6NYL3	ehhadh	Q6NYL3	1	130	Peroxisomal bifunctional enzyme	w
+ENZYME	zebrafish	Q6NYL3	ehhadh	Q6NYL3	2	131	Peroxisomal bifunctional enzyme	w
 ENZYME	zebrafish	Q6P7Y0	ube2j1	Q6P7Y0	26	81	Ubiquitin-conjugating enzyme E2 J1	w
 ENZYME	zebrafish	Q6PBX6	ube2d2l	Q6PBX6	47	124	E2 ubiquitin-conjugating enzyme	w
 ENZYME	zebrafish	Q6PC58	ube2d1b	Q6PC58	48	151	E2 ubiquitin-conjugating enzyme	w

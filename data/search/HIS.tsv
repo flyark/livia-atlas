@@ -202,7 +202,7 @@ HISC1	haemophilus-influenzae	P44423	hisC1	P44423	0	2	Histidinol-phosphate aminot
 HISC1	pseudomonas-aeruginosa	Q9HVX0	hisC1	Q9HVX0	2	5	Histidinol-phosphate aminotransferase 1	
 HISC2	haemophilus-influenzae	Q57004	hisC2	Q57004	0	2	Histidinol-phosphate aminotransferase 2	
 HISC2	pseudomonas-aeruginosa	Q9HZ68	hisC2	Q9HZ68	2	5	Histidinol-phosphate aminotransferase 2	
-HISCA	human	Q9BUE6	ISCA1	Q9BUE6	5	126	Iron-sulfur cluster assembly 1 homolog, mitochondrial (HESB-	w
+HISCA	human	Q9BUE6	ISCA1	Q9BUE6	7	128	Iron-sulfur cluster assembly 1 homolog, mitochondrial (HESB-	w
 HISCL1	fly	FBgn0037950	HisCl1	Q9VGI0	7	13	Histamine-gated chloride channel subunit 1	
 HISD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PM77	hisD	Q9PM77	0	9	Histidinol dehydrogenase	
 HISD	escherichia-coli-83333	P06988	hisD	P06988	0	8	Histidinol dehydrogenase	
@@ -301,7 +301,7 @@ HISQ	salmonella-typhimurium	P0A2I9	hisQ	P0A2I9	20	55	Histidine/lysine/arginine/o
 HISQ	shigella-dysenteriae-serotype-1	Q32DM8	hisQ	Q32DM8	13	37	Histidine/lysine/arginine/ornithine transport system permeas	
 HISRS	fly	FBgn0027087	HisRS	Q8IQX8	0	29	histidine--tRNA ligase (EC 6.1.1.21)	
 HISRS	human	P12081	HARS1	P12081	6	149	Histidine--tRNA ligase, cytoplasmic (EC 6.1.1.21) (Histidyl-	w
-HISRS	human	P49590	HARS2	P49590	6	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
+HISRS	human	P49590	HARS2	P49590	9	182	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
 HISS	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PPF4	hisS	Q9PPF4	0	41	Histidine--tRNA ligase	
 HISS	dictyostelium-discoideum	Q86AS6	hisS	Q86AS6	1	1	Histidine--tRNA ligase, cytoplasmic	
 HISS	escherichia-coli-83333	P60906	hisS	P60906	0	13	Histidine--tRNA ligase	
@@ -431,12 +431,12 @@ HISTH1L2	zebrafish	A0A140LGZ1	histh1l2	A0A140LGZ1	2	24	Histone H1
 HISTH1L3	zebrafish	E9QFU6	histh1l3	E9QFU6	2	24	Histone H1	
 HISTIDASE	human	P42357	HAL	P42357	3	238	Histidine ammonia-lyase (Histidase) (EC 4.3.1.3)	w
 HISTIDINE	fly	FBgn0005619	Hdc	Q05733	0	8	Histidine decarboxylase (HDC) (EC 4.1.1.22)	w
-HISTIDINE	fly	FBgn0024945	NitFhit	O76464	0	16	Nitrilase and fragile histidine triad fusion protein NitFhit	w
+HISTIDINE	fly	FBgn0024945	NitFhit	O76464	1	17	Nitrilase and fragile histidine triad fusion protein NitFhit	w
 HISTIDINE	fly	FBgn0031378	CG15362	Q9VQ59	41	246	Adenosine 5'-monophosphoramidase HINT3 (Histidine triad nucl	w
 HISTIDINE	fly	FBgn0031459	HINT1	Q8STA5	9	174	Histidine triad nucleotide binding protein 1, isoform A (EC 	w
 HISTIDINE	fly	FBgn0036194	Dph1	Q9VTM2	5	20	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
 HISTIDINE	fly	FBgn0038272	Dph2	Q9VFE9	4	12	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
-HISTIDINE	fly	FBgn0054015	CG34015	Q6IIA4	0	1	Adenosine 5'-monophosphoramidase HINT3 (Histidine triad nucl	w
+HISTIDINE	fly	FBgn0054015	CG34015	Q6IIA4	2	4	Adenosine 5'-monophosphoramidase HINT3 (Histidine triad nucl	w
 HISTIDINE	human	C9JFL3	PHGR1	C9JFL3	3	26	Proline, histidine and glycine-rich protein 1	w
 HISTIDINE	human	O43314	PPIP5K2	O43314	9	101	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
 HISTIDINE	human	O95568	METTL18	O95568	10	90	Histidine protein methyltransferase 1 homolog (EC 2.1.1.85) 	w
@@ -453,10 +453,10 @@ HISTIDINE	human	Q8IY34	SLC15A3	Q8IY34	5	324	Solute carrier family 15 member 3 (O
 HISTIDINE	human	Q8N697	SLC15A4	Q8N697	4	135	Solute carrier family 15 member 4 (Peptide transporter 4) (P	w
 HISTIDINE	human	Q96C86	DCPS	Q96C86	5	296	m7GpppX diphosphatase (EC 3.6.1.59) (DCS-1) (Decapping scave	w
 HISTIDINE	human	Q9BQC3	DPH2	Q9BQC3	6	93	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2 (Dip	w
-HISTIDINE	human	Q9BX68	HINT2	Q9BX68	19	336	Adenosine 5'-monophosphoramidase HINT2 (EC 3.9.1.-) (HINT-3)	w
+HISTIDINE	human	Q9BX68	HINT2	Q9BX68	23	340	Adenosine 5'-monophosphoramidase HINT2 (EC 3.9.1.-) (HINT-3)	w
 HISTIDINE	human	Q9BZG8	DPH1	Q9BZG8	12	133	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
 HISTIDINE	human	Q9H6W3	RIOX1	Q9H6W3	8	112	Ribosomal oxygenase 1 (60S ribosomal protein L8 histidine hy	w
-HISTIDINE	human	Q9NQE9	HINT3	Q9NQE9	8	67	Adenosine 5'-monophosphoramidase HINT3 (EC 3.9.1.-) (Histidi	w
+HISTIDINE	human	Q9NQE9	HINT3	Q9NQE9	19	78	Adenosine 5'-monophosphoramidase HINT3 (EC 3.9.1.-) (Histidi	w
 HISTIDINE	human	Q9NRX4	PHPT1	Q9NRX4	15	151	14 kDa phosphohistidine phosphatase (EC 3.9.1.3) (Phosphohis	w
 HISTIDINE	worm	H2KZJ4	CELE_D2062.4	H2KZJ4	0	2	Histidine kinase	w
 HISTIDINE	worm	O17373	pho-14	O17373	0	1	Histidine acid phosphatase	w
@@ -481,10 +481,10 @@ HISTIDINE	yeast	P40487	DPH1	P40487	3	22	2-(3-amino-3-carboxypropyl)histidine syn
 HISTIDINE	yeast	Q06328	YPQ2	Q06328	0	6	Vacuolar arginine/histidine antiporter YPQ2	w
 HISTIDINE	zebrafish	A4QN59	dph2	A4QN59	7	10	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
 HISTIDINE	zebrafish	Q567W6	dph1	Q567W6	3	12	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1	w
-HISTIDINE	zebrafish	Q642J0	hint1	Q642J0	0	6	Histidine triad nucleotide-binding protein 1	w
+HISTIDINE	zebrafish	Q642J0	hint1	Q642J0	1	8	Histidine triad nucleotide-binding protein 1	w
 HISTIDINE--TRNA	fly	FBgn0027087	HisRS	Q8IQX8	0	29	histidine--tRNA ligase (EC 6.1.1.21)	w
 HISTIDINE--TRNA	human	P12081	HARS1	P12081	6	149	Histidine--tRNA ligase, cytoplasmic (EC 6.1.1.21) (Histidyl-	w
-HISTIDINE--TRNA	human	P49590	HARS2	P49590	6	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
+HISTIDINE--TRNA	human	P49590	HARS2	P49590	9	182	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
 HISTIDINE--TRNA	worm	P34183	hars-1	P34183	0	4	Histidine--tRNA ligase	w
 HISTIDINE--TRNA	yeast	P07263	HTS1	P07263	0	16	Histidine--tRNA ligase, mitochondrial	w
 HISTIDINE--TRNA	zebrafish	E9QI36	hars	E9QI36	0	17	Histidine--tRNA ligase	w
@@ -517,7 +517,7 @@ HISTIDYL-HYDROXYLASE	human	Q9H6W3	RIOX1	Q9H6W3	8	112	Ribosomal oxygenase 1 (60S 
 HISTIDYL-HYDROXYLASE	worm	O01658	jmjc-1	O01658	0	4	Bifunctional lysine-specific demethylase and histidyl-hydrox	w
 HISTIDYL-HYDROXYLASE	zebrafish	A0AB32TXY1	riox2	A0AB32TXY1	0	5	Bifunctional lysine-specific demethylase and histidyl-hydrox	w
 HISTIDYL-TRNA	human	P12081	HARS1	P12081	6	149	Histidine--tRNA ligase, cytoplasmic (EC 6.1.1.21) (Histidyl-	w
-HISTIDYL-TRNA	human	P49590	HARS2	P49590	6	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
+HISTIDYL-TRNA	human	P49590	HARS2	P49590	9	182	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
 HISTIDYL-TRNA	human	Q8TEA8	DTD1	Q8TEA8	3	46	D-aminoacyl-tRNA deacylase 1 (DTD) (EC 3.1.1.96) (DNA-unwind	w
 HISTIOCYTOMA-AMPLIFIED	human	Q9Y4C4	MFHAS1	Q9Y4C4	9	115	Malignant fibrous histiocytoma-amplified sequence 1 (Maligna	w
 HISTIOCYTOMA-AMPLIFIED	zebrafish	F1QVP4	mfhas1	F1QVP4	0	27	Malignant fibrous histiocytoma-amplified sequence 1	w

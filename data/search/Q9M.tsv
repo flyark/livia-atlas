@@ -104,7 +104,7 @@ Q9M0U6	arabidopsis-thaliana	Q9M0U6	FBL22	Q9M0U6	0	10	Putative F-box/LRR-repeat p
 Q9M0U7	arabidopsis-thaliana	Q9M0U7	At4g05475	Q9M0U7	1	10	Putative F-box protein At4g05475	
 Q9M0U8	arabidopsis-thaliana	Q9M0U8	FBL21	Q9M0U8	0	11	Putative F-box/LRR-repeat protein 21	
 Q9M0U9	arabidopsis-thaliana	Q9M0U9	SKIP19	Q9M0U9	18	29	F-box protein SKIP19	
-Q9M0V0	arabidopsis-thaliana	Q9M0V0	MFDX1	Q9M0V0	9	64	Adrenodoxin-like protein 1, mitochondrial	
+Q9M0V0	arabidopsis-thaliana	Q9M0V0	MFDX1	Q9M0V0	13	68	Adrenodoxin-like protein 1, mitochondrial	
 Q9M0V1	arabidopsis-thaliana	Q9M0V1	EDA35	Q9M0V1	3	7	Translation initiation factor eIF2 assembly protein	
 Q9M0V3	arabidopsis-thaliana	Q9M0V3	DDB1A	Q9M0V3	39	402	DNA damage-binding protein 1a	
 Q9M0V4	arabidopsis-thaliana	Q9M0V4	YAO	Q9M0V4	19	277	U3 snoRNP-associated protein-like YAO	
@@ -460,7 +460,7 @@ Q9M5A9	arabidopsis-thaliana	Q9M5A9	GPT1	Q9M5A9	0	2	Glucose-6-phosphate/phosphate
 Q9M5J8	arabidopsis-thaliana	Q9M5J8	PGIP2	Q9M5J8	0	1	Polygalacturonase inhibitor 2	
 Q9M5J9	arabidopsis-thaliana	Q9M5J9	PGIP1	Q9M5J9	0	2	Polygalacturonase inhibitor 1	
 Q9M5K2	arabidopsis-thaliana	Q9M5K2	LPD2	Q9M5K2	7	145	Dihydrolipoyl dehydrogenase 2, mitochondrial	
-Q9M5K3	arabidopsis-thaliana	Q9M5K3	LPD1	Q9M5K3	6	145	Dihydrolipoyl dehydrogenase 1, mitochondrial	
+Q9M5K3	arabidopsis-thaliana	Q9M5K3	LPD1	Q9M5K3	7	146	Dihydrolipoyl dehydrogenase 1, mitochondrial	
 Q9M5K7	glycine-max	Q9M5K7	SGF14P	Q9M5K7	7	97	14-3-3 protein SGF14p	
 Q9M5P2	arabidopsis-thaliana	Q9M5P2	SCAMP3	Q9M5P2	0	4	Secretory carrier-associated membrane protein 3	
 Q9M5P3	arabidopsis-thaliana	Q9M5P3	CCDA	Q9M5P3	1	4	Cytochrome c-type biogenesis ccda-like chloroplastic protein	
@@ -502,7 +502,7 @@ Q9M844	arabidopsis-thaliana	Q9M844	NAC049	Q9M844	6	35	NAC domain containing prot
 Q9M847	arabidopsis-thaliana	Q9M847	At3g04390	Q9M847	0	1	Aldehyde oxidase/xanthine dehydrogenase, molybdopterin bindi	
 Q9M872	arabidopsis-thaliana	Q9M872	At3g02700	Q9M872	2	140	At3g02700	
 Q9M875	arabidopsis-thaliana	Q9M875	At3g02670	Q9M875	2	82	F16B3.30 protein	
-Q9M876	arabidopsis-thaliana	Q9M876	EMB2768	Q9M876	1	24	Tyrosine--tRNA ligase, chloroplastic/mitochondrial	
+Q9M876	arabidopsis-thaliana	Q9M876	EMB2768	Q9M876	2	25	Tyrosine--tRNA ligase, chloroplastic/mitochondrial	
 Q9M879	arabidopsis-thaliana	Q9M879	S-ACP-DES5	Q9M879	0	8	Stearoyl-	
 Q9M883	arabidopsis-thaliana	Q9M883	HDF7	Q9M883	0	22	Putative Delta(7)-sterol-C5(6)-desaturase 2	
 Q9M884	arabidopsis-thaliana	Q9M884	PMI1	Q9M884	0	1	Mannose-6-phosphate isomerase 1	
@@ -603,8 +603,8 @@ Q9M9L3	arabidopsis-thaliana	Q9M9L3	NEAP1	Q9M9L3	0	3	Nuclear envelope-associated 
 Q9M9L6	arabidopsis-thaliana	Q9M9L6	BHLH150	Q9M9L6	1	2	Transcription factor bHLH150	
 Q9M9M3	arabidopsis-thaliana	Q9M9M3	At3g05730	Q9M9M3	0	3	Defensin-like protein 205	
 Q9M9M4	arabidopsis-thaliana	Q9M9M4	CSLD3	Q9M9M4	0	6	Cellulose synthase-like protein D3	
-Q9M9M6	arabidopsis-thaliana	Q9M9M6	At3g03070	Q9M9M6	2	186	NADH dehydrogenase	
-Q9M9M9	arabidopsis-thaliana	Q9M9M9	At3g03100	Q9M9M9	4	192	Probable NADH dehydrogenase	
+Q9M9M6	arabidopsis-thaliana	Q9M9M6	At3g03070	Q9M9M6	4	186	NADH dehydrogenase	
+Q9M9M9	arabidopsis-thaliana	Q9M9M9	At3g03100	Q9M9M9	5	192	Probable NADH dehydrogenase	
 Q9M9N1	arabidopsis-thaliana	Q9M9N1	ARFB1C	Q9M9N1	14	83	ADP-ribosylation factor	
 Q9M9P1	arabidopsis-thaliana	Q9M9P1	At3g03230	Q9M9P1	0	1	Alpha/beta-Hydrolases superfamily protein	
 Q9M9P3	arabidopsis-thaliana	Q9M9P3	UGP2	Q9M9P3	0	25	UTP--glucose-1-phosphate uridylyltransferase 2	
@@ -725,16 +725,16 @@ Q9MBG5	arabidopsis-thaliana	Q9MBG5	CML45	Q9MBG5	0	38	Probable calcium-binding pr
 Q9MBG7	arabidopsis-thaliana	Q9MBG7	At3g28980	Q9MBG7	0	1	Mediator of RNA polymerase II transcription subunit-like pro	
 Q9MBG8	arabidopsis-thaliana	Q9MBG8	AAR3	Q9MBG8	1	53	Defective in cullin neddylation protein AAR3	
 Q9MBH2	arabidopsis-thaliana	Q9MBH2	AIG2B	Q9MBH2	0	1	Protein AIG2 B	
-Q9MIX8	zebrafish	Q9MIX8	mt-cyb	Q9MIX8	8	292	Cytochrome b	
+Q9MIX8	zebrafish	Q9MIX8	mt-cyb	Q9MIX8	15	301	Cytochrome b	
 Q9MIX9	zebrafish	Q9MIX9	mt-nd6	Q9MIX9	5	96	NADH-ubiquinone oxidoreductase chain 6	
-Q9MIY0	zebrafish	Q9MIY0	mt-nd5	Q9MIY0	18	240	NADH-ubiquinone oxidoreductase chain 5	
-Q9MIY1	zebrafish	Q9MIY1	mt-nd4	Q9MIY1	9	267	NADH-ubiquinone oxidoreductase chain 4	
-Q9MIY2	zebrafish	Q9MIY2	mt-nd4l	Q9MIY2	9	228	NADH-ubiquinone oxidoreductase chain 4L	
+Q9MIY0	zebrafish	Q9MIY0	mt-nd5	Q9MIY0	24	243	NADH-ubiquinone oxidoreductase chain 5	
+Q9MIY1	zebrafish	Q9MIY1	mt-nd4	Q9MIY1	20	277	NADH-ubiquinone oxidoreductase chain 4	
+Q9MIY2	zebrafish	Q9MIY2	mt-nd4l	Q9MIY2	10	229	NADH-ubiquinone oxidoreductase chain 4L	
 Q9MIY3	zebrafish	Q9MIY3	mt-nd3	Q9MIY3	2	297	NADH-ubiquinone oxidoreductase chain 3	
-Q9MIY4	zebrafish	Q9MIY4	mt-co3	Q9MIY4	10	105	Cytochrome c oxidase subunit 3	
-Q9MIY5	zebrafish	Q9MIY5	mt-atp6	Q9MIY5	2	94	ATP synthase F(0) complex subunit a	
+Q9MIY4	zebrafish	Q9MIY4	mt-co3	Q9MIY4	18	114	Cytochrome c oxidase subunit 3	
+Q9MIY5	zebrafish	Q9MIY5	mt-atp6	Q9MIY5	3	95	ATP synthase F(0) complex subunit a	
 Q9MIY6	zebrafish	Q9MIY6	mt-atp8	Q9MIY6	4	28	ATP synthase F(0) complex subunit 8	
-Q9MIY7	zebrafish	Q9MIY7	mt-co2	Q9MIY7	7	127	Cytochrome c oxidase subunit 2	
-Q9MIY8	zebrafish	Q9MIY8	mt-co1	Q9MIY8	10	109	Cytochrome c oxidase subunit 1	
-Q9MIY9	zebrafish	Q9MIY9	mt-nd2	Q9MIY9	5	239	NADH-ubiquinone oxidoreductase chain 2	
-Q9MIZ0	zebrafish	Q9MIZ0	mt-nd1	Q9MIZ0	14	393	NADH-ubiquinone oxidoreductase chain 1	
+Q9MIY7	zebrafish	Q9MIY7	mt-co2	Q9MIY7	17	136	Cytochrome c oxidase subunit 2	
+Q9MIY8	zebrafish	Q9MIY8	mt-co1	Q9MIY8	21	116	Cytochrome c oxidase subunit 1	
+Q9MIY9	zebrafish	Q9MIY9	mt-nd2	Q9MIY9	11	242	NADH-ubiquinone oxidoreductase chain 2	
+Q9MIZ0	zebrafish	Q9MIZ0	mt-nd1	Q9MIZ0	25	401	NADH-ubiquinone oxidoreductase chain 1	

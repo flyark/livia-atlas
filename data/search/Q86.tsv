@@ -37,7 +37,7 @@ Q869K3	dictyostelium-discoideum	Q869K3	bpnt1	Q869K3	0	7	3(2),5'-bisphosphate nuc
 Q869K7	dictyostelium-discoideum	Q869K7	DDB_G0275647	Q869K7	5	17	Cytochrome b5 domain-containing protein	
 Q869L4	dictyostelium-discoideum	Q869L4	fnkA	Q869L4	0	1	Probable serine/threonine-protein kinase fnkA	
 Q869L7	dictyostelium-discoideum	Q869L7	DDB_G0275557	Q869L7	4	137	Ubiquitin-like domain-containing protein	
-Q869N1	dictyostelium-discoideum	Q869N1	cytC	Q869N1	3	51	Cytochrome c	
+Q869N1	dictyostelium-discoideum	Q869N1	cytC	Q869N1	5	52	Cytochrome c	
 Q869N2	dictyostelium-discoideum	Q869N2	pakB	Q869N2	10	30	Serine/threonine-protein kinase pakB	
 Q869N4	dictyostelium-discoideum	Q869N4	PFP1	Q869N4	0	2	DJ-1/ThiJ/PfpI family protein	
 Q869N6	dictyostelium-discoideum	Q869N6	DDB_G0271866	Q869N6	0	5	3-hydroxybutyryl-CoA dehydratase-like protein, mitochondrial	
@@ -71,7 +71,7 @@ Q869X1	dictyostelium-discoideum	Q869X1	DDB_G0275075	Q869X1	4	23	Tetratricopeptid
 Q869X5	dictyostelium-discoideum	Q869X5	DDB_G0275017	Q869X5	4	21	histone acetyltransferase	
 Q869X7	dictyostelium-discoideum	Q869X7	DDB_G0275159	Q869X7	3	6	Histone acetyltransferase type B catalytic subunit DDB_G0275	
 Q869Y3	dictyostelium-discoideum	Q869Y3	DDB_G0275049	Q869Y3	0	8	Uncharacterized protein	
-Q869Y7	dictyostelium-discoideum	Q869Y7	odhB	Q869Y7	1	16	Dihydrolipoyllysine-residue succinyltransferase component of	
+Q869Y7	dictyostelium-discoideum	Q869Y7	odhB	Q869Y7	2	17	Dihydrolipoyllysine-residue succinyltransferase component of	
 Q869Z0	dictyostelium-discoideum	Q869Z0	DDB_G0275025	Q869Z0	0	4	Putative protein disulfide-isomerase DDB_G0275025	
 Q869Z1	dictyostelium-discoideum	Q869Z1	dhx9	Q869Z1	0	27	RNA helicase	
 Q869Z3	dictyostelium-discoideum	Q869Z3	mgluS	Q869Z3	4	114	glutamate--tRNA ligase	
@@ -201,8 +201,10 @@ Q86BM4	fly	FBgn0052986	CG32986	Q86BM4	1	3	IP10109p
 Q86BM5	fly	FBgn0027932	Akap200	Q86BM5	35	225	A kinase anchor protein 200, isoform D (A kinase anchor prot	
 Q86BM7	fly	FBgn0053125	CG33125	Q86BM7	0	0	MIP16756p	
 Q86BM8	fly	FBgn0053002	mRpL27	Q86BM8	13	244	Mitochondrial ribosomal protein L27, isoform A (Mitochondria	
-Q86BN8	fly	FBgn0039111	Ptpmt1	Q86BN8	118	979	Phosphatidylglycerophosphatase and protein-tyrosine phosphat	
-Q86BP1	fly	FBgn0038326	Hibch	Q86BP1	15	134	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial (EC 3.1.2.4	
+Q86BM8_DROME	fly	FBgn0053002	mRpL27	Q86BM8	13	244		
+Q86BN8	fly	FBgn0039111	Ptpmt1	Q86BN8	118	981	Phosphatidylglycerophosphatase and protein-tyrosine phosphat	
+Q86BP1	fly	FBgn0038326	Hibch	Q86BP1	16	136	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial (EC 3.1.2.4	
+Q86BP1_DROME	fly	FBgn0038326	Hibch	Q86BP1	16	136		
 Q86BP6	fly	FBgn0036574	elg1	Q86BP6	9	20	Enhanced level of genomic instability 1	
 Q86BR7	fly	FBgn0027518	Wdr24	Q86BR7	16	80	GATOR2 complex protein WDR24	
 Q86BR8	fly	FBgn0038805	TFAM	Q86BR8	36	472	Mitochondrial transcription factor A, isoform B	
@@ -238,6 +240,8 @@ Q86G91	worm	Q86G91	flp-33	Q86G91	0	1	FMRF-Like Peptide
 Q86GC1	worm	Q86GC1	CELE_T04B2.7	Q86GC1	2	29	DUF2780 domain-containing protein	
 Q86GI2	worm	Q86GI2	sym-3	Q86GI2	2	5	C2 NT-type domain-containing protein	
 Q86GL4	dictyostelium-discoideum	Q86GL4	noxB	Q86GL4	2	25	Superoxide-generating NADPH oxidase heavy chain subunit B	
+Q86GU7	worm	Q86GU7	C49A9.10	Q86GU7	1	1	Oxidoreductase-like domain-containing protein	
+Q86GU7_CAEEL	worm	Q86GU7	C49A9.10	Q86GU7	1	1		
 Q86GV3	worm	Q86GV3	gcy-28	Q86GV3	2	13	Receptor-type guanylate cyclase gcy-28 (EC 4.6.1.2) (GCY-X1)	
 Q86H13	dictyostelium-discoideum	Q86H13	Pde4	Q86H13	1	2	3,5-cyclic-AMP phosphodiesterase 4	
 Q86H28	dictyostelium-discoideum	Q86H28	prodh	Q86H28	0	1	Proline dehydrogenase 1, mitochondrial	
@@ -245,7 +249,7 @@ Q86H29	dictyostelium-discoideum	Q86H29	DDB_G0275667	Q86H29	2	5	Protein KTI12 hom
 Q86H43	dictyostelium-discoideum	Q86H43	malaS	Q86H43	1	19	Alanine--tRNA ligase, mitochondrial	
 Q86H44	dictyostelium-discoideum	Q86H44	xrcc1	Q86H44	3	22	BRCT domain-containing protein	
 Q86H45	dictyostelium-discoideum	Q86H45	elp2	Q86H45	3	7	Elongator complex protein 2	
-Q86H49	dictyostelium-discoideum	Q86H49	acn9	Q86H49	0	3	Succinate dehydrogenase assembly factor 3, mitochondrial	
+Q86H49	dictyostelium-discoideum	Q86H49	acn9	Q86H49	1	4	Succinate dehydrogenase assembly factor 3, mitochondrial	
 Q86H52	dictyostelium-discoideum	Q86H52	DDB_G0275535	Q86H52	1	1	Phospholipid-transporting ATPase	
 Q86H55	dictyostelium-discoideum	Q86H55	DDB_G0275885	Q86H55	7	109	RRM domain-containing protein	
 Q86H60	dictyostelium-discoideum	Q86H60	hspK	Q86H60	0	1	Small heat shock protein hspK	
@@ -291,7 +295,7 @@ Q86HU9	dictyostelium-discoideum	Q86HU9	DDB_G0276471	Q86HU9	0	10	PX domain-contai
 Q86HW2	dictyostelium-discoideum	Q86HW2	DDB_G0276561	Q86HW2	0	1	MORN repeat protein	
 Q86HW6	dictyostelium-discoideum	Q86HW6	DDB_G0276461	Q86HW6	0	3	Probable serine/threonine-protein kinase DDB_G0276461	
 Q86HW7	dictyostelium-discoideum	Q86HW7	nutf2	Q86HW7	1	18	Nuclear transport factor 2	
-Q86HX0	dictyostelium-discoideum	Q86HX0	pdhB	Q86HX0	2	13	Pyruvate dehydrogenase E1 component subunit beta, mitochondr	
+Q86HX0	dictyostelium-discoideum	Q86HX0	pdhB	Q86HX0	3	14	Pyruvate dehydrogenase E1 component subunit beta, mitochondr	
 Q86HX1	dictyostelium-discoideum	Q86HX1	hira	Q86HX1	1	2	Protein HIRA	
 Q86HX6	dictyostelium-discoideum	Q86HX6	DDB_G0276881	Q86HX6	0	7	Uncharacterized protein	
 Q86HX9	dictyostelium-discoideum	Q86HX9	mybK	Q86HX9	0	2	Myb-like protein K	
@@ -300,6 +304,7 @@ Q86I11	dictyostelium-discoideum	Q86I11	DDB_G0275109	Q86I11	13	18	Uncharacterized
 Q86I14	dictyostelium-discoideum	Q86I14	commd7	Q86I14	10	59	COMM domain-containing protein 7	
 Q86I16	dictyostelium-discoideum	Q86I16	DDB_G0275169	Q86I16	1	2	Uncharacterized protein	
 Q86I20	dictyostelium-discoideum	Q86I20	dstD	Q86I20	2	16	Signal transducer and activator of transcription	
+Q86I22	dictyostelium-discoideum	Q86I22	fahd1	Q86I22	2	2	Acylpyruvase FAHD1, mitochondrial	
 Q86I34	dictyostelium-discoideum	Q86I34	DDB_G0275089	Q86I34	0	6	C3H1-type domain-containing protein	
 Q86I37	dictyostelium-discoideum	Q86I37	DDB_G0275091	Q86I37	3	23	Uncharacterized protein	
 Q86I44	dictyostelium-discoideum	Q86I44	limF	Q86I44	0	2	LIM domain-containing protein F	
@@ -344,7 +349,7 @@ Q86IX8	dictyostelium-discoideum	Q86IX8	DDB_G0274329	Q86IX8	2	9	peptidylprolyl is
 Q86IY1	dictyostelium-discoideum	Q86IY1	DDB_G0274333	Q86IY1	0	2	Putative uncharacterized protein DDB_G0274333	
 Q86IY4	dictyostelium-discoideum	Q86IY4	DDB_G0274339	Q86IY4	2	24	acetyl-CoA C-acyltransferase	
 Q86IY7	dictyostelium-discoideum	Q86IY7	DDB_G0274345	Q86IY7	0	1	Band 7 domain-containing protein	
-Q86IZ2	dictyostelium-discoideum	Q86IZ2	ndufa13	Q86IZ2	5	73	NADH dehydrogenase	
+Q86IZ2	dictyostelium-discoideum	Q86IZ2	ndufa13	Q86IZ2	6	73	NADH dehydrogenase	
 Q86IZ3	dictyostelium-discoideum	Q86IZ3	pex4	Q86IZ3	1	12	Ubiquitin-conjugating enzyme E2 pex4	
 Q86IZ4	dictyostelium-discoideum	Q86IZ4	dpiA	Q86IZ4	4	8	Protein phosphatase inhibitor 2	
 Q86IZ9	dictyostelium-discoideum	Q86IZ9	ddx52	Q86IZ9	1	20	Probable ATP-dependent RNA helicase ddx52	
@@ -393,10 +398,10 @@ Q86K38	dictyostelium-discoideum	Q86K38	DDB_G0277259	Q86K38	3	35	Ribosomal protei
 Q86K39	dictyostelium-discoideum	Q86K39	DDB_G0277257	Q86K39	3	29	Uncharacterized protein	
 Q86K41	dictyostelium-discoideum	Q86K41	DDB_G0277251	Q86K41	0	6	OTU domain-containing protein	
 Q86K42	dictyostelium-discoideum	Q86K42	DDB_G0277249	Q86K42	1	22	Ankyrin repeat-containing protein	
-Q86K43	dictyostelium-discoideum	Q86K43	NTH1	Q86K43	2	5	Endonuclease III homolog	
+Q86K43	dictyostelium-discoideum	Q86K43	NTH1	Q86K43	6	10	Endonuclease III homolog	
 Q86K47	dictyostelium-discoideum	Q86K47	DDB_G0277341	Q86K47	1	12	PHD zinc finger-containing protein	
 Q86K48	dictyostelium-discoideum	Q86K48	emc2	Q86K48	4	14	ER membrane protein complex subunit 2	
-Q86K57	dictyostelium-discoideum	Q86K57	ndufs8	Q86K57	5	86	NADH-ubiquinone oxidoreductase 23 kDa subunit	
+Q86K57	dictyostelium-discoideum	Q86K57	ndufs8	Q86K57	10	88	NADH-ubiquinone oxidoreductase 23 kDa subunit	
 Q86K64	dictyostelium-discoideum	Q86K64	mrps17	Q86K64	20	279	Small ribosomal subunit protein uS17m	
 Q86K69	dictyostelium-discoideum	Q86K69	DDB_G0277189	Q86K69	1	6	Ubiquitin-like domain-containing protein	
 Q86K88	dictyostelium-discoideum	Q86K88	cnrJ	Q86K88	0	10	Carbohydrate-binding domain-containing protein	
@@ -412,7 +417,7 @@ Q86KB4	dictyostelium-discoideum	Q86KB4	DDB_G0274195	Q86KB4	3	47	BRCT domain-cont
 Q86KB7	dictyostelium-discoideum	Q86KB7	DDB_G0274187	Q86KB7	0	2	Amino acid transporter transmembrane domain-containing prote	
 Q86KC0	dictyostelium-discoideum	Q86KC0	DDB_G0274183	Q86KC0	0	5	Leucine-rich repeat-containing protein	
 Q86KC1	dictyostelium-discoideum	Q86KC1	DDB_G0274181	Q86KC1	0	5	Probable GH family 25 lysozyme 2	
-Q86KD0	dictyostelium-discoideum	Q86KD0	DDB_G0274169	Q86KD0	2	5	BolA-like protein DDB_G0274169	
+Q86KD0	dictyostelium-discoideum	Q86KD0	DDB_G0274169	Q86KD0	2	8	BolA-like protein DDB_G0274169	
 Q86KD1	dictyostelium-discoideum	Q86KD1	cand1	Q86KD1	5	18	Cullin-associated NEDD8-dissociated protein 1	
 Q86KD2	dictyostelium-discoideum	Q86KD2	DDB_G0274165	Q86KD2	0	21	PB1 domain-containing protein	
 Q86KD5	dictyostelium-discoideum	Q86KD5	DDB_G0274161	Q86KD5	1	23	NmrA-like domain-containing protein	
@@ -471,7 +476,8 @@ Q86MP1	worm	Q86MP1	col-95	Q86MP1	0	6	Nematode cuticle collagen N-terminal domain
 Q86MP2	worm	Q86MP2	col-96	Q86MP2	0	6	Nematode cuticle collagen N-terminal domain-containing prote	
 Q86MP3	worm	Q86MP3	epg-6	Q86MP3	0	3	Ectopic P granules protein 6	
 Q86MW9	schistosoma-mansoni	Q86MW9	SINA	Q86MW9	2	12	E3 ubiquitin-protein ligase sina	
-Q86NC2	worm	Q86NC2	nuo-2	Q86NC2	10	85	NADH dehydrogenase	
+Q86NC2	worm	Q86NC2	nuo-2	Q86NC2	14	85	NADH dehydrogenase	
+Q86NC2_CAEEL	worm	Q86NC2	nuo-2	Q86NC2	14	85		
 Q86NE0	worm	Q86NE0	asp-2	Q86NE0	0	7	Peptidase A1 domain-containing protein	
 Q86NE4	worm	Q86NE4	col-169	Q86NE4	0	1	Nematode cuticle collagen N-terminal domain-containing prote	
 Q86NG3	worm	Q86NG3	clec-88	Q86NG3	0	1	C-type lectin domain-containing protein 88	
@@ -493,7 +499,8 @@ Q86P80	fly	FBgn0033504	CAP	Q86P80	9	39	CAP
 Q86P97	fly	FBgn0039381	SppL	Q86P97	8	62	GM06145p (Signal peptide peptidase-like, isoform D (EC 3.4.2	
 Q86PA6	fly	FBgn0267821	da	Q86PA6	143	457	daughterless	
 Q86PC9	fly	FBgn0015721	ktub	Q86PC9	9	25	king tubby	
-Q86PD3	fly	FBgn0050022	CG30022	Q86PD3	0	12	RE56416p (RE65279p) (RE65881p)	
+Q86PD3	fly	FBgn0050022	CG30022	Q86PD3	2	14	RE56416p (RE65279p) (RE65881p)	
+Q86PD3_DROME	fly	FBgn0050022	CG30022	Q86PD3	2	14		
 Q86PD7	fly	FBgn0036999	isoQC	Q86PD7	47	295	Glutaminyl-peptide cyclotransferase (EC 2.3.2.5) (Iso glutam	
 Q86PF4	fly	FBgn0038088	CG10126	Q86PF4	0	12	GH08978p	
 Q86PJ4	worm	Q86PJ4	nhr-105	Q86PJ4	15	238	Nuclear Hormone Receptor family	
@@ -536,7 +543,7 @@ Q86SR1	human	Q86SR1	GALNT10	Q86SR1	3	99	Polypeptide N-acetylgalactosaminyltransf
 Q86SS6	human	Q86SS6	SYT9	Q86SS6	12	92	Synaptotagmin-9 (Synaptotagmin IX) (SytIX)	
 Q86SU0	human	Q86SU0	ILDR1	Q86SU0	11	48	Immunoglobulin-like domain-containing receptor 1 (Angulin-2)	
 Q86SX3	human	Q86SX3	TEDC1	Q86SX3	14	72	Tubulin epsilon and delta complex protein 1	
-Q86SX6	human	Q86SX6	GLRX5	Q86SX6	13	152	Glutaredoxin-related protein 5, mitochondrial (Monothiol glu	
+Q86SX6	human	Q86SX6	GLRX5	Q86SX6	17	156	Glutaredoxin-related protein 5, mitochondrial (Monothiol glu	
 Q86SY8	human	Q86SY8	KTN1-AS1	Q86SY8	2	8	Putative uncharacterized protein KTN1-AS1 (KTN1 antisense RN	
 Q86SZ2	human	Q86SZ2	TRAPPC6B	Q86SZ2	22	72	Trafficking protein particle complex subunit 6B (TRAPP compl	
 Q86T03	human	Q86T03	PIP4P1	Q86T03	15	101	Type 1 phosphatidylinositol 4,5-bisphosphate 4-phosphatase (	
@@ -572,11 +579,11 @@ Q86TM3	human	Q86TM3	DDX53	Q86TM3	3	110	Probable ATP-dependent RNA helicase DDX53
 Q86TM6	human	Q86TM6	SYVN1	Q86TM6	45	324	E3 ubiquitin-protein ligase synoviolin (EC 2.3.2.27) (RING-t	
 Q86TN4	human	Q86TN4	TRPT1	Q86TN4	0	53	tRNA 2'-phosphotransferase 1 (EC 2.7.1.160)	
 Q86TP1	human	Q86TP1	PRUNE1	Q86TP1	6	80	Exopolyphosphatase PRUNE1 (EC 3.6.1.14) (EC 3.6.1.25) (Droso	
-Q86TS9	human	Q86TS9	MRPL52	Q86TS9	19	235	Large ribosomal subunit protein mL52 (39S ribosomal protein 	
+Q86TS9	human	Q86TS9	MRPL52	Q86TS9	20	236	Large ribosomal subunit protein mL52 (39S ribosomal protein 	
 Q86TU6	human	Q86TU6	LINC00523	Q86TU6	1	6	Putative uncharacterized protein encoded by LINC00523	
 Q86TU7	human	Q86TU7	SETD3	Q86TU7	10	95	Actin-histidine N-methyltransferase (EC 2.1.1.85) (Protein-L	
 Q86TV6	human	Q86TV6	TTC7B	Q86TV6	7	42	Tetratricopeptide repeat protein 7B (TPR repeat protein 7B) 	
-Q86TW2	human	Q86TW2	ADCK1	Q86TW2	10	1247	AarF domain-containing protein kinase 1 (EC 2.7.-.-)	
+Q86TW2	human	Q86TW2	ADCK1	Q86TW2	12	1248	AarF domain-containing protein kinase 1 (EC 2.7.-.-)	
 Q86TX2	human	Q86TX2	ACOT1	Q86TX2	5	190	Acyl-coenzyme A thioesterase 1 (Acyl-CoA thioesterase 1) (EC	
 Q86TY3	human	Q86TY3	ARMH4	Q86TY3	2	25	Armadillo-like helical domain-containing protein 4 (Upstream	
 Q86TZ1	human	Q86TZ1	TTC6	Q86TZ1	2	32	Tetratricopeptide repeat protein 6 (TPR repeat protein 6)	
@@ -584,13 +591,13 @@ Q86U02	human	Q86U02	LINC00596	Q86U02	1	9	Putative uncharacterized protein encode
 Q86U06	human	Q86U06	RBM23	Q86U06	28	139	Probable RNA-binding protein 23 (CAPER beta) (CAPERbeta) (RN	
 Q86U10	human	Q86U10	ASPG	Q86U10	2	59	60 kDa lysophospholipase (LysoLP) (EC 3.1.1.5) (Lysophosphol	
 Q86U17	human	Q86U17	SERPINA11	Q86U17	3	70	Serpin A11	
-Q86U28	human	Q86U28	ISCA2	Q86U28	18	112	Iron-sulfur cluster assembly 2 homolog, mitochondrial (HESB-	
+Q86U28	human	Q86U28	ISCA2	Q86U28	19	112	Iron-sulfur cluster assembly 2 homolog, mitochondrial (HESB-	
 Q86U38	human	Q86U38	NOP9	Q86U38	20	267	Nucleolar protein 9	
 Q86U42	human	Q86U42	PABPN1	Q86U42	34	240	Polyadenylate-binding protein 2 (PABP-2) (Poly(A)-binding pr	
 Q86U44	human	Q86U44	METTL3	Q86U44	28	375	N(6)-adenosine-methyltransferase catalytic subunit METTL3 (E	
 Q86U70	human	Q86U70	LDB1	Q86U70	99	527	LIM domain-binding protein 1 (LDB-1) (Carboxyl-terminal LIM 	
 Q86U86	human	Q86U86	PBRM1	Q86U86	26	363	Protein polybromo-1 (hPB1) (BRG1-associated factor 180) (BAF	
-Q86U90	human	Q86U90	YRDC	Q86U90	26	374	Threonylcarbamoyl-AMP synthase (EC 2.7.7.87) (Dopamine recep	
+Q86U90	human	Q86U90	YRDC	Q86U90	32	379	Threonylcarbamoyl-AMP synthase (EC 2.7.7.87) (Dopamine recep	
 Q86UA1	human	Q86UA1	PRPF39	Q86UA1	10	139	Pre-mRNA-processing factor 39 (PRP39 homolog)	
 Q86UA6	human	Q86UA6	RPAIN	Q86UA6	21	265	RPA-interacting protein (hRIP)	
 Q86UB2	human	Q86UB2	BIVM	Q86UB2	2	89	Basic immunoglobulin-like variable motif-containing protein	
@@ -629,7 +636,7 @@ Q86UR1	human	Q86UR1	NOXA1	Q86UR1	24	123	NADPH oxidase activator 1 (NOX activator
 Q86UR5	human	Q86UR5	RIMS1	Q86UR5	18	63	Regulating synaptic membrane exocytosis protein 1 (Rab-3-int	
 Q86US8	human	Q86US8	SMG6	Q86US8	29	303	Telomerase-binding protein EST1A (EC 3.1.-.-) (Ever shorter 	
 Q86UT5	human	Q86UT5	NHERF4	Q86UT5	4	27	Na(+)/H(+) exchange regulatory cofactor NHE-RF4 (NHERF-4) (I	
-Q86UT6	human	Q86UT6	NLRX1	Q86UT6	5	112	NLR family member X1 (Caterpiller protein 11.3) (CLR11.3) (N	
+Q86UT6	human	Q86UT6	NLRX1	Q86UT6	6	113	NLR family member X1 (Caterpiller protein 11.3) (CLR11.3) (N	
 Q86UT8	human	Q86UT8	CENATAC	Q86UT8	13	114	Centrosomal AT-AC splicing factor (Coiled-coil domain-contai	
 Q86UU0	human	Q86UU0	BCL9L	Q86UU0	31	129	B-cell CLL/lymphoma 9-like protein (B-cell lymphoma 9-like p	
 Q86UU1	human	Q86UU1	PHLDB1	Q86UU1	43	230	Pleckstrin homology-like domain family B member 1 (Protein L	
@@ -701,7 +708,7 @@ Q86VR7	human	Q86VR7	VSIG10L	Q86VR7	5	37	V-set and immunoglobulin domain-containi
 Q86VR8	human	Q86VR8	FJX1	Q86VR8	7	43	Four-jointed box protein 1 (Four-jointed protein homolog)	
 Q86VS3	human	Q86VS3	IQCH	Q86VS3	4	40	IQ domain-containing protein H (Testis development protein N	
 Q86VS8	human	Q86VS8	HOOK3	Q86VS8	76	270	Protein Hook homolog 3 (h-hook3) (hHK3)	
-Q86VU5	human	Q86VU5	COMTD1	Q86VU5	6	229	Catechol O-methyltransferase domain-containing protein 1 (EC	
+Q86VU5	human	Q86VU5	COMTD1	Q86VU5	7	230	Catechol O-methyltransferase domain-containing protein 1 (EC	
 Q86VV4	human	Q86VV4	RANBP3L	Q86VV4	7	73	Ran-binding protein 3-like	
 Q86VV8	human	Q86VV8	RTTN	Q86VV8	9	163	Rotatin	
 Q86VW0	human	Q86VW0	SESTD1	Q86VW0	12	81	SEC14 domain and spectrin repeat-containing protein 1 (Hunti	
@@ -732,7 +739,7 @@ Q86W56	human	Q86W56	PARG	Q86W56	7	99	Poly(ADP-ribose) glycohydrolase (EC 3.2.1.1
 Q86W67	human	Q86W67	FAM228A	Q86W67	6	32	Protein FAM228A	
 Q86W74	human	Q86W74	ANKRD46	Q86W74	13	141	Ankyrin repeat domain-containing protein 46 (Ankyrin repeat 	
 Q86W92	human	Q86W92	PPFIBP1	Q86W92	109	364	Liprin-beta-1 (Protein tyrosine phosphatase receptor type f 	
-Q86WA6	human	Q86WA6	BPHL	Q86WA6	8	134	Serine hydrolase BPHL (EC 3.1.-.-) (Biphenyl hydrolase-like 	
+Q86WA6	human	Q86WA6	BPHL	Q86WA6	18	143	Serine hydrolase BPHL (EC 3.1.-.-) (Biphenyl hydrolase-like 	
 Q86WA8	human	Q86WA8	LONP2	Q86WA8	4	86	Lon protease homolog 2, peroxisomal (EC 3.4.21.53) (Lon prot	
 Q86WA9	human	Q86WA9	SLC26A11	Q86WA9	6	64	Sodium-independent sulfate anion transporter (Solute carrier	
 Q86WB0	human	Q86WB0	ZC3HC1	Q86WB0	15	146	Zinc finger C3HC-type protein 1 (Nuclear-interacting partner	
@@ -765,7 +772,7 @@ Q86WU2	human	Q86WU2	LDHD	Q86WU2	3	101	D-lactate dehydrogenase, mitochondrial (DL
 Q86WV1	human	Q86WV1	SKAP1	Q86WV1	44	212	Src kinase-associated phosphoprotein 1 (Src family-associate	
 Q86WV5	human	Q86WV5	TEN1	Q86WV5	8	188	CST complex subunit TEN1 (Protein telomeric pathways with ST	
 Q86WV6	human	Q86WV6	STING1	Q86WV6	9	216	Stimulator of interferon genes protein (hSTING) (Endoplasmic	
-Q86WW8	human	Q86WW8	COA5	Q86WW8	4	59	Cytochrome c oxidase assembly factor 5	
+Q86WW8	human	Q86WW8	COA5	Q86WW8	6	62	Cytochrome c oxidase assembly factor 5	
 Q86WX3	human	Q86WX3	RPS19BP1	Q86WX3	23	238	Active regulator of SIRT1 (40S ribosomal protein S19-binding	
 Q86WZ0	human	Q86WZ0	HEATR4	Q86WZ0	0	29	HEAT repeat-containing protein 4	
 Q86WZ6	human	Q86WZ6	ZNF227	Q86WZ6	1	75	Zinc finger protein 227	
@@ -783,8 +790,8 @@ Q86X53	human	Q86X53	ERICH1	Q86X53	5	25	Glutamate-rich protein 1
 Q86X55	human	Q86X55	CARM1	Q86X55	26	383	Histone-arginine methyltransferase CARM1 (EC 2.1.1.319) (Coa	
 Q86X59	human	Q86X59	LINC02875	Q86X59	2	22	Putative uncharacterized protein LINC02875	
 Q86X60	human	Q86X60	FAM72B	Q86X60	1	48	Protein FAM72B	
-Q86X67	human	Q86X67	NUDT13	Q86X67	0	26	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	
-Q86X76	human	Q86X76	NIT1	Q86X76	0	113	Deaminated glutathione amidase (dGSH amidase) (EC 3.5.1.128)	
+Q86X67	human	Q86X67	NUDT13	Q86X67	1	27	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	
+Q86X76	human	Q86X76	NIT1	Q86X76	1	114	Deaminated glutathione amidase (dGSH amidase) (EC 3.5.1.128)	
 Q86X83	human	Q86X83	COMMD2	Q86X83	23	190	COMM domain-containing protein 2	
 Q86X95	human	Q86X95	CIRSR	Q86X95	49	435	Corepressor of RBPJ and splicing regulator (CBF1-interacting	
 Q86XA0	human	Q86XA0	METTL23	Q86XA0	6	77	Histone-arginine methyltransferase METTL23 (EC 2.1.1.319) (M	
@@ -792,7 +799,7 @@ Q86XA9	human	Q86XA9	HEATR5A	Q86XA9	3	46	HEAT repeat-containing protein 5A
 Q86XD5	human	Q86XD5	FAM131B	Q86XD5	11	92	Protein FAM131B	
 Q86XD8	human	Q86XD8	ZFAND4	Q86XD8	38	361	AN1-type zinc finger protein 4 (AN1-type zinc finger and ubi	
 Q86XE0	human	Q86XE0	SNX32	Q86XE0	20	71	Sorting nexin-32 (Sorting nexin-6B)	
-Q86XE3	human	Q86XE3	MICU3	Q86XE3	3	41	Calcium uptake protein 3, mitochondrial (hMICU3) (EF-hand do	
+Q86XE3	human	Q86XE3	MICU3	Q86XE3	6	44	Calcium uptake protein 3, mitochondrial (hMICU3) (EF-hand do	
 Q86XE5	human	Q86XE5	HOGA1	Q86XE5	2	67	4-hydroxy-2-oxoglutarate aldolase, mitochondrial (EC 4.1.3.1	
 Q86XF0	human	Q86XF0	DHFR2	Q86XF0	9	321	Dihydrofolate reductase 2, mitochondrial (Dihydrofolate redu	
 Q86XF7	human	Q86XF7	ZNF575	Q86XF7	20	367	Zinc finger protein 575	
@@ -842,16 +849,16 @@ Q86Y33	human	Q86Y33	CDC20B	Q86Y33	28	183	Cell division cycle protein 20 homolog 
 Q86Y34	human	Q86Y34	ADGRG3	Q86Y34	14	77	Adhesion G protein-coupled receptor G3 (G protein-coupled re	
 Q86Y37	human	Q86Y37	CACUL1	Q86Y37	35	232	CDK2-associated and cullin domain-containing protein 1 (Cdk-	
 Q86Y38	human	Q86Y38	XYLT1	Q86Y38	4	40	Xylosyltransferase 1 (EC 2.4.2.26) (Peptide O-xylosyltransfe	
-Q86Y39	human	Q86Y39	NDUFA11	Q86Y39	4	149	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	
+Q86Y39	human	Q86Y39	NDUFA11	Q86Y39	6	151	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	
 Q86Y46	human	Q86Y46	KRT73	Q86Y46	67	95	Keratin, type II cytoskeletal 73 (Cytokeratin-73) (CK-73) (K	
 Q86Y56	human	Q86Y56	DNAAF5	Q86Y56	27	182	Dynein axonemal assembly factor 5 (HEAT repeat-containing pr	
 Q86Y78	human	Q86Y78	LYPD6	Q86Y78	36	280	Ly6/PLAUR domain-containing protein 6	
-Q86Y79	human	Q86Y79	PTRH1	Q86Y79	6	65	Peptidyl-tRNA hydrolase (PTH) (EC 3.1.1.29)	
+Q86Y79	human	Q86Y79	PTRH1	Q86Y79	19	77	Peptidyl-tRNA hydrolase (PTH) (EC 3.1.1.29)	
 Q86Y82	human	Q86Y82	STX12	Q86Y82	39	301	Syntaxin-12	
 Q86Y91	human	Q86Y91	KIF18B	Q86Y91	27	188	Kinesin-like protein KIF18B	
 Q86Y97	human	Q86Y97	KMT5C	Q86Y97	12	68	Histone-lysine N-methyltransferase KMT5C (Lysine N-methyltra	
 Q86YA3	human	Q86YA3	ZGRF1	Q86YA3	6	87	5'-3' DNA helicase ZGRF1 (EC 5.6.2.3) (GRF-type zinc finger 	
-Q86YB7	human	Q86YB7	ECHDC2	Q86YB7	7	140	Enoyl-CoA hydratase domain-containing protein 2, mitochondri	
+Q86YB7	human	Q86YB7	ECHDC2	Q86YB7	9	142	Enoyl-CoA hydratase domain-containing protein 2, mitochondri	
 Q86YB8	human	Q86YB8	ERO1B	Q86YB8	8	95	ERO1-like protein beta (ERO1-L-beta) (EC 1.8.3.2) (Endoplasm	
 Q86YC2	human	Q86YC2	PALB2	Q86YC2	166	1085	Partner and localizer of BRCA2	
 Q86YC3	human	Q86YC3	NRROS	Q86YC3	15	122	Transforming growth factor beta activator LRRC33 (Leucine-ri	
@@ -899,4 +906,4 @@ Q86Z14	human	Q86Z14	KLB	Q86Z14	8	53	Beta-klotho (BKL) (BetaKlotho) (Klotho beta-
 Q86Z20	human	Q86Z20	CCDC125	Q86Z20	21	87	Coiled-coil domain-containing protein 125 (Protein kenae)	
 Q86Z23	human	Q86Z23	C1QL4	Q86Z23	24	134	Complement C1q-like protein 4 (C1q and tumor necrosis factor	
 Q86ZR7	yeast	Q86ZR7	YKL033W-A	Q86ZR7	0	11	Probable pseudouridine-5'-phosphatase YKL033W-A	
-Q86ZU7	schizosaccharomyces-pombe	Q86ZU7	cox1102	Q86ZU7	1	35	Rsm22-cox11 tandem protein 2, mitochondrial	
+Q86ZU7	schizosaccharomyces-pombe	Q86ZU7	cox1102	Q86ZU7	4	38	Rsm22-cox11 tandem protein 2, mitochondrial	

@@ -76,9 +76,9 @@ P243	human	Q6P0N0	MIS18BP1	Q6P0N0	54	321	Mis18-binding protein 1 (Kinetochore-as
 P24301	mycobacterium-leprae	P24301	groES	P24301	2	61	Co-chaperonin GroES	
 P24309	yeast	P24309	DBR1	P24309	1	6	Lariat debranching enzyme	
 P24310	human	P24310	COX7A1	P24310	43	186	Cytochrome c oxidase subunit 7A1, mitochondrial (Cytochrome 	
-P24311	human	P24311	COX7B	P24311	67	313	Cytochrome c oxidase subunit 7B, mitochondrial (Cytochrome c	
+P24311	human	P24311	COX7B	P24311	68	314	Cytochrome c oxidase subunit 7B, mitochondrial (Cytochrome c	
 P24323	haemophilus-influenzae	P24323	adk	P24323	0	7	Adenylate kinase	
-P24329	rattus-norvegicus	P24329	Tst	P24329	0	18	Thiosulfate sulfurtransferase	
+P24329	rattus-norvegicus	P24329	Tst	P24329	4	23	Thiosulfate sulfurtransferase	
 P24337	glycine-max	P24337	?	P24337	0	1	Hydrophobic seed protein	
 P24338	rattus-norvegicus	P24338	Areg	P24338	13	99	Amphiregulin	
 P24339	schizosaccharomyces-pombe	P24339	cut7	P24339	2	16	Kinesin-like protein cut7	
@@ -133,12 +133,12 @@ P24464	rattus-norvegicus	P24464	Cyp4a12	P24464	0	6	Cytochrome P450 4A12
 P24468	human	P24468	NR2F2	P24468	99	664	COUP transcription factor 2 (COUP-TF2) (Apolipoprotein A-I r	
 P24470	rattus-norvegicus	P24470	Cyp2c23	P24470	0	2	Cytochrome P450 2C23	
 P24472	mus-musculus	P24472	Gsta4	P24472	0	4	Glutathione S-transferase A4	
-P24473	rattus-norvegicus	P24473	Gstk1	P24473	3	12	Glutathione S-transferase kappa 1	
+P24473	rattus-norvegicus	P24473	Gstk1	P24473	4	14	Glutathione S-transferase kappa 1	
 P24474	pseudomonas-aeruginosa	P24474	nirS	P24474	1	74	Nitrite reductase	
 P24482	yeast	P24482	DPB2	P24482	7	101	DNA polymerase epsilon subunit B	
-P24483	rattus-norvegicus	P24483	Fdx1	P24483	21	118	Adrenodoxin, mitochondrial	
+P24483	rattus-norvegicus	P24483	Fdx1	P24483	33	130	Adrenodoxin, mitochondrial	
 P24485	rattus-norvegicus	P24485	Cd53	P24485	1	13	Leukocyte surface antigen CD53	
-P24487	schizosaccharomyces-pombe	P24487	atp1	P24487	5	43	ATP synthase subunit alpha, mitochondrial	
+P24487	schizosaccharomyces-pombe	P24487	atp1	P24487	6	43	ATP synthase subunit alpha, mitochondrial	
 P24488	schizosaccharomyces-pombe	P24488	hap2	P24488	2	7	Transcriptional activator hap2	
 P24492	fly	FBgn0004240	DptA	P24492	9	261	Diptericin A	
 P24517	salmonella-typhimurium	P24517	radA	P24517	0	2	DNA repair protein RadA	
@@ -189,7 +189,7 @@ P24719	yeast	P24719	MEK1	P24719	6	59	Meiosis-specific serine/threonine-protein k
 P24720	yeast	P24720	MNE1	P24720	1	5	Protein MNE1	
 P24721	mus-musculus	P24721	Asgr2	P24721	1	5	Asialoglycoprotein receptor 2	
 P24723	human	P24723	PRKCH	P24723	227	1368	Protein kinase C eta type (EC 2.7.11.13) (PKC-L) (nPKC-eta)	
-P24752	human	P24752	ACAT1	P24752	9	301	Acetyl-CoA acetyltransferase, mitochondrial (EC 2.3.1.9) (Ac	
+P24752	human	P24752	ACAT1	P24752	10	302	Acetyl-CoA acetyltransferase, mitochondrial (EC 2.3.1.9) (Ac	
 P24756	virus	P24756	VACWR179	P24756	6	218	Truncated secreted TNF-receptor-like protein A53R	
 P24757	virus	P24757	OPG156	P24757	15	218	DNA-directed RNA polymerase 35 kDa subunit	
 P24758	virus	P24758	OPG153	P24758	4	218	Envelop protein OPG153	
@@ -250,16 +250,16 @@ P24869	yeast	P24869	CLB2	P24869	10	90	G2/mitotic-specific cyclin-2
 P24870	yeast	P24870	CLB3	P24870	10	48	G2/mitotic-specific cyclin-3	
 P24871	yeast	P24871	CLB4	P24871	5	13	G2/mitotic-specific cyclin-4	
 P24886	worm	P24886	ndfl-4	P24886	3	40	NADH-ubiquinone oxidoreductase chain 4L	
-P24887	worm	P24887	nduo-1	P24887	13	113	NADH-ubiquinone oxidoreductase chain 1	
+P24887	worm	P24887	nduo-1	P24887	15	116	NADH-ubiquinone oxidoreductase chain 1	
 P24888	worm	P24888	atp-6	P24888	1	40	ATP synthase subunit a	
 P24889	worm	P24889	nduo-2	P24889	2	40	NADH-ubiquinone oxidoreductase chain 2	
-P24890	worm	P24890	ctb-1	P24890	6	156	Cytochrome b	
-P24891	worm	P24891	ctc-3	P24891	5	71	Cytochrome c oxidase subunit 3	
-P24892	worm	P24892	nduo-4	P24892	6	91	NADH-ubiquinone oxidoreductase chain 4	
-P24893	worm	P24893	ctc-1	P24893	8	78	Cytochrome c oxidase subunit 1	
-P24894	worm	P24894	ctc-2	P24894	6	81	Cytochrome c oxidase subunit 2	
+P24890	worm	P24890	ctb-1	P24890	9	157	Cytochrome b	
+P24891	worm	P24891	ctc-3	P24891	8	73	Cytochrome c oxidase subunit 3	
+P24892	worm	P24892	nduo-4	P24892	11	92	NADH-ubiquinone oxidoreductase chain 4	
+P24893	worm	P24893	ctc-1	P24893	12	80	Cytochrome c oxidase subunit 1	
+P24894	worm	P24894	ctc-2	P24894	10	86	Cytochrome c oxidase subunit 2	
 P24895	worm	P24895	nduo-3	P24895	9	76	NADH-ubiquinone oxidoreductase chain 3	
-P24896	worm	P24896	nduo-5	P24896	7	81	NADH-ubiquinone oxidoreductase chain 5	
+P24896	worm	P24896	nduo-5	P24896	10	81	NADH-ubiquinone oxidoreductase chain 5	
 P24898	rattus-norvegicus	P24898	Junb	P24898	24	66	Transcription factor JunB	
 P24900	salmonella-typhimurium	P24900	recF	P24900	1	6	DNA replication and repair protein RecF	
 P24903	human	P24903	CYP2F1	P24903	1	41	Cytochrome P450 2F1 (EC 1.14.14.1) (CYPIIF1)	

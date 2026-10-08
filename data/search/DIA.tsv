@@ -1,6 +1,6 @@
 DIA	fly	FBgn0011202	dia	M9NCZ5	9	111	Diaphanous, isoform D	
 DIA	human	O60879	DIAPH2	O60879	27	119		
-DIA1	human	P00387	CYB5R3	P00387	16	336		
+DIA1	human	P00387	CYB5R3	P00387	20	342		
 DIA1	human	Q8NDZ4	DIPK2A	Q8NDZ4	11	131		
 DIA1	yeast	P54005	DIA1	P54005	0	10	Protein DIA1	
 DIA1R	human	Q9H7Y0	DIPK2B	Q9H7Y0	0	29		
@@ -20,16 +20,18 @@ DIABETES	human	Q15121	PEA15	Q15121	10	112	Astrocytic phosphoprotein PEA-15 (15 k
 DIABETES	human	Q8IXH6	TP53INP2	Q8IXH6	12	54	Tumor protein p53-inducible nuclear protein 2 (Diabetes and 	w
 DIABETES	human	Q9UN79	SOX13	Q9UN79	27	100	Transcription factor SOX-13 (Islet cell antigen 12) (SRY (Se	w
 DIABETES-ASSOCIATED	human	P10997	IAPP	P10997	34	266	Islet amyloid polypeptide (IAPP) (Amylin) (Diabetes-associat	w
-DIABETES-ASSOCIATED	human	Q96IX5	ATP5MK	Q96IX5	54	238	ATP synthase F(0) complex subunit k, mitochondrial (ATP synt	w
+DIABETES-ASSOCIATED	human	Q96IX5	ATP5MK	Q96IX5	55	239	ATP synthase F(0) complex subunit k, mitochondrial (ATP synt	w
 DIABETES-RELATED	human	Q86SG2	ANKRD23	Q86SG2	5	80	Ankyrin repeat domain-containing protein 23 (Diabetes-relate	w
 DIABLO	fly	FBgn0030114	CG17754	Q7K0L2	6	51	Kelch-like protein diablo	w
 DIABLO	fly	FBgn0031119	CG1812	Q9VRA7	5	33	Kelch-like protein diablo	w
 DIABLO	fly	FBgn0032485	CG9426	Q9VK21	12	68	Kelch-like protein diablo	w
 DIABLO	fly	FBgn0037978	KLHL18	Q9VGE5	3	22	Kelch-like protein diablo	w
 DIABLO	fly	FBgn0040230	dbo	Q9VUU5	9	52	Kelch-like protein diablo	w
-DIABLO	human	Q9NR28	DIABLO	Q9NR28	19	358	Diablo IAP-binding mitochondrial protein (Diablo homolog, mi	
-DIABLO	mus-musculus	Q9JIQ3	Diablo	Q9JIQ3	2	37	Diablo IAP-binding mitochondrial protein	
-DIABLOL1	rattus-norvegicus	D4A7Z5	Diablol1	D4A7Z5	5	18	Diablo IAP-binding mitochondrial protein	
+DIABLO	human	Q9NR28	DIABLO	Q9NR28	21	360	Diablo IAP-binding mitochondrial protein (Diablo homolog, mi	
+DIABLO	mus-musculus	Q9JIQ3	Diablo	Q9JIQ3	4	39	Diablo IAP-binding mitochondrial protein	
+DIABLO	pan-troglodytes	K7CIS5	DIABLO	K7CIS5	2	2	Direct IAP-binding protein with low pI	
+DIABLO	zebrafish	Q7T3E1	diablo	Q7T3E1	1	1	Direct IAP-binding protein with low pI	
+DIABLOL1	rattus-norvegicus	D4A7Z5	Diablol1	D4A7Z5	6	19	Diablo IAP-binding mitochondrial protein	
 DIACETYL	yeast	P39713	BDH2	P39713	2	5	Probable diacetyl reductase	w
 DIACYL	fly	FBgn0085390	Dgk	Q01583	0	2	Diacyl glycerol kinase	w
 DIACYLGLYCER	human	Q96MH6	TMEM68	Q96MH6	4	74	DGAT1/2-independent enzyme synthesizing storage lipids (DIES	w
@@ -57,8 +59,8 @@ DIACYLGLYCEROL	human	Q6ZPD8	DGAT2L6	Q6ZPD8	0	70	Diacylglycerol O-acyltransferase
 DIACYLGLYCEROL	human	Q86VF5	MOGAT3	Q86VF5	0	40	2-acylglycerol O-acyltransferase 3 (EC 2.3.1.20) (EC 2.3.1.2	w
 DIACYLGLYCEROL	human	Q86XP1	DGKH	Q86XP1	6	125	Diacylglycerol kinase eta (DAG kinase eta) (EC 2.7.1.107) (D	w
 DIACYLGLYCEROL	human	Q8NCG7	DAGLB	Q8NCG7	2	69	Diacylglycerol lipase-beta (DAGL-beta) (DGL-beta) (EC 3.1.1.	w
-DIACYLGLYCEROL	human	Q8NFV4	ABHD11	Q8NFV4	10	202	sn-1-specific diacylglycerol lipase ABHD11 (EC 3.1.1.116) (A	w
-DIACYLGLYCEROL	human	Q8WUD6	CHPT1	Q8WUD6	7	157	Cholinephosphotransferase 1 (hCPT1) (EC 2.7.8.2) (AAPT1-like	w
+DIACYLGLYCEROL	human	Q8NFV4	ABHD11	Q8NFV4	12	203	sn-1-specific diacylglycerol lipase ABHD11 (EC 3.1.1.116) (A	w
+DIACYLGLYCEROL	human	Q8WUD6	CHPT1	Q8WUD6	13	163	Cholinephosphotransferase 1 (hCPT1) (EC 2.7.8.2) (AAPT1-like	w
 DIACYLGLYCEROL	human	Q96MH6	TMEM68	Q96MH6	4	74	DGAT1/2-independent enzyme synthesizing storage lipids (DIES	w
 DIACYLGLYCEROL	human	Q96PD6	MOGAT1	Q96PD6	0	22	2-acylglycerol O-acyltransferase 1 (EC 2.3.1.22) (Acyl-CoA:m	w
 DIACYLGLYCEROL	human	Q96PD7	DGAT2	Q96PD7	1	37	Diacylglycerol O-acyltransferase 2 (EC 2.3.1.20) (Acyl-CoA r	w
@@ -85,12 +87,12 @@ DIACYLGLYCEROL	zebrafish	Q4V9F0	dgat2	Q4V9F0	0	16	Diacylglycerol O-acyltransfera
 DIACYLGLYCEROL	zebrafish	Q6DRD9	abhd11	Q6DRD9	0	10	sn-1-specific diacylglycerol lipase ABHD11	w
 DIAC_HUMAN	human	Q01459	CTBS	Q01459	8	98		
 DIAC_MOUSE	fly	DIAC_MOUSE	DIAC_MOUSE		0	1		
-DIADENOSINE	fly	FBgn0024945	NitFhit	O76464	0	16	Nitrilase and fragile histidine triad fusion protein NitFhit	w
-DIADENOSINE	fly	FBgn0027088	GlyRS	Q9VUK8	0	70	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+DIADENOSINE	fly	FBgn0024945	NitFhit	O76464	1	17	Nitrilase and fragile histidine triad fusion protein NitFhit	w
+DIADENOSINE	fly	FBgn0027088	GlyRS	Q9VUK8	1	71	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
 DIADENOSINE	fly	FBgn0287788	Datp	Q4V6M1	0	10	Diadenosine tetraphosphatase	w
 DIADENOSINE	human	O95989	NUDT3	O95989	9	136	Diphosphoinositol polyphosphate phosphohydrolase 1 (DIPP-1) 	w
-DIADENOSINE	human	P41250	GARS1	P41250	5	174	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
-DIADENOSINE	human	P50583	NUDT2	P50583	8	131	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical] (EC 3.6.1.	w
+DIADENOSINE	human	P41250	GARS1	P41250	8	177	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+DIADENOSINE	human	P50583	NUDT2	P50583	11	134	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical] (EC 3.6.1.	w
 DIADENOSINE	human	Q8NFP7	NUDT10	Q8NFP7	4	57	Diphosphoinositol polyphosphate phosphohydrolase 3-alpha (DI	w
 DIADENOSINE	human	Q96G61	NUDT11	Q96G61	3	86	Diphosphoinositol polyphosphate phosphohydrolase 3-beta (DIP	w
 DIADENOSINE	human	Q9NZJ9	NUDT4	Q9NZJ9	2	35	Diphosphoinositol polyphosphate phosphohydrolase 2 (DIPP-2) 	w
@@ -129,9 +131,9 @@ DIAPHANOUS	human	Q9NSV4	DIAPH3	Q9NSV4	61	313	Protein diaphanous homolog 3 (Diaph
 DIAPHANOUS-RELATED	human	O60610	DIAPH1	O60610	31	263	Protein diaphanous homolog 1 (Diaphanous-related formin-1) (	w
 DIAPHANOUS-RELATED	human	O60879	DIAPH2	O60879	27	119	Protein diaphanous homolog 2 (Diaphanous-related formin-2) (	w
 DIAPHANOUS-RELATED	human	Q9NSV4	DIAPH3	Q9NSV4	61	313	Protein diaphanous homolog 3 (Diaphanous-related formin-3) (	w
-DIAPHORASE-1	human	P00387	CYB5R3	P00387	16	336	NADH-cytochrome b5 reductase 3 (B5R) (Cytochrome b5 reductas	w
+DIAPHORASE-1	human	P00387	CYB5R3	P00387	20	342	NADH-cytochrome b5 reductase 3 (B5R) (Cytochrome b5 reductas	w
 DIASKEDIN	human	Q96B45	BORCS7	Q96B45	14	66	BLOC-1-related complex subunit 7 (Diaskedin)	w
 DIASTROPHIC	human	P50443	SLC26A2	P50443	14	149	Sulfate transporter (Diastrophic dysplasia protein) (Solute 	w
 DIAZEPAM-BINDING	fly	FBgn0010387	Acbp2	P42281	0	6	Acyl-CoA-binding protein homolog (ACBP) (Diazepam-binding in	w
-DIAZEPAM-BINDING	human	O75521	ECI2	O75521	9	206	Enoyl-CoA delta isomerase 2 (EC 5.3.3.8) (DRS-1) (Delta(3),d	w
-DIAZEPAM-BINDING	human	P07108	DBI	P07108	7	117	Acyl-CoA-binding protein (ACBP) (Diazepam-binding inhibitor)	w
+DIAZEPAM-BINDING	human	O75521	ECI2	O75521	10	207	Enoyl-CoA delta isomerase 2 (EC 5.3.3.8) (DRS-1) (Delta(3),d	w
+DIAZEPAM-BINDING	human	P07108	DBI	P07108	24	134	Acyl-CoA-binding protein (ACBP) (Diazepam-binding inhibitor)	w

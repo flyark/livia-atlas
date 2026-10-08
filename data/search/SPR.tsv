@@ -1,9 +1,11 @@
 SPR	fly	FBgn0029768	SPR	Q8SWR3	4	7	Sex peptide receptor	
-SPR	human	P35270	SPR	P35270	6	161	Sepiapterin reductase (SPR) (EC 1.1.1.153)	
-SPR	mus-musculus	Q64105	Spr	Q64105	0	5	Sepiapterin reductase	
-SPR	rattus-norvegicus	P18297	Spr	P18297	0	3	Sepiapterin reductase	
+SPR	human	P35270	SPR	P35270	12	167	Sepiapterin reductase (SPR) (EC 1.1.1.153)	
+SPR	mus-musculus	Q64105	Spr	Q64105	5	10	Sepiapterin reductase	
+SPR	pan-troglodytes	K7B3E1	SPR	K7B3E1	6	6	Sepiapterin reductase	
+SPR	rattus-norvegicus	P18297	Spr	P18297	5	8	Sepiapterin reductase	
 SPR	salmonella-typhimurium	Q7CQ75	spr	Q7CQ75	0	1	Murein DD-endopeptidase MepS/Murein LD-carboxypeptidase	
 SPR	shigella-dysenteriae-serotype-1	Q32HX5	spr	Q32HX5	0	1	Murein DD-endopeptidase MepS/Murein LD-carboxypeptidase	
+SPR	xenopus-laevis	Q7ZY31	spr	Q7ZY31	3	4	Sepiapterin reductase	
 SPR-1	human	Q02446	SP4	Q02446	5	65	Transcription factor Sp4 (SPR-1)	w
 SPR-1	worm	Q18919	spr-1	Q18919	6	37	REST corepressor spr-1	w
 SPR-1	worm	Q18919	spr-1	Q18919	6	37	REST corepressor spr-1	w
@@ -274,6 +276,7 @@ SPR2G_HUMAN	human	Q9BYE4	SPRR2G	Q9BYE4	15	102
 SPR3	candida-albicans-237561	A0A1D8PGH0	SPR3	A0A1D8PGH0	6	6	Septin	
 SPR3	yeast	P41901	SPR3	P41901	8	34	Sporulation-regulated protein 3	
 SPR6	yeast	Q01684	SPR6	Q01684	0	11	Sporulation-specific protein	
+SPRA	zebrafish	A0A8M1N6P5	spra	A0A8M1N6P5	4	4	Sepiapterin reductase	
 SPRA	zebrafish	F1QWX4	spra	F1QWX4	1	11	Sepiapterin reductase	
 SPRASA	human	Q8IXA5	SPACA3	Q8IXA5	15	99		
 SPRB	salmonella-typhimurium	H9L474	sprB	H9L474	0	3	Transcriptional regulator	
@@ -300,7 +303,7 @@ SPRED3	human	Q2MJR0	SPRED3	Q2MJR0	3	23	Sprouty-related, EVH1 domain-containing p
 SPRED3	mus-musculus	Q6P6N5	Spred3	Q6P6N5	0	9	Sprouty-related, EVH1 domain-containing protein 3	
 SPRED3	rattus-norvegicus	B2GV40	Spred3	B2GV40	1	8	Spred3 protein	
 SPRED3	zebrafish	A0A140LGD0	spred3	A0A140LGD0	2	7	Sprouty-related EVH1 domain-containing 3	
-SPRE_HUMAN	human	P35270	SPR	P35270	6	161		
+SPRE_HUMAN	human	P35270	SPR	P35270	12	167		
 SPRI	fly	FBgn0085443	spri	Q8MQW8	6	12	sprint	
 SPRI1	arabidopsis-thaliana	Q1PE85	SPRI1	Q1PE85	0	7	Ankyrin repeat protein	
 SPRING	human	Q9H741	SPRING1	Q9H741	16	261		
@@ -388,7 +391,7 @@ SPRY	human	Q6PJ21	SPSB3	Q6PJ21	12	81	SPRY domain-containing SOCS box protein 3 (
 SPRY	human	Q7Z4K8	TRIM46	Q7Z4K8	34	170	Tripartite motif-containing protein 46 (Gene Y protein) (Gen	w
 SPRY	human	Q8N7C3	TRIML2	Q8N7C3	11	81	Probable E3 ubiquitin-protein ligase TRIML2 (EC 2.3.2.27) (R	w
 SPRY	human	Q8NCJ5	SPRYD3	Q8NCJ5	4	87	SPRY domain-containing protein 3	w
-SPRY	human	Q8WW59	SPRYD4	Q8WW59	7	120	SPRY domain-containing protein 4	w
+SPRY	human	Q8WW59	SPRYD4	Q8WW59	29	142	SPRY domain-containing protein 4	w
 SPRY	human	Q96A44	SPSB4	Q96A44	16	179	SPRY domain-containing SOCS box protein 4 (SSB-4)	w
 SPRY	human	Q96BD6	SPSB1	Q96BD6	13	136	SPRY domain-containing SOCS box protein 1 (SSB-1)	w
 SPRY	human	Q96DX4	RSPRY1	Q96DX4	11	103	RING finger and SPRY domain-containing protein 1	w
@@ -407,6 +410,7 @@ SPRY	zebrafish	B0S5W3	spsb4a	B0S5W3	4	17	SPRY domain-containing SOCS box protein
 SPRY	zebrafish	B1H1G8	spsb3a	B1H1G8	4	17	SPRY domain-containing SOCS box protein 3	w
 SPRY	zebrafish	Q4V8W1	spsb1	Q4V8W1	2	17	SPRY domain-containing SOCS box protein 1	w
 SPRY	zebrafish	Q6DBS3	spsb4b	Q6DBS3	2	17	SPRY domain-containing SOCS box protein 4b	w
+SPRY	zebrafish	Q6DGK7	zgc:92875	Q6DGK7	15	15	SPRY domain-containing 4	w
 SPRY	zebrafish	Q6NZ03	fbxo45	Q6NZ03	1	8	F-box/SPRY domain-containing protein 1	w
 SPRY	zebrafish	Q7SX89	spryd7b	Q7SX89	0	4	SPRY domain-containing protein 7	w
 SPRY	zebrafish	Q8JFT6	spryd7a	Q8JFT6	0	4	SPRY domain-containing protein 7	w
@@ -430,14 +434,18 @@ SPRY4	human	Q9C004	SPRY4	Q9C004	22	124	Protein sprouty homolog 4 (Spry-4)
 SPRY4	mus-musculus	Q9WTP2	Spry4	Q9WTP2	3	17	Protein sprouty homolog 4	
 SPRY4	rattus-norvegicus	D3ZJA3	Spry4	D3ZJA3	2	14	Sprouty RTK signaling antagonist 4	
 SPRY4	zebrafish	A0A8M9PQ80	spry4	A0A8M9PQ80	1	4	Protein sprouty homolog 4	
-SPRY4_HUMAN	human	Q8WW59	SPRYD4	Q8WW59	7	120		
+SPRY4_HUMAN	human	Q8WW59	SPRYD4	Q8WW59	29	142		
 SPRY7_HUMAN	human	Q5W111	SPRYD7	Q5W111	32	430		
 SPRYD1	human	A1L4K1	FSD2	A1L4K1	18	156		
 SPRYD3	human	Q8NCJ5	SPRYD3	Q8NCJ5	4	87	SPRY domain-containing protein 3	
 SPRYD3	mus-musculus	E9Q9B3	Spryd3	E9Q9B3	0	13	SPRY domain containing 3	
 SPRYD3	rattus-norvegicus	F1M7P8	Spryd3	F1M7P8	0	17	SPRY domain containing 3	
 SPRYD3	zebrafish	A7MBV6	spryd3	A7MBV6	1	48	SPRY domain-containing 3	
-SPRYD4	human	Q8WW59	SPRYD4	Q8WW59	7	120	SPRY domain-containing protein 4	
+SPRYD4	human	Q8WW59	SPRYD4	Q8WW59	29	142	SPRY domain-containing protein 4	
+SPRYD4	mus-musculus	Q91WK1	Spryd4	Q91WK1	19	20	SPRY domain-containing protein 4	
+SPRYD4	pan-troglodytes	H2Q691	SPRYD4	H2Q691	21	22	SPRY domain containing 4	
+SPRYD4	rattus-norvegicus	Q4FZT8	Spryd4	Q4FZT8	20	21	SPRY domain-containing protein 4	
+SPRYD4.S	xenopus-laevis	A5D8Q9	spryd4.S	A5D8Q9	13	14	LOC100049778 protein	
 SPRYD5	human	Q9BSJ1	TRIM51	Q9BSJ1	31	85		
 SPRYD6	human	Q8N7C3	TRIML2	Q8N7C3	11	81		
 SPRYD7	human	Q5W111	SPRYD7	Q5W111	32	430	SPRY domain-containing protein 7 (Chronic lymphocytic leukem	

@@ -16,7 +16,7 @@ ACS-18	worm	Q21872	acs-18	Q21872	0	19	Long-chain-fatty-acid--CoA ligase
 ACS-19	worm	Q18496	acs-19	Q18496	0	4	Acetyl-coenzyme A synthetase	
 ACS-2	worm	O18693	acs-2	O18693	0	23	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	
 ACS-20	worm	Q19878	acs-20	Q19878	1	17	long-chain-fatty-acid--CoA ligase	
-ACS-21	worm	O16481	acs-21	O16481	0	11	Fatty Acid CoA Synthetase family	
+ACS-21	worm	O16481	acs-21	O16481	1	12	Fatty Acid CoA Synthetase family	
 ACS-22	worm	Q18916	acs-22	Q18916	0	21	Very long-chain fatty acid transport protein	
 ACS-24	worm	H2KZ58	acs-24	H2KZ58	1	11	AMP-binding domain-containing protein	
 ACS-3	worm	O44560	acs-3	O44560	0	9	Long-chain-fatty-acid--CoA ligase	
@@ -26,7 +26,7 @@ ACS-6	worm	Q23404	acs-6	Q23404	1	10	Fatty Acid CoA Synthetase family
 ACS-7	worm	Q17577	acs-7	Q17577	0	16	Acyl-CoA synthetase 7	
 ACS1	arabidopsis-thaliana	Q06429	ACS1	Q06429	2	2	1-aminocyclopropane-1-carboxylate synthase-like protein 1	
 ACS1	candida-albicans-237561	Q59XW4	ACS1	Q59XW4	1	5	Acetyl-coenzyme A synthetase	
-ACS1	human	P33121	ACSL1	P33121	2	185	Long-chain-fatty-acid--CoA ligase 1 (EC 6.2.1.3) (Acyl-CoA s	w
+ACS1	human	P33121	ACSL1	P33121	3	186	Long-chain-fatty-acid--CoA ligase 1 (EC 6.2.1.3) (Acyl-CoA s	w
 ACS1	oryza-sativa-subsp-japonica	Q10DK7	ACS1	Q10DK7	1	6	1-aminocyclopropane-1-carboxylate synthase 1	
 ACS1	yeast	Q01574	ACS1	Q01574	1	19	Acetyl-coenzyme A synthetase 1	
 ACS10	arabidopsis-thaliana	Q9LQ10	ACS10	Q9LQ10	0	4	Probable aminotransferase ACS10	
@@ -34,12 +34,12 @@ ACS11	arabidopsis-thaliana	Q9S9U6	ACS11	Q9S9U6	0	2	1-aminocyclopropane-1-carboxy
 ACS12	arabidopsis-thaliana	Q8GYY0	ACS12	Q8GYY0	0	1	Probable aminotransferase ACS12	
 ACS2	arabidopsis-thaliana	Q06402	ACS2	Q06402	2	5	1-aminocyclopropane-1-carboxylate synthase 2	
 ACS2	candida-albicans-237561	Q8NJN3	ACS2	Q8NJN3	1	4	Acetyl-coenzyme A synthetase 2	
-ACS2	human	Q9UKU0	ACSL6	Q9UKU0	2	213		
+ACS2	human	Q9UKU0	ACSL6	Q9UKU0	3	214		
 ACS2	oryza-sativa-subsp-japonica	Q7XQ85	ACS2	Q7XQ85	0	1	1-aminocyclopropane-1-carboxylate synthase 2	
 ACS2	yeast	P52910	ACS2	P52910	1	66	Acetyl-coenzyme A synthetase 2	
-ACS2A_HUMAN	human	Q08AH3	ACSM2A	Q08AH3	1	29		
-ACS2B_HUMAN	human	Q68CK6	ACSM2B	Q68CK6	1	25		
-ACS2L_HUMAN	human	Q9NUB1	ACSS1	Q9NUB1	4	93		
+ACS2A_HUMAN	human	Q08AH3	ACSM2A	Q08AH3	4	32		
+ACS2B_HUMAN	human	Q68CK6	ACSM2B	Q68CK6	7	31		
+ACS2L_HUMAN	human	Q9NUB1	ACSS1	Q9NUB1	14	103		
 ACS3	human	O95573	ACSL3	O95573	4	320		
 ACS3	oryza-sativa-subsp-japonica	A0A0P0WIY3	ACS3	A0A0P0WIY3	0	1	1-aminocyclopropane-1-carboxylate synthase 3	
 ACS4	arabidopsis-thaliana	Q43309	ACS4	Q43309	4	6	1-aminocyclopropane-1-carboxylate synthase 4	
@@ -77,33 +77,39 @@ ACSBG3	rattus-norvegicus	M0RDY4	Acsbg3	M0RDY4	0	6	long-chain-fatty-acid--CoA lig
 ACSD-1	worm	Q8T8B9	acsd-1	Q8T8B9	0	9	2-amino-3-carboxymuconate-6-semialdehyde decarboxylase	
 ACSDKP	human	P62328	TMSB4X	P62328	99	1664	Thymosin beta-4 (T beta-4) (Fx) [Cleaved into: Hemoregulator	w
 ACSF1	human	Q86V21	AACS	Q86V21	2	105		
-ACSF2	fly	FBgn0031703	Acsf2	Q9VMR6	1	57	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
-ACSF2	fly	FBgn0031703	Acsf2	Q9VMR6	1	57	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
-ACSF2	human	Q96CM8	ACSF2	Q96CM8	3	278	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	
-ACSF2	mus-musculus	Q8VCW8	Acsf2	Q8VCW8	3	115	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	
-ACSF2	rattus-norvegicus	Q499N5	Acsf2	Q499N5	4	95	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	
+ACSF2	fly	FBgn0031703	Acsf2	Q9VMR6	2	58	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
+ACSF2	fly	FBgn0031703	Acsf2	Q9VMR6	2	58	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
+ACSF2	human	Q96CM8	ACSF2	Q96CM8	9	284	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	
+ACSF2	mus-musculus	Q8VCW8	Acsf2	Q8VCW8	6	120	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	
+ACSF2	pan-troglodytes	H2QDF1	ACSF2	H2QDF1	6	6	Acyl-CoA synthetase family member 2	
+ACSF2	rattus-norvegicus	Q499N5	Acsf2	Q499N5	9	100	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	
 ACSF2	worm	O18693	acs-2	O18693	0	23	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
 ACSF2	worm	Q9UAV8	acs-1	Q9UAV8	0	23	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
 ACSF2	zebrafish	Q0P4F7	acsf2	Q0P4F7	2	180	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
 ACSF2	zebrafish	Q0P4F7	acsf2	Q0P4F7	2	180	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
-ACSF2_HUMAN	human	Q96CM8	ACSF2	Q96CM8	3	278		
+ACSF2.L	xenopus-laevis	A0A1L8EUB1	acsf2.L	A0A1L8EUB1	2	2	medium-chain acyl-CoA ligase ACSF2, mitochondrial	
+ACSF2_HUMAN	human	Q96CM8	ACSF2	Q96CM8	9	284		
 ACSF3	cladophialophora-carrionii	A0A1C1CE45	ACSF3	A0A1C1CE45	1	19	Acyl-CoA synthetase family member 3, mitochondrial	
 ACSF3	cladophialophora-carrionii	A0A1C1D2U0	acsf3	A0A1C1D2U0	0	19	Acyl-CoA synthetase family member 3, mitochondrial	
 ACSF3	fly	FBgn0029945	Acsf3	Q7KVU5	0	10	MIP16841p	
-ACSF3	human	Q4G176	ACSF3	Q4G176	4	236	Malonate--CoA ligase ACSF3, mitochondrial (EC 6.2.1.76) (Acy	
-ACSF3	mus-musculus	Q3URE1	Acsf3	Q3URE1	1	80	Malonate--CoA ligase ACSF3, mitochondrial	
-ACSF3	rattus-norvegicus	D3ZUX7	Acsf3	D3ZUX7	2	87	Malonate--CoA ligase ACSF3, mitochondrial	
-ACSF3	zebrafish	E7F2S8	acsf3	E7F2S8	2	201	Acyl-CoA synthetase family member 3	
-ACSF3_HUMAN	human	Q4G176	ACSF3	Q4G176	4	236		
+ACSF3	human	Q4G176	ACSF3	Q4G176	13	246	Malonate--CoA ligase ACSF3, mitochondrial (EC 6.2.1.76) (Acy	
+ACSF3	mus-musculus	Q3URE1	Acsf3	Q3URE1	9	89	Malonate--CoA ligase ACSF3, mitochondrial	
+ACSF3	pan-troglodytes	K7AV26	ACSF3	K7AV26	9	10	Acyl-CoA synthetase family member 3	
+ACSF3	rattus-norvegicus	D3ZUX7	Acsf3	D3ZUX7	9	96	Malonate--CoA ligase ACSF3, mitochondrial	
+ACSF3	zebrafish	E7F2S8	acsf3	E7F2S8	4	205	Acyl-CoA synthetase family member 3	
+ACSF3.S	xenopus-laevis	A0A1L8GEQ0	acsf3.S	A0A1L8GEQ0	4	5	malonate--CoA ligase ACSF3, mitochondrial isoform X1	
+ACSF3_HUMAN	human	Q4G176	ACSF3	Q4G176	13	246		
 ACSF4	human	Q4L235	AASDH	Q4L235	7	213		
 ACSF4_HUMAN	human	Q4L235	AASDH	Q4L235	7	213		
 ACSL	fly	FBgn0263120	Acsl	A0A0B4KFE4	0	64	long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)	
-ACSL1	human	P33121	ACSL1	P33121	2	185	Long-chain-fatty-acid--CoA ligase 1 (EC 6.2.1.3) (Acyl-CoA s	
-ACSL1	mus-musculus	P41216	Acsl1	P41216	0	33	Long-chain-fatty-acid--CoA ligase 1	
-ACSL1	rattus-norvegicus	P18163	Acsl1	P18163	0	17	Long-chain-fatty-acid--CoA ligase 1	
-ACSL1A	zebrafish	B8JK22	acsl1a	B8JK22	0	22	Long-chain-fatty-acid--CoA ligase	
+ACSL1	human	P33121	ACSL1	P33121	3	186	Long-chain-fatty-acid--CoA ligase 1 (EC 6.2.1.3) (Acyl-CoA s	
+ACSL1	mus-musculus	P41216	Acsl1	P41216	1	34	Long-chain-fatty-acid--CoA ligase 1	
+ACSL1	pan-troglodytes	A0A2I3STD5	ACSL1	A0A2I3STD5	1	1	Long-chain-fatty-acid--CoA ligase	
+ACSL1	rattus-norvegicus	P18163	Acsl1	P18163	1	18	Long-chain-fatty-acid--CoA ligase 1	
+ACSL1.S	xenopus-laevis	A0A1L8HLF9	acsl1.S	A0A1L8HLF9	1	1	Long-chain-fatty-acid--CoA ligase	
+ACSL1A	zebrafish	B8JK22	acsl1a	B8JK22	0	23	Long-chain-fatty-acid--CoA ligase	
 ACSL1B	zebrafish	F1QDA6	acsl1b	F1QDA6	0	23	Long-chain-fatty-acid--CoA ligase	
-ACSL1_HUMAN	human	P33121	ACSL1	P33121	2	185		
+ACSL1_HUMAN	human	P33121	ACSL1	P33121	3	186		
 ACSL2	glycine-max	I1K3R5	ACSL2	I1K3R5	0	28	Long-chain acyl-CoA synthetase ACSL2	
 ACSL3	human	O95573	ACSL3	O95573	4	320	Fatty acid CoA ligase Acsl3 (Arachidonate--CoA ligase) (EC 6	
 ACSL3	mus-musculus	Q9CZW4	Acsl3	Q9CZW4	0	9	Fatty acid CoA ligase Acsl3	
@@ -121,35 +127,47 @@ ACSL5	mus-musculus	Q8JZR0	Acsl5	Q8JZR0	0	27	Long-chain-fatty-acid--CoA ligase 5
 ACSL5	rattus-norvegicus	O88813	Acsl5	O88813	0	25	Long-chain-fatty-acid--CoA ligase 5	
 ACSL5	zebrafish	F1RAK0	acsl5	F1RAK0	0	22	Long-chain-fatty-acid--CoA ligase	
 ACSL5_HUMAN	human	Q9ULC5	ACSL5	Q9ULC5	1	152		
-ACSL6	human	Q9UKU0	ACSL6	Q9UKU0	2	213	Long-chain-fatty-acid--CoA ligase 6 (EC 6.2.1.3) (Arachidona	
+ACSL6	human	Q9UKU0	ACSL6	Q9UKU0	3	214	Long-chain-fatty-acid--CoA ligase 6 (EC 6.2.1.3) (Arachidona	
 ACSL6	mus-musculus	Q91WC3	Acsl6	Q91WC3	0	14	Long-chain-fatty-acid--CoA ligase 6	
-ACSL6	rattus-norvegicus	P33124	Acsl6	P33124	0	7	Long-chain-fatty-acid--CoA ligase 6	
-ACSL6_HUMAN	human	Q9UKU0	ACSL6	Q9UKU0	2	213		
-ACSM1	human	Q08AH1	ACSM1	Q08AH1	1	55	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	
+ACSL6	pan-troglodytes	A0A2I3THX6	ACSL6	A0A2I3THX6	1	1	Long-chain-fatty-acid--CoA ligase	
+ACSL6	rattus-norvegicus	P33124	Acsl6	P33124	1	8	Long-chain-fatty-acid--CoA ligase 6	
+ACSL6_HUMAN	human	Q9UKU0	ACSL6	Q9UKU0	3	214		
+ACSM1	human	Q08AH1	ACSM1	Q08AH1	2	56	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	
 ACSM1	mus-musculus	Q91VA0	Acsm1	Q91VA0	0	6	Acyl-coenzyme A synthetase ACSM1, mitochondrial	
+ACSM1	pan-troglodytes	A0A2I3RSS1	ACSM1	A0A2I3RSS1	1	1	Acyl-CoA synthetase medium chain family member 1	
 ACSM1	rattus-norvegicus	A0A0G2K8G2	Acsm1	A0A0G2K8G2	0	10	medium-chain acyl-CoA ligase	
-ACSM1_HUMAN	human	Q08AH1	ACSM1	Q08AH1	1	55		
-ACSM2	human	Q08AH3	ACSM2A	Q08AH3	1	29		
-ACSM2	human	Q68CK6	ACSM2B	Q68CK6	1	25		
-ACSM2A	human	Q08AH3	ACSM2A	Q08AH3	1	29	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	
-ACSM2B	human	Q68CK6	ACSM2B	Q68CK6	1	25	Acyl-coenzyme A synthetase ACSM2B, mitochondrial (EC 6.2.1.2	
-ACSM3	human	Q53FZ2	ACSM3	Q53FZ2	0	52	Acyl-coenzyme A synthetase ACSM3, mitochondrial (EC 6.2.1.2)	
-ACSM3	mus-musculus	Q3UNX5	Acsm3	Q3UNX5	0	1	Acyl-coenzyme A synthetase ACSM3, mitochondrial	
-ACSM3	rattus-norvegicus	Q6SKG1	Acsm3	Q6SKG1	0	3	Acyl-coenzyme A synthetase ACSM3, mitochondrial	
-ACSM3	zebrafish	A9JRA7	acsm3	A9JRA7	1	7	medium-chain acyl-CoA ligase	
-ACSM3_HUMAN	human	Q53FZ2	ACSM3	Q53FZ2	0	52		
-ACSM4	human	P0C7M7	ACSM4	P0C7M7	0	29	Acyl-coenzyme A synthetase ACSM4, mitochondrial (EC 6.2.1.2)	
-ACSM4	rattus-norvegicus	Q7TN78	Acsm4	Q7TN78	0	3	Acyl-coenzyme A synthetase ACSM4, mitochondrial	
-ACSM4_HUMAN	human	P0C7M7	ACSM4	P0C7M7	0	29		
-ACSM5	human	Q6NUN0	ACSM5	Q6NUN0	3	82	Acyl-coenzyme A synthetase ACSM5, mitochondrial (EC 6.2.1.2)	
-ACSM5	rattus-norvegicus	Q6AYT9	Acsm5	Q6AYT9	0	1	Acyl-coenzyme A synthetase ACSM5, mitochondrial	
-ACSM5_HUMAN	human	Q6NUN0	ACSM5	Q6NUN0	3	82		
+ACSM1_HUMAN	human	Q08AH1	ACSM1	Q08AH1	2	56		
+ACSM2	human	Q08AH3	ACSM2A	Q08AH3	4	32		
+ACSM2	human	Q68CK6	ACSM2B	Q68CK6	7	31		
+ACSM2	mus-musculus	Q8K0L3	Acsm2	Q8K0L3	1	2	Acyl-coenzyme A synthetase ACSM2, mitochondrial	
+ACSM2	rattus-norvegicus	O70490	Acsm2	O70490	2	2	Acyl-coenzyme A synthetase ACSM2, mitochondrial	
+ACSM2A	human	Q08AH3	ACSM2A	Q08AH3	4	32	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	
+ACSM2B	human	Q68CK6	ACSM2B	Q68CK6	7	31	Acyl-coenzyme A synthetase ACSM2B, mitochondrial (EC 6.2.1.2	
+ACSM2B	pan-troglodytes	A0A2J8Q5S9	ACSM2B	A0A2J8Q5S9	6	6	Acyl-CoA synthetase medium chain family member 2B	
+ACSM3	human	Q53FZ2	ACSM3	Q53FZ2	3	55	Acyl-coenzyme A synthetase ACSM3, mitochondrial (EC 6.2.1.2)	
+ACSM3	mus-musculus	Q3UNX5	Acsm3	Q3UNX5	2	3	Acyl-coenzyme A synthetase ACSM3, mitochondrial	
+ACSM3	pan-troglodytes	H2QAP6	ACSM3	H2QAP6	2	3	Acyl-CoA synthetase medium chain family member 3	
+ACSM3	rattus-norvegicus	Q6SKG1	Acsm3	Q6SKG1	2	5	Acyl-coenzyme A synthetase ACSM3, mitochondrial	
+ACSM3	zebrafish	A9JRA7	acsm3	A9JRA7	2	8	medium-chain acyl-CoA ligase	
+ACSM3_HUMAN	human	Q53FZ2	ACSM3	Q53FZ2	3	55		
+ACSM4	human	P0C7M7	ACSM4	P0C7M7	2	31	Acyl-coenzyme A synthetase ACSM4, mitochondrial (EC 6.2.1.2)	
+ACSM4	mus-musculus	Q80W40	Acsm4	Q80W40	0	1	Acyl-coenzyme A synthetase ACSM4, mitochondrial	
+ACSM4	pan-troglodytes	H2RBV3	ACSM4	H2RBV3	1	2	Acyl-CoA synthetase medium chain family member 4	
+ACSM4	rattus-norvegicus	Q7TN78	Acsm4	Q7TN78	0	4	Acyl-coenzyme A synthetase ACSM4, mitochondrial	
+ACSM4_HUMAN	human	P0C7M7	ACSM4	P0C7M7	2	31		
+ACSM5	human	Q6NUN0	ACSM5	Q6NUN0	4	83	Acyl-coenzyme A synthetase ACSM5, mitochondrial (EC 6.2.1.2)	
+ACSM5	mus-musculus	Q8BGA8	Acsm5	Q8BGA8	1	1	Acyl-coenzyme A synthetase ACSM5, mitochondrial	
+ACSM5	rattus-norvegicus	Q6AYT9	Acsm5	Q6AYT9	1	2	Acyl-coenzyme A synthetase ACSM5, mitochondrial	
+ACSM5_HUMAN	human	Q6NUN0	ACSM5	Q6NUN0	4	83		
 ACSM6	human	Q6P461	ACSM6	Q6P461	0	14	Acyl-coenzyme A synthetase ACSM6, mitochondrial (EC 6.2.1.2)	
 ACSM6_HUMAN	human	Q6P461	ACSM6	Q6P461	0	14		
-ACSS1	human	Q9NUB1	ACSS1	Q9NUB1	4	93	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	
-ACSS1	mus-musculus	Q99NB1	Acss1	Q99NB1	0	7	Acetyl-coenzyme A synthetase 2-like, mitochondrial	
-ACSS1	rattus-norvegicus	D3ZZN3	Acss1	D3ZZN3	0	10	Acetyl-coenzyme A synthetase	
+ACSS1	human	Q9NUB1	ACSS1	Q9NUB1	14	103	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	
+ACSS1	mus-musculus	Q99NB1	Acss1	Q99NB1	9	17	Acetyl-coenzyme A synthetase 2-like, mitochondrial	
+ACSS1	pan-troglodytes	H2QK41	ACSS1	H2QK41	8	9	Acetyl-coenzyme A synthetase	
+ACSS1	rattus-norvegicus	D3ZZN3	Acss1	D3ZZN3	6	18	Acetyl-coenzyme A synthetase	
+ACSS1	zebrafish	A0A8M1ND09	acss1	A0A8M1ND09	2	3	Acetyl-coenzyme A synthetase	
 ACSS1	zebrafish	F1QYS7	acss1	F1QYS7	2	8	Acetyl-coenzyme A synthetase	
+ACSS1.L	xenopus-laevis	A0A1L8G797	acss1.L	A0A1L8G797	4	4	Acetyl-coenzyme A synthetase	
 ACSS2	human	Q9NR19	ACSS2	Q9NR19	0	122	Acetyl-coenzyme A synthetase, cytoplasmic (EC 6.2.1.1) (Acet	
 ACSS2	mus-musculus	Q9QXG4	Acss2	Q9QXG4	1	13	Acetyl-coenzyme A synthetase, cytoplasmic	
 ACSS2	rattus-norvegicus	G3V9U0	Acss2	G3V9U0	0	16	Acetyl-coenzyme A synthetase, cytoplasmic	

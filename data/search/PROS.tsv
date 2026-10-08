@@ -75,7 +75,7 @@ PROSBETA5R1	fly	FBgn0034842	Prosbeta5R1	Q9W1S5	5	82	Proteasome subunit beta
 PROSBETA5R2	fly	FBgn0051742	Prosbeta5R2	Q8INY4	4	68	Proteasome subunit beta	
 PROSBETA6	fly	FBgn0002284	Prosbeta6	P40304	10	168	Proteasome subunit beta type-1 (Proteasome 26 kDa subunit)	
 PROSBETA7	fly	FBgn0250746	Prosbeta7	Q9VNA5	13	196	Proteasome subunit beta type-4 (Proteasome subunit beta type	
-PROSC	human	O94903	PLPBP	O94903	10	123		
+PROSC	human	O94903	PLPBP	O94903	19	132		
 PROSCOOP10	arabidopsis-thaliana	Q9LU08	PROSCOOP10	Q9LU08	0	1	Serine rich endogenous peptide 10	
 PROSCOOP14	arabidopsis-thaliana	A0JQ18	PROSCOOP14	A0JQ18	0	1	Serine rich endogenous peptide 14	
 PROSER1	human	Q86XN7	PROSER1	Q86XN7	8	45	Proline and serine-rich protein 1	
@@ -125,16 +125,16 @@ PROSTAGLANDIN	human	Q13258	PTGDR	Q13258	15	110	Prostaglandin D2 receptor (PGD re
 PROSTAGLANDIN	human	Q14914	PTGR1	Q14914	5	94	Prostaglandin reductase 1 (PRG-1) (15-oxoprostaglandin 13-re	w
 PROSTAGLANDIN	human	Q15185	PTGES3	Q15185	49	537	Prostaglandin E synthase 3 (EC 5.3.99.3) (Cytosolic prostagl	w
 PROSTAGLANDIN	human	Q16647	PTGIS	Q16647	2	97	Prostacyclin synthase (EC 5.3.99.4) (Hydroperoxy icosatetrae	w
-PROSTAGLANDIN	human	Q8N4Q0	PTGR3	Q8N4Q0	8	58	Prostaglandin reductase 3 (PRG-3) (EC 1.3.1.48) (Zinc-bindin	w
+PROSTAGLANDIN	human	Q8N4Q0	PTGR3	Q8N4Q0	13	63	Prostaglandin reductase 3 (PRG-3) (EC 1.3.1.48) (Zinc-bindin	w
 PROSTAGLANDIN	human	Q8N8N7	PTGR2	Q8N8N7	1	63	Prostaglandin reductase 2 (PRG-2) (EC 1.3.1.48) (15-oxoprost	w
 PROSTAGLANDIN	human	Q8TBF2	PRXL2B	Q8TBF2	1	37	Prostamide/prostaglandin F synthase (PM/PGFS) (Prostamide/PG	w
 PROSTAGLANDIN	human	Q92959	SLCO2A1	Q92959	1	71	Solute carrier organic anion transporter family member 2A1 (	w
 PROSTAGLANDIN	human	Q9BSK4	FEM1A	Q9BSK4	35	194	Protein fem-1 homolog A (FEM1a) (FEM1-alpha) (Prostaglandin 	w
-PROSTAGLANDIN	human	Q9H7Z7	PTGES2	Q9H7Z7	15	147	Prostaglandin E synthase 2 (EC 5.3.99.3) (Membrane-associate	w
+PROSTAGLANDIN	human	Q9H7Z7	PTGES2	Q9H7Z7	24	156	Prostaglandin E synthase 2 (EC 5.3.99.3) (Membrane-associate	w
 PROSTAGLANDIN	human	Q9P2B2	PTGFRN	Q9P2B2	21	172	Prostaglandin F2 receptor negative regulator (CD9 partner 1)	w
 PROSTAGLANDIN	human	Q9Y5Y4	PTGDR2	Q9Y5Y4	10	105	Prostaglandin D2 receptor 2 (Chemoattractant receptor-homolo	w
 PROSTAGLANDIN	virus	G8XT72	COX2	G8XT72	4	176	Prostaglandin G/H synthase 2	w
-PROSTAGLANDIN	worm	Q21925	pges-2	Q21925	0	5	Prostaglandin E synthase 2	w
+PROSTAGLANDIN	worm	Q21925	pges-2	Q21925	2	9	Prostaglandin E synthase 2	w
 PROSTAGLANDIN	zebrafish	A0AB32TUQ9	ptger4a	A0AB32TUQ9	1	17	Prostaglandin E2 receptor EP4 subtype	w
 PROSTAGLANDIN	zebrafish	A3QK20	ptger4b	A3QK20	10	54	Prostaglandin E2 receptor EP4 subtype (Prostanoid EP4 recept	w
 PROSTAGLANDIN	zebrafish	E7FD73	ptger3	E7FD73	15	36	Prostaglandin E2 receptor EP3 subtype	w
@@ -146,7 +146,7 @@ PROSTAGLANDIN	zebrafish	Q5RI06	ptgs2b	Q5RI06	0	29	Prostaglandin G/H synthase 2	w
 PROSTAGLANDIN	zebrafish	Q5RI92	ptger2b	Q5RI92	1	13	Prostaglandin E receptor 2b (subtype EP2)	w
 PROSTAGLANDIN	zebrafish	Q6NV24	prxl2b	Q6NV24	0	4	Prostamide/prostaglandin F synthase	w
 PROSTAGLANDIN	zebrafish	Q7SZQ8	ptges3a	Q7SZQ8	4	34	Prostaglandin E synthase 3	w
-PROSTAGLANDIN	zebrafish	Q7ZUC7	ptges2	Q7ZUC7	0	6	Prostaglandin E synthase 2	w
+PROSTAGLANDIN	zebrafish	Q7ZUC7	ptges2	Q7ZUC7	3	9	Prostaglandin E synthase 2	w
 PROSTAGLANDIN	zebrafish	Q8QGV5	ptgdsb.1	Q8QGV5	0	13	Lipocalin-type prostaglandin D synthase-like protein	w
 PROSTAGLANDIN-D	human	P41222	PTGDS	P41222	101	684	Prostaglandin-H2 D-isomerase (EC 5.3.99.2) (Beta-trace prote	w
 PROSTAGLANDIN-ENDOPEROX	human	P35354	PTGS2	P35354	20	435	Prostaglandin G/H synthase 2 (EC 1.14.99.1) (Cyclooxygenase-	w
@@ -209,7 +209,7 @@ PROSTATE	human	Q969W9	PMEPA1	Q969W9	26	193	Protein TMEPAI (Prostate transmembran
 PROSTATE	human	Q96IZ0	PAWR	Q96IZ0	53	147	PRKC apoptosis WT1 regulator protein (Prostate apoptosis res	w
 PROSTATE	human	Q96JT2	SLC45A3	Q96JT2	2	80	Solute carrier family 45 member 3 (Prostate cancer-associate	w
 PROSTATE	human	Q96KF2	PRAC1	Q96KF2	7	42	Small nuclear protein PRAC1 (Prostate cancer susceptibility 	w
-PROSTATE	human	Q9BQ52	ELAC2	Q9BQ52	5	262	Zinc phosphodiesterase ELAC protein 2 (EC 3.1.26.11) (ElaC h	w
+PROSTATE	human	Q9BQ52	ELAC2	Q9BQ52	6	263	Zinc phosphodiesterase ELAC protein 2 (EC 3.1.26.11) (ElaC h	w
 PROSTATE	human	Q9BYX2	TBC1D2	Q9BYX2	95	298	TBC1 domain family member 2A (Armus) (Prostate antigen recog	w
 PROSTATE	human	Q9BZA8	PCDH11Y	Q9BZA8	11	34	Protocadherin-11 Y-linked (Protocadherin-11) (Protocadherin 	w
 PROSTATE	human	Q9GZY1	PBOV1	Q9GZY1	1	16	Prostate and breast cancer overexpressed gene 1 protein (Pro	w

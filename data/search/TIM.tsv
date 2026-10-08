@@ -3,9 +3,9 @@ TIM	fly	FBgn0014396	tim	A0A1W5PW00	26	144	Timeless, isoform T
 TIM	human	Q12774	ARHGEF5	Q12774	17	94		
 TIM	human	Q9UNS1	TIMELESS	Q9UNS1	53	612		
 TIM-1	worm	G5EDN3	tim-1	G5EDN3	3	43	Protein timeless homolog	
-TIM-13	worm	O45319	tin-13	O45319	3	10	Mitochondrial import inner membrane translocase subunit tim-	w
+TIM-13	worm	O45319	tin-13	O45319	4	11	Mitochondrial import inner membrane translocase subunit tim-	w
 TIM-16	worm	O62250	F45G2.8	O62250	3	15	Mitochondrial import inner membrane translocase subunit tim-	w
-TIM-17B	worm	O44477	timm-17B.1	O44477	4	21	Probable mitochondrial import inner membrane translocase sub	w
+TIM-17B	worm	O44477	timm-17B.1	O44477	5	21	Probable mitochondrial import inner membrane translocase sub	w
 TIM-22	worm	Q9NAQ9	C47G2.3	Q9NAQ9	1	25	Mitochondrial import inner membrane translocase subunit tim-	w
 TIM-4	human	Q96H15	TIMD4	Q96H15	13	74	T-cell immunoglobulin and mucin domain-containing protein 4 	w
 TIM1	human	Q96D42	HAVCR1	Q96D42	4	48		
@@ -13,18 +13,22 @@ TIM1	human	Q9UNS1	TIMELESS	Q9UNS1	53	612
 TIM10	arabidopsis-thaliana	Q9ZW33	TIM10	Q9ZW33	4	9	Mitochondrial import inner membrane translocase subunit TIM1	
 TIM10	candida-albicans-237561	A0A1D8PLH1	TIM10	A0A1D8PLH1	4	8	Mitochondrial import inner membrane translocase subunit	
 TIM10	cladophialophora-carrionii	A0A1C1CGX7	tim10	A0A1C1CGX7	4	15	Mitochondrial import inner membrane translocase subunit	
-TIM10	fly	FBgn0027360	Tim10	Q9W2D6	10	47	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM10	fly	FBgn0027360	Tim10	Q9W2D6	10	47	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM10	human	P62072	TIMM10	P62072	11	104		
+TIM10	fly	FBgn0027360	Tim10	Q9W2D6	11	47	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM10	fly	FBgn0027360	Tim10	Q9W2D6	11	47	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM10	human	P62072	TIMM10	P62072	13	106		
 TIM10	human	Q9Y5J6	TIMM10B	Q9Y5J6	7	79	Mitochondrial import inner membrane translocase subunit Tim1	w
 TIM10	schizosaccharomyces-pombe	Q9UTE9	tim10	Q9UTE9	3	13	Mitochondrial import inner membrane translocase subunit tim1	
-TIM10	worm	Q9Y0V6	tin-10	Q9Y0V6	3	24	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM10	worm	Q9Y0V6	tin-10	Q9Y0V6	4	24	Mitochondrial import inner membrane translocase subunit Tim1	w
 TIM10	yeast	P87108	TIM10	P87108	5	36	Mitochondrial import inner membrane translocase subunit TIM1	
-TIM10	zebrafish	Q568N4	timm10b	Q568N4	5	36	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM10	zebrafish	Q6DI06	timm10	Q6DI06	5	35	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM10B	fly	FBgn0027358	Tim9b	Q9Y0V3	3	28	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM10	zebrafish	Q568N4	timm10b	Q568N4	6	36	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM10	zebrafish	Q6DI06	timm10	Q6DI06	7	35	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM10B	fly	FBgn0027358	Tim9b	Q9Y0V3	4	28	Mitochondrial import inner membrane translocase subunit Tim1	w
 TIM10B	worm	Q9Y0V2	tin-9.2	Q9Y0V2	0	1	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM10_HUMAN	human	P62072	TIMM10	P62072	11	104		
+TIM10_CAEEL	worm	Q9Y0V6	tin-10	Q9Y0V6	4	24		
+TIM10_DANRE	zebrafish	Q6DI06	timm10	Q6DI06	7	35		
+TIM10_DROME	fly	FBgn0027360	Tim10	Q9W2D6	11	47		
+TIM10_HUMAN	human	P62072	TIMM10	P62072	13	106		
+TIM10_YEAST	yeast	P87108	TIM10	P87108	5	36		
 TIM11	cladophialophora-carrionii	A0A1C1CLP4	TIM11	A0A1C1CLP4	2	20	ATP synthase F(0) complex subunit e, mitochondrial	
 TIM11	schizosaccharomyces-pombe	Q9URV6	tim11	Q9URV6	2	23	ATP synthase subunit e, mitochondrial	
 TIM11	yeast	P81449	TIM11	P81449	2	33	ATP synthase subunit e, mitochondrial	
@@ -34,61 +38,75 @@ TIM13	arabidopsis-thaliana	Q9XH48	TIM13	Q9XH48	3	10	Mitochondrial import inner m
 TIM13	candida-albicans-237561	Q5AF54	TIM13	Q5AF54	4	8	Mitochondrial import inner membrane translocase subunit TIM1	
 TIM13	fly	FBgn0036204	Tim13	Q9VTN3	5	11	Mitochondrial import inner membrane translocase subunit Tim1	w
 TIM13	fly	FBgn0036204	Tim13	Q9VTN3	5	11	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM13	human	Q9Y5L4	TIMM13	Q9Y5L4	10	188	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM13	human	Q9Y5L4	TIMM13	Q9Y5L4	12	190	Mitochondrial import inner membrane translocase subunit Tim1	w
 TIM13	oryza-sativa-subsp-japonica	Q9XGY5	TIM13	Q9XGY5	8	22	Mitochondrial import inner membrane translocase subunit Tim1	
 TIM13	schizosaccharomyces-pombe	Q10481	tim13	Q10481	3	8	Mitochondrial import inner membrane translocase subunit tim1	
 TIM13	yeast	P53299	TIM13	P53299	5	19	Mitochondrial import inner membrane translocase subunit TIM1	
-TIM13	zebrafish	Q6DGJ3	timm13	Q6DGJ3	4	13	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM13B	human	Q9Y5L4	TIMM13	Q9Y5L4	10	188		
-TIM13_HUMAN	human	Q9Y5L4	TIMM13	Q9Y5L4	10	188		
-TIM14	human	Q96DA6	DNAJC19	Q96DA6	23	278		
+TIM13	zebrafish	Q6DGJ3	timm13	Q6DGJ3	5	14	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM13B	human	Q9Y5L4	TIMM13	Q9Y5L4	12	190		
+TIM13_CAEEL	worm	O45319	tin-13	O45319	4	11		
+TIM13_DANRE	zebrafish	Q6DGJ3	timm13	Q6DGJ3	5	14		
+TIM13_HUMAN	human	Q9Y5L4	TIMM13	Q9Y5L4	12	190		
+TIM13_YEAST	yeast	P53299	TIM13	P53299	5	19		
+TIM14	human	Q96DA6	DNAJC19	Q96DA6	25	280		
 TIM14	worm	P91454	dnj-21	P91454	5	27	Mitochondrial import inner membrane translocase subunit TIM1	w
-TIM14	yeast	Q07914	PAM18	Q07914	5	44	Mitochondrial import inner membrane translocase subunit TIM1	w
-TIM14	zebrafish	Q6PBT7	dnajc19	Q6PBT7	5	33	Mitochondrial import inner membrane translocase subunit TIM1	w
+TIM14	yeast	Q07914	PAM18	Q07914	6	45	Mitochondrial import inner membrane translocase subunit TIM1	w
+TIM14	zebrafish	Q6PBT7	dnajc19	Q6PBT7	8	36	Mitochondrial import inner membrane translocase subunit TIM1	w
 TIM14-1	arabidopsis-thaliana	Q8RV04	TIM14-1	Q8RV04	6	45	Mitochondrial import inner membrane translocase subunit TIM1	
 TIM14-2	arabidopsis-thaliana	Q9SF33	TIM14-2	Q9SF33	6	46	Mitochondrial import inner membrane translocase subunit TIM1	
 TIM14-3	arabidopsis-thaliana	Q9LYY2	TIM14-3	Q9LYY2	6	45	Mitochondrial import inner membrane translocase subunit TIM1	
-TIM14_HUMAN	human	Q96DA6	DNAJC19	Q96DA6	23	278		
+TIM14_CAEEL	worm	P91454	dnj-21	P91454	5	27		
+TIM14_DANRE	zebrafish	Q6PBT7	dnajc19	Q6PBT7	8	36		
+TIM14_DROME	fly	FBgn0036173	CG7394	B7Z0G3	6	41		
+TIM14_HUMAN	human	Q96DA6	DNAJC19	Q96DA6	25	280		
+TIM14_YEAST	yeast	Q07914	PAM18	Q07914	6	45		
 TIM16	fly	FBgn0029964	CG1409	Q9W3P5	3	18	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM16	fly	FBgn0038387	blp	Q9VF08	8	36	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM16	human	Q9Y3D7	PAM16	Q9Y3D7	17	172		
+TIM16	fly	FBgn0038387	blp	Q9VF08	9	37	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM16	human	Q9Y3D7	PAM16	Q9Y3D7	23	178		
 TIM16	yeast	P42949	PAM16	P42949	3	42	Mitochondrial import inner membrane translocase subunit TIM1	w
-TIM16	zebrafish	Q6PBL0	pam16	Q6PBL0	2	12	Mitochondrial import inner membrane translocase subunit tim1	w
-TIM16_HUMAN	human	Q9Y3D7	PAM16	Q9Y3D7	17	172		
+TIM16	zebrafish	Q6PBL0	pam16	Q6PBL0	7	17	Mitochondrial import inner membrane translocase subunit tim1	w
+TIM16_CAEEL	worm	O62250	F45G2.8	O62250	3	15		
+TIM16_DANRE	zebrafish	Q6PBL0	pam16	Q6PBL0	7	17		
+TIM16_DROME	fly	FBgn0038387	blp	Q9VF08	9	37		
+TIM16_HUMAN	human	Q9Y3D7	PAM16	Q9Y3D7	23	178		
+TIM16_YEAST	yeast	P42949	PAM16	P42949	3	42		
 TIM17	candida-albicans-237561	Q59LI2	TIM17	Q59LI2	6	22	Mitochondrial import inner membrane translocase subunit TIM1	
 TIM17	fly	FBgn0037307	Tim17a2	Q9VN97	3	30	Probable mitochondrial import inner membrane translocase sub	w
 TIM17	fly	FBgn0037310	Tim17b1	Q9VNA0	6	28	Probable mitochondrial import inner membrane translocase sub	w
 TIM17	fly	FBgn0038018	Tim17a1	Q9VGA2	4	27	Probable mitochondrial import inner membrane translocase sub	w
-TIM17	human	Q99595	TIMM17A	Q99595	8	132		
+TIM17	human	Q99595	TIMM17A	Q99595	9	133		
 TIM17	schizosaccharomyces-pombe	P87130	tim17	P87130	5	22	Mitochondrial import inner membrane translocase subunit tim1	
-TIM17	yeast	P39515	TIM17	P39515	6	52	Mitochondrial import inner membrane translocase subunit TIM1	
-TIM17-1	arabidopsis-thaliana	Q9LN27	TIM17-1	Q9LN27	4	77	Mitochondrial import inner membrane translocase subunit TIM1	
+TIM17	yeast	P39515	TIM17	P39515	7	52	Mitochondrial import inner membrane translocase subunit TIM1	
+TIM17	zebrafish	Q6NZZ0	fb82c12	Q6NZZ0	4	4	Mitochondrial import inner membrane translocase subunit TIM1	w
+TIM17-1	arabidopsis-thaliana	Q9LN27	TIM17-1	Q9LN27	5	77	Mitochondrial import inner membrane translocase subunit TIM1	
 TIM17-2	arabidopsis-thaliana	Q9SP35	TIM17-2	Q9SP35	7	79	Mitochondrial import inner membrane translocase subunit TIM1	
 TIM17-3	arabidopsis-thaliana	Q9LYG1	TIM17-3	Q9LYG1	3	77	Mitochondrial import inner membrane translocase subunit TIM1	
-TIM17-A	human	Q99595	TIMM17A	Q99595	8	132	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM17-B	human	O60830	TIMM17B	O60830	9	138	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM17-B	zebrafish	A8WHN3	timm17b	A8WHN3	3	61	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM17A	human	Q99595	TIMM17A	Q99595	8	132		
+TIM17-A	human	Q99595	TIMM17A	Q99595	9	133	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM17-B	human	O60830	TIMM17B	O60830	10	139	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM17-B	zebrafish	A8WHN3	timm17b	A8WHN3	6	64	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM17A	human	Q99595	TIMM17A	Q99595	9	133		
 TIM17A1	fly	FBgn0038018	Tim17a1	Q9VGA2	4	27	Probable mitochondrial import inner membrane translocase sub	
 TIM17A2	fly	FBgn0037307	Tim17a2	Q9VN97	3	30	Probable mitochondrial import inner membrane translocase sub	
 TIM17A2_88	fly	FBgn0037307	Tim17a2	Q9VN97	3	30		
 TIM17B	fly	FBgn0263977	Tim17b	Q7PLT4	6	30	Translocase of the inner mitochondrial membrane 17b, isoform	
-TIM17B	human	O60830	TIMM17B	O60830	9	138		
+TIM17B	human	O60830	TIMM17B	O60830	10	139		
 TIM17B1	fly	FBgn0037310	Tim17b1	Q9VNA0	6	28	Probable mitochondrial import inner membrane translocase sub	
 TIM17B2	fly	FBgn0020371	Tim17b2	Q9VJP1	10	130	AT05822p (AT13511p) (Translocase inner membrane 17, isoform 	
+TIM17_YEAST	yeast	P39515	TIM17	P39515	7	52		
 TIM18	yeast	Q08749	TIM18	Q08749	2	21	Mitochondrial import inner membrane translocase subunit TIM1	
 TIM21	arabidopsis-thaliana	Q1G3L1	TIM21	Q1G3L1	4	55	Probable mitochondrial import inner membrane translocase sub	
 TIM21	candida-albicans-237561	Q59VW7	TIM21	Q59VW7	3	18	Mitochondrial import inner membrane translocase subunit TIM2	
 TIM21	cladophialophora-carrionii	A0A1C1CIS2	tim21	A0A1C1CIS2	3	19	Mitochondrial import inner membrane translocase subunit Tim2	
-TIM21	fly	FBgn0031708	CG7382	Q9VMR0	6	33	Mitochondrial import inner membrane translocase subunit Tim2	w
-TIM21	human	Q9BVV7	TIMM21	Q9BVV7	14	246		
+TIM21	fly	FBgn0031708	CG7382	Q9VMR0	7	34	Mitochondrial import inner membrane translocase subunit Tim2	w
+TIM21	human	Q9BVV7	TIMM21	Q9BVV7	15	247		
 TIM21	schizosaccharomyces-pombe	O94618	tim21	O94618	2	18	Mitochondrial import inner membrane translocase subunit tim2	
 TIM21	worm	O62198	CELE_F32A11.1	O62198	1	3	Mitochondrial import inner membrane translocase subunit Tim2	w
-TIM21	worm	Q9TXR7	CELE_F56B3.11	Q9TXR7	2	21	Mitochondrial import inner membrane translocase subunit Tim2	w
+TIM21	worm	Q9TXR7	CELE_F56B3.11	Q9TXR7	2	22	Mitochondrial import inner membrane translocase subunit Tim2	w
 TIM21	yeast	P53220	TIM21	P53220	4	51	Mitochondrial import inner membrane translocase subunit TIM2	
+TIM21	zebrafish	A0A8N7UVT2	si:dkey-118j18.1	A0A8N7UVT2	3	3	Mitochondrial import inner membrane translocase subunit Tim2	w
 TIM21	zebrafish	E7F4T6	timm21	E7F4T6	2	22	Mitochondrial import inner membrane translocase subunit Tim2	w
-TIM21-LIKE	human	Q9BVV7	TIMM21	Q9BVV7	14	246	Mitochondrial import inner membrane translocase subunit Tim2	w
-TIM21_HUMAN	human	Q9BVV7	TIMM21	Q9BVV7	14	246		
+TIM21-LIKE	human	Q9BVV7	TIMM21	Q9BVV7	15	247	Mitochondrial import inner membrane translocase subunit Tim2	w
+TIM21_HUMAN	human	Q9BVV7	TIMM21	Q9BVV7	15	247		
 TIM22	candida-albicans-237561	A0A1D8PI78	TIM22	A0A1D8PI78	0	21	Mitochondrial import inner membrane translocase subunit TIM2	
 TIM22	cladophialophora-carrionii	A0A1C1CBL3	tim22	A0A1C1CBL3	0	53	Mitochondrial import inner membrane translocase subunit TIM2	
 TIM22	fly	FBgn0051229	CG31229	Q8IN78	3	104	Mitochondrial import inner membrane translocase subunit Tim2	w
@@ -108,40 +126,46 @@ TIM23	human	O14925	TIMM23	O14925	7	122
 TIM23	schizosaccharomyces-pombe	Q9USM7	tim23	Q9USM7	3	20	Mitochondrial import inner membrane translocase subunit tim2	
 TIM23	worm	Q9XVQ2	timm-23	Q9XVQ2	3	18	Mitochondrial import inner membrane translocase subunit TIM2	w
 TIM23	yeast	P32897	TIM23	P32897	7	338	Mitochondrial import inner membrane translocase subunit TIM2	
-TIM23	zebrafish	Q7T2P6	timm23	Q7T2P6	5	29	Mitochondrial import inner membrane translocase subunit Tim2	w
+TIM23	zebrafish	Q7T2P6	timm23	Q7T2P6	6	30	Mitochondrial import inner membrane translocase subunit Tim2	w
 TIM23-1	arabidopsis-thaliana	Q9LNQ1	TIM23-1	Q9LNQ1	6	56	Mitochondrial import inner membrane translocase subunit TIM2	
 TIM23-2	arabidopsis-thaliana	Q38820	TIM23-2	Q38820	6	60	Mitochondrial import inner membrane translocase subunit TIM2	
 TIM23-3	arabidopsis-thaliana	Q9S837	TIM23-3	Q9S837	5	56	Mitochondrial import inner membrane translocase subunit TIM2	
 TIM23B	human	Q5SRD1	TIMM23B	Q5SRD1	4	37	Mitochondrial import inner membrane translocase subunit Tim2	w
+TIM23_DANRE	zebrafish	Q7T2P6	timm23	Q7T2P6	6	30		
 TIM23_HUMAN	human	O14925	TIMM23	O14925	7	122		
-TIM29	human	Q9BSF4	TIMM29	Q9BSF4	6	129	Mitochondrial import inner membrane translocase subunit Tim2	w
+TIM29	human	Q9BSF4	TIMM29	Q9BSF4	7	130	Mitochondrial import inner membrane translocase subunit Tim2	w
 TIM29	worm	Q8WQD7	CELE_R04F11.5	Q8WQD7	2	4	Mitochondrial import inner membrane translocase subunit Tim2	w
-TIM29	zebrafish	Q5PNM7	timm29	Q5PNM7	2	11	Mitochondrial import inner membrane translocase subunit Tim2	w
-TIM29_HUMAN	human	Q9BSF4	TIMM29	Q9BSF4	6	129		
+TIM29	zebrafish	Q5PNM7	timm29	Q5PNM7	4	12	Mitochondrial import inner membrane translocase subunit Tim2	w
+TIM29_HUMAN	human	Q9BSF4	TIMM29	Q9BSF4	7	130		
 TIM3	human	Q8TDQ0	HAVCR2	Q8TDQ0	36	346		
 TIM4	human	Q96H15	TIMD4	Q96H15	13	74		
 TIM44	candida-albicans-237561	Q5A7M2	TIM44	Q5A7M2	4	26	Mitochondrial import inner membrane translocase subunit TIM4	
 TIM44	cladophialophora-carrionii	A0A1C1CTB6	tim44	A0A1C1CTB6	7	36	Mitochondrial import inner membrane translocase subunit TIM4	
 TIM44	fly	FBgn0038683	CG11779	Q9VDZ7	18	49	Mitochondrial import inner membrane translocase subunit TIM4	w
-TIM44	human	O43615	TIMM44	O43615	18	228		
+TIM44	human	O43615	TIMM44	O43615	19	229		
 TIM44	schizosaccharomyces-pombe	O60084	tim44	O60084	1	26	Mitochondrial import inner membrane translocase subunit tim4	
-TIM44	yeast	Q01852	TIM44	Q01852	8	67	Mitochondrial import inner membrane translocase subunit TIM4	
+TIM44	yeast	Q01852	TIM44	Q01852	9	67	Mitochondrial import inner membrane translocase subunit TIM4	
+TIM44	zebrafish	Q5BLH8	hm:zehn1275	Q5BLH8	3	3	Mitochondrial import inner membrane translocase subunit TIM4	w
 TIM44-1	arabidopsis-thaliana	Q1PF33	TIM44-1	Q1PF33	16	71	Mitochondrial import inner membrane translocase subunit TIM4	
-TIM44-2	arabidopsis-thaliana	Q5XF06	TIM44-2	Q5XF06	21	71	Mitochondrial import inner membrane translocase subunit TIM4	
+TIM44-2	arabidopsis-thaliana	Q5XF06	TIM44-2	Q5XF06	22	71	Mitochondrial import inner membrane translocase subunit TIM4	
 TIM44-LIKE	worm	Q2HQK3	CELE_Y62E10A.20	Q2HQK3	0	5	Tim44-like domain-containing protein	w
-TIM44_HUMAN	human	O43615	TIMM44	O43615	18	228		
+TIM44_CAEEL	worm	O02161	tin-44	O02161	8	60		
+TIM44_HUMAN	human	O43615	TIMM44	O43615	19	229		
+TIM44_YEAST	yeast	Q01852	TIM44	Q01852	9	67		
 TIM50	arabidopsis-thaliana	Q8VYE2	TIM50	Q8VYE2	8	79	Mitochondrial import inner membrane translocase subunit TIM5	
 TIM50	candida-albicans-237561	Q59W44	TIM50	Q59W44	5	26	Mitochondrial import inner membrane translocase subunit TIM5	
 TIM50	cladophialophora-carrionii	A0A1C1C773	tim50	A0A1C1C773	7	36	Mitochondrial import inner membrane translocase subunit TIM5	
-TIM50	human	Q3ZCQ8	TIMM50	Q3ZCQ8	22	305		
+TIM50	human	Q3ZCQ8	TIMM50	Q3ZCQ8	26	309		
 TIM50	schizosaccharomyces-pombe	O13636	tim50	O13636	4	17	Mitochondrial import inner membrane translocase subunit tim5	
-TIM50	worm	Q22647	scpl-4	Q22647	6	23	Mitochondrial import inner membrane translocase subunit TIM5	w
+TIM50	worm	Q22647	scpl-4	Q22647	7	25	Mitochondrial import inner membrane translocase subunit TIM5	w
 TIM50	yeast	Q02776	TIM50	Q02776	4	65	Mitochondrial import inner membrane translocase subunit TIM5	
-TIM50	zebrafish	Q6NWD4	timm50	Q6NWD4	3	32	Mitochondrial import inner membrane translocase subunit TIM5	w
+TIM50	zebrafish	Q6NWD4	timm50	Q6NWD4	5	34	Mitochondrial import inner membrane translocase subunit TIM5	w
 TIM50-A	fly	FBgn0032971	ttm3	Q9V9P3	3	33	Mitochondrial import inner membrane translocase subunit TIM5	w
 TIM50-B	fly	FBgn0035124	ttm2	Q9W0S3	8	26	Mitochondrial import inner membrane translocase subunit TIM5	w
-TIM50-C	fly	FBgn0250874	ttm50	Q9W4V8	9	64	Mitochondrial import inner membrane translocase subunit TIM5	w
-TIM50_HUMAN	human	Q3ZCQ8	TIMM50	Q3ZCQ8	22	305		
+TIM50-C	fly	FBgn0250874	ttm50	Q9W4V8	10	65	Mitochondrial import inner membrane translocase subunit TIM5	w
+TIM50_CAEEL	worm	Q22647	scpl-4	Q22647	7	25		
+TIM50_DANRE	zebrafish	Q6NWD4	timm50	Q6NWD4	5	34		
+TIM50_HUMAN	human	Q3ZCQ8	TIMM50	Q3ZCQ8	26	309		
 TIM54	candida-albicans-237561	P48990	TIM54	P48990	2	11	Mitochondrial import inner membrane translocase subunit TIM5	
 TIM54	cladophialophora-carrionii	A0A1C1CTQ3	tim54	A0A1C1CTQ3	2	13	Mitochondrial import inner membrane translocase subunit TIM5	
 TIM54	schizosaccharomyces-pombe	O94624	tim54	O94624	1	9	Mitochondrial import inner membrane translocase subunit tim5	
@@ -149,18 +173,22 @@ TIM54	yeast	P47045	TIM54	P47045	3	33	Mitochondrial import inner membrane translo
 TIM8	arabidopsis-thaliana	Q9XGY4	TIM8	Q9XGY4	3	29	Mitochondrial import inner membrane translocase subunit TIM8	
 TIM8	candida-albicans-237561	Q59MI8	TIM8	Q59MI8	2	4	Mitochondrial import inner membrane translocase subunit TIM8	
 TIM8	cladophialophora-carrionii	A0A1C1CQ66	TIM8	A0A1C1CQ66	3	6	Mitochondrial import inner membrane translocase subunit	
-TIM8	fly	FBgn0027359	Tim8	Q9Y1A3	4	37	Mitochondrial import inner membrane translocase subunit Tim8	w
-TIM8	fly	FBgn0027359	Tim8	Q9Y1A3	4	37	Mitochondrial import inner membrane translocase subunit Tim8	w
-TIM8	human	O60220	TIMM8A	O60220	7	103	Mitochondrial import inner membrane translocase subunit Tim8	w
-TIM8	human	Q9Y5J9	TIMM8B	Q9Y5J9	5	88	Mitochondrial import inner membrane translocase subunit Tim8	w
+TIM8	fly	FBgn0027359	Tim8	Q9Y1A3	6	38	Mitochondrial import inner membrane translocase subunit Tim8	w
+TIM8	fly	FBgn0027359	Tim8	Q9Y1A3	6	38	Mitochondrial import inner membrane translocase subunit Tim8	w
+TIM8	human	O60220	TIMM8A	O60220	9	105	Mitochondrial import inner membrane translocase subunit Tim8	w
+TIM8	human	Q9Y5J9	TIMM8B	Q9Y5J9	7	90	Mitochondrial import inner membrane translocase subunit Tim8	w
 TIM8	schizosaccharomyces-pombe	Q09783	tim8	Q09783	3	5	Mitochondrial import inner membrane translocase subunit tim8	
-TIM8	worm	Q9N408	ddp-1	Q9N408	2	6	Mitochondrial import inner membrane translocase subunit Tim8	w
+TIM8	worm	Q9N408	ddp-1	Q9N408	3	7	Mitochondrial import inner membrane translocase subunit Tim8	w
 TIM8	yeast	P57744	TIM8	P57744	4	13	Mitochondrial import inner membrane translocase subunit TIM8	
-TIM8	zebrafish	Q6DEM5	timm8a	Q6DEM5	3	9	Mitochondrial import inner membrane translocase subunit Tim8	w
-TIM8A	human	O60220	TIMM8A	O60220	7	103		
-TIM8A_HUMAN	human	O60220	TIMM8A	O60220	7	103		
-TIM8B	human	Q9Y5J9	TIMM8B	Q9Y5J9	5	88		
-TIM8B_HUMAN	human	Q9Y5J9	TIMM8B	Q9Y5J9	5	88		
+TIM8	zebrafish	Q6DEM5	timm8a	Q6DEM5	6	11	Mitochondrial import inner membrane translocase subunit Tim8	w
+TIM8A	human	O60220	TIMM8A	O60220	9	105		
+TIM8A_DANRE	zebrafish	Q6DEM5	timm8a	Q6DEM5	6	11		
+TIM8A_HUMAN	human	O60220	TIMM8A	O60220	9	105		
+TIM8B	human	Q9Y5J9	TIMM8B	Q9Y5J9	7	90		
+TIM8B_HUMAN	human	Q9Y5J9	TIMM8B	Q9Y5J9	7	90		
+TIM8_CAEEL	worm	Q9N408	ddp-1	Q9N408	3	7		
+TIM8_DROME	fly	FBgn0027359	Tim8	Q9Y1A3	6	38		
+TIM8_YEAST	yeast	P57744	TIM8	P57744	4	13		
 TIM9	arabidopsis-thaliana	Q9XGX9	TIM9	Q9XGX9	4	16	Mitochondrial import inner membrane translocase subunit TIM9	
 TIM9	candida-albicans-237561	Q59R24	TIM9	Q59R24	4	10	Mitochondrial import inner membrane translocase subunit TIM9	
 TIM9	cladophialophora-carrionii	A0A1C1CHJ5	tim9	A0A1C1CHJ5	4	18	Mitochondrial import inner membrane translocase subunit	
@@ -174,12 +202,17 @@ TIM9	yeast	O74700	TIM9	O74700	4	32	Mitochondrial import inner membrane transloca
 TIM9	zebrafish	Q9W762	timm9	Q9W762	2	34	Mitochondrial import inner membrane translocase subunit Tim9	w
 TIM9A	fly	FBgn0030480	Tim9a	Q9VYD7	9	49	Mitochondrial import inner membrane translocase subunit Tim9	
 TIM9A	human	Q9Y5J7	TIMM9	Q9Y5J7	12	109		
-TIM9B	fly	FBgn0027358	Tim9b	Q9Y0V3	3	28	Mitochondrial import inner membrane translocase subunit Tim1	w
-TIM9B	fly	FBgn0027358	Tim9b	Q9Y0V3	3	28	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM9B	fly	FBgn0027358	Tim9b	Q9Y0V3	4	28	Mitochondrial import inner membrane translocase subunit Tim1	w
+TIM9B	fly	FBgn0027358	Tim9b	Q9Y0V3	4	28	Mitochondrial import inner membrane translocase subunit Tim1	w
 TIM9B	human	Q9Y5J6	TIMM10B	Q9Y5J6	7	79		
+TIM9_CAEEL	worm	Q17754	tin-9.1	Q17754	3	20		
+TIM9_DANRE	zebrafish	Q9W762	timm9	Q9W762	2	34		
+TIM9_DROME	fly	FBgn0030480	Tim9a	Q9VYD7	9	49		
 TIM9_HUMAN	human	Q9Y5J7	TIMM9	Q9Y5J7	12	109		
+TIM9_YEAST	yeast	O74700	TIM9	O74700	4	32		
 TIMAP	human	Q96T49	PPP1R16B	Q96T49	29	122	Protein phosphatase 1 regulatory inhibitor subunit 16B (Anky	w
-TIMCC	human	Q96C01	TIMCC	Q96C01	11	134	TIM double twin CX3C motif protein	
+TIMCC	human	Q96C01	TIMCC	Q96C01	12	135	TIM double twin CX3C motif protein	
+TIMCC_HUMAN	human	Q96C01	TIMCC	Q96C01	12	135		
 TIMD-1	human	Q96D42	HAVCR1	Q96D42	4	48	Hepatitis A virus cellular receptor 1 (HAVcr-1) (Kidney inju	w
 TIMD-3	human	Q8TDQ0	HAVCR2	Q8TDQ0	36	346	Hepatitis A virus cellular receptor 2 (HAVcr-2) (T-cell immu	w
 TIMD-4	human	Q96H15	TIMD4	Q96H15	13	74	T-cell immunoglobulin and mucin domain-containing protein 4 	w
@@ -206,40 +239,53 @@ TIMELESS1	human	Q9UNS1	TIMELESS	Q9UNS1	53	612
 TIMEOUT	fly	FBgn0038118	timeout	Q8INH7	8	53	Timeout	w
 TIMEOUT	fly	FBgn0038118	timeout	Q8INH7	8	53	Timeout	w
 TIMEOUT_303	fly	FBgn0038118	timeout	Q8INH7	8	53		
-TIMING	human	Q99807	COQ7	Q99807	10	112	NADPH-dependent 3-demethoxyubiquinone 3-hydroxylase, mitocho	w
-TIMM	human	Q9NPL8	TIMMDC1	Q9NPL8	13	232	Complex I assembly factor TIMMDC1, mitochondrial (Protein M5	w
-TIMM-17B.1	worm	O44477	timm-17B.1	O44477	4	21	Probable mitochondrial import inner membrane translocase sub	
+TIMING	human	Q99807	COQ7	Q99807	20	122	NADPH-dependent 3-demethoxyubiquinone 3-hydroxylase, mitocho	w
+TIMM	human	Q9NPL8	TIMMDC1	Q9NPL8	15	234	Complex I assembly factor TIMMDC1, mitochondrial (Protein M5	w
+TIMM-17B.1	worm	O44477	timm-17B.1	O44477	5	21	Probable mitochondrial import inner membrane translocase sub	
 TIMM-17B.2	worm	Q19012	timm-17b.2	Q19012	1	16	Translocase, Inner Mitochondrial Membrane	
 TIMM-23	worm	Q9XVQ2	timm-23	Q9XVQ2	3	18	Mitochondrial import inner membrane translocase subunit TIM2	
 TIMM10	dictyostelium-discoideum	Q54NZ0	timm10	Q54NZ0	1	9	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM10	human	P62072	TIMM10	P62072	11	104	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM10	mus-musculus	P62073	Timm10	P62073	8	37	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM10	rattus-norvegicus	P62074	Timm10	P62074	5	31	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM10	zebrafish	Q6DI06	timm10	Q6DI06	5	35	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM10	human	P62072	TIMM10	P62072	13	106	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM10	mus-musculus	P62073	Timm10	P62073	10	39	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM10	pan-troglodytes	H2Q3P1	TIMM10	H2Q3P1	6	7	Mitochondrial import inner membrane translocase subunit	
+TIMM10	rattus-norvegicus	P62074	Timm10	P62074	8	33	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM10	zebrafish	Q6DI06	timm10	Q6DI06	7	35	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM10-B	xenopus-laevis	Q6GQ52	timm10-b	Q6GQ52	5	6	Mitochondrial import inner membrane translocase subunit Tim1	
 TIMM10B	human	Q9Y5J6	TIMM10B	Q9Y5J6	7	79	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM10B	mus-musculus	Q9WV96	Timm10b	Q9WV96	3	20	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM10B	mus-musculus	Q9WV96	Timm10b	Q9WV96	4	20	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM10B	pan-troglodytes	H2Q323	TIMM10B	H2Q323	2	2	Mitochondrial import inner membrane translocase subunit	
 TIMM10B	rattus-norvegicus	Q9R1B1	Timm10b	Q9R1B1	5	25	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM10B	zebrafish	Q568N4	timm10b	Q568N4	5	36	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM13	human	Q9Y5L4	TIMM13	Q9Y5L4	10	188	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM13	mus-musculus	P62075	Timm13	P62075	6	15	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM13	rattus-norvegicus	P62076	Timm13	P62076	3	10	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM13	zebrafish	Q6DGJ3	timm13	Q6DGJ3	4	13	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM13A	human	Q9Y5L4	TIMM13	Q9Y5L4	10	188		
-TIMM13B	human	Q9Y5L4	TIMM13	Q9Y5L4	10	188		
-TIMM14	human	Q96DA6	DNAJC19	Q96DA6	23	278		
+TIMM10B	xenopus-laevis	Q6GR66	timm10b	Q6GR66	2	2	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM10B	zebrafish	Q568N4	timm10b	Q568N4	6	36	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM13	human	Q9Y5L4	TIMM13	Q9Y5L4	12	190	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM13	mus-musculus	P62075	Timm13	P62075	7	16	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM13	pan-troglodytes	H2QEW9	TIMM13	H2QEW9	4	4	Mitochondrial import inner membrane translocase subunit	
+TIMM13	rattus-norvegicus	P62076	Timm13	P62076	4	11	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM13	zebrafish	Q6DGJ3	timm13	Q6DGJ3	5	14	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM13-A	xenopus-laevis	Q6GPY0	timm13-a	Q6GPY0	2	2	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM13A	human	Q9Y5L4	TIMM13	Q9Y5L4	12	190		
+TIMM13B	human	Q9Y5L4	TIMM13	Q9Y5L4	12	190		
+TIMM14	human	Q96DA6	DNAJC19	Q96DA6	25	280		
 TIMM16	dictyostelium-discoideum	Q54SV6	timm16	Q54SV6	1	10	Mitochondrial import inner membrane translocase subunit tim1	
-TIMM16	human	Q9Y3D7	PAM16	Q9Y3D7	17	172		
+TIMM16	human	Q9Y3D7	PAM16	Q9Y3D7	23	178		
 TIMM17	dictyostelium-discoideum	Q54K35	timm17	Q54K35	1	50	Mitochondrial import inner membrane translocase subunit tim1	
-TIMM17	human	Q99595	TIMM17A	Q99595	8	132		
-TIMM17A	human	Q99595	TIMM17A	Q99595	8	132	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM17A	mus-musculus	Q9Z0V8	Timm17a	Q9Z0V8	4	57	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM17A	rattus-norvegicus	O35092	Timm17a	O35092	6	60	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM17B	human	O60830	TIMM17B	O60830	9	138	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM17B	mus-musculus	Q9Z0V7	Timm17b	Q9Z0V7	4	56	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM17B	zebrafish	A8WHN3	timm17b	A8WHN3	3	61	Mitochondrial import inner membrane translocase subunit Tim1	
-TIMM21	human	Q9BVV7	TIMM21	Q9BVV7	14	246	Mitochondrial import inner membrane translocase subunit Tim2	
-TIMM21	mus-musculus	Q8CCM6	Timm21	Q8CCM6	3	23	Mitochondrial import inner membrane translocase subunit Tim2	
-TIMM21	rattus-norvegicus	Q5U2X7	Timm21	Q5U2X7	1	20	Mitochondrial import inner membrane translocase subunit Tim2	
+TIMM17	human	Q99595	TIMM17A	Q99595	9	133		
+TIMM17A	human	Q99595	TIMM17A	Q99595	9	133	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM17A	mus-musculus	Q9Z0V8	Timm17a	Q9Z0V8	5	58	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM17A	pan-troglodytes	K7BLD9	TIMM17A	K7BLD9	5	5	Mitochondrial import inner membrane translocase subunit TIM1	
+TIMM17A	rattus-norvegicus	O35092	Timm17a	O35092	7	61	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM17A.S	xenopus-laevis	A0A8J0ULC9	timm17a.S	A0A8J0ULC9	4	4	translocase of inner mitochondrial membrane 17A S homeolog i	
+TIMM17B	human	O60830	TIMM17B	O60830	10	139	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM17B	mus-musculus	Q9Z0V7	Timm17b	Q9Z0V7	5	57	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM17B	pan-troglodytes	K7AWQ4	TIMM17B	K7AWQ4	5	5	Mitochondrial import inner membrane translocase subunit TIM1	
+TIMM17B	rattus-norvegicus	A0A8J8XD91	Timm17b	A0A8J8XD91	4	4	Translocase of inner mitochondrial membrane 17b	
+TIMM17B	zebrafish	A8WHN3	timm17b	A8WHN3	6	64	Mitochondrial import inner membrane translocase subunit Tim1	
+TIMM17B.S	xenopus-laevis	Q3KPR8	timm17b.S	Q3KPR8	4	4	MGC131365 protein	
+TIMM21	human	Q9BVV7	TIMM21	Q9BVV7	15	247	Mitochondrial import inner membrane translocase subunit Tim2	
+TIMM21	mus-musculus	Q8CCM6	Timm21	Q8CCM6	4	24	Mitochondrial import inner membrane translocase subunit Tim2	
+TIMM21	pan-troglodytes	H2QEP7	TIMM21	H2QEP7	2	2	Mitochondrial import inner membrane translocase subunit Tim2	
+TIMM21	rattus-norvegicus	Q5U2X7	Timm21	Q5U2X7	3	22	Mitochondrial import inner membrane translocase subunit Tim2	
+TIMM21	xenopus-laevis	Q5XKA2	timm21	Q5XKA2	3	3	Mitochondrial import inner membrane translocase subunit Tim2	
 TIMM21	zebrafish	E7F4T6	timm21	E7F4T6	2	22	Mitochondrial import inner membrane translocase subunit Tim2	
 TIMM22	dictyostelium-discoideum	Q54QM0	timm22	Q54QM0	0	43	Mitochondrial import inner membrane translocase subunit tim2	
 TIMM22	human	Q9Y584	TIMM22	Q9Y584	2	121	Mitochondrial import inner membrane translocase subunit Tim2	
@@ -248,45 +294,61 @@ TIMM22	rattus-norvegicus	Q9JKW1	Timm22	Q9JKW1	1	100	Mitochondrial import inner m
 TIMM22	zebrafish	E7FA60	timm22	E7FA60	2	119	Mitochondrial import inner membrane translocase subunit TIM2	
 TIMM23	human	O14925	TIMM23	O14925	7	122	Mitochondrial import inner membrane translocase subunit Tim2	
 TIMM23	mus-musculus	Q9WTQ8	Timm23	Q9WTQ8	4	27	Mitochondrial import inner membrane translocase subunit Tim2	
-TIMM23	rattus-norvegicus	O35093	Timm23	O35093	3	19	Mitochondrial import inner membrane translocase subunit Tim2	
-TIMM23	zebrafish	Q7T2P6	timm23	Q7T2P6	5	29	Mitochondrial import inner membrane translocase subunit Tim2	
+TIMM23	pan-troglodytes	H2Q1W6	TIMM23	H2Q1W6	2	2	Mitochondrial import inner membrane translocase subunit TIM2	
+TIMM23	rattus-norvegicus	O35093	Timm23	O35093	4	20	Mitochondrial import inner membrane translocase subunit Tim2	
+TIMM23	zebrafish	Q7T2P6	timm23	Q7T2P6	6	30	Mitochondrial import inner membrane translocase subunit Tim2	
 TIMM23B	human	Q5SRD1	TIMM23B	Q5SRD1	4	37	Mitochondrial import inner membrane translocase subunit Tim2	
-TIMM29	fly	FBgn0029665	Timm29	Q9W4R8	1	15	RE03721p	
-TIMM29	human	Q9BSF4	TIMM29	Q9BSF4	6	129	Mitochondrial import inner membrane translocase subunit Tim2	
-TIMM29	mus-musculus	Q8BGX2	Timm29	Q8BGX2	1	8	Mitochondrial import inner membrane translocase subunit Tim2	
-TIMM29	zebrafish	Q5PNM7	timm29	Q5PNM7	2	11	Mitochondrial import inner membrane translocase subunit Tim2	
-TIMM44	human	O43615	TIMM44	O43615	18	228	Mitochondrial import inner membrane translocase subunit TIM4	
-TIMM44	mus-musculus	O35857	Timm44	O35857	14	82	Mitochondrial import inner membrane translocase subunit TIM4	
-TIMM44	rattus-norvegicus	O35094	Timm44	O35094	11	45	Mitochondrial import inner membrane translocase subunit TIM4	
+TIMM29	fly	FBgn0029665	Timm29	Q9W4R8	2	15	RE03721p	
+TIMM29	human	Q9BSF4	TIMM29	Q9BSF4	7	130	Mitochondrial import inner membrane translocase subunit Tim2	
+TIMM29	mus-musculus	Q8BGX2	Timm29	Q8BGX2	3	9	Mitochondrial import inner membrane translocase subunit Tim2	
+TIMM29	pan-troglodytes	H2QFC7	TIMM29	H2QFC7	3	3	Chromosome 19 open reading frame 52	
+TIMM29	zebrafish	Q5PNM7	timm29	Q5PNM7	4	12	Mitochondrial import inner membrane translocase subunit Tim2	
+TIMM29.L	xenopus-laevis	A0A310TPN6	timm29.L	A0A310TPN6	3	3	mitochondrial import inner membrane translocase subunit Tim2	
+TIMM44	human	O43615	TIMM44	O43615	19	229	Mitochondrial import inner membrane translocase subunit TIM4	
+TIMM44	mus-musculus	O35857	Timm44	O35857	15	83	Mitochondrial import inner membrane translocase subunit TIM4	
+TIMM44	pan-troglodytes	H2QF76	TIMM44	H2QF76	3	3	Mitochondrial import inner membrane translocase subunit TIM4	
+TIMM44	rattus-norvegicus	O35094	Timm44	O35094	13	47	Mitochondrial import inner membrane translocase subunit TIM4	
+TIMM44.S	xenopus-laevis	A0A8J0TRA3	timm44.S	A0A8J0TRA3	3	3	Mitochondrial import inner membrane translocase subunit TIM4	
 TIMM50	dictyostelium-discoideum	Q55C70	timm50	Q55C70	0	11	Mitochondrial import inner membrane translocase subunit tim5	
-TIMM50	human	Q3ZCQ8	TIMM50	Q3ZCQ8	22	305	Mitochondrial import inner membrane translocase subunit TIM5	
-TIMM50	mus-musculus	Q9D880	Timm50	Q9D880	1	28	Mitochondrial import inner membrane translocase subunit TIM5	
+TIMM50	human	Q3ZCQ8	TIMM50	Q3ZCQ8	26	309	Mitochondrial import inner membrane translocase subunit TIM5	
+TIMM50	mus-musculus	Q9D880	Timm50	Q9D880	5	32	Mitochondrial import inner membrane translocase subunit TIM5	
+TIMM50	pan-troglodytes	A0A2J8QFJ6	TIMM50	A0A2J8QFJ6	3	4	Mitochondrial import inner membrane translocase subunit TIM5	
+TIMM50	rattus-norvegicus	A0A8I6ACU9	Timm50	A0A8I6ACU9	3	3	Mitochondrial import inner membrane translocase subunit TIM5	
 TIMM50	rattus-norvegicus	D3ZJX5	Timm50	D3ZJX5	2	28	Mitochondrial import inner membrane translocase subunit TIM5	
-TIMM50	zebrafish	Q6NWD4	timm50	Q6NWD4	3	32	Mitochondrial import inner membrane translocase subunit TIM5	
-TIMM8A	human	O60220	TIMM8A	O60220	7	103	Mitochondrial import inner membrane translocase subunit Tim8	
-TIMM8A	rattus-norvegicus	Q9WVA1	Timm8a	Q9WVA1	4	5	Mitochondrial import inner membrane translocase subunit Tim8	
-TIMM8A	zebrafish	Q6DEM5	timm8a	Q6DEM5	3	9	Mitochondrial import inner membrane translocase subunit Tim8	
-TIMM8A1	mus-musculus	Q9WVA2	Timm8a1	Q9WVA2	6	10	Mitochondrial import inner membrane translocase subunit Tim8	
+TIMM50	zebrafish	Q6NWD4	timm50	Q6NWD4	5	34	Mitochondrial import inner membrane translocase subunit TIM5	
+TIMM50.S	xenopus-laevis	A0A1L8F409	timm50.S	A0A1L8F409	2	2	Mitochondrial import inner membrane translocase subunit TIM5	
+TIMM8A	human	O60220	TIMM8A	O60220	9	105	Mitochondrial import inner membrane translocase subunit Tim8	
+TIMM8A	pan-troglodytes	H2QYW7	TIMM8A	H2QYW7	4	5	Mitochondrial import inner membrane translocase subunit	
+TIMM8A	rattus-norvegicus	Q9WVA1	Timm8a	Q9WVA1	7	8	Mitochondrial import inner membrane translocase subunit Tim8	
+TIMM8A	zebrafish	Q6DEM5	timm8a	Q6DEM5	6	11	Mitochondrial import inner membrane translocase subunit Tim8	
+TIMM8A.L	xenopus-laevis	A0A8J0TI24	timm8a.L	A0A8J0TI24	3	3	Mitochondrial import inner membrane translocase subunit	
+TIMM8A1	mus-musculus	Q9WVA2	Timm8a1	Q9WVA2	9	13	Mitochondrial import inner membrane translocase subunit Tim8	
 TIMM8A2	mus-musculus	Q4FZG7	Timm8a2	Q4FZG7	2	5	Putative mitochondrial import inner membrane translocase sub	
 TIMM8A2	rattus-norvegicus	D3ZV76	Timm8a2	D3ZV76	1	3	Mitochondrial import inner membrane translocase subunit	
-TIMM8B	human	Q9Y5J9	TIMM8B	Q9Y5J9	5	88	Mitochondrial import inner membrane translocase subunit Tim8	
-TIMM8B	mus-musculus	P62077	Timm8b	P62077	3	9	Mitochondrial import inner membrane translocase subunit Tim8	
-TIMM8B	rattus-norvegicus	P62078	Timm8b	P62078	2	3	Mitochondrial import inner membrane translocase subunit Tim8	
-TIMM8B	zebrafish	B3DGI9	timm8b	B3DGI9	2	7	Mitochondrial import inner membrane translocase subunit	
+TIMM8B	human	Q9Y5J9	TIMM8B	Q9Y5J9	7	90	Mitochondrial import inner membrane translocase subunit Tim8	
+TIMM8B	mus-musculus	P62077	Timm8b	P62077	4	10	Mitochondrial import inner membrane translocase subunit Tim8	
+TIMM8B	pan-troglodytes	H2Q4S3	TIMM8B	H2Q4S3	3	3	Mitochondrial import inner membrane translocase subunit	
+TIMM8B	rattus-norvegicus	P62078	Timm8b	P62078	3	4	Mitochondrial import inner membrane translocase subunit Tim8	
+TIMM8B	zebrafish	B3DGI9	timm8b	B3DGI9	3	8	Mitochondrial import inner membrane translocase subunit	
+TIMM8B.S	xenopus-laevis	A1A639	timm8b.S	A1A639	2	2	Mitochondrial import inner membrane translocase subunit	
 TIMM9	dictyostelium-discoideum	Q559H1	timm9	Q559H1	1	6	Mitochondrial import inner membrane translocase subunit Tim9	
 TIMM9	human	Q9Y5J7	TIMM9	Q9Y5J7	12	109	Mitochondrial import inner membrane translocase subunit Tim9	
 TIMM9	mus-musculus	Q9WV98	Timm9	Q9WV98	3	25	Mitochondrial import inner membrane translocase subunit Tim9	
+TIMM9	pan-troglodytes	H2Q8D8	TIMM9	H2Q8D8	1	1	Mitochondrial import inner membrane translocase subunit	
 TIMM9	rattus-norvegicus	Q9WV97	Timm9	Q9WV97	5	24	Mitochondrial import inner membrane translocase subunit Tim9	
 TIMM9	zebrafish	Q9W762	timm9	Q9W762	2	34	Mitochondrial import inner membrane translocase subunit Tim9	
+TIMM9.S	xenopus-laevis	A0A8J1LNP1	timm9.S	A0A8J1LNP1	1	1	Mitochondrial import inner membrane translocase subunit	
 TIMM9A	human	Q9Y5J7	TIMM9	Q9Y5J7	12	109		
 TIMM9B	human	Q9Y5J6	TIMM10B	Q9Y5J6	7	79		
-TIMMDC1	fly	FBgn0010340	Timmdc1	P81928	1	44	RPII140-upstream gene protein	
-TIMMDC1	human	Q9NPL8	TIMMDC1	Q9NPL8	13	232	Complex I assembly factor TIMMDC1, mitochondrial (Protein M5	
-TIMMDC1	mus-musculus	Q8BUY5	Timmdc1	Q8BUY5	1	50	Complex I assembly factor TIMMDC1, mitochondrial	
-TIMMDC1	rattus-norvegicus	Q6AY94	Timmdc1	Q6AY94	2	62	Complex I assembly factor TIMMDC1, mitochondrial	
+TIMMDC1	fly	FBgn0010340	Timmdc1	P81928	2	45	RPII140-upstream gene protein	
+TIMMDC1	human	Q9NPL8	TIMMDC1	Q9NPL8	15	234	Complex I assembly factor TIMMDC1, mitochondrial (Protein M5	
+TIMMDC1	mus-musculus	Q8BUY5	Timmdc1	Q8BUY5	4	52	Complex I assembly factor TIMMDC1, mitochondrial	
+TIMMDC1	pan-troglodytes	H2QN55	TIMMDC1	H2QN55	3	3	Chromosome 3 open reading frame 1	
+TIMMDC1	rattus-norvegicus	Q6AY94	Timmdc1	Q6AY94	4	64	Complex I assembly factor TIMMDC1, mitochondrial	
 TIMMDC1	worm	I2HAE1	CELE_Y38F2AR.3	I2HAE1	0	31	Complex I assembly factor TIMMDC1, mitochondrial	w
-TIMMDC1	zebrafish	Q568N3	timmdc1	Q568N3	2	64	Complex I assembly factor TIMMDC1, mitochondrial	w
-TIMMDC1	zebrafish	Q568N3	timmdc1	Q568N3	2	64	Complex I assembly factor TIMMDC1, mitochondrial	w
+TIMMDC1	zebrafish	Q568N3	timmdc1	Q568N3	5	66	Complex I assembly factor TIMMDC1, mitochondrial	w
+TIMMDC1	zebrafish	Q568N3	timmdc1	Q568N3	5	66	Complex I assembly factor TIMMDC1, mitochondrial	w
+TIMMDC1.L	xenopus-laevis	A0A1L8HBR3	timmdc1.L	A0A1L8HBR3	2	2	complex I assembly factor TIMMDC1, mitochondrial isoform X1	
 TIMP	fly	FBgn0025879	Timp	Q9VH14	54	466	Tissue inhibitor of metalloproteinase	
 TIMP	human	P01033	TIMP1	P01033	62	653		
 TIMP-1	worm	Q21267	timp-1	Q21267	2	14	NTR domain-containing protein	

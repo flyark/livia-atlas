@@ -49,7 +49,9 @@ LACA	staphylococcus-aureus-93061	Q2G2R4	lacA	Q2G2R4	1	4	Galactose-6-phosphate is
 LACA	streptococcus-pneumoniae	Q8DPN9	lacA	Q8DPN9	1	1	Galactose-6-phosphate isomerase subunit LacA	
 LACB	staphylococcus-aureus-93061	Q2G2R0	lacB	Q2G2R0	1	2	Galactose-6-phosphate isomerase subunit LacB	
 LACB	streptococcus-pneumoniae	Q8DPP0	lacB	Q8DPP0	1	5	Galactose-6-phosphate isomerase subunit LacB	
-LACB2_HUMAN	human	Q53H82	LACTB2	Q53H82	10	128		
+LACB2_DANRE	zebrafish	Q6NYF0	lactb2	Q6NYF0	3	3		
+LACB2_DROME	fly	FBgn0031987	CG12375	Q9VLS9	1	14		
+LACB2_HUMAN	human	Q53H82	LACTB2	Q53H82	20	138		
 LACC	human	Q8IV20	LACC1	Q8IV20	12	136	Purine nucleoside phosphorylase LACC1 (EC 2.4.2.1) (Adenosin	w
 LACC	staphylococcus-aureus-93061	P0A0B9	lacC	P0A0B9	0	3	Tagatose-6-phosphate kinase	
 LACC	streptococcus-pneumoniae	Q8DPP1	lacC	Q8DPP1	0	3	Tagatose-6-phosphate kinase	
@@ -59,7 +61,7 @@ LACD	staphylococcus-aureus-93061	P0A011	lacD	P0A011	0	2	Tagatose 1,6-diphosphate
 LACD	streptococcus-pneumoniae	Q8DPP2	lacD	Q8DPP2	0	4	Tagatose 1,6-diphosphate aldolase	
 LACE	fly	FBgn0002524	lace	Q9V3F2	12	94	serine C-palmitoyltransferase (EC 2.3.1.50)	
 LACE	streptococcus-pneumoniae	Q8DPP5	lacE	Q8DPP5	1	7	PTS system lactose-specific EIICB component	
-LACE1	human	Q8WV93	AFG1L	Q8WV93	4	50		
+LACE1	human	Q8WV93	AFG1L	Q8WV93	6	52		
 LACE1B	zebrafish	Q5TYS0	lace1b	Q5TYS0	0	3	Lactation elevated protein 1 homolog B	
 LACF	streptococcus-pneumoniae	Q8DPP4	lacF	Q8DPP4	2	7	PTS system lactose-specific EIIA component	
 LACG	staphylococcus-aureus-93061	Q2G2D5	lacG	Q2G2D5	1	9	6-phospho-beta-galactosidase	
@@ -84,19 +86,19 @@ LACRT_HUMAN	human	Q9GZZ8	LACRT	Q9GZZ8	10	158
 LACRYGLOBIN	human	O75556	SCGB2A1	O75556	9	146	Mammaglobin-B (Lacryglobin) (Lipophilin-C) (Mammaglobin-2) (	w
 LACS	human	O60488	ACSL4	O60488	1	220	Long-chain-fatty-acid--CoA ligase 4 (EC 6.2.1.3) (Arachidona	w
 LACS	human	O95573	ACSL3	O95573	4	320	Fatty acid CoA ligase Acsl3 (Arachidonate--CoA ligase) (EC 6	w
-LACS	human	P33121	ACSL1	P33121	2	185		
-LACS	human	Q9UKU0	ACSL6	Q9UKU0	2	213	Long-chain-fatty-acid--CoA ligase 6 (EC 6.2.1.3) (Arachidona	w
+LACS	human	P33121	ACSL1	P33121	3	186		
+LACS	human	Q9UKU0	ACSL6	Q9UKU0	3	214	Long-chain-fatty-acid--CoA ligase 6 (EC 6.2.1.3) (Arachidona	w
 LACS	human	Q9ULC5	ACSL5	Q9ULC5	1	152	Long-chain-fatty-acid--CoA ligase 5 (EC 6.2.1.3) (Arachidona	w
 LACS1	arabidopsis-thaliana	O22898	LACS1	O22898	1	33	Long chain acyl-CoA synthetase 1	
-LACS1	human	P33121	ACSL1	P33121	2	185		
+LACS1	human	P33121	ACSL1	P33121	3	186		
 LACS2	arabidopsis-thaliana	Q9XIA9	LACS2	Q9XIA9	0	32	Long chain acyl-CoA synthetase 2	
-LACS2	human	P33121	ACSL1	P33121	2	185		
+LACS2	human	P33121	ACSL1	P33121	3	186		
 LACS3	arabidopsis-thaliana	Q9C7W4	LACS3	Q9C7W4	0	35	Long chain acyl-CoA synthetase 3	
 LACS3	human	O95573	ACSL3	O95573	4	320		
 LACS4	arabidopsis-thaliana	Q9T0A0	LACS4	Q9T0A0	0	31	Long chain acyl-CoA synthetase 4	
 LACS4	human	O60488	ACSL4	O60488	1	220		
 LACS5	arabidopsis-thaliana	Q9T009	LACS5	Q9T009	0	28	Long chain acyl-CoA synthetase 5	
-LACS5	human	Q9UKU0	ACSL6	Q9UKU0	2	213		
+LACS5	human	Q9UKU0	ACSL6	Q9UKU0	3	214		
 LACS6	arabidopsis-thaliana	Q8LPS1	LACS6	Q8LPS1	2	38	Long chain acyl-CoA synthetase 6, peroxisomal	
 LACS7	arabidopsis-thaliana	Q8LKS5	LACS7	Q8LKS5	0	32	Long chain acyl-CoA synthetase 7, peroxisomal	
 LACS7	cladophialophora-carrionii	A0A1C1CWI5	LACS7	A0A1C1CWI5	1	19	Long chain acyl-CoA synthetase 7, peroxisomal	
@@ -119,15 +121,19 @@ LACTASE-LIKE	human	Q6UWM7	LCTL	Q6UWM7	6	49	Lactase-like protein (Klotho/lactase-
 LACTASE-PHLORIZIN	human	Q6UWM7	LCTL	Q6UWM7	6	49	Lactase-like protein (Klotho/lactase-phlorizin hydrolase-rel	w
 LACTATE	human	Q86WU2	LDHD	Q86WU2	3	101	D-lactate dehydrogenase, mitochondrial (DLD) (Lactate dehydr	w
 LACTATE	human	Q8IX04	UEVLD	Q8IX04	11	211	Ubiquitin-conjugating enzyme E2 variant 3 (UEV-3) (EV and la	w
-LACTATION	human	Q8WV93	AFG1L	Q8WV93	4	50	AFG1-like ATPase (Lactation elevated protein 1) (EC 3.6.-.-)	w
+LACTATION	human	Q8WV93	AFG1L	Q8WV93	6	52	AFG1-like ATPase (Lactation elevated protein 1) (EC 3.6.-.-)	w
 LACTATION	zebrafish	Q5TYS0	lace1b	Q5TYS0	0	3	Lactation elevated protein 1 homolog B	w
 LACTB	human	P83111	LACTB	P83111	2	203	Serine beta-lactamase-like protein LACTB, mitochondrial (EC 	
 LACTB	mus-musculus	Q9EP89	Lactb	Q9EP89	0	5	Serine beta-lactamase-like protein LACTB, mitochondrial	
 LACTB	rattus-norvegicus	D3ZFJ6	Lactb	D3ZFJ6	0	7	Serine beta-lactamase-like protein LACTB, mitochondrial	
 LACTB2	cladophialophora-carrionii	A0A1C1CND6	Lactb2	A0A1C1CND6	0	3	Beta-lactamase-like protein 2	
-LACTB2	human	Q53H82	LACTB2	Q53H82	10	128	Endoribonuclease LACTB2 (EC 3.1.27.-) (Beta-lactamase-like p	
-LACTB2	mus-musculus	Q99KR3	Lactb2	Q99KR3	0	2	Endoribonuclease LACTB2	
-LACTB2	rattus-norvegicus	Q561R9	Lactb2	Q561R9	0	14	Endoribonuclease LACTB2	
+LACTB2	human	Q53H82	LACTB2	Q53H82	20	138	Endoribonuclease LACTB2 (EC 3.1.27.-) (Beta-lactamase-like p	
+LACTB2	mus-musculus	Q99KR3	Lactb2	Q99KR3	5	8	Endoribonuclease LACTB2	
+LACTB2	pan-troglodytes	A0A2J8M9M4	LACTB2	A0A2J8M9M4	9	9	Endoribonuclease LACTB2	
+LACTB2	rattus-norvegicus	Q561R9	Lactb2	Q561R9	5	21	Endoribonuclease LACTB2	
+LACTB2	xenopus-laevis	Q5XGR8	lactb2	Q5XGR8	4	5	Endoribonuclease LACTB2	
+LACTB2	zebrafish	Q6NYF0	lactb2	Q6NYF0	3	3	Endoribonuclease LACTB2	w
+LACTB2	zebrafish	Q6NYF0	lactb2	Q6NYF0	3	3	Endoribonuclease LACTB2	w
 LACTBL1	human	A8MY62	LACTBL1	A8MY62	0	22	Beta-lactamase-like protein 1	
 LACTBL1A	zebrafish	A0A8M9PE02	lactbl1a	A0A8M9PE02	0	3	Beta-lactamase-like 1	
 LACTBL1B	zebrafish	F1QP06	lactbl1b	F1QP06	0	3	Beta-lactamase-like 1 isoform X2	

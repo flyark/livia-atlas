@@ -18,33 +18,44 @@ MT-3	human	P25713	MT3	P25713	3	116	Metallothionein-3 (MT-3) (GIFB) (GIF) (Growth
 MT-4	fly	FBgn0053192	MtnD	Q8I9B4	0	4	Metallothionein-4 (MT-4) (Metallothionein D)	w
 MT-4	human	P47944	MT4	P47944	13	37	Metallothionein-4 (MT-4) (Metallothionein-IV) (MT-IV)	w
 MT-A70-LIKE	fly	FBgn0039139	Mettl3	Q9VCE6	17	111	N6-adenosine-methyltransferase MT-A70-like protein (EC 2.1.1	w
-MT-ABC	human	Q9NP58	ABCB6	Q9NP58	6	181	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	w
+MT-ABC	human	Q9NP58	ABCB6	Q9NP58	7	182	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	w
 MT-ATP6	human	P00846	MT-ATP6	P00846	9	129	ATP synthase F(0) complex subunit a (F-ATPase protein 6) (Pr	
+MT-ATP6	pan-troglodytes	Q9T9W0	MT-ATP6	Q9T9W0	2	2	ATP synthase subunit a	
 MT-ATP6	rattus-norvegicus	P05504	Mt-atp6	P05504	5	63	ATP synthase F(0) complex subunit a	
-MT-ATP6	zebrafish	Q9MIY5	mt-atp6	Q9MIY5	2	94	ATP synthase F(0) complex subunit a	
-MT-ATP8	human	P03928	MT-ATP8	P03928	31	136	ATP synthase F(0) complex subunit 8 (A6L) (F-ATPase subunit 	
-MT-ATP8	rattus-norvegicus	P11608	Mt-atp8	P11608	8	38	ATP synthase F(0) complex subunit 8	
+MT-ATP6	xenopus-laevis	P00849	mt-atp6	P00849	1	1	ATP synthase subunit a	
+MT-ATP6	zebrafish	Q9MIY5	mt-atp6	Q9MIY5	3	95	ATP synthase F(0) complex subunit a	
+MT-ATP8	human	P03928	MT-ATP8	P03928	33	138	ATP synthase F(0) complex subunit 8 (A6L) (F-ATPase subunit 	
+MT-ATP8	pan-troglodytes	Q35647	MT-ATP8	Q35647	3	3	ATP synthase protein 8	
+MT-ATP8	rattus-norvegicus	P11608	Mt-atp8	P11608	11	41	ATP synthase F(0) complex subunit 8	
 MT-ATP8	zebrafish	Q9MIY6	mt-atp8	Q9MIY6	4	28	ATP synthase F(0) complex subunit 8	
-MT-CO1	human	P00395	MT-CO1	P00395	21	226	Cytochrome c oxidase subunit 1 (EC 7.1.1.9) (Cytochrome c ox	
-MT-CO1	rattus-norvegicus	P05503	Mt-co1	P05503	10	137	Cytochrome c oxidase subunit 1	
-MT-CO1	zebrafish	Q9MIY8	mt-co1	Q9MIY8	10	109	Cytochrome c oxidase subunit 1	
-MT-CO2	human	P00403	MT-CO2	P00403	45	394	Cytochrome c oxidase subunit 2 (EC 7.1.1.9) (Cytochrome c ox	
-MT-CO2	rattus-norvegicus	P00406	Mt-co2	P00406	9	180	Cytochrome c oxidase subunit 2	
-MT-CO2	zebrafish	Q9MIY7	mt-co2	Q9MIY7	7	127	Cytochrome c oxidase subunit 2	
-MT-CO3	human	P00414	MT-CO3	P00414	19	170	Cytochrome c oxidase subunit 3 (EC 7.1.1.9) (Cytochrome c ox	
-MT-CO3	mus-musculus	P00416	mt-Co3	P00416	12	127	Cytochrome c oxidase subunit 3	
-MT-CO3	rattus-norvegicus	P05505	Mt-co3	P05505	15	149	Cytochrome c oxidase subunit 3	
-MT-CO3	zebrafish	Q9MIY4	mt-co3	Q9MIY4	10	105	Cytochrome c oxidase subunit 3	
+MT-CO1	human	P00395	MT-CO1	P00395	28	231	Cytochrome c oxidase subunit 1 (EC 7.1.1.9) (Cytochrome c ox	
+MT-CO1	pan-troglodytes	Q9T9W1	MT-CO1	Q9T9W1	17	17	Cytochrome c oxidase subunit 1	
+MT-CO1	rattus-norvegicus	P05503	Mt-co1	P05503	22	143	Cytochrome c oxidase subunit 1	
+MT-CO1	xenopus-laevis	P00398	mt-co1	P00398	15	15	Cytochrome c oxidase subunit 1	
+MT-CO1	zebrafish	Q9MIY8	mt-co1	Q9MIY8	21	116	Cytochrome c oxidase subunit 1	
+MT-CO2	human	P00403	MT-CO2	P00403	49	398	Cytochrome c oxidase subunit 2 (EC 7.1.1.9) (Cytochrome c ox	
+MT-CO2	pan-troglodytes	P50690	MT-CO2	P50690	17	17	Cytochrome c oxidase subunit 2	
+MT-CO2	rattus-norvegicus	P00406	Mt-co2	P00406	20	189	Cytochrome c oxidase subunit 2	
+MT-CO2	xenopus-laevis	P00407	mt-co2	P00407	13	14	Cytochrome c oxidase subunit 2	
+MT-CO2	zebrafish	Q9MIY7	mt-co2	Q9MIY7	17	136	Cytochrome c oxidase subunit 2	
+MT-CO3	human	P00414	MT-CO3	P00414	30	181	Cytochrome c oxidase subunit 3 (EC 7.1.1.9) (Cytochrome c ox	
+MT-CO3	mus-musculus	P00416	mt-Co3	P00416	24	138	Cytochrome c oxidase subunit 3	
+MT-CO3	pan-troglodytes	Q9T9V9	MT-CO3	Q9T9V9	20	23	Cytochrome c oxidase subunit 3	
+MT-CO3	rattus-norvegicus	P05505	Mt-co3	P05505	23	157	Cytochrome c oxidase subunit 3	
+MT-CO3	xenopus-laevis	P00419	mt-co3	P00419	14	14	Cytochrome c oxidase subunit 3	
+MT-CO3	zebrafish	Q9MIY4	mt-co3	Q9MIY4	18	114	Cytochrome c oxidase subunit 3	
 MT-CYB	arabidopsis-thaliana	P42792	MT-CYB	P42792	24	163	Cytochrome b	
-MT-CYB	human	P00156	MT-CYB	P00156	19	237	Cytochrome b (Complex III subunit 3) (Complex III subunit II	
-MT-CYB	mus-musculus	P00158	Mt-Cyb	P00158	13	144	Cytochrome b	
+MT-CYB	human	P00156	MT-CYB	P00156	33	250	Cytochrome b (Complex III subunit 3) (Complex III subunit II	
+MT-CYB	mus-musculus	P00158	Mt-Cyb	P00158	26	155	Cytochrome b	
 MT-CYB	oryza-sativa-subsp-japonica	P0C524	MT-CYB	P0C524	25	240	Cytochrome b	
-MT-CYB	rattus-norvegicus	P00159	Mt-cyb	P00159	10	184	Cytochrome b	
-MT-CYB	zebrafish	Q9MIX8	mt-cyb	Q9MIX8	8	292	Cytochrome b	
+MT-CYB	pan-troglodytes	Q9T9V5	MT-CYB	Q9T9V5	20	20	Cytochrome b	
+MT-CYB	rattus-norvegicus	P00159	Mt-cyb	P00159	24	197	Cytochrome b	
+MT-CYB	xenopus-laevis	P00160	mt-cyb	P00160	12	13	Cytochrome b	
+MT-CYB	zebrafish	Q9MIX8	mt-cyb	Q9MIX8	15	301	Cytochrome b	
 MT-GRPE	human	Q8TAA5	GRPEL2	Q8TAA5	8	104	GrpE protein homolog 2, mitochondrial (Mt-GrpE#2) (Nucleotid	w
 MT-GRPE	human	Q9HAV7	GRPEL1	Q9HAV7	14	269	GrpE protein homolog 1, mitochondrial (HMGE) (Mt-GrpE#1) (Nu	w
-MT-HSP70	human	P38646	HSPA9	P38646	85	794	Stress-70 protein, mitochondrial (mt-HSP70) (EC 3.6.4.10) (7	w
-MT-HSP70	human	P38646	HSPA9	P38646	85	794	Stress-70 protein, mitochondrial (mt-HSP70) (EC 3.6.4.10) (7	w
+MT-HSP70	human	P38646	HSPA9	P38646	90	799	Stress-70 protein, mitochondrial (mt-HSP70) (EC 3.6.4.10) (7	w
+MT-HSP70	human	P38646	HSPA9	P38646	90	799	Stress-70 protein, mitochondrial (mt-HSP70) (EC 3.6.4.10) (7	w
 MT-IA	human	P04731	MT1A	P04731	8	63	Metallothionein-1A (MT-1A) (Metallothionein-IA) (MT-IA)	w
 MT-IB	human	P07438	MT1B	P07438	10	38	Metallothionein-1B (MT-1B) (Metallothionein-IB) (MT-IB)	w
 MT-IE	human	P04732	MT1E	P04732	12	26	Metallothionein-1E (MT-1E) (Metallothionein-IE) (MT-IE)	w
@@ -63,30 +74,44 @@ MT-MMP	human	P51512	MMP16	P51512	5	111	Matrix metalloproteinase-16 (MMP-16) (EC 
 MT-MMP	human	Q9NPA2	MMP25	Q9NPA2	9	83	Matrix metalloproteinase-25 (MMP-25) (EC 3.4.24.-) (Leukolys	w
 MT-MMP	human	Q9ULZ9	MMP17	Q9ULZ9	3	49	Matrix metalloproteinase-17 (MMP-17) (EC 3.4.24.-) (Membrane	w
 MT-MMP	human	Q9Y5R2	MMP24	Q9Y5R2	6	57	Matrix metalloproteinase-24 (MMP-24) (EC 3.4.24.-) (Membrane	w
-MT-ND1	human	P03886	MT-ND1	P03886	22	389	NADH-ubiquinone oxidoreductase chain 1 (EC 7.1.1.2) (NADH de	
-MT-ND1	rattus-norvegicus	P03889	Mt-nd1	P03889	15	457	NADH-ubiquinone oxidoreductase chain 1	
-MT-ND1	zebrafish	Q9MIZ0	mt-nd1	Q9MIZ0	14	393	NADH-ubiquinone oxidoreductase chain 1	
-MT-ND2	human	P03891	MT-ND2	P03891	21	220	NADH-ubiquinone oxidoreductase chain 2 (EC 7.1.1.2) (NADH de	
-MT-ND2	mus-musculus	P03893	mt-Nd2	P03893	7	154	NADH-ubiquinone oxidoreductase chain 2	
-MT-ND2	rattus-norvegicus	P11662	Mt-nd2	P11662	7	223	NADH-ubiquinone oxidoreductase chain 2	
-MT-ND2	zebrafish	Q9MIY9	mt-nd2	Q9MIY9	5	239	NADH-ubiquinone oxidoreductase chain 2	
+MT-ND1	human	P03886	MT-ND1	P03886	26	392	NADH-ubiquinone oxidoreductase chain 1 (EC 7.1.1.2) (NADH de	
+MT-ND1	pan-troglodytes	Q9T9W3	MT-ND1	Q9T9W3	15	15	NADH-ubiquinone oxidoreductase chain 1	
+MT-ND1	rattus-norvegicus	P03889	Mt-nd1	P03889	25	464	NADH-ubiquinone oxidoreductase chain 1	
+MT-ND1	xenopus-laevis	P03890	mt-nd1	P03890	11	11	NADH-ubiquinone oxidoreductase chain 1	
+MT-ND1	zebrafish	Q9MIZ0	mt-nd1	Q9MIZ0	25	401	NADH-ubiquinone oxidoreductase chain 1	
+MT-ND2	human	P03891	MT-ND2	P03891	26	223	NADH-ubiquinone oxidoreductase chain 2 (EC 7.1.1.2) (NADH de	
+MT-ND2	mus-musculus	P03893	mt-Nd2	P03893	12	156	NADH-ubiquinone oxidoreductase chain 2	
+MT-ND2	pan-troglodytes	A0A0M3HES0	MT-ND2	A0A0M3HES0	12	12	NADH-ubiquinone oxidoreductase chain 2	
+MT-ND2	rattus-norvegicus	P11662	Mt-nd2	P11662	14	226	NADH-ubiquinone oxidoreductase chain 2	
+MT-ND2	xenopus-laevis	P03894	mt-nd2	P03894	9	9	NADH-ubiquinone oxidoreductase chain 2	
+MT-ND2	zebrafish	Q9MIY9	mt-nd2	Q9MIY9	11	242	NADH-ubiquinone oxidoreductase chain 2	
 MT-ND3	human	P03897	MT-ND3	P03897	11	309	NADH-ubiquinone oxidoreductase chain 3 (EC 7.1.1.2) (NADH de	
 MT-ND3	mus-musculus	P03899	mt-Nd3	P03899	5	189	NADH-ubiquinone oxidoreductase chain 3	
+MT-ND3	pan-troglodytes	Q9T9V8	MT-ND3	Q9T9V8	1	1	NADH-ubiquinone oxidoreductase chain 3	
 MT-ND3	rattus-norvegicus	P05506	Mt-nd3	P05506	4	280	NADH-ubiquinone oxidoreductase chain 3	
+MT-ND3	xenopus-laevis	P03900	mt-nd3	P03900	1	1	NADH-ubiquinone oxidoreductase chain 3	
 MT-ND3	zebrafish	Q9MIY3	mt-nd3	Q9MIY3	2	297	NADH-ubiquinone oxidoreductase chain 3	
-MT-ND4	human	P03905	MT-ND4	P03905	23	323	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	
-MT-ND4	rattus-norvegicus	P05508	Mt-nd4	P05508	20	303	NADH-ubiquinone oxidoreductase chain 4	
-MT-ND4	zebrafish	Q9MIY1	mt-nd4	Q9MIY1	9	267	NADH-ubiquinone oxidoreductase chain 4	
-MT-ND4L	human	P03901	MT-ND4L	P03901	11	232	NADH-ubiquinone oxidoreductase chain 4L (EC 7.1.1.2) (NADH d	
-MT-ND4L	rattus-norvegicus	P05507	Mt-nd4l	P05507	9	157	NADH-ubiquinone oxidoreductase chain 4L	
-MT-ND4L	zebrafish	Q9MIY2	mt-nd4l	Q9MIY2	9	228	NADH-ubiquinone oxidoreductase chain 4L	
-MT-ND5	human	P03915	MT-ND5	P03915	19	222	NADH-ubiquinone oxidoreductase chain 5 (EC 7.1.1.2) (NADH de	
-MT-ND5	rattus-norvegicus	P11661	Mt-nd5	P11661	22	216	NADH-ubiquinone oxidoreductase chain 5	
-MT-ND5	zebrafish	Q9MIY0	mt-nd5	Q9MIY0	18	240	NADH-ubiquinone oxidoreductase chain 5	
-MT-ND6	human	P03923	MT-ND6	P03923	6	176	NADH-ubiquinone oxidoreductase chain 6 (EC 7.1.1.2) (NADH de	
-MT-ND6	rattus-norvegicus	P03926	Mt-nd6	P03926	3	120	NADH-ubiquinone oxidoreductase chain 6	
+MT-ND4	human	P03905	MT-ND4	P03905	37	337	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	
+MT-ND4	pan-troglodytes	P03906	MT-ND4	P03906	22	22	NADH-ubiquinone oxidoreductase chain 4	
+MT-ND4	rattus-norvegicus	P05508	Mt-nd4	P05508	33	316	NADH-ubiquinone oxidoreductase chain 4	
+MT-ND4	xenopus-laevis	P03912	mt-nd4	P03912	14	15	NADH-ubiquinone oxidoreductase chain 4	
+MT-ND4	zebrafish	Q9MIY1	mt-nd4	Q9MIY1	20	277	NADH-ubiquinone oxidoreductase chain 4	
+MT-ND4L	human	P03901	MT-ND4L	P03901	14	235	NADH-ubiquinone oxidoreductase chain 4L (EC 7.1.1.2) (NADH d	
+MT-ND4L	pan-troglodytes	Q37809	MT-ND4L	Q37809	5	5	NADH-ubiquinone oxidoreductase chain 4L	
+MT-ND4L	rattus-norvegicus	P05507	Mt-nd4l	P05507	11	159	NADH-ubiquinone oxidoreductase chain 4L	
+MT-ND4L	xenopus-laevis	P03904	mt-nd4l	P03904	4	4	NADH-ubiquinone oxidoreductase chain 4L	
+MT-ND4L	zebrafish	Q9MIY2	mt-nd4l	Q9MIY2	10	229	NADH-ubiquinone oxidoreductase chain 4L	
+MT-ND5	human	P03915	MT-ND5	P03915	21	224	NADH-ubiquinone oxidoreductase chain 5 (EC 7.1.1.2) (NADH de	
+MT-ND5	pan-troglodytes	Q35648	MT-ND5	Q35648	11	11	NADH-ubiquinone oxidoreductase chain 5	
+MT-ND5	rattus-norvegicus	P11661	Mt-nd5	P11661	31	223	NADH-ubiquinone oxidoreductase chain 5	
+MT-ND5	xenopus-laevis	P03922	mt-nd5	P03922	9	9	NADH-ubiquinone oxidoreductase chain 5	
+MT-ND5	zebrafish	Q9MIY0	mt-nd5	Q9MIY0	24	243	NADH-ubiquinone oxidoreductase chain 5	
+MT-ND6	human	P03923	MT-ND6	P03923	7	176	NADH-ubiquinone oxidoreductase chain 6 (EC 7.1.1.2) (NADH de	
+MT-ND6	pan-troglodytes	Q9T9V6	MT-ND6	Q9T9V6	3	3	NADH-ubiquinone oxidoreductase chain 6	
+MT-ND6	rattus-norvegicus	P03926	Mt-nd6	P03926	4	120	NADH-ubiquinone oxidoreductase chain 6	
+MT-ND6	xenopus-laevis	P03927	mt-nd6	P03927	3	3	NADH-ubiquinone oxidoreductase chain 6	
 MT-ND6	zebrafish	Q9MIX9	mt-nd6	Q9MIX9	5	96	NADH-ubiquinone oxidoreductase chain 6	
-MT-PK	human	Q09013	DMPK	Q09013	432	1309	Myotonin-protein kinase (MT-PK) (EC 2.7.11.1) (DM-kinase) (D	w
+MT-PK	human	Q09013	DMPK	Q09013	434	1311	Myotonin-protein kinase (MT-PK) (EC 2.7.11.1) (DM-kinase) (D	w
 MT-RNR1	human	A0A0C5B5G6	MT-RNR1	A0A0C5B5G6	109	324	Mitochondrial-derived peptide MOTS-c (Mitochondrial open rea	
 MT-RNR2	human	Q8IVG9	MT-RNR2	Q8IVG9	5	36	Humanin (Humanin mitochondrial) (HNM)	
 MT-RNR2-LIKE	human	P0CJ68	MTRNR2L1	P0CJ68	3	20	Humanin-like 1 (HN1) (MT-RNR2-like protein 1)	w
@@ -102,11 +127,11 @@ MT-RNR2-LIKE	human	P0CJ77	MTRNR2L10	P0CJ77	3	33	Humanin-like 10 (HN10) (MT-RNR2-
 MT-RNR2-LIKE	human	P0DMP1	MTRNR2L12	P0DMP1	0	9	Humanin-like 12 (HN12) (MT-RNR2-like protein 12)	w
 MT-RNR2-LIKE	human	S4R3P1	MTRNR2L13	S4R3P1	3	18	Humanin-like 13 (HN13) (MT-RNR2-like protein 13)	w
 MT-RNR2-LIKE	human	S4R3Y5	MTRNR2L11	S4R3Y5	0	15	Humanin-like 11 (HN11) (MT-RNR2-like protein 11)	w
-MT-RPS12	human	O15235	MRPS12	O15235	30	733	Small ribosomal subunit protein uS12m (28S ribosomal protein	w
+MT-RPS12	human	O15235	MRPS12	O15235	31	734	Small ribosomal subunit protein uS12m (28S ribosomal protein	w
 MT-SP1	human	Q9Y5Y6	ST14	Q9Y5Y6	33	275	Suppressor of tumorigenicity 14 protein (EC 3.4.21.109) (Mat	w
 MT-SP2	human	Q9NRS4	TMPRSS4	Q9NRS4	45	472	Transmembrane protease serine 4 (EC 3.4.21.-) (Channel-activ	w
 MT-SSB	fly	FBgn0010438	mtSSB	P54622	1	53	Single-stranded DNA-binding protein, mitochondrial (Dm mtSSB	w
 MT-SSB	human	Q04837	SSBP1	Q04837	19	585	Single-stranded DNA-binding protein, mitochondrial (Mt-SSB) 	w
 MT-TK	human	O00142	TK2	O00142	9	137	Thymidine kinase 2, mitochondrial (EC 2.7.1.21) (2'-deoxyuri	w
-MT-TRNA-2-ME	human	Q96SZ6	CDK5RAP1	Q96SZ6	10	144	Mitochondrial tRNA methylthiotransferase CDK5RAP1 (EC 2.8.4.	w
-MT-TRX	human	Q99757	TXN2	Q99757	54	268	Thioredoxin, mitochondrial (MTRX) (Mt-Trx) (Thioredoxin-2)	w
+MT-TRNA-2-ME	human	Q96SZ6	CDK5RAP1	Q96SZ6	14	148	Mitochondrial tRNA methylthiotransferase CDK5RAP1 (EC 2.8.4.	w
+MT-TRX	human	Q99757	TXN2	Q99757	66	280	Thioredoxin, mitochondrial (MTRX) (Mt-Trx) (Thioredoxin-2)	w

@@ -1,7 +1,7 @@
 P00015	mus-musculus	P00015	Cyct	P00015	2	114	Cytochrome c, testis-specific	
-P00044	yeast	P00044	CYC1	P00044	3	73	Cytochrome c isoform 1	
+P00044	yeast	P00044	CYC1	P00044	8	79	Cytochrome c isoform 1	
 P00045	yeast	P00045	CYC7	P00045	2	66	Cytochrome c isoform 2	
-P00046	schizosaccharomyces-pombe	P00046	cyc1	P00046	3	52	Cytochrome c	
+P00046	schizosaccharomyces-pombe	P00046	cyc1	P00046	5	54	Cytochrome c	
 P0007F06.20-1	oryza-sativa-subsp-japonica	A0A5S6R742	P0007F06.20-1	A0A5S6R742	6	21	polynucleotide adenylyltransferase	
 P00099	pseudomonas-aeruginosa	P00099	nirM	P00099	0	3	Cytochrome c-551	
 P0009G03.18-1	oryza-sativa-subsp-japonica	Q0JQM6	P0009G03.18-1	Q0JQM6	3	73	Os01g0151200 protein	
@@ -9,12 +9,13 @@ P00106	pseudomonas-aeruginosa	P00106	cc4	P00106	0	15	Cytochrome c4
 P0010B10.22	oryza-sativa-subsp-japonica	Q5ZCE7	P0010B10.22	Q5ZCE7	0	4	Os01g0780100 protein	
 P0010B10.33-1	oryza-sativa-subsp-japonica	B9ETC5	P0010B10.33-1	B9ETC5	0	1	Os01g0780800 protein	
 P00127	yeast	P00127	QCR6	P00127	1	49	Cytochrome b-c1 complex subunit 6, mitochondrial	
-P00128	yeast	P00128	QCR7	P00128	5	66	Cytochrome b-c1 complex subunit 7, mitochondrial	
+P00128	yeast	P00128	QCR7	P00128	6	66	Cytochrome b-c1 complex subunit 7, mitochondrial	
 P0013F10.23-2	oryza-sativa-subsp-japonica	Q5VRV5	P0013F10.23-2	Q5VRV5	5	73	Os01g0177100 protein	
 P0013G02.37-1	oryza-sativa-subsp-japonica	Q7F2M4	P0013G02.37-1	Q7F2M4	0	1	Esterase/lipase/thioesterase family protein-like	
-P00156	human	P00156	MT-CYB	P00156	19	237	Cytochrome b (Complex III subunit 3) (Complex III subunit II	
-P00158	mus-musculus	P00158	Mt-Cyb	P00158	13	144	Cytochrome b	
-P00159	rattus-norvegicus	P00159	Mt-cyb	P00159	10	184	Cytochrome b	
+P00156	human	P00156	MT-CYB	P00156	33	250	Cytochrome b (Complex III subunit 3) (Complex III subunit II	
+P00158	mus-musculus	P00158	Mt-Cyb	P00158	26	155	Cytochrome b	
+P00159	rattus-norvegicus	P00159	Mt-cyb	P00159	24	197	Cytochrome b	
+P00160	xenopus-laevis	P00160	mt-cyb	P00160	12	13	Cytochrome b	
 P00163	yeast	P00163	COB	P00163	9	70	Cytochrome b	
 P00167	human	P00167	CYB5A	P00167	44	335	Cytochrome b5 (Microsomal cytochrome b5 type A) (MCB5)	
 P00173	rattus-norvegicus	P00173	Cyb5a	P00173	6	47	Cytochrome b5	
@@ -47,35 +48,38 @@ P00359	yeast	P00359	TDH3	P00359	4	245	Glyceraldehyde-3-phosphate dehydrogenase 3
 P0035H10.18	oryza-sativa-subsp-japonica	Q9FP25	P0035H10.18	Q9FP25	4	20	Os01g0303000 protein	
 P00360	yeast	P00360	TDH1	P00360	3	127	Glyceraldehyde-3-phosphate dehydrogenase 1	
 P00363	escherichia-coli-83333	P00363	frdA	P00363	2	19	Fumarate reductase flavoprotein subunit	
-P00367	human	P00367	GLUD1	P00367	5	292	Glutamate dehydrogenase 1, mitochondrial (GDH 1) (EC 1.4.1.3	
+P00367	human	P00367	GLUD1	P00367	6	293	Glutamate dehydrogenase 1, mitochondrial (GDH 1) (EC 1.4.1.3	
 P00370	escherichia-coli-83333	P00370	gdhA	P00370	0	11	NADP-specific glutamate dehydrogenase	
 P00374	human	P00374	DHFR	P00374	6	192	Dihydrofolate reductase (EC 1.5.1.3)	
 P00375	mus-musculus	P00375	Dhfr	P00375	1	25	Dihydrofolate reductase	
-P00387	human	P00387	CYB5R3	P00387	16	336	NADH-cytochrome b5 reductase 3 (B5R) (Cytochrome b5 reductas	
+P00387	human	P00387	CYB5R3	P00387	20	342	NADH-cytochrome b5 reductase 3 (B5R) (Cytochrome b5 reductas	
 P00388	rattus-norvegicus	P00388	Por	P00388	4	36	NADPH--cytochrome P450 reductase	
-P00390	human	P00390	GSR	P00390	7	177	Glutathione reductase, mitochondrial (GR) (GRase) (EC 1.8.1.	
+P00390	human	P00390	GSR	P00390	9	179	Glutathione reductase, mitochondrial (GR) (GRase) (EC 1.8.1.	
 P00393	escherichia-coli-83333	P00393	ndh	P00393	0	17	Type II NADH:quinone oxidoreductase	
-P00395	human	P00395	MT-CO1	P00395	21	226	Cytochrome c oxidase subunit 1 (EC 7.1.1.9) (Cytochrome c ox	
-P00397	mus-musculus	P00397	Mtco1	P00397	7	136	Cytochrome c oxidase subunit 1	
-P00399	fly	FBgn0013674	mt:CoI	P00399	14	94	Cytochrome c oxidase subunit 1 (EC 7.1.1.9) (Cytochrome c ox	
-P00401	yeast	P00401	COX1	P00401	6	65	Cytochrome c oxidase subunit 1	
-P00403	human	P00403	MT-CO2	P00403	45	394	Cytochrome c oxidase subunit 2 (EC 7.1.1.9) (Cytochrome c ox	
-P00405	mus-musculus	P00405	Mtco2	P00405	13	143	Cytochrome c oxidase subunit 2	
-P00406	rattus-norvegicus	P00406	Mt-co2	P00406	9	180	Cytochrome c oxidase subunit 2	
-P00408	fly	FBgn0013675	mt:CoII	P00408	19	191	Cytochrome c oxidase subunit 2 (EC 7.1.1.9) (Cytochrome c ox	
-P00410	yeast	P00410	COX2	P00410	11	85	Cytochrome c oxidase subunit 2	
-P00414	human	P00414	MT-CO3	P00414	19	170	Cytochrome c oxidase subunit 3 (EC 7.1.1.9) (Cytochrome c ox	
-P00416	mus-musculus	P00416	mt-Co3	P00416	12	127	Cytochrome c oxidase subunit 3	
-P00417	fly	FBgn0013676	mt:CoIII	P00417	10	87	Cytochrome c oxidase subunit 3 (EC 7.1.1.9) (Cytochrome c ox	
-P00420	yeast	P00420	COX3	P00420	7	65	Cytochrome c oxidase subunit 3	
+P00395	human	P00395	MT-CO1	P00395	28	231	Cytochrome c oxidase subunit 1 (EC 7.1.1.9) (Cytochrome c ox	
+P00397	mus-musculus	P00397	Mtco1	P00397	21	142	Cytochrome c oxidase subunit 1	
+P00398	xenopus-laevis	P00398	mt-co1	P00398	15	15	Cytochrome c oxidase subunit 1	
+P00399	fly	FBgn0013674	mt:CoI	P00399	19	97	Cytochrome c oxidase subunit 1 (EC 7.1.1.9) (Cytochrome c ox	
+P00401	yeast	P00401	COX1	P00401	9	67	Cytochrome c oxidase subunit 1	
+P00403	human	P00403	MT-CO2	P00403	49	398	Cytochrome c oxidase subunit 2 (EC 7.1.1.9) (Cytochrome c ox	
+P00405	mus-musculus	P00405	Mtco2	P00405	24	152	Cytochrome c oxidase subunit 2	
+P00406	rattus-norvegicus	P00406	Mt-co2	P00406	20	189	Cytochrome c oxidase subunit 2	
+P00407	xenopus-laevis	P00407	mt-co2	P00407	13	14	Cytochrome c oxidase subunit 2	
+P00408	fly	FBgn0013675	mt:CoII	P00408	27	198	Cytochrome c oxidase subunit 2 (EC 7.1.1.9) (Cytochrome c ox	
+P00410	yeast	P00410	COX2	P00410	14	88	Cytochrome c oxidase subunit 2	
+P00414	human	P00414	MT-CO3	P00414	30	181	Cytochrome c oxidase subunit 3 (EC 7.1.1.9) (Cytochrome c ox	
+P00416	mus-musculus	P00416	mt-Co3	P00416	24	138	Cytochrome c oxidase subunit 3	
+P00417	fly	FBgn0013676	mt:CoIII	P00417	16	93	Cytochrome c oxidase subunit 3 (EC 7.1.1.9) (Cytochrome c ox	
+P00419	xenopus-laevis	P00419	mt-co3	P00419	14	14	Cytochrome c oxidase subunit 3	
+P00420	yeast	P00420	COX3	P00420	8	66	Cytochrome c oxidase subunit 3	
 P00424	yeast	P00424	COX5A	P00424	3	68	Cytochrome c oxidase subunit 5A, mitochondrial	
 P00425	yeast	P00425	COX5B	P00425	3	52	Cytochrome c oxidase subunit 5B, mitochondrial	
 P00427	yeast	P00427	COX6	P00427	4	68	Cytochrome c oxidase subunit 6, mitochondrial	
 P00431	yeast	P00431	CCP1	P00431	1	48	Cytochrome c peroxidase, mitochondrial	
 P00439	human	P00439	PAH	P00439	7	89	Phenylalanine-4-hydroxylase (PAH) (EC 1.14.16.1) (Phe-4-mono	
-P00441	human	P00441	SOD1	P00441	15	451	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	
-P00445	yeast	P00445	SOD1	P00445	2	60	Superoxide dismutase	
-P00447	yeast	P00447	SOD2	P00447	0	66	Superoxide dismutase	
+P00441	human	P00441	SOD1	P00441	22	458	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	
+P00445	yeast	P00445	SOD1	P00445	3	61	Superoxide dismutase	
+P00447	yeast	P00447	SOD2	P00447	3	69	Superoxide dismutase	
 P00448	escherichia-coli-83333	P00448	sodA	P00448	2	83	Superoxide dismutase	
 P0044F08.16	oryza-sativa-subsp-japonica	Q9AWU6	P0044F08.16	Q9AWU6	3	51	Os01g0125800 protein	
 P0044F08.8	oryza-sativa-subsp-japonica	Q9AWV2	P0044F08.8	Q9AWV2	0	1	RING-type E3 ubiquitin transferase	
@@ -91,8 +95,8 @@ P00492	human	P00492	HPRT1	P00492	26	526	Hypoxanthine-guanine phosphoribosyltrans
 P00493	mus-musculus	P00493	Hprt1	P00493	0	36	Hypoxanthine-guanine phosphoribosyltransferase	
 P00498	yeast	P00498	HIS1	P00498	0	14	ATP phosphoribosyltransferase	
 P00499	salmonella-typhimurium	P00499	hisG	P00499	0	1	ATP phosphoribosyltransferase	
-P00505	human	P00505	GOT2	P00505	9	209	Aspartate aminotransferase, mitochondrial (mAspAT) (EC 2.6.1	
-P00507	rattus-norvegicus	P00507	Got2	P00507	2	47	Aspartate aminotransferase, mitochondrial	
+P00505	human	P00505	GOT2	P00505	11	211	Aspartate aminotransferase, mitochondrial (mAspAT) (EC 2.6.1	
+P00507	rattus-norvegicus	P00507	Got2	P00507	6	51	Aspartate aminotransferase, mitochondrial	
 P00509	escherichia-coli-83333	P00509	aspC	P00509	1	16	Aspartate aminotransferase	
 P00519	human	P00519	ABL1	P00519	266	1787	Tyrosine-protein kinase ABL1 (EC 2.7.10.2) (Abelson murine l	
 P00520	mus-musculus	P00520	Abl1	P00520	19	104	Tyrosine-protein kinase ABL1	
@@ -161,10 +165,11 @@ P00813	human	P00813	ADA	P00813	7	145	Adenosine deaminase (EC 3.5.4.4) (Adenosine
 P00815	yeast	P00815	HIS4	P00815	0	19	Histidine biosynthesis trifunctional protein	
 P00817	yeast	P00817	IPP1	P00817	1	71	Inorganic pyrophosphatase	
 P00827	zea-mays	P00827	atpB	P00827	7	97	ATP synthase subunit beta, chloroplastic	
-P00830	yeast	P00830	ATP2	P00830	5	196	ATP synthase subunit beta, mitochondrial	
+P00830	yeast	P00830	ATP2	P00830	8	198	ATP synthase subunit beta, mitochondrial	
 P00835	zea-mays	P00835	atpE	P00835	3	79	ATP synthase epsilon chain, chloroplastic	
 P00846	human	P00846	MT-ATP6	P00846	9	129	ATP synthase F(0) complex subunit a (F-ATPase protein 6) (Pr	
 P00848	mus-musculus	P00848	Mtatp6	P00848	5	71	ATP synthase F(0) complex subunit a	
+P00849	xenopus-laevis	P00849	mt-atp6	P00849	1	1	ATP synthase subunit a	
 P00850	fly	FBgn0013672	mt:ATPase6	P00850	6	64	ATP synthase subunit a (F-ATPase protein 6)	
 P00854	yeast	P00854	ATP6	P00854	3	49	ATP synthase subunit a	
 P00856	yeast	P00856	ATP8	P00856	3	31	ATP synthase protein 8	

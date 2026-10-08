@@ -73,7 +73,7 @@ O76454	fly	FBgn0024841	Pcd	O76454	1	21	Pterin-4-alpha-carbinolamine dehydratase 
 O76460	fly	FBgn0002989	okr	O76460	2	47	DNA repair and recombination protein RAD54-like (DmRAD54) (E	
 O76462	fly	FBgn0025109	Bem46	O76462	2	12	Bem46 (EC 3.1.2.22)	
 O76463	worm	O76463	nft-1	O76463	0	20	Nitrilase and fragile histidine triad fusion protein NitFhit	
-O76464	fly	FBgn0024945	NitFhit	O76464	0	16	Nitrilase and fragile histidine triad fusion protein NitFhit	
+O76464	fly	FBgn0024945	NitFhit	O76464	1	17	Nitrilase and fragile histidine triad fusion protein NitFhit	
 O76511	fly	FBgn0024920	Ts	O76511	2	61	Thymidylate synthase (TS) (TSase) (EC 2.1.1.45)	
 O76512	worm	O76512	smg-2	O76512	3	77	Regulator of nonsense transcripts 1	
 O76513	fly	FBgn0022936	CycH	O76513	34	515	Cyclin-H	
@@ -92,6 +92,7 @@ O76584	worm	O76584	gpa-11	O76584	4	30	Guanine nucleotide-binding protein alpha-1
 O76587	worm	O76587	CELE_F16G10.5	O76587	0	4	PDZ domain-containing protein	
 O76590	worm	O76590	CELE_F16G10.2	O76590	0	3	DUF281 domain-containing protein	
 O76606	worm	O76606	mrpl-28	O76606	9	116	Large ribosomal subunit protein bL28m	
+O76606_CAEEL	worm	O76606	mrpl-28	O76606	9	116		
 O76612	worm	O76612	bath-47	O76612	0	12	BTB and MATH domain-containing protein 47	
 O76615	worm	O76615	spe-47	O76615	1	3	Major sperm protein	
 O76616	worm	O76616	pid-3	O76616	2	13	Protein pid-3	
@@ -123,7 +124,7 @@ O76722	worm	O76722	nlp-47	O76722	0	4	Neuropeptide-Like Protein
 O76725	worm	O76725	ctsa-4.2	O76725	0	3	Carboxypeptidase	
 O76734	dictyostelium-discoideum	O76734	tupA	O76734	0	3	General transcriptional corepressor tupA	
 O76735	worm	O76735	sng-1	O76735	0	3	Synaptogyrin homolog 1	
-O76740	dictyostelium-discoideum	O76740	coxA	O76740	0	8	Cytochrome c oxidase assembly protein	
+O76740	dictyostelium-discoideum	O76740	coxA	O76740	1	9	Cytochrome c oxidase assembly protein	
 O76742	fly	FBgn0015795	Rab7	O76742	27	204	Ras-related protein Rab7 (DRab7) (EC 3.6.5.2) (Small monomer	
 O76743	worm	O76743	glh-4	O76743	1	22	ATP-dependent RNA helicase glh-4	
 O76752	fly	FBgn0014032	Sptr	O76752	1	6	Sepiapterin reductase (EC 1.1.1.153)	
@@ -145,7 +146,8 @@ O76879	fly	FBgn0000092	dyw	O76879	39	244	Circadian clock-controlled protein dayw
 O76888	fly	FBgn0025393	CG14795	O76888	51	244	Uncharacterized protein	
 O76892	fly	FBgn0025391	Scgdelta	O76892	66	2395	EG:4F1.1 protein (Gamma/delta-sarcoglycan-like protein SCG-G	
 O76894	fly	FBgn0025390	Mur2B	O76894	0	3	EG:56G7.1 protein (Mucin related 2B, isoform A) (Mucin relat	
-O76895	fly	FBgn0023535	Arg	O76895	1	84	Arginase (EC 3.5.3.1)	
+O76895	fly	FBgn0023535	Arg	O76895	1	85	Arginase (EC 3.5.3.1)	
+O76895_DROME	fly	FBgn0023535	Arg	O76895	1	85		
 O76896	fly	FBgn0024983	CG4293	O76896	1	14	EG:65F1.1 protein (LD35174p)	
 O76899	fly	FBgn0013720	pck	O76899	0	6	EG:80H7.2 protein (Pickel, isoform A) (Pickel, isoform C)	
 O76901	fly	FBgn0025382	Rab27	O76901	9	93	EG:80H7.4 protein (LP12150p) (Rab27, isoform B)	

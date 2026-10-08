@@ -388,11 +388,12 @@ PARAPLEGIA	human	Q96JI7	SPG11	Q96JI7	7	55	Spatacsin (Colorectal carcinoma-associ
 PARAPLEGIA	human	Q9H902	REEP1	Q9H902	9	69	Receptor expression-enhancing protein 1 (Spastic paraplegia 	w
 PARAPLEGIA	human	Q9NZD8	SPG21	Q9NZD8	30	261	Maspardin (Acid cluster protein 33) (Spastic paraplegia 21 a	w
 PARAPLEGIA	human	Q9UBP0	SPAST	Q9UBP0	19	197	Spastin (EC 5.6.1.1) (Spastic paraplegia 4 protein)	w
-PARAPLEGIA	human	Q9UQ90	SPG7	Q9UQ90	17	284	Mitochondrial inner membrane m-AAA protease component parapl	w
+PARAPLEGIA	human	Q9UQ90	SPG7	Q9UQ90	18	285	Mitochondrial inner membrane m-AAA protease component parapl	w
 PARAPLEGIN	fly	FBgn0024992	Spg7	Q9W4W8	3	90	Paraplegin, isoform A (Paraplegin, isoform C (EC 3.4.24.-, E	w
-PARAPLEGIN	human	Q9UQ90	SPG7	Q9UQ90	17	284	Mitochondrial inner membrane m-AAA protease component parapl	w
+PARAPLEGIN	human	Q9UQ90	SPG7	Q9UQ90	18	285	Mitochondrial inner membrane m-AAA protease component parapl	w
+PARAPLEGIN	zebrafish	A0A8M1QHU6	spg7	A0A8M1QHU6	2	2	paraplegin isoform X1	w
 PARAPLEGIN	zebrafish	E7F2S4	spg7	E7F2S4	4	119	Mitochondrial inner membrane m-AAA protease component parapl	w
-PARAPLEGIN-LIKE	human	Q9Y4W6	AFG3L2	Q9Y4W6	20	432	Mitochondrial inner membrane m-AAA protease component AFG3L2	w
+PARAPLEGIN-LIKE	human	Q9Y4W6	AFG3L2	Q9Y4W6	21	433	Mitochondrial inner membrane m-AAA protease component AFG3L2	w
 PARAPROTEIN	human	Q9UJZ1	STOML2	Q9UJZ1	12	255	Stomatin-like protein 2, mitochondrial (SLP-2) (EPB72-like p	w
 PARASPECKLE	human	Q8WXF1	PSPC1	Q8WXF1	40	819	Paraspeckle component 1 (Paraspeckle protein 1)	w
 PARASPECKLE	human	Q96PK6	RBM14	Q96PK6	43	582	RNA-binding protein 14 (Paraspeckle protein 2) (PSP2) (RNA-b	w
@@ -492,11 +493,14 @@ PARK	fly	FBgn0041100	park	Q7KTX7	26	198	E3 ubiquitin-protein ligase parkin (EC 2
 PARK1	human	P37840	SNCA	P37840	171	1506		
 PARK2	human	O60260	PRKN	O60260	90	3401		
 PARK2	human	Q96M98	PACRG	Q96M98	14	181	Parkin coregulated gene protein (Molecular chaperone/chapero	w
-PARK7	human	Q99497	PARK7	Q99497	8	515	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	
-PARK7	mus-musculus	Q99LX0	Park7	Q99LX0	0	121	Parkinson disease protein 7 homolog	
-PARK7	rattus-norvegicus	O88767	Park7	O88767	0	168	Parkinson disease protein 7 homolog	
-PARK7	zebrafish	Q5XJ36	park7	Q5XJ36	0	108	Parkinson disease protein 7 homolog	
-PARK7_HUMAN	human	Q99497	PARK7	Q99497	8	515		
+PARK7	human	Q99497	PARK7	Q99497	12	519	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	
+PARK7	mus-musculus	Q99LX0	Park7	Q99LX0	3	125	Parkinson disease protein 7 homolog	
+PARK7	pan-troglodytes	A0A2I3SNT8	PARK7	A0A2I3SNT8	4	5	protein deglycase	
+PARK7	rattus-norvegicus	O88767	Park7	O88767	3	173	Parkinson disease protein 7 homolog	
+PARK7	zebrafish	Q5XJ36	park7	Q5XJ36	2	111	Parkinson disease protein 7 homolog	
+PARK7.L	xenopus-laevis	Q6NTU4	park7.L	Q6NTU4	2	2	protein deglycase	
+PARK7_DANRE	zebrafish	Q5XJ36	park7	Q5XJ36	2	111		
+PARK7_HUMAN	human	Q99497	PARK7	Q99497	12	519		
 PARK8	human	Q5S007	LRRK2	Q5S007	3	431		
 PARK8-RELATED	worm	Q9TZM3	lrk-1	Q9TZM3	0	2	Leucine-rich repeat serine/threonine-protein kinase 1 (EC 2.	w
 PARK9	human	Q9NQ11	ATP13A2	Q9NQ11	3	137		
@@ -516,15 +520,16 @@ PARKIN-INTERACTING	human	Q6NUN9	ZNF746	Q6NUN9	44	328	Zinc finger protein 746 (Pa
 PARKIN-LIKE	human	Q8IWT3	CUL9	Q8IWT3	20	281	Cullin-9 (CUL-9) (UbcH7-associated protein 1) (p53-associate	w
 PARKINSON	human	O60260	PRKN	O60260	90	3401	E3 ubiquitin-protein ligase parkin (Parkin) (EC 2.3.2.31) (P	w
 PARKINSON	human	Q8NB37	GATD1	Q8NB37	11	106	Glutamine amidotransferase-like class 1 domain-containing pr	w
-PARKINSON	human	Q99497	PARK7	Q99497	8	515	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
-PARKINSON	zebrafish	Q5XJ36	park7	Q5XJ36	0	108	Parkinson disease protein 7 homolog	w
-PARKINSONISM-ASSOCIATED	human	Q99497	PARK7	Q99497	8	515	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
+PARKINSON	human	Q99497	PARK7	Q99497	12	519	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
+PARKINSON	zebrafish	Q5XJ36	park7	Q5XJ36	2	111	Parkinson disease protein 7 homolog	w
+PARKINSONISM-ASSOCIATED	human	Q99497	PARK7	Q99497	12	519	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
 PARL	fly	FBgn0033672	rho-7	A1Z8R8	2	15	Presenilins-associated rhomboid-like protein, mitochondrial 	w
-PARL	human	Q9H300	PARL	Q9H300	12	221	Presenilin-associated rhomboid-like protein, mitochondrial (	
-PARL	mus-musculus	Q5XJY4	Parl	Q5XJY4	1	10	Presenilin-associated rhomboid-like protein, mitochondrial	
-PARL	rattus-norvegicus	Q3B8P0	Parl	Q3B8P0	0	9	Presenilin-associated rhomboid-like protein, mitochondrial	
+PARL	human	Q9H300	PARL	Q9H300	13	222	Presenilin-associated rhomboid-like protein, mitochondrial (	
+PARL	mus-musculus	Q5XJY4	Parl	Q5XJY4	2	11	Presenilin-associated rhomboid-like protein, mitochondrial	
+PARL	rattus-norvegicus	Q3B8P0	Parl	Q3B8P0	1	10	Presenilin-associated rhomboid-like protein, mitochondrial	
+PARL.L	xenopus-laevis	A0A1L8HEJ5	parl.L	A0A1L8HEJ5	1	1	presenilins-associated rhomboid-like protein, mitochondrial	
 PARLA	zebrafish	Q58EK4	parla	Q58EK4	0	11	Presenilin-associated rhomboid-like protein A, mitochondrial	
-PARL_HUMAN	human	Q9H300	PARL	Q9H300	12	221		
+PARL_HUMAN	human	Q9H300	PARL	Q9H300	13	222		
 PARM-1	human	Q6UWI2	PARM1	Q6UWI2	8	63	Prostate androgen-regulated mucin-like protein 1 (PARM-1)	w
 PARM1	human	Q6UWI2	PARM1	Q6UWI2	8	63	Prostate androgen-regulated mucin-like protein 1 (PARM-1)	
 PARM1	rattus-norvegicus	Q6P9X9	Parm1	Q6P9X9	0	3	Prostate androgen-regulated mucin-like protein 1 homolog	
@@ -545,7 +550,7 @@ PAROTID	human	P02810	PRH1	P02810	20	320	Salivary acidic proline-rich phosphoprot
 PAROTID	human	P10163	PRB4	P10163	3	58	Basic salivary proline-rich protein 4 (Salivary proline-rich	w
 PAROTID	human	Q04118	PRB3	Q04118	2	61	Basic salivary proline-rich protein 3 (Parotid salivary glyc	w
 PAROTID	human	Q96DR5	BPIFA2	Q96DR5	5	70	BPI fold-containing family A member 2 (Parotid secretory pro	w
-PAROXYSMAL	human	Q8N490	PNKD	Q8N490	15	167	Probable thioesterase PNKD (EC 3.1.2.-) (Myofibrillogenesis 	w
+PAROXYSMAL	human	Q8N490	PNKD	Q8N490	23	175	Probable thioesterase PNKD (EC 3.1.2.-) (Myofibrillogenesis 	w
 PARP	fly	FBgn0010247	Parp1	P35875	10	453	Poly [ADP-ribose] polymerase (PARP) (EC 2.4.2.30) (NAD(+) AD	w
 PARP	fly	FBgn0010247	Parp1	P35875	10	453	Poly [ADP-ribose] polymerase (PARP) (EC 2.4.2.30) (NAD(+) AD	w
 PARP	fly	FBgn0027508	Tnks	A0A0B4KI19	4	28	Poly [ADP-ribose] polymerase (PARP) (EC 2.4.2.-)	w
@@ -640,10 +645,12 @@ PARR	pseudomonas-aeruginosa	Q9I2U3	parR	Q9I2U3	7	75	Two-component response regul
 PARS	human	P07814	EPRS1	P07814	9	439		
 PARS	pseudomonas-aeruginosa	Q9I2U4	parS	Q9I2U4	7	79	histidine kinase	
 PARS-1	worm	Q22620	pars-1	Q22620	1	50	proline--tRNA ligase	
-PARS-2	worm	O45869	pars-2	O45869	2	34	Probable proline--tRNA ligase, mitochondrial	
-PARS2	human	Q7L3T8	PARS2	Q7L3T8	5	114	Probable proline--tRNA ligase, mitochondrial (EC 6.1.1.15) (	
-PARS2	mus-musculus	Q8CFI5	Pars2	Q8CFI5	1	39	Probable proline--tRNA ligase, mitochondrial	
-PARS2	rattus-norvegicus	Q5M7W7	Pars2	Q5M7W7	0	30	Probable proline--tRNA ligase, mitochondrial	
+PARS-2	worm	O45869	pars-2	O45869	3	35	Probable proline--tRNA ligase, mitochondrial	
+PARS2	human	Q7L3T8	PARS2	Q7L3T8	6	115	Probable proline--tRNA ligase, mitochondrial (EC 6.1.1.15) (	
+PARS2	mus-musculus	Q8CFI5	Pars2	Q8CFI5	4	42	Probable proline--tRNA ligase, mitochondrial	
+PARS2	pan-troglodytes	H2PZ38	PARS2	H2PZ38	3	3	proline--tRNA ligase	
+PARS2	rattus-norvegicus	Q5M7W7	Pars2	Q5M7W7	3	33	Probable proline--tRNA ligase, mitochondrial	
+PARS2.L	xenopus-laevis	Q7ZXS4	pars2.L	Q7ZXS4	1	1	proline--tRNA ligase	
 PART	human	P00748	F12	P00748	63	545	Coagulation factor XII (EC 3.4.21.38) (Hageman factor) (HAF)	w
 PART	human	Q92954	PRG4	Q92954	14	194	Proteoglycan 4 (Lubricin) (Megakaryocyte-stimulating factor)	w
 PART	human	Q9BZE9	ASPSCR1	Q9BZE9	9	120	Tether containing UBX domain for GLUT4 (Alveolar soft part s	w

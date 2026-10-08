@@ -50,11 +50,11 @@ PEPB	shigella-dysenteriae-serotype-1	Q32D41	pepB	Q32D41	0	6	Peptidase B
 PEPC17	glycine-max	I1LCU6	PEPC17	I1LCU6	0	6	phosphoenolpyruvate carboxylase	
 PEPC4	glycine-max	Q6Q2Z8	PEPC4	Q6Q2Z8	0	6	phosphoenolpyruvate carboxylase	
 PEPCK-C	human	P35558	PCK1	P35558	7	232	Phosphoenolpyruvate carboxykinase, cytosolic [GTP] (PEPCK-C)	w
-PEPCK-M	human	Q16822	PCK2	Q16822	8	137	Phosphoenolpyruvate carboxykinase [GTP], mitochondrial (PEPC	w
-PEPCK1	fly	FBgn0003067	Pepck1	P20007	2	102	Phosphoenolpyruvate carboxykinase [GTP] (EC 4.1.1.32) (Phosp	
+PEPCK-M	human	Q16822	PCK2	Q16822	12	141	Phosphoenolpyruvate carboxykinase [GTP], mitochondrial (PEPC	w
+PEPCK1	fly	FBgn0003067	Pepck1	P20007	3	103	Phosphoenolpyruvate carboxykinase [GTP] (EC 4.1.1.32) (Phosp	
 PEPCK1	human	P35558	PCK1	P35558	7	232		
 PEPCK2	fly	FBgn0034356	Pepck2	Q7JXB5	3	100	phosphoenolpyruvate carboxykinase (GTP) (EC 4.1.1.32)	
-PEPCK2	human	Q16822	PCK2	Q16822	8	137		
+PEPCK2	human	Q16822	PCK2	Q16822	12	141		
 PEPC_HUMAN	human	P20142	PGC	P20142	1	40		
 PEPD	dictyostelium-discoideum	Q55E60	pepd	Q55E60	0	8	Xaa-Pro dipeptidase	
 PEPD	escherichia-coli-83333	P15288	pepD	P15288	0	7	Cytosol non-specific dipeptidase	
@@ -107,7 +107,7 @@ PEPQ	shigella-dysenteriae-serotype-1	Q32A22	pepQ	Q32A22	0	4	Xaa-Pro dipeptidase
 PEPQ	streptococcus-pneumoniae	Q8DNZ7	pepQ	Q8DNZ7	0	2	Dipeptidase	
 PEPR1	arabidopsis-thaliana	Q9SSL9	PEPR1	Q9SSL9	1	44	Leucine-rich repeat receptor-like protein kinase PEPR1	
 PEPR2	arabidopsis-thaliana	Q9FZ59	PEPR2	Q9FZ59	2	62	Leucine-rich repeat receptor-like protein kinase PEPR2	
-PEPS	human	P28838	LAP3	P28838	4	139		
+PEPS	human	P28838	LAP3	P28838	7	142		
 PEPSIN	human	P0DJD7	PGA4	P0DJD7	0	22	Pepsin A-4 (EC 3.4.23.1) (Pepsinogen-4)	w
 PEPSIN	human	P0DJD8	PGA3	P0DJD8	0	21	Pepsin A-3 (EC 3.4.23.1) (Pepsinogen-3)	w
 PEPSIN	human	P0DJD9	PGA5	P0DJD9	1	30	Pepsin A-5 (EC 3.4.23.1) (Pepsinogen-5)	w
@@ -129,7 +129,7 @@ PEPT-2	worm	Q17758	pept-2	Q17758	0	1	Peptide transporter family 2
 PEPT-3	worm	O01840	pept-3	O01840	0	5	Peptide transporter 3	
 PEPT1	human	P46059	SLC15A1	P46059	4	104		
 PEPT2	human	Q16348	SLC15A2	Q16348	3	46		
-PEPTI	human	P28838	LAP3	P28838	4	139	Cytosol aminopeptidase (EC 3.4.11.1) (Cysteinylglycine-S-con	w
+PEPTI	human	P28838	LAP3	P28838	7	142	Cytosol aminopeptidase (EC 3.4.11.1) (Cysteinylglycine-S-con	w
 PEPTI	human	P42658	DPP6	P42658	5	42	A-type potassium channel modulatory protein DPP6 (DPPX) (Dip	w
 PEPTI	human	Q9GZV9	FGF23	Q9GZV9	27	195	Fibroblast growth factor 23 (FGF-23) (Phosphatonin) (Tumor-d	w
 PEPTIDASE	fly	FBgn0000455	Dip-C	Q9VG79	3	31	Xaa-Pro dipeptidase (EC 3.4.13.9) (Imidodipeptidase) (Peptid	w
@@ -151,7 +151,7 @@ PEPTIDASE	fly	FBgn0031835	Dpp10	X2J9P4	147	2376	Dipeptidyl peptidase 10, isoform
 PEPTIDASE	fly	FBgn0031930	CG7025	Q9VLZ1	29	248	Peptidase M14 carboxypeptidase A domain-containing protein	w
 PEPTIDASE	fly	FBgn0032303	CG6508	Q9VKP7	39	217	Peptidase A1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0033038	Mipep	A1Z6H6	0	6	Peptidase M3A/M3B catalytic domain-containing protein	w
-PEPTIDASE	fly	FBgn0033235	Mppa	Q7K3W2	22	174	Mitochondrial-processing peptidase subunit alpha (Alpha-MPP)	w
+PEPTIDASE	fly	FBgn0033235	Mppa	Q7K3W2	23	175	Mitochondrial-processing peptidase subunit alpha (Alpha-MPP)	w
 PEPTIDASE	fly	FBgn0033321	CG8738	A1Z7H8	24	244	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0033363	CG13744	A1Z7M5	21	251	Peptidase S1 domain-containing protein	w
 PEPTIDASE	fly	FBgn0033469	CG12133	A1Z824	35	243	Peptidase S1 domain-containing protein	w
@@ -239,7 +239,7 @@ PEPTIDASE	human	H0YIN7	?	H0YIN7	0	4	Peptidase M24 domain-containing protein	w
 PEPTIDASE	human	H0YNG3	SEC11A	H0YNG3	2	44	Signal peptidase complex catalytic subunit SEC11	w
 PEPTIDASE	human	O43692	PI15	O43692	12	98	Peptidase inhibitor 15 (PI-15) (25 kDa trypsin inhibitor) (p	w
 PEPTIDASE	human	O75317	USP12	O75317	16	122	Ubiquitin carboxyl-terminal hydrolase 12 (EC 3.4.19.12) (Deu	w
-PEPTIDASE	human	O75439	PMPCB	O75439	9	405	Mitochondrial-processing peptidase subunit beta (EC 3.4.24.6	w
+PEPTIDASE	human	O75439	PMPCB	O75439	15	409	Mitochondrial-processing peptidase subunit beta (EC 3.4.24.6	w
 PEPTIDASE	human	O75830	SERPINI2	O75830	1	57	Serpin I2 (Myoepithelium-derived serine protease inhibitor) 	w
 PEPTIDASE	human	P07093	SERPINE2	P07093	16	186	Glia-derived nexin (GDN) (Peptidase inhibitor 7) (PI-7) (Pro	w
 PEPTIDASE	human	P0C7V7	SEC11B	P0C7V7	3	23	Putative signal peptidase complex catalytic subunit SEC11B (	w
@@ -260,16 +260,16 @@ PEPTIDASE	human	P53582	METAP1	P53582	47	232	Methionine aminopeptidase 1 (MAP 1) 
 PEPTIDASE	human	P53634	CTSC	P53634	8	235	Dipeptidyl peptidase 1 (EC 3.4.14.1) (Cathepsin C) (Cathepsi	w
 PEPTIDASE	human	P61009	SPCS3	P61009	13	157	Signal peptidase complex subunit 3 (Microsomal signal peptid	w
 PEPTIDASE	human	P67812	SEC11A	P67812	15	107	Signal peptidase complex catalytic subunit SEC11A (EC 3.4.21	w
-PEPTIDASE	human	Q10713	PMPCA	Q10713	30	379	Mitochondrial-processing peptidase subunit alpha (Alpha-MPP)	w
+PEPTIDASE	human	Q10713	PMPCA	Q10713	35	384	Mitochondrial-processing peptidase subunit alpha (Alpha-MPP)	w
 PEPTIDASE	human	Q12884	FAP	Q12884	20	166	Prolyl endopeptidase FAP (EC 3.4.21.26) (170 kDa melanoma me	w
 PEPTIDASE	human	Q15005	SPCS2	Q15005	18	163	Signal peptidase complex subunit 2 (Microsomal signal peptid	w
-PEPTIDASE	human	Q16740	CLPP	Q16740	30	574	ATP-dependent Clp protease proteolytic subunit, mitochondria	w
+PEPTIDASE	human	Q16740	CLPP	Q16740	31	575	ATP-dependent Clp protease proteolytic subunit, mitochondria	w
 PEPTIDASE	human	Q17RB8	LONRF1	Q17RB8	14	129	LON peptidase N-terminal domain and RING finger protein 1 (R	w
 PEPTIDASE	human	Q1L5Z9	LONRF2	Q1L5Z9	5	67	LON peptidase N-terminal domain and RING finger protein 2 (N	w
 PEPTIDASE	human	Q496Y0	LONRF3	Q496Y0	5	47	LON peptidase N-terminal domain and RING finger protein 3 (R	w
 PEPTIDASE	human	Q6GTS8	PM20D1	Q6GTS8	1	27	N-fatty-acyl-amino acid synthase/hydrolase PM20D1 (EC 3.5.1.	w
 PEPTIDASE	human	Q6ICB0	DESI1	Q6ICB0	26	141	Desumoylating isopeptidase 1 (DeSI-1) (EC 3.4.-.-) (PPPDE pe	w
-PEPTIDASE	human	Q6UB28	METAP1D	Q6UB28	16	64	Methionine aminopeptidase 1D, mitochondrial (MAP 1D) (MetAP 	w
+PEPTIDASE	human	Q6UB28	METAP1D	Q6UB28	51	99	Methionine aminopeptidase 1D, mitochondrial (MAP 1D) (MetAP 	w
 PEPTIDASE	human	Q6UXB8	PI16	Q6UXB8	14	42	Peptidase inhibitor 16 (PI-16) (Cysteine-rich secretory prot	w
 PEPTIDASE	human	Q6UXH9	PAMR1	Q6UXH9	5	74	Inactive serine protease PAMR1 (Peptidase domain-containing 	w
 PEPTIDASE	human	Q6V1X1	DPP8	Q6V1X1	5	64	Dipeptidyl peptidase 8 (DP8) (EC 3.4.14.5) (Dipeptidyl pepti	w
@@ -288,7 +288,7 @@ PEPTIDASE	human	Q96AP4	ZUP1	Q96AP4	41	306	Zinc finger-containing ubiquitin pepti
 PEPTIDASE	human	Q96KR4	LMLN	Q96KR4	1	45	Leishmanolysin-like peptidase (EC 3.4.24.-) (Invadolysin)	w
 PEPTIDASE	human	Q96QF7	GCNA	Q96QF7	1	27	Germ cell nuclear acidic protein (Acidic repeat-containing p	w
 PEPTIDASE	human	Q99574	SERPINI1	Q99574	6	65	Neuroserpin (Peptidase inhibitor 12) (PI-12) (Serpin I1)	w
-PEPTIDASE	human	Q99797	MIPEP	Q99797	7	100	Mitochondrial intermediate peptidase (MIP) (EC 3.4.24.59)	w
+PEPTIDASE	human	Q99797	MIPEP	Q99797	7	101	Mitochondrial intermediate peptidase (MIP) (EC 3.4.24.59)	w
 PEPTIDASE	human	Q9BSY9	DESI2	Q9BSY9	2	23	Deubiquitinase DESI2 (EC 3.4.19.12) (Desumoylating isopeptid	w
 PEPTIDASE	human	Q9BY50	SEC11C	Q9BY50	16	86	Signal peptidase complex catalytic subunit SEC11C (EC 3.4.21	w
 PEPTIDASE	human	Q9H3Y0	R3HDML	Q9H3Y0	7	35	Peptidase inhibitor R3HDML (Cysteine-rich secretory protein 	w
@@ -364,7 +364,7 @@ PEPTIDASE	worm	Q8MYN6	asp-16	Q8MYN6	0	2	Peptidase A1 domain-containing protein	w
 PEPTIDASE	worm	Q8MYN7	asp-15	Q8MYN7	0	1	Peptidase A1 domain-containing protein	w
 PEPTIDASE	worm	Q94176	try-3	Q94176	0	4	Peptidase S1 domain-containing protein	w
 PEPTIDASE	worm	Q94271	asp-14	Q94271	1	31	Peptidase A1 domain-containing protein	w
-PEPTIDASE	worm	Q95XN2	mppa-1	Q95XN2	4	63	Mitochondrial-processing peptidase subunit alpha	w
+PEPTIDASE	worm	Q95XN2	mppa-1	Q95XN2	5	65	Mitochondrial-processing peptidase subunit alpha	w
 PEPTIDASE	worm	Q9BL26	CELE_Y71H2AR.2	Q9BL26	0	3	Peptidase C1A papain C-terminal domain-containing protein	w
 PEPTIDASE	worm	Q9BL46	CELE_Y71H2AM.11	Q9BL46	0	6	Peptidase M20 dimerisation domain-containing protein	w
 PEPTIDASE	worm	Q9GPA1	try-14	Q9GPA1	0	6	Peptidase S1 domain-containing protein	w
@@ -375,9 +375,9 @@ PEPTIDASE	worm	Q9TZ33	ucr-2.3	Q9TZ33	8	73	Peptidase M16 N-terminal domain-contai
 PEPTIDASE	worm	Q9U2S3	rom-3	Q9U2S3	1	7	Peptidase S54 rhomboid domain-containing protein	w
 PEPTIDASE	worm	Q9U3C4	CELE_K02E2.6	Q9U3C4	0	3	Peptidase A2 domain-containing protein	w
 PEPTIDASE	worm	Q9XV38	CELE_F36D1.6	Q9XV38	0	7	Peptidase S1 domain-containing protein	w
-PEPTIDASE	worm	Q9XVD2	immp-1	Q9XVD2	2	9	Peptidase S26 domain-containing protein	w
+PEPTIDASE	worm	Q9XVD2	immp-1	Q9XVD2	3	10	Peptidase S26 domain-containing protein	w
 PEPTIDASE	worm	Q9XWW1	spcs-2	Q9XWW1	1	9	Signal peptidase complex subunit 2	w
-PEPTIDASE	yeast	P10507	MAS1	P10507	2	64	Mitochondrial-processing peptidase subunit beta	w
+PEPTIDASE	yeast	P10507	MAS1	P10507	3	66	Mitochondrial-processing peptidase subunit beta	w
 PEPTIDASE	yeast	P11914	MAS2	P11914	2	52	Mitochondrial-processing peptidase subunit alpha	w
 PEPTIDASE	yeast	P15367	SEC11	P15367	3	23	Signal peptidase complex catalytic subunit SEC11	w
 PEPTIDASE	yeast	P35999	OCT1	P35999	1	7	Mitochondrial intermediate peptidase	w
@@ -413,12 +413,14 @@ PEPTIDASE	zebrafish	Q5BJI9	spcs2	Q5BJI9	1	9	Signal peptidase complex subunit 2	w
 PEPTIDASE	zebrafish	Q5BKW9	asrgl1	Q5BKW9	1	2	Isoaspartyl peptidase/L-asparaginase	w
 PEPTIDASE	zebrafish	Q5BP97	sppl3	Q5BP97	0	1	Signal peptide peptidase 3	w
 PEPTIDASE	zebrafish	Q5CZT1	dpp7	Q5CZT1	0	2	Dipeptidyl peptidase 2	w
+PEPTIDASE	zebrafish	Q5EB15	zgc:110738	Q5EB15	5	5	Peptidase (Mitochondrial processing) beta	w
 PEPTIDASE	zebrafish	Q5RIK7	serpinb1l2	Q5RIK7	0	9	Serpin peptidase inhibitor, clade B (Ovalbumin), member 1, l	w
+PEPTIDASE	zebrafish	Q5U3T6	wu:fj83d11	Q5U3T6	4	4	Peptidase (Mitochondrial processing) alpha	w
 PEPTIDASE	zebrafish	Q6DBR1	htra3a	Q6DBR1	0	6	HtrA serine peptidase 3a	w
 PEPTIDASE	zebrafish	Q6DI20	dpp3	Q6DI20	0	7	Dipeptidyl peptidase 3	w
 PEPTIDASE	zebrafish	Q6NWJ2	spcs3	Q6NWJ2	1	6	Signal peptidase complex subunit 3	w
 PEPTIDASE	zebrafish	Q7T141	pi15a	Q7T141	1	1	Peptidase inhibitor 15-A	w
-PEPTIDASE-INTERACTING	human	Q8WWC4	MAIP1	Q8WWC4	9	131	m-AAA protease-interacting protein 1, mitochondrial (Matrix 	w
+PEPTIDASE-INTERACTING	human	Q8WWC4	MAIP1	Q8WWC4	10	132	m-AAA protease-interacting protein 1, mitochondrial (Matrix 	w
 PEPTIDASE-LIKE	fly	FBgn0039381	SppL	Q86P97	8	62	GM06145p (Signal peptide peptidase-like, isoform D (EC 3.4.2	w
 PEPTIDASE-LIKE	human	Q5W0Q7	USPL1	Q5W0Q7	102	543	SUMO-specific isopeptidase USPL1 (EC 3.4.22.-) (Ubiquitin-sp	w
 PEPTIDASE-LIKE	human	Q86TI2	DPP9	Q86TI2	8	118	Dipeptidyl peptidase 9 (DP9) (EC 3.4.14.5) (Dipeptidyl pepti	w
@@ -443,7 +445,7 @@ PEPTIDE	fly	FBgn0023178	Pdf	O96690	56	268	Protein PDF [Cleaved into: PDF precurs
 PEPTIDE	fly	FBgn0025583	BomS2	O77150	42	264	Bomanin Short 2 (Bomanin-2) (Immune-induced peptide 2) (DIM-	w
 PEPTIDE	fly	FBgn0029768	SPR	Q8SWR3	4	7	Sex peptide receptor	w
 PEPTIDE	fly	FBgn0031260	Spp	Q9VPQ7	0	21	SD07518p (Signal peptide peptidase (EC 3.4.23.-))	w
-PEPTIDE	fly	FBgn0031817	HemK1	Q9VMD3	1	11	peptide chain release factor N(5)-glutamine methyltransferas	w
+PEPTIDE	fly	FBgn0031817	HemK1	Q9VMD3	2	12	peptide chain release factor N(5)-glutamine methyltransferas	w
 PEPTIDE	fly	FBgn0032840	sNPF	Q9VIQ0	43	245	Short neuropeptide F [Cleaved into: sNPF-associated peptide 	w
 PEPTIDE	fly	FBgn0033050	Pngl	Q7KRR5	3	36	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase 	w
 PEPTIDE	fly	FBgn0033789	CG13324	A1Z979	30	260	Salivary secreted peptide	w
@@ -472,7 +474,7 @@ PEPTIDE	fly	FBgn0044049	Ilp4	Q9VT53	50	282	Probable insulin-like peptide 4 (dILP
 PEPTIDE	fly	FBgn0044050	Ilp3	Q9VT52	41	293	Probable insulin-like peptide 3 (dILP3) (Insulin-related pep	w
 PEPTIDE	fly	FBgn0044051	Ilp1	Q9VT50	41	276	Probable insulin-like peptide 1 (dILP1) (Insulin-related pep	w
 PEPTIDE	fly	FBgn0050413	CG30413	Q8MLS3	13	243	Salivary secreted peptide	w
-PEPTIDE	fly	FBgn0051278	CG31278	Q9VGY2	28	132	Peptide deformylase (EC 3.5.1.88)	w
+PEPTIDE	fly	FBgn0051278	CG31278	Q9VGY2	29	133	Peptide deformylase (EC 3.5.1.88)	w
 PEPTIDE	fly	FBgn0051373	CG31373	Q8INL3	19	129	Peptide deformylase (EC 3.5.1.88)	w
 PEPTIDE	fly	FBgn0053470	BaraA1	C0HLZ9	8	245	Baramicin A1 [Cleaved into: Immune-induced peptide 24 (DIM-2	w
 PEPTIDE	fly	FBgn0067903	Pai	P82701	40	266	Immune-induced peptide 18 (DIM-18)	w
@@ -493,7 +495,7 @@ PEPTIDE	human	O15263	DEFB4A	O15263	23	239	Defensin beta 4A (Beta-defensin 2) (BD
 PEPTIDE	human	O43866	CD5L	O43866	24	391	CD5 antigen-like (Apoptosis inhibitor expressed by macrophag	w
 PEPTIDE	human	O60551	NMT2	O60551	16	133	Glycylpeptide N-tetradecanoyltransferase 2 (EC 2.3.1.97) (My	w
 PEPTIDE	human	O60575	SPINK4	O60575	22	147	Serine protease inhibitor Kazal-type 4 (Peptide PEC-60 homol	w
-PEPTIDE	human	O75570	MTRF1	O75570	16	323	Peptide chain release factor 1, mitochondrial (MRF-1) (MtRF-	w
+PEPTIDE	human	O75570	MTRF1	O75570	27	332	Peptide chain release factor 1, mitochondrial (MRF-1) (MtRF-	w
 PEPTIDE	human	O95467	GNAS	O95467	28	196	Neuroendocrine secretory protein 55 (NESP55) [Cleaved into: 	w
 PEPTIDE	human	O95838	GLP2R	O95838	15	89	Glucagon-like peptide 2 receptor (GLP-2 receptor) (GLP-2-R) 	w
 PEPTIDE	human	P00734	F2	P00734	71	777	Prothrombin (EC 3.4.21.5) (Coagulation factor II) [Cleaved i	w
@@ -591,7 +593,7 @@ PEPTIDE	human	Q96RP3	UCN2	Q96RP3	4	42	Urocortin-2 (Stresscopin-related peptide) 
 PEPTIDE	human	Q99576	TSC22D3	Q99576	42	435	TSC22 domain family protein 3 (DSIP-immunoreactive peptide) 	w
 PEPTIDE	human	Q9GZQ6	NPFFR1	Q9GZQ6	17	111	Neuropeptide FF receptor 1 (G protein-coupled receptor 147) 	w
 PEPTIDE	human	Q9H1B5	XYLT2	Q9H1B5	10	78	Xylosyltransferase 2 (EC 2.4.2.26) (Peptide O-xylosyltransfe	w
-PEPTIDE	human	Q9HBH1	PDF	Q9HBH1	25	202	Peptide deformylase, mitochondrial (EC 3.5.1.88) (Polypeptid	w
+PEPTIDE	human	Q9HBH1	PDF	Q9HBH1	34	211	Peptide deformylase, mitochondrial (EC 3.5.1.88) (Polypeptid	w
 PEPTIDE	human	Q9HBX9	RXFP1	Q9HBX9	27	265	Relaxin receptor 1 (Leucine-rich repeat-containing G protein	w
 PEPTIDE	human	Q9NQ36	SCUBE2	Q9NQ36	2	52	Signal peptide, CUB and EGF-like domain-containing protein 2	w
 PEPTIDE	human	Q9NQ38	SPINK5	Q9NQ38	7	36	Serine protease inhibitor Kazal-type 5 (Lympho-epithelial Ka	w
@@ -600,8 +602,8 @@ PEPTIDE	human	Q9NSD7	RXFP3	Q9NSD7	13	58	Relaxin-3 receptor 1 (RLN3 receptor 1) (
 PEPTIDE	human	Q9UBC7	GALP	Q9UBC7	9	111	Galanin-like peptide	w
 PEPTIDE	human	Q9UBU3	GHRL	Q9UBU3	41	431	Appetite-regulating hormone (Growth hormone secretagogue) (G	w
 PEPTIDE	human	Q9UEF7	KL	Q9UEF7	10	65	Klotho (EC 3.2.1.31) [Cleaved into: Klotho peptide]	w
-PEPTIDE	human	Q9UGC7	MTRF1L	Q9UGC7	15	308	Peptide chain release factor 1-like, mitochondrial (Mitochon	w
-PEPTIDE	human	Q9UJ68	MSRA	Q9UJ68	6	80	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
+PEPTIDE	human	Q9UGC7	MTRF1L	Q9UGC7	19	312	Peptide chain release factor 1-like, mitochondrial (Mitochon	w
+PEPTIDE	human	Q9UJ68	MSRA	Q9UJ68	23	98	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
 PEPTIDE	human	Q9Y215	COLQ	Q9Y215	2	39	Acetylcholinesterase collagenic tail peptide (AChE Q subunit	w
 PEPTIDE	human	Q9Y581	INSL6	Q9Y581	2	42	Insulin-like peptide INSL6 (Insulin-like peptide 6) (Relaxin	w
 PEPTIDE	human	Q9Y5Q6	INSL5	Q9Y5Q6	16	124	Insulin-like peptide INSL5 (Insulin-like peptide 5) [Cleaved	w
@@ -729,7 +731,7 @@ PEPTIDE	worm	G5EG31	flp-4	G5EG31	0	9	FMRF-Like Peptide	w
 PEPTIDE	worm	O01840	pept-3	O01840	0	5	Peptide transporter 3	w
 PEPTIDE	worm	O02086	haf-2	O02086	7	21	ABC-type antigen peptide transporter	w
 PEPTIDE	worm	O16520	erfa-1	O16520	2	68	Eukaryotic peptide chain release factor subunit 1	w
-PEPTIDE	worm	O44568	mtrf-1L	O44568	1	53	Probable peptide chain release factor 1, mitochondrial	w
+PEPTIDE	worm	O44568	mtrf-1L	O44568	2	54	Probable peptide chain release factor 1, mitochondrial	w
 PEPTIDE	worm	O44897	haf-9	O44897	7	25	ABC-type antigen peptide transporter	w
 PEPTIDE	worm	O44902	nspd-1	O44902	0	4	Nematode Specific Peptide family, group D	w
 PEPTIDE	worm	O45622	erfa-3	O45622	5	62	Eukaryotic peptide chain release factor GTP-binding subunit	w
@@ -756,7 +758,7 @@ PEPTIDE	worm	Q9TZK3	spig-17	Q9TZK3	0	4	FMRF-Like Peptide	w
 PEPTIDE	worm	Q9XW38	nsph-3.1	Q9XW38	0	5	Nematode Specific Peptide family	w
 PEPTIDE	yeast	P05453	SUP35	P05453	6	146	Eukaryotic peptide chain release factor GTP-binding subunit	w
 PEPTIDE	yeast	P12385	SUP45	P12385	2	172	Eukaryotic peptide chain release factor subunit 1	w
-PEPTIDE	yeast	P25566	MXR2	P25566	2	29	Peptide methionine sulfoxide reductase 2	w
+PEPTIDE	yeast	P25566	MXR2	P25566	3	30	Peptide methionine sulfoxide reductase 2	w
 PEPTIDE	yeast	P30775	MRF1	P30775	2	126	Peptide chain release factor 1, mitochondrial	w
 PEPTIDE	yeast	P32901	PTR2	P32901	0	14	Peptide transporter PTR2	w
 PEPTIDE	yeast	P40029	MXR1	P40029	0	25	Peptide methionine sulfoxide reductase	w
@@ -766,6 +768,7 @@ PEPTIDE	zebrafish	A0A2R8QUA1	rxfp1	A0A2R8QUA1	3	37	Relaxin family peptide recept
 PEPTIDE	zebrafish	A0A8M1NFL0	npr3	A0A8M1NFL0	4	11	Atrial natriuretic peptide receptor 3 precursor	w
 PEPTIDE	zebrafish	A0A8M1P3X0	scube3	A0A8M1P3X0	2	15	Signal peptide, CUB and EGF-like domain-containing protein 2	w
 PEPTIDE	zebrafish	A0A8M1PAA2	scube1	A0A8M1PAA2	2	15	Signal peptide, CUB and EGF-like domain-containing protein 1	w
+PEPTIDE	zebrafish	A0A8M1RM80	mtrf1l	A0A8M1RM80	2	3	peptide chain release factor 1-like, mitochondrial	w
 PEPTIDE	zebrafish	A0A8M9PPS1	calcr	A0A8M9PPS1	6	29	Calcitonin gene-related peptide type 1 receptor	w
 PEPTIDE	zebrafish	A0A8M9Q6X3	rxfp3.3a3	A0A8M9Q6X3	1	9	Relaxin family peptide receptor 3.3a3	w
 PEPTIDE	zebrafish	A0A8M9Q6Y9	vipb	A0A8M9Q6Y9	7	31	Vasoactive intestinal peptide b isoform X1	w
@@ -790,7 +793,7 @@ PEPTIDE	zebrafish	I3IRX3	calcrlb	I3IRX3	4	25	Calcitonin gene-related peptide typ
 PEPTIDE	zebrafish	O57463	npy8br	O57463	2	9	Neuropeptide Y /peptide YY receptor Yb	w
 PEPTIDE	zebrafish	Q1LW92	npvf	Q1LW92	4	89	FMRFamide related peptide 1	w
 PEPTIDE	zebrafish	Q4FE81	prlhr2a	Q4FE81	0	4	Prolactin-releasing peptide receptor	w
-PEPTIDE	zebrafish	Q4V8U4	pdf	Q4V8U4	5	61	Peptide deformylase	w
+PEPTIDE	zebrafish	Q4V8U4	pdf	Q4V8U4	5	62	Peptide deformylase	w
 PEPTIDE	zebrafish	Q5BP97	sppl3	Q5BP97	0	1	Signal peptide peptidase 3	w
 PEPTIDE	zebrafish	Q5G872	scube2	Q5G872	2	18	Signal peptide, CUB and EGF-like domain-containing protein 2	w
 PEPTIDE	zebrafish	Q5TZ05	msraa	Q5TZ05	0	16	Mitochondrial peptide methionine sulfoxide reductase	w
@@ -810,9 +813,10 @@ PEPTIDE-CONTAINING	human	Q5UCC4	EMC10	Q5UCC4	7	64	ER membrane protein complex su
 PEPTIDE-CONTAINING	worm	Q18912	CELE_D1005.5	Q18912	0	1	Signal peptide-containing protein	w
 PEPTIDE-CONVERTING	human	Q9Y5Q5	CORIN	Q9Y5Q5	8	73	Atrial natriuretic peptide-converting enzyme (EC 3.4.21.-) (	w
 PEPTIDE-METHIONINE	fly	FBgn0000565	MsrA	M9PCL6	1	18	peptide-methionine (S)-S-oxide reductase (EC 1.8.4.11) (Pept	w
-PEPTIDE-METHIONINE	human	Q9UJ68	MSRA	Q9UJ68	6	80	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
-PEPTIDE-METHIONINE	worm	O02089	msra-1	O02089	1	53	peptide-methionine (S)-S-oxide reductase	w
-PEPTIDE-METHIONINE	zebrafish	A0A8M1P8M4	msrb3	A0A8M1P8M4	3	40	Peptide-methionine (R)-S-oxide reductase	w
+PEPTIDE-METHIONINE	human	Q9UJ68	MSRA	Q9UJ68	23	98	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
+PEPTIDE-METHIONINE	worm	O02089	msra-1	O02089	1	54	peptide-methionine (S)-S-oxide reductase	w
+PEPTIDE-METHIONINE	zebrafish	A0A8M1NC54	msra	A0A8M1NC54	5	7	peptide-methionine (S)-S-oxide reductase	w
+PEPTIDE-METHIONINE	zebrafish	A0A8M1P8M4	msrb3	A0A8M1P8M4	16	53	Peptide-methionine (R)-S-oxide reductase	w
 PEPTIDE-N	fly	FBgn0033050	Pngl	Q7KRR5	3	36	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase 	w
 PEPTIDE-N	human	Q96IV0	NGLY1	Q96IV0	15	129	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase 	w
 PEPTIDE-N	worm	Q9TW67	png-1	Q9TW67	7	36	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase	w
@@ -874,7 +878,7 @@ PEPTIDYL-GLYCINE	human	P19021	PAM	P19021	8	80	Peptidyl-glycine alpha-amidating m
 PEPTIDYL-PROLY	fly	FBgn0013954	Fkbp12	P48375	45	321	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	w
 PEPTIDYL-PROLYL	fly	FBgn0002936	ninaA	P15425	9	69	Peptidyl-prolyl cis-trans isomerase, rhodopsin-specific isoz	w
 PEPTIDYL-PROLYL	fly	FBgn0003401	shu	Q9W1I9	6	24	Inactive peptidyl-prolyl cis-trans isomerase shutdown	w
-PEPTIDYL-PROLYL	fly	FBgn0004432	Cyp1	P25007	52	488	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	w
+PEPTIDYL-PROLYL	fly	FBgn0004432	Cyp1	P25007	58	493	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	w
 PEPTIDYL-PROLYL	fly	FBgn0013269	Fkbp39	P54397	49	200	39 kDa FK506-binding nuclear protein (EC 5.2.1.8) (Peptidyl-	w
 PEPTIDYL-PROLYL	fly	FBgn0013954	Fkbp12	P48375	45	321	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	w
 PEPTIDYL-PROLYL	fly	FBgn0015379	dod	P54353	50	215	Putative peptidyl-prolyl cis-trans isomerase dodo (PPIase do	w
@@ -899,7 +903,7 @@ PEPTIDYL-PROLYL	human	P0DN26	PPIAL4F	P0DN26	48	370	Peptidyl-prolyl cis-trans iso
 PEPTIDYL-PROLYL	human	P0DN37	PPIAL4G	P0DN37	62	397	Peptidyl-prolyl cis-trans isomerase A-like 4G (PPIase A-like	w
 PEPTIDYL-PROLYL	human	P23284	PPIB	P23284	101	806	Peptidyl-prolyl cis-trans isomerase B (PPIase B) (EC 5.2.1.8	w
 PEPTIDYL-PROLYL	human	P26885	FKBP2	P26885	23	158	Peptidyl-prolyl cis-trans isomerase FKBP2 (PPIase FKBP2) (EC	w
-PEPTIDYL-PROLYL	human	P30405	PPIF	P30405	97	673	Peptidyl-prolyl cis-trans isomerase F, mitochondrial (PPIase	w
+PEPTIDYL-PROLYL	human	P30405	PPIF	P30405	121	695	Peptidyl-prolyl cis-trans isomerase F, mitochondrial (PPIase	w
 PEPTIDYL-PROLYL	human	P30414	NKTR	P30414	39	229	NK-tumor recognition protein (NK-TR protein) (Natural-killer	w
 PEPTIDYL-PROLYL	human	P45877	PPIC	P45877	42	439	Peptidyl-prolyl cis-trans isomerase C (PPIase C) (EC 5.2.1.8	w
 PEPTIDYL-PROLYL	human	P62937	PPIA	P62937	252	1567	Peptidyl-prolyl cis-trans isomerase A (PPIase A) (EC 5.2.1.8	w
@@ -911,12 +915,12 @@ PEPTIDYL-PROLYL	human	Q08752	PPID	Q08752	33	221	Peptidyl-prolyl cis-trans isomer
 PEPTIDYL-PROLYL	human	Q13427	PPIG	Q13427	38	263	Peptidyl-prolyl cis-trans isomerase G (PPIase G) (Peptidyl-p	w
 PEPTIDYL-PROLYL	human	Q13451	FKBP5	Q13451	52	485	Peptidyl-prolyl cis-trans isomerase FKBP5 (PPIase FKBP5) (EC	w
 PEPTIDYL-PROLYL	human	Q13526	PIN1	Q13526	75	483	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 1 (EC 5	w
-PEPTIDYL-PROLYL	human	Q14318	FKBP8	Q14318	96	534	Peptidyl-prolyl cis-trans isomerase FKBP8 (PPIase FKBP8) (EC	w
+PEPTIDYL-PROLYL	human	Q14318	FKBP8	Q14318	103	541	Peptidyl-prolyl cis-trans isomerase FKBP8 (PPIase FKBP8) (EC	w
 PEPTIDYL-PROLYL	human	Q5VVH2	FKBP1C	Q5VVH2	23	187	Peptidyl-prolyl cis-trans isomerase FKBP1C (EC 5.2.1.8)	w
 PEPTIDYL-PROLYL	human	Q6UX04	CWC27	Q6UX04	46	210	Spliceosome-associated protein CWC27 homolog (Antigen NY-CO-	w
 PEPTIDYL-PROLYL	human	Q8IXY8	PPIL6	Q8IXY8	15	92	Probable inactive peptidyl-prolyl cis-trans isomerase-like 6	w
 PEPTIDYL-PROLYL	human	Q8WUA2	PPIL4	Q8WUA2	34	237	Peptidyl-prolyl cis-trans isomerase-like 4 (PPIase) (EC 5.2.	w
-PEPTIDYL-PROLYL	human	Q96AY3	FKBP10	Q96AY3	3	123	Peptidyl-prolyl cis-trans isomerase FKBP10 (PPIase FKBP10) (	w
+PEPTIDYL-PROLYL	human	Q96AY3	FKBP10	Q96AY3	6	126	Peptidyl-prolyl cis-trans isomerase FKBP10 (PPIase FKBP10) (	w
 PEPTIDYL-PROLYL	human	Q9H2H8	PPIL3	Q9H2H8	25	131	Peptidyl-prolyl cis-trans isomerase-like 3 (PPIase) (EC 5.2.	w
 PEPTIDYL-PROLYL	human	Q9NWM8	FKBP14	Q9NWM8	7	137	Peptidyl-prolyl cis-trans isomerase FKBP14 (PPIase FKBP14) (	w
 PEPTIDYL-PROLYL	human	Q9NYL4	FKBP11	Q9NYL4	10	98	Peptidyl-prolyl cis-trans isomerase FKBP11 (PPIase FKBP11) (	w
@@ -932,7 +936,7 @@ PEPTIDYL-PROLYL	worm	P52011	cyn-3	P52011	3	82	Peptidyl-prolyl cis-trans isomeras
 PEPTIDYL-PROLYL	worm	P52012	cyn-4	P52012	6	47	Peptidyl-prolyl cis-trans isomerase 4	w
 PEPTIDYL-PROLYL	worm	P52013	cyn-5	P52013	3	62	Peptidyl-prolyl cis-trans isomerase 5	w
 PEPTIDYL-PROLYL	worm	P52014	cyn-6	P52014	1	67	Peptidyl-prolyl cis-trans isomerase 6	w
-PEPTIDYL-PROLYL	worm	P52015	cyn-7	P52015	7	91	Peptidyl-prolyl cis-trans isomerase 7	w
+PEPTIDYL-PROLYL	worm	P52015	cyn-7	P52015	12	96	Peptidyl-prolyl cis-trans isomerase 7	w
 PEPTIDYL-PROLYL	worm	P52016	cyn-8	P52016	2	29	Peptidyl-prolyl cis-trans isomerase 8	w
 PEPTIDYL-PROLYL	worm	P52017	cyn-10	P52017	9	45	Peptidyl-prolyl cis-trans isomerase 10	w
 PEPTIDYL-PROLYL	worm	P52018	cyn-11	P52018	5	32	Peptidyl-prolyl cis-trans isomerase 11	w
@@ -943,7 +947,7 @@ PEPTIDYL-PROLYL	worm	Q9N492	pinn-1	Q9N492	1	19	Peptidyl-prolyl cis-trans isomera
 PEPTIDYL-PROLYL	worm	Q9N579	CELE_Y17G9B.4	Q9N579	1	23	Peptidyl-prolyl cis-trans isomerase	w
 PEPTIDYL-PROLYL	worm	Q9NAF9	pinn-4	Q9NAF9	0	14	Peptidyl-prolyl cis-trans isomerase	w
 PEPTIDYL-PROLYL	worm	Q9U2S6	cyn-13	Q9U2S6	7	64	Peptidyl-prolyl cis-trans isomerase E	w
-PEPTIDYL-PROLYL	yeast	P14832	CPR1	P14832	7	181	Peptidyl-prolyl cis-trans isomerase	w
+PEPTIDYL-PROLYL	yeast	P14832	CPR1	P14832	10	184	Peptidyl-prolyl cis-trans isomerase	w
 PEPTIDYL-PROLYL	yeast	P22696	ESS1	P22696	4	57	Peptidyl-prolyl cis-trans isomerase ESS1	w
 PEPTIDYL-PROLYL	yeast	P23285	CPR2	P23285	0	34	Peptidyl-prolyl cis-trans isomerase B	w
 PEPTIDYL-PROLYL	yeast	P25334	CPR4	P25334	1	27	Peptidyl-prolyl cis-trans isomerase CPR4	w
@@ -958,6 +962,7 @@ PEPTIDYL-PROLYL	yeast	Q02770	CWC27	Q02770	4	60	Peptidyl-prolyl isomerase CWC27	w
 PEPTIDYL-PROLYL	zebrafish	A0A8M1N864	ppifb	A0A8M1N864	18	202	Peptidyl-prolyl cis-trans isomerase	w
 PEPTIDYL-PROLYL	zebrafish	A0A8M1PHT1	ppiaa	A0A8M1PHT1	10	202	Peptidyl-prolyl cis-trans isomerase	w
 PEPTIDYL-PROLYL	zebrafish	A5PM92	ppil4	A5PM92	13	156	Peptidyl-prolyl cis-trans isomerase	w
+PEPTIDYL-PROLYL	zebrafish	Q3B738	im:7151275	Q3B738	13	14	Peptidyl-prolyl cis-trans isomerase	w
 PEPTIDYL-PROLYL	zebrafish	Q3KR14	ppil1	Q3KR14	17	234	Peptidyl-prolyl cis-trans isomerase	w
 PEPTIDYL-PROLYL	zebrafish	Q503Y7	pin4	Q503Y7	0	24	Peptidyl-prolyl cis-trans isomerase NIMA-interacting 4	w
 PEPTIDYL-PROLYL	zebrafish	Q6IQL3	ppil3	Q6IQL3	16	171	Peptidyl-prolyl cis-trans isomerase	w
@@ -970,7 +975,7 @@ PEPTIDYL-TRNA	fly	FBgn0032261	CG6094	Q9VKU3	13	184	Large ribosomal subunit prote
 PEPTIDYL-TRNA	fly	FBgn0038107	CG17327	Q9VG06	0	7	peptidyl-tRNA hydrolase (EC 3.1.1.29)	w
 PEPTIDYL-TRNA	fly	FBgn0038446	CG14903	Q9VET3	92	982	peptidyl-tRNA hydrolase (EC 3.1.1.29)	w
 PEPTIDYL-TRNA	human	Q6GMV3	PTRHD1	Q6GMV3	9	78	Putative peptidyl-tRNA hydrolase PTRHD1 (EC 3.1.1.29) (Pepti	w
-PEPTIDYL-TRNA	human	Q86Y79	PTRH1	Q86Y79	6	65	Peptidyl-tRNA hydrolase (PTH) (EC 3.1.1.29)	w
+PEPTIDYL-TRNA	human	Q86Y79	PTRH1	Q86Y79	19	77	Peptidyl-tRNA hydrolase (PTH) (EC 3.1.1.29)	w
 PEPTIDYL-TRNA	human	Q9Y3E5	PTRH2	Q9Y3E5	10	258	Peptidyl-tRNA hydrolase 2, mitochondrial (PTH 2) (EC 3.1.1.2	w
 PEPTIDYL-TRNA	virus	A0A068EGP6	pepv_034	A0A068EGP6	4	240	peptidyl-tRNA hydrolase	w
 PEPTIDYL-TRNA	virus	A0A068EGS2	fep_034	A0A068EGS2	7	221	peptidyl-tRNA hydrolase	w
@@ -984,6 +989,7 @@ PEPTIDYL-TRNA	yeast	P38876	PTH1	P38876	0	5	Peptidyl-tRNA hydrolase	w
 PEPTIDYL-TRNA	zebrafish	A0A8M1N4D8	ptrh1	A0A8M1N4D8	0	9	peptidyl-tRNA hydrolase	w
 PEPTIDYL-TRNA	zebrafish	F1Q6B2	ptrh2	F1Q6B2	0	3	Peptidyl-tRNA hydrolase 2, mitochondrial	w
 PEPTIDYL-TRNA	zebrafish	I3ITK3	si:dkey-19e4.5	I3ITK3	0	2	peptidyl-tRNA hydrolase	w
+PEPTIDYL-TRNA	zebrafish	Q5CZM9	zgc:112961	Q5CZM9	2	2	Peptidyl-tRNA hydrolase 1 homolog (S. cerevisiae)	w
 PEPTIDYLAMIDOGLYCOLATE	fly	FBgn0262728	Pal2	Q9W1L5	54	247	Peptidyl-alpha-hydroxyglycine alpha-amidating lyase 2 (EC 4.	w
 PEPTIDYLAMIDOGLYCOLATE	fly	FBgn0283510	Pal1	Q9V5E1	478	2388	Peptidyl-alpha-hydroxyglycine alpha-amidating lyase 1 (EC 4.	w
 PEPTIDYLARGININE	human	Q6TGC4	PADI6	Q6TGC4	4	53	Inactive protein-arginine deiminase type-6 (Peptidyl arginin	w
@@ -1016,10 +1022,10 @@ PEPTIDYLPROLYL	zebrafish	A0A8M9PBG3	fkbp10a	A0A8M9PBG3	0	37	peptidylprolyl isome
 PEPTIDYLPROLYL	zebrafish	A0A8M9PEW2	fkbp15a	A0A8M9PEW2	2	7	peptidylprolyl isomerase	w
 PEPTIDYLPROLYL	zebrafish	A3QK11	fkbp6	A3QK11	8	41	peptidylprolyl isomerase	w
 PEPTIDYLPROLYL	zebrafish	A9JSW0	fkbp2	A9JSW0	4	32	peptidylprolyl isomerase	w
-PEPTIDYLPROLYL	zebrafish	B3DKC0	fkbp10b	B3DKC0	0	37	peptidylprolyl isomerase	w
+PEPTIDYLPROLYL	zebrafish	B3DKC0	fkbp10b	B3DKC0	1	38	peptidylprolyl isomerase	w
 PEPTIDYLPROLYL	zebrafish	E7F5I0	nktr	E7F5I0	30	254	peptidylprolyl isomerase	w
 PEPTIDYLPROLYL	zebrafish	F8W2D1	fkbp4	F8W2D1	15	66	peptidylprolyl isomerase	w
-PEPTIDYLPROLYL	zebrafish	Q6P3J6	fkbp8	Q6P3J6	12	61	peptidylprolyl isomerase	w
+PEPTIDYLPROLYL	zebrafish	Q6P3J6	fkbp8	Q6P3J6	15	65	peptidylprolyl isomerase	w
 PEPTIDYLPROLYL	zebrafish	Q6PBJ1	fkbp1b	Q6PBJ1	15	190	peptidylprolyl isomerase	w
 PEPTIDYLPROLYL	zebrafish	Q6PBJ8	fkbp1aa	Q6PBJ8	23	190	peptidylprolyl isomerase	w
 PEPTIDYLPROLYL	zebrafish	Q7ZZ60	fkbp7	Q7ZZ60	1	34	peptidylprolyl isomerase	w

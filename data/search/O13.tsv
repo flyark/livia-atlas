@@ -28,7 +28,7 @@ O13518	yeast	O13518	YPL114W	O13518	0	1	Putative uncharacterized protein YPL114W
 O13519	yeast	O13519	YPL136W	O13519	0	2	Putative uncharacterized protein YPL136W	
 O13521	yeast	O13521	YPL035C	O13521	0	1	Putative uncharacterized protein YPL035C	
 O13522	yeast	O13522	YDR396W	O13522	0	1	Putative uncharacterized protein YDR396W	
-O13525	yeast	O13525	COQ4	O13525	2	31	Ubiquinone biosynthesis protein COQ4, mitochondrial	
+O13525	yeast	O13525	COQ4	O13525	3	31	Ubiquinone biosynthesis protein COQ4, mitochondrial	
 O13530	yeast	O13530	YLR198C	O13530	0	2	Putative uncharacterized protein YLR198C	
 O13531	yeast	O13531	YLR202C	O13531	0	1	Putative uncharacterized protein YLR202C	
 O13532	yeast	O13532	YLR217W	O13532	0	1	Putative uncharacterized protein YLR217W	
@@ -76,7 +76,7 @@ O13615	schizosaccharomyces-pombe	O13615	prp5	O13615	7	90	Pre-mRNA-splicing facto
 O13619	schizosaccharomyces-pombe	O13619	pi028	O13619	1	4	Uncharacterized protein P22H7.03	
 O13620	schizosaccharomyces-pombe	O13620	mrd1	O13620	4	31	Multiple RNA-binding domain-containing protein 1	
 O13622	schizosaccharomyces-pombe	O13622	mss116	O13622	1	18	ATP-dependent RNA helicase mss116, mitochondrial	
-O13629	schizosaccharomyces-pombe	O13629	aim22	O13629	1	5	Putative lipoate-protein ligase A	
+O13629	schizosaccharomyces-pombe	O13629	aim22	O13629	2	7	Putative lipoate-protein ligase A	
 O13632	schizosaccharomyces-pombe	O13632	yvh1	O13632	0	10	Tyrosine-protein phosphatase yvh1	
 O13633	schizosaccharomyces-pombe	O13633	pi041	O13633	1	8	Uncharacterized J domain-containing protein C17A3.05c	
 O13636	schizosaccharomyces-pombe	O13636	tim50	O13636	4	17	Mitochondrial import inner membrane translocase subunit tim5	
@@ -114,8 +114,8 @@ O13690	schizosaccharomyces-pombe	O13690	SPAC11E3.11c	O13690	1	3	PH and SEC7 doma
 O13691	schizosaccharomyces-pombe	O13691	SPAC11E3.12	O13691	1	33	NADH-ubiquinone oxidoreductase 24 kDa subunit homolog C11E3.	
 O13693	schizosaccharomyces-pombe	O13693	SPAC11E3.14	O13693	0	1	Uncharacterized protein C11E3.14	
 O13695	schizosaccharomyces-pombe	O13695	SPAC11G7.01	O13695	0	2	Uncharacterized serine-rich protein C11G7.01	
-O13696	schizosaccharomyces-pombe	O13696	idh1	O13696	3	7	Isocitrate dehydrogenase	
-O13698	schizosaccharomyces-pombe	O13698	mct1	O13698	2	17	Malonyl CoA-acyl carrier protein transacylase, mitochondrial	
+O13696	schizosaccharomyces-pombe	O13696	idh1	O13696	6	10	Isocitrate dehydrogenase	
+O13698	schizosaccharomyces-pombe	O13698	mct1	O13698	3	18	Malonyl CoA-acyl carrier protein transacylase, mitochondrial	
 O13701	schizosaccharomyces-pombe	O13701	taf7	O13701	5	39	Transcription initiation factor TFIID subunit 7	
 O13702	schizosaccharomyces-pombe	O13702	gld1	O13702	0	3	Glycerol dehydrogenase 1	
 O13703	schizosaccharomyces-pombe	O13703	vts1	O13703	6	7	Vacuolar protein sorting-associated protein vts1	
@@ -288,7 +288,7 @@ O13916	schizosaccharomyces-pombe	O13916	hcn1	O13916	6	31	Anaphase-promoting comp
 O13917	schizosaccharomyces-pombe	O13917	hpt1	O13917	0	2	Hypoxanthine-guanine phosphoribosyltransferase	
 O13918	schizosaccharomyces-pombe	O13918	zhf1	O13918	1	2	Zinc homeostasis factor 1	
 O13919	schizosaccharomyces-pombe	O13919	pst2	O13919	6	20	Paired amphipathic helix protein pst2	
-O13920	schizosaccharomyces-pombe	O13920	mdm28	O13920	0	2	LETM1 domain-containing protein mdm28, mitochondrial	
+O13920	schizosaccharomyces-pombe	O13920	mdm28	O13920	1	3	LETM1 domain-containing protein mdm28, mitochondrial	
 O13921	schizosaccharomyces-pombe	O13921	msh1	O13921	2	19	MutS protein homolog 1	
 O13923	schizosaccharomyces-pombe	O13923	crn1	O13923	0	8	Coronin-like protein crn1	
 O13924	schizosaccharomyces-pombe	O13924	hrk1	O13924	1	3	Serine/threonine-protein kinase haspin homolog hrk1	
@@ -309,7 +309,7 @@ O13941	schizosaccharomyces-pombe	O13941	SPAC23H3.11c	O13941	0	1	Uncharacterized 
 O13944	schizosaccharomyces-pombe	O13944	osh3	O13944	2	7	Oxysterol-binding protein homolog C23H4.01c	
 O13945	schizosaccharomyces-pombe	O13945	ppk9	O13945	2	8	Protein kinase domain-containing protein ppk9	
 O13946	schizosaccharomyces-pombe	O13946	erv25	O13946	6	35	Endoplasmic reticulum vesicle protein 25	
-O13947	schizosaccharomyces-pombe	O13947	SPAC23H4.04	O13947	0	4	Mitochondrial tRNA-specific 2-thiouridylase 1	
+O13947	schizosaccharomyces-pombe	O13947	SPAC23H4.04	O13947	1	5	Mitochondrial tRNA-specific 2-thiouridylase 1	
 O13950	schizosaccharomyces-pombe	O13950	srp102	O13950	5	52	Signal recognition particle receptor subunit beta	
 O13951	schizosaccharomyces-pombe	O13951	iwr1	O13951	0	1	RNA polymerase II nuclear localization protein iwr1	
 O13952	schizosaccharomyces-pombe	O13952	cnl2	O13952	3	20	Inner kinetochore subunit cnl2	
@@ -324,7 +324,7 @@ O13961	schizosaccharomyces-pombe	O13961	cut11	O13961	15	374	Nuclear envelope pro
 O13962	schizosaccharomyces-pombe	O13962	SPAC24C9.02c	O13962	0	1	Putative holocytochrome-c1 synthase	
 O13964	schizosaccharomyces-pombe	O13964	SPAC24C9.04	O13964	3	26	Uncharacterized protein C24C9.04	
 O13965	schizosaccharomyces-pombe	O13965	mug70	O13965	0	2	Meiotically up-regulated gene 70 protein	
-O13966	schizosaccharomyces-pombe	O13966	SPAC24C9.06c	O13966	1	58	Aconitate hydratase, mitochondrial	
+O13966	schizosaccharomyces-pombe	O13966	SPAC24C9.06c	O13966	2	59	Aconitate hydratase, mitochondrial	
 O13968	schizosaccharomyces-pombe	O13968	SPAC24C9.08	O13968	1	3	Uncharacterized carboxypeptidase C24C9.08	
 O13969	schizosaccharomyces-pombe	O13969	SPAC24C9.09	O13969	1	33	Probable threonine--tRNA ligase, mitochondrial	
 O13970	schizosaccharomyces-pombe	O13970	mrp4	O13970	10	226	Small ribosomal subunit protein uS2m	

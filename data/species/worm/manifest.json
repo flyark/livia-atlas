@@ -37,18 +37,34 @@
     "pairsFpr5": 7833,
     "pairsFpr1": 2263
    }
+  },
+  {
+   "id": "mitomatch-6239",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Caenorhabditis elegans orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 408,
+    "pairs": 521,
+    "predictions": 521,
+    "runs": 521,
+    "pairsFpr10": 488,
+    "pairsFpr5": 441,
+    "pairsFpr1": 217
+   }
   }
  ],
  "counts": {
-  "proteins": 11162,
-  "pairs": 141987,
-  "predictions": 151254,
-  "runs": 142018,
-  "pairsFpr10": 12406,
-  "pairsFpr5": 8076,
-  "pairsFpr1": 2276,
-  "pairsInSeveral": 31,
-  "pairsTested": 141987
+  "proteins": 11174,
+  "pairs": 142235,
+  "predictions": 151775,
+  "runs": 142539,
+  "pairsFpr10": 12681,
+  "pairsFpr5": 8322,
+  "pairsFpr1": 2408,
+  "pairsInSeveral": 304,
+  "pairsTested": 142235
  },
  "files": {
   "proteins": "proteins.json",

@@ -60,7 +60,7 @@ TRM1C	arabidopsis-thaliana	Q9LYL0	TRM1C	Q9LYL0	1	20	tRNA (guanine(26)-N(2))-dime
 TRM1L	human	Q7Z2T5	TRMT1L	Q7Z2T5	6	262		
 TRM1L_HUMAN	human	Q7Z2T5	TRMT1L	Q7Z2T5	6	262		
 TRM1_HUMAN	human	Q9NXH9	TRMT1	Q9NXH9	5	168		
-TRM2	human	Q96GJ1	TRMT2B	Q96GJ1	0	67	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	w
+TRM2	human	Q96GJ1	TRMT2B	Q96GJ1	1	68	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	w
 TRM2	virus	F5H9W4	TRM2	F5H9W4	2	84	Tripartite terminase subunit 2	
 TRM2	virus	F5HGI9	TRM2	F5HGI9	1	167	Tripartite terminase subunit 2	
 TRM2	virus	O36418	TRM2	O36418	2	70	Tripartite terminase subunit 2	
@@ -77,7 +77,7 @@ TRM22	arabidopsis-thaliana	A0A1P8ARP0	TRM22	A0A1P8ARP0	2	15	DnaA initiator-assoc
 TRM24	arabidopsis-thaliana	Q9FLH6	TRM24	Q9FLH6	0	1	At5g51850	
 TRM27	arabidopsis-thaliana	Q9SJR3	TRM27	Q9SJR3	0	1	Nucleolin-like protein	
 TRM2A_HUMAN	human	Q8IZ69	TRMT2A	Q8IZ69	10	211		
-TRM2B_HUMAN	human	Q96GJ1	TRMT2B	Q96GJ1	0	67		
+TRM2B_HUMAN	human	Q96GJ1	TRMT2B	Q96GJ1	1	68		
 TRM3	arabidopsis-thaliana	A8MQH9	TRM3	A8MQH9	0	3	LONGIFOLIA protein	
 TRM3	human	Q13395	TARBP1	Q13395	5	110		
 TRM3	virus	F5HCU8	TRM3	F5HCU8	4	167	Tripartite terminase subunit 3	
@@ -97,7 +97,7 @@ TRM30	arabidopsis-thaliana	Q9FMZ3	TRM30	Q9FMZ3	0	45	DUF3741 domain-containing pr
 TRM32	arabidopsis-thaliana	F4HSD5	TRM32	F4HSD5	9	116	Protein TRM32	
 TRM33	arabidopsis-thaliana	B3H5G8	TRM33	B3H5G8	0	3	Phosphatidylinositol N-acetyglucosaminlytransferase subunit 	
 TRM4	arabidopsis-thaliana	Q0WNQ5	TRM4	Q0WNQ5	0	3	LONGIFOLIA protein	
-TRM4	human	Q08J23	NSUN2	Q08J23	26	411		
+TRM4	human	Q08J23	NSUN2	Q08J23	27	412		
 TRM4	methanocaldococcus-jannaschii	Q60343	trm4	Q60343	3	29	tRNA (cytosine(48)-C(5))-methyltransferase	
 TRM44	yeast	Q02648	TRM44	Q02648	0	15	tRNA (uracil-O(2)-)-methyltransferase	
 TRM44_HUMAN	human	Q8IYL2	TRMT44	Q8IYL2	5	71		
@@ -112,13 +112,13 @@ TRM5	arabidopsis-thaliana	Q9LY72	TRM5	Q9LY72	1	3	At3g63430
 TRM5	candida-albicans-237561	Q59TN1	TRM5	Q59TN1	0	3	tRNA (guanine(37)-N(1))-methyltransferase	
 TRM5	cladophialophora-carrionii	A0A1C1CKE0	trm5	A0A1C1CKE0	0	15	tRNA (guanine(37)-N1)-methyltransferase	
 TRM5	fonsecaea-pedrosoi-cbs-271-37	A0A0D2GR05	TRM5	A0A0D2GR05	0	3	tRNA (guanine(37)-N1)-methyltransferase	
-TRM5	human	Q32P41	TRMT5	Q32P41	2	85		
+TRM5	human	Q32P41	TRMT5	Q32P41	3	85		
 TRM5	madurella-mycetomatis	A0A175W3U3	TRM5	A0A175W3U3	0	7	tRNA (guanine(37)-N1)-methyltransferase	
 TRM5	schizosaccharomyces-pombe	Q8TFG7	trm5	Q8TFG7	0	1	tRNA (guanine(37)-N(1))-methyltransferase	
 TRM5	sporothrix-schenckii	U7Q587	TRM5	U7Q587	0	10	tRNA (guanine(37)-N1)-methyltransferase	
 TRM5	yeast	P38793	TRM5	P38793	0	9	tRNA (guanine(37)-N(1))-methyltransferase	
 TRM5B	methanocaldococcus-jannaschii	Q58293	trm5b	Q58293	0	1	tRNA (guanine(37)-N(1))-methyltransferase Trm5b	
-TRM5_HUMAN	human	Q32P41	TRMT5	Q32P41	2	85		
+TRM5_HUMAN	human	Q32P41	TRMT5	Q32P41	3	85		
 TRM6	arabidopsis-thaliana	F4J8I0	TRM6	F4J8I0	4	115	Serine-rich adhesin for platelets-like protein	
 TRM6	arabidopsis-thaliana	O80846	TRM6	O80846	1	7	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
 TRM6	candida-albicans-237561	Q5A6Q4	TRM6	Q5A6Q4	1	8	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
@@ -205,8 +205,8 @@ TRMD	salmonella-typhimurium	P36245	trmD	P36245	0	4	tRNA (guanine-N(1)-)-methyltr
 TRMD	shigella-dysenteriae-serotype-1	Q32CY1	trmD	Q32CY1	0	4	tRNA (guanine-N(1)-)-methyltransferase	
 TRMD	staphylococcus-aureus-93061	Q2FZ43	trmD	Q2FZ43	0	1	tRNA (guanine-N(1)-)-methyltransferase	
 TRMD	streptococcus-pneumoniae	Q8CWS4	trmD	Q8CWS4	0	1	tRNA (guanine-N(1)-)-methyltransferase	
-TRME	arabidopsis-thaliana	Q66GQ1	TRME	Q66GQ1	7	98	At1g78010	
-TRME-TYPE	worm	Q9XTZ1	mtcu-1	Q9XTZ1	1	43	TrmE-type G domain-containing protein	w
+TRME	arabidopsis-thaliana	Q66GQ1	TRME	Q66GQ1	8	99	At1g78010	
+TRME-TYPE	worm	Q9XTZ1	mtcu-1	Q9XTZ1	2	44	TrmE-type G domain-containing protein	w
 TRMG10	methanocaldococcus-jannaschii	Q58120	trmG10	Q58120	0	2	tRNA (guanine(10)-N2)-dimethyltransferase	
 TRMH	escherichia-coli-83333	P0AGJ2	trmH	P0AGJ2	1	42	tRNA (guanosine(18)-2'-O)-methyltransferase	
 TRMH	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GXF5	trmH	A0A0H3GXF5	0	63	tRNA (guanosine(18)-2'-O)-methyltransferase	
@@ -234,7 +234,7 @@ TRMO_HUMAN	human	Q9BU70	TRMO	Q9BU70	1	72
 TRMT-10A	worm	Q19789	trmt-10a	Q19789	0	2	tRNA (guanine(9)-N(1))-methyltransferase	
 TRMT-10C.1	worm	Q9BI62	trmt-10c.1	Q9BI62	0	3	RNA (guanine-9-)-methyltransferase domain-containing protein	
 TRMT-6	worm	Q94416	trmt-6	Q94416	2	11	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
-TRMT1	human	O75648	TRMU	O75648	8	136		
+TRMT1	human	O75648	TRMU	O75648	14	141		
 TRMT1	human	Q9NXH9	TRMT1	Q9NXH9	5	168	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	
 TRMT1	mus-musculus	Q3TX08	Trmt1	Q3TX08	0	39	tRNA (guanine(26)-N(2))-dimethyltransferase	
 TRMT1	rattus-norvegicus	A0A140UHW6	Trmt1	A0A140UHW6	0	12	tRNA (guanine(26)-N(2))-dimethyltransferase	
@@ -249,10 +249,13 @@ TRMT10B	human	Q6PF06	TRMT10B	Q6PF06	5	61	tRNA methyltransferase 10 homolog B (EC
 TRMT10B	mus-musculus	Q9D075	Trmt10b	Q9D075	1	8	tRNA methyltransferase 10 homolog B	
 TRMT10B	rattus-norvegicus	Q5RJK3	Trmt10b	Q5RJK3	0	16	tRNA methyltransferase 10 homolog B	
 TRMT10B	zebrafish	Q08BM0	trmt10b	Q08BM0	0	10	tRNA methyltransferase 10 homolog B	
-TRMT10C	human	Q7L0Y3	TRMT10C	Q7L0Y3	18	235	tRNA methyltransferase 10 homolog C (HBV pre-S2 trans-regula	
-TRMT10C	mus-musculus	Q3UFY8	Trmt10c	Q3UFY8	7	47	tRNA methyltransferase 10 homolog C	
-TRMT10C	rattus-norvegicus	Q5U2R4	Trmt10c	Q5U2R4	6	39	tRNA methyltransferase 10 homolog C	
+TRMT10C	human	Q7L0Y3	TRMT10C	Q7L0Y3	19	237	tRNA methyltransferase 10 homolog C (HBV pre-S2 trans-regula	
+TRMT10C	mus-musculus	Q3UFY8	Trmt10c	Q3UFY8	9	49	tRNA methyltransferase 10 homolog C	
+TRMT10C	pan-troglodytes	H2QN11	TRMT10C	H2QN11	3	4	tRNA methyltransferase 10 homolog C	
+TRMT10C	rattus-norvegicus	Q5U2R4	Trmt10c	Q5U2R4	7	41	tRNA methyltransferase 10 homolog C	
+TRMT10C	zebrafish	A0A8M1N3C0	trmt10c	A0A8M1N3C0	1	4	tRNA methyltransferase 10 homolog C	
 TRMT10C	zebrafish	B8JM40	trmt10c	B8JM40	3	12	tRNA methyltransferase 10 homolog C	
+TRMT10C.S	xenopus-laevis	A0A1L8H8F1	trmt10c.S	A0A1L8H8F1	1	2	tRNA methyltransferase 10 homolog C	
 TRMT11	dictyostelium-discoideum	Q54QA6	trmt11	Q54QA6	1	2	tRNA (guanine(10)-N(2))-methyltransferase TRMT11	
 TRMT11	human	Q7Z4G4	TRMT11	Q7Z4G4	8	106	tRNA (guanine(10)-N(2))-methyltransferase TRMT11 (EC 2.1.1.2	
 TRMT11	mus-musculus	Q9CWH5	Trmt11	Q9CWH5	1	33	tRNA (guanine(10)-N(2))-methyltransferase TRMT11	
@@ -276,13 +279,15 @@ TRMT1L	rattus-norvegicus	Q496Z9	Trmt1l	Q496Z9	0	11	tRNA (guanine(27)-N(2))-dimet
 TRMT1L	zebrafish	A0A8N7TEL4	trmt1l	A0A8N7TEL4	1	12	tRNA (guanine(27)-N(2))-dimethyltransferase	
 TRMT2A	fly	FBgn0036838	Trmt2a	Q9VVV7	3	19	tRNA (uracil(54)-C(5))-methyltransferase (EC 2.1.1.35)	
 TRMT2A	human	Q8IZ69	TRMT2A	Q8IZ69	10	211	tRNA (uracil-5-)-methyltransferase homolog A (EC 2.1.1.35) (	
-TRMT2B	human	Q96GJ1	TRMT2B	Q96GJ1	0	67	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	
+TRMT2B	human	Q96GJ1	TRMT2B	Q96GJ1	1	68	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	
 TRMT44	human	Q8IYL2	TRMT44	Q8IYL2	5	71	Probable tRNA (uracil-O(2)-)-methyltransferase (EC 2.1.1.211	
 TRMT5	dictyostelium-discoideum	Q54WD6	trmt5	Q54WD6	0	1	tRNA (guanine(37)-N(1))-methyltransferase	
-TRMT5	human	Q32P41	TRMT5	Q32P41	2	85	tRNA (guanine(37)-N(1))-methyltransferase (EC 2.1.1.228) (M1	
-TRMT5	mus-musculus	Q9D0C4	Trmt5	Q9D0C4	0	3	tRNA (guanine(37)-N(1))-methyltransferase	
-TRMT5	rattus-norvegicus	A0A0G2JU45	Trmt5	A0A0G2JU45	0	4	tRNA (guanine(37)-N1)-methyltransferase	
+TRMT5	human	Q32P41	TRMT5	Q32P41	3	85	tRNA (guanine(37)-N(1))-methyltransferase (EC 2.1.1.228) (M1	
+TRMT5	mus-musculus	Q9D0C4	Trmt5	Q9D0C4	1	4	tRNA (guanine(37)-N(1))-methyltransferase	
+TRMT5	pan-troglodytes	H2Q8F0	TRMT5	H2Q8F0	1	1	tRNA (guanine(37)-N1)-methyltransferase	
+TRMT5	rattus-norvegicus	A0A0G2JU45	Trmt5	A0A0G2JU45	1	5	tRNA (guanine(37)-N1)-methyltransferase	
 TRMT5	zebrafish	B8A5G9	trmt5	B8A5G9	0	3	tRNA (guanine(37)-N(1))-methyltransferase	
+TRMT5.L	xenopus-laevis	A0A8J0T9C6	trmt5.L	A0A8J0T9C6	1	1	tRNA (guanine(37)-N1)-methyltransferase	
 TRMT6	dictyostelium-discoideum	Q54UB1	trmt6	Q54UB1	1	5	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
 TRMT6	fly	FBgn0031832	Trmt6	Q8MS69	3	22	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
 TRMT6	human	Q9UJA5	TRMT6	Q9UJA5	14	131	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
@@ -297,14 +302,19 @@ TRMT61A	rattus-norvegicus	Q6AY46	Trmt61a	Q6AY46	2	6	tRNA (adenine(58)-N(1))-meth
 TRMT61A	worm	G5EGR8	CELE_W02A11.1	G5EGR8	1	5	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	w
 TRMT61A	zebrafish	Q6DI31	trmt61a	Q6DI31	4	6	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	w
 TRMT61A	zebrafish	Q6DI31	trmt61a	Q6DI31	4	6	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	w
-TRMT61B	human	Q9BVS5	TRMT61B	Q9BVS5	26	304	tRNA (adenine(58)-N(1))-methyltransferase, mitochondrial (EC	
+TRMT61B	human	Q9BVS5	TRMT61B	Q9BVS5	30	307	tRNA (adenine(58)-N(1))-methyltransferase, mitochondrial (EC	
+TRMT61B	pan-troglodytes	H2QHP4	TRMT61B	H2QHP4	5	5	tRNA (adenine(58)-N(1))-methyltransferase	
+TRMT61B	zebrafish	A0A8M1P392	trmt61b	A0A8M1P392	2	2	tRNA (adenine(58)-N(1))-methyltransferase	
 TRMT61B	zebrafish	X1WF30	trmt61b	X1WF30	3	6	tRNA (adenine(58)-N(1))-methyltransferase	
+TRMT61B.L	xenopus-laevis	A0A1L8G6N7	trmt61b.L	A0A1L8G6N7	2	4	tRNA (adenine(58)-N(1))-methyltransferase	
 TRMT9B	human	Q9P272	TRMT9B	Q9P272	9	43	Probable tRNA methyltransferase 9B (Probable tRNA methyltran	
 TRMT9B	mus-musculus	Q80WQ4	Trmt9b	Q80WQ4	1	2	Probable tRNA methyltransferase 9B	
 TRMT9B	rattus-norvegicus	D3ZQW3	Trmt9b	D3ZQW3	3	4	Probable tRNA methyltransferase 9B	
-TRMU	dictyostelium-discoideum	Q54I63	trmu	Q54I63	0	3	Mitochondrial tRNA-specific 2-thiouridylase 1	
-TRMU	human	O75648	TRMU	O75648	8	136	Mitochondrial tRNA-specific 2-thiouridylase 1 (EC 2.8.1.14) 	
-TRMU	mus-musculus	Q9DAT5	Trmu	Q9DAT5	0	4	Mitochondrial tRNA-specific 2-thiouridylase 1	
-TRMU	rattus-norvegicus	B1WC37	Trmu	B1WC37	1	4	Mitochondrial tRNA-specific 2-thiouridylase 1	
-TRMU	zebrafish	Q503J2	trmu	Q503J2	0	6	Mitochondrial tRNA-specific 2-thiouridylase 1	
+TRMU	dictyostelium-discoideum	Q54I63	trmu	Q54I63	1	4	Mitochondrial tRNA-specific 2-thiouridylase 1	
+TRMU	human	O75648	TRMU	O75648	14	141	Mitochondrial tRNA-specific 2-thiouridylase 1 (EC 2.8.1.14) 	
+TRMU	mus-musculus	Q9DAT5	Trmu	Q9DAT5	5	10	Mitochondrial tRNA-specific 2-thiouridylase 1	
+TRMU	pan-troglodytes	K7D7E3	TRMU	K7D7E3	5	5	Mitochondrial tRNA-specific 2-thiouridylase 1	
+TRMU	rattus-norvegicus	B1WC37	Trmu	B1WC37	3	7	Mitochondrial tRNA-specific 2-thiouridylase 1	
+TRMU	zebrafish	Q503J2	trmu	Q503J2	2	10	Mitochondrial tRNA-specific 2-thiouridylase 1	
+TRMU.L	xenopus-laevis	A0A8J0UIY5	trmu.L	A0A8J0UIY5	4	4	Mitochondrial tRNA-specific 2-thiouridylase 1	
 TRMY	methanocaldococcus-jannaschii	Q59034	trmY	Q59034	0	1	tRNA (pseudouridine(54)-N(1))-methyltransferase	

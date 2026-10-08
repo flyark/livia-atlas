@@ -8,11 +8,14 @@ P60008	human	P60008	H1-9P	P60008	48	330	Putative histone H1.9 (H1.9 linker histo
 P60010	yeast	P60010	ACT1	P60010	31	390	Actin	
 P60014	human	P60014	KRTAP10-10	P60014	2	42	Keratin-associated protein 10-10 (High sulfur keratin-associ	
 P60022	human	P60022	DEFB1	P60022	22	242	Beta-defensin 1 (BD-1) (hBD-1) (Defensin, beta 1)	
+P60025	pan-troglodytes	P60025	COX7C	P60025	2	2	Cytochrome c oxidase subunit 7C, mitochondrial	
 P60033	human	P60033	CD81	P60033	31	575	CD81 antigen (26 kDa cell surface protein TAPA-1) (Target of	
 P60039	arabidopsis-thaliana	P60039	RPL7C	P60039	26	615	Large ribosomal subunit protein uL30x	
 P60040	arabidopsis-thaliana	P60040	RPL7B	P60040	20	633	Large ribosomal subunit protein uL30y	
 P60041	mus-musculus	P60041	Sst	P60041	8	42	Somatostatin	
 P60042	rattus-norvegicus	P60042	Sst	P60042	6	43	Somatostatin	
+P60049	pan-troglodytes	P60049	PABPC5	P60049	5	6	Polyadenylate-binding protein 5	
+P60052	pan-troglodytes	P60052	SOD1	P60052	5	7	Superoxide dismutase [Cu-Zn]	
 P60059	human	P60059	SEC61G	P60059	38	346	Protein transport protein Sec61 subunit gamma	
 P60060	mus-musculus	P60060	Sec61g	P60060	5	183	Protein transport protein Sec61 subunit gamma	
 P60061	escherichia-coli-83333	P60061	adiC	P60061	0	7	Arginine/agmatine antiporter	
@@ -26,6 +29,7 @@ P60137	oryza-sativa-subsp-japonica	P60137	psbL	P60137	30	151	Photosystem II reac
 P60153	human	P60153	RNASE9	P60153	0	9	Inactive ribonuclease-like protein 9	
 P60170	virus	P60170	GP	P60170	0	8	Pre-small/secreted glycoprotein	
 P60174	human	P60174	TPI1	P60174	1	290	Triosephosphate isomerase (TIM) (EC 5.3.1.1) (Methylglyoxal 	
+P60182	pan-troglodytes	P60182	COX8A	P60182	1	1	Cytochrome c oxidase subunit 8A, mitochondrial	
 P60191	mus-musculus	P60191	Rims4	P60191	0	3	Regulating synaptic membrane exocytosis protein 4	
 P60192	rattus-norvegicus	P60192	Snapin	P60192	14	86	SNARE-associated protein Snapin	
 P60195	salmonella-typhimurium	P60195	rbn	P60195	0	3	Ribonuclease BN	
@@ -92,13 +96,14 @@ P60570	rattus-norvegicus	P60570	Panx1	P60570	1	25	Pannexin-1
 P60571	rattus-norvegicus	P60571	Panx2	P60571	1	3	Pannexin-2	
 P60584	escherichia-coli-83333	P60584	caiA	P60584	2	26	Crotonobetainyl-CoA reductase	
 P60595	escherichia-coli-83333	P60595	hisH	P60595	1	2	Imidazole glycerol phosphate synthase subunit HisH	
-P60602	human	P60602	ROMO1	P60602	19	64	Reactive oxygen species modulator 1 (ROS modulator 1) (Epidi	
-P60603	mus-musculus	P60603	Romo1	P60603	2	16	Reactive oxygen species modulator 1	
+P60602	human	P60602	ROMO1	P60602	21	67	Reactive oxygen species modulator 1 (ROS modulator 1) (Epidi	
+P60603	mus-musculus	P60603	Romo1	P60603	3	18	Reactive oxygen species modulator 1	
 P60604	human	P60604	UBE2G2	P60604	48	158	Ubiquitin-conjugating enzyme E2 G2 (EC 2.3.2.23) (E2 ubiquit	
 P60605	mus-musculus	P60605	Ube2g2	P60605	10	28	Ubiquitin-conjugating enzyme E2 G2	
 P60606	human	P60606	CTXN1	P60606	36	148	Cortexin-1	
 P60608	human	P60608	ERVFC1-1	P60608	5	8	Endogenous retrovirus group FC1 member 1 Env polyprotein (En	
 P60611	staphylococcus-aureus-93061	P60611	lytR	P60611	1	1	Transcriptional regulatory protein LytR	
+P60620	arabidopsis-thaliana	P60620	COX1	P60620	4	4	Cytochrome c oxidase subunit 1	
 P60622	zebrafish	P60622	zfpm1	P60622	0	16	Zinc finger protein ZFPM1	
 P60624	escherichia-coli-83333	P60624	rplX	P60624	2	152	Large ribosomal subunit protein uL24	
 P60626	salmonella-typhimurium	P60626	rplX	P60626	3	194	Large ribosomal subunit protein uL24	
@@ -164,7 +169,7 @@ P60903	human	P60903	S100A10	P60903	41	482	Protein S100-A10 (Calpactin I light ch
 P60904	mus-musculus	P60904	Dnajc5	P60904	6	69	DnaJ homolog subfamily C member 5	
 P60905	rattus-norvegicus	P60905	Dnajc5	P60905	10	90	DnaJ homolog subfamily C member 5	
 P60906	escherichia-coli-83333	P60906	hisS	P60906	0	13	Histidine--tRNA ligase	
-P60924	rattus-norvegicus	P60924	Dele1	P60924	4	26	DAP3-binding cell death enhancer 1	
+P60924	rattus-norvegicus	P60924	Dele1	P60924	11	33	DAP3-binding cell death enhancer 1	
 P60932	escherichia-coli-83333	P60932	uppP	P60932	0	4	Undecaprenyl-diphosphatase	
 P60935	streptococcus-pneumoniae	P60935	uppP	P60935	0	3	Undecaprenyl-diphosphatase	
 P60953	human	P60953	CDC42	P60953	297	1950	Cell division control protein 42 homolog (EC 3.6.5.2) (G25K 	

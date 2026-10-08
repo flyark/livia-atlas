@@ -21,18 +21,34 @@
     "pairsFpr5": 24101,
     "pairsFpr1": 9003
    }
+  },
+  {
+   "id": "mitomatch-3702",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Arabidopsis thaliana orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 237,
+    "pairs": 254,
+    "predictions": 254,
+    "runs": 254,
+    "pairsFpr10": 236,
+    "pairsFpr5": 210,
+    "pairsFpr1": 114
+   }
   }
  ],
  "counts": {
-  "proteins": 17778,
-  "pairs": 459966,
-  "predictions": 459966,
-  "runs": 459966,
-  "pairsFpr10": 37250,
-  "pairsFpr5": 24074,
-  "pairsFpr1": 8996,
-  "pairsInSeveral": 0,
-  "pairsTested": 459966
+  "proteins": 17797,
+  "pairs": 460119,
+  "predictions": 460220,
+  "runs": 460220,
+  "pairsFpr10": 37405,
+  "pairsFpr5": 24208,
+  "pairsFpr1": 9069,
+  "pairsInSeveral": 101,
+  "pairsTested": 460119
  },
  "files": {
   "proteins": "proteins.json",

@@ -42,7 +42,7 @@ SURE	pseudomonas-aeruginosa	Q9HY05	surE	Q9HY05	0	3	5'-nucleotidase SurE
 SURE	salmonella-typhimurium	P66881	surE	P66881	0	11	5'/3'-nucleotidase SurE	
 SURE	shigella-dysenteriae-serotype-1	Q32CI6	surE	Q32CI6	0	9	5/3-nucleotidase SurE	
 SURF	human	P60508	ERVFRD-1	P60508	8	155	Syncytin-2 (Endogenous retrovirus group FRD member 1) (Envel	w
-SURF-1	human	Q15526	SURF1	Q15526	3	210		
+SURF-1	human	Q15526	SURF1	Q15526	4	211		
 SURF-2	human	Q15527	SURF2	Q15527	7	92	Surfeit locus protein 2 (Surf-2)	w
 SURF-3	human	P62424	RPL7A	P62424	59	915		
 SURF-4	human	O15260	SURF4	O15260	1	250		
@@ -50,13 +50,16 @@ SURF-5	human	Q15528	MED22	Q15528	46	605	Mediator of RNA polymerase II transcript
 SURF-6	human	O75683	SURF6	O75683	57	472		
 SURF1	arabidopsis-thaliana	Q9SE51	SURF1	Q9SE51	0	4	Surfeit locus protein 1	
 SURF1	fly	FBgn0029117	Surf1	Q9U4F3	1	33	SURF1-like protein	
-SURF1	human	Q15526	SURF1	Q15526	3	210	Surfeit locus protein 1	
-SURF1	mus-musculus	P09925	Surf1	P09925	0	18	Surfeit locus protein 1	
-SURF1	rattus-norvegicus	Q9QXU2	Surf1	Q9QXU2	0	22	Surfeit locus protein 1	
+SURF1	human	Q15526	SURF1	Q15526	4	211	Surfeit locus protein 1	
+SURF1	mus-musculus	P09925	Surf1	P09925	1	19	Surfeit locus protein 1	
+SURF1	pan-troglodytes	A0A2I3RZJ3	SURF1	A0A2I3RZJ3	1	1	SURF1-like protein	
+SURF1	rattus-norvegicus	Q9QXU2	Surf1	Q9QXU2	1	23	Surfeit locus protein 1	
 SURF1-1	dictyostelium-discoideum	Q556J9	surf1-1	Q556J9	1	2	SURF1-like protein	
 SURF1-LIKE	fly	FBgn0029117	Surf1	Q9U4F3	1	33	SURF1-like protein	w
 SURF1-LIKE	worm	Q9N5N8	sft-1	Q9N5N8	0	4	SURF1-like protein	w
-SURF1_HUMAN	human	Q15526	SURF1	Q15526	3	210		
+SURF1-LIKE	zebrafish	A1L248	im:6898613	A1L248	1	1	SURF1-like protein	w
+SURF1.L	xenopus-laevis	A0A1L8F679	surf1.L	A0A1L8F679	1	1	SURF1-like protein	
+SURF1_HUMAN	human	Q15526	SURF1	Q15526	4	211		
 SURF2	human	Q15527	SURF2	Q15527	7	92	Surfeit locus protein 2 (Surf-2)	
 SURF2_HUMAN	human	Q15527	SURF2	Q15527	7	92		
 SURF3	human	P62424	RPL7A	P62424	59	915		
@@ -127,7 +130,7 @@ SURFACE	human	Q08722	CD47	Q08722	98	605	Leukocyte surface antigen CD47 (Antigeni
 SURFACE	human	Q12860	CNTN1	Q12860	19	165	Contactin-1 (Glycoprotein gp135) (Neural cell surface protei	w
 SURFACE	human	Q12918	KLRB1	Q12918	133	471	Killer cell lectin-like receptor subfamily B member 1 (C-typ	w
 SURFACE	human	Q14254	FLOT2	Q14254	19	457	Flotillin-2 (Epidermal surface antigen) (ESA) (Membrane comp	w
-SURFACE	human	Q14596	NBR1	Q14596	171	688	Next to BRCA1 gene 1 protein (Cell migration-inducing gene 1	w
+SURFACE	human	Q14596	NBR1	Q14596	188	705	Next to BRCA1 gene 1 protein (Cell migration-inducing gene 1	w
 SURFACE	human	Q15303	ERBB4	Q15303	46	415	Receptor tyrosine-protein kinase erbB-4 (EC 2.7.10.1) (Proto	w
 SURFACE	human	Q15506	SPA17	Q15506	15	93	Sperm surface protein Sp17 (Cancer/testis antigen 22) (CT22)	w
 SURFACE	human	Q6Q8B3	CD200R1L	Q6Q8B3	12	48	Cell surface glycoprotein CD200 receptor 2 (CD200 cell surfa	w
@@ -202,7 +205,7 @@ SURFEIT	fly	FBgn0038746	Surf6	Q9VDS6	17	77	Surfeit locus protein 6 homolog	w
 SURFEIT	human	O15260	SURF4	O15260	1	250	Surfeit locus protein 4	w
 SURFEIT	human	O75683	SURF6	O75683	57	472	Surfeit locus protein 6	w
 SURFEIT	human	P62424	RPL7A	P62424	59	915	Large ribosomal subunit protein eL8 (60S ribosomal protein L	w
-SURFEIT	human	Q15526	SURF1	Q15526	3	210	Surfeit locus protein 1	w
+SURFEIT	human	Q15526	SURF1	Q15526	4	211	Surfeit locus protein 1	w
 SURFEIT	human	Q15527	SURF2	Q15527	7	92	Surfeit locus protein 2 (Surf-2)	w
 SURFEIT	human	Q15528	MED22	Q15528	46	605	Mediator of RNA polymerase II transcription subunit 22 (Medi	w
 SURFEIT	worm	Q18864	sft-4	Q18864	0	47	Surfeit locus protein 4 homolog	w

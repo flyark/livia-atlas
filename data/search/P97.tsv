@@ -2,7 +2,7 @@ P97-INTERACTING	human	Q8NHG7	SVIP	Q8NHG7	14	124	Small VCP/p97-interacting protei
 P97-MAPK	human	Q16659	MAPK6	Q16659	379	1696	Mitogen-activated protein kinase 6 (MAP kinase 6) (MAPK 6) (	w
 P97084	salmonella-typhimurium	P97084	cobD	P97084	0	3	Threonine-phosphate decarboxylase	
 P97245	helicobacter-pylori	P97245	cagT	P97245	1	8	CAG pathogenicity island protein 12	
-P97287	mus-musculus	P97287	Mcl1	P97287	15	77	Induced myeloid leukemia cell differentiation protein Mcl-1 	
+P97287	mus-musculus	P97287	Mcl1	P97287	18	80	Induced myeloid leukemia cell differentiation protein Mcl-1 	
 P97288	mus-musculus	P97288	Htr4	P97288	5	16	5-hydroxytryptamine receptor 4	
 P97290	mus-musculus	P97290	Serping1	P97290	2	32	Plasma protease C1 inhibitor	
 P97291	mus-musculus	P97291	Cdh8	P97291	10	32	Cadherin-8	
@@ -41,7 +41,7 @@ P97357	mus-musculus	P97357	Taf1a	P97357	2	46	TATA box-binding protein-associated
 P97358	mus-musculus	P97358	Taf1b	P97358	7	44	TATA box-binding protein-associated factor RNA polymerase I 	
 P97360	mus-musculus	P97360	Etv6	P97360	1	16	Transcription factor ETV6	
 P97361	mus-musculus	P97361	Bpifa1	P97361	0	12	BPI fold-containing family A member 1	
-P97363	mus-musculus	P97363	Sptlc2	P97363	10	17	Serine palmitoyltransferase 2	
+P97363	mus-musculus	P97363	Sptlc2	P97363	13	20	Serine palmitoyltransferase 2	
 P97366	mus-musculus	P97366	Evi5	P97366	5	9	Ecotropic viral integration site 5 protein	
 P97367	mus-musculus	P97367	Meis2	P97367	10	27	Homeobox protein Meis2	
 P97368	mus-musculus	P97368	Meis3	P97368	3	7	Homeobox protein Meis3	
@@ -55,7 +55,7 @@ P97378	mus-musculus	P97378	Il12rb2	P97378	7	28	Interleukin-12 receptor subunit b
 P97379	mus-musculus	P97379	G3bp2	P97379	12	52	Ras GTPase-activating protein-binding protein 2	
 P97382	mus-musculus	P97382	Kcnab3	P97382	6	50	Voltage-gated potassium channel subunit beta-3	
 P97384	mus-musculus	P97384	Anxa11	P97384	1	38	Annexin A11	
-P97386	mus-musculus	P97386	Lig3	P97386	3	40	DNA ligase 3	
+P97386	mus-musculus	P97386	Lig3	P97386	7	45	DNA ligase 3	
 P97390	mus-musculus	P97390	Vps45	P97390	8	44	Vacuolar protein sorting-associated protein 45	
 P97391	mus-musculus	P97391	Pla2g5	P97391	2	17	Phospholipase A2 group V	
 P97399	mus-musculus	P97399	Dspp	P97399	0	16	Dentin sialophosphoprotein	
@@ -69,7 +69,7 @@ P97428	mus-musculus	P97428	Rgs16	P97428	15	25	Regulator of G-protein signaling 1
 P97429	mus-musculus	P97429	Anxa4	P97429	0	23	Annexin A4	
 P97430	mus-musculus	P97430	Slpi	P97430	4	8	Antileukoproteinase	
 P97431	mus-musculus	P97431	Irf6	P97431	0	11	Interferon regulatory factor 6	
-P97432	mus-musculus	P97432	Nbr1	P97432	14	75	Next to BRCA1 gene 1 protein	
+P97432	mus-musculus	P97432	Nbr1	P97432	30	93	Next to BRCA1 gene 1 protein	
 P97435	mus-musculus	P97435	Tmprss15	P97435	0	3	Enteropeptidase	
 P97436	mus-musculus	P97436	Nkx3-1	P97436	1	8	Homeobox protein Nkx-3.1	
 P97438	mus-musculus	P97438	Kcnk2	P97438	12	26	Potassium channel subfamily K member 2	
@@ -78,7 +78,7 @@ P97441	mus-musculus	P97441	Slc30a3	P97441	1	4	Probable proton-coupled zinc antip
 P97443	mus-musculus	P97443	Smyd1	P97443	2	19	Histone-lysine N-methyltransferase Smyd1	
 P97447	mus-musculus	P97447	Fhl1	P97447	0	21	Four and a half LIM domains protein 1	
 P97449	mus-musculus	P97449	Anpep	P97449	1	29	Aminopeptidase N	
-P97450	mus-musculus	P97450	Atp5pf	P97450	1	67	ATP synthase peripheral stalk subunit F6, mitochondrial	
+P97450	mus-musculus	P97450	Atp5pf	P97450	2	68	ATP synthase peripheral stalk subunit F6, mitochondrial	
 P97452	mus-musculus	P97452	Bop1	P97452	17	143	Ribosome biogenesis protein BOP1	
 P97454	mus-musculus	P97454	Smad5	P97454	11	56	Mothers against decapentaplegic homolog 5	
 P97457	mus-musculus	P97457	Myl11	P97457	1	36	Myosin regulatory light chain 11	
@@ -98,14 +98,14 @@ P97471	mus-musculus	P97471	Smad4	P97471	12	186	Mothers against decapentaplegic h
 P97473	mus-musculus	P97473	Tarbp2	P97473	3	54	RISC-loading complex subunit TARBP2	
 P97474	mus-musculus	P97474	Pitx2	P97474	2	22	Pituitary homeobox 2	
 P97477	mus-musculus	P97477	Aurka	P97477	13	135	Aurora kinase A	
-P97478	mus-musculus	P97478	Coq7	P97478	2	10	NADPH-dependent 3-demethoxyubiquinone 3-hydroxylase, mitocho	
+P97478	mus-musculus	P97478	Coq7	P97478	13	22	NADPH-dependent 3-demethoxyubiquinone 3-hydroxylase, mitocho	
 P97480	mus-musculus	P97480	Eya3	P97480	2	9	Protein phosphatase EYA3	
 P97481	mus-musculus	P97481	Epas1	P97481	24	102	Endothelial PAS domain-containing protein 1	
 P97484	mus-musculus	P97484	Pirb	P97484	0	41	Paired immunoglobulin-like receptor B	
 P97489	mus-musculus	P97489	Gata5	P97489	1	13	Transcription factor GATA-5	
 P97490	mus-musculus	P97490	Adcy8	P97490	6	26	Adenylate cyclase type 8	
 P97492	mus-musculus	P97492	Rgs14	P97492	27	208	Regulator of G-protein signaling 14	
-P97493	mus-musculus	P97493	Txn2	P97493	4	26	Thioredoxin, mitochondrial	
+P97493	mus-musculus	P97493	Txn2	P97493	16	38	Thioredoxin, mitochondrial	
 P97494	mus-musculus	P97494	Gclc	P97494	3	27	Glutamate--cysteine ligase catalytic subunit	
 P97496	mus-musculus	P97496	Smarcc1	P97496	29	111	SWI/SNF complex subunit SMARCC1	
 P97497	mus-musculus	P97497	Shbg	P97497	0	14	Sex hormone-binding globulin	
@@ -122,7 +122,7 @@ P97525	rattus-norvegicus	P97525	Tnfrsf8	P97525	5	38	Tumor necrosis factor recept
 P97527	rattus-norvegicus	P97527	Cntn5	P97527	4	11	Contactin-5	
 P97528	rattus-norvegicus	P97528	Cntn6	P97528	5	11	Contactin-6	
 P97531	rattus-norvegicus	P97531	Trip10	P97531	5	42	Cdc42-interacting protein 4	
-P97532	rattus-norvegicus	P97532	Mpst	P97532	0	27	3-mercaptopyruvate sulfurtransferase	
+P97532	rattus-norvegicus	P97532	Mpst	P97532	7	34	3-mercaptopyruvate sulfurtransferase	
 P97534	rattus-norvegicus	P97534	Fkbp1b	P97534	7	91	Peptidyl-prolyl cis-trans isomerase FKBP1B	
 P97536	rattus-norvegicus	P97536	Cand1	P97536	9	126	Cullin-associated NEDD8-dissociated protein 1	
 P97538	rattus-norvegicus	P97538	Mras	P97538	9	23	Ras-related protein M-Ras	
@@ -134,12 +134,12 @@ P97553	rattus-norvegicus	P97553	Efna1	P97553	14	35	Ephrin-A1
 P97554	rattus-norvegicus	P97554	Dnajb9	P97554	5	71	DnaJ homolog subfamily B member 9	
 P97557	rattus-norvegicus	P97557	Kcnv1	P97557	2	77	Potassium voltage-gated channel subfamily V member 1	
 P97562	rattus-norvegicus	P97562	Acox2	P97562	4	19	Peroxisomal acyl-coenzyme A oxidase 2	
-P97564	rattus-norvegicus	P97564	Gpam	P97564	0	6	Glycerol-3-phosphate acyltransferase 1, mitochondrial	
+P97564	rattus-norvegicus	P97564	Gpam	P97564	1	7	Glycerol-3-phosphate acyltransferase 1, mitochondrial	
 P97570	rattus-norvegicus	P97570	Pla2g6	P97570	0	8	85/88 kDa calcium-independent phospholipase A2	
 P97571	rattus-norvegicus	P97571	Capn1	P97571	3	12	Calpain-1 catalytic subunit	
 P97573	rattus-norvegicus	P97573	Inpp5d	P97573	13	39	Phosphatidylinositol 3,4,5-trisphosphate 5-phosphatase 1	
 P97574	rattus-norvegicus	P97574	Stc1	P97574	0	2	Stanniocalcin-1	
-P97576	rattus-norvegicus	P97576	Grpel1	P97576	5	52	GrpE protein homolog 1, mitochondrial	
+P97576	rattus-norvegicus	P97576	Grpel1	P97576	7	53	GrpE protein homolog 1, mitochondrial	
 P97577	rattus-norvegicus	P97577	Fez1	P97577	2	14	Fasciculation and elongation protein zeta-1	
 P97578	rattus-norvegicus	P97578	Fez2	P97578	3	13	Fasciculation and elongation protein zeta-2	
 P97580	rattus-norvegicus	P97580	Msmb	P97580	2	11	Beta-microseminoprotein	
@@ -160,7 +160,7 @@ P97609	rattus-norvegicus	P97609	Hr	P97609	2	3	Lysine-specific demethylase hairle
 P97610	rattus-norvegicus	P97610	Syt12	P97610	2	8	Synaptotagmin-12	
 P97612	rattus-norvegicus	P97612	Faah	P97612	0	13	Fatty-acid amide hydrolase 1	
 P97613	rattus-norvegicus	P97613	Pttg1	P97613	3	36	Securin	
-P97615	rattus-norvegicus	P97615	Txn2	P97615	4	27	Thioredoxin, mitochondrial	
+P97615	rattus-norvegicus	P97615	Txn2	P97615	15	38	Thioredoxin, mitochondrial	
 P97616	rattus-norvegicus	P97616	Adarb2	P97616	1	12	Double-stranded RNA-specific editase B2	
 P97629	rattus-norvegicus	P97629	Lnpep	P97629	3	24	Leucyl-cystinyl aminopeptidase	
 P97633	rattus-norvegicus	P97633	Csnk1a1	P97633	5	93	Casein kinase I isoform alpha	
@@ -223,9 +223,9 @@ P97819	mus-musculus	P97819	Pla2g6	P97819	1	12	85/88 kDa calcium-independent phos
 P97820	mus-musculus	P97820	Map4k4	P97820	2	22	Mitogen-activated protein kinase kinase kinase kinase 4	
 P97821	mus-musculus	P97821	Ctsc	P97821	1	43	Dipeptidyl peptidase 1	
 P97822	mus-musculus	P97822	Anp32e	P97822	4	30	Acidic leucine-rich nuclear phosphoprotein 32 family member 	
-P97823	mus-musculus	P97823	Lypla1	P97823	0	11	Acyl-protein thioesterase 1	
+P97823	mus-musculus	P97823	Lypla1	P97823	12	25	Acyl-protein thioesterase 1	
 P97825	mus-musculus	P97825	Jpt1	P97825	0	3	Jupiter microtubule associated homolog 1	
-P97826	rattus-norvegicus	P97826	Star	P97826	1	20	Steroidogenic acute regulatory protein, mitochondrial	
+P97826	rattus-norvegicus	P97826	Star	P97826	10	29	Steroidogenic acute regulatory protein, mitochondrial	
 P97829	rattus-norvegicus	P97829	Cd47	P97829	9	66	Leukocyte surface antigen CD47	
 P97830	rattus-norvegicus	P97830	Uncx	P97830	3	6	Homeobox protein unc-4 homolog	
 P97831	rattus-norvegicus	P97831	Twist2	P97831	5	13	Twist-related protein 2	
@@ -240,7 +240,7 @@ P97842	rattus-norvegicus	P97842	Htr7	P97842	2	16	5-hydroxytryptamine receptor 7
 P97844	rattus-norvegicus	P97844	Rgs1	P97844	15	36	Regulator of G-protein signaling 1	
 P97846	rattus-norvegicus	P97846	Cntnap1	P97846	3	15	Contactin-associated protein 1	
 P97849	rattus-norvegicus	P97849	Slc27a1	P97849	0	35	Long-chain fatty acid transport protein 1	
-P97852	rattus-norvegicus	P97852	Hsd17b4	P97852	0	19	Peroxisomal multifunctional enzyme type 2	
+P97852	rattus-norvegicus	P97852	Hsd17b4	P97852	0	20	Peroxisomal multifunctional enzyme type 2	
 P97855	mus-musculus	P97855	G3bp1	P97855	14	83	Ras GTPase-activating protein-binding protein 1	
 P97857	mus-musculus	P97857	Adamts1	P97857	4	30	A disintegrin and metalloproteinase with thrombospondin moti	
 P97861	mus-musculus	P97861	Krt86	P97861	23	25	Keratin, type II cuticular Hb6	
@@ -259,8 +259,8 @@ P97885	rattus-norvegicus	P97885	Cxcl5	P97885	18	65	C-X-C motif chemokine 5
 P97887	rattus-norvegicus	P97887	Psen1	P97887	9	85	Presenilin-1	
 P97888	rattus-norvegicus	P97888	Ppp2r2c	P97888	7	38	Serine/threonine-protein phosphatase 2A 55 kDa regulatory su	
 P97926	mus-musculus	P97926	Oxtr	P97926	1	21	Oxytocin receptor	
-P97930	mus-musculus	P97930	Dtymk	P97930	0	9	Thymidylate kinase	
-P97931	mus-musculus	P97931	Ung	P97931	2	17	Uracil-DNA glycosylase	
+P97930	mus-musculus	P97930	Dtymk	P97930	2	11	Thymidylate kinase	
+P97931	mus-musculus	P97931	Ung	P97931	10	25	Uracil-DNA glycosylase	
 P97943	rattus-norvegicus	P97943	Scarb1	P97943	2	151	Scavenger receptor class B member 1	
 P97946	mus-musculus	P97946	Vegfd	P97946	6	14	Vascular endothelial growth factor D	
 P97947	rattus-norvegicus	P97947	Nr0b2	P97947	8	51	Nuclear receptor subfamily 0 group B member 2	

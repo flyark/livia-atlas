@@ -1,5 +1,5 @@
 GAT	fly	FBgn0039915	Gat	Q9V4E7	1	4	Transporter	
-GAT	human	Q6IB77	GLYAT	Q6IB77	9	127		
+GAT	human	Q6IB77	GLYAT	Q6IB77	27	145		
 GAT	leishmania-infantum	E9AG27	GAT	E9AG27	0	8	Glycerol-3-phosphate acyl transferase	
 GAT-1	human	P30531	SLC6A1	P30531	8	170	Sodium- and chloride-dependent GABA transporter 1 (GAT-1) (S	w
 GAT-2	human	Q9NSD5	SLC6A13	Q9NSD5	1	63	Sodium- and chloride-dependent GABA transporter 2 (GAT-2) (S	w
@@ -17,9 +17,9 @@ GAT3	yeast	Q07928	GAT3	Q07928	0	5	Protein GAT3
 GAT4	yeast	P40569	GAT4	P40569	0	4	Protein GAT4	
 GATA	arabidopsis-thaliana	Q9LI77	GATA	Q9LI77	2	8	Glutamyl-tRNA(Gln) amidotransferase subunit A, chloroplastic	
 GATA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PNN2	gatA	Q9PNN2	3	15	Glutamyl-tRNA(Gln) amidotransferase subunit A	
-GATA	dictyostelium-discoideum	Q54L63	gatA	Q54L63	2	3	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	
+GATA	dictyostelium-discoideum	Q54L63	gatA	Q54L63	3	4	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	
 GATA	escherichia-coli-83333	P69828	gatA	P69828	1	5	PTS system galactitol-specific EIIA component	
-GATA	fly	FBgn0260779	GatA	Q9VE09	2	18	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	
+GATA	fly	FBgn0260779	GatA	Q9VE09	3	19	Glutamyl-tRNA(Gln) amidotransferase subunit A, mitochondrial	
 GATA	glycine-max	A0A0R0F9I6	GATA	A0A0R0F9I6	5	25	Glutamyl-tRNA(Gln) amidotransferase subunit A, chloroplastic	
 GATA	helicobacter-pylori	P56114	gatA	P56114	2	13	Glutamyl-tRNA(Gln) amidotransferase subunit A	
 GATA	human	Q86YP4	GATAD2A	Q86YP4	65	310	Transcriptional repressor p66-alpha (Hp66alpha) (GATA zinc f	w
@@ -145,27 +145,36 @@ GATAD2B	zebrafish	A0A8M1N9R4	gatad2b	A0A8M1N9R4	3	25	Transcriptional repressor p
 GATAE	fly	FBgn0038391	GATAe	Q9VF00	64	440	GATAe, isoform A (LD08432p) (Transcription factor dGATAe)	w
 GATAE	fly	FBgn0038391	GATAe	Q9VF00	64	440	GATAe, isoform A (LD08432p) (Transcription factor dGATAe)	w
 GATASE	fly	FBgn0003189	r	P05990	1	98	Multifunctional protein r (Protein rudimentary) [Includes: G	w
-GATA_HUMAN	human	Q9H0R6	QRSL1	Q9H0R6	13	146		
-GATB	arabidopsis-thaliana	Q9FV81	GATB	Q9FV81	3	35	Glutamyl-tRNA(Gln) amidotransferase subunit B, chloroplastic	
+GATA_DANRE	zebrafish	F1QAJ4	qrsl1	F1QAJ4	6	36		
+GATA_DROME	fly	FBgn0260779	GatA	Q9VE09	3	19		
+GATA_HUMAN	human	Q9H0R6	QRSL1	Q9H0R6	18	151		
+GATA_YEAST	yeast	Q03557	HER2	Q03557	2	9		
+GATB	arabidopsis-thaliana	Q9FV81	GATB	Q9FV81	5	37	Glutamyl-tRNA(Gln) amidotransferase subunit B, chloroplastic	
 GATB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PN98	gatB	Q9PN98	3	108	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	
 GATB	escherichia-coli-83333	P37188	gatB	P37188	2	7	PTS system galactitol-specific EIIB component	
-GATB	fly	FBgn0290399	GatB	Q9VCD0	2	26	Glutamyl-tRNA amidotransferase, subunit B	
+GATB	fly	FBgn0290399	GatB	Q9VCD0	4	28	Glutamyl-tRNA amidotransferase, subunit B	
 GATB	helicobacter-pylori	O25372	gatB	O25372	2	6	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	
-GATB	human	O75879	GATB	O75879	11	173	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
+GATB	human	O75879	GATB	O75879	13	175	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
 GATB	methanocaldococcus-jannaschii	Q57624	gatB	Q57624	2	5	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	
-GATB	mus-musculus	Q99JT1	Gatb	Q99JT1	2	18	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
+GATB	mus-musculus	Q99JT1	Gatb	Q99JT1	3	19	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
 GATB	mycobacterium-leprae	O33107	gatB	O33107	4	53	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	
 GATB	mycobacterium-tuberculosis	P9WN61	gatB	P9WN61	2	11	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	
 GATB	neisseria-gonorrhoeae	Q5F8V0	gatB	Q5F8V0	2	5	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	
 GATB	nocardia-brasiliensis	K0F3P2	gatB	K0F3P2	2	26	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	
 GATB	oryza-sativa-subsp-japonica	Q2R2Z0	GATB	Q2R2Z0	2	60	Glutamyl-tRNA(Gln) amidotransferase subunit B, chloroplastic	
+GATB	pan-troglodytes	H2QQA1	GATB	H2QQA1	4	4	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
 GATB	pseudomonas-aeruginosa	Q9HVT7	gatB	Q9HVT7	2	15	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	
+GATB	rattus-norvegicus	A0A8I6AHE4	Gatb	A0A8I6AHE4	4	4	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
 GATB	rattus-norvegicus	M0R4L6	Gatb	M0R4L6	3	17	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
 GATB	shigella-dysenteriae-serotype-1	Q32EB1	gatB	Q32EB1	0	3	Galactitol-specific enzyme IIB of phosphotransferase system	
 GATB	staphylococcus-aureus-93061	Q2FWZ0	gatB	Q2FWZ0	2	6	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	
 GATB	streptococcus-pneumoniae	Q8DR11	gatB	Q8DR11	2	6	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit B	
-GATB	zebrafish	Q7T010	gatb	Q7T010	2	14	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
-GATB_HUMAN	human	O75879	GATB	O75879	11	173		
+GATB	zebrafish	Q7T010	gatb	Q7T010	4	16	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
+GATB.L	xenopus-laevis	A0A1L8HUH6	gatb.L	A0A1L8HUH6	4	4	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
+GATB_DANRE	zebrafish	Q7T010	gatb	Q7T010	4	16		
+GATB_DROME	fly	FBgn0290399	GatB	Q9VCD0	4	28		
+GATB_HUMAN	human	O75879	GATB	O75879	13	175		
+GATB_YEAST	yeast	P33893	PET112	P33893	5	25		
 GATC	arabidopsis-thaliana	F4JV80	GATC	F4JV80	4	299	Glutamyl-tRNA(Gln) amidotransferase subunit C, chloroplastic	
 GATC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PIA5	gatC	Q9PIA5	2	16	Glutamyl-tRNA(Gln) amidotransferase subunit C	
 GATC	dictyostelium-discoideum	Q54PU2	gatc	Q54PU2	2	2	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	
@@ -178,12 +187,17 @@ GATC	mycobacterium-tuberculosis	P9WN59	gatC	P9WN59	2	11	Glutamyl-tRNA(Gln) amido
 GATC	neisseria-gonorrhoeae	Q5F8U7	gatC	Q5F8U7	2	3	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit C	
 GATC	nocardia-brasiliensis	K0F527	gatC	K0F527	4	22	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit C	
 GATC	oryza-sativa-subsp-japonica	Q7XZZ1	GATC	Q7XZZ1	2	316	Glutamyl-tRNA(Gln) amidotransferase subunit C, chloroplastic	
+GATC	pan-troglodytes	H2Q711	GATC	H2Q711	2	2	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	
 GATC	pseudomonas-aeruginosa	Q9HVT9	gatC	Q9HVT9	2	10	Glutamyl-tRNA(Gln) amidotransferase subunit C	
-GATC	rattus-norvegicus	D3ZY68	Gatc	D3ZY68	2	4	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	
+GATC	rattus-norvegicus	D3ZY68	Gatc	D3ZY68	3	5	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	
 GATC	rattus-norvegicus	M0R3K2	Gatc	M0R3K2	8	136	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	
 GATC	staphylococcus-aureus-93061	Q2FWY8	gatC	Q2FWY8	2	6	Aspartyl/glutamyl-tRNA(Asn/Gln) amidotransferase subunit C	
 GATC	streptococcus-pneumoniae	P59661	gatC	P59661	2	6	Glutamyl-tRNA(Gln) amidotransferase subunit C	
 GATC	zebrafish	A2BHB7	gatc	A2BHB7	2	4	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	
+GATC.L	xenopus-laevis	A0A8J1KZZ9	gatc.L	A0A8J1KZZ9	2	2	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	
+GATC_CAEEL	worm	Q9BI40	Y66D12A.7	Q9BI40	2	3		
+GATC_DANRE	zebrafish	A2BHB7	gatc	A2BHB7	2	4		
+GATC_DROME	fly	FBgn0064115	GatC	Q86BL4	2	3		
 GATC_HUMAN	human	O43716	GATC	O43716	6	143		
 GATD	escherichia-coli-83333	P0A9S3	gatD	P0A9S3	0	3	Galactitol 1-phosphate 5-dehydrogenase	
 GATD	methanocaldococcus-jannaschii	Q60331	gatD	Q60331	1	4	Glutamyl-tRNA(Gln) amidotransferase subunit D	
@@ -195,21 +209,24 @@ GATD1	human	Q8NB37	GATD1	Q8NB37	11	106	Glutamine amidotransferase-like class 1 d
 GATD1	mus-musculus	Q8BFQ8	Gatd1	Q8BFQ8	2	9	Glutamine amidotransferase-like class 1 domain-containing pr	
 GATD1	zebrafish	Q3B7H1	gatd1	Q3B7H1	1	21	Glutamine amidotransferase-like class 1 domain-containing pr	
 GATD1_HUMAN	human	Q8WUU5	GATAD1	Q8WUU5	30	196		
-GATD3	human	P0DPI2	GATD3	P0DPI2	3	106	Glutamine amidotransferase-like class 1 domain-containing pr	
-GATD3	mus-musculus	Q9D172	Gatd3	Q9D172	0	5	Glutamine amidotransferase-like class 1 domain-containing pr	
+GATD3	human	P0DPI2	GATD3	P0DPI2	4	107	Glutamine amidotransferase-like class 1 domain-containing pr	
+GATD3	mus-musculus	Q9D172	Gatd3	Q9D172	2	7	Glutamine amidotransferase-like class 1 domain-containing pr	
 GATD3	zebrafish	F1QCN0	gatd3	F1QCN0	0	1	Glutamine amidotransferase-like class 1 domain-containing pr	
-GATD3A	human	P0DPI2	GATD3	P0DPI2	3	106		
+GATD3A	human	P0DPI2	GATD3	P0DPI2	4	107		
 GATE	human	P15822	HIVEP1	P15822	36	217	Zinc finger protein 40 (Cirhin interaction protein) (CIRIP) 	w
 GATE	methanocaldococcus-jannaschii	Q60325	gatE	Q60325	1	4	Glutamyl-tRNA(Gln) amidotransferase subunit E	
 GATED	human	Q8IZF0	NALCN	Q8IZF0	1	109	Sodium leak channel NALCN (CanIon) (Sodium leak channel non-	w
 GATED	zebrafish	Q0GFG2	cnga2a	Q0GFG2	1	4	Cyclic nucleotide gated channel subunit alpha 2a isoform X1	w
 GATL10	arabidopsis-thaliana	Q9LHD2	GATL10	Q9LHD2	0	1	Probable galacturonosyltransferase-like 10	
 GATL4	arabidopsis-thaliana	Q9M8J2	GATL4	Q9M8J2	0	1	Probable galacturonosyltransferase-like 4	
-GATM	human	P50440	GATM	P50440	13	225	Glycine amidinotransferase, mitochondrial (EC 2.1.4.1) (L-ar	
-GATM	mus-musculus	Q9D964	Gatm	Q9D964	0	3	Glycine amidinotransferase, mitochondrial	
-GATM	rattus-norvegicus	P50442	Gatm	P50442	0	5	Glycine amidinotransferase, mitochondrial	
-GATM	zebrafish	Q6PH19	gatm	Q6PH19	0	4	Glycine amidinotransferase, mitochondrial	
-GATM_HUMAN	human	P50440	GATM	P50440	13	225		
+GATM	human	P50440	GATM	P50440	20	232	Glycine amidinotransferase, mitochondrial (EC 2.1.4.1) (L-ar	
+GATM	mus-musculus	Q9D964	Gatm	Q9D964	6	9	Glycine amidinotransferase, mitochondrial	
+GATM	pan-troglodytes	H2Q9D1	GATM	H2Q9D1	5	6	Glycine amidinotransferase	
+GATM	rattus-norvegicus	P50442	Gatm	P50442	5	11	Glycine amidinotransferase, mitochondrial	
+GATM	xenopus-laevis	Q9IAJ6	gatm	Q9IAJ6	5	5	Glycine amidinotransferase, mitochondrial	
+GATM	zebrafish	Q6PH19	gatm	Q6PH19	4	8	Glycine amidinotransferase, mitochondrial	
+GATM_DANRE	zebrafish	Q6PH19	gatm	Q6PH19	4	8		
+GATM_HUMAN	human	P50440	GATM	P50440	20	232		
 GATOR	fly	FBgn0024509	Sec13	Q9V3J4	51	378	Protein SEC13 homolog (GATOR complex protein SEC13) (Secreto	w
 GATOR	fly	FBgn0030800	Nprl2	Q9VXA0	42	463	GATOR complex protein NPRL2 (Nitrogen permease regulator 2-l	w
 GATOR	fly	FBgn0033247	Nup44A	Q7K2X8	11	122	Nucleoporin seh1 (GATOR complex protein seh1) (Nucleoporin c	w

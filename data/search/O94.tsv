@@ -11,7 +11,7 @@ O94235	schizosaccharomyces-pombe	O94235	mph1	O94235	1	6	Serine/threonine-protein
 O94236	schizosaccharomyces-pombe	O94236	moe1	O94236	7	114	Eukaryotic translation initiation factor 3 subunit D	
 O94238	schizosaccharomyces-pombe	O94238	rpl14	O94238	28	225	Large ribosomal subunit protein eL14	
 O94241	schizosaccharomyces-pombe	O94241	arp6	O94241	8	28	Actin-like protein arp6	
-O94242	schizosaccharomyces-pombe	O94242	msd1	O94242	1	10	Aspartate--tRNA ligase, mitochondrial	
+O94242	schizosaccharomyces-pombe	O94242	msd1	O94242	3	12	Aspartate--tRNA ligase, mitochondrial	
 O94243	schizosaccharomyces-pombe	O94243	mug9	O94243	0	4	Meiotically up-regulated gene 9 protein	
 O94244	schizosaccharomyces-pombe	O94244	mis16	O94244	4	38	Histone acetyltransferase type B subunit 2	
 O94246	schizosaccharomyces-pombe	O94246	SPCC737.06c	O94246	1	4	Putative glutamate--cysteine ligase regulatory subunit	
@@ -48,7 +48,7 @@ O94280	schizosaccharomyces-pombe	O94280	SPBC2G5.01	O94280	3	57	UPF0674 endoplasm
 O94281	schizosaccharomyces-pombe	O94281	ckb2	O94281	2	51	Casein kinase II subunit beta-2	
 O94282	schizosaccharomyces-pombe	O94282	ncs6	O94282	1	3	Cytoplasmic tRNA 2-thiolation protein 1	
 O94283	schizosaccharomyces-pombe	O94283	erv41	O94283	1	4	ER-derived vesicles protein 41	
-O94284	schizosaccharomyces-pombe	O94284	hmt2	O94284	0	12	Sulfide:quinone oxidoreductase, mitochondrial	
+O94284	schizosaccharomyces-pombe	O94284	hmt2	O94284	1	13	Sulfide:quinone oxidoreductase, mitochondrial	
 O94285	schizosaccharomyces-pombe	O94285	rpc25	O94285	5	30	DNA-directed RNA polymerase III subunit rpc8	
 O94286	schizosaccharomyces-pombe	O94286	adi1	O94286	0	2	Acireductone dioxygenase	
 O94288	schizosaccharomyces-pombe	O94288	noc3	O94288	8	76	Nucleolar complex-associated protein 3	
@@ -123,7 +123,7 @@ O94375	schizosaccharomyces-pombe	O94375	rex4	O94375	0	6	RNA exonuclease 4
 O94376	schizosaccharomyces-pombe	O94376	med21	O94376	5	63	Mediator of RNA polymerase II transcription subunit 21	
 O94377	schizosaccharomyces-pombe	O94377	atp17	O94377	3	22	ATP synthase subunit f, mitochondrial	
 O94378	schizosaccharomyces-pombe	O94378	SPBC1604.12	O94378	0	1	Uncharacterized protein C1604.12	
-O94379	schizosaccharomyces-pombe	O94379	mrpl32	O94379	16	160	Large ribosomal subunit protein bL32m	
+O94379	schizosaccharomyces-pombe	O94379	mrpl32	O94379	17	160	Large ribosomal subunit protein bL32m	
 O94380	schizosaccharomyces-pombe	O94380	gpi16	O94380	4	4	GPI transamidase component PIG-T homolog	
 O94383	schizosaccharomyces-pombe	O94383	psm1	O94383	7	27	Structural maintenance of chromosomes protein 1	
 O94384	schizosaccharomyces-pombe	O94384	ely5	O94384	3	19	Uncharacterized protein ely5	
@@ -163,12 +163,13 @@ O94424	schizosaccharomyces-pombe	O94424	tfg2	O94424	14	92	Transcription initiati
 O94425	schizosaccharomyces-pombe	O94425	SPBC660.05	O94425	0	10	WW domain-containing protein C660.05	
 O94426	schizosaccharomyces-pombe	O94426	SPBC660.06	O94426	4	72	WW domain-containing protein C660.06	
 O94427	schizosaccharomyces-pombe	O94427	atg38	O94427	0	8	PtdIns3K complex I subunit atg38	
-O94429	schizosaccharomyces-pombe	O94429	mef2	O94429	3	58	Ribosome-releasing factor 2, mitochondrial	
+O94429	schizosaccharomyces-pombe	O94429	mef2	O94429	4	60	Ribosome-releasing factor 2, mitochondrial	
 O94431	schizosaccharomyces-pombe	O94431	egt2	O94431	0	8	Hercynylcysteine sulfoxide lyase	
 O94432	schizosaccharomyces-pombe	O94432	SPBC660.15	O94432	2	21	Uncharacterized RNA-binding protein C660.15	
 O94433	schizosaccharomyces-pombe	O94433	SPBC660.17c	O94433	0	7	Uncharacterized membrane protein C660.17c	
 O94435	schizosaccharomyces-pombe	O94435	mug35	O94435	0	3	Meiotically up-regulated gene 35 protein	
 O94436	schizosaccharomyces-pombe	O94436	tfg3	O94436	5	84	Transcription initiation factor TFIID subunit 14	
+O94437	schizosaccharomyces-pombe	O94437	SPAC22H12.03	O94437	1	1	Abhydrolase domain-containing protein C22H12.03	
 O94438	schizosaccharomyces-pombe	O94438	rps102	O94438	15	272	Small ribosomal subunit protein eS1B	
 O94440	schizosaccharomyces-pombe	O94440	SPAC637.03	O94440	0	1	Uncharacterized protein C637.03	
 O94441	schizosaccharomyces-pombe	O94441	ypp1	O94441	4	22	Putative cargo-transport protein ypp1	
@@ -334,6 +335,7 @@ O94656	schizosaccharomyces-pombe	O94656	atg16	O94656	1	5	Autophagy protein 16
 O94657	schizosaccharomyces-pombe	O94657	xdj1	O94657	4	8	DnaJ protein homolog xdj1	
 O94658	schizosaccharomyces-pombe	O94658	rpl3602	O94658	12	226	Large ribosomal subunit protein eL36B	
 O94659	schizosaccharomyces-pombe	O94659	nog1	O94659	13	132	Probable nucleolar GTP-binding protein 1	
+O94660	schizosaccharomyces-pombe	O94660	nit2	O94660	1	1	Probable hydrolase nit2	
 O94661	schizosaccharomyces-pombe	O94661	gyp10	O94661	1	1	GTPase-activating protein gyp10	
 O94662	schizosaccharomyces-pombe	O94662	SPBC651.04	O94662	0	1	Uncharacterized protein C651.04	
 O94663	schizosaccharomyces-pombe	O94663	dot2	O94663	5	26	Vacuolar-sorting protein dot2	
@@ -377,7 +379,7 @@ O94706	schizosaccharomyces-pombe	O94706	taf8	O94706	11	16	Transcription initiati
 O94707	schizosaccharomyces-pombe	O94707	rxt3	O94707	3	25	Transcriptional regulatory protein rxt3	
 O94708	schizosaccharomyces-pombe	O94708	SPCC1259.08	O94708	1	9	Uncharacterized protein C1259.08	
 O94709	schizosaccharomyces-pombe	O94709	SPCC1259.09c	O94709	2	14	Probable pyruvate dehydrogenase protein X component, mitocho	
-O94710	schizosaccharomyces-pombe	O94710	pgp1	O94710	0	7	tRNA N6-adenosine threonylcarbamoyltransferase, mitochondria	
+O94710	schizosaccharomyces-pombe	O94710	pgp1	O94710	1	8	tRNA N6-adenosine threonylcarbamoyltransferase, mitochondria	
 O94711	schizosaccharomyces-pombe	O94711	gyp2	O94711	1	3	GTPase-activating protein gyp2	
 O94712	schizosaccharomyces-pombe	O94712	gid1	O94712	4	11	GID complex subunit 1	
 O94713	schizosaccharomyces-pombe	O94713	meu27	O94713	0	2	Meiotic expression up-regulated protein 27	
@@ -431,7 +433,7 @@ O94818	human	O94818	NOL4	O94818	10	67	Nucleolar protein 4 (Nucleolar-localized p
 O94819	human	O94819	KBTBD11	O94819	2	39	Kelch repeat and BTB domain-containing protein 11 (Chronic m	
 O94822	human	O94822	LTN1	O94822	16	197	E3 ubiquitin-protein ligase listerin (EC 2.3.2.27) (RING fin	
 O94823	human	O94823	ATP10B	O94823	2	36	Phospholipid-transporting ATPase VB (EC 7.6.2.1) (ATPase cla	
-O94826	human	O94826	TOMM70	O94826	20	179	Mitochondrial import receptor subunit TOM70 (Mitochondrial p	
+O94826	human	O94826	TOMM70	O94826	21	180	Mitochondrial import receptor subunit TOM70 (Mitochondrial p	
 O94827	human	O94827	PLEKHG5	O94827	39	140	Pleckstrin homology domain-containing family G member 5 (PH 	
 O94829	human	O94829	IPO13	O94829	9	253	Importin-13 (Imp13) (Karyopherin-13) (Kap13) (Ran-binding pr	
 O94830	human	O94830	DDHD2	O94830	5	80	Triacylglycerol hydrolase DDHD2 (TAG hydrolase) (EC 3.1.1.3)	
@@ -457,7 +459,7 @@ O94892	human	O94892	ZNF432	O94892	1	34	Zinc finger protein 432
 O94898	human	O94898	LRIG2	O94898	35	203	Leucine-rich repeats and immunoglobulin-like domains protein	
 O94900	human	O94900	TOX	O94900	93	450	Thymocyte selection-associated high mobility group box prote	
 O94901	human	O94901	SUN1	O94901	26	216	SUN domain-containing protein 1 (Protein unc-84 homolog A) (	
-O94903	human	O94903	PLPBP	O94903	10	123	Pyridoxal phosphate homeostasis protein (PLP homeostasis pro	
+O94903	human	O94903	PLPBP	O94903	19	132	Pyridoxal phosphate homeostasis protein (PLP homeostasis pro	
 O94905	human	O94905	ERLIN2	O94905	13	329	Erlin-2 (Endoplasmic reticulum lipid raft-associated protein	
 O94906	human	O94906	PRPF6	O94906	40	638	Pre-mRNA-processing factor 6 (Androgen receptor N-terminal d	
 O94907	human	O94907	DKK1	O94907	29	260	Dickkopf-related protein 1 (Dickkopf-1) (Dkk-1) (hDkk-1) (SK	
@@ -469,7 +471,7 @@ O94916	human	O94916	NFAT5	O94916	29	203	Nuclear factor of activated T-cells 5 (N
 O94919	human	O94919	ENDOD1	O94919	15	239	Endonuclease domain-containing 1 protein (EC 3.1.30.-)	
 O94921	human	O94921	CDK14	O94921	238	1492	Cyclin-dependent kinase 14 (EC 2.7.11.22) (Cell division pro	
 O94923	human	O94923	GLCE	O94923	6	76	D-glucuronyl C5-epimerase (EC 5.1.3.17) (Heparan sulfate C5-	
-O94925	human	O94925	GLS	O94925	14	251	Glutaminase kidney isoform, mitochondrial (GLS) (EC 3.5.1.2)	
+O94925	human	O94925	GLS	O94925	16	253	Glutaminase kidney isoform, mitochondrial (GLS) (EC 3.5.1.2)	
 O94927	human	O94927	HAUS5	O94927	48	293	HAUS augmin-like complex subunit 5	
 O94929	human	O94929	ABLIM3	O94929	9	70	Actin-binding LIM protein 3 (abLIM-3) (Actin-binding LIM pro	
 O94933	human	O94933	SLITRK3	O94933	13	135	SLIT and NTRK-like protein 3	

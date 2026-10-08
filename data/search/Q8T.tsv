@@ -36,7 +36,7 @@ Q8T127	dictyostelium-discoideum	Q8T127	DDB_G0276347	Q8T127	3	4	Microtubule inter
 Q8T130	dictyostelium-discoideum	Q8T130	gpaK	Q8T130	2	24	Guanine nucleotide-binding protein-like alpha-11 subunit	
 Q8T131	dictyostelium-discoideum	Q8T131	pccB	Q8T131	1	14	Propionyl-CoA carboxylase beta chain, mitochondrial	
 Q8T135	dictyostelium-discoideum	Q8T135	kif5	Q8T135	0	3	Kinesin-related protein 5	
-Q8T137	dictyostelium-discoideum	Q8T137	gsr	Q8T137	1	42	Glutathione reductase	
+Q8T137	dictyostelium-discoideum	Q8T137	gsr	Q8T137	2	43	Glutathione reductase	
 Q8T148	dictyostelium-discoideum	Q8T148	DDB_G0274255	Q8T148	0	3	Uncharacterized protein	
 Q8T154	dictyostelium-discoideum	Q8T154	udkB	Q8T154	0	8	Uridine-cytidine kinase B	
 Q8T158	dictyostelium-discoideum	Q8T158	fam91	Q8T158	0	1	Protein FAM91 homolog	
@@ -49,7 +49,7 @@ Q8T1E3	dictyostelium-discoideum	Q8T1E3	amd1	Q8T1E3	0	1	S-adenosylmethionine deca
 Q8T1E6	dictyostelium-discoideum	Q8T1E6	DDB_G0275563	Q8T1E6	0	23	Uncharacterized protein	
 Q8T1F9	dictyostelium-discoideum	Q8T1F9	DDB_G0275127	Q8T1F9	2	25	Transcription factor TFIIIC triple barrel domain-containing 	
 Q8T1V4	dictyostelium-discoideum	Q8T1V4	rps27	Q8T1V4	13	247	Small ribosomal subunit protein eS27	
-Q8T1V6	dictyostelium-discoideum	Q8T1V6	ndufs4	Q8T1V6	1	77	NADH dehydrogenase	
+Q8T1V6	dictyostelium-discoideum	Q8T1V6	ndufs4	Q8T1V6	2	77	NADH dehydrogenase	
 Q8T1V7	dictyostelium-discoideum	Q8T1V7	polr3d	Q8T1V7	3	34	DNA-directed RNA polymerase III subunit rpc4	
 Q8T1Z7	dictyostelium-discoideum	Q8T1Z7	DDB_G0271914	Q8T1Z7	1	1	CMP/dCMP deaminase, zinc-binding domain-containing protein	
 Q8T268	dictyostelium-discoideum	Q8T268	DDB_G0272502	Q8T268	0	1	Uncharacterized protein	
@@ -76,7 +76,7 @@ Q8T2R0	dictyostelium-discoideum	Q8T2R0	DDB_G0275133	Q8T2R0	0	1	MJ1316 RNA cyclic
 Q8T2R4	dictyostelium-discoideum	Q8T2R4	DDB_G0276927	Q8T2R4	0	1	SRPBCC family protein	
 Q8T2T4	dictyostelium-discoideum	Q8T2T4	DDB_G0275117	Q8T2T4	0	1	F-box domain-containing protein	
 Q8T2T5	dictyostelium-discoideum	Q8T2T5	sdhC	Q8T2T5	3	10	Succinate dehydrogenase cytochrome b560 subunit, mitochondri	
-Q8T2T7	dictyostelium-discoideum	Q8T2T7	top3	Q8T2T7	2	18	DNA topoisomerase 3	
+Q8T2T7	dictyostelium-discoideum	Q8T2T7	top3	Q8T2T7	3	19	DNA topoisomerase 3	
 Q8T390	fly	FBgn0038659	EndoA	Q8T390	8	128	Endophilin-A (SH3 domain-containing GRB2-like protein)	
 Q8T3A5	worm	Q8T3A5	CELE_Y62F5A.9	Q8T3A5	0	1	Uncharacterized protein	
 Q8T3B7	worm	Q8T3B7	noah-1	Q8T3B7	0	3	NOmpA Homolog (Drosophila nompA: no mechanoreceptor potentia	
@@ -93,6 +93,7 @@ Q8T3R9	fly	FBgn0038892	CG15498	Q8T3R9	0	0	AT03531p
 Q8T3U2	fly	FBgn0033912	RpS23	Q8T3U2	32	445	Small ribosomal subunit protein uS12 (40S ribosomal protein 	
 Q8T3U8	fly	FBgn0037995	Adk1	Q8T3U8	8	94	Adenosine kinase (AK) (EC 2.7.1.20) (Adenosine 5'-phosphotra	
 Q8T3V6	fly	FBgn0014023	mRpL47	Q8T3V6	15	241	Large ribosomal subunit protein uL29m	
+Q8T3V6_DROME	fly	FBgn0014023	mRpL47	Q8T3V6	15	241		
 Q8T3V7	fly	FBgn0051803	Rsph9	Q8T3V7	2	16	Radial spoke head protein 9 homolog	
 Q8T3W3	fly	FBgn0037483	CG14609	Q8T3W3	1	1	AT27838p	
 Q8T3W6	fly	FBgn0036924	hale	Q8T3W6	18	133	AT27166p (Hale-bopp)	
@@ -129,9 +130,11 @@ Q8T4F2	fly	FBgn0030620	CG5662	Q8T4F2	6	22	AT01806p
 Q8T4F7	fly	FBgn0000578	ena	Q8T4F7	55	143	Protein enabled	
 Q8T4G0	fly	FBgn0034501	CG13868	Q8T4G0	0	3		
 Q8T4G5	fly	FBgn0036702	Afg3l2	Q8T4G5	4	115	AFG3 like matrix AAA peptidase subunit 2, isoform A (EC 3.4.	
+Q8T4G5_DROME	fly	FBgn0036702	Afg3l2	Q8T4G5	4	115		
 Q8T4G7	fly	FBgn0033498	CG12209	Q8T4G7	1	9	AT13439p	
 Q8T4H6	fly	FBgn0032894	CG14402	Q8T4H6	8	15	AT08210p	
 Q8T4H8	fly	FBgn0033020	COX4L	Q8T4H8	7	97	Cytochrome c oxidase subunit 4	
+Q8T4H8_DROME	fly	FBgn0033020	COX4L	Q8T4H8	7	97		
 Q8T4I0	fly	FBgn0036161	Khk2	Q8T4I0	5	56	AT07524p	
 Q8T4I5	fly	FBgn0051128	CG31128	Q8T4I5	0	2	AT04449p	
 Q8T5S1	worm	Q8T5S1	nhx-2	Q8T5S1	0	3	Na(+)/H(+) exchanger protein 2	
@@ -197,13 +200,13 @@ Q8T9H8	fly	FBgn0051908	CG31908	Q8T9H8	0	4	SUZ domain-containing protein 1
 Q8T9L5	fly	FBgn0038167	Lkb1	Q8T9L5	139	1197	non-specific serine/threonine protein kinase (EC 2.7.11.1)	
 Q8T9N5	schistosoma-mansoni	Q8T9N5	?	Q8T9N5	4	47	Thioredoxin	
 Q8T9S7	dictyostelium-discoideum	Q8T9S7	pteN	Q8T9S7	0	5	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase and d	
-Q8T9W2	dictyostelium-discoideum	Q8T9W2	abcB5	Q8T9W2	2	20	ABC transporter B family member 5	
+Q8T9W2	dictyostelium-discoideum	Q8T9W2	abcB5	Q8T9W2	4	22	ABC transporter B family member 5	
 Q8T9W4	dictyostelium-discoideum	Q8T9W4	abcB3	Q8T9W4	0	3	ABC transporter B family member 3	
 Q8T9W8	fly	FBgn0264954	fd3F	Q8T9W8	81	366	forkhead domain 3F	
 Q8TA03	dictyostelium-discoideum	Q8TA03	gnd	Q8TA03	0	1	6-phosphogluconate dehydrogenase, decarboxylating	
 Q8TA47	worm	Q8TA47	CELE_Y51F10.7	Q8TA47	0	3	MD-2-related lipid-recognition domain-containing protein	
 Q8TA52	worm	Q8TA52	ift-20	Q8TA52	12	38	Intraflagellar transport protein 20 homolog	
-Q8TA83	worm	Q8TA83	dnj-10	Q8TA83	4	19	DnaJ homolog dnj-10	
+Q8TA83	worm	Q8TA83	dnj-10	Q8TA83	5	20	DnaJ homolog dnj-10	
 Q8TA86	human	Q8TA86	RP9	Q8TA86	6	123	Retinitis pigmentosa 9 protein (Pim-1-associated protein) (P	
 Q8TA94	human	Q8TA94	ZNF563	Q8TA94	9	40	Zinc finger protein 563	
 Q8TAA1	human	Q8TAA1	RNASE11	Q8TAA1	2	24	Putative inactive ribonuclease 11 (RNase 11)	
@@ -264,11 +267,11 @@ Q8TAY7	human	Q8TAY7	FAM110D	Q8TAY7	14	43	Protein FAM110D
 Q8TAZ6	human	Q8TAZ6	CMTM2	Q8TAZ6	1	26	CKLF-like MARVEL transmembrane domain-containing protein 2 (	
 Q8TB03	human	Q8TB03	CXorf38	Q8TB03	2	257	Uncharacterized protein CXorf38	
 Q8TB05	human	Q8TB05	UBALD1	Q8TB05	0	11	UBA-like domain-containing protein 1	
-Q8TB22	human	Q8TB22	SPATA20	Q8TB22	10	95	Spermatogenesis-associated protein 20 (Sperm-specific protei	
+Q8TB22	human	Q8TB22	SPATA20	Q8TB22	16	102	Spermatogenesis-associated protein 20 (Sperm-specific protei	
 Q8TB24	human	Q8TB24	RIN3	Q8TB24	124	633	Ras and Rab interactor 3 (Ras interaction/interference prote	
 Q8TB33	human	Q8TB33	LINC01560	Q8TB33	0	2	Putative uncharacterized protein encoded by LINC01560	
-Q8TB36	human	Q8TB36	GDAP1	Q8TB36	8	70	Ganglioside-induced differentiation-associated protein 1 (GD	
-Q8TB37	human	Q8TB37	NUBPL	Q8TB37	7	108	Iron-sulfur cluster transfer protein NUBPL (IND1 homolog) (N	
+Q8TB36	human	Q8TB36	GDAP1	Q8TB36	15	77	Ganglioside-induced differentiation-associated protein 1 (GD	
+Q8TB37	human	Q8TB37	NUBPL	Q8TB37	8	109	Iron-sulfur cluster transfer protein NUBPL (IND1 homolog) (N	
 Q8TB40	human	Q8TB40	ABHD4	Q8TB40	1	67	(Lyso)-N-acylphosphatidylethanolamine lipase (EC 3.1.1.-) (A	
 Q8TB45	human	Q8TB45	DEPTOR	Q8TB45	16	195	DEP domain-containing mTOR-interacting protein (hDEPTOR) (DE	
 Q8TB52	human	Q8TB52	FBXO30	Q8TB52	17	142	F-box only protein 30	
@@ -360,7 +363,7 @@ Q8TCE9	human	Q8TCE9	LGALS14	Q8TCE9	5	63	Placental protein 13-like (Charcot-Leyde
 Q8TCF1	human	Q8TCF1	ZFAND1	Q8TCF1	14	66	AN1-type zinc finger protein 1 (Zinc finger AN1-type-contain	
 Q8TCG1	human	Q8TCG1	CIP2A	Q8TCG1	22	273	Protein CIP2A (Cancerous inhibitor of PP2A) (p90 autoantigen	
 Q8TCG2	human	Q8TCG2	PI4K2B	Q8TCG2	1	91	Phosphatidylinositol 4-kinase type 2-beta (EC 2.7.1.67) (Pho	
-Q8TCG5	human	Q8TCG5	CPT1C	Q8TCG5	7	99	Palmitoyl thioesterase CPT1C (EC 3.1.2.22) (Carnitine O-palm	
+Q8TCG5	human	Q8TCG5	CPT1C	Q8TCG5	10	102	Palmitoyl thioesterase CPT1C (EC 3.1.2.22) (Carnitine O-palm	
 Q8TCH9	human	Q8TCH9	YV004	Q8TCH9	0	2	Putative uncharacterized protein FLJ23865	
 Q8TCI5	human	Q8TCI5	CIMAP3	Q8TCI5	4	76	Ciliary microtubule-associated protein 3 (Protein pitchfork)	
 Q8TCJ0	human	Q8TCJ0	FBXO25	Q8TCJ0	28	224	F-box only protein 25	
@@ -395,7 +398,7 @@ Q8TD16	human	Q8TD16	BICD2	Q8TD16	103	475	Protein bicaudal D homolog 2 (Bic-D 2)
 Q8TD17	human	Q8TD17	ZNF398	Q8TD17	13	53	Zinc finger protein 398 (Zinc finger DNA-binding protein p52	
 Q8TD19	human	Q8TD19	NEK9	Q8TD19	39	231	Serine/threonine-protein kinase Nek9 (EC 2.7.11.38) (Nercc1 	
 Q8TD20	human	Q8TD20	SLC2A12	Q8TD20	3	153	Solute carrier family 2, facilitated glucose transporter mem	
-Q8TD22	human	Q8TD22	SFXN5	Q8TD22	10	390	Sideroflexin-5	
+Q8TD22	human	Q8TD22	SFXN5	Q8TD22	11	391	Sideroflexin-5	
 Q8TD23	human	Q8TD23	ZNF675	Q8TD23	3	71	Zinc finger protein 675 (TRAF6-binding zinc finger protein) 	
 Q8TD26	human	Q8TD26	CHD6	Q8TD26	3	64	ATP-dependent chromatin remodeler CHD6 (EC 3.6.4.-) (Chromo 	
 Q8TD30	human	Q8TD30	GPT2	Q8TD30	8	145	Alanine aminotransferase 2 (ALT2) (EC 2.6.1.2) (Glutamate py	
@@ -525,7 +528,7 @@ Q8TEY7	human	Q8TEY7	USP33	Q8TEY7	24	242	Ubiquitin carboxyl-terminal hydrolase 33
 Q8TEZ7	human	Q8TEZ7	PAQR8	Q8TEZ7	2	37	Membrane progestin receptor beta (mPR beta) (Lysosomal membr	
 Q8TF01	human	Q8TF01	PNISR	Q8TF01	18	163	Arginine/serine-rich protein PNISR (PNN-interacting serine/a	
 Q8TF05	human	Q8TF05	PPP4R1	Q8TF05	10	153	Serine/threonine-protein phosphatase 4 regulatory subunit 1	
-Q8TF08	human	Q8TF08	COX7B2	Q8TF08	34	114	Cytochrome c oxidase subunit 7B2, mitochondrial (Cytochrome 	
+Q8TF08	human	Q8TF08	COX7B2	Q8TF08	36	116	Cytochrome c oxidase subunit 7B2, mitochondrial (Cytochrome 	
 Q8TF09	human	Q8TF09	DYNLRB2	Q8TF09	10	99	Dynein light chain roadblock-type 2 (Dynein light chain 2B, 	
 Q8TF17	human	Q8TF17	SH3TC2	Q8TF17	1	18	SH3 domain and tetratricopeptide repeat-containing protein 2	
 Q8TF20	human	Q8TF20	ZNF721	Q8TF20	2	186	Zinc finger protein 721	

@@ -17,10 +17,14 @@ LIG1	rattus-norvegicus	Q9JHY8	Lig1	Q9JHY8	3	41	DNA ligase 1
 LIG1	zebrafish	B0S533	lig1	B0S533	1	43	DNA ligase	
 LIG2	human	O94898	LRIG2	O94898	35	203		
 LIG3	dictyostelium-discoideum	Q54QM4	lig3	Q54QM4	1	17	DNA ligase 3	
-LIG3	human	P49916	LIG3	P49916	23	245	DNA ligase 3 (EC 6.5.1.1) (DNA ligase III) (Polydeoxyribonuc	
+LIG3	human	P49916	LIG3	P49916	24	246	DNA ligase 3 (EC 6.5.1.1) (DNA ligase III) (Polydeoxyribonuc	
 LIG3	human	Q6UXM1	LRIG3	Q6UXM1	27	247		
-LIG3	mus-musculus	P97386	Lig3	P97386	3	40	DNA ligase 3	
+LIG3	mus-musculus	P97386	Lig3	P97386	7	45	DNA ligase 3	
+LIG3	pan-troglodytes	H2QCP0	LIG3	H2QCP0	4	5	DNA ligase	
+LIG3	rattus-norvegicus	A0A0G2JV76	Lig3	A0A0G2JV76	3	5	DNA ligase	
+LIG3	zebrafish	A0A8M1N7I1	lig3	A0A8M1N7I1	4	5	DNA ligase	
 LIG3	zebrafish	F1QJL4	lig3	F1QJL4	5	43	DNA ligase	
+LIG3.L	xenopus-laevis	Q8UVU2	lig3.L	Q8UVU2	4	5	DNA ligase	
 LIG4	arabidopsis-thaliana	Q9LL84	LIG4	Q9LL84	7	67	DNA ligase 4	
 LIG4	candida-albicans-237561	P52496	LIG4	P52496	2	28	DNA ligase 4	
 LIG4	cladophialophora-carrionii	A0A1C1C9G4	LIG4	A0A1C1C9G4	2	39	DNA ligase	
@@ -98,7 +102,7 @@ LIGAND	human	Q06643	LTB	Q06643	52	356	Lymphotoxin-beta (LT-beta) (Tumor necrosis
 LIGAND	human	Q07011	TNFRSF9	Q07011	69	425	Tumor necrosis factor receptor superfamily member 9 (4-1BB l	w
 LIGAND	human	Q13445	TMED1	Q13445	22	97	Transmembrane emp24 domain-containing protein 1 (Interleukin	w
 LIGAND	human	Q13501	SQSTM1	Q13501	148	945	Sequestosome-1 (EBI3-associated protein of 60 kDa) (EBIAP) (	w
-LIGAND	human	Q14154	DELE1	Q14154	8	33	DAP3-binding cell death enhancer 1 (DAP3-binding cell death 	w
+LIGAND	human	Q14154	DELE1	Q14154	18	43	DAP3-binding cell death enhancer 1 (DAP3-binding cell death 	w
 LIGAND	human	Q14242	SELPLG	Q14242	44	313	P-selectin glycoprotein ligand 1 (PSGL-1) (Selectin P ligand	w
 LIGAND	human	Q14393	GAS6	Q14393	32	318	Growth arrest-specific protein 6 (GAS-6) (AXL receptor tyros	w
 LIGAND	human	Q15768	EFNB3	Q15768	31	177	Ephrin-B3 (EPH-related receptor transmembrane ligand ELK-L3)	w
@@ -203,7 +207,7 @@ LIGASE	fly	FBgn0003330	Sce	Q9VB08	78	495	E3 ubiquitin-protein ligase RING1 (EC 2
 LIGASE	fly	FBgn0003410	sina	P21461	42	159	E3 ubiquitin-protein ligase sina (EC 2.3.2.27) (RING-type E3	w
 LIGASE	fly	FBgn0003557	Su(dx)	Q9Y0H4	21	74	E3 ubiquitin-protein ligase Su(dx) (EC 2.3.2.26) (HECT-type 	w
 LIGASE	fly	FBgn0004436	Ubc6	P25153	13	65	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
-LIGASE	fly	FBgn0004888	Scsalpha1	Q94522	7	135	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
+LIGASE	fly	FBgn0004888	Scsalpha1	Q94522	14	141	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
 LIGASE	fly	FBgn0005616	msl-2	P50534	18	103	E3 ubiquitin-protein ligase msl-2 (EC 2.3.2.27) (Protein mal	w
 LIGASE	fly	FBgn0005674	GluProRS	P28668	9	98	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
 LIGASE	fly	FBgn0010803	TrpRS	Q0KI98	1	62	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
@@ -221,13 +225,13 @@ LIGASE	fly	FBgn0027052	STUB1	Q9XYW6	27	125	E3 ubiquitin-protein ligase CHIP (EC 
 LIGASE	fly	FBgn0027079	ValRS	A0A0B4KF06	0	33	Valine--tRNA ligase (EC 6.1.1.9) (Valyl-tRNA synthetase)	w
 LIGASE	fly	FBgn0027080	TyrRS	Q9VV60	2	49	Tyrosine--tRNA ligase (EC 6.1.1.1) (Tyrosyl-tRNA synthetase)	w
 LIGASE	fly	FBgn0027081	ThrRS	Q9VKB0	6	220	threonine--tRNA ligase (EC 6.1.1.3) (Threonyl-tRNA synthetas	w
-LIGASE	fly	FBgn0027082	ProRS-m	Q9VZY9	1	42	proline--tRNA ligase (EC 6.1.1.15) (Prolyl-tRNA synthetase)	w
-LIGASE	fly	FBgn0027083	MetRS-m	Q9VFL5	1	42	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Mitoch	w
-LIGASE	fly	FBgn0027084	LysRS	Q9W327	10	97	Lysine--tRNA ligase (EC 6.1.1.6) (Lysyl-tRNA synthetase)	w
+LIGASE	fly	FBgn0027082	ProRS-m	Q9VZY9	2	43	proline--tRNA ligase (EC 6.1.1.15) (Prolyl-tRNA synthetase)	w
+LIGASE	fly	FBgn0027083	MetRS-m	Q9VFL5	2	43	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Mitoch	w
+LIGASE	fly	FBgn0027084	LysRS	Q9W327	11	98	Lysine--tRNA ligase (EC 6.1.1.6) (Lysyl-tRNA synthetase)	w
 LIGASE	fly	FBgn0027085	LeuRS-m	Q9VZ82	1	51	leucine--tRNA ligase (EC 6.1.1.4) (Leucyl-tRNA synthetase)	w
 LIGASE	fly	FBgn0027086	IleRS	Q8MSW0	5	101	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
 LIGASE	fly	FBgn0027087	HisRS	Q8IQX8	0	29	histidine--tRNA ligase (EC 6.1.1.21)	w
-LIGASE	fly	FBgn0027088	GlyRS	Q9VUK8	0	70	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+LIGASE	fly	FBgn0027088	GlyRS	Q9VUK8	1	71	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
 LIGASE	fly	FBgn0027090	GlnRS	Q9Y105	13	282	Probable glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tR	w
 LIGASE	fly	FBgn0027091	CysRS	Q7KN90	1	21	Cysteine--tRNA ligase, cytoplasmic (EC 6.1.1.16) (Cysteinyl-	w
 LIGASE	fly	FBgn0027093	ArgRS	Q9VXN4	4	96	Probable arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (A	w
@@ -248,14 +252,14 @@ LIGASE	fly	FBgn0030657	cerv	Q9VXT3	6	47	E3 SUMO-protein ligase NSE2 (E3 SUMO-pro
 LIGASE	fly	FBgn0030809	Ubr1	Q9VX91	0	14	E3 ubiquitin-protein ligase UBR1 (EC 2.3.2.27) (N-recognin) 	w
 LIGASE	fly	FBgn0030863	Ube2S	Q9VX25	10	97	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
 LIGASE	fly	FBgn0031497	SerRS	Q9VQL1	5	180	serine--tRNA ligase (EC 6.1.1.11) (Seryl-tRNA synthetase)	w
-LIGASE	fly	FBgn0031703	Acsf2	Q9VMR6	1	57	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
+LIGASE	fly	FBgn0031703	Acsf2	Q9VMR6	2	58	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
 LIGASE	fly	FBgn0031772	CG13994	Q9VMI2	5	11	E3 ubiquitin-protein ligase PPP1R11 (Protein phosphatase 1 r	w
 LIGASE	fly	FBgn0031857	LUBEL	Q8IPJ3	4	9	E3 ubiquitin-protein ligase lubel (EC 2.3.2.31) (Linear Ubiq	w
 LIGASE	fly	FBgn0032208	Ufd4	Q9VL06	0	0	E3 ubiquitin-protein ligase Ufd4 (EC 2.3.2.26) (Ubiquitin fu	w
 LIGASE	fly	FBgn0032781	RtcB	Q9VIW7	2	14	RNA-splicing ligase RtcB homolog (EC 6.5.1.8) (3'-phosphate/	w
 LIGASE	fly	FBgn0032812	Hakai	M9PBE2	114	589	E3 ubiquitin-protein ligase Hakai (EC 2.3.2.27)	w
 LIGASE	fly	FBgn0033900	CysRS-m	Q7K3P0	0	19	cysteine--tRNA ligase (EC 6.1.1.16) (Cysteinyl-tRNA syntheta	w
-LIGASE	fly	FBgn0034177	AsnRS-m	Q7JZR5	2	30	asparagine--tRNA ligase (EC 6.1.1.22)	w
+LIGASE	fly	FBgn0034177	AsnRS-m	Q7JZR5	2	31	asparagine--tRNA ligase (EC 6.1.1.22)	w
 LIGASE	fly	FBgn0034401	MetRS	A1ZBE9	7	56	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
 LIGASE	fly	FBgn0034999	Fatp3	Q8SXR7	1	49	Long-chain-fatty-acid--CoA ligase	w
 LIGASE	fly	FBgn0035064	TyrRS-m	Q9W107	1	15	Tyrosine--tRNA ligase, mitochondrial (EC 6.1.1.1) (Mitochond	w
@@ -264,13 +268,13 @@ LIGASE	fly	FBgn0035232	CG12099	Q9W0D8	3	9	E3 ubiquitin-protein ligase RNF10 (RIN
 LIGASE	fly	FBgn0035483	Mul1	Q9VZJ9	6	69	Mitochondrial E3 ubiquitin protein ligase 1 (EC 2.3.2.27) (M	w
 LIGASE	fly	FBgn0035942	ValRS-m	Q9VSR7	2	13	valine--tRNA ligase (EC 6.1.1.9) (Valyl-tRNA synthetase)	w
 LIGASE	fly	FBgn0036569	IleRS-m	Q9VUY4	2	49	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
-LIGASE	fly	FBgn0036629	GluRS-m	Q9VV59	5	182	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
+LIGASE	fly	FBgn0036629	GluRS-m	Q9VV59	7	184	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
 LIGASE	fly	FBgn0036730	qjt	Q9VVH7	6	32	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
 LIGASE	fly	FBgn0036763	TrpRS-m	Q9VVL8	1	21	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
 LIGASE	fly	FBgn0036821	CG3961	Q9VVT8	0	36	Long-chain-fatty-acid--CoA ligase (EC 6.2.1.3)	w
 LIGASE	fly	FBgn0036897	Rnf146	B7Z078	2	18	E3 ubiquitin-protein ligase (EC 2.3.2.27)	w
 LIGASE	fly	FBgn0037242	March5	Q9VN18	0	16	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
-LIGASE	fly	FBgn0037251	Lipt2	Q9VN27	1	21	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
+LIGASE	fly	FBgn0037251	Lipt2	Q9VN27	6	27	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
 LIGASE	fly	FBgn0037442	gzl	Q9VI20	283	2390	E3 ubiquitin-protein ligase Godzilla (EC 2.3.2.27)	w
 LIGASE	fly	FBgn0037467	Ufl1	Q9VI55	6	57	E3 UFM1-protein ligase 1 homolog (EC 2.3.2.-) (E3 UFM1-prote	w
 LIGASE	fly	FBgn0037526	ArgRS-m	Q8SXK2	0	25	arginine--tRNA ligase (EC 6.1.1.19) (Arginyl-tRNA synthetase	w
@@ -309,7 +313,7 @@ LIGASE	fly	FBgn0266452	Ctps	Q9VUL1	17	753	CTP synthase (EC 6.3.4.2) (CTP synthet
 LIGASE	fly	FBgn0267351	Topors	Q9V8P9	4	17	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
 LIGASE	fly	FBgn0267384	Ubc7	Q9VXE8	19	96	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
 LIGASE	fly	FBgn0267828	Fatp1	E1JHE4	0	88	Long-chain-fatty-acid--CoA ligase	w
-LIGASE	fly	FBgn0275436	PheRS-m	O16129	0	10	Probable phenylalanine--tRNA ligase, mitochondrial (EC 6.1.1	w
+LIGASE	fly	FBgn0275436	PheRS-m	O16129	2	12	Probable phenylalanine--tRNA ligase, mitochondrial (EC 6.1.1	w
 LIGASE	fly	FBgn0283503	Neurl4	A0A1L4AAD6	0	5	Neuralized E3 ubiquitin protein ligase 4	w
 LIGASE	fly	FBgn0283649	elgi	Q9VUV7	7	33	E3 ubiquitin-protein ligase NRDP1 (EC 2.3.2.27) (RING finger	w
 LIGASE	fly	FBgn0284253	LeuRS	Q9VQR8	3	66	leucine--tRNA ligase (EC 6.1.1.4) (Leucyl-tRNA synthetase)	w
@@ -319,7 +323,7 @@ LIGASE	human	A0A1B0GUS4	UBE2L5	A0A1B0GUS4	12	127	Ubiquitin-conjugating enzyme E2
 LIGASE	human	A0A2R8Y4M4	LOC122513141	A0A2R8Y4M4	0	2	E3 ubiquitin-protein ligase RNF182	w
 LIGASE	human	A0AVI4	TMEM129	A0AVI4	8	90	E3 ubiquitin-protein ligase TM129 (EC 2.3.2.27) (RING-type E	w
 LIGASE	human	A2RTX5	TARS3	A2RTX5	12	145	Threonine--tRNA ligase 2, cytoplasmic (EC 6.1.1.3) (Threonyl	w
-LIGASE	human	A6NK58	LIPT2	A6NK58	8	39	Octanoyl-[acyl-carrier-protein]:protein N-octanoyltransferas	w
+LIGASE	human	A6NK58	LIPT2	A6NK58	27	58	Octanoyl-[acyl-carrier-protein]:protein N-octanoyltransferas	w
 LIGASE	human	A6NNE9	MARCHF11	A6NNE9	17	31	E3 ubiquitin-protein ligase MARCHF11 (EC 2.3.2.27) (Membrane	w
 LIGASE	human	A6NNM8	TTLL13	A6NNM8	0	5	Tubulin polyglutamylase TTLL13 (EC 6.3.2.-) (Tubulin tyrosin	w
 LIGASE	human	A8MQ27	NEURL1B	A8MQ27	3	42	E3 ubiquitin-protein ligase NEURL1B (EC 2.3.2.27) (Neuralize	w
@@ -345,7 +349,7 @@ LIGASE	human	O60488	ACSL4	O60488	1	220	Long-chain-fatty-acid--CoA ligase 4 (EC 6
 LIGASE	human	O60858	TRIM13	O60858	32	208	E3 ubiquitin-protein ligase TRIM13 (EC 2.3.2.27) (B-cell chr	w
 LIGASE	human	O60927	PPP1R11	O60927	18	109	E3 ubiquitin-protein ligase PPP1R11 (EC 2.3.2.27) (Hemochrom	w
 LIGASE	human	O75150	RNF40	O75150	67	375	E3 ubiquitin-protein ligase BRE1B (BRE1-B) (EC 2.3.2.27) (95	w
-LIGASE	human	O75600	GCAT	O75600	0	134	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial (AKB	w
+LIGASE	human	O75600	GCAT	O75600	3	137	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial (AKB	w
 LIGASE	human	O75925	PIAS1	O75925	78	494	E3 SUMO-protein ligase PIAS1 (EC 2.3.2.-) (DEAD/H box-bindin	w
 LIGASE	human	O75928	PIAS2	O75928	39	235	E3 SUMO-protein ligase PIAS2 (EC 2.3.2.-) (Androgen receptor	w
 LIGASE	human	O76050	NEURL1	O76050	10	64	E3 ubiquitin-protein ligase NEURL1 (EC 2.3.2.27) (Neuralized	w
@@ -355,14 +359,14 @@ LIGASE	human	O94874	UFL1	O94874	67	937	E3 UFM1-protein ligase 1 (EC 2.3.2.-) (E3
 LIGASE	human	O94972	TRIM37	O94972	136	685	E3 ubiquitin-protein ligase TRIM37 (EC 2.3.2.27) (Mulibrey n	w
 LIGASE	human	O95071	UBR5	O95071	12	560	E3 ubiquitin-protein ligase UBR5 (EC 2.3.2.26) (E3 ubiquitin	w
 LIGASE	human	O95361	TRIM16	O95361	27	169	E3 ubiquitin-protein ligase TRIM16 (EC 2.3.2.27) (Estrogen-r	w
-LIGASE	human	O95363	FARS2	O95363	17	211	Phenylalanine--tRNA ligase, mitochondrial (EC 6.1.1.20) (Phe	w
+LIGASE	human	O95363	FARS2	O95363	22	216	Phenylalanine--tRNA ligase, mitochondrial (EC 6.1.1.20) (Phe	w
 LIGASE	human	O95376	ARIH2	O95376	28	374	E3 ubiquitin-protein ligase ARIH2 (ARI-2) (Protein ariadne-2	w
 LIGASE	human	O95573	ACSL3	O95573	4	320	Fatty acid CoA ligase Acsl3 (Arachidonate--CoA ligase) (EC 6	w
 LIGASE	human	O95628	CNOT4	O95628	68	405	CCR4-NOT transcription complex subunit 4 (EC 2.3.2.27) (CCR4	w
 LIGASE	human	O96006	ZBED1	O96006	4	126	E3 SUMO-protein ligase ZBED1 (EC 2.3.2.-) (DNA replication-r	w
 LIGASE	human	P00966	ASS1	P00966	0	258	Argininosuccinate synthase (EC 6.3.4.5) (Citrulline--asparta	w
 LIGASE	human	P05165	PCCA	P05165	4	161	Propionyl-CoA carboxylase alpha chain, mitochondrial (PCCase	w
-LIGASE	human	P05166	PCCB	P05166	9	231	Propionyl-CoA carboxylase beta chain, mitochondrial (PCCase 	w
+LIGASE	human	P05166	PCCB	P05166	10	232	Propionyl-CoA carboxylase beta chain, mitochondrial (PCCase 	w
 LIGASE	human	P07814	EPRS1	P07814	9	439	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
 LIGASE	human	P11161	EGR2	P11161	95	475	E3 SUMO-protein ligase EGR2 (EC 2.3.2.-) (AT591) (E3 SUMO-pr	w
 LIGASE	human	P12081	HARS1	P12081	6	149	Histidine--tRNA ligase, cytoplasmic (EC 6.1.1.21) (Histidyl-	w
@@ -378,9 +382,9 @@ LIGASE	human	P23381	WARS1	P23381	2	177	Tryptophan--tRNA ligase, cytoplasmic (EC 
 LIGASE	human	P26639	TARS1	P26639	9	205	Threonine--tRNA ligase 1, cytoplasmic (EC 6.1.1.3) (Threonyl	w
 LIGASE	human	P26640	VARS1	P26640	8	318	Valine--tRNA ligase (EC 6.1.1.9) (Protein G7a) (Valyl-tRNA s	w
 LIGASE	human	P29590	PML	P29590	73	985	Protein PML (E3 SUMO-protein ligase PML) (EC 2.3.2.-) (Promy	w
-LIGASE	human	P33121	ACSL1	P33121	2	185	Long-chain-fatty-acid--CoA ligase 1 (EC 6.2.1.3) (Acyl-CoA s	w
+LIGASE	human	P33121	ACSL1	P33121	3	186	Long-chain-fatty-acid--CoA ligase 1 (EC 6.2.1.3) (Acyl-CoA s	w
 LIGASE	human	P36406	TRIM23	P36406	67	635	E3 ubiquitin-protein ligase TRIM23 (EC 2.3.2.27) (ADP-ribosy	w
-LIGASE	human	P41250	GARS1	P41250	5	174	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+LIGASE	human	P41250	GARS1	P41250	8	177	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
 LIGASE	human	P41252	IARS1	P41252	10	422	Isoleucine--tRNA ligase, cytoplasmic (EC 6.1.1.5) (Isoleucyl	w
 LIGASE	human	P46934	NEDD4	P46934	111	707	E3 ubiquitin-protein ligase NEDD4 (EC 2.3.2.26) (Cell prolif	w
 LIGASE	human	P47897	QARS1	P47897	13	578	Glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tRNA synthe	w
@@ -388,14 +392,14 @@ LIGASE	human	P48506	GCLC	P48506	15	229	Glutamate--cysteine ligase catalytic subu
 LIGASE	human	P48507	GCLM	P48507	5	97	Glutamate--cysteine ligase regulatory subunit (GCS light cha	w
 LIGASE	human	P49588	AARS1	P49588	3	308	Alanine--tRNA ligase, cytoplasmic (EC 6.1.1.7) (Alanyl-tRNA 	w
 LIGASE	human	P49589	CARS1	P49589	2	181	Cysteine--tRNA ligase, cytoplasmic (EC 6.1.1.16) (Cysteinyl-	w
-LIGASE	human	P49590	HARS2	P49590	6	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
+LIGASE	human	P49590	HARS2	P49590	9	182	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
 LIGASE	human	P49591	SARS1	P49591	6	184	Serine--tRNA ligase, cytoplasmic (EC 6.1.1.11) (Seryl-tRNA s	w
 LIGASE	human	P49792	RANBP2	P49792	4	226	E3 SUMO-protein ligase RanBP2 (EC 2.3.2.-) (358 kDa nucleopo	w
-LIGASE	human	P49916	LIG3	P49916	23	245	DNA ligase 3 (EC 6.5.1.1) (DNA ligase III) (Polydeoxyribonuc	w
+LIGASE	human	P49916	LIG3	P49916	24	246	DNA ligase 3 (EC 6.5.1.1) (DNA ligase III) (Polydeoxyribonuc	w
 LIGASE	human	P49917	LIG4	P49917	19	257	DNA ligase 4 (EC 6.5.1.1) (DNA ligase IV) (Polydeoxyribonucl	w
 LIGASE	human	P50747	HLCS	P50747	6	95	Biotin--protein ligase (EC 6.3.4.-) (Biotin apo-protein liga	w
 LIGASE	human	P50876	RNF144A	P50876	9	127	E3 ubiquitin-protein ligase RNF144A (EC 2.3.2.31) (RING fing	w
-LIGASE	human	P53597	SUCLG1	P53597	20	251	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
+LIGASE	human	P53597	SUCLG1	P53597	32	262	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
 LIGASE	human	P53804	TTC3	P53804	27	216	E3 ubiquitin-protein ligase TTC3 (EC 2.3.2.27) (Protein DCRR	w
 LIGASE	human	P54136	RARS1	P54136	11	291	Arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (Arginyl-tR	w
 LIGASE	human	P54577	YARS1	P54577	6	234	Tyrosine--tRNA ligase, cytoplasmic (EC 6.1.1.1) (Tyrosyl-tRN	w
@@ -409,8 +413,8 @@ LIGASE	human	P98170	XIAP	P98170	73	342	E3 ubiquitin-protein ligase XIAP (EC 2.3.
 LIGASE	human	Q00987	MDM2	Q00987	247	903	E3 ubiquitin-protein ligase Mdm2 (EC 2.3.2.27) (Double minut	w
 LIGASE	human	Q05086	UBE3A	Q05086	45	622	Ubiquitin-protein ligase E3A (EC 2.3.2.26) (E6AP ubiquitin-p	w
 LIGASE	human	Q06587	RING1	Q06587	91	640	E3 ubiquitin-protein ligase RING1 (EC 2.3.2.27) (Polycomb co	w
-LIGASE	human	Q08AH1	ACSM1	Q08AH1	1	55	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	w
-LIGASE	human	Q08AH3	ACSM2A	Q08AH3	1	29	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	w
+LIGASE	human	Q08AH1	ACSM1	Q08AH1	2	56	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	w
+LIGASE	human	Q08AH3	ACSM2A	Q08AH3	4	32	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	w
 LIGASE	human	Q12933	TRAF2	Q12933	139	722	TNF receptor-associated factor 2 (EC 2.3.2.27) (E3 ubiquitin	w
 LIGASE	human	Q13049	TRIM32	Q13049	62	317	E3 ubiquitin-protein ligase TRIM32 (EC 2.3.2.27) (72 kDa Tat	w
 LIGASE	human	Q13064	MKRN3	Q13064	45	215	E3 ubiquitin-protein ligase makorin-3 (EC 2.3.2.27) (RING fi	w
@@ -422,24 +426,24 @@ LIGASE	human	Q14258	TRIM25	Q14258	153	2231	E3 ubiquitin/ISG15 ligase TRIM25 (EC 
 LIGASE	human	Q14527	HLTF	Q14527	4	234	DNA-dependent ATPase/E3 ubiquitin-protein ligase HLTF (EC 2.	w
 LIGASE	human	Q14669	TRIP12	Q14669	17	260	E3 ubiquitin-protein ligase TRIP12 (EC 2.3.2.26) (E3 ubiquit	w
 LIGASE	human	Q149N8	SHPRH	Q149N8	7	269	E3 ubiquitin-protein ligase SHPRH (EC 2.3.2.27) (EC 3.6.4.-)	w
-LIGASE	human	Q15031	LARS2	Q15031	7	219	Leucine--tRNA ligase, mitochondrial (EC 6.1.1.4) (Leucyl-tRN	w
+LIGASE	human	Q15031	LARS2	Q15031	10	221	Leucine--tRNA ligase, mitochondrial (EC 6.1.1.4) (Leucyl-tRN	w
 LIGASE	human	Q15034	HERC3	Q15034	8	74	Probable E3 ubiquitin-protein ligase HERC3 (EC 2.3.2.26) (HE	w
-LIGASE	human	Q15046	KARS1	Q15046	17	368	Lysine--tRNA ligase (EC 2.7.7.-) (EC 6.1.1.6) (Lysyl-tRNA sy	w
+LIGASE	human	Q15046	KARS1	Q15046	18	369	Lysine--tRNA ligase (EC 2.7.7.-) (EC 6.1.1.6) (Lysyl-tRNA sy	w
 LIGASE	human	Q15386	UBE3C	Q15386	14	209	Ubiquitin-protein ligase E3C (EC 2.3.2.26) (HECT-type ubiqui	w
 LIGASE	human	Q2Q1W2	TRIM71	Q2Q1W2	12	170	E3 ubiquitin-protein ligase TRIM71 (EC 2.3.2.27) (Protein li	w
 LIGASE	human	Q495C1	RNF212	Q495C1	3	18	Probable E3 SUMO-protein ligase RNF212 (EC 2.3.2.-) (Probabl	w
-LIGASE	human	Q4G176	ACSF3	Q4G176	4	236	Malonate--CoA ligase ACSF3, mitochondrial (EC 6.2.1.76) (Acy	w
+LIGASE	human	Q4G176	ACSF3	Q4G176	13	246	Malonate--CoA ligase ACSF3, mitochondrial (EC 6.2.1.76) (Acy	w
 LIGASE	human	Q52LJ0	FAM98B	Q52LJ0	14	121	tRNA-splicing ligase complex subunit FAM98B	w
-LIGASE	human	Q53FZ2	ACSM3	Q53FZ2	0	52	Acyl-coenzyme A synthetase ACSM3, mitochondrial (EC 6.2.1.2)	w
+LIGASE	human	Q53FZ2	ACSM3	Q53FZ2	3	55	Acyl-coenzyme A synthetase ACSM3, mitochondrial (EC 6.2.1.2)	w
 LIGASE	human	Q5FVE4	ACSBG2	Q5FVE4	0	56	Long-chain-fatty-acid--CoA ligase ACSBG2 (EC 6.2.1.3) (Acyl-	w
 LIGASE	human	Q5GLZ8	HERC4	Q5GLZ8	11	96	Probable E3 ubiquitin-protein ligase HERC4 (EC 2.3.2.26) (HE	w
-LIGASE	human	Q5JPH6	EARS2	Q5JPH6	17	367	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
+LIGASE	human	Q5JPH6	EARS2	Q5JPH6	19	369	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
 LIGASE	human	Q5JTZ9	AARS2	Q5JTZ9	10	362	Alanine--tRNA ligase, mitochondrial (EC 6.1.1.7) (Alanyl-tRN	w
 LIGASE	human	Q5K4L6	SLC27A3	Q5K4L6	3	97	Long-chain fatty acid transport protein 3 (FATP-3) (Fatty ac	w
 LIGASE	human	Q5M7Z0	RNFT1	Q5M7Z0	9	41	E3 ubiquitin-protein ligase RNFT1 (EC 2.3.2.27) (Protein PTD	w
 LIGASE	human	Q5ST30	VARS2	Q5ST30	1	146	Valine--tRNA ligase, mitochondrial (EC 6.1.1.9) (Valyl-tRNA 	w
 LIGASE	human	Q5T0T0	MARCHF8	Q5T0T0	8	85	E3 ubiquitin-protein ligase MARCHF8 (EC 2.3.2.27) (Cellular 	w
-LIGASE	human	Q5T160	RARS2	Q5T160	5	193	Probable arginine--tRNA ligase, mitochondrial (EC 6.1.1.19) 	w
+LIGASE	human	Q5T160	RARS2	Q5T160	7	195	Probable arginine--tRNA ligase, mitochondrial (EC 6.1.1.19) 	w
 LIGASE	human	Q5T197	DCST1	Q5T197	3	45	E3 ubiquitin-protein ligase DCST1 (EC 2.3.2.27) (DC-STAMP do	w
 LIGASE	human	Q5T447	HECTD3	Q5T447	12	124	E3 ubiquitin-protein ligase HECTD3 (EC 2.3.2.26) (HECT domai	w
 LIGASE	human	Q5TA31	RNF187	Q5TA31	11	81	E3 ubiquitin-protein ligase RNF187 (EC 2.3.2.27) (RING domai	w
@@ -452,7 +456,7 @@ LIGASE	human	Q5VVX9	UBE2U	Q5VVX9	17	172	Ubiquitin-conjugating enzyme E2 U (EC 2.
 LIGASE	human	Q5W0B1	OBI1	Q5W0B1	33	152	ORC ubiquitin ligase 1 (OBI1) (EC 2.3.2.27) (RING finger pro	w
 LIGASE	human	Q5XPI4	RNF123	Q5XPI4	65	773	E3 ubiquitin-protein ligase RNF123 (EC 2.3.2.27) (Kip1 ubiqu	w
 LIGASE	human	Q66K89	E4F1	Q66K89	20	252	Transcription factor E4F1 (EC 2.3.2.27) (E4F transcription f	w
-LIGASE	human	Q68CK6	ACSM2B	Q68CK6	1	25	Acyl-coenzyme A synthetase ACSM2B, mitochondrial (EC 6.2.1.2	w
+LIGASE	human	Q68CK6	ACSM2B	Q68CK6	7	31	Acyl-coenzyme A synthetase ACSM2B, mitochondrial (EC 6.2.1.2	w
 LIGASE	human	Q68DV7	RNF43	Q68DV7	72	510	E3 ubiquitin-protein ligase RNF43 (EC 2.3.2.27) (RING finger	w
 LIGASE	human	Q6AZZ1	TRIM68	Q6AZZ1	48	180	E3 ubiquitin-protein ligase TRIM68 (EC 2.3.2.27) (RING finge	w
 LIGASE	human	Q6P1M0	SLC27A4	Q6P1M0	3	185	Long-chain fatty acid transport protein 4 (FATP-4) (Fatty ac	w
@@ -470,7 +474,7 @@ LIGASE	human	Q6ZSG1	ARK2C	Q6ZSG1	13	36	E3 ubiquitin-protein ligase ARK2C (EC 2.3
 LIGASE	human	Q6ZT12	UBR3	Q6ZT12	12	111	E3 ubiquitin-protein ligase UBR3 (EC 2.3.2.27) (N-recognin-3	w
 LIGASE	human	Q75N03	CBLL1	Q75N03	67	454	E3 ubiquitin-protein ligase Hakai (EC 2.3.2.27) (Casitas B-l	w
 LIGASE	human	Q76N89	HECW1	Q76N89	31	226	E3 ubiquitin-protein ligase HECW1 (EC 2.3.2.26) (HECT, C2 an	w
-LIGASE	human	Q7L3T8	PARS2	Q7L3T8	5	114	Probable proline--tRNA ligase, mitochondrial (EC 6.1.1.15) (	w
+LIGASE	human	Q7L3T8	PARS2	Q7L3T8	6	115	Probable proline--tRNA ligase, mitochondrial (EC 6.1.1.15) (	w
 LIGASE	human	Q7L622	G2E3	Q7L622	23	194	G2/M phase-specific E3 ubiquitin-protein ligase (EC 2.3.2.26	w
 LIGASE	human	Q7L8W6	DPH6	Q7L8W6	8	189	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w
 LIGASE	human	Q7Z3V4	UBE3B	Q7Z3V4	10	70	Ubiquitin-protein ligase E3B (EC 2.3.2.26) (HECT-type ubiqui	w
@@ -541,12 +545,12 @@ LIGASE	human	Q8WZ73	RFFL	Q8WZ73	25	103	E3 ubiquitin-protein ligase rififylin (EC
 LIGASE	human	Q969K3	RNF34	Q969K3	16	70	E3 ubiquitin-protein ligase RNF34 (EC 2.3.2.27) (Caspase reg	w
 LIGASE	human	Q969M7	UBE2F	Q969M7	13	137	NEDD8-conjugating enzyme UBE2F (EC 2.3.2.34) (NEDD8 carrier 	w
 LIGASE	human	Q969Q1	TRIM63	Q969Q1	64	481	E3 ubiquitin-protein ligase TRIM63 (EC 2.3.2.27) (Iris RING 	w
-LIGASE	human	Q969V5	MUL1	Q969V5	21	127	Mitochondrial ubiquitin ligase activator of NFKB 1 (EC 2.3.2	w
+LIGASE	human	Q969V5	MUL1	Q969V5	22	128	Mitochondrial ubiquitin ligase activator of NFKB 1 (EC 2.3.2	w
 LIGASE	human	Q96A37	RNF166	Q96A37	16	151	E3 ubiquitin-protein ligase RNF166 (EC 2.3.2.27) (RING finge	w
 LIGASE	human	Q96A61	TRIM52	Q96A61	20	185	E3 ubiquitin-protein ligase TRIM52 (EC 2.3.2.27) (RING finge	w
 LIGASE	human	Q96AX9	MIB2	Q96AX9	8	142	E3 ubiquitin-protein ligase MIB2 (EC 2.3.2.27) (Mind bomb ho	w
 LIGASE	human	Q96BH1	RNF25	Q96BH1	13	61	E3 ubiquitin-protein ligase RNF25 (EC 2.3.2.27) (RING finger	w
-LIGASE	human	Q96CM8	ACSF2	Q96CM8	3	278	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
+LIGASE	human	Q96CM8	ACSF2	Q96CM8	9	284	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
 LIGASE	human	Q96D59	RNF183	Q96D59	19	100	E3 ubiquitin-protein ligase RNF183 (EC 2.3.2.27)	w
 LIGASE	human	Q96EH8	NEURL3	Q96EH8	1	31	E3 ubiquitin-protein ligase NEURL3 (EC 2.3.2.27) (Lung-induc	w
 LIGASE	human	Q96EP0	RNF31	Q96EP0	76	489	E3 ubiquitin-protein ligase RNF31 (EC 2.3.2.31) (HOIL-1-inte	w
@@ -557,9 +561,9 @@ LIGASE	human	Q96F44	TRIM11	Q96F44	59	294	E3 ubiquitin-protein ligase TRIM11 (EC 
 LIGASE	human	Q96FA3	PELI1	Q96FA3	11	171	E3 ubiquitin-protein ligase pellino homolog 1 (Pellino-1) (E	w
 LIGASE	human	Q96GF1	RNF185	Q96GF1	33	517	E3 ubiquitin-protein ligase RNF185 (EC 2.3.2.27) (RING finge	w
 LIGASE	human	Q96GR2	ACSBG1	Q96GR2	2	82	Long-chain-fatty-acid--CoA ligase ACSBG1 (EC 6.2.1.3) (Acyl-	w
-LIGASE	human	Q96GW9	MARS2	Q96GW9	3	149	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Methio	w
-LIGASE	human	Q96I59	NARS2	Q96I59	7	149	Asparaginyl-tRNA synthetase (AsnRS) (NARS2) (EC 6.1.1.22) (A	w
-LIGASE	human	Q96I99	SUCLG2	Q96I99	12	235	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
+LIGASE	human	Q96GW9	MARS2	Q96GW9	7	153	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Methio	w
+LIGASE	human	Q96I59	NARS2	Q96I59	8	150	Asparaginyl-tRNA synthetase (AsnRS) (NARS2) (EC 6.1.1.22) (A	w
+LIGASE	human	Q96I99	SUCLG2	Q96I99	14	237	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
 LIGASE	human	Q96J02	ITCH	Q96J02	77	610	E3 ubiquitin-protein ligase Itchy homolog (Itch) (EC 2.3.2.2	w
 LIGASE	human	Q96JP5	ZFP91	Q96JP5	24	153	E3 ubiquitin-protein ligase ZFP91 (EC 2.3.2.27) (RING-type E	w
 LIGASE	human	Q96K19	RNF170	Q96K19	7	81	E3 ubiquitin-protein ligase RNF170 (EC 2.3.2.27) (Putative L	w
@@ -577,7 +581,7 @@ LIGASE	human	Q9BRZ2	TRIM56	Q9BRZ2	42	246	E3 ubiquitin-protein ligase TRIM56 (EC 
 LIGASE	human	Q9BV68	RNF126	Q9BV68	28	158	E3 ubiquitin-protein ligase RNF126 (EC 2.3.2.27) (RING finge	w
 LIGASE	human	Q9BVC5	C2orf49	Q9BVC5	10	108	tRNA-splicing ligase complex subunit ASW	w
 LIGASE	human	Q9BVG3	TRIM62	Q9BVG3	44	151	E3 ubiquitin-protein ligase TRIM62 (EC 2.3.2.27) (Tripartite	w
-LIGASE	human	Q9BW92	TARS2	Q9BW92	10	232	Threonine--tRNA ligase, mitochondrial (EC 6.1.1.3) (Threonyl	w
+LIGASE	human	Q9BW92	TARS2	Q9BW92	18	239	Threonine--tRNA ligase, mitochondrial (EC 6.1.1.3) (Threonyl	w
 LIGASE	human	Q9BWF2	TRAIP	Q9BWF2	39	212	E3 ubiquitin-protein ligase TRAIP (EC 2.3.2.27) (RING finger	w
 LIGASE	human	Q9BWX1	PHF7	Q9BWX1	9	67	E3 ubiquitin-protein ligase PHF7 (EC 2.3.2.27) (PHD finger p	w
 LIGASE	human	Q9BY78	RNF26	Q9BY78	12	105	E3 ubiquitin-protein ligase RNF26 (EC 2.3.2.27) (RING finger	w
@@ -602,7 +606,7 @@ LIGASE	human	Q9H8W5	TRIM45	Q9H8W5	28	112	E3 ubiquitin-protein ligase TRIM45 (EC 
 LIGASE	human	Q9H920	RNF121	Q9H920	0	55	E3 ubiquitin ligase RNF121 (EC 2.3.2.27) (RING finger protei	w
 LIGASE	human	Q9H992	MARCHF7	Q9H992	22	102	E3 ubiquitin-protein ligase MARCHF7 (EC 2.3.2.27) (Axotrophi	w
 LIGASE	human	Q9H9P5	UNKL	Q9H9P5	12	75	Putative E3 ubiquitin-protein ligase UNKL (EC 2.3.2.-) (RING	w
-LIGASE	human	Q9HA77	CARS2	Q9HA77	5	146	Probable cysteine--tRNA ligase, mitochondrial (EC 6.1.1.16) 	w
+LIGASE	human	Q9HA77	CARS2	Q9HA77	8	149	Probable cysteine--tRNA ligase, mitochondrial (EC 6.1.1.16) 	w
 LIGASE	human	Q9HAB8	PPCS	Q9HAB8	0	79	Phosphopantothenate--cysteine ligase (EC 6.3.2.51) (Phosphop	w
 LIGASE	human	Q9HAT8	PELI2	Q9HAT8	10	110	E3 ubiquitin-protein ligase pellino homolog 2 (Pellino-2) (E	w
 LIGASE	human	Q9HAU4	SMURF2	Q9HAU4	55	400	E3 ubiquitin-protein ligase SMURF2 (hSMURF2) (EC 2.3.2.26) (	w
@@ -610,7 +614,7 @@ LIGASE	human	Q9HCE7	SMURF1	Q9HCE7	59	672	E3 ubiquitin-protein ligase SMURF1 (hSM
 LIGASE	human	Q9HCI6	KIAA1586	Q9HCI6	2	25	E3 SUMO-protein ligase KIAA1586 (EC 2.3.2.-) (E3 SUMO-protei	w
 LIGASE	human	Q9HCI7	MSL2	Q9HCI7	28	142	E3 ubiquitin-protein ligase MSL2 (EC 2.3.2.27) (Male-specifi	w
 LIGASE	human	Q9HCM9	TRIM39	Q9HCM9	44	155	E3 ubiquitin-protein ligase TRIM39 (EC 2.3.2.27) (RING finge	w
-LIGASE	human	Q9NP81	SARS2	Q9NP81	3	136	Serine--tRNA ligase, mitochondrial (EC 6.1.1.11) (SerRSmt) (	w
+LIGASE	human	Q9NP81	SARS2	Q9NP81	5	138	Serine--tRNA ligase, mitochondrial (EC 6.1.1.11) (SerRSmt) (	w
 LIGASE	human	Q9NPC3	CCNB1IP1	Q9NPC3	5	38	E3 ubiquitin-protein ligase CCNB1IP1 (EC 2.3.2.27) (Cyclin-B	w
 LIGASE	human	Q9NQ86	TRIM36	Q9NQ86	23	221	E3 ubiquitin-protein ligase TRIM36 (EC 2.3.2.27) (RING finge	w
 LIGASE	human	Q9NQC1	JADE2	Q9NQC1	22	95	E3 ubiquitin-protein ligase Jade-2 (EC 2.3.2.27) (Jade famil	w
@@ -621,12 +625,12 @@ LIGASE	human	Q9NS91	RAD18	Q9NS91	77	532	E3 ubiquitin-protein ligase RAD18 (EC 2.
 LIGASE	human	Q9NSD9	FARSB	Q9NSD9	4	182	Phenylalanine--tRNA ligase beta subunit (EC 6.1.1.20) (Pheny	w
 LIGASE	human	Q9NSE4	IARS2	Q9NSE4	8	303	Isoleucine--tRNA ligase, mitochondrial (EC 6.1.1.5) (Isoleuc	w
 LIGASE	human	Q9NTX7	RNF146	Q9NTX7	24	131	E3 ubiquitin-protein ligase RNF146 (EC 2.3.2.27) (Dactylidin	w
-LIGASE	human	Q9NUB1	ACSS1	Q9NUB1	4	93	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
+LIGASE	human	Q9NUB1	ACSS1	Q9NUB1	14	103	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
 LIGASE	human	Q9NV58	RNF19A	Q9NV58	7	51	E3 ubiquitin-protein ligase RNF19A (EC 2.3.2.31) (Double rin	w
 LIGASE	human	Q9NVW2	RLIM	Q9NVW2	40	213	E3 ubiquitin-protein ligase RLIM (EC 2.3.2.27) (LIM domain-i	w
 LIGASE	human	Q9NW38	FANCL	Q9NW38	15	152	E3 ubiquitin-protein ligase FANCL (EC 2.3.2.27) (Fanconi ane	w
 LIGASE	human	Q9NWF9	RNF216	Q9NWF9	27	94	E3 ubiquitin-protein ligase RNF216 (EC 2.3.2.27) (RING finge	w
-LIGASE	human	Q9NX47	MARCHF5	Q9NX47	14	227	E3 ubiquitin-protein ligase MARCHF5 (EC 2.3.2.27) (Membrane-	w
+LIGASE	human	Q9NX47	MARCHF5	Q9NX47	16	229	E3 ubiquitin-protein ligase MARCHF5 (EC 2.3.2.27) (Membrane-	w
 LIGASE	human	Q9NXI6	RNF186	Q9NXI6	9	42	E3 ubiquitin-protein ligase RNF186 (EC 2.3.2.27) (RING finge	w
 LIGASE	human	Q9P0J7	KCMF1	Q9P0J7	61	482	E3 ubiquitin-protein ligase KCMF1 (EC 2.3.2.27) (FGF-induced	w
 LIGASE	human	Q9P0N8	MARCHF2	Q9P0N8	33	148	E3 ubiquitin-protein ligase MARCHF2 (EC 2.3.2.27) (Membrane-	w
@@ -635,15 +639,15 @@ LIGASE	human	Q9P2E3	ZNFX1	Q9P2E3	7	66	NFX1-type zinc finger-containing protein 1
 LIGASE	human	Q9P2E8	MARCHF4	Q9P2E8	33	143	E3 ubiquitin-protein ligase MARCHF4 (EC 2.3.2.27) (Membrane-	w
 LIGASE	human	Q9P2J5	LARS1	Q9P2J5	5	387	Leucine--tRNA ligase, cytoplasmic (EC 6.1.1.4) (Leucyl-tRNA 	w
 LIGASE	human	Q9P2P5	HECW2	Q9P2P5	51	467	E3 ubiquitin-protein ligase HECW2 (EC 2.3.2.26) (HECT, C2 an	w
-LIGASE	human	Q9P2R7	SUCLA2	Q9P2R7	19	271	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
+LIGASE	human	Q9P2R7	SUCLA2	Q9P2R7	22	274	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
 LIGASE	human	Q9UBN7	HDAC6	Q9UBN7	77	988	Protein deacetylase HDAC6 (EC 3.5.1.-) (E3 ubiquitin-protein	w
 LIGASE	human	Q9UBS8	RNF14	Q9UBS8	14	91	E3 ubiquitin-protein ligase RNF14 (EC 2.3.2.31) (Androgen re	w
 LIGASE	human	Q9UDY6	TRIM10	Q9UDY6	37	171	E3 ubiquitin-protein ligase TRIM10 (EC 2.3.2.27) (B30-RING f	w
-LIGASE	human	Q9UGM6	WARS2	Q9UGM6	1	84	Tryptophan--tRNA ligase, mitochondrial (EC 6.1.1.2) ((Mt)Trp	w
+LIGASE	human	Q9UGM6	WARS2	Q9UGM6	2	85	Tryptophan--tRNA ligase, mitochondrial (EC 6.1.1.2) ((Mt)Trp	w
 LIGASE	human	Q9UHC7	MKRN1	Q9UHC7	28	218	E3 ubiquitin-protein ligase makorin-1 (EC 2.3.2.27) (RING fi	w
 LIGASE	human	Q9UII4	HERC5	Q9UII4	34	281	E3 ISG15--protein ligase HERC5 (EC 2.3.2.-) (Cyclin-E-bindin	w
 LIGASE	human	Q9UJV3	MID2	Q9UJV3	45	340	E3 ubiquitin-protein ligase MID2 (EC 2.3.2.27) (Midin-2) (Mi	w
-LIGASE	human	Q9UKU0	ACSL6	Q9UKU0	2	213	Long-chain-fatty-acid--CoA ligase 6 (EC 6.2.1.3) (Arachidona	w
+LIGASE	human	Q9UKU0	ACSL6	Q9UKU0	3	214	Long-chain-fatty-acid--CoA ligase 6 (EC 6.2.1.3) (Arachidona	w
 LIGASE	human	Q9UKV5	AMFR	Q9UKV5	30	254	E3 ubiquitin-protein ligase AMFR (EC 2.3.2.36) (Autocrine mo	w
 LIGASE	human	Q9ULC5	ACSL5	Q9ULC5	1	152	Long-chain-fatty-acid--CoA ligase 5 (EC 6.2.1.3) (Arachidona	w
 LIGASE	human	Q9ULT6	ZNRF3	Q9ULT6	33	145	E3 ubiquitin-protein ligase ZNRF3 (EC 2.3.2.27) (RING finger	w
@@ -654,14 +658,14 @@ LIGASE	human	Q9UPN9	TRIM33	Q9UPN9	78	588	E3 ubiquitin-protein ligase TRIM33 (EC 
 LIGASE	human	Q9UPQ4	TRIM35	Q9UPQ4	29	144	E3 ubiquitin-protein ligase TRIM35 (EC 2.3.2.27) (Hemopoieti	w
 LIGASE	human	Q9UPQ7	PDZRN3	Q9UPQ7	39	109	E3 ubiquitin-protein ligase PDZRN3 (EC 2.3.2.27) (Ligand of 	w
 LIGASE	human	Q9Y224	RTRAF	Q9Y224	33	233	tRNA-splicing ligase complex subunit RTRAF (CLE7 homolog) (C	w
-LIGASE	human	Q9Y234	LIPT1	Q9Y234	8	49	Lipoyl amidotransferase LIPT1, mitochondrial (EC 2.3.1.200) 	w
+LIGASE	human	Q9Y234	LIPT1	Q9Y234	18	59	Lipoyl amidotransferase LIPT1, mitochondrial (EC 2.3.1.200) 	w
 LIGASE	human	Q9Y252	RNF6	Q9Y252	40	191	E3 ubiquitin-protein ligase RNF6 (EC 2.3.2.27)	w
 LIGASE	human	Q9Y285	FARSA	Q9Y285	10	205	Phenylalanine--tRNA ligase alpha subunit (EC 6.1.1.20) (CML3	w
 LIGASE	human	Q9Y2E6	DTX4	Q9Y2E6	3	43	E3 ubiquitin-protein ligase DTX4 (EC 2.3.2.27) (Protein delt	w
 LIGASE	human	Q9Y2P4	SLC27A6	Q9Y2P4	2	93	Long-chain fatty acid transport protein 6 (FATP-6) (Fatty ac	w
 LIGASE	human	Q9Y2P5	SLC27A5	Q9Y2P5	0	40	Long-chain fatty acid transport protein 5 (FATP-5) (Fatty ac	w
 LIGASE	human	Q9Y2X8	UBE2D4	Q9Y2X8	146	330	Ubiquitin-conjugating enzyme E2 D4 (EC 2.3.2.23) (E2 ubiquit	w
-LIGASE	human	Q9Y2Z4	YARS2	Q9Y2Z4	4	240	Tyrosine--tRNA ligase, mitochondrial (EC 6.1.1.1) (Tyrosyl-t	w
+LIGASE	human	Q9Y2Z4	YARS2	Q9Y2Z4	6	242	Tyrosine--tRNA ligase, mitochondrial (EC 6.1.1.1) (Tyrosyl-t	w
 LIGASE	human	Q9Y314	NOSIP	Q9Y314	12	137	Nitric oxide synthase-interacting protein (E3 ubiquitin-prot	w
 LIGASE	human	Q9Y3I0	RTCB	Q9Y3I0	23	346	RNA-splicing ligase RTCB (EC 6.5.1.8) (3'-phosphate/5'-hydro	w
 LIGASE	human	Q9Y4E5	ZNF451	Q9Y4E5	19	150	E3 SUMO-protein ligase ZNF451 (EC 2.3.2.-) (Coactivator for 	w
@@ -726,7 +730,7 @@ LIGASE	worm	B3KYC0	CELE_Y105E8A.20	B3KYC0	0	42	Methionine--tRNA ligase, mitochon
 LIGASE	worm	B6VQ94	CELE_W09D6.1	B6VQ94	1	27	AMP-dependent synthetase/ligase domain-containing protein	w
 LIGASE	worm	C0HKD6	prx-10	C0HKD6	0	10	Tryptophan--tRNA ligase, mitochondrial	w
 LIGASE	worm	E2JL04	iars-2	E2JL04	1	29	isoleucine--tRNA ligase	w
-LIGASE	worm	G5ECI8	fars-2	G5ECI8	0	7	phenylalanine--tRNA ligase	w
+LIGASE	worm	G5ECI8	fars-2	G5ECI8	2	9	phenylalanine--tRNA ligase	w
 LIGASE	worm	G5ECY6	chn-1	G5ECY6	12	85	E3 ubiquitin-protein ligase CHIP	w
 LIGASE	worm	G5ED95	yars-1	G5ED95	0	14	Tyrosine--tRNA ligase	w
 LIGASE	worm	G5EDY2	wars-1	G5EDY2	0	15	Tryptophan--tRNA ligase, cytoplasmic	w
@@ -734,14 +738,14 @@ LIGASE	worm	G5EF77	sars-2	G5EF77	1	30	serine--tRNA ligase	w
 LIGASE	worm	H2KZL6	yars-2	H2KZL6	0	12	Tyrosine--tRNA ligase	w
 LIGASE	worm	O01541	aars-2	O01541	0	37	Alanine--tRNA ligase, cytoplasmic	w
 LIGASE	worm	O01965	ari-1.1	O01965	3	6	E3 ubiquitin-protein ligase ari-1.1	w
-LIGASE	worm	O02642	sucl-2	O02642	2	22	Succinate--CoA ligase	w
+LIGASE	worm	O02642	sucl-2	O02642	6	27	Succinate--CoA ligase	w
 LIGASE	worm	O16616	trim-21	O16616	0	2	E3 ubiquitin-protein ligase trim-21	w
 LIGASE	worm	O16775	acs-15	O16775	0	16	long-chain-fatty-acid--CoA ligase	w
 LIGASE	worm	O17736	etc-1	O17736	0	2	E3 ubiquitin-protein ligase etc-1	w
 LIGASE	worm	O17917	rnf-113	O17917	8	71	Probable E3 ubiquitin-protein ligase rnf113	w
 LIGASE	worm	O18693	acs-2	O18693	0	23	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
 LIGASE	worm	O44560	acs-3	O44560	0	9	Long-chain-fatty-acid--CoA ligase	w
-LIGASE	worm	O45869	pars-2	O45869	2	34	Probable proline--tRNA ligase, mitochondrial	w
+LIGASE	worm	O45869	pars-2	O45869	3	35	Probable proline--tRNA ligase, mitochondrial	w
 LIGASE	worm	O45962	rle-1	O45962	0	2	Regulation of longevity by E3 ubiquitin-protein ligase	w
 LIGASE	worm	O62235	rbpl-1	O62235	5	40	E3 ubiquitin-protein ligase RBBP6	w
 LIGASE	worm	O62418	ekl-5	O62418	0	20	E3 ubiquitin-protein ligase	w
@@ -763,7 +767,7 @@ LIGASE	worm	Q09291	hecw-1	Q09291	3	28	E3 ubiquitin-protein ligase hecw-1	w
 LIGASE	worm	Q09463	rnf-5	Q09463	2	22	E3 ubiquitin ligase rnf-5	w
 LIGASE	worm	Q09654	arc-1	Q09654	4	21	E3 ubiquitin-protein ligase arc-1	w
 LIGASE	worm	Q09996	lars-1	Q09996	0	45	Leucine--tRNA ligase	w
-LIGASE	worm	Q10039	gars-1	Q10039	1	17	Glycine--tRNA ligase	w
+LIGASE	worm	Q10039	gars-1	Q10039	2	18	Glycine--tRNA ligase	w
 LIGASE	worm	Q17750	ufl-1	Q17750	2	12	E3 UFM1-protein ligase 1 homolog	w
 LIGASE	worm	Q18176	C25G6.3	Q18176	2	10	AMP-dependent synthetase/ligase domain-containing protein	w
 LIGASE	worm	Q18249	C27C12.1	Q18249	0	2	E3 ubiquitin-protein ligase LIN-1	w
@@ -784,7 +788,7 @@ LIGASE	worm	Q21284	CELE_K07E3.4	Q21284	0	27	formate--tetrahydrofolate ligase	w
 LIGASE	worm	Q21530	CELE_M110.3	Q21530	0	12	E3 ubiquitin-protein ligase MARCHF5	w
 LIGASE	worm	Q21872	acs-18	Q21872	0	19	Long-chain-fatty-acid--CoA ligase	w
 LIGASE	worm	Q21926	iars-1	Q21926	0	44	Isoleucine--tRNA ligase, cytoplasmic	w
-LIGASE	worm	Q22099	kars-1	Q22099	3	48	Lysine--tRNA ligase	w
+LIGASE	worm	Q22099	kars-1	Q22099	4	49	Lysine--tRNA ligase	w
 LIGASE	worm	Q22431	ari-2	Q22431	1	23	Potential E3 ubiquitin-protein ligase ariadne-2	w
 LIGASE	worm	Q22620	pars-1	Q22620	1	50	proline--tRNA ligase	w
 LIGASE	worm	Q23122	aars-1	Q23122	0	23	Alanine--tRNA ligase, mitochondrial	w
@@ -836,13 +840,13 @@ LIGASE	yeast	P10862	RAD18	P10862	12	47	Postreplication repair E3 ubiquitin-prote
 LIGASE	yeast	P11325	NAM2	P11325	1	46	Leucine--tRNA ligase, mitochondrial	w
 LIGASE	yeast	P12868	PEP5	P12868	5	35	E3 ubiquitin-protein ligase PEP5	w
 LIGASE	yeast	P13188	GLN4	P13188	2	207	Glutamine--tRNA ligase	w
-LIGASE	yeast	P15179	MSD1	P15179	0	16	Aspartate--tRNA ligase, mitochondrial	w
-LIGASE	yeast	P15180	KRS1	P15180	4	54	Lysine--tRNA ligase, cytoplasmic	w
+LIGASE	yeast	P15179	MSD1	P15179	2	18	Aspartate--tRNA ligase, mitochondrial	w
+LIGASE	yeast	P15180	KRS1	P15180	5	55	Lysine--tRNA ligase, cytoplasmic	w
 LIGASE	yeast	P15624	FRS1	P15624	1	22	Phenylalanine--tRNA ligase beta subunit	w
 LIGASE	yeast	P15625	FRS2	P15625	2	26	Phenylalanine--tRNA ligase alpha subunit	w
 LIGASE	yeast	P22438	MSM1	P22438	0	34	Methionine--tRNA ligase, mitochondrial	w
 LIGASE	yeast	P24814	GRR1	P24814	4	70	SCF E3 ubiquitin ligase complex F-box protein GRR1	w
-LIGASE	yeast	P25345	SLM5	P25345	3	40	Asparagine--tRNA ligase, mitochondrial	w
+LIGASE	yeast	P25345	SLM5	P25345	4	41	Asparagine--tRNA ligase, mitochondrial	w
 LIGASE	yeast	P26637	CDC60	P26637	1	65	Leucine--tRNA ligase, cytoplasmic	w
 LIGASE	yeast	P30624	FAA1	P30624	0	29	Long-chain-fatty-acid--CoA ligase 1	w
 LIGASE	yeast	P32048	MSK1	P32048	4	62	Lysine--tRNA ligase, mitochondrial	w
@@ -851,7 +855,7 @@ LIGASE	yeast	P32828	SLX5	P32828	8	77	E3 ubiquitin-protein ligase complex SLX5-SL
 LIGASE	yeast	P36096	TUL1	P36096	7	15	Transmembrane E3 ubiquitin-protein ligase 1	w
 LIGASE	yeast	P36113	HEL1	P36113	10	41	E3 ubiquitin-protein ligase HEL1	w
 LIGASE	yeast	P36421	TYS1	P36421	2	55	Tyrosine--tRNA ligase, cytoplasmic	w
-LIGASE	yeast	P38088	GRS1	P38088	1	50	Glycine--tRNA ligase 1, mitochondrial	w
+LIGASE	yeast	P38088	GRS1	P38088	2	51	Glycine--tRNA ligase 1, mitochondrial	w
 LIGASE	yeast	P38137	PCS60	P38137	6	120	Oxalate--CoA ligase	w
 LIGASE	yeast	P38254	PBY1	P38254	0	14	Probable tubulin--tyrosine ligase PBY1	w
 LIGASE	yeast	P38632	MMS21	P38632	3	29	E3 SUMO-protein ligase MMS21	w
@@ -863,7 +867,7 @@ LIGASE	yeast	P38823	DMA1	P38823	6	38	E3 ubiquitin-protein ligase DMA1	w
 LIGASE	yeast	P39002	FAA3	P39002	2	14	Long-chain-fatty-acid--CoA ligase 3	w
 LIGASE	yeast	P39518	FAA2	P39518	0	21	Long-chain-fatty-acid--CoA ligase 2	w
 LIGASE	yeast	P39940	RSP5	P39940	30	268	E3 ubiquitin-protein ligase RSP5	w
-LIGASE	yeast	P39965	AIM10	P39965	1	40	Probable proline--tRNA ligase, mitochondrial	w
+LIGASE	yeast	P39965	AIM10	P39965	2	41	Probable proline--tRNA ligase, mitochondrial	w
 LIGASE	yeast	P40072	SLX8	P40072	6	48	E3 ubiquitin-protein ligase complex SLX5-SLX8 subunit SLX8	w
 LIGASE	yeast	P40318	SSM4	P40318	4	35	ERAD-associated E3 ubiquitin-protein ligase DOA10	w
 LIGASE	yeast	P40459	PAN6	P40459	0	3	Pantoate--beta-alanine ligase	w
@@ -918,9 +922,13 @@ LIGASE	zebrafish	A0A2R8Q2E8	trim33	A0A2R8Q2E8	4	30	E3 ubiquitin-protein ligase T
 LIGASE	zebrafish	A0A2R8Q7I3	arel1	A0A2R8Q7I3	0	26	Apoptosis-resistant E3 ubiquitin protein ligase 1	w
 LIGASE	zebrafish	A0A2R8QN48	LOC108179742	A0A2R8QN48	7	43	E3 ubiquitin-protein ligase RNF31-like	w
 LIGASE	zebrafish	A0A8M1N5S3	rnf130	A0A8M1N5S3	2	13	E3 ubiquitin-protein ligase RNF130	w
+LIGASE	zebrafish	A0A8M1N7I1	lig3	A0A8M1N7I1	4	5	DNA ligase	w
 LIGASE	zebrafish	A0A8M1N9Q4	lnx1	A0A8M1N9Q4	2	42	E3 ubiquitin-protein ligase LNX	w
 LIGASE	zebrafish	A0A8M1NBM6	slc27a6	A0A8M1NBM6	0	10	long-chain-fatty-acid--CoA ligase	w
 LIGASE	zebrafish	A0A8M1NF66	lrsam1	A0A8M1NF66	2	33	E3 ubiquitin-protein ligase LRSAM1	w
+LIGASE	zebrafish	A0A8M1NS03	iars2	A0A8M1NS03	2	2	isoleucine--tRNA ligase	w
+LIGASE	zebrafish	A0A8M1NT07	yars2	A0A8M1NT07	3	3	Tyrosine--tRNA ligase	w
+LIGASE	zebrafish	A0A8M1NT19	gcat	A0A8M1NT19	3	3	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial	w
 LIGASE	zebrafish	A0A8M1P6B6	toporsa	A0A8M1P6B6	1	4	E3 ubiquitin-protein ligase Topors	w
 LIGASE	zebrafish	A0A8M1PDZ5	mars1	A0A8M1PDZ5	6	58	Methionine--tRNA ligase, cytoplasmic	w
 LIGASE	zebrafish	A0A8M1PDZ7	cbll1	A0A8M1PDZ7	2	16	E3 ubiquitin-protein ligase Hakai	w
@@ -934,16 +942,20 @@ LIGASE	zebrafish	A0A8M2BCW7	rnf167	A0A8M2BCW7	6	15	E3 ubiquitin-protein ligase R
 LIGASE	zebrafish	A0A8M3AIE9	btr16	A0A8M3AIE9	0	1	E3 ubiquitin-protein ligase TRIM39-like	w
 LIGASE	zebrafish	A0A8M3AWB4	mid1	A0A8M3AWB4	0	2	E3 ubiquitin-protein ligase Midline-1	w
 LIGASE	zebrafish	A0A8M3AXQ8	si:ch211-175l6.2	A0A8M3AXQ8	0	1	E3 ubiquitin-protein ligase TRIM35 isoform X1	w
+LIGASE	zebrafish	A0A8M6YVR9	gars	A0A8M6YVR9	2	2	Glycine--tRNA ligase	w
 LIGASE	zebrafish	A0A8M6Z2E5	ftr69	A0A8M6Z2E5	0	1	E3 ubiquitin/ISG15 ligase TRIM25	w
 LIGASE	zebrafish	A0A8M6Z7T5	ccnb1ip1	A0A8M6Z7T5	1	3	E3 ubiquitin-protein ligase CCNB1IP1	w
+LIGASE	zebrafish	A0A8M9PAQ3	suclg2	A0A8M9PAQ3	1	1	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
 LIGASE	zebrafish	A0A8M9PST5	pias1b	A0A8M9PST5	15	46	E3 SUMO-protein ligase PIAS1 isoform X1	w
 LIGASE	zebrafish	A0A8M9QGN1	sh3rf2	A0A8M9QGN1	0	1	E3 ubiquitin-protein ligase SH3RF2	w
+LIGASE	zebrafish	A0A8M9QLG1	nars2	A0A8M9QLG1	2	2	probable asparagine--tRNA ligase, mitochondrial isoform X1	w
 LIGASE	zebrafish	A0A8M9QLW7	LOC103911809	A0A8M9QLW7	1	8	E3 ubiquitin-protein ligase RBBP6-like	w
 LIGASE	zebrafish	A0A8M9QM86	LOC108191592	A0A8M9QM86	1	8	E3 ubiquitin-protein ligase RBBP6-like	w
 LIGASE	zebrafish	A0A8N7TDX3	nars1	A0A8N7TDX3	2	38	Asparagine--tRNA ligase, cytoplasmic	w
 LIGASE	zebrafish	A0A8N7UV20	ftr91	A0A8N7UV20	0	1	E3 ubiquitin/ISG15 ligase TRIM25-like	w
 LIGASE	zebrafish	A0A8N7UV72	trim35-25	A0A8N7UV72	0	1	E3 ubiquitin-protein ligase TRIM35	w
 LIGASE	zebrafish	A0A8N7UVE5	ftr13	A0A8N7UVE5	0	1	E3 ubiquitin/ISG15 ligase TRIM25	w
+LIGASE	zebrafish	A0A8N7UW37	dars2	A0A8N7UW37	2	2	aspartate--tRNA ligase, mitochondrial	w
 LIGASE	zebrafish	A0AB13AB14	qars1	A0AB13AB14	3	330	Glutamine--tRNA ligase	w
 LIGASE	zebrafish	A0AB13ABF7	prkn	A0AB13ABF7	35	182	E3 ubiquitin-protein ligase parkin	w
 LIGASE	zebrafish	A0AB32T677	ftr55	A0AB32T677	0	1	E3 ubiquitin/ISG15 ligase TRIM25 isoform X1	w
@@ -974,7 +986,9 @@ LIGASE	zebrafish	A5PMV5	fdxacb1	A5PMV5	0	5	phenylalanine--tRNA ligase	w
 LIGASE	zebrafish	A5WV16	acsl4b	A5WV16	0	15	long-chain-fatty-acid--CoA ligase	w
 LIGASE	zebrafish	A5WW08	chfr	A5WW08	5	25	E3 ubiquitin-protein ligase CHFR	w
 LIGASE	zebrafish	A5WWA0	znrf3	A5WWA0	7	26	E3 ubiquitin-protein ligase znrf3	w
-LIGASE	zebrafish	A9JRA7	acsm3	A9JRA7	1	7	medium-chain acyl-CoA ligase	w
+LIGASE	zebrafish	A7MBM0	lars2	A7MBM0	2	2	leucine--tRNA ligase	w
+LIGASE	zebrafish	A8E4Z0	fars2	A8E4Z0	4	4	phenylalanine--tRNA ligase	w
+LIGASE	zebrafish	A9JRA7	acsm3	A9JRA7	2	8	medium-chain acyl-CoA ligase	w
 LIGASE	zebrafish	A9JRZ0	smurf2	A9JRZ0	26	71	E3 ubiquitin-protein ligase SMURF2	w
 LIGASE	zebrafish	B0S533	lig1	B0S533	1	43	DNA ligase	w
 LIGASE	zebrafish	B0S5C4	acsl3b	B0S5C4	0	15	long-chain-fatty-acid--CoA ligase	w
@@ -985,13 +999,13 @@ LIGASE	zebrafish	B3DIX8	nsmce2	B3DIX8	3	21	E3 SUMO-protein ligase NSE2	w
 LIGASE	zebrafish	B7ZVP9	trim8b	B7ZVP9	0	5	E3 ubiquitin-protein ligase TRIM8b	w
 LIGASE	zebrafish	B8A4S5	herc56.2	B8A4S5	0	3	E3 ISG15--protein ligase HERC5.2	w
 LIGASE	zebrafish	B8A4S7	herc56.4	B8A4S7	0	3	E3 ISG15--protein ligase HERC5.4	w
-LIGASE	zebrafish	B8JK22	acsl1a	B8JK22	0	22	Long-chain-fatty-acid--CoA ligase	w
+LIGASE	zebrafish	B8JK22	acsl1a	B8JK22	0	23	Long-chain-fatty-acid--CoA ligase	w
 LIGASE	zebrafish	B8JLD4	herc3	B8JLD4	0	3	HECT and RLD domain-containing E3 ubiquitin protein ligase 3	w
 LIGASE	zebrafish	E7EZF3	uhrf1	E7EZF3	2	22	E3 ubiquitin-protein ligase UHRF1	w
 LIGASE	zebrafish	E7F266	egr2a	E7F266	2	12	E3 SUMO-protein ligase EGR2a isoform 1	w
 LIGASE	zebrafish	E7F4Z6	loc558876	E7F4Z6	0	1	E3 ubiquitin-protein ligase RNF14	w
 LIGASE	zebrafish	E7F5K6	obi1	E7F5K6	0	5	ORC ubiquitin ligase 1	w
-LIGASE	zebrafish	E7F5M3	mars2	E7F5M3	0	34	Methionine--tRNA ligase, mitochondrial	w
+LIGASE	zebrafish	E7F5M3	mars2	E7F5M3	1	36	Methionine--tRNA ligase, mitochondrial	w
 LIGASE	zebrafish	E7F700	herc4	E7F700	0	3	HECT and RLD domain-containing E3 ubiquitin protein ligase 4	w
 LIGASE	zebrafish	E7F7M5	peli3	E7F7M5	2	10	E3 ubiquitin-protein ligase pellino homolog 1 isoform X1	w
 LIGASE	zebrafish	E7F8E2	jade2	E7F8E2	4	11	E3 ubiquitin-protein ligase Jade-2	w
@@ -1059,11 +1073,13 @@ LIGASE	zebrafish	Q1LY19	ube3c	Q1LY19	0	6	Ubiquitin-protein ligase E3C	w
 LIGASE	zebrafish	Q4VBT5	mkrn1	Q4VBT5	0	3	Probable E3 ubiquitin-protein ligase makorin-1	w
 LIGASE	zebrafish	Q568K2	ppp1r11	Q568K2	13	34	E3 ubiquitin-protein ligase PPP1R11	w
 LIGASE	zebrafish	Q58EC8	rnf152	Q58EC8	2	6	E3 ubiquitin-protein ligase rnf152	w
+LIGASE	zebrafish	Q5CZN2	zgc:110828	Q5CZN2	0	1	tryptophan--tRNA ligase	w
 LIGASE	zebrafish	Q5M7X9	mul1a	Q5M7X9	7	9	Mitochondrial ubiquitin ligase activator of nfkb 1-A	w
 LIGASE	zebrafish	Q5RFV4	rnf144aa	Q5RFV4	1	9	Probable E3 ubiquitin-protein ligase RNF144A-A	w
 LIGASE	zebrafish	Q66I18	rnf103	Q66I18	3	16	E3 ubiquitin-protein ligase RNF103	w
+LIGASE	zebrafish	Q66I58	SUCLG1	Q66I58	11	12	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
 LIGASE	zebrafish	Q6DH94	rnf144ab	Q6DH94	1	5	Probable E3 ubiquitin-protein ligase RNF144A-B	w
-LIGASE	zebrafish	Q6DHE6	kars1	Q6DHE6	1	48	Lysine--tRNA ligase	w
+LIGASE	zebrafish	Q6DHE6	kars1	Q6DHE6	3	50	Lysine--tRNA ligase	w
 LIGASE	zebrafish	Q6DHJ8	peli2	Q6DHJ8	2	10	E3 ubiquitin-protein ligase pellino homolog 2	w
 LIGASE	zebrafish	Q6DRC0	sars1	Q6DRC0	0	32	Serine--tRNA ligase, cytoplasmic	w
 LIGASE	zebrafish	Q6DRF0	rnf113a	Q6DRF0	7	88	E3 ubiquitin-protein ligase RNF113A	w
@@ -1073,18 +1089,21 @@ LIGASE	zebrafish	Q6J0N1	rnf114	Q6J0N1	0	4	E3 ubiquitin-protein ligase RNF114	w
 LIGASE	zebrafish	Q6NV35	gclc	Q6NV35	1	12	Glutamate--cysteine ligase	w
 LIGASE	zebrafish	Q6NW85	arih1l	Q6NW85	10	43	E3 ubiquitin-protein ligase arih1l	w
 LIGASE	zebrafish	Q6NX00	rnf128a	Q6NX00	0	6	E3 ubiquitin-protein ligase RNF128a precursor	w
-LIGASE	zebrafish	Q6NYK8	marchf5	Q6NYK8	0	15	E3 ubiquitin-protein ligase MARCHF5	w
+LIGASE	zebrafish	Q6NYK8	marchf5	Q6NYK8	1	16	E3 ubiquitin-protein ligase MARCHF5	w
 LIGASE	zebrafish	Q6NZS4	rtcb	Q6NZS4	1	16	RNA-splicing ligase RtcB homolog	w
+LIGASE	zebrafish	Q6P0C4	fc83e06	Q6P0C4	1	1	proline--tRNA ligase	w
 LIGASE	zebrafish	Q6P4U6	znrf1	Q6P4U6	4	4	E3 ubiquitin-protein ligase znrf1	w
-LIGASE	zebrafish	Q6PBI0	sucla2	Q6PBI0	2	25	Succinate--CoA ligase	w
+LIGASE	zebrafish	Q6PBI0	sucla2	Q6PBI0	4	27	Succinate--CoA ligase	w
 LIGASE	zebrafish	Q6PC78	rnf185	Q6PC78	8	32	E3 ubiquitin-protein ligase RNF185	w
 LIGASE	zebrafish	Q6PD82	tmem129	Q6PD82	0	1	E3 ubiquitin-protein ligase TM129	w
 LIGASE	zebrafish	Q6PFI9	wu:fb37d03	Q6PFI9	2	4	E3 ubiquitin-protein ligase ZNRF1	w
 LIGASE	zebrafish	Q6PFJ9	arih1	Q6PFJ9	11	43	E3 ubiquitin-protein ligase arih1	w
 LIGASE	zebrafish	Q6PFK1	znf598	Q6PFK1	2	12	E3 ubiquitin-protein ligase ZNF598	w
+LIGASE	zebrafish	Q6PGW8	zgc:63702	Q6PGW8	1	1	arginine--tRNA ligase	w
 LIGASE	zebrafish	Q6PGY6	ufl1	Q6PGY6	4	12	E3 UFM1-protein ligase 1	w
 LIGASE	zebrafish	Q6TEM9	mylipa	Q6TEM9	9	41	E3 ubiquitin-protein ligase MYLIP-A	w
 LIGASE	zebrafish	Q6TGS6	yars1	Q6TGS6	1	48	Tyrosine--tRNA ligase, cytoplasmic	w
+LIGASE	zebrafish	Q7SXG8	SerRS2	Q7SXG8	1	1	serine--tRNA ligase	w
 LIGASE	zebrafish	Q7SXJ6	rnf25	Q7SXJ6	13	18	E3 ubiquitin-protein ligase RNF25	w
 LIGASE	zebrafish	Q7SYL3	siah2l	Q7SYL3	8	32	E3 ubiquitin-protein ligase Siah2	w
 LIGASE	zebrafish	Q7SZN2	rnf170	Q7SZN2	0	3	E3 ubiquitin-protein ligase RNF170	w
@@ -1124,7 +1143,7 @@ LIGASE-LIKE	fly	FBgn0051108	TTLL5	Q9VBX5	1	13	Tubulin--tyrosine ligase-like prot
 LIGASE-LIKE	fly	FBgn0052238	TTLL1B	Q9VZ97	1	13	IP12417p (Tubulin tyrosine ligase-like 1B)	w
 LIGASE-LIKE	human	A6NNM8	TTLL13	A6NNM8	0	5	Tubulin polyglutamylase TTLL13 (EC 6.3.2.-) (Tubulin tyrosin	w
 LIGASE-LIKE	human	A6PVC2	TTLL8	A6PVC2	2	22	Protein monoglycylase TTLL8 (EC 6.3.2.-) (Tubulin--tyrosine 	w
-LIGASE-LIKE	human	P49590	HARS2	P49590	6	179	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
+LIGASE-LIKE	human	P49590	HARS2	P49590	9	182	Histidine--tRNA ligase, mitochondrial (EC 6.1.1.21) (Histidi	w
 LIGASE-LIKE	human	Q14166	TTLL12	Q14166	12	175	Tubulin--tyrosine ligase-like protein 12 (Inactive tubulin--	w
 LIGASE-LIKE	human	Q14679	TTLL4	Q14679	8	53	Tubulin monoglutamylase TTLL4 (EC 6.3.2.-) (Protein monoglut	w
 LIGASE-LIKE	human	Q3SXZ7	TTLL9	Q3SXZ7	1	33	Probable tubulin polyglutamylase TTLL9 (EC 6.3.2.-) (Tubulin	w

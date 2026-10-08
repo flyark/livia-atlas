@@ -21,15 +21,15 @@ P13033	escherichia-coli-83333	P13033	glpB	P13033	1	4	Anaerobic glycerol-3-phosph
 P13035	escherichia-coli-83333	P13035	glpD	P13035	0	8	Aerobic glycerol-3-phosphate dehydrogenase	
 P13036	escherichia-coli-83333	P13036	fecA	P13036	1	9	Fe(3+) dicitrate transport protein FecA	
 P13045	yeast	P13045	GAL3	P13045	1	8	Protein GAL3	
-P13051	human	P13051	UNG	P13051	8	96	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	
+P13051	human	P13051	UNG	P13051	17	105	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	
 P13053	rattus-norvegicus	P13053	Vdr	P13053	12	30	Vitamin D3 receptor	
 P13054	fly	FBgn0001323	knrl	P13054	107	365	Knirps-related protein (Nuclear receptor subfamily 0 group A	
 P13055	fly	FBgn0000568	Eip75B	P13055	117	396	Ecdysone-induced protein 75B, isoform B (E75-C) (Nuclear rec	
 P13056	human	P13056	NR2C1	P13056	37	121	Nuclear receptor subfamily 2 group C member 1 (Orphan nuclea	
 P13060	fly	FBgn0000559	eEF2	P13060	7	359	Eukaryotic translation elongation factor 2 (EC 3.6.5.-) (Elo	
-P13073	human	P13073	COX4I1	P13073	26	534	Cytochrome c oxidase subunit 4 isoform 1, mitochondrial (Cyt	
+P13073	human	P13073	COX4I1	P13073	28	535	Cytochrome c oxidase subunit 4 isoform 1, mitochondrial (Cyt	
 P13084	rattus-norvegicus	P13084	Npm1	P13084	2	61	Nucleophosmin	
-P13086	rattus-norvegicus	P13086	Suclg1	P13086	2	41	Succinate--CoA ligase	
+P13086	rattus-norvegicus	P13086	Suclg1	P13086	13	52	Succinate--CoA ligase	
 P13088	glycine-max	P13088	AUX22	P13088	6	16	Auxin-induced protein AUX22	
 P13089	glycine-max	P13089	AUX28	P13089	0	4	Auxin-induced protein AUX28	
 P13090	yeast	P13090	ATR1	P13090	0	6	Aminotriazole resistance protein	
@@ -37,7 +37,7 @@ P13095	fly	FBgn0002629	E(spl)m4-BFM	P13095	4	11	Enhancer of split m4 protein (E(
 P13096	fly	FBgn0002631	E(spl)m5-HLH	P13096	39	400	Enhancer of split m5 protein (E(spl)m5)	
 P13097	fly	FBgn0002633	E(spl)m7-HLH	P13097	55	412	Enhancer of split m7 protein (E(spl)m7)	
 P13098	fly	FBgn0000591	E(spl)m8-HLH	P13098	71	429	Enhancer of split m8 protein (E(spl)m8)	
-P13099	yeast	P13099	TOP3	P13099	3	25	DNA topoisomerase 3	
+P13099	yeast	P13099	TOP3	P13099	4	26	DNA topoisomerase 3	
 P130CAS	fly	FBgn0035101	p130CAS	A4IJ58	14	100	IP17195p (P130CAS, isoform D)	w
 P130CAS	fly	FBgn0035101	p130CAS	A4IJ58	14	100	IP17195p (P130CAS, isoform D)	w
 P130CAS	human	P56945	BCAR1	P56945	145	576	Breast cancer anti-estrogen resistance protein 1 (CRK-associ	w
@@ -53,8 +53,8 @@ P13181	yeast	P13181	GAL2	P13181	0	8	Galactose transporter
 P13185	yeast	P13185	KIN1	P13185	12	93	Serine/threonine protein kinase KIN1 (EC 2.7.11.1)	
 P13186	yeast	P13186	KIN2	P13186	16	133	Serine/threonine-protein kinase KIN2 (EC 2.7.11.1)	
 P13188	yeast	P13188	GLN4	P13188	2	207	Glutamine--tRNA ligase	
-P13195	rattus-norvegicus	P13195	Alas1	P13195	1	10	5-aminolevulinate synthase, non-specific, mitochondrial	
-P13196	human	P13196	ALAS1	P13196	16	170	5-aminolevulinate synthase, non-specific, mitochondrial (ALA	
+P13195	rattus-norvegicus	P13195	Alas1	P13195	4	13	5-aminolevulinate synthase, non-specific, mitochondrial	
+P13196	human	P13196	ALAS1	P13196	19	173	5-aminolevulinate synthase, non-specific, mitochondrial (ALA	
 P13199	virus	P13199	EJRF1	P13199	1	74	mRNA export factor ICP27 homolog	
 P13205	rattus-norvegicus	P13205	Nppb	P13205	2	14	Natriuretic peptides B	
 P13207	rattus-norvegicus	P13207	Edn3	P13207	3	5	Endothelin-3	
@@ -70,7 +70,7 @@ P13255	rattus-norvegicus	P13255	Gnmt	P13255	1	8	Glycine N-methyltransferase
 P13259	yeast	P13259	PCT1	P13259	2	25	Choline-phosphate cytidylyltransferase	
 P13262	onchocerca-volvulus	P13262	?	P13262	0	1	Major sperm protein 1	
 P13263	onchocerca-volvulus	P13263	?	P13263	0	1	Major sperm protein 2	
-P13264	rattus-norvegicus	P13264	Gls	P13264	2	6	Glutaminase kidney isoform, mitochondrial	
+P13264	rattus-norvegicus	P13264	Gls	P13264	4	8	Glutaminase kidney isoform, mitochondrial	
 P13265	rattus-norvegicus	P13265	Gpc3	P13265	0	44	Glypican-3	
 P13284	human	P13284	IFI30	P13284	42	242	Gamma-interferon-inducible lysosomal thiol reductase (EC 1.8	
 P13285	virus	P13285	LMP2	P13285	0	91	Latent membrane protein 2	
@@ -99,7 +99,7 @@ P13412	mus-musculus	P13412	Tnni2	P13412	10	40	Troponin I, fast skeletal muscle
 P13413	rattus-norvegicus	P13413	Tnni1	P13413	15	52	Troponin I, slow skeletal muscle	
 P13433	yeast	P13433	RPO41	P13433	2	46	DNA-directed RNA polymerase, mitochondrial	
 P13434	yeast	P13434	HAP3	P13434	2	15	Transcriptional activator HAP3	
-P13437	rattus-norvegicus	P13437	Acaa2	P13437	2	25	3-ketoacyl-CoA thiolase, mitochondrial	
+P13437	rattus-norvegicus	P13437	Acaa2	P13437	4	28	3-ketoacyl-CoA thiolase, mitochondrial	
 P13439	mus-musculus	P13439	Umps	P13439	0	3	Uridine 5'-monophosphate synthase	
 P13444	rattus-norvegicus	P13444	Mat1a	P13444	1	5	S-adenosylmethionine synthase isoform type-1	
 P13445	escherichia-coli-83333	P13445	rpoS	P13445	2	25	RNA polymerase sigma factor RpoS	
@@ -198,8 +198,8 @@ P13796	human	P13796	LCP1	P13796	12	382	Plastin-2 (L-plastin) (LC64P) (Lymphocyte
 P13797	human	P13797	PLS3	P13797	11	357	Plastin-3 (T-fimbrin) (T-plastin)	
 P13798	human	P13798	APEH	P13798	3	142	Acylamino-acid-releasing enzyme (AARE) (EC 3.4.19.1) (Acyl-p	
 P138-TOX	human	Q9NRD8	DUOX2	Q9NRD8	2	12	Dual oxidase 2 (EC 1.-.-.-) (EC 1.11.1.-) (EC 1.6.3.1) (Larg	w
-P13803	rattus-norvegicus	P13803	Etfa	P13803	2	34	Electron transfer flavoprotein subunit alpha, mitochondrial	
-P13804	human	P13804	ETFA	P13804	32	342	Electron transfer flavoprotein subunit alpha, mitochondrial 	
+P13803	rattus-norvegicus	P13803	Etfa	P13803	18	51	Electron transfer flavoprotein subunit alpha, mitochondrial	
+P13804	human	P13804	ETFA	P13804	49	357	Electron transfer flavoprotein subunit alpha, mitochondrial 	
 P13805	human	P13805	TNNT1	P13805	23	160	Troponin T, slow skeletal muscle (TnTs) (Slow skeletal muscl	
 P13807	human	P13807	GYS1	P13807	11	193	Glycogen [starch] synthase, muscle (EC 2.4.1.11) (Glycogen s	
 P13808	mus-musculus	P13808	Slc4a2	P13808	0	9	Anion exchange protein 2	
@@ -269,5 +269,5 @@ P13984	human	P13984	GTF2F2	P13984	68	620	General transcription factor IIF subuni
 P13985	human	P13985	HRES1	P13985	0	3	Putative HTLV-1-related endogenous sequence (p25)	
 P13987	human	P13987	CD59	P13987	53	699	CD59 glycoprotein (1F5 antigen) (20 kDa homologous restricti	
 P13994	human	P13994	YJU2B	P13994	18	113	Probable splicing factor YJU2B (Coiled-coil domain-containin	
-P13995	human	P13995	MTHFD2	P13995	12	133	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohy	
+P13995	human	P13995	MTHFD2	P13995	14	135	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohy	
 P13MTCP1	human	P56278	MTCP1	P56278	4	29	Protein p13 MTCP-1 (p13MTCP1) (Mature T-cell proliferation-1	w

@@ -238,7 +238,7 @@ Q66GP4	arabidopsis-thaliana	Q66GP4	At5g13770	Q66GP4	0	1	Pentatricopeptide repeat
 Q66GP5	arabidopsis-thaliana	Q66GP5	At2g42230	Q66GP5	6	10	TBCC domain-containing protein 1	
 Q66GP7	arabidopsis-thaliana	Q66GP7	At1g13130	Q66GP7	0	4	At1g13130	
 Q66GP9	arabidopsis-thaliana	Q66GP9	NOA1	Q66GP9	5	177	NO-associated protein 1, chloroplastic/mitochondrial	
-Q66GQ1	arabidopsis-thaliana	Q66GQ1	TRME	Q66GQ1	7	98	At1g78010	
+Q66GQ1	arabidopsis-thaliana	Q66GQ1	TRME	Q66GQ1	8	99	At1g78010	
 Q66GQ3	arabidopsis-thaliana	Q66GQ3	PDIL1-6	Q66GQ3	0	24	Protein disulfide isomerase-like 1-6	
 Q66GQ6	arabidopsis-thaliana	Q66GQ6	IP5P5	Q66GQ6	0	1	Type I inositol polyphosphate 5-phosphatase 5	
 Q66GR0	arabidopsis-thaliana	Q66GR0	FLA17	Q66GR0	0	6	Fasciclin-like arabinogalactan protein 17	
@@ -247,6 +247,8 @@ Q66GR3	arabidopsis-thaliana	Q66GR3	BHLH130	Q66GR3	11	86	Transcription factor bHL
 Q66GR6	arabidopsis-thaliana	Q66GR6	WHY3	Q66GR6	0	21	Single-stranded DNA-binding protein WHY3, chloroplastic	
 Q66GR7	arabidopsis-thaliana	Q66GR7	OEX2	Q66GR7	7	105	5-3 exonuclease family protein	
 Q66GS9	human	Q66GS9	CEP135	Q66GS9	95	315	Centrosomal protein of 135 kDa (Cep135) (Centrosomal protein	
+Q66GT5	mus-musculus	Q66GT5	Ptpmt1	Q66GT5	6	7	Phosphatidylglycerophosphatase and protein-tyrosine phosphat	
+Q66GV5	xenopus-laevis	Q66GV5	higd2a.S	Q66GV5	1	1	HIG1 hypoxia inducible domain family member 2A S homeolog	
 Q66H02	rattus-norvegicus	Q66H02	Cenpq	Q66H02	5	38	Centromere protein Q	
 Q66H04	rattus-norvegicus	Q66H04	Fbxo43	Q66H04	4	18	F-box only protein 43	
 Q66H06	rattus-norvegicus	Q66H06	Tspan3	Q66H06	1	42	Tetraspanin	
@@ -255,11 +257,11 @@ Q66H09	rattus-norvegicus	Q66H09	Ttc1	Q66H09	4	12	Tetratricopeptide repeat protei
 Q66H10	rattus-norvegicus	Q66H10	Fbxo39	Q66H10	1	5	F-box only protein 39	
 Q66H12	rattus-norvegicus	Q66H12	Naga	Q66H12	0	1	Alpha-N-acetylgalactosaminidase	
 Q66H14	rattus-norvegicus	Q66H14	Lca5l	Q66H14	1	1	Lebercilin-like protein	
-Q66H15	rattus-norvegicus	Q66H15	Rmdn3	Q66H15	7	17	Regulator of microtubule dynamics protein 3	
+Q66H15	rattus-norvegicus	Q66H15	Rmdn3	Q66H15	16	26	Regulator of microtubule dynamics protein 3	
 Q66H17	rattus-norvegicus	Q66H17	Spata32	Q66H17	0	1	Spermatogenesis-associated protein 32	
 Q66H19	rattus-norvegicus	Q66H19	Srfbp1	Q66H19	26	181	Serum response factor-binding protein 1	
 Q66H20	rattus-norvegicus	Q66H20	Ptbp2	Q66H20	3	26	Polypyrimidine tract-binding protein 2	
-Q66H21	rattus-norvegicus	Q66H21	Chpt1	Q66H21	1	5	Cholinephosphotransferase 1	
+Q66H21	rattus-norvegicus	Q66H21	Chpt1	Q66H21	6	10	Cholinephosphotransferase 1	
 Q66H23	rattus-norvegicus	Q66H23	Slc25a37	Q66H23	0	8	Mitoferrin-1	
 Q66H24	rattus-norvegicus	Q66H24	?	Q66H24	0	1	Uncharacterized protein C9orf40 homolog	
 Q66H28	rattus-norvegicus	Q66H28	Pacc1	Q66H28	0	3	Proton-activated chloride channel	
@@ -271,7 +273,7 @@ Q66H40	rattus-norvegicus	Q66H40	Hmgn3	Q66H40	0	5	High mobility group nucleosome-
 Q66H42	rattus-norvegicus	Q66H42	Lypd1	Q66H42	0	1	Ly6/PLAUR domain-containing protein 1	
 Q66H43	rattus-norvegicus	Q66H43	Borcs6	Q66H43	7	8	BLOC-1-related complex subunit 6	
 Q66H45	rattus-norvegicus	Q66H45	Ttc36	Q66H45	0	1	Tetratricopeptide repeat protein 36	
-Q66H47	rattus-norvegicus	Q66H47	Mrpl24	Q66H47	16	523	Large ribosomal subunit protein uL24m	
+Q66H47	rattus-norvegicus	Q66H47	Mrpl24	Q66H47	19	525	Large ribosomal subunit protein uL24m	
 Q66H50	rattus-norvegicus	Q66H50	Far1	Q66H50	1	3	Fatty acyl-CoA reductase 1	
 Q66H52	rattus-norvegicus	Q66H52	Itpripl1	Q66H52	6	35	Inositol 1,4,5-trisphosphate receptor-interacting protein-li	
 Q66H54	rattus-norvegicus	Q66H54	Fhip1b	Q66H54	3	6	FHF complex subunit HOOK-interacting protein 1B	
@@ -329,18 +331,19 @@ Q66HD6	rattus-norvegicus	Q66HD6	Lrrc18	Q66HD6	0	2	Leucine-rich repeat-containing
 Q66HE1	rattus-norvegicus	Q66HE1	Pnrc2	Q66HE1	2	6	Proline-rich nuclear receptor coactivator 2	
 Q66HE2	rattus-norvegicus	Q66HE2	Slc16a13	Q66HE2	0	2	Monocarboxylate transporter 13	
 Q66HE5	rattus-norvegicus	Q66HE5	Nuak2	Q66HE5	0	3	NUAK family SNF1-like kinase 2	
-Q66HF1	rattus-norvegicus	Q66HF1	Ndufs1	Q66HF1	13	232	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	
+Q66HF0	rattus-norvegicus	Q66HF0	Armcx6	Q66HF0	2	2	Protein ARMCX6	
+Q66HF1	rattus-norvegicus	Q66HF1	Ndufs1	Q66HF1	25	242	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	
 Q66HF2	rattus-norvegicus	Q66HF2	Tm9sf1	Q66HF2	0	24	Transmembrane 9 superfamily member 1	
 Q66HF6	rattus-norvegicus	Q66HF6	Tinag	Q66HF6	0	3	Tubulointerstitial nephritis antigen-like	
-Q66HF8	rattus-norvegicus	Q66HF8	Aldh1b1	Q66HF8	5	17	Aldehyde dehydrogenase X, mitochondrial	
+Q66HF8	rattus-norvegicus	Q66HF8	Aldh1b1	Q66HF8	9	21	Aldehyde dehydrogenase X, mitochondrial	
 Q66HF9	rattus-norvegicus	Q66HF9	Lrrfip1	Q66HF9	2	13	Leucine-rich repeat flightless-interacting protein 1	
 Q66HG0	rattus-norvegicus	Q66HG0	Rnf13	Q66HG0	2	7	E3 ubiquitin-protein ligase RNF13	
 Q66HG1	rattus-norvegicus	Q66HG1	Dmtf1	Q66HG1	0	6	Cyclin-D-binding Myb-like transcription factor 1	
 Q66HG3	rattus-norvegicus	Q66HG3	Cndp1	Q66HG3	1	7	Beta-Ala-His dipeptidase	
 Q66HG5	rattus-norvegicus	Q66HG5	Tm9sf2	Q66HG5	0	1	Transmembrane 9 superfamily member 2	
-Q66HG6	rattus-norvegicus	Q66HG6	Ca5b	Q66HG6	0	5	Carbonic anhydrase 5B, mitochondrial	
+Q66HG6	rattus-norvegicus	Q66HG6	Ca5b	Q66HG6	6	11	Carbonic anhydrase 5B, mitochondrial	
 Q66HG7	rattus-norvegicus	Q66HG7	Ddx59	Q66HG7	1	43	Probable ATP-dependent RNA helicase DDX59	
-Q66HG9	rattus-norvegicus	Q66HG9	Mavs	Q66HG9	8	87	Mitochondrial antiviral-signaling protein	
+Q66HG9	rattus-norvegicus	Q66HG9	Mavs	Q66HG9	12	92	Mitochondrial antiviral-signaling protein	
 Q66HH1	rattus-norvegicus	Q66HH1	B4galt4	Q66HH1	0	15	Beta-1,4-galactosyltransferase 4	
 Q66HH2	rattus-norvegicus	Q66HH2	Emp2	Q66HH2	0	1	Epithelial membrane protein 2	
 Q66HH3	rattus-norvegicus	Q66HH3	Lyl1	Q66HH3	7	22	Protein lyl-1	
@@ -356,6 +359,8 @@ Q66HT8	zebrafish	Q66HT8	adprs	Q66HT8	0	24	ADP-ribosylhydrolase ARH3
 Q66HU1	zebrafish	Q66HU1	cdc42ep3	Q66HU1	2	6	CDC42 effector protein (Rho GTPase-binding) 3	
 Q66HU4	zebrafish	Q66HU4	capn3a	Q66HU4	6	17	Calpain-3	
 Q66HU5	zebrafish	Q66HU5	hat1	Q66HU5	3	25	Histone acetyltransferase type B catalytic subunit	
+Q66HU7	zebrafish	Q66HU7	pxmp2	Q66HU7	0	1	Peroxisomal membrane protein 2	
+Q66HU7_DANRE	zebrafish	Q66HU7	pxmp2	Q66HU7	0	1		
 Q66HV4	zebrafish	Q66HV4	copb1	Q66HV4	22	69	Coatomer subunit beta	
 Q66HV7	zebrafish	Q66HV7	gjc2	Q66HV7	0	35	Gap junction protein	
 Q66HV8	zebrafish	Q66HV8	pfkma	Q66HV8	5	24	ATP-dependent 6-phosphofructokinase	
@@ -381,7 +386,8 @@ Q66I04	zebrafish	Q66I04	lyn	Q66I04	4	32	Tyrosine-protein kinase
 Q66I08	zebrafish	Q66I08	slc51a	Q66I08	0	1	Organic solute transporter subunit alpha	
 Q66I11	zebrafish	Q66I11	nt5c2l1	Q66I11	2	9	5'-nucleotidase, cytosolic II,-like 1	
 Q66I12	zebrafish	Q66I12	ccdc47	Q66I12	5	64	PAT complex subunit CCDC47	
-Q66I16	zebrafish	Q66I16	etfdh	Q66I16	0	12	Electron transfer flavoprotein-ubiquinone oxidoreductase	
+Q66I16	zebrafish	Q66I16	etfdh	Q66I16	3	17	Electron transfer flavoprotein-ubiquinone oxidoreductase	
+Q66I16_DANRE	zebrafish	Q66I16	etfdh	Q66I16	3	17		
 Q66I18	zebrafish	Q66I18	rnf103	Q66I18	3	16	E3 ubiquitin-protein ligase RNF103	
 Q66I20	zebrafish	Q66I20	serpinf1	Q66I20	0	3	Pigment epithelium-derived factor precursor	
 Q66I21	zebrafish	Q66I21	aldh8a1	Q66I21	0	1	2-aminomuconic semialdehyde dehydrogenase	
@@ -393,8 +399,14 @@ Q66I28	zebrafish	Q66I28	igfbp3	Q66I28	8	46	Insulin-like growth factor-binding pr
 Q66I37	zebrafish	Q66I37	nucks1a	Q66I37	0	3	Nuclear casein kinase and cyclin-dependent kinase substrate 	
 Q66I42	zebrafish	Q66I42	msna	Q66I42	6	46	Moesin a	
 Q66I51	zebrafish	Q66I51	tmem55bb	Q66I51	0	2	Type I phosphatidylinositol 4,5-bisphosphate 4-phosphatase-B	
-Q66I53	zebrafish	Q66I53	cox17	Q66I53	2	6	Cytochrome c oxidase copper chaperone	
-Q66I54	zebrafish	Q66I54	mrpl53	Q66I54	9	130	Large ribosomal subunit protein mL53	
+Q66I52	zebrafish	Q66I52	zgc:103774	Q66I52	4	4	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitoc	
+Q66I52_DANRE	zebrafish	Q66I52	zgc:103774	Q66I52	4	4		
+Q66I53	zebrafish	Q66I53	cox17	Q66I53	4	8	Cytochrome c oxidase copper chaperone	
+Q66I53_DANRE	zebrafish	Q66I53	cox17	Q66I53	4	8		
+Q66I54	zebrafish	Q66I54	mrpl53	Q66I54	20	141	Large ribosomal subunit protein mL53	
+Q66I54_DANRE	zebrafish	Q66I54	mrpl53	Q66I54	20	141		
+Q66I58	zebrafish	Q66I58	SUCLG1	Q66I58	11	12	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	
+Q66I58_DANRE	zebrafish	Q66I58	SUCLG1	Q66I58	11	12		
 Q66I61	zebrafish	Q66I61	steep1	Q66I61	6	85	STING ER exit protein	
 Q66I64	zebrafish	Q66I64	aqp8a.1	Q66I64	4	25	Aqp8a protein	
 Q66I67	zebrafish	Q66I67	ift20	Q66I67	10	55	Intraflagellar transport protein 20 homolog	
@@ -402,12 +414,15 @@ Q66I68	zebrafish	Q66I68	cnfn	Q66I68	0	2	Cornifelin homolog
 Q66I71	zebrafish	Q66I71	uck1	Q66I71	5	27	Uridine-cytidine kinase 1	
 Q66I72	zebrafish	Q66I72	f11r.1	Q66I72	7	37	Junctional adhesion molecule A	
 Q66I73	zebrafish	Q66I73	mylpfb	Q66I73	2	25	Myosin regulatory light chain 2, skeletal muscle isoform B	
-Q66I77	zebrafish	Q66I77	cox6a2	Q66I77	7	106	Cytochrome c oxidase subunit	
+Q66I77	zebrafish	Q66I77	cox6a2	Q66I77	8	106	Cytochrome c oxidase subunit	
+Q66I77_DANRE	zebrafish	Q66I77	cox6a2	Q66I77	8	106		
 Q66I80	zebrafish	Q66I80	fabp4a	Q66I80	5	9	Fatty acid binding protein 11a	
-Q66I81	zebrafish	Q66I81	mrpl17	Q66I81	37	526	Large ribosomal subunit protein bL17m	
+Q66I81	zebrafish	Q66I81	mrpl17	Q66I81	38	527	Large ribosomal subunit protein bL17m	
+Q66I81_DANRE	zebrafish	Q66I81	mrpl17	Q66I81	38	527		
 Q66I84	zebrafish	Q66I84	dscc1	Q66I84	3	17	Sister chromatid cohesion protein DCC1	
 Q66I85	zebrafish	Q66I85	yju2b	Q66I85	3	23	Probable splicing factor YJU2B	
-Q66I86	zebrafish	Q66I86	mrpl40	Q66I86	21	242	Large ribosomal subunit protein mL40	
+Q66I86	zebrafish	Q66I86	mrpl40	Q66I86	24	245	Large ribosomal subunit protein mL40	
+Q66I86_DANRE	zebrafish	Q66I86	mrpl40	Q66I86	24	245		
 Q66IA6	zebrafish	Q66IA6	lypd6	Q66IA6	4	52	Ly6/PLAUR domain-containing protein 6	
 Q66IA7	zebrafish	Q66IA7	uxt	Q66IA7	6	31	Protein UXT	
 Q66IB0	zebrafish	Q66IB0	lin7c	Q66IB0	5	34	Protein lin-7 homolog	
@@ -418,8 +433,17 @@ Q66IC9	zebrafish	Q66IC9	ropn1l	Q66IC9	0	5	Ropporin-1-like protein
 Q66ID3	zebrafish	Q66ID3	spout1	Q66ID3	0	4	28S rRNA (uridine-N(3))-methyltransferase	
 Q66IE3	zebrafish	Q66IE3	ap1s3b	Q66IE3	9	36	AP complex subunit sigma	
 Q66IE4	zebrafish	Q66IE4	tmem237b	Q66IE4	0	19	Transmembrane protein 237B	
+Q66IE6	zebrafish	Q66IE6	zgc:101630	Q66IE6	1	1	Nitrilase 1	
+Q66IE6_DANRE	zebrafish	Q66IE6	zgc:101630	Q66IE6	1	1		
 Q66IF0	zebrafish	Q66IF0	dhrs13a.2	Q66IF0	0	11	Dehydrogenase/reductase (SDR family) member 13a, tandem dupl	
 Q66IF1	zebrafish	Q66IF1	reep6	Q66IF1	0	3	Receptor expression-enhancing protein 6	
+Q66IP1	xenopus-laevis	Q66IP1	ahcyl1.S	Q66IP1	1	1	Adenosylhomocysteinase	
+Q66IS0	xenopus-laevis	Q66IS0	mrpl53.L	Q66IS0	10	10	MGC85354 protein	
+Q66IS8	xenopus-laevis	Q66IS8	tmem177	Q66IS8	1	1	Transmembrane protein 177	
+Q66IU2	xenopus-laevis	Q66IU2	mrpl2.L	Q66IU2	1	1	MGC84466 protein	
+Q66J23	xenopus-laevis	Q66J23	pdp1.L	Q66J23	5	6	MGC82628 protein	
+Q66J28	xenopus-laevis	Q66J28	cisd1.S	Q66J28	1	1	CDGSH iron sulfur domain 1 S homeolog	
+Q66J53	xenopus-laevis	Q66J53	acadm.S	Q66J53	14	14	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	
 Q66JN5	zebrafish	Q66JN5	pon1	Q66JN5	2	16	Paraoxonase	
 Q66JN8	zebrafish	Q66JN8	cplane2	Q66JN8	4	19	Ciliogenesis and planar polarity effector 2	
 Q66JN9	zebrafish	Q66JN9	nudt4b	Q66JN9	1	16	diphosphoinositol-polyphosphate diphosphatase	
@@ -427,13 +451,14 @@ Q66JS6	mus-musculus	Q66JS6	Eif3j2	Q66JS6	7	96	Eukaryotic translation initiation 
 Q66JT0	mus-musculus	Q66JT0	Wee2	Q66JT0	3	22	Wee1-like protein kinase 2	
 Q66JT1	mus-musculus	Q66JT1	Lrrc8e	Q66JT1	3	5	Volume-regulated anion channel subunit LRRC8E	
 Q66JT5	mus-musculus	Q66JT5	Tpgs2	Q66JT5	0	1	Tubulin polyglutamylase complex subunit 2	
-Q66JT7	mus-musculus	Q66JT7	Coq2	Q66JT7	0	2	4-hydroxybenzoate polyprenyltransferase, mitochondrial	
+Q66JT7	mus-musculus	Q66JT7	Coq2	Q66JT7	1	3	4-hydroxybenzoate polyprenyltransferase, mitochondrial	
 Q66JV4	mus-musculus	Q66JV4	Rbm12b2	Q66JV4	0	1	RNA-binding protein 12B-B	
 Q66JW3	mus-musculus	Q66JW3	Tox	Q66JW3	1	4	Thymocyte selection-associated high mobility group box prote	
 Q66JX5	mus-musculus	Q66JX5	Cep43	Q66JX5	1	14	Centrosomal protein 43	
 Q66JY2	mus-musculus	Q66JY2	Ino80d	Q66JY2	4	33	INO80 complex subunit D	
 Q66JY6	mus-musculus	Q66JY6	Arhgef39	Q66JY6	1	1	Rho guanine nucleotide exchange factor 39	
 Q66JY9	mus-musculus	Q66JY9	Pramel20	Q66JY9	2	61	PRAME like 20	
+Q66JZ4	mus-musculus	Q66JZ4	TCAIM	Q66JZ4	5	5	T-cell activation inhibitor, mitochondrial	
 Q66K08	mus-musculus	Q66K08	Cilp	Q66K08	0	4	Cartilage intermediate layer protein 1	
 Q66K14	human	Q66K14	TBC1D9B	Q66K14	9	134	TBC1 domain family member 9B	
 Q66K41	human	Q66K41	ZNF385C	Q66K41	1	24	Zinc finger protein 385C	
@@ -443,11 +468,14 @@ Q66K74	human	Q66K74	MAP1S	Q66K74	32	160	Microtubule-associated protein 1S (MAP-1
 Q66K79	human	Q66K79	CPZ	Q66K79	3	34	Carboxypeptidase Z (CPZ) (EC 3.4.17.-)	
 Q66K80	human	Q66K80	RUSC1-AS1	Q66K80	0	9	Putative uncharacterized protein RUSC1-AS1 (RUSC1 antisense 	
 Q66K89	human	Q66K89	E4F1	Q66K89	20	252	Transcription factor E4F1 (EC 2.3.2.27) (E4F transcription f	
+Q66KZ3	xenopus-laevis	Q66KZ3	mrpl51	Q66KZ3	1	1	39S ribosomal protein L51, mitochondrial	
+Q66KZ7	xenopus-laevis	Q66KZ7	rab24.L	Q66KZ7	26	28	MGC85288 protein	
+Q66L10	xenopus-laevis	Q66L10	uqcrb.S	Q66L10	5	5	Cytochrome b-c1 complex subunit 7	
 Q66L42	mus-musculus	Q66L42	Map3k10	Q66L42	1	7	Mitogen-activated protein kinase kinase kinase 10	
 Q66L44	mus-musculus	Q66L44	Cbarp	Q66L44	0	1	Voltage-dependent calcium channel beta subunit-associated re	
 Q66L49	zebrafish	Q66L49	slc25a24	Q66L49	0	98	Mitochondrial adenyl nucleotide antiporter SLC25A24	
 Q66L50	zebrafish	Q66L50	arrdc3b	Q66L50	8	20	Arrestin domain-containing protein 3	
-Q66L51	zebrafish	Q66L51	coq5	Q66L51	1	6	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	
+Q66L51	zebrafish	Q66L51	coq5	Q66L51	6	11	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	
 Q66L58	zebrafish	Q66L58	vac14	Q66L58	4	34	Protein VAC14 homolog	
 Q66LE6	human	Q66LE6	PPP2R2D	Q66LE6	51	242	Serine/threonine-protein phosphatase 2A 55 kDa regulatory su	
 Q66LG9	arabidopsis-thaliana	Q66LG9	CENPC	Q66LG9	0	1	Centromere protein C	
@@ -466,4 +494,4 @@ Q66X01	mus-musculus	Q66X01	Nlrp9c	Q66X01	0	19	NACHT, LRR and PYD domains-contain
 Q66X03	mus-musculus	Q66X03	Nlrp9a	Q66X03	1	19	NACHT, LRR and PYD domains-containing protein 9A	
 Q66X19	mus-musculus	Q66X19	Nlrp4e	Q66X19	0	15	NACHT, LRR and PYD domains-containing protein 4E	
 Q66X22	mus-musculus	Q66X22	Nlrp9b	Q66X22	1	22	NACHT, LRR and PYD domains-containing protein 9B	
-Q66X93	rattus-norvegicus	Q66X93	Snd1	Q66X93	4	33	Staphylococcal nuclease domain-containing protein 1	
+Q66X93	rattus-norvegicus	Q66X93	Snd1	Q66X93	5	35	Staphylococcal nuclease domain-containing protein 1	

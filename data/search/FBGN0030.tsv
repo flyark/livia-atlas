@@ -25,7 +25,7 @@ FBGN0030030	fly	FBgn0030030	CG1636	Q9W3G7	1	11	LD42063p
 FBGN0030033	fly	FBgn0030033	CG1387	Q9W3G3	0	1	GH08693p	
 FBGN0030034	fly	FBgn0030034	CG10555	Q9W3G1	5	46	Uncharacterized protein, isoform A (Uncharacterized protein,	
 FBGN0030035	fly	FBgn0030035	PIG-T	Q9W3G0	5	18	Phosphatidylinositol glycan anchor biosynthesis class T (RE5	
-FBGN0030037	fly	FBgn0030037	Miga	Q9W3F7	1	7	Mitoguardin	
+FBGN0030037	fly	FBgn0030037	Miga	Q9W3F7	1	9	Mitoguardin	
 FBGN0030038	fly	FBgn0030038	CG1440	X2JEJ0	3	45	Bleomycin hydrolase (EC 3.4.22.40)	
 FBGN0030039	fly	FBgn0030039	CG12123	Q9W3F5	0	29	GH02722p	
 FBGN0030040	fly	FBgn0030040	CG15347	F0JAP7	6	109	LP18071p	
@@ -63,7 +63,7 @@ FBGN0030088	fly	FBgn0030088	Arfrp1	Q9W389	6	48	ADP-ribosylation factor-related p
 FBGN0030089	fly	FBgn0030089	AP-1gamma	Q7KVR8	16	79	AP-1 complex subunit gamma	
 FBGN0030090	fly	FBgn0030090	fend	Q9GNL3	273	2387	Transmembrane protein fend (Protein forked end)	
 FBGN0030091	fly	FBgn0030091	CG7065	Q7YZA2	17	77	Uncharacterized protein CG7065	
-FBGN0030092	fly	FBgn0030092	fh	Q9W385	11	116	Frataxin homolog, mitochondrial (Dfh) (EC 1.16.3.1)	
+FBGN0030092	fly	FBgn0030092	fh	Q9W385	17	122	Frataxin homolog, mitochondrial (Dfh) (EC 1.16.3.1)	
 FBGN0030093	fly	FBgn0030093	Bap111	Q9W384	82	469	Brahma associated protein 111kD (DALAO protein) (LD41296p)	
 FBGN0030096	fly	FBgn0030096	Zpr1	Q9W379	2	29	Zinc finger protein ZPR1	
 FBGN0030097	fly	FBgn0030097	CG12115	Q9I7W3	2	244	CG8661 protein	
@@ -142,7 +142,7 @@ FBGN0030259	fly	FBgn0030259	CG1545	Q9VZ39	41	243	Seminal fluid protein
 FBGN0030260	fly	FBgn0030260	CG1537	Q9VZ38	13	244	GH02938p	
 FBGN0030261	fly	FBgn0030261	CG15203	Q9VZ37	30	255	Uncharacterized protein, isoform A (Uncharacterized protein,	
 FBGN0030262	fly	FBgn0030262	Vago	Q9VZ35	59	244	Protein Vago	
-FBGN0030263	fly	FBgn0030263	Tmbim5	Q9VZ34	4	8	RH72958p	
+FBGN0030263	fly	FBgn0030263	Tmbim5	Q9VZ34	7	11	RH72958p	
 FBGN0030268	fly	FBgn0030268	Klp10A	Q960Z0	3	59	Kinesin-like protein Klp10A (Kinesin-like protein at cytolog	
 FBGN0030268_PHOSPHOMIMETIC	fly	FBgn0030268	Klp10A	Q960Z0	3	59		
 FBGN0030268_PHOSPHOMUTANT	fly	FBgn0030268	Klp10A	Q960Z0	3	59		
@@ -212,7 +212,7 @@ FBGN0030348	fly	FBgn0030348	CG10352	M9PJJ5	2	5	Uncharacterized protein (EC 3.1.3
 FBGN0030349	fly	FBgn0030349	CG10353	Q76NS2	1	7	Anoctamin	
 FBGN0030350	fly	FBgn0030350	SelG	Q7Z2C4	1	15	Glycine-rich selenoprotein (G-rich selenoprotein) (dSelG)	
 FBGN0030351	fly	FBgn0030351	CG1840	Q9VYS6	1	11	LD12750p	
-FBGN0030352	fly	FBgn0030352	sicily	Q9VYS5	8	55	NADH dehydrogenase (ubiquinone) complex I, assembly factor 6	
+FBGN0030352	fly	FBgn0030352	sicily	Q9VYS5	11	58	NADH dehydrogenase (ubiquinone) complex I, assembly factor 6	
 FBGN0030354	fly	FBgn0030354	Upf1	Q9VYS3	12	161	Regulator of nonsense transcripts 1 homolog (EC 3.6.4.12) (E	
 FBGN0030357	fly	FBgn0030357	Sclp	H0RNK3	0	0	Leucine-rich repeat protein soc-2 homolog (Protein soc-2 hom	
 FBGN0030358	fly	FBgn0030358	Pdzd8	Q9VYR9	1	9	LD34222p	
@@ -242,7 +242,7 @@ FBGN0030395	fly	FBgn0030395	Mks1	Q9VYM3	3	11	Tectonic-like complex member Mks1 (
 FBGN0030396	fly	FBgn0030396	mdu	Q9VYM2	0	2	RE14150p	
 FBGN0030398	fly	FBgn0030398	Cpr11B	Q9VYM0	9	254	CG2555-PA (Cuticular protein 11B, isoform A) (GH23965p)	
 FBGN0030400	fly	FBgn0030400	Pits	B7Z143	15	104	Protein interacting with Ttk69 and Sin3A, isoform D	
-FBGN0030403	fly	FBgn0030403	CG1824	Q9VYL5	2	15	GH19726p	
+FBGN0030403	fly	FBgn0030403	CG1824	Q9VYL5	3	16	GH19726p	
 FBGN0030406	fly	FBgn0030406	CG1463	Q8SX25	2	11	RE61595p	
 FBGN0030407	fly	FBgn0030407	Fpgs1	Q9VYL1	0	10	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	
 FBGN0030408	fly	FBgn0030408	CG11085	Q9VYL0	73	384	IP01054p	
@@ -258,7 +258,7 @@ FBGN0030425	fly	FBgn0030425	Nep6	Q9VYJ1	147	2601	FI12805p (Neprilysin 6, isoform
 FBGN0030429	fly	FBgn0030429	CG4661	Q9VYI8	0	1	Uncharacterized protein	
 FBGN0030431	fly	FBgn0030431	Flad1	Q9VYI5	5	34	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	
 FBGN0030432	fly	FBgn0030432	CG4404	Q9VYI4	59	371	FI04833p	
-FBGN0030433	fly	FBgn0030433	mRpL49	Q9VYI3	5	200	Large ribosomal subunit protein mL49 (39S ribosomal protein 	
+FBGN0030433	fly	FBgn0030433	mRpL49	Q9VYI3	6	201	Large ribosomal subunit protein mL49 (39S ribosomal protein 	
 FBGN0030434	fly	FBgn0030434	Brms1	Q9VYI2	6	46	BRMS1 transcriptional repressor (LD14895p)	
 FBGN0030435	fly	FBgn0030435	CG4645	Q9VYI1	3	11	Protein YIPF	
 FBGN0030437	fly	FBgn0030437	hec	Q9VYH9	0	13	Hector, isoform A (Hector, isoform B)	
@@ -275,7 +275,7 @@ FBGN0030455	fly	FBgn0030455	CG4318	Q9VYG4	54	388	IP01435p
 FBGN0030456	fly	FBgn0030456	CG4332	Q9VYG3	16	58	Lipid scramblase CLPTM1L (Cisplatin resistance-related prote	
 FBGN0030457	fly	FBgn0030457	CG12096	Q9VYG1	5	43	26S proteasome non-ATPase regulatory subunit 5 (26S proteaso	
 FBGN0030459	fly	FBgn0030459	CG12723	Q7Z2C5	44	274	Uncharacterized protein	
-FBGN0030460	fly	FBgn0030460	Coq5	Q9VYF8	1	14	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	
+FBGN0030460	fly	FBgn0030460	Coq5	Q9VYF8	2	15	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	
 FBGN0030462	fly	FBgn0030462	CG15742	Q9VYF5	2	28	Uncharacterized protein, isoform A	
 FBGN0030465	fly	FBgn0030465	Bpnt2	Q9VYF2	0	7	Putative inositol monophosphatase 3 (IMP 3) (IMPase 3) (EC 3	
 FBGN0030466	fly	FBgn0030466	Remo	Q7KV24	0	2	Adhesion G protein-coupled receptor A3	
@@ -283,7 +283,7 @@ FBGN0030467	fly	FBgn0030467	CG1764	Q9VYF0	0	9	GM09012p
 FBGN0030468	fly	FBgn0030468	CG1622	Q9VYE9	1	15	Pre-mRNA-splicing factor 38	
 FBGN0030474	fly	FBgn0030474	CG15747	Q9VYE3	0	8	FI21110p1	
 FBGN0030477	fly	FBgn0030477	dmrt11E	Q9VYE0	71	379	Doublesex-Mab related 11E	
-FBGN0030478	fly	FBgn0030478	Alat	Q9VYD9	4	63	alanine transaminase (EC 2.6.1.2)	
+FBGN0030478	fly	FBgn0030478	Alat	Q9VYD9	5	64	alanine transaminase (EC 2.6.1.2)	
 FBGN0030479	fly	FBgn0030479	Rbp1-like	M9MS48	5	28	Rbp1-like, isoform B	
 FBGN0030480	fly	FBgn0030480	Tim9a	Q9VYD7	9	49	Mitochondrial import inner membrane translocase subunit Tim9	
 FBGN0030481	fly	FBgn0030481	CG1662	Q9VYD6	0	2	Mpv17-like protein 2	
@@ -334,7 +334,7 @@ FBGN0030545	fly	FBgn0030545	CG11590	Q9VY55	2	8	FI09726p
 FBGN0030551	fly	FBgn0030551	CG11674	Q9VY49	0	6	LD24340p	
 FBGN0030552	fly	FBgn0030552	mRpL38	Q9VY48	15	118	Large ribosomal subunit protein mL38 (39S ribosomal protein 	
 FBGN0030554	fly	FBgn0030554	Dus2	Q9VY45	0	6	GH10289p	
-FBGN0030555	fly	FBgn0030555	Fbxl4	Q9VY46	9	38	F box and leucine-rich-repeat gene 4 (GH11272p)	
+FBGN0030555	fly	FBgn0030555	Fbxl4	Q9VY46	10	41	F box and leucine-rich-repeat gene 4 (GH11272p)	
 FBGN0030556	fly	FBgn0030556	mRNA-cap	Q9VY44	44	959	mRNA-capping enzyme [Includes: mRNA 5'-triphosphate monophos	
 FBGN0030558	fly	FBgn0030558	Tat	Q9VY42	3	46	Tyrosine aminotransferase (TAT) (EC 2.6.1.5)	
 FBGN0030559	fly	FBgn0030559	CG13404	Q9VY41	0	7	Plasminogen receptor (KT)	
@@ -344,8 +344,8 @@ FBGN0030566	fly	FBgn0030566	betaNACtes4	Q9VY34	10	45	Transcription factor BTF3
 FBGN0030569	fly	FBgn0030569	CG9411	Q9VY31	56	246	LD45449p	
 FBGN0030570	fly	FBgn0030570	CG12540	Q9VY30	29	247	GEO12540p1 (RE49992p)	
 FBGN0030571	fly	FBgn0030571	CG14414	X2JBU2	0	2	Probable RNA-binding protein 18 (RNA-binding motif protein 1	
-FBGN0030572	fly	FBgn0030572	mRpS25	Q9VY28	7	163	Small ribosomal subunit protein mS25 (28S ribosomal protein 	
-FBGN0030573	fly	FBgn0030573	nmdyn-D6	Q9VY27	4	189	Nucleoside diphosphate kinase (EC 2.7.4.6)	
+FBGN0030572	fly	FBgn0030572	mRpS25	Q9VY28	8	163	Small ribosomal subunit protein mS25 (28S ribosomal protein 	
+FBGN0030573	fly	FBgn0030573	nmdyn-D6	Q9VY27	5	191	Nucleoside diphosphate kinase (EC 2.7.4.6)	
 FBGN0030574	fly	FBgn0030574	sbm	Q8IR48	2	14	Sobremesa, isoform B	
 FBGN0030575	fly	FBgn0030575	CG5321	Q9VY24	2	9	Uncharacterized protein, isoform B (Uncharacterized protein,	
 FBGN0030576	fly	FBgn0030576	CG15890	Q9VY22	0	2	FI18259p1	
@@ -354,7 +354,7 @@ FBGN0030578	fly	FBgn0030578	CG5347	Q9VY20	0	4	RING-type E3 ubiquitin transferase
 FBGN0030581	fly	FBgn0030581	CG14408	Q8IR46	2	8	SH3 domain-binding protein 5-like	
 FBGN0030582	fly	FBgn0030582	CG14411	Q9VY15	113	885	FI17948p1	
 FBGN0030583	fly	FBgn0030583	CG14410	Q9VY14	3	27	Uncharacterized protein	
-FBGN0030584	fly	FBgn0030584	Grx5	Q8SXQ5	5	49	RH03087p	
+FBGN0030584	fly	FBgn0030584	Grx5	Q8SXQ5	7	51	RH03087p	
 FBGN0030586	fly	FBgn0030586	CG12539	Q8SXY8	16	250	RE49901p	
 FBGN0030587	fly	FBgn0030587	CG9522	Q9VY11	32	254	RE36204p	
 FBGN0030588	fly	FBgn0030588	CG9521	Q9VY10	21	252	Glucose-methanol-choline oxidoreductase N-terminal domain-co	
@@ -370,12 +370,12 @@ FBGN0030598	fly	FBgn0030598	CG9503	Q9VY00	0	9	CG9503-PA (FI21474p1)
 FBGN0030599	fly	FBgn0030599	CG9030	Q9VXZ7	0	1	Uncharacterized protein	
 FBGN0030600	fly	FBgn0030600	hiw	Q9NB71	0	0	E3 ubiquitin-protein ligase highwire (EC 2.3.2.33) (Protein 	
 FBGN0030603	fly	FBgn0030603	CG5541	Q9VXZ2	1	3	RE23381p (SD02894p)	
-FBGN0030605	fly	FBgn0030605	ND-B18	Q9VXZ0	7	119	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7	
+FBGN0030605	fly	FBgn0030605	ND-B18	Q9VXZ0	8	120	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7	
 FBGN0030607	fly	FBgn0030607	dob	Q9VXY8	11	164	Doppelganger von brummer (EC 3.1.1.3) (LD21294p)	
 FBGN0030608	fly	FBgn0030608	Lsd2	Q9VXY7	1	75	Lipid storage droplets surface-binding protein 2 (Lsd2)	
-FBGN0030610	fly	FBgn0030610	Cox17	Q9VXY5	1	7	LP17418p	
+FBGN0030610	fly	FBgn0030610	Cox17	Q9VXY5	2	8	LP17418p	
 FBGN0030611	fly	FBgn0030611	CG15027	Q9VXY4	2	66	Translation machinery-associated protein 16 homolog	
-FBGN0030612	fly	FBgn0030612	Dbct	Q9VXY3	2	63	Dihydrolipoamide acetyltransferase component of pyruvate deh	
+FBGN0030612	fly	FBgn0030612	Dbct	Q9VXY3	3	64	Dihydrolipoamide acetyltransferase component of pyruvate deh	
 FBGN0030613	fly	FBgn0030613	Rab3-GEF	M9PEM6	0	4	MAP kinase-activating death domain protein	
 FBGN0030614	fly	FBgn0030614	CG9072	Q9VXY1	4	7	Tubulin-specific chaperone A	
 FBGN0030615	fly	FBgn0030615	Cyp4s3	Q9VXY0	0	2	Probable cytochrome P450 4s3 (EC 1.14.-.-) (CYPIVS3)	
@@ -424,17 +424,17 @@ FBGN0030673	fly	FBgn0030673	CG15601	Q9VXR4	0	2	IP09718p
 FBGN0030674	fly	FBgn0030674	HUWE1	X2JF73	0	0	HECT-type E3 ubiquitin transferase (EC 2.3.2.26)	
 FBGN0030675	fly	FBgn0030675	CG8191	Q9VXR2	0	6	RE17665p	
 FBGN0030676	fly	FBgn0030676	CG12379	Q9VXR1	2	14	DNL-type domain-containing protein	
-FBGN0030678	fly	FBgn0030678	CG11679	Q9VXQ8	0	12	GM02445p	
+FBGN0030678	fly	FBgn0030678	CG11679	Q9VXQ8	1	14	GM02445p	
 FBGN0030679	fly	FBgn0030679	CG8206	Q9VXQ7	1	20	GH04557p	
 FBGN0030680	fly	FBgn0030680	CG8944	Q9VXQ6	55	359	LD18191p	
 FBGN0030683	fly	FBgn0030683	Mvd	Q9VXQ3	0	23	Diphosphomevalonate decarboxylase (EC 4.1.1.33)	
 FBGN0030684	fly	FBgn0030684	CG8260	Q9VXQ1	1	8	Uncharacterized protein, isoform A	
 FBGN0030685	fly	FBgn0030685	Graf	X2JDY8	2	49	Rho GTPase-activating protein Graf (GTPase regulator associa	
-FBGN0030686	fly	FBgn0030686	mRpL3	Q9VXQ0	27	424	Large ribosomal subunit protein uL3m (39S ribosomal protein 	
+FBGN0030686	fly	FBgn0030686	mRpL3	Q9VXQ0	28	425	Large ribosomal subunit protein uL3m (39S ribosomal protein 	
 FBGN0030687	fly	FBgn0030687	Polr3A	A8JUY3	18	177	DNA-directed RNA polymerase subunit (EC 2.7.7.6)	
 FBGN0030688	fly	FBgn0030688	CG8952	Q9VXP8	45	256	Peptidase S1 domain-containing protein	
 FBGN0030691	fly	FBgn0030691	Efhc1.1	Q9VXP5	0	19	EF-hand domain containing 1.1	
-FBGN0030692	fly	FBgn0030692	mRpS30	Q9VXP3	8	158	GH05406p (Mitochondrial ribosomal protein S30, isoform A) (M	
+FBGN0030692	fly	FBgn0030692	mRpS30	Q9VXP3	9	160	GH05406p (Mitochondrial ribosomal protein S30, isoform A) (M	
 FBGN0030693	fly	FBgn0030693	sordd1	Q9VXP1	12	74	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	
 FBGN0030694	fly	FBgn0030694	CG15602	Q4QQ70	6	49	IP09819p (IP09919p)	
 FBGN0030695	fly	FBgn0030695	PGRP-LE	Q9VXN9	69	385	Peptidoglycan-recognition protein LE	
@@ -444,14 +444,14 @@ FBGN0030699	fly	FBgn0030699	CG8578	Q9VXN3	4	54	LD07988p
 FBGN0030700	fly	FBgn0030700	CG15914	Q9VXN0	0	2	tRNA-queuosine alpha-mannosyltransferase (EC 2.4.1.110)	
 FBGN0030701	fly	FBgn0030701	CG16952	Q9VXM6	0	3		
 FBGN0030703	fly	FBgn0030703	MSBP	Q9VXM4	0	17	LD12946p (Membrane steroid binding protein, isoform A) (Memb	
-FBGN0030704	fly	FBgn0030704	CG15916	Q8SXX0	4	45	RH08992p	
+FBGN0030704	fly	FBgn0030704	CG15916	Q8SXX0	5	45	RH08992p	
 FBGN0030706	fly	FBgn0030706	Lrp4	Q9VXM0	6	106	LDL receptor related protein 4, isoform B	
 FBGN0030707	fly	FBgn0030707	CG8916	Q9VXL9	3	15	IP12579p	
 FBGN0030710	fly	FBgn0030710	CG8924	Q9VXL5	85	386	LD19131p	
 FBGN0030711	fly	FBgn0030711	Rrp47	Q9VXL4	11	134	Nuclear nucleic acid-binding protein C1D	
 FBGN0030715	fly	FBgn0030715	Or13a	Q9VXL0	0	1	Odorant receptor 13a	
 FBGN0030716	fly	FBgn0030716	Cep164	Q9VXK9	5	22	RH04127p	
-FBGN0030717	fly	FBgn0030717	Slc25A46a	Q9VXK8	1	7	GH15472p (Solute carrier family 25 member 46a)	
+FBGN0030717	fly	FBgn0030717	Slc25A46a	Q9VXK8	7	14	GH15472p (Solute carrier family 25 member 46a)	
 FBGN0030718	fly	FBgn0030718	ND-20	Q9VXK7	10	117	LD31474p (NADH dehydrogenase (Ubiquinone) 20 kDa subunit, is	
 FBGN0030719	fly	FBgn0030719	eIF5	Q9VXK6	12	137	Eukaryotic translation initiation factor 5 (eIF-5)	
 FBGN0030720	fly	FBgn0030720	CG8939	Q9VXK5	39	150	Putative rRNA methyltransferase (EC 2.1.1.-) (2'-O-ribose RN	
@@ -464,7 +464,7 @@ FBGN0030724	fly	FBgn0030724	Nipsnap	Q9VXK0	1	13	Protein NipSnap
 FBGN0030725	fly	FBgn0030725	CG8958	Q9VXJ8	0	1	Cyclic nucleotide-binding domain-containing protein	
 FBGN0030729	fly	FBgn0030729	CG12507	Q9VXJ3	41	282	Uncharacterized protein	
 FBGN0030731	fly	FBgn0030731	Mfe2	Q9VXJ0	1	190	Peroxisomal multifunctional enzyme type 2 (DmMFE-2) [Include	
-FBGN0030733	fly	FBgn0030733	UQCR-14	Q9VXI6	7	96	Cytochrome b-c1 complex subunit 7	
+FBGN0030733	fly	FBgn0030733	UQCR-14	Q9VXI6	8	97	Cytochrome b-c1 complex subunit 7	
 FBGN0030734	fly	FBgn0030734	ERp44	Q95TL8	11	53	LD41494p	
 FBGN0030735	fly	FBgn0030735	CG3632	Q7YU03	33	731	Phosphatidylinositol-3-phosphate phosphatase (EC 3.1.3.48) (	
 FBGN0030738	fly	FBgn0030738	CG9915	A8JV07	9	47	Uncharacterized protein, isoform B (Uncharacterized protein,	
@@ -473,7 +473,7 @@ FBGN0030738_PHOSPHOMUTANT	fly	FBgn0030738	CG9915	A8JV07	9	47
 FBGN0030739	fly	FBgn0030739	SWIP	Q9VXH9	4	11	WASH complex subunit 4 (Strumpellin and WASH-interacting pro	
 FBGN0030740	fly	FBgn0030740	CG9917	Q9VXH7	0	13	FI17510p1	
 FBGN0030742	fly	FBgn0030742	CG9919	Q9VXH5	0	2	CG9919-PA (GH23768p)	
-FBGN0030743	fly	FBgn0030743	CG9921	Q9VXH4	1	17	RE16337p	
+FBGN0030743	fly	FBgn0030743	CG9921	Q9VXH4	2	18	RE16337p	
 FBGN0030744	fly	FBgn0030744	CG9992	Q9VXH0	2	3	GM01939p	
 FBGN0030745	fly	FBgn0030745	CG4239	Q9VXG9	0	3	GH25683p	
 FBGN0030746	fly	FBgn0030746	CG9981	Q9VXG7	1	3	Phospholipid-transporting ATPase (EC 7.6.2.1)	
@@ -499,7 +499,7 @@ FBGN0030776	fly	FBgn0030776	CG4653	Q9VXC6	0	3	Peptidase S1 domain-containing pro
 FBGN0030777	fly	FBgn0030777	CG9672	Q9VXC5	29	246	GH16384p	
 FBGN0030778	fly	FBgn0030778	CG4678	B7Z0Z5	26	244	Uncharacterized protein, isoform E (EC 3.4.16.-, EC 3.4.17.-	
 FBGN0030780	fly	FBgn0030780	CG13008	Q9VXC2	4	108	Uncharacterized protein	
-FBGN0030786	fly	FBgn0030786	mRpL22	Q9VXB5	20	409	Large ribosomal subunit protein uL22m (39S ribosomal protein	
+FBGN0030786	fly	FBgn0030786	mRpL22	Q9VXB5	22	410	Large ribosomal subunit protein uL22m (39S ribosomal protein	
 FBGN0030787	fly	FBgn0030787	CG9609	Q9VXB4	56	383	LD35155p	
 FBGN0030788	fly	FBgn0030788	Sap30	Q9VXB3	64	405	Histone deacetylase complex subunit SAP30 homolog (SIN3-asso	
 FBGN0030789	fly	FBgn0030789	Rrp45	Q8T4A9	19	149	Exosome complex component RRP45 (Exosome component 9)	
@@ -631,7 +631,7 @@ FBGN0030961	fly	FBgn0030961	CG7058	Q9VWP9	1	9	GH01369p
 FBGN0030963	fly	FBgn0030963	CG7101	Q9VWP7	35	391	C2H2-type domain-containing protein	
 FBGN0030964	fly	FBgn0030964	Pvf1	Q9VWP6	49	306	LD28763p (PDGF-and VEGF-related factor 1, isoform A) (VEGF2-	
 FBGN0030966	fly	FBgn0030966	shop	Q9VWP4	0	18	Sulfite oxidase, mitochondrial (EC 1.8.3.1) (Protein shopper	
-FBGN0030968	fly	FBgn0030968	CG7322	Q9VWP2	0	3	RH57257p	
+FBGN0030968	fly	FBgn0030968	CG7322	Q9VWP2	0	4	RH57257p	
 FBGN0030969	fly	FBgn0030969	Usp39	Q9VWP1	2	56	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	
 FBGN0030970	fly	FBgn0030970	CG7326	Q9VWP0	0	1	RE39008p	
 FBGN0030973	fly	FBgn0030973	CG7332	Q9VWN5	4	58	Ubiquitin carboxyl-terminal hydrolase MINDY-3 homolog (EC 3.	

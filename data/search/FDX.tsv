@@ -3,25 +3,30 @@ FDX	pseudomonas-aeruginosa	Q51383	fdx	Q51383	4	100	2Fe-2S ferredoxin
 FDX	salmonella-typhimurium	Q7CQ13	fdx	Q7CQ13	5	52	2Fe-2S ferredoxin	
 FDX	shigella-dysenteriae-serotype-1	Q32D39	fdx	Q32D39	6	55	2Fe-2S ferredoxin	
 FDX	shigella-flexneri	P0A9R6	fdx	P0A9R6	1	9	2Fe-2S ferredoxin	
-FDX-2	worm	Q9NA32	fdx-2	Q9NA32	6	54	2Fe-2S ferredoxin-type domain-containing protein	
+FDX-2	worm	Q9NA32	fdx-2	Q9NA32	10	57	2Fe-2S ferredoxin-type domain-containing protein	
 FDX-ACDB	human	Q9BRP7	FDXACB1	Q9BRP7	0	68	Ferredoxin-fold anticodon-binding domain-containing protein 	w
-FDX1	fly	FBgn0011769	Fdx1	P37193	5	66	Adrenodoxin-like protein 1, mitochondrial (Ferredoxin-1)	
-FDX1	human	P10109	FDX1	P10109	39	222	Adrenodoxin, mitochondrial (Adrenal ferredoxin) (Ferredoxin-	
-FDX1	mus-musculus	P46656	Fdx1	P46656	15	100	Adrenodoxin, mitochondrial	
+FDX1	fly	FBgn0011769	Fdx1	P37193	12	73	Adrenodoxin-like protein 1, mitochondrial (Ferredoxin-1)	
+FDX1	human	P10109	FDX1	P10109	54	236	Adrenodoxin, mitochondrial (Adrenal ferredoxin) (Ferredoxin-	
+FDX1	mus-musculus	P46656	Fdx1	P46656	31	115	Adrenodoxin, mitochondrial	
+FDX1	pan-troglodytes	H2Q4Q7	FDX1	H2Q4Q7	20	21	Ferredoxin 1	
 FDX1	pseudomonas-aeruginosa	Q9I6D2	fdx1	Q9I6D2	6	207	Ferredoxin (4Fe-4S)	
-FDX1	rattus-norvegicus	P24483	Fdx1	P24483	21	118	Adrenodoxin, mitochondrial	
+FDX1	rattus-norvegicus	P24483	Fdx1	P24483	33	130	Adrenodoxin, mitochondrial	
 FDX1	zea-mays	B1P759	FDX1	B1P759	12	123	Ferredoxin	
 FDX1	zea-mays	P27787	FDX1	P27787	16	125	Ferredoxin-1, chloroplastic	
-FDX1	zebrafish	E7F7J1	fdx1	E7F7J1	25	130	Adrenodoxin, mitochondrial	
+FDX1	zebrafish	E7F7J1	fdx1	E7F7J1	36	142	Adrenodoxin, mitochondrial	
+FDX1.L	xenopus-laevis	A1L3L0	fdx1.L	A1L3L0	14	14	LOC100037037 protein	
 FDX1B	zebrafish	A2BGD1	fdx1b	A2BGD1	28	129	Ferredoxin 1b	
-FDX1L	human	Q6P4F2	FDX2	Q6P4F2	18	174		
-FDX2	fly	FBgn0035529	Fdx2	Q8SZA8	5	74	Adrenodoxin-like protein 2, mitochondrial (Ferredoxin-2)	
-FDX2	human	Q6P4F2	FDX2	Q6P4F2	18	174	Ferredoxin-2, mitochondrial (Adrenodoxin-like protein) (Ferr	
-FDX2	mus-musculus	Q9CPW2	Fdx2	Q9CPW2	17	101	Ferredoxin-2, mitochondrial	
-FDX2	rattus-norvegicus	D4A8N2	Fdx2	D4A8N2	16	118	Ferredoxin-2, mitochondrial	
+FDX1L	human	Q6P4F2	FDX2	Q6P4F2	30	186		
+FDX2	fly	FBgn0035529	Fdx2	Q8SZA8	9	78	Adrenodoxin-like protein 2, mitochondrial (Ferredoxin-2)	
+FDX2	human	Q6P4F2	FDX2	Q6P4F2	30	186	Ferredoxin-2, mitochondrial (Adrenodoxin-like protein) (Ferr	
+FDX2	mus-musculus	Q9CPW2	Fdx2	Q9CPW2	28	111	Ferredoxin-2, mitochondrial	
+FDX2	pan-troglodytes	H2QFB4	FDX2	H2QFB4	14	14	Ferredoxin 2	
+FDX2	rattus-norvegicus	D4A8N2	Fdx2	D4A8N2	25	125	Ferredoxin-2, mitochondrial	
 FDX2	zea-mays	O80429	FDX2	O80429	10	123	Ferredoxin-2, chloroplastic	
-FDX2	zebrafish	Q08C57	fdx2	Q08C57	21	130	Ferredoxin-2, mitochondrial	
-FDX2_HUMAN	human	Q6P4F2	FDX2	Q6P4F2	18	174		
+FDX2	zebrafish	Q08C57	fdx2	Q08C57	29	138	Ferredoxin-2, mitochondrial	
+FDX2.S	xenopus-laevis	A0A8J1M4G3	fdx2.S	A0A8J1M4G3	12	12	ferredoxin-2, mitochondrial-like isoform X1	
+FDX2_DANRE	zebrafish	Q08C57	fdx2	Q08C57	29	138		
+FDX2_HUMAN	human	Q6P4F2	FDX2	Q6P4F2	30	186		
 FDX3	zea-mays	P27788	FDX3	P27788	13	121	Ferredoxin-3, chloroplastic	
 FDX5	zea-mays	P27789	FDX5	P27789	14	118	Ferredoxin-5, chloroplastic	
 FDX6	zea-mays	P94044	FDX6	P94044	11	121	Ferredoxin-6, chloroplastic	
@@ -39,9 +44,11 @@ FDXC	mycobacterium-tuberculosis	O50433	fdxC	O50433	0	2	Ferredoxin
 FDXH	haemophilus-influenzae	P44450	fdxH	P44450	2	6	Formate dehydrogenase iron-sulfur subunit	
 FDXI	haemophilus-influenzae	P44451	fdxI	P44451	1	7	Formate dehydrogenase, cytochrome b556 subunit	
 FDXR	cladophialophora-carrionii	A0A1C1CZ37	fdxr	A0A1C1CZ37	1	28	NADPH:adrenodoxin oxidoreductase, mitochondrial	
-FDXR	dictyostelium-discoideum	Q54KG7	fdxr	Q54KG7	2	11	Probable NADPH:adrenodoxin oxidoreductase, mitochondrial	
+FDXR	dictyostelium-discoideum	Q54KG7	fdxr	Q54KG7	3	12	Probable NADPH:adrenodoxin oxidoreductase, mitochondrial	
 FDXR	human	A0A0A0MT64	FDXR	A0A0A0MT64	2	56	NADPH:adrenodoxin oxidoreductase, mitochondrial	
-FDXR	human	P22570	FDXR	P22570	6	123	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	
-FDXR	mus-musculus	Q61578	Fdxr	Q61578	2	25	NADPH:adrenodoxin oxidoreductase, mitochondrial	
-FDXR	rattus-norvegicus	P56522	Fdxr	P56522	2	20	NADPH:adrenodoxin oxidoreductase, mitochondrial	
-FDXR	zebrafish	E7FB58	fdxr	E7FB58	3	13	NADPH:adrenodoxin oxidoreductase, mitochondrial	
+FDXR	human	P22570	FDXR	P22570	13	131	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	
+FDXR	mus-musculus	Q61578	Fdxr	Q61578	6	32	NADPH:adrenodoxin oxidoreductase, mitochondrial	
+FDXR	pan-troglodytes	A0A2I3S4F8	FDXR	A0A2I3S4F8	8	9	NADPH:adrenodoxin oxidoreductase, mitochondrial	
+FDXR	rattus-norvegicus	P56522	Fdxr	P56522	6	26	NADPH:adrenodoxin oxidoreductase, mitochondrial	
+FDXR	zebrafish	E7FB58	fdxr	E7FB58	4	18	NADPH:adrenodoxin oxidoreductase, mitochondrial	
+FDXR.S	xenopus-laevis	A0A1L8EMR0	fdxr.S	A0A1L8EMR0	7	8	NADPH:adrenodoxin oxidoreductase, mitochondrial	

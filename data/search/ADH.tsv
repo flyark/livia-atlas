@@ -52,9 +52,10 @@ ADH5	dictyostelium-discoideum	Q54TC2	adh5	Q54TC2	0	1	Alcohol dehydrogenase class
 ADH5	human	P11766	ADH5	P11766	10	154	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	
 ADH5	mus-musculus	P28474	Adh5	P28474	0	6	Alcohol dehydrogenase class-3	
 ADH5	rattus-norvegicus	P12711	Adh5	P12711	1	4	Alcohol dehydrogenase class-3	
-ADH5	yeast	P38113	ADH5	P38113	0	6	Alcohol dehydrogenase 5	
+ADH5	yeast	P38113	ADH5	P38113	1	7	Alcohol dehydrogenase 5	
 ADH5	zebrafish	Q6NXA6	adh5	Q6NXA6	4	4	S-(hydroxymethyl)glutathione dehydrogenase	
 ADH5L	zebrafish	A0A8M9QAY7	adh5l	A0A8M9QAY7	4	4	Alcohol dehydrogenase 6	
+ADH5_YEAST	yeast	P38113	ADH5	P38113	1	7		
 ADH6	cladophialophora-carrionii	A0A1C1C8K2	ADH6	A0A1C1C8K2	0	1	alcohol dehydrogenase (NADP(+))	
 ADH6	cladophialophora-carrionii	A0A1C1CLY0	ADH6	A0A1C1CLY0	0	1	alcohol dehydrogenase (NADP(+))	
 ADH6	human	P28332	ADH6	P28332	10	42	Alcohol dehydrogenase 6 (EC 1.1.1.1)	
@@ -129,7 +130,7 @@ ADHESION	human	P16109	SELP	P16109	10	235	P-selectin (CD62 antigen-like family me
 ADHESION	human	P16284	PECAM1	P16284	65	490	Platelet endothelial cell adhesion molecule (PECAM-1) (EndoC	w
 ADHESION	human	P16422	EPCAM	P16422	24	487	Epithelial cell adhesion molecule (Ep-CAM) (Adenocarcinoma-a	w
 ADHESION	human	P16581	SELE	P16581	12	190	E-selectin (CD62 antigen-like family member E) (Endothelial 	w
-ADHESION	human	P17568	NDUFB7	P17568	19	309	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7 	w
+ADHESION	human	P17568	NDUFB7	P17568	20	310	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7 	w
 ADHESION	human	P19320	VCAM1	P19320	48	906	Vascular cell adhesion protein 1 (V-CAM 1) (VCAM-1) (INCAM-1	w
 ADHESION	human	P20273	CD22	P20273	18	270	B-cell receptor CD22 (B-lymphocyte cell adhesion molecule) (	w
 ADHESION	human	P20701	ITGAL	P20701	48	385	Integrin alpha-L (CD11 antigen-like family member A) (Leukoc	w
@@ -206,7 +207,7 @@ ADHESION	human	Q9NSI5	IGSF5	Q9NSI5	3	42	Immunoglobulin superfamily member 5 (IgS
 ADHESION	human	Q9UHX3	ADGRE2	Q9UHX3	23	260	Adhesion G protein-coupled receptor E2 (EGF-like module rece	w
 ADHESION	human	Q9UMF0	ICAM5	Q9UMF0	11	104	Intercellular adhesion molecule 5 (ICAM-5) (Telencephalin)	w
 ADHESION	human	Q9UNA1	ARHGAP26	Q9UNA1	42	211	Rho GTPase-activating protein 26 (GTPase regulator associate	w
-ADHESION	human	Q9UQ90	SPG7	Q9UQ90	17	284	Mitochondrial inner membrane m-AAA protease component parapl	w
+ADHESION	human	Q9UQ90	SPG7	Q9UQ90	18	285	Mitochondrial inner membrane m-AAA protease component parapl	w
 ADHESION	human	Q9Y286	SIGLEC7	Q9Y286	19	152	Sialic acid-binding Ig-like lectin 7 (Siglec-7) (Adhesion in	w
 ADHESION	human	Q9Y624	F11R	Q9Y624	58	442	Junctional adhesion molecule A (JAM-A) (Junctional adhesion 	w
 ADHESION	human	Q9Y653	ADGRG1	Q9Y653	19	202	Adhesion G protein-coupled receptor G1 (G protein-coupled re	w
@@ -259,8 +260,11 @@ ADHESION-LIKE	human	Q9P244	LRFN1	Q9P244	27	199	Leucine-rich repeat and fibronect
 ADHESION-LIKE	human	Q9ULH4	LRFN2	Q9ULH4	21	119	Leucine-rich repeat and fibronectin type-III domain-containi	w
 ADHESION-REGULATING	human	Q16186	ADRM1	Q16186	36	246	Proteasomal ubiquitin receptor ADRM1 (110 kDa cell membrane 	w
 ADHESION-RELATED	human	Q9H307	PNN	Q9H307	51	347	Pinin (140 kDa nuclear and cell adhesion-related phosphoprot	w
-ADHFE1	human	Q8IWW8	ADHFE1	Q8IWW8	0	34	Hydroxyacid-oxoacid transhydrogenase, mitochondrial (HOT) (E	
-ADHFE1	mus-musculus	Q8R0N6	Adhfe1	Q8R0N6	0	2	Hydroxyacid-oxoacid transhydrogenase, mitochondrial	
+ADHFE1	human	Q8IWW8	ADHFE1	Q8IWW8	5	39	Hydroxyacid-oxoacid transhydrogenase, mitochondrial (HOT) (E	
+ADHFE1	mus-musculus	Q8R0N6	Adhfe1	Q8R0N6	3	5	Hydroxyacid-oxoacid transhydrogenase, mitochondrial	
+ADHFE1	pan-troglodytes	A0A2I3RUM5	ADHFE1	A0A2I3RUM5	4	4	Hydroxyacid-oxoacid transhydrogenase, mitochondrial	
+ADHFE1	rattus-norvegicus	Q4QQW3	Adhfe1	Q4QQW3	3	3	Hydroxyacid-oxoacid transhydrogenase, mitochondrial	
+ADHFE1	xenopus-laevis	Q08B39	adhfe1	Q08B39	2	2	Hydroxyacid-oxoacid transhydrogenase, mitochondrial	
 ADHP	escherichia-coli-83333	P39451	adhP	P39451	3	8	Alcohol dehydrogenase, propanol-preferring	
 ADHP	neisseria-gonorrhoeae	Q5F6V3	adhP	Q5F6V3	0	4	alcohol dehydrogenase	
 ADHP	salmonella-typhimurium	Q7CQI9	adhP	Q7CQI9	2	12	alcohol dehydrogenase	

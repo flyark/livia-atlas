@@ -22,7 +22,7 @@ Q920E1	rattus-norvegicus	Q920E1	F2rl2	Q920E1	2	22	Proteinase-activated receptor 
 Q920E3	mus-musculus	Q920E3	Kcnh5	Q920E3	1	12	Voltage-gated delayed rectifier potassium channel KCNH5	
 Q920E5	mus-musculus	Q920E5	Fdps	Q920E5	1	18	Farnesyl pyrophosphate synthase	
 Q920F3	rattus-norvegicus	Q920F3	Khdrbs2	Q920F3	1	7	KH domain-containing, RNA-binding, signal transduction-assoc	
-Q920F5	rattus-norvegicus	Q920F5	Mlycd	Q920F5	1	9	Malonyl-CoA decarboxylase, mitochondrial	
+Q920F5	rattus-norvegicus	Q920F5	Mlycd	Q920F5	3	11	Malonyl-CoA decarboxylase, mitochondrial	
 Q920F6	mus-musculus	Q920F6	Smc1b	Q920F6	8	52	Structural maintenance of chromosomes protein 1B	
 Q920G0	rattus-norvegicus	Q920G0	Skap2	Q920G0	9	16	Src kinase-associated phosphoprotein 2	
 Q920G2	rattus-norvegicus	Q920G2	Nherf2	Q920G2	9	49	Na(+)/H(+) exchange regulatory cofactor NHE-RF2	
@@ -39,7 +39,7 @@ Q920J4	rattus-norvegicus	Q920J4	Txnl1	Q920J4	6	40	Thioredoxin-like protein 1
 Q920K5	rattus-norvegicus	Q920K5	Baalc	Q920K5	2	13	Brain and acute leukemia cytoplasmic protein	
 Q920L0	rattus-norvegicus	Q920L0	Lcp2	Q920L0	27	94	Lymphocyte cytosolic protein 2	
 Q920L1	mus-musculus	Q920L1	Fads1	Q920L1	0	8	Acyl-CoA (8-3)-desaturase	
-Q920L2	rattus-norvegicus	Q920L2	Sdha	Q920L2	7	48	Succinate dehydrogenase	
+Q920L2	rattus-norvegicus	Q920L2	Sdha	Q920L2	16	57	Succinate dehydrogenase	
 Q920L5	mus-musculus	Q920L5	Elovl6	Q920L5	0	9	Very long chain fatty acid elongase 6	
 Q920L6	rattus-norvegicus	Q920L6	Elovl6	Q920L6	1	7	Very long chain fatty acid elongase 6	
 Q920L7	rattus-norvegicus	Q920L7	Elovl5	Q920L7	0	12	Very long chain fatty acid elongase 5	
@@ -50,13 +50,14 @@ Q920M9	rattus-norvegicus	Q920M9	Siah1	Q920M9	12	51	E3 ubiquitin-protein ligase S
 Q920N1	mus-musculus	Q920N1	Cimap1a	Q920N1	0	4	Ciliary microtubule associated protein 1A	
 Q920N2	mus-musculus	Q920N2	Hlcs	Q920N2	0	3	Biotin--protein ligase	
 Q920N7	mus-musculus	Q920N7	Syt12	Q920N7	1	7	Synaptotagmin-12	
+Q920P0	rattus-norvegicus	Q920P0	Dcxr	Q920P0	3	4	L-xylulose reductase	
 Q920P2	mus-musculus	Q920P2	Or5d18	Q920P2	0	7	Olfactory receptor	
 Q920P3	mus-musculus	Q920P3	Brinp1	Q920P3	0	8	BMP/retinoic acid-inducible neural-specific protein 1	
 Q920P5	mus-musculus	Q920P5	Ak5	Q920P5	2	16	Adenylate kinase isoenzyme 5	
 Q920P6	rattus-norvegicus	Q920P6	Ada	Q920P6	0	5	Adenosine deaminase	
 Q920Q0	rattus-norvegicus	Q920Q0	Palm	Q920Q0	2	5	Paralemmin-1	
 Q920Q2	mus-musculus	Q920Q2	Rev1	Q920Q2	6	44	DNA repair protein REV1	
-Q920Q3	rattus-norvegicus	Q920Q3	Spata19	Q920Q3	1	3	Spermatogenesis-associated protein 19, mitochondrial	
+Q920Q3	rattus-norvegicus	Q920Q3	Spata19	Q920Q3	5	7	Spermatogenesis-associated protein 19, mitochondrial	
 Q920Q4	mus-musculus	Q920Q4	Vps16	Q920Q4	10	32	Vacuolar protein sorting-associated protein 16 homolog	
 Q920Q6	mus-musculus	Q920Q6	Msi2	Q920Q6	1	28	RNA-binding protein Musashi homolog 2	
 Q920Q8	mus-musculus	Q920Q8	Ivns1abp	Q920Q8	7	27	Influenza virus NS1A-binding protein homolog	
@@ -81,10 +82,10 @@ Q921E6	mus-musculus	Q921E6	Eed	Q921E6	115	1152	Polycomb protein EED
 Q921F2	mus-musculus	Q921F2	Tardbp	Q921F2	4	124	TAR DNA-binding protein 43	
 Q921F4	mus-musculus	Q921F4	Hnrnpll	Q921F4	1	16	Heterogeneous nuclear ribonucleoprotein L-like	
 Q921G6	mus-musculus	Q921G6	Lrch4	Q921G6	0	4	Leucine-rich repeat and calponin homology domain-containing 	
-Q921G7	mus-musculus	Q921G7	Etfdh	Q921G7	1	23	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	
+Q921G7	mus-musculus	Q921G7	Etfdh	Q921G7	9	33	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	
 Q921G8	mus-musculus	Q921G8	Tubgcp2	Q921G8	13	53	Gamma-tubulin complex component 2	
-Q921H8	mus-musculus	Q921H8	Acaa1a	Q921H8	3	48	3-ketoacyl-CoA thiolase A, peroxisomal	
-Q921H9	mus-musculus	Q921H9	Coa7	Q921H9	4	20	Cytochrome c oxidase assembly factor 7	
+Q921H8	mus-musculus	Q921H8	Acaa1a	Q921H8	5	50	3-ketoacyl-CoA thiolase A, peroxisomal	
+Q921H9	mus-musculus	Q921H9	Coa7	Q921H9	13	30	Cytochrome c oxidase assembly factor 7	
 Q921I0	mus-musculus	Q921I0	Ormdl1	Q921I0	3	22	ORM1-like protein 1	
 Q921I1	mus-musculus	Q921I1	Tf	Q921I1	2	53	Serotransferrin	
 Q921I2	mus-musculus	Q921I2	Klhdc4	Q921I2	2	2	Kelch domain-containing protein 4	
@@ -96,12 +97,12 @@ Q921K8	mus-musculus	Q921K8	Tcaf2	Q921K8	0	1	TRPM8 channel-associated factor 2
 Q921K9	mus-musculus	Q921K9	Bcl7b	Q921K9	0	23	B-cell CLL/lymphoma 7 protein family member B	
 Q921L3	mus-musculus	Q921L3	Tmco1	Q921L3	1	78	Calcium load-activated calcium channel	
 Q921L5	mus-musculus	Q921L5	Cog2	Q921L5	10	44	Conserved oligomeric Golgi complex subunit 2	
-Q921L7	mus-musculus	Q921L7	Hemk1	Q921L7	1	13	MTRF1L release factor glutamine methyltransferase	
+Q921L7	mus-musculus	Q921L7	Hemk1	Q921L7	9	19	MTRF1L release factor glutamine methyltransferase	
 Q921M3	mus-musculus	Q921M3	Sf3b3	Q921M3	22	226	Splicing factor 3B subunit 3	
 Q921M4	mus-musculus	Q921M4	Golga2	Q921M4	4	60	Golgin subfamily A member 2	
 Q921M7	mus-musculus	Q921M7	Cyrib	Q921M7	0	4	CYFIP-related Rac1 interactor B	
 Q921N6	mus-musculus	Q921N6	Ddx27	Q921N6	6	50	Probable ATP-dependent RNA helicase DDX27	
-Q921N7	mus-musculus	Q921N7	Tmem70	Q921N7	1	6	Transmembrane protein 70, mitochondrial	
+Q921N7	mus-musculus	Q921N7	Tmem70	Q921N7	6	11	Transmembrane protein 70, mitochondrial	
 Q921N8	mus-musculus	Q921N8	Gps2	Q921N8	4	19	G protein pathway suppressor 2	
 Q921P9	mus-musculus	Q921P9	Tceal1	Q921P9	0	3	Transcription elongation factor A protein-like 1	
 Q921Q3	mus-musculus	Q921Q3	Alg1	Q921Q3	1	8	Chitobiosyldiphosphodolichol beta-mannosyltransferase	
@@ -125,19 +126,19 @@ Q92206	candida-albicans-237561	Q92206	ERG1	Q92206	0	5	Squalene epoxidase ERG1
 Q92207	candida-albicans-237561	Q92207	HOG1	Q92207	8	37	Mitogen-activated protein kinase HOG1	
 Q92209	candida-albicans-237561	Q92209	THR1	Q92209	0	4	Homoserine kinase	
 Q92210	candida-albicans-237561	Q92210	ADE2	Q92210	0	3	Phosphoribosylaminoimidazole carboxylase	
-Q922B1	mus-musculus	Q922B1	Macrod1	Q922B1	0	4	ADP-ribose glycohydrolase MACROD1	
+Q922B1	mus-musculus	Q922B1	Macrod1	Q922B1	13	18	ADP-ribose glycohydrolase MACROD1	
 Q922B2	mus-musculus	Q922B2	Dars1	Q922B2	2	35	Aspartate--tRNA ligase, cytoplasmic	
 Q922B6	mus-musculus	Q922B6	Traf7	Q922B6	2	46	E3 ubiquitin-protein ligase TRAF7	
 Q922D4	mus-musculus	Q922D4	Ppp6r3	Q922D4	4	34	Serine/threonine-protein phosphatase 6 regulatory subunit 3	
 Q922D8	mus-musculus	Q922D8	Mthfd1	Q922D8	3	32	C-1-tetrahydrofolate synthase, cytoplasmic	
 Q922E4	mus-musculus	Q922E4	Pcyt2	Q922E4	0	13	Ethanolamine-phosphate cytidylyltransferase	
-Q922E6	mus-musculus	Q922E6	Fastkd2	Q922E6	4	19	FAST kinase domain-containing protein 2, mitochondrial	
+Q922E6	mus-musculus	Q922E6	Fastkd2	Q922E6	11	26	FAST kinase domain-containing protein 2, mitochondrial	
 Q922F4	mus-musculus	Q922F4	Tubb6	Q922F4	11	76	Tubulin beta-6 chain	
-Q922G0	mus-musculus	Q922G0	Slc25a36	Q922G0	0	1	Solute carrier family 25 member 36	
+Q922G0	mus-musculus	Q922G0	Slc25a36	Q922G0	1	2	Solute carrier family 25 member 36	
 Q922G2	mus-musculus	Q922G2	Fam76a	Q922G2	0	3	Protein FAM76A	
 Q922G7	mus-musculus	Q922G7	Tekt2	Q922G7	5	71	Tektin-2	
 Q922H1	mus-musculus	Q922H1	Prmt3	Q922H1	4	13	Protein arginine N-methyltransferase 3	
-Q922H2	mus-musculus	Q922H2	Pdk3	Q922H2	2	12	Pyruvate dehydrogenase kinase isoform 3	
+Q922H2	mus-musculus	Q922H2	Pdk3	Q922H2	9	20	Pyruvate dehydrogenase kinase isoform 3	
 Q922H4	mus-musculus	Q922H4	Gmppa	Q922H4	1	13	Mannose-1-phosphate guanylyltransferase regulatory subunit a	
 Q922H7	mus-musculus	Q922H7	Rasl11b	Q922H7	0	5	Ras-like protein family member 11B	
 Q922H9	mus-musculus	Q922H9	Znf330	Q922H9	3	9	Zinc finger protein 330	
@@ -152,21 +153,21 @@ Q922M5	mus-musculus	Q922M5	Cdca7l	Q922M5	1	5	Cell division cycle-associated 7-li
 Q922M7	mus-musculus	Q922M7	?	Q922M7	2	13	Ashwin	
 Q922P8	mus-musculus	Q922P8	Tmem132a	Q922P8	0	2	Transmembrane protein 132A	
 Q922P9	mus-musculus	Q922P9	Glyr1	Q922P9	2	88	Cytokine-like nuclear factor N-PAC	
-Q922Q1	mus-musculus	Q922Q1	Mtarc2	Q922Q1	0	3	Mitochondrial amidoxime reducing component 2	
+Q922Q1	mus-musculus	Q922Q1	Mtarc2	Q922Q1	8	11	Mitochondrial amidoxime reducing component 2	
 Q922Q2	mus-musculus	Q922Q2	Riok1	Q922Q2	3	80	Serine/threonine-protein kinase RIO1	
-Q922Q4	mus-musculus	Q922Q4	Pycr2	Q922Q4	3	12	Pyrroline-5-carboxylate reductase 2	
+Q922Q4	mus-musculus	Q922Q4	Pycr2	Q922Q4	3	13	Pyrroline-5-carboxylate reductase 2	
 Q922Q8	mus-musculus	Q922Q8	Lrrc59	Q922Q8	2	34	Leucine-rich repeat-containing protein 59	
 Q922Q9	mus-musculus	Q922Q9	Chid1	Q922Q9	2	16	Chitinase domain-containing protein 1	
 Q922R0	mus-musculus	Q922R0	Prkx	Q922R0	8	24	cAMP-dependent protein kinase catalytic subunit PRKX	
 Q922R1	mus-musculus	Q922R1	Phaf1	Q922R1	3	7	Phagosome assembly factor 1	
 Q922R5	mus-musculus	Q922R5	Ppp4r3b	Q922R5	6	37	Serine/threonine-protein phosphatase 4 regulatory subunit 3B	
 Q922R8	mus-musculus	Q922R8	Pdia6	Q922R8	2	42	Protein disulfide-isomerase A6	
-Q922S4	mus-musculus	Q922S4	Pde2a	Q922S4	2	7	cGMP-dependent 3,5-cyclic phosphodiesterase	
+Q922S4	mus-musculus	Q922S4	Pde2a	Q922S4	3	9	cGMP-dependent 3,5-cyclic phosphodiesterase	
 Q922S8	mus-musculus	Q922S8	Kif2c	Q922S8	5	70	Kinesin-like protein KIF2C	
 Q922U1	mus-musculus	Q922U1	Prpf3	Q922U1	12	134	U4/U6 small nuclear ribonucleoprotein Prp3	
 Q922U2	mus-musculus	Q922U2	Krt5	Q922U2	30	51	Keratin, type II cytoskeletal 5	
 Q922V4	mus-musculus	Q922V4	Plrg1	Q922V4	17	186	Pleiotropic regulator 1	
-Q922W5	mus-musculus	Q922W5	Pycr1	Q922W5	3	9	Pyrroline-5-carboxylate reductase 1, mitochondrial	
+Q922W5	mus-musculus	Q922W5	Pycr1	Q922W5	4	10	Pyrroline-5-carboxylate reductase 1, mitochondrial	
 Q922X9	mus-musculus	Q922X9	Prmt7	Q922X9	0	7	Protein arginine N-methyltransferase 7	
 Q922Y0	mus-musculus	Q922Y0	Dyrk3	Q922Y0	0	3	Dual specificity tyrosine-phosphorylation-regulated kinase 3	
 Q922Y1	mus-musculus	Q922Y1	Ubxn1	Q922Y1	7	40	UBX domain-containing protein 1	
@@ -179,7 +180,7 @@ Q92325	yeast	Q92325	LAG2	Q92325	1	14	Cullin-associated NEDD8-dissociated protein
 Q92328	yeast	Q92328	MDM12	Q92328	2	34	Mitochondrial distribution and morphology protein 12	
 Q92331	yeast	Q92331	VPS5	Q92331	4	35	Vacuolar protein sorting-associated protein 5	
 Q92337	schizosaccharomyces-pombe	Q92337	abc1	Q92337	0	5	ATP-binding cassette transporter abc1	
-Q92338	schizosaccharomyces-pombe	Q92338	coq8	Q92338	0	1	Atypical kinase COQ8, mitochondrial	
+Q92338	schizosaccharomyces-pombe	Q92338	coq8	Q92338	1	3	Atypical kinase COQ8, mitochondrial	
 Q92340	schizosaccharomyces-pombe	Q92340	shu1	Q92340	0	1	High affinity heme transporter	
 Q92344	schizosaccharomyces-pombe	Q92344	pfl8	Q92344	0	4	Putative cell agglutination protein pfl8	
 Q92345	schizosaccharomyces-pombe	Q92345	pdc101	Q92345	3	18	Probable pyruvate decarboxylase Pdc101	
@@ -227,12 +228,12 @@ Q923G5	rattus-norvegicus	Q923G5	Zdhhc7	Q923G5	0	2	Palmitoyltransferase ZDHHC7
 Q923I7	mus-musculus	Q923I7	Slc5a2	Q923I7	0	1	Sodium/glucose cotransporter 2	
 Q923I8	rattus-norvegicus	Q923I8	Cry2	Q923I8	9	73	Cryptochrome-2	
 Q923K1	rattus-norvegicus	Q923K1	Tas1r3	Q923K1	1	10	Taste receptor type 1 member 3	
-Q923K4	mus-musculus	Q923K4	Gtpbp3	Q923K4	4	96	5-taurinomethyluridine-	
+Q923K4	mus-musculus	Q923K4	Gtpbp3	Q923K4	6	98	5-taurinomethyluridine-	
 Q923K9	rattus-norvegicus	Q923K9	A1cf	Q923K9	1	24	APOBEC1 complementation factor	
 Q923L6	mus-musculus	Q923L6	Ear10	Q923L6	1	5	Eosinophil-associated ribonuclease 10	
 Q923L7	mus-musculus	Q923L7	Ear6	Q923L7	1	2	Ear6 protein	
 Q923M0	mus-musculus	Q923M0	Ppp1r16a	Q923M0	3	8	Protein phosphatase 1 regulatory subunit 16A	
-Q923M1	rattus-norvegicus	Q923M1	Msra	Q923M1	1	26	Mitochondrial peptide methionine sulfoxide reductase	
+Q923M1	rattus-norvegicus	Q923M1	Msra	Q923M1	16	41	Mitochondrial peptide methionine sulfoxide reductase	
 Q923P0	mus-musculus	Q923P0	Col20a1	Q923P0	2	20	Collagen alpha-1(XX) chain	
 Q923Q2	mus-musculus	Q923Q2	Stard13	Q923Q2	3	19	StAR-related lipid transfer protein 13	
 Q923S2	rattus-norvegicus	Q923S2	Pdzk1ip1	Q923S2	4	10	PDZK1-interacting protein 1	
@@ -249,7 +250,7 @@ Q923W1	mus-musculus	Q923W1	Tgs1	Q923W1	2	6	Trimethylguanosine synthase
 Q923W4	rattus-norvegicus	Q923W4	Hdgfl3	Q923W4	2	8	Hepatoma-derived growth factor-related protein 3	
 Q923W9	mus-musculus	Q923W9	Adam33	Q923W9	0	6	Disintegrin and metalloproteinase domain-containing protein 	
 Q923X1	mus-musculus	Q923X1	Adgrl4	Q923X1	2	9	Adhesion G protein-coupled receptor L4	
-Q923X4	mus-musculus	Q923X4	Glrx2	Q923X4	0	18	Glutaredoxin-2, mitochondrial	
+Q923X4	mus-musculus	Q923X4	Glrx2	Q923X4	2	20	Glutaredoxin-2, mitochondrial	
 Q923X5	rattus-norvegicus	Q923X5	Taar7d	Q923X5	2	2	Trace amine-associated receptor 7d	
 Q923X6	rattus-norvegicus	Q923X6	Taar7e	Q923X6	1	2	Trace amine-associated receptor 7e	
 Q923X8	rattus-norvegicus	Q923X8	Taar7b	Q923X8	2	2	Trace amine-associated receptor 7b	
@@ -261,7 +262,7 @@ Q923Y7	rattus-norvegicus	Q923Y7	Taar4	Q923Y7	2	6	Trace amine-associated receptor
 Q923Y8	mus-musculus	Q923Y8	Taar1	Q923Y8	0	2	Trace amine-associated receptor 1	
 Q923Y9	rattus-norvegicus	Q923Y9	Taar1	Q923Y9	2	4	Trace amine-associated receptor 1	
 Q923Z0	mus-musculus	Q923Z0	Gprc5b	Q923Z0	0	2	G-protein coupled receptor family C group 5 member B	
-Q923Z3	mus-musculus	Q923Z3	Mto1	Q923Z3	1	6	5-taurinomethyluridine-	
+Q923Z3	mus-musculus	Q923Z3	Mto1	Q923Z3	2	7	5-taurinomethyluridine-	
 Q923Z4	mus-musculus	Q923Z4	Ferd3l	Q923Z4	1	1	Fer3-like protein	
 Q92410	candida-albicans-237561	Q92410	TPS1	Q92410	2	3	Alpha,alpha-trehalose-phosphate synthase	
 Q92462	schizosaccharomyces-pombe	Q92462	pub1	Q92462	8	21	E3 ubiquitin-protein ligase pub1	
@@ -281,7 +282,7 @@ Q924C1	mus-musculus	Q924C1	Xpo5	Q924C1	4	47	Exportin-5
 Q924C3	rattus-norvegicus	Q924C3	Enpp1	Q924C3	1	29	Ectonucleotide pyrophosphatase/phosphodiesterase family memb	
 Q924C6	mus-musculus	Q924C6	Loxl4	Q924C6	0	4	Lysyl oxidase homolog 4	
 Q924C9	rattus-norvegicus	Q924C9	Slc26a3	Q924C9	3	37	Chloride anion exchanger	
-Q924D0	mus-musculus	Q924D0	Rtn4ip1	Q924D0	2	17	NAD(P)H oxidoreductase RTN4IP1, mitochondrial	
+Q924D0	mus-musculus	Q924D0	Rtn4ip1	Q924D0	7	22	NAD(P)H oxidoreductase RTN4IP1, mitochondrial	
 Q924H0	mus-musculus	Q924H0	Npffr2	Q924H0	2	8	Neuropeptide FF receptor 2	
 Q924H2	mus-musculus	Q924H2	Med15	Q924H2	21	106	Mediator of RNA polymerase II transcription subunit 15	
 Q924H5	mus-musculus	Q924H5	Rad51c	Q924H5	5	63	DNA repair protein RAD51 homolog 3	
@@ -300,12 +301,12 @@ Q924N4	mus-musculus	Q924N4	Slc12a6	Q924N4	3	4	Solute carrier family 12 member 6
 Q924N5	rattus-norvegicus	Q924N5	Acsbg1	Q924N5	0	7	Long-chain-fatty-acid--CoA ligase ACSBG1	
 Q924P2	rattus-norvegicus	Q924P2	Tmem14c	Q924P2	0	5	Transmembrane protein 14C	
 Q924R9	rattus-norvegicus	Q924R9	Nap1l3	Q924R9	0	17	Nucleosome assembly protein 1-like 3	
-Q924S1	rattus-norvegicus	Q924S1	Agpat4	Q924S1	0	7	1-acyl-sn-glycerol-3-phosphate acyltransferase delta	
+Q924S1	rattus-norvegicus	Q924S1	Agpat4	Q924S1	1	9	1-acyl-sn-glycerol-3-phosphate acyltransferase delta	
 Q924S4	rattus-norvegicus	Q924S4	Kremen1	Q924S4	6	40	Kremen protein 1	
 Q924S5	rattus-norvegicus	Q924S5	Lonp1	Q924S5	1	8	Lon protease homolog, mitochondrial	
 Q924S7	mus-musculus	Q924S7	Spred2	Q924S7	1	14	Sprouty-related, EVH1 domain-containing protein 2	
 Q924S8	mus-musculus	Q924S8	Spred1	Q924S8	0	14	Sprouty-related, EVH1 domain-containing protein 1	
-Q924T2	mus-musculus	Q924T2	Mrps2	Q924T2	12	353	Small ribosomal subunit protein uS2m	
+Q924T2	mus-musculus	Q924T2	Mrps2	Q924T2	17	358	Small ribosomal subunit protein uS2m	
 Q924T3	mus-musculus	Q924T3	Xrcc4	Q924T3	3	55	DNA repair protein XRCC4	
 Q924T4	rattus-norvegicus	Q924T4	Lfng	Q924T4	2	22	Beta-1,3-N-acetylglucosaminyltransferase lunatic fringe	
 Q924T7	mus-musculus	Q924T7	Rnf31	Q924T7	18	57	E3 ubiquitin-protein ligase RNF31	
@@ -333,7 +334,7 @@ Q924Z6	mus-musculus	Q924Z6	Xpo6	Q924Z6	4	22	Exportin-6
 Q92502	human	Q92502	STARD8	Q92502	18	100	StAR-related lipid transfer protein 8 (Deleted in liver canc	
 Q92503	human	Q92503	SEC14L1	Q92503	5	78	SEC14-like protein 1	
 Q92504	human	Q92504	SLC39A7	Q92504	4	176	Zinc transporter SLC39A7 (Histidine-rich membrane protein Ke	
-Q92506	human	Q92506	HSD17B8	Q92506	5	102	(3R)-3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.n12) (17-beta	
+Q92506	human	Q92506	HSD17B8	Q92506	7	104	(3R)-3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.n12) (17-beta	
 Q92508	human	Q92508	PIEZO1	Q92508	1	55	Piezo-type mechanosensitive ion channel component 1 (Membran	
 Q92519	human	Q92519	TRIB2	Q92519	36	148	Tribbles homolog 2 (TRB-2)	
 Q92520	human	Q92520	FAM3C	Q92520	32	187	Protein FAM3C (Interleukin-like EMT inducer)	
@@ -359,7 +360,7 @@ Q92545	human	Q92545	TMEM131	Q92545	17	189	Transmembrane protein 131 (Protein RW1
 Q92546	human	Q92546	RGP1	Q92546	10	74	RAB6A-GEF complex partner protein 2 (Retrograde Golgi transp	
 Q92547	human	Q92547	TOPBP1	Q92547	78	391	DNA topoisomerase 2-binding protein 1 (DNA topoisomerase II-	
 Q92551	human	Q92551	IP6K1	Q92551	3	121	Inositol hexakisphosphate kinase 1 (InsP6 kinase 1) (EC 2.7.	
-Q92552	human	Q92552	MRPS27	Q92552	71	679	Small ribosomal subunit protein mS27 (28S ribosomal protein 	
+Q92552	human	Q92552	MRPS27	Q92552	79	687	Small ribosomal subunit protein mS27 (28S ribosomal protein 	
 Q92556	human	Q92556	ELMO1	Q92556	19	307	Engulfment and cell motility protein 1 (Protein ced-12 homol	
 Q92558	human	Q92558	WASF1	Q92558	24	137	Actin-binding protein WASF1 (Protein WAVE-1) (Verprolin homo	
 Q92560	human	Q92560	BAP1	Q92560	150	1359	Ubiquitin carboxyl-terminal hydrolase BAP1 (EC 3.4.19.12) (B	
@@ -406,19 +407,20 @@ Q925I1	mus-musculus	Q925I1	Atad3a	Q925I1	1	40	ATPase family AAA domain-containin
 Q925I4	mus-musculus	Q925I4	Tas1r2	Q925I4	2	10	Taste receptor type 1 member 2	
 Q925I7	mus-musculus	Q925I7	Pdgfd	Q925I7	5	16	Platelet-derived growth factor D	
 Q925K9	mus-musculus	Q925K9	Tssk6	Q925K9	0	7	Testis-specific serine/threonine-protein kinase 6	
-Q925N0	mus-musculus	Q925N0	Sfxn5	Q925N0	0	8	Sideroflexin-5	
+Q925N0	mus-musculus	Q925N0	Sfxn5	Q925N0	1	9	Sideroflexin-5	
+Q925N1	mus-musculus	Q925N1	Sfxn4	Q925N1	4	5	Sideroflexin-4	
 Q925N3	rattus-norvegicus	Q925N3	Pex5l	Q925N3	5	28	PEX5-related protein	
 Q925N4	mus-musculus	Q925N4	Cldn16	Q925N4	10	29	Claudin-16	
 Q925N6	rattus-norvegicus	Q925N6	Igsf1	Q925N6	0	4	Immunoglobulin superfamily member 1	
 Q925N7	rattus-norvegicus	Q925N7	Ocil	Q925N7	3	4	C-type lectin domain family 2 member D5	
 Q925P2	mus-musculus	Q925P2	Ceacam2	Q925P2	2	29	Cell adhesion molecule CEACAM2	
-Q925Q3	mus-musculus	Q925Q3	Slc8b1	Q925Q3	0	5	Mitochondrial sodium/calcium exchanger protein	
+Q925Q3	mus-musculus	Q925Q3	Slc8b1	Q925Q3	2	7	Mitochondrial sodium/calcium exchanger protein	
 Q925Q4	rattus-norvegicus	Q925Q4	Gpha2	Q925Q4	4	9	Glycoprotein hormone alpha-2	
 Q925Q5	mus-musculus	Q925Q5	Gpha2	Q925Q5	4	8	Glycoprotein hormone alpha-2	
 Q925Q8	mus-musculus	Q925Q8	Dach2	Q925Q8	0	5	Dachshund homolog 2	
 Q925Q9	rattus-norvegicus	Q925Q9	Sh3kbp1	Q925Q9	29	95	SH3 domain-containing kinase-binding protein 1	
 Q925S4	mus-musculus	Q925S4	Il24	Q925S4	5	12	Interleukin-24	
-Q925S8	rattus-norvegicus	Q925S8	Yme1l1	Q925S8	3	84	ATP-dependent zinc metalloprotease YME1L1	
+Q925S8	rattus-norvegicus	Q925S8	Yme1l1	Q925S8	5	86	ATP-dependent zinc metalloprotease YME1L1	
 Q925T0	rattus-norvegicus	Q925T0	Dnajc12	Q925T0	0	1	DnaJ homolog subfamily C member 12	
 Q925T4	mus-musculus	Q925T4	Plagl2	Q925T4	0	6	PLAGL2	
 Q925T6	mus-musculus	Q925T6	Grip1	Q925T6	1	56	Glutamate receptor-interacting protein 1	
@@ -454,8 +456,8 @@ Q92636	human	Q92636	NSMAF	Q92636	9	129	Protein FAN (Factor associated with neutr
 Q92637	human	Q92637	FCGR1BP	Q92637	29	173	Putative high affinity immunoglobulin gamma Fc receptor IB (	
 Q92643	human	Q92643	PIGK	Q92643	14	123	GPI-anchor transamidase (EC 2.6.1.-) (GPI-anchor transamidas	
 Q92664	human	Q92664	GTF3A	Q92664	67	517	Transcription factor IIIA (TFIIIA)	
-Q92665	human	Q92665	MRPS31	Q92665	20	366	Small ribosomal subunit protein mS31 (28S ribosomal protein 	
-Q92667	human	Q92667	AKAP1	Q92667	89	504	A-kinase anchor protein 1, mitochondrial (A-kinase anchor pr	
+Q92665	human	Q92665	MRPS31	Q92665	23	369	Small ribosomal subunit protein mS31 (28S ribosomal protein 	
+Q92667	human	Q92667	AKAP1	Q92667	102	517	A-kinase anchor protein 1, mitochondrial (A-kinase anchor pr	
 Q92670	human	Q92670	ZNF75CP	Q92670	31	331	Putative zinc finger protein 75C (Zinc finger protein 75C ps	
 Q92673	human	Q92673	SORL1	Q92673	17	247	Sortilin-related receptor (Low-density lipoprotein receptor 	
 Q92674	human	Q92674	CENPI	Q92674	37	400	Centromere protein I (CENP-I) (FSH primary response protein 	
@@ -522,7 +524,7 @@ Q92837	human	Q92837	FRAT1	Q92837	12	112	Proto-oncogene FRAT1 (Frequently rearran
 Q92838	human	Q92838	EDA	Q92838	20	131	Ectodysplasin-A (Ectodermal dysplasia protein) (EDA protein)	
 Q92839	human	Q92839	HAS1	Q92839	13	197	Hyaluronan synthase 1 (EC 2.4.1.212) (Hyaluronate synthase 1	
 Q92841	human	Q92841	DDX17	Q92841	32	497	Probable ATP-dependent RNA helicase DDX17 (EC 3.6.4.13) (DEA	
-Q92843	human	Q92843	BCL2L2	Q92843	13	151	Bcl-2-like protein 2 (Bcl2-L-2) (Apoptosis regulator Bcl-W)	
+Q92843	human	Q92843	BCL2L2	Q92843	22	159	Bcl-2-like protein 2 (Bcl2-L-2) (Apoptosis regulator Bcl-W)	
 Q92844	human	Q92844	TANK	Q92844	81	320	TRAF family member-associated NF-kappa-B activator (TRAF-int	
 Q92845	human	Q92845	KIFAP3	Q92845	29	230	Kinesin-associated protein 3 (KAP-3) (KAP3) (Smg GDS-associa	
 Q92847	human	Q92847	GHSR	Q92847	18	146	Growth hormone secretagogue receptor type 1 (GHS-R) (GH-rele	
@@ -564,7 +566,7 @@ Q92932	human	Q92932	PTPRN2	Q92932	17	122	Receptor-type tyrosine-protein phosphat
 Q92934	human	Q92934	BAD	Q92934	52	202	Bcl2-associated agonist of cell death (BAD) (Bcl-2-binding c	
 Q92935	human	Q92935	EXTL1	Q92935	5	56	Exostosin-like 1 (EC 2.4.1.224) (Exostosin-L) (Glucuronosyl-	
 Q92945	human	Q92945	KHSRP	Q92945	19	305	Far upstream element-binding protein 2 (FUSE-binding protein	
-Q92947	human	Q92947	GCDH	Q92947	7	132	Glutaryl-CoA dehydrogenase, mitochondrial (GCD) (EC 1.3.8.6)	
+Q92947	human	Q92947	GCDH	Q92947	13	135	Glutaryl-CoA dehydrogenase, mitochondrial (GCD) (EC 1.3.8.6)	
 Q92949	human	Q92949	FOXJ1	Q92949	78	376	Forkhead box protein J1 (Forkhead-related protein FKHL13) (H	
 Q92952	human	Q92952	KCNN1	Q92952	28	119	Small conductance calcium-activated potassium channel protei	
 Q92953	human	Q92953	KCNB2	Q92953	56	300	Potassium voltage-gated channel subfamily B member 2 (Voltag	

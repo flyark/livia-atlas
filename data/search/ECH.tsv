@@ -1,11 +1,11 @@
 ECH	arabidopsis-thaliana	Q8LEK2	ECH	Q8LEK2	2	9	Golgi apparatus membrane protein-like protein ECHIDNA	
 ECH-1.1	worm	O17612	ech-1.1	O17612	1	19	Trifunctional enzyme subunit alpha, mitochondrial	
-ECH-1.2	worm	Q9GYT0	ech-1.2	Q9GYT0	1	16	Trifunctional enzyme subunit alpha, mitochondrial	
+ECH-1.2	worm	Q9GYT0	ech-1.2	Q9GYT0	1	17	Trifunctional enzyme subunit alpha, mitochondrial	
 ECH-2	worm	D1MN80	ech-2	D1MN80	0	1	Enoyl-CoA hydratase domain-containing protein 3, mitochondri	
 ECH-3	worm	Q20376	ech-3	Q20376	1	21	Enoyl-CoA hydratase	
 ECH-4	worm	Q09603	ech-4	Q09603	1	22	Delta(3),Delta(2)-enoyl-CoA isomerase	
-ECH-5	worm	O45106	ech-5	O45106	0	17	Enoyl-CoA hydratase, mitochondrial	
-ECH-6	worm	P34559	ech-6	P34559	0	26	Probable enoyl-CoA hydratase, mitochondrial	
+ECH-5	worm	O45106	ech-5	O45106	1	18	Enoyl-CoA hydratase, mitochondrial	
+ECH-6	worm	P34559	ech-6	P34559	1	27	Probable enoyl-CoA hydratase, mitochondrial	
 ECH-7	worm	Q9NEZ8	ech-7	Q9NEZ8	0	14	Probable enoyl-CoA hydratase, mitochondrial	
 ECH-8	worm	O17761	ech-8	O17761	1	29	Enoyl-CoA Hydratase	
 ECH-9	worm	O17762	ech-9	O17762	0	12	Enoyl-CoA Hydratase	
@@ -46,19 +46,28 @@ ECHA8	cladophialophora-carrionii	A0A1C1CI90	echA8	A0A1C1CI90	0	21	Putative enoyl
 ECHA8	mycobacterium-leprae	O07137	echA8	O07137	0	75	Probable enoyl-CoA hydratase echA8	
 ECHA8	mycobacterium-tuberculosis	P9WNN9	echA8	P9WNN9	0	94	Probable enoyl-CoA hydratase EchA8	
 ECHA9	mycobacterium-tuberculosis	O53419	echA9	O53419	1	94	3-hydroxyisobutyryl-CoA hydrolase	
-ECHA_HUMAN	human	P40939	HADHA	P40939	32	598		
-ECHB_HUMAN	human	P55084	HADHB	P55084	26	475		
-ECHD	human	Q08426	EHHADH	Q08426	7	290		
-ECHD1_HUMAN	human	Q9NTX5	ECHDC1	Q9NTX5	2	178		
-ECHD2_HUMAN	human	Q86YB7	ECHDC2	Q86YB7	7	140		
+ECHA_HUMAN	human	P40939	HADHA	P40939	36	604		
+ECHB_HUMAN	human	P55084	HADHB	P55084	32	481		
+ECHD	human	Q08426	EHHADH	Q08426	12	295		
+ECHD1_DANRE	zebrafish	F1R6N4	echdc1	F1R6N4	1	1		
+ECHD1_HUMAN	human	Q9NTX5	ECHDC1	Q9NTX5	4	180		
+ECHD2_HUMAN	human	Q86YB7	ECHDC2	Q86YB7	9	142		
 ECHD3_HUMAN	human	Q96DC8	ECHDC3	Q96DC8	4	42		
-ECHDC1	human	Q9NTX5	ECHDC1	Q9NTX5	2	178	Ethylmalonyl-CoA decarboxylase (EC 4.1.1.94) (Enoyl-CoA hydr	
-ECHDC1	mus-musculus	Q9D9V3	Echdc1	Q9D9V3	1	67	Ethylmalonyl-CoA decarboxylase	
-ECHDC1	rattus-norvegicus	Q6AYG5	Echdc1	Q6AYG5	0	110	Ethylmalonyl-CoA decarboxylase	
-ECHDC2	human	Q86YB7	ECHDC2	Q86YB7	7	140	Enoyl-CoA hydratase domain-containing protein 2, mitochondri	
-ECHDC2	mus-musculus	Q3TLP5	Echdc2	Q3TLP5	1	53	Enoyl-CoA hydratase domain-containing protein 2, mitochondri	
-ECHDC2	rattus-norvegicus	D3ZIL6	Echdc2	D3ZIL6	3	109	Enoyl CoA hydratase domain containing 2	
+ECHDC1	human	Q9NTX5	ECHDC1	Q9NTX5	4	180	Ethylmalonyl-CoA decarboxylase (EC 4.1.1.94) (Enoyl-CoA hydr	
+ECHDC1	mus-musculus	Q9D9V3	Echdc1	Q9D9V3	2	69	Ethylmalonyl-CoA decarboxylase	
+ECHDC1	pan-troglodytes	H2QTQ0	ECHDC1	H2QTQ0	1	2	Ethylmalonyl-CoA decarboxylase 1	
+ECHDC1	rattus-norvegicus	Q6AYG5	Echdc1	Q6AYG5	1	112	Ethylmalonyl-CoA decarboxylase	
+ECHDC1	xenopus-laevis	Q5HZQ8	echdc1	Q5HZQ8	1	1	Ethylmalonyl-CoA decarboxylase	
+ECHDC1	zebrafish	F1R6N4	echdc1	F1R6N4	1	1	Ethylmalonyl-CoA decarboxylase	
+ECHDC2	human	Q86YB7	ECHDC2	Q86YB7	9	142	Enoyl-CoA hydratase domain-containing protein 2, mitochondri	
+ECHDC2	mus-musculus	Q3TLP5	Echdc2	Q3TLP5	4	57	Enoyl-CoA hydratase domain-containing protein 2, mitochondri	
+ECHDC2	pan-troglodytes	K7B969	ECHDC2	K7B969	4	5	Enoyl-CoA hydratase domain containing 2	
+ECHDC2	rattus-norvegicus	D3ZIL6	Echdc2	D3ZIL6	6	113	Enoyl CoA hydratase domain containing 2	
 ECHDC3	human	Q96DC8	ECHDC3	Q96DC8	4	42	Enoyl-CoA hydratase domain-containing protein 3, mitochondri	
+ECHDC3	mus-musculus	Q9D7J9	Echdc3	Q9D7J9	0	1	Enoyl-CoA hydratase domain-containing protein 3, mitochondri	
+ECHDC3	pan-troglodytes	H2Q1L8	ECHDC3	H2Q1L8	0	1	Enoyl-CoA hydratase domain containing 3	
+ECHDC3	rattus-norvegicus	Q3MIE0	Echdc3	Q3MIE0	0	1	Enoyl-CoA hydratase domain-containing protein 3, mitochondri	
+ECHH_CAEEL	worm	P34255	hadb-1	P34255	4	37		
 ECHIA	arabidopsis-thaliana	Q6NL24	ECHIA	Q6NL24	0	74	Probable enoyl-CoA hydratase 1, peroxisomal	
 ECHINODERM	human	O00423	EML1	O00423	36	177	Echinoderm microtubule-associated protein-like 1 (EMAP-1) (H	w
 ECHINODERM	human	O95834	EML2	O95834	9	102	Echinoderm microtubule-associated protein-like 2 (EMAP-2) (H	w
@@ -71,13 +80,17 @@ ECHINODERM-MICROTUBULE-ASSOCIATED	fly	FBgn0259099	DCX-EMAP	M9PF94	10	71	Doubleco
 ECHINOID	fly	FBgn0000547	ed	Q9VQW7	8	64	Echinoid, isoform A (Echinoid, isoform B)	w
 ECHINOID	fly	FBgn0051774	fred	A0A023GPK8	1	11	Friend of echinoid, isoform H	w
 ECHINUS	fly	FBgn0000542	ec	Q1W9P9	6	10	Echinus splice form 3 (Echinus, isoform C)	w
-ECHM_HUMAN	human	P30084	ECHS1	P30084	6	391		
+ECHM_CAEEL	worm	P34559	ech-6	P34559	1	27		
+ECHM_HUMAN	human	P30084	ECHS1	P30084	7	392		
 ECHOS1	human	P57727	TMPRSS3	P57727	4	101		
-ECHP_HUMAN	human	Q08426	EHHADH	Q08426	7	290		
+ECHP_DANRE	zebrafish	Q6NYL3	ehhadh	Q6NYL3	2	131		
+ECHP_HUMAN	human	Q08426	EHHADH	Q08426	12	295		
 ECHS1	cladophialophora-carrionii	A0A1C1CR06	echs1	A0A1C1CR06	0	17	Putative enoyl-CoA hydratase, mitochondrial	
-ECHS1	dictyostelium-discoideum	Q1ZXF1	echs1	Q1ZXF1	0	6	Probable enoyl-CoA hydratase, mitochondrial	
-ECHS1	fly	FBgn0033879	Echs1	Q7JR58	0	178	Enoyl-CoA hydratase, mitochondrial (EC 4.2.1.17) (EC 5.3.3.8	
-ECHS1	human	P30084	ECHS1	P30084	6	391	Enoyl-CoA hydratase, mitochondrial (mECH) (mECH1) (EC 4.2.1.	
-ECHS1	mus-musculus	Q8BH95	Echs1	Q8BH95	0	93	Enoyl-CoA hydratase, mitochondrial	
-ECHS1	rattus-norvegicus	P14604	Echs1	P14604	3	112	Enoyl-CoA hydratase, mitochondrial	
-ECHS1	zebrafish	Q7ZZ04	echs1	Q7ZZ04	0	123	Enoyl-CoA hydratase, mitochondrial	
+ECHS1	dictyostelium-discoideum	Q1ZXF1	echs1	Q1ZXF1	0	7	Probable enoyl-CoA hydratase, mitochondrial	
+ECHS1	fly	FBgn0033879	Echs1	Q7JR58	1	179	Enoyl-CoA hydratase, mitochondrial (EC 4.2.1.17) (EC 5.3.3.8	
+ECHS1	human	P30084	ECHS1	P30084	7	392	Enoyl-CoA hydratase, mitochondrial (mECH) (mECH1) (EC 4.2.1.	
+ECHS1	mus-musculus	Q8BH95	Echs1	Q8BH95	3	96	Enoyl-CoA hydratase, mitochondrial	
+ECHS1	pan-troglodytes	K7AHE9	ECHS1	K7AHE9	3	3	Enoyl CoA hydratase, short chain, 1, mitochondrial	
+ECHS1	rattus-norvegicus	P14604	Echs1	P14604	6	115	Enoyl-CoA hydratase, mitochondrial	
+ECHS1	zebrafish	Q7ZZ04	echs1	Q7ZZ04	3	126	Enoyl-CoA hydratase, mitochondrial	
+ECHS1.L	xenopus-laevis	A0A1L8FKI1	echs1.L	A0A1L8FKI1	2	2	enoyl-CoA hydratase, short chain, 1, mitochondrial L homeolo	

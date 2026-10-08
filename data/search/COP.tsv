@@ -136,7 +136,7 @@ COPINE-8	zebrafish	E7F5X2	cpne8	E7F5X2	0	1	Copine-8	w
 COPINE-9	human	Q8IYJ1	CPNE9	Q8IYJ1	9	88	Copine-9 (Copine IX)	w
 COPP	helicobacter-pylori	Q48271	copP	Q48271	0	10	COP-associated protein	
 COPPER	fly	FBgn0038332	CG6136	Q9VF71	0	1	Copper homeostasis protein cutC homolog	w
-COPPER	fly	FBgn0051648	Cox11	Q9VMQ6	1	16	Cytochrome c oxidase copper chaperone COX11 (RE57459p)	w
+COPPER	fly	FBgn0051648	Cox11	Q9VMQ6	4	19	Cytochrome c oxidase copper chaperone COX11 (RE57459p)	w
 COPPER	fly	FBgn0052446	Atox1	M9PD88	3	5	Copper transport protein ATOX1 (Metal transport protein ATX1	w
 COPPER	fly	FBgn0062411	Ctr1C	Q9VA22	1	5	Copper transport protein	w
 COPPER	fly	FBgn0062412	Ctr1B	Q9VHS6	8	51	Copper transport protein	w
@@ -149,7 +149,7 @@ COPPER	human	O75106	AOC2	O75106	6	122	Amine oxidase [copper-containing] 2 (EC 1.
 COPPER	human	P19801	AOC1	P19801	6	138	Diamine oxidase [copper-containing] (Diamine oxidase) (EC 1.	w
 COPPER	human	P35670	ATP7B	P35670	1	95	Copper-transporting ATPase 2 (EC 7.2.2.8) (Copper pump 2) (W	w
 COPPER	human	Q04656	ATP7A	Q04656	9	184	Copper-transporting ATPase 1 (EC 7.2.2.8) (Copper pump 1) (M	w
-COPPER	human	Q14061	COX17	Q14061	10	111	Cytochrome c oxidase copper chaperone	w
+COPPER	human	Q14061	COX17	Q14061	16	117	Cytochrome c oxidase copper chaperone	w
 COPPER	human	Q16853	AOC3	Q16853	11	423	Amine oxidase [copper-containing] 3 (EC 1.4.3.21) (Amine oxi	w
 COPPER	human	Q9NTM9	CUTC	Q9NTM9	0	63	Copper homeostasis protein cutC homolog	w
 COPPER	worm	G5EE41	cuc-1	G5EE41	2	44	Copper transport protein ATOX1	w
@@ -157,7 +157,7 @@ COPPER	worm	P34630	cutc-1	P34630	0	1	Copper homeostasis protein cutC homolog	w
 COPPER	worm	Q19936	CELE_F31E8.4	Q19936	0	1	Copper transport protein	w
 COPPER	worm	Q6BEW1	CELE_F27C1.2	Q6BEW1	0	4	Copper transport protein	w
 COPPER	worm	Q95QD9	CELE_F58G6.7	Q95QD9	0	3	Copper transport protein	w
-COPPER	worm	Q9TZ68	cox-17	Q9TZ68	2	29	Cytochrome c oxidase copper chaperone	w
+COPPER	worm	Q9TZ68	cox-17	Q9TZ68	4	31	Cytochrome c oxidase copper chaperone	w
 COPPER	worm	Q9U2M9	CELE_Y37H9A.1	Q9U2M9	0	1	Copper transport protein 86	w
 COPPER	yeast	P0CX80	CUP1-1	P0CX80	0	6	Copper metallothionein 1-1	w
 COPPER	yeast	P0CX81	CUP1-2	P0CX81	0	3	Copper metallothionein 1-2	w
@@ -173,7 +173,7 @@ COPPER	zebrafish	E7FEZ9	atox1	E7FEZ9	6	134	Copper transport protein ATOX1	w
 COPPER	zebrafish	E9QC64	slc31a2	E9QC64	0	2	Copper transport protein	w
 COPPER	zebrafish	F1QCS3	ccs	F1QCS3	2	7	Copper chaperone for superoxide dismutase	w
 COPPER	zebrafish	F1QKH1	slc31a1	F1QKH1	0	1	Copper transport protein	w
-COPPER	zebrafish	Q66I53	cox17	Q66I53	2	6	Cytochrome c oxidase copper chaperone	w
+COPPER	zebrafish	Q66I53	cox17	Q66I53	4	8	Cytochrome c oxidase copper chaperone	w
 COPPER-BINDING	worm	Q95XC6	tyr-6	Q95XC6	0	3	Tyrosinase copper-binding domain-containing protein	w
 COPPER-CONTAINING	human	O75106	AOC2	O75106	6	122	Amine oxidase [copper-containing] 2 (EC 1.4.3.21) (Amine oxi	w
 COPPER-CONTAINING	human	P19801	AOC1	P19801	6	138	Diamine oxidase [copper-containing] (Diamine oxidase) (EC 1.	w
@@ -186,12 +186,13 @@ COPR	pseudomonas-aeruginosa	Q9I034	copR	Q9I034	7	75	Two-component response regul
 COPR	salmonella-typhimurium	Q8ZQ53	copR	Q8ZQ53	1	40	Copper resistance transcriptional regulatory protein	
 COPR5	human	Q9NQ92	COPRS	Q9NQ92	6	124		
 COPROGEN	fly	FBgn0021944	Coprox	Q9V3D2	6	76	Oxygen-dependent coproporphyrinogen-III oxidase (COX) (Copro	w
-COPROGEN	human	P36551	CPOX	P36551	1	133	Oxygen-dependent coproporphyrinogen-III oxidase, mitochondri	w
+COPROGEN	human	P36551	CPOX	P36551	3	135	Oxygen-dependent coproporphyrinogen-III oxidase, mitochondri	w
+COPROPORPHYRINOGEN	zebrafish	Q05AK3	cpo	Q05AK3	0	2	coproporphyrinogen oxidase	w
 COPROPORPHYRINOGEN-III	fly	FBgn0021944	Coprox	Q9V3D2	6	76	Oxygen-dependent coproporphyrinogen-III oxidase (COX) (Copro	w
-COPROPORPHYRINOGEN-III	human	P36551	CPOX	P36551	1	133	Oxygen-dependent coproporphyrinogen-III oxidase, mitochondri	w
+COPROPORPHYRINOGEN-III	human	P36551	CPOX	P36551	3	135	Oxygen-dependent coproporphyrinogen-III oxidase, mitochondri	w
 COPROPORPHYRINOGEN-III	yeast	P11353	HEM13	P11353	0	20	Oxygen-dependent coproporphyrinogen-III oxidase	w
 COPROPORPHYRINOGENASE	fly	FBgn0021944	Coprox	Q9V3D2	6	76	Oxygen-dependent coproporphyrinogen-III oxidase (COX) (Copro	w
-COPROPORPHYRINOGENASE	human	P36551	CPOX	P36551	1	133	Oxygen-dependent coproporphyrinogen-III oxidase, mitochondri	w
+COPROPORPHYRINOGENASE	human	P36551	CPOX	P36551	3	135	Oxygen-dependent coproporphyrinogen-III oxidase, mitochondri	w
 COPROX	cladophialophora-carrionii	A0A1C1CZW6	Coprox	A0A1C1CZW6	0	1	coproporphyrinogen oxidase	
 COPROX	fly	FBgn0021944	Coprox	Q9V3D2	6	76	Oxygen-dependent coproporphyrinogen-III oxidase (COX) (Copro	
 COPRS	human	Q9NQ92	COPRS	Q9NQ92	6	124	Coordinator of PRMT5 and differentiation stimulator (Coopera	

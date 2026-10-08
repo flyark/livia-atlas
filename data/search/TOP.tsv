@@ -1,5 +1,5 @@
 TOP-1	worm	O17966	top-1	O17966	2	42	DNA topoisomerase 1	
-TOP-3A	worm	O61660	top-3A	O61660	5	29	DNA topoisomerase 3	
+TOP-3A	worm	O61660	top-3A	O61660	7	31	DNA topoisomerase 3	
 TOP-3B	worm	H1UBJ9	top-3b	H1UBJ9	3	23	DNA topoisomerase	
 TOP1	candida-albicans-237561	A0A1D8PPI2	TOP1	A0A1D8PPI2	1	27	DNA topoisomerase I	
 TOP1	cladophialophora-carrionii	A0A1C1CLM2	TOP1	A0A1C1CLM2	0	26	DNA topoisomerase I	
@@ -12,13 +12,14 @@ TOP1	schizosaccharomyces-pombe	P07799	top1	P07799	0	20	DNA topoisomerase 1
 TOP1	virus	A0A7R5WJE9	TOP1	A0A7R5WJE9	3	187	DNA topoisomerase	
 TOP1	virus	P16472	TOP1	P16472	2	153	DNA topoisomerase 1	
 TOP1	yeast	P04786	TOP1	P04786	10	76	DNA topoisomerase 1	
-TOP1A	arabidopsis-thaliana	P30181	TOP1A	P30181	1	53	DNA topoisomerase 1 alpha	
+TOP1A	arabidopsis-thaliana	P30181	TOP1A	P30181	2	54	DNA topoisomerase 1 alpha	
 TOP1A	zebrafish	Q1ED17	top1a	Q1ED17	1	34	DNA topoisomerase I	
 TOP1B	arabidopsis-thaliana	Q9FJ79	TOP1B	Q9FJ79	2	48	DNA topoisomerase 1 beta	
-TOP1MT	human	Q969P6	TOP1MT	Q969P6	6	63	DNA topoisomerase I, mitochondrial (TOP1mt) (EC 5.6.2.1)	
-TOP1MT	mus-musculus	Q8R4U6	Top1mt	Q8R4U6	1	24	DNA topoisomerase I, mitochondrial	
-TOP1MT	rattus-norvegicus	Q6IM78	Top1mt	Q6IM78	1	31	DNA topoisomerase I, mitochondrial	
-TOP1M_HUMAN	human	Q969P6	TOP1MT	Q969P6	6	63		
+TOP1MT	human	Q969P6	TOP1MT	Q969P6	12	69	DNA topoisomerase I, mitochondrial (TOP1mt) (EC 5.6.2.1)	
+TOP1MT	mus-musculus	Q8R4U6	Top1mt	Q8R4U6	4	28	DNA topoisomerase I, mitochondrial	
+TOP1MT	pan-troglodytes	A9Q1D5	TOP1MT	A9Q1D5	5	5	DNA topoisomerase I, mitochondrial	
+TOP1MT	rattus-norvegicus	Q6IM78	Top1mt	Q6IM78	4	34	DNA topoisomerase I, mitochondrial	
+TOP1M_HUMAN	human	Q969P6	TOP1MT	Q969P6	12	69		
 TOP1_HUMAN	human	P11387	TOP1	P11387	63	705		
 TOP2	arabidopsis-thaliana	P30182	TOP2	P30182	1	37	DNA topoisomerase 2	
 TOP2	candida-albicans-237561	A0A1D8PMM1	TOP2	A0A1D8PMM1	0	19	DNA topoisomerase 2	
@@ -34,19 +35,22 @@ TOP2B	human	Q02880	TOP2B	Q02880	7	252	DNA topoisomerase 2-beta (EC 5.6.2.2) (DNA
 TOP2B_HUMAN	human	Q02880	TOP2B	Q02880	7	252		
 TOP2MT	dictyostelium-discoideum	P90520	top2mt	P90520	0	14	DNA topoisomerase 2, mitochondrial	
 TOP3	cladophialophora-carrionii	A0A1C1CU42	top3	A0A1C1CU42	2	14	DNA topoisomerase	
-TOP3	dictyostelium-discoideum	Q8T2T7	top3	Q8T2T7	2	18	DNA topoisomerase 3	
-TOP3	human	Q13472	TOP3A	Q13472	25	355		
+TOP3	dictyostelium-discoideum	Q8T2T7	top3	Q8T2T7	3	19	DNA topoisomerase 3	
+TOP3	human	Q13472	TOP3A	Q13472	29	359		
 TOP3	schizosaccharomyces-pombe	O60126	top3	O60126	2	20	DNA topoisomerase 3	
-TOP3	yeast	P13099	TOP3	P13099	3	25	DNA topoisomerase 3	
-TOP3A	arabidopsis-thaliana	Q9LVP1	TOP3A	Q9LVP1	6	81	DNA topoisomerase 3-alpha	
-TOP3A	human	Q13472	TOP3A	Q13472	25	355	DNA topoisomerase 3-alpha (EC 5.6.2.1) (DNA topoisomerase II	
-TOP3A	mus-musculus	O70157	Top3a	O70157	3	64	DNA topoisomerase 3-alpha	
+TOP3	yeast	P13099	TOP3	P13099	4	26	DNA topoisomerase 3	
+TOP3A	arabidopsis-thaliana	Q9LVP1	TOP3A	Q9LVP1	7	82	DNA topoisomerase 3-alpha	
+TOP3A	human	Q13472	TOP3A	Q13472	29	359	DNA topoisomerase 3-alpha (EC 5.6.2.1) (DNA topoisomerase II	
+TOP3A	mus-musculus	O70157	Top3a	O70157	12	74	DNA topoisomerase 3-alpha	
 TOP3A	oryza-sativa-subsp-japonica	C7J0A2	TOP3A	C7J0A2	7	92	DNA topoisomerase 3-alpha	
-TOP3A	rattus-norvegicus	D4A6J4	Top3a	D4A6J4	3	58	DNA topoisomerase	
+TOP3A	pan-troglodytes	H2R419	TOP3A	H2R419	9	10	DNA topoisomerase	
+TOP3A	rattus-norvegicus	D4A6J4	Top3a	D4A6J4	12	67	DNA topoisomerase	
+TOP3A	zebrafish	A0A8N7UVT1	top3a	A0A8N7UVT1	7	9	DNA topoisomerase	
 TOP3A	zebrafish	X1WCF3	top3a	X1WCF3	4	55	DNA topoisomerase	
+TOP3A.L	xenopus-laevis	A0A1L8EYN9	top3a.L	A0A1L8EYN9	7	8	DNA topoisomerase	
 TOP3ALPHA	fly	FBgn0040268	Top3alpha	Q9NG98	15	113	DNA topoisomerase 3-alpha (EC 5.6.2.1) (DNA topoisomerase II	
 TOP3ALPHA_1123	fly	FBgn0040268	Top3alpha	Q9NG98	15	113		
-TOP3A_HUMAN	human	Q13472	TOP3A	Q13472	25	355		
+TOP3A_HUMAN	human	Q13472	TOP3A	Q13472	29	359		
 TOP3B	human	O95985	TOP3B	O95985	106	1465	DNA topoisomerase 3-beta-1 (EC 5.6.2.1) (DNA topoisomerase I	
 TOP3B	mus-musculus	Q9Z321	Top3b	Q9Z321	5	33	DNA topoisomerase 3-beta-1	
 TOP3B	oryza-sativa-subsp-japonica	Q0J0S6	TOP3B	Q0J0S6	6	90	DNA topoisomerase 3-beta	
@@ -55,6 +59,8 @@ TOP3B	zebrafish	F1QNX4	top3b	F1QNX4	3	29	DNA topoisomerase
 TOP3B1	human	O95985	TOP3B	O95985	106	1465		
 TOP3BETA	fly	FBgn0026015	Top3beta	O96651	4	45	DNA topoisomerase 3-beta (EC 5.6.2.1) (DNA topoisomerase III	
 TOP3B_HUMAN	human	O95985	TOP3B	O95985	106	1465		
+TOP3_CAEEL	worm	O61660	top-3A	O61660	7	31		
+TOP3_YEAST	yeast	P13099	TOP3	P13099	4	26		
 TOP6A	arabidopsis-thaliana	Q9LZ03	TOP6A	Q9LZ03	2	5	DNA topoisomerase 6 subunit A	
 TOP6A	methanocaldococcus-jannaschii	Q57815	top6A	Q57815	1	1	Type 2 DNA topoisomerase 6 subunit A	
 TOP6B	arabidopsis-thaliana	Q9C5V6	TOP6B	Q9C5V6	3	5	DNA topoisomerase 6 subunit B	
@@ -105,10 +111,10 @@ TOPOISOMERASE	human	O95985	TOP3B	O95985	106	1465	DNA topoisomerase 3-beta-1 (EC 
 TOPOISOMERASE	human	P11387	TOP1	P11387	63	705	DNA topoisomerase 1 (EC 5.6.2.1) (DNA topoisomerase I)	w
 TOPOISOMERASE	human	P11388	TOP2A	P11388	12	537	DNA topoisomerase 2-alpha (EC 5.6.2.2) (DNA topoisomerase II	w
 TOPOISOMERASE	human	Q02880	TOP2B	Q02880	7	252	DNA topoisomerase 2-beta (EC 5.6.2.2) (DNA topoisomerase II,	w
-TOPOISOMERASE	human	Q13472	TOP3A	Q13472	25	355	DNA topoisomerase 3-alpha (EC 5.6.2.1) (DNA topoisomerase II	w
+TOPOISOMERASE	human	Q13472	TOP3A	Q13472	29	359	DNA topoisomerase 3-alpha (EC 5.6.2.1) (DNA topoisomerase II	w
 TOPOISOMERASE	human	Q8N6T0	TOP6BL	Q8N6T0	2	6	Type 2 DNA topoisomerase 6 subunit B-like (TOP6B like initia	w
 TOPOISOMERASE	human	Q92547	TOPBP1	Q92547	78	391	DNA topoisomerase 2-binding protein 1 (DNA topoisomerase II-	w
-TOPOISOMERASE	human	Q969P6	TOP1MT	Q969P6	6	63	DNA topoisomerase I, mitochondrial (TOP1mt) (EC 5.6.2.1)	w
+TOPOISOMERASE	human	Q969P6	TOP1MT	Q969P6	12	69	DNA topoisomerase I, mitochondrial (TOP1mt) (EC 5.6.2.1)	w
 TOPOISOMERASE	human	Q9NS56	TOPORS	Q9NS56	37	185	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
 TOPOISOMERASE	virus	A0A068EF33	pepv_151	A0A068EF33	7	240	DNA topoisomerase	w
 TOPOISOMERASE	virus	A0A068EGA2	fep_144	A0A068EGA2	3	221	DNA topoisomerase	w
@@ -166,11 +172,11 @@ TOPOISOMERASE	virus	U3UBD1	H6R	U3UBD1	2	140	DNA topoisomerase	w
 TOPOISOMERASE	virus	W6JIX1		W6JIX1	8	241	DNA topoisomerase	w
 TOPOISOMERASE	worm	H1UBJ9	top-3b	H1UBJ9	3	23	DNA topoisomerase	w
 TOPOISOMERASE	worm	O17966	top-1	O17966	2	42	DNA topoisomerase 1	w
-TOPOISOMERASE	worm	O61660	top-3A	O61660	5	29	DNA topoisomerase 3	w
+TOPOISOMERASE	worm	O61660	top-3A	O61660	7	31	DNA topoisomerase 3	w
 TOPOISOMERASE	worm	P34534	R05D3.12	P34534	0	10	Putative DNA topoisomerase 2, mitochondrial	w
 TOPOISOMERASE	yeast	P04786	TOP1	P04786	10	76	DNA topoisomerase 1	w
 TOPOISOMERASE	yeast	P06786	TOP2	P06786	0	78	DNA topoisomerase 2	w
-TOPOISOMERASE	yeast	P13099	TOP3	P13099	3	25	DNA topoisomerase 3	w
+TOPOISOMERASE	yeast	P13099	TOP3	P13099	4	26	DNA topoisomerase 3	w
 TOPOISOMERASE	yeast	P38854	TDA11	P38854	0	7	Topoisomerase I damage affected protein 11	w
 TOPOISOMERASE	yeast	P40045	TDA2	P40045	2	16	Topoisomerase I damage affected protein 2	w
 TOPOISOMERASE	yeast	P47153	TDA4	P47153	0	10	Topoisomerase I damage affected protein 4	w
@@ -179,6 +185,7 @@ TOPOISOMERASE	yeast	P53882	TDA7	P53882	2	22	Topoisomerase I damage affected prot
 TOPOISOMERASE	yeast	Q02208	TOF2	Q02208	2	38	Topoisomerase 1-associated factor 2	w
 TOPOISOMERASE	yeast	Q03533	TDA1	Q03533	3	42	Serine/threonine-protein kinase TDA1 (Topoisomerase I damage	w
 TOPOISOMERASE	yeast	Q6B2U8	TDA8	Q6B2U8	0	2	Topoisomerase I damage affected protein 8	w
+TOPOISOMERASE	zebrafish	A0A8N7UVT1	top3a	A0A8N7UVT1	7	9	DNA topoisomerase	w
 TOPOISOMERASE	zebrafish	F1QNX4	top3b	F1QNX4	3	29	DNA topoisomerase	w
 TOPOISOMERASE	zebrafish	Q1ED17	top1a	Q1ED17	1	34	DNA topoisomerase I	w
 TOPOISOMERASE	zebrafish	X1WCF3	top3a	X1WCF3	4	55	DNA topoisomerase	w

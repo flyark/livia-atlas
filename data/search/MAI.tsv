@@ -8,10 +8,10 @@ MAID	human	O95273	CCNDBP1	O95273	19	213	Cyclin-D1-binding protein 1 (Grap2 and c
 MAIL	human	Q9BYH8	NFKBIZ	Q9BYH8	15	68		
 MAIL1	arabidopsis-thaliana	Q9SK32	MAIL1	Q9SK32	0	10	Protein MAIN-LIKE 1	
 MAIL3	arabidopsis-thaliana	Q9LNG5	MAIL3	Q9LNG5	0	11	Serine/threonine-protein phosphatase 7 long form homolog	
-MAILLARD	human	Q99497	PARK7	Q99497	8	515	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
+MAILLARD	human	Q99497	PARK7	Q99497	12	519	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
 MAIN	arabidopsis-thaliana	Q9LMT7	MAIN	Q9LMT7	0	10	Protein MAINTENANCE OF MERISTEMS	
 MAINTE	fly	FBgn0067628	CG33331	Q8INF2	0	6	Phosphatidate cytidylyltransferase, mitochondrial (EC 2.7.7.	w
-MAINTE	human	Q96BW9	TAMM41	Q96BW9	4	130	Phosphatidate cytidylyltransferase, mitochondrial (EC 2.7.7.	w
+MAINTE	human	Q96BW9	TAMM41	Q96BW9	6	132	Phosphatidate cytidylyltransferase, mitochondrial (EC 2.7.7.	w
 MAINTENANCE	fly	FBgn0014861	Mcm2	P49735	9	110	DNA replication licensing factor Mcm2 (EC 3.6.4.12) (Minichr	w
 MAINTENANCE	fly	FBgn0015391	glu	Q9V3A7	19	127	Structural maintenance of chromosomes protein	w
 MAINTENANCE	fly	FBgn0015615	SMC3	Q9VXE9	12	62	Structural maintenance of chromosomes protein	w
@@ -44,14 +44,14 @@ MAINTENANCE	human	Q8WV22	NSMCE1	Q8WV22	45	139	Non-structural maintenance of chro
 MAINTENANCE	human	Q96MF7	NSMCE2	Q96MF7	20	153	E3 SUMO-protein ligase NSE2 (EC 2.3.2.-) (E3 SUMO-protein tr	w
 MAINTENANCE	human	Q96MG7	NSMCE3	Q96MG7	12	119	Non-structural maintenance of chromosomes element 3 homolog 	w
 MAINTENANCE	human	Q96SB8	SMC6	Q96SB8	37	294	Structural maintenance of chromosomes protein 6 (SMC protein	w
-MAINTENANCE	human	Q9BQP7	MGME1	Q9BQP7	16	125	Mitochondrial genome maintenance exonuclease 1 (EC 3.1.-.-)	w
+MAINTENANCE	human	Q9BQP7	MGME1	Q9BQP7	17	126	Mitochondrial genome maintenance exonuclease 1 (EC 3.1.-.-)	w
 MAINTENANCE	human	Q9BTE3	MCMBP	Q9BTE3	17	165	Mini-chromosome maintenance complex-binding protein (MCM-BP)	w
 MAINTENANCE	human	Q9NTJ3	SMC4	Q9NTJ3	38	532	Structural maintenance of chromosomes protein 4 (SMC protein	w
 MAINTENANCE	human	Q9NXL9	MCM9	Q9NXL9	9	131	DNA helicase MCM9 (hMCM9) (EC 5.6.2.4) (DNA 3'-5' helicase M	w
 MAINTENANCE	human	Q9NXX6	NSMCE4A	Q9NXX6	44	131	Non-structural maintenance of chromosomes element 4 homolog 	w
 MAINTENANCE	human	Q9UJA3	MCM8	Q9UJA3	6	131	DNA helicase MCM8 (EC 5.6.2.4) (DNA 3'-5' helicase MCM8) (Mi	w
 MAINTENANCE	human	Q9UQE7	SMC3	Q9UQE7	32	645	Structural maintenance of chromosomes protein 3 (SMC protein	w
-MAINTENANCE	worm	A9QY30	C27H6.9	A9QY30	0	6	Mitochondrial genome maintenance exonuclease 1	w
+MAINTENANCE	worm	A9QY30	C27H6.9	A9QY30	1	7	Mitochondrial genome maintenance exonuclease 1	w
 MAINTENANCE	worm	B2FDA8	smc-3	B2FDA8	9	51	Structural maintenance of chromosomes protein 3	w
 MAINTENANCE	worm	G5EG17	smc-6	G5EG17	4	23	Structural maintenance of chromosomes protein 6 homolog smc-	w
 MAINTENANCE	worm	O01789	him-1	O01789	8	36	Structural maintenance of chromosomes protein 1	w
@@ -89,12 +89,14 @@ MAINTENANCE	zebrafish	A0AB32THU2	smc1b	A0AB32THU2	12	55	Structural maintenance o
 MAINTENANCE	zebrafish	B8A5K9	smc2	B8A5K9	11	71	Structural maintenance of chromosomes protein	w
 MAINTENANCE	zebrafish	E7F0X6	smc1a	E7F0X6	15	56	Structural maintenance of chromosomes protein	w
 MAINTENANCE	zebrafish	E7FGC2	smc4	E7FGC2	14	62	Structural maintenance of chromosomes protein	w
+MAINTENANCE	zebrafish	Q5PRC4	im:7154190	Q5PRC4	1	1	Mitochondrial genome maintenance exonuclease 1	w
 MAINTENANCE	zebrafish	Q6DGT7	nsmce1	Q6DGT7	1	18	Non-structural maintenance of chromosomes element 1 homolog	w
 MAINTENANCE	zebrafish	Q6DRM9	smc1al	Q6DRM9	10	55	Structural maintenance of chromosomes protein	w
 MAINTENANCE	zebrafish	Q803A6	mcmbp	Q803A6	7	14	Mini-chromosome maintenance complex-binding protein	w
 MAINTENANCE-RELATED	fly	FBgn0003227	rec	Q9VF30	2	49	DNA replication licensing factor REC (Protein mini chromosom	w
-MAIP1	human	Q8WWC4	MAIP1	Q8WWC4	9	131	m-AAA protease-interacting protein 1, mitochondrial (Matrix 	
-MAIP1	mus-musculus	Q8BHE8	Maip1	Q8BHE8	1	5	m-AAA protease-interacting protein 1, mitochondrial	
-MAIP1	rattus-norvegicus	Q6AY04	Maip1	Q6AY04	1	5	m-AAA protease-interacting protein 1, mitochondrial	
+MAIP1	human	Q8WWC4	MAIP1	Q8WWC4	10	132	m-AAA protease-interacting protein 1, mitochondrial (Matrix 	
+MAIP1	mus-musculus	Q8BHE8	Maip1	Q8BHE8	2	6	m-AAA protease-interacting protein 1, mitochondrial	
+MAIP1	rattus-norvegicus	Q6AY04	Maip1	Q6AY04	2	6	m-AAA protease-interacting protein 1, mitochondrial	
 MAIP1	zebrafish	Q32LQ2	maip1	Q32LQ2	1	6	M-AAA protease-interacting protein 1, mitochondrial	
-MAIP1_HUMAN	human	Q8WWC4	MAIP1	Q8WWC4	9	131		
+MAIP1.S	xenopus-laevis	A0A1L8EPP2	maip1.S	A0A1L8EPP2	1	1	m-AAA protease-interacting protein 1, mitochondrial isoform 	
+MAIP1_HUMAN	human	Q8WWC4	MAIP1	Q8WWC4	10	132		

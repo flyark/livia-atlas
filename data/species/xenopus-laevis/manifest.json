@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "xenopus-laevis",
+ "species": {
+  "name": "Xenopus laevis",
+  "taxon": 8355
+ },
+ "datasets": [
+  {
+   "id": "mitomatch-8355",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Xenopus laevis orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 797,
+    "pairs": 1635,
+    "predictions": 1635,
+    "runs": 1635,
+    "pairsFpr10": 1494,
+    "pairsFpr5": 1253,
+    "pairsFpr1": 511
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 797,
+  "pairs": 1635,
+  "predictions": 1635,
+  "runs": 1635,
+  "pairsFpr10": 1494,
+  "pairsFpr5": 1253,
+  "pairsFpr1": 511,
+  "pairsInSeveral": 0,
+  "pairsTested": 1635
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

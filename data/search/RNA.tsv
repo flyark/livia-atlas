@@ -126,7 +126,7 @@ RNA-BINDING	human	Q07666	KHDRBS1	Q07666	32	395	KH domain-containing, RNA-binding
 RNA-BINDING	human	Q12906	ILF3	Q12906	72	775	Interleukin enhancer-binding factor 3 (Double-stranded RNA-b	w
 RNA-BINDING	human	Q12926	ELAVL2	Q12926	18	223	ELAV-like protein 2 (ELAV-like neuronal protein 1) (Hu-antig	w
 RNA-BINDING	human	Q13395	TARBP1	Q13395	5	110	tRNA (guanosine(18)-2'-O)-methyltransferase TARBP1 (EC 2.1.1	w
-RNA-BINDING	human	Q13825	AUH	Q13825	5	367	Methylglutaconyl-CoA hydratase, mitochondrial (3-MG-CoA hydr	w
+RNA-BINDING	human	Q13825	AUH	Q13825	10	372	Methylglutaconyl-CoA hydratase, mitochondrial (3-MG-CoA hydr	w
 RNA-BINDING	human	Q14011	CIRBP	Q14011	13	200	Cold-inducible RNA-binding protein (A18 hnRNP) (Glycine-rich	w
 RNA-BINDING	human	Q14103	HNRNPD	Q14103	62	1010	Heterogeneous nuclear ribonucleoprotein D0 (hnRNP D0) (AU-ri	w
 RNA-BINDING	human	Q14498	RBM39	Q14498	163	1074	RNA-binding protein 39 (CAPER alpha) (CAPERalpha) (Hepatocel	w
@@ -191,7 +191,7 @@ RNA-BINDING	human	Q9BTD8	RBM42	Q9BTD8	39	428	RNA-binding protein 42 (RNA-binding
 RNA-BINDING	human	Q9BWF3	RBM4	Q9BWF3	17	257	RNA-binding protein 4 (Lark homolog) (hLark) (RNA-binding mo	w
 RNA-BINDING	human	Q9BX46	RBM24	Q9BX46	2	48	RNA-binding protein 24 (RNA-binding motif protein 24) (RNA-b	w
 RNA-BINDING	human	Q9BZC1	CELF4	Q9BZC1	2	47	CUGBP Elav-like family member 4 (CELF-4) (Bruno-like protein	w
-RNA-BINDING	human	Q9GZT3	SLIRP	Q9GZT3	25	342	SRA stem-loop-interacting RNA-binding protein, mitochondrial	w
+RNA-BINDING	human	Q9GZT3	SLIRP	Q9GZT3	26	343	SRA stem-loop-interacting RNA-binding protein, mitochondrial	w
 RNA-BINDING	human	Q9H0Z9	RBM38	Q9H0Z9	9	66	RNA-binding protein 38 (CLL-associated antigen KW-5) (HSRNAS	w
 RNA-BINDING	human	Q9H6E5	TUT1	Q9H6E5	17	196	Speckle targeted PIP5K1A-regulated poly(A) polymerase (Star-	w
 RNA-BINDING	human	Q9H6T0	ESRP2	Q9H6T0	5	147	Epithelial splicing regulatory protein 2 (RNA-binding motif 	w
@@ -276,6 +276,7 @@ RNA-BINDING	zebrafish	A0A0R4IYE4	rbm26	A0A0R4IYE4	5	9	RNA-binding motif protein 
 RNA-BINDING	zebrafish	A0A8M1N3A9	rbm41	A0A8M1N3A9	24	226	RNA-binding protein 41	w
 RNA-BINDING	zebrafish	A0A8M1N732	kin	A0A8M1N732	6	48	DNA/RNA-binding protein KIN17	w
 RNA-BINDING	zebrafish	A0A8M1NHK4	rbm47	A0A8M1NHK4	7	74	RNA-binding protein 47	w
+RNA-BINDING	zebrafish	A0A8M1P7F2	slirp	A0A8M1P7F2	1	1	SRA stem-loop-interacting RNA-binding protein, mitochondrial	w
 RNA-BINDING	zebrafish	A0A8M1PJS2	stau1	A0A8M1PJS2	2	32	Double-stranded RNA-binding protein Staufen homolog 1	w
 RNA-BINDING	zebrafish	A0A8M2B8G8	zfr2	A0A8M2B8G8	3	5	Zinc finger RNA-binding protein	w
 RNA-BINDING	zebrafish	A0A8M2BDH1	rbm6	A0A8M2BDH1	4	25	RNA-binding protein 5 isoform X1	w
@@ -296,7 +297,7 @@ RNA-BINDING	zebrafish	F1QF98	rbm19	F1QF98	3	10	Probable RNA-binding protein 19	w
 RNA-BINDING	zebrafish	F1R0M4	fus	F1R0M4	1	44	RNA-binding protein FUS	w
 RNA-BINDING	zebrafish	F1RAH8	rbmx2	F1RAH8	3	112	RNA-binding motif protein, X-linked 2	w
 RNA-BINDING	zebrafish	F1RCY7	rbm15	F1RCY7	3	18	RNA-binding protein 15	w
-RNA-BINDING	zebrafish	F1RDX1	auh	F1RDX1	0	119	AU RNA-binding protein/enoyl-CoA hydratase	w
+RNA-BINDING	zebrafish	F1RDX1	auh	F1RDX1	4	123	AU RNA-binding protein/enoyl-CoA hydratase	w
 RNA-BINDING	zebrafish	F8W2E8	rbm27	F8W2E8	5	9	RNA-binding motif protein 27	w
 RNA-BINDING	zebrafish	I3ISV3	nob1	I3ISV3	3	74	RNA-binding protein NOB1	w
 RNA-BINDING	zebrafish	Q08BH5	rbm46	Q08BH5	9	70	Probable RNA-binding protein 46	w
@@ -720,7 +721,7 @@ RNA-SPECIFIC	zebrafish	A0A8M1P8J0	adar	A0A8M1P8J0	2	25	Adenosine deaminase RNA-s
 RNA-SPECIFIC	zebrafish	A0A8N7T6M9	adarb2	A0A8N7T6M9	2	9	Double-stranded RNA-specific editase B2 isoform X1	w
 RNA-SPECIFIC	zebrafish	E9QJK5	adarb1b	E9QJK5	1	5	Adenosine deaminase RNA-specific B1b	w
 RNA-SPLICING	fly	FBgn0032781	RtcB	Q9VIW7	2	14	RNA-splicing ligase RtcB homolog (EC 6.5.1.8) (3'-phosphate/	w
-RNA-SPLICING	human	Q96A46	SLC25A28	Q96A46	2	62	Mitoferrin-2 (Mitochondrial RNA-splicing protein 3/4 homolog	w
+RNA-SPLICING	human	Q96A46	SLC25A28	Q96A46	3	63	Mitoferrin-2 (Mitochondrial RNA-splicing protein 3/4 homolog	w
 RNA-SPLICING	human	Q9Y3I0	RTCB	Q9Y3I0	23	346	RNA-splicing ligase RTCB (EC 6.5.1.8) (3'-phosphate/5'-hydro	w
 RNA-SPLICING	worm	P90838	rtcb-1	P90838	2	6	RNA-splicing ligase RtcB homolog	w
 RNA-SPLICING	yeast	P07266	MRS1	P07266	0	9	Mitochondrial RNA-splicing protein MRS1	w
@@ -762,8 +763,8 @@ RNASE	fly	FBgn0031252	CG13690	Q9VPP5	4	37	Ribonuclease H2 subunit A (RNase H2 su
 RNASE	fly	FBgn0034351	rswl	Q7JUX9	2	29	Mitochondrial ribonuclease P protein 1 homolog (Mitochondria	w
 RNASE	fly	FBgn0259742	CG42360	Q9W135	7	64	RNase NYN domain-containing protein	w
 RNASE	fly	FBgn0262116	RNASEK	Q8MSF5	13	103	Ribonuclease kappa (RNase K) (RNase kappa) (EC 3.1.-.-)	w
-RNASE	human	O15091	PRORP	O15091	11	186	Mitochondrial ribonuclease P catalytic subunit (EC 3.1.26.5)	w
-RNASE	human	O60930	RNASEH1	O60930	10	75	Ribonuclease H1 (RNase H1) (EC 3.1.26.4) (Ribonuclease H typ	w
+RNASE	human	O15091	PRORP	O15091	13	188	Mitochondrial ribonuclease P catalytic subunit (EC 3.1.26.5)	w
+RNASE	human	O60930	RNASEH1	O60930	11	76	Ribonuclease H1 (RNase H1) (EC 3.1.26.4) (Ribonuclease H typ	w
 RNASE	human	O75792	RNASEH2A	O75792	9	161	Ribonuclease H2 subunit A (RNase H2 subunit A) (EC 3.1.26.4)	w
 RNASE	human	O75818	RPP40	O75818	7	115	Ribonuclease P protein subunit p40 (RNaseP protein p40) (RNa	w
 RNASE	human	P03950	ANG	P03950	26	238	Angiogenin (EC 3.1.27.-) (Ribonuclease 5) (RNase 5)	w
@@ -777,13 +778,13 @@ RNASE	human	P78346	RPP30	P78346	18	172	Ribonuclease P protein subunit p30 (RNase
 RNASE	human	Q05823	RNASEL	Q05823	4	352	2-5A-dependent ribonuclease (2-5A-dependent RNase) (EC 3.1.2	w
 RNASE	human	Q5TBB1	RNASEH2B	Q5TBB1	10	97	Ribonuclease H2 subunit B (RNase H2 subunit B) (Aicardi-Gout	w
 RNASE	human	Q6P5S7	RNASEK	Q6P5S7	10	92	Ribonuclease kappa (RNase K) (RNase kappa) (EC 3.1.-.-) (V-t	w
-RNASE	human	Q7L0Y3	TRMT10C	Q7L0Y3	18	235	tRNA methyltransferase 10 homolog C (HBV pre-S2 trans-regula	w
+RNASE	human	Q7L0Y3	TRMT10C	Q7L0Y3	19	237	tRNA methyltransferase 10 homolog C (HBV pre-S2 trans-regula	w
 RNASE	human	Q8N5L8	RPP25L	Q8N5L8	14	153	Ribonuclease P protein subunit p25-like protein (RNase P pro	w
 RNASE	human	Q8TAA1	RNASE11	Q8TAA1	2	24	Putative inactive ribonuclease 11 (RNase 11)	w
 RNASE	human	Q8TDE3	RNASE8	Q8TDE3	2	26	Ribonuclease 8 (RNase 8) (EC 3.1.27.-)	w
 RNASE	human	Q8TDP1	RNASEH2C	Q8TDP1	9	77	Ribonuclease H2 subunit C (RNase H2 subunit C) (Aicardi-Gout	w
 RNASE	human	Q93091	RNASE6	Q93091	25	181	Ribonuclease K6 (RNase K6) (EC 3.1.27.-)	w
-RNASE	human	Q9BQ52	ELAC2	Q9BQ52	5	262	Zinc phosphodiesterase ELAC protein 2 (EC 3.1.26.11) (ElaC h	w
+RNASE	human	Q9BQ52	ELAC2	Q9BQ52	6	263	Zinc phosphodiesterase ELAC protein 2 (EC 3.1.26.11) (ElaC h	w
 RNASE	human	Q9BQ61	TRIR	Q9BQ61	13	155	Telomerase RNA component-interacting RNase (EC 3.1.13.-) (Ex	w
 RNASE	human	Q9BUL9	RPP25	Q9BUL9	16	120	Ribonuclease P protein subunit p25 (RNase P protein subunit 	w
 RNASE	human	Q9H1E1	RNASE7	Q9H1E1	26	213	Ribonuclease 7 (RNase 7) (EC 3.1.27.-) (Skin-derived antimic	w
@@ -826,10 +827,13 @@ RNASE6PL	human	O00584	RNASET2	O00584	7	88
 RNASE7	human	Q9H1E1	RNASE7	Q9H1E1	26	213	Ribonuclease 7 (RNase 7) (EC 3.1.27.-) (Skin-derived antimic	
 RNASE8	human	Q8TDE3	RNASE8	Q8TDE3	2	26	Ribonuclease 8 (RNase 8) (EC 3.1.27.-)	
 RNASE9	human	P60153	RNASE9	P60153	0	9	Inactive ribonuclease-like protein 9	
-RNASEH1	human	O60930	RNASEH1	O60930	10	75	Ribonuclease H1 (RNase H1) (EC 3.1.26.4) (Ribonuclease H typ	
-RNASEH1	mus-musculus	O70338	Rnaseh1	O70338	2	6	Ribonuclease H1	
-RNASEH1	rattus-norvegicus	Q5BK46	Rnaseh1	Q5BK46	1	8	Ribonuclease H1	
+RNASEH1	human	O60930	RNASEH1	O60930	11	76	Ribonuclease H1 (RNase H1) (EC 3.1.26.4) (Ribonuclease H typ	
+RNASEH1	mus-musculus	O70338	Rnaseh1	O70338	3	7	Ribonuclease H1	
+RNASEH1	pan-troglodytes	H2QHD3	RNASEH1	H2QHD3	1	1	Ribonuclease H1	
+RNASEH1	rattus-norvegicus	Q5BK46	Rnaseh1	Q5BK46	2	9	Ribonuclease H1	
+RNASEH1	zebrafish	A0A8M1N0V4	rnaseh1	A0A8M1N0V4	1	1	Ribonuclease H1	
 RNASEH1	zebrafish	Q6DG94	rnaseh1	Q6DG94	1	9	Ribonuclease H1	
+RNASEH1.L	xenopus-laevis	Q4V7K6	rnaseh1.L	Q4V7K6	1	1	Ribonuclease H1	
 RNASEH2A	dictyostelium-discoideum	Q54D13	rnaseh2A	Q54D13	2	6	Ribonuclease H2 subunit A	
 RNASEH2A	human	O75792	RNASEH2A	O75792	9	161	Ribonuclease H2 subunit A (RNase H2 subunit A) (EC 3.1.26.4)	
 RNASEH2A	mus-musculus	Q9CWY8	Rnaseh2a	Q9CWY8	5	30	Ribonuclease H2 subunit A	

@@ -38,7 +38,7 @@ PSENEN	zebrafish	Q8JHF0	psenen	Q8JHF0	2	17	Gamma-secretase subunit PEN-2
 PSEUDO	human	Q13308	PTK7	Q13308	61	415	Inactive tyrosine-protein kinase 7 (Colon carcinoma kinase 4	w
 PSEUDO	human	Q5EG05	CARD16	Q5EG05	11	127	Caspase recruitment domain-containing protein 16 (Caspase re	w
 PSEUDOAUTOSOMAL	human	O15266	SHOX	O15266	147	388	Short stature homeobox protein (Pseudoautosomal homeobox-con	w
-PSEUDOAUTOSOMAL	human	O43824	GTPBP6	O43824	6	213	Putative GTP-binding protein 6 (Pseudoautosomal GTP-binding 	w
+PSEUDOAUTOSOMAL	human	O43824	GTPBP6	O43824	7	214	Putative GTP-binding protein 6 (Pseudoautosomal GTP-binding 	w
 PSEUDOCHOLINESTERASE	human	P06276	BCHE	P06276	8	329	Cholinesterase (EC 3.1.1.8) (Acylcholine acylhydrolase) (But	w
 PSEUDOCLEAVAGE	worm	Q09314	nop-1	Q09314	0	3	Pseudocleavage protein nop-1	w
 PSEUDOG	human	Q5VUJ5	AGAP7P	Q5VUJ5	1	9	Putative Arf-GAP with GTPase, ANK repeat and PH domain-conta	w
@@ -195,15 +195,15 @@ PSEUDOURIDINE	fly	FBgn0032256	RluA-2	Q9VKU8	2	44	LD40728p (RluA pseudouridine sy
 PSEUDOURIDINE	fly	FBgn0038811	Pus1	E1JIR1	0	6	Pseudouridine synthase 1, isoform B	w
 PSEUDOURIDINE	fly	FBgn0051719	RluA-1	Q9VKV0	5	31	FI04540p (RluA pseudouridine synthase 1, isoform A) (RluA ps	w
 PSEUDOURIDINE	fly	FBgn0083976	CG34140	Q0E8K6	0	8	tRNA pseudouridine synthase (EC 5.4.99.12)	w
-PSEUDOURIDINE	human	O95900	TRUB2	O95900	15	341	Pseudouridylate synthase TRUB2, mitochondrial (EC 5.4.99.-) 	w
+PSEUDOURIDINE	human	O95900	TRUB2	O95900	19	345	Pseudouridylate synthase TRUB2, mitochondrial (EC 5.4.99.-) 	w
 PSEUDOURIDINE	human	Q3MIT2	PUS10	Q3MIT2	2	54	tRNA pseudouridine synthase Pus10 (Hup10) (EC 5.4.99.25) (Co	w
-PSEUDOURIDINE	human	Q6P087	RPUSD3	Q6P087	15	244	Mitochondrial mRNA pseudouridine synthase RPUSD3 (EC 5.4.99.	w
-PSEUDOURIDINE	human	Q8N0Z8	PUSL1	Q8N0Z8	8	133	tRNA pseudouridine synthase-like 1 (EC 5.4.99.12) (tRNA pseu	w
+PSEUDOURIDINE	human	Q6P087	RPUSD3	Q6P087	40	268	Mitochondrial mRNA pseudouridine synthase RPUSD3 (EC 5.4.99.	w
+PSEUDOURIDINE	human	Q8N0Z8	PUSL1	Q8N0Z8	9	135	tRNA pseudouridine synthase-like 1 (EC 5.4.99.12) (tRNA pseu	w
 PSEUDOURIDINE	human	Q8WWH5	TRUB1	Q8WWH5	7	86	Pseudouridylate synthase TRUB1 (EC 5.4.99.-) (TruB pseudouri	w
 PSEUDOURIDINE	human	Q92979	EMG1	Q92979	11	249	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1	w
 PSEUDOURIDINE	human	Q9BZE2	PUS3	Q9BZE2	1	46	tRNA pseudouridine(38/39) synthase (EC 5.4.99.45) (tRNA pseu	w
 PSEUDOURIDINE	human	Q9UJJ7	RPUSD1	Q9UJJ7	7	89	Pseudouridylate synthase RPUSD1 (EC 5.4.99.-) (RNA pseudouri	w
-PSEUDOURIDINE	human	Q9Y606	PUS1	Q9Y606	7	158	Pseudouridylate synthase 1 homolog (EC 5.4.99.-) (tRNA pseud	w
+PSEUDOURIDINE	human	Q9Y606	PUS1	Q9Y606	8	159	Pseudouridylate synthase 1 homolog (EC 5.4.99.-) (tRNA pseud	w
 PSEUDOURIDINE	worm	Q09524	tag-124	Q09524	0	11	Probable tRNA pseudouridine synthase tag-124	w
 PSEUDOURIDINE	worm	Q17426	B0024.11	Q17426	1	30	Putative pseudouridine synthase B0024.11	w
 PSEUDOURIDINE	worm	Q95XD5	CELE_Y73B6BL.29	Q95XD5	0	1	tRNA pseudouridine synthase	w
@@ -216,29 +216,31 @@ PSEUDOURIDINE	yeast	Q06244	PUS5	Q06244	1	22	21S rRNA pseudouridine(2819) synthas
 PSEUDOURIDINE	yeast	Q08647	PUS7	Q08647	4	74	Multisubstrate pseudouridine synthase 7	w
 PSEUDOURIDINE	yeast	Q12069	PUS9	Q12069	0	27	tRNA pseudouridine(32) synthase, mitochondrial	w
 PSEUDOURIDINE	yeast	Q12211	PUS1	Q12211	0	33	tRNA pseudouridine synthase 1	w
-PSEUDOURIDINE	zebrafish	A0A8M1N020	trub2	A0A8M1N020	0	43	Mitochondrial mRNA pseudouridine synthase TRUB2	w
+PSEUDOURIDINE	zebrafish	A0A8M1N020	trub2	A0A8M1N020	3	46	Mitochondrial mRNA pseudouridine synthase TRUB2	w
+PSEUDOURIDINE	zebrafish	A0A8M1N3B0	pus1	A0A8M1N3B0	1	1	tRNA pseudouridine synthase A, mitochondrial	w
+PSEUDOURIDINE	zebrafish	A0A8N7TE54	pusl1	A0A8N7TE54	0	1	tRNA pseudouridine synthase	w
 PSEUDOURIDINE	zebrafish	F1QJL2	pusl1	F1QJL2	0	46	tRNA pseudouridine synthase	w
 PSEUDOURIDINE-5	fly	FBgn0019982	Gs1l	Q94529	1	2	Probable pseudouridine-5'-phosphatase (EC 3.1.3.96) (GS1-lik	w
 PSEUDOURIDINE-5	human	Q08623	PUDP	Q08623	9	186	Pseudouridine-5'-phosphatase (EC 3.1.3.96) (Haloacid dehalog	w
 PSEUDOURIDINE-5	yeast	Q86ZR7	YKL033W-A	Q86ZR7	0	11	Probable pseudouridine-5'-phosphatase YKL033W-A	w
 PSEUDOURIDINE-N1	fly	FBgn0029714	CG3527	Q9W4J5	8	161	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1	w
 PSEUDOURIDYLATE	fly	FBgn0035901	Pus7	Q9VSK9	6	64	Pseudouridylate synthase 7 homolog (EC 5.4.99.-)	w
-PSEUDOURIDYLATE	human	O95900	TRUB2	O95900	15	341	Pseudouridylate synthase TRUB2, mitochondrial (EC 5.4.99.-) 	w
-PSEUDOURIDYLATE	human	Q6P087	RPUSD3	Q6P087	15	244	Mitochondrial mRNA pseudouridine synthase RPUSD3 (EC 5.4.99.	w
+PSEUDOURIDYLATE	human	O95900	TRUB2	O95900	19	345	Pseudouridylate synthase TRUB2, mitochondrial (EC 5.4.99.-) 	w
+PSEUDOURIDYLATE	human	Q6P087	RPUSD3	Q6P087	40	268	Mitochondrial mRNA pseudouridine synthase RPUSD3 (EC 5.4.99.	w
 PSEUDOURIDYLATE	human	Q8IZ73	RPUSD2	Q8IZ73	4	109	Pseudouridylate synthase RPUSD2 (EC 5.4.99.-) (EC 5.4.99.28)	w
-PSEUDOURIDYLATE	human	Q8N0Z8	PUSL1	Q8N0Z8	8	133	tRNA pseudouridine synthase-like 1 (EC 5.4.99.12) (tRNA pseu	w
+PSEUDOURIDYLATE	human	Q8N0Z8	PUSL1	Q8N0Z8	9	135	tRNA pseudouridine synthase-like 1 (EC 5.4.99.12) (tRNA pseu	w
 PSEUDOURIDYLATE	human	Q8WWH5	TRUB1	Q8WWH5	7	86	Pseudouridylate synthase TRUB1 (EC 5.4.99.-) (TruB pseudouri	w
-PSEUDOURIDYLATE	human	Q96CM3	RPUSD4	Q96CM3	12	299	Pseudouridylate synthase RPUSD4, mitochondrial (EC 5.4.99.-)	w
+PSEUDOURIDYLATE	human	Q96CM3	RPUSD4	Q96CM3	18	305	Pseudouridylate synthase RPUSD4, mitochondrial (EC 5.4.99.-)	w
 PSEUDOURIDYLATE	human	Q96PZ0	PUS7	Q96PZ0	13	234	Pseudouridylate synthase 7 homolog (EC 5.4.99.-)	w
 PSEUDOURIDYLATE	human	Q9BZE2	PUS3	Q9BZE2	1	46	tRNA pseudouridine(38/39) synthase (EC 5.4.99.45) (tRNA pseu	w
 PSEUDOURIDYLATE	human	Q9H0K6	PUS7L	Q9H0K6	6	122	Pseudouridylate synthase PUS7L (EC 5.4.99.-) (Pseudouridylat	w
 PSEUDOURIDYLATE	human	Q9UJJ7	RPUSD1	Q9UJJ7	7	89	Pseudouridylate synthase RPUSD1 (EC 5.4.99.-) (RNA pseudouri	w
-PSEUDOURIDYLATE	human	Q9Y606	PUS1	Q9Y606	7	158	Pseudouridylate synthase 1 homolog (EC 5.4.99.-) (tRNA pseud	w
-PSEUDOURIDYLATE	worm	Q9XXN0	pus-1	Q9XXN0	0	2	Pseudouridylate synthase 1 homolog	w
+PSEUDOURIDYLATE	human	Q9Y606	PUS1	Q9Y606	8	159	Pseudouridylate synthase 1 homolog (EC 5.4.99.-) (tRNA pseud	w
+PSEUDOURIDYLATE	worm	Q9XXN0	pus-1	Q9XXN0	1	3	Pseudouridylate synthase 1 homolog	w
 PSEUDOURIDYLATE	zebrafish	A0A8M1P3Z9	rpusd2	A0A8M1P3Z9	7	134	Pseudouridylate synthase RPUSD2	w
 PSEUDOURIDYLATE	zebrafish	B1H1H9	pus7	B1H1H9	4	92	Pseudouridylate synthase 7 homolog	w
 PSEUDOURIDYLATE	zebrafish	B3DHG0	trub1	B3DHG0	3	57	Pseudouridylate synthase TRUB1	w
 PSEUDOURIDYLATE	zebrafish	F1QWW1	pus1	F1QWW1	0	19	Pseudouridylate synthase 1 homolog	w
 PSEUDOURIDYLATE	zebrafish	Q08C69	rpusd1	Q08C69	4	134	RNA pseudouridylate synthase domain-containing protein 1	w
 PSEUDOURIDYLATE	zebrafish	Q1L8I0	pus7l	Q1L8I0	3	86	Pseudouridylate synthase PUS7L	w
-PSEUDOURIDYLATE	zebrafish	Q6DBR0	rpusd4	Q6DBR0	3	138	Pseudouridylate synthase RPUSD4, mitochondrial	w
+PSEUDOURIDYLATE	zebrafish	Q6DBR0	rpusd4	Q6DBR0	4	139	Pseudouridylate synthase RPUSD4, mitochondrial	w

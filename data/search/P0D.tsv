@@ -18,7 +18,7 @@ P0DI80	human	P0DI80	ERLN	P0DI80	9	35	Endoregulin (ELN) (Small integral membrane 
 P0DI81	human	P0DI81	TRAPPC2	P0DI81	31	476	Trafficking protein particle complex subunit 2 (Sedlin)	
 P0DI82	human	P0DI82	TRAPPC2B	P0DI82	22	464	Trafficking protein particle complex subunit 2B (MBP-1-inter	
 P0DI83	human	P0DI83	RAB34	P0DI83	3	20	Ras-related protein Rab-34, isoform NARR (Nine amino-acid re	
-P0DJ07	human	P0DJ07	PET100	P0DJ07	40	133	Protein PET100 homolog, mitochondrial	
+P0DJ07	human	P0DJ07	PET100	P0DJ07	41	134	Protein PET100 homolog, mitochondrial	
 P0DJ27	dictyostelium-discoideum	P0DJ27	cofB	P0DJ27	3	10	Cofilin-1B	
 P0DJ93	human	P0DJ93	SMIM13	P0DJ93	6	71	Small integral membrane protein 13	
 P0DJD0	human	P0DJD0	RGPD1	P0DJD0	16	121	RANBP2-like and GRIP domain-containing protein 1 (Ran-bindin	
@@ -28,8 +28,8 @@ P0DJD4	human	P0DJD4	RBMY1C	P0DJD4	0	27	RNA-binding motif protein, Y chromosome, 
 P0DJD7	human	P0DJD7	PGA4	P0DJD7	0	22	Pepsin A-4 (EC 3.4.23.1) (Pepsinogen-4)	
 P0DJD8	human	P0DJD8	PGA3	P0DJD8	0	21	Pepsin A-3 (EC 3.4.23.1) (Pepsinogen-3)	
 P0DJD9	human	P0DJD9	PGA5	P0DJD9	1	30	Pepsin A-5 (EC 3.4.23.1) (Pepsinogen-5)	
-P0DJE0	mus-musculus	P0DJE0	Pet100	P0DJE0	1	2	Protein PET100 homolog, mitochondrial	
-P0DJF2	mus-musculus	P0DJF2	Pet117	P0DJF2	0	2	Protein PET117 homolog, mitochondrial	
+P0DJE0	mus-musculus	P0DJE0	Pet100	P0DJE0	3	4	Protein PET100 homolog, mitochondrial	
+P0DJF2	mus-musculus	P0DJF2	Pet117	P0DJF2	1	3	Protein PET117 homolog, mitochondrial	
 P0DJF3	mus-musculus	P0DJF3	Tmem95	P0DJF3	1	2	Sperm-egg fusion protein TMEM95	
 P0DJG4	human	P0DJG4	SPMAP2L	P0DJG4	0	10	Sperm microtubule associated protein 2-like (Testicular hapl	
 P0DJH9	human	P0DJH9	RD3L	P0DJH9	2	27	Protein RD3-like (Retinal degeneration protein 3-like)	
@@ -87,6 +87,7 @@ P0DKK9	oryza-sativa-subsp-japonica	P0DKK9	RPS10-2	P0DKK9	12	679	Small ribosomal 
 P0DKL6	arabidopsis-thaliana	P0DKL6	SAP130B	P0DKL6	18	287	Spliceosome-associated protein 130 B	
 P0DKL9	human	P0DKL9	ARL14EPL	P0DKL9	8	22	ARL14 effector protein-like	
 P0DKM0	fly	FBgn0261353	Ccdc56	P0DKM0	0	10	Cytochrome c oxidase assembly factor 3, mitochondrial (Coile	
+P0DKR2	rattus-norvegicus	P0DKR2	Tcaim	P0DKR2	5	5	T-cell activation inhibitor, mitochondrial	
 P0DKV0	human	P0DKV0	SPATA31C1	P0DKV0	4	9	Spermatogenesis-associated protein 31C1 (Protein FAM75C1)	
 P0DKX0	human	P0DKX0	ZNF728	P0DKX0	0	63	Zinc finger protein 728	
 P0DKX4	human	P0DKX4	SMIM18	P0DKX4	2	15	Small integral membrane protein 18	
@@ -142,7 +143,8 @@ P0DMW4	human	P0DMW4	SMIM10L2A	P0DMW4	0	11	Small integral membrane protein 10-lik
 P0DMW5	human	P0DMW5	SMIM10L2B	P0DMW5	2	65	Small integral membrane protein 10-like protein 2B	
 P0DN25	human	P0DN25	C1GALT1C1L	P0DN25	2	16	C1GALT1-specific chaperone 1-like protein	
 P0DN26	human	P0DN26	PPIAL4F	P0DN26	48	370	Peptidyl-prolyl cis-trans isomerase A-like 4F (PPIase A-like	
-P0DN34	mus-musculus	P0DN34	Ndufb1	P0DN34	16	101	NADH dehydrogenase	
+P0DN34	mus-musculus	P0DN34	Ndufb1	P0DN34	19	103	NADH dehydrogenase	
+P0DN35	rattus-norvegicus	P0DN35	Ndufb1	P0DN35	4	4	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1	
 P0DN37	human	P0DN37	PPIAL4G	P0DN37	62	397	Peptidyl-prolyl cis-trans isomerase A-like 4G (PPIase A-like	
 P0DN77	human	P0DN77	OPN1MW2	P0DN77	3	9	Medium-wave-sensitive opsin 2 (Green cone photoreceptor pigm	
 P0DN78	human	P0DN78	OPN1MW3	P0DN78	2	6	Medium-wave-sensitive opsin 3 (Green cone photoreceptor pigm	
@@ -290,7 +292,7 @@ P0DPF7	human	P0DPF7	TRBV6-3	P0DPF7	28	72	T cell receptor beta variable 6-3
 P0DPH7	human	P0DPH7	TUBA3C	P0DPH7	46	353	Tubulin alpha-3C chain (EC 3.6.5.-) (Alpha-tubulin 2) (Alpha	
 P0DPH8	human	P0DPH8	TUBA3D	P0DPH8	25	274	Tubulin alpha-3D chain (EC 3.6.5.-) (Alpha-tubulin 3D) [Clea	
 P0DPH9	human	P0DPH9	CXorf51B	P0DPH9	1	16	Uncharacterized protein CXorf51B	
-P0DPI2	human	P0DPI2	GATD3	P0DPI2	3	106	Glutamine amidotransferase-like class 1 domain-containing pr	
+P0DPI2	human	P0DPI2	GATD3	P0DPI2	4	107	Glutamine amidotransferase-like class 1 domain-containing pr	
 P0DPI3	human	P0DPI3	CENPVL2	P0DPI3	1	5	Centromere protein V-like protein 2 (Centromere protein V ps	
 P0DPK2	human	P0DPK2	H3Y1	P0DPK2	64	280	Histone H3.Y (Histone H3.Y1)	
 P0DPK3	human	P0DPK3	NOTCH2NLB	P0DPK3	4	30	Notch homolog 2 N-terminal-like protein B	

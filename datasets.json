@@ -3,58 +3,68 @@
   {
    "id": "human",
    "label": "Human",
-   "name": "Homo sapiens", "taxon": 9606,
+   "name": "Homo sapiens",
+   "taxon": 9606,
    "base": "data/species/human/",
    "datasets": [
     "human-predictomes",
     "human-kinase-tf",
     "human-kinase-kinase",
-    "afdb-het-9606"
+    "afdb-het-9606",
+    "mitomatch-9606"
    ],
    "structs": true
   },
   {
    "id": "fly",
    "label": "Fly",
-   "name": "Drosophila melanogaster", "taxon": 7227,
+   "name": "Drosophila melanogaster",
+   "taxon": 7227,
    "base": "data/species/fly/",
    "datasets": [
     "flypredictome",
-    "afdb-het-7227"
+    "afdb-het-7227",
+    "mitomatch-7227"
    ],
    "structs": true
   },
   {
    "id": "zebrafish",
    "label": "Zebrafish",
-   "name": "Danio rerio", "taxon": 7955,
+   "name": "Danio rerio",
+   "taxon": 7955,
    "base": "data/species/zebrafish/",
    "datasets": [
     "zebrafish-kinase-kinase",
-    "afdb-het-7955"
+    "afdb-het-7955",
+    "mitomatch-7955"
    ],
    "structs": true
   },
   {
    "id": "yeast",
    "label": "Yeast",
-   "name": "Saccharomyces cerevisiae", "taxon": 559292,
+   "name": "Saccharomyces cerevisiae",
+   "taxon": 559292,
    "base": "data/species/yeast/",
    "datasets": [
     "yeast-kinase-kinase",
     "afdb-het-559292",
-    "afdb-het-4932"
+    "afdb-het-4932",
+    "mitomatch-559292"
    ],
    "structs": true
   },
   {
    "id": "worm",
    "label": "C. elegans",
-   "name": "Caenorhabditis elegans", "taxon": 6239,
+   "name": "Caenorhabditis elegans",
+   "taxon": 6239,
    "base": "data/species/worm/",
    "datasets": [
     "worm-kinase-kinase",
-    "afdb-het-6239"
+    "afdb-het-6239",
+    "mitomatch-6239"
    ],
    "structs": true
   },
@@ -86,7 +96,8 @@
    "name": "Mus musculus",
    "base": "data/species/mus-musculus/",
    "datasets": [
-    "afdb-het-10090"
+    "afdb-het-10090",
+    "mitomatch-10090"
    ],
    "group": "Model organisms",
    "taxon": 10090,
@@ -98,7 +109,8 @@
    "name": "Rattus norvegicus",
    "base": "data/species/rattus-norvegicus/",
    "datasets": [
-    "afdb-het-10116"
+    "afdb-het-10116",
+    "mitomatch-10116"
    ],
    "group": "Model organisms",
    "taxon": 10116,
@@ -254,7 +266,8 @@
    "name": "Schizosaccharomyces pombe",
    "base": "data/species/schizosaccharomyces-pombe/",
    "datasets": [
-    "afdb-het-284812"
+    "afdb-het-284812",
+    "mitomatch-284812"
    ],
    "group": "Model organisms",
    "taxon": 284812,
@@ -326,7 +339,8 @@
    "name": "Arabidopsis thaliana",
    "base": "data/species/arabidopsis-thaliana/",
    "datasets": [
-    "afdb-het-3702"
+    "afdb-het-3702",
+    "mitomatch-3702"
    ],
    "group": "Model organisms",
    "taxon": 3702,
@@ -362,7 +376,8 @@
    "name": "Dictyostelium discoideum",
    "base": "data/species/dictyostelium-discoideum/",
    "datasets": [
-    "afdb-het-44689"
+    "afdb-het-44689",
+    "mitomatch-44689"
    ],
    "group": "Model organisms",
    "taxon": 44689,
@@ -525,6 +540,28 @@
    "structs": true
   },
   {
+   "id": "pan-troglodytes",
+   "label": "Pan troglodytes",
+   "name": "Pan troglodytes",
+   "base": "data/species/pan-troglodytes/",
+   "datasets": [
+    "mitomatch-9598"
+   ],
+   "group": "Model organisms",
+   "taxon": 9598
+  },
+  {
+   "id": "xenopus-laevis",
+   "label": "Xenopus laevis",
+   "name": "Xenopus laevis",
+   "base": "data/species/xenopus-laevis/",
+   "datasets": [
+    "mitomatch-8355"
+   ],
+   "group": "Model organisms",
+   "taxon": 8355
+  },
+  {
    "id": "helicobacter-pylori",
    "label": "Helicobacter pylori",
    "name": "Helicobacter pylori",
@@ -591,7 +628,10 @@
    "modelsNote": "AlphaFold-Multimer v3 models 1, 2 and 4; ColabFold 1.5.2, modified; templates on",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-human-proteome.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-human-proteome.zip/content", "offsets": "data/screens/human-predictomes/offsets_v014.json"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-human-proteome.zip/content",
+     "offsets": "data/screens/human-predictomes/offsets_v014.json"
+    },
     "offsets": "data/screens/human-predictomes/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -613,7 +653,9 @@
    "recycles": 5,
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-human-kinase-tf.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23104149/files/livia-atlas-human-kinase-tf.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23104149/files/livia-atlas-human-kinase-tf.zip/content"
+    },
     "offsets": "data/screens/human-kinase-tf/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -632,7 +674,10 @@
    "paper": "https://doi.org/10.64898/2026.04.14.718529",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-flypredictome.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23104149/files/livia-atlas-flypredictome.zip/content", "offsets": "data/screens/flypredictome/offsets_v015.json"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23104149/files/livia-atlas-flypredictome.zip/content",
+     "offsets": "data/screens/flypredictome/offsets_v015.json"
+    },
     "offsets": "data/screens/flypredictome/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -653,7 +698,9 @@
    "paper": "https://doi.org/10.64898/2026.05.01.721633",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-human-kinase-kinase.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23104149/files/livia-atlas-human-kinase-kinase.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23104149/files/livia-atlas-human-kinase-kinase.zip/content"
+    },
     "offsets": "data/screens/human-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -674,7 +721,9 @@
    "paper": "https://doi.org/10.64898/2026.05.01.721633",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-zebrafish-kinase-kinase.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23104149/files/livia-atlas-zebrafish-kinase-kinase.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23104149/files/livia-atlas-zebrafish-kinase-kinase.zip/content"
+    },
     "offsets": "data/screens/zebrafish-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -695,7 +744,9 @@
    "paper": "https://doi.org/10.64898/2026.05.01.721633",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-yeast-kinase-kinase.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23104149/files/livia-atlas-yeast-kinase-kinase.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23104149/files/livia-atlas-yeast-kinase-kinase.zip/content"
+    },
     "offsets": "data/screens/yeast-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -716,7 +767,9 @@
    "paper": "https://doi.org/10.64898/2026.05.01.721633",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-worm-kinase-kinase.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23104149/files/livia-atlas-worm-kinase-kinase.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23104149/files/livia-atlas-worm-kinase-kinase.zip/content"
+    },
     "offsets": "data/screens/worm-kinase-kinase/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -738,7 +791,9 @@
    "paper": "https://doi.org/10.64898/2026.09.29.755321",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-viral-dimers-afdb.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-viral-dimers-afdb.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-viral-dimers-afdb.zip/content"
+    },
     "dev": "../zenodo/livia-atlas-viral-dimers-afdb.zip",
     "offsets": "data/screens/viral-dimers-afdb/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
@@ -763,7 +818,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part2.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"
+    },
     "offsets": "data/screens/afdb-het-100816/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -785,7 +842,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part3.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"
+    },
     "offsets": "data/screens/afdb-het-10090/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -807,7 +866,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part3.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"
+    },
     "offsets": "data/screens/afdb-het-10116/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -829,7 +890,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-1125630/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -851,7 +914,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-1133849/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -873,7 +938,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-1280/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -896,7 +963,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-132416/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -919,7 +988,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-1391915/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -941,7 +1012,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-1442368/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -963,7 +1036,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-160488/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -986,7 +1061,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-171101/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1008,7 +1085,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-185431/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1030,7 +1109,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-192222/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1052,7 +1133,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-196620/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1075,7 +1158,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part2.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"
+    },
     "offsets": "data/screens/afdb-het-199310/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1098,7 +1183,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-208964/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1120,7 +1207,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-233413/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1143,7 +1232,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-237561/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1165,7 +1256,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-242231/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1187,7 +1280,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part2.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"
+    },
     "offsets": "data/screens/afdb-het-243232/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1209,7 +1304,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-272631/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1231,7 +1328,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-284812/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1253,7 +1352,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-294748/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1276,7 +1377,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-300267/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1298,7 +1401,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part3.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"
+    },
     "offsets": "data/screens/afdb-het-300269/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1321,7 +1426,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part2.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"
+    },
     "offsets": "data/screens/afdb-het-31033/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1344,7 +1451,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-318479/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1366,7 +1475,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-353153/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1388,7 +1499,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-354242/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1411,7 +1524,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part3.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"
+    },
     "offsets": "data/screens/afdb-het-36087/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1433,7 +1548,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-36329/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1455,7 +1572,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part3.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"
+    },
     "offsets": "data/screens/afdb-het-3702/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1477,7 +1596,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-3708/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1500,7 +1621,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-3711/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1523,7 +1646,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-3726/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1546,7 +1671,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-3728/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1569,7 +1696,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part1.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part1.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part1.zip/content"
+    },
     "offsets": "data/screens/afdb-het-3847/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1591,7 +1720,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-3906/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1614,7 +1745,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part3.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"
+    },
     "offsets": "data/screens/afdb-het-39946/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1637,7 +1770,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part2.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"
+    },
     "offsets": "data/screens/afdb-het-39947/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1659,7 +1794,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-4097/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1682,7 +1819,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-44689/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1704,7 +1843,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-447093/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1726,7 +1867,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-4547/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1749,7 +1892,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-4565/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1772,7 +1917,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-4577/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1794,7 +1941,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-502779/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1816,7 +1965,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-5476/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1839,7 +1990,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-562/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1862,7 +2015,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-5671/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1884,7 +2039,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-5702/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1907,7 +2064,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-5839/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1930,7 +2089,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-6183/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1952,7 +2113,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-623/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1974,7 +2137,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-6248/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -1996,7 +2161,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-6279/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2018,7 +2185,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-6282/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2040,7 +2209,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-6293/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2062,7 +2233,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-632/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2085,7 +2258,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-6584/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2108,7 +2283,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-6832/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2131,7 +2308,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-7004/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2154,7 +2333,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-71421/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2176,7 +2357,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-7213/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2199,7 +2382,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-7240/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2222,7 +2407,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-83332/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2244,7 +2431,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-83333/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2266,7 +2455,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-83334/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2289,7 +2480,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-8355/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2312,7 +2505,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-85636/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2335,7 +2530,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-85962/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2357,7 +2554,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-86049/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2379,7 +2578,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-90370/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2402,7 +2603,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-93061/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2424,7 +2627,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-9337/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2447,7 +2652,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part5.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part5.zip/content"
+    },
     "offsets": "data/screens/afdb-het-9395/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2470,7 +2677,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part3.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part3.zip/content"
+    },
     "offsets": "data/screens/afdb-het-9544/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2493,7 +2702,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-9555/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2516,7 +2727,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-9598/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2539,7 +2752,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-99287/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2561,7 +2776,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-9940/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2584,7 +2801,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-9986/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2607,7 +2826,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part6.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part6.zip/content"
+    },
     "offsets": "data/screens/afdb-het-4932/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2629,7 +2850,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-559292/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2651,7 +2874,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-6239/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2673,7 +2898,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-7227/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2695,7 +2922,9 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part4.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part4.zip/content"
+    },
     "offsets": "data/screens/afdb-het-7955/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
@@ -2717,10 +2946,228 @@
    "paper": "https://doi.org/10.64898/2026.03.27.714458",
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-afdb-heterodimers-part2.zip",
-    "fallback": {"url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"},
+    "fallback": {
+     "url": "https://zenodo.org/api/records/23063255/files/livia-atlas-afdb-heterodimers-part2.zip/content"
+    },
     "offsets": "data/screens/afdb-het-9606/offsets.json",
     "record": "https://doi.org/10.5281/zenodo.22964479",
     "doi": "10.5281/zenodo.22964479"
+   }
+  },
+  {
+   "id": "mitomatch-9606",
+   "license": "CC BY 4.0",
+   "species": "human",
+   "title": "MitoMatch: human mitochondrial proteome AlphaFold-Multimer screen",
+   "short": "Mito interactome",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-9606/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-9606.zip",
+    "offsets": "data/screens/mitomatch-9606/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-9598",
+   "license": "CC BY 4.0",
+   "species": "pan-troglodytes",
+   "title": "MitoMatch: Pan troglodytes orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-9598/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-9598.zip",
+    "offsets": "data/screens/mitomatch-9598/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-10090",
+   "license": "CC BY 4.0",
+   "species": "mus-musculus",
+   "title": "MitoMatch: Mus musculus orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-10090/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-10090.zip",
+    "offsets": "data/screens/mitomatch-10090/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-10116",
+   "license": "CC BY 4.0",
+   "species": "rattus-norvegicus",
+   "title": "MitoMatch: Rattus norvegicus orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-10116/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-10116.zip",
+    "offsets": "data/screens/mitomatch-10116/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-8355",
+   "license": "CC BY 4.0",
+   "species": "xenopus-laevis",
+   "title": "MitoMatch: Xenopus laevis orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-8355/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-8355.zip",
+    "offsets": "data/screens/mitomatch-8355/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-7955",
+   "license": "CC BY 4.0",
+   "species": "zebrafish",
+   "title": "MitoMatch: Danio rerio orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-7955/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-7955.zip",
+    "offsets": "data/screens/mitomatch-7955/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-7227",
+   "license": "CC BY 4.0",
+   "species": "fly",
+   "title": "MitoMatch: Drosophila melanogaster orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-7227/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-7227.zip",
+    "offsets": "data/screens/mitomatch-7227/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-6239",
+   "license": "CC BY 4.0",
+   "species": "worm",
+   "title": "MitoMatch: Caenorhabditis elegans orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-6239/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-6239.zip",
+    "offsets": "data/screens/mitomatch-6239/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-3702",
+   "license": "CC BY 4.0",
+   "species": "arabidopsis-thaliana",
+   "title": "MitoMatch: Arabidopsis thaliana orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-3702/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-3702.zip",
+    "offsets": "data/screens/mitomatch-3702/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-44689",
+   "license": "CC BY 4.0",
+   "species": "dictyostelium-discoideum",
+   "title": "MitoMatch: Dictyostelium discoideum orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-44689/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-44689.zip",
+    "offsets": "data/screens/mitomatch-44689/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-559292",
+   "license": "CC BY 4.0",
+   "species": "yeast",
+   "title": "MitoMatch: Saccharomyces cerevisiae orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-559292/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-559292.zip",
+    "offsets": "data/screens/mitomatch-559292/offsets.json"
+   }
+  },
+  {
+   "id": "mitomatch-284812",
+   "license": "CC BY 4.0",
+   "species": "schizosaccharomyces-pombe",
+   "title": "MitoMatch: Schizosaccharomyces pombe orthologs of the human mitochondrial proteome",
+   "short": "Mito orthologs",
+   "color": "#8C6D46",
+   "base": "data/screens/mitomatch-284812/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "AlphaFold-Multimer 2.2.0, five models per pair; the authors released only the best-scoring model, so one model per pair is served",
+   "source": "Swaminathan et al. 2026 · MitoMatch",
+   "paper": "https://doi.org/10.5281/zenodo.21232148",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-mitomatch/livia-atlas-mitomatch-284812.zip",
+    "offsets": "data/screens/mitomatch-284812/offsets.json"
    }
   }
  ],
@@ -2774,24 +3221,74 @@
  ],
  "homodimers": {
   "title": "AlphaFold Database homodimers",
-  "source": "Han et al. 2026 \u00b7 bioRxiv",
+  "source": "Han et al. 2026 · bioRxiv",
   "paper": "https://doi.org/10.64898/2026.03.27.714458",
   "base": "https://www.flyrnai.org/livia-atlas/live/homodimers/",
   "structBase": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/homodimers/",
-  "frozen": "https://www.flyrnai.org/livia-atlas/versions/v0.1.6-homodimers/", "frozenName": "v0.1.6-homodimers", "models": 1, "recycles": "up to 6", "modelsNote": "model_1_multimer_v3 via ColabFold; no templates; recycling stopped early at an ipTM threshold of 0.1", "runNote": "as recorded in each model file; the release paper's Methods give four recycles", "license": "CC BY 4.0",
-  "selection": "the higher of its two directions passes ipSAE \u2265 0.60 and pDockQ2 \u2265 0.23",
+  "frozen": "https://www.flyrnai.org/livia-atlas/versions/v0.1.6-homodimers/",
+  "frozenName": "v0.1.6-homodimers",
+  "models": 1,
+  "recycles": "up to 6",
+  "modelsNote": "model_1_multimer_v3 via ColabFold; no templates; recycling stopped early at an ipTM threshold of 0.1",
+  "runNote": "as recorded in each model file; the release paper's Methods give four recycles",
+  "license": "CC BY 4.0",
+  "selection": "the higher of its two directions passes ipSAE ≥ 0.60 and pDockQ2 ≥ 0.23",
   "species": {
-   "human": {"file": "homodimer_lis_human.csv.gz", "entries": 4802, "onPages": 2888},
-   "mus-musculus": {"file": "homodimer_lis_mouse.csv.gz", "entries": 3209, "onPages": 1795},
-   "rattus-norvegicus": {"file": "homodimer_lis_rat.csv.gz", "entries": 3699, "onPages": 1423},
-   "fly": {"file": "homodimer_lis_fly.csv.gz", "entries": 1613, "onPages": 1119},
-   "worm": {"file": "homodimer_lis_worm.csv.gz", "entries": 1707, "onPages": 1104},
-   "zebrafish": {"file": "homodimer_lis_zebrafish.csv.gz", "entries": 3140, "onPages": 1257},
-   "yeast": {"file": "homodimer_lis_budding_yeast.csv.gz", "entries": 653, "onPages": 641},
-   "schizosaccharomyces-pombe": {"file": "homodimer_lis_fission_yeast.csv.gz", "entries": 578, "onPages": 496},
-   "arabidopsis-thaliana": {"file": "homodimer_lis_arabidopsis.csv.gz", "entries": 3597, "onPages": 2109},
-   "dictyostelium-discoideum": {"file": "homodimer_lis_dictyostelium.csv.gz", "entries": 876, "onPages": 514},
-   "escherichia-coli-83333": {"file": "homodimer_lis_ecoli_k12.csv.gz", "entries": 1206, "onPages": 812}
+   "human": {
+    "file": "homodimer_lis_human.csv.gz",
+    "entries": 4802,
+    "onPages": 2888
+   },
+   "mus-musculus": {
+    "file": "homodimer_lis_mouse.csv.gz",
+    "entries": 3209,
+    "onPages": 1795
+   },
+   "rattus-norvegicus": {
+    "file": "homodimer_lis_rat.csv.gz",
+    "entries": 3699,
+    "onPages": 1423
+   },
+   "fly": {
+    "file": "homodimer_lis_fly.csv.gz",
+    "entries": 1613,
+    "onPages": 1119
+   },
+   "worm": {
+    "file": "homodimer_lis_worm.csv.gz",
+    "entries": 1707,
+    "onPages": 1104
+   },
+   "zebrafish": {
+    "file": "homodimer_lis_zebrafish.csv.gz",
+    "entries": 3140,
+    "onPages": 1257
+   },
+   "yeast": {
+    "file": "homodimer_lis_budding_yeast.csv.gz",
+    "entries": 653,
+    "onPages": 641
+   },
+   "schizosaccharomyces-pombe": {
+    "file": "homodimer_lis_fission_yeast.csv.gz",
+    "entries": 578,
+    "onPages": 496
+   },
+   "arabidopsis-thaliana": {
+    "file": "homodimer_lis_arabidopsis.csv.gz",
+    "entries": 3597,
+    "onPages": 2109
+   },
+   "dictyostelium-discoideum": {
+    "file": "homodimer_lis_dictyostelium.csv.gz",
+    "entries": 876,
+    "onPages": 514
+   },
+   "escherichia-coli-83333": {
+    "file": "homodimer_lis_ecoli_k12.csv.gz",
+    "entries": 1206,
+    "onPages": 812
+   }
   }
  }
 }

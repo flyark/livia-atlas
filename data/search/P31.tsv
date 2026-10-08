@@ -4,7 +4,7 @@ P31009	fly	FBgn0004867	RpS2	P31009	32	454	Small ribosomal subunit protein uS5 (4
 P31016	rattus-norvegicus	P31016	Dlg4	P31016	10	260	Disks large homolog 4	
 P31025	human	P31025	LCN1	P31025	41	286	Lipocalin-1 (Tear lipocalin) (Tlc) (Tear prealbumin) (TP) (v	
 P31037	virus	P31037	VACWR175	P31037	7	218	Protein A49R	
-P31040	human	P31040	SDHA	P31040	47	432	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	
+P31040	human	P31040	SDHA	P31040	55	439	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	
 P31041	mus-musculus	P31041	Cd28	P31041	11	30	T-cell-specific surface glycoprotein CD28	
 P31042	rattus-norvegicus	P31042	Cd28	P31042	22	72	T-cell-specific surface glycoprotein CD28	
 P31044	rattus-norvegicus	P31044	Pebp1	P31044	12	304	Phosphatidylethanolamine-binding protein 1	
@@ -33,7 +33,7 @@ P31150	human	P31150	GDI1	P31150	49	275	Rab GDP dissociation inhibitor alpha (Rab
 P31151	human	P31151	S100A7	P31151	34	460	Protein S100-A7 (Psoriasin) (S100 calcium-binding protein A7	
 P31152	human	P31152	MAPK4	P31152	398	1321	Mitogen-activated protein kinase 4 (MAP kinase 4) (MAPK 4) (	
 P31153	human	P31153	MAT2A	P31153	3	173	S-adenosylmethionine synthase isoform type-2 (AdoMet synthas	
-P31161	worm	P31161	sod-2	P31161	1	111	Superoxide dismutase	
+P31161	worm	P31161	sod-2	P31161	5	115	Superoxide dismutase	
 P31166	arabidopsis-thaliana	P31166	APT1	P31166	2	4	Adenine phosphoribosyltransferase 1, chloroplastic	
 P31167	arabidopsis-thaliana	P31167	AAC1	P31167	2	89	ADP,ATP carrier protein 1, mitochondrial	
 P31168	arabidopsis-thaliana	P31168	COR47	P31168	0	2	Dehydrin COR47	
@@ -100,7 +100,7 @@ P31373	yeast	P31373	CYS3	P31373	0	41	Cystathionine gamma-lyase
 P31374	yeast	P31374	PSK1	P31374	3	65	Serine/threonine-protein kinase PSK1 (EC 2.7.11.1) (PAS kina	
 P31376	yeast	P31376	SWC3	P31376	3	58	SWR1-complex protein 3	
 P31377	yeast	P31377	SYN8	P31377	10	37	Syntaxin-8	
-P31378	yeast	P31378	NTG1	P31378	2	30	Endonuclease III homolog 1	
+P31378	yeast	P31378	NTG1	P31378	4	32	Endonuclease III homolog 1	
 P31379	yeast	P31379	LDS1	P31379	0	10	Outer spore wall protein LDS1	
 P31380	yeast	P31380	FUN30	P31380	1	32	ATP-dependent helicase FUN30	
 P31381	yeast	P31381	FUN26	P31381	0	2	Nucleoside transporter FUN26	
@@ -209,8 +209,8 @@ P31773	haemophilus-influenzae	P31773	comF	P31773	1	1	Competence protein F
 P31774	haemophilus-influenzae	P31774	nfuA	P31774	3	11	Fe/S biogenesis protein NfuA	
 P31776	haemophilus-influenzae	P31776	mrcA	P31776	1	12	Penicillin-binding protein 1A	
 P31785	human	P31785	IL2RG	P31785	123	561	Cytokine receptor common subunit gamma (Interleukin-2 recept	
-P31786	mus-musculus	P31786	Dbi	P31786	4	59	Acyl-CoA-binding protein	
-P31787	yeast	P31787	ACB1	P31787	2	33	Acyl-CoA-binding protein	
+P31786	mus-musculus	P31786	Dbi	P31786	17	73	Acyl-CoA-binding protein	
+P31787	yeast	P31787	ACB1	P31787	3	34	Acyl-CoA-binding protein	
 P31802	escherichia-coli-83333	P31802	narP	P31802	1	5	Nitrate/nitrite response regulator protein NarP	
 P31806	escherichia-coli-83333	P31806	nnr	P31806	0	29	Bifunctional NAD(P)H-hydrate repair enzyme Nnr	
 P31808	escherichia-coli-83333	P31808	yciK	P31808	0	29	Uncharacterized oxidoreductase YciK	
@@ -221,8 +221,8 @@ P31827	escherichia-coli-83333	P31827	yddB	P31827	0	2	Uncharacterized protein Ydd
 P31828	escherichia-coli-83333	P31828	pqqL	P31828	0	46	Probable zinc protease PqqL	
 P31924	oryza-sativa-subsp-japonica	P31924	SUS1	P31924	1	28	Sucrose synthase 1	
 P31927	zea-mays	P31927	SPS	P31927	1	29	Sucrose-phosphate synthase	
-P31930	human	P31930	UQCRC1	P31930	16	338	Cytochrome b-c1 complex subunit 1, mitochondrial (Complex II	
-P31937	human	P31937	HIBADH	P31937	2	223	3-hydroxyisobutyrate dehydrogenase, mitochondrial (HIBADH) (	
+P31930	human	P31930	UQCRC1	P31930	20	342	Cytochrome b-c1 complex subunit 1, mitochondrial (Complex II	
+P31937	human	P31937	HIBADH	P31937	4	225	3-hydroxyisobutyrate dehydrogenase, mitochondrial (HIBADH) (	
 P31938	mus-musculus	P31938	Map2k1	P31938	17	127	Dual specificity mitogen-activated protein kinase kinase 1	
 P31939	human	P31939	ATIC	P31939	0	219	Bifunctional purine biosynthesis protein ATIC (AICAR transfo	
 P31941	human	P31941	APOBEC3A	P31941	6	168	DNA dC->dU-editing enzyme APOBEC-3A (A3A) (EC 3.5.4.38) (Pho	

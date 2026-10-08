@@ -23,19 +23,24 @@ ACA8	arabidopsis-thaliana	Q9LF79	ACA8	Q9LF79	1	4	Calcium-transporting ATPase 8, 
 ACA8	oryza-sativa-subsp-japonica	Q2RAS0	ACA8	Q2RAS0	0	7	Probable calcium-transporting ATPase 8, plasma membrane-type	
 ACA9	oryza-sativa-subsp-japonica	Q2QY12	ACA9	Q2QY12	0	7	Probable calcium-transporting ATPase 9, plasma membrane-type	
 ACAA	dictyostelium-discoideum	Q03100	acaA	Q03100	0	19	Adenylate cyclase, aggregation specific	
-ACAA	fly	FBgn0040064	Acaa	Q9VL70	3	183	HL08109p (Yippee interacting protein 2 (EC 2.3.1.16, EC 2.3.	
+ACAA	fly	FBgn0040064	Acaa	Q9VL70	4	184	HL08109p (Yippee interacting protein 2 (EC 2.3.1.16, EC 2.3.	
 ACAA	human	P09110	ACAA1	P09110	7	133		
-ACAA-2	worm	O45552	acaa-2	O45552	1	28	3-ketoacyl-CoA thiolase, mitochondrial	
+ACAA-2	worm	O45552	acaa-2	O45552	2	29	3-ketoacyl-CoA thiolase, mitochondrial	
 ACAA1	human	P09110	ACAA1	P09110	7	133	3-ketoacyl-CoA thiolase, peroxisomal (EC 2.3.1.16) (Acetyl-C	
-ACAA1	zebrafish	Q6GQN6	acaa1	Q6GQN6	1	34	3-ketoacyl-CoA thiolase, peroxisomal	
+ACAA1	pan-troglodytes	H2QMA8	ACAA1	H2QMA8	3	3	Acetyl-CoA acyltransferase 1	
+ACAA1	zebrafish	Q6GQN6	acaa1	Q6GQN6	3	36	3-ketoacyl-CoA thiolase, peroxisomal	
+ACAA1.L	xenopus-laevis	Q7SYR2	acaa1.L	Q7SYR2	3	3	3-ketoacyl-CoA thiolase, peroxisomal	
 ACAA1A	cladophialophora-carrionii	A0A1C1CXA7	Acaa1a	A0A1C1CXA7	1	42	acetyl-CoA C-acyltransferase	
-ACAA1A	mus-musculus	Q921H8	Acaa1a	Q921H8	3	48	3-ketoacyl-CoA thiolase A, peroxisomal	
+ACAA1A	mus-musculus	Q921H8	Acaa1a	Q921H8	5	50	3-ketoacyl-CoA thiolase A, peroxisomal	
 ACAA1A	rattus-norvegicus	P21775	Acaa1a	P21775	4	31	3-ketoacyl-CoA thiolase A, peroxisomal	
 ACAA1B	cladophialophora-carrionii	A0A1C1CF50	Acaa1b	A0A1C1CF50	1	42	3-ketoacyl-CoA thiolase B, peroxisomal	
 ACAA1B	mus-musculus	Q8VCH0	Acaa1b	Q8VCH0	4	49	3-ketoacyl-CoA thiolase B, peroxisomal	
-ACAA2	human	P42765	ACAA2	P42765	6	247	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	
-ACAA2	mus-musculus	Q8BWT1	Acaa2	Q8BWT1	1	47	3-ketoacyl-CoA thiolase, mitochondrial	
-ACAA2	rattus-norvegicus	P13437	Acaa2	P13437	2	25	3-ketoacyl-CoA thiolase, mitochondrial	
+ACAA1B	rattus-norvegicus	P07871	Acaa1b	P07871	3	3	3-ketoacyl-CoA thiolase B, peroxisomal	
+ACAA2	human	P42765	ACAA2	P42765	6	248	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	
+ACAA2	mus-musculus	Q8BWT1	Acaa2	Q8BWT1	3	50	3-ketoacyl-CoA thiolase, mitochondrial	
+ACAA2	pan-troglodytes	H2QEI6	ACAA2	H2QEI6	4	4	Acetyl-CoA acyltransferase 2	
+ACAA2	rattus-norvegicus	P13437	Acaa2	P13437	4	28	3-ketoacyl-CoA thiolase, mitochondrial	
+ACAA2.S	xenopus-laevis	A0A8J1M5I0	acaa2.S	A0A8J1M5I0	3	3	3-ketoacyl-CoA thiolase, mitochondrial isoform X1	
 ACAC	human	Q13085	ACACA	Q13085	2	435		
 ACACA	human	P54646	PRKAA2	P54646	182	1648	5'-AMP-activated protein kinase catalytic subunit alpha-2 (A	w
 ACACA	human	Q13085	ACACA	Q13085	2	435	Acetyl-CoA carboxylase 1 (ACC1) (EC 6.4.1.2) (Acetyl-Coenzym	
@@ -46,52 +51,73 @@ ACACB_HUMAN	human	O00763	ACACB	O00763	4	114
 ACACT	human	P35610	SOAT1	P35610	4	254		
 ACACT1	human	P35610	SOAT1	P35610	4	254		
 ACACT2	human	O75908	SOAT2	O75908	1	28		
-ACAD-10	human	Q6JQN1	ACAD10	Q6JQN1	3	120	Acyl-CoA dehydrogenase family member 10 (ACAD-10) (EC 1.3.99	w
-ACAD-11	human	Q709F0	ACAD11	Q709F0	7	176	Acyl-CoA dehydrogenase family member 11 (ACAD-11) (EC 1.3.8.	w
-ACAD-9	human	Q9H845	ACAD9	Q9H845	11	371	Complex I assembly factor ACAD9, mitochondrial (Acyl-CoA deh	w
-ACAD10	human	Q6JQN1	ACAD10	Q6JQN1	3	120	Acyl-CoA dehydrogenase family member 10 (ACAD-10) (EC 1.3.99	
-ACAD10	mus-musculus	Q8K370	Acad10	Q8K370	0	4	Acyl-CoA dehydrogenase family member 10	
+ACAD-10	human	Q6JQN1	ACAD10	Q6JQN1	4	121	Acyl-CoA dehydrogenase family member 10 (ACAD-10) (EC 1.3.99	w
+ACAD-11	human	Q709F0	ACAD11	Q709F0	16	186	Acyl-CoA dehydrogenase family member 11 (ACAD-11) (EC 1.3.8.	w
+ACAD-9	human	Q9H845	ACAD9	Q9H845	12	373	Complex I assembly factor ACAD9, mitochondrial (Acyl-CoA deh	w
+ACAD10	human	Q6JQN1	ACAD10	Q6JQN1	4	121	Acyl-CoA dehydrogenase family member 10 (ACAD-10) (EC 1.3.99	
+ACAD10	mus-musculus	Q8K370	Acad10	Q8K370	6	12	Acyl-CoA dehydrogenase family member 10	
+ACAD10	pan-troglodytes	H2Q6W3	ACAD10	H2Q6W3	8	8	Acyl-CoA dehydrogenase family member 10	
 ACAD10	rattus-norvegicus	B5DEF6	Acad10	B5DEF6	0	3	Acyl-CoA dehydrogenase family, member 10	
-ACAD11	human	Q709F0	ACAD11	Q709F0	7	176	Acyl-CoA dehydrogenase family member 11 (ACAD-11) (EC 1.3.8.	
-ACAD11	mus-musculus	Q80XL6	Acad11	Q80XL6	2	18	Acyl-CoA dehydrogenase family member 11	
-ACAD11	rattus-norvegicus	B3DMA2	Acad11	B3DMA2	0	2	Acyl-CoA dehydrogenase family member 11	
+ACAD10.L	xenopus-laevis	A0A8J0VBR9	acad10.L	A0A8J0VBR9	6	7	acyl-CoA dehydrogenase family member 10 isoform X1	
+ACAD11	human	Q709F0	ACAD11	Q709F0	16	186	Acyl-CoA dehydrogenase family member 11 (ACAD-11) (EC 1.3.8.	
+ACAD11	mus-musculus	Q80XL6	Acad11	Q80XL6	12	29	Acyl-CoA dehydrogenase family member 11	
+ACAD11	pan-troglodytes	H2QNE0	ACAD11	H2QNE0	10	13	Acyl-CoA dehydrogenase family member 11	
+ACAD11	rattus-norvegicus	B3DMA2	Acad11	B3DMA2	10	14	Acyl-CoA dehydrogenase family member 11	
+ACAD11.L	xenopus-laevis	A0A8J0VNS8	acad11.L	A0A8J0VNS8	10	11	acyl-CoA dehydrogenase family member 11	
 ACAD12	mus-musculus	D3Z7X0	Acad12	D3Z7X0	0	2	Acyl-Coenzyme A dehydrogenase family, member 12	
-ACAD8	dictyostelium-discoideum	Q54IM8	acad8	Q54IM8	2	6	Isobutyryl-CoA dehydrogenase, mitochondrial	
+ACAD8	dictyostelium-discoideum	Q54IM8	acad8	Q54IM8	4	8	Isobutyryl-CoA dehydrogenase, mitochondrial	
 ACAD8	human	Q9UKU7	ACAD8	Q9UKU7	10	77	Isobutyryl-CoA dehydrogenase, mitochondrial (IBDH) (EC 1.3.8	
-ACAD8	mus-musculus	Q9D7B6	Acad8	Q9D7B6	1	10	Isobutyryl-CoA dehydrogenase, mitochondrial	
+ACAD8	mus-musculus	Q9D7B6	Acad8	Q9D7B6	11	20	Isobutyryl-CoA dehydrogenase, mitochondrial	
+ACAD8	pan-troglodytes	H2Q559	ACAD8	H2Q559	11	11	Acyl-CoA dehydrogenase family member 8	
+ACAD8	rattus-norvegicus	A0A8I5ZQL5	Acad8	A0A8I5ZQL5	10	10	Acyl-CoA dehydrogenase family, member 8	
 ACAD8	rattus-norvegicus	M0RDK9	Acad8	M0RDK9	2	10	Acyl-CoA dehydrogenase family, member 8	
-ACAD8	zebrafish	Q7ZYY0	acad8	Q7ZYY0	0	13	Isobutyryl-CoA dehydrogenase, mitochondrial	
+ACAD8	zebrafish	Q7ZYY0	acad8	Q7ZYY0	10	23	Isobutyryl-CoA dehydrogenase, mitochondrial	
 ACAD8_HUMAN	human	Q9UKU7	ACAD8	Q9UKU7	10	77		
-ACAD9	human	Q9H845	ACAD9	Q9H845	11	371	Complex I assembly factor ACAD9, mitochondrial (Acyl-CoA deh	
-ACAD9	mus-musculus	Q8JZN5	Acad9	Q8JZN5	4	36	Complex I assembly factor ACAD9, mitochondrial	
-ACAD9	rattus-norvegicus	B1WC61	Acad9	B1WC61	3	32	Complex I assembly factor ACAD9, mitochondrial	
-ACAD9_HUMAN	human	Q9H845	ACAD9	Q9H845	11	371		
-ACADL	human	P28330	ACADL	P28330	8	56	Long-chain specific acyl-CoA dehydrogenase, mitochondrial (L	
-ACADL	mus-musculus	P51174	Acadl	P51174	5	20	Long-chain specific acyl-CoA dehydrogenase, mitochondrial	
-ACADL	rattus-norvegicus	P15650	Acadl	P15650	4	12	Long-chain specific acyl-CoA dehydrogenase, mitochondrial	
-ACADL_HUMAN	human	P28330	ACADL	P28330	8	56		
-ACADM	human	P11310	ACADM	P11310	13	224	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial 	
-ACADM	mus-musculus	P45952	Acadm	P45952	7	46	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	
-ACADM	rattus-norvegicus	P08503	Acadm	P08503	6	32	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACAD9	human	Q9H845	ACAD9	Q9H845	12	373	Complex I assembly factor ACAD9, mitochondrial (Acyl-CoA deh	
+ACAD9	mus-musculus	Q8JZN5	Acad9	Q8JZN5	11	44	Complex I assembly factor ACAD9, mitochondrial	
+ACAD9	pan-troglodytes	H2QNB4	ACAD9	H2QNB4	10	11	Acyl-CoA dehydrogenase family member 9	
+ACAD9	rattus-norvegicus	B1WC61	Acad9	B1WC61	11	41	Complex I assembly factor ACAD9, mitochondrial	
+ACAD9.S	xenopus-laevis	Q6DDF2	acad9.S	Q6DDF2	9	10	Acad9-prov protein	
+ACAD9_HUMAN	human	Q9H845	ACAD9	Q9H845	12	373		
+ACADL	human	P28330	ACADL	P28330	11	58	Long-chain specific acyl-CoA dehydrogenase, mitochondrial (L	
+ACADL	mus-musculus	P51174	Acadl	P51174	11	26	Long-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADL	pan-troglodytes	H2QJC0	ACADL	H2QJC0	11	11	Long-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADL	rattus-norvegicus	P15650	Acadl	P15650	10	17	Long-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADL.L	xenopus-laevis	Q6DDM7	acadl.L	Q6DDM7	10	10	Long-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADL_HUMAN	human	P28330	ACADL	P28330	11	58		
+ACADM	human	P11310	ACADM	P11310	19	230	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial 	
+ACADM	mus-musculus	P45952	Acadm	P45952	15	55	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADM	pan-troglodytes	A5A6I0	ACADM	A5A6I0	15	16	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADM	rattus-norvegicus	P08503	Acadm	P08503	15	41	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADM	zebrafish	A0A8M1PII2	acadm	A0A8M1PII2	14	14	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	
 ACADM	zebrafish	A2CG95	acadm	A2CG95	3	22	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	
-ACADM_HUMAN	human	P11310	ACADM	P11310	13	224		
-ACADS	human	P16219	ACADS	P16219	28	395	Short-chain specific acyl-CoA dehydrogenase, mitochondrial (	
-ACADS	mus-musculus	Q07417	Acads	Q07417	6	26	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
-ACADS	rattus-norvegicus	P15651	Acads	P15651	6	17	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
-ACADS	zebrafish	Q6AXI7	acads	Q6AXI7	2	11	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADM.S	xenopus-laevis	Q66J53	acadm.S	Q66J53	14	14	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADM_CAEEL	worm	Q22347	acdh-10	Q22347	7	14		
+ACADM_DROME	fly	FBgn0035811	Mcad	Q9VSA3	9	149		
+ACADM_HUMAN	human	P11310	ACADM	P11310	19	230		
+ACADS	human	P16219	ACADS	P16219	31	398	Short-chain specific acyl-CoA dehydrogenase, mitochondrial (	
+ACADS	mus-musculus	Q07417	Acads	Q07417	13	34	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADS	pan-troglodytes	H2Q719	ACADS	H2Q719	12	12	Acyl-CoA dehydrogenase short chain	
+ACADS	rattus-norvegicus	P15651	Acads	P15651	13	24	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADS	zebrafish	Q6AXI7	acads	Q6AXI7	11	20	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
+ACADS.L	xenopus-laevis	Q7T0Y5	acads.L	Q7T0Y5	10	11	Acads protein	
 ACADSB	cladophialophora-carrionii	A0A1C1CNT3	Acadsb	A0A1C1CNT3	1	7	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
-ACADSB	dictyostelium-discoideum	Q54RR5	acadsb	Q54RR5	2	3	Probable short/branched chain specific acyl-CoA dehydrogenas	
-ACADSB	human	P45954	ACADSB	P45954	9	119	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
-ACADSB	mus-musculus	Q9DBL1	Acadsb	Q9DBL1	4	15	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
-ACADSB	rattus-norvegicus	P70584	Acadsb	P70584	4	15	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
-ACADSB	zebrafish	F1QFQ7	acadsb	F1QFQ7	2	11	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
-ACADS_HUMAN	human	P16219	ACADS	P16219	28	395		
-ACADVL	fly	FBgn0034432	Acadvl	A1ZBJ2	3	44	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	
-ACADVL	human	P49748	ACADVL	P49748	9	184	Very long-chain acyl-CoA dehydrogenase, mitochondrial (VLCAD	
-ACADVL	mus-musculus	P50544	Acadvl	P50544	6	36	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	
-ACADVL	rattus-norvegicus	P45953	Acadvl	P45953	3	23	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	
+ACADSB	dictyostelium-discoideum	Q54RR5	acadsb	Q54RR5	4	5	Probable short/branched chain specific acyl-CoA dehydrogenas	
+ACADSB	human	P45954	ACADSB	P45954	15	124	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
+ACADSB	mus-musculus	Q9DBL1	Acadsb	Q9DBL1	12	24	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
+ACADSB	pan-troglodytes	K7A158	ACADSB	K7A158	15	15	Acyl-CoA dehydrogenase short/branched chain	
+ACADSB	rattus-norvegicus	P70584	Acadsb	P70584	10	21	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
+ACADSB	zebrafish	F1QFQ7	acadsb	F1QFQ7	11	20	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
+ACADSB.L	xenopus-laevis	A0A1L8FJ05	acadsb.L	A0A1L8FJ05	12	12	short/branched chain specific acyl-CoA dehydrogenase, mitoch	
+ACADS_HUMAN	human	P16219	ACADS	P16219	31	398		
+ACADVL	fly	FBgn0034432	Acadvl	A1ZBJ2	6	49	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	
+ACADVL	human	P49748	ACADVL	P49748	18	193	Very long-chain acyl-CoA dehydrogenase, mitochondrial (VLCAD	
+ACADVL	mus-musculus	P50544	Acadvl	P50544	14	45	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	
+ACADVL	pan-troglodytes	K7BRR3	ACADVL	K7BRR3	14	16	Acyl-CoA dehydrogenase very long chain	
+ACADVL	rattus-norvegicus	P45953	Acadvl	P45953	15	36	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	
 ACADVL	zebrafish	A0AB32TU96	acadvl	A0AB32TU96	1	23	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	
-ACADV_HUMAN	human	P49748	ACADVL	P49748	9	184		
+ACADVL.L	xenopus-laevis	A0A1L8H4A9	acadvl.L	A0A1L8H4A9	12	12	very long-chain specific acyl-CoA dehydrogenase, mitochondri	
+ACADV_HUMAN	human	P49748	ACADVL	P49748	18	193		
 ACAM	fly	FBgn0011273	Acam	P49258	20	88	Calmodulin-related protein 97A (Protein androcam)	
 ACAM	human	Q9H6B4	CLMP	Q9H6B4	9	77		
 ACAN	human	P16112	ACAN	P16112	25	291	Aggrecan core protein (Cartilage-specific proteoglycan core 	
@@ -111,19 +137,21 @@ ACAP3	mus-musculus	Q6NXL5	Acap3	Q6NXL5	3	4	Arf-GAP with coiled-coil, ANK repeat 
 ACAP3	rattus-norvegicus	A0A0G2K5N8	Acap3	A0A0G2K5N8	1	3	Arf-GAP with coiled-coil, ANK repeat and PH domain-containin	
 ACAP3_HUMAN	human	Q96P50	ACAP3	Q96P50	15	92		
 ACAS2	human	Q9NR19	ACSS2	Q9NR19	0	122		
-ACAS2L	human	Q9NUB1	ACSS1	Q9NUB1	4	93		
+ACAS2L	human	Q9NUB1	ACSS1	Q9NUB1	14	103		
 ACAT	human	P23141	CES1	P23141	1	42	Liver carboxylesterase 1 (Acyl-coenzyme A:cholesterol acyltr	w
-ACAT	human	P24752	ACAT1	P24752	9	301		
+ACAT	human	P24752	ACAT1	P24752	10	302		
 ACAT	human	P35610	SOAT1	P35610	4	254		
 ACAT-1	human	P35610	SOAT1	P35610	4	254	Sterol O-acyltransferase 1 (EC 2.3.1.26) (Acyl-coenzyme A:ch	w
 ACAT-2	human	O75908	SOAT2	O75908	1	28	Sterol O-acyltransferase 2 (EC 2.3.1.26) (Acyl-coenzyme A:ch	w
 ACAT-RELATED	human	O75907	DGAT1	O75907	2	93	Diacylglycerol O-acyltransferase 1 (EC 2.3.1.20) (ACAT-relat	w
-ACAT1	fly	FBgn0029969	Acat1	Q9W3N9	3	60	LD24105p	
-ACAT1	human	P24752	ACAT1	P24752	9	301	Acetyl-CoA acetyltransferase, mitochondrial (EC 2.3.1.9) (Ac	
+ACAT1	fly	FBgn0029969	Acat1	Q9W3N9	5	62	LD24105p	
+ACAT1	human	P24752	ACAT1	P24752	10	302	Acetyl-CoA acetyltransferase, mitochondrial (EC 2.3.1.9) (Ac	
 ACAT1	human	P35610	SOAT1	P35610	4	254		
-ACAT1	mus-musculus	Q8QZT1	Acat1	Q8QZT1	2	31	Acetyl-CoA acetyltransferase, mitochondrial	
-ACAT1	rattus-norvegicus	P17764	Acat1	P17764	1	25	Acetyl-CoA acetyltransferase, mitochondrial	
-ACAT1	zebrafish	Q6AZA0	acat1	Q6AZA0	1	16	Acetyl-CoA acetyltransferase, mitochondrial	
+ACAT1	mus-musculus	Q8QZT1	Acat1	Q8QZT1	6	35	Acetyl-CoA acetyltransferase, mitochondrial	
+ACAT1	pan-troglodytes	H2Q4P9	ACAT1	H2Q4P9	4	4	Acetyl-CoA acetyltransferase 1	
+ACAT1	rattus-norvegicus	P17764	Acat1	P17764	5	29	Acetyl-CoA acetyltransferase, mitochondrial	
+ACAT1	zebrafish	Q6AZA0	acat1	Q6AZA0	3	18	Acetyl-CoA acetyltransferase, mitochondrial	
+ACAT1-B	xenopus-laevis	Q6GN02	acat1-b	Q6GN02	4	4	Acetyl-CoA acetyltransferase B, mitochondrial	
 ACAT2	fly	FBgn0035203	Acat2	Q9W0H6	1	33	acetyl-CoA C-acetyltransferase (EC 2.3.1.9)	
 ACAT2	human	O75908	SOAT2	O75908	1	28		
 ACAT2	human	Q9BWD1	ACAT2	Q9BWD1	3	98	Acetyl-CoA acetyltransferase, cytosolic (EC 2.3.1.9) (Acetyl	

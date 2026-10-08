@@ -1524,7 +1524,7 @@ Q9I7L7	fly	FBgn0042133	CG18810	Q9I7L7	0	18	Palmitoyltransferase (EC 2.3.1.225)
 Q9I7L8	fly	FBgn0032863	Cdc23	Q9I7L8	12	67	Cell division cycle 23, isoform A (Cell division cycle 23, i	
 Q9I7L9	fly	FBgn0042175	CG18858	Q9I7L9	1	19	Uncharacterized protein, isoform A (Uncharacterized protein,	
 Q9I7M1	fly	FBgn0042129	OS9	Q9I7M1	27	275	Olfactory-specific 9	
-Q9I7M2	fly	FBgn0032818	CG10628	Q9I7M2	4	78	GTP-binding protein 10 homolog	
+Q9I7M2	fly	FBgn0032818	CG10628	Q9I7M2	5	79	GTP-binding protein 10 homolog	
 Q9I7M5	fly	FBgn0032751	CG17343	Q9I7M5	0	8	Cell division cycle protein 26 homolog	
 Q9I7M8	fly	FBgn0041627	Ku80	Q9I7M8	9	109	ATP-dependent DNA helicase II subunit 2 (EC 3.6.4.12)	
 Q9I7N1	fly	FBgn0042126	CG18788	Q9I7N1	0	2	Major facilitator superfamily (MFS) profile domain-containin	
@@ -1569,6 +1569,7 @@ Q9I8N6	zebrafish	Q9I8N6	csf1r	Q9I8N6	5	14	Macrophage colony-stimulating factor 1
 Q9I8N9	zebrafish	Q9I8N9	fabp7a	Q9I8N9	4	8	Brain-type fatty acid-binding protein	
 Q9I8P2	zebrafish	Q9I8P2	pyya	Q9I8P2	9	30	Peptide YY-A	
 Q9I8P3	zebrafish	Q9I8P3	npy	Q9I8P3	7	35	Pro-neuropeptide Y	
+Q9I8P8	xenopus-laevis	Q9I8P8	fkbp10.L	Q9I8P8	1	1	peptidylprolyl isomerase	
 Q9I8U7	zebrafish	Q9I8U7	mylz3	Q9I8U7	3	43	Fast skeletal muscle myosin light polypeptide 3	
 Q9I8U8	zebrafish	Q9I8U8	tnnc2.2	Q9I8U8	16	71	Troponin C, skeletal muscle	
 Q9I8U9	zebrafish	Q9I8U9	tnnt3a	Q9I8U9	13	26	Fast skeletal muscle troponin T	
@@ -1577,6 +1578,7 @@ Q9I8V1	zebrafish	Q9I8V1	actc1b	Q9I8V1	37	211	Actin alpha cardiac muscle 1b
 Q9I8V2	zebrafish	Q9I8V2	smad1	Q9I8V2	14	80	Mothers against decapentaplegic homolog 1	
 Q9I8X3	zebrafish	Q9I8X3	fgfr3	Q9I8X3	21	71	Fibroblast growth factor receptor 3	
 Q9I903	zebrafish	Q9I903	ctnnbip1	Q9I903	5	17	Beta-catenin-interacting protein 1	
+Q9I905	xenopus-laevis	Q9I905	mtch2.L	Q9I905	1	1	MGC64562 protein	
 Q9I918	zebrafish	Q9I918	gpr173	Q9I918	0	1	Probable G-protein coupled receptor 173	
 Q9I9B4	zebrafish	Q9I9B4	pbx2	Q9I9B4	56	87	Pbxy homeodomain protein	
 Q9I9B7	zebrafish	Q9I9B7	pbx1a	Q9I9B7	55	87	Pre-B-cell leukemia transcription factor 1	
@@ -1591,16 +1593,22 @@ Q9I9K7	zebrafish	Q9I9K7	tbx20	Q9I9K7	4	18	T-box transcription factor TBX20
 Q9I9L0	zebrafish	Q9I9L0	hey2	Q9I9L0	4	9	Hairy/enhancer-of-split related with YRPW motif protein 2	
 Q9I9L7	zebrafish	Q9I9L7	caspa	Q9I9L7	4	24	Caspase a	
 Q9I9N0	zebrafish	Q9I9N0	dap1b	Q9I9N0	1	70	Death-associated protein-like 1 homolog	
-Q9I9N4	zebrafish	Q9I9N4	baxa	Q9I9N4	2	35	Apoptosis regulator BAX	
+Q9I9N3	zebrafish	Q9I9N3	zfMcl-1a	Q9I9N3	1	1	Cell death regulator Mcl-1a	
+Q9I9N3_DANRE	zebrafish	Q9I9N3	zfMcl-1a	Q9I9N3	1	1		
+Q9I9N4	zebrafish	Q9I9N4	baxa	Q9I9N4	6	39	Apoptosis regulator BAX	
+Q9I9N4_DANRE	zebrafish	Q9I9N4	baxa	Q9I9N4	6	39		
 Q9I9N5	zebrafish	Q9I9N5	tradd	Q9I9N5	11	90	Tumor necrosis factor receptor type 1-associated DEATH domai	
 Q9I9N6	zebrafish	Q9I9N6	pycard	Q9I9N6	0	30	Apoptosis-associated speck-like protein containing a CARD	
 Q9I9P9	zebrafish	Q9I9P9	smad2	Q9I9P9	16	131	Mothers against decapentaplegic homolog 2	
 Q9I9R3	zebrafish	Q9I9R3	slc40a1	Q9I9R3	0	3	Solute carrier family 40 member 1	
+Q9IAJ6	xenopus-laevis	Q9IAJ6	gatm	Q9IAJ6	5	5	Glycine amidinotransferase, mitochondrial	
+Q9IAJ7	xenopus-laevis	Q9IAJ7	atp5pb.S	Q9IAJ7	3	3	ATP synthase subunit b	
 Q9IAK8	zebrafish	Q9IAK8	tbx5a	Q9IAK8	3	19	T-box transcription factor TBX5-A	
 Q9IAT0	zebrafish	Q9IAT0	zic2a	Q9IAT0	0	2	ZIC family member 2 (Odd-paired homolog, Drosophila), A	
 Q9IAT6	zebrafish	Q9IAT6	dlc	Q9IAT6	2	18	Delta-like protein C	
 Q9IAV3	zebrafish	Q9IAV3	hhex	Q9IAV3	10	27	Hematopoietically-expressed homeobox protein hhex	
 Q9IB44	zebrafish	Q9IB44	ccnb1	Q9IB44	24	83	G2/mitotic-specific cyclin-B1	
+Q9IB63	xenopus-laevis	Q9IB63	casp9.S	Q9IB63	2	2	Caspase-9	
 Q9IB77	zebrafish	Q9IB77	btg2	Q9IB77	6	27	Anti-proliferative cofactor	
 Q9IBD0	zebrafish	Q9IBD0	celf1	Q9IBD0	0	17	CUGBP Elav-like family member 1	
 Q9IBH3	zebrafish	Q9IBH3	fbxw4	Q9IBH3	1	15	F-box and WD repeat domain-containing 4	

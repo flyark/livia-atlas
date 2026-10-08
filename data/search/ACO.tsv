@@ -1,7 +1,7 @@
 ACO	cladophialophora-carrionii	A0A1C1C7P8	aco	A0A1C1C7P8	0	3	1-aminocyclopropane-1-carboxylate oxidase	
 ACO	dictyostelium-discoideum	Q76NT9	aco	Q76NT9	0	4	1-aminocyclopropane-1-carboxylate oxidase	
 ACO-1	worm	Q23500	aco-1	Q23500	0	75	Cytoplasmic aconitate hydratase	
-ACO-2	worm	P34455	aco-2	P34455	0	124	Probable aconitate hydratase, mitochondrial	
+ACO-2	worm	P34455	aco-2	P34455	1	125	Probable aconitate hydratase, mitochondrial	
 ACO1	arabidopsis-thaliana	Q42560	ACO1	Q42560	1	186	Aconitate hydratase 1	
 ACO1	arabidopsis-thaliana	Q9ZUN4	ACO1	Q9ZUN4	0	1	1-aminocyclopropane-1-carboxylate oxidase 1	
 ACO1	candida-albicans-237561	P82611	ACO1	P82611	0	20	Aconitate hydratase, mitochondrial	
@@ -10,18 +10,19 @@ ACO1	dictyostelium-discoideum	Q54X73	aco1	Q54X73	0	52	Probable cytoplasmic aconi
 ACO1	human	P21399	ACO1	P21399	2	212	Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Ci	
 ACO1	mus-musculus	P28271	Aco1	P28271	0	122	Cytoplasmic aconitate hydratase	
 ACO1	rattus-norvegicus	Q63270	Aco1	Q63270	0	149	Cytoplasmic aconitate hydratase	
-ACO1	yeast	P19414	ACO1	P19414	1	80	Aconitate hydratase, mitochondrial	
+ACO1	yeast	P19414	ACO1	P19414	2	81	Aconitate hydratase, mitochondrial	
 ACO1	zebrafish	F1QM42	aco1	F1QM42	0	189	Cytoplasmic aconitate hydratase	
-ACO11_HUMAN	human	Q8WXI4	ACOT11	Q8WXI4	3	124		
+ACO11_HUMAN	human	Q8WXI4	ACOT11	Q8WXI4	5	127		
 ACO12_HUMAN	human	Q8WYK0	ACOT12	Q8WYK0	2	102		
-ACO13_HUMAN	human	Q9NPJ3	ACOT13	Q9NPJ3	4	71		
+ACO13_HUMAN	human	Q9NPJ3	ACOT13	Q9NPJ3	10	77		
 ACO2	arabidopsis-thaliana	Q41931	ACO2	Q41931	0	1	1-aminocyclopropane-1-carboxylate oxidase 2	
 ACO2	arabidopsis-thaliana	Q94A28	ACO2	Q94A28	0	169	Aconitate hydratase 2, mitochondrial	
 ACO2	candida-albicans-237561	A0A1D8PT27	ACO2	A0A1D8PT27	0	13	Aconitate hydratase, mitochondrial	
 ACO2	dictyostelium-discoideum	Q54XS2	aco2	Q54XS2	1	68	Probable aconitate hydratase, mitochondrial	
-ACO2	human	Q99798	ACO2	Q99798	4	442	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3) 	
-ACO2	mus-musculus	Q99KI0	Aco2	Q99KI0	0	195	Aconitate hydratase, mitochondrial	
-ACO2	rattus-norvegicus	Q9ER34	Aco2	Q9ER34	1	212	Aconitate hydratase, mitochondrial	
+ACO2	human	Q99798	ACO2	Q99798	8	446	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3) 	
+ACO2	mus-musculus	Q99KI0	Aco2	Q99KI0	3	198	Aconitate hydratase, mitochondrial	
+ACO2	pan-troglodytes	K7BWF9	ACO2	K7BWF9	3	3	Aconitate hydratase, mitochondrial	
+ACO2	rattus-norvegicus	Q9ER34	Aco2	Q9ER34	4	215	Aconitate hydratase, mitochondrial	
 ACO2	schizosaccharomyces-pombe	Q9P7D4	aco2	Q9P7D4	1	56	Aconitase-ribosomal protein bL21m fusion protein	
 ACO2	yeast	P39533	ACO2	P39533	1	25	Homocitrate dehydratase, mitochondrial	
 ACO20	zea-mays	Q6JN54	ACO20	Q6JN54	0	5	1-aminocyclopropane-1-carboxylate oxidase	
@@ -33,57 +34,69 @@ ACOA	streptococcus-pneumoniae	Q8DPQ7	acoA	Q8DPQ7	1	10	TPP-dependent acetoin dehy
 ACOB	pseudomonas-aeruginosa	Q9HWN0	acoB	Q9HWN0	5	30	2-oxoisovalerate dehydrogenase subunit beta	
 ACOB	streptococcus-pneumoniae	Q8DPQ8	acoB	Q8DPQ8	1	20	TPP-dependent acetoin dehydrogenase beta chain	
 ACOC	streptococcus-pneumoniae	Q8DPQ9	acoC	Q8DPQ9	1	13	Dihydrolipoamide S-acetyltransferase	
-ACOD1	human	A6NK06	ACOD1	A6NK06	6	137	Cis-aconitate decarboxylase (CAD) (EC 4.1.1.6) (Aconitate de	
-ACOD1	mus-musculus	P54987	Acod1	P54987	0	14	Cis-aconitate decarboxylase	
-ACOD1	rattus-norvegicus	D3ZWM1	Acod1	D3ZWM1	0	16	Cis-aconitate decarboxylase	
+ACOD1	human	A6NK06	ACOD1	A6NK06	7	139	Cis-aconitate decarboxylase (CAD) (EC 4.1.1.6) (Aconitate de	
+ACOD1	mus-musculus	P54987	Acod1	P54987	1	15	Cis-aconitate decarboxylase	
+ACOD1	pan-troglodytes	H2Q7N6	ACOD1	H2Q7N6	1	2	Aconitate decarboxylase 1	
+ACOD1	rattus-norvegicus	D3ZWM1	Acod1	D3ZWM1	1	18	Cis-aconitate decarboxylase	
 ACOD1	zebrafish	B0UYM1	acod1	B0UYM1	1	13	Cis-aconitate decarboxylase	
 ACOD4	human	Q86SK9	SCD5	Q86SK9	5	104		
 ACOHC_HUMAN	human	P21399	ACO1	P21399	2	212		
 ACOL	streptococcus-pneumoniae	Q8DPR0	acoL	Q8DPR0	3	51	Dihydrolipoyl dehydrogenase	
-ACONITASE	fly	FBgn0010100	mAcon1	Q9VIE8	6	320	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	w
+ACONITASE	fly	FBgn0010100	mAcon1	Q9VIE8	7	321	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	w
 ACONITASE	fly	FBgn0037862	mAcon2	Q8T4D6	10	359	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	w
 ACONITASE	human	P21399	ACO1	P21399	2	212	Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Ci	w
-ACONITASE	human	Q99798	ACO2	Q99798	4	442	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3) 	w
-ACONITATE	fly	FBgn0010100	mAcon1	Q9VIE8	6	320	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	w
+ACONITASE	human	Q99798	ACO2	Q99798	8	446	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3) 	w
+ACONITATE	fly	FBgn0010100	mAcon1	Q9VIE8	7	321	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	w
 ACONITATE	fly	FBgn0024957	Irp-1B	Q9VGZ3	1	79	aconitate hydratase (EC 4.2.1.3)	w
 ACONITATE	fly	FBgn0024958	Irp-1A	Q9VCV4	0	90	aconitate hydratase (EC 4.2.1.3)	w
 ACONITATE	fly	FBgn0037862	mAcon2	Q8T4D6	10	359	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	w
-ACONITATE	human	A6NK06	ACOD1	A6NK06	6	137	Cis-aconitate decarboxylase (CAD) (EC 4.1.1.6) (Aconitate de	w
+ACONITATE	human	A6NK06	ACOD1	A6NK06	7	139	Cis-aconitate decarboxylase (CAD) (EC 4.1.1.6) (Aconitate de	w
 ACONITATE	human	P21399	ACO1	P21399	2	212	Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Ci	w
-ACONITATE	human	Q99798	ACO2	Q99798	4	442	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3) 	w
-ACONITATE	worm	P34455	aco-2	P34455	0	124	Probable aconitate hydratase, mitochondrial	w
+ACONITATE	human	Q99798	ACO2	Q99798	8	446	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3) 	w
+ACONITATE	worm	P34455	aco-2	P34455	1	125	Probable aconitate hydratase, mitochondrial	w
 ACONITATE	worm	Q23500	aco-1	Q23500	0	75	Cytoplasmic aconitate hydratase	w
-ACONITATE	yeast	P19414	ACO1	P19414	1	80	Aconitate hydratase, mitochondrial	w
+ACONITATE	yeast	P19414	ACO1	P19414	2	81	Aconitate hydratase, mitochondrial	w
 ACONITATE	zebrafish	F1QM42	aco1	F1QM42	0	189	Cytoplasmic aconitate hydratase	w
-ACON_HUMAN	human	Q99798	ACO2	Q99798	4	442		
+ACONITATE	zebrafish	Q6PEI6	wu:fc20c11	Q6PEI6	1	1	Aconitate hydratase, mitochondrial	w
+ACON_CAEEL	worm	P34455	aco-2	P34455	1	125		
+ACON_HUMAN	human	Q99798	ACO2	Q99798	8	446		
+ACON_YEAST	yeast	P19414	ACO1	P19414	2	81		
 ACOT-TYPE	fly	FBgn0039855	CG1638	Q9V9W5	1	6	HotDog ACOT-type domain-containing protein	w
 ACOT-TYPE	worm	O16725	CELE_T07D3.9	O16725	0	1	HotDog ACOT-type domain-containing protein	w
 ACOT-TYPE	worm	Q23044	CELE_T22B7.7	Q23044	0	1	HotDog ACOT-type domain-containing protein	w
 ACOT1	human	Q86TX2	ACOT1	Q86TX2	5	190	Acyl-coenzyme A thioesterase 1 (Acyl-CoA thioesterase 1) (EC	
 ACOT1	mus-musculus	O55137	Acot1	O55137	2	18	Acyl-coenzyme A thioesterase 1	
 ACOT1	rattus-norvegicus	A0A0G2K7Z3	Acot1	A0A0G2K7Z3	0	19	Acyl-CoA thioesterase 1	
-ACOT11	human	Q8WXI4	ACOT11	Q8WXI4	3	124	Acyl-coenzyme A thioesterase 11 (Acyl-CoA thioesterase 11) (	
-ACOT11	mus-musculus	Q8VHQ9	Acot11	Q8VHQ9	0	2	Acyl-coenzyme A thioesterase 11	
+ACOT11	human	Q8WXI4	ACOT11	Q8WXI4	5	127	Acyl-coenzyme A thioesterase 11 (Acyl-CoA thioesterase 11) (	
+ACOT11	mus-musculus	Q8VHQ9	Acot11	Q8VHQ9	3	5	Acyl-coenzyme A thioesterase 11	
+ACOT11	pan-troglodytes	K7BZE0	ACOT11	K7BZE0	3	3	Acyl-CoA thioesterase 11	
+ACOT11	rattus-norvegicus	F1LX28	Acot11	F1LX28	3	3	Acyl-CoA thioesterase 11	
+ACOT11A	zebrafish	E9QJN3	acot11a	E9QJN3	0	2	Acyl-CoA thioesterase 11a	
 ACOT12	human	Q8WYK0	ACOT12	Q8WYK0	2	102	Acetyl-coenzyme A thioesterase (EC 3.1.2.1) (Acyl-CoA thioes	
-ACOT13	human	Q9NPJ3	ACOT13	Q9NPJ3	4	71	Acyl-coenzyme A thioesterase 13 (Acyl-CoA thioesterase 13) (	
-ACOT13	mus-musculus	Q9CQR4	Acot13	Q9CQR4	0	3	Acyl-coenzyme A thioesterase 13	
-ACOT13	rattus-norvegicus	D3ZA93	Acot13	D3ZA93	0	1	Acyl-coenzyme A thioesterase 13	
+ACOT13	human	Q9NPJ3	ACOT13	Q9NPJ3	10	77	Acyl-coenzyme A thioesterase 13 (Acyl-CoA thioesterase 13) (	
+ACOT13	mus-musculus	Q9CQR4	Acot13	Q9CQR4	3	6	Acyl-coenzyme A thioesterase 13	
+ACOT13	pan-troglodytes	H2QSD9	ACOT13	H2QSD9	6	6	Acyl-CoA thioesterase 13	
+ACOT13	rattus-norvegicus	D3ZA93	Acot13	D3ZA93	2	4	Acyl-coenzyme A thioesterase 13	
+ACOT13	zebrafish	A0A8M2B6F6	acot13	A0A8M2B6F6	1	1	acyl-coenzyme A thioesterase 13 isoform X1	
 ACOT13	zebrafish	F6P1Y9	acot13	F6P1Y9	0	10	Acyl-coenzyme A thioesterase 13	
-ACOT15	human	Q8N1Q8	THEM5	Q8N1Q8	5	61		
+ACOT13.S	xenopus-laevis	A9ULW5	acot13.S	A9ULW5	2	2	LOC100137631 protein	
+ACOT15	human	Q8N1Q8	THEM5	Q8N1Q8	6	62		
 ACOT16	zebrafish	A0A8M9Q6D0	acot16	A0A8M9Q6D0	0	5	Peroxisomal succinyl-coenzyme A thioesterase-like isoform X4	
 ACOT16	zebrafish	A0AB13A482	acot16	A0AB13A482	0	5	Acyl-CoA thioesterase 16 precursor	
 ACOT17	zebrafish	A5PMN5	acot17	A5PMN5	0	5	Acyl-CoA thioesterase 17	
 ACOT18	zebrafish	Q5RH35	acot18	Q5RH35	0	5	Acyl-CoA thioesterase 18	
 ACOT19	zebrafish	Q5U3W6	acot19	Q5U3W6	0	8	Acyl-CoA thioesterase 19	
 ACOT1_HUMAN	human	Q86TX2	ACOT1	Q86TX2	5	190		
-ACOT2	human	P49753	ACOT2	P49753	6	161	Acyl-coenzyme A thioesterase 2, mitochondrial (Acyl-CoA thio	
-ACOT2	mus-musculus	Q9QYR9	Acot2	Q9QYR9	2	18	Acyl-coenzyme A thioesterase 2, mitochondrial	
+ACOT2	human	P49753	ACOT2	P49753	14	168	Acyl-coenzyme A thioesterase 2, mitochondrial (Acyl-CoA thio	
+ACOT2	mus-musculus	Q9QYR9	Acot2	Q9QYR9	6	23	Acyl-coenzyme A thioesterase 2, mitochondrial	
+ACOT2	pan-troglodytes	H2Q8K3	ACOT2	H2Q8K3	5	5	Uncharacterized protein	
 ACOT2	rattus-norvegicus	O55171	Acot2	O55171	2	25	Acyl-coenzyme A thioesterase 2, mitochondrial	
 ACOT20	zebrafish	Q5SPG8	acot20	Q5SPG8	0	11	Acyl-CoA thioesterase 20	
 ACOT21	zebrafish	A0A8N7T759	acot21	A0A8N7T759	0	11	Acyl-coenzyme A thioesterase 1	
 ACOT22	zebrafish	A0A8M1NZE7	acot22	A0A8M1NZE7	0	8	Acyl-CoA thioesterase 22	
-ACOT2_HUMAN	human	P49753	ACOT2	P49753	6	161		
+ACOT2_HUMAN	human	P49753	ACOT2	P49753	14	168		
 ACOT3	mus-musculus	Q9QYR7	Acot3	Q9QYR7	1	18	Acyl-coenzyme A thioesterase 3	
+ACOT3	rattus-norvegicus	A0A8I6A6H9	Acot3	A0A8I6A6H9	2	2	Acyl-CoA thioesterase 3	
 ACOT4	human	Q8N9L9	ACOT4	Q8N9L9	8	91	Peroxisomal succinyl-coenzyme A thioesterase (EC 3.1.2.3) (A	
 ACOT4	mus-musculus	Q8BWN8	Acot4	Q8BWN8	2	19	Peroxisomal succinyl-coenzyme A thioesterase	
 ACOT4	rattus-norvegicus	D3ZIQ1	Acot4	D3ZIQ1	2	25	Acyl-CoA thioesterase 4	
@@ -93,9 +106,12 @@ ACOT5	rattus-norvegicus	A0A0G2K4M8	Acot5	A0A0G2K4M8	0	25	Acyl-CoA thioesterase 5
 ACOT5	rattus-norvegicus	A1A5R4	Acot5	A1A5R4	2	25	Acyl-CoA thioesterase 5	
 ACOT6	human	Q3I5F7	ACOT6	Q3I5F7	3	76	Acyl-coenzyme A thioesterase 6 (Acyl-CoA thioesterase 6) (EC	
 ACOT6_HUMAN	human	Q3I5F7	ACOT6	Q3I5F7	3	76		
-ACOT7	human	O00154	ACOT7	O00154	3	174	Cytosolic acyl coenzyme A thioester hydrolase (EC 3.1.2.2) (	
-ACOT7	mus-musculus	Q91V12	Acot7	Q91V12	0	17	Cytosolic acyl coenzyme A thioester hydrolase	
-ACOT7	rattus-norvegicus	Q64559	Acot7	Q64559	0	10	Cytosolic acyl coenzyme A thioester hydrolase	
+ACOT7	human	O00154	ACOT7	O00154	6	177	Cytosolic acyl coenzyme A thioester hydrolase (EC 3.1.2.2) (	
+ACOT7	mus-musculus	Q91V12	Acot7	Q91V12	2	20	Cytosolic acyl coenzyme A thioester hydrolase	
+ACOT7	pan-troglodytes	A0A2I3RXR4	ACOT7	A0A2I3RXR4	1	1	Acyl-CoA thioesterase 7	
+ACOT7	rattus-norvegicus	Q64559	Acot7	Q64559	3	13	Cytosolic acyl coenzyme A thioester hydrolase	
+ACOT7	zebrafish	A0A8M2BEP9	acot7	A0A8M2BEP9	1	1	cytosolic acyl coenzyme A thioester hydrolase isoform X1	
+ACOT7.L	xenopus-laevis	A0A8J0TBA9	acot7.L	A0A8J0TBA9	1	1	cytosolic acyl coenzyme A thioester hydrolase isoform X1	
 ACOT7L	human	Q6ZUV0	ACOT7L	Q6ZUV0	0	6	Cytosolic acyl coenzyme A thioester hydrolase-like (Acyl-CoA	
 ACOT8	human	O14734	ACOT8	O14734	4	86	Acyl-coenzyme A thioesterase 8 (Acyl-CoA thioesterase 8) (EC	
 ACOT8	mus-musculus	P58137	Acot8	P58137	1	23	Acyl-coenzyme A thioesterase 8	

@@ -1,4 +1,4 @@
-MUT	human	P22033	MMUT	P22033	12	200		
+MUT	human	P22033	MMUT	P22033	16	205		
 MUT-14	worm	Q17978	mut-14	Q17978	1	13	RNA helicase	
 MUT-15	worm	Q22061	mut-15	Q22061	2	4	MUTator	
 MUT-16	worm	O62011	mut-16	O62011	2	21	MUTator	
@@ -36,14 +36,14 @@ MUTASE	human	O95394	PGM3	O95394	5	139	Phosphoacetylglucosamine mutase (PAGM) (EC
 MUTASE	human	P07738	BPGM	P07738	8	251	Bisphosphoglycerate mutase (BPGM) (EC 5.4.2.4) (2,3-bisphosp	w
 MUTASE	human	P15259	PGAM2	P15259	4	261	Phosphoglycerate mutase 2 (EC 5.4.2.11) (EC 5.4.2.4) (BPG-de	w
 MUTASE	human	P18669	PGAM1	P18669	5	255	Phosphoglycerate mutase 1 (EC 5.4.2.11) (EC 5.4.2.4) (BPG-de	w
-MUTASE	human	P22033	MMUT	P22033	12	200	Methylmalonyl-CoA mutase, mitochondrial (MCM) (EC 5.4.99.2) 	w
+MUTASE	human	P22033	MMUT	P22033	16	205	Methylmalonyl-CoA mutase, mitochondrial (MCM) (EC 5.4.99.2) 	w
 MUTASE	human	Q04760	GLO1	Q04760	7	200	Lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Glyo	w
 MUTASE	human	Q8N0Y7	PGAM4	Q8N0Y7	4	207	Probable phosphoglycerate mutase 4 (EC 5.4.2.11) (EC 5.4.2.4	w
-MUTASE	human	Q96HS1	PGAM5	Q96HS1	16	256	Serine/threonine-protein phosphatase PGAM5, mitochondrial (E	w
+MUTASE	human	Q96HS1	PGAM5	Q96HS1	24	264	Serine/threonine-protein phosphatase PGAM5, mitochondrial (E	w
 MUTASE	worm	G5EFZ1	ipgm-1	G5EFZ1	1	71	2,3-bisphosphoglycerate-independent phosphoglycerate mutase	w
 MUTASE	worm	O44899	CELE_ZK484.6	O44899	0	2	Phosphoglycerate mutase family protein	w
 MUTASE	worm	Q19680	pgm-3	Q19680	0	15	Phosphoacetylglucosamine mutase	w
-MUTASE	worm	Q23381	mmcm-1	Q23381	1	4	Probable methylmalonyl-CoA mutase, mitochondrial	w
+MUTASE	worm	Q23381	mmcm-1	Q23381	2	5	Probable methylmalonyl-CoA mutase, mitochondrial	w
 MUTASE	worm	Q86D20	CELE_F55A11.11	Q86D20	0	2	Phosphoglycerate mutase family protein	w
 MUTASE	yeast	P00950	GPM1	P00950	0	100	Phosphoglycerate mutase 1	w
 MUTASE	yeast	P32178	ARO7	P32178	0	4	Chorismate mutase	w
@@ -51,7 +51,7 @@ MUTASE	yeast	P36069	PMU1	P36069	0	2	Probable phosphoglycerate mutase PMU1	w
 MUTASE	yeast	P38628	PCM1	P38628	0	10	Phosphoacetylglucosamine mutase	w
 MUTASE	yeast	Q12008	GPM2	Q12008	0	6	Phosphoglycerate mutase 2	w
 MUTASE	yeast	Q12326	GPM3	Q12326	0	8	Phosphoglycerate mutase 3	w
-MUTASE	zebrafish	A5D6S3	mmut	A5D6S3	1	4	Methylmalonyl-CoA mutase, mitochondrial	w
+MUTASE	zebrafish	A5D6S3	mmut	A5D6S3	6	9	Methylmalonyl-CoA mutase, mitochondrial	w
 MUTASE	zebrafish	B8A4H6	pgam1b	B8A4H6	2	11	Phosphoglycerate mutase	w
 MUTASE	zebrafish	Q6DHM0	bpgm	Q6DHM0	0	10	Phosphoglycerate mutase	w
 MUTASE	zebrafish	Q7SZR4	pgam1a	Q7SZR4	2	11	Phosphoglycerate mutase	w
@@ -72,7 +72,8 @@ MUTATIONS	yeast	P07278	BCY1	P07278	11	99	cAMP-dependent protein kinase regulator
 MUTATOR	fly	FBgn0002872	mu2	Q95RC8	7	46	LD44171p (Mutator 2, isoform A)	w
 MUTATOR	worm	O62011	mut-16	O62011	2	21	MUTator	w
 MUTATOR	worm	Q22061	mut-15	Q22061	2	4	MUTator	w
-MUTA_HUMAN	human	P22033	MMUT	P22033	12	200		
+MUTA_CAEEL	worm	Q23381	mmcm-1	Q23381	2	5		
+MUTA_HUMAN	human	P22033	MMUT	P22033	16	205		
 MUTB	mycobacterium-leprae	Q9CBM7	mutB	Q9CBM7	1	3	Probable methylmalonyl-CoA mutase large subunit	
 MUTB	mycobacterium-tuberculosis	P9WJK5	mutB	P9WJK5	1	3	Probable methylmalonyl-CoA mutase large subunit	
 MUTD-1	worm	Q18446	mutd-1	Q18446	2	8	Biogenesis of lysosome-related organelles complex 1 subunit 	
@@ -98,7 +99,7 @@ MUTL	shigella-dysenteriae-serotype-1	Q328E9	mutL	Q328E9	5	29	DNA mismatch repair
 MUTL	staphylococcus-aureus-93061	Q93T05	mutL	Q93T05	2	22	DNA mismatch repair protein MutL	
 MUTM	escherichia-coli-83333	P05523	mutM	P05523	0	4	Formamidopyrimidine-DNA glycosylase	
 MUTM	haemophilus-influenzae	P44948	mutM	P44948	0	1	Formamidopyrimidine-DNA glycosylase	
-MUTM	human	O15527	OGG1	O15527	3	42		
+MUTM	human	O15527	OGG1	O15527	26	64		
 MUTM	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3H049	mutM	A0A0H3H049	0	4	Formamidopyrimidine-DNA glycosylase	
 MUTM	mycobacterium-leprae	O69470	mutM	O69470	0	2	Formamidopyrimidine-DNA glycosylase	
 MUTM	neisseria-gonorrhoeae	Q5F8Z9	mutM	Q5F8Z9	0	2	Formamidopyrimidine-DNA glycosylase	
@@ -135,14 +136,17 @@ MUTT	shigella-dysenteriae-serotype-1	Q32JZ3	mutT	Q32JZ3	0	1	8-oxo-dGTP diphospha
 MUTY	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P808	mutY	Q0P808	1	9	Adenine DNA glycosylase	
 MUTY	escherichia-coli-83333	P17802	mutY	P17802	1	5	Adenine DNA glycosylase	
 MUTY	haemophilus-influenzae	P44320	mutY	P44320	0	4	Adenine DNA glycosylase	
-MUTY	human	Q9UIF7	MUTYH	Q9UIF7	5	71	Adenine DNA glycosylase (EC 3.2.2.31) (MutY homolog) (hMYH)	w
+MUTY	human	Q9UIF7	MUTYH	Q9UIF7	7	73	Adenine DNA glycosylase (EC 3.2.2.31) (MutY homolog) (hMYH)	w
 MUTY	mycobacterium-leprae	Q9CBJ0	mutY	Q9CBJ0	1	9	Adenine DNA glycosylase	
 MUTY	mycobacterium-tuberculosis	P9WQ09	mutY	P9WQ09	0	7	Adenine DNA glycosylase	
 MUTY	pseudomonas-aeruginosa	Q9HU37	mutY	Q9HU37	0	8	Adenine DNA glycosylase	
 MUTY	salmonella-typhimurium	Q05869	mutY	Q05869	1	5	Adenine DNA glycosylase	
 MUTY	shigella-dysenteriae-serotype-1	Q32C30	mutY	Q32C30	1	5	Adenine DNA glycosylase	
 MUTY	streptococcus-pneumoniae	Q8DPL6	mutY	Q8DPL6	1	5	Adenine DNA glycosylase	
-MUTYH	human	Q9UIF7	MUTYH	Q9UIF7	5	71	Adenine DNA glycosylase (EC 3.2.2.31) (MutY homolog) (hMYH)	
-MUTYH	mus-musculus	Q99P21	Mutyh	Q99P21	3	16	Adenine DNA glycosylase	
-MUTYH	rattus-norvegicus	Q8R5G2	Mutyh	Q8R5G2	3	14	Adenine DNA glycosylase	
-MUTYH_HUMAN	human	Q9UIF7	MUTYH	Q9UIF7	5	71		
+MUTYH	human	Q9UIF7	MUTYH	Q9UIF7	7	73	Adenine DNA glycosylase (EC 3.2.2.31) (MutY homolog) (hMYH)	
+MUTYH	mus-musculus	Q99P21	Mutyh	Q99P21	4	17	Adenine DNA glycosylase	
+MUTYH	pan-troglodytes	A0A2I3SBR1	MUTYH	A0A2I3SBR1	2	2	Adenine DNA glycosylase	
+MUTYH	rattus-norvegicus	Q8R5G2	Mutyh	Q8R5G2	4	15	Adenine DNA glycosylase	
+MUTYH	zebrafish	A0A8N7TAT1	mutyh	A0A8N7TAT1	2	2	Adenine DNA glycosylase	
+MUTYH.L	xenopus-laevis	A0A8J0V207	mutyh.L	A0A8J0V207	0	1	Adenine DNA glycosylase	
+MUTYH_HUMAN	human	Q9UIF7	MUTYH	Q9UIF7	7	73		

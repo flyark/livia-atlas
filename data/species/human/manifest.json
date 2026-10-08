@@ -24,9 +24,9 @@
   },
   {
    "id": "human-kinase-tf",
-   "short": "Kinase\u2013TF",
-   "title": "Human kinase\u2013transcription factor screen",
-   "citation": "Kim AR, Huang K, Johnson JL, Yaron-Barir TM, Wang K, Cantley LC, Hu Y, Perrimon N (2025). A structure-guided kinase\u2013transcription factor interactome atlas reveals docking landscapes of the kinome. bioRxiv.",
+   "short": "Kinase–TF",
+   "title": "Human kinase–transcription factor screen",
+   "citation": "Kim AR, Huang K, Johnson JL, Yaron-Barir TM, Wang K, Cantley LC, Hu Y, Perrimon N (2025). A structure-guided kinase–transcription factor interactome atlas reveals docking landscapes of the kinome. bioRxiv.",
    "url": "https://www.biorxiv.org/content/10.1101/2025.10.10.681672",
    "counts": {
     "proteins": 1481,
@@ -40,8 +40,8 @@
   },
   {
    "id": "human-kinase-kinase",
-   "short": "Kinase\u2013kinase",
-   "title": "Human kinase\u2013kinase screen",
+   "short": "Kinase–kinase",
+   "title": "Human kinase–kinase screen",
    "citation": "Kim AR, Perrimon N (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. bioRxiv. Data: LIVIA Atlas, Zenodo, doi:10.5281/zenodo.22964479.",
    "url": "https://doi.org/10.64898/2026.05.01.721633",
    "counts": {
@@ -69,18 +69,34 @@
     "pairsFpr5": 36356,
     "pairsFpr1": 10840
    }
+  },
+  {
+   "id": "mitomatch-9606",
+   "short": "Mito interactome",
+   "title": "MitoMatch: human mitochondrial proteome AlphaFold-Multimer screen",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 986,
+    "pairs": 2830,
+    "predictions": 2830,
+    "runs": 2830,
+    "pairsFpr10": 2763,
+    "pairsFpr5": 2500,
+    "pairsFpr1": 972
+   }
   }
  ],
  "counts": {
   "proteins": 20526,
-  "pairs": 2244928,
-  "predictions": 7312293,
-  "runs": 2579073,
-  "pairsFpr10": 274387,
-  "pairsFpr5": 152292,
-  "pairsFpr1": 38827,
-  "pairsInSeveral": 337950,
-  "pairsTested": 2244971
+  "pairs": 2246930,
+  "predictions": 7315123,
+  "runs": 2581903,
+  "pairsFpr10": 276442,
+  "pairsFpr5": 154127,
+  "pairsFpr1": 39414,
+  "pairsInSeveral": 338778,
+  "pairsTested": 2246973
  },
  "files": {
   "proteins": "proteins.json",

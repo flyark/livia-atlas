@@ -24,7 +24,7 @@ P21126	mus-musculus	P21126	Ubl4a	P21126	13	232	Ubiquitin-like protein 4A
 P21127	human	P21127	CDK11B	P21127	196	1399	Cyclin-dependent kinase 11B (EC 2.7.11.22) (EC 2.7.11.23) (C	
 P21128	human	P21128	ENDOU	P21128	4	38	Uridylate-specific endoribonuclease (EC 3.1.-.-) (EC 4.6.1.-	
 P21135	schizosaccharomyces-pombe	P21135	cut2	P21135	3	4	Securin	
-P21137	worm	P21137	kin-1	P21137	11	92	cAMP-dependent protein kinase catalytic subunit (PKA C) (EC 	
+P21137	worm	P21137	kin-1	P21137	13	95	cAMP-dependent protein kinase catalytic subunit (PKA C) (EC 	
 P21139	rattus-norvegicus	P21139	Man2c1	P21139	0	11	Alpha-mannosidase 2C1	
 P21145	human	P21145	MAL	P21145	7	176	Myelin and lymphocyte protein (T-lymphocyte maturation-assoc	
 P21147	yeast	P21147	OLE1	P21147	2	90	Acyl-CoA desaturase 1	
@@ -82,8 +82,8 @@ P21372	yeast	P21372	PRP5	P21372	4	52	Pre-mRNA-processing ATP-dependent RNA helic
 P21373	yeast	P21373	UTR1	P21373	1	4	NAD(+) kinase	
 P21374	yeast	P21374	ISY1	P21374	6	96	Pre-mRNA-splicing factor ISY1	
 P21375	yeast	P21375	OSM1	P21375	0	21	Fumarate reductase 2	
-P21396	rattus-norvegicus	P21396	Maoa	P21396	2	38	Amine oxidase	
-P21397	human	P21397	MAOA	P21397	5	107	Amine oxidase [flavin-containing] A (EC 1.4.3.21) (EC 1.4.3.	
+P21396	rattus-norvegicus	P21396	Maoa	P21396	3	39	Amine oxidase	
+P21397	human	P21397	MAOA	P21397	7	109	Amine oxidase [flavin-containing] A (EC 1.4.3.21) (EC 1.4.3.	
 P21399	human	P21399	ACO1	P21399	2	212	Cytoplasmic aconitate hydratase (Aconitase) (EC 4.2.1.3) (Ci	
 P21402	virus	P21402	POL	P21402	3	244	DNA polymerase	
 P21404	virus	P21404_p0a1d555b95		P21404	0	11	Protein 2C	
@@ -135,14 +135,14 @@ P21524	yeast	P21524	RNR1	P21524	5	35	Ribonucleoside-diphosphate reductase large 
 P21525	fly	FBgn0001297	kay	P21525	119	479	Transcription factor kayak, isoforms A/B/F (AP-1) (Fos-relat	
 P21531	rattus-norvegicus	P21531	Rpl3	P21531	27	706	Large ribosomal subunit protein uL3	
 P21533	rattus-norvegicus	P21533	Rpl6	P21533	32	452	Large ribosomal subunit protein eL6	
-P21534	schizosaccharomyces-pombe	P21534	cox2	P21534	7	38	Cytochrome c oxidase subunit 2	
+P21534	schizosaccharomyces-pombe	P21534	cox2	P21534	10	41	Cytochrome c oxidase subunit 2	
 P21535	schizosaccharomyces-pombe	P21535	atp6	P21535	3	26	ATP synthase subunit a	
 P21536	schizosaccharomyces-pombe	P21536	atp8	P21536	5	22	ATP synthase protein 8	
 P21537	schizosaccharomyces-pombe	P21537	atp9	P21537	2	34	ATP synthase subunit 9, mitochondrial	
 P21538	yeast	P21538	REB1	P21538	0	44	DNA-binding protein REB1	
 P21541	worm	P21541	zyg-11	P21541	3	30	Early embryogenesis protein zyg-11	
 P21547	schizosaccharomyces-pombe	P21547	var1	P21547	1	32	Small ribosomal subunit protein uS3m	
-P21549	human	P21549	AGXT	P21549	4	85	Alanine--glyoxylate aminotransferase (AGT) (EC 2.6.1.44) (Se	
+P21549	human	P21549	AGXT	P21549	7	88	Alanine--glyoxylate aminotransferase (AGT) (EC 2.6.1.44) (Se	
 P21550	mus-musculus	P21550	Eno3	P21550	3	37	Beta-enolase	
 P21552	mus-musculus	P21552	Wnt2	P21552	14	83	Protein Wnt-2	
 P21554	human	P21554	CNR1	P21554	19	123	Cannabinoid receptor 1 (CB-R) (CB1) (CANN6)	
@@ -151,7 +151,7 @@ P21560	yeast	P21560	CBP3	P21560	4	36	Protein CBP3, mitochondrial
 P21565	schizosaccharomyces-pombe	P21565	srp54	P21565	8	159	Signal recognition particle subunit SRP54	
 P21569	zea-mays	P21569	CYP	P21569	27	240	Peptidyl-prolyl cis-trans isomerase	
 P21570	mus-musculus	P21570	Ang	P21570	1	9	Angiogenin	
-P21571	rattus-norvegicus	P21571	Atp5pf	P21571	2	55	ATP synthase peripheral stalk subunit F6, mitochondrial	
+P21571	rattus-norvegicus	P21571	Atp5pf	P21571	3	56	ATP synthase peripheral stalk subunit F6, mitochondrial	
 P21575	rattus-norvegicus	P21575	Dnm1	P21575	4	103	Dynamin-1	
 P21576	yeast	P21576	VPS1	P21576	1	128	Vacuolar protein sorting-associated protein 1	
 P21579	human	P21579	SYT1	P21579	15	306	Synaptotagmin-1 (Synaptotagmin I) (SytI) (p65)	
@@ -221,8 +221,8 @@ P21771	yeast	P21771	MRPS28	P21771	11	391	Small ribosomal subunit protein uS15m
 P21775	rattus-norvegicus	P21775	Acaa1a	P21775	4	31	3-ketoacyl-CoA thiolase A, peroxisomal	
 P21781	human	P21781	FGF7	P21781	28	379	Fibroblast growth factor 7 (FGF-7) (Heparin-binding growth f	
 P21784	mus-musculus	P21784	Rag2	P21784	2	21	V(D)J recombination-activating protein 2	
-P21796	human	P21796	VDAC1	P21796	3	564	Non-selective voltage-gated ion channel VDAC1 (Outer mitocho	
-P21801	yeast	P21801	SDH2	P21801	8	49	Succinate dehydrogenase	
+P21796	human	P21796	VDAC1	P21796	4	565	Non-selective voltage-gated ion channel VDAC1 (Outer mitocho	
+P21801	yeast	P21801	SDH2	P21801	9	49	Succinate dehydrogenase	
 P21802	human	P21802	FGFR2	P21802	194	1597	Fibroblast growth factor receptor 2 (FGFR-2) (EC 2.7.10.1) (	
 P21803	mus-musculus	P21803	Fgfr2	P21803	26	123	Fibroblast growth factor receptor 2	
 P21807	rattus-norvegicus	P21807	Prph	P21807	2	3	Peripherin	
@@ -248,10 +248,10 @@ P21888	escherichia-coli-83333	P21888	cysS	P21888	0	11	Cysteine--tRNA ligase
 P21889	escherichia-coli-83333	P21889	aspS	P21889	0	6	Aspartate--tRNA ligase	
 P21893	escherichia-coli-83333	P21893	recJ	P21893	0	9	Single-stranded-DNA-specific exonuclease RecJ	
 P21900	dictyostelium-discoideum	P21900	purA	P21900	0	1	Adenylosuccinate synthetase	
-P21911	schizosaccharomyces-pombe	P21911	sdh2	P21911	3	17	Succinate dehydrogenase	
-P21912	human	P21912	SDHB	P21912	33	254	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	
-P21913	rattus-norvegicus	P21913	Sdhb	P21913	4	38	Succinate dehydrogenase	
-P21914	fly	FBgn0014028	SdhB	P21914	13	89	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	
+P21911	schizosaccharomyces-pombe	P21911	sdh2	P21911	5	18	Succinate dehydrogenase	
+P21912	human	P21912	SDHB	P21912	37	258	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	
+P21913	rattus-norvegicus	P21913	Sdhb	P21913	10	42	Succinate dehydrogenase	
+P21914	fly	FBgn0014028	SdhB	P21914	14	89	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	
 P21917	human	P21917	DRD4	P21917	13	103	Dopamine receptor D4 (D(2C) dopamine receptor) (Dopamine D4 	
 P21918	human	P21918	DRD5	P21918	13	101	Dopamine receptor D5 (D(1B) dopamine receptor) (D(5) dopamin	
 P21926	human	P21926	CD9	P21926	29	637	CD9 antigen (5H9 antigen) (Cell growth-inhibiting gene 2 pro	
@@ -264,7 +264,7 @@ P21956	mus-musculus	P21956	Mfge8	P21956	1	21	Lactadherin
 P21957	yeast	P21957	OPI1	P21957	3	22	Transcriptional repressor OPI1	
 P21958	mus-musculus	P21958	Tap1	P21958	3	39	Antigen peptide transporter 1	
 P21961	rattus-norvegicus	P21961	Cpa3	P21961	0	6	Mast cell carboxypeptidase A	
-P21964	human	P21964	COMT	P21964	16	328	Catechol O-methyltransferase (EC 2.1.1.6)	
+P21964	human	P21964	COMT	P21964	21	333	Catechol O-methyltransferase (EC 2.1.1.6)	
 P21965	yeast	P21965	MCK1	P21965	3	82	Protein kinase MCK1	
 P21966	virus	P21966	VETFS	P21966	2	244	Early transcription factor 70 kDa subunit	
 P21967	virus	P21967	RPO18	P21967	11	250	DNA-directed RNA polymerase 18 kDa subunit	

@@ -117,12 +117,12 @@ CLASS	human	P04198	MYCN	P04198	377	1440	N-myc proto-oncogene protein (Class E ba
 CLASS	human	P04233	CD74	P04233	71	1268	HLA class II histocompatibility antigen gamma chain (HLA-DR 	w
 CLASS	human	P04439	HLA-A	P04439	681	1948	HLA class I histocompatibility antigen, A alpha chain (Human	w
 CLASS	human	P04440	HLA-DPB1	P04440	44	460	HLA class II histocompatibility antigen, DP beta 1 chain (HL	w
-CLASS	human	P05091	ALDH2	P05091	16	209	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
+CLASS	human	P05091	ALDH2	P05091	18	210	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
 CLASS	human	P05538	HLA-DQB2	P05538	40	258	HLA class II histocompatibility antigen, DQ beta 2 chain (HL	w
 CLASS	human	P06340	HLA-DOA	P06340	44	259	HLA class II histocompatibility antigen, DO alpha chain (MHC	w
 CLASS	human	P08319	ADH4	P08319	10	107	All-trans-retinol dehydrogenase [NAD(+)] ADH4 (EC 1.1.1.105)	w
 CLASS	human	P09086	POU2F2	P09086	141	403	POU domain, class 2, transcription factor 2 (Lymphoid-restri	w
-CLASS	human	P0DPI2	GATD3	P0DPI2	3	106	Glutamine amidotransferase-like class 1 domain-containing pr	w
+CLASS	human	P0DPI2	GATD3	P0DPI2	4	107	Glutamine amidotransferase-like class 1 domain-containing pr	w
 CLASS	human	P10321	HLA-C	P10321	443	1517	HLA class I histocompatibility antigen, C alpha chain (HLA-C	w
 CLASS	human	P11766	ADH5	P11766	10	154	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
 CLASS	human	P12524	MYCL	P12524	35	90	Protein L-Myc (Class E basic helix-loop-helix protein 38) (b	w
@@ -489,7 +489,7 @@ CLASS	worm	Q22283	srj-33	Q22283	0	3	Serpentine Receptor, class J	w
 CLASS	worm	Q22284	sre-28	Q22284	0	3	Serpentine Receptor, class E (Epsilon)	w
 CLASS	worm	Q22382	srab-17	Q22382	0	19	Serpentine Receptor, class AB (Class A-like)	w
 CLASS	worm	Q22642	srg-32	Q22642	0	1	Serpentine receptor class gamma	w
-CLASS	worm	Q22768	CELE_T25B9.1	Q22768	0	16	Aminotransferase class I/classII large domain-containing pro	w
+CLASS	worm	Q22768	CELE_T25B9.1	Q22768	1	17	Aminotransferase class I/classII large domain-containing pro	w
 CLASS	worm	Q22981	srt-3	Q22981	0	3	Serpentine Receptor, class T	w
 CLASS	worm	Q22982	srt-35	Q22982	0	3	Serpentine Receptor, class T	w
 CLASS	worm	Q22983	srt-36	Q22983	0	4	Serpentine Receptor, class T	w
@@ -644,11 +644,11 @@ CLASS-II	human	Q8IU57	IFNLR1	Q8IU57	58	225	Interferon lambda receptor 1 (IFN-lam
 CLASS-II	human	Q8N6P7	IL22RA1	Q8N6P7	40	198	Interleukin-22 receptor subunit alpha-1 (IL-22 receptor subu	w
 CLASS-II	human	Q969J5	IL22RA2	Q969J5	21	161	Interleukin-22 receptor subunit alpha-2 (IL-22 receptor subu	w
 CLASS-II	human	Q9UHF4	IL20RA	Q9UHF4	24	199	Interleukin-20 receptor subunit alpha (IL-20 receptor subuni	w
-CLASS-II	worm	P90831	dars-2	P90831	1	13	Aminoacyl-transfer RNA synthetases class-II family profile d	w
-CLASS-II	worm	Q95PZ8	nars-2	Q95PZ8	2	19	Aminoacyl-transfer RNA synthetases class-II family profile d	w
+CLASS-II	worm	P90831	dars-2	P90831	3	15	Aminoacyl-transfer RNA synthetases class-II family profile d	w
+CLASS-II	worm	Q95PZ8	nars-2	Q95PZ8	3	20	Aminoacyl-transfer RNA synthetases class-II family profile d	w
 CLASS-III	fly	FBgn0011768	Fdh	P46415	1	71	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
 CLASS-III	human	P11766	ADH5	P11766	10	154	Alcohol dehydrogenase class-3 (EC 1.1.1.1) (Alcohol dehydrog	w
-CLASS-KAPPA	human	Q9Y2Q3	GSTK1	Q9Y2Q3	8	126	Glutathione S-transferase kappa 1 (EC 2.5.1.18) (GST 13-13) 	w
+CLASS-KAPPA	human	Q9Y2Q3	GSTK1	Q9Y2Q3	12	130	Glutathione S-transferase kappa 1 (EC 2.5.1.18) (GST 13-13) 	w
 CLASS-MU	human	P09488	GSTM1	P09488	17	126	Glutathione S-transferase Mu 1 (EC 2.5.1.18) (GST HB subunit	w
 CLASS-MU	human	P21266	GSTM3	P21266	19	262	Glutathione S-transferase Mu 3 (EC 2.5.1.18) (GST class-mu 3	w
 CLASS-MU	human	P28161	GSTM2	P28161	19	105	Glutathione S-transferase Mu 2 (EC 2.5.1.18) (GST class-mu 2	w
@@ -661,7 +661,7 @@ CLASS-THETA-2	human	P0CG29	GSTT2	P0CG29	9	77	Glutathione S-transferase theta-2 (
 CLASS-THETA-2	human	P0CG30	GSTT2B	P0CG30	11	63	Glutathione S-transferase theta-2B (EC 2.5.1.18) (Glutathion	w
 CLASS-THETA-4	human	A0A1W2PR19	GSTT4	A0A1W2PR19	5	36	Glutathione S-transferase theta-4 (EC 2.5.1.18) (GST class-t	w
 CLASSES	fly	FBgn0004611	Plc21C	P25455	3	17	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase cl	w
-CLASSII	worm	Q22768	CELE_T25B9.1	Q22768	0	16	Aminotransferase class I/classII large domain-containing pro	w
+CLASSII	worm	Q22768	CELE_T25B9.1	Q22768	1	17	Aminotransferase class I/classII large domain-containing pro	w
 CLATHRI	human	Q9BXS5	AP1M1	Q9BXS5	57	429	AP-1 complex subunit mu-1 (AP-mu chain family member mu1A) (	w
 CLATHRI	human	Q9Y6Q5	AP1M2	Q9Y6Q5	31	273	AP-1 complex subunit mu-2 (AP-mu chain family member mu1B) (	w
 CLATHRIN	fly	FBgn0000319	Chc	P29742	7	139	Clathrin heavy chain	w

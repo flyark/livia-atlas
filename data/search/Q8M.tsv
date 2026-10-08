@@ -10,8 +10,8 @@ Q8MKK3	fly	FBgn0050290	Ppcdc	Q8MKK3	0	10	LD37882p2 (Phosphopantothenoylcysteine 
 Q8MKK4	fly	FBgn0033644	Tret1l	Q8MKK4	6	62	Facilitated trehalose transporter Tret1-2 homolog (DmTret1-2	
 Q8MKK8	fly	FBgn0050080	CG30080	Q8MKK8	0	12	GEO07755p1 (RE42467p)	
 Q8MKL0	fly	FBgn0050043	CG30043	Q8MKL0	0	3	LP07082p	
-Q8MKL1	fly	FBgn0050010	CG30010	Q8MKL1	1	2		
-Q8MKN0	fly	FBgn0050493	Coq9	Q8MKN0	5	14	Ubiquinone biosynthesis protein COQ9, mitochondrial	
+Q8MKL1	fly	FBgn0050010	CG30010	Q8MKL1	3	4		
+Q8MKN0	fly	FBgn0050493	Coq9	Q8MKN0	7	16	Ubiquinone biosynthesis protein COQ9, mitochondrial	
 Q8MKW7	fly	FBgn0028426	RNaseZ	Q8MKW7	0	6	Ribonuclease Z, mitochondrial (RNase Z) (EC 3.1.26.11) (Juve	
 Q8ML92	fly	FBgn0050476	ave	Q8ML92	1	13	Protein aveugle	
 Q8MLL3	fly	FBgn0033086	Coq10	Q8MLL3	0	4	Coenzyme Q-binding protein COQ10, mitochondrial	
@@ -28,8 +28,10 @@ Q8MLQ8	fly	FBgn0050177	CG30177	Q8MLQ8	0	2	LP05237p
 Q8MLR5	fly	FBgn0050184	CG30184	Q8MLR5	1	69	IP08069p	
 Q8MLR6	fly	FBgn0050181	ppk3	Q8MLR6	0	3	Pickpocket 3	
 Q8MLR7	fly	FBgn0028497	Mtmr6	Q8MLR7	112	903	Phosphatidylinositol-3-phosphate phosphatase (EC 3.1.3.48) (	
-Q8MLS1	fly	FBgn0085453	Mthfs	Q8MLS1	0	3	5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2)	
-Q8MLS2	fly	FBgn0050410	Rpi	Q8MLS2	0	7	ribose-5-phosphate isomerase (EC 5.3.1.6) (Phosphoriboisomer	
+Q8MLS1	fly	FBgn0085453	Mthfs	Q8MLS1	1	4	5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2)	
+Q8MLS1_DROME	fly	FBgn0085453	Mthfs	Q8MLS1	1	4		
+Q8MLS2	fly	FBgn0050410	Rpi	Q8MLS2	1	8	ribose-5-phosphate isomerase (EC 5.3.1.6) (Phosphoriboisomer	
+Q8MLS2_DROME	fly	FBgn0050410	Rpi	Q8MLS2	1	8		
 Q8MLS3	fly	FBgn0050413	CG30413	Q8MLS3	13	243	Salivary secreted peptide	
 Q8MLS5	fly	FBgn0050412	CG30412	Q8MLS5	1	3	Uncharacterized protein, isoform B	
 Q8MLS6	fly	FBgn0045482	Gr59b	Q8MLS6	0	1	Gustatory receptor	
@@ -81,8 +83,8 @@ Q8MNT0	worm	Q8MNT0	lim-8	Q8MNT0	0	14	PDZ domain-containing protein
 Q8MNT1	worm	Q8MNT1	kbp-2	Q8MNT1	1	5	Mediator of RNA polymerase II transcription subunit 21	
 Q8MNT9	worm	Q8MNT9	nmad-1	Q8MNT9	1	45	DNA N6-methyl adenine demethylase	
 Q8MNU2	worm	Q8MNU2	C56G2.9	Q8MNU2	2	59	DUF4604 domain-containing protein	
-Q8MNU7	worm	Q8MNU7	C35D10.17	Q8MNU7	0	1	COX assembly mitochondrial protein 2 homolog	
-Q8MNU8	worm	Q8MNU8	C29E4.12	Q8MNU8	0	5	Protein FMC1 homolog	
+Q8MNU7	worm	Q8MNU7	C35D10.17	Q8MNU7	1	2	COX assembly mitochondrial protein 2 homolog	
+Q8MNU8	worm	Q8MNU8	C29E4.12	Q8MNU8	2	7	Protein FMC1 homolog	
 Q8MNV0	worm	Q8MNV0	spas-1	Q8MNV0	1	35	Spastin homolog	
 Q8MNV1	worm	Q8MNV1	C18H2.5	Q8MNV1	0	1	BRCT domain-containing protein	
 Q8MNV7	worm	Q8MNV7	smrc-1	Q8MNV7	2	11	SWI/SNF-related matrix-associated actin-dependent regulator 	
@@ -90,7 +92,8 @@ Q8MNV8	worm	Q8MNV8	C14B9.10	Q8MNV8	3	39	Complex III subunit 9
 Q8MNX1	worm	Q8MNX1	CELE_T22H9.1	Q8MNX1	6	25	rRNA biogenesis protein RRP36	
 Q8MNY0	worm	Q8MNY0	ubh-2	Q8MNY0	1	2	Ubiquitin carboxyl-terminal hydrolase	
 Q8MNY2	schistosoma-mansoni	Q8MNY2	cb1.1	Q8MNY2	0	2	Cathepsin B-like cysteine proteinase	
-Q8MP09	worm	Q8MP09	nkat-3	Q8MP09	1	13	Kynurenine--oxoglutarate transaminase	
+Q8MP09	worm	Q8MP09	nkat-3	Q8MP09	3	15	Kynurenine--oxoglutarate transaminase	
+Q8MP09_CAEEL	worm	Q8MP09	nkat-3	Q8MP09	3	15		
 Q8MP20	dictyostelium-discoideum	Q8MP20	thrS2	Q8MP20	1	46	Probable threonine--tRNA ligase 2, cytoplasmic	
 Q8MPP0	fly	FBgn0036101	NijA	Q8MPP0	26	249	Ninjurin-A (dNINJ-A) [Cleaved into: Secreted ninjurin-A]	
 Q8MPP3	fly	FBgn0033438	Mmp2	Q8MPP3	882	2640	Matrix metalloproteinase-2 (Dm2-MMP) (EC 3.4.24.-)	
@@ -123,7 +126,7 @@ Q8MQE6	worm	Q8MQE6	wsp-1	Q8MQE6	27	94	CRIB domain-containing protein
 Q8MQG6	worm	Q8MQG6	CELE_W02D3.12	Q8MQG6	0	3	Succinate dehydrogenase assembly factor 4, mitochondrial	
 Q8MQG9	worm	Q8MQG9	pqn-75	Q8MQG9	0	2	Basic proline-rich protein	
 Q8MQI6	fly	FBgn0063670	CG40228	Q8MQI6	1	67	Transcription elongation factor 1 homolog	
-Q8MQJ5	fly	FBgn0051122	CG31122	Q8MQJ5	8	17		
+Q8MQJ5	fly	FBgn0051122	CG31122	Q8MQJ5	8	18		
 Q8MQJ6	fly	FBgn0267001	Ten-a	Q8MQJ6	0	2	Tenascin accessory	
 Q8MQJ7	fly	FBgn0260945	Atg1	Q8MQJ7	170	1231	Autophagy-related 1, isoform B (LD18893p)	
 Q8MQJ8	fly	FBgn0036309	Hip1	Q8MQJ8	4	82	Huntingtin interacting protein 1 (LD16566p)	
@@ -166,6 +169,7 @@ Q8MRQ2	fly	FBgn0021800	Reph	Q8MRQ2	3	3	GH05923p (Regulator of eph expression, is
 Q8MRQ4	fly	FBgn0037689	CG8135	Q8MRQ4	0	3	LMBR1 domain-containing protein 2 homolog	
 Q8MRT7	fly	FBgn0038302	Sat	Q8MRT7	1	25	SD26038p	
 Q8MRW1	fly	FBgn0267976	Tim23	Q8MRW1	10	55	SD19278p (Translocase of inner mitochondrial membrane 23)	
+Q8MRW1_DROME	fly	FBgn0267976	Tim23	Q8MRW1	10	55		
 Q8MRW5	fly	FBgn0039225	Ets96B	Q8MRW5	71	362	ETV5-related protein Ets96B	
 Q8MS27	fly	FBgn0038923	mRpL35	Q8MS27	7	140	Large ribosomal subunit protein bL35m (39S ribosomal protein	
 Q8MS37	fly	FBgn0284435	tyn	Q8MS37	0	9	RE15579p (Trynity, isoform A) (Trynity, isoform B) (Trynity,	
@@ -200,20 +204,22 @@ Q8MSM7	fly	FBgn0052181	CG32181	Q8MSM7	0	0	AT19257p
 Q8MSM9	fly	FBgn0037572	CG11698	Q8MSM9	13	251	AT18730p	
 Q8MSQ4	fly	FBgn0024329	Mekk1	Q8MSQ4	64	1115	Mekk1, isoform B (EC 2.7.11.-, EC 2.7.11.25) (SD09178p)	
 Q8MSS1	fly	FBgn0029688	lva	Q8MSS1	0	3	Protein lava lamp	
-Q8MSS7	fly	FBgn0031639	mRpS2	Q8MSS7	18	352	Mitochondrial ribosomal protein S2 (RE59650p)	
+Q8MSS7	fly	FBgn0031639	mRpS2	Q8MSS7	19	353	Mitochondrial ribosomal protein S2 (RE59650p)	
+Q8MSS7_DROME	fly	FBgn0031639	mRpS2	Q8MSS7	19	353		
 Q8MST3	fly	FBgn0053490	CG33490	Q8MST3	1	31	LP11159p	
 Q8MST5	fly	FBgn0003890	betaTub97EF	Q8MST5	10	62	Tubulin beta chain	
 Q8MSU3	fly	FBgn0034067	CG8399	A0A0B4LGL5	0	53		
 Q8MSU4	fly	FBgn0037371	Sym	Q8MSU4	12	95	Symplekin	
 Q8MSV2	fly	FBgn0052423	shep	Q8MSV2	8	42	Protein alan shepard	
 Q8MSW0	fly	FBgn0027086	IleRS	Q8MSW0	5	101	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	
-Q8MSW4	fly	FBgn0036856	Mettl5	Q8MSW4	2	15	rRNA N6-adenosine-methyltransferase Mettl5 (EC 2.1.1.-) (Met	
+Q8MSW4	fly	FBgn0036856	Mettl5	Q8MSW4	4	18	rRNA N6-adenosine-methyltransferase Mettl5 (EC 2.1.1.-) (Met	
 Q8MSW9	fly	FBgn0053505	U3-55K	Q8MSW9	9	123	LD17611p (U3 small nuclear riboprotein factor 55K)	
 Q8MSX2	fly	FBgn0024330	MED6	Q8MSX2	58	514	Mediator of RNA polymerase II transcription subunit 6 (Media	
 Q8MSY4	fly	FBgn0034380	Vps51	Q8MSY4	11	68	Vacuolar protein sorting-associated protein 51 homolog (Prot	
 Q8MT06	fly	FBgn0038473	Ns1	Q8MT06	20	150	Guanine nucleotide-binding protein-like 3 homolog (Nucleoste	
 Q8MT08	fly	FBgn0029667	Gas8	Q8MT08	5	13	Dynein regulatory complex subunit 4 (Growth arrest-specific 	
-Q8MT18	fly	FBgn0039358	Idh3g	Q8MT18	6	62	RH49423p	
+Q8MT18	fly	FBgn0039358	Idh3g	Q8MT18	10	64	RH49423p	
+Q8MT18_DROME	fly	FBgn0039358	Idh3g	Q8MT18	10	64		
 Q8MT36	fly	FBgn0039559	NSD	Q8MT36	19	159	Nuclear receptor binding SET domain protein (EC 2.1.1.357) (	
 Q8MT42	fly	FBgn0032088	CG13102	Q8MT42	0	9	GEO12560p1 (RE57454p)	
 Q8MT48	fly	FBgn0034438	CG9416	Q8MT48	63	343	RE28322p	
@@ -245,12 +251,14 @@ Q8MXQ7	worm	Q8MXQ7	Y92H12BL.1	Q8MXQ7	0	1	Threonylcarbamoyladenosine tRNA methylt
 Q8MXQ8	worm	Q8MXQ8	CELE_Y73B6BL.37	Q8MXQ8	0	7	Lipase_GDSL domain-containing protein	
 Q8MXR0	worm	Q8MXR0	nlp-71	Q8MXR0	0	2	Neuropeptide-Like Protein	
 Q8MXR2	worm	Q8MXR2	hrpf-2	Q8MXR2	1	31	RRM domain-containing protein	
-Q8MXR3	worm	Q8MXR3	ipla-6	Q8MXR3	0	6	PNPLA domain-containing protein	
+Q8MXR3	worm	Q8MXR3	ipla-6	Q8MXR3	1	8	PNPLA domain-containing protein	
+Q8MXR3_CAEEL	worm	Q8MXR3	ipla-6	Q8MXR3	1	8		
 Q8MXS1	worm	Q8MXS1	rab-18	Q8MXS1	4	16	Ras-related protein Rab-18	
 Q8MXS5	worm	Q8MXS5	CELE_Y61A9LA.3	Q8MXS5	0	4	C2H2-type domain-containing protein	
 Q8MXS7	worm	Q8MXS7	ser-6	Q8MXS7	0	2	G-protein coupled receptors family 1 profile domain-containi	
 Q8MXS8	worm	Q8MXS8	CELE_Y47G6A.22	Q8MXS8	1	43	DeHydrogenases, Short chain	
-Q8MXT1	worm	Q8MXT1	prdx-6	Q8MXT1	0	29	Thioredoxin domain-containing protein	
+Q8MXT1	worm	Q8MXT1	prdx-6	Q8MXT1	2	31	Thioredoxin domain-containing protein	
+Q8MXT1_CAEEL	worm	Q8MXT1	prdx-6	Q8MXT1	2	31		
 Q8MXT6	worm	Q8MXT6	col-106	Q8MXT6	0	1	Nematode cuticle collagen N-terminal domain-containing prote	
 Q8MXU3	worm	Q8MXU3	snn-1	Q8MXU3	2	54	ATP-grasp domain-containing protein	
 Q8MXU4	worm	Q8MXU4	rmif-2	Q8MXU4	0	2	RecQ-mediated genome instability protein 2 homolog	
@@ -258,7 +266,7 @@ Q8MXV8	worm	Q8MXV8	glr-6	Q8MXV8	3	8	Glutamate receptor ionotropic, kainate 2
 Q8MY02	fly	FBgn0053207	pxb	Q8MY02	4	6	FI14518p (Pxb, isoform B) (Pxb, isoform C) (Transmembrane pr	
 Q8MY12	dictyostelium-discoideum	Q8MY12	mhkC	Q8MY12	0	1	Myosin heavy chain kinase C	
 Q8MY59	brugia-malayi	Q8MY59	asp-1	Q8MY59	1	5	Aspartic protease BmAsp-1	
-Q8MYE6	dictyostelium-discoideum	Q8MYE6	DDB_G0275953	Q8MYE6	0	3	Molybdenum cofactor sulfurase domain-containing protein	
+Q8MYE6	dictyostelium-discoideum	Q8MYE6	DDB_G0275953	Q8MYE6	1	4	Molybdenum cofactor sulfurase domain-containing protein	
 Q8MYE8	dictyostelium-discoideum	Q8MYE8	paaf1	Q8MYE8	0	3	Probable proteasomal ATPase-associated factor 1	
 Q8MYF0	dictyostelium-discoideum	Q8MYF0	mgm101	Q8MYF0	0	1	Mitochondrial genome maintenance protein mgm101 homolog	
 Q8MYF1	dictyostelium-discoideum	Q8MYF1	DDB_G0277449	Q8MYF1	0	2	Probable serine/threonine-protein kinase DDB_G0277449	
@@ -272,7 +280,7 @@ Q8MYM5	worm	Q8MYM5	sws-1	Q8MYM5	2	34	SWIM-type domain-containing protein
 Q8MYM6	worm	Q8MYM6	reps-1	Q8MYM6	6	26	REPS (RalBP1-associated Eps domain-containing protein) homol	
 Q8MYM7	worm	Q8MYM7	CELE_Y39B6A.37	Q8MYM7	1	1	Structural protein	
 Q8MYM8	worm	Q8MYM8	gtf-2f2	Q8MYM8	13	134	General transcription factor IIF subunit 2	
-Q8MYM9	worm	Q8MYM9	Y39B6A.34	Q8MYM9	0	2	COA8 family protein Y39B6A.34, mitochondrial	
+Q8MYM9	worm	Q8MYM9	Y39B6A.34	Q8MYM9	2	4	COA8 family protein Y39B6A.34, mitochondrial	
 Q8MYN4	worm	Q8MYN4	CELE_Y39B6A.25	Q8MYN4	1	18	Tudor domain-containing protein	
 Q8MYN5	worm	Q8MYN5	asp-17	Q8MYN5	0	1	Aspartic protease 17	
 Q8MYN6	worm	Q8MYN6	asp-16	Q8MYN6	0	2	Peptidase A1 domain-containing protein	
@@ -299,5 +307,6 @@ Q8MZ67	fly	FBgn0011239	ms(2)35Ci	Q8MZ67	3	18	AT28918p (GEO08806p1) (Male sterile
 Q8MZA7	fly	FBgn0034671	CG13494	Q8MZA7	4	20	AT17606p	
 Q8MZB8	fly	FBgn0051542	CG31542	Q8MZB8	3	55	AT15479p	
 Q8MZC4	fly	FBgn0039360	Cls	Q8MZC4	0	21	Probable cardiolipin synthase (CMP-forming) (CLS) (EC 2.7.8.	
-Q8MZG9	fly	FBgn0033203	CG2070	Q8MZG9	1	37	LP06328p	
+Q8MZG9	fly	FBgn0033203	CG2070	Q8MZG9	2	38	LP06328p	
+Q8MZG9_DROME	fly	FBgn0033203	CG2070	Q8MZG9	2	38		
 Q8MZI3	fly	FBgn0035720	CG10077	Q8MZI3	4	86	RNA helicase (EC 3.6.4.13)	

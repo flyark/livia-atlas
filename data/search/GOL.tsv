@@ -99,7 +99,7 @@ GOLGI	fly	FBgn0086605	CG9853	Q9VN19	2	25	Golgi to ER traffic protein 4 homolog	w
 GOLGI	fly	FBgn0260744	Tango9	Q9VGF5	2	31	LP09696p (Transport and golgi organization 9, isoform A) (Tr	w
 GOLGI	fly	FBgn0260856	Membrin	Q9VRL2	17	109	Probable Golgi SNAP receptor complex member 2	w
 GOLGI	fly	FBgn0264561	Glg1	M9PIG4	92	2373	Golgi complex-localized glycoprotein 1, isoform B	w
-GOLGI	fly	FBgn0267378	sau	Q9VQ93	47	753	Golgi phosphoprotein 3 homolog sauron (Protein rotini)	w
+GOLGI	fly	FBgn0267378	sau	Q9VQ93	51	757	Golgi phosphoprotein 3 homolog sauron (Protein rotini)	w
 GOLGI	fly	FBgn0286898	Tango1	Q9VMA7	418	2438	Transport and Golgi organization protein 1	w
 GOLGI	fly	FBgn0287204	Cog8	Q9VKH0	10	44	Conserved oligomeric Golgi complex subunit 8 (COG complex su	w
 GOLGI	human	A6NH52	TVP23A	A6NH52	7	38	Golgi apparatus membrane protein TVP23 homolog A	w
@@ -145,7 +145,7 @@ GOLGI	human	Q9BQQ3	GORASP1	Q9BQQ3	26	153	Golgi reassembly-stacking protein 1 (Go
 GOLGI	human	Q9C0B7	TANGO6	Q9C0B7	24	309	Transport and Golgi organization protein 6 homolog (Transmem	w
 GOLGI	human	Q9H3P7	ACBD3	Q9H3P7	32	282	Golgi resident protein GCP60 (Acyl-CoA-binding domain-contai	w
 GOLGI	human	Q9H4A5	GOLPH3L	Q9H4A5	16	118	Golgi phosphoprotein 3-like (GPP34-related protein)	w
-GOLGI	human	Q9H4A6	GOLPH3	Q9H4A6	19	280	Golgi phosphoprotein 3 (Coat protein GPP34) (Mitochondrial D	w
+GOLGI	human	Q9H4A6	GOLPH3	Q9H4A6	27	289	Golgi phosphoprotein 3 (Coat protein GPP34) (Mitochondrial D	w
 GOLGI	human	Q9H741	SPRING1	Q9H741	16	261	SREBP regulating gene protein (SREBF pathway regulator in Go	w
 GOLGI	human	Q9H8Y8	GORASP2	Q9H8Y8	38	374	Golgi reassembly-stacking protein 2 (GRS2) (Golgi phosphopro	w
 GOLGI	human	Q9H9E3	COG4	Q9H9E3	33	196	Conserved oligomeric Golgi complex subunit 4 (COG complex su	w
@@ -174,7 +174,7 @@ GOLGI	worm	Q22666	CELE_T22C1.6	Q22666	2	10	Transport and Golgi organization prot
 GOLGI	worm	Q6AW08	cogc-3	Q6AW08	6	58	Conserved oligomeric Golgi complex subunit 3	w
 GOLGI	worm	Q95XZ0	cogc-4	Q95XZ0	12	52	Conserved oligomeric Golgi complex subunit 4	w
 GOLGI	worm	Q95ZW1	gos-28	Q95ZW1	7	43	Golgi SNAP receptor complex member 1	w
-GOLGI	worm	Q9N3S8	CELE_Y47G6A.18	Q9N3S8	1	33	Golgi phosphoprotein 3 homolog sauron	w
+GOLGI	worm	Q9N3S8	CELE_Y47G6A.18	Q9N3S8	6	39	Golgi phosphoprotein 3 homolog sauron	w
 GOLGI	yeast	P36081	PSG1	P36081	2	144	PMA1 stabilization in the Golgi protein 1	w
 GOLGI	yeast	P36164	TVP38	P36164	0	16	Golgi apparatus membrane protein TVP38	w
 GOLGI	yeast	P37296	STV1	P37296	8	68	V-type proton ATPase subunit a, Golgi isoform	w
@@ -211,7 +211,7 @@ GOLGI	zebrafish	F1QI79	golm1	F1QI79	0	3	Golgi membrane protein 1	w
 GOLGI	zebrafish	F1R3Y3	get4	F1R3Y3	7	25	Golgi to ER traffic protein 4 homolog	w
 GOLGI	zebrafish	Q29RB1	cog4	Q29RB1	9	29	Conserved oligomeric Golgi complex subunit 4	w
 GOLGI	zebrafish	Q4V8Q4	golt1bb	Q4V8Q4	0	2	Golgi transport 1Bb	w
-GOLGI	zebrafish	Q503S3	golph3a	Q503S3	1	20	Golgi phosphoprotein 3	w
+GOLGI	zebrafish	Q503S3	golph3a	Q503S3	8	27	Golgi phosphoprotein 3	w
 GOLGI	zebrafish	Q5RHP5	acbd3	Q5RHP5	5	22	Golgi resident protein GCP60	w
 GOLGI	zebrafish	Q7T366	gosr2	Q7T366	16	91	Golgi SNAP receptor complex member 2	w
 GOLGI-ASSOCIATED	human	A0A0J9YVX5	?	A0A0J9YVX5	0	8	Golgi-associated PDZ and coiled-coil motif-containing protei	w
@@ -336,13 +336,16 @@ GOLM2	rattus-norvegicus	D3ZW58	Golm2	D3ZW58	0	1	Protein GOLM2
 GOLM2	zebrafish	E7FBP9	golm2	E7FBP9	1	22	Protein GOLM2	w
 GOLM2	zebrafish	E7FBP9	golm2	E7FBP9	1	22	Protein GOLM2	w
 GOLM2_HUMAN	human	Q6P4E1	GOLM2	Q6P4E1	15	55		
-GOLP3_HUMAN	human	Q9H4A6	GOLPH3	Q9H4A6	19	280		
+GOLP3_DROME	fly	FBgn0267378	sau	Q9VQ93	51	757		
+GOLP3_HUMAN	human	Q9H4A6	GOLPH3	Q9H4A6	27	289		
 GOLPH1	human	Q9H3P7	ACBD3	Q9H3P7	32	282		
 GOLPH2	human	Q8NBJ4	GOLM1	Q8NBJ4	20	185		
-GOLPH3	human	Q9H4A6	GOLPH3	Q9H4A6	19	280	Golgi phosphoprotein 3 (Coat protein GPP34) (Mitochondrial D	
-GOLPH3	mus-musculus	Q9CRA5	Golph3	Q9CRA5	0	38	Golgi phosphoprotein 3	
-GOLPH3	rattus-norvegicus	Q9ERE4	Golph3	Q9ERE4	0	33	Golgi phosphoprotein 3	
-GOLPH3A	zebrafish	Q503S3	golph3a	Q503S3	1	20	Golgi phosphoprotein 3	
+GOLPH3	human	Q9H4A6	GOLPH3	Q9H4A6	27	289	Golgi phosphoprotein 3 (Coat protein GPP34) (Mitochondrial D	
+GOLPH3	mus-musculus	Q9CRA5	Golph3	Q9CRA5	6	46	Golgi phosphoprotein 3	
+GOLPH3	pan-troglodytes	H2QQQ1	GOLPH3	H2QQQ1	8	9	Golgi phosphoprotein 3	
+GOLPH3	rattus-norvegicus	Q9ERE4	Golph3	Q9ERE4	7	41	Golgi phosphoprotein 3	
+GOLPH3.S	xenopus-laevis	Q6GQ75	golph3.S	Q6GQ75	6	7	MGC80284 protein	
+GOLPH3A	zebrafish	Q503S3	golph3a	Q503S3	8	27	Golgi phosphoprotein 3	
 GOLPH3B	zebrafish	E7FGM1	golph3b	E7FGM1	0	20	Golgi phosphoprotein 3	
 GOLPH3L	human	Q9H4A5	GOLPH3L	Q9H4A5	16	118	Golgi phosphoprotein 3-like (GPP34-related protein)	
 GOLPH3L	mus-musculus	Q8R088	Golph3l	Q8R088	0	18	Golgi phosphoprotein 3-like	

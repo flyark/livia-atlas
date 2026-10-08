@@ -10,10 +10,10 @@ P42057	zea-mays	P42057	POR1	P42057	0	30	Outer plastidial membrane protein porin
 P42073	yeast	P42073	REF2	P42073	6	49	RNA end formation protein 2	
 P42081	human	P42081	CD86	P42081	99	492	T-lymphocyte activation antigen CD86 (Activation B7-2 antige	
 P42082	mus-musculus	P42082	Cd86	P42082	9	81	T-lymphocyte activation antigen CD86	
-P42123	rattus-norvegicus	P42123	Ldhb	P42123	2	18	L-lactate dehydrogenase B chain	
+P42123	rattus-norvegicus	P42123	Ldhb	P42123	3	19	L-lactate dehydrogenase B chain	
 P42124	fly	FBgn0000629	E(z)	M9PHZ5	36	491		
-P42125	mus-musculus	P42125	Eci1	P42125	3	71	Enoyl-CoA delta isomerase 1, mitochondrial	
-P42126	human	P42126	ECI1	P42126	7	190	Enoyl-CoA delta isomerase 1, mitochondrial (EC 5.3.3.8) (3,2	
+P42125	mus-musculus	P42125	Eci1	P42125	10	81	Enoyl-CoA delta isomerase 1, mitochondrial	
+P42126	human	P42126	ECI1	P42126	18	200	Enoyl-CoA delta isomerase 1, mitochondrial (EC 5.3.3.8) (3,2	
 P42127	human	P42127	ASIP	P42127	9	61	Agouti-signaling protein (ASP) (Agouti switch protein)	
 P42128	mus-musculus	P42128	Foxk1	P42128	2	16	Forkhead box protein K1	
 P42158	arabidopsis-thaliana	P42158	CKL1	P42158	1	14	Casein kinase 1-like protein 1	
@@ -96,7 +96,7 @@ P42568	human	P42568	MLLT3	P42568	195	540	Protein AF-9 (ALL1-fused gene from chro
 P42570	fly	FBgn0003114	plu	P42570	5	39	DNA replication inhibitor plutonium	
 P42571	rattus-norvegicus	P42571	Pou2f3	P42571	4	11	POU domain, class 2, transcription factor 3	
 P42573	worm	P42573	ced-3	P42573	7	110	Cell death protein 3	
-P42574	human	P42574	CASP3	P42574	40	419	Caspase-3 (CASP-3) (EC 3.4.22.56) (Apopain) (Cysteine protea	
+P42574	human	P42574	CASP3	P42574	42	421	Caspase-3 (CASP-3) (EC 3.4.22.56) (Apopain) (Cysteine protea	
 P42575	human	P42575	CASP2	P42575	26	168	Caspase-2 (CASP-2) (EC 3.4.22.55) (Neural precursor cell exp	
 P42580	mus-musculus	P42580	Nkx1-2	P42580	0	2	NK1 transcription factor-related protein 2	
 P42581	mus-musculus	P42581	Hmx3	P42581	0	1	Homeobox protein HMX3	
@@ -129,7 +129,7 @@ P42667	rattus-norvegicus	P42667	Sec11a	P42667	3	14	Signal peptidase complex cata
 P42669	mus-musculus	P42669	Pura	P42669	1	43	Transcriptional activator protein Pur-alpha	
 P42671	virus	P42671	L3	P42671	1	38	Hexon protein	
 P42672	virus	P42672	L3	P42672	15	38	Protease	
-P42676	rattus-norvegicus	P42676	Nln	P42676	0	1	Neurolysin, mitochondrial	
+P42676	rattus-norvegicus	P42676	Nln	P42676	2	4	Neurolysin, mitochondrial	
 P42677	human	P42677	RPS27	P42677	88	970	Small ribosomal subunit protein eS27 (40S ribosomal protein 	
 P42679	human	P42679	MATK	P42679	191	1296	Megakaryocyte-associated tyrosine-protein kinase (EC 2.7.10.	
 P42680	human	P42680	TEC	P42680	72	1380	Tyrosine-protein kinase Tec (EC 2.7.10.2)	
@@ -171,10 +171,10 @@ P42760	arabidopsis-thaliana	P42760	GSTF6	P42760	2	16	Glutathione S-transferase F
 P42761	arabidopsis-thaliana	P42761	GSTF10	P42761	2	15	Glutathione S-transferase F10	
 P42762	arabidopsis-thaliana	P42762	CLPD	P42762	2	28	Chaperone protein ClpD, chloroplastic	
 P42763	arabidopsis-thaliana	P42763	ERD14	P42763	0	10	Dehydrin ERD14	
-P42765	human	P42765	ACAA2	P42765	6	247	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	
+P42765	human	P42765	ACAA2	P42765	6	248	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	
 P42766	human	P42766	RPL35	P42766	58	975	Large ribosomal subunit protein uL29 (60S ribosomal protein 	
 P42768	human	P42768	WAS	P42768	73	237	Actin nucleation-promoting factor WAS (Wiskott-Aldrich syndr	
-P42770	arabidopsis-thaliana	P42770	EMB2360	P42770	2	165	Glutathione reductase, chloroplastic	
+P42770	arabidopsis-thaliana	P42770	EMB2360	P42770	3	166	Glutathione reductase, chloroplastic	
 P42771	human	P42771	CDKN2A	P42771	90	744	Cyclin-dependent kinase inhibitor 2A (Cyclin-dependent kinas	
 P42772	human	P42772	CDKN2B	P42772	15	153	Cyclin-dependent kinase 4 inhibitor B (Multiple tumor suppre	
 P42773	human	P42773	CDKN2C	P42773	28	195	Cyclin-dependent kinase 4 inhibitor C (Cyclin-dependent kina	
@@ -241,7 +241,7 @@ P42912	escherichia-coli-83333	P42912	agaI	P42912	0	3	Putative deaminase AgaI
 P42913	escherichia-coli-83333	P42913	yraH	P42913	10	13	Uncharacterized fimbrial-like protein YraH	
 P42914	escherichia-coli-83333	P42914	yraI	P42914	11	14	Probable fimbrial chaperone YraI	
 P42915	escherichia-coli-83333	P42915	yraJ	P42915	0	4	Outer membrane usher protein YraJ	
-P42925	mus-musculus	P42925	Pxmp2	P42925	1	2	Peroxisomal membrane protein 2	
+P42925	mus-musculus	P42925	Pxmp2	P42925	4	5	Peroxisomal membrane protein 2	
 P42927	virus	P42927	SPI-1	P42927	1	224	Serine proteinase inhibitor 1	
 P42930	rattus-norvegicus	P42930	Hspb1	P42930	3	92	Heat shock protein beta-1	
 P42932	mus-musculus	P42932	Cct8	P42932	5	91	T-complex protein 1 subunit theta	
@@ -252,7 +252,7 @@ P42936	yeast	P42936	YGR201C	P42936	0	14	Putative elongation factor 1 gamma homol
 P42937	yeast	P42937	YCH1	P42937	0	21	CDC25-like phosphatase YCH1	
 P42938	yeast	P42938	TDA10	P42938	1	7	Probable ATP-dependent kinase TDA10	
 P42939	yeast	P42939	MVB12	P42939	3	19	Multivesicular body sorting factor 12	
-P42940	yeast	P42940	CIR1	P42940	2	40	Probable electron transfer flavoprotein subunit beta	
+P42940	yeast	P42940	CIR1	P42940	4	42	Probable electron transfer flavoprotein subunit beta	
 P42941	yeast	P42941	SER2	P42941	0	20	Phosphoserine phosphatase	
 P42942	yeast	P42942	YGR210C	P42942	1	8	Uncharacterized GTP-binding protein YGR210C	
 P42943	yeast	P42943	CCT7	P42943	5	89	T-complex protein 1 subunit eta	

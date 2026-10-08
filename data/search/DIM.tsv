@@ -55,7 +55,7 @@ DIMERIZATION	human	Q14582	MXD4	Q14582	118	384	Max dimerization protein 4 (Max di
 DIMERIZATION	human	Q8IWI9	MGA	Q8IWI9	29	161	MAX gene-associated protein (MAX dimerization protein 5)	w
 DIMERIZATION	human	Q8WYK2	JDP2	Q8WYK2	81	446	Jun dimerization protein 2	w
 DIMERIZATION	human	Q9BW11	MXD3	Q9BW11	94	402	Max dimerization protein 3 (Max dimerizer 3) (Class C basic 	w
-DIMERIZATION	human	Q9H0N5	PCBD2	Q9H0N5	9	121	Pterin-4-alpha-carbinolamine dehydratase 2 (PHS 2) (EC 4.2.1	w
+DIMERIZATION	human	Q9H0N5	PCBD2	Q9H0N5	11	123	Pterin-4-alpha-carbinolamine dehydratase 2 (PHS 2) (EC 4.2.1	w
 DIMERIZATION	human	Q9NR55	BATF3	Q9NR55	119	594	Basic leucine zipper transcriptional factor ATF-like 3 (B-AT	w
 DIMERIZATION	worm	Q9U380	chaf-1	Q9U380	3	15	Chromatin assembly factor 1 subunit A dimerization domain-co	w
 DIMERIZATION	zebrafish	A2BFZ1	mxd1	A2BFZ1	5	15	Max dimerization protein 1	w
@@ -74,9 +74,9 @@ DIMETHYL-L-LYSINE9	human	Q6ZMT4	KDM7A	Q6ZMT4	22	99	Lysine-specific demethylase 7
 DIMETHYLADENOSI	human	Q9UNQ2	DIMT1	Q9UNQ2	24	393	Dimethyladenosine transferase (EC 2.1.1.183) (18S rRNA (aden	w
 DIMETHYLADENOSINE	fly	FBgn0037778	mtTFB2	Q9VH38	16	379	Dimethyladenosine transferase 2, mitochondrial (EC 2.1.1.-) 	w
 DIMETHYLADENOSINE	fly	FBgn0039627	CG11837	Q9VAQ5	9	214	Probable dimethyladenosine transferase (EC 2.1.1.183) (Proba	w
-DIMETHYLADENOSINE	fly	FBgn0261381	mtTFB1	Q9VTM5	1	113	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
-DIMETHYLADENOSINE	human	Q8WVM0	TFB1M	Q8WVM0	14	219	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
-DIMETHYLADENOSINE	human	Q9H5Q4	TFB2M	Q9H5Q4	18	529	Dimethyladenosine transferase 2, mitochondrial (EC 2.1.1.-) 	w
+DIMETHYLADENOSINE	fly	FBgn0261381	mtTFB1	Q9VTM5	2	114	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
+DIMETHYLADENOSINE	human	Q8WVM0	TFB1M	Q8WVM0	20	225	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
+DIMETHYLADENOSINE	human	Q9H5Q4	TFB2M	Q9H5Q4	22	532	Dimethyladenosine transferase 2, mitochondrial (EC 2.1.1.-) 	w
 DIMETHYLADENOSINE	human	Q9UNQ2	DIMT1	Q9UNQ2	24	393	Dimethyladenosine transferase (EC 2.1.1.183) (18S rRNA (aden	w
 DIMETHYLADENOSINE	worm	P91424	tfbm-1	P91424	2	66	Dimethyladenosine transferase 1, mitochondrial	w
 DIMETHYLADENOSINE	worm	Q09522	E02H1.1	Q09522	6	97	Probable dimethyladenosine transferase	w
@@ -84,7 +84,7 @@ DIMETHYLADENOSINE	yeast	P41819	DIM1	P41819	13	187	Dimethyladenosine transferase	
 DIMETHYLALLYLTRANSFERASE	human	Q9H3H1	TRIT1	Q9H3H1	0	44	tRNA dimethylallyltransferase (EC 2.5.1.75) (Isopentenyl-dip	w
 DIMETHYLALLYLTRANSFERASE	yeast	P07884	MOD5	P07884	0	14	tRNA dimethylallyltransferase	w
 DIMETHYLALLYLTRANSTRANSFERASE	human	O95749	GGPS1	O95749	1	134	Geranylgeranyl pyrophosphate synthase (GGPP synthase) (GGPPS	w
-DIMETHYLALLYLTRANSTRANSFERASE	human	P14324	FDPS	P14324	3	156	Farnesyl pyrophosphate synthase (FPP synthase) (FPS) (EC 2.5	w
+DIMETHYLALLYLTRANSTRANSFERASE	human	P14324	FDPS	P14324	4	157	Farnesyl pyrophosphate synthase (FPP synthase) (FPS) (EC 2.5	w
 DIMETHYLAMINOH	human	O95865	DDAH2	O95865	13	127	Putative hydrolase DDAH2 (EC 3.-.-.-) (DDAHII) (Inactive N(G	w
 DIMETHYLAMINOHYDROLASE	human	O94760	DDAH1	O94760	10	116	N(G),N(G)-dimethylarginine dimethylaminohydrolase 1 (DDAH-1)	w
 DIMETHYLAMINOHYDROLASE	human	O95865	DDAH2	O95865	13	127	Putative hydrolase DDAH2 (EC 3.-.-.-) (DDAHII) (Inactive N(G	w
@@ -99,12 +99,13 @@ DIMETHYLARGININE	human	O94760	DDAH1	O94760	10	116	N(G),N(G)-dimethylarginine dim
 DIMETHYLARGININE	human	O95865	DDAH2	O95865	13	127	Putative hydrolase DDAH2 (EC 3.-.-.-) (DDAHII) (Inactive N(G	w
 DIMETHYLARGININE	zebrafish	A5PN62	ddah2	A5PN62	0	13	Dimethylarginine dimethylaminohydrolase 2	w
 DIMETHYLASE	fly	FBgn0037778	mtTFB2	Q9VH38	16	379	Dimethyladenosine transferase 2, mitochondrial (EC 2.1.1.-) 	w
-DIMETHYLASE	fly	FBgn0261381	mtTFB1	Q9VTM5	1	113	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
-DIMETHYLASE	human	Q8WVM0	TFB1M	Q8WVM0	14	219	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
+DIMETHYLASE	fly	FBgn0261381	mtTFB1	Q9VTM5	2	114	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
+DIMETHYLASE	human	Q8WVM0	TFB1M	Q8WVM0	20	225	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
 DIMETHYLASE	human	Q96FB5	METTL25B	Q96FB5	0	10	Methyltransferase-like protein 25B (Protein RRNAD1) (Ribosom	w
 DIMETHYLASE	human	Q9UNQ2	DIMT1	Q9UNQ2	24	393	Dimethyladenosine transferase (EC 2.1.1.183) (18S rRNA (aden	w
-DIMETHYLGLYCINE	human	Q9UI17	DMGDH	Q9UI17	1	47	Dimethylglycine dehydrogenase, mitochondrial (EC 1.5.8.4) (M	w
+DIMETHYLGLYCINE	human	Q9UI17	DMGDH	Q9UI17	5	51	Dimethylglycine dehydrogenase, mitochondrial (EC 1.5.8.4) (M	w
 DIMETHYLGLYCINE	worm	Q6AW03	CELE_Y37E3.17	Q6AW03	1	19	Dimethylglycine dehydrogenase, mitochondrial	w
+DIMETHYLGLYCINE	zebrafish	A0A8M9PCV7	dmgdh	A0A8M9PCV7	2	2	dimethylglycine dehydrogenase, mitochondrial	w
 DIMETHYLGUANOSINE-26	fly	FBgn0032430	Trm1	Q9VK89	0	24	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w
 DIMETHYLGUANOSINE-26	human	Q9NXH9	TRMT1	Q9NXH9	5	168	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w
 DIMETHYLTRANSFERASE	fly	FBgn0032430	Trm1	Q9VK89	0	24	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	w

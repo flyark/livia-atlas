@@ -23,7 +23,7 @@ SPT16	yeast	P32558	SPT16	P32558	14	324	FACT complex subunit SPT16
 SPT16	zea-mays	Q8H6B1	SPT16	Q8H6B1	16	189	FACT complex subunit SPT16	
 SPT16_HUMAN	human	Q9BXB7	SPATA16	Q9BXB7	0	40		
 SPT17_HUMAN	human	Q96L03	SPATA17	Q96L03	14	86		
-SPT19_HUMAN	human	Q7Z5L4	SPATA19	Q7Z5L4	7	61		
+SPT19_HUMAN	human	Q7Z5L4	SPATA19	Q7Z5L4	11	65		
 SPT2	fly	FBgn0027574	CG5815	Q8IMP6	1	4	Protein SPT2 homolog	w
 SPT2	human	Q68D10	SPTY2D1	Q68D10	33	189	Protein SPT2 homolog (Protein KU002155) (SPT2 domain-contain	w
 SPT2	schizosaccharomyces-pombe	O94714	spt2	O94714	0	1	Protein spt2	
@@ -37,7 +37,7 @@ SPT20	human	Q3ZLR7	SUPT20HL1	Q3ZLR7	2	4	Transcription factor SPT20 homolog-like 
 SPT20	human	Q8NEM7	SUPT20H	Q8NEM7	28	169	Transcription factor SPT20 homolog (p38-interacting protein)	w
 SPT20	schizosaccharomyces-pombe	O14174	spt20	O14174	6	32	SAGA complex subunit Spt20	
 SPT20	yeast	P50875	SPT20	P50875	9	103	SAGA complex subunit SPT20	
-SPT20_HUMAN	human	Q8TB22	SPATA20	Q8TB22	10	95		
+SPT20_HUMAN	human	Q8TB22	SPATA20	Q8TB22	16	102		
 SPT21	yeast	P35209	SPT21	P35209	18	232	Protein SPT21	
 SPT21_HUMAN	human	Q7Z572	SPATA21	Q7Z572	11	53		
 SPT22_HUMAN	human	Q8NHS9	SPATA22	Q8NHS9	8	35		
@@ -123,7 +123,8 @@ SPTBN2	human	O15020	SPTBN2	O15020	9	243	Spectrin beta chain, non-erythrocytic 2 
 SPTBN3	human	Q9H254	SPTBN4	Q9H254	4	238		
 SPTBN4	human	Q9H254	SPTBN4	Q9H254	4	238	Spectrin beta chain, non-erythrocytic 4 (Beta-IV spectrin) (	
 SPTC1_HUMAN	human	O15269	SPTLC1	O15269	17	192		
-SPTC2_HUMAN	human	O15270	SPTLC2	O15270	13	146		
+SPTC2_CAEEL	worm	Q20375	sptl-2	Q20375	3	8		
+SPTC2_HUMAN	human	O15270	SPTLC2	O15270	17	150		
 SPTC3_HUMAN	human	Q9NUV7	SPTLC3	Q9NUV7	11	56		
 SPTCS_HUMAN	human	Q96JI7	SPG11	Q96JI7	7	55		
 SPTF-1	worm	Q93727	sptf-1	Q93727	0	15	Specificity protein transcription factor 1	
@@ -131,15 +132,18 @@ SPTF-2	worm	Q22678	sptf-2	Q22678	1	7	Specificity protein transcription factor 2
 SPTF-3	worm	Q9XW26	sptf-3	Q9XW26	2	38	Specificity protein transcription factor 3	
 SPTF-ASSOCIATED	human	O94864	SUPT7L	O94864	32	95	STAGA complex 65 subunit gamma (Adenocarcinoma antigen ART1)	w
 SPTL-1	worm	P91079	sptl-1	P91079	2	14	Serine palmitoyltransferase 1	
-SPTL-2	worm	Q20375	sptl-2	Q20375	2	7	Serine palmitoyltransferase 2	
+SPTL-2	worm	Q20375	sptl-2	Q20375	3	8	Serine palmitoyltransferase 2	
 SPTL-3	worm	Q9XVI6	sptl-3	Q9XVI6	2	11	Serine palmitoyltransferase 3	
 SPTLC1	human	O15269	SPTLC1	O15269	17	192	Serine palmitoyltransferase 1 (EC 2.3.1.50) (Long chain base	
 SPTLC1	mus-musculus	O35704	Sptlc1	O35704	5	30	Serine palmitoyltransferase 1	
 SPTLC1	rattus-norvegicus	D4A2H2	Sptlc1	D4A2H2	4	23	Serine palmitoyltransferase 1	
 SPTLC1	zebrafish	Q502G6	sptlc1	Q502G6	5	26	Serine palmitoyltransferase 1	
-SPTLC2	human	O15270	SPTLC2	O15270	13	146	Serine palmitoyltransferase 2 (EC 2.3.1.50) (Long chain base	
-SPTLC2	mus-musculus	P97363	Sptlc2	P97363	10	17	Serine palmitoyltransferase 2	
-SPTLC2	rattus-norvegicus	Q3B7D2	Sptlc2	Q3B7D2	6	14	Serine palmitoyltransferase 2	
+SPTLC2	human	O15270	SPTLC2	O15270	17	150	Serine palmitoyltransferase 2 (EC 2.3.1.50) (Long chain base	
+SPTLC2	mus-musculus	P97363	Sptlc2	P97363	13	20	Serine palmitoyltransferase 2	
+SPTLC2	pan-troglodytes	K7BVV1	SPTLC2	K7BVV1	4	4	Serine palmitoyltransferase long chain base subunit 2	
+SPTLC2	rattus-norvegicus	Q3B7D2	Sptlc2	Q3B7D2	10	18	Serine palmitoyltransferase 2	
+SPTLC2	zebrafish	Q503F0	sptlc2	Q503F0	2	2	Serine palmitoyltransferase, long chain base subunit 2	
+SPTLC2.S	xenopus-laevis	Q6GP36	sptlc2.S	Q6GP36	2	2	MGC80715 protein	
 SPTLC2A	zebrafish	A0A8M1N5Y9	sptlc2a	A0A8M1N5Y9	7	12	serine C-palmitoyltransferase	
 SPTLC2L	human	Q9NUV7	SPTLC3	Q9NUV7	11	56		
 SPTLC3	human	Q9NUV7	SPTLC3	Q9NUV7	11	56	Serine palmitoyltransferase 3 (EC 2.3.1.50) (Long chain base	

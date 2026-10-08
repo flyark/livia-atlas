@@ -10,7 +10,7 @@ GRP-1	oryza-sativa-subsp-japonica	A3CG83	GRP-1	A3CG83	0	15	Putative glycine-rich
 GRP-1	worm	P34512	grp-1	P34512	8	17	GTP exchange factor for ARFs 1	
 GRP-10	human	P07492	GRP	P07492	60	427	Gastrin-releasing peptide (GRP) [Cleaved into: Neuromedin-C 	w
 GRP-170	human	Q9Y4L1	HYOU1	Q9Y4L1	26	299	Hypoxia up-regulated protein 1 (150 kDa oxygen-regulated pro	w
-GRP-75	human	P38646	HSPA9	P38646	85	794	Stress-70 protein, mitochondrial (mt-HSP70) (EC 3.6.4.10) (7	w
+GRP-75	human	P38646	HSPA9	P38646	90	799	Stress-70 protein, mitochondrial (mt-HSP70) (EC 3.6.4.10) (7	w
 GRP-78	fly	FBgn0001218	Hsc70-3	P29844	76	522	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
 GRP-78	human	P11021	HSPA5	P11021	121	1350	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
 GRP-94	human	P14625	HSP90B1	P14625	41	644	Endoplasmin (EC 3.6.4.-) (94 kDa glucose-regulated protein) 	w
@@ -43,8 +43,8 @@ GRP4_HUMAN	human	Q8TDF6	RASGRP4	Q8TDF6	28	147
 GRP5	arabidopsis-thaliana	Q9LTP5	GRP5	Q9LTP5	0	1	Glycine-rich protein 5	
 GRP58	human	P30101	PDIA3	P30101	17	445		
 GRP60	human	P27797	CALR	P27797	71	768	Calreticulin (CRP55) (Calregulin) (Endoplasmic reticulum res	w
-GRP75	human	P38646	HSPA9	P38646	85	794		
-GRP75_HUMAN	human	P38646	HSPA9	P38646	85	794		
+GRP75	human	P38646	HSPA9	P38646	90	799		
+GRP75_HUMAN	human	P38646	HSPA9	P38646	90	799		
 GRP78	human	P11021	HSPA5	P11021	121	1350		
 GRP9	arabidopsis-thaliana	Q9SL23	GRP9	Q9SL23	0	9	GLYCINE RICH PROTEIN 9	
 GRP94	dictyostelium-discoideum	Q9NKX1	grp94	Q9NKX1	7	87	Endoplasmin homolog	
@@ -55,9 +55,9 @@ GRP94B	human	Q58FF3	HSP90B2P	Q58FF3	5	15
 GRP94P1	human	Q58FF3	HSP90B2P	Q58FF3	5	15		
 GRPA	dictyostelium-discoideum	Q54C46	grpA	Q54C46	1	16	Golgi reassembly stacking protein	
 GRPE	campylobacter-jejuni-subsp-jejuni-serotype-o-2	O69297	grpE	O69297	1	80	Protein GrpE	
-GRPE	dictyostelium-discoideum	Q54QF9	grpE	Q54QF9	1	34	GrpE protein homolog, mitochondrial	
+GRPE	dictyostelium-discoideum	Q54QF9	grpE	Q54QF9	2	34	GrpE protein homolog, mitochondrial	
 GRPE	escherichia-coli-83333	P09372	grpE	P09372	1	26	Protein GrpE	
-GRPE	fly	FBgn0014877	Roe1	P48604	4	113	GrpE protein homolog, mitochondrial (dRoe1)	w
+GRPE	fly	FBgn0014877	Roe1	P48604	5	113	GrpE protein homolog, mitochondrial (dRoe1)	w
 GRPE	haemophilus-influenzae	P43732	grpE	P43732	1	11	Protein GrpE	
 GRPE	helicobacter-pylori	P55970	grpE	P55970	1	12	Protein GrpE	
 GRPE	human	Q8TAA5	GRPEL2	Q8TAA5	8	104	GrpE protein homolog 2, mitochondrial (Mt-GrpE#2) (Nucleotid	w
@@ -72,20 +72,27 @@ GRPE	salmonella-typhimurium	Q7CPZ4	grpE	Q7CPZ4	1	17	Protein GrpE
 GRPE	shigella-dysenteriae-serotype-1	Q32CX5	grpE	Q32CX5	1	23	Protein GrpE	
 GRPE	staphylococcus-aureus-93061	Q2FXZ1	grpE	Q2FXZ1	0	10	Protein GrpE	
 GRPE	streptococcus-pneumoniae	Q8CWT4	grpE	Q8CWT4	0	7	Protein GrpE	
-GRPE	worm	Q18421	C34C12.8	Q18421	3	67	GrpE protein homolog, mitochondrial	w
-GRPE	yeast	P38523	MGE1	P38523	5	90	GrpE protein homolog, mitochondrial	w
+GRPE	worm	Q18421	C34C12.8	Q18421	4	67	GrpE protein homolog, mitochondrial	w
+GRPE	yeast	P38523	MGE1	P38523	6	91	GrpE protein homolog, mitochondrial	w
 GRPE	zebrafish	E7F0C3	grpel2	E7F0C3	4	84	GrpE protein homolog 2, mitochondrial	w
-GRPE	zebrafish	Q32PS5	grpel1	Q32PS5	8	82	GrpE protein homolog	w
+GRPE	zebrafish	Q32PS5	grpel1	Q32PS5	9	83	GrpE protein homolog	w
 GRPE1_HUMAN	human	Q9HAV7	GRPEL1	Q9HAV7	14	269		
 GRPE2_HUMAN	human	Q8TAA5	GRPEL2	Q8TAA5	8	104		
 GRPEL1	human	Q9HAV7	GRPEL1	Q9HAV7	14	269	GrpE protein homolog 1, mitochondrial (HMGE) (Mt-GrpE#1) (Nu	
-GRPEL1	mus-musculus	Q99LP6	Grpel1	Q99LP6	4	59	GrpE protein homolog 1, mitochondrial	
-GRPEL1	rattus-norvegicus	P97576	Grpel1	P97576	5	52	GrpE protein homolog 1, mitochondrial	
-GRPEL1	zebrafish	Q32PS5	grpel1	Q32PS5	8	82	GrpE protein homolog	
+GRPEL1	mus-musculus	Q99LP6	Grpel1	Q99LP6	5	59	GrpE protein homolog 1, mitochondrial	
+GRPEL1	pan-troglodytes	H2QP70	GRPEL1	H2QP70	2	2	GrpE protein homolog	
+GRPEL1	rattus-norvegicus	P97576	Grpel1	P97576	7	53	GrpE protein homolog 1, mitochondrial	
+GRPEL1	zebrafish	Q32PS5	grpel1	Q32PS5	9	83	GrpE protein homolog	
+GRPEL1.L	xenopus-laevis	Q4V7U9	grpel1.L	Q4V7U9	2	2	GrpE protein homolog	
 GRPEL2	human	Q8TAA5	GRPEL2	Q8TAA5	8	104	GrpE protein homolog 2, mitochondrial (Mt-GrpE#2) (Nucleotid	
 GRPEL2	mus-musculus	O88396	Grpel2	O88396	4	48	GrpE protein homolog 2, mitochondrial	
-GRPEL2	rattus-norvegicus	A0A8I5ZVY3	Grpel2	A0A8I5ZVY3	3	44	GrpE protein homolog	
+GRPEL2	pan-troglodytes	H2QRR7	GRPEL2	H2QRR7	1	1	GrpE protein homolog	
+GRPEL2	rattus-norvegicus	A0A8I5ZVY3	Grpel2	A0A8I5ZVY3	4	45	GrpE protein homolog	
 GRPEL2	zebrafish	E7F0C3	grpel2	E7F0C3	4	84	GrpE protein homolog 2, mitochondrial	
+GRPEL2.L	xenopus-laevis	Q5U571	grpel2.L	Q5U571	1	1	GrpE like 2, mitochondrial L homeolog	
+GRPE_CAEEL	worm	Q18421	C34C12.8	Q18421	4	67		
+GRPE_DROME	fly	FBgn0014877	Roe1	P48604	5	113		
+GRPE_YEAST	yeast	P38523	MGE1	P38523	6	91		
 GRPL2_HUMAN	human	Q4G1C9	GLIPR1L2	Q4G1C9	2	46		
 GRPP	human	P01275	GCG	P01275	24	409	Pro-glucagon [Cleaved into: Glicentin; Glicentin-related pol	w
 GRPR	human	P30550	GRPR	P30550	12	189	Gastrin-releasing peptide receptor (GRP-R) (GRP-preferring b	

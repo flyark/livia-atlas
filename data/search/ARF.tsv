@@ -3,7 +3,7 @@ ARF	glycine-max	I1N5H2	ARF	I1N5H2	36	214	ADP-ribosylation factor
 ARF	oryza-sativa-subsp-japonica	P51823	ARF	P51823	19	181	ADP-ribosylation factor 2	
 ARF-1	worm	Q10943	arf-1	Q10943	12	80	ADP-ribosylation factor 1-like 2	
 ARF-1.1	worm	Q94231	arf-1.1	Q94231	12	68	ADP-ribosylation factor 1-like 1	
-ARF-5	worm	G5EFK4	arf-5	G5EFK4	13	94	ADP-ribosylation factor	
+ARF-5	worm	G5EFK4	arf-5	G5EFK4	19	101	ADP-ribosylation factor	
 ARF-6	worm	G5EET6	efa-6	G5EET6	1	4	Exchange factor for Arf-6	w
 ARF-6	worm	Q9U2S4	arf-6	Q9U2S4	8	54	ADP-ribosylation factor 6	
 ARF-BINDING	fly	FBgn0030141	Gga	Q9W329	5	22	Golgi-localized, gamma-adaptin ear containing, ARF binding p	w
@@ -69,7 +69,7 @@ ARF1	zebrafish	Q803D1	arf1	Q803D1	12	89	ADP-ribosylation factor
 ARF1-DIRECTED	human	Q8N6T3	ARFGAP1	Q8N6T3	13	121	ADP-ribosylation factor GTPase-activating protein 1 (ARF GAP	w
 ARF10	arabidopsis-thaliana	Q9SKN5	ARF10	Q9SKN5	17	23	Auxin response factor 10	
 ARF10	oryza-sativa-subsp-japonica	Q7XKK6	ARF10	Q7XKK6	2	3	Auxin response factor 10	
-ARF102F	fly	FBgn0013749	Arf4	P40945	15	146		
+ARF102F	fly	FBgn0013749	Arf4	P40945	21	153		
 ARF11	arabidopsis-thaliana	Q9ZPY6	ARF11	Q9ZPY6	6	97	Auxin response factor 11	
 ARF11	oryza-sativa-subsp-japonica	Q8S983	ARF11	Q8S983	0	33	Auxin response factor 11	
 ARF12	arabidopsis-thaliana	Q9XID4	ARF12	Q9XID4	16	107	Auxin response factor 12	
@@ -110,6 +110,7 @@ ARF23	arabidopsis-thaliana	Q9LP07	ARF23	Q9LP07	5	96	Putative auxin response fact
 ARF25	oryza-sativa-subsp-japonica	Q2QM84	ARF25	Q2QM84	11	210	Auxin response factor 25	
 ARF27	zea-mays	D9HNV4	ARF27	D9HNV4	6	137	Auxin response factor	
 ARF2B	zebrafish	Q7ZUZ7	arf2b	Q7ZUZ7	8	35	ADP-ribosylation factor	
+ARF2_DROME	fly	FBgn0013749	Arf4	P40945	21	153		
 ARF3	arabidopsis-thaliana	O23661	ARF3	O23661	0	21	Auxin response factor 3	
 ARF3	arabidopsis-thaliana	P40940	ARF3	P40940	14	90	ADP-ribosylation factor 3	
 ARF3	candida-albicans-237561	A0A1D8PJ64	ARF3	A0A1D8PJ64	7	30	Arf3p	
@@ -126,7 +127,7 @@ ARF3A	zebrafish	Q6DHP3	arf3a	Q6DHP3	8	33	ADP-ribosylation factor
 ARF3B	zebrafish	Q78AP9	arf3b	Q78AP9	9	34	ADP-ribosylation factor	
 ARF3_HUMAN	human	P61204	ARF3	P61204	132	959		
 ARF4	arabidopsis-thaliana	Q9ZTX9	ARF4	Q9ZTX9	8	38	Auxin response factor 4	
-ARF4	fly	FBgn0013749	Arf4	P40945	15	146	ADP ribosylation factor 4 (dARF II)	
+ARF4	fly	FBgn0013749	Arf4	P40945	21	153	ADP ribosylation factor 4 (dARF II)	
 ARF4	human	P18085	ARF4	P18085	69	456	ADP-ribosylation factor 4	
 ARF4	mus-musculus	P61750	Arf4	P61750	9	58	ADP-ribosylation factor 4	
 ARF4	rattus-norvegicus	P61751	Arf4	P61751	10	70	ADP-ribosylation factor 4	
@@ -135,12 +136,13 @@ ARF4A	zebrafish	Q6DC20	arf4a	Q6DC20	7	47	ADP-ribosylation factor
 ARF4L	human	P49703	ARL4D	P49703	21	196		
 ARF4_HUMAN	human	P18085	ARF4	P18085	69	456		
 ARF5	arabidopsis-thaliana	P93024	ARF5	P93024	12	40	Auxin response factor 5	
-ARF5	human	P84085	ARF5	P84085	69	423	ADP-ribosylation factor 5	
-ARF5	mus-musculus	P84084	Arf5	P84084	14	56	ADP-ribosylation factor 5	
+ARF5	human	P84085	ARF5	P84085	93	446	ADP-ribosylation factor 5	
+ARF5	mus-musculus	P84084	Arf5	P84084	32	75	ADP-ribosylation factor 5	
 ARF5	oryza-sativa-subsp-japonica	Q6Z2W3	ARF5	Q6Z2W3	0	5	Auxin response factor 5	
-ARF5	rattus-norvegicus	P84083	Arf5	P84083	12	62	ADP-ribosylation factor 5	
+ARF5	pan-troglodytes	H2QVB1	ARF5	H2QVB1	20	22	ADP-ribosylation factor	
+ARF5	rattus-norvegicus	P84083	Arf5	P84083	29	81	ADP-ribosylation factor 5	
 ARF5	zebrafish	Q7ZUW4	arf5	Q7ZUW4	9	45	ADP-ribosylation factor	
-ARF5_HUMAN	human	P84085	ARF5	P84085	69	423		
+ARF5_HUMAN	human	P84085	ARF5	P84085	93	446		
 ARF6	arabidopsis-thaliana	Q9ZTX8	ARF6	Q9ZTX8	16	139	Auxin response factor 6	
 ARF6	cladophialophora-carrionii	A0A1C1CIS9	ARF6	A0A1C1CIS9	8	54	ADP-ribosylation factor 6	
 ARF6	fly	FBgn0013750	Arf6	P40946	27	108	ADP-ribosylation factor 6 (ARF6) (ADP ribosylation factor at	w

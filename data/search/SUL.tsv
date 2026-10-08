@@ -186,9 +186,10 @@ SULFHYDRYL	zebrafish	A4QNU9	gfer	A4QNU9	0	10	Sulfhydryl oxidase	w
 SULFHYDRYL	zebrafish	B0UXN0	qsox1	B0UXN0	0	3	Sulfhydryl oxidase	w
 SULFHYDRYL	zebrafish	F1QJL3	qsox2	F1QJL3	0	2	Sulfhydryl oxidase	w
 SULFIDE	human	H3BNX3	?	H3BNX3	0	17	Sulfide:quinone oxidoreductase, mitochondrial	w
-SULFIDE	human	P00441	SOD1	P00441	15	451	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	w
-SULFIDE	human	Q9Y6N5	SQOR	Q9Y6N5	6	192	Sulfide:quinone oxidoreductase, mitochondrial (SQOR) (EC 1.8	w
+SULFIDE	human	P00441	SOD1	P00441	22	458	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	w
+SULFIDE	human	Q9Y6N5	SQOR	Q9Y6N5	11	197	Sulfide:quinone oxidoreductase, mitochondrial (SQOR) (EC 1.8	w
 SULFIDE	worm	J7SF87	CELE_Y9C9A.16	J7SF87	0	4	Sulfide:quinone oxidoreductase, mitochondrial	w
+SULFIDE	zebrafish	A0A8M2BAC0	sqrdl	A0A8M2BAC0	3	3	sulfide:quinone oxidoreductase, mitochondrial isoform X1	w
 SULFINIC	human	Q6ZQY3	GADL1	Q6ZQY3	5	99	Acidic amino acid decarboxylase GADL1 (Aspartate 1-decarboxy	w
 SULFINIC	human	Q9Y600	CSAD	Q9Y600	6	91	Cysteine sulfinic acid decarboxylase (EC 4.1.1.29) (Aspartat	w
 SULFINOALANINE	human	Q9Y600	CSAD	Q9Y600	6	91	Cysteine sulfinic acid decarboxylase (EC 4.1.1.29) (Aspartat	w
@@ -291,8 +292,8 @@ SULFOTRANSFERASE	zebrafish	Q9PTE6	tpst1	Q9PTE6	3	53	Protein-tyrosine sulfotransf
 SULFOTRANSFERASE-A	fly	FBgn0053147	Hs3st-A	Q8MRE7	0	2	GH20068p (Heparan sulfate 3-O sulfotransferase-A, isoform A 	w
 SULFOTRANSFERASE-B	fly	FBgn0031005	Hs3st-B	Q9VWJ7	1	8	Heparan sulfate 3-O sulfotransferase-B, isoform A (Heparan s	w
 SULFOTRANSFERASE-LIKE	human	Q9BR01	SULT4A1	Q9BR01	22	60	Sulfotransferase 4A1 (ST4A1) (EC 2.8.2.-) (Brain sulfotransf	w
-SULFOXIDE	human	Q9UJ68	MSRA	Q9UJ68	6	80	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
-SULFOXIDE	yeast	P25566	MXR2	P25566	2	29	Peptide methionine sulfoxide reductase 2	w
+SULFOXIDE	human	Q9UJ68	MSRA	Q9UJ68	23	98	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
+SULFOXIDE	yeast	P25566	MXR2	P25566	3	30	Peptide methionine sulfoxide reductase 2	w
 SULFOXIDE	yeast	P40029	MXR1	P40029	0	25	Peptide methionine sulfoxide reductase	w
 SULFOXIDE	zebrafish	F1R878	msrab	F1R878	0	16	Mitochondrial peptide methionine sulfoxide reductase	w
 SULFOXIDE	zebrafish	Q5TZ05	msraa	Q5TZ05	0	16	Mitochondrial peptide methionine sulfoxide reductase	w
@@ -301,7 +302,7 @@ SULFOXIDE-FORMING	human	P51589	CYP2J2	P51589	0	78	Cytochrome P450 2J2 (EC 1.14.1
 SULFU	fly	FBgn0260229	Mocs2A	P0C919	2	5	Molybdopterin synthase sulfur carrier subunit (Molybdenum co	w
 SULFUR	fly	FBgn0260229	Mocs2A	P0C919	2	5	Molybdopterin synthase sulfur carrier subunit (Molybdenum co	w
 SULFUR	human	O75690	KRTAP5-8	O75690	0	14	Keratin-associated protein 5-8 (Keratin, ultra high-sulfur m	w
-SULFUR	human	O95571	ETHE1	O95571	1	90	Persulfide dioxygenase ETHE1, mitochondrial (EC 1.13.11.18) 	w
+SULFUR	human	O95571	ETHE1	O95571	4	93	Persulfide dioxygenase ETHE1, mitochondrial (EC 1.13.11.18) 	w
 SULFUR	human	O96033	MOCS2	O96033	266	2181	Molybdopterin synthase sulfur carrier subunit (MOCO1-A) (Mol	w
 SULFUR	human	P0C5Y4	KRTAP1-4	P0C5Y4	0	16	Keratin-associated protein 1-4 (High sulfur keratin-associat	w
 SULFUR	human	P0C7H8	KRTAP2-3	P0C7H8	3	106	Keratin-associated protein 2-3 (High sulfur keratin-associat	w
@@ -360,22 +361,22 @@ SULFUR	worm	Q09412	moc-6	Q09412	1	3	Molybdopterin synthase sulfur carrier subuni
 SULFUR	yeast	P32389	MET4	P32389	9	27	Transcriptional activator of sulfur metabolism MET4	w
 SULFUR	yeast	P40573	MET28	P40573	5	20	Transcriptional activator of sulfur metabolism MET28	w
 SULFUR	yeast	Q03020	ISU1	Q03020	4	26	Iron sulfur cluster assembly protein 1, mitochondrial	w
-SULFUR	yeast	Q12056	ISU2	Q12056	3	23	Iron sulfur cluster assembly protein 2, mitochondrial	w
-SULFUR	zebrafish	Q6PGY7	cisd1	Q6PGY7	0	5	CDGSH iron sulfur domain 1	w
+SULFUR	yeast	Q12056	ISU2	Q12056	5	25	Iron sulfur cluster assembly protein 2, mitochondrial	w
+SULFUR	zebrafish	Q6PGY7	cisd1	Q6PGY7	1	6	CDGSH iron sulfur domain 1	w
 SULFURASE	fly	FBgn0002641	mal	Q9VRA2	0	9	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
-SULFURASE	human	Q5VT66	MTARC1	Q5VT66	6	78	Mitochondrial amidoxime-reducing component 1 (mARC1) (EC 1.7	w
-SULFURASE	human	Q969Z3	MTARC2	Q969Z3	2	52	Mitochondrial amidoxime reducing component 2 (mARC2) (EC 1.7	w
+SULFURASE	human	Q5VT66	MTARC1	Q5VT66	17	89	Mitochondrial amidoxime-reducing component 1 (mARC1) (EC 1.7	w
+SULFURASE	human	Q969Z3	MTARC2	Q969Z3	11	61	Mitochondrial amidoxime reducing component 2 (mARC2) (EC 1.7	w
 SULFURASE	human	Q96EN8	MOCOS	Q96EN8	0	94	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
 SULFURASE	worm	Q21657	mocs-1	Q21657	0	7	Molybdenum cofactor sulfurase	w
 SULFURTRANSFERASE	fly	FBgn0002641	mal	Q9VRA2	0	9	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
 SULFURTRANSFERASE	fly	FBgn0032054	Mocs3	Q9VLJ8	3	57	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
 SULFURTRANSFERASE	fly	FBgn0038080	Tst1	Q9VG33	1	126	Sulfurtransferase	w
-SULFURTRANSFERASE	human	H0UI37	TSTD3	H0UI37	6	116	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
+SULFURTRANSFERASE	human	H0UI37	TSTD3	H0UI37	7	117	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
 SULFURTRANSFERASE	human	O95396	MOCS3	O95396	4	130	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
-SULFURTRANSFERASE	human	P25325	MPST	P25325	8	117	3-mercaptopyruvate sulfurtransferase (MST) (EC 2.8.1.2)	w
-SULFURTRANSFERASE	human	Q16762	TST	Q16762	2	118	Thiosulfate sulfurtransferase (EC 2.8.1.1) (Rhodanese)	w
+SULFURTRANSFERASE	human	P25325	MPST	P25325	18	127	3-mercaptopyruvate sulfurtransferase (MST) (EC 2.8.1.2)	w
+SULFURTRANSFERASE	human	Q16762	TST	Q16762	10	127	Thiosulfate sulfurtransferase (EC 2.8.1.1) (Rhodanese)	w
 SULFURTRANSFERASE	human	Q5T7W7	TSTD2	Q5T7W7	4	63	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
-SULFURTRANSFERASE	human	Q8NFU3	TSTD1	Q8NFU3	8	146	Thiosulfate:glutathione sulfurtransferase (TST) (EC 2.8.1.3)	w
+SULFURTRANSFERASE	human	Q8NFU3	TSTD1	Q8NFU3	19	156	Thiosulfate:glutathione sulfurtransferase (TST) (EC 2.8.1.3)	w
 SULFURTRANSFERASE	human	Q96EN8	MOCOS	Q96EN8	0	94	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
 SULFURTRANSFERASE	worm	G5ECA0	mpst-6	G5ECA0	0	7	thiosulfate sulfurtransferase	w
 SULFURTRANSFERASE	worm	H9G340	mpst-3	H9G340	0	9	thiosulfate sulfurtransferase	w
@@ -387,6 +388,8 @@ SULFURTRANSFERASE	yeast	Q08686	TUM1	Q08686	0	22	Thiosulfate sulfurtransferase TU
 SULFURTRANSFERASE	yeast	Q08742	RDL2	Q08742	0	36	Thiosulfate sulfurtransferase RDL2, mitochondrial	w
 SULFURTRANSFERASE	yeast	Q12305	RDL1	Q12305	3	46	Thiosulfate:glutathione sulfurtransferase	w
 SULFURTRANSFERASE	zebrafish	A0A0G2KNS1	LOC561325	A0A0G2KNS1	4	67	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
+SULFURTRANSFERASE	zebrafish	A0A8M9Q576	si:dkey-34l15.1	A0A8M9Q576	5	5	thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
+SULFURTRANSFERASE	zebrafish	A4QP04	wu:fa96h11	A4QP04	2	2	Sulfurtransferase	w
 SULFURTRANSFERASE	zebrafish	E7F1E2	tstd3	E7F1E2	4	67	Sulfurtransferase	w
 SULFURTRANSFERASE	zebrafish	Q8AWD2	mocs3	Q8AWD2	7	88	Adenylyltransferase and sulfurtransferase MOCS3	w
 SULFURYLASE	human	O43252	PAPSS1	O43252	2	156	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	w

@@ -34,7 +34,7 @@ GLYCERALDEHYDE-3-PHOSPHATE	yeast	P00360	TDH1	P00360	3	127	Glyceraldehyde-3-phosp
 GLYCERALDEHYDE-3-PHOSPHATE	zebrafish	Q5MJ86	gapdh-2	Q5MJ86	1	189	Glyceraldehyde-3-phosphate dehydrogenase 2	w
 GLYCERALDEHYDE-3-PHOSPHATE	zebrafish	Q5XJ10	gapdh	Q5XJ10	1	191	Glyceraldehyde-3-phosphate dehydrogenase	w
 GLYCERATE	fly	FBgn0031428	Glyctk	Q9VQC4	0	28	Glycerate kinase (EC 2.7.1.31)	w
-GLYCERATE	human	Q8IVS8	GLYCTK	Q8IVS8	3	66	Glycerate kinase (EC 2.7.1.31) (HBeAg-binding protein 4)	w
+GLYCERATE	human	Q8IVS8	GLYCTK	Q8IVS8	4	67	Glycerate kinase (EC 2.7.1.31) (HBeAg-binding protein 4)	w
 GLYCERATE	zebrafish	Q08BL7	glyctk	Q08BL7	0	1	Glycerate kinase	w
 GLYCEROKINASE	human	P32189	GK	P32189	7	147	Glycerol kinase (Glycerokinase) (EC 2.7.1.30) (ATP:glycerol 	w
 GLYCEROKINASE	human	Q14409	GK3	Q14409	5	60	Glycerol kinase 3 (GK 3) (Glycerokinase 3) (EC 2.7.1.30) (AT	w
@@ -88,10 +88,10 @@ GLYCEROL-3-PHOSPHATE	human	P21695	GPD1	P21695	5	445	Glycerol-3-phosphate dehydro
 GLYCEROL-3-PHOSPHATE	human	P43304	GPD2	P43304	2	98	Glycerol-3-phosphate dehydrogenase, mitochondrial (GPD-M) (G	w
 GLYCEROL-3-PHOSPHATE	human	P57057	SLC37A1	P57057	3	55	Glucose-6-phosphate exchanger SLC37A1 (Glycerol-3-phosphate 	w
 GLYCEROL-3-PHOSPHATE	human	Q53EU6	GPAT3	Q53EU6	8	208	Glycerol-3-phosphate acyltransferase 3 (GPAT-3) (EC 2.3.1.15	w
-GLYCEROL-3-PHOSPHATE	human	Q6NUI2	GPAT2	Q6NUI2	2	38	Glycerol-3-phosphate acyltransferase 2, mitochondrial (GPAT-	w
+GLYCEROL-3-PHOSPHATE	human	Q6NUI2	GPAT2	Q6NUI2	6	42	Glycerol-3-phosphate acyltransferase 2, mitochondrial (GPAT-	w
 GLYCEROL-3-PHOSPHATE	human	Q86UL3	GPAT4	Q86UL3	10	170	Glycerol-3-phosphate acyltransferase 4 (EC 2.3.1.15) (1-acyl	w
 GLYCEROL-3-PHOSPHATE	human	Q8N335	GPD1L	Q8N335	4	449	Glycerol-3-phosphate dehydrogenase 1-like protein (GPD1-L) (	w
-GLYCEROL-3-PHOSPHATE	human	Q9HCL2	GPAM	Q9HCL2	3	62	Glycerol-3-phosphate acyltransferase 1, mitochondrial (GPAT-	w
+GLYCEROL-3-PHOSPHATE	human	Q9HCL2	GPAM	Q9HCL2	4	63	Glycerol-3-phosphate acyltransferase 1, mitochondrial (GPAT-	w
 GLYCEROL-3-PHOSPHATE	worm	P34517	gpdh-2	P34517	1	13	Probable glycerol-3-phosphate dehydrogenase 2	w
 GLYCEROL-3-PHOSPHATE	worm	P90795	gpdh-3	P90795	1	12	Probable glycerol-3-phosphate dehydrogenase, mitochondrial	w
 GLYCEROL-3-PHOSPHATE	worm	Q18645	C45E5.1	Q18645	0	7	Glycerol-3-phosphate phosphatase	w
@@ -103,6 +103,7 @@ GLYCEROL-3-PHOSPHATE	yeast	P32784	SCT1	P32784	4	31	Glycerol-3-phosphate O-acyltr
 GLYCEROL-3-PHOSPHATE	yeast	P36148	GPT2	P36148	4	61	Glycerol-3-phosphate O-acyltransferase 2	w
 GLYCEROL-3-PHOSPHATE	yeast	P41911	GPD2	P41911	2	36	Glycerol-3-phosphate dehydrogenase	w
 GLYCEROL-3-PHOSPHATE	yeast	Q00055	GPD1	Q00055	2	25	Glycerol-3-phosphate dehydrogenase	w
+GLYCEROL-3-PHOSPHATE	zebrafish	A0A8M3BEA0	gpam	A0A8M3BEA0	0	1	Glycerol-3-phosphate acyltransferase 1, mitochondrial	w
 GLYCEROL-3-PHOSPHATE	zebrafish	A0AB32U1E7	gpat2	A0AB32U1E7	0	4	Glycerol-3-phosphate acyltransferase 2, mitochondrial isofor	w
 GLYCEROL-3-PHOSPHATE	zebrafish	A3KGT9	agpat9l	A3KGT9	2	5	Glycerol-3-phosphate acyltransferase 3-like	w
 GLYCEROL-3-PHOSPHATE	zebrafish	E7F6M7	gpam	E7F6M7	0	8	Glycerol-3-phosphate acyltransferase 1, mitochondrial	w
@@ -148,8 +149,8 @@ GLYCEROPHOSPHOLIPID	human	Q6ZWT7	MBOAT2	Q6ZWT7	0	58	Membrane-bound glycerophosph
 GLYCINAMIDE	fly	FBgn0000053	Gart	P00967	2	95	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
 GLYCINAMIDE	human	P22102	GART	P22102	0	260	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
 GLYCINE	fly	FBgn0001134	Grd	Q24352	7	21	Gamma-aminobutyric acid receptor alpha-like (GABA(A) recepto	w
-GLYCINE	fly	FBgn0027945	ppl	Q9U616	49	438	Glycine cleavage system H protein, mitochondrial (Protein pu	w
-GLYCINE	fly	FBgn0032287	Gcst	Q9VKR4	3	50	Aminomethyltransferase (EC 2.1.2.10) (Glycine cleavage syste	w
+GLYCINE	fly	FBgn0027945	ppl	Q9U616	54	443	Glycine cleavage system H protein, mitochondrial (Protein pu	w
+GLYCINE	fly	FBgn0032287	Gcst	Q9VKR4	4	51	Aminomethyltransferase (EC 2.1.2.10) (Glycine cleavage syste	w
 GLYCINE	fly	FBgn0036208	Gcat	Q9VTN9	1	43	FI03238p (Glycine C-acetyltransferase (EC 2.3.1.29))	w
 GLYCINE	fly	FBgn0037801	Gldc	Q9VH09	1	38	Glycine cleavage system P protein (EC 1.4.4.2)	w
 GLYCINE	fly	FBgn0038074	Gnmt	Q9VG42	1	47	Glycine N-methyltransferase (EC 2.1.1.20)	w
@@ -166,25 +167,25 @@ GLYCINE	human	A0A286YF77	SCYGR6	A0A286YF77	0	11	Small cysteine and glycine repea
 GLYCINE	human	A0A286YFB4	SCYGR2	A0A286YFB4	0	12	Small cysteine and glycine repeat-containing protein 2 (Kera	w
 GLYCINE	human	A0A286YFG1	SCYGR8	A0A286YFG1	0	11	Small cysteine and glycine repeat-containing protein 8 (Kera	w
 GLYCINE	human	O75311	GLRA3	O75311	29	108	Glycine receptor subunit alpha-3	w
-GLYCINE	human	O75600	GCAT	O75600	0	134	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial (AKB	w
-GLYCINE	human	P09622	DLD	P09622	13	351	Dihydrolipoyl dehydrogenase, mitochondrial (EC 1.8.1.4) (Dih	w
+GLYCINE	human	O75600	GCAT	O75600	3	137	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial (AKB	w
+GLYCINE	human	P09622	DLD	P09622	16	354	Dihydrolipoyl dehydrogenase, mitochondrial (EC 1.8.1.4) (Dih	w
 GLYCINE	human	P0DSO2	SCYGR9	P0DSO2	0	18	Small cysteine and glycine repeat-containing protein 9 (Kera	w
 GLYCINE	human	P23378	GLDC	P23378	5	295	Glycine dehydrogenase (decarboxylating), mitochondrial (EC 1	w
 GLYCINE	human	P23415	GLRA1	P23415	29	99	Glycine receptor subunit alpha-1 (Glycine receptor 48 kDa su	w
 GLYCINE	human	P23416	GLRA2	P23416	30	136	Glycine receptor subunit alpha-2	w
-GLYCINE	human	P23434	GCSH	P23434	71	476	Glycine cleavage system H protein, mitochondrial (Lipoic aci	w
+GLYCINE	human	P23434	GCSH	P23434	87	491	Glycine cleavage system H protein, mitochondrial (Lipoic aci	w
 GLYCINE	human	P34896	SHMT1	P34896	1	153	Serine hydroxymethyltransferase, cytosolic (SHMT) (cSHMT) (h	w
-GLYCINE	human	P34897	SHMT2	P34897	5	662	Serine hydroxymethyltransferase, mitochondrial (SHMT) (EC 2.	w
+GLYCINE	human	P34897	SHMT2	P34897	7	664	Serine hydroxymethyltransferase, mitochondrial (SHMT) (EC 2.	w
 GLYCINE	human	P48067	SLC6A9	P48067	3	59	Sodium- and chloride-dependent glycine transporter 1 (GlyT-1	w
 GLYCINE	human	P48167	GLRB	P48167	35	114	Glycine receptor subunit beta (Glycine receptor 58 kDa subun	w
-GLYCINE	human	P48728	AMT	P48728	4	43	Aminomethyltransferase, mitochondrial (EC 2.1.2.10) (Glycine	w
-GLYCINE	human	P50440	GATM	P50440	13	225	Glycine amidinotransferase, mitochondrial (EC 2.1.4.1) (L-ar	w
+GLYCINE	human	P48728	AMT	P48728	16	55	Aminomethyltransferase, mitochondrial (EC 2.1.2.10) (Glycine	w
+GLYCINE	human	P50440	GATM	P50440	20	232	Glycine amidinotransferase, mitochondrial (EC 2.1.4.1) (L-ar	w
 GLYCINE	human	Q14032	BAAT	Q14032	3	94	Bile acid-CoA:amino acid N-acyltransferase (BACAT) (BAT) (EC	w
 GLYCINE	human	Q14330	GPR18	Q14330	9	158	N-arachidonyl glycine receptor (NAGly receptor) (G protein-c	w
 GLYCINE	human	Q14749	GNMT	Q14749	2	121	Glycine N-methyltransferase (EC 2.1.1.20)	w
 GLYCINE	human	Q5SZD4	GLYATL3	Q5SZD4	2	14	Glycine N-acyltransferase-like protein 3 (EC 2.3.1.13) (Acyl	w
 GLYCINE	human	Q5T848	GPR158	Q5T848	19	202	Metabotropic glycine receptor (mGlyR) (G protein-coupled rec	w
-GLYCINE	human	Q6IB77	GLYAT	Q6IB77	9	127	Glycine N-acyltransferase (EC 2.3.1.13) (Acyl-CoA:glycine N-	w
+GLYCINE	human	Q6IB77	GLYAT	Q6IB77	27	145	Glycine N-acyltransferase (EC 2.3.1.13) (Acyl-CoA:glycine N-	w
 GLYCINE	human	Q7Z4W3	KRTAP19-3	Q7Z4W3	0	52	Keratin-associated protein 19-3 (GTHRP) (Glycine/tyrosine-ri	w
 GLYCINE	human	Q8WU03	GLYATL2	Q8WU03	3	40	Glycine N-acyltransferase-like protein 2 (EC 2.3.1.13) (Acyl	w
 GLYCINE	human	Q969I3	GLYATL1	Q969I3	4	33	Glycine N-acyltransferase-like protein 1 (EC 2.3.1.68) (Acyl	w
@@ -195,32 +196,34 @@ GLYCINE	worm	O02049	idpa-1	O02049	0	3	Glycine Rich Secreted Protein	w
 GLYCINE	worm	O44195	CELE_ZK185.3	O44195	0	23	Glycine N-acyltransferase-like protein	w
 GLYCINE	worm	O62122	gcsh-1	O62122	3	25	Glycine cleavage system H protein	w
 GLYCINE	worm	Q10910	B0034.1	Q10910	0	5	Glycine rich superfamily member	w
-GLYCINE	worm	Q20634	gcsh-2	Q20634	3	13	Glycine cleavage system H protein	w
+GLYCINE	worm	Q20634	gcsh-2	Q20634	10	20	Glycine cleavage system H protein	w
 GLYCINE	worm	Q21073	CELE_K01A6.4	Q21073	0	7	Glycine Rich Secreted Protein	w
 GLYCINE	worm	Q21962	gldc-1	Q21962	2	34	Glycine cleavage system P protein	w
 GLYCINE	worm	Q22371	CELE_T10B10.4	Q22371	0	21	Glycine N-acyltransferase-like protein	w
 GLYCINE	worm	Q95ZT6	CELE_F43H9.4	Q95ZT6	1	21	Glycine N-acyltransferase-like protein	w
 GLYCINE	worm	Q9NA39	ccg-1	Q9NA39	0	3	Conserved Cysteine/Glycine domain protein	w
 GLYCINE	yeast	P32331	YMC1	P32331	0	9	Mitochondrial glycine transporter YMC1	w
-GLYCINE	yeast	P39726	GCV3	P39726	5	19	Glycine cleavage system H protein, mitochondrial	w
+GLYCINE	yeast	P39726	GCV3	P39726	9	23	Glycine cleavage system H protein, mitochondrial	w
 GLYCINE	yeast	P49095	GCV2	P49095	1	19	Glycine dehydrogenase (decarboxylating), mitochondrial	w
 GLYCINE	yeast	Q07534	HEM25	Q07534	0	4	Mitochondrial glycine transporter	w
 GLYCINE	zebrafish	A0A8M2BFU7	gpr18	A0A8M2BFU7	0	1	N-arachidonyl glycine receptor	w
 GLYCINE	zebrafish	A0A8M3B4A7	si:ch73-106k19.2	A0A8M3B4A7	3	40	Glycine N-acyltransferase-like protein	w
-GLYCINE	zebrafish	A9LDD9	shmt2	A9LDD9	0	47	glycine hydroxymethyltransferase	w
+GLYCINE	zebrafish	A9LDD9	shmt2	A9LDD9	2	49	glycine hydroxymethyltransferase	w
 GLYCINE	zebrafish	F1R8P4	glra2	F1R8P4	1	4	Glycine receptor subunit alpha-2	w
 GLYCINE	zebrafish	F1RDZ6	glra4a	F1RDZ6	0	4	Glycine receptor, alpha 4a	w
 GLYCINE	zebrafish	O93430	glra1	O93430	0	4	Glycine receptor subunit alphaZ1	w
 GLYCINE	zebrafish	Q6DC22	glrbb	Q6DC22	0	5	Glycine receptor subunit beta	w
-GLYCINE	zebrafish	Q6DGX4	gcshb	Q6DGX4	0	5	Glycine cleavage system H protein	w
-GLYCINE	zebrafish	Q6PH19	gatm	Q6PH19	0	4	Glycine amidinotransferase, mitochondrial	w
+GLYCINE	zebrafish	Q6DGX4	gcshb	Q6DGX4	18	23	Glycine cleavage system H protein	w
+GLYCINE	zebrafish	Q6PFN9	wu:fb23b05	Q6PFN9	1	1	glycine dehydrogenase (aminomethyl-transferring)	w
+GLYCINE	zebrafish	Q6PH19	gatm	Q6PH19	4	8	Glycine amidinotransferase, mitochondrial	w
 GLYCINE	zebrafish	Q9DES8	glrba	Q9DES8	1	5	Glycine receptor subunit beta	w
 GLYCINE-	human	O60506	SYNCRIP	O60506	47	621	Heterogeneous nuclear ribonucleoprotein Q (hnRNP Q) (Glycine	w
-GLYCINE--TRNA	fly	FBgn0027088	GlyRS	Q9VUK8	0	70	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
-GLYCINE--TRNA	human	P41250	GARS1	P41250	5	174	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
-GLYCINE--TRNA	worm	Q10039	gars-1	Q10039	1	17	Glycine--tRNA ligase	w
-GLYCINE--TRNA	yeast	P38088	GRS1	P38088	1	50	Glycine--tRNA ligase 1, mitochondrial	w
+GLYCINE--TRNA	fly	FBgn0027088	GlyRS	Q9VUK8	1	71	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+GLYCINE--TRNA	human	P41250	GARS1	P41250	8	177	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+GLYCINE--TRNA	worm	Q10039	gars-1	Q10039	2	18	Glycine--tRNA ligase	w
+GLYCINE--TRNA	yeast	P38088	GRS1	P38088	2	51	Glycine--tRNA ligase 1, mitochondrial	w
 GLYCINE--TRNA	yeast	Q06817	GRS2	Q06817	1	15	Glycine--tRNA ligase 2	w
+GLYCINE--TRNA	zebrafish	A0A8M6YVR9	gars	A0A8M6YVR9	2	2	Glycine--tRNA ligase	w
 GLYCINE-N-ACYLTRANSFERASE-LIKE	human	Q5SZD4	GLYATL3	Q5SZD4	2	14	Glycine N-acyltransferase-like protein 3 (EC 2.3.1.13) (Acyl	w
 GLYCINE-RICH	fly	FBgn0030350	SelG	Q7Z2C4	1	15	Glycine-rich selenoprotein (G-rich selenoprotein) (dSelG)	w
 GLYCINE-RICH	human	A0A0J9YXV3	GREP1	A0A0J9YXV3	0	1	Glycine-rich extracellular protein 1 (Long intergenic non-pr	w
@@ -292,7 +295,7 @@ GLYCOH	human	Q9NX46	ADPRS	Q9NX46	5	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glyc
 GLYCOHYDROLASE	fly	FBgn0023216	Parg	O46043	3	11	Poly(ADP-ribose) glycohydrolase (EC 3.2.1.143)	w
 GLYCOHYDROLASE	human	A1Z1Q3	MACROD2	A1Z1Q3	2	19	ADP-ribose glycohydrolase MACROD2 (MACRO domain-containing p	w
 GLYCOHYDROLASE	human	Q86W56	PARG	Q86W56	7	99	Poly(ADP-ribose) glycohydrolase (EC 3.2.1.143)	w
-GLYCOHYDROLASE	human	Q9BQ69	MACROD1	Q9BQ69	8	86	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	w
+GLYCOHYDROLASE	human	Q9BQ69	MACROD1	Q9BQ69	25	102	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	w
 GLYCOHYDROLASE	human	Q9NX46	ADPRS	Q9NX46	5	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glycohydrolase ARH3) (	w
 GLYCOHYDROLASE	human	Q9Y530	OARD1	Q9Y530	1	47	ADP-ribose glycohydrolase OARD1 (O-acetyl-ADP-ribose deacety	w
 GLYCOHYDROLASE	worm	Q867X0	parg-1	Q867X0	0	6	Poly(ADP-ribose) glycohydrolase 1	w
@@ -425,7 +428,7 @@ GLYCOPROTEIN	human	Q02413	DSG1	Q02413	51	437	Desmoglein-1 (Cadherin family membe
 GLYCOPROTEIN	human	Q02487	DSC2	Q02487	40	231	Desmocollin-2 (Cadherin family member 2) (Desmocollin-3) (De	w
 GLYCOPROTEIN	human	Q04118	PRB3	Q04118	2	61	Basic salivary proline-rich protein 3 (Parotid salivary glyc	w
 GLYCOPROTEIN	human	Q05996	ZP2	Q05996	15	95	Zona pellucida sperm-binding protein 2 (Zona pellucida glyco	w
-GLYCOPROTEIN	human	Q07021	C1QBP	Q07021	24	586	Complement component 1 Q subcomponent-binding protein, mitoc	w
+GLYCOPROTEIN	human	Q07021	C1QBP	Q07021	25	587	Complement component 1 Q subcomponent-binding protein, mitoc	w
 GLYCOPROTEIN	human	Q08554	DSC1	Q08554	38	229	Desmocollin-1 (Cadherin family member 1) (Desmosomal glycopr	w
 GLYCOPROTEIN	human	Q0VAQ4	SMAGP	Q0VAQ4	24	112	Small cell adhesion glycoprotein (Small transmembrane and gl	w
 GLYCOPROTEIN	human	Q12836	ZP4	Q12836	12	87	Zona pellucida sperm-binding protein 4 (Zona pellucida glyco	w
@@ -1381,18 +1384,18 @@ GLYCOSYL	yeast	P38081	YBR056W	P38081	0	5	Uncharacterized glycosyl hydrolase YBR0
 GLYCOSYL-PHOSPHATIDYLINOSITOL-ANCHORED	human	Q99445	GML	Q99445	5	90	Glycosyl-phosphatidylinositol-anchored molecule-like protein	w
 GLYCOSYL-PHOSPHATIDYLINOSITOL-SPECIFIC	human	P80108	GPLD1	P80108	0	35	Phosphatidylinositol-glycan-specific phospholipase D (PI-G P	w
 GLYCOSYLASE	fly	FBgn0026869	Tdg	Q9V4D8	16	67	FI14922p (Mismatch depedent uracil/thymine DNA glycosylase) 	w
-GLYCOSYLASE	fly	FBgn0027864	Ogg1	Q9V3I8	0	18	N-glycosylase/DNA lyase (dOgg1) [Includes: 8-oxoguanine DNA 	w
-GLYCOSYLASE	fly	FBgn0032907	Nthl1	Q9VIH0	10	75	Endonuclease III homolog (EC 3.2.2.-) (EC 4.2.99.18) (Bifunc	w
-GLYCOSYLASE	human	O15527	OGG1	O15527	3	42	N-glycosylase/DNA lyase [Includes: 8-oxoguanine DNA glycosyl	w
-GLYCOSYLASE	human	P13051	UNG	P13051	8	96	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	w
+GLYCOSYLASE	fly	FBgn0027864	Ogg1	Q9V3I8	8	26	N-glycosylase/DNA lyase (dOgg1) [Includes: 8-oxoguanine DNA 	w
+GLYCOSYLASE	fly	FBgn0032907	Nthl1	Q9VIH0	14	79	Endonuclease III homolog (EC 3.2.2.-) (EC 4.2.99.18) (Bifunc	w
+GLYCOSYLASE	human	O15527	OGG1	O15527	26	64	N-glycosylase/DNA lyase [Includes: 8-oxoguanine DNA glycosyl	w
+GLYCOSYLASE	human	P13051	UNG	P13051	17	105	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	w
 GLYCOSYLASE	human	P29372	MPG	P29372	14	129	DNA-3-methyladenine glycosylase (EC 3.2.2.21) (3-alkyladenin	w
-GLYCOSYLASE	human	P78549	NTHL1	P78549	9	108	Endonuclease III-like protein 1 (hNTH1) (EC 3.2.2.-) (EC 4.2	w
+GLYCOSYLASE	human	P78549	NTHL1	P78549	23	122	Endonuclease III-like protein 1 (hNTH1) (EC 3.2.2.-) (EC 4.2	w
 GLYCOSYLASE	human	Q13569	TDG	Q13569	45	448	G/T mismatch-specific thymine DNA glycosylase (EC 3.2.2.29) 	w
 GLYCOSYLASE	human	Q53HV7	SMUG1	Q53HV7	5	145	Single-strand selective monofunctional uracil DNA glycosylas	w
 GLYCOSYLASE	human	Q8TAT5	NEIL3	Q8TAT5	7	226	Endonuclease 8-like 3 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
 GLYCOSYLASE	human	Q969S2	NEIL2	Q969S2	5	158	Endonuclease 8-like 2 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
 GLYCOSYLASE	human	Q96FI4	NEIL1	Q96FI4	16	356	Endonuclease 8-like 1 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
-GLYCOSYLASE	human	Q9UIF7	MUTYH	Q9UIF7	5	71	Adenine DNA glycosylase (EC 3.2.2.31) (MutY homolog) (hMYH)	w
+GLYCOSYLASE	human	Q9UIF7	MUTYH	Q9UIF7	7	73	Adenine DNA glycosylase (EC 3.2.2.31) (MutY homolog) (hMYH)	w
 GLYCOSYLASE	virus	A0A068EG39	fep_062	A0A068EG39	5	221	Uracil-DNA glycosylase	w
 GLYCOSYLASE	virus	A0A068EHG3	pepv_064	A0A068EHG3	13	240	Uracil-DNA glycosylase	w
 GLYCOSYLASE	virus	A0A0A7MA92		A0A0A7MA92	9	130	Uracil-DNA glycosylase	w
@@ -1455,6 +1458,8 @@ GLYCOSYLASE	yeast	P12887	UNG1	P12887	1	10	Uracil-DNA glycosylase	w
 GLYCOSYLASE	yeast	P22134	MAG1	P22134	2	8	DNA-3-methyladenine glycosylase	w
 GLYCOSYLASE	zebrafish	A0A0G2KZ26	smug1	A0A0G2KZ26	2	7	Single-strand-selective monofunctional uracil-DNA glycosylas	w
 GLYCOSYLASE	zebrafish	A0A8M1NC16	mpg	A0A8M1NC16	0	3	DNA-3-methyladenine glycosylase	w
+GLYCOSYLASE	zebrafish	A0A8M6Z6T9	unga	A0A8M6Z6T9	5	5	Uracil-DNA glycosylase	w
+GLYCOSYLASE	zebrafish	A0A8N7TAT1	mutyh	A0A8N7TAT1	2	2	Adenine DNA glycosylase	w
 GLYCOSYLASE	zebrafish	E9QG27	ungb	E9QG27	1	17	Uracil-DNA glycosylase	w
 GLYCOSYLASE	zebrafish	Q503G3	tdg.1	Q503G3	4	18	G/T mismatch-specific thymine DNA glycosylase	w
 GLYCOSYLASE	zebrafish	X1WBY3	tdg.2	X1WBY3	4	18	G/T mismatch-specific thymine DNA glycosylase	w
@@ -1588,10 +1593,14 @@ GLYCOSYLTRANSFERASE-LIKE	human	Q8N3Y3	LARGE2	Q8N3Y3	6	96	Xylosyl- and glucuronyl
 GLYCOSYLTRANSFERASE-LIKE	worm	Q21389	lge-1	Q21389	0	4	Glycosyltransferase-like protein LARGE	w
 GLYCOTRANSFERASE	fly	FBgn0011336	Stt3B	Q9XZ53	11	152	dolichyl-diphosphooligosaccharide--protein glycotransferase 	w
 GLYCTK	fly	FBgn0031428	Glyctk	Q9VQC4	0	28	Glycerate kinase (EC 2.7.1.31)	
-GLYCTK	human	Q8IVS8	GLYCTK	Q8IVS8	3	66	Glycerate kinase (EC 2.7.1.31) (HBeAg-binding protein 4)	
+GLYCTK	human	Q8IVS8	GLYCTK	Q8IVS8	4	67	Glycerate kinase (EC 2.7.1.31) (HBeAg-binding protein 4)	
+GLYCTK	mus-musculus	Q8QZY2	Glyctk	Q8QZY2	1	1	Glycerate kinase	
+GLYCTK	pan-troglodytes	H2R0Y3	GLYCTK	H2R0Y3	1	1	Glycerate kinase	
+GLYCTK	rattus-norvegicus	Q0VGK3	Glyctk	Q0VGK3	1	1	Glycerate kinase	
 GLYCTK	zebrafish	Q08BL7	glyctk	Q08BL7	0	1	Glycerate kinase	
-GLYCYL-TRNA	fly	FBgn0027088	GlyRS	Q9VUK8	0	70	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
-GLYCYL-TRNA	human	P41250	GARS1	P41250	5	174	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+GLYCTK.L	xenopus-laevis	A0A1L8GPB1	glyctk.L	A0A1L8GPB1	1	1	Glycerate kinase	
+GLYCYL-TRNA	fly	FBgn0027088	GlyRS	Q9VUK8	1	71	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+GLYCYL-TRNA	human	P41250	GARS1	P41250	8	177	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
 GLYCYLASE	fly	FBgn0031853	TTLL3B	Q9VM92	1	10	Tubulin glycylase 3B (dmTTLL3B) (EC 6.3.2.-)	w
 GLYCYLASE	fly	FBgn0031854	TTLL3A	Q9VM91	0	4	Tubulin glycylase 3A (dmTTLL3A) (EC 6.3.2.-)	w
 GLYCYLPEPTIDE	fly	FBgn0020392	Nmt	O61613	2	24	Glycylpeptide N-tetradecanoyltransferase (EC 2.3.1.97) (Myri	w

@@ -74,7 +74,7 @@ Q6NM52	arabidopsis-thaliana	Q6NM52	DL3925W	Q6NM52	20	225	60S ribosome subunit bi
 Q6NM71	arabidopsis-thaliana	Q6NM71	At3g56510	Q6NM71	2	44	At3g56510	
 Q6NM81	arabidopsis-thaliana	Q6NM81	At4g28330	Q6NM81	0	1	At4g28330	
 Q6NMA7	arabidopsis-thaliana	Q6NMA7	PLC9	Q6NMA7	1	4	Phosphoinositide phospholipase C 9	
-Q6NMB0	arabidopsis-thaliana	Q6NMB0	At2g30660	Q6NMB0	5	68	Probable 3-hydroxyisobutyryl-CoA hydrolase 3	
+Q6NMB0	arabidopsis-thaliana	Q6NMB0	At2g30660	Q6NMB0	8	71	Probable 3-hydroxyisobutyryl-CoA hydrolase 3	
 Q6NMB4	arabidopsis-thaliana	Q6NMB4	At4g28015	Q6NMB4	0	3	At4g28020	
 Q6NMB7	arabidopsis-thaliana	Q6NMB7	At1g43650	Q6NMB7	0	5	WAT1-related protein At1g43650	
 Q6NMC6	arabidopsis-thaliana	Q6NMC6	ABIL3	Q6NMC6	2	2	Protein ABIL3	
@@ -99,7 +99,8 @@ Q6NMT8	fly	FBgn0033174	CG11125	Q6NMT8	4	25	AT01712p
 Q6NMX2	fly	FBgn0050458	CG30458	Q6NMX2	18	252	GEO09651p1 (RE20733p)	
 Q6NMY2	fly	FBgn0040502	CG8343	Q6NMY2	29	244	RH54371p	
 Q6NMZ4	arabidopsis-thaliana	Q6NMZ4	At4g34412	Q6NMZ4	2	9	At4g34412	
-Q6NN09	fly	FBgn0039830	ATPsynC	Q6NN09	12	165	ATPase protein 9 (ATPase subunit c)	
+Q6NN09	fly	FBgn0039830	ATPsynC	Q6NN09	13	166	ATPase protein 9 (ATPase subunit c)	
+Q6NN09_DROME	fly	FBgn0039830	ATPsynC	Q6NN09	13	166		
 Q6NN18	fly	FBgn0034382	mElo	Q6NN18	3	78	Elongation of very long chain fatty acids protein (EC 2.3.1.	
 Q6NN40	fly	FBgn0033457	Ntmt	Q6NN40	6	12	N-terminal methyltransferase	
 Q6NN55	fly	FBgn0033476	oys	Q6NN55	1	12	Lysophospholipid acyltransferase 6 (LPLAT 6) (EC 2.3.1.-) (E	
@@ -127,7 +128,7 @@ Q6NPD8	arabidopsis-thaliana	Q6NPD8	RTNLB10	Q6NPD8	1	4	Reticulon-like protein B10
 Q6NPE4	arabidopsis-thaliana	Q6NPE4	At5g14440	Q6NPE4	0	1	At5g14440	
 Q6NPE9	arabidopsis-thaliana	Q6NPE9	At4g33690	Q6NPE9	1	11	At4g33690	
 Q6NPF4	arabidopsis-thaliana	Q6NPF4	MED20A	Q6NPF4	5	50	Mediator of RNA polymerase II transcription subunit 20a	
-Q6NPF9	arabidopsis-thaliana	Q6NPF9	At1g76760	Q6NPF9	2	20	Thioredoxin Y1, chloroplastic	
+Q6NPF9	arabidopsis-thaliana	Q6NPF9	At1g76760	Q6NPF9	6	24	Thioredoxin Y1, chloroplastic	
 Q6NPG2	arabidopsis-thaliana	Q6NPG2	SAUR30	Q6NPG2	1	2	At5g53590	
 Q6NPG7	arabidopsis-thaliana	Q6NPG7	At5g43822	Q6NPG7	1	32	Uncharacterized protein At5g43822	
 Q6NPL0	arabidopsis-thaliana	Q6NPL0	CP33C	Q6NPL0	0	5	At4g09040	
@@ -195,6 +196,8 @@ Q6NR09	fly	FBgn0053993	Egfrap	Q6NR09	3	6	EGFR adapter protein
 Q6NR22	fly	FBgn0033195	CG1360	Q6NR22	0	1	RE27803p	
 Q6NR30	fly	FBgn0028953	CG14478	Q6NR30	0	46	RE38958p	
 Q6NR46	fly	FBgn0086532	Spt-I	Q6NR46	6	116	Serine palmitoyltransferase 1 (EC 2.3.1.50) (Long chain base	
+Q6NRV9	xenopus-laevis	Q6NRV9	mfn2.L	Q6NRV9	2	3	MGC81251 protein	
+Q6NRY5	xenopus-laevis	Q6NRY5	cmc1.L	Q6NRY5	2	2	COX assembly mitochondrial protein	
 Q6NS38	human	Q6NS38	ALKBH2	Q6NS38	2	75	DNA oxidative demethylase ALKBH2 (EC 1.14.11.33) (Alkylated 	
 Q6NS45	mus-musculus	Q6NS45	Ccdc66	Q6NS45	1	7	Coiled-coil domain-containing protein 66	
 Q6NS52	mus-musculus	Q6NS52	Dgkb	Q6NS52	0	1	Diacylglycerol kinase beta	
@@ -242,17 +245,37 @@ Q6NTE8	human	Q6NTE8	MRNIP	Q6NTE8	33	532	MRN complex-interacting protein (MRN-int
 Q6NTF7	human	Q6NTF7	APOBEC3H	Q6NTF7	7	144	DNA dC->dU-editing enzyme APOBEC-3H (EC 3.5.4.38) (APOBEC-re	
 Q6NTF9	human	Q6NTF9	RHBDD2	Q6NTF9	15	140	Rhomboid domain-containing protein 2	
 Q6NTI0	zebrafish	Q6NTI0	tsc22d3	Q6NTI0	0	1	TSC22 domain family protein 3	
+Q6NTL0	xenopus-laevis	Q6NTL0	rpia.L	Q6NTL0	1	1	ribose-5-phosphate isomerase	
+Q6NTP3	xenopus-laevis	Q6NTP3	cox6c.S	Q6NTP3	1	1	Cytochrome c oxidase subunit 6C	
+Q6NTP7	xenopus-laevis	Q6NTP7	LOC398139	Q6NTP7	1	2	Aconitate hydratase, mitochondrial	
+Q6NTQ9	xenopus-laevis	Q6NTQ9	ndufa10.S	Q6NTQ9	3	4	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	
+Q6NTR9	xenopus-laevis	Q6NTR9	cox6b1.L	Q6NTR9	5	5	Cytochrome c oxidase subunit	
+Q6NTS1	xenopus-laevis	Q6NTS1	atp5pd.S	Q6NTS1	1	1	ATP synthase subunit d, mitochondrial	
+Q6NTS7	xenopus-laevis	Q6NTS7	prelid2	Q6NTS7	1	4	PRELI domain-containing protein 2	
+Q6NTT6	xenopus-laevis	Q6NTT6	mul1	Q6NTT6	1	1	Mitochondrial ubiquitin ligase activator of nfkb 1	
+Q6NTU0	xenopus-laevis	Q6NTU0	ak3.S	Q6NTU0	6	6	GTP:AMP phosphotransferase AK3, mitochondrial	
+Q6NTU1	xenopus-laevis	Q6NTU1	mrps26.L	Q6NTU1	4	5	MGC82245 protein	
+Q6NTU3	xenopus-laevis	Q6NTU3	pam16-a	Q6NTU3	5	5	Mitochondrial import inner membrane translocase subunit tim1	
+Q6NTU4	xenopus-laevis	Q6NTU4	park7.L	Q6NTU4	2	2	protein deglycase	
+Q6NTY3	xenopus-laevis	Q6NTY3	ca5b.L	Q6NTY3	5	5	Carbonic anhydrase	
+Q6NU05	xenopus-laevis	Q6NU05	hebp1	Q6NU05	7	7	Heme-binding protein 1	
+Q6NU12	xenopus-laevis	Q6NU12	chchd4-a	Q6NU12	2	3	Mitochondrial intermembrane space import and assembly protei	
+Q6NUB5	xenopus-laevis	Q6NUB5	yme1l1.L	Q6NUB5	3	3	MGC81087 protein	
+Q6NUB6	xenopus-laevis	Q6NUB6	nme4.L	Q6NUB6	1	2	Nucleoside diphosphate kinase	
+Q6NUE2	xenopus-laevis	Q6NUE2	cbr4	Q6NUE2	2	6	Carbonyl reductase family member 4	
+Q6NUG0	xenopus-laevis	Q6NUG0	hspe1.L	Q6NUG0	3	4	10 kDa heat shock protein, mitochondrial	
+Q6NUG5	xenopus-laevis	Q6NUG5	MGC78963	Q6NUG5	1	1	MGC78963 protein	
 Q6NUI1	human	Q6NUI1	CCDC144NL	Q6NUI1	0	5	Putative coiled-coil domain-containing protein 144 N-termina	
-Q6NUI2	human	Q6NUI2	GPAT2	Q6NUI2	2	38	Glycerol-3-phosphate acyltransferase 2, mitochondrial (GPAT-	
+Q6NUI2	human	Q6NUI2	GPAT2	Q6NUI2	6	42	Glycerol-3-phosphate acyltransferase 2, mitochondrial (GPAT-	
 Q6NUI6	human	Q6NUI6	CHADL	Q6NUI6	8	114	Chondroadherin-like protein	
 Q6NUJ1	human	Q6NUJ1	PSAPL1	Q6NUJ1	1	29	Proactivator polypeptide-like 1 [Cleaved into: Saposin A-lik	
 Q6NUJ2	human	Q6NUJ2	C11orf87	Q6NUJ2	15	81	Uncharacterized protein C11orf87	
 Q6NUJ5	human	Q6NUJ5	PWWP2B	Q6NUJ5	10	46	PWWP domain-containing protein 2B	
-Q6NUK1	human	Q6NUK1	SLC25A24	Q6NUK1	1	231	Mitochondrial adenyl nucleotide antiporter SLC25A24 (Mitocho	
+Q6NUK1	human	Q6NUK1	SLC25A24	Q6NUK1	2	232	Mitochondrial adenyl nucleotide antiporter SLC25A24 (Mitocho	
 Q6NUK4	human	Q6NUK4	REEP3	Q6NUK4	12	42	Receptor expression-enhancing protein 3	
 Q6NUM6	human	Q6NUM6	TYW1B	Q6NUM6	2	42	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	
 Q6NUM9	human	Q6NUM9	RETSAT	Q6NUM9	6	198	All-trans-retinol 13,14-reductase (EC 1.3.99.23) (All-trans-	
-Q6NUN0	human	Q6NUN0	ACSM5	Q6NUN0	3	82	Acyl-coenzyme A synthetase ACSM5, mitochondrial (EC 6.2.1.2)	
+Q6NUN0	human	Q6NUN0	ACSM5	Q6NUN0	4	83	Acyl-coenzyme A synthetase ACSM5, mitochondrial (EC 6.2.1.2)	
 Q6NUN7	human	Q6NUN7	JHY	Q6NUN7	3	21	Jhy protein homolog	
 Q6NUN9	human	Q6NUN9	ZNF746	Q6NUN9	44	328	Zinc finger protein 746 (Parkin-interacting substrate) (PARI	
 Q6NUP7	human	Q6NUP7	PPP4R4	Q6NUP7	14	83	Serine/threonine-protein phosphatase 4 regulatory subunit 4	
@@ -273,7 +296,8 @@ Q6NUV6	zebrafish	Q6NUV6	gadd45gb.1	Q6NUV6	0	4	Growth arrest and DNA-damage-induc
 Q6NUW5	zebrafish	Q6NUW5	anp32e	Q6NUW5	2	26	Acidic leucine-rich nuclear phosphoprotein 32 family member 	
 Q6NUW9	zebrafish	Q6NUW9	fggy	Q6NUW9	1	53	FGGY carbohydrate kinase domain-containing protein	
 Q6NUX8	zebrafish	Q6NUX8	rhoaa	Q6NUX8	28	92	Rho-related GTP-binding protein RhoA-A	
-Q6NUY0	zebrafish	Q6NUY0	ak4	Q6NUY0	0	27	Adenylate kinase 4, mitochondrial	
+Q6NUY0	zebrafish	Q6NUY0	ak4	Q6NUY0	5	32	Adenylate kinase 4, mitochondrial	
+Q6NUY0_DANRE	zebrafish	Q6NUY0	ak4	Q6NUY0	5	32		
 Q6NUY4	zebrafish	Q6NUY4	trappc6bl	Q6NUY4	8	23	Trafficking protein particle complex subunit 6B	
 Q6NUY9	zebrafish	Q6NUY9	mapre1b	Q6NUY9	4	49	Microtubule-associated protein RP/EB family member 1	
 Q6NUZ2	zebrafish	Q6NUZ2	ttyh2l	Q6NUZ2	0	3	Protein tweety homolog 2-like	
@@ -290,7 +314,8 @@ Q6NV25	zebrafish	Q6NV25	sumo3l	Q6NV25	34	111	Small ubiquitin-related modifier 3-
 Q6NV26	zebrafish	Q6NV26	sdad1	Q6NV26	8	88	Protein SDA1 homolog	
 Q6NV31	zebrafish	Q6NV31	wdr82	Q6NV31	25	176	WD repeat-containing protein 82	
 Q6NV32	zebrafish	Q6NV32	ptmaa	Q6NV32	2	25	Prothymosin alpha-A	
-Q6NV33	zebrafish	Q6NV33	idh3a	Q6NV33	3	19	Isocitrate dehydrogenase	
+Q6NV33	zebrafish	Q6NV33	idh3a	Q6NV33	7	23	Isocitrate dehydrogenase	
+Q6NV33_DANRE	zebrafish	Q6NV33	idh3a	Q6NV33	7	23		
 Q6NV34	zebrafish	Q6NV34	decr2	Q6NV34	0	35	Peroxisomal 2,4-dienoyl-CoA reductase	
 Q6NV35	zebrafish	Q6NV35	gclc	Q6NV35	1	12	Glutamate--cysteine ligase	
 Q6NV38	zebrafish	Q6NV38	tmem41ab	Q6NV38	0	1	Transmembrane protein 41A-B	
@@ -302,10 +327,10 @@ Q6NV83	mus-musculus	Q6NV83	U2surp	Q6NV83	9	36	U2 snRNP-associated SURP motif-con
 Q6NV92	mus-musculus	Q6NV92	Zfp941	Q6NV92	1	1	Zinc finger protein 941	
 Q6NV99	mus-musculus	Q6NV99	Haus6	Q6NV99	18	63	HAUS augmin-like complex, subunit 6	
 Q6NVA6	zebrafish	Q6NVA6	myl9b	Q6NVA6	1	41	Myosin regulatory light polypeptide 9b	
-Q6NVC5	zebrafish	Q6NVC5	rhot1a	Q6NVC5	6	48	Mitochondrial Rho GTPase 1-A	
+Q6NVC5	zebrafish	Q6NVC5	rhot1a	Q6NVC5	10	53	Mitochondrial Rho GTPase 1-A	
 Q6NVD9	mus-musculus	Q6NVD9	Bfsp2	Q6NVD9	2	9	Phakinin	
 Q6NVE8	mus-musculus	Q6NVE8	Wdr44	Q6NVE8	1	3	WD repeat-containing protein 44	
-Q6NVE9	mus-musculus	Q6NVE9	Pptc7	Q6NVE9	0	1	Protein phosphatase PTC7 homolog	
+Q6NVE9	mus-musculus	Q6NVE9	Pptc7	Q6NVE9	7	9	Protein phosphatase PTC7 homolog	
 Q6NVF0	mus-musculus	Q6NVF0	Ocrl	Q6NVF0	12	43	Inositol polyphosphate 5-phosphatase OCRL	
 Q6NVF4	mus-musculus	Q6NVF4	Helb	Q6NVF4	1	23	DNA helicase B	
 Q6NVF9	mus-musculus	Q6NVF9	Cpsf6	Q6NVF9	7	53	Cleavage and polyadenylation specificity factor subunit 6	
@@ -320,13 +345,13 @@ Q6NVV1	human	Q6NVV1	RPL13AP3	Q6NVV1	5	76	Putative ribosomal protein uL13-like (6
 Q6NVV3	human	Q6NVV3	NIPAL1	Q6NVV3	7	139	Magnesium transporter NIPA3 (NIPA-like protein 1) (Non-impri	
 Q6NVV7	human	Q6NVV7	CDPF1	Q6NVV7	10	99	Cysteine-rich DPF motif domain-containing protein 1	
 Q6NVV9	human	Q6NVV9	ADAM5	Q6NVV9	1	4	Putative disintegrin and metalloproteinase domain-containing	
-Q6NVY1	human	Q6NVY1	HIBCH	Q6NVY1	21	278	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial (EC 3.1.2.4	
+Q6NVY1	human	Q6NVY1	HIBCH	Q6NVY1	27	283	3-hydroxyisobutyryl-CoA hydrolase, mitochondrial (EC 3.1.2.4	
 Q6NW29	human	Q6NW29	RWDD4	Q6NW29	15	125	RWD domain-containing protein 4 (Protein FAM28A)	
 Q6NW34	human	Q6NW34	RMP64	Q6NW34	65	309	Ribonuclease MRP subunit P64 (Nucleolus and neural progenito	
 Q6NW40	human	Q6NW40	RGMB	Q6NW40	14	90	Repulsive guidance molecule B (DRG11-responsive axonal guida	
 Q6NW46	zebrafish	Q6NW46	wrnip1	Q6NW46	1	9	ATPase WRNIP1	
 Q6NW47	zebrafish	Q6NW47	ckap4	Q6NW47	0	12	Cytoskeleton-associated protein 4	
-Q6NW52	zebrafish	Q6NW52	msrb2	Q6NW52	3	40	Methionine-R-sulfoxide reductase B2, mitochondrial	
+Q6NW52	zebrafish	Q6NW52	msrb2	Q6NW52	14	52	Methionine-R-sulfoxide reductase B2, mitochondrial	
 Q6NW56	zebrafish	Q6NW56	khdrbs1a	Q6NW56	1	7	KH domain-containing, RNA-binding, signal transduction-assoc	
 Q6NW58	zebrafish	Q6NW58	spast	Q6NW58	3	60	Spastin	
 Q6NW59	zebrafish	Q6NW59	atf4	Q6NW59	34	46	Cyclic AMP-dependent transcription factor ATF-4	
@@ -342,17 +367,22 @@ Q6NW95	zebrafish	Q6NW95	fbxl15	Q6NW95	1	19	F-box/LRR-repeat protein 15
 Q6NW98	zebrafish	Q6NW98	aaas	Q6NW98	4	43	Achalasia, adrenocortical insufficiency, alacrimia	
 Q6NWA8	zebrafish	Q6NWA8	tada1	Q6NWA8	16	146	Transcriptional adapter 1	
 Q6NWB3	zebrafish	Q6NWB3	sf3b4	Q6NWB3	9	220	Splicing factor 3B subunit 4	
-Q6NWC1	zebrafish	Q6NWC1	vdac1	Q6NWC1	1	137	Non-selective voltage-gated ion channel VDAC1	
+Q6NWC1	zebrafish	Q6NWC1	vdac1	Q6NWC1	3	139	Non-selective voltage-gated ion channel VDAC1	
+Q6NWC1_DANRE	zebrafish	Q6NWC1	vdac1	Q6NWC1	3	139		
 Q6NWC3	zebrafish	Q6NWC3	rps2	Q6NWC3	28	699	Small ribosomal subunit protein uS5	
 Q6NWC6	zebrafish	Q6NWC6	cpsf6	Q6NWC6	6	24	Cleavage and polyadenylation specificity factor subunit 6	
+Q6NWC8	zebrafish	Q6NWC8	zgc:85813	Q6NWC8	1	1	Propionyl Coenzyme A carboxylase, beta polypeptide	
+Q6NWC8_DANRE	zebrafish	Q6NWC8	zgc:85813	Q6NWC8	1	1		
 Q6NWC9	zebrafish	Q6NWC9	gkap1	Q6NWC9	2	8	G kinase-anchoring protein 1	
-Q6NWD4	zebrafish	Q6NWD4	timm50	Q6NWD4	3	32	Mitochondrial import inner membrane translocase subunit TIM5	
+Q6NWD4	zebrafish	Q6NWD4	timm50	Q6NWD4	5	34	Mitochondrial import inner membrane translocase subunit TIM5	
 Q6NWE1	zebrafish	Q6NWE1	phf10	Q6NWE1	4	51	PHD finger protein 10	
 Q6NWE6	zebrafish	Q6NWE6	slc5a1	Q6NWE6	0	1	Sodium/glucose cotransporter 1	
 Q6NWF0	zebrafish	Q6NWF0	zgc:85777	Q6NWF0	0	5	Zgc:85777	
 Q6NWF1	zebrafish	Q6NWF1	slc2a12	Q6NWF1	3	106	Solute carrier family 2, facilitated glucose transporter mem	
 Q6NWF4	zebrafish	Q6NWF4	vps25	Q6NWF4	7	38	Vacuolar protein-sorting-associated protein 25	
 Q6NWF6	zebrafish	Q6NWF6	krt8	Q6NWF6	19	58	Keratin, type II cytoskeletal 8	
+Q6NWF7	zebrafish	Q6NWF7	zgc:85763	Q6NWF7	2	2	Zgc:85763	
+Q6NWF7_DANRE	zebrafish	Q6NWF7	zgc:85763	Q6NWF7	2	2		
 Q6NWG0	zebrafish	Q6NWG0	tspan36	Q6NWG0	1	10	Tetraspanin-36	
 Q6NWG1	zebrafish	Q6NWG1	lrrc59	Q6NWG1	1	23	Leucine-rich repeat-containing protein 59	
 Q6NWG4	zebrafish	Q6NWG4	prmt6	Q6NWG4	4	52	Protein arginine N-methyltransferase 6	
@@ -360,10 +390,12 @@ Q6NWH0	zebrafish	Q6NWH0	P5436	Q6NWH0	1	1	UPF0696 protein C11orf68 homolog
 Q6NWH1	zebrafish	Q6NWH1	dcaf10	Q6NWH1	7	65	DDB1- and CUL4-associated factor 10	
 Q6NWH2	zebrafish	Q6NWH2	marcksl1b	Q6NWH2	0	2	MARCKS-related protein 1-B	
 Q6NWH3	zebrafish	Q6NWH3	tomm40l	Q6NWH3	5	27	Mitochondrial import receptor subunit TOM40B	
-Q6NWH5	zebrafish	Q6NWH5	tmem11	Q6NWH5	0	1	Transmembrane protein 11, mitochondrial	
+Q6NWH5	zebrafish	Q6NWH5	tmem11	Q6NWH5	7	8	Transmembrane protein 11, mitochondrial	
 Q6NWH8	zebrafish	Q6NWH8	ybey	Q6NWH8	3	102	Endoribonuclease YbeY isoform 1	
 Q6NWI1	zebrafish	Q6NWI1	rsrc2	Q6NWI1	1	1	Arginine/serine-rich coiled-coil protein 2	
 Q6NWI4	zebrafish	Q6NWI4	ypel3	Q6NWI4	0	10	Protein yippee-like 3	
+Q6NWI5	zebrafish	Q6NWI5	si:dkey-57m14.1	Q6NWI5	1	1	methylcrotonoyl-CoA carboxylase	
+Q6NWI5_DANRE	zebrafish	Q6NWI5	si:dkey-57m14.1	Q6NWI5	1	1		
 Q6NWI7	zebrafish	Q6NWI7	tmed10	Q6NWI7	11	73	Tmed10 protein	
 Q6NWJ0	zebrafish	Q6NWJ0	bcl7ba	Q6NWJ0	1	15	B-cell CLL/lymphoma 7 protein family member B-A	
 Q6NWJ2	zebrafish	Q6NWJ2	spcs3	Q6NWJ2	1	6	Signal peptidase complex subunit 3	
@@ -471,19 +503,22 @@ Q6NYA1	zebrafish	Q6NYA1	hnrnpabb	Q6NYA1	6	128	Heterogeneous nuclear ribonucleopr
 Q6NYB4	zebrafish	Q6NYB4	mab21l1	Q6NYB4	0	1	Putative nucleotidyltransferase MAB21L1	
 Q6NYC1	human	Q6NYC1	JMJD6	Q6NYC1	17	285	Bifunctional arginine demethylase and lysyl-hydroxylase JMJD	
 Q6NYC8	human	Q6NYC8	PPP1R18	Q6NYC8	17	157	Phostensin (Protein phosphatase 1 F-actin cytoskeleton-targe	
-Q6NYD1	zebrafish	Q6NYD1	romo1	Q6NYD1	1	19	Reactive oxygen species modulator 1	
+Q6NYD1	zebrafish	Q6NYD1	romo1	Q6NYD1	4	22	Reactive oxygen species modulator 1	
 Q6NYD2	zebrafish	Q6NYD2	sfxn2	Q6NYD2	0	3	Sidoreflexin	
 Q6NYD4	zebrafish	Q6NYD4	mak16	Q6NYD4	9	150	Protein MAK16 homolog	
 Q6NYD6	zebrafish	Q6NYD6	rab5b	Q6NYD6	30	59	RAB5B, member RAS oncogene family	
-Q6NYD7	zebrafish	Q6NYD7	ociad1	Q6NYD7	0	1	OCIA domain-containing protein 1	
+Q6NYD7	zebrafish	Q6NYD7	ociad1	Q6NYD7	0	3	OCIA domain-containing protein 1	
 Q6NYE1	zebrafish	Q6NYE1	fgb	Q6NYE1	2	49	Fibrinogen beta chain	
 Q6NYE2	zebrafish	Q6NYE2	rcc2	Q6NYE2	2	24	Protein RCC2 homolog	
 Q6NYE3	zebrafish	Q6NYE3	pgm2	Q6NYE3	0	5	Phosphoglucomutase-2	
 Q6NYE4	zebrafish	Q6NYE4	agmo	Q6NYE4	0	5	Alkylglycerol monooxygenase	
-Q6NYE6	zebrafish	Q6NYE6	cyb5r3	Q6NYE6	0	13	NADH-cytochrome b5 reductase	
+Q6NYE6	zebrafish	Q6NYE6	cyb5r3	Q6NYE6	3	18	NADH-cytochrome b5 reductase	
+Q6NYE6_DANRE	zebrafish	Q6NYE6	cyb5r3	Q6NYE6	3	18		
 Q6NYE7	zebrafish	Q6NYE7	tmem192	Q6NYE7	0	13	Transmembrane protein 192	
+Q6NYF0	zebrafish	Q6NYF0	lactb2	Q6NYF0	3	3	Endoribonuclease LACTB2	
 Q6NYF1	zebrafish	Q6NYF1	yipf4	Q6NYF1	5	22	Protein YIPF4	
-Q6NYF7	zebrafish	Q6NYF7	atp5pf	Q6NYF7	2	51	ATP synthase-coupling factor 6, mitochondrial	
+Q6NYF7	zebrafish	Q6NYF7	atp5pf	Q6NYF7	4	53	ATP synthase-coupling factor 6, mitochondrial	
+Q6NYF7_DANRE	zebrafish	Q6NYF7	atp5pf	Q6NYF7	4	53		
 Q6NYG0	zebrafish	Q6NYG0	pnp5a	Q6NYG0	3	4	Purine nucleoside phosphorylase	
 Q6NYG6	zebrafish	Q6NYG6	tdrd3	Q6NYG6	6	51	Tudor domain-containing protein 3	
 Q6NYG8	zebrafish	Q6NYG8	dpyd	Q6NYG8	0	7	Dihydropyrimidine dehydrogenase	
@@ -495,15 +530,18 @@ Q6NYJ9	zebrafish	Q6NYJ9	ap2b1	Q6NYJ9	43	215	AP complex subunit beta
 Q6NYK0	zebrafish	Q6NYK0	tesca	Q6NYK0	6	23	Calcineurin B homologous protein 3	
 Q6NYK1	zebrafish	Q6NYK1	dhps	Q6NYK1	2	5	Deoxyhypusine synthase	
 Q6NYK3	zebrafish	Q6NYK3	spred2	Q6NYK3	1	13	Sprouty-related, EVH1 domain-containing protein 2	
-Q6NYK8	zebrafish	Q6NYK8	marchf5	Q6NYK8	0	15	E3 ubiquitin-protein ligase MARCHF5	
+Q6NYK8	zebrafish	Q6NYK8	marchf5	Q6NYK8	1	16	E3 ubiquitin-protein ligase MARCHF5	
 Q6NYL2	zebrafish	Q6NYL2	eif4ebp2	Q6NYL2	4	8	Eukaryotic translation initiation factor 4E-binding protein 	
-Q6NYL3	zebrafish	Q6NYL3	ehhadh	Q6NYL3	1	130	Peroxisomal bifunctional enzyme	
+Q6NYL3	zebrafish	Q6NYL3	ehhadh	Q6NYL3	2	131	Peroxisomal bifunctional enzyme	
 Q6NYL5	zebrafish	Q6NYL5	gpt2l	Q6NYL5	2	7	Alanine aminotransferase 2-like	
 Q6NYM1	zebrafish	Q6NYM1	klhl21	Q6NYM1	18	44	Kelch-like protein 21	
+Q6NYM8	zebrafish	Q6NYM8	zgc:77479	Q6NYM8	3	3	Hydroxyacid-oxoacid transhydrogenase, mitochondrial	
+Q6NYM8_DANRE	zebrafish	Q6NYM8	zgc:77479	Q6NYM8	3	3		
 Q6NYN3	zebrafish	Q6NYN3	ipo7	Q6NYN3	12	225	Importin-7	
 Q6NYP0	zebrafish	Q6NYP0	tmem208	Q6NYP0	0	10	Transmembrane protein 208	
 Q6NYP6	zebrafish	Q6NYP6	ppm1aa	Q6NYP6	2	30	Protein phosphatase 1A	
-Q6NYQ7	zebrafish	Q6NYQ7	nnt	Q6NYQ7	0	18	NAD(P) transhydrogenase, mitochondrial	
+Q6NYQ7	zebrafish	Q6NYQ7	nnt	Q6NYQ7	1	19	NAD(P) transhydrogenase, mitochondrial	
+Q6NYQ7_DANRE	zebrafish	Q6NYQ7	nnt	Q6NYQ7	1	19		
 Q6NYR8	zebrafish	Q6NYR8	npl	Q6NYR8	0	1	N-acetylneuraminate lyase	
 Q6NYS3	zebrafish	Q6NYS3	cul1a	Q6NYS3	33	293	Cullin-1	
 Q6NYS4	zebrafish	Q6NYS4	pebp1	Q6NYS4	13	309	Phosphatidylethanolamine binding protein	
@@ -516,6 +554,8 @@ Q6NYU5	zebrafish	Q6NYU5	gja9b	Q6NYU5	0	38	Gap junction protein
 Q6NYU7	zebrafish	Q6NYU7	uprt	Q6NYU7	3	13	Uracil phosphoribosyltransferase homolog	
 Q6NYU8	zebrafish	Q6NYU8	hnrnpaba	Q6NYU8	8	129	Heterogeneous nuclear ribonucleoprotein A/B	
 Q6NYV1	zebrafish	Q6NYV1	psmd3	Q6NYV1	11	116	26S proteasome non-ATPase regulatory subunit 3	
+Q6NYV2	zebrafish	Q6NYV2	zgc:77363	Q6NYV2	9	9	Growth hormone-inducible transmembrane protein	
+Q6NYV2_DANRE	zebrafish	Q6NYV2	zgc:77363	Q6NYV2	9	9		
 Q6NYV3	zebrafish	Q6NYV3	h1-0	Q6NYV3	1	100	H1.0 linker histone	
 Q6NYV5	zebrafish	Q6NYV5	sap30l	Q6NYV5	7	41	Histone deacetylase complex subunit SAP30L	
 Q6NYV7	zebrafish	Q6NYV7	pcdh10a	Q6NYV7	1	1	Protocadherin 10a	
@@ -589,6 +629,8 @@ Q6NZW8	zebrafish	Q6NZW8	arl8ba	Q6NZW8	4	16	ADP-ribosylation factor-like protein 
 Q6NZW9	zebrafish	Q6NZW9	mafa	Q6NZW9	24	28	Transcription factor Maf	
 Q6NZY4	human	Q6NZY4	ZCCHC8	Q6NZY4	16	166	Zinc finger CCHC domain-containing protein 8 (TRAMP-like com	
 Q6NZY7	human	Q6NZY7	CDC42EP5	Q6NZY7	6	68	Cdc42 effector protein 5 (Binder of Rho GTPases 3)	
+Q6NZZ0	zebrafish	Q6NZZ0	fb82c12	Q6NZZ0	4	4	Mitochondrial import inner membrane translocase subunit TIM1	
+Q6NZZ0_DANRE	zebrafish	Q6NZZ0	fb82c12	Q6NZZ0	4	4		
 Q6NZZ1	zebrafish	Q6NZZ1	zgc:77938	Q6NZZ1	4	4	Alcohol dehydrogenase 6	
 Q6NZZ2	zebrafish	Q6NZZ2	arpc4	Q6NZZ2	11	43	Actin-related protein 2/3 complex subunit 4	
 Q6NZZ3	zebrafish	Q6NZZ3	zgc:77929	Q6NZZ3	0	1	UPF0669 protein C6orf120 homolog	

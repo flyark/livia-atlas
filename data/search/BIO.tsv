@@ -43,7 +43,7 @@ BIOD1	escherichia-coli-83333	P13000	bioD1	P13000	1	1	ATP-dependent dethiobiotin 
 BIOD1	salmonella-typhimurium	Q8ZQQ5	bioD1	Q8ZQQ5	1	1	ATP-dependent dethiobiotin synthetase BioD 1	
 BIOD2	escherichia-coli-83333	P0A6E9	bioD2	P0A6E9	1	3	ATP-dependent dethiobiotin synthetase BioD 2	
 BIOD2	salmonella-typhimurium	Q8ZPK6	bioD2	Q8ZPK6	1	1	ATP-dependent dethiobiotin synthetase BioD 2	
-BIOF	arabidopsis-thaliana	Q8GW43	BIOF	Q8GW43	0	9	8-amino-7-oxononanoate synthase	
+BIOF	arabidopsis-thaliana	Q8GW43	BIOF	Q8GW43	1	10	8-amino-7-oxononanoate synthase	
 BIOF	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBK3	bioF	Q0PBK3	0	23	8-amino-7-oxononanoate synthase	
 BIOF	cladophialophora-carrionii	A0A1C1CE96	bioF	A0A1C1CE96	0	3	8-amino-7-oxononanoate synthase	
 BIOF	escherichia-coli-83333	P12998	bioF	P12998	0	7	8-amino-7-oxononanoate synthase	
@@ -90,7 +90,7 @@ BIOGENESIS	human	O96011	PEX11B	O96011	4	61	Peroxisomal membrane protein 11B (Per
 BIOGENESIS	human	P28328	PEX2	P28328	4	126	Peroxisome biogenesis factor 2 (EC 2.3.2.27) (EC 2.3.2.36) (	w
 BIOGENESIS	human	P40855	PEX19	P40855	25	197	Peroxisomal biogenesis factor 19 (33 kDa housekeeping protei	w
 BIOGENESIS	human	P56589	PEX3	P56589	14	218	Peroxisomal biogenesis factor 3 (Peroxin-3) (Peroxisomal ass	w
-BIOGENESIS	human	P78537	BLOC1S1	P78537	23	447	Biogenesis of lysosome-related organelles complex 1 subunit 	w
+BIOGENESIS	human	P78537	BLOC1S1	P78537	24	448	Biogenesis of lysosome-related organelles complex 1 subunit 	w
 BIOGENESIS	human	Q13608	PEX6	Q13608	6	142	Peroxisomal ATPase PEX6 (EC 3.6.4.-) (Peroxin-6) (Peroxisoma	w
 BIOGENESIS	human	Q14137	BOP1	Q14137	50	582	Ribosome biogenesis protein BOP1 (Block of proliferation 1 p	w
 BIOGENESIS	human	Q14146	URB2	Q14146	22	319	Unhealthy ribosome biogenesis protein 2 homolog	w
@@ -145,7 +145,7 @@ BIOGENESIS	worm	Q95XD3	blos-2	Q95XD3	12	19	Biogenesis of lysosome-related organe
 BIOGENESIS	worm	Q9NEU5	Y39B6A.33	Q9NEU5	9	72	Ribosome biogenesis protein NOP53	w
 BIOGENESIS	worm	Q9U2A9	Y48B6A.1	Q9U2A9	15	126	Ribosome biogenesis protein BOP1 homolog	w
 BIOGENESIS	worm	Q9XVT0	rrsr-1	Q9XVT0	13	60	Ribosome biogenesis regulatory protein homolog	w
-BIOGENESIS	worm	Q9XVZ9	CELE_Y54G11A.9	Q9XVZ9	4	56	FeS cluster biogenesis domain-containing protein	w
+BIOGENESIS	worm	Q9XVZ9	CELE_Y54G11A.9	Q9XVZ9	5	57	FeS cluster biogenesis domain-containing protein	w
 BIOGENESIS	worm	U4PRZ3	CELE_Y73B6BL.289	U4PRZ3	8	18	Biogenesis of lysosome-related organelles complex 1 subunit 	w
 BIOGENESIS	yeast	P23493	MBR1	P23493	0	6	Mitochondrial biogenesis regulation protein 1	w
 BIOGENESIS	yeast	P28795	PEX3	P28795	5	24	Peroxisomal biogenesis factor 3	w
@@ -223,11 +223,11 @@ BIORIENTATION	human	Q96IK1	BOD1	Q96IK1	11	110	Biorientation of chromosomes in ce
 BIORIENTATION	zebrafish	Q08CT1	bod1	Q08CT1	1	10	Biorientation of chromosomes in cell division 1	w
 BIOSYNTHESI	human	Q92643	PIGK	Q92643	14	123	GPI-anchor transamidase (EC 2.6.1.-) (GPI-anchor transamidas	w
 BIOSYNTHESIS	fly	FBgn0023545	PIG-K	Q8T4E1	14	70	Putative GPI-anchor transamidase (GPI transamidase) (EC 3.-.	w
-BIOSYNTHESIS	fly	FBgn0029502	Coq7	Q9W3W4	1	26	5-demethoxyubiquinone hydroxylase, mitochondrial (DMQ hydrox	w
+BIOSYNTHESIS	fly	FBgn0029502	Coq7	Q9W3W4	7	32	5-demethoxyubiquinone hydroxylase, mitochondrial (DMQ hydrox	w
 BIOSYNTHESIS	fly	FBgn0030035	PIG-T	Q9W3G0	5	18	Phosphatidylinositol glycan anchor biosynthesis class T (RE5	w
-BIOSYNTHESIS	fly	FBgn0030460	Coq5	Q9VYF8	1	14	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	w
+BIOSYNTHESIS	fly	FBgn0030460	Coq5	Q9VYF8	2	15	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	w
 BIOSYNTHESIS	fly	FBgn0031422	PIG-Wa	Q9VQB8	1	15	Phosphatidylinositol-glycan biosynthesis class W protein (EC	w
-BIOSYNTHESIS	fly	FBgn0031713	Coq6	Q9VMQ5	2	72	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial (E	w
+BIOSYNTHESIS	fly	FBgn0031713	Coq6	Q9VMQ5	3	73	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial (E	w
 BIOSYNTHESIS	fly	FBgn0032052	PIG-U	Q9VLK0	3	20	LD37974p (Phosphatidylinositol glycan anchor biosynthesis cl	w
 BIOSYNTHESIS	fly	FBgn0032922	Coq3	Q9VIF3	1	9	Ubiquinone biosynthesis O-methyltransferase, mitochondrial (	w
 BIOSYNTHESIS	fly	FBgn0035265	PIG-Wb	Q9W096	1	11	Phosphatidylinositol-glycan biosynthesis class W protein (EC	w
@@ -241,17 +241,17 @@ BIOSYNTHESIS	fly	FBgn0037883	Dph3	Q9VGQ9	2	26	Diphthamide biosynthesis protein 3
 BIOSYNTHESIS	fly	FBgn0039241	Atic	Q9VC18	0	104	Bifunctional purine biosynthesis protein ATIC (EC 2.1.2.3) (	w
 BIOSYNTHESIS	fly	FBgn0039405	PIG-P	Q8MSE4	4	17	GM30016p2 (Phosphatidylinositol glycan anchor biosynthesis c	w
 BIOSYNTHESIS	fly	FBgn0050381	PIG-X	A0A0B4LES9	4	103	Phosphatidylinositol-glycan biosynthesis class X protein	w
-BIOSYNTHESIS	fly	FBgn0050493	Coq9	Q8MKN0	5	14	Ubiquinone biosynthesis protein COQ9, mitochondrial	w
+BIOSYNTHESIS	fly	FBgn0050493	Coq9	Q8MKN0	7	16	Ubiquinone biosynthesis protein COQ9, mitochondrial	w
 BIOSYNTHESIS	fly	FBgn0052174	Coq4	Q9VVG6	2	12	Ubiquinone biosynthesis protein COQ4 homolog, mitochondrial 	w
 BIOSYNTHESIS	fly	FBgn0086448	PIG-Q	Q8IR17	1	16	Phosphatidylinositol glycan anchor biosynthesis class Q, iso	w
 BIOSYNTHESIS	fly	FBgn0086532	Spt-I	Q6NR46	6	116	Serine palmitoyltransferase 1 (EC 2.3.1.50) (Long chain base	w
 BIOSYNTHESIS	fly	FBgn0259933	Dpm2	E1JIA5	2	12	Dolichol phosphate-mannose biosynthesis regulatory protein	w
-BIOSYNTHESIS	fly	FBgn0263241	Mocs1	Q8IQF1	0	7	Molybdenum cofactor biosynthesis protein 1 [Includes: GTP 3'	w
+BIOSYNTHESIS	fly	FBgn0263241	Mocs1	Q8IQF1	2	9	Molybdenum cofactor biosynthesis protein 1 [Includes: GTP 3'	w
 BIOSYNTHESIS	fly	FBgn0265190	PIG-S	Q9VC10	5	24	Phosphatidylinositol glycan anchor biosynthesis class S (SD1	w
 BIOSYNTHESIS	fly	FBgn0266438	PIG-Z	Q8MT80	0	7	GPI mannosyltransferase 4 (EC 2.4.1.-) (GPI mannosyltransfer	w
 BIOSYNTHESIS	human	O15269	SPTLC1	O15269	17	192	Serine palmitoyltransferase 1 (EC 2.3.1.50) (Long chain base	w
-BIOSYNTHESIS	human	O15270	SPTLC2	O15270	13	146	Serine palmitoyltransferase 2 (EC 2.3.1.50) (Long chain base	w
-BIOSYNTHESIS	human	O75208	COQ9	O75208	27	294	Ubiquinone biosynthesis protein COQ9, mitochondrial	w
+BIOSYNTHESIS	human	O15270	SPTLC2	O15270	17	150	Serine palmitoyltransferase 2 (EC 2.3.1.50) (Long chain base	w
+BIOSYNTHESIS	human	O75208	COQ9	O75208	29	296	Ubiquinone biosynthesis protein COQ9, mitochondrial	w
 BIOSYNTHESIS	human	O94777	DPM2	O94777	14	121	Dolichol phosphate-mannose biosynthesis regulatory protein (	w
 BIOSYNTHESIS	human	O95427	PIGN	O95427	4	96	GPI ethanolamine phosphate transferase 1 (EC 2.-.-.-) (GPI-e	w
 BIOSYNTHESIS	human	P31939	ATIC	P31939	0	219	Bifunctional purine biosynthesis protein ATIC (AICAR transfo	w
@@ -259,7 +259,7 @@ BIOSYNTHESIS	human	P37287	PIGA	P37287	9	110	Phosphatidylinositol N-acetylglucosa
 BIOSYNTHESIS	human	Q14442	PIGH	Q14442	12	201	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	w
 BIOSYNTHESIS	human	Q3MUY2	PIGY	Q3MUY2	9	67	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	w
 BIOSYNTHESIS	human	Q5H8A4	PIGG	Q5H8A4	16	85	GPI ethanolamine phosphate transferase 2, catalytic subunit 	w
-BIOSYNTHESIS	human	Q5HYK3	COQ5	Q5HYK3	7	193	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	w
+BIOSYNTHESIS	human	Q5HYK3	COQ5	Q5HYK3	10	195	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	w
 BIOSYNTHESIS	human	Q6P3W2	DNAJC24	Q6P3W2	13	125	DnaJ homolog subfamily C member 24 (CSL-type zinc finger-con	w
 BIOSYNTHESIS	human	Q7Z7B1	PIGW	Q7Z7B1	1	43	Glucosaminyl-phosphatidylinositol-acyltransferase PIGW (GlcN	w
 BIOSYNTHESIS	human	Q86VD9	PIGZ	Q86VD9	0	23	GPI alpha-1,2-mannosyltransferase 4 (EC 2.4.1.-) (GPI mannos	w
@@ -279,27 +279,27 @@ BIOSYNTHESIS	human	Q9H2P9	DPH5	Q9H2P9	2	61	Diphthine methyl ester synthase (EC 2
 BIOSYNTHESIS	human	Q9H3S5	PIGM	Q9H3S5	9	85	GPI alpha-1,4-mannosyltransferase I, catalytic subunit (EC 2	w
 BIOSYNTHESIS	human	Q9NUD9	PIGV	Q9NUD9	0	19	GPI alpha-1,6-mannosyltransferase 2 (EC 2.4.1.-) (GPI mannos	w
 BIOSYNTHESIS	human	Q9NUV7	SPTLC3	Q9NUV7	11	56	Serine palmitoyltransferase 3 (EC 2.3.1.50) (Long chain base	w
-BIOSYNTHESIS	human	Q9NZB8	MOCS1	Q9NZB8	5	131	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	w
-BIOSYNTHESIS	human	Q9NZJ6	COQ3	Q9NZJ6	9	172	Ubiquinone biosynthesis O-methyltransferase, mitochondrial (	w
-BIOSYNTHESIS	human	Q9Y234	LIPT1	Q9Y234	8	49	Lipoyl amidotransferase LIPT1, mitochondrial (EC 2.3.1.200) 	w
+BIOSYNTHESIS	human	Q9NZB8	MOCS1	Q9NZB8	8	135	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	w
+BIOSYNTHESIS	human	Q9NZJ6	COQ3	Q9NZJ6	13	176	Ubiquinone biosynthesis O-methyltransferase, mitochondrial (	w
+BIOSYNTHESIS	human	Q9Y234	LIPT1	Q9Y234	18	59	Lipoyl amidotransferase LIPT1, mitochondrial (EC 2.3.1.200) 	w
 BIOSYNTHESIS	human	Q9Y2B2	PIGL	Q9Y2B2	3	61	N-acetylglucosaminyl-phosphatidylinositol de-N-acetylase (EC	w
-BIOSYNTHESIS	human	Q9Y2Z9	COQ6	Q9Y2Z9	6	166	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial (E	w
-BIOSYNTHESIS	human	Q9Y3A0	COQ4	Q9Y3A0	5	81	Ubiquinone biosynthesis protein COQ4 homolog, mitochondrial 	w
+BIOSYNTHESIS	human	Q9Y2Z9	COQ6	Q9Y2Z9	13	173	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial (E	w
+BIOSYNTHESIS	human	Q9Y3A0	COQ4	Q9Y3A0	7	83	Ubiquinone biosynthesis protein COQ4 homolog, mitochondrial 	w
 BIOSYNTHESIS	worm	A0A1I6CM92	CELE_F49E8.8	A0A1I6CM92	3	9	Phosphatidylinositol-glycan biosynthesis class F protein	w
-BIOSYNTHESIS	worm	O01884	coq-6	O01884	3	13	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial	w
+BIOSYNTHESIS	worm	O01884	coq-6	O01884	4	14	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial	w
 BIOSYNTHESIS	worm	O18235	coq-3	O18235	1	11	Ubiquinone biosynthesis O-methyltransferase, mitochondrial	w
-BIOSYNTHESIS	worm	P91428	coq-4	P91428	0	8	Ubiquinone biosynthesis protein coq-4, mitochondrial	w
+BIOSYNTHESIS	worm	P91428	coq-4	P91428	1	8	Ubiquinone biosynthesis protein coq-4, mitochondrial	w
 BIOSYNTHESIS	worm	Q18993	piga-1	Q18993	3	39	PIGA GPI anchor biosynthesis domain-containing protein	w
-BIOSYNTHESIS	worm	Q20624	moc-5	Q20624	0	7	Molybdenum cofactor biosynthesis protein moc-5	w
+BIOSYNTHESIS	worm	Q20624	moc-5	Q20624	1	8	Molybdenum cofactor biosynthesis protein moc-5	w
 BIOSYNTHESIS	worm	Q21102	dph-3	Q21102	1	36	Diphthamide biosynthesis protein 3	w
 BIOSYNTHESIS	worm	Q95QQ4	atic-1	Q95QQ4	0	23	Bifunctional purine biosynthesis protein ATIC	w
 BIOSYNTHESIS	worm	Q9XWK2	CELE_Y54E5A.5	Q9XWK2	1	17	Polysaccharide biosynthesis domain-containing protein	w
-BIOSYNTHESIS	yeast	O13525	COQ4	O13525	2	31	Ubiquinone biosynthesis protein COQ4, mitochondrial	w
+BIOSYNTHESIS	yeast	O13525	COQ4	O13525	3	31	Ubiquinone biosynthesis protein COQ4, mitochondrial	w
 BIOSYNTHESIS	yeast	P00815	HIS4	P00815	0	19	Histidine biosynthesis trifunctional protein	w
 BIOSYNTHESIS	yeast	P00937	TRP3	P00937	2	38	Multifunctional tryptophan biosynthesis protein	w
 BIOSYNTHESIS	yeast	P15807	MET8	P15807	0	3	Siroheme biosynthesis protein MET8	w
 BIOSYNTHESIS	yeast	P27680	COQ3	P27680	2	20	Ubiquinone biosynthesis O-methyltransferase, mitochondrial	w
-BIOSYNTHESIS	yeast	P27697	COQ8	P27697	0	36	Atypical kinase COQ8, mitochondrial (EC 2.7.-.-) (Activity o	w
+BIOSYNTHESIS	yeast	P27697	COQ8	P27697	2	38	Atypical kinase COQ8, mitochondrial (EC 2.7.-.-) (Activity o	w
 BIOSYNTHESIS	yeast	P36076	CAB3	P36076	4	45	Coenzyme A biosynthesis protein 3	w
 BIOSYNTHESIS	yeast	P38009	ADE17	P38009	1	53	Bifunctional purine biosynthesis protein ADE17	w
 BIOSYNTHESIS	yeast	P38141	THI2	P38141	1	14	Thiamine biosynthesis regulatory protein	w
@@ -307,7 +307,7 @@ BIOSYNTHESIS	yeast	P40207	ERG29	P40207	1	8	Ergosterol biosynthesis protein 29	w
 BIOSYNTHESIS	yeast	P40955	CHS6	P40955	3	16	Chitin biosynthesis protein CHS6	w
 BIOSYNTHESIS	yeast	P40971	LYS14	P40971	0	9	Lysine biosynthesis regulatory protein LYS14	w
 BIOSYNTHESIS	yeast	P47138	JJJ3	P47138	3	20	Diphthamide biosynthesis protein 4	w
-BIOSYNTHESIS	yeast	P53318	COQ6	P53318	2	16	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial	w
+BIOSYNTHESIS	yeast	P53318	COQ6	P53318	2	17	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial	w
 BIOSYNTHESIS	yeast	P53894	CBK1	P53894	5	75	Serine/threonine-protein kinase CBK1 (EC 2.7.11.1) (Cell wal	w
 BIOSYNTHESIS	yeast	P54113	ADE16	P54113	1	31	Bifunctional purine biosynthesis protein ADE16	w
 BIOSYNTHESIS	yeast	Q04728	ARG7	Q04728	0	3	Arginine biosynthesis bifunctional protein ArgJ, mitochondri	w
@@ -317,13 +317,16 @@ BIOSYNTHESIS	yeast	Q06636	GPI11	Q06636	2	8	Glycosylphosphatidylinositol anchor b
 BIOSYNTHESIS	yeast	Q08746	RRS1	Q08746	11	177	Regulator of ribosome biosynthesis	w
 BIOSYNTHESIS	yeast	Q12114	CHS5	Q12114	5	72	Chitin biosynthesis protein CHS5	w
 BIOSYNTHESIS	yeast	Q3E840	KTI11	Q3E840	4	25	Diphthamide biosynthesis protein 3	w
+BIOSYNTHESIS	zebrafish	A0A8M3AJ79	mocs1	A0A8M3AJ79	4	4	molybdenum cofactor biosynthesis protein 1 isoform X1	w
+BIOSYNTHESIS	zebrafish	A5PLI6	si:ch211-51l3.4	A5PLI6	4	5	Ubiquinone biosynthesis protein	w
 BIOSYNTHESIS	zebrafish	A5WVS5	pigx	A5WVS5	7	118	Phosphatidylinositol-glycan biosynthesis class X protein	w
-BIOSYNTHESIS	zebrafish	A9JR86	coq4	A9JR86	1	4	Ubiquinone biosynthesis protein COQ4 homolog, mitochondrial	w
+BIOSYNTHESIS	zebrafish	A9JR86	coq4	A9JR86	2	5	Ubiquinone biosynthesis protein COQ4 homolog, mitochondrial	w
 BIOSYNTHESIS	zebrafish	F1QAR3	pigw	F1QAR3	0	26	Phosphatidylinositol-glycan biosynthesis class W protein	w
 BIOSYNTHESIS	zebrafish	F1R905	mocs1	F1R905	1	1	Molybdenum cofactor biosynthesis protein 1	w
-BIOSYNTHESIS	zebrafish	F1RAX8	coq6	F1RAX8	3	33	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial	w
+BIOSYNTHESIS	zebrafish	F1RAX8	coq6	F1RAX8	9	39	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial	w
 BIOSYNTHESIS	zebrafish	Q502H4	dph3	Q502H4	3	28	Diphthamide biosynthesis protein 3	w
 BIOSYNTHESIS	zebrafish	Q561S6	dpm2	Q561S6	2	14	Dolichol phosphate-mannose biosynthesis regulatory protein	w
+BIOSYNTHESIS	zebrafish	Q6DHK4	COQ3	Q6DHK4	2	2	Ubiquinone biosynthesis O-methyltransferase, mitochondrial	w
 BIOSYNTHESIS	zebrafish	Q6P0J9	pigf	Q6P0J9	2	10	Phosphatidylinositol glycan anchor biosynthesis, class F	w
 BIOSYNTHESIS-LIKE	human	P30039	PBLD	P30039	0	55	Phenazine biosynthesis-like domain-containing protein (MAWD-	w
 BIOSYNTHESIS-LIKE	worm	G5ECB5	CELE_T04A11.2	G5ECB5	0	1	Phenazine biosynthesis-like domain-containing protein	w

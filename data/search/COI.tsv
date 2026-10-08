@@ -1,4 +1,4 @@
-COI	human	P00395	MT-CO1	P00395	21	226		
+COI	human	P00395	MT-CO1	P00395	28	231		
 COI	zea-mays	Q7HRM0	COI	Q7HRM0	4	125	Cytochrome c oxidase subunit 1	
 COI1	arabidopsis-thaliana	O04197	COI1	O04197	14	48	Coronatine-insensitive protein 1	
 COI1	glycine-max	Q45FY8	COI1	Q45FY8	28	106	Coronatine-insensitive 1	
@@ -7,8 +7,8 @@ COI1B	oryza-sativa-subsp-japonica	Q60EH4	COI1B	Q60EH4	9	29	Coronatine-insensitiv
 COI2	oryza-sativa-subsp-japonica	Q84QA7	COI2	Q84QA7	0	3	Coronatine-insensitive protein homolog 2	
 COIA	streptococcus-pneumoniae	Q8DQ27	coiA	Q8DQ27	2	4	Competence protein	
 COIA1_HUMAN	human	P39060	COL18A1	P39060	15	174		
-COII	human	P00403	MT-CO2	P00403	45	394		
-COIII	human	P00414	MT-CO3	P00414	19	170		
+COII	human	P00403	MT-CO2	P00403	49	398		
+COIII	human	P00414	MT-CO3	P00414	30	181		
 COIII	pseudomonas-aeruginosa	Q9I724	coIII	Q9I724	3	53	Probable cytochrome c oxidase subunit 3	
 COIL	arabidopsis-thaliana	Q8RWK8	COIL	Q8RWK8	2	5	Coilin	
 COIL	fly	FBgn0031191	Cp110	Q2PDW6	7	25	Centriolar coiled coil protein 110kDa, isoform B (Centriolar	w
@@ -45,7 +45,7 @@ COILED-COIL	fly	FBgn0034402	CG15084	Q7K0F0	4	25	Coiled-coil domain-containing pr
 COILED-COIL	fly	FBgn0035286	CG13924	M9MRP4	0	2	Coiled-coil domain-containing protein 181	w
 COILED-COIL	fly	FBgn0036219	CCDC151	Q9VTQ3	3	12	Coiled-coil domain containing protein 151	w
 COILED-COIL	fly	FBgn0036671	CG9951	Q9VVB4	19	101	Coiled-coil domain-containing protein 22 homolog	w
-COILED-COIL	fly	FBgn0036909	Ccdc58	Q9VW41	0	5	Protein MIX23 (Coiled-coil domain-containing protein 58)	w
+COILED-COIL	fly	FBgn0036909	Ccdc58	Q9VW41	1	6	Protein MIX23 (Coiled-coil domain-containing protein 58)	w
 COILED-COIL	fly	FBgn0037059	CG10510	Q9VP67	5	36	Dynein regulatory complex subunit 2 (Coiled-coil domain-cont	w
 COILED-COIL	fly	FBgn0037276	Ccdc39	Q9VN57	3	4	Coiled-coil domain-containing protein 39	w
 COILED-COIL	fly	FBgn0037490	CG10053	Q9VI83	1	7	G patch domain-containing protein 11 (Coiled-coil domain-con	w
@@ -106,7 +106,7 @@ COILED-COIL	human	P0C7W6	CCDC172	P0C7W6	10	53	Coiled-coil domain-containing prot
 COILED-COIL	human	P0CW27	CCDC166	P0CW27	0	9	Coiled-coil domain-containing protein 166	w
 COILED-COIL	human	P0DO97	CCDC192	P0DO97	8	22	Coiled-coil domain-containing protein 192	w
 COILED-COIL	human	P13994	YJU2B	P13994	18	113	Probable splicing factor YJU2B (Coiled-coil domain-containin	w
-COILED-COIL	human	P59942	MCCD1	P59942	4	90	Mitochondrial coiled-coil domain protein 1	w
+COILED-COIL	human	P59942	MCCD1	P59942	5	91	Mitochondrial coiled-coil domain protein 1	w
 COILED-COIL	human	Q05D60	DEUP1	Q05D60	61	137	Deuterosome assembly protein 1 (Coiled-coil domain-containin	w
 COILED-COIL	human	Q0P6D6	CCDC15	Q0P6D6	3	25	Coiled-coil domain-containing protein 15	w
 COILED-COIL	human	Q0VF96	CGNL1	Q0VF96	29	159	Cingulin-like protein 1 (Junction-associated coiled-coil pro	w
@@ -134,7 +134,7 @@ COILED-COIL	human	Q494V2	CFAP100	Q494V2	7	25	Cilia- and flagella-associated prot
 COILED-COIL	human	Q49A88	CCDC14	Q49A88	55	151	Coiled-coil domain-containing protein 14	w
 COILED-COIL	human	Q4G0S7	CCDC152	Q4G0S7	3	29	Coiled-coil domain-containing protein 152	w
 COILED-COIL	human	Q4G0X9	CCDC40	Q4G0X9	16	92	Coiled-coil domain-containing protein 40	w
-COILED-COIL	human	Q4VC31	MIX23	Q4VC31	6	117	Protein MIX23 (Coiled-coil domain-containing protein 58)	w
+COILED-COIL	human	Q4VC31	MIX23	Q4VC31	12	124	Protein MIX23 (Coiled-coil domain-containing protein 58)	w
 COILED-COIL	human	Q502W7	CCDC38	Q502W7	6	16	Coiled-coil domain-containing protein 38	w
 COILED-COIL	human	Q52MB2	CCDC184	Q52MB2	8	86	Coiled-coil domain-containing protein 184	w
 COILED-COIL	human	Q53HC0	CCDC92	Q53HC0	16	97	Coiled-coil domain-containing protein 92 (Limkain beta-2)	w
@@ -243,8 +243,8 @@ COILED-COIL	human	Q96A19	CCDC102A	Q96A19	40	86	Coiled-coil domain-containing pro
 COILED-COIL	human	Q96A33	CCDC47	Q96A33	37	488	PAT complex subunit CCDC47 (Calumin) (Coiled-coil domain-con	w
 COILED-COIL	human	Q96AA8	JAKMIP2	Q96AA8	20	69	Janus kinase and microtubule-interacting protein 2 (CTCL tum	w
 COILED-COIL	human	Q96AQ1	CCDC74A	Q96AQ1	12	45	Coiled-coil domain-containing protein 74A	w
-COILED-COIL	human	Q96AQ8	MCUR1	Q96AQ8	7	229	Mitochondrial calcium uniporter regulator 1 (MCU regulator 1	w
-COILED-COIL	human	Q96BQ5	CCDC127	Q96BQ5	8	49	Coiled-coil domain-containing protein 127	w
+COILED-COIL	human	Q96AQ8	MCUR1	Q96AQ8	8	230	Mitochondrial calcium uniporter regulator 1 (MCU regulator 1	w
+COILED-COIL	human	Q96BQ5	CCDC127	Q96BQ5	11	52	Coiled-coil domain-containing protein 127	w
 COILED-COIL	human	Q96CN9	GCC1	Q96CN9	21	272	GRIP and coiled-coil domain-containing protein 1 (Golgi coil	w
 COILED-COIL	human	Q96CS2	HAUS1	Q96CS2	109	405	HAUS augmin-like complex subunit 1 (Coiled-coil domain-conta	w
 COILED-COIL	human	Q96CT7	CCDC124	Q96CT7	32	228	Coiled-coil domain-containing protein 124	w
@@ -262,7 +262,7 @@ COILED-COIL	human	Q96IZ7	RSRC1	Q96IZ7	39	556	Serine/Arginine-related protein 53 
 COILED-COIL	human	Q96JG6	VPS50	Q96JG6	19	171	Syndetin (Coiled-coil domain-containing protein 132) (EARP/G	w
 COILED-COIL	human	Q96JN2	CCDC136	Q96JN2	42	237	Coiled-coil domain-containing protein 136 (Nasopharyngeal ca	w
 COILED-COIL	human	Q96LB3	IFT74	Q96LB3	47	159	Intraflagellar transport protein 74 homolog (Capillary morph	w
-COILED-COIL	human	Q96LW4	PRIMPOL	Q96LW4	6	40	DNA-directed primase/polymerase protein (hPrimpol1) (EC 2.7.	w
+COILED-COIL	human	Q96LW4	PRIMPOL	Q96LW4	7	41	DNA-directed primase/polymerase protein (hPrimpol1) (EC 2.7.	w
 COILED-COIL	human	Q96LX7	CCDC17	Q96LX7	20	143	Coiled-coil domain-containing protein 17	w
 COILED-COIL	human	Q96LY2	CCDC74B	Q96LY2	12	47	Coiled-coil domain-containing protein 74B	w
 COILED-COIL	human	Q96M63	ODAD1	Q96M63	46	170	Outer dynein arm-docking complex subunit 1 (Coiled-coil doma	w
@@ -283,7 +283,7 @@ COILED-COIL	human	Q99418	CYTH2	Q99418	35	177	Cytohesin-2 (ARF exchange factor) (
 COILED-COIL	human	Q9BQI4	CCDC3	Q9BQI4	11	54	Coiled-coil domain-containing protein 3 (Fat/vessel-derived 	w
 COILED-COIL	human	Q9BQS8	FYCO1	Q9BQS8	52	227	FYVE and coiled-coil domain-containing protein 1 (Zinc finge	w
 COILED-COIL	human	Q9BR77	CCDC77	Q9BR77	30	152	Coiled-coil domain-containing protein 77	w
-COILED-COIL	human	Q9BSH4	TACO1	Q9BSH4	13	331	Translational activator of cytochrome c oxidase 1 (Coiled-co	w
+COILED-COIL	human	Q9BSH4	TACO1	Q9BSH4	18	336	Translational activator of cytochrome c oxidase 1 (Coiled-co	w
 COILED-COIL	human	Q9BTA9	WAC	Q9BTA9	48	226	WW domain-containing adapter protein with coiled-coil	w
 COILED-COIL	human	Q9BUN5	CCDC28B	Q9BUN5	1	31	Coiled-coil domain-containing protein 28B	w
 COILED-COIL	human	Q9BUW7	BBLN	Q9BUW7	13	44	Bublin coiled-coil protein (UPF0184 protein C9orf16)	w
@@ -352,7 +352,7 @@ COILED-COIL	worm	O18230	vti-1	O18230	10	64	t-SNARE coiled-coil homology domain-c
 COILED-COIL	worm	O18302	gopc-1	O18302	4	42	Golgi-associated PDZ and coiled-coil motif-containing protei	w
 COILED-COIL	worm	O61965	CELE_F26D11.2	O61965	0	1	Coiled-coil domain-containing protein 137	w
 COILED-COIL	worm	O62236	syx-7	O62236	7	59	t-SNARE coiled-coil homology domain-containing protein	w
-COILED-COIL	worm	O62387	syx-17	O62387	5	57	t-SNARE coiled-coil homology domain-containing protein	w
+COILED-COIL	worm	O62387	syx-17	O62387	5	58	t-SNARE coiled-coil homology domain-containing protein	w
 COILED-COIL	worm	O76413	syx-18	O76413	18	57	t-SNARE coiled-coil homology domain-containing protein	w
 COILED-COIL	worm	O76621	CELE_Y57G7A.5	O76621	0	19	Coiled-coil domain-containing protein 96	w
 COILED-COIL	worm	P34562	gcc-2	P34562	4	41	GRIP and coiled-coil domain-containing protein 2	w
@@ -391,6 +391,7 @@ COILED-COIL	zebrafish	A0A0R4ILN1	cc2d1b	A0A0R4ILN1	2	10	Coiled-coil and C2 domai
 COILED-COIL	zebrafish	A0A8M1Q7I8	cccdc110	A0A8M1Q7I8	2	9	Coiled-coil domain-containing protein 110	w
 COILED-COIL	zebrafish	A0A8M2B955	ccdc30	A0A8M2B955	1	1	Coiled-coil domain-containing 30	w
 COILED-COIL	zebrafish	A0A8M2BBV8	gcc1	A0A8M2BBV8	8	149	GRIP and coiled-coil domain-containing protein 1	w
+COILED-COIL	zebrafish	A0A8M2BKU8	ccdc127a	A0A8M2BKU8	1	1	coiled-coil domain containing 127a isoform X1	w
 COILED-COIL	zebrafish	A0A8M3AT55	ccdc14	A0A8M3AT55	5	13	Coiled-coil domain-containing 14	w
 COILED-COIL	zebrafish	A0A8M3B6E4	fyco1a	A0A8M3B6E4	6	17	FYVE and coiled-coil domain-containing protein 1	w
 COILED-COIL	zebrafish	A0A8M6YYE2	ccdc77	A0A8M6YYE2	0	1	Coiled-coil domain-containing 77	w
@@ -462,24 +463,25 @@ COILED-COIL-CONTAINING	zebrafish	B8A574	tacc3	B8A574	3	30	Transforming acidic co
 COILED-COIL-CONTAINING	zebrafish	F1QV49	tacc1	F1QV49	2	10	Transforming acidic coiled-coil-containing protein 1 isoform	w
 COILED-COIL-CONTAINING	zebrafish	Q5RFV8	wdcp	Q5RFV8	0	1	WD repeat and coiled-coil-containing protein	w
 COILED-COIL-DIX1	human	Q155Q3	DIXDC1	Q155Q3	32	87	Dixin (Coiled-coil protein DIX1) (Coiled-coil-DIX1) (DIX dom	w
-COILED-COIL-HELIX	human	Q9BRQ6	CHCHD6	Q9BRQ6	7	111	MICOS complex subunit MIC25 (Coiled-coil-helix cristae morph	w
+COILED-COIL-HELIX	human	Q9BRQ6	CHCHD6	Q9BRQ6	9	113	MICOS complex subunit MIC25 (Coiled-coil-helix cristae morph	w
 COILED-COIL-HELIX-COILED-COIL-HELIX	fly	FBgn0010808	Chchd3	Q9VA18	5	51	Coiled-coil-helix-coiled-coil-helix domain containing 3 (RE3	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	fly	FBgn0040634	CG4186	Q9VPC2	2	15	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	fly	FBgn0260747	Chchd2	Q9VX77	2	20	Coiled-coil-helix-coiled-coil-helix domain containing 2, iso	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	fly	FBgn0040634	CG4186	Q9VPC2	3	16	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	fly	FBgn0260747	Chchd2	Q9VX77	5	22	Coiled-coil-helix-coiled-coil-helix domain containing 2, iso	w
 COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q5T1J5	CHCHD2P9	Q5T1J5	5	7	Putative coiled-coil-helix-coiled-coil-helix domain-containi	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q8N4Q1	CHCHD4	Q8N4Q1	7	163	Mitochondrial intermembrane space import and assembly protei	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q8WYQ3	CHCHD10	Q8WYQ3	17	129	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q96BP2	CHCHD1	Q96BP2	30	301	Small ribosomal subunit protein mS37 (28S ribosomal protein 	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9BRQ6	CHCHD6	Q9BRQ6	7	111	MICOS complex subunit MIC25 (Coiled-coil-helix cristae morph	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9BSY4	CHCHD5	Q9BSY4	3	52	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9BUK0	CHCHD7	Q9BUK0	3	40	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9NX63	CHCHD3	Q9NX63	20	252	MICOS complex subunit MIC19 (Coiled-coil-helix-coiled-coil-h	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9NYJ1	COA4	Q9NYJ1	9	66	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9Y6H1	CHCHD2	Q9Y6H1	38	324	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	zebrafish	A3KNX4	chchd1	A3KNX4	6	112	Coiled-coil-helix-coiled-coil-helix domain-containing 1	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q8N4Q1	CHCHD4	Q8N4Q1	9	165	Mitochondrial intermembrane space import and assembly protei	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q8WYQ3	CHCHD10	Q8WYQ3	26	138	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q96BP2	CHCHD1	Q96BP2	41	311	Small ribosomal subunit protein mS37 (28S ribosomal protein 	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9BRQ6	CHCHD6	Q9BRQ6	9	113	MICOS complex subunit MIC25 (Coiled-coil-helix cristae morph	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9BSY4	CHCHD5	Q9BSY4	5	54	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9BUK0	CHCHD7	Q9BUK0	12	50	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9NX63	CHCHD3	Q9NX63	21	253	MICOS complex subunit MIC19 (Coiled-coil-helix-coiled-coil-h	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9NYJ1	COA4	Q9NYJ1	11	67	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	human	Q9Y6H1	CHCHD2	Q9Y6H1	44	330	Coiled-coil-helix-coiled-coil-helix domain-containing protei	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	zebrafish	A3KNX4	chchd1	A3KNX4	12	117	Coiled-coil-helix-coiled-coil-helix domain-containing 1	w
 COILED-COIL-HELIX-COILED-COIL-HELIX	zebrafish	E7F5H1	chchd5	E7F5H1	0	10	Coiled-coil-helix-coiled-coil-helix domain containing 5	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	zebrafish	F1QKA5	chchd7	F1QKA5	4	4	Coiled-coil-helix-coiled-coil-helix domain-containing 7	w
 COILED-COIL-HELIX-COILED-COIL-HELIX	zebrafish	Q5RH04	chchd3a	Q5RH04	5	23	Coiled-coil-helix-coiled-coil-helix domain containing 3a iso	w
-COILED-COIL-HELIX-COILED-COIL-HELIX	zebrafish	Q6PBP6	chchd10	Q6PBP6	0	8	Coiled-coil-helix-coiled-coil-helix domain-containing 10	w
+COILED-COIL-HELIX-COILED-COIL-HELIX	zebrafish	Q6PBP6	chchd10	Q6PBP6	5	12	Coiled-coil-helix-coiled-coil-helix domain-containing 10	w
 COILED-COILS	fly	FBgn0267592	CCY	A0A0S0X8W1	0	10	Coiled-Coils Y	w
 COILED-COILS	human	Q8N443	RIBC1	Q8N443	15	114	RIB43A-like with coiled-coils protein 1	w
 COILED-COILS	human	Q8NCY6	MSANTD4	Q8NCY6	5	23	Myb/SANT-like DNA-binding domain-containing protein 4 (Myb/S	w

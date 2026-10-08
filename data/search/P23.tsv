@@ -94,7 +94,7 @@ P23358	rattus-norvegicus	P23358	Rpl12	P23358	29	466	Large ribosomal subunit prot
 P23359	mus-musculus	P23359	Bmp7	P23359	14	52	Bone morphogenetic protein 7	
 P23363	rattus-norvegicus	P23363	Bdnf	P23363	6	117	Neurotrophic factor BDNF precursor form	
 P23367	escherichia-coli-83333	P23367	mutL	P23367	4	34	DNA mismatch repair protein MutL	
-P23368	human	P23368	ME2	P23368	2	116	NAD-dependent malic enzyme, mitochondrial (NAD-ME) (EC 1.1.1	
+P23368	human	P23368	ME2	P23368	3	117	NAD-dependent malic enzyme, mitochondrial (NAD-ME) (EC 1.1.1	
 P23369	yeast	P23369	MRPL25	P23369	10	109	Large ribosomal subunit protein mL59	
 P23371	virus	P23371	OPG063	P23371	2	218	Poly(A) polymerase catalytic subunit	
 P23372	virus	P23372	OPG070	P23372	3	218	Protein OPG070	
@@ -109,7 +109,7 @@ P23396	human	P23396	RPS3	P23396	80	1621	Small ribosomal subunit protein uS3 (40S
 P23409	human	P23409	MYF6	P23409	103	406	Myogenic factor 6 (Myf-6) (Class C basic helix-loop-helix pr	
 P23415	human	P23415	GLRA1	P23415	29	99	Glycine receptor subunit alpha-1 (Glycine receptor 48 kDa su	
 P23416	human	P23416	GLRA2	P23416	30	136	Glycine receptor subunit alpha-2	
-P23434	human	P23434	GCSH	P23434	71	476	Glycine cleavage system H protein, mitochondrial (Lipoic aci	
+P23434	human	P23434	GCSH	P23434	87	491	Glycine cleavage system H protein, mitochondrial (Lipoic aci	
 P23435	human	P23435	CBLN1	P23435	18	336	Cerebellin-1 (Precerebellin) [Cleaved into: Cerebellin (CER)	
 P23440	mus-musculus	P23440	Pde6b	P23440	1	24	Rod cGMP-specific 3,5-cyclic phosphodiesterase subunit beta	
 P23441	rattus-norvegicus	P23441	Nkx2-1	P23441	2	19	Homeobox protein Nkx-2.1	
@@ -165,7 +165,7 @@ P23582	human	P23582	NPPC	P23582	20	118	C-type natriuretic peptide [Cleaved into:
 P23585	yeast	P23585	HXT2	P23585	0	12	High-affinity glucose transporter HXT2	
 P23586	arabidopsis-thaliana	P23586	STP1	P23586	0	3	Sugar transport protein 1	
 P23588	human	P23588	EIF4B	P23588	57	357	Eukaryotic translation initiation factor 4B (eIF-4B)	
-P23589	mus-musculus	P23589	Ca5a	P23589	0	5	Carbonic anhydrase 5A, mitochondrial	
+P23589	mus-musculus	P23589	Ca5a	P23589	5	12	Carbonic anhydrase 5A, mitochondrial	
 P23591	mus-musculus	P23591	Gfus	P23591	0	77	GDP-L-fucose synthase	
 P23593	rattus-norvegicus	P23593	Apod	P23593	0	33	Apolipoprotein D	
 P23594	yeast	P23594	PPH21	P23594	11	80	Serine/threonine-protein phosphatase PP2A-1 catalytic subuni	
@@ -218,7 +218,7 @@ P23776	yeast	P23776	EXG1	P23776	0	13	Glucan 1,3-beta-glucosidase I/II
 P23779	fly	FBgn0004629	Cys	P23779	36	322	Cystatin-like protein	
 P23780	mus-musculus	P23780	Glb1	P23780	0	18	Beta-galactosidase	
 P23785	rattus-norvegicus	P23785	Grn	P23785	6	114	Progranulin	
-P23786	human	P23786	CPT2	P23786	3	116	Carnitine O-palmitoyltransferase 2, mitochondrial (EC 2.3.1.	
+P23786	human	P23786	CPT2	P23786	7	120	Carnitine O-palmitoyltransferase 2, mitochondrial (EC 2.3.1.	
 P23792	fly	FBgn0000459	disco	P23792	115	442	Protein disconnected	
 P23796	yeast	P23796	RIT1	P23796	1	3	tRNA A64-2'-O-ribosylphosphate transferase	
 P23797	yeast	P23797	GPI12	P23797	0	2	N-acetylglucosaminyl-phosphatidylinositol de-N-acetylase	
@@ -269,7 +269,7 @@ P23905	salmonella-typhimurium	P23905	mglB	P23905	1	24	D-galactose/methyl-galacto
 P23906	mus-musculus	P23906	Irf2	P23906	4	21	Interferon regulatory factor 2	
 P23908	escherichia-coli-83333	P23908	argE	P23908	0	2	Acetylornithine deacetylase	
 P23909	escherichia-coli-83333	P23909	mutS	P23909	2	35	DNA mismatch repair protein MutS	
-P23919	human	P23919	DTYMK	P23919	9	232	Thymidylate kinase (EC 2.7.4.9) (dTMP kinase)	
+P23919	human	P23919	DTYMK	P23919	12	235	Thymidylate kinase (EC 2.7.4.9) (dTMP kinase)	
 P23921	human	P23921	RRM1	P23921	4	260	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	
 P23924	salmonella-typhimurium	P23924	mglA	P23924	1	2	Galactose/methyl galactoside import ATP-binding protein MglA	
 P23926	pseudomonas-aeruginosa	P23926	anr	P23926	0	24	Transcriptional activator protein anr	
@@ -285,7 +285,7 @@ P23946	human	P23946	CMA1	P23946	15	107	Chymase (EC 3.4.21.39) (Alpha-chymase) (M
 P23949	mus-musculus	P23949	Zfp36l2	P23949	0	8	mRNA decay activator protein ZFP36L2	
 P23950	mus-musculus	P23950	Zfp36l1	P23950	4	26	mRNA decay activator protein ZFP36L1	
 P23953	mus-musculus	P23953	Ces1c	P23953	0	3	Carboxylesterase 1C	
-P23965	rattus-norvegicus	P23965	Eci1	P23965	6	112	Enoyl-CoA delta isomerase 1, mitochondrial	
+P23965	rattus-norvegicus	P23965	Eci1	P23965	13	122	Enoyl-CoA delta isomerase 1, mitochondrial	
 P23968	yeast	P23968	VMA16	P23968	4	58	V-type proton ATPase subunit c	
 P23975	human	P23975	SLC6A2	P23975	1	83	Sodium-dependent noradrenaline transporter (Norepinephrine t	
 P23977	rattus-norvegicus	P23977	Slc6a3	P23977	1	40	Sodium-dependent dopamine transporter	

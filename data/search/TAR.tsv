@@ -81,7 +81,7 @@ TARGET	human	Q96GM8	TOE1	Q96GM8	26	292	Target of EGR1 protein 1	w
 TARGET	human	Q9BPZ7	MAPKAP1	Q9BPZ7	33	212	Target of rapamycin complex 2 subunit MAPKAP1 (TORC2 subunit	w
 TARGET	human	Q9BVC4	MLST8	Q9BVC4	25	252	Target of rapamycin complex subunit LST8 (TORC subunit LST8)	w
 TARGET	human	Q9BY77	POLDIP3	Q9BY77	112	432	Polymerase delta-interacting protein 3 (46 kDa DNA polymeras	w
-TARGET	human	Q9H7H0	METTL17	Q9H7H0	26	436	Ribosome assembly protein METTL17, mitochondrial (False p73 	w
+TARGET	human	Q9H7H0	METTL17	Q9H7H0	30	440	Ribosome assembly protein METTL17, mitochondrial (False p73 	w
 TARGET	human	Q9HCC9	ZFYVE28	Q9HCC9	1	22	Lateral signaling target protein 2 homolog (hLst2) (Zinc fin	w
 TARGET	human	Q9UFN0	NIPSNAP3A	Q9UFN0	2	113	Protein NipSnap homolog 3A (NipSnap3A) (Protein NipSnap homo	w
 TARGET	human	Q9UJZ1	STOML2	Q9UJZ1	12	255	Stomatin-like protein 2, mitochondrial (SLP-2) (EPB72-like p	w
@@ -123,7 +123,7 @@ TARGETING	fly	FBgn0051690	Tmtc1	Q9VQE9	2	16	Protein O-mannosyl-transferase Tmtc1
 TARGETING	fly	FBgn0053526	PNUTS	Q7KU01	17	70	Phosphatase 1 nuclear targeting subunit, isoform D (Phosphat	w
 TARGETING	human	O00628	PEX7	O00628	9	92	Peroxisomal targeting signal 2 receptor (PTS2 receptor) (Per	w
 TARGETING	human	P50542	PEX5	P50542	92	219	Peroxisomal targeting signal 1 receptor (PTS1 receptor) (PTS	w
-TARGETING	human	P60602	ROMO1	P60602	19	64	Reactive oxygen species modulator 1 (ROS modulator 1) (Epidi	w
+TARGETING	human	P60602	ROMO1	P60602	21	67	Reactive oxygen species modulator 1 (ROS modulator 1) (Epidi	w
 TARGETING	human	Q14974	KPNB1	Q14974	35	728	Importin subunit beta-1 (Importin-90) (Karyopherin subunit b	w
 TARGETING	human	Q16821	PPP1R3A	Q16821	15	110	Protein phosphatase 1 regulatory subunit 3A (Protein phospha	w
 TARGETING	human	Q53TS8	CATSPERT	Q53TS8	2	73	Cation channel sperm-associated targeting subunit tau (CatSp	w
@@ -157,9 +157,10 @@ TARS-1	worm	P52709	tars-1	P52709	0	90	Threonine--tRNA ligase, cytoplasmic
 TARS1	human	P26639	TARS1	P26639	9	205	Threonine--tRNA ligase 1, cytoplasmic (EC 6.1.1.3) (Threonyl	
 TARS1	mus-musculus	Q9D0R2	Tars1	Q9D0R2	3	119	Threonine--tRNA ligase 1, cytoplasmic	
 TARS1	rattus-norvegicus	Q5XHY5	Tars1	Q5XHY5	3	154	Threonine--tRNA ligase 1, cytoplasmic	
-TARS2	human	Q9BW92	TARS2	Q9BW92	10	232	Threonine--tRNA ligase, mitochondrial (EC 6.1.1.3) (Threonyl	
-TARS2	mus-musculus	Q3UQ84	Tars2	Q3UQ84	2	120	Threonine--tRNA ligase, mitochondrial	
-TARS2	rattus-norvegicus	Q68FW7	Tars2	Q68FW7	2	160	Threonine--tRNA ligase, mitochondrial	
+TARS2	human	Q9BW92	TARS2	Q9BW92	18	239	Threonine--tRNA ligase, mitochondrial (EC 6.1.1.3) (Threonyl	
+TARS2	mus-musculus	Q3UQ84	Tars2	Q3UQ84	9	127	Threonine--tRNA ligase, mitochondrial	
+TARS2	pan-troglodytes	H2PZW8	TARS2	H2PZW8	7	7	threonine--tRNA ligase	
+TARS2	rattus-norvegicus	Q68FW7	Tars2	Q68FW7	8	166	Threonine--tRNA ligase, mitochondrial	
 TARS3	human	A2RTX5	TARS3	A2RTX5	12	145	Threonine--tRNA ligase 2, cytoplasmic (EC 6.1.1.3) (Threonyl	
 TARS3	mus-musculus	Q8BLY2	Tars3	Q8BLY2	3	108	Threonine--tRNA ligase 2, cytoplasmic	
 TARS3	rattus-norvegicus	Q5XI17	Tars3	Q5XI17	6	153	threonine--tRNA ligase	
@@ -169,7 +170,7 @@ TARSAL-LESS	fly	FBgn0259732	tal-3A	A3RLR0	1	1	Peptide tarsal-less 3A (Peptide po
 TARSAL-LESS	fly	FBgn0259733	tal-AA	A3RLR1	0	2	Peptide tarsal-less AA (Peptide polished rice 4)	w
 TARSH	human	Q7Z7G0	ABI3BP	Q7Z7G0	18	137		
 TARSH_HUMAN	human	Q7Z7G0	ABI3BP	Q7Z7G0	18	137		
-TARSL1	human	Q9BW92	TARS2	Q9BW92	10	232		
+TARSL1	human	Q9BW92	TARS2	Q9BW92	18	239		
 TARSL2	human	A2RTX5	TARS3	A2RTX5	12	145		
 TARTAN	fly	FBgn0010452	trn	M9PFH7	2	27	Tartan, isoform B	w
 TARTRATE-INHIBITABLE	human	P11117	ACP2	P11117	14	126	Lysosomal acid phosphatase (LAP) (EC 3.1.3.2) (Tartrate-inhi	w

@@ -1,7 +1,8 @@
 HEM	fly	FBgn0011771	Hem	P55162	2	60	Membrane-associated protein Hem (dHem-2)	
 HEM-1	human	P55160	NCKAP1L	P55160	7	90	Nck-associated protein 1-like (Hematopoietic protein 1) (Mem	w
 HEM-2	human	Q9Y2A7	NCKAP1	Q9Y2A7	16	362	Nck-associated protein 1 (NAP 1) (Membrane-associated protei	w
-HEM0_HUMAN	human	P22557	ALAS2	P22557	4	117		
+HEM0_DANRE	zebrafish	Q9YHT4	alas2	Q9YHT4	4	13		
+HEM0_HUMAN	human	P22557	ALAS2	P22557	8	121		
 HEM1	candida-albicans-237561	O94069	HEM1	O94069	0	5	5-aminolevulinate synthase, mitochondrial	
 HEM1	human	P55160	NCKAP1L	P55160	7	90		
 HEM1	schizosaccharomyces-pombe	O14092	hem1	O14092	0	8	5-aminolevulinate synthase, mitochondrial	
@@ -18,7 +19,7 @@ HEM14	yeast	P40012	HEM14	P40012	0	13	Protoporphyrinogen oxidase
 HEM15	candida-albicans-237561	Q59U72	HEM15	Q59U72	0	12	Ferrochelatase	
 HEM15	schizosaccharomyces-pombe	O59786	hem15	O59786	0	15	Ferrochelatase, mitochondrial	
 HEM15	yeast	P16622	HEM15	P16622	0	40	Ferrochelatase, mitochondrial	
-HEM1_HUMAN	human	P13196	ALAS1	P13196	16	170		
+HEM1_HUMAN	human	P13196	ALAS1	P13196	19	173		
 HEM2	human	Q9Y2A7	NCKAP1	Q9Y2A7	16	362		
 HEM2	yeast	P05373	HEM2	P05373	0	6	Delta-aminolevulinic acid dehydratase	
 HEM25	yeast	Q07534	HEM25	Q07534	0	4	Mitochondrial glycine transporter	
@@ -31,10 +32,10 @@ HEM3_HUMAN	human	P08397	HMBS	P08397	10	139
 HEM4	yeast	P06174	HEM4	P06174	0	2	Uroporphyrinogen-III synthase	
 HEM45	human	Q96AZ6	ISG20	Q96AZ6	5	113		
 HEM4_HUMAN	human	P10746	UROS	P10746	1	70		
-HEM6_HUMAN	human	P36551	CPOX	P36551	1	133		
+HEM6_HUMAN	human	P36551	CPOX	P36551	3	135		
 HEMA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PHX2	hemA	Q9PHX2	0	80	Glutamyl-tRNA reductase	
 HEMA	cladophialophora-carrionii	A0A1C1CQB3	hemA	A0A1C1CQB3	0	5	5-aminolevulinate synthase	
-HEMA	dictyostelium-discoideum	Q54UX3	hemA	Q54UX3	0	6	5-aminolevulinate synthase	
+HEMA	dictyostelium-discoideum	Q54UX3	hemA	Q54UX3	1	7	5-aminolevulinate synthase	
 HEMA	escherichia-coli-83333	P0A6X1	hemA	P0A6X1	0	2	Glutamyl-tRNA reductase	
 HEMA	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GUC0	hemA	A0A0H3GUC0	0	118	Glutamyl-tRNA reductase	
 HEMA	mycobacterium-leprae	P46724	hemA	P46724	0	57	Glutamyl-tRNA reductase	
@@ -168,22 +169,22 @@ HEMD	mycobacterium-tuberculosis	Q6MX34	hemD	Q6MX34	1	2	Probable uroporphyrin-III
 HEME	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PN54	hemE	Q9PN54	0	7	Uroporphyrinogen decarboxylase	
 HEME	dictyostelium-discoideum	Q54DF9	hemE	Q54DF9	0	4	Uroporphyrinogen decarboxylase	
 HEME	escherichia-coli-83333	P29680	hemE	P29680	0	5	Uroporphyrinogen decarboxylase	
-HEME	fly	FBgn0032222	Cox10	Q9VKZ1	0	18	Protoheme IX farnesyltransferase, mitochondrial (Heme O synt	w
+HEME	fly	FBgn0032222	Cox10	Q9VKZ1	2	20	Protoheme IX farnesyltransferase, mitochondrial (Heme O synt	w
 HEME	fly	FBgn0037933	Ho	Q9VGJ9	0	29	Heme oxygenase (EC 1.14.14.18)	w
-HEME	fly	FBgn0038376	Hmt-1	Q9VF20	11	288	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
+HEME	fly	FBgn0038376	Hmt-1	Q9VF20	14	291	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
 HEME	fly	FBgn0266268	FeCH	Q9V9S8	3	91	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	w
 HEME	helicobacter-pylori	O25325	hemE	O25325	0	1	Uroporphyrinogen decarboxylase	
-HEME	human	P08574	CYC1	P08574	28	351	Cytochrome c1, heme protein, mitochondrial (EC 7.1.1.8) (Com	w
+HEME	human	P08574	CYC1	P08574	31	354	Cytochrome c1, heme protein, mitochondrial (EC 7.1.1.8) (Com	w
 HEME	human	P09601	HMOX1	P09601	23	290	Heme oxygenase 1 (HO-1) (EC 1.14.14.18) [Cleaved into: Heme 	w
-HEME	human	P22830	FECH	P22830	5	154	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	w
+HEME	human	P22830	FECH	P22830	8	157	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	w
 HEME	human	P30519	HMOX2	P30519	26	313	Heme oxygenase 2 (HO-2) (EC 1.14.14.18) [Cleaved into: Heme 	w
-HEME	human	P53701	HCCS	P53701	22	149	Holocytochrome c-type synthase (EC 4.4.1.17) (Cytochrome c-t	w
-HEME	human	Q12887	COX10	Q12887	5	125	Protoheme IX farnesyltransferase, mitochondrial (EC 2.5.1.14	w
+HEME	human	P53701	HCCS	P53701	23	150	Holocytochrome c-type synthase (EC 4.4.1.17) (Cytochrome c-t	w
+HEME	human	Q12887	COX10	Q12887	9	129	Protoheme IX farnesyltransferase, mitochondrial (EC 2.5.1.14	w
 HEME	human	Q6P1K1	SLC48A1	Q6P1K1	1	57	Heme transporter HRG1 (Heme-responsive gene 1 protein homolo	w
-HEME	human	Q7KZN9	COX15	Q7KZN9	11	347	Heme A synthase COX15 (HAS) (EC 1.17.99.9) (Cytochrome c oxi	w
+HEME	human	Q7KZN9	COX15	Q7KZN9	26	360	Heme A synthase COX15 (HAS) (EC 1.17.99.9) (Cytochrome c oxi	w
 HEME	human	Q96NT5	SLC46A1	Q96NT5	2	37	Proton-coupled folate transporter (HsPCFT) (hPCFT) (Heme car	w
-HEME	human	Q9HA92	RSAD1	Q9HA92	27	488	Radical S-adenosyl methionine domain-containing protein 1, m	w
-HEME	human	Q9NP58	ABCB6	Q9NP58	6	181	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	w
+HEME	human	Q9HA92	RSAD1	Q9HA92	30	491	Radical S-adenosyl methionine domain-containing protein 1, m	w
+HEME	human	Q9NP58	ABCB6	Q9NP58	7	182	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	w
 HEME	human	Q9UPI3	FLVCR2	Q9UPI3	0	33	Choline/ethanolamine transporter FLVCR2 (Calcium-chelate tra	w
 HEME	human	Q9Y5Y0	FLVCR1	Q9Y5Y0	2	201	Choline/ethanolamine transporter FLVCR1 (Feline leukemia vir	w
 HEME	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GQ14	hemE	A0A0H3GQ14	0	14	Uroporphyrinogen decarboxylase	
@@ -194,17 +195,17 @@ HEME	pseudomonas-aeruginosa	P95458	hemE	P95458	0	8	Uroporphyrinogen decarboxylas
 HEME	salmonella-typhimurium	Q9L9I4	hemE	Q9L9I4	0	6	Uroporphyrinogen decarboxylase	
 HEME	shigella-dysenteriae-serotype-1	Q32AH0	hemE	Q32AH0	0	4	Uroporphyrinogen decarboxylase	
 HEME	worm	P90820	hpx-2	P90820	0	6	Heme peroxidase 2	w
-HEME	yeast	P07143	CYT1	P07143	10	98	Cytochrome c1, heme protein, mitochondrial	w
-HEME	yeast	P40086	COX15	P40086	0	32	Heme A synthase COX15	w
+HEME	yeast	P07143	CYT1	P07143	11	98	Cytochrome c1, heme protein, mitochondrial	w
+HEME	yeast	P40086	COX15	P40086	1	33	Heme A synthase COX15	w
 HEME	zebrafish	A7MD59	hmox2a	A7MD59	1	14	Heme oxygenase	w
 HEME	zebrafish	B0UXS0	hmox1a	B0UXS0	1	14	Heme oxygenase	w
 HEME	zebrafish	E7F079	hmox2b	E7F079	1	15	heme oxygenase (biliverdin-producing)	w
-HEME	zebrafish	Q3B7R0	cyc1	Q3B7R0	11	202	Cytochrome c1, heme protein, mitochondrial	w
+HEME	zebrafish	Q3B7R0	cyc1	Q3B7R0	16	206	Cytochrome c1, heme protein, mitochondrial	w
 HEME	zebrafish	Q6ZM28	slc48a1a	Q6ZM28	0	1	Heme transporter hrg1-B	w
 HEME	zebrafish	Q7T3B2	slc48a1b	Q7T3B2	0	1	Heme transporter hrg1-A	w
 HEME-BINDING	human	P04839	CYBB	P04839	12	327	NADPH oxidase 2 (EC 1.6.3.-) (CGD91-phox) (Cytochrome b(558)	w
 HEME-BINDING	human	P30043	BLVRB	P30043	5	230	Flavin reductase (NADPH) (FR) (EC 1.5.1.30) (Biliverdin redu	w
-HEME-BINDING	human	Q9NRV9	HEBP1	Q9NRV9	1	76	Heme-binding protein 1 (p22HBP)	w
+HEME-BINDING	human	Q9NRV9	HEBP1	Q9NRV9	13	88	Heme-binding protein 1 (p22HBP)	w
 HEME-BINDING	human	Q9Y5Z4	HEBP2	Q9Y5Z4	9	52	Heme-binding protein 2 (Placental protein 23) (PP23) (Protei	w
 HEME-BINDING	worm	O01816	cytb-5.2	O01816	0	18	Cytochrome b5 heme-binding domain-containing protein	w
 HEME-BINDING	worm	Q18793	C52G5.2	Q18793	0	3	THAP4-like heme-binding beta-barrel domain-containing protei	w
@@ -242,19 +243,22 @@ HEMH	nocardia-brasiliensis	K0F1A3	hemH	K0F1A3	1	6	Coproporphyrin III ferrochelat
 HEMH	pseudomonas-aeruginosa	Q9HVD7	hemH	Q9HVD7	0	5	Ferrochelatase	
 HEMH	salmonella-typhimurium	P37408	hemH	P37408	0	5	Ferrochelatase	
 HEMH	shigella-dysenteriae-serotype-1	Q32J55	hemH	Q32J55	0	4	Ferrochelatase	
-HEMH_HUMAN	human	P22830	FECH	P22830	5	154		
-HEMIASTERLIN	worm	Q09254	har-1	Q09254	0	9	Hemiasterlin resistant protein 1	w
+HEMH_HUMAN	human	P22830	FECH	P22830	8	157		
+HEMIASTERLIN	worm	Q09254	har-1	Q09254	1	10	Hemiasterlin resistant protein 1	w
 HEMICHOLINIUM-3-SENSITIVE	human	Q9GZV3	SLC5A7	Q9GZV3	2	62	High affinity choline transporter 1 (hCHT1) (Hemicholinium-3	w
 HEMINGWAY	fly	FBgn0038607	hmw	Q9VE87	2	32	Protein hemingway	w
 HEMIPTEROUS	fly	FBgn0010303	hep	Q23977	220	1167	hemipterous	w
 HEMK	fly	FBgn0031454	HemK2	Q9VQF8	1	16	GH13185p2 (HemK methyltransferase 2)	w
 HEMK	human	Q9Y5N5	HEMK2	Q9Y5N5	34	268	Methyltransferase HEMK2 (HemK methyltransferase family membe	w
-HEMK	human	Q9Y5R4	HEMK1	Q9Y5R4	13	102		
-HEMK1	fly	FBgn0031817	HemK1	Q9VMD3	1	11	peptide chain release factor N(5)-glutamine methyltransferas	
-HEMK1	human	Q9Y5R4	HEMK1	Q9Y5R4	13	102	MTRF1L release factor glutamine methyltransferase (EC 2.1.1.	
-HEMK1	mus-musculus	Q921L7	Hemk1	Q921L7	1	13	MTRF1L release factor glutamine methyltransferase	
+HEMK	human	Q9Y5R4	HEMK1	Q9Y5R4	21	109		
+HEMK1	fly	FBgn0031817	HemK1	Q9VMD3	2	12	peptide chain release factor N(5)-glutamine methyltransferas	
+HEMK1	human	Q9Y5R4	HEMK1	Q9Y5R4	21	109	MTRF1L release factor glutamine methyltransferase (EC 2.1.1.	
+HEMK1	mus-musculus	Q921L7	Hemk1	Q921L7	9	19	MTRF1L release factor glutamine methyltransferase	
+HEMK1	pan-troglodytes	K7BSP4	HEMK1	K7BSP4	10	10	peptide chain release factor N(5)-glutamine methyltransferas	
 HEMK1	rattus-norvegicus	A6I2W7	Hemk1	A6I2W7	3	13	peptide chain release factor N(5)-glutamine methyltransferas	
-HEMK1_HUMAN	human	Q9Y5R4	HEMK1	Q9Y5R4	13	102		
+HEMK1	rattus-norvegicus	B1WBZ2	Hemk1	B1WBZ2	9	9	peptide chain release factor N(5)-glutamine methyltransferas	
+HEMK1	zebrafish	A9JRU0	zgc:174889	A9JRU0	8	8	Hemk1 protein	w
+HEMK1_HUMAN	human	Q9Y5R4	HEMK1	Q9Y5R4	21	109		
 HEMK2	fly	FBgn0031454	HemK2	Q9VQF8	1	16	GH13185p2 (HemK methyltransferase 2)	
 HEMK2	human	Q9Y5N5	HEMK2	Q9Y5N5	34	268	Methyltransferase HEMK2 (HemK methyltransferase family membe	
 HEMK2	mus-musculus	Q6SKR2	Hemk2	Q6SKR2	5	18	Methyltransferase HEMK2	
@@ -315,7 +319,7 @@ HEMOPEXIN	zebrafish	Q6PHG2	hpx	Q6PHG2	0	10	Hemopexin	w
 HEMOPOIETIC	human	P08631	HCK	P08631	191	1761	Tyrosine-protein kinase HCK (EC 2.7.10.2) (Hematopoietic cel	w
 HEMOPOIETIC	human	Q9BXL5	HEMGN	Q9BXL5	18	94	Hemogen (Erythroid differentiation-associated gene protein) 	w
 HEMOPOIETIC	human	Q9UPQ4	TRIM35	Q9UPQ4	29	144	E3 ubiquitin-protein ligase TRIM35 (EC 2.3.2.27) (Hemopoieti	w
-HEMOPOIETIC-SPECIFIC	human	Q16548	BCL2A1	Q16548	73	579	Bcl-2-related protein A1 (Bcl-2-like protein 5) (Bcl2-L-5) (	w
+HEMOPOIETIC-SPECIFIC	human	Q16548	BCL2A1	Q16548	90	595	Bcl-2-related protein A1 (Bcl-2-like protein 5) (Bcl2-L-5) (	w
 HEMOPRESSIN	human	P69905	HBA1	P69905	42	750	Hemoglobin subunit alpha (Alpha-globin) (Hemoglobin alpha ch	w
 HEMOREGULATORY	human	P62328	TMSB4X	P62328	99	1664	Thymosin beta-4 (T beta-4) (Fx) [Cleaved into: Hemoregulator	w
 HEMORRHAGE	zebrafish	B8A4C9	cst3	B8A4C9	1	5	Cystatin C (amyloid angiopathy and cerebral hemorrhage)	w

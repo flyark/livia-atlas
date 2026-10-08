@@ -3,9 +3,9 @@ CPT-2	worm	G5ECS9	cpt-2	G5ECS9	1	14	Calponin-homology (CH) domain-containing pro
 CPT-4	worm	O44619	cpt-4	O44619	0	1	Choline/carnitine acyltransferase domain-containing protein	
 CPT-5	worm	G5EG54	cpt-5	G5EG54	0	3	Choline/carnitine acyltransferase domain-containing protein	
 CPT-6	worm	Q23066	cpt-6	Q23066	0	26	Choline/carnitine acyltransferase domain-containing protein	
-CPT1	human	P23786	CPT2	P23786	3	116		
+CPT1	human	P23786	CPT2	P23786	7	120		
 CPT1	human	P50416	CPT1A	P50416	6	167		
-CPT1	human	Q8WUD6	CHPT1	Q8WUD6	7	157		
+CPT1	human	Q8WUD6	CHPT1	Q8WUD6	13	163		
 CPT1	yeast	P17898	CPT1	P17898	1	23	Cholinephosphotransferase 1	
 CPT1-L	human	P50416	CPT1A	P50416	6	167	Carnitine O-palmitoyltransferase 1, liver isoform (CPT1-L) (	w
 CPT1-M	human	Q92523	CPT1B	Q92523	1	24	Carnitine O-palmitoyltransferase 1, muscle isoform (CPT1-M) 	w
@@ -21,19 +21,23 @@ CPT1B	mus-musculus	Q924X2	Cpt1b	Q924X2	0	6	Carnitine O-palmitoyltransferase 1, m
 CPT1B	rattus-norvegicus	Q63704	Cpt1b	Q63704	1	5	Carnitine O-palmitoyltransferase 1, muscle isoform	
 CPT1B	zebrafish	F6P7Z9	cpt1b	F6P7Z9	0	3	Carnitine O-palmitoyltransferase 1, muscle isoform	
 CPT1B_HUMAN	human	Q92523	CPT1B	Q92523	1	24		
-CPT1C	human	Q8TCG5	CPT1C	Q8TCG5	7	99	Palmitoyl thioesterase CPT1C (EC 3.1.2.22) (Carnitine O-palm	
-CPT1C	mus-musculus	Q8BGD5	Cpt1c	Q8BGD5	3	52	Palmitoyl thioesterase CPT1C	
-CPT1C	rattus-norvegicus	F1LN46	Cpt1c	F1LN46	2	51	Palmitoyl thioesterase CPT1C	
-CPT1C_HUMAN	human	Q8TCG5	CPT1C	Q8TCG5	7	99		
+CPT1C	human	Q8TCG5	CPT1C	Q8TCG5	10	102	Palmitoyl thioesterase CPT1C (EC 3.1.2.22) (Carnitine O-palm	
+CPT1C	mus-musculus	Q8BGD5	Cpt1c	Q8BGD5	5	54	Palmitoyl thioesterase CPT1C	
+CPT1C	pan-troglodytes	K7BTI0	CPT1C	K7BTI0	1	1	carnitine O-palmitoyltransferase	
+CPT1C	rattus-norvegicus	F1LN46	Cpt1c	F1LN46	4	53	Palmitoyl thioesterase CPT1C	
+CPT1C_HUMAN	human	Q8TCG5	CPT1C	Q8TCG5	10	102		
 CPT2	arabidopsis-thaliana	F4IMI8	CPT2	F4IMI8	0	4	Alkyl transferase	
-CPT2	fly	FBgn0035383	Cpt2	Q9VZW7	1	36	Carnitine palmitoyltransferase 2 (EC 2.3.1.21)	
-CPT2	fly	FBgn0035383	Cpt2	Q9VZW7	1	36	Carnitine palmitoyltransferase 2 (EC 2.3.1.21)	
-CPT2	human	P23786	CPT2	P23786	3	116	Carnitine O-palmitoyltransferase 2, mitochondrial (EC 2.3.1.	
-CPT2	mus-musculus	P52825	Cpt2	P52825	2	38	Carnitine O-palmitoyltransferase 2, mitochondrial	
-CPT2	rattus-norvegicus	P18886	Cpt2	P18886	0	18	Carnitine O-palmitoyltransferase 2, mitochondrial	
-CPT2	zebrafish	Q5U3U3	cpt2	Q5U3U3	1	20	Carnitine O-palmitoyltransferase 2, mitochondrial	
-CPT2_HUMAN	human	P23786	CPT2	P23786	3	116		
-CPTI-B	human	Q8TCG5	CPT1C	Q8TCG5	7	99	Palmitoyl thioesterase CPT1C (EC 3.1.2.22) (Carnitine O-palm	w
+CPT2	fly	FBgn0035383	Cpt2	Q9VZW7	1	37	Carnitine palmitoyltransferase 2 (EC 2.3.1.21)	
+CPT2	fly	FBgn0035383	Cpt2	Q9VZW7	1	37	Carnitine palmitoyltransferase 2 (EC 2.3.1.21)	
+CPT2	human	P23786	CPT2	P23786	7	120	Carnitine O-palmitoyltransferase 2, mitochondrial (EC 2.3.1.	
+CPT2	mus-musculus	P52825	Cpt2	P52825	4	40	Carnitine O-palmitoyltransferase 2, mitochondrial	
+CPT2	pan-troglodytes	H2PZ20	CPT2	H2PZ20	4	4	Carnitine palmitoyltransferase 2	
+CPT2	rattus-norvegicus	P18886	Cpt2	P18886	2	20	Carnitine O-palmitoyltransferase 2, mitochondrial	
+CPT2	xenopus-laevis	Q7ZXE1	cpt2	Q7ZXE1	2	2	Carnitine O-palmitoyltransferase 2, mitochondrial	
+CPT2	zebrafish	Q5U3U3	cpt2	Q5U3U3	1	21	Carnitine O-palmitoyltransferase 2, mitochondrial	
+CPT2_DANRE	zebrafish	Q5U3U3	cpt2	Q5U3U3	1	21		
+CPT2_HUMAN	human	P23786	CPT2	P23786	7	120		
+CPTI-B	human	Q8TCG5	CPT1C	Q8TCG5	10	102	Palmitoyl thioesterase CPT1C (EC 3.1.2.22) (Carnitine O-palm	w
 CPTI-L	human	P50416	CPT1A	P50416	6	167	Carnitine O-palmitoyltransferase 1, liver isoform (CPT1-L) (	w
 CPTI-M	human	Q92523	CPT1B	Q92523	1	24	Carnitine O-palmitoyltransferase 1, muscle isoform (CPT1-M) 	w
 CPTP	human	Q5TA50	CPTP	Q5TA50	1	29	Ceramide-1-phosphate transfer protein (CPTP) (Glycolipid tra	

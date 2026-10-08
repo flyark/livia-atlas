@@ -49,7 +49,7 @@ CAMBRIDGE	human	P31358	CD52	P31358	13	305	CAMPATH-1 antigen (CDw52) (Cambridge p
 CAMC	human	P0DP25	CALM3	P0DP25	213	2767		
 CAMDI	human	Q6ZP82	CCDC141	Q6ZP82	3	19		
 CAMELLO	zebrafish	A0A8M1PSN6	nat8	A0A8M1PSN6	0	6	Probable N-acetyltransferase camello	w
-CAMELLO-LIKE	human	Q8N9F0	NAT8L	Q8N9F0	5	98	N-acetylaspartate synthetase (NAA synthetase) (EC 2.3.1.17) 	w
+CAMELLO-LIKE	human	Q8N9F0	NAT8L	Q8N9F0	12	105	N-acetylaspartate synthetase (NAA synthetase) (EC 2.3.1.17) 	w
 CAMELLO-LIKE	human	Q9UHE5	NAT8	Q9UHE5	2	67	N-acetyltransferase 8 (EC 2.3.1.-) (Acetyltransferase 2) (AT	w
 CAMELLO-LIKE	human	Q9UHF3	NAT8B	Q9UHF3	0	42	N-acetyltransferase 8B (EC 2.3.1.-) (Acetyltransferase 1) (A	w
 CAMGAP1	human	Q6ZUM4	ARHGAP27	Q6ZUM4	15	67		
@@ -185,7 +185,7 @@ CAMP	human	Q9HCR9	PDE11A	Q9HCR9	9	91	Dual 3',5'-cyclic-AMP and -GMP phosphodiest
 CAMP	human	Q9Y233	PDE10A	Q9Y233	9	79	cAMP and cAMP-inhibited cGMP 3',5'-cyclic phosphodiesterase 	w
 CAMP	mus-musculus	P51437	Camp	P51437	1	51	Cathelicidin antimicrobial peptide	
 CAMP	rattus-norvegicus	G3V8S9	Camp	G3V8S9	2	63	Cathelicidin antimicrobial peptide	
-CAMP-DEPENDENT	fly	FBgn0000273	Pka-C1	P12370	275	1173	cAMP-dependent protein kinase catalytic subunit 1 (PKA C) (E	w
+CAMP-DEPENDENT	fly	FBgn0000273	Pka-C1	P12370	281	1179	cAMP-dependent protein kinase catalytic subunit 1 (PKA C) (E	w
 CAMP-DEPENDENT	fly	FBgn0000274	Pka-C2	P16911	279	1127	cAMP-dependent protein kinase catalytic subunit 2 (EC 2.7.11	w
 CAMP-DEPENDENT	fly	FBgn0000489	Pka-C3	P16912	331	1135	cAMP-dependent protein kinase catalytic subunit 3 (EC 2.7.11	w
 CAMP-DEPENDENT	fly	FBgn0011670	Mst57Dc	Q9V3J3	22	256	Accessory gland-specific peptide 57Dc (45 kDa cAMP-dependent	w
@@ -195,7 +195,7 @@ CAMP-DEPENDENT	human	P10644	PRKAR1A	P10644	43	384	cAMP-dependent protein kinase 
 CAMP-DEPENDENT	human	P13861	PRKAR2A	P13861	47	240	cAMP-dependent protein kinase type II-alpha regulatory subun	w
 CAMP-DEPENDENT	human	P15336	ATF2	P15336	163	711	Cyclic AMP-dependent transcription factor ATF-2 (cAMP-depend	w
 CAMP-DEPENDENT	human	P17544	ATF7	P17544	140	451	Cyclic AMP-dependent transcription factor ATF-7 (cAMP-depend	w
-CAMP-DEPENDENT	human	P17612	PRKACA	P17612	563	2224	cAMP-dependent protein kinase catalytic subunit alpha (PKA C	w
+CAMP-DEPENDENT	human	P17612	PRKACA	P17612	589	2249	cAMP-dependent protein kinase catalytic subunit alpha (PKA C	w
 CAMP-DEPENDENT	human	P18846	ATF1	P18846	119	415	Cyclic AMP-dependent transcription factor ATF-1 (cAMP-depend	w
 CAMP-DEPENDENT	human	P18847	ATF3	P18847	134	673	Cyclic AMP-dependent transcription factor ATF-3 (cAMP-depend	w
 CAMP-DEPENDENT	human	P18848	ATF4	P18848	131	551	Cyclic AMP-dependent transcription factor ATF-4 (cAMP-depend	w
@@ -212,13 +212,14 @@ CAMP-DEPENDENT	human	Q99941	ATF6B	Q99941	21	80	Cyclic AMP-dependent transcriptio
 CAMP-DEPENDENT	human	Q9C010	PKIB	Q9C010	29	190	cAMP-dependent protein kinase inhibitor beta (PKI-beta)	w
 CAMP-DEPENDENT	human	Q9Y2B9	PKIG	Q9Y2B9	11	58	cAMP-dependent protein kinase inhibitor gamma (PKI-gamma)	w
 CAMP-DEPENDENT	human	Q9Y2D1	ATF5	Q9Y2D1	77	399	Cyclic AMP-dependent transcription factor ATF-5 (cAMP-depend	w
-CAMP-DEPENDENT	worm	P21137	kin-1	P21137	11	92	cAMP-dependent protein kinase catalytic subunit (PKA C) (EC 	w
+CAMP-DEPENDENT	worm	P21137	kin-1	P21137	13	95	cAMP-dependent protein kinase catalytic subunit (PKA C) (EC 	w
 CAMP-DEPENDENT	worm	P30625	kin-2	P30625	2	18	cAMP-dependent protein kinase regulatory subunit	w
 CAMP-DEPENDENT	worm	Q7JP68	KAPC2_CAEEL	Q7JP68	9	69	cAMP-dependent protein kinase, catalytic subunit-like (EC 2.	w
 CAMP-DEPENDENT	yeast	P05986	TPK3	P05986	4	33	cAMP-dependent protein kinase type 3	w
 CAMP-DEPENDENT	yeast	P06244	TPK1	P06244	6	60	cAMP-dependent protein kinase type 1	w
 CAMP-DEPENDENT	yeast	P06245	TPK2	P06245	12	77	cAMP-dependent protein kinase type 2 (PKA 2) (EC 2.7.11.11)	w
 CAMP-DEPENDENT	yeast	P07278	BCY1	P07278	11	99	cAMP-dependent protein kinase regulatory subunit (cAPK regul	w
+CAMP-DEPENDENT	zebrafish	A0A8M9PZU3	prkacaa	A0A8M9PZU3	13	13	cAMP-dependent protein kinase	w
 CAMP-DEPENDENT	zebrafish	A3KMS9	prkacaa	A3KMS9	11	53	cAMP-dependent protein kinase catalytic subunit alpha	w
 CAMP-DEPENDENT	zebrafish	A9C3T0	prkar2aa	A9C3T0	28	53	cAMP-dependent protein kinase type II-alpha regulatory subun	w
 CAMP-DEPENDENT	zebrafish	Q08C49	prkar1b	Q08C49	11	26	Protein kinase, cAMP-dependent, regulatory, type I, beta	w

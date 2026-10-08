@@ -88,10 +88,11 @@ SPHINGOSINE	human	Q99487	PAFAH2	Q99487	4	58	Platelet-activating factor acetylhyd
 SPHINGOSINE	human	Q99500	S1PR3	Q99500	12	126	Sphingosine 1-phosphate receptor 3 (S1P receptor 3) (S1P3) (	w
 SPHINGOSINE	human	Q9H228	S1PR5	Q9H228	8	95	Sphingosine 1-phosphate receptor 5 (S1P receptor 5) (S1P5) (	w
 SPHINGOSINE	human	Q9HA82	CERS4	Q9HA82	16	436	Ceramide synthase 4 (CerS4) (EC 2.3.1.-) (LAG1 longevity ass	w
-SPHINGOSINE	human	Q9NRA0	SPHK2	Q9NRA0	8	115	Sphingosine kinase 2 (SK 2) (SPK 2) (EC 2.7.1.91)	w
+SPHINGOSINE	human	Q9NRA0	SPHK2	Q9NRA0	16	123	Sphingosine kinase 2 (SK 2) (SPK 2) (EC 2.7.1.91)	w
 SPHINGOSINE	human	Q9NYA1	SPHK1	Q9NYA1	7	113	Sphingosine kinase 1 (SK 1) (SPK 1) (EC 2.7.1.91) (Acetyltra	w
 SPHINGOSINE	worm	Q18425	sphk-1	Q18425	0	16	Sphingosine kinase 1	w
 SPHINGOSINE	zebrafish	A0A8M1NC80	s1pr3a	A0A8M1NC80	1	11	Sphingosine 1-phosphate receptor 3a isoform X1	w
+SPHINGOSINE	zebrafish	A0A8M9PK50	sphk2	A0A8M9PK50	3	4	sphingosine kinase 2	w
 SPHINGOSINE	zebrafish	A0AB32TA20	sphk2	A0AB32TA20	1	39	sphingosine kinase	w
 SPHINGOSINE	zebrafish	F1QC10	s1pr4	F1QC10	0	4	Sphingosine 1-phosphate receptor 4	w
 SPHINGOSINE	zebrafish	Q9DDK4	s1pr1	Q9DDK4	6	19	Sphingosine 1-phosphate receptor 1	w
@@ -125,11 +126,15 @@ SPHK1	rattus-norvegicus	Q91V26	Sphk1	Q91V26	1	33	Sphingosine kinase 1
 SPHK1-INTERACTOR	human	Q2M3C7	SPHKAP	Q2M3C7	22	116	A-kinase anchor protein SPHKAP (SPHK1-interactor and AKAP do	w
 SPHK1_HUMAN	human	Q9NYA1	SPHK1	Q9NYA1	7	113		
 SPHK2	arabidopsis-thaliana	F2Y4A3	SPHK2	F2Y4A3	0	14	Sphingosine kinase 2	
-SPHK2	human	Q9NRA0	SPHK2	Q9NRA0	8	115	Sphingosine kinase 2 (SK 2) (SPK 2) (EC 2.7.1.91)	
-SPHK2	mus-musculus	Q9JIA7	Sphk2	Q9JIA7	1	14	Sphingosine kinase 2	
+SPHK2	human	Q9NRA0	SPHK2	Q9NRA0	16	123	Sphingosine kinase 2 (SK 2) (SPK 2) (EC 2.7.1.91)	
+SPHK2	mus-musculus	Q9JIA7	Sphk2	Q9JIA7	7	21	Sphingosine kinase 2	
+SPHK2	pan-troglodytes	H2QGR9	SPHK2	H2QGR9	3	3	Sphingosine kinase 2	
 SPHK2	rattus-norvegicus	A6JB73	Sphk2	A6JB73	2	24	sphingosine kinase	
+SPHK2	rattus-norvegicus	Q6AYB2	Sphk2	Q6AYB2	5	6	RCG53912, isoform CRA_a	
+SPHK2	zebrafish	A0A8M9PK50	sphk2	A0A8M9PK50	3	4	sphingosine kinase 2	
 SPHK2	zebrafish	A0AB32TA20	sphk2	A0AB32TA20	1	39	sphingosine kinase	
-SPHK2_HUMAN	human	Q9NRA0	SPHK2	Q9NRA0	8	115		
+SPHK2.L	xenopus-laevis	A0A1L8FMX6	sphk2.L	A0A1L8FMX6	3	4	sphingosine kinase 1	
+SPHK2_HUMAN	human	Q9NRA0	SPHK2	Q9NRA0	16	123		
 SPHKAP	human	Q2M3C7	SPHKAP	Q2M3C7	22	116	A-kinase anchor protein SPHKAP (SPHK1-interactor and AKAP do	
 SPHM_HUMAN	human	P51688	SGSH	P51688	3	79		
 SPHTRA	streptococcus-pneumoniae	Q8DMW2	sphtra	Q8DMW2	1	31	Serine protease	

@@ -30,7 +30,7 @@ P14127	yeast	P14127	RPS17B	P14127	18	333	Small ribosomal subunit protein eS17B
 P14131	mus-musculus	P14131	Rps16	P14131	33	634	Small ribosomal subunit protein uS9	
 P14132	dictyostelium-discoideum	P14132	rps9	P14132	9	257	Small ribosomal subunit protein uS4	
 P14136	human	P14136	GFAP	P14136	92	352	Glial fibrillary acidic protein (GFAP)	
-P14137	rattus-norvegicus	P14137	Cyp11a1	P14137	2	6	Cholesterol side-chain cleavage enzyme, mitochondrial	
+P14137	rattus-norvegicus	P14137	Cyp11a1	P14137	8	12	Cholesterol side-chain cleavage enzyme, mitochondrial	
 P14138	human	P14138	EDN3	P14138	31	172	Endothelin-3 (ET-3) (Preproendothelin-3) (PPET3)	
 P14141	rattus-norvegicus	P14141	Ca3	P14141	0	8	Carbonic anhydrase 3	
 P14142	mus-musculus	P14142	Slc2a4	P14142	0	33	Solute carrier family 2, facilitated glucose transporter mem	
@@ -74,7 +74,7 @@ P14316	human	P14316	IRF2	P14316	72	497	Interferon regulatory factor 2 (IRF-2)
 P14317	human	P14317	HCLS1	P14317	61	349	Hematopoietic lineage cell-specific protein (Hematopoietic c	
 P14318	fly	FBgn0002789	Mp20	P14318	6	82	Muscle protein 20	
 P14323	oryza-sativa-subsp-japonica	P14323	GluB1-A	P14323	0	56	Glutelin type-B 1	
-P14324	human	P14324	FDPS	P14324	3	156	Farnesyl pyrophosphate synthase (FPP synthase) (FPS) (EC 2.5	
+P14324	human	P14324	FDPS	P14324	4	157	Farnesyl pyrophosphate synthase (FPP synthase) (FPS) (EC 2.5	
 P14325	dictyostelium-discoideum	P14325	glnS	P14325	2	116	Probable glutamine--tRNA ligase	
 P14326	dictyostelium-discoideum	P14326	cinB	P14326	0	6	Vegetative-specific protein H5	
 P14327	dictyostelium-discoideum	P14327	cinD-1	P14327	8	96	Vegetative-specific protein H7	
@@ -176,7 +176,7 @@ P14550	human	P14550	AKR1A1	P14550	5	111	Aldo-keto reductase family 1 member A1 (
 P14555	human	P14555	PLA2G2A	P14555	11	157	Phospholipase A2, membrane associated (EC 3.1.1.4) (GIIC sPL	
 P14562	rattus-norvegicus	P14562	Lamp1	P14562	0	65	Lysosome-associated membrane glycoprotein 1	
 P14567	salmonella-typhimurium	P14567	dnaE	P14567	3	15	DNA polymerase III subunit alpha	
-P14575	schizosaccharomyces-pombe	P14575	cox3	P14575	5	37	Cytochrome c oxidase subunit 3	
+P14575	schizosaccharomyces-pombe	P14575	cox3	P14575	6	38	Cytochrome c oxidase subunit 3	
 P14576	mus-musculus	P14576	Srp54	P14576	13	154	Signal recognition particle subunit SRP54	
 P14578	oryza-sativa-subsp-japonica	P14578	COX1	P14578	10	163	Cytochrome c oxidase subunit 1	
 P14585	worm	P14585	lin-12	P14585	2	12	Protein lin-12	
@@ -184,7 +184,7 @@ P14598	human	P14598	NCF1	P14598	40	174	Neutrophil cytosol factor 1 (NCF-1) (47 k
 P14599	fly	FBgn0000108	Appl	M9NE22	785	2480		
 P14600	rattus-norvegicus	P14600	Tacr1	P14600	6	39	Substance-P receptor	
 P14602	mus-musculus	P14602	Hspb1	P14602	3	89	Heat shock protein beta-1	
-P14604	rattus-norvegicus	P14604	Echs1	P14604	3	112	Enoyl-CoA hydratase, mitochondrial	
+P14604	rattus-norvegicus	P14604	Echs1	P14604	6	115	Enoyl-CoA hydratase, mitochondrial	
 P14614	oryza-sativa-subsp-japonica	P14614	GLUB4	P14614	0	3	Glutelin type-B 4	
 P14616	human	P14616	INSRR	P14616	13	197	Insulin receptor-related protein (IRR) (EC 2.7.10.1) (IR-rel	
 P14618	human	P14618	PKM	P14618	4	518	Pyruvate kinase PKM (EC 2.7.1.40) (Cytosolic thyroid hormone	
@@ -245,7 +245,7 @@ P14789	pseudomonas-aeruginosa	P14789	lasA	P14789	0	1	Protease LasA
 P14794	dictyostelium-discoideum	P14794	ubqB	P14794	16	259	Ubiquitin-ribosomal protein eL40 fusion protein	
 P14797	dictyostelium-discoideum	P14797	ubqC	P14797	34	336	Ubiquitin-ribosomal protein eS31 fusion protein	
 P14824	mus-musculus	P14824	Anxa6	P14824	0	51	Annexin A6	
-P14832	yeast	P14832	CPR1	P14832	7	181	Peptidyl-prolyl cis-trans isomerase	
+P14832	yeast	P14832	CPR1	P14832	10	184	Peptidyl-prolyl cis-trans isomerase	
 P14841	rattus-norvegicus	P14841	Cst3	P14841	1	49	Cystatin-C	
 P14842	rattus-norvegicus	P14842	Htr2a	P14842	3	36	5-hydroxytryptamine receptor 2A	
 P14843	yeast	P14843	ARO3	P14843	1	10	Phospho-2-dehydro-3-deoxyheptonate aldolase, phenylalanine-i	
@@ -254,7 +254,7 @@ P14845	salmonella-typhimurium	P14845	carA	P14845	1	3	Carbamoyl phosphate synthas
 P14846	salmonella-typhimurium	P14846	carB	P14846	1	6	Carbamoyl phosphate synthase large chain	
 P14847	mus-musculus	P14847	Crp	P14847	2	45	C-reactive protein	
 P14853	glycine-max	P14853	COX3	P14853	7	266	Cytochrome c oxidase subunit 3	
-P14854	human	P14854	COX6B1	P14854	7	262	Cytochrome c oxidase subunit 6B1 (Cytochrome c oxidase subun	
+P14854	human	P14854	COX6B1	P14854	13	267	Cytochrome c oxidase subunit 6B1 (Cytochrome c oxidase subun	
 P14859	human	P14859	POU2F1	P14859	51	255	POU domain, class 2, transcription factor 1 (NF-A1) (Octamer	
 P14866	human	P14866	HNRNPL	P14866	135	1746	Heterogeneous nuclear ribonucleoprotein L (hnRNP L)	
 P14867	human	P14867	GABRA1	P14867	47	310	Gamma-aminobutyric acid receptor subunit alpha-1 (GABA(A) re	
@@ -277,7 +277,7 @@ P14921	human	P14921	ETS1	P14921	48	455	Protein C-ets-1 (p54)
 P14922	yeast	P14922	CYC8	P14922	8	106	General transcriptional corepressor CYC8	
 P14923	human	P14923	JUP	P14923	92	963	Junction plakoglobin (Catenin gamma) (Desmoplakin III) (Desm	
 P14925	rattus-norvegicus	P14925	Pam	P14925	0	3	Peptidylglycine alpha-amidating monooxygenase	
-P14927	human	P14927	UQCRB	P14927	16	232	Cytochrome b-c1 complex subunit 7 (Complex III subunit 7) (C	
+P14927	human	P14927	UQCRB	P14927	19	235	Cytochrome b-c1 complex subunit 7 (Complex III subunit 7) (C	
 P14942	rattus-norvegicus	P14942	Gsta4	P14942	0	1	Glutathione S-transferase alpha-4	
 P14956	fly	FBgn0000278	CecB	P14956	28	259	Cecropin-B	
 P14965	schizosaccharomyces-pombe	P14965	ura4	P14965	0	1	Orotidine 5'-phosphate decarboxylase	

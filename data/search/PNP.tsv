@@ -29,12 +29,12 @@ PNP4A	zebrafish	Q7SZW5	pnp4a	Q7SZW5	2	4	Purine nucleoside phosphorylase
 PNP4B	zebrafish	Q6P016	pnp4b	Q6P016	3	4	Purine nucleoside phosphorylase	
 PNP5A	zebrafish	Q6NYG0	pnp5a	Q6NYG0	3	4	Purine nucleoside phosphorylase	
 PNP6	zebrafish	Q1LWJ1	pnp6	Q1LWJ1	2	4	Purine nucleoside phosphorylase	
-PNPASE	fly	FBgn0039846	PNPase	Q9V9X7	1	20	polyribonucleotide nucleotidyltransferase (EC 2.7.7.8)	
+PNPASE	fly	FBgn0039846	PNPase	Q9V9X7	2	21	polyribonucleotide nucleotidyltransferase (EC 2.7.7.8)	
 PNPASE	human	Q8TCS8	PNPT1	Q8TCS8	7	205		
 PNPH_HUMAN	human	P00491	PNP	P00491	1	163		
 PNPLA	worm	G5EF58	ipla-7	G5EF58	0	2	PNPLA domain-containing protein	w
 PNPLA	worm	Q18948	CELE_D1054.1	Q18948	0	12	PNPLA domain-containing protein	w
-PNPLA	worm	Q8MXR3	ipla-6	Q8MXR3	0	6	PNPLA domain-containing protein	w
+PNPLA	worm	Q8MXR3	ipla-6	Q8MXR3	1	8	PNPLA domain-containing protein	w
 PNPLA	worm	Q9N5L3	ipla-5	Q9N5L3	0	21	PNPLA domain-containing protein	w
 PNPLA	worm	Q9N5Z7	B0524.2	Q9N5Z7	0	4	PNPLA domain-containing protein	w
 PNPLA1	human	Q8N8W4	PNPLA1	Q8N8W4	2	26	Omega-hydroxyceramide transacylase (EC 2.3.1.296) (Patatin-l	
@@ -62,12 +62,20 @@ PNPLA7	mus-musculus	A2AJ88	Pnpla7	A2AJ88	0	6	Patatin-like phospholipase domain-c
 PNPLA7	rattus-norvegicus	Q5BK26	Pnpla7	Q5BK26	0	11	Patatin-like phospholipase domain-containing protein 7	
 PNPLA7A	zebrafish	A1L2A9	pnpla7a	A1L2A9	1	18	Patatin-like phospholipase domain containing 7a	
 PNPLA8	human	Q9NP80	PNPLA8	Q9NP80	7	60	Calcium-independent phospholipase A2-gamma (EC 3.1.1.-) (EC 	
-PNPLA8	mus-musculus	Q8K1N1	Pnpla8	Q8K1N1	1	4	Calcium-independent phospholipase A2-gamma	
-PNPLA8	rattus-norvegicus	D3ZRC4	Pnpla8	D3ZRC4	0	11	Calcium-independent phospholipase A2-gamma	
-PNPO	human	Q9NVS9	PNPO	Q9NVS9	5	67	Pyridoxine-5'-phosphate oxidase (EC 1.4.3.5) (Pyridoxamine-p	
-PNPO_HUMAN	human	Q9NVS9	PNPO	Q9NVS9	5	67		
+PNPLA8	mus-musculus	Q8K1N1	Pnpla8	Q8K1N1	3	6	Calcium-independent phospholipase A2-gamma	
+PNPLA8	pan-troglodytes	H2QV86	PNPLA8	H2QV86	2	2	Patatin-like phospholipase domain containing 8	
+PNPLA8	rattus-norvegicus	D3ZRC4	Pnpla8	D3ZRC4	2	13	Calcium-independent phospholipase A2-gamma	
+PNPLA8	zebrafish	A0A8M1QUK8	pnpla8	A0A8M1QUK8	2	2	calcium-independent phospholipase A2-gamma	
+PNPLA8.L	xenopus-laevis	A0A1L8GYU1	pnpla8.L	A0A1L8GYU1	2	2	calcium-independent phospholipase A2-gamma	
+PNPO	human	Q9NVS9	PNPO	Q9NVS9	6	68	Pyridoxine-5'-phosphate oxidase (EC 1.4.3.5) (Pyridoxamine-p	
+PNPO	mus-musculus	Q91XF0	Pnpo	Q91XF0	0	1	Pyridoxine-5'-phosphate oxidase	
+PNPO	pan-troglodytes	H2QDB2	PNPO	H2QDB2	1	1	pyridoxal 5'-phosphate synthase	
+PNPO_HUMAN	human	Q9NVS9	PNPO	Q9NVS9	6	68		
 PNPT-1	worm	Q965N3	pnpt-1	Q965N3	0	15	polyribonucleotide nucleotidyltransferase	
 PNPT1	human	Q8TCS8	PNPT1	Q8TCS8	7	205	Polyribonucleotide nucleotidyltransferase 1, mitochondrial (	
-PNPT1	mus-musculus	Q8K1R3	Pnpt1	Q8K1R3	1	71	Polyribonucleotide nucleotidyltransferase 1, mitochondrial	
-PNPT1	rattus-norvegicus	G3V6G7	Pnpt1	G3V6G7	1	65	Polyribonucleotide nucleotidyltransferase 1, mitochondrial	
+PNPT1	mus-musculus	Q8K1R3	Pnpt1	Q8K1R3	2	72	Polyribonucleotide nucleotidyltransferase 1, mitochondrial	
+PNPT1	pan-troglodytes	H2QHX7	PNPT1	H2QHX7	1	1	polyribonucleotide nucleotidyltransferase	
+PNPT1	rattus-norvegicus	G3V6G7	Pnpt1	G3V6G7	2	66	Polyribonucleotide nucleotidyltransferase 1, mitochondrial	
+PNPT1	zebrafish	G5CTT5	pnpt1	G5CTT5	1	1	polyribonucleotide nucleotidyltransferase	
+PNPT1.S	xenopus-laevis	A0A1L8G1M3	pnpt1.S	A0A1L8G1M3	1	1	polyribonucleotide nucleotidyltransferase	
 PNPT1_HUMAN	human	Q8TCS8	PNPT1	Q8TCS8	7	205		

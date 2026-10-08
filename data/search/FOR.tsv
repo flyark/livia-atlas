@@ -200,7 +200,7 @@ FORM	human	P05813	CRYBA1	P05813	19	89	Beta-crystallin A3 [Cleaved into: Beta-cry
 FORM	human	P06737	PYGL	P06737	2	129	Glycogen phosphorylase, liver form (EC 2.4.1.1)	w
 FORM	human	P07911	UMOD	P07911	34	347	Uromodulin (Tamm-Horsfall urinary glycoprotein) (THP) [Cleav	w
 FORM	human	P08311	CTSG	P08311	120	409	Cathepsin G (CG) (EC 3.4.21.20) [Cleaved into: Cathepsin G, 	w
-FORM	human	P08559	PDHA1	P08559	40	729	Pyruvate dehydrogenase E1 component subunit alpha, somatic f	w
+FORM	human	P08559	PDHA1	P08559	42	730	Pyruvate dehydrogenase E1 component subunit alpha, somatic f	w
 FORM	human	P09601	HMOX1	P09601	23	290	Heme oxygenase 1 (HO-1) (EC 1.14.14.18) [Cleaved into: Heme 	w
 FORM	human	P0C7T4	HMSD	P0C7T4	0	1	Minor histocompatibility protein HMSD variant form (HSMD-v) 	w
 FORM	human	P10071	GLI3	P10071	23	141	Transcription activator GLI3 (GLI3 form of 190 kDa) (GLI3-19	w
@@ -215,7 +215,7 @@ FORM	human	P19367	HK1	P19367	6	258	Hexokinase-1 (EC 2.7.1.1) (Brain form hexokin
 FORM	human	P23560	BDNF	P23560	6	43	Neurotrophic factor BDNF precursor form (proBDNF) (Abrineuri	w
 FORM	human	P28300	LOX	P28300	16	192	Protein-lysine 6-oxidase (EC 1.4.3.13) (Lysyl oxidase) [Clea	w
 FORM	human	P29536	LMOD1	P29536	9	55	Leiomodin-1 (64 kDa autoantigen 1D) (64 kDa autoantigen 1D3)	w
-FORM	human	P29803	PDHA2	P29803	10	65	Pyruvate dehydrogenase E1 component subunit alpha, testis-sp	w
+FORM	human	P29803	PDHA2	P29803	18	73	Pyruvate dehydrogenase E1 component subunit alpha, testis-sp	w
 FORM	human	P30519	HMOX2	P30519	26	313	Heme oxygenase 2 (HO-2) (EC 1.14.14.18) [Cleaved into: Heme 	w
 FORM	human	P31944	CASP14	P31944	28	297	Caspase-14 (CASP-14) (EC 3.4.22.-) [Cleaved into: Caspase-14	w
 FORM	human	P52789	HK2	P52789	2	147	Hexokinase-2 (EC 2.7.1.1) (Hexokinase type II) (HK II) (Hexo	w
@@ -228,14 +228,14 @@ FORM	human	Q08431	MFGE8	Q08431	13	338	Lactadherin (Breast epithelial antigen BA4
 FORM	human	Q0VAK6	LMOD3	Q0VAK6	6	30	Leiomodin-3 (Leiomodin, fetal form)	w
 FORM	human	Q13421	MSLN	Q13421	33	235	Mesothelin (CAK1 antigen) (Pre-pro-megakaryocyte-potentiatin	w
 FORM	human	Q13683	ITGA7	Q13683	16	176	Integrin alpha-7 [Cleaved into: Integrin alpha-7 heavy chain	w
-FORM	human	Q14154	DELE1	Q14154	8	33	DAP3-binding cell death enhancer 1 (DAP3-binding cell death 	w
-FORM	human	Q16595	FXN	Q16595	25	227	Frataxin, mitochondrial (EC 1.16.3.1) (Friedreich ataxia pro	w
+FORM	human	Q14154	DELE1	Q14154	18	43	DAP3-binding cell death enhancer 1 (DAP3-binding cell death 	w
+FORM	human	Q16595	FXN	Q16595	32	233	Frataxin, mitochondrial (EC 1.16.3.1) (Friedreich ataxia pro	w
 FORM	human	Q2M385	MPEG1	Q2M385	3	137	Macrophage-expressed gene 1 protein (Macrophage gene 1 prote	w
 FORM	human	Q4V328	GRIPAP1	Q4V328	49	249	GRIP1-associated protein 1 (GRASP-1) [Cleaved into: GRASP-1 	w
 FORM	human	Q5GH70	XKR9	Q5GH70	0	10	XK-related protein 9 (hXKR9) [Cleaved into: XK-related prote	w
 FORM	human	Q5GH76	XKR4	Q5GH76	3	32	XK-related protein 4 (hXKR4) [Cleaved into: XK-related prote	w
 FORM	human	Q6ZNF0	ACP7	Q6ZNF0	5	48	Acid phosphatase type 7 (EC 3.1.3.2) (Purple acid phosphatas	w
-FORM	human	Q8N159	NAGS	Q8N159	8	110	N-acetylglutamate synthase, mitochondrial (EC 2.3.1.1) (Amin	w
+FORM	human	Q8N159	NAGS	Q8N159	9	111	N-acetylglutamate synthase, mitochondrial (EC 2.3.1.1) (Amin	w
 FORM	human	Q8NEB7	ACRBP	Q8NEB7	3	58	Acrosin-binding protein (Acrosin-binding protein, 60 kDa for	w
 FORM	human	Q92838	EDA	Q92838	20	131	Ectodysplasin-A (Ectodermal dysplasia protein) (EDA protein)	w
 FORM	human	Q9BX67	JAM3	Q9BX67	40	280	Junctional adhesion molecule C (JAM-C) (JAM-2) (Junctional a	w
@@ -355,21 +355,23 @@ FORMYLGLYCINAMIDE	human	O15067	PFAS	O15067	2	165	Phosphoribosylformylglycinamidi
 FORMYLGLYCINE-GENERATING	human	Q8NBJ7	SUMF2	Q8NBJ7	5	70	Inactive C-alpha-formylglycine-generating enzyme 2 (Paralog 	w
 FORMYLGLYCINE-GENERATING	human	Q8NBK3	SUMF1	Q8NBK3	7	83	Formylglycine-generating enzyme (FGE) (EC 1.8.3.7) (C-alpha-	w
 FORMYLGLYCINE-GENERATING	zebrafish	A0A8M1N8S9	sumf1	A0A8M1N8S9	2	10	Formylglycine-generating enzyme precursor	w
-FORMYLTETRAHYDROFOLATE	fly	FBgn0032945	Aldh1L1	Q9VIC9	0	7	10-formyltetrahydrofolate dehydrogenase (EC 1.5.1.6)	w
-FORMYLTETRAHYDROFOLATE	fly	FBgn0085453	Mthfs	Q8MLS1	0	3	5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2)	w
+FORMYLTETRAHYDROFOLATE	fly	FBgn0032945	Aldh1L1	Q9VIC9	3	11	10-formyltetrahydrofolate dehydrogenase (EC 1.5.1.6)	w
+FORMYLTETRAHYDROFOLATE	fly	FBgn0085453	Mthfs	Q8MLS1	1	4	5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2)	w
 FORMYLTETRAHYDROFOLATE	human	A0A0A6YYL1	ST20-MTHFS	A0A0A6YYL1	1	14	5-formyltetrahydrofolate cyclo-ligase	w
-FORMYLTETRAHYDROFOLATE	human	O75891	ALDH1L1	O75891	9	196	Cytosolic 10-formyltetrahydrofolate dehydrogenase (10-FTHFDH	w
-FORMYLTETRAHYDROFOLATE	human	P49914	MTHFS	P49914	4	52	5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2) (5,10-met	w
-FORMYLTETRAHYDROFOLATE	human	Q3SY69	ALDH1L2	Q3SY69	9	90	Mitochondrial 10-formyltetrahydrofolate dehydrogenase (Mitoc	w
+FORMYLTETRAHYDROFOLATE	human	O75891	ALDH1L1	O75891	13	200	Cytosolic 10-formyltetrahydrofolate dehydrogenase (10-FTHFDH	w
+FORMYLTETRAHYDROFOLATE	human	P49914	MTHFS	P49914	9	57	5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2) (5,10-met	w
+FORMYLTETRAHYDROFOLATE	human	Q3SY69	ALDH1L2	Q3SY69	12	95	Mitochondrial 10-formyltetrahydrofolate dehydrogenase (Mitoc	w
 FORMYLTETRAHYDROFOLATE	human	Q6UB35	MTHFD1L	Q6UB35	4	163	Monofunctional C1-tetrahydrofolate synthase, mitochondrial (	w
-FORMYLTETRAHYDROFOLATE	worm	G5ECV9	alh-3	G5ECV9	0	6	10-formyltetrahydrofolate dehydrogenase	w
-FORMYLTETRAHYDROFOLATE	worm	Q9XWE6	Y106G6E.4	Q9XWE6	0	7	Probable 5-formyltetrahydrofolate cyclo-ligase	w
+FORMYLTETRAHYDROFOLATE	worm	G5ECV9	alh-3	G5ECV9	4	10	10-formyltetrahydrofolate dehydrogenase	w
+FORMYLTETRAHYDROFOLATE	worm	Q9XWE6	Y106G6E.4	Q9XWE6	1	8	Probable 5-formyltetrahydrofolate cyclo-ligase	w
 FORMYLTETRAHYDROFOLATE	yeast	P40099	FAU1	P40099	0	4	5-formyltetrahydrofolate cyclo-ligase	w
-FORMYLTETRAHYDROFOLATE	zebrafish	A0A8M1RK21	aldh1l2	A0A8M1RK21	0	3	10-formyltetrahydrofolate dehydrogenase	w
-FORMYLTRANSFERASE	fly	FBgn0039836	CG1750	Q9V9Z0	0	12	Methionyl-tRNA formyltransferase, mitochondrial (EC 2.1.2.9)	w
-FORMYLTRANSFERASE	human	Q96DP5	MTFMT	Q96DP5	9	152	Methionyl-tRNA formyltransferase, mitochondrial (MtFMT) (EC 	w
+FORMYLTETRAHYDROFOLATE	zebrafish	A0A0G2L0J2	mthfs	A0A0G2L0J2	1	1	5-formyltetrahydrofolate cyclo-ligase	w
+FORMYLTETRAHYDROFOLATE	zebrafish	A0A8M1RK21	aldh1l2	A0A8M1RK21	4	9	10-formyltetrahydrofolate dehydrogenase	w
+FORMYLTRANSFERASE	fly	FBgn0039836	CG1750	Q9V9Z0	2	14	Methionyl-tRNA formyltransferase, mitochondrial (EC 2.1.2.9)	w
+FORMYLTRANSFERASE	human	Q96DP5	MTFMT	Q96DP5	11	154	Methionyl-tRNA formyltransferase, mitochondrial (MtFMT) (EC 	w
 FORMYLTRANSFERASE	yeast	P04161	ADE8	P04161	0	18	Phosphoribosylglycinamide formyltransferase	w
-FORMYLTRANSFERASE	yeast	P32785	FMT1	P32785	1	9	Methionyl-tRNA formyltransferase, mitochondrial	w
+FORMYLTRANSFERASE	yeast	P32785	FMT1	P32785	2	10	Methionyl-tRNA formyltransferase, mitochondrial	w
+FORMYLTRANSFERASE	zebrafish	A5PL71	mtmft	A5PL71	2	2	Methionyl-tRNA formyltransferase, mitochondrial	w
 FORSSMAN	human	Q8N5D6	GBGT1	Q8N5D6	2	71	Globoside alpha-1,3-N-acetylgalactosaminyltransferase 1 (EC 	w
 FORTILIN	human	P13693	TPT1	P13693	28	383	Translationally-controlled tumor protein (TCTP) (Fortilin) (	w
 FORTY-TWO-THREE	human	Q96QD9	FYTTD1	Q96QD9	31	230	UAP56-interacting factor (Forty-two-three domain-containing 	w

@@ -1,15 +1,15 @@
 RES1	schizosaccharomyces-pombe	P33520	res1	P33520	2	16	Cell division cycle-related protein res1/sct1	
 RES18_HUMAN	human	Q5W5W9	RESP18	Q5W5W9	3	21		
 RES2	schizosaccharomyces-pombe	P41412	res2	P41412	4	16	Cell division cycle-related protein res2/pct1	
-RESA1	human	Q96BR5	COA7	Q96BR5	39	187		
+RESA1	human	Q96BR5	COA7	Q96BR5	46	194		
 RESCUE	fly	FBgn0001206	Hmr	Q86CW5	23	102	Hmr (Hybrid male rescue)	w
 RESCUE	fly	FBgn0034217	Lhr	Q95RV3	87	382	LD09786p (Lethal hybrid rescue)	w
 RESCUE	human	Q2TV78	MST1L	Q2TV78	0	1	Putative macrophage stimulating 1-like protein (Brain rescue	w
 RESCUE	human	Q96A73	KIAA1191	Q96A73	18	68	Putative monooxygenase p33MONOX (EC 1.-.-.-) (Brain-derived 	w
 RESCUE	human	Q9H3J6	MTRFR	Q9H3J6	16	303	Mitochondrial translation release factor in rescue	w
-RESCUE	human	Q9P0P8	MTRES1	Q9P0P8	9	271	Mitochondrial transcription rescue factor 1	w
-RESCUE	zebrafish	A5WUX7	mtrfr	A5WUX7	4	124	Mitochondrial translation release factor in rescue	w
-RESCUE	zebrafish	B7ZD93	mtres1	B7ZD93	1	59	Mitochondrial transcription rescue factor 1	w
+RESCUE	human	Q9P0P8	MTRES1	Q9P0P8	16	278	Mitochondrial transcription rescue factor 1	w
+RESCUE	zebrafish	A5WUX7	mtrfr	A5WUX7	5	125	Mitochondrial translation release factor in rescue	w
+RESCUE	zebrafish	B7ZD93	mtres1	B7ZD93	4	62	Mitochondrial transcription rescue factor 1	w
 RESF1	human	Q9HCM1	RESF1	Q9HCM1	18	99	Retroelement silencing factor 1	
 RESF1	rattus-norvegicus	E9PU57	Resf1	E9PU57	0	9	Retroelement silencing factor 1	
 RESF1_HUMAN	human	Q9HCM1	RESF1	Q9HCM1	18	99		
@@ -52,15 +52,15 @@ RESISTANCE	human	P20592	MX2	P20592	2	128	Interferon-induced GTP-binding protein 
 RESISTANCE	human	P21439	ABCB4	P21439	0	30	Phosphatidylcholine translocator ABCB4 (EC 7.6.2.1) (ATP-bin	w
 RESISTANCE	human	P56945	BCAR1	P56945	145	576	Breast cancer anti-estrogen resistance protein 1 (CRK-associ	w
 RESISTANCE	human	Q63HQ0	AP1AR	Q63HQ0	5	55	AP-1 complex-associated regulatory protein (2c18) (Adaptor-r	w
-RESISTANCE	human	Q6P4A7	SFXN4	Q6P4A7	4	165	Sideroflexin-4 (Breast cancer resistance marker 1)	w
-RESISTANCE	human	Q8N573	OXR1	Q8N573	11	43	Oxidation resistance protein 1	w
+RESISTANCE	human	Q6P4A7	SFXN4	Q6P4A7	12	173	Sideroflexin-4 (Breast cancer resistance marker 1)	w
+RESISTANCE	human	Q8N573	OXR1	Q8N573	17	49	Oxidation resistance protein 1	w
 RESISTANCE	human	Q92887	ABCC2	Q92887	2	73	ATP-binding cassette sub-family C member 2 (EC 7.6.2.-) (EC 	w
 RESISTANCE	human	Q96PN7	TRERF1	Q96PN7	11	62	Transcriptional-regulating factor 1 (Breast cancer anti-estr	w
 RESISTANCE	human	Q9BQC3	DPH2	Q9BQC3	6	93	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2 (Dip	w
 RESISTANCE	human	Q9BZG8	DPH1	Q9BZG8	12	133	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
 RESISTANCE	human	Q9UBT2	UBA2	Q9UBT2	35	306	SUMO-activating enzyme subunit 2 (EC 2.3.2.-) (Anthracycline	w
 RESISTANCE	human	Q9UPY5	SLC7A11	Q9UPY5	15	155	Cystine/glutamate transporter (Amino acid transport system x	w
-RESISTANCE	worm	H2L003	lmd-3	H2L003	0	9	Oxidation resistance protein 1	w
+RESISTANCE	worm	H2L003	lmd-3	H2L003	1	10	Oxidation resistance protein 1	w
 RESISTANCE	worm	P34712	pgp-1	P34712	0	21	Multidrug resistance protein pgp-1	w
 RESISTANCE	worm	P34713	pgp-3	P34713	0	21	Multidrug resistance protein pgp-3	w
 RESISTANCE	worm	P91124	ric-19	P91124	4	7	Resistance to inhibitors of cholinesterase protein 19	w
@@ -82,6 +82,7 @@ RESISTANCE	yeast	Q00816	REG1	Q00816	6	60	Resistance to glucose repression protei
 RESISTANCE	yeast	Q03631	WAR1	Q03631	0	10	Weak acid resistance protein 1	w
 RESISTANCE	yeast	Q06139	CIS1	Q06139	0	5	Citrinin resistance protein, mitochondrial	w
 RESISTANCE	yeast	Q08952	OXR1	Q08952	0	7	Oxidation resistance protein 1	w
+RESISTANCE	zebrafish	A0A8M9PD70	oxr1a	A0A8M9PD70	4	6	oxidation resistance protein 1 isoform X1	w
 RESISTANCE	zebrafish	B5DE36	bcar1	B5DE36	33	170	Breast cancer anti-estrogen resistance protein 1	w
 RESISTANCE-ASSOCIATED	fly	FBgn0032499	Uvrag	Q9VK07	13	58	UV radiation resistance-associated gene protein (UV-resistan	w
 RESISTANCE-ASSOCIATED	human	A4FU01	MTMR11	A4FU01	7	58	Myotubularin-related protein 11 (Cisplatin resistance-associ	w
@@ -113,7 +114,7 @@ RESISTANT	fly	FBgn0004244	Rdl	M9PBZ1	3	37	Resistant to dieldrin, isoform G	w
 RESISTANT	human	Q5JU85	IQSEC2	Q5JU85	66	331	IQ motif and SEC7 domain-containing protein 2 (Brefeldin A r	w
 RESISTANT	human	Q7Z5B4	RIC3	Q7Z5B4	10	93	Protein RIC-3 (Resistant to inhibitor of cholinesterase 3)	w
 RESISTANT	worm	Q09225	nrf-6	Q09225	0	1	Nose resistant to fluoxetine protein 6	w
-RESISTANT	worm	Q09254	har-1	Q09254	0	9	Hemiasterlin resistant protein 1	w
+RESISTANT	worm	Q09254	har-1	Q09254	1	10	Hemiasterlin resistant protein 1	w
 RESISTANT	worm	Q93796	nrf-5	Q93796	0	1	Nose resistant to fluoxetine protein 5	w
 RESISTANT	yeast	P12688	YPK1	P12688	22	98	Serine/threonine-protein kinase YPK1 (EC 2.7.11.1) (Sphingos	w
 RESISTANT	yeast	P32330	DGR2	P32330	3	7	2-deoxy-glucose resistant protein 2	w
@@ -147,9 +148,9 @@ RESPIRATION	yeast	Q05043	RSF1	Q05043	0	1	Respiration factor 1	w
 RESPIRATORY	human	Q06546	GABPA	Q06546	61	501	GA-binding protein alpha chain (GABP subunit alpha) (Nuclear	w
 RESPIRATORY	human	Q06547	GABPB1	Q06547	57	480	GA-binding protein subunit beta-1 (GABP subunit beta-1) (GAB	w
 RESPIRATORY	human	Q16656	NRF1	Q16656	34	492	Nuclear respiratory factor 1 (NRF-1) (Alpha palindromic-bind	w
-RESPIRATORY	human	Q96BR5	COA7	Q96BR5	39	187	Cytochrome c oxidase assembly factor 7 (Beta-lactamase hcp-l	w
+RESPIRATORY	human	Q96BR5	COA7	Q96BR5	46	194	Cytochrome c oxidase assembly factor 7 (Beta-lactamase hcp-l	w
 RESPIRATORY	yeast	P40043	RGI1	P40043	0	10	Respiratory growth induced protein 1	w
-RESPIRATORY	yeast	P40156	RRG9	P40156	0	6	Required for respiratory growth protein 9, mitochondrial	w
+RESPIRATORY	yeast	P40156	RRG9	P40156	1	7	Required for respiratory growth protein 9, mitochondrial	w
 RESPIRATORY	yeast	P40188	RGI2	P40188	0	3	Respiratory growth induced protein 2	w
 RESPIRATORY	yeast	P43551	ZNF1	P43551	0	6	Respiratory transcription factor ZNF1	w
 RESPIRATORY	yeast	P53721	RCF2	P53721	0	33	Respiratory supercomplex factor 2, mitochondrial	w
@@ -230,7 +231,7 @@ RESPONSE	human	Q14994	NR1I3	Q14994	99	453	Nuclear receptor subfamily 1 group I m
 RESPONSE	human	Q14CZ0	HAPSTR1	Q14CZ0	20	559	HUWE1-associated protein modifying stress responses 1 (Telom	w
 RESPONSE	human	Q15424	SAFB	Q15424	62	294	Scaffold attachment factor B1 (SAF-B) (SAF-B1) (HSP27 estrog	w
 RESPONSE	human	Q15742	NAB2	Q15742	99	506	NGFI-A-binding protein 2 (EGR-1-binding protein 2) (Melanoma	w
-RESPONSE	human	Q16548	BCL2A1	Q16548	73	579	Bcl-2-related protein A1 (Bcl-2-like protein 5) (Bcl2-L-5) (	w
+RESPONSE	human	Q16548	BCL2A1	Q16548	90	595	Bcl-2-related protein A1 (Bcl-2-like protein 5) (Bcl2-L-5) (	w
 RESPONSE	human	Q16555	DPYSL2	Q16555	11	280	Dihydropyrimidinase-related protein 2 (DRP-2) (Collapsin res	w
 RESPONSE	human	Q53ET0	CRTC2	Q53ET0	35	114	CREB-regulated transcription coactivator 2 (Transducer of re	w
 RESPONSE	human	Q5T953	IER5L	Q5T953	4	9	Immediate early response gene 5-like protein	w
@@ -348,7 +349,7 @@ RESTIN-III	human	P39059	COL15A1	P39059	8	59	Collagen alpha-1(XV) chain [Cleaved 
 RESTIN-LIKE	human	Q8N3C7	CLIP4	Q8N3C7	14	94	CAP-Gly domain-containing linker protein 4 (Restin-like prot	w
 RESTING	human	P42681	TXK	P42681	114	1315	Tyrosine-protein kinase TXK (EC 2.7.10.2) (Protein-tyrosine 	w
 RESTORATION	human	O60884	DNAJA2	O60884	49	589	DnaJ homolog subfamily A member 2 (Cell cycle progression re	w
-RESTORATION	human	Q969Z0	TBRG4	Q969Z0	28	410	FAST kinase domain-containing protein 4 (Cell cycle progress	w
+RESTORATION	human	Q969Z0	TBRG4	Q969Z0	29	410	FAST kinase domain-containing protein 4 (Cell cycle progress	w
 RESTORATION	human	Q9ULG6	CCPG1	Q9ULG6	22	149	Cell cycle progression protein 1 (Cell cycle progression res	w
 RESTRICTED	human	Q8TDV2	GPR148	Q8TDV2	1	32	Probable G protein-coupled receptor 148 (Brain and testis re	w
 RESTRICTEDLY	human	Q9HC35	EML4	Q9HC35	66	346	Echinoderm microtubule-associated protein-like 4 (EMAP-4) (R	w

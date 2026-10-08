@@ -44,20 +44,36 @@
     "pairsFpr5": 8855,
     "pairsFpr1": 2750
    }
+  },
+  {
+   "id": "mitomatch-7227",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Drosophila melanogaster orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 494,
+    "pairs": 709,
+    "predictions": 709,
+    "runs": 709,
+    "pairsFpr10": 659,
+    "pairsFpr5": 606,
+    "pairsFpr1": 297
+   }
   }
  ],
  "counts": {
   "proteins": 14037,
-  "pairs": 1209253,
-  "predictions": 7536275,
-  "runs": 1617639,
-  "pairsFpr10": 158462,
-  "pairsFpr5": 77116,
-  "pairsFpr1": 12140,
+  "pairs": 1209608,
+  "predictions": 7536984,
+  "runs": 1618348,
+  "pairsFpr10": 158817,
+  "pairsFpr5": 77441,
+  "pairsFpr1": 12293,
   "genes": 13938,
   "constructs": 27978,
-  "pairsInSeveral": 30119,
-  "pairsTested": 1222864
+  "pairsInSeveral": 30473,
+  "pairsTested": 1223219
  },
  "files": {
   "proteins": "proteins.json",

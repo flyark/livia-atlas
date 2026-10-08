@@ -18,7 +18,7 @@ FBGN0083949	fly	FBgn0083949	side-III	Q0KIB0	3	7	Sidestep III, isoform O
 FBGN0083950	fly	FBgn0083950	side-VI	Q0KI85	4	10	Sidestep VI, isoform B	
 FBGN0083951	fly	FBgn0083951	CG34115	Q0E906	5	244	GEO11031p1 (IP16951p) (IP17965p)	
 FBGN0083952	fly	FBgn0083952	CG34116	Q0E8D0	1	6	IP21319p	
-FBGN0083953	fly	FBgn0083953	CG34117	Q0KI97	0	10	Protein FMC1 homolog	
+FBGN0083953	fly	FBgn0083953	CG34117	Q0KI97	2	12	Protein FMC1 homolog	
 FBGN0083956	fly	FBgn0083956	ldd	X2JG15	0	3	Uncharacterized protein, isoform E (EC 3.6.1.3)	
 FBGN0083960	fly	FBgn0083960	CG34124	Q0E8T7	0	0	FI23230p1	
 FBGN0083961	fly	FBgn0083961	CG34125	Q0E8T6	1	36	DAZ-associated protein 2 (Deleted in azoospermia-associated 	
@@ -27,7 +27,7 @@ FBGN0083963	fly	FBgn0083963	Nlg3	Q9VIC6	2	24	Neuroligin 3, isoform B (Neuroligin
 FBGN0083965	fly	FBgn0083965	CG34129	Q9VBG5	25	243	Male accessory gland protein	
 FBGN0083966	fly	FBgn0083966	CG34130	Q0KI07	48	243	IP19836p (IP20036p) (IP20136p)	
 FBGN0083967	fly	FBgn0083967	Muted	Q0KI28	2	11	Biogenesis of lysosome-related organelles complex 1 subunit 	
-FBGN0083968	fly	FBgn0083968	CG34132	Q0E8V7	4	21	Mitochondrial import inner membrane translocase subunit	
+FBGN0083968	fly	FBgn0083968	CG34132	Q0E8V7	5	22	Mitochondrial import inner membrane translocase subunit	
 FBGN0083969	fly	FBgn0083969	CG34133	Q8IMK1	5	15	WD repeat-containing protein 44	
 FBGN0083970	fly	FBgn0083970	CG34134	Q0E8L1	0	0	Uncharacterized protein	
 FBGN0083971	fly	FBgn0083971	CG34135	A0A0B4KGH8	0	1	Uncharacterized protein, isoform D	
@@ -43,7 +43,7 @@ FBGN0083981	fly	FBgn0083981	RunxA	M9PI08	57	351	Runt related A, isoform D
 FBGN0083983	fly	FBgn0083983	mRpL34	Q0E959	1	1	Large ribosomal subunit protein bL34m (39S ribosomal protein	
 FBGN0083984	fly	FBgn0083984	CG34148	A4V381	0	0	Uncharacterized protein, isoform B	
 FBGN0083985	fly	FBgn0083985	CG34149	Q0KI27	46	380	Uncharacterized protein, isoform A (Uncharacterized protein,	
-FBGN0083986	fly	FBgn0083986	CG34150	Q0KI15	1	70	Complex III assembly factor LYRM7 (LYR motif-containing prot	
+FBGN0083986	fly	FBgn0083986	CG34150	Q0KI15	2	71	Complex III assembly factor LYRM7 (LYR motif-containing prot	
 FBGN0083991	fly	FBgn0083991	CG34155	Q0KHY5	0	2	Uncharacterized protein	
 FBGN0083992	fly	FBgn0083992	Mkp	Q9NGL1	138	982	MAP kinase phosphatase-1 (MAP kinase-specific phosphatase, i	
 FBGN0084001	fly	FBgn0084001	Grl40a	M9PDY1	0	1	Uncharacterized protein, isoform C	
@@ -247,7 +247,7 @@ FBGN0085447	fly	FBgn0085447	sif	M9PHI5	0	9	Still life, isoform J
 FBGN0085450	fly	FBgn0085450	Snoo	Q00G30	23	109	Sno oncogene, isoform B (Sno oncogene, isoform C) (Sno oncog	
 FBGN0085451	fly	FBgn0085451	htk	Q9VWP5	0	3	Hat-trick, isoform D	
 FBGN0085452	fly	FBgn0085452	CG34423	E1JGT3	0	0	Uncharacterized protein, isoform B	
-FBGN0085453	fly	FBgn0085453	Mthfs	Q8MLS1	0	3	5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2)	
+FBGN0085453	fly	FBgn0085453	Mthfs	Q8MLS1	1	4	5-formyltetrahydrofolate cyclo-ligase (EC 6.3.3.2)	
 FBGN0085454	fly	FBgn0085454	CG34425	A8JQT2	0	0	Trichohyalin	
 FBGN0085455	fly	FBgn0085455	CG34426	A8JNN8	41	243	Chitin-binding type-2 domain-containing protein	
 FBGN0085456	fly	FBgn0085456	CG34427	A8JNN9	33	244	Chitin-binding type-2 domain-containing protein	
@@ -292,7 +292,7 @@ FBGN0085692	fly	FBgn0085692	CG41561	A8QI20	1	9	Uncharacterized protein
 FBGN0085693	fly	FBgn0085693	CG41562	A8QI32	2	4	Activator of basal transcription 1	
 FBGN0085736	fly	FBgn0085736	CG40472	Q7PL91	4	80	GEO11417p1 (NADH dehydrogenase (Ubiquinone) AGGG subunit, is	
 FBGN0086129	fly	FBgn0086129	snama	Q9XZ21	11	56	Something that sticks like glue, isoform A	
-FBGN0086130	fly	FBgn0086130	Dbp21E2	Q9VPT3	3	79	DEAD box protein 21E2 (LD21669p)	
+FBGN0086130	fly	FBgn0086130	Dbp21E2	Q9VPT3	4	80	DEAD box protein 21E2 (LD21669p)	
 FBGN0086134	fly	FBgn0086134	Prosalpha2	P40301	13	160	Proteasome subunit alpha type-2 (PROS-Dm25) (Proteasome 25 k	
 FBGN0086251	fly	FBgn0086251	del	Q9VIF5	2	8	Protein deadlock	
 FBGN0086253	fly	FBgn0086253	rumi	Q8T045	1	9	O-glucosyltransferase rumi (EC 2.4.1.-)	

@@ -21,7 +21,7 @@ P27133	dictyostelium-discoideum	P27133	corA	P27133	1	50	Coronin-A
 P27135	salmonella-typhimurium	P27135	rhaT	P27135	0	1	L-rhamnose-proton symporter	
 P27139	rattus-norvegicus	P27139	Ca2	P27139	1	26	Carbonic anhydrase 2	
 P27140	arabidopsis-thaliana	P27140	BCA1	P27140	0	10	Beta carbonic anhydrase 1, chloroplastic	
-P27144	human	P27144	AK4	P27144	3	207	Adenylate kinase 4, mitochondrial (EC 2.7.4.4) (EC 2.7.4.6) 	
+P27144	human	P27144	AK4	P27144	11	215	Adenylate kinase 4, mitochondrial (EC 2.7.4.4) (EC 2.7.4.6) 	
 P27158	rattus-norvegicus	P27158	Tk1	P27158	1	23	Thymidine kinase, cytosolic	
 P27169	human	P27169	PON1	P27169	29	350	Serum paraoxonase/arylesterase 1 (PON 1) (EC 3.1.1.2) (EC 3.	
 P27194	virus	P27194	Segment 3	P27194	1	7	Polymerase acidic protein	
@@ -90,7 +90,7 @@ P27306	escherichia-coli-83333	P27306	sthA	P27306	0	9	Soluble pyridine nucleotide
 P27311	virus	P27311		P27311	2	45	Early E3A 12.5 kDa protein	
 P27323	arabidopsis-thaliana	P27323	HSP90-1	P27323	31	359	Heat shock protein 90-1	
 P27324	zea-mays	P27324	ycf3	P27324	10	103	Photosystem I assembly protein Ycf3	
-P27338	human	P27338	MAOB	P27338	6	148	Amine oxidase [flavin-containing] B (EC 1.4.3.21) (EC 1.4.3.	
+P27338	human	P27338	MAOB	P27338	7	149	Amine oxidase [flavin-containing] B (EC 1.4.3.21) (EC 1.4.3.	
 P27344	yeast	P27344	DPB3	P27344	6	46	DNA polymerase epsilon subunit C	
 P27347	zea-mays	P27347	MNB1B	P27347	3	118	DNA-binding protein MNB1B	
 P27348	human	P27348	YWHAQ	P27348	443	1430	14-3-3 protein theta (14-3-3 protein T-cell) (14-3-3 protein	
@@ -206,8 +206,8 @@ P27682	rattus-norvegicus	P27682	Scg5	P27682	1	1	Neuroendocrine protein 7B2
 P27685	dictyostelium-discoideum	P27685	rps2	P27685	9	282	Small ribosomal subunit protein uS5	
 P27692	yeast	P27692	SPT5	P27692	14	252	Transcription elongation factor SPT5	
 P27694	human	P27694	RPA1	P27694	108	1591	Replication protein A 70 kDa DNA-binding subunit (RP-A p70) 	
-P27695	human	P27695	APEX1	P27695	83	1504	DNA repair nuclease/redox regulator APEX1 (EC 3.1.11.2) (EC 	
-P27697	yeast	P27697	COQ8	P27697	0	36	Atypical kinase COQ8, mitochondrial (EC 2.7.-.-) (Activity o	
+P27695	human	P27695	APEX1	P27695	90	1510	DNA repair nuclease/redox regulator APEX1 (EC 3.1.11.2) (EC 	
+P27697	yeast	P27697	COQ8	P27697	2	38	Atypical kinase COQ8, mitochondrial (EC 2.7.-.-) (Activity o	
 P27699	mus-musculus	P27699	Crem	P27699	8	22	cAMP-responsive element modulator	
 P27701	human	P27701	CD82	P27701	6	198	CD82 antigen (C33 antigen) (IA4) (Inducible membrane protein	
 P27704	rattus-norvegicus	P27704	Mapk6	P27704	8	43	Mitogen-activated protein kinase 6	
@@ -231,7 +231,7 @@ P27787	zea-mays	P27787	FDX1	P27787	16	125	Ferredoxin-1, chloroplastic
 P27788	zea-mays	P27788	FDX3	P27788	13	121	Ferredoxin-3, chloroplastic	
 P27789	zea-mays	P27789	FDX5	P27789	14	118	Ferredoxin-5, chloroplastic	
 P27790	mus-musculus	P27790	Cenpb	P27790	1	10	Major centromere autoantigen B	
-P27791	rattus-norvegicus	P27791	Prkaca	P27791	25	123	cAMP-dependent protein kinase catalytic subunit alpha	
+P27791	rattus-norvegicus	P27791	Prkaca	P27791	49	149	cAMP-dependent protein kinase catalytic subunit alpha	
 P27792	mus-musculus	P27792	Lyl1	P27792	7	21	Protein lyl-1	
 P27796	yeast	P27796	POT1	P27796	1	32	3-ketoacyl-CoA thiolase, peroxisomal	
 P27797	human	P27797	CALR	P27797	71	768	Calreticulin (CRP55) (Calregulin) (Endoplasmic reticulum res	
@@ -256,7 +256,7 @@ P27842	escherichia-coli-83333	P27842	yigF	P27842	0	1	Uncharacterized protein Yig
 P27844	escherichia-coli-83333	P27844	rarD	P27844	0	1	Protein RarD	
 P27859	escherichia-coli-83333	P27859	tatD	P27859	0	1	3-5 ssDNA/RNA exonuclease TatD	
 P27862	escherichia-coli-83333	P27862	yigZ	P27862	0	1	IMPACT family member YigZ	
-P27864	fly	FBgn0004584	Rrp1	B7YZZ9	6	119		
+P27864	fly	FBgn0004584	Rrp1	B7YZZ9	6	120		
 P27867	rattus-norvegicus	P27867	Sord	P27867	0	10	Sorbitol dehydrogenase	
 P27870	mus-musculus	P27870	Vav1	P27870	8	120	Proto-oncogene vav	
 P27881	rattus-norvegicus	P27881	Hk2	P27881	0	40	Hexokinase-2	

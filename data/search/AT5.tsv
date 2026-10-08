@@ -2,7 +2,9 @@ AT5	arabidopsis-thaliana	Q9FJ76	AT5	Q9FJ76	0	16	Probable long-chain-alcohol O-fa
 AT59	arabidopsis-thaliana	Q9M9S2	AT59	Q9M9S2	1	10	Probable pectate lyase 3	
 AT591	human	P11161	EGR2	P11161	95	475	E3 SUMO-protein ligase EGR2 (EC 2.3.2.-) (AT591) (E3 SUMO-pr	w
 AT5EL_HUMAN	human	Q5VTU8	ATP5F1EP2	Q5VTU8	7	26		
+AT5F1_DROME	fly	FBgn0019644	ATPsynB	Q94516	13	129		
 AT5F1_HUMAN	human	P24539	ATP5PB	P24539	25	324		
+AT5F2_CAEEL	worm	Q19126	asb-2	Q19126	6	85		
 AT5G01030	arabidopsis-thaliana	Q9LFD3	At5g01030	Q9LFD3	4	37	Enolase, putative (DUF3527)	
 AT5G01200	arabidopsis-thaliana	Q9LFB6	At5g01200	Q9LFB6	2	9	Duplicated homeodomain-like superfamily protein	
 AT5G01210	arabidopsis-thaliana	Q9LFB5	At5g01210	Q9LFB5	0	3	AT5g01210/F7J8_190	
@@ -28,7 +30,7 @@ AT5G02240	arabidopsis-thaliana	Q94EG6	At5g02240	Q94EG6	4	74	Uncharacterized prot
 AT5G02440	arabidopsis-thaliana	Q9LZ58	At5g02440	Q9LZ58	2	56	60S ribosomal protein L36	
 AT5G02480	arabidopsis-thaliana	Q9C5N0	At5g02480	Q9C5N0	0	8	AT5g02480/T22P11_70	
 AT5G02510	arabidopsis-thaliana	A0A1P8BHA2	At5g02510	A0A1P8BHA2	0	8	UDP-glucose 6-dehydrogenase	
-AT5G02540	arabidopsis-thaliana	F4KCF2	At5g02540	F4KCF2	0	1	NAD(P)-binding Rossmann-fold superfamily protein	
+AT5G02540	arabidopsis-thaliana	F4KCF2	At5g02540	F4KCF2	1	2	NAD(P)-binding Rossmann-fold superfamily protein	
 AT5G02560	arabidopsis-thaliana	Q9LZ46	At5g02560	Q9LZ46	32	177	Probable histone H2A.4	
 AT5G02570	arabidopsis-thaliana	Q9LZ45	At5g02570	Q9LZ45	26	177	Histone H2B.9	
 AT5G02590	arabidopsis-thaliana	Q8LEV0	At5g02590	Q8LEV0	36	460	Tetratricopeptide repeat (TPR)-like superfamily protein	
@@ -56,6 +58,7 @@ AT5G03795	arabidopsis-thaliana	Q9FFN2	At5g03795	Q9FFN2	0	2	Probable glycosyltran
 AT5G03810	arabidopsis-thaliana	Q9FFN0	At5g03810	Q9FFN0	0	3	GDSL esterase/lipase At5g03810	
 AT5G03820	arabidopsis-thaliana	Q9LZC5	At5g03820	Q9LZC5	0	3	GDSL esterase/lipase At5g03820	
 AT5G03900	arabidopsis-thaliana	Q8GW20	At5g03900	Q8GW20	4	196	Uncharacterized protein At5g03900, chloroplastic	
+AT5G03905	arabidopsis-thaliana	Q8LCY2	At5g03905	Q8LCY2	2	2	Iron-sulfur assembly protein IscA-like 2, mitochondrial	
 AT5G03970	arabidopsis-thaliana	Q94A64	At5g03970	Q94A64	10	41	F-box protein At5g03970	
 AT5G03980	arabidopsis-thaliana	Q9LZB2	At5g03980	Q9LZB2	0	3	GDSL esterase/lipase At5g03980	
 AT5G03990	arabidopsis-thaliana	Q93XY4	At5g03990	Q93XY4	1	32	FK506-binding-like protein	
@@ -88,7 +91,7 @@ AT5G06050	arabidopsis-thaliana	Q9FG39	At5g06050	Q9FG39	3	55	Probable methyltrans
 AT5G06060	arabidopsis-thaliana	Q9LHT0	At5g06060	Q9LHT0	0	8	Tropinone reductase homolog At5g06060	
 AT5G06120	arabidopsis-thaliana	F4K2C1	At5g06120	F4K2C1	1	5	ARM repeat superfamily protein	
 AT5G06250	arabidopsis-thaliana	Q9FNI3	At5g06250	Q9FNI3	0	2	B3 domain-containing protein At5g06250	
-AT5G06290	arabidopsis-thaliana	Q9C5R8	At5g06290	Q9C5R8	1	150	2-Cys peroxiredoxin BAS1-like, chloroplastic	
+AT5G06290	arabidopsis-thaliana	Q9C5R8	At5g06290	Q9C5R8	3	152	2-Cys peroxiredoxin BAS1-like, chloroplastic	
 AT5G06420	arabidopsis-thaliana	Q9FNG6	At5g06420	Q9FNG6	8	145	Zinc finger CCCH domain-containing protein 51	
 AT5G06520	arabidopsis-thaliana	Q9FG18	At5g06520	Q9FG18	3	146	Gb|AAF63169.1	
 AT5G06590	arabidopsis-thaliana	Q8GYE1	At5g06590	Q8GYE1	2	4	Uncharacterized protein At5g06590	
@@ -117,17 +120,17 @@ AT5G08005	arabidopsis-thaliana	A0A1P8BHH9	At5g08005	A0A1P8BHH9	0	1	Flavonoid pro
 AT5G08100	arabidopsis-thaliana	P50287	At5g08100	P50287	1	4	Isoaspartyl peptidase/L-asparaginase 1	
 AT5G08139	arabidopsis-thaliana	Q8GYG0	At5g08139	Q8GYG0	0	1	RING-type E3 ubiquitin transferase	
 AT5G08180	arabidopsis-thaliana	Q9LEY9	At5g08180	Q9LEY9	38	750	H/ACA ribonucleoprotein complex subunit 2-like protein	
-AT5G08300	arabidopsis-thaliana	P68209	At5g08300	P68209	4	36	Succinate--CoA ligase	
+AT5G08300	arabidopsis-thaliana	P68209	At5g08300	P68209	6	38	Succinate--CoA ligase	
 AT5G08320	arabidopsis-thaliana	Q9FTA3	At5g08320	Q9FTA3	0	3	At5g08320	
 AT5G08391	arabidopsis-thaliana	Q8LBX6	At5g08391	Q8LBX6	0	22	Transmembrane protein, putative (DUF 3339)	
 AT5G08420	arabidopsis-thaliana	Q9FT93	At5g08420	Q9FT93	35	352	KRR1 small subunit processome component	
 AT5G08430	arabidopsis-thaliana	Q9FT92	At5g08430	Q9FT92	5	56	Uncharacterized protein At5g08430	
 AT5G08460	arabidopsis-thaliana	Q9FNP2	At5g08460	Q9FNP2	0	13	GDSL esterase/lipase At5g08460	
-AT5G08530	arabidopsis-thaliana	Q9FNN5	At5g08530	Q9FNN5	15	203	NADH dehydrogenase	
+AT5G08530	arabidopsis-thaliana	Q9FNN5	At5g08530	Q9FNN5	18	206	NADH dehydrogenase	
 AT5G08535	arabidopsis-thaliana	Q8GXG0	At5g08535	Q8GXG0	4	12	D111/G-patch domain-containing protein	
 AT5G08565	arabidopsis-thaliana	Q8LCQ3	At5g08565	Q8LCQ3	3	164	Transcription elongation factor SPT4 homolog 1	
 AT5G08650	arabidopsis-thaliana	Q9FNM5	At5g08650	Q9FNM5	2	190	Translation factor GUF1 homolog, chloroplastic	
-AT5G08670	arabidopsis-thaliana	P83483	At5g08670	P83483	10	126	ATP synthase subunit beta-1, mitochondrial	
+AT5G08670	arabidopsis-thaliana	P83483	At5g08670	P83483	16	130	ATP synthase subunit beta-1, mitochondrial	
 AT5G08680	arabidopsis-thaliana	Q9C5A9	At5g08680	Q9C5A9	11	121	ATP synthase subunit beta-3, mitochondrial	
 AT5G08690	arabidopsis-thaliana	P83484	At5g08690	P83484	10	184	ATP synthase subunit beta-2, mitochondrial	
 AT5G08695	arabidopsis-thaliana	F4KCG5	At5g08695	F4KCG5	2	38	RNA-binding (RRM/RBD/RNP motifs) family protein	
@@ -183,7 +186,7 @@ AT5G11620	arabidopsis-thaliana	Q9LYG8	At5g11620	Q9LYG8	0	3	PHD family protein
 AT5G11680	arabidopsis-thaliana	Q9LYG2	At5g11680	Q9LYG2	1	70	Classical AGP protein	
 AT5G11700	arabidopsis-thaliana	F4JXY6	At5g11700	F4JXY6	2	48	Ephrin type-B receptor	
 AT5G11750	arabidopsis-thaliana	A0A1P8BFU6	At5g11750	A0A1P8BFU6	40	336	Ribosomal protein L19 family protein	
-AT5G11770	arabidopsis-thaliana	Q42577	At5g11770	Q42577	15	214	NADH dehydrogenase	
+AT5G11770	arabidopsis-thaliana	Q42577	At5g11770	Q42577	18	216	NADH dehydrogenase	
 AT5G11870	arabidopsis-thaliana	F4JZD5	At5g11870	F4JZD5	0	3	Alkaline phytoceramidase (APHC)	
 AT5G11900	arabidopsis-thaliana	Q8VZK2	At5g11900	Q8VZK2	15	213	Translation machinery-associated protein 22	
 AT5G11990	arabidopsis-thaliana	Q9LYH4	At5g11990	Q9LYH4	0	29	Proline-rich family protein	
@@ -347,7 +350,7 @@ AT5G19900	arabidopsis-thaliana	B9DF92	At5g19900	B9DF92	0	1	AT5G19900 protein
 AT5G19920	arabidopsis-thaliana	Q8GX62	At5g19920	Q8GX62	10	222	At5g19920	
 AT5G19950	arabidopsis-thaliana	Q8L502	At5g19950	Q8L502	4	94	AT5G19950 protein	
 AT5G19960	arabidopsis-thaliana	Q8RWF8	At5g19960	Q8RWF8	4	27	Glycine-rich RNA-binding protein, putative	
-AT5G1_HUMAN	human	P05496	ATP5MC1	P05496	12	149		
+AT5G1_HUMAN	human	P05496	ATP5MC1	P05496	13	150		
 AT5G20030	arabidopsis-thaliana	Q8LES5	At5g20030	Q8LES5	1	8	At5g20030	
 AT5G20045	arabidopsis-thaliana	Q8LB93	At5g20045	Q8LB93	0	42	Transmembrane protein	
 AT5G20060	arabidopsis-thaliana	Q8L9X1	At5g20060	Q8L9X1	0	2	Alpha/beta-Hydrolases superfamily protein	
@@ -387,7 +390,7 @@ AT5G23390	arabidopsis-thaliana	Q8RX89	At5g23390	Q8RX89	0	68	AT5g23390/T32G24_2
 AT5G23400	arabidopsis-thaliana	Q9FHL8	At5g23400	Q9FHL8	2	16	Disease resistance protein-like	
 AT5G23470	arabidopsis-thaliana	Q9FHL1	At5g23470	Q9FHL1	4	59	RNA polymerase II C-terminal domain phosphatase-like	
 AT5G23480	arabidopsis-thaliana	A0A1P8B9E3	At5g23480	A0A1P8B9E3	2	55	SWIB/MDM2, Plus-3 and GYF domain-containing protein	
-AT5G23535	arabidopsis-thaliana	Q9LT09	At5g23535	Q9LT09	0	87	50S ribosomal protein L24	
+AT5G23535	arabidopsis-thaliana	Q9LT09	At5g23535	Q9LT09	1	87	50S ribosomal protein L24	
 AT5G23575	arabidopsis-thaliana	Q8VZJ5	At5g23575	Q8VZJ5	0	2	AT5g08500/MAH20_6	
 AT5G24010	arabidopsis-thaliana	Q9FLW0	At5g24010	Q9FLW0	0	1	Probable receptor-like protein kinase At5g24010	
 AT5G24040	arabidopsis-thaliana	Q9FLV8	At5g24040	Q9FLV8	0	5	Putative F-box/kelch-repeat protein At5g24040	
@@ -498,7 +501,7 @@ AT5G28823	arabidopsis-thaliana	F4KA18	At5g28823	F4KA18	0	1	DUF4283 domain-contai
 AT5G28840	arabidopsis-thaliana	Q93VR3	At5g28840	Q93VR3	0	152	GDP-mannose 3,5-epimerase	
 AT5G29560	arabidopsis-thaliana	F4KBH6	At5g29560	F4KBH6	0	23	Caleosin-related family protein	
 AT5G29624	arabidopsis-thaliana	F4KBH8	At5g29624	F4KBH8	0	2	Cysteine/Histidine-rich C1 domain family protein	
-AT5G2_HUMAN	human	Q06055	ATP5MC2	Q06055	5	89		
+AT5G2_HUMAN	human	Q06055	ATP5MC2	Q06055	6	90		
 AT5G30490	arabidopsis-thaliana	Q8GX81	At5g30490	Q8GX81	2	32	At5g30145	
 AT5G30495	arabidopsis-thaliana	F4KCY1	At5g30495	F4KCY1	10	180	Fcf2 pre-rRNA processing protein	
 AT5G31412	arabidopsis-thaliana	F4KCY3	At5g31412	F4KCY3	0	1	HAT transposon superfamily protein	
@@ -580,7 +583,7 @@ AT5G39570	arabidopsis-thaliana	Q9FKA5	At5g39570	Q9FKA5	0	12	Uncharacterized prot
 AT5G39715	arabidopsis-thaliana	A0A1P8BGM4	At5g39715	A0A1P8BGM4	0	2	Lysine histidine transporter-like protein	
 AT5G39780	arabidopsis-thaliana	A0A1P8BD72	At5g39780	A0A1P8BD72	1	5	Ribosomal protein L34Ae	
 AT5G39840	arabidopsis-thaliana	F4KFV7	At5g39840	F4KFV7	3	69	DExH-box ATP-dependent RNA helicase DExH18, mitochondrial	
-AT5G39900	arabidopsis-thaliana	Q9FLE4	At5g39900	Q9FLE4	1	186	Translation factor GUF1 homolog, mitochondrial	
+AT5G39900	arabidopsis-thaliana	Q9FLE4	At5g39900	Q9FLE4	2	187	Translation factor GUF1 homolog, mitochondrial	
 AT5G3_HUMAN	human	P48201	ATP5MC3	P48201	11	113		
 AT5G40300	arabidopsis-thaliana	Q9FNE8	At5g40300	Q9FNE8	0	9	CASP-like protein 4A1	
 AT5G40420	arabidopsis-thaliana	Q39165	At5g40420	Q39165	0	4	Oleosin 21.2 kDa	
@@ -757,7 +760,7 @@ AT5G52530	arabidopsis-thaliana	Q9FGR1	At5g52530	Q9FGR1	0	1	Dentin sialophosphopr
 AT5G52547	arabidopsis-thaliana	Q6IDA3	At5g52547	Q6IDA3	0	9	At5g52547	
 AT5G52550	arabidopsis-thaliana	Q940C2	At5g52550	Q940C2	0	1	AT5g52550/F6N7_3	
 AT5G52580	arabidopsis-thaliana	F4KG91	At5g52580	F4KG91	2	2	TBC1 domain family member 15	
-AT5G52840	arabidopsis-thaliana	Q9FLX7	At5g52840	Q9FLX7	5	167	Probable NADH dehydrogenase	
+AT5G52840	arabidopsis-thaliana	Q9FLX7	At5g52840	Q9FLX7	7	169	Probable NADH dehydrogenase	
 AT5G52880	arabidopsis-thaliana	Q9FLX3	At5g52880	Q9FLX3	19	28	F-box protein At5g52880	
 AT5G52882	arabidopsis-thaliana	F4KHN5	At5g52882	F4KHN5	2	85	P-loop containing nucleoside triphosphate hydrolases superfa	
 AT5G52970	arabidopsis-thaliana	Q9LVV5	At5g52970	Q9LVV5	0	1	Thylakoid lumenal 15.0 kDa protein 2, chloroplastic	
@@ -810,7 +813,7 @@ AT5G56890	arabidopsis-thaliana	F4K946	At5g56890	F4K946	0	5	Protein kinase superf
 AT5G56900	arabidopsis-thaliana	Q84WU9	At5g56900	Q84WU9	4	17	Zinc finger CCCH domain-containing protein 64	
 AT5G57100	arabidopsis-thaliana	Q9LU76	At5g57100	Q9LU76	0	2	Nucleotide-sugar uncharacterized transporter 1	
 AT5G57565	arabidopsis-thaliana	F4KC10	At5g57565	F4KC10	1	26	Protein kinase superfamily protein	
-AT5G58005	arabidopsis-thaliana	Q8RXH9	At5g58005	Q8RXH9	2	30	AT5G58005 protein	
+AT5G58005	arabidopsis-thaliana	Q8RXH9	At5g58005	Q8RXH9	4	32	AT5G58005 protein	
 AT5G58090	arabidopsis-thaliana	Q93Z08	At5g58090	Q93Z08	0	34	Glucan endo-1,3-beta-glucosidase 6	
 AT5G58100	arabidopsis-thaliana	F4KDI6	At5g58100	F4KDI6	0	1	Transmembrane protein	
 AT5G58110	arabidopsis-thaliana	Q9FGT3	At5g58110	Q9FGT3	7	53	AT5g58110/k21l19_90	

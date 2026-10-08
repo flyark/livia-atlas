@@ -37,18 +37,34 @@
     "pairsFpr5": 20179,
     "pairsFpr1": 6810
    }
+  },
+  {
+   "id": "mitomatch-7955",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Danio rerio orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 796,
+    "pairs": 1577,
+    "predictions": 1577,
+    "runs": 1577,
+    "pairsFpr10": 1436,
+    "pairsFpr5": 1191,
+    "pairsFpr1": 532
+   }
   }
  ],
  "counts": {
-  "proteins": 12749,
-  "pairs": 268057,
-  "predictions": 285194,
-  "runs": 268082,
-  "pairsFpr10": 31651,
-  "pairsFpr5": 20737,
-  "pairsFpr1": 6871,
-  "pairsInSeveral": 25,
-  "pairsTested": 268057
+  "proteins": 13108,
+  "pairs": 269442,
+  "predictions": 286771,
+  "runs": 269659,
+  "pairsFpr10": 32943,
+  "pairsFpr5": 21795,
+  "pairsFpr1": 7331,
+  "pairsInSeveral": 217,
+  "pairsTested": 269442
  },
  "files": {
   "proteins": "proteins.json",

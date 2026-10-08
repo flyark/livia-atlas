@@ -46,7 +46,7 @@ PROTEI	human	Q9H5J8	TAF1D	Q9H5J8	76	529	TATA box-binding protein-associated fact
 PROTEI	human	Q9HBX3	SND1-IT1	Q9HBX3	1	6	Uncharacterized protein encoded by SND1-IT1 (Brain and nasop	w
 PROTEI	human	Q9HCN3	PGAP6	Q9HCN3	3	62	Post-GPI attachment to proteins factor 6 (EC 3.1.1.4) (GPI p	w
 PROTEI	human	Q9NP78	ABCB9	Q9NP78	9	74	ABC-type oligopeptide transporter ABCB9 (EC 7.4.2.6) (ATP-bi	w
-PROTEI	human	Q9NTG7	SIRT3	Q9NTG7	126	497	NAD-dependent protein deacetylase sirtuin-3, mitochondrial (	w
+PROTEI	human	Q9NTG7	SIRT3	Q9NTG7	134	504	NAD-dependent protein deacetylase sirtuin-3, mitochondrial (	w
 PROTEI	human	Q9NUL5	SHFL	Q9NUL5	1	141	Shiftless antiviral inhibitor of ribosomal frameshifting pro	w
 PROTEI	human	Q9NVW2	RLIM	Q9NVW2	40	213	E3 ubiquitin-protein ligase RLIM (EC 2.3.2.27) (LIM domain-i	w
 PROTEI	human	Q9Y2D5	PALM2AKAP2	Q9Y2D5	26	137	PALM2-AKAP2 fusion protein (A-kinase anchor protein 2) (AKAP	w
@@ -62,7 +62,7 @@ PROTEIN-2	fly	FBgn0034423	tbrd-2	Q4V5A7	3	28	IP14655p (Testis-specifically expre
 PROTEIN-2	worm	Q95QQ9	C49H3.6	Q95QQ9	0	12	Cortactin-binding protein-2 N-terminal domain-containing pro	w
 PROTEIN-22	human	Q14980	NUMA1	Q14980	36	419	Nuclear mitotic apparatus protein 1 (Nuclear matrix protein-	w
 PROTEIN-3	fly	FBgn0050417	tbrd-3	Q9W1S2	7	29	IP01291p (Testis-specifically expressed bromodomain containi	w
-PROTEIN-3	human	P55916	UCP3	P55916	4	81	Putative mitochondrial transporter UCP3 (Solute carrier fami	w
+PROTEIN-3	human	P55916	UCP3	P55916	5	82	Putative mitochondrial transporter UCP3 (Solute carrier fami	w
 PROTEIN-30	fly	FBgn0038257	smp-30	H8F4T3	0	4	MIP34848p1 (Senescence marker protein-30, isoform C (EC 3.1.	w
 PROTEIN-43	fly	FBgn0025790	TBPH	Q8SXP8	17	186	GH09868p (RH39704p) (TAR DNA-binding protein-43 homolog, iso	w
 PROTEIN-A	zebrafish	Q4V8V1	brms1la	Q4V8V1	11	44	Breast cancer metastasis-suppressor 1-like protein-A	w
@@ -458,11 +458,11 @@ PROTEIN-INTERACTING	human	O14893	GEMIN2	O14893	20	244	Gem-associated protein 2 (
 PROTEIN-INTERACTING	human	O43414	ERI3	O43414	15	108	ERI1 exoribonuclease 3 (EC 3.1.-.-) (Prion interactor 1) (Pr	w
 PROTEIN-INTERACTING	human	O43516	WIPF1	O43516	33	114	WAS/WASL-interacting protein family member 1 (Protein PRPL-2	w
 PROTEIN-INTERACTING	human	O60229	KALRN	O60229	3	95	Kalirin (EC 2.7.11.1) (Huntingtin-associated protein-interac	w
-PROTEIN-INTERACTING	human	O60238	BNIP3L	O60238	25	135	BCL2/adenovirus E1B 19 kDa protein-interacting protein 3-lik	w
+PROTEIN-INTERACTING	human	O60238	BNIP3L	O60238	32	141	BCL2/adenovirus E1B 19 kDa protein-interacting protein 3-lik	w
 PROTEIN-INTERACTING	human	P53801	PTTG1IP	P53801	19	147	Pituitary tumor-transforming gene 1 protein-interacting prot	w
 PROTEIN-INTERACTING	human	Q12981	BNIP1	Q12981	20	129	Vesicle transport protein SEC20 (BCL2/adenovirus E1B 19 kDa 	w
 PROTEIN-INTERACTING	human	Q12982	BNIP2	Q12982	15	131	BCL2/adenovirus E1B 19 kDa protein-interacting protein 2	w
-PROTEIN-INTERACTING	human	Q12983	BNIP3	Q12983	45	202	BCL2/adenovirus E1B 19 kDa protein-interacting protein 3	w
+PROTEIN-INTERACTING	human	Q12983	BNIP3	Q12983	52	209	BCL2/adenovirus E1B 19 kDa protein-interacting protein 3	w
 PROTEIN-INTERACTING	human	Q53HC9	EIPR1	Q53HC9	14	115	EARP and GARP complex-interacting protein 1 (Endosome-associ	w
 PROTEIN-INTERACTING	human	Q9BPZ3	PAIP2	Q9BPZ3	26	146	Polyadenylate-binding protein-interacting protein 2 (PABP-in	w
 PROTEIN-INTERACTING	human	Q9H074	PAIP1	Q9H074	36	205	Polyadenylate-binding protein-interacting protein 1 (PABP-in	w
@@ -470,6 +470,7 @@ PROTEIN-INTERACTING	human	Q9UHX1	PUF60	Q9UHX1	52	483	Poly(U)-binding-splicing fa
 PROTEIN-INTERACTING	human	Q9ULR5	PAIP2B	Q9ULR5	21	102	Polyadenylate-binding protein-interacting protein 2B (PABP-i	w
 PROTEIN-INTERACTING	human	Q9Y230	RUVBL2	Q9Y230	21	858	RuvB-like 2 (EC 3.6.4.12) (48 kDa TATA box-binding protein-i	w
 PROTEIN-INTERACTING	human	Q9Y265	RUVBL1	Q9Y265	29	859	RuvB-like 1 (EC 3.6.4.12) (49 kDa TATA box-binding protein-i	w
+PROTEIN-INTERACTING	zebrafish	A0A8M2BKA1	bnip3	A0A8M2BKA1	5	6	BCL2/adenovirus E1B 19 kDa protein-interacting protein 3 iso	w
 PROTEIN-INTERACTING	zebrafish	Q6DBW2	paip1	Q6DBW2	17	120	Polyadenylate-binding protein-interacting protein 1	w
 PROTEIN-KINASE	human	Q16513	PKN2	Q16513	60	443	Serine/threonine-protein kinase N2 (EC 2.7.11.13) (PKN gamma	w
 PROTEIN-KINASE	human	Q6P5Z2	PKN3	Q6P5Z2	43	310	Serine/threonine-protein kinase N3 (EC 2.7.11.13) (Protein k	w
@@ -495,7 +496,7 @@ PROTEIN-LIKE	fly	FBgn0022238	lolal	Q7KRI2	42	428	Longitudinals lacking protein-l
 PROTEIN-LIKE	fly	FBgn0027950	MBD-like	A0A0B4KGZ0	95	427	Methyl-CpG binding domain protein-like, isoform C	w
 PROTEIN-LIKE	fly	FBgn0031617	CG15635	Q9VR13	37	196	Basic proline-rich protein-like	w
 PROTEIN-LIKE	fly	FBgn0032882	Ns4	Q9VIJ9	0	103	Guanine nucleotide-binding protein-like 1	w
-PROTEIN-LIKE	fly	FBgn0032986	Nubpl	Q9V9M8	0	23	Iron-sulfur cluster transfer protein Nubpl (Nucleotide bindi	w
+PROTEIN-LIKE	fly	FBgn0032986	Nubpl	Q9V9M8	1	24	Iron-sulfur cluster transfer protein Nubpl (Nucleotide bindi	w
 PROTEIN-LIKE	fly	FBgn0035028	Start1	Q9W145	1	13	Steroidogenic acute regulatory protein-like	w
 PROTEIN-LIKE	fly	FBgn0035944	CG5021	Q8IQC1	3	15	Uncharacterized Golgi apparatus membrane protein-like protei	w
 PROTEIN-LIKE	fly	FBgn0036036	CG14174	Q9VT39	0	0	Nucleolus and neural progenitor protein-like N-terminal doma	w
@@ -517,7 +518,7 @@ PROTEIN-LIKE	human	A8MXV6	CDRT15L2	A8MXV6	0	3	CMT1A duplicated region transcript
 PROTEIN-LIKE	human	F8VTS6	RFPL4AL1	F8VTS6	8	38	Ret finger protein-like 4A-like protein 1	w
 PROTEIN-LIKE	human	O00423	EML1	O00423	36	177	Echinoderm microtubule-associated protein-like 1 (EMAP-1) (H	w
 PROTEIN-LIKE	human	O15381	NVL	O15381	12	410	Nuclear valosin-containing protein-like (NVLp) (Nuclear VCP-	w
-PROTEIN-LIKE	human	O43824	GTPBP6	O43824	6	213	Putative GTP-binding protein 6 (Pseudoautosomal GTP-binding 	w
+PROTEIN-LIKE	human	O43824	GTPBP6	O43824	7	214	Putative GTP-binding protein 6 (Pseudoautosomal GTP-binding 	w
 PROTEIN-LIKE	human	O60519	CREBL2	O60519	70	378	cAMP-responsive element-binding protein-like 2	w
 PROTEIN-LIKE	human	O75200	NPIPB7	O75200	4	10	Nuclear pore complex-interacting protein family member B7 (N	w
 PROTEIN-LIKE	human	O75298	RTN2	O75298	6	63	Reticulon-2 (Neuroendocrine-specific protein-like 1) (NSP-li	w
@@ -568,7 +569,7 @@ PROTEIN-LIKE	human	Q86XD8	ZFAND4	Q86XD8	38	361	AN1-type zinc finger protein 4 (A
 PROTEIN-LIKE	human	Q8IUQ0	CLVS1	Q8IUQ0	2	48	Clavesin-1 (Cellular retinaldehyde-binding protein-like) (Re	w
 PROTEIN-LIKE	human	Q8IVE0	CROCCP3	Q8IVE0	1	6	Putative ciliary rootlet coiled-coil protein-like 2 protein 	w
 PROTEIN-LIKE	human	Q8IVH2	FOXP4	Q8IVH2	24	115	Forkhead box protein P4 (Fork head-related protein-like A)	w
-PROTEIN-LIKE	human	Q8IXI2	RHOT1	Q8IXI2	7	87	Mitochondrial Rho GTPase 1 (MIRO-1) (hMiro-1) (EC 3.6.5.-) (	w
+PROTEIN-LIKE	human	Q8IXI2	RHOT1	Q8IXI2	15	95	Mitochondrial Rho GTPase 1 (MIRO-1) (hMiro-1) (EC 3.6.5.-) (	w
 PROTEIN-LIKE	human	Q8IYN2	TCEAL8	Q8IYN2	17	49	Transcription elongation factor A protein-like 8 (TCEA-like 	w
 PROTEIN-LIKE	human	Q8N434	SVOPL	Q8N434	0	63	Putative transporter SVOPL (SV2-related protein-like) (SVOP-	w
 PROTEIN-LIKE	human	Q8N4F0	BPIFB2	Q8N4F0	6	94	BPI fold-containing family B member 2 (Bactericidal/permeabi	w
@@ -581,7 +582,7 @@ PROTEIN-LIKE	human	Q8NEA9	GMCL2	Q8NEA9	40	364	Germ cell-less protein-like 2 (Ger
 PROTEIN-LIKE	human	Q8NEM8	AGBL3	Q8NEM8	9	62	Cytosolic carboxypeptidase 3 (EC 3.4.17.-) (ATP/GTP-binding 	w
 PROTEIN-LIKE	human	Q8NFQ5	BPIFB6	Q8NFQ5	2	37	BPI fold-containing family B member 6 (Bactericidal/permeabi	w
 PROTEIN-LIKE	human	Q8NFQ6	BPIFC	Q8NFQ6	3	46	BPI fold-containing family C protein (Bactericidal/permeabil	w
-PROTEIN-LIKE	human	Q8TB37	NUBPL	Q8TB37	7	108	Iron-sulfur cluster transfer protein NUBPL (IND1 homolog) (N	w
+PROTEIN-LIKE	human	Q8TB37	NUBPL	Q8TB37	8	109	Iron-sulfur cluster transfer protein NUBPL (IND1 homolog) (N	w
 PROTEIN-LIKE	human	Q8TC17	GRAPL	Q8TC17	7	64	GRB2-related adapter protein-like	w
 PROTEIN-LIKE	human	Q8TDW4	ST7L	Q8TDW4	12	62	Suppressor of tumorigenicity 7 protein-like (ST7-related pro	w
 PROTEIN-LIKE	human	Q8WV99	ZFAND2B	Q8WV99	9	68	AN1-type zinc finger protein 2B (Arsenite-inducible RNA-asso	w
@@ -634,7 +635,7 @@ PROTEIN-LIKE	worm	A7DT33	CELE_Y34B4A.2	A7DT33	6	20	UV radiation resistance-assoc
 PROTEIN-LIKE	worm	B2D6P4	tlf-1	B2D6P4	13	100	TATA box-binding protein-like 1	w
 PROTEIN-LIKE	worm	C0Z1Y1	CELE_W10D9.3	C0Z1Y1	1	1	MKRN2 opposite strand protein-like C-terminal domain-contain	w
 PROTEIN-LIKE	worm	G5ECJ7	CELE_M01B2.13	G5ECJ7	0	3	Phytanoyl-CoA hydroxylase-interacting protein-like C-termina	w
-PROTEIN-LIKE	worm	G5EDP2	daf-22	G5EDP2	0	15	Non-specific lipid-transfer protein-like 2	w
+PROTEIN-LIKE	worm	G5EDP2	daf-22	G5EDP2	1	16	Non-specific lipid-transfer protein-like 2	w
 PROTEIN-LIKE	worm	G5EDT4	CELE_T01D3.6	G5EDT4	0	3	IgGFc-binding protein-like	w
 PROTEIN-LIKE	worm	G5EF34	crm-1	G5EF34	1	16	Cysteine-rich motor neuron 1 protein-like	w
 PROTEIN-LIKE	worm	G8JZJ6	CELE_T10H4.13	G8JZJ6	0	3	Phytanoyl-CoA hydroxylase-interacting protein-like C-termina	w
@@ -699,7 +700,7 @@ PROTEIN-LYSINE	zebrafish	F1QJK9	loxl4	F1QJK9	1	12	protein-lysine 6-oxidase	w
 PROTEIN-LYSINE	zebrafish	F1RET2	smyd5	F1RET2	0	22	Protein-lysine N-trimethyltransferase SMYD5	w
 PROTEIN-LYSINE	zebrafish	Q08C84	smyd4	Q08C84	1	22	Protein-lysine N-methyltransferase SMYD4	w
 PROTEIN-LYSINE	zebrafish	Q7T387	abhd14b	Q7T387	0	8	Putative protein-lysine deacylase ABHD14B	w
-PROTEIN-METHIONINE-S-O	human	Q9UJ68	MSRA	Q9UJ68	6	80	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
+PROTEIN-METHIONINE-S-O	human	Q9UJ68	MSRA	Q9UJ68	23	98	Mitochondrial peptide methionine sulfoxide reductase (EC 1.8	w
 PROTEIN-PSICOSAMINE	human	Q9H479	FN3K	Q9H479	5	138	Fructosamine-3-kinase (EC 2.7.1.171) (Protein-psicosamine 3-	w
 PROTEIN-PSICOSAMINE	human	Q9HA64	FN3KRP	Q9HA64	5	133	Ketosamine-3-kinase (EC 2.7.1.172) (Fructosamine-3-kinase-re	w
 PROTEIN-PYROPHOSPHORYLATION	human	Q16222	UAP1	Q16222	7	76	UDP-N-acetylhexosamine pyrophosphorylase (Antigen X) (AGX) (	w
@@ -722,7 +723,7 @@ PROTEIN-RELATED	human	Q96SU4	OSBPL9	Q96SU4	15	141	Oxysterol-binding protein-rela
 PROTEIN-RELATED	human	Q9BX59	TAPBPL	Q9BX59	12	77	Tapasin-related protein (TAPASIN-R) (TAP-binding protein-lik	w
 PROTEIN-RELATED	human	Q9BXB4	OSBPL11	Q9BXB4	16	143	Oxysterol-binding protein-related protein 11 (ORP-11) (OSBP-	w
 PROTEIN-RELATED	human	Q9BXB5	OSBPL10	Q9BXB5	21	173	Oxysterol-binding protein-related protein 10 (ORP-10) (OSBP-	w
-PROTEIN-RELATED	human	Q9BXW6	OSBPL1A	Q9BXW6	23	102	Oxysterol-binding protein-related protein 1 (ORP-1) (OSBP-re	w
+PROTEIN-RELATED	human	Q9BXW6	OSBPL1A	Q9BXW6	24	103	Oxysterol-binding protein-related protein 1 (ORP-1) (OSBP-re	w
 PROTEIN-RELATED	human	Q9BZF1	OSBPL8	Q9BZF1	27	324	Oxysterol-binding protein-related protein 8 (ORP-8) (OSBP-re	w
 PROTEIN-RELATED	human	Q9BZF2	OSBPL7	Q9BZF2	17	84	Oxysterol-binding protein-related protein 7 (ORP-7) (OSBP-re	w
 PROTEIN-RELATED	human	Q9BZF3	OSBPL6	Q9BZF3	25	180	Oxysterol-binding protein-related protein 6 (ORP-6) (OSBP-re	w
@@ -749,7 +750,7 @@ PROTEIN-S-ISOPRENYLCYSTEINE	worm	P91402	CELE_M01E11.1	P91402	0	1	Protein-S-isopr
 PROTEIN-S-ISOPRENYLCYSTEINE	yeast	P32584	STE14	P32584	0	5	Protein-S-isoprenylcysteine O-methyltransferase	w
 PROTEIN-SERINE	fly	FBgn0004957	por	Q9VWV9	17	130	Protein-serine O-palmitoleoyltransferase porcupine (EC 2.3.1	w
 PROTEIN-SERINE	fly	FBgn0005777	PpD3	Q9VH81	109	1178	protein-serine/threonine phosphatase (EC 3.1.3.16)	w
-PROTEIN-SERINE	fly	FBgn0017558	Pdk	A8DY78	135	1164	Protein-serine/threonine kinase (EC 2.7.11.-)	w
+PROTEIN-SERINE	fly	FBgn0017558	Pdk	A8DY78	137	1166	Protein-serine/threonine kinase (EC 2.7.11.-)	w
 PROTEIN-SERINE	fly	FBgn0033322	CG8584	Q7JY68	294	982	protein-serine/threonine phosphatase (EC 3.1.3.16)	w
 PROTEIN-SERINE	fly	FBgn0035426	CG12078	Q9VZS0	307	1046	protein-serine/threonine phosphatase (EC 3.1.3.16)	w
 PROTEIN-SERINE	human	Q9H237	PORCN	Q9H237	20	92	Protein-serine O-palmitoleoyltransferase porcupine (EC 2.3.1	w
@@ -758,11 +759,14 @@ PROTEIN-SERINE	virus	Q9YVV7	MSV135	Q9YVV7	19	261	protein-serine/threonine phosph
 PROTEIN-SERINE	worm	Q22329	mom-1	Q22329	3	4	Protein-serine O-palmitoleoyltransferase porcupine	w
 PROTEIN-SERINE	worm	Q9XUM4	CELE_W04A8.1	Q9XUM4	5	26	protein-serine/threonine phosphatase	w
 PROTEIN-SERINE	zebrafish	A0A2R8QMA3	pdk3a	A0A2R8QMA3	1	23	Protein-serine/threonine kinase	w
-PROTEIN-SERINE	zebrafish	A0A8M1P874	ppm1kb	A0A8M1P874	1	44	protein-serine/threonine phosphatase	w
+PROTEIN-SERINE	zebrafish	A0A8M1P874	ppm1kb	A0A8M1P874	3	47	protein-serine/threonine phosphatase	w
+PROTEIN-SERINE	zebrafish	A0A8M1PEI5	bckdk	A0A8M1PEI5	5	5	Protein-serine/threonine kinase	w
+PROTEIN-SERINE	zebrafish	A0A8M2BA05	pdk3a	A0A8M2BA05	6	7	Protein-serine/threonine kinase	w
+PROTEIN-SERINE	zebrafish	A0A8N7UUX2	pdk1	A0A8N7UUX2	4	5	Protein-serine/threonine kinase	w
 PROTEIN-SERINE	zebrafish	A1L284	pdk3b	A1L284	0	22	Protein-serine/threonine kinase	w
 PROTEIN-SERINE	zebrafish	B0R159	bckdk	B0R159	3	24	Protein-serine/threonine kinase	w
 PROTEIN-SERINE	zebrafish	B0S5V5	ctdsp1	B0S5V5	5	25	protein-serine/threonine phosphatase	w
-PROTEIN-SERINE	zebrafish	B3DIT9	pdk4	B3DIT9	1	24	Protein-serine/threonine kinase	w
+PROTEIN-SERINE	zebrafish	B3DIT9	pdk4	B3DIT9	5	29	Protein-serine/threonine kinase	w
 PROTEIN-SERINE	zebrafish	E7F3U3	pdk1	E7F3U3	3	43	Protein-serine/threonine kinase (EC 2.7.11.-)	w
 PROTEIN-SERINE	zebrafish	E7FAZ1	ppm1ka	E7FAZ1	4	44	protein-serine/threonine phosphatase	w
 PROTEIN-SERINE	zebrafish	Q5TZI2	ppm1ab	Q5TZI2	0	27	protein-serine/threonine phosphatase	w
@@ -811,7 +815,7 @@ PROTEIN-TYROSINE	fly	FBgn0000017	Abl	M9PFS1	185	1041	non-specific protein-tyrosi
 PROTEIN-TYROSINE	fly	FBgn0004370	Ptp10D	P35992	181	2902	Tyrosine-protein phosphatase 10D (EC 3.1.3.48) (Receptor-lin	w
 PROTEIN-TYROSINE	fly	FBgn0025936	Eph	Q9V4E5	539	3572	receptor protein-tyrosine kinase (EC 2.7.10.1)	w
 PROTEIN-TYROSINE	fly	FBgn0032752	CG10702	Q9VJ04	409	3466	receptor protein-tyrosine kinase (EC 2.7.10.1)	w
-PROTEIN-TYROSINE	fly	FBgn0039111	Ptpmt1	Q86BN8	118	979	Phosphatidylglycerophosphatase and protein-tyrosine phosphat	w
+PROTEIN-TYROSINE	fly	FBgn0039111	Ptpmt1	Q86BN8	118	981	Phosphatidylglycerophosphatase and protein-tyrosine phosphat	w
 PROTEIN-TYROSINE	fly	FBgn0086674	Tpst	M9PHI3	569	2391	Protein-tyrosine sulfotransferase (EC 2.8.2.20)	w
 PROTEIN-TYROSINE	fly	FBgn0263998	Ack-like	A0A0B4KFU0	198	951	non-specific protein-tyrosine kinase (EC 2.7.10.2)	w
 PROTEIN-TYROSINE	fly	FBgn0264959	Src42A	A1Z6I9	191	1122	non-specific protein-tyrosine kinase (EC 2.7.10.2)	w
@@ -855,7 +859,7 @@ PROTEIN-TYROSINE	human	Q15678	PTPN14	Q15678	62	370	Tyrosine-protein phosphatase 
 PROTEIN-TYROSINE	human	Q16825	PTPN21	Q16825	23	134	Tyrosine-protein phosphatase non-receptor type 21 (EC 3.1.3.	w
 PROTEIN-TYROSINE	human	Q5VWC8	HACD4	Q5VWC8	6	68	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase 4 (EC 4.2	w
 PROTEIN-TYROSINE	human	Q6Y1H2	HACD2	Q6Y1H2	7	135	Very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase 2 (EC 4.2	w
-PROTEIN-TYROSINE	human	Q8WUK0	PTPMT1	Q8WUK0	8	260	Phosphatidylglycerophosphatase and protein-tyrosine phosphat	w
+PROTEIN-TYROSINE	human	Q8WUK0	PTPMT1	Q8WUK0	16	268	Phosphatidylglycerophosphatase and protein-tyrosine phosphat	w
 PROTEIN-TYROSINE	human	Q92729	PTPRU	Q92729	21	261	Receptor-type tyrosine-protein phosphatase U (R-PTP-U) (EC 3	w
 PROTEIN-TYROSINE	human	Q93096	PTP4A1	Q93096	32	259	Protein tyrosine phosphatase type IVA 1 (EC 3.1.3.48) (PTP(C	w
 PROTEIN-TYROSINE	human	Q9Y2R2	PTPN22	Q9Y2R2	24	132	Tyrosine-protein phosphatase non-receptor type 22 (EC 3.1.3.	w
@@ -1031,5 +1035,5 @@ PROTEINOSIS	human	Q8IWL2	SFTPA1	Q8IWL2	3	40	Pulmonary surfactant-associated prot
 PROTEINS-CONVERTING	fly	FBgn0029121	Sras	Q9U1H8	3	26	CAAX prenyl protease 2 (EC 3.4.-.-) (Farnesylated proteins-c	w
 PROTEINS-CONVERTING	human	O75844	ZMPSTE24	O75844	2	172	CAAX prenyl protease 1 homolog (EC 3.4.24.84) (Farnesylated 	w
 PROTEINS-CONVERTING	human	Q9Y256	RCE1	Q9Y256	8	95	CAAX prenyl protease 2 (EC 3.4.26.1) (Farnesylated proteins-	w
-PROTEINS-INTERACTING	fly	FBgn0037102	CRIF	Q9VP13	11	158	Large ribosomal subunit protein mL64 (39S ribosomal protein 	w
+PROTEINS-INTERACTING	fly	FBgn0037102	CRIF	Q9VP13	12	159	Large ribosomal subunit protein mL64 (39S ribosomal protein 	w
 PROTEINV	human	P78363	ABCA4	P78363	0	16	Retinal-specific phospholipid-transporting ATPase ABCA4 (EC 	w

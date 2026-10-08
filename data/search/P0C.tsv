@@ -21,6 +21,7 @@ P0C074	yeast	P0C074	YSF3	P0C074	6	104	RDS3 complex subunit 10
 P0C075	candida-albicans-237561	P0C075	ATG8	P0C075	12	49	Autophagy-related protein 8	
 P0C077	escherichia-coli-83333	P0C077	relE	P0C077	3	25	mRNA interferase toxin RelE	
 P0C079	escherichia-coli-83333	P0C079	relB	P0C079	4	23	Antitoxin RelB	
+P0C089	rattus-norvegicus	P0C089	Ptpmt1	P0C089	5	8	Phosphatidylglycerophosphatase and protein-tyrosine phosphat	
 P0C090	mus-musculus	P0C090	Rc3h2	P0C090	0	1	Roquin-2	
 P0C091	human	P0C091	FREM3	P0C091	3	37	FRAS1-related extracellular matrix protein 3	
 P0C093	escherichia-coli-83333	P0C093	slmA	P0C093	1	1	Nucleoid occlusion factor SlmA	
@@ -107,10 +108,10 @@ P0C289	yeast	P0C289	YDR034C-A	P0C289	0	2	Putative uncharacterized protein YDR034
 P0C290	oryza-sativa-subsp-japonica	P0C290	GRXS8	P0C290	0	7	Monothiol glutaredoxin-S8	
 P0C291	oryza-sativa-subsp-japonica	P0C291	GRXS9	P0C291	0	13	Monothiol glutaredoxin-S9	
 P0C2B2	pseudomonas-aeruginosa	P0C2B2	dsbA	P0C2B2	2	9	Thiol:disulfide interchange protein DsbA	
-P0C2B9	rattus-norvegicus	P0C2B9	Mrpl42	P0C2B9	5	151	Large ribosomal subunit protein mL42	
-P0C2C0	rattus-norvegicus	P0C2C0	Mrpl22	P0C2C0	32	610	Large ribosomal subunit protein uL22m	
-P0C2C1	rattus-norvegicus	P0C2C1	Mrpl30	P0C2C1	13	335	Large ribosomal subunit protein uL30m	
-P0C2C4	rattus-norvegicus	P0C2C4	Mrpl10	P0C2C4	6	285	Large ribosomal subunit protein uL10m	
+P0C2B9	rattus-norvegicus	P0C2B9	Mrpl42	P0C2B9	7	152	Large ribosomal subunit protein mL42	
+P0C2C0	rattus-norvegicus	P0C2C0	Mrpl22	P0C2C0	35	612	Large ribosomal subunit protein uL22m	
+P0C2C1	rattus-norvegicus	P0C2C1	Mrpl30	P0C2C1	14	336	Large ribosomal subunit protein uL30m	
+P0C2C4	rattus-norvegicus	P0C2C4	Mrpl10	P0C2C4	8	286	Large ribosomal subunit protein uL10m	
 P0C2F5	arabidopsis-thaliana	P0C2F5	At1g65760	P0C2F5	0	39	Uncharacterized protein At1g65760	
 P0C2F8	arabidopsis-thaliana	P0C2F8	At1g64540	P0C2F8	3	219	Putative F-box protein At1g64540	
 P0C2G0	arabidopsis-thaliana	P0C2G0	At1g06630	P0C2G0	0	1	F-box/LRR-repeat protein At1g06630	
@@ -301,7 +302,7 @@ P0C7L8	rattus-norvegicus	P0C7L8	Ppp1r3e	P0C7L8	5	18	Protein phosphatase 1 regula
 P0C7M3	human	P0C7M3	SFTA3	P0C7M3	4	55	Surfactant-associated protein 3 (Surfactant-associated prote	
 P0C7M4	human	P0C7M4	RHOXF2B	P0C7M4	4	32	Rhox homeobox family member 2B	
 P0C7M6	human	P0C7M6	IQCF3	P0C7M6	4	53	IQ domain-containing protein F3	
-P0C7M7	human	P0C7M7	ACSM4	P0C7M7	0	29	Acyl-coenzyme A synthetase ACSM4, mitochondrial (EC 6.2.1.2)	
+P0C7M7	human	P0C7M7	ACSM4	P0C7M7	2	31	Acyl-coenzyme A synthetase ACSM4, mitochondrial (EC 6.2.1.2)	
 P0C7M8	human	P0C7M8	CLEC2L	P0C7M8	9	54	C-type lectin domain family 2 member L	
 P0C7N0	rattus-norvegicus	P0C7N0	Rwdd3	P0C7N0	0	2	RWD domain-containing protein 3	
 P0C7N1	human	P0C7N1	OR8U8	P0C7N1	1	26	Olfactory receptor 8U8	
@@ -309,7 +310,7 @@ P0C7N4	human	P0C7N4	TMEM191B	P0C7N4	0	13	Transmembrane protein 191B
 P0C7N5	human	P0C7N5	OR8U9	P0C7N5	1	20	Olfactory receptor 8U9	
 P0C7N8	human	P0C7N8	OR9G9	P0C7N8	2	5	Olfactory receptor 9G9	
 P0C7N9	mus-musculus	P0C7N9	Psmg4	P0C7N9	1	2	Proteasome assembly chaperone 4	
-P0C7P0	human	P0C7P0	CISD3	P0C7P0	18	195	CDGSH iron-sulfur domain-containing protein 3, mitochondrial	
+P0C7P0	human	P0C7P0	CISD3	P0C7P0	41	215	CDGSH iron-sulfur domain-containing protein 3, mitochondrial	
 P0C7P1	human	P0C7P1	RBMY1D	P0C7P1	0	10	RNA-binding motif protein, Y chromosome, family 1 member D	
 P0C7P2	human	P0C7P2	RFPL3S	P0C7P2	8	14	Putative protein RFPL3S (RFPL3 antisense RNA 1) (RFPL3 antis	
 P0C7P3	human	P0C7P3	SLFN14	P0C7P3	5	28	Protein SLFN14 [Cleaved into: C-terminally truncated SLFN14 	
@@ -386,7 +387,7 @@ P0C8S1	arabidopsis-thaliana	P0C8S1	RPP8L2	P0C8S1	0	1	Probable disease resistance
 P0C8Y0	arabidopsis-thaliana	P0C8Y0	CAMS1	P0C8Y0	0	4	Camelliol C synthase	
 P0C8Y1	zebrafish	P0C8Y1	mzt1	P0C8Y1	3	96	Mitotic-spindle organizing protein 1	
 P0C8Y3	zebrafish	P0C8Y3	bbln	P0C8Y3	0	2	Bublin coiled-coil protein	
-P0C8Z6	dictyostelium-discoideum	P0C8Z6	DDB_G0288135	P0C8Z6	0	1	Putative neugrin-like protein DDB_G0288135	
+P0C8Z6	dictyostelium-discoideum	P0C8Z6	DDB_G0288135	P0C8Z6	1	2	Putative neugrin-like protein DDB_G0288135	
 P0C8Z7	arabidopsis-thaliana	P0C8Z7	At1g28640	P0C8Z7	1	3	GDSL esterase/lipase At1g28640	
 P0C913	mus-musculus	P0C913	?	P0C913	0	1	Overexpressed in colon carcinoma 1 protein homolog	
 P0C919	fly	FBgn0260229	Mocs2A	P0C919	2	5	Molybdopterin synthase sulfur carrier subunit (Molybdenum co	
@@ -411,7 +412,7 @@ P0CB26	arabidopsis-thaliana	P0CB26	At1g10890	P0CB26	0	1	Uncharacterized protein 
 P0CB27	arabidopsis-thaliana	P0CB27	At1g10895	P0CB27	0	1	F-box protein At1g10895	
 P0CB33	human	P0CB33	ZNF735	P0CB33	19	396	Zinc finger protein 735	
 P0CB38	human	P0CB38	PABPC4L	P0CB38	1	75	Polyadenylate-binding protein 4-like (PABP-4-like) (Poly(A)-	
-P0CB42	mus-musculus	P0CB42	Alkbh1	P0CB42	0	3	Nucleic acid dioxygenase ALKBH1	
+P0CB42	mus-musculus	P0CB42	Alkbh1	P0CB42	2	5	Nucleic acid dioxygenase ALKBH1	
 P0CB47	human	P0CB47	UBTFL1	P0CB47	7	60	Upstream-binding factor 1-like protein 1	
 P0CB48	human	P0CB48	UBTFL6	P0CB48	2	4	Putative upstream-binding factor 1-like protein 6	
 P0CB65	zebrafish	P0CB65	srrm4	P0CB65	0	2	Serine/arginine repetitive matrix protein 4	
@@ -428,6 +429,7 @@ P0CD63	dictyostelium-discoideum	P0CD63	DDB_G0295729	P0CD63	2	13	J domain-contain
 P0CD65	dictyostelium-discoideum	P0CD65	pan3	P0CD65	0	5	PAN2-PAN3 deadenylation complex subunit pan3	
 P0CD90	yeast	P0CD90	AQY2	P0CD90	0	4	Aquaporin-like protein 2	
 P0CD92	yeast	P0CD92	AQY1	P0CD92	0	5	Aquaporin-1	
+P0CD94	rattus-norvegicus	P0CD94	Uqcc3	P0CD94	2	2	Ubiquinol-cytochrome-c reductase complex assembly factor 3	
 P0CD96	rattus-norvegicus	P0CD96	?	P0CD96	0	1	Overexpressed in colon carcinoma 1 protein homolog	
 P0CD97	yeast	P0CD97	YER039C-A	P0CD97	0	3	Uncharacterized protein YER039C-A	
 P0CD98	yeast	P0CD98	YLL053C	P0CD98	0	4	Putative uncharacterized protein YLL053C	
@@ -600,6 +602,7 @@ P0CL84	human	P0CL84	STAG3L2	P0CL84	2	10	Putative STAG3-like protein 2 (Stromal a
 P0CL85	human	P0CL85	STAG3L3	P0CL85	3	8	STAG3-like protein 3 (Stromal antigen 3-like protein 3)	
 P0CS82	yeast	P0CS82	HAP1	P0CS82	0	23	Heme-responsive zinc finger transcription factor HAP1	
 P0CS87	schizosaccharomyces-pombe	P0CS87	SPBCPT2R1.01c	P0CS87	0	2	UPF0494 membrane protein CPT2R1.01c	
+P0CS90	yeast	P0CS90	SSC1	P0CS90	3	3	Import motor subunit, mitochondrial	
 P0CS91	yeast	P0CS91	SSC1	P0CS91	19	183	Import motor subunit, mitochondrial	
 P0CS92	schizosaccharomyces-pombe	P0CS92	SPAC959.06c	P0CS92	0	2	Uncharacterized protein C959.06c	
 P0CT04	yeast	P0CT04	PBI2	P0CT04	1	13	Protease B inhibitor 2	

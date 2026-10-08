@@ -25,8 +25,10 @@ Q561R0	rattus-norvegicus	Q561R0	Mzb1	Q561R0	2	18	Marginal zone B- and B1-cell-sp
 Q561R1	rattus-norvegicus	Q561R1	Cenpt	Q561R1	6	75	Centromere protein T	
 Q561R3	rattus-norvegicus	Q561R3	Rbm48	Q561R3	10	78	RNA-binding protein 48	
 Q561R7	rattus-norvegicus	Q561R7	Gtf2h3	Q561R7	13	170	General transcription factor IIH subunit 3	
-Q561R9	rattus-norvegicus	Q561R9	Lactb2	Q561R9	0	14	Endoribonuclease LACTB2	
-Q561S0	rattus-norvegicus	Q561S0	Ndufa10	Q561S0	3	117	NADH dehydrogenase	
+Q561R9	rattus-norvegicus	Q561R9	Lactb2	Q561R9	5	21	Endoribonuclease LACTB2	
+Q561S0	rattus-norvegicus	Q561S0	Ndufa10	Q561S0	7	121	NADH dehydrogenase	
+Q561S1	zebrafish	Q561S1	fabgl	Q561S1	2	5	Hsd17b8 protein	
+Q561S1_DANRE	zebrafish	Q561S1	fabgl	Q561S1	2	5		
 Q561S5	zebrafish	Q561S5	znhit1	Q561S5	3	74	Zgc:112524	
 Q561S6	zebrafish	Q561S6	dpm2	Q561S6	2	14	Dolichol phosphate-mannose biosynthesis regulatory protein	
 Q561S9	zebrafish	Q561S9	hist1h2a3	Q561S9	23	166	Histone H2A	
@@ -47,7 +49,7 @@ Q561Y2	zebrafish	Q561Y2	nmnat1-rbp7a	Q561Y2	0	7	Nicotinamide/nicotinic acid mono
 Q561Z7	zebrafish	Q561Z7	prss1	Q561Z7	4	12	trypsin	
 Q562A2	rattus-norvegicus	Q562A2	Zfr	Q562A2	1	3	Zinc finger RNA-binding protein	
 Q562B4	rattus-norvegicus	Q562B4	Nacc2	Q562B4	0	1	Nucleus accumbens-associated protein 2	
-Q562B5	rattus-norvegicus	Q562B5	Pgam5	Q562B5	1	24	Serine/threonine-protein phosphatase PGAM5, mitochondrial	
+Q562B5	rattus-norvegicus	Q562B5	Pgam5	Q562B5	8	31	Serine/threonine-protein phosphatase PGAM5, mitochondrial	
 Q562C2	rattus-norvegicus	Q562C2	Bop1	Q562C2	18	319	Ribosome biogenesis protein BOP1	
 Q562C4	rattus-norvegicus	Q562C4	Tmt1b	Q562C4	0	6	Thiol S-methyltransferase TMT1B	
 Q562C6	rattus-norvegicus	Q562C6	Lztfl1	Q562C6	0	7	Leucine zipper transcription factor-like protein 1	
@@ -65,7 +67,7 @@ Q564Q6	worm	Q564Q6	CELE_H39E23.3	Q564Q6	0	3	Neurofilament heavy polypeptide-like
 Q564W1	worm	Q564W1	CELE_F35C12.7	Q564W1	0	4	Activin_recp domain-containing protein	
 Q564W8	worm	Q564W8	C17E4.11	Q564W8	0	1	Methyltransferase domain-containing protein	
 Q564X0	worm	Q564X0	imp-1	Q564X0	0	1	IntraMembrane Protease (IMPAS) family	
-Q564X7	worm	Q564X7	F59C6.12	Q564X7	0	4	UPF0598 protein F59C6.12	
+Q564X7	worm	Q564X7	F59C6.12	Q564X7	1	5	UPF0598 protein F59C6.12	
 Q564Y3	worm	Q564Y3	C30G7.3	Q564Y3	0	16	MADF domain-containing protein	
 Q564Z3	worm	Q564Z3	CELE_F56H9.6	Q564Z3	0	7	C6 domain-containing protein	
 Q564Z8	worm	Q564Z8	suds-3	Q564Z8	0	1	DUF2040 domain-containing protein	
@@ -77,32 +79,39 @@ Q566C9	rattus-norvegicus	Q566C9	Ifgga2l2	Q566C9	0	7	Interferon-gamma-inducible G
 Q566D0	rattus-norvegicus	Q566D0	Upk1b	Q566D0	4	7	Uroplakin-1b	
 Q566E4	rattus-norvegicus	Q566E4	Hnrnpr	Q566E4	2	44	Heterogeneous nuclear ribonucleoprotein Q	
 Q566E6	rattus-norvegicus	Q566E6	Cd300lf	Q566E6	2	16	CMRF35-like molecule 1	
-Q566J8	mus-musculus	Q566J8	Coq8b	Q566J8	0	3	Atypical kinase COQ8B, mitochondrial	
+Q566J8	mus-musculus	Q566J8	Coq8b	Q566J8	6	9	Atypical kinase COQ8B, mitochondrial	
 Q566M8	zebrafish	Q566M8	rnf150	Q566M8	2	13	RING finger protein 150	
 Q566N0	zebrafish	Q566N0	enpp4	Q566N0	0	2	Bis(5'-adenosyl)-triphosphatase enpp4	
 Q566N4	zebrafish	Q566N4	morn4	Q566N4	0	9	MORN repeat-containing protein 4	
 Q566N6	zebrafish	Q566N6	wu:fb94c06	Q566N6	0	23	Uncharacterized protein LOC550591	
 Q566Q9	rattus-norvegicus	Q566Q9	Rmnd5b	Q566Q9	7	14	Required for meiotic nuclear division 5 homolog B	
-Q566R0	rattus-norvegicus	Q566R0	Them4	Q566R0	1	11	Acyl-coenzyme A thioesterase THEM4	
+Q566R0	rattus-norvegicus	Q566R0	Them4	Q566R0	4	15	Acyl-coenzyme A thioesterase THEM4	
 Q566R3	rattus-norvegicus	Q566R3	Gpatch4	Q566R3	4	11	G patch domain-containing protein 4	
 Q566R4	rattus-norvegicus	Q566R4	Fam89b	Q566R4	1	52	Leucine repeat adapter protein 25	
 Q566R6	rattus-norvegicus	Q566R6	Tcf19	Q566R6	1	3	Transcription factor 19	
 Q566R7	zebrafish	Q566R7	dusp22b	Q566R7	1	11	Dual specificity protein phosphatase 22-B	
 Q566R8	zebrafish	Q566R8	hspb2	Q566R8	4	48	Heat shock protein beta-2	
+Q566S4	zebrafish	Q566S4	zgc:112520	Q566S4	9	9	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitoc	
+Q566S4_DANRE	zebrafish	Q566S4	zgc:112520	Q566S4	9	9		
 Q566S5	zebrafish	Q566S5	pdrg1	Q566S5	4	19	p53 and DNA damage-regulated protein 1	
-Q566S6	zebrafish	Q566S6	dhrs7b	Q566S6	0	32	Dehydrogenase/reductase SDR family member 7B	
-Q566S7	zebrafish	Q566S7	mrps18b	Q566S7	6	129	Small ribosomal subunit protein mS40	
+Q566S6	zebrafish	Q566S6	dhrs7b	Q566S6	2	35	Dehydrogenase/reductase SDR family member 7B	
+Q566S7	zebrafish	Q566S7	mrps18b	Q566S7	10	133	Small ribosomal subunit protein mS40	
+Q566S7_DANRE	zebrafish	Q566S7	mrps18b	Q566S7	10	133		
 Q566T0	zebrafish	Q566T0	eed	Q566T0	31	144	Polycomb protein eed	
 Q566U4	zebrafish	Q566U4	afmid	Q566U4	0	55	Kynurenine formamidase	
 Q566V0	zebrafish	Q566V0	zbtb8os	Q566V0	2	6	Protein archease	
-Q566V3	zebrafish	Q566V3	mrm3a	Q566V3	3	144	rRNA methyltransferase 3A, mitochondrial	
+Q566V3	zebrafish	Q566V3	mrm3a	Q566V3	5	146	rRNA methyltransferase 3A, mitochondrial	
 Q566W5	zebrafish	Q566W5	frg1	Q566W5	3	45	Protein FRG1	
 Q566W6	zebrafish	Q566W6	cirbpa	Q566W6	4	118	Cold-inducible RNA-binding protein A	
 Q566W7	zebrafish	Q566W7	snx30	Q566W7	3	18	Sorting nexin-30	
+Q566X4	zebrafish	Q566X4	zgc:112404	Q566X4	5	5	Zgc:112404	
+Q566X4_DANRE	zebrafish	Q566X4	zgc:112404	Q566X4	5	5		
+Q566X6	zebrafish	Q566X6	ptcd2	Q566X6	1	1	Pentatricopeptide repeat-containing protein 2, mitochondrial	
 Q566X9	zebrafish	Q566X9	stk16	Q566X9	1	9	Serine/threonine-protein (EC 2.7.11.1)	
 Q566X9_DANRE	zebrafish	Q566X9	stk16	Q566X9	1	9		
 Q566Y1	zebrafish	Q566Y1	elp4	Q566Y1	13	110	Elongator complex protein 4	
 Q566Y4	zebrafish	Q566Y4	higd2a	Q566Y4	1	15	HIG1 domain family member 2A, mitochondrial	
+Q566Y4_DANRE	zebrafish	Q566Y4	higd2a	Q566Y4	1	15		
 Q566Y8	zebrafish	Q566Y8	magoh	Q566Y8	15	180	Protein mago nashi homolog	
 Q566Y9	zebrafish	Q566Y9	mppe1	Q566Y9	0	7	Metallophosphoesterase 1	
 Q566Z6	zebrafish	Q566Z6	prr15lb	Q566Z6	3	18	Proline-rich protein 15-like protein B	
@@ -110,33 +119,40 @@ Q567A1	zebrafish	Q567A1	gpd1a	Q567A1	2	4	Glycerol-3-phosphate dehydrogenase
 Q567B1	zebrafish	Q567B1	yod1	Q567B1	11	46	Ubiquitin thioesterase OTU1	
 Q567C7	zebrafish	Q567C7	pecr	Q567C7	0	35	Peroxisomal trans-2-enoyl-CoA reductase	
 Q567D5	zebrafish	Q567D5	cldn19	Q567D5	6	38	Claudin	
+Q567E6	zebrafish	Q567E6	coq10b	Q567E6	0	1	Coenzyme Q-binding protein COQ10 homolog B, mitochondrial	
 Q567E9	zebrafish	Q567E9	ss18l2	Q567E9	0	12	SS18-like protein 2	
 Q567F1	zebrafish	Q567F1	grap2a	Q567F1	18	79	Osteoclast-stimulating factor 1	
 Q567F5	zebrafish	Q567F5	wu:fb73f06	Q567F5	3	5	Uncharacterized protein LOC550461	
 Q567G2	zebrafish	Q567G2	wdr73	Q567G2	10	185	Integrator complex assembly factor WDR73	
+Q567G4	zebrafish	Q567G4	zgc:112068	Q567G4	2	2	DnaJ (Hsp40) homolog, subfamily C, member 28	
+Q567G4_DANRE	zebrafish	Q567G4	zgc:112068	Q567G4	2	2		
 Q567G5	zebrafish	Q567G5	arfip2b	Q567G5	3	10	ADP-ribosylation factor-interacting protein 2b	
 Q567G6	zebrafish	Q567G6	nepro	Q567G6	0	7	Nucleolus and neural progenitor protein	
-Q567H1	zebrafish	Q567H1	pdss1	Q567H1	0	5	All trans-polyprenyl-diphosphate synthase PDSS1	
+Q567H1	zebrafish	Q567H1	pdss1	Q567H1	1	6	All trans-polyprenyl-diphosphate synthase PDSS1	
+Q567H1_DANRE	zebrafish	Q567H1	pdss1	Q567H1	1	6		
 Q567H4	zebrafish	Q567H4	cremb	Q567H4	6	6	Zgc:112054	
 Q567I9	zebrafish	Q567I9	cyb5d1	Q567I9	24	100	Cytochrome b5 domain-containing protein 1	
 Q567J3	zebrafish	Q567J3	malb	Q567J3	0	1	Mal, T cell differentiation protein b	
 Q567J5	zebrafish	Q567J5	snrnp25	Q567J5	2	20	Small nuclear ribonucleoprotein 25	
 Q567J6	zebrafish	Q567J6	dapp1	Q567J6	0	18	Dual adapter for phosphotyrosine and 3-phosphotyrosine and 3	
 Q567K2	zebrafish	Q567K2	esd	Q567K2	0	1	S-formylglutathione hydrolase	
-Q567K5	zebrafish	Q567K5	dcxr	Q567K5	0	1	L-xylulose reductase	
+Q567K5	zebrafish	Q567K5	dcxr	Q567K5	4	5	L-xylulose reductase	
+Q567K5_DANRE	zebrafish	Q567K5	dcxr	Q567K5	4	5		
 Q567N5	zebrafish	Q567N5	rpl6	Q567N5	35	412	Large ribosomal subunit protein eL6	
 Q567U6	human	Q567U6	CCDC93	Q567U6	51	114	Coiled-coil domain-containing protein 93	
 Q567V2	human	Q567V2	MPV17L2	Q567V2	2	58	Mpv17-like protein 2	
 Q567V5	zebrafish	Q567V5	snrpd2	Q567V5	30	438	Small nuclear ribonucleoprotein Sm D2	
 Q567V6	zebrafish	Q567V6	eif3k	Q567V6	8	128	Eukaryotic translation initiation factor 3 subunit K	
-Q567W4	zebrafish	Q567W4	mrps25	Q567W4	8	212	Small ribosomal subunit protein mS25	
+Q567W4	zebrafish	Q567W4	mrps25	Q567W4	12	215	Small ribosomal subunit protein mS25	
+Q567W4_DANRE	zebrafish	Q567W4	mrps25	Q567W4	12	215		
 Q567W6	zebrafish	Q567W6	dph1	Q567W6	3	12	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1	
 Q567W8	zebrafish	Q567W8	ppp1r14aa	Q567W8	0	1	Protein phosphatase 1 regulatory subunit 14A	
 Q567X1	zebrafish	Q567X1	ch25hl1.1	Q567X1	0	11	Cholesterol 25-hydroxylase-like protein 1, member 1	
 Q567X9	zebrafish	Q567X9	itprip	Q567X9	1	6	Inositol 1,4,5-trisphosphate receptor-interacting protein	
 Q567Y2	zebrafish	Q567Y2	rgra	Q567Y2	0	20	RPE-retinal G protein-coupled receptor	
 Q567Y3	zebrafish	Q567Y3	stx6	Q567Y3	25	92	Stx6 protein	
-Q567Y4	zebrafish	Q567Y4	ndufb9	Q567Y4	9	188	NADH dehydrogenase	
+Q567Y4	zebrafish	Q567Y4	ndufb9	Q567Y4	10	188	NADH dehydrogenase	
+Q567Y4_DANRE	zebrafish	Q567Y4	ndufb9	Q567Y4	10	188		
 Q567Y6	zebrafish	Q567Y6	ift22	Q567Y6	7	111	Intraflagellar transport protein 22 homolog	
 Q567Y7	zebrafish	Q567Y7	chrna5	Q567Y7	8	8	Neuronal acetylcholine receptor subunit alpha-5	
 Q567Y8	zebrafish	Q567Y8	ppp2caa	Q567Y8	20	160	Serine/threonine-protein phosphatase	
@@ -155,6 +171,8 @@ Q568F1	zebrafish	Q568F1	cldn8.2	Q568F1	6	32	Uncharacterized protein LOC550497
 Q568F6	zebrafish	Q568F6	adss2	Q568F6	2	5	Adenylosuccinate synthetase isozyme 2	
 Q568G4	zebrafish	Q568G4	efcab11	Q568G4	4	34	EF-hand calcium-binding domain-containing protein 11	
 Q568G6	zebrafish	Q568G6	klc4	Q568G6	19	105	Kinesin light chain 4	
+Q568H2	zebrafish	Q568H2	zgc:110300	Q568H2	1	1	Cytochrome c oxidase assembly protein COX16 homolog, mitocho	
+Q568H2_DANRE	zebrafish	Q568H2	zgc:110300	Q568H2	1	1		
 Q568H3	zebrafish	Q568H3	mad2l2	Q568H3	11	50	Mitotic spindle assembly checkpoint protein MAD2B	
 Q568H8	zebrafish	Q568H8	polr2h	Q568H8	26	383	DNA-directed RNA polymerases I, II, and III subunit RPABC3	
 Q568H9	zebrafish	Q568H9	fcf1	Q568H9	5	124	rRNA-processing protein FCF1 homolog	
@@ -169,8 +187,8 @@ Q568M3	zebrafish	Q568M3	crlf3	Q568M3	0	4	Cytokine receptor-like factor 3
 Q568M7	zebrafish	Q568M7	twist1b	Q568M7	2	3	Twist-related protein 1	
 Q568M8	zebrafish	Q568M8	rgs5b	Q568M8	15	33	Regulator of G-protein signaling 5b	
 Q568M9	zebrafish	Q568M9	gabra4	Q568M9	18	43	Gamma-aminobutyric acid receptor subunit alpha-4 precursor	
-Q568N3	zebrafish	Q568N3	timmdc1	Q568N3	2	64	Complex I assembly factor TIMMDC1, mitochondrial	
-Q568N4	zebrafish	Q568N4	timm10b	Q568N4	5	36	Mitochondrial import inner membrane translocase subunit Tim1	
+Q568N3	zebrafish	Q568N3	timmdc1	Q568N3	5	66	Complex I assembly factor TIMMDC1, mitochondrial	
+Q568N4	zebrafish	Q568N4	timm10b	Q568N4	6	36	Mitochondrial import inner membrane translocase subunit Tim1	
 Q568P1	zebrafish	Q568P1	hddc3	Q568P1	3	62	Guanosine-3,5-bis(diphosphate) 3'-pyrophosphohydrolase MESH1	
 Q568P3	zebrafish	Q568P3	lratd2b	Q568P3	0	1	Uncharacterized protein LOC550535	
 Q568P5	zebrafish	Q568P5	stk11	Q568P5	11	39	Serine/threonine-protein (EC 2.7.11.1)	
@@ -213,6 +231,8 @@ Q569K6	human	Q569K6	CCDC157	Q569K6	3	29	Coiled-coil domain-containing protein 15
 Q569L8	mus-musculus	Q569L8	Cpap	Q569L8	7	25	Centrosomal P4.1-associated protein	
 Q569N2	mus-musculus	Q569N2	Ankrd37	Q569N2	1	1	Ankyrin repeat domain-containing protein 37	
 Q569P6	zebrafish	Q569P6	golga7ba	Q569P6	0	9	Golgin A7 family, member Ba	
+Q569S6	xenopus-laevis	Q569S6	cox20.L	Q569S6	2	2	Cytochrome c oxidase assembly protein COX20, mitochondrial	
+Q569U0	xenopus-laevis	Q569U0	myo19	Q569U0	2	2	Unconventional myosin-XIX	
 Q569X9	mus-musculus	Q569X9	Cyp2c67	Q569X9	0	1	Cytochrome P450, family 2, subfamily c, polypeptide 67	
 Q569Z5	mus-musculus	Q569Z5	Ddx46	Q569Z5	10	72	Probable ATP-dependent RNA helicase DDX46	
 Q569Z6	mus-musculus	Q569Z6	Thrap3	Q569Z6	9	75	Thyroid hormone receptor-associated protein 3	
@@ -228,7 +248,7 @@ Q56A35	zebrafish	Q56A35	actr2b	Q56A35	33	155	Actin-related protein 2-B
 Q56A36	zebrafish	Q56A36	hsh2d	Q56A36	1	10	Hematopoietic SH2 domain-containing protein homolog	
 Q56A38	zebrafish	Q56A38	ak5l	Q56A38	1	8	Adenylate kinase 5,-like	
 Q56A40	zebrafish	Q56A40	ccdc40	Q56A40	2	5	Coiled-coil domain-containing protein 40	
-Q56A55	zebrafish	Q56A55	abcb8	Q56A55	1	6	Mitochondrial potassium channel ATP-binding subunit	
+Q56A55	zebrafish	Q56A55	abcb8	Q56A55	3	8	Mitochondrial potassium channel ATP-binding subunit	
 Q56A73	human	Q56A73	SPIN4	Q56A73	18	118	Spindlin-4	
 Q56AP7	rattus-norvegicus	Q56AP7	Crbn	Q56AP7	2	73	Protein cereblon	
 Q56B11	rattus-norvegicus	Q56B11	Pelp1	Q56B11	5	49	Proline-, glutamic acid- and leucine-rich protein 1	

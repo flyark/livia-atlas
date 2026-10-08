@@ -1,6 +1,6 @@
 CAT	fly	FBgn0000261	Cat	P17336	4	63	Catalase (EC 1.11.1.6)	
 CAT	human	P04040	CAT	P04040	1	231	Catalase (EC 1.11.1.6)	
-CAT	human	Q6IB77	GLYAT	Q6IB77	9	127		
+CAT	human	Q6IB77	GLYAT	Q6IB77	27	145		
 CAT	mus-musculus	P24270	Cat	P24270	1	31	Catalase	
 CAT	rattus-norvegicus	P04762	Cat	P04762	1	9	Catalase	
 CAT	zebrafish	Q9PT92	cat	Q9PT92	0	7	Catalase	
@@ -19,7 +19,7 @@ CAT1	arabidopsis-thaliana	Q84MA5	CAT1	Q84MA5	1	12	Cationic amino acid transporte
 CAT1	candida-albicans-237561	O13289	CAT1	O13289	0	2	Peroxisomal catalase	
 CAT1	glycine-max	P29756	CAT1	P29756	2	9	Catalase-1/2	
 CAT1	human	P30825	SLC7A1	P30825	9	260	High affinity cationic amino acid transporter 1 (CAT-1) (CAT	w
-CAT1	human	P43155	CRAT	P43155	4	59		
+CAT1	human	P43155	CRAT	P43155	9	65		
 CAT1	human	Q9H1D0	TRPV6	Q9H1D0	12	126	Transient receptor potential cation channel subfamily V memb	w
 CAT1	human	Q9Y2X7	GIT1	Q9Y2X7	85	311	ARF GTPase-activating protein GIT1 (ARF GAP GIT1) (Cool-asso	w
 CAT1	schizosaccharomyces-pombe	Q9URZ4	cat1	Q9URZ4	0	1	Cationic amino acid transporter 1	
@@ -44,7 +44,7 @@ CAT4	human	O43246	SLC7A4	O43246	0	31	Cationic amino acid transporter 4 (CAT-4) (
 CAT5	arabidopsis-thaliana	O64759	CAT5	O64759	0	11	Cationic amino acid transporter 5	
 CAT5	cladophialophora-carrionii	A0A1C1CGI5	CAT5	A0A1C1CGI5	2	9	Catabolite repression protein CAT5	
 CAT5	glycine-max	B0M1A4	CAT5	B0M1A4	2	9	Catalase	
-CAT5	yeast	P41735	CAT5	P41735	2	23	5-demethoxyubiquinone hydroxylase, mitochondrial	
+CAT5	yeast	P41735	CAT5	P41735	3	24	5-demethoxyubiquinone hydroxylase, mitochondrial	
 CAT53	human	Q96QC0	PPP1R10	Q96QC0	68	294		
 CAT56	human	P79522	PRR3	P79522	13	344		
 CAT6	arabidopsis-thaliana	Q9LZ20	CAT6	Q9LZ20	0	10	Cationic amino acid transporter 6, chloroplastic	
@@ -63,7 +63,7 @@ CATABOLIN	human	P01584	IL1B	P01584	56	1248	Interleukin-1 beta (IL-1 beta) (Catab
 CATABOLISM	yeast	Q04411	URC2	Q04411	0	54	Uracil catabolism protein 2	w
 CATABOLITE	fly	FBgn0011725	twin	Q8IMX1	43	476	poly(A)-specific ribonuclease (EC 3.1.13.4) (Carbon cataboli	w
 CATABOLITE	human	Q96LI5	CNOT6L	Q96LI5	43	471	CCR4-NOT transcription complex subunit 6-like (EC 3.1.13.4) 	w
-CATABOLITE	human	Q9UK39	NOCT	Q9UK39	17	99	Nocturnin (EC 3.1.3.108) (Carbon catabolite repression 4-lik	w
+CATABOLITE	human	Q9UK39	NOCT	Q9UK39	30	112	Nocturnin (EC 3.1.3.108) (Carbon catabolite repression 4-lik	w
 CATABOLITE	human	Q9ULM6	CNOT6	Q9ULM6	31	446	CCR4-NOT transcription complex subunit 6 (EC 3.1.13.4) (CCR4	w
 CATABOLITE-DEREPRESSING	yeast	P06782	SNF1	P06782	11	117	Carbon catabolite-derepressing protein kinase (EC 2.7.11.1) 	w
 CATAC_HUMAN	human	Q86UT8	CENATAC	Q86UT8	13	114		
@@ -78,7 +78,7 @@ CATALASE	yeast	P06115	CTT1	P06115	0	4	Catalase T	w
 CATALASE	yeast	P15202	CTA1	P15202	1	15	Peroxisomal catalase A	w
 CATALASE	zebrafish	Q9PT92	cat	Q9PT92	0	7	Catalase	w
 CATALASE-2	worm	O61235	ctl-1	O61235	0	9	Catalase-2	w
-CATALYTIC	fly	FBgn0000273	Pka-C1	P12370	275	1173	cAMP-dependent protein kinase catalytic subunit 1 (PKA C) (E	w
+CATALYTIC	fly	FBgn0000273	Pka-C1	P12370	281	1179	cAMP-dependent protein kinase catalytic subunit 1 (PKA C) (E	w
 CATALYTIC	fly	FBgn0000274	Pka-C2	P16911	279	1127	cAMP-dependent protein kinase catalytic subunit 2 (EC 2.7.11	w
 CATALYTIC	fly	FBgn0000489	Pka-C3	P16912	331	1135	cAMP-dependent protein kinase catalytic subunit 3 (EC 2.7.11	w
 CATALYTIC	fly	FBgn0002891	PolZ1	Q9GSR1	2	6	DNA polymerase zeta catalytic subunit (EC 2.7.7.7)	w
@@ -114,7 +114,7 @@ CATALYTIC	human	O00329	PIK3CD	O00329	14	148	Phosphatidylinositol 4,5-bisphosphat
 CATALYTIC	human	O00743	PPP6C	O00743	24	230	Serine/threonine-protein phosphatase 6 catalytic subunit (PP	w
 CATALYTIC	human	O14746	TERT	O14746	22	472	Telomerase reverse transcriptase (EC 2.7.7.49) (HEST2) (Telo	w
 CATALYTIC	human	O14929	HAT1	O14929	54	576	Histone acetyltransferase type B catalytic subunit (EC 2.3.1	w
-CATALYTIC	human	O15091	PRORP	O15091	11	186	Mitochondrial ribonuclease P catalytic subunit (EC 3.1.26.5)	w
+CATALYTIC	human	O15091	PRORP	O15091	13	188	Mitochondrial ribonuclease P catalytic subunit (EC 3.1.26.5)	w
 CATALYTIC	human	O60673	REV3L	O60673	13	426	DNA polymerase zeta catalytic subunit (EC 2.7.7.7) (Protein 	w
 CATALYTIC	human	O96007	MOCS2	O96007	2	31	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (MOCO	w
 CATALYTIC	human	P07384	CAPN1	P07384	43	353	Calpain-1 catalytic subunit (EC 3.4.22.52) (Calcium-activate	w
@@ -123,7 +123,7 @@ CATALYTIC	human	P0C7V7	SEC11B	P0C7V7	3	23	Putative signal peptidase complex cata
 CATALYTIC	human	P15169	CPN1	P15169	11	183	Carboxypeptidase N catalytic chain (CPN) (EC 3.4.17.3) (Anap	w
 CATALYTIC	human	P15735	PHKG2	P15735	167	1339	Phosphorylase b kinase gamma catalytic chain, liver/testis i	w
 CATALYTIC	human	P16298	PPP3CB	P16298	73	282	Serine/threonine-protein phosphatase 2B catalytic subunit be	w
-CATALYTIC	human	P17612	PRKACA	P17612	563	2224	cAMP-dependent protein kinase catalytic subunit alpha (PKA C	w
+CATALYTIC	human	P17612	PRKACA	P17612	589	2249	cAMP-dependent protein kinase catalytic subunit alpha (PKA C	w
 CATALYTIC	human	P17655	CAPN2	P17655	44	419	Calpain-2 catalytic subunit (EC 3.4.22.53) (Calcium-activate	w
 CATALYTIC	human	P22612	PRKACG	P22612	549	1585	cAMP-dependent protein kinase catalytic subunit gamma (PKA C	w
 CATALYTIC	human	P22694	PRKACB	P22694	420	1439	cAMP-dependent protein kinase catalytic subunit beta (PKA C-	w
@@ -167,13 +167,13 @@ CATALYTIC	human	Q92643	PIGK	Q92643	14	123	GPI-anchor transamidase (EC 2.6.1.-) (
 CATALYTIC	human	Q96FX7	TRMT61A	Q96FX7	13	125	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	w
 CATALYTIC	human	Q9BSU3	NAA11	Q9BSU3	13	123	N-alpha-acetyltransferase 11 (EC 2.3.1.255) (N-terminal acet	w
 CATALYTIC	human	Q9BUM1	G6PC3	Q9BUM1	4	114	Glucose-6-phosphatase 3 (G-6-Pase 3) (G6Pase 3) (EC 3.1.3.9)	w
-CATALYTIC	human	Q9BXR0	QTRT1	Q9BXR0	2	75	Queuine tRNA-ribosyltransferase catalytic subunit 1 (EC 2.4.	w
+CATALYTIC	human	Q9BXR0	QTRT1	Q9BXR0	4	77	Queuine tRNA-ribosyltransferase catalytic subunit 1 (EC 2.4.	w
 CATALYTIC	human	Q9BY50	SEC11C	Q9BY50	16	86	Signal peptidase complex catalytic subunit SEC11C (EC 3.4.21	w
 CATALYTIC	human	Q9H3S5	PIGM	Q9H3S5	9	85	GPI alpha-1,4-mannosyltransferase I, catalytic subunit (EC 2	w
 CATALYTIC	human	Q9H9G7	AGO3	Q9H9G7	15	240	Protein argonaute-3 (Argonaute3) (hAgo3) (EC 3.1.26.n2) (Arg	w
 CATALYTIC	human	Q9HCK5	AGO4	Q9HCK5	13	177	Protein argonaute-4 (Argonaute4) (hAgo4) (Argonaute RISC cat	w
 CATALYTIC	human	Q9NQR9	G6PC2	Q9NQR9	2	61	Glucose-6-phosphatase 2 (G-6-Pase 2) (G6Pase 2) (EC 3.1.3.9)	w
-CATALYTIC	human	Q9P2J9	PDP2	Q9P2J9	4	44	[Pyruvate dehydrogenase [acetyl-transferring]]-phosphatase 2	w
+CATALYTIC	human	Q9P2J9	PDP2	Q9P2J9	11	52	[Pyruvate dehydrogenase [acetyl-transferring]]-phosphatase 2	w
 CATALYTIC	human	Q9P2P1	NYNRIN	Q9P2P1	4	48	Protein NYNRIN (NYN domain and retroviral integrase catalyti	w
 CATALYTIC	human	Q9UKV8	AGO2	Q9UKV8	41	653	Protein argonaute-2 (Argonaute2) (hAgo2) (EC 3.1.26.n2) (Arg	w
 CATALYTIC	human	Q9UL18	AGO1	Q9UL18	27	387	Protein argonaute-1 (Argonaute1) (hAgo1) (Argonaute RISC cat	w
@@ -326,10 +326,10 @@ CATALYTIC	worm	O18165	clpr-1	O18165	0	1	Calpain catalytic domain-containing prot
 CATALYTIC	worm	O44903	clp-10	O44903	0	1	Calpain catalytic domain-containing protein	w
 CATALYTIC	worm	O45279	dlat-2	O45279	2	22	2-oxoacid dehydrogenase acyltransferase catalytic domain-con	w
 CATALYTIC	worm	O45298	atgp-2	O45298	7	20	Glycosyl hydrolase family 13 catalytic domain-containing pro	w
-CATALYTIC	worm	O45303	lipt-1	O45303	3	18	BPL/LPL catalytic domain-containing protein	w
+CATALYTIC	worm	O45303	lipt-1	O45303	5	21	BPL/LPL catalytic domain-containing protein	w
 CATALYTIC	worm	O62512	eelo-2	O62512	0	7	Peptidase M3A/M3B catalytic domain-containing protein	w
 CATALYTIC	worm	O76632	bgal-2	O76632	0	6	Glycoside hydrolase 35 catalytic domain-containing protein	w
-CATALYTIC	worm	P21137	kin-1	P21137	11	92	cAMP-dependent protein kinase catalytic subunit (PKA C) (EC 	w
+CATALYTIC	worm	P21137	kin-1	P21137	13	95	cAMP-dependent protein kinase catalytic subunit (PKA C) (EC 	w
 CATALYTIC	worm	P45894	aak-1	P45894	3	20	5'-AMP-activated protein kinase catalytic subunit alpha-1	w
 CATALYTIC	worm	P90829	F10C2.4	P90829	3	112	DNA polymerase delta catalytic subunit	w
 CATALYTIC	worm	P91500	nmrk-1	P91500	1	17	Molybdopterin synthase catalytic subunit	w
@@ -341,7 +341,7 @@ CATALYTIC	worm	Q19360	rfl-1	Q19360	5	56	NEDD8-activating enzyme E1 catalytic sub
 CATALYTIC	worm	Q20104	CELE_F36D4.6	Q20104	0	17	Resolvase/invertase-type recombinase catalytic domain-contai	w
 CATALYTIC	worm	Q21484	hat-1	Q21484	4	26	Histone acetyltransferase type B catalytic subunit	w
 CATALYTIC	worm	Q22143	clp-2	Q22143	0	2	Calpain catalytic domain-containing protein	w
-CATALYTIC	worm	Q23623	tgt-1	Q23623	1	2	Queuine tRNA-ribosyltransferase catalytic subunit	w
+CATALYTIC	worm	Q23623	tgt-1	Q23623	2	3	Queuine tRNA-ribosyltransferase catalytic subunit	w
 CATALYTIC	worm	Q2EEN8	C27D8.3	Q2EEN8	0	1	Integrase catalytic domain-containing protein	w
 CATALYTIC	worm	Q75MI6	CELE_Y94H6A.10	Q75MI6	0	2	Ulp1 protease family, C-terminal catalytic domain containing	w
 CATALYTIC	worm	Q7JP68	KAPC2_CAEEL	Q7JP68	9	69	cAMP-dependent protein kinase, catalytic subunit-like (EC 2.	w
@@ -398,7 +398,7 @@ CATALYTIC	zebrafish	Q6DBU5	gmppb	Q6DBU5	3	17	Mannose-1-phosphate guanylyltransfe
 CATALYTIC	zebrafish	Q6DFZ8	capn2l	Q6DFZ8	6	12	Calpain-2 catalytic subunit	w
 CATALYTIC	zebrafish	Q6DI31	trmt61a	Q6DI31	4	6	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	w
 CATALYTIC	zebrafish	Q6NUV0	rab3gap1	Q6NUV0	7	9	Rab3 GTPase-activating protein catalytic subunit	w
-CATALYTIC	zebrafish	Q7SYK1	qtrt1	Q7SYK1	1	1	Queuine tRNA-ribosyltransferase catalytic subunit 1	w
+CATALYTIC	zebrafish	Q7SYK1	qtrt1	Q7SYK1	1	2	Queuine tRNA-ribosyltransferase catalytic subunit 1	w
 CATALYTIC	zebrafish	Q7T310	pigm	Q7T310	2	8	GPI alpha-1,4-mannosyltransferase I, catalytic subunit	w
 CATALYTIC	zebrafish	Q7ZVX6	uba3	Q7ZVX6	9	96	NEDD8-activating enzyme E1 catalytic subunit	w
 CATALYTIC	zebrafish	X1WBZ5	prorp	X1WBZ5	1	18	Mitochondrial ribonuclease P catalytic subunit	w
@@ -419,8 +419,8 @@ CATD_HUMAN	human	P07339	CTSD	P07339	14	339
 CATD_MOUSE	fly	CATD_MOUSE	CATD_MOUSE		0	1		
 CATECHOL	human	A0A2R8Y5M8	TOMT	A0A2R8Y5M8	0	1	catechol O-methyltransferase	w
 CATECHOL	human	P16662	UGT2B7	P16662	23	39	UDP-glucuronosyltransferase 2B7 (UDPGT 2B7) (UGT2B7) (EC 2.4	w
-CATECHOL	human	P21964	COMT	P21964	16	328	Catechol O-methyltransferase (EC 2.1.1.6)	w
-CATECHOL	human	Q86VU5	COMTD1	Q86VU5	6	229	Catechol O-methyltransferase domain-containing protein 1 (EC	w
+CATECHOL	human	P21964	COMT	P21964	21	333	Catechol O-methyltransferase (EC 2.1.1.6)	w
+CATECHOL	human	Q86VU5	COMTD1	Q86VU5	7	230	Catechol O-methyltransferase domain-containing protein 1 (EC	w
 CATECHOL	human	Q8WZ04	TOMT	Q8WZ04	6	115	Transmembrane O-methyltransferase (EC 2.1.1.6) (Catechol O-m	w
 CATECHOL	worm	Q965W3	comt-3	Q965W3	0	51	Catechol O-methyltransferase domain-containing protein 1	w
 CATECHOL	worm	Q9XXH0	comt-2	Q9XXH0	0	3	Catechol O-methyltransferase domain-containing protein 1	w
@@ -450,7 +450,7 @@ CATENIN	zebrafish	B7ZC77	Ctnna2	B7ZC77	6	103	Catenin alpha-2	w
 CATENIN	zebrafish	F1QGH7	ctnnb1	F1QGH7	44	284	Catenin beta-1	w
 CATENIN	zebrafish	Q9PVF8	ctnna1	Q9PVF8	10	103	Catenin alpha-1	w
 CATERPILLER	human	Q7RTR2	NLRC3	Q7RTR2	0	25	NLR family CARD domain-containing protein 3 (CARD15-like pro	w
-CATERPILLER	human	Q86UT6	NLRX1	Q86UT6	5	112	NLR family member X1 (Caterpiller protein 11.3) (CLR11.3) (N	w
+CATERPILLER	human	Q86UT6	NLRX1	Q86UT6	6	113	NLR family member X1 (Caterpiller protein 11.3) (CLR11.3) (N	w
 CATERPILLER	human	Q86WI3	NLRC5	Q86WI3	2	30	Protein NLRC5 (Caterpiller protein 16.1) (CLR16.1) (Nucleoti	w
 CATERPILLER	human	Q96P20	NLRP3	Q96P20	13	367	NACHT, LRR and PYD domains-containing protein 3 (EC 3.6.4.-)	w
 CATE_HUMAN	human	P14091	CTSE	P14091	9	56		
@@ -667,7 +667,7 @@ CATIP	human	Q7Z7H3	CATIP	Q7Z7H3	9	44	Ciliogenesis-associated TTC17-interacting p
 CATIP	zebrafish	Q08CH6	catip	Q08CH6	1	22	Ciliogenesis-associated TTC17-interacting protein	
 CATIP_HUMAN	human	Q7Z7H3	CATIP	Q7Z7H3	9	44		
 CATK_HUMAN	human	P43235	CTSK	P43235	3	77		
-CATL1	human	Q8TCG5	CPT1C	Q8TCG5	7	99		
+CATL1	human	Q8TCG5	CPT1C	Q8TCG5	10	102		
 CATL1_HUMAN	human	P07711	CTSL	P07711	34	425		
 CATL1_MOUSE	fly	CATL1_MOUSE	CATL1_MOUSE		0	1		
 CATL2	human	O60911	CTSV	O60911	13	174		

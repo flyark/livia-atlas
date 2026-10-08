@@ -21,18 +21,34 @@
     "pairsFpr5": 24564,
     "pairsFpr1": 7511
    }
+  },
+  {
+   "id": "mitomatch-10116",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Rattus norvegicus orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 920,
+    "pairs": 2221,
+    "predictions": 2221,
+    "runs": 2221,
+    "pairsFpr10": 2058,
+    "pairsFpr5": 1761,
+    "pairsFpr1": 699
+   }
   }
  ],
  "counts": {
-  "proteins": 14486,
-  "pairs": 338196,
-  "predictions": 338196,
-  "runs": 338196,
-  "pairsFpr10": 37211,
-  "pairsFpr5": 23998,
-  "pairsFpr1": 7298,
-  "pairsInSeveral": 0,
-  "pairsTested": 338196
+  "proteins": 14688,
+  "pairs": 340069,
+  "predictions": 340417,
+  "runs": 340417,
+  "pairsFpr10": 39004,
+  "pairsFpr5": 25510,
+  "pairsFpr1": 7854,
+  "pairsInSeveral": 348,
+  "pairsTested": 340069
  },
  "files": {
   "proteins": "proteins.json",

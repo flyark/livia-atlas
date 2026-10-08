@@ -1,25 +1,27 @@
 COA-1	human	Q5T124	UBXN11	Q5T124	10	72	UBX domain-containing protein 11 (Colorectal tumor-associate	w
-COA-1	worm	D6RYE0	coa-1	D6RYE0	0	1	Cytochrome Oxidase Assembly subunits	
+COA-1	worm	D6RYE0	coa-1	D6RYE0	1	2	Cytochrome Oxidase Assembly subunits	
 COA-3	worm	Q20033	coa-3	Q20033	0	5	Cytochrome c oxidase assembly factor 3	
 COA-4	worm	O01255	coa-4	O01255	0	4	Cytochrome Oxidase Assembly subunits	
 COA-5	worm	Q9XW18	coa-5	Q9XW18	0	8	Cytochrome c oxidase assembly factor 5	
 COA-6	worm	Q23317	coa-6	Q23317	0	34	PRORP domain-containing protein	
-COA-7	worm	Q23450	coa-7	Q23450	0	17	Cytochrome c oxidase assembly factor 7 homolog	
+COA-7	worm	Q23450	coa-7	Q23450	1	18	Cytochrome c oxidase assembly factor 7 homolog	
 COA-ACYL	yeast	Q12283	MCT1	Q12283	2	31	Malonyl CoA-acyl carrier protein transacylase, mitochondrial	w
-COA-TRANS	human	P55809	OXCT1	P55809	1	145	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondr	w
+COA-TRANS	human	P55809	OXCT1	P55809	2	146	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondr	w
 COA-TRANSFER	human	Q9BYC2	OXCT2	Q9BYC2	2	46	Succinyl-CoA:3-ketoacid coenzyme A transferase 2, mitochondr	w
 COA-TRANSFERASE	fly	FBgn0035298	Scot	Q9W058	1	8	Succinyl-CoA:3-ketoacid-coenzyme A transferase, mitochondria	w
-COA-TRANSFERASE	human	P55809	OXCT1	P55809	1	145	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondr	w
+COA-TRANSFERASE	human	P55809	OXCT1	P55809	2	146	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondr	w
 COA-TRANSFERASE	human	Q9BYC2	OXCT2	Q9BYC2	2	46	Succinyl-CoA:3-ketoacid coenzyme A transferase 2, mitochondr	w
-COA-TRANSFERASE	human	Q9HAC7	SUGCT	Q9HAC7	2	83	Succinyl-CoA:glutarate CoA-transferase (EC 2.8.3.-) (Dermal 	w
+COA-TRANSFERASE	human	Q9HAC7	SUGCT	Q9HAC7	4	85	Succinyl-CoA:glutarate CoA-transferase (EC 2.8.3.-) (Dermal 	w
 COA-TRANSFERASE	worm	Q09618	ZK892.4	Q09618	1	2	CaiB/baiF CoA-transferase family protein ZK892.4	w
+COA-TRANSFERASE	zebrafish	A0A8M9PG48	sugct	A0A8M9PG48	0	1	succinate--hydroxymethylglutarate CoA-transferase isoform X1	w
 COA1	cladophialophora-carrionii	A0A1C1CT03	COA1	A0A1C1CT03	2	15	Cytochrome c oxidase assembly protein 1	
-COA1	human	Q9GZY4	COA1	Q9GZY4	9	118	Cytochrome c oxidase assembly factor 1 homolog (Mitochondria	
+COA1	human	Q9GZY4	COA1	Q9GZY4	15	124	Cytochrome c oxidase assembly factor 1 homolog (Mitochondria	
 COA1	oryza-sativa-subsp-japonica	Q9XJ19	COA1	Q9XJ19	0	4	tricin synthase	
+COA1	pan-troglodytes	K7DGL1	COA1	K7DGL1	7	7	Chromosome 7 open reading frame 44	
 COA1	schizosaccharomyces-pombe	O14320	coa1	O14320	0	9	Cytochrome c oxidase assembly factor 1	
 COA1	yeast	P40452	COA1	P40452	1	20	Cytochrome c oxidase assembly factor 1	
 COA1	zebrafish	B0S673	coa1	B0S673	1	33	Cytochrome c oxidase assembly factor 1 homolog isoform X2	
-COA1_HUMAN	human	Q9GZY4	COA1	Q9GZY4	9	118		
+COA1_HUMAN	human	Q9GZY4	COA1	Q9GZY4	15	124		
 COA2	yeast	Q3E823	COA2	Q3E823	1	6	Cytochrome c oxidase assembly factor 2	
 COA26	oryza-sativa-subsp-japonica	Q6DUC9	COA26	Q6DUC9	0	3	Caffeoyl-CoA O-methyltransferase	
 COA3	human	Q9Y2R0	COA3	Q9Y2R0	56	194	Cytochrome c oxidase assembly factor 3 homolog, mitochondria	
@@ -29,32 +31,54 @@ COA3	yeast	Q3E7B2	COA3	Q3E7B2	2	26	Cytochrome c oxidase assembly factor 3, mitoc
 COA3A	zebrafish	A8KB87	coa3a	A8KB87	5	11	Cytochrome c oxidase assembly factor 3 homolog, mitochondria	
 COA3B	zebrafish	X1WFF5	coa3b	X1WFF5	1	6	Cytochrome c oxidase assembly factor 3	
 COA3_HUMAN	human	Q9Y2R0	COA3	Q9Y2R0	56	194		
-COA4	human	Q9NYJ1	COA4	Q9NYJ1	9	66	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	
-COA4	mus-musculus	Q8BT51	COA4	Q8BT51	0	3	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	
+COA4	human	Q9NYJ1	COA4	Q9NYJ1	11	67	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	
+COA4	mus-musculus	Q8BT51	COA4	Q8BT51	3	6	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	
+COA4	pan-troglodytes	A0A2I3SJU2	COA4	A0A2I3SJU2	3	3	Cytochrome c oxidase assembly factor 4 homolog	
 COA4	rattus-norvegicus	A0ABK0M3D3	Coa4	A0ABK0M3D3	0	3	Cytochrome c oxidase assembly factor 4 homolog	
-COA4	yeast	Q05809	COA4	Q05809	0	14	Cytochrome oxidase assembly factor 4	
-COA4	zebrafish	E7F2T5	coa4	E7F2T5	0	1	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	
-COA4_HUMAN	human	Q9NYJ1	COA4	Q9NYJ1	9	66		
-COA5	human	Q86WW8	COA5	Q86WW8	4	59	Cytochrome c oxidase assembly factor 5	
-COA5_HUMAN	human	Q86WW8	COA5	Q86WW8	4	59		
+COA4	rattus-norvegicus	B0K013	Coa4	B0K013	3	3	Chchd8 protein	
+COA4	yeast	Q05809	COA4	Q05809	2	16	Cytochrome oxidase assembly factor 4	
+COA4	zebrafish	E7F2T5	coa4	E7F2T5	3	4	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	
+COA4_HUMAN	human	Q9NYJ1	COA4	Q9NYJ1	11	67		
+COA4_YEAST	yeast	Q05809	COA4	Q05809	2	16		
+COA5	human	Q86WW8	COA5	Q86WW8	6	62	Cytochrome c oxidase assembly factor 5	
+COA5	mus-musculus	Q99M07	Coa5	Q99M07	2	2	Cytochrome c oxidase assembly factor 5	
+COA5	pan-troglodytes	H2QIE5	COA5	H2QIE5	3	3	Cytochrome c oxidase assembly factor 5	
+COA5	zebrafish	Q0P451	coa5	Q0P451	2	2	Cytochrome c oxidase assembly factor 5	
+COA5_DANRE	zebrafish	Q0P451	coa5	Q0P451	2	2		
+COA5_HUMAN	human	Q86WW8	COA5	Q86WW8	6	62		
 COA6	cladophialophora-carrionii	A0A1C1CFV7	coa6	A0A1C1CFV7	4	72	Cytochrome c oxidase assembly factor 6	
-COA6	human	Q5JTJ3	COA6	Q5JTJ3	17	151	Cytochrome c oxidase assembly factor 6 homolog	
-COA6	mus-musculus	Q8BGD8	Coa6	Q8BGD8	4	98	Cytochrome c oxidase assembly factor 6 homolog	
+COA6	human	Q5JTJ3	COA6	Q5JTJ3	20	154	Cytochrome c oxidase assembly factor 6 homolog	
+COA6	mus-musculus	Q8BGD8	Coa6	Q8BGD8	8	102	Cytochrome c oxidase assembly factor 6 homolog	
+COA6	pan-troglodytes	H2R808	COA6	H2R808	6	6	Cytochrome c oxidase assembly factor 6	
+COA6	rattus-norvegicus	A0A8I5ZL79	Coa6	A0A8I5ZL79	5	5	Cytochrome c oxidase assembly factor 6	
 COA6	yeast	Q3E846	COA6	Q3E846	4	46	Cytochrome c oxidase assembly factor 6	
-COA6	zebrafish	B8A5J2	coa6	B8A5J2	3	97	Cytochrome c oxidase assembly factor 6	
-COA6_HUMAN	human	Q5JTJ3	COA6	Q5JTJ3	17	151		
-COA7	fly	FBgn0039965	Coa7	Q9W5N0	5	23	Cytochrome c oxidase assembly factor 7 homolog (Beta-lactama	
-COA7	human	Q96BR5	COA7	Q96BR5	39	187	Cytochrome c oxidase assembly factor 7 (Beta-lactamase hcp-l	
-COA7	mus-musculus	Q921H9	Coa7	Q921H9	4	20	Cytochrome c oxidase assembly factor 7	
-COA7	rattus-norvegicus	D4AC65	Coa7	D4AC65	3	19	Cytochrome c oxidase assembly factor 7	
-COA7	zebrafish	Q5TYQ3	coa7	Q5TYQ3	6	31	Cytochrome c oxidase assembly factor 7	
-COA7_HUMAN	human	Q96BR5	COA7	Q96BR5	39	187		
-COA8	fly	FBgn0029594	Coa8	Q9W549	4	8	COA8 family protein CG14806, mitochondrial (COA8) (APOPT1 fa	w
-COA8	fly	FBgn0029594	Coa8	Q9W549	4	8	COA8 family protein CG14806, mitochondrial (COA8) (APOPT1 fa	w
-COA8	human	Q96IL0	COA8	Q96IL0	3	27	Cytochrome c oxidase assembly factor 8 (COA8) (Apoptogenic p	
-COA8	mus-musculus	Q9CQW7	Coa8	Q9CQW7	0	1	Cytochrome c oxidase assembly factor 8	
-COA8	worm	Q8MYM9	Y39B6A.34	Q8MYM9	0	2	COA8 family protein Y39B6A.34, mitochondrial	w
-COA8_HUMAN	human	Q96IL0	COA8	Q96IL0	3	27		
+COA6	zebrafish	B8A5J2	coa6	B8A5J2	7	101	Cytochrome c oxidase assembly factor 6	
+COA6.L	xenopus-laevis	A0A1L8H1G1	coa6.L	A0A1L8H1G1	6	6	uncharacterized protein LOC100329134 isoform X1	
+COA6_HUMAN	human	Q5JTJ3	COA6	Q5JTJ3	20	154		
+COA6_YEAST	yeast	Q3E846	COA6	Q3E846	4	46		
+COA7	fly	FBgn0039965	Coa7	Q9W5N0	8	26	Cytochrome c oxidase assembly factor 7 homolog (Beta-lactama	
+COA7	human	Q96BR5	COA7	Q96BR5	46	194	Cytochrome c oxidase assembly factor 7 (Beta-lactamase hcp-l	
+COA7	mus-musculus	Q921H9	Coa7	Q921H9	13	30	Cytochrome c oxidase assembly factor 7	
+COA7	pan-troglodytes	H2PZ14	COA7	H2PZ14	8	9	Cytochrome c oxidase assembly factor 7	
+COA7	rattus-norvegicus	D4AC65	Coa7	D4AC65	10	26	Cytochrome c oxidase assembly factor 7	
+COA7	zebrafish	Q5TYQ3	coa7	Q5TYQ3	15	40	Cytochrome c oxidase assembly factor 7	
+COA7-B	xenopus-laevis	Q5FWY3	coa7-b	Q5FWY3	10	10	Cytochrome c oxidase assembly factor 7B	
+COA7_CAEEL	worm	Q23450	coa-7	Q23450	1	18		
+COA7_DANRE	zebrafish	Q5TYQ3	coa7	Q5TYQ3	15	40		
+COA7_DROME	fly	FBgn0039965	Coa7	Q9W5N0	8	26		
+COA7_HUMAN	human	Q96BR5	COA7	Q96BR5	46	194		
+COA8	fly	FBgn0029594	Coa8	Q9W549	6	10	COA8 family protein CG14806, mitochondrial (COA8) (APOPT1 fa	w
+COA8	fly	FBgn0029594	Coa8	Q9W549	6	10	COA8 family protein CG14806, mitochondrial (COA8) (APOPT1 fa	w
+COA8	human	Q96IL0	COA8	Q96IL0	7	31	Cytochrome c oxidase assembly factor 8 (COA8) (Apoptogenic p	
+COA8	mus-musculus	Q9CQW7	Coa8	Q9CQW7	5	6	Cytochrome c oxidase assembly factor 8	
+COA8	pan-troglodytes	A0A2I3TH01	COA8	A0A2I3TH01	5	5	Cytochrome c oxidase assembly factor 8	
+COA8	rattus-norvegicus	Q32Q90	Coa8	Q32Q90	5	5	Cytochrome c oxidase assembly factor 8	
+COA8	worm	Q8MYM9	Y39B6A.34	Q8MYM9	2	4	COA8 family protein Y39B6A.34, mitochondrial	w
+COA8	zebrafish	B8A5M9	coa8	B8A5M9	4	4	Cytochrome c oxidase assembly factor 8	
+COA8.L	xenopus-laevis	A0A1L8FA31	coa8.L	A0A1L8FA31	4	4	cytochrome c oxidase assembly factor 8 isoform X1	
+COA8_CAEEL	worm	Q8MYM9	Y39B6A.34	Q8MYM9	2	4		
+COA8_DROME	fly	FBgn0029594	Coa8	Q9W549	6	10		
+COA8_HUMAN	human	Q96IL0	COA8	Q96IL0	7	31		
 COAA	dictyostelium-discoideum	P34121	coaA	P34121	1	1	Coactosin	
 COAA	mycobacterium-leprae	Q9X795	coaA	Q9X795	0	1	Pantothenate kinase	
 COAA	mycobacterium-tuberculosis	P9WPA7	coaA	P9WPA7	0	1	Pantothenate kinase	
@@ -96,7 +120,7 @@ COACTIVATOR	human	Q5TA31	RNF187	Q5TA31	11	81	E3 ubiquitin-protein ligase RNF187 
 COACTIVATOR	human	Q5VV67	PPRC1	Q5VV67	63	342	Peroxisome proliferator-activated receptor gamma coactivator	w
 COACTIVATOR	human	Q6UUV7	CRTC3	Q6UUV7	27	82	CREB-regulated transcription coactivator 3 (Transducer of re	w
 COACTIVATOR	human	Q6UUV9	CRTC1	Q6UUV9	15	71	CREB-regulated transcription coactivator 1 (Mucoepidermoid c	w
-COACTIVATOR	human	Q7KZF4	SND1	Q7KZF4	22	387	Staphylococcal nuclease domain-containing protein 1 (EC 3.1.	w
+COACTIVATOR	human	Q7KZF4	SND1	Q7KZF4	24	389	Staphylococcal nuclease domain-containing protein 1 (EC 3.1.	w
 COACTIVATOR	human	Q86V81	ALYREF	Q86V81	56	479	THO complex subunit 4 (Tho4) (Ally of AML-1 and LEF-1) (Aly/	w
 COACTIVATOR	human	Q86YN6	PPARGC1B	Q86YN6	48	247	Peroxisome proliferator-activated receptor gamma coactivator	w
 COACTIVATOR	human	Q8IXP5	POU2AF2	Q8IXP5	2	16	POU domain class 2-associating factor 2 (Oct coactivator fro	w
@@ -183,16 +207,16 @@ COAS1	human	Q5TAG4	NBPF12	Q5TAG4	7	25
 COAS1_HUMAN	human	Q5SY13	COL5A1-AS1	Q5SY13	0	5		
 COAS2	human	Q9Y536	PPIAL4A	Q9Y536	72	449		
 COASTER	human	Q9Y4E5	ZNF451	Q9Y4E5	19	150		
-COASY	human	Q13057	COASY	Q13057	7	132	Bifunctional coenzyme A synthase (CoA synthase) (NBP) (POV-2	
-COASY	mus-musculus	Q9DBL7	Coasy	Q9DBL7	0	13	Bifunctional coenzyme A synthase	
-COASY	rattus-norvegicus	Q5XIA5	Coasy	Q5XIA5	0	15	Bifunctional coenzyme A synthase	
+COASY	human	Q13057	COASY	Q13057	8	133	Bifunctional coenzyme A synthase (CoA synthase) (NBP) (POV-2	
+COASY	mus-musculus	Q9DBL7	Coasy	Q9DBL7	1	14	Bifunctional coenzyme A synthase	
+COASY	rattus-norvegicus	Q5XIA5	Coasy	Q5XIA5	1	16	Bifunctional coenzyme A synthase	
 COASY	zebrafish	Q66HW0	coasy	Q66HW0	0	16	Bifunctional coenzyme A synthase	
-COASY_HUMAN	human	Q13057	COASY	Q13057	7	132		
+COASY_HUMAN	human	Q13057	COASY	Q13057	8	133		
 COAT	fly	FBgn0025724	beta'COP	O62621	7	82	Coatomer subunit beta' (Beta'-coat protein) (Beta'-COP)	w
 COAT	human	O60641	SNAP91	O60641	26	98	Clathrin coat assembly protein AP180 (91 kDa synaptosomal-as	w
 COAT	human	P31146	CORO1A	P31146	40	411	Coronin-1A (Coronin-like protein A) (Clipin-A) (Coronin-like	w
 COAT	human	P35606	COPB2	P35606	30	484	Coatomer subunit beta' (Beta'-coat protein) (Beta'-COP) (p10	w
-COAT	human	Q9H4A6	GOLPH3	Q9H4A6	19	280	Golgi phosphoprotein 3 (Coat protein GPP34) (Mitochondrial D	w
+COAT	human	Q9H4A6	GOLPH3	Q9H4A6	27	289	Golgi phosphoprotein 3 (Coat protein GPP34) (Mitochondrial D	w
 COAT	human	Q9NR31	SAR1A	Q9NR31	27	384	Small COPII coat GTPase SAR1A (EC 3.6.5.2) (COPII-associated	w
 COAT	human	Q9Y6B6	SAR1B	Q9Y6B6	40	490	Small COPII coat GTPase SAR1B (EC 3.6.5.2) (GTP-binding prot	w
 COAT	virus	Q91E10		Q91E10	0	13	Coat protein	w

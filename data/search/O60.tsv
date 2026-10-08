@@ -12,7 +12,7 @@ O60061	schizosaccharomyces-pombe	O60061	alg5	O60061	0	4	Dolichyl-phosphate beta-
 O60063	schizosaccharomyces-pombe	O60063	nam9	O60063	13	262	Small ribosomal subunit protein uS4m	
 O60064	schizosaccharomyces-pombe	O60064	SPBC13G1.02	O60064	2	9	Probable mannose-1-phosphate guanyltransferase	
 O60065	schizosaccharomyces-pombe	O60065	pex14	O60065	4	26	Peroxisomal membrane protein pex14	
-O60066	schizosaccharomyces-pombe	O60066	abh1	O60066	0	2	tRNA demethylase abh1	
+O60066	schizosaccharomyces-pombe	O60066	abh1	O60066	1	3	tRNA demethylase abh1	
 O60068	schizosaccharomyces-pombe	O60068	isd11	O60068	5	21	Protein isd11	
 O60070	schizosaccharomyces-pombe	O60070	ash2	O60070	4	41	Set1 complex component ash2	
 O60071	schizosaccharomyces-pombe	O60071	SPBC13G1.09	O60071	21	165	Uncharacterized protein C13G1.09	
@@ -110,8 +110,8 @@ O60188	schizosaccharomyces-pombe	O60188	utp6	O60188	10	134	U3 small nucleolar RN
 O60198	schizosaccharomyces-pombe	O60198	sam1	O60198	0	11	S-adenosylmethionine synthase	
 O60200	yeast	O60200	MDM35	O60200	3	13	Mitochondrial distribution and morphology protein 35	
 O60216	human	O60216	RAD21	O60216	56	454	Double-strand-break repair protein rad21 homolog (hHR21) (Nu	
-O60218	human	O60218	AKR1B10	O60218	7	121	Aldo-keto reductase family 1 member B10 (EC 1.1.1.300) (EC 1	
-O60220	human	O60220	TIMM8A	O60220	7	103	Mitochondrial import inner membrane translocase subunit Tim8	
+O60218	human	O60218	AKR1B10	O60218	13	127	Aldo-keto reductase family 1 member B10 (EC 1.1.1.300) (EC 1	
+O60220	human	O60220	TIMM8A	O60220	9	105	Mitochondrial import inner membrane translocase subunit Tim8	
 O60224	human	O60224	SSX4	O60224	14	72	Protein SSX4 (Cancer/testis antigen 5.4) (CT5.4)	
 O60225	human	O60225	SSX5	O60225	2	59	Protein SSX5	
 O60229	human	O60229	KALRN	O60229	3	95	Kalirin (EC 2.7.11.1) (Huntingtin-associated protein-interac	
@@ -120,7 +120,7 @@ O60232	human	O60232	ZNRD2	O60232	22	312	Protein ZNRD2 (Autoantigen p27) (Protein
 O60234	human	O60234	GMFG	O60234	13	165	Glia maturation factor gamma (GMF-gamma)	
 O60235	human	O60235	TMPRSS11D	O60235	16	70	Transmembrane protease serine 11D (EC 3.4.21.-) (Airway tryp	
 O60237	human	O60237	PPP1R12B	O60237	23	68	Protein phosphatase 1 regulatory subunit 12B (Myosin phospha	
-O60238	human	O60238	BNIP3L	O60238	25	135	BCL2/adenovirus E1B 19 kDa protein-interacting protein 3-lik	
+O60238	human	O60238	BNIP3L	O60238	32	141	BCL2/adenovirus E1B 19 kDa protein-interacting protein 3-lik	
 O60239	human	O60239	SH3BP5	O60239	9	44	SH3 domain-binding protein 5 (SH3BP-5) (SH3 domain-binding p	
 O60240	human	O60240	PLIN1	O60240	11	153	Perilipin-1 (Lipid droplet-associated protein)	
 O60241	human	O60241	ADGRB2	O60241	46	248	Adhesion G protein-coupled receptor B2 (Brain-specific angio	
@@ -281,7 +281,7 @@ O60763	human	O60763	USO1	O60763	41	330	General vesicular transport factor p115 (
 O60765	human	O60765	ZNF354A	O60765	1	77	Zinc finger protein 354A (Transcription factor 17) (TCF-17) 	
 O60774	human	O60774	FMO6P	O60774	5	13	Putative dimethylaniline monooxygenase [N-oxide-forming] 6 (	
 O60779	human	O60779	SLC19A2	O60779	2	98	Thiamine transporter 1 (ThTr-1) (ThTr1) (Solute carrier fami	
-O60783	human	O60783	MRPS14	O60783	27	636	Small ribosomal subunit protein uS14m (28S ribosomal protein	
+O60783	human	O60783	MRPS14	O60783	28	637	Small ribosomal subunit protein uS14m (28S ribosomal protein	
 O60784	human	O60784	TOM1	O60784	28	125	Target of Myb1 membrane trafficking protein (Target of Myb p	
 O60806	human	O60806	TBX19	O60806	31	373	T-box transcription factor TBX19 (T-box protein 19) (T-box f	
 O60809	human	O60809	PRAMEF10	O60809	1	37	PRAME family member 10	
@@ -294,7 +294,7 @@ O60825	human	O60825	PFKFB2	O60825	8	103	6-phosphofructo-2-kinase/fructose-2,6-bi
 O60826	human	O60826	CCDC22	O60826	62	261	Coiled-coil domain-containing protein 22	
 O60828	human	O60828	PQBP1	O60828	13	142	Polyglutamine-binding protein 1 (PQBP-1) (38 kDa nuclear pro	
 O60829	human	O60829	PAGE4	O60829	89	624	P antigen family member 4 (PAGE-4) (G antigen family C membe	
-O60830	human	O60830	TIMM17B	O60830	9	138	Mitochondrial import inner membrane translocase subunit Tim1	
+O60830	human	O60830	TIMM17B	O60830	10	139	Mitochondrial import inner membrane translocase subunit Tim1	
 O60831	human	O60831	PRAF2	O60831	8	149	PRA1 family protein 2	
 O60832	human	O60832	DKC1	O60832	42	423	H/ACA ribonucleoprotein complex subunit DKC1 (EC 5.4.99.-) (	
 O60840	human	O60840	CACNA1F	O60840	2	29	Voltage-dependent L-type calcium channel subunit alpha-1F (V	
@@ -324,7 +324,7 @@ O60921	human	O60921	HUS1	O60921	15	190	Checkpoint protein HUS1 (hHUS1)
 O60925	human	O60925	PFDN1	O60925	19	226	Prefoldin subunit 1	
 O60927	human	O60927	PPP1R11	O60927	18	109	E3 ubiquitin-protein ligase PPP1R11 (EC 2.3.2.27) (Hemochrom	
 O60928	human	O60928	KCNJ13	O60928	22	87	Inward rectifier potassium channel 13 (Inward rectifier K(+)	
-O60930	human	O60930	RNASEH1	O60930	10	75	Ribonuclease H1 (RNase H1) (EC 3.1.26.4) (Ribonuclease H typ	
+O60930	human	O60930	RNASEH1	O60930	11	76	Ribonuclease H1 (RNase H1) (EC 3.1.26.4) (Ribonuclease H typ	
 O60931	human	O60931	CTNS	O60931	1	28	Cystinosin	
 O60934	human	O60934	NBN	O60934	49	245	Nibrin (Cell cycle regulatory protein p95) (Nijmegen breakag	
 O60936	human	O60936	NOL3	O60936	11	58	Nucleolar protein 3 (Apoptosis repressor with CARD) (Muscle-	

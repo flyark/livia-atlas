@@ -1,4 +1,4 @@
-Q3U034	mus-musculus	Q3U034	Mettl4	Q3U034	0	4	N(6)-adenine-specific methyltransferase METTL4	
+Q3U034	mus-musculus	Q3U034	Mettl4	Q3U034	8	12	N(6)-adenine-specific methyltransferase METTL4	
 Q3U095	mus-musculus	Q3U095	Nxpe2	Q3U095	0	1	NXPE family member 2	
 Q3U0A6	mus-musculus	Q3U0A6	Hbq1b	Q3U0A6	9	10	Globin d1	
 Q3U0B3	mus-musculus	Q3U0B3	Dhrs11	Q3U0B3	1	13	Dehydrogenase/reductase SDR family member 11	
@@ -21,7 +21,7 @@ Q3U133	mus-musculus	Q3U133	Znf746	Q3U133	0	19	Zinc finger protein 746
 Q3U145	mus-musculus	Q3U145	Tmem64	Q3U145	0	1	Transmembrane protein 64	
 Q3U155	mus-musculus	Q3U155	Ccdc174	Q3U155	0	2	Coiled-coil domain-containing protein 174	
 Q3U182	mus-musculus	Q3U182	Crtc2	Q3U182	7	29	CREB-regulated transcription coactivator 2	
-Q3U186	mus-musculus	Q3U186	Rars2	Q3U186	0	29	Probable arginine--tRNA ligase, mitochondrial	
+Q3U186	mus-musculus	Q3U186	Rars2	Q3U186	2	31	Probable arginine--tRNA ligase, mitochondrial	
 Q3U1C4	mus-musculus	Q3U1C4	Secisbp2	Q3U1C4	13	89	Selenocysteine insertion sequence-binding protein 2	
 Q3U1F9	mus-musculus	Q3U1F9	Pag1	Q3U1F9	18	121	Phosphoprotein associated with glycosphingolipid-enriched mi	
 Q3U1G5	mus-musculus	Q3U1G5	Isg20l2	Q3U1G5	1	18	Interferon-stimulated 20 kDa exonuclease-like 2	
@@ -37,10 +37,10 @@ Q3U1V6	mus-musculus	Q3U1V6	Uevld	Q3U1V6	3	67	Ubiquitin-conjugating enzyme E2 var
 Q3U1V8	mus-musculus	Q3U1V8	Map3k9	Q3U1V8	2	5	Mitogen-activated protein kinase kinase kinase 9	
 Q3U1Y4	mus-musculus	Q3U1Y4	Dennd4b	Q3U1Y4	0	1	DENN domain-containing protein 4B	
 Q3U1Z5	mus-musculus	Q3U1Z5	Gpsm3	Q3U1Z5	0	2	G-protein-signaling modulator 3	
-Q3U213	mus-musculus	Q3U213	Serac1	Q3U213	0	1	Protein SERAC1	
+Q3U213	mus-musculus	Q3U213	Serac1	Q3U213	5	6	Protein SERAC1	
 Q3U214	mus-musculus	Q3U214	Mast3	Q3U214	0	3	Microtubule-associated serine/threonine-protein kinase 3	
 Q3U269	mus-musculus	Q3U269	Tstd2	Q3U269	0	1	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	
-Q3U276	mus-musculus	Q3U276	Sdhaf1	Q3U276	2	11	Succinate dehydrogenase assembly factor 1, mitochondrial	
+Q3U276	mus-musculus	Q3U276	Sdhaf1	Q3U276	11	19	Succinate dehydrogenase assembly factor 1, mitochondrial	
 Q3U284	mus-musculus	Q3U284	Tmem231	Q3U284	2	18	Transmembrane protein 231	
 Q3U285	mus-musculus	Q3U285	Lcorl	Q3U285	2	14	Ligand-dependent nuclear receptor corepressor-like protein	
 Q3U288	mus-musculus	Q3U288	Znf710	Q3U288	0	35	Zinc finger protein 710	
@@ -51,7 +51,7 @@ Q3U2K0	mus-musculus	Q3U2K0	Fam193b	Q3U2K0	0	1	Protein FAM193B
 Q3U2K5	mus-musculus	Q3U2K5	Kdm4d	Q3U2K5	0	6	Lysine-specific demethylase 4D	
 Q3U2P1	mus-musculus	Q3U2P1	Sec24a	Q3U2P1	13	75	Protein transport protein Sec24A	
 Q3U2S4	mus-musculus	Q3U2S4	Otud5	Q3U2S4	5	7	OTU domain-containing protein 5	
-Q3U2U7	mus-musculus	Q3U2U7	Mettl17	Q3U2U7	3	78	Ribosome assembly protein METTL17, mitochondrial	
+Q3U2U7	mus-musculus	Q3U2U7	Mettl17	Q3U2U7	7	82	Ribosome assembly protein METTL17, mitochondrial	
 Q3U2V3	mus-musculus	Q3U2V3	Nudt18	Q3U2V3	0	2	8-oxo-dGDP phosphatase NUDT18	
 Q3U308	mus-musculus	Q3U308	Ctu2	Q3U308	1	14	Cytoplasmic tRNA 2-thiolation protein 2	
 Q3U319	mus-musculus	Q3U319	Rnf40	Q3U319	5	59	E3 ubiquitin-protein ligase BRE1B	
@@ -85,13 +85,13 @@ Q3U564	mus-musculus	Q3U564	Dcp1b	Q3U564	14	43	mRNA-decapping enzyme 1B
 Q3U5A2	mus-musculus	Q3U5A2	Muc3a	Q3U5A2	0	1	Mucin 3A, cell surface associated	
 Q3U5C7	mus-musculus	Q3U5C7	Prickle1	Q3U5C7	7	47	Prickle-like protein 1	
 Q3U5C8	mus-musculus	Q3U5C8	Arhgef16	Q3U5C8	0	1	Rho guanine nucleotide exchange factor 16	
-Q3U5F4	mus-musculus	Q3U5F4	Yrdc	Q3U5F4	0	3	Threonylcarbamoyl-AMP synthase	
-Q3U5Q7	mus-musculus	Q3U5Q7	Cmpk2	Q3U5Q7	0	10	UMP-CMP kinase 2, mitochondrial	
+Q3U5F4	mus-musculus	Q3U5F4	Yrdc	Q3U5F4	3	6	Threonylcarbamoyl-AMP synthase	
+Q3U5Q7	mus-musculus	Q3U5Q7	Cmpk2	Q3U5Q7	1	11	UMP-CMP kinase 2, mitochondrial	
 Q3U687	mus-musculus	Q3U687	Ifit1bl2	Q3U687	4	19	Interferon induced protein with tetratricopeptide repeats 1B	
 Q3U6B2	mus-musculus	Q3U6B2	Gpr183	Q3U6B2	4	20	G-protein coupled receptor 183	
 Q3U6K5	mus-musculus	Q3U6K5	Spata6	Q3U6K5	1	12	Spermatogenesis-associated protein 6	
 Q3U6Q4	mus-musculus	Q3U6Q4	Pik3r6	Q3U6Q4	6	45	Phosphoinositide 3-kinase regulatory subunit 6	
-Q3U6U5	mus-musculus	Q3U6U5	Gtpbp6	Q3U6U5	2	116	Putative GTP-binding protein 6	
+Q3U6U5	mus-musculus	Q3U6U5	Gtpbp6	Q3U6U5	3	117	Putative GTP-binding protein 6	
 Q3U7R1	mus-musculus	Q3U7R1	Esyt1	Q3U7R1	2	15	Extended synaptotagmin-1	
 Q3U7U3	mus-musculus	Q3U7U3	Fbxo7	Q3U7U3	5	32	F-box only protein 7	
 Q3U821	mus-musculus	Q3U821	Wdr75	Q3U821	8	110	WD repeat-containing protein 75	
@@ -124,7 +124,7 @@ Q3UDR8	mus-musculus	Q3UDR8	Yipf3	Q3UDR8	1	5	Protein YIPF3
 Q3UE17	mus-musculus	Q3UE17	Mex3d	Q3UE17	1	2	RNA-binding protein MEX3D	
 Q3UE37	mus-musculus	Q3UE37	Ube2z	Q3UE37	6	33	Ubiquitin-conjugating enzyme E2 Z	
 Q3UEB3	mus-musculus	Q3UEB3	Puf60	Q3UEB3	8	54	Poly(U)-binding-splicing factor PUF60	
-Q3UEG6	mus-musculus	Q3UEG6	Agxt2	Q3UEG6	1	1	Alanine--glyoxylate aminotransferase 2, mitochondrial	
+Q3UEG6	mus-musculus	Q3UEG6	Agxt2	Q3UEG6	2	2	Alanine--glyoxylate aminotransferase 2, mitochondrial	
 Q3UEI1	mus-musculus	Q3UEI1	Pde4c	Q3UEI1	0	4	3,5-cyclic-AMP phosphodiesterase 4C	
 Q3UEN2	mus-musculus	Q3UEN2	Shld2	Q3UEN2	3	4	Shieldin complex subunit 2	
 Q3UES3	mus-musculus	Q3UES3	Tnks2	Q3UES3	4	20	Poly	
@@ -132,7 +132,7 @@ Q3UEZ8	mus-musculus	Q3UEZ8	Slc10a4	Q3UEZ8	0	1	Sodium/bile acid cotransporter 4
 Q3UFB2	mus-musculus	Q3UFB2	Znhit6	Q3UFB2	1	9	Box C/D snoRNA protein 1	
 Q3UFB7	mus-musculus	Q3UFB7	Ntrk1	Q3UFB7	17	155	High affinity nerve growth factor receptor	
 Q3UFD7	mus-musculus	Q3UFD7	Ffar3	Q3UFD7	0	4	Free fatty acid receptor 3	
-Q3UFF7	mus-musculus	Q3UFF7	Lyplal1	Q3UFF7	1	1	Lysophospholipase-like protein 1	
+Q3UFF7	mus-musculus	Q3UFF7	Lyplal1	Q3UFF7	20	23	Lysophospholipase-like protein 1	
 Q3UFJ6	mus-musculus	Q3UFJ6	Tmem184a	Q3UFJ6	0	5	Transmembrane protein 184A	
 Q3UFK8	mus-musculus	Q3UFK8	Frmd8	Q3UFK8	1	5	FERM domain-containing protein 8	
 Q3UFM5	mus-musculus	Q3UFM5	Nom1	Q3UFM5	6	20	Nucleolar MIF4G domain-containing protein 1	
@@ -143,7 +143,7 @@ Q3UFT3	mus-musculus	Q3UFT3	Garem1	Q3UFT3	3	12	GRB2-associated and regulator of M
 Q3UFY0	mus-musculus	Q3UFY0	Rrp36	Q3UFY0	4	32	Ribosomal RNA processing protein 36 homolog	
 Q3UFY4	mus-musculus	Q3UFY4	Rsph3a	Q3UFY4	1	4	Radial spoke head protein 3 homolog A	
 Q3UFY7	mus-musculus	Q3UFY7	Nt5c3b	Q3UFY7	0	18	7-methylguanosine phosphate-specific 5'-nucleotidase	
-Q3UFY8	mus-musculus	Q3UFY8	Trmt10c	Q3UFY8	7	47	tRNA methyltransferase 10 homolog C	
+Q3UFY8	mus-musculus	Q3UFY8	Trmt10c	Q3UFY8	9	49	tRNA methyltransferase 10 homolog C	
 Q3UG50	mus-musculus	Q3UG50	Mrgprx2	Q3UG50	0	10	Mas-related G-protein coupled receptor member X2	
 Q3UG61	mus-musculus	Q3UG61	Mrgprb1	Q3UG61	0	8	Mas-related G-protein coupled receptor member B1	
 Q3UG98	mus-musculus	Q3UG98	Nat9	Q3UG98	0	3	Alpha/beta-tubulin-N-acetyltransferase 9	
@@ -153,11 +153,11 @@ Q3UGM2	mus-musculus	Q3UGM2	Nek10	Q3UGM2	0	6	Serine/threonine-protein kinase Nek1
 Q3UGP9	mus-musculus	Q3UGP9	Lrrc58	Q3UGP9	0	3	Leucine-rich repeat-containing protein 58	
 Q3UGR5	mus-musculus	Q3UGR5	Hdhd2	Q3UGR5	0	4	Haloacid dehalogenase-like hydrolase domain-containing prote	
 Q3UGS4	mus-musculus	Q3UGS4	Mcrip1	Q3UGS4	1	9	Mapk-regulated corepressor-interacting protein 1	
-Q3UGX3	mus-musculus	Q3UGX3	Nat8l	Q3UGX3	0	5	N-acetylaspartate synthetase	
+Q3UGX3	mus-musculus	Q3UGX3	Nat8l	Q3UGX3	5	11	N-acetylaspartate synthetase	
 Q3UH45	mus-musculus	Q3UH45	Tecpr2	Q3UH45	4	12	Tectonin beta-propeller repeat containing 2	
 Q3UH68	mus-musculus	Q3UH68	Limch1	Q3UH68	0	17	LIM and calponin homology domains-containing protein 1	
 Q3UH99	mus-musculus	Q3UH99	Shisa6	Q3UH99	1	44	Protein shisa-6	
-Q3UHB1	mus-musculus	Q3UHB1	Nt5dc3	Q3UHB1	0	1	5'-nucleotidase domain-containing protein 3	
+Q3UHB1	mus-musculus	Q3UHB1	Nt5dc3	Q3UHB1	1	2	5'-nucleotidase domain-containing protein 3	
 Q3UHB8	mus-musculus	Q3UHB8	Ccdc177	Q3UHB8	0	1	Coiled-coil domain-containing protein 177	
 Q3UHC1	mus-musculus	Q3UHC1	Rapgef1	Q3UHC1	6	46	CRK SH3-binding GNRP	
 Q3UHC7	mus-musculus	Q3UHC7	Dab2ip	Q3UHC7	9	37	Disabled homolog 2-interacting protein	
@@ -184,7 +184,7 @@ Q3UIJ9	mus-musculus	Q3UIJ9	Myzap	Q3UIJ9	0	12	Myocardial zonula adherens protein
 Q3UIK4	mus-musculus	Q3UIK4	Mettl14	Q3UIK4	2	43	N(6)-adenosine-methyltransferase non-catalytic subunit METTL	
 Q3UIL6	mus-musculus	Q3UIL6	Plekha7	Q3UIL6	3	29	Pleckstrin homology domain-containing family A member 7	
 Q3UIR3	mus-musculus	Q3UIR3	Dtx3l	Q3UIR3	2	6	E3 ubiquitin-protein ligase DTX3L	
-Q3UIU2	mus-musculus	Q3UIU2	Ndufb6	Q3UIU2	7	127	NADH dehydrogenase	
+Q3UIU2	mus-musculus	Q3UIU2	Ndufb6	Q3UIU2	8	127	NADH dehydrogenase	
 Q3UIW5	mus-musculus	Q3UIW5	Rnf10	Q3UIW5	1	5	E3 ubiquitin-protein ligase RNF10	
 Q3UIZ8	mus-musculus	Q3UIZ8	Mylk3	Q3UIZ8	0	5	Myosin light chain kinase 3	
 Q3UJ22	mus-musculus	Q3UJ22	Ct45a	Q3UJ22	1	9	Cancer/testis antigen 45	
@@ -195,7 +195,7 @@ Q3UJD6	mus-musculus	Q3UJD6	Usp19	Q3UJD6	6	45	Ubiquitin carboxyl-terminal hydrola
 Q3UJF0	mus-musculus	Q3UJF0	Gpr55	Q3UJF0	4	10	G-protein coupled receptor 55	
 Q3UJK4	mus-musculus	Q3UJK4	Gtpbp2	Q3UJK4	0	3	GTP-binding protein 2	
 Q3UJP5	mus-musculus	Q3UJP5	Cfap418	Q3UJP5	0	1	Cilia- and flagella-associated protein 418	
-Q3UJU9	mus-musculus	Q3UJU9	Rmdn3	Q3UJU9	10	23	Regulator of microtubule dynamics protein 3	
+Q3UJU9	mus-musculus	Q3UJU9	Rmdn3	Q3UJU9	21	34	Regulator of microtubule dynamics protein 3	
 Q3UJV1	mus-musculus	Q3UJV1	Ccdc61	Q3UJV1	1	7	Centrosomal protein CCDC61	
 Q3UJZ3	mus-musculus	Q3UJZ3	Armc7	Q3UJZ3	1	55	Armadillo repeat-containing protein 7	
 Q3UK10	mus-musculus	Q3UK10	B9d2	Q3UK10	3	19	B9 domain-containing protein 2	
@@ -213,7 +213,7 @@ Q3ULA2	mus-musculus	Q3ULA2	Btrc	Q3ULA2	9	122	F-box/WD repeat-containing protein 
 Q3ULB5	mus-musculus	Q3ULB5	Pak6	Q3ULB5	13	39	Serine/threonine-protein kinase PAK 6	
 Q3ULC4	mus-musculus	Q3ULC4	Pramel4	Q3ULC4	1	91	PRAME like 4	
 Q3ULD5	mus-musculus	Q3ULD5	Mccc2	Q3ULD5	1	23	Methylcrotonoyl-CoA carboxylase beta chain, mitochondrial	
-Q3ULF4	mus-musculus	Q3ULF4	Spg7	Q3ULF4	8	104	Mitochondrial inner membrane m-AAA protease component parapl	
+Q3ULF4	mus-musculus	Q3ULF4	Spg7	Q3ULF4	9	105	Mitochondrial inner membrane m-AAA protease component parapl	
 Q3ULJ0	mus-musculus	Q3ULJ0	Gpd1l	Q3ULJ0	1	5	Glycerol-3-phosphate dehydrogenase 1-like protein	
 Q3ULJ3	mus-musculus	Q3ULJ3	Upf3a	Q3ULJ3	4	44	UPF3 regulator of nonsense transcripts homolog A (Yeast)	
 Q3ULJ8	mus-musculus	Q3ULJ8	Duxf4	Q3ULJ8	0	7	Double homeobox family member 4	
@@ -245,16 +245,17 @@ Q3UMW8	mus-musculus	Q3UMW8	Cln5	Q3UMW8	0	1	Bis(monoacylglycero)phosphate synthas
 Q3UMY5	mus-musculus	Q3UMY5	Eml4	Q3UMY5	9	33	Echinoderm microtubule-associated protein-like 4	
 Q3UMZ3	mus-musculus	Q3UMZ3	Plpp5	Q3UMZ3	2	10	Phospholipid phosphatase 5	
 Q3UN02	mus-musculus	Q3UN02	Lclat1	Q3UN02	0	16	Lysocardiolipin acyltransferase 1	
-Q3UN04	mus-musculus	Q3UN04	Usp30	Q3UN04	9	34	Ubiquitin carboxyl-terminal hydrolase 30	
+Q3UN04	mus-musculus	Q3UN04	Usp30	Q3UN04	13	38	Ubiquitin carboxyl-terminal hydrolase 30	
 Q3UN16	mus-musculus	Q3UN16	Gpr162	Q3UN16	1	7	Probable G-protein coupled receptor 162	
 Q3UN58	mus-musculus	Q3UN58	Faap20	Q3UN58	6	32	Fanconi anemia core complex-associated protein 20	
+Q3UN90	mus-musculus	Q3UN90	Lyrm9	Q3UN90	10	11	LYR motif-containing protein 9	
 Q3UNA4	mus-musculus	Q3UNA4	Nxt2	Q3UNA4	7	18	NTF2-related export protein 2	
 Q3UNC9	mus-musculus	Q3UNC9	Cks1brt	Q3UNC9	4	46	Cyclin-dependent kinases regulatory subunit	
 Q3UND0	mus-musculus	Q3UND0	Skap2	Q3UND0	12	21	Src kinase-associated phosphoprotein 2	
 Q3UNH4	mus-musculus	Q3UNH4	Gprin1	Q3UNH4	0	2	G protein-regulated inducer of neurite outgrowth 1	
 Q3UNS7	mus-musculus	Q3UNS7	Adgrg4	Q3UNS7	0	6	Adhesion G protein-coupled receptor G4	
 Q3UNW5	mus-musculus	Q3UNW5	Tfcp2l1	Q3UNW5	7	122	Transcription factor CP2-like protein 1	
-Q3UNX5	mus-musculus	Q3UNX5	Acsm3	Q3UNX5	0	1	Acyl-coenzyme A synthetase ACSM3, mitochondrial	
+Q3UNX5	mus-musculus	Q3UNX5	Acsm3	Q3UNX5	2	3	Acyl-coenzyme A synthetase ACSM3, mitochondrial	
 Q3UNZ2	mus-musculus	Q3UNZ2	Ldc1	Q3UNZ2	2	7	Gene model 853, (NCBI)	
 Q3UNZ8	mus-musculus	Q3UNZ8	Cryzl2	Q3UNZ8	0	1	Quinone oxidoreductase-like protein 2	
 Q3UP23	mus-musculus	Q3UP23	Tmem26	Q3UP23	0	1	Transmembrane protein 26	
@@ -275,7 +276,7 @@ Q3UQ19	mus-musculus	Q3UQ19	Phactr2	Q3UQ19	2	3	Phosphatase and actin regulator
 Q3UQ22	mus-musculus	Q3UQ22	Ntn5	Q3UQ22	4	8	Netrin-5	
 Q3UQ28	mus-musculus	Q3UQ28	Pxdn	Q3UQ28	0	9	Peroxidasin homolog	
 Q3UQ41	mus-musculus	Q3UQ41	Tmprss11a	Q3UQ41	0	8	Transmembrane protease serine 11A	
-Q3UQ84	mus-musculus	Q3UQ84	Tars2	Q3UQ84	2	120	Threonine--tRNA ligase, mitochondrial	
+Q3UQ84	mus-musculus	Q3UQ84	Tars2	Q3UQ84	9	127	Threonine--tRNA ligase, mitochondrial	
 Q3UQL6	mus-musculus	Q3UQL6	Zfp772	Q3UQL6	1	1	Zinc finger protein 772	
 Q3UQN2	mus-musculus	Q3UQN2	Fcho2	Q3UQN2	11	54	F-BAR domain only protein 2	
 Q3UQU0	mus-musculus	Q3UQU0	Brd9	Q3UQU0	4	35	Bromodomain-containing protein 9	
@@ -285,7 +286,7 @@ Q3UR50	mus-musculus	Q3UR50	Vwa5b2	Q3UR50	0	3	von Willebrand factor A domain-cont
 Q3UR70	mus-musculus	Q3UR70	Tgfbrap1	Q3UR70	12	30	Transforming growth factor-beta receptor-associated protein 	
 Q3UR85	mus-musculus	Q3UR85	Myrf	Q3UR85	2	4	Myelin regulatory factor	
 Q3URD3	mus-musculus	Q3URD3	Slmap	Q3URD3	3	41	Sarcolemmal membrane-associated protein	
-Q3URE1	mus-musculus	Q3URE1	Acsf3	Q3URE1	1	80	Malonate--CoA ligase ACSF3, mitochondrial	
+Q3URE1	mus-musculus	Q3URE1	Acsf3	Q3URE1	9	89	Malonate--CoA ligase ACSF3, mitochondrial	
 Q3URE9	mus-musculus	Q3URE9	Lingo2	Q3URE9	0	7	Leucine-rich repeat and immunoglobulin-like domain-containin	
 Q3URF8	mus-musculus	Q3URF8	Kctd21	Q3URF8	1	1	BTB/POZ domain-containing protein KCTD21	
 Q3URK1	mus-musculus	Q3URK1	Ccdc190	Q3URK1	0	2	Coiled-coil domain-containing protein 190	
@@ -336,7 +337,7 @@ Q3UU67	mus-musculus	Q3UU67	Trat1	Q3UU67	5	26	T-cell receptor-associated transmem
 Q3UU94	mus-musculus	Q3UU94	Mansc4	Q3UU94	0	3	MANSC domain-containing protein 4	
 Q3UUD2	mus-musculus	Q3UUD2	Spry3	Q3UUD2	3	9	Protein sprouty homolog 3	
 Q3UUG6	mus-musculus	Q3UUG6	Tbc1d24	Q3UUG6	0	1	TBC1 domain family member 24	
-Q3UUI3	mus-musculus	Q3UUI3	Them4	Q3UUI3	1	10	Acyl-coenzyme A thioesterase THEM4	
+Q3UUI3	mus-musculus	Q3UUI3	Them4	Q3UUI3	4	14	Acyl-coenzyme A thioesterase THEM4	
 Q3UUJ4	mus-musculus	Q3UUJ4	Strada	Q3UUJ4	3	29	STE20-related kinase adapter protein alpha	
 Q3UUQ7	mus-musculus	Q3UUQ7	Pgap1	Q3UUQ7	0	1	GPI inositol-deacylase	
 Q3UUV5	mus-musculus	Q3UUV5	Skap1	Q3UUV5	10	26	Src kinase-associated phosphoprotein 1	
@@ -348,7 +349,7 @@ Q3UV17	mus-musculus	Q3UV17	Krt76	Q3UV17	22	31	Keratin, type II cytoskeletal 2 or
 Q3UV48	mus-musculus	Q3UV48	Lrrc30	Q3UV48	0	2	Leucine-rich repeat-containing protein 30	
 Q3UV55	mus-musculus	Q3UV55	Nr1d1	Q3UV55	3	17	Nuclear receptor subfamily 1 group D member 1	
 Q3UV66	mus-musculus	Q3UV66	Slfn4	Q3UV66	0	3	Schlafen 4	
-Q3UV70	mus-musculus	Q3UV70	Pdp1	Q3UV70	1	15	Protein phosphatase 2C	
+Q3UV70	mus-musculus	Q3UV70	Pdp1	Q3UV70	5	21	Protein phosphatase 2C	
 Q3UV71	mus-musculus	Q3UV71	Tmtc1	Q3UV71	3	23	Protein O-mannosyl-transferase TMTC1	
 Q3UV74	mus-musculus	Q3UV74	Itgb2l	Q3UV74	21	68	Integrin beta-2-like protein	
 Q3UVC0	mus-musculus	Q3UVC0	Ksr2	Q3UVC0	7	29	Kinase suppressor of Ras 2	

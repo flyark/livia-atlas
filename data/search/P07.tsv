@@ -21,7 +21,7 @@ P07098	human	P07098	LIPF	P07098	5	58	Gastric triacylglycerol lipase (GL) (Gastri
 P07099	human	P07099	EPHX1	P07099	5	156	Epoxide hydrolase 1 (EC 3.3.2.9) (Epoxide hydratase) (Micros	
 P07101	human	P07101	TH	P07101	16	142	Tyrosine 3-monooxygenase (EC 1.14.16.2) (Tyrosine 3-hydroxyl	
 P07102	escherichia-coli-83333	P07102	appA	P07102	0	2	Phytase AppA	
-P07108	human	P07108	DBI	P07108	7	117	Acyl-CoA-binding protein (ACBP) (Diazepam-binding inhibitor)	
+P07108	human	P07108	DBI	P07108	24	134	Acyl-CoA-binding protein (ACBP) (Diazepam-binding inhibitor)	
 P07109	escherichia-coli-83333	P07109	hisP	P07109	53	174	Histidine/lysine/arginine/ornithine transport ATP-binding pr	
 P07117	escherichia-coli-83333	P07117	putP	P07117	0	9	Sodium/proline symporter	
 P07118	escherichia-coli-83333	P07118	valS	P07118	0	12	Valine--tRNA ligase	
@@ -31,10 +31,10 @@ P07134	glycine-max	P07134	rps12-A	P07134	76	1738	Small ribosomal subunit protein
 P07135	glycine-max	P07135	rps7-A	P07135	51	1742	Small ribosomal subunit protein uS7cz/uS7cy	
 P07140	fly	FBgn0000024	Ace	P07140	15	269	Acetylcholinesterase (AChE) (EC 3.1.1.7) [Cleaved into: Acet	
 P07141	mus-musculus	P07141	Csf1	P07141	1	63	Macrophage colony-stimulating factor 1	
-P07143	yeast	P07143	CYT1	P07143	10	98	Cytochrome c1, heme protein, mitochondrial	
+P07143	yeast	P07143	CYT1	P07143	11	98	Cytochrome c1, heme protein, mitochondrial	
 P07146	mus-musculus	P07146	Prss2	P07146	5	15	Anionic trypsin-2	
 P07147	mus-musculus	P07147	Tyrp1	P07147	0	13	5,6-dihydroxyindole-2-carboxylic acid oxidase	
-P07148	human	P07148	FABP1	P07148	10	431	Fatty acid-binding protein, liver (Fatty acid-binding protei	
+P07148	human	P07148	FABP1	P07148	12	432	Fatty acid-binding protein, liver (Fatty acid-binding protei	
 P07150	rattus-norvegicus	P07150	Anxa1	P07150	3	84	Annexin A1	
 P07151	rattus-norvegicus	P07151	B2m	P07151	33	214	Beta-2-microglobulin	
 P07152	rattus-norvegicus	P07152	Mmp10	P07152	1	24	Stromelysin-2	
@@ -55,7 +55,7 @@ P07189	fly	FBgn0002535	Lcp4	P07189	8	281	Larval cuticle protein 4 (Larval cuticl
 P07190	fly	FBgn0002570	Mal-A1	P07190	40	263	Maltase A1 (EC 3.2.1.20) (Larval visceral protein H)	
 P07191	fly	FBgn0002569	Mal-A2	P07191	18	255	Maltase A2 (EC 3.2.1.20) (Larval visceral protein D)	
 P07192	fly	FBgn0002571	Mal-A3	P07192	31	249	Maltase A3 (EC 3.2.1.20) (Larval visceral protein L)	
-P07195	human	P07195	LDHB	P07195	7	297	L-lactate dehydrogenase B chain (LDH-B) (EC 1.1.1.27) (LDH h	
+P07195	human	P07195	LDHB	P07195	7	298	L-lactate dehydrogenase B chain (LDH-B) (EC 1.1.1.27) (LDH h	
 P07196	human	P07196	NEFL	P07196	73	283	Neurofilament light polypeptide (NF-L) (68 kDa neurofilament	
 P07197	human	P07197	NEFM	P07197	79	263	Neurofilament medium polypeptide (NF-M) (160 kDa neurofilame	
 P07199	human	P07199	CENPB	P07199	9	147	Major centromere autoantigen B (Centromere protein B) (CENP-	
@@ -101,7 +101,7 @@ P07247	fly	FBgn0001325	Kr	P07247	45	410	Protein krueppel
 P07248	yeast	P07248	ADR1	P07248	1	45	Regulatory protein ADR1	
 P07249	yeast	P07249	ARG80	P07249	2	14	Arginine metabolism regulation protein I	
 P07250	yeast	P07250	ARG82	P07250	0	8	Inositol polyphosphate multikinase	
-P07251	yeast	P07251	ATP1	P07251	3	133	ATP synthase subunit alpha, mitochondrial	
+P07251	yeast	P07251	ATP1	P07251	4	133	ATP synthase subunit alpha, mitochondrial	
 P07252	yeast	P07252	CBP1	P07252	0	10	Cytochrome B pre-mRNA-processing protein 1	
 P07253	yeast	P07253	CBP6	P07253	1	18	Cytochrome B pre-mRNA-processing protein 6	
 P07255	yeast	P07255	COX9	P07255	2	41	Cytochrome c oxidase subunit 9, mitochondrial	
@@ -219,8 +219,8 @@ P07617	virus	P07617	OPG102	P07617	5	218	Cap-specific mRNA (nucleoside-2'-O-)-met
 P07618	virus	P07618	OPG104	P07618	17	218	Protein OPG104	
 P07623	escherichia-coli-83333	P07623	metAS	P07623	0	2	Homoserine O-succinyltransferase	
 P07628	mus-musculus	P07628	Klk1b8	P07628	0	12	Kallikrein 1-related peptidase b8	
-P07632	rattus-norvegicus	P07632	Sod1	P07632	3	60	Superoxide dismutase	
-P07633	rattus-norvegicus	P07633	Pccb	P07633	1	15	Propionyl-CoA carboxylase beta chain, mitochondrial	
+P07632	rattus-norvegicus	P07632	Sod1	P07632	8	66	Superoxide dismutase	
+P07633	rattus-norvegicus	P07633	Pccb	P07633	2	16	Propionyl-CoA carboxylase beta chain, mitochondrial	
 P07637	salmonella-typhimurium	P07637	aroA	P07637	0	1	3-phosphoshikimate 1-carboxyvinyltransferase	
 P07639	escherichia-coli-83333	P07639	aroB	P07639	0	9	3-dehydroquinate synthase	
 P07647	rattus-norvegicus	P07647	Klk9	P07647	2	18	Submandibular glandular kallikrein-9	
@@ -228,7 +228,7 @@ P07648	escherichia-coli-83333	P07648	recC	P07648	2	2	RecBCD enzyme subunit RecC
 P07649	escherichia-coli-83333	P07649	truA	P07649	0	11	tRNA pseudouridine synthase A	
 P07650	escherichia-coli-83333	P07650	deoA	P07650	0	9	Thymidine phosphorylase	
 P07654	escherichia-coli-83333	P07654	pstA	P07654	70	175	Phosphate transport system permease protein PstA	
-P07657	schizosaccharomyces-pombe	P07657	cox1	P07657	5	34	Cytochrome c oxidase subunit 1	
+P07657	schizosaccharomyces-pombe	P07657	cox1	P07657	6	35	Cytochrome c oxidase subunit 1	
 P07664	fly	FBgn0003512	Sry-delta	P07664	40	384	Serendipity locus protein delta (Serendipity-delta)	
 P07665	fly	FBgn0003511	Sry-beta	P07665	41	401	Serendipity locus protein beta	
 P07666	fly	FBgn0003510	Sry-alpha	P07666	17	68	Serendipity locus protein alpha	
@@ -285,12 +285,13 @@ P07862	escherichia-coli-83333	P07862	ddlB	P07862	1	1	D-alanine--D-alanine ligase
 P07864	human	P07864	LDHC	P07864	7	225	L-lactate dehydrogenase C chain (LDH-C) (EC 1.1.1.27) (Cance	
 P07866	yeast	P07866	LTE1	P07866	5	29	Guanine nucleotide exchange factor LTE1	
 P07867	rattus-norvegicus	P07867	Lipc	P07867	1	42	Hepatic triacylglycerol lipase	
+P07871	rattus-norvegicus	P07871	Acaa1b	P07871	3	3	3-ketoacyl-CoA thiolase B, peroxisomal	
 P07872	rattus-norvegicus	P07872	Acox1	P07872	2	25	Peroxisomal acyl-coenzyme A oxidase 1	
 P07874	pseudomonas-aeruginosa	P07874	algA	P07874	2	11	Alginate biosynthesis protein AlgA	
 P07882	rattus-norvegicus	P07882	Cel	P07882	2	11	Bile salt-activated lipase	
 P07884	yeast	P07884	MOD5	P07884	0	14	tRNA dimethylallyltransferase	
-P07895	rattus-norvegicus	P07895	Sod2	P07895	2	354	Superoxide dismutase	
-P07896	rattus-norvegicus	P07896	Ehhadh	P07896	2	134	Peroxisomal bifunctional enzyme	
+P07895	rattus-norvegicus	P07895	Sod2	P07895	10	362	Superoxide dismutase	
+P07896	rattus-norvegicus	P07896	Ehhadh	P07896	3	136	Peroxisomal bifunctional enzyme	
 P07900	human	P07900	HSP90AA1	P07900	114	1401	Heat shock protein HSP 90-alpha (EC 3.6.4.10) (Heat shock 86	
 P07901	mus-musculus	P07901	Hsp90aa1	P07901	37	462	Heat shock protein HSP 90-alpha	
 P07902	human	P07902	GALT	P07902	1	41	Galactose-1-phosphate uridylyltransferase (Gal-1-P uridylylt	
@@ -299,7 +300,7 @@ P07909	fly	FBgn0001215	Hrb98DE	P07909	15	149	Heterogeneous nuclear ribonucleopro
 P07910	human	P07910	HNRNPC	P07910	143	801	Heterogeneous nuclear ribonucleoproteins C1/C2 (hnRNP C1/C2)	
 P07911	human	P07911	UMOD	P07911	34	347	Uromodulin (Tamm-Horsfall urinary glycoprotein) (THP) [Cleav	
 P07913	escherichia-coli-83333	P07913	tdh	P07913	0	1	L-threonine 3-dehydrogenase	
-P07919	human	P07919	UQCRH	P07919	10	272	Cytochrome b-c1 complex subunit 6, mitochondrial (Complex II	
+P07919	human	P07919	UQCRH	P07919	12	274	Cytochrome b-c1 complex subunit 6, mitochondrial (Complex II	
 P07934	mus-musculus	P07934	Phkg1	P07934	4	12	Phosphorylase b kinase gamma catalytic chain, skeletal muscl	
 P07936	rattus-norvegicus	P07936	Gap43	P07936	3	30	Neuromodulin	
 P07942	human	P07942	LAMB1	P07942	18	200	Laminin subunit beta-1 (Laminin B1 chain) (Laminin-1 subunit	

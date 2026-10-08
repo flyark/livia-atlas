@@ -5,9 +5,9 @@ LDH	pseudomonas-aeruginosa	Q9HYI7	ldh	Q9HYI7	0	9	Leucine dehydrogenase
 LDH	streptococcus-pneumoniae	P0A3N0	ldh	P0A3N0	0	15	L-lactate dehydrogenase	
 LDH-1	worm	Q27888	ldh-1	Q27888	1	42	L-lactate dehydrogenase	
 LDH-A	human	P00338	LDHA	P00338	18	458	L-lactate dehydrogenase A chain (LDH-A) (EC 1.1.1.27) (Cell 	w
-LDH-B	human	P07195	LDHB	P07195	7	297	L-lactate dehydrogenase B chain (LDH-B) (EC 1.1.1.27) (LDH h	w
+LDH-B	human	P07195	LDHB	P07195	7	298	L-lactate dehydrogenase B chain (LDH-B) (EC 1.1.1.27) (LDH h	w
 LDH-C	human	P07864	LDHC	P07864	7	225	L-lactate dehydrogenase C chain (LDH-C) (EC 1.1.1.27) (Cance	w
-LDH-H	human	P07195	LDHB	P07195	7	297	L-lactate dehydrogenase B chain (LDH-B) (EC 1.1.1.27) (LDH h	w
+LDH-H	human	P07195	LDHB	P07195	7	298	L-lactate dehydrogenase B chain (LDH-B) (EC 1.1.1.27) (LDH h	w
 LDH-M	human	P00338	LDHA	P00338	18	458	L-lactate dehydrogenase A chain (LDH-A) (EC 1.1.1.27) (Cell 	w
 LDH-X	human	P07864	LDHC	P07864	7	225	L-lactate dehydrogenase C chain (LDH-C) (EC 1.1.1.27) (Cance	w
 LDH1	staphylococcus-aureus-93061	Q2G218	ldh1	Q2G218	0	13	L-lactate dehydrogenase 1	
@@ -15,7 +15,7 @@ LDH1	yeast	P38139	LDH1	P38139	0	16	Lipid droplet hydrolase 1
 LDH2	staphylococcus-aureus-93061	Q2G1Y5	ldh2	Q2G1Y5	0	13	L-lactate dehydrogenase 2	
 LDH3	human	P07864	LDHC	P07864	7	225		
 LDH6A_HUMAN	human	Q6ZMR3	LDHAL6A	Q6ZMR3	8	154		
-LDH6B_HUMAN	human	Q9BYZ2	LDHAL6B	Q9BYZ2	5	139		
+LDH6B_HUMAN	human	Q9BYZ2	LDHAL6B	Q9BYZ2	6	141		
 LDHA	cladophialophora-carrionii	A0A1C1CXG1	LDHA	A0A1C1CXG1	0	17	L-lactate dehydrogenase A	
 LDHA	dictyostelium-discoideum	Q54UF7	ldhA	Q54UF7	0	8	Putative D-lactate dehydrogenase	
 LDHA	escherichia-coli-83333	P52643	ldhA	P52643	0	3	D-lactate dehydrogenase	
@@ -27,26 +27,33 @@ LDHA	salmonella-typhimurium	Q8ZP91	ldhA	Q8ZP91	0	3	NAD-dependent fermentative D-
 LDHA	shigella-dysenteriae-serotype-1	Q32GF2	ldhA	Q32GF2	0	5	Fermentative D-lactate dehydrogenase, NAD-dependent	
 LDHA	zebrafish	Q9PVK5	ldha	Q9PVK5	1	14	L-lactate dehydrogenase A chain	
 LDHA-LIKE	human	Q6ZMR3	LDHAL6A	Q6ZMR3	8	154	L-lactate dehydrogenase A-like 6A (LDHA-like protein 6A) (EC	w
-LDHAL6	human	Q9BYZ2	LDHAL6B	Q9BYZ2	5	139		
+LDHAL6	human	Q9BYZ2	LDHAL6B	Q9BYZ2	6	141		
 LDHAL6A	human	Q6ZMR3	LDHAL6A	Q6ZMR3	8	154	L-lactate dehydrogenase A-like 6A (LDHA-like protein 6A) (EC	
-LDHAL6B	human	Q9BYZ2	LDHAL6B	Q9BYZ2	5	139	L-lactate dehydrogenase A-like 6B (EC 1.1.1.27)	
-LDHAL6B	mus-musculus	Q8BVP2	Ldhal6b	Q8BVP2	3	4	L-lactate dehydrogenase	
+LDHAL6B	human	Q9BYZ2	LDHAL6B	Q9BYZ2	6	141	L-lactate dehydrogenase A-like 6B (EC 1.1.1.27)	
+LDHAL6B	mus-musculus	Q8BVP2	Ldhal6b	Q8BVP2	3	5	L-lactate dehydrogenase	
+LDHAL6B	pan-troglodytes	H2Q9I9	LDHAL6B	H2Q9I9	2	3	L-lactate dehydrogenase	
+LDHAL6B	rattus-norvegicus	Q7TNA8	Ldhal6b	Q7TNA8	1	2	L-lactate dehydrogenase	
 LDHA_HUMAN	human	P00338	LDHA	P00338	18	458		
-LDHB	human	P07195	LDHB	P07195	7	297	L-lactate dehydrogenase B chain (LDH-B) (EC 1.1.1.27) (LDH h	
+LDHB	human	P07195	LDHB	P07195	7	298	L-lactate dehydrogenase B chain (LDH-B) (EC 1.1.1.27) (LDH h	
 LDHB	mus-musculus	P16125	Ldhb	P16125	3	25	L-lactate dehydrogenase B chain	
-LDHB	rattus-norvegicus	P42123	Ldhb	P42123	2	18	L-lactate dehydrogenase B chain	
+LDHB	pan-troglodytes	H2Q5L1	LDHB	H2Q5L1	1	2	L-lactate dehydrogenase	
+LDHB	rattus-norvegicus	P42123	Ldhb	P42123	3	19	L-lactate dehydrogenase B chain	
 LDHBA	zebrafish	Q9PVK4	ldhba	Q9PVK4	2	14	L-lactate dehydrogenase B-A chain	
 LDHBB	zebrafish	Q6DGK2	ldhbb	Q6DGK2	1	13	L-lactate dehydrogenase B-B chain	
-LDHB_HUMAN	human	P07195	LDHB	P07195	7	297		
+LDHB_HUMAN	human	P07195	LDHB	P07195	7	298		
 LDHC	human	P07864	LDHC	P07864	7	225	L-lactate dehydrogenase C chain (LDH-C) (EC 1.1.1.27) (Cance	
 LDHC	mus-musculus	P00342	Ldhc	P00342	3	8	L-lactate dehydrogenase C chain	
 LDHC	rattus-norvegicus	P19629	Ldhc	P19629	2	11	L-lactate dehydrogenase C chain	
 LDHC_HUMAN	human	P07864	LDHC	P07864	7	225		
 LDHD	human	Q86WU2	LDHD	Q86WU2	3	101	D-lactate dehydrogenase, mitochondrial (DLD) (Lactate dehydr	
-LDHD	mus-musculus	Q7TNG8	Ldhd	Q7TNG8	1	5	Probable D-lactate dehydrogenase, mitochondrial	
+LDHD	mus-musculus	Q7TNG8	Ldhd	Q7TNG8	2	6	Probable D-lactate dehydrogenase, mitochondrial	
+LDHD	pan-troglodytes	H2QBI7	LDHD	H2QBI7	2	2	Lactate dehydrogenase D	
+LDHD	rattus-norvegicus	A0A0G2K1W9	Ldhd	A0A0G2K1W9	2	2	Lactate dehydrogenase D	
 LDHD	rattus-norvegicus	Q7TPJ4	Ldhd	Q7TPJ4	1	8	D-lactate dehydrogenase (cytochrome)	
-LDHD	zebrafish	F1QXM5	ldhd	F1QXM5	0	23	Probable D-lactate dehydrogenase, mitochondrial	
+LDHD	zebrafish	F1QXM5	ldhd	F1QXM5	2	25	Probable D-lactate dehydrogenase, mitochondrial	
+LDHD.L	xenopus-laevis	A0A1L8GLK1	ldhd.L	A0A1L8GLK1	2	2	probable D-lactate dehydrogenase, mitochondrial	
+LDHD_DANRE	zebrafish	F1QXM5	ldhd	F1QXM5	2	25		
 LDHD_HUMAN	human	Q86WU2	LDHD	Q86WU2	3	101		
-LDHL	human	Q9BYZ2	LDHAL6B	Q9BYZ2	5	139		
+LDHL	human	Q9BYZ2	LDHAL6B	Q9BYZ2	6	141		
 LDHL2	human	Q6ZMR3	LDHAL6A	Q6ZMR3	8	154		
 LDHX	human	P07864	LDHC	P07864	7	225		

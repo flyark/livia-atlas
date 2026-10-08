@@ -69,7 +69,7 @@ ADRBK1	human	P25098	GRK2	P25098	117	1534
 ADRBK2	human	P35626	GRK3	P35626	93	1456		
 ADRBK2	zebrafish	A0A2R8QPB8	grk3	A0A2R8QPB8	11	57		
 ADRBRL1	human	P08908	HTR1A	P08908	13	186		
-ADRENAL	human	P10109	FDX1	P10109	39	222	Adrenodoxin, mitochondrial (Adrenal ferredoxin) (Ferredoxin-	w
+ADRENAL	human	P10109	FDX1	P10109	54	236	Adrenodoxin, mitochondrial (Adrenal ferredoxin) (Ferredoxin-	w
 ADRENAL	human	Q13285	NR5A1	Q13285	154	562	Steroidogenic factor 1 (SF-1) (STF-1) (hSF-1) (Adrenal 4-bin	w
 ADRENAL	human	Q9Y3D8	AK6	Q9Y3D8	19	106	Adenylate kinase isoenzyme 6 (AK6) (EC 2.7.4.3) (Adrenal gla	w
 ADRENERGIC	human	A0A3B3IT50	?	A0A3B3IT50	0	2	Beta-3 adrenergic receptor	w
@@ -111,18 +111,18 @@ ADRENOCORTICAL	zebrafish	Q6NW98	aaas	Q6NW98	4	43	Achalasia, adrenocortical insuf
 ADRENOCORTICOTROPIC	human	P01189	POMC	P01189	21	255	Pro-opiomelanocortin (POMC) (Corticotropin-lipotropin) [Clea	w
 ADRENOCORTICOTROPIC	human	Q01718	MC2R	Q01718	9	130	Adrenocorticotropic hormone receptor (ACTH receptor) (ACTH-R	w
 ADRENOCORTICOTROPIN	human	Q01718	MC2R	Q01718	9	130	Adrenocorticotropic hormone receptor (ACTH receptor) (ACTH-R	w
-ADRENODOXIN	fly	FBgn0015582	dare	Q9V3T9	2	12	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
+ADRENODOXIN	fly	FBgn0015582	dare	Q9V3T9	7	17	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
 ADRENODOXIN	human	A0A0A0MT64	FDXR	A0A0A0MT64	2	56	NADPH:adrenodoxin oxidoreductase, mitochondrial	w
-ADRENODOXIN	human	P10109	FDX1	P10109	39	222	Adrenodoxin, mitochondrial (Adrenal ferredoxin) (Ferredoxin-	w
-ADRENODOXIN	human	P22570	FDXR	P22570	6	123	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
+ADRENODOXIN	human	P10109	FDX1	P10109	54	236	Adrenodoxin, mitochondrial (Adrenal ferredoxin) (Ferredoxin-	w
+ADRENODOXIN	human	P22570	FDXR	P22570	13	131	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
 ADRENODOXIN	worm	Q9U1X0	CELE_Y62E10A.6	Q9U1X0	2	12	NADPH:adrenodoxin oxidoreductase, mitochondrial	w
 ADRENODOXIN	yeast	P48360	ARH1	P48360	1	21	Probable NADPH:adrenodoxin oxidoreductase, mitochondrial	w
-ADRENODOXIN	yeast	Q12184	YAH1	Q12184	7	66	Adrenodoxin homolog, mitochondrial	w
-ADRENODOXIN	zebrafish	E7F7J1	fdx1	E7F7J1	25	130	Adrenodoxin, mitochondrial	w
-ADRENODOXIN	zebrafish	E7FB58	fdxr	E7FB58	3	13	NADPH:adrenodoxin oxidoreductase, mitochondrial	w
-ADRENODOXIN-LIKE	fly	FBgn0011769	Fdx1	P37193	5	66	Adrenodoxin-like protein 1, mitochondrial (Ferredoxin-1)	w
-ADRENODOXIN-LIKE	fly	FBgn0035529	Fdx2	Q8SZA8	5	74	Adrenodoxin-like protein 2, mitochondrial (Ferredoxin-2)	w
-ADRENODOXIN-LIKE	human	Q6P4F2	FDX2	Q6P4F2	18	174	Ferredoxin-2, mitochondrial (Adrenodoxin-like protein) (Ferr	w
+ADRENODOXIN	yeast	Q12184	YAH1	Q12184	9	68	Adrenodoxin homolog, mitochondrial	w
+ADRENODOXIN	zebrafish	E7F7J1	fdx1	E7F7J1	36	142	Adrenodoxin, mitochondrial	w
+ADRENODOXIN	zebrafish	E7FB58	fdxr	E7FB58	4	18	NADPH:adrenodoxin oxidoreductase, mitochondrial	w
+ADRENODOXIN-LIKE	fly	FBgn0011769	Fdx1	P37193	12	73	Adrenodoxin-like protein 1, mitochondrial (Ferredoxin-1)	w
+ADRENODOXIN-LIKE	fly	FBgn0035529	Fdx2	Q8SZA8	9	78	Adrenodoxin-like protein 2, mitochondrial (Ferredoxin-2)	w
+ADRENODOXIN-LIKE	human	Q6P4F2	FDX2	Q6P4F2	30	186	Ferredoxin-2, mitochondrial (Adrenodoxin-like protein) (Ferr	w
 ADRENOLEUKODYSTROPHY	human	P33897	ABCD1	P33897	5	95	ATP-binding cassette sub-family D member 1 (EC 3.1.2.-) (EC 	w
 ADRENOLEUKODYSTROPHY-LIKE	human	Q9UBJ2	ABCD2	Q9UBJ2	2	17	ATP-binding cassette sub-family D member 2 (EC 3.1.2.-) (EC 	w
 ADRENOLEUKODYSTROPHY-RELATED	human	Q9UBJ2	ABCD2	Q9UBJ2	2	17	ATP-binding cassette sub-family D member 2 (EC 3.1.2.-) (EC 	w
@@ -150,5 +150,8 @@ ADRM1B	mus-musculus	A0A0A6YVU8	Adrm1b	A0A0A6YVU8	20	100	Proteasomal ubiquitin re
 ADRM1B	zebrafish	Q6NZ09	adrm1b	Q6NZ09	16	87	Proteasomal ubiquitin receptor ADRM1	
 ADRM1_HUMAN	human	Q16186	ADRM1	Q16186	36	246		
 ADROPIN	human	Q6UWT2	ENHO	Q6UWT2	20	127	Adropin (Energy homeostasis-associated protein)	w
-ADRO_HUMAN	human	P22570	FDXR	P22570	6	123		
+ADRO_DROME	fly	FBgn0015582	dare	Q9V3T9	7	17		
+ADRO_HUMAN	human	P22570	FDXR	P22570	13	131		
+ADRO_YEAST	yeast	P48360	ARH1	P48360	1	21		
 ADRP	human	Q99541	PLIN2	Q99541	8	152	Perilipin-2 (Adipophilin) (Adipose differentiation-related p	w
+ADRX_YEAST	yeast	Q12184	YAH1	Q12184	9	68		

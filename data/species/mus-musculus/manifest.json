@@ -21,18 +21,34 @@
     "pairsFpr5": 24482,
     "pairsFpr1": 7947
    }
+  },
+  {
+   "id": "mitomatch-10090",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Mus musculus orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 955,
+    "pairs": 2417,
+    "predictions": 2417,
+    "runs": 2417,
+    "pairsFpr10": 2227,
+    "pairsFpr5": 1918,
+    "pairsFpr1": 782
+   }
   }
  ],
  "counts": {
-  "proteins": 15476,
-  "pairs": 290808,
-  "predictions": 290808,
-  "runs": 290808,
-  "pairsFpr10": 36424,
-  "pairsFpr5": 24174,
-  "pairsFpr1": 7816,
-  "pairsInSeveral": 0,
-  "pairsTested": 290808
+  "proteins": 15526,
+  "pairs": 292688,
+  "predictions": 293225,
+  "runs": 293225,
+  "pairsFpr10": 38241,
+  "pairsFpr5": 25716,
+  "pairsFpr1": 8407,
+  "pairsInSeveral": 537,
+  "pairsTested": 292688
  },
  "files": {
   "proteins": "proteins.json",

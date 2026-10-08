@@ -1,7 +1,7 @@
 P32	fly	FBgn0034259	P32	Q7JXC4	24	115	CG6459 protein (CG6459-PA) (LD29590p) (P32)	
 P32004	human	P32004	L1CAM	P32004	47	282	Neural cell adhesion molecule L1 (N-CAM-L1) (NCAM-L1) (CD an	
 P32019	human	P32019	INPP5B	P32019	14	99	Type II inositol 1,4,5-trisphosphate 5-phosphatase (EC 3.1.3	
-P32020	mus-musculus	P32020	Scp2	P32020	2	21	Sterol carrier protein 2	
+P32020	mus-musculus	P32020	Scp2	P32020	4	23	Sterol carrier protein 2	
 P32027	fly	FBgn0014143	croc	P32027	71	399	Fork head domain-containing protein crocodile (FKH protein F	
 P32028	fly	FBgn0004897	fd96Ca	P32028	65	374	Fork head domain-containing protein FD4	
 P32029	fly	FBgn0004898	fd96Cb	P32029	37	379	Fork head domain-containing protein FD5	
@@ -22,7 +22,7 @@ P32073	dictyostelium-discoideum	P32073	guaA	P32073	0	9	GMP synthase
 P32074	yeast	P32074	SEC21	P32074	6	108	Coatomer subunit gamma	
 P32082	mus-musculus	P32082	Ghrhr	P32082	5	18	Growth hormone-releasing hormone receptor	
 P32085	worm	P32085	tbp-1	P32085	29	173	TATA-box-binding protein	
-P32089	rattus-norvegicus	P32089	Slc25a1	P32089	0	49	Tricarboxylate transport protein, mitochondrial	
+P32089	rattus-norvegicus	P32089	Slc25a1	P32089	2	51	Tricarboxylate transport protein, mitochondrial	
 P32096	virus	P32096	VETFS	P32096	5	152	Early transcription factor 70 kDa subunit	
 P32097	virus	P32097	D10R	P32097	7	153	mRNA-decapping protein D10	
 P32098	virus	P32098	D9R	P32098	2	153	mRNA-decapping protein D9	
@@ -32,7 +32,7 @@ P32106	escherichia-coli-83333	P32106	yibG	P32106	0	6	Uncharacterized protein Yib
 P32110	glycine-max	P32110	HSP26-A	P32110	4	39	Probable glutathione S-transferase	
 P32114	mus-musculus	P32114	Pax2	P32114	3	22	Paired box protein Pax-2	
 P32115	mus-musculus	P32115	Pax4	P32115	2	10	Paired box protein Pax-4	
-P32119	human	P32119	PRDX2	P32119	9	445	Peroxiredoxin-2 (EC 1.11.1.24) (Natural killer cell-enhancin	
+P32119	human	P32119	PRDX2	P32119	13	449	Peroxiredoxin-2 (EC 1.11.1.24) (Natural killer cell-enhancin	
 P32121	human	P32121	ARRB2	P32121	52	651	Beta-arrestin-2 (Arrestin beta-2) (Non-visual arrestin-3)	
 P32125	escherichia-coli-83333	P32125	mobB	P32125	0	4	Molybdopterin-guanine dinucleotide biosynthesis adapter prot	
 P32131	escherichia-coli-83333	P32131	hemN	P32131	0	3	Oxygen-independent coproporphyrinogen III oxidase	
@@ -95,11 +95,11 @@ P32304	mus-musculus	P32304	Htr7	P32304	2	20	5-hydroxytryptamine receptor 7
 P32305	rattus-norvegicus	P32305	Htr7	P32305	1	18	5-hydroxytryptamine receptor 7	
 P32314	human	P32314	FOXN2	P32314	90	367	Forkhead box protein N2 (Human T-cell leukemia virus enhance	
 P32316	yeast	P32316	ACH1	P32316	0	11	Acetyl-CoA hydrolase	
-P32317	yeast	P32317	AFG1	P32317	0	7	Protein AFG1	
+P32317	yeast	P32317	AFG1	P32317	2	9	Protein AFG1	
 P32318	yeast	P32318	THI4	P32318	0	4	Thiamine thiazole synthase	
 P32320	human	P32320	CDA	P32320	0	148	Cytidine deaminase (EC 3.5.4.5) (Cytidine aminohydrolase)	
 P32321	human	P32321	DCTD	P32321	1	71	Deoxycytidylate deaminase (EC 3.5.4.12) (dCMP deaminase)	
-P32322	human	P32322	PYCR1	P32322	9	202	Pyrroline-5-carboxylate reductase 1, mitochondrial (P5C redu	
+P32322	human	P32322	PYCR1	P32322	10	203	Pyrroline-5-carboxylate reductase 1, mitochondrial (P5C redu	
 P32323	yeast	P32323	AGA1	P32323	1	28	A-agglutinin anchorage subunit	
 P32324	yeast	P32324	EFT1	P32324	28	401	Elongation factor 2	
 P32325	yeast	P32325	DBF4	P32325	5	52	DDK kinase regulatory subunit DBF4	
@@ -146,7 +146,7 @@ P32380	yeast	P32380	SPC110	P32380	3	79	Spindle pole body component 110
 P32381	yeast	P32381	ARP2	P32381	10	99	Actin-related protein 2	
 P32383	yeast	P32383	PLC1	P32383	2	21	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase 1	
 P32385	yeast	P32385	RNP1	P32385	0	2	Ribonucleoprotein 1	
-P32387	yeast	P32387	MRP20	P32387	10	197	Large ribosomal subunit protein uL23m	
+P32387	yeast	P32387	MRP20	P32387	11	198	Large ribosomal subunit protein uL23m	
 P32388	yeast	P32388	MRP49	P32388	11	137	Large ribosomal subunit protein mL61	
 P32389	yeast	P32389	MET4	P32389	9	27	Transcriptional activator of sulfur metabolism MET4	
 P32390	schizosaccharomyces-pombe	P32390	act2	P32390	6	37	Actin-related protein 3	
@@ -175,7 +175,7 @@ P32459	yeast	P32459	DAL3	P32459	4	184	Ureidoglycolate lyase
 P32460	yeast	P32460	DCG1	P32460	0	13	Protein DCG1	
 P32461	yeast	P32461	DPH2	P32461	3	13	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	
 P32462	yeast	P32462	ERG24	P32462	1	25	Delta(14)-sterol reductase ERG24	
-P32463	yeast	P32463	ACP1	P32463	39	205	Acyl carrier protein, mitochondrial	
+P32463	yeast	P32463	ACP1	P32463	43	208	Acyl carrier protein, mitochondrial	
 P32464	yeast	P32464	HYM1	P32464	3	13	Protein HYM1	
 P32465	yeast	P32465	HXT1	P32465	2	29	Low-affinity glucose transporter HXT1	
 P32466	yeast	P32466	HXT3	P32466	0	23	Low-affinity glucose transporter HXT3	
@@ -241,9 +241,9 @@ P32537_P93C8ADCDFE	virus	P32537_p93c8adcdfe		P32537	2	9	Capsid protein VP3
 P32537_PAEC3866E54	virus	P32537_paec3866e54		P32537	2	9	Capsid protein VP1	
 P32537_PDD92B8D49E	virus	P32537_pdd92b8d49e		P32537	0	9	Capsid protein VP4	
 P32537_PE49DF8726F	virus	P32537_pe49df8726f		P32537	1	9	Viral protein genome linked	
-P32551	rattus-norvegicus	P32551	Uqcrc2	P32551	7	140	Cytochrome b-c1 complex subunit 2, mitochondrial	
+P32551	rattus-norvegicus	P32551	Uqcrc2	P32551	15	149	Cytochrome b-c1 complex subunit 2, mitochondrial	
 P32558	yeast	P32558	SPT16	P32558	14	324	FACT complex subunit SPT16	
-P32559	yeast	P32559	MSS1	P32559	1	57	tRNA modification GTPase MSS1, mitochondrial	
+P32559	yeast	P32559	MSS1	P32559	2	58	tRNA modification GTPase MSS1, mitochondrial	
 P32561	yeast	P32561	RPD3	P32561	7	139	Histone deacetylase RPD3	
 P32562	yeast	P32562	CDC5	P32562	8	153	Cell cycle serine/threonine-protein kinase CDC5/MSD2 (EC 2.7	
 P32563	yeast	P32563	VPH1	P32563	9	79	V-type proton ATPase subunit a, vacuolar isoform	
@@ -259,7 +259,7 @@ P32573	yeast	P32573	SPS19	P32573	0	11	Peroxisomal 2,4-dienoyl-CoA reductase SPS1
 P32577	rattus-norvegicus	P32577	Csk	P32577	23	115	Tyrosine-protein kinase CSK	
 P32578	yeast	P32578	SIP1	P32578	2	33	SNF1 protein kinase subunit beta-1	
 P32579	yeast	P32579	SUA5	P32579	0	3	Threonylcarbamoyl-AMP synthase	
-P32580	yeast	P32580	SUV3	P32580	1	42	ATP-dependent RNA helicase SUV3, mitochondrial	
+P32580	yeast	P32580	SUV3	P32580	2	43	ATP-dependent RNA helicase SUV3, mitochondrial	
 P32581	yeast	P32581	IME2	P32581	4	66	Meiosis induction protein kinase IME2/SME1 (EC 2.7.11.1)	
 P32582	yeast	P32582	CYS4	P32582	0	64	Cystathionine beta-synthase	
 P32583	yeast	P32583	SRP40	P32583	3	51	Suppressor protein SRP40	
@@ -343,8 +343,8 @@ P32743	worm	P32743	R107.5	P32743	0	1	Uncharacterized protein R107.5
 P32744	worm	P32744	cls-2	P32744	4	12	Protein CLASP-2	
 P32745	human	P32745	SSTR3	P32745	15	114	Somatostatin receptor type 3 (SS-3-R) (SS3-R) (SS3R) (SST3) 	
 P32746	arabidopsis-thaliana	P32746	PYRD	P32746	0	9	Dihydroorotate dehydrogenase (quinone), mitochondrial	
-P32747	schizosaccharomyces-pombe	P32747	ura3	P32747	0	3	Dihydroorotate dehydrogenase (quinone), mitochondrial	
-P32748	fly	FBgn0000447	Dhod	P32748	2	57	Dihydroorotate dehydrogenase (quinone), mitochondrial (DHOde	
+P32747	schizosaccharomyces-pombe	P32747	ura3	P32747	1	4	Dihydroorotate dehydrogenase (quinone), mitochondrial	
+P32748	fly	FBgn0000447	Dhod	P32748	3	58	Dihydroorotate dehydrogenase (quinone), mitochondrial (DHOde	
 P32754	human	P32754	HPD	P32754	1	72	4-hydroxyphenylpyruvate dioxygenase (EC 1.13.11.27) (4-hydro	
 P32755	rattus-norvegicus	P32755	Hpd	P32755	1	16	4-hydroxyphenylpyruvate dioxygenase	
 P32756	worm	P32756	cha-1	P32756	0	1	Choline O-acetyltransferase	
@@ -361,7 +361,7 @@ P32780	human	P32780	GTF2H1	P32780	48	688	General transcription factor IIH subuni
 P32781	yeast	P32781	AGA2	P32781	1	6	A-agglutinin-binding subunit	
 P32783	yeast	P32783	ABD1	P32783	2	40	mRNA cap guanine-N(7) methyltransferase	
 P32784	yeast	P32784	SCT1	P32784	4	31	Glycerol-3-phosphate O-acyltransferase 1	
-P32785	yeast	P32785	FMT1	P32785	1	9	Methionyl-tRNA formyltransferase, mitochondrial	
+P32785	yeast	P32785	FMT1	P32785	2	10	Methionyl-tRNA formyltransferase, mitochondrial	
 P32786	yeast	P32786	RRN6	P32786	4	60	RNA polymerase I-specific transcription initiation factor RR	
 P32787	yeast	P32787	MGM101	P32787	0	55	Mitochondrial genome maintenance protein MGM101	
 P32788	yeast	P32788	LAA2	P32788	1	9	Clathrin adapter accessory protein LAA2	
@@ -375,7 +375,7 @@ P32795	yeast	P32795	YME1	P32795	2	37	Mitochondrial inner membrane i-AAA protease
 P32796	yeast	P32796	CAT2	P32796	2	27	Carnitine O-acetyltransferase, mitochondrial	
 P32797	yeast	P32797	CDC13	P32797	3	39	Cell division control protein 13	
 P32798	yeast	P32798	COT1	P32798	1	17	Vacuolar zinc transporter COT1	
-P32799	yeast	P32799	COX13	P32799	3	59	Cytochrome c oxidase subunit 13, mitochondrial	
+P32799	yeast	P32799	COX13	P32799	4	59	Cytochrome c oxidase subunit 13, mitochondrial	
 P32800	yeast	P32800	PEX2	P32800	2	21	Peroxisomal biogenesis factor 2	
 P32801	yeast	P32801	ELM1	P32801	6	27	Serine/threonine-protein kinase ELM1	
 P32802	yeast	P32802	EMP70	P32802	0	11	Transmembrane 9 superfamily member 1	
@@ -414,7 +414,7 @@ P32856	human	P32856	STX2	P32856	17	173	Syntaxin-2 (Epimorphin)
 P32857	yeast	P32857	PTM1	P32857	1	14	Membrane protein PTM1	
 P32858	yeast	P32858	AIM26	P32858	0	5	Altered inheritance of mitochondria protein 26, mitochondria	
 P32859	yeast	P32859	YKL036C	P32859	0	2	Putative uncharacterized protein YKL036C	
-P32860	yeast	P32860	NFU1	P32860	6	18	NifU-like protein, mitochondrial	
+P32860	yeast	P32860	NFU1	P32860	7	19	NifU-like protein, mitochondrial	
 P32861	yeast	P32861	UGP1	P32861	1	45	UTP--glucose-1-phosphate uridylyltransferase	
 P32862	yeast	P32862	RGT1	P32862	4	27	Glucose transport transcription regulator RGT1	
 P32863	yeast	P32863	RAD54	P32863	0	27	DNA repair and recombination protein RAD54	
@@ -424,7 +424,7 @@ P32866	fly	FBgn0261988	Gprk2	P32866	98	1151	G protein-coupled receptor kinase 2 
 P32867	yeast	P32867	SSO1	P32867	9	87	Protein SSO1	
 P32870	fly	FBgn0003301	Adcy1	P32870	2	27	Ca(2+)/calmodulin-responsive adenylate cyclase (EC 4.6.1.1) 	
 P32873	yeast	P32873	BEM3	P32873	6	31	GTPase-activating protein BEM3	
-P32875	yeast	P32875	LIP5	P32875	4	36	Lipoyl synthase, mitochondrial	
+P32875	yeast	P32875	LIP5	P32875	5	37	Lipoyl synthase, mitochondrial	
 P32881	human	P32881	IFNA8	P32881	32	188	Interferon alpha-8 (IFN-alpha-8) (Interferon alpha-B) (LeIF 	
 P32883	mus-musculus	P32883	Kras	P32883	43	205	GTPase KRas	
 P32886	virus	P32886_p1638c752bb		P32886	1	14	Protein prM	

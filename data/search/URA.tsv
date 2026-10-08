@@ -1,6 +1,6 @@
 URA1	yeast	P28272	URA1	P28272	0	20	Dihydroorotate dehydrogenase (fumarate)	
 URA10	yeast	P30402	URA10	P30402	1	5	Orotate phosphoribosyltransferase 2	
-URA3	schizosaccharomyces-pombe	P32747	ura3	P32747	0	3	Dihydroorotate dehydrogenase (quinone), mitochondrial	
+URA3	schizosaccharomyces-pombe	P32747	ura3	P32747	1	4	Dihydroorotate dehydrogenase (quinone), mitochondrial	
 URA3	yeast	P03962	URA3	P03962	0	13	Orotidine 5'-phosphate decarboxylase	
 URA4	schizosaccharomyces-pombe	P14965	ura4	P14965	0	1	Orotidine 5'-phosphate decarboxylase	
 URA4	yeast	P20051	URA4	P20051	0	5	Dihydroorotase	
@@ -32,10 +32,10 @@ URACIL	yeast	Q04411	URC2	Q04411	0	54	Uracil catabolism protein 2	w
 URACIL	zebrafish	A0A8M9QB08	gpr17	A0A8M9QB08	9	20	Uracil nucleotide/cysteinyl leukotriene receptor	w
 URACIL	zebrafish	Q6NYU7	uprt	Q6NYU7	3	13	Uracil phosphoribosyltransferase homolog	w
 URACIL-5-	human	Q8IZ69	TRMT2A	Q8IZ69	10	211	tRNA (uracil-5-)-methyltransferase homolog A (EC 2.1.1.35) (	w
-URACIL-5-	human	Q96GJ1	TRMT2B	Q96GJ1	0	67	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	w
+URACIL-5-	human	Q96GJ1	TRMT2B	Q96GJ1	1	68	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	w
 URACIL-DNA	fly	FBgn0038490	Smug	Q9VEM1	0	5	Uracil-DNA glycosylase-like domain-containing protein	w
 URACIL-DNA	fly	FBgn0039226	Ude	Q7KS11	3	10	Uracil-DNA degrading factor, isoform B (Uracil-DNA degrading	w
-URACIL-DNA	human	P13051	UNG	P13051	8	96	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	w
+URACIL-DNA	human	P13051	UNG	P13051	17	105	Uracil-DNA glycosylase (UDG) (EC 3.2.2.27)	w
 URACIL-DNA	virus	A0A068EG39	fep_062	A0A068EG39	5	221	Uracil-DNA glycosylase	w
 URACIL-DNA	virus	A0A068EHG3	pepv_064	A0A068EHG3	13	240	Uracil-DNA glycosylase	w
 URACIL-DNA	virus	A0A0A7MA92		A0A0A7MA92	9	130	Uracil-DNA glycosylase	w
@@ -97,6 +97,7 @@ URACIL-DNA	virus	W6JPJ7		W6JPJ7	7	241	Uracil-DNA glycosylase	w
 URACIL-DNA	worm	Q9U221	ung-1	Q9U221	0	14	Uracil-DNA glycosylase	w
 URACIL-DNA	yeast	P12887	UNG1	P12887	1	10	Uracil-DNA glycosylase	w
 URACIL-DNA	zebrafish	A0A0G2KZ26	smug1	A0A0G2KZ26	2	7	Single-strand-selective monofunctional uracil-DNA glycosylas	w
+URACIL-DNA	zebrafish	A0A8M6Z6T9	unga	A0A8M6Z6T9	5	5	Uracil-DNA glycosylase	w
 URACIL-DNA	zebrafish	E9QG27	ungb	E9QG27	1	17	Uracil-DNA glycosylase	w
 URACIL-DNA GLYCOSYLASE	virus	A0A5P9JR33	uracil-DNA glycosylase	A0A5P9JR33	3	80	A0A5P9JR33_9ALPH	
 URACIL-O	fly	FBgn0037708	CG9386	Q9VHB9	0	8	Probable tRNA (uracil-O(2)-)-methyltransferase (EC 2.1.1.211	w

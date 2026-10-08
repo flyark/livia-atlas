@@ -6,18 +6,19 @@ MIC1	human	Q96DM3	RMC1	Q96DM3	12	161
 MIC1	human	Q99988	GDF15	Q99988	33	255		
 MIC1	worm	Q95Y58	CELE_Y50D4A.4	Q95Y58	1	3	Mic1 domain-containing protein	w
 MIC10	fly	FBgn0034973	Mic10c	Q9W1B2	0	19	MICOS complex subunit MIC10	w
-MIC10	fly	FBgn0040871	Mic10a	Q9VY65	0	15	MICOS complex subunit MIC10	w
+MIC10	fly	FBgn0040871	Mic10a	Q9VY65	1	15	MICOS complex subunit MIC10	w
 MIC10	fly	FBgn0069923	Mic10b	Q8SY69	0	15	MICOS complex subunit MIC10	w
 MIC10	human	P15529	CD46	P15529	28	114		
-MIC10	human	Q5TGZ0	MICOS10	Q5TGZ0	15	134		
+MIC10	human	Q5TGZ0	MICOS10	Q5TGZ0	16	135		
 MIC10	schizosaccharomyces-pombe	Q9HFF0	mic10	Q9HFF0	0	4	MICOS complex subunit mic10	
-MIC10	worm	Q9N4K0	F54A3.5	Q9N4K0	1	13	MICOS complex subunit Mic10	w
+MIC10	worm	Q9N4K0	F54A3.5	Q9N4K0	2	13	MICOS complex subunit Mic10	w
 MIC10	yeast	Q96VH5	MIC10	Q96VH5	1	56	MICOS complex subunit MIC10	
-MIC10	zebrafish	Q0P405	micos10	Q0P405	0	12	MICOS complex subunit MIC10	w
-MIC10A	fly	FBgn0040871	Mic10a	Q9VY65	0	15	MICOS complex subunit MIC10	
+MIC10	zebrafish	Q0P405	micos10	Q0P405	1	13	MICOS complex subunit MIC10	w
+MIC10A	fly	FBgn0040871	Mic10a	Q9VY65	1	15	MICOS complex subunit MIC10	
 MIC10B	fly	FBgn0069923	Mic10b	Q8SY69	0	15	MICOS complex subunit MIC10	
 MIC10C	fly	FBgn0034973	Mic10c	Q9W1B2	0	19	MICOS complex subunit MIC10	
-MIC10_HUMAN	human	Q5TGZ0	MICOS10	Q5TGZ0	15	134		
+MIC10_CAEEL	worm	Q9N4K0	F54A3.5	Q9N4K0	2	13		
+MIC10_HUMAN	human	Q5TGZ0	MICOS10	Q5TGZ0	16	135		
 MIC11	human	P13987	CD59	P13987	53	699		
 MIC12	yeast	P38341	MIC12	P38341	0	36	MICOS complex subunit MIC12	
 MIC13	fly	FBgn0030215	CG15296	Q9W2T5	1	17	MICOS complex subunit MIC13	w
@@ -25,23 +26,24 @@ MIC13	fly	FBgn0032365	CG14929	Q9VKG6	12	253	MICOS complex subunit MIC13	w
 MIC13	fly	FBgn0036726	QIL1	Q9VVH3	0	20	MICOS complex subunit MIC13 homolog QIL1	w
 MIC13	fly	FBgn0263032	CG43327	A0A0B4K829	1	14	MICOS complex subunit MIC13	w
 MIC13	fly	FBgn0263033	CG43328	B9ER12	1	15	MICOS complex subunit MIC13	w
-MIC13	human	Q5XKP0	MICOS13	Q5XKP0	10	143		
+MIC13	human	Q5XKP0	MICOS13	Q5XKP0	11	144		
 MIC13	worm	Q9TZE0	CELE_W04C9.2	Q9TZE0	0	15	MICOS complex subunit MIC13	w
 MIC13	zebrafish	Q1LUK1	micos13	Q1LUK1	3	30	MICOS complex subunit MIC13	w
-MIC13_HUMAN	human	Q5XKP0	MICOS13	Q5XKP0	10	143		
+MIC13_HUMAN	human	Q5XKP0	MICOS13	Q5XKP0	11	144		
 MIC17	cladophialophora-carrionii	A0A1C1CIL8	MIC17	A0A1C1CIL8	0	1	Mitochondrial intermembrane space cysteine motif-containing 	
 MIC18	human	P16422	EPCAM	P16422	24	487		
-MIC19	human	Q9NX63	CHCHD3	Q9NX63	20	252		
+MIC19	human	Q9NX63	CHCHD3	Q9NX63	21	253		
 MIC19	schizosaccharomyces-pombe	P87150	mic19	P87150	1	4	MICOS complex subunit mic19	
 MIC19	worm	Q21551	chch-3	Q21551	3	24	MICOS complex subunit MIC19	w
 MIC19	yeast	P43594	MIC19	P43594	1	22	MICOS complex subunit MIC19	
-MIC19_HUMAN	human	Q9NX63	CHCHD3	Q9NX63	20	252		
+MIC19	zebrafish	A0A8M3B8X9	chchd3a	A0A8M3B8X9	1	1	MICOS complex subunit MIC19 isoform X1	w
+MIC19_HUMAN	human	Q9NX63	CHCHD3	Q9NX63	21	253		
 MIC2	human	P14209	CD99	P14209	10	181		
 MIC2-LIKE	human	Q8TCZ2	CD99L2	Q8TCZ2	6	85	CD99 antigen-like protein 2 (MIC2-like protein 1) (CD antige	w
 MIC23	human	Q9BUR5	APOO	Q9BUR5	8	210		
-MIC25	human	Q9BRQ6	CHCHD6	Q9BRQ6	7	111		
-MIC25A	zebrafish	Q63ZW2	chchd6a	Q63ZW2	4	21	MICOS complex subunit mic25a	w
-MIC25_HUMAN	human	Q9BRQ6	CHCHD6	Q9BRQ6	7	111		
+MIC25	human	Q9BRQ6	CHCHD6	Q9BRQ6	9	113		
+MIC25A	zebrafish	Q63ZW2	chchd6a	Q63ZW2	6	23	MICOS complex subunit mic25a	w
+MIC25_HUMAN	human	Q9BRQ6	CHCHD6	Q9BRQ6	9	113		
 MIC26	human	Q9BUR5	APOO	Q9BUR5	8	210		
 MIC26	yeast	P50087	MIC26	P50087	0	22	MICOS subunit MIC26	
 MIC26-27	fly	FBgn0038400	Mic26-27	Q9VEY5	3	25	MICOS complex subunit	
@@ -59,14 +61,15 @@ MIC5	human	P32004	L1CAM	P32004	47	282
 MIC60	ajellomyces-capsulatus	C0NUJ9	MIC60	C0NUJ9	2	15	MICOS complex subunit MIC60	
 MIC60	arabidopsis-thaliana	Q9ASV5	MIC60	Q9ASV5	0	4	MICOS complex subunit MIC60, mitochondrial	
 MIC60	candida-albicans-237561	Q5A044	MIC60	Q5A044	3	16	MICOS complex subunit MIC60	
-MIC60	fly	FBgn0019960	Mitofilin	A0A0B4KGN2	6	62	MICOS complex subunit MIC60 (Mitofilin)	w
+MIC60	fly	FBgn0019960	Mitofilin	A0A0B4KGN2	7	62	MICOS complex subunit MIC60 (Mitofilin)	w
 MIC60	human	Q16891	IMMT	Q16891	24	456		
 MIC60	paracoccidioides-lutzii	C1GYK6	MIC60	C1GYK6	1	15	MICOS complex subunit MIC60	
 MIC60	schizosaccharomyces-pombe	O59725	mic60	O59725	1	14	MICOS complex subunit mic60	
 MIC60	yeast	P36112	MIC60	P36112	3	247	MICOS complex subunit MIC60	
-MIC60	zebrafish	Q6PFS4	immt	Q6PFS4	5	56	MICOS complex subunit MIC60	w
-MIC60-1	worm	Q22505	immt-1	Q22505	3	46	MICOS complex subunit MIC60-1	w
+MIC60	zebrafish	Q6PFS4	immt	Q6PFS4	6	56	MICOS complex subunit MIC60	w
+MIC60-1	worm	Q22505	immt-1	Q22505	4	46	MICOS complex subunit MIC60-1	w
 MIC60-2	worm	Q9XXN2	immt-2	Q9XXN2	4	37	MICOS complex subunit MIC60-2	w
+MIC60_DROME	fly	FBgn0019960	Mitofilin	A0A0B4KGN2	7	62		
 MIC60_HUMAN	human	Q16891	IMMT	Q16891	24	456		
 MICA	human	Q29983	MICA	Q29983	10	116	MHC class I polypeptide-related sequence A (MIC-A)	
 MICA	human	Q96QC4	MICA	Q96QC4	3	52	MHC class I chain-related protein A	
@@ -114,27 +117,27 @@ MICA_HUMAN	human	Q29983	MICA	Q29983	10	116
 MICB	human	Q29980	MICB	Q29980	42	316	MHC class I polypeptide-related sequence B (MIC-B)	
 MICB_HUMAN	human	Q29980	MICB	Q29980	42	316		
 MICL	human	Q5QGZ9	CLEC12A	Q5QGZ9	71	326		
-MICOS	fly	FBgn0019960	Mitofilin	A0A0B4KGN2	6	62	MICOS complex subunit MIC60 (Mitofilin)	w
+MICOS	fly	FBgn0019960	Mitofilin	A0A0B4KGN2	7	62	MICOS complex subunit MIC60 (Mitofilin)	w
 MICOS	fly	FBgn0030215	CG15296	Q9W2T5	1	17	MICOS complex subunit MIC13	w
 MICOS	fly	FBgn0032365	CG14929	Q9VKG6	12	253	MICOS complex subunit MIC13	w
 MICOS	fly	FBgn0034973	Mic10c	Q9W1B2	0	19	MICOS complex subunit MIC10	w
 MICOS	fly	FBgn0036726	QIL1	Q9VVH3	0	20	MICOS complex subunit MIC13 homolog QIL1	w
 MICOS	fly	FBgn0038400	Mic26-27	Q9VEY5	3	25	MICOS complex subunit	w
-MICOS	fly	FBgn0040871	Mic10a	Q9VY65	0	15	MICOS complex subunit MIC10	w
+MICOS	fly	FBgn0040871	Mic10a	Q9VY65	1	15	MICOS complex subunit MIC10	w
 MICOS	fly	FBgn0069923	Mic10b	Q8SY69	0	15	MICOS complex subunit MIC10	w
 MICOS	fly	FBgn0263032	CG43327	A0A0B4K829	1	14	MICOS complex subunit MIC13	w
 MICOS	fly	FBgn0263033	CG43328	B9ER12	1	15	MICOS complex subunit MIC13	w
 MICOS	human	Q16891	IMMT	Q16891	24	456	MICOS complex subunit MIC60 (Cell proliferation-inducing gen	w
-MICOS	human	Q5TGZ0	MICOS10	Q5TGZ0	15	134	MICOS complex subunit MIC10 (Mitochondrial inner membrane or	w
-MICOS	human	Q5XKP0	MICOS13	Q5XKP0	10	143	MICOS complex subunit MIC13 (Protein P117)	w
+MICOS	human	Q5TGZ0	MICOS10	Q5TGZ0	16	135	MICOS complex subunit MIC10 (Mitochondrial inner membrane or	w
+MICOS	human	Q5XKP0	MICOS13	Q5XKP0	11	144	MICOS complex subunit MIC13 (Protein P117)	w
 MICOS	human	Q6UXV4	APOOL	Q6UXV4	10	113	MICOS complex subunit MIC27 (Apolipoprotein O-like) (Protein	w
-MICOS	human	Q9BRQ6	CHCHD6	Q9BRQ6	7	111	MICOS complex subunit MIC25 (Coiled-coil-helix cristae morph	w
+MICOS	human	Q9BRQ6	CHCHD6	Q9BRQ6	9	113	MICOS complex subunit MIC25 (Coiled-coil-helix cristae morph	w
 MICOS	human	Q9BUR5	APOO	Q9BUR5	8	210	MICOS complex subunit MIC26 (Apolipoprotein O) (MICOS comple	w
-MICOS	human	Q9NX63	CHCHD3	Q9NX63	20	252	MICOS complex subunit MIC19 (Coiled-coil-helix-coiled-coil-h	w
+MICOS	human	Q9NX63	CHCHD3	Q9NX63	21	253	MICOS complex subunit MIC19 (Coiled-coil-helix-coiled-coil-h	w
 MICOS	worm	Q21154	moma-1	Q21154	2	60	MICOS complex subunit MIC27	w
 MICOS	worm	Q21551	chch-3	Q21551	3	24	MICOS complex subunit MIC19	w
-MICOS	worm	Q22505	immt-1	Q22505	3	46	MICOS complex subunit MIC60-1	w
-MICOS	worm	Q9N4K0	F54A3.5	Q9N4K0	1	13	MICOS complex subunit Mic10	w
+MICOS	worm	Q22505	immt-1	Q22505	4	46	MICOS complex subunit MIC60-1	w
+MICOS	worm	Q9N4K0	F54A3.5	Q9N4K0	2	13	MICOS complex subunit Mic10	w
 MICOS	worm	Q9TZE0	CELE_W04C9.2	Q9TZE0	0	15	MICOS complex subunit MIC13	w
 MICOS	worm	Q9XXN2	immt-2	Q9XXN2	4	37	MICOS complex subunit MIC60-2	w
 MICOS	yeast	P36112	MIC60	P36112	3	247	MICOS complex subunit MIC60	w
@@ -143,19 +146,23 @@ MICOS	yeast	P43594	MIC19	P43594	1	22	MICOS complex subunit MIC19	w
 MICOS	yeast	P50087	MIC26	P50087	0	22	MICOS subunit MIC26	w
 MICOS	yeast	P50945	MIC27	P50945	0	22	MICOS complex subunit MIC27	w
 MICOS	yeast	Q96VH5	MIC10	Q96VH5	1	56	MICOS complex subunit MIC10	w
-MICOS	zebrafish	Q0P405	micos10	Q0P405	0	12	MICOS complex subunit MIC10	w
+MICOS	zebrafish	A0A8M3B8X9	chchd3a	A0A8M3B8X9	1	1	MICOS complex subunit MIC19 isoform X1	w
+MICOS	zebrafish	Q0P405	micos10	Q0P405	1	13	MICOS complex subunit MIC10	w
 MICOS	zebrafish	Q1LUK1	micos13	Q1LUK1	3	30	MICOS complex subunit MIC13	w
 MICOS	zebrafish	Q3B747	apooa	Q3B747	1	18	MICOS complex subunit	w
 MICOS	zebrafish	Q58EI3	apool	Q58EI3	1	21	MICOS complex subunit	w
-MICOS	zebrafish	Q63ZW2	chchd6a	Q63ZW2	4	21	MICOS complex subunit mic25a	w
-MICOS	zebrafish	Q6PFS4	immt	Q6PFS4	5	56	MICOS complex subunit MIC60	w
-MICOS10	human	Q5TGZ0	MICOS10	Q5TGZ0	15	134	MICOS complex subunit MIC10 (Mitochondrial inner membrane or	
-MICOS10	mus-musculus	Q7TNS2	Micos10	Q7TNS2	1	10	MICOS complex subunit Mic10	
-MICOS10	rattus-norvegicus	B2RYW8	Micos10	B2RYW8	1	14	MICOS complex subunit Mic10	
-MICOS10	zebrafish	Q0P405	micos10	Q0P405	0	12	MICOS complex subunit MIC10	
-MICOS13	human	Q5XKP0	MICOS13	Q5XKP0	10	143	MICOS complex subunit MIC13 (Protein P117)	
-MICOS13	mus-musculus	Q8R404	Micos13	Q8R404	2	16	MICOS complex subunit MIC13	
-MICOS13	rattus-norvegicus	M0R719	Micos13	M0R719	1	7	MICOS complex subunit MIC13	
+MICOS	zebrafish	Q63ZW2	chchd6a	Q63ZW2	6	23	MICOS complex subunit mic25a	w
+MICOS	zebrafish	Q6PFS4	immt	Q6PFS4	6	56	MICOS complex subunit MIC60	w
+MICOS10	human	Q5TGZ0	MICOS10	Q5TGZ0	16	135	MICOS complex subunit MIC10 (Mitochondrial inner membrane or	
+MICOS10	mus-musculus	Q7TNS2	Micos10	Q7TNS2	2	11	MICOS complex subunit Mic10	
+MICOS10	pan-troglodytes	H2PY72	MICOS10	H2PY72	2	2	MICOS complex subunit MIC10	
+MICOS10	rattus-norvegicus	B2RYW8	Micos10	B2RYW8	2	15	MICOS complex subunit Mic10	
+MICOS10	zebrafish	Q0P405	micos10	Q0P405	1	13	MICOS complex subunit MIC10	
+MICOS10.L	xenopus-laevis	A4FVF7	micos10.L	A4FVF7	2	2	MICOS complex subunit MIC10	
+MICOS13	human	Q5XKP0	MICOS13	Q5XKP0	11	144	MICOS complex subunit MIC13 (Protein P117)	
+MICOS13	mus-musculus	Q8R404	Micos13	Q8R404	3	17	MICOS complex subunit MIC13	
+MICOS13	pan-troglodytes	H2QF32	MICOS13	H2QF32	1	1	MICOS complex subunit MIC13	
+MICOS13	rattus-norvegicus	M0R719	Micos13	M0R719	2	8	MICOS complex subunit MIC13	
 MICOS13	zebrafish	Q1LUK1	micos13	Q1LUK1	3	30	MICOS complex subunit MIC13	
 MICRO-COFACTOR	human	E9PRG8	RSMC	E9PRG8	3	57	28S rRNA/ribosome and sororin micro-cofactor	w
 MICROCEPHALIN	fly	FBgn0260959	MCPH1	E1JH39	10	98	Microcephalin, isoform D	w
@@ -220,15 +227,15 @@ MICROSOMAL	human	P15144	ANPEP	P15144	10	215	Aminopeptidase N (AP-N) (hAPN) (EC 3
 MICROSOMAL	human	P16444	DPEP1	P16444	14	106	Dipeptidase 1 (EC 3.4.13.19) (Beta-lactamase) (EC 3.5.2.6) (	w
 MICROSOMAL	human	P30101	PDIA3	P30101	17	445	Protein disulfide-isomerase A3 (EC 5.3.4.1) (58 kDa glucose-	w
 MICROSOMAL	human	P48723	HSPA13	P48723	8	175	Heat shock 70 kDa protein 13 (Heat shock protein family A me	w
-MICROSOMAL	human	P51648	ALDH3A2	P51648	16	355	Aldehyde dehydrogenase family 3 member A2 (EC 1.2.1.3) (EC 1	w
+MICROSOMAL	human	P51648	ALDH3A2	P51648	20	360	Aldehyde dehydrogenase family 3 member A2 (EC 1.2.1.3) (EC 1	w
 MICROSOMAL	human	P55157	MTTP	P55157	2	18	Microsomal triglyceride transfer protein large subunit	w
 MICROSOMAL	human	P61009	SPCS3	P61009	13	157	Signal peptidase complex subunit 3 (Microsomal signal peptid	w
 MICROSOMAL	human	P67812	SEC11A	P67812	15	107	Signal peptidase complex catalytic subunit SEC11A (EC 3.4.21	w
 MICROSOMAL	human	Q15005	SPCS2	Q15005	18	163	Signal peptidase complex subunit 2 (Microsomal signal peptid	w
 MICROSOMAL	human	Q99735	MGST2	Q99735	4	104	Microsomal glutathione S-transferase 2 (Microsomal GST-2) (E	w
 MICROSOMAL	human	Q9BY50	SEC11C	Q9BY50	16	86	Signal peptidase complex catalytic subunit SEC11C (EC 3.4.21	w
-MICROSOMAL	human	Q9BYT8	NLN	Q9BYT8	5	80	Neurolysin, mitochondrial (EC 3.4.24.16) (Angiotensin-bindin	w
-MICROSOMAL	human	Q9H7Z7	PTGES2	Q9H7Z7	15	147	Prostaglandin E synthase 2 (EC 5.3.99.3) (Membrane-associate	w
+MICROSOMAL	human	Q9BYT8	NLN	Q9BYT8	9	84	Neurolysin, mitochondrial (EC 3.4.24.16) (Angiotensin-bindin	w
+MICROSOMAL	human	Q9H7Z7	PTGES2	Q9H7Z7	24	156	Prostaglandin E synthase 2 (EC 5.3.99.3) (Membrane-associate	w
 MICROSOMAL	human	Q9Y6A9	SPCS1	Q9Y6A9	19	226	Signal peptidase complex subunit 1 (Microsomal signal peptid	w
 MICROSOMAL	worm	G5ECG7	dsc-4	G5ECG7	1	8	Microsomal triglyceride transfer protein homolog	w
 MICROSOMAL	zebrafish	A0A0R4IVV0	mttp	A0A0R4IVV0	4	17	Microsomal triglyceride transfer protein large subunit	w
@@ -272,14 +279,14 @@ MICROTUBULE	human	Q8N5S3	CIMIP6	Q8N5S3	2	29	Ciliary microtubule inner protein 6	
 MICROTUBULE	human	Q8N865	SPMIP4	Q8N865	0	24	Sperm-associated microtubule inner protein 4	w
 MICROTUBULE	human	Q8NCR6	SPMIP6	Q8NCR6	17	104	Sperm microtubule inner protein 6 (Ciliated bronchial epithe	w
 MICROTUBULE	human	Q8WW14	SPMIP5	Q8WW14	3	43	Sperm-associated microtubule inner protein 5	w
-MICROTUBULE	human	Q96DB5	RMDN1	Q96DB5	9	100	Regulator of microtubule dynamics protein 1 (RMD-1) (hRMD-1)	w
+MICROTUBULE	human	Q96DB5	RMDN1	Q96DB5	12	103	Regulator of microtubule dynamics protein 1 (RMD-1) (hRMD-1)	w
 MICROTUBULE	human	Q96L34	MARK4	Q96L34	304	1287	MAP/microtubule affinity-regulating kinase 4 (EC 2.7.11.1) (	w
 MICROTUBULE	human	Q96LM5	SPMIP2	Q96LM5	1	86	Protein SPMIP2 (Sperm-associated microtubule inner protein 2	w
 MICROTUBULE	human	Q96LM6	SPMIP9	Q96LM6	2	73	Protein SPMIP9 (Sperm microtubule inner protein 9) (Testis-e	w
 MICROTUBULE	human	Q96LR7	CIMIP5	Q96LR7	5	27	Ciliary microtubule inner protein 5	w
 MICROTUBULE	human	Q96LZ7	RMDN2	Q96LZ7	7	40	Regulator of microtubule dynamics protein 2 (RMD-2) (hRMD-2)	w
 MICROTUBULE	human	Q96PU9	CIMAP1A	Q96PU9	0	34	Ciliary microtubule associated protein 1A (Outer dense fiber	w
-MICROTUBULE	human	Q96TC7	RMDN3	Q96TC7	41	338	Regulator of microtubule dynamics protein 3 (RMD-3) (hRMD-3)	w
+MICROTUBULE	human	Q96TC7	RMDN3	Q96TC7	52	349	Regulator of microtubule dynamics protein 3 (RMD-3) (hRMD-3)	w
 MICROTUBULE	human	Q9H1P6	CIMIP1	Q9H1P6	5	52	Ciliary microtubule inner protein 1	w
 MICROTUBULE	human	Q9H6U6	BCAS3	Q9H6U6	15	104	BCAS3 microtubule associated cell migration factor (Breast c	w
 MICROTUBULE	human	Q9H910	JPT2	Q9H910	4	105	Jupiter microtubule associated homolog 2 (Hematological and 	w
@@ -291,7 +298,7 @@ MICROTUBULE	human	Q9Y496	KIF3A	Q9Y496	21	280	Kinesin-like protein KIF3A (EC 3.6.
 MICROTUBULE	human	Q9Y4B5	MTCL1	Q9Y4B5	30	99	Microtubule cross-linking factor 1 (Coiled-coil domain-conta	w
 MICROTUBULE	human	X6R8D5	CIMIP3	X6R8D5	0	16	Ciliary microtubule inner protein 3 (GUCA1A neighbor)	w
 MICROTUBULE	worm	G5EEK3	noca-1	G5EEK3	1	21	Non-centrosomal microtubule array protein 1	w
-MICROTUBULE	worm	O62216	CELE_F33H2.6	O62216	2	48	Regulator of microtubule dynamics protein 1	w
+MICROTUBULE	worm	O62216	CELE_F33H2.6	O62216	3	49	Regulator of microtubule dynamics protein 1	w
 MICROTUBULE	worm	P34560	rmd-1	P34560	0	16	Regulator of microtubule dynamics protein 1	w
 MICROTUBULE	worm	Q17510	rmd-3	Q17510	0	1	Regulator of microtubule dynamics protein 1	w
 MICROTUBULE	worm	Q9GRZ1	ebp-1	Q9GRZ1	0	43	Microtubule End Binding Protein	w
@@ -373,6 +380,7 @@ MICROTUBULE-ASSOCIATED	zebrafish	E7F4Z9	map1lc3cl	E7F4Z9	20	65	Microtubule-assoc
 MICROTUBULE-ASSOCIATED	zebrafish	E7F624	map6a	E7F624	0	5	Microtubule-associated protein 6 homolog isoform X1	w
 MICROTUBULE-ASSOCIATED	zebrafish	E7FFM0	map6b	E7FFM0	0	5	Microtubule-associated protein 6 homolog	w
 MICROTUBULE-ASSOCIATED	zebrafish	Q4V903	mapre3a	Q4V903	1	34	Microtubule-associated protein RP/EB family member 3	w
+MICROTUBULE-ASSOCIATED	zebrafish	Q5TYQ9	zRMD-1	Q5TYQ9	7	7	Microtubule-associated protein	w
 MICROTUBULE-ASSOCIATED	zebrafish	Q6GMJ3	mapre3b	Q6GMJ3	1	34	Microtubule-associated protein RP/EB family member 3	w
 MICROTUBULE-ASSOCIATED	zebrafish	Q6NUY9	mapre1b	Q6NUY9	4	49	Microtubule-associated protein RP/EB family member 1	w
 MICROTUBULE-ASSOCIATED	zebrafish	Q6NX90	map1lc3a	Q6NX90	34	99	Microtubule-associated protein 1 light chain 3 alpha	w
@@ -398,26 +406,37 @@ MICROTUBULES-LIKE	human	Q1A5X7	WHAMMP3	Q1A5X7	1	16	Putative WASP homolog-associa
 MICROVASCULAR	human	Q9UBS3	DNAJB9	Q9UBS3	42	274	DnaJ homolog subfamily B member 9 (Endoplasmic reticulum DNA	w
 MICS-1	worm	Q22638	mics-1	Q22638	2	9	Mitochondrial scaffolding protein 1	
 MICS1	fly	FBgn0037506	Mics1	Q9VIB2	6	12	MIP04261p (Mitochondrial morphology and cristae structure 1)	
-MICS1	human	Q9H3K2	GHITM	Q9H3K2	27	159		
+MICS1	human	Q9H3K2	GHITM	Q9H3K2	40	172		
 MICT1	human	Q96GX8	CLMB	Q96GX8	9	60		
 MICU	arabidopsis-thaliana	Q9SZ45	MICU	Q9SZ45	6	19	Calcium uptake protein, mitochondrial	
 MICU-1	worm	Q95PZ2	micu-1	Q95PZ2	1	13	Calcium uptake protein 1 homolog, mitochondrial	
-MICU-3	worm	Q18874	micu-3	Q18874	1	20	EF-hand domain-containing protein	
-MICU1	fly	FBgn0031893	MICU1	A2VEI2	3	13	Calcium uptake protein 1 homolog, mitochondrial (Mitochondri	
+MICU-3	worm	Q18874	micu-3	Q18874	1	21	EF-hand domain-containing protein	
+MICU1	fly	FBgn0031893	MICU1	A2VEI2	4	14	Calcium uptake protein 1 homolog, mitochondrial (Mitochondri	
 MICU1	human	A0A286YF11	MICU1	A0A286YF11	3	51	Calcium uptake protein 1, mitochondrial	
-MICU1	human	Q9BPX6	MICU1	Q9BPX6	4	90	Calcium uptake protein 1, mitochondrial (Atopy-related autoa	
-MICU1	mus-musculus	Q8VCX5	Micu1	Q8VCX5	2	30	Calcium uptake protein 1, mitochondrial	
-MICU1	rattus-norvegicus	Q6P6Q9	Micu1	Q6P6Q9	3	22	Calcium uptake protein 1, mitochondrial	
-MICU1	zebrafish	A4IG32	micu1	A4IG32	2	22	Calcium uptake protein 1, mitochondrial	
-MICU1_HUMAN	human	Q9BPX6	MICU1	Q9BPX6	4	90		
-MICU2	human	Q8IYU8	MICU2	Q8IYU8	10	106	Calcium uptake protein 2, mitochondrial (hMICU3) (EF-hand do	
-MICU2	mus-musculus	Q8CD10	Micu2	Q8CD10	2	12	Calcium uptake protein 2, mitochondrial	
-MICU2	rattus-norvegicus	Q99P63	Micu2	Q99P63	2	16	Calcium uptake protein 2, mitochondrial	
-MICU2_HUMAN	human	Q8IYU8	MICU2	Q8IYU8	10	106		
+MICU1	human	Q9BPX6	MICU1	Q9BPX6	5	91	Calcium uptake protein 1, mitochondrial (Atopy-related autoa	
+MICU1	mus-musculus	Q8VCX5	Micu1	Q8VCX5	3	31	Calcium uptake protein 1, mitochondrial	
+MICU1	pan-troglodytes	H2Q227	MICU1	H2Q227	3	3	Calcium binding atopy-related autoantigen 1	
+MICU1	rattus-norvegicus	Q6P6Q9	Micu1	Q6P6Q9	4	23	Calcium uptake protein 1, mitochondrial	
+MICU1	zebrafish	A4IG32	micu1	A4IG32	5	25	Calcium uptake protein 1, mitochondrial	
+MICU1.L	xenopus-laevis	A0A8J1L5C0	micu1.L	A0A8J1L5C0	3	3	calcium uptake protein 1, mitochondrial isoform X1	
+MICU1_CAEEL	worm	Q95PZ2	micu-1	Q95PZ2	1	13		
+MICU1_DANRE	zebrafish	A4IG32	micu1	A4IG32	5	25		
+MICU1_DROME	fly	FBgn0031893	MICU1	A2VEI2	4	14		
+MICU1_HUMAN	human	Q9BPX6	MICU1	Q9BPX6	5	91		
+MICU2	human	Q8IYU8	MICU2	Q8IYU8	15	111	Calcium uptake protein 2, mitochondrial (hMICU3) (EF-hand do	
+MICU2	mus-musculus	Q8CD10	Micu2	Q8CD10	6	17	Calcium uptake protein 2, mitochondrial	
+MICU2	pan-troglodytes	H2Q7A0	MICU2	H2Q7A0	6	6	EF-hand domain family, member A1	
+MICU2	rattus-norvegicus	Q99P63	Micu2	Q99P63	7	21	Calcium uptake protein 2, mitochondrial	
+MICU2	zebrafish	Q1LYC5	micu2	Q1LYC5	4	4	Mitochondrial calcium uptake 2	
+MICU2.S	xenopus-laevis	Q4V7I0	micu2.S	Q4V7I0	5	6	MGC115690 protein	
+MICU2_HUMAN	human	Q8IYU8	MICU2	Q8IYU8	15	111		
 MICU3	fly	FBgn0038735	MICU3	A0A0B4KHF1	4	16	Mitochondrial calcium uptake 3, isoform D	
-MICU3	human	Q86XE3	MICU3	Q86XE3	3	41	Calcium uptake protein 3, mitochondrial (hMICU3) (EF-hand do	
-MICU3	mus-musculus	Q9CTY5	Micu3	Q9CTY5	2	13	Calcium uptake protein 3, mitochondrial	
-MICU3	rattus-norvegicus	A0A8I6A2H6	Micu3	A0A8I6A2H6	2	12	Calcium uptake protein 3, mitochondrial	
+MICU3	human	Q86XE3	MICU3	Q86XE3	6	44	Calcium uptake protein 3, mitochondrial (hMICU3) (EF-hand do	
+MICU3	mus-musculus	Q9CTY5	Micu3	Q9CTY5	4	15	Calcium uptake protein 3, mitochondrial	
+MICU3	pan-troglodytes	A0A2I3TPM8	MICU3	A0A2I3TPM8	3	3	Mitochondrial calcium uptake family member 3	
+MICU3	rattus-norvegicus	A0A8I6A2H6	Micu3	A0A8I6A2H6	3	13	Calcium uptake protein 3, mitochondrial	
+MICU3.L	xenopus-laevis	A0A8J0THP3	micu3.L	A0A8J0THP3	3	3	LOW QUALITY PROTEIN: calcium uptake protein 3, mitochondrial	
+MICU3A	zebrafish	A0A8M9Q0E9	micu3a	A0A8M9Q0E9	3	3	calcium uptake protein 3, mitochondrial	
 MICU3A	zebrafish	A0AB32TLB3	micu3a	A0AB32TLB3	3	14	Calcium uptake protein 3, mitochondrial isoform X8	
 MICU3B	zebrafish	E7FF65	micu3b	E7FF65	2	14	Calcium uptake protein 3, mitochondrial isoform X1	
-MICU3_HUMAN	human	Q86XE3	MICU3	Q86XE3	3	41		
+MICU3_HUMAN	human	Q86XE3	MICU3	Q86XE3	6	44		

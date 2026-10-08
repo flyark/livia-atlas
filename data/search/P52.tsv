@@ -7,7 +7,7 @@ P52011	worm	P52011	cyn-3	P52011	3	82	Peptidyl-prolyl cis-trans isomerase 3
 P52012	worm	P52012	cyn-4	P52012	6	47	Peptidyl-prolyl cis-trans isomerase 4	
 P52013	worm	P52013	cyn-5	P52013	3	62	Peptidyl-prolyl cis-trans isomerase 5	
 P52014	worm	P52014	cyn-6	P52014	1	67	Peptidyl-prolyl cis-trans isomerase 6	
-P52015	worm	P52015	cyn-7	P52015	7	91	Peptidyl-prolyl cis-trans isomerase 7	
+P52015	worm	P52015	cyn-7	P52015	12	96	Peptidyl-prolyl cis-trans isomerase 7	
 P52016	worm	P52016	cyn-8	P52016	2	29	Peptidyl-prolyl cis-trans isomerase 8	
 P52017	worm	P52017	cyn-10	P52017	9	45	Peptidyl-prolyl cis-trans isomerase 10	
 P52018	worm	P52018	cyn-11	P52018	5	32	Peptidyl-prolyl cis-trans isomerase 11	
@@ -21,7 +21,7 @@ P52037	escherichia-coli-83333	P52037	ygfF	P52037	1	30	Uncharacterized oxidoreduc
 P52043	escherichia-coli-83333	P52043	scpC	P52043	0	2	Propanoyl-CoA:succinate CoA transferase	
 P52045	escherichia-coli-83333	P52045	scpB	P52045	1	93	Methylmalonyl-CoA decarboxylase	
 P52052	escherichia-coli-83333	P52052	yggR	P52052	2	7	Uncharacterized protein YggR	
-P52057	worm	P52057	F09E5.8	P52057	0	5	Pyridoxal phosphate homeostasis protein	
+P52057	worm	P52057	F09E5.8	P52057	1	6	Pyridoxal phosphate homeostasis protein	
 P52060	escherichia-coli-83333	P52060	yggU	P52060	0	1	UPF0235 protein YggU	
 P52061	escherichia-coli-83333	P52061	rdgB	P52061	0	1	dITP/XTP pyrophosphatase	
 P52062	escherichia-coli-83333	P52062	hemW	P52062	0	1	Heme chaperone HemW	
@@ -63,7 +63,7 @@ P52190	rattus-norvegicus	P52190	Kcnj4	P52190	20	48	Inward rectifier potassium ch
 P52191	rattus-norvegicus	P52191	Kcnj16	P52191	10	28	Inward rectifier potassium channel 16	
 P52192	worm	P52192	irk-1	P52192	2	13	Inward rectifier potassium channel irk-1	
 P52194	mus-musculus	P52194	Clgn	P52194	0	22	Calmegin	
-P52196	mus-musculus	P52196	Tst	P52196	1	22	Thiosulfate sulfurtransferase	
+P52196	mus-musculus	P52196	Tst	P52196	7	29	Thiosulfate sulfurtransferase	
 P52198	human	P52198	RND2	P52198	79	559	Rho-related GTP-binding protein RhoN (EC 3.6.5.2) (Rho famil	
 P52209	human	P52209	PGD	P52209	0	214	6-phosphogluconate dehydrogenase, decarboxylating (EC 1.1.1.	
 P52272	human	P52272	HNRNPM	P52272	30	692	Heterogeneous nuclear ribonucleoprotein M (hnRNP M)	
@@ -154,8 +154,8 @@ P52491	yeast	P52491	UBC12	P52491	5	25	NEDD8-conjugating enzyme UBC12
 P52492	yeast	P52492	UBC11	P52492	9	34	Ubiquitin-conjugating enzyme E2-18 kDa	
 P52496	candida-albicans-237561	P52496	LIG4	P52496	2	28	DNA ligase 4	
 P52500	rattus-norvegicus	P52500	Grpr	P52500	2	20	Gastrin-releasing peptide receptor	
-P52503	mus-musculus	P52503	Ndufs6	P52503	2	180	NADH dehydrogenase	
-P52504	rattus-norvegicus	P52504	Ndufs6	P52504	1	195	NADH dehydrogenase	
+P52503	mus-musculus	P52503	Ndufs6	P52503	6	181	NADH dehydrogenase	
+P52504	rattus-norvegicus	P52504	Ndufs6	P52504	5	197	NADH dehydrogenase	
 P52508	virus	P52508	gL	P52508	4	98	Envelope glycoprotein L	
 P52526	virus	P52526	gL	P52526	1	95	Envelope glycoprotein L	
 P52527	virus	P52527	U25	P52527	4	99	Protein U25	
@@ -220,7 +220,7 @@ P52657	human	P52657	GTF2A2	P52657	41	603	Transcription initiation factor IIA sub
 P52678	mycobacterium-leprae	P52678	oxyR	P52678	0	2	Probable hydrogen peroxide-inducible genes activator	
 P52701	human	P52701	MSH6	P52701	17	343	DNA mismatch repair protein Msh6 (hMSH6) (G/T mismatch-bindi	
 P52709	worm	P52709	tars-1	P52709	0	90	Threonine--tRNA ligase, cytoplasmic	
-P52713	worm	P52713	alh-8	P52713	1	62	Probable methylmalonate-semialdehyde/malonate-semialdehyde d	
+P52713	worm	P52713	alh-8	P52713	1	63	Probable methylmalonate-semialdehyde/malonate-semialdehyde d	
 P52714	worm	P52714	ctsa-3.2	P52714	0	1	Serine carboxypeptidase ctsa-3.2	
 P52715	worm	P52715	ctsa-1.2	P52715	0	32	Serine carboxypeptidase ctsa-1.2	
 P52716	worm	P52716	ctsa-3.1	P52716	0	8	Serine carboxypeptidase ctsa-3.1	
@@ -242,7 +242,7 @@ P52746	human	P52746	ZNF142	P52746	3	88	Zinc finger protein 142
 P52747	human	P52747	ZNF143	P52747	6	149	Zinc finger protein 143 (SPH-binding factor) (Selenocysteine	
 P52756	human	P52756	RBM5	P52756	41	292	RNA-binding protein 5 (Protein G15) (Putative tumor suppress	
 P52757	human	P52757	CHN2	P52757	9	99	Beta-chimaerin (Beta-chimerin) (Rho GTPase-activating protei	
-P52758	human	P52758	RIDA	P52758	0	65	2-iminobutanoate/2-iminopropanoate deaminase (EC 3.5.99.10) 	
+P52758	human	P52758	RIDA	P52758	1	66	2-iminobutanoate/2-iminopropanoate deaminase (EC 3.5.99.10) 	
 P52759	rattus-norvegicus	P52759	Rida	P52759	0	9	2-iminobutanoate/2-iminopropanoate deaminase	
 P52760	mus-musculus	P52760	Rida	P52760	0	9	2-iminobutanoate/2-iminopropanoate deaminase	
 P52785	mus-musculus	P52785	Gucy2e	P52785	3	18	Retinal guanylyl cyclase 1	
@@ -269,7 +269,7 @@ P52821	worm	P52821	rps-25	P52821	12	192	Small ribosomal subunit protein eS25
 P52822	schizosaccharomyces-pombe	P52822	rpl501	P52822	12	243	Large ribosomal subunit protein uL18A	
 P52823	human	P52823	STC1	P52823	1	72	Stanniocalcin-1 (STC-1)	
 P52824	human	P52824	DGKQ	P52824	1	38	Diacylglycerol kinase theta (DAG kinase theta) (DGKtheta) (E	
-P52825	mus-musculus	P52825	Cpt2	P52825	2	38	Carnitine O-palmitoyltransferase 2, mitochondrial	
+P52825	mus-musculus	P52825	Cpt2	P52825	4	40	Carnitine O-palmitoyltransferase 2, mitochondrial	
 P52839	arabidopsis-thaliana	P52839	SOT12	P52839	0	2	Cytosolic sulfotransferase 12	
 P52840	mus-musculus	P52840	Sult1a1	P52840	4	7	Sulfotransferase 1A1	
 P52843	mus-musculus	P52843	Sult2a1	P52843	0	7	Sulfotransferase 2A1	
@@ -283,7 +283,7 @@ P52868	yeast	P52868	CWC23	P52868	9	47	Pre-mRNA-splicing factor CWC23
 P52870	yeast	P52870	SBH1	P52870	13	238	Protein transport protein SBH1	
 P52871	yeast	P52871	SBH2	P52871	13	186	Protein transport protein SBH2	
 P52872	worm	P52872	dad-1	P52872	3	13	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	
-P52873	rattus-norvegicus	P52873	Pc	P52873	0	26	Pyruvate carboxylase, mitochondrial	
+P52873	rattus-norvegicus	P52873	Pc	P52873	1	27	Pyruvate carboxylase, mitochondrial	
 P52874	worm	P52874	clpf-1	P52874	5	35	Protein clpf-1	
 P52875	mus-musculus	P52875	Tmem165	P52875	0	10	Putative divalent cation/proton antiporter TMEM165	
 P52879	worm	P52879	rer-1	P52879	0	10	Protein RER1 homolog	
@@ -293,10 +293,10 @@ P52888	human	P52888	THOP1	P52888	19	226	Thimet oligopeptidase (EC 3.4.24.15) (En
 P52889	zebrafish	P52889	lhx5	P52889	3	5	LIM/homeobox protein Lhx5	
 P52890	schizosaccharomyces-pombe	P52890	atf1	P52890	4	22	Transcription factor atf1	
 P52891	yeast	P52891	NUP84	P52891	9	71	Nucleoporin NUP84	
-P52892	yeast	P52892	ALT2	P52892	1	14	Inactive alanine aminotransferase	
+P52892	yeast	P52892	ALT2	P52892	1	15	Inactive alanine aminotransferase	
 P52893	yeast	P52893	ALT1	P52893	2	14	Alanine aminotransferase, mitochondrial	
 P52895	human	P52895	AKR1C2	P52895	3	115	Aldo-keto reductase family 1 member C2 (EC 1.1.1.112) (EC 1.	
-P52899	worm	P52899	pdha-1	P52899	2	15	Probable pyruvate dehydrogenase E1 component subunit alpha, 	
+P52899	worm	P52899	pdha-1	P52899	3	15	Probable pyruvate dehydrogenase E1 component subunit alpha, 	
 P52901	arabidopsis-thaliana	P52901	E1 ALPHA	P52901	11	31	Pyruvate dehydrogenase E1 component subunit alpha-1, mitocho	
 P52905	fly	FBgn0015001	iotaTry	P52905	43	249	Trypsin iota (EC 3.4.21.4)	
 P52906	worm	P52906	unc-30	P52906	2	42	Homeobox protein unc-30	

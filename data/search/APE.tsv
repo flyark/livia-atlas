@@ -1,10 +1,10 @@
-APE	human	P27695	APEX1	P27695	83	1504		
+APE	human	P27695	APEX1	P27695	90	1510		
 APE	human	Q3V6T2	CCDC88A	Q3V6T2	44	289		
-APE-1	human	P27695	APEX1	P27695	83	1504	DNA repair nuclease/redox regulator APEX1 (EC 3.1.11.2) (EC 	w
+APE-1	human	P27695	APEX1	P27695	90	1510	DNA repair nuclease/redox regulator APEX1 (EC 3.1.11.2) (EC 	w
 APE-1	worm	Q9XVN3	ape-1	Q9XVN3	1	26	Apoptotic enhancer 1 protein	
 APE1	arabidopsis-thaliana	A0A219HZL6	APE1	A0A219HZL6	3	43	Acclimation of photosynthesis to environment	
 APE1	cladophialophora-carrionii	A0A1C1CV75	ape1	A0A1C1CV75	0	9	Aminopeptidase	
-APE1	human	P27695	APEX1	P27695	83	1504		
+APE1	human	P27695	APEX1	P27695	90	1510		
 APE1	plasmodium-falciparum-36329	O97240	APE1	O97240	1	26	DNA-(apurinic or apyrimidinic site) endonuclease	
 APE1	schizosaccharomyces-pombe	Q9USX1	ape1	Q9USX1	0	7	Aminopeptidase 1	
 APE1	yeast	P14904	APE1	P14904	1	43	Vacuolar aminopeptidase 1	
@@ -16,7 +16,7 @@ APE2	yeast	P32454	APE2	P32454	2	58	Aminopeptidase 2, mitochondrial
 APE3	yeast	P37302	APE3	P37302	0	10	Aminopeptidase Y	
 APE4	schizosaccharomyces-pombe	O36014	ape4	O36014	0	4	Aspartyl aminopeptidase 1	
 APE4	yeast	P38821	APE4	P38821	0	16	Aspartyl aminopeptidase 4	
-APEA	dictyostelium-discoideum	P51173	apeA	P51173	0	30	DNA-(apurinic or apyrimidinic site) endonuclease	
+APEA	dictyostelium-discoideum	P51173	apeA	P51173	1	31	DNA-(apurinic or apyrimidinic site) endonuclease	
 APEB	mycobacterium-leprae	Q50022	apeB	Q50022	0	4	Probable M18 family aminopeptidase 2	
 APEB	mycobacterium-tuberculosis	P9WHT1	apeB	P9WHT1	0	3	Probable M18 family aminopeptidase 2	
 APEB	pseudomonas-aeruginosa	Q9HYZ3	apeB	Q9HYZ3	0	3	Probable M18 family aminopeptidase 2	
@@ -44,17 +44,20 @@ APELIN-31	human	Q9ULZ1	APLN	Q9ULZ1	52	227	Apelin (APJ endogenous ligand) [Cleave
 APELIN-36	human	Q9ULZ1	APLN	Q9ULZ1	52	227	Apelin (APJ endogenous ligand) [Cleaved into: Apelin-36; Ape	w
 APEL_HUMAN	human	Q9ULZ1	APLN	Q9ULZ1	52	227		
 APEM9	arabidopsis-thaliana	Q8W4B2	APEM9	Q8W4B2	4	20	Protein APEM9	
-APEN	human	P27695	APEX1	P27695	83	1504	DNA repair nuclease/redox regulator APEX1 (EC 3.1.11.2) (EC 	w
+APEN	human	P27695	APEX1	P27695	90	1510	DNA repair nuclease/redox regulator APEX1 (EC 3.1.11.2) (EC 	w
 APEPP	fly	FBgn0026150	ApepP	Q9VJG0	1	28	Xaa-Pro aminopeptidase ApepP (EC 3.4.11.9) (Aminopeptidase P	w
 APEPP	fly	FBgn0026150	ApepP	Q9VJG0	1	28	Xaa-Pro aminopeptidase ApepP (EC 3.4.11.9) (Aminopeptidase P	w
-APEX	human	P27695	APEX1	P27695	83	1504		
+APEX	human	P27695	APEX1	P27695	90	1510		
 APEX	human	Q9UBZ4	APEX2	Q9UBZ4	3	109	DNA-(apurinic or apyrimidinic site) endonuclease 2 (EC 3.1.1	w
-APEX1	human	P27695	APEX1	P27695	83	1504	DNA repair nuclease/redox regulator APEX1 (EC 3.1.11.2) (EC 	
-APEX1	mus-musculus	P28352	Apex1	P28352	2	83	DNA repair nuclease/redox regulator APEX1	
-APEX1	rattus-norvegicus	P43138	Apex1	P43138	2	96	DNA repair nuclease/redox regulator APEX1	
-APEX1	zebrafish	A0MTA1	apex1	A0MTA1	0	86	DNA repair nuclease APEX1	w
-APEX1	zebrafish	A0MTA1	apex1	A0MTA1	0	86	DNA repair nuclease APEX1	w
-APEX1_HUMAN	human	P27695	APEX1	P27695	83	1504		
+APEX1	human	P27695	APEX1	P27695	90	1510	DNA repair nuclease/redox regulator APEX1 (EC 3.1.11.2) (EC 	
+APEX1	mus-musculus	P28352	Apex1	P28352	6	88	DNA repair nuclease/redox regulator APEX1	
+APEX1	pan-troglodytes	A2T6Y4	APEX1	A2T6Y4	7	7	DNA-(apurinic or apyrimidinic site) endonuclease	
+APEX1	rattus-norvegicus	P43138	Apex1	P43138	7	102	DNA repair nuclease/redox regulator APEX1	
+APEX1	zebrafish	A0MTA1	apex1	A0MTA1	1	87	DNA repair nuclease APEX1	w
+APEX1	zebrafish	A0MTA1	apex1	A0MTA1	1	87	DNA repair nuclease APEX1	w
+APEX1.L	xenopus-laevis	Q6IP62	apex1.L	Q6IP62	1	1	DNA-(apurinic or apyrimidinic site) endonuclease	
+APEX1_DANRE	zebrafish	A0MTA1	apex1	A0MTA1	1	87		
+APEX1_HUMAN	human	P27695	APEX1	P27695	90	1510		
 APEX2	human	Q9UBZ4	APEX2	Q9UBZ4	3	109	DNA-(apurinic or apyrimidinic site) endonuclease 2 (EC 3.1.1	
 APEX2	mus-musculus	Q68G58	Apex2	Q68G58	0	24	DNA-(apurinic or apyrimidinic site) endonuclease 2	
 APEX2	rattus-norvegicus	D3ZPZ3	Apex2	D3ZPZ3	0	43	DNA-(apurinic or apyrimidinic site) endonuclease	

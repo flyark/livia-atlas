@@ -42,7 +42,7 @@ P55075	human	P55075	FGF8	P55075	66	558	Fibroblast growth factor 8 (FGF-8) (Andro
 P55081	human	P55081	MFAP1	P55081	63	533	Microfibrillar-associated protein 1 (Spliceosome B complex p	
 P55082	human	P55082	MFAP3	P55082	8	85	Microfibril-associated glycoprotein 3	
 P55083	human	P55083	MFAP4	P55083	25	308	Microfibril-associated glycoprotein 4	
-P55084	human	P55084	HADHB	P55084	26	475	Trifunctional enzyme subunit beta, mitochondrial (TP-beta) [	
+P55084	human	P55084	HADHB	P55084	32	481	Trifunctional enzyme subunit beta, mitochondrial (TP-beta) [	
 P55085	human	P55085	F2RL1	P55085	24	275	Proteinase-activated receptor 2 (PAR-2) (Coagulation factor 	
 P55086	mus-musculus	P55086	F2rl1	P55086	3	10	Proteinase-activated receptor 2	
 P55087	human	P55087	AQP4	P55087	6	36	Aquaporin-4 (AQP-4) (Mercurial-insensitive water channel) (M	
@@ -86,9 +86,9 @@ P55205	rattus-norvegicus	P55205	Gucy2g	P55205	0	8	Guanylate cyclase 2G
 P55207	rattus-norvegicus	P55207	Nppc	P55207	3	26	C-type natriuretic peptide	
 P55209	human	P55209	NAP1L1	P55209	49	439	Nucleosome assembly protein 1-like 1 (Histone H2A-H2B chaper	
 P55210	human	P55210	CASP7	P55210	16	117	Caspase-7 (CASP-7) (EC 3.4.22.60) (Apoptotic protease Mch-3)	
-P55211	human	P55211	CASP9	P55211	44	261	Caspase-9 (CASP-9) (EC 3.4.22.62) (Apoptotic protease Mch-6)	
+P55211	human	P55211	CASP9	P55211	45	262	Caspase-9 (CASP-9) (EC 3.4.22.62) (Apoptotic protease Mch-6)	
 P55212	human	P55212	CASP6	P55212	12	134	Caspase-6 (CASP-6) (CSP-6) (EC 3.4.22.59) (Apoptotic proteas	
-P55213	rattus-norvegicus	P55213	Casp3	P55213	9	99	Caspase-3	
+P55213	rattus-norvegicus	P55213	Casp3	P55213	11	101	Caspase-3	
 P55215	rattus-norvegicus	P55215	Casp2	P55215	10	49	Caspase-2	
 P55216	worm	P55216	cth-2	P55216	0	23	Putative cystathionine gamma-lyase 2	
 P55217	arabidopsis-thaliana	P55217	CGS1	P55217	0	17	Cystathionine gamma-synthase 1, chloroplastic	
@@ -152,7 +152,7 @@ P55797	rattus-norvegicus	P55797	Apoc4	P55797	2	33	Apolipoprotein C-IV
 P55798	escherichia-coli-83333	P55798	pphA	P55798	0	1	Serine/threonine-protein phosphatase 1	
 P55799	escherichia-coli-83333	P55799	pphB	P55799	1	1	Serine/threonine-protein phosphatase 2	
 P55808	human	P55808	XG	P55808	0	28	Glycoprotein Xg (Protein PBDX)	
-P55809	human	P55809	OXCT1	P55809	1	145	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondr	
+P55809	human	P55809	OXCT1	P55809	2	146	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondr	
 P55821	mus-musculus	P55821	Stmn2	P55821	0	16	Stathmin-2	
 P55822	human	P55822	SH3BGR	P55822	6	42	SH3 domain-binding glutamic acid-rich protein (SH3BGR protei	
 P55824	fly	FBgn0005632	faf	P55824	0	19	Probable ubiquitin carboxyl-terminal hydrolase FAF (EC 3.4.1	
@@ -163,7 +163,7 @@ P55834	helicobacter-pylori	P55834	rplL	P55834	4	78	Large ribosomal subunit prote
 P55841	fly	FBgn0017579	RpL14	P55841	33	311	Large ribosomal subunit protein eL14 (60S ribosomal protein 	
 P55849	mus-musculus	P55849	Dsc1	P55849	8	19	Desmocollin-1	
 P55850	mus-musculus	P55850	Dsc3	P55850	3	8	Desmocollin-3	
-P55851	human	P55851	UCP2	P55851	3	115	Dicarboxylate carrier SLC25A8 (Mitochondrial uncoupling prot	
+P55851	human	P55851	UCP2	P55851	4	116	Dicarboxylate carrier SLC25A8 (Mitochondrial uncoupling prot	
 P55852	arabidopsis-thaliana	P55852	SUMO1	P55852	55	267	Small ubiquitin-related modifier 1	
 P55853	worm	P55853	smo-1	P55853	19	156	Small ubiquitin-related modifier	
 P55854	human	P55854	SUMO3	P55854	67	310	Small ubiquitin-related modifier 3 (SUMO-3) (SMT3 homolog 1)	
@@ -183,14 +183,14 @@ P55899	human	P55899	FCGRT	P55899	57	375	IgG receptor FcRn large subunit p51 (FcR
 P55900	salmonella-typhimurium	P55900	serC	P55900	0	10	Phosphoserine aminotransferase	
 P55912	salmonella-typhimurium	P55912	prpE	P55912	0	11	Propionate--CoA ligase	
 P55913	salmonella-typhimurium	P55913	thiI	P55913	0	43	tRNA sulfurtransferase	
-P55916	human	P55916	UCP3	P55916	4	81	Putative mitochondrial transporter UCP3 (Solute carrier fami	
+P55916	human	P55916	UCP3	P55916	5	82	Putative mitochondrial transporter UCP3 (Solute carrier fami	
 P55926	rattus-norvegicus	P55926	Asic1	P55926	6	16	Acid-sensing ion channel 1	
 P55935	fly	FBgn0010408	RpS9	P55935	21	429	Small ribosomal subunit protein uS4 (40S ribosomal protein S	
 P55937	mus-musculus	P55937	Golga3	P55937	1	20	Golgin subfamily A member 3	
 P55954	worm	P55954	cox-5A	P55954	7	103	Cytochrome c oxidase subunit 5A, mitochondrial	
 P55955	worm	P55955	ttr-16	P55955	1	14	Transthyretin-like protein 16	
 P55956	worm	P55956	asp-3	P55956	0	42	Aspartic protease 3	
-P55957	human	P55957	BID	P55957	14	108	BH3-interacting domain death agonist (p22 BID) (BID) [Cleave	
+P55957	human	P55957	BID	P55957	19	113	BH3-interacting domain death agonist (p22 BID) (BID) [Cleave	
 P55965	fly	FBgn0011723	byn	P55965	71	362	T-related protein (Trp) (Protein brachyenteron)	
 P55969	helicobacter-pylori	P55969	hpaA	P55969	1	7	Neuraminyllactose-binding hemagglutinin	
 P55970	helicobacter-pylori	P55970	grpE	P55970	1	12	Protein GrpE	

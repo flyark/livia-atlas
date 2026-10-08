@@ -72,7 +72,7 @@ DISCONTINUOUS	fly	FBgn0015926	dah	Q24175	3	24	Discontinuous actin hexagon (LD054
 DISCOVERED	human	Q5XXA6	ANO1	Q5XXA6	8	48	Anoctamin-1 (Discovered on gastrointestinal stromal tumors p	w
 DISCS	fly	FBgn0000139	ash2	Q94545	40	479	Set1/Ash2 histone methyltransferase complex subunit ASH2 (Ab	w
 DISCS	fly	FBgn0001624	dlg1	E1JJH5	28	181	Discs large 1, isoform M (EC 2.7.4.8)	w
-DISCS	fly	FBgn0002174	CG5504	Q27237	6	42	Protein tumorous imaginal discs, mitochondrial (Protein leth	w
+DISCS	fly	FBgn0002174	CG5504	Q27237	8	44	Protein tumorous imaginal discs, mitochondrial (Protein leth	w
 DISCS	fly	FBgn0002413	dco	O76324	195	1288	Discs overgrown protein kinase (EC 2.7.11.1) (Protein double	w
 DISCS	fly	FBgn0002431	hyd	A0A0B4LGZ6	0	8	Hyperplastic discs, isoform B	w
 DISCS	fly	FBgn0003984	vn	Q94918	59	310	Protein vein (Epidermal growth factor-like protein) (Protein	w
@@ -83,7 +83,7 @@ DISCS	human	Q13368	MPP3	Q13368	37	218	MAGUK p55 subfamily member 3 (Discs large 
 DISCS	human	Q14168	MPP2	Q14168	31	173	MAGUK p55 subfamily member 2 (Discs large homolog 2) (Protei	w
 DISCS	human	Q15398	DLGAP5	Q15398	29	171	Disks large-associated protein 5 (DAP-5) (Discs large homolo	w
 DISCS	human	Q8TDM6	DLG5	Q8TDM6	82	336	Disks large homolog 5 (Discs large protein P-dlg) (Placenta 	w
-DISCS	human	Q96EY1	DNAJA3	Q96EY1	19	393	DnaJ homolog subfamily A member 3, mitochondrial (DnaJ prote	w
+DISCS	human	Q96EY1	DNAJA3	Q96EY1	21	396	DnaJ homolog subfamily A member 3, mitochondrial (DnaJ prote	w
 DISCS	human	Q96JB8	MPP4	Q96JB8	12	65	MAGUK p55 subfamily member 4 (Amyotrophic lateral sclerosis 	w
 DISCS	zebrafish	A0A8M2B6G8	dlgap3	A0A8M2B6G8	2	18	Discs, large (Drosophila) homolog-associated protein 3	w
 DISCS	zebrafish	Q5PYH5	dlg1l	Q5PYH5	4	46	Discs large homolog 1-like protein	w
@@ -110,7 +110,7 @@ DISEASE	human	Q7Z442	PKD1L2	Q7Z442	2	26	Polycystin-1-like protein 2 (Polycystin-
 DISEASE	human	Q7Z443	PKD1L3	Q7Z443	4	52	Polycystin-1-like protein 3 (Polycystin-1L3) (PC1-like 3 pro	w
 DISEASE	human	Q8NB37	GATD1	Q8NB37	11	106	Glutamine amidotransferase-like class 1 domain-containing pr	w
 DISEASE	human	Q8TDX9	PKD1L1	Q8TDX9	1	14	Polycystin-1-like protein 1 (Polycystin-1L1) (PC1-like 1 pro	w
-DISEASE	human	Q99497	PARK7	Q99497	8	515	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
+DISEASE	human	Q99497	PARK7	Q99497	12	519	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
 DISEASE	human	Q9BXS0	COL25A1	Q9BXS0	6	39	Collagen alpha-1(XXV) chain (Alzheimer disease amyloid-assoc	w
 DISEASE	human	Q9H3M9	ATXN3L	Q9H3M9	9	59	Ataxin-3-like protein (EC 3.4.19.12) (Machado-Joseph disease	w
 DISEASE	human	Q9H8N7	ZNF395	Q9H8N7	177	479	Zinc finger protein 395 (HD-regulating factor 2) (HDRF-2) (H	w
@@ -123,7 +123,7 @@ DISEASE	human	Q9P266	JCAD	Q9P266	19	68	Junctional cadherin 5-associated protein 
 DISEASE	human	Q9UMD9	COL17A1	Q9UMD9	15	106	Collagen alpha-1(XVII) chain (180 kDa bullous pemphigoid ant	w
 DISEASE	worm	G5ECP0	nphp-4	G5ECP0	2	27	NePHronoPhthisis (Human kidney disease) homolog	w
 DISEASE	zebrafish	B3DHE4	vhll	B3DHE4	13	60	von Hippel-Lindau disease tumor suppressor	w
-DISEASE	zebrafish	Q5XJ36	park7	Q5XJ36	0	108	Parkinson disease protein 7 homolog	w
+DISEASE	zebrafish	Q5XJ36	park7	Q5XJ36	2	111	Parkinson disease protein 7 homolog	w
 DISEASE-ASSOCIATED	human	P35670	ATP7B	P35670	1	95	Copper-transporting ATPase 2 (EC 7.2.2.8) (Copper pump 2) (W	w
 DISEASE-ASSOCIATED	human	Q04656	ATP7A	Q04656	9	184	Copper-transporting ATPase 1 (EC 7.2.2.8) (Copper pump 1) (M	w
 DISEASE-ASSOCIATED	human	Q538Z0	LUZP6	Q538Z0	0	16	Leucine zipper protein 6 (Myeloproliferative disease-associa	w
@@ -239,31 +239,31 @@ DISKS	zebrafish	Q5PYH7	dlg2	Q5PYH7	3	47	Disks large homolog 2	w
 DISKS	zebrafish	Q6R005	dlg4	Q6R005	13	77	Disks large homolog 4	w
 DISKS	zebrafish	Q7ZYZ6	dlgap1	Q7ZYZ6	3	17	Disks large-associated protein 1	w
 DISL-2	worm	Q09568	disl-2	Q09568	2	44	DIS3-like exonuclease 2	
-DISMUTASE	fly	FBgn0003462	Sod1	P61851	5	152	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (Superoxide dismu	w
-DISMUTASE	fly	FBgn0010213	Sod2	Q00637	10	297	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	w
+DISMUTASE	fly	FBgn0003462	Sod1	P61851	6	153	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (Superoxide dismu	w
+DISMUTASE	fly	FBgn0010213	Sod2	Q00637	17	303	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	w
 DISMUTASE	fly	FBgn0010531	Ccs	E1JH26	7	54	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1)	w
 DISMUTASE	fly	FBgn0033631	Sod3	A1Z8K9	36	386	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1)	w
 DISMUTASE	fly	FBgn0039386	Sodq	Q9VBK8	19	266	superoxide dismutase (EC 1.15.1.1)	w
 DISMUTASE	fly	FBgn0051028	Rsod	Q9VA99	0	1	superoxide dismutase (EC 1.15.1.1)	w
 DISMUTASE	human	F5H3C5	SOD2	F5H3C5	4	265	Superoxide dismutase	w
 DISMUTASE	human	O14618	CCS	O14618	9	69	Copper chaperone for superoxide dismutase (Superoxide dismut	w
-DISMUTASE	human	P00441	SOD1	P00441	15	451	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	w
-DISMUTASE	human	P04179	SOD2	P04179	8	419	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	w
+DISMUTASE	human	P00441	SOD1	P00441	22	458	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	w
+DISMUTASE	human	P04179	SOD2	P04179	17	428	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	w
 DISMUTASE	human	P08294	SOD3	P08294	6	90	Extracellular superoxide dismutase [Cu-Zn] (EC-SOD) (EC 1.15	w
 DISMUTASE	virus	A0A916KQ06	MYSEV_026	A0A916KQ06	9	301	superoxide dismutase	w
 DISMUTASE	virus	Q9EMF1	AMV255	Q9EMF1	2	278	superoxide dismutase	w
-DISMUTASE	worm	P31161	sod-2	P31161	1	111	Superoxide dismutase	w
+DISMUTASE	worm	P31161	sod-2	P31161	5	115	Superoxide dismutase	w
 DISMUTASE	worm	P34461	sod-4	P34461	2	15	Extracellular superoxide dismutase	w
-DISMUTASE	worm	P34697	sod-1	P34697	3	62	Superoxide dismutase	w
+DISMUTASE	worm	P34697	sod-1	P34697	6	65	Superoxide dismutase	w
 DISMUTASE	worm	P41977	sod-3	P41977	1	102	Superoxide dismutase	w
 DISMUTASE	worm	Q27538	sod-5	Q27538	6	16	Superoxide dismutase	w
-DISMUTASE	yeast	P00445	SOD1	P00445	2	60	Superoxide dismutase	w
-DISMUTASE	yeast	P00447	SOD2	P00447	0	66	Superoxide dismutase	w
+DISMUTASE	yeast	P00445	SOD1	P00445	3	61	Superoxide dismutase	w
+DISMUTASE	yeast	P00447	SOD2	P00447	3	69	Superoxide dismutase	w
 DISMUTASE	yeast	P40202	CCS1	P40202	2	10	Superoxide dismutase 1 copper chaperone	w
 DISMUTASE	zebrafish	E9QIM2	sod3b	E9QIM2	2	46	Superoxide dismutase	w
 DISMUTASE	zebrafish	F1QCS3	ccs	F1QCS3	2	7	Copper chaperone for superoxide dismutase	w
-DISMUTASE	zebrafish	O73872	sod1	O73872	2	50	Superoxide dismutase	w
-DISMUTASE	zebrafish	Q6P980	sod2	Q6P980	4	283	Superoxide dismutase	w
+DISMUTASE	zebrafish	O73872	sod1	O73872	5	53	Superoxide dismutase	w
+DISMUTASE	zebrafish	Q6P980	sod2	Q6P980	10	291	Superoxide dismutase	w
 DISMUTASE-LIKE	virus	P0DTA1	OPG175	P0DTA1	10	199	Cu-Zn superoxide dismutase-like protein OPG175	w
 DISMUTASE-LIKE	virus	P26669	OPG175	P26669	16	218	Cu-Zn superoxide dismutase-like protein OPG175	w
 DISMUTASE-LIKE	virus	Q77FQ3	CMLV165	Q77FQ3	16	208	Cu-Zn superoxide dismutase-like protein	w
@@ -376,11 +376,11 @@ DISTAL	fly	FBgn0039286	dan	A0A0B4KI14	1	15	Distal antenna, isoform B	w
 DISTAL	fly	FBgn0050401	dany	Q9W2B0	54	372	Distal antenna-young, isoform A (Distal antenna-young, isofo	w
 DISTAL	fly	FBgn0053503	Cyp12d1-d	Q7KR10	1	48	Probable cytochrome P450 12d1 distal, mitochondrial (EC 1.14	w
 DISTAL	human	Q96GE9	DMAC1	Q96GE9	4	56	Distal membrane-arm assembly complex protein 1 (Transmembran	w
-DISTAL	human	Q99766	DMAC2L	Q99766	12	169	ATP synthase subunit s, mitochondrial (ATP synthase-coupling	w
-DISTAL	human	Q9NW81	DMAC2	Q9NW81	32	371	Distal membrane-arm assembly complex protein 2 (ATP synthase	w
+DISTAL	human	Q99766	DMAC2L	Q99766	17	174	ATP synthase subunit s, mitochondrial (ATP synthase-coupling	w
+DISTAL	human	Q9NW81	DMAC2	Q9NW81	34	373	Distal membrane-arm assembly complex protein 2 (ATP synthase	w
 DISTAL	yeast	P38281	APD1	P38281	0	6	Actin patches distal protein 1	w
 DISTAL	zebrafish	A0A8M9Q9A8	si:dkey-88p24.11	A0A8M9Q9A8	0	2	Distal membrane-arm assembly complex protein 1	w
-DISTAL	zebrafish	R4GEM5	dmac2	R4GEM5	0	2	Distal membrane-arm assembly complex protein 2	w
+DISTAL	zebrafish	R4GEM5	dmac2	R4GEM5	2	4	Distal membrane-arm assembly complex protein 2	w
 DISTAL-LESS	fly	FBgn0000157	Dll	A2VEF7	89	439	Distal-less, isoform C (IP14437p)	w
 DISTINCT	human	O95057	DIRAS1	O95057	43	320	GTP-binding protein Di-Ras1 (Distinct subgroup of the Ras fa	w
 DISTINCT	human	O95661	DIRAS3	O95661	22	340	GTP-binding protein Di-Ras3 (Distinct subgroup of the Ras fa	w

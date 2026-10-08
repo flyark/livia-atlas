@@ -27,7 +27,7 @@ FOLATE	zebrafish	E7F2A7	slc19a1	E7F2A7	0	1	Reduced folate transporter	w
 FOLATE	zebrafish	Q6NY42	ggh	Q6NY42	1	2	folate gamma-glutamyl hydrolase	w
 FOLATE-BINDING	human	P14207	FOLR2	P14207	5	85	Folate receptor beta (FR-beta) (Folate receptor 2) (Folate r	w
 FOLATE-BINDING	human	P15328	FOLR1	P15328	31	393	Folate receptor alpha (FR-alpha) (Adult folate-binding prote	w
-FOLATE-BINDING	worm	G5EE11	CELE_F39H2.3	G5EE11	0	2	Aminomethyltransferase folate-binding domain-containing prot	w
+FOLATE-BINDING	worm	G5EE11	CELE_F39H2.3	G5EE11	1	3	Aminomethyltransferase folate-binding domain-containing prot	w
 FOLATE-LIKE	worm	O45166	folt-2	O45166	0	24	Folate-like transporter 2	w
 FOLB	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PBF3	folB	Q0PBF3	0	8	Dihydroneopterin aldolase	
 FOLB	mycobacterium-leprae	O69529	folB	O69529	0	10	Dihydroneopterin aldolase	
@@ -39,7 +39,7 @@ FOLC	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9G6	folC	Q0P9G6	1	6	Folyl
 FOLC	escherichia-coli-83333	P08192	folC	P08192	0	1	Dihydrofolate synthase/folylpolyglutamate synthase	
 FOLC	mycobacterium-leprae	Q9CBY8	folC	Q9CBY8	0	5	Dihydrofolate synthase/folylpolyglutamate synthase	
 FOLC	streptococcus-pneumoniae	Q8DRE0	folC	Q8DRE0	0	1	tetrahydrofolate synthase	
-FOLC_HUMAN	human	Q05932	FPGS	Q05932	1	74		
+FOLC_HUMAN	human	Q05932	FPGS	Q05932	13	89		
 FOLD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PA35	folD	Q0PA35	1	40	Bifunctional protein FolD	
 FOLD	escherichia-coli-83333	P24186	folD	P24186	0	6	Bifunctional protein FolD	
 FOLD	fly	FBgn0050095	CG30095	A1ZA99	0	1	Thioredoxin-like fold domain-containing protein	w
@@ -181,9 +181,10 @@ FOLX	pseudomonas-aeruginosa	Q9HYG7	folX	Q9HYG7	0	1	Dihydroneopterin triphosphate
 FOLX	shigella-dysenteriae-serotype-1	Q32DN5	folX	Q32DN5	0	1	Dihydroneopterin triphosphate 2'-epimerase	
 FOLYLPOLY-GAMMA-GLUTAMATE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	10	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
 FOLYLPOLY-GAMMA-GLUTAMATE	human	Q04609	FOLH1	Q04609	10	165	Glutamate carboxypeptidase 2 (EC 3.4.17.21) (Cell growth-inh	w
-FOLYLPOLY-GAMMA-GLUTAMATE	human	Q05932	FPGS	Q05932	1	74	Folylpolyglutamate synthase, mitochondrial (EC 6.3.2.17) (Fo	w
+FOLYLPOLY-GAMMA-GLUTAMATE	human	Q05932	FPGS	Q05932	13	89	Folylpolyglutamate synthase, mitochondrial (EC 6.3.2.17) (Fo	w
 FOLYLPOLYGLUTAMATE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	10	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
-FOLYLPOLYGLUTAMATE	human	Q05932	FPGS	Q05932	1	74	Folylpolyglutamate synthase, mitochondrial (EC 6.3.2.17) (Fo	w
+FOLYLPOLYGLUTAMATE	human	Q05932	FPGS	Q05932	13	89	Folylpolyglutamate synthase, mitochondrial (EC 6.3.2.17) (Fo	w
 FOLYLPOLYGLUTAMATE	worm	Q09509	F25B5.6	Q09509	0	12	Putative folylpolyglutamate synthase	w
 FOLYLPOLYGLUTAMATE	yeast	P36001	RMA1	P36001	0	7	Probable folylpolyglutamate synthase	w
 FOLYLPOLYGLUTAMATE	yeast	Q08645	MET7	Q08645	0	13	Folylpolyglutamate synthase	w
+FOLYLPOLYGLUTAMATE	zebrafish	F1Q7N0	fk51d09	F1Q7N0	3	4	Folylpolyglutamate synthase	w

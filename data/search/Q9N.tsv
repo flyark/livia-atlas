@@ -19,7 +19,7 @@ Q9N2V9	worm	Q9N2V9	pde-6	Q9N2V9	2	4	Probable 3,5-cyclic phosphodiesterase pde-6
 Q9N2W3	worm	Q9N2W3	nhr-277	Q9N2W3	0	5	Nuclear receptor	
 Q9N2W4	worm	Q9N2W4	CELE_Y94H6A.2	Q9N2W4	0	8	DUF4781 domain-containing protein	
 Q9N2W5	worm	Q9N2W5	ubxn-2	Q9N2W5	3	14	UBX domain-containing protein 2	
-Q9N2W7	worm	Q9N2W7	ndua-12	Q9N2W7	5	102	Probable NADH dehydrogenase	
+Q9N2W7	worm	Q9N2W7	ndua-12	Q9N2W7	6	102	Probable NADH dehydrogenase	
 Q9N2W9	worm	Q9N2W9	ubc-8	Q9N2W9	2	6	E2 ubiquitin-conjugating enzyme	
 Q9N2X1	worm	Q9N2X1	CELE_Y94H6A.3	Q9N2X1	5	198	PRP16	
 Q9N2X2	worm	Q9N2X2	gpx-4	Q9N2X2	0	2	Glutathione peroxidase	
@@ -50,7 +50,7 @@ Q9N357	worm	Q9N357	CELE_Y55F3AR.2	Q9N357	1	11	Thioredoxin domain-containing prot
 Q9N358	worm	Q9N358	cct-8	Q9N358	3	56	T-complex protein 1 subunit theta	
 Q9N359	worm	Q9N359	csn-4	Q9N359	6	39	COP9 signalosome complex subunit 4	
 Q9N360	worm	Q9N360	znf-782	Q9N360	0	15	C2H2-type domain-containing protein	
-Q9N361	worm	Q9N361	mrps-25	Q9N361	5	108	Small ribosomal subunit protein mS25	
+Q9N361	worm	Q9N361	mrps-25	Q9N361	6	109	Small ribosomal subunit protein mS25	
 Q9N362	worm	Q9N362	CELE_Y55F3AM.13	Q9N362	9	112	FH2 domain-containing protein	
 Q9N363	worm	Q9N363	dcap-1	Q9N363	7	71	mRNA-decapping enzyme 1	
 Q9N365	worm	Q9N365	CELE_Y55F3AM.11	Q9N365	0	7	Methyltransferase FkbM domain-containing protein	
@@ -59,6 +59,7 @@ Q9N368	worm	Q9N368	rbm-39	Q9N368	3	16	RRM domain-containing protein
 Q9N369	worm	Q9N369	atg-3	Q9N369	4	36	Ubiquitin-like-conjugating enzyme ATG3	
 Q9N370	worm	Q9N370	CELE_Y55F3AM.9	Q9N370	0	4	Ubiquitin carboxyl-terminal hydrolase	
 Q9N371	worm	Q9N371	immp-2	Q9N371	2	7	Mitochondrial inner membrane protease subunit 2	
+Q9N371_CAEEL	worm	Q9N371	immp-2	Q9N371	2	7		
 Q9N372	worm	Q9N372	CELE_Y55F3AM.5	Q9N372	2	26	SPIN90/Ldb17 leucine-rich domain-containing protein	
 Q9N373	worm	Q9N373	lep-2	Q9N373	0	9	E3 ubiquitin-protein ligase makorin	
 Q9N384	worm	Q9N384	lec-6	Q9N384	4	31	Galectin	
@@ -78,6 +79,7 @@ Q9N3D0	worm	Q9N3D0	sec-11	Q9N3D0	2	12	Signal peptidase complex catalytic subunit
 Q9N3D1	worm	Q9N3D1	rnf-126	Q9N3D1	0	2	RING-type E3 ubiquitin transferase	
 Q9N3D3	worm	Q9N3D3	nobh-1	Q9N3D3	7	63	RNA-binding protein NOB1	
 Q9N3D9	worm	Q9N3D9	nduf-5	Q9N3D9	15	115	NADH dehydrogenase	
+Q9N3D9_CAEEL	worm	Q9N3D9	nduf-5	Q9N3D9	15	115		
 Q9N3E0	worm	Q9N3E0	dnj-28	Q9N3E0	3	11	J domain-containing protein	
 Q9N3E2	worm	Q9N3E2	mab-31	Q9N3E2	0	28	Male abnormal protein mab-31	
 Q9N3E5	worm	Q9N3E5	rom-5	Q9N3E5	0	4	rhomboid protease	
@@ -86,15 +88,18 @@ Q9N3F0	worm	Q9N3F0	Y54E10A.10	Q9N3F0	7	66	Ribosome production factor 2 homolog
 Q9N3F1	worm	Q9N3F1	dnc-6	Q9N3F1	4	41	Dynactin subunit 6	
 Q9N3F2	worm	Q9N3F2	CELE_Y54E10A.6	Q9N3F2	1	18	B3/B4 tRNA-binding domain-containing protein	
 Q9N3F3	worm	Q9N3F3	mrpl-17	Q9N3F3	32	200	Large ribosomal subunit protein bL17m	
+Q9N3F3_CAEEL	worm	Q9N3F3	mrpl-17	Q9N3F3	32	200		
 Q9N3F6	worm	Q9N3F6	phf-15	Q9N3F6	3	6	PHD-type domain-containing protein	
 Q9N3F7	worm	Q9N3F7	CELE_Y53G8AR.9	Q9N3F7	0	5	C3H1-type domain-containing protein	
 Q9N3F9	worm	Q9N3F9	CELE_Y53G8AR.5	Q9N3F9	3	5	RING-type domain-containing protein	
 Q9N3G0	worm	Q9N3G0	CELE_Y53G8AR.6	Q9N3G0	2	43	SAP domain-containing protein	
 Q9N3G1	worm	Q9N3G1	CELE_Y53G8AR.8	Q9N3G1	1	1	ATP synthase subunit s-like protein	
+Q9N3G1_CAEEL	worm	Q9N3G1	CELE_Y53G8AR.8	Q9N3G1	1	1		
 Q9N3G2	worm	Q9N3G2	mfsd-8.3	Q9N3G2	0	1	Major facilitator superfamily (MFS) profile domain-containin	
 Q9N3G9	worm	Q9N3G9	CELE_Y53G8AM.6	Q9N3G9	1	16	Uncharacterized protein	
 Q9N3H0	worm	Q9N3H0	nspg-7.2	Q9N3H0	0	5	DUF19 domain-containing protein	
-Q9N3H3	worm	Q9N3H3	nduf-9	Q9N3H3	8	136	NADH dehydrogenase	
+Q9N3H3	worm	Q9N3H3	nduf-9	Q9N3H3	9	136	NADH dehydrogenase	
+Q9N3H3_CAEEL	worm	Q9N3H3	nduf-9	Q9N3H3	9	136		
 Q9N3H4	worm	Q9N3H4	CELE_Y53G8AL.1	Q9N3H4	0	11	FHA domain-containing protein	
 Q9N3H5	worm	Q9N3H5	CELE_Y52E8A.1	Q9N3H5	0	19	RNA helicase	
 Q9N3H6	worm	Q9N3H6	CELE_Y52E8A.2	Q9N3H6	0	10	RING-type domain-containing protein	
@@ -122,11 +127,12 @@ Q9N3S2	worm	Q9N3S2	rde-10	Q9N3S2	1	76	RNA interference defective protein 10
 Q9N3S4	worm	Q9N3S4	rnp-6	Q9N3S4	5	40	Poly(U)-binding-splicing factor rnp-6	
 Q9N3S5	worm	Q9N3S5	CELE_Y47G6A.5	Q9N3S5	2	44	Tyrosine-protein kinase	
 Q9N3S7	worm	Q9N3S7	pcaf-1	Q9N3S7	11	155	histone acetyltransferase	
-Q9N3S8	worm	Q9N3S8	CELE_Y47G6A.18	Q9N3S8	1	33	Golgi phosphoprotein 3 homolog sauron	
+Q9N3S8	worm	Q9N3S8	CELE_Y47G6A.18	Q9N3S8	6	39	Golgi phosphoprotein 3 homolog sauron	
+Q9N3S8_CAEEL	worm	Q9N3S8	CELE_Y47G6A.18	Q9N3S8	6	39		
 Q9N3S9	worm	Q9N3S9	CELE_Y47G6A.7	Q9N3S9	0	1	Sugar phosphate transporter domain-containing protein	
 Q9N3T2	worm	Q9N3T2	crn-1	Q9N3T2	1	71	Flap endonuclease 1	
 Q9N3T3	worm	Q9N3T3	CELE_Y47G6A.9	Q9N3T3	4	22	DNA-directed RNA polymerase III subunit	
-Q9N3T5	worm	Q9N3T5	spg-7	Q9N3T5	2	28	AFG3-like protein spg-7	
+Q9N3T5	worm	Q9N3T5	spg-7	Q9N3T5	3	29	AFG3-like protein spg-7	
 Q9N3T6	worm	Q9N3T6	CELE_Y47G6A.14	Q9N3T6	0	10	RING-type domain-containing protein	
 Q9N3T8	worm	Q9N3T8	msh-6	Q9N3T8	5	42	DNA mismatch repair protein	
 Q9N3U2	worm	Q9N3U2	CELE_Y47D7A.13	Q9N3U2	1	4	Prion-like-(Q/N-rich)-domain-bearing protein	
@@ -138,7 +144,8 @@ Q9N3V8	worm	Q9N3V8	CELE_Y46E12A.3	Q9N3V8	0	5	Glutaredoxin domain-containing prot
 Q9N3V9	worm	Q9N3V9	clec-76	Q9N3V9	0	1	C-type lectin domain-containing protein	
 Q9N3W2	worm	Q9N3W2	clec-73	Q9N3W2	0	22	C-type lectin domain-containing protein	
 Q9N3X2	worm	Q9N3X2	rps-4	Q9N3X2	7	243	Small ribosomal subunit protein eS4	
-Q9N3X3	worm	Q9N3X3	CELE_Y43B11AR.3	Q9N3X3	1	22	TruB_N domain-containing protein	
+Q9N3X3	worm	Q9N3X3	CELE_Y43B11AR.3	Q9N3X3	2	23	TruB_N domain-containing protein	
+Q9N3X3_CAEEL	worm	Q9N3X3	CELE_Y43B11AR.3	Q9N3X3	2	23		
 Q9N3X4	worm	Q9N3X4	nssp-41	Q9N3X4	0	1	MS Related Protein	
 Q9N3Y1	worm	Q9N3Y1	CELE_Y42H9AR.1	Q9N3Y1	5	67	PDZ GRASP-type domain-containing protein	
 Q9N3Y3	worm	Q9N3Y3	CELE_Y42H9AR.4	Q9N3Y3	0	3	ELM2 domain-containing protein	
@@ -146,7 +153,7 @@ Q9N3Y9	worm	Q9N3Y9	ocr-4	Q9N3Y9	4	9	Ion transport domain-containing protein
 Q9N3Z0	worm	Q9N3Z0	sqst-2	Q9N3Z0	2	17	ZZ-type domain-containing protein	
 Q9N3Z3	worm	Q9N3Z3	chk-1	Q9N3Z3	5	35	Serine/threonine-protein kinase chk-1 (EC 2.7.11.1)	
 Q9N405	worm	Q9N405	smi-1	Q9N405	3	22	Gem-associated protein 2	
-Q9N408	worm	Q9N408	ddp-1	Q9N408	2	6	Mitochondrial import inner membrane translocase subunit Tim8	
+Q9N408	worm	Q9N408	ddp-1	Q9N408	3	7	Mitochondrial import inner membrane translocase subunit Tim8	
 Q9N410	worm	Q9N410	hlh-33	Q9N410	10	74	BHLH domain-containing protein	
 Q9N412	worm	Q9N412	rexd-1	Q9N412	0	2	Minor tail protein	
 Q9N413	worm	Q9N413	pvf-1	Q9N413	2	44	Platelet-derived growth factor (PDGF) family profile domain-	
@@ -206,7 +213,7 @@ Q9N4F4	worm	Q9N4F4	gpa-17	Q9N4F4	2	54	G Protein, Alpha subunit
 Q9N4F7	worm	Q9N4F7	CELE_Y71F9B.15	Q9N4F7	0	1	Glycoprotein	
 Q9N4F9	worm	Q9N4F9	CELE_Y71F9B.13	Q9N4F9	1	1	NADH dehydrogenase	
 Q9N4G4	worm	Q9N4G4	sop-3	Q9N4G4	0	2	Mediator of RNA polymerase II transcription subunit 1.1	
-Q9N4G7	worm	Q9N4G7	Y71F9B.2	Q9N4G7	0	1	Phosphatidate cytidylyltransferase, mitochondrial	
+Q9N4G7	worm	Q9N4G7	Y71F9B.2	Q9N4G7	0	3	Phosphatidate cytidylyltransferase, mitochondrial	
 Q9N4G8	worm	Q9N4G8	yop-1	Q9N4G8	0	6	Receptor expression-enhancing protein	
 Q9N4G9	worm	Q9N4G9	snr-7	Q9N4G9	19	163	Probable small nuclear ribonucleoprotein G	
 Q9N4H1	worm	Q9N4H1	CELE_Y71F9AL.1	Q9N4H1	1	9	tRNA (guanine(10)-N(2))-methyltransferase TRMT11	
@@ -223,15 +230,17 @@ Q9N4I6	worm	Q9N4I6	CELE_Y71F9AL.10	Q9N4I6	1	5	E3 ubiquitin-protein ligase ZNRF1
 Q9N4J7	worm	Q9N4J7	CELE_F54A3.2	Q9N4J7	1	9	TOG domain-containing protein	
 Q9N4J8	worm	Q9N4J8	cct-3	Q9N4J8	2	42	T-complex protein 1 subunit gamma	
 Q9N4J9	worm	Q9N4J9	CELE_F54A3.6	Q9N4J9	0	2	Trithorax group protein osa	
-Q9N4K0	worm	Q9N4K0	F54A3.5	Q9N4K0	1	13	MICOS complex subunit Mic10	
+Q9N4K0	worm	Q9N4K0	F54A3.5	Q9N4K0	2	13	MICOS complex subunit Mic10	
 Q9N4K2	worm	Q9N4K2	cbs-2	Q9N4K2	0	9	Putative cystathionine beta-synthase cbs-2	
 Q9N4K5	worm	Q9N4K5	fbxb-95	Q9N4K5	0	10	F-box domain-containing protein	
 Q9N4L2	worm	Q9N4L2	ceh-45	Q9N4L2	4	96	Homeobox domain-containing protein	
 Q9N4L5	worm	Q9N4L5	CELE_ZK973.1	Q9N4L5	0	55	S1 motif domain-containing protein	
 Q9N4L6	worm	Q9N4L6	CELE_ZK973.11	Q9N4L6	1	22	Thioredoxin domain-containing protein	
-Q9N4L8	worm	Q9N4L8	lpd-5	Q9N4L8	3	87	NADH dehydrogenase	
+Q9N4L8	worm	Q9N4L8	lpd-5	Q9N4L8	4	87	NADH dehydrogenase	
+Q9N4L8_CAEEL	worm	Q9N4L8	lpd-5	Q9N4L8	4	87		
 Q9N4L9	worm	Q9N4L9	CELE_ZK973.9	Q9N4L9	1	9	SS18 N-terminal domain-containing protein	
 Q9N4M0	worm	Q9N4M0	pdp-1	Q9N4M0	1	4	PPM-type phosphatase domain-containing protein	
+Q9N4M0_CAEEL	worm	Q9N4M0	pdp-1	Q9N4M0	1	4		
 Q9N4M2	worm	Q9N4M2	CELE_ZK973.4	Q9N4M2	0	1	Uncharacterized protein	
 Q9N4M3	worm	Q9N4M3	acr-6	Q9N4M3	12	13	AcetylCholine Receptor	
 Q9N4N1	worm	Q9N4N1	CELE_ZK616.2	Q9N4N1	1	10	CHCH domain-containing protein	
@@ -267,7 +276,8 @@ Q9N4X3	worm	Q9N4X3	CELE_Y46B2A.3	Q9N4X3	0	1	Fibrinogen C-terminal domain-contain
 Q9N4X6	worm	Q9N4X6	srj-19	Q9N4X6	0	1	Serpentine Receptor, class J	
 Q9N4X7	worm	Q9N4X7	CELE_Y45G12C.1	Q9N4X7	0	6	Nucleotid_trans domain-containing protein	
 Q9N4X8	worm	Q9N4X8	gst-10	Q9N4X8	3	15	Glutathione S-transferase P 10	
-Q9N4Y8	worm	Q9N4Y8	nuo-5	Q9N4Y8	7	125	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	
+Q9N4Y8	worm	Q9N4Y8	nuo-5	Q9N4Y8	13	128	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	
+Q9N4Y8_CAEEL	worm	Q9N4Y8	nuo-5	Q9N4Y8	13	128		
 Q9N4Z0	worm	Q9N4Z0	Y45G12B.3	Q9N4Z0	0	4	L-2-hydroxyglutarate dehydrogenase, mitochondrial	
 Q9N4Z4	worm	Q9N4Z4	CELE_Y42G9A.2	Q9N4Z4	0	2	Secreted protein	
 Q9N4Z5	worm	Q9N4Z5	CELE_Y42G9A.3	Q9N4Z5	0	2	Leucine-rich repeat-containing protein 58	
@@ -283,6 +293,8 @@ Q9N534	worm	Q9N534	CELE_Y32H12A.7	Q9N534	0	4	ABC1 atypical kinase-like domain-co
 Q9N535	worm	Q9N535	CELE_Y32H12A.6	Q9N535	1	4	Flavodoxin-like domain-containing protein	
 Q9N536	worm	Q9N536	paqr-2	Q9N536	2	58	Adiponectin receptor protein	
 Q9N537	worm	Q9N537	szy-2	Q9N537	3	7	Protein phosphatase inhibitor 2	
+Q9N538	worm	Q9N538	dhs-9	Q9N538	1	1	DeHydrogenases, Short chain	
+Q9N538_CAEEL	worm	Q9N538	dhs-9	Q9N538	1	1		
 Q9N548	worm	Q9N548	CELE_Y27F2A.6	Q9N548	0	6	Alpha-2,3-sialyltransferase	
 Q9N554	worm	Q9N554	ell-1	Q9N554	15	98	OCEL domain-containing protein	
 Q9N563	worm	Q9N563	capa-1	Q9N563	0	2	Neuropeptide precursor capa-1	
@@ -293,8 +305,10 @@ Q9N575	worm	Q9N575	memi-1	Q9N575	1	4	MEiosis-to-MItosis transition associated
 Q9N576	worm	Q9N576	CELE_Y17G9B.8	Q9N576	1	39	SGF29 C-terminal domain-containing protein	
 Q9N579	worm	Q9N579	CELE_Y17G9B.4	Q9N579	1	23	Peptidyl-prolyl cis-trans isomerase	
 Q9N580	worm	Q9N580	CELE_Y17G9B.5	Q9N580	2	15	Evolutionarily conserved signaling intermediate in Toll path	
+Q9N580_CAEEL	worm	Q9N580	CELE_Y17G9B.5	Q9N580	2	15		
 Q9N582	worm	Q9N582	CELE_Y119C1A.1	Q9N582	1	3	RanBP2-type domain-containing protein	
-Q9N584	worm	Q9N584	let-630	Q9N584	9	107	Small ribosomal subunit protein mS39	
+Q9N584	worm	Q9N584	let-630	Q9N584	10	107	Small ribosomal subunit protein mS39	
+Q9N584_CAEEL	worm	Q9N584	let-630	Q9N584	10	107		
 Q9N585	worm	Q9N585	ppw-2	Q9N585	0	31	Piwi domain-containing protein	
 Q9N586	worm	Q9N586	trf-2	Q9N586	2	47	MATH domain-containing protein	
 Q9N587	worm	Q9N587	unc-63	Q9N587	10	16	Acetylcholine receptor subunit alpha-type unc-63	
@@ -319,7 +333,8 @@ Q9N5D6	worm	Q9N5D6	unc-62	Q9N5D6	9	99	Homeobox protein unc-62
 Q9N5D7	worm	Q9N5D7	lron-8	Q9N5D7	0	2	LRRCT domain-containing protein	
 Q9N5D8	worm	Q9N5D8	dhhc-11	Q9N5D8	0	8	Palmitoyltransferase	
 Q9N5E3	worm	Q9N5E3	thoc-1	Q9N5E3	5	41	Death domain-containing protein	
-Q9N5E4	worm	Q9N5E4	CELE_T02H6.11	Q9N5E4	1	86	Cytochrome b-c1 complex subunit 7	
+Q9N5E4	worm	Q9N5E4	CELE_T02H6.11	Q9N5E4	2	86	Cytochrome b-c1 complex subunit 7	
+Q9N5E4_CAEEL	worm	Q9N5E4	CELE_T02H6.11	Q9N5E4	2	86		
 Q9N5E7	worm	Q9N5E7	CELE_T02H6.5	Q9N5E7	0	1	F-box domain-containing protein	
 Q9N5F4	worm	Q9N5F4	CELE_R193.1	Q9N5F4	0	2	Uncharacterized protein	
 Q9N5G0	worm	Q9N5G0	srh-56	Q9N5G0	1	46	Serpentine Receptor, class H	
@@ -374,6 +389,7 @@ Q9N5V7	worm	Q9N5V7	marc-4	Q9N5V7	0	2	RING-CH-type domain-containing protein
 Q9N5W9	worm	Q9N5W9	fbxa-62	Q9N5W9	0	3	F-box domain-containing protein	
 Q9N5X2	worm	Q9N5X2	fbxa-12	Q9N5X2	1	9	F-box domain-containing protein	
 Q9N5X5	worm	Q9N5X5	C39B5.6	Q9N5X5	3	14	Glutamyl-tRNA(Gln) amidotransferase subunit B, mitochondrial	
+Q9N5X5_CAEEL	worm	Q9N5X5	C39B5.6	Q9N5X5	3	14		
 Q9N5X6	worm	Q9N5X6	odd-2	Q9N5X6	0	12	Protein odd-skipped-related 2	
 Q9N5X9	worm	Q9N5X9	C15F1.2	Q9N5X9	0	4	Uncharacterized protein	
 Q9N5Y2	worm	Q9N5Y2	art-1	Q9N5Y2	1	22	Probable very-long-chain enoyl-CoA reductase art-1	
@@ -396,7 +412,8 @@ Q9NA25	worm	Q9NA25	ndx-8	Q9NA25	0	10	Peroxisomal coenzyme A diphosphatase ndx-8
 Q9NA26	worm	Q9NA26	vps-28	Q9NA26	2	30	Vacuolar protein sorting-associated protein 28 homolog	
 Q9NA28	worm	Q9NA28	nyn-2	Q9NA28	0	2	Zc3h12a-like Ribonuclease NYN domain-containing protein	
 Q9NA31	worm	Q9NA31	ari-1.4	Q9NA31	5	45	RBR-type E3 ubiquitin transferase	
-Q9NA32	worm	Q9NA32	fdx-2	Q9NA32	6	54	2Fe-2S ferredoxin-type domain-containing protein	
+Q9NA32	worm	Q9NA32	fdx-2	Q9NA32	10	57	2Fe-2S ferredoxin-type domain-containing protein	
+Q9NA32_CAEEL	worm	Q9NA32	fdx-2	Q9NA32	10	57		
 Q9NA33	worm	Q9NA33	CELE_Y73F8A.26	Q9NA33	0	4	Leprecan-like alpha-helical domain-containing protein	
 Q9NA34	worm	Q9NA34	ntl-11	Q9NA34	2	10	CCR4-NOT transcription complex subunit 11	
 Q9NA36	worm	Q9NA36	CELE_Y73F8A.14	Q9NA36	0	8	DUF4878 domain-containing protein	
@@ -412,7 +429,7 @@ Q9NA56	worm	Q9NA56	tbx-39	Q9NA56	3	35	Putative T-box protein 39
 Q9NA64	worm	Q9NA64	ilcr-1	Q9NA64	1	5	Interleukin cytokine receptor-related protein 1	
 Q9NA69	worm	Q9NA69	CELE_Y57A10A.13	Q9NA69	0	1	3-5 exonuclease domain-containing protein	
 Q9NA71	worm	Q9NA71	CELE_Y57A10A.31	Q9NA71	1	28	RING-type domain-containing protein	
-Q9NA72	worm	Q9NA72	Y57A10A.29	Q9NA72	3	9	Succinate dehydrogenase assembly factor 2, mitochondrial	
+Q9NA72	worm	Q9NA72	Y57A10A.29	Q9NA72	4	10	Succinate dehydrogenase assembly factor 2, mitochondrial	
 Q9NA73	worm	Q9NA73	tric-1B.2	Q9NA73	1	24	Trimeric intracellular cation channel type 1B.2	
 Q9NA74	worm	Q9NA74	faxc-1	Q9NA74	0	4	GST N-terminal domain-containing protein	
 Q9NA75	worm	Q9NA75	tric-1B.1	Q9NA75	1	1	Trimeric intracellular cation channel type 1B.1	
@@ -428,6 +445,8 @@ Q9NA92	worm	Q9NA92	clec-100	Q9NA92	0	1	C-type lectin domain-containing protein
 Q9NA98	worm	Q9NA98	arp-1	Q9NA98	21	135	Actin	
 Q9NA99	worm	Q9NA99	wshc-4	Q9NA99	3	6	HEPN_LA2681 domain-containing protein	
 Q9NAA1	worm	Q9NAA1	CELE_Y53F4B.19	Q9NAA1	1	1	Major sperm protein	
+Q9NAA4	worm	Q9NAA4	CELE_Y53F4B.14	Q9NAA4	1	1	Protein PET100 homolog, mitochondrial	
+Q9NAA4_CAEEL	worm	Q9NAA4	CELE_Y53F4B.14	Q9NAA4	1	1		
 Q9NAA5	worm	Q9NAA5	cmtr-1	Q9NAA5	1	3	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 1	
 Q9NAA7	worm	Q9NAA7	nsun-5	Q9NAA7	1	24	26S rRNA (cytosine-C(5))-methyltransferase nsun-5	
 Q9NAB0	worm	Q9NAB0	gst-39	Q9NAB0	0	10	glutathione transferase	
@@ -449,9 +468,11 @@ Q9NAE4	worm	Q9NAE4	zip-7	Q9NAE4	11	102	BZIP domain-containing protein
 Q9NAE9	worm	Q9NAE9	scrm-7	Q9NAE9	0	3	Phospholipid scramblase	
 Q9NAF2	worm	Q9NAF2	CELE_Y50E8A.6	Q9NAF2	1	3	Glycerol-3-phosphate dehydrogenase	
 Q9NAF6	worm	Q9NAF6	CELE_Y50E8A.1	Q9NAF6	1	1	Neuropeptide-Like Protein	
-Q9NAF8	worm	Q9NAF8	CELE_Y48C3A.18	Q9NAF8	1	41	Threonylcarbamoyl-AMP synthase	
+Q9NAF8	worm	Q9NAF8	CELE_Y48C3A.18	Q9NAF8	2	42	Threonylcarbamoyl-AMP synthase	
+Q9NAF8_CAEEL	worm	Q9NAF8	CELE_Y48C3A.18	Q9NAF8	2	42		
 Q9NAF9	worm	Q9NAF9	pinn-4	Q9NAF9	0	14	Peptidyl-prolyl cis-trans isomerase	
-Q9NAG2	worm	Q9NAG2	mrpl-20	Q9NAG2	10	155	Mitochondrial Ribosomal Protein, Large	
+Q9NAG2	worm	Q9NAG2	mrpl-20	Q9NAG2	11	155	Mitochondrial Ribosomal Protein, Large	
+Q9NAG2_CAEEL	worm	Q9NAG2	mrpl-20	Q9NAG2	11	155		
 Q9NAG4	worm	Q9NAG4	mac-1	Q9NAG4	0	20	Protein mac-1	
 Q9NAG7	worm	Q9NAG7	ztf-22	Q9NAG7	1	16	C2H2-type domain-containing protein	
 Q9NAH2	worm	Q9NAH2	tbx-34	Q9NAH2	0	12	Putative T-box protein 34	
@@ -477,9 +498,10 @@ Q9NAN1	worm	Q9NAN1	uba-2	Q9NAN1	4	42	SUMO-activating enzyme subunit uba-2
 Q9NAN2	worm	Q9NAN2	par-6	Q9NAN2	12	62	Partitioning defective protein 6	
 Q9NAN9	worm	Q9NAN9	srt-44	Q9NAN9	0	3	Serpentine Receptor, class T	
 Q9NAP0	worm	Q9NAP0	clec-190	Q9NAP0	0	1	C-type LECtin	
-Q9NAP7	worm	Q9NAP7	CELE_K09E4.3	Q9NAP7	0	4	Arginine-hydroxylase NDUFAF5, mitochondrial	
+Q9NAP7	worm	Q9NAP7	CELE_K09E4.3	Q9NAP7	1	5	Arginine-hydroxylase NDUFAF5, mitochondrial	
+Q9NAP7_CAEEL	worm	Q9NAP7	CELE_K09E4.3	Q9NAP7	1	5		
 Q9NAP8	worm	Q9NAP8	CELE_K09E4.1	Q9NAP8	0	3	Protein kinase domain-containing protein	
-Q9NAP9	worm	Q9NAP9	mrps-15	Q9NAP9	21	310	Small ribosomal subunit protein uS15m	
+Q9NAP9	worm	Q9NAP9	mrps-15	Q9NAP9	22	310	Small ribosomal subunit protein uS15m	
 Q9NAQ1	worm	Q9NAQ1	CELE_K02E2.8	Q9NAQ1	0	1	DUF281 domain-containing protein	
 Q9NAQ2	worm	Q9NAQ2	pwp-1	Q9NAQ2	2	14	WD_REPEATS_REGION domain-containing protein	
 Q9NAQ4	worm	Q9NAQ4	col-83	Q9NAQ4	0	4	Nematode cuticle collagen N-terminal domain-containing prote	
@@ -503,6 +525,7 @@ Q9NDU7	plasmodium-falciparum-36329	Q9NDU7	PF3D7_0302700	Q9NDU7	0	1	CDGSH iron-su
 Q9NDU9	worm	Q9NDU9	fbxa-152	Q9NDU9	1	1	F-box domain-containing protein	
 Q9NEF6	fly	FBgn0040377	Vha36-3	Q9NEF6	5	44	V-type proton ATPase subunit D 2 (V-ATPase subunit D 2) (Vac	
 Q9NEI6	worm	Q9NEI6	mrps-35	Q9NEI6	17	139	Small ribosomal subunit protein mS35 mitochondrial conserved	
+Q9NEI6_CAEEL	worm	Q9NEI6	mrps-35	Q9NEI6	17	139		
 Q9NEI8	worm	Q9NEI8	CELE_Y39B6A.41	Q9NEI8	2	21	Major facilitator superfamily (MFS) profile domain-containin	
 Q9NEK2	worm	Q9NEK2	CELE_Y116F11B.7	Q9NEK2	0	2	Uncharacterized protein	
 Q9NEK3	worm	Q9NEK3	CELE_Y116F11B.6	Q9NEK3	0	1	BZIP domain-containing protein	
@@ -530,6 +553,7 @@ Q9NEW7	worm	Q9NEW7	elpc-2	Q9NEW7	3	9	Elongator complex protein 2
 Q9NEW8	worm	Q9NEW8	taf-7.2	Q9NEW8	7	46	TAFII55 protein conserved region domain-containing protein	
 Q9NEX2	worm	Q9NEX2	gtf-2A2	Q9NEX2	6	88	Transcription initiation factor IIA subunit 2	
 Q9NEY7	worm	Q9NEY7	CELE_Y105E8A.11	Q9NEY7	2	19	BolA-like protein 3	
+Q9NEY7_CAEEL	worm	Q9NEY7	CELE_Y105E8A.11	Q9NEY7	2	19		
 Q9NEZ5	worm	Q9NEZ5	unc-95	Q9NEZ5	3	16	LIM domain-containing protein unc-95	
 Q9NEZ7	worm	Q9NEZ7	bbs-1	Q9NEZ7	10	85	BBSome complex member BBS1	
 Q9NEZ8	worm	Q9NEZ8	ech-7	Q9NEZ8	0	14	Probable enoyl-CoA hydratase, mitochondrial	
@@ -562,7 +586,7 @@ Q9NGL1	fly	FBgn0083992	Mkp	Q9NGL1	138	982	MAP kinase phosphatase-1 (MAP kinase-s
 Q9NGP4	dictyostelium-discoideum	Q9NGP4	ubc9	Q9NGP4	6	26	Sumo-conjugating enzyme ubc9	
 Q9NGT3	worm	Q9NGT3	mdf-2	Q9NGT3	7	44	Mitotic spindle assembly checkpoint protein MAD2A	
 Q9NGX9	fly	FBgn0000449	dib	Q9NGX9	0	2	Cytochrome P450 302a1, mitochondrial (EC 1.14.99.-) (Protein	
-Q9NH02	dictyostelium-discoideum	Q9NH02	ipi	Q9NH02	0	2	Isopentenyl-diphosphate Delta-isomerase	
+Q9NH02	dictyostelium-discoideum	Q9NH02	ipi	Q9NH02	0	3	Isopentenyl-diphosphate Delta-isomerase	
 Q9NH03	dictyostelium-discoideum	Q9NH03	fps	Q9NH03	2	3	Farnesyl diphosphate synthase	
 Q9NH52	worm	Q9NH52	mes-4	Q9NH52	0	7	Histone-lysine N-methyltransferase mes-4	
 Q9NHA8	fly	FBgn0040321	GNBP3	Q9NHA8	29	247	Gram-negative bacteria-binding protein 3	
@@ -606,14 +630,14 @@ Q9NNW7	human	Q9NNW7	TXNRD2	Q9NNW7	6	110	Thioredoxin reductase 2, mitochondrial (
 Q9NNX1	human	Q9NNX1	TUFT1	Q9NNX1	32	113	Tuftelin	
 Q9NNX6	human	Q9NNX6	CD209	Q9NNX6	2	211	CD209 antigen (C-type lectin domain family 4 member L) (Dend	
 Q9NNX9	human	Q9NNX9	VCX3A	Q9NNX9	1	27	Variable charge X-linked protein 3 (Variable charge protein 	
-Q9NNZ3	human	Q9NNZ3	DNAJC4	Q9NNZ3	8	112	DnaJ homolog subfamily C member 4 (DnaJ-like protein HSPF2) 	
+Q9NNZ3	human	Q9NNZ3	DNAJC4	Q9NNZ3	10	114	DnaJ homolog subfamily C member 4 (DnaJ-like protein HSPF2) 	
 Q9NNZ6	human	Q9NNZ6	PRM3	Q9NNZ6	8	59	Protamine-3 (Sperm protamine P3)	
 Q9NP08	human	Q9NP08	HMX1	Q9NP08	92	334	Homeobox protein HMX1 (Homeobox protein H6)	
 Q9NP31	human	Q9NP31	SH2D2A	Q9NP31	22	94	SH2 domain-containing protein 2A (SH2 domain-containing adap	
 Q9NP50	human	Q9NP50	SINHCAF	Q9NP50	30	208	SIN3-HDAC complex-associated factor (Protein FAM60A) (Tera p	
 Q9NP55	human	Q9NP55	BPIFA1	Q9NP55	8	177	BPI fold-containing family A member 1 (Lung-specific protein	
 Q9NP56	human	Q9NP56	PDE7B	Q9NP56	8	84	3',5'-cyclic-AMP phosphodiesterase 7B (EC 3.1.4.53) (cAMP-sp	
-Q9NP58	human	Q9NP58	ABCB6	Q9NP58	6	181	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	
+Q9NP58	human	Q9NP58	ABCB6	Q9NP58	7	182	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	
 Q9NP59	human	Q9NP59	SLC40A1	Q9NP59	3	156	Ferroportin (Ferroportin-1) (Iron-regulated transporter 1) (	
 Q9NP60	human	Q9NP60	IL1RAPL2	Q9NP60	20	96	X-linked interleukin-1 receptor accessory protein-like 2 (IL	
 Q9NP61	human	Q9NP61	ARFGAP3	Q9NP61	21	125	ADP-ribosylation factor GTPase-activating protein 3 (ARF GAP	
@@ -629,14 +653,14 @@ Q9NP77	human	Q9NP77	SSU72	Q9NP77	44	578	RNA polymerase II subunit A C-terminal d
 Q9NP78	human	Q9NP78	ABCB9	Q9NP78	9	74	ABC-type oligopeptide transporter ABCB9 (EC 7.4.2.6) (ATP-bi	
 Q9NP79	human	Q9NP79	VTA1	Q9NP79	23	156	Vacuolar protein sorting-associated protein VTA1 homolog (Do	
 Q9NP80	human	Q9NP80	PNPLA8	Q9NP80	7	60	Calcium-independent phospholipase A2-gamma (EC 3.1.1.-) (EC 	
-Q9NP81	human	Q9NP81	SARS2	Q9NP81	3	136	Serine--tRNA ligase, mitochondrial (EC 6.1.1.11) (SerRSmt) (	
+Q9NP81	human	Q9NP81	SARS2	Q9NP81	5	138	Serine--tRNA ligase, mitochondrial (EC 6.1.1.11) (SerRSmt) (	
 Q9NP84	human	Q9NP84	TNFRSF12A	Q9NP84	35	267	Tumor necrosis factor receptor superfamily member 12A (Fibro	
 Q9NP85	human	Q9NP85	NPHS2	Q9NP85	1	37	Podocin	
 Q9NP86	human	Q9NP86	CABP5	Q9NP86	10	156	Calcium-binding protein 5 (CaBP5)	
 Q9NP87	human	Q9NP87	POLM	Q9NP87	4	64	DNA-directed DNA/RNA polymerase mu (Pol Mu) (EC 2.7.7.7) (Te	
 Q9NP90	human	Q9NP90	RAB9B	Q9NP90	40	197	Ras-related protein Rab-9B (EC 3.6.5.2) (Rab-9-like protein)	
 Q9NP91	human	Q9NP91	SLC6A20	Q9NP91	5	67	Sodium- and chloride-dependent transporter XTRP3 (Sodium/imi	
-Q9NP92	human	Q9NP92	MRPS30	Q9NP92	11	234	Large ribosomal subunit protein mL65 (39S ribosomal protein 	
+Q9NP92	human	Q9NP92	MRPS30	Q9NP92	13	236	Large ribosomal subunit protein mL65 (39S ribosomal protein 	
 Q9NP94	human	Q9NP94	SLC39A2	Q9NP94	4	104	Zinc transporter ZIP2 (6A1) (Eti-1) (Solute carrier family 3	
 Q9NP95	human	Q9NP95	FGF20	Q9NP95	29	364	Fibroblast growth factor 20 (FGF-20)	
 Q9NP97	human	Q9NP97	DYNLRB1	Q9NP97	25	209	Dynein light chain roadblock-type 1 (Bithoraxoid-like protei	
@@ -648,7 +672,7 @@ Q9NPA2	human	Q9NPA2	MMP25	Q9NPA2	9	83	Matrix metalloproteinase-25 (MMP-25) (EC 3
 Q9NPA3	human	Q9NPA3	MID1IP1	Q9NPA3	4	103	Mid1-interacting protein 1 (Gastrulation-specific G12-like p	
 Q9NPA8	human	Q9NPA8	ENY2	Q9NPA8	30	621	Transcription and mRNA export factor ENY2 (Enhancer of yello	
 Q9NPB0	human	Q9NPB0	SAYSD1	Q9NPB0	3	57	SAYSvFN domain-containing protein 1	
-Q9NPB1	human	Q9NPB1	NT5M	Q9NPB1	5	83	5'(3')-deoxyribonucleotidase, mitochondrial (5',3'-nucleotid	
+Q9NPB1	human	Q9NPB1	NT5M	Q9NPB1	8	86	5'(3')-deoxyribonucleotidase, mitochondrial (5',3'-nucleotid	
 Q9NPB3	human	Q9NPB3	CABP2	Q9NPB3	11	137	Calcium-binding protein 2 (CaBP2)	
 Q9NPB6	human	Q9NPB6	PARD6A	Q9NPB6	34	150	Partitioning defective 6 homolog alpha (PAR-6) (PAR-6 alpha)	
 Q9NPB8	human	Q9NPB8	GPCPD1	Q9NPB8	4	59	Glycerophosphocholine phosphodiesterase GPCPD1 (EC 3.1.4.2) 	
@@ -664,7 +688,7 @@ Q9NPD3	human	Q9NPD3	EXOSC4	Q9NPD3	20	311	Exosome complex component RRP41 (Exosom
 Q9NPD5	human	Q9NPD5	SLCO1B3	Q9NPD5	2	38	Solute carrier organic anion transporter family member 1B3 (	
 Q9NPD7	human	Q9NPD7	NRN1	Q9NPD7	1	52	Neuritin	
 Q9NPD8	human	Q9NPD8	UBE2T	Q9NPD8	69	272	Ubiquitin-conjugating enzyme E2 T (EC 2.3.2.23) (Cell prolif	
-Q9NPE2	human	Q9NPE2	NGRN	Q9NPE2	74	546	Neugrin (Mesenchymal stem cell protein DSC92) (Neurite outgr	
+Q9NPE2	human	Q9NPE2	NGRN	Q9NPE2	75	547	Neugrin (Mesenchymal stem cell protein DSC92) (Neurite outgr	
 Q9NPE3	human	Q9NPE3	NOP10	Q9NPE3	14	324	H/ACA ribonucleoprotein complex subunit 3 (Nucleolar protein	
 Q9NPE6	human	Q9NPE6	SPAG4	Q9NPE6	12	72	Sperm-associated antigen 4 protein (Outer dense fiber-associ	
 Q9NPF0	human	Q9NPF0	CD320	Q9NPF0	12	90	CD320 antigen (8D6 antigen) (FDC-signaling molecule 8D6) (FD	
@@ -678,7 +702,7 @@ Q9NPG2	human	Q9NPG2	NGB	Q9NPG2	28	285	Neuroglobin (Nitrite reductase) (EC 1.7.-.
 Q9NPG3	human	Q9NPG3	UBN1	Q9NPG3	38	144	Ubinuclein-1 (HIRA-binding protein) (Protein VT4) (Ubiquitou	
 Q9NPG4	human	Q9NPG4	PCDH12	Q9NPG4	11	59	Protocadherin-12 (Vascular cadherin-2) (Vascular endothelial	
 Q9NPG8	human	Q9NPG8	ZDHHC4	Q9NPG8	6	35	Palmitoyltransferase ZDHHC4 (EC 2.3.1.225) (Zinc finger DHHC	
-Q9NPH0	human	Q9NPH0	ACP6	Q9NPH0	8	55	Lysophosphatidic acid phosphatase type 6 (EC 3.1.3.106) (Aci	
+Q9NPH0	human	Q9NPH0	ACP6	Q9NPH0	23	69	Lysophosphatidic acid phosphatase type 6 (EC 3.1.3.106) (Aci	
 Q9NPH2	human	Q9NPH2	ISYNA1	Q9NPH2	0	110	Inositol-3-phosphate synthase 1 (IPS 1) (EC 5.5.1.4) (Myo-in	
 Q9NPH3	human	Q9NPH3	IL1RAP	Q9NPH3	11	74	Interleukin-1 receptor accessory protein (IL-1 receptor acce	
 Q9NPH5	human	Q9NPH5	NOX4	Q9NPH5	6	131	NADPH oxidase 4 (EC 1.6.3.1) (Kidney oxidase-1) (KOX-1) (Kid	
@@ -692,11 +716,11 @@ Q9NPI7	human	Q9NPI7	KRCC1	Q9NPI7	5	31	Lysine-rich coiled-coil protein 1 (Cryptog
 Q9NPI8	human	Q9NPI8	FANCF	Q9NPI8	14	88	Fanconi anemia group F protein (Protein FACF)	
 Q9NPI9	human	Q9NPI9	KCNJ16	Q9NPI9	20	73	Inward rectifier potassium channel 16 (Inward rectifier K(+)	
 Q9NPJ1	human	Q9NPJ1	MKKS	Q9NPJ1	14	186	Molecular chaperone MKKS (Bardet-Biedl syndrome 6 protein) (	
-Q9NPJ3	human	Q9NPJ3	ACOT13	Q9NPJ3	4	71	Acyl-coenzyme A thioesterase 13 (Acyl-CoA thioesterase 13) (	
+Q9NPJ3	human	Q9NPJ3	ACOT13	Q9NPJ3	10	77	Acyl-coenzyme A thioesterase 13 (Acyl-CoA thioesterase 13) (	
 Q9NPJ4	human	Q9NPJ4	PNRC2	Q9NPJ4	20	158	Proline-rich nuclear receptor coactivator 2	
 Q9NPJ6	human	Q9NPJ6	MED4	Q9NPJ6	83	887	Mediator of RNA polymerase II transcription subunit 4 (Activ	
 Q9NPJ8	human	Q9NPJ8	NXT2	Q9NPJ8	6	89	NTF2-related export protein 2 (Protein p15-2)	
-Q9NPL8	human	Q9NPL8	TIMMDC1	Q9NPL8	13	232	Complex I assembly factor TIMMDC1, mitochondrial (Protein M5	
+Q9NPL8	human	Q9NPL8	TIMMDC1	Q9NPL8	15	234	Complex I assembly factor TIMMDC1, mitochondrial (Protein M5	
 Q9NPP4	human	Q9NPP4	NLRC4	Q9NPP4	3	78	NLR family CARD domain-containing protein 4 (CARD, LRR, and 	
 Q9NPQ8	human	Q9NPQ8	RIC8A	Q9NPQ8	18	145	Chaperone Ric-8A (Synembryn-A)	
 Q9NPR2	human	Q9NPR2	SEMA4B	Q9NPR2	19	106	Semaphorin-4B (Semaphorin-C)	
@@ -719,7 +743,7 @@ Q9NQ38	human	Q9NQ38	SPINK5	Q9NQ38	7	36	Serine protease inhibitor Kazal-type 5 (L
 Q9NQ39	human	Q9NQ39	RPS10P5	Q9NQ39	8	42	Putative ribosomal protein eS10-like (Putative 40S ribosomal	
 Q9NQ40	human	Q9NQ40	SLC52A3	Q9NQ40	5	155	Solute carrier family 52, riboflavin transporter, member 3 (	
 Q9NQ48	human	Q9NQ48	LZTFL1	Q9NQ48	12	126	Leucine zipper transcription factor-like protein 1	
-Q9NQ50	human	Q9NQ50	MRPL40	Q9NQ50	38	412	Large ribosomal subunit protein mL40 (39S ribosomal protein 	
+Q9NQ50	human	Q9NQ50	MRPL40	Q9NQ50	39	413	Large ribosomal subunit protein mL40 (39S ribosomal protein 	
 Q9NQ55	human	Q9NQ55	PPAN	Q9NQ55	44	442	Suppressor of SWI4 1 homolog (Ssf-1) (Brix domain-containing	
 Q9NQ60	human	Q9NQ60	EQTN	Q9NQ60	4	25	Equatorin (Acrosome formation-associated factor)	
 Q9NQ66	human	Q9NQ66	PLCB1	Q9NQ66	24	192	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase be	
@@ -743,13 +767,13 @@ Q9NQC3	human	Q9NQC3	RTN4	Q9NQC3	21	380	Reticulon-4 (Foocen) (Neurite outgrowth i
 Q9NQC7	human	Q9NQC7	CYLD	Q9NQC7	70	926	Ubiquitin carboxyl-terminal hydrolase CYLD (EC 3.4.19.12) (D	
 Q9NQC8	human	Q9NQC8	IFT46	Q9NQC8	8	62	Intraflagellar transport protein 46 homolog	
 Q9NQE7	human	Q9NQE7	PRSS16	Q9NQE7	7	68	Thymus-specific serine protease (EC 3.4.-.-) (Serine proteas	
-Q9NQE9	human	Q9NQE9	HINT3	Q9NQE9	8	67	Adenosine 5'-monophosphoramidase HINT3 (EC 3.9.1.-) (Histidi	
+Q9NQE9	human	Q9NQE9	HINT3	Q9NQE9	19	78	Adenosine 5'-monophosphoramidase HINT3 (EC 3.9.1.-) (Histidi	
 Q9NQF3	human	Q9NQF3	SERHL	Q9NQF3	1	35	Serine hydrolase-like protein (SHL) (EC 3.1.-.-)	
 Q9NQG1	human	Q9NQG1	MANBAL	Q9NQG1	23	62	Protein MANBAL	
 Q9NQG5	human	Q9NQG5	RPRD1B	Q9NQG5	27	247	Regulation of nuclear pre-mRNA domain-containing protein 1B 	
-Q9NQG6	human	Q9NQG6	MIEF1	Q9NQG6	20	181	Mitochondrial dynamics protein MIEF1 (Mitochondrial dynamics	
+Q9NQG6	human	Q9NQG6	MIEF1	Q9NQG6	25	186	Mitochondrial dynamics protein MIEF1 (Mitochondrial dynamics	
 Q9NQG7	human	Q9NQG7	HPS4	Q9NQG7	3	32	BLOC-3 complex member HPS4 (Hermansky-Pudlak syndrome 4 prot	
-Q9NQH7	human	Q9NQH7	XPNPEP3	Q9NQH7	4	122	Xaa-Pro aminopeptidase 3 (X-Pro aminopeptidase 3) (EC 3.4.11	
+Q9NQH7	human	Q9NQH7	XPNPEP3	Q9NQH7	5	123	Xaa-Pro aminopeptidase 3 (X-Pro aminopeptidase 3) (EC 3.4.11	
 Q9NQI0	human	Q9NQI0	DDX4	Q9NQI0	9	111	Probable ATP-dependent RNA helicase DDX4 (EC 3.6.4.13) (DEAD	
 Q9NQL2	human	Q9NQL2	RRAGD	Q9NQL2	12	90	Ras-related GTP-binding protein D (Rag D) (RagD) (EC 3.6.5.-	
 Q9NQL9	human	Q9NQL9	DMRT3	Q9NQL9	130	420	Doublesex- and mab-3-related transcription factor 3	
@@ -758,7 +782,7 @@ Q9NQN1	human	Q9NQN1	OR2S2	Q9NQN1	1	28	Olfactory receptor 2S2 (Olfactory receptor
 Q9NQP4	human	Q9NQP4	PFDN4	Q9NQP4	21	198	Prefoldin subunit 4 (Protein C-1)	
 Q9NQQ7	human	Q9NQQ7	SLC35H1	Q9NQQ7	8	112	Solute carrier family 35 member H1 (Ovarian cancer-overexpre	
 Q9NQR1	human	Q9NQR1	KMT5A	Q9NQR1	36	132	N-lysine methyltransferase KMT5A (EC 2.1.1.-) (H4-K20-HMTase	
-Q9NQR4	human	Q9NQR4	NIT2	Q9NQR4	3	96	Omega-amidase NIT2 (EC 3.5.1.3) (Nitrilase homolog 2)	
+Q9NQR4	human	Q9NQR4	NIT2	Q9NQR4	4	97	Omega-amidase NIT2 (EC 3.5.1.3) (Nitrilase homolog 2)	
 Q9NQR7	human	Q9NQR7	CCDC177	Q9NQR7	5	19	Coiled-coil domain-containing protein 177 (Myelin proteolipi	
 Q9NQR8	rattus-norvegicus	Q9NQR8	Ndufaf4	Q9NQR8	2	36	NADH dehydrogenase	
 Q9NQR9	human	Q9NQR9	G6PC2	Q9NQR9	2	61	Glucose-6-phosphatase 2 (G-6-Pase 2) (G6Pase 2) (EC 3.1.3.9)	
@@ -790,7 +814,7 @@ Q9NQX7	human	Q9NQX7	ITM2C	Q9NQX7	15	134	Integral membrane protein 2C (Cerebral p
 Q9NQY0	human	Q9NQY0	BIN3	Q9NQY0	37	133	Bridging integrator 3	
 Q9NQZ2	human	Q9NQZ2	UTP3	Q9NQZ2	54	340	Something about silencing protein 10 (Charged amino acid-ric	
 Q9NQZ3	human	Q9NQZ3	DAZ1	Q9NQZ3	10	568	Deleted in azoospermia protein 1	
-Q9NQZ5	human	Q9NQZ5	STARD7	Q9NQZ5	5	55	StAR-related lipid transfer protein 7, mitochondrial (STARD7	
+Q9NQZ5	human	Q9NQZ5	STARD7	Q9NQZ5	7	57	StAR-related lipid transfer protein 7, mitochondrial (STARD7	
 Q9NQZ6	human	Q9NQZ6	ZC4H2	Q9NQZ6	3	69	Zinc finger C4H2 domain-containing protein (Hepatocellular c	
 Q9NQZ7	human	Q9NQZ7	ENTPD7	Q9NQZ7	6	63	Ectonucleoside triphosphate diphosphohydrolase 7 (NTPDase 7)	
 Q9NQZ8	human	Q9NQZ8	ZNF71	Q9NQZ8	0	105	Endothelial zinc finger protein induced by tumor necrosis fa	
@@ -803,7 +827,7 @@ Q9NR20	human	Q9NR20	DYRK4	Q9NR20	332	1308	Dual specificity tyrosine-phosphorylat
 Q9NR21	human	Q9NR21	PARP11	Q9NR21	7	61	Protein mono-ADP-ribosyltransferase PARP11 (EC 2.4.2.-) (ADP	
 Q9NR22	human	Q9NR22	PRMT8	Q9NR22	13	134	Protein arginine N-methyltransferase 8 (EC 2.1.1.319) (Heter	
 Q9NR23	human	Q9NR23	GDF3	Q9NR23	13	113	Growth/differentiation factor 3 (GDF-3)	
-Q9NR28	human	Q9NR28	DIABLO	Q9NR28	19	358	Diablo IAP-binding mitochondrial protein (Diablo homolog, mi	
+Q9NR28	human	Q9NR28	DIABLO	Q9NR28	21	360	Diablo IAP-binding mitochondrial protein (Diablo homolog, mi	
 Q9NR30	human	Q9NR30	DDX21	Q9NR30	35	677	Nucleolar RNA helicase 2 (EC 3.6.4.13) (DEAD box protein 21)	
 Q9NR31	human	Q9NR31	SAR1A	Q9NR31	27	384	Small COPII coat GTPase SAR1A (EC 3.6.5.2) (COPII-associated	
 Q9NR33	human	Q9NR33	POLE4	Q9NR33	32	140	DNA polymerase epsilon subunit 4 (DNA polymerase II subunit 	
@@ -818,7 +842,7 @@ Q9NR61	human	Q9NR61	DLL4	Q9NR61	18	155	Delta-like protein 4 (Drosophila Delta ho
 Q9NR63	human	Q9NR63	CYP26B1	Q9NR63	2	98	Cytochrome P450 26B1 (EC 1.14.13.-) (Cytochrome P450 26A2) (	
 Q9NR64	human	Q9NR64	KLHL1	Q9NR64	24	87	Kelch-like protein 1	
 Q9NR71	human	Q9NR71	ASAH2	Q9NR71	0	27	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.-) (EC 3.5.1	
-Q9NR77	human	Q9NR77	PXMP2	Q9NR77	15	316	Peroxisomal membrane protein 2 (22 kDa peroxisomal membrane 	
+Q9NR77	human	Q9NR77	PXMP2	Q9NR77	19	320	Peroxisomal membrane protein 2 (22 kDa peroxisomal membrane 	
 Q9NR80	human	Q9NR80	ARHGEF4	Q9NR80	27	181	Rho guanine nucleotide exchange factor 4 (APC-stimulated gua	
 Q9NR81	human	Q9NR81	ARHGEF3	Q9NR81	27	167	Rho guanine nucleotide exchange factor 3 (Exchange factor fo	
 Q9NR82	human	Q9NR82	KCNQ5	Q9NR82	31	158	Potassium voltage-gated channel subfamily KQT member 5 (KQT-	
@@ -827,7 +851,7 @@ Q9NR90	human	Q9NR90	DAZ3	Q9NR90	0	17	Deleted in azoospermia protein 3
 Q9NR96	human	Q9NR96	TLR9	Q9NR96	20	418	Toll-like receptor 9 (CD antigen CD289)	
 Q9NR97	human	Q9NR97	TLR8	Q9NR97	14	277	Toll-like receptor 8 (CD antigen CD288)	
 Q9NR99	human	Q9NR99	MXRA5	Q9NR99	0	22	Matrix-remodeling-associated protein 5 (Adhesion protein wit	
-Q9NRA0	human	Q9NRA0	SPHK2	Q9NRA0	8	115	Sphingosine kinase 2 (SK 2) (SPK 2) (EC 2.7.1.91)	
+Q9NRA0	human	Q9NRA0	SPHK2	Q9NRA0	16	123	Sphingosine kinase 2 (SK 2) (SPK 2) (EC 2.7.1.91)	
 Q9NRA1	human	Q9NRA1	PDGFC	Q9NRA1	23	153	Platelet-derived growth factor C (PDGF-C) (Fallotein) (Spina	
 Q9NRA2	human	Q9NRA2	SLC17A5	Q9NRA2	1	80	Sialin (H(+)/nitrate cotransporter) (H(+)/sialic acid cotran	
 Q9NRA8	human	Q9NRA8	EIF4ENIF1	Q9NRA8	51	324	Eukaryotic translation initiation factor 4E transporter (4E-	
@@ -837,7 +861,7 @@ Q9NRC8	human	Q9NRC8	SIRT7	Q9NRC8	68	1078	NAD-dependent protein deacetylase sirtu
 Q9NRC9	human	Q9NRC9	OTOR	Q9NRC9	7	61	Otoraplin (Fibrocyte-derived protein) (Melanoma inhibitory a	
 Q9NRD0	human	Q9NRD0	FBXO8	Q9NRD0	18	182	F-box only protein 8 (F-box/SEC7 protein FBS)	
 Q9NRD1	human	Q9NRD1	FBXO6	Q9NRD1	89	766	F-box only protein 6 (F-box protein that recognizes sugar ch	
-Q9NRD5	human	Q9NRD5	PICK1	Q9NRD5	139	700	PRKCA-binding protein (Protein interacting with C kinase 1) 	
+Q9NRD5	human	Q9NRD5	PICK1	Q9NRD5	142	703	PRKCA-binding protein (Protein interacting with C kinase 1) 	
 Q9NRD8	human	Q9NRD8	DUOX2	Q9NRD8	2	12	Dual oxidase 2 (EC 1.-.-.-) (EC 1.11.1.-) (EC 1.6.3.1) (Larg	
 Q9NRD9	human	Q9NRD9	DUOX1	Q9NRD9	1	16	Dual oxidase 1 (EC 1.-.-.-) (EC 1.11.1.-) (EC 1.6.3.1) (Larg	
 Q9NRE1	human	Q9NRE1	MMP26	Q9NRE1	7	80	Matrix metalloproteinase-26 (MMP-26) (EC 3.4.24.-) (Endometa	
@@ -848,7 +872,7 @@ Q9NRF9	human	Q9NRF9	POLE3	Q9NRF9	32	176	DNA polymerase epsilon subunit 3 (Arseni
 Q9NRG0	human	Q9NRG0	CHRAC1	Q9NRG0	19	118	Chromatin accessibility complex protein 1 (CHRAC-1) (Chromat	
 Q9NRG1	human	Q9NRG1	PRTFDC1	Q9NRG1	10	188	Phosphoribosyltransferase domain-containing protein 1	
 Q9NRG4	human	Q9NRG4	SMYD2	Q9NRG4	45	202	N-lysine methyltransferase SMYD2 (EC 2.1.1.-) (HSKM-B) (Hist	
-Q9NRG7	human	Q9NRG7	SDR39U1	Q9NRG7	5	69	Epimerase family protein SDR39U1 (EC 1.1.1.-) (Short-chain d	
+Q9NRG7	human	Q9NRG7	SDR39U1	Q9NRG7	10	74	Epimerase family protein SDR39U1 (EC 1.1.1.-) (Short-chain d	
 Q9NRG9	human	Q9NRG9	AAAS	Q9NRG9	18	187	Aladin (Adracalin)	
 Q9NRH1	human	Q9NRH1	YAE1	Q9NRH1	35	306	Protein YAE1 homolog (Yae1 domain-containing protein 1)	
 Q9NRH2	human	Q9NRH2	SNRK	Q9NRH2	27	162	SNF-related serine/threonine-protein kinase (EC 2.7.11.1) (S	
@@ -860,7 +884,7 @@ Q9NRJ3	human	Q9NRJ3	CCL28	Q9NRJ3	26	138	C-C motif chemokine 28 (Mucosae-associat
 Q9NRJ4	human	Q9NRJ4	TULP4	Q9NRJ4	7	107	Tubby-related protein 4 (Tubby superfamily protein) (Tubby-l	
 Q9NRJ5	human	Q9NRJ5	PAPOLB	Q9NRJ5	15	75	Poly(A) polymerase beta (PAP-beta) (EC 2.7.7.19) (Polynucleo	
 Q9NRJ7	human	Q9NRJ7	PCDHB16	Q9NRJ7	53	122	Protocadherin beta-16 (PCDH-beta-16) (Protocadherin-3X)	
-Q9NRK6	human	Q9NRK6	ABCB10	Q9NRK6	3	104	ATP-binding cassette sub-family B member 10, mitochondrial (	
+Q9NRK6	human	Q9NRK6	ABCB10	Q9NRK6	4	105	ATP-binding cassette sub-family B member 10, mitochondrial (	
 Q9NRL2	human	Q9NRL2	BAZ1A	Q9NRL2	30	201	Bromodomain adjacent to zinc finger domain protein 1A (ATP-d	
 Q9NRL3	human	Q9NRL3	STRN4	Q9NRL3	52	198	Striatin-4 (Zinedin)	
 Q9NRM0	human	Q9NRM0	SLC2A9	Q9NRM0	1	98	Solute carrier family 2, facilitated glucose transporter mem	
@@ -870,10 +894,10 @@ Q9NRM6	human	Q9NRM6	IL17RB	Q9NRM6	30	242	Interleukin-17 receptor B (IL-17 recept
 Q9NRM7	human	Q9NRM7	LATS2	Q9NRM7	57	425	Serine/threonine-protein kinase LATS2 (EC 2.7.11.1) (Kinase 	
 Q9NRN5	human	Q9NRN5	OLFML3	Q9NRN5	13	139	Olfactomedin-like protein 3 (HNOEL-iso) (hOLF44)	
 Q9NRN7	human	Q9NRN7	AASDHPPT	Q9NRN7	16	132	L-aminoadipate-semialdehyde dehydrogenase-phosphopantetheiny	
-Q9NRN9	human	Q9NRN9	METTL5	Q9NRN9	4	78	rRNA N(6)-adenosine-methyltransferase METTL5 (EC 2.1.1.-) (M	
+Q9NRN9	human	Q9NRN9	METTL5	Q9NRN9	29	104	rRNA N(6)-adenosine-methyltransferase METTL5 (EC 2.1.1.-) (M	
 Q9NRP0	human	Q9NRP0	OSTC	Q9NRP0	9	178	Oligosaccharyltransferase complex subunit OSTC (Hydrophobic 	
-Q9NRP2	human	Q9NRP2	CMC2	Q9NRP2	8	74	COX assembly mitochondrial protein 2 homolog	
-Q9NRP4	human	Q9NRP4	SDHAF3	Q9NRP4	5	82	Succinate dehydrogenase assembly factor 3, mitochondrial (SD	
+Q9NRP2	human	Q9NRP2	CMC2	Q9NRP2	18	84	COX assembly mitochondrial protein 2 homolog	
+Q9NRP4	human	Q9NRP4	SDHAF3	Q9NRP4	8	85	Succinate dehydrogenase assembly factor 3, mitochondrial (SD	
 Q9NRP7	human	Q9NRP7	STK36	Q9NRP7	14	81	Serine/threonine-protein kinase 36 (EC 2.7.11.1) (Fused homo	
 Q9NRQ2	human	Q9NRQ2	PLSCR4	Q9NRQ2	4	102	Phospholipid scramblase 4 (PL scramblase 4) (Ca(2+)-dependen	
 Q9NRQ5	human	Q9NRQ5	SMCO4	Q9NRQ5	27	104	Single-pass membrane and coiled-coil domain-containing prote	
@@ -887,13 +911,13 @@ Q9NRR8	human	Q9NRR8	CDC42SE1	Q9NRR8	6	51	CDC42 small effector protein 1 (CDC42-b
 Q9NRS4	human	Q9NRS4	TMPRSS4	Q9NRS4	45	472	Transmembrane protease serine 4 (EC 3.4.21.-) (Channel-activ	
 Q9NRS6	human	Q9NRS6	SNX15	Q9NRS6	6	53	Sorting nexin-15	
 Q9NRU3	human	Q9NRU3	CNNM1	Q9NRU3	8	78	Metal transporter CNNM1 (Ancient conserved domain-containing	
-Q9NRV9	human	Q9NRV9	HEBP1	Q9NRV9	1	76	Heme-binding protein 1 (p22HBP)	
+Q9NRV9	human	Q9NRV9	HEBP1	Q9NRV9	13	88	Heme-binding protein 1 (p22HBP)	
 Q9NRW1	human	Q9NRW1	RAB6B	Q9NRW1	82	378	Ras-related protein Rab-6B (EC 3.6.5.2)	
 Q9NRW3	human	Q9NRW3	APOBEC3C	Q9NRW3	14	308	DNA dC->dU-editing enzyme APOBEC-3C (A3C) (EC 3.5.4.38) (APO	
 Q9NRW4	human	Q9NRW4	DUSP22	Q9NRW4	27	201	Dual specificity protein phosphatase 22 (EC 3.1.3.16) (EC 3.	
 Q9NRW7	human	Q9NRW7	VPS45	Q9NRW7	28	253	Vacuolar protein sorting-associated protein 45 (h-VPS45) (hl	
 Q9NRX1	human	Q9NRX1	PNO1	Q9NRX1	29	264	RNA-binding protein PNO1 (Partner of NOB1)	
-Q9NRX2	human	Q9NRX2	MRPL17	Q9NRX2	42	530	Large ribosomal subunit protein bL17m (39S ribosomal protein	
+Q9NRX2	human	Q9NRX2	MRPL17	Q9NRX2	43	530	Large ribosomal subunit protein bL17m (39S ribosomal protein	
 Q9NRX3	human	Q9NRX3	COXFA4L2	Q9NRX3	26	124	Cytochrome c oxidase hypoxia associated subunit FA4L2 (NADH 	
 Q9NRX4	human	Q9NRX4	PHPT1	Q9NRX4	15	151	14 kDa phosphohistidine phosphatase (EC 3.9.1.3) (Phosphohis	
 Q9NRX5	human	Q9NRX5	SERINC1	Q9NRX5	3	113	Serine incorporator 1 (Tumor differentially expressed protei	
@@ -901,14 +925,14 @@ Q9NRX6	human	Q9NRX6	TMEM167B	Q9NRX6	14	67	Protein kish-B (Transmembrane protein 
 Q9NRY2	human	Q9NRY2	INIP	Q9NRY2	6	59	SOSS complex subunit C (INTS3- and NABP-interacting protein)	
 Q9NRY4	human	Q9NRY4	ARHGAP35	Q9NRY4	40	252	Rho GTPase-activating protein 35 (Glucocorticoid receptor DN	
 Q9NRY5	human	Q9NRY5	FAM114A2	Q9NRY5	15	119	Protein FAM114A2	
-Q9NRY6	human	Q9NRY6	PLSCR3	Q9NRY6	1	90	Phospholipid scramblase 3 (PL scramblase 3) (Ca(2+)-dependen	
+Q9NRY6	human	Q9NRY6	PLSCR3	Q9NRY6	2	91	Phospholipid scramblase 3 (PL scramblase 3) (Ca(2+)-dependen	
 Q9NRY7	human	Q9NRY7	PLSCR2	Q9NRY7	1	26	Phospholipid scramblase 2 (PL scramblase 2) (Ca(2+)-dependen	
-Q9NRZ5	human	Q9NRZ5	AGPAT4	Q9NRZ5	4	91	1-acyl-sn-glycerol-3-phosphate acyltransferase delta (EC 2.3	
+Q9NRZ5	human	Q9NRZ5	AGPAT4	Q9NRZ5	6	93	1-acyl-sn-glycerol-3-phosphate acyltransferase delta (EC 2.3	
 Q9NRZ7	human	Q9NRZ7	AGPAT3	Q9NRZ7	9	123	1-acyl-sn-glycerol-3-phosphate acyltransferase gamma (EC 2.3	
 Q9NRZ9	human	Q9NRZ9	HELLS	Q9NRZ9	6	243	Lymphoid-specific helicase (LSH) (EC 3.6.4.-) (Proliferation	
 Q9NS00	human	Q9NS00	C1GALT1	Q9NS00	7	127	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	
 Q9NS15	human	Q9NS15	LTBP3	Q9NS15	12	94	Latent-transforming growth factor beta-binding protein 3 (LT	
-Q9NS18	human	Q9NS18	GLRX2	Q9NS18	7	81	Glutaredoxin-2, mitochondrial	
+Q9NS18	human	Q9NS18	GLRX2	Q9NS18	10	84	Glutaredoxin-2, mitochondrial	
 Q9NS23	human	Q9NS23	RASSF1	Q9NS23	27	247	Ras association domain-containing protein 1	
 Q9NS25	human	Q9NS25	SPANXB1	Q9NS25	15	85	Sperm protein associated with the nucleus on the X chromosom	
 Q9NS26	human	Q9NS26	SPANXA1	Q9NS26	19	92	Sperm protein associated with the nucleus on the X chromosom	
@@ -923,7 +947,7 @@ Q9NS64	human	Q9NS64	RPRM	Q9NS64	44	188	Protein reprimo
 Q9NS66	human	Q9NS66	GPR173	Q9NS66	1	100	Probable G protein-coupled receptor 173 (Super conserved rec	
 Q9NS67	human	Q9NS67	GPR27	Q9NS67	1	36	Probable G protein-coupled receptor 27 (Super conserved rece	
 Q9NS68	human	Q9NS68	TNFRSF19	Q9NS68	13	93	Tumor necrosis factor receptor superfamily member 19 (TRADE)	
-Q9NS69	human	Q9NS69	TOMM22	Q9NS69	30	399	Mitochondrial import receptor subunit TOM22 homolog (hTom22)	
+Q9NS69	human	Q9NS69	TOMM22	Q9NS69	34	403	Mitochondrial import receptor subunit TOM22 homolog (hTom22)	
 Q9NS71	human	Q9NS71	GKN1	Q9NS71	8	69	Gastrokine-1 (18 kDa antrum mucosa protein) (AMP-18) (Protei	
 Q9NS73	human	Q9NS73	MBIP	Q9NS73	26	186	MAP3K12-binding inhibitory protein 1 (MAPK upstream kinase-b	
 Q9NS75	human	Q9NS75	CYSLTR2	Q9NS75	15	186	Cysteinyl leukotriene receptor 2 (CysLTR2) (G protein-couple	
@@ -973,7 +997,7 @@ Q9NT62	human	Q9NT62	ATG3	Q9NT62	31	331	Ubiquitin-like-conjugating enzyme ATG3 (E
 Q9NT68	human	Q9NT68	TENM2	Q9NT68	1	11	Teneurin-2 (Ten-2) (Protein Odd Oz/ten-m homolog 2) (Tenasci	
 Q9NT99	human	Q9NT99	LRRC4B	Q9NT99	17	90	Leucine-rich repeat-containing protein 4B (Netrin-G3 ligand)	
 Q9NTG1	human	Q9NTG1	PKDREJ	Q9NTG1	0	11	Polycystin family receptor for egg jelly (PKD and REJ homolo	
-Q9NTG7	human	Q9NTG7	SIRT3	Q9NTG7	126	497	NAD-dependent protein deacetylase sirtuin-3, mitochondrial (	
+Q9NTG7	human	Q9NTG7	SIRT3	Q9NTG7	134	504	NAD-dependent protein deacetylase sirtuin-3, mitochondrial (	
 Q9NTI2	human	Q9NTI2	ATP8A2	Q9NTI2	7	69	Phospholipid-transporting ATPase IB (EC 7.6.2.1) (ATPase cla	
 Q9NTI5	human	Q9NTI5	PDS5B	Q9NTI5	28	325	Sister chromatid cohesion protein PDS5 homolog B (Androgen-i	
 Q9NTI7	human	Q9NTI7	INKA2	Q9NTI7	10	41	PAK4-inhibitor INKA2 (Induced in neural crest by AP2-alpha p	
@@ -989,18 +1013,18 @@ Q9NTQ9	human	Q9NTQ9	GJB4	Q9NTQ9	2	133	Gap junction beta-4 protein (Connexin-30.3
 Q9NTU4	human	Q9NTU4	CATSPERZ	Q9NTU4	7	72	Cation channel sperm-associated auxiliary subunit zeta (CatS	
 Q9NTU7	human	Q9NTU7	CBLN4	Q9NTU7	24	374	Cerebellin-4 (Cerebellin-like glycoprotein 1)	
 Q9NTW7	human	Q9NTW7	ZFP64	Q9NTW7	2	52	Zinc finger protein 64 (Zfp-64) (Zinc finger protein 338)	
-Q9NTX5	human	Q9NTX5	ECHDC1	Q9NTX5	2	178	Ethylmalonyl-CoA decarboxylase (EC 4.1.1.94) (Enoyl-CoA hydr	
+Q9NTX5	human	Q9NTX5	ECHDC1	Q9NTX5	4	180	Ethylmalonyl-CoA decarboxylase (EC 4.1.1.94) (Enoyl-CoA hydr	
 Q9NTX7	human	Q9NTX7	RNF146	Q9NTX7	24	131	E3 ubiquitin-protein ligase RNF146 (EC 2.3.2.27) (Dactylidin	
 Q9NTX9	human	Q9NTX9	FAM217B	Q9NTX9	6	51	Protein FAM217B	
 Q9NTZ6	human	Q9NTZ6	RBM12	Q9NTZ6	10	144	RNA-binding protein 12 (RNA-binding motif protein 12) (SH3/W	
 Q9NU02	human	Q9NU02	ANKEF1	Q9NU02	0	43	Ankyrin repeat and EF-hand domain-containing protein 1 (Anky	
 Q9NU19	human	Q9NU19	TBC1D22B	Q9NU19	41	335	TBC1 domain family member 22B	
-Q9NU23	human	Q9NU23	LYRM2	Q9NU23	10	73	LYR motif-containing protein 2	
+Q9NU23	human	Q9NU23	LYRM2	Q9NU23	22	85	LYR motif-containing protein 2	
 Q9NU39	human	Q9NU39	FOXD4L1	Q9NU39	73	382	Forkhead box protein D4-like 1 (FOXD4-like 1)	
 Q9NU53	human	Q9NU53	GINM1	Q9NU53	14	93	Glycoprotein integral membrane protein 1	
 Q9NU63	human	Q9NU63	ZFP57	Q9NU63	3	37	Zinc finger protein 57 homolog (Zfp-57) (Zinc finger protein	
 Q9NUA8	human	Q9NUA8	ZBTB40	Q9NUA8	5	41	Zinc finger and BTB domain-containing protein 40	
-Q9NUB1	human	Q9NUB1	ACSS1	Q9NUB1	4	93	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	
+Q9NUB1	human	Q9NUB1	ACSS1	Q9NUB1	14	103	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	
 Q9NUB4	human	Q9NUB4	C20orf141	Q9NUB4	2	23	Uncharacterized protein C20orf141	
 Q9NUC0	human	Q9NUC0	SERTAD4	Q9NUC0	7	32	SERTA domain-containing protein 4	
 Q9NUD5	human	Q9NUD5	ZCCHC3	Q9NUD5	8	192	Zinc finger CCHC domain-containing protein 3	
@@ -1011,13 +1035,13 @@ Q9NUG4	human	Q9NUG4	CCM2L	Q9NUG4	1	9	Cerebral cavernous malformations 2 protein-
 Q9NUG6	human	Q9NUG6	PDRG1	Q9NUG6	9	191	p53 and DNA damage-regulated protein 1	
 Q9NUH8	human	Q9NUH8	TMEM14B	Q9NUH8	7	304	Transmembrane protein 14B	
 Q9NUI1	human	Q9NUI1	DECR2	Q9NUI1	6	103	Peroxisomal 2,4-dienoyl-CoA reductase [(3E)-enoyl-CoA-produc	
-Q9NUJ1	human	Q9NUJ1	ABHD10	Q9NUJ1	8	186	Palmitoyl-protein thioesterase ABHD10, mitochondrial (EC 3.1	
+Q9NUJ1	human	Q9NUJ1	ABHD10	Q9NUJ1	13	192	Palmitoyl-protein thioesterase ABHD10, mitochondrial (EC 3.1	
 Q9NUJ3	human	Q9NUJ3	TCP11L1	Q9NUJ3	7	102	T-complex protein 11-like protein 1	
 Q9NUJ7	human	Q9NUJ7	PLCXD1	Q9NUJ7	2	26	PI-PLC X domain-containing protein 1	
 Q9NUK0	human	Q9NUK0	MBNL3	Q9NUK0	0	36	Muscleblind-like protein 3 (Cys3His CCG1-required protein) (	
 Q9NUL3	human	Q9NUL3	STAU2	Q9NUL3	25	278	Double-stranded RNA-binding protein Staufen homolog 2	
 Q9NUL5	human	Q9NUL5	SHFL	Q9NUL5	1	141	Shiftless antiviral inhibitor of ribosomal frameshifting pro	
-Q9NUL7	human	Q9NUL7	DDX28	Q9NUL7	15	281	Probable ATP-dependent RNA helicase DDX28 (EC 3.6.4.13) (Mit	
+Q9NUL7	human	Q9NUL7	DDX28	Q9NUL7	19	285	Probable ATP-dependent RNA helicase DDX28 (EC 3.6.4.13) (Mit	
 Q9NUM3	human	Q9NUM3	SLC39A9	Q9NUM3	5	159	Zinc transporter ZIP9 (Solute carrier family 39 member 9) (Z	
 Q9NUM4	human	Q9NUM4	TMEM106B	Q9NUM4	18	392	Transmembrane protein 106B	
 Q9NUN5	human	Q9NUN5	LMBRD1	Q9NUN5	12	106	Lysosomal cobalamin transport escort protein LMBD1 (LMBD1) (	
@@ -1025,7 +1049,7 @@ Q9NUN7	human	Q9NUN7	ACER3	Q9NUN7	3	54	Alkaline ceramidase 3 (AlkCDase 3) (Alkali
 Q9NUP1	human	Q9NUP1	BLOC1S4	Q9NUP1	13	41	Biogenesis of lysosome-related organelles complex 1 subunit 	
 Q9NUP7	human	Q9NUP7	TRMT13	Q9NUP7	2	68	tRNA:m(4)X modification enzyme TRM13 homolog (EC 2.1.1.225) 	
 Q9NUP9	human	Q9NUP9	LIN7C	Q9NUP9	26	189	Protein lin-7 homolog C (Lin-7C) (Mammalian lin-seven protei	
-Q9NUQ2	human	Q9NUQ2	AGPAT5	Q9NUQ2	4	109	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon (EC 2	
+Q9NUQ2	human	Q9NUQ2	AGPAT5	Q9NUQ2	8	113	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon (EC 2	
 Q9NUQ3	human	Q9NUQ3	TXLNG	Q9NUQ3	29	105	Gamma-taxilin (Environmental lipopolysaccharide-responding g	
 Q9NUQ6	human	Q9NUQ6	SPATS2L	Q9NUQ6	10	136	SPATS2-like protein (DNA polymerase-transactivated protein 6	
 Q9NUQ7	human	Q9NUQ7	UFSP2	Q9NUQ7	15	150	Ufm1-specific protease 2 (UfSP2) (EC 3.4.22.-)	
@@ -1059,7 +1083,7 @@ Q9NV79	human	Q9NV79	PCMTD2	Q9NV79	8	46	Protein-L-isoaspartate O-methyltransferas
 Q9NV88	human	Q9NV88	INTS9	Q9NV88	26	356	Integrator complex subunit 9 (Int9) (Protein related to CPSF	
 Q9NV92	human	Q9NV92	NDFIP2	Q9NV92	11	80	NEDD4 family-interacting protein 2 (NEDD4 WW domain-binding 	
 Q9NV96	human	Q9NV96	CDC50A	Q9NV96	22	216	Cell cycle control protein 50A (P4-ATPase flippase complex b	
-Q9NVA1	human	Q9NVA1	UQCC1	Q9NVA1	13	123	Ubiquinol-cytochrome c reductase complex assembly factor 1 (	
+Q9NVA1	human	Q9NVA1	UQCC1	Q9NVA1	18	128	Ubiquinol-cytochrome c reductase complex assembly factor 1 (	
 Q9NVA2	human	Q9NVA2	SEPTIN11	Q9NVA2	18	231	Septin-11	
 Q9NVA4	human	Q9NVA4	TMEM184C	Q9NVA4	2	80	Transmembrane protein 184C (Transmembrane protein 34)	
 Q9NVC3	human	Q9NVC3	SLC38A7	Q9NVC3	9	115	Sodium-coupled neutral amino acid transporter 7 (Solute carr	
@@ -1072,7 +1096,7 @@ Q9NVE7	human	Q9NVE7	PANK4	Q9NVE7	2	118	4'-phosphopantetheine phosphatase (EC 3.1
 Q9NVF7	human	Q9NVF7	FBXO28	Q9NVF7	44	129	F-box only protein 28	
 Q9NVF9	human	Q9NVF9	ETNK2	Q9NVF9	3	47	Ethanolamine kinase 2 (EKI 2) (EC 2.7.1.82) (Ethanolamine ki	
 Q9NVG8	human	Q9NVG8	TBC1D13	Q9NVG8	1	55	TBC1 domain family member 13	
-Q9NVH0	human	Q9NVH0	EXD2	Q9NVH0	25	382	Exonuclease 3'-5' domain-containing protein 2 (EC 3.1.11.1) 	
+Q9NVH0	human	Q9NVH0	EXD2	Q9NVH0	26	383	Exonuclease 3'-5' domain-containing protein 2 (EC 3.1.11.1) 	
 Q9NVH1	human	Q9NVH1	DNAJC11	Q9NVH1	8	279	DnaJ homolog subfamily C member 11	
 Q9NVH2	human	Q9NVH2	INTS7	Q9NVH2	39	309	Integrator complex subunit 7 (Int7)	
 Q9NVH6	human	Q9NVH6	TMLHE	Q9NVH6	2	89	Trimethyllysine dioxygenase, mitochondrial (EC 1.14.11.8) (E	
@@ -1096,14 +1120,14 @@ Q9NVR0	human	Q9NVR0	KLHL11	Q9NVR0	26	163	Kelch-like protein 11
 Q9NVR2	human	Q9NVR2	INTS10	Q9NVR2	22	264	Integrator complex subunit 10 (Int10)	
 Q9NVR5	human	Q9NVR5	DNAAF2	Q9NVR5	18	169	Protein kintoun (Dynein assembly factor 2, axonemal)	
 Q9NVR7	human	Q9NVR7	TBCCD1	Q9NVR7	7	70	TBCC domain-containing protein 1	
-Q9NVS2	human	Q9NVS2	MRPS18A	Q9NVS2	20	334	Large ribosomal subunit protein mL66 (39S ribosomal protein 	
-Q9NVS9	human	Q9NVS9	PNPO	Q9NVS9	5	67	Pyridoxine-5'-phosphate oxidase (EC 1.4.3.5) (Pyridoxamine-p	
+Q9NVS2	human	Q9NVS2	MRPS18A	Q9NVS2	21	335	Large ribosomal subunit protein mL66 (39S ribosomal protein 	
+Q9NVS9	human	Q9NVS9	PNPO	Q9NVS9	6	68	Pyridoxine-5'-phosphate oxidase (EC 1.4.3.5) (Pyridoxamine-p	
 Q9NVT9	human	Q9NVT9	ARMC1	Q9NVT9	14	109	Armadillo repeat-containing protein 1	
 Q9NVU0	human	Q9NVU0	POLR3E	Q9NVU0	24	326	DNA-directed RNA polymerase III subunit RPC5 (RNA polymerase	
 Q9NVU7	human	Q9NVU7	SDAD1	Q9NVU7	44	609	Protein SDA1 homolog (Nucleolar protein 130) (SDA1 domain-co	
 Q9NVV0	human	Q9NVV0	TMEM38B	Q9NVV0	5	87	Trimeric intracellular cation channel type B (TRIC-B) (TRICB	
 Q9NVV2	human	Q9NVV2	C19orf73	Q9NVV2	2	23	Putative uncharacterized protein C19orf73	
-Q9NVV4	human	Q9NVV4	MTPAP	Q9NVV4	11	139	Poly(A) RNA polymerase, mitochondrial (PAP) (EC 2.7.7.19) (P	
+Q9NVV4	human	Q9NVV4	MTPAP	Q9NVV4	19	147	Poly(A) RNA polymerase, mitochondrial (PAP) (EC 2.7.7.19) (P	
 Q9NVV5	human	Q9NVV5	AIG1	Q9NVV5	4	85	Androgen-induced gene 1 protein (AIG-1) (Fatty acid esters o	
 Q9NVV9	human	Q9NVV9	THAP1	Q9NVV9	65	547	THAP domain-containing protein 1	
 Q9NVW2	human	Q9NVW2	RLIM	Q9NVW2	40	213	E3 ubiquitin-protein ligase RLIM (EC 2.3.2.27) (LIM domain-i	
@@ -1120,7 +1144,7 @@ Q9NW61	human	Q9NW61	PLEKHJ1	Q9NW61	12	65	Pleckstrin homology domain-containing f
 Q9NW64	human	Q9NW64	RBM22	Q9NW64	32	309	Pre-mRNA-splicing factor RBM22 (RNA-binding motif protein 22	
 Q9NW68	human	Q9NW68	BSDC1	Q9NW68	7	35	BSD domain-containing protein 1	
 Q9NW75	human	Q9NW75	GPATCH2	Q9NW75	16	65	G patch domain-containing protein 2	
-Q9NW81	human	Q9NW81	DMAC2	Q9NW81	32	371	Distal membrane-arm assembly complex protein 2 (ATP synthase	
+Q9NW81	human	Q9NW81	DMAC2	Q9NW81	34	373	Distal membrane-arm assembly complex protein 2 (ATP synthase	
 Q9NW82	human	Q9NW82	WDR70	Q9NW82	31	314	WD repeat-containing protein 70	
 Q9NW97	human	Q9NW97	TMEM51	Q9NW97	19	117	Transmembrane protein 51	
 Q9NWA0	human	Q9NWA0	MED9	Q9NWA0	23	339	Mediator of RNA polymerase II transcription subunit 9 (Media	
@@ -1149,14 +1173,14 @@ Q9NWR8	human	Q9NWR8	MCUB	Q9NWR8	5	225	Calcium uniporter regulatory subunit MCUb,
 Q9NWS0	human	Q9NWS0	PIH1D1	Q9NWS0	75	738	PIH1 domain-containing protein 1 (Nucleolar protein 17 homol	
 Q9NWS1	human	Q9NWS1	PARPBP	Q9NWS1	5	37	PCNA-interacting partner (PARI) (PARP-1 binding protein) (PA	
 Q9NWS6	human	Q9NWS6	SIRAL2	Q9NWS6	18	150	SIR2 antiphage-like protein 2 (Protein FAM118A)	
-Q9NWS8	human	Q9NWS8	RMND1	Q9NWS8	9	186	Required for meiotic nuclear division protein 1 homolog	
+Q9NWS8	human	Q9NWS8	RMND1	Q9NWS8	17	194	Required for meiotic nuclear division protein 1 homolog	
 Q9NWS9	human	Q9NWS9	ZNF446	Q9NWS9	98	422	Zinc finger protein 446 (Zinc finger protein with KRAB and S	
 Q9NWT1	human	Q9NWT1	PAK1IP1	Q9NWT1	41	316	p21-activated protein kinase-interacting protein 1 (PAK/PLC-	
 Q9NWT6	human	Q9NWT6	HIF1AN	Q9NWT6	43	378	Hypoxia-inducible factor 1-alpha inhibitor (EC 1.14.11.30) (	
 Q9NWT8	human	Q9NWT8	AURKAIP1	Q9NWT8	36	373	Small ribosomal subunit protein bS22, mitochondrial (28S rib	
 Q9NWU1	human	Q9NWU1	OXSM	Q9NWU1	3	85	3-oxoacyl-[acyl-carrier-protein] synthase, mitochondrial (EC	
 Q9NWU2	human	Q9NWU2	GID8	Q9NWU2	22	167	Glucose-induced degradation protein 8 homolog (Two hybrid-as	
-Q9NWU5	human	Q9NWU5	MRPL22	Q9NWU5	48	645	Large ribosomal subunit protein uL22m (39S ribosomal protein	
+Q9NWU5	human	Q9NWU5	MRPL22	Q9NWU5	51	648	Large ribosomal subunit protein uL22m (39S ribosomal protein	
 Q9NWV4	human	Q9NWV4	CZIB	Q9NWV4	11	111	CXXC motif containing zinc binding protein (UPF0587 protein 	
 Q9NWV8	human	Q9NWV8	BABAM1	Q9NWV8	18	141	BRISC and BRCA1-A complex member 1 (Mediator of RAP80 intera	
 Q9NWW0	human	Q9NWW0	HCFC1R1	Q9NWW0	4	67	Host cell factor C1 regulator 1 (HCF-1 beta-propeller-intera	
@@ -1165,7 +1189,7 @@ Q9NWW6	human	Q9NWW6	NMRK1	Q9NWW6	3	65	Nicotinamide riboside kinase 1 (NRK 1) (Nm
 Q9NWW7	human	Q9NWW7	C2orf42	Q9NWW7	1	18	Uncharacterized protein C2orf42	
 Q9NWW9	human	Q9NWW9	PLAAT2	Q9NWW9	5	86	Phospholipase A and acyltransferase 2 (EC 2.3.1.-) (EC 3.1.1	
 Q9NWX5	human	Q9NWX5	ASB6	Q9NWX5	20	199	Ankyrin repeat and SOCS box protein 6 (ASB-6)	
-Q9NWX6	human	Q9NWX6	THG1L	Q9NWX6	2	66	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (Induce	
+Q9NWX6	human	Q9NWX6	THG1L	Q9NWX6	3	67	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (Induce	
 Q9NWY4	human	Q9NWY4	HPF1	Q9NWY4	10	102	Histone PARylation factor 1	
 Q9NWZ3	human	Q9NWZ3	IRAK4	Q9NWZ3	244	1371	Interleukin-1 receptor-associated kinase 4 (IRAK-4) (EC 2.7.	
 Q9NWZ5	human	Q9NWZ5	UCKL1	Q9NWZ5	8	137	Uridine-cytidine kinase-like 1 (EC 2.7.1.48)	
@@ -1179,32 +1203,32 @@ Q9NX07	human	Q9NX07	TRNAU1AP	Q9NX07	10	138	tRNA selenocysteine 1-associated prot
 Q9NX08	human	Q9NX08	COMMD8	Q9NX08	15	233	COMM domain-containing protein 8	
 Q9NX09	human	Q9NX09	DDIT4	Q9NX09	10	118	DNA damage-inducible transcript 4 protein (HIF-1 responsive 	
 Q9NX14	human	Q9NX14	NDUFB11	Q9NX14	29	197	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	
-Q9NX18	human	Q9NX18	SDHAF2	Q9NX18	6	111	Succinate dehydrogenase assembly factor 2, mitochondrial (SD	
-Q9NX20	human	Q9NX20	MRPL16	Q9NX20	34	524	Large ribosomal subunit protein uL16m (39S ribosomal protein	
+Q9NX18	human	Q9NX18	SDHAF2	Q9NX18	8	113	Succinate dehydrogenase assembly factor 2, mitochondrial (SD	
+Q9NX20	human	Q9NX20	MRPL16	Q9NX20	37	526	Large ribosomal subunit protein uL16m (39S ribosomal protein	
 Q9NX24	human	Q9NX24	NHP2	Q9NX24	25	489	H/ACA ribonucleoprotein complex subunit 2 (Nucleolar protein	
 Q9NX31	human	Q9NX31	OSER1	Q9NX31	4	24	Oxidative stress-responsive serine-rich protein 1 (Oxidative	
-Q9NX36	human	Q9NX36	DNAJC28	Q9NX36	16	118	DnaJ homolog subfamily C member 28	
+Q9NX36	human	Q9NX36	DNAJC28	Q9NX36	18	120	DnaJ homolog subfamily C member 28	
 Q9NX38	human	Q9NX38	ABITRAM	Q9NX38	2	44	Protein Abitram (Actin-binding transcription modulator) (Pro	
-Q9NX40	human	Q9NX40	OCIAD1	Q9NX40	41	404	OCIA domain-containing protein 1 (Ovarian cancer immunoreact	
+Q9NX40	human	Q9NX40	OCIAD1	Q9NX40	45	409	OCIA domain-containing protein 1 (Ovarian cancer immunoreact	
 Q9NX45	human	Q9NX45	SOHLH2	Q9NX45	34	376	Spermatogenesis- and oogenesis-specific basic helix-loop-hel	
 Q9NX46	human	Q9NX46	ADPRS	Q9NX46	5	65	ADP-ribosylhydrolase ARH3 (ADP-ribose glycohydrolase ARH3) (	
-Q9NX47	human	Q9NX47	MARCHF5	Q9NX47	14	227	E3 ubiquitin-protein ligase MARCHF5 (EC 2.3.2.27) (Membrane-	
+Q9NX47	human	Q9NX47	MARCHF5	Q9NX47	16	229	E3 ubiquitin-protein ligase MARCHF5 (EC 2.3.2.27) (Membrane-	
 Q9NX52	human	Q9NX52	RHBDL2	Q9NX52	7	43	Rhomboid-related protein 2 (RRP2) (EC 3.4.21.105) (Rhomboid-	
 Q9NX55	human	Q9NX55	HYPK	Q9NX55	14	197	Huntingtin-interacting protein K (Huntingtin yeast partner K	
 Q9NX57	human	Q9NX57	RAB20	Q9NX57	23	100	Ras-related protein Rab-20 (EC 3.6.5.2)	
 Q9NX58	human	Q9NX58	LYAR	Q9NX58	126	742	Cell growth-regulating nucleolar protein	
 Q9NX61	human	Q9NX61	TMEM161A	Q9NX61	10	112	Transmembrane protein 161A (Adaptive response to oxidative s	
 Q9NX62	human	Q9NX62	BPNT2	Q9NX62	3	76	Golgi-resident adenosine 3',5'-bisphosphate 3'-phosphatase (	
-Q9NX63	human	Q9NX63	CHCHD3	Q9NX63	20	252	MICOS complex subunit MIC19 (Coiled-coil-helix-coiled-coil-h	
+Q9NX63	human	Q9NX63	CHCHD3	Q9NX63	21	253	MICOS complex subunit MIC19 (Coiled-coil-helix-coiled-coil-h	
 Q9NX65	human	Q9NX65	ZSCAN32	Q9NX65	37	55	Zinc finger and SCAN domain-containing protein 32 (Human cer	
 Q9NX70	human	Q9NX70	MED29	Q9NX70	12	577	Mediator of RNA polymerase II transcription subunit 29 (Inte	
-Q9NX74	human	Q9NX74	DUS2	Q9NX74	4	58	tRNA-dihydrouridine(20) synthase [NAD(P)+]-like (EC 1.3.1.91	
+Q9NX74	human	Q9NX74	DUS2	Q9NX74	8	62	tRNA-dihydrouridine(20) synthase [NAD(P)+]-like (EC 1.3.1.91	
 Q9NX76	human	Q9NX76	CMTM6	Q9NX76	49	229	CKLF-like MARVEL transmembrane domain-containing protein 6 (	
 Q9NX77	human	Q9NX77	ERVK13-1	Q9NX77	0	11	Endogenous retrovirus group K member 13-1 Env polyprotein (E	
 Q9NX78	human	Q9NX78	TMEM260	Q9NX78	17	72	Protein O-mannosyl-transferase TMEM260 (EC 2.4.1.109) (Trans	
 Q9NX94	human	Q9NX94	WBP1L	Q9NX94	9	36	WW domain binding protein 1-like (Outcome predictor in acute	
 Q9NX95	human	Q9NX95	SYBU	Q9NX95	19	55	Syntabulin (Golgi-localized syntaphilin-related protein) (Sy	
-Q9NXA8	human	Q9NXA8	SIRT5	Q9NXA8	28	139	NAD-dependent protein deacylase sirtuin-5, mitochondrial (EC	
+Q9NXA8	human	Q9NXA8	SIRT5	Q9NXA8	38	148	NAD-dependent protein deacylase sirtuin-5, mitochondrial (EC	
 Q9NXB0	human	Q9NXB0	MKS1	Q9NXB0	12	134	Tectonic-like complex member MKS1 (Meckel syndrome type 1 pr	
 Q9NXB9	human	Q9NXB9	ELOVL2	Q9NXB9	4	85	Very long chain fatty acid elongase 2 (EC 2.3.1.199) (3-keto	
 Q9NXC2	human	Q9NXC2	GFOD1	Q9NXC2	4	86	Glucose-fructose oxidoreductase domain-containing protein 1 	
@@ -1288,11 +1312,11 @@ Q9NYG5	human	Q9NYG5	ANAPC11	Q9NYG5	17	314	Anaphase-promoting complex subunit 11 
 Q9NYG8	human	Q9NYG8	KCNK4	Q9NYG8	21	77	Potassium channel subfamily K member 4 (TWIK-related arachid	
 Q9NYH9	human	Q9NYH9	UTP6	Q9NYH9	66	473	U3 small nucleolar RNA-associated protein 6 homolog (Hepatoc	
 Q9NYI0	human	Q9NYI0	PSD3	Q9NYI0	22	113	PH and SEC7 domain-containing protein 3 (Epididymis tissue p	
-Q9NYJ1	human	Q9NYJ1	COA4	Q9NYJ1	9	66	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	
+Q9NYJ1	human	Q9NYJ1	COA4	Q9NYJ1	11	67	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	
 Q9NYJ7	human	Q9NYJ7	DLL3	Q9NYJ7	6	57	Delta-like protein 3 (Drosophila Delta homolog 3) (Delta3)	
 Q9NYJ8	human	Q9NYJ8	TAB2	Q9NYJ8	52	291	TGF-beta-activated kinase 1 and MAP3K7-binding protein 2 (Mi	
 Q9NYK1	human	Q9NYK1	TLR7	Q9NYK1	6	76	Toll-like receptor 7	
-Q9NYK5	human	Q9NYK5	MRPL39	Q9NYK5	43	271	Large ribosomal subunit protein mL39 (39S ribosomal protein 	
+Q9NYK5	human	Q9NYK5	MRPL39	Q9NYK5	50	278	Large ribosomal subunit protein mL39 (39S ribosomal protein 	
 Q9NYK6	human	Q9NYK6	EURL	Q9NYK6	4	20	Protein EURL homolog	
 Q9NYL2	human	Q9NYL2	MAP3K20	Q9NYL2	17	146	Mitogen-activated protein kinase kinase kinase 20 (EC 2.7.11	
 Q9NYL4	human	Q9NYL4	FKBP11	Q9NYL4	10	98	Peptidyl-prolyl cis-trans isomerase FKBP11 (PPIase FKBP11) (	
@@ -1305,8 +1329,8 @@ Q9NYP3	human	Q9NYP3	DONSON	Q9NYP3	33	422	Protein downstream neighbor of Son (B17
 Q9NYP7	human	Q9NYP7	ELOVL5	Q9NYP7	13	384	Very long chain fatty acid elongase 5 (EC 2.3.1.199) (3-keto	
 Q9NYP8	human	Q9NYP8	EPCIP	Q9NYP8	6	54	Exosomal polycystin-1-interacting protein (B37) (Polycystin-	
 Q9NYP9	human	Q9NYP9	MIS18A	Q9NYP9	35	249	Protein Mis18-alpha (FAPP1-associated protein 1)	
-Q9NYQ2	mus-musculus	Q9NYQ2	Hao2	Q9NYQ2	1	13	2-Hydroxyacid oxidase 2	
-Q9NYQ3	human	Q9NYQ3	HAO2	Q9NYQ3	3	58	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	
+Q9NYQ2	mus-musculus	Q9NYQ2	Hao2	Q9NYQ2	2	14	2-Hydroxyacid oxidase 2	
+Q9NYQ3	human	Q9NYQ3	HAO2	Q9NYQ3	4	59	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	
 Q9NYQ6	human	Q9NYQ6	CELSR1	Q9NYQ6	2	70	Cadherin EGF LAG seven-pass G-type receptor 1 (Cadherin fami	
 Q9NYQ7	human	Q9NYQ7	CELSR3	Q9NYQ7	0	10	Cadherin EGF LAG seven-pass G-type receptor 3 (Cadherin fami	
 Q9NYR8	human	Q9NYR8	RDH8	Q9NYR8	4	65	Retinol dehydrogenase 8 (EC 1.1.1.300) (Photoreceptor outer 	
@@ -1334,7 +1358,7 @@ Q9NYW8	human	Q9NYW8	RBAK	Q9NYW8	4	173	RB-associated KRAB zinc finger protein (RB
 Q9NYX4	human	Q9NYX4	CALY	Q9NYX4	30	112	Neuron-specific vesicular protein calcyon	
 Q9NYY1	human	Q9NYY1	IL20	Q9NYY1	13	118	Interleukin-20 (IL-20) (Cytokine Zcyto10)	
 Q9NYY3	human	Q9NYY3	PLK2	Q9NYY3	93	1302	Serine/threonine-protein kinase PLK2 (EC 2.7.11.21) (Polo-li	
-Q9NYY8	human	Q9NYY8	FASTKD2	Q9NYY8	20	282	FAST kinase domain-containing protein 2, mitochondrial	
+Q9NYY8	human	Q9NYY8	FASTKD2	Q9NYY8	25	287	FAST kinase domain-containing protein 2, mitochondrial	
 Q9NYZ1	human	Q9NYZ1	TVP23B	Q9NYZ1	2	56	Golgi apparatus membrane protein TVP23 homolog B	
 Q9NYZ2	human	Q9NYZ2	SLC25A37	Q9NYZ2	0	44	Mitoferrin-1 (Mitochondrial iron transporter 1) (Mitochondri	
 Q9NYZ3	human	Q9NYZ3	GTSE1	Q9NYZ3	38	335	G2 and S phase-expressed protein 1 (GTSE-1) (Protein B99 hom	
@@ -1348,7 +1372,7 @@ Q9NZ38	human	Q9NZ38	IDI2-AS1	Q9NZ38	0	1	Uncharacterized protein IDI2-AS1 (IDI2 a
 Q9NZ42	fly	PEN2_HUMAN	PEN2_HUMAN	Q9NZ42	0	2		
 Q9NZ42	human	Q9NZ42	PSENEN	Q9NZ42	8	151	Gamma-secretase subunit PEN-2 (Presenilin enhancer protein 2	
 Q9NZ43	human	Q9NZ43	USE1	Q9NZ43	53	194	Vesicle transport protein USE1 (Putative MAPK-activating pro	
-Q9NZ45	human	Q9NZ45	CISD1	Q9NZ45	5	142	CDGSH iron-sulfur domain-containing protein 1 (Cysteine tran	
+Q9NZ45	human	Q9NZ45	CISD1	Q9NZ45	9	146	CDGSH iron-sulfur domain-containing protein 1 (Cysteine tran	
 Q9NZ52	human	Q9NZ52	GGA3	Q9NZ52	38	158	ADP-ribosylation factor-binding protein GGA3 (Golgi-localize	
 Q9NZ53	human	Q9NZ53	PODXL2	Q9NZ53	23	113	Podocalyxin-like protein 2 (Endoglycan)	
 Q9NZ56	human	Q9NZ56	FMN2	Q9NZ56	16	87	Formin-2	
@@ -1359,7 +1383,7 @@ Q9NZ81	human	Q9NZ81	PRR13	Q9NZ81	14	179	Proline-rich protein 13 (Taxane-resistan
 Q9NZ94	human	Q9NZ94	NLGN3	Q9NZ94	27	197	Neuroligin-3 (Gliotactin homolog)	
 Q9NZA1	human	Q9NZA1	CLIC5	Q9NZA1	7	61	Chloride intracellular channel protein 5 (Glutaredoxin-like 	
 Q9NZB2	human	Q9NZB2	FAM120A	Q9NZB2	39	375	Constitutive coactivator of PPAR-gamma-like protein 1 (Oxida	
-Q9NZB8	human	Q9NZB8	MOCS1	Q9NZB8	5	131	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	
+Q9NZB8	human	Q9NZB8	MOCS1	Q9NZB8	8	135	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	
 Q9NZC2	human	Q9NZC2	TREM2	Q9NZC2	53	431	Triggering receptor expressed on myeloid cells 2 (TREM-2) (T	
 Q9NZC3	human	Q9NZC3	GDE1	Q9NZC3	8	112	Glycerophosphodiester phosphodiesterase 1 (Glycerophosphoino	
 Q9NZC4	human	Q9NZC4	EHF	Q9NZC4	47	363	ETS homologous factor (hEHF) (ETS domain-containing transcri	
@@ -1385,8 +1409,8 @@ Q9NZI7	human	Q9NZI7	UBP1	Q9NZI7	60	442	Upstream-binding protein 1 (Transcription
 Q9NZI8	human	Q9NZI8	IGF2BP1	Q9NZI8	21	490	Insulin-like growth factor 2 mRNA-binding protein 1 (IGF2 mR	
 Q9NZJ0	human	Q9NZJ0	DTL	Q9NZJ0	63	355	Denticleless protein homolog (DDB1- and CUL4-associated fact	
 Q9NZJ5	human	Q9NZJ5	EIF2AK3	Q9NZJ5	28	329	Eukaryotic translation initiation factor 2-alpha kinase 3 (E	
-Q9NZJ6	human	Q9NZJ6	COQ3	Q9NZJ6	9	172	Ubiquinone biosynthesis O-methyltransferase, mitochondrial (	
-Q9NZJ7	human	Q9NZJ7	MTCH1	Q9NZJ7	11	200	Mitochondrial carrier homolog 1 (Presenilin-associated prote	
+Q9NZJ6	human	Q9NZJ6	COQ3	Q9NZJ6	13	176	Ubiquinone biosynthesis O-methyltransferase, mitochondrial (	
+Q9NZJ7	human	Q9NZJ7	MTCH1	Q9NZJ7	13	202	Mitochondrial carrier homolog 1 (Presenilin-associated prote	
 Q9NZJ9	human	Q9NZJ9	NUDT4	Q9NZJ9	2	35	Diphosphoinositol polyphosphate phosphohydrolase 2 (DIPP-2) 	
 Q9NZK5	human	Q9NZK5	ADA2	Q9NZK5	2	41	Adenosine deaminase 2 (EC 3.5.4.4) (Cat eye syndrome critica	
 Q9NZK7	human	Q9NZK7	PLA2G2E	Q9NZK7	5	69	Group IIE secretory phospholipase A2 (GIIE sPLA2) (sPLA2-IIE	

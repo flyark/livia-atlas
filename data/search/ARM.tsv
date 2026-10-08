@@ -8,7 +8,7 @@ ARM-DOCKING	human	Q96NG3	ODAD4	Q96NG3	10	152	Outer dynein arm-docking complex su
 ARM-DOCKING	zebrafish	Q7ZU45	odad4	Q7ZU45	8	104	Outer dynein arm-docking complex subunit 4	w
 ARM-REPEAT	human	Q9UQB3	CTNND2	Q9UQB3	101	293	Catenin delta-2 (Delta-catenin) (GT24) (Neural plakophilin-r	w
 ARM1	schizosaccharomyces-pombe	Q9Y809	arm1	Q9Y809	2	7	N-terminal acetyltransferase B complex subunit arm1	
-ARM10_HUMAN	human	Q8N2F6	ARMC10	Q8N2F6	12	142		
+ARM10_HUMAN	human	Q8N2F6	ARMC10	Q8N2F6	20	150		
 ARM12_HUMAN	human	Q5T9G4	ARMC12	Q5T9G4	5	90		
 ARM2	human	Q9UK76	JPT1	Q9UK76	0	51		
 ARMADILLO	fly	FBgn0000117	arm	P18824	113	898	Armadillo segment polarity protein	w
@@ -23,23 +23,24 @@ ARMADILLO	human	Q5W041	ARMC3	Q5W041	8	129	Armadillo repeat-containing protein 3 
 ARMADILLO	human	Q6NXE6	ARMC6	Q6NXE6	11	190	Armadillo repeat-containing protein 6	w
 ARMADILLO	human	Q6P1M9	ARMCX5	Q6P1M9	2	53	Armadillo repeat-containing X-linked protein 5	w
 ARMADILLO	human	Q6SZW1	SARM1	Q6SZW1	6	143	NAD(+) hydrolase SARM1 (NADase SARM1) (hSARM1) (EC 3.2.2.6) 	w
-ARMADILLO	human	Q7L311	ARMCX2	Q7L311	5	64	Armadillo repeat-containing X-linked protein 2 (ARM protein 	w
+ARMADILLO	human	Q7L311	ARMCX2	Q7L311	15	75	Armadillo repeat-containing X-linked protein 2 (ARM protein 	w
 ARMADILLO	human	Q7Z3E5	ARMC9	Q7Z3E5	12	75	LisH domain-containing protein ARMC9 (Armadillo repeat-conta	w
 ARMADILLO	human	Q7Z5J8	ANKAR	Q7Z5J8	0	43	Ankyrin and armadillo repeat-containing protein	w
 ARMADILLO	human	Q8IUR7	ARMC8	Q8IUR7	61	291	Armadillo repeat-containing protein 8	w
-ARMADILLO	human	Q8N2F6	ARMC10	Q8N2F6	12	142	Armadillo repeat-containing protein 10 (Splicing variant inv	w
+ARMADILLO	human	Q8N2F6	ARMC10	Q8N2F6	20	150	Armadillo repeat-containing protein 10 (Splicing variant inv	w
 ARMADILLO	human	Q8NEN0	ARMC2	Q8NEN0	4	70	Armadillo repeat-containing protein 2	w
 ARMADILLO	human	Q96C12	ARMC5	Q96C12	9	234	Armadillo repeat-containing protein 5	w
 ARMADILLO	human	Q9H6L4	ARMC7	Q9H6L4	33	318	Armadillo repeat-containing protein 7	w
 ARMADILLO	human	Q9NVT9	ARMC1	Q9NVT9	14	109	Armadillo repeat-containing protein 1	w
-ARMADILLO	human	Q9P291	ARMCX1	Q9P291	11	79	Armadillo repeat-containing X-linked protein 1 (ARM protein 	w
-ARMADILLO	human	Q9UH62	ARMCX3	Q9UH62	22	174	Armadillo repeat-containing X-linked protein 3 (ARM protein 	w
+ARMADILLO	human	Q9P291	ARMCX1	Q9P291	19	87	Armadillo repeat-containing X-linked protein 1 (ARM protein 	w
+ARMADILLO	human	Q9UH62	ARMCX3	Q9UH62	28	180	Armadillo repeat-containing X-linked protein 3 (ARM protein 	w
 ARMADILLO	worm	A0A060Q600	CELE_F58D2.3	A0A060Q600	0	25	Armadillo repeat-containing protein 5	w
 ARMADILLO	worm	Q10953	wrm-1	Q10953	3	28	Armadillo repeat-containing protein wrm-1	w
 ARMADILLO	worm	Q9U1V2	CELE_Y67A10A.7	Q9U1V2	0	3	Armadillo repeat-containing domain-containing protein	w
 ARMADILLO	worm	Q9U210	CELE_Y57A10A.27	Q9U210	1	4	Armadillo repeat-containing protein 4	w
 ARMADILLO	worm	Q9XUU5	CELE_K05C4.7	Q9XUU5	1	5	Armadillo repeat-containing protein 1	w
 ARMADILLO	zebrafish	A0A0R4IWE3	armc10	A0A0R4IWE3	2	5	Armadillo repeat-containing 10	w
+ARMADILLO	zebrafish	A0A8M3AWJ8	armc10	A0A8M3AWJ8	5	5	armadillo repeat-containing protein 10	w
 ARMADILLO	zebrafish	E7F083	armc3	E7F083	12	143	Armadillo repeat-containing 3	w
 ARMADILLO	zebrafish	E7FB07	odad2	E7FB07	9	146	Armadillo repeat containing 4	w
 ARMADILLO	zebrafish	F1QBI9	armc2	F1QBI9	2	4	Armadillo repeat-containing 2	w
@@ -59,10 +60,13 @@ ARMC1	human	Q9NVT9	ARMC1	Q9NVT9	14	109	Armadillo repeat-containing protein 1
 ARMC1	mus-musculus	Q9D7A8	Armc1	Q9D7A8	2	6	Armadillo repeat-containing protein 1	
 ARMC1	rattus-norvegicus	B0BN83	Armc1	B0BN83	3	6	Armadillo repeat-containing protein 1	
 ARMC1	zebrafish	Q5PR58	armc1	Q5PR58	1	7	Armadillo repeat-containing protein 1	
-ARMC10	human	Q8N2F6	ARMC10	Q8N2F6	12	142	Armadillo repeat-containing protein 10 (Splicing variant inv	
-ARMC10	mus-musculus	Q9D0L7	Armc10	Q9D0L7	0	1	Armadillo repeat-containing protein 10	
-ARMC10	rattus-norvegicus	B1WBW4	Armc10	B1WBW4	0	2	Armadillo repeat-containing protein 10	
+ARMC10	human	Q8N2F6	ARMC10	Q8N2F6	20	150	Armadillo repeat-containing protein 10 (Splicing variant inv	
+ARMC10	mus-musculus	Q9D0L7	Armc10	Q9D0L7	7	9	Armadillo repeat-containing protein 10	
+ARMC10	pan-troglodytes	H2QV63	ARMC10	H2QV63	8	8	Armadillo repeat containing 10	
+ARMC10	rattus-norvegicus	B1WBW4	Armc10	B1WBW4	6	9	Armadillo repeat-containing protein 10	
 ARMC10	zebrafish	A0A0R4IWE3	armc10	A0A0R4IWE3	2	5	Armadillo repeat-containing 10	
+ARMC10	zebrafish	A0A8M3AWJ8	armc10	A0A8M3AWJ8	5	5	armadillo repeat-containing protein 10	
+ARMC10.L	xenopus-laevis	A0A8J0UUN3	armc10.L	A0A8J0UUN3	6	7	armadillo repeat-containing protein 10 isoform X1	
 ARMC12	human	Q5T9G4	ARMC12	Q5T9G4	5	90	Armadillo repeat-containing protein 12	
 ARMC12	mus-musculus	Q80X86	Armc12	Q80X86	0	1	Armadillo repeat-containing protein 12	
 ARMC12	rattus-norvegicus	B0BNC7	Armc12	B0BNC7	0	4	Armadillo repeat containing 12	
@@ -97,18 +101,24 @@ ARMC8	zebrafish	Q05AL1	armc8	Q05AL1	6	25	Armadillo repeat-containing protein 8
 ARMC8_HUMAN	human	Q8IUR7	ARMC8	Q8IUR7	61	291		
 ARMC9	human	Q7Z3E5	ARMC9	Q7Z3E5	12	75	LisH domain-containing protein ARMC9 (Armadillo repeat-conta	
 ARMC9_HUMAN	human	Q7Z3E5	ARMC9	Q7Z3E5	12	75		
-ARMCX1	human	Q9P291	ARMCX1	Q9P291	11	79	Armadillo repeat-containing X-linked protein 1 (ARM protein 	
-ARMCX1	rattus-norvegicus	Q5U310	Armcx1	Q5U310	0	3	Armadillo repeat-containing X-linked protein 1	
-ARMCX2	human	Q7L311	ARMCX2	Q7L311	5	64	Armadillo repeat-containing X-linked protein 2 (ARM protein 	
-ARMCX2	mus-musculus	Q6A058	Armcx2	Q6A058	0	8	Armadillo repeat-containing X-linked protein 2	
-ARMCX2	rattus-norvegicus	Q642B5	Armcx2	Q642B5	1	9	Armadillo repeat containing, X-linked 2	
-ARMCX3	human	Q9UH62	ARMCX3	Q9UH62	22	174	Armadillo repeat-containing X-linked protein 3 (ARM protein 	
-ARMCX3	mus-musculus	Q8BHS6	Armcx3	Q8BHS6	2	8	Armadillo repeat-containing X-linked protein 3	
-ARMCX3	rattus-norvegicus	Q5XID7	Armcx3	Q5XID7	0	6	Armadillo repeat-containing X-linked protein 3	
+ARMCX1	human	Q9P291	ARMCX1	Q9P291	19	87	Armadillo repeat-containing X-linked protein 1 (ARM protein 	
+ARMCX1	mus-musculus	Q9CX83	Armcx1	Q9CX83	7	7	Armadillo repeat-containing X-linked protein 1	
+ARMCX1	pan-troglodytes	H2R4M9	ARMCX1	H2R4M9	7	7	Armadillo repeat containing X-linked 1	
+ARMCX1	rattus-norvegicus	Q5U310	Armcx1	Q5U310	7	11	Armadillo repeat-containing X-linked protein 1	
+ARMCX2	human	Q7L311	ARMCX2	Q7L311	15	75	Armadillo repeat-containing X-linked protein 2 (ARM protein 	
+ARMCX2	mus-musculus	Q6A058	Armcx2	Q6A058	10	19	Armadillo repeat-containing X-linked protein 2	
+ARMCX2	pan-troglodytes	H2QYX2	ARMCX2	H2QYX2	9	9	Armadillo repeat containing X-linked 2	
+ARMCX2	rattus-norvegicus	Q642B5	Armcx2	Q642B5	10	19	Armadillo repeat containing, X-linked 2	
+ARMCX3	human	Q9UH62	ARMCX3	Q9UH62	28	180	Armadillo repeat-containing X-linked protein 3 (ARM protein 	
+ARMCX3	mus-musculus	Q8BHS6	Armcx3	Q8BHS6	7	14	Armadillo repeat-containing X-linked protein 3	
+ARMCX3	rattus-norvegicus	Q5XID7	Armcx3	Q5XID7	4	10	Armadillo repeat-containing X-linked protein 3	
 ARMCX4	human	Q5H9R4	ARMCX4	Q5H9R4	1	42	Armadillo repeat-containing X-linked protein 4	
 ARMCX5	human	Q6P1M9	ARMCX5	Q6P1M9	2	53	Armadillo repeat-containing X-linked protein 5	
 ARMCX5	rattus-norvegicus	D4A548	Armcx5	D4A548	0	1	Armadillo repeat containing, X-linked 5	
-ARMCX6	human	Q7L4S7	ARMCX6	Q7L4S7	3	68	Protein ARMCX6	
+ARMCX6	human	Q7L4S7	ARMCX6	Q7L4S7	5	70	Protein ARMCX6	
+ARMCX6	mus-musculus	Q8K3A6	Armcx6	Q8K3A6	2	2	Protein ARMCX6	
+ARMCX6	pan-troglodytes	K7C971	ARMCX6	K7C971	2	2	Armadillo repeat containing X-linked 6	
+ARMCX6	rattus-norvegicus	Q66HF0	Armcx6	Q66HF0	2	2	Protein ARMCX6	
 ARMD1_HUMAN	human	Q6PIY5	ARMH1	Q6PIY5	2	29		
 ARMD2_HUMAN	human	H3BNL8	ARMH2	H3BNL8	0	16		
 ARMD3_HUMAN	human	Q5T2E6	ARMH3	Q5T2E6	3	84		
@@ -143,9 +153,9 @@ ARMT1	zebrafish	Q58EM4	armt1	Q58EM4	1	2	Damage-control phosphatase ARMT1	w
 ARMT1	zebrafish	Q58EM4	armt1	Q58EM4	1	2	Damage-control phosphatase ARMT1	w
 ARMT1_HUMAN	human	Q9H993	DCPH1	Q9H993	8	105		
 ARMUS	human	Q9BYX2	TBC1D2	Q9BYX2	95	298	TBC1 domain family member 2A (Armus) (Prostate antigen recog	w
-ARMX1_HUMAN	human	Q9P291	ARMCX1	Q9P291	11	79		
-ARMX2_HUMAN	human	Q7L311	ARMCX2	Q7L311	5	64		
-ARMX3_HUMAN	human	Q9UH62	ARMCX3	Q9UH62	22	174		
+ARMX1_HUMAN	human	Q9P291	ARMCX1	Q9P291	19	87		
+ARMX2_HUMAN	human	Q7L311	ARMCX2	Q7L311	15	75		
+ARMX3_HUMAN	human	Q9UH62	ARMCX3	Q9UH62	28	180		
 ARMX4_HUMAN	human	Q5H9R4	ARMCX4	Q5H9R4	1	42		
 ARMX5_HUMAN	human	Q6P1M9	ARMCX5	Q6P1M9	2	53		
-ARMX6_HUMAN	human	Q7L4S7	ARMCX6	Q7L4S7	3	68		
+ARMX6_HUMAN	human	Q7L4S7	ARMCX6	Q7L4S7	5	70		

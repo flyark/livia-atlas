@@ -11,7 +11,7 @@ ALD1	oryza-sativa-subsp-japonica	Q6VMN7	ALD1	Q6VMN7	0	2	Aminotransferase ALD1 ho
 ALD2	fly	FBgn0039425	Aldol	Q9VBF5	2	109		
 ALD2	yeast	P47771	ALD2	P47771	1	3	Aldehyde dehydrogenase	
 ALD3	yeast	P54114	ALD3	P54114	1	7	Aldehyde dehydrogenase	
-ALD4	yeast	P46367	ALD4	P46367	2	34	Potassium-activated aldehyde dehydrogenase, mitochondrial	
+ALD4	yeast	P46367	ALD4	P46367	3	35	Potassium-activated aldehyde dehydrogenase, mitochondrial	
 ALD5	candida-albicans-237561	A0A1D8PGT5	ALD5	A0A1D8PGT5	0	1	Aldehyde dehydrogenase (NAD(P)(+))	
 ALD5	yeast	P40047	ALD5	P40047	2	28	Aldehyde dehydrogenase 5, mitochondrial	
 ALD6	yeast	P54115	ALD6	P54115	2	56	Magnesium-activated aldehyde dehydrogenase, cytosolic	
@@ -26,77 +26,81 @@ ALDC	human	P00352	ALDH1A1	P00352	12	263
 ALDC	human	P09972	ALDOC	P09972	4	207		
 ALDC	mycobacterium-tuberculosis	O33340	aldC	O33340	0	1	Putative succinate-semialdehyde dehydrogenase	
 ALDEHYDE	fly	FBgn0010548	Aldh-III	A0A0C4DHC8	6	98	Aldehyde dehydrogenase type III, isoform Q	w
-ALDEHYDE	fly	FBgn0012036	Aldh	Q9VLC5	7	126	Aldehyde dehydrogenase (EC 1.2.1.10, EC 1.2.1.3) (Aldehyde d	w
-ALDEHYDE	fly	FBgn0036857	Aldh7A1	Q8SXQ1	4	136	aldehyde dehydrogenase (NAD(+)) (EC 1.2.1.3)	w
+ALDEHYDE	fly	FBgn0012036	Aldh	Q9VLC5	9	128	Aldehyde dehydrogenase (EC 1.2.1.10, EC 1.2.1.3) (Aldehyde d	w
+ALDEHYDE	fly	FBgn0036857	Aldh7A1	Q8SXQ1	6	139	aldehyde dehydrogenase (NAD(+)) (EC 1.2.1.3)	w
 ALDEHYDE	fly	FBgn0038348	AOX2	Q8IND5	1	68	Aldehyde oxidase 2 (EC 1.2.3.1)	w
 ALDEHYDE	fly	FBgn0038349	AOX3	Q9VF51	1	71	Aldehyde oxidase 3, isoform A (Aldehyde oxidase 3, isoform B	w
 ALDEHYDE	fly	FBgn0038350	AOX4	Q9VF50	1	67	Aldehyde oxidase 4 (EC 1.2.3.1)	w
 ALDEHYDE	fly	FBgn0058064	ARY	D2A6K3	0	4	Aldehyde reductase Y, isoform D (EC 1.-.-.-, EC 1.1.1.112, E	w
 ALDEHYDE	fly	FBgn0267408	AOX1	Q9VF53	3	71	Aldehyde oxidase 1 (EC 1.2.3.8) (LD37006p)	w
-ALDEHYDE	human	O43488	AKR7A2	O43488	5	122	Aflatoxin B1 aldehyde reductase member 2 (EC 1.1.1.n11) (AFB	w
-ALDEHYDE	human	O75891	ALDH1L1	O75891	9	196	Cytosolic 10-formyltetrahydrofolate dehydrogenase (10-FTHFDH	w
+ALDEHYDE	human	O43488	AKR7A2	O43488	14	131	Aflatoxin B1 aldehyde reductase member 2 (EC 1.1.1.n11) (AFB	w
+ALDEHYDE	human	O75891	ALDH1L1	O75891	13	200	Cytosolic 10-formyltetrahydrofolate dehydrogenase (10-FTHFDH	w
 ALDEHYDE	human	O94788	ALDH1A2	O94788	15	143	Retinal dehydrogenase 2 (RALDH 2) (RalDH2) (EC 1.2.1.36) (Al	w
 ALDEHYDE	human	O95154	AKR7A3	O95154	7	100	Aldo-keto reductase family 7 member A3 (EC 1.1.1.2) (AFB1 al	w
 ALDEHYDE	human	P00352	ALDH1A1	P00352	12	263	Aldehyde dehydrogenase 1A1 (EC 1.2.1.19) (EC 1.2.1.28) (EC 1	w
-ALDEHYDE	human	P05091	ALDH2	P05091	16	209	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
+ALDEHYDE	human	P05091	ALDH2	P05091	18	210	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
 ALDEHYDE	human	P14550	AKR1A1	P14550	5	111	Aldo-keto reductase family 1 member A1 (EC 1.1.1.2) (EC 1.1.	w
 ALDEHYDE	human	P15121	AKR1B1	P15121	15	229	Aldo-keto reductase family 1 member B1 (EC 1.1.1.21) (EC 1.1	w
-ALDEHYDE	human	P30038	ALDH4A1	P30038	7	152	Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial	w
-ALDEHYDE	human	P30837	ALDH1B1	P30837	16	209	Aldehyde dehydrogenase family 1 member B1, mitochondrial (EC	w
+ALDEHYDE	human	P30038	ALDH4A1	P30038	8	153	Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial	w
+ALDEHYDE	human	P30837	ALDH1B1	P30837	18	211	Aldehyde dehydrogenase family 1 member B1, mitochondrial (EC	w
 ALDEHYDE	human	P30838	ALDH3A1	P30838	9	158	Aldehyde dehydrogenase, dimeric NADP-preferring (EC 1.2.1.5)	w
 ALDEHYDE	human	P43353	ALDH3B1	P43353	7	150	Aldehyde dehydrogenase family 3 member B1 (EC 1.2.1.28) (EC 	w
 ALDEHYDE	human	P47895	ALDH1A3	P47895	20	181	Retinaldehyde dehydrogenase 3 (RALDH-3) (RalDH3) (EC 1.2.1.3	w
 ALDEHYDE	human	P48448	ALDH3B2	P48448	6	63	Aldehyde dehydrogenase family 3 member B2 (ALDH3B2) (EC 1.2.	w
-ALDEHYDE	human	P49189	ALDH9A1	P49189	11	168	4-trimethylaminobutyraldehyde dehydrogenase (TMABA-DH) (TMAB	w
-ALDEHYDE	human	P49419	ALDH7A1	P49419	8	168	Alpha-aminoadipic semialdehyde dehydrogenase (Alpha-AASA deh	w
-ALDEHYDE	human	P51648	ALDH3A2	P51648	16	355	Aldehyde dehydrogenase family 3 member A2 (EC 1.2.1.3) (EC 1	w
-ALDEHYDE	human	P51649	ALDH5A1	P51649	13	109	Succinate-semialdehyde dehydrogenase, mitochondrial (EC 1.2.	w
+ALDEHYDE	human	P49189	ALDH9A1	P49189	13	170	4-trimethylaminobutyraldehyde dehydrogenase (TMABA-DH) (TMAB	w
+ALDEHYDE	human	P49419	ALDH7A1	P49419	9	170	Alpha-aminoadipic semialdehyde dehydrogenase (Alpha-AASA deh	w
+ALDEHYDE	human	P51648	ALDH3A2	P51648	20	360	Aldehyde dehydrogenase family 3 member A2 (EC 1.2.1.3) (EC 1	w
+ALDEHYDE	human	P51649	ALDH5A1	P51649	17	113	Succinate-semialdehyde dehydrogenase, mitochondrial (EC 1.2.	w
 ALDEHYDE	human	P54886	ALDH18A1	P54886	7	295	Delta-1-pyrroline-5-carboxylate synthase (P5CS) (Aldehyde de	w
-ALDEHYDE	human	Q02252	ALDH6A1	Q02252	7	95	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	w
+ALDEHYDE	human	Q02252	ALDH6A1	Q02252	7	96	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	w
 ALDEHYDE	human	Q06278	AOX1	Q06278	1	30	Aldehyde oxidase (EC 1.2.3.1) (Aldehyde oxidase 1) (Aryl-ald	w
-ALDEHYDE	human	Q3SY69	ALDH1L2	Q3SY69	9	90	Mitochondrial 10-formyltetrahydrofolate dehydrogenase (Mitoc	w
+ALDEHYDE	human	Q3SY69	ALDH1L2	Q3SY69	12	95	Mitochondrial 10-formyltetrahydrofolate dehydrogenase (Mitoc	w
 ALDEHYDE	human	Q8IZ83	ALDH16A1	Q8IZ83	1	82	Aldehyde dehydrogenase family 16 member A1	w
 ALDEHYDE	human	Q8NHP1	AKR7L	Q8NHP1	5	79	Aflatoxin B1 aldehyde reductase member 4 (EC 1.-.-.-) (AFB1 	w
 ALDEHYDE	human	Q9H2A2	ALDH8A1	Q9H2A2	13	88	2-aminomuconic semialdehyde dehydrogenase (EC 1.2.1.32) (Ald	w
 ALDEHYDE	human	Q9UGB7	MIOX	Q9UGB7	0	27	Inositol oxygenase (EC 1.13.99.1) (Aldehyde reductase-like 6	w
 ALDEHYDE	worm	O44555	alh-5	O44555	0	21	Aldehyde dehydrogenase	w
-ALDEHYDE	worm	P46562	alh-9	P46562	1	45	Putative aldehyde dehydrogenase family 7 member A1 homolog	w
+ALDEHYDE	worm	P46562	alh-9	P46562	4	48	Putative aldehyde dehydrogenase family 7 member A1 homolog	w
 ALDEHYDE	worm	Q18822	alh-10	Q18822	0	8	Aldehyde dehydrogenase domain-containing protein	w
-ALDEHYDE	worm	Q20780	alh-1	Q20780	1	31	Aldehyde dehydrogenase domain-containing protein	w
+ALDEHYDE	worm	Q20780	alh-1	Q20780	4	34	Aldehyde dehydrogenase domain-containing protein	w
 ALDEHYDE	worm	Q7Z1Q3	alh-12	Q7Z1Q3	2	6	Aldehyde dehydrogenase domain-containing protein	w
 ALDEHYDE	worm	Q86S57	alh-4	Q86S57	0	3	Aldehyde dehydrogenase	w
 ALDEHYDE	worm	Q960A1	gad-3	Q960A1	0	1	Probable aldehyde oxidase gad-3	w
 ALDEHYDE	worm	Q9TXM0	alh-2	Q9TXM0	1	4	Aldehyde dehydrogenase domain-containing protein	w
 ALDEHYDE	yeast	P38694	MSC7	P38694	2	26	Putative aldehyde dehydrogenase-like protein YHR039C	w
 ALDEHYDE	yeast	P40047	ALD5	P40047	2	28	Aldehyde dehydrogenase 5, mitochondrial	w
-ALDEHYDE	yeast	P46367	ALD4	P46367	2	34	Potassium-activated aldehyde dehydrogenase, mitochondrial	w
+ALDEHYDE	yeast	P46367	ALD4	P46367	3	35	Potassium-activated aldehyde dehydrogenase, mitochondrial	w
 ALDEHYDE	yeast	P47771	ALD2	P47771	1	3	Aldehyde dehydrogenase	w
 ALDEHYDE	yeast	P53111	ARI1	P53111	0	142	NADPH-dependent aldehyde reductase ARI1	w
 ALDEHYDE	yeast	P54114	ALD3	P54114	1	7	Aldehyde dehydrogenase	w
 ALDEHYDE	yeast	P54115	ALD6	P54115	2	56	Magnesium-activated aldehyde dehydrogenase, cytosolic	w
 ALDEHYDE	yeast	Q04458	HFD1	Q04458	0	21	Fatty aldehyde dehydrogenase HFD1	w
 ALDEHYDE	yeast	Q12458	YPR1	Q12458	1	9	Aldehyde reductase YPR1	w
+ALDEHYDE	zebrafish	A0A8M1P3N5	aldh3a2b	A0A8M1P3N5	2	4	Aldehyde dehydrogenase	w
+ALDEHYDE	zebrafish	A0A8M3APD8	wu:fb14d09	A0A8M3APD8	4	5	aldehyde dehydrogenase, mitochondrial	w
 ALDEHYDE	zebrafish	A0A8M3ASB8	aldh3b4	A0A8M3ASB8	1	3	Aldehyde dehydrogenase	w
 ALDEHYDE	zebrafish	B0S7W5	aldh9a1a.2	B0S7W5	2	3	Aldehyde dehydrogenase 9 family, member A1a, tandem duplicat	w
 ALDEHYDE	zebrafish	E9QH31	aldh3a2b	E9QH31	1	5	Aldehyde dehydrogenase	w
 ALDEHYDE	zebrafish	F1Q5R8	aox6	F1Q5R8	1	10	Aldehyde oxidase 6	w
 ALDEHYDE	zebrafish	F1QGP1	aldh16a1	F1QGP1	0	8	Aldehyde dehydrogenase 16 family, member A1	w
 ALDEHYDE	zebrafish	Q0H2G3	aldh1a3	Q0H2G3	0	5	Aldehyde dehydrogenase 1 family member A3	w
+ALDEHYDE	zebrafish	Q6DHD5	zgc:92502	Q6DHD5	3	6	Aldo-keto reductase family 7, member A3 (aflatoxin aldehyde 	w
+ALDEHYDE	zebrafish	Q803R9	wu:fi34d12	Q803R9	4	7	aldehyde dehydrogenase (NAD(+))	w
 ALDEHYDE	zebrafish	Q90ZZ7	aldh3b1	Q90ZZ7	1	3	Aldehyde dehydrogenase	w
 ALDEHYDE	zebrafish	Q90ZZ8	aldh3a2a	Q90ZZ8	0	2	Aldehyde dehydrogenase	w
 ALDEHYDE	zebrafish	X1WBM4	aldh3a1	X1WBM4	1	2	Aldehyde dehydrogenase	w
 ALDEHYDE-BINDING	human	Q96DC9	OTUB2	Q96DC9	9	188	Ubiquitin thioesterase OTUB2 (EC 3.4.19.12) (Deubiquitinatin	w
 ALDEHYDE-BINDING	human	Q96FW1	OTUB1	Q96FW1	47	578	Ubiquitin thioesterase OTUB1 (EC 3.4.19.12) (Deubiquitinatin	w
 ALDESLEUKIN	human	P60568	IL2	P60568	112	899	Interleukin-2 (IL-2) (T-cell growth factor) (TCGF) (Aldesleu	w
-ALDH	fly	FBgn0012036	Aldh	Q9VLC5	7	126	Aldehyde dehydrogenase (EC 1.2.1.10, EC 1.2.1.3) (Aldehyde d	
-ALDH	human	P05091	ALDH2	P05091	16	209	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
-ALDH-2	human	P05091	ALDH2	P05091	16	209	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
+ALDH	fly	FBgn0012036	Aldh	Q9VLC5	9	128	Aldehyde dehydrogenase (EC 1.2.1.10, EC 1.2.1.3) (Aldehyde d	
+ALDH	human	P05091	ALDH2	P05091	18	210	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
+ALDH-2	human	P05091	ALDH2	P05091	18	210	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
 ALDH-E1	human	P00352	ALDH1A1	P00352	12	263	Aldehyde dehydrogenase 1A1 (EC 1.2.1.19) (EC 1.2.1.28) (EC 1	w
-ALDH-E2	human	P05091	ALDH2	P05091	16	209	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
+ALDH-E2	human	P05091	ALDH2	P05091	18	210	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	w
 ALDH-III	fly	FBgn0010548	Aldh-III	A0A0C4DHC8	6	98	Aldehyde dehydrogenase type III, isoform Q	
 ALDH1	human	P00352	ALDH1A1	P00352	12	263		
 ALDH1	staphylococcus-aureus-93061	Q2FWX9	aldH1	Q2FWX9	0	4	4,4'-diaponeurosporen-aldehyde dehydrogenase	
-ALDH10	human	P51648	ALDH3A2	P51648	16	355		
+ALDH10	human	P51648	ALDH3A2	P51648	20	360		
 ALDH10A8	arabidopsis-thaliana	Q9S795	ALDH10A8	Q9S795	1	21	Aminoaldehyde dehydrogenase ALDH10A8, chloroplastic	
 ALDH10A9	arabidopsis-thaliana	Q9STS1	ALDH10A9	Q9STS1	1	21	Aminoaldehyde dehydrogenase ALDH10A9, peroxisomal	
 ALDH11A1	glycine-max	I1JGN1	ALDH11A1	I1JGN1	2	14	NADP-dependent glyceraldehyde-3-phosphate dehydrogenase	
@@ -133,21 +137,29 @@ ALDH1A3	rattus-norvegicus	Q8K4D8	Aldh1a3	Q8K4D8	3	16	Retinaldehyde dehydrogenase
 ALDH1A3	zebrafish	Q0H2G3	aldh1a3	Q0H2G3	0	5	Aldehyde dehydrogenase 1 family member A3	
 ALDH1A7	mus-musculus	O35945	Aldh1a7	O35945	3	8	Aldehyde dehydrogenase, cytosolic 1	
 ALDH1A7	rattus-norvegicus	D3ZCV5	Aldh1a7	D3ZCV5	0	3	Aldehyde dehydrogenase family 1, subfamily A7	
-ALDH1B1	human	P30837	ALDH1B1	P30837	16	209	Aldehyde dehydrogenase family 1 member B1, mitochondrial (EC	
-ALDH1B1	mus-musculus	Q9CZS1	Aldh1b1	Q9CZS1	5	23	Aldehyde dehydrogenase X, mitochondrial	
-ALDH1B1	rattus-norvegicus	Q66HF8	Aldh1b1	Q66HF8	5	17	Aldehyde dehydrogenase X, mitochondrial	
-ALDH1L1	fly	FBgn0032945	Aldh1L1	Q9VIC9	0	7	10-formyltetrahydrofolate dehydrogenase (EC 1.5.1.6)	
-ALDH1L1	human	O75891	ALDH1L1	O75891	9	196	Cytosolic 10-formyltetrahydrofolate dehydrogenase (10-FTHFDH	
-ALDH1L1	mus-musculus	Q8R0Y6	Aldh1l1	Q8R0Y6	1	3	Cytosolic 10-formyltetrahydrofolate dehydrogenase	
-ALDH1L1	rattus-norvegicus	P28037	Aldh1l1	P28037	0	3	Cytosolic 10-formyltetrahydrofolate dehydrogenase	
-ALDH1L2	human	Q3SY69	ALDH1L2	Q3SY69	9	90	Mitochondrial 10-formyltetrahydrofolate dehydrogenase (Mitoc	
-ALDH1L2	mus-musculus	Q8K009	Aldh1l2	Q8K009	1	2	Mitochondrial 10-formyltetrahydrofolate dehydrogenase	
+ALDH1B1	human	P30837	ALDH1B1	P30837	18	211	Aldehyde dehydrogenase family 1 member B1, mitochondrial (EC	
+ALDH1B1	mus-musculus	Q9CZS1	Aldh1b1	Q9CZS1	9	27	Aldehyde dehydrogenase X, mitochondrial	
+ALDH1B1	pan-troglodytes	H2QXA8	ALDH1B1	H2QXA8	8	8	Aldehyde dehydrogenase 1 family member B1	
+ALDH1B1	rattus-norvegicus	Q66HF8	Aldh1b1	Q66HF8	9	21	Aldehyde dehydrogenase X, mitochondrial	
+ALDH1B1.L	xenopus-laevis	A0A1L8HXP9	aldh1b1.L	A0A1L8HXP9	7	7	aldehyde dehydrogenase X, mitochondrial	
+ALDH1L1	fly	FBgn0032945	Aldh1L1	Q9VIC9	3	11	10-formyltetrahydrofolate dehydrogenase (EC 1.5.1.6)	
+ALDH1L1	human	O75891	ALDH1L1	O75891	13	200	Cytosolic 10-formyltetrahydrofolate dehydrogenase (10-FTHFDH	
+ALDH1L1	mus-musculus	Q8R0Y6	Aldh1l1	Q8R0Y6	7	10	Cytosolic 10-formyltetrahydrofolate dehydrogenase	
+ALDH1L1	pan-troglodytes	A0A2J8KAV5	ALDH1L1	A0A2J8KAV5	7	8	10-formyltetrahydrofolate dehydrogenase	
+ALDH1L1	rattus-norvegicus	P28037	Aldh1l1	P28037	7	11	Cytosolic 10-formyltetrahydrofolate dehydrogenase	
+ALDH1L2	human	Q3SY69	ALDH1L2	Q3SY69	12	95	Mitochondrial 10-formyltetrahydrofolate dehydrogenase (Mitoc	
+ALDH1L2	mus-musculus	Q8K009	Aldh1l2	Q8K009	6	10	Mitochondrial 10-formyltetrahydrofolate dehydrogenase	
+ALDH1L2	pan-troglodytes	H2Q6R9	ALDH1L2	H2Q6R9	7	9	10-formyltetrahydrofolate dehydrogenase	
+ALDH1L2	rattus-norvegicus	A0A8I5ZRH3	Aldh1l2	A0A8I5ZRH3	7	9	10-formyltetrahydrofolate dehydrogenase	
 ALDH1L2	rattus-norvegicus	D3ZTP0	Aldh1l2	D3ZTP0	0	1	10-formyltetrahydrofolate dehydrogenase	
-ALDH1L2	zebrafish	A0A8M1RK21	aldh1l2	A0A8M1RK21	0	3	10-formyltetrahydrofolate dehydrogenase	
-ALDH2	human	P05091	ALDH2	P05091	16	209	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	
+ALDH1L2	zebrafish	A0A8M1RK21	aldh1l2	A0A8M1RK21	4	9	10-formyltetrahydrofolate dehydrogenase	
+ALDH1L2.S	xenopus-laevis	A0A1L8GUQ3	aldh1l2.S	A0A1L8GUQ3	7	8	10-formyltetrahydrofolate dehydrogenase	
+ALDH2	human	P05091	ALDH2	P05091	18	210	Aldehyde dehydrogenase, mitochondrial (EC 1.2.1.19) (EC 1.2.	
 ALDH2	leishmania-infantum	A4I1F4	ALDH2	A4I1F4	0	21	Aldehyde dehydrogenase, mitochondrial	
-ALDH2	mus-musculus	P47738	Aldh2	P47738	3	43	Aldehyde dehydrogenase, mitochondrial	
-ALDH2	rattus-norvegicus	P11884	Aldh2	P11884	2	27	Aldehyde dehydrogenase, mitochondrial	
+ALDH2	mus-musculus	P47738	Aldh2	P47738	6	46	Aldehyde dehydrogenase, mitochondrial	
+ALDH2	pan-troglodytes	K7B7G6	ALDH2	K7B7G6	7	7	Aldehyde dehydrogenase 2 family (Mitochondrial)	
+ALDH2	rattus-norvegicus	P11884	Aldh2	P11884	7	30	Aldehyde dehydrogenase, mitochondrial	
+ALDH2.L	xenopus-laevis	Q6DCT5	aldh2.L	Q6DCT5	5	6	MGC80785 protein	
 ALDH22A1	arabidopsis-thaliana	Q0WSF1	ALDH22A1	Q0WSF1	0	1	Aldehyde dehydrogenase 22A1	
 ALDH22A1	glycine-max	I1KMR6	ALDH22A1	I1KMR6	0	8	Aldehyde dehydrogenase domain-containing protein	
 ALDH22A3	glycine-max	I1MGF2	ALDH22A3	I1MGF2	0	8	Aldehyde dehydrogenase domain-containing protein	
@@ -156,7 +168,7 @@ ALDH2A	oryza-sativa-subsp-japonica	Q9LRI6	Aldh2a	Q9LRI6	0	17	Mitochondrial aldeh
 ALDH2B	oryza-sativa-subsp-japonica	Q9FRX7	Aldh2b	Q9FRX7	0	18	Aldehyde dehydrogenase ALDH2b	
 ALDH2B1	glycine-max	I1J5A5	ALDH2B1	I1J5A5	0	12	aldehyde dehydrogenase (NAD(+))	
 ALDH2B2	glycine-max	I1JC17	ALDH2B2	I1JC17	0	12	aldehyde dehydrogenase (NAD(+))	
-ALDH2B4	arabidopsis-thaliana	Q9SU63	ALDH2B4	Q9SU63	5	23	Aldehyde dehydrogenase family 2 member B4, mitochondrial	
+ALDH2B4	arabidopsis-thaliana	Q9SU63	ALDH2B4	Q9SU63	6	24	Aldehyde dehydrogenase family 2 member B4, mitochondrial	
 ALDH2B4	glycine-max	I1KCH8	ALDH2B4	I1KCH8	0	12	aldehyde dehydrogenase (NAD(+))	
 ALDH2B5	glycine-max	I1KXG9	ALDH2B5	I1KXG9	0	12	aldehyde dehydrogenase (NAD(+))	
 ALDH2B6	glycine-max	I1M026	ALDH2B6	I1M026	0	12	aldehyde dehydrogenase (NAD(+))	
@@ -170,16 +182,19 @@ ALDH2C5	glycine-max	I1KQ26	ALDH2C5	I1KQ26	0	12	Aldehyde dehydrogenase 1
 ALDH2C6	glycine-max	I1KQ30	ALDH2C6	I1KQ30	0	12	Aldehyde dehydrogenase 1	
 ALDH2C8	glycine-max	I1L4H0	ALDH2C8	I1L4H0	0	12	Aldehyde dehydrogenase 1	
 ALDH2C9	glycine-max	I1L4H1	ALDH2C9	I1L4H1	0	12	Aldehyde dehydrogenase 1	
-ALDH2_HUMAN	human	P05091	ALDH2	P05091	16	209		
+ALDH2_HUMAN	human	P05091	ALDH2	P05091	18	210		
 ALDH3	human	P30838	ALDH3A1	P30838	9	158		
 ALDH3A1	human	P30838	ALDH3A1	P30838	9	158	Aldehyde dehydrogenase, dimeric NADP-preferring (EC 1.2.1.5)	
 ALDH3A1	mus-musculus	P47739	Aldh3a1	P47739	0	3	Aldehyde dehydrogenase, dimeric NADP-preferring	
 ALDH3A1	rattus-norvegicus	P11883	Aldh3a1	P11883	2	4	Aldehyde dehydrogenase, dimeric NADP-preferring	
 ALDH3A1	zebrafish	X1WBM4	aldh3a1	X1WBM4	1	2	Aldehyde dehydrogenase	
-ALDH3A2	human	P51648	ALDH3A2	P51648	16	355	Aldehyde dehydrogenase family 3 member A2 (EC 1.2.1.3) (EC 1	
-ALDH3A2	mus-musculus	P47740	Aldh3a2	P47740	2	18	Aldehyde dehydrogenase family 3 member A2	
-ALDH3A2	rattus-norvegicus	P30839	Aldh3a2	P30839	2	15	Aldehyde dehydrogenase family 3 member A2	
+ALDH3A2	human	P51648	ALDH3A2	P51648	20	360	Aldehyde dehydrogenase family 3 member A2 (EC 1.2.1.3) (EC 1	
+ALDH3A2	mus-musculus	P47740	Aldh3a2	P47740	5	22	Aldehyde dehydrogenase family 3 member A2	
+ALDH3A2	pan-troglodytes	K7A0X5	ALDH3A2	K7A0X5	6	7	Aldehyde dehydrogenase	
+ALDH3A2	rattus-norvegicus	P30839	Aldh3a2	P30839	5	19	Aldehyde dehydrogenase family 3 member A2	
+ALDH3A2.S	xenopus-laevis	Q6GR28	aldh3a2.S	Q6GR28	5	5	Aldehyde dehydrogenase	
 ALDH3A2A	zebrafish	Q90ZZ8	aldh3a2a	Q90ZZ8	0	2	Aldehyde dehydrogenase	
+ALDH3A2B	zebrafish	A0A8M1P3N5	aldh3a2b	A0A8M1P3N5	2	4	Aldehyde dehydrogenase	
 ALDH3A2B	zebrafish	E9QH31	aldh3a2b	E9QH31	1	5	Aldehyde dehydrogenase	
 ALDH3B1	human	P43353	ALDH3B1	P43353	7	150	Aldehyde dehydrogenase family 3 member B1 (EC 1.2.1.28) (EC 	
 ALDH3B1	mus-musculus	Q80VQ0	Aldh3b1	Q80VQ0	0	6	Aldehyde dehydrogenase family 3 member B1	
@@ -204,59 +219,71 @@ ALDH3J1	glycine-max	I1LJV8	ALDH3J1	I1LJV8	0	12	Aldehyde dehydrogenase
 ALDH3J2	glycine-max	I1LQJ4	ALDH3J2	I1LQJ4	0	12	Aldehyde dehydrogenase	
 ALDH3J3	glycine-max	I1M506	ALDH3J3	I1M506	0	12	Aldehyde dehydrogenase	
 ALDH3J4	glycine-max	I1MDB2	ALDH3J4	I1MDB2	0	12	Aldehyde dehydrogenase	
-ALDH4	human	P30038	ALDH4A1	P30038	7	152		
-ALDH4	human	P49189	ALDH9A1	P49189	11	168		
-ALDH4A1	human	P30038	ALDH4A1	P30038	7	152	Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial	
-ALDH4A1	mus-musculus	Q8CHT0	Aldh4a1	Q8CHT0	1	7	Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial	
+ALDH4	human	P30038	ALDH4A1	P30038	8	153		
+ALDH4	human	P49189	ALDH9A1	P49189	13	170		
+ALDH4A1	human	P30038	ALDH4A1	P30038	8	153	Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial	
+ALDH4A1	mus-musculus	Q8CHT0	Aldh4a1	Q8CHT0	1	8	Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial	
+ALDH4A1	pan-troglodytes	K7BJ44	ALDH4A1	K7BJ44	1	1	Multifunctional fusion protein	
 ALDH4A1	rattus-norvegicus	P0C2X9	Aldh4a1	P0C2X9	0	9	Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial	
 ALDH4A1	zebrafish	Q7SY23	aldh4a1	Q7SY23	0	6	Delta-1-pyrroline-5-carboxylate dehydrogenase, mitochondrial	
-ALDH5	human	P30837	ALDH1B1	P30837	16	209		
-ALDH5A1	human	P51649	ALDH5A1	P51649	13	109	Succinate-semialdehyde dehydrogenase, mitochondrial (EC 1.2.	
-ALDH5A1	mus-musculus	Q8BWF0	Aldh5a1	Q8BWF0	0	14	Succinate-semialdehyde dehydrogenase, mitochondrial	
-ALDH5A1	rattus-norvegicus	P51650	Aldh5a1	P51650	0	6	Succinate-semialdehyde dehydrogenase, mitochondrial	
-ALDH5F1	arabidopsis-thaliana	Q9SAK4	ALDH5F1	Q9SAK4	1	7	Succinate-semialdehyde dehydrogenase, mitochondrial	
+ALDH4_YEAST	yeast	P46367	ALD4	P46367	3	35		
+ALDH5	human	P30837	ALDH1B1	P30837	18	211		
+ALDH5A1	human	P51649	ALDH5A1	P51649	17	113	Succinate-semialdehyde dehydrogenase, mitochondrial (EC 1.2.	
+ALDH5A1	mus-musculus	Q8BWF0	Aldh5a1	Q8BWF0	8	22	Succinate-semialdehyde dehydrogenase, mitochondrial	
+ALDH5A1	pan-troglodytes	Q6A2H0	ALDH5A1	Q6A2H0	8	8	Succinate-semialdehyde dehydrogenase, mitochondrial	
+ALDH5A1	rattus-norvegicus	P51650	Aldh5a1	P51650	7	14	Succinate-semialdehyde dehydrogenase, mitochondrial	
+ALDH5A1	zebrafish	A0A8M3AQW4	aldh5a1	A0A8M3AQW4	4	5	Succinate-semialdehyde dehydrogenase	
+ALDH5A1.S	xenopus-laevis	A0A8J0VM74	aldh5a1.S	A0A8J0VM74	6	7	Succinate-semialdehyde dehydrogenase	
+ALDH5F1	arabidopsis-thaliana	Q9SAK4	ALDH5F1	Q9SAK4	3	9	Succinate-semialdehyde dehydrogenase, mitochondrial	
 ALDH5F1	glycine-max	I1KTW3	ALDH5F1	I1KTW3	1	12	Succinate-semialdehyde dehydrogenase	
 ALDH5F1	oryza-sativa-subsp-japonica	B9F3B6	ALDH5F1	B9F3B6	0	4	Succinate-semialdehyde dehydrogenase, mitochondrial	
 ALDH5F2	glycine-max	A0A0R4J5H1	ALDH5F2	A0A0R4J5H1	1	12	Succinate-semialdehyde dehydrogenase	
 ALDH6	human	P47895	ALDH1A3	P47895	20	181		
-ALDH6A1	human	Q02252	ALDH6A1	Q02252	7	95	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	
-ALDH6A1	mus-musculus	Q9EQ20	Aldh6a1	Q9EQ20	0	16	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	
-ALDH6A1	zebrafish	Q6DHT4	aldh6a1	Q6DHT4	0	1	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	
-ALDH6B2	arabidopsis-thaliana	Q0WM29	ALDH6B2	Q0WM29	1	3	Methylmalonate-semialdehyde dehydrogenase	
+ALDH6A1	human	Q02252	ALDH6A1	Q02252	7	96	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	
+ALDH6A1	mus-musculus	Q9EQ20	Aldh6a1	Q9EQ20	0	19	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	
+ALDH6A1	pan-troglodytes	K7AKS9	ALDH6A1	K7AKS9	1	4	Aldehyde dehydrogenase 6 family member A1	
+ALDH6A1	rattus-norvegicus	Q02253	Aldh6a1	Q02253	1	4	Methylmalonate-semialdehyde dehydrogenase [acylating], mitoc	
+ALDH6A1	zebrafish	Q6DHT4	aldh6a1	Q6DHT4	0	4	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	
+ALDH6A1.L	xenopus-laevis	Q2VPL8	aldh6a1.L	Q2VPL8	0	3	MGC131189 protein	
+ALDH6B2	arabidopsis-thaliana	Q0WM29	ALDH6B2	Q0WM29	1	4	Methylmalonate-semialdehyde dehydrogenase	
 ALDH7	human	P43353	ALDH3B1	P43353	7	150		
-ALDH7	human	P49189	ALDH9A1	P49189	11	168		
-ALDH7A1	fly	FBgn0036857	Aldh7A1	Q8SXQ1	4	136	aldehyde dehydrogenase (NAD(+)) (EC 1.2.1.3)	
-ALDH7A1	human	P49419	ALDH7A1	P49419	8	168	Alpha-aminoadipic semialdehyde dehydrogenase (Alpha-AASA deh	
-ALDH7A1	mus-musculus	Q9DBF1	Aldh7a1	Q9DBF1	3	35	Alpha-aminoadipic semialdehyde dehydrogenase	
-ALDH7A1	rattus-norvegicus	Q64057	Aldh7a1	Q64057	2	18	Alpha-aminoadipic semialdehyde dehydrogenase	
+ALDH7	human	P49189	ALDH9A1	P49189	13	170		
+ALDH7A1	fly	FBgn0036857	Aldh7A1	Q8SXQ1	6	139	aldehyde dehydrogenase (NAD(+)) (EC 1.2.1.3)	
+ALDH7A1	human	P49419	ALDH7A1	P49419	9	170	Alpha-aminoadipic semialdehyde dehydrogenase (Alpha-AASA deh	
+ALDH7A1	mus-musculus	Q9DBF1	Aldh7a1	Q9DBF1	7	40	Alpha-aminoadipic semialdehyde dehydrogenase	
+ALDH7A1	pan-troglodytes	A0A2I3RJH3	ALDH7A1	A0A2I3RJH3	7	9	Aldehyde dehydrogenase 7 family member A1	
+ALDH7A1	rattus-norvegicus	Q64057	Aldh7a1	Q64057	7	24	Alpha-aminoadipic semialdehyde dehydrogenase	
 ALDH7A1	zebrafish	A0A8M1PLI9	aldh7a1	A0A8M1PLI9	0	16	Alpha-aminoadipic semialdehyde dehydrogenase	
+ALDH7A1.S	xenopus-laevis	A0A1L8HR02	aldh7a1.S	A0A1L8HR02	4	7	aldehyde dehydrogenase (NAD(+))	
 ALDH7B1	glycine-max	I1L1Q8	ALDH7B1	I1L1Q8	0	11	Aldehyde dehydrogenase family 7 member A1	
 ALDH7B2	glycine-max	I1MHG6	ALDH7B2	I1MHG6	0	11	Aldehyde dehydrogenase family 7 member A1	
-ALDH7B4	arabidopsis-thaliana	Q9SYG7	ALDH7B4	Q9SYG7	2	20	Aldehyde dehydrogenase family 7 member B4	
+ALDH7B4	arabidopsis-thaliana	Q9SYG7	ALDH7B4	Q9SYG7	3	22	Aldehyde dehydrogenase family 7 member B4	
 ALDH8	human	P48448	ALDH3B2	P48448	6	63		
 ALDH8A1	human	Q9H2A2	ALDH8A1	Q9H2A2	13	88	2-aminomuconic semialdehyde dehydrogenase (EC 1.2.1.32) (Ald	
 ALDH8A1	mus-musculus	Q8BH00	Aldh8a1	Q8BH00	0	1	2-aminomuconic semialdehyde dehydrogenase	
 ALDH8A1	rattus-norvegicus	D3ZXY4	Aldh8a1	D3ZXY4	0	3	2-aminomuconic semialdehyde dehydrogenase	
 ALDH8A1	zebrafish	Q66I21	aldh8a1	Q66I21	0	1	2-aminomuconic semialdehyde dehydrogenase	
-ALDH9	human	P49189	ALDH9A1	P49189	11	168		
-ALDH9A1	human	P49189	ALDH9A1	P49189	11	168	4-trimethylaminobutyraldehyde dehydrogenase (TMABA-DH) (TMAB	
-ALDH9A1	mus-musculus	Q9JLJ2	Aldh9a1	Q9JLJ2	4	24	4-trimethylaminobutyraldehyde dehydrogenase	
-ALDH9A1	rattus-norvegicus	Q9JLJ3	Aldh9a1	Q9JLJ3	4	11	4-trimethylaminobutyraldehyde dehydrogenase	
-ALDH9A1A	zebrafish	Q7ZVB2	aldh9a1a	Q7ZVB2	2	3	4-trimethylaminobutyraldehyde dehydrogenase A	
+ALDH9	human	P49189	ALDH9A1	P49189	13	170		
+ALDH9A1	human	P49189	ALDH9A1	P49189	13	170	4-trimethylaminobutyraldehyde dehydrogenase (TMABA-DH) (TMAB	
+ALDH9A1	mus-musculus	Q9JLJ2	Aldh9a1	Q9JLJ2	7	28	4-trimethylaminobutyraldehyde dehydrogenase	
+ALDH9A1	pan-troglodytes	H2Q0I5	ALDH9A1	H2Q0I5	8	8	Aldehyde dehydrogenase 9 family member A1	
+ALDH9A1	rattus-norvegicus	Q9JLJ3	Aldh9a1	Q9JLJ3	8	15	4-trimethylaminobutyraldehyde dehydrogenase	
+ALDH9A1.S	xenopus-laevis	Q7ZXX4	aldh9a1.S	Q7ZXX4	6	7	MGC52697 protein	
+ALDH9A1A	zebrafish	Q7ZVB2	aldh9a1a	Q7ZVB2	7	9	4-trimethylaminobutyraldehyde dehydrogenase A	
 ALDH9A1A.2	zebrafish	B0S7W5	aldh9a1a.2	B0S7W5	2	3	Aldehyde dehydrogenase 9 family, member A1a, tandem duplicat	
 ALDH9A1B	zebrafish	Q802W2	aldh9a1b	Q802W2	2	3	4-trimethylaminobutyraldehyde dehydrogenase B	
 ALDHIII	human	P30838	ALDH3A1	P30838	9	158	Aldehyde dehydrogenase, dimeric NADP-preferring (EC 1.2.1.5)	w
-ALDHX	human	P30837	ALDH1B1	P30837	16	209		
+ALDHX	human	P30837	ALDH1B1	P30837	18	211		
 ALDITOL	human	P15121	AKR1B1	P15121	15	229	Aldo-keto reductase family 1 member B1 (EC 1.1.1.21) (EC 1.1	w
 ALDL1	human	Q9UBJ2	ABCD2	Q9UBJ2	2	17		
-ALDM	human	P05091	ALDH2	P05091	16	209		
+ALDM	human	P05091	ALDH2	P05091	18	210		
 ALDO	fly	FBgn0000064	Aldo	F3YDE2	3	345	Fructose-bisphosphate aldolase (EC 4.1.2.13)	
 ALDO	human	Q86XE5	HOGA1	Q86XE5	2	67	4-hydroxy-2-oxoglutarate aldolase, mitochondrial (EC 4.1.3.1	w
 ALDO-1	worm	P54216	aldo-1	P54216	0	43	Fructose-bisphosphate aldolase 1	
 ALDO-2	worm	P46563	aldo-2	P46563	0	47	Fructose-bisphosphate aldolase 2	
 ALDO-KETO	fly	FBgn0086254	Ar1	M9PF61	39	447	Aldo-keto reductase 1B, isoform C (EC 1.1.1.112, EC 1.1.1.21	w
 ALDO-KETO	human	C9JRZ8	AKR1B15	C9JRZ8	0	35	Aldo-keto reductase family 1 member B15 (EC 1.1.1.-) (EC 1.1	w
-ALDO-KETO	human	O60218	AKR1B10	O60218	7	121	Aldo-keto reductase family 1 member B10 (EC 1.1.1.300) (EC 1	w
+ALDO-KETO	human	O60218	AKR1B10	O60218	13	127	Aldo-keto reductase family 1 member B10 (EC 1.1.1.300) (EC 1	w
 ALDO-KETO	human	O95154	AKR7A3	O95154	7	100	Aldo-keto reductase family 7 member A3 (EC 1.1.1.2) (AFB1 al	w
 ALDO-KETO	human	P14550	AKR1A1	P14550	5	111	Aldo-keto reductase family 1 member A1 (EC 1.1.1.2) (EC 1.1.	w
 ALDO-KETO	human	P15121	AKR1B1	P15121	15	229	Aldo-keto reductase family 1 member B1 (EC 1.1.1.21) (EC 1.1	w
@@ -269,6 +296,7 @@ ALDO-KETO	human	Q5T2L2	AKR1C8	Q5T2L2	0	17	Aldo-keto reductase family 1 member C8
 ALDO-KETO	human	Q96JD6	AKR1E2	Q96JD6	6	26	1,5-anhydro-D-fructose reductase (AF reductase) (EC 1.1.1.26	w
 ALDO-KETO	zebrafish	Q568L5	akr1a1b	Q568L5	0	2	Aldo-keto reductase family 1 member A1-B	w
 ALDO-KETO	zebrafish	Q6AZW2	akr1a1a	Q6AZW2	0	2	Aldo-keto reductase family 1 member A1-A	w
+ALDO-KETO	zebrafish	Q6DHD5	zgc:92502	Q6DHD5	3	6	Aldo-keto reductase family 7, member A3 (aflatoxin aldehyde 	w
 ALDOA	human	J3KPS3	ALDOA	J3KPS3	1	42	Fructose-bisphosphate aldolase	
 ALDOA	human	P04075	ALDOA	P04075	4	381	Fructose-bisphosphate aldolase A (EC 4.1.2.13) (Lung cancer 	
 ALDOA	mus-musculus	P05064	Aldoa	P05064	4	44	Fructose-bisphosphate aldolase A	
@@ -292,7 +320,7 @@ ALDOCB	zebrafish	Q8JH70	aldocb	Q8JH70	1	15	Fructose-bisphosphate aldolase C-B
 ALDOC_HUMAN	human	P09972	ALDOC	P09972	4	207		
 ALDOKETOMUTASE	fly	FBgn0283450	Glo1	A1Z6X6	1	42	lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Keto	w
 ALDOKETOMUTASE	human	Q04760	GLO1	Q04760	7	200	Lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Glyo	w
-ALDOKETOREDUCTASE	human	O43488	AKR7A2	O43488	5	122	Aflatoxin B1 aldehyde reductase member 2 (EC 1.1.1.n11) (AFB	w
+ALDOKETOREDUCTASE	human	O43488	AKR7A2	O43488	14	131	Aflatoxin B1 aldehyde reductase member 2 (EC 1.1.1.n11) (AFB	w
 ALDOKETOREDUCTASE	human	Q8NHP1	AKR7L	Q8NHP1	5	79	Aflatoxin B1 aldehyde reductase member 4 (EC 1.-.-.-) (AFB1 	w
 ALDOL	fly	FBgn0039425	Aldol	Q9VBF5	2	109	fructose-bisphosphate aldolase (EC 4.1.2.13)	
 ALDOLASE	fly	FBgn0000064	Aldo	F3YDE2	3	345	Fructose-bisphosphate aldolase (EC 4.1.2.13)	w
@@ -327,19 +355,19 @@ ALDOLASE	zebrafish	Q6P043	aldoab	Q6P043	0	13	Fructose-bisphosphate aldolase	w
 ALDOLASE	zebrafish	Q803Q7	aldoaa	Q803Q7	1	20	Fructose-bisphosphate aldolase	w
 ALDOLASE	zebrafish	Q8JH70	aldocb	Q8JH70	1	15	Fructose-bisphosphate aldolase C-B	w
 ALDOLASE	zebrafish	Q8JH71	aldob	Q8JH71	2	21	Fructose-bisphosphate aldolase B	w
-ALDOS	human	P19099	CYP11B2	P19099	6	43	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
+ALDOS	human	P19099	CYP11B2	P19099	23	60	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
 ALDOSE	fly	FBgn0030525	Galml2	Q9VY83	4	56	Galactose mutarotase (Aldose 1-epimerase)	w
 ALDOSE	fly	FBgn0032372	Galml3	Q9VKF7	2	57	Aldose 1-epimerase (EC 5.1.3.3)	w
 ALDOSE	fly	FBgn0035679	Galm2	Q9VRU1	4	63	Aldose 1-epimerase (EC 5.1.3.3)	w
 ALDOSE	fly	FBgn0043783	Galm1	Q9VP02	5	56	Aldose 1-epimerase (EC 5.1.3.3)	w
 ALDOSE	fly	FBgn0052445	Galml1	Q8MR63	3	56	Aldose 1-epimerase (EC 5.1.3.3)	w
-ALDOSE	human	O60218	AKR1B10	O60218	7	121	Aldo-keto reductase family 1 member B10 (EC 1.1.1.300) (EC 1	w
+ALDOSE	human	O60218	AKR1B10	O60218	13	127	Aldo-keto reductase family 1 member B10 (EC 1.1.1.300) (EC 1	w
 ALDOSE	human	P15121	AKR1B1	P15121	15	229	Aldo-keto reductase family 1 member B1 (EC 1.1.1.21) (EC 1.1	w
 ALDOSE	human	Q96C23	GALM	Q96C23	0	55	Galactose mutarotase (EC 5.1.3.3) (Aldose 1-epimerase)	w
 ALDOSE	worm	G5ECR6	C01B4.6	G5ECR6	0	2	Aldose 1-epimerase	w
 ALDOSE	yeast	P38715	GRE3	P38715	0	11	NADPH-dependent aldose reductase GRE3	w
-ALDOSTERONE	human	P19099	CYP11B2	P19099	6	43	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
-ALDOSTERONE-SYNTHESIZING	human	P19099	CYP11B2	P19099	6	43	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
+ALDOSTERONE	human	P19099	CYP11B2	P19099	23	60	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
+ALDOSTERONE-SYNTHESIZING	human	P19099	CYP11B2	P19099	23	60	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
 ALDP	human	P33897	ABCD1	P33897	5	95	ATP-binding cassette sub-family D member 1 (EC 3.1.2.-) (EC 	w
 ALDP	oryza-sativa-subsp-japonica	Q40677	ALDP	Q40677	0	14	Fructose-bisphosphate aldolase, chloroplastic	
 ALDR	human	Q9UBJ2	ABCD2	Q9UBJ2	2	17		

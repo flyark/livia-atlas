@@ -27,20 +27,23 @@ SAM37	yeast	P50110	SAM37	P50110	3	31	Sorting assembly machinery 37 kDa subunit
 SAM4	candida-albicans-237561	A0A1D8PEB0	SAM4	A0A1D8PEB0	0	6	S-adenosylmethionine-homocysteine S-methyltransferase	
 SAM4	yeast	Q08985	SAM4	Q08985	0	4	Homocysteine S-methyltransferase 2	
 SAM50	candida-albicans-237561	A0A1D8PKC1	SAM50	A0A1D8PKC1	4	23	SAM complex subunit	
-SAM50	human	Q9Y512	SAMM50	Q9Y512	9	201		
+SAM50	human	Q9Y512	SAMM50	Q9Y512	10	202		
 SAM50	yeast	P53969	SAM50	P53969	7	385	Sorting assembly machinery 50 kDa subunit	
 SAM50-LIKE	fly	FBgn0033989	CG7639	Q9V784	4	38	SAM50-like protein CG7639	w
 SAM50-LIKE	worm	P46576	gop-3	P46576	2	25	SAM50-like protein gop-3	w
-SAM50_HUMAN	human	Q9Y512	SAMM50	Q9Y512	9	201		
+SAM50_CAEEL	worm	P46576	gop-3	P46576	2	25		
+SAM50_DROME	fly	FBgn0033989	CG7639	Q9V784	4	38		
+SAM50_HUMAN	human	Q9Y512	SAMM50	Q9Y512	10	202		
 SAM51	candida-albicans-237561	A0A1D8PN01	SAM51	A0A1D8PN01	2	21	Sam51p	
+SAM5A_DANRE	zebrafish	Q803G5	samm50a	Q803G5	4	27		
 SAM68	human	Q07666	KHDRBS1	Q07666	32	395		
 SAM68-LIKE	human	O75525	KHDRBS3	O75525	15	129	KH domain-containing, RNA-binding, signal transduction-assoc	w
 SAM68-LIKE	human	Q5VWX1	KHDRBS2	Q5VWX1	12	141	KH domain-containing, RNA-binding, signal transduction-assoc	w
 SAM9L_HUMAN	human	Q8IVG5	SAMD9L	Q8IVG5	3	51		
 SAMBA	arabidopsis-thaliana	Q9C613	SAMBA	Q9C613	1	17	Protein SAMBA	
-SAMC	human	Q70HW3	SLC25A26	Q70HW3	0	96		
+SAMC	human	Q70HW3	SLC25A26	Q70HW3	1	97		
 SAMCYSTIN	human	Q68DC2	ANKS6	Q68DC2	9	93	Ankyrin repeat and SAM domain-containing protein 6 (Ankyrin 	w
-SAMC_HUMAN	human	Q70HW3	SLC25A26	Q70HW3	0	96		
+SAMC_HUMAN	human	Q70HW3	SLC25A26	Q70HW3	1	97		
 SAMD1	human	Q6SPF0	SAMD1	Q6SPF0	30	176	Sterile alpha motif domain-containing protein 1 (SAM domain-	
 SAMD1	mus-musculus	D3YXK1	Samd1	D3YXK1	7	31	Sterile alpha motif domain-containing protein 1	
 SAMD10	human	Q9BYL1	SAMD10	Q9BYL1	8	38	Sterile alpha motif domain-containing protein 10 (SAM domain	
@@ -101,10 +104,12 @@ SAMHD1	zebrafish	Q502K2	samhd1	Q502K2	0	3	Deoxynucleoside triphosphate triphosph
 SAMHD1	zebrafish	Q502K2	samhd1	Q502K2	0	3	Deoxynucleoside triphosphate triphosphohydrolase SAMHD1	w
 SAMKB	dictyostelium-discoideum	Q54P26	samkB	Q54P26	0	1	Probable serine/threonine-protein kinase samkB	
 SAMKC	dictyostelium-discoideum	Q55CW2	samkC	Q55CW2	0	10	Probable serine/threonine-protein kinase samkC	
-SAMM50	human	Q9Y512	SAMM50	Q9Y512	9	201	Sorting and assembly machinery component 50 homolog (Transfo	
-SAMM50	mus-musculus	Q8BGH2	Samm50	Q8BGH2	4	37	Sorting and assembly machinery component 50 homolog	
-SAMM50	rattus-norvegicus	Q6AXV4	Samm50	Q6AXV4	4	28	Sorting and assembly machinery component 50 homolog	
-SAMM50A	zebrafish	Q803G5	samm50a	Q803G5	3	26	Sorting and assembly machinery component 50 homolog A	
+SAMM50	human	Q9Y512	SAMM50	Q9Y512	10	202	Sorting and assembly machinery component 50 homolog (Transfo	
+SAMM50	mus-musculus	Q8BGH2	Samm50	Q8BGH2	5	38	Sorting and assembly machinery component 50 homolog	
+SAMM50	pan-troglodytes	H2QLV3	SAMM50	H2QLV3	2	2	SAMM50 sorting and assembly machinery component	
+SAMM50	rattus-norvegicus	Q6AXV4	Samm50	Q6AXV4	5	29	Sorting and assembly machinery component 50 homolog	
+SAMM50-B	xenopus-laevis	Q6PA35	samm50-b	Q6PA35	1	1	Sorting and assembly machinery component 50 homolog B	
+SAMM50A	zebrafish	Q803G5	samm50a	Q803G5	4	27	Sorting and assembly machinery component 50 homolog A	
 SAMM50B	zebrafish	Q5U3I0	samm50b	Q5U3I0	3	26	Sorting and assembly machinery component 50 homolog B	
 SAMN1_HUMAN	human	Q9NSI8	SAMSN1	Q9NSI8	16	42		
 SAMP	human	Q9NQW7	XPNPEP1	Q9NQW7	1	170	Xaa-Pro aminopeptidase 1 (EC 3.4.11.9) (Aminoacylproline ami	w

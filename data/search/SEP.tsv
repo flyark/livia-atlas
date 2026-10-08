@@ -18,8 +18,8 @@ SEP2	arabidopsis-thaliana	Q9SJ02	SEP2	Q9SJ02	5	92	Stress enhanced protein 2, chl
 SEP2	human	Q14141	SEPTIN6	Q14141	17	227		
 SEP3	arabidopsis-thaliana	O22456	SEP3	O22456	18	28	Developmental protein SEPALLATA 3	
 SEP3	human	Q9UH03	SEPTIN3	Q9UH03	13	90		
-SEP4	fly	FBgn0259923	Septin4	Q0KHR7	11	103		
-SEP4	human	O43236	SEPTIN4	O43236	13	47		
+SEP4	fly	FBgn0259923	Septin4	Q0KHR7	12	104		
+SEP4	human	O43236	SEPTIN4	O43236	16	50		
 SEP5	fly	FBgn0026361	Septin5	Q7KLG8	4	7		
 SEP53	human	Q9UBG3	CRNN	Q9UBG3	24	192		
 SEP7	candida-albicans-237561	Q59VX8	SEP7	Q59VX8	5	9	Septation protein 7	
@@ -48,7 +48,8 @@ SEPHS2	human	Q99611	SEPHS2	Q99611	6	108	Selenide, water dikinase 2 (EC 2.7.9.3) 
 SEPIA	fly	FBgn0086348	se	Q9VSL3	17	103	Pyrimidodiazepine synthase (EC 1.5.4.1) (Protein sepia)	w
 SEPIAPTERIN	fly	FBgn0003141	pr	P48611	1	64	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
 SEPIAPTERIN	fly	FBgn0014032	Sptr	O76752	1	6	Sepiapterin reductase (EC 1.1.1.153)	w
-SEPIAPTERIN	human	P35270	SPR	P35270	6	161	Sepiapterin reductase (SPR) (EC 1.1.1.153)	w
+SEPIAPTERIN	human	P35270	SPR	P35270	12	167	Sepiapterin reductase (SPR) (EC 1.1.1.153)	w
+SEPIAPTERIN	zebrafish	A0A8M1N6P5	spra	A0A8M1N6P5	4	4	Sepiapterin reductase	w
 SEPIAPTERIN	zebrafish	B3DJY2	sprb	B3DJY2	2	11	Sepiapterin reductase	w
 SEPIAPTERIN	zebrafish	F1QWX4	spra	F1QWX4	1	11	Sepiapterin reductase	w
 SEPN1	human	Q9NZV5	SELENON	Q9NZV5	3	101		
@@ -191,9 +192,10 @@ SEPT2	human	Q15019	SEPTIN2	Q15019	20	360
 SEPT2_HUMAN	human	Q15019	SEPTIN2	Q15019	20	360		
 SEPT3	human	Q9UH03	SEPTIN3	Q9UH03	13	90		
 SEPT3_HUMAN	human	Q9UH03	SEPTIN3	Q9UH03	13	90		
-SEPT4	human	O43236	SEPTIN4	O43236	13	47		
+SEPT4	human	O43236	SEPTIN4	O43236	16	50		
 SEPT4B	zebrafish	A0A0G2KQA6	sept4b	A0A0G2KQA6	11	16	Septin	
-SEPT4_HUMAN	human	O43236	SEPTIN4	O43236	13	47		
+SEPT4B	zebrafish	A0A8M9QPP7	sept4b	A0A8M9QPP7	2	2	septin-4 isoform X1	
+SEPT4_HUMAN	human	O43236	SEPTIN4	O43236	16	50		
 SEPT5	human	Q99719	SEPTIN5	Q99719	17	196		
 SEPT5_HUMAN	human	Q99719	SEPTIN5	Q99719	17	196		
 SEPT6	human	Q14141	SEPTIN6	Q14141	17	227		
@@ -210,7 +212,7 @@ SEPT9_HUMAN	human	Q9UHD8	SEPTIN9	Q9UHD8	35	318
 SEPTIN	fly	FBgn0024191	sip1	Q9Y103	71	348	Septin-interacting protein 1 (Septin and tuftelin-interactin	w
 SEPTIN	fly	FBgn0026361	Septin5	Q7KLG8	4	7	Septin	w
 SEPTIN	fly	FBgn0031878	sip2	Q7KTL5	13	68	LD08056p (Septin interacting protein 2, isoform B)	w
-SEPTIN	fly	FBgn0259923	Septin4	Q0KHR7	11	103	Septin	w
+SEPTIN	fly	FBgn0259923	Septin4	Q0KHR7	12	104	Septin	w
 SEPTIN	human	Q9UBB9	TFIP11	Q9UBB9	124	632	Tuftelin-interacting protein 11 (Septin and tuftelin-interac	w
 SEPTIN	human	Q9UHD8	SEPTIN9	Q9UHD8	35	318	Septin-9 (MLL septin-like fusion protein MSF-A) (MLL septin-	w
 SEPTIN	worm	Q17784	stip-1	Q17784	9	58	Septin and tuftelin-interacting protein 1 homolog	w
@@ -233,7 +235,8 @@ SEPTIN-2	fly	FBgn0014029	Septin2	P54359	5	46	Septin-2	w
 SEPTIN-2	human	Q15019	SEPTIN2	Q15019	20	360	Septin-2 (Neural precursor cell expressed developmentally do	w
 SEPTIN-3	human	Q9UH03	SEPTIN3	Q9UH03	13	90	Neuronal-specific septin-3	w
 SEPTIN-3	zebrafish	A2BGU8	septin3	A2BGU8	11	15	Neuronal-specific septin-3	w
-SEPTIN-4	human	O43236	SEPTIN4	O43236	13	47	Septin-4 (Bradeion beta) (Brain protein H5) (CE5B3 beta) (Ce	w
+SEPTIN-4	human	O43236	SEPTIN4	O43236	16	50	Septin-4 (Bradeion beta) (Brain protein H5) (CE5B3 beta) (Ce	w
+SEPTIN-4	zebrafish	A0A8M9QPP7	sept4b	A0A8M9QPP7	2	2	septin-4 isoform X1	w
 SEPTIN-5	human	Q99719	SEPTIN5	Q99719	17	196	Septin-5 (Cell division control-related protein 1) (CDCrel-1	w
 SEPTIN-6	human	Q14141	SEPTIN6	Q14141	17	227	Septin-6	w
 SEPTIN-7	human	Q16181	SEPTIN7	Q16181	17	307	Septin-7 (CDC10 protein homolog)	w
@@ -272,9 +275,11 @@ SEPTIN3	human	Q9UH03	SEPTIN3	Q9UH03	13	90	Neuronal-specific septin-3
 SEPTIN3	mus-musculus	Q9Z1S5	Septin3	Q9Z1S5	13	18	Neuronal-specific septin-3	
 SEPTIN3	rattus-norvegicus	Q9WU34	Septin3	Q9WU34	11	19	Neuronal-specific septin-3	
 SEPTIN3	zebrafish	A2BGU8	septin3	A2BGU8	11	15	Neuronal-specific septin-3	
-SEPTIN4	fly	FBgn0259923	Septin4	Q0KHR7	11	103	Septin	
-SEPTIN4	human	O43236	SEPTIN4	O43236	13	47	Septin-4 (Bradeion beta) (Brain protein H5) (CE5B3 beta) (Ce	
-SEPTIN4	mus-musculus	P28661	Septin4	P28661	13	25	Septin-4	
+SEPTIN4	fly	FBgn0259923	Septin4	Q0KHR7	12	104	Septin	
+SEPTIN4	human	O43236	SEPTIN4	O43236	16	50	Septin-4 (Bradeion beta) (Brain protein H5) (CE5B3 beta) (Ce	
+SEPTIN4	mus-musculus	P28661	Septin4	P28661	16	28	Septin-4	
+SEPTIN4	pan-troglodytes	A0A2I3SHG8	SEPTIN4	A0A2I3SHG8	3	3	Septin 4	
+SEPTIN4	rattus-norvegicus	A0A096MJN4	Septin4	A0A096MJN4	3	3	Septin-4	
 SEPTIN4	rattus-norvegicus	E9PST0	Septin4	E9PST0	11	21	Septin	
 SEPTIN4A	zebrafish	A0A8M1N7Z7	septin4a	A0A8M1N7Z7	11	16	Septin 4a	
 SEPTIN5	fly	FBgn0026361	Septin5	Q7KLG8	4	7	Septin	

@@ -24,7 +24,7 @@ Q9GPR0	dictyostelium-discoideum	Q9GPR0	fam96A	Q9GPR0	1	6	MIP18 family protein FA
 Q9GPR2	dictyostelium-discoideum	Q9GPR2	racI	Q9GPR2	4	31	Rho-related protein racI	
 Q9GPR7	dictyostelium-discoideum	Q9GPR7	racH	Q9GPR7	8	31	Rho-related protein racH	
 Q9GPS0	dictyostelium-discoideum	Q9GPS0	racG	Q9GPS0	6	31	Rho-related protein racG	
-Q9GPS1	dictyostelium-discoideum	Q9GPS1	lyrm7	Q9GPS1	8	59	Complex III assembly factor LYRM7	
+Q9GPS1	dictyostelium-discoideum	Q9GPS1	lyrm7	Q9GPS1	9	60	Complex III assembly factor LYRM7	
 Q9GPS3	dictyostelium-discoideum	Q9GPS3	racF2	Q9GPS3	9	31	Rho-related protein racF2	
 Q9GPT6	dictyostelium-discoideum	Q9GPT6	elp6	Q9GPT6	2	6	Elongator complex protein 6	
 Q9GPZ7	dictyostelium-discoideum	Q9GPZ7	fszB	Q9GPZ7	0	2	Mitochondrial division protein fszB	
@@ -42,7 +42,7 @@ Q9GRU8	worm	Q9GRU8	srh-301	Q9GRU8	0	1	Serpentine Receptor, class H
 Q9GRV1	worm	Q9GRV1	CELE_Y71A12B.10	Q9GRV1	0	3	PB1 domain-containing protein	
 Q9GRV2	worm	Q9GRV2	usp-3	Q9GRV2	1	24	Ubiquitin carboxyl-terminal hydrolase	
 Q9GRV4	worm	Q9GRV4	clec-112	Q9GRV4	0	1	PAN-3 domain-containing protein	
-Q9GRX6	dictyostelium-discoideum	Q9GRX6	aif	Q9GRX6	1	6	Apoptosis-inducing factor 1, mitochondrial	
+Q9GRX6	dictyostelium-discoideum	Q9GRX6	aif	Q9GRX6	2	7	Apoptosis-inducing factor 1, mitochondrial	
 Q9GRZ0	worm	Q9GRZ0	ebp-3	Q9GRZ0	1	16	EB1 C-terminal domain-containing protein	
 Q9GRZ1	worm	Q9GRZ1	ebp-1	Q9GRZ1	0	43	Microtubule End Binding Protein	
 Q9GRZ2	worm	Q9GRZ2	prp-6	Q9GRZ2	8	73	Pre-mRNA-processing factor 6	
@@ -97,7 +97,8 @@ Q9GYH7	worm	Q9GYH7	rme-6	Q9GYH7	2	16	Receptor-mediated endocytosis protein 6
 Q9GYH9	worm	Q9GYH9	CELE_F29B9.1	Q9GYH9	1	7	Protein-lysine N-methyltransferase CELE_F29B9.1	
 Q9GYI0	worm	Q9GYI0	jmjd-1.2	Q9GYI0	0	7	Lysine-specific demethylase 7 homolog	
 Q9GYI1	worm	Q9GYI1	CELE_F29B9.11	Q9GYI1	3	43	Cytochrome c oxidase polypeptide VIIc	
-Q9GYI2	worm	Q9GYI2	mrps-21	Q9GYI2	12	87	Mitochondrial Ribosomal Protein, Small	
+Q9GYI2	worm	Q9GYI2	mrps-21	Q9GYI2	13	87	Mitochondrial Ribosomal Protein, Small	
+Q9GYI2_CAEEL	worm	Q9GYI2	mrps-21	Q9GYI2	13	87		
 Q9GYI4	worm	Q9GYI4	psr-1	Q9GYI4	0	10	Bifunctional arginine demethylase and lysyl-hydroxylase psr-	
 Q9GYI7	worm	Q9GYI7	CELE_F29B9.8	Q9GYI7	0	35	Serpentine Receptor, class T	
 Q9GYJ1	worm	Q9GYJ1	C46H11.2	Q9GYJ1	0	8	Flavin-containing monooxygenase	
@@ -140,7 +141,8 @@ Q9GYS5	worm	Q9GYS5	CELE_T08B2.4	Q9GYS5	0	3	PINc domain-containing protein
 Q9GYS6	worm	Q9GYS6	CELE_T08B2.11	Q9GYS6	0	31	HUN domain-containing protein	
 Q9GYS8	worm	Q9GYS8	fars-1	Q9GYS8	1	10	phenylalanine--tRNA ligase	
 Q9GYS9	worm	Q9GYS9	mrpl-23	Q9GYS9	8	136	Large ribosomal subunit protein uL23m	
-Q9GYT0	worm	Q9GYT0	ech-1.2	Q9GYT0	1	16	Trifunctional enzyme subunit alpha, mitochondrial	
+Q9GYT0	worm	Q9GYT0	ech-1.2	Q9GYT0	1	17	Trifunctional enzyme subunit alpha, mitochondrial	
+Q9GYT0_CAEEL	worm	Q9GYT0	ech-1.2	Q9GYT0	1	17		
 Q9GYT3	worm	Q9GYT3	CELE_F35F10.1	Q9GYT3	0	4	PAW domain-containing protein	
 Q9GYT4	worm	Q9GYT4	arrd-19	Q9GYT4	1	2	Arrestin C-terminal-like domain-containing protein	
 Q9GYU7	fly	FBgn0036581	MED10	Q9GYU7	34	521	Mediator of RNA polymerase II transcription subunit 10 (Medi	
@@ -207,11 +209,11 @@ Q9GZS0	human	Q9GZS0	DNAI2	Q9GZS0	13	133	Dynein axonemal intermediate chain 2 (Ax
 Q9GZS1	human	Q9GZS1	POLR1E	Q9GZS1	47	475	DNA-directed RNA polymerase I subunit RPA49 (RNA polymerase 	
 Q9GZS3	human	Q9GZS3	SKIC8	Q9GZS3	51	722	Superkiller complex protein 8 (Ski8) (Meiotic recombination 	
 Q9GZS9	human	Q9GZS9	CHST5	Q9GZS9	10	82	Carbohydrate sulfotransferase 5 (EC 2.8.2.-) (Galactose/N-ac	
-Q9GZT3	human	Q9GZT3	SLIRP	Q9GZT3	25	342	SRA stem-loop-interacting RNA-binding protein, mitochondrial	
+Q9GZT3	human	Q9GZT3	SLIRP	Q9GZT3	26	343	SRA stem-loop-interacting RNA-binding protein, mitochondrial	
 Q9GZT4	human	Q9GZT4	SRR	Q9GZT4	8	63	Serine racemase (EC 5.1.1.18) (D-serine ammonia-lyase) (D-se	
 Q9GZT5	human	Q9GZT5	WNT10A	Q9GZT5	18	92	Protein Wnt-10a	
 Q9GZT6	human	Q9GZT6	CCDC90B	Q9GZT6	6	219	Coiled-coil domain-containing protein 90B, mitochondrial	
-Q9GZT8	human	Q9GZT8	NIF3L1	Q9GZT8	1	193	NIF3-like protein 1 (Amyotrophic lateral sclerosis 2 chromos	
+Q9GZT8	human	Q9GZT8	NIF3L1	Q9GZT8	3	195	NIF3-like protein 1 (Amyotrophic lateral sclerosis 2 chromos	
 Q9GZT9	human	Q9GZT9	EGLN1	Q9GZT9	42	136	Egl nine homolog 1 (EC 1.14.11.29) (Hypoxia-inducible factor	
 Q9GZU0	human	Q9GZU0	C6orf62	Q9GZU0	2	42	Uncharacterized protein C6orf62 (HBV X-transactivated gene 1	
 Q9GZU1	human	Q9GZU1	MCOLN1	Q9GZU1	6	130	Mucolipin-1 (ML1) (MG-2) (Mucolipidin) (Transient receptor p	
@@ -235,9 +237,9 @@ Q9GZX7	human	Q9GZX7	AICDA	Q9GZX7	20	418	Single-stranded DNA cytosine deaminase (
 Q9GZX9	human	Q9GZX9	TWSG1	Q9GZX9	8	66	Twisted gastrulation protein homolog 1	
 Q9GZY0	human	Q9GZY0	NXF2	Q9GZY0	16	100	Nuclear RNA export factor 2 (Cancer/testis antigen 39) (CT39	
 Q9GZY1	human	Q9GZY1	PBOV1	Q9GZY1	1	16	Prostate and breast cancer overexpressed gene 1 protein (Pro	
-Q9GZY4	human	Q9GZY4	COA1	Q9GZY4	9	118	Cytochrome c oxidase assembly factor 1 homolog (Mitochondria	
+Q9GZY4	human	Q9GZY4	COA1	Q9GZY4	15	124	Cytochrome c oxidase assembly factor 1 homolog (Mitochondria	
 Q9GZY6	human	Q9GZY6	LAT2	Q9GZY6	27	146	Linker for activation of T-cells family member 2 (Linker for	
-Q9GZY8	human	Q9GZY8	MFF	Q9GZY8	29	201	Mitochondrial fission factor	
+Q9GZY8	human	Q9GZY8	MFF	Q9GZY8	32	204	Mitochondrial fission factor	
 Q9GZZ0	human	Q9GZZ0	HOXD1	Q9GZZ0	79	393	Homeobox protein Hox-D1 (Homeobox protein Hox-GG)	
 Q9GZZ1	human	Q9GZZ1	NAA50	Q9GZZ1	31	279	N-alpha-acetyltransferase 50 (hNaa50p) (EC 2.3.1.258) (N-ace	
 Q9GZZ6	human	Q9GZZ6	CHRNA10	Q9GZZ6	37	90	Neuronal acetylcholine receptor subunit alpha-10 (Nicotinic 	

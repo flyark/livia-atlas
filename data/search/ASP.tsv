@@ -74,13 +74,14 @@ ASPARAGINE	yeast	Q02890	PNG1	Q02890	2	18	Peptide-N(4)-(N-acetyl-beta-glucosaminy
 ASPARAGINE	zebrafish	A3KQK2	asns	A3KQK2	0	11	Asparagine synthetase	w
 ASPARAGINE	zebrafish	Q503I8	ngly1	Q503I8	3	27	Peptide-N(4)-(N-acetyl-beta-glucosaminyl)asparagine amidase	w
 ASPARAGINE	zebrafish	Q8JFW1	asnsd1	Q8JFW1	0	6	Asparagine synthetase domain-containing protein 1	w
-ASPARAGINE--TRNA	fly	FBgn0034177	AsnRS-m	Q7JZR5	2	30	asparagine--tRNA ligase (EC 6.1.1.22)	w
+ASPARAGINE--TRNA	fly	FBgn0034177	AsnRS-m	Q7JZR5	2	31	asparagine--tRNA ligase (EC 6.1.1.22)	w
 ASPARAGINE--TRNA	fly	FBgn0086443	AsnRS	Q9V434	3	125	Asparagine--tRNA ligase, cytoplasmic (EC 6.1.1.22) (Asparagi	w
 ASPARAGINE--TRNA	human	O43776	NARS1	O43776	9	176	Asparagine--tRNA ligase, cytoplasmic (EC 6.1.1.22) (Asparagi	w
-ASPARAGINE--TRNA	human	Q96I59	NARS2	Q96I59	7	149	Asparaginyl-tRNA synthetase (AsnRS) (NARS2) (EC 6.1.1.22) (A	w
+ASPARAGINE--TRNA	human	Q96I59	NARS2	Q96I59	8	150	Asparaginyl-tRNA synthetase (AsnRS) (NARS2) (EC 6.1.1.22) (A	w
 ASPARAGINE--TRNA	worm	Q19722	nars-1	Q19722	2	25	Asparagine--tRNA ligase, cytoplasmic	w
-ASPARAGINE--TRNA	yeast	P25345	SLM5	P25345	3	40	Asparagine--tRNA ligase, mitochondrial	w
+ASPARAGINE--TRNA	yeast	P25345	SLM5	P25345	4	41	Asparagine--tRNA ligase, mitochondrial	w
 ASPARAGINE--TRNA	yeast	P38707	DED81	P38707	3	101	Asparagine--tRNA ligase, cytoplasmic	w
+ASPARAGINE--TRNA	zebrafish	A0A8M9QLG1	nars2	A0A8M9QLG1	2	2	probable asparagine--tRNA ligase, mitochondrial isoform X1	w
 ASPARAGINE--TRNA	zebrafish	A0A8N7TDX3	nars1	A0A8N7TDX3	2	38	Asparagine--tRNA ligase, cytoplasmic	w
 ASPARAGINE-LINKED	fly	FBgn0037743	Alg12	Q9VH78	12	60	Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransfera	w
 ASPARAGINE-LINKED	human	Q2TAA5	ALG11	Q2TAA5	2	149	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
@@ -102,12 +103,12 @@ ASPARAGINYL	human	Q99538	LGMN	Q99538	10	108	Legumain (EC 3.4.22.34) (Asparaginyl
 ASPARAGINYL	zebrafish	A0A2R8QJF6	unm_hu7910	A0A2R8QJF6	1	26	Aspartyl/asparaginyl beta-hydroxylase isoform X3	w
 ASPARAGINYL-TRNA	fly	FBgn0086443	AsnRS	Q9V434	3	125	Asparagine--tRNA ligase, cytoplasmic (EC 6.1.1.22) (Asparagi	w
 ASPARAGINYL-TRNA	human	O43776	NARS1	O43776	9	176	Asparagine--tRNA ligase, cytoplasmic (EC 6.1.1.22) (Asparagi	w
-ASPARAGINYL-TRNA	human	Q96I59	NARS2	Q96I59	7	149	Asparaginyl-tRNA synthetase (AsnRS) (NARS2) (EC 6.1.1.22) (A	w
+ASPARAGINYL-TRNA	human	Q96I59	NARS2	Q96I59	8	150	Asparaginyl-tRNA synthetase (AsnRS) (NARS2) (EC 6.1.1.22) (A	w
 ASPARTASE	human	Q9H6P5	TASP1	Q9H6P5	3	60	Threonine aspartase 1 (Taspase-1) (EC 3.4.25.-) [Cleaved int	w
 ASPARTATE	fly	FBgn0001125	Got2	Q8IPY3	18	260	Aspartate aminotransferase (EC 2.6.1.1)	w
 ASPARTATE	human	A6ND91	ASPDH	A6ND91	1	61	Aspartate dehydrogenase domain-containing protein	w
-ASPARTATE	human	O75746	SLC25A12	O75746	8	271	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	w
-ASPARTATE	human	P00505	GOT2	P00505	9	209	Aspartate aminotransferase, mitochondrial (mAspAT) (EC 2.6.1	w
+ASPARTATE	human	O75746	SLC25A12	O75746	10	272	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	w
+ASPARTATE	human	P00505	GOT2	P00505	11	211	Aspartate aminotransferase, mitochondrial (mAspAT) (EC 2.6.1	w
 ASPARTATE	human	P17174	GOT1	P17174	7	318	Aspartate aminotransferase, cytoplasmic (cAspAT) (EC 2.6.1.1	w
 ASPARTATE	human	P27708	CAD	P27708	4	352	Multifunctional protein CAD (Carbamoyl phosphate synthetase 	w
 ASPARTATE	human	P43003	SLC1A3	P43003	9	184	Excitatory amino acid transporter 1 (Sodium-dependent glutam	w
@@ -120,24 +121,25 @@ ASPARTATE	human	Q6ICH7	ASPHD2	Q6ICH7	3	67	Aspartate beta-hydroxylase domain-cont
 ASPARTATE	human	Q6ZQY3	GADL1	Q6ZQY3	5	99	Acidic amino acid decarboxylase GADL1 (Aspartate 1-decarboxy	w
 ASPARTATE	human	Q8NHS2	GOT1L1	Q8NHS2	2	41	Aspartate aminotransferase, cytoplasmic 2 (EC 2.6.1.1) (Glut	w
 ASPARTATE	human	Q8TCU3	SLC7A13	Q8TCU3	3	44	Solute carrier family 7 member 13 (Sodium-independent aspart	w
-ASPARTATE	human	Q9UJS0	SLC25A13	Q9UJS0	6	277	Electrogenic aspartate/glutamate antiporter SLC25A13, mitoch	w
+ASPARTATE	human	Q9UJS0	SLC25A13	Q9UJS0	8	279	Electrogenic aspartate/glutamate antiporter SLC25A13, mitoch	w
 ASPARTATE	human	Q9Y600	CSAD	Q9Y600	6	91	Cysteine sulfinic acid decarboxylase (EC 4.1.1.29) (Aspartat	w
 ASPARTATE	worm	C0P278	CELE_F17C8.9	C0P278	0	1	Aspartate dehydrogenase domain-containing protein	w
 ASPARTATE	worm	O01804	got-2.1	O01804	3	20	Aspartate aminotransferase	w
-ASPARTATE	worm	Q17994	got-2.2	Q17994	2	61	Aspartate aminotransferase	w
+ASPARTATE	worm	Q17994	got-2.2	Q17994	3	62	Aspartate aminotransferase	w
 ASPARTATE	worm	Q22067	got-1.2	Q22067	2	22	Aspartate aminotransferase, cytoplasmic	w
 ASPARTATE	yeast	P23542	AAT2	P23542	1	32	Aspartate aminotransferase, cytoplasmic	w
 ASPARTATE	yeast	Q01802	AAT1	Q01802	2	13	Aspartate aminotransferase, mitochondrial	w
 ASPARTATE	zebrafish	B0S5J7	asph	B0S5J7	0	3	Aspartate beta-hydroxylase	w
 ASPARTATE	zebrafish	B0UYT6	got1l1	B0UYT6	4	20	aspartate transaminase	w
-ASPARTATE	zebrafish	Q7SYK7	got2a	Q7SYK7	4	45	Aspartate aminotransferase, mitochondrial	w
+ASPARTATE	zebrafish	Q7SYK7	got2a	Q7SYK7	8	49	Aspartate aminotransferase, mitochondrial	w
 ASPARTATE	zebrafish	Q7ZUW8	got1	Q7ZUW8	2	20	Aspartate aminotransferase	w
 ASPARTATE--TRNA	fly	FBgn0002069	AspRS	Q7K0E6	7	162	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	w
 ASPARTATE--TRNA	human	P14868	DARS1	P14868	9	274	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	w
 ASPARTATE--TRNA	human	Q6PI48	DARS2	Q6PI48	8	206	Aspartate--tRNA ligase, mitochondrial (EC 6.1.1.12) (Asparty	w
 ASPARTATE--TRNA	worm	Q03577	dars-1	Q03577	2	35	Aspartate--tRNA ligase, cytoplasmic	w
 ASPARTATE--TRNA	yeast	P04802	DPS1	P04802	2	59	Aspartate--tRNA ligase, cytoplasmic	w
-ASPARTATE--TRNA	yeast	P15179	MSD1	P15179	0	16	Aspartate--tRNA ligase, mitochondrial	w
+ASPARTATE--TRNA	yeast	P15179	MSD1	P15179	2	18	Aspartate--tRNA ligase, mitochondrial	w
+ASPARTATE--TRNA	zebrafish	A0A8N7UW37	dars2	A0A8N7UW37	2	2	aspartate--tRNA ligase, mitochondrial	w
 ASPARTATE--TRNA	zebrafish	E9QFP3	dars2	E9QFP3	0	11	Aspartate--tRNA ligase, mitochondrial	w
 ASPARTATE-BASED	fly	FBgn0036760	CG5567	Q9VVL5	2	7	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	w
 ASPARTATE-BASED	fly	FBgn0052487	CG32487	Q9VZW4	0	1	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	w
@@ -147,7 +149,7 @@ ASPARTATE-CONTAINING	human	P31146	CORO1A	P31146	40	411	Coronin-1A (Coronin-like 
 ASPARTATE-GLUTAMATE	yeast	Q12482	AGC1	Q12482	0	8	Mitochondrial aspartate-glutamate transporter AGC1	w
 ASPARTATE-RICH	fly	FBgn0263026	CG43321	M9NEV9	1	8	Essential MCU regulator, mitochondrial (Single-pass membrane	w
 ASPARTATE-RICH	human	Q6PGQ1	DRICH1	Q6PGQ1	9	52	Aspartate-rich protein 1	w
-ASPARTATE-RICH	human	Q9H4I9	SMDT1	Q9H4I9	20	117	Essential MCU regulator, mitochondrial (Single-pass membrane	w
+ASPARTATE-RICH	human	Q9H4I9	SMDT1	Q9H4I9	21	118	Essential MCU regulator, mitochondrial (Single-pass membrane	w
 ASPARTATE-SEMIALDEHYDE	yeast	P13663	HOM2	P13663	0	40	Aspartate-semialdehyde dehydrogenase	w
 ASPARTIC	human	Q53RT3	ASPRV1	Q53RT3	4	51	Retroviral-like aspartic protease 1 (EC 3.4.23.-) (Skin-spec	w
 ASPARTIC	worm	G5EEI4	asp-1	G5EEI4	1	7	Aspartic protease 1	w
@@ -178,7 +180,7 @@ ASPARTYL	yeast	P38821	APE4	P38821	0	16	Aspartyl aminopeptidase 4	w
 ASPARTYL	zebrafish	A0A2R8QJF6	unm_hu7910	A0A2R8QJF6	1	26	Aspartyl/asparaginyl beta-hydroxylase isoform X3	w
 ASPARTYL	zebrafish	F1QRP8	dnpep	F1QRP8	0	11	Aspartyl aminopeptidase	w
 ASPARTYL-TRNA	fly	FBgn0002069	AspRS	Q7K0E6	7	162	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	w
-ASPARTYL-TRNA	fly	FBgn0051739	AspRS-m	Q9VJH2	1	27	Aspartyl-tRNA synthetase, mitochondrial	w
+ASPARTYL-TRNA	fly	FBgn0051739	AspRS-m	Q9VJH2	2	29	Aspartyl-tRNA synthetase, mitochondrial	w
 ASPARTYL-TRNA	human	P14868	DARS1	P14868	9	274	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	w
 ASPARTYL-TRNA	human	Q6PI48	DARS2	Q6PI48	8	206	Aspartate--tRNA ligase, mitochondrial (EC 6.1.1.12) (Asparty	w
 ASPARTYLGLUCOSAMINIDASE	fly	FBgn0033431	CG1827	Q8MR45	9	246	Putative N(4)-(beta-N-acetylglucosaminyl)-L-asparaginase CG1	w
@@ -239,7 +241,7 @@ ASPROSIN	human	P35555	FBN1	P35555	0	24	Fibrillin-1 [Cleaved into: Asprosin]	w
 ASPRS	fly	FBgn0002069	AspRS	Q7K0E6	7	162	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	
 ASPRS	human	P14868	DARS1	P14868	9	274	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	w
 ASPRS	human	Q6PI48	DARS2	Q6PI48	8	206	Aspartate--tRNA ligase, mitochondrial (EC 6.1.1.12) (Asparty	w
-ASPRS-M	fly	FBgn0051739	AspRS-m	Q9VJH2	1	27	Aspartyl-tRNA synthetase, mitochondrial	
+ASPRS-M	fly	FBgn0051739	AspRS-m	Q9VJH2	2	29	Aspartyl-tRNA synthetase, mitochondrial	
 ASPRV1	human	Q53RT3	ASPRV1	Q53RT3	4	51	Retroviral-like aspartic protease 1 (EC 3.4.23.-) (Skin-spec	
 ASPRV1	mus-musculus	Q09PK2	Asprv1	Q09PK2	0	2	Retroviral-like aspartic protease 1	
 ASPS	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PHM7	aspS	Q9PHM7	1	13	Aspartate--tRNA(Asp/Asn) ligase	

@@ -11,7 +11,7 @@ Q63054	rattus-norvegicus	Q63054	Ica1	Q63054	3	3	Islet cell autoantigen 1
 Q63055	rattus-norvegicus	Q63055	Arfrp1	Q63055	7	28	ADP-ribosylation factor-related protein 1	
 Q63060	rattus-norvegicus	Q63060	Gk	Q63060	4	32	Glycerol kinase	
 Q63064	rattus-norvegicus	Q63064	Cd52	Q63064	0	17	CAMPATH-1 antigen	
-Q63065	rattus-norvegicus	Q63065	Pdk1	Q63065	4	37	PDK p48	
+Q63065	rattus-norvegicus	Q63065	Pdk1	Q63065	9	42	PDK p48	
 Q63068	rattus-norvegicus	Q63068	Phax	Q63068	2	16	Phosphorylated adapter RNA export protein	
 Q63072	rattus-norvegicus	Q63072	Bst1	Q63072	1	14	ADP-ribosyl cyclase/cyclic ADP-ribose hydrolase 2	
 Q63073	rattus-norvegicus	Q63073	Btg1	Q63073	2	4	Protein BTG1	
@@ -30,13 +30,13 @@ Q63113	rattus-norvegicus	Q63113	Fxyd4	Q63113	4	21	FXYD domain-containing ion tra
 Q63116	rattus-norvegicus	Q63116	Kit	Q63116	18	109	Mast/stem cell growth factor receptor	
 Q63118	rattus-norvegicus	Q63118	Calcrl	Q63118	11	31	Calcitonin gene-related peptide type 1 receptor	
 Q63135	rattus-norvegicus	Q63135	Cr1l	Q63135	0	11	Complement component receptor 1-like protein	
-Q63147	rattus-norvegicus	Q63147	Alas2	Q63147	1	11	5-aminolevulinate synthase, erythroid-specific, mitochondria	
+Q63147	rattus-norvegicus	Q63147	Alas2	Q63147	4	14	5-aminolevulinate synthase, erythroid-specific, mitochondria	
 Q63148	rattus-norvegicus	Q63148	Chrd	Q63148	6	13	Chordin	
 Q63149	rattus-norvegicus	Q63149	Cdh4	Q63149	4	44	Cadherin-4	
 Q63150	rattus-norvegicus	Q63150	Dpys	Q63150	4	6	Dihydropyrimidinase	
 Q63151	rattus-norvegicus	Q63151	Acsl3	Q63151	0	11	Fatty acid CoA ligase Acsl3	
 Q63155	rattus-norvegicus	Q63155	Dcc	Q63155	7	42	Netrin receptor DCC	
-Q63159	rattus-norvegicus	Q63159	Coq3	Q63159	1	11	Ubiquinone biosynthesis O-methyltransferase, mitochondrial	
+Q63159	rattus-norvegicus	Q63159	Coq3	Q63159	2	12	Ubiquinone biosynthesis O-methyltransferase, mitochondrial	
 Q63180	rattus-norvegicus	Q63180	Adam7	Q63180	0	3	Disintegrin and metalloproteinase domain-containing protein 	
 Q63184	rattus-norvegicus	Q63184	Eif2ak2	Q63184	1	64	Interferon-induced, double-stranded RNA-activated protein ki	
 Q63185	rattus-norvegicus	Q63185	Eif2ak1	Q63185	1	10	Eukaryotic translation initiation factor 2-alpha kinase 1	
@@ -77,14 +77,14 @@ Q63321	rattus-norvegicus	Q63321	Plod1	Q63321	2	27	Procollagen-lysine,2-oxoglutar
 Q63327	rattus-norvegicus	Q63327	Mobp	Q63327	0	4	Myelin-associated oligodendrocyte basic protein	
 Q63340	rattus-norvegicus	Q63340	Dusp7	Q63340	4	8	Dual specificity protein phosphatase 7	
 Q63341	rattus-norvegicus	Q63341	Mmp12	Q63341	1	15	Macrophage metalloelastase	
-Q63342	rattus-norvegicus	Q63342	Dmgdh	Q63342	0	17	Dimethylglycine dehydrogenase, mitochondrial	
+Q63342	rattus-norvegicus	Q63342	Dmgdh	Q63342	2	20	Dimethylglycine dehydrogenase, mitochondrial	
 Q63344	rattus-norvegicus	Q63344	Slc16a7	Q63344	2	7	Monocarboxylate transporter 2	
 Q63345	rattus-norvegicus	Q63345	Mog	Q63345	0	18	Myelin-oligodendrocyte glycoprotein	
 Q63347	rattus-norvegicus	Q63347	Psmc2	Q63347	5	96	26S proteasome regulatory subunit 7	
 Q63355	rattus-norvegicus	Q63355	Myo1c	Q63355	2	73	Unconventional myosin-Ic	
 Q63356	rattus-norvegicus	Q63356	Myo1e	Q63356	9	52	Unconventional myosin-Ie	
 Q63357	rattus-norvegicus	Q63357	Myo1d	Q63357	0	7	Unconventional myosin-Id	
-Q63362	rattus-norvegicus	Q63362	Ndufa5	Q63362	4	237	NADH dehydrogenase	
+Q63362	rattus-norvegicus	Q63362	Ndufa5	Q63362	5	237	NADH dehydrogenase	
 Q63364	rattus-norvegicus	Q63364	Pja2	Q63364	1	9	E3 ubiquitin-protein ligase Praja-2	
 Q63366	rattus-norvegicus	Q63366	Nxph1	Q63366	0	3	Neurexophilin-1	
 Q63369	rattus-norvegicus	Q63369	Nfkb1	Q63369	15	131	Nuclear factor NF-kappa-B p105 subunit	
@@ -164,7 +164,7 @@ Q63615	rattus-norvegicus	Q63615	Vps33a	Q63615	10	88	Vacuolar protein sorting-ass
 Q63616	rattus-norvegicus	Q63616	Vps33b	Q63616	5	51	Vacuolar protein sorting-associated protein 33B	
 Q63617	rattus-norvegicus	Q63617	Hyou1	Q63617	6	96	Hypoxia up-regulated protein 1	
 Q63618	rattus-norvegicus	Q63618	Espn	Q63618	7	41	Espin	
-Q63619	rattus-norvegicus	Q63619	Coq7	Q63619	1	9	NADPH-dependent 3-demethoxyubiquinone 3-hydroxylase, mitocho	
+Q63619	rattus-norvegicus	Q63619	Coq7	Q63619	13	21	NADPH-dependent 3-demethoxyubiquinone 3-hydroxylase, mitocho	
 Q63621	rattus-norvegicus	Q63621	Il1rap	Q63621	4	30	Interleukin-1 receptor accessory protein	
 Q63622	rattus-norvegicus	Q63622	Dlg2	Q63622	3	82	Disks large homolog 2	
 Q63623	rattus-norvegicus	Q63623	Scaf8	Q63623	5	30	SR-related and CTD-associated factor 8	
@@ -191,12 +191,12 @@ Q63678	rattus-norvegicus	Q63678	Azgp1	Q63678	2	18	Zinc-alpha-2-glycoprotein
 Q63679	rattus-norvegicus	Q63679	Kdm3a	Q63679	1	31	Lysine-specific demethylase 3A	
 Q63686	rattus-norvegicus	Q63686	Cdk16	Q63686	18	59	Cyclin-dependent kinase 16	
 Q63688	rattus-norvegicus	Q63688	Cyp7b1	Q63688	0	4	25-hydroxycholesterol 7-alpha-hydroxylase	
-Q63690	rattus-norvegicus	Q63690	Bax	Q63690	5	77	Apoptosis regulator BAX	
+Q63690	rattus-norvegicus	Q63690	Bax	Q63690	9	84	Apoptosis regulator BAX	
 Q63691	rattus-norvegicus	Q63691	Cd14	Q63691	3	28	Monocyte differentiation antigen CD14	
 Q63692	rattus-norvegicus	Q63692	Cdc37	Q63692	7	118	Hsp90 co-chaperone Cdc37	
 Q63699	rattus-norvegicus	Q63699	Cdk2	Q63699	36	187	Cyclin-dependent kinase 2	
 Q63704	rattus-norvegicus	Q63704	Cpt1b	Q63704	1	5	Carnitine O-palmitoyltransferase 1, muscle isoform	
-Q63707	rattus-norvegicus	Q63707	Dhodh	Q63707	0	7	Dihydroorotate dehydrogenase (quinone), mitochondrial	
+Q63707	rattus-norvegicus	Q63707	Dhodh	Q63707	5	12	Dihydroorotate dehydrogenase (quinone), mitochondrial	
 Q63713	rattus-norvegicus	Q63713	Rasa2	Q63713	3	3	Ras GTPase-activating protein 2	
 Q63716	rattus-norvegicus	Q63716	Prdx1	Q63716	1	50	Peroxiredoxin-1	
 Q63722	rattus-norvegicus	Q63722	Jag1	Q63722	4	38	Protein jagged-1	
@@ -205,7 +205,7 @@ Q63737	rattus-norvegicus	Q63737	Pdcl	Q63737	7	21	Phosducin-like protein
 Q63739	mus-musculus	Q63739	Ptp4a1	Q63739	2	7	Protein tyrosine phosphatase type IVA 1	
 Q63744	rattus-norvegicus	Q63744	Dlc1	Q63744	1	7	Rho GTPase-activating protein 7	
 Q63746	rattus-norvegicus	Q63746	Nfkbia	Q63746	13	75	NF-kappa-B inhibitor alpha	
-Q63750	rattus-norvegicus	Q63750	Mrpl23	Q63750	9	332	Large ribosomal subunit protein uL23m	
+Q63750	rattus-norvegicus	Q63750	Mrpl23	Q63750	12	334	Large ribosomal subunit protein uL23m	
 Q63754	rattus-norvegicus	Q63754	Sncb	Q63754	0	5	Beta-synuclein	
 Q63764	rattus-norvegicus	Q63764	Azin1	Q63764	5	11	Antizyme inhibitor 1	
 Q63767	rattus-norvegicus	Q63767	Bcar1	Q63767	49	140	Breast cancer anti-estrogen resistance protein 1	
@@ -256,10 +256,12 @@ Q63HQ0	human	Q63HQ0	AP1AR	Q63HQ0	5	55	AP-1 complex-associated regulatory protein
 Q63HQ2	human	Q63HQ2	EGFLAM	Q63HQ2	13	135	Pikachurin (Agrin-like protein) (EGF-like, fibronectin type-	
 Q63HR2	human	Q63HR2	TNS2	Q63HR2	72	397	Tensin-2 (EC 3.1.3.48) (C1 domain-containing phosphatase and	
 Q63ZE4	human	Q63ZE4	SLC22A10	Q63ZE4	2	33	Solute carrier family 22 member 10 (Organic anion transporte	
+Q63ZN0	xenopus-laevis	Q63ZN0	prelid3b.S	Q63ZN0	4	4	LOC494772 protein	
 Q63ZV0	mus-musculus	Q63ZV0	Insm1	Q63ZV0	1	15	Insulinoma-associated protein 1	
 Q63ZV7	rattus-norvegicus	Q63ZV7	Swi5	Q63ZV7	1	11	DNA repair protein SWI5 homolog	
 Q63ZV9	zebrafish	Q63ZV9	ptp4a2a	Q63ZV9	5	8	Protein tyrosine phosphatase 4A2a	
-Q63ZW2	zebrafish	Q63ZW2	chchd6a	Q63ZW2	4	21	MICOS complex subunit mic25a	
+Q63ZW2	zebrafish	Q63ZW2	chchd6a	Q63ZW2	6	23	MICOS complex subunit mic25a	
 Q63ZY3	human	Q63ZY3	KANK2	Q63ZY3	110	370	KN motif and ankyrin repeat domain-containing protein 2 (Ank	
 Q63ZY6	human	Q63ZY6	NSUN5P2	Q63ZY6	0	28	Putative methyltransferase NSUN5C (EC 2.1.1.-) (NOL1/NOP2/Su	
 Q63ZY7	rattus-norvegicus	Q63ZY7	Uxt	Q63ZY7	4	21	Protein UXT	
+Q63ZY8	rattus-norvegicus	Q63ZY8	Chchd10	Q63ZY8	7	7	Coiled-coil-helix-coiled-coil-helix domain containing 10	

@@ -33,8 +33,8 @@ NIP2-1	zea-mays	Q19KC1	NIP2-1	Q19KC1	0	4	Aquaporin NIP2-1
 NIP2-2	glycine-max	C6TKR9	NIP2-2	C6TKR9	0	1	Aquaporin NIP2-1	
 NIP2-2	zea-mays	Q9ATN2	NIP2-2	Q9ATN2	0	2	Aquaporin NIP2-2	
 NIP2-3	zea-mays	Q9AT74	NIP2-3	Q9AT74	0	2	Aquaporin NIP2-3	
-NIP3	human	Q12983	BNIP3	Q12983	45	202		
-NIP3	worm	Q09969	dct-1	Q09969	1	4	NIP3 homolog	w
+NIP3	human	Q12983	BNIP3	Q12983	52	209		
+NIP3	worm	Q09969	dct-1	Q09969	3	6	NIP3 homolog	w
 NIP3-1	glycine-max	K7M7N1	NIP3-1	K7M7N1	0	1	Nodulin-26	
 NIP3-1	oryza-sativa-subsp-japonica	Q0IWF3	NIP3-1	Q0IWF3	1	1	Aquaporin NIP3-1	
 NIP3-1	zea-mays	Q9ATN1	NIP3-1	Q9ATN1	0	3	Aquaporin NIP3-1	
@@ -114,26 +114,35 @@ NIPPED-A	fly	FBgn0053554	Nipped-A	Q8I8U7	0	2	Transcription-associated protein 1 
 NIPPED-B	fly	FBgn0026401	Nipped-B	Q7PLI2	4	21	Nipped-B protein (SCC2 homolog)	w
 NIPPED-B	fly	FBgn0026401	Nipped-B	Q7PLI2	4	21	Nipped-B protein (SCC2 homolog)	w
 NIPPED-B-LIKE	human	Q6KC79	NIPBL	Q6KC79	14	420	Nipped-B-like protein (Delangin) (SCC2 homolog)	w
-NIPS1_HUMAN	human	Q9BPW8	NIPSNAP1	Q9BPW8	6	236		
-NIPS2_HUMAN	human	O75323	NIPSNAP2	O75323	4	160		
+NIPS1_HUMAN	human	Q9BPW8	NIPSNAP1	Q9BPW8	7	237		
+NIPS2_DANRE	zebrafish	Q9PU58	nipsnap2	Q9PU58	1	2		
+NIPS2_HUMAN	human	O75323	NIPSNAP2	O75323	7	162		
 NIPSNAP	fly	FBgn0030724	Nipsnap	Q9VXK0	1	13	Protein NipSnap	w
 NIPSNAP	fly	FBgn0030724	Nipsnap	Q9VXK0	1	13	Protein NipSnap	w
-NIPSNAP	human	O75323	NIPSNAP2	O75323	4	160	Protein NipSnap homolog 2 (NipSnap2) (Glioblastoma-amplified	w
-NIPSNAP	human	Q9BPW8	NIPSNAP1	Q9BPW8	6	236	Protein NipSnap homolog 1 (NipSnap1)	w
-NIPSNAP	human	Q9BS92	NIPSNAP3B	Q9BS92	2	39	Protein NipSnap homolog 3B (NipSnap3B) (SNAP1)	w
+NIPSNAP	human	O75323	NIPSNAP2	O75323	7	162	Protein NipSnap homolog 2 (NipSnap2) (Glioblastoma-amplified	w
+NIPSNAP	human	Q9BPW8	NIPSNAP1	Q9BPW8	7	237	Protein NipSnap homolog 1 (NipSnap1)	w
+NIPSNAP	human	Q9BS92	NIPSNAP3B	Q9BS92	4	40	Protein NipSnap homolog 3B (NipSnap3B) (SNAP1)	w
 NIPSNAP	human	Q9UFN0	NIPSNAP3A	Q9UFN0	2	113	Protein NipSnap homolog 3A (NipSnap3A) (Protein NipSnap homo	w
 NIPSNAP	worm	P34492	K02D10.1	P34492	0	4	Putative NipSnap protein K02D10.1	w
 NIPSNAP	zebrafish	F6NVH9	nipsnap1	F6NVH9	0	1	Protein NipSnap homolog 1	w
-NIPSNAP1	human	Q9BPW8	NIPSNAP1	Q9BPW8	6	236	Protein NipSnap homolog 1 (NipSnap1)	
-NIPSNAP1	mus-musculus	O55125	Nipsnap1	O55125	1	19	Protein NipSnap homolog 1	
-NIPSNAP1	rattus-norvegicus	G3V728	Nipsnap1	G3V728	0	10	Nipsnap homolog 1	
+NIPSNAP	zebrafish	Q9PU58	nipsnap2	Q9PU58	1	2	Protein NipSnap homolog 2	w
+NIPSNAP1	human	Q9BPW8	NIPSNAP1	Q9BPW8	7	237	Protein NipSnap homolog 1 (NipSnap1)	
+NIPSNAP1	mus-musculus	O55125	Nipsnap1	O55125	3	21	Protein NipSnap homolog 1	
+NIPSNAP1	pan-troglodytes	H2QLG2	NIPSNAP1	H2QLG2	2	3	Nipsnap homolog 1	
+NIPSNAP1	rattus-norvegicus	G3V728	Nipsnap1	G3V728	2	12	Nipsnap homolog 1	
 NIPSNAP1	zebrafish	F6NVH9	nipsnap1	F6NVH9	0	1	Protein NipSnap homolog 1	
-NIPSNAP2	human	O75323	NIPSNAP2	O75323	4	160	Protein NipSnap homolog 2 (NipSnap2) (Glioblastoma-amplified	
-NIPSNAP2	mus-musculus	O55126	Nipsnap2	O55126	0	10	Protein NipSnap homolog 2	
-NIPSNAP2	rattus-norvegicus	Q5RK08	Nipsnap2	Q5RK08	0	12	Glioblastoma amplified sequence	
-NIPSNAP3	human	Q9BS92	NIPSNAP3B	Q9BS92	2	39		
+NIPSNAP1.S	xenopus-laevis	A0A1L8HPW1	nipsnap1.S	A0A1L8HPW1	2	2	protein NipSnap homolog 1	
+NIPSNAP2	human	O75323	NIPSNAP2	O75323	7	162	Protein NipSnap homolog 2 (NipSnap2) (Glioblastoma-amplified	
+NIPSNAP2	mus-musculus	O55126	Nipsnap2	O55126	2	12	Protein NipSnap homolog 2	
+NIPSNAP2	pan-troglodytes	A0A2I3S6C3	NIPSNAP2	A0A2I3S6C3	3	4	Glioblastoma amplified sequence	
+NIPSNAP2	rattus-norvegicus	Q5RK08	Nipsnap2	Q5RK08	2	15	Glioblastoma amplified sequence	
+NIPSNAP2	zebrafish	Q9PU58	nipsnap2	Q9PU58	1	2	Protein NipSnap homolog 2	
+NIPSNAP2.L	xenopus-laevis	A0A1L8HG85	nipsnap2.L	A0A1L8HG85	3	3	protein NipSnap homolog 2	
+NIPSNAP3	human	Q9BS92	NIPSNAP3B	Q9BS92	4	40		
 NIPSNAP3A	human	Q9UFN0	NIPSNAP3A	Q9UFN0	2	113	Protein NipSnap homolog 3A (NipSnap3A) (Protein NipSnap homo	
 NIPSNAP3A	mus-musculus	G3X8S9	Nipsnap3a	G3X8S9	0	1	Nipsnap homolog 3A	
-NIPSNAP3B	human	Q9BS92	NIPSNAP3B	Q9BS92	2	39	Protein NipSnap homolog 3B (NipSnap3B) (SNAP1)	
+NIPSNAP3A	pan-troglodytes	H2QXM5	NIPSNAP3A	H2QXM5	1	1	Nipsnap homolog 3A	
+NIPSNAP3B	human	Q9BS92	NIPSNAP3B	Q9BS92	4	40	Protein NipSnap homolog 3B (NipSnap3B) (SNAP1)	
 NIPSNAP3B	mus-musculus	Q9CQE1	Nipsnap3b	Q9CQE1	0	4	Protein NipSnap homolog 3B	
+NIPSNAP3B	pan-troglodytes	A0A2I3SV03	NIPSNAP3B	A0A2I3SV03	5	5	Nipsnap homolog 3B	
 NIPSNAP4	human	Q9UFN0	NIPSNAP3A	Q9UFN0	2	113		

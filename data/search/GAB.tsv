@@ -22,7 +22,7 @@ GABA	fly	FBgn0001134	Grd	Q24352	7	21	Gamma-aminobutyric acid receptor alpha-like
 GABA	fly	FBgn0010240	Lcch3	Q08832	1	6	Gamma-aminobutyric acid receptor subunit beta-like (GABA(A) 	w
 GABA	fly	FBgn0011603	ine	Q9VR07	0	9	Sodium- and chloride-dependent GABA transporter ine (Protein	w
 GABA	fly	FBgn0033911	Vgat	A1Z9M6	0	19	Vesicular GABA transporter	w
-GABA	fly	FBgn0036927	Gabat	Q9VW68	0	39	(S)-3-amino-2-methylpropionate transaminase (EC 2.6.1.19) (E	w
+GABA	fly	FBgn0036927	Gabat	Q9VW68	1	40	(S)-3-amino-2-methylpropionate transaminase (EC 2.6.1.19) (E	w
 GABA	human	A6NL88	SHISA7	A6NL88	3	56	Protein shisa-7 (Cystine-knot AMPAR modulating protein of 59	w
 GABA	human	A8MPY1	GABRR3	A8MPY1	34	45	Gamma-aminobutyric acid receptor subunit rho-3 (GABA(A) rece	w
 GABA	human	F5GZY7	GABARAPL1	F5GZY7	70	233	GABA type A receptor associated protein like 1	w
@@ -45,7 +45,7 @@ GABA	human	P48066	SLC6A11	P48066	1	57	Sodium- and chloride-dependent GABA transp
 GABA	human	P48169	GABRA4	P48169	33	106	Gamma-aminobutyric acid receptor subunit alpha-4 (GABA(A) re	w
 GABA	human	P60520	GABARAPL2	P60520	97	319	Gamma-aminobutyric acid receptor-associated protein-like 2 (	w
 GABA	human	P78334	GABRE	P78334	30	118	Gamma-aminobutyric acid receptor subunit epsilon (GABA(A) re	w
-GABA	human	P80404	ABAT	P80404	2	89	4-aminobutyrate aminotransferase, mitochondrial (EC 2.6.1.19	w
+GABA	human	P80404	ABAT	P80404	4	91	4-aminobutyrate aminotransferase, mitochondrial (EC 2.6.1.19	w
 GABA	human	Q16445	GABRA6	Q16445	41	181	Gamma-aminobutyric acid receptor subunit alpha-6 (GABA(A) re	w
 GABA	human	Q8N1C3	GABRG1	Q8N1C3	31	142	Gamma-aminobutyric acid receptor subunit gamma-1 (GABA(A) re	w
 GABA	human	Q99928	GABRG3	Q99928	30	89	Gamma-aminobutyric acid receptor subunit gamma-3 (GABA(A) re	w
@@ -62,7 +62,7 @@ GABA	zebrafish	F1QAJ3	gabbr1b	F1QAJ3	3	31	Gamma-aminobutyric acid (GABA) B recep
 GABA	zebrafish	Q0P445	gabrr2a	Q0P445	15	17	GABA(C) receptor	w
 GABA	zebrafish	Q1LUN9	gabbr2	Q1LUN9	3	44	Gamma-aminobutyric acid (GABA) B receptor, 2	w
 GABA	zebrafish	Q6PSS4	gabarapa	Q6PSS4	45	96	GABA(A) receptor associated protein	w
-GABA-AT	human	P80404	ABAT	P80404	2	89	4-aminobutyrate aminotransferase, mitochondrial (EC 2.6.1.19	w
+GABA-AT	human	P80404	ABAT	P80404	4	91	4-aminobutyrate aminotransferase, mitochondrial (EC 2.6.1.19	w
 GABA-B	fly	FBgn0027575	GABA-B-R2	A0A0B4LHR4	6	35	Metabotropic GABA-B receptor subtype 2, isoform C	w
 GABA-B	fly	FBgn0031275	GABA-B-R3	Q9VPS7	10	95	Metabotropic GABA-B receptor subtype 3, isoform A (Metabotro	w
 GABA-B	fly	FBgn0260446	GABA-B-R1	Q9V3Q9	6	68	IP03705p (Metabotropic GABA-B receptor subtype 1, isoform B)	w
@@ -117,8 +117,8 @@ GABARAPL2	rattus-norvegicus	P60522	Gabarapl2	P60522	40	102	Gamma-aminobutyric ac
 GABARAPL2	zebrafish	Q6TH05	gabarapl2	Q6TH05	41	96	Gamma-aminobutyric acid receptor-associated protein-like 2	
 GABARAPL3	human	Q9BY60	GABARAPL3	Q9BY60	11	69	Gamma-aminobutyric acid receptor-associated protein-like 3 (	
 GABARAPL4	rattus-norvegicus	A0A0G2JU55	Gabarapl4	A0A0G2JU55	35	85	Gamma-aminobutyric acid receptor-associated protein-like 2	
-GABAT	fly	FBgn0036927	Gabat	Q9VW68	0	39	(S)-3-amino-2-methylpropionate transaminase (EC 2.6.1.19) (E	
-GABAT	human	P80404	ABAT	P80404	2	89		
+GABAT	fly	FBgn0036927	Gabat	Q9VW68	1	40	(S)-3-amino-2-methylpropionate transaminase (EC 2.6.1.19) (E	
+GABAT	human	P80404	ABAT	P80404	4	91		
 GABATR	human	P30531	SLC6A1	P30531	8	170		
 GABBR1	human	Q9UBS5	GABBR1	Q9UBS5	48	271	Gamma-aminobutyric acid type B receptor subunit 1 (GABA-B re	
 GABBR1	mus-musculus	Q9WV18	Gabbr1	Q9WV18	9	69	Gamma-aminobutyric acid type B receptor subunit 1	
@@ -243,4 +243,4 @@ GABT	escherichia-coli-83333	P22256	gabT	P22256	1	2	4-aminobutyrate aminotransfer
 GABT	mycobacterium-leprae	P40829	gabT	P40829	0	3	4-aminobutyrate aminotransferase	
 GABT1	human	P30531	SLC6A1	P30531	8	170		
 GABT3	human	P48066	SLC6A11	P48066	1	57		
-GABT_HUMAN	human	P80404	ABAT	P80404	2	89		
+GABT_HUMAN	human	P80404	ABAT	P80404	4	91		

@@ -5,7 +5,7 @@ Q07009	rattus-norvegicus	Q07009	Capn2	Q07009	5	30	Calpain-2 catalytic subunit
 Q07011	human	Q07011	TNFRSF9	Q07011	69	425	Tumor necrosis factor receptor superfamily member 9 (4-1BB l	
 Q07014	rattus-norvegicus	Q07014	Lyn	Q07014	19	205	Tyrosine-protein kinase Lyn	
 Q07020	human	Q07020	RPL18	Q07020	75	909	Large ribosomal subunit protein eL18 (60S ribosomal protein 	
-Q07021	human	Q07021	C1QBP	Q07021	24	586	Complement component 1 Q subcomponent-binding protein, mitoc	
+Q07021	human	Q07021	C1QBP	Q07021	25	587	Complement component 1 Q subcomponent-binding protein, mitoc	
 Q07032	virus	Q07032	OPG128	Q07032	4	199	Protein OPG128	
 Q07033	virus	Q07033	D12L	Q07033	13	199	Complement control protein C3	
 Q07035	virus	Q07035	C4R	Q07035	8	199	Q07035_VAR67	
@@ -16,7 +16,7 @@ Q07044	virus	Q07044	D5L	Q07044	7	199	Q07044_VAR67
 Q07045	virus	Q07045	D6L	Q07045	3	199	Q07045_VAR67	
 Q07046	virus	Q07046	D7L	Q07046	9	199	Q07046_VAR67	
 Q07065	human	Q07065	CKAP4	Q07065	21	612	Cytoskeleton-associated protein 4 (63-kDa cytoskeleton-linki	
-Q07066	rattus-norvegicus	Q07066	Pxmp2	Q07066	1	2	Peroxisomal membrane protein 2	
+Q07066	rattus-norvegicus	Q07066	Pxmp2	Q07066	2	4	Peroxisomal membrane protein 2	
 Q07071	rattus-norvegicus	Q07071	Gckr	Q07071	0	6	Glucokinase regulatory protein	
 Q07075	human	Q07075	ENPEP	Q07075	2	51	Glutamyl aminopeptidase (EAP) (EC 3.4.11.7) (Aminopeptidase 	
 Q07076	mus-musculus	Q07076	Anxa7	Q07076	2	52	Annexin A7	
@@ -219,7 +219,7 @@ Q07395	yeast	Q07395	SYO1	Q07395	2	22	Synchronized import protein 1
 Q07407	fly	FBgn0010389	htl	Q07407	401	3639	Fibroblast growth factor receptor homolog 1 (EC 2.7.10.1) (D	
 Q07409	mus-musculus	Q07409	Cntn3	Q07409	3	9	Contactin-3	
 Q07410	yeast	Q07410	YDL062W	Q07410	0	1	Putative uncharacterized protein YDL062W	
-Q07417	mus-musculus	Q07417	Acads	Q07417	6	26	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
+Q07417	mus-musculus	Q07417	Acads	Q07417	13	34	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
 Q07418	yeast	Q07418	PEX19	Q07418	3	46	Peroxisomal membrane protein import receptor PEX19	
 Q07424	mus-musculus	Q07424	Cdx4	Q07424	0	7	Homeobox protein CDX-4	
 Q07436	fly	FBgn0004583	ex	Q07436	23	58	Protein expanded	
@@ -246,7 +246,7 @@ Q07505	yeast	Q07505	YDL086W	Q07505	0	6	Putative carboxymethylenebutenolidase
 Q07507	human	Q07507	DPT	Q07507	12	152	Dermatopontin (Tyrosine-rich acidic matrix protein) (TRAMP)	
 Q07508	yeast	Q07508	LUC7	Q07508	5	63	Protein LUC7	
 Q07509	yeast	Q07509	YDL094C	Q07509	0	2	Putative uncharacterized protein YDL094C	
-Q07523	rattus-norvegicus	Q07523	Hao2	Q07523	1	19	2-Hydroxyacid oxidase 2	
+Q07523	rattus-norvegicus	Q07523	Hao2	Q07523	2	20	2-Hydroxyacid oxidase 2	
 Q07527	yeast	Q07527	TRM3	Q07527	0	48	tRNA (guanosine(18)-2'-O)-methyltransferase	
 Q07528	yeast	Q07528	ATG20	Q07528	5	41	Autophagy-related protein 20	
 Q07530	yeast	Q07530	YDL114W	Q07530	0	3	Uncharacterized oxidoreductase YDL114W	
@@ -254,7 +254,7 @@ Q07532	yeast	Q07532	IWR1	Q07532	2	19	RNA polymerase II nuclear localization prot
 Q07533	yeast	Q07533	CYK3	Q07533	4	31	Cytokinesis protein 3	
 Q07534	yeast	Q07534	HEM25	Q07534	0	4	Mitochondrial glycine transporter	
 Q07538	schizosaccharomyces-pombe	Q07538	prp4	Q07538	2	26	Serine/threonine-protein kinase prp4	
-Q07540	yeast	Q07540	YFH1	Q07540	4	49	Frataxin homolog, mitochondrial	
+Q07540	yeast	Q07540	YFH1	Q07540	5	50	Frataxin homolog, mitochondrial	
 Q07541	yeast	Q07541	EXP1	Q07541	1	19	ER export of PMA1 protein 1	
 Q07549	yeast	Q07549	SNA4	Q07549	1	42	Protein SNA4	
 Q07551	yeast	Q07551	YDL124W	Q07551	0	10	NADPH-dependent alpha-keto amide reductase	
@@ -325,15 +325,15 @@ Q07798	yeast	Q07798	SPO75	Q07798	0	7	Sporulation-specific protein 75
 Q07799	yeast	Q07799	LMO1	Q07799	0	11	ELMO family protein LMO1	
 Q07800	yeast	Q07800	PSR1	Q07800	3	13	Phosphatase PSR1	
 Q07802	mus-musculus	Q07802	Ebf1	Q07802	3	14	Transcription factor COE1	
-Q07803	rattus-norvegicus	Q07803	Gfm1	Q07803	3	498	Elongation factor G, mitochondrial	
+Q07803	rattus-norvegicus	Q07803	Gfm1	Q07803	8	503	Elongation factor G, mitochondrial	
 Q07804	yeast	Q07804	YEH1	Q07804	0	21	Sterol esterase 1	
 Q07806	pseudomonas-aeruginosa	Q07806	mrcA	Q07806	1	19	Penicillin-binding protein 1A	
 Q07807	yeast	Q07807	PUF3	Q07807	69	1793	mRNA-binding protein PUF3	
 Q07811	yeast	Q07811	YLL020C	Q07811	0	2	Putative uncharacterized protein YLL020C	
-Q07812	human	Q07812	BAX	Q07812	9	150	Apoptosis regulator BAX (Bcl-2-like protein 4) (Bcl2-L-4)	
-Q07813	mus-musculus	Q07813	Bax	Q07813	3	67	Apoptosis regulator BAX	
-Q07817	human	Q07817	BCL2L1	Q07817	41	330	Bcl-2-like protein 1 (Bcl2-L-1) (Apoptosis regulator Bcl-X)	
-Q07820	human	Q07820	MCL1	Q07820	51	253	Induced myeloid leukemia cell differentiation protein Mcl-1 	
+Q07812	human	Q07812	BAX	Q07812	14	156	Apoptosis regulator BAX (Bcl-2-like protein 4) (Bcl2-L-4)	
+Q07813	mus-musculus	Q07813	Bax	Q07813	7	73	Apoptosis regulator BAX	
+Q07817	human	Q07817	BCL2L1	Q07817	49	338	Bcl-2-like protein 1 (Bcl2-L-1) (Apoptosis regulator Bcl-X)	
+Q07820	human	Q07820	MCL1	Q07820	54	255	Induced myeloid leukemia cell differentiation protein Mcl-1 	
 Q07821	yeast	Q07821	ISA1	Q07821	3	19	Iron-sulfur assembly protein 1	
 Q07824	yeast	Q07824	TPO1	Q07824	0	30	Polyamine transporter 1	
 Q07825	yeast	Q07825	FRA1	Q07825	1	13	Putative Xaa-Pro aminopeptidase FRA1	
@@ -385,7 +385,7 @@ Q07904	yeast	Q07904	THI73	Q07904	0	6	Thiamine pathway transporter THI73
 Q07911	helicobacter-pylori	Q07911	flaB	Q07911	2	13	Flagellin B	
 Q07912	human	Q07912	TNK2	Q07912	66	287	Activated CDC42 kinase 1 (ACK-1) (EC 2.7.10.2) (EC 2.7.11.1)	
 Q07913	yeast	Q07913	NSE1	Q07913	3	17	Non-structural maintenance of chromosomes element 1	
-Q07914	yeast	Q07914	PAM18	Q07914	5	44	Mitochondrial import inner membrane translocase subunit TIM1	
+Q07914	yeast	Q07914	PAM18	Q07914	6	45	Mitochondrial import inner membrane translocase subunit TIM1	
 Q07915	yeast	Q07915	RLP24	Q07915	33	245	Ribosome biogenesis protein RLP24	
 Q07916	mus-musculus	Q07916	Pou6f1	Q07916	3	7	POU domain, class 6, transcription factor 1	
 Q07917	rattus-norvegicus	Q07917	Nr4a2	Q07917	3	21	Nuclear receptor subfamily 4 group A member 2	
@@ -407,7 +407,7 @@ Q07967	yeast	Q07967	YLR030W	Q07967	0	3	Putative uncharacterized protein YLR030W
 Q07968	mus-musculus	Q07968	F13b	Q07968	2	6	Coagulation factor XIII B chain	
 Q07969	rattus-norvegicus	Q07969	Cd36	Q07969	2	131	Platelet glycoprotein 4	
 Q07970	arabidopsis-thaliana	Q07970	KIN14C	Q07970	8	55	Kinesin-like protein KIN-14C	
-Q07973	human	Q07973	CYP24A1	Q07973	9	145	1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial (24	
+Q07973	human	Q07973	CYP24A1	Q07973	18	154	1,25-dihydroxyvitamin D(3) 24-hydroxylase, mitochondrial (24	
 Q07978	yeast	Q07978	YLR031W	Q07978	4	40	Putative uncharacterized protein YLR031W	
 Q07979	yeast	Q07979	RSC58	Q07979	9	119	Chromatin structure-remodeling complex protein RSC58	
 Q07980	yeast	Q07980	MLH2	Q07980	4	55	DNA mismatch repair protein MLH2	

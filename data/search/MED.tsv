@@ -421,7 +421,7 @@ MEDIATOR	fly	FBgn0260401	MED9	A1ZB42	5	78	Mediator of RNA polymerase II transcri
 MEDIATOR	human	A0JLT2	MED19	A0JLT2	24	278	Mediator of RNA polymerase II transcription subunit 19 (Lung	w
 MEDIATOR	human	O14531	DPYSL4	O14531	7	143	Dihydropyrimidinase-related protein 4 (DRP-4) (Collapsin res	w
 MEDIATOR	human	O43513	MED7	O43513	68	788	Mediator of RNA polymerase II transcription subunit 7 (hMED7	w
-MEDIATOR	human	O43521	BCL2L11	O43521	63	685	Bcl-2-like protein 11 (Bcl2-L-11) (Bcl2-interacting mediator	w
+MEDIATOR	human	O43521	BCL2L11	O43521	65	687	Bcl-2-like protein 11 (Bcl2-L-11) (Bcl2-interacting mediator	w
 MEDIATOR	human	O43557	TNFSF14	O43557	60	460	Tumor necrosis factor ligand superfamily member 14 (Herpes v	w
 MEDIATOR	human	O60244	MED14	O60244	38	548	Mediator of RNA polymerase II transcription subunit 14 (Acti	w
 MEDIATOR	human	O60524	NEMF	O60524	15	289	Ribosome quality control complex subunit NEMF (Antigen NY-CO	w
@@ -524,6 +524,7 @@ MEDIATOR	yeast	Q12343	MED4	Q12343	7	93	Mediator of RNA polymerase II transcripti
 MEDIATOR	yeast	Q99278	MED11	Q99278	5	64	Mediator of RNA polymerase II transcription subunit 11	w
 MEDIATOR	zebrafish	A3KNK7	med11	A3KNK7	3	127	Mediator of RNA polymerase II transcription subunit 11	w
 MEDIATOR	zebrafish	A5WUL3	med22	A5WUL3	14	144	Mediator of RNA polymerase II transcription subunit 22	w
+MEDIATOR	zebrafish	B2KKY9	bim	B2KKY9	4	4	Bcl-2 interacting mediator of cell death	w
 MEDIATOR	zebrafish	E7F602	med16	E7F602	5	78	Mediator of RNA polymerase II transcription subunit 16	w
 MEDIATOR	zebrafish	F1QR19	med1l	F1QR19	5	32	Mediator of RNA polymerase II transcription subunit 1	w
 MEDIATOR	zebrafish	Q08BY1	med17	Q08BY1	14	195	Mediator of RNA polymerase II transcription subunit 17	w
@@ -552,7 +553,7 @@ MEDIATOR	zebrafish	R4GDN4	med9	R4GDN4	3	125	Mediator of RNA polymerase II transc
 MEDIN	human	Q08431	MFGE8	Q08431	13	338	Lactadherin (Breast epithelial antigen BA46) (HMFG) (MFGM) (	w
 MEDIUM	fly	FBgn0024833	AP-1mu	O62531	9	96	Adaptor protein complex 1, mu subunit (Clathrin-associated a	w
 MEDIUM	human	P07197	NEFM	P07197	79	263	Neurofilament medium polypeptide (NF-M) (160 kDa neurofilame	w
-MEDIUM	human	P11310	ACADM	P11310	13	224	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial 	w
+MEDIUM	human	P11310	ACADM	P11310	19	230	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial 	w
 MEDIUM	human	P30153	PPP2R1A	P30153	28	752	Serine/threonine-protein phosphatase 2A 65 kDa regulatory su	w
 MEDIUM	human	P53677	AP3M2	P53677	12	87	AP-3 complex subunit mu-2 (Adaptor-related protein complex 3	w
 MEDIUM	human	Q16836	HADH	Q16836	6	173	Hydroxyacyl-coenzyme A dehydrogenase, mitochondrial (HCDH) (	w
@@ -561,28 +562,29 @@ MEDIUM	yeast	P38700	APM2	P38700	7	30	Adaptin medium chain homolog APM2	w
 MEDIUM	zebrafish	B0S553	nefmb	B0S553	0	3	Neurofilament medium chain b	w
 MEDIUM	zebrafish	F1QCR7	nefma	F1QCR7	0	12	Neurofilament medium chain a	w
 MEDIUM	zebrafish	Q29R98	olah	Q29R98	10	168	S-acyl fatty acid synthase thioesterase, medium chain	w
-MEDIUM-CHAIN	fly	FBgn0031703	Acsf2	Q9VMR6	1	57	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
-MEDIUM-CHAIN	fly	FBgn0035811	Mcad	Q9VSA3	6	146	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial 	w
-MEDIUM-CHAIN	human	P0C7M7	ACSM4	P0C7M7	0	29	Acyl-coenzyme A synthetase ACSM4, mitochondrial (EC 6.2.1.2)	w
-MEDIUM-CHAIN	human	P11310	ACADM	P11310	13	224	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial 	w
-MEDIUM-CHAIN	human	P28330	ACADL	P28330	8	56	Long-chain specific acyl-CoA dehydrogenase, mitochondrial (L	w
-MEDIUM-CHAIN	human	Q08AH1	ACSM1	Q08AH1	1	55	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	w
-MEDIUM-CHAIN	human	Q08AH3	ACSM2A	Q08AH3	1	29	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	w
-MEDIUM-CHAIN	human	Q53FZ2	ACSM3	Q53FZ2	0	52	Acyl-coenzyme A synthetase ACSM3, mitochondrial (EC 6.2.1.2)	w
-MEDIUM-CHAIN	human	Q68CK6	ACSM2B	Q68CK6	1	25	Acyl-coenzyme A synthetase ACSM2B, mitochondrial (EC 6.2.1.2	w
-MEDIUM-CHAIN	human	Q6NUN0	ACSM5	Q6NUN0	3	82	Acyl-coenzyme A synthetase ACSM5, mitochondrial (EC 6.2.1.2)	w
+MEDIUM-CHAIN	fly	FBgn0031703	Acsf2	Q9VMR6	2	58	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
+MEDIUM-CHAIN	fly	FBgn0035811	Mcad	Q9VSA3	9	149	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial 	w
+MEDIUM-CHAIN	human	P0C7M7	ACSM4	P0C7M7	2	31	Acyl-coenzyme A synthetase ACSM4, mitochondrial (EC 6.2.1.2)	w
+MEDIUM-CHAIN	human	P11310	ACADM	P11310	19	230	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial 	w
+MEDIUM-CHAIN	human	P28330	ACADL	P28330	11	58	Long-chain specific acyl-CoA dehydrogenase, mitochondrial (L	w
+MEDIUM-CHAIN	human	Q08AH1	ACSM1	Q08AH1	2	56	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	w
+MEDIUM-CHAIN	human	Q08AH3	ACSM2A	Q08AH3	4	32	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	w
+MEDIUM-CHAIN	human	Q53FZ2	ACSM3	Q53FZ2	3	55	Acyl-coenzyme A synthetase ACSM3, mitochondrial (EC 6.2.1.2)	w
+MEDIUM-CHAIN	human	Q68CK6	ACSM2B	Q68CK6	7	31	Acyl-coenzyme A synthetase ACSM2B, mitochondrial (EC 6.2.1.2	w
+MEDIUM-CHAIN	human	Q6NUN0	ACSM5	Q6NUN0	4	83	Acyl-coenzyme A synthetase ACSM5, mitochondrial (EC 6.2.1.2)	w
 MEDIUM-CHAIN	human	Q6P461	ACSM6	Q6P461	0	14	Acyl-coenzyme A synthetase ACSM6, mitochondrial (EC 6.2.1.2)	w
-MEDIUM-CHAIN	human	Q96CM8	ACSF2	Q96CM8	3	278	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
+MEDIUM-CHAIN	human	Q96CM8	ACSF2	Q96CM8	9	284	Medium-chain acyl-CoA ligase ACSF2, mitochondrial (EC 6.2.1.	w
 MEDIUM-CHAIN	worm	O01502	acdh-5	O01502	1	2	Medium-chain acyl-CoA dehydrogenase	w
 MEDIUM-CHAIN	worm	O18693	acs-2	O18693	0	23	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
 MEDIUM-CHAIN	worm	Q21243	acdh-8	Q21243	2	6	medium-chain acyl-CoA dehydrogenase	w
-MEDIUM-CHAIN	worm	Q22347	acdh-10	Q22347	1	8	Probable medium-chain specific acyl-CoA dehydrogenase 10, mi	w
+MEDIUM-CHAIN	worm	Q22347	acdh-10	Q22347	7	14	Probable medium-chain specific acyl-CoA dehydrogenase 10, mi	w
 MEDIUM-CHAIN	worm	Q22781	acdh-7	Q22781	2	18	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	w
 MEDIUM-CHAIN	worm	Q9UAV8	acs-1	Q9UAV8	0	23	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
 MEDIUM-CHAIN	yeast	P38295	EHT1	P38295	1	26	Medium-chain fatty acid ethyl ester synthase/esterase 2	w
 MEDIUM-CHAIN	yeast	Q02891	EEB1	Q02891	1	9	Medium-chain fatty acid ethyl ester synthase/esterase 1	w
+MEDIUM-CHAIN	zebrafish	A0A8M1PII2	acadm	A0A8M1PII2	14	14	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	w
 MEDIUM-CHAIN	zebrafish	A2CG95	acadm	A2CG95	3	22	Medium-chain specific acyl-CoA dehydrogenase, mitochondrial	w
-MEDIUM-CHAIN	zebrafish	A9JRA7	acsm3	A9JRA7	1	7	medium-chain acyl-CoA ligase	w
+MEDIUM-CHAIN	zebrafish	A9JRA7	acsm3	A9JRA7	2	8	medium-chain acyl-CoA ligase	w
 MEDIUM-CHAIN	zebrafish	Q0P4F7	acsf2	Q0P4F7	2	180	Medium-chain acyl-CoA ligase ACSF2, mitochondrial	w
 MEDIUM-WAVE-SENSITIVE	human	P04001	OPN1MW	P04001	9	53	Medium-wave-sensitive opsin 1 (Green cone photoreceptor pigm	w
 MEDIUM-WAVE-SENSITIVE	human	P0DN77	OPN1MW2	P0DN77	3	9	Medium-wave-sensitive opsin 2 (Green cone photoreceptor pigm	w

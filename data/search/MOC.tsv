@@ -1,8 +1,8 @@
 MOC-1	worm	G5EGH2	moc-1	G5EGH2	0	16	MoaB/Mog domain-containing protein	
 MOC-2	worm	Q23069	moc-2	Q23069	0	8	molybdopterin molybdotransferase	
 MOC-3	worm	O44510	moc-3	O44510	1	36	Adenylyltransferase and sulfurtransferase MOCS3	
-MOC-5	worm	Q20624	moc-5	Q20624	0	7	Molybdenum cofactor biosynthesis protein moc-5	w
-MOC-5	worm	Q20624	moc-5	Q20624	0	7	Molybdenum cofactor biosynthesis protein moc-5	w
+MOC-5	worm	Q20624	moc-5	Q20624	1	8	Molybdenum cofactor biosynthesis protein moc-5	w
+MOC-5	worm	Q20624	moc-5	Q20624	1	8	Molybdenum cofactor biosynthesis protein moc-5	w
 MOC-6	worm	Q09412	moc-6	Q09412	1	3	Molybdopterin synthase sulfur carrier subunit	
 MOC1	arabidopsis-thaliana	Q8GWA2	MOC1	Q8GWA2	2	8	Holliday junction resolvase MOC1, chloroplastic	
 MOC1	oryza-sativa-subsp-japonica	Q84MM9	MOC1	Q84MM9	0	1	Protein MONOCULM 1	
@@ -28,7 +28,7 @@ MOCA-CYP_766	fly	FBgn0039581	Moca-cyp	Q9VAW1	11	90
 MOCA-CYP_829	fly	FBgn0039581	Moca-cyp	Q9VAW1	11	90		
 MOCA-CYP_831	fly	FBgn0039581	Moca-cyp	Q9VAW1	11	90		
 MOCA-LIKE	human	Q9NXC2	GFOD1	Q9NXC2	4	86	Glucose-fructose oxidoreductase domain-containing protein 1 	w
-MOCCI	human	Q9C002	COXFA4L3	Q9C002	34	277		
+MOCCI	human	Q9C002	COXFA4L3	Q9C002	35	277		
 MOCO	fly	FBgn0002641	mal	Q9VRA2	0	9	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
 MOCO	human	Q96EN8	MOCOS	Q96EN8	0	94	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
 MOCO1	human	O96007	MOCS2	O96007	2	31		
@@ -42,12 +42,18 @@ MOCOS	rattus-norvegicus	A0A1W2Q693	Mocos	A0A1W2Q693	0	9	Molybdenum cofactor sulf
 MOCOS_HUMAN	human	Q96EN8	MOCOS	Q96EN8	0	94		
 MOCS	human	O96033	MOCS2	O96033	266	2181	Molybdopterin synthase sulfur carrier subunit (MOCO1-A) (Mol	w
 MOCS-1	worm	Q21657	mocs-1	Q21657	0	7	Molybdenum cofactor sulfurase	
-MOCS1	dictyostelium-discoideum	Q54NM6	mocs1	Q54NM6	0	2	Molybdenum cofactor biosynthesis protein 1	
-MOCS1	fly	FBgn0263241	Mocs1	Q8IQF1	0	7	Molybdenum cofactor biosynthesis protein 1 [Includes: GTP 3'	
-MOCS1	human	Q9NZB8	MOCS1	Q9NZB8	5	131	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	
-MOCS1	mus-musculus	Q5RKZ7	Mocs1	Q5RKZ7	0	1	Molybdenum cofactor biosynthesis protein 1	
+MOCS1	dictyostelium-discoideum	Q54NM6	mocs1	Q54NM6	1	3	Molybdenum cofactor biosynthesis protein 1	
+MOCS1	fly	FBgn0263241	Mocs1	Q8IQF1	2	9	Molybdenum cofactor biosynthesis protein 1 [Includes: GTP 3'	
+MOCS1	human	Q9NZB8	MOCS1	Q9NZB8	8	135	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	
+MOCS1	mus-musculus	Q5RKZ7	Mocs1	Q5RKZ7	5	6	Molybdenum cofactor biosynthesis protein 1	
+MOCS1	pan-troglodytes	A0A2I3SA90	MOCS1	A0A2I3SA90	5	5	Molybdenum cofactor synthesis 1	
+MOCS1	rattus-norvegicus	A0A8I6GKB1	Mocs1	A0A8I6GKB1	4	5	Molybdenum cofactor synthesis 1	
+MOCS1	zebrafish	A0A8M3AJ79	mocs1	A0A8M3AJ79	4	4	molybdenum cofactor biosynthesis protein 1 isoform X1	
 MOCS1	zebrafish	F1R905	mocs1	F1R905	1	1	Molybdenum cofactor biosynthesis protein 1	
-MOCS1_HUMAN	human	Q9NZB8	MOCS1	Q9NZB8	5	131		
+MOCS1.L	xenopus-laevis	A0A8J0QHS8	mocs1.L	A0A8J0QHS8	2	2	molybdenum cofactor synthesis 1 isoform 1	
+MOCS1_CAEEL	worm	Q20624	moc-5	Q20624	1	8		
+MOCS1_DROME	fly	FBgn0263241	Mocs1	Q8IQF1	2	9		
+MOCS1_HUMAN	human	Q9NZB8	MOCS1	Q9NZB8	8	135		
 MOCS2	arabidopsis-thaliana	O22827	MOCS2	O22827	1	4	Molybdopterin synthase catalytic subunit	
 MOCS2	fly	FBgn0039280	Mocs2B	Q9VBX2	16	57	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (Moly	w
 MOCS2	human	O96007	MOCS2	O96007	2	31	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (MOCO	

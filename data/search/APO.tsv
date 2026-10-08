@@ -41,7 +41,7 @@ APOA1	rattus-norvegicus	A0A0G2JU23	Apoa1	A0A0G2JU23	0	31	Apolipoprotein A-I
 APOA1	rattus-norvegicus	P04639	Apoa1	P04639	0	54	Apolipoprotein A-I	
 APOA1A	zebrafish	O42363	apoa1a	O42363	1	36	Apolipoprotein A-Ia	
 APOA1B	zebrafish	A0A0R4IKF0	apoa1b	A0A0R4IKF0	6	59	Apolipoprotein A-Ib	
-APOA1BP	human	Q8NCW5	NAXE	Q8NCW5	7	128		
+APOA1BP	human	Q8NCW5	NAXE	Q8NCW5	16	137		
 APOA1_HUMAN	human	P02647	APOA1	P02647	25	963		
 APOA2	human	P02652	APOA2	P02652	43	737	Apolipoprotein A-II (Apo-AII) (ApoA-II) (Apolipoprotein A2) 	
 APOA2	mus-musculus	P09813	Apoa2	P09813	0	81	Apolipoprotein A-II	
@@ -229,7 +229,7 @@ APOLIPOPROTEIN	human	Q6Q788	APOA5	Q6Q788	8	236	Apolipoprotein A-V (Apo-AV) (ApoA
 APOLIPOPROTEIN	human	Q6UXV4	APOOL	Q6UXV4	10	113	MICOS complex subunit MIC27 (Apolipoprotein O-like) (Protein	w
 APOLIPOPROTEIN	human	Q6ZTK2	APOLTP	Q6ZTK2	0	5	Protein APOLTP (Apolipoprotein lipid transfer particle homol	w
 APOLIPOPROTEIN	human	Q8IUX4	APOBEC3F	Q8IUX4	2	199	DNA dC->dU-editing enzyme APOBEC-3F (EC 3.5.4.38) (Apolipopr	w
-APOLIPOPROTEIN	human	Q8NCW5	NAXE	Q8NCW5	7	128	NAD(P)H-hydrate epimerase (EC 5.1.99.6) (Apolipoprotein A-I-	w
+APOLIPOPROTEIN	human	Q8NCW5	NAXE	Q8NCW5	16	137	NAD(P)H-hydrate epimerase (EC 5.1.99.6) (Apolipoprotein A-I-	w
 APOLIPOPROTEIN	human	Q8WW27	APOBEC4	Q8WW27	3	19	Putative deaminase APOBEC-4 (EC 3.5.4.-) (Apolipoprotein B m	w
 APOLIPOPROTEIN	human	Q96LR9	APOLD1	Q96LR9	2	37	Apolipoprotein L domain-containing protein 1 (Vascular early	w
 APOLIPOPROTEIN	human	Q9BPW4	APOL4	Q9BPW4	2	22	Apolipoprotein L4 (Apolipoprotein L-IV) (ApoL-IV)	w
@@ -296,13 +296,13 @@ APOOL	mus-musculus	Q78IK4	Apool	Q78IK4	3	12	MICOS complex subunit Mic27
 APOOL	rattus-norvegicus	Q5U1W6	Apool	Q5U1W6	1	15	MICOS complex subunit	
 APOOL	zebrafish	Q58EI3	apool	Q58EI3	1	21	MICOS complex subunit	
 APOP	human	Q9UBF6	RNF7	Q9UBF6	42	626	RING-box protein 2 (Rbx2) (EC 2.3.2.27) (EC 2.3.2.32) (CKII 	w
-APOP-1	human	Q96IL0	COA8	Q96IL0	3	27	Cytochrome c oxidase assembly factor 8 (COA8) (Apoptogenic p	w
-APOP1	human	Q96IL0	COA8	Q96IL0	3	27		
+APOP-1	human	Q96IL0	COA8	Q96IL0	7	31	Cytochrome c oxidase assembly factor 8 (COA8) (Apoptogenic p	w
+APOP1	human	Q96IL0	COA8	Q96IL0	7	31		
 APOPAIN	fly	FBgn0028381	Decay	Q9VET9	5	25	AT03047p (DECAY) (Death executioner caspase related to Apopa	w
-APOPAIN	human	P42574	CASP3	P42574	40	419	Caspase-3 (CASP-3) (EC 3.4.22.56) (Apopain) (Cysteine protea	w
+APOPAIN	human	P42574	CASP3	P42574	42	421	Caspase-3 (CASP-3) (EC 3.4.22.56) (Apopain) (Cysteine protea	w
 APOPT	human	Q92851	CASP10	Q92851	22	133	Caspase-10 (CASP-10) (EC 3.4.22.63) (Apoptotic protease Mch-	w
-APOPT1	fly	FBgn0029594	Coa8	Q9W549	4	8	COA8 family protein CG14806, mitochondrial (COA8) (APOPT1 fa	w
-APOPT1	human	Q96IL0	COA8	Q96IL0	3	27		
+APOPT1	fly	FBgn0029594	Coa8	Q9W549	6	10	COA8 family protein CG14806, mitochondrial (COA8) (APOPT1 fa	w
+APOPT1	human	Q96IL0	COA8	Q96IL0	7	31		
 APOPTIN	virus	A0A089QCI5		A0A089QCI5	0	3	Apoptin	w
 APOPTIN	virus	A0A2U9N4H7	VP3	A0A2U9N4H7	0	3	Apoptin	w
 APOPTIN	virus	A0A7M1I6J5	VP3	A0A7M1I6J5	0	3	Apoptin	w
@@ -311,7 +311,7 @@ APOPTIN	virus	H9CH31		H9CH31	0	3	Apoptin	w
 APOPTIN	virus	Q99152	VP3	Q99152	0	3	Apoptin	w
 APOPTIN	virus	U5UAJ3		U5UAJ3	0	3	Apoptin	w
 APOPTIN-ASSOCIATING	human	Q8N488	RYBP	Q8N488	223	897	RING1 and YY1-binding protein (Apoptin-associating protein 1	w
-APOPTOGENIC	human	Q96IL0	COA8	Q96IL0	3	27	Cytochrome c oxidase assembly factor 8 (COA8) (Apoptogenic p	w
+APOPTOGENIC	human	Q96IL0	COA8	Q96IL0	7	31	Cytochrome c oxidase assembly factor 8 (COA8) (Apoptogenic p	w
 APOPTOSIS	fly	FBgn0015247	Diap2	Q24307	33	233	Death-associated inhibitor of apoptosis 2 (Apoptosis 2 inhib	w
 APOPTOSIS	fly	FBgn0022213	Cse1	Q9XZU1	5	30	Exportin-2 (Exp2) (Cellular apoptosis susceptibility protein	w
 APOPTOSIS	fly	FBgn0030410	Aven	Q9VYK8	2	5	Apoptosis and caspase activation inhibitor, isoform A (Apopt	w
@@ -325,23 +325,23 @@ APOPTOSIS	human	O15304	SIVA1	O15304	16	133	Apoptosis regulatory protein Siva (CD
 APOPTOSIS	human	O15392	BIRC5	O15392	75	771	Baculoviral IAP repeat-containing protein 5 (Apoptosis inhib	w
 APOPTOSIS	human	O15519	CFLAR	O15519	30	264	CASP8 and FADD-like apoptosis regulator (Caspase homolog) (C	w
 APOPTOSIS	human	O43508	TNFSF12	O43508	42	217	Tumor necrosis factor ligand superfamily member 12 (APO3 lig	w
-APOPTOSIS	human	O43715	TRIAP1	O43715	13	98	TP53-regulated inhibitor of apoptosis 1 (Protein 15E1.1) (WF	w
+APOPTOSIS	human	O43715	TRIAP1	O43715	17	102	TP53-regulated inhibitor of apoptosis 1 (Protein 15E1.1) (WF	w
 APOPTOSIS	human	O43866	CD5L	O43866	24	391	CD5 antigen-like (Apoptosis inhibitor expressed by macrophag	w
 APOPTOSIS	human	O60667	FCMR	O60667	21	78	Immunoglobulin mu Fc receptor (IgM FcR) (Fas apoptotic inhib	w
 APOPTOSIS	human	O60936	NOL3	O60936	11	58	Nucleolar protein 3 (Apoptosis repressor with CARD) (Muscle-	w
 APOPTOSIS	human	O95382	MAP3K6	O95382	20	197	Mitogen-activated protein kinase kinase kinase 6 (EC 2.7.11.	w
-APOPTOSIS	human	P10415	BCL2	P10415	46	559	Apoptosis regulator Bcl-2	w
+APOPTOSIS	human	P10415	BCL2	P10415	51	564	Apoptosis regulator Bcl-2	w
 APOPTOSIS	human	P48023	FASLG	P48023	54	509	Tumor necrosis factor ligand superfamily member 6 (Apoptosis	w
 APOPTOSIS	human	P55060	CSE1L	P55060	12	467	Exportin-2 (Exp2) (Cellular apoptosis susceptibility protein	w
 APOPTOSIS	human	P62952	BLCAP	P62952	6	103	Apoptosis inducing factor BLCAP (Bladder cancer 10 kDa prote	w
 APOPTOSIS	human	P98170	XIAP	P98170	73	342	E3 ubiquitin-protein ligase XIAP (EC 2.3.2.27) (Baculoviral 	w
-APOPTOSIS	human	Q07812	BAX	Q07812	9	150	Apoptosis regulator BAX (Bcl-2-like protein 4) (Bcl2-L-4)	w
-APOPTOSIS	human	Q07817	BCL2L1	Q07817	41	330	Bcl-2-like protein 1 (Bcl2-L-1) (Apoptosis regulator Bcl-X)	w
+APOPTOSIS	human	Q07812	BAX	Q07812	14	156	Apoptosis regulator BAX (Bcl-2-like protein 4) (Bcl2-L-4)	w
+APOPTOSIS	human	Q07817	BCL2L1	Q07817	49	338	Bcl-2-like protein 1 (Bcl2-L-1) (Apoptosis regulator Bcl-X)	w
 APOPTOSIS	human	Q13075	NAIP	Q13075	3	53	Baculoviral IAP repeat-containing protein 1 (Neuronal apopto	w
-APOPTOSIS	human	Q13323	BIK	Q13323	27	237	Bcl-2-interacting killer (Apoptosis inducer NBK) (BIP1) (BP4	w
+APOPTOSIS	human	Q13323	BIK	Q13323	30	240	Bcl-2-interacting killer (Apoptosis inducer NBK) (BIP1) (BP4	w
 APOPTOSIS	human	Q13489	BIRC3	Q13489	91	1534	Baculoviral IAP repeat-containing protein 3 (EC 2.3.2.27) (A	w
 APOPTOSIS	human	Q13490	BIRC2	Q13490	50	352	Baculoviral IAP repeat-containing protein 2 (EC 2.3.2.27) (C	w
-APOPTOSIS	human	Q16611	BAK1	Q16611	14	159	Bcl-2 homologous antagonist/killer (Apoptosis regulator BAK)	w
+APOPTOSIS	human	Q16611	BAK1	Q16611	18	163	Bcl-2 homologous antagonist/killer (Apoptosis regulator BAK)	w
 APOPTOSIS	human	Q19T08	ECSCR	Q19T08	29	137	Endothelial cell-specific chemotaxis regulator (Apoptosis re	w
 APOPTOSIS	human	Q5T013	HYI	Q5T013	6	260	Putative hydroxypyruvate isomerase (EC 5.3.1.22) (Endothelia	w
 APOPTOSIS	human	Q5TH74	STPG1	Q5TH74	2	40	O(6)-methylguanine-induced apoptosis 2 (MAPO2) (Sperm-tail P	w
@@ -355,14 +355,14 @@ APOPTOSIS	human	Q8IXT1	DDIAS	Q8IXT1	9	96	DNA damage-induced apoptosis suppressor
 APOPTOSIS	human	Q8N163	CCAR2	Q8N163	30	357	Cell cycle and apoptosis regulator protein 2 (Cell division 	w
 APOPTOSIS	human	Q8WYN3	CSRNP3	Q8WYN3	0	19	Cysteine/serine-rich nuclear protein 3 (CSRNP-3) (Protein FA	w
 APOPTOSIS	human	Q92785	DPF2	Q92785	127	695	Zinc finger protein ubi-d4 (Apoptosis response zinc finger p	w
-APOPTOSIS	human	Q92843	BCL2L2	Q92843	13	151	Bcl-2-like protein 2 (Bcl2-L-2) (Apoptosis regulator Bcl-W)	w
+APOPTOSIS	human	Q92843	BCL2L2	Q92843	22	159	Bcl-2-like protein 2 (Bcl2-L-2) (Apoptosis regulator Bcl-W)	w
 APOPTOSIS	human	Q96BY2	MOAP1	Q96BY2	8	97	Modulator of apoptosis 1 (MAP-1) (MAP1) (Paraneoplastic anti	w
 APOPTOSIS	human	Q96CA5	BIRC7	Q96CA5	39	134	Baculoviral IAP repeat-containing protein 7 (EC 2.3.2.27) (K	w
 APOPTOSIS	human	Q96CJ1	EAF2	Q96CJ1	32	96	ELL-associated factor 2 (Testosterone-regulated apoptosis in	w
 APOPTOSIS	human	Q96FX8	PERP	Q96FX8	15	199	p53 apoptosis effector related to PMP-22 (Keratinocyte-assoc	w
 APOPTOSIS	human	Q96IZ0	PAWR	Q96IZ0	53	147	PRKC apoptosis WT1 regulator protein (Prostate apoptosis res	w
 APOPTOSIS	human	Q96P09	BIRC8	Q96P09	16	38	Baculoviral IAP repeat-containing protein 8 (Inhibitor of ap	w
-APOPTOSIS	human	Q96PG8	BBC3	Q96PG8	4	79	Bcl-2-binding component 3, isoforms 3/4 (JFY-1) (p53 up-regu	w
+APOPTOSIS	human	Q96PG8	BBC3	Q96PG8	12	87	Bcl-2-binding component 3, isoforms 3/4 (JFY-1) (p53 up-regu	w
 APOPTOSIS	human	Q96S65	CSRNP1	Q96S65	7	25	Cysteine/serine-rich nuclear protein 1 (CSRNP-1) (Axin-1 up-	w
 APOPTOSIS	human	Q99683	MAP3K5	Q99683	35	325	Mitogen-activated protein kinase kinase kinase 5 (EC 2.7.11.	w
 APOPTOSIS	human	Q9BXH1	BBC3	Q9BXH1	5	39	Bcl-2-binding component 3, isoforms 1/2 (JFY-1) (p53 up-regu	w
@@ -371,7 +371,7 @@ APOPTOSIS	human	Q9BZZ5	API5	Q9BZZ5	37	345	Apoptosis inhibitor 5 (API-5) (Antiapo
 APOPTOSIS	human	Q9H175	CSRNP2	Q9H175	5	13	Cysteine/serine-rich nuclear protein 2 (CSRNP-2) (Protein FA	w
 APOPTOSIS	human	Q9H8G2	CAAP1	Q9H8G2	13	53	Caspase activity and apoptosis inhibitor 1 (Conserved anti-a	w
 APOPTOSIS	human	Q9HAU6	TPT1P8	Q9HAU6	1	6	Putative translationally-controlled tumor protein-like prote	w
-APOPTOSIS	human	Q9HD36	BCL2L10	Q9HD36	10	39	Bcl-2-like protein 10 (Bcl2-L-10) (Anti-apoptotic protein Bo	w
+APOPTOSIS	human	Q9HD36	BCL2L10	Q9HD36	22	50	Bcl-2-like protein 10 (Bcl2-L-10) (Anti-apoptotic protein Bo	w
 APOPTOSIS	human	Q9NQ88	TIGAR	Q9NQ88	9	147	Fructose-2,6-bisphosphatase TIGAR (EC 3.1.3.46) (TP53-induce	w
 APOPTOSIS	human	Q9NZS9	BFAR	Q9NZS9	12	89	Bifunctional apoptosis regulator (EC 2.3.2.27) (RING finger 	w
 APOPTOSIS	human	Q9P278	FNIP2	Q9P278	9	92	Folliculin-interacting protein 2 (FNIP1-like protein) (O6-me	w
@@ -414,12 +414,13 @@ APOPTOSIS	worm	Q93367	mina-1	Q93367	0	9	Messenger RNA-binding inhibitor of apopt
 APOPTOSIS	zebrafish	A0A2R8Q613	elapor1	A0A2R8Q613	0	7	Endosome/lysosome-associated apoptosis and autophagy regulat	w
 APOPTOSIS	zebrafish	A0A2R8QL23	siva1	A0A2R8QL23	1	4	Apoptosis regulatory protein Siva	w
 APOPTOSIS	zebrafish	A0A8M1P2J9	cflara	A0A8M1P2J9	4	28	CASP8 and FADD-like apoptosis regulator a	w
+APOPTOSIS	zebrafish	A0A8M1Q7L4	bcl2b	A0A8M1Q7L4	6	6	apoptosis regulator Bcl-2	w
 APOPTOSIS	zebrafish	A0A8M2B3R9	aifm4	A0A8M2B3R9	0	58	Apoptosis inducing factor mitochondria associated 4 isoform 	w
 APOPTOSIS	zebrafish	E7EYP8	LOC101885512	E7EYP8	1	25	Apoptosis facilitator Bcl-2-like protein 14	w
 APOPTOSIS	zebrafish	E7F0W6	ecscr	E7F0W6	10	111	Endothelial cell surface-expressed chemotaxis and apoptosis 	w
 APOPTOSIS	zebrafish	E7FGT1	ccar2	E7FGT1	0	5	Cell cycle and apoptosis regulator 2	w
 APOPTOSIS	zebrafish	E9QHT9	perp	E9QHT9	3	6	p53 apoptosis effector related to PMP-22	w
-APOPTOSIS	zebrafish	F1Q6Y0	triap1	F1Q6Y0	3	10	TP53-regulated inhibitor of apoptosis 1	w
+APOPTOSIS	zebrafish	F1Q6Y0	triap1	F1Q6Y0	6	13	TP53-regulated inhibitor of apoptosis 1	w
 APOPTOSIS	zebrafish	F1R220	aven	F1R220	0	7	Apoptosis, caspase activation inhibitor	w
 APOPTOSIS	zebrafish	F6NQ00	ccar1	F6NQ00	0	14	Cell division cycle and apoptosis regulator protein 1	w
 APOPTOSIS	zebrafish	F8W266	bcl2b	F8W266	5	96	Apoptosis regulator Bcl-2	w
@@ -427,10 +428,10 @@ APOPTOSIS	zebrafish	I3ITC2	LOC100004321	I3ITC2	2	37	Apoptosis regulator BAX-like
 APOPTOSIS	zebrafish	Q564A4	bcl2a	Q564A4	4	102	Apoptosis regulator Bcl-2	w
 APOPTOSIS	zebrafish	Q5RG84	niban1a	Q5RG84	3	114	Niban apoptosis regulator 1a	w
 APOPTOSIS	zebrafish	Q5XJ95	pawr	Q5XJ95	2	18	PRKC apoptosis WT1 regulator protein	w
-APOPTOSIS	zebrafish	Q9I9N4	baxa	Q9I9N4	2	35	Apoptosis regulator BAX	w
+APOPTOSIS	zebrafish	Q9I9N4	baxa	Q9I9N4	6	39	Apoptosis regulator BAX	w
 APOPTOSIS	zebrafish	R4GDP5	api5	R4GDP5	1	17	Apoptosis inhibitor 5	w
 APOPTOSIS-ACTIVATING	human	P15822	HIVEP1	P15822	36	217	Zinc finger protein 40 (Cirhin interaction protein) (CIRIP) 	w
-APOPTOSIS-ALPHA	human	O75414	NME6	O75414	6	144	Nucleoside diphosphate kinase 6, mitochondrial (NDK6) (NDP k	w
+APOPTOSIS-ALPHA	human	O75414	NME6	O75414	9	149	Nucleoside diphosphate kinase 6, mitochondrial (NDK6) (NDP k	w
 APOPTOSIS-ANTAGONIZING	human	Q9NY61	AATF	Q9NY61	46	462	Protein AATF (Apoptosis-antagonizing transcription factor) (	w
 APOPTOSIS-ANTAGONIZING	zebrafish	F1R1W8	aatf	F1R1W8	7	108	Apoptosis-antagonizing transcription factor	w
 APOPTOSIS-ASSOCIATED	human	Q6ZMQ8	AATK	Q6ZMQ8	38	242	Serine/threonine-protein kinase LMTK1 (EC 2.7.11.1) (Apoptos	w
@@ -442,22 +443,23 @@ APOPTOSIS-ASSOCIATED	zebrafish	Q9I9N6	pycard	Q9I9N6	0	30	Apoptosis-associated sp
 APOPTOSIS-BETA	human	P56597	NME5	P56597	7	81	Nucleoside diphosphate kinase 5 (NDK5) (Inhibitor of p53-ind	w
 APOPTOSIS-ENHANCING	human	Q8WTP8	AEN	Q8WTP8	4	75	Apoptosis-enhancing nuclease (EC 3.1.-.-) (Interferon-stimul	w
 APOPTOSIS-ENHANCING	zebrafish	E7F5Q4	isg20	E7F5Q4	0	5	Apoptosis-enhancing nuclease	w
-APOPTOSIS-INDUCING	fly	FBgn0031392	AIF	Q9VQ79	7	49	Putative apoptosis-inducing factor 1, mitochondrial (DmAIF) 	w
+APOPTOSIS-INDUCING	fly	FBgn0031392	AIF	Q9VQ79	8	50	Putative apoptosis-inducing factor 1, mitochondrial (DmAIF) 	w
 APOPTOSIS-INDUCING	human	O00220	TNFRSF10A	O00220	48	344	Tumor necrosis factor receptor superfamily member 10A (Death	w
 APOPTOSIS-INDUCING	human	O14763	TNFRSF10B	O14763	54	337	Tumor necrosis factor receptor superfamily member 10B (Death	w
 APOPTOSIS-INDUCING	human	O94768	STK17B	O94768	250	1356	Serine/threonine-protein kinase 17B (EC 2.7.11.1) (DAP kinas	w
-APOPTOSIS-INDUCING	human	O95831	AIFM1	O95831	44	606	Apoptosis-inducing factor 1, mitochondrial (EC 1.6.99.-) (Pr	w
+APOPTOSIS-INDUCING	human	O95831	AIFM1	O95831	50	612	Apoptosis-inducing factor 1, mitochondrial (EC 1.6.99.-) (Pr	w
 APOPTOSIS-INDUCING	human	P50591	TNFSF10	P50591	50	353	Tumor necrosis factor ligand superfamily member 10 (Apo-2 li	w
 APOPTOSIS-INDUCING	human	Q69YI7	NAIF1	Q69YI7	7	82	Nuclear apoptosis-inducing factor 1	w
 APOPTOSIS-INDUCING	human	Q8N2Z9	CENPS	Q8N2Z9	19	148	Centromere protein S (CENP-S) (Apoptosis-inducing TAF9-like 	w
 APOPTOSIS-INDUCING	human	Q93038	TNFRSF25	Q93038	42	201	Tumor necrosis factor receptor superfamily member 25 (Apo-3)	w
-APOPTOSIS-INDUCING	human	Q96NN9	AIFM3	Q96NN9	7	81	Apoptosis-inducing factor 3 (EC 1.-.-.-) (Apoptosis-inducing	w
+APOPTOSIS-INDUCING	human	Q96NN9	AIFM3	Q96NN9	9	83	Apoptosis-inducing factor 3 (EC 1.-.-.-) (Apoptosis-inducing	w
 APOPTOSIS-INDUCING	human	Q96S99	PLEKHF1	Q96S99	10	75	Pleckstrin homology domain-containing family F member 1 (PH 	w
-APOPTOSIS-INDUCING	human	Q9BRQ8	AIFM2	Q9BRQ8	6	122	Ferroptosis suppressor protein 1 (FSP1) (EC 1.6.5.-) (Apopto	w
+APOPTOSIS-INDUCING	human	Q9BRQ8	AIFM2	Q9BRQ8	16	132	Ferroptosis suppressor protein 1 (FSP1) (EC 1.6.5.-) (Apopto	w
 APOPTOSIS-INDUCING	human	Q9HCN2	TP53AIP1	Q9HCN2	2	25	p53-regulated apoptosis-inducing protein 1 (p53AIP1)	w
 APOPTOSIS-INDUCING	human	Q9UBN6	TNFRSF10D	Q9UBN6	20	89	Tumor necrosis factor receptor superfamily member 10D (Decoy	w
 APOPTOSIS-INDUCING	human	Q9UEE5	STK17A	Q9UEE5	395	1266	Serine/threonine-protein kinase 17A (EC 2.7.11.1) (DAP kinas	w
 APOPTOSIS-INDUCING	yeast	P52923	AIF1	P52923	0	13	Apoptosis-inducing factor 1	w
+APOPTOSIS-INDUCING	zebrafish	A0A8M2BCB6	aifm1	A0A8M2BCB6	6	7	apoptosis-inducing factor 1, mitochondrial isoform X1	w
 APOPTOSIS-INDUCING	zebrafish	B0S5D0	naif1	B0S5D0	3	52	Nuclear apoptosis-inducing factor 1	w
 APOPTOSIS-INDUCING	zebrafish	E7F3F1	aifm5	E7F3F1	2	58	Apoptosis-inducing factor 3 isoform X1	w
 APOPTOSIS-INDUCING	zebrafish	F2Z4R3	aifm3	F2Z4R3	3	58	Apoptosis-inducing factor 3	w
@@ -496,9 +498,9 @@ APOPTOTIC	human	O14727	APAF1	O14727	11	201	Apoptotic protease-activating factor 
 APOPTOTIC	human	O60667	FCMR	O60667	21	78	Immunoglobulin mu Fc receptor (IgM FcR) (Fas apoptotic inhib	w
 APOPTOTIC	human	O95999	BCL10	O95999	23	252	B-cell lymphoma/leukemia 10 (B-cell CLL/lymphoma 10) (Bcl-10	w
 APOPTOTIC	human	P55210	CASP7	P55210	16	117	Caspase-7 (CASP-7) (EC 3.4.22.60) (Apoptotic protease Mch-3)	w
-APOPTOTIC	human	P55211	CASP9	P55211	44	261	Caspase-9 (CASP-9) (EC 3.4.22.62) (Apoptotic protease Mch-6)	w
+APOPTOTIC	human	P55211	CASP9	P55211	45	262	Caspase-9 (CASP-9) (EC 3.4.22.62) (Apoptotic protease Mch-6)	w
 APOPTOTIC	human	P55212	CASP6	P55212	12	134	Caspase-6 (CASP-6) (CSP-6) (EC 3.4.22.59) (Apoptotic proteas	w
-APOPTOTIC	human	Q14790	CASP8	Q14790	28	185	Caspase-8 (CASP-8) (EC 3.4.22.61) (Apoptotic cysteine protea	w
+APOPTOTIC	human	Q14790	CASP8	Q14790	29	186	Caspase-8 (CASP-8) (EC 3.4.22.61) (Apoptotic cysteine protea	w
 APOPTOTIC	human	Q15041	ARL6IP1	Q15041	8	514	ADP-ribosylation factor-like protein 6-interacting protein 1	w
 APOPTOTIC	human	Q92851	CASP10	Q92851	22	133	Caspase-10 (CASP-10) (EC 3.4.22.63) (Apoptotic protease Mch-	w
 APOPTOTIC	human	Q9BWQ8	FAIM2	Q9BWQ8	7	62	Protein lifeguard 2 (Fas apoptotic inhibitory molecule 2) (N	w

@@ -21,23 +21,26 @@ IMP1	human	Q9NZI8	IGF2BP1	Q9NZI8	21	490	Insulin-like growth factor 2 mRNA-bindin
 IMP1	schizosaccharomyces-pombe	O74800	imp1	O74800	1	6	Mitochondrial inner membrane protease subunit 1	
 IMP1	schizosaccharomyces-pombe	O94374	imp1	O94374	30	140	Importin subunit alpha-2	
 IMP1	yeast	P28627	IMP1	P28627	2	10	Mitochondrial inner membrane protease subunit 1	
-IMP1-LIKE	human	Q96LU5	IMMP1L	Q96LU5	20	276	Mitochondrial inner membrane protease subunit 1 (EC 3.4.21.-	w
+IMP1-LIKE	human	Q96LU5	IMMP1L	Q96LU5	26	282	Mitochondrial inner membrane protease subunit 1 (EC 3.4.21.-	w
 IMP11	human	Q9UI26	IPO11	Q9UI26	6	332	Importin-11 (Imp11) (Ran-binding protein 11) (RanBP11)	w
 IMP12	human	Q9Y5L0	TNPO3	Q9Y5L0	7	427	Transportin-3 (Importin-12) (Imp12) (Transportin-SR) (TRN-SR	w
 IMP13	human	O94829	IPO13	O94829	9	253	Importin-13 (Imp13) (Karyopherin-13) (Kap13) (Ran-binding pr	w
 IMP1A	arabidopsis-thaliana	Q6NLT8	IMP1A	Q6NLT8	4	27	Mitochondrial ATP-independent inner membrane protease subuni	
 IMP1B	arabidopsis-thaliana	Q5BIV4	IMP1B	Q5BIV4	3	27	Mitochondrial ATP-independent inner membrane protease subuni	
 IMP1B	arabidopsis-thaliana	Q84VZ6	IMP1B	Q84VZ6	0	15	Mitochondrial ATP-independent inner membrane protease subuni	
-IMP1L_HUMAN	human	Q96LU5	IMMP1L	Q96LU5	20	276		
+IMP1L_HUMAN	human	Q96LU5	IMMP1L	Q96LU5	26	282		
+IMP1_YEAST	yeast	P28627	IMP1	P28627	2	10		
 IMP2	candida-albicans-237561	A0A1D8PN24	IMP2	A0A1D8PN24	2	12	Mitochondrial inner membrane protease subunit	
 IMP2	human	Q8TCT6	SPPL3	Q8TCT6	37	900		
 IMP2	human	Q9Y6M1	IGF2BP2	Q9Y6M1	24	369		
 IMP2	schizosaccharomyces-pombe	Q10199	imp2	Q10199	6	29	Septation protein imp2	
 IMP2	yeast	P32351	IMP2	P32351	4	17	Sugar utilization regulatory protein IMP2	
 IMP2	yeast	P46972	IMP2	P46972	2	13	Mitochondrial inner membrane protease subunit 2	
-IMP2-LIKE	human	Q96T52	IMMP2L	Q96T52	26	457	Mitochondrial inner membrane protease subunit 2 (EC 3.4.21.-	w
+IMP2-LIKE	human	Q96T52	IMMP2L	Q96T52	30	461	Mitochondrial inner membrane protease subunit 2 (EC 3.4.21.-	w
 IMP25	schistosoma-mansoni	Q26586	IMP25	Q26586	17	52	Vesicle-associated membrane protein 7	
-IMP2L_HUMAN	human	Q96T52	IMMP2L	Q96T52	26	457		
+IMP2L_DANRE	zebrafish	Q6AZD4	immp2l	Q6AZD4	3	10		
+IMP2L_HUMAN	human	Q96T52	IMMP2L	Q96T52	30	461		
+IMP2_YEAST	yeast	P46972	IMP2	P46972	2	13		
 IMP3	cladophialophora-carrionii	A0A1C1CLS8	imp3	A0A1C1CLS8	19	322	U3 small nucleolar ribonucleoprotein protein IMP3	
 IMP3	dictyostelium-discoideum	Q54XG2	imp3	Q54XG2	13	238	U3 small nucleolar ribonucleoprotein protein	
 IMP3	human	O00425	IGF2BP3	O00425	26	508		
@@ -167,12 +170,12 @@ IMPL2-PA_82_262	fly	FBgn0001257	ImpL2	Q09024	36	297
 IMPLANTATION	human	A6NIE9	PRSS29P	A6NIE9	10	43	Putative serine protease 29 (EC 3.4.21.-) (Implantation seri	w
 IMPLANTATION-ASSOCIATED	human	Q9H0U3	MAGT1	Q9H0U3	22	217	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 IMPORT	fly	FBgn0016041	Tom40	Q9U4L6	5	37	Mitochondrial import receptor subunit TOM40 homolog 1 (dtom4	w
-IMPORT	fly	FBgn0027358	Tim9b	Q9Y0V3	3	28	Mitochondrial import inner membrane translocase subunit Tim1	w
-IMPORT	fly	FBgn0027359	Tim8	Q9Y1A3	4	37	Mitochondrial import inner membrane translocase subunit Tim8	w
-IMPORT	fly	FBgn0027360	Tim10	Q9W2D6	10	47	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	fly	FBgn0027358	Tim9b	Q9Y0V3	4	28	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	fly	FBgn0027359	Tim8	Q9Y1A3	6	38	Mitochondrial import inner membrane translocase subunit Tim8	w
+IMPORT	fly	FBgn0027360	Tim10	Q9W2D6	11	47	Mitochondrial import inner membrane translocase subunit Tim1	w
 IMPORT	fly	FBgn0029964	CG1409	Q9W3P5	3	18	Mitochondrial import inner membrane translocase subunit Tim1	w
 IMPORT	fly	FBgn0030480	Tim9a	Q9VYD7	9	49	Mitochondrial import inner membrane translocase subunit Tim9	w
-IMPORT	fly	FBgn0031708	CG7382	Q9VMR0	6	33	Mitochondrial import inner membrane translocase subunit Tim2	w
+IMPORT	fly	FBgn0031708	CG7382	Q9VMR0	7	34	Mitochondrial import inner membrane translocase subunit Tim2	w
 IMPORT	fly	FBgn0032971	ttm3	Q9V9P3	3	33	Mitochondrial import inner membrane translocase subunit TIM5	w
 IMPORT	fly	FBgn0033074	tomboy40	A1Z6L1	4	29	Mitochondrial import receptor subunit TOM40 homolog 2 (Trans	w
 IMPORT	fly	FBgn0033357	Tom7	Q7K036	3	25	Mitochondrial import receptor subunit TOM7 homolog (Transloc	w
@@ -183,48 +186,48 @@ IMPORT	fly	FBgn0037307	Tim17a2	Q9VN97	3	30	Probable mitochondrial import inner m
 IMPORT	fly	FBgn0037310	Tim17b1	Q9VNA0	6	28	Probable mitochondrial import inner membrane translocase sub	w
 IMPORT	fly	FBgn0037710	CG9393	Q9VHB6	5	34	Metaxin-1 homolog (Mitochondrial outer membrane import compl	w
 IMPORT	fly	FBgn0038018	Tim17a1	Q9VGA2	4	27	Probable mitochondrial import inner membrane translocase sub	w
-IMPORT	fly	FBgn0038387	blp	Q9VF08	8	36	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	fly	FBgn0038387	blp	Q9VF08	9	37	Mitochondrial import inner membrane translocase subunit Tim1	w
 IMPORT	fly	FBgn0038683	CG11779	Q9VDZ7	18	49	Mitochondrial import inner membrane translocase subunit TIM4	w
 IMPORT	fly	FBgn0051229	CG31229	Q8IN78	3	104	Mitochondrial import inner membrane translocase subunit Tim2	w
-IMPORT	fly	FBgn0083968	CG34132	Q0E8V7	4	21	Mitochondrial import inner membrane translocase subunit	w
-IMPORT	fly	FBgn0250874	ttm50	Q9W4V8	9	64	Mitochondrial import inner membrane translocase subunit TIM5	w
+IMPORT	fly	FBgn0083968	CG34132	Q0E8V7	5	22	Mitochondrial import inner membrane translocase subunit	w
+IMPORT	fly	FBgn0250874	ttm50	Q9W4V8	10	65	Mitochondrial import inner membrane translocase subunit TIM5	w
 IMPORT	fly	FBgn0259198	CG42302	A8JUP9	5	9	Mitochondrial import inner membrane translocase subunit	w
 IMPORT	human	O14925	TIMM23	O14925	7	122	Mitochondrial import inner membrane translocase subunit Tim2	w
-IMPORT	human	O43615	TIMM44	O43615	18	228	Mitochondrial import inner membrane translocase subunit TIM4	w
-IMPORT	human	O60220	TIMM8A	O60220	7	103	Mitochondrial import inner membrane translocase subunit Tim8	w
-IMPORT	human	O60830	TIMM17B	O60830	9	138	Mitochondrial import inner membrane translocase subunit Tim1	w
-IMPORT	human	O75431	MTX2	O75431	18	188	Metaxin-2 (Mitochondrial outer membrane import complex prote	w
-IMPORT	human	O94826	TOMM70	O94826	20	179	Mitochondrial import receptor subunit TOM70 (Mitochondrial p	w
+IMPORT	human	O43615	TIMM44	O43615	19	229	Mitochondrial import inner membrane translocase subunit TIM4	w
+IMPORT	human	O60220	TIMM8A	O60220	9	105	Mitochondrial import inner membrane translocase subunit Tim8	w
+IMPORT	human	O60830	TIMM17B	O60830	10	139	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	human	O75431	MTX2	O75431	26	197	Metaxin-2 (Mitochondrial outer membrane import complex prote	w
+IMPORT	human	O94826	TOMM70	O94826	21	180	Mitochondrial import receptor subunit TOM70 (Mitochondrial p	w
 IMPORT	human	O96008	TOMM40	O96008	17	335	Mitochondrial import receptor subunit TOM40 homolog (Protein	w
 IMPORT	human	P50542	PEX5	P50542	92	219	Peroxisomal targeting signal 1 receptor (PTS1 receptor) (PTS	w
-IMPORT	human	P62072	TIMM10	P62072	11	104	Mitochondrial import inner membrane translocase subunit Tim1	w
-IMPORT	human	Q13505	MTX1	Q13505	5	157	Metaxin-1 (Mitochondrial outer membrane import complex prote	w
-IMPORT	human	Q15388	TOMM20	Q15388	37	301	Mitochondrial import receptor subunit TOM20 homolog (Mitocho	w
+IMPORT	human	P62072	TIMM10	P62072	13	106	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	human	Q13505	MTX1	Q13505	11	163	Metaxin-1 (Mitochondrial outer membrane import complex prote	w
+IMPORT	human	Q15388	TOMM20	Q15388	39	303	Mitochondrial import receptor subunit TOM20 homolog (Mitocho	w
 IMPORT	human	Q15785	TOMM34	Q15785	32	206	Mitochondrial import receptor subunit TOM34 (hTom34) (Transl	w
-IMPORT	human	Q3ZCQ8	TIMM50	Q3ZCQ8	22	305	Mitochondrial import inner membrane translocase subunit TIM5	w
+IMPORT	human	Q3ZCQ8	TIMM50	Q3ZCQ8	26	309	Mitochondrial import inner membrane translocase subunit TIM5	w
 IMPORT	human	Q5SRD1	TIMM23B	Q5SRD1	4	37	Mitochondrial import inner membrane translocase subunit Tim2	w
 IMPORT	human	Q8IVV7	GID4	Q8IVV7	23	103	Glucose-induced degradation protein 4 homolog (Vacuolar impo	w
-IMPORT	human	Q8N4H5	TOMM5	Q8N4H5	28	145	Mitochondrial import receptor subunit TOM5 homolog	w
-IMPORT	human	Q8N4Q1	CHCHD4	Q8N4Q1	7	163	Mitochondrial intermembrane space import and assembly protei	w
+IMPORT	human	Q8N4H5	TOMM5	Q8N4H5	30	147	Mitochondrial import receptor subunit TOM5 homolog	w
+IMPORT	human	Q8N4Q1	CHCHD4	Q8N4Q1	9	165	Mitochondrial intermembrane space import and assembly protei	w
 IMPORT	human	Q969M1	TOMM40L	Q969M1	5	67	Mitochondrial import receptor subunit TOM40B (Protein TOMM40	w
 IMPORT	human	Q96B49	TOMM6	Q96B49	18	113	Mitochondrial import receptor subunit TOM6 homolog (Overexpr	w
-IMPORT	human	Q96DA6	DNAJC19	Q96DA6	23	278	Mitochondrial import inner membrane translocase subunit TIM1	w
-IMPORT	human	Q99595	TIMM17A	Q99595	8	132	Mitochondrial import inner membrane translocase subunit Tim1	w
-IMPORT	human	Q9BSF4	TIMM29	Q9BSF4	6	129	Mitochondrial import inner membrane translocase subunit Tim2	w
-IMPORT	human	Q9BVV7	TIMM21	Q9BVV7	14	246	Mitochondrial import inner membrane translocase subunit Tim2	w
+IMPORT	human	Q96DA6	DNAJC19	Q96DA6	25	280	Mitochondrial import inner membrane translocase subunit TIM1	w
+IMPORT	human	Q99595	TIMM17A	Q99595	9	133	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	human	Q9BSF4	TIMM29	Q9BSF4	7	130	Mitochondrial import inner membrane translocase subunit Tim2	w
+IMPORT	human	Q9BVV7	TIMM21	Q9BVV7	15	247	Mitochondrial import inner membrane translocase subunit Tim2	w
 IMPORT	human	Q9NRA8	EIF4ENIF1	Q9NRA8	51	324	Eukaryotic translation initiation factor 4E transporter (4E-	w
-IMPORT	human	Q9NS69	TOMM22	Q9NS69	30	399	Mitochondrial import receptor subunit TOM22 homolog (hTom22)	w
+IMPORT	human	Q9NS69	TOMM22	Q9NS69	34	403	Mitochondrial import receptor subunit TOM22 homolog (hTom22)	w
 IMPORT	human	Q9P0U1	TOMM7	Q9P0U1	25	115	Mitochondrial import receptor subunit TOM7 homolog (Transloc	w
-IMPORT	human	Q9Y3D7	PAM16	Q9Y3D7	17	172	Mitochondrial import inner membrane translocase subunit TIM1	w
+IMPORT	human	Q9Y3D7	PAM16	Q9Y3D7	23	178	Mitochondrial import inner membrane translocase subunit TIM1	w
 IMPORT	human	Q9Y584	TIMM22	Q9Y584	2	121	Mitochondrial import inner membrane translocase subunit Tim2	w
 IMPORT	human	Q9Y5J6	TIMM10B	Q9Y5J6	7	79	Mitochondrial import inner membrane translocase subunit Tim1	w
 IMPORT	human	Q9Y5J7	TIMM9	Q9Y5J7	12	109	Mitochondrial import inner membrane translocase subunit Tim9	w
-IMPORT	human	Q9Y5J9	TIMM8B	Q9Y5J9	5	88	Mitochondrial import inner membrane translocase subunit Tim8	w
-IMPORT	human	Q9Y5L4	TIMM13	Q9Y5L4	10	188	Mitochondrial import inner membrane translocase subunit Tim1	w
-IMPORT	worm	O02161	tin-44	O02161	7	60	Probable mitochondrial import inner membrane translocase sub	w
-IMPORT	worm	O17287	tomm-22	O17287	6	33	Mitochondrial import receptor subunit TOM22 homolog	w
-IMPORT	worm	O44477	timm-17B.1	O44477	4	21	Probable mitochondrial import inner membrane translocase sub	w
-IMPORT	worm	O45319	tin-13	O45319	3	10	Mitochondrial import inner membrane translocase subunit tim-	w
+IMPORT	human	Q9Y5J9	TIMM8B	Q9Y5J9	7	90	Mitochondrial import inner membrane translocase subunit Tim8	w
+IMPORT	human	Q9Y5L4	TIMM13	Q9Y5L4	12	190	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	worm	O02161	tin-44	O02161	8	60	Probable mitochondrial import inner membrane translocase sub	w
+IMPORT	worm	O17287	tomm-22	O17287	7	34	Mitochondrial import receptor subunit TOM22 homolog	w
+IMPORT	worm	O44477	timm-17B.1	O44477	5	21	Probable mitochondrial import inner membrane translocase sub	w
+IMPORT	worm	O45319	tin-13	O45319	4	11	Mitochondrial import inner membrane translocase subunit tim-	w
 IMPORT	worm	O62198	CELE_F32A11.1	O62198	1	3	Mitochondrial import inner membrane translocase subunit Tim2	w
 IMPORT	worm	O62250	F45G2.8	O62250	3	15	Mitochondrial import inner membrane translocase subunit tim-	w
 IMPORT	worm	P34660	tomm-7	P34660	2	17	Mitochondrial import receptor subunit TOM7 homolog	w
@@ -233,17 +236,18 @@ IMPORT	worm	Q02335	tomm-70	Q02335	5	38	Mitochondrial import receptor subunit tom
 IMPORT	worm	Q17754	tin-9.1	Q17754	3	20	Mitochondrial import inner membrane translocase subunit Tim9	w
 IMPORT	worm	Q18090	tomm-40	Q18090	2	38	Mitochondrial import receptor subunit TOM40 homolog	w
 IMPORT	worm	Q19766	tomm-20	Q19766	2	52	Mitochondrial import receptor subunit TOM20 homolog	w
-IMPORT	worm	Q22647	scpl-4	Q22647	6	23	Mitochondrial import inner membrane translocase subunit TIM5	w
+IMPORT	worm	Q22647	scpl-4	Q22647	7	25	Mitochondrial import inner membrane translocase subunit TIM5	w
 IMPORT	worm	Q8WQD7	CELE_R04F11.5	Q8WQD7	2	4	Mitochondrial import inner membrane translocase subunit Tim2	w
-IMPORT	worm	Q9N408	ddp-1	Q9N408	2	6	Mitochondrial import inner membrane translocase subunit Tim8	w
+IMPORT	worm	Q9N408	ddp-1	Q9N408	3	7	Mitochondrial import inner membrane translocase subunit Tim8	w
 IMPORT	worm	Q9NAQ9	C47G2.3	Q9NAQ9	1	25	Mitochondrial import inner membrane translocase subunit tim-	w
-IMPORT	worm	Q9TXR7	CELE_F56B3.11	Q9TXR7	2	21	Mitochondrial import inner membrane translocase subunit Tim2	w
+IMPORT	worm	Q9TXR7	CELE_F56B3.11	Q9TXR7	2	22	Mitochondrial import inner membrane translocase subunit Tim2	w
 IMPORT	worm	Q9XVQ2	timm-23	Q9XVQ2	3	18	Mitochondrial import inner membrane translocase subunit TIM2	w
 IMPORT	worm	Q9Y0V2	tin-9.2	Q9Y0V2	0	1	Mitochondrial import inner membrane translocase subunit Tim1	w
-IMPORT	worm	Q9Y0V6	tin-10	Q9Y0V6	3	24	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	worm	Q9Y0V6	tin-10	Q9Y0V6	4	24	Mitochondrial import inner membrane translocase subunit Tim1	w
 IMPORT	yeast	O13577	DIF1	O13577	2	8	Damage-regulated import facilitator 1	w
 IMPORT	yeast	O74700	TIM9	O74700	4	32	Mitochondrial import inner membrane translocase subunit TIM9	w
 IMPORT	yeast	P07213	TOM70	P07213	7	80	Mitochondrial import receptor subunit TOM70	w
+IMPORT	yeast	P0CS90	SSC1	P0CS90	3	3	Import motor subunit, mitochondrial	w
 IMPORT	yeast	P0CS91	SSC1	P0CS91	19	183	Import motor subunit, mitochondrial	w
 IMPORT	yeast	P23644	TOM40	P23644	8	81	Mitochondrial import receptor subunit TOM40	w
 IMPORT	yeast	P25491	YDJ1	P25491	13	135	Mitochondrial protein import protein MAS5	w
@@ -254,7 +258,7 @@ IMPORT	yeast	P34230	PXA2	P34230	1	52	Peroxisomal long-chain fatty acid import pr
 IMPORT	yeast	P35180	TOM20	P35180	10	55	Mitochondrial import receptor subunit TOM20	w
 IMPORT	yeast	P36046	MIA40	P36046	5	89	Mitochondrial intermembrane space import and assembly protei	w
 IMPORT	yeast	P38909	CYC2	P38909	0	18	Cytochrome c mitochondrial import factor CYC2	w
-IMPORT	yeast	P39515	TIM17	P39515	6	52	Mitochondrial import inner membrane translocase subunit TIM1	w
+IMPORT	yeast	P39515	TIM17	P39515	7	52	Mitochondrial import inner membrane translocase subunit TIM1	w
 IMPORT	yeast	P40157	VID27	P40157	0	26	Vacuolar import and degradation protein 27	w
 IMPORT	yeast	P41909	PXA1	P41909	1	36	Peroxisomal long-chain fatty acid import protein 2	w
 IMPORT	yeast	P42844	ZIM17	P42844	1	12	Mitochondrial protein import protein ZIM17	w
@@ -268,37 +272,42 @@ IMPORT	yeast	P53507	TOM7	P53507	2	32	Mitochondrial import receptor subunit TOM7	
 IMPORT	yeast	P57744	TIM8	P57744	4	13	Mitochondrial import inner membrane translocase subunit TIM8	w
 IMPORT	yeast	P80967	TOM5	P80967	2	32	Mitochondrial import receptor subunit TOM5	w
 IMPORT	yeast	P87108	TIM10	P87108	5	36	Mitochondrial import inner membrane translocase subunit TIM1	w
-IMPORT	yeast	Q01852	TIM44	Q01852	8	67	Mitochondrial import inner membrane translocase subunit TIM4	w
+IMPORT	yeast	Q01852	TIM44	Q01852	9	67	Mitochondrial import inner membrane translocase subunit TIM4	w
 IMPORT	yeast	Q02776	TIM50	Q02776	4	65	Mitochondrial import inner membrane translocase subunit TIM5	w
 IMPORT	yeast	Q05934	VID22	Q05934	0	29	Vacuolar import and degradation protein 22	w
 IMPORT	yeast	Q07395	SYO1	Q07395	2	22	Synchronized import protein 1	w
 IMPORT	yeast	Q07418	PEX19	Q07418	3	46	Peroxisomal membrane protein import receptor PEX19	w
-IMPORT	yeast	Q07914	PAM18	Q07914	5	44	Mitochondrial import inner membrane translocase subunit TIM1	w
+IMPORT	yeast	Q07914	PAM18	Q07914	6	45	Mitochondrial import inner membrane translocase subunit TIM1	w
 IMPORT	yeast	Q08176	MIM1	Q08176	2	19	Mitochondrial import protein 1	w
 IMPORT	yeast	Q08749	TIM18	Q08749	2	21	Mitochondrial import inner membrane translocase subunit TIM1	w
 IMPORT	yeast	Q12328	TIM22	Q12328	2	51	Mitochondrial import inner membrane translocase subunit TIM2	w
 IMPORT	yeast	Q3E798	MIM2	Q3E798	0	9	Mitochondrial import protein 2	w
-IMPORT	zebrafish	A8WHN3	timm17b	A8WHN3	3	61	Mitochondrial import inner membrane translocase subunit Tim1	w
-IMPORT	zebrafish	B3DGI9	timm8b	B3DGI9	2	7	Mitochondrial import inner membrane translocase subunit	w
+IMPORT	zebrafish	A0A8M6Z1R1	tomm40	A0A8M6Z1R1	3	3	mitochondrial import receptor subunit TOM40 homolog isoform 	w
+IMPORT	zebrafish	A0A8N7UVT2	si:dkey-118j18.1	A0A8N7UVT2	3	3	Mitochondrial import inner membrane translocase subunit Tim2	w
+IMPORT	zebrafish	A8WHN3	timm17b	A8WHN3	6	64	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	zebrafish	B3DGI9	timm8b	B3DGI9	3	8	Mitochondrial import inner membrane translocase subunit	w
 IMPORT	zebrafish	E7F4T6	timm21	E7F4T6	2	22	Mitochondrial import inner membrane translocase subunit Tim2	w
 IMPORT	zebrafish	E7FA60	timm22	E7FA60	2	119	Mitochondrial import inner membrane translocase subunit TIM2	w
 IMPORT	zebrafish	E7FDR0	eif4enif1	E7FDR0	21	82	Eukaryotic translation initiation factor 4E nuclear import f	w
-IMPORT	zebrafish	F6NZ76	tomm5	F6NZ76	6	17	Mitochondrial import receptor subunit TOM5 homolog	w
-IMPORT	zebrafish	Q568N4	timm10b	Q568N4	5	36	Mitochondrial import inner membrane translocase subunit Tim1	w
-IMPORT	zebrafish	Q5PNM7	timm29	Q5PNM7	2	11	Mitochondrial import inner membrane translocase subunit Tim2	w
-IMPORT	zebrafish	Q6DEI8	chchd4	Q6DEI8	1	23	Mitochondrial intermembrane space import and assembly protei	w
-IMPORT	zebrafish	Q6DEM5	timm8a	Q6DEM5	3	9	Mitochondrial import inner membrane translocase subunit Tim8	w
-IMPORT	zebrafish	Q6DGJ3	timm13	Q6DGJ3	4	13	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	zebrafish	F6NZ76	tomm5	F6NZ76	8	19	Mitochondrial import receptor subunit TOM5 homolog	w
+IMPORT	zebrafish	Q0P4E8	zgc:152998	Q0P4E8	1	1	Mitochondrial import receptor subunit TOM7 homolog	w
+IMPORT	zebrafish	Q568N4	timm10b	Q568N4	6	36	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	zebrafish	Q5BLH8	hm:zehn1275	Q5BLH8	3	3	Mitochondrial import inner membrane translocase subunit TIM4	w
+IMPORT	zebrafish	Q5PNM7	timm29	Q5PNM7	4	12	Mitochondrial import inner membrane translocase subunit Tim2	w
+IMPORT	zebrafish	Q6DEI8	chchd4	Q6DEI8	3	25	Mitochondrial intermembrane space import and assembly protei	w
+IMPORT	zebrafish	Q6DEM5	timm8a	Q6DEM5	6	11	Mitochondrial import inner membrane translocase subunit Tim8	w
+IMPORT	zebrafish	Q6DGJ3	timm13	Q6DGJ3	5	14	Mitochondrial import inner membrane translocase subunit Tim1	w
 IMPORT	zebrafish	Q6DH66	tomm20b	Q6DH66	2	33	Mitochondrial import receptor subunit TOM20 homolog B	w
-IMPORT	zebrafish	Q6DI06	timm10	Q6DI06	5	35	Mitochondrial import inner membrane translocase subunit Tim1	w
-IMPORT	zebrafish	Q6IQJ1	tomm22	Q6IQJ1	10	41	Mitochondrial import receptor subunit TOM22 homolog	w
-IMPORT	zebrafish	Q6NWD4	timm50	Q6NWD4	3	32	Mitochondrial import inner membrane translocase subunit TIM5	w
+IMPORT	zebrafish	Q6DI06	timm10	Q6DI06	7	35	Mitochondrial import inner membrane translocase subunit Tim1	w
+IMPORT	zebrafish	Q6IQJ1	tomm22	Q6IQJ1	13	44	Mitochondrial import receptor subunit TOM22 homolog	w
+IMPORT	zebrafish	Q6NWD4	timm50	Q6NWD4	5	34	Mitochondrial import inner membrane translocase subunit TIM5	w
 IMPORT	zebrafish	Q6NWH3	tomm40l	Q6NWH3	5	27	Mitochondrial import receptor subunit TOM40B	w
-IMPORT	zebrafish	Q6PBL0	pam16	Q6PBL0	2	12	Mitochondrial import inner membrane translocase subunit tim1	w
-IMPORT	zebrafish	Q6PBT7	dnajc19	Q6PBT7	5	33	Mitochondrial import inner membrane translocase subunit TIM1	w
+IMPORT	zebrafish	Q6NZZ0	fb82c12	Q6NZZ0	4	4	Mitochondrial import inner membrane translocase subunit TIM1	w
+IMPORT	zebrafish	Q6PBL0	pam16	Q6PBL0	7	17	Mitochondrial import inner membrane translocase subunit tim1	w
+IMPORT	zebrafish	Q6PBT7	dnajc19	Q6PBT7	8	36	Mitochondrial import inner membrane translocase subunit TIM1	w
 IMPORT	zebrafish	Q6PBY6	tomm70a	Q6PBY6	12	86	Mitochondrial import receptor subunit TOM70	w
 IMPORT	zebrafish	Q6ZM24	tomm34	Q6ZM24	12	68	Mitochondrial import receptor subunit TOM34	w
-IMPORT	zebrafish	Q7T2P6	timm23	Q7T2P6	5	29	Mitochondrial import inner membrane translocase subunit Tim2	w
+IMPORT	zebrafish	Q7T2P6	timm23	Q7T2P6	6	30	Mitochondrial import inner membrane translocase subunit Tim2	w
 IMPORT	zebrafish	Q7T314	tomm40	Q7T314	5	27	Mitochondrial import receptor subunit TOM40 homolog	w
 IMPORT	zebrafish	Q9W762	timm9	Q9W762	2	34	Mitochondrial import inner membrane translocase subunit Tim9	w
 IMPORT	zebrafish	X1WBS5	tomm6	X1WBS5	3	14	Mitochondrial import receptor subunit TOM6 homolog	w

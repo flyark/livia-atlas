@@ -42,7 +42,8 @@ Q23090	worm	Q23090	CELE_ZK742.3	Q23090	0	4	NADH:flavin oxidoreductase/NADH oxida
 Q23091	worm	Q23091	CELE_ZK742.4	Q23091	0	2	NADH:flavin oxidoreductase/NADH oxidase N-terminal domain-co	
 Q23092	worm	Q23092	lbp-4	Q23092	0	6	Fatty acid-binding protein homolog 4	
 Q23096	worm	Q23096	tofu-5	Q23096	1	11	Twenty One u-rna (21U-RNA) biogenesis Fouled Up	
-Q23098	worm	Q23098	nuo-6	Q23098	4	98	NADH dehydrogenase	
+Q23098	worm	Q23098	nuo-6	Q23098	5	98	NADH dehydrogenase	
+Q23098_CAEEL	worm	Q23098	nuo-6	Q23098	5	98		
 Q23100	worm	Q23100	CELE_W01B6.8	Q23100	0	1	Uncharacterized protein	
 Q23116	worm	Q23116	decr-1.2	Q23116	0	1	Probable 2,4-dienoyl-CoA reductase decr-1.2	
 Q23120	worm	Q23120	rsp-2	Q23120	3	91	Probable splicing factor, arginine/serine-rich 2	
@@ -64,6 +65,7 @@ Q23150	worm	Q23150	col-181	Q23150	0	2	Nematode cuticle collagen N-terminal domai
 Q23151	worm	Q23151	CELE_W03G11.2	Q23151	3	18	Uncharacterized protein	
 Q23153	worm	Q23153	elc-2	Q23153	10	51	Elongin-C	
 Q23155	worm	Q23155	mrps-11	Q23155	18	260	Ribosomal protein S11	
+Q23155_CAEEL	worm	Q23155	mrps-11	Q23155	18	260		
 Q23156	worm	Q23156	srt-39	Q23156	0	3	Serpentine Receptor, class T	
 Q23158	worm	Q23158	atn-1	Q23158	1	107	Alpha-actinin, sarcomeric	
 Q23159	worm	Q23159	CELE_W04D2.4	Q23159	8	250	C2H2-type domain-containing protein	
@@ -97,7 +99,7 @@ Q23223	worm	Q23223	mtr-4	Q23223	10	119	mRNA transport homolog 4
 Q23227	worm	Q23227	zmp-4	Q23227	0	12	Peptidase metallopeptidase domain-containing protein	
 Q23229	worm	Q23229	xol-1	Q23229	0	10	XO lethal protein 1	
 Q23232	worm	Q23232	wdr-4	Q23232	1	7	tRNA (guanine-N(7)-)-methyltransferase non-catalytic subunit	
-Q23236	worm	Q23236	ndx-3	Q23236	0	8	Nudix hydrolase 3	
+Q23236	worm	Q23236	ndx-3	Q23236	1	9	Nudix hydrolase 3	
 Q23237	worm	Q23237	pbs-3	Q23237	2	60	Proteasome subunit beta type-3	
 Q23238	worm	Q23238	ulp-2	Q23238	1	10	Ubiquitin-like protease 2	
 Q23240	worm	Q23240	cyc-2.2	Q23240	5	81	Probable cytochrome c 2.2	
@@ -156,7 +158,7 @@ Q23368	worm	Q23368	sec-24.2	Q23368	4	64	Yeast SEC homolog
 Q23375	worm	Q23375	dot-1.5	Q23375	0	10	Histone-lysine N-methyltransferase, H3 lysine-79 specific	
 Q23376	worm	Q23376	rgs-9	Q23376	1	8	Regulator of G-protein signaling rgs-9	
 Q23378	worm	Q23378	ttr-48	Q23378	1	10	Transthyretin-like family protein	
-Q23381	worm	Q23381	mmcm-1	Q23381	1	4	Probable methylmalonyl-CoA mutase, mitochondrial	
+Q23381	worm	Q23381	mmcm-1	Q23381	2	5	Probable methylmalonyl-CoA mutase, mitochondrial	
 Q23382	worm	Q23382	ccdc-47	Q23382	7	60	PAT complex subunit CCDC47	
 Q23383	worm	Q23383	metl-6	Q23383	0	6	tRNA N(3)-methylcytidine methyltransferase	
 Q23384	worm	Q23384	nit-1	Q23384	0	6	CN hydrolase domain-containing protein	
@@ -172,12 +174,12 @@ Q23406	worm	Q23406	nos-2	Q23406	0	1	Nanos-type domain-containing protein
 Q23419	worm	Q23419	tbc-2	Q23419	5	9	PH domain-containing protein	
 Q23420	worm	Q23420	CELE_ZK1248.11	Q23420	2	27	E3 SUMO-protein ligase NSE2	
 Q23421	worm	Q23421	gtap-1	Q23421	0	5	Dynein heavy chain 7, axonemal	
-Q23424	worm	Q23424	fzo-1	Q23424	1	43	Transmembrane GTPase fzo-1	
+Q23424	worm	Q23424	fzo-1	Q23424	1	44	Transmembrane GTPase fzo-1	
 Q23429	worm	Q23429	htas-1	Q23429	0	6	Histone H2A	
 Q23435	worm	Q23435	twk-9	Q23435	27	27	TWiK family of potassium channels protein 9	
 Q23445	worm	Q23445	sar-1	Q23445	3	47	Small COPII coat GTPase SAR1	
 Q23449	worm	Q23449	rpn-12	Q23449	3	78	26S proteasome non-ATPase regulatory subunit 8	
-Q23450	worm	Q23450	coa-7	Q23450	0	17	Cytochrome c oxidase assembly factor 7 homolog	
+Q23450	worm	Q23450	coa-7	Q23450	1	18	Cytochrome c oxidase assembly factor 7 homolog	
 Q23451	worm	Q23451	rad-23	Q23451	12	80	UV excision repair protein RAD23	
 Q23455	worm	Q23455	ctdh-1	Q23455	0	3	Uncharacterized protein	
 Q23456	worm	Q23456	CELE_ZK287.4	Q23456	0	2	BPTI/Kunitz inhibitor domain-containing protein	
@@ -230,7 +232,7 @@ Q23563	worm	Q23563	clec-59	Q23563	0	5	VWFA domain-containing protein
 Q23566	worm	Q23566	CELE_ZK666.8	Q23566	0	1	non-specific serine/threonine protein kinase	
 Q23569	worm	Q23569	CELE_ZK669.2	Q23569	0	3	Gamma-interferon-inducible lysosomal thiol reductase	
 Q23570	worm	Q23570	ZK669.3	Q23570	0	3	GILT-like protein ZK669.3	
-Q23571	worm	Q23571	dbt-1	Q23571	2	25	Lipoamide acyltransferase component of branched-chain alpha-	
+Q23571	worm	Q23571	dbt-1	Q23571	3	26	Lipoamide acyltransferase component of branched-chain alpha-	
 Q23579	worm	Q23579	hlh-10	Q23579	1	6	Helix-loop-helix protein 10	
 Q23580	worm	Q23580	lron-2	Q23580	0	2	Leucine-rich repeat-containing protein 15-like	
 Q23581	worm	Q23581	CELE_ZK682.7	Q23581	0	2	Uncharacterized protein	
@@ -250,11 +252,11 @@ Q23614	worm	Q23614	srlf-31	Q23614	0	3	SXP/RAL-2 family protein Ani s 5-like cati
 Q23615	worm	Q23615	srlf-32	Q23615	0	5	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	
 Q23621	worm	Q23621	gdh-1	Q23621	0	19	Glutamate dehydrogenase	
 Q23622	worm	Q23622	tbx-36	Q23622	0	23	Putative T-box protein 36	
-Q23623	worm	Q23623	tgt-1	Q23623	1	2	Queuine tRNA-ribosyltransferase catalytic subunit	
+Q23623	worm	Q23623	tgt-1	Q23623	2	3	Queuine tRNA-ribosyltransferase catalytic subunit	
 Q23624	worm	Q23624	CELE_ZK829.7	Q23624	1	10	Enoyl reductase (ER) domain-containing protein	
 Q23626	worm	Q23626	CELE_ZK829.9	Q23626	0	21	Major facilitator superfamily (MFS) profile domain-containin	
 Q23628	worm	Q23628	lon-3	Q23628	0	1	Cuticle collagen lon-3	
-Q23629	worm	Q23629	ogdh-2	Q23629	1	17	Probable 2-oxoadipate dehydrogenase complex component E1 hom	
+Q23629	worm	Q23629	ogdh-2	Q23629	3	19	Probable 2-oxoadipate dehydrogenase complex component E1 hom	
 Q23633	worm	Q23633	CELE_ZK84.2	Q23633	0	3	EXPERA domain-containing protein	
 Q23639	worm	Q23639	cul-5	Q23639	11	57	Cullin-5	
 Q23642	worm	Q23642	CELE_ZK856.7	Q23642	3	20	Secreted protein	
@@ -283,8 +285,8 @@ Q23681	worm	Q23681	gcy-4	Q23681	2	13	Receptor-type guanylate cyclase gcy-4 (EC 4
 Q23683	worm	Q23683	srlf-34	Q23683	0	2	SXP/RAL-2 family protein Ani s 5-like cation-binding domain-	
 Q23858	dictyostelium-discoideum	Q23858	crtA	Q23858	8	38	Calreticulin	
 Q23862	dictyostelium-discoideum	Q23862	racE	Q23862	7	34	Rho-related protein racE	
-Q23883	dictyostelium-discoideum	Q23883	nad7	Q23883	5	79	NADH-ubiquinone oxidoreductase 49 kDa subunit	
-Q23884	dictyostelium-discoideum	Q23884	mrpl11	Q23884	7	208	Large ribosomal subunit protein uL11m	
+Q23883	dictyostelium-discoideum	Q23883	nad7	Q23883	9	79	NADH-ubiquinone oxidoreductase 49 kDa subunit	
+Q23884	dictyostelium-discoideum	Q23884	mrpl11	Q23884	8	209	Large ribosomal subunit protein uL11m	
 Q23886	dictyostelium-discoideum	Q23886	mrps12	Q23886	30	270	Small ribosomal subunit protein uS12m	
 Q23887	dictyostelium-discoideum	Q23887	mrps7	Q23887	1	10	Small ribosomal subunit protein uS7m	
 Q23888	dictyostelium-discoideum	Q23888	mrpl2	Q23888	9	244	Large ribosomal subunit protein uL2m	

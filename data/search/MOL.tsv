@@ -62,7 +62,7 @@ MOLECULE	human	A8K4G0	CD300LB	A8K4G0	40	319	CMRF35-like molecule 7 (CLM-7) (CD30
 MOLECULE	human	A8MTB9	CEACAM18	A8MTB9	4	64	Cell adhesion molecule CEACAM18 (Carcinoembryonic antigen-re	w
 MOLECULE	human	O00533	CHL1	O00533	24	121	Neural cell adhesion molecule L1-like protein (Close homolog	w
 MOLECULE	human	O15394	NCAM2	O15394	23	136	Neural cell adhesion molecule 2 (N-CAM-2) (NCAM-2)	w
-MOLECULE	human	O43865	AHCYL1	O43865	26	417	S-adenosylhomocysteine hydrolase-like protein 1 (DC-expresse	w
+MOLECULE	human	O43865	AHCYL1	O43865	29	420	S-adenosylhomocysteine hydrolase-like protein 1 (DC-expresse	w
 MOLECULE	human	O60469	DSCAM	O60469	36	326	Cell adhesion molecule DSCAM (CHD2) (Down syndrome cell adhe	w
 MOLECULE	human	O60504	SORBS3	O60504	78	270	Vinexin (SH3-containing adapter molecule 1) (SCAM-1) (Sorbin	w
 MOLECULE	human	O60667	FCMR	O60667	21	78	Immunoglobulin mu Fc receptor (IgM FcR) (Fas apoptotic inhib	w
@@ -216,7 +216,7 @@ MOLECULE	human	Q9UQ26	RIMS2	Q9UQ26	10	85	Regulating synaptic membrane exocytosis
 MOLECULE	human	Q9UQ52	CNTN6	Q9UQ52	21	147	Contactin-6 (Neural recognition molecule NB-3) (hNB-3)	w
 MOLECULE	human	Q9Y275	TNFSF13B	Q9Y275	61	429	Tumor necrosis factor ligand superfamily member 13B (B lymph	w
 MOLECULE	human	Q9Y286	SIGLEC7	Q9Y286	19	152	Sialic acid-binding Ig-like lectin 7 (Siglec-7) (Adhesion in	w
-MOLECULE	human	Q9Y3D7	PAM16	Q9Y3D7	17	172	Mitochondrial import inner membrane translocase subunit TIM1	w
+MOLECULE	human	Q9Y3D7	PAM16	Q9Y3D7	23	178	Mitochondrial import inner membrane translocase subunit TIM1	w
 MOLECULE	human	Q9Y5Y4	PTGDR2	Q9Y5Y4	10	105	Prostaglandin D2 receptor 2 (Chemoattractant receptor-homolo	w
 MOLECULE	human	Q9Y624	F11R	Q9Y624	58	442	Junctional adhesion molecule A (JAM-A) (Junctional adhesion 	w
 MOLECULE	human	Q9Y6W8	ICOS	Q9Y6W8	78	301	Inducible T-cell costimulator (Activation-inducible lymphocy	w
@@ -303,16 +303,17 @@ MOLYBDENUM	fly	FBgn0002641	mal	Q9VRA2	0	9	Molybdenum cofactor sulfurase (MCS) (M
 MOLYBDENUM	fly	FBgn0032054	Mocs3	Q9VLJ8	3	57	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
 MOLYBDENUM	fly	FBgn0039280	Mocs2B	Q9VBX2	16	57	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (Moly	w
 MOLYBDENUM	fly	FBgn0260229	Mocs2A	P0C919	2	5	Molybdopterin synthase sulfur carrier subunit (Molybdenum co	w
-MOLYBDENUM	fly	FBgn0263241	Mocs1	Q8IQF1	0	7	Molybdenum cofactor biosynthesis protein 1 [Includes: GTP 3'	w
+MOLYBDENUM	fly	FBgn0263241	Mocs1	Q8IQF1	2	9	Molybdenum cofactor biosynthesis protein 1 [Includes: GTP 3'	w
 MOLYBDENUM	human	O95396	MOCS3	O95396	4	130	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
 MOLYBDENUM	human	O96007	MOCS2	O96007	2	31	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (MOCO	w
 MOLYBDENUM	human	O96033	MOCS2	O96033	266	2181	Molybdopterin synthase sulfur carrier subunit (MOCO1-A) (Mol	w
-MOLYBDENUM	human	Q5VT66	MTARC1	Q5VT66	6	78	Mitochondrial amidoxime-reducing component 1 (mARC1) (EC 1.7	w
-MOLYBDENUM	human	Q969Z3	MTARC2	Q969Z3	2	52	Mitochondrial amidoxime reducing component 2 (mARC2) (EC 1.7	w
+MOLYBDENUM	human	Q5VT66	MTARC1	Q5VT66	17	89	Mitochondrial amidoxime-reducing component 1 (mARC1) (EC 1.7	w
+MOLYBDENUM	human	Q969Z3	MTARC2	Q969Z3	11	61	Mitochondrial amidoxime reducing component 2 (mARC2) (EC 1.7	w
 MOLYBDENUM	human	Q96EN8	MOCOS	Q96EN8	0	94	Molybdenum cofactor sulfurase (MCS) (MOS) (MoCo sulfurase) (	w
-MOLYBDENUM	human	Q9NZB8	MOCS1	Q9NZB8	5	131	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	w
-MOLYBDENUM	worm	Q20624	moc-5	Q20624	0	7	Molybdenum cofactor biosynthesis protein moc-5	w
+MOLYBDENUM	human	Q9NZB8	MOCS1	Q9NZB8	8	135	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	w
+MOLYBDENUM	worm	Q20624	moc-5	Q20624	1	8	Molybdenum cofactor biosynthesis protein moc-5	w
 MOLYBDENUM	worm	Q21657	mocs-1	Q21657	0	7	Molybdenum cofactor sulfurase	w
+MOLYBDENUM	zebrafish	A0A8M3AJ79	mocs1	A0A8M3AJ79	4	4	molybdenum cofactor biosynthesis protein 1 isoform X1	w
 MOLYBDENUM	zebrafish	F1R905	mocs1	F1R905	1	1	Molybdenum cofactor biosynthesis protein 1	w
 MOLYBDENUMTRANSFERASE	human	Q9NQX3	GPHN	Q9NQX3	9	149	Gephyrin [Includes: Molybdopterin adenylyltransferase (MPT a	w
 MOLYBDOPTERIN	fly	FBgn0000316	cin	P39205	0	28	Molybdenum cofactor synthesis protein cinnamon [Includes: Mo	w

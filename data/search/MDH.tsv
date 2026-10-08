@@ -8,7 +8,7 @@ MDH	nocardia-brasiliensis	K0F1T3	mdh	K0F1T3	1	118	Malate dehydrogenase
 MDH	salmonella-typhimurium	P25077	mdh	P25077	0	41	Malate dehydrogenase	
 MDH	shigella-dysenteriae-serotype-1	Q32BA3	mdh	Q32BA3	0	30	Malate dehydrogenase	
 MDH-1	worm	Q9UAV5	mdh-1	Q9UAV5	1	17	Malate dehydrogenase, cytoplasmic	
-MDH-2	worm	O02640	mdh-2	O02640	2	51	Malate dehydrogenase, mitochondrial	
+MDH-2	worm	O02640	mdh-2	O02640	2	52	Malate dehydrogenase, mitochondrial	
 MDH1	arabidopsis-thaliana	P93819	MDH1	P93819	3	26	Malate dehydrogenase 1, cytoplasmic	
 MDH1	candida-albicans-237561	P83778	MDH1	P83778	2	12	Malate dehydrogenase, cytoplasmic	
 MDH1	cladophialophora-carrionii	A0A1C1CQP3	MDH1	A0A1C1CQP3	0	21	Malate dehydrogenase	
@@ -30,11 +30,13 @@ MDH1B	zebrafish	Q08BZ4	mdh1b	Q08BZ4	0	9	Putative malate dehydrogenase 1B
 MDH1B_HUMAN	human	Q5I0G3	MDH1B	Q5I0G3	4	69		
 MDH2	arabidopsis-thaliana	P57106	MDH2	P57106	2	19	Malate dehydrogenase 2, cytoplasmic	
 MDH2	fly	FBgn0262559	Mdh2	Q9VEB1	9	296	Malate dehydrogenase, mitochondrial (EC 1.1.1.37)	
-MDH2	human	P40926	MDH2	P40926	9	477	Malate dehydrogenase, mitochondrial (EC 1.1.1.37)	
-MDH2	mus-musculus	P08249	Mdh2	P08249	1	53	Malate dehydrogenase, mitochondrial	
-MDH2	rattus-norvegicus	P04636	Mdh2	P04636	1	15	Malate dehydrogenase, mitochondrial	
+MDH2	human	P40926	MDH2	P40926	11	480	Malate dehydrogenase, mitochondrial (EC 1.1.1.37)	
+MDH2	mus-musculus	P08249	Mdh2	P08249	4	57	Malate dehydrogenase, mitochondrial	
+MDH2	pan-troglodytes	H2QUS9	MDH2	H2QUS9	3	4	Malate dehydrogenase	
+MDH2	rattus-norvegicus	P04636	Mdh2	P04636	4	19	Malate dehydrogenase, mitochondrial	
 MDH2	yeast	P22133	MDH2	P22133	2	33	Malate dehydrogenase, cytoplasmic	
-MDH2	zebrafish	Q7T334	mdh2	Q7T334	1	21	Malate dehydrogenase	
+MDH2	zebrafish	Q7T334	mdh2	Q7T334	4	24	Malate dehydrogenase	
+MDH2.S	xenopus-laevis	Q6GR58	mdh2.S	Q6GR58	3	3	Malate dehydrogenase	
 MDH2B	fly	FBgn0036328	Mdh2b	Q9VU29	6	93	Malate dehydrogenase (EC 1.1.1.37)	
 MDH2C	fly	FBgn0036327	Mdh2c	Q9VU28	6	86	Malate dehydrogenase (EC 1.1.1.37)	
 MDH3	arabidopsis-thaliana	Q9FJU0	MDH3	Q9FJU0	0	10	Malate dehydrogenase 3, cytoplasmic	
@@ -48,4 +50,5 @@ MDHA	human	P40925	MDH1	P40925	4	156
 MDHB	dictyostelium-discoideum	Q54D04	mdhB	Q54D04	2	10	Probable malate dehydrogenase 2, mitochondrial	
 MDHC	dictyostelium-discoideum	Q54VM2	mdhC	Q54VM2	2	10	Probable malate dehydrogenase 3	
 MDHC_HUMAN	human	P40925	MDH1	P40925	4	156		
-MDHM_HUMAN	human	P40926	MDH2	P40926	9	477		
+MDHM_CAEEL	worm	O02640	mdh-2	O02640	2	52		
+MDHM_HUMAN	human	P40926	MDH2	P40926	11	480		

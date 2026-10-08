@@ -85,7 +85,7 @@ Q93348	worm	Q93348	irx-1	Q93348	3	24	Putative iroquois-class homeodomain protein
 Q93349	worm	Q93349	swah-1	Q93349	3	26	ANK_REP_REGION domain-containing protein	
 Q93351	worm	Q93351	C36F7.5	Q93351	0	7	Uncharacterized protein	
 Q93352	worm	Q93352	ceh-36	Q93352	0	21	Homeobox protein ceh-36	
-Q93353	worm	Q93353	idhb-1	Q93353	5	14	Probable isocitrate dehydrogenase	
+Q93353	worm	Q93353	idhb-1	Q93353	7	17	Probable isocitrate dehydrogenase	
 Q93354	worm	Q93354	C37E2.2	Q93354	0	7	FAR-17a/AIG1-like protein	
 Q93356	worm	Q93356	ceh-37	Q93356	1	29	Homeobox protein ceh-37	
 Q93367	worm	Q93367	mina-1	Q93367	0	9	Messenger RNA-binding inhibitor of apoptosis 1	
@@ -95,7 +95,7 @@ Q93372	worm	Q93372	Q93372_CAEEL	Q93372	8	55	Serine/threonine-protein (EC 2.7.11.
 Q93372_CAEEL	worm	Q93372	Q93372_CAEEL	Q93372	8	55	Serine/threonine-protein (EC 2.7.11.1)	
 Q93373	worm	Q93373	let-4	Q93373	1	8	Leucine-rich repeat-containing protein let-4	
 Q93377	worm	Q93377	lron-1	Q93377	0	2	LRRCT domain-containing protein	
-Q93379	worm	Q93379	gsr-1	Q93379	0	71	Glutathione reductase, mitochondrial	
+Q93379	worm	Q93379	gsr-1	Q93379	1	72	Glutathione reductase, mitochondrial	
 Q93380	worm	Q93380	unc-93	Q93380	0	1	Putative potassium channel regulatory protein unc-93	
 Q93381	worm	Q93381	madf-8	Q93381	0	2	MADF domain-containing protein	
 Q93382	worm	Q93382	C46F11.4	Q93382	2	41	RNA helicase	
@@ -105,7 +105,7 @@ Q93410	worm	Q93410	CELE_D2005.4	Q93410	0	1	TPR_REGION domain-containing protein
 Q93412	worm	Q93412	CELE_D2005.1	Q93412	0	6	A to I editase domain-containing protein	
 Q93413	worm	Q93413	drh-3	Q93413	1	52	Helicase ATP-binding domain-containing protein	
 Q93424	worm	Q93424	grl-23	Q93424	0	6	Ground-like domain-containing protein	
-Q93425	worm	Q93425	mrps-5	Q93425	18	277	Small ribosomal subunit protein uS5m	
+Q93425	worm	Q93425	mrps-5	Q93425	21	277	Small ribosomal subunit protein uS5m	
 Q93438	worm	Q93438	pigq-1	Q93438	1	12	PMT_2 domain-containing protein	
 Q93453	worm	Q93453	CELE_F10G8.2	Q93453	0	3	Protein kinase domain-containing protein	
 Q93454	worm	Q93454	rae-1	Q93454	6	82	mRNA export factor rae-1	
@@ -114,6 +114,7 @@ Q93459	worm	Q93459	nubp-1	Q93459	2	16	Cytosolic Fe-S cluster assembly factor NUB
 Q93485	worm	Q93485	obr-2	Q93485	0	6	Oxysterol-binding protein	
 Q93510	worm	Q93510	caap-1	Q93510	0	2	Cactin_mid domain-containing protein	
 Q93511	worm	Q93511	romo-1	Q93511	1	20	Reactive oxygen species modulator 1	
+Q93511_CAEEL	worm	Q93511	romo-1	Q93511	1	20		
 Q93517	worm	Q93517	CELE_F16B12.4	Q93517	0	3	Coiled-coil domain-containing protein	
 Q93520	worm	Q93520	CELE_F16B12.6	Q93520	0	27	AAA domain-containing protein	
 Q93522	worm	Q93522	CELE_F16B12.7	Q93522	0	2	Protein kinase domain-containing protein	
@@ -150,10 +151,11 @@ Q93594	worm	Q93594	ncbp-2	Q93594	7	174	Nuclear cap-binding protein subunit 2
 Q93595	worm	Q93595	CELE_F26A3.1	Q93595	0	1	Lipid droplet-associated hydrolase	
 Q93596	worm	Q93596	CELE_F26A3.5	Q93596	0	1	DDE_Tnp_1_7 domain-containing protein	
 Q935S7	salmonella-typhimurium	Q935S7	mukB	Q935S7	2	8	Chromosome partition protein MukB	
-Q93615	worm	Q93615	F27D4.1	Q93615	3	50	Probable electron transfer flavoprotein subunit alpha, mitoc	
+Q93615	worm	Q93615	F27D4.1	Q93615	11	58	Probable electron transfer flavoprotein subunit alpha, mitoc	
 Q93616	worm	Q93616	lsy-22	Q93616	1	27	STI1 domain-containing protein	
 Q93618	worm	Q93618	F27D4.4	Q93618	2	37	Zinc finger CCCH domain-containing protein 15 homolog	
-Q93619	worm	Q93619	bckd-1b	Q93619	3	22	2-oxoisovalerate dehydrogenase subunit beta, mitochondrial	
+Q93619	worm	Q93619	bckd-1b	Q93619	6	24	2-oxoisovalerate dehydrogenase subunit beta, mitochondrial	
+Q93619_CAEEL	worm	Q93619	bckd-1b	Q93619	6	24		
 Q93635	worm	Q93635	ccdc-149	Q93635	0	5	Coiled-coil domain-containing protein 149	
 Q93638	worm	Q93638	CELE_F30A10.9	Q93638	1	94	PIN domain-containing protein	
 Q93640	worm	Q93640	calm-1	Q93640	2	13	EF-hand domain-containing protein	
@@ -201,7 +203,8 @@ Q93795	worm	Q93795	hpo-31	Q93795	0	6	CCA tRNA nucleotidyltransferase 1, mitochon
 Q93796	worm	Q93796	nrf-5	Q93796	0	1	Nose resistant to fluoxetine protein 5	
 Q93828	worm	Q93828	dhhc-12	Q93828	0	5	Palmitoyltransferase	
 Q93830	worm	Q93830	exos-3	Q93830	7	43	Exosome complex component RRP40	
-Q93831	worm	Q93831	ndub-10	Q93831	10	110	NADH dehydrogenase	
+Q93831	worm	Q93831	ndub-10	Q93831	11	110	NADH dehydrogenase	
+Q93831_CAEEL	worm	Q93831	ndub-10	Q93831	11	110		
 Q93832	worm	Q93832	nlp-4	Q93832	0	1	Transthyretin-like family protein	
 Q93833	worm	Q93833	che-13	Q93833	25	90	Intraflagellar transport protein che-13	
 Q93838	worm	Q93838	serp-1.1	Q93838	0	4	Stress-associated endoplasmic reticulum protein 2	
@@ -219,7 +222,8 @@ Q93899	worm	Q93899	vab-7	Q93899	1	37	Homeobox protein vab-7
 Q93903	worm	Q93903	gfi-3	Q93903	3	47	Protein gfi-3	
 Q93906	worm	Q93906	CELE_M163.1	Q93906	0	4	Uncharacterized protein	
 Q93930	worm	Q93930	prx-14	Q93930	2	17	Peroxisomal membrane protein PEX14	
-Q93931	worm	Q93931	nuaf-3	Q93931	3	28	NADH dehydrogenase	
+Q93931	worm	Q93931	nuaf-3	Q93931	5	28	NADH dehydrogenase	
+Q93931_CAEEL	worm	Q93931	nuaf-3	Q93931	5	28		
 Q93932	worm	Q93932	sdz-27	Q93932	0	6	SKN-1 Dependent Zygotic transcript	
 Q93934	worm	Q93934	adk-1	Q93934	0	47	Adenosine kinase	
 Q93968	worm	Q93968	serr-1	Q93968	0	7	Serine racemase	
@@ -311,7 +315,7 @@ Q93VT8	oryza-sativa-subsp-japonica	Q93VT8	ACLB-1	Q93VT8	1	13	ATP-citrate synthas
 Q93VT9	arabidopsis-thaliana	Q93VT9	RPL10A	Q93VT9	18	573	Large ribosomal subunit protein uL16z	
 Q93VU9	oryza-sativa-subsp-japonica	Q93VU9	Os01g0300000	Q93VU9	1	22	Os01g0300000 protein	
 Q93VV0	arabidopsis-thaliana	Q93VV0	PAT16	Q93VV0	0	2	Probable protein S-acyltransferase 16	
-Q93VV9	arabidopsis-thaliana	Q93VV9	PAM16L2	Q93VV9	6	41	Mitochondrial import inner membrane translocase subunit PAM1	
+Q93VV9	arabidopsis-thaliana	Q93VV9	PAM16L2	Q93VV9	6	42	Mitochondrial import inner membrane translocase subunit PAM1	
 Q93VX8	oryza-sativa-subsp-japonica	Q93VX8	Os01g0372400	Q93VX8	1	9	glutathione transferase	
 Q93VY3	arabidopsis-thaliana	Q93VY3	NAC072	Q93VY3	2	17	NAC domain-containing protein 72	
 Q93W00	oryza-sativa-subsp-japonica	Q93W00	P0560B06.11	Q93W00	1	8	Q93W00_ORYSJ	

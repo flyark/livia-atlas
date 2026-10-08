@@ -11,10 +11,13 @@ PCK1	schizosaccharomyces-pombe	P36582	pck1	P36582	6	12	Protein kinase C-like 1
 PCK1	yeast	P10963	PCK1	P10963	0	19	Phosphoenolpyruvate carboxykinase (ATP)	
 PCK2	arabidopsis-thaliana	A0A1P8BDT8	PCK2	A0A1P8BDT8	1	5	phosphoenolpyruvate carboxykinase (ATP)	
 PCK2	dictyostelium-discoideum	Q869Z4	pck2	Q869Z4	0	3	Phosphoenolpyruvate carboxykinase	
-PCK2	human	Q16822	PCK2	Q16822	8	137	Phosphoenolpyruvate carboxykinase [GTP], mitochondrial (PEPC	
-PCK2	mus-musculus	Q8BH04	Pck2	Q8BH04	0	3	Phosphoenolpyruvate carboxykinase	
+PCK2	human	Q16822	PCK2	Q16822	12	141	Phosphoenolpyruvate carboxykinase [GTP], mitochondrial (PEPC	
+PCK2	mus-musculus	Q8BH04	Pck2	Q8BH04	3	6	Phosphoenolpyruvate carboxykinase	
+PCK2	pan-troglodytes	H2Q815	PCK2	H2Q815	2	3	phosphoenolpyruvate carboxykinase (GTP)	
+PCK2	rattus-norvegicus	A0A8I6AH39	Pck2	A0A8I6AH39	3	3	phosphoenolpyruvate carboxykinase (GTP)	
 PCK2	rattus-norvegicus	F1LQJ7	Pck2	F1LQJ7	0	1	Phosphoenolpyruvate carboxykinase	
 PCK2	schizosaccharomyces-pombe	P36583	pck2	P36583	3	14	Protein kinase C-like 2	
+PCK2.S	xenopus-laevis	A0A8J0U9L9	pck2.S	A0A8J0U9L9	1	1	phosphoenolpyruvate carboxykinase (GTP)	
 PCKA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PP01	pckA	Q9PP01	0	9	Phosphoenolpyruvate carboxykinase (ATP)	
 PCKA	dictyostelium-discoideum	Q75JD5	pckA	Q75JD5	0	2	Phosphoenolpyruvate carboxykinase (ATP)	
 PCKA	escherichia-coli-83333	P22259	pckA	P22259	0	3	Phosphoenolpyruvate carboxykinase (ATP)	
@@ -30,4 +33,5 @@ PCKG	mycobacterium-tuberculosis	P9WIH3	pckG	P9WIH3	0	2	Phosphoenolpyruvate carbo
 PCKG	nocardia-brasiliensis	K0EWT1	pckG	K0EWT1	0	5	Phosphoenolpyruvate carboxykinase	
 PCKG	nocardia-brasiliensis	K0F8Q9	pckG	K0F8Q9	0	5	Phosphoenolpyruvate carboxykinase	
 PCKGC_HUMAN	human	P35558	PCK1	P35558	7	232		
-PCKGM_HUMAN	human	Q16822	PCK2	Q16822	8	137		
+PCKGM_HUMAN	human	Q16822	PCK2	Q16822	12	141		
+PCKG_DROME	fly	FBgn0003067	Pepck1	P20007	3	103		

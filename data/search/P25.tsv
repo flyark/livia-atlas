@@ -4,7 +4,7 @@ P25-LIKE	human	Q8N5L8	RPP25L	Q8N5L8	14	153	Ribonuclease P protein subunit p25-li
 P250	human	O15027	SEC16A	O15027	48	441	Protein transport protein Sec16A (SEC16 homolog A) (p250)	w
 P250	human	O95425	SVIL	O95425	16	230	Supervillin (Archvillin) (p205/p250)	w
 P250	human	P21675	TAF1	P21675	41	444	Transcription initiation factor TFIID subunit 1 (EC 2.3.1.48	w
-P25007	fly	FBgn0004432	Cyp1	P25007	52	488	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	
+P25007	fly	FBgn0004432	Cyp1	P25007	58	493	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	
 P25008	fly	FBgn0004597	CycC	P25008	61	473	Cyclin-C	
 P25009	schizosaccharomyces-pombe	P25009	puc1	P25009	5	13	Cyclin puc1	
 P25011	glycine-max	P25011	?	P25011	28	80	G2/mitotic-specific cyclin S13-6	
@@ -19,7 +19,7 @@ P25031	rattus-norvegicus	P25031	Reg3b	P25031	2	3	Regenerating islet-derived prot
 P25036	yeast	P25036	YSP3	P25036	1	13	Subtilisin-like protease 3	
 P25037	yeast	P25037	UBP1	P25037	2	51	Ubiquitin carboxyl-terminal hydrolase 1	
 P25038	yeast	P25038	IFM1	P25038	5	218	Translation initiation factor IF-2, mitochondrial	
-P25039	yeast	P25039	MEF1	P25039	3	194	Elongation factor G, mitochondrial	
+P25039	yeast	P25039	MEF1	P25039	4	195	Elongation factor G, mitochondrial	
 P25040	yeast	P25040	TSR4	P25040	1	4	20S rRNA accumulation protein 4	
 P25042	yeast	P25042	ROX1	P25042	3	25	Repressor ROX1	
 P25043	yeast	P25043	PUP1	P25043	5	60	Proteasome subunit beta type-2	
@@ -111,7 +111,7 @@ P25311	human	P25311	AZGP1	P25311	60	780	Zinc-alpha-2-glycoprotein (Zn-alpha-2-GP
 P25318	mus-musculus	P25318	Col8a2	P25318	2	31	Collagen alpha-2(VIII) chain	
 P25322	mus-musculus	P25322	Ccnd1	P25322	24	144	G1/S-specific cyclin-D1	
 P25323	dictyostelium-discoideum	P25323	mlkA	P25323	0	4	Myosin light chain kinase A	
-P25325	human	P25325	MPST	P25325	8	117	3-mercaptopyruvate sulfurtransferase (MST) (EC 2.8.1.2)	
+P25325	human	P25325	MPST	P25325	18	127	3-mercaptopyruvate sulfurtransferase (MST) (EC 2.8.1.2)	
 P25332	yeast	P25332	RBK1	P25332	0	6	Ribokinase	
 P25333	yeast	P25333	SAT4	P25333	1	25	Serine/threonine-protein kinase HAL4/SAT4	
 P25334	yeast	P25334	CPR4	P25334	1	27	Peptidyl-prolyl cis-trans isomerase CPR4	
@@ -125,7 +125,7 @@ P25341	yeast	P25341	KIN82	P25341	6	34	Serine/threonine-protein kinase KIN82 (EC 
 P25342	yeast	P25342	CDC10	P25342	4	50	Cell division control protein 10	
 P25343	yeast	P25343	RVS161	P25343	10	105	Reduced viability upon starvation protein 161	
 P25344	yeast	P25344	STE50	P25344	11	76	Protein STE50	
-P25345	yeast	P25345	SLM5	P25345	3	40	Asparagine--tRNA ligase, mitochondrial	
+P25345	yeast	P25345	SLM5	P25345	4	41	Asparagine--tRNA ligase, mitochondrial	
 P25346	yeast	P25346	GIT1	P25346	0	1	Glycerophosphoinositol transporter 1	
 P25347	yeast	P25347	YCR001W	P25347	0	2	Uncharacterized protein YCR001W	
 P25348	yeast	P25348	MRPL32	P25348	9	205	Large ribosomal subunit protein bL32m	
@@ -150,7 +150,7 @@ P25370	yeast	P25370	GFD2	P25370	0	11	Good for full DBP5 activity protein 2
 P25371	yeast	P25371	ADP1	P25371	1	26	Probable ATP-dependent permease	
 P25372	yeast	P25372	TRX3	P25372	0	25	Thioredoxin-3, mitochondrial	
 P25373	yeast	P25373	GRX1	P25373	0	18	Glutaredoxin-1	
-P25374	yeast	P25374	NFS1	P25374	6	33	Cysteine desulfurase, mitochondrial	
+P25374	yeast	P25374	NFS1	P25374	7	34	Cysteine desulfurase, mitochondrial	
 P25375	yeast	P25375	PRD1	P25375	0	6	Saccharolysin	
 P25376	yeast	P25376	AGP1	P25376	0	7	General amino acid permease AGP1	
 P25377	yeast	P25377	ADH7	P25377	1	7	NADP-dependent alcohol dehydrogenase 7	
@@ -217,7 +217,7 @@ P25559	yeast	P25559	DCC1	P25559	3	19	Sister chromatid cohesion protein DCC1
 P25560	yeast	P25560	RER1	P25560	1	14	Protein RER1	
 P25563	yeast	P25563	YCL023C	P25563	0	1	Putative uncharacterized protein YCL023C	
 P25565	yeast	P25565	YCL002C	P25565	0	2	Putative uncharacterized protein YCL002C	
-P25566	yeast	P25566	MXR2	P25566	2	29	Peptide methionine sulfoxide reductase 2	
+P25566	yeast	P25566	MXR2	P25566	3	30	Peptide methionine sulfoxide reductase 2	
 P25567	yeast	P25567	SRO9	P25567	65	851	RNA-binding protein SRO9	
 P25568	yeast	P25568	ATG22	P25568	0	18	Autophagy-related protein 22	
 P25569	yeast	P25569	GID7	P25569	4	21	GID complex subunit 7	
@@ -294,7 +294,7 @@ P25697	arabidopsis-thaliana	P25697	At1g32060	P25697	2	75	Phosphoribulokinase, ch
 P25698	glycine-max	P25698	TEFS1	P25698	4	224	Elongation factor 1-alpha	
 P25701	arabidopsis-thaliana	P25701	ACP2	P25701	32	222	Acyl carrier protein 2, chloroplastic	
 P25702	arabidopsis-thaliana	P25702	ACP3	P25702	36	222	Acyl carrier protein 3, chloroplastic	
-P25705	human	P25705	ATP5F1A	P25705	24	596	ATP synthase F(1) complex subunit alpha, mitochondrial (ATP 	
+P25705	human	P25705	ATP5F1A	P25705	30	602	ATP synthase F(1) complex subunit alpha, mitochondrial (ATP 	
 P25706	zea-mays	P25706	ndhA	P25706	12	340	NAD(P)H-quinone oxidoreductase subunit 1, chloroplastic	
 P25709	zea-mays	P25709	ndhH	P25709	15	426	NAD(P)H-quinone oxidoreductase subunit H, chloroplastic	
 P25713	human	P25713	MT3	P25713	3	116	Metallothionein-3 (MT-3) (GIFB) (GIF) (Growth inhibitory fac	
@@ -331,7 +331,7 @@ P25801	mus-musculus	P25801	Lmo2	P25801	12	98	Rhombotin-2
 P25805	plasmodium-falciparum-36329	P25805	FP1	P25805	1	52	Falcipain-1	
 P25807	worm	P25807	cpr-1	P25807	0	20	Gut-specific cysteine proteinase	
 P25808	yeast	P25808	SPB4	P25808	4	453	ATP-dependent rRNA helicase SPB4	
-P25809	rattus-norvegicus	P25809	Ckmt1	P25809	4	25	Creatine kinase U-type, mitochondrial	
+P25809	rattus-norvegicus	P25809	Ckmt1	P25809	8	29	Creatine kinase U-type, mitochondrial	
 P25815	human	P25815	S100P	P25815	40	489	Protein S100-P (Migration-inducing gene 9 protein) (MIG9) (P	
 P25818	arabidopsis-thaliana	P25818	TIP1-1	P25818	1	5	Aquaporin TIP1-1	
 P25819	arabidopsis-thaliana	P25819	CAT2	P25819	1	19	Catalase-2	
@@ -352,7 +352,7 @@ P25864	arabidopsis-thaliana	P25864	RPL9	P25864	7	362	Large ribosomal subunit pro
 P25865	arabidopsis-thaliana	P25865	UBC1	P25865	17	146	Ubiquitin-conjugating enzyme E2 1	
 P25867	fly	FBgn0011217	eff	P25867	45	169	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	
 P25873	arabidopsis-thaliana	P25873	RPL15	P25873	28	688	Large ribosomal subunit protein uL15c	
-P25874	human	P25874	UCP1	P25874	0	120	Mitochondrial brown fat uncoupling protein 1 (UCP 1) (Solute	
+P25874	human	P25874	UCP1	P25874	1	121	Mitochondrial brown fat uncoupling protein 1 (UCP 1) (Solute	
 P25886	rattus-norvegicus	P25886	Rpl29	P25886	3	229	Large ribosomal subunit protein eL29	
 P25888	escherichia-coli-83333	P25888	rhlE	P25888	2	82	ATP-dependent RNA helicase RhlE	
 P25889	escherichia-coli-83333	P25889	preA	P25889	1	6	NAD-dependent dihydropyrimidine dehydrogenase subunit PreA	

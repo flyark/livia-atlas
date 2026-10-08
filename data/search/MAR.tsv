@@ -18,7 +18,7 @@ MARAPSIN-2	human	A1L453	PRSS38	A1L453	5	38	Serine protease 38 (EC 3.4.21.-) (Mar
 MARB-1	worm	Q20062	marb-1	Q20062	0	57	Isochorismatase domain-containing protein 1	
 MARC	fly	FBgn0029661	CG16781	M9PDP1	1	18	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 MARC	fly	FBgn0030015	CG10761	Q9W3I6	0	9	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
-MARC	fly	FBgn0033451	Marc	A1Z803	3	15	FI02892p (Mitochondrial amidoxime reducing component (EC 1.7	
+MARC	fly	FBgn0033451	Marc	A1Z803	5	17	FI02892p (Mitochondrial amidoxime reducing component (EC 1.7	
 MARC	fly	FBgn0037242	March5	Q9VN18	0	16	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 MARC	fly	FBgn0039498	CG17991	Q9VB61	1	20	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 MARC-1	worm	B2D6L6	marc-1	B2D6L6	0	2	RING-CH-type domain-containing protein	
@@ -28,17 +28,18 @@ MARC-3	worm	Q93227	marc-3	Q93227	0	3	E3 ubiquitin-protein ligase marc-3	w
 MARC-4	worm	Q9N5V7	marc-4	Q9N5V7	0	2	RING-CH-type domain-containing protein	
 MARC-5	worm	Q9XWI0	marc-5	Q9XWI0	0	2	RING-CH-type domain-containing protein	
 MARC-6	worm	Q400N4	marc-6	Q400N4	2	11	RING-type E3 ubiquitin transferase	
-MARC1	human	Q5VT66	MTARC1	Q5VT66	6	78		
-MARC1_HUMAN	human	Q5VT66	MTARC1	Q5VT66	6	78		
-MARC2	human	Q969Z3	MTARC2	Q969Z3	2	52		
-MARC2_HUMAN	human	Q969Z3	MTARC2	Q969Z3	2	52		
+MARC1	human	Q5VT66	MTARC1	Q5VT66	17	89		
+MARC1_DANRE	zebrafish	Q58EJ9	mtarc1	Q58EJ9	4	8		
+MARC1_HUMAN	human	Q5VT66	MTARC1	Q5VT66	17	89		
+MARC2	human	Q969Z3	MTARC2	Q969Z3	11	61		
+MARC2_HUMAN	human	Q969Z3	MTARC2	Q969Z3	11	61		
 MARCAL1	fly	FBgn0031655	Marcal1	Q9VMX6	3	31	SWI/SNF-related matrix-associated actin-dependent regulator 	
 MARCH-I	human	Q8TCQ1	MARCHF1	Q8TCQ1	19	121	E3 ubiquitin-protein ligase MARCHF1 (EC 2.3.2.27) (Membrane-	w
 MARCH-II	human	Q9P0N8	MARCHF2	Q9P0N8	33	148	E3 ubiquitin-protein ligase MARCHF2 (EC 2.3.2.27) (Membrane-	w
 MARCH-III	human	Q86UD3	MARCHF3	Q86UD3	43	106	E3 ubiquitin-protein ligase MARCHF3 (EC 2.3.2.27) (Membrane-	w
 MARCH-IV	human	Q9P2E8	MARCHF4	Q9P2E8	33	143	E3 ubiquitin-protein ligase MARCHF4 (EC 2.3.2.27) (Membrane-	w
 MARCH-IX	human	Q86YJ5	MARCHF9	Q86YJ5	14	41	E3 ubiquitin-protein ligase MARCHF9 (EC 2.3.2.27) (Membrane-	w
-MARCH-V	human	Q9NX47	MARCHF5	Q9NX47	14	227	E3 ubiquitin-protein ligase MARCHF5 (EC 2.3.2.27) (Membrane-	w
+MARCH-V	human	Q9NX47	MARCHF5	Q9NX47	16	229	E3 ubiquitin-protein ligase MARCHF5 (EC 2.3.2.27) (Membrane-	w
 MARCH-VI	human	O60337	MARCHF6	O60337	13	87	E3 ubiquitin-protein ligase MARCHF6 (EC 2.3.2.27) (Doa10 hom	w
 MARCH-VII	human	Q9H992	MARCHF7	Q9H992	22	102	E3 ubiquitin-protein ligase MARCHF7 (EC 2.3.2.27) (Axotrophi	w
 MARCH-X	human	Q8NA82	MARCHF10	Q8NA82	10	35	Probable E3 ubiquitin-protein ligase MARCHF10 (EC 2.3.2.27) 	w
@@ -50,7 +51,7 @@ MARCH2	human	Q9P0N8	MARCHF2	Q9P0N8	33	148
 MARCH3	human	Q86UD3	MARCHF3	Q86UD3	43	106		
 MARCH4	human	Q9P2E8	MARCHF4	Q9P2E8	33	143		
 MARCH5	fly	FBgn0037242	March5	Q9VN18	0	16	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	
-MARCH5	human	Q9NX47	MARCHF5	Q9NX47	14	227		
+MARCH5	human	Q9NX47	MARCHF5	Q9NX47	16	229		
 MARCH6	human	O60337	MARCHF6	O60337	13	87		
 MARCH7	human	Q9H992	MARCHF7	Q9H992	22	102		
 MARCH8	human	Q5T0T0	MARCHF8	Q5T0T0	8	85		
@@ -83,14 +84,16 @@ MARCHF5	fly	FBgn0029661	CG16781	M9PDP1	1	18	E3 ubiquitin-protein ligase MARCHF5 
 MARCHF5	fly	FBgn0030015	CG10761	Q9W3I6	0	9	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 MARCHF5	fly	FBgn0037242	March5	Q9VN18	0	16	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 MARCHF5	fly	FBgn0039498	CG17991	Q9VB61	1	20	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
-MARCHF5	human	Q9NX47	MARCHF5	Q9NX47	14	227	E3 ubiquitin-protein ligase MARCHF5 (EC 2.3.2.27) (Membrane-	
-MARCHF5	mus-musculus	Q3KNM2	Marchf5	Q3KNM2	0	11	E3 ubiquitin-protein ligase MARCHF5	
-MARCHF5	rattus-norvegicus	F7FGS9	Marchf5	F7FGS9	0	16	E3 ubiquitin-protein ligase MARCHF5	
+MARCHF5	human	Q9NX47	MARCHF5	Q9NX47	16	229	E3 ubiquitin-protein ligase MARCHF5 (EC 2.3.2.27) (Membrane-	
+MARCHF5	mus-musculus	Q3KNM2	Marchf5	Q3KNM2	2	13	E3 ubiquitin-protein ligase MARCHF5	
+MARCHF5	pan-troglodytes	H2R4C6	MARCHF5	H2R4C6	2	2	Membrane associated ring-CH-type finger 5	
+MARCHF5	rattus-norvegicus	F7FGS9	Marchf5	F7FGS9	2	18	E3 ubiquitin-protein ligase MARCHF5	
 MARCHF5	worm	Q21530	CELE_M110.3	Q21530	0	12	E3 ubiquitin-protein ligase MARCHF5	w
 MARCHF5	zebrafish	A3KP58	marchf5	A3KP58	0	15	E3 ubiquitin-protein ligase MARCHF5	w
 MARCHF5	zebrafish	A3KP58	marchf5	A3KP58	0	15	E3 ubiquitin-protein ligase MARCHF5	w
-MARCHF5	zebrafish	Q6NYK8	marchf5	Q6NYK8	0	15	E3 ubiquitin-protein ligase MARCHF5	w
-MARCHF5	zebrafish	Q6NYK8	marchf5	Q6NYK8	0	15	E3 ubiquitin-protein ligase MARCHF5	w
+MARCHF5	zebrafish	Q6NYK8	marchf5	Q6NYK8	1	16	E3 ubiquitin-protein ligase MARCHF5	w
+MARCHF5	zebrafish	Q6NYK8	marchf5	Q6NYK8	1	16	E3 ubiquitin-protein ligase MARCHF5	w
+MARCHF5.S	xenopus-laevis	A0A1L8FEE9	marchf5.S	A0A1L8FEE9	1	2	E3 ubiquitin-protein ligase MARCHF5-like	
 MARCHF6	human	O60337	MARCHF6	O60337	13	87	E3 ubiquitin-protein ligase MARCHF6 (EC 2.3.2.27) (Doa10 hom	
 MARCHF6	mus-musculus	Q6ZQ89	Marchf6	Q6ZQ89	2	8	E3 ubiquitin-protein ligase MARCHF6	
 MARCHF6	rattus-norvegicus	F1M1F1	Marchf6	F1M1F1	2	9	E3 ubiquitin-protein ligase MARCHF6	
@@ -136,12 +139,13 @@ MARE1_HUMAN	human	Q15691	MAPRE1	Q15691	91	571
 MARE2_HUMAN	human	Q15555	MAPRE2	Q15555	21	210		
 MARE3_HUMAN	human	Q9UPY8	MAPRE3	Q9UPY8	55	302		
 MARENOSTRIN	human	O15553	MEFV	O15553	31	400	Pyrin (Marenostrin)	w
-MARF	fly	FBgn0029870	Marf	Q7YU24	3	91	Mitochondrial assembly regulatory factor	
+MARF	fly	FBgn0029870	Marf	Q7YU24	3	92	Mitochondrial assembly regulatory factor	
 MARF	virus	H2ESE6	MARF	H2ESE6	0	2	H2ESE6_9VIRU	
 MARF1	fly	FBgn0039972	Marf1	Q7KWG9	2	46	Meiosis regulator and mRNA stability factor 1, isoform D (Me	
 MARF1	human	Q9Y4F3	MARF1	Q9Y4F3	6	148	Meiosis regulator and mRNA stability factor 1 (Limkain-b1) (	
 MARF1	zebrafish	A0A8M9QAJ1	marf1	A0A8M9QAJ1	1	35	Meiosis regulator and mRNA stability factor 1	
 MARF1_HUMAN	human	Q9Y4F3	MARF1	Q9Y4F3	6	148		
+MARF_DROME	fly	FBgn0029870	Marf	Q7YU24	3	92		
 MARG-1	worm	H2KZY6	marg-1	H2KZY6	0	6	Pharyngeal MARGginal cell marker	
 MARGGINAL	worm	H2KZY6	marg-1	H2KZY6	0	6	Pharyngeal MARGginal cell marker	w
 MARGINAL	human	Q8WU39	MZB1	Q8WU39	21	176	Marginal zone B- and B1-cell-specific protein (Mesenteric es	w
@@ -149,7 +153,8 @@ MARH1_HUMAN	human	Q8TCQ1	MARCHF1	Q8TCQ1	19	121
 MARH2_HUMAN	human	Q9P0N8	MARCHF2	Q9P0N8	33	148		
 MARH3_HUMAN	human	Q86UD3	MARCHF3	Q86UD3	43	106		
 MARH4_HUMAN	human	Q9P2E8	MARCHF4	Q9P2E8	33	143		
-MARH5_HUMAN	human	Q9NX47	MARCHF5	Q9NX47	14	227		
+MARH5_DANRE	zebrafish	Q6NYK8	marchf5	Q6NYK8	1	16		
+MARH5_HUMAN	human	Q9NX47	MARCHF5	Q9NX47	16	229		
 MARH6_HUMAN	human	O60337	MARCHF6	O60337	13	87		
 MARH7_HUMAN	human	Q9H992	MARCHF7	Q9H992	22	102		
 MARH8_HUMAN	human	Q5T0T0	MARCHF8	Q5T0T0	8	85		
@@ -189,10 +194,10 @@ MARKER	human	P41732	TSPAN7	P41732	6	132	Tetraspanin-7 (Tspan-7) (Cell surface gl
 MARKER	human	P46013	MKI67	P46013	20	176	Proliferation marker protein Ki-67 (Antigen identified by mo	w
 MARKER	human	P47874	OMP	P47874	1	81	Olfactory marker protein (Olfactory neuronal-specific protei	w
 MARKER	human	Q14254	FLOT2	Q14254	19	457	Flotillin-2 (Epidermal surface antigen) (ESA) (Membrane comp	w
-MARKER	human	Q14596	NBR1	Q14596	171	688	Next to BRCA1 gene 1 protein (Cell migration-inducing gene 1	w
+MARKER	human	Q14596	NBR1	Q14596	188	705	Next to BRCA1 gene 1 protein (Cell migration-inducing gene 1	w
 MARKER	human	Q15493	RGN	Q15493	1	56	Regucalcin (RC) (Gluconolactonase) (GNL) (EC 3.1.1.17) (Sene	w
 MARKER	human	Q68CZ2	TNS3	Q68CZ2	52	189	Tensin-3 (EC 3.1.3.-) (Tensin-like SH2 domain-containing pro	w
-MARKER	human	Q6P4A7	SFXN4	Q6P4A7	4	165	Sideroflexin-4 (Breast cancer resistance marker 1)	w
+MARKER	human	Q6P4A7	SFXN4	Q6P4A7	12	173	Sideroflexin-4 (Breast cancer resistance marker 1)	w
 MARKER	human	Q6UX71	PLXDC2	Q6UX71	18	108	Plexin domain-containing protein 2 (Tumor endothelial marker	w
 MARKER	human	Q8IUK5	PLXDC1	Q8IUK5	5	31	Plexin domain-containing protein 1 (Tumor endothelial marker	w
 MARKER	human	Q96D21	RASD2	Q96D21	17	138	GTP-binding protein Rhes (Ras homolog enriched in striatum) 	w
@@ -239,10 +244,12 @@ MARS1	human	P56192	MARS1	P56192	18	377	Methionine--tRNA ligase, cytoplasmic (EC 
 MARS1	mus-musculus	Q68FL6	Mars1	Q68FL6	7	54	Methionine--tRNA ligase, cytoplasmic	
 MARS1	rattus-norvegicus	D3Z941	Mars1	D3Z941	10	54	Methionine--tRNA ligase, cytoplasmic	
 MARS1	zebrafish	A0A8M1PDZ5	mars1	A0A8M1PDZ5	6	58	Methionine--tRNA ligase, cytoplasmic	
-MARS2	human	Q96GW9	MARS2	Q96GW9	3	149	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Methio	
-MARS2	mus-musculus	Q499X9	Mars2	Q499X9	0	36	Methionine--tRNA ligase, mitochondrial	
-MARS2	rattus-norvegicus	D4A9V7	Mars2	D4A9V7	0	36	Methionine--tRNA ligase, mitochondrial	
-MARS2	zebrafish	E7F5M3	mars2	E7F5M3	0	34	Methionine--tRNA ligase, mitochondrial	
+MARS2	human	Q96GW9	MARS2	Q96GW9	7	153	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Methio	
+MARS2	mus-musculus	Q499X9	Mars2	Q499X9	3	40	Methionine--tRNA ligase, mitochondrial	
+MARS2	pan-troglodytes	K7AR51	MARS2	K7AR51	3	4	Methionine--tRNA ligase, mitochondrial	
+MARS2	rattus-norvegicus	D4A9V7	Mars2	D4A9V7	4	40	Methionine--tRNA ligase, mitochondrial	
+MARS2	xenopus-laevis	Q7T0Z0	mars2	Q7T0Z0	1	3	Methionine--tRNA ligase, mitochondrial	
+MARS2	zebrafish	E7F5M3	mars2	E7F5M3	1	36	Methionine--tRNA ligase, mitochondrial	
 MART-1	human	Q16655	MLANA	Q16655	43	246	Melanoma antigen recognized by T-cells 1 (MART-1) (Antigen L	w
 MART-2	human	Q5VTY9	HHAT	Q5VTY9	1	21	Protein-cysteine N-palmitoyltransferase HHAT (EC 2.3.1.-) (H	w
 MART1	human	A6NKG5	RTL1	A6NKG5	1	35		

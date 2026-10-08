@@ -1,0 +1,41 @@
+{
+ "format": "livia-atlas-species/1",
+ "id": "pan-troglodytes",
+ "species": {
+  "name": "Pan troglodytes",
+  "taxon": 9598
+ },
+ "datasets": [
+  {
+   "id": "mitomatch-9598",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Pan troglodytes orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 963,
+    "pairs": 2610,
+    "predictions": 2610,
+    "runs": 2610,
+    "pairsFpr10": 2497,
+    "pairsFpr5": 2168,
+    "pairsFpr1": 851
+   }
+  }
+ ],
+ "counts": {
+  "proteins": 963,
+  "pairs": 2610,
+  "predictions": 2610,
+  "runs": 2610,
+  "pairsFpr10": 2497,
+  "pairsFpr5": 2168,
+  "pairsFpr1": 851,
+  "pairsInSeveral": 0,
+  "pairsTested": 2610
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv"
+ }
+}

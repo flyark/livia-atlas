@@ -16,23 +16,23 @@ SYS1_HUMAN	human	Q8N2H4	SYS1	Q8N2H4	5	137
 SYS3	candida-albicans-237561	A0A1D8PSD4	SYS3	A0A1D8PSD4	0	9	Sys3p	
 SYSC_HUMAN	human	P49591	SARS1	P49591	6	184		
 SYSM-1	worm	Q22714	sysm-1	Q22714	0	1	ShKT domain-containing protein	
-SYSM_HUMAN	human	Q9NP81	SARS2	Q9NP81	3	136		
-SYSTEM	fly	FBgn0027945	ppl	Q9U616	49	438	Glycine cleavage system H protein, mitochondrial (Protein pu	w
-SYSTEM	fly	FBgn0032287	Gcst	Q9VKR4	3	50	Aminomethyltransferase (EC 2.1.2.10) (Glycine cleavage syste	w
+SYSM_HUMAN	human	Q9NP81	SARS2	Q9NP81	5	138		
+SYSTEM	fly	FBgn0027945	ppl	Q9U616	54	443	Glycine cleavage system H protein, mitochondrial (Protein pu	w
+SYSTEM	fly	FBgn0032287	Gcst	Q9VKR4	4	51	Aminomethyltransferase (EC 2.1.2.10) (Glycine cleavage syste	w
 SYSTEM	fly	FBgn0037801	Gldc	Q9VH09	1	38	Glycine cleavage system P protein (EC 1.4.4.2)	w
 SYSTEM	fly	FBgn0261930	vnd	P22808	121	385	Homeobox protein vnd (Homeobox protein NK-2) (Protein ventra	w
 SYSTEM	fly	FBgn0263511	Vsx1	Q9W4B2	95	353	FI01127p (Visual system homeobox 1, isoform A) (Visual syste	w
 SYSTEM	fly	FBgn0263512	Vsx2	X2JDS9	124	472	Visual system homeobox 2 (Ceh-10 homeodomain-containing homo	w
 SYSTEM	human	A0A1W2PPQ1	?	A0A1W2PPQ1	3	10	Glycine cleavage system H protein	w
 SYSTEM	human	A0A1W2PS29	?	A0A1W2PS29	3	10	Glycine cleavage system H protein	w
-SYSTEM	human	P09622	DLD	P09622	13	351	Dihydrolipoyl dehydrogenase, mitochondrial (EC 1.8.1.4) (Dih	w
+SYSTEM	human	P09622	DLD	P09622	16	354	Dihydrolipoyl dehydrogenase, mitochondrial (EC 1.8.1.4) (Dih	w
 SYSTEM	human	P16442	ABO	P16442	3	38	Histo-blood group ABO system transferase (Fucosylglycoprotei	w
 SYSTEM	human	P23378	GLDC	P23378	5	295	Glycine dehydrogenase (decarboxylating), mitochondrial (EC 1	w
-SYSTEM	human	P23434	GCSH	P23434	71	476	Glycine cleavage system H protein, mitochondrial (Lipoic aci	w
-SYSTEM	human	P48728	AMT	P48728	4	43	Aminomethyltransferase, mitochondrial (EC 2.1.2.10) (Glycine	w
+SYSTEM	human	P23434	GCSH	P23434	87	491	Glycine cleavage system H protein, mitochondrial (Lipoic aci	w
+SYSTEM	human	P48728	AMT	P48728	16	55	Aminomethyltransferase, mitochondrial (EC 2.1.2.10) (Glycine	w
 SYSTEM	human	P58304	VSX2	P58304	103	393	Visual system homeobox 2 (Ceh-10 homeodomain-containing homo	w
 SYSTEM	human	P61296	HAND2	P61296	82	410	Heart- and neural crest derivatives-expressed protein 2 (Cla	w
-SYSTEM	human	Q5TGZ0	MICOS10	Q5TGZ0	15	134	MICOS complex subunit MIC10 (Mitochondrial inner membrane or	w
+SYSTEM	human	Q5TGZ0	MICOS10	Q5TGZ0	16	135	MICOS complex subunit MIC10 (Mitochondrial inner membrane or	w
 SYSTEM	human	Q695T7	SLC6A19	Q695T7	3	48	Sodium-dependent neutral amino acid transporter B(0)AT1 (Sol	w
 SYSTEM	human	Q8IWE2	FAM114A1	Q8IWE2	4	31	Protein NOXP20 (Nervous system overexpressed protein 20) (Pr	w
 SYSTEM	human	Q8WUX1	SLC38A5	Q8WUX1	4	98	Sodium-coupled neutral amino acid transporter 5 (Solute carr	w
@@ -55,9 +55,9 @@ SYSTEM	virus	A0A916P1I8	MYSEV_154	A0A916P1I8	5	301	Type VII secretion system pro
 SYSTEM	virus	A0ABM9QKD4	CHREV_099	A0ABM9QKD4	1	286	Type VII secretion system protein EssD-like domain-containin	w
 SYSTEM	virus	A0ABM9QKH3	CHREV_145	A0ABM9QKH3	6	286	Type VII secretion system protein EssD-like domain-containin	w
 SYSTEM	worm	O16649	CELE_T06D4.1	O16649	0	12	Type VI secretion system protein TssA	w
-SYSTEM	worm	O45948	iscu-1	O45948	5	55	NIF system FeS cluster assembly NifU N-terminal domain-conta	w
+SYSTEM	worm	O45948	iscu-1	O45948	8	58	NIF system FeS cluster assembly NifU N-terminal domain-conta	w
 SYSTEM	worm	O62122	gcsh-1	O62122	3	25	Glycine cleavage system H protein	w
-SYSTEM	worm	Q20634	gcsh-2	Q20634	3	13	Glycine cleavage system H protein	w
+SYSTEM	worm	Q20634	gcsh-2	Q20634	10	20	Glycine cleavage system H protein	w
 SYSTEM	worm	Q21368	CELE_K08H2.3	Q21368	0	2	Immunity protein 72 of polymorphic toxin system	w
 SYSTEM	worm	Q21962	gldc-1	Q21962	2	34	Glycine cleavage system P protein	w
 SYSTEM	worm	Q966J4	CELE_F41B4.3	Q966J4	0	4	Proteobacterial sortase system OmpA family protein	w
@@ -65,12 +65,12 @@ SYSTEM	yeast	P07270	PHO4	P07270	4	44	Phosphate system positive regulatory protei
 SYSTEM	yeast	P17157	PHO85	P17157	26	138	Cyclin-dependent protein kinase PHO85 (EC 2.7.11.22) (Negati	w
 SYSTEM	yeast	P17442	PHO81	P17442	2	43	Phosphate system positive regulatory protein PHO81	w
 SYSTEM	yeast	P32606	PET127	P32606	0	42	Putative mitochondrial translation system component PET127	w
-SYSTEM	yeast	P39726	GCV3	P39726	5	19	Glycine cleavage system H protein, mitochondrial	w
+SYSTEM	yeast	P39726	GCV3	P39726	9	23	Glycine cleavage system H protein, mitochondrial	w
 SYSTEM	yeast	Q07084	SSK1	Q07084	2	41	Osmolarity two-component system protein SSK1	w
 SYSTEM	zebrafish	B0S7I1	gbgt1l5	B0S7I1	0	6	Histo-blood group ABO system transferase	w
 SYSTEM	zebrafish	O42250	vsx1	O42250	0	9	Visual system homeobox 1	w
 SYSTEM	zebrafish	O42477	vsx2	O42477	0	9	Visual system homeobox 2	w
-SYSTEM	zebrafish	Q6DGX4	gcshb	Q6DGX4	0	5	Glycine cleavage system H protein	w
+SYSTEM	zebrafish	Q6DGX4	gcshb	Q6DGX4	18	23	Glycine cleavage system H protein	w
 SYSTEM-ASSOCIATED	human	Q13449	LSAMP	Q13449	12	111	Limbic system-associated membrane protein (LSAMP) (IgLON fam	w
 SYSTEM-SPECIFIC	human	P20265	POU3F2	P20265	119	378	POU domain, class 3, transcription factor 2 (Brain-specific 	w
 SYSTEM-SPECIFIC	human	Q12926	ELAVL2	Q12926	18	223	ELAV-like protein 2 (ELAV-like neuronal protein 1) (Hu-antig	w

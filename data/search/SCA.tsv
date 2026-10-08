@@ -1,5 +1,5 @@
 SCA	fly	FBgn0003326	sca	P21520	28	253	Protein scabrous	
-SCA-1	human	P42574	CASP3	P42574	40	419	Caspase-3 (CASP-3) (EC 3.4.22.56) (Apopain) (Cysteine protea	w
+SCA-1	human	P42574	CASP3	P42574	42	421	Caspase-3 (CASP-3) (EC 3.4.22.56) (Apopain) (Cysteine protea	w
 SCA-1	worm	G5EEK8	sca-1	G5EEK8	0	20	Calcium-transporting ATPase	
 SCA-2	human	Q16553	LY6E	Q16553	16	139	Lymphocyte antigen 6E (Ly-6E) (Retinoic acid-induced gene E 	w
 SCA1	human	P54253	ATXN1	P54253	123	517		
@@ -13,7 +13,7 @@ SCA8	human	P0DMR3	ATXN8OS	P0DMR3	0	2
 SCAB	fly	FBgn0286785	scb	O44386	336	2440	Integrin alpha-PS3 (Position-specific antigen subunit alpha-	w
 SCAB1	arabidopsis-thaliana	O48791	SCAB1	O48791	5	51	Stomatal closure-related actin-binding protein 1	
 SCABROUS	fly	FBgn0003326	sca	P21520	28	253	Protein scabrous	w
-SCAD	human	P16219	ACADS	P16219	28	395	Short-chain specific acyl-CoA dehydrogenase, mitochondrial (	w
+SCAD	human	P16219	ACADS	P16219	31	398	Short-chain specific acyl-CoA dehydrogenase, mitochondrial (	w
 SCAF	fly	FBgn0033033	scaf	Q7K5M0	41	259	Inactive serine protease scarface	
 SCAF1	human	O14548	COX7A2L	O14548	23	150		
 SCAF1	human	Q9H7N4	SCAF1	Q9H7N4	53	258	Splicing factor, arginine/serine-rich 19 (SR-related C-termi	
@@ -45,7 +45,7 @@ SCAFFOLD	fly	FBgn0039229	Saf-B	Q8IMV6	5	19	Scaffold attachment factor B, isoform
 SCAFFOLD	fly	FBgn0052857	CG32857	Q8SY96	1	2	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
 SCAFFOLD	fly	FBgn0053193	sav	Q9VCR6	18	61	Scaffold protein salvador (Shar-pei)	w
 SCAFFOLD	fly	FBgn0053502	CG33502	Q8SY96	1	3	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
-SCAFFOLD	fly	FBgn0285970	CG32500	Q8SY96	3	9	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
+SCAFFOLD	fly	FBgn0285970	CG32500	Q8SY96	8	15	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
 SCAFFOLD	human	A0A0C4DH75	MPP2	A0A0C4DH75	6	45	MAGUK p55 scaffold protein 2	w
 SCAFFOLD	human	O00560	SDCBP	O00560	18	544	Syntenin-1 (Melanoma differentiation-associated protein 9) (	w
 SCAFFOLD	human	Q13387	MAPK8IP2	Q13387	41	192	C-Jun-amino-terminal kinase-interacting protein 2 (JIP-2) (J	w
@@ -60,9 +60,9 @@ SCAFFOLD	human	Q7Z6J2	TAMALIN	Q7Z6J2	20	62	Protein TAMALIN (General receptor for
 SCAFFOLD	human	Q8N122	RPTOR	Q8N122	27	557	Regulatory-associated protein of mTOR (Raptor) (p150 target 	w
 SCAFFOLD	human	Q8N9N5	BANP	Q8N9N5	55	442	Protein BANP (BEN domain-containing protein 1) (Btg3-associa	w
 SCAFFOLD	human	Q8NDB2	BANK1	Q8NDB2	14	77	B-cell scaffold protein with ankyrin repeats	w
-SCAFFOLD	human	Q96KR6	MIMS2	Q96KR6	6	165	Mitochondrial inner membrane scaffold 2 (Protein FAM210B, mi	w
+SCAFFOLD	human	Q96KR6	MIMS2	Q96KR6	10	169	Mitochondrial inner membrane scaffold 2 (Protein FAM210B, mi	w
 SCAFFOLD	human	Q96ND0	MIMS1	Q96ND0	5	54	Mitochondrial inner membrane scaffold 1 (Protein FAM210A)	w
-SCAFFOLD	human	Q9UMS0	NFU1	Q9UMS0	8	95	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial (HI	w
+SCAFFOLD	human	Q9UMS0	NFU1	Q9UMS0	17	103	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial (HI	w
 SCAFFOLD	human	Q9UPT6	MAPK8IP3	Q9UPT6	31	146	C-Jun-amino-terminal kinase-interacting protein 3 (JIP-3) (J	w
 SCAFFOLD	human	Q9UQF2	MAPK8IP1	Q9UQF2	40	207	C-Jun-amino-terminal kinase-interacting protein 1 (JIP-1) (J	w
 SCAFFOLD	virus	A0A3G1T4J3	BdRF1	A0A3G1T4J3	5	81	Capsid scaffold protein	w
@@ -70,9 +70,10 @@ SCAFFOLD	virus	P0DSP6	OPG125	P0DSP6	2	198	Scaffold protein OPG125	w
 SCAFFOLD	virus	P0DTA5	FPV050	P0DTA5	2	246	Scaffold protein	w
 SCAFFOLD	virus	P68440	OPG125	P68440	1	218	Scaffold protein OPG125	w
 SCAFFOLD	worm	O45608	ecps-2	O45608	0	5	ECm29 Proteasome adaptor and Scaffold	w
-SCAFFOLD	worm	Q21915	nfu-1	Q21915	2	9	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
+SCAFFOLD	worm	Q21915	nfu-1	Q21915	6	13	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
 SCAFFOLD	worm	Q23088	uvs-1	Q23088	1	9	UV-stimulated scaffold protein A homolog	w
 SCAFFOLD	worm	Q93654	gras-1	Q93654	2	24	General receptor for phosphoinositides 1-associated scaffold	w
+SCAFFOLD	zebrafish	A0A8M1NGP8	nfu1	A0A8M1NGP8	9	9	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	w
 SCAFFOLD	zebrafish	A0A8M3AVU8	mpp4a	A0A8M3AVU8	1	8	MAGUK p55 scaffold protein 4a	w
 SCAFFOLD	zebrafish	A0A8M6Z3K2	mpp3b	A0A8M6Z3K2	3	18	MAGUK p55 scaffold protein 3b	w
 SCAFFOLD	zebrafish	A0A8M9PW92	mpp2a	A0A8M9PW92	4	28	MAGUK p55 scaffold protein 2a	w
@@ -223,13 +224,13 @@ SCAMBIO	human	Q8TER5	ARHGEF40	Q8TER5	27	143	Rho guanine nucleotide exchange fact
 SCAMC	fly	FBgn0052103	SCaMC	Q0E8F2	0	78	FI05451p (Short Calcium-binding mitochondrial carrier, isofo	
 SCAMC-2-A	zebrafish	Q6NYZ6	slc25a25a	Q6NYZ6	0	98	Calcium-binding mitochondrial carrier protein SCaMC-2-A	w
 SCAMC-2-B	zebrafish	A2CEQ0	slc25a25b	A2CEQ0	0	98	Calcium-binding mitochondrial carrier protein SCaMC-2-B	w
-SCAMC-3	human	Q9BV35	SLC25A23	Q9BV35	0	127	Mitochondrial adenyl nucleotide antiporter SLC25A23 (Mitocho	w
-SCAMC-3-	human	Q8N5S1	SLC25A41	Q8N5S1	5	170	Mitochondrial carrier protein SCaMC-3L (Mitochondrial ATP-Mg	w
-SCAMC-3B	zebrafish	Q5PNM8	slc25a23b	Q5PNM8	0	98	Calcium-binding mitochondrial carrier protein SCaMC-3b	w
-SCAMC-3L	human	Q8N5S1	SLC25A41	Q8N5S1	5	170	Mitochondrial carrier protein SCaMC-3L (Mitochondrial ATP-Mg	w
-SCAMC1	human	Q6NUK1	SLC25A24	Q6NUK1	1	231		
+SCAMC-3	human	Q9BV35	SLC25A23	Q9BV35	1	128	Mitochondrial adenyl nucleotide antiporter SLC25A23 (Mitocho	w
+SCAMC-3-	human	Q8N5S1	SLC25A41	Q8N5S1	7	172	Mitochondrial carrier protein SCaMC-3L (Mitochondrial ATP-Mg	w
+SCAMC-3B	zebrafish	Q5PNM8	slc25a23b	Q5PNM8	1	99	Calcium-binding mitochondrial carrier protein SCaMC-3b	w
+SCAMC-3L	human	Q8N5S1	SLC25A41	Q8N5S1	7	172	Mitochondrial carrier protein SCaMC-3L (Mitochondrial ATP-Mg	w
+SCAMC1	human	Q6NUK1	SLC25A24	Q6NUK1	2	232		
 SCAMC2	human	Q6KCM7	SLC25A25	Q6KCM7	0	58		
-SCAMC3	human	Q9BV35	SLC25A23	Q9BV35	0	127		
+SCAMC3	human	Q9BV35	SLC25A23	Q9BV35	1	128		
 SCAMP	fly	FBgn0040285	Scamp	Q9VXV6	5	63	Secretory carrier-associated membrane protein (Secretory car	
 SCAMP	human	O15126	SCAMP1	O15126	15	228		
 SCAMP1	human	O15126	SCAMP1	O15126	15	228	Secretory carrier-associated membrane protein 1 (Secretory c	

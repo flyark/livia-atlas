@@ -1,0 +1,58 @@
+{
+ "format": "livia-atlas/1",
+ "id": "mitomatch-284812",
+ "title": "MitoMatch: Schizosaccharomyces pombe orthologs of the human mitochondrial proteome",
+ "short": "Mito orthologs",
+ "speciesId": "schizosaccharomyces-pombe",
+ "species": {
+  "name": "Schizosaccharomyces pombe",
+  "taxon": 284812
+ },
+ "ids": "UniProtKB entry name",
+ "source": {
+  "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+  "doi": "10.5281/zenodo.21232148",
+  "url": "https://doi.org/10.5281/zenodo.21232148",
+  "journalDoi": null,
+  "journalDoiNote": "No journal DOI exists for this record yet: the Zenodo deposition carries no related identifier. The Zenodo DOI above is the citable identifier. This is a fact about the record, not an omission.",
+  "license": "CC BY 4.0",
+  "method": "AlphaFold-Multimer 2.2.0, 5 models per pair; only the single best-scoring model per pair was released. Pairs are the orthologs of the human MitoCarta pairs, mapped through the human_to_homolog tables shipped with the deposition.",
+  "coverage": "163 pairs over 193 proteins: every pair in the deposition's pombe directory that ships BOTH a structure and a confidence NPZ. The homolog release also carries NPZ files for pairs with no structure; lis.py needs coordinates for the contact map and the interface pLDDT, so those cannot be scored and are not in this screen.",
+  "sequences": "Identity and sequence both come from the UniProt reference proteome shipped inside MitoMatch_homologs.zip (proteome_sequences/, the release the authors folded from), so the served sequence is the folded one and lis.py's LIR/cLIR residue indices are positions in it.",
+  "pTM": "Absent at source. The released NPZ holds pae, plddt, iptm, protein_1_length and protein_2_length only, and the PDB files are bare coordinates with no REMARK header, so no pTM value exists anywhere in the deposition. The empty pTM column is the source's silence, not a build failure.",
+  "paePrecision": "Full precision. The source PAE is float32 and not quantized or downsampled, with a maximum of 31.75 -- AlphaFold2's own cap."
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "inclusive": true,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  },
+  "sourcePae": "float32, full precision: 95.7% of cells carry a distinct value (min 56.7% over a 120-file sample), max 31.75 = AlphaFold2's own cap. Not quantized, not downsampled.",
+  "sourcePTM": "absent: the released NPZ holds pae/plddt/iptm/protein_1_length/protein_2_length only and the PDBs are bare coordinates, so no pTM exists in the deposition. The empty pTM column is the source's silence, not a build failure.",
+  "modelsPerPair": "1 served of 5 folded: the authors released only the best-scoring model, so rank is always 1 and iLIS_best == iLIS_avg."
+ },
+ "counts": {
+  "proteins": 193,
+  "pairs": 163,
+  "predictions": 163,
+  "runs": 163,
+  "pairsFpr10": 152,
+  "pairsFpr5": 140,
+  "pairsFpr1": 85
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id"
+}

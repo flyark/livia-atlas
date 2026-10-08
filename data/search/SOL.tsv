@@ -45,7 +45,7 @@ SOLUBLE	human	P24394	IL4R	P24394	88	390	Interleukin-4 receptor subunit alpha (IL
 SOLUBLE	human	P30203	CD6	P30203	39	271	T-cell differentiation antigen CD6 (T12) (TP120) (CD antigen	w
 SOLUBLE	human	P30519	HMOX2	P30519	26	313	Heme oxygenase 2 (HO-2) (EC 1.14.14.18) [Cleaved into: Heme 	w
 SOLUBLE	human	P33402	GUCY1A2	P33402	7	115	Guanylate cyclase soluble subunit alpha-2 (GCS-alpha-2) (EC 	w
-SOLUBLE	human	P34913	EPHX2	P34913	4	150	Bifunctional epoxide hydrolase 2 [Includes: Cytosolic epoxid	w
+SOLUBLE	human	P34913	EPHX2	P34913	5	151	Bifunctional epoxide hydrolase 2 [Includes: Cytosolic epoxid	w
 SOLUBLE	human	P80723	BASP1	P80723	35	603	Brain acid soluble protein 1 (22 kDa neuronal tissue-enriche	w
 SOLUBLE	human	Q02108	GUCY1A1	Q02108	3	173	Guanylate cyclase soluble subunit alpha-1 (GCS-alpha-1) (EC 	w
 SOLUBLE	human	Q02153	GUCY1B1	Q02153	5	173	Guanylate cyclase soluble subunit beta-1 (GCS-beta-1) (EC 4.	w
@@ -104,11 +104,11 @@ SOLUBLE	zebrafish	E7EZW5	gucy1a1	E7EZW5	3	8	Guanylate cyclase soluble subunit al
 SOLUBLE	zebrafish	F1QNR4	gucy1b1	F1QNR4	4	9	Guanylate cyclase soluble subunit beta-1	w
 SOLUBLE	zebrafish	Q1RM09	basp1	Q1RM09	0	9	Brain acid soluble protein 1 homolog	w
 SOLUBLE	zebrafish	Q6NUZ5	cant1a	Q6NUZ5	1	9	Soluble calcium-activated nucleotidase 1	w
-SOLUT	human	O75746	SLC25A12	O75746	8	271	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	w
+SOLUT	human	O75746	SLC25A12	O75746	10	272	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	w
 SOLUT	human	P12235	SLC25A4	P12235	5	519	ADP/ATP translocase 1 (ADP,ATP carrier protein 1) (ADP,ATP c	w
 SOLUT	human	Q5VZR4	SLC71A3P	Q5VZR4	1	19	Putative solute carrier family 71 member 3 (Hippocampus abun	w
 SOLUTE	fly	FBgn0029849	Efr	Q9W429	0	6	UDP-xylose and UDP-N-acetylglucosamine transporter (ER GDP-f	w
-SOLUTE	fly	FBgn0030717	Slc25A46a	Q9VXK8	1	7	GH15472p (Solute carrier family 25 member 46a)	w
+SOLUTE	fly	FBgn0030717	Slc25A46a	Q9VXK8	7	14	GH15472p (Solute carrier family 25 member 46a)	w
 SOLUTE	fly	FBgn0031039	Shawn	Q9VWG0	0	6	Solute carrier family 25 protein Shawn (Solute carrier famil	w
 SOLUTE	fly	FBgn0031183	CG14621	Q9VR50	1	6	Solute carrier family 35 member E1 homolog	w
 SOLUTE	fly	FBgn0031998	SLC5A11	Q9VLR8	0	6	GH19970p (Sodium/solute co-transporter-like 5A11)	w
@@ -178,7 +178,7 @@ SOLUTE	human	O76082	SLC22A5	O76082	1	79	Organic cation/carnitine transporter 2 (
 SOLUTE	human	O94956	SLCO2B1	O94956	1	48	Solute carrier organic anion transporter family member 2B1 (	w
 SOLUTE	human	O95258	SLC25A14	O95258	3	79	Brain mitochondrial carrier protein 1 (BMCP-1) (Mitochondria	w
 SOLUTE	human	O95528	SLC2A10	O95528	1	111	Solute carrier family 2, facilitated glucose transporter mem	w
-SOLUTE	human	O95847	SLC25A27	O95847	0	34	Mitochondrial uncoupling protein 4 (UCP 4) (Solute carrier f	w
+SOLUTE	human	O95847	SLC25A27	O95847	1	35	Mitochondrial uncoupling protein 4 (UCP 4) (Solute carrier f	w
 SOLUTE	human	O95907	SLC16A8	O95907	2	42	Monocarboxylate transporter 3 (MCT 3) (Solute carrier family	w
 SOLUTE	human	P02730	SLC4A1	P02730	18	293	Band 3 anion transport protein (Anion exchange protein 1) (A	w
 SOLUTE	human	P04920	SLC4A2	P04920	13	212	Anion exchange protein 2 (AE 2) (Anion exchanger 2) (Non-ery	w
@@ -197,7 +197,7 @@ SOLUTE	human	P14672	SLC2A4	P14672	4	198	Solute carrier family 2, facilitated glu
 SOLUTE	human	P19634	SLC9A1	P19634	26	250	Sodium/hydrogen exchanger 1 (APNH) (Na(+)/H(+) antiporter, a	w
 SOLUTE	human	P22732	SLC2A5	P22732	0	112	Solute carrier family 2, facilitated glucose transporter mem	w
 SOLUTE	human	P23975	SLC6A2	P23975	1	83	Sodium-dependent noradrenaline transporter (Norepinephrine t	w
-SOLUTE	human	P25874	UCP1	P25874	0	120	Mitochondrial brown fat uncoupling protein 1 (UCP 1) (Solute	w
+SOLUTE	human	P25874	UCP1	P25874	1	121	Mitochondrial brown fat uncoupling protein 1 (UCP 1) (Solute	w
 SOLUTE	human	P30531	SLC6A1	P30531	8	170	Sodium- and chloride-dependent GABA transporter 1 (GAT-1) (S	w
 SOLUTE	human	P30825	SLC7A1	P30825	9	260	High affinity cationic amino acid transporter 1 (CAT-1) (CAT	w
 SOLUTE	human	P31639	SLC5A2	P31639	14	103	Sodium/glucose cotransporter 2 (Na(+)/glucose cotransporter 	w
@@ -222,14 +222,14 @@ SOLUTE	human	P49279	SLC11A1	P49279	1	72	Natural resistance-associated macrophage
 SOLUTE	human	P49281	SLC11A2	P49281	3	127	Natural resistance-associated macrophage protein 2 (NRAMP 2)	w
 SOLUTE	human	P50443	SLC26A2	P50443	14	149	Sulfate transporter (Diastrophic dysplasia protein) (Solute 	w
 SOLUTE	human	P52569	SLC7A2	P52569	5	166	Cationic amino acid transporter 2 (CAT-2) (CAT2) (Low affini	w
-SOLUTE	human	P53007	SLC25A1	P53007	1	361	Tricarboxylate transport protein, mitochondrial (Citrate tra	w
+SOLUTE	human	P53007	SLC25A1	P53007	3	363	Tricarboxylate transport protein, mitochondrial (Citrate tra	w
 SOLUTE	human	P53794	SLC5A3	P53794	4	102	Sodium/myo-inositol cotransporter (Na(+)/myo-inositol cotran	w
 SOLUTE	human	P53985	SLC16A1	P53985	11	250	Monocarboxylate transporter 1 (MCT 1) (Solute carrier family	w
 SOLUTE	human	P54219	SLC18A1	P54219	2	177	Chromaffin granule amine transporter (Solute carrier family 	w
 SOLUTE	human	P55011	SLC12A2	P55011	11	246	Solute carrier family 12 member 2 (Basolateral Na-K-Cl sympo	w
 SOLUTE	human	P55017	SLC12A3	P55017	9	79	Solute carrier family 12 member 3 (Na-Cl cotransporter) (NCC	w
-SOLUTE	human	P55851	UCP2	P55851	3	115	Dicarboxylate carrier SLC25A8 (Mitochondrial uncoupling prot	w
-SOLUTE	human	P55916	UCP3	P55916	4	81	Putative mitochondrial transporter UCP3 (Solute carrier fami	w
+SOLUTE	human	P55851	UCP2	P55851	4	116	Dicarboxylate carrier SLC25A8 (Mitochondrial uncoupling prot	w
+SOLUTE	human	P55916	UCP3	P55916	5	82	Putative mitochondrial transporter UCP3 (Solute carrier fami	w
 SOLUTE	human	P57057	SLC37A1	P57057	3	55	Glucose-6-phosphate exchanger SLC37A1 (Glycerol-3-phosphate 	w
 SOLUTE	human	P57103	SLC8A3	P57103	3	47	Sodium/calcium exchanger 3 (Na(+)/Ca(2+)-exchange protein 3)	w
 SOLUTE	human	P58743	SLC26A5	P58743	7	66	Prestin (Solute carrier family 26 member 5)	w
@@ -237,7 +237,7 @@ SOLUTE	human	P78381	SLC35A2	P78381	5	86	UDP-galactose translocator (Solute carri
 SOLUTE	human	P78382	SLC35A1	P78382	2	77	CMP-sialic acid transporter (CMP-SA-Tr) (CMP-Sia-Tr) (CST) (	w
 SOLUTE	human	P78383	SLC35B1	P78383	0	93	Solute carrier family 35 member B1 (ATP/ADP exchanger ER) (A	w
 SOLUTE	human	P82251	SLC7A9	P82251	8	62	b(0,+)-type amino acid transporter 1 (b(0,+)AT1) (Glycoprote	w
-SOLUTE	human	Q00325	SLC25A3	Q00325	10	469	Solute carrier family 25 member 3 (Phosphate carrier protein	w
+SOLUTE	human	Q00325	SLC25A3	Q00325	13	472	Solute carrier family 25 member 3 (Phosphate carrier protein	w
 SOLUTE	human	Q01959	SLC6A3	Q01959	1	152	Sodium-dependent dopamine transporter (DA transporter) (DAT)	w
 SOLUTE	human	Q02978	SLC25A11	Q02978	5	324	Mitochondrial 2-oxoglutarate/malate carrier protein (Alpha-o	w
 SOLUTE	human	Q05940	SLC18A2	Q05940	5	203	Synaptic vesicular amine transporter (Solute carrier family 	w
@@ -287,13 +287,13 @@ SOLUTE	human	Q6ICL7	SLC35E4	Q6ICL7	2	60	Solute carrier family 35 member E4	w
 SOLUTE	human	Q6KCM7	SLC25A25	Q6KCM7	0	58	Mitochondrial adenyl nucleotide antiporter SLC25A25 (Mitocho	w
 SOLUTE	human	Q6N075	SLC61A1	Q6N075	2	136	Solute carrier family 61 member 1 (Major facilitator superfa	w
 SOLUTE	human	Q6NT16	SLC18B1	Q6NT16	1	32	MFS-type transporter SLC18B1 (Solute carrier family 18 membe	w
-SOLUTE	human	Q6NUK1	SLC25A24	Q6NUK1	1	231	Mitochondrial adenyl nucleotide antiporter SLC25A24 (Mitocho	w
+SOLUTE	human	Q6NUK1	SLC25A24	Q6NUK1	2	232	Mitochondrial adenyl nucleotide antiporter SLC25A24 (Mitocho	w
 SOLUTE	human	Q6NXT4	SLC30A6	Q6NXT4	8	128	Zinc transporter 6 (ZnT-6) (Solute carrier family 30 member 	w
 SOLUTE	human	Q6P1K1	SLC48A1	Q6P1K1	1	57	Heme transporter HRG1 (Heme-responsive gene 1 protein homolo	w
 SOLUTE	human	Q6P5W5	SLC39A4	Q6P5W5	6	187	Zinc transporter ZIP4 (Solute carrier family 39 member 4) (Z	w
 SOLUTE	human	Q6PIS1	SLC23A3	Q6PIS1	0	25	Solute carrier family 23 member 3 (HPC E2-binding protein 3)	w
 SOLUTE	human	Q6PIV7	SLC25A34	Q6PIV7	0	25	Solute carrier family 25 member 34	w
-SOLUTE	human	Q6PML9	SLC30A9	Q6PML9	15	494	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Human	w
+SOLUTE	human	Q6PML9	SLC30A9	Q6PML9	16	495	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Human	w
 SOLUTE	human	Q6PXP3	SLC2A7	Q6PXP3	0	34	Solute carrier family 2, facilitated glucose transporter mem	w
 SOLUTE	human	Q6Q0C1	SLC25A47	Q6Q0C1	0	108	Solute carrier family 25 member 47 (Hepatocellular carcinoma	w
 SOLUTE	human	Q6T423	SLC22A25	Q6T423	0	14	Solute carrier family 22 member 25 (Organic anion transporte	w
@@ -306,8 +306,8 @@ SOLUTE	human	Q6ZMH5	SLC39A5	Q6ZMH5	6	66	Zinc transporter ZIP5 (Solute carrier fa
 SOLUTE	human	Q6ZP29	SLC66A1	Q6ZP29	0	38	Lysosomal amino acid transporter 1 homolog (PQ-loop repeat-c	w
 SOLUTE	human	Q6ZQN7	SLCO4C1	Q6ZQN7	2	66	Solute carrier organic anion transporter family member 4C1 (	w
 SOLUTE	human	Q6ZSM3	SLC16A12	Q6ZSM3	0	36	Monocarboxylate transporter 12 (MCT 12) (Creatine transporte	w
-SOLUTE	human	Q6ZT89	SLC25A48	Q6ZT89	1	59	Solute carrier family 25 member 48	w
-SOLUTE	human	Q70HW3	SLC25A26	Q70HW3	0	96	Mitochondrial S-adenosylmethionine carrier protein (SAM carr	w
+SOLUTE	human	Q6ZT89	SLC25A48	Q6ZT89	2	61	Solute carrier family 25 member 48	w
+SOLUTE	human	Q70HW3	SLC25A26	Q70HW3	1	97	Mitochondrial S-adenosylmethionine carrier protein (SAM carr	w
 SOLUTE	human	Q71RS6	SLC24A5	Q71RS6	1	32	Sodium/potassium/calcium exchanger 5 (Na(+)/K(+)/Ca(2+)-exch	w
 SOLUTE	human	Q76EJ3	SLC35D2	Q76EJ3	0	29	Nucleotide sugar transporter SLC35D2 (Homolog of Fringe conn	w
 SOLUTE	human	Q7LBE3	SLC26A9	Q7LBE3	8	45	Solute carrier family 26 member 9 (Anion transporter/exchang	w
@@ -371,7 +371,7 @@ SOLUTE	human	Q8TE54	SLC26A7	Q8TE54	9	55	Anion exchange transporter (Solute carri
 SOLUTE	human	Q8TED4	SLC37A2	Q8TED4	1	44	Glucose-6-phosphate exchanger SLC37A2 (Solute carrier family	w
 SOLUTE	human	Q8TF71	SLC16A10	Q8TF71	6	95	Monocarboxylate transporter 10 (MCT 10) (Aromatic amino acid	w
 SOLUTE	human	Q8WUG5	SLC22A17	Q8WUG5	2	45	Solute carrier family 22 member 17 (24p3 receptor) (24p3R) (	w
-SOLUTE	human	Q8WUT9	SLC25A43	Q8WUT9	2	108	Solute carrier family 25 member 43	w
+SOLUTE	human	Q8WUT9	SLC25A43	Q8WUT9	5	111	Solute carrier family 25 member 43	w
 SOLUTE	human	Q8WUX1	SLC38A5	Q8WUX1	4	98	Sodium-coupled neutral amino acid transporter 5 (Solute carr	w
 SOLUTE	human	Q8WV83	SLC35F5	Q8WV83	2	48	Solute carrier family 35 member F5 (Hepatitis C virus NS5A-t	w
 SOLUTE	human	Q8WVF1	OSCP1	Q8WVF1	6	43	Protein OSCP1 (hOSCP1) (Organic solute transport protein 1) 	w
@@ -386,11 +386,11 @@ SOLUTE	human	Q92959	SLCO2A1	Q92959	1	71	Solute carrier organic anion transporter
 SOLUTE	human	Q969I6	SLC38A4	Q969I6	0	47	Sodium-coupled neutral amino acid transporter 4 (Amino acid 	w
 SOLUTE	human	Q969S0	SLC35B4	Q969S0	2	102	Nucleotide sugar transporter SLC35B4 (Solute carrier family 	w
 SOLUTE	human	Q96A29	SLC35C1	Q96A29	1	28	GDP-fucose transporter 1 (Solute carrier family 35 member C1	w
-SOLUTE	human	Q96A46	SLC25A28	Q96A46	2	62	Mitoferrin-2 (Mitochondrial RNA-splicing protein 3/4 homolog	w
-SOLUTE	human	Q96AG3	SLC25A46	Q96AG3	17	285	Mitochondrial outer membrane protein SLC25A46 (Solute carrie	w
+SOLUTE	human	Q96A46	SLC25A28	Q96A46	3	63	Mitoferrin-2 (Mitochondrial RNA-splicing protein 3/4 homolog	w
+SOLUTE	human	Q96AG3	SLC25A46	Q96AG3	34	301	Mitochondrial outer membrane protein SLC25A46 (Solute carrie	w
 SOLUTE	human	Q96BD0	SLCO4A1	Q96BD0	4	122	Solute carrier organic anion transporter family member 4A1 (	w
 SOLUTE	human	Q96BI1	SLC67A1	Q96BI1	9	129	Solute carrier family 67 member A1 (Beckwith-Wiedemann syndr	w
-SOLUTE	human	Q96CQ1	SLC25A36	Q96CQ1	1	46	Solute carrier family 25 member 36	w
+SOLUTE	human	Q96CQ1	SLC25A36	Q96CQ1	2	47	Solute carrier family 25 member 36	w
 SOLUTE	human	Q96CW6	SLC7A6OS	Q96CW6	26	244	Probable RNA polymerase II nuclear localization protein SLC7	w
 SOLUTE	human	Q96DW6	SLC25A38	Q96DW6	0	66	Mitochondrial glycine transporter (Appoptosin) (Mitochondria	w
 SOLUTE	human	Q96EP9	SLC10A4	Q96EP9	4	27	Putative sodium/bile acid cotransporter 4 (Na(+)/bile acid c	w
@@ -453,7 +453,7 @@ SOLUTE	human	Q9H936	SLC25A22	Q9H936	0	169	Mitochondrial glutamate carrier 1 (GC-
 SOLUTE	human	Q9HAB3	SLC52A2	Q9HAB3	4	192	Solute carrier family 52, riboflavin transporter, member 2 (	w
 SOLUTE	human	Q9HAS3	SLC28A3	Q9HAS3	2	14	Solute carrier family 28 member 3 (Concentrative Na(+)-nucle	w
 SOLUTE	human	Q9HBR0	SLC38A10	Q9HBR0	12	80	Solute carrier family 38 member 10 (Amino acid transporter S	w
-SOLUTE	human	Q9HC21	SLC25A19	Q9HC21	3	217	Mitochondrial thiamine pyrophosphate carrier (Mitochondrial 	w
+SOLUTE	human	Q9HC21	SLC25A19	Q9HC21	4	218	Mitochondrial thiamine pyrophosphate carrier (Mitochondrial 	w
 SOLUTE	human	Q9HC58	SLC24A3	Q9HC58	1	57	Sodium/potassium/calcium exchanger 3 (Na(+)/K(+)/Ca(2+)-exch	w
 SOLUTE	human	Q9NP59	SLC40A1	Q9NP59	3	156	Ferroportin (Ferroportin-1) (Iron-regulated transporter 1) (	w
 SOLUTE	human	Q9NP91	SLC6A20	Q9NP91	5	67	Sodium- and chloride-dependent transporter XTRP3 (Sodium/imi	w
@@ -477,7 +477,7 @@ SOLUTE	human	Q9NYB5	SLCO1C1	Q9NYB5	0	16	Solute carrier organic anion transporter
 SOLUTE	human	Q9NYZ2	SLC25A37	Q9NYZ2	0	44	Mitoferrin-1 (Mitochondrial iron transporter 1) (Mitochondri	w
 SOLUTE	human	Q9P2U7	SLC17A7	Q9P2U7	4	174	Vesicular glutamate transporter 1 (VGluT1) (Brain-specific N	w
 SOLUTE	human	Q9UBH6	XPR1	Q9UBH6	8	227	Solute carrier family 53 member 1 (Phosphate exporter SLC53A	w
-SOLUTE	human	Q9UBX3	SLC25A10	Q9UBX3	1	209	Mitochondrial dicarboxylate carrier (DIC) (Solute carrier fa	w
+SOLUTE	human	Q9UBX3	SLC25A10	Q9UBX3	2	210	Mitochondrial dicarboxylate carrier (DIC) (Solute carrier fa	w
 SOLUTE	human	Q9UBY0	SLC9A2	Q9UBY0	12	64	Sodium/hydrogen exchanger 2 (Na(+)/H(+) exchanger 2) (NHE-2)	w
 SOLUTE	human	Q9UGH3	SLC23A2	Q9UGH3	1	61	Solute carrier family 23 member 2 (Na(+)/L-ascorbic acid tra	w
 SOLUTE	human	Q9UGQ3	SLC2A6	Q9UGQ3	7	136	Solute carrier family 2, facilitated glucose transporter mem	w
@@ -516,7 +516,7 @@ SOLUTE	worm	O61974	CELE_R01B10.3	O61974	7	15	Solute carrier family 3 member 2 N-
 SOLUTE	worm	P34261	B0303.11	P34261	1	2	Solute carrier family 12 protein B0303.11	w
 SOLUTE	worm	Q21800	CELE_R07B7.10	Q21800	0	5	SLC (SoLute Carrier) homolog	w
 SOLUTE	worm	Q8IA95	fpn-1.1	Q8IA95	0	2	Solute carrier family 40 member	w
-SOLUTE	worm	Q9U2J0	slc-25a46	Q9U2J0	2	2	Solute carrier family 25 member 46	w
+SOLUTE	worm	Q9U2J0	slc-25a46	Q9U2J0	5	6	Solute carrier family 25 member 46	w
 SOLUTE	worm	Q9XU63	osta-3	Q9XU63	0	1	Organic solute transporter alpha-like protein 3	w
 SOLUTE	yeast	Q05131	RCH1	Q05131	0	2	Solute carrier RCH1	w
 SOLUTE	zebrafish	A0A0G2KTI4	slc12a2	A0A0G2KTI4	3	11	Solute carrier family 12 member 2	w
@@ -566,9 +566,10 @@ SOLUTE	zebrafish	Q1ECW7	slc25a47a	Q1ECW7	0	97	Solute carrier family 25 member 47
 SOLUTE	zebrafish	Q1L963	slc12a10.2	Q1L963	0	10	Solute carrier family 12 member 10, tandem duplicate 2	w
 SOLUTE	zebrafish	Q1LV73	slco3a1a	Q1LV73	0	1	Solute carrier organic anion transporter family member	w
 SOLUTE	zebrafish	Q1LX46	slc12a3	Q1LX46	0	10	Solute carrier family 12 member 3	w
-SOLUTE	zebrafish	Q5U3V7	slc25a43	Q5U3V7	1	97	Solute carrier family 25 member 43	w
+SOLUTE	zebrafish	Q5U3V7	slc25a43	Q5U3V7	4	100	Solute carrier family 25 member 43	w
 SOLUTE	zebrafish	Q66I08	slc51a	Q66I08	0	1	Organic solute transporter subunit alpha	w
 SOLUTE	zebrafish	Q6DFZ5	slc2a3a	Q6DFZ5	0	1	Solute carrier family 2 member 3a	w
+SOLUTE	zebrafish	Q6DG32	slc25a36a	Q6DG32	1	1	Solute carrier family 25 member 36-A	w
 SOLUTE	zebrafish	Q6DHS9	slc25a48	Q6DHS9	0	3	Solute carrier family 25 member 48	w
 SOLUTE	zebrafish	Q6NWF1	slc2a12	Q6NWF1	3	106	Solute carrier family 2, facilitated glucose transporter mem	w
 SOLUTE	zebrafish	Q6NWY4	slc13a3	Q6NWY4	0	6	Solute carrier family 13 member 3	w
@@ -576,7 +577,9 @@ SOLUTE	zebrafish	Q6P3H9	slc3a2b	Q6P3H9	10	45	Solute carrier family 3 member 2b	w
 SOLUTE	zebrafish	Q6P3M0	slc30a1a	Q6P3M0	0	1	Solute carrier family 30 (Zinc transporter), member 1	w
 SOLUTE	zebrafish	Q6PC47	slc25a3a	Q6PC47	0	19	Solute carrier family 25 member 3	w
 SOLUTE	zebrafish	Q6PE27	slc13a1	Q6PE27	0	1	Solute carrier family 13 (Sodium/sulphate symporters), membe	w
+SOLUTE	zebrafish	Q6PFM3	wu:fj94c07	Q6PFM3	3	3	Solute carrier family 25 (Mitochondrial carrier, Aralar), me	w
 SOLUTE	zebrafish	Q6PFS0	slc30a4	Q6PFS0	0	3	Solute carrier family 30 (Zinc transporter), member 4	w
+SOLUTE	zebrafish	Q7ZWA7	slc25a10	Q7ZWA7	1	1	Solute carrier family 25 (Mitochondrial carrier dicarboxylat	w
 SOLUTE	zebrafish	Q9I9R3	slc40a1	Q9I9R3	0	3	Solute carrier family 40 member 1	w
 SOLUTE	zebrafish	X1WH55	slc12a7a	X1WH55	1	11	Solute carrier family 12 member 7 isoform X4	w
 SOLUTE-BINDING	worm	Q9XUB4	glr-9	Q9XUB4	0	1	Solute-binding protein family 3/N-terminal domain-containing	w

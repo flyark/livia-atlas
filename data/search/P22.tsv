@@ -11,7 +11,7 @@ P22007	yeast	P22007	RAM1	P22007	1	8	Protein farnesyltransferase subunit beta
 P22008	pseudomonas-aeruginosa	P22008	proC	P22008	0	8	Pyrroline-5-carboxylate reductase	
 P22011	candida-albicans-237561	P22011	CYP1	P22011	1	55	Peptidyl-prolyl cis-trans isomerase	
 P22023	yeast	P22023	KRE5	P22023	0	11	Killer toxin-resistance protein 5	
-P22033	human	P22033	MMUT	P22033	12	200	Methylmalonyl-CoA mutase, mitochondrial (MCM) (EC 5.4.99.2) 	
+P22033	human	P22033	MMUT	P22033	16	205	Methylmalonyl-CoA mutase, mitochondrial (MCM) (EC 5.4.99.2) 	
 P22035	yeast	P22035	BAS1	P22035	1	17	Myb-like DNA-binding protein BAS1	
 P22036	salmonella-typhimurium	P22036	mgtB	P22036	0	3	Magnesium-transporting ATPase, P-type 1	
 P22056	virus	P22056_p139ea5f5d8		P22056	2	9	Capsid protein	
@@ -30,7 +30,7 @@ P22059	human	P22059	OSBP	P22059	11	214	Oxysterol-binding protein 1
 P22061	human	P22061	PCMT1	P22061	22	388	Protein-L-isoaspartate(D-aspartate) O-methyltransferase (PIM	
 P22062	rattus-norvegicus	P22062	Pcmt1	P22062	0	6	Protein-L-isoaspartate(D-aspartate) O-methyltransferase	
 P22063	rattus-norvegicus	P22063	Cntn2	P22063	6	43	Contactin-2	
-P22068	schizosaccharomyces-pombe	P22068	atp2	P22068	5	49	ATP synthase subunit beta, mitochondrial	
+P22068	schizosaccharomyces-pombe	P22068	atp2	P22068	6	50	ATP synthase subunit beta, mitochondrial	
 P22079	human	P22079	LPO	P22079	3	62	Lactoperoxidase (LPO) (EC 1.11.1.7) (Salivary peroxidase) (S	
 P22083	human	P22083	FUT4	P22083	18	130	Alpha-(1,3)-fucosyltransferase 4 (4-galactosyl-N-acetylgluco	
 P22085	onchocerca-volvulus	P22085	?	P22085	0	3	Onchocystatin	
@@ -44,7 +44,7 @@ P22108	yeast	P22108	APA2	P22108	0	14	Diadenosine 5,5''-P1,P4-tetraphosphate phos
 P22112	virus	P22112	SH	P22112	1	7	Small hydrophobic protein	
 P22133	yeast	P22133	MDH2	P22133	2	33	Malate dehydrogenase, cytoplasmic	
 P22134	yeast	P22134	MAG1	P22134	2	8	DNA-3-methyladenine glycosylase	
-P22135	yeast	P22135	ATP12	P22135	2	7	Protein ATP12, mitochondrial	
+P22135	yeast	P22135	ATP12	P22135	3	7	Protein ATP12, mitochondrial	
 P22136	yeast	P22136	AEP2	P22136	1	10	ATPase expression protein 2, mitochondrial	
 P22138	yeast	P22138	RPA135	P22138	11	217	DNA-directed RNA polymerase I subunit RPA135	
 P22139	yeast	P22139	RPB10	P22139	6	179	DNA-directed RNA polymerases I, II, and III subunit RPABC5	
@@ -93,7 +93,7 @@ P22223	human	P22223	CDH3	P22223	23	227	Cadherin-3 (Placental cadherin) (P-cadher
 P22224	yeast	P22224	SEC15	P22224	8	47	Exocyst complex component SEC15	
 P22227	mus-musculus	P22227	Zfp42	P22227	3	61	Zinc finger protein 42	
 P22234	human	P22234	PAICS	P22234	2	280	Bifunctional phosphoribosylaminoimidazole carboxylase/phosph	
-P22237	dictyostelium-discoideum	P22237	nad9	P22237	9	77	NADH-ubiquinone oxidoreductase subunit 9	
+P22237	dictyostelium-discoideum	P22237	nad9	P22237	12	77	NADH-ubiquinone oxidoreductase subunit 9	
 P22255	escherichia-coli-83333	P22255	cysQ	P22255	0	1	3(2),5'-bisphosphate nucleotidase CysQ	
 P22256	escherichia-coli-83333	P22256	gabT	P22256	1	2	4-aminobutyrate aminotransferase GabT	
 P22259	escherichia-coli-83333	P22259	pckA	P22259	0	3	Phosphoenolpyruvate carboxykinase (ATP)	
@@ -109,11 +109,11 @@ P22293	fly	FBgn0003575	su(sable)	P22293	42	187	Protein suppressor of sable
 P22301	human	P22301	IL10	P22301	11	710	Interleukin-10 (IL-10) (Cytokine synthesis inhibitory factor	
 P22303	human	P22303	ACHE	P22303	8	233	Acetylcholinesterase (AChE) (EC 3.1.1.7)	
 P22304	human	P22304	IDS	P22304	17	154	Iduronate 2-sulfatase (EC 3.1.6.13) (Alpha-L-iduronate sulfa	
-P22307	human	P22307	SCP2	P22307	4	109	Sterol carrier protein 2 (SCP-2) (Acetyl-CoA C-myristoyltran	
+P22307	human	P22307	SCP2	P22307	7	111	Sterol carrier protein 2 (SCP-2) (Acetyl-CoA C-myristoyltran	
 P22309	human	P22309	UGT1A1	P22309	21	122	UDP-glucuronosyltransferase 1A1 (UGT1A1) (EC 2.4.1.17) (Bili	
 P22310	human	P22310	UGT1A4	P22310	21	58	UDP-glucuronosyltransferase 1A4 (UGT1A4) (EC 2.4.1.17) (Bili	
 P22314	human	P22314	UBA1	P22314	36	398	Ubiquitin-like modifier-activating enzyme 1 (EC 6.2.1.45) (P	
-P22315	mus-musculus	P22315	Fech	P22315	0	17	Ferrochelatase, mitochondrial	
+P22315	mus-musculus	P22315	Fech	P22315	3	20	Ferrochelatase, mitochondrial	
 P22333	escherichia-coli-83333	P22333	add	P22333	0	9	Adenosine deaminase	
 P22336	yeast	P22336	RFA1	P22336	6	184	Replication factor A protein 1	
 P22338	virus	P22338_p0d23257893		P22338	1	13	Small envelope protein M	
@@ -144,7 +144,7 @@ P22338_PCB06079264	virus	P22338_pcb06079264		P22338	1	13	Protein prM
 P22338_PFDDCDA155C	virus	P22338_pfddcda155c		P22338	2	13	Non structural protein 1	
 P22339	mus-musculus	P22339	Gadd45b	P22339	0	15	Growth arrest and DNA damage-inducible protein GADD45 beta	
 P22352	human	P22352	GPX3	P22352	6	57	Glutathione peroxidase 3 (GPx-3) (GSHPx-3) (EC 1.11.1.9) (Ex	
-P22353	yeast	P22353	MRPL8	P22353	16	273	Large ribosomal subunit protein bL17m	
+P22353	yeast	P22353	MRPL8	P22353	17	274	Large ribosomal subunit protein bL17m	
 P22354	yeast	P22354	MRPL20	P22354	7	101	Large ribosomal subunit protein mL58	
 P22355	rattus-norvegicus	P22355	Sftpb	P22355	0	6	Pulmonary surfactant-associated protein B	
 P22361	mus-musculus	P22361	Hnf1a	P22361	6	36	Hepatocyte nuclear factor 1-alpha	
@@ -194,11 +194,11 @@ P22528	human	P22528	SPRR1B	P22528	20	228	Cornifin-B (14.9 kDa pancornulin) (Smal
 P22531	human	P22531	SPRR2E	P22531	29	194	Small proline-rich protein 2E (SPR-2E) (Small proline-rich p	
 P22532	human	P22532	SPRR2D	P22532	9	68	Small proline-rich protein 2D (SPR-2D) (Small proline-rich p	
 P22543	yeast	P22543	VPS34	P22543	6	83	Phosphatidylinositol 3-kinase VPS34	
-P22557	human	P22557	ALAS2	P22557	4	117	5-aminolevulinate synthase, erythroid-specific, mitochondria	
+P22557	human	P22557	ALAS2	P22557	8	121	5-aminolevulinate synthase, erythroid-specific, mitochondria	
 P22561	mus-musculus	P22561	Wt1	P22561	2	38	Wilms tumor protein homolog	
 P22564	escherichia-coli-83333	P22564	rihC	P22564	0	2	Non-specific ribonucleoside hydrolase RihC	
 P22567	pseudomonas-aeruginosa	P22567	argA	P22567	0	4	Amino-acid acetyltransferase	
-P22570	human	P22570	FDXR	P22570	6	123	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	
+P22570	human	P22570	FDXR	P22570	13	131	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	
 P22574	zebrafish	P22574	hoxb4a	P22574	8	17	Homeobox protein Hox-B4a	
 P22580	yeast	P22580	AMD2	P22580	0	4	Probable amidase	
 P22586	escherichia-coli-83333	P22586	fliO	P22586	1	15	Flagellar protein FliO	
@@ -226,7 +226,7 @@ P22684	dictyostelium-discoideum	P22684	rplp1	P22684	2	122	Large ribosomal subuni
 P22685	dictyostelium-discoideum	P22685	rplp0	P22685	10	208	Large ribosomal subunit protein uL10	
 P22692	human	P22692	IGFBP4	P22692	26	231	Insulin-like growth factor-binding protein 4 (IBP-4) (IGF-bi	
 P22694	human	P22694	PRKACB	P22694	420	1439	cAMP-dependent protein kinase catalytic subunit beta (PKA C-	
-P22695	human	P22695	UQCRC2	P22695	62	468	Cytochrome b-c1 complex subunit 2, mitochondrial (Complex II	
+P22695	human	P22695	UQCRC2	P22695	72	478	Cytochrome b-c1 complex subunit 2, mitochondrial (Complex II	
 P22696	yeast	P22696	ESS1	P22696	4	57	Peptidyl-prolyl cis-trans isomerase ESS1	
 P22698	dictyostelium-discoideum	P22698	celB	P22698	0	7	Spore germination protein 270-11	
 P22699	dictyostelium-discoideum	P22699	celA	P22699	0	12	Endoglucanase	
@@ -244,7 +244,7 @@ P22727	mus-musculus	P22727	Wnt6	P22727	6	14	Protein Wnt-6
 P22729	escherichia-coli-83333	P22729	livM	P22729	39	173	High-affinity branched-chain amino acid transport system per	
 P22731	escherichia-coli-83333	P22731	livF	P22731	45	174	High-affinity branched-chain amino acid transport ATP-bindin	
 P22732	human	P22732	SLC2A5	P22732	0	112	Solute carrier family 2, facilitated glucose transporter mem	
-P22734	rattus-norvegicus	P22734	Comt	P22734	1	29	Catechol O-methyltransferase	
+P22734	rattus-norvegicus	P22734	Comt	P22734	4	33	Catechol O-methyltransferase	
 P22735	human	P22735	TGM1	P22735	23	379	Protein-glutamine gamma-glutamyltransferase K (EC 2.3.2.13) 	
 P22736	human	P22736	NR4A1	P22736	162	691	Nuclear receptor subfamily 4immunitygroup A member 1 (Early 	
 P22738	arabidopsis-thaliana	P22738	ARP2	P22738	33	753	Large ribosomal subunit protein uL3y	
@@ -276,7 +276,7 @@ P22815	fly	FBgn0000206	boss	P22815	42	274	Protein bride of sevenless
 P22816	fly	FBgn0002922	nau	P22816	84	421	Myogenic-determination protein (Protein nautilus) (dMyd)	
 P22817	fly	FBgn0001247	Ide	P22817	2	26	Insulin-degrading enzyme (EC 3.4.24.56) (Insulin protease) (	
 P22829	rattus-norvegicus	P22829	Nr4a1	P22829	10	35	Nuclear receptor subfamily 4 group A member 1	
-P22830	human	P22830	FECH	P22830	5	154	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	
+P22830	human	P22830	FECH	P22830	8	157	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	
 P22831	rattus-norvegicus	P22831	Synpr	P22831	0	9	Synaptoporin	
 P22855	yeast	P22855	AMS1	P22855	0	17	Alpha-mannosidase	
 P22858	mus-musculus	P22858	Pthlh	P22858	7	36	Parathyroid hormone-related protein	
@@ -306,6 +306,6 @@ P22980	worm	P22980	hlh-1	P22980	4	28	Myoblast determination protein 1 homolog
 P22981	worm	P22981	let-60	P22981	13	76	Ras protein let-60	
 P22985	rattus-norvegicus	P22985	Xdh	P22985	4	29	Xanthine dehydrogenase/oxidase	
 P22987	schizosaccharomyces-pombe	P22987	kin1	P22987	1	16	Protein kinase kin1	
-P22HBP	human	Q9NRV9	HEBP1	Q9NRV9	1	76	Heme-binding protein 1 (p22HBP)	w
+P22HBP	human	Q9NRV9	HEBP1	Q9NRV9	13	88	Heme-binding protein 1 (p22HBP)	w
 P22K	virus	A0A0M4MQZ5	p22K	A0A0M4MQZ5	0	28	A0A0M4MQZ5_9ADEN	
 P22K	virus	A0A1D8QMA4	p22K	A0A1D8QMA4	1	35	A0A1D8QMA4_9ADEN	

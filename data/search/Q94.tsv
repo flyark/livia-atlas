@@ -35,7 +35,7 @@ Q940L4	arabidopsis-thaliana	Q940L4	PLIP3	Q940L4	0	1	Phospholipase A1 PLIP3, chlo
 Q940L5	arabidopsis-thaliana	Q940L5	DSP4	Q940L5	1	22	Inositol diphosphatase DSP4	
 Q940M0	arabidopsis-thaliana	Q940M0	GDP1	Q940M0	5	17	G-patch domain-containing protein 1	
 Q940M1	arabidopsis-thaliana	Q940M1	At1g65370	Q940M1	0	2	At1g65370/T8F5_15	
-Q940M2	arabidopsis-thaliana	Q940M2	AGT2	Q940M2	2	14	Alanine--glyoxylate aminotransferase 2 homolog 1, mitochondr	
+Q940M2	arabidopsis-thaliana	Q940M2	AGT2	Q940M2	3	15	Alanine--glyoxylate aminotransferase 2 homolog 1, mitochondr	
 Q940M5	arabidopsis-thaliana	Q940M5	At3g10250	Q940M5	0	2	AT3G10250 protein	
 Q940N3	arabidopsis-thaliana	Q940N3	ATL18	Q940N3	1	2	RING-type E3 ubiquitin transferase	
 Q940N4	arabidopsis-thaliana	Q940N4	At4g22740	Q940N4	2	3	AT4g22740/T12H17_130	
@@ -177,7 +177,7 @@ Q94312	worm	Q94312	CELE_ZK154.1	Q94312	0	3	Apple domain-containing protein
 Q94313	worm	Q94313	CELE_ZK154.4	Q94313	0	1	Uncharacterized protein	
 Q94314	worm	Q94314	CELE_ZK154.5	Q94314	0	1	Flocculation protein FLO11-like	
 Q94316	worm	Q94316	adm-4	Q94316	4	12	Disintegrin and metalloproteinase domain-containing protein 	
-Q94360	worm	Q94360	nduf-7	Q94360	8	92	Probable NADH dehydrogenase	
+Q94360	worm	Q94360	nduf-7	Q94360	13	94	Probable NADH dehydrogenase	
 Q94361	worm	Q94361	gei-17	Q94361	7	50	E3 SUMO-protein ligase gei-17	
 Q94379	worm	Q94379	CELE_ZC247.2	Q94379	0	1	DUF4704 domain-containing protein	
 Q94392	worm	Q94392	nsf-1	Q94392	2	56	Vesicle-fusing ATPase	
@@ -242,7 +242,7 @@ Q944L5	arabidopsis-thaliana	Q944L5	At1g26740	Q944L5	7	75	Large ribosomal subunit
 Q944L7	arabidopsis-thaliana	Q944L7	SLP2	Q944L7	3	55	Shewanella-like protein phosphatase 2	
 Q944L9	arabidopsis-thaliana	Q944L9	CTL15	Q944L9	0	5	RING-type E3 ubiquitin transferase	
 Q944M5	arabidopsis-thaliana	Q944M5	SWEET4	Q944M5	0	2	Bidirectional sugar transporter SWEET4	
-Q944P7	arabidopsis-thaliana	Q944P7	LAP2	Q944P7	0	24	Leucine aminopeptidase 2, chloroplastic	
+Q944P7	arabidopsis-thaliana	Q944P7	LAP2	Q944P7	0	25	Leucine aminopeptidase 2, chloroplastic	
 Q944Q0	arabidopsis-thaliana	Q944Q0	WNK8	Q944Q0	4	22	Serine/threonine-protein kinase WNK8	
 Q944Q6	arabidopsis-thaliana	Q944Q6	At2g14835	Q944Q6	0	3	Expressed protein	
 Q944Q9	arabidopsis-thaliana	Q944Q9	CTL09	Q944Q9	0	1	RING-type E3 ubiquitin transferase	
@@ -258,16 +258,16 @@ Q944T2	glycine-max	Q944T2	TCTP	Q944T2	0	22	Translationally-controlled tumor prot
 Q94502	dictyostelium-discoideum	Q94502	modA	Q94502	1	33	Neutral alpha-glucosidase AB	
 Q94503	dictyostelium-discoideum	Q94503	cprF	Q94503	0	9	Cysteine proteinase 6	
 Q94504	dictyostelium-discoideum	Q94504	cprG	Q94504	0	9	Cysteine proteinase 7	
-Q94511	fly	FBgn0017566	ND-75	Q94511	22	143	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	
-Q94514	fly	FBgn0019624	COX5A	Q94514	10	180	Cytochrome c oxidase subunit 5A, mitochondrial (Cytochrome c	
+Q94511	fly	FBgn0017566	ND-75	Q94511	27	148	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	
+Q94514	fly	FBgn0019624	COX5A	Q94514	11	181	Cytochrome c oxidase subunit 5A, mitochondrial (Cytochrome c	
 Q94515	fly	FBgn0001941	ifc	Q94515	4	51	Sphingolipid delta(4)-desaturase DES1 (EC 1.14.19.17) (Degen	
 Q94516	fly	FBgn0019644	ATPsynB	Q94516	13	129	ATP synthase subunit b, mitochondrial (ATPase subunit b) (FO	
 Q94517	fly	FBgn0015805	HDAC1	Q94517	135	771	Histone deacetylase HDAC1 (HD) (EC 3.5.1.98)	
 Q94518	fly	FBgn0086904	Nacalpha	Q94518	48	259	Nascent polypeptide-associated complex subunit alpha (NAC-al	
-Q94519	fly	FBgn0011361	ND-ACP	M9PDU4	58	366		
+Q94519	fly	FBgn0011361	ND-ACP	M9PDU4	65	372		
 Q94521	fly	FBgn0287831	speck	Q94521	0	15	speck	
-Q94522	fly	FBgn0004888	Scsalpha1	Q94522	7	135	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	
-Q94523	fly	FBgn0261439	SdhA	Q94523	13	95	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	
+Q94522	fly	FBgn0004888	Scsalpha1	Q94522	14	141	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	
+Q94523	fly	FBgn0261439	SdhA	Q94523	17	99	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	
 Q94524	fly	FBgn0024432	Dlc90F	Q94524	11	180	Dynein light chain Tctex-type (TCTEX-1 protein homolog)	
 Q94526	fly	FBgn0017561	Ork1	X2JJC8	8	14		
 Q94527	fly	FBgn0014018	Rel	Q94527	48	605	Nuclear factor NF-kappa-B p110 subunit (Rel-p110) (Relish pr	
@@ -278,10 +278,10 @@ Q94545	fly	FBgn0000139	ash2	Q94545	40	479	Set1/Ash2 histone methyltransferase co
 Q94546	fly	FBgn0019637	Atu	Q94546	17	96	Another transcription unit protein	
 Q94547	fly	FBgn0017550	Rga	Q94547	55	484	Regulator of gene activity (Protein regena) (CCR4-NOT transc	
 Q945F0	arabidopsis-thaliana	Q945F0	DTX47	Q945F0	0	2	Protein DETOXIFICATION 47, chloroplastic	
-Q945K7	arabidopsis-thaliana	Q945K7	IDH5	Q945K7	4	24	Isocitrate dehydrogenase	
+Q945K7	arabidopsis-thaliana	Q945K7	IDH5	Q945K7	5	25	Isocitrate dehydrogenase	
 Q945K9	arabidopsis-thaliana	Q945K9	At4g34150	Q945K9	1	5	At4g34150	
 Q945L0	arabidopsis-thaliana	Q945L0	COX6B-2	Q945L0	1	104	Cytochrome c oxidase subunit 6b-2	
-Q945M1	arabidopsis-thaliana	Q945M1	CIB22	Q945M1	15	186	NADH dehydrogenase	
+Q945M1	arabidopsis-thaliana	Q945M1	CIB22	Q945M1	17	188	NADH dehydrogenase	
 Q945M8	arabidopsis-thaliana	Q945M8	At3g53850	Q945M8	0	1	CASP-like protein 5B2	
 Q945M9	arabidopsis-thaliana	Q945M9	NFYA9	Q945M9	12	44	Nuclear transcription factor Y subunit A-9	
 Q945N1	arabidopsis-thaliana	Q945N1	MXI22.1	Q945N1	0	1	AT5g50310/MXI22_1	
@@ -455,7 +455,7 @@ Q94AM9	arabidopsis-thaliana	Q94AM9	CID4	Q94AM9	13	56	Polyadenylate-binding prote
 Q94AN4	arabidopsis-thaliana	Q94AN4	At1g16060	Q94AN4	0	16	AP2-like ethylene-responsive transcription factor At1g16060	
 Q94AP2	arabidopsis-thaliana	Q94AP2	At1g60670	Q94AP2	3	3	Uncharacterized protein At1g60670	
 Q94AP3	arabidopsis-thaliana	Q94AP3	WAT1	Q94AP3	0	14	Protein WALLS ARE THIN 1	
-Q94AQ6	arabidopsis-thaliana	Q94AQ6	SRT2	Q94AQ6	16	236	NAD-dependent protein deacylase SRT2	
+Q94AQ6	arabidopsis-thaliana	Q94AQ6	SRT2	Q94AQ6	17	237	NAD-dependent protein deacylase SRT2	
 Q94AQ8	arabidopsis-thaliana	Q94AQ8	PNSB2	Q94AQ8	3	57	Photosynthetic NDH subunit of subcomplex B 2, chloroplastic	
 Q94AQ9	arabidopsis-thaliana	Q94AQ9	SGRL	Q94AQ9	1	7	Magnesium dechelatase SGRL, chloroplastic	
 Q94AR4	arabidopsis-thaliana	Q94AR4	CID2	Q94AR4	2	2	Polyadenylate-binding protein-interacting protein 2	
@@ -476,7 +476,7 @@ Q94AW8	arabidopsis-thaliana	Q94AW8	ATJ3	Q94AW8	14	47	Chaperone protein dnaJ 3
 Q94AW9	arabidopsis-thaliana	Q94AW9	At2g25355	Q94AW9	8	95	Ribosomal RNA-processing protein 40	
 Q94AX2	arabidopsis-thaliana	Q94AX2	PTST	Q94AX2	3	71	Protein PTST, chloroplastic	
 Q94AX3	arabidopsis-thaliana	Q94AX3	LTPG16	Q94AX3	0	11	Non-specific lipid transfer protein GPI-anchored 16	
-Q94AX4	arabidopsis-thaliana	Q94AX4	DLD	Q94AX4	0	1	D-lactate dehydrogenase	
+Q94AX4	arabidopsis-thaliana	Q94AX4	DLD	Q94AX4	1	2	D-lactate dehydrogenase	
 Q94AX5	arabidopsis-thaliana	Q94AX5	PAM71	Q94AX5	0	3	Protein PAM71, chloroplastic	
 Q94AY1	arabidopsis-thaliana	Q94AY1	AO	Q94AY1	5	88	L-aspartate oxidase, chloroplastic	
 Q94AY3	arabidopsis-thaliana	Q94AY3	DRIP2	Q94AY3	9	45	E3 ubiquitin protein ligase DRIP2	
@@ -525,7 +525,7 @@ Q94BX4	arabidopsis-thaliana	Q94BX4	PIGA	Q94BX4	5	29	Phosphatidylinositol N-acety
 Q94BY1	arabidopsis-thaliana	Q94BY1	At3g52155	Q94BY1	0	4	Uncharacterized protein At3g52155, chloroplastic	
 Q94BY3	arabidopsis-thaliana	Q94BY3	MUA22.2	Q94BY3	2	28	Translocon-associated protein subunit beta	
 Q94BY7	arabidopsis-thaliana	Q94BY7	DAC	Q94BY7	0	5	AT3g17930/MEB5_15	
-Q94BY8	arabidopsis-thaliana	Q94BY8	MNF13.22	Q94BY8	3	17	AT5g40660/MNF13_180	
+Q94BY8	arabidopsis-thaliana	Q94BY8	MNF13.22	Q94BY8	5	18	AT5g40660/MNF13_180	
 Q94BZ0	arabidopsis-thaliana	Q94BZ0	At1g50450	Q94BZ0	1	15	At1g50450/F11F12_20	
 Q94BZ1	arabidopsis-thaliana	Q94BZ1	ZIFL1	Q94BZ1	0	1	Protein ZINC INDUCED FACILITATOR-LIKE 1	
 Q94BZ5	arabidopsis-thaliana	Q94BZ5	HSFA5	Q94BZ5	7	25	Heat stress transcription factor A-5	
@@ -758,11 +758,11 @@ Q94JM3	arabidopsis-thaliana	Q94JM3	ARF2	Q94JM3	12	35	Auxin response factor 2
 Q94JQ3	arabidopsis-thaliana	Q94JQ3	SHM3	Q94JQ3	4	39	Serine hydroxymethyltransferase 3, chloroplastic	
 Q94JQ4	arabidopsis-thaliana	Q94JQ4	RIDA	Q94JQ4	0	37	Reactive Intermediate Deaminase A, chloroplastic	
 Q94JQ6	arabidopsis-thaliana	Q94JQ6	CESA6	Q94JQ6	0	20	Cellulose synthase A catalytic subunit 6	
-Q94JQ7	arabidopsis-thaliana	Q94JQ7	At1g07830	Q94JQ7	33	508	Large ribosomal subunit protein uL29m	
+Q94JQ7	arabidopsis-thaliana	Q94JQ7	At1g07830	Q94JQ7	34	508	Large ribosomal subunit protein uL29m	
 Q94JR1	arabidopsis-thaliana	Q94JR1	At3g10030	Q94JR1	0	13	UMP kinase	
 Q94JR2	arabidopsis-thaliana	Q94JR2	At5g45310	Q94JR2	0	68	AT5g45310/K9E15_9	
 Q94JR6	arabidopsis-thaliana	Q94JR6	At3g59930	Q94JR6	0	4	Defensin-like protein 206	
-Q94JS0	arabidopsis-thaliana	Q94JS0	UCR1-1	Q94JS0	13	149	Cytochrome b-c1 complex subunit Rieske-1, mitochondrial	
+Q94JS0	arabidopsis-thaliana	Q94JS0	UCR1-1	Q94JS0	18	152	Cytochrome b-c1 complex subunit Rieske-1, mitochondrial	
 Q94JS4	arabidopsis-thaliana	Q94JS4	SMT3	Q94JS4	0	13	24-methylenesterol C-methyltransferase 3	
 Q94JT6	arabidopsis-thaliana	Q94JT6	At1g78070	Q94JT6	8	95	At1g78070/F28K19_28	
 Q94JU2	arabidopsis-thaliana	Q94JU2	At3g28050	Q94JU2	0	2	WAT1-related protein At3g28050	
@@ -771,7 +771,7 @@ Q94JV0	arabidopsis-thaliana	Q94JV0	At1g69210	Q94JV0	0	5	At1g69210/F4N2_11
 Q94JV1	arabidopsis-thaliana	Q94JV1	At1g69340	Q94JV1	0	2	Appr-1-p processing enzyme family protein	
 Q94JV2	arabidopsis-thaliana	Q94JV2	At3g27050	Q94JV2	1	3	AT3g27050/MOJ10_14	
 Q94JV4	arabidopsis-thaliana	Q94JV4	At1g54290	Q94JV4	34	206	Protein translation factor SUI1 homolog 2	
-Q94JV5	arabidopsis-thaliana	Q94JV5	NLP2	Q94JV5	0	1	Deaminated glutathione amidase, chloroplastic/cytosolic	
+Q94JV5	arabidopsis-thaliana	Q94JV5	NLP2	Q94JV5	1	2	Deaminated glutathione amidase, chloroplastic/cytosolic	
 Q94JV8	arabidopsis-thaliana	Q94JV8	At2g04795	Q94JV8	0	1	AT2g04793	
 Q94JV9	arabidopsis-thaliana	Q94JV9	DL3615C	Q94JV9	1	16	AT4g15140/dl3615c	
 Q94JW0	arabidopsis-thaliana	Q94JW0	At3g58180	Q94JW0	0	4	Deoxyhypusine hydroxylase	

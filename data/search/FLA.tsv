@@ -188,8 +188,8 @@ FLAVIN-CONTAINING	fly	FBgn0033079	Fmo2	Q7K3U4	3	51	Flavin-containing monooxygena
 FLAVIN-CONTAINING	fly	FBgn0034943	Fmo1	Q9W1E9	2	57	Flavin-containing monooxygenase (EC 1.-.-.-)	w
 FLAVIN-CONTAINING	human	O60341	KDM1A	O60341	178	1093	Lysine-specific histone demethylase 1A (EC 1.14.11.-) (EC 1.	w
 FLAVIN-CONTAINING	human	O60774	FMO6P	O60774	5	13	Putative dimethylaniline monooxygenase [N-oxide-forming] 6 (	w
-FLAVIN-CONTAINING	human	P21397	MAOA	P21397	5	107	Amine oxidase [flavin-containing] A (EC 1.4.3.21) (EC 1.4.3.	w
-FLAVIN-CONTAINING	human	P27338	MAOB	P27338	6	148	Amine oxidase [flavin-containing] B (EC 1.4.3.21) (EC 1.4.3.	w
+FLAVIN-CONTAINING	human	P21397	MAOA	P21397	7	109	Amine oxidase [flavin-containing] A (EC 1.4.3.21) (EC 1.4.3.	w
+FLAVIN-CONTAINING	human	P27338	MAOB	P27338	7	149	Amine oxidase [flavin-containing] B (EC 1.4.3.21) (EC 1.4.3.	w
 FLAVIN-CONTAINING	human	P31512	FMO4	P31512	7	57	Flavin-containing monooxygenase 4 (EC 1.14.13.-) (Hepatic fl	w
 FLAVIN-CONTAINING	human	P31513	FMO3	P31513	7	94	Flavin-containing monooxygenase 3 (EC 1.14.13.148) (EC 1.14.	w
 FLAVIN-CONTAINING	human	P49326	FMO5	P49326	5	83	Flavin-containing monooxygenase 5 (FMO 5) (Baeyer-Villiger m	w
@@ -214,38 +214,41 @@ FLAVODOXIN-LIKE	worm	Q9N535	CELE_Y32H12A.6	Q9N535	1	4	Flavodoxin-like domain-con
 FLAVOHEMOPROTEIN	human	Q7L1T6	CYB5R4	Q7L1T6	4	76	Cytochrome b5 reductase 4 (EC 1.6.2.2) (Flavohemoprotein b5/	w
 FLAVOHEMOPROTEIN	yeast	P39676	YHB1	P39676	2	79	Flavohemoprotein	w
 FLAVOKINASE	fly	FBgn0014930	Rfk	O76206	1	12	Putative riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-	w
-FLAVOKINASE	human	Q969G6	RFK	Q969G6	10	105	Riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-phosphotr	w
-FLAVOPROTEIN	fly	FBgn0010516	wal	Q7KN94	9	153	Electron transfer flavoprotein subunit alpha (Alpha-ETF)	w
-FLAVOPROTEIN	fly	FBgn0031771	ND-51	Q9VMI3	5	98	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+FLAVOKINASE	human	Q969G6	RFK	Q969G6	13	108	Riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-phosphotr	w
+FLAVOPROTEIN	fly	FBgn0010516	wal	Q7KN94	20	163	Electron transfer flavoprotein subunit alpha (Alpha-ETF)	w
+FLAVOPROTEIN	fly	FBgn0031771	ND-51	Q9VMI3	13	106	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
 FLAVOPROTEIN	fly	FBgn0034251	ND-51L1	A1ZAW7	8	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
 FLAVOPROTEIN	fly	FBgn0036222	SdhAL	Q8SX97	6	67	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
-FLAVOPROTEIN	fly	FBgn0039697	Etfb	Q0KHZ6	18	136	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
-FLAVOPROTEIN	fly	FBgn0261439	SdhA	Q94523	13	95	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
-FLAVOPROTEIN	human	P13804	ETFA	P13804	32	342	Electron transfer flavoprotein subunit alpha, mitochondrial 	w
+FLAVOPROTEIN	fly	FBgn0039697	Etfb	Q0KHZ6	25	143	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
+FLAVOPROTEIN	fly	FBgn0261439	SdhA	Q94523	17	99	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
+FLAVOPROTEIN	human	P13804	ETFA	P13804	49	357	Electron transfer flavoprotein subunit alpha, mitochondrial 	w
 FLAVOPROTEIN	human	P19404	NDUFV2	P19404	26	376	NADH dehydrogenase [ubiquinone] flavoprotein 2, mitochondria	w
-FLAVOPROTEIN	human	P31040	SDHA	P31040	47	432	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
-FLAVOPROTEIN	human	P38117	ETFB	P38117	25	187	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
-FLAVOPROTEIN	human	P49821	NDUFV1	P49821	27	470	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
-FLAVOPROTEIN	human	P56181	NDUFV3	P56181	18	253	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondria	w
-FLAVOPROTEIN	human	Q6IPR1	ETFRF1	Q6IPR1	15	113	Electron transfer flavoprotein regulatory factor 1 (LYR moti	w
+FLAVOPROTEIN	human	P31040	SDHA	P31040	55	439	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
+FLAVOPROTEIN	human	P38117	ETFB	P38117	36	198	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
+FLAVOPROTEIN	human	P49821	NDUFV1	P49821	43	484	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+FLAVOPROTEIN	human	P56181	NDUFV3	P56181	20	254	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondria	w
+FLAVOPROTEIN	human	Q6IPR1	ETFRF1	Q6IPR1	16	114	Electron transfer flavoprotein regulatory factor 1 (LYR moti	w
 FLAVOPROTEIN	human	Q8IWF2	FOXRED2	Q8IWF2	6	254	FAD-dependent oxidoreductase domain-containing protein 2 (En	w
-FLAVOPROTEIN	human	Q8IXQ9	ETFBKMT	Q8IXQ9	8	109	Electron transfer flavoprotein beta subunit lysine methyltra	w
+FLAVOPROTEIN	human	Q8IXQ9	ETFBKMT	Q8IXQ9	20	121	Electron transfer flavoprotein beta subunit lysine methyltra	w
 FLAVOPROTEIN	virus	A0A068EGV2	fep_072	A0A068EGV2	3	221	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
 FLAVOPROTEIN	virus	A0A068ELF1	pepv_075	A0A068ELF1	5	240	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
 FLAVOPROTEIN	virus	A0A0M3PB94		A0A0M3PB94	1	170	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
 FLAVOPROTEIN	virus	A0A2H4X274	fgpv_072	A0A2H4X274	6	256	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
 FLAVOPROTEIN	virus	Q9J5E0	FPV071	Q9J5E0	2	250	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
+FLAVOPROTEIN	worm	O01503	C37A2.6	O01503	3	3	Electron transfer flavoprotein beta subunit lysine methyltra	w
 FLAVOPROTEIN	worm	P91988	CELE_F25H9.6	P91988	0	6	Flavoprotein domain-containing protein	w
-FLAVOPROTEIN	worm	Q93615	F27D4.1	Q93615	3	50	Probable electron transfer flavoprotein subunit alpha, mitoc	w
+FLAVOPROTEIN	worm	Q93615	F27D4.1	Q93615	11	58	Probable electron transfer flavoprotein subunit alpha, mitoc	w
 FLAVOPROTEIN	worm	Q9BL36	CELE_Y71H2AM.6	Q9BL36	0	2	DNA/pantothenate metabolism flavoprotein C-terminal domain-c	w
-FLAVOPROTEIN	worm	Q9TXI4	etfb-1	Q9TXI4	16	56	Electron transfer flavoprotein subunit beta	w
-FLAVOPROTEIN	yeast	P42940	CIR1	P42940	2	40	Probable electron transfer flavoprotein subunit beta	w
-FLAVOPROTEIN	yeast	Q12480	AIM45	Q12480	2	45	Probable electron transfer flavoprotein subunit alpha, mitoc	w
-FLAVOPROTEIN	zebrafish	A3KP85	etfbkmt	A3KP85	1	4	Electron transfer flavoprotein beta subunit lysine methyltra	w
-FLAVOPROTEIN	zebrafish	Q7ZUS9	etfa	Q7ZUS9	0	32	Electron transfer flavoprotein subunit alpha	w
+FLAVOPROTEIN	worm	Q9TXI4	etfb-1	Q9TXI4	24	64	Electron transfer flavoprotein subunit beta	w
+FLAVOPROTEIN	yeast	P42940	CIR1	P42940	4	42	Probable electron transfer flavoprotein subunit beta	w
+FLAVOPROTEIN	yeast	Q12480	AIM45	Q12480	5	48	Probable electron transfer flavoprotein subunit alpha, mitoc	w
+FLAVOPROTEIN	zebrafish	A0A8M3BCF6	ndufv3	A0A8M3BCF6	2	2	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondria	w
+FLAVOPROTEIN	zebrafish	A3KP85	etfbkmt	A3KP85	9	13	Electron transfer flavoprotein beta subunit lysine methyltra	w
+FLAVOPROTEIN	zebrafish	Q7ZUS9	etfa	Q7ZUS9	14	48	Electron transfer flavoprotein subunit alpha	w
+FLAVOPROTEIN	zebrafish	Q7ZV76	zgc:56177	Q7ZV76	24	25	Electron transfer flavoprotein subunit beta	w
 FLAVOPROTEIN-LIKE	yeast	P25349	YCP4	P25349	0	25	Flavoprotein-like protein YCP4	w
-FLAVOPROTEIN-UBIQUINONE	fly	FBgn0286783	Etf-QO	Q7JWF1	2	19	Electron transfer flavoprotein-ubiquinone oxidoreductase (ET	w
-FLAVOPROTEIN-UBIQUINONE	human	Q16134	ETFDH	Q16134	5	120	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	w
-FLAVOPROTEIN-UBIQUINONE	worm	Q11190	let-721	Q11190	1	11	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	w
-FLAVOPROTEIN-UBIQUINONE	yeast	Q08822	CIR2	Q08822	1	11	Probable electron transfer flavoprotein-ubiquinone oxidoredu	w
-FLAVOPROTEIN-UBIQUINONE	zebrafish	Q66I16	etfdh	Q66I16	0	12	Electron transfer flavoprotein-ubiquinone oxidoreductase	w
+FLAVOPROTEIN-UBIQUINONE	fly	FBgn0286783	Etf-QO	Q7JWF1	2	20	Electron transfer flavoprotein-ubiquinone oxidoreductase (ET	w
+FLAVOPROTEIN-UBIQUINONE	human	Q16134	ETFDH	Q16134	16	131	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	w
+FLAVOPROTEIN-UBIQUINONE	worm	Q11190	let-721	Q11190	3	13	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	w
+FLAVOPROTEIN-UBIQUINONE	yeast	Q08822	CIR2	Q08822	2	12	Probable electron transfer flavoprotein-ubiquinone oxidoredu	w
+FLAVOPROTEIN-UBIQUINONE	zebrafish	Q66I16	etfdh	Q66I16	3	17	Electron transfer flavoprotein-ubiquinone oxidoreductase	w

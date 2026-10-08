@@ -35,7 +35,7 @@ P50116	rattus-norvegicus	P50116	S100a9	P50116	1	20	Protein S100-A9
 P50120	human	P50120	RBP2	P50120	4	68	Retinol-binding protein 2 (Cellular retinol-binding protein 	
 P50123	rattus-norvegicus	P50123	Enpep	P50123	0	23	Glutamyl aminopeptidase	
 P50135	human	P50135	HNMT	P50135	6	181	Histamine N-methyltransferase (HMT) (EC 2.1.1.8)	
-P50136	mus-musculus	P50136	Bckdha	P50136	3	35	2-oxoisovalerate dehydrogenase subunit alpha, mitochondrial	
+P50136	mus-musculus	P50136	Bckdha	P50136	6	38	2-oxoisovalerate dehydrogenase subunit alpha, mitochondrial	
 P50137	rattus-norvegicus	P50137	Tkt	P50137	2	6	Transketolase	
 P50140	worm	P50140	hsp-60	P50140	2	93	Chaperonin homolog Hsp-60, mitochondrial	
 P50148	human	P50148	GNAQ	P50148	313	824	Guanine nucleotide-binding protein G(q) subunit alpha (EC 3.	
@@ -48,10 +48,10 @@ P50158	zea-mays	P50158	TBP1	P50158	27	198	TATA-box-binding protein 1
 P50159	zea-mays	P50159	TBP2	P50159	24	198	TATA-box-binding protein 2	
 P50160	zea-mays	P50160	TS2	P50160	0	51	Sex determination protein tasselseed-2	
 P50170	rattus-norvegicus	P50170	Rdh16	P50170	0	1	Retinol dehydrogenase 16	
-P50171	mus-musculus	P50171	Hsd17b8	P50171	0	12	(3R)-3-hydroxyacyl-CoA dehydrogenase	
+P50171	mus-musculus	P50171	Hsd17b8	P50171	3	17	(3R)-3-hydroxyacyl-CoA dehydrogenase	
 P50172	mus-musculus	P50172	Hsd11b1	P50172	1	10	11-beta-hydroxysteroid dehydrogenase 1	
 P50207	mus-musculus	P50207	Hoxc13	P50207	0	3	Homeobox protein Hox-C13	
-P50213	human	P50213	IDH3A	P50213	11	168	Isocitrate dehydrogenase [NAD] subunit alpha, mitochondrial 	
+P50213	human	P50213	IDH3A	P50213	14	171	Isocitrate dehydrogenase [NAD] subunit alpha, mitochondrial 	
 P50219	human	P50219	MNX1	P50219	115	402	Motor neuron and pancreas homeobox protein 1 (Homeobox prote	
 P50220	mus-musculus	P50220	Nkx2-1	P50220	5	24	Homeobox protein Nkx-2.1	
 P50221	human	P50221	MEOX1	P50221	101	494	Homeobox protein MOX-1 (Mesenchyme homeobox 1)	
@@ -95,7 +95,7 @@ P50306	worm	P50306	sams-4	P50306	2	7	Probable S-adenosylmethionine synthase 4
 P50318	arabidopsis-thaliana	P50318	At1g56190	P50318	0	52	Phosphoglycerate kinase 2, chloroplastic	
 P50334	salmonella-typhimurium	P50334	dctA	P50334	0	1	Aerobic C4-dicarboxylate transport protein	
 P50335	salmonella-typhimurium	P50335	yhjJ	P50335	4	72	Protein YhjJ	
-P50336	human	P50336	PPOX	P50336	7	127	Protoporphyrinogen oxidase (PPO) (EC 1.3.3.4)	
+P50336	human	P50336	PPOX	P50336	8	128	Protoporphyrinogen oxidase (PPO) (EC 1.3.3.4)	
 P50339	rattus-norvegicus	P50339	Cma1	P50339	1	19	Chymase	
 P50343	rattus-norvegicus	P50343	Tpsb2	P50343	2	5	Tryptase beta-2	
 P50346	glycine-max	P50346	?	P50346	42	1205	Large ribosomal subunit protein uL10	
@@ -119,8 +119,8 @@ P50430	rattus-norvegicus	P50430	Arsb	P50430	0	36	Arylsulfatase B
 P50431	mus-musculus	P50431	Shmt1	P50431	1	36	Serine hydroxymethyltransferase, cytosolic	
 P50432	worm	P50432	mel-32	P50432	1	38	Serine hydroxymethyltransferase	
 P50437	worm	P50437	srlf-2	P50437	0	1	SXP/RAL-2-like protein 2	
-P50440	human	P50440	GATM	P50440	13	225	Glycine amidinotransferase, mitochondrial (EC 2.1.4.1) (L-ar	
-P50442	rattus-norvegicus	P50442	Gatm	P50442	0	5	Glycine amidinotransferase, mitochondrial	
+P50440	human	P50440	GATM	P50440	20	232	Glycine amidinotransferase, mitochondrial (EC 2.1.4.1) (L-ar	
+P50442	rattus-norvegicus	P50442	Gatm	P50442	5	11	Glycine amidinotransferase, mitochondrial	
 P50443	human	P50443	SLC26A2	P50443	14	149	Sulfate transporter (Diastrophic dysplasia protein) (Solute 	
 P50444	worm	P50444	pelo-1	P50444	2	119	Protein pelota homolog	
 P50445	fly	FBgn0003302	rux	P50445	9	74	Cell cycle negative regulator roughex	
@@ -171,14 +171,14 @@ P50540	mus-musculus	P50540	Mxi1	P50540	8	27	Max-interacting protein 1
 P50541	zebrafish	P50541	mxi1	P50541	11	31	Max-interacting protein 1	
 P50542	human	P50542	PEX5	P50542	92	219	Peroxisomal targeting signal 1 receptor (PTS1 receptor) (PTS	
 P50543	mus-musculus	P50543	S100a11	P50543	0	23	Protein S100-A11	
-P50544	mus-musculus	P50544	Acadvl	P50544	6	36	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	
+P50544	mus-musculus	P50544	Acadvl	P50544	14	45	Very long-chain specific acyl-CoA dehydrogenase, mitochondri	
 P50545	rattus-norvegicus	P50545	Hck	P50545	20	101	Tyrosine-protein kinase HCK	
 P50546	arabidopsis-thaliana	P50546	rpoB	P50546	20	452	DNA-directed RNA polymerase subunit beta	
 P50548	human	P50548	ERF	P50548	21	141	ETS domain-containing transcription factor ERF (Ets2 repress	
 P50549	human	P50549	ETV1	P50549	63	433	ETS translocation variant 1 (Ets-related protein 81)	
 P50552	human	P50552	VASP	P50552	123	443	Vasodilator-stimulated phosphoprotein (VASP)	
 P50553	human	P50553	ASCL1	P50553	89	409	Achaete-scute homolog 1 (ASH-1) (hASH1) (Class A basic helix	
-P50554	rattus-norvegicus	P50554	Abat	P50554	0	1	4-aminobutyrate aminotransferase, mitochondrial	
+P50554	rattus-norvegicus	P50554	Abat	P50554	2	3	4-aminobutyrate aminotransferase, mitochondrial	
 P50569	rattus-norvegicus	P50569	Nr5a1	P50569	9	41	Steroidogenic factor 1	
 P50570	human	P50570	DNM2	P50570	21	412	Dynamin-2 (EC 3.6.5.5) (Dynamin 2) (Dynamin II)	
 P50571	mus-musculus	P50571	Gabrb1	P50571	8	29	Gamma-aminobutyric acid receptor subunit beta-1	
@@ -191,7 +191,7 @@ P50579	human	P50579	METAP2	P50579	85	447	Methionine aminopeptidase 2 (MAP 2) (Me
 P50580	mus-musculus	P50580	Pa2g4	P50580	24	196	Proliferation-associated protein 2G4	
 P50581	worm	P50581	T27A8.3	P50581	0	27	Putative uncharacterized protein T27A8.3	
 P50582	schizosaccharomyces-pombe	P50582	hsk1	P50582	2	35	Cell cycle serine/threonine-protein kinase hsk1	
-P50583	human	P50583	NUDT2	P50583	8	131	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical] (EC 3.6.1.	
+P50583	human	P50583	NUDT2	P50583	11	134	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical] (EC 3.6.1.	
 P50586	mus-musculus	P50586	Tub	P50586	2	12	Tubby protein	
 P50587	pseudomonas-aeruginosa	P50587	pyrE	P50587	0	2	Orotate phosphoribosyltransferase	
 P50591	human	P50591	TNFSF10	P50591	50	353	Tumor necrosis factor ligand superfamily member 10 (Apo-2 li	
@@ -213,9 +213,10 @@ P50616	human	P50616	TOB1	P50616	19	103	Protein Tob1 (Transducer of erbB-2 1)
 P50617	rattus-norvegicus	P50617	Ddn	P50617	6	11	Dendrin	
 P50623	yeast	P50623	UBC9	P50623	12	166	SUMO-conjugating enzyme UBC9	
 P50636	mus-musculus	P50636	Rnf19a	P50636	1	6	E3 ubiquitin-protein ligase RNF19A	
-P50637	mus-musculus	P50637	Tspo	P50637	0	28	Translocator protein	
+P50637	mus-musculus	P50637	Tspo	P50637	1	29	Translocator protein	
 P50651	arabidopsis-thaliana	P50651	RNR2A	P50651	2	14	Ribonucleoside-diphosphate reductase small chain A	
 P50652	mus-musculus	P50652	Fancc	P50652	4	56	Fanconi anemia group C protein homolog	
+P50690	pan-troglodytes	P50690	MT-CO2	P50690	17	17	Cytochrome c oxidase subunit 2	
 P50700	arabidopsis-thaliana	P50700	OSM34	P50700	0	1	Osmotin-like protein OSM34	
 P50745	rattus-norvegicus	P50745	Sh2b3	P50745	5	17	SH2B adapter protein 3	
 P50747	human	P50747	HLCS	P50747	6	95	Biotin--protein ligase (EC 6.3.4.-) (Biotin apo-protein liga	

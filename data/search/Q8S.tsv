@@ -83,7 +83,7 @@ Q8S4P6	zea-mays	Q8S4P6	EZ1	Q8S4P6	10	116	Histone-lysine N-methyltransferase EZ1
 Q8S4Q4	glycine-max	Q8S4Q4	N6L	Q8S4Q4	1	25	Nodulin 6l	
 Q8S4Q6	arabidopsis-thaliana	Q8S4Q6	FHY1	Q8S4Q6	4	25	Protein FAR-RED ELONGATED HYPOCOTYL 1	
 Q8S4W9	zea-mays	Q8S4W9	pdc3	Q8S4W9	0	5	pyruvate decarboxylase	
-Q8S4Y1	arabidopsis-thaliana	Q8S4Y1	ACCT2	Q8S4Y1	2	49	Acetyl-CoA acetyltransferase 2	
+Q8S4Y1	arabidopsis-thaliana	Q8S4Y1	ACCT2	Q8S4Y1	3	50	Acetyl-CoA acetyltransferase 2	
 Q8S528	arabidopsis-thaliana	Q8S528	ALDH2B7	Q8S528	5	21	Aldehyde dehydrogenase family 2 member B7, mitochondrial	
 Q8S529	zea-mays	Q8S529	rf2d	Q8S529	0	5	Aldehyde dehydrogenase 1	
 Q8S5C1	glycine-max	Q8S5C1	4CL2	Q8S5C1	3	358	4-coumarate--CoA ligase	
@@ -269,7 +269,8 @@ Q8SWV5	fly	FBgn0034494	CG10444	Q8SWV5	2	56	LD47995p
 Q8SWV6	fly	FBgn0263278	Fic	Q8SWV6	1	7	Protein adenylyltransferase Fic (dFic) (EC 2.7.7.108) (De-AM	
 Q8SWW2	fly	FBgn0033665	Zip48C	Q8SWW2	0	6	Zinc transporter ZIP11 (Solute carrier family 39 member 11) 	
 Q8SWW4	fly	FBgn0032481	CG16972	Q8SWW4	11	67	LD28380p	
-Q8SWW9	fly	FBgn0023536	CG3156	Q8SWW9	2	23	LD18126p	
+Q8SWW9	fly	FBgn0023536	CG3156	Q8SWW9	3	24	LD18126p	
+Q8SWW9_DROME	fly	FBgn0023536	CG3156	Q8SWW9	3	24		
 Q8SWX0	fly	FBgn0036826	arx	Q8SWX0	2	8	Gametocyte-specific factor 1 homolog (Protein asterix)	
 Q8SWX4	fly	FBgn0051343	CG31343	Q8SWX4	13	163	Aminopeptidase (EC 3.4.11.-)	
 Q8SWX6	fly	FBgn0039265	CG11790	Q8SWX6	0	21	GH08893p	
@@ -291,7 +292,8 @@ Q8SX54	fly	FBgn0038250	CG3505	Q8SX54	43	243	CLIP domain-containing serine protea
 Q8SX57	fly	FBgn0051549	CG31549	Q8SX57	0	12	LD44221p	
 Q8SX68	fly	FBgn0034308	Naus	Q8SX68	1	15	CTTNBP2 N-terminal-like protein (Protein Nausicaa)	
 Q8SX76	fly	FBgn0051453	pch2	Q8SX76	0	46	LD24646p (Pachytene checkpoint 2, isoform A) (Pachytene chec	
-Q8SX78	fly	FBgn0265178	Lipt1	Q8SX78	7	37	LD05679p (LD22815p)	
+Q8SX78	fly	FBgn0265178	Lipt1	Q8SX78	10	40	LD05679p (LD22815p)	
+Q8SX78_DROME	fly	FBgn0265178	Lipt1	Q8SX78	10	40		
 Q8SX81	fly	FBgn0052350	Vps11	Q8SX81	6	35	Vacuolar protein sorting-associated protein 11 homolog	
 Q8SX83	fly	FBgn0016977	spen	Q8SX83	0	0	Protein split ends	
 Q8SX86	fly	FBgn0035461	ntc	Q8SX86	10	37	Protein nutcracker	
@@ -301,12 +303,14 @@ Q8SX97	fly	FBgn0036222	SdhAL	Q8SX97	6	67	Succinate dehydrogenase [ubiquinone] fl
 Q8SXB0	fly	FBgn0286071	AdamTS-A	Q8SXB0	4	17	ADAM metallopeptidase with thrombospondin type 1 motif A, is	
 Q8SXB3	fly	FBgn0052099	CG32099	Q8SXB3	0	8	L-aminoadipate-semialdehyde dehydrogenase-phosphopantetheiny	
 Q8SXC0	fly	FBgn0036759	CG5577	Q8SXC0	1	7	GH10306p	
-Q8SXC2	fly	FBgn0037955	Kyat	Q8SXC2	4	57	kynurenine--oxoglutarate transaminase (EC 2.6.1.7)	
+Q8SXC2	fly	FBgn0037955	Kyat	Q8SXC2	5	58	kynurenine--oxoglutarate transaminase (EC 2.6.1.7)	
+Q8SXC2_DROME	fly	FBgn0037955	Kyat	Q8SXC2	5	58		
 Q8SXC9	fly	FBgn0052488	CG32488	Q8SXC9	0	1	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	
 Q8SXD1	fly	FBgn0050008	CG30008	Q8SXD1	2	59	Elongation of very long chain fatty acids protein (EC 2.3.1.	
 Q8SXD4	fly	FBgn0052676	stx	Q8SXD4	2	5	Midnolin homolog (Protein stuxnet)	
 Q8SXE1	fly	FBgn0032753	CG17572	Q8SXE1	66	243	RH69521p	
-Q8SXF0	fly	FBgn0037529	mRpS9	Q8SXF0	23	245	Mitochondrial ribosomal protein S9 (RH44312p)	
+Q8SXF0	fly	FBgn0037529	mRpS9	Q8SXF0	24	246	Mitochondrial ribosomal protein S9 (RH44312p)	
+Q8SXF0_DROME	fly	FBgn0037529	mRpS9	Q8SXF0	24	246		
 Q8SXF2	fly	FBgn0039529	CG5612	Q8SXF2	0	3	RH40246p	
 Q8SXG2	fly	FBgn0262976	lawc	Q8SXG2	3	17	CG32711-PA long isoform (CG32711-PA short isoform) (GEO09706	
 Q8SXG7	fly	FBgn0031607	Secp43	Q8SXG7	10	142	tRNA selenocysteine-associated protein 1	
@@ -315,6 +319,7 @@ Q8SXH1	fly	FBgn0036352	CG14110	Q8SXH1	62	248	RE54320p
 Q8SXH7	fly	FBgn0040571	CG17193	Q8SXH7	3	13	GEO09915p1 (RE41733p)	
 Q8SXI2	fly	FBgn0267398	Yeti	Q8SXI2	4	42	Craniofacial development protein 1 (Bucentaur)	
 Q8SXK0	fly	FBgn0031419	Mterf4	Q8SXK0	4	62	RE18748p	
+Q8SXK0_DROME	fly	FBgn0031419	Mterf4	Q8SXK0	4	62		
 Q8SXK2	fly	FBgn0037526	ArgRS-m	Q8SXK2	0	25	arginine--tRNA ligase (EC 6.1.1.19) (Arginyl-tRNA synthetase	
 Q8SXL2	fly	FBgn0038147	CCHa2	Q8SXL2	48	257	Neuropeptide CCHamide-2	
 Q8SXL5	fly	FBgn0035325	CG13806	Q8SXL5	12	276	RE09177p	
@@ -322,8 +327,10 @@ Q8SXN9	fly	FBgn0286778	CG46385	Q8SXN9	5	22
 Q8SXP0	fly	FBgn0263593	Lpin	Q8SXP0	1	28	phosphatidate phosphatase (EC 3.1.3.4)	
 Q8SXP1	fly	FBgn0046294	CG12699	Q8SXP1	1	7	GH14656p	
 Q8SXP8	fly	FBgn0025790	TBPH	Q8SXP8	17	186	GH09868p (RH39704p) (TAR DNA-binding protein-43 homolog, iso	
-Q8SXQ1	fly	FBgn0036857	Aldh7A1	Q8SXQ1	4	136	aldehyde dehydrogenase (NAD(+)) (EC 1.2.1.3)	
-Q8SXQ5	fly	FBgn0030584	Grx5	Q8SXQ5	5	49	RH03087p	
+Q8SXQ1	fly	FBgn0036857	Aldh7A1	Q8SXQ1	6	139	aldehyde dehydrogenase (NAD(+)) (EC 1.2.1.3)	
+Q8SXQ1_DROME	fly	FBgn0036857	Aldh7A1	Q8SXQ1	6	139		
+Q8SXQ5	fly	FBgn0030584	Grx5	Q8SXQ5	7	51	RH03087p	
+Q8SXQ5_DROME	fly	FBgn0030584	Grx5	Q8SXQ5	7	51		
 Q8SXQ7	fly	FBgn0035977	PGRP-LF	Q8SXQ7	2	17	Peptidoglycan-recognition protein LF (PGRP-like protein)	
 Q8SXQ8	fly	FBgn0063667	meep	Q8SXQ8	0	4	Meep (EC 3.1.-.-) (RE72485p)	
 Q8SXR4	fly	FBgn0050339	CG30339	Q8SXR4	1	7	RE54230p	
@@ -339,7 +346,8 @@ Q8SXU3	fly	FBgn0034035	Gmppa	Q8SXU3	1	19	RE21160p
 Q8SXV2	fly	FBgn0051675	CG31675	Q8SXV2	0	5	RE19849p	
 Q8SXV4	fly	FBgn0032283	CG7296	Q8SXV4	7	257	RH68528p	
 Q8SXV9	fly	FBgn0030829	CG12998	Q8SXV9	24	243	RH61745p	
-Q8SXX0	fly	FBgn0030704	CG15916	Q8SXX0	4	45	RH08992p	
+Q8SXX0	fly	FBgn0030704	CG15916	Q8SXX0	5	45	RH08992p	
+Q8SXX0_DROME	fly	FBgn0030704	CG15916	Q8SXX0	5	45		
 Q8SXX1	fly	FBgn0039924	PIP4K	Q8SXX1	3	36	Phosphatidylinositol 5-phosphate 4-kinase, isoform A (Phosph	
 Q8SXX2	fly	FBgn0032536	Ance-3	Q8SXX2	1	10	Angiotensin-converting enzyme (EC 3.4.-.-)	
 Q8SXX4	fly	FBgn0261555	CG42673	Q8SXX4	0	5		
@@ -373,7 +381,7 @@ Q8SY72	fly	FBgn0053169	CG33169	Q8SY72	9	26	Single-pass membrane and coiled-coil 
 Q8SY76	fly	FBgn0040775	CG12158	Q8SY76	28	273	RH45738p	
 Q8SY96	fly	FBgn0052857	CG32857	Q8SY96	1	2	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	
 Q8SY96	fly	FBgn0053502	CG33502	Q8SY96	1	3	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	
-Q8SY96	fly	FBgn0285970	CG32500	Q8SY96	3	9	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	
+Q8SY96	fly	FBgn0285970	CG32500	Q8SY96	8	15	NFU1 iron-sulfur cluster scaffold homolog, mitochondrial	
 Q8SYA4	fly	FBgn0034330	BomS4	Q8SYA4	60	276	Bomanin short 4 (FI01448p) (GEO12609p1) (RH09147p)	
 Q8SYC1	fly	FBgn0263030	CG43325	Q8SYC1	1	5	GEO08067p1 (RE70477p)	
 Q8SYC3	fly	FBgn0058006	CG40006	Q8SYC3	0	21	RE68569p	
@@ -387,6 +395,7 @@ Q8SYG2	fly	FBgn0027055	CSN3	Q8SYG2	11	48	COP9 signalosome complex subunit 3 (Dch
 Q8SYG3	fly	FBgn0058045	CG40045	Q8SYG3	10	144	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	
 Q8SYH1	fly	FBgn0052442	Arv1	Q8SYH1	3	63	Protein ARV	
 Q8SYJ2	fly	FBgn0052230	ND-MLRQ	Q8SYJ2	7	73	GEO09626p1 (NADH dehydrogenase (Ubiquinone) MLRQ subunit, is	
+Q8SYJ2_DROME	fly	FBgn0052230	ND-MLRQ	Q8SYJ2	7	73		
 Q8SYJ9	fly	FBgn0061361	Tcs1	Q8SYJ9	15	381	Threonylcarbamoyl-AMP synthase (EC 2.7.7.87)	
 Q8SYK4	fly	FBgn0040602	bbn	Q8SYK4	0	4	RE55691p	
 Q8SYK5	fly	FBgn0031434	insv	Q8SYK5	4	11	Protein insensitive	
@@ -398,7 +407,8 @@ Q8SYM9	fly	FBgn0036775	Polr3D	Q8SYM9	82	464	FI04119p (RE52148p) (RNA polymerase 
 Q8SYN0	fly	FBgn0040351	CG11638	Q8SYN0	4	18	RE52086p	
 Q8SYP1	fly	FBgn0051323	CG31323	Q8SYP1	0	4	RE49668p	
 Q8SYP8	fly	FBgn0033348	Spt	Q8SYP8	7	24	RE47911p (Spitting image)	
-Q8SYP9	fly	FBgn0287187	mRpS5	Q8SYP9	21	388	Small ribosomal subunit protein uS5m (28S ribosomal protein 	
+Q8SYP9	fly	FBgn0287187	mRpS5	Q8SYP9	23	388	Small ribosomal subunit protein uS5m (28S ribosomal protein 	
+Q8SYP9_DROME	fly	FBgn0287187	mRpS5	Q8SYP9	23	388		
 Q8SYQ4	fly	FBgn0290559	gvl	Q8SYQ4	33	245	grooveless	
 Q8SYQ8	fly	FBgn0033100	CG3420	Q8SYQ8	2	26	RE40412p	
 Q8SYR3	fly	FBgn0011305	Rsf1	Q8SYR3	3	35	RE39606p (Repressor splicing factor 1, isoform B)	
@@ -411,7 +421,7 @@ Q8SYY6	fly	FBgn0047135	CG32276	Q8SYY6	3	22	GEO09675p1 (RE27904p)
 Q8SYY7	fly	FBgn0044011	Spn43Ad	Q8SYY7	27	291	RE27547p (Serpin 43Ad)	
 Q8SZ13	fly	FBgn0036395	BEAF-25	Q8SZ13	53	586	RE24163p	
 Q8SZ15	fly	FBgn0034307	CG10914	Q8SZ15	2	123	RE23670p	
-Q8SZ16	fly	FBgn0038437	Sdhaf3	Q8SZ16	3	23	Succinate dehydrogenase assembly factor 3, mitochondrial (SD	
+Q8SZ16	fly	FBgn0038437	Sdhaf3	Q8SZ16	4	25	Succinate dehydrogenase assembly factor 3, mitochondrial (SD	
 Q8SZ23	fly	FBgn0034011	CG8160	Q8SZ23	9	244	RE23041p	
 Q8SZ30	fly	FBgn0003482	spn-D	Q8SZ30	4	49	DNA repair protein RAD51 homolog 3	
 Q8SZ38	fly	FBgn0035257	CG12011	Q8SZ38	21	247	RE18076p	
@@ -423,7 +433,7 @@ Q8SZ72	fly	FBgn0033763	CG8646	Q8SZ72	27	251	RE14504p
 Q8SZ78	fly	FBgn0039818	Mayo	Q8SZ78	1	13	RE14222p	
 Q8SZ87	fly	FBgn0031601	Dim1	Q8SZ87	9	90	Thioredoxin-like protein	
 Q8SZA1	fly	FBgn0039820	CG15554	Q8SZA1	23	243	GEO07330p1 (RE10288p)	
-Q8SZA8	fly	FBgn0035529	Fdx2	Q8SZA8	5	74	Adrenodoxin-like protein 2, mitochondrial (Ferredoxin-2)	
+Q8SZA8	fly	FBgn0035529	Fdx2	Q8SZA8	9	78	Adrenodoxin-like protein 2, mitochondrial (Ferredoxin-2)	
 Q8SZB7	fly	FBgn0047178	CG32147	Q8SZB7	1	4	RE07960p	
 Q8SZC2	fly	FBgn0050411	CG30411	Q8SZC2	0	2	GEO07280p1 (RE06996p)	
 Q8SZF4	fly	FBgn0033115	Spn42De	Q8SZF4	12	307	RE02548p (Serpin 42De, isoform A)	

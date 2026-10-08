@@ -1,7 +1,9 @@
 Q5P991	zebrafish	Q5P991	st6galnac1.2	Q5P991	0	1	alpha-N-acetylgalactosaminide alpha-2,6-sialyltransferase	
-Q5PNM7	zebrafish	Q5PNM7	timm29	Q5PNM7	2	11	Mitochondrial import inner membrane translocase subunit Tim2	
-Q5PNM8	zebrafish	Q5PNM8	slc25a23b	Q5PNM8	0	98	Calcium-binding mitochondrial carrier protein SCaMC-3b	
-Q5PNN8	zebrafish	Q5PNN8	hint3	Q5PNN8	0	2	Adenosine 5'-monophosphoramidase HINT3	
+Q5PNM7	zebrafish	Q5PNM7	timm29	Q5PNM7	4	12	Mitochondrial import inner membrane translocase subunit Tim2	
+Q5PNM7_DANRE	zebrafish	Q5PNM7	timm29	Q5PNM7	4	12		
+Q5PNM8	zebrafish	Q5PNM8	slc25a23b	Q5PNM8	1	99	Calcium-binding mitochondrial carrier protein SCaMC-3b	
+Q5PNM8_DANRE	zebrafish	Q5PNM8	slc25a23b	Q5PNM8	1	99		
+Q5PNN8	zebrafish	Q5PNN8	hint3	Q5PNN8	0	3	Adenosine 5'-monophosphoramidase HINT3	
 Q5PNP1	zebrafish	Q5PNP1	snx14	Q5PNP1	1	2	Sorting nexin-14	
 Q5PNP6	zebrafish	Q5PNP6	mei4	Q5PNP6	1	6	Meiosis-specific protein MEI4	
 Q5PNS0	arabidopsis-thaliana	Q5PNS0	At3g20280	Q5PNS0	0	2	PHD finger protein At3g20280	
@@ -39,6 +41,7 @@ Q5PPH7	rattus-norvegicus	Q5PPH7	Dnal4	Q5PPH7	3	53	Dynein light chain
 Q5PPI1	rattus-norvegicus	Q5PPI1	Srsf9	Q5PPI1	11	162	Serine/arginine-rich splicing factor 9	
 Q5PPI3	rattus-norvegicus	Q5PPI3	Gskip	Q5PPI3	2	6	GSK3B-interacting protein	
 Q5PPI4	rattus-norvegicus	Q5PPI4	Lamp5	Q5PPI4	1	2	Lysosome-associated membrane glycoprotein 5	
+Q5PPI6	rattus-norvegicus	Q5PPI6	Mgme1	Q5PPI6	1	1	Mitochondrial genome maintenance exonuclease 1	
 Q5PPI7	rattus-norvegicus	Q5PPI7	Lhfpl5	Q5PPI7	0	7	LHFPL tetraspan subfamily member 5 protein	
 Q5PPI8	rattus-norvegicus	Q5PPI8	Rmc1	Q5PPI8	2	2	Regulator of MON1-CCZ1 complex	
 Q5PPI9	rattus-norvegicus	Q5PPI9	Ttll1	Q5PPI9	2	14	Polyglutamylase complex subunit TTLL1	
@@ -60,6 +63,13 @@ Q5PPN7	rattus-norvegicus	Q5PPN7	Ccdc51	Q5PPN7	0	6	Mitochondrial potassium channe
 Q5PPP2	rattus-norvegicus	Q5PPP2	Ccl24	Q5PPP2	14	37	C-C motif chemokine ligand 24	
 Q5PPP3	rattus-norvegicus	Q5PPP3	Tceal1	Q5PPP3	0	3	Transcription elongation factor A protein-like 1	
 Q5PPP4	rattus-norvegicus	Q5PPP4	Mageh1	Q5PPP4	3	6	Melanoma-associated antigen H1	
+Q5PPR8	xenopus-laevis	Q5PPR8	mrpl40.S	Q5PPR8	2	2	LOC496101 protein	
+Q5PQ47	xenopus-laevis	Q5PQ47	fhit.L	Q5PQ47	1	1	Bis(5'-adenosyl)-triphosphatase	
+Q5PQ50	xenopus-laevis	Q5PQ50	nudt19	Q5PQ50	3	3	Acyl-coenzyme A diphosphatase NUDT19	
+Q5PQ57	xenopus-laevis	Q5PQ57	ndufb7.S	Q5PQ57	4	4	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7	
+Q5PQ63	xenopus-laevis	Q5PQ63	immp2l	Q5PQ63	3	3	Mitochondrial inner membrane protease subunit 2	
+Q5PQ90	xenopus-laevis	Q5PQ90	lyrm2	Q5PQ90	6	7	LYR motif-containing protein 2	
+Q5PQA6	xenopus-laevis	Q5PQA6	atad1.L	Q5PQA6	1	2	ATPase family, AAA domain containing 1 L homeolog	
 Q5PQJ5	rattus-norvegicus	Q5PQJ5	Arhgap29	Q5PQJ5	6	15	Rho GTPase-activating protein 29	
 Q5PQJ6	rattus-norvegicus	Q5PQJ6	Pycr3	Q5PQJ6	2	3	Pyrroline-5-carboxylate reductase 3	
 Q5PQK1	rattus-norvegicus	Q5PQK1	Septin10	Q5PQK1	12	16	Septin-10	
@@ -81,17 +91,17 @@ Q5PQN2	rattus-norvegicus	Q5PQN2	Bfar	Q5PQN2	1	2	Bifunctional apoptosis regulator
 Q5PQN4	rattus-norvegicus	Q5PQN4	Mdm1	Q5PQN4	0	3	Nuclear protein MDM1	
 Q5PQN5	rattus-norvegicus	Q5PQN5	Trim55	Q5PQN5	0	3	Tripartite motif-containing protein 55	
 Q5PQN6	rattus-norvegicus	Q5PQN6	Vipas39	Q5PQN6	2	14	Spermatogenesis-defective protein 39 homolog	
-Q5PQN9	rattus-norvegicus	Q5PQN9	Mrpl38	Q5PQN9	19	285	Large ribosomal subunit protein mL38	
+Q5PQN9	rattus-norvegicus	Q5PQN9	Mrpl38	Q5PQN9	20	286	Large ribosomal subunit protein mL38	
 Q5PQP1	rattus-norvegicus	Q5PQP1	Rbms1	Q5PQP1	0	3	RNA-binding motif, single-stranded-interacting protein 1	
 Q5PQP2	rattus-norvegicus	Q5PQP2	Ebag9	Q5PQP2	0	6	Receptor-binding cancer antigen expressed on SiSo cells	
 Q5PQP4	rattus-norvegicus	Q5PQP4	Cdc42ep2	Q5PQP4	0	2	Cdc42 effector protein 2	
 Q5PQP5	rattus-norvegicus	Q5PQP5	Slx1b	Q5PQP5	2	30	Structure-specific endonuclease subunit SLX1	
 Q5PQP8	rattus-norvegicus	Q5PQP8	Cuedc1	Q5PQP8	2	2	CUE domain containing 1	
 Q5PQP9	rattus-norvegicus	Q5PQP9	Armc5	Q5PQP9	0	1	Armadillo repeat-containing protein 5	
-Q5PQQ1	rattus-norvegicus	Q5PQQ1	Gtpbp3	Q5PQQ1	5	142	5-taurinomethyluridine-	
+Q5PQQ1	rattus-norvegicus	Q5PQQ1	Gtpbp3	Q5PQQ1	7	145	5-taurinomethyluridine-	
 Q5PQQ2	rattus-norvegicus	Q5PQQ2	Wbp11	Q5PQQ2	8	54	WW domain-binding protein 11	
 Q5PQQ4	rattus-norvegicus	Q5PQQ4	Pigc	Q5PQQ4	2	15	Phosphatidylinositol N-acetylglucosaminyltransferase subunit	
-Q5PQQ5	rattus-norvegicus	Q5PQQ5	Letm2	Q5PQQ5	0	119	LETM1 domain-containing protein LETM2, mitochondrial	
+Q5PQQ5	rattus-norvegicus	Q5PQQ5	Letm2	Q5PQQ5	11	130	LETM1 domain-containing protein LETM2, mitochondrial	
 Q5PQQ6	rattus-norvegicus	Q5PQQ6	Iqcg	Q5PQQ6	1	5	Dynein regulatory complex protein 9	
 Q5PQQ8	rattus-norvegicus	Q5PQQ8	Itgbl1	Q5PQQ8	0	22	Integrin beta-like protein 1	
 Q5PQQ9	rattus-norvegicus	Q5PQQ9	Cep70	Q5PQQ9	8	18	Centrosomal protein of 70 kDa	
@@ -107,7 +117,7 @@ Q5PQS6	rattus-norvegicus	Q5PQS6	Smg9	Q5PQS6	2	14	Nonsense-mediated mRNA decay fa
 Q5PQS7	rattus-norvegicus	Q5PQS7	Ccdc174	Q5PQS7	0	2	Coiled-coil domain-containing protein 174	
 Q5PQT0	rattus-norvegicus	Q5PQT0	Pask	Q5PQT0	0	1	PAS domain-containing serine/threonine-protein kinase	
 Q5PQT2	rattus-norvegicus	Q5PQT2	Mtmr3	Q5PQT2	2	5	Phosphatidylinositol-3,5-bisphosphate 3-phosphatase MTMR3	
-Q5PQT3	rattus-norvegicus	Q5PQT3	Glyat	Q5PQT3	0	1	Glycine N-acyltransferase	
+Q5PQT3	rattus-norvegicus	Q5PQT3	Glyat	Q5PQT3	5	7	Glycine N-acyltransferase	
 Q5PQV5	rattus-norvegicus	Q5PQV5	Tpbg	Q5PQV5	2	11	Trophoblast glycoprotein	
 Q5PQX0	rattus-norvegicus	Q5PQX0	Uxs1	Q5PQX0	2	163	UDP-glucuronic acid decarboxylase 1	
 Q5PQX1	rattus-norvegicus	Q5PQX1	Tor1aip1	Q5PQX1	7	13	Torsin-1A-interacting protein 1	
@@ -117,10 +127,13 @@ Q5PQZ3	zebrafish	Q5PQZ3	slc30a9	Q5PQZ3	0	4	Proton-coupled zinc antiporter SLC30A
 Q5PQZ4	zebrafish	Q5PQZ4	tfap2c	Q5PQZ4	3	8	Transcription factor AP-2 gamma	
 Q5PQZ5	zebrafish	Q5PQZ5	sox17	Q5PQZ5	2	6	SRY-box containing gene 17	
 Q5PQZ7	zebrafish	Q5PQZ7	popdc1	Q5PQZ7	2	7	Popeye domain-containing protein 1	
+Q5PQZ9	rattus-norvegicus	Q5PQZ9	Ndufc2	Q5PQZ9	4	4	NADH dehydrogenase [ubiquinone] 1 subunit C2	
 Q5PR00	rattus-norvegicus	Q5PR00	Dnajc22	Q5PR00	0	52	DnaJ homolog subfamily C member 22	
 Q5PR19	human	Q5PR19	YI024	Q5PR19	0	10	Putative UPF0607 protein LOC392364	
 Q5PR34	zebrafish	Q5PR34	slc7a2	Q5PR34	0	11	Cationic amino acid transporter 2	
 Q5PR44	zebrafish	Q5PR44	sat2a.2	Q5PR44	1	2	Diamine acetyltransferase 2a	
+Q5PR57	zebrafish	Q5PR57	wu:fc29a01	Q5PR57	1	1	Dihydroorotate dehydrogenase (quinone), mitochondrial	
+Q5PR57_DANRE	zebrafish	Q5PR57	wu:fc29a01	Q5PR57	1	1		
 Q5PR58	zebrafish	Q5PR58	armc1	Q5PR58	1	7	Armadillo repeat-containing protein 1	
 Q5PR60	zebrafish	Q5PR60	ube2kb	Q5PR60	48	129	Ubiquitin-conjugating enzyme E2 K	
 Q5PR61	zebrafish	Q5PR61	lmbrd1	Q5PR61	0	4	Lysosomal cobalamin transport escort protein LMBD1	
@@ -133,14 +146,16 @@ Q5PR92	zebrafish	Q5PR92	ift27	Q5PR92	3	29	Intraflagellar transport 27 homolog (C
 Q5PR93	zebrafish	Q5PR93	anapc4	Q5PR93	12	168	Anaphase-promoting complex subunit 4	
 Q5PR95	zebrafish	Q5PR95	tspan5b	Q5PR95	2	6	Tetraspanin	
 Q5PR99	zebrafish	Q5PR99	tectb	Q5PR99	0	2	Beta tectorin	
-Q5PRA2	zebrafish	Q5PRA2	dhtkd1	Q5PRA2	0	12	2-oxoadipate dehydrogenase complex component E1	
+Q5PRA2	zebrafish	Q5PRA2	dhtkd1	Q5PRA2	4	16	2-oxoadipate dehydrogenase complex component E1	
 Q5PRA5	zebrafish	Q5PRA5	iqcb1	Q5PRA5	8	58	IQ calmodulin-binding motif-containing protein 1	
 Q5PRB1	zebrafish	Q5PRB1	stk35l	Q5PRB1	1	23	non-specific serine/threonine protein kinase	
-Q5PRB2	zebrafish	Q5PRB2	pink1	Q5PRB2	1	5	Serine/threonine-protein (EC 2.7.11.1)	
-Q5PRB2_DANRE	zebrafish	Q5PRB2	pink1	Q5PRB2	1	5		
+Q5PRB2	zebrafish	Q5PRB2	pink1	Q5PRB2	2	6	Serine/threonine-protein (EC 2.7.11.1)	
+Q5PRB2_DANRE	zebrafish	Q5PRB2	pink1	Q5PRB2	2	6		
 Q5PRB3	zebrafish	Q5PRB3	pih1d2	Q5PRB3	4	66	PIH1 domain-containing protein 2	
 Q5PRB4	zebrafish	Q5PRB4	nxnl2	Q5PRB4	1	4	Nucleoredoxin-like 2	
 Q5PRC0	zebrafish	Q5PRC0	ch25h	Q5PRC0	0	11	Cholesterol 25-hydroxylase-like protein	
+Q5PRC4	zebrafish	Q5PRC4	im:7154190	Q5PRC4	1	1	Mitochondrial genome maintenance exonuclease 1	
+Q5PRC4_DANRE	zebrafish	Q5PRC4	im:7154190	Q5PRC4	1	1		
 Q5PRC7	zebrafish	Q5PRC7	nabp1	Q5PRC7	2	32	SOSS complex subunit B2	
 Q5PRD0	zebrafish	Q5PRD0	ywhaba	Q5PRD0	18	91	14-3-3 protein beta/alpha-A	
 Q5PRD4	zebrafish	Q5PRD4	csnk1g1	Q5PRD4	1	14	Casein kinase I isoform gamma-1	

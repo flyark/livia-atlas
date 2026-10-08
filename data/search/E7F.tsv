@@ -20,8 +20,10 @@ E7F099	zebrafish	E7F099	ribc2	E7F099	3	76	RIB43A domain with coiled-coils 2
 E7F0A1	zebrafish	E7F0A1	pfn1	E7F0A1	26	97	Profilin	
 E7F0B6	zebrafish	E7F0B6	cables2b	E7F0B6	0	2	CDK5 and ABL1 enzyme substrate 2	
 E7F0C3	zebrafish	E7F0C3	grpel2	E7F0C3	4	84	GrpE protein homolog 2, mitochondrial	
+E7F0C3_DANRE	zebrafish	E7F0C3	grpel2	E7F0C3	4	84		
 E7F0C7	zebrafish	E7F0C7	gfra4b	E7F0C7	3	3	GDNF family receptor alpha 4b	
-E7F0D0	zebrafish	E7F0D0	mrpl58	E7F0D0	21	198	Large ribosomal subunit protein mL62	
+E7F0D0	zebrafish	E7F0D0	mrpl58	E7F0D0	22	199	Large ribosomal subunit protein mL62	
+E7F0D0_DANRE	zebrafish	E7F0D0	mrpl58	E7F0D0	22	199		
 E7F0D3	zebrafish	E7F0D3	stx12l	E7F0D3	16	84	Syntaxin-12	
 E7F0D5	zebrafish	E7F0D5	pot1	E7F0D5	6	59	Protection of telomeres protein 1	
 E7F0E2	zebrafish	E7F0E2	gnpda2	E7F0E2	1	10	Glucosamine-6-phosphate isomerase	
@@ -111,7 +113,8 @@ E7F1X5	zebrafish	E7F1X5	cyldl	E7F1X5	7	32	Ubiquitin carboxyl-terminal hydrolase 
 E7F1X6	zebrafish	E7F1X6	cenpx	E7F1X6	4	63	Centromere protein X	
 E7F204	zebrafish	E7F204	b4galnt4a	E7F204	1	4	Beta-1,4-N-acetylgalactosaminyltransferase	
 E7F214	zebrafish	E7F214	si:dkey-60a16.1	E7F214	2	94	Si:dkey-60a16.1	
-E7F220	zebrafish	E7F220	dus2	E7F220	0	5	Dihydrouridine synthase 2	
+E7F220	zebrafish	E7F220	dus2	E7F220	1	6	Dihydrouridine synthase 2	
+E7F220_DANRE	zebrafish	E7F220	dus2	E7F220	1	6		
 E7F221	zebrafish	E7F221	frmd8	E7F221	2	9	FERM domain-containing protein 8	
 E7F233	zebrafish	E7F233	gask1a	E7F233	0	2	Golgi-associated kinase 1A	
 E7F236	zebrafish	E7F236	gramd1c	E7F236	1	10	GRAM domain-containing 1c	
@@ -131,7 +134,8 @@ E7F2B6	zebrafish	E7F2B6	parga	E7F2B6	0	9	poly(ADP-ribose) glycohydrolase
 E7F2D8	zebrafish	E7F2D8	whrna	E7F2D8	12	35	Whirlin	
 E7F2E1	zebrafish	E7F2E1	aff2	E7F2E1	3	12	AF4/FMR2 family member 2	
 E7F2E3	zebrafish	E7F2E3	meltf	E7F2E3	0	22	Serotransferrin	
-E7F2E7	zebrafish	E7F2E7	malsu1	E7F2E7	11	173	Mitochondrial assembly of ribosomal large subunit protein 1	
+E7F2E7	zebrafish	E7F2E7	malsu1	E7F2E7	13	174	Mitochondrial assembly of ribosomal large subunit protein 1	
+E7F2E7_DANRE	zebrafish	E7F2E7	malsu1	E7F2E7	13	174		
 E7F2F4	zebrafish	E7F2F4	abtb2a	E7F2F4	0	1	Ankyrin repeat and BTB/POZ domain-containing protein 2	
 E7F2F5	zebrafish	E7F2F5	dnajc22	E7F2F5	1	114	DnaJ homolog subfamily C member 22	
 E7F2F9	zebrafish	E7F2F9	E7F2F9_DANRE	E7F2F9	19	41	deleted	
@@ -152,7 +156,8 @@ E7F2L5	zebrafish	E7F2L5	rcan2	E7F2L5	6	22	Calcipressin-2 isoform 1
 E7F2M1	zebrafish	E7F2M1	unc119c	E7F2M1	3	8	Protein unc-119 homolog B	
 E7F2M2	zebrafish	E7F2M2	si:ch211-226m7.4	E7F2M2	5	145	Si:ch211-226m7.4	
 E7F2M5	zebrafish	E7F2M5	cd59a	E7F2M5	0	50	MAC-inhibitory protein	
-E7F2M7	zebrafish	E7F2M7	recql4	E7F2M7	7	71	ATP-dependent DNA helicase Q4	
+E7F2M7	zebrafish	E7F2M7	recql4	E7F2M7	7	72	ATP-dependent DNA helicase Q4	
+E7F2M7_DANRE	zebrafish	E7F2M7	recql4	E7F2M7	7	72		
 E7F2N1	zebrafish	E7F2N1	rhno1	E7F2N1	1	24	RAD9, HUS1, RAD1-interacting nuclear orphan protein 1	
 E7F2N2	zebrafish	E7F2N2	anpepla	E7F2N2	2	11	Aminopeptidase	
 E7F2P7	zebrafish	E7F2P7	fbxo38	E7F2P7	0	6	F-box only protein 38	
@@ -168,10 +173,13 @@ E7F2S0	zebrafish	E7F2S0	rims4	E7F2S0	0	9	Regulating synaptic membrane exocytosis
 E7F2S4	zebrafish	E7F2S4	spg7	E7F2S4	4	119	Mitochondrial inner membrane m-AAA protease component parapl	
 E7F2S5	zebrafish	E7F2S5	sned1	E7F2S5	0	9	Sushi, nidogen and EGF-like domain-containing protein 1	
 E7F2S6	zebrafish	E7F2S6	si:dkey-163m14.2	E7F2S6	3	26	Proteinase-activated receptor 1	
-E7F2S8	zebrafish	E7F2S8	acsf3	E7F2S8	2	201	Acyl-CoA synthetase family member 3	
-E7F2T5	zebrafish	E7F2T5	coa4	E7F2T5	0	1	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	
+E7F2S8	zebrafish	E7F2S8	acsf3	E7F2S8	4	205	Acyl-CoA synthetase family member 3	
+E7F2S8_DANRE	zebrafish	E7F2S8	acsf3	E7F2S8	4	205		
+E7F2T5	zebrafish	E7F2T5	coa4	E7F2T5	3	4	Cytochrome c oxidase assembly factor 4 homolog, mitochondria	
+E7F2T5_DANRE	zebrafish	E7F2T5	coa4	E7F2T5	3	4		
 E7F2T9	zebrafish	E7F2T9	ankrd33ab	E7F2T9	1	11	Ankyrin repeat domain 33Ab	
-E7F2U2	zebrafish	E7F2U2	mrpl49	E7F2U2	7	257	Large ribosomal subunit protein mL49	
+E7F2U2	zebrafish	E7F2U2	mrpl49	E7F2U2	8	258	Large ribosomal subunit protein mL49	
+E7F2U2_DANRE	zebrafish	E7F2U2	mrpl49	E7F2U2	8	258		
 E7F2W1	zebrafish	E7F2W1	aadac	E7F2W1	0	65	Neutral cholesterol ester hydrolase 1	
 E7F2W4	zebrafish	E7F2W4	epha5	E7F2W4	11	22	receptor protein-tyrosine kinase	
 E7F2W8	zebrafish	E7F2W8	antxr1c	E7F2W8	0	7	Anthrax toxin receptor 1	
@@ -212,9 +220,10 @@ E7F3I8	zebrafish	E7F3I8	dhx15	E7F3I8	17	199	ATP-dependent RNA helicase DHX15
 E7F3J0	zebrafish	E7F3J0	ppp1r9ba	E7F3J0	7	14	Neurabin-2	
 E7F3J2	zebrafish	E7F3J2	hnrnpua	E7F3J2	0	26	Heterogeneous nuclear ribonucleoprotein U isoform X1	
 E7F3K5	zebrafish	E7F3K5	chn2	E7F3K5	3	6	Chimaerin	
-E7F3K7	zebrafish	E7F3K7	tbrg4	E7F3K7	5	51	FAST kinase domain-containing protein 4 (Protein TBRG4) (Tra	
-E7F3K7_DANRE	zebrafish	E7F3K7	tbrg4	E7F3K7	5	51		
-E7F3M0	zebrafish	E7F3M0	ptcd1	E7F3M0	7	83	Pentatricopeptide repeat domain 1	
+E7F3K7	zebrafish	E7F3K7	tbrg4	E7F3K7	7	53	FAST kinase domain-containing protein 4 (Protein TBRG4) (Tra	
+E7F3K7_DANRE	zebrafish	E7F3K7	tbrg4	E7F3K7	7	53		
+E7F3M0	zebrafish	E7F3M0	ptcd1	E7F3M0	10	86	Pentatricopeptide repeat domain 1	
+E7F3M0_DANRE	zebrafish	E7F3M0	ptcd1	E7F3M0	10	86		
 E7F3M3	zebrafish	E7F3M3	arhgef37	E7F3M3	0	6	Rho guanine nucleotide exchange factor (GEF) 37	
 E7F3M4	zebrafish	E7F3M4	stambpl1	E7F3M4	4	164	AMSH-like protease isoform X3	
 E7F3N3	zebrafish	E7F3N3	c1qtnf7	E7F3N3	1	22	C1q and TNF-related 7	
@@ -318,7 +327,8 @@ E7F5K6	zebrafish	E7F5K6	obi1	E7F5K6	0	5	ORC ubiquitin ligase 1
 E7F5L4	zebrafish	E7F5L4	cdk21	E7F5L4	25	106	cyclin-dependent kinase	
 E7F5L7	zebrafish	E7F5L7	hdx	E7F5L7	0	6	Highly divergent homeobox	
 E7F5L8	zebrafish	E7F5L8	mphosph10	E7F5L8	28	160	U3 small nucleolar ribonucleoprotein protein MPP10	
-E7F5M3	zebrafish	E7F5M3	mars2	E7F5M3	0	34	Methionine--tRNA ligase, mitochondrial	
+E7F5M3	zebrafish	E7F5M3	mars2	E7F5M3	1	36	Methionine--tRNA ligase, mitochondrial	
+E7F5M3_DANRE	zebrafish	E7F5M3	mars2	E7F5M3	1	36		
 E7F5M9	zebrafish	E7F5M9	tapt1a	E7F5M9	1	1	Transmembrane anterior posterior transformation 1a	
 E7F5N8	zebrafish	E7F5N8	gse1a	E7F5N8	0	8	Genetic suppressor element 1 isoform X1	
 E7F5P0	zebrafish	E7F5P0	fbxo31	E7F5P0	2	14	F-box only protein 31 isoform X1	
@@ -352,7 +362,8 @@ E7F685	zebrafish	E7F685	snapc2	E7F685	5	34	Small nuclear RNA-activating complex,
 E7F694	zebrafish	E7F694	si:dkeyp-72e1.6	E7F694	0	1	Si:dkeyp-72e1.6	
 E7F698	zebrafish	E7F698	adam11	E7F698	1	11	ADAM metallopeptidase domain 11	
 E7F6A2	zebrafish	E7F6A2	tmco4	E7F6A2	0	3	Transmembrane and coiled-coil domain-containing protein 4 is	
-E7F6A5	zebrafish	E7F6A5	mrpl47	E7F6A5	28	451	Large ribosomal subunit protein uL29m	
+E7F6A5	zebrafish	E7F6A5	mrpl47	E7F6A5	29	452	Large ribosomal subunit protein uL29m	
+E7F6A5_DANRE	zebrafish	E7F6A5	mrpl47	E7F6A5	29	452		
 E7F6C7	zebrafish	E7F6C7	atrnl1b	E7F6C7	2	5	Attractin-like 1b	
 E7F6D0	zebrafish	E7F6D0	si:ch73-22o12.1	E7F6D0	5	23	Nectin cell adhesion molecule 3	
 E7F6D1	zebrafish	E7F6D1	irgf3	E7F6D1	0	7	Immunity-related GTPase family, f3	
@@ -364,7 +375,7 @@ E7F6E1	zebrafish	E7F6E1	ube4a	E7F6E1	32	83	Ubiquitin conjugation factor E4 A
 E7F6E2	zebrafish	E7F6E2	rbm12bb	E7F6E2	0	1	RNA binding motif protein 12B	
 E7F6E8	zebrafish	E7F6E8	draxinb	E7F6E8	1	7	Draxin isoform X1	
 E7F6E9	zebrafish	E7F6E9	erfl3	E7F6E9	0	7	ETS domain-containing transcription factor ERF	
-E7F6F7	zebrafish	E7F6F7	abcb7	E7F6F7	2	10	Iron-sulfur clusters transporter ABCB7, mitochondrial	
+E7F6F7	zebrafish	E7F6F7	abcb7	E7F6F7	4	12	Iron-sulfur clusters transporter ABCB7, mitochondrial	
 E7F6F8	zebrafish	E7F6F8	si:ch73-95l15.5	E7F6F8	1	25	Early endosome antigen 1	
 E7F6F9	zebrafish	E7F6F9	klhl3	E7F6F9	16	48	Kelch-like protein 3	
 E7F6G2	zebrafish	E7F6G2	csgalnact1a	E7F6G2	2	2	Hexosyltransferase	
@@ -394,7 +405,8 @@ E7F6T0	zebrafish	E7F6T0	cd44a	E7F6T0	16	166	CD44 antigen
 E7F6T1	zebrafish	E7F6T1	gucy1b2	E7F6T1	4	9	guanylate cyclase	
 E7F6T2	zebrafish	E7F6T2	gramd4b	E7F6T2	1	22	GRAM domain-containing 4b	
 E7F6T8	zebrafish	E7F6T8	usp37	E7F6T8	5	20	Ubiquitin carboxyl-terminal hydrolase 37	
-E7F6U3	zebrafish	E7F6U3	mettl4	E7F6U3	1	4	Methyltransferase 4, N6-adenosine	
+E7F6U3	zebrafish	E7F6U3	mettl4	E7F6U3	3	7	Methyltransferase 4, N6-adenosine	
+E7F6U3_DANRE	zebrafish	E7F6U3	mettl4	E7F6U3	3	7		
 E7F6V6	zebrafish	E7F6V6	mdp1	E7F6V6	4	20	Magnesium-dependent phosphatase 1	
 E7F6X2	zebrafish	E7F6X2	vkorc1	E7F6X2	0	5	vitamin-K-epoxide reductase (warfarin-sensitive)	
 E7F6Y4	zebrafish	E7F6Y4	si:dkey-21c1.4	E7F6Y4	3	70	Mitochondrial nucleoid-associated protein 1 isoform X4	
@@ -441,7 +453,8 @@ E7F7G6	zebrafish	E7F7G6	cdc42ep4b	E7F7G6	3	12	CDC42 effector protein (Rho GTPase
 E7F7H1	zebrafish	E7F7H1	eloal	E7F7H1	25	154	Elongin A,-like	
 E7F7H4	zebrafish	E7F7H4	kcnip4b	E7F7H4	3	27	Kv channel-interacting protein 4	
 E7F7I3	zebrafish	E7F7I3	pkn3	E7F7I3	3	32	protein kinase C	
-E7F7J1	zebrafish	E7F7J1	fdx1	E7F7J1	25	130	Adrenodoxin, mitochondrial	
+E7F7J1	zebrafish	E7F7J1	fdx1	E7F7J1	36	142	Adrenodoxin, mitochondrial	
+E7F7J1_DANRE	zebrafish	E7F7J1	fdx1	E7F7J1	36	142		
 E7F7J7	zebrafish	E7F7J7	gpnmb	E7F7J7	0	14	Glycoprotein (transmembrane) nmb	
 E7F7K0	zebrafish	E7F7K0	kcnj19b	E7F7K0	2	8	G protein-activated inward rectifier potassium channel 1	
 E7F7K2	zebrafish	E7F7K2	c1qtnf9	E7F7K2	3	24	C1q and TNF-related 9	
@@ -491,7 +504,8 @@ E7F8D4	zebrafish	E7F8D4	nradd	E7F8D4	3	14	Neurotrophin receptor-associated death
 E7F8E2	zebrafish	E7F8E2	jade2	E7F8E2	4	11	E3 ubiquitin-protein ligase Jade-2	
 E7F8E3	zebrafish	E7F8E3	zmp:0000000619	E7F8E3	0	1	Kelch-like protein 29	
 E7F8E5	zebrafish	E7F8E5	ltc4s	E7F8E5	1	1	Leukotriene C4 synthase	
-E7F8G8	zebrafish	E7F8G8	mrps12	E7F8G8	29	637	Small ribosomal subunit protein uS12m	
+E7F8G8	zebrafish	E7F8G8	mrps12	E7F8G8	30	638	Small ribosomal subunit protein uS12m	
+E7F8G8_DANRE	zebrafish	E7F8G8	mrps12	E7F8G8	30	638		
 E7F8H3	zebrafish	E7F8H3	foxl3	E7F8H3	0	1	Forkhead box L3	
 E7F8J2	zebrafish	E7F8J2	si:dkey-108k21.10	E7F8J2	1	24	Histone H1	
 E7F8M0	zebrafish	E7F8M0	LOC103910452	E7F8M0	0	9	Sialic acid-binding Ig-like lectin 7	
@@ -635,7 +649,8 @@ E7FB36	zebrafish	E7FB36	kcnh4b	E7FB36	0	4	Voltage-gated delayed rectifier potass
 E7FB37	zebrafish	E7FB37	ptbp3	E7FB37	0	22	Polypyrimidine tract-binding protein 1	
 E7FB43	zebrafish	E7FB43	gcgra	E7FB43	8	38	Glucagon receptor a	
 E7FB53	zebrafish	E7FB53	slc16a5a	E7FB53	0	2	Monocarboxylate transporter 6	
-E7FB58	zebrafish	E7FB58	fdxr	E7FB58	3	13	NADPH:adrenodoxin oxidoreductase, mitochondrial	
+E7FB58	zebrafish	E7FB58	fdxr	E7FB58	4	18	NADPH:adrenodoxin oxidoreductase, mitochondrial	
+E7FB58_DANRE	zebrafish	E7FB58	fdxr	E7FB58	4	18		
 E7FB68	zebrafish	E7FB68	pola1	E7FB68	8	76	DNA polymerase	
 E7FB74	zebrafish	E7FB74	atxn1l	E7FB74	3	14	Ataxin-1-like	
 E7FB98	zebrafish	E7FB98	ubiad1	E7FB98	2	2	UbiA prenyltransferase domain-containing protein 1	
@@ -693,7 +708,8 @@ E7FC22	zebrafish	E7FC22	rin3	E7FC22	7	12	Ras and Rab interactor 3
 E7FC32	zebrafish	E7FC32	tubb1	E7FC32	15	158	Tubulin beta chain	
 E7FC33	zebrafish	E7FC33	stag1b	E7FC33	5	19	Cohesin subunit SA	
 E7FC63	zebrafish	E7FC63	si:ch211-132f19.7	E7FC63	0	7	adenylate cyclase	
-E7FC79	zebrafish	E7FC79	pdpr	E7FC79	1	16	Pyruvate dehydrogenase phosphatase regulatory subunit, mitoc	
+E7FC79	zebrafish	E7FC79	pdpr	E7FC79	6	22	Pyruvate dehydrogenase phosphatase regulatory subunit, mitoc	
+E7FC79_DANRE	zebrafish	E7FC79	pdpr	E7FC79	6	22		
 E7FC87	zebrafish	E7FC87	xcr1b.2	E7FC87	0	2	Chemokine (C motif) receptor 1b, duplicate 2	
 E7FC90	zebrafish	E7FC90	tom1l2a	E7FC90	9	28	TOM1-like protein 2	
 E7FC91	zebrafish	E7FC91	ankrd44	E7FC91	3	11	Ankyrin repeat domain 44	
@@ -727,7 +743,7 @@ E7FCM9	zebrafish	E7FCM9	znf593	E7FCM9	8	134	Zinc finger protein 593
 E7FCN5	zebrafish	E7FCN5	itgb2	E7FCN5	18	68	Integrin beta	
 E7FCN8	zebrafish	E7FCN8	intu	E7FCN8	10	145	Protein inturned	
 E7FCP0	zebrafish	E7FCP0	tbr1a	E7FCP0	0	16	T-box brain protein 1	
-E7FCP8	zebrafish	E7FCP8	nags	E7FCP8	0	4	N-acetylglutamate synthase, mitochondrial	
+E7FCP8	zebrafish	E7FCP8	nags	E7FCP8	1	5	N-acetylglutamate synthase, mitochondrial	
 E7FCQ0	zebrafish	E7FCQ0	cnbpb	E7FCQ0	0	13	CCHC-type zinc finger, nucleic acid-binding protein b	
 E7FCS5	zebrafish	E7FCS5	nrg3b	E7FCS5	3	14	Neuregulin 3b	
 E7FCT7	zebrafish	E7FCT7	proser1	E7FCT7	0	1	Proline and serine-rich 1	
@@ -746,12 +762,14 @@ E7FCZ2	zebrafish	E7FCZ2	apnl	E7FCZ2	0	11	Actinoporin-like protein
 E7FCZ6	zebrafish	E7FCZ6	csnk2a2b	E7FCZ6	3	113	non-specific serine/threonine protein kinase	
 E7FD00	zebrafish	E7FD00	usp43b	E7FD00	7	70	ubiquitinyl hydrolase 1	
 E7FD05	zebrafish	E7FD05	si:dkey-7j14.6	E7FD05	0	1	Si:dkey-7j14.6	
-E7FD19	zebrafish	E7FD19	sco1	E7FD19	2	26	Protein SCO1 homolog, mitochondrial	
+E7FD19	zebrafish	E7FD19	sco1	E7FD19	4	27	Protein SCO1 homolog, mitochondrial	
+E7FD19_DANRE	zebrafish	E7FD19	sco1	E7FD19	4	27		
 E7FD23	zebrafish	E7FD23	si:dkey-276j7.1	E7FD23	0	13	Si:dkey-276j7.1	
 E7FD27	zebrafish	E7FD27	kcnj10a	E7FD27	13	31	ATP-sensitive inward rectifier potassium channel 10	
 E7FD62	zebrafish	E7FD62	E7FD62_DANRE	E7FD62	2	43	deleted	
 E7FD62_DANRE	zebrafish	E7FD62	E7FD62_DANRE	E7FD62	2	43	deleted	
-E7FD66	zebrafish	E7FD66	aass	E7FD66	0	11	Alpha-aminoadipic semialdehyde synthase, mitochondrial	
+E7FD66	zebrafish	E7FD66	aass	E7FD66	1	12	Alpha-aminoadipic semialdehyde synthase, mitochondrial	
+E7FD66_DANRE	zebrafish	E7FD66	aass	E7FD66	1	12		
 E7FD69	zebrafish	E7FD69	ccdc80l1	E7FD69	4	94	Coiled-coil domain-containing protein 80	
 E7FD73	zebrafish	E7FD73	ptger3	E7FD73	15	36	Prostaglandin E2 receptor EP3 subtype	
 E7FD83	zebrafish	E7FD83	sorcs2	E7FD83	2	31	VPS10 domain-containing receptor SorCS2	
@@ -794,7 +812,8 @@ E7FDV8	zebrafish	E7FDV8	arhgef12a	E7FDV8	11	17	Rho guanine nucleotide exchange f
 E7FDV9	zebrafish	E7FDV9	cars1	E7FDV9	2	13	Cysteine--tRNA ligase, cytoplasmic	
 E7FDW2	zebrafish	E7FDW2	pdzrn3b	E7FDW2	1	6	E3 ubiquitin-protein ligase PDZRN3-B	
 E7FDW4	zebrafish	E7FDW4	tbc1d12b	E7FDW4	0	7	TBC1 domain family member 12 isoform X1	
-E7FDW7	zebrafish	E7FDW7	nlrx1	E7FDW7	2	15	NLR family member X1	
+E7FDW7	zebrafish	E7FDW7	nlrx1	E7FDW7	3	16	NLR family member X1	
+E7FDW7_DANRE	zebrafish	E7FDW7	nlrx1	E7FDW7	3	16		
 E7FDW8	zebrafish	E7FDW8	tdrd7b	E7FDW8	0	21	Tudor domain-containing protein 7B	
 E7FDX3	zebrafish	E7FDX3	ndufaf4	E7FDX3	1	30	NADH dehydrogenase	
 E7FDX5	zebrafish	E7FDX5	lbx1b	E7FDX5	1	2	Transcription factor LBX1b	
@@ -861,6 +880,8 @@ E7FEU9	zebrafish	E7FEU9	paqr4b	E7FEU9	0	1	Progestin and adipoQ receptor family m
 E7FEV1	zebrafish	E7FEV1	taf6l	E7FEV1	23	133	TAF6-like RNA polymerase II p300/CBP-associated factor-assoc	
 E7FEV5	zebrafish	E7FEV5	cyld	E7FEV5	10	42	Ubiquitin carboxyl-terminal hydrolase CYLD	
 E7FEV9	zebrafish	E7FEV9	havcr2	E7FEV9	1	14	Hepatitis A virus cellular receptor 1 homolog isoform X1	
+E7FEW2	zebrafish	E7FEW2	mtpap	E7FEW2	1	3	Mitochondrial poly(A) polymerase	
+E7FEW2_DANRE	zebrafish	E7FEW2	mtpap	E7FEW2	1	3		
 E7FEW4	zebrafish	E7FEW4	cabp5a	E7FEW4	2	34	Calcium-binding protein 5a	
 E7FEW6	zebrafish	E7FEW6	tesk1b	E7FEW6	8	75	dual-specificity kinase (EC 2.7.12.1)	
 E7FEW6_DANRE	zebrafish	E7FEW6	tesk1b	E7FEW6	8	75		
@@ -887,10 +908,13 @@ E7FF78	zebrafish	E7FF78	arhgef25b	E7FF78	12	15	Rho guanine nucleotide exchange f
 E7FF79	zebrafish	E7FF79	ghrhrb	E7FF79	5	20	Growth hormone-releasing hormone receptor b	
 E7FFA5	zebrafish	E7FFA5	ace	E7FFA5	1	49	Angiotensin-converting enzyme	
 E7FFB0	zebrafish	E7FFB0	hmgxb3	E7FFB0	0	5	HMG box domain-containing 3	
-E7FFC4	zebrafish	E7FFC4	aifm2	E7FFC4	0	58	Ferroptosis suppressor protein 1	
+E7FFC4	zebrafish	E7FFC4	aifm2	E7FFC4	1	61	Ferroptosis suppressor protein 1	
+E7FFC4_DANRE	zebrafish	E7FFC4	aifm2	E7FFC4	1	61		
 E7FFC9	zebrafish	E7FFC9	tmem240a	E7FFC9	0	57	Transmembrane protein 240	
 E7FFE0	zebrafish	E7FFE0	nelfa	E7FFE0	9	72	Negative elongation factor A	
 E7FFE7	zebrafish	E7FFE7	moto	E7FFE7	0	4	Meiosis-specific coiled-coil domain-containing protein MEIOC	
+E7FFE8	zebrafish	E7FFE8	nt5dc3	E7FFE8	1	1	5'-nucleotidase domain-containing 3	
+E7FFE8_DANRE	zebrafish	E7FFE8	nt5dc3	E7FFE8	1	1		
 E7FFE9	zebrafish	E7FFE9	kcna1a	E7FFE9	1	163	Potassium voltage-gated channel subfamily A member 1	
 E7FFF2	zebrafish	E7FFF2	ccr8.2	E7FFF2	13	35	C-C chemokine receptor type 5	
 E7FFF8	zebrafish	E7FFF8	sh3bp1	E7FFF8	0	3	SH3 domain-binding protein 1	
@@ -960,7 +984,8 @@ E7FGJ0	zebrafish	E7FGJ0	adam15	E7FGJ0	1	1	ADAM metallopeptidase domain 15
 E7FGJ1	zebrafish	E7FGJ1	skilb	E7FGJ1	9	13	SKI-like proto-oncogene b	
 E7FGJ9	zebrafish	E7FGJ9	slc16a12a	E7FGJ9	0	2	Monocarboxylate transporter 12	
 E7FGK0	zebrafish	E7FGK0	osbpl5	E7FGK0	0	2	Oxysterol-binding protein	
-E7FGK5	zebrafish	E7FGK5	tmem70	E7FGK5	0	7	Transmembrane protein 70	
+E7FGK5	zebrafish	E7FGK5	tmem70	E7FGK5	4	11	Transmembrane protein 70	
+E7FGK5_DANRE	zebrafish	E7FGK5	tmem70	E7FGK5	4	11		
 E7FGK7	zebrafish	E7FGK7	cacng4b	E7FGK7	6	85	Voltage-dependent calcium channel gamma-4 subunit	
 E7FGK9	zebrafish	E7FGK9	ogdhl	E7FGK9	1	24	2-oxoglutarate dehydrogenase-like, mitochondrial	
 E7FGL0	zebrafish	E7FGL0	timeless	E7FGL0	6	89	Protein timeless homolog	

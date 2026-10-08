@@ -604,8 +604,8 @@ HOMEODOMAIN-ONLY	zebrafish	Q8AYB8	hopx	Q8AYB8	2	4	Homeodomain-only protein	w
 HOMEOPROTEIN	human	P35680	HNF1B	P35680	40	253	Hepatocyte nuclear factor 1-beta (HNF-1-beta) (HNF-1B) (Home	w
 HOMEOPROTEIN	human	Q15699	ALX1	Q15699	140	398	ALX homeobox protein 1 (Cartilage homeoprotein 1) (CART-1)	w
 HOMEOSTASIS	fly	FBgn0038332	CG6136	Q9VF71	0	1	Copper homeostasis protein cutC homolog	w
-HOMEOSTASIS	fly	FBgn0039751	CG1983	Q9VA97	0	9	Pyridoxal phosphate homeostasis protein (PLP homeostasis pro	w
-HOMEOSTASIS	human	O94903	PLPBP	O94903	10	123	Pyridoxal phosphate homeostasis protein (PLP homeostasis pro	w
+HOMEOSTASIS	fly	FBgn0039751	CG1983	Q9VA97	2	11	Pyridoxal phosphate homeostasis protein (PLP homeostasis pro	w
+HOMEOSTASIS	human	O94903	PLPBP	O94903	19	132	Pyridoxal phosphate homeostasis protein (PLP homeostasis pro	w
 HOMEOSTASIS	human	Q5JW98	CALHM4	Q5JW98	1	50	Calcium homeostasis modulator protein 4 (Protein FAM26D)	w
 HOMEOSTASIS	human	Q5R3K3	CALHM6	Q5R3K3	0	39	Calcium homeostasis modulator protein 6 (Protein FAM26F)	w
 HOMEOSTASIS	human	Q86XJ0	CALHM3	Q86XJ0	1	39	Calcium homeostasis modulator protein 3 (Protein A)	w
@@ -615,11 +615,11 @@ HOMEOSTASIS	human	Q8N5C1	CALHM5	Q8N5C1	0	48	Calcium homeostasis modulator protei
 HOMEOSTASIS	human	Q9HA72	CALHM2	Q9HA72	0	54	Calcium homeostasis modulator protein 2 (Protein FAM26B)	w
 HOMEOSTASIS	human	Q9NTM9	CUTC	Q9NTM9	0	63	Copper homeostasis protein cutC homolog	w
 HOMEOSTASIS	worm	P34630	cutc-1	P34630	0	1	Copper homeostasis protein cutC homolog	w
-HOMEOSTASIS	worm	P52057	F09E5.8	P52057	0	5	Pyridoxal phosphate homeostasis protein	w
-HOMEOSTASIS	yeast	P38197	YBL036C	P38197	0	11	Pyridoxal phosphate homeostasis protein	w
+HOMEOSTASIS	worm	P52057	F09E5.8	P52057	1	6	Pyridoxal phosphate homeostasis protein	w
+HOMEOSTASIS	yeast	P38197	YBL036C	P38197	1	13	Pyridoxal phosphate homeostasis protein	w
 HOMEOSTASIS	yeast	Q12067	ATX2	Q12067	0	2	Metal homeostasis factor ATX2	w
 HOMEOSTASIS	zebrafish	A0A8M1PAQ9	cherp	A0A8M1PAQ9	10	41	Calcium homeostasis endoplasmic reticulum protein	w
-HOMEOSTASIS	zebrafish	B1H1M3	plpbp	B1H1M3	0	1	Pyridoxal phosphate homeostasis protein	w
+HOMEOSTASIS	zebrafish	B1H1M3	plpbp	B1H1M3	4	5	Pyridoxal phosphate homeostasis protein	w
 HOMEOSTASIS-ASSOCIATED	human	Q6UWT2	ENHO	Q6UWT2	20	127	Adropin (Energy homeostasis-associated protein)	w
 HOMEOSTATIS	yeast	P38356	BSD2	P38356	3	17	Metal homeostatis protein BSD2	w
 HOMEOTIC	fly	FBgn0000139	ash2	Q94545	40	479	Set1/Ash2 histone methyltransferase complex subunit ASH2 (Ab	w
@@ -671,8 +671,8 @@ HOMOCYSTEINE-INDUCED	fly	FBgn0031950	Herp	Q9VLW9	1	8	Homocysteine-induced endopl
 HOMOCYSTEINE-RESPONSIVE	human	Q15011	HERPUD1	Q15011	16	63	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
 HOMOCYSTEINE-RESPONSIVE	human	Q9BSE4	HERPUD2	Q9BSE4	6	33	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
 HOMOCYSTEINE-RESPONSIVE	zebrafish	Q6NYI0	herpud2	Q6NYI0	0	5	Homocysteine-responsive endoplasmic reticulum-resident ubiqu	w
-HOMOCYSTINURIA	human	Q9H3L0	MMADHC	Q9H3L0	5	66	Cobalamin trafficking protein CblD (CblD) (Methylmalonic aci	w
-HOMOCYSTINURIA	worm	Q9XWC9	mmad-1	Q9XWC9	2	6	Methylmalonic aciduria and homocystinuria type D homolog, mi	w
+HOMOCYSTINURIA	human	Q9H3L0	MMADHC	Q9H3L0	12	73	Cobalamin trafficking protein CblD (CblD) (Methylmalonic aci	w
+HOMOCYSTINURIA	worm	Q9XWC9	mmad-1	Q9XWC9	3	7	Methylmalonic aciduria and homocystinuria type D homolog, mi	w
 HOMODIMERISATION	worm	Q21746	sgt-1	Q21746	18	167	SGTA homodimerisation domain-containing protein	w
 HOMOGENTISATE	fly	FBgn0040211	Hgd	Q9VKJ0	0	1	Homogentisate 1,2-dioxygenase (EC 1.13.11.5) (Homogentisate 	w
 HOMOGENTISATE	human	Q93099	HGD	Q93099	3	54	Homogentisate 1,2-dioxygenase (EC 1.13.11.5) (Homogentisate 	w
@@ -716,7 +716,7 @@ HOMOLOGOUS	human	P13987	CD59	P13987	53	699	CD59 glycoprotein (1F5 antigen) (20 k
 HOMOLOGOUS	human	P42679	MATK	P42679	191	1296	Megakaryocyte-associated tyrosine-protein kinase (EC 2.7.10.	w
 HOMOLOGOUS	human	P61328	FGF12	P61328	16	200	Fibroblast growth factor 12 (FGF-12) (Fibroblast growth fact	w
 HOMOLOGOUS	human	Q15386	UBE3C	Q15386	14	209	Ubiquitin-protein ligase E3C (EC 2.3.2.26) (HECT-type ubiqui	w
-HOMOLOGOUS	human	Q16611	BAK1	Q16611	14	159	Bcl-2 homologous antagonist/killer (Apoptosis regulator BAK)	w
+HOMOLOGOUS	human	Q16611	BAK1	Q16611	18	163	Bcl-2 homologous antagonist/killer (Apoptosis regulator BAK)	w
 HOMOLOGOUS	human	Q6XPS3	TPTE2	Q6XPS3	8	118	Phosphatidylinositol 3,4,5-trisphosphate 3-phosphatase TPTE2	w
 HOMOLOGOUS	human	Q8N3J3	HROB	Q8N3J3	21	74	Homologous recombination OB-fold protein	w
 HOMOLOGOUS	human	Q8N441	FGFRL1	Q8N441	20	119	Fibroblast growth factor receptor-like 1 (FGF receptor-like 	w
@@ -728,7 +728,7 @@ HOMOLOGOUS	human	Q92914	FGF11	Q92914	43	294	Fibroblast growth factor 11 (FGF-11)
 HOMOLOGOUS	human	Q92915	FGF14	Q92915	9	62	Fibroblast growth factor 14 (FGF-14) (Fibroblast growth fact	w
 HOMOLOGOUS	human	Q96BS2	TESC	Q96BS2	11	198	Calcineurin B homologous protein 3 (Tescalcin) (TSC)	w
 HOMOLOGOUS	human	Q99653	CHP1	Q99653	23	224	Calcineurin B homologous protein 1 (Calcineurin B-like prote	w
-HOMOLOGOUS	human	Q9BRQ8	AIFM2	Q9BRQ8	6	122	Ferroptosis suppressor protein 1 (FSP1) (EC 1.6.5.-) (Apopto	w
+HOMOLOGOUS	human	Q9BRQ8	AIFM2	Q9BRQ8	16	132	Ferroptosis suppressor protein 1 (FSP1) (EC 1.6.5.-) (Apopto	w
 HOMOLOGOUS	human	Q9NZC4	EHF	Q9NZC4	47	363	ETS homologous factor (hEHF) (ETS domain-containing transcri	w
 HOMOLOGOUS	human	Q9P0K8	FOXJ2	Q9P0K8	15	129	Forkhead box protein J2 (Fork head homologous X)	w
 HOMOLOGOUS	human	Q9UKB1	FBXW11	Q9UKB1	90	595	F-box/WD repeat-containing protein 11 (F-box and WD repeats 	w
@@ -851,7 +851,7 @@ HOMOLOGY	worm	O44150	C49A9.6	O44150	0	2	MATH (Meprin-associated Traf homology) d
 HOMOLOGY	worm	O45180	CELE_K07H8.9	O45180	0	1	K Homology domain-containing protein	w
 HOMOLOGY	worm	O45420	F31D4.5	O45420	0	1	Pleckstrin homology domain-containing family D member 1	w
 HOMOLOGY	worm	O62236	syx-7	O62236	7	59	t-SNARE coiled-coil homology domain-containing protein	w
-HOMOLOGY	worm	O62387	syx-17	O62387	5	57	t-SNARE coiled-coil homology domain-containing protein	w
+HOMOLOGY	worm	O62387	syx-17	O62387	5	58	t-SNARE coiled-coil homology domain-containing protein	w
 HOMOLOGY	worm	O76413	syx-18	O76413	18	57	t-SNARE coiled-coil homology domain-containing protein	w
 HOMOLOGY	worm	P91027	chdp-1	P91027	0	9	Calponin homology domain-containing protein	w
 HOMOLOGY	worm	P91393	fubl-4	P91393	0	9	K Homology domain-containing protein	w

@@ -9,11 +9,11 @@ LYAR	mus-musculus	Q08288	Lyar	Q08288	20	115	Cell growth-regulating nucleolar pro
 LYAR	rattus-norvegicus	Q6AYK5	Lyar	Q6AYK5	40	261	Cell growth-regulating nucleolar protein	
 LYAR_HUMAN	human	Q9NX58	LYAR	Q9NX58	126	742		
 LYASE	fly	FBgn0010591	Sply	Q9V7Y2	2	94	Sphingosine-1-phosphate lyase (S1PL) (SP-lyase) (SPL) (EC 4.	w
-LYASE	fly	FBgn0020236	Acly	Q7KN85	0	162	ATP-citrate synthase (EC 2.3.3.8) (ATP-citrate (pro-S-)-lyas	w
-LYASE	fly	FBgn0027864	Ogg1	Q9V3I8	0	18	N-glycosylase/DNA lyase (dOgg1) [Includes: 8-oxoguanine DNA 	w
+LYASE	fly	FBgn0020236	Acly	Q7KN85	1	163	ATP-citrate synthase (EC 2.3.3.8) (ATP-citrate (pro-S-)-lyas	w
+LYASE	fly	FBgn0027864	Ogg1	Q9V3I8	8	26	N-glycosylase/DNA lyase (dOgg1) [Includes: 8-oxoguanine DNA 	w
 LYASE	fly	FBgn0031877	Hmgcl	Q9VM58	1	32	hydroxymethylglutaryl-CoA lyase (EC 4.1.3.4)	w
 LYASE	fly	FBgn0032076	Argl	Q9VLG9	0	43	Argininosuccinate lyase, isoform B (Argininosuccinate lyase,	w
-LYASE	fly	FBgn0032907	Nthl1	Q9VIH0	10	75	Endonuclease III homolog (EC 3.2.2.-) (EC 4.2.99.18) (Bifunc	w
+LYASE	fly	FBgn0032907	Nthl1	Q9VIH0	14	79	Endonuclease III homolog (EC 3.2.2.-) (EC 4.2.99.18) (Bifunc	w
 LYASE	fly	FBgn0034488	Hacl	Q7K3B7	1	23	2-hydroxyacyl-CoA lyase (EC 4.1.2.63)	w
 LYASE	fly	FBgn0038467	Adsl	Q9VEP6	0	121	Adenylosuccinate lyase (ASL) (EC 4.3.2.2) (Adenylosuccinase)	w
 LYASE	fly	FBgn0051812	Tsen2	Q8IP11	4	26	tRNA-intron lyase (EC 4.6.1.16)	w
@@ -21,21 +21,21 @@ LYASE	fly	FBgn0262728	Pal2	Q9W1L5	54	247	Peptidyl-alpha-hydroxyglycine alpha-ami
 LYASE	fly	FBgn0283450	Glo1	A1Z6X6	1	42	lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Keto	w
 LYASE	fly	FBgn0283510	Pal1	Q9V5E1	478	2388	Peptidyl-alpha-hydroxyglycine alpha-amidating lyase 1 (EC 4.	w
 LYASE	human	A1L0T0	HACL2	A1L0T0	8	213	2-hydroxyacyl-CoA lyase 2 (EC 4.1.2.-) (Acetolactate synthas	w
-LYASE	human	O15527	OGG1	O15527	3	42	N-glycosylase/DNA lyase [Includes: 8-oxoguanine DNA glycosyl	w
+LYASE	human	O15527	OGG1	O15527	26	64	N-glycosylase/DNA lyase [Includes: 8-oxoguanine DNA glycosyl	w
 LYASE	human	O95470	SGPL1	O95470	3	240	Sphingosine-1-phosphate lyase 1 (S1PL) (SP-lyase 1) (SPL 1) 	w
 LYASE	human	P04424	ASL	P04424	0	56	Argininosuccinate lyase (ASAL) (EC 4.3.2.1) (Arginosuccinase	w
 LYASE	human	P05093	CYP17A1	P05093	2	63	Steroid 17-alpha-hydroxylase/17,20 lyase (EC 1.14.14.19) (17	w
-LYASE	human	P06746	POLB	P06746	6	113	DNA polymerase beta (EC 2.7.7.7) (5'-deoxyribose-phosphate l	w
+LYASE	human	P06746	POLB	P06746	17	125	DNA polymerase beta (EC 2.7.7.7) (5'-deoxyribose-phosphate l	w
 LYASE	human	P12956	XRCC6	P12956	63	756	DNA repair protein Ku70 (EC 4.2.99.18) (EC 5.6.2.4) (5'-deox	w
 LYASE	human	P30566	ADSL	P30566	1	195	Adenylosuccinate lyase (ADSL) (ASL) (EC 4.3.2.2) (Adenylosuc	w
-LYASE	human	P35914	HMGCL	P35914	6	130	Hydroxymethylglutaryl-CoA lyase, mitochondrial (HL) (HMG-CoA	w
+LYASE	human	P35914	HMGCL	P35914	7	131	Hydroxymethylglutaryl-CoA lyase, mitochondrial (HL) (HMG-CoA	w
 LYASE	human	P53396	ACLY	P53396	4	283	ATP-citrate synthase (EC 2.3.3.8) (ATP-citrate (pro-S-)-lyas	w
-LYASE	human	P53701	HCCS	P53701	22	149	Holocytochrome c-type synthase (EC 4.4.1.17) (Cytochrome c-t	w
-LYASE	human	P54098	POLG	P54098	12	154	DNA polymerase subunit gamma-1 (EC 2.7.7.7) (3'-5' exodeoxyr	w
-LYASE	human	P78549	NTHL1	P78549	9	108	Endonuclease III-like protein 1 (hNTH1) (EC 3.2.2.-) (EC 4.2	w
+LYASE	human	P53701	HCCS	P53701	23	150	Holocytochrome c-type synthase (EC 4.4.1.17) (Cytochrome c-t	w
+LYASE	human	P54098	POLG	P54098	13	155	DNA polymerase subunit gamma-1 (EC 2.7.7.7) (3'-5' exodeoxyr	w
+LYASE	human	P78549	NTHL1	P78549	23	122	Endonuclease III-like protein 1 (hNTH1) (EC 3.2.2.-) (EC 4.2	w
 LYASE	human	Q04760	GLO1	Q04760	7	200	Lactoylglutathione lyase (EC 4.4.1.5) (Aldoketomutase) (Glyo	w
 LYASE	human	Q3LXA3	TKFC	Q3LXA3	2	125	Triokinase/FMN cyclase (Bifunctional ATP-dependent dihydroxy	w
-LYASE	human	Q8N0X4	CLYBL	Q8N0X4	0	114	Citramalyl-CoA lyase, mitochondrial (EC 4.1.3.25) ((3S)-maly	w
+LYASE	human	Q8N0X4	CLYBL	Q8N0X4	2	116	Citramalyl-CoA lyase, mitochondrial (EC 4.1.3.25) ((3S)-maly	w
 LYASE	human	Q8TAT5	NEIL3	Q8TAT5	7	226	Endonuclease 8-like 3 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
 LYASE	human	Q8TB92	HMGCLL1	Q8TB92	2	58	3-hydroxy-3-methylglutaryl-CoA lyase, cytoplasmic (EC 4.1.3.	w
 LYASE	human	Q969S2	NEIL2	Q969S2	5	158	Endonuclease 8-like 2 (EC 3.2.2.-) (EC 4.2.99.18) (DNA glyco	w
@@ -57,12 +57,12 @@ LYASE	yeast	P04076	ARG4	P04076	0	6	Argininosuccinate lyase	w
 LYASE	yeast	P28240	ICL1	P28240	0	12	Isocitrate lyase	w
 LYASE	yeast	P32459	DAL3	P32459	4	184	Ureidoglycolate lyase	w
 LYASE	yeast	P39994	PXP1	P39994	1	9	2-hydroxyacyl-CoA lyase	w
-LYASE	yeast	P53397	OGG1	P53397	1	10	N-glycosylase/DNA lyase	w
+LYASE	yeast	P53397	OGG1	P53397	8	17	N-glycosylase/DNA lyase	w
 LYASE	yeast	Q03266	ABZ2	Q03266	1	6	Aminodeoxychorismate lyase	w
 LYASE	yeast	Q05567	DPL1	Q05567	0	5	Sphingosine-1-phosphate lyase	w
 LYASE	yeast	Q05911	ADE13	Q05911	0	13	Adenylosuccinate lyase	w
 LYASE	yeast	Q12031	ICL2	Q12031	0	4	Mitochondrial 2-methylisocitrate lyase ICL2	w
-LYASE	zebrafish	A0A8N7V0N6	ogg1	A0A8N7V0N6	1	18	N-glycosylase/DNA lyase	w
+LYASE	zebrafish	A0A8N7V0N6	ogg1	A0A8N7V0N6	15	33	N-glycosylase/DNA lyase	w
 LYASE	zebrafish	A8WFT4	scly	A8WFT4	0	25	Selenocysteine lyase	w
 LYASE	zebrafish	A8WG57	hmgcll1	A8WG57	0	16	3-hydroxy-3-methylglutaryl-CoA lyase, cytoplasmic	w
 LYASE	zebrafish	F1R293	adsl	F1R293	0	2	Adenylosuccinate lyase	w

@@ -9,7 +9,7 @@ GLR-6	worm	Q8MXV8	glr-6	Q8MXV8	3	8	Glutamate receptor ionotropic, kainate 2
 GLR-7	worm	A0A1T5HUM0	glr-7	A0A1T5HUM0	2	2	GLutamate Receptor family (AMPA)	
 GLR-9	worm	Q9XUB4	glr-9	Q9XUB4	0	1	Solute-binding protein family 3/N-terminal domain-containing	
 GLR1	candida-albicans-237561	Q59NQ5	GLR1	Q59NQ5	0	41	Glutathione reductase	
-GLR1	yeast	P41921	GLR1	P41921	0	40	Glutathione reductase	
+GLR1	yeast	P41921	GLR1	P41921	1	41	Glutathione reductase	
 GLR1.1	arabidopsis-thaliana	Q9M8W7	GLR1.1	Q9M8W7	9	12	Glutamate receptor 1.1	
 GLR1.2	arabidopsis-thaliana	Q9LV72	GLR1.2	Q9LV72	0	3	Glutamate receptor 1.2	
 GLR1.3	arabidopsis-thaliana	Q9FH75	GLR1.3	Q9FH75	7	8	Glutamate receptor 1.3	
@@ -65,19 +65,25 @@ GLRX-3	worm	H2KZJ5	glrx-3	H2KZJ5	3	15	Glutaredoxin 3
 GLRX-5	worm	Q9XTU9	glrx-5	Q9XTU9	3	19	Glutaredoxin-related protein 5, mitochondrial	
 GLRX-PS16	rattus-norvegicus	Q6AY00	Glrx-ps16	Q6AY00	1	8	Glutaredoxin-1	
 GLRX1_HUMAN	human	P35754	GLRX	P35754	8	144		
-GLRX2	human	Q9NS18	GLRX2	Q9NS18	7	81	Glutaredoxin-2, mitochondrial	
-GLRX2	mus-musculus	Q923X4	Glrx2	Q923X4	0	18	Glutaredoxin-2, mitochondrial	
-GLRX2	rattus-norvegicus	Q6AXW1	Glrx2	Q6AXW1	0	5	Glutaredoxin-2, mitochondrial	
-GLRX2_HUMAN	human	Q9NS18	GLRX2	Q9NS18	7	81		
+GLRX2	human	Q9NS18	GLRX2	Q9NS18	10	84	Glutaredoxin-2, mitochondrial	
+GLRX2	mus-musculus	Q923X4	Glrx2	Q923X4	2	20	Glutaredoxin-2, mitochondrial	
+GLRX2	pan-troglodytes	H2R8B0	GLRX2	H2R8B0	3	3	Glutaredoxin 2	
+GLRX2	rattus-norvegicus	Q6AXW1	Glrx2	Q6AXW1	2	8	Glutaredoxin-2, mitochondrial	
+GLRX2.L	xenopus-laevis	A0A1L8GN99	glrx2.L	A0A1L8GN99	3	3	glutaredoxin-2, mitochondrial	
+GLRX2_HUMAN	human	Q9NS18	GLRX2	Q9NS18	10	84		
 GLRX3	dictyostelium-discoideum	Q86H62	glrx3	Q86H62	5	8	Glutaredoxin-3 homolog	
 GLRX3	human	O76003	GLRX3	O76003	14	236	Glutaredoxin-3 (PKC-interacting cousin of thioredoxin) (PICO	
 GLRX3	mus-musculus	Q9CQM9	Glrx3	Q9CQM9	4	35	Glutaredoxin-3	
 GLRX3	rattus-norvegicus	Q9JLZ1	Glrx3	Q9JLZ1	3	22	Glutaredoxin-3	
 GLRX3	zebrafish	Q5XJ54	glrx3	Q5XJ54	3	32	Glutaredoxin 3	
 GLRX3_HUMAN	human	O76003	GLRX3	O76003	14	236		
-GLRX5	human	Q86SX6	GLRX5	Q86SX6	13	152	Glutaredoxin-related protein 5, mitochondrial (Monothiol glu	
-GLRX5	mus-musculus	Q80Y14	Glrx5	Q80Y14	4	17	Glutaredoxin-related protein 5, mitochondrial	
-GLRX5	rattus-norvegicus	D4ADD7	Glrx5	D4ADD7	5	9	Glutaredoxin-related protein 5, mitochondrial	
-GLRX5	zebrafish	Q6PBM1	glrx5	Q6PBM1	2	7	Glutaredoxin-related protein 5, mitochondrial	
-GLRX5_HUMAN	human	Q86SX6	GLRX5	Q86SX6	13	152		
+GLRX5	human	Q86SX6	GLRX5	Q86SX6	17	156	Glutaredoxin-related protein 5, mitochondrial (Monothiol glu	
+GLRX5	mus-musculus	Q80Y14	Glrx5	Q80Y14	9	22	Glutaredoxin-related protein 5, mitochondrial	
+GLRX5	pan-troglodytes	H2Q8V8	GLRX5	H2Q8V8	8	8	Glutaredoxin 5	
+GLRX5	rattus-norvegicus	D4ADD7	Glrx5	D4ADD7	9	13	Glutaredoxin-related protein 5, mitochondrial	
+GLRX5	zebrafish	Q6PBM1	glrx5	Q6PBM1	8	13	Glutaredoxin-related protein 5, mitochondrial	
+GLRX5.L	xenopus-laevis	Q4FZP8	glrx5.L	Q4FZP8	6	6	MGC116473 protein	
+GLRX5_DANRE	zebrafish	Q6PBM1	glrx5	Q6PBM1	8	13		
+GLRX5_HUMAN	human	Q86SX6	GLRX5	Q86SX6	17	156		
+GLRX5_YEAST	yeast	Q02784	GRX5	Q02784	2	21		
 GLR_HUMAN	human	P47871	GCGR	P47871	21	257		

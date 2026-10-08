@@ -58,7 +58,7 @@ P35209	yeast	P35209	SPT21	P35209	18	232	Protein SPT21
 P35210	yeast	P35210	SPT23	P35210	1	23	Protein SPT23	
 P35212	human	P35212	GJA4	P35212	11	163	Gap junction alpha-4 protein (Connexin-37) (Cx37)	
 P35213	rattus-norvegicus	P35213	Ywhab	P35213	36	146	14-3-3 protein beta/alpha	
-P35218	human	P35218	CA5A	P35218	4	43	Carbonic anhydrase 5A, mitochondrial (EC 4.2.1.1) (Carbonate	
+P35218	human	P35218	CA5A	P35218	21	60	Carbonic anhydrase 5A, mitochondrial (EC 4.2.1.1) (Carbonate	
 P35219	human	P35219	CA8	P35219	11	94	Carbonic anhydrase-related protein (CARP) (Carbonic anhydras	
 P35220	fly	FBgn0010215	alpha-Cat	P35220	8	82	Catenin alpha	
 P35221	human	P35221	CTNNA1	P35221	28	479	Catenin alpha-1 (Alpha E-catenin) (Cadherin-associated prote	
@@ -92,7 +92,7 @@ P35259	virus	P35259	VP35	P35259	2	6	Polymerase cofactor VP35
 P35260	virus	P35260	VP40	P35260	1	6	Matrix protein VP40	
 P35268	human	P35268	RPL22	P35268	62	715	Large ribosomal subunit protein eL22 (60S ribosomal protein 	
 P35269	human	P35269	GTF2F1	P35269	128	683	General transcription factor IIF subunit 1 (General transcri	
-P35270	human	P35270	SPR	P35270	6	161	Sepiapterin reductase (SPR) (EC 1.1.1.153)	
+P35270	human	P35270	SPR	P35270	12	167	Sepiapterin reductase (SPR) (EC 1.1.1.153)	
 P35276	mus-musculus	P35276	Rab3d	P35276	5	20	Ras-related protein Rab-3D	
 P35278	mus-musculus	P35278	Rab5c	P35278	31	70	Ras-related protein Rab-5C	
 P35279	mus-musculus	P35279	Rab6a	P35279	23	104	Ras-related protein Rab-6A	
@@ -105,7 +105,7 @@ P35285	mus-musculus	P35285	Rab22a	P35285	16	29	Ras-related protein Rab-22A
 P35286	rattus-norvegicus	P35286	Rab13	P35286	8	45	Ras-related protein Rab-13	
 P35288	mus-musculus	P35288	Rab23	P35288	3	14	Ras-related protein Rab-23	
 P35289	rattus-norvegicus	P35289	Rab15	P35289	8	25	Ras-related protein Rab-15	
-P35290	mus-musculus	P35290	Rab24	P35290	7	19	Ras-related protein Rab-24	
+P35290	mus-musculus	P35290	Rab24	P35290	31	48	Ras-related protein Rab-24	
 P35292	mus-musculus	P35292	Rab17	P35292	11	34	Ras-related protein Rab-17	
 P35293	mus-musculus	P35293	Rab18	P35293	8	29	Ras-related protein Rab-18	
 P35294	mus-musculus	P35294	Rab19	P35294	6	34	Ras-related protein Rab-19	
@@ -144,7 +144,7 @@ P35374	mus-musculus	P35374	Agtr2	P35374	5	27	Type-2 angiotensin II receptor
 P35375	mus-musculus	P35375	Ptger1	P35375	2	12	Prostaglandin E2 receptor EP1 subtype	
 P35377	mus-musculus	P35377	Oprl1	P35377	11	19	Nociceptin receptor	
 P35378	mus-musculus	P35378	Fshr	P35378	4	20	Follicle-stimulating hormone receptor	
-P35381	fly	FBgn0011211	blw	P35381	10	154	ATP synthase subunit alpha, mitochondrial (Protein bellwethe	
+P35381	fly	FBgn0011211	blw	P35381	11	156	ATP synthase subunit alpha, mitochondrial (Protein bellwethe	
 P35383	mus-musculus	P35383	P2ry2	P35383	2	13	P2Y purinoceptor 2	
 P35385	mus-musculus	P35385	Hspb7	P35385	1	2	Heat shock protein beta-7	
 P35396	mus-musculus	P35396	Ppard	P35396	17	44	Peroxisome proliferator-activated receptor delta	
@@ -164,7 +164,8 @@ P35426	rattus-norvegicus	P35426	Cdk4	P35426	23	167	Cyclin-dependent kinase 4
 P35427	rattus-norvegicus	P35427	Rpl13a	P35427	50	729	Large ribosomal subunit protein uL13	
 P35428	mus-musculus	P35428	Hes1	P35428	4	23	Transcription factor HES-1	
 P35433	rattus-norvegicus	P35433	Ppat	P35433	0	6	Amidophosphoribosyltransferase	
-P35434	rattus-norvegicus	P35434	Atp5f1d	P35434	3	98	ATP synthase F(1) complex subunit delta, mitochondrial	
+P35434	rattus-norvegicus	P35434	Atp5f1d	P35434	6	101	ATP synthase F(1) complex subunit delta, mitochondrial	
+P35435	rattus-norvegicus	P35435	Atp5f1c	P35435	4	5	ATP synthase subunit gamma, mitochondrial	
 P35436	mus-musculus	P35436	Grin2a	P35436	14	109	Glutamate receptor ionotropic, NMDA 2A	
 P35438	mus-musculus	P35438	Grin1	P35438	20	180	Glutamate receptor ionotropic, NMDA 1	
 P35439	rattus-norvegicus	P35439	Grin1	P35439	23	157	Glutamate receptor ionotropic, NMDA 1	
@@ -186,7 +187,7 @@ P35467	rattus-norvegicus	P35467	S100a1	P35467	3	7	Protein S100-A1
 P35475	human	P35475	IDUA	P35475	11	140	Alpha-L-iduronidase (EC 3.2.1.76)	
 P35482	pseudomonas-aeruginosa	P35482	lapA	P35482	0	5	Alkaline phosphatase L	
 P35483	pseudomonas-aeruginosa	P35483	phoA	P35483	0	14	Alkaline phosphatase H	
-P35486	mus-musculus	P35486	Pdha1	P35486	3	48	Pyruvate dehydrogenase E1 component subunit alpha, somatic f	
+P35486	mus-musculus	P35486	Pdha1	P35486	9	52	Pyruvate dehydrogenase E1 component subunit alpha, somatic f	
 P35487	mus-musculus	P35487	Pdha2	P35487	3	12	Pyruvate dehydrogenase E1 component subunit alpha, testis-sp	
 P35492	mus-musculus	P35492	Hal	P35492	0	8	Histidine ammonia-lyase	
 P35497	yeast	P35497	SOR1	P35497	1	10	Sorbitol dehydrogenase 1	
@@ -274,7 +275,7 @@ P35689	mus-musculus	P35689	Ercc5	P35689	9	86	DNA excision repair protein ERCC-5
 P35691	yeast	P35691	TMA19	P35691	2	53	Translationally-controlled tumor protein homolog	
 P35694	glycine-max	P35694	?	P35694	1	21	Xyloglucan endotransglucosylase/hydrolase 2	
 P35700	mus-musculus	P35700	Prdx1	P35700	2	48	Peroxiredoxin-1	
-P35704	rattus-norvegicus	P35704	Prdx2	P35704	4	66	Peroxiredoxin-2	
+P35704	rattus-norvegicus	P35704	Prdx2	P35704	9	71	Peroxiredoxin-2	
 P35710	mus-musculus	P35710	Sox5	P35710	2	16	Transcription factor SOX-5	
 P35711	human	P35711	SOX5	P35711	48	239	Transcription factor SOX-5	
 P35712	human	P35712	SOX6	P35712	46	259	Transcription factor SOX-6	
@@ -294,7 +295,7 @@ P35734	yeast	P35734	ASK1	P35734	5	45	DASH complex subunit ASK1
 P35735	yeast	P35735	SFK1	P35735	0	47	Protein SFK1	
 P35736	yeast	P35736	YKL050C	P35736	0	12	Uncharacterized protein YKL050C	
 P35737	mus-musculus	P35737	H2-DMb1	P35737	11	35	Class II histocompatibility antigen, M beta 1 chain	
-P35738	rattus-norvegicus	P35738	Bckdhb	P35738	6	29	2-oxoisovalerate dehydrogenase subunit beta, mitochondrial	
+P35738	rattus-norvegicus	P35738	Bckdhb	P35738	8	31	2-oxoisovalerate dehydrogenase subunit beta, mitochondrial	
 P35739	rattus-norvegicus	P35739	Ntrk1	P35739	16	162	High affinity nerve growth factor receptor	
 P35745	rattus-norvegicus	P35745	Acyp2	P35745	0	1	Acylphosphatase-2	
 P35749	human	P35749	MYH11	P35749	8	101	Myosin-11 (Myosin heavy chain 11) (Myosin heavy chain, smoot	
@@ -333,7 +334,7 @@ P35900	human	P35900	KRT20	P35900	72	131	Keratin, type I cytoskeletal 20 (Cytoker
 P35901	mycobacterium-leprae	P35901	recA	P35901	0	79	Protein RecA	
 P35908	human	P35908	KRT2	P35908	98	520	Keratin, type II cytoskeletal 2 epidermal (Cytokeratin-2e) (	
 P35913	human	P35913	PDE6B	P35913	17	126	Rod cGMP-specific 3',5'-cyclic phosphodiesterase subunit bet	
-P35914	human	P35914	HMGCL	P35914	6	130	Hydroxymethylglutaryl-CoA lyase, mitochondrial (HL) (HMG-CoA	
+P35914	human	P35914	HMGCL	P35914	7	131	Hydroxymethylglutaryl-CoA lyase, mitochondrial (HL) (HMG-CoA	
 P35916	human	P35916	FLT4	P35916	189	1584	Vascular endothelial growth factor receptor 3 (VEGFR-3) (EC 	
 P35917	mus-musculus	P35917	Flt4	P35917	7	62	Vascular endothelial growth factor receptor 3	
 P35918	mus-musculus	P35918	Kdr	P35918	17	149	Vascular endothelial growth factor receptor 2	

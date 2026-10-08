@@ -9,7 +9,7 @@ ACID	fly	FBgn0026438	Eaat2	E1JHQ6	0	15	Amino acid transporter	w
 ACID	fly	FBgn0026439	Eaat1	O77062	4	54	Excitatory amino acid transporter 1	w
 ACID	fly	FBgn0028425	JhI-21	Q9VKC2	5	95	Amino acid transporter protein JHI-21 (Juvenile hormone Indu	w
 ACID	fly	FBgn0028841	jhamt	Q9VJK8	0	14	Juvenile hormone acid O-methyltransferase (EC 2.1.1.325) (Ju	w
-ACID	fly	FBgn0029158	Las	Q7JQW6	0	15	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
+ACID	fly	FBgn0029158	Las	Q7JQW6	1	16	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
 ACID	fly	FBgn0029762	NAAT1	Q9W4C5	0	3	Sodium-dependent nutrient amino acid transporter 1 (DmNAT1)	w
 ACID	fly	FBgn0030245	CG1637	X2JB52	0	19	Purple acid phosphatase (EC 3.1.3.2)	w
 ACID	fly	FBgn0030509	CG11162	Q9VYA2	2	46	Fatty acid hydroxylase domain-containing protein	w
@@ -49,7 +49,7 @@ ACID	fly	FBgn0283427	FASN1	B7Z001	0	49	Fatty acid synthase (EC 1.1.1.100) (EC 1.
 ACID	fly	FBgn0287184	FASN3	Q7PLB8	1	8	Fatty acid synthase 3 (EC 1.-.-.-, EC 2.3.1.41)	w
 ACID	human	A0A1B0GVQ0	SPAAR	A0A1B0GVQ0	3	12	Small regulatory polypeptide of amino acid response	w
 ACID	human	A1L3X0	ELOVL7	A1L3X0	3	75	Very long chain fatty acid elongase 7 (EC 2.3.1.199) (3-keto	w
-ACID	human	A6NK06	ACOD1	A6NK06	6	137	Cis-aconitate decarboxylase (CAD) (EC 4.1.1.6) (Aconitate de	w
+ACID	human	A6NK06	ACOD1	A6NK06	7	139	Cis-aconitate decarboxylase (CAD) (EC 4.1.1.6) (Aconitate de	w
 ACID	human	A6NNN8	SLC38A8	A6NNN8	3	26	Solute carrier family 38 member 8 (Amino acid transporter SL	w
 ACID	human	A8MPY1	GABRR3	A8MPY1	34	45	Gamma-aminobutyric acid receptor subunit rho-3 (GABA(A) rece	w
 ACID	human	A8MWK0	FADS2B	A8MWK0	0	4	Putative fatty acid desaturase 2-like protein FADS2B (Fatty 	w
@@ -64,7 +64,7 @@ ACID	human	O00767	SCD	O00767	20	179	Stearoyl-CoA desaturase (hSCD1) (EC 1.14.19.
 ACID	human	O14668	PRRG1	O14668	13	48	Transmembrane gamma-carboxyglutamic acid protein 1 (Proline-	w
 ACID	human	O14669	PRRG2	O14669	15	80	Transmembrane gamma-carboxyglutamic acid protein 2 (Proline-	w
 ACID	human	O14764	GABRD	O14764	30	142	Gamma-aminobutyric acid receptor subunit delta (GABA(A) rece	w
-ACID	human	O14832	PHYH	O14832	9	70	Phytanoyl-CoA dioxygenase, peroxisomal (EC 1.14.11.18) (Phyt	w
+ACID	human	O14832	PHYH	O14832	18	79	Phytanoyl-CoA dioxygenase, peroxisomal (EC 1.14.11.18) (Phyt	w
 ACID	human	O14842	FFAR1	O14842	25	371	Free fatty acid receptor 1 (G protein-coupled receptor 40)	w
 ACID	human	O14843	FFAR3	O14843	7	71	Free fatty acid receptor 3 (G protein-coupled receptor 41)	w
 ACID	human	O14975	SLC27A2	O14975	3	183	Long-chain fatty acid transport protein 2 (Arachidonate--CoA	w
@@ -73,7 +73,7 @@ ACID	human	O15552	FFAR2	O15552	20	262	Free fatty acid receptor 2 (G protein-coup
 ACID	human	O43174	CYP26A1	O43174	5	80	Cytochrome P450 26A1 (CYP26A1) (EC 1.14.13.-) (Cytochrome P4	w
 ACID	human	O43246	SLC7A4	O43246	0	31	Cationic amino acid transporter 4 (CAT-4) (CAT4) (Solute car	w
 ACID	human	O43314	PPIP5K2	O43314	9	101	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
-ACID	human	O43766	LIAS	O43766	4	100	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
+ACID	human	O43766	LIAS	O43766	6	102	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
 ACID	human	O60427	FADS1	O60427	2	134	Acyl-CoA (8-3)-desaturase (EC 1.14.19.44) (Delta(5) fatty ac	w
 ACID	human	O75387	SLC43A1	O75387	2	87	Large neutral amino acids transporter small subunit 3 (L-typ	w
 ACID	human	O75899	GABBR2	O75899	33	290	Gamma-aminobutyric acid type B receptor subunit 2 (GABA-B re	w
@@ -90,8 +90,8 @@ ACID	human	P10276	RARA	P10276	141	554	Retinoic acid receptor alpha (RAR-alpha) (
 ACID	human	P10826	RARB	P10826	45	112	Retinoic acid receptor beta (RAR-beta) (HBV-activated protei	w
 ACID	human	P11117	ACP2	P11117	14	126	Lysosomal acid phosphatase (LAP) (EC 3.1.3.2) (Tartrate-inhi	w
 ACID	human	P11182	DBT	P11182	12	230	Lipoamide acyltransferase component of branched-chain alpha-	w
-ACID	human	P12694	BCKDHA	P12694	13	232	2-oxoisovalerate dehydrogenase subunit alpha, mitochondrial 	w
-ACID	human	P13196	ALAS1	P13196	16	170	5-aminolevulinate synthase, non-specific, mitochondrial (ALA	w
+ACID	human	P12694	BCKDHA	P12694	15	234	2-oxoisovalerate dehydrogenase subunit alpha, mitochondrial 	w
+ACID	human	P13196	ALAS1	P13196	19	173	5-aminolevulinate synthase, non-specific, mitochondrial (ALA	w
 ACID	human	P13631	RARG	P13631	93	272	Retinoic acid receptor gamma (RAR-gamma) (Nuclear receptor s	w
 ACID	human	P13686	ACP5	P13686	17	185	Tartrate-resistant acid phosphatase type 5 (TR-AP) (EC 3.1.3	w
 ACID	human	P13716	ALAD	P13716	0	165	Delta-aminolevulinic acid dehydratase (ALADH) (EC 4.2.1.24) 	w
@@ -109,7 +109,7 @@ ACID	human	P18507	GABRG2	P18507	33	167	Gamma-aminobutyric acid receptor subunit 
 ACID	human	P19793	RXRA	P19793	118	723	Retinoic acid receptor RXR-alpha (Nuclear receptor subfamily	w
 ACID	human	P20382	PMCH	P20382	46	311	Pro-MCH [Cleaved into: Neuropeptide-glycine-glutamic acid (N	w
 ACID	human	P21953	BCKDHB	P21953	11	142	2-oxoisovalerate dehydrogenase subunit beta, mitochondrial (	w
-ACID	human	P22557	ALAS2	P22557	4	117	5-aminolevulinate synthase, erythroid-specific, mitochondria	w
+ACID	human	P22557	ALAS2	P22557	8	121	5-aminolevulinate synthase, erythroid-specific, mitochondria	w
 ACID	human	P24046	GABRR1	P24046	32	71	Gamma-aminobutyric acid receptor subunit rho-1 (GABA(A) rece	w
 ACID	human	P24666	ACP1	P24666	22	227	Low molecular weight phosphotyrosine protein phosphatase (LM	w
 ACID	human	P28472	GABRB3	P28472	35	167	Gamma-aminobutyric acid receptor subunit beta-3 (GABA(A) rec	w
@@ -159,7 +159,7 @@ ACID	human	Q12908	SLC10A2	Q12908	4	58	Ileal sodium/bile acid cotransporter (Apic
 ACID	human	Q13002	GRIK2	Q13002	24	118	Glutamate receptor ionotropic, kainate 2 (GluK2) (Excitatory	w
 ACID	human	Q13003	GRIK3	Q13003	27	197	Glutamate receptor ionotropic, kainate 3 (GluK3) (Excitatory	w
 ACID	human	Q13510	ASAH1	Q13510	3	166	Acid ceramidase (AC) (ACDase) (Acid CDase) (EC 3.5.1.23) (Ac	w
-ACID	human	Q13686	ALKBH1	Q13686	3	82	Nucleic acid dioxygenase ALKBH1 (EC 1.14.11.-) (Alkylated DN	w
+ACID	human	Q13686	ALKBH1	Q13686	5	84	Nucleic acid dioxygenase ALKBH1 (EC 1.14.11.-) (Alkylated DN	w
 ACID	human	Q14032	BAAT	Q14032	3	94	Bile acid-CoA:amino acid N-acyltransferase (BACAT) (BAT) (EC	w
 ACID	human	Q14973	SLC10A1	Q14973	3	155	Hepatic sodium/bile acid cotransporter (Cell growth-inhibiti	w
 ACID	human	Q15758	SLC1A5	Q15758	19	309	Neutral amino acid transporter B(0) (ATB(0)) (Baboon M7 viru	w
@@ -181,7 +181,7 @@ ACID	human	Q5VZY2	PLPP4	Q5VZY2	8	119	Phospholipid phosphatase 4 (EC 3.1.3.4) (EC
 ACID	human	Q695T7	SLC6A19	Q695T7	3	48	Sodium-dependent neutral amino acid transporter B(0)AT1 (Sol	w
 ACID	human	Q6GTS8	PM20D1	Q6GTS8	1	27	N-fatty-acyl-amino acid synthase/hydrolase PM20D1 (EC 3.5.1.	w
 ACID	human	Q6H3X3	RAET1G	Q6H3X3	6	28	UL-16 binding protein 5 (Retinoic acid early transcript 1G p	w
-ACID	human	Q6IB77	GLYAT	Q6IB77	9	127	Glycine N-acyltransferase (EC 2.3.1.13) (Acyl-CoA:glycine N-	w
+ACID	human	Q6IB77	GLYAT	Q6IB77	27	145	Glycine N-acyltransferase (EC 2.3.1.13) (Acyl-CoA:glycine N-	w
 ACID	human	Q6NT55	CYP4F22	Q6NT55	2	61	Ultra-long-chain fatty acid omega-hydroxylase (EC 1.14.14.17	w
 ACID	human	Q6P1M0	SLC27A4	Q6P1M0	3	185	Long-chain fatty acid transport protein 4 (FATP-4) (Fatty ac	w
 ACID	human	Q6PCB7	SLC27A1	Q6PCB7	0	224	Long-chain fatty acid transport protein 1 (Arachidonate--CoA	w
@@ -243,9 +243,9 @@ ACID	human	Q96KP4	CNDP2	Q96KP4	2	192	Cytosolic non-specific dipeptidase (EC 3.4.
 ACID	human	Q96N87	SLC6A18	Q96N87	2	38	Inactive sodium-dependent neutral amino acid transporter B(0	w
 ACID	human	Q96QD8	SLC38A2	Q96QD8	2	207	Sodium-coupled neutral amino acid symporter 2 (Amino acid tr	w
 ACID	human	Q96RI1	NR1H4	Q96RI1	71	234	Bile acid receptor (Farnesoid X-activated receptor) (Farneso	w
-ACID	human	Q96T66	NMNAT3	Q96T66	1	15	Nicotinamide/nicotinic acid mononucleotide adenylyltransfera	w
+ACID	human	Q96T66	NMNAT3	Q96T66	5	19	Nicotinamide/nicotinic acid mononucleotide adenylyltransfera	w
 ACID	human	Q99259	GAD1	Q99259	7	214	Glutamate decarboxylase 1 (EC 4.1.1.15) (67 kDa glutamic aci	w
-ACID	human	Q99497	PARK7	Q99497	8	515	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
+ACID	human	Q99497	PARK7	Q99497	12	519	Parkinson disease protein 7 (Maillard deglycase) (Oncogene D	w
 ACID	human	Q99624	SLC38A3	Q99624	2	67	Sodium-coupled neutral amino acid transporter 3 (N-system am	w
 ACID	human	Q99677	LPAR4	Q99677	16	145	Lysophosphatidic acid receptor 4 (LPA receptor 4) (LPA-4) (G	w
 ACID	human	Q99928	GABRG3	Q99928	30	89	Gamma-aminobutyric acid receptor subunit gamma-3 (GABA(A) re	w
@@ -274,7 +274,7 @@ ACID	human	Q9H2J7	SLC6A15	Q9H2J7	17	253	Sodium-dependent neutral amino acid tran
 ACID	human	Q9H598	SLC32A1	Q9H598	4	164	Vesicular inhibitory amino acid transporter (GABA and glycin	w
 ACID	human	Q9H5J4	ELOVL6	Q9H5J4	4	57	Very long chain fatty acid elongase 6 (EC 2.3.1.199) (3-keto	w
 ACID	human	Q9H999	PANK3	Q9H999	5	74	Pantothenate kinase 3 (hPanK3) (EC 2.7.1.33) (Pantothenic ac	w
-ACID	human	Q9HAC7	SUGCT	Q9HAC7	2	83	Succinyl-CoA:glutarate CoA-transferase (EC 2.8.3.-) (Dermal 	w
+ACID	human	Q9HAC7	SUGCT	Q9HAC7	4	85	Succinyl-CoA:glutarate CoA-transferase (EC 2.8.3.-) (Dermal 	w
 ACID	human	Q9HAN9	NMNAT1	Q9HAN9	10	193	Nicotinamide/nicotinic acid mononucleotide adenylyltransfera	w
 ACID	human	Q9HB03	ELOVL3	Q9HB03	2	34	Very long chain fatty acid elongase 3 (EC 2.3.1.199) (3-keto	w
 ACID	human	Q9HBI6	CYP4F11	Q9HBI6	3	52	Cytochrome P450 4F11 (CYPIVF11) (EC 1.14.14.1) (3-hydroxy fa	w
@@ -282,7 +282,7 @@ ACID	human	Q9HBR0	SLC38A10	Q9HBR0	12	80	Solute carrier family 38 member 10 (Amin
 ACID	human	Q9HBW0	LPAR2	Q9HBW0	16	215	Lysophosphatidic acid receptor 2 (LPA receptor 2) (LPA-2) (L	w
 ACID	human	Q9HC97	GPR35	Q9HC97	12	196	G protein-coupled receptor 35 (Kynurenic acid receptor) (KYN	w
 ACID	human	Q9HCG7	GBA2	Q9HCG7	2	61	Non-lysosomal glucosylceramidase (NLGase) (EC 3.2.1.45) (Bet	w
-ACID	human	Q9NPH0	ACP6	Q9NPH0	8	55	Lysophosphatidic acid phosphatase type 6 (EC 3.1.3.106) (Aci	w
+ACID	human	Q9NPH0	ACP6	Q9NPH0	23	69	Lysophosphatidic acid phosphatase type 6 (EC 3.1.3.106) (Aci	w
 ACID	human	Q9NPI5	NMRK2	Q9NPI5	6	62	Nicotinamide riboside kinase 2 (NRK 2) (NmR-K 2) (EC 2.7.1.2	w
 ACID	human	Q9NR45	NANS	Q9NR45	2	138	N-acetylneuraminate-9-phosphate synthase (EC 2.5.1.57) (3-de	w
 ACID	human	Q9NRA2	SLC17A5	Q9NRA2	1	80	Sialin (H(+)/nitrate cotransporter) (H(+)/sialic acid cotran	w
@@ -295,7 +295,7 @@ ACID	human	Q9NVV5	AIG1	Q9NVV5	4	85	Androgen-induced gene 1 protein (AIG-1) (Fatt
 ACID	human	Q9NWW6	NMRK1	Q9NWW6	3	65	Nicotinamide riboside kinase 1 (NRK 1) (NmR-K 1) (EC 2.7.1.2	w
 ACID	human	Q9NXB9	ELOVL2	Q9NXB9	4	85	Very long chain fatty acid elongase 2 (EC 2.3.1.199) (3-keto	w
 ACID	human	Q9NYP7	ELOVL5	Q9NYP7	13	384	Very long chain fatty acid elongase 5 (EC 2.3.1.199) (3-keto	w
-ACID	human	Q9NYQ3	HAO2	Q9NYQ3	3	58	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	w
+ACID	human	Q9NYQ3	HAO2	Q9NYQ3	4	59	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	w
 ACID	human	Q9NZD8	SPG21	Q9NZD8	30	261	Maspardin (Acid cluster protein 33) (Spastic paraplegia 21 a	w
 ACID	human	Q9P0Z9	PIPOX	Q9P0Z9	5	60	Peroxisomal sarcosine oxidase (PSO) (EC 1.5.3.1) (EC 1.5.3.7	w
 ACID	human	Q9P2R6	RERE	Q9P2R6	18	160	Arginine-glutamic acid dipeptide repeats protein (Atrophin-1	w
@@ -332,7 +332,7 @@ ACID	worm	H2KZD1	plpp-1.1	H2KZD1	1	18	Phosphatidic acid phosphatase type 2/halop
 ACID	worm	H2KZG9	aat-5	H2KZG9	3	3	Amino Acid Transporter	w
 ACID	worm	H2L0Q3	gbb-1	H2L0Q3	2	46	Gamma-aminobutyric acid type B receptor subunit 1	w
 ACID	worm	O02200	acs-10	O02200	0	10	Fatty Acid CoA Synthetase family	w
-ACID	worm	O16481	acs-21	O16481	0	11	Fatty Acid CoA Synthetase family	w
+ACID	worm	O16481	acs-21	O16481	1	12	Fatty Acid CoA Synthetase family	w
 ACID	worm	O17069	CELE_F23F1.6	O17069	0	2	Cationic amino acid transporter C-terminal domain-containing	w
 ACID	worm	O17167	B0454.6	O17167	0	3	Cationic amino acid transporter C-terminal domain-containing	w
 ACID	worm	O17373	pho-14	O17373	0	1	Histidine acid phosphatase	w
@@ -374,7 +374,7 @@ ACID	worm	Q22630	pho-7	Q22630	0	1	Lysosomal acid phosphatase	w
 ACID	worm	Q22682	glt-4	Q22682	0	6	Putative sodium-dependent excitatory amino acid transporter 	w
 ACID	worm	Q23404	acs-6	Q23404	1	10	Fatty Acid CoA Synthetase family	w
 ACID	worm	Q23534	acp-1	Q23534	0	1	Putative acid phosphatase 1	w
-ACID	worm	Q23571	dbt-1	Q23571	2	25	Lipoamide acyltransferase component of branched-chain alpha-	w
+ACID	worm	Q23571	dbt-1	Q23571	3	26	Lipoamide acyltransferase component of branched-chain alpha-	w
 ACID	worm	Q5WRS4	C06A6.4	Q5WRS4	0	4	N-acyl-aliphatic-L-amino acid amidohydrolase	w
 ACID	worm	Q7YXH5	aat-4	Q7YXH5	0	9	Amino acid transporter	w
 ACID	worm	Q8I4E4	CELE_Y32F6A.4	Q8I4E4	0	2	Amino acid transporter transmembrane domain-containing prote	w
@@ -557,9 +557,9 @@ ACID-BINDING	human	O15389	SIGLEC5	O15389	13	208	Sialic acid-binding Ig-like lect
 ACID-BINDING	human	O15540	FABP7	O15540	9	79	Fatty acid-binding protein, brain (Brain lipid-binding prote	w
 ACID-BINDING	human	O43699	SIGLEC6	O43699	9	111	Sialic acid-binding Ig-like lectin 6 (Siglec-6) (CD33 antige	w
 ACID-BINDING	human	O75330	HMMR	O75330	38	212	Hyaluronan mediated motility receptor (Intracellular hyaluro	w
-ACID-BINDING	human	P00505	GOT2	P00505	9	209	Aspartate aminotransferase, mitochondrial (mAspAT) (EC 2.6.1	w
+ACID-BINDING	human	P00505	GOT2	P00505	11	211	Aspartate aminotransferase, mitochondrial (mAspAT) (EC 2.6.1	w
 ACID-BINDING	human	P05413	FABP3	P05413	16	219	Fatty acid-binding protein, heart (Fatty acid-binding protei	w
-ACID-BINDING	human	P07148	FABP1	P07148	10	431	Fatty acid-binding protein, liver (Fatty acid-binding protei	w
+ACID-BINDING	human	P07148	FABP1	P07148	12	432	Fatty acid-binding protein, liver (Fatty acid-binding protei	w
 ACID-BINDING	human	P12104	FABP2	P12104	6	61	Fatty acid-binding protein, intestinal (Fatty acid-binding p	w
 ACID-BINDING	human	P15090	FABP4	P15090	46	505	Fatty acid-binding protein, adipocyte (Adipocyte lipid-bindi	w
 ACID-BINDING	human	P20138	CD33	P20138	41	373	Myeloid cell surface antigen CD33 (Sialic acid-binding Ig-li	w
@@ -610,7 +610,7 @@ ACID-BINDING	zebrafish	Q9I8N9	fabp7a	Q9I8N9	4	8	Brain-type fatty acid-binding pr
 ACID-COA	human	Q14032	BAAT	Q14032	3	94	Bile acid-CoA:amino acid N-acyltransferase (BACAT) (BAT) (EC	w
 ACID-COA	human	Q9Y2P5	SLC27A5	Q9Y2P5	0	40	Long-chain fatty acid transport protein 5 (FATP-5) (Fatty ac	w
 ACID-CONTAINING	human	P02818	BGLAP	P02818	37	211	Osteocalcin (Bone Gla protein) (BGP) (Gamma-carboxyglutamic 	w
-ACID-CONTAINING	human	P23434	GCSH	P23434	71	476	Glycine cleavage system H protein, mitochondrial (Lipoic aci	w
+ACID-CONTAINING	human	P23434	GCSH	P23434	87	491	Glycine cleavage system H protein, mitochondrial (Lipoic aci	w
 ACID-INACTIVATING	human	O43174	CYP26A1	O43174	5	80	Cytochrome P450 26A1 (CYP26A1) (EC 1.14.13.-) (Cytochrome P4	w
 ACID-INACTIVATING	human	Q9NR63	CYP26B1	Q9NR63	2	98	Cytochrome P450 26B1 (EC 1.14.13.-) (Cytochrome P450 26A2) (	w
 ACID-INDUCED	human	O14933	UBE2L6	O14933	69	294	Ubiquitin/ISG15-conjugating enzyme E2 L6 (EC 2.3.2.23) (E2 u	w
@@ -701,7 +701,7 @@ ACIDIC	human	P05388	RPLP0	P05388	33	844	Large ribosomal subunit protein uL10 (60
 ACIDIC	human	P09486	SPARC	P09486	25	431	SPARC (Basement-membrane protein 40) (BM-40) (Osteonectin) (	w
 ACIDIC	human	P0C0L4	C4A	P0C0L4	7	158	Complement C4-A (Acidic complement C4) (C3 and PZP-like alph	w
 ACIDIC	human	P14136	GFAP	P14136	92	352	Glial fibrillary acidic protein (GFAP)	w
-ACIDIC	human	P30041	PRDX6	P30041	8	327	Peroxiredoxin-6 (EC 1.11.1.27) (1-Cys peroxiredoxin) (1-Cys 	w
+ACIDIC	human	P30041	PRDX6	P30041	14	333	Peroxiredoxin-6 (EC 1.11.1.27) (1-Cys peroxiredoxin) (1-Cys 	w
 ACIDIC	human	P30520	ADSS2	P30520	8	149	Adenylosuccinate synthetase isozyme 2 (AMPSase 2) (AdSS 2) (	w
 ACIDIC	human	P39687	ANP32A	P39687	12	206	Acidic leucine-rich nuclear phosphoprotein 32 family member 	w
 ACIDIC	human	P54107	CRISP1	P54107	15	92	Cysteine-rich secretory protein 1 (CRISP-1) (AEG-like protei	w
@@ -750,7 +750,7 @@ ACIDIC	zebrafish	Q6T938	fibpb	Q6T938	1	17	Acidic fibroblast growth factor intrac
 ACIDIC	zebrafish	Q7ZUP0	anp32a	Q7ZUP0	1	16	Acidic leucine-rich nuclear phosphoprotein 32 family member 	w
 ACIDIC	zebrafish	Q7ZVC9	smap	Q7ZVC9	0	1	Small acidic protein	w
 ACIDIC-1	worm	Q23462	gcna-1	Q23462	0	6	Germ cell nuclear acidic-1 protein	w
-ACIDIC-TYPE	human	P12532	CKMT1A	P12532	11	163	Creatine kinase U-type, mitochondrial (EC 2.7.3.2) (Acidic-t	w
+ACIDIC-TYPE	human	P12532	CKMT1A	P12532	15	167	Creatine kinase U-type, mitochondrial (EC 2.7.3.2) (Acidic-t	w
 ACIDS	fly	FBgn0034382	mElo	Q6NN18	3	78	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 ACIDS	fly	FBgn0034383	CG17821	A1ZBD2	4	57	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 ACIDS	fly	FBgn0036128	Elo68beta	A8JNR0	3	76	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
@@ -794,9 +794,9 @@ ACIDS	zebrafish	Q6P978	elovl4b	Q6P978	0	2	Elongation of very long chain fatty ac
 ACIDS	zebrafish	Q8AX86	elovl5	Q8AX86	0	3	Elongation of very long chain fatty acids protein 5	w
 ACIDURIA	human	Q8IVH4	MMAA	Q8IVH4	1	23	Methylmalonic aciduria type A protein, mitochondrial (EC 3.6	w
 ACIDURIA	human	Q96EY8	MMAB	Q96EY8	1	137	Corrinoid adenosyltransferase MMAB (EC 2.5.1.-) (ATP:co(I)rr	w
-ACIDURIA	human	Q9H3L0	MMADHC	Q9H3L0	5	66	Cobalamin trafficking protein CblD (CblD) (Methylmalonic aci	w
+ACIDURIA	human	Q9H3L0	MMADHC	Q9H3L0	12	73	Cobalamin trafficking protein CblD (CblD) (Methylmalonic aci	w
 ACIDURIA	worm	Q22111	mmaa-1	Q22111	1	11	Methylmalonic aciduria type A homolog, mitochondrial	w
-ACIDURIA	worm	Q9XWC9	mmad-1	Q9XWC9	2	6	Methylmalonic aciduria and homocystinuria type D homolog, mi	w
+ACIDURIA	worm	Q9XWC9	mmad-1	Q9XWC9	3	7	Methylmalonic aciduria and homocystinuria type D homolog, mi	w
 ACIN-1	worm	P91156	acin-1	P91156	5	26	SAP domain-containing protein	
 ACIN1	human	Q9UKV3	ACIN1	Q9UKV3	76	361	Apoptotic chromatin condensation inducer in the nucleus (Aci	
 ACIN1	mus-musculus	Q9JIX8	Acin1	Q9JIX8	5	54	Apoptotic chromatin condensation inducer in the nucleus	

@@ -29,7 +29,7 @@ ACEB	salmonella-typhimurium	Q8ZKL4	aceB	Q8ZKL4	0	5	Malate synthase
 ACECS	fly	FBgn0012034	AcCoAS	Q9VP61	4	76	Acetyl-coenzyme A synthetase (EC 6.2.1.1) (Acetate--CoA liga	w
 ACECS	human	Q9NR19	ACSS2	Q9NR19	0	122	Acetyl-coenzyme A synthetase, cytoplasmic (EC 6.2.1.1) (Acet	w
 ACECS1	human	Q9NR19	ACSS2	Q9NR19	0	122	Acetyl-coenzyme A synthetase, cytoplasmic (EC 6.2.1.1) (Acet	w
-ACECS2	human	Q9NUB1	ACSS1	Q9NUB1	4	93	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
+ACECS2	human	Q9NUB1	ACSS1	Q9NUB1	14	103	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
 ACEE	escherichia-coli-83333	P0AFG8	aceE	P0AFG8	1	13	Pyruvate dehydrogenase E1 component	
 ACEE	haemophilus-influenzae	P45119	aceE	P45119	0	5	Pyruvate dehydrogenase E1 component	
 ACEE	mycobacterium-leprae	Q9CBS8	aceE	Q9CBS8	0	4	Pyruvate dehydrogenase E1 component	
@@ -74,10 +74,10 @@ ACETATE--COA	fly	FBgn0012034	AcCoAS	Q9VP61	4	76	Acetyl-coenzyme A synthetase (EC
 ACETATE--COA	fly	FBgn0039184	CG6432	Q9VC92	1	15	Acyl-CoA synthetase short-chain family member 3, mitochondri	w
 ACETATE--COA	human	Q9H6R3	ACSS3	Q9H6R3	0	47	Acyl-CoA synthetase short-chain family member 3, mitochondri	w
 ACETATE--COA	human	Q9NR19	ACSS2	Q9NR19	0	122	Acetyl-coenzyme A synthetase, cytoplasmic (EC 6.2.1.1) (Acet	w
-ACETATE--COA	human	Q9NUB1	ACSS1	Q9NUB1	4	93	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
+ACETATE--COA	human	Q9NUB1	ACSS1	Q9NUB1	14	103	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
 ACETATE-HYDROLYZING	human	Q2TAA2	IAH1	Q2TAA2	0	99	Isoamyl acetate-hydrolyzing esterase 1 homolog (EC 3.1.-.-)	w
 ACETATE-HYDROLYZING	yeast	P41734	IAH1	P41734	0	4	Isoamyl acetate-hydrolyzing esterase	w
-ACETOACETYL-COA	human	P24752	ACAT1	P24752	9	301	Acetyl-CoA acetyltransferase, mitochondrial (EC 2.3.1.9) (Ac	w
+ACETOACETYL-COA	human	P24752	ACAT1	P24752	10	302	Acetyl-CoA acetyltransferase, mitochondrial (EC 2.3.1.9) (Ac	w
 ACETOACETYL-COA	human	Q86V21	AACS	Q86V21	2	105	Acetoacetyl-CoA synthetase (EC 6.2.1.16) (Acyl-CoA synthetas	w
 ACETOACETYL-COA	human	Q9BWD1	ACAT2	Q9BWD1	3	98	Acetyl-CoA acetyltransferase, cytosolic (EC 2.3.1.9) (Acetyl	w
 ACETOACETYL-COA	worm	Q21166	sur-5	Q21166	0	12	Acetoacetyl-CoA synthetase	w
@@ -91,59 +91,60 @@ ACETYL	yeast	P53324	SAY1	P53324	0	21	Steryl acetyl hydrolase 1	w
 ACETYL-1-ALKYLGLYCEROPHOSPHOC	human	Q13093	PLA2G7	Q13093	7	139	Platelet-activating factor acetylhydrolase (PAF acetylhydrol	w
 ACETYL-C	human	Q8WYK0	ACOT12	Q8WYK0	2	102	Acetyl-coenzyme A thioesterase (EC 3.1.2.1) (Acyl-CoA thioes	w
 ACETYL-COA	fly	FBgn0012034	AcCoAS	Q9VP61	4	76	Acetyl-coenzyme A synthetase (EC 6.2.1.1) (Acetate--CoA liga	w
-ACETYL-COA	fly	FBgn0015808	ScpX	Q9VJ43	2	40	Sterol carrier protein 2 (EC 2.3.1.155) (EC 2.3.1.16) (EC 2.	w
-ACETYL-COA	fly	FBgn0025352	Mtpbeta	Q9W1H8	3	86	acetyl-CoA C-acyltransferase (EC 2.3.1.16)	w
+ACETYL-COA	fly	FBgn0015808	ScpX	Q9VJ43	2	41	Sterol carrier protein 2 (EC 2.3.1.155) (EC 2.3.1.16) (EC 2.	w
+ACETYL-COA	fly	FBgn0025352	Mtpbeta	Q9W1H8	5	88	acetyl-CoA C-acyltransferase (EC 2.3.1.16)	w
 ACETYL-COA	fly	FBgn0033246	Acc	A1Z784	0	21	Acetyl-CoA carboxylase, isoform A (EC 6.4.1.2)	w
 ACETYL-COA	fly	FBgn0035203	Acat2	Q9W0H6	1	33	acetyl-CoA C-acetyltransferase (EC 2.3.1.9)	w
 ACETYL-COA	fly	FBgn0039737	CG7920	Q9VAC1	3	131	Acetyl-CoA hydrolase (EC 3.1.2.1) (Acetyl-CoA deacylase)	w
 ACETYL-COA	human	O00400	SLC33A1	O00400	11	280	Acetyl-coenzyme A transporter 1 (AT-1) (Acetyl-CoA transport	w
 ACETYL-COA	human	O00763	ACACB	O00763	4	114	Acetyl-CoA carboxylase 2 (EC 6.4.1.2) (ACC-beta)	w
 ACETYL-COA	human	P09110	ACAA1	P09110	7	133	3-ketoacyl-CoA thiolase, peroxisomal (EC 2.3.1.16) (Acetyl-C	w
-ACETYL-COA	human	P22307	SCP2	P22307	4	109	Sterol carrier protein 2 (SCP-2) (Acetyl-CoA C-myristoyltran	w
-ACETYL-COA	human	P24752	ACAT1	P24752	9	301	Acetyl-CoA acetyltransferase, mitochondrial (EC 2.3.1.9) (Ac	w
-ACETYL-COA	human	P42765	ACAA2	P42765	6	247	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	w
+ACETYL-COA	human	P22307	SCP2	P22307	7	111	Sterol carrier protein 2 (SCP-2) (Acetyl-CoA C-myristoyltran	w
+ACETYL-COA	human	P24752	ACAT1	P24752	10	302	Acetyl-CoA acetyltransferase, mitochondrial (EC 2.3.1.9) (Ac	w
+ACETYL-COA	human	P42765	ACAA2	P42765	6	248	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	w
 ACETYL-COA	human	P54646	PRKAA2	P54646	182	1648	5'-AMP-activated protein kinase catalytic subunit alpha-2 (A	w
-ACETYL-COA	human	P55084	HADHB	P55084	26	475	Trifunctional enzyme subunit beta, mitochondrial (TP-beta) [	w
+ACETYL-COA	human	P55084	HADHB	P55084	32	481	Trifunctional enzyme subunit beta, mitochondrial (TP-beta) [	w
 ACETYL-COA	human	Q13085	ACACA	Q13085	2	435	Acetyl-CoA carboxylase 1 (ACC1) (EC 6.4.1.2) (Acetyl-Coenzym	w
 ACETYL-COA	human	Q13131	PRKAA1	Q13131	195	1587	5'-AMP-activated protein kinase catalytic subunit alpha-1 (A	w
 ACETYL-COA	human	Q9BWD1	ACAT2	Q9BWD1	3	98	Acetyl-CoA acetyltransferase, cytosolic (EC 2.3.1.9) (Acetyl	w
 ACETYL-COA	human	Q9NR19	ACSS2	Q9NR19	0	122	Acetyl-coenzyme A synthetase, cytoplasmic (EC 6.2.1.1) (Acet	w
-ACETYL-COA	human	Q9NUB1	ACSS1	Q9NUB1	4	93	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
+ACETYL-COA	human	Q9NUB1	ACSS1	Q9NUB1	14	103	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
 ACETYL-COA	worm	Q09657	CELE_ZK1320.9	Q09657	1	31	Acetyl-CoA hydrolase	w
 ACETYL-COA	worm	Q18599	acer-1	Q18599	0	7	Acetyl-CoA hydrolase	w
-ACETYL-COA	worm	Q22100	kat-1	Q22100	2	34	Acetyl-CoA acetyltransferase homolog, mitochondrial	w
+ACETYL-COA	worm	Q22100	kat-1	Q22100	4	36	Acetyl-CoA acetyltransferase homolog, mitochondrial	w
 ACETYL-COA	worm	Q22101	CELE_T02G5.7	Q22101	2	33	Acetyl-CoA C-acetyltransferase	w
 ACETYL-COA	yeast	P32316	ACH1	P32316	0	11	Acetyl-CoA hydrolase	w
 ACETYL-COA	yeast	P41338	ERG10	P41338	1	36	Acetyl-CoA acetyltransferase	w
-ACETYL-COA	zebrafish	Q6AZA0	acat1	Q6AZA0	1	16	Acetyl-CoA acetyltransferase, mitochondrial	w
+ACETYL-COA	zebrafish	Q6AZA0	acat1	Q6AZA0	3	18	Acetyl-CoA acetyltransferase, mitochondrial	w
 ACETYL-COENZYME	fly	FBgn0012034	AcCoAS	Q9VP61	4	76	Acetyl-coenzyme A synthetase (EC 6.2.1.1) (Acetate--CoA liga	w
 ACETYL-COENZYME	human	O00400	SLC33A1	O00400	11	280	Acetyl-coenzyme A transporter 1 (AT-1) (Acetyl-CoA transport	w
 ACETYL-COENZYME	human	Q13085	ACACA	Q13085	2	435	Acetyl-CoA carboxylase 1 (ACC1) (EC 6.4.1.2) (Acetyl-Coenzym	w
 ACETYL-COENZYME	human	Q8WYK0	ACOT12	Q8WYK0	2	102	Acetyl-coenzyme A thioesterase (EC 3.1.2.1) (Acyl-CoA thioes	w
 ACETYL-COENZYME	human	Q9NR19	ACSS2	Q9NR19	0	122	Acetyl-coenzyme A synthetase, cytoplasmic (EC 6.2.1.1) (Acet	w
-ACETYL-COENZYME	human	Q9NUB1	ACSS1	Q9NUB1	4	93	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
+ACETYL-COENZYME	human	Q9NUB1	ACSS1	Q9NUB1	14	103	Acetyl-coenzyme A synthetase 2-like, mitochondrial (EC 6.2.1	w
 ACETYL-COENZYME	worm	Q18496	acs-19	Q18496	0	4	Acetyl-coenzyme A synthetase	w
 ACETYL-COENZYME	yeast	P52910	ACS2	P52910	1	66	Acetyl-coenzyme A synthetase 2	w
 ACETYL-COENZYME	yeast	Q01574	ACS1	Q01574	1	19	Acetyl-coenzyme A synthetase 1	w
 ACETYL-COENZYME	zebrafish	A0A2R8Q6G5	acss2	A0A2R8Q6G5	0	8	Acetyl-coenzyme A synthetase	w
+ACETYL-COENZYME	zebrafish	A0A8M1ND09	acss1	A0A8M1ND09	2	3	Acetyl-coenzyme A synthetase	w
 ACETYL-COENZYME	zebrafish	F1QYS7	acss1	F1QYS7	2	8	Acetyl-coenzyme A synthetase	w
 ACETYL-SPERMINE	human	Q6QHF9	PAOX	Q6QHF9	1	16	Peroxisomal N(1)-acetyl-spermine/spermidine oxidase (EC 1.5.	w
 ACETYL-SPERMINE	zebrafish	B8A458	smox	B8A458	0	2	Peroxisomal N(1)-acetyl-spermine/spermidine oxidase	w
 ACETYL-SPERMINE	zebrafish	B8JJQ4	paox	B8JJQ4	0	4	Peroxisomal N(1)-acetyl-spermine/spermidine oxidase	w
-ACETYL-TRANSFERRING	human	Q15118	PDK1	Q15118	24	393	[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozym	w
-ACETYL-TRANSFERRING	human	Q15119	PDK2	Q15119	7	84	[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozym	w
-ACETYL-TRANSFERRING	human	Q15120	PDK3	Q15120	15	231	[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozym	w
-ACETYL-TRANSFERRING	human	Q16654	PDK4	Q16654	7	124	[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozym	w
-ACETYL-TRANSFERRING	human	Q9P0J1	PDP1	Q9P0J1	6	136	[Pyruvate dehydrogenase [acetyl-transferring]]-phosphatase 1	w
-ACETYL-TRANSFERRING	human	Q9P2J9	PDP2	Q9P2J9	4	44	[Pyruvate dehydrogenase [acetyl-transferring]]-phosphatase 2	w
-ACETYL-TRANSFERRING	worm	Q02332	pdhk-2	Q02332	2	86	Probable [pyruvate dehydrogenase (acetyl-transferring)] kina	w
+ACETYL-TRANSFERRING	human	Q15118	PDK1	Q15118	25	394	[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozym	w
+ACETYL-TRANSFERRING	human	Q15119	PDK2	Q15119	12	90	[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozym	w
+ACETYL-TRANSFERRING	human	Q15120	PDK3	Q15120	21	236	[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozym	w
+ACETYL-TRANSFERRING	human	Q16654	PDK4	Q16654	13	130	[Pyruvate dehydrogenase (acetyl-transferring)] kinase isozym	w
+ACETYL-TRANSFERRING	human	Q9P0J1	PDP1	Q9P0J1	11	142	[Pyruvate dehydrogenase [acetyl-transferring]]-phosphatase 1	w
+ACETYL-TRANSFERRING	human	Q9P2J9	PDP2	Q9P2J9	11	52	[Pyruvate dehydrogenase [acetyl-transferring]]-phosphatase 2	w
+ACETYL-TRANSFERRING	worm	Q02332	pdhk-2	Q02332	3	88	Probable [pyruvate dehydrogenase (acetyl-transferring)] kina	w
 ACETYL-TRANSFERRING	yeast	P40530	PKP1	P40530	2	21	[Pyruvate dehydrogenase (acetyl-transferring)] kinase 1, mit	w
 ACETYLALKYLGLYCEROL	human	Q6PIU2	NCEH1	Q6PIU2	4	212	Neutral cholesterol ester hydrolase 1 (NCEH) (EC 3.1.1.-) (A	w
 ACETYLASE	fly	FBgn0000303	ChAT	P07668	2	19	Choline O-acetyltransferase (CHOACTase) (Choline acetylase) 	w
 ACETYLASE	human	P11245	NAT2	P11245	3	64	Arylamine N-acetyltransferase 2 (EC 2.3.1.5) (Arylamide acet	w
 ACETYLASE	human	P18440	NAT1	P18440	1	35	Arylamine N-acetyltransferase 1 (EC 2.3.1.5) (Aromatic-hydro	w
 ACETYLASE	human	P28329	CHAT	P28329	4	99	Choline O-acetyltransferase (CHOACTase) (ChAT) (Choline acet	w
-ACETYLASE	human	P43155	CRAT	P43155	4	59	Carnitine O-acetyltransferase (Carnitine acetylase) (EC 2.3.	w
+ACETYLASE	human	P43155	CRAT	P43155	9	65	Carnitine O-acetyltransferase (Carnitine acetylase) (EC 2.3.	w
 ACETYLASE	human	Q16613	AANAT	Q16613	10	41	Serotonin N-acetyltransferase (Serotonin acetylase) (EC 2.3.	w
 ACETYLASE	human	Q92831	KAT2B	Q92831	54	579	Histone acetyltransferase KAT2B (EC 2.3.1.48) (Histone acety	w
 ACETYLASE	human	Q96EK6	GNPNAT1	Q96EK6	2	55	Glucosamine 6-phosphate N-acetyltransferase (EC 2.3.1.4) (Ph	w
@@ -320,7 +321,7 @@ ACETYLTRANSFERASE	fly	FBgn0020388	Gcn5	Q9VTZ1	85	670	Histone acetyltransferase G
 ACETYLTRANSFERASE	fly	FBgn0026080	Tip60	Q960X4	100	466	Histone acetyltransferase Tip60 (EC 2.3.1.48)	w
 ACETYLTRANSFERASE	fly	FBgn0027330	l(1)G0020	Q9W3C1	13	169	RNA cytidine acetyltransferase (EC 2.3.1.-) (18S rRNA cytosi	w
 ACETYLTRANSFERASE	fly	FBgn0028387	chm	Q9VM15	74	449	histone acetyltransferase (EC 2.3.1.48)	w
-ACETYLTRANSFERASE	fly	FBgn0030612	Dbct	Q9VXY3	2	63	Dihydrolipoamide acetyltransferase component of pyruvate deh	w
+ACETYLTRANSFERASE	fly	FBgn0030612	Dbct	Q9VXY3	3	64	Dihydrolipoamide acetyltransferase component of pyruvate deh	w
 ACETYLTRANSFERASE	fly	FBgn0031020	Naa15-16	Q9VWI2	14	114	N(Alpha)-acetyltransferase 15/16, isoform A (N(Alpha)-acetyl	w
 ACETYLTRANSFERASE	fly	FBgn0031043	Naa20A	M9PI14	4	33	N-alpha-acetyltransferase 20 (EC 2.3.1.254) (Methionine N-ac	w
 ACETYLTRANSFERASE	fly	FBgn0031082	lky	Q9W5X9	1	16	Alpha-tubulin N-acetyltransferase 2 (Alpha-TAT 2) (TAT 2) (E	w
@@ -338,22 +339,22 @@ ACETYLTRANSFERASE	fly	FBgn0261617	nej	M9MS40	12	175	histone acetyltransferase (E
 ACETYLTRANSFERASE	fly	FBgn0263251	vnc	Q9VT75	7	59	N-terminal amino-acid N(alpha)-acetyltransferase NatA (EC 2.	w
 ACETYLTRANSFERASE	fly	FBgn0283658	Dlat	Q9VM14	9	125	dihydrolipoyllysine-residue acetyltransferase (EC 2.3.1.12) 	w
 ACETYLTRANSFERASE	human	O14929	HAT1	O14929	54	576	Histone acetyltransferase type B catalytic subunit (EC 2.3.1	w
-ACETYLTRANSFERASE	human	O75600	GCAT	O75600	0	134	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial (AKB	w
+ACETYLTRANSFERASE	human	O75600	GCAT	O75600	3	137	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial (AKB	w
 ACETYLTRANSFERASE	human	O95251	KAT7	O95251	78	503	Histone acetyltransferase KAT7 (EC 2.3.1.48) (Histone acetyl	w
 ACETYLTRANSFERASE	human	P10515	DLAT	P10515	16	241	Dihydrolipoyllysine-residue acetyltransferase component of p	w
 ACETYLTRANSFERASE	human	P21673	SAT1	P21673	5	175	Diamine acetyltransferase 1 (EC 2.3.1.57) (Polyamine N-acety	w
-ACETYLTRANSFERASE	human	P24752	ACAT1	P24752	9	301	Acetyl-CoA acetyltransferase, mitochondrial (EC 2.3.1.9) (Ac	w
+ACETYLTRANSFERASE	human	P24752	ACAT1	P24752	10	302	Acetyl-CoA acetyltransferase, mitochondrial (EC 2.3.1.9) (Ac	w
 ACETYLTRANSFERASE	human	P41227	NAA10	P41227	21	231	N-alpha-acetyltransferase 10 (EC 2.3.1.255) (N-terminal acet	w
-ACETYLTRANSFERASE	human	P42765	ACAA2	P42765	6	247	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	w
-ACETYLTRANSFERASE	human	P43155	CRAT	P43155	4	59	Carnitine O-acetyltransferase (Carnitine acetylase) (EC 2.3.	w
+ACETYLTRANSFERASE	human	P42765	ACAA2	P42765	6	248	3-ketoacyl-CoA thiolase, mitochondrial (EC 2.3.1.16) (Acetyl	w
+ACETYLTRANSFERASE	human	P43155	CRAT	P43155	9	65	Carnitine O-acetyltransferase (Carnitine acetylase) (EC 2.3.	w
 ACETYLTRANSFERASE	human	P61599	NAA20	P61599	6	72	N-alpha-acetyltransferase 20 (EC 2.3.1.254) (Methionine N-ac	w
-ACETYLTRANSFERASE	human	P78537	BLOC1S1	P78537	23	447	Biogenesis of lysosome-related organelles complex 1 subunit 	w
+ACETYLTRANSFERASE	human	P78537	BLOC1S1	P78537	24	448	Biogenesis of lysosome-related organelles complex 1 subunit 	w
 ACETYLTRANSFERASE	human	Q09472	EP300	Q09472	109	1411	Histone acetyltransferase p300 (p300 HAT) (EC 2.3.1.48) (E1A	w
 ACETYLTRANSFERASE	human	Q14CX7	NAA25	Q14CX7	16	100	N-alpha-acetyltransferase 25, NatB auxiliary subunit (Mitoch	w
 ACETYLTRANSFERASE	human	Q16576	RBBP7	Q16576	73	919	Histone-binding protein RBBP7 (Histone acetyltransferase typ	w
 ACETYLTRANSFERASE	human	Q5SQI0	ATAT1	Q5SQI0	8	51	Alpha-tubulin N-acetyltransferase 1 (Alpha-TAT) (Alpha-TAT1)	w
 ACETYLTRANSFERASE	human	Q86UY6	NAA40	Q86UY6	140	1067	N-alpha-acetyltransferase 40 (EC 2.3.1.257) (N-acetyltransfe	w
-ACETYLTRANSFERASE	human	Q8N159	NAGS	Q8N159	8	110	N-acetylglutamate synthase, mitochondrial (EC 2.3.1.1) (Amin	w
+ACETYLTRANSFERASE	human	Q8N159	NAGS	Q8N159	9	111	N-acetylglutamate synthase, mitochondrial (EC 2.3.1.1) (Amin	w
 ACETYLTRANSFERASE	human	Q8WYB5	KAT6B	Q8WYB5	32	139	Histone acetyltransferase KAT6B (EC 2.3.1.48) (Histone acety	w
 ACETYLTRANSFERASE	human	Q92793	CREBBP	Q92793	105	736	CREB-binding protein (Histone lysine acetyltransferase CREBB	w
 ACETYLTRANSFERASE	human	Q92794	KAT6A	Q92794	79	588	Histone acetyltransferase KAT6A (EC 2.3.1.48) (MOZ, YBF2/SAS	w
@@ -378,11 +379,11 @@ ACETYLTRANSFERASE	worm	O01757	nath-10	O01757	8	96	RNA cytidine acetyltransferase
 ACETYLTRANSFERASE	worm	O16486	natc-2	O16486	2	16	N-terminal methionine N(alpha)-acetyltransferase NatC	w
 ACETYLTRANSFERASE	worm	O17681	C49F5.5	O17681	0	9	histone acetyltransferase	w
 ACETYLTRANSFERASE	worm	O46009	CELE_ZK228.3	O46009	0	14	YitH/HolE acetyltransferase (GNAT) domain-containing protein	w
-ACETYLTRANSFERASE	worm	Q19749	dlat-1	Q19749	2	68	Dihydrolipoyllysine-residue acetyltransferase component of p	w
+ACETYLTRANSFERASE	worm	Q19749	dlat-1	Q19749	3	68	Dihydrolipoyllysine-residue acetyltransferase component of p	w
 ACETYLTRANSFERASE	worm	Q20220	CELE_F40F4.7	Q20220	1	23	N-terminal methionine N(alpha)-acetyltransferase NatE	w
 ACETYLTRANSFERASE	worm	Q21484	hat-1	Q21484	4	26	Histone acetyltransferase type B catalytic subunit	w
 ACETYLTRANSFERASE	worm	Q21986	cra-1	Q21986	4	43	N-terminal acetyltransferase B complex subunit NAA25 homolog	w
-ACETYLTRANSFERASE	worm	Q22100	kat-1	Q22100	2	34	Acetyl-CoA acetyltransferase homolog, mitochondrial	w
+ACETYLTRANSFERASE	worm	Q22100	kat-1	Q22100	4	36	Acetyl-CoA acetyltransferase homolog, mitochondrial	w
 ACETYLTRANSFERASE	worm	Q22128	CELE_T03G6.1	Q22128	0	1	YitH/HolE acetyltransferase (GNAT) domain-containing protein	w
 ACETYLTRANSFERASE	worm	Q7JMS5	cbp-3	Q7JMS5	2	11	histone acetyltransferase	w
 ACETYLTRANSFERASE	worm	Q95QE8	CELE_F54E7.9	Q95QE8	2	22	N-terminal methionine N(alpha)-acetyltransferase NatE	w
@@ -417,6 +418,7 @@ ACETYLTRANSFERASE	yeast	Q12341	HAT1	Q12341	4	48	Histone acetyltransferase type B
 ACETYLTRANSFERASE	yeast	Q12387	MDM20	Q12387	2	20	N-terminal acetyltransferase B complex subunit MDM20	w
 ACETYLTRANSFERASE	zebrafish	A0A0R4IHX8	sat2b	A0A0R4IHX8	0	12	Diamine acetyltransferase 2b isoform 1	w
 ACETYLTRANSFERASE	zebrafish	A0A0R4IXF6	kat2a	A0A0R4IXF6	18	217	Histone acetyltransferase KAT2A	w
+ACETYLTRANSFERASE	zebrafish	A0A8M1PHE0	pdhx	A0A8M1PHE0	3	3	Dihydrolipoamide acetyltransferase component of pyruvate deh	w
 ACETYLTRANSFERASE	zebrafish	A0A8M1PHR3	kat8	A0A8M1PHR3	12	89	Histone acetyltransferase	w
 ACETYLTRANSFERASE	zebrafish	B8JKI8	kat5b	B8JKI8	15	154	Histone acetyltransferase KAT5	w
 ACETYLTRANSFERASE	zebrafish	F1R0J8	pdhx	F1R0J8	1	33	Dihydrolipoamide acetyltransferase component of pyruvate deh	w
@@ -424,13 +426,15 @@ ACETYLTRANSFERASE	zebrafish	F6NRK1	dlat	F6NRK1	6	33	Acetyltransferase component 
 ACETYLTRANSFERASE	zebrafish	Q08BX4	kat7a	Q08BX4	3	84	Histone acetyltransferase KAT7a	w
 ACETYLTRANSFERASE	zebrafish	Q1LUC3	kat2b	Q1LUC3	23	224	Histone acetyltransferase KAT2B	w
 ACETYLTRANSFERASE	zebrafish	Q4V8U3	sat1a.1	Q4V8U3	0	3	Diamine acetyltransferase 1	w
+ACETYLTRANSFERASE	zebrafish	Q5BKV3	zgc:103768	Q5BKV3	2	2	Dihydrolipoamide acetyltransferase component of pyruvate deh	w
 ACETYLTRANSFERASE	zebrafish	Q5PR44	sat2a.2	Q5PR44	1	2	Diamine acetyltransferase 2a	w
 ACETYLTRANSFERASE	zebrafish	Q66HU5	hat1	Q66HU5	3	25	Histone acetyltransferase type B catalytic subunit	w
-ACETYLTRANSFERASE	zebrafish	Q6AZA0	acat1	Q6AZA0	1	16	Acetyl-CoA acetyltransferase, mitochondrial	w
+ACETYLTRANSFERASE	zebrafish	Q6AZA0	acat1	Q6AZA0	3	18	Acetyl-CoA acetyltransferase, mitochondrial	w
 ACETYLTRANSFERASE	zebrafish	Q6DHD0	kat5a	Q6DHD0	15	89	Histone acetyltransferase KAT5	w
 ACETYLTRANSFERASE	zebrafish	Q6GQM2	sat1a.2	Q6GQM2	0	3	Diamine acetyltransferase 1	w
 ACETYLTRANSFERASE	zebrafish	Q7T174	sat1b	Q7T174	0	3	Diamine acetyltransferase 1	w
 ACETYLTRANSFERASE	zebrafish	Q7T3B8	naa10	Q7T3B8	9	65	N-terminal amino-acid N(alpha)-acetyltransferase NatA	w
 ACETYLTRANSFERASE	zebrafish	Q7ZW29	kat7b	Q7ZW29	6	81	Histone acetyltransferase	w
+ACETYLTRANSFERASE	zebrafish	Q804C3	wu:fc21f08	Q804C3	3	3	Acetyltransferase component of pyruvate dehydrogenase comple	w
 ACETYLTRANSFERASE-LIKE	human	Q86VE3	SATL1	Q86VE3	3	45	Spermidine/spermine N(1)-acetyltransferase-like protein 1 (E	w
 ACE_HUMAN	human	P12821	ACE	P12821	11	283		

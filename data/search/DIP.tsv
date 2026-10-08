@@ -63,7 +63,7 @@ DIPEPTIDASE	fly	FBgn0266100	CG44837	X2JCU8	6	20	Dipeptidase (EC 3.4.13.19)	w
 DIPEPTIDASE	fly	FBgn0287767	Cndp2	Q8MT58	1	173	Carnosine dipeptidase 2, isoform A (EC 3.4.13.-) (RE11562p)	w
 DIPEPTIDASE	human	P12955	PEPD	P12955	3	127	Xaa-Pro dipeptidase (X-Pro dipeptidase) (EC 3.4.13.9) (Imido	w
 DIPEPTIDASE	human	P16444	DPEP1	P16444	14	106	Dipeptidase 1 (EC 3.4.13.19) (Beta-lactamase) (EC 3.5.2.6) (	w
-DIPEPTIDASE	human	P28838	LAP3	P28838	4	139	Cytosol aminopeptidase (EC 3.4.11.1) (Cysteinylglycine-S-con	w
+DIPEPTIDASE	human	P28838	LAP3	P28838	7	142	Cytosol aminopeptidase (EC 3.4.11.1) (Cysteinylglycine-S-con	w
 DIPEPTIDASE	human	Q6V1X1	DPP8	Q6V1X1	5	64	Dipeptidyl peptidase 8 (DP8) (EC 3.4.14.5) (Dipeptidyl pepti	w
 DIPEPTIDASE	human	Q7L266	ASRGL1	Q7L266	3	53	Isoaspartyl peptidase/L-asparaginase (EC 3.4.19.5) (EC 3.5.1	w
 DIPEPTIDASE	human	Q8IYS1	PM20D2	Q8IYS1	0	94	Xaa-Arg dipeptidase (EC 3.4.13.4) (Beta-Ala-Lys dipeptidase)	w
@@ -121,16 +121,16 @@ DIPHOS	human	Q9NZJ9	NUDT4	Q9NZJ9	2	35	Diphosphoinositol polyphosphate phosphohyd
 DIPHOSPHATAS	human	Q8NFF5	FLAD1	Q8NFF5	9	148	Bifunctional FAD diphosphatase/FAD synthase [Includes: FAD d	w
 DIPHOSPHATASE	fly	FBgn0036111	Aps	Q7JVG2	2	19	diphosphoinositol-polyphosphate diphosphatase (EC 3.6.1.52)	w
 DIPHOSPHATASE	fly	FBgn0037372	Dcps	Q9VNH5	1	21	m7GpppX diphosphatase (EC 3.6.1.59)	w
-DIPHOSPHATASE	human	A8MXV4	NUDT19	A8MXV4	8	165	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
+DIPHOSPHATASE	human	A8MXV4	NUDT19	A8MXV4	21	178	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
 DIPHOSPHATASE	human	P0C024	NUDT7	P0C024	4	33	Peroxisomal coenzyme A diphosphatase NUDT7 (EC 3.6.1.-) (EC 	w
 DIPHOSPHATASE	human	P36639	NUDT1	P36639	3	118	Oxidized purine nucleoside triphosphate hydrolase (EC 3.6.1.	w
 DIPHOSPHATASE	human	P53370	NUDT6	P53370	1	48	Nudix hydrolase 6 (Antisense basic fibroblast growth factor)	w
 DIPHOSPHATASE	human	Q3LIE5	ADPRM	Q3LIE5	10	123	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase (EC	w
 DIPHOSPHATASE	human	Q8N6M3	FITM2	Q8N6M3	0	128	Acyl-coenzyme A diphosphatase FITM2 (EC 3.6.1.-) (Fat storag	w
 DIPHOSPHATASE	human	Q8NFF5	FLAD1	Q8NFF5	9	148	Bifunctional FAD diphosphatase/FAD synthase [Includes: FAD d	w
-DIPHOSPHATASE	human	Q8WV74	NUDT8	Q8WV74	4	73	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	w
+DIPHOSPHATASE	human	Q8WV74	NUDT8	Q8WV74	8	76	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	w
 DIPHOSPHATASE	human	Q96C86	DCPS	Q96C86	5	296	m7GpppX diphosphatase (EC 3.6.1.59) (DCS-1) (Decapping scave	w
-DIPHOSPHATASE	human	Q9BW91	NUDT9	Q9BW91	4	56	ADP-ribose pyrophosphatase (EC 3.6.1.13) (ADP-ribose diphosp	w
+DIPHOSPHATASE	human	Q9BW91	NUDT9	Q9BW91	6	57	ADP-ribose pyrophosphatase (EC 3.6.1.13) (ADP-ribose diphosp	w
 DIPHOSPHATASE	human	Q9NV35	NUDT15	Q9NV35	7	87	Nucleotide triphosphate diphosphatase NUDT15 (EC 3.6.1.68) (	w
 DIPHOSPHATASE	virus	A0A059XN78		A0A059XN78	1	30	dUTP diphosphatase	w
 DIPHOSPHATASE	virus	A0A075FAP2		A0A075FAP2	2	36	dUTP diphosphatase	w
@@ -183,30 +183,30 @@ DIPHOSPHATASE	yeast	Q12524	PCD1	Q12524	0	17	Peroxisomal coenzyme A diphosphatase
 DIPHOSPHATASE	zebrafish	A0A0R4IRJ2	ppa2	A0A0R4IRJ2	0	8	inorganic diphosphatase	w
 DIPHOSPHATASE	zebrafish	A0A8M1PGD6	dcps	A0A8M1PGD6	0	13	m7GpppX diphosphatase	w
 DIPHOSPHATASE	zebrafish	A0A8M1PIV5	nudt3a	A0A8M1PIV5	1	15	diphosphoinositol-polyphosphate diphosphatase	w
-DIPHOSPHATASE	zebrafish	B3DHE6	nudt19	B3DHE6	1	17	Acyl-coenzyme A diphosphatase NUDT19	w
+DIPHOSPHATASE	zebrafish	B3DHE6	nudt19	B3DHE6	3	19	Acyl-coenzyme A diphosphatase NUDT19	w
 DIPHOSPHATASE	zebrafish	E7FAS2	nudt7	E7FAS2	0	16	Peroxisomal coenzyme A diphosphatase NUDT7	w
 DIPHOSPHATASE	zebrafish	Q1L8L1	nudt4a	Q1L8L1	1	14	diphosphoinositol-polyphosphate diphosphatase	w
 DIPHOSPHATASE	zebrafish	Q5XJC2	nudt3b	Q5XJC2	1	17	diphosphoinositol-polyphosphate diphosphatase	w
 DIPHOSPHATASE	zebrafish	Q66JN9	nudt4b	Q66JN9	1	16	diphosphoinositol-polyphosphate diphosphatase	w
 DIPHOSPHATASE	zebrafish	Q7T291	adprm	Q7T291	1	5	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase	w
 DIPHOSPHATE	fly	FBgn0000150	awd	A0A0B4LHX6	24	656	Nucleoside diphosphate kinase (EC 2.7.4.6)	w
-DIPHOSPHATE	fly	FBgn0030573	nmdyn-D6	Q9VY27	4	189	Nucleoside diphosphate kinase (EC 2.7.4.6)	w
+DIPHOSPHATE	fly	FBgn0030573	nmdyn-D6	Q9VY27	5	191	Nucleoside diphosphate kinase (EC 2.7.4.6)	w
 DIPHOSPHATE	fly	FBgn0031312	Tango14	Q9VPX8	1	8	ditrans,polycis-polyprenyl diphosphate synthase [(2E,6E)-far	w
 DIPHOSPHATE	fly	FBgn0037044	Pdss2	Q9VP87	3	30	Decaprenyl diphosphate synthase subunit 2, isoform A (Decapr	w
 DIPHOSPHATE	fly	FBgn0039650	Mesh1	Q9VAM9	3	160	Guanosine-3',5'-bis(diphosphate) 3'-pyrophosphohydrolase MES	w
 DIPHOSPHATE	fly	FBgn0039809	CG15547	Q9VA28	9	190	Nucleoside diphosphate kinase-like domain-containing protein	w
-DIPHOSPHATE	human	O00746	NME4	O00746	18	283	Nucleoside diphosphate kinase D, mitochondrial (NDPK-D) (EC 	w
+DIPHOSPHATE	human	O00746	NME4	O00746	21	286	Nucleoside diphosphate kinase D, mitochondrial (NDPK-D) (EC 	w
 DIPHOSPHATE	human	O75356	ENTPD5	O75356	5	37	Nucleoside diphosphate phosphatase ENTPD5 (EC 3.6.1.6) (CD39	w
-DIPHOSPHATE	human	O75414	NME6	O75414	6	144	Nucleoside diphosphate kinase 6, mitochondrial (NDK6) (NDP k	w
+DIPHOSPHATE	human	O75414	NME6	O75414	9	149	Nucleoside diphosphate kinase 6, mitochondrial (NDK6) (NDP k	w
 DIPHOSPHATE	human	O95749	GGPS1	O95749	1	134	Geranylgeranyl pyrophosphate synthase (GGPP synthase) (GGPPS	w
 DIPHOSPHATE	human	O95848	NUDT14	O95848	2	64	Uridine diphosphate glucose pyrophosphatase NUDT14 (UDPG pyr	w
-DIPHOSPHATE	human	P14324	FDPS	P14324	3	156	Farnesyl pyrophosphate synthase (FPP synthase) (FPS) (EC 2.5	w
+DIPHOSPHATE	human	P14324	FDPS	P14324	4	157	Farnesyl pyrophosphate synthase (FPP synthase) (FPS) (EC 2.5	w
 DIPHOSPHATE	human	P15531	NME1	P15531	9	279	Nucleoside diphosphate kinase A (NDP kinase A) (NDPK A) (EC 	w
 DIPHOSPHATE	human	P22392	NME2	P22392	13	702	Nucleoside diphosphate kinase B (NDP kinase B) (NDPK B) (EC 	w
 DIPHOSPHATE	human	P31150	GDI1	P31150	49	275	Rab GDP dissociation inhibitor alpha (Rab GDI alpha) (Guanos	w
 DIPHOSPHATE	human	P50395	GDI2	P50395	38	292	Rab GDP dissociation inhibitor beta (Rab GDI beta) (Guanosin	w
 DIPHOSPHATE	human	P56597	NME5	P56597	7	81	Nucleoside diphosphate kinase 5 (NDK5) (Inhibitor of p53-ind	w
-DIPHOSPHATE	human	Q13232	NME3	Q13232	11	209	Nucleoside diphosphate kinase C (NDPK-C) (EC 2.7.4.6) (DR-nm	w
+DIPHOSPHATE	human	Q13232	NME3	Q13232	12	210	Nucleoside diphosphate kinase C (NDPK-C) (EC 2.7.4.6) (DR-nm	w
 DIPHOSPHATE	human	Q32Q12	NME1-NME2	Q32Q12	4	100	Nucleoside diphosphate kinase	w
 DIPHOSPHATE	human	Q86SQ9	DHDDS	Q86SQ9	13	189	Dehydrodolichyl diphosphate synthase complex subunit DHDDS (	w
 DIPHOSPHATE	human	Q8IY26	PLPP6	Q8IY26	7	105	Polyisoprenoid diphosphate/phosphate phosphohydrolase PLPP6 	w
@@ -224,6 +224,7 @@ DIPHOSPHATE	yeast	P35196	RER2	P35196	2	20	Dehydrodolichyl diphosphate synthase c
 DIPHOSPHATE	yeast	P36010	YNK1	P36010	4	159	Nucleoside diphosphate kinase	w
 DIPHOSPHATE	yeast	Q03175	SRT1	Q03175	2	4	Dehydrodolichyl diphosphate synthase complex subunit SRT1	w
 DIPHOSPHATE	yeast	Q12063	NUS1	Q12063	2	14	Dehydrodolichyl diphosphate synthase complex subunit NUS1	w
+DIPHOSPHATE	zebrafish	A0A8M9PJG3	nme3	A0A8M9PJG3	1	1	Nucleoside diphosphate kinase	w
 DIPHOSPHATE	zebrafish	A0A8N7UZE3	nme7	A0A8N7UZE3	10	161	Nucleoside diphosphate kinase homolog 7	w
 DIPHOSPHATE	zebrafish	A0AB13A3H6	nme2b.1	A0AB13A3H6	2	135	Nucleoside diphosphate kinase	w
 DIPHOSPHATE	zebrafish	A0AB40E4T4	nme4	A0AB40E4T4	8	142	Nucleoside diphosphate kinase	w
@@ -232,20 +233,22 @@ DIPHOSPHATE	zebrafish	Q1LXZ5	nudt14	Q1LXZ5	0	12	Uridine diphosphate glucose pyro
 DIPHOSPHATE	zebrafish	Q568P1	hddc3	Q568P1	3	62	Guanosine-3,5-bis(diphosphate) 3'-pyrophosphohydrolase MESH1	w
 DIPHOSPHATE	zebrafish	Q5TZ07	plpp6	Q5TZ07	0	1	Polyisoprenoid diphosphate/phosphate phosphohydrolase PLPP6	w
 DIPHOSPHATE	zebrafish	Q6DGQ8	nme5	Q6DGQ8	2	121	Nucleoside diphosphate kinase homolog 5	w
+DIPHOSPHATE	zebrafish	Q6DHQ9	zgc:92156	Q6DHQ9	1	1	Prenyl (Decaprenyl) diphosphate synthase, subunit 2	w
 DIPHOSPHATE	zebrafish	Q6DHR8	nus1	Q6DHR8	0	1	Dehydrodolichyl diphosphate synthase complex subunit nus1	w
-DIPHOSPHATE	zebrafish	Q6DI51	nme6	Q6DI51	4	130	Nucleoside diphosphate kinase 6	w
+DIPHOSPHATE	zebrafish	Q6DI51	nme6	Q6DI51	8	135	Nucleoside diphosphate kinase 6	w
 DIPHOSPHATE	zebrafish	Q6PC37	nme2a	Q6PC37	9	146	Nucleoside diphosphate kinase	w
 DIPHOSPHATE	zebrafish	Q7SXL4	nme2b.2	Q7SXL4	5	143	Nucleoside diphosphate kinase	w
+DIPHOSPHATE	zebrafish	Q7ZUI5	zgc:56482	Q7ZUI5	1	2	Nucleoside diphosphate kinase	w
 DIPHOSPHATE	zebrafish	Q9PTF3	nme3	Q9PTF3	5	143	Nucleoside diphosphate kinase 3	w
-DIPHOSPHATE-LINK	human	Q9UKK9	NUDT5	Q9UKK9	9	127	ADP-sugar pyrophosphatase (EC 3.6.1.13) (8-oxo-dGDP phosphat	w
+DIPHOSPHATE-LINK	human	Q9UKK9	NUDT5	Q9UKK9	21	140	ADP-sugar pyrophosphatase (EC 3.6.1.13) (8-oxo-dGDP phosphat	w
 DIPHOSPHATE-LINKED	human	A0A024RBG1	NUDT4B	A0A024RBG1	0	28	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B (DIP	w
-DIPHOSPHATE-LINKED	human	A8MXV4	NUDT19	A8MXV4	8	165	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
+DIPHOSPHATE-LINKED	human	A8MXV4	NUDT19	A8MXV4	21	178	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
 DIPHOSPHATE-LINKED	human	O95848	NUDT14	O95848	2	64	Uridine diphosphate glucose pyrophosphatase NUDT14 (UDPG pyr	w
 DIPHOSPHATE-LINKED	human	P0C024	NUDT7	P0C024	4	33	Peroxisomal coenzyme A diphosphatase NUDT7 (EC 3.6.1.-) (EC 	w
 DIPHOSPHATE-LINKED	human	P0C025	NUDT17	P0C025	1	16	m7GpppN-mRNA hydrolase NUDT17 (EC 3.6.1.62) (Nucleoside diph	w
-DIPHOSPHATE-LINKED	human	Q86X67	NUDT13	Q86X67	0	26	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	w
+DIPHOSPHATE-LINKED	human	Q86X67	NUDT13	Q86X67	1	27	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	w
 DIPHOSPHATE-LINKED	human	Q8IU60	DCP2	Q8IU60	22	195	m7GpppN-mRNA hydrolase (EC 3.6.1.62) (Nucleoside diphosphate	w
-DIPHOSPHATE-LINKED	human	Q8WV74	NUDT8	Q8WV74	4	73	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	w
+DIPHOSPHATE-LINKED	human	Q8WV74	NUDT8	Q8WV74	8	76	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	w
 DIPHOSPHATE-LINKED	human	Q96DE0	NUDT16	Q96DE0	2	55	U8 snoRNA-decapping enzyme (EC 3.6.1.62) (IDP phosphatase) (	w
 DIPHOSPHATE-LINKED	human	Q9BQG2	NUDT12	Q9BQG2	3	53	NAD-capped RNA hydrolase NUDT12 (DeNADding enzyme NUDT12) (E	w
 DIPHOSPHATE-LINKED	human	Q9BRQ3	NUDT22	Q9BRQ3	7	54	Uridine diphosphate glucose pyrophosphatase NUDT22 (EC 3.6.1	w
@@ -291,7 +294,7 @@ DIPHOSPHOMEVALONATE	fly	FBgn0030683	Mvd	Q9VXQ3	0	23	Diphosphomevalonate decarbox
 DIPHOSPHOMEVALONATE	human	P53602	MVD	P53602	1	80	Diphosphomevalonate decarboxylase (EC 4.1.1.33) (Mevalonate 	w
 DIPHOSPHOMEVALONATE	worm	Q9U294	CELE_Y48B6A.13	Q9U294	0	8	Diphosphomevalonate decarboxylase	w
 DIPHOSPHOMEVALONATE	yeast	P32377	MVD1	P32377	0	13	Diphosphomevalonate decarboxylase	w
-DIPHOSPHORIBOSE	human	Q9BW91	NUDT9	Q9BW91	4	56	ADP-ribose pyrophosphatase (EC 3.6.1.13) (ADP-ribose diphosp	w
+DIPHOSPHORIBOSE	human	Q9BW91	NUDT9	Q9BW91	6	57	ADP-ribose pyrophosphatase (EC 3.6.1.13) (ADP-ribose diphosp	w
 DIPHOSPHORYLASE	fly	FBgn0259749	mmy	Q9Y0Z0	0	16	UDP-N-acetylglucosamine diphosphorylase (EC 2.7.7.23)	w
 DIPHOSPHORYLASE	human	O14772	FPGT	O14772	0	61	Fucose-1-phosphate guanylyltransferase (EC 2.7.7.30) (GDP-L-	w
 DIPHTHAMIDE	fly	FBgn0030336	Dph6	Q8MRI4	0	12	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w

@@ -34,19 +34,19 @@ MACC1	human	Q6ZN28	MACC1	Q6ZN28	10	84	Metastasis-associated in colon cancer prot
 MACC1	mus-musculus	E9PXX8	Macc1	E9PXX8	0	1	Metastasis-associated in colon cancer protein 1	
 MACC1	rattus-norvegicus	F1LXW4	Macc1	F1LXW4	0	2	Metastasis-associated in colon cancer protein 1	
 MACC1_HUMAN	human	Q6ZN28	MACC1	Q6ZN28	10	84		
-MACD1_HUMAN	human	Q9BQ69	MACROD1	Q9BQ69	8	86		
+MACD1_HUMAN	human	Q9BQ69	MACROD1	Q9BQ69	25	102		
 MACD2_HUMAN	human	A1Z1Q3	MACROD2	A1Z1Q3	2	19		
 MACGAP	human	Q8N392	ARHGAP18	Q8N392	17	174	Rho GTPase-activating protein 18 (MacGAP) (Rho-type GTPase-a	w
 MACHADO-JOSEPH	human	P54252	ATXN3	P54252	34	517	Ataxin-3 (EC 3.4.19.12) (Machado-Joseph disease protein 1) (	w
 MACHADO-JOSEPH	human	Q9H3M9	ATXN3L	Q9H3M9	9	59	Ataxin-3-like protein (EC 3.4.19.12) (Machado-Joseph disease	w
 MACHETE	fly	FBgn0040060	yip7	Q9VRS4	69	263	Machete (Yippee interacting protein 7 (EC 3.4.21.-))	w
-MACHINERY	human	Q9Y512	SAMM50	Q9Y512	9	201	Sorting and assembly machinery component 50 homolog (Transfo	w
+MACHINERY	human	Q9Y512	SAMM50	Q9Y512	10	202	Sorting and assembly machinery component 50 homolog (Transfo	w
 MACHINERY	yeast	P14693	SAM35	P14693	3	39	Sorting assembly machinery 35 kDa subunit	w
 MACHINERY	yeast	P38753	HSE1	P38753	12	108	Class E vacuolar protein-sorting machinery protein HSE1	w
 MACHINERY	yeast	P50110	SAM37	P50110	3	31	Sorting assembly machinery 37 kDa subunit	w
 MACHINERY	yeast	P53969	SAM50	P53969	7	385	Sorting assembly machinery 50 kDa subunit	w
 MACHINERY	zebrafish	Q5U3I0	samm50b	Q5U3I0	3	26	Sorting and assembly machinery component 50 homolog B	w
-MACHINERY	zebrafish	Q803G5	samm50a	Q803G5	3	26	Sorting and assembly machinery component 50 homolog A	w
+MACHINERY	zebrafish	Q803G5	samm50a	Q803G5	4	27	Sorting and assembly machinery component 50 homolog A	w
 MACHINERY-ASSOCIATED	fly	FBgn0026879	CG13364	Q9XZS3	2	7	Translation machinery-associated protein 7 homolog (Coiled-c	w
 MACHINERY-ASSOCIATED	fly	FBgn0030611	CG15027	Q9VXY4	2	66	Translation machinery-associated protein 16 homolog	w
 MACHINERY-ASSOCIATED	fly	FBgn0040973	CG16824	Q6IHK7	1	2	Translation machinery-associated protein 7 homolog (Coiled-c	w
@@ -80,11 +80,11 @@ MACOILIN	human	Q8N5G2	MACO1	Q8N5G2	39	188	Macoilin (Macoilin-1) (Transmembrane p
 MACOILIN-1	human	Q8N5G2	MACO1	Q8N5G2	39	188	Macoilin (Macoilin-1) (Transmembrane protein 57)	w
 MACOILIN-1	zebrafish	Q2TLY2	Maco1a	Q2TLY2	0	2	Macoilin-1	w
 MACOI_HUMAN	human	Q8N5G2	MACO1	Q8N5G2	39	188		
-MACON1	fly	FBgn0010100	mAcon1	Q9VIE8	6	320	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	
+MACON1	fly	FBgn0010100	mAcon1	Q9VIE8	7	321	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	
 MACON2	fly	FBgn0037862	mAcon2	Q8T4D6	10	359	Aconitate hydratase, mitochondrial (Aconitase) (EC 4.2.1.3)	
 MACRO	fly	FBgn0085290	Targ3	A8JNW5	0	1	Macro domain-containing protein	w
 MACRO	human	A1Z1Q3	MACROD2	A1Z1Q3	2	19	ADP-ribose glycohydrolase MACROD2 (MACRO domain-containing p	w
-MACRO	human	Q9BQ69	MACROD1	Q9BQ69	8	86	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	w
+MACRO	human	Q9BQ69	MACROD1	Q9BQ69	25	102	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	w
 MACRO	virus	Q9YVL7	MSV225	Q9YVL7	15	261	Macro domain-containing protein	w
 MACRO	worm	Q17432	B0035.3	Q17432	0	10	Macro domain-containing protein	w
 MACRO-H2A	human	O75367	MACROH2A1	O75367	76	563	Core histone macro-H2A.1 (Histone macroH2A1) (mH2A1) (Histon	w
@@ -92,11 +92,13 @@ MACRO-H2A	human	Q9P0M6	MACROH2A2	Q9P0M6	61	393	Core histone macro-H2A.2 (Histone
 MACRO-H2A	zebrafish	Q1RLR9	macroh2a1	Q1RLR9	22	166	Core histone macro-H2A	w
 MACRO-H2A	zebrafish	Q4V914	macroh2a2	Q4V914	26	167	Core histone macro-H2A	w
 MACROAUTOPHAGY	human	A6NC51	TMEM150B	A6NC51	7	32	Modulator of macroautophagy TMEM150B (Protein DRAM-3) (Trans	w
-MACROD1	human	Q9BQ69	MACROD1	Q9BQ69	8	86	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	
-MACROD1	mus-musculus	Q922B1	Macrod1	Q922B1	0	4	ADP-ribose glycohydrolase MACROD1	
-MACROD1	rattus-norvegicus	Q8K4G6	Macrod1	Q8K4G6	1	2	ADP-ribose glycohydrolase MACROD1	
+MACROD1	human	Q9BQ69	MACROD1	Q9BQ69	25	102	ADP-ribose glycohydrolase MACROD1 (MACRO domain-containing p	
+MACROD1	mus-musculus	Q922B1	Macrod1	Q922B1	13	18	ADP-ribose glycohydrolase MACROD1	
+MACROD1	pan-troglodytes	H2Q3Y8	MACROD1	H2Q3Y8	15	16	MACRO domain containing 1	
+MACROD1	rattus-norvegicus	Q8K4G6	Macrod1	Q8K4G6	14	15	ADP-ribose glycohydrolase MACROD1	
 MACROD1	zebrafish	F6PBM1	macrod1	F6PBM1	0	2	ADP-ribose glycohydrolase MACROD1	w
 MACROD1	zebrafish	F6PBM1	macrod1	F6PBM1	0	2	ADP-ribose glycohydrolase MACROD1	w
+MACROD1.L	xenopus-laevis	A0A8J1MUA0	macrod1.L	A0A8J1MUA0	7	7	MACRO domain containing 1 L homeolog isoform X1	
 MACROD2	human	A1Z1Q3	MACROD2	A1Z1Q3	2	19	ADP-ribose glycohydrolase MACROD2 (MACRO domain-containing p	
 MACROGLOBULIN	fly	FBgn0267488	Mcr	Q9VLT3	0	12	LD23292p (Macroglobulin complement-related)	w
 MACROGLOBULIN-LIKE	zebrafish	B8QSI4	a2m2e	B8QSI4	0	16	Alpha-2 macroglobulin-like protein	w
@@ -168,7 +170,7 @@ MACROPHAGE	human	Q9P0V8	SLAMF8	Q9P0V8	35	339	SLAM family member 8 (B-lymphocyte 
 MACROPHAGE	human	Q9UBG0	MRC2	Q9UBG0	9	88	C-type mannose receptor 2 (C-type lectin domain family 13 me	w
 MACROPHAGE	human	Q9UEW3	MARCO	Q9UEW3	3	23	Macrophage receptor MARCO (Macrophage receptor with collagen	w
 MACROPHAGE	human	Q9Y258	CCL26	Q9Y258	74	352	C-C motif chemokine 26 (CC chemokine IMAC) (Eotaxin-3) (Macr	w
-MACROPHAGE	human	Q9Y3D7	PAM16	Q9Y3D7	17	172	Mitochondrial import inner membrane translocase subunit TIM1	w
+MACROPHAGE	human	Q9Y3D7	PAM16	Q9Y3D7	23	178	Mitochondrial import inner membrane translocase subunit TIM1	w
 MACROPHAGE	virus	Q98157	vCCL2	Q98157	3	85	Viral macrophage inflammatory protein 2	w
 MACROPHAGE	worm	H2KZF3	CELE_Y71G12B.23	H2KZF3	1	4	Monocyte to macrophage differentiation factor	w
 MACROPHAGE	worm	Q9GUG4	mif-4	Q9GUG4	0	14	Macrophage migration inhibitory factor	w
@@ -197,9 +199,9 @@ MACROPHAGES	human	O43866	CD5L	O43866	24	391	CD5 antigen-like (Apoptosis inhibito
 MACROSIALIN	human	P34810	CD68	P34810	61	544	Macrosialin (Gp110) (CD antigen CD68)	w
 MACROSIALIN	zebrafish	E7F3A5	cd68	E7F3A5	1	37	Macrosialin	w
 MACS	human	P29966	MARCKS	P29966	37	870		
-MACS1	human	Q08AH1	ACSM1	Q08AH1	1	55		
-MACS2	human	Q08AH3	ACSM2A	Q08AH3	1	29		
-MACS3	human	Q6NUN0	ACSM5	Q6NUN0	3	82		
+MACS1	human	Q08AH1	ACSM1	Q08AH1	2	56		
+MACS2	human	Q08AH3	ACSM2A	Q08AH3	4	32		
+MACS3	human	Q6NUN0	ACSM5	Q6NUN0	4	83		
 MACULAR	human	O76090	BEST1	O76090	1	22	Bestrophin-1 (TU15B) (Vitelliform macular dystrophy protein 	w
 MACULAR	human	Q8N1M1	BEST3	Q8N1M1	1	16	Bestrophin-3 (Vitelliform macular dystrophy 2-like protein 3	w
 MACULAR	human	Q8NFU0	BEST4	Q8NFU0	0	24	Bestrophin-4 (Vitelliform macular dystrophy 2-like protein 2	w

@@ -30,7 +30,7 @@ CORA_76	fly	FBgn0010434	cora	Q9V8R9	3	27
 CORD	fly	FBgn0051619	nolo	Q0E8N3	2	12	No long nerve cord, isoform C (EC 3.4.24.-) (No long nerve c	w
 CORD	human	Q7Z418	KCNK18	Q7Z418	19	85	Potassium channel subfamily K member 18 (TWIK-related indivi	w
 CORD-DERIVED	human	Q9GZP0	PDGFD	Q9GZP0	13	70	Platelet-derived growth factor D (PDGF-D) (Iris-expressed gr	w
-CORD-DERIVED	human	Q9NPE2	NGRN	Q9NPE2	74	546	Neugrin (Mesenchymal stem cell protein DSC92) (Neurite outgr	w
+CORD-DERIVED	human	Q9NPE2	NGRN	Q9NPE2	75	547	Neugrin (Mesenchymal stem cell protein DSC92) (Neurite outgr	w
 CORD-DERIVED	human	Q9NRA1	PDGFC	Q9NRA1	23	153	Platelet-derived growth factor C (PDGF-C) (Fallotein) (Spina	w
 CORD2	human	O43186	CRX	O43186	150	502		
 CORD5	arabidopsis-thaliana	O64602	CORD5	O64602	0	2	At1g70340	
@@ -46,7 +46,7 @@ CORE	fly	FBgn0032078	C1GalTA	Q7K237	136	2412	Glycoprotein-N-acetylgalactosamine 
 CORE	fly	FBgn0036485	FutA	Q9VUL9	191	2386	Glycoprotein 3-alpha-L-fucosyltransferase A (EC 2.4.1.214) (	w
 CORE	fly	FBgn0038271	UQCR-C1	Q9VFF0	9	211	GH01077p (Ubiquinol-cytochrome c reductase core protein 1, i	w
 CORE	fly	FBgn0086656	shrb	Q8T0Q4	27	238	Charged multivesicular body protein 4 (CHMP4) (ESCRT-III com	w
-CORE	fly	FBgn0250814	UQCR-C2	Q9VV75	20	228	AT02348p (Ubiquinol-cytochrome c reductase core protein 2, i	w
+CORE	fly	FBgn0250814	UQCR-C2	Q9VV75	22	231	AT02348p (Ubiquinol-cytochrome c reductase core protein 2, i	w
 CORE	fly	FBgn0261789	SmD2	Q9VI10	34	294	Probable small nuclear ribonucleoprotein Sm D2 (Sm-D2) (snRN	w
 CORE	fly	FBgn0261933	SmD1	Q9VU02	21	236	Probable small nuclear ribonucleoprotein Sm D1 (Sm-D1) (snRN	w
 CORE	human	F6S8H2	FAAP20	F6S8H2	2	52	FA core complex associated protein 20	w
@@ -57,9 +57,9 @@ CORE	human	P09651	HNRNPA1	P09651	53	851	Heterogeneous nuclear ribonucleoprotein 
 CORE	human	P10124	SRGN	P10124	28	301	Serglycin (Hematopoietic proteoglycan core protein) (Platele	w
 CORE	human	P13611	VCAN	P13611	1	26	Versican core protein (Chondroitin sulfate proteoglycan core	w
 CORE	human	P16112	ACAN	P16112	25	291	Aggrecan core protein (Cartilage-specific proteoglycan core 	w
-CORE	human	P22695	UQCRC2	P22695	62	468	Cytochrome b-c1 complex subunit 2, mitochondrial (Complex II	w
+CORE	human	P22695	UQCRC2	P22695	72	478	Cytochrome b-c1 complex subunit 2, mitochondrial (Complex II	w
 CORE	human	P31431	SDC4	P31431	27	273	Syndecan-4 (SYND4) (Amphiglycan) (Ryudocan core protein)	w
-CORE	human	P31930	UQCRC1	P31930	16	338	Cytochrome b-c1 complex subunit 1, mitochondrial (Complex II	w
+CORE	human	P31930	UQCRC1	P31930	20	342	Cytochrome b-c1 complex subunit 1, mitochondrial (Complex II	w
 CORE	human	P34741	SDC2	P34741	29	221	Syndecan-2 (SYND2) (Fibroglycan) (Heparan sulfate proteoglyc	w
 CORE	human	P48723	HSPA13	P48723	8	175	Heat shock 70 kDa protein 13 (Heat shock protein family A me	w
 CORE	human	P62314	SNRPD1	P62314	48	577	Small nuclear ribonucleoprotein Sm D1 (Sm-D1) (Sm-D autoanti	w
@@ -416,6 +416,7 @@ CORE	zebrafish	F1QEZ8	ncanb	F1QEZ8	5	15	Neurocan core protein	w
 CORE	zebrafish	F1QJE0	uqcrc2a	F1QJE0	9	120	Ubiquinol-cytochrome c reductase core protein 2a	w
 CORE	zebrafish	Q1RLR9	macroh2a1	Q1RLR9	22	166	Core histone macro-H2A	w
 CORE	zebrafish	Q4V914	macroh2a2	Q4V914	26	167	Core histone macro-H2A	w
+CORE	zebrafish	Q6PBH6	zgc:73404	Q6PBH6	6	7	Ubiquinol-cytochrome c reductase core protein I	w
 CORE	zebrafish	U3JAR8	faap100	U3JAR8	4	105	FA core complex-associated protein 100	w
 CORE-2	worm	Q9U3H9	CELE_F26D2.3	Q9U3H9	0	5	Core-2/I-Branching enzyme	w
 CORE-2	worm	Q9XXL4	CELE_ZK1225.1	Q9XXL4	1	7	Core-2/I-branching beta-1,6-N-acetylglucosaminyltransferase 	w
@@ -486,7 +487,7 @@ COREPRESSOR	human	O75081	CBFA2T3	O75081	29	127	Transcriptional corepressor CBFA2
 COREPRESSOR	human	O75182	SIN3B	O75182	64	290	Paired amphipathic helix protein Sin3b (Histone deacetylase 	w
 COREPRESSOR	human	O75376	NCOR1	O75376	93	499	Nuclear receptor corepressor 1 (N-CoR) (N-CoR1)	w
 COREPRESSOR	human	O75446	SAP30	O75446	74	545	Histone deacetylase complex subunit SAP30 (30 kDa Sin3-assoc	w
-COREPRESSOR	human	P30044	PRDX5	P30044	15	260	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepress	w
+COREPRESSOR	human	P30044	PRDX5	P30044	17	262	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepress	w
 COREPRESSOR	human	P84550	SKOR1	P84550	2	8	SKI family transcriptional corepressor 1 (Functional Smad-su	w
 COREPRESSOR	human	Q14919	DRAP1	Q14919	59	405	Dr1-associated corepressor (Dr1-associated protein 1) (Negat	w
 COREPRESSOR	human	Q2VWA4	SKOR2	Q2VWA4	1	14	SKI family transcriptional corepressor 2 (Functional Smad-su	w
@@ -497,7 +498,7 @@ COREPRESSOR	human	Q8N888	BCORP1	Q8N888	1	10	Putative BCoR-like protein 2 (BCL-6 
 COREPRESSOR	human	Q8TEE9	SAP25	Q8TEE9	3	36	Histone deacetylase complex subunit SAP25 (25 kDa Sin3-assoc	w
 COREPRESSOR	human	Q96JN0	LCOR	Q96JN0	134	531	Ligand-dependent corepressor (LCoR) (Mblk1-related protein 2	w
 COREPRESSOR	human	Q96ST3	SIN3A	Q96ST3	105	744	Paired amphipathic helix protein Sin3a (Histone deacetylase 	w
-COREPRESSOR	human	Q9BUT9	MCRIP2	Q9BUT9	11	79	MAPK regulated corepressor interacting protein 2 (Protein FA	w
+COREPRESSOR	human	Q9BUT9	MCRIP2	Q9BUT9	12	80	MAPK regulated corepressor interacting protein 2 (Protein FA	w
 COREPRESSOR	human	Q9BZK7	TBL1XR1	Q9BZK7	44	289	F-box-like/WD repeat-containing protein TBL1XR1 (Nuclear rec	w
 COREPRESSOR	human	Q9H4R4	NCOR1P1	Q9H4R4	31	122	Putative nuclear receptor corepressor 1-like protein NCOR1P1	w
 COREPRESSOR	human	Q9H7L9	SUDS3	Q9H7L9	42	340	Sin3 histone deacetylase corepressor complex component SDS3 	w
@@ -686,7 +687,7 @@ CORTICOSTATIN	human	P12838	DEFA4	P12838	8	93	Defensin alpha 4 (Corticostatin HP-
 CORTICOSTEROID	human	P28845	HSD11B1	P28845	17	128	11-beta-hydroxysteroid dehydrogenase 1 (11-DH) (11-beta-HSD1	w
 CORTICOSTEROID-BINDING	human	P08185	SERPINA6	P08185	26	283	Corticosteroid-binding globulin (CBG) (Serpin A6) (Transcort	w
 CORTICOSTEROIDS	human	A6NGB9	WIPF3	A6NGB9	13	47	WAS/WASL-interacting protein family member 3 (Corticosteroid	w
-CORTICOSTERONE	human	P19099	CYP11B2	P19099	6	43	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
+CORTICOSTERONE	human	P19099	CYP11B2	P19099	23	60	Cytochrome P450 11B2, mitochondrial (Aldosterone synthase) (	w
 CORTICOTROPIN	human	P01189	POMC	P01189	21	255	Pro-opiomelanocortin (POMC) (Corticotropin-lipotropin) [Clea	w
 CORTICOTROPIN	zebrafish	A8WG03	crhr2	A8WG03	2	43	Corticotropin releasing hormone receptor 2	w
 CORTICOTROPIN-LIPOTROPIN	human	P01189	POMC	P01189	21	255	Pro-opiomelanocortin (POMC) (Corticotropin-lipotropin) [Clea	w

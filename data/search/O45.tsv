@@ -23,9 +23,11 @@ O45097	worm	O45097	CELE_F57H12.6	O45097	0	2	DUF148 domain-containing protein
 O45100	worm	O45100	mec-17	O45100	0	2	Alpha-tubulin N-acetyltransferase 1	
 O45103	worm	O45103	snai-1	O45103	0	48	C2H2-type domain-containing protein	
 O45105	worm	O45105	col-101	O45105	0	1	Nematode cuticle collagen N-terminal domain-containing prote	
-O45106	worm	O45106	ech-5	O45106	0	17	Enoyl-CoA hydratase, mitochondrial	
+O45106	worm	O45106	ech-5	O45106	1	18	Enoyl-CoA hydratase, mitochondrial	
+O45106_CAEEL	worm	O45106	ech-5	O45106	1	18		
 O45108	worm	O45108	CELE_F56B3.6	O45108	0	1	Receptor expression-enhancing protein	
 O45110	worm	O45110	mrpl-2	O45110	5	286	Large ribosomal subunit protein uL2 C-terminal domain-contai	
+O45110_CAEEL	worm	O45110	mrpl-2	O45110	5	286		
 O45115	worm	O45115	gst-40	O45115	0	10	Glutathione S-transferase	
 O45133	worm	O45133	madf-11	O45133	2	19	MADF domain-containing protein	
 O45134	worm	O45134	xnd-1	O45134	1	48	X chromosome NonDisjunction factor	
@@ -35,6 +37,7 @@ O45143	worm	O45143	C34H4.2	O45143	0	8	CUB_2 domain-containing protein
 O45145	worm	O45145	W02F12.2	O45145	0	5	Alkaline ceramidase	
 O45146	worm	O45146	era-1	O45146	0	2	Embryonic mRna (mRNA) Anterior	
 O45148	worm	O45148	dlst-1	O45148	3	52	Dihydrolipoyllysine-residue succinyltransferase component of	
+O45148_CAEEL	worm	O45148	dlst-1	O45148	3	52		
 O45149	worm	O45149	sna-1	O45149	1	31	Small Nuclear RNA (snRNA) Associated protein	
 O45150	worm	O45150	srg-30	O45150	1	36	Serpentine receptor class gamma-30	
 O45155	worm	O45155	C17B7.5	O45155	0	4	PAW domain-containing protein	
@@ -77,7 +80,8 @@ O45291	worm	O45291	tbx-33	O45291	1	48	Putative T-box protein 33
 O45293	worm	O45293	gly-8	O45293	0	7	Probable N-acetylgalactosaminyltransferase 8	
 O45298	worm	O45298	atgp-2	O45298	7	20	Glycosyl hydrolase family 13 catalytic domain-containing pro	
 O45300	worm	O45300	sre-13	O45300	1	21	Serpentine receptor class epsilon-13	
-O45303	worm	O45303	lipt-1	O45303	3	18	BPL/LPL catalytic domain-containing protein	
+O45303	worm	O45303	lipt-1	O45303	5	21	BPL/LPL catalytic domain-containing protein	
+O45303_CAEEL	worm	O45303	lipt-1	O45303	5	21		
 O45307	worm	O45307	ddo-1	O45307	2	2	D-aspartate oxidase 1	
 O45308	worm	O45308	srab-12	O45308	0	3	Serpentine Receptor, class AB (Class A-like)	
 O45309	worm	O45309	srx-18	O45309	5	26	G-protein coupled receptors family 1 profile domain-containi	
@@ -86,7 +90,7 @@ O45313	worm	O45313	ncs-5	O45313	1	11	EF-hand domain-containing protein
 O45315	worm	O45315	nhr-170	O45315	0	5	Nuclear Hormone Receptor family	
 O45316	worm	O45316	C54E10.6	O45316	1	7	Protein MNN4-like	
 O45318	worm	O45318	C56A3.8	O45318	0	7	Phosphatidylinositol 4-kinase type 2	
-O45319	worm	O45319	tin-13	O45319	3	10	Mitochondrial import inner membrane translocase subunit tim-	
+O45319	worm	O45319	tin-13	O45319	4	11	Mitochondrial import inner membrane translocase subunit tim-	
 O45320	worm	O45320	hlh-16	O45320	5	14	BHLH domain-containing protein	
 O45321	worm	O45321	trt-1	O45321	0	58	Telomerase reverse transcriptase	
 O45322	worm	O45322	pqn-26	O45322	0	7	Glutaredoxin domain-containing protein	
@@ -123,6 +127,7 @@ O45418	worm	O45418	fkb-6	O45418	1	44	peptidylprolyl isomerase
 O45419	worm	O45419	clec-264	O45419	0	1	C-type lectin domain-containing protein	
 O45420	worm	O45420	F31D4.5	O45420	0	1	Pleckstrin homology domain-containing family D member 1	
 O45430	worm	O45430	mccc-1	O45430	2	22	Methylcrotonoyl-CoA carboxylase subunit alpha, mitochondrial	
+O45430_CAEEL	worm	O45430	mccc-1	O45430	2	22		
 O45431	worm	O45431	prp-18	O45431	3	45	Pre-mRNA-splicing factor 18	
 O45432	worm	O45432	CELE_F32B6.4	O45432	0	14	SH2 domain-containing protein	
 O45434	worm	O45434	tbc-3	O45434	2	7	Rab-GAP TBC domain-containing protein	
@@ -149,12 +154,13 @@ O45491	worm	O45491	ccch-2	O45491	0	17	C3H1-type domain-containing protein
 O45493	worm	O45493	CELE_F38C2.7	O45493	0	9	C3H1-type domain-containing protein	
 O45494	worm	O45494	hinf-1	O45494	0	21	C2H2-type domain-containing protein	
 O45495	worm	O45495	uev-1	O45495	4	78	Ubiquitin-conjugating enzyme E2 variant 1	
-O45496	worm	O45496	CELE_F39B2.3	O45496	0	15	15-oxoprostaglandin 13-reductase	
+O45496	worm	O45496	CELE_F39B2.3	O45496	1	16	15-oxoprostaglandin 13-reductase	
+O45496_CAEEL	worm	O45496	CELE_F39B2.3	O45496	1	16		
 O45498	worm	O45498	CELE_F39B2.5	O45498	7	55	SH2 domain-containing protein	
 O45499	worm	O45499	rps-26	O45499	5	199	Small ribosomal subunit protein eS26	
 O45500	worm	O45500	gpr-158	O45500	1	13	G-protein coupled receptors family 3 profile domain-containi	
 O45502	worm	O45502	dnj-12	O45502	7	30	DNaJ domain (Prokaryotic heat shock protein)	
-O45503	worm	O45503	mtx-1	O45503	1	14	Metaxin-1 homolog	
+O45503	worm	O45503	mtx-1	O45503	2	15	Metaxin-1 homolog	
 O45507	worm	O45507	nhr-265	O45507	1	1	Nuclear Hormone Receptor family	
 O45513	worm	O45513	CELE_F41D3.9	O45513	0	1	Uncharacterized protein	
 O45518	worm	O45518	argk-1	O45518	0	2	arginine kinase	
@@ -172,7 +178,8 @@ O45539	worm	O45539	src-2	O45539	3	62	Tyrosine protein-kinase src-2 (EC 2.7.10.2)
 O45548	worm	O45548	CELE_F53A2.3	O45548	0	1	Phosphoprotein	
 O45550	worm	O45550	dro-1	O45550	3	36	Protein Dr1	
 O45551	worm	O45551	ife-1	O45551	8	46	Eukaryotic translation initiation factor 4E-1	
-O45552	worm	O45552	acaa-2	O45552	1	28	3-ketoacyl-CoA thiolase, mitochondrial	
+O45552	worm	O45552	acaa-2	O45552	2	29	3-ketoacyl-CoA thiolase, mitochondrial	
+O45552_CAEEL	worm	O45552	acaa-2	O45552	2	29		
 O45565	worm	O45565	srbc-51	O45565	0	4	Serpentine Receptor, class BC (Class B-like)	
 O45577	worm	O45577	cpf-2	O45577	4	65	RRM domain-containing protein	
 O45579	worm	O45579	CELE_F56H6.1	O45579	1	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	
@@ -233,6 +240,7 @@ O45720	worm	O45720	CELE_R12G8.1	O45720	0	14	Protein kinase C
 O45722	worm	O45722	CELE_R74.8	O45722	0	8	RING-type domain-containing protein	
 O45723	worm	O45723	CELE_T01G1.2	O45723	0	5	Transmembrane protein	
 O45730	worm	O45730	pmp-4	O45730	1	3	ABC transporter domain-containing protein	
+O45730_CAEEL	worm	O45730	pmp-4	O45730	1	3		
 O45731	worm	O45731	T02E1.7	O45731	0	4	Uncharacterized protein T02E1.7	
 O45732	worm	O45732	dop-5	O45732	5	16	G-protein coupled receptors family 1 profile domain-containi	
 O45734	worm	O45734	cpl-1	O45734	3	30	Cathepsin L-like	
@@ -278,10 +286,12 @@ O45830	worm	O45830	ndx-1	O45830	0	3	Putative nudix hydrolase 1
 O45831	worm	O45831	srsx-36	O45831	0	1	G-protein coupled receptors family 1 profile domain-containi	
 O45835	worm	O45835	irld-52	O45835	0	1	Receptor L-domain domain-containing protein	
 O45842	worm	O45842	nhr-223	O45842	0	4	Nuclear receptor domain-containing protein	
-O45864	worm	O45864	CELE_T27E9.2	O45864	1	69	Cytochrome b-c1 complex subunit 6	
+O45864	worm	O45864	CELE_T27E9.2	O45864	2	70	Cytochrome b-c1 complex subunit 6	
+O45864_CAEEL	worm	O45864	CELE_T27E9.2	O45864	2	70		
 O45865	worm	O45865	ant-1.1	O45865	0	24	ADP/ATP translocase	
 O45868	worm	O45868	sygl-1	O45868	2	4	Ecdysone-induced protein 74EF	
-O45869	worm	O45869	pars-2	O45869	2	34	Probable proline--tRNA ligase, mitochondrial	
+O45869	worm	O45869	pars-2	O45869	3	35	Probable proline--tRNA ligase, mitochondrial	
+O45869_CAEEL	worm	O45869	pars-2	O45869	3	35		
 O45870	worm	O45870	T27F6.6	O45870	0	17	Putative neutral sphingomyelinase	
 O45873	worm	O45873	mec-18	O45873	0	12	AMP-binding domain-containing protein	
 O45876	worm	O45876	aph-1	O45876	4	7	Gamma-secretase subunit aph-1	
@@ -289,7 +299,7 @@ O45879	worm	O45879	mnr-1	O45879	0	5	Menorin
 O45889	worm	O45889	CELE_W04A4.3	O45889	0	1	DUF19 domain-containing protein	
 O45893	worm	O45893	str-77	O45893	1	3	Seven TM Receptor	
 O45901	worm	O45901	CELE_W09H1.3	O45901	0	1	Transthyretin-like family protein	
-O45903	worm	O45903	W09H1.5	O45903	1	10	Enoyl-	
+O45903	worm	O45903	W09H1.5	O45903	2	11	Enoyl-	
 O45905	worm	O45905	nhr-230	O45905	0	1	Nuclear Hormone Receptor family	
 O45910	worm	O45910	nhr-231	O45910	0	14	Nuclear receptor domain-containing protein	
 O45915	worm	O45915	snf-10	O45915	0	5	Transporter	
@@ -305,7 +315,8 @@ O45936	worm	O45936	slc-36.1	O45936	0	2	Amino acid transporter transmembrane doma
 O45943	worm	O45943	CELE_Y45F10C.1	O45943	0	1	SPK domain-containing protein	
 O45944	worm	O45944	Y45F10C.4	O45944	0	2	UPF0375 protein Y45F10C.4	
 O45946	worm	O45946	rpl-18	O45946	17	231	Large ribosomal subunit protein eL18	
-O45948	worm	O45948	iscu-1	O45948	5	55	NIF system FeS cluster assembly NifU N-terminal domain-conta	
+O45948	worm	O45948	iscu-1	O45948	8	58	NIF system FeS cluster assembly NifU N-terminal domain-conta	
+O45948_CAEEL	worm	O45948	iscu-1	O45948	8	58		
 O45950	worm	O45950	lin-38	O45950	0	25	C2H2-type domain-containing protein	
 O45952	worm	O45952	csc-1	O45952	2	5	Chromosome segregation and cytokinesis defective protein 1	
 O45953	worm	O45953	CELE_Y51A2B.4	O45953	1	8	Fungal lipase-like domain-containing protein	

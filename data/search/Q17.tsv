@@ -29,7 +29,7 @@ Q17415	worm	Q17415	eri-12	Q17415	0	17	Enhanced RNAI (RNA interference)
 Q17417	worm	Q17417	col-149	Q17417	0	1	Nematode cuticle collagen N-terminal domain-containing prote	
 Q17418	worm	Q17418	col-150	Q17418	0	3	Nematode cuticle collagen N-terminal domain-containing prote	
 Q17423	worm	Q17423	che-12	Q17423	0	2	Crescerin-like protein che-12	
-Q17424	worm	Q17424	trx-2	Q17424	1	14	Probable thioredoxin-2	
+Q17424	worm	Q17424	trx-2	Q17424	5	18	Probable thioredoxin-2	
 Q17425	worm	Q17425	asps-1	Q17425	2	26	TUG ubiquitin-like domain-containing protein	
 Q17426	worm	Q17426	B0024.11	Q17426	1	30	Putative pseudouridine synthase B0024.11	
 Q17427	worm	Q17427	gna-1	Q17427	1	26	Glucosamine 6-phosphate N-acetyltransferase	
@@ -41,7 +41,7 @@ Q17435	worm	Q17435	pfd-4	Q17435	5	22	Probable prefoldin subunit 4
 Q17436	worm	Q17436	edg-1	Q17436	0	4	Protein edg-1	
 Q17438	worm	Q17438	dnj-1	Q17438	5	17	DnaJ homolog subfamily B member 1	
 Q17439	worm	Q17439	B0035.15	Q17439	3	29	Uncharacterized protein B0035.15	
-Q17440	worm	Q17440	mttu-1	Q17440	0	8	Probable mitochondrial tRNA-specific 2-thiouridylase 1	
+Q17440	worm	Q17440	mttu-1	Q17440	1	9	Probable mitochondrial tRNA-specific 2-thiouridylase 1	
 Q17441	worm	Q17441	tsp-20	Q17441	0	10	Tetraspanin	
 Q17443	worm	Q17443	B0198.3	Q17443	0	1	Protein kinase domain-containing protein	
 Q17446	worm	Q17446	pmk-1	Q17446	18	70	Mitogen-activated protein kinase pmk-1 (EC 2.7.11.24) (Stres	
@@ -60,8 +60,10 @@ Q17461	worm	Q17461	spe-42	Q17461	0	6	Dendritic cell-specific transmembrane prote
 Q17463	worm	Q17463	rhr-2	Q17463	0	15	Ammonium transporter AmtB-like domain-containing protein	
 Q17466	worm	Q17466	pals-26	Q17466	0	20	Protein containing ALS2cr12 (ALS2CR12) signature	
 Q17473	worm	Q17473	ttr-18	Q17473	1	3	Transthyretin-like family protein	
-Q17476	worm	Q17476	prel-1	Q17476	1	5	PRELI/MSF1 domain-containing protein	
-Q17477	worm	Q17477	B0334.5	Q17477	0	19	Phytoene synthase	
+Q17476	worm	Q17476	prel-1	Q17476	2	6	PRELI/MSF1 domain-containing protein	
+Q17476_CAEEL	worm	Q17476	prel-1	Q17476	2	6		
+Q17477	worm	Q17477	B0334.5	Q17477	3	22	Phytoene synthase	
+Q17477_CAEEL	worm	Q17477	B0334.5	Q17477	3	22		
 Q17478	worm	Q17478	npr-41	Q17478	1	6	G-protein coupled receptors family 1 profile domain-containi	
 Q17491	worm	Q17491	rbg-3	Q17491	10	29	Rab-GAP TBC domain-containing protein	
 Q17492	worm	Q17492	B0393.3	Q17492	0	7	F-box domain-containing protein	
@@ -90,7 +92,8 @@ Q17543	worm	Q17543	C01B10.3	Q17543	0	7	Endonuclease/exonuclease/phosphatase fami
 Q17554	worm	Q17554	C01F1.5	Q17554	0	1	Peptidase M12A domain-containing protein	
 Q17555	worm	Q17555	C01F1.6	Q17555	0	1	ANK_REP_REGION domain-containing protein	
 Q17556	worm	Q17556	rml-4	Q17556	1	23	dTDP-D-glucose 4,6-dehydratase	
-Q17557	worm	Q17557	sco-1	Q17557	1	8	Thioredoxin domain-containing protein	
+Q17557	worm	Q17557	sco-1	Q17557	2	9	Thioredoxin domain-containing protein	
+Q17557_CAEEL	worm	Q17557	sco-1	Q17557	2	9		
 Q17558	worm	Q17558	gtf-2f1	Q17558	12	149	Transcription initiation factor IIF subunit alpha	
 Q17559	worm	Q17559	cpna-3	Q17559	1	5	VWFA domain-containing protein	
 Q17560	worm	Q17560	gldi-10	Q17560	3	6	AMP-activated protein kinase glycogen-binding domain-contain	
@@ -172,6 +175,7 @@ Q17758	worm	Q17758	pept-2	Q17758	0	1	Peptide transporter family 2
 Q17760	worm	Q17760	srd-7	Q17760	0	1	Serpentine receptor class delta-7	
 Q17761	worm	Q17761	T25B9.9	Q17761	0	26	6-phosphogluconate dehydrogenase, decarboxylating	
 Q17763	worm	Q17763	atp-5	Q17763	6	103	ATP synthase subunit d, mitochondrial	
+Q17763_CAEEL	worm	Q17763	atp-5	Q17763	6	103		
 Q17764	worm	Q17764	C06H2.2	Q17764	0	4	Phosphatidylcholine transfer protein	
 Q17765	worm	Q17765	jmjd-5	Q17765	1	11	Glucosamine 6-phosphate N-acetyltransferase	
 Q17770	worm	Q17770	pdi-2	Q17770	5	36	Protein disulfide-isomerase 2	
@@ -193,7 +197,7 @@ Q17819	worm	Q17819	C08B6.8	Q17819	0	11	Probable oligoribonuclease
 Q17820	worm	Q17820	aos-1	Q17820	3	33	SUMO-activating enzyme subunit aos-1	
 Q17821	worm	Q17821	C08B6.10	Q17821	0	2	Proline-rich proteoglycan 2-like	
 Q17827	worm	Q17827	pfd-1	Q17827	5	16	Probable prefoldin subunit 1	
-Q17828	worm	Q17828	C08F8.2	Q17828	2	25	ATP-dependent RNA helicase SUV3 homolog, mitochondrial	
+Q17828	worm	Q17828	C08F8.2	Q17828	4	27	ATP-dependent RNA helicase SUV3 homolog, mitochondrial	
 Q17830	worm	Q17830	fbxb-9	Q17830	0	1	F-box domain-containing protein	
 Q17832	worm	Q17832	vgln-1	Q17832	2	20	K Homology domain-containing protein	
 Q17833	worm	Q17833	old-1	Q17833	0	43	Tyrosine-protein kinase receptor old-1	
@@ -212,7 +216,8 @@ Q17871	worm	Q17871	C09G9.1	Q17871	0	3	Rhomboid domain-containing protein
 Q17872	worm	Q17872	npp-23	Q17872	0	43	WD_REPEATS_REGION domain-containing protein	
 Q17874	worm	Q17874	hdl-2	Q17874	0	4	Histidine Decarboxyase Like	
 Q17876	worm	Q17876	npax-4	Q17876	0	11	Paired domain-containing protein	
-Q17880	worm	Q17880	nuo-1	Q17880	4	90	NADH dehydrogenase	
+Q17880	worm	Q17880	nuo-1	Q17880	9	95	NADH dehydrogenase	
+Q17880_CAEEL	worm	Q17880	nuo-1	Q17880	9	95		
 Q17883	worm	Q17883	apc-17	Q17883	7	43	Anaphase-promoting complex subunit 1	
 Q17884	worm	Q17884	glb-4	Q17884	0	7	GLOBIN domain-containing protein	
 Q17886	worm	Q17886	nasp-1	Q17886	4	15	Protein NASP homolog 1	
@@ -254,7 +259,8 @@ Q17981	worm	Q17981	C14C11.7	Q17981	0	6	Uncharacterized protein
 Q17987	worm	Q17987	C14E2.1	Q17987	0	1	Fibrous sheath-interacting protein 1	
 Q17989	worm	Q17989	lrch-1	Q17989	1	4	Calponin-homology (CH) domain-containing protein	
 Q17993	worm	Q17993	rml-3	Q17993	0	27	dTDP-4-dehydrorhamnose 3,5-epimerase	
-Q17994	worm	Q17994	got-2.2	Q17994	2	61	Aspartate aminotransferase	
+Q17994	worm	Q17994	got-2.2	Q17994	3	62	Aspartate aminotransferase	
+Q17994_CAEEL	worm	Q17994	got-2.2	Q17994	3	62		
 Q17999	worm	Q17999	lgc-23	Q17999	4	8	Acetylcholine receptor-like protein cup-4	
 Q17R31	human	Q17R31	TATDN3	Q17R31	3	83	Deoxyribonuclease TATDN3 (EC 3.1.11.-) (EC 3.1.21.-) (DNA-(a	
 Q17R55	human	Q17R55	FAM187B	Q17R55	4	63	Protein FAM187B (Transmembrane protein 162)	

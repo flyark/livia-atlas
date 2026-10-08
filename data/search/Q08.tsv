@@ -71,7 +71,7 @@ Q08225	yeast	Q08225	YOL057W	Q08225	0	4	Probable dipeptidyl peptidase 3
 Q08226	yeast	Q08226	CRT10	Q08226	0	27	Protein CRT10	
 Q08227	yeast	Q08227	INP54	Q08227	0	15	Phosphatidylinositol 4,5-bisphosphate 5-phosphatase INP54	
 Q08229	yeast	Q08229	NBA1	Q08229	11	28	Protein NBA1	
-Q08230	yeast	Q08230	SDH5	Q08230	2	17	Succinate dehydrogenase assembly factor 2, mitochondrial	
+Q08230	yeast	Q08230	SDH5	Q08230	3	18	Succinate dehydrogenase assembly factor 2, mitochondrial	
 Q08231	yeast	Q08231	THP1	Q08231	5	27	Nuclear mRNA export protein THP1	
 Q08232	yeast	Q08232	DSC2	Q08232	4	16	DSC E3 ubiquitin ligase complex subunit 2	
 Q08234	yeast	Q08234	YOL075C	Q08234	0	28	Uncharacterized ABC transporter ATP-binding protein/permease	
@@ -81,7 +81,7 @@ Q08237	yeast	Q08237	REX4	Q08237	3	17	RNA exonuclease 4
 Q08240	yeast	Q08240	YOL099C	Q08240	0	2	Putative uncharacterized membrane protein YOL099C	
 Q08241	yeast	Q08241	YOL106W	Q08241	0	2	Putative uncharacterized protein YOL106W	
 Q08245	yeast	Q08245	ZEO1	Q08245	0	28	Protein ZEO1	
-Q08257	human	Q08257	CRYZ	Q08257	13	202	Zeta-crystallin (NADPH:quinone reductase) (Quinone oxidoredu	
+Q08257	human	Q08257	CRYZ	Q08257	14	203	Zeta-crystallin (NADPH:quinone reductase) (Quinone oxidoredu	
 Q08268	yeast	Q08268	MCH4	Q08268	0	7	Probable transporter MCH4	
 Q08269	yeast	Q08269	ALR1	Q08269	1	20	Magnesium transporter ALR1	
 Q08270	yeast	Q08270	YOL131W	Q08270	0	10	Uncharacterized protein YOL131W	
@@ -133,7 +133,7 @@ Q08420	rattus-norvegicus	Q08420	Sod3	Q08420	1	30	Extracellular superoxide dismut
 Q08421	yeast	Q08421	ETT1	Q08421	3	43	Enhancer of translation termination 1	
 Q08422	yeast	Q08422	TMC1	Q08422	1	251	AN1-type zinc finger protein TMC1	
 Q08423	mus-musculus	Q08423	Tff1	Q08423	1	3	Trefoil factor 1	
-Q08426	human	Q08426	EHHADH	Q08426	7	290	Peroxisomal bifunctional enzyme (PBE) (PBFE) (L-bifunctional	
+Q08426	human	Q08426	EHHADH	Q08426	12	295	Peroxisomal bifunctional enzyme (PBE) (PBFE) (L-bifunctional	
 Q08428	yeast	Q08428	YOR053W	Q08428	0	1	Putative uncharacterized protein YOR053W	
 Q08431	human	Q08431	MFGE8	Q08431	13	338	Lactadherin (Breast epithelial antigen BA46) (HMFG) (MFGM) (	
 Q08438	yeast	Q08438	VHS3	Q08438	2	24	Phosphopantothenoylcysteine decarboxylase subunit VHS3	
@@ -247,7 +247,7 @@ Q08811	yeast	Q08811	YOR345C	Q08811	0	1	Putative uncharacterized protein YOR345C
 Q08816	yeast	Q08816	TFB6	Q08816	2	28	General transcription and DNA repair factor IIH subunit TFB6	
 Q08817	yeast	Q08817	SOG2	Q08817	4	84	Leucine-rich repeat-containing protein SOG2	
 Q08818	yeast	Q08818	MSC6	Q08818	1	10	Meiotic sister-chromatid recombination protein 6, mitochondr	
-Q08822	yeast	Q08822	CIR2	Q08822	1	11	Probable electron transfer flavoprotein-ubiquinone oxidoredu	
+Q08822	yeast	Q08822	CIR2	Q08822	2	12	Probable electron transfer flavoprotein-ubiquinone oxidoredu	
 Q08826	yeast	Q08826	SNX3	Q08826	0	22	Sorting nexin-3	
 Q08828	human	Q08828	ADCY1	Q08828	12	84	Adenylate cyclase type 1 (EC 4.6.1.1) (ATP pyrophosphate-lya	
 Q08830	human	Q08830	FGL1	Q08830	25	169	Fibrinogen-like protein 1 (HP-041) (Hepassocin) (HPS) (Hepat	
@@ -341,22 +341,26 @@ Q08A72	arabidopsis-thaliana	Q08A72	EML4	Q08A72	0	6	Protein EMSY-LIKE 4
 Q08AA3	arabidopsis-thaliana	Q08AA3	At4g28690	Q08AA3	1	12	At4g28690	
 Q08AA5	arabidopsis-thaliana	Q08AA5	At1g67410	Q08AA5	0	2	At1g67410	
 Q08AD1	human	Q08AD1	CAMSAP2	Q08AD1	57	237	Calmodulin-regulated spectrin-associated protein 2 (Calmodul	
-Q08AE8	human	Q08AE8	SPIRE1	Q08AE8	18	100	Protein spire homolog 1 (Spir-1)	
+Q08AE8	human	Q08AE8	SPIRE1	Q08AE8	20	103	Protein spire homolog 1 (Spir-1)	
 Q08AF3	human	Q08AF3	SLFN5	Q08AF3	4	56	Schlafen family member 5	
 Q08AG5	human	Q08AG5	ZNF844	Q08AG5	4	47	Zinc finger protein 844	
 Q08AG7	human	Q08AG7	MZT1	Q08AG7	13	329	Mitotic-spindle organizing protein 1 (Mitotic-spindle organi	
-Q08AH1	human	Q08AH1	ACSM1	Q08AH1	1	55	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	
-Q08AH3	human	Q08AH3	ACSM2A	Q08AH3	1	29	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	
+Q08AH1	human	Q08AH1	ACSM1	Q08AH1	2	56	Acyl-coenzyme A synthetase ACSM1, mitochondrial (EC 6.2.1.2)	
+Q08AH3	human	Q08AH3	ACSM2A	Q08AH3	4	32	Acyl-coenzyme A synthetase ACSM2A, mitochondrial (EC 6.2.1.2	
 Q08AI6	human	Q08AI6	SLC38A11	Q08AI6	1	25	Putative sodium-coupled neutral amino acid transporter 11 (S	
 Q08AI8	human	Q08AI8	MAB21L4	Q08AI8	6	61	Protein mab-21-like 4	
 Q08AM6	human	Q08AM6	VAC14	Q08AM6	12	303	Protein VAC14 homolog (Tax1-binding protein 2)	
 Q08AN1	human	Q08AN1	ZNF616	Q08AN1	4	110	Zinc finger protein 616	
 Q08AT1	mus-musculus	Q08AT1	Rasl12	Q08AT1	0	2	Ras-like protein family member 12	
 Q08AU9	mus-musculus	Q08AU9	?	Q08AU9	2	20	UPF0450 protein C17orf58 homolog	
-Q08BA1	zebrafish	Q08BA1	atp5fa1	Q08BA1	3	138	ATP synthase subunit alpha	
+Q08AX5	xenopus-laevis	Q08AX5	mrps16.L	Q08AX5	5	6	LOC100158393 protein	
+Q08B39	xenopus-laevis	Q08B39	adhfe1	Q08B39	2	2	Hydroxyacid-oxoacid transhydrogenase, mitochondrial	
+Q08B64	xenopus-laevis	Q08B64	mterf3.S	Q08B64	5	5	LOC100158338 protein	
+Q08BA1	zebrafish	Q08BA1	atp5fa1	Q08BA1	7	141	ATP synthase subunit alpha	
+Q08BA1_DANRE	zebrafish	Q08BA1	atp5fa1	Q08BA1	7	141		
 Q08BA4	zebrafish	Q08BA4	slc38a9	Q08BA4	1	33	Neutral amino acid transporter 9	
 Q08BA6	zebrafish	Q08BA6	alkbh5	Q08BA6	1	12	RNA demethylase ALKBH5	
-Q08BB1	zebrafish	Q08BB1	gfm1	Q08BB1	0	356	Elongation factor G, mitochondrial	
+Q08BB1	zebrafish	Q08BB1	gfm1	Q08BB1	6	362	Elongation factor G, mitochondrial	
 Q08BB2	zebrafish	Q08BB2	pm20d1.2	Q08BB2	0	3	N-fatty-acyl-amino acid synthase/hydrolase PM20D1.2	
 Q08BB3	zebrafish	Q08BB3	dcaf12	Q08BB3	3	24	DDB1- and CUL4-associated factor 12	
 Q08BB5	zebrafish	Q08BB5	ctdspl2a	Q08BB5	3	17	CTD small phosphatase-like protein 2-A	
@@ -369,7 +373,7 @@ Q08BC5	zebrafish	Q08BC5	hsd17b7	Q08BC5	0	45	3-keto-steroid reductase/17-beta-hyd
 Q08BC6	zebrafish	Q08BC6	eno4	Q08BC6	5	50	Enolase 4	
 Q08BC9	zebrafish	Q08BC9	c2cd2l	Q08BC9	0	5	C2cd2-like	
 Q08BD1	zebrafish	Q08BD1	hmga1b	Q08BD1	0	12	High mobility group AT-hook 1b	
-Q08BD8	zebrafish	Q08BD8	mtfr2	Q08BD8	0	9	Mitochondrial fission regulator 2	
+Q08BD8	zebrafish	Q08BD8	mtfr2	Q08BD8	3	12	Mitochondrial fission regulator 2	
 Q08BE2	zebrafish	Q08BE2	rgs18	Q08BE2	14	35	Regulator of G-protein signaling 18	
 Q08BE3	zebrafish	Q08BE3	slmapa	Q08BE3	4	30	Sarcolemmal membrane-associated protein	
 Q08BF2	zebrafish	Q08BF2	slc27a1b	Q08BF2	0	177	long-chain-fatty-acid--CoA ligase	
@@ -382,10 +386,18 @@ Q08BI9	zebrafish	Q08BI9	mcu	Q08BI9	1	24	Calcium uniporter protein, mitochondrial
 Q08BJ2	zebrafish	Q08BJ2	khdrbs2	Q08BJ2	0	4	KH domain-containing, RNA-binding, signal transduction-assoc	
 Q08BJ3	zebrafish	Q08BJ3	gabra1	Q08BJ3	17	28	Gamma-aminobutyric acid receptor subunit alpha-1	
 Q08BK6	zebrafish	Q08BK6	cplx4a	Q08BK6	5	54	Complexin-4a	
+Q08BK7	zebrafish	Q08BK7	zgc:153420	Q08BK7	2	2	39S ribosomal protein L18, mitochondrial	
+Q08BK7_DANRE	zebrafish	Q08BK7	zgc:153420	Q08BK7	2	2		
+Q08BL1	zebrafish	Q08BL1	zgc:153386	Q08BL1	4	4	ATP-dependent RNA helicase	
+Q08BL1_DANRE	zebrafish	Q08BL1	zgc:153386	Q08BL1	4	4		
+Q08BL2	zebrafish	Q08BL2	zgc:153358	Q08BL2	1	1	Zgc:153358	
+Q08BL2_DANRE	zebrafish	Q08BL2	zgc:153358	Q08BL2	1	1		
 Q08BL3	zebrafish	Q08BL3	c1galt1la	Q08BL3	0	26	Glycoprotein-N-acetylgalactosamine 3-beta-galactosyltransfer	
 Q08BL7	zebrafish	Q08BL7	glyctk	Q08BL7	0	1	Glycerate kinase	
 Q08BL9	zebrafish	Q08BL9	klhl24a	Q08BL9	4	9	Kelch-like protein 24a	
 Q08BM0	zebrafish	Q08BM0	trmt10b	Q08BM0	0	10	tRNA methyltransferase 10 homolog B	
+Q08BM4	zebrafish	Q08BM4	pick1	Q08BM4	2	2	PRKCA-binding protein	
+Q08BM4_DANRE	zebrafish	Q08BM4	pick1	Q08BM4	2	2		
 Q08BM6	zebrafish	Q08BM6	lrrc8db	Q08BM6	4	25	Leucine rich repeat containing 8 VRAC subunit Db isoform X1	
 Q08BM8	zebrafish	Q08BM8	cnot7	Q08BM8	12	44	CCR4-NOT transcription complex subunit 7	
 Q08BP9	zebrafish	Q08BP9	hlfa	Q08BP9	6	22	HLF transcription factor, PAR bZIP family member a	
@@ -405,7 +417,7 @@ Q08BX0	zebrafish	Q08BX0	rab21	Q08BX0	8	22	Ras-related protein Rab-21
 Q08BX4	zebrafish	Q08BX4	kat7a	Q08BX4	3	84	Histone acetyltransferase KAT7a	
 Q08BX5	zebrafish	Q08BX5	bcam	Q08BX5	0	4	Basal cell adhesion molecule (Lutheran blood group)	
 Q08BX9	zebrafish	Q08BX9	im:7148473	Q08BX9	2	31	Uncharacterized protein LOC767645	
-Q08BY0	zebrafish	Q08BY0	ndufaf7	Q08BY0	3	26	Protein arginine methyltransferase NDUFAF7, mitochondrial	
+Q08BY0	zebrafish	Q08BY0	ndufaf7	Q08BY0	5	28	Protein arginine methyltransferase NDUFAF7, mitochondrial	
 Q08BY1	zebrafish	Q08BY1	med17	Q08BY1	14	195	Mediator of RNA polymerase II transcription subunit 17	
 Q08BY5	zebrafish	Q08BY5	jmjd4	Q08BY5	0	1	2-oxoglutarate and iron-dependent oxygenase JMJD4	
 Q08BY6	zebrafish	Q08BY6	ptk6b	Q08BY6	5	47	Tyrosine-protein kinase	
@@ -420,9 +432,13 @@ Q08C36	zebrafish	Q08C36	extl2	Q08C36	3	5	Exostosin-like 2
 Q08C37	zebrafish	Q08C37	clk2b	Q08C37	8	38	Serine/threonine-protein (EC 2.7.11.1)	
 Q08C37_DANRE	zebrafish	Q08C37	clk2b	Q08C37	8	38		
 Q08C38	zebrafish	Q08C38	josd1	Q08C38	1	3	Josephin-1	
+Q08C39	zebrafish	Q08C39	zgc:153680	Q08C39	5	5	28S ribosomal protein S5, mitochondrial precursor	
+Q08C39_DANRE	zebrafish	Q08C39	zgc:153680	Q08C39	5	5		
+Q08C42	zebrafish	Q08C42	zgc:153661	Q08C42	1	1	ATP synthase subunit e, mitochondrial	
+Q08C42_DANRE	zebrafish	Q08C42	zgc:153661	Q08C42	1	1		
 Q08C49	zebrafish	Q08C49	prkar1b	Q08C49	11	26	Protein kinase, cAMP-dependent, regulatory, type I, beta	
 Q08C53	zebrafish	Q08C53	bbof1	Q08C53	1	1	Basal body-orientation factor 1	
-Q08C57	zebrafish	Q08C57	fdx2	Q08C57	21	130	Ferredoxin-2, mitochondrial	
+Q08C57	zebrafish	Q08C57	fdx2	Q08C57	29	138	Ferredoxin-2, mitochondrial	
 Q08C60	zebrafish	Q08C60	fut11	Q08C60	0	2	GDP-fucose protein O-fucosyltransferase 4	
 Q08C62	zebrafish	Q08C62	cdh18a	Q08C62	0	21	Cadherin 18, type 2	
 Q08C69	zebrafish	Q08C69	rpusd1	Q08C69	4	134	RNA pseudouridylate synthase domain-containing protein 1	
@@ -434,12 +450,16 @@ Q08C84	zebrafish	Q08C84	smyd4	Q08C84	1	22	Protein-lysine N-methyltransferase SMY
 Q08C88	zebrafish	Q08C88	samd13	Q08C88	0	43	Sterile alpha motif domain-containing 13	
 Q08C92	zebrafish	Q08C92	tyw1	Q08C92	0	8	S-adenosyl-L-methionine-dependent tRNA 4-demethylwyosine syn	
 Q08C93	zebrafish	Q08C93	abhd12	Q08C93	0	5	Lysophosphatidylserine lipase ABHD12	
+Q08C96	zebrafish	Q08C96	fb83e03	Q08C96	1	1	5'-nucleotidase domain-containing 2	
+Q08C96_DANRE	zebrafish	Q08C96	fb83e03	Q08C96	1	1		
 Q08C99	zebrafish	Q08C99	vrtn	Q08C99	0	1	Vertnin	
 Q08CA1	zebrafish	Q08CA1	gdpgp1	Q08CA1	1	41	GDP-D-glucose phosphorylase 1	
 Q08CA5	zebrafish	Q08CA5	prps1b	Q08CA5	2	5	Ribose-phosphate pyrophosphokinase 1	
 Q08CD0	zebrafish	Q08CD0	rnf220a	Q08CD0	1	1	E3 ubiquitin-protein ligase RNF220	
 Q08CD5	zebrafish	Q08CD5	rxylt1	Q08CD5	0	1	Ribitol-5-phosphate xylosyltransferase 1	
 Q08CD8	zebrafish	Q08CD8	rhebl1	Q08CD8	0	54	GTP-binding protein Rheb	
+Q08CE4	zebrafish	Q08CE4	zgc:153206	Q08CE4	5	5	Zgc:153206	
+Q08CE4_DANRE	zebrafish	Q08CE4	zgc:153206	Q08CE4	5	5		
 Q08CE7	zebrafish	Q08CE7	cox7a1	Q08CE7	9	34	Cytochrome c oxidase subunit 7A1, mitochondrial	
 Q08CF1	zebrafish	Q08CF1	klc3	Q08CF1	24	116	Kinesin light chain	
 Q08CF3	zebrafish	Q08CF3	ccdc61	Q08CF3	0	3	Centrosomal protein CCDC61	
@@ -453,7 +473,7 @@ Q08CI6	zebrafish	Q08CI6	senp8	Q08CI6	8	16	SUMO peptidase family member, NEDD8-sp
 Q08CJ4	zebrafish	Q08CJ4	minpp1a	Q08CJ4	0	3	Multiple inositol polyphosphate phosphatase 1	
 Q08CJ6	zebrafish	Q08CJ6	grk4	Q08CJ6	4	32	G protein-coupled receptor kinase	
 Q08CJ7	zebrafish	Q08CJ7	arsk	Q08CJ7	0	28	Arylsulfatase K	
-Q08CK1	zebrafish	Q08CK1	ecsit	Q08CK1	1	48	Evolutionarily conserved signaling intermediate in Toll path	
+Q08CK1	zebrafish	Q08CK1	ecsit	Q08CK1	2	49	Evolutionarily conserved signaling intermediate in Toll path	
 Q08CK7	zebrafish	Q08CK7	igf2bp1	Q08CK7	0	16	Insulin-like growth factor 2 mRNA-binding protein 1	
 Q08CL1	zebrafish	Q08CL1	kbtbd2	Q08CL1	0	1	Kelch repeat and BTB (POZ) domain-containing 2	
 Q08CL3	zebrafish	Q08CL3	kbtbd8	Q08CL3	18	40	Kelch repeat and BTB domain-containing protein 8	
@@ -461,6 +481,8 @@ Q08CL8	zebrafish	Q08CL8	cnot10	Q08CL8	11	22	CCR4-NOT transcription complex subun
 Q08CM4	zebrafish	Q08CM4	lin54	Q08CM4	3	18	Protein lin-54 homolog	
 Q08CN0	zebrafish	Q08CN0	trappc2	Q08CN0	5	29	Trafficking protein particle complex subunit 2	
 Q08CN9	zebrafish	Q08CN9	znrf2	Q08CN9	0	1	E3 ubiquitin-protein ligase znrf2	
+Q08CP2	zebrafish	Q08CP2	fi89f05	Q08CP2	6	7	Zgc:152851	
+Q08CP2_DANRE	zebrafish	Q08CP2	fi89f05	Q08CP2	6	7		
 Q08CT1	zebrafish	Q08CT1	bod1	Q08CT1	1	10	Biorientation of chromosomes in cell division 1	
 Q08CT3	zebrafish	Q08CT3	glulc	Q08CT3	0	19	Glutamine synthetase	
 Q08CV3	zebrafish	Q08CV3	gpat4	Q08CV3	2	5	Glycerol-3-phosphate acyltransferase 4	
@@ -640,4 +662,4 @@ Q08FZ3	virus	Q08FZ3	DpV83gp007	Q08FZ3	9	165	Fe2OG dioxygenase domain-containing 
 Q08FZ4	virus	Q08FZ4	DpV83gp006	Q08FZ4	4	165	Q08FZ4_DPV83	
 Q08I41	worm	Q08I41	CELE_Y40H7A.4	Q08I41	0	7	Methyltransferase FkbM domain-containing protein	
 Q08I43	schizosaccharomyces-pombe	Q08I43	eri1	Q08I43	0	10	3-5 exonuclease eri1	
-Q08J23	human	Q08J23	NSUN2	Q08J23	26	411	RNA cytosine C(5)-methyltransferase NSUN2 (EC 2.1.1.-) (Myc-	
+Q08J23	human	Q08J23	NSUN2	Q08J23	27	412	RNA cytosine C(5)-methyltransferase NSUN2 (EC 2.1.1.-) (Myc-	

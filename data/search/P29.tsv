@@ -20,14 +20,14 @@ P29083	human	P29083	GTF2E1	P29083	107	590	General transcription factor IIE subun
 P29084	human	P29084	GTF2E2	P29084	59	653	Transcription initiation factor IIE subunit beta (TFIIE-beta	
 P29089	rattus-norvegicus	P29089	Agtr1b	P29089	1	16	Type-1 angiotensin II receptor B	
 P29101	rattus-norvegicus	P29101	Syt2	P29101	0	46	Synaptotagmin-2	
-P29117	rattus-norvegicus	P29117	Ppif	P29117	8	152	Peptidyl-prolyl cis-trans isomerase F, mitochondrial	
+P29117	rattus-norvegicus	P29117	Ppif	P29117	27	173	Peptidyl-prolyl cis-trans isomerase F, mitochondrial	
 P29120	human	P29120	PCSK1	P29120	10	56	Neuroendocrine convertase 1 (NEC 1) (EC 3.4.21.93) (Prohormo	
 P29121	mus-musculus	P29121	Pcsk4	P29121	0	2	Proprotein convertase subtilisin/kexin type 4	
 P29122	human	P29122	PCSK6	P29122	19	197	Proprotein convertase subtilisin/kexin type 6 (EC 3.4.21.-) 	
 P29131	escherichia-coli-83333	P29131	ftsN	P29131	1	18	Cell division protein FtsN	
 P29136	glycine-max	P29136	?	P29136	0	4	Metalloendoproteinase 1	
 P29144	human	P29144	TPP2	P29144	10	120	Tripeptidyl-peptidase 2 (TPP-2) (EC 3.4.14.10) (Tripeptidyl 	
-P29147	rattus-norvegicus	P29147	Bdh1	P29147	0	2	D-beta-hydroxybutyrate dehydrogenase, mitochondrial	
+P29147	rattus-norvegicus	P29147	Bdh1	P29147	1	3	D-beta-hydroxybutyrate dehydrogenase, mitochondrial	
 P29185	zea-mays	P29185	CPN60I	P29185	3	47	Chaperonin CPN60-1, mitochondrial	
 P29191	virus	P29191	OPG130	P29191	7	218	39kDa core protein OPG130	
 P29192	virus	P29192	OPG132	P29192	3	218	Virion morphogenesis protein OPG132	
@@ -35,7 +35,7 @@ P29197	arabidopsis-thaliana	P29197	CPN60	P29197	9	188	Chaperonin CPN60, mitochon
 P29218	human	P29218	IMPA1	P29218	1	72	Inositol monophosphatase 1 (IMP 1) (IMPase 1) (EC 3.1.3.25) 	
 P29248	pseudomonas-aeruginosa	P29248	fliA	P29248	2	19	RNA polymerase sigma factor FliA	
 P29250	oryza-sativa-subsp-japonica	P29250	LOX1.1	P29250	0	9	Linoleate 9S-lipoxygenase 2	
-P29266	rattus-norvegicus	P29266	Hibadh	P29266	0	88	3-hydroxyisobutyrate dehydrogenase, mitochondrial	
+P29266	rattus-norvegicus	P29266	Hibadh	P29266	2	90	3-hydroxyisobutyrate dehydrogenase, mitochondrial	
 P29268	mus-musculus	P29268	Ccn2	P29268	4	64	CCN family member 2	
 P29274	human	P29274	ADORA2A	P29274	11	170	Adenosine receptor A2a	
 P29275	human	P29275	ADORA2B	P29275	20	149	Adenosine receptor A2b	
@@ -91,12 +91,12 @@ P29391	mus-musculus	P29391	Ftl1	P29391	2	16	Ferritin light chain 1
 P29400	human	P29400	COL4A5	P29400	6	73	Collagen alpha-5(IV) chain	
 P29401	human	P29401	TKT	P29401	7	361	Transketolase (TK) (EC 2.2.1.1)	
 P29402	arabidopsis-thaliana	P29402	CNX1	P29402	2	128	Calnexin homolog 1	
-P29410	rattus-norvegicus	P29410	Ak2	P29410	0	22	Adenylate kinase 2, mitochondrial	
-P29411	rattus-norvegicus	P29411	Ak3	P29411	0	9	GTP:AMP phosphotransferase AK3, mitochondrial	
+P29410	rattus-norvegicus	P29410	Ak2	P29410	10	32	Adenylate kinase 2, mitochondrial	
+P29411	rattus-norvegicus	P29411	Ak3	P29411	5	17	GTP:AMP phosphotransferase AK3, mitochondrial	
 P29413	fly	FBgn0005585	Calr	P29413	93	606	Calreticulin	
 P29414	rattus-norvegicus	P29414	Gja3	P29414	0	19	Gap junction alpha-3 protein	
 P29416	mus-musculus	P29416	Hexa	P29416	1	36	Beta-hexosaminidase subunit alpha	
-P29418	rattus-norvegicus	P29418	Atp5f1e	P29418	3	52	ATP synthase F(1) complex subunit epsilon, mitochondrial	
+P29418	rattus-norvegicus	P29418	Atp5f1e	P29418	5	54	ATP synthase F(1) complex subunit epsilon, mitochondrial	
 P29419	rattus-norvegicus	P29419	Atp5me	P29419	5	53	ATP synthase F(0) complex subunit e, mitochondrial	
 P29421	oryza-sativa-subsp-japonica	P29421	RASI	P29421	1	26	Alpha-amylase/subtilisin inhibitor	
 P29436	pseudomonas-aeruginosa	P29436	rpmH	P29436	7	134	Large ribosomal subunit protein bL34	
@@ -175,7 +175,7 @@ P29752	mus-musculus	P29752	Lalba	P29752	7	19	Alpha-lactalbumin
 P29754	mus-musculus	P29754	Agtr1a	P29754	3	50	Type-1 angiotensin II receptor A	
 P29755	mus-musculus	P29755	Agtr1b	P29755	0	15	Type-1 angiotensin II receptor B	
 P29756	glycine-max	P29756	CAT1	P29756	2	9	Catalase-1/2	
-P29758	mus-musculus	P29758	Oat	P29758	0	19	Ornithine aminotransferase, mitochondrial	
+P29758	mus-musculus	P29758	Oat	P29758	3	22	Ornithine aminotransferase, mitochondrial	
 P29762	human	P29762	CRABP1	P29762	13	132	Cellular retinoic acid-binding protein 1 (Cellular retinoic 	
 P29774	fly	FBgn0005658	Ets65A	A0A0S0WNC2	84	423		
 P29775	fly	FBgn0005659	Ets98B	P29775	56	376	DNA-binding protein D-ETS-4	
@@ -185,7 +185,7 @@ P29779	onchocerca-volvulus	P29779	OV25-2	P29779	1	21	Small heat shock protein OV
 P29788	mus-musculus	P29788	Vtn	P29788	9	148	Vitronectin	
 P29791	virus	P29791	F	P29791	1	11	Fusion glycoprotein F0	
 P29792	virus	P29792	M2-1	P29792	0	11	Protein M2-1	
-P29803	human	P29803	PDHA2	P29803	10	65	Pyruvate dehydrogenase E1 component subunit alpha, testis-sp	
+P29803	human	P29803	PDHA2	P29803	18	73	Pyruvate dehydrogenase E1 component subunit alpha, testis-sp	
 P29812	mus-musculus	P29812	Dct	P29812	0	8	L-dopachrome tautomerase	
 P29813	virus	P29813_p1e28cfb9fc		P29813	1	11	Protein 2B	
 P29813	virus	P29813_p1e4972afb2		P29813	2	11	Protease 3C	
@@ -221,7 +221,7 @@ P29829	fly	FBgn0004623	Gbeta76C	P29829	16	75	Guanine nucleotide-binding protein 
 P29835	oryza-sativa-subsp-japonica	P29835	Os05g0499100	P29835	0	69	19 kDa globulin	
 P29843	fly	FBgn0001216	Hsc70-1	P29843	36	129	Heat shock 70 kDa protein cognate 1 (Heat shock 70 kDa prote	
 P29844	fly	FBgn0001218	Hsc70-3	P29844	76	522	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	
-P29845	fly	FBgn0001220	Hsc70-5	P29845	57	281	Heat shock 70 kDa protein cognate 5	
+P29845	fly	FBgn0001220	Hsc70-5	P29845	59	283	Heat shock 70 kDa protein cognate 5	
 P29847	salmonella-typhimurium	P29847	cysE	P29847	0	2	Serine acetyltransferase	
 P29848	salmonella-typhimurium	P29848	cysM	P29848	0	6	Cysteine synthase B	
 P29882	virus	P29882	BBRF2	P29882	3	91	Cytoplasmic envelopment protein 1	

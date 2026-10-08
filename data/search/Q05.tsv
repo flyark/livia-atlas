@@ -158,11 +158,11 @@ Q05788	yeast	Q05788	PNP1	Q05788	0	2	Purine nucleoside phosphorylase
 Q05789	yeast	Q05789	ATG38	Q05789	1	14	PtdIns3K complex I subunit atg38	
 Q05790	yeast	Q05790	CRR1	Q05790	0	15	Probable glycosidase CRR1	
 Q05791	yeast	Q05791	CDC123	Q05791	1	11	Translation initiation factor eIF2 assembly protein	
-Q05809	yeast	Q05809	COA4	Q05809	0	14	Cytochrome oxidase assembly factor 4	
+Q05809	yeast	Q05809	COA4	Q05809	2	16	Cytochrome oxidase assembly factor 4	
 Q05812	yeast	Q05812	MSC3	Q05812	4	40	Meiotic sister-chromatid recombination protein 3	
 Q05816	mus-musculus	Q05816	Fabp5	Q05816	3	22	Fatty acid-binding protein 5	
 Q05823	human	Q05823	RNASEL	Q05823	4	352	2-5A-dependent ribonuclease (2-5A-dependent RNase) (EC 3.1.2	
-Q05825	fly	FBgn0010217	ATPsynbeta	L0MQ04	11	231		
+Q05825	fly	FBgn0010217	ATPsynbeta	L0MQ04	17	236		
 Q05827	yeast	Q05827	HOR7	Q05827	0	4	Protein HOR7	
 Q05854	yeast	Q05854	YLR278C	Q05854	0	19	Uncharacterized transcriptional regulatory protein YLR278C	
 Q05856	fly	FBgn0262601	SmB	Q05856	36	208	Small nuclear ribonucleoprotein-associated protein B (snRNP-	
@@ -198,7 +198,7 @@ Q05911	yeast	Q05911	ADE13	Q05911	0	13	Adenylosuccinate lyase
 Q05913	fly	FBgn0010282	TfIIFalpha	Q05913	107	524	General transcription factor IIF subunit 1 (Transcription fa	
 Q05915	mus-musculus	Q05915	Gch1	Q05915	0	4	GTP cyclohydrolase 1	
 Q05919	yeast	Q05919	VPS38	Q05919	3	11	Vacuolar protein sorting-associated protein 38	
-Q05920	mus-musculus	Q05920	Pc	Q05920	0	26	Pyruvate carboxylase, mitochondrial	
+Q05920	mus-musculus	Q05920	Pc	Q05920	1	27	Pyruvate carboxylase, mitochondrial	
 Q05921	mus-musculus	Q05921	Rnasel	Q05921	0	71	2-5A-dependent ribonuclease	
 Q05922	mus-musculus	Q05922	Dusp2	Q05922	6	7	Dual specificity protein phosphatase 2	
 Q05923	human	Q05923	DUSP2	Q05923	13	144	Dual specificity protein phosphatase 2 (EC 3.1.3.16) (EC 3.1	
@@ -208,7 +208,7 @@ Q05926	yeast	Q05926	GRX8	Q05926	1	7	Glutaredoxin-8
 Q05928	mus-musculus	Q05928	Btc	Q05928	6	55	Probetacellulin	
 Q05930	yeast	Q05930	MDM30	Q05930	1	20	Mitochondrial distribution and morphology protein 30	
 Q05931	yeast	Q05931	SSQ1	Q05931	16	55	Iron-sulfur cluster biogenesis chaperone, mitochondrial	
-Q05932	human	Q05932	FPGS	Q05932	1	74	Folylpolyglutamate synthase, mitochondrial (EC 6.3.2.17) (Fo	
+Q05932	human	Q05932	FPGS	Q05932	13	89	Folylpolyglutamate synthase, mitochondrial (EC 6.3.2.17) (Fo	
 Q05933	yeast	Q05933	ARC18	Q05933	2	40	Actin-related protein 2/3 complex subunit 3	
 Q05934	yeast	Q05934	VID22	Q05934	0	29	Vacuolar import and degradation protein 22	
 Q05937	yeast	Q05937	STP3	Q05937	0	6	Zinc finger protein STP3	
@@ -229,7 +229,8 @@ Q05982	rattus-norvegicus	Q05982	Nme1	Q05982	5	157	Nucleoside diphosphate kinase 
 Q05996	human	Q05996	ZP2	Q05996	15	95	Zona pellucida sperm-binding protein 2 (Zona pellucida glyco	
 Q05998	yeast	Q05998	THI7	Q05998	0	8	Thiamine transporter	
 Q05999	arabidopsis-thaliana	Q05999	D6PKL3	Q05999	2	3	Serine/threonine-protein kinase D6PKL3	
-Q059A4	fly	FBgn0033808	Tmem186	Q059A4	1	38	Transmembrane protein 186	
+Q059A4	fly	FBgn0033808	Tmem186	Q059A4	2	39	Transmembrane protein 186	
+Q059A4_DROME	fly	FBgn0033808	Tmem186	Q059A4	2	39		
 Q059A6	fly	FBgn0051861	CG31861	Q059A6	0	0	GEO11841p1 (IP07214p)	
 Q059U7	mus-musculus	Q059U7	Intu	Q059U7	5	66	Protein inturned	
 Q059Y8	mus-musculus	Q059Y8	Dcst1	Q059Y8	1	3	E3 ubiquitin-protein ligase DCST1	
@@ -242,13 +243,18 @@ Q05AA6	mus-musculus	Q05AA6	Drp2	Q05AA6	4	6	Dystrophin-related protein 2
 Q05AH6	mus-musculus	Q05AH6	Spindoc	Q05AH6	0	1	Spindlin interactor and repressor of chromatin-binding prote	
 Q05AJ1	zebrafish	Q05AJ1	larp4b	Q05AJ1	2	2	La ribonucleoprotein 4B	
 Q05AJ2	zebrafish	Q05AJ2	tmt1a.1	Q05AJ2	0	13	Methyltransferase like 7A	
+Q05AK3	zebrafish	Q05AK3	cpo	Q05AK3	0	2	coproporphyrinogen oxidase	
+Q05AK3_DANRE	zebrafish	Q05AK3	cpo	Q05AK3	0	2		
 Q05AK5	zebrafish	Q05AK5	mylipb	Q05AK5	9	41	E3 ubiquitin-protein ligase MYLIP-B	
 Q05AK6	zebrafish	Q05AK6	abhd2b	Q05AK6	0	3	Monoacylglycerol lipase ABHD2	
 Q05AK8	zebrafish	Q05AK8	ano9a	Q05AK8	9	89	Histone H2B	
 Q05AL1	zebrafish	Q05AL1	armc8	Q05AL1	6	25	Armadillo repeat-containing protein 8	
 Q05AM4	zebrafish	Q05AM4	faah2b	Q05AM4	0	9	Fatty-acid amide hydrolase 2-B	
 Q05AM5	zebrafish	Q05AM5	elp2	Q05AM5	2	14	Elongator complex protein 2	
-Q05AN2	zebrafish	Q05AN2	mrpl21	Q05AN2	10	360	Large ribosomal subunit protein bL21m	
+Q05AN2	zebrafish	Q05AN2	mrpl21	Q05AN2	13	362	Large ribosomal subunit protein bL21m	
+Q05AN2_DANRE	zebrafish	Q05AN2	mrpl21	Q05AN2	13	362		
+Q05AU1	xenopus-laevis	Q05AU1	uqcrfs1.L	Q05AU1	17	17	Cytochrome b-c1 complex subunit Rieske, mitochondrial	
+Q05AU5	xenopus-laevis	Q05AU5	cdk5rap1.L	Q05AU5	1	1	CDK5 regulatory subunit associated protein 1 L homeolog	
 Q05BC3	mus-musculus	Q05BC3	Eml1	Q05BC3	7	31	Echinoderm microtubule-associated protein-like 1	
 Q05BQ1	mus-musculus	Q05BQ1	Igsf9	Q05BQ1	0	1	Protein turtle homolog A	
 Q05BQ5	human	Q05BQ5	MBTD1	Q05BQ5	32	211	MBT domain-containing protein 1	

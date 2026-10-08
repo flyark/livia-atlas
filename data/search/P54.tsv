@@ -63,7 +63,7 @@ P54066	methanocaldococcus-jannaschii	P54066	rpl7ae	P54066	7	101	Large ribosomal 
 P54067	methanocaldococcus-jannaschii	P54067	rps6e	P54067	1	87	Small ribosomal subunit protein eS6	
 P54069	schizosaccharomyces-pombe	P54069	bem46	P54069	1	8	Protein bem46	
 P54070	yeast	P54070	KTR6	P54070	0	8	Mannosyltransferase KTR6	
-P54071	mus-musculus	P54071	Idh2	P54071	5	39	Isocitrate dehydrogenase	
+P54071	mus-musculus	P54071	Idh2	P54071	6	40	Isocitrate dehydrogenase	
 P54072	yeast	P54072	YLR152C	P54072	0	2	Uncharacterized transporter YLR152C	
 P54073	worm	P54073	F44G4.1	P54073	7	69	Brix domain-containing protein F44G4.1	
 P54074	yeast	P54074	ASI1	P54074	5	28	ERAD-associated E3 ubiquitin-protein ligase ASI1	
@@ -71,8 +71,8 @@ P54075	mycobacterium-leprae	P54075	pafC	P54075	0	7	Protein PafC
 P54076	mycobacterium-leprae	P54076	pafB	P54076	0	7	Protein PafB	
 P54078	mycobacterium-leprae	P54078	tatC	P54078	1	2	Sec-independent protein translocase protein TatC	
 P54079	mycobacterium-leprae	P54079	tatA	P54079	1	12	Sec-independent protein translocase protein TatA	
-P54098	human	P54098	POLG	P54098	12	154	DNA polymerase subunit gamma-1 (EC 2.7.7.7) (3'-5' exodeoxyr	
-P54099	mus-musculus	P54099	Polg	P54099	3	49	DNA polymerase subunit gamma-1	
+P54098	human	P54098	POLG	P54098	13	155	DNA polymerase subunit gamma-1 (EC 2.7.7.7) (3'-5' exodeoxyr	
+P54099	mus-musculus	P54099	Polg	P54099	5	51	DNA polymerase subunit gamma-1	
 P54100	rattus-norvegicus	P54100	Vav1	P54100	12	94	Proto-oncogene vav	
 P54103	mus-musculus	P54103	Dnajc2	P54103	4	31	DnaJ homolog subfamily C member 2	
 P54105	human	P54105	CLNS1A	P54105	39	206	Methylosome subunit pICln (Chloride channel, nucleotide sens	
@@ -82,13 +82,13 @@ P54109	methanocaldococcus-jannaschii	P54109	rps2	P54109	5	85	Small ribosomal sub
 P54113	yeast	P54113	ADE16	P54113	1	31	Bifunctional purine biosynthesis protein ADE16	
 P54114	yeast	P54114	ALD3	P54114	1	7	Aldehyde dehydrogenase	
 P54115	yeast	P54115	ALD6	P54115	2	56	Magnesium-activated aldehyde dehydrogenase, cytosolic	
-P54116	mus-musculus	P54116	Stom	P54116	3	31	Stomatin	
+P54116	mus-musculus	P54116	Stom	P54116	4	32	Stomatin	
 P54120	arabidopsis-thaliana	P54120	IAN8	P54120	0	13	Immune-associated nucleotide-binding protein 8	
 P54121	arabidopsis-thaliana	P54121	AIG2A	P54121	0	1	Protein AIG2 A	
 P54130	mus-musculus	P54130	Fgf9	P54130	5	87	Fibroblast growth factor 9	
 P54132	human	P54132	BLM	P54132	33	349	RecQ-like DNA helicase BLM (EC 5.6.2.4) (Bloom syndrome prot	
 P54136	human	P54136	RARS1	P54136	11	291	Arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (Arginyl-tR	
-P54137	worm	P54137	nth-1	P54137	0	15	Endonuclease III homolog	
+P54137	worm	P54137	nth-1	P54137	4	19	Endonuclease III homolog	
 P54138	mycobacterium-leprae	P54138	mshA	P54138	0	6	D-inositol 3-phosphate glycosyltransferase	
 P54144	arabidopsis-thaliana	P54144	AMT1-1	P54144	1	19	Ammonium transporter 1 member 1	
 P54150	arabidopsis-thaliana	P54150	MSR4	P54150	0	1	Peptide methionine sulfoxide reductase A4, chloroplastic	
@@ -121,7 +121,7 @@ P54256	rattus-norvegicus	P54256	Hap1	P54256	6	49	Huntingtin-associated protein 1
 P54257	human	P54257	HAP1	P54257	30	153	Huntingtin-associated protein 1 (HAP-1) (Neuroan 1)	
 P54258	rattus-norvegicus	P54258	Atn1	P54258	1	15	Atrophin-1	
 P54259	human	P54259	ATN1	P54259	45	237	Atrophin-1 (Dentatorubral-pallidoluysian atrophy protein)	
-P54265	mus-musculus	P54265	Dmpk	P54265	0	6	Myotonin-protein kinase	
+P54265	mus-musculus	P54265	Dmpk	P54265	1	8	Myotonin-protein kinase	
 P54269	fly	FBgn0015919	caup	P54269	92	380	Homeobox protein caupolican	
 P54274	human	P54274	TERF1	P54274	171	571	Telomeric repeat-binding factor 1 (NIMA-interacting protein 	
 P54275	rattus-norvegicus	P54275	Msh2	P54275	9	62	DNA mismatch repair protein Msh2	
@@ -285,11 +285,11 @@ P54802	human	P54802	NAGLU	P54802	6	95	Alpha-N-acetylglucosaminidase (EC 3.2.1.50
 P54803	human	P54803	GALC	P54803	8	136	Galactocerebrosidase (GALCERase) (EC 3.2.1.46) (Galactocereb	
 P54811	worm	P54811	cdc-48.1	P54811	12	81	Transitional endoplasmic reticulum ATPase homolog 1	
 P54812	worm	P54812	cdc-48.2	P54812	14	125	Transitional endoplasmic reticulum ATPase homolog 2	
-P54813	worm	P54813	ymel-1	P54813	2	16	ATP-dependent zinc metalloprotease YME1 homolog	
+P54813	worm	P54813	ymel-1	P54813	3	16	ATP-dependent zinc metalloprotease YME1 homolog	
 P54815	worm	P54815	mspn-1	P54815	1	14	Mitochondrial sorting homolog	
 P54816	worm	P54816	lex-1	P54816	0	24	Tat-binding homolog 7	
 P54818	mus-musculus	P54818	Galc	P54818	0	3	Galactocerebrosidase	
-P54819	human	P54819	AK2	P54819	13	317	Adenylate kinase 2, mitochondrial (AK 2) (EC 2.7.4.3) (ATP-A	
+P54819	human	P54819	AK2	P54819	23	328	Adenylate kinase 2, mitochondrial (AK 2) (EC 2.7.4.3) (ATP-A	
 P54821	human	P54821	PRRX1	P54821	135	408	Paired mesoderm homeobox protein 1 (Homeobox protein PHOX1) 	
 P54822	mus-musculus	P54822	Adsl	P54822	0	26	Adenylosuccinate lyase	
 P54823	mus-musculus	P54823	Ddx6	P54823	10	120	Probable ATP-dependent RNA helicase DDX6	
@@ -347,6 +347,6 @@ P54936	worm	P54936	lin-2	P54936	8	129	Protein lin-2 (Abnormal cell lineage prote
 P54964	yeast	P54964	REX2	P54964	1	7	Oligoribonuclease, mitochondrial	
 P54967	arabidopsis-thaliana	P54967	BIO2	P54967	1	4	Biotin synthase, mitochondrial	
 P54969	arabidopsis-thaliana	P54969	ILL1	P54969	0	1	IAA-amino acid hydrolase ILR1-like 1	
-P54987	mus-musculus	P54987	Acod1	P54987	0	14	Cis-aconitate decarboxylase	
+P54987	mus-musculus	P54987	Acod1	P54987	1	15	Cis-aconitate decarboxylase	
 P54999	yeast	P54999	SMX3	P54999	17	143	Small nuclear ribonucleoprotein F	
 P54NRB	human	Q15233	NONO	Q15233	33	780	Non-POU domain-containing octamer-binding protein (NonO prot	w

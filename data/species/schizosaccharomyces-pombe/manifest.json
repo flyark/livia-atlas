@@ -21,18 +21,34 @@
     "pairsFpr5": 4021,
     "pairsFpr1": 1212
    }
+  },
+  {
+   "id": "mitomatch-284812",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Schizosaccharomyces pombe orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 193,
+    "pairs": 163,
+    "predictions": 163,
+    "runs": 163,
+    "pairsFpr10": 152,
+    "pairsFpr5": 140,
+    "pairsFpr1": 85
+   }
   }
  ],
  "counts": {
-  "proteins": 4248,
-  "pairs": 67640,
-  "predictions": 67640,
-  "runs": 67640,
-  "pairsFpr10": 6210,
-  "pairsFpr5": 4021,
-  "pairsFpr1": 1212,
-  "pairsInSeveral": 0,
-  "pairsTested": 67640
+  "proteins": 4262,
+  "pairs": 67710,
+  "predictions": 67803,
+  "runs": 67803,
+  "pairsFpr10": 6275,
+  "pairsFpr5": 4083,
+  "pairsFpr1": 1245,
+  "pairsInSeveral": 93,
+  "pairsTested": 67710
  },
  "files": {
   "proteins": "proteins.json",

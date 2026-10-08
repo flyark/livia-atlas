@@ -119,7 +119,7 @@ NUCLEOCAPSID	virus	S5MFK3	N	S5MFK3	4	9	Nucleocapsid	w
 NUCLEOCAPSID	virus	W5SB57		W5SB57	1	6	Nucleocapsid	w
 NUCLEOCAPSID	virus	W8SIW1	N	W8SIW1	2	8	Nucleocapsid	w
 NUCLEOID	human	Q96RR1	TWNK	Q96RR1	4	193	Twinkle mtDNA helicase (EC 5.6.2.3) (Progressive external op	w
-NUCLEOID	human	Q9BRT2	UQCC2	Q9BRT2	11	92	Ubiquinol-cytochrome c reductase complex assembly factor 2 (	w
+NUCLEOID	human	Q9BRT2	UQCC2	Q9BRT2	12	93	Ubiquinol-cytochrome c reductase complex assembly factor 2 (	w
 NUCLEOID-ASSOCIATED	human	Q9BSJ5	MTNAP1	Q9BSJ5	17	335	Mitochondrial nucleoid-associated protein 1 (Cell migration-	w
 NUCLEOID-ASSOCIATED	zebrafish	E7F6Y4	si:dkey-21c1.4	E7F6Y4	3	70	Mitochondrial nucleoid-associated protein 1 isoform X4	w
 NUCLEOLAR	fly	FBgn0010926	l(3)07882	Q9VEJ2	18	154	Nucleolar protein 14 homolog (Nucleolar complex protein 14 h	w
@@ -893,7 +893,7 @@ NUCLEOREDOXIN-LIKE	zebrafish	Q5PRB4	nxnl2	Q5PRB4	1	4	Nucleoredoxin-like 2	w
 NUCLEOSIDASE	yeast	Q04179	URH1	Q04179	0	4	Uridine nucleosidase	w
 NUCLEOSIDE	fly	FBgn0000150	awd	A0A0B4LHX6	24	656	Nucleoside diphosphate kinase (EC 2.7.4.6)	w
 NUCLEOSIDE	fly	FBgn0025709	CNT2	Q7K4A1	0	9	Sodium/nucleoside cotransporter	w
-NUCLEOSIDE	fly	FBgn0030573	nmdyn-D6	Q9VY27	4	189	Nucleoside diphosphate kinase (EC 2.7.4.6)	w
+NUCLEOSIDE	fly	FBgn0030573	nmdyn-D6	Q9VY27	5	191	Nucleoside diphosphate kinase (EC 2.7.4.6)	w
 NUCLEOSIDE	fly	FBgn0031250	Ent1	Q9VPP0	1	19	Equilibrative nucleoside transporter 1, isoform A (Equilibra	w
 NUCLEOSIDE	fly	FBgn0032436	CG5418	Q9VK81	0	6	Inosine/uridine-preferring nucleoside hydrolase domain-conta	w
 NUCLEOSIDE	fly	FBgn0033371	CNT1	A1Z7N3	0	2	Concentrative nucleoside transporter 1	w
@@ -903,12 +903,12 @@ NUCLEOSIDE	fly	FBgn0039809	CG15547	Q9VA28	9	190	Nucleoside diphosphate kinase-li
 NUCLEOSIDE	fly	FBgn0051115	CG31115	Q8IMU4	2	37	Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1)	w
 NUCLEOSIDE	fly	FBgn0263916	Ent2	Q9VMB6	0	5	Equilibrative nucleoside transporter 2, isoform A (Equilibra	w
 NUCLEOSIDE	human	A0A024RBG1	NUDT4B	A0A024RBG1	0	28	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B (DIP	w
-NUCLEOSIDE	human	A8MXV4	NUDT19	A8MXV4	8	165	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
+NUCLEOSIDE	human	A8MXV4	NUDT19	A8MXV4	21	178	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
 NUCLEOSIDE	human	O00337	SLC28A1	O00337	2	23	Sodium/nucleoside cotransporter 1 (Concentrative nucleoside 	w
-NUCLEOSIDE	human	O00746	NME4	O00746	18	283	Nucleoside diphosphate kinase D, mitochondrial (NDPK-D) (EC 	w
+NUCLEOSIDE	human	O00746	NME4	O00746	21	286	Nucleoside diphosphate kinase D, mitochondrial (NDPK-D) (EC 	w
 NUCLEOSIDE	human	O43868	SLC28A2	O43868	2	37	Sodium/nucleoside cotransporter 2 (Concentrative nucleoside 	w
 NUCLEOSIDE	human	O75356	ENTPD5	O75356	5	37	Nucleoside diphosphate phosphatase ENTPD5 (EC 3.6.1.6) (CD39	w
-NUCLEOSIDE	human	O75414	NME6	O75414	6	144	Nucleoside diphosphate kinase 6, mitochondrial (NDK6) (NDP k	w
+NUCLEOSIDE	human	O75414	NME6	O75414	9	149	Nucleoside diphosphate kinase 6, mitochondrial (NDK6) (NDP k	w
 NUCLEOSIDE	human	O95671	ASMTL	O95671	4	110	Probable bifunctional dTTP/UTP pyrophosphatase/methyltransfe	w
 NUCLEOSIDE	human	O95848	NUDT14	O95848	2	64	Uridine diphosphate glucose pyrophosphatase NUDT14 (UDPG pyr	w
 NUCLEOSIDE	human	P00491	PNP	P00491	1	163	Purine nucleoside phosphorylase (PNP) (EC 2.4.2.1) (Inosine 	w
@@ -919,15 +919,15 @@ NUCLEOSIDE	human	P22392	NME2	P22392	13	702	Nucleoside diphosphate kinase B (NDP 
 NUCLEOSIDE	human	P36639	NUDT1	P36639	3	118	Oxidized purine nucleoside triphosphate hydrolase (EC 3.6.1.	w
 NUCLEOSIDE	human	P53370	NUDT6	P53370	1	48	Nudix hydrolase 6 (Antisense basic fibroblast growth factor)	w
 NUCLEOSIDE	human	P56597	NME5	P56597	7	81	Nucleoside diphosphate kinase 5 (NDK5) (Inhibitor of p53-ind	w
-NUCLEOSIDE	human	Q13232	NME3	Q13232	11	209	Nucleoside diphosphate kinase C (NDPK-C) (EC 2.7.4.6) (DR-nm	w
+NUCLEOSIDE	human	Q13232	NME3	Q13232	12	210	Nucleoside diphosphate kinase C (NDPK-C) (EC 2.7.4.6) (DR-nm	w
 NUCLEOSIDE	human	Q14542	SLC29A2	Q14542	1	93	Equilibrative nucleoside transporter 2 (hENT2) (36 kDa nucle	w
 NUCLEOSIDE	human	Q32Q12	NME1-NME2	Q32Q12	4	100	Nucleoside diphosphate kinase	w
 NUCLEOSIDE	human	Q7RTT9	SLC29A4	Q7RTT9	3	51	Equilibrative nucleoside transporter 4 (hENT4) (Plasma membr	w
-NUCLEOSIDE	human	Q86X67	NUDT13	Q86X67	0	26	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	w
+NUCLEOSIDE	human	Q86X67	NUDT13	Q86X67	1	27	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	w
 NUCLEOSIDE	human	Q8IU60	DCP2	Q8IU60	22	195	m7GpppN-mRNA hydrolase (EC 3.6.1.62) (Nucleoside diphosphate	w
 NUCLEOSIDE	human	Q8IV20	LACC1	Q8IV20	12	136	Purine nucleoside phosphorylase LACC1 (EC 2.4.2.1) (Adenosin	w
 NUCLEOSIDE	human	Q8N427	NME8	Q8N427	24	442	Protein NME8 (NM23-H8) (NME/NM23 family member 8) (Nucleosid	w
-NUCLEOSIDE	human	Q8WV74	NUDT8	Q8WV74	4	73	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	w
+NUCLEOSIDE	human	Q8WV74	NUDT8	Q8WV74	8	76	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	w
 NUCLEOSIDE	human	Q96DE0	NUDT16	Q96DE0	2	55	U8 snoRNA-decapping enzyme (EC 3.6.1.62) (IDP phosphatase) (	w
 NUCLEOSIDE	human	Q99808	SLC29A1	Q99808	8	214	Equilibrative nucleoside transporter 1 (hENT1) (Equilibrativ	w
 NUCLEOSIDE	human	Q9BQG2	NUDT12	Q9BQG2	3	53	NAD-capped RNA hydrolase NUDT12 (DeNADding enzyme NUDT12) (E	w
@@ -937,7 +937,7 @@ NUCLEOSIDE	human	Q9BZD2	SLC29A3	Q9BZD2	1	49	Equilibrative nucleoside transporter
 NUCLEOSIDE	human	Q9HAS3	SLC28A3	Q9HAS3	2	14	Solute carrier family 28 member 3 (Concentrative Na(+)-nucle	w
 NUCLEOSIDE	human	Q9NV35	NUDT15	Q9NV35	7	87	Nucleotide triphosphate diphosphatase NUDT15 (EC 3.6.1.68) (	w
 NUCLEOSIDE	human	Q9NZJ9	NUDT4	Q9NZJ9	2	35	Diphosphoinositol polyphosphate phosphohydrolase 2 (DIPP-2) 	w
-NUCLEOSIDE	human	Q9UKK9	NUDT5	Q9UKK9	9	127	ADP-sugar pyrophosphatase (EC 3.6.1.13) (8-oxo-dGDP phosphat	w
+NUCLEOSIDE	human	Q9UKK9	NUDT5	Q9UKK9	21	140	ADP-sugar pyrophosphatase (EC 3.6.1.13) (8-oxo-dGDP phosphat	w
 NUCLEOSIDE	human	Q9Y5B8	NME7	Q9Y5B8	32	270	Nucleoside diphosphate kinase 7 (NDK7) (NDP kinase 7) (Putat	w
 NUCLEOSIDE	virus	A0A068EER7	pepv_054	A0A068EER7	5	238	Nucleoside triphosphatase I	w
 NUCLEOSIDE	virus	A0A068EG33	fep_052	A0A068EG33	6	217	Nucleoside triphosphatase I	w
@@ -997,18 +997,20 @@ NUCLEOSIDE	worm	U4PSA1	pnp-1	U4PSA1	0	5	Purine nucleoside phosphorylase	w
 NUCLEOSIDE	yeast	P31381	FUN26	P31381	0	2	Nucleoside transporter FUN26	w
 NUCLEOSIDE	yeast	P36010	YNK1	P36010	4	159	Nucleoside diphosphate kinase	w
 NUCLEOSIDE	yeast	Q05788	PNP1	Q05788	0	2	Purine nucleoside phosphorylase	w
+NUCLEOSIDE	zebrafish	A0A8M9PJG3	nme3	A0A8M9PJG3	1	1	Nucleoside diphosphate kinase	w
 NUCLEOSIDE	zebrafish	A0A8N7UZE3	nme7	A0A8N7UZE3	10	161	Nucleoside diphosphate kinase homolog 7	w
 NUCLEOSIDE	zebrafish	A0AB13A3H6	nme2b.1	A0AB13A3H6	2	135	Nucleoside diphosphate kinase	w
 NUCLEOSIDE	zebrafish	A0AB40E4T4	nme4	A0AB40E4T4	8	142	Nucleoside diphosphate kinase	w
 NUCLEOSIDE	zebrafish	E7F8A7	entpd5a	E7F8A7	0	10	nucleoside diphosphate phosphatase	w
 NUCLEOSIDE	zebrafish	Q1LWJ1	pnp6	Q1LWJ1	2	4	Purine nucleoside phosphorylase	w
 NUCLEOSIDE	zebrafish	Q6DGQ8	nme5	Q6DGQ8	2	121	Nucleoside diphosphate kinase homolog 5	w
-NUCLEOSIDE	zebrafish	Q6DI51	nme6	Q6DI51	4	130	Nucleoside diphosphate kinase 6	w
+NUCLEOSIDE	zebrafish	Q6DI51	nme6	Q6DI51	8	135	Nucleoside diphosphate kinase 6	w
 NUCLEOSIDE	zebrafish	Q6NYG0	pnp5a	Q6NYG0	3	4	Purine nucleoside phosphorylase	w
 NUCLEOSIDE	zebrafish	Q6P016	pnp4b	Q6P016	3	4	Purine nucleoside phosphorylase	w
 NUCLEOSIDE	zebrafish	Q6PC37	nme2a	Q6PC37	9	146	Nucleoside diphosphate kinase	w
 NUCLEOSIDE	zebrafish	Q7SXL4	nme2b.2	Q7SXL4	5	143	Nucleoside diphosphate kinase	w
 NUCLEOSIDE	zebrafish	Q7SZW5	pnp4a	Q7SZW5	2	4	Purine nucleoside phosphorylase	w
+NUCLEOSIDE	zebrafish	Q7ZUI5	zgc:56482	Q7ZUI5	1	2	Nucleoside diphosphate kinase	w
 NUCLEOSIDE	zebrafish	Q9PTF3	nme3	Q9PTF3	5	143	Nucleoside diphosphate kinase 3	w
 NUCLEOSIDE-2	fly	FBgn0026309	aft	Q9UAS6	0	2	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 2 (EC	w
 NUCLEOSIDE-2	fly	FBgn0029693	Cmtr1	Q9W4N2	0	8	Cap-specific mRNA (nucleoside-2'-O-)-methyltransferase 1 (EC	w
@@ -1071,7 +1073,7 @@ NUCLEOSIDE-2	zebrafish	Q803R5	cmtr1	Q803R5	1	6	Cap-specific mRNA (nucleoside-2'-
 NUCLEOSIDE-DIPHOSPHATASE	worm	Q21815	mig-23	Q21815	1	9	Nucleoside-diphosphatase mig-23	w
 NUCLEOSIDE-DIPHOSPHATASE	worm	Q9XU84	uda-1	Q9XU84	0	10	Nucleoside-diphosphatase uda-1	w
 NUCLEOSIDE-DIPHOSPHATE	human	P30085	CMPK1	P30085	2	193	UMP-CMP kinase (EC 2.7.4.14) (Deoxycytidylate kinase) (CK) (	w
-NUCLEOSIDE-DIPHOSPHATE	human	Q5EBM0	CMPK2	Q5EBM0	1	89	UMP-CMP kinase 2, mitochondrial (EC 2.7.4.14) (Nucleoside-di	w
+NUCLEOSIDE-DIPHOSPHATE	human	Q5EBM0	CMPK2	Q5EBM0	2	90	UMP-CMP kinase 2, mitochondrial (EC 2.7.4.14) (Nucleoside-di	w
 NUCLEOSIDE-DIPHOSPHATE	worm	G5EE34	CELE_W04E12.7	G5EE34	0	20	Nucleoside-diphosphate kinase	w
 NUCLEOSIDE-DIPHOSPHATE	worm	Q7KX00	CELE_Y48G8AL.15	Q7KX00	0	5	nucleoside-diphosphate kinase	w
 NUCLEOSIDE-TRIPHOSPHATASE	human	Q9BSD7	NTPCR	Q9BSD7	9	190	Cancer-related nucleoside-triphosphatase (NTPase) (EC 3.6.1.	w
@@ -1101,16 +1103,16 @@ NUCLEOSOME-BINDING	human	Q86SG4	HMGN2P46	Q86SG4	1	5	Putative Dresden prostate ca
 NUCLEOSOME-BINDING	zebrafish	E7FFT5	hmgn6	E7FFT5	8	472	High mobility group nucleosome-binding domain 6	w
 NUCLEOSOME-BINDING	zebrafish	E9QH74	hmgn3	E9QH74	0	5	High mobility group nucleosome-binding domain-containing pro	w
 NUCLEOSOME-REMODELING	fly	FBgn0011604	Iswi	Q24368	23	231	Chromatin-remodeling complex ATPase chain Iswi (EC 3.6.4.-) 	w
-NUCLEOSOME-REMODELING	fly	FBgn0016687	Nurf-38	O77460	34	517	Inorganic pyrophosphatase (EC 3.6.1.1) (Nucleosome-remodelin	w
+NUCLEOSOME-REMODELING	fly	FBgn0016687	Nurf-38	O77460	37	522	Inorganic pyrophosphatase (EC 3.6.1.1) (Nucleosome-remodelin	w
 NUCLEOSOME-REMODELING	fly	FBgn0263979	Caf1-55	Q24572	53	613	Chromatin assembly factor 1 p55 subunit (CAF-1 p55 subunit) 	w
 NUCLEOSOME-REMODELING	human	Q12830	BPTF	Q12830	16	254	Nucleosome-remodeling factor subunit BPTF (Bromodomain and P	w
 NUCLEOSOME-REMODELING	human	Q16576	RBBP7	Q16576	73	919	Histone-binding protein RBBP7 (Histone acetyltransferase typ	w
 NUCLEOSTEMIN	fly	FBgn0038473	Ns1	Q8MT06	20	150	Guanine nucleotide-binding protein-like 3 homolog (Nucleoste	w
 NUCLEOSTEMIN	human	Q9BVP2	GNL3	Q9BVP2	50	597	Guanine nucleotide-binding protein-like 3 (E2-induced gene 3	w
 NUCLEOSTEMIN-3	fly	FBgn0266284	Ns3	Q9W590	5	169	Large subunit GTPase 1 homolog (EC 3.6.1.-) (Nucleostemin-3)	w
-NUCLEOSYL	human	P50583	NUDT2	P50583	8	131	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical] (EC 3.6.1.	w
+NUCLEOSYL	human	P50583	NUDT2	P50583	11	134	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical] (EC 3.6.1.	w
 NUCLEOSYL	worm	Q9U2M7	ndx-4	Q9U2M7	0	10	Bis(5'-nucleosyl)-tetraphosphatase	w
-NUCLEOSYL	zebrafish	Q6DG97	nudt2	Q6DG97	0	12	Bis(5'-nucleosyl)-tetraphosphatase	w
+NUCLEOSYL	zebrafish	Q6DG97	nudt2	Q6DG97	2	14	Bis(5'-nucleosyl)-tetraphosphatase	w
 NUCLEOTI	human	P63244	RACK1	P63244	91	1119	Small ribosomal subunit protein RACK1 (Cell proliferation-in	w
 NUCLEOTID	worm	G5ECJ3	C06B8.2	G5ECJ3	0	7	Nucleotid_trans domain-containing protein	w
 NUCLEOTID	worm	Q21470	CELE_M02F4.2	Q21470	0	2	Nucleotid_trans domain-containing protein	w
@@ -1137,7 +1139,7 @@ NUCLEOTIDASE	human	Q96P26	NT5C1B	Q96P26	6	79	Cytosolic 5'-nucleotidase 1B (cN1B)
 NUCLEOTIDASE	human	Q9BXI3	NT5C1A	Q9BXI3	3	243	Cytosolic 5'-nucleotidase 1A (cN1A) (EC 3.1.3.5) (EC 3.1.3.8	w
 NUCLEOTIDASE	human	Q9H0P0	NT5C3A	Q9H0P0	11	138	Cytosolic 5'-nucleotidase 3A (EC 3.1.3.5) (7-methylguanosine	w
 NUCLEOTIDASE	human	Q9H857	NT5DC2	Q9H857	13	150	5'-nucleotidase domain-containing protein 2 (EC 3.1.3.-)	w
-NUCLEOTIDASE	human	Q9NPB1	NT5M	Q9NPB1	5	83	5'(3')-deoxyribonucleotidase, mitochondrial (5',3'-nucleotid	w
+NUCLEOTIDASE	human	Q9NPB1	NT5M	Q9NPB1	8	86	5'(3')-deoxyribonucleotidase, mitochondrial (5',3'-nucleotid	w
 NUCLEOTIDASE	human	Q9NX62	BPNT2	Q9NX62	3	76	Golgi-resident adenosine 3',5'-bisphosphate 3'-phosphatase (	w
 NUCLEOTIDASE	human	X6RM59	NT5C3A	X6RM59	0	48	5'-nucleotidase	w
 NUCLEOTIDASE	worm	Q09315	F25B5.3	Q09315	0	6	Putative cytosolic 5'-nucleotidase 3	w
@@ -1152,8 +1154,10 @@ NUCLEOTIDASE	zebrafish	A0A2R8Q9N2	LOC560627	A0A2R8Q9N2	3	9	Cytosolic 5'-nucleoti
 NUCLEOTIDASE	zebrafish	A0A8M1PBZ9	nt5e	A0A8M1PBZ9	0	19	5'-nucleotidase	w
 NUCLEOTIDASE	zebrafish	E7F409	nt5c1ab	E7F409	4	73	5'-nucleotidase, cytosolic IAb	w
 NUCLEOTIDASE	zebrafish	E7FC21	nt5c2a	E7FC21	2	9	Cytosolic purine 5'-nucleotidase	w
+NUCLEOTIDASE	zebrafish	E7FFE8	nt5dc3	E7FFE8	1	1	5'-nucleotidase domain-containing 3	w
 NUCLEOTIDASE	zebrafish	F1QAK5	nt5c2b	F1QAK5	2	9	5'-nucleotidase, cytosolic IIb	w
 NUCLEOTIDASE	zebrafish	F1QI68	nt5c1bb	F1QI68	4	73	5'-nucleotidase, cytosolic IB b	w
+NUCLEOTIDASE	zebrafish	Q08C96	fb83e03	Q08C96	1	1	5'-nucleotidase domain-containing 2	w
 NUCLEOTIDASE	zebrafish	Q66I11	nt5c2l1	Q66I11	2	9	5'-nucleotidase, cytosolic II,-like 1	w
 NUCLEOTIDASE	zebrafish	Q6NUZ5	cant1a	Q6NUZ5	1	9	Soluble calcium-activated nucleotidase 1	w
 NUCLEOTIDASE	zebrafish	Q7SYN4	nt5c3	Q7SYN4	0	8	Cytosolic 5'-nucleotidase 3	w
@@ -1165,7 +1169,7 @@ NUCLEOTIDE	fly	FBgn0026376	Rgl	M9PCE9	7	27	Ral guanine nucleotide dissociation s
 NUCLEOTIDE	fly	FBgn0028500	Rich	Q9V3C5	2	32	Guanine nucleotide exchange factor subunit Rich (Protein RIC	w
 NUCLEOTIDE	fly	FBgn0031459	HINT1	Q8STA5	9	174	Histidine triad nucleotide binding protein 1, isoform A (EC 	w
 NUCLEOTIDE	fly	FBgn0032020	strat	Q9VLP3	13	108	Guanine nucleotide exchange factor MSS4 homolog (Guanine nuc	w
-NUCLEOTIDE	fly	FBgn0032986	Nubpl	Q9V9M8	0	23	Iron-sulfur cluster transfer protein Nubpl (Nucleotide bindi	w
+NUCLEOTIDE	fly	FBgn0032986	Nubpl	Q9V9M8	1	24	Iron-sulfur cluster transfer protein Nubpl (Nucleotide bindi	w
 NUCLEOTIDE	fly	FBgn0035574	RhoGEF64C	Q9VZ85	4	20	Rho guanine nucleotide exchange factor at 64C, isoform A (Rh	w
 NUCLEOTIDE	fly	FBgn0035761	RhoGEF4	Q9VS45	1	7	LD03170p (Rho guanine nucleotide exchange factor 4)	w
 NUCLEOTIDE	fly	FBgn0037301	Mms19	Q95U54	3	23	MMS19 nucleotide excision repair protein	w
@@ -1222,7 +1226,7 @@ NUCLEOTIDE	human	Q5JS13	RALGPS1	Q5JS13	7	65	Ras-specific guanine nucleotide-rele
 NUCLEOTIDE	human	Q5JSL3	DOCK11	Q5JSL3	9	49	Dedicator of cytokinesis protein 11 (Activated Cdc42-associa	w
 NUCLEOTIDE	human	Q5VV41	ARHGEF16	Q5VV41	19	209	Rho guanine nucleotide exchange factor 16 (Ephexin-4)	w
 NUCLEOTIDE	human	Q6KCM7	SLC25A25	Q6KCM7	0	58	Mitochondrial adenyl nucleotide antiporter SLC25A25 (Mitocho	w
-NUCLEOTIDE	human	Q6NUK1	SLC25A24	Q6NUK1	1	231	Mitochondrial adenyl nucleotide antiporter SLC25A24 (Mitocho	w
+NUCLEOTIDE	human	Q6NUK1	SLC25A24	Q6NUK1	2	232	Mitochondrial adenyl nucleotide antiporter SLC25A24 (Mitocho	w
 NUCLEOTIDE	human	Q6P9H5	GIMAP6	Q6P9H5	7	29	GTPase IMAP family member 6 (Immunity-associated nucleotide 	w
 NUCLEOTIDE	human	Q6ZSZ5	ARHGEF18	Q6ZSZ5	30	86	Rho guanine nucleotide exchange factor 18 (114 kDa Rho-speci	w
 NUCLEOTIDE	human	Q76EJ3	SLC35D2	Q76EJ3	0	29	Nucleotide sugar transporter SLC35D2 (Homolog of Fringe conn	w
@@ -1257,9 +1261,9 @@ NUCLEOTIDE	human	Q96LT7	C9orf72	Q96LT7	21	295	Guanine nucleotide exchange factor
 NUCLEOTIDE	human	Q96N96	SPATA13	Q96N96	26	128	Spermatogenesis-associated protein 13 (APC-stimulated guanin	w
 NUCLEOTIDE	human	Q96PE2	ARHGEF17	Q96PE2	19	157	Rho guanine nucleotide exchange factor 17 (164 kDa Rho-speci	w
 NUCLEOTIDE	human	Q96T76	MMS19	Q96T76	40	389	MMS19 nucleotide excision repair protein homolog (hMMS19) (M	w
-NUCLEOTIDE	human	Q9BQD7	ANTKMT	Q9BQD7	2	58	Adenine nucleotide translocase lysine N-methyltransferase (A	w
+NUCLEOTIDE	human	Q9BQD7	ANTKMT	Q9BQD7	4	60	Adenine nucleotide translocase lysine N-methyltransferase (A	w
 NUCLEOTIDE	human	Q9BQI7	PSD2	Q9BQI7	16	108	PH and SEC7 domain-containing protein 2 (Exchange factor for	w
-NUCLEOTIDE	human	Q9BV35	SLC25A23	Q9BV35	0	127	Mitochondrial adenyl nucleotide antiporter SLC25A23 (Mitocho	w
+NUCLEOTIDE	human	Q9BV35	SLC25A23	Q9BV35	1	128	Mitochondrial adenyl nucleotide antiporter SLC25A23 (Mitocho	w
 NUCLEOTIDE	human	Q9BYT1	SLC17A9	Q9BYT1	1	30	Voltage-gated purine nucleotide uniporter SLC17A9 (Solute ca	w
 NUCLEOTIDE	human	Q9BZ29	DOCK9	Q9BZ29	11	84	Dedicator of cytokinesis protein 9 (Cdc42 guanine nucleotide	w
 NUCLEOTIDE	human	Q9H0C2	SLC25A31	Q9H0C2	1	132	ADP/ATP translocase 4 (ADP,ATP carrier protein 4) (Adenine n	w
@@ -1339,7 +1343,7 @@ NUCLEOTIDE	zebrafish	Q5RH95	rsad2	Q5RH95	1	15	S-adenosylmethionine-dependent nuc
 NUCLEOTIDE	zebrafish	Q66L49	slc25a24	Q66L49	0	98	Mitochondrial adenyl nucleotide antiporter SLC25A24	w
 NUCLEOTIDE	zebrafish	Q6DGQ2	rabif	Q6DGQ2	11	172	Guanine nucleotide exchange factor MSS4	w
 NUCLEOTIDE	zebrafish	Q6DH55	gnb3a	Q6DH55	57	372	Guanine nucleotide binding protein (G protein), beta polypep	w
-NUCLEOTIDE	zebrafish	Q6IQ61	antkmt	Q6IQ61	0	13	Adenine nucleotide translocase lysine N-methyltransferase	w
+NUCLEOTIDE	zebrafish	Q6IQ61	antkmt	Q6IQ61	1	14	Adenine nucleotide translocase lysine N-methyltransferase	w
 NUCLEOTIDE	zebrafish	Q6P112	rgl1	Q6P112	18	46	Ral guanine nucleotide dissociation stimulator-like 1	w
 NUCLEOTIDE	zebrafish	Q6P6Y4	rabgef1	Q6P6Y4	16	77	RAB guanine nucleotide exchange factor (GEF) 1	w
 NUCLEOTIDE	zebrafish	Q6PUR7	smcr8b	Q6PUR7	4	21	Guanine nucleotide exchange protein smcr8b	w
@@ -1361,7 +1365,7 @@ NUCLEOTIDE-BINDING	fly	FBgn0032882	Ns4	Q9VIJ9	0	103	Guanine nucleotide-binding p
 NUCLEOTIDE-BINDING	fly	FBgn0033756	CG17760	Q8MQV5	28	94	Guanine nucleotide-binding protein subunit alpha	w
 NUCLEOTIDE-BINDING	fly	FBgn0038473	Ns1	Q8MT06	20	150	Guanine nucleotide-binding protein-like 3 homolog (Nucleoste	w
 NUCLEOTIDE-BINDING	fly	FBgn0050054	CG30054	Q0E9A7	10	31	Guanine nucleotide-binding protein subunit alpha	w
-NUCLEOTIDE-BINDING	fly	FBgn0054015	CG34015	Q6IIA4	0	1	Adenosine 5'-monophosphoramidase HINT3 (Histidine triad nucl	w
+NUCLEOTIDE-BINDING	fly	FBgn0054015	CG34015	Q6IIA4	2	4	Adenosine 5'-monophosphoramidase HINT3 (Histidine triad nucl	w
 NUCLEOTIDE-BINDING	fly	FBgn0263029	CG43324	A0A0B4K838	5	25	Guanine nucleotide-binding protein subunit gamma	w
 NUCLEOTIDE-BINDING	fly	FBgn0267252	Ggamma30A	X2JDM7	6	58	Guanine nucleotide-binding protein subunit gamma	w
 NUCLEOTIDE-BINDING	human	A0A024R161	DNAJC25-GNG10	A0A024R161	8	69	Guanine nucleotide-binding protein subunit gamma	w
@@ -1407,7 +1411,7 @@ NUCLEOTIDE-BINDING	human	Q14344	GNA13	Q14344	82	369	Guanine nucleotide-binding p
 NUCLEOTIDE-BINDING	human	Q5JWF2	GNAS	Q5JWF2	119	483	Guanine nucleotide-binding protein G(s) subunit alpha isofor	w
 NUCLEOTIDE-BINDING	human	Q6ZN66	GBP6	Q6ZN66	7	95	Guanylate-binding protein 6 (EC 3.6.5.-) (GTP-binding protei	w
 NUCLEOTIDE-BINDING	human	Q7RTR0	NLRP9	Q7RTR0	3	43	NACHT, LRR and PYD domains-containing protein 9 (Nucleotide-	w
-NUCLEOTIDE-BINDING	human	Q86UT6	NLRX1	Q86UT6	5	112	NLR family member X1 (Caterpiller protein 11.3) (CLR11.3) (N	w
+NUCLEOTIDE-BINDING	human	Q86UT6	NLRX1	Q86UT6	6	113	NLR family member X1 (Caterpiller protein 11.3) (CLR11.3) (N	w
 NUCLEOTIDE-BINDING	human	Q86W24	NLRP14	Q86W24	0	27	NACHT, LRR and PYD domains-containing protein 14 (Nucleotide	w
 NUCLEOTIDE-BINDING	human	Q86W25	NLRP13	Q86W25	1	23	NACHT, LRR and PYD domains-containing protein 13 (Nucleotide	w
 NUCLEOTIDE-BINDING	human	Q86W26	NLRP10	Q86W26	7	115	NACHT, LRR and PYD domains-containing protein 10 (Nucleotide	w
@@ -1416,7 +1420,7 @@ NUCLEOTIDE-BINDING	human	Q86WI3	NLRC5	Q86WI3	2	30	Protein NLRC5 (Caterpiller pro
 NUCLEOTIDE-BINDING	human	Q8N8V2	GBP7	Q8N8V2	7	45	Guanylate-binding protein 7 (EC 3.6.1.-) (EC 3.6.5.-) (GTP-b	w
 NUCLEOTIDE-BINDING	human	Q8NA66	CNBD1	Q8NA66	2	14	Cyclic nucleotide-binding domain-containing protein 1	w
 NUCLEOTIDE-BINDING	human	Q8ND71	GIMAP8	Q8ND71	8	108	GTPase IMAP family member 8 (Immune-associated nucleotide-bi	w
-NUCLEOTIDE-BINDING	human	Q8TB37	NUBPL	Q8TB37	7	108	Iron-sulfur cluster transfer protein NUBPL (IND1 homolog) (N	w
+NUCLEOTIDE-BINDING	human	Q8TB37	NUBPL	Q8TB37	8	109	Iron-sulfur cluster transfer protein NUBPL (IND1 homolog) (N	w
 NUCLEOTIDE-BINDING	human	Q8WX94	NLRP7	Q8WX94	7	187	NACHT, LRR and PYD domains-containing protein 7 (Nucleotide-	w
 NUCLEOTIDE-BINDING	human	Q8WXF7	ATL1	Q8WXF7	6	126	Atlastin-1 (ATL-1) (EC 3.6.5.-) (Brain-specific GTP-binding 	w
 NUCLEOTIDE-BINDING	human	Q96C86	DCPS	Q96C86	5	296	m7GpppX diphosphatase (EC 3.6.1.59) (DCS-1) (Decapping scave	w
@@ -1426,12 +1430,12 @@ NUCLEOTIDE-BINDING	human	Q96PP8	GBP5	Q96PP8	12	141	Guanylate-binding protein 5 (
 NUCLEOTIDE-BINDING	human	Q96PP9	GBP4	Q96PP9	8	102	Guanylate-binding protein 4 (EC 3.6.5.-) (GTP-binding protei	w
 NUCLEOTIDE-BINDING	human	Q99418	CYTH2	Q99418	35	177	Cytohesin-2 (ARF exchange factor) (ARF nucleotide-binding si	w
 NUCLEOTIDE-BINDING	human	Q9BVP2	GNL3	Q9BVP2	50	597	Guanine nucleotide-binding protein-like 3 (E2-induced gene 3	w
-NUCLEOTIDE-BINDING	human	Q9BX68	HINT2	Q9BX68	19	336	Adenosine 5'-monophosphoramidase HINT2 (EC 3.9.1.-) (HINT-3)	w
+NUCLEOTIDE-BINDING	human	Q9BX68	HINT2	Q9BX68	23	340	Adenosine 5'-monophosphoramidase HINT2 (EC 3.9.1.-) (HINT-3)	w
 NUCLEOTIDE-BINDING	human	Q9BYB4	GNB1L	Q9BYB4	21	182	Guanine nucleotide-binding protein subunit beta-like protein	w
 NUCLEOTIDE-BINDING	human	Q9H0R5	GBP3	Q9H0R5	9	68	Guanylate-binding protein 3 (EC 3.6.5.-) (GTP-binding protei	w
 NUCLEOTIDE-BINDING	human	Q9HAV0	GNB4	Q9HAV0	71	608	Guanine nucleotide-binding protein subunit beta-4 (Transduci	w
 NUCLEOTIDE-BINDING	human	Q9HC29	NOD2	Q9HC29	9	172	Nucleotide-binding oligomerization domain-containing protein	w
-NUCLEOTIDE-BINDING	human	Q9NQE9	HINT3	Q9NQE9	8	67	Adenosine 5'-monophosphoramidase HINT3 (EC 3.9.1.-) (Histidi	w
+NUCLEOTIDE-BINDING	human	Q9NQE9	HINT3	Q9NQE9	19	78	Adenosine 5'-monophosphoramidase HINT3 (EC 3.9.1.-) (Histidi	w
 NUCLEOTIDE-BINDING	human	Q9NVN8	GNL3L	Q9NVN8	33	451	Guanine nucleotide-binding protein-like 3-like protein	w
 NUCLEOTIDE-BINDING	human	Q9NX02	NLRP2	Q9NX02	2	88	NACHT, LRR and PYD domains-containing protein 2 (Nucleotide-	w
 NUCLEOTIDE-BINDING	human	Q9P2W3	GNG13	Q9P2W3	21	296	Guanine nucleotide-binding protein G(I)/G(S)/G(O) subunit ga	w
@@ -1494,7 +1498,7 @@ NUCLEOTIDE-BINDING	zebrafish	Q1LW07	gna15.4	Q1LW07	8	53	Guanine nucleotide-bindi
 NUCLEOTIDE-BINDING	zebrafish	Q1LXP8	gnl1	Q1LXP8	4	203	Guanine nucleotide-binding protein-like 1	w
 NUCLEOTIDE-BINDING	zebrafish	Q503Q6	gng8	Q503Q6	25	115	Guanine nucleotide-binding protein subunit gamma	w
 NUCLEOTIDE-BINDING	zebrafish	Q5RKP9	gna11b	Q5RKP9	54	120	Guanine nucleotide-binding protein subunit alpha	w
-NUCLEOTIDE-BINDING	zebrafish	Q642J0	hint1	Q642J0	0	6	Histidine triad nucleotide-binding protein 1	w
+NUCLEOTIDE-BINDING	zebrafish	Q642J0	hint1	Q642J0	1	8	Histidine triad nucleotide-binding protein 1	w
 NUCLEOTIDE-BINDING	zebrafish	Q6DGZ5	gng7	Q6DGZ5	19	115	Guanine nucleotide-binding protein subunit gamma	w
 NUCLEOTIDE-BINDING	zebrafish	Q6DH00	gng13b	Q6DH00	15	123	Guanine nucleotide-binding protein subunit gamma	w
 NUCLEOTIDE-BINDING	zebrafish	Q6DRP2	gnl3	Q6DRP2	20	204	Guanine nucleotide-binding protein-like 3	w
@@ -1567,7 +1571,7 @@ NUCLEOTIDE-RELEASING	zebrafish	E7F7V2	rasgrf1	E7F7V2	2	27	Ras-specific guanine n
 NUCLEOTIDE-RELEASING	zebrafish	E7FBN7	rasgrf2a	E7FBN7	2	20	Ras protein-specific guanine nucleotide-releasing factor 2a	w
 NUCLEOTIDE-SUGAR	yeast	Q03697	YMD8	Q03697	0	18	Putative nucleotide-sugar transporter YMD8	w
 NUCLEOTIDOHYDROLASE	fly	FBgn0250837	dUTPase	Q9V3I1	7	189	Deoxyuridine 5'-triphosphate nucleotidohydrolase (dUTPase) (	w
-NUCLEOTIDOHYDROLASE	human	P33316	DUT	P33316	9	202	Deoxyuridine 5'-triphosphate nucleotidohydrolase, mitochondr	w
+NUCLEOTIDOHYDROLASE	human	P33316	DUT	P33316	10	203	Deoxyuridine 5'-triphosphate nucleotidohydrolase, mitochondr	w
 NUCLEOTIDOHYDROLASE	virus	A0A068EGS6	fep_040	A0A068EGS6	0	221	Deoxyuridine 5'-triphosphate nucleotidohydrolase	w
 NUCLEOTIDOHYDROLASE	virus	A0A068ELB2	pepv_042	A0A068ELB2	3	240	Deoxyuridine 5'-triphosphate nucleotidohydrolase	w
 NUCLEOTIDOHYDROLASE	virus	A0A0A7MBY7		A0A0A7MBY7	6	130	Deoxyuridine 5'-triphosphate nucleotidohydrolase	w
@@ -1620,10 +1624,10 @@ NUCLEOTIDOHYDROLASE	virus	Q9Q8S9	m012L	Q9Q8S9	3	157	Deoxyuridine 5'-triphosphate
 NUCLEOTIDOHYDROLASE	virus	Q9Q958	s012L	Q9Q958	4	153	Deoxyuridine 5'-triphosphate nucleotidohydrolase	w
 NUCLEOTIDOHYDROLASE	yeast	P33317	DUT1	P33317	0	22	Deoxyuridine 5'-triphosphate nucleotidohydrolase	w
 NUCLEOTIDOHYDROLASE-LIKE	human	Q6ZN92	DUTL	Q6ZN92	1	5	Putative inactive deoxyuridine 5'-triphosphate nucleotidohyd	w
-NUCLEOTIDYL	human	Q96Q11	TRNT1	Q96Q11	2	71	CCA tRNA nucleotidyltransferase 1, mitochondrial (EC 2.7.7.7	w
+NUCLEOTIDYL	human	Q96Q11	TRNT1	Q96Q11	4	73	CCA tRNA nucleotidyltransferase 1, mitochondrial (EC 2.7.7.7	w
 NUCLEOTIDYL	worm	Q9N4V3	CELE_Y47D9A.1	Q9N4V3	1	11	Nucleotidyl transferase domain-containing protein	w
 NUCLEOTIDYLEXOTRANSFERASE	human	P04053	DNTT	P04053	10	150	DNA nucleotidylexotransferase (EC 2.7.7.31) (Terminal additi	w
-NUCLEOTIDYLTRANSFERASE	fly	FBgn0039846	PNPase	Q9V9X7	1	20	polyribonucleotide nucleotidyltransferase (EC 2.7.7.8)	w
+NUCLEOTIDYLTRANSFERASE	fly	FBgn0039846	PNPase	Q9V9X7	2	21	polyribonucleotide nucleotidyltransferase (EC 2.7.7.8)	w
 NUCLEOTIDYLTRANSFERASE	human	Q13394	MAB21L1	Q13394	14	69	Putative nucleotidyltransferase MAB21L1 (EC 2.7.7.-) (Protei	w
 NUCLEOTIDYLTRANSFERASE	human	Q5VWP2	TENT5C	Q5VWP2	11	211	Terminal nucleotidyltransferase 5C (EC 2.7.7.19) (Non-canoni	w
 NUCLEOTIDYLTRANSFERASE	human	Q5XG87	TENT4A	Q5XG87	5	93	Terminal nucleotidyltransferase 4A (DNA polymerase sigma) (L	w
@@ -1634,12 +1638,13 @@ NUCLEOTIDYLTRANSFERASE	human	Q8NEK8	TENT5D	Q8NEK8	6	53	Terminal nucleotidyltrans
 NUCLEOTIDYLTRANSFERASE	human	Q8TCS8	PNPT1	Q8TCS8	7	205	Polyribonucleotide nucleotidyltransferase 1, mitochondrial (	w
 NUCLEOTIDYLTRANSFERASE	human	Q96A09	TENT5B	Q96A09	11	85	Terminal nucleotidyltransferase 5B (EC 2.7.7.19) (Non-canoni	w
 NUCLEOTIDYLTRANSFERASE	human	Q96IP4	TENT5A	Q96IP4	17	125	Terminal nucleotidyltransferase 5A (EC 2.7.7.19) (HBV X-tran	w
-NUCLEOTIDYLTRANSFERASE	human	Q96Q11	TRNT1	Q96Q11	2	71	CCA tRNA nucleotidyltransferase 1, mitochondrial (EC 2.7.7.7	w
+NUCLEOTIDYLTRANSFERASE	human	Q96Q11	TRNT1	Q96Q11	4	73	CCA tRNA nucleotidyltransferase 1, mitochondrial (EC 2.7.7.7	w
 NUCLEOTIDYLTRANSFERASE	worm	Q93795	hpo-31	Q93795	0	6	CCA tRNA nucleotidyltransferase 1, mitochondrial	w
 NUCLEOTIDYLTRANSFERASE	worm	Q965N3	pnpt-1	Q965N3	0	15	polyribonucleotide nucleotidyltransferase	w
 NUCLEOTIDYLTRANSFERASE	yeast	P21269	CCA1	P21269	0	8	CCA tRNA nucleotidyltransferase, mitochondrial	w
 NUCLEOTIDYLTRANSFERASE	zebrafish	A0A1D6UPT1	tent4b	A0A1D6UPT1	2	26	Terminal nucleotidyltransferase 4A	w
 NUCLEOTIDYLTRANSFERASE	zebrafish	A0JPF6	tent5ba	A0JPF6	0	6	Terminal nucleotidyltransferase 5B	w
 NUCLEOTIDYLTRANSFERASE	zebrafish	F6NXI9	trnt1	F6NXI9	0	10	CCA tRNA nucleotidyltransferase 1, mitochondrial	w
+NUCLEOTIDYLTRANSFERASE	zebrafish	G5CTT5	pnpt1	G5CTT5	1	1	polyribonucleotide nucleotidyltransferase	w
 NUCLEOTIDYLTRANSFERASE	zebrafish	Q6NYB4	mab21l1	Q6NYB4	0	1	Putative nucleotidyltransferase MAB21L1	w
 NUCLEOTIDYLTRANSFERASE	zebrafish	Q7ZUP1	tent5c	Q7ZUP1	0	1	Terminal nucleotidyltransferase 5C	w

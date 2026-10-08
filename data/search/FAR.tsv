@@ -42,10 +42,10 @@ FARNESOIC	fly	FBgn0034583	CG10527	Q9W2M4	4	78	Farnesoic acid O-methyl transferas
 FARNESOID	human	Q96RI1	NR1H4	Q96RI1	71	234	Bile acid receptor (Farnesoid X-activated receptor) (Farneso	w
 FARNESOL	human	C9JRZ8	AKR1B15	C9JRZ8	0	35	Aldo-keto reductase family 1 member B15 (EC 1.1.1.-) (EC 1.1	w
 FARNESOL	human	Q96RI1	NR1H4	Q96RI1	71	234	Bile acid receptor (Farnesoid X-activated receptor) (Farneso	w
-FARNESY	human	P14324	FDPS	P14324	3	156	Farnesyl pyrophosphate synthase (FPP synthase) (FPS) (EC 2.5	w
+FARNESY	human	P14324	FDPS	P14324	4	157	Farnesyl pyrophosphate synthase (FPP synthase) (FPS) (EC 2.5	w
 FARNESYL	fly	FBgn0025373	Fpps	Q7KN61	2	35	Farnesyl pyrophosphate synthase	w
 FARNESYL	human	O95749	GGPS1	O95749	1	134	Geranylgeranyl pyrophosphate synthase (GGPP synthase) (GGPPS	w
-FARNESYL	human	P14324	FDPS	P14324	3	156	Farnesyl pyrophosphate synthase (FPP synthase) (FPS) (EC 2.5	w
+FARNESYL	human	P14324	FDPS	P14324	4	157	Farnesyl pyrophosphate synthase (FPP synthase) (FPS) (EC 2.5	w
 FARNESYL	human	P15531	NME1	P15531	9	279	Nucleoside diphosphate kinase A (NDP kinase A) (NDPK A) (EC 	w
 FARNESYL	worm	O62336	fdps-1	O62336	0	6	Farnesyl pyrophosphate synthase	w
 FARNESYL	yeast	P08524	ERG20	P08524	1	27	Farnesyl pyrophosphate synthase	w
@@ -56,19 +56,20 @@ FARNESYLATED	human	P40855	PEX19	P40855	25	197	Peroxisomal biogenesis factor 19 (
 FARNESYLATED	human	Q9Y256	RCE1	Q9Y256	8	95	CAAX prenyl protease 2 (EC 3.4.26.1) (Farnesylated proteins-	w
 FARNESYLDIPHOSPHATE	fly	FBgn0031312	Tango14	Q9VPX8	1	8	ditrans,polycis-polyprenyl diphosphate synthase [(2E,6E)-far	w
 FARNESYLTRANSFERASE	fly	FBgn0031633	Fnta	Q9VR31	2	9	Protein farnesyltransferase/geranylgeranyltransferase type-1	w
-FARNESYLTRANSFERASE	fly	FBgn0032222	Cox10	Q9VKZ1	0	18	Protoheme IX farnesyltransferase, mitochondrial (Heme O synt	w
+FARNESYLTRANSFERASE	fly	FBgn0032222	Cox10	Q9VKZ1	2	20	Protoheme IX farnesyltransferase, mitochondrial (Heme O synt	w
 FARNESYLTRANSFERASE	fly	FBgn0038424	Fntb	Q9VEV7	1	13	Protein farnesyltransferase subunit beta (FTase-beta) (EC 2.	w
 FARNESYLTRANSFERASE	human	B4DL54	CHURC1-FNTB	B4DL54	1	4	Protein farnesyltransferase subunit beta	w
 FARNESYLTRANSFERASE	human	P37268	FDFT1	P37268	3	179	Squalene synthase (SQS) (SS) (EC 2.5.1.21) (FPP:FPP farnesyl	w
 FARNESYLTRANSFERASE	human	P49354	FNTA	P49354	11	151	Protein farnesyltransferase/geranylgeranyltransferase type-1	w
 FARNESYLTRANSFERASE	human	P49356	FNTB	P49356	12	151	Protein farnesyltransferase subunit beta (FTase-beta) (EC 2.	w
-FARNESYLTRANSFERASE	human	Q12887	COX10	Q12887	5	125	Protoheme IX farnesyltransferase, mitochondrial (EC 2.5.1.14	w
-FARNESYLTRANSFERASE	worm	K8ES01	cox-10	K8ES01	0	7	Protoheme IX farnesyltransferase, mitochondrial	w
+FARNESYLTRANSFERASE	human	Q12887	COX10	Q12887	9	129	Protoheme IX farnesyltransferase, mitochondrial (EC 2.5.1.14	w
+FARNESYLTRANSFERASE	worm	K8ES01	cox-10	K8ES01	1	8	Protoheme IX farnesyltransferase, mitochondrial	w
 FARNESYLTRANSFERASE	worm	O44501	fnta-1	O44501	1	7	Protein farnesyltransferase/geranylgeranyltransferase type-1	w
 FARNESYLTRANSFERASE	worm	Q19752	fntb-1	Q19752	1	8	Protein farnesyltransferase subunit beta	w
 FARNESYLTRANSFERASE	yeast	P21592	COX10	P21592	0	14	Protoheme IX farnesyltransferase, mitochondrial	w
 FARNESYLTRANSFERASE	yeast	P22007	RAM1	P22007	1	8	Protein farnesyltransferase subunit beta	w
 FARNESYLTRANSFERASE	yeast	P29703	RAM2	P29703	2	6	Protein farnesyltransferase/geranylgeranyltransferase type-1	w
+FARNESYLTRANSFERASE	zebrafish	A0A8M1NVI9	cox10	A0A8M1NVI9	5	5	Protoheme IX farnesyltransferase, mitochondrial	w
 FARNESYLTRANSFERASE	zebrafish	A1L1V1	fnta	A1L1V1	1	2	Protein farnesyltransferase/geranylgeranyltransferase type-1	w
 FARNESYLTRANSFERASE	zebrafish	F1QL30	cox10	F1QL30	0	8	Protoheme IX farnesyltransferase, mitochondrial	w
 FARNESYLTRANSFERASE	zebrafish	Q6IQG3	fntb	Q6IQG3	1	1	Protein farnesyltransferase subunit beta	w
@@ -84,13 +85,16 @@ FARP2	zebrafish	E7FE33	farp2	E7FE33	0	3	FERM, ARHGEF and pleckstrin domain-conta
 FARP2_HUMAN	human	O94887	FARP2	O94887	18	259		
 FARS	human	Q9Y285	FARSA	Q9Y285	10	205		
 FARS-1	worm	Q9GYS8	fars-1	Q9GYS8	1	10	phenylalanine--tRNA ligase	
-FARS-2	worm	G5ECI8	fars-2	G5ECI8	0	7	phenylalanine--tRNA ligase	
+FARS-2	worm	G5ECI8	fars-2	G5ECI8	2	9	phenylalanine--tRNA ligase	
 FARS-3	worm	Q19713	fars-3	Q19713	2	8	Phenylalanine--tRNA ligase beta subunit	
-FARS1	human	O95363	FARS2	O95363	17	211		
-FARS2	human	O95363	FARS2	O95363	17	211	Phenylalanine--tRNA ligase, mitochondrial (EC 6.1.1.20) (Phe	
-FARS2	mus-musculus	Q99M01	Fars2	Q99M01	0	7	Phenylalanine--tRNA ligase, mitochondrial	
-FARS2	rattus-norvegicus	Q6AYQ3	Fars2	Q6AYQ3	0	7	Phenylalanine--tRNA ligase, mitochondrial	
+FARS1	human	O95363	FARS2	O95363	22	216		
+FARS2	human	O95363	FARS2	O95363	22	216	Phenylalanine--tRNA ligase, mitochondrial (EC 6.1.1.20) (Phe	
+FARS2	mus-musculus	Q99M01	Fars2	Q99M01	4	12	Phenylalanine--tRNA ligase, mitochondrial	
+FARS2	pan-troglodytes	H2QS90	FARS2	H2QS90	4	4	phenylalanine--tRNA ligase	
+FARS2	rattus-norvegicus	Q6AYQ3	Fars2	Q6AYQ3	4	12	Phenylalanine--tRNA ligase, mitochondrial	
 FARS2	zebrafish	A0AB32TGQ2	fars2	A0AB32TGQ2	0	5	Phenylalanine--tRNA ligase, mitochondrial	
+FARS2	zebrafish	A8E4Z0	fars2	A8E4Z0	4	4	phenylalanine--tRNA ligase	
+FARS2.L	xenopus-laevis	A0A8J0VJP3	fars2.L	A0A8J0VJP3	2	5	phenylalanine--tRNA ligase	
 FARSA	human	Q9Y285	FARSA	Q9Y285	10	205	Phenylalanine--tRNA ligase alpha subunit (EC 6.1.1.20) (CML3	
 FARSA	mus-musculus	Q8C0C7	Farsa	Q8C0C7	1	14	Phenylalanine--tRNA ligase alpha subunit	
 FARSA	rattus-norvegicus	Q505J8	Farsa	Q505J8	1	9	Phenylalanine--tRNA ligase alpha subunit	

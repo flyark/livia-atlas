@@ -1,5 +1,5 @@
 # BioGRID 5.0.261 physical and genetic interactions (https://thebiogrid.org; MIT license; Oughtred et al., Protein Sci 2021), matched to this species index by UniProt accession, official symbol or systematic name; publications per pair
-# index 5762 896d7652be5a
+# index 5763 9540d9c94dc6
 i	j	physical	genetic	physical_refs	genetic_refs
 1	700	1	0	PUBMED:41816908	
 2	700	0	1		PUBMED:19269370
@@ -728,8 +728,6 @@ i	j	physical	genetic	physical_refs	genetic_refs
 468	4028	1	0	PUBMED:35938928	
 469	1980	0	1		PUBMED:27708008
 472	3004	1	0	PUBMED:38803224	
-479	1724	1	0	PUBMED:25792736	
-479	2492	1	0	PUBMED:25792736	
 491	2492	0	1		PUBMED:27708008
 492	2492	1	0	PUBMED:37968396	
 495	2492	1	0	PUBMED:37968396	
@@ -2965,6 +2963,7 @@ i	j	physical	genetic	physical_refs	genetic_refs
 1724	5529	0	1		PUBMED:27708008
 1724	5551	0	1		PUBMED:27708008
 1724	5600	0	1		PUBMED:27708008
+1724	5762	1	0	PUBMED:25792736	
 1725	3004	0	1		PUBMED:27708008
 1725	4540	0	1		PUBMED:27708008
 1725	5564	0	1		PUBMED:27708008
@@ -3508,6 +3507,7 @@ i	j	physical	genetic	physical_refs	genetic_refs
 2492	5695	0	1		PUBMED:27708008
 2492	5699	0	1		PUBMED:27708008
 2492	5712	0	1		PUBMED:27708008
+2492	5762	1	0	PUBMED:25792736	
 2493	3516	2	0	PUBMED:16606443,PUBMED:17551511	
 2493	4028	0	1		PUBMED:27708008
 2493	5052	0	1		PUBMED:27708008

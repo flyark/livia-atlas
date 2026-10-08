@@ -42,7 +42,7 @@ CHOLESTEROL	fly	FBgn0287185	nvd	Q1JUZ1	0	23	Cholesterol 7-desaturase nvd (EC 1.1
 CHOLESTEROL	human	O15118	NPC1	O15118	28	381	NPC intracellular cholesterol transporter 1 (Niemann-Pick C1	w
 CHOLESTEROL	human	O75908	SOAT2	O75908	1	28	Sterol O-acyltransferase 2 (EC 2.3.1.26) (Acyl-coenzyme A:ch	w
 CHOLESTEROL	human	O95992	CH25H	O95992	3	71	Cholesterol 25-hydroxylase (EC 1.14.99.38) (Cholesterol 25-m	w
-CHOLESTEROL	human	P05108	CYP11A1	P05108	9	63	Cholesterol side-chain cleavage enzyme, mitochondrial (EC 1.	w
+CHOLESTEROL	human	P05108	CYP11A1	P05108	20	74	Cholesterol side-chain cleavage enzyme, mitochondrial (EC 1.	w
 CHOLESTEROL	human	P05177	CYP1A2	P05177	3	104	Cytochrome P450 1A2 (EC 1.14.14.1) (CYPIA2) (Cholesterol 25-	w
 CHOLESTEROL	human	P10635	CYP2D6	P10635	3	69	Cytochrome P450 2D6 (EC 1.14.14.-) (CYPIID6) (Cholesterol 25	w
 CHOLESTEROL	human	P19835	CEL	P19835	4	63	Bile salt-activated lipase (BAL) (EC 3.1.1.13) (EC 3.1.1.3) 	w
@@ -63,7 +63,7 @@ CHOLESTEROL	worm	Q9GYF0	chup-1	Q9GYF0	1	21	Cholesterol uptake protein 1	w
 CHOLESTEROL	zebrafish	A0A0N4SU47	cyp46a1.5	A0A0N4SU47	0	70	Cholesterol 24-hydroxylase	w
 CHOLESTEROL	zebrafish	A0A2R8Q2J0	npc1	A0A2R8Q2J0	2	17	NPC intracellular cholesterol transporter 1 isoform X1	w
 CHOLESTEROL	zebrafish	A0A8M1Q1F6	nceh1b.2	A0A8M1Q1F6	0	65	Neutral cholesterol ester hydrolase 1	w
-CHOLESTEROL	zebrafish	A0A8M9Q8E0	cyp11a1.2	A0A8M9Q8E0	3	14	Cholesterol side-chain cleavage enzyme, mitochondrial	w
+CHOLESTEROL	zebrafish	A0A8M9Q8E0	cyp11a1.2	A0A8M9Q8E0	5	16	Cholesterol side-chain cleavage enzyme, mitochondrial	w
 CHOLESTEROL	zebrafish	A8WGT1	ch25hl2	A8WGT1	0	11	Cholesterol 25-hydroxylase-like protein 2	w
 CHOLESTEROL	zebrafish	B3DFW4	npc2.2	B3DFW4	1	4	NPC intracellular cholesterol transporter 2	w
 CHOLESTEROL	zebrafish	E7F2W1	aadac	E7F2W1	0	65	Neutral cholesterol ester hydrolase 1	w
@@ -94,11 +94,11 @@ CHOLINE	human	P35790	CHKA	P35790	91	1248	Choline kinase alpha (CK) (EC 2.7.1.32)
 CHOLINE	human	Q13393	PLD1	Q13393	12	154	Phospholipase D1 (PLD 1) (hPLD1) (EC 3.1.4.4) (Choline phosp	w
 CHOLINE	human	Q53GD3	SLC44A4	Q53GD3	1	32	Choline transporter-like protein 4 (Solute carrier family 44	w
 CHOLINE	human	Q8IWA5	SLC44A2	Q8IWA5	1	62	Choline transporter-like protein 2 (Solute carrier family 44	w
-CHOLINE	human	Q8N2A8	PLD6	Q8N2A8	9	172	Mitochondrial cardiolipin hydrolase (EC 3.1.4.-) (Choline ph	w
+CHOLINE	human	Q8N2A8	PLD6	Q8N2A8	10	173	Mitochondrial cardiolipin hydrolase (EC 3.1.4.-) (Choline ph	w
 CHOLINE	human	Q8N4M1	SLC44A3	Q8N4M1	0	22	Choline transporter-like protein 3 (Solute carrier family 44	w
 CHOLINE	human	Q8N7P1	PLD5	Q8N7P1	7	88	Inactive phospholipase D5 (Inactive PLD 5) (Inactive choline	w
 CHOLINE	human	Q8NCS7	SLC44A5	Q8NCS7	2	34	Choline transporter-like protein 5 (Solute carrier family 44	w
-CHOLINE	human	Q8NE62	CHDH	Q8NE62	2	71	Choline dehydrogenase, mitochondrial (CDH) (CHD) (EC 1.1.99.	w
+CHOLINE	human	Q8NE62	CHDH	Q8NE62	7	77	Choline dehydrogenase, mitochondrial (CDH) (CHD) (EC 1.1.99.	w
 CHOLINE	human	Q8WWI5	SLC44A1	Q8WWI5	6	109	Choline transporter-like protein 1 (CDw92) (Solute carrier f	w
 CHOLINE	human	Q9GZV3	SLC5A7	Q9GZV3	2	62	High affinity choline transporter 1 (hCHT1) (Hemicholinium-3	w
 CHOLINE	human	Q9UPI3	FLVCR2	Q9UPI3	0	33	Choline/ethanolamine transporter FLVCR2 (Calcium-chelate tra	w
@@ -144,7 +144,7 @@ CHOLINEPHOSPHODIESTERASE	worm	Q22129	CELE_T03G6.3	Q22129	0	5	Glycerophosphocholi
 CHOLINEPHOSPHODIESTERASE	zebrafish	Q5BKW7	enpp6	Q5BKW7	0	1	Glycerophosphocholine cholinephosphodiesterase ENPP6	w
 CHOLINEPHOSPHOTRANSFERASE	human	Q86VZ5	SGMS1	Q86VZ5	6	56	Phosphatidylcholine:ceramide cholinephosphotransferase 1 (EC	w
 CHOLINEPHOSPHOTRANSFERASE	human	Q8NHU3	SGMS2	Q8NHU3	3	60	Phosphatidylcholine:ceramide cholinephosphotransferase 2 (EC	w
-CHOLINEPHOSPHOTRANSFERASE	human	Q8WUD6	CHPT1	Q8WUD6	7	157	Cholinephosphotransferase 1 (hCPT1) (EC 2.7.8.2) (AAPT1-like	w
+CHOLINEPHOSPHOTRANSFERASE	human	Q8WUD6	CHPT1	Q8WUD6	13	163	Cholinephosphotransferase 1 (hCPT1) (EC 2.7.8.2) (AAPT1-like	w
 CHOLINEPHOSPHOTRANSFERASE	worm	G5EC09	cept-1	G5EC09	1	3	diacylglycerol cholinephosphotransferase	w
 CHOLINEPHOSPHOTRANSFERASE	worm	G5EC25	cept-2	G5EC25	1	4	diacylglycerol cholinephosphotransferase	w
 CHOLINEPHOSPHOTRANSFERASE	worm	Q20735	sms-2	Q20735	2	7	Phosphatidylcholine:ceramide cholinephosphotransferase 2	w
@@ -175,7 +175,7 @@ CHONDROADHERIN-LIKE	human	Q6NUI6	CHADL	Q6NUI6	8	114	Chondroadherin-like protein	
 CHONDROADHERIN-LIKE	zebrafish	E7EXH9	chadla	E7EXH9	2	23	Chondroadherin-like protein	w
 CHONDROADHERIN-LIKE	zebrafish	F1Q881	chadlb	F1Q881	0	23	Chondroadherin-like protein	w
 CHONDROCALCIN	human	P02458	COL2A1	P02458	26	166	Collagen alpha-1(II) chain (Alpha-1 type II collagen) [Cleav	w
-CHONDROCYTE	human	Q15390	MTFR1	Q15390	19	106	Mitochondrial fission regulator 1 (Chondrocyte protein with 	w
+CHONDROCYTE	human	Q15390	MTFR1	Q15390	21	108	Mitochondrial fission regulator 1 (Chondrocyte protein with 	w
 CHONDROCYTE	human	Q15782	CHI3L2	Q15782	4	90	Chitinase-3-like protein 2 (Chondrocyte protein 39) (YKL-39)	w
 CHONDROCYTE	human	Q6UX34	SNORC	Q6UX34	6	86	Protein SNORC (Secondary ossification center-associated regu	w
 CHONDROCYTE-DERIVED	fly	FBgn0265082	Cdep	A8JQT5	1	1	Chondrocyte-derived ezrin-like domain containing protein, is	w

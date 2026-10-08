@@ -3,8 +3,8 @@ FAS	human	P49327	FASN	P49327	3	765
 FAS	mus-musculus	P25446	Fas	P25446	14	40	Tumor necrosis factor receptor superfamily member 6	
 FAS	rattus-norvegicus	Q63199	Fas	Q63199	11	48	Tumor necrosis factor receptor superfamily member 6	
 FAS	zebrafish	F1QG24	fas	F1QG24	8	36	Tumor necrosis factor receptor superfamily member 6	
-FAS-ACTIVATED	human	Q14296	FASTK	Q14296	313	1242	Fas-activated serine/threonine kinase (FAST kinase) (EC 2.7.	w
-FAS-ACTIVATED	zebrafish	B0S618	fastk	B0S618	5	14	Fas-activated serine/threonine kinase	w
+FAS-ACTIVATED	human	Q14296	FASTK	Q14296	317	1244	Fas-activated serine/threonine kinase (FAST kinase) (EC 2.7.	w
+FAS-ACTIVATED	zebrafish	B0S618	fastk	B0S618	7	16	Fas-activated serine/threonine kinase	w
 FAS-ASSOCIATED	fly	FBgn0025608	Faf2	Q9VJ58	4	86	Fas-associated factor 2, isoform A (Fas-associated factor 2,	w
 FAS-ASSOCIATED	fly	FBgn0038928	Fadd	Q9V3B4	10	117	Fas-associated death domain protein (Death domain-containing	w
 FAS-ASSOCIATED	human	Q12923	PTPN13	Q12923	13	165	Tyrosine-protein phosphatase non-receptor type 13 (EC 3.1.3.	w
@@ -67,18 +67,21 @@ FAST	fly	FBgn0026257	cav	Q95RV2	7	51	Telomere-binding protein cav (Anonymous fas
 FAST	human	P11055	MYH3	P11055	5	45	Myosin-3 (Muscle embryonic myosin heavy chain) (Myosin heavy	w
 FAST	human	P45378	TNNT3	P45378	17	98	Troponin T, fast skeletal muscle (TnTf) (Beta-TnTF) (Fast sk	w
 FAST	human	P48788	TNNI2	P48788	21	152	Troponin I, fast skeletal muscle (Troponin I, fast-twitch is	w
-FAST	human	Q14296	FASTK	Q14296	313	1242	Fas-activated serine/threonine kinase (FAST kinase) (EC 2.7.	w
+FAST	human	Q14296	FASTK	Q14296	317	1244	Fas-activated serine/threonine kinase (FAST kinase) (EC 2.7.	w
 FAST	human	Q14324	MYBPC2	Q14324	8	64	Myosin-binding protein C, fast-type (Fast MyBP-C) (C-protein	w
-FAST	human	Q14CZ7	FASTKD3	Q14CZ7	14	213	FAST kinase domain-containing protein 3, mitochondrial	w
-FAST	human	Q53R41	FASTKD1	Q53R41	14	140	FAST kinase domain-containing protein 1, mitochondrial	w
-FAST	human	Q7L8L6	FASTKD5	Q7L8L6	37	298	Non-canonical pre-mRNAs endonuclease FASTKD5, mitochondrial 	w
-FAST	human	Q969Z0	TBRG4	Q969Z0	28	410	FAST kinase domain-containing protein 4 (Cell cycle progress	w
+FAST	human	Q14CZ7	FASTKD3	Q14CZ7	16	214	FAST kinase domain-containing protein 3, mitochondrial	w
+FAST	human	Q53R41	FASTKD1	Q53R41	18	144	FAST kinase domain-containing protein 1, mitochondrial	w
+FAST	human	Q7L8L6	FASTKD5	Q7L8L6	40	301	Non-canonical pre-mRNAs endonuclease FASTKD5, mitochondrial 	w
+FAST	human	Q969Z0	TBRG4	Q969Z0	29	410	FAST kinase domain-containing protein 4 (Cell cycle progress	w
 FAST	human	Q96A32	MYL11	Q96A32	13	126	Myosin regulatory light chain 11 (Fast skeletal myosin light	w
-FAST	human	Q9NYY8	FASTKD2	Q9NYY8	20	282	FAST kinase domain-containing protein 2, mitochondrial	w
+FAST	human	Q9NYY8	FASTKD2	Q9NYY8	25	287	FAST kinase domain-containing protein 2, mitochondrial	w
 FAST	zebrafish	A0A0R4IJX1	fastkd3	A0A0R4IJX1	0	14	FAST kinase domain-containing protein 3, mitochondrial	w
-FAST	zebrafish	A0A8N7UVN1	fastkd5	A0A8N7UVN1	9	56	FAST kinase domain-containing protein 5, mitochondrial isofo	w
+FAST	zebrafish	A0A8M1PD17	fastkd1	A0A8M1PD17	4	4	FAST kinase domain-containing protein 1, mitochondrial	w
+FAST	zebrafish	A0A8M1PS97	fastkd3	A0A8M1PS97	2	2	FAST kinase domain-containing protein 3, mitochondrial	w
+FAST	zebrafish	A0A8N7UR43	fastkd2	A0A8N7UR43	3	3	FAST kinase domain-containing protein 2, mitochondrial	w
+FAST	zebrafish	A0A8N7UVN1	fastkd5	A0A8N7UVN1	9	57	FAST kinase domain-containing protein 5, mitochondrial isofo	w
 FAST	zebrafish	A0AB32THC7	tnni2a.2	A0AB32THC7	14	22	Troponin I type 2a (Skeletal, fast), tandem duplicate 2	w
-FAST	zebrafish	E7F3K7	tbrg4	E7F3K7	5	51	FAST kinase domain-containing protein 4 (Protein TBRG4) (Tra	w
+FAST	zebrafish	E7F3K7	tbrg4	E7F3K7	7	53	FAST kinase domain-containing protein 4 (Protein TBRG4) (Tra	w
 FAST	zebrafish	E7F8W7	fastkd1	E7F8W7	3	28	FAST kinase domain-containing protein 1, mitochondrial	w
 FAST	zebrafish	F1QCC0	tnni2b.1	F1QCC0	14	33	Troponin I type 2b (skeletal, fast), tandem duplicate 1	w
 FAST	zebrafish	Q0D2W2	tnni2a.4	Q0D2W2	15	33	Fast muscle troponin I	w
@@ -95,24 +98,36 @@ FAST-TYPE	zebrafish	A0AB32TI46	mybpc2b	A0AB32TI46	2	15	Myosin-binding protein C,
 FAST1	human	O75593	FOXH1	O75593	60	457		
 FAST2	human	O75593	FOXH1	O75593	60	457		
 FASTING-INDUCED	human	Q9NTK1	DEPP1	Q9NTK1	2	29	Protein DEPP1 (Decidual protein induced by progesterone) (Fa	w
-FASTK	human	Q14296	FASTK	Q14296	313	1242	Fas-activated serine/threonine kinase (FAST kinase) (EC 2.7.	
-FASTK	mus-musculus	Q9JIX9	Fastk	Q9JIX9	1	8	Fas-activated serine/threonine kinase	
+FASTK	human	Q14296	FASTK	Q14296	317	1244	Fas-activated serine/threonine kinase (FAST kinase) (EC 2.7.	
+FASTK	mus-musculus	Q9JIX9	Fastk	Q9JIX9	4	11	Fas-activated serine/threonine kinase	
+FASTK	pan-troglodytes	H2QVM5	FASTK	H2QVM5	4	4	Fas-activated serine/threonine kinase	
+FASTK	rattus-norvegicus	A0A8I6A5X4	Fastk	A0A8I6A5X4	2	2	Fas-activated serine/threonine kinase	
 FASTK	rattus-norvegicus	Q5XIG7	Fastk	Q5XIG7	0	9	Fas-activated serine/threonine kinase	
-FASTK	zebrafish	B0S618	fastk	B0S618	5	14	Fas-activated serine/threonine kinase	
-FASTKD1	human	Q53R41	FASTKD1	Q53R41	14	140	FAST kinase domain-containing protein 1, mitochondrial	
-FASTKD1	mus-musculus	Q6DI86	Fastkd1	Q6DI86	0	2	FAST kinase domain-containing protein 1, mitochondrial	
-FASTKD1	rattus-norvegicus	D3ZFR0	Fastkd1	D3ZFR0	0	1	FAST kinase domains 1	
+FASTK	zebrafish	B0S618	fastk	B0S618	7	16	Fas-activated serine/threonine kinase	
+FASTKD1	human	Q53R41	FASTKD1	Q53R41	18	144	FAST kinase domain-containing protein 1, mitochondrial	
+FASTKD1	mus-musculus	Q6DI86	Fastkd1	Q6DI86	4	6	FAST kinase domain-containing protein 1, mitochondrial	
+FASTKD1	pan-troglodytes	H2QIY2	FASTKD1	H2QIY2	4	5	FAST kinase domains 1	
+FASTKD1	rattus-norvegicus	D3ZFR0	Fastkd1	D3ZFR0	4	6	FAST kinase domains 1	
+FASTKD1	xenopus-laevis	Q6GQ66	fastkd1	Q6GQ66	5	5	FAST kinase domain-containing protein 1, mitochondrial	
+FASTKD1	zebrafish	A0A8M1PD17	fastkd1	A0A8M1PD17	4	4	FAST kinase domain-containing protein 1, mitochondrial	
 FASTKD1	zebrafish	E7F8W7	fastkd1	E7F8W7	3	28	FAST kinase domain-containing protein 1, mitochondrial	
-FASTKD2	human	Q9NYY8	FASTKD2	Q9NYY8	20	282	FAST kinase domain-containing protein 2, mitochondrial	
-FASTKD2	mus-musculus	Q922E6	Fastkd2	Q922E6	4	19	FAST kinase domain-containing protein 2, mitochondrial	
-FASTKD2	rattus-norvegicus	Q5M7V7	Fastkd2	Q5M7V7	3	25	FAST kinase domain-containing protein 2, mitochondrial	
-FASTKD3	human	Q14CZ7	FASTKD3	Q14CZ7	14	213	FAST kinase domain-containing protein 3, mitochondrial	
-FASTKD3	mus-musculus	Q8BSN9	Fastkd3	Q8BSN9	1	13	FAST kinase domain-containing protein 3, mitochondrial	
-FASTKD3	rattus-norvegicus	Q68FN9	Fastkd3	Q68FN9	2	15	FAST kinase domain-containing protein 3, mitochondrial	
+FASTKD2	human	Q9NYY8	FASTKD2	Q9NYY8	25	287	FAST kinase domain-containing protein 2, mitochondrial	
+FASTKD2	mus-musculus	Q922E6	Fastkd2	Q922E6	11	26	FAST kinase domain-containing protein 2, mitochondrial	
+FASTKD2	pan-troglodytes	A0A2J8N5S6	FASTKD2	A0A2J8N5S6	9	9	FAST kinase domains 2	
+FASTKD2	rattus-norvegicus	Q5M7V7	Fastkd2	Q5M7V7	9	31	FAST kinase domain-containing protein 2, mitochondrial	
+FASTKD2	zebrafish	A0A8N7UR43	fastkd2	A0A8N7UR43	3	3	FAST kinase domain-containing protein 2, mitochondrial	
+FASTKD3	human	Q14CZ7	FASTKD3	Q14CZ7	16	214	FAST kinase domain-containing protein 3, mitochondrial	
+FASTKD3	mus-musculus	Q8BSN9	Fastkd3	Q8BSN9	5	17	FAST kinase domain-containing protein 3, mitochondrial	
+FASTKD3	pan-troglodytes	A0A2I3TVI3	FASTKD3	A0A2I3TVI3	4	4	FAST kinase domains 3	
+FASTKD3	rattus-norvegicus	Q68FN9	Fastkd3	Q68FN9	6	19	FAST kinase domain-containing protein 3, mitochondrial	
 FASTKD3	zebrafish	A0A0R4IJX1	fastkd3	A0A0R4IJX1	0	14	FAST kinase domain-containing protein 3, mitochondrial	
-FASTKD4	human	Q969Z0	TBRG4	Q969Z0	28	410		
-FASTKD5	human	Q7L8L6	FASTKD5	Q7L8L6	37	298	Non-canonical pre-mRNAs endonuclease FASTKD5, mitochondrial 	
-FASTKD5	mus-musculus	Q7TMV3	Fastkd5	Q7TMV3	2	8	FAST kinase domain-containing protein 5, mitochondrial	
-FASTKD5	zebrafish	A0A8N7UVN1	fastkd5	A0A8N7UVN1	9	56	FAST kinase domain-containing protein 5, mitochondrial isofo	
-FASTK_HUMAN	human	Q14296	FASTK	Q14296	313	1242		
+FASTKD3	zebrafish	A0A8M1PS97	fastkd3	A0A8M1PS97	2	2	FAST kinase domain-containing protein 3, mitochondrial	
+FASTKD3.L	xenopus-laevis	A0A8J0VKM1	fastkd3.L	A0A8J0VKM1	2	2	FAST kinase domain-containing protein 3, mitochondrial isofo	
+FASTKD4	human	Q969Z0	TBRG4	Q969Z0	29	410		
+FASTKD5	human	Q7L8L6	FASTKD5	Q7L8L6	40	301	Non-canonical pre-mRNAs endonuclease FASTKD5, mitochondrial 	
+FASTKD5	mus-musculus	Q7TMV3	Fastkd5	Q7TMV3	5	11	FAST kinase domain-containing protein 5, mitochondrial	
+FASTKD5	rattus-norvegicus	A0A8I6AAM0	Fastkd5	A0A8I6AAM0	2	3	FAST kinase domains 5	
+FASTKD5	zebrafish	A0A8N7UVN1	fastkd5	A0A8N7UVN1	9	57	FAST kinase domain-containing protein 5, mitochondrial isofo	
+FASTKD5.L	xenopus-laevis	A0A1L8HSI5	fastkd5.L	A0A1L8HSI5	3	3	FAST kinase domain-containing protein 5, mitochondrial	
+FASTK_HUMAN	human	Q14296	FASTK	Q14296	317	1244		
 FAS_HUMAN	human	P49327	FASN	P49327	3	765		

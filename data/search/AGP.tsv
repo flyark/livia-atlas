@@ -33,9 +33,9 @@ AGPAT	human	Q643R3	LPCAT4	Q643R3	1	82	Lysophospholipid acyltransferase LPCAT4 (1
 AGPAT	human	Q6UWP7	LCLAT1	Q6UWP7	12	136	Lysocardiolipin acyltransferase 1 (EC 2.3.1.-) (1-acylglycer	w
 AGPAT	human	Q86UL3	GPAT4	Q86UL3	10	170	Glycerol-3-phosphate acyltransferase 4 (EC 2.3.1.15) (1-acyl	w
 AGPAT	human	Q99943	AGPAT1	Q99943	11	337	1-acyl-sn-glycerol-3-phosphate acyltransferase alpha (EC 2.3	w
-AGPAT	human	Q9NRZ5	AGPAT4	Q9NRZ5	4	91	1-acyl-sn-glycerol-3-phosphate acyltransferase delta (EC 2.3	w
+AGPAT	human	Q9NRZ5	AGPAT4	Q9NRZ5	6	93	1-acyl-sn-glycerol-3-phosphate acyltransferase delta (EC 2.3	w
 AGPAT	human	Q9NRZ7	AGPAT3	Q9NRZ7	9	123	1-acyl-sn-glycerol-3-phosphate acyltransferase gamma (EC 2.3	w
-AGPAT	human	Q9NUQ2	AGPAT5	Q9NUQ2	4	109	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon (EC 2	w
+AGPAT	human	Q9NUQ2	AGPAT5	Q9NUQ2	8	113	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon (EC 2	w
 AGPAT1	fly	FBgn0030421	Agpat1	Q9VYJ4	2	18	1-acyl-sn-glycerol-3-phosphate acyltransferase (EC 2.3.1.51)	
 AGPAT1	human	Q99943	AGPAT1	Q99943	11	337	1-acyl-sn-glycerol-3-phosphate acyltransferase alpha (EC 2.3	
 AGPAT1	mus-musculus	O35083	Agpat1	O35083	0	9	1-acyl-sn-glycerol-3-phosphate acyltransferase alpha	
@@ -53,13 +53,18 @@ AGPAT3	rattus-norvegicus	G3V648	Agpat3	G3V648	1	7	1-acylglycerol-3-phosphate O-a
 AGPAT3	zebrafish	Q7ZWC9	agpat3	Q7ZWC9	0	8	1-acyl-sn-glycerol-3-phosphate acyltransferase gamma	
 AGPAT4	fly	FBgn0036622	Agpat4	Q9VV49	3	28	1-Acylglycerol-3-phosphate O-acyltransferase 4, isoform A (E	
 AGPAT4	human	Q9H0P7	AGPAT4-IT1	Q9H0P7	0	1	Putative uncharacterized protein encoded by AGPAT4-IT1 (AGPA	w
-AGPAT4	human	Q9NRZ5	AGPAT4	Q9NRZ5	4	91	1-acyl-sn-glycerol-3-phosphate acyltransferase delta (EC 2.3	
-AGPAT4	mus-musculus	Q8K4X7	Agpat4	Q8K4X7	0	9	1-acyl-sn-glycerol-3-phosphate acyltransferase delta	
-AGPAT4	rattus-norvegicus	Q924S1	Agpat4	Q924S1	0	7	1-acyl-sn-glycerol-3-phosphate acyltransferase delta	
+AGPAT4	human	Q9NRZ5	AGPAT4	Q9NRZ5	6	93	1-acyl-sn-glycerol-3-phosphate acyltransferase delta (EC 2.3	
+AGPAT4	mus-musculus	Q8K4X7	Agpat4	Q8K4X7	1	11	1-acyl-sn-glycerol-3-phosphate acyltransferase delta	
+AGPAT4	pan-troglodytes	K7CHI9	AGPAT4	K7CHI9	2	2	1-acylglycerol-3-phosphate O-acyltransferase 4	
+AGPAT4	rattus-norvegicus	Q924S1	Agpat4	Q924S1	1	9	1-acyl-sn-glycerol-3-phosphate acyltransferase delta	
 AGPAT4	zebrafish	A0A8M1PN43	agpat4	A0A8M1PN43	0	8	1-acyl-sn-glycerol-3-phosphate acyltransferase delta	
 AGPAT4-IT1	human	Q9H0P7	AGPAT4-IT1	Q9H0P7	0	1	Putative uncharacterized protein encoded by AGPAT4-IT1 (AGPA	
-AGPAT5	human	Q9NUQ2	AGPAT5	Q9NUQ2	4	109	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon (EC 2	
-AGPAT5	mus-musculus	Q9D1E8	Agpat5	Q9D1E8	0	10	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon	
+AGPAT4.S	xenopus-laevis	Q6IRA0	agpat4.S	Q6IRA0	1	1	1-acylglycerol-3-phosphate O-acyltransferase 4 S homeolog	
+AGPAT5	human	Q9NUQ2	AGPAT5	Q9NUQ2	8	113	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon (EC 2	
+AGPAT5	mus-musculus	Q9D1E8	Agpat5	Q9D1E8	2	13	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon	
+AGPAT5	pan-troglodytes	K7CGU7	AGPAT5	K7CGU7	3	3	1-acylglycerol-3-phosphate O-acyltransferase 5	
+AGPAT5	rattus-norvegicus	G3V965	Agpat5	G3V965	2	3	1-acylglycerol-3-phosphate O-acyltransferase 5	
+AGPAT5	zebrafish	A0A8M1NAW1	agpat5	A0A8M1NAW1	1	1	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon	
 AGPAT5	zebrafish	F1QDN6	agpat5	F1QDN6	1	9	1-acyl-sn-glycerol-3-phosphate acyltransferase epsilon	
 AGPAT6	human	Q86UL3	GPAT4	Q86UL3	10	170		
 AGPAT7	human	Q643R3	LPCAT4	Q643R3	1	82		

@@ -41,14 +41,14 @@ P51164	human	P51164	ATP4B	P51164	9	74	Potassium-transporting ATPase subunit beta
 P51168	human	P51168	SCNN1B	P51168	9	85	Epithelial sodium channel subunit beta (Beta-ENaC) (ENaC sub	
 P51170	human	P51170	SCNN1G	P51170	10	89	Epithelial sodium channel subunit gamma (ENaC subunit gamma)	
 P51172	human	P51172	SCNN1D	P51172	8	83	Epithelial sodium channel subunit delta (Delta-ENaC) (ENaCD)	
-P51173	dictyostelium-discoideum	P51173	apeA	P51173	0	30	DNA-(apurinic or apyrimidinic site) endonuclease	
-P51174	mus-musculus	P51174	Acadl	P51174	5	20	Long-chain specific acyl-CoA dehydrogenase, mitochondrial	
+P51173	dictyostelium-discoideum	P51173	apeA	P51173	1	31	DNA-(apurinic or apyrimidinic site) endonuclease	
+P51174	mus-musculus	P51174	Acadl	P51174	11	26	Long-chain specific acyl-CoA dehydrogenase, mitochondrial	
 P51175	mus-musculus	P51175	Ppox	P51175	0	5	Protoporphyrinogen oxidase	
 P51178	human	P51178	PLCD1	P51178	4	118	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase de	
 P51179	rattus-norvegicus	P51179	Nr4a3	P51179	0	8	Nuclear receptor subfamily 4 group A member 3	
 P51180	mus-musculus	P51180	Mip	P51180	6	21	Lens fiber major intrinsic protein	
 P51397	human	P51397	DAP	P51397	2	32	Death-associated protein 1 (DAP-1)	
-P51398	human	P51398	DAP3	P51398	37	607	Small ribosomal subunit protein mS29 (EC 3.6.5.-) (28S ribos	
+P51398	human	P51398	DAP3	P51398	46	615	Small ribosomal subunit protein mS29 (EC 3.6.5.-) (28S ribos	
 P51400	rattus-norvegicus	P51400	Adarb1	P51400	3	14	Double-stranded RNA-specific editase 1	
 P51401	yeast	P51401	RPL9B	P51401	16	315	Large ribosomal subunit protein uL6B	
 P51402	yeast	P51402	RPL37B	P51402	7	296	Large ribosomal subunit protein eL37B	
@@ -99,9 +99,9 @@ P51531	human	P51531	SMARCA2	P51531	24	399	SWI/SNF-related matrix-associated acti
 P51532	human	P51532	SMARCA4	P51532	30	544	SWI/SNF-related matrix-associated actin-dependent regulator 	
 P51534	yeast	P51534	SHE4	P51534	2	12	SWI5-dependent HO expression protein 4	
 P51538	rattus-norvegicus	P51538	Cyp3a9	P51538	2	43	Cytochrome P450 3A9	
-P51553	human	P51553	IDH3G	P51553	8	114	Isocitrate dehydrogenase [NAD] subunit gamma, mitochondrial 	
+P51553	human	P51553	IDH3G	P51553	15	119	Isocitrate dehydrogenase [NAD] subunit gamma, mitochondrial 	
 P51556	rattus-norvegicus	P51556	Dgka	P51556	0	3	Diacylglycerol kinase alpha	
-P51557	mus-musculus	P51557	Star	P51557	1	16	Steroidogenic acute regulatory protein, mitochondrial	
+P51557	mus-musculus	P51557	Star	P51557	12	27	Steroidogenic acute regulatory protein, mitochondrial	
 P51559	worm	P51559	bli-4	P51559	2	37	Endoprotease bli-4 (EC 3.4.21.-) (Blisterase) (Blistered cut	
 P51566	arabidopsis-thaliana	P51566	AFC1	P51566	0	1	Serine/threonine-protein kinase AFC1	
 P51567	arabidopsis-thaliana	P51567	AFC2	P51567	0	5	Serine/threonine-protein kinase AFC2	
@@ -138,9 +138,9 @@ P51639	rattus-norvegicus	P51639	Hmgcr	P51639	3	13	3-hydroxy-3-methylglutaryl-coe
 P51642	mus-musculus	P51642	Cntf	P51642	7	32	Ciliary neurotrophic factor	
 P51646	rattus-norvegicus	P51646	Arl5a	P51646	3	20	ADP-ribosylation factor-like protein 5A	
 P51647	rattus-norvegicus	P51647	Aldh1a1	P51647	2	21	Aldehyde dehydrogenase 1A1	
-P51648	human	P51648	ALDH3A2	P51648	16	355	Aldehyde dehydrogenase family 3 member A2 (EC 1.2.1.3) (EC 1	
-P51649	human	P51649	ALDH5A1	P51649	13	109	Succinate-semialdehyde dehydrogenase, mitochondrial (EC 1.2.	
-P51650	rattus-norvegicus	P51650	Aldh5a1	P51650	0	6	Succinate-semialdehyde dehydrogenase, mitochondrial	
+P51648	human	P51648	ALDH3A2	P51648	20	360	Aldehyde dehydrogenase family 3 member A2 (EC 1.2.1.3) (EC 1	
+P51649	human	P51649	ALDH5A1	P51649	17	113	Succinate-semialdehyde dehydrogenase, mitochondrial (EC 1.2.	
+P51650	rattus-norvegicus	P51650	Aldh5a1	P51650	7	14	Succinate-semialdehyde dehydrogenase, mitochondrial	
 P51651	rattus-norvegicus	P51651	Gpr6	P51651	0	3	G-protein coupled receptor 6	
 P51652	rattus-norvegicus	P51652	Akr1c18	P51652	0	2	Aldo-keto reductase family 1 member C18	
 P51653	rattus-norvegicus	P51653	Gpc2	P51653	0	21	Glypican-2	
@@ -149,8 +149,8 @@ P51655	mus-musculus	P51655	Gpc4	P51655	4	37	Glypican-4
 P51656	mus-musculus	P51656	Hsd17b1	P51656	3	10	17-beta-hydroxysteroid dehydrogenase type 1	
 P51657	rattus-norvegicus	P51657	Hsd17b1	P51657	2	22	Estradiol 17-beta-dehydrogenase 1	
 P51658	mus-musculus	P51658	Hsd17b2	P51658	3	10	Estradiol 17-beta-dehydrogenase 2	
-P51659	human	P51659	HSD17B4	P51659	3	195	Peroxisomal multifunctional enzyme type 2 (MFE-2) (17-beta-h	
-P51660	mus-musculus	P51660	Hsd17b4	P51660	1	33	Peroxisomal multifunctional enzyme type 2	
+P51659	human	P51659	HSD17B4	P51659	3	196	Peroxisomal multifunctional enzyme type 2 (MFE-2) (17-beta-h	
+P51660	mus-musculus	P51660	Hsd17b4	P51660	1	34	Peroxisomal multifunctional enzyme type 2	
 P51661	mus-musculus	P51661	Hsd11b2	P51661	1	3	11-beta-hydroxysteroid dehydrogenase type 2	
 P51665	human	P51665	PSMD7	P51665	23	292	26S proteasome non-ATPase regulatory subunit 7 (26S proteaso	
 P51667	mus-musculus	P51667	Myl2	P51667	1	42	Myosin regulatory light chain 2, ventricular/cardiac muscle 	
@@ -274,11 +274,11 @@ P51957	human	P51957	NEK4	P51957	68	594	Serine/threonine-protein kinase Nek4 (EC 
 P51959	human	P51959	CCNG1	P51959	15	122	Cyclin-G1 (Cyclin-G)	
 P51960	mus-musculus	P51960	Mybl1	P51960	3	37	Myb-related protein A	
 P51965	human	P51965	UBE2E1	P51965	121	327	Ubiquitin-conjugating enzyme E2 E1 (EC 2.3.2.23) ((E3-indepe	
-P51970	human	P51970	NDUFA8	P51970	21	365	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8	
+P51970	human	P51970	NDUFA8	P51970	22	366	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8	
 P51974	rattus-norvegicus	P51974	Pax8	P51974	10	38	Paired box protein Pax-8	
 P51979	yeast	P51979	HFM1	P51979	3	66	ATP-dependent DNA helicase MER3	
 P51991	human	P51991	HNRNPA3	P51991	29	420	Heterogeneous nuclear ribonucleoprotein A3 (hnRNP A3)	
 P51993	human	P51993	FUT6	P51993	7	34	4-galactosyl-N-acetylglucosaminide 3-alpha-L-fucosyltransfer	
 P51996	yeast	P51996	YPT32	P51996	8	57	GTP-binding protein YPT32/YPT11	
-P51998	yeast	P51998	YML6	P51998	23	353	Large ribosomal subunit protein uL4m	
+P51998	yeast	P51998	YML6	P51998	24	353	Large ribosomal subunit protein uL4m	
 P51NOX	human	Q86UR1	NOXA1	Q86UR1	24	123		

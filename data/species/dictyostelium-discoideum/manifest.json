@@ -21,18 +21,34 @@
     "pairsFpr5": 4170,
     "pairsFpr1": 1252
    }
+  },
+  {
+   "id": "mitomatch-44689",
+   "short": "Mito orthologs",
+   "title": "MitoMatch: Dictyostelium discoideum orthologs of the human mitochondrial proteome",
+   "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+   "url": "https://doi.org/10.5281/zenodo.21232148",
+   "counts": {
+    "proteins": 226,
+    "pairs": 223,
+    "predictions": 223,
+    "runs": 223,
+    "pairsFpr10": 202,
+    "pairsFpr5": 176,
+    "pairsFpr1": 88
+   }
   }
  ],
  "counts": {
-  "proteins": 5014,
-  "pairs": 63917,
-  "predictions": 63917,
-  "runs": 63917,
-  "pairsFpr10": 6260,
-  "pairsFpr5": 4170,
-  "pairsFpr1": 1252,
-  "pairsInSeveral": 0,
-  "pairsTested": 63917
+  "proteins": 5033,
+  "pairs": 64025,
+  "predictions": 64140,
+  "runs": 64140,
+  "pairsFpr10": 6374,
+  "pairsFpr5": 4263,
+  "pairsFpr1": 1303,
+  "pairsInSeveral": 115,
+  "pairsTested": 64025
  },
  "files": {
   "proteins": "proteins.json",

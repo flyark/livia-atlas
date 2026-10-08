@@ -19,10 +19,11 @@ PRK6	arabidopsis-thaliana	Q3E991	PRK6	Q3E991	1	9	Pollen receptor-like kinase 6
 PRK8	arabidopsis-thaliana	Q9C9E4	PRK8	Q9C9E4	2	40	Leucine-rich repeat protein kinase family protein	
 PRKA	zebrafish	A0A0H2UKW6	akap8l	A0A0H2UKW6	0	11	A kinase (PRKA) anchor protein 8-like	w
 PRKA	zebrafish	E7FBS7	akap1a	E7FBS7	3	20	A kinase (PRKA) anchor protein 1a	w
-PRKA	zebrafish	F1RBY1	akap1b	F1RBY1	4	23	A kinase (PRKA) anchor protein 1b	w
+PRKA	zebrafish	F1QDF6	akap10	F1QDF6	4	6	A kinase (PRKA) anchor protein 10	w
+PRKA	zebrafish	F1RBY1	akap1b	F1RBY1	12	33	A kinase (PRKA) anchor protein 1b	w
 PRKA	zebrafish	Q1L8C6	akip1	Q1L8C6	0	7	A kinase (PRKA)-interacting protein 1	w
-PRKA1	human	Q92667	AKAP1	Q92667	89	504		
-PRKA10	human	O43572	AKAP10	O43572	24	120	A-kinase anchor protein 10, mitochondrial (AKAP-10) (Dual sp	w
+PRKA1	human	Q92667	AKAP1	Q92667	102	517		
+PRKA10	human	O43572	AKAP10	O43572	34	130	A-kinase anchor protein 10, mitochondrial (AKAP-10) (Dual sp	w
 PRKA11	human	Q9UKA4	AKAP11	Q9UKA4	15	203	A-kinase anchor protein 11 (AKAP-11) (A-kinase anchor protei	w
 PRKA14	human	Q86UN6	AKAP14	Q86UN6	5	51	A-kinase anchor protein 14 (AKAP-14) (A-kinase anchor protei	w
 PRKA17A	human	Q02040	AKAP17A	Q02040	14	184	A-kinase anchor protein 17A (AKAP-17A) (721P) (B-lymphocyte 	w
@@ -45,9 +46,11 @@ PRKAB2	human	O43741	PRKAB2	O43741	31	301	5'-AMP-activated protein kinase subunit
 PRKAB2	mus-musculus	Q6PAM0	Prkab2	Q6PAM0	7	49	5'-AMP-activated protein kinase subunit beta-2	
 PRKAB2	rattus-norvegicus	Q9QZH4	Prkab2	Q9QZH4	8	48	5'-AMP-activated protein kinase subunit beta-2	
 PRKACA	human	P17252	PRKCA	P17252	326	1922		
-PRKACA	human	P17612	PRKACA	P17612	563	2224	cAMP-dependent protein kinase catalytic subunit alpha (PKA C	
-PRKACA	mus-musculus	P05132	Prkaca	P05132	28	157	cAMP-dependent protein kinase catalytic subunit alpha	
-PRKACA	rattus-norvegicus	P27791	Prkaca	P27791	25	123	cAMP-dependent protein kinase catalytic subunit alpha	
+PRKACA	human	P17612	PRKACA	P17612	589	2249	cAMP-dependent protein kinase catalytic subunit alpha (PKA C	
+PRKACA	mus-musculus	P05132	Prkaca	P05132	53	184	cAMP-dependent protein kinase catalytic subunit alpha	
+PRKACA	rattus-norvegicus	P27791	Prkaca	P27791	49	149	cAMP-dependent protein kinase catalytic subunit alpha	
+PRKACA.S	xenopus-laevis	Q90WN3	prkaca.S	Q90WN3	17	17	cAMP-dependent protein kinase	
+PRKACAA	zebrafish	A0A8M9PZU3	prkacaa	A0A8M9PZU3	13	13	cAMP-dependent protein kinase	
 PRKACAA	zebrafish	A3KMS9	prkacaa	A3KMS9	11	53	cAMP-dependent protein kinase catalytic subunit alpha	
 PRKACAB	zebrafish	Q6DBV8	prkacab	Q6DBV8	10	52	cAMP-dependent protein kinase	
 PRKACB	human	P22694	PRKACB	P22694	420	1439	cAMP-dependent protein kinase catalytic subunit beta (PKA C-	
@@ -99,11 +102,12 @@ PRKC-LAMBDA	human	P41743	PRKCI	P41743	306	1663	Protein kinase C iota type (EC 2.
 PRKCA	human	P17252	PRKCA	P17252	326	1922	Protein kinase C alpha type (PKC-A) (PKC-alpha) (EC 2.7.11.1	
 PRKCA	mus-musculus	P20444	Prkca	P20444	8	101	Protein kinase C alpha type	
 PRKCA	rattus-norvegicus	P05696	Prkca	P05696	5	94	Protein kinase C alpha type	
-PRKCA-BINDING	fly	FBgn0032447	PICK1	X2JDZ1	2	28	PRKCA-binding protein (Protein interacting with C kinase 1) 	w
-PRKCA-BINDING	human	Q9NRD5	PICK1	Q9NRD5	139	700	PRKCA-binding protein (Protein interacting with C kinase 1) 	w
-PRKCA-BINDING	worm	O18246	CELE_Y57G11C.22	O18246	3	46	PRKCA-binding protein	w
+PRKCA-BINDING	fly	FBgn0032447	PICK1	X2JDZ1	3	29	PRKCA-binding protein (Protein interacting with C kinase 1) 	w
+PRKCA-BINDING	human	Q9NRD5	PICK1	Q9NRD5	142	703	PRKCA-binding protein (Protein interacting with C kinase 1) 	w
+PRKCA-BINDING	worm	O18246	CELE_Y57G11C.22	O18246	5	48	PRKCA-binding protein	w
+PRKCA-BINDING	zebrafish	Q08BM4	pick1	Q08BM4	2	2	PRKCA-binding protein	w
 PRKCAA	zebrafish	A0A2R8QIY5	prkcaa	A0A2R8QIY5	3	20	Protein kinase C	
-PRKCABP	human	Q9NRD5	PICK1	Q9NRD5	139	700		
+PRKCABP	human	Q9NRD5	PICK1	Q9NRD5	142	703		
 PRKCB	human	P05771	PRKCB	P05771	295	1902	Protein kinase C beta type (PKC-B) (PKC-beta) (EC 2.7.11.13)	
 PRKCB	mus-musculus	P68404	Prkcb	P68404	5	46	Protein kinase C beta type	
 PRKCB	rattus-norvegicus	P68403	Prkcb	P68403	5	35	Protein kinase C beta type	

@@ -95,7 +95,7 @@ CLPP	fly	FBgn0032229	ClpP	Q9VKY3	7	65	ATP-dependent Clp protease proteolytic sub
 CLPP	glycine-max	Q2PMR0	clpP	Q2PMR0	20	55	ATP-dependent Clp protease proteolytic subunit	
 CLPP	haemophilus-influenzae	P43867	clpP	P43867	0	8	ATP-dependent Clp protease proteolytic subunit	
 CLPP	helicobacter-pylori	P56156	clpP	P56156	0	12	ATP-dependent Clp protease proteolytic subunit	
-CLPP	human	Q16740	CLPP	Q16740	30	574	ATP-dependent Clp protease proteolytic subunit, mitochondria	
+CLPP	human	Q16740	CLPP	Q16740	31	575	ATP-dependent Clp protease proteolytic subunit, mitochondria	
 CLPP	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GKH6	clpP	A0A0H3GKH6	1	163	ATP-dependent Clp protease proteolytic subunit	
 CLPP	mus-musculus	O88696	Clpp	O88696	2	16	ATP-dependent Clp protease proteolytic subunit, mitochondria	
 CLPP	neisseria-gonorrhoeae	Q5F914	clpP	Q5F914	0	33	ATP-dependent Clp protease proteolytic subunit	
@@ -123,7 +123,7 @@ CLPP3	arabidopsis-thaliana	Q9SXJ6	CLPP3	Q9SXJ6	9	40	ATP-dependent Clp protease p
 CLPP4	arabidopsis-thaliana	Q94B60	CLPP4	Q94B60	8	41	ATP-dependent Clp protease proteolytic subunit 4, chloroplas	
 CLPP5	arabidopsis-thaliana	Q9S834	CLPP5	Q9S834	8	42	ATP-dependent Clp protease proteolytic subunit 5, chloroplas	
 CLPP6	arabidopsis-thaliana	Q9SAA2	CLPP6	Q9SAA2	9	35	ATP-dependent Clp protease proteolytic subunit 6, chloroplas	
-CLPP_HUMAN	human	Q16740	CLPP	Q16740	30	574		
+CLPP_HUMAN	human	Q16740	CLPP	Q16740	31	575		
 CLPR-1	worm	O18165	clpr-1	O18165	0	1	Calpain catalytic domain-containing protein	
 CLPR-2	worm	A0A131MD14	clpr-2	A0A131MD14	1	2	Calpain catalytic domain-containing protein	
 CLPR-3	worm	Q9XU14	clpr-3	Q9XU14	1	1	Calpain catalytic domain-containing protein	
@@ -174,26 +174,28 @@ CLPX	haemophilus-influenzae	P44838	clpX	P44838	0	7	ATP-dependent Clp protease AT
 CLPX	helicobacter-pylori	O25926	clpX	O25926	0	12	ATP-dependent Clp protease ATP-binding subunit ClpX	
 CLPX	human	O76031	CLPX	O76031	13	188	ATP-dependent clpX-like chaperone, mitochondrial (EC 3.6.4.1	
 CLPX	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GSR4	clpX	A0A0H3GSR4	0	74	ATP-dependent Clp protease ATP-binding subunit ClpX	
-CLPX	mus-musculus	Q9JHS4	Clpx	Q9JHS4	0	19	ATP-dependent clpX-like chaperone, mitochondrial	
+CLPX	mus-musculus	Q9JHS4	Clpx	Q9JHS4	1	20	ATP-dependent clpX-like chaperone, mitochondrial	
 CLPX	mycobacterium-leprae	Q9CBY6	clpX	Q9CBY6	0	23	ATP-dependent Clp protease ATP-binding subunit ClpX	
 CLPX	mycobacterium-tuberculosis	P9WPB9	clpX	P9WPB9	1	10	ATP-dependent Clp protease ATP-binding subunit ClpX	
 CLPX	neisseria-gonorrhoeae	Q5F8W5	clpX	Q5F8W5	0	12	ATP-dependent Clp protease ATP-binding subunit ClpX	
 CLPX	nocardia-brasiliensis	K0EQF0	clpX	K0EQF0	1	29	ATP-dependent Clp protease ATP-binding subunit ClpX	
+CLPX	pan-troglodytes	A0A2I3TDN3	CLPX	A0A2I3TDN3	1	1	Caseinolytic mitochondrial matrix peptidase chaperone subuni	
 CLPX	pseudomonas-aeruginosa	Q9I2U0	clpX	Q9I2U0	0	23	ATP-dependent Clp protease ATP-binding subunit ClpX	
-CLPX	rattus-norvegicus	Q5U2U0	Clpx	Q5U2U0	1	24	ATP-dependent clpX-like chaperone, mitochondrial	
+CLPX	rattus-norvegicus	Q5U2U0	Clpx	Q5U2U0	2	25	ATP-dependent clpX-like chaperone, mitochondrial	
 CLPX	salmonella-typhimurium	Q8ZRC0	clpX	Q8ZRC0	0	20	ATP-dependent Clp protease ATP-binding subunit ClpX	
 CLPX	shigella-dysenteriae-serotype-1	Q32JJ4	clpX	Q32JJ4	0	18	ATP-dependent Clp protease ATP-binding subunit ClpX	
 CLPX	staphylococcus-aureus-93061	Q2FXQ7	clpX	Q2FXQ7	0	10	ATP-dependent Clp protease ATP-binding subunit ClpX	
 CLPX	streptococcus-pneumoniae	P63792	clpX	P63792	0	8	ATP-dependent Clp protease ATP-binding subunit ClpX	
 CLPX-LIKE	human	O76031	CLPX	O76031	13	188	ATP-dependent clpX-like chaperone, mitochondrial (EC 3.6.4.1	w
-CLPX-LIKE	worm	P90788	CELE_D2030.2	P90788	0	13	ATP-dependent Clp protease ATP-binding subunit clpX-like, mi	w
+CLPX-LIKE	worm	P90788	CELE_D2030.2	P90788	1	14	ATP-dependent Clp protease ATP-binding subunit clpX-like, mi	w
 CLPX-LIKE	worm	Q65XY4	CELE_K07A3.3	Q65XY4	0	8	ATP-dependent Clp protease ATP-binding subunit clpX-like, mi	w
 CLPX-LIKE	yeast	P38323	MCX1	P38323	0	25	ATP-dependent clpX-like chaperone, mitochondrial	w
-CLPX-LIKE	zebrafish	A0A8M9QBU1	clpxa	A0A8M9QBU1	0	35	ATP-dependent clpX-like chaperone, mitochondrial	w
+CLPX-LIKE	zebrafish	A0A8M9QBU1	clpxa	A0A8M9QBU1	1	36	ATP-dependent clpX-like chaperone, mitochondrial	w
 CLPX-LIKE	zebrafish	E7F9J1	clpxb	E7F9J1	0	35	ATP-dependent clpX-like chaperone, mitochondrial	w
+CLPX.L	xenopus-laevis	Q4V866	clpx.L	Q4V866	1	1	MGC114642 protein	
 CLPX1	arabidopsis-thaliana	Q9FK07	CLPX1	Q9FK07	0	13	CLP protease regulatory subunit CLPX1, mitochondrial	
 CLPX2	arabidopsis-thaliana	F4K7F6	CLPX2	F4K7F6	0	12	CLP protease regulatory subunit CLPX2, mitochondrial	
 CLPX3	arabidopsis-thaliana	Q66GN9	CLPX3	Q66GN9	1	12	CLP protease regulatory subunit CLPX3, mitochondrial	
-CLPXA	zebrafish	A0A8M9QBU1	clpxa	A0A8M9QBU1	0	35	ATP-dependent clpX-like chaperone, mitochondrial	
+CLPXA	zebrafish	A0A8M9QBU1	clpxa	A0A8M9QBU1	1	36	ATP-dependent clpX-like chaperone, mitochondrial	
 CLPXB	zebrafish	E7F9J1	clpxb	E7F9J1	0	35	ATP-dependent clpX-like chaperone, mitochondrial	
 CLPX_HUMAN	human	O76031	CLPX	O76031	13	188		

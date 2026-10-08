@@ -1,7 +1,8 @@
 O44007	dictyostelium-discoideum	O44007	nosA	O44007	3	31	Ubiquitin conjugation factor E4 B	
 O44081	fly	FBgn0259937	Nop60B	O44081	14	149	H/ACA ribonucleoprotein complex subunit 4 (EC 5.4.99.-) (Nuc	
 O44125	schistosoma-mansoni	O44125	RPL37	O44125	11	219	Large ribosomal subunit protein eL37	
-O44133	worm	O44133	C24D10.6	O44133	12	115	CHCH domain-containing protein	
+O44133	worm	O44133	C24D10.6	O44133	13	116	CHCH domain-containing protein	
+O44133_CAEEL	worm	O44133	C24D10.6	O44133	13	116		
 O44134	worm	O44134	C24D10.4	O44134	0	11	ER to Golgi transport-related protein	
 O44135	worm	O44135	C24D10.2	O44135	0	2	Uncharacterized protein	
 O44138	worm	O44138	ets-8	O44138	0	1	ETS domain-containing protein	
@@ -15,7 +16,8 @@ O44153	worm	O44153	C49A9.3	O44153	0	9	Uncharacterized protein
 O44155	worm	O44155	C49A9.1	O44155	0	2	Telo_bind domain-containing protein	
 O44156	worm	O44156	pas-6	O44156	2	60	Proteasome subunit alpha type-1	
 O44158	worm	O44158	vps-37	O44158	6	31	VPS37 C-terminal domain-containing protein	
-O44159	worm	O44159	mrpl-48	O44159	17	118	Small ribosomal subunit protein uS10 domain-containing prote	
+O44159	worm	O44159	mrpl-48	O44159	20	120	Small ribosomal subunit protein uS10 domain-containing prote	
+O44159_CAEEL	worm	O44159	mrpl-48	O44159	20	120		
 O44167	worm	O44167	CELE_F15B10.3	O44167	1	4	BTB domain-containing protein	
 O44168	worm	O44168	snpc-3.1	O44168	5	11	snRNA-activating protein complex subunit 3	
 O44169	worm	O44169	puf-7	O44169	0	3	Pumilio domain-containing protein 7	
@@ -50,14 +52,14 @@ O44444	worm	O44444	C02B10.4	O44444	6	40	RRM domain-containing protein
 O44445	worm	O44445	snpn-1	O44445	12	71	SNAPIN protein homolog	
 O44447	worm	O44447	pygo-1	O44447	0	22	SH3 domain-containing protein	
 O44448	worm	O44448	C02B10.6	O44448	0	6	Protein-tyrosine phosphatase	
-O44451	worm	O44451	pdhb-1	O44451	2	28	Pyruvate dehydrogenase E1 component subunit beta, mitochondr	
+O44451	worm	O44451	pdhb-1	O44451	3	29	Pyruvate dehydrogenase E1 component subunit beta, mitochondr	
 O44452	worm	O44452	lgc-9	O44452	1	3	Neurotransmitter-gated ion-channel ligand binding domain pro	
 O44454	worm	O44454	srz-60	O44454	0	1	Serpentine Receptor, class Z	
 O44462	worm	O44462	ceh-53	O44462	0	12	Homeobox domain-containing protein	
 O44471	worm	O44471	grd-10	O44471	0	1	Ground-like domain-containing protein	
 O44475	worm	O44475	fbxb-78	O44475	0	3	F-box associated domain-containing protein	
 O44476	worm	O44476	hoe-1	O44476	0	6	Zinc phosphodiesterase ELAC protein 2 homolog	
-O44477	worm	O44477	timm-17B.1	O44477	4	21	Probable mitochondrial import inner membrane translocase sub	
+O44477	worm	O44477	timm-17B.1	O44477	5	21	Probable mitochondrial import inner membrane translocase sub	
 O44478	worm	O44478	tctn-1	O44478	0	17	Tectonic domain-containing protein	
 O44480	worm	O44480	rpl-18A	O44480	8	213	Large ribosomal subunit protein eL20	
 O44486	worm	O44486	CELE_F42A6.5	O44486	4	90	BRCT domain-containing protein	
@@ -75,7 +77,8 @@ O44508	worm	O44508	erp-44.3	O44508	1	7	Thioredoxin domain-containing protein
 O44509	worm	O44509	ndub-11	O44509	4	87	NADH dehydrogenase	
 O44510	worm	O44510	moc-3	O44510	1	36	Adenylyltransferase and sulfurtransferase MOCS3	
 O44511	worm	O44511	sph-1	O44511	0	14	MARVEL domain-containing protein	
-O44512	worm	O44512	isp-1	O44512	9	90	Cytochrome b-c1 complex subunit Rieske, mitochondrial	
+O44512	worm	O44512	isp-1	O44512	15	97	Cytochrome b-c1 complex subunit Rieske, mitochondrial	
+O44512_CAEEL	worm	O44512	isp-1	O44512	15	97		
 O44513	worm	O44513	islo-1	O44513	0	4	Interactor with SLO-1	
 O44514	worm	O44514	pmk-3	O44514	9	45	Mitogen-activated protein kinase pmk-3	
 O44516	worm	O44516	efn-4	O44516	1	19	Ephrin-4	
@@ -89,14 +92,15 @@ O44540	worm	O44540	nlp-13	O44540	0	6	Neuropeptide-Like Protein
 O44542	worm	O44542	srt-12	O44542	0	3	Serpentine Receptor, class T	
 O44546	worm	O44546	kin-34	O44546	2	11	non-specific serine/threonine protein kinase	
 O44548	worm	O44548	knl-2	O44548	2	8	Kinetochore null protein 2	
-O44549	worm	O44549	acdh-3	O44549	3	12	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
+O44549	worm	O44549	acdh-3	O44549	9	18	Short/branched chain specific acyl-CoA dehydrogenase, mitoch	
+O44549_CAEEL	worm	O44549	acdh-3	O44549	9	18		
 O44551	worm	O44551	CELE_K06A5.2	O44551	0	1	DUF389 domain membrane protein	
 O44552	worm	O44552	cdc-25.1	O44552	4	23	M-phase inducer phosphatase cdc-25.1	
 O44555	worm	O44555	alh-5	O44555	0	21	Aldehyde dehydrogenase	
 O44560	worm	O44560	acs-3	O44560	0	9	Long-chain-fatty-acid--CoA ligase	
 O44563	worm	O44563	bus-4	O44563	6	9	N-acetylgalactosaminide beta-1,3-galactosyltransferase	
 O44566	worm	O44566	CELE_W03F8.4	O44566	1	6	EKC/KEOPS complex subunit TPRKB	
-O44568	worm	O44568	mtrf-1L	O44568	1	53	Probable peptide chain release factor 1, mitochondrial	
+O44568	worm	O44568	mtrf-1L	O44568	2	54	Probable peptide chain release factor 1, mitochondrial	
 O44572	worm	O44572	tni-4	O44572	10	28	Troponin I 4	
 O44577	worm	O44577	nhr-256	O44577	1	10	NR LBD domain-containing protein	
 O44578	worm	O44578	ZK697.8	O44578	1	5	Probable 5-hydroxyisourate hydrolase ZK697.8	
@@ -224,7 +228,8 @@ O44951	worm	O44951	ttc-1	O44951	2	5	TPR_REGION domain-containing protein
 O44952	worm	O44952	lonp-1	O44952	0	25	Lon protease homolog, mitochondrial	
 O44953	worm	O44953	spcs-1	O44953	1	3	Signal peptidase complex subunit 1	
 O44954	worm	O44954	sdha-2	O44954	4	28	Succinate dehydrogenase	
-O44955	worm	O44955	ndua-13	O44955	3	108	NADH dehydrogenase	
+O44955	worm	O44955	ndua-13	O44955	4	108	NADH dehydrogenase	
+O44955_CAEEL	worm	O44955	ndua-13	O44955	4	108		
 O44956	worm	O44956	kbp-5	O44956	1	9	KNL (Kinetochore null) Binding Protein	
 O44958	worm	O44958	C34B2.9	O44958	0	1	Wsv299	
 O44959	worm	O44959	riok-1	O44959	7	58	Serine/threonine-protein kinase RIO1 (EC 2.7.11.1)	

@@ -12,7 +12,7 @@ O43013	schizosaccharomyces-pombe	O43013	SPBC2G2.14	O43013	0	10	Uncharacterized p
 O43017	schizosaccharomyces-pombe	O43017	swd3	O43017	2	33	Set1 complex component swd3	
 O43018	schizosaccharomyces-pombe	O43018	SPBC354.04	O43018	1	7	Uncharacterized protein C354.04	
 O43019	schizosaccharomyces-pombe	O43019	sre2	O43019	0	11	Putative transcription factor sre2	
-O43020	schizosaccharomyces-pombe	O43020	mrps16	O43020	12	173	Small ribosomal subunit protein bS16m	
+O43020	schizosaccharomyces-pombe	O43020	mrps16	O43020	13	174	Small ribosomal subunit protein bS16m	
 O43021	schizosaccharomyces-pombe	O43021	SPBC354.07c	O43021	0	1	Oxysterol-binding protein homolog C354.07c	
 O43022	schizosaccharomyces-pombe	O43022	SPBC354.08c	O43022	0	1	Uncharacterized protein C354.08c	
 O43023	schizosaccharomyces-pombe	O43023	SPBC354.09c	O43023	0	11	Inactive zinc metalloprotease C354.09c	
@@ -58,7 +58,7 @@ O43069	schizosaccharomyces-pombe	O43069	atg7	O43069	3	14	Ubiquitin-like modifier
 O43070	schizosaccharomyces-pombe	O43070	nbs1	O43070	0	21	DNA repair and telomere maintenance protein nbs1	
 O43071	schizosaccharomyces-pombe	O43071	prp17	O43071	9	93	Pre-mRNA-processing factor 17	
 O43073	schizosaccharomyces-pombe	O43073	pi063	O43073	1	3	UPF0220 protein C8D2.02c	
-O43075	schizosaccharomyces-pombe	O43075	pi053	O43075	0	2	Probable transcriptional regulatory protein C8D2.12c	
+O43075	schizosaccharomyces-pombe	O43075	pi053	O43075	1	3	Probable transcriptional regulatory protein C8D2.12c	
 O43076	schizosaccharomyces-pombe	O43076	shq1	O43076	2	7	Protein shq1	
 O43077	schizosaccharomyces-pombe	O43077	mde3	O43077	0	1	Sporulation protein kinase mde3	
 O43078	schizosaccharomyces-pombe	O43078	alf1	O43078	2	13	ATPase-like fidgetin	
@@ -95,12 +95,12 @@ O43159	human	O43159	RRP8	O43159	55	331	Ribosomal RNA-processing protein 8 (EC 2.
 O43164	human	O43164	PJA2	O43164	46	334	E3 ubiquitin-protein ligase Praja-2 (Praja2) (EC 2.3.2.27) (	
 O43166	human	O43166	SIPA1L1	O43166	84	376	Signal-induced proliferation-associated 1-like protein 1 (SI	
 O43167	human	O43167	ZBTB24	O43167	32	174	Zinc finger and BTB domain-containing protein 24 (Zinc finge	
-O43169	human	O43169	CYB5B	O43169	36	406	Cytochrome b5 type B (Cytochrome b5 outer mitochondrial memb	
+O43169	human	O43169	CYB5B	O43169	38	408	Cytochrome b5 type B (Cytochrome b5 outer mitochondrial memb	
 O43172	human	O43172	PRPF4	O43172	39	446	U4/U6 small nuclear ribonucleoprotein Prp4 (PRP4 homolog) (h	
 O43173	human	O43173	ST8SIA3	O43173	19	184	Alpha-N-acetylneuraminate alpha-2,8-sialyltransferase ST8SIA	
 O43174	human	O43174	CYP26A1	O43174	5	80	Cytochrome P450 26A1 (CYP26A1) (EC 1.14.13.-) (Cytochrome P4	
 O43175	human	O43175	PHGDH	O43175	12	576	D-3-phosphoglycerate dehydrogenase (3-PGDH) (EC 1.1.1.95) (2	
-O43181	human	O43181	NDUFS4	O43181	16	362	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitoc	
+O43181	human	O43181	NDUFS4	O43181	17	363	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitoc	
 O43182	human	O43182	ARHGAP6	O43182	17	112	Rho GTPase-activating protein 6 (Rho-type GTPase-activating 	
 O43184	human	O43184	ADAM12	O43184	22	165	Disintegrin and metalloproteinase domain-containing protein 	
 O43186	human	O43186	CRX	O43186	150	502	Cone-rod homeobox protein	
@@ -109,7 +109,7 @@ O43189	human	O43189	PHF1	O43189	89	583	PHD finger protein 1 (Protein PHF1) (hPHF
 O43193	human	O43193	MLNR	O43193	17	113	Motilin receptor (G protein-coupled receptor 38)	
 O43194	human	O43194	GPR39	O43194	12	95	G protein-coupled receptor 39	
 O43196	human	O43196	MSH5	O43196	11	87	MutS protein homolog 5 (hMSH5)	
-O43236	human	O43236	SEPTIN4	O43236	13	47	Septin-4 (Bradeion beta) (Brain protein H5) (CE5B3 beta) (Ce	
+O43236	human	O43236	SEPTIN4	O43236	16	50	Septin-4 (Bradeion beta) (Brain protein H5) (CE5B3 beta) (Ce	
 O43237	human	O43237	DYNC1LI2	O43237	21	199	Cytoplasmic dynein 1 light intermediate chain 2 (Dynein ligh	
 O43240	human	O43240	KLK10	O43240	27	291	Kallikrein-10 (EC 3.4.21.-) (Normal epithelial cell-specific	
 O43242	human	O43242	PSMD3	O43242	34	367	26S proteasome non-ATPase regulatory subunit 3 (26S proteaso	
@@ -122,7 +122,7 @@ O43255	human	O43255	SIAH2	O43255	57	229	E3 ubiquitin-protein ligase SIAH2 (EC 2.
 O43257	human	O43257	ZNHIT1	O43257	17	132	Zinc finger HIT domain-containing protein 1 (Cyclin-G1-bindi	
 O43261	human	O43261	DLEU1	O43261	0	4	Leukemia-associated protein 1 (Deleted in lymphocytic leukem	
 O43264	human	O43264	ZW10	O43264	23	221	Centromere/kinetochore protein zw10 homolog	
-O43272	human	O43272	PRODH	O43272	2	73	Proline dehydrogenase 1, mitochondrial (EC 1.5.5.2) (Proline	
+O43272	human	O43272	PRODH	O43272	4	75	Proline dehydrogenase 1, mitochondrial (EC 1.5.5.2) (Proline	
 O43278	human	O43278	SPINT1	O43278	22	156	Kunitz-type protease inhibitor 1 (Hepatocyte growth factor a	
 O43280	human	O43280	TREH	O43280	0	19	Trehalase (EC 3.2.1.28) (Alpha,alpha-trehalase) (Alpha,alpha	
 O43281	human	O43281	EFS	O43281	38	198	Embryonal Fyn-associated substrate (hEFS) (Cas scaffolding p	
@@ -154,7 +154,7 @@ O43318	human	O43318	MAP3K7	O43318	457	1749	Mitogen-activated protein kinase kina
 O43320	human	O43320	FGF16	O43320	28	340	Fibroblast growth factor 16 (FGF-16)	
 O43323	human	O43323	DHH	O43323	14	157	Desert hedgehog protein (DHH) (EC 3.1.-.-) (HHG-3) [Cleaved 	
 O43324	human	O43324	EEF1E1	O43324	22	201	Eukaryotic translation elongation factor 1 epsilon-1 (Aminoa	
-O43325	human	O43325	LYRM1	O43325	6	80	LYR motif-containing protein 1	
+O43325	human	O43325	LYRM1	O43325	8	82	LYR motif-containing protein 1	
 O43345	human	O43345	ZNF208	O43345	3	62	Zinc finger protein 208 (Zinc finger protein 91-like)	
 O43347	human	O43347	MSI1	O43347	9	142	RNA-binding protein Musashi homolog 1 (Musashi-1)	
 O43353	human	O43353	RIPK2	O43353	89	1408	Receptor-interacting serine/threonine-protein kinase 2 (EC 2	
@@ -186,7 +186,7 @@ O43463	human	O43463	SUV39H1	O43463	119	717	Histone-lysine N-methyltransferase SU
 O43464	human	O43464	HTRA2	O43464	14	314	Serine protease HTRA2, mitochondrial (EC 3.4.21.108) (High t	
 O43474	human	O43474	KLF4	O43474	29	226	Krueppel-like factor 4 (Epithelial zinc finger protein EZF) 	
 O43482	human	O43482	OIP5	O43482	74	428	Protein Mis18-beta (Cancer/testis antigen 86) (CT86) (Opa-in	
-O43488	human	O43488	AKR7A2	O43488	5	122	Aflatoxin B1 aldehyde reductase member 2 (EC 1.1.1.n11) (AFB	
+O43488	human	O43488	AKR7A2	O43488	14	131	Aflatoxin B1 aldehyde reductase member 2 (EC 1.1.1.n11) (AFB	
 O43490	human	O43490	PROM1	O43490	9	148	Prominin-1 (Antigen AC133) (Prominin-like protein 1) (CD ant	
 O43491	human	O43491	EPB41L2	O43491	43	307	Band 4.1-like protein 2 (Erythrocyte membrane protein band 4	
 O43493	human	O43493	TGOLN2	O43493	101	1676	Trans-Golgi network integral membrane protein 2 (Trans-Golgi	
@@ -200,7 +200,7 @@ O43511	human	O43511	SLC26A4	O43511	9	121	Pendrin (Sodium-independent chloride/io
 O43513	human	O43513	MED7	O43513	68	788	Mediator of RNA polymerase II transcription subunit 7 (hMED7	
 O43516	human	O43516	WIPF1	O43516	33	114	WAS/WASL-interacting protein family member 1 (Protein PRPL-2	
 O43520	human	O43520	ATP8B1	O43520	6	86	Phospholipid-transporting ATPase IC (EC 7.6.2.1) (ATPase cla	
-O43521	human	O43521	BCL2L11	O43521	63	685	Bcl-2-like protein 11 (Bcl2-L-11) (Bcl2-interacting mediator	
+O43521	human	O43521	BCL2L11	O43521	65	687	Bcl-2-like protein 11 (Bcl2-L-11) (Bcl2-interacting mediator	
 O43524	human	O43524	FOXO3	O43524	75	352	Forkhead box protein O3 (AF6q21 protein) (Forkhead in rhabdo	
 O43525	human	O43525	KCNQ3	O43525	45	244	Potassium voltage-gated channel subfamily KQT member 3 (KQT-	
 O43526	human	O43526	KCNQ2	O43526	49	279	Potassium voltage-gated channel subfamily KQT member 2 (KQT-	
@@ -217,7 +217,7 @@ O43561	human	O43561	LAT	O43561	30	182	Linker for activation of T-cells family me
 O43566	human	O43566	RGS14	O43566	26	80	Regulator of G protein signaling 14 (RGS14)	
 O43567	human	O43567	RNF13	O43567	26	89	E3 ubiquitin-protein ligase RNF13 (EC 2.3.2.27) (RING finger	
 O43570	human	O43570	CA12	O43570	12	93	Carbonic anhydrase 12 (EC 4.2.1.1) (Carbonate dehydratase XI	
-O43572	human	O43572	AKAP10	O43572	24	120	A-kinase anchor protein 10, mitochondrial (AKAP-10) (Dual sp	
+O43572	human	O43572	AKAP10	O43572	34	130	A-kinase anchor protein 10, mitochondrial (AKAP-10) (Dual sp	
 O43581	human	O43581	SYT7	O43581	5	49	Synaptotagmin-7 (IPCA-7) (Prostate cancer-associated protein	
 O43583	human	O43583	DENR	O43583	17	240	Density-regulated protein (DRP) (Protein DRP1) (Smooth muscl	
 O43586	human	O43586	PSTPIP1	O43586	34	235	Proline-serine-threonine phosphatase-interacting protein 1 (	
@@ -232,7 +232,7 @@ O43610	human	O43610	SPRY3	O43610	6	39	Protein sprouty homolog 3 (Spry-3) (Sprout
 O43612	human	O43612	HCRT	O43612	17	288	Hypocretin neuropeptide precursor (Hypocretin) (Hcrt) (Orexi	
 O43613	human	O43613	HCRTR1	O43613	7	135	Orexin/Hypocretin receptor type 1 (Hypocretin receptor type 	
 O43614	human	O43614	HCRTR2	O43614	5	123	Orexin receptor type 2 (Ox-2-R) (Ox2-R) (Ox2R) (Hypocretin r	
-O43615	human	O43615	TIMM44	O43615	18	228	Mitochondrial import inner membrane translocase subunit TIM4	
+O43615	human	O43615	TIMM44	O43615	19	229	Mitochondrial import inner membrane translocase subunit TIM4	
 O43617	human	O43617	TRAPPC3	O43617	16	110	Trafficking protein particle complex subunit 3 (BET3 homolog	
 O43623	human	O43623	SNAI2	O43623	64	460	Zinc finger protein SNAI2 (Neural crest transcription factor	
 O43633	human	O43633	CHMP2A	O43633	17	161	Charged multivesicular body protein 2a (Chromatin-modifying 	
@@ -246,8 +246,8 @@ O43665	human	O43665	RGS10	O43665	36	167	Regulator of G protein signaling 10 (RGS
 O43670	human	O43670	ZNF207	O43670	70	468	BUB3-interacting and GLEBS motif-containing protein ZNF207 (	
 O43674	human	O43674	NDUFB5	O43674	20	252	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	
 O43676	human	O43676	NDUFB3	O43676	28	256	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	
-O43677	human	O43677	NDUFC1	O43677	47	213	NADH dehydrogenase [ubiquinone] 1 subunit C1, mitochondrial 	
-O43678	human	O43678	NDUFA2	O43678	28	384	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	
+O43677	human	O43677	NDUFC1	O43677	48	214	NADH dehydrogenase [ubiquinone] 1 subunit C1, mitochondrial 	
+O43678	human	O43678	NDUFA2	O43678	36	392	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	
 O43679	human	O43679	LDB2	O43679	87	470	LIM domain-binding protein 2 (LDB-2) (Carboxyl-terminal LIM 	
 O43680	human	O43680	TCF21	O43680	48	387	Transcription factor 21 (TCF-21) (Capsulin) (Class A basic h	
 O43681	human	O43681	GET3	O43681	10	189	ATPase GET3 (EC 3.6.4.-) (Arsenical pump-driving ATPase) (Ar	
@@ -259,10 +259,10 @@ O43692	human	O43692	PI15	O43692	12	98	Peptidase inhibitor 15 (PI-15) (25 kDa try
 O43699	human	O43699	SIGLEC6	O43699	9	111	Sialic acid-binding Ig-like lectin 6 (Siglec-6) (CD33 antige	
 O43704	human	O43704	SULT1B1	O43704	13	36	Sulfotransferase 1B1 (ST1B1) (EC 2.8.2.1) (Sulfotransferase 	
 O43707	human	O43707	ACTN4	O43707	16	508	Alpha-actinin-4 (Non-muscle alpha-actinin 4)	
-O43708	human	O43708	GSTZ1	O43708	13	122	Maleylacetoacetate isomerase (MAAI) (EC 5.2.1.2) (GSTZ1-1) (	
+O43708	human	O43708	GSTZ1	O43708	15	124	Maleylacetoacetate isomerase (MAAI) (EC 5.2.1.2) (GSTZ1-1) (	
 O43709	human	O43709	BUD23	O43709	27	259	18S rRNA (guanine-N(7))-methyltransferase (EC 2.1.1.-) (Bud 	
 O43711	human	O43711	TLX3	O43711	177	651	T-cell leukemia homeobox protein 3 (Homeobox protein Hox-11L	
-O43715	human	O43715	TRIAP1	O43715	13	98	TP53-regulated inhibitor of apoptosis 1 (Protein 15E1.1) (WF	
+O43715	human	O43715	TRIAP1	O43715	17	102	TP53-regulated inhibitor of apoptosis 1 (Protein 15E1.1) (WF	
 O43716	human	O43716	GATC	O43716	6	143	Glutamyl-tRNA(Gln) amidotransferase subunit C, mitochondrial	
 O43719	human	O43719	HTATSF1	O43719	39	200	17S U2 SnRNP complex component HTATSF1 (HIV Tat-specific fac	
 O43731	human	O43731	KDELR3	O43731	8	113	ER lumen protein-retaining receptor 3 (KDEL endoplasmic reti	
@@ -279,7 +279,7 @@ O43760	human	O43760	SYNGR2	O43760	6	132	Synaptogyrin-2 (Cellugyrin)
 O43761	human	O43761	SYNGR3	O43761	10	125	Synaptogyrin-3	
 O43763	human	O43763	TLX2	O43763	150	502	T-cell leukemia homeobox protein 2 (Homeobox protein Hox-11L	
 O43765	human	O43765	SGTA	O43765	51	360	Small glutamine-rich tetratricopeptide repeat-containing pro	
-O43766	human	O43766	LIAS	O43766	4	100	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	
+O43766	human	O43766	LIAS	O43766	6	102	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	
 O43768	human	O43768	ENSA	O43768	32	119	Alpha-endosulfine (ARPP-19e)	
 O43772	human	O43772	SLC25A20	O43772	3	140	Mitochondrial carnitine/acylcarnitine carrier protein (Carni	
 O43776	human	O43776	NARS1	O43776	9	176	Asparagine--tRNA ligase, cytoplasmic (EC 6.1.1.22) (Asparagi	
@@ -294,21 +294,21 @@ O43812	human	O43812	DUX1	O43812	60	336	Double homeobox protein 1
 O43813	human	O43813	LANCL1	O43813	21	152	Glutathione S-transferase LANCL1 (EC 2.5.1.18) (40 kDa eryth	
 O43815	human	O43815	STRN	O43815	67	299	Striatin	
 O43818	human	O43818	RRP9	O43818	22	308	U3 small nucleolar RNA-interacting protein 2 (RRP9 homolog) 	
-O43819	human	O43819	SCO2	O43819	16	317	Cytochrome c oxidase assembly factor SCO2	
+O43819	human	O43819	SCO2	O43819	18	319	Cytochrome c oxidase assembly factor SCO2	
 O43820	human	O43820	HYAL3	O43820	4	115	Hyaluronidase-3 (Hyal-3) (EC 3.2.1.35) (Hyaluronoglucosamini	
 O43822	human	O43822	CFAP410	O43822	4	66	Cilia- and flagella-associated protein 410 (C21orf-HUMF09G8.	
 O43823	human	O43823	AKAP8	O43823	17	240	A-kinase anchor protein 8 (AKAP-8) (A-kinase anchor protein 	
-O43824	human	O43824	GTPBP6	O43824	6	213	Putative GTP-binding protein 6 (Pseudoautosomal GTP-binding 	
+O43824	human	O43824	GTPBP6	O43824	7	214	Putative GTP-binding protein 6 (Pseudoautosomal GTP-binding 	
 O43825	human	O43825	B3GALT2	O43825	5	39	Beta-1,3-galactosyltransferase 2 (Beta-1,3-GalTase 2) (Beta3	
 O43826	human	O43826	SLC37A4	O43826	0	103	Glucose-6-phosphate exchanger SLC37A4 (Glucose-6-phosphate t	
 O43827	human	O43827	ANGPTL7	O43827	8	64	Angiopoietin-related protein 7 (Angiopoietin-like factor) (A	
 O43829	human	O43829	ZBTB14	O43829	59	428	Zinc finger and BTB domain-containing protein 14 (Zinc finge	
-O43837	human	O43837	IDH3B	O43837	8	118	Isocitrate dehydrogenase [NAD] subunit beta, mitochondrial (	
+O43837	human	O43837	IDH3B	O43837	13	122	Isocitrate dehydrogenase [NAD] subunit beta, mitochondrial (	
 O43847	human	O43847	NRDC	O43847	8	171	Nardilysin (EC 3.4.24.61) (N-arginine dibasic convertase) (N	
 O43852	human	O43852	CALU	O43852	15	325	Calumenin (Crocalbin) (IEF SSP 9302)	
 O43854	human	O43854	EDIL3	O43854	23	191	EGF-like repeat and discoidin I-like domain-containing prote	
 O43861	human	O43861	ATP9B	O43861	1	52	Probable phospholipid-transporting ATPase IIB (EC 7.6.2.1) (	
-O43865	human	O43865	AHCYL1	O43865	26	417	S-adenosylhomocysteine hydrolase-like protein 1 (DC-expresse	
+O43865	human	O43865	AHCYL1	O43865	29	420	S-adenosylhomocysteine hydrolase-like protein 1 (DC-expresse	
 O43866	human	O43866	CD5L	O43866	24	391	CD5 antigen-like (Apoptosis inhibitor expressed by macrophag	
 O43868	human	O43868	SLC28A2	O43868	2	37	Sodium/nucleoside cotransporter 2 (Concentrative nucleoside 	
 O43869	human	O43869	OR2T1	O43869	8	95	Olfactory receptor 2T1 (Olfactory receptor 1-25) (OR1-25) (O	

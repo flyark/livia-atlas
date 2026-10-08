@@ -3,9 +3,9 @@ TRANSP	human	Q9HAB3	SLC52A2	Q9HAB3	4	192	Solute carrier family 52, riboflavin tr
 TRANSP	worm	Q20258	clc-10	Q20258	0	3	Sulf_transp domain-containing protein	w
 TRANSPEPTIDASE	fly	FBgn0030932	Ggt1	Q9VWT3	17	326	Gamma-glutamyl transpeptidase, isoform A (Gamma-glutamyl tra	w
 TRANSPEPTIDASE-RELATED	human	P36269	GGT5	P36269	1	66	Glutathione hydrolase 5 proenzyme (EC 3.4.19.13) (Gamma-glut	w
-TRANSPHOSPHORYLASE	fly	FBgn0283494	Ak2	Q9U915	11	182	Adenylate kinase (EC 2.7.4.3) (ATP-AMP transphosphorylase) (	w
+TRANSPHOSPHORYLASE	fly	FBgn0283494	Ak2	Q9U915	12	183	Adenylate kinase (EC 2.7.4.3) (ATP-AMP transphosphorylase) (	w
 TRANSPHOSPHORYLASE	human	P00568	AK1	P00568	0	288	Adenylate kinase isoenzyme 1 (AK 1) (EC 2.7.4.3) (EC 2.7.4.4	w
-TRANSPHOSPHORYLASE	human	P54819	AK2	P54819	13	317	Adenylate kinase 2, mitochondrial (AK 2) (EC 2.7.4.3) (ATP-A	w
+TRANSPHOSPHORYLASE	human	P54819	AK2	P54819	23	328	Adenylate kinase 2, mitochondrial (AK 2) (EC 2.7.4.3) (ATP-A	w
 TRANSPHOSPHORYLASE	human	Q96M32	AK7	Q96M32	4	55	Adenylate kinase 7 (AK 7) (EC 2.7.4.3) (EC 2.7.4.6) (ATP-AMP	w
 TRANSPHOSPHORYLASE	human	Q96MA6	AK8	Q96MA6	7	55	Adenylate kinase 8 (AK 8) (EC 2.7.4.3) (EC 2.7.4.6) (ATP-AMP	w
 TRANSPHOSPHORYLASE	human	Q9Y6K8	AK5	Q9Y6K8	7	95	Adenylate kinase isoenzyme 5 (AK 5) (EC 2.7.4.3) (EC 2.7.4.6	w
@@ -30,7 +30,7 @@ TRANSPORT	fly	FBgn0035023	ITP	Q0E8W5	34	260	Ion transport peptide, isoform C	w
 TRANSPORT	fly	FBgn0035317	Oseg2	Q9W040	0	2	Intraflagellar transport protein 172 homolog (Osmotic avoida	w
 TRANSPORT	fly	FBgn0035965	Use1	Q9VSU7	26	136	Vesicle transport protein USE1 (USE1-like protein)	w
 TRANSPORT	fly	FBgn0037009	CG5104	Q9VPD4	0	28	Vesicle transport protein	w
-TRANSPORT	fly	FBgn0037912	sea	Q7KSQ0	0	41	Citrate transport protein	w
+TRANSPORT	fly	FBgn0037912	sea	Q7KSQ0	1	42	Citrate transport protein	w
 TRANSPORT	fly	FBgn0038221	IFT54	Q9VFL0	14	70	IP21508p (Intraflagellar transport 54)	w
 TRANSPORT	fly	FBgn0038303	SIDL	Q9VFB7	13	42	Trafficking protein particle complex subunit 10 (Shal Intera	w
 TRANSPORT	fly	FBgn0040087	p115	Q9W3N6	13	118	General vesicular transport factor p115	w
@@ -69,7 +69,7 @@ TRANSPORT	human	O95562	SFT2D2	O95562	4	69	Vesicle transport protein SFT2B (SFT2 
 TRANSPORT	human	P02730	SLC4A1	P02730	18	293	Band 3 anion transport protein (Anion exchange protein 1) (A	w
 TRANSPORT	human	P51797	CLCN6	P51797	9	82	H(+)/Cl(-) exchange transporter 6 (Chloride channel protein 	w
 TRANSPORT	human	P51811	XK	P51811	7	87	Endoplasmic reticulum membrane adapter protein XK (Kell comp	w
-TRANSPORT	human	P53007	SLC25A1	P53007	1	361	Tricarboxylate transport protein, mitochondrial (Citrate tra	w
+TRANSPORT	human	P53007	SLC25A1	P53007	3	363	Tricarboxylate transport protein, mitochondrial (Citrate tra	w
 TRANSPORT	human	P53992	SEC24C	P53992	23	243	Protein transport protein Sec24C (SEC24-related protein C)	w
 TRANSPORT	human	P54710	FXYD2	P54710	32	194	Sodium/potassium-transporting ATPase subunit gamma (Na(+)/K(	w
 TRANSPORT	human	P58549	FXYD7	P58549	19	140	FXYD domain-containing ion transport regulator 7	w
@@ -79,7 +79,7 @@ TRANSPORT	human	P60059	SEC61G	P60059	38	346	Protein transport protein Sec61 subu
 TRANSPORT	human	P60468	SEC61B	P60468	118	844	Protein transport protein Sec61 subunit beta	w
 TRANSPORT	human	P61619	SEC61A1	P61619	14	526	Protein transport protein Sec61 subunit alpha isoform 1 (Sec	w
 TRANSPORT	human	P61970	NUTF2	P61970	14	219	Nuclear transport factor 2 (NTF-2) (Placental protein 15) (P	w
-TRANSPORT	human	Q00325	SLC25A3	Q00325	10	469	Solute carrier family 25 member 3 (Phosphate carrier protein	w
+TRANSPORT	human	Q00325	SLC25A3	Q00325	13	472	Solute carrier family 25 member 3 (Phosphate carrier protein	w
 TRANSPORT	human	Q06495	SLC34A1	Q06495	3	80	Sodium-dependent phosphate transport protein 2A (Sodium-phos	w
 TRANSPORT	human	Q07837	SLC3A1	Q07837	11	51	Amino acid transporter heavy chain SLC3A1 (D2h) (Neutral and	w
 TRANSPORT	human	Q12981	BNIP1	Q12981	20	129	Vesicle transport protein SEC20 (BCL2/adenovirus E1B 19 kDa 	w
@@ -261,7 +261,7 @@ TRANSPORT	zebrafish	F1Q7S0	vti1a	F1Q7S0	23	84	Vesicle transport through interact
 TRANSPORT	zebrafish	F1QG20	ift140	F1QG20	5	39	Intraflagellar transport 140 homolog (Chlamydomonas)	w
 TRANSPORT	zebrafish	F1QKH1	slc31a1	F1QKH1	0	1	Copper transport protein	w
 TRANSPORT	zebrafish	F1QRB4	sec24d	F1QRB4	5	75	Protein transport protein Sec24D	w
-TRANSPORT	zebrafish	F1R4U0	slc25a1b	F1R4U0	0	46	Tricarboxylate transport protein B, mitochondrial	w
+TRANSPORT	zebrafish	F1R4U0	slc25a1b	F1R4U0	1	47	Tricarboxylate transport protein B, mitochondrial	w
 TRANSPORT	zebrafish	F2Z4R1	sec61g	F2Z4R1	3	198	Protein transport protein Sec61 subunit gamma	w
 TRANSPORT	zebrafish	F8W579	slc34a1a	F8W579	0	8	Sodium-dependent phosphate transport protein 2A	w
 TRANSPORT	zebrafish	Q1LUT0	nutf2	Q1LUT0	5	36	Nuclear transport factor 2	w
@@ -349,7 +349,7 @@ TRANSPORTER	fly	FBgn0034611	MFS16	Q8MLW5	0	6	Major facilitator superfamily trans
 TRANSPORTER	fly	FBgn0034715	Oatp58Db	Q9W270	0	6	Solute carrier organic anion transporter family member	w
 TRANSPORTER	fly	FBgn0034716	Oatp58Dc	Q9W269	0	5	Solute carrier organic anion transporter family member	w
 TRANSPORTER	fly	FBgn0034911	GlyT	Q9W1J0	0	2	Transporter	w
-TRANSPORTER	fly	FBgn0035244	Abcb7	Q9W0C5	2	25	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
+TRANSPORTER	fly	FBgn0035244	Abcb7	Q9W0C5	4	27	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
 TRANSPORTER	fly	FBgn0035432	ZnT63C	M9PEG6	25	193	Zinc transporter 63C, isoform F	w
 TRANSPORTER	fly	FBgn0035969	CG4476	Q9VSV2	0	5	Transporter	w
 TRANSPORTER	fly	FBgn0036240	CG6928	Q7K155	0	5	LD07878p (SLC26 membrane transporter protein)	w
@@ -362,7 +362,7 @@ TRANSPORTER	fly	FBgn0036834	CG6836	Q9VVV2	2	6	Organic solute transporter alpha-l
 TRANSPORTER	fly	FBgn0037000	ZnT77C	Q9VPE3	2	4	FI23527p1 (Zinc transporter 77C, isoform A) (Zinc transporte	w
 TRANSPORTER	fly	FBgn0037875	ZnT86D	Q9VGS1	4	17	LD23375p (RE72238p) (Zinc transporter 86D)	w
 TRANSPORTER	fly	FBgn0038309	Amt	Q9VFA9	10	158	Ammonium transporter	w
-TRANSPORTER	fly	FBgn0038376	Hmt-1	Q9VF20	11	288	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
+TRANSPORTER	fly	FBgn0038376	Hmt-1	Q9VF20	14	291	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
 TRANSPORTER	fly	FBgn0038524	sll	Q9VEI3	4	62	Adenosine 3'-phospho 5'-phosphosulfate transporter 1 (PAPS t	w
 TRANSPORTER	fly	FBgn0038641	ChT	Q9VE46	1	3	High-affinity choline transporter 1	w
 TRANSPORTER	fly	FBgn0038799	VGlut2	Q7K2N3	0	3	GH23975p (Major facilitator superfamily transporter 9, isofo	w
@@ -427,7 +427,7 @@ TRANSPORTER	human	O43826	SLC37A4	O43826	0	103	Glucose-6-phosphate exchanger SLC3
 TRANSPORTER	human	O43868	SLC28A2	O43868	2	37	Sodium/nucleoside cotransporter 2 (Concentrative nucleoside 	w
 TRANSPORTER	human	O60669	SLC16A7	O60669	3	76	Monocarboxylate transporter 2 (MCT 2) (Solute carrier family	w
 TRANSPORTER	human	O60779	SLC19A2	O60779	2	98	Thiamine transporter 1 (ThTr-1) (ThTr1) (Solute carrier fami	w
-TRANSPORTER	human	O75027	ABCB7	O75027	9	152	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
+TRANSPORTER	human	O75027	ABCB7	O75027	9	153	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
 TRANSPORTER	human	O75387	SLC43A1	O75387	2	87	Large neutral amino acids transporter small subunit 3 (L-typ	w
 TRANSPORTER	human	O75751	SLC22A3	O75751	0	63	Solute carrier family 22 member 3 (Extraneuronal monoamine t	w
 TRANSPORTER	human	O76082	SLC22A5	O76082	1	79	Organic cation/carnitine transporter 2 (High-affinity sodium	w
@@ -477,7 +477,7 @@ TRANSPORTER	human	P53794	SLC5A3	P53794	4	102	Sodium/myo-inositol cotransporter (
 TRANSPORTER	human	P53985	SLC16A1	P53985	11	250	Monocarboxylate transporter 1 (MCT 1) (Solute carrier family	w
 TRANSPORTER	human	P54219	SLC18A1	P54219	2	177	Chromaffin granule amine transporter (Solute carrier family 	w
 TRANSPORTER	human	P55899	FCGRT	P55899	57	375	IgG receptor FcRn large subunit p51 (FcRn) (IgG Fc fragment 	w
-TRANSPORTER	human	P55916	UCP3	P55916	4	81	Putative mitochondrial transporter UCP3 (Solute carrier fami	w
+TRANSPORTER	human	P55916	UCP3	P55916	5	82	Putative mitochondrial transporter UCP3 (Solute carrier fami	w
 TRANSPORTER	human	P61916	NPC2	P61916	23	147	NPC intracellular cholesterol transporter 2 (Epididymal secr	w
 TRANSPORTER	human	P78363	ABCA4	P78363	0	16	Retinal-specific phospholipid-transporting ATPase ABCA4 (EC 	w
 TRANSPORTER	human	P78381	SLC35A2	P78381	5	86	UDP-galactose translocator (Solute carrier family 35 member 	w
@@ -510,7 +510,7 @@ TRANSPORTER	human	Q16572	SLC18A3	Q16572	2	138	Vesicular acetylcholine transporte
 TRANSPORTER	human	Q1EHB4	SLC5A12	Q1EHB4	1	30	Sodium-coupled monocarboxylate transporter 2 (Electroneutral	w
 TRANSPORTER	human	Q24JQ0	SLC35D4	Q24JQ0	1	32	UDP-N-acetylglucosamine transporter SLC35D4 (Solute carrier 	w
 TRANSPORTER	human	Q3KNW5	SLC10A6	Q3KNW5	5	172	Sodium-dependent organic anion transporter (SOAT) (Solute ca	w
-TRANSPORTER	human	Q3SY17	SLC25A52	Q3SY17	1	37	Mitochondrial nicotinamide adenine dinucleotide transporter 	w
+TRANSPORTER	human	Q3SY17	SLC25A52	Q3SY17	2	38	Mitochondrial nicotinamide adenine dinucleotide transporter 	w
 TRANSPORTER	human	Q495M3	SLC36A2	Q495M3	1	33	Proton-coupled amino acid transporter 2 (Proton/amino acid t	w
 TRANSPORTER	human	Q495N2	SLC36A3	Q495N2	1	30	Proton-coupled amino acid transporter 3 (Proton/amino acid t	w
 TRANSPORTER	human	Q4U2R8	SLC22A6	Q4U2R8	0	82	Solute carrier family 22 member 6 (Organic anion transporter	w
@@ -527,7 +527,7 @@ TRANSPORTER	human	Q6P1K1	SLC48A1	Q6P1K1	1	57	Heme transporter HRG1 (Heme-respons
 TRANSPORTER	human	Q6P4Q7	CNNM4	Q6P4Q7	12	115	Metal transporter CNNM4 (Ancient conserved domain-containing	w
 TRANSPORTER	human	Q6P5W5	SLC39A4	Q6P5W5	6	187	Zinc transporter ZIP4 (Solute carrier family 39 member 4) (Z	w
 TRANSPORTER	human	Q6PIS1	SLC23A3	Q6PIS1	0	25	Solute carrier family 23 member 3 (HPC E2-binding protein 3)	w
-TRANSPORTER	human	Q6PML9	SLC30A9	Q6PML9	15	494	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Human	w
+TRANSPORTER	human	Q6PML9	SLC30A9	Q6PML9	16	495	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Human	w
 TRANSPORTER	human	Q6PXP3	SLC2A7	Q6PXP3	0	34	Solute carrier family 2, facilitated glucose transporter mem	w
 TRANSPORTER	human	Q6Q0C1	SLC25A47	Q6Q0C1	0	108	Solute carrier family 25 member 47 (Hepatocellular carcinoma	w
 TRANSPORTER	human	Q6T423	SLC22A25	Q6T423	0	14	Solute carrier family 22 member 25 (Organic anion transporte	w
@@ -604,7 +604,7 @@ TRANSPORTER	human	Q92959	SLCO2A1	Q92959	1	71	Solute carrier organic anion transp
 TRANSPORTER	human	Q969I6	SLC38A4	Q969I6	0	47	Sodium-coupled neutral amino acid transporter 4 (Amino acid 	w
 TRANSPORTER	human	Q969S0	SLC35B4	Q969S0	2	102	Nucleotide sugar transporter SLC35B4 (Solute carrier family 	w
 TRANSPORTER	human	Q96A29	SLC35C1	Q96A29	1	28	GDP-fucose transporter 1 (Solute carrier family 35 member C1	w
-TRANSPORTER	human	Q96A46	SLC25A28	Q96A46	2	62	Mitoferrin-2 (Mitochondrial RNA-splicing protein 3/4 homolog	w
+TRANSPORTER	human	Q96A46	SLC25A28	Q96A46	3	63	Mitoferrin-2 (Mitochondrial RNA-splicing protein 3/4 homolog	w
 TRANSPORTER	human	Q96BD0	SLCO4A1	Q96BD0	4	122	Solute carrier organic anion transporter family member 4A1 (	w
 TRANSPORTER	human	Q96DW6	SLC25A38	Q96DW6	0	66	Mitochondrial glycine transporter (Appoptosin) (Mitochondria	w
 TRANSPORTER	human	Q96G79	SLC35A4	Q96G79	0	51	Probable UDP-sugar transporter protein SLC35A4 (Solute carri	w
@@ -637,7 +637,7 @@ TRANSPORTER	human	Q9GZN6	SLC6A16	Q9GZN6	1	10	Orphan sodium- and chloride-depende
 TRANSPORTER	human	Q9GZV3	SLC5A7	Q9GZV3	2	62	High affinity choline transporter 1 (hCHT1) (Hemicholinium-3	w
 TRANSPORTER	human	Q9H015	SLC22A4	Q9H015	4	255	Solute carrier family 22 member 4 (Ergothioneine transporter	w
 TRANSPORTER	human	Q9H1N7	SLC35B3	Q9H1N7	2	30	Adenosine 3'-phospho 5'-phosphosulfate transporter 2 (3'-pho	w
-TRANSPORTER	human	Q9H1U9	SLC25A51	Q9H1U9	2	175	Mitochondrial nicotinamide adenine dinucleotide transporter 	w
+TRANSPORTER	human	Q9H1U9	SLC25A51	Q9H1U9	2	176	Mitochondrial nicotinamide adenine dinucleotide transporter 	w
 TRANSPORTER	human	Q9H1V8	SLC6A17	Q9H1V8	3	109	Sodium-dependent neutral amino acid transporter SLC6A17 (Sod	w
 TRANSPORTER	human	Q9H2B4	SLC26A1	Q9H2B4	6	61	Sulfate anion transporter 1 (SAT-1) (Solute carrier family 2	w
 TRANSPORTER	human	Q9H2D1	SLC25A32	Q9H2D1	2	119	Solute carrier family 25 member 32 (Mitochondrial FAD transp	w
@@ -650,10 +650,10 @@ TRANSPORTER	human	Q9H598	SLC32A1	Q9H598	4	164	Vesicular inhibitory amino acid tr
 TRANSPORTER	human	Q9H8M5	CNNM2	Q9H8M5	10	88	Metal transporter CNNM2 (Ancient conserved domain-containing	w
 TRANSPORTER	human	Q9HAB3	SLC52A2	Q9HAB3	4	192	Solute carrier family 52, riboflavin transporter, member 2 (	w
 TRANSPORTER	human	Q9HBR0	SLC38A10	Q9HBR0	12	80	Solute carrier family 38 member 10 (Amino acid transporter S	w
-TRANSPORTER	human	Q9HC21	SLC25A19	Q9HC21	3	217	Mitochondrial thiamine pyrophosphate carrier (Mitochondrial 	w
+TRANSPORTER	human	Q9HC21	SLC25A19	Q9HC21	4	218	Mitochondrial thiamine pyrophosphate carrier (Mitochondrial 	w
 TRANSPORTER	human	Q9HCP6	HHATL	Q9HCP6	2	58	Protein-cysteine N-palmitoyltransferase HHAT-like protein (G	w
-TRANSPORTER	human	Q9HD23	MRS2	Q9HD23	2	110	Magnesium transporter MRS2 homolog, mitochondrial (MRS2-like	w
-TRANSPORTER	human	Q9NP58	ABCB6	Q9NP58	6	181	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	w
+TRANSPORTER	human	Q9HD23	MRS2	Q9HD23	4	112	Magnesium transporter MRS2 homolog, mitochondrial (MRS2-like	w
+TRANSPORTER	human	Q9NP58	ABCB6	Q9NP58	7	182	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	w
 TRANSPORTER	human	Q9NP59	SLC40A1	Q9NP59	3	156	Ferroportin (Ferroportin-1) (Iron-regulated transporter 1) (	w
 TRANSPORTER	human	Q9NP78	ABCB9	Q9NP78	9	74	ABC-type oligopeptide transporter ABCB9 (EC 7.4.2.6) (ATP-bi	w
 TRANSPORTER	human	Q9NP91	SLC6A20	Q9NP91	5	67	Sodium- and chloride-dependent transporter XTRP3 (Sodium/imi	w
@@ -661,7 +661,7 @@ TRANSPORTER	human	Q9NP94	SLC39A2	Q9NP94	4	104	Zinc transporter ZIP2 (6A1) (Eti-1
 TRANSPORTER	human	Q9NPD5	SLCO1B3	Q9NPD5	2	38	Solute carrier organic anion transporter family member 1B3 (	w
 TRANSPORTER	human	Q9NQ40	SLC52A3	Q9NQ40	5	155	Solute carrier family 52, riboflavin transporter, member 3 (	w
 TRANSPORTER	human	Q9NRA8	EIF4ENIF1	Q9NRA8	51	324	Eukaryotic translation initiation factor 4E transporter (4E-	w
-TRANSPORTER	human	Q9NRK6	ABCB10	Q9NRK6	3	104	ATP-binding cassette sub-family B member 10, mitochondrial (	w
+TRANSPORTER	human	Q9NRK6	ABCB10	Q9NRK6	4	105	ATP-binding cassette sub-family B member 10, mitochondrial (	w
 TRANSPORTER	human	Q9NRM0	SLC2A9	Q9NRM0	1	98	Solute carrier family 2, facilitated glucose transporter mem	w
 TRANSPORTER	human	Q9NRU3	CNNM1	Q9NRU3	8	78	Metal transporter CNNM1 (Ancient conserved domain-containing	w
 TRANSPORTER	human	Q9NS82	SLC7A10	Q9NS82	3	68	Asc-type amino acid transporter 1 (Asc-1) (Solute carrier fa	w
@@ -711,7 +711,7 @@ TRANSPORTER	worm	A3QM97	cnnm-1	A3QM97	1	1	Metal transporter cnnm-1	w
 TRANSPORTER	worm	E1B6R8	emc-5	E1B6R8	4	10	Membrane magnesium transporter	w
 TRANSPORTER	worm	G4S7C7	nipa-1	G4S7C7	0	2	Magnesium transporter NIPA2	w
 TRANSPORTER	worm	G4SQY7	slc-36.2	G4SQY7	0	1	Amino acid transporter transmembrane domain-containing prote	w
-TRANSPORTER	worm	G4SRS5	abtm-1	G4SRS5	1	6	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
+TRANSPORTER	worm	G4SRS5	abtm-1	G4SRS5	3	8	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
 TRANSPORTER	worm	G5EBN9	snf-3	G5EBN9	0	1	Sodium- and chloride-dependent betaine transporter	w
 TRANSPORTER	worm	G5ED05	cnnm-5	G5ED05	0	9	Metal transporter cnnm-5	w
 TRANSPORTER	worm	G5EDS5	sulp-2	G5EDS5	0	2	Anion transporter SULP-2	w
@@ -888,7 +888,7 @@ TRANSPORTER	yeast	P40046	VTC1	P40046	1	46	Vacuolar transporter chaperone complex
 TRANSPORTER	yeast	P40074	AVT6	P40074	0	3	Vacuolar amino acid transporter 6	w
 TRANSPORTER	yeast	P40107	VRG4	P40107	0	6	GDP-mannose transporter 1	w
 TRANSPORTER	yeast	P40260	MEP1	P40260	2	17	Ammonium transporter MEP1	w
-TRANSPORTER	yeast	P40416	ATM1	P40416	0	18	Iron-sulfur clusters transporter ATM1, mitochondrial	w
+TRANSPORTER	yeast	P40416	ATM1	P40416	1	19	Iron-sulfur clusters transporter ATM1, mitochondrial	w
 TRANSPORTER	yeast	P40445	YIL166C	P40445	0	2	Uncharacterized transporter YIL166C	w
 TRANSPORTER	yeast	P40501	AVT7	P40501	0	3	Vacuolar amino acid transporter 7	w
 TRANSPORTER	yeast	P40544	YKE4	P40544	0	7	Zinc transporter YKE4	w
@@ -988,6 +988,7 @@ TRANSPORTER	zebrafish	A0A8M9P097	slc16a9a	A0A8M9P097	0	2	Monocarboxylate transpo
 TRANSPORTER	zebrafish	A0A8M9PD65	slc6a16a	A0A8M9PD65	0	1	Transporter	w
 TRANSPORTER	zebrafish	A0A8M9PMI3	slc7a8b	A0A8M9PMI3	4	9	Large neutral amino acids transporter small subunit 2	w
 TRANSPORTER	zebrafish	A0A8M9PU70	slco1d1	A0A8M9PU70	1	1	Solute carrier organic anion transporter family member	w
+TRANSPORTER	zebrafish	A0A8N7TE64	mrs2	A0A8N7TE64	1	1	Magnesium transporter	w
 TRANSPORTER	zebrafish	A0A8N7USY1	slc36a1	A0A8N7USY1	0	4	Proton-coupled amino acid transporter 1	w
 TRANSPORTER	zebrafish	A0A8N7UY59	slc66a1	A0A8N7UY59	0	1	Lysosomal amino acid transporter 1 homolog	w
 TRANSPORTER	zebrafish	A0A8N7UZX7	slc1a2b	A0A8N7UZX7	0	5	Amino acid transporter	w
@@ -1024,7 +1025,7 @@ TRANSPORTER	zebrafish	E7F2A7	slc19a1	E7F2A7	0	1	Reduced folate transporter	w
 TRANSPORTER	zebrafish	E7F2I0	tap2t	E7F2I0	4	13	Antigen peptide transporter 2	w
 TRANSPORTER	zebrafish	E7F2I7	LOC556735	E7F2I7	0	10	Solute carrier organic anion transporter family member	w
 TRANSPORTER	zebrafish	E7F4T7	slc16a8	E7F4T7	0	5	Monocarboxylate transporter 3	w
-TRANSPORTER	zebrafish	E7F6F7	abcb7	E7F6F7	2	10	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
+TRANSPORTER	zebrafish	E7F6F7	abcb7	E7F6F7	4	12	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
 TRANSPORTER	zebrafish	E7F7B3	slc16a1a	E7F7B3	0	3	Monocarboxylate transporter 1	w
 TRANSPORTER	zebrafish	E7F8A9	tap1	E7F8A9	3	28	Antigen peptide transporter 1	w
 TRANSPORTER	zebrafish	E7F9C2	slc16a13	E7F9C2	0	2	Monocarboxylate transporter 13	w
@@ -1079,6 +1080,7 @@ TRANSPORTER	zebrafish	Q6ZM28	slc48a1a	Q6ZM28	0	1	Heme transporter hrg1-B	w
 TRANSPORTER	zebrafish	Q7T070	rhbg	Q7T070	1	3	Ammonium transporter Rh type B	w
 TRANSPORTER	zebrafish	Q7T3B2	slc48a1b	Q7T3B2	0	1	Heme transporter hrg1-A	w
 TRANSPORTER	zebrafish	Q7ZUL1	slc16a1b	Q7ZUL1	1	4	Monocarboxylate transporter 1	w
+TRANSPORTER	zebrafish	Q7ZWA7	slc25a10	Q7ZWA7	1	1	Solute carrier family 25 (Mitochondrial carrier dicarboxylat	w
 TRANSPORTER	zebrafish	Q7ZZ28	slc1a4	Q7ZZ28	0	3	Amino acid transporter	w
 TRANSPORTER	zebrafish	Q8JI14	rhcgl2	Q8JI14	1	4	Ammonium transporter Rh type C-like 2	w
 TRANSPORTER	zebrafish	Q90X48	slc35a5	Q90X48	0	4	UDP-sugar transporter protein SLC35A5	w

@@ -582,7 +582,7 @@ PRE-MRNA-SPLICING	zebrafish	Q6NZZ9	rbm22	Q6NZZ9	24	236	Pre-mRNA-splicing factor 
 PRE-MRNA-SPLICING	zebrafish	Q6P7Y3	prpf38b	Q6P7Y3	1	16	Pre-mRNA-splicing factor 38B	w
 PRE-MRNA-SPLICING	zebrafish	Q7SXL7	wtap	Q7SXL7	4	47	Pre-mRNA-splicing regulator WTAP	w
 PRE-MRNA-SPLICING	zebrafish	X1WHV8	dhx32b	X1WHV8	15	165	Putative pre-mRNA-splicing factor ATP-dependent RNA helicase	w
-PRE-MRNAS	human	Q7L8L6	FASTKD5	Q7L8L6	37	298	Non-canonical pre-mRNAs endonuclease FASTKD5, mitochondrial 	w
+PRE-MRNAS	human	Q7L8L6	FASTKD5	Q7L8L6	40	301	Non-canonical pre-mRNAs endonuclease FASTKD5, mitochondrial 	w
 PRE-PRO-MEGAKARYOCYTE-POTENTIATING	human	Q13421	MSLN	Q13421	33	235	Mesothelin (CAK1 antigen) (Pre-pro-megakaryocyte-potentiatin	w
 PRE-PRO-MEGAKARYOCYTE-POTENTIATING-FACTOR-LIKE	human	Q96KJ4	MSLNL	Q96KJ4	0	12	Mesothelin-like protein (Pre-pro-megakaryocyte-potentiating-	w
 PRE-PROTEIN	virus	A0A059XIF1	L3	A0A059XIF1	2	30	Pre-protein VI	w
@@ -712,7 +712,7 @@ PRE-RRNA-PROCESSING	yeast	Q06344	ESF1	Q06344	10	106	Pre-rRNA-processing protein 
 PRE-RRNA-PROCESSING	yeast	Q06672	TSR2	Q06672	4	26	Pre-rRNA-processing protein TSR2	w
 PRE-RRNA-PROCESSING	yeast	Q99216	PNO1	Q99216	19	181	Pre-rRNA-processing protein PNO1	w
 PRE-RRNA-PROCESSING	zebrafish	Q3KRG3	tsr2	Q3KRG3	1	1	Pre-rRNA-processing protein TSR2 homolog	w
-PRE-S2	human	Q7L0Y3	TRMT10C	Q7L0Y3	18	235	tRNA methyltransferase 10 homolog C (HBV pre-S2 trans-regula	w
+PRE-S2	human	Q7L0Y3	TRMT10C	Q7L0Y3	19	237	tRNA methyltransferase 10 homolog C (HBV pre-S2 trans-regula	w
 PRE-S2	human	Q9Y3C1	NOP16	Q9Y3C1	34	319	Nucleolar protein 16 (HBV pre-S2 trans-regulated protein 3)	w
 PRE-SMALL	virus	P60170	GP	P60170	0	8	Pre-small/secreted glycoprotein	w
 PRE-SMALL	virus	Q66800	GP	Q66800	0	9	Pre-small/secreted glycoprotein	w
@@ -844,9 +844,9 @@ PREGNANE	human	O75469	NR1I2	O75469	79	503	Nuclear receptor subfamily 1 group I m
 PREI3	human	Q9Y3A3	MOB4	Q9Y3A3	14	187		
 PREIMPLANTATION	human	Q9Y3A3	MOB4	Q9Y3A3	14	187	MOB-like protein phocein (2C4D) (Class II mMOB1) (Mob1 homol	w
 PREKALLIKREIN	human	P03952	KLKB1	P03952	39	341	Plasma kallikrein (EC 3.4.21.34) (Fletcher factor) (Kininoge	w
-PREL	fly	FBgn0033413	prel	Q9V579	3	18	Protein preli-like	
+PREL	fly	FBgn0033413	prel	Q9V579	4	19	Protein preli-like	
 PREL-1	human	Q7Z5R6	APBB1IP	Q7Z5R6	31	189	Amyloid beta A4 precursor protein-binding family B member 1-	w
-PREL-1	worm	Q17476	prel-1	Q17476	1	5	PRELI/MSF1 domain-containing protein	
+PREL-1	worm	Q17476	prel-1	Q17476	2	6	PRELI/MSF1 domain-containing protein	
 PREL-3	worm	O62173	prel-3	O62173	1	1	PRELI/MSF1 domain-containing protein	
 PREL1	human	Q7Z5R6	APBB1IP	Q7Z5R6	31	189		
 PREL2	human	Q70E73	RAPH1	Q70E73	60	201		
@@ -854,35 +854,45 @@ PRELAMIN	human	Q9H6Q4	CIAO3	Q9H6Q4	6	219	Cytosolic iron-sulfur assembly componen
 PRELAMIN	human	Q9UHQ1	NARF	Q9UHQ1	6	59	Nuclear prelamin A recognition factor (Iron-only hydrogenase	w
 PRELAMIN	zebrafish	Q6DHP6	narf	Q6DHP6	3	16	Nuclear prelamin A recognition factor	w
 PRELAMIN-A	human	P02545	LMNA	P02545	132	1292	Prelamin-A/C [Cleaved into: Lamin-A/C (70 kDa lamin) (Renal 	w
-PRELI	human	Q8N945	PRELID2	Q8N945	8	40	PRELI domain-containing protein 2	w
-PRELI	human	Q96N28	PRELID3A	Q96N28	5	23	PRELI domain containing protein 3A (Protein slowmo homolog 1	w
-PRELI	human	Q9Y255	PRELID1	Q9Y255	17	135		
-PRELI	human	Q9Y3B1	PRELID3B	Q9Y3B1	16	215	PRELI domain containing protein 3B (Protein slowmo homolog 2	w
+PRELI	human	Q8N945	PRELID2	Q8N945	16	50	PRELI domain-containing protein 2	w
+PRELI	human	Q96N28	PRELID3A	Q96N28	17	35	PRELI domain containing protein 3A (Protein slowmo homolog 1	w
+PRELI	human	Q9Y255	PRELID1	Q9Y255	21	139		
+PRELI	human	Q9Y3B1	PRELID3B	Q9Y3B1	26	225	PRELI domain containing protein 3B (Protein slowmo homolog 2	w
 PRELI	worm	O62173	prel-3	O62173	1	1	PRELI/MSF1 domain-containing protein	w
-PRELI	worm	Q17476	prel-1	Q17476	1	5	PRELI/MSF1 domain-containing protein	w
-PRELI	zebrafish	E7EZZ3	prelid3a	E7EZZ3	1	1	PRELI domain containing protein 3A	w
-PRELI	zebrafish	Q7T388	prelid1a	Q7T388	1	1	PRELI domain containing 1	w
-PRELI-LIKE	fly	FBgn0033413	prel	Q9V579	3	18	Protein preli-like	w
-PRELID1	human	Q9Y255	PRELID1	Q9Y255	17	135	PRELI domain-containing protein 1, mitochondrial (25 kDa pro	
-PRELID1	mus-musculus	Q8R107	Prelid1	Q8R107	1	1	PRELI domain-containing protein 1, mitochondrial	
+PRELI	worm	Q17476	prel-1	Q17476	2	6	PRELI/MSF1 domain-containing protein	w
+PRELI	zebrafish	E7EZZ3	prelid3a	E7EZZ3	7	7	PRELI domain containing protein 3A	w
+PRELI	zebrafish	Q7T388	prelid1a	Q7T388	3	3	PRELI domain containing 1	w
+PRELI-LIKE	fly	FBgn0033413	prel	Q9V579	4	19	Protein preli-like	w
+PRELID1	human	Q9Y255	PRELID1	Q9Y255	21	139	PRELI domain-containing protein 1, mitochondrial (25 kDa pro	
+PRELID1	mus-musculus	Q8R107	Prelid1	Q8R107	4	4	PRELI domain-containing protein 1, mitochondrial	
+PRELID1	pan-troglodytes	K7ADY0	PRELID1	K7ADY0	5	5	PRELI domain containing 1	
 PRELID1	rattus-norvegicus	A0ABK0LBH0	Prelid1	A0ABK0LBH0	1	1	PRELI domain containing 1	
-PRELID1A	zebrafish	Q7T388	prelid1a	Q7T388	1	1	PRELI domain containing 1	
-PRELID2	human	Q8N945	PRELID2	Q8N945	8	40	PRELI domain-containing protein 2	
-PRELID2	mus-musculus	Q0VBB0	Prelid2	Q0VBB0	1	1	PRELI domain-containing protein 2	
-PRELID3A	human	Q96N28	PRELID3A	Q96N28	5	23	PRELI domain containing protein 3A (Protein slowmo homolog 1	
-PRELID3A	mus-musculus	Q8VE85	Prelid3a	Q8VE85	1	1	PRELI domain containing protein 3A	
-PRELID3A	rattus-norvegicus	D3ZAN9	Prelid3a	D3ZAN9	1	1	PRELI domain containing 3A	
-PRELID3A	zebrafish	E7EZZ3	prelid3a	E7EZZ3	1	1	PRELI domain containing protein 3A	
-PRELID3B	human	Q9Y3B1	PRELID3B	Q9Y3B1	16	215	PRELI domain containing protein 3B (Protein slowmo homolog 2	
-PRELID3B	mus-musculus	Q9CYY7	Prelid3b	Q9CYY7	1	1	PRELI domain containing protein 3B	
-PRELID3B	rattus-norvegicus	Q6P9U4	Prelid3b	Q6P9U4	1	1	PRELI domain containing protein 3B	
-PRELID3B	zebrafish	Q7ZVG4	prelid3b	Q7ZVG4	1	1	C20orf45 homolog (H. sapiens)	
+PRELID1.S	xenopus-laevis	Q7ZXI3	prelid1.S	Q7ZXI3	3	3	PRELI domain containing 1 S homeolog	
+PRELID1A	zebrafish	Q7T388	prelid1a	Q7T388	3	3	PRELI domain containing 1	
+PRELID2	human	Q8N945	PRELID2	Q8N945	16	50	PRELI domain-containing protein 2	
+PRELID2	mus-musculus	Q0VBB0	Prelid2	Q0VBB0	7	10	PRELI domain-containing protein 2	
+PRELID2	pan-troglodytes	K7D322	PRELID2	K7D322	6	8	PRELI domain containing 2	
+PRELID2	rattus-norvegicus	A0A8I6AK24	Prelid2	A0A8I6AK24	3	4	PRELI domain containing 2	
+PRELID2	xenopus-laevis	Q6NTS7	prelid2	Q6NTS7	1	4	PRELI domain-containing protein 2	
+PRELID3A	human	Q96N28	PRELID3A	Q96N28	17	35	PRELI domain containing protein 3A (Protein slowmo homolog 1	
+PRELID3A	mus-musculus	Q8VE85	Prelid3a	Q8VE85	11	12	PRELI domain containing protein 3A	
+PRELID3A	pan-troglodytes	K7B0E6	PRELID3A	K7B0E6	10	10	PRELI domain containing 3A	
+PRELID3A	rattus-norvegicus	D3ZAN9	Prelid3a	D3ZAN9	10	11	PRELI domain containing 3A	
+PRELID3A	xenopus-laevis	Q6GM21	prelid3a	Q6GM21	7	8	PRELI domain containing protein 3A	
+PRELID3A	zebrafish	E7EZZ3	prelid3a	E7EZZ3	7	7	PRELI domain containing protein 3A	
+PRELID3B	human	Q9Y3B1	PRELID3B	Q9Y3B1	26	225	PRELI domain containing protein 3B (Protein slowmo homolog 2	
+PRELID3B	mus-musculus	Q9CYY7	Prelid3b	Q9CYY7	10	10	PRELI domain containing protein 3B	
+PRELID3B	pan-troglodytes	H2QKP1	PRELID3B	H2QKP1	9	9	PRELI domain containing 3B	
+PRELID3B	rattus-norvegicus	Q6P9U4	Prelid3b	Q6P9U4	11	11	PRELI domain containing protein 3B	
+PRELID3B	zebrafish	Q7ZVG4	prelid3b	Q7ZVG4	4	4	C20orf45 homolog (H. sapiens)	
+PRELID3B.S	xenopus-laevis	Q63ZN0	prelid3b.S	Q63ZN0	4	4	LOC494772 protein	
 PRELP	human	P51888	PRELP	P51888	13	151	Prolargin (Proline-arginine-rich end leucine-rich repeat pro	
 PRELP	mus-musculus	Q9JK53	Prelp	Q9JK53	0	14	Prolargin	
 PRELP	rattus-norvegicus	Q9EQP5	Prelp	Q9EQP5	0	15	Prolargin	
 PRELP	zebrafish	F1QY29	prelp	F1QY29	1	24	Prolargin	
 PRELP_HUMAN	human	P51888	PRELP	P51888	13	151		
-PREL_130	fly	FBgn0033413	prel	Q9V579	3	18		
+PREL_130	fly	FBgn0033413	prel	Q9V579	4	19		
+PREL_DROME	fly	FBgn0033413	prel	Q9V579	4	19		
 PREMATURE	human	Q8WVV4	POF1B	Q8WVV4	26	233	Protein POF1B (Premature ovarian failure protein 1B)	w
 PRENYL	fly	FBgn0029121	Sras	Q9U1H8	3	26	CAAX prenyl protease 2 (EC 3.4.-.-) (Farnesylated proteins-c	w
 PRENYL	fly	FBgn0034175	ste24b	A1ZAM7	0	2	CAAX prenyl protease (EC 3.4.24.84)	w
@@ -896,6 +906,7 @@ PRENYL	yeast	P47154	STE24	P47154	0	19	CAAX prenyl protease 1	w
 PRENYL	yeast	Q03530	RCE1	Q03530	0	4	CAAX prenyl protease 2	w
 PRENYL	zebrafish	E7FA75	rce1a	E7FA75	0	1	CAAX prenyl protease 2	w
 PRENYL	zebrafish	E9QGI3	rce1b	E9QGI3	0	1	CAAX prenyl protease 2	w
+PRENYL	zebrafish	Q6DHQ9	zgc:92156	Q6DHQ9	1	1	Prenyl (Decaprenyl) diphosphate synthase, subunit 2	w
 PRENYLATED	human	O60725	ICMT	O60725	9	133	Protein-S-isoprenylcysteine O-methyltransferase (EC 2.1.1.10	w
 PRENYLATED	human	Q9UI14	RABAC1	Q9UI14	3	181	Prenylated Rab acceptor protein 1 (PRA1 family protein 1)	w
 PRENYLATED	worm	G5EG43	ptp-4a2	G5EG43	2	7	Putative prenylated protein tyrosine phosphatase	w
@@ -924,8 +935,12 @@ PREP2	human	Q96KN3	PKNOX2	Q96KN3	83	381
 PREPHENATE	yeast	P20049	TYR1	P20049	0	28	Prephenate dehydrogenase	w
 PREPHENATE	yeast	P32452	PHA2	P32452	0	7	Probable prephenate dehydratase	w
 PREPIP3	arabidopsis-thaliana	O22181	PREPIP3	O22181	0	2	At2g23270	
-PREPL	human	Q4J6C6	PREPL	Q4J6C6	36	128	Prolyl endopeptidase-like (EC 3.4.21.-) (Prolylendopeptidase	
-PREPL	mus-musculus	Q8C167	Prepl	Q8C167	0	1	Prolyl endopeptidase-like	
+PREPL	human	Q4J6C6	PREPL	Q4J6C6	46	138	Prolyl endopeptidase-like (EC 3.4.21.-) (Prolylendopeptidase	
+PREPL	mus-musculus	Q8C167	Prepl	Q8C167	9	10	Prolyl endopeptidase-like	
+PREPL	pan-troglodytes	A0A2I3T5V5	PREPL	A0A2I3T5V5	10	11	Prolyl endopeptidase	
+PREPL	rattus-norvegicus	Q5HZA6	Prepl	Q5HZA6	9	9	Prolyl endopeptidase-like	
+PREPL	xenopus-laevis	Q32N48	prepl	Q32N48	1	2	Prolyl endopeptidase-like	
+PREPL	zebrafish	A0A8M1NRM5	prepl	A0A8M1NRM5	2	2	Prolyl endopeptidase	
 PREPL	zebrafish	B8JJX2	prepl	B8JJX2	0	2	Prolyl endopeptidase	
 PREPRO-MAJOR	human	Q9Y2Y8	PRG3	Q9Y2Y8	5	95	Proteoglycan 3 (Eosinophil major basic protein homolog) (Pre	w
 PREPRO-MBPH	human	Q9Y2Y8	PRG3	Q9Y2Y8	5	95	Proteoglycan 3 (Eosinophil major basic protein homolog) (Pre	w
@@ -947,8 +962,9 @@ PREPROPROTEIN	human	Q8N729	NPW	Q8N729	17	115	Neuropeptide W (Preproprotein L8) (
 PREPROPROTEIN	human	Q8NG41	NPB	Q8NG41	15	133	Neuropeptide B (Preproprotein L7) (hPPL7) [Cleaved into: Neu	w
 PREPROTACHYKININ	zebrafish	E9QE01	tac3a	E9QE01	0	18	Preprotachykinin 2a	w
 PREPROTACHYKININ-C	human	Q86UU9	TAC4	Q86UU9	16	95	Tachykinin-4 (Preprotachykinin-C) (PPT-C) [Cleaved into: End	w
-PREPROTEIN	human	Q99595	TIMM17A	Q99595	8	132	Mitochondrial import inner membrane translocase subunit Tim1	w
+PREPROTEIN	human	Q99595	TIMM17A	Q99595	9	133	Mitochondrial import inner membrane translocase subunit Tim1	w
 PREPROTEOLYSIN	human	P81605	DCD	P81605	14	268	Dermcidin (EC 3.4.-.-) (Preproteolysin) [Cleaved into: Survi	w
+PREP_DANRE	zebrafish	Q7ZVZ6	pitrm1	Q7ZVZ6	2	16		
 PREP_HUMAN	human	Q5JRX3	PITRM1	Q5JRX3	6	161		
 PRES	human	P58743	SLC26A5	P58743	7	66		
 PRES	virus	A0A193AU90	PreS	A0A193AU90	0	4	Large envelope protein	
@@ -972,9 +988,9 @@ PRESENILIN-2	human	P49810	PSEN2	P49810	6	112	Presenilin-2 (PS-2) (EC 3.4.23.-) (
 PRESENILIN-2	worm	Q18240	spr-2	Q18240	1	11	Suppressor of presenilin-2	w
 PRESENILIN-2	zebrafish	Q90ZE4	psen2	Q90ZE4	8	59	Presenilin-2	w
 PRESENILIN-ASSOCIATED	human	A0A1W2PP11	?	A0A1W2PP11	0	4	Presenilin-associated rhomboid-like protein, mitochondrial	w
-PRESENILIN-ASSOCIATED	human	Q96TA2	YME1L1	Q96TA2	18	244	ATP-dependent zinc metalloprotease YME1L1 (EC 3.4.24.-) (EC 	w
-PRESENILIN-ASSOCIATED	human	Q9H300	PARL	Q9H300	12	221	Presenilin-associated rhomboid-like protein, mitochondrial (	w
-PRESENILIN-ASSOCIATED	human	Q9NZJ7	MTCH1	Q9NZJ7	11	200	Mitochondrial carrier homolog 1 (Presenilin-associated prote	w
+PRESENILIN-ASSOCIATED	human	Q96TA2	YME1L1	Q96TA2	20	246	ATP-dependent zinc metalloprotease YME1L1 (EC 3.4.24.-) (EC 	w
+PRESENILIN-ASSOCIATED	human	Q9H300	PARL	Q9H300	13	222	Presenilin-associated rhomboid-like protein, mitochondrial (	w
+PRESENILIN-ASSOCIATED	human	Q9NZJ7	MTCH1	Q9NZJ7	13	202	Mitochondrial carrier homolog 1 (Presenilin-associated prote	w
 PRESENILIN-ASSOCIATED	zebrafish	Q58EK4	parla	Q58EK4	0	11	Presenilin-associated rhomboid-like protein A, mitochondrial	w
 PRESENILIN-BINDING	human	Q8IZD9	DOCK3	Q8IZD9	6	95	Dedicator of cytokinesis protein 3 (Modifier of cell adhesio	w
 PRESENILIN-LI	human	Q8TCT7	SPPL2B	Q8TCT7	26	253	Signal peptide peptidase-like 2B (SPP-like 2B) (SPPL2b) (EC 	w
@@ -991,10 +1007,10 @@ PRESENTATION	virus	Q77GB1	LSDV124	Q77GB1	3	153	MHC class II presentation inhibit
 PRESENTATION	virus	Q8V2M2		Q8V2M2	5	208	MHC class II antigen presentation inhibitor	w
 PRESEQUENCE	fly	FBgn0033005	CG3107	Q9V9E3	2	22	Presequence protease, mitochondrial (EC 3.4.24.-)	w
 PRESEQUENCE	human	Q5JRX3	PITRM1	Q5JRX3	6	161	Presequence protease, mitochondrial (hPreP) (EC 3.4.24.-) (P	w
-PRESEQUENCE	human	Q9Y3D7	PAM16	Q9Y3D7	17	172	Mitochondrial import inner membrane translocase subunit TIM1	w
+PRESEQUENCE	human	Q9Y3D7	PAM16	Q9Y3D7	23	178	Mitochondrial import inner membrane translocase subunit TIM1	w
 PRESEQUENCE	yeast	P32898	CYM1	P32898	0	16	Presequence protease, mitochondrial	w
 PRESEQUENCE	yeast	P36147	PAM17	P36147	3	37	Presequence translocated-associated motor subunit PAM17, mit	w
-PRESEQUENCE	zebrafish	Q7ZVZ6	pitrm1	Q7ZVZ6	1	12	Presequence protease, mitochondrial	w
+PRESEQUENCE	zebrafish	Q7ZVZ6	pitrm1	Q7ZVZ6	2	16	Presequence protease, mitochondrial	w
 PRESIDENTS-CUP	fly	FBgn0030840	p-cup	Q9VX50	3	17	AT04489p (Presidents-cup)	w
 PRESO	human	Q14CM0	FRMPD4	Q14CM0	51	278	FERM and PDZ domain-containing protein 4 (PDZ domain-contain	w
 PRESTIN	fly	FBgn0036770	Prestin	Q9VVM6	0	15	FI18412p1 (Prestin)	w
@@ -1130,5 +1146,5 @@ PREX1	human	Q8TCU6	PREX1	Q8TCU6	7	212	Phosphatidylinositol 3,4,5-trisphosphate-d
 PREX1_HUMAN	human	Q8TCU6	PREX1	Q8TCU6	7	212		
 PREX2	human	Q70Z35	PREX2	Q70Z35	8	129	Phosphatidylinositol 3,4,5-trisphosphate-dependent Rac excha	
 PREX2_HUMAN	human	Q70Z35	PREX2	Q70Z35	8	129		
-PREY	human	Q96I23	PYURF	Q96I23	9	130		
-PREY_HUMAN	human	Q96I23	PYURF	Q96I23	9	130		
+PREY	human	Q96I23	PYURF	Q96I23	12	132		
+PREY_HUMAN	human	Q96I23	PYURF	Q96I23	12	132		

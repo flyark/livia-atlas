@@ -1,8 +1,10 @@
 O17	virus	G8XTK1	O17	G8XTK1	19	176	G8XTK1_SCMVC	
 O17002	worm	O17002	dnj-22	O17002	0	1	J domain-containing protein	
 O17003	worm	O17003	natc-1	O17003	3	16	Protein MAK10 homolog	
-O17004	worm	O17004	mrps-2	O17004	7	300	Small ribosomal subunit protein uS2m	
+O17004	worm	O17004	mrps-2	O17004	8	301	Small ribosomal subunit protein uS2m	
+O17004_CAEEL	worm	O17004	mrps-2	O17004	8	301		
 O17005	worm	O17005	mrpl-4	O17005	15	290	Large ribosomal subunit protein uL4m	
+O17005_CAEEL	worm	O17005	mrpl-4	O17005	15	290		
 O17006	worm	O17006	phf-30	O17006	2	30	PHD-type domain-containing protein	
 O17013	worm	O17013	nhr-270	O17013	1	10	Nuclear Hormone Receptor family	
 O17020	worm	O17020	nhr-251	O17020	2	6	Nuclear Hormone Receptor family	
@@ -71,7 +73,7 @@ O17253	worm	O17253	btb-10	O17253	0	5	BTB domain-containing protein
 O17268	worm	O17268	lmtr-5	O17268	3	41	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	
 O17271	worm	O17271	heh-1	O17271	0	7	Putative protein heh-1	
 O17286	worm	O17286	nfyb-1	O17286	11	55	Nuclear transcription factor Y subunit nfyb-1	
-O17287	worm	O17287	tomm-22	O17287	6	33	Mitochondrial import receptor subunit TOM22 homolog	
+O17287	worm	O17287	tomm-22	O17287	7	34	Mitochondrial import receptor subunit TOM22 homolog	
 O17292	worm	O17292	srh-195	O17292	0	9	Serpentine Receptor, class H	
 O17301	worm	O17301	math-48	O17301	0	3	MATH domain-containing protein	
 O17307	schistosoma-mansoni	O17307	?	O17307	7	231	Large ribosomal subunit protein eL43	
@@ -156,10 +158,12 @@ O17621	worm	O17621	C29F7.2	O17621	0	4	CHK kinase-like domain-containing protein
 O17622	worm	O17622	C29F7.3	O17622	0	18	UMP-CMP kinase 1	
 O17624	worm	O17624	cyp-13B1	O17624	0	5	Putative cytochrome P450 cyp-13B1	
 O17626	worm	O17626	phdh-1	O17626	0	73	D-3-phosphoglycerate dehydrogenase	
-O17636	worm	O17636	ethe-1	O17636	0	3	Metallo-beta-lactamase domain-containing protein	
+O17636	worm	O17636	ethe-1	O17636	0	4	Metallo-beta-lactamase domain-containing protein	
+O17636_CAEEL	worm	O17636	ethe-1	O17636	0	4		
 O17641	worm	O17641	col-178	O17641	0	3	Nematode cuticle collagen N-terminal domain-containing prote	
 O17642	worm	O17642	col-179	O17642	0	3	Nematode cuticle collagen N-terminal domain-containing prote	
 O17643	worm	O17643	idh-2	O17643	5	30	Isocitrate dehydrogenase	
+O17643_CAEEL	worm	O17643	idh-2	O17643	5	30		
 O17644	worm	O17644	C34F6.1	O17644	0	2	BPTI/Kunitz inhibitor domain-containing protein	
 O17645	worm	O17645	hst-2	O17645	0	2	Heparan sulfate 2-O-sulfotransferase hst-2	
 O17646	worm	O17646	C34F6.9	O17646	0	23	USP domain-containing protein	
@@ -241,6 +245,7 @@ O17829_CAEEL	worm	O17829	O17829_CAEEL	O17829	0	9	EGF-like domain-containing prot
 O17830	worm	O17830	srj-29	O17830	0	3	Serpentine Receptor, class J	
 O17838	worm	O17838	clsp-1	O17838	4	23	Claspin	
 O17839	worm	O17839	mrpl-54	O17839	4	93	Large ribosomal subunit protein mL54	
+O17839_CAEEL	worm	O17839	mrpl-54	O17839	4	93		
 O17841	worm	O17841	str-73	O17841	0	3	Seven TM Receptor	
 O17850	worm	O17850	atx-3	O17850	6	37	Ataxin-3 homolog	
 O17851	worm	O17851	cyp-37b1	O17851	0	2	Cytochrome P450	
@@ -261,7 +266,8 @@ O17891	worm	O17891	CELE_F55B11.2	O17891	1	2	DUF19 domain-containing protein
 O17892	worm	O17892	xdh-1	O17892	0	40	xanthine dehydrogenase	
 O17893	worm	O17893	CELE_F55B11.3	O17893	0	5	DUF19 domain-containing protein	
 O17894	worm	O17894	unc-39	O17894	3	29	Homeobox protein unc-39	
-O17895	worm	O17895	haf-3	O17895	7	22	ABC transmembrane type-1 domain-containing protein	
+O17895	worm	O17895	haf-3	O17895	9	24	ABC transmembrane type-1 domain-containing protein	
+O17895_CAEEL	worm	O17895	haf-3	O17895	9	24		
 O17897	worm	O17897	CELE_F57A10.4	O17897	0	23	Sensor histidine kinase	
 O17898	worm	O17898	nhr-60	O17898	0	2	Nuclear hormone receptor family member nhr-60	
 O17899	worm	O17899	pcdr-1	O17899	0	25	Melatonin receptor pdcr-1	
@@ -284,7 +290,7 @@ O17934	worm	O17934	nhr-199	O17934	0	4	Nuclear hormone receptor family member nhr
 O17939	worm	O17939	aipl-1	O17939	1	28	Anaphase-promoting complex subunit 4-like WD40 domain-contai	
 O17944	worm	O17944	CELE_K10C3.5	O17944	3	112	Elongation factor-like 1	
 O17949	worm	O17949	CELE_K10D11.6	O17949	0	2	CUB-like domain-containing protein	
-O17953	worm	O17953	dld-1	O17953	2	54	Dihydrolipoyl dehydrogenase, mitochondrial	
+O17953	worm	O17953	dld-1	O17953	3	56	Dihydrolipoyl dehydrogenase, mitochondrial	
 O17954	worm	O17954	nspg-9	O17954	0	6	DUF19 domain-containing protein	
 O17955	worm	O17955	kin-30	O17955	3	43	Protein kinase domain-containing protein	
 O17956	worm	O17956	srd-28	O17956	0	1	Serpentine receptor class delta-28	

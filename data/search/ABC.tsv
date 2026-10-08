@@ -1,7 +1,7 @@
 ABC-1	human	O95477	ABCA1	O95477	1	30	Phospholipid-transporting ATPase ABCA1 (EC 7.6.2.1) (ATP-bin	w
 ABC-C	human	Q99758	ABCA3	Q99758	1	85	Phospholipid-transporting ATPase ABCA3 (EC 7.6.2.1) (ABC-C t	w
-ABC-ME	human	Q9NRK6	ABCB10	Q9NRK6	3	104	ATP-binding cassette sub-family B member 10, mitochondrial (	w
-ABC-MITOCHONDRIAL	human	Q9NRK6	ABCB10	Q9NRK6	3	104	ATP-binding cassette sub-family B member 10, mitochondrial (	w
+ABC-ME	human	Q9NRK6	ABCB10	Q9NRK6	4	105	ATP-binding cassette sub-family B member 10, mitochondrial (	w
+ABC-MITOCHONDRIAL	human	Q9NRK6	ABCB10	Q9NRK6	4	105	ATP-binding cassette sub-family B member 10, mitochondrial (	w
 ABC-MSD	streptococcus-pneumoniae	Q8DQ76	ABC-MSD	Q8DQ76	1	3	ABC3 transporter permease C-terminal domain-containing prote	
 ABC-MSD	streptococcus-pneumoniae	Q8DQY4	ABC-MSD	Q8DQY4	10	13	ABC transporter permease	
 ABC-MSD	streptococcus-pneumoniae	Q8DRF8	ABC-MSD	Q8DRF8	2	2	ABC transmembrane type-1 domain-containing protein	
@@ -72,10 +72,10 @@ ABC-SBP	streptococcus-pneumoniae	Q8DPY6	ABC-SBP	Q8DPY6	1	3	ABC transporter subst
 ABC-SBP	streptococcus-pneumoniae	Q8DRG1	ABC-SBP	Q8DRG1	1	2	Lipoprotein	
 ABC-SBP	streptococcus-pneumoniae	Q8DRI6	ABC-SBP	Q8DRI6	0	2	ABC transporter solute-binding protein-amino acid transport	
 ABC-SBP	streptococcus-pneumoniae	Q8DRJ6	ABC-SBP	Q8DRJ6	2	12	ABC transporter solute binding protein-sugar transport	
-ABC-TYPE	fly	FBgn0038376	Hmt-1	Q9VF20	11	288	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
+ABC-TYPE	fly	FBgn0038376	Hmt-1	Q9VF20	14	291	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
 ABC-TYPE	human	E7ENX8	?	E7ENX8	12	29	ABC-type antigen peptide transporter	w
 ABC-TYPE	human	O94911	ABCA8	O94911	1	32	ABC-type organic anion transporter ABCA8 (EC 7.6.2.-) (ATP-b	w
-ABC-TYPE	human	Q9NP58	ABCB6	Q9NP58	6	181	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	w
+ABC-TYPE	human	Q9NP58	ABCB6	Q9NP58	7	182	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	w
 ABC-TYPE	human	Q9NP78	ABCB9	Q9NP78	9	74	ABC-type oligopeptide transporter ABCB9 (EC 7.4.2.6) (ATP-bi	w
 ABC-TYPE	worm	A0A0K3AQN5	pgp-2	A0A0K3AQN5	0	25	ABC-type xenobiotic transporter	w
 ABC-TYPE	worm	O02086	haf-2	O02086	7	21	ABC-type antigen peptide transporter	w
@@ -91,7 +91,7 @@ ABC1	human	Q6AI08	HEATR6	Q6AI08	3	127
 ABC1	schizosaccharomyces-pombe	Q92337	abc1	Q92337	0	5	ATP-binding cassette transporter abc1	
 ABC1	worm	O17735	O17735_CAEEL	O17735	0	3	ABC1 atypical kinase-like domain-containing protein	w
 ABC1	worm	Q9N534	CELE_Y32H12A.7	Q9N534	0	4	ABC1 atypical kinase-like domain-containing protein	w
-ABC1	yeast	P27697	COQ8	P27697	0	36		
+ABC1	yeast	P27697	COQ8	P27697	2	38		
 ABC1	yeast	Q02981	YPL109C	Q02981	0	10	ABC1 family protein YPL109C, mitochondrial	w
 ABC1	yeast	Q06567	MCP2	Q06567	0	11	ABC1 family protein MCP2 (MDM10-complementing protein 2) (MI	w
 ABC10-ALPHA	human	P53803	POLR2K	P53803	33	459	DNA-directed RNA polymerases I, II, and III subunit RPABC4 (	w
@@ -117,7 +117,7 @@ ABC4	schizosaccharomyces-pombe	Q9P7V2	abc4	Q9P7V2	0	5	ATP-binding cassette trans
 ABC5	fly	FBgn0039218	Polr2L	Q9VC49	30	654	DNA-directed RNA polymerases I, II, and III subunit RPABC5 (	w
 ABC5	human	P62875	POLR2L	P62875	38	947	DNA-directed RNA polymerases I, II, and III subunit RPABC5 (	w
 ABC50	human	Q8NE71	ABCF1	Q8NE71	15	328		
-ABC7	human	O75027	ABCB7	O75027	9	152		
+ABC7	human	O75027	ABCB7	O75027	9	153		
 ABC8	human	P45844	ABCG1	P45844	6	146		
 ABCA	fly	FBgn0031170	Abca3	Q9VRG4	0	13		
 ABCA-SSN	human	Q8IZY2	ABCA7	Q8IZY2	0	33	Phospholipid-transporting ATPase ABCA7 (EC 7.6.2.1) (ABCA-SS	w
@@ -150,19 +150,22 @@ ABCA8	dictyostelium-discoideum	Q55BC0	abcA8	Q55BC0	5	5	ABC transporter A family 
 ABCA8	human	O94911	ABCA8	O94911	1	32	ABC-type organic anion transporter ABCA8 (EC 7.6.2.-) (ATP-b	
 ABCA8_HUMAN	human	O94911	ABCA8	O94911	1	32		
 ABCA9	dictyostelium-discoideum	Q54DT1	abcA9	Q54DT1	5	5	ABC transporter A family member 9	
-ABCA9	human	Q8IUA7	ABCA9	Q8IUA7	0	26	ATP-binding cassette sub-family A member 9 (EC 7.6.2.-)	
-ABCA9_HUMAN	human	Q8IUA7	ABCA9	Q8IUA7	0	26		
+ABCA9	human	Q8IUA7	ABCA9	Q8IUA7	0	28	ATP-binding cassette sub-family A member 9 (EC 7.6.2.-)	
+ABCA9	mus-musculus	Q8K449	Abca9	Q8K449	0	1	ATP-binding cassette sub-family A member 9	
+ABCA9	pan-troglodytes	A0A2I3RX67	ABCA9	A0A2I3RX67	0	2	ATP binding cassette subfamily A member 9	
+ABCA9_HUMAN	human	Q8IUA7	ABCA9	Q8IUA7	0	28		
 ABCAA_HUMAN	human	Q8WWZ4	ABCA10	Q8WWZ4	0	17		
 ABCAC_HUMAN	human	Q86UK0	ABCA12	Q86UK0	0	34		
 ABCB1	arabidopsis-thaliana	Q9ZR72	ABCB1	Q9ZR72	0	7	ABC transporter B family member 1	
 ABCB1	cladophialophora-carrionii	A0A1C1CK90	ABCB1	A0A1C1CK90	0	1	Multidrug resistance protein 1	
-ABCB1	dictyostelium-discoideum	Q54BU4	abcB1	Q54BU4	0	1	ABC transporter B family member 1	
+ABCB1	dictyostelium-discoideum	Q54BU4	abcB1	Q54BU4	3	4	ABC transporter B family member 1	
 ABCB1	human	P08183	ABCB1	P08183	1	93	ATP-dependent translocase ABCB1 (ATP-binding cassette sub-fa	
 ABCB10	arabidopsis-thaliana	Q9SGY1	ABCB10	Q9SGY1	0	2	ABC transporter B family member 10	
-ABCB10	human	Q9NRK6	ABCB10	Q9NRK6	3	104	ATP-binding cassette sub-family B member 10, mitochondrial (	
-ABCB10	mus-musculus	Q9JI39	Abcb10	Q9JI39	1	11	ATP-binding cassette sub-family B member 10, mitochondrial	
-ABCB10	rattus-norvegicus	Q5FVL8	Abcb10	Q5FVL8	1	11	ATP-binding cassette sub-family B member 10, mitochondrial	
-ABCB10	zebrafish	F1Q5K6	abcb10	F1Q5K6	1	10	ATP-binding cassette sub-family B member 10, mitochondrial	
+ABCB10	human	Q9NRK6	ABCB10	Q9NRK6	4	105	ATP-binding cassette sub-family B member 10, mitochondrial (	
+ABCB10	mus-musculus	Q9JI39	Abcb10	Q9JI39	3	13	ATP-binding cassette sub-family B member 10, mitochondrial	
+ABCB10	pan-troglodytes	H2Q1B1	ABCB10	H2Q1B1	3	3	ATP binding cassette subfamily B member 10	
+ABCB10	rattus-norvegicus	Q5FVL8	Abcb10	Q5FVL8	3	13	ATP-binding cassette sub-family B member 10, mitochondrial	
+ABCB10	zebrafish	F1Q5K6	abcb10	F1Q5K6	3	12	ATP-binding cassette sub-family B member 10, mitochondrial	
 ABCB11	arabidopsis-thaliana	Q9FWX7	ABCB11	Q9FWX7	0	6	ABC transporter B family member 11	
 ABCB11	human	O95342	ABCB11	O95342	0	38	Bile salt export pump (EC 7.6.2.-) (ATP-binding cassette sub	
 ABCB11	mus-musculus	Q9QY30	Abcb11	Q9QY30	0	8	Bile salt export pump	
@@ -196,44 +199,51 @@ ABCB3	arabidopsis-thaliana	Q9SYI2	ABCB3	Q9SYI2	0	3	ABC transporter B family memb
 ABCB3	dictyostelium-discoideum	Q8T9W4	abcB3	Q8T9W4	0	3	ABC transporter B family member 3	
 ABCB3	human	Q03519	TAP2	Q03519	10	197		
 ABCB4	arabidopsis-thaliana	O80725	ABCB4	O80725	0	22	ABC transporter B family member 4	
-ABCB4	dictyostelium-discoideum	Q54W24	abcB4	Q54W24	1	13	ABC transporter B family member 4	
+ABCB4	dictyostelium-discoideum	Q54W24	abcB4	Q54W24	3	15	ABC transporter B family member 4	
 ABCB4	human	P21439	ABCB4	P21439	0	30	Phosphatidylcholine translocator ABCB4 (EC 7.6.2.1) (ATP-bin	
 ABCB4	mus-musculus	P21440	Abcb4	P21440	0	8	Phosphatidylcholine translocator ABCB4	
 ABCB4	rattus-norvegicus	Q08201	Abcb4	Q08201	0	22	Phosphatidylcholine translocator ABCB4	
 ABCB4	zebrafish	E7F1E3	abcb4	E7F1E3	0	23	ABC-type xenobiotic transporter	
 ABCB5	arabidopsis-thaliana	Q9SYI3	ABCB5	Q9SYI3	0	2	ABC transporter B family member 5	
-ABCB5	dictyostelium-discoideum	Q8T9W2	abcB5	Q8T9W2	2	20	ABC transporter B family member 5	
+ABCB5	dictyostelium-discoideum	Q8T9W2	abcB5	Q8T9W2	4	22	ABC transporter B family member 5	
 ABCB5	human	Q2M3G0	ABCB5	Q2M3G0	0	29	ATP-binding cassette sub-family B member 5 (ABCB5 P-gp) (P-g	
 ABCB5	mus-musculus	B5X0E4	Abcb5	B5X0E4	0	2	ATP-binding cassette sub-family B member 5	
 ABCB5	rattus-norvegicus	D4AEL4	Abcb5	D4AEL4	0	17	ATP-binding cassette sub-family B member 5	
 ABCB5	zebrafish	F1R7A8	abcb5	F1R7A8	0	24	ABC transporter B family member 5	
 ABCB5_HUMAN	human	Q2M3G0	ABCB5	Q2M3G0	0	29		
 ABCB6	arabidopsis-thaliana	Q8LPT1	ABCB6	Q8LPT1	0	2	ABC transporter B family member 6	
-ABCB6	dictyostelium-discoideum	Q54RU1	abcB6	Q54RU1	1	6	ABC transporter B family member 6	
-ABCB6	fly	FBgn0038376	Hmt-1	Q9VF20	11	288	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
-ABCB6	human	Q9NP58	ABCB6	Q9NP58	6	181	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	
-ABCB6	mus-musculus	Q9DC29	Abcb6	Q9DC29	0	5	ATP-binding cassette sub-family B member 6	
+ABCB6	dictyostelium-discoideum	Q54RU1	abcB6	Q54RU1	4	9	ABC transporter B family member 6	
+ABCB6	fly	FBgn0038376	Hmt-1	Q9VF20	14	291	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
+ABCB6	human	Q9NP58	ABCB6	Q9NP58	7	182	ATP-binding cassette sub-family B member 6 (ABC-type heme tr	
+ABCB6	mus-musculus	Q9DC29	Abcb6	Q9DC29	3	8	ATP-binding cassette sub-family B member 6	
+ABCB6	pan-troglodytes	H2R647	ABCB6	H2R647	3	3	ATP-binding cassette sub-family B member 6	
 ABCB6	plasmodium-falciparum-36329	Q8IDH9	ABCB6	Q8IDH9	2	8	ABC transporter ATM1	
-ABCB6	rattus-norvegicus	O70595	Abcb6	O70595	0	3	ATP-binding cassette sub-family B member 6	
+ABCB6	rattus-norvegicus	O70595	Abcb6	O70595	3	6	ATP-binding cassette sub-family B member 6	
+ABCB6.L	xenopus-laevis	A0A1L8EVL9	abcb6.L	A0A1L8EVL9	3	3	ATP-binding cassette sub-family B member 6	
+ABCB6A	zebrafish	A0A8M2B7F7	abcb6a	A0A8M2B7F7	3	3	ATP-binding cassette sub-family B member 6	
 ABCB6A	zebrafish	F1QCK2	abcb6a	F1QCK2	1	3	ATP-binding cassette sub-family B member 6	
 ABCB6B	zebrafish	A0A8M2BF06	abcb6b	A0A8M2BF06	1	3	ATP-binding cassette sub-family B member 6	
-ABCB6_HUMAN	human	Q9NP58	ABCB6	Q9NP58	6	181		
+ABCB6_HUMAN	human	Q9NP58	ABCB6	Q9NP58	7	182		
 ABCB7	arabidopsis-thaliana	Q9FHF1	ABCB7	Q9FHF1	0	2	ABC transporter B family member 7	
 ABCB7	dictyostelium-discoideum	Q55DA7	abcB7	Q55DA7	1	5	ABC transporter B family member 7	
-ABCB7	fly	FBgn0035244	Abcb7	Q9W0C5	2	25	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	
-ABCB7	fly	FBgn0035244	Abcb7	Q9W0C5	2	25	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	
-ABCB7	human	O75027	ABCB7	O75027	9	152	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	
-ABCB7	mus-musculus	Q61102	Abcb7	Q61102	2	15	Iron-sulfur clusters transporter ABCB7, mitochondrial	
-ABCB7	rattus-norvegicus	Q704E8	Abcb7	Q704E8	2	12	Iron-sulfur clusters transporter ABCB7, mitochondrial	
-ABCB7	worm	G4SRS5	abtm-1	G4SRS5	1	6	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
-ABCB7	zebrafish	E7F6F7	abcb7	E7F6F7	2	10	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
-ABCB7	zebrafish	E7F6F7	abcb7	E7F6F7	2	10	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
-ABCB7_HUMAN	human	O75027	ABCB7	O75027	9	152		
+ABCB7	fly	FBgn0035244	Abcb7	Q9W0C5	4	27	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	
+ABCB7	fly	FBgn0035244	Abcb7	Q9W0C5	4	27	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	
+ABCB7	human	O75027	ABCB7	O75027	9	153	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	
+ABCB7	mus-musculus	Q61102	Abcb7	Q61102	3	17	Iron-sulfur clusters transporter ABCB7, mitochondrial	
+ABCB7	pan-troglodytes	K7BWZ4	ABCB7	K7BWZ4	4	4	ATP binding cassette subfamily B member 7	
+ABCB7	rattus-norvegicus	Q704E8	Abcb7	Q704E8	3	14	Iron-sulfur clusters transporter ABCB7, mitochondrial	
+ABCB7	worm	G4SRS5	abtm-1	G4SRS5	3	8	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
+ABCB7	zebrafish	E7F6F7	abcb7	E7F6F7	4	12	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
+ABCB7	zebrafish	E7F6F7	abcb7	E7F6F7	4	12	Iron-sulfur clusters transporter ABCB7, mitochondrial	w
+ABCB7.L	xenopus-laevis	A0A1L8F7A7	abcb7.L	A0A1L8F7A7	3	4	ATP-binding cassette sub-family B member 7, mitochondrial	
+ABCB7_DANRE	zebrafish	E7F6F7	abcb7	E7F6F7	4	12		
+ABCB7_HUMAN	human	O75027	ABCB7	O75027	9	153		
 ABCB8	arabidopsis-thaliana	Q9LHK4	ABCB8	Q9LHK4	0	2	Putative ABC transporter B family member 8	
 ABCB8	human	Q9NUT2	ABCB8	Q9NUT2	7	107	Mitochondrial potassium channel ATP-binding subunit (ATP-bin	
-ABCB8	mus-musculus	Q9CXJ4	Abcb8	Q9CXJ4	1	3	Mitochondrial potassium channel ATP-binding subunit	
-ABCB8	rattus-norvegicus	Q5RKI8	Abcb8	Q5RKI8	1	8	Mitochondrial potassium channel ATP-binding subunit	
-ABCB8	zebrafish	Q56A55	abcb8	Q56A55	1	6	Mitochondrial potassium channel ATP-binding subunit	
+ABCB8	mus-musculus	Q9CXJ4	Abcb8	Q9CXJ4	3	5	Mitochondrial potassium channel ATP-binding subunit	
+ABCB8	pan-troglodytes	K7BPP8	ABCB8	K7BPP8	3	3	ATP binding cassette subfamily B member 8	
+ABCB8	rattus-norvegicus	Q5RKI8	Abcb8	Q5RKI8	3	10	Mitochondrial potassium channel ATP-binding subunit	
+ABCB8	zebrafish	Q56A55	abcb8	Q56A55	3	8	Mitochondrial potassium channel ATP-binding subunit	
 ABCB9	arabidopsis-thaliana	Q9M0M2	ABCB9	Q9M0M2	0	2	ABC transporter B family member 9	
 ABCB9	human	Q9NP78	ABCB9	Q9NP78	9	74	ABC-type oligopeptide transporter ABCB9 (EC 7.4.2.6) (ATP-bi	
 ABCB9	mus-musculus	Q9JJ59	Abcb9	Q9JJ59	2	12	ABC-type oligopeptide transporter ABCB9	
@@ -241,7 +251,7 @@ ABCB9	rattus-norvegicus	Q9QYJ4	Abcb9	Q9QYJ4	3	26	ABC-type oligopeptide transport
 ABCB9	zebrafish	A3KGZ4	abcb9	A3KGZ4	1	8	ABC-type oligopeptide transporter ABCB9	w
 ABCB9	zebrafish	A3KGZ4	abcb9	A3KGZ4	1	8	ABC-type oligopeptide transporter ABCB9	w
 ABCB9_HUMAN	human	Q9NP78	ABCB9	Q9NP78	9	74		
-ABCBA_HUMAN	human	Q9NRK6	ABCB10	Q9NRK6	3	104		
+ABCBA_HUMAN	human	Q9NRK6	ABCB10	Q9NRK6	4	105		
 ABCBB_HUMAN	human	O95342	ABCB11	O95342	0	38		
 ABCC1	human	P33527	ABCC1	P33527	3	167	ATP-binding cassette sub-family C member 1 (EC 7.6.2.-) (Glu	
 ABCC10	arabidopsis-thaliana	Q9LYS2	ABCC10	Q9LYS2	0	2	ABC transporter C family member 10	
@@ -285,20 +295,28 @@ ABCD1	dictyostelium-discoideum	Q54W19	abcD1	Q54W19	3	12	ABC transporter D family
 ABCD1	fly	FBgn0039890	Abcd1	Q7JUN3	1	16	ATP-binding cassette sub-family D member 1 (EC 7.6.2.4)	
 ABCD1	human	P33897	ABCD1	P33897	5	95	ATP-binding cassette sub-family D member 1 (EC 3.1.2.-) (EC 	
 ABCD1	mus-musculus	P48410	Abcd1	P48410	2	6	ATP-binding cassette sub-family D member 1	
+ABCD1	pan-troglodytes	K6ZKQ4	ABCD1	K6ZKQ4	2	2	ATP binding cassette subfamily D member 1	
 ABCD1	rattus-norvegicus	D3ZHR2	Abcd1	D3ZHR2	2	6	ATP-binding cassette sub-family D member 1	
-ABCD1	zebrafish	F1RBC8	abcd1	F1RBC8	1	9	ATP-binding cassette sub-family D member 1	
+ABCD1	zebrafish	F1RBC8	abcd1	F1RBC8	3	11	ATP-binding cassette sub-family D member 1	
+ABCD1.L	xenopus-laevis	A0A310U8H2	abcd1.L	A0A310U8H2	2	2	ATP-binding cassette sub-family D member 1	
+ABCD1_DANRE	zebrafish	F1RBC8	abcd1	F1RBC8	3	11		
+ABCD1_DROME	fly	FBgn0039890	Abcd1	Q7JUN3	1	16		
 ABCD1_HUMAN	human	P33897	ABCD1	P33897	5	95		
 ABCD2	cladophialophora-carrionii	A0A1C1CJG8	ABCD2	A0A1C1CJG8	1	3	ATP-binding cassette sub-family D member 2	
 ABCD2	dictyostelium-discoideum	Q8T8P3	abcD2	Q8T8P3	4	14	ABC transporter D family member 2	
 ABCD2	human	Q9UBJ2	ABCD2	Q9UBJ2	2	17	ATP-binding cassette sub-family D member 2 (EC 3.1.2.-) (EC 	
 ABCD2	mus-musculus	Q61285	Abcd2	Q61285	2	4	ATP-binding cassette sub-family D member 2	
+ABCD2	pan-troglodytes	H2Q5Q0	ABCD2	H2Q5Q0	2	2	ATP binding cassette subfamily D member 2	
 ABCD2	rattus-norvegicus	Q9QY44	Abcd2	Q9QY44	2	5	ATP-binding cassette sub-family D member 2	
+ABCD2.S	xenopus-laevis	A0A1L8GU14	abcd2.S	A0A1L8GU14	2	2	ATP-binding cassette sub-family D member 2	
 ABCD2_HUMAN	human	Q9UBJ2	ABCD2	Q9UBJ2	2	17		
 ABCD3	dictyostelium-discoideum	Q54W20	abcD3	Q54W20	3	13	ABC transporter D family member 3	
 ABCD3	fly	FBgn0031069	Abcd3	Q9VWC8	1	45	LD11581p (Peroxisomal membrane protein 70 kDa, isoform A) (P	
 ABCD3	human	P28288	ABCD3	P28288	4	241	ATP-binding cassette sub-family D member 3 (EC 3.1.2.-) (EC 	
 ABCD3	mus-musculus	P55096	Abcd3	P55096	2	13	ATP-binding cassette sub-family D member 3	
+ABCD3	pan-troglodytes	A0A2I3TLF1	ABCD3	A0A2I3TLF1	2	2	ATP binding cassette subfamily D member 3	
 ABCD3	rattus-norvegicus	P16970	Abcd3	P16970	2	12	ATP-binding cassette sub-family D member 3	
+ABCD3.S	xenopus-laevis	A0A8J1MZK7	abcd3.S	A0A8J1MZK7	2	2	ATP binding cassette subfamily D member 3 S homeolog isoform	
 ABCD3B	zebrafish	B0UY91	abcd3b	B0UY91	1	11	ATP-binding cassette sub-family D member 3b	
 ABCD3_HUMAN	human	P28288	ABCD3	P28288	4	241		
 ABCD4	human	O14678	ABCD4	O14678	2	81	Lysosomal cobalamin transporter ABCD4 (EC 7.6.2.8) (ATP-bind	

@@ -1,6 +1,6 @@
 PER	fly	FBgn0003068	per	M9PGJ3	24	143	Period circadian protein	
 PER	human	O15534	PER1	O15534	43	190		
-PER1	arabidopsis-thaliana	O04005	PER1	O04005	0	39	1-Cys peroxiredoxin PER1	
+PER1	arabidopsis-thaliana	O04005	PER1	O04005	1	40	1-Cys peroxiredoxin PER1	
 PER1	glycine-max	I1MZT0	PER1	I1MZT0	0	6	Peroxidase	
 PER1	human	O15534	PER1	O15534	43	190	Period circadian protein homolog 1 (hPER1) (Circadian clock 	
 PER1	mus-musculus	O35973	Per1	O35973	8	27	Period circadian protein homolog 1	
@@ -155,10 +155,10 @@ PERIPHERAL	human	O14936	CASK	O14936	66	557	Peripheral plasma membrane protein CA
 PERIPHERAL	human	O75947	ATP5PD	O75947	9	320	ATP synthase peripheral stalk subunit d, mitochondrial (ATPa	w
 PERIPHERAL	human	O95153	TSPOAP1	O95153	19	92	Peripheral-type benzodiazepine receptor-associated protein 1	w
 PERIPHERAL	human	P02689	PMP2	P02689	15	101	Myelin P2 protein (Peripheral myelin protein 2)	w
-PERIPHERAL	human	P18859	ATP5PF	P18859	12	331	ATP synthase peripheral stalk subunit F6, mitochondrial (ATP	w
+PERIPHERAL	human	P18859	ATP5PF	P18859	13	332	ATP synthase peripheral stalk subunit F6, mitochondrial (ATP	w
 PERIPHERAL	human	P24539	ATP5PB	P24539	25	324	ATP synthase peripheral stalk subunit b, mitochondrial (ATP 	w
 PERIPHERAL	human	P25189	MPZ	P25189	5	19	Myelin protein P0 (Myelin peripheral protein) (MPP) (Myelin 	w
-PERIPHERAL	human	P48047	ATP5PO	P48047	23	412	ATP synthase peripheral stalk subunit OSCP, mitochondrial (A	w
+PERIPHERAL	human	P48047	ATP5PO	P48047	26	414	ATP synthase peripheral stalk subunit OSCP, mitochondrial (A	w
 PERIPHERAL	human	Q01453	PMP22	Q01453	4	120	Peripheral myelin protein 22 (PMP-22) (Growth arrest-specifi	w
 PERIPHERAL	human	Q15858	SCN9A	Q15858	5	42	Sodium channel protein type 9 subunit alpha (Neuroendocrine 	w
 PERIPHERAL	human	Q9BQQ3	GORASP1	Q9BQQ3	26	153	Golgi reassembly-stacking protein 1 (Golgi peripheral membra	w
@@ -167,9 +167,9 @@ PERIPHERAL	human	Q9Y5Y9	SCN10A	Q9Y5Y9	2	14	Sodium channel protein type 10 subuni
 PERIPHERAL	zebrafish	A0A2R8RW11	si:ch211-140m22.7	A0A2R8RW11	0	48	ATP synthase peripheral stalk subunit F6, mitochondrial	w
 PERIPHERAL	zebrafish	A0A8M1RES1	si:dkey-22n8.3	A0A8M1RES1	0	46	ATP synthase peripheral stalk subunit F6, mitochondrial	w
 PERIPHERAL	zebrafish	B3DH78	caska	B3DH78	12	176	Peripheral plasma membrane protein CASK	w
-PERIPHERAL	zebrafish	Q6DRD1	atp5po	Q6DRD1	5	137	ATP synthase peripheral stalk subunit OSCP, mitochondrial	w
+PERIPHERAL	zebrafish	Q6DRD1	atp5po	Q6DRD1	8	139	ATP synthase peripheral stalk subunit OSCP, mitochondrial	w
 PERIPHERAL-TYPE	human	O95153	TSPOAP1	O95153	19	92	Peripheral-type benzodiazepine receptor-associated protein 1	w
-PERIPHERAL-TYPE	human	P30536	TSPO	P30536	3	165	Translocator protein (Mitochondrial benzodiazepine receptor)	w
+PERIPHERAL-TYPE	human	P30536	TSPO	P30536	4	166	Translocator protein (Mitochondrial benzodiazepine receptor)	w
 PERIPHERAL-TYPE	human	Q5TGU0	TSPO2	Q5TGU0	3	89	Translocator protein 2 (Peripheral-type benzodiazepine recep	w
 PERIPHERIN	human	P41219	PRPH	P41219	85	227	Peripherin (Neurofilament 4)	w
 PERIPHERIN	zebrafish	A0A8M2B5B9	prph2la	A0A8M2B5B9	1	1	Peripherin 2-like a	w
@@ -242,7 +242,7 @@ PERMEASE	yeast	P25376	AGP1	P25376	0	7	General amino acid permease AGP1	w
 PERMEASE	yeast	P25604	STP22	P25604	10	64	Suppressor protein STP22 of temperature-sensitive alpha-fact	w
 PERMEASE	yeast	P32487	LYP1	P32487	0	11	Lysine-specific permease	w
 PERMEASE	yeast	P32837	UGA4	P32837	0	6	GABA-specific permease	w
-PERMEASE	yeast	P33310	MDL1	P33310	0	10	ATP-dependent permease MDL1, mitochondrial	w
+PERMEASE	yeast	P33310	MDL1	P33310	1	11	ATP-dependent permease MDL1, mitochondrial	w
 PERMEASE	yeast	P33311	MDL2	P33311	0	11	ATP-dependent permease MDL2, mitochondrial	w
 PERMEASE	yeast	P38084	BAP2	P38084	0	21	Leu/Val/Ile amino-acid permease	w
 PERMEASE	yeast	P38085	TAT1	P38085	1	28	Valine/tyrosine/tryptophan amino-acid permease 1	w
@@ -283,7 +283,7 @@ PEROXI	human	Q03181	PPARD	Q03181	154	721	Peroxisome proliferator-activated recep
 PEROXIDASE	fly	FBgn0004577	Pxd	Q01603	37	246	Peroxidase (DmPO) (EC 1.11.1.7) (Chorion peroxidase)	w
 PEROXIDASE	fly	FBgn0034415	Gpxl	Q4V6H2	45	332	Glutathione peroxidase	w
 PEROXIDASE	fly	FBgn0035438	Gtpx	Q8IRD3	21	279	Glutathione peroxidase	w
-PEROXIDASE	fly	FBgn0040309	Prx2	Q9V3P0	2	143	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
+PEROXIDASE	fly	FBgn0040309	Prx2	Q9V3P0	6	147	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
 PEROXIDASE	fly	FBgn0261987	Pxt	Q9VEG6	19	258	Chorion peroxidase (EC 1.11.1.7) (Peroxinectin-related prote	w
 PEROXIDASE	human	A1KZ92	PXDNL	A1KZ92	27	342	Probable oxidoreductase PXDNL (EC 1.-.-.-) (Cardiac peroxida	w
 PEROXIDASE	human	O14684	PTGES	O14684	6	429	Prostaglandin E synthase (EC 5.3.99.3) (Glutathione peroxida	w
@@ -298,11 +298,11 @@ PEROXIDASE	human	P11678	EPX	P11678	5	104	Eosinophil peroxidase (EPO) (EC 1.11.1.
 PEROXIDASE	human	P18283	GPX2	P18283	4	9	Glutathione peroxidase 2 (GPx-2) (GSHPx-2) (EC 1.11.1.9) (Ga	w
 PEROXIDASE	human	P22079	LPO	P22079	3	62	Lactoperoxidase (LPO) (EC 1.11.1.7) (Salivary peroxidase) (S	w
 PEROXIDASE	human	P22352	GPX3	P22352	6	57	Glutathione peroxidase 3 (GPx-3) (GSHPx-3) (EC 1.11.1.9) (Ex	w
-PEROXIDASE	human	P32119	PRDX2	P32119	9	445	Peroxiredoxin-2 (EC 1.11.1.24) (Natural killer cell-enhancin	w
+PEROXIDASE	human	P32119	PRDX2	P32119	13	449	Peroxiredoxin-2 (EC 1.11.1.24) (Natural killer cell-enhancin	w
 PEROXIDASE	human	P36969	GPX4	P36969	13	147	Phospholipid hydroperoxide glutathione peroxidase GPX4 (PHGP	w
 PEROXIDASE	human	P59796	GPX6	P59796	4	9	Glutathione peroxidase 6 (GPx-6) (GSHPx-6) (EC 1.11.1.9)	w
 PEROXIDASE	human	Q06830	PRDX1	Q06830	10	487	Peroxiredoxin-1 (EC 1.11.1.24) (Natural killer cell-enhancin	w
-PEROXIDASE	human	Q13162	PRDX4	Q13162	12	257	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
+PEROXIDASE	human	Q13162	PRDX4	Q13162	17	262	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
 PEROXIDASE	human	Q8TED1	GPX8	Q8TED1	32	351	Protein peroxidase GPX8 (GPx-8) (GSHPx-8) (EC 5.3.4.1)	w
 PEROXIDASE	human	Q92626	PXDN	Q92626	29	426	Peroxidasin homolog (EC 1.11.2.-) (Melanoma-associated antig	w
 PEROXIDASE	human	Q96SL4	GPX7	Q96SL4	19	198	Protein peroxidase GPX7 (GPx-7) (GSHPx-7) (CL683) (EC 5.3.4.	w
@@ -338,10 +338,10 @@ PEROXIDASIN	human	Q92626	PXDN	Q92626	29	426	Peroxidasin homolog (EC 1.11.2.-) (M
 PEROXIDASIN	worm	G5EG78	pxn-2	G5EG78	0	20	Peroxidasin homolog pxn-2	w
 PEROXIDASIN	worm	Q1ENI8	pxn-1	Q1ENI8	0	22	Peroxidasin homolog pxn-1	w
 PEROXIDASIN-LIKE	human	A1KZ92	PXDNL	A1KZ92	27	342	Probable oxidoreductase PXDNL (EC 1.-.-.-) (Cardiac peroxida	w
-PEROXIDE	fly	FBgn0038519	Prx3	Q9VEJ0	1	27	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
-PEROXIDE	fly	FBgn0040309	Prx2	Q9V3P0	2	143	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
-PEROXIDE	human	P30048	PRDX3	P30048	7	315	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
-PEROXIDE	human	Q13162	PRDX4	Q13162	12	257	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
+PEROXIDE	fly	FBgn0038519	Prx3	Q9VEJ0	3	29	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
+PEROXIDE	fly	FBgn0040309	Prx2	Q9V3P0	6	147	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
+PEROXIDE	human	P30048	PRDX3	P30048	9	317	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
+PEROXIDE	human	Q13162	PRDX4	Q13162	17	262	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
 PEROXIDE-INDUCIBLE	fly	FBgn0032231	Oser1	Q9VKY0	0	1	Oxidative stress-responsive serine-rich protein 1 (Oxidative	w
 PEROXIDE-INDUCIBLE	fly	FBgn0041789	Pax	Q2PDT4	13	115	Transforming growth factor beta-1-induced transcript 1 prote	w
 PEROXIDE-INDUCIBLE	fly	FBgn0050487	CG30487	Q6NN84	0	0	Oxidative stress-responsive serine-rich protein 1 (Oxidative	w
@@ -377,24 +377,24 @@ PEROXIN-6	human	Q13608	PEX6	Q13608	6	142	Peroxisomal ATPase PEX6 (EC 3.6.4.-) (P
 PEROXIN-7	fly	FBgn0035922	Pex7	Q9VSN7	2	31	Peroxin-7	w
 PEROXIN-7	human	O00628	PEX7	O00628	9	92	Peroxisomal targeting signal 2 receptor (PTS2 receptor) (Per	w
 PEROXINECTIN-RELATED	fly	FBgn0261987	Pxt	Q9VEG6	19	258	Chorion peroxidase (EC 1.11.1.7) (Peroxinectin-related prote	w
-PEROXIREDOXIN	fly	FBgn0031479	Prx6a	Q9VQI7	2	113	Peroxiredoxin 6005 (EC 1.11.1.-)	w
+PEROXIREDOXIN	fly	FBgn0031479	Prx6a	Q9VQI7	5	116	Peroxiredoxin 6005 (EC 1.11.1.-)	w
 PEROXIREDOXIN	fly	FBgn0033518	Prx6c	Q7JX87	1	129	Peroxiredoxin 2540-2 (EC 1.11.1.15, EC 1.11.1.7) (RE05093p) 	w
 PEROXIREDOXIN	fly	FBgn0033520	Prx6b	A1Z892	1	157	LD11278p (Peroxiredoxin 2540-1 (EC 1.11.1.15, EC 1.11.1.7))	w
 PEROXIREDOXIN	fly	FBgn0036490	Prx1	Q9VUM4	15	264	thioredoxin-dependent peroxiredoxin (EC 1.11.1.24)	w
-PEROXIREDOXIN	fly	FBgn0038519	Prx3	Q9VEJ0	1	27	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
-PEROXIREDOXIN	fly	FBgn0040308	Prx4	Q9V3Q4	9	299	thioredoxin-dependent peroxiredoxin (EC 1.11.1.24)	w
-PEROXIREDOXIN	fly	FBgn0040309	Prx2	Q9V3P0	2	143	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
-PEROXIREDOXIN	human	P30041	PRDX6	P30041	8	327	Peroxiredoxin-6 (EC 1.11.1.27) (1-Cys peroxiredoxin) (1-Cys 	w
-PEROXIREDOXIN	human	P30044	PRDX5	P30044	15	260	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepress	w
-PEROXIREDOXIN	human	P30048	PRDX3	P30048	7	315	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
-PEROXIREDOXIN	human	Q13162	PRDX4	Q13162	12	257	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
-PEROXIREDOXIN	worm	A0A0K3AUJ9	prdx-2	A0A0K3AUJ9	0	44	Peroxiredoxin prdx-2	w
+PEROXIREDOXIN	fly	FBgn0038519	Prx3	Q9VEJ0	3	29	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
+PEROXIREDOXIN	fly	FBgn0040308	Prx4	Q9V3Q4	12	302	thioredoxin-dependent peroxiredoxin (EC 1.11.1.24)	w
+PEROXIREDOXIN	fly	FBgn0040309	Prx2	Q9V3P0	6	147	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
+PEROXIREDOXIN	human	P30041	PRDX6	P30041	14	333	Peroxiredoxin-6 (EC 1.11.1.27) (1-Cys peroxiredoxin) (1-Cys 	w
+PEROXIREDOXIN	human	P30044	PRDX5	P30044	17	262	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepress	w
+PEROXIREDOXIN	human	P30048	PRDX3	P30048	9	317	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
+PEROXIREDOXIN	human	Q13162	PRDX4	Q13162	17	262	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
+PEROXIREDOXIN	worm	A0A0K3AUJ9	prdx-2	A0A0K3AUJ9	2	46	Peroxiredoxin prdx-2	w
 PEROXIREDOXIN	worm	Q18145	C25A8.1	Q18145	0	1	Peroxiredoxin	w
-PEROXIREDOXIN	worm	Q21824	prdx-3	Q21824	0	57	Probable peroxiredoxin prdx-3	w
-PEROXIREDOXIN	yeast	P34227	PRX1	P34227	0	28	Peroxiredoxin PRX1, mitochondrial	w
-PEROXIREDOXIN	yeast	P34760	TSA1	P34760	1	108	Peroxiredoxin TSA1	w
+PEROXIREDOXIN	worm	Q21824	prdx-3	Q21824	2	59	Probable peroxiredoxin prdx-3	w
+PEROXIREDOXIN	yeast	P34227	PRX1	P34227	1	29	Peroxiredoxin PRX1, mitochondrial	w
+PEROXIREDOXIN	yeast	P34760	TSA1	P34760	3	110	Peroxiredoxin TSA1	w
 PEROXIREDOXIN	yeast	P36014	GPX1	P36014	0	6	Glutathione peroxidase-like peroxiredoxin 1	w
-PEROXIREDOXIN	yeast	P38013	AHP1	P38013	0	42	Peroxiredoxin AHP1	w
+PEROXIREDOXIN	yeast	P38013	AHP1	P38013	1	43	Peroxiredoxin AHP1	w
 PEROXIREDOXIN	yeast	P38143	GPX2	P38143	1	16	Glutathione peroxidase-like peroxiredoxin 2	w
 PEROXIREDOXIN	yeast	P40553	DOT5	P40553	1	9	Peroxiredoxin DOT5	w
 PEROXIREDOXIN	yeast	P40581	HYR1	P40581	1	30	Glutathione peroxidase-like peroxiredoxin HYR1	w
@@ -402,13 +402,14 @@ PEROXIREDOXIN	yeast	Q04120	TSA2	Q04120	1	27	Peroxiredoxin TSA2	w
 PEROXIREDOXIN-1	human	Q06830	PRDX1	Q06830	10	487	Peroxiredoxin-1 (EC 1.11.1.24) (Natural killer cell-enhancin	w
 PEROXIREDOXIN-1	zebrafish	A2AWE1	prdx1	A2AWE1	1	59	Peroxiredoxin-1	w
 PEROXIREDOXIN-1	zebrafish	Q6DGJ6	prdx2	Q6DGJ6	1	56	Peroxiredoxin-1	w
-PEROXIREDOXIN-2	human	P32119	PRDX2	P32119	9	445	Peroxiredoxin-2 (EC 1.11.1.24) (Natural killer cell-enhancin	w
-PEROXIREDOXIN-3	human	P30048	PRDX3	P30048	7	315	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
-PEROXIREDOXIN-4	human	Q13162	PRDX4	Q13162	12	257	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
-PEROXIREDOXIN-5	fly	FBgn0038570	Prx5	Q960M4	2	27	Peroxiredoxin-5 (EC 1.11.1.24)	w
-PEROXIREDOXIN-5	human	P30044	PRDX5	P30044	15	260	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepress	w
-PEROXIREDOXIN-6	human	P30041	PRDX6	P30041	8	327	Peroxiredoxin-6 (EC 1.11.1.27) (1-Cys peroxiredoxin) (1-Cys 	w
-PEROXIREDOXIN-6	zebrafish	Q6PBK9	prdx6	Q6PBK9	0	30	Peroxiredoxin-6	w
+PEROXIREDOXIN-2	human	P32119	PRDX2	P32119	13	449	Peroxiredoxin-2 (EC 1.11.1.24) (Natural killer cell-enhancin	w
+PEROXIREDOXIN-3	human	P30048	PRDX3	P30048	9	317	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
+PEROXIREDOXIN-4	human	Q13162	PRDX4	Q13162	17	262	Peroxiredoxin-4 (EC 1.11.1.24) (Antioxidant enzyme AOE372) (	w
+PEROXIREDOXIN-5	fly	FBgn0038570	Prx5	Q960M4	5	29	Peroxiredoxin-5 (EC 1.11.1.24)	w
+PEROXIREDOXIN-5	human	P30044	PRDX5	P30044	17	262	Peroxiredoxin-5, mitochondrial (EC 1.11.1.24) (Alu corepress	w
+PEROXIREDOXIN-5	zebrafish	Q502C8	zgc:112318	Q502C8	2	2	Peroxiredoxin-5	w
+PEROXIREDOXIN-6	human	P30041	PRDX6	P30041	14	333	Peroxiredoxin-6 (EC 1.11.1.27) (1-Cys peroxiredoxin) (1-Cys 	w
+PEROXIREDOXIN-6	zebrafish	Q6PBK9	prdx6	Q6PBK9	2	32	Peroxiredoxin-6	w
 PEROXIREDOXIN-LIKE	human	Q7RTV5	PRXL2C	Q7RTV5	9	95	Peroxiredoxin-like 2C (AhpC/TSA antioxidant enzyme domain-co	w
 PEROXIREDOXIN-LIKE	human	Q8TBF2	PRXL2B	Q8TBF2	1	37	Prostamide/prostaglandin F synthase (PM/PGFS) (Prostamide/PG	w
 PEROXIREDOXIN-LIKE	human	Q9BRX8	PRXL2A	Q9BRX8	4	128	Peroxiredoxin-like 2A (Peroxiredoxin-like 2 activated in M-C	w
@@ -426,7 +427,7 @@ PEROXISOMAL	human	H0YJ60	?	H0YJ60	0	15	Peroxisomal biogenesis factor 19	w
 PEROXISOMAL	human	O00116	AGPS	O00116	14	198	Alkyldihydroxyacetonephosphate synthase, peroxisomal (Alkyl-	w
 PEROXISOMAL	human	O00628	PEX7	O00628	9	92	Peroxisomal targeting signal 2 receptor (PTS2 receptor) (Per	w
 PEROXISOMAL	human	O14678	ABCD4	O14678	2	81	Lysosomal cobalamin transporter ABCD4 (EC 7.6.2.8) (ATP-bind	w
-PEROXISOMAL	human	O14832	PHYH	O14832	9	70	Phytanoyl-CoA dioxygenase, peroxisomal (EC 1.14.11.18) (Phyt	w
+PEROXISOMAL	human	O14832	PHYH	O14832	18	79	Phytanoyl-CoA dioxygenase, peroxisomal (EC 1.14.11.18) (Phyt	w
 PEROXISOMAL	human	O15254	ACOX3	O15254	6	76	Peroxisomal acyl-coenzyme A oxidase 3 (EC 1.3.3.6) (Branched	w
 PEROXISOMAL	human	O43808	SLC25A17	O43808	0	125	Peroxisomal membrane protein PMP34 (34 kDa peroxisomal membr	w
 PEROXISOMAL	human	O43933	PEX1	O43933	12	113	Peroxisomal ATPase PEX1 (EC 3.6.4.-) (Peroxin-1) (Peroxisome	w
@@ -440,14 +441,14 @@ PEROXISOMAL	human	P28288	ABCD3	P28288	4	241	ATP-binding cassette sub-family D me
 PEROXISOMAL	human	P28328	PEX2	P28328	4	126	Peroxisome biogenesis factor 2 (EC 2.3.2.27) (EC 2.3.2.36) (	w
 PEROXISOMAL	human	P40855	PEX19	P40855	25	197	Peroxisomal biogenesis factor 19 (33 kDa housekeeping protei	w
 PEROXISOMAL	human	P50542	PEX5	P50542	92	219	Peroxisomal targeting signal 1 receptor (PTS1 receptor) (PTS	w
-PEROXISOMAL	human	P51659	HSD17B4	P51659	3	195	Peroxisomal multifunctional enzyme type 2 (MFE-2) (17-beta-h	w
+PEROXISOMAL	human	P51659	HSD17B4	P51659	3	196	Peroxisomal multifunctional enzyme type 2 (MFE-2) (17-beta-h	w
 PEROXISOMAL	human	P56589	PEX3	P56589	14	218	Peroxisomal biogenesis factor 3 (Peroxin-3) (Peroxisomal ass	w
-PEROXISOMAL	human	Q08426	EHHADH	Q08426	7	290	Peroxisomal bifunctional enzyme (PBE) (PBFE) (L-bifunctional	w
+PEROXISOMAL	human	Q08426	EHHADH	Q08426	12	295	Peroxisomal bifunctional enzyme (PBE) (PBFE) (L-bifunctional	w
 PEROXISOMAL	human	Q13608	PEX6	Q13608	6	142	Peroxisomal ATPase PEX6 (EC 3.6.4.-) (Peroxin-6) (Peroxisoma	w
 PEROXISOMAL	human	Q15067	ACOX1	Q15067	6	105	Peroxisomal acyl-coenzyme A oxidase 1 (AOX) (EC 1.3.3.6) (Pa	w
 PEROXISOMAL	human	Q2T9J0	TYSND1	Q2T9J0	5	47	Peroxisomal leader peptide-processing protease (EC 3.4.21.-)	w
 PEROXISOMAL	human	Q5I0X4	PEX39	Q5I0X4	3	30	Peroxisomal biogenesis factor 39 (Peroxin-39)	w
-PEROXISOMAL	human	Q6IAN0	DHRS7B	Q6IAN0	16	154	Peroxisomal reductase activating PPAR-gamma (PexRAP) (EC 1.1	w
+PEROXISOMAL	human	Q6IAN0	DHRS7B	Q6IAN0	18	156	Peroxisomal reductase activating PPAR-gamma (PexRAP) (EC 1.1	w
 PEROXISOMAL	human	Q6QHF9	PAOX	Q6QHF9	1	16	Peroxisomal N(1)-acetyl-spermine/spermidine oxidase (EC 1.5.	w
 PEROXISOMAL	human	Q86UB9	TMEM135	Q86UB9	1	15	Transmembrane protein 135 (Peroxisomal membrane protein 52) 	w
 PEROXISOMAL	human	Q86WA8	LONP2	Q86WA8	4	86	Lon protease homolog 2, peroxisomal (EC 3.4.21.53) (Lon prot	w
@@ -457,11 +458,11 @@ PEROXISOMAL	human	Q92968	PEX13	Q92968	3	104	Peroxisomal membrane protein PEX13 (
 PEROXISOMAL	human	Q96HA9	PEX11G	Q96HA9	3	21	Peroxisomal membrane protein 11C (Peroxin-11C) (Peroxisomal 	w
 PEROXISOMAL	human	Q99424	ACOX2	Q99424	4	34	Peroxisomal acyl-coenzyme A oxidase 2 (EC 1.3.3.6) (3-alpha,	w
 PEROXISOMAL	human	Q9BY49	PECR	Q9BY49	4	87	Peroxisomal trans-2-enoyl-CoA reductase (TERP) (EC 1.3.1.38)	w
-PEROXISOMAL	human	Q9NR77	PXMP2	Q9NR77	15	316	Peroxisomal membrane protein 2 (22 kDa peroxisomal membrane 	w
+PEROXISOMAL	human	Q9NR77	PXMP2	Q9NR77	19	320	Peroxisomal membrane protein 2 (22 kDa peroxisomal membrane 	w
 PEROXISOMAL	human	Q9NUI1	DECR2	Q9NUI1	6	103	Peroxisomal 2,4-dienoyl-CoA reductase [(3E)-enoyl-CoA-produc	w
-PEROXISOMAL	human	Q9NYQ3	HAO2	Q9NYQ3	3	58	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	w
+PEROXISOMAL	human	Q9NYQ3	HAO2	Q9NYQ3	4	59	2-Hydroxyacid oxidase 2 (HAOX2) (EC 1.1.3.15) ((S)-2-hydroxy	w
 PEROXISOMAL	human	Q9P0Z9	PIPOX	Q9P0Z9	5	60	Peroxisomal sarcosine oxidase (PSO) (EC 1.5.3.1) (EC 1.5.3.7	w
-PEROXISOMAL	human	Q9UKG9	CROT	Q9UKG9	2	36	Peroxisomal carnitine O-octanoyltransferase (COT) (EC 2.3.1.	w
+PEROXISOMAL	human	Q9UKG9	CROT	Q9UKG9	5	39	Peroxisomal carnitine O-octanoyltransferase (COT) (EC 2.3.1.	w
 PEROXISOMAL	human	Q9Y5Y5	PEX16	Q9Y5Y5	5	94	Peroxisomal membrane protein PEX16 (Peroxin-16) (Peroxisomal	w
 PEROXISOMAL	human	Q9Y6I8	PXMP4	Q9Y6I8	0	36	Peroxisomal membrane protein 4 (24 kDa peroxisomal intrinsic	w
 PEROXISOMAL	worm	G5ED99	prx-1	G5ED99	1	15	Peroxisomal ATPase PEX1	w
@@ -514,6 +515,7 @@ PEROXISOMAL	yeast	Q12462	PEX11	Q12462	1	47	Peroxisomal membrane protein PMP27	w
 PEROXISOMAL	yeast	Q12524	PCD1	Q12524	0	17	Peroxisomal coenzyme A diphosphatase 1, peroxisomal	w
 PEROXISOMAL	zebrafish	A0A8M1N5G7	phyh	A0A8M1N5G7	0	6	Phytanoyl-CoA dioxygenase, peroxisomal	w
 PEROXISOMAL	zebrafish	A0A8M1P8J4	pipox	A0A8M1P8J4	0	17	Peroxisomal sarcosine oxidase	w
+PEROXISOMAL	zebrafish	A0A8M9PQQ8	hsd17b4	A0A8M9PQQ8	0	1	peroxisomal multifunctional enzyme type 2 isoform X1	w
 PEROXISOMAL	zebrafish	A0A8M9Q6D0	acot16	A0A8M9Q6D0	0	5	Peroxisomal succinyl-coenzyme A thioesterase-like isoform X4	w
 PEROXISOMAL	zebrafish	A0AB32T829	crot	A0AB32T829	0	3	Peroxisomal carnitine O-octanoyltransferase	w
 PEROXISOMAL	zebrafish	A3QJY9	pex11a	A3QJY9	1	16	Peroxisomal biogenesis factor 11 alpha	w
@@ -526,9 +528,10 @@ PEROXISOMAL	zebrafish	Q0P453	pex11b	Q0P453	1	16	Peroxisomal biogenesis factor 11
 PEROXISOMAL	zebrafish	Q4QRH7	pex16	Q4QRH7	0	1	Peroxisomal membrane protein PEX16	w
 PEROXISOMAL	zebrafish	Q567C7	pecr	Q567C7	0	35	Peroxisomal trans-2-enoyl-CoA reductase	w
 PEROXISOMAL	zebrafish	Q5PQY6	lonp2	Q5PQY6	0	15	Lon protease homolog 2, peroxisomal	w
-PEROXISOMAL	zebrafish	Q6GQN6	acaa1	Q6GQN6	1	34	3-ketoacyl-CoA thiolase, peroxisomal	w
+PEROXISOMAL	zebrafish	Q66HU7	pxmp2	Q66HU7	0	1	Peroxisomal membrane protein 2	w
+PEROXISOMAL	zebrafish	Q6GQN6	acaa1	Q6GQN6	3	36	3-ketoacyl-CoA thiolase, peroxisomal	w
 PEROXISOMAL	zebrafish	Q6NV34	decr2	Q6NV34	0	35	Peroxisomal 2,4-dienoyl-CoA reductase	w
-PEROXISOMAL	zebrafish	Q6NYL3	ehhadh	Q6NYL3	1	130	Peroxisomal bifunctional enzyme	w
+PEROXISOMAL	zebrafish	Q6NYL3	ehhadh	Q6NYL3	2	131	Peroxisomal bifunctional enzyme	w
 PEROXISOMAL	zebrafish	Q6PFQ3	pex13	Q6PFQ3	0	82	Peroxisomal membrane protein PEX13	w
 PEROXISOMAL	zebrafish	Q8AYH1	hsd17b4	Q8AYH1	0	14	Peroxisomal multifunctional enzyme type 2	w
 PEROXISOMAL-TYPE	human	Q13608	PEX6	Q13608	6	142	Peroxisomal ATPase PEX6 (EC 3.6.4.-) (Peroxin-6) (Peroxisoma	w
@@ -584,7 +587,7 @@ PERSEPHIN	human	O60542	PSPN	O60542	12	108	Persephin (PSP)	w
 PERSEPHIN	human	Q9GZZ7	GFRA4	Q9GZZ7	8	51	GDNF family receptor alpha-4 (GDNF receptor alpha-4) (GDNFR-	w
 PERSEPHONE	fly	FBgn0030926	psh	Q9VWU1	42	248	Serine protease persephone (EC 3.4.21.-)	w
 PERSISTENT	fly	FBgn0035617	l(3)psg2	Q9VRM6	0	3	Lethal (3) persistent salivary gland 2	w
-PERSULFIDE	human	O95571	ETHE1	O95571	1	90	Persulfide dioxygenase ETHE1, mitochondrial (EC 1.13.11.18) 	w
+PERSULFIDE	human	O95571	ETHE1	O95571	4	93	Persulfide dioxygenase ETHE1, mitochondrial (EC 1.13.11.18) 	w
 PERSYN	human	O76070	SNCG	O76070	15	249		
 PERT_HUMAN	human	P07202	TPO	P07202	4	73		
 PERV-A	human	Q9HAB3	SLC52A2	Q9HAB3	4	192	Solute carrier family 52, riboflavin transporter, member 2 (	w

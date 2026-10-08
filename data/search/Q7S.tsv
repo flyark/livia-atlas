@@ -12,6 +12,7 @@ Q7SX95	zebrafish	Q7SX95	mxd3	Q7SX95	7	16	Max dimerization protein 3
 Q7SX99	zebrafish	Q7SX99	fh	Q7SX99	0	37	Fumarate hydratase, mitochondrial	
 Q7SXA1	zebrafish	Q7SXA1	rpl26	Q7SXA1	16	662	Ribosomal protein L26	
 Q7SXA3	zebrafish	Q7SXA3	rps27a	Q7SXA3	140	1114	Ubiquitin-ribosomal protein eS31 fusion protein	
+Q7SXA6	xenopus-laevis	Q7SXA6	FRIH3	Q7SXA6	2	2	Ferritin heavy chain, oocyte isoform	
 Q7SXA9	zebrafish	Q7SXA9	mus81	Q7SXA9	6	113	Structure-specific endonuclease subunit MUS81	
 Q7SXB3	zebrafish	Q7SXB3	pik3ip1	Q7SXB3	0	5	Phosphoinositide-3-kinase-interacting protein 1	
 Q7SXB5	zebrafish	Q7SXB5	phf23b	Q7SXB5	3	19	PHD finger protein 23B	
@@ -20,14 +21,20 @@ Q7SXC6	zebrafish	Q7SXC6	zgc:66447	Q7SXC6	8	94	SLAIN motif-containing protein-lik
 Q7SXD1	zebrafish	Q7SXD1	trabd	Q7SXD1	1	29	TraB domain-containing	
 Q7SXE4	zebrafish	Q7SXE4	golga5	Q7SXE4	6	10	Golgin subfamily A member 5	
 Q7SXE8	zebrafish	Q7SXE8	cdk9	Q7SXE8	18	128	Cyclin-dependent kinase 9 (EC 2.7.11.22) (EC 2.7.11.23) (Cel	
-Q7SXE9	zebrafish	Q7SXE9	ndufa11	Q7SXE9	1	98	NADH dehydrogenase	
+Q7SXE9	zebrafish	Q7SXE9	ndufa11	Q7SXE9	2	98	NADH dehydrogenase	
+Q7SXE9_DANRE	zebrafish	Q7SXE9	ndufa11	Q7SXE9	2	98		
 Q7SXF1	zebrafish	Q7SXF1	dhcr7	Q7SXF1	3	31	7-dehydrocholesterol reductase	
 Q7SXF6	zebrafish	Q7SXF6	creld2	Q7SXF6	0	3	Cysteine-rich with EGF-like domain protein 2	
 Q7SXG4	zebrafish	Q7SXG4	uba2	Q7SXG4	22	102	SUMO-activating enzyme subunit 2	
+Q7SXG8	zebrafish	Q7SXG8	SerRS2	Q7SXG8	1	1	serine--tRNA ligase	
+Q7SXG8_DANRE	zebrafish	Q7SXG8	SerRS2	Q7SXG8	1	1		
 Q7SXH5	zebrafish	Q7SXH5	ube2d1a	Q7SXH5	48	124	E2 ubiquitin-conjugating enzyme	
 Q7SXI1	zebrafish	Q7SXI1	cox7a2l	Q7SXI1	12	80	Cytochrome c oxidase subunit 7A2-like, mitochondrial	
+Q7SXI1_DANRE	zebrafish	Q7SXI1	cox7a2l	Q7SXI1	12	80		
 Q7SXI4	zebrafish	Q7SXI4	zfand2a	Q7SXI4	8	22	AN1-type zinc finger protein 2A	
 Q7SXI6	zebrafish	Q7SXI6	ndel1a	Q7SXI6	4	47	Nuclear distribution protein nudE-like 1-A	
+Q7SXJ4	zebrafish	Q7SXJ4	zgc:66262	Q7SXJ4	0	1	3-hydroxyisobutyrate dehydrogenase	
+Q7SXJ4_DANRE	zebrafish	Q7SXJ4	zgc:66262	Q7SXJ4	0	1		
 Q7SXJ6	zebrafish	Q7SXJ6	rnf25	Q7SXJ6	13	18	E3 ubiquitin-protein ligase RNF25	
 Q7SXL3	zebrafish	Q7SXL3	tbp	Q7SXL3	42	293	TATA-box-binding protein	
 Q7SXL4	zebrafish	Q7SXL4	nme2b.2	Q7SXL4	5	143	Nucleoside diphosphate kinase	
@@ -37,7 +44,7 @@ Q7SXM1	zebrafish	Q7SXM1	cox6b2	Q7SXM1	3	99	Cytochrome c oxidase subunit
 Q7SXM7	zebrafish	Q7SXM7	prpf31	Q7SXM7	10	107	U4/U6 small nuclear ribonucleoprotein Prp31	
 Q7SXN2	zebrafish	Q7SXN2	hnrnpdl	Q7SXN2	5	128	Heterogeneous nuclear ribonucleoprotein D-like	
 Q7SXN4	zebrafish	Q7SXN4	cpeb4	Q7SXN4	3	21	Cytoplasmic polyadenylation element-binding protein 4	
-Q7SXN5	zebrafish	Q7SXN5	dnm1l	Q7SXN5	1	54	Dynamin-1-like protein	
+Q7SXN5	zebrafish	Q7SXN5	dnm1l	Q7SXN5	4	58	Dynamin-1-like protein	
 Q7SXN6	zebrafish	Q7SXN6	psma6a	Q7SXN6	3	87	Proteasome subunit alpha type	
 Q7SXP0	zebrafish	Q7SXP0	sec22bb	Q7SXP0	19	123	Vesicle-trafficking protein SEC22b-B	
 Q7SXP1	zebrafish	Q7SXP1	capzb	Q7SXP1	14	83	F-actin-capping protein subunit beta	
@@ -82,6 +89,8 @@ Q7SY32	zebrafish	Q7SY32	plppr2a	Q7SY32	2	58	Phospholipid phosphatase-related pro
 Q7SY41	zebrafish	Q7SY41	dnajc24	Q7SY41	2	89	DnaJ (Hsp40) homolog, subfamily C, member 24	
 Q7SY45	zebrafish	Q7SY45	vti1b	Q7SY45	21	86	Vesicle transport through interaction with t-SNAREs 1B	
 Q7SY49	zebrafish	Q7SY49	camkv	Q7SY49	1	1	CaM kinase-like vesicle-associated protein	
+Q7SY50	zebrafish	Q7SY50	zgc:63505	Q7SY50	1	1	Zgc:63505	
+Q7SY50_DANRE	zebrafish	Q7SY50	zgc:63505	Q7SY50	1	1		
 Q7SY52	zebrafish	Q7SY52	stk10	Q7SY52	4	43	Serine/threonine-protein kinase 10 (EC 2.7.11.1)	
 Q7SY53	zebrafish	Q7SY53	tdo2b	Q7SY53	1	3	Tryptophan 2,3-dioxygenase B	
 Q7SY56	zebrafish	Q7SY56	rrad	Q7SY56	2	44	GTP-binding protein	
@@ -99,16 +108,19 @@ Q7SYJ3	zebrafish	Q7SYJ3	zbtb14	Q7SYJ3	0	4	Zgc:66442
 Q7SYJ6	zebrafish	Q7SYJ6	cyp11a1.1	Q7SYJ6	3	14	Cholesterol side-chain cleavage enzyme, mitochondrial	
 Q7SYJ9	zebrafish	Q7SYJ9	spag7	Q7SYJ9	0	6	Sperm-associated antigen 7 homolog	
 Q7SYK0	zebrafish	Q7SYK0	chid1	Q7SYK0	0	71	Chitinase domain-containing protein 1	
-Q7SYK1	zebrafish	Q7SYK1	qtrt1	Q7SYK1	1	1	Queuine tRNA-ribosyltransferase catalytic subunit 1	
+Q7SYK1	zebrafish	Q7SYK1	qtrt1	Q7SYK1	1	2	Queuine tRNA-ribosyltransferase catalytic subunit 1	
 Q7SYK5	zebrafish	Q7SYK5	itm2cb	Q7SYK5	0	3	Integral membrane protein 2	
 Q7SYK6	zebrafish	Q7SYK6	arfip1	Q7SYK6	2	10	ADP-ribosylation factor-interacting protein 1 (arfaptin 1)	
-Q7SYK7	zebrafish	Q7SYK7	got2a	Q7SYK7	4	45	Aspartate aminotransferase, mitochondrial	
+Q7SYK7	zebrafish	Q7SYK7	got2a	Q7SYK7	8	49	Aspartate aminotransferase, mitochondrial	
 Q7SYL1	zebrafish	Q7SYL1	arl2bp	Q7SYL1	0	2	ADP-ribosylation factor-like protein 2-binding protein	
 Q7SYL3	zebrafish	Q7SYL3	siah2l	Q7SYL3	8	32	E3 ubiquitin-protein ligase Siah2	
 Q7SYM0	zebrafish	Q7SYM0	uck2a	Q7SYM0	5	27	Uridine-cytidine kinase 2-A	
 Q7SYM1	zebrafish	Q7SYM1	foxk1	Q7SYM1	3	8	Forkhead box K1	
 Q7SYN4	zebrafish	Q7SYN4	nt5c3	Q7SYN4	0	8	Cytosolic 5'-nucleotidase 3	
 Q7SYN5	zebrafish	Q7SYN5	rxrba	Q7SYN5	15	31	Retinoic acid receptor RXR-beta-A	
+Q7SYR2	xenopus-laevis	Q7SYR2	acaa1.L	Q7SYR2	3	3	3-ketoacyl-CoA thiolase, peroxisomal	
+Q7SYT1	xenopus-laevis	Q7SYT1	prdx6.L	Q7SYT1	4	5	Peroxiredoxin-6	
+Q7SYW4	xenopus-laevis	Q7SYW4	idh2.S	Q7SYW4	3	3	Isocitrate dehydrogenase [NADP]	
 Q7SZ49	zebrafish	Q7SZ49	sdr16c5b	Q7SZ49	2	10	Epidermal retinol dehydrogenase 2	
 Q7SZ58	zebrafish	Q7SZ58	coro6	Q7SZ58	2	8	Coronin	
 Q7SZ59	zebrafish	Q7SZ59	RASL12	Q7SZ59	0	13	Ras-like protein family member 12	

@@ -54,6 +54,7 @@ O01497	worm	O01497	tyr-4	O01497	0	4	ShKT domain-containing protein
 O01498	worm	O01498	stam-1	O01498	22	150	Signal transducing adapter molecule 1 (STAM-1) (Prion-like-(	
 O01501	worm	O01501	cye-1	O01501	12	52	G1/S-specific cyclin-E	
 O01502	worm	O01502	acdh-5	O01502	1	2	Medium-chain acyl-CoA dehydrogenase	
+O01503	worm	O01503	C37A2.6	O01503	3	3	Electron transfer flavoprotein beta subunit lysine methyltra	
 O01504	worm	O01504	rplp-2.1	O01504	3	143	Large ribosomal subunit protein P2	
 O01505	worm	O01505	pqn-20	O01505	10	93	Prion-like-(Q/N-rich)-domain-bearing protein	
 O01506	worm	O01506	C37A2.8	O01506	0	22	Coiled-coil domain-containing protein 174	
@@ -92,7 +93,8 @@ O01583	worm	O01583	mrck-1	O01583	4	23	Serine/threonine-protein kinase mrck-1 (EC
 O01584	worm	O01584	CELE_K08B12.1	O01584	0	1	Fungal lipase-like domain-containing protein	
 O01585	worm	O01585	rga-3	O01585	4	7	Rho-GAP domain-containing protein	
 O01589	worm	O01589	CELE_K09H11.6	O01589	0	1	MARVEL domain-containing protein	
-O01590	worm	O01590	acds-10	O01590	0	23	Acyl-CoA dehydrogenase family member 11	
+O01590	worm	O01590	acds-10	O01590	5	28	Acyl-CoA dehydrogenase family member 11	
+O01590_CAEEL	worm	O01590	acds-10	O01590	5	28		
 O01592	worm	O01592	cysl-3	O01592	0	7	Cysteine synthase 3	
 O01593	worm	O01593	rips-1	O01593	3	11	Methyltransferase domain-containing protein	
 O01594	worm	O01594	CELE_R08E5.1	O01594	1	6	Methyltransferase domain-containing protein	
@@ -118,7 +120,7 @@ O01635	worm	O01635	asic-1	O01635	14	20	Degenerin-like protein asic-1
 O01658	worm	O01658	jmjc-1	O01658	0	4	Bifunctional lysine-specific demethylase and histidyl-hydrox	
 O01661	worm	O01661	ccb-1	O01661	0	10	Guanylate kinase/L-type calcium channel beta subunit domain-	
 O01664	worm	O01664	acd-5	O01664	9	16	DEgenerin Like	
-O01666	fly	FBgn0020235	ATPsyngamma	O01666	17	129	ATP synthase subunit gamma, mitochondrial (F-ATPase gamma su	
+O01666	fly	FBgn0020235	ATPsyngamma	O01666	18	130	ATP synthase subunit gamma, mitochondrial (F-ATPase gamma su	
 O01668	fly	FBgn0019940	Rh6	O01668	4	14	Rhodopsin 6	
 O01681	worm	O01681	C32F10.4	O01681	0	1	Uncharacterized protein	
 O01683	worm	O01683	hmg-3	O01683	15	151	FACT complex subunit ssrp1-B	
@@ -158,13 +160,14 @@ O01800	worm	O01800	CELE_F53G12.8	O01800	0	1	Uncharacterized protein
 O01802	worm	O01802	rpl-7	O01802	9	252	Large ribosomal subunit protein uL30	
 O01803	worm	O01803	rab-11.1	O01803	25	85	Ras-related protein rab-11.1	
 O01804	worm	O01804	got-2.1	O01804	3	20	Aspartate aminotransferase	
-O01805	worm	O01805	acbp-1	O01805	3	46	Acyl-CoA-binding protein homolog 1	
+O01805	worm	O01805	acbp-1	O01805	4	47	Acyl-CoA-binding protein homolog 1	
 O01806	worm	O01806	ssb-1	O01806	4	24	Lupus La protein	
 O01811	worm	O01811	mec-6	O01811	4	9	Mechanosensory abnormality protein 6	
 O01812	worm	O01812	lbp-6	O01812	8	62	Fatty acid-binding protein homolog 6	
 O01813	worm	O01813	ant-1.2	O01813	0	28	ADP/ATP translocase	
 O01814	worm	O01814	lbp-5	O01814	3	7	Fatty acid-binding protein homolog 5	
-O01815	worm	O01815	dhod-1	O01815	0	7	Dihydroorotate dehydrogenase (quinone), mitochondrial	
+O01815	worm	O01815	dhod-1	O01815	2	9	Dihydroorotate dehydrogenase (quinone), mitochondrial	
+O01815_CAEEL	worm	O01815	dhod-1	O01815	2	9		
 O01816	worm	O01816	cytb-5.2	O01816	0	18	Cytochrome b5 heme-binding domain-containing protein	
 O01818	worm	O01818	CELE_F57C9.6	O01818	0	21	G-protein coupled receptors family 1 profile domain-containi	
 O01819	worm	O01819	tofu-4	O01819	1	18	Twenty One u-rna (21U-RNA) biogenesis Fouled Up	
@@ -196,7 +199,7 @@ O01876	worm	O01876	pqn-24	O01876	4	102	Prion-like-(Q/N-rich)-domain-bearing prot
 O01881	worm	O01881	CELE_K07B1.4	O01881	0	4	Acyltransferase	
 O01882	worm	O01882	acl-14	O01882	1	7	Phospholipid/glycerol acyltransferase domain-containing prot	
 O01883	worm	O01883	ucp-4	O01883	0	1	UnCoupling Protein (Mitochondrial substrate carrier)	
-O01884	worm	O01884	coq-6	O01884	3	13	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial	
+O01884	worm	O01884	coq-6	O01884	4	14	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial	
 O01887	worm	O01887	try-5	O01887	0	2	Trypsin-like protease try-5	
 O01888	worm	O01888	srw-7	O01888	0	3	G-protein coupled receptors family 1 profile domain-containi	
 O01889	worm	O01889	CELE_R08F11.4	O01889	1	7	Methyltransferase domain-containing protein	

@@ -3,7 +3,7 @@ P38-INTERACTING	human	Q8NEM7	SUPT20H	Q8NEM7	28	169	Transcription factor SPT20 ho
 P38-REGULATED	human	Q8IW41	MAPKAPK5	Q8IW41	305	1317	MAP kinase-activated protein kinase 5 (MAPK-activated protei	w
 P38009	yeast	P38009	ADE17	P38009	1	53	Bifunctional purine biosynthesis protein ADE17	
 P38011	yeast	P38011	ASC1	P38011	42	720	Small ribosomal subunit protein RACK1	
-P38013	yeast	P38013	AHP1	P38013	0	42	Peroxiredoxin AHP1	
+P38013	yeast	P38013	AHP1	P38013	1	43	Peroxiredoxin AHP1	
 P38014	mycobacterium-leprae	P38014	rplM	P38014	6	167	Large ribosomal subunit protein uL13	
 P38025	arabidopsis-thaliana	P38025	PUR7	P38025	0	7	Phosphoribosylaminoimidazole-succinocarboxamide synthase, ch	
 P38036	escherichia-coli-83333	P38036	ygcB	P38036	2	14	CRISPR-associated endonuclease/helicase Cas3	
@@ -16,23 +16,23 @@ P38051	escherichia-coli-83333	P38051	menF	P38051	0	1	Isochorismate synthase MenF
 P38052	escherichia-coli-83333	P38052	sfmF	P38052	16	18	Uncharacterized fimbrial-like protein SfmF	
 P38054	escherichia-coli-83333	P38054	cusA	P38054	0	5	Cation efflux system protein CusA	
 P38056	mycobacterium-leprae	P38056	alr	P38056	0	10	Alanine racemase	
-P38060	mus-musculus	P38060	Hmgcl	P38060	2	17	Hydroxymethylglutaryl-CoA lyase, mitochondrial	
+P38060	mus-musculus	P38060	Hmgcl	P38060	3	18	Hydroxymethylglutaryl-CoA lyase, mitochondrial	
 P38061	yeast	P38061	RPL32	P38061	10	329	Large ribosomal subunit protein eL32	
 P38062	rattus-norvegicus	P38062	Metap2	P38062	16	268	Methionine aminopeptidase 2	
 P38063	yeast	P38063	PRS4	P38063	4	13	Ribose-phosphate pyrophosphokinase 4	
 P38064	yeast	P38064	MRPL16	P38064	16	302	Large ribosomal subunit protein uL16m	
 P38065	yeast	P38065	APL3	P38065	13	66	AP-2 complex subunit alpha	
 P38066	yeast	P38066	RIB1	P38066	1	5	GTP cyclohydrolase-2	
-P38067	yeast	P38067	UGA2	P38067	0	7	Succinate-semialdehyde dehydrogenase	
+P38067	yeast	P38067	UGA2	P38067	1	8	Succinate-semialdehyde dehydrogenase	
 P38068	yeast	P38068	GRX7	P38068	3	13	Monothiol glutaredoxin-7	
 P38069	yeast	P38069	MNN2	P38069	0	9	Alpha-1,2-mannosyltransferase MNN2	
 P38070	yeast	P38070	YPK3	P38070	3	31	Serine/threonine-protein kinase YPK3 (EC 2.7.11.1) (Ribosoma	
-P38071	yeast	P38071	ETR1	P38071	0	16	Enoyl-	
+P38071	yeast	P38071	ETR1	P38071	1	17	Enoyl-	
 P38072	yeast	P38072	SCO2	P38072	3	14	Protein SCO2, mitochondrial	
 P38073	yeast	P38073	EDS1	P38073	0	6	Transcriptional regulatory protein EDS1	
 P38074	yeast	P38074	HMT1	P38074	3	187	Protein arginine N-methyltransferase 1	
 P38075	yeast	P38075	PDX3	P38075	2	11	Pyridoxamine 5'-phosphate oxidase	
-P38077	yeast	P38077	ATP3	P38077	6	97	ATP synthase subunit gamma, mitochondrial	
+P38077	yeast	P38077	ATP3	P38077	7	98	ATP synthase subunit gamma, mitochondrial	
 P38079	yeast	P38079	YRO2	P38079	1	9	Protein YRO2	
 P38080	yeast	P38080	AKL1	P38080	5	44	Serine/threonine-protein kinase AKL1	
 P38081	yeast	P38081	YBR056W	P38081	0	5	Uncharacterized glycosyl hydrolase YBR056W	
@@ -42,7 +42,7 @@ P38084	yeast	P38084	BAP2	P38084	0	21	Leu/Val/Ile amino-acid permease
 P38085	yeast	P38085	TAT1	P38085	1	28	Valine/tyrosine/tryptophan amino-acid permease 1	
 P38086	yeast	P38086	RDH54	P38086	3	46	DNA repair and recombination protein RDH54	
 P38087	yeast	P38087	YMC2	P38087	0	3	Carrier protein YMC2, mitochondrial	
-P38088	yeast	P38088	GRS1	P38088	1	50	Glycine--tRNA ligase 1, mitochondrial	
+P38088	yeast	P38088	GRS1	P38088	2	51	Glycine--tRNA ligase 1, mitochondrial	
 P38089	yeast	P38089	PTC4	P38089	1	22	Protein phosphatase 2C homolog 4	
 P38090	yeast	P38090	AGP2	P38090	0	8	General amino acid permease AGP2	
 P38097	escherichia-coli-83333	P38097	dgcE	P38097	3	65	Probable diguanylate cyclase DgcE	
@@ -59,11 +59,11 @@ P38109	yeast	P38109	ATG42	P38109	0	17	Vacuolar serine-type carboxypeptidase ATG4
 P38110	yeast	P38110	TEL1	P38110	1	7	Serine/threonine-protein kinase TEL1 (EC 2.7.11.1) (ATM homo	
 P38111	yeast	P38111	MEC1	P38111	0	4	Serine/threonine-protein kinase MEC1 (EC 2.7.11.1) (ATR homo	
 P38112	yeast	P38112	MAK5	P38112	7	130	ATP-dependent RNA helicase MAK5	
-P38113	yeast	P38113	ADH5	P38113	0	6	Alcohol dehydrogenase 5	
+P38113	yeast	P38113	ADH5	P38113	1	7	Alcohol dehydrogenase 5	
 P38114	yeast	P38114	TBS1	P38114	2	13	Uncharacterized transcriptional regulatory protein TBS1	
 P38115	yeast	P38115	ARA1	P38115	1	12	D-arabinose dehydrogenase	
 P38116	yeast	P38116	ARL1	P38116	8	25	ADP-ribosylation factor-like protein 1	
-P38117	human	P38117	ETFB	P38117	25	187	Electron transfer flavoprotein subunit beta (Beta-ETF)	
+P38117	human	P38117	ETFB	P38117	36	198	Electron transfer flavoprotein subunit beta (Beta-ETF)	
 P38119	mycobacterium-leprae	P38119	uppS	P38119	0	7	Decaprenyl diphosphate synthase	
 P38120	yeast	P38120	MRPS9	P38120	14	214	Small ribosomal subunit protein uS9m	
 P38121	yeast	P38121	POL12	P38121	3	51	DNA polymerase alpha subunit B	
@@ -110,7 +110,7 @@ P38165	yeast	P38165	RTG3	P38165	3	39	Retrograde regulation protein 3
 P38166	yeast	P38166	SFT2	P38166	1	31	Protein transport protein SFT2	
 P38167	yeast	P38167	ECM21	P38167	1	17	Protein ECM21	
 P38168	yeast	P38168	YBL100C	P38168	0	1	Putative uncharacterized protein YBL100C	
-P38169	yeast	P38169	BNA4	P38169	0	6	Kynurenine 3-monooxygenase	
+P38169	yeast	P38169	BNA4	P38169	0	7	Kynurenine 3-monooxygenase	
 P38170	yeast	P38170	BRN1	P38170	8	31	Condensin complex subunit 2	
 P38172	yeast	P38172	MRX3	P38172	0	8	MIOREX complex component 3	
 P38174	yeast	P38174	MAP2	P38174	3	55	Methionine aminopeptidase 2	
@@ -129,7 +129,7 @@ P38193	yeast	P38193	PSY4	P38193	5	30	Serine/threonine-protein phosphatase 4 regu
 P38194	yeast	P38194	YBL044W	P38194	0	5	Uncharacterized protein YBL044W	
 P38195	yeast	P38195	ECM13	P38195	1	35	Protein ECM13	
 P38196	yeast	P38196	FUI1	P38196	0	8	Uridine permease	
-P38197	yeast	P38197	YBL036C	P38197	0	11	Pyridoxal phosphate homeostasis protein	
+P38197	yeast	P38197	YBL036C	P38197	1	13	Pyridoxal phosphate homeostasis protein	
 P38199	yeast	P38199	HEK2	P38199	25	1098	Heterogeneous nuclear rnp K-like protein 2	
 P38200	yeast	P38200	SHE1	P38200	1	13	Mitotic spindle-associated protein SHE1	
 P38201	yeast	P38201	YBL029W	P38201	0	3	Uncharacterized protein YBL029W	
@@ -312,7 +312,7 @@ P38484	human	P38484	IFNGR2	P38484	47	455	Interferon gamma receptor 2 (IFN-gamma 
 P38489	escherichia-coli-83333	P38489	nfsB	P38489	0	7	Oxygen-insensitive NAD(P)H nitroreductase	
 P38506	escherichia-coli-83333	P38506	ygdG	P38506	1	22	Flap endonuclease Xni	
 P38521	escherichia-coli-83333	P38521	yggL	P38521	0	2	Uncharacterized protein YggL	
-P38523	yeast	P38523	MGE1	P38523	5	90	GrpE protein homolog, mitochondrial	
+P38523	yeast	P38523	MGE1	P38523	6	91	GrpE protein homolog, mitochondrial	
 P38532	mus-musculus	P38532	Hsf1	P38532	12	84	Heat shock factor protein 1	
 P38533	mus-musculus	P38533	Hsf2	P38533	1	12	Heat shock factor protein 2	
 P38542	brugia-malayi	P38542	Bm1_44725	P38542	12	43	GTP-binding nuclear protein Ran	
@@ -353,8 +353,8 @@ P38634	yeast	P38634	SIC1	P38634	2	42	Protein SIC1
 P38635	yeast	P38635	HIS2	P38635	0	4	Histidinol-phosphatase	
 P38636	yeast	P38636	ATX1	P38636	0	40	Copper chaperone ATX1	
 P38637	yeast	P38637	STS1	P38637	1	6	Tethering factor for nuclear proteasome STS1	
-P38646	human	P38646	HSPA9	P38646	85	794	Stress-70 protein, mitochondrial (mt-HSP70) (EC 3.6.4.10) (7	
-P38647	mus-musculus	P38647	Hspa9	P38647	37	222	Stress-70 protein, mitochondrial	
+P38646	human	P38646	HSPA9	P38646	90	799	Stress-70 protein, mitochondrial (mt-HSP70) (EC 3.6.4.10) (7	
+P38647	mus-musculus	P38647	Hspa9	P38647	43	229	Stress-70 protein, mitochondrial	
 P38649	mus-musculus	P38649	Abo	P38649	0	1	Histo-blood group ABO system transferase	
 P38652	rattus-norvegicus	P38652	Pgm1	P38652	0	12	Phosphoglucomutase-1	
 P38656	rattus-norvegicus	P38656	Ssb	P38656	1	15	Lupus La protein homolog	
@@ -394,7 +394,7 @@ P38714	yeast	P38714	MSR1	P38714	1	24	Arginine--tRNA ligase, mitochondrial
 P38715	yeast	P38715	GRE3	P38715	0	11	NADPH-dependent aldose reductase GRE3	
 P38716	yeast	P38716	YHR112C	P38716	0	6	Uncharacterized trans-sulfuration enzyme YHR112C	
 P38717	yeast	P38717	SIP3	P38717	0	5	Membrane-anchored lipid-binding protein SIP3	
-P38718	rattus-norvegicus	P38718	Mpc2	P38718	1	4	Mitochondrial pyruvate carrier 2	
+P38718	rattus-norvegicus	P38718	Mpc2	P38718	3	6	Mitochondrial pyruvate carrier 2	
 P38719	yeast	P38719	DBP8	P38719	8	164	ATP-dependent RNA helicase DBP8	
 P38720	yeast	P38720	GND1	P38720	1	47	6-phosphogluconate dehydrogenase, decarboxylating 1	
 P38721	yeast	P38721	YHL050C	P38721	0	5	Uncharacterized protein YHL050C	
@@ -465,7 +465,7 @@ P38793	yeast	P38793	TRM5	P38793	0	9	tRNA (guanine(37)-N(1))-methyltransferase
 P38794	yeast	P38794	PCL5	P38794	2	7	PHO85 cyclin-5	
 P38795	yeast	P38795	QNS1	P38795	0	7	Glutamine-dependent NAD(+) synthetase	
 P38796	yeast	P38796	PPE1	P38796	4	42	Protein phosphatase methylesterase 1	
-P38797	yeast	P38797	PTC7	P38797	5	95	Protein phosphatase 2C homolog 7, mitochondrial	
+P38797	yeast	P38797	PTC7	P38797	6	96	Protein phosphatase 2C homolog 7, mitochondrial	
 P38798	yeast	P38798	NMD2	P38798	3	46	Nonsense-mediated mRNA decay protein 2	
 P38799	yeast	P38799	YHR078W	P38799	0	9	Uncharacterized protein YHR078W	
 P38800	yeast	P38800	LAM4	P38800	5	35	Membrane-anchored lipid-binding protein LAM4	
@@ -488,7 +488,7 @@ P38820	yeast	P38820	UBA4	P38820	3	39	Adenylyltransferase and sulfurtransferase U
 P38821	yeast	P38821	APE4	P38821	0	16	Aspartyl aminopeptidase 4	
 P38822	yeast	P38822	BZZ1	P38822	7	97	Protein BZZ1	
 P38823	yeast	P38823	DMA1	P38823	6	38	E3 ubiquitin-protein ligase DMA1	
-P38824	yeast	P38824	COX23	P38824	1	3	Cytochrome c oxidase-assembly factor COX23, mitochondrial	
+P38824	yeast	P38824	COX23	P38824	2	4	Cytochrome c oxidase-assembly factor COX23, mitochondrial	
 P38825	yeast	P38825	TOM71	P38825	9	54	Protein TOM71	
 P38826	yeast	P38826	ORC6	P38826	5	53	Origin recognition complex subunit 6	
 P38827	yeast	P38827	SET1	P38827	8	104	Histone-lysine N-methyltransferase, H3 lysine-4 specific	
@@ -559,7 +559,7 @@ P38903	yeast	P38903	RTS1	P38903	11	71	Serine/threonine-protein phosphatase 2A 56
 P38904	yeast	P38904	SPP41	P38904	0	8	Protein SPP41	
 P38907	yeast	P38907	CHL4	P38907	5	50	Inner kinetochore subunit CHL4	
 P38909	yeast	P38909	CYC2	P38909	0	18	Cytochrome c mitochondrial import factor CYC2	
-P38910	yeast	P38910	HSP10	P38910	1	34	10 kDa heat shock protein, mitochondrial	
+P38910	yeast	P38910	HSP10	P38910	2	35	10 kDa heat shock protein, mitochondrial	
 P38911	yeast	P38911	FPR3	P38911	9	121	Peptidyl-prolyl cis-trans isomerase	
 P38912	yeast	P38912	TIF11	P38912	5	121	Eukaryotic translation initiation factor 1A	
 P38913	yeast	P38913	FAD1	P38913	0	4	Flavin adenine dinucleotide synthase	

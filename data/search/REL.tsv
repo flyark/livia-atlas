@@ -74,10 +74,10 @@ RELE	mycobacterium-tuberculosis	O50461	relE	O50461	4	4	Toxin RelE
 RELE3	methanocaldococcus-jannaschii	Q58503	relE3	Q58503	1	1	Toxin RelE3	
 RELEASE	fly	FBgn0002542	lds	P34739	9	116	Transcription termination factor 2 (EC 3.6.4.-) (Protein lod	w
 RELEASE	fly	FBgn0020443	eRF3	Q9VK85	16	144	Eukaryotic peptide chain release factor GTP-binding subunit 	w
-RELEASE	fly	FBgn0031817	HemK1	Q9VMD3	1	11	peptide chain release factor N(5)-glutamine methyltransferas	w
-RELEASE	fly	FBgn0032486	mRF1	Q9VK20	5	136	LD18447p (Mitochondrial translation release factor 1)	w
+RELEASE	fly	FBgn0031817	HemK1	Q9VMD3	2	12	peptide chain release factor N(5)-glutamine methyltransferas	w
+RELEASE	fly	FBgn0032486	mRF1	Q9VK20	6	138	LD18447p (Mitochondrial translation release factor 1)	w
 RELEASE	fly	FBgn0036974	eRF1	M9PFR9	3	110	Eukaryotic peptide chain release factor subunit 1	w
-RELEASE	human	O75570	MTRF1	O75570	16	323	Peptide chain release factor 1, mitochondrial (MRF-1) (MtRF-	w
+RELEASE	human	O75570	MTRF1	O75570	27	332	Peptide chain release factor 1, mitochondrial (MRF-1) (MtRF-	w
 RELEASE	human	P15170	GSPT1	P15170	24	327	Eukaryotic peptide chain release factor GTP-binding subunit 	w
 RELEASE	human	P62495	ETF1	P62495	18	304	Eukaryotic peptide chain release factor subunit 1 (Eukaryoti	w
 RELEASE	human	Q6NZI2	CAVIN1	Q6NZI2	63	434	Caveolae-associated protein 1 (Cavin-1) (Polymerase I and tr	w
@@ -85,21 +85,22 @@ RELEASE	human	Q7Z5K2	WAPL	Q7Z5K2	33	229	Wings apart-like protein homolog (Friend
 RELEASE	human	Q8IYD1	GSPT2	Q8IYD1	21	155	Eukaryotic peptide chain release factor GTP-binding subunit 	w
 RELEASE	human	Q9H3J6	MTRFR	Q9H3J6	16	303	Mitochondrial translation release factor in rescue	w
 RELEASE	human	Q9HD47	RANGRF	Q9HD47	7	107	Ran guanine nucleotide release factor (RanGNRF) (Ran-binding	w
-RELEASE	human	Q9UGC7	MTRF1L	Q9UGC7	15	308	Peptide chain release factor 1-like, mitochondrial (Mitochon	w
+RELEASE	human	Q9UGC7	MTRF1L	Q9UGC7	19	312	Peptide chain release factor 1-like, mitochondrial (Mitochon	w
 RELEASE	human	Q9UNY4	TTF2	Q9UNY4	21	326	Transcription termination factor 2 (EC 3.6.4.-) (Lodestar ho	w
-RELEASE	human	Q9Y5R4	HEMK1	Q9Y5R4	13	102	MTRF1L release factor glutamine methyltransferase (EC 2.1.1.	w
+RELEASE	human	Q9Y5R4	HEMK1	Q9Y5R4	21	109	MTRF1L release factor glutamine methyltransferase (EC 2.1.1.	w
 RELEASE	virus	P36317	FPV109	P36317	4	246	Virion release protein	w
 RELEASE	virus	Q08FW8	DpV83gp033	Q08FW8	5	164	RhoA signalling inhibitor virus release protein	w
 RELEASE	worm	E5QCJ3	CELE_T23B5.4	E5QCJ3	0	79	Prokaryotic-type class I peptide chain release factors domai	w
 RELEASE	worm	O16520	erfa-1	O16520	2	68	Eukaryotic peptide chain release factor subunit 1	w
-RELEASE	worm	O44568	mtrf-1L	O44568	1	53	Probable peptide chain release factor 1, mitochondrial	w
+RELEASE	worm	O44568	mtrf-1L	O44568	2	54	Probable peptide chain release factor 1, mitochondrial	w
 RELEASE	worm	O45622	erfa-3	O45622	5	62	Eukaryotic peptide chain release factor GTP-binding subunit	w
 RELEASE	yeast	P05453	SUP35	P05453	6	146	Eukaryotic peptide chain release factor GTP-binding subunit	w
 RELEASE	yeast	P12385	SUP45	P12385	2	172	Eukaryotic peptide chain release factor subunit 1	w
 RELEASE	yeast	P30775	MRF1	P30775	2	126	Peptide chain release factor 1, mitochondrial	w
 RELEASE	yeast	Q05863	YLR281C	Q05863	8	122	Uncharacterized peptide chain release factor-like protein YL	w
+RELEASE	zebrafish	A0A8M1RM80	mtrf1l	A0A8M1RM80	2	3	peptide chain release factor 1-like, mitochondrial	w
 RELEASE	zebrafish	A3KPP3	rangrf	A3KPP3	0	2	Ran guanine nucleotide release factor	w
-RELEASE	zebrafish	A5WUX7	mtrfr	A5WUX7	4	124	Mitochondrial translation release factor in rescue	w
+RELEASE	zebrafish	A5WUX7	mtrfr	A5WUX7	5	125	Mitochondrial translation release factor in rescue	w
 RELEASE	zebrafish	F1QA94	mtrf1l	F1QA94	1	130	Peptide chain release factor 1-like, mitochondrial	w
 RELEASE	zebrafish	Q68EH0	gspt1	Q68EH0	10	133	Eukaryotic peptide chain release factor GTP-binding subunit 	w
 RELEASE	zebrafish	Q803E5	etf1b	Q803E5	4	138	Eukaryotic peptide chain release factor subunit 1	w
@@ -113,14 +114,14 @@ RELEASE-ACTIVATED	zebrafish	F6NU44	cracr2ab	F6NU44	6	13	Calcium release-activate
 RELEASE-ACTIVATED	zebrafish	F6P4G9	orai2	F6P4G9	4	14	ORAI calcium release-activated calcium modulator 2	w
 RELEASE-ACTIVATED	zebrafish	Q6TLE6	orai1	Q6TLE6	4	14	Calcium release-activated calcium channel protein 1	w
 RELEASE-INHIBITING	human	P61278	SST	P61278	75	619	Somatostatin (Growth hormone release-inhibiting factor) [Cle	w
-RELEASED	human	O43865	AHCYL1	O43865	26	417	S-adenosylhomocysteine hydrolase-like protein 1 (DC-expresse	w
+RELEASED	human	O43865	AHCYL1	O43865	29	420	S-adenosylhomocysteine hydrolase-like protein 1 (DC-expresse	w
 RELEASED	human	Q96HN2	AHCYL2	Q96HN2	22	217	S-adenosylhomocysteine hydrolase-like protein 2 (IP(3)Rs bin	w
-RELEASING	human	P55957	BID	P55957	14	108	BH3-interacting domain death agonist (p22 BID) (BID) [Cleave	w
+RELEASING	human	P55957	BID	P55957	19	113	BH3-interacting domain death agonist (p22 BID) (BID) [Cleave	w
 RELEASING	zebrafish	A8WG03	crhr2	A8WG03	2	43	Corticotropin releasing hormone receptor 2	w
 RELEASING	zebrafish	A9Y366	ghrhr2	A9Y366	5	20	Growth hormone releasing hormone receptor 2 precursor	w
 RELEASING	zebrafish	B1NYI2	prlh2r	B1NYI2	0	2	Prolactin releasing hormone 2 receptor isoform X1	w
 RELEASING	zebrafish	F1QR26	prlh2	F1QR26	0	1	Prolactin releasing hormone 2 precursor	w
-RELEVANT	human	Q9Y255	PRELID1	Q9Y255	17	135	PRELI domain-containing protein 1, mitochondrial (25 kDa pro	w
+RELEVANT	human	Q9Y255	PRELID1	Q9Y255	21	139	PRELI domain-containing protein 1, mitochondrial (25 kDa pro	w
 RELF	mycobacterium-tuberculosis	O33347	relF	O33347	3	3	Antitoxin RelF	
 RELG	mycobacterium-tuberculosis	O33348	relG	O33348	3	4	Toxin RelG	
 RELISH	fly	FBgn0014018	Rel	Q94527	48	605	Nuclear factor NF-kappa-B p110 subunit (Rel-p110) (Relish pr	w

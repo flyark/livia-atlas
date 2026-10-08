@@ -15,7 +15,7 @@ O70149	rattus-norvegicus	O70149	Krtap1-5	O70149	0	5	High sulfur protein B2F
 O70150	rattus-norvegicus	O70150	Pnck	O70150	4	5	Calcium/calmodulin-dependent protein kinase type 1B	
 O70152	mus-musculus	O70152	Dpm1	O70152	1	4	Dolichol-phosphate mannosyltransferase subunit 1	
 O70156	rattus-norvegicus	O70156	Olr1	O70156	2	12	Oxidized low-density lipoprotein receptor 1	
-O70157	mus-musculus	O70157	Top3a	O70157	3	64	DNA topoisomerase 3-alpha	
+O70157	mus-musculus	O70157	Top3a	O70157	12	74	DNA topoisomerase 3-alpha	
 O70161	mus-musculus	O70161	Pip5k1c	O70161	6	30	Phosphatidylinositol 4-phosphate 5-kinase type-1 gamma	
 O70165	mus-musculus	O70165	Fcn1	O70165	2	26	Ficolin-1	
 O70166	mus-musculus	O70166	Stmn3	O70166	0	14	Stathmin-3	
@@ -38,7 +38,7 @@ O70230	mus-musculus	O70230	Znf143	O70230	1	56	Zinc finger protein 143
 O70237	mus-musculus	O70237	Gfi1b	O70237	3	27	Zinc finger protein Gfi-1b	
 O70240	rattus-norvegicus	O70240	Axin2	O70240	21	120	Axin-2	
 O70248	rattus-norvegicus	O70248	Apba3	O70248	5	23	Amyloid-beta A4 precursor protein-binding family A member 3	
-O70249	rattus-norvegicus	O70249	Ogg1	O70249	1	23	N-glycosylase/DNA lyase	
+O70249	rattus-norvegicus	O70249	Ogg1	O70249	21	45	N-glycosylase/DNA lyase	
 O70250	mus-musculus	O70250	Pgam2	O70250	2	27	Phosphoglycerate mutase 2	
 O70251	mus-musculus	O70251	Eef1b	O70251	10	82	Elongation factor 1-beta	
 O70252	mus-musculus	O70252	Hmox2	O70252	0	10	Heme oxygenase 2	
@@ -69,13 +69,13 @@ O70318	mus-musculus	O70318	Epb41l2	O70318	11	56	Band 4.1-like protein 2
 O70324	mus-musculus	O70324	Slc16a2	O70324	0	4	Monocarboxylate transporter 8	
 O70326	mus-musculus	O70326	Grem1	O70326	1	5	Gremlin-1	
 O70333	mus-musculus	O70333	Cript	O70333	1	35	Cysteine-rich PDZ-binding protein	
-O70337	mus-musculus	O70337	Bik	O70337	7	28	Bcl-2-interacting killer	
-O70338	mus-musculus	O70338	Rnaseh1	O70338	2	6	Ribonuclease H1	
+O70337	mus-musculus	O70337	Bik	O70337	12	33	Bcl-2-interacting killer	
+O70338	mus-musculus	O70338	Rnaseh1	O70338	3	7	Ribonuclease H1	
 O70340	mus-musculus	O70340	Nptx2	O70340	1	9	Neuronal pentraxin-2	
 O70342	mus-musculus	O70342	Npy5r	O70342	1	8	Neuropeptide Y receptor type 5	
 O70343	mus-musculus	O70343	Ppargc1a	O70343	33	212	Peroxisome proliferator-activated receptor gamma coactivator	
 O70348	mus-musculus	O70348	Dxo	O70348	2	8	Decapping and exoribonuclease protein	
-O70351	rattus-norvegicus	O70351	Hsd17b10	O70351	1	53	3-hydroxyacyl-CoA dehydrogenase type-2	
+O70351	rattus-norvegicus	O70351	Hsd17b10	O70351	1	54	3-hydroxyacyl-CoA dehydrogenase type-2	
 O70352	rattus-norvegicus	O70352	Cd82	O70352	0	43	CD82 antigen	
 O70354	mus-musculus	O70354	Ca11	O70354	0	3	Carbonic anhydrase-related protein 11	
 O70361	mus-musculus	O70361	Per3	O70361	6	13	Period circadian protein homolog 3	
@@ -118,6 +118,7 @@ O70477	mus-musculus	O70477	Pknox1	O70477	5	15	Homeobox protein PKNOX1
 O70479	mus-musculus	O70479	Tnfaip1	O70479	5	49	BTB/POZ domain-containing adapter for CUL3-mediated RhoA deg	
 O70480	mus-musculus	O70480	Vamp4	O70480	25	109	Vesicle-associated membrane protein 4	
 O70489	rattus-norvegicus	O70489	Ppt2	O70489	1	17	Lysosomal thioesterase PPT2	
+O70490	rattus-norvegicus	O70490	Acsm2	O70490	2	2	Acyl-coenzyme A synthetase ACSM2, mitochondrial	
 O70491	mus-musculus	O70491	Stra6	O70491	5	10	Receptor for retinol uptake STRA6	
 O70492	mus-musculus	O70492	Snx3	O70492	5	26	Sorting nexin-3	
 O70493	mus-musculus	O70493	Snx12	O70493	5	22	Sorting nexin-12	
@@ -141,7 +142,7 @@ O70551	mus-musculus	O70551	Srpk1	O70551	1	32	SRSF protein kinase 1
 O70552	mus-musculus	O70552	Btg4	O70552	3	4	Protein BTG4	
 O70566	mus-musculus	O70566	Diaph2	O70566	7	22	Protein diaphanous homolog 2	
 O70570	mus-musculus	O70570	Pigr	O70570	2	24	Polymeric immunoglobulin receptor	
-O70571	mus-musculus	O70571	Pdk4	O70571	2	20	Pyruvate dehydrogenase kinase isoform 4	
+O70571	mus-musculus	O70571	Pdk4	O70571	10	29	Pyruvate dehydrogenase kinase isoform 4	
 O70572	mus-musculus	O70572	Smpd2	O70572	0	11	Sphingomyelin phosphodiesterase 2	
 O70576	mus-musculus	O70576	Stag3	O70576	10	50	Cohesin subunit SA-3	
 O70578	mus-musculus	O70578	Cacng1	O70578	1	45	Voltage-dependent calcium channel gamma-1 subunit	
@@ -153,7 +154,7 @@ O70589	mus-musculus	O70589	Cask	O70589	17	173	Peripheral plasma membrane protein
 O70591	mus-musculus	O70591	Pfdn2	O70591	7	48	Prefoldin subunit 2	
 O70593	rattus-norvegicus	O70593	Sgta	O70593	13	71	Small glutamine-rich tetratricopeptide repeat-containing pro	
 O70594	rattus-norvegicus	O70594	Slc22a5	O70594	0	5	Organic cation/carnitine transporter 2	
-O70595	rattus-norvegicus	O70595	Abcb6	O70595	0	3	ATP-binding cassette sub-family B member 6	
+O70595	rattus-norvegicus	O70595	Abcb6	O70595	3	6	ATP-binding cassette sub-family B member 6	
 O70596	rattus-norvegicus	O70596	Kcnj14	O70596	8	8	ATP-sensitive inward rectifier potassium channel 14	
 O70597	rattus-norvegicus	O70597	Pex11a	O70597	3	14	Peroxisomal membrane protein 11A	
 O70600	rattus-norvegicus	O70600	Rsad2	O70600	0	22	S-adenosylmethionine-dependent nucleotide dehydratase RSAD2	

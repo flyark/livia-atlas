@@ -40,13 +40,13 @@ MODF	escherichia-coli-83333	P31060	modF	P31060	1	174	ABC transporter ATP-binding
 MODF	salmonella-typhimurium	Q8ZQR9	modF	Q8ZQR9	0	56	ABC superfamily (Atp_bind), molybdenum transporter	
 MODF	shigella-dysenteriae-serotype-1	Q32IG5	modF	Q32IG5	0	3	ATP-binding component of molybdate transport system	
 MODIFICA	human	Q9ULI2	RIMKLB	Q9ULI2	2	102	Beta-citrylglutamate synthase B (EC 6.3.1.17) (N-acetyl-aspa	w
-MODIFICATIO	human	Q969Y2	GTPBP3	Q969Y2	3	116	5-taurinomethyluridine-[tRNA] synthase subunit GTPB3, mitoch	w
+MODIFICATIO	human	Q969Y2	GTPBP3	Q969Y2	7	120	5-taurinomethyluridine-[tRNA] synthase subunit GTPB3, mitoch	w
 MODIFICATION	fly	FBgn0037435	CG18048	Q8SX24	0	2	tRNA:m(4)X modification enzyme TRM13 (EC 2.1.1.225)	w
 MODIFICATION	fly	FBgn0039427	CG5447	A0A0B4KH14	8	82	Ras modification protein ERF4	w
 MODIFICATION	human	Q9NUP7	TRMT13	Q9NUP7	2	68	tRNA:m(4)X modification enzyme TRM13 homolog (EC 2.1.1.225) 	w
 MODIFICATION	worm	Q9U204	CELE_Y57G11C.33	Q9U204	2	6	Ras modification protein ERF4	w
 MODIFICATION	worm	Q9XW93	CELE_Y49A3A.3	Q9XW93	0	4	tRNA:m(4)X modification enzyme TRM13	w
-MODIFICATION	yeast	P32559	MSS1	P32559	1	57	tRNA modification GTPase MSS1, mitochondrial	w
+MODIFICATION	yeast	P32559	MSS1	P32559	2	58	tRNA modification GTPase MSS1, mitochondrial	w
 MODIFICATION	yeast	P41912	SHR5	P41912	1	29	Ras modification protein ERF4	w
 MODIFICATION	yeast	Q12383	TRM13	Q12383	0	2	tRNA:m(4)X modification enzyme TRM13	w
 MODIFICATION-RELATED	fly	FBgn0035624	Eaf6	Q9VRN3	5	51	Chromatin modification-related protein MEAF6 (Esa1-associate	w
@@ -127,12 +127,12 @@ MODULATING	human	A6NL88	SHISA7	A6NL88	3	56	Protein shisa-7 (Cystine-knot AMPAR m
 MODULATING	human	Q19T08	ECSCR	Q19T08	29	137	Endothelial cell-specific chemotaxis regulator (Apoptosis re	w
 MODULATOR	fly	FBgn0031116	CG1695	Q8IQ31	2	3	Small G protein signaling modulator 2	w
 MODULATOR	fly	FBgn0033482	CG1371	A1Z843	156	2415	Nodal modulator 3	w
-MODULATOR	fly	FBgn0036488	CG6878	Q9VUM2	5	34	Reactive oxygen species modulator 1 (Protein MGR2 homolog)	w
+MODULATOR	fly	FBgn0036488	CG6878	Q9VUM2	8	37	Reactive oxygen species modulator 1 (Protein MGR2 homolog)	w
 MODULATOR	fly	FBgn0260464	CG9288	Q9VFR1	2	5	Protein Abitram (Actin-binding transcription modulator)	w
 MODULATOR	fly	FBgn0261444	Motor	Q9W5A5	0	3	Movement modulator	w
 MODULATOR	human	A6NC51	TMEM150B	A6NC51	7	32	Modulator of macroautophagy TMEM150B (Protein DRAM-3) (Trans	w
 MODULATOR	human	O43147	SGSM2	O43147	20	146	Small G protein signaling modulator 2 (RUN and TBC1 domain-c	w
-MODULATOR	human	P60602	ROMO1	P60602	19	64	Reactive oxygen species modulator 1 (ROS modulator 1) (Epidi	w
+MODULATOR	human	P60602	ROMO1	P60602	21	67	Reactive oxygen species modulator 1 (ROS modulator 1) (Epidi	w
 MODULATOR	human	P69849	NOMO3	P69849	9	91	BOS complex subunit NOMO3 (Nodal modulator 3) (pM5 protein 3	w
 MODULATOR	human	P81274	GPSM2	P81274	24	134	G protein-signaling modulator 2 (Mosaic protein LGN)	w
 MODULATOR	human	Q03060	CREM	Q03060	127	428	cAMP-responsive element modulator (Inducible cAMP early repr	w
@@ -145,7 +145,7 @@ MODULATOR	human	Q5JPE7	NOMO2	Q5JPE7	8	73	BOS complex subunit NOMO2 (Nodal modula
 MODULATOR	human	Q5JW98	CALHM4	Q5JW98	1	50	Calcium homeostasis modulator protein 4 (Protein FAM26D)	w
 MODULATOR	human	Q5R3K3	CALHM6	Q5R3K3	0	39	Calcium homeostasis modulator protein 6 (Protein FAM26F)	w
 MODULATOR	human	Q5T0T0	MARCHF8	Q5T0T0	8	85	E3 ubiquitin-protein ligase MARCHF8 (EC 2.3.2.27) (Cellular 	w
-MODULATOR	human	Q5T1C6	THEM4	Q5T1C6	3	111	Acyl-coenzyme A thioesterase THEM4 (Acyl-CoA thioesterase TH	w
+MODULATOR	human	Q5T1C6	THEM4	Q5T1C6	7	115	Acyl-coenzyme A thioesterase THEM4 (Acyl-CoA thioesterase TH	w
 MODULATOR	human	Q5TD97	FHL5	Q5TD97	4	153	Four and a half LIM domains protein 5 (FHL-5) (Activator of 	w
 MODULATOR	human	Q6UX65	DRAM2	Q6UX65	4	27	DNA damage-regulated autophagy modulator protein 2 (Transmem	w
 MODULATOR	human	Q6VMQ6	ATF7IP	Q6VMQ6	39	131	Activating transcription factor 7-interacting protein 1 (ATF	w
@@ -159,12 +159,12 @@ MODULATOR	human	Q8N682	DRAM1	Q8N682	7	54	DNA damage-regulated autophagy modulato
 MODULATOR	human	Q8NHV5	MOSMO	Q8NHV5	2	39	Modulator of smoothened protein (Attenuator of hedgehog)	w
 MODULATOR	human	Q96BY2	MOAP1	Q96BY2	8	97	Modulator of apoptosis 1 (MAP-1) (MAP1) (Paraneoplastic anti	w
 MODULATOR	human	Q96HU1	SGSM3	Q96HU1	21	165	Small G protein signaling modulator 3 (Merlin-associated pro	w
-MODULATOR	human	Q96PG8	BBC3	Q96PG8	4	79	Bcl-2-binding component 3, isoforms 3/4 (JFY-1) (p53 up-regu	w
+MODULATOR	human	Q96PG8	BBC3	Q96PG8	12	87	Bcl-2-binding component 3, isoforms 3/4 (JFY-1) (p53 up-regu	w
 MODULATOR	human	Q96PK6	RBM14	Q96PK6	43	582	RNA-binding protein 14 (Paraspeckle protein 2) (PSP2) (RNA-b	w
 MODULATOR	human	Q99471	PFDN5	Q99471	26	374	Prefoldin subunit 5 (Myc modulator 1) (c-Myc-binding protein	w
 MODULATOR	human	Q9BWK5	CYREN	Q9BWK5	12	59	Cell cycle regulator of non-homologous end joining (Cell cyc	w
 MODULATOR	human	Q9BXH1	BBC3	Q9BXH1	5	39	Bcl-2-binding component 3, isoforms 1/2 (JFY-1) (p53 up-regu	w
-MODULATOR	human	Q9C002	COXFA4L3	Q9C002	34	277	Cytochrome c oxidase associated subunit FA4L3 (Modulator of 	w
+MODULATOR	human	Q9C002	COXFA4L3	Q9C002	35	277	Cytochrome c oxidase associated subunit FA4L3 (Modulator of 	w
 MODULATOR	human	Q9H6Q3	SLA2	Q9H6Q3	33	247	Src-like-adapter 2 (Modulator of antigen receptor signaling)	w
 MODULATOR	human	Q9HA72	CALHM2	Q9HA72	0	54	Calcium homeostasis modulator protein 2 (Protein FAM26B)	w
 MODULATOR	human	Q9NWH9	SLTM	Q9NWH9	20	192	SAFB-like transcription modulator (Modulator of estrogen-ind	w
@@ -192,7 +192,7 @@ MODULATOR	zebrafish	F1QUW2	gpsm2	F1QUW2	12	60	G protein-signaling modulator 2	w
 MODULATOR	zebrafish	F1R7U0	dram2b	F1R7U0	0	2	DNA damage-regulated autophagy modulator protein 2b isoform 	w
 MODULATOR	zebrafish	F6P4G9	orai2	F6P4G9	4	14	ORAI calcium release-activated calcium modulator 2	w
 MODULATOR	zebrafish	Q0D289	mosmob	Q0D289	0	1	Modulator of smoothened protein	w
-MODULATOR	zebrafish	Q6NYD1	romo1	Q6NYD1	1	19	Reactive oxygen species modulator 1	w
+MODULATOR	zebrafish	Q6NYD1	romo1	Q6NYD1	4	22	Reactive oxygen species modulator 1	w
 MODULATOR	zebrafish	Q7T2D0	sgsm3	Q7T2D0	4	7	Small G protein signaling modulator 3	w
 MODULATORY	human	P42658	DPP6	P42658	5	42	A-type potassium channel modulatory protein DPP6 (DPPX) (Dip	w
 MODULATORY	human	P82094	TMF1	P82094	25	121	TATA element modulatory factor (TMF) (Androgen receptor coac	w

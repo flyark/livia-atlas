@@ -1,8 +1,8 @@
 DHS	arabidopsis-thaliana	Q9FI94	DHS	Q9FI94	3	8	Deoxyhypusine synthase	
 DHS-1	worm	P91013	dhs-1	P91013	0	2	Retinol dehydrogenase 12-like	
-DHS-11	worm	A0A163UT65	dhs-11	A0A163UT65	0	5	(3R)-3-hydroxyacyl-CoA dehydrogenase	
+DHS-11	worm	A0A163UT65	dhs-11	A0A163UT65	1	8	(3R)-3-hydroxyacyl-CoA dehydrogenase	
 DHS-12	worm	G5EG13	dhs-12	G5EG13	1	25	NAD(P)-binding protein	
-DHS-13	worm	O16619	dhs-13	O16619	0	9	DeHydrogenases, Short chain	
+DHS-13	worm	O16619	dhs-13	O16619	0	10	DeHydrogenases, Short chain	
 DHS-14	worm	Q9N5G3	dhs-14	Q9N5G3	0	6	DeHydrogenases, Short chain	
 DHS-15	worm	Q9N5G1	dhs-15	Q9N5G1	0	1	DeHydrogenases, Short chain	
 DHS-16	worm	O16881	dhs-16	O16881	0	7	3beta-hydroxysteroid dehydrogenase dhs-16	w
@@ -10,12 +10,12 @@ DHS-16	worm	O16881	dhs-16	O16881	0	7	3beta-hydroxysteroid dehydrogenase dhs-16	w
 DHS-17	worm	Q1XFZ3	dhs-17	Q1XFZ3	1	1	Retinol dehydrogenase 14	
 DHS-18	worm	Q18639	dhs-18	Q18639	0	7	Hydroxysteroid dehydrogenase-like protein 2	
 DHS-19	worm	Q22392	dhs-19	Q22392	1	3	DeHydrogenases, Short chain	
-DHS-21	worm	Q21929	dhs-21	Q21929	1	40	L-xylulose reductase	
+DHS-21	worm	Q21929	dhs-21	Q21929	3	42	L-xylulose reductase	
 DHS-22	worm	Q9XVS9	dhs-22	Q9XVS9	0	2	DeHydrogenases, Short chain	
 DHS-23	worm	O45709	dhs-23	O45709	0	2	DeHydrogenases, Short chain	
 DHS-24	worm	Q9U1Y6	dhs-24	Q9U1Y6	3	40	Retinol dehydrogenase 13	
 DHS-25	worm	Q19246	dhs-25	Q19246	0	6	(3R)-3-hydroxyacyl-CoA dehydrogenase	
-DHS-28	worm	Q21481	dhs-28	Q21481	1	17	SCP2 domain-containing protein	
+DHS-28	worm	Q21481	dhs-28	Q21481	1	18	SCP2 domain-containing protein	
 DHS-29	worm	Q19843	dhs-29	Q19843	0	2	NADP-retinol dehydrogenase	
 DHS-3	worm	A5JYX5	dhs-3	A5JYX5	1	4	Protein dhs-3	w
 DHS-3	worm	A5JYX5	dhs-3	A5JYX5	1	4	Protein dhs-3	w
@@ -27,11 +27,15 @@ DHS-5	worm	Q10130	dhs-5	Q10130	0	6	Uncharacterized oxidoreductase dhs-5	w
 DHS-6	worm	Q09979	dhs-6	Q09979	1	11	Hydroxysteroid dehydrogenase-like protein 2	
 DHS-7	worm	Q19062	dhs-7	Q19062	0	8	NAD(P)-binding protein	
 DHS-8	worm	O45680	dhs-8	O45680	0	4	SDR family NAD(P)-dependent oxidoreductase	
+DHS-9	worm	Q9N538	dhs-9	Q9N538	1	1	DeHydrogenases, Short chain	
 DHS1	arabidopsis-thaliana	P29976	DHS1	P29976	2	15	Phospho-2-dehydro-3-deoxyheptonate aldolase 1, chloroplastic	
 DHS2	arabidopsis-thaliana	Q00218	DHS2	Q00218	2	16	Phospho-2-dehydro-3-deoxyheptonate aldolase 2, chloroplastic	
 DHS20	leishmania-infantum	A4HYL6	DHS20	A4HYL6	2	4	Deoxyhypusine synthase-like	
 DHS34	leishmania-infantum	A4I9K3	DHS34	A4I9K3	0	4	Deoxyhypusine synthase	
 DHSC	trypanosoma-brucei-brucei-185431	Q38BX0	DHSc	Q38BX0	0	2	Deoxyhypusine synthase	
-DHSD_HUMAN	human	O14521	SDHD	O14521	11	99		
+DHSDB_DANRE	zebrafish	Q68FN7	sdhdb	Q68FN7	6	30		
+DHSD_CAEEL	worm	O62215	sdhd-1	O62215	5	19		
+DHSD_DROME	fly	FBgn0039112	SdhD	Q9VCI5	10	77		
+DHSD_HUMAN	human	O14521	SDHD	O14521	15	103		
 DHSO_HUMAN	human	Q00796	SORD	Q00796	7	194		
 DHSP	trypanosoma-brucei-brucei-185431	Q4GZD1	DHSp	Q4GZD1	1	2	Deoxyhypusine synthase regulatory subunit	

@@ -5,7 +5,7 @@ SLC-25A18.1	worm	Q93540	slc-25a18.1	Q93540	0	5	Mitochondrial glutamate carrier 1
 SLC-25A21	worm	O62347	slc-25a21	O62347	0	1	Mitochondrial 2-oxodicarboxylate carrier	
 SLC-25A26	worm	Q18934	slc-25a26	Q18934	0	1	Mitochondrial carrier protein PET8	
 SLC-25A42	worm	Q93717	slc-25a42	Q93717	0	3	Mitochondrial coenzyme A transporter SLC25A42	
-SLC-25A46	worm	Q9U2J0	slc-25a46	Q9U2J0	2	2	Solute carrier family 25 member 46	
+SLC-25A46	worm	Q9U2J0	slc-25a46	Q9U2J0	5	6	Solute carrier family 25 member 46	
 SLC-30A5	worm	Q8WQB6	slc-30a5	Q8WQB6	1	2	Proton-coupled zinc antiporter SLC30A5	
 SLC-36.1	worm	O45936	slc-36.1	O45936	0	2	Amino acid transporter transmembrane domain-containing prote	
 SLC-36.2	worm	G4SQY7	slc-36.2	G4SQY7	0	1	Amino acid transporter transmembrane domain-containing prote	
@@ -255,7 +255,7 @@ SLC20A2	human	Q08357	SLC20A2	Q08357	4	92	Sodium-dependent phosphate transporter 
 SLC20A2	mus-musculus	Q80UP8	Slc20a2	Q80UP8	0	7	Sodium-dependent phosphate transporter 2	
 SLC20A2	rattus-norvegicus	Q63488	Slc20a2	Q63488	0	6	Sodium-dependent phosphate transporter 2	
 SLC20A2	zebrafish	F1Q836	slc20a2	F1Q836	0	2	Phosphate transporter	
-SLC20A3	human	P53007	SLC25A1	P53007	1	361		
+SLC20A3	human	P53007	SLC25A1	P53007	3	363		
 SLC20A4	human	Q02978	SLC25A11	Q02978	5	324		
 SLC21A11	human	Q9UIG8	SLCO3A1	Q9UIG8	3	74		
 SLC21A12	human	Q96BD0	SLCO4A1	Q96BD0	4	122		
@@ -337,23 +337,31 @@ SLC24A3	human	Q9HC58	SLC24A3	Q9HC58	1	57	Sodium/potassium/calcium exchanger 3 (N
 SLC24A4	human	Q8NFF2	SLC24A4	Q8NFF2	4	46	Sodium/potassium/calcium exchanger 4 (Na(+)/K(+)/Ca(2+)-exch	
 SLC24A4	mus-musculus	Q8CGQ8	Slc24a4	Q8CGQ8	0	1	Sodium/potassium/calcium exchanger 4	
 SLC24A5	human	Q71RS6	SLC24A5	Q71RS6	1	32	Sodium/potassium/calcium exchanger 5 (Na(+)/K(+)/Ca(2+)-exch	
-SLC24A6	human	Q6J4K2	SLC8B1	Q6J4K2	1	46		
-SLC25A1	human	P53007	SLC25A1	P53007	1	361	Tricarboxylate transport protein, mitochondrial (Citrate tra	
-SLC25A1	mus-musculus	Q8JZU2	Slc25a1	Q8JZU2	0	39	Tricarboxylate transport protein, mitochondrial	
-SLC25A1	rattus-norvegicus	P32089	Slc25a1	P32089	0	49	Tricarboxylate transport protein, mitochondrial	
+SLC24A6	human	Q6J4K2	SLC8B1	Q6J4K2	4	49		
+SLC25A1	human	P53007	SLC25A1	P53007	3	363	Tricarboxylate transport protein, mitochondrial (Citrate tra	
+SLC25A1	mus-musculus	Q8JZU2	Slc25a1	Q8JZU2	1	40	Tricarboxylate transport protein, mitochondrial	
+SLC25A1	pan-troglodytes	H2QL82	SLC25A1	H2QL82	2	2	Solute carrier family 25 (Mitochondrial carrier citrate tran	
+SLC25A1	rattus-norvegicus	P32089	Slc25a1	P32089	2	51	Tricarboxylate transport protein, mitochondrial	
+SLC25A1.L	xenopus-laevis	Q8AVD9	slc25a1.L	Q8AVD9	1	2	Slc25a1-prov protein	
 SLC25A10	human	F6RGN5	SLC25A10	F6RGN5	2	80	Solute carrier family 25 member 10	
-SLC25A10	human	Q9UBX3	SLC25A10	Q9UBX3	1	209	Mitochondrial dicarboxylate carrier (DIC) (Solute carrier fa	
-SLC25A10	mus-musculus	Q9QZD8	Slc25a10	Q9QZD8	0	12	Mitochondrial dicarboxylate carrier	
-SLC25A10	rattus-norvegicus	O89035	Slc25a10	O89035	0	10	Mitochondrial dicarboxylate carrier	
+SLC25A10	human	Q9UBX3	SLC25A10	Q9UBX3	2	210	Mitochondrial dicarboxylate carrier (DIC) (Solute carrier fa	
+SLC25A10	mus-musculus	Q9QZD8	Slc25a10	Q9QZD8	1	13	Mitochondrial dicarboxylate carrier	
+SLC25A10	rattus-norvegicus	O89035	Slc25a10	O89035	1	11	Mitochondrial dicarboxylate carrier	
+SLC25A10	zebrafish	Q7ZWA7	slc25a10	Q7ZWA7	1	1	Solute carrier family 25 (Mitochondrial carrier dicarboxylat	
 SLC25A10A	zebrafish	F1QDE0	slc25a10a	F1QDE0	0	9	Mitochondrial dicarboxylate carrier	
 SLC25A11	human	Q02978	SLC25A11	Q02978	5	324	Mitochondrial 2-oxoglutarate/malate carrier protein (Alpha-o	
 SLC25A11	mus-musculus	Q9CR62	Slc25a11	Q9CR62	0	45	Mitochondrial 2-oxoglutarate/malate carrier protein	
-SLC25A12	human	O75746	SLC25A12	O75746	8	271	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	
-SLC25A12	mus-musculus	Q8BH59	Slc25a12	Q8BH59	1	31	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	
-SLC25A12	rattus-norvegicus	F1LX07	Slc25a12	F1LX07	1	15	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	
-SLC25A13	human	Q9UJS0	SLC25A13	Q9UJS0	6	277	Electrogenic aspartate/glutamate antiporter SLC25A13, mitoch	
-SLC25A13	mus-musculus	Q9QXX4	Slc25a13	Q9QXX4	1	23	Electrogenic aspartate/glutamate antiporter SLC25A13, mitoch	
-SLC25A13	rattus-norvegicus	F1LZW6	Slc25a13	F1LZW6	1	14	Electrogenic aspartate/glutamate antiporter SLC25A13, mitoch	
+SLC25A12	human	O75746	SLC25A12	O75746	10	272	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	
+SLC25A12	mus-musculus	Q8BH59	Slc25a12	Q8BH59	2	33	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	
+SLC25A12	pan-troglodytes	H2QIZ2	SLC25A12	H2QIZ2	3	3	Solute carrier family 25 (Mitochondrial carrier, Aralar), me	
+SLC25A12	rattus-norvegicus	F1LX07	Slc25a12	F1LX07	3	17	Electrogenic aspartate/glutamate antiporter SLC25A12, mitoch	
+SLC25A12.L	xenopus-laevis	Q52KY7	slc25a12.L	Q52KY7	3	3	LOC443574 protein	
+SLC25A13	human	Q9UJS0	SLC25A13	Q9UJS0	8	279	Electrogenic aspartate/glutamate antiporter SLC25A13, mitoch	
+SLC25A13	mus-musculus	Q9QXX4	Slc25a13	Q9QXX4	4	26	Electrogenic aspartate/glutamate antiporter SLC25A13, mitoch	
+SLC25A13	pan-troglodytes	H2QUZ0	SLC25A13	H2QUZ0	3	4	Solute carrier family 25 member 13	
+SLC25A13	rattus-norvegicus	F1LZW6	Slc25a13	F1LZW6	4	17	Electrogenic aspartate/glutamate antiporter SLC25A13, mitoch	
+SLC25A13	zebrafish	A0A8M9PNN6	slc25a13	A0A8M9PNN6	3	4	calcium-binding mitochondrial carrier protein Aralar2	
+SLC25A13.S	xenopus-laevis	A0A8J0VMR9	slc25a13.S	A0A8J0VMR9	4	4	calcium-binding mitochondrial carrier protein Aralar2	
 SLC25A14	human	O95258	SLC25A14	O95258	3	79	Brain mitochondrial carrier protein 1 (BMCP-1) (Mitochondria	
 SLC25A14	mus-musculus	Q9Z2B2	Slc25a14	Q9Z2B2	0	4	Brain mitochondrial carrier protein 1	
 SLC25A14	rattus-norvegicus	Q9EP88	Slc25a14	Q9EP88	0	3	Brain mitochondrial carrier protein-1	
@@ -367,12 +375,13 @@ SLC25A17	human	O43808	SLC25A17	O43808	0	125	Peroxisomal membrane protein PMP34 (
 SLC25A17	mus-musculus	O70579	Slc25a17	O70579	0	3	Peroxisomal membrane protein PMP34	
 SLC25A18	human	Q9H1K4	SLC25A18	Q9H1K4	1	86	Mitochondrial glutamate carrier 2 (GC-2) (Glutamate/H(+) sym	
 SLC25A18	rattus-norvegicus	Q505J6	Slc25a18	Q505J6	1	1	Mitochondrial glutamate carrier 2	
-SLC25A19	human	Q9HC21	SLC25A19	Q9HC21	3	217	Mitochondrial thiamine pyrophosphate carrier (Mitochondrial 	
-SLC25A19	mus-musculus	Q9DAM5	Slc25a19	Q9DAM5	0	42	Mitochondrial thiamine pyrophosphate carrier	
-SLC25A19	rattus-norvegicus	Q6AYL0	Slc25a19	Q6AYL0	0	57	Mitochondrial thiamine pyrophosphate carrier	
+SLC25A19	human	Q9HC21	SLC25A19	Q9HC21	4	218	Mitochondrial thiamine pyrophosphate carrier (Mitochondrial 	
+SLC25A19	mus-musculus	Q9DAM5	Slc25a19	Q9DAM5	1	43	Mitochondrial thiamine pyrophosphate carrier	
+SLC25A19	pan-troglodytes	G2HIB0	SLC25A19	G2HIB0	1	1	Mitochondrial deoxynucleotide carrier	
+SLC25A19	rattus-norvegicus	Q6AYL0	Slc25a19	Q6AYL0	1	58	Mitochondrial thiamine pyrophosphate carrier	
 SLC25A19L1	rattus-norvegicus	A0ABK0M486	Slc25a19l1	A0ABK0M486	0	57	Uncharacterized protein	
 SLC25A1A	zebrafish	Q6PGY3	slc25a1a	Q6PGY3	1	46	Tricarboxylate transport protein A, mitochondrial	
-SLC25A1B	zebrafish	F1R4U0	slc25a1b	F1R4U0	0	46	Tricarboxylate transport protein B, mitochondrial	
+SLC25A1B	zebrafish	F1R4U0	slc25a1b	F1R4U0	1	47	Tricarboxylate transport protein B, mitochondrial	
 SLC25A2	human	Q9BXI2	SLC25A2	Q9BXI2	0	26	Mitochondrial ornithine transporter 2 (Solute carrier family	
 SLC25A2	mus-musculus	Q99ML6	Slc25a2	Q99ML6	0	2	Mitochondrial ornithine transporter 1	
 SLC25A20	human	O43772	SLC25A20	O43772	3	140	Mitochondrial carnitine/acylcarnitine carrier protein (Carni	
@@ -383,35 +392,45 @@ SLC25A21	human	Q9BQT8	SLC25A21	Q9BQT8	1	86	Mitochondrial 2-oxodicarboxylate carr
 SLC25A21	rattus-norvegicus	Q99JD3	Slc25a21	Q99JD3	0	1	Mitochondrial 2-oxodicarboxylate carrier	
 SLC25A22	human	Q9H936	SLC25A22	Q9H936	0	169	Mitochondrial glutamate carrier 1 (GC-1) (Glutamate/H(+) sym	
 SLC25A22	mus-musculus	Q9D6M3	Slc25a22	Q9D6M3	0	9	Mitochondrial glutamate carrier 1	
-SLC25A23	human	Q9BV35	SLC25A23	Q9BV35	0	127	Mitochondrial adenyl nucleotide antiporter SLC25A23 (Mitocho	
-SLC25A23	mus-musculus	Q6GQS1	Slc25a23	Q6GQS1	0	67	Mitochondrial adenyl nucleotide antiporter SLC25A23	
+SLC25A23	human	Q9BV35	SLC25A23	Q9BV35	1	128	Mitochondrial adenyl nucleotide antiporter SLC25A23 (Mitocho	
+SLC25A23	mus-musculus	Q6GQS1	Slc25a23	Q6GQS1	1	68	Mitochondrial adenyl nucleotide antiporter SLC25A23	
+SLC25A23	pan-troglodytes	H2QF50	SLC25A23	H2QF50	1	1	Solute carrier family 25 (Mitochondrial carrier phosphate ca	
+SLC25A23	rattus-norvegicus	A0A0G2JVD2	Slc25a23	A0A0G2JVD2	1	1	Similar to solute carrier family 25 (Mitochondrial carrier; 	
 SLC25A23	rattus-norvegicus	M0R4V4	Slc25a23	M0R4V4	0	71	Mitochondrial adenyl nucleotide antiporter SLC25A23	
 SLC25A23	zebrafish	R4GDS9	slc25a23a	R4GDS9	1	98	Mitochondrial adenyl nucleotide antiporter SLC25A23 isoform 	w
+SLC25A23.L	xenopus-laevis	A0A1L8H352	slc25a23.L	A0A1L8H352	1	1	calcium-binding mitochondrial carrier protein SCaMC-3	
 SLC25A23A	zebrafish	R4GDS9	slc25a23a	R4GDS9	1	98	Mitochondrial adenyl nucleotide antiporter SLC25A23 isoform 	
-SLC25A23B	zebrafish	Q5PNM8	slc25a23b	Q5PNM8	0	98	Calcium-binding mitochondrial carrier protein SCaMC-3b	
-SLC25A24	human	Q6NUK1	SLC25A24	Q6NUK1	1	231	Mitochondrial adenyl nucleotide antiporter SLC25A24 (Mitocho	
-SLC25A24	mus-musculus	Q8BMD8	Slc25a24	Q8BMD8	1	56	Mitochondrial adenyl nucleotide antiporter SLC25A24	
-SLC25A24	rattus-norvegicus	F7EXY7	Slc25a24	F7EXY7	1	62	Mitochondrial adenyl nucleotide antiporter SLC25A24	
+SLC25A23B	zebrafish	Q5PNM8	slc25a23b	Q5PNM8	1	99	Calcium-binding mitochondrial carrier protein SCaMC-3b	
+SLC25A24	human	Q6NUK1	SLC25A24	Q6NUK1	2	232	Mitochondrial adenyl nucleotide antiporter SLC25A24 (Mitocho	
+SLC25A24	mus-musculus	Q8BMD8	Slc25a24	Q8BMD8	2	57	Mitochondrial adenyl nucleotide antiporter SLC25A24	
+SLC25A24	pan-troglodytes	H2PZI9	SLC25A24	H2PZI9	1	1	Solute carrier family 25 member 24	
+SLC25A24	rattus-norvegicus	F7EXY7	Slc25a24	F7EXY7	1	63	Mitochondrial adenyl nucleotide antiporter SLC25A24	
 SLC25A24	zebrafish	Q66L49	slc25a24	Q66L49	0	98	Mitochondrial adenyl nucleotide antiporter SLC25A24	w
 SLC25A24	zebrafish	Q66L49	slc25a24	Q66L49	0	98	Mitochondrial adenyl nucleotide antiporter SLC25A24	w
+SLC25A24-A	xenopus-laevis	Q7ZY36	slc25a24-a	Q7ZY36	0	1	Calcium-binding mitochondrial carrier protein SCaMC-1-A	
 SLC25A25	human	Q6KCM7	SLC25A25	Q6KCM7	0	58	Mitochondrial adenyl nucleotide antiporter SLC25A25 (Mitocho	
 SLC25A25	rattus-norvegicus	Q8K3P6	Slc25a25	Q8K3P6	2	65	Mitochondrial adenyl nucleotide antiporter SLC25A25	
 SLC25A25A	zebrafish	Q6NYZ6	slc25a25a	Q6NYZ6	0	98	Calcium-binding mitochondrial carrier protein SCaMC-2-A	
 SLC25A25B	zebrafish	A2CEQ0	slc25a25b	A2CEQ0	0	98	Calcium-binding mitochondrial carrier protein SCaMC-2-B	
-SLC25A26	human	Q70HW3	SLC25A26	Q70HW3	0	96	Mitochondrial S-adenosylmethionine carrier protein (SAM carr	
+SLC25A26	human	Q70HW3	SLC25A26	Q70HW3	1	97	Mitochondrial S-adenosylmethionine carrier protein (SAM carr	
+SLC25A26	pan-troglodytes	K7BUR1	SLC25A26	K7BUR1	1	1	Solute carrier family 25 member 26	
 SLC25A26	zebrafish	Q4V9P0	slc25a26	Q4V9P0	0	1	Mitochondrial S-adenosylmethionine carrier protein	
-SLC25A27	human	O95847	SLC25A27	O95847	0	34	Mitochondrial uncoupling protein 4 (UCP 4) (Solute carrier f	
+SLC25A27	human	O95847	SLC25A27	O95847	1	35	Mitochondrial uncoupling protein 4 (UCP 4) (Solute carrier f	
 SLC25A27	mus-musculus	Q9D6D0	Slc25a27	Q9D6D0	0	4	Mitochondrial uncoupling protein 4	
-SLC25A28	human	Q96A46	SLC25A28	Q96A46	2	62	Mitoferrin-2 (Mitochondrial RNA-splicing protein 3/4 homolog	
-SLC25A28	mus-musculus	Q8R0Z5	Slc25a28	Q8R0Z5	0	6	Mitoferrin-2	
-SLC25A28	rattus-norvegicus	G3V865	Slc25a28	G3V865	0	9	Solute carrier family 25 member 28	
+SLC25A27	pan-troglodytes	H2R0X6	SLC25A27	H2R0X6	1	1	Solute carrier family 25 member 27	
+SLC25A28	human	Q96A46	SLC25A28	Q96A46	3	63	Mitoferrin-2 (Mitochondrial RNA-splicing protein 3/4 homolog	
+SLC25A28	mus-musculus	Q8R0Z5	Slc25a28	Q8R0Z5	1	7	Mitoferrin-2	
+SLC25A28	pan-troglodytes	H2Q2E6	SLC25A28	H2Q2E6	1	1	Solute carrier family 25 member 28	
+SLC25A28	rattus-norvegicus	G3V865	Slc25a28	G3V865	1	10	Solute carrier family 25 member 28	
 SLC25A28	zebrafish	Q7T292	slc25a28	Q7T292	0	1	Mitoferrin-2	
 SLC25A29	human	Q8N8R3	SLC25A29	Q8N8R3	2	82	Mitochondrial basic amino acids transporter (Carnitine/acylc	
 SLC25A29	mus-musculus	Q8BL03	Slc25a29	Q8BL03	0	4	Mitochondrial basic amino acids transporter	
 SLC25A29	rattus-norvegicus	Q5HZE0	Slc25a29	Q5HZE0	0	3	Mitochondrial basic amino acids transporter	
-SLC25A3	human	Q00325	SLC25A3	Q00325	10	469	Solute carrier family 25 member 3 (Phosphate carrier protein	
-SLC25A3	mus-musculus	Q8VEM8	Slc25a3	Q8VEM8	1	33	Solute carrier family 25 member 3	
-SLC25A3	rattus-norvegicus	P16036	Slc25a3	P16036	0	30	Solute carrier family 25 member 3	
+SLC25A3	human	Q00325	SLC25A3	Q00325	13	472	Solute carrier family 25 member 3 (Phosphate carrier protein	
+SLC25A3	mus-musculus	Q8VEM8	Slc25a3	Q8VEM8	3	35	Solute carrier family 25 member 3	
+SLC25A3	pan-troglodytes	A0A2J8N0I4	SLC25A3	A0A2J8N0I4	3	3	Phosphate carrier protein, mitochondrial	
+SLC25A3	rattus-norvegicus	P16036	Slc25a3	P16036	3	33	Solute carrier family 25 member 3	
+SLC25A3.L	xenopus-laevis	A0A8J0UF09	slc25a3.L	A0A8J0UF09	2	2	Phosphate carrier protein, mitochondrial	
 SLC25A30	human	Q5SVS4	SLC25A30	Q5SVS4	1	93	Kidney mitochondrial carrier protein 1 (Solute carrier famil	
 SLC25A30	mus-musculus	Q9CR58	Slc25a30	Q9CR58	0	1	Kidney mitochondrial carrier protein 1	
 SLC25A31	human	Q9H0C2	SLC25A31	Q9H0C2	1	132	ADP/ATP translocase 4 (ADP,ATP carrier protein 4) (Adenine n	
@@ -422,8 +441,11 @@ SLC25A33	human	Q9BSK2	SLC25A33	Q9BSK2	2	90	Solute carrier family 25 member 33 (B
 SLC25A34	human	Q6PIV7	SLC25A34	Q6PIV7	0	25	Solute carrier family 25 member 34	
 SLC25A35	human	Q3KQZ1	SLC25A35	Q3KQZ1	0	56	Solute carrier family 25 member 35	
 SLC25A35	mus-musculus	Q5SWT3	Slc25a35	Q5SWT3	0	1	Solute carrier family 25 member 35	
-SLC25A36	human	Q96CQ1	SLC25A36	Q96CQ1	1	46	Solute carrier family 25 member 36	
-SLC25A36	mus-musculus	Q922G0	Slc25a36	Q922G0	0	1	Solute carrier family 25 member 36	
+SLC25A36	human	Q96CQ1	SLC25A36	Q96CQ1	2	47	Solute carrier family 25 member 36	
+SLC25A36	mus-musculus	Q922G0	Slc25a36	Q922G0	1	2	Solute carrier family 25 member 36	
+SLC25A36	rattus-norvegicus	D4ACN9	Slc25a36	D4ACN9	1	1	Solute carrier family 25 member 36	
+SLC25A36.S	xenopus-laevis	A5PKR9	slc25a36.S	A5PKR9	1	1	LOC100101316 protein	
+SLC25A36A	zebrafish	Q6DG32	slc25a36a	Q6DG32	1	1	Solute carrier family 25 member 36-A	
 SLC25A37	human	Q9NYZ2	SLC25A37	Q9NYZ2	0	44	Mitoferrin-1 (Mitochondrial iron transporter 1) (Mitochondri	
 SLC25A37	mus-musculus	Q920G8	Slc25a37	Q920G8	0	8	Mitoferrin-1	
 SLC25A37	rattus-norvegicus	Q66H23	Slc25a37	Q66H23	0	8	Mitoferrin-1	
@@ -442,9 +464,10 @@ SLC25A4	zebrafish	Q6NX10	slc25a4	Q6NX10	1	70	ADP/ATP translocase
 SLC25A40	human	Q8TBP6	SLC25A40	Q8TBP6	2	120	Mitochondrial glutathione transporter SLC25A40 (Mitochondria	
 SLC25A40	mus-musculus	Q8BGP6	Slc25a40	Q8BGP6	0	1	Mitochondrial glutathione transporter SLC25A40	
 SLC25A40	rattus-norvegicus	Q498U3	Slc25a40	Q498U3	0	1	Mitochondrial glutathione transporter SLC25A40	
-SLC25A41	human	Q8N5S1	SLC25A41	Q8N5S1	5	170	Mitochondrial carrier protein SCaMC-3L (Mitochondrial ATP-Mg	
-SLC25A41	mus-musculus	Q8BVN7	Slc25a41	Q8BVN7	0	54	Calcium-independent mitochondrial carrier protein SCaMC-3L	
-SLC25A41	rattus-norvegicus	B8ZHC9	Slc25a41	B8ZHC9	1	63	Calcium-independent mitochondrial carrier protein SCaMC-3L	
+SLC25A41	human	Q8N5S1	SLC25A41	Q8N5S1	7	172	Mitochondrial carrier protein SCaMC-3L (Mitochondrial ATP-Mg	
+SLC25A41	mus-musculus	Q8BVN7	Slc25a41	Q8BVN7	1	56	Calcium-independent mitochondrial carrier protein SCaMC-3L	
+SLC25A41	pan-troglodytes	A0A2J8JRP8	SLC25A41	A0A2J8JRP8	1	1	Solute carrier family 25 member 41	
+SLC25A41	rattus-norvegicus	B8ZHC9	Slc25a41	B8ZHC9	2	64	Calcium-independent mitochondrial carrier protein SCaMC-3L	
 SLC25A42	fly	FBgn0067783	DPCoAC	Q9VDL7	0	3	Mitochondrial coenzyme A transporter SLC25A42 (Solute carrie	w
 SLC25A42	human	Q86VD7	SLC25A42	Q86VD7	0	74	Mitochondrial coenzyme A transporter SLC25A42 (Solute carrie	
 SLC25A42	mus-musculus	Q8R0Y8	Slc25a42	Q8R0Y8	0	15	Mitochondrial coenzyme A transporter SLC25A42	
@@ -452,45 +475,53 @@ SLC25A42	rattus-norvegicus	P0C546	Slc25a42	P0C546	0	14	Mitochondrial coenzyme A 
 SLC25A42	worm	Q93717	slc-25a42	Q93717	0	3	Mitochondrial coenzyme A transporter SLC25A42	w
 SLC25A42	zebrafish	Q0P483	slc25a42	Q0P483	0	11	Mitochondrial coenzyme A transporter SLC25A42	w
 SLC25A42	zebrafish	Q0P483	slc25a42	Q0P483	0	11	Mitochondrial coenzyme A transporter SLC25A42	w
-SLC25A43	human	Q8WUT9	SLC25A43	Q8WUT9	2	108	Solute carrier family 25 member 43	
-SLC25A43	mus-musculus	A2A3V2	Slc25a43	A2A3V2	0	41	Solute carrier family 25 member 43	
-SLC25A43	rattus-norvegicus	D3ZG94	Slc25a43	D3ZG94	0	57	Solute carrier family 25 member 43	
-SLC25A43	zebrafish	Q5U3V7	slc25a43	Q5U3V7	1	97	Solute carrier family 25 member 43	
+SLC25A43	human	Q8WUT9	SLC25A43	Q8WUT9	5	111	Solute carrier family 25 member 43	
+SLC25A43	mus-musculus	A2A3V2	Slc25a43	A2A3V2	3	44	Solute carrier family 25 member 43	
+SLC25A43	pan-troglodytes	K7APG4	SLC25A43	K7APG4	2	2	Solute carrier family 25 member 43	
+SLC25A43	rattus-norvegicus	D3ZG94	Slc25a43	D3ZG94	2	59	Solute carrier family 25 member 43	
+SLC25A43	zebrafish	Q5U3V7	slc25a43	Q5U3V7	4	100	Solute carrier family 25 member 43	
+SLC25A43.L	xenopus-laevis	A0A1L8F7K5	slc25a43.L	A0A1L8F7K5	1	1	solute carrier family 25 member 43	
 SLC25A44	human	Q96H78	SLC25A44	Q96H78	0	45	Solute carrier family 25 member 44	
 SLC25A44	rattus-norvegicus	D3ZSN7	Slc25a44	D3ZSN7	0	1	Solute carrier family 25, member 44	
 SLC25A45	human	Q8N413	SLC25A45	Q8N413	0	26	Methylated amino-acid transporter SLC25A45 (Solute carrier f	
 SLC25A45	mus-musculus	Q8CFJ7	Slc25a45	Q8CFJ7	0	1	Solute carrier family 25 member 45	
 SLC25A45	rattus-norvegicus	D3ZL04	Slc25a45	D3ZL04	0	2	Solute carrier family 25 member 45	
-SLC25A46	human	Q96AG3	SLC25A46	Q96AG3	17	285	Mitochondrial outer membrane protein SLC25A46 (Solute carrie	
-SLC25A46	mus-musculus	Q9CQS4	Slc25a46	Q9CQS4	1	3	Mitochondrial outer membrane protein SLC25A46	
-SLC25A46	rattus-norvegicus	Q5EB62	Slc25a46	Q5EB62	1	3	Mitochondrial outer membrane protein SLC25A46	
-SLC25A46	zebrafish	Q6DGU5	slc25a46	Q6DGU5	1	3	Mitochondrial outer membrane protein SLC25A46	w
-SLC25A46	zebrafish	Q6DGU5	slc25a46	Q6DGU5	1	3	Mitochondrial outer membrane protein SLC25A46	w
-SLC25A46A	fly	FBgn0030717	Slc25A46a	Q9VXK8	1	7	GH15472p (Solute carrier family 25 member 46a)	
+SLC25A46	human	Q96AG3	SLC25A46	Q96AG3	34	301	Mitochondrial outer membrane protein SLC25A46 (Solute carrie	
+SLC25A46	mus-musculus	Q9CQS4	Slc25a46	Q9CQS4	16	19	Mitochondrial outer membrane protein SLC25A46	
+SLC25A46	pan-troglodytes	H2QRA8	SLC25A46	H2QRA8	18	18	Solute carrier family 25 member 46	
+SLC25A46	rattus-norvegicus	Q5EB62	Slc25a46	Q5EB62	17	19	Mitochondrial outer membrane protein SLC25A46	
+SLC25A46	zebrafish	Q6DGU5	slc25a46	Q6DGU5	14	17	Mitochondrial outer membrane protein SLC25A46	w
+SLC25A46	zebrafish	Q6DGU5	slc25a46	Q6DGU5	14	17	Mitochondrial outer membrane protein SLC25A46	w
+SLC25A46-A	xenopus-laevis	Q6INQ6	slc25a46-a	Q6INQ6	15	15	Solute carrier family 25 member 46-A	
+SLC25A46A	fly	FBgn0030717	Slc25A46a	Q9VXK8	7	14	GH15472p (Solute carrier family 25 member 46a)	
 SLC25A46B	fly	FBgn0032664	Slc25A46b	Q9VJA5	2	6	FI08023p (Solute carrier family 25 member 46b)	
 SLC25A47	human	Q6Q0C1	SLC25A47	Q6Q0C1	0	108	Solute carrier family 25 member 47 (Hepatocellular carcinoma	
 SLC25A47	mus-musculus	Q6IS41	Slc25a47	Q6IS41	0	41	Solute carrier family 25 member 47	
 SLC25A47	rattus-norvegicus	Q6J329	Slc25a47	Q6J329	0	57	Solute carrier family 25 member 47	
 SLC25A47A	zebrafish	Q1ECW7	slc25a47a	Q1ECW7	0	97	Solute carrier family 25 member 47-A	
 SLC25A47B	zebrafish	A4QNX2	slc25a47b	A4QNX2	0	3	Solute carrier family 25 member 47-B	
-SLC25A48	human	Q6ZT89	SLC25A48	Q6ZT89	1	59	Solute carrier family 25 member 48	
-SLC25A48	mus-musculus	Q8BW66	Slc25a48	Q8BW66	0	1	Solute carrier family 25 member 48	
-SLC25A48	rattus-norvegicus	D4A961	Slc25a48	D4A961	0	2	Solute carrier family 25 member 48	
+SLC25A48	human	Q6ZT89	SLC25A48	Q6ZT89	2	61	Solute carrier family 25 member 48	
+SLC25A48	mus-musculus	Q8BW66	Slc25a48	Q8BW66	1	3	Solute carrier family 25 member 48	
+SLC25A48	pan-troglodytes	A0A2I3S153	SLC25A48	A0A2I3S153	2	2	Solute carrier family 25 member 48	
+SLC25A48	rattus-norvegicus	D4A961	Slc25a48	D4A961	2	4	Solute carrier family 25 member 48	
 SLC25A48	zebrafish	Q6DHS9	slc25a48	Q6DHS9	0	3	Solute carrier family 25 member 48	
 SLC25A5	human	P05141	SLC25A5	P05141	9	575	ADP/ATP translocase 2 (ADP,ATP carrier protein 2) (ADP,ATP c	
 SLC25A5	mus-musculus	P51881	Slc25a5	P51881	0	98	ADP/ATP translocase 2	
 SLC25A5	rattus-norvegicus	Q09073	Slc25a5	Q09073	0	100	ADP/ATP translocase 2	
 SLC25A5	zebrafish	Q8JHI0	slc25a5	Q8JHI0	0	75	ADP/ATP translocase	
-SLC25A51	human	Q9H1U9	SLC25A51	Q9H1U9	2	175	Mitochondrial nicotinamide adenine dinucleotide transporter 	
-SLC25A52	human	Q3SY17	SLC25A52	Q3SY17	1	37	Mitochondrial nicotinamide adenine dinucleotide transporter 	
+SLC25A51	human	Q9H1U9	SLC25A51	Q9H1U9	2	176	Mitochondrial nicotinamide adenine dinucleotide transporter 	
+SLC25A51	mus-musculus	Q5HZI9	Slc25a51	Q5HZI9	0	1	Mitochondrial nicotinamide adenine dinucleotide transporter 	
+SLC25A51	pan-troglodytes	H2QXA7	SLC25A51	H2QXA7	0	1	Solute carrier family 25 member 51	
+SLC25A51	rattus-norvegicus	Q52KK3	Slc25a51	Q52KK3	0	1	Mitochondrial nicotinamide adenine dinucleotide transporter 	
+SLC25A52	human	Q3SY17	SLC25A52	Q3SY17	2	38	Mitochondrial nicotinamide adenine dinucleotide transporter 	
 SLC25A53	human	Q5H9E4	SLC25A53	Q5H9E4	0	21	Solute carrier family 25 member 53 (Mitochondrial carrier tr	
 SLC25A54	mus-musculus	B1AUS6	Slc25a54	B1AUS6	0	54	Mitochondrial adenyl nucleotide antiporter SLC25A24	
 SLC25A54	rattus-norvegicus	D3ZTW5	Slc25a54	D3ZTW5	0	62	Mitochondrial adenyl nucleotide antiporter SLC25A24	
 SLC25A6	human	P12236	SLC25A6	P12236	3	599	ADP/ATP translocase 3 (ADP,ATP carrier protein 3) (ADP,ATP c	
 SLC25A6	zebrafish	B0S730	slc25a6	B0S730	1	65	ADP/ATP translocase	
-SLC25A7	human	P25874	UCP1	P25874	0	120		
-SLC25A8	human	P55851	UCP2	P55851	3	115		
-SLC25A9	human	P55916	UCP3	P55916	4	81		
+SLC25A7	human	P25874	UCP1	P25874	1	121		
+SLC25A8	human	P55851	UCP2	P55851	4	116		
+SLC25A9	human	P55916	UCP3	P55916	5	82		
 SLC26	fly	FBgn0034275	neat	Q7K4I4	0	9	LD38576p (SLC26 membrane transporter protein)	w
 SLC26	fly	FBgn0036240	CG6928	Q7K155	0	5	LD07878p (SLC26 membrane transporter protein)	w
 SLC26A1	human	Q9H2B4	SLC26A1	Q9H2B4	6	61	Sulfate anion transporter 1 (SAT-1) (Solute carrier family 2	
@@ -658,9 +689,10 @@ SLC30A7	human	Q8NEW0	SLC30A7	Q8NEW0	4	106	Zinc transporter 7 (ZnT-7) (Solute car
 SLC30A7	zebrafish	A5PMX1	slc30a7	A5PMX1	0	1	Zinc transporter 7	
 SLC30A8	human	Q8IWU4	SLC30A8	Q8IWU4	6	104	Proton-coupled zinc antiporter SLC30A8 (Solute carrier famil	
 SLC30A9	fly	FBgn0033762	ZnT49B	A1Z935	17	355	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Solut	w
-SLC30A9	human	Q6PML9	SLC30A9	Q6PML9	15	494	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Human	
-SLC30A9	mus-musculus	Q5IRJ6	Slc30a9	Q5IRJ6	2	7	Proton-coupled zinc antiporter SLC30A9, mitochondrial	
-SLC30A9	rattus-norvegicus	A0A8I5ZUD8	Slc30a9	A0A8I5ZUD8	0	5	Proton-coupled zinc antiporter SLC30A9, mitochondrial	
+SLC30A9	human	Q6PML9	SLC30A9	Q6PML9	16	495	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Human	
+SLC30A9	mus-musculus	Q5IRJ6	Slc30a9	Q5IRJ6	3	8	Proton-coupled zinc antiporter SLC30A9, mitochondrial	
+SLC30A9	pan-troglodytes	K6ZLQ1	SLC30A9	K6ZLQ1	1	1	Proton-coupled zinc antiporter SLC30A9, mitochondrial	
+SLC30A9	rattus-norvegicus	A0A8I5ZUD8	Slc30a9	A0A8I5ZUD8	1	6	Proton-coupled zinc antiporter SLC30A9, mitochondrial	
 SLC30A9	zebrafish	Q5PQZ3	slc30a9	Q5PQZ3	0	4	Proton-coupled zinc antiporter SLC30A9, mitochondrial	w
 SLC30A9	zebrafish	Q5PQZ3	slc30a9	Q5PQZ3	0	4	Proton-coupled zinc antiporter SLC30A9, mitochondrial	w
 SLC31A1	human	O15431	SLC31A1	O15431	12	211	High affinity copper uptake protein 1 (Copper transporter 1)	
@@ -1160,9 +1192,11 @@ SLC8A2	rattus-norvegicus	P48768	Slc8a2	P48768	0	8	Sodium/calcium exchanger 2
 SLC8A3	human	P57103	SLC8A3	P57103	3	47	Sodium/calcium exchanger 3 (Na(+)/Ca(2+)-exchange protein 3)	
 SLC8A3	mus-musculus	S4R2P9	Slc8a3	S4R2P9	0	2	Sodium/calcium exchanger 3	
 SLC8A3	rattus-norvegicus	P70549	Slc8a3	P70549	0	3	Sodium/calcium exchanger 3	
-SLC8B1	human	Q6J4K2	SLC8B1	Q6J4K2	1	46	Mitochondrial sodium/calcium exchanger protein (Na(+)/K(+)/C	
-SLC8B1	mus-musculus	Q925Q3	Slc8b1	Q925Q3	0	5	Mitochondrial sodium/calcium exchanger protein	
-SLC8B1	rattus-norvegicus	Q6AXS0	Slc8b1	Q6AXS0	1	7	Mitochondrial sodium/calcium exchanger protein	
+SLC8B1	human	Q6J4K2	SLC8B1	Q6J4K2	4	49	Mitochondrial sodium/calcium exchanger protein (Na(+)/K(+)/C	
+SLC8B1	mus-musculus	Q925Q3	Slc8b1	Q925Q3	2	7	Mitochondrial sodium/calcium exchanger protein	
+SLC8B1	pan-troglodytes	H2Q6X9	SLC8B1	H2Q6X9	3	3	Solute carrier family 24 (Sodium/potassium/calcium exchanger	
+SLC8B1	rattus-norvegicus	Q6AXS0	Slc8b1	Q6AXS0	4	10	Mitochondrial sodium/calcium exchanger protein	
+SLC8B1.S	xenopus-laevis	A0A8J1LFK3	slc8b1.S	A0A8J1LFK3	2	2	solute carrier family 8 (Sodium/lithium/calcium exchanger), 	
 SLC9A1	human	P19634	SLC9A1	P19634	26	250	Sodium/hydrogen exchanger 1 (APNH) (Na(+)/H(+) antiporter, a	
 SLC9A1	mus-musculus	Q61165	Slc9a1	Q61165	10	55	Sodium/hydrogen exchanger 1	
 SLC9A1	rattus-norvegicus	P26431	Slc9a1	P26431	11	54	Sodium/hydrogen exchanger 1	

@@ -6,7 +6,7 @@ Q6A037	mus-musculus	Q6A037	N4bp1	Q6A037	1	4	NEDD4-binding protein 1
 Q6A039	mus-musculus	Q6A039	Tbc1d12	Q6A039	0	1	TBC1 domain family member 12	
 Q6A044	mus-musculus	Q6A044	Entrep2	Q6A044	0	1	Protein ENTREP2	
 Q6A051	mus-musculus	Q6A051	Atrnl1	Q6A051	1	1	Attractin-like protein 1	
-Q6A058	mus-musculus	Q6A058	Armcx2	Q6A058	0	8	Armadillo repeat-containing X-linked protein 2	
+Q6A058	mus-musculus	Q6A058	Armcx2	Q6A058	10	19	Armadillo repeat-containing X-linked protein 2	
 Q6A068	mus-musculus	Q6A068	Cdc5l	Q6A068	29	191	Cell division cycle 5-like protein	
 Q6A085	mus-musculus	Q6A085	Znf629	Q6A085	1	7	Zinc finger protein 629	
 Q6A098	mus-musculus	Q6A098	Secisbp2l	Q6A098	5	63	Selenocysteine insertion sequence-binding protein 2-like	
@@ -16,6 +16,8 @@ Q6A162	human	Q6A162	KRT40	Q6A162	98	464	Keratin, type I cytoskeletal 40 (Cytoker
 Q6A163	human	Q6A163	KRT39	Q6A163	67	102	Keratin, type I cytoskeletal 39 (Cytokeratin-39) (CK-39) (Ke	
 Q6A1A2	human	Q6A1A2	PDPK2P	Q6A1A2	204	1188	Putative 3-phosphoinositide-dependent protein kinase 2 (EC 2	
 Q6A1T5	worm	Q6A1T5	CELE_F10G8.9	Q6A1T5	1	11	beta-ketoacyl-	
+Q6A1T5_CAEEL	worm	Q6A1T5	CELE_F10G8.9	Q6A1T5	1	11		
+Q6A2H0	pan-troglodytes	Q6A2H0	ALDH5A1	Q6A2H0	8	8	Succinate-semialdehyde dehydrogenase, mitochondrial	
 Q6A329	arabidopsis-thaliana	Q6A329	SUC6	Q6A329	0	1	Putative sucrose transport protein SUC6	
 Q6A331	arabidopsis-thaliana	Q6A331	ALY1	Q6A331	10	29	Protein ALWAYS EARLY 1	
 Q6A332	arabidopsis-thaliana	Q6A332	ALY3	Q6A332	9	28	Protein ALWAYS EARLY 3	
@@ -27,9 +29,10 @@ Q6A555	human	Q6A555	TXNDC8	Q6A555	5	47	Thioredoxin domain-containing protein 8 (
 Q6A573	worm	Q6A573	cdap-2	Q6A573	3	60	SH3 domain-containing protein	
 Q6A574	worm	Q6A574	CELE_F43C1.7	Q6A574	0	3	Coiled-coil domain-containing protein 25	
 Q6A575	worm	Q6A575	mrpl-21	Q6A575	5	170	Large ribosomal subunit protein bL21m	
+Q6A575_CAEEL	worm	Q6A575	mrpl-21	Q6A575	5	170		
 Q6A586	worm	Q6A586	CELE_D1069.3	Q6A586	1	1	Hyccin	
 Q6A590	worm	Q6A590	fbxl-4	Q6A590	20	30	F-box domain-containing protein	
-Q6AHP8	worm	Q6AHP8	fis-2	Q6AHP8	2	22	FIS1-related protein fis-2	
+Q6AHP8	worm	Q6AHP8	fis-2	Q6AHP8	3	23	FIS1-related protein fis-2	
 Q6AHP9	worm	Q6AHP9	try-9	Q6AHP9	0	2	Peptidase S1 domain-containing protein	
 Q6AHQ8	worm	Q6AHQ8	sdpn-1	Q6AHQ8	1	9	SH3 domain-containing protein	
 Q6AHR3	worm	Q6AHR3	prps-1	Q6AHR3	1	17	ribose-phosphate diphosphokinase	
@@ -216,9 +219,12 @@ Q6AWY2	oryza-sativa-subsp-japonica	Q6AWY2	GRF7	Q6AWY2	1	1	Growth-regulating fact
 Q6AWY3	oryza-sativa-subsp-japonica	Q6AWY3	GRF6	Q6AWY3	1	1	Growth-regulating factor 6	
 Q6AWY6	oryza-sativa-subsp-japonica	Q6AWY6	GRF3	Q6AWY6	0	1	Growth-regulating factor 3	
 Q6AWY8	oryza-sativa-subsp-japonica	Q6AWY8	GRF1	Q6AWY8	1	1	Growth-regulating factor 1	
+Q6AX14	xenopus-laevis	Q6AX14	coq8b.L	Q6AX14	5	6	MGC86474 protein	
+Q6AXB3	xenopus-laevis	Q6AXB3	shmt2.L	Q6AXB3	3	3	Serine hydroxymethyltransferase	
 Q6AXC6	mus-musculus	Q6AXC6	Ddx11	Q6AXC6	1	52	ATP-dependent DNA helicase DDX11	
 Q6AXF6	mus-musculus	Q6AXF6	Sidt1	Q6AXF6	1	47	SID1 transmembrane family member 1	
-Q6AXI7	zebrafish	Q6AXI7	acads	Q6AXI7	2	11	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
+Q6AXI7	zebrafish	Q6AXI7	acads	Q6AXI7	11	20	Short-chain specific acyl-CoA dehydrogenase, mitochondrial	
+Q6AXI7_DANRE	zebrafish	Q6AXI7	acads	Q6AXI7	11	20		
 Q6AXJ2	zebrafish	Q6AXJ2	eif3ha	Q6AXJ2	5	125	Eukaryotic translation initiation factor 3 subunit H-A	
 Q6AXJ3	zebrafish	Q6AXJ3	dexi	Q6AXJ3	0	1	Dexamethasone-induced protein homolog	
 Q6AXJ7	zebrafish	Q6AXJ7	fam199x	Q6AXJ7	0	2	Protein FAM199X	
@@ -231,6 +237,8 @@ Q6AXL2	zebrafish	Q6AXL2	rida	Q6AXL2	0	15	2-iminobutanoate/2-iminopropanoate deam
 Q6AXL3	zebrafish	Q6AXL3	nrros	Q6AXL3	2	22	Transforming growth factor beta activator LRRC33	
 Q6AXL4	zebrafish	Q6AXL4	ncaldb	Q6AXL4	4	24	Neurocalcin-delta B	
 Q6AXL5	zebrafish	Q6AXL5	hspbap1	Q6AXL5	0	8	HSPB1-associated protein 1 homolog	
+Q6AXL6	zebrafish	Q6AXL6	zgc:100970	Q6AXL6	7	9	28S ribosomal protein S27, mitochondrial	
+Q6AXL6_DANRE	zebrafish	Q6AXL6	zgc:100970	Q6AXL6	7	9		
 Q6AXL8	zebrafish	Q6AXL8	zmat5	Q6AXL8	7	75	Zinc finger matrin-type protein 5	
 Q6AXM5	rattus-norvegicus	Q6AXM5	Cept1	Q6AXM5	1	4	Choline/ethanolaminephosphotransferase 1	
 Q6AXM6	rattus-norvegicus	Q6AXM6	Icam2	Q6AXM6	8	34	Intercellular adhesion molecule 2	
@@ -247,19 +255,19 @@ Q6AXP6	rattus-norvegicus	Q6AXP6	Catsper2	Q6AXP6	6	45	Cation channel sperm-associ
 Q6AXQ0	rattus-norvegicus	Q6AXQ0	Sae1	Q6AXQ0	3	44	SUMO-activating enzyme subunit 1	
 Q6AXQ2	rattus-norvegicus	Q6AXQ2	Efcab11	Q6AXQ2	3	18	EF-hand calcium-binding domain-containing protein 11	
 Q6AXQ4	rattus-norvegicus	Q6AXQ4	Mtm1	Q6AXQ4	1	4	Myotubularin	
-Q6AXQ5	rattus-norvegicus	Q6AXQ5	Pde12	Q6AXQ5	0	10	2,5-phosphodiesterase 12	
+Q6AXQ5	rattus-norvegicus	Q6AXQ5	Pde12	Q6AXQ5	2	13	2,5-phosphodiesterase 12	
 Q6AXQ7	rattus-norvegicus	Q6AXQ7	Iqca1l	Q6AXQ7	3	27	IQ and AAA domain-containing protein 1-like	
 Q6AXQ8	rattus-norvegicus	Q6AXQ8	Mns1	Q6AXQ8	0	66	Meiosis-specific nuclear structural protein 1	
 Q6AXQ9	rattus-norvegicus	Q6AXQ9	Ift46	Q6AXQ9	5	35	Intraflagellar transport protein 46 homolog	
 Q6AXR4	rattus-norvegicus	Q6AXR4	Hexb	Q6AXR4	1	1	Beta-hexosaminidase subunit beta	
 Q6AXR5	rattus-norvegicus	Q6AXR5	Slc35a3	Q6AXR5	0	2	UDP-N-acetylglucosamine transporter	
 Q6AXR8	rattus-norvegicus	Q6AXR8	Orai3	Q6AXR8	2	9	Protein orai-3	
-Q6AXS0	rattus-norvegicus	Q6AXS0	Slc8b1	Q6AXS0	1	7	Mitochondrial sodium/calcium exchanger protein	
+Q6AXS0	rattus-norvegicus	Q6AXS0	Slc8b1	Q6AXS0	4	10	Mitochondrial sodium/calcium exchanger protein	
 Q6AXS3	rattus-norvegicus	Q6AXS3	Dek	Q6AXS3	1	38	Protein DEK	
 Q6AXS4	rattus-norvegicus	Q6AXS4	Atp6ap2	Q6AXS4	2	55	Renin receptor	
 Q6AXS5	rattus-norvegicus	Q6AXS5	Serbp1	Q6AXS5	20	409	SERPINE1 mRNA-binding protein 1	
 Q6AXS8	rattus-norvegicus	Q6AXS8	Tpgs2	Q6AXS8	1	4	Tubulin polyglutamylase complex subunit 2	
-Q6AXT0	rattus-norvegicus	Q6AXT0	Mrpl37	Q6AXT0	10	184	Large ribosomal subunit protein mL37	
+Q6AXT0	rattus-norvegicus	Q6AXT0	Mrpl37	Q6AXT0	11	185	Large ribosomal subunit protein mL37	
 Q6AXT1	rattus-norvegicus	Q6AXT1	Fhl5	Q6AXT1	0	4	Four and a half LIM domains protein 5	
 Q6AXT3	rattus-norvegicus	Q6AXT3	Arl13a	Q6AXT3	1	4	ADP-ribosylation factor-like protein 13A	
 Q6AXT5	rattus-norvegicus	Q6AXT5	Rab21	Q6AXT5	7	22	Ras-related protein Rab-21	
@@ -274,13 +282,13 @@ Q6AXU7	rattus-norvegicus	Q6AXU7	Mif4gd	Q6AXU7	2	5	MIF4G domain-containing protei
 Q6AXU8	rattus-norvegicus	Q6AXU8	Mettl6	Q6AXU8	0	7	tRNA N(3)-cytidine methyltransferase METTL6	
 Q6AXU9	rattus-norvegicus	Q6AXU9	Cnot6	Q6AXU9	3	18	CCR4-NOT transcription complex subunit 6	
 Q6AXV2	rattus-norvegicus	Q6AXV2	Tekt4	Q6AXV2	3	52	Tektin-4	
-Q6AXV4	rattus-norvegicus	Q6AXV4	Samm50	Q6AXV4	4	28	Sorting and assembly machinery component 50 homolog	
+Q6AXV4	rattus-norvegicus	Q6AXV4	Samm50	Q6AXV4	5	29	Sorting and assembly machinery component 50 homolog	
 Q6AXV5	rattus-norvegicus	Q6AXV5	Spnl1	Q6AXV5	0	22	Sialophorin like 1	
 Q6AXV6	rattus-norvegicus	Q6AXV6	Cby2	Q6AXV6	0	4	Protein chibby homolog 2	
 Q6AXV7	rattus-norvegicus	Q6AXV7	Fam187a	Q6AXV7	0	3	Ig-like V-type domain-containing protein FAM187A	
 Q6AXV9	rattus-norvegicus	Q6AXV9	Gsto2	Q6AXV9	16	76	Glutathione S-transferase omega-2	
 Q6AXW0	rattus-norvegicus	Q6AXW0	Cdca8	Q6AXW0	8	110	Borealin	
-Q6AXW1	rattus-norvegicus	Q6AXW1	Glrx2	Q6AXW1	0	5	Glutaredoxin-2, mitochondrial	
+Q6AXW1	rattus-norvegicus	Q6AXW1	Glrx2	Q6AXW1	2	8	Glutaredoxin-2, mitochondrial	
 Q6AXW4	rattus-norvegicus	Q6AXW4	PHD finger protein 7	Q6AXW4	0	5	E3 ubiquitin-protein ligase PHF7	
 Q6AXX1	rattus-norvegicus	Q6AXX1	Slfnl1	Q6AXX1	3	50	Schlafen-like protein 1	
 Q6AXX4	rattus-norvegicus	Q6AXX4	Utp3	Q6AXX4	11	194	Something about silencing protein 10	
@@ -289,7 +297,7 @@ Q6AXX9	rattus-norvegicus	Q6AXX9	Apobec4	Q6AXX9	0	1	Putative C->U-editing enzyme 
 Q6AXY0	rattus-norvegicus	Q6AXY0	Gsta6	Q6AXY0	15	16	Glutathione S-transferase A6	
 Q6AXY4	rattus-norvegicus	Q6AXY4	Pold2	Q6AXY4	6	86	DNA polymerase delta subunit 2	
 Q6AXY7	rattus-norvegicus	Q6AXY7	Prpf38b	Q6AXY7	0	2	Pre-mRNA-splicing factor 38B	
-Q6AXY8	rattus-norvegicus	Q6AXY8	Dhrs1	Q6AXY8	0	13	Dehydrogenase/reductase SDR family member 1	
+Q6AXY8	rattus-norvegicus	Q6AXY8	Dhrs1	Q6AXY8	1	15	Dehydrogenase/reductase SDR family member 1	
 Q6AXY9	rattus-norvegicus	Q6AXY9	Spz1	Q6AXY9	1	13	Spermatogenic leucine zipper protein 1	
 Q6AXZ0	rattus-norvegicus	Q6AXZ0	Paip2	Q6AXZ0	8	12	Polyadenylate-binding protein-interacting protein 2	
 Q6AXZ2	rattus-norvegicus	Q6AXZ2	Lrrc46	Q6AXZ2	4	21	Leucine-rich repeat-containing protein 46	
@@ -300,7 +308,7 @@ Q6AXZ6	rattus-norvegicus	Q6AXZ6	Prss40	Q6AXZ6	0	2	Serine protease 40
 Q6AY00	rattus-norvegicus	Q6AY00	Glrx-ps16	Q6AY00	1	8	Glutaredoxin-1	
 Q6AY02	rattus-norvegicus	Q6AY02	Rbm17	Q6AY02	12	34	Splicing factor 45	
 Q6AY03	rattus-norvegicus	Q6AY03	Paqr8	Q6AY03	0	4	Progestin and adipoQ receptor family member 8	
-Q6AY04	rattus-norvegicus	Q6AY04	Maip1	Q6AY04	1	5	m-AAA protease-interacting protein 1, mitochondrial	
+Q6AY04	rattus-norvegicus	Q6AY04	Maip1	Q6AY04	2	6	m-AAA protease-interacting protein 1, mitochondrial	
 Q6AY06	rattus-norvegicus	Q6AY06	Izumo1	Q6AY06	1	9	Izumo sperm-egg fusion protein 1	
 Q6AY07	rattus-norvegicus	Q6AY07	Aldoart2	Q6AY07	0	27	Fructose-bisphosphate aldolase	
 Q6AY09	rattus-norvegicus	Q6AY09	Hnrnph2	Q6AY09	0	28	Heterogeneous nuclear ribonucleoprotein H2	
@@ -308,11 +316,11 @@ Q6AY12	rattus-norvegicus	Q6AY12	Cyb5r2	Q6AY12	1	13	NADH-cytochrome b5 reductase 
 Q6AY13	rattus-norvegicus	Q6AY13	Ccna1	Q6AY13	39	115	Cyclin-A1	
 Q6AY16	rattus-norvegicus	Q6AY16	Actl9	Q6AY16	15	94	Actin-like protein 9	
 Q6AY17	rattus-norvegicus	Q6AY17	Abhd17b	Q6AY17	0	8	Alpha/beta hydrolase domain-containing protein 17B	
-Q6AY19	rattus-norvegicus	Q6AY19	Coq8b	Q6AY19	0	4	Atypical kinase COQ8B, mitochondrial	
+Q6AY19	rattus-norvegicus	Q6AY19	Coq8b	Q6AY19	6	10	Atypical kinase COQ8B, mitochondrial	
 Q6AY20	rattus-norvegicus	Q6AY20	M6pr	Q6AY20	3	57	Cation-dependent mannose-6-phosphate receptor	
 Q6AY21	rattus-norvegicus	Q6AY21	G3bp2	Q6AY21	10	49	Ras GTPase-activating protein-binding protein 2	
 Q6AY22	rattus-norvegicus	Q6AY22	Spata1	Q6AY22	1	1	Spermatogenesis-associated protein 1	
-Q6AY23	rattus-norvegicus	Q6AY23	Pycr2	Q6AY23	2	7	Pyrroline-5-carboxylate reductase 2	
+Q6AY23	rattus-norvegicus	Q6AY23	Pycr2	Q6AY23	2	8	Pyrroline-5-carboxylate reductase 2	
 Q6AY25	rattus-norvegicus	Q6AY25	Tmed3	Q6AY25	11	218	Transmembrane emp24 domain-containing protein 3	
 Q6AY26	rattus-norvegicus	Q6AY26	Rhno1	Q6AY26	2	29	RAD9, HUS1, RAD1-interacting nuclear orphan protein 1	
 Q6AY27	rattus-norvegicus	Q6AY27	Fbxo17	Q6AY27	3	12	F-box only protein 17	
@@ -330,13 +338,13 @@ Q6AY46	rattus-norvegicus	Q6AY46	Trmt61a	Q6AY46	2	6	tRNA (adenine(58)-N(1))-methy
 Q6AY47	rattus-norvegicus	Q6AY47	Ficd	Q6AY47	9	23	Protein adenylyltransferase FICD	
 Q6AY49	rattus-norvegicus	Q6AY49	Tusc3	Q6AY49	3	19	Tumor suppressor candidate 3	
 Q6AY53	rattus-norvegicus	Q6AY53	Dhps	Q6AY53	2	7	Deoxyhypusine synthase	
-Q6AY55	rattus-norvegicus	Q6AY55	Dcakd	Q6AY55	0	1	Dephospho-CoA kinase domain-containing protein	
+Q6AY55	rattus-norvegicus	Q6AY55	Dcakd	Q6AY55	2	3	Dephospho-CoA kinase domain-containing protein	
 Q6AY56	rattus-norvegicus	Q6AY56	Tuba8	Q6AY56	15	127	Tubulin alpha-8 chain	
 Q6AY57	rattus-norvegicus	Q6AY57	Wipi2	Q6AY57	3	21	WD repeat domain phosphoinositide-interacting protein 2	
 Q6AY59	rattus-norvegicus	Q6AY59	Mocs2	Q6AY59	0	3	Molybdopterin synthase catalytic subunit	
 Q6AY61	rattus-norvegicus	Q6AY61	Prss23	Q6AY61	0	3	Serine protease 23	
 Q6AY62	rattus-norvegicus	Q6AY62	Cyb5d2	Q6AY62	1	13	Neuferricin	
-Q6AY63	rattus-norvegicus	Q6AY63	Nudt5	Q6AY63	1	16	ADP-sugar pyrophosphatase	
+Q6AY63	rattus-norvegicus	Q6AY63	Nudt5	Q6AY63	9	25	ADP-sugar pyrophosphatase	
 Q6AY65	rattus-norvegicus	Q6AY65	Arfip2	Q6AY65	2	10	Arfaptin-2	
 Q6AY69	rattus-norvegicus	Q6AY69	Atg101	Q6AY69	4	40	Autophagy-related protein 101	
 Q6AY70	rattus-norvegicus	Q6AY70	Kansl2	Q6AY70	11	50	KAT8 regulatory NSL complex subunit 2	
@@ -356,15 +364,17 @@ Q6AY88	rattus-norvegicus	Q6AY88	Kdf1	Q6AY88	0	1	Keratinocyte differentiation fac
 Q6AY90	rattus-norvegicus	Q6AY90	Psme3ip1	Q6AY90	4	52	NEFA-interacting nuclear protein NIP30	
 Q6AY91	rattus-norvegicus	Q6AY91	Nmrk1	Q6AY91	0	19	Nicotinamide riboside kinase 1	
 Q6AY92	rattus-norvegicus	Q6AY92	Slc44a3	Q6AY92	0	8	Choline transporter-like protein 3	
-Q6AY94	rattus-norvegicus	Q6AY94	Timmdc1	Q6AY94	2	62	Complex I assembly factor TIMMDC1, mitochondrial	
+Q6AY94	rattus-norvegicus	Q6AY94	Timmdc1	Q6AY94	4	64	Complex I assembly factor TIMMDC1, mitochondrial	
 Q6AY96	rattus-norvegicus	Q6AY96	Gtf2f1	Q6AY96	22	180	General transcription factor IIF subunit 1	
 Q6AY97	rattus-norvegicus	Q6AY97	Ccdc91	Q6AY97	3	7	Coiled-coil domain-containing protein 91	
-Q6AY99	rattus-norvegicus	Q6AY99	Akr1b10	Q6AY99	0	6	aldose reductase	
+Q6AY99	rattus-norvegicus	Q6AY99	Akr1b10	Q6AY99	5	11	aldose reductase	
 Q6AYA0	rattus-norvegicus	Q6AYA0	Rilpl2	Q6AYA0	1	29	RILP-like protein 2	
 Q6AYA1	rattus-norvegicus	Q6AYA1	Gar1	Q6AYA1	3	79	H/ACA ribonucleoprotein complex subunit 1	
 Q6AYA2	rattus-norvegicus	Q6AYA2	Vrk1	Q6AYA2	0	22	Serine/threonine-protein kinase VRK1	
 Q6AYA5	rattus-norvegicus	Q6AYA5	Tmem106b	Q6AYA5	0	2	Transmembrane protein 106B	
+Q6AYA7	rattus-norvegicus	Q6AYA7	Rfk	Q6AYA7	2	3	riboflavin kinase	
 Q6AYA8	rattus-norvegicus	Q6AYA8	Pgcka1	Q6AYA8	1	4	PDCD10 and GCKIII kinases-associated protein 1	
+Q6AYB2	rattus-norvegicus	Q6AYB2	Sphk2	Q6AYB2	5	6	RCG53912, isoform CRA_a	
 Q6AYB3	rattus-norvegicus	Q6AYB3	Isy1	Q6AYB3	10	108	Pre-mRNA-splicing factor ISY1 homolog	
 Q6AYB4	rattus-norvegicus	Q6AYB4	Hspa14	Q6AYB4	9	50	Heat shock 70 kDa protein 14	
 Q6AYB5	rattus-norvegicus	Q6AYB5	Srp54	Q6AYB5	11	397	Signal recognition particle subunit SRP54	
@@ -386,7 +396,7 @@ Q6AYD4	rattus-norvegicus	Q6AYD4	Esam	Q6AYD4	2	32	Endothelial cell-selective adhe
 Q6AYD5	rattus-norvegicus	Q6AYD5	Gspt1	Q6AYD5	10	160	G1 to S phase transition 1	
 Q6AYD6	rattus-norvegicus	Q6AYD6	Pdlim2	Q6AYD6	5	41	PDZ and LIM domain protein 2	
 Q6AYD8	rattus-norvegicus	Q6AYD8	Arhgap8	Q6AYD8	0	12	Rho GTPase activating protein 8	
-Q6AYD9	rattus-norvegicus	Q6AYD9	Nudt19	Q6AYD9	2	18	Acyl-coenzyme A diphosphatase NUDT19	
+Q6AYD9	rattus-norvegicus	Q6AYD9	Nudt19	Q6AYD9	6	22	Acyl-coenzyme A diphosphatase NUDT19	
 Q6AYE2	rattus-norvegicus	Q6AYE2	Sh3glb1	Q6AYE2	1	18	Endophilin-B1	
 Q6AYE3	rattus-norvegicus	Q6AYE3	Tada2a	Q6AYE3	11	53	Transcriptional adapter 2-alpha	
 Q6AYE4	rattus-norvegicus	Q6AYE4	Atp6v1c2	Q6AYE4	4	54	V-type proton ATPase subunit C 2	
@@ -398,9 +408,9 @@ Q6AYF4	rattus-norvegicus	Q6AYF4	Itgb6	Q6AYF4	22	76	Integrin beta-6
 Q6AYF9	rattus-norvegicus	Q6AYF9	Irgc	Q6AYF9	0	7	Interferon-inducible GTPase 5	
 Q6AYG0	rattus-norvegicus	Q6AYG0	Mettl25b	Q6AYG0	1	2	Methyltransferase-like protein 25B	
 Q6AYG1	rattus-norvegicus	Q6AYG1	Msl3b	Q6AYG1	11	64	MSL complex subunit 3B	
-Q6AYG2	rattus-norvegicus	Q6AYG2	Dnajc28	Q6AYG2	0	11	DnaJ heat shock protein family (Hsp40) member C28	
+Q6AYG2	rattus-norvegicus	Q6AYG2	Dnajc28	Q6AYG2	3	13	DnaJ heat shock protein family (Hsp40) member C28	
 Q6AYG3	rattus-norvegicus	Q6AYG3	Prune1	Q6AYG3	1	13	Exopolyphosphatase PRUNE1	
-Q6AYG5	rattus-norvegicus	Q6AYG5	Echdc1	Q6AYG5	0	110	Ethylmalonyl-CoA decarboxylase	
+Q6AYG5	rattus-norvegicus	Q6AYG5	Echdc1	Q6AYG5	1	112	Ethylmalonyl-CoA decarboxylase	
 Q6AYG7	rattus-norvegicus	Q6AYG7	Nfatc2ip	Q6AYG7	10	70	NFATC2-interacting protein	
 Q6AYG8	rattus-norvegicus	Q6AYG8	Calr3	Q6AYG8	0	61	Calreticulin	
 Q6AYG9	rattus-norvegicus	Q6AYG9	Best1	Q6AYG9	0	5	Bestrophin	
@@ -429,7 +439,7 @@ Q6AYK5	rattus-norvegicus	Q6AYK5	Lyar	Q6AYK5	40	261	Cell growth-regulating nucleo
 Q6AYK6	rattus-norvegicus	Q6AYK6	Cacybp	Q6AYK6	4	25	Calcyclin-binding protein	
 Q6AYK8	rattus-norvegicus	Q6AYK8	Eif3d	Q6AYK8	8	223	Eukaryotic translation initiation factor 3 subunit D	
 Q6AYK9	rattus-norvegicus	Q6AYK9	Cdyl	Q6AYK9	9	159	Chromodomain Y-like protein	
-Q6AYL0	rattus-norvegicus	Q6AYL0	Slc25a19	Q6AYL0	0	57	Mitochondrial thiamine pyrophosphate carrier	
+Q6AYL0	rattus-norvegicus	Q6AYL0	Slc25a19	Q6AYL0	1	58	Mitochondrial thiamine pyrophosphate carrier	
 Q6AYL2	rattus-norvegicus	Q6AYL2	Gsg1	Q6AYL2	1	2	Germ cell-specific gene 1 protein	
 Q6AYL4	rattus-norvegicus	Q6AYL4	Ribc1	Q6AYL4	2	88	RIB43A-like with coiled-coils protein 1	
 Q6AYL5	rattus-norvegicus	Q6AYL5	Sf3b4	Q6AYL5	6	202	Splicing factor 3B subunit 4	
@@ -451,10 +461,10 @@ Q6AYP7	rattus-norvegicus	Q6AYP7	Nt5c3b	Q6AYP7	1	12	7-methylguanosine phosphate-s
 Q6AYQ0	rattus-norvegicus	Q6AYQ0	Magix	Q6AYQ0	0	4	PDZ domain-containing protein MAGIX	
 Q6AYQ1	rattus-norvegicus	Q6AYQ1	Golga7	Q6AYQ1	6	21	Golgin subfamily A member 7	
 Q6AYQ2	rattus-norvegicus	Q6AYQ2	Akr1c21	Q6AYQ2	0	1	Aldo-keto reductase family 1 member C21	
-Q6AYQ3	rattus-norvegicus	Q6AYQ3	Fars2	Q6AYQ3	0	7	Phenylalanine--tRNA ligase, mitochondrial	
+Q6AYQ3	rattus-norvegicus	Q6AYQ3	Fars2	Q6AYQ3	4	12	Phenylalanine--tRNA ligase, mitochondrial	
 Q6AYQ4	rattus-norvegicus	Q6AYQ4	Tmem109	Q6AYQ4	0	1	Voltage-gated monoatomic cation channel TMEM109	
-Q6AYQ6	rattus-norvegicus	Q6AYQ6	Mmadhc	Q6AYQ6	1	1	Cobalamin trafficking protein CblD	
-Q6AYQ8	rattus-norvegicus	Q6AYQ8	Fahd1	Q6AYQ8	0	6	Oxaloacetate tautomerase FAHD1, mitochondrial	
+Q6AYQ6	rattus-norvegicus	Q6AYQ6	Mmadhc	Q6AYQ6	6	7	Cobalamin trafficking protein CblD	
+Q6AYQ8	rattus-norvegicus	Q6AYQ8	Fahd1	Q6AYQ8	2	8	Oxaloacetate tautomerase FAHD1, mitochondrial	
 Q6AYQ9	rattus-norvegicus	Q6AYQ9	Ppic	Q6AYQ9	12	159	Peptidyl-prolyl cis-trans isomerase	
 Q6AYR2	rattus-norvegicus	Q6AYR2	Ndrg3	Q6AYR2	0	1	Protein NDRG3	
 Q6AYR4	rattus-norvegicus	Q6AYR4	Tor2a	Q6AYR4	2	2	Torsin-2A	
@@ -468,14 +478,14 @@ Q6AYS5	rattus-norvegicus	Q6AYS5	Tmem98	Q6AYS5	2	5	Transmembrane protein 98
 Q6AYS6	rattus-norvegicus	Q6AYS6	Snx17	Q6AYS6	3	38	Sorting nexin-17	
 Q6AYS7	rattus-norvegicus	Q6AYS7	Acy1a	Q6AYS7	0	8	Aminoacylase-1A	
 Q6AYS8	rattus-norvegicus	Q6AYS8	Hsd17b11	Q6AYS8	0	5	Estradiol 17-beta-dehydrogenase 11	
-Q6AYT0	rattus-norvegicus	Q6AYT0	Cryz	Q6AYT0	0	4	Quinone oxidoreductase	
+Q6AYT0	rattus-norvegicus	Q6AYT0	Cryz	Q6AYT0	2	6	Quinone oxidoreductase	
 Q6AYT1	rattus-norvegicus	Q6AYT1	Trim5	Q6AYT1	4	21	Tripartite motif-containing 5	
 Q6AYT2	rattus-norvegicus	Q6AYT2	Nfe2	Q6AYT2	10	15	Transcription factor NF-E2 45 kDa subunit	
 Q6AYT3	rattus-norvegicus	Q6AYT3	Rtcb	Q6AYT3	3	26	RNA-splicing ligase RtcB homolog	
 Q6AYT5	rattus-norvegicus	Q6AYT5	Armt1	Q6AYT5	0	1	Damage-control phosphatase ARMT1	
 Q6AYT7	rattus-norvegicus	Q6AYT7	Abhd12	Q6AYT7	0	52	Lysophosphatidylserine lipase ABHD12	
 Q6AYT8	rattus-norvegicus	Q6AYT8	Mpzl1	Q6AYT8	2	8	Myelin protein zero-like protein 1	
-Q6AYT9	rattus-norvegicus	Q6AYT9	Acsm5	Q6AYT9	0	1	Acyl-coenzyme A synthetase ACSM5, mitochondrial	
+Q6AYT9	rattus-norvegicus	Q6AYT9	Acsm5	Q6AYT9	1	2	Acyl-coenzyme A synthetase ACSM5, mitochondrial	
 Q6AYU0	rattus-norvegicus	Q6AYU0	?	Q6AYU0	0	2	Uncharacterized protein C12orf50 homolog	
 Q6AYU1	rattus-norvegicus	Q6AYU1	Morf4l1	Q6AYU1	13	81	Mortality factor 4-like protein 1	
 Q6AYU3	rattus-norvegicus	Q6AYU3	Dnajb6	Q6AYU3	8	66	DnaJ homolog subfamily B member 6	
@@ -490,8 +500,9 @@ Q6AZ51	rattus-norvegicus	Q6AZ51	Il17re	Q6AZ51	5	14	Interleukin-17 receptor E
 Q6AZ60	rattus-norvegicus	Q6AZ60	Egfl7	Q6AZ60	2	5	Epidermal growth factor-like protein 7	
 Q6AZ61	rattus-norvegicus	Q6AZ61	Lmbrd1	Q6AZ61	0	2	Lysosomal cobalamin transport escort protein LMBD1	
 Q6AZ83	rattus-norvegicus	Q6AZ83	G6pc3	Q6AZ83	1	8	Glucose-6-phosphatase 3	
-Q6AZA0	zebrafish	Q6AZA0	acat1	Q6AZA0	1	16	Acetyl-CoA acetyltransferase, mitochondrial	
-Q6AZA2	zebrafish	Q6AZA2	ndufv1	Q6AZA2	7	226	NADH dehydrogenase	
+Q6AZA0	zebrafish	Q6AZA0	acat1	Q6AZA0	3	18	Acetyl-CoA acetyltransferase, mitochondrial	
+Q6AZA2	zebrafish	Q6AZA2	ndufv1	Q6AZA2	19	238	NADH dehydrogenase	
+Q6AZA2_DANRE	zebrafish	Q6AZA2	ndufv1	Q6AZA2	19	238		
 Q6AZB0	mus-musculus	Q6AZB0	Boc	Q6AZB0	3	22	Brother of CDO	
 Q6AZB2	zebrafish	Q6AZB2	oxct1a	Q6AZB2	0	2	Succinyl-CoA:3-ketoacid-coenzyme A transferase	
 Q6AZB3	zebrafish	Q6AZB3	ciapin1	Q6AZB3	2	18	Anamorsin	
@@ -502,7 +513,10 @@ Q6AZC0	zebrafish	Q6AZC0	cela1.6	Q6AZC0	1	6	pancreatic elastase
 Q6AZC1	zebrafish	Q6AZC1	psmc5	Q6AZC1	7	114	26S proteasome regulatory subunit 8	
 Q6AZD2	zebrafish	Q6AZD2	aqp4	Q6AZD2	4	40	Aquaporin-4	
 Q6AZD3	zebrafish	Q6AZD3	meaf6	Q6AZD3	23	97	Chromatin modification-related protein MEAF6	
-Q6AZD4	zebrafish	Q6AZD4	immp2l	Q6AZD4	0	7	Mitochondrial inner membrane protease subunit 2	
+Q6AZD4	zebrafish	Q6AZD4	immp2l	Q6AZD4	3	10	Mitochondrial inner membrane protease subunit 2	
+Q6AZN4	xenopus-laevis	Q6AZN4	mrpl15	Q6AZN4	7	7	39S ribosomal protein L15, mitochondrial	
+Q6AZV0	xenopus-laevis	Q6AZV0	sdhd-b	Q6AZV0	5	5	Succinate dehydrogenase [ubiquinone] cytochrome b small subu	
+Q6AZV2	xenopus-laevis	Q6AZV2	gcdh.L	Q6AZV2	8	9	Gcdh-prov protein	
 Q6AZW2	zebrafish	Q6AZW2	akr1a1a	Q6AZW2	0	2	Aldo-keto reductase family 1 member A1-A	
 Q6AZW3	zebrafish	Q6AZW3	cbx6a	Q6AZW3	7	59	Chromobox homolog 6a	
 Q6AZW8	human	Q6AZW8	ZNF660	Q6AZW8	15	358	Zinc finger protein 660	

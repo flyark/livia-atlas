@@ -20,7 +20,7 @@ Q02100	yeast	Q02100	SKO1	Q02100	2	30	CRE-binding bZIP protein SKO1
 Q02105	mus-musculus	Q02105	C1qc	Q02105	2	21	Complement C1q subcomponent subunit C	
 Q02108	human	Q02108	GUCY1A1	Q02108	3	173	Guanylate cyclase soluble subunit alpha-1 (GCS-alpha-1) (EC 	
 Q02111	mus-musculus	Q02111	Prkcq	Q02111	3	53	Protein kinase C theta type	
-Q02127	human	Q02127	DHODH	Q02127	3	76	Dihydroorotate dehydrogenase (quinone), mitochondrial (DHOde	
+Q02127	human	Q02127	DHODH	Q02127	9	82	Dihydroorotate dehydrogenase (quinone), mitochondrial (DHOde	
 Q02152	mus-musculus	Q02152	Htr2b	Q02152	0	18	5-hydroxytryptamine receptor 2B	
 Q02153	human	Q02153	GUCY1B1	Q02153	5	173	Guanylate cyclase soluble subunit beta-1 (GCS-beta-1) (EC 4.	
 Q02156	human	Q02156	PRKCE	Q02156	45	350	Protein kinase C epsilon type (EC 2.7.11.13) (nPKC-epsilon)	
@@ -44,7 +44,7 @@ Q02207	yeast	Q02207	FOX2	Q02207	0	23	Peroxisomal hydratase-dehydrogenase-epimera
 Q02208	yeast	Q02208	TOF2	Q02208	2	38	Topoisomerase 1-associated factor 2	
 Q02209	yeast	Q02209	YKR011C	Q02209	0	7	Uncharacterized protein YKR011C	
 Q02218	human	Q02218	OGDH	Q02218	12	259	2-oxoglutarate dehydrogenase complex component E1 (E1o) (HsO	
-Q02221	human	Q02221	COX6A2	Q02221	25	152	Cytochrome c oxidase subunit 6A2, mitochondrial (Cytochrome 	
+Q02221	human	Q02221	COX6A2	Q02221	26	152	Cytochrome c oxidase subunit 6A2, mitochondrial (Cytochrome 	
 Q02223	human	Q02223	TNFRSF17	Q02223	51	254	Tumor necrosis factor receptor superfamily member 17 (B-cell	
 Q02224	human	Q02224	CENPE	Q02224	37	457	Centromere-associated protein E (Centromere protein E) (CENP	
 Q02226	glycine-max	Q02226	COX2	Q02226	11	261	Cytochrome c oxidase subunit 2, mitochondrial	
@@ -53,7 +53,8 @@ Q02242	mus-musculus	Q02242	Pdcd1	Q02242	12	57	Programmed cell death protein 1
 Q02245	zea-mays	Q02245	TUBA5	Q02245	17	42	Tubulin alpha-5 chain	
 Q02246	human	Q02246	CNTN2	Q02246	20	194	Contactin-2 (Axonal glycoprotein TAG-1) (Axonin-1) (Transien	
 Q02248	mus-musculus	Q02248	Ctnnb1	Q02248	90	508	Catenin beta-1	
-Q02252	human	Q02252	ALDH6A1	Q02252	7	95	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	
+Q02252	human	Q02252	ALDH6A1	Q02252	7	96	Methylmalonate-semialdehyde/malonate-semialdehyde dehydrogen	
+Q02253	rattus-norvegicus	Q02253	Aldh6a1	Q02253	1	4	Methylmalonate-semialdehyde dehydrogenase [acylating], mitoc	
 Q02256	yeast	Q02256	YVH1	Q02256	3	79	Tyrosine-protein phosphatase YVH1	
 Q02257	mus-musculus	Q02257	Jup	Q02257	31	108	Junction plakoglobin	
 Q02260	yeast	Q02260	SMD1	Q02260	13	142	Small nuclear ribonucleoprotein Sm D1	
@@ -79,14 +80,14 @@ Q02284	mus-musculus	Q02284	Htr1f	Q02284	3	13	5-hydroxytryptamine receptor 1F
 Q02293	rattus-norvegicus	Q02293	Fntb	Q02293	1	1	Protein farnesyltransferase subunit beta	
 Q02297	human	Q02297	NRG1	Q02297	56	360	Pro-neuregulin-1, membrane-bound isoform (Pro-NRG1) [Cleaved	
 Q02308	fly	FBgn0001169	H	Q02308	48	194	Protein hairless	
-Q02318	human	Q02318	CYP27A1	Q02318	6	103	Sterol 26-hydroxylase, mitochondrial (EC 1.14.15.15) (5-beta	
+Q02318	human	Q02318	CYP27A1	Q02318	14	111	Sterol 26-hydroxylase, mitochondrial (EC 1.14.15.15) (5-beta	
 Q02322	haemophilus-influenzae	Q02322	uvrD	Q02322	0	11	DNA helicase II	
 Q02325	human	Q02325	PLGLB1	Q02325	0	15	Plasminogen-like protein B (Plasminogen-related protein B)	
 Q02326	yeast	Q02326	RPL6A	Q02326	20	311	Large ribosomal subunit protein eL6A	
 Q02328	worm	Q02328	hipr-1	Q02328	5	53	Huntington interacting protein related 1	
 Q02330	worm	Q02330	sma-2	Q02330	5	44	Dwarfin sma-2	
 Q02331	worm	Q02331	ZK370.4	Q02331	0	8	Patatin-like phospholipase domain-containing protein ZK370.4	
-Q02332	worm	Q02332	pdhk-2	Q02332	2	86	Probable [pyruvate dehydrogenase (acetyl-transferring)] kina	
+Q02332	worm	Q02332	pdhk-2	Q02332	3	88	Probable [pyruvate dehydrogenase (acetyl-transferring)] kina	
 Q02334	worm	Q02334	ugtp-1	Q02334	0	1	UDP-galactose translocator 1	
 Q02335	worm	Q02335	tomm-70	Q02335	5	38	Mitochondrial import receptor subunit tomm-70	
 Q02336	yeast	Q02336	ADA2	Q02336	15	182	SAGA complex subunit ADA2	
@@ -138,7 +139,7 @@ Q02576	mus-musculus	Q02576	Nhlh1	Q02576	3	9	Helix-loop-helix protein 1
 Q02577	human	Q02577	NHLH2	Q02577	89	431	Helix-loop-helix protein 2 (HEN-2) (Class A basic helix-loop	
 Q02589	rattus-norvegicus	Q02589	Adprh	Q02589	0	6	ADP-ribosylhydrolase ARH1	
 Q02591	mus-musculus	Q02591	Gsc	Q02591	3	23	Homeobox protein goosecoid	
-Q02592	schizosaccharomyces-pombe	Q02592	hmt1	Q02592	1	7	Heavy metal tolerance protein	
+Q02592	schizosaccharomyces-pombe	Q02592	hmt1	Q02592	2	8	Heavy metal tolerance protein	
 Q02596	mus-musculus	Q02596	Glycam1	Q02596	0	12	Glycosylation-dependent cell adhesion molecule 1	
 Q02598	yeast	Q02598	YIL014C-A	Q02598	0	3	Uncharacterized protein YIL014C-A	
 Q02605	mycobacterium-leprae	Q02605	dnaJ1	Q02605	2	206	Chaperone protein DnaJ 1	
@@ -191,7 +192,7 @@ Q02776	yeast	Q02776	TIM50	Q02776	4	65	Mitochondrial import inner membrane transl
 Q02779	human	Q02779	MAP3K10	Q02779	47	177	Mitogen-activated protein kinase kinase kinase 10 (EC 2.7.11	
 Q02780	mus-musculus	Q02780	Nfia	Q02780	0	4	Nuclear factor 1 A-type	
 Q02783	yeast	Q02783	MFM1	Q02783	1	7	Mitochondrial inner membrane magnesium transporter MFM1	
-Q02784	yeast	Q02784	GRX5	Q02784	1	21	Monothiol glutaredoxin-5, mitochondrial	
+Q02784	yeast	Q02784	GRX5	Q02784	2	21	Monothiol glutaredoxin-5, mitochondrial	
 Q02786	yeast	Q02786	LCL1	Q02786	0	3	Long chronological lifespan protein 1	
 Q02787	schizosaccharomyces-pombe	Q02787	ade2	Q02787	0	2	Adenylosuccinate synthetase	
 Q02788	mus-musculus	Q02788	Col6a2	Q02788	2	33	Collagen alpha-2(VI) chain	
@@ -223,7 +224,7 @@ Q02864	yeast	Q02864	YPL071C	Q02864	0	4	Uncharacterized protein YPL071C
 Q02866	yeast	Q02866	MUK1	Q02866	9	64	Protein MUK1	
 Q02870	fly	FBgn0001179	hay	Q02870	23	493	General transcription and DNA repair factor IIH helicase/tra	
 Q02872	yeast	Q02872	YPL108W	Q02872	1	4	Uncharacterized protein YPL108W	
-Q02873	yeast	Q02873	YPL107W	Q02873	0	13	UPF0651 protein YPL107W, mitochondrial	
+Q02873	yeast	Q02873	YPL107W	Q02873	1	14	UPF0651 protein YPL107W, mitochondrial	
 Q02874	rattus-norvegicus	Q02874	Macroh2a1	Q02874	23	150	Core histone macro-H2A.1	
 Q02875	yeast	Q02875	SYH1	Q02875	8	38	SMY2 homolog 2	
 Q02878	human	Q02878	RPL6	Q02878	61	789	Large ribosomal subunit protein eL6 (60S ribosomal protein L	

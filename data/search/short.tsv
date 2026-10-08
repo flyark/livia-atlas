@@ -552,13 +552,15 @@ CP	virus	A0AAU8BXZ4	cp	A0AAU8BXZ4	0	1	A0AAU8BXZ4_9CIRC
 CP	virus	E2E2D1	CP	E2E2D1	0	3	E2E2D1_9VIRU	
 CR	human	P08174	CD55	P08174	23	136		
 CS	dictyostelium-discoideum	Q553V1	cs	Q553V1	0	14	Citrate synthase, mitochondrial	
-CS	human	O75390	CS	O75390	8	604	Citrate synthase, mitochondrial (EC 2.3.3.1) (Citrate (Si)-s	
-CS	mus-musculus	Q9CZU6	Cs	Q9CZU6	2	94	Citrate synthase, mitochondrial	
-CS	rattus-norvegicus	Q8VHF5	Cs	Q8VHF5	0	72	Citrate synthase, mitochondrial	
-CS	zebrafish	Q7ZVY5	cs	Q7ZVY5	1	113	Citrate synthase, mitochondrial	
+CS	human	O75390	CS	O75390	9	605	Citrate synthase, mitochondrial (EC 2.3.3.1) (Citrate (Si)-s	
+CS	mus-musculus	Q9CZU6	Cs	Q9CZU6	5	97	Citrate synthase, mitochondrial	
+CS	pan-troglodytes	K7BWL5	CS	K7BWL5	3	3	Citrate synthase	
+CS	rattus-norvegicus	Q8VHF5	Cs	Q8VHF5	3	75	Citrate synthase, mitochondrial	
+CS	xenopus-laevis	Q7ZWZ5	cs	Q7ZWZ5	2	2	Citrate synthase, mitochondrial	
+CS	zebrafish	Q7ZVY5	cs	Q7ZVY5	3	115	Citrate synthase, mitochondrial	
 CT	fly	FBgn0004198	ct	P10180	14	76	Homeobox protein cut	
 CU	cladophialophora-carrionii	A0A1C1CPY1	CU	A0A1C1CPY1	0	14	Cerato-ulmin	
-CU	fly	FBgn0261808	cu	A8JQX3	3	24	Nocturnin (EC 3.1.3.-) (Curled)	
+CU	fly	FBgn0261808	cu	A8JQX3	3	25	Nocturnin (EC 3.1.3.-) (Curled)	
 CV	arabidopsis-thaliana	Q8S8K8	CV	Q8S8K8	0	1	Protein CHLOROPLAST VESICULATION	
 CV	fly	FBgn0000394	cv	Q9W494	28	253	Crossveinless (Crossveinless, isoform B) (Crossveinless, iso	
 D	fly	FBgn0000411	D	Q24533	65	444	SOX domain-containing protein dichaete (Protein fish-hook)	
@@ -2857,8 +2859,8 @@ F9	rattus-norvegicus	P16296	F9	P16296	2	16	Coagulation factor IX
 FC	onchocerca-volvulus	G8Z3I4	FC	G8Z3I4	0	16	Ferrochelatase	
 FD	arabidopsis-thaliana	Q84JK2	FD	Q84JK2	1	11	Protein FD	
 FD	plasmodium-falciparum-36329	Q8IED5	FD	Q8IED5	3	11	Ferredoxin, apicoplast	
-FH	arabidopsis-thaliana	Q9ZR07	FH	Q9ZR07	17	113	Frataxin, mitochondrial	
-FH	fly	FBgn0030092	fh	Q9W385	11	116	Frataxin homolog, mitochondrial (Dfh) (EC 1.16.3.1)	
+FH	arabidopsis-thaliana	Q9ZR07	FH	Q9ZR07	21	116	Frataxin, mitochondrial	
+FH	fly	FBgn0030092	fh	Q9W385	17	122	Frataxin homolog, mitochondrial (Dfh) (EC 1.16.3.1)	
 FH	human	P07954	FH	P07954	4	240	Fumarate hydratase, mitochondrial (Fumarase) (HsFH) (EC 4.2.	
 FH	leishmania-infantum	A2CIN0	fh	A2CIN0	1	2	fumarate hydratase	
 FH	mus-musculus	P97807	Fh	P97807	0	70	Fumarate hydratase, mitochondrial	
@@ -3091,7 +3093,7 @@ G4	rattus-norvegicus	Q6MG51	G4	Q6MG51	0	2	Uncharacterized protein C6orf47 homolo
 G5	human	O95870	ABHD16A	O95870	3	132		
 G5	human	O95872	GPANK1	O95872	16	134		
 G6	human	O00299	CLIC1	O00299	43	403		
-GA	human	Q9UI32	GLS2	Q9UI32	7	143		
+GA	human	Q9UI32	GLS2	Q9UI32	9	145		
 GB	fly	FBgn0039487	gb	Q9VB75	3	35	GH08870p (Genderblind, isoform A) (Genderblind, isoform B) (	
 GB	virus	F5HB53	gB	F5HB53	4	167	Envelope glycoprotein B	
 GB	virus	F5HB81	gB	F5HB81	2	83	Envelope glycoprotein B	
@@ -5895,7 +5897,7 @@ MS	fly	FBgn0011581	Ms	P61849	30	259	Dromyosuppressin (TDVDHVFLRFamide)
 MS	glycine-max	I1MUM7	MS	I1MUM7	0	4	Malate synthase	
 MS	oryza-sativa-subsp-japonica	Q7XUG1	MS	Q7XUG1	0	1	Malate synthase	
 MS	virus	Q06Z37	Ms	Q06Z37	0	6	Q06Z37_SCRV	
-MT	human	Q8IVS2	MCAT	Q8IVS2	14	154		
+MT	human	Q8IVS2	MCAT	Q8IVS2	18	158		
 MU	virus	O11419	mu	O11419	1	29	O11419_DADV1	
 MV	fly	FBgn0288310	mv	Q9W060	0	1	mauve	
 MX	virus	A0A3Q8TND4	Mx	A0A3Q8TND4	1	7	A0A3Q8TND4_9RHAB	
@@ -6520,9 +6522,10 @@ PA	virus	X2CXC2	PA	X2CXC2	1	6	X2CXC2_9ORTO
 PB	fly	FBgn0051481	pb	P31264	101	359	Homeotic protein proboscipedia	
 PB	virus	Q68973	PB	Q68973	0	24	Q68973_9ADEN	
 PC	fly	FBgn0003042	Pc	P26017	128	516	Polycomb group protein Pc (Protein polycomb)	
-PC	human	P11498	PC	P11498	5	286	Pyruvate carboxylase, mitochondrial (EC 6.4.1.1) (Pyruvic ca	
-PC	mus-musculus	Q05920	Pc	Q05920	0	26	Pyruvate carboxylase, mitochondrial	
-PC	rattus-norvegicus	P52873	Pc	P52873	0	26	Pyruvate carboxylase, mitochondrial	
+PC	human	P11498	PC	P11498	6	287	Pyruvate carboxylase, mitochondrial (EC 6.4.1.1) (Pyruvic ca	
+PC	mus-musculus	Q05920	Pc	Q05920	1	27	Pyruvate carboxylase, mitochondrial	
+PC	pan-troglodytes	H2R399	PC	H2R399	1	1	Pyruvate carboxylase	
+PC	rattus-norvegicus	P52873	Pc	P52873	1	27	Pyruvate carboxylase, mitochondrial	
 PE	mycobacterium-leprae	Q9CCR0	PE	Q9CCR0	4	4	PE-family protein	
 PI	arabidopsis-thaliana	P48007	PI	P48007	6	16	Floral homeotic protein PISTILLATA	
 PI	cladophialophora-carrionii	A0A1C1CDI9	pi	A0A1C1CDI9	0	5	Papain inhibitor	

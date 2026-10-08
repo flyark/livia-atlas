@@ -13,10 +13,12 @@ NEU3.1	zebrafish	I3ITP7	neu3.1	I3ITP7	0	7	exo-alpha-sialidase
 NEU3.3	zebrafish	A0JMM3	neu3.3	A0JMM3	0	7	exo-alpha-sialidase	
 NEU3.4	zebrafish	A0A8M1NEE7	neu3.4	A0A8M1NEE7	1	7	exo-alpha-sialidase	
 NEU3.5	zebrafish	A0A0R4IGG5	neu3.5	A0A0R4IGG5	2	7	exo-alpha-sialidase	
-NEU4	human	Q8WWR8	NEU4	Q8WWR8	6	110	Sialidase-4 (EC 3.2.1.18) (N-acetyl-alpha-neuraminidase 4) (	
-NEU4	mus-musculus	Q8BZL1	Neu4	Q8BZL1	0	4	Sialidase-4	
-NEU4	rattus-norvegicus	D3ZWB7	Neu4	D3ZWB7	0	4	Sialidase-4	
+NEU4	human	Q8WWR8	NEU4	Q8WWR8	14	118	Sialidase-4 (EC 3.2.1.18) (N-acetyl-alpha-neuraminidase 4) (	
+NEU4	mus-musculus	Q8BZL1	Neu4	Q8BZL1	6	10	Sialidase-4	
+NEU4	pan-troglodytes	A0A2I3T7L0	NEU4	A0A2I3T7L0	7	7	exo-alpha-sialidase	
+NEU4	rattus-norvegicus	D3ZWB7	Neu4	D3ZWB7	5	11	Sialidase-4	
 NEU4	zebrafish	Q503Z4	neu4	Q503Z4	0	8	exo-alpha-sialidase	
+NEU4.S	xenopus-laevis	A0A8J0VAY4	neu4.S	A0A8J0VAY4	2	2	exo-alpha-sialidase	
 NEUA	haemophilus-influenzae	Q57140	neuA	Q57140	0	1	Probable N-acylneuraminate cytidylyltransferase	
 NEUA1/CGTA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0P9B1	neuA1/cgtA	Q0P9B1	0	3	Two-domain bifunctional protein (Beta-1,4-N-acetylgalactosam	
 NEUAC-ALPHA-2	human	Q9H4F1	ST6GALNAC4	Q9H4F1	13	117	Alpha-N-acetyl-neuraminyl-2,3-beta-galactosyl-1,3-N-acetyl-g	w
@@ -33,13 +35,14 @@ NEUFERRICIN	human	Q8WUJ1	CYB5D2	Q8WUJ1	5	78	Neuferricin (Cytochrome b5 domain-co
 NEUFERRICIN	worm	Q9XXA7	tag-131	Q9XXA7	1	6	Neuferricin homolog	w
 NEUFERRICIN	zebrafish	A2CES0	cyb5d2	A2CES0	0	9	Neuferricin	w
 NEUG	human	Q92686	NRGN	Q92686	19	202	Neurogranin (Ng) (RC3) [Cleaved into: NEUG(55-78)]	w
-NEUGRIN	human	Q9NPE2	NGRN	Q9NPE2	74	546	Neugrin (Mesenchymal stem cell protein DSC92) (Neurite outgr	w
+NEUGRIN	human	Q9NPE2	NGRN	Q9NPE2	75	547	Neugrin (Mesenchymal stem cell protein DSC92) (Neurite outgr	w
+NEUGRIN	zebrafish	Q1JPS4	si:ch211-199o1.5	Q1JPS4	1	1	Neugrin	w
 NEUG_HUMAN	human	Q92686	NRGN	Q92686	19	202		
 NEUL1_HUMAN	human	O76050	NEURL1	O76050	10	64		
 NEUL2_HUMAN	human	Q9BR09	NEURL2	Q9BR09	2	40		
 NEUL3_HUMAN	human	Q96EH8	NEURL3	Q96EH8	1	31		
 NEUL4_HUMAN	human	Q96JN8	NEURL4	Q96JN8	3	141		
-NEUL_HUMAN	human	Q9BYT8	NLN	Q9BYT8	5	80		
+NEUL_HUMAN	human	Q9BYT8	NLN	Q9BYT8	9	84		
 NEUM_HUMAN	human	P17677	GAP43	P17677	9	75		
 NEUN	human	A6NFN3	RBFOX3	A6NFN3	5	69	RNA binding protein fox-1 homolog 3 (Fox-1 homolog C) (Neuro	w
 NEUR	fly	FBgn0002932	neur	P29503	12	26	Protein neuralized	
@@ -54,7 +57,7 @@ NEUR1_MOUSE	fly	NEUR1_MOUSE	NEUR1_MOUSE		1	1
 NEUR2	human	A8MQ27	NEURL1B	A8MQ27	3	42	E3 ubiquitin-protein ligase NEURL1B (EC 2.3.2.27) (Neuralize	w
 NEUR2_HUMAN	human	Q9Y3R4	NEU2	Q9Y3R4	11	138		
 NEUR3_HUMAN	human	Q9UQ49	NEU3	Q9UQ49	3	90		
-NEUR4_HUMAN	human	Q8WWR8	NEU4	Q8WWR8	6	110		
+NEUR4_HUMAN	human	Q8WWR8	NEU4	Q8WWR8	14	118		
 NEURABIN-1	human	Q9ULJ8	PPP1R9A	Q9ULJ8	32	171	Neurabin-1 (Neurabin-I) (Neural tissue-specific F-actin-bind	w
 NEURABIN-1	worm	H2KYW1	nab-1	H2KYW1	16	22	Neurabin-1	w
 NEURABIN-1	zebrafish	E7F571	ppp1r9ala	E7F571	6	14	Neurabin-1	w
@@ -154,7 +157,7 @@ NEURALIZED-LIKE	human	Q9BR09	NEURL2	Q9BR09	2	40	Neuralized-like protein 2	w
 NEURALIZED-RELATED	human	Q96EH8	NEURL3	Q96EH8	1	31	E3 ubiquitin-protein ligase NEURL3 (EC 2.3.2.27) (Lung-induc	w
 NEURALLY-ENRICHED	human	Q9UKA9	PTBP2	Q9UKA9	6	125	Polypyrimidine tract-binding protein 2 (Neural polypyrimidin	w
 NEURAMIN	human	Q99519	NEU1	Q99519	8	132	Sialidase-1 (EC 3.2.1.18) (Acetylneuraminyl hydrolase) (G9 s	w
-NEURAMINIDASE	human	Q8WWR8	NEU4	Q8WWR8	6	110	Sialidase-4 (EC 3.2.1.18) (N-acetyl-alpha-neuraminidase 4) (	w
+NEURAMINIDASE	human	Q8WWR8	NEU4	Q8WWR8	14	118	Sialidase-4 (EC 3.2.1.18) (N-acetyl-alpha-neuraminidase 4) (	w
 NEURAMINIDASE	human	Q99519	NEU1	Q99519	8	132	Sialidase-1 (EC 3.2.1.18) (Acetylneuraminyl hydrolase) (G9 s	w
 NEURAMINIDASE	human	Q9UQ49	NEU3	Q9UQ49	3	90	Sialidase-3 (EC 3.2.1.18) (Ganglioside sialidasedis) (Membra	w
 NEURAMINIDASE	virus	A0A1Q1MMC9	NA	A0A1Q1MMC9	0	10	Neuraminidase	w
@@ -214,7 +217,7 @@ NEURITE	human	Q5QGS0	NEXMIF	Q5QGS0	8	38	Neurite extension and migration factor (
 NEURITE	human	Q6NW40	RGMB	Q6NW40	14	90	Repulsive guidance molecule B (DRG11-responsive axonal guida	w
 NEURITE	human	Q6ZVF9	GPRIN3	Q6ZVF9	5	52	G protein-regulated inducer of neurite outgrowth 3 (GRIN3)	w
 NEURITE	human	Q7Z2K8	GPRIN1	Q7Z2K8	15	129	G protein-regulated inducer of neurite outgrowth 1 (GRIN1)	w
-NEURITE	human	Q9NPE2	NGRN	Q9NPE2	74	546	Neugrin (Mesenchymal stem cell protein DSC92) (Neurite outgr	w
+NEURITE	human	Q9NPE2	NGRN	Q9NPE2	75	547	Neugrin (Mesenchymal stem cell protein DSC92) (Neurite outgr	w
 NEURITE	human	Q9NQC3	RTN4	Q9NQC3	21	380	Reticulon-4 (Foocen) (Neurite outgrowth inhibitor) (Nogo pro	w
 NEURITE	zebrafish	A0A8M9QGD4	gprin3b	A0A8M9QGD4	0	2	G protein-regulated inducer of neurite outgrowth 3	w
 NEURITE	zebrafish	F8W545	gprin3a	F8W545	0	2	G protein-regulated inducer of neurite outgrowth 3	w
@@ -421,7 +424,7 @@ NEUROLOGIC	human	Q96KN4	LRATD1	Q96KN4	3	38	Protein LRATD1 (LRAT domain-containin
 NEUROLOGICAL	human	Q96RY5	CRAMP1	Q96RY5	18	95	Protein cramped-like (Cramped chromatin regulator homolog 1)	w
 NEUROLOGICAL	human	Q9H910	JPT2	Q9H910	4	105	Jupiter microtubule associated homolog 2 (Hematological and 	w
 NEUROLOGICAL	human	Q9UK76	JPT1	Q9UK76	0	51	Jupiter microtubule associated homolog 1 (Androgen-regulated	w
-NEUROLYSIN	human	Q9BYT8	NLN	Q9BYT8	5	80	Neurolysin, mitochondrial (EC 3.4.24.16) (Angiotensin-bindin	w
+NEUROLYSIN	human	Q9BYT8	NLN	Q9BYT8	9	84	Neurolysin, mitochondrial (EC 3.4.24.16) (Angiotensin-bindin	w
 NEUROMAST-EXPRESSED	zebrafish	E7F0J8	negaly6	E7F0J8	0	2	Neuromast-expressed gpi-anchored lymphocyte antigen 6	w
 NEUROMEDIN	human	P20366	TAC1	P20366	59	705	Protachykinin-1 (PPT) [Cleaved into: Substance P; Neurokinin	w
 NEUROMEDIN	human	P30990	NTS	P30990	28	319	Neurotensin/neuromedin N [Cleaved into: Large neuromedin N (	w
@@ -815,7 +818,7 @@ NEUROTENSIN	human	O95665	NTSR2	O95665	14	128	Neurotensin receptor type 2 (NT-R-2
 NEUROTENSIN	human	P30989	NTSR1	P30989	27	200	Neurotensin receptor type 1 (NT-R-1) (NTR1) (High-affinity l	w
 NEUROTENSIN	human	P30990	NTS	P30990	28	319	Neurotensin/neuromedin N [Cleaved into: Large neuromedin N (	w
 NEUROTENSIN	human	Q99523	SORT1	Q99523	49	357	Sortilin (100 kDa NT receptor) (Glycoprotein 95) (Gp95) (Neu	w
-NEUROTENSIN	human	Q9BYT8	NLN	Q9BYT8	5	80	Neurolysin, mitochondrial (EC 3.4.24.16) (Angiotensin-bindin	w
+NEUROTENSIN	human	Q9BYT8	NLN	Q9BYT8	9	84	Neurolysin, mitochondrial (EC 3.4.24.16) (Angiotensin-bindin	w
 NEUROTENSIN	zebrafish	E7EZ19	ntsr1	E7EZ19	13	33	Neurotensin receptor 1 (high affinity)	w
 NEUROTIC	fly	FBgn0033901	Ofut1	Q9V6X7	2	13	GDP-fucose protein O-fucosyltransferase 1 (EC 2.4.1.221) (Ne	w
 NEUROTOXIN	human	P10153	RNASE2	P10153	26	252	Non-secretory ribonuclease (EC 4.6.1.18) (Eosinophil-derived	w

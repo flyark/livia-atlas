@@ -1,0 +1,59 @@
+{
+ "format": "livia-atlas/1",
+ "id": "mitomatch-9606",
+ "title": "MitoMatch: human mitochondrial proteome AlphaFold-Multimer screen",
+ "short": "Mito interactome",
+ "speciesId": "human",
+ "species": {
+  "name": "Homo sapiens",
+  "taxon": 9606
+ },
+ "ids": "UniProtKB entry name",
+ "source": {
+  "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+  "doi": "10.5281/zenodo.21232148",
+  "url": "https://doi.org/10.5281/zenodo.21232148",
+  "journalDoi": null,
+  "journalDoiNote": "No journal DOI exists for this record yet: the Zenodo deposition carries no related identifier. The Zenodo DOI above is the citable identifier. This is a fact about the record, not an omission.",
+  "license": "CC BY 4.0",
+  "method": "AlphaFold-Multimer 2.2.0 (model_*_multimer_v2), 5 models per pair; the authors screened all 630,003 pairs of 1,123 MitoCarta proteins and released the single best-scoring model per pair",
+  "coverage": "The release is far smaller than the screen. Structures (PDB) and confidence NPZ were each released for the 2,895 pairs whose mean ipTM over the 5 models is >= 0.5 (observed minimum 0.5001) -- the authors' \"human MitoPredictome\" -- and those two sets coincide exactly. 2,830 of those 2,895 are published here; the other 65 are dropped because their NPZ and their PDB are different models of the same complex (see \"excluded\"). So this screen covers 2,830 pairs over 1,004 of the 1,123 screened proteins: 0.45% of the 630,003 pairs screened. The 630,003 figure is the SCREENING count and is not the number of released structures.",
+  "sequences": "The served sequence is the monomer FASTA the authors fed to AlphaFold (MitoMatch_human.zip -> monomer_sequences.zip), not today's UniProt sequence, because lis.py's LIR/cLIR residue indices are positions in the folded sequence. 17 of the 1,123 entries have since been revised in UniProt (10 of them changed length); those carry status \"revised\", with the folded length in clen and the current UniProt length in len.",
+  "pTM": "Absent at source. The released NPZ holds pae, plddt, iptm, protein_1_length and protein_2_length only, and the PDB files are bare coordinates with no REMARK header, so no pTM value exists anywhere in the deposition. The empty pTM column is the source's silence, not a build failure.",
+  "paePrecision": "Full precision. The source PAE is float32 with 95.7% of cells carrying a distinct value (minimum 56.7% over a 120-file sample) and a maximum of 31.75, AlphaFold2's own cap -- it is neither quantized nor downsampled. Worth checking against any other screen whose source PAE was binned before release.",
+  "excluded": "65 pair(s) scored but excluded: for those the confidence NPZ and the released PDB are different models of the same complex. Per-residue pLDDT read from the PDB B-factors differs from the NPZ plddt array by 0.98 to 61 units (pearson 0.968-0.99999), while every published pair agrees to within 0.0050, the PDB's own two-decimal rounding, at pearson >= 0.99999966. Scoring them would pair one model's PAE with another model's contact map, so they are dropped rather than published. They are named, with that evidence per pair, in the build's dropped_pairs.tsv."
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "inclusive": true,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  },
+  "sourcePae": "float32, full precision: 95.7% of cells carry a distinct value (min 56.7% over a 120-file sample), max 31.75 = AlphaFold2's own cap. Not quantized, not downsampled.",
+  "sourcePTM": "absent: the released NPZ holds pae/plddt/iptm/protein_1_length/protein_2_length only and the PDBs are bare coordinates, so no pTM exists in the deposition. The empty pTM column is the source's silence, not a build failure.",
+  "modelsPerPair": "1 served of 5 folded: the authors released only the best-scoring model, so rank is always 1 and iLIS_best == iLIS_avg."
+ },
+ "counts": {
+  "proteins": 986,
+  "pairs": 2830,
+  "predictions": 2830,
+  "runs": 2830,
+  "pairsFpr10": 2763,
+  "pairsFpr5": 2500,
+  "pairsFpr1": 972
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id"
+}

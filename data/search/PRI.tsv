@@ -95,7 +95,7 @@ PRIMASE	fly	FBgn0259676	Prim2	Q9VPH2	5	35	DNA primase large subunit (DNA polymer
 PRIMASE	human	A0A3B3ITS8	?	A0A3B3ITS8	1	7	DNA primase AEP	w
 PRIMASE	human	P49642	PRIM1	P49642	11	244	DNA primase small subunit (EC 2.7.7.102) (DNA primase 49 kDa	w
 PRIMASE	human	P49643	PRIM2	P49643	15	139	DNA primase large subunit (DNA primase 58 kDa subunit) (p58)	w
-PRIMASE	human	Q96LW4	PRIMPOL	Q96LW4	6	40	DNA-directed primase/polymerase protein (hPrimpol1) (EC 2.7.	w
+PRIMASE	human	Q96LW4	PRIMPOL	Q96LW4	7	41	DNA-directed primase/polymerase protein (hPrimpol1) (EC 2.7.	w
 PRIMASE	virus	A0A3G1T4G4	BBLF2/BBLF3	A0A3G1T4G4	3	81	DNA helicase/primase complex-associated protein	w
 PRIMASE	virus	F5HG51	UL70	F5HG51	3	166	DNA primase	w
 PRIMASE	virus	F5HIG1	UL102	F5HIG1	5	167	DNA helicase/primase complex-associated protein	w
@@ -126,7 +126,7 @@ PRIMASE	worm	Q9TZ34	CELE_T24C4.5	Q9TZ34	2	25	DNA primase	w
 PRIMASE	yeast	P10363	PRI1	P10363	3	46	DNA primase small subunit	w
 PRIMASE	yeast	P20457	PRI2	P20457	5	37	DNA primase large subunit	w
 PRIMASE	zebrafish	B8JIP2	prim2	B8JIP2	4	34	DNA primase large subunit	w
-PRIMASE	zebrafish	Q32PL8	primpol	Q32PL8	1	13	DNA-directed primase/polymerase protein	w
+PRIMASE	zebrafish	Q32PL8	primpol	Q32PL8	2	14	DNA-directed primase/polymerase protein	w
 PRIMA_HUMAN	human	Q86XR5	PRIMA1	Q86XR5	15	102		
 PRIME	fly	FBgn0032512	Bdp1	Q9VJZ3	118	392	B double prime 1, isoform A (FI12401p)	w
 PRIME	human	Q5T0F9	CC2D1B	Q5T0F9	7	54	Coiled-coil and C2 domain-containing protein 1B (Five prime 	w
@@ -135,11 +135,13 @@ PRIME	human	Q9BQ50	TREX2	Q9BQ50	4	96	Three prime repair exonuclease 2 (EC 3.1.11
 PRIMER	human	P00558	PGK1	P00558	7	476	Phosphoglycerate kinase 1 (EC 2.7.11.1) (EC 2.7.2.3) (Cell m	w
 PRIMO-1	fly	FBgn0040077	primo-1	P82890	91	1005	Low molecular weight phosphotyrosine protein phosphatase 1 (	
 PRIMO-2	fly	FBgn0040076	primo-2	P82891	75	1004	Low molecular weight phosphotyrosine protein phosphatase 2 (	
-PRIMPOL	arabidopsis-thaliana	F4KHM4	PRIMPOL	F4KHM4	0	2	DNA-directed primase/polymerase protein	
-PRIMPOL	human	Q96LW4	PRIMPOL	Q96LW4	6	40	DNA-directed primase/polymerase protein (hPrimpol1) (EC 2.7.	
-PRIMPOL	mus-musculus	Q6P1E7	Primpol	Q6P1E7	1	10	DNA-directed primase/polymerase protein	
-PRIMPOL	rattus-norvegicus	D4A8C0	Primpol	D4A8C0	2	14	DNA-directed primase/polymerase protein	
-PRIMPOL	zebrafish	Q32PL8	primpol	Q32PL8	1	13	DNA-directed primase/polymerase protein	
+PRIMPOL	arabidopsis-thaliana	F4KHM4	PRIMPOL	F4KHM4	0	3	DNA-directed primase/polymerase protein	
+PRIMPOL	human	Q96LW4	PRIMPOL	Q96LW4	7	41	DNA-directed primase/polymerase protein (hPrimpol1) (EC 2.7.	
+PRIMPOL	mus-musculus	Q6P1E7	Primpol	Q6P1E7	2	11	DNA-directed primase/polymerase protein	
+PRIMPOL	pan-troglodytes	H2QQI2	PRIMPOL	H2QQI2	1	1	DNA-directed primase/polymerase protein	
+PRIMPOL	rattus-norvegicus	D4A8C0	Primpol	D4A8C0	3	15	DNA-directed primase/polymerase protein	
+PRIMPOL	zebrafish	Q32PL8	primpol	Q32PL8	2	14	DNA-directed primase/polymerase protein	
+PRIMPOL.L	xenopus-laevis	A0A1L8HU35	primpol.L	A0A1L8HU35	1	1	DNA-directed primase/polymerase protein	
 PRIN2	arabidopsis-thaliana	Q9XIK0	PRIN2	Q9XIK0	0	8	Protein PLASTID REDOX INSENSITIVE 2, chloroplastic	
 PRIN2	oryza-sativa-subsp-japonica	Q6H612	PRIN2	Q6H612	0	1	Protein PLASTID REDOX INSENSITIVE 2, chloroplastic	
 PRINTOR	human	Q9P2G3	KLHL14	Q9P2G3	38	106	Kelch-like protein 14 (Protein interactor of Torsin-1A) (Pri	w
@@ -189,7 +191,8 @@ PRIP	fly	FBgn0033635	Prip	D3DMU9	5	37	MIP17260p (Prip, isoform C)	w
 PRIP	human	F7VJQ1	PRNP	F7VJQ1	18	891		
 PRIP	human	P04156	PRNP	P04156	57	1210		
 PRIP	human	Q15111	PLCL1	Q15111	7	61	Inactive phospholipase C-like protein 1 (PLC-L1) (Phospholip	w
-PRIPO_HUMAN	human	Q96LW4	PRIMPOL	Q96LW4	6	40		
+PRIPO_DANRE	zebrafish	Q32PL8	primpol	Q32PL8	2	14		
+PRIPO_HUMAN	human	Q96LW4	PRIMPOL	Q96LW4	7	41		
 PRIPR	human	P43119	PTGIR	P43119	13	152		
 PRIS	methanocaldococcus-jannaschii	Q58249	priS	Q58249	1	2	DNA primase small subunit PriS	
 PRISE	arabidopsis-thaliana	Q9LUY6	PRISE	Q9LUY6	1	13	At5g58750	

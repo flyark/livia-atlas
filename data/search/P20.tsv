@@ -4,7 +4,7 @@ P200	human	P39880	CUX1	P39880	41	228	Homeobox protein cut-like 1 (CCAAT displace
 P200	human	Q8N3C0	ASCC3	Q8N3C0	10	190	Activating signal cointegrator 1 complex subunit 3 (EC 5.6.2	w
 P200	human	Q9P2D3	HEATR5B	Q9P2D3	5	54		
 P200	human	Q9Y6D6	ARFGEF1	Q9Y6D6	12	183	Brefeldin A-inhibited guanine nucleotide-exchange protein 1 	w
-P20007	fly	FBgn0003067	Pepck1	P20007	2	102	Phosphoenolpyruvate carboxykinase [GTP] (EC 4.1.1.32) (Phosp	
+P20007	fly	FBgn0003067	Pepck1	P20007	3	103	Phosphoenolpyruvate carboxykinase [GTP] (EC 4.1.1.32) (Phosp	
 P20009	fly	FBgn0000157	Dll	A2VEF7	89	439		
 P20020	human	P20020	ATP2B1	P20020	17	329	Plasma membrane calcium-transporting ATPase 1 (EC 7.2.2.10) 	
 P20023	human	P20023	CR2	P20023	13	135	Complement receptor type 2 (Cr2) (Complement C3d receptor) (	
@@ -28,8 +28,8 @@ P20062	human	P20062	TCN2	P20062	9	128	Transcobalamin-2 (TC-2) (Transcobalamin II
 P20065	mus-musculus	P20065	Tmsb4x	P20065	4	28	Thymosin beta-4	
 P20067	mus-musculus	P20067	Id1	P20067	9	16	DNA-binding protein inhibitor ID-1	
 P20068	rattus-norvegicus	P20068	Nts	P20068	1	30	Neurotensin/neuromedin N	
-P20069	rattus-norvegicus	P20069	Pmpca	P20069	9	152	Mitochondrial-processing peptidase subunit alpha	
-P20070	rattus-norvegicus	P20070	Cyb5r3	P20070	1	18	NADH-cytochrome b5 reductase 3	
+P20069	rattus-norvegicus	P20069	Pmpca	P20069	13	156	Mitochondrial-processing peptidase subunit alpha	
+P20070	rattus-norvegicus	P20070	Cyb5r3	P20070	5	23	NADH-cytochrome b5 reductase 3	
 P20073	human	P20073	ANXA7	P20073	8	271	Annexin A7 (Annexin VII) (Annexin-7) (Synexin)	
 P20081	yeast	P20081	FPR1	P20081	15	133	FK506-binding protein 1	
 P20083	escherichia-coli-83333	P20083	parE	P20083	4	26	DNA topoisomerase 4 subunit B	
@@ -39,7 +39,7 @@ P20096	rattus-norvegicus	P20096	Il4	P20096	6	69	Interleukin-4
 P20099	escherichia-coli-83333	P20099	bisC	P20099	0	12	Biotin sulfoxide reductase	
 P200A	human	Q9P2D3	HEATR5B	Q9P2D3	5	54		
 P20107	yeast	P20107	ZRC1	P20107	1	21	Vacuolar zinc transporter ZRC1	
-P20108	mus-musculus	P20108	Prdx3	P20108	1	23	Thioredoxin-dependent peroxide reductase, mitochondrial	
+P20108	mus-musculus	P20108	Prdx3	P20108	3	25	Thioredoxin-dependent peroxide reductase, mitochondrial	
 P20109	mus-musculus	P20109	Il13	P20109	9	41	Interleukin-13	
 P20115	arabidopsis-thaliana	P20115	CSY4	P20115	1	83	Citrate synthase 4, mitochondrial	
 P20132	human	P20132	SDS	P20132	8	46	L-serine dehydratase/L-threonine deaminase (SDH) (EC 4.3.1.1	
@@ -173,7 +173,7 @@ P20662	mus-musculus	P20662	Zfy2	P20662	0	1	Zinc finger Y-chromosomal protein 2
 P20664	mus-musculus	P20664	Prim1	P20664	1	51	DNA primase small subunit	
 P20671	human	P20671	H2AC7	P20671	58	471	Histone H2A type 1-D (Histone H2A.3) (Histone H2A/g)	
 P20673	rattus-norvegicus	P20673	Asl	P20673	0	1	Argininosuccinate lyase	
-P20674	human	P20674	COX5A	P20674	30	363	Cytochrome c oxidase subunit 5A, mitochondrial (Cytochrome c	
+P20674	human	P20674	COX5A	P20674	36	365	Cytochrome c oxidase subunit 5A, mitochondrial (Cytochrome c	
 P20676	yeast	P20676	NUP1	P20676	3	103	Nucleoporin NUP1	
 P20689	rattus-norvegicus	P20689	Mylk2	P20689	1	8	Myosin light chain kinase 2, skeletal/cardiac muscle	
 P20693	mus-musculus	P20693	Fcer2	P20693	1	3	Low affinity immunoglobulin epsilon Fc receptor	
@@ -207,7 +207,7 @@ P20781	rattus-norvegicus	P20781	Glrb	P20781	3	7	Glycine receptor subunit beta
 P20782	mus-musculus	P20782	Chrne	P20782	15	16	Acetylcholine receptor subunit epsilon	
 P20783	human	P20783	NTF3	P20783	19	160	Neurotrophin-3 (NT-3) (HDNF) (Nerve growth factor 2) (NGF-2)	
 P20786	rattus-norvegicus	P20786	Pdgfra	P20786	10	95	Platelet-derived growth factor receptor alpha	
-P20788	rattus-norvegicus	P20788	Uqcrfs1	P20788	17	182	Cytochrome b-c1 complex subunit Rieske, mitochondrial	
+P20788	rattus-norvegicus	P20788	Uqcrfs1	P20788	29	191	Cytochrome b-c1 complex subunit Rieske, mitochondrial	
 P20789	rattus-norvegicus	P20789	Ntsr1	P20789	7	30	Neurotensin receptor type 1	
 P20790	dictyostelium-discoideum	P20790	rab8A	P20790	4	12	Ras-related protein Rab-8A	
 P20791	dictyostelium-discoideum	P20791	rab8B	P20791	3	11	Ras-related protein Rab-8B	

@@ -5,13 +5,13 @@ NUD1	yeast	P32336	NUD1	P32336	9	75	Protein NUD1
 NUD10_HUMAN	human	Q8NFP7	NUDT10	Q8NFP7	4	57		
 NUD11_HUMAN	human	Q96G61	NUDT11	Q96G61	3	86		
 NUD12_HUMAN	human	Q9BQG2	NUDT12	Q9BQG2	3	53		
-NUD13_HUMAN	human	Q86X67	NUDT13	Q86X67	0	26		
+NUD13_HUMAN	human	Q86X67	NUDT13	Q86X67	1	27		
 NUD14_HUMAN	human	O95848	NUDT14	O95848	2	64		
 NUD15_HUMAN	human	Q9NV35	NUDT15	Q9NV35	7	87		
 NUD16_HUMAN	human	Q96DE0	NUDT16	Q96DE0	2	55		
 NUD17_HUMAN	human	P0C025	NUDT17	P0C025	1	16		
 NUD18_HUMAN	human	Q6ZVK8	NUDT18	Q6ZVK8	9	93		
-NUD19_HUMAN	human	A8MXV4	NUDT19	A8MXV4	8	165		
+NUD19_HUMAN	human	A8MXV4	NUDT19	A8MXV4	21	178		
 NUD22_HUMAN	human	Q9BRQ3	NUDT22	Q9BRQ3	7	54		
 NUD4B_HUMAN	human	A0A024RBG1	NUDT4B	A0A024RBG1	0	28		
 NUDB	haemophilus-influenzae	P44635	nudB	P44635	0	7	Dihydroneopterin triphosphate diphosphatase	
@@ -73,13 +73,13 @@ NUDF	haemophilus-influenzae	P44684	nudF	P44684	0	7	ADP-ribose pyrophosphatase
 NUDG	escherichia-coli-83333	P77788	nudG	P77788	0	1	CTP pyrophosphohydrolase	
 NUDIX	fly	FBgn0036648	CG4098	Q9VV83	20	333	Nudix hydrolase domain-containing protein	w
 NUDIX	human	A0A024RBG1	NUDT4B	A0A024RBG1	0	28	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B (DIP	w
-NUDIX	human	A8MXV4	NUDT19	A8MXV4	8	165	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
+NUDIX	human	A8MXV4	NUDT19	A8MXV4	21	178	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	w
 NUDIX	human	P0C024	NUDT7	P0C024	4	33	Peroxisomal coenzyme A diphosphatase NUDT7 (EC 3.6.1.-) (EC 	w
 NUDIX	human	P0C025	NUDT17	P0C025	1	16	m7GpppN-mRNA hydrolase NUDT17 (EC 3.6.1.62) (Nucleoside diph	w
 NUDIX	human	P53370	NUDT6	P53370	1	48	Nudix hydrolase 6 (Antisense basic fibroblast growth factor)	w
-NUDIX	human	Q86X67	NUDT13	Q86X67	0	26	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	w
+NUDIX	human	Q86X67	NUDT13	Q86X67	1	27	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	w
 NUDIX	human	Q8IU60	DCP2	Q8IU60	22	195	m7GpppN-mRNA hydrolase (EC 3.6.1.62) (Nucleoside diphosphate	w
-NUDIX	human	Q8WV74	NUDT8	Q8WV74	4	73	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	w
+NUDIX	human	Q8WV74	NUDT8	Q8WV74	8	76	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	w
 NUDIX	human	Q9BRQ3	NUDT22	Q9BRQ3	7	54	Uridine diphosphate glucose pyrophosphatase NUDT22 (EC 3.6.1	w
 NUDIX	virus	P21970	FPV054	P21970	34	250	Putative Nudix hydrolase FPV054	w
 NUDIX	virus	Q0NP94	TATV_DAH68_117	Q0NP94	10	220	Nudix hydrolase domain-containing protein	w
@@ -87,10 +87,10 @@ NUDIX	virus	Q0NP95	TATV_DAH68_116	Q0NP95	11	219	Nudix hydrolase domain-containin
 NUDIX	virus	Q8V2R0		Q8V2R0	9	208	Nudix hydrolase domain-containing protein	w
 NUDIX	worm	O45830	ndx-1	O45830	0	3	Putative nudix hydrolase 1	w
 NUDIX	worm	O61902	ndx-2	O61902	0	10	Putative nudix hydrolase 2	w
-NUDIX	worm	P91148	ndx-7	P91148	0	10	Putative nudix hydrolase 7	w
+NUDIX	worm	P91148	ndx-7	P91148	0	11	Putative nudix hydrolase 7	w
 NUDIX	worm	Q09297	ndx-6	Q09297	0	5	Putative nudix hydrolase 6	w
-NUDIX	worm	Q23236	ndx-3	Q23236	0	8	Nudix hydrolase 3	w
-NUDIX5	human	Q9UKK9	NUDT5	Q9UKK9	9	127		
+NUDIX	worm	Q23236	ndx-3	Q23236	1	9	Nudix hydrolase 3	w
+NUDIX5	human	Q9UKK9	NUDT5	Q9UKK9	21	140		
 NUDK	escherichia-coli-83333	P37128	nudK	P37128	0	9	GDP-mannose pyrophosphatase	
 NUDK	salmonella-typhimurium	Q7CQ25	nudK	Q7CQ25	0	11	GDP-mannose pyrophosphatase	
 NUDK	shigella-dysenteriae-serotype-1	Q32DA4	nudK	Q32DA4	0	10	GDP-mannose pyrophosphatase	
@@ -101,7 +101,7 @@ NUDT1	human	P36639	NUDT1	P36639	3	118	Oxidized purine nucleoside triphosphate hy
 NUDT1	mus-musculus	P53368	Nudt1	P53368	0	3	Oxidized purine nucleoside triphosphate hydrolase	
 NUDT1	rattus-norvegicus	P53369	Nudt1	P53369	0	2	Oxidized purine nucleoside triphosphate hydrolase	
 NUDT10	human	Q8NFP7	NUDT10	Q8NFP7	4	57	Diphosphoinositol polyphosphate phosphohydrolase 3-alpha (DI	
-NUDT10	human	Q9BW91	NUDT9	Q9BW91	4	56		
+NUDT10	human	Q9BW91	NUDT9	Q9BW91	6	57		
 NUDT10	mus-musculus	P0C027	Nudt10	P0C027	0	10	Diphosphoinositol polyphosphate phosphohydrolase 3-alpha	
 NUDT11	arabidopsis-thaliana	Q8LET2	NUDT11	Q8LET2	0	13	Nudix hydrolase 11	
 NUDT11	human	Q96G61	NUDT11	Q96G61	3	86	Diphosphoinositol polyphosphate phosphohydrolase 3-beta (DIP	
@@ -114,7 +114,11 @@ NUDT12	rattus-norvegicus	D4A2H8	Nudt12	D4A2H8	0	6	NAD-capped RNA hydrolase NUDT1
 NUDT12	zebrafish	A0A8M9Q9P3	nudt12	A0A8M9Q9P3	0	13	NAD-capped RNA hydrolase NUDT12	w
 NUDT12	zebrafish	A0A8M9Q9P3	nudt12	A0A8M9Q9P3	0	13	NAD-capped RNA hydrolase NUDT12	w
 NUDT13	arabidopsis-thaliana	Q52K88	NUDT13	Q52K88	0	11	Nudix hydrolase 13, mitochondrial	
-NUDT13	human	Q86X67	NUDT13	Q86X67	0	26	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	
+NUDT13	human	Q86X67	NUDT13	Q86X67	1	27	NAD(P)H pyrophosphatase NUDT13, mitochondrial (EC 3.6.1.22) 	
+NUDT13	mus-musculus	Q8JZU0	Nudt13	Q8JZU0	1	1	NAD(P)H pyrophosphatase NUDT13, mitochondrial	
+NUDT13	pan-troglodytes	H2R1E9	NUDT13	H2R1E9	1	1	NAD(+) diphosphatase	
+NUDT13	rattus-norvegicus	M0R515	Nudt13	M0R515	1	1	NAD(+) diphosphatase	
+NUDT13.L	xenopus-laevis	Q6DD74	nudt13.L	Q6DD74	1	1	NAD(+) diphosphatase	
 NUDT14	arabidopsis-thaliana	Q9SZ63	NUDT14	Q9SZ63	0	18	Nudix hydrolase 14, chloroplastic	
 NUDT14	cladophialophora-carrionii	A0A1C1CGZ2	NUDT14	A0A1C1CGZ2	0	5	Nudix hydrolase 14, chloroplastic	
 NUDT14	cladophialophora-carrionii	A0A1C1CX16	NUDT14	A0A1C1CX16	0	5	Nudix hydrolase 14, chloroplastic	
@@ -141,15 +145,19 @@ NUDT18	arabidopsis-thaliana	Q9LQU5	NUDT18	Q9LQU5	0	11	Nudix hydrolase 18, mitoch
 NUDT18	human	Q6ZVK8	NUDT18	Q6ZVK8	9	93	8-oxo-dGDP phosphatase NUDT18 (EC 3.6.1.58) (EC 3.6.1.68) (E	
 NUDT18	mus-musculus	Q3U2V3	Nudt18	Q3U2V3	0	2	8-oxo-dGDP phosphatase NUDT18	
 NUDT19	arabidopsis-thaliana	Q94A82	NUDT19	Q94A82	0	2	Nudix hydrolase 19, chloroplastic	
-NUDT19	human	A8MXV4	NUDT19	A8MXV4	8	165	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	
-NUDT19	mus-musculus	P11930	Nudt19	P11930	2	18	Acyl-coenzyme A diphosphatase NUDT19	
-NUDT19	rattus-norvegicus	Q6AYD9	Nudt19	Q6AYD9	2	18	Acyl-coenzyme A diphosphatase NUDT19	
-NUDT19	zebrafish	B3DHE6	nudt19	B3DHE6	1	17	Acyl-coenzyme A diphosphatase NUDT19	w
-NUDT19	zebrafish	B3DHE6	nudt19	B3DHE6	1	17	Acyl-coenzyme A diphosphatase NUDT19	w
-NUDT2	human	P50583	NUDT2	P50583	8	131	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical] (EC 3.6.1.	
-NUDT2	mus-musculus	P56380	Nudt2	P56380	0	10	Bis(5'-nucleosyl)-tetraphosphatase	
-NUDT2	rattus-norvegicus	Q6PEC0	Nudt2	Q6PEC0	0	10	Bis(5'-nucleosyl)-tetraphosphatase	
-NUDT2	zebrafish	Q6DG97	nudt2	Q6DG97	0	12	Bis(5'-nucleosyl)-tetraphosphatase	
+NUDT19	human	A8MXV4	NUDT19	A8MXV4	21	178	Acyl-coenzyme A diphosphatase NUDT19 (EC 3.6.1.-) (EC 3.6.1.	
+NUDT19	mus-musculus	P11930	Nudt19	P11930	7	24	Acyl-coenzyme A diphosphatase NUDT19	
+NUDT19	pan-troglodytes	H2RBC0	NUDT19	H2RBC0	11	11	Acyl-coenzyme A diphosphatase NUDT19	
+NUDT19	rattus-norvegicus	Q6AYD9	Nudt19	Q6AYD9	6	22	Acyl-coenzyme A diphosphatase NUDT19	
+NUDT19	xenopus-laevis	Q5PQ50	nudt19	Q5PQ50	3	3	Acyl-coenzyme A diphosphatase NUDT19	
+NUDT19	zebrafish	B3DHE6	nudt19	B3DHE6	3	19	Acyl-coenzyme A diphosphatase NUDT19	w
+NUDT19	zebrafish	B3DHE6	nudt19	B3DHE6	3	19	Acyl-coenzyme A diphosphatase NUDT19	w
+NUDT2	human	P50583	NUDT2	P50583	11	134	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical] (EC 3.6.1.	
+NUDT2	mus-musculus	P56380	Nudt2	P56380	4	14	Bis(5'-nucleosyl)-tetraphosphatase	
+NUDT2	pan-troglodytes	H2QX59	NUDT2	H2QX59	3	4	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical]	
+NUDT2	rattus-norvegicus	Q6PEC0	Nudt2	Q6PEC0	4	14	Bis(5'-nucleosyl)-tetraphosphatase	
+NUDT2	zebrafish	Q6DG97	nudt2	Q6DG97	2	14	Bis(5'-nucleosyl)-tetraphosphatase	
+NUDT2.L	xenopus-laevis	A5D8R0	nudt2.L	A5D8R0	2	2	Bis(5'-nucleosyl)-tetraphosphatase [asymmetrical]	
 NUDT20	arabidopsis-thaliana	Q8VXZ0	NUDT20	Q8VXZ0	0	12	Nudix hydrolase 20, chloroplastic	
 NUDT20	human	Q8IU60	DCP2	Q8IU60	22	195		
 NUDT21	arabidopsis-thaliana	Q8VY81	NUDT21	Q8VY81	0	11	Nudix hydrolase 21, chloroplastic	
@@ -179,11 +187,13 @@ NUDT4A	zebrafish	Q1L8L1	nudt4a	Q1L8L1	1	14	diphosphoinositol-polyphosphate dipho
 NUDT4B	human	A0A024RBG1	NUDT4B	A0A024RBG1	0	28	Diphosphoinositol polyphosphate phosphohydrolase NUDT4B (DIP	
 NUDT4B	zebrafish	Q66JN9	nudt4b	Q66JN9	1	16	diphosphoinositol-polyphosphate diphosphatase	
 NUDT4_HUMAN	human	Q9NZJ9	NUDT4	Q9NZJ9	2	35		
-NUDT5	human	Q9UKK9	NUDT5	Q9UKK9	9	127	ADP-sugar pyrophosphatase (EC 3.6.1.13) (8-oxo-dGDP phosphat	
-NUDT5	mus-musculus	Q9JKX6	Nudt5	Q9JKX6	1	20	ADP-sugar pyrophosphatase	
-NUDT5	rattus-norvegicus	Q6AY63	Nudt5	Q6AY63	1	16	ADP-sugar pyrophosphatase	
-NUDT5	zebrafish	Q6IQ66	nudt5	Q6IQ66	0	21	ADP-sugar pyrophosphatase	
-NUDT5_HUMAN	human	Q9UKK9	NUDT5	Q9UKK9	9	127		
+NUDT5	human	Q9UKK9	NUDT5	Q9UKK9	21	140	ADP-sugar pyrophosphatase (EC 3.6.1.13) (8-oxo-dGDP phosphat	
+NUDT5	mus-musculus	Q9JKX6	Nudt5	Q9JKX6	7	28	ADP-sugar pyrophosphatase	
+NUDT5	pan-troglodytes	A0A2J8KYR7	NUDT5	A0A2J8KYR7	9	11	Nudix hydrolase 5	
+NUDT5	rattus-norvegicus	Q6AY63	Nudt5	Q6AY63	9	25	ADP-sugar pyrophosphatase	
+NUDT5	zebrafish	Q6IQ66	nudt5	Q6IQ66	1	23	ADP-sugar pyrophosphatase	
+NUDT5.L	xenopus-laevis	Q6IND3	nudt5.L	Q6IND3	8	9	MGC83500 protein	
+NUDT5_HUMAN	human	Q9UKK9	NUDT5	Q9UKK9	21	140		
 NUDT6	arabidopsis-thaliana	Q9SJC4	NUDT6	Q9SJC4	0	1	Nudix hydrolase 6	
 NUDT6	human	P53370	NUDT6	P53370	1	48	Nudix hydrolase 6 (Antisense basic fibroblast growth factor)	
 NUDT6_HUMAN	human	P53370	NUDT6	P53370	1	48		
@@ -194,11 +204,17 @@ NUDT7	rattus-norvegicus	D3ZV74	Nudt7	D3ZV74	3	18	Nudix hydrolase 7
 NUDT7	zebrafish	E7FAS2	nudt7	E7FAS2	0	16	Peroxisomal coenzyme A diphosphatase NUDT7	w
 NUDT7	zebrafish	E7FAS2	nudt7	E7FAS2	0	16	Peroxisomal coenzyme A diphosphatase NUDT7	w
 NUDT7_HUMAN	human	P0C024	NUDT7	P0C024	4	33		
-NUDT8	human	Q8WV74	NUDT8	Q8WV74	4	73	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	
-NUDT8	mus-musculus	Q9CR24	Nudt8	Q9CR24	1	12	Mitochondrial coenzyme A diphosphatase NUDT8	
-NUDT8_HUMAN	human	Q8WV74	NUDT8	Q8WV74	4	73		
-NUDT9	human	Q9BW91	NUDT9	Q9BW91	4	56	ADP-ribose pyrophosphatase (EC 3.6.1.13) (ADP-ribose diphosp	
-NUDT9	mus-musculus	Q8BVU5	Nudt9	Q8BVU5	0	3	ADP-ribose pyrophosphatase, mitochondrial	
-NUDT9	rattus-norvegicus	Q5XIG0	Nudt9	Q5XIG0	0	2	ADP-ribose pyrophosphatase, mitochondrial	
+NUDT8	human	Q8WV74	NUDT8	Q8WV74	8	76	Mitochondrial coenzyme A diphosphatase NUDT8 (EC 3.6.1.-) (E	
+NUDT8	mus-musculus	Q9CR24	Nudt8	Q9CR24	3	15	Mitochondrial coenzyme A diphosphatase NUDT8	
+NUDT8	pan-troglodytes	H2Q494	NUDT8	H2Q494	4	4	Nudix hydrolase 8	
+NUDT8	rattus-norvegicus	D3ZEH6	Nudt8	D3ZEH6	5	5	Nudix hydrolase 8	
+NUDT8.L	xenopus-laevis	A0A1L8FKK7	nudt8.L	A0A1L8FKK7	3	3	nucleoside diphosphate-linked moiety X motif 8 isoform X1	
+NUDT8_HUMAN	human	Q8WV74	NUDT8	Q8WV74	8	76		
+NUDT9	human	Q9BW91	NUDT9	Q9BW91	6	57	ADP-ribose pyrophosphatase (EC 3.6.1.13) (ADP-ribose diphosp	
+NUDT9	mus-musculus	Q8BVU5	Nudt9	Q8BVU5	2	5	ADP-ribose pyrophosphatase, mitochondrial	
+NUDT9	pan-troglodytes	H2R3N3	NUDT9	H2R3N3	2	2	Nudix (Nucleoside diphosphate linked moiety X)-type motif 9	
+NUDT9	rattus-norvegicus	Q5XIG0	Nudt9	Q5XIG0	1	3	ADP-ribose pyrophosphatase, mitochondrial	
+NUDT9	zebrafish	A0A8M1PPR4	nudt9	A0A8M1PPR4	0	1	ADP-ribose pyrophosphatase, mitochondrial precursor	
 NUDT9	zebrafish	F1QL34	nudt9	F1QL34	0	2	ADP-ribose pyrophosphatase, mitochondrial	
-NUDT9_HUMAN	human	Q9BW91	NUDT9	Q9BW91	4	56		
+NUDT9.L	xenopus-laevis	A0A8J1LRK8	nudt9.L	A0A8J1LRK8	0	1	nudix-type motif 9 isoform X1	
+NUDT9_HUMAN	human	Q9BW91	NUDT9	Q9BW91	6	57		

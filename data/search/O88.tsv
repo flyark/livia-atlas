@@ -49,12 +49,12 @@ O88410	mus-musculus	O88410	Cxcr3	O88410	19	73	C-X-C chemokine receptor type 3
 O88413	mus-musculus	O88413	Tulp3	O88413	1	20	Tubby-related protein 3	
 O88419	rattus-norvegicus	O88419	B4galt6	O88419	0	8	Beta-1,4-galactosyltransferase 6	
 O88422	rattus-norvegicus	O88422	Galnt5	O88422	1	2	Polypeptide N-acetylgalactosaminyltransferase 5	
-O88425	mus-musculus	O88425	Nme6	O88425	1	57	Nucleoside diphosphate kinase 6	
-O88426	rattus-norvegicus	O88426	Nme6	O88426	1	118	Nucleoside diphosphate kinase 6	
+O88425	mus-musculus	O88425	Nme6	O88425	6	63	Nucleoside diphosphate kinase 6	
+O88426	rattus-norvegicus	O88426	Nme6	O88426	6	123	Nucleoside diphosphate kinase 6	
 O88428	mus-musculus	O88428	Papss2	O88428	1	7	Bifunctional 3'-phosphoadenosine 5'-phosphosulfate synthase 	
 O88430	mus-musculus	O88430	Ccl22	O88430	16	40	C-C motif chemokine 22	
 O88436	rattus-norvegicus	O88436	Pax4	O88436	4	21	Paired box protein Pax-4	
-O88441	mus-musculus	O88441	Mtx2	O88441	4	23	Metaxin-2	
+O88441	mus-musculus	O88441	Mtx2	O88441	13	32	Metaxin-2	
 O88444	mus-musculus	O88444	Adcy1	O88444	6	16	Adenylate cyclase type 1	
 O88445	mus-musculus	O88445	Aurkc	O88445	6	48	Aurora kinase C	
 O88446	rattus-norvegicus	O88446	Slc22a3	O88446	0	11	Solute carrier family 22 member 3	
@@ -69,13 +69,13 @@ O88456	mus-musculus	O88456	Capns1	O88456	11	53	Calpain small subunit 1
 O88470	mus-musculus	O88470	Foxl2	O88470	2	38	Forkhead box protein L2	
 O88472	mus-musculus	O88472	Tnfrsf17	O88472	6	20	Tumor necrosis factor receptor superfamily member 17	
 O88477	mus-musculus	O88477	Igf2bp1	O88477	1	43	Insulin-like growth factor 2 mRNA-binding protein 1	
-O88483	rattus-norvegicus	O88483	Pdp1	O88483	0	17	Protein phosphatase 2C	
-O88484	rattus-norvegicus	O88484	Pdp2	O88484	1	14	Pyruvate dehydrogenase phosphatase catalytic subunit 2	
+O88483	rattus-norvegicus	O88483	Pdp1	O88483	6	23	Protein phosphatase 2C	
+O88484	rattus-norvegicus	O88484	Pdp2	O88484	8	22	Pyruvate dehydrogenase phosphatase catalytic subunit 2	
 O88485	mus-musculus	O88485	Dync1i1	O88485	11	105	Cytoplasmic dynein 1 intermediate chain 1	
 O88487	mus-musculus	O88487	Dync1i2	O88487	13	110	Cytoplasmic dynein 1 intermediate chain 2	
 O88492	mus-musculus	O88492	Plin4	O88492	1	6	Perilipin-4	
 O88495	mus-musculus	O88495	Gpr50	O88495	1	11	Melatonin-related receptor	
-O88498	rattus-norvegicus	O88498	Bcl2l11	O88498	8	34	Bcl-2-like protein 11	
+O88498	rattus-norvegicus	O88498	Bcl2l11	O88498	10	36	Bcl-2-like protein 11	
 O88501	rattus-norvegicus	O88501	Capn6	O88501	1	7	Calpain-6	
 O88502	mus-musculus	O88502	Pde8a	O88502	0	13	High affinity cAMP-specific and IBMX-insensitive 3,5-cyclic 	
 O88506	rattus-norvegicus	O88506	Stk39	O88506	7	28	STE20/SPS1-related proline-alanine-rich protein kinase	
@@ -110,7 +110,7 @@ O88575	mus-musculus	O88575	Slc6a20b	O88575	2	2	Sodium- and chloride-dependent tr
 O88576	mus-musculus	O88576	Slc6a18	O88576	2	4	Sodium-dependent neutral amino acid transporter B(0)AT3	
 O88582	rattus-norvegicus	O88582	Socs2	O88582	10	73	Suppressor of cytokine signaling 2	
 O88583	rattus-norvegicus	O88583	Socs3	O88583	29	103	Suppressor of cytokine signaling 3	
-O88587	mus-musculus	O88587	Comt	O88587	0	22	Catechol O-methyltransferase	
+O88587	mus-musculus	O88587	Comt	O88587	4	26	Catechol O-methyltransferase	
 O88588	rattus-norvegicus	O88588	Pacs1	O88588	1	11	Phosphofurin acidic cluster sorting protein 1	
 O88593	mus-musculus	O88593	Pglyrp1	O88593	2	12	Peptidoglycan recognition protein 1	
 O88597	mus-musculus	O88597	Becn1	O88597	24	172	Beclin-1	
@@ -157,7 +157,7 @@ O88721	mus-musculus	O88721	Avpr2	O88721	2	55	Vasopressin V2 receptor
 O88728	mus-musculus	O88728	Ifitm5	O88728	0	2	Interferon-induced transmembrane protein 5	
 O88735	mus-musculus	O88735	Map7	O88735	0	3	Ensconsin	
 O88736	mus-musculus	O88736	Hsd17b7	O88736	1	38	3-keto-steroid reductase/17-beta-hydroxysteroid dehydrogenas	
-O88741	mus-musculus	O88741	Gdap1	O88741	1	7	Ganglioside-induced differentiation-associated protein 1	
+O88741	mus-musculus	O88741	Gdap1	O88741	7	13	Ganglioside-induced differentiation-associated protein 1	
 O88745	mus-musculus	O88745	Scrg1	O88745	0	3	Scrapie-responsive protein 1	
 O88746	mus-musculus	O88746	Tom1	O88746	8	21	Target of Myb1 membrane trafficking protein	
 O88751	rattus-norvegicus	O88751	Cabp1	O88751	3	22	Calcium-binding protein 1	
@@ -168,7 +168,7 @@ O88761	rattus-norvegicus	O88761	Psmd1	O88761	9	101	26S proteasome non-ATPase reg
 O88763	rattus-norvegicus	O88763	Pik3c3	O88763	9	163	Phosphatidylinositol 3-kinase catalytic subunit type 3	
 O88764	rattus-norvegicus	O88764	Dapk3	O88764	5	19	Death-associated protein kinase 3	
 O88766	rattus-norvegicus	O88766	Mmp8	O88766	2	23	Neutrophil collagenase	
-O88767	rattus-norvegicus	O88767	Park7	O88767	0	168	Parkinson disease protein 7 homolog	
+O88767	rattus-norvegicus	O88767	Park7	O88767	3	173	Parkinson disease protein 7 homolog	
 O88775	rattus-norvegicus	O88775	Emb	O88775	6	8	Embigin	
 O88777	rattus-norvegicus	O88777	Psen2	O88777	6	50	Presenilin-2	
 O88779	rattus-norvegicus	O88779	Rhbdl1	O88779	0	2	Rhomboid-related protein 1	
@@ -199,7 +199,7 @@ O88839	mus-musculus	O88839	Adam15	O88839	5	13	Disintegrin and metalloproteinase 
 O88842	mus-musculus	O88842	Fgd3	O88842	1	5	FYVE, RhoGEF and PH domain-containing protein 3	
 O88843	mus-musculus	O88843	Cradd	O88843	2	9	Death domain-containing protein CRADD	
 O88844	mus-musculus	O88844	Idh1	O88844	5	50	Isocitrate dehydrogenase	
-O88845	mus-musculus	O88845	Akap10	O88845	3	21	A-kinase anchor protein 10, mitochondrial	
+O88845	mus-musculus	O88845	Akap10	O88845	11	29	A-kinase anchor protein 10, mitochondrial	
 O88846	rattus-norvegicus	O88846	Rnf4	O88846	16	47	E3 ubiquitin-protein ligase RNF4	
 O88848	mus-musculus	O88848	Arl6	O88848	7	34	ADP-ribosylation factor-like protein 6	
 O88850	rattus-norvegicus	O88850	Hipk3	O88850	0	6	Homeodomain-interacting protein kinase 3	
@@ -210,7 +210,7 @@ O88854	mus-musculus	O88854	Galr2	O88854	3	10	Galanin receptor type 2
 O88855	mus-musculus	O88855	Ltb4r	O88855	4	20	Leukotriene B4 receptor 1	
 O88856	mus-musculus	O88856	Tpst2	O88856	0	17	Protein-tyrosine sulfotransferase 2	
 O88866	mus-musculus	O88866	Hunk	O88866	0	6	Hormonally up-regulated neu tumor-associated kinase	
-O88867	rattus-norvegicus	O88867	Kmo	O88867	0	33	Kynurenine 3-monooxygenase	
+O88867	rattus-norvegicus	O88867	Kmo	O88867	2	35	Kynurenine 3-monooxygenase	
 O88869	rattus-norvegicus	O88869	Rassf9	O88869	1	2	Ras association domain-containing protein 9	
 O88870	mus-musculus	O88870	Best1	O88870	0	5	Bestrophin-1	
 O88871	rattus-norvegicus	O88871	Gabbr2	O88871	2	66	Gamma-aminobutyric acid type B receptor subunit 2	
@@ -221,7 +221,7 @@ O88876	mus-musculus	O88876	Dhrs3	O88876	3	4	Short-chain dehydrogenase/reductase 
 O88878	mus-musculus	O88878	Zfand5	O88878	0	12	AN1-type zinc finger protein 5	
 O88879	mus-musculus	O88879	Apaf1	O88879	3	80	Apoptotic protease-activating factor 1	
 O88881	rattus-norvegicus	O88881	Begain	O88881	9	62	Brain-enriched guanylate kinase-associated protein	
-O88884	rattus-norvegicus	O88884	Akap1	O88884	10	54	A-kinase anchor protein 1, mitochondrial	
+O88884	rattus-norvegicus	O88884	Akap1	O88884	20	65	A-kinase anchor protein 1, mitochondrial	
 O88888	mus-musculus	O88888	Apba3	O88888	1	7	Amyloid-beta A4 precursor protein-binding family A member 3	
 O88890	mus-musculus	O88890	Sh2d1a	O88890	1	11	SH2 domain-containing protein 1A	
 O88895	mus-musculus	O88895	Hdac3	O88895	19	187	Histone deacetylase 3	
@@ -250,19 +250,19 @@ O88954	rattus-norvegicus	O88954	Mpp3	O88954	7	22	MAGUK p55 subfamily member 3
 O88958	mus-musculus	O88958	Gnpda1	O88958	0	16	Glucosamine-6-phosphate deaminase 1	
 O88959	rattus-norvegicus	O88959	Inhbe	O88959	4	4	Inhibin beta E chain	
 O88962	mus-musculus	O88962	Cyp8b1	O88962	0	4	7-alpha-hydroxycholest-4-en-3-one 12-alpha-hydroxylase	
-O88967	mus-musculus	O88967	Yme1l1	O88967	3	69	ATP-dependent zinc metalloprotease YME1L1	
+O88967	mus-musculus	O88967	Yme1l1	O88967	5	71	ATP-dependent zinc metalloprotease YME1L1	
 O88968	mus-musculus	O88968	Tcn2	O88968	0	7	Transcobalamin-2	
 O88969	rattus-norvegicus	O88969	Cst8	O88969	0	1	Cystatin-8	
 O88974	mus-musculus	O88974	Setdb1	O88974	11	66	Histone-lysine N-methyltransferase SETDB1	
 O88978	mus-musculus	O88978	Dnaaf11	O88978	1	9	Dynein axonemal assembly factor 11	
 O88983	mus-musculus	O88983	Stx8	O88983	19	74	Syntaxin-8	
 O88984	rattus-norvegicus	O88984	Nxf1	O88984	10	64	Nuclear RNA export factor 1	
-O88986	mus-musculus	O88986	Gcat	O88986	0	7	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial	
+O88986	mus-musculus	O88986	Gcat	O88986	3	10	2-amino-3-ketobutyrate coenzyme A ligase, mitochondrial	
 O88987	mus-musculus	O88987	Akap3	O88987	0	6	A-kinase anchor protein 3	
 O88989	rattus-norvegicus	O88989	Mdh1	O88989	1	8	Malate dehydrogenase, cytoplasmic	
 O88990	mus-musculus	O88990	Actn3	O88990	2	52	Alpha-actinin-3	
 O88992	mus-musculus	O88992	C1ql1	O88992	1	2	C1q-related factor	
-O88994	rattus-norvegicus	O88994	Mtarc2	O88994	0	3	Mitochondrial amidoxime reducing component 2	
+O88994	rattus-norvegicus	O88994	Mtarc2	O88994	7	10	Mitochondrial amidoxime reducing component 2	
 O88995	mus-musculus	O88995	Nfkbil1	O88995	0	4	NF-kappa-B inhibitor-like protein 1	
-O88996	rattus-norvegicus	O88996	Bcl2l2	O88996	5	54	Bcl-2-like protein 2	
+O88996	rattus-norvegicus	O88996	Bcl2l2	O88996	13	62	Bcl-2-like protein 2	
 O88998	mus-musculus	O88998	Olfm1	O88998	6	53	Noelin	

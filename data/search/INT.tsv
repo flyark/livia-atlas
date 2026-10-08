@@ -48,7 +48,7 @@ INT9	human	Q9NV88	INTS9	Q9NV88	26	356	Integrator complex subunit 9 (Int9) (Prote
 INT9_HUMAN	human	Q9NV88	INTS9	Q9NV88	26	356		
 INTA	escherichia-coli-83333	P32053	intA	P32053	0	7	Prophage integrase IntA	
 INTD	escherichia-coli-83333	P24218	intD	P24218	0	2	Prophage integrase IntD	
-INTE	human	O60218	AKR1B10	O60218	7	121	Aldo-keto reductase family 1 member B10 (EC 1.1.1.300) (EC 1	w
+INTE	human	O60218	AKR1B10	O60218	13	127	Aldo-keto reductase family 1 member B10 (EC 1.1.1.300) (EC 1	w
 INTE	human	P03956	MMP1	P03956	27	191	Interstitial collagenase (EC 3.4.24.7) (Fibroblast collagena	w
 INTE	human	Q06587	RING1	Q06587	91	640	E3 ubiquitin-protein ligase RING1 (EC 2.3.2.27) (Polycomb co	w
 INTEFERON	zebrafish	C5IX16	ifnphi4	C5IX16	1	15	Inteferon phi 4	w
@@ -56,7 +56,7 @@ INTEGR	fly	FBgn0030051	spirit	Q7K3Y1	44	244	GH03360p (Serine protease immune res
 INTEGRAL	fly	FBgn0030768	Nemp	Q9VXD6	3	16	Nuclear envelope integral membrane protein	w
 INTEGRAL	fly	FBgn0031285	CG3662	Q9VPT9	476	2654	Integral membrane protein 2	w
 INTEGRAL	fly	FBgn0036998	CG5969	Q9VPE4	6	13	Vacuolar ATPase assembly integral membrane protein VMA21 hom	w
-INTEGRAL	fly	FBgn0052448	CG32448	Q8IPS9	0	1	Small integral membrane protein 8	w
+INTEGRAL	fly	FBgn0052448	CG32448	Q8IPS9	2	3	Small integral membrane protein 8	w
 INTEGRAL	fly	FBgn0052736	sloth1	Q9W3T5	1	4	Small integral membrane protein 4	w
 INTEGRAL	human	A0A096LP01	SMIM26	A0A096LP01	3	59	Small integral membrane protein 26	w
 INTEGRAL	human	A0A1B0GU29	SMIM28	A0A1B0GU29	11	43	Small integral membrane protein 28	w
@@ -122,16 +122,16 @@ INTEGRAL	human	Q86T20	SMIM29	Q86T20	4	27	Small integral membrane protein 29 (Pro
 INTEGRAL	human	Q86V85	GPR180	Q86V85	3	88	Integral membrane protein GPR180 (Intimal thickness-related 	w
 INTEGRAL	human	Q86W33	TPRA1	Q86W33	4	86	Transmembrane protein adipocyte-associated 1 (Integral membr	w
 INTEGRAL	human	Q8N3F9	GPR137C	Q8N3F9	2	52	Integral membrane protein GPR137C (Transmembrane 7 superfami	w
-INTEGRAL	human	Q8N5G0	SMIM20	Q8N5G0	39	138	Small integral membrane protein 20 (Mitochondrial translatio	w
+INTEGRAL	human	Q8N5G0	SMIM20	Q8N5G0	41	139	Small integral membrane protein 20 (Mitochondrial translatio	w
 INTEGRAL	human	Q8NCU8	MTLN	Q8NCU8	2	23	Mitoregulin (Micropeptide in mitochondria) (Micropeptide reg	w
 INTEGRAL	human	Q8WVI0	UQCC5	Q8WVI0	30	81	Ubiquinol-cytochrome c reductase complex assembly factor 5 (	w
 INTEGRAL	human	Q96E16	SMIM19	Q96E16	5	43	Small integral membrane protein 19	w
 INTEGRAL	human	Q96EX1	SMIM12	Q96EX1	35	214	Small integral membrane protein 12	w
 INTEGRAL	human	Q96HG1	SMIM10	Q96HG1	0	6	Small integral membrane protein 10	w
-INTEGRAL	human	Q96KF7	SMIM8	Q96KF7	21	50	Small integral membrane protein 8	w
+INTEGRAL	human	Q96KF7	SMIM8	Q96KF7	24	53	Small integral membrane protein 8	w
 INTEGRAL	human	Q96N19	GPR137	Q96N19	2	14	Integral membrane protein GPR137 (Transmembrane 7 superfamil	w
 INTEGRAL	human	Q96QK8	SMIM14	Q96QK8	10	45	Small integral membrane protein 14	w
-INTEGRAL	human	Q99643	SDHC	Q99643	12	138	Succinate dehydrogenase cytochrome b560 subunit, mitochondri	w
+INTEGRAL	human	Q99643	SDHC	Q99643	13	139	Succinate dehydrogenase cytochrome b560 subunit, mitochondri	w
 INTEGRAL	human	Q99732	LITAF	Q99732	47	429	Lipopolysaccharide-induced tumor necrosis factor-alpha facto	w
 INTEGRAL	human	Q9BQ49	SMIM7	Q9BQ49	10	54	Small integral membrane protein 7	w
 INTEGRAL	human	Q9BVW6	SMIM2	Q9BVW6	1	28	Small integral membrane protein 2	w
@@ -149,7 +149,8 @@ INTEGRAL	worm	Q7YX25	CELE_F18C12.4	Q7YX25	0	2	Small integral membrane protein 29
 INTEGRAL	yeast	P32341	VPH2	P32341	4	17	Vacuolar ATPase assembly integral membrane protein VPH2	w
 INTEGRAL	yeast	P41806	VMA21	P41806	4	24	Vacuolar ATPase assembly integral membrane protein VMA21	w
 INTEGRAL	yeast	Q01590	SED5	Q01590	21	82	Integral membrane protein SED5	w
-INTEGRAL	zebrafish	A0A2R8Q9H3	smim20	A0A2R8Q9H3	3	27	Small integral membrane protein 20	w
+INTEGRAL	zebrafish	A0A2R8Q9H3	smim20	A0A2R8Q9H3	5	29	Small integral membrane protein 20	w
+INTEGRAL	zebrafish	A0A8M6Z3Q4	stom	A0A8M6Z3Q4	1	1	erythrocyte band 7 integral membrane protein isoform X1	w
 INTEGRAL	zebrafish	A5PLC9	smim7	A5PLC9	0	24	Small integral membrane protein 7	w
 INTEGRAL	zebrafish	B8JJV5	smim13	B8JJV5	0	59	Small integral membrane protein 13	w
 INTEGRAL	zebrafish	B8JLV7	vma21	B8JLV7	2	20	Vacuolar ATPase assembly integral membrane protein vma21	w
@@ -157,6 +158,7 @@ INTEGRAL	zebrafish	E7FE40	nemp1	E7FE40	1	8	Nuclear envelope integral membrane pr
 INTEGRAL	zebrafish	E7FFR8	uqcc5	E7FFR8	0	1	Small integral membrane protein 4	w
 INTEGRAL	zebrafish	F1QCQ7	stom	F1QCQ7	4	26	Erythrocyte band 7 integral membrane protein isoform 1	w
 INTEGRAL	zebrafish	F1QYC4	nemp2	F1QYC4	0	3	Nuclear envelope integral membrane protein 2	w
+INTEGRAL	zebrafish	Q502E5	smim8	Q502E5	3	3	Small integral membrane protein 8	w
 INTEGRAL	zebrafish	Q5BKW8	smim12	Q5BKW8	5	89	Small integral membrane protein 12	w
 INTEGRAL	zebrafish	Q7SYK5	itm2cb	Q7SYK5	0	3	Integral membrane protein 2	w
 INTEGRAL	zebrafish	Q7T328	itm2bb	Q7T328	0	2	Integral membrane protein 2	w
@@ -395,7 +397,7 @@ INTERACTION	human	Q9NPB6	PARD6A	Q9NPB6	34	150	Partitioning defective 6 homolog a
 INTERACTION	human	Q9P0R6	GSKIP	Q9P0R6	11	128	GSK3B-interacting protein (GSKIP) (GSK3beta interaction prot	w
 INTERACTION	human	Q9P246	STIM2	Q9P246	20	178	Stromal interaction molecule 2	w
 INTERACTION	human	Q9UEU0	VTI1B	Q9UEU0	32	243	Vesicle transport through interaction with t-SNAREs homolog 	w
-INTERACTION	human	Q9Y2S7	POLDIP2	Q9Y2S7	61	540	Polymerase delta-interacting protein 2 (38 kDa DNA polymeras	w
+INTERACTION	human	Q9Y2S7	POLDIP2	Q9Y2S7	70	549	Polymerase delta-interacting protein 2 (38 kDa DNA polymeras	w
 INTERACTION	worm	G5EF60	stim-1	G5EF60	1	17	Stromal interaction molecule 1	w
 INTERACTION	worm	Q9U3E2	ldb-1	Q9U3E2	11	47	LIM interaction domain-containing protein	w
 INTERACTION	zebrafish	A0A0R4IAT9	stim1b	A0A0R4IAT9	4	27	Stromal interaction molecule 1 isoform X1	w
@@ -522,7 +524,7 @@ INTERCELLULAR	human	P32942	ICAM3	P32942	71	436	Intercellular adhesion molecule 3
 INTERCELLULAR	human	Q14773	ICAM4	Q14773	28	106	Intercellular adhesion molecule 4 (ICAM-4) (Landsteiner-Wien	w
 INTERCELLULAR	human	Q9UMF0	ICAM5	Q9UMF0	11	104	Intercellular adhesion molecule 5 (ICAM-5) (Telencephalin)	w
 INTERCRINE	human	P48061	CXCL12	P48061	36	85	Stromal cell-derived factor 1 (SDF-1) (hSDF-1) (C-X-C motif 	w
-INTEREST	human	Q9Y255	PRELID1	Q9Y255	17	135	PRELI domain-containing protein 1, mitochondrial (25 kDa pro	w
+INTEREST	human	Q9Y255	PRELID1	Q9Y255	21	139	PRELI domain-containing protein 1, mitochondrial (25 kDa pro	w
 INTERESTING	human	P0CW19	LIMS3	P0CW19	2	27	LIM and senescent cell antigen-like-containing domain protei	w
 INTERESTING	human	P28067	HLA-DMA	P28067	75	369	HLA class II histocompatibility antigen, DM alpha chain (MHC	w
 INTERESTING	human	P28068	HLA-DMB	P28068	47	385	HLA class II histocompatibility antigen, DM beta chain (MHC 	w
@@ -585,7 +587,7 @@ INTERFERON	human	P15260	IFNGR1	P15260	50	372	Interferon gamma receptor 1 (IFN-ga
 INTERFERON	human	P17181	IFNAR1	P17181	63	377	Interferon alpha/beta receptor 1 (IFN-R-1) (IFN-alpha/beta r	w
 INTERFERON	human	P32881	IFNA8	P32881	32	188	Interferon alpha-8 (IFN-alpha-8) (Interferon alpha-B) (LeIF 	w
 INTERFERON	human	P38484	IFNGR2	P38484	47	455	Interferon gamma receptor 2 (IFN-gamma receptor 2) (IFN-gamm	w
-INTERFERON	human	P40305	IFI27	P40305	7	286	Interferon alpha-inducible protein 27, mitochondrial (p27) (	w
+INTERFERON	human	P40305	IFI27	P40305	8	287	Interferon alpha-inducible protein 27, mitochondrial (p27) (	w
 INTERFERON	human	P48551	IFNAR2	P48551	62	313	Interferon alpha/beta receptor 2 (IFN-R-2) (IFN-alpha bindin	w
 INTERFERON	human	Q00978	IRF9	Q00978	104	488	Interferon regulatory factor 9 (IRF-9) (IFN-alpha-responsive	w
 INTERFERON	human	Q02556	IRF8	Q02556	91	676	Interferon regulatory factor 8 (IRF-8) (Interferon consensus	w
@@ -595,7 +597,7 @@ INTERFERON	human	Q14116	IL18	Q14116	44	598	Interleukin-18 (IL-18) (Iboctadekin) 
 INTERFERON	human	Q14653	IRF3	Q14653	52	526	Interferon regulatory factor 3 (IRF-3)	w
 INTERFERON	human	Q15306	IRF4	Q15306	63	409	Interferon regulatory factor 4 (IRF-4) (Lymphocyte-specific 	w
 INTERFERON	human	Q5TKA1	LIN9	Q5TKA1	94	722	Protein lin-9 homolog (HuLin-9) (hLin-9) (Beta subunit-assoc	w
-INTERFERON	human	Q7Z434	MAVS	Q7Z434	39	391	Mitochondrial antiviral-signaling protein (MAVS) (CARD adapt	w
+INTERFERON	human	Q7Z434	MAVS	Q7Z434	49	401	Mitochondrial antiviral-signaling protein (MAVS) (CARD adapt	w
 INTERFERON	human	Q7Z5L9	IRF2BP2	Q7Z5L9	47	179	Interferon regulatory factor 2-binding protein 2 (IRF-2-bind	w
 INTERFERON	human	Q86WN2	IFNE	Q86WN2	12	140	Interferon epsilon (IFN-epsilon) (Interferon epsilon-1)	w
 INTERFERON	human	Q86WV6	STING1	Q86WV6	9	216	Stimulator of interferon genes protein (hSTING) (Endoplasmic	w
@@ -743,7 +745,7 @@ INTERFERON-RESPONSIVE	human	Q96DX8	RTP4	Q96DX8	10	132	Receptor-transporting prot
 INTERFERON-RESPONSIVE	human	Q9BYJ4	TRIM34	Q9BYJ4	25	76	E3 ubiquitin-protein ligase TRIM34 (EC 2.3.2.27) (Interferon	w
 INTERFERON-RESPONSIVE	human	Q9H496	TOR1AIP2	Q9H496	18	812	Torsin-1A-interacting protein 2, isoform IFRG15 (15 kDa inte	w
 INTERFERON-RESPONSIVE	human	Q9H497	TOR3A	Q9H497	8	110	Torsin-3A (ATP-dependent interferon-responsive protein) (Tor	w
-INTERFERON-STIMULATED	human	P40305	IFI27	P40305	7	286	Interferon alpha-inducible protein 27, mitochondrial (p27) (	w
+INTERFERON-STIMULATED	human	P40305	IFI27	P40305	8	287	Interferon alpha-inducible protein 27, mitochondrial (p27) (	w
 INTERFERON-STIMULATED	human	Q00978	IRF9	Q00978	104	488	Interferon regulatory factor 9 (IRF-9) (IFN-alpha-responsive	w
 INTERFERON-STIMULATED	human	Q8WTP8	AEN	Q8WTP8	4	75	Apoptosis-enhancing nuclease (EC 3.1.-.-) (Interferon-stimul	w
 INTERFERON-STIMULATED	human	Q96AZ6	ISG20	Q96AZ6	5	113	Interferon-stimulated gene 20 kDa protein (EC 3.1.13.1) (Est	w
@@ -1042,7 +1044,7 @@ INTERMEDIATE	human	P68133	ACTA1	P68133	246	1752	Actin, alpha skeletal muscle (EC
 INTERMEDIATE	human	Q0D2I5	IFFO1	Q0D2I5	30	75	Non-homologous end joining factor IFFO1 (NHEJ factor IFFO1) 	w
 INTERMEDIATE	human	Q12934	BFSP1	Q12934	30	60	Filensin (Beaded filament structural protein 1) (Lens fiber 	w
 INTERMEDIATE	human	Q13409	DYNC1I2	Q13409	35	307	Cytoplasmic dynein 1 intermediate chain 2 (Cytoplasmic dynei	w
-INTERMEDIATE	human	Q16595	FXN	Q16595	25	227	Frataxin, mitochondrial (EC 1.16.3.1) (Friedreich ataxia pro	w
+INTERMEDIATE	human	Q16595	FXN	Q16595	32	233	Frataxin, mitochondrial (EC 1.16.3.1) (Friedreich ataxia pro	w
 INTERMEDIATE	human	Q2NL98	VMAC	Q2NL98	5	46	Vimentin-type intermediate filament-associated coiled-coil p	w
 INTERMEDIATE	human	Q5D862	FLG2	Q5D862	9	207	Filaggrin-2 (FLG-2) (Intermediate filament-associated and ps	w
 INTERMEDIATE	human	Q5TF58	IFFO2	Q5TF58	12	32	Intermediate filament family orphan 2	w
@@ -1051,7 +1053,7 @@ INTERMEDIATE	human	Q6TDU7	DNAI7	Q6TDU7	2	37	Dynein axonemal intermediate chain 7
 INTERMEDIATE	human	Q6UVM3	KCNT2	Q6UVM3	3	38	Potassium channel subfamily T member 2 (KNa1.2) (Sequence li	w
 INTERMEDIATE	human	Q8IUL8	CILP2	Q8IUL8	2	33	Cartilage intermediate layer protein 2 (CILP-2) [Cleaved int	w
 INTERMEDIATE	human	Q8IWG1	DNAI3	Q8IWG1	10	70	Dynein axonemal intermediate chain 3 (Testis development pro	w
-INTERMEDIATE	human	Q8N5G0	SMIM20	Q8N5G0	39	138	Small integral membrane protein 20 (Mitochondrial translatio	w
+INTERMEDIATE	human	Q8N5G0	SMIM20	Q8N5G0	41	139	Small integral membrane protein 20 (Mitochondrial translatio	w
 INTERMEDIATE	human	Q8N9Z9	LMNTD1	Q8N9Z9	1	25	Lamin tail domain-containing protein 1 (Intermediate filamen	w
 INTERMEDIATE	human	Q8TCX1	DYNC2LI1	Q8TCX1	6	64	Cytoplasmic dynein 2 light intermediate chain 1 (Dynein 2 li	w
 INTERMEDIATE	human	Q8WVS4	DYNC2I1	Q8WVS4	18	81	Cytoplasmic dynein 2 intermediate chain 1 (Dynein 2 intermed	w
@@ -1060,11 +1062,11 @@ INTERMEDIATE	human	Q96EX3	DYNC2I2	Q96EX3	14	113	Cytoplasmic dynein 2 intermediat
 INTERMEDIATE	human	Q96LB8	PGLYRP4	Q96LB8	42	336	Peptidoglycan recognition protein 4 (Peptidoglycan recogniti	w
 INTERMEDIATE	human	Q96LB9	PGLYRP3	Q96LB9	5	36	Peptidoglycan recognition protein 3 (Peptidoglycan recogniti	w
 INTERMEDIATE	human	Q96RQ1	ERGIC2	Q96RQ1	15	262	Endoplasmic reticulum-Golgi intermediate compartment protein	w
-INTERMEDIATE	human	Q99797	MIPEP	Q99797	7	100	Mitochondrial intermediate peptidase (MIP) (EC 3.4.24.59)	w
+INTERMEDIATE	human	Q99797	MIPEP	Q99797	7	101	Mitochondrial intermediate peptidase (MIP) (EC 3.4.24.59)	w
 INTERMEDIATE	human	Q9BQ95	ECSIT	Q9BQ95	17	232	Evolutionarily conserved signaling intermediate in Toll path	w
 INTERMEDIATE	human	Q9BZ23	PANK2	Q9BZ23	10	82	Pantothenate kinase 2, mitochondrial (hPanK2) (EC 2.7.1.33) 	w
 INTERMEDIATE	human	Q9GZS0	DNAI2	Q9GZS0	13	133	Dynein axonemal intermediate chain 2 (Axonemal dynein interm	w
-INTERMEDIATE	human	Q9GZY4	COA1	Q9GZY4	9	118	Cytochrome c oxidase assembly factor 1 homolog (Mitochondria	w
+INTERMEDIATE	human	Q9GZY4	COA1	Q9GZY4	15	124	Cytochrome c oxidase assembly factor 1 homolog (Mitochondria	w
 INTERMEDIATE	human	Q9H7C4	SYNC	Q9H7C4	51	119	Syncoilin (Syncoilin intermediate filament 1) (Syncoilin-1)	w
 INTERMEDIATE	human	Q9UI46	DNAI1	Q9UI46	11	63	Dynein axonemal intermediate chain 1 (Axonemal dynein interm	w
 INTERMEDIATE	human	Q9Y282	ERGIC3	Q9Y282	7	340	Endoplasmic reticulum-Golgi intermediate compartment protein	w
@@ -1206,7 +1208,7 @@ INTERMEDIATE	zebrafish	F1Q8F1	inab	F1Q8F1	0	12	Internexin neuronal intermediate 
 INTERMEDIATE	zebrafish	F1QHZ6	dnai4	F1QHZ6	10	44	Dynein axonemal intermediate chain 4	w
 INTERMEDIATE	zebrafish	F1QIA6	mipepb	F1QIA6	0	1	Mitochondrial intermediate peptidase	w
 INTERMEDIATE	zebrafish	F1RB89	dync1li2	F1RB89	8	82	Dynein light intermediate chain	w
-INTERMEDIATE	zebrafish	Q08CK1	ecsit	Q08CK1	1	48	Evolutionarily conserved signaling intermediate in Toll path	w
+INTERMEDIATE	zebrafish	Q08CK1	ecsit	Q08CK1	2	49	Evolutionarily conserved signaling intermediate in Toll path	w
 INTERMEDIATE	zebrafish	Q1LUM9	dync1li1	Q1LUM9	10	83	Dynein light intermediate chain	w
 INTERMEDIATE	zebrafish	Q4V8Y6	ergic1	Q4V8Y6	0	6	Endoplasmic reticulum-Golgi intermediate compartment protein	w
 INTERMEDIATE	zebrafish	Q7SXY4	dync2li1	Q7SXY4	2	35	Cytoplasmic dynein 2 light intermediate chain 1	w
@@ -1214,10 +1216,10 @@ INTERMEDIATE	zebrafish	Q7T2D4	ergic2	Q7T2D4	0	10	Endoplasmic reticulum-Golgi int
 INTERMEDIATE	zebrafish	Q803I2	ergic3	Q803I2	1	11	Endoplasmic reticulum-Golgi intermediate compartment protein	w
 INTERMEDIATE	zebrafish	U3JB19	si:ch211-225b10.3	U3JB19	1	10	Endoplasmic reticulum-Golgi intermediate compartment protein	w
 INTERMEDIATE	zebrafish	X1WCL6	kcnn4	X1WCL6	0	12	Intermediate conductance calcium-activated potassium channel	w
-INTERMEDIATE-ASSOCIATED	fly	FBgn0039689	NdufAF1	Q9VAI1	5	34	Complex I intermediate-associated protein 30, mitochondrial	w
-INTERMEDIATE-ASSOCIATED	human	Q9Y375	NDUFAF1	Q9Y375	16	207	Complex I intermediate-associated protein 30, mitochondrial 	w
+INTERMEDIATE-ASSOCIATED	fly	FBgn0039689	NdufAF1	Q9VAI1	6	35	Complex I intermediate-associated protein 30, mitochondrial	w
+INTERMEDIATE-ASSOCIATED	human	Q9Y375	NDUFAF1	Q9Y375	23	214	Complex I intermediate-associated protein 30, mitochondrial 	w
 INTERMEDIATE-ASSOCIATED	worm	Q18726	nuaf-1	Q18726	3	22	Probable complex I intermediate-associated protein 30, mitoc	w
-INTERMEDIATE-ASSOCIATED	zebrafish	Q5CZW0	ndufaf1	Q5CZW0	2	35	Complex I intermediate-associated protein 30, mitochondrial	w
+INTERMEDIATE-ASSOCIATED	zebrafish	Q5CZW0	ndufaf1	Q5CZW0	6	40	Complex I intermediate-associated protein 30, mitochondrial	w
 INTERMEDIATE-LAYER	human	O75339	CILP	O75339	3	9	Cartilage intermediate layer protein 1 (CILP-1) (Cartilage i	w
 INTERMEDIATES	human	Q86WS4	REDIC1	Q86WS4	4	15	Regulator of DNA class I crossover intermediates 1	w
 INTERMEDIN	human	Q7Z4H4	ADM2	Q7Z4H4	11	76	Protein ADM2 (Intermedin) [Cleaved into: Adrenomedullin-2 (A	w
@@ -1225,14 +1227,14 @@ INTERMEDIN-LONG	human	Q7Z4H4	ADM2	Q7Z4H4	11	76	Protein ADM2 (Intermedin) [Cleave
 INTERMEDIN-SHORT	human	Q7Z4H4	ADM2	Q7Z4H4	11	76	Protein ADM2 (Intermedin) [Cleaved into: Adrenomedullin-2 (A	w
 INTERMEMBRANE	fly	FBgn0033194	Vps13	A1Z713	0	2	Intermembrane lipid transfer protein Vps13 (Vacuolar protein	w
 INTERMEMBRANE	fly	FBgn0052113	Vps13D	Q9VU08	1	29	Intermembrane lipid transfer protein Vps13D (Vacuolar protei	w
-INTERMEMBRANE	human	Q8N4Q1	CHCHD4	Q8N4Q1	7	163	Mitochondrial intermembrane space import and assembly protei	w
+INTERMEMBRANE	human	Q8N4Q1	CHCHD4	Q8N4Q1	9	165	Mitochondrial intermembrane space import and assembly protei	w
 INTERMEMBRANE	human	Q8N5K1	CISD2	Q8N5K1	13	332	CDGSH iron-sulfur domain-containing protein 2 (Endoplasmic r	w
 INTERMEMBRANE	human	Q96RL7	VPS13A	Q96RL7	4	69	Intermembrane lipid transfer protein VPS13A (Chorea-acanthoc	w
 INTERMEMBRANE	yeast	P36046	MIA40	P36046	5	89	Mitochondrial intermembrane space import and assembly protei	w
 INTERMEMBRANE	yeast	P38162	MIX23	P38162	0	9	Mitochondrial intermembrane space cysteine motif-containing 	w
 INTERMEMBRANE	yeast	Q03667	MIX17	Q03667	1	10	Mitochondrial intermembrane space cysteine motif-containing 	w
 INTERMEMBRANE	yeast	Q04341	MIX14	Q04341	1	4	Mitochondrial intermembrane space cysteine motif-containing 	w
-INTERMEMBRANE	zebrafish	Q6DEI8	chchd4	Q6DEI8	1	23	Mitochondrial intermembrane space import and assembly protei	w
+INTERMEMBRANE	zebrafish	Q6DEI8	chchd4	Q6DEI8	3	25	Mitochondrial intermembrane space import and assembly protei	w
 INTERNA	human	Q02763	TEK	Q02763	85	1867	Angiopoietin-1 receptor (EC 2.7.10.1) (Endothelial tyrosine 	w
 INTERNAL	virus	A0A068EFE3	pepv_138	A0A068EFE3	4	240	Internal virion protein	w
 INTERNAL	virus	A0A068EKV6	fep_131	A0A068EKV6	7	221	Internal virion protein	w
@@ -1254,7 +1256,7 @@ INTERPHASE	human	Q9BS16	CENPK	Q9BS16	38	459	Centromere protein K (CENP-K) (Inter
 INTERPHASE	human	Q9BU64	CENPO	Q9BU64	38	309	Centromere protein O (CENP-O) (Interphase centromere complex	w
 INTERPHASE	human	Q9H3R5	CENPH	Q9H3R5	48	310	Centromere protein H (CENP-H) (Interphase centromere complex	w
 INTERPHASE	human	Q9NSP4	CENPM	Q9NSP4	24	320	Centromere protein M (CENP-M) (Interphase centromere complex	w
-INTERPHASE	human	Q9NWX6	THG1L	Q9NWX6	2	66	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (Induce	w
+INTERPHASE	human	Q9NWX6	THG1L	Q9NWX6	3	67	Probable tRNA(His) guanylyltransferase (EC 2.7.7.79) (Induce	w
 INTERPHOTORECEPTOR	human	P10745	RBP3	P10745	5	43	Retinol-binding protein 3 (Interphotoreceptor retinoid-bindi	w
 INTERPHOTORECEPTOR	human	Q17R60	IMPG1	Q17R60	5	18	Interphotoreceptor matrix proteoglycan 1 (Interphotoreceptor	w
 INTERPHOTORECEPTOR	human	Q9BZV3	IMPG2	Q9BZV3	5	28	Interphotoreceptor matrix proteoglycan 2 (Interphotoreceptor	w
@@ -1442,7 +1444,7 @@ INTRAMEMBRANE	human	Q8TCT6	SPPL3	Q8TCT6	37	900	Signal peptide peptidase-like 3 (
 INTRAMEMBRANE	human	Q8TCT7	SPPL2B	Q8TCT7	26	253	Signal peptide peptidase-like 2B (SPP-like 2B) (SPPL2b) (EC 	w
 INTRAMEMBRANE	human	Q8TCT8	SPPL2A	Q8TCT8	2	80	Signal peptide peptidase-like 2A (SPP-like 2A) (SPPL2a) (EC 	w
 INTRAMEMBRANE	human	Q8TCT9	HM13	Q8TCT9	3	170	Signal peptide peptidase (EC 3.4.23.-) (Intramembrane protea	w
-INTRAMEMBRANE	human	Q9H300	PARL	Q9H300	12	221	Presenilin-associated rhomboid-like protein, mitochondrial (	w
+INTRAMEMBRANE	human	Q9H300	PARL	Q9H300	13	222	Presenilin-associated rhomboid-like protein, mitochondrial (	w
 INTRAMEMBRANE	worm	P49049	imp-2	P49049	0	20	Intramembrane protease 2	w
 INTRAMEMBRANE	worm	Q564X0	imp-1	Q564X0	0	1	IntraMembrane Protease (IMPAS) family	w
 INTRAMEMBRANE	yeast	P34248	YKL100C	P34248	0	16	Probable intramembrane protease YKL100C	w
