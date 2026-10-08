@@ -663,18 +663,53 @@ function structLink(host, x, cls, text = 'Open in LIVIA ↗') {
     a.onclick = (e) => { e.preventDefault(); openFromArchive(x.model, x.addr, a); }; }
   host.appendChild(a);
 }
+// EBI's release archives by byte range: https://ftp.ebi.ac.uk first; when that host does not answer (it stopped taking HTTPS in
+// October 2026 while plain HTTP kept serving the same files, and a page served over HTTPS cannot read http://), the same range
+// through LIVIA's proxy, which reads it over HTTP server-side. Once the direct address fails, the rest of the visit uses the proxy.
+const RELAY = DEV ? 'http://localhost:8787/' : 'https://livia-proxy.flyark.workers.dev/';   // local preview: the worker run by hand (wrangler dev or a node wrapper)
+let viaRelay = false;
+const archPath = (ad) => (ad.hd ? `homodimers/${ad.tar}${/\.tar$/.test(ad.tar) ? '' : '.tar'}` : ad.tar ? `heterodimers/${ad.tar}` : `pandemic_prep/chunk_${ad.chunk}.tar`);
+async function archRange(ad, o, n, onRelay) {
+  const direct = ad.hd ? HOMO_URL(ad.tar) : ad.tar ? HET_URL(ad.tar) : ARCH_URL(ad.chunk);
+  const reach = async (url, init) => {   // a host that does not answer can hang for many seconds: 8 s to start answering, then no limit on the body
+    const c = new AbortController(), t = setTimeout(() => c.abort(new DOMException('no answer', 'TimeoutError')), 8000);
+    try { return await fetch(url, { ...init, signal: c.signal }); } finally { clearTimeout(t); } };
+  const read = async (relay) => { const r = relay ? await fetch(`${RELAY}?afdbArchive=${encodeURIComponent(archPath(ad))}&range=${o}-${o + n - 1}`)
+    : await reach(direct, { headers: { Range: `bytes=${o}-${o + n - 1}` } });
+    if (r.status !== 206) throw new Error(`the ${relay ? 'proxy' : 'archive'} answered ${r.status}`); const b = new Uint8Array(await r.arrayBuffer()); if (b.length !== n) throw new Error('short read'); return b; };
+  for (let t = 0; ; t++) {
+    try { return await read(viaRelay); }
+    catch (e) {
+      if (!viaRelay && (e instanceof TypeError || (e && e.name === 'TimeoutError'))) { viaRelay = true; if (onRelay) onRelay(); t = -1; continue; }   // no answer at all (refused: a TypeError; silent: the timeout): switch to the proxy
+      if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 700 * (t + 1)));   // EBI sometimes refuses one connection: retry
+    } }
+}
+// A LIVIA tab opened with ?post=1: status lines while the Atlas reads (LIVIA shows them in place of a blank page), then the data.
+function liviaTab(w) {
+  const origin = new URL(LIVIA, location.href).origin; let last = null, ready = false, n = 0;
+  const post = (m) => { try { w.postMessage(m, origin); } catch (e) { /* closed */ } };
+  const onMsg = (ev) => { if (ev.source !== w || !ev.data || ev.data.type !== 'livia-ready') return; if (!ready) { ready = true; if (last) post(last); } };
+  window.addEventListener('message', onMsg);
+  const t = setInterval(() => { if (ready || w.closed || ++n > 240) { clearInterval(t); return; } post({ type: 'livia-ping' }); }, 250);
+  return { status(text, error) { last = { type: 'livia-status', text, error: !!error }; if (ready) post(last); },
+    load(msg) { window.removeEventListener('message', onMsg); clearInterval(t); handTo(w, msg); } };
+}
 async function openFromArchive(model, ad, link) {
   const w = window.open(`${LIVIA}universal.html?post=1`, '_blank'); if (!w) return;
+  const tab = liviaTab(w), mb = ((ad.cif_len + ad.pae_len) / 1048576).toFixed(1);
   const txt = link.textContent; link.textContent = 'reading…';
-  const get = async (o, n) => { for (let t = 0; ; t++) { try { const r = await fetch(ad.hd ? HOMO_URL(ad.tar) : ad.tar ? HET_URL(ad.tar) : ARCH_URL(ad.chunk), { headers: { Range: `bytes=${o}-${o + n - 1}` } });
-    if (r.status !== 206) throw new Error(`the archive answered ${r.status}`); const b = new Uint8Array(await r.arrayBuffer()); if (b.length !== n) throw new Error('short read'); return b; }
-    catch (e) { if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 700 * (t + 1))); } } };   // EBI sometimes refuses a connection: retry
+  tab.status(`Reading ${model} from the AlphaFold Database release archive at EBI (${mb} MB)…`);
+  const onRelay = () => tab.status(`EBI's secure address did not answer; reading ${model} through LIVIA's proxy instead (${mb} MB)…`);
   try {
     const [[{ decompress }, { zipSync }], cif, pae] = await Promise.all([Promise.all([import('https://cdn.jsdelivr.net/npm/fzstd@0.1.1/+esm'), import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm')]),
-      get(ad.cif_off, ad.cif_len), get(ad.pae_off, ad.pae_len)]);
+      archRange(ad, ad.cif_off, ad.cif_len, onRelay), archRange(ad, ad.pae_off, ad.pae_len, onRelay)]);
+    tab.status(`Unpacking ${model}…`);
     const zip = zipSync({ [`${model}-model_v1.cif`]: decompress(cif), [`${model}-predicted_aligned_error_v1.json`]: decompress(pae) });
-    handTo(w, { type: 'livia-load', name: `${model}_${ad.hd ? 'homodimer' : ad.tar ? 'afdb' : 'viral'}.zip`, data: zip.buffer }); link.textContent = txt;
-  } catch (e) { link.textContent = 'not read'; link.title = `The archive could not be read (${e.message || e}); try again.`; try { w.close(); } catch (_) {} }
+    tab.load({ type: 'livia-load', name: `${model}_${ad.hd ? 'homodimer' : ad.tar ? 'afdb' : 'viral'}.zip`, data: zip.buffer }); link.textContent = txt;
+  } catch (e) {
+    link.textContent = 'not read'; link.title = `The archive could not be read (${e.message || e}); try again.`;
+    tab.status(`Could not read ${model} from the AlphaFold Database archive (${e.message || e}). Close this tab and try again from the Atlas.`, true);
+  }
 }
 // Homodimers (REG.homodimers): the AlphaFold Database homodimer release rescored with lis.py, one gzip CSV per species, read
 // whole once and kept. One model per entry. The
