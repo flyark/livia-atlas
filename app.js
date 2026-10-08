@@ -688,11 +688,12 @@ async function archRange(ad, o, n, onRelay) {
 function liviaTab(w) {
   const origin = new URL(LIVIA, location.href).origin; let last = null, ready = false, n = 0;
   const post = (m) => { try { w.postMessage(m, origin); } catch (e) { /* closed */ } };
-  const onMsg = (ev) => { if (ev.source !== w || !ev.data || ev.data.type !== 'livia-ready') return; if (!ready) { ready = true; if (last) post(last); } };
+  const onMsg = (ev) => { if (ev.source !== w || !ev.data || ev.data.type !== 'livia-ready') return; if (!ready) { ready = true; if (last) post(last); if (last && last.error) done(); } };
   window.addEventListener('message', onMsg);
-  const t = setInterval(() => { if (ready || w.closed || ++n > 240) { clearInterval(t); return; } post({ type: 'livia-ping' }); }, 250);
-  return { status(text, error) { last = { type: 'livia-status', text, error: !!error }; if (ready) post(last); },
-    load(msg) { window.removeEventListener('message', onMsg); clearInterval(t); handTo(w, msg); } };
+  const t = setInterval(() => { if (ready || w.closed || ++n > 240) { clearInterval(t); if (!ready) window.removeEventListener('message', onMsg); return; } post({ type: 'livia-ping' }); }, 250);   // a tab that never answers (closed, blocked): stop listening after 60 s
+  const done = () => { window.removeEventListener('message', onMsg); clearInterval(t); };
+  return { status(text, error) { last = { type: 'livia-status', text, error: !!error }; if (ready) post(last); if (error && ready) done(); },
+    load(msg) { done(); handTo(w, msg); } };
 }
 async function openFromArchive(model, ad, link) {
   const w = window.open(`${LIVIA}universal.html?post=1`, '_blank'); if (!w) return;
@@ -1600,7 +1601,7 @@ async function showcase() {
       const links = s.edges.map(([a, b, w]) => ({ source: a, target: b, w, same: cm[a] === cm[b] }));
       const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).distance(26).strength((l) => (l.same ? 0.6 : 0.02))).force('charge', d3.forceManyBody().strength(-38))
         .force('x', d3.forceX((d) => home(d)[0]).strength((d) => (center.has(cm[d.i]) ? 0.3 : 0.05))).force('y', d3.forceY((d) => home(d)[1]).strength((d) => (center.has(cm[d.i]) ? 0.3 : 0.09))).stop();
-      for (let t = 0; t < 320; t++) sim.tick();
+      sim.stop(); for (let t = 0; t < 320; t++) sim.tick();   // ticked here by hand: its own timer stopped
       const xs = nodes.map((n) => n.x), ys = nodes.map((n) => n.y), x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
       s._pos = nodes.map((n) => [(n.x - x0) / Math.max(1, x1 - x0), (n.y - y0) / Math.max(1, y1 - y0)]); }
     const P = s._pos.map(([u, v]) => [24 + u * (W - 48), 14 + v * (H - 28)]), deg = new Map(); s.edges.forEach(([a, b]) => { deg.set(a, (deg.get(a) || 0) + 1); deg.set(b, (deg.get(b) || 0) + 1); });
@@ -1949,6 +1950,10 @@ const homoKey = (n) => `<span><i style="background:#fff;border:3px solid ${HOMO_
 // A seeded random number generator (mulberry32): the same seed gives the same numbers, so a seeded layout or community run
 // repeats exactly. Callers treat seed 0 as no randomness at all (the fixed order or start they always had).
 const seededRandom = (seed) => { let a = seed >>> 0; return () => { a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; };
+let V3D_URL = null;   // the protein page's Mol* page, kept to be freed when the next one is made
+const SIMS = {};   // the running force layout of each network view: a redraw or a new page stops the old one instead of letting it tick on detached nodes
+const keepSim = (key, sim) => { if (SIMS[key] && SIMS[key] !== sim) SIMS[key].stop(); SIMS[key] = sim; return sim; };
+const stopSims = () => { for (const k of Object.keys(SIMS)) { SIMS[k].stop(); delete SIMS[k]; } };
 const NEWTAB = '⌘-click (Mac) or Ctrl-click (Windows) opens it in a new tab';   // the hint on every network element a click opens
 const openHash = (u, ev) => { if (ev && (ev.metaKey || ev.ctrlKey)) window.open(u, '_blank'); else location.hash = u; };   // a click follows the link; ⌘ or Ctrl opens it in a new tab
 const shuffled = (n, rand) => { const o = [...Array(n).keys()]; if (rand) for (let i = n - 1; i > 0; i--) { const j = Math.floor(rand() * (i + 1)); [o[i], o[j]] = [o[j], o[i]]; } return o; };   // 0..n-1, in a seeded order (index order without rand)
@@ -3371,7 +3376,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       if (gone() || !f || ev.source === f.contentWindow) window.removeEventListener('message', onReady);
       if (!gone() && f && ev.source === f.contentWindow && JSON.stringify(colorComponents()) !== built) recolor3D(); };
     window.addEventListener('message', onReady);
-    frame.src = URL.createObjectURL(new Blob([buildMolstarPage(S.text, 'mmcif', comps, LIVIA)], { type: 'text/html' }));
+    if (V3D_URL) { try { URL.revokeObjectURL(V3D_URL); } catch (e) {} }   // the previous page's Mol* page (it embeds the whole structure) is freed
+    V3D_URL = URL.createObjectURL(new Blob([buildMolstarPage(S.text, 'mmcif', comps, LIVIA)], { type: 'text/html' })); frame.src = V3D_URL;
     V.shown = true; $('#v3d-msg').hidden = true; legend3D();
   }
   function recolor3D() { legend3D(); if (V.shown) applyColorsToMolstarFrame('viewer3d-frame', colorComponents(), 'mmcif'); }
@@ -3777,7 +3783,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const q = nodes[0]; q.fx = W / 2; q.fy = H / 2;
     const R = Math.min(W, H) * 0.42;
     if (C.seed) { const sr = seededRandom(C.seed); nodes.slice(1).forEach((d) => { const t = sr() * 2 * Math.PI, rr = R * (0.4 + 0.6 * sr()); d.x = W / 2 + rr * Math.cos(t); d.y = H / 2 + rr * Math.sin(t); }); }   // a seed: seeded starting places
-    const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => (l.q ? R * (1.15 - 0.55 * Math.min(1, l.best)) : 60)).strength((l) => (l.q ? 0.5 : 0.35)))
+    const sim = keepSim('protein', d3.forceSimulation(nodes)).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => (l.q ? R * (1.15 - 0.55 * Math.min(1, l.best)) : 60)).strength((l) => (l.q ? 0.5 : 0.35)))
       .force('charge', d3.forceManyBody().strength(-340)).force('collide', d3.forceCollide().radius((d) => r(d) + 14)).force('x', d3.forceX(W / 2).strength(0.04)).force('y', d3.forceY(H / 2).strength(0.05))
       .on('tick', () => { placeLabels(); for (const sel of [link]) sel.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
     let fitted = false;   // once the layout settles, zoom so every node and label fits the box (the zoom stays free afterwards)
@@ -4270,7 +4276,7 @@ async function viewVirus(spId, taxid) {
     node.on('mousemove', (ev, d) => showTip(`<b>${esc(G(d.id))}</b>${d.row.name && d.row.name !== d.row.gene ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} partner${(deg.get(d.id) || 0) === 1 ? '' : 's'} in the virus at this cutoff${homo.has(d.id) ? ' · predicted homodimer' : ''}<br>click for its page · ${NEWTAB}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip).on('click', (ev, d) => { if (!ev.defaultPrevented) openHash(`#/${sp.id}/${d.row.key}`, ev); });
     const same = (l) => (typeof l.source === 'object' ? l.source.c === l.target.c : true);
-    const sim = d3.forceSimulation(nodes).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => 60 + 60 * (1 - Math.min(1, l.best))).strength((l) => (grouped && !same(l) ? 0.02 : 0.5)))
+    const sim = keepSim('virus', d3.forceSimulation(nodes)).force('link', d3.forceLink(links).id((d) => d.id).distance((l) => 60 + 60 * (1 - Math.min(1, l.best))).strength((l) => (grouped && !same(l) ? 0.02 : 0.5)))
       .force('charge', d3.forceManyBody().strength(nodes.length > 150 ? -90 : -200)).force('collide', d3.forceCollide().radius((d) => r(d) + 8))
       .force('x', d3.forceX((d) => home(d)[0]).strength((d) => (grouped && center.has(d.c) ? 0.4 : 0.07))).force('y', d3.forceY((d) => home(d)[1]).strength((d) => (grouped && center.has(d.c) ? 0.4 : 0.09)))
       .on('tick', () => { placeLabels(); link.attr('x1', (d) => d.source.x).attr('y1', (d) => d.source.y).attr('x2', (d) => d.target.x).attr('y2', (d) => d.target.y); node.attr('transform', (d) => `translate(${d.x},${d.y})`); });
@@ -5436,7 +5442,7 @@ async function viewNetwork(spId, q) {
         if (S.click === 'select') { ev.stopPropagation(); hl(SELN === d.id ? null : d.id); return; }
         S.exp.push(d.row.key);   // a second click on the same protein adds its next partners
         draw({ at: d.id, t: d3.zoomTransform(svg.node()), pos: new Map(nodes.map((x) => [x.id, [x.x, x.y]])) }); });
-    const sim = d3.forceSimulation(nodes).alphaDecay(1 - Math.pow(0.001, 1 / (S.liter || 300)))   // the number of rounds before the layout stops
+    const sim = keepSim('builder', d3.forceSimulation(nodes)).alphaDecay(1 - Math.pow(0.001, 1 / (S.liter || 300)))   // the number of rounds before the layout stops
       .force('link', d3.forceLink([...links, ...extra, ...xo]).id((d) => d.id).distance((l) => (S.lwt ? 70 + 60 * (1 - Math.min(1, l.best || 0)) : 100) * S.lspace).strength((l) => (l.unpred ? 0 : 0.4)))
       .force('charge', d3.forceManyBody().strength((groups.length ? -140 : -260) * S.lrep)).force('collide', d3.forceCollide().radius((d) => r(d) + 10))
       .force('x', d3.forceX((d) => (homeAny(d) || [FW / 2])[0]).strength((d) => (home(d) ? 0.2 : outer.has(d.id) ? 0.08 : 0.05))).force('y', d3.forceY((d) => (homeAny(d) || [0, FH / 2])[1]).strength((d) => (home(d) ? 0.2 : outer.has(d.id) ? 0.08 : 0.06)))
@@ -5737,7 +5743,7 @@ async function route() {
   if (stay) app.style.minHeight = `${app.offsetHeight}px`; else { app.style.minHeight = ''; window.scrollTo(0, 0); }
   hideTip(); window.onresize = null;
   document.title = 'LIVIA Atlas';
-  stopClip();
+  stopClip(); stopSims();
   try {
     await registry();
     if (stale(gen)) return;
