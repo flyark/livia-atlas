@@ -10,17 +10,17 @@
  },
  "ids": "UniProtKB entry name",
  "source": {
-  "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome (2026). Nat Commun.",
+  "citation": "Swaminathan AB, et al. The predicted interactome of the human mitochondrial proteome. Nat Commun 17, 10162 (2026).",
   "doi": "10.5281/zenodo.21232148",
-  "url": "https://doi.org/10.5281/zenodo.21232148",
-  "journalDoi": null,
-  "journalDoiNote": "No journal DOI exists for this record yet: the Zenodo deposition carries no related identifier. The Zenodo DOI above is the citable identifier. This is a fact about the record, not an omission.",
+  "url": "https://doi.org/10.1038/s41467-026-77112-z",
+  "journalDoi": "10.1038/s41467-026-77112-z",
   "license": "CC BY 4.0",
   "method": "AlphaFold-Multimer 2.2.0, 5 models per pair; only the single best-scoring model per pair was released. Pairs are the orthologs of the human MitoCarta pairs, mapped through the human_to_homolog tables shipped with the deposition.",
   "coverage": "1577 pairs over 796 proteins: every pair in the deposition's zebrafish directory that ships BOTH a structure and a confidence NPZ. The homolog release also carries NPZ files for pairs with no structure; lis.py needs coordinates for the contact map and the interface pLDDT, so those cannot be scored and are not in this screen.",
   "sequences": "Identity and sequence both come from the UniProt reference proteome shipped inside MitoMatch_homologs.zip (proteome_sequences/, the release the authors folded from), so the served sequence is the folded one and lis.py's LIR/cLIR residue indices are positions in it.",
   "pTM": "Absent at source. The released NPZ holds pae, plddt, iptm, protein_1_length and protein_2_length only, and the PDB files are bare coordinates with no REMARK header, so no pTM value exists anywhere in the deposition. The empty pTM column is the source's silence, not a build failure.",
-  "paePrecision": "Full precision. The source PAE is float32 and not quantized or downsampled, with a maximum of 31.75 -- AlphaFold2's own cap."
+  "paePrecision": "Full precision. The source PAE is float32 and not quantized or downsampled, with a maximum of 31.75 -- AlphaFold2's own cap.",
+  "data": "MitoMatch data: Zenodo, https://doi.org/10.5281/zenodo.21232148"
  },
  "analysis": {
   "tool": "lis.py (AFM-LIS)",

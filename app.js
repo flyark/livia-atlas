@@ -138,7 +138,7 @@ const REF = {
   leiden: ['Traag et al. 2019', '10.1038/s41598-019-41695-z'],
   schmid2025: ['Schmid et al. 2025', '10.1101/2025.11.10.687652'], kim2025: ['Kim et al. 2025', '10.1101/2025.10.10.681672'],
   han2026: ['Han et al. 2026', '10.64898/2026.03.27.714458'], hannarain2026: ['Han, Narain et al. 2026', '10.64898/2026.09.29.755321'],
-  mitomatch: ['Swaminathan et al. 2026', '10.5281/zenodo.21232148'],
+  mitomatch: ['Swaminathan et al. 2026', '10.1038/s41467-026-77112-z'],
 };
 const cite = (k) => `<a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">${REF[k][0]}</a>`;
 // A screen's reference, the one text About and the pair page's Prediction sources both use: the named papers, Han et al. for
@@ -149,7 +149,7 @@ const SCREEN_SRC = { 'human-predictomes': ['schmid2025', 'Schmid, E. W. et al. (
   flypredictome: ['flypredictome', 'Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.'],
   'viral-dimers-afdb': ['hannarain2026', 'Han, Y., Narain, R. et al. (2026). Systematic exploration of predicted quaternary structures within pandemic-relevant viral proteomes. <i>bioRxiv</i>. Models: AlphaFold Database viral protein complexes, EMBL-EBI / Google DeepMind / NVIDIA and collaborators, CC BY 4.0.'] };
 const AFDB_SRC = ['han2026', 'Han, Y. et al. (2026). AlphaFold Database expands to proteome-scale quaternary structures. <i>bioRxiv</i>. Models: AlphaFold Database complexes release, EMBL-EBI / Google DeepMind / NVIDIA and collaborators, CC BY 4.0.'];
-const MITO_SRC = ['mitomatch', 'Swaminathan, A. B. et al. (2026). The predicted interactome of the human mitochondrial proteome. <i>Nat. Commun.</i> (no journal DOI yet). Data: MitoMatch, Zenodo, CC BY 4.0.'];
+const MITO_SRC = ['mitomatch', 'Swaminathan, A. B. et al. (2026). The predicted interactome of the human mitochondrial proteome. <i>Nat. Commun.</i> 17, 10162. Data: MitoMatch, Zenodo (10.5281/zenodo.21232148), CC BY 4.0.'];
 const LIVIA_SRC = ['livia', 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.'];
 function screenCite(d) {
   const [k, text] = SCREEN_SRC[d.id] || (/^afdb-het-/.test(d.id) ? AFDB_SRC : /^mitomatch-/.test(d.id) ? MITO_SRC : /kinase-kinase$/.test(d.id) ? LIVIA_SRC : [null, esc(d.source || d.title || d.id)]);
