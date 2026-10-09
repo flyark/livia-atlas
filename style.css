@@ -675,7 +675,8 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 .para-tbl tr.para-low td { color: var(--ink-2); }
 .para-tbl th.num { font-family: inherit; }
 @media (max-width: 600px) {   /* phones: name, identity, confidence, shared partners and the pair; the rest on wider screens */
-  .para-tbl th:nth-child(3), .para-tbl td:nth-child(3), .para-tbl th:nth-child(4), .para-tbl td:nth-child(4), .para-tbl th:nth-child(5), .para-tbl td:nth-child(5) { display: none; }
+  .para-tbl:not(.para-pan) th:nth-child(3), .para-tbl:not(.para-pan) td:nth-child(3), .para-tbl:not(.para-pan) th:nth-child(4), .para-tbl:not(.para-pan) td:nth-child(4), .para-tbl:not(.para-pan) th:nth-child(5), .para-tbl:not(.para-pan) td:nth-child(5) { display: none; }
+  .para-pan th:nth-child(3), .para-pan td:nth-child(3) { display: none; }   /* PANTHER's table: the family goes, the duplication stays */
   .para-tbl td:first-child .muted, .para-tbl td.num .muted, .para-ilis { display: none; }
   .para-tbl th.num { white-space: normal; }
   .pt.para-tbl th, .pt.para-tbl td { padding-left: 4px; padding-right: 4px; }
@@ -817,3 +818,10 @@ a[data-m3d] { display: inline-block; padding: 0 6px; border-radius: 6px; line-he
 .note-lines .nl-k { font-weight: 600; color: var(--ink-2); margin-right: 4px; }
 .card-note { font-size: 13px; line-height: 1.5; margin-top: 4px; max-width: 980px; }
 #toplist .num:has(.sdot), .pt td:has(.sdot) { white-space: nowrap; }   /* the screen dot stays on the value's line */
+
+.nw-note { margin: 8px 0 0; font-size: 13px; max-width: 80ch; }   /* the network builder: what the Score menu does, shown with it */
+.nw-how { margin-top: 8px; font-size: 13.5px; }
+.nw-how ul { margin: 6px 0 2px; padding-left: 20px; max-width: 86ch; }
+.nw-how li { margin: 3px 0; }
+@media (max-width: 600px) { .controls select { max-width: calc(100vw - 120px); text-overflow: ellipsis; } }   /* phones: a menu with long choices (a table's column names) stays on the screen instead of widening the page */
+@media (max-width: 480px) { .xbar, [id$="-export-bar"] { gap: 4px 6px !important; } .xbar button, [id$="-export-bar"] button { padding: 0 3px !important; } .xbar input, [id$="-export-bar"] input { width: 40px !important; } }   /* phones: the export bars (the Atlas's .xbar and LIVIA's, whose inline styles need !important) (SVG, PNG, W, H, font ×) stays on one line instead of leaving the font box alone below */
