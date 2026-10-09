@@ -6,7 +6,11 @@
   "zebrafish",
   "fly",
   "worm",
-  "yeast"
+  "yeast",
+  "schizosaccharomyces-pombe",
+  "arabidopsis-thaliana",
+  "dictyostelium-discoideum",
+  "escherichia-coli-83333"
  ],
  "source": "Alliance of Genome Resources",
  "release": "9.0.0",
@@ -103,5 +107,172 @@
   "yeast-mus-musculus": 2988,
   "yeast-rattus-norvegicus": 2816,
   "yeast-worm": 2683
+ },
+ "alliance": [
+  "human",
+  "rattus-norvegicus",
+  "mus-musculus",
+  "zebrafish",
+  "fly",
+  "worm",
+  "yeast"
+ ],
+ "panther": {
+  "source": "PANTHER",
+  "release": "19.0",
+  "license": "CC BY 4.0",
+  "files": [
+   "RefGenomeOrthologs",
+   "RefGenomeParalogs"
+  ],
+  "url": "https://www.pantherdb.org",
+  "species": [
+   "human",
+   "fly",
+   "zebrafish",
+   "yeast",
+   "worm",
+   "mus-musculus",
+   "rattus-norvegicus",
+   "schizosaccharomyces-pombe",
+   "arabidopsis-thaliana",
+   "dictyostelium-discoideum",
+   "escherichia-coli-83333"
+  ],
+  "columns": [
+   "key2",
+   "ldo",
+   "ancestor",
+   "family",
+   "symbol"
+  ],
+  "keep": 5,
+  "coverage": {
+   "human": {
+    "index": 20526,
+    "mapped": 18940,
+    "with_ortholog": 7529
+   },
+   "fly": {
+    "index": 14037,
+    "mapped": 9701,
+    "with_ortholog": 5611
+   },
+   "zebrafish": {
+    "index": 13108,
+    "mapped": 10248,
+    "with_ortholog": 5020
+   },
+   "yeast": {
+    "index": 5763,
+    "mapped": 4252,
+    "with_ortholog": 4010
+   },
+   "worm": {
+    "index": 11174,
+    "mapped": 7322,
+    "with_ortholog": 4796
+   },
+   "mus-musculus": {
+    "index": 15526,
+    "mapped": 15078,
+    "with_ortholog": 6803
+   },
+   "rattus-norvegicus": {
+    "index": 14688,
+    "mapped": 12148,
+    "with_ortholog": 5667
+   },
+   "schizosaccharomyces-pombe": {
+    "index": 4262,
+    "mapped": 3661,
+    "with_ortholog": 3643
+   },
+   "arabidopsis-thaliana": {
+    "index": 17797,
+    "mapped": 8973,
+    "with_ortholog": 8619
+   },
+   "dictyostelium-discoideum": {
+    "index": 5033,
+    "mapped": 4161,
+    "with_ortholog": 4128
+   },
+   "escherichia-coli-83333": {
+    "index": 2623,
+    "mapped": 823,
+    "with_ortholog": 769
+   }
+  },
+  "pairs": {
+   "human-schizosaccharomyces-pombe": 4276,
+   "human-dictyostelium-discoideum": 5028,
+   "human-arabidopsis-thaliana": 5405,
+   "schizosaccharomyces-pombe-human": 2837,
+   "schizosaccharomyces-pombe-mus-musculus": 2745,
+   "schizosaccharomyces-pombe-rattus-norvegicus": 2410,
+   "schizosaccharomyces-pombe-zebrafish": 2222,
+   "schizosaccharomyces-pombe-worm": 2424,
+   "schizosaccharomyces-pombe-fly": 2642,
+   "schizosaccharomyces-pombe-yeast": 3086,
+   "schizosaccharomyces-pombe-dictyostelium-discoideum": 2363,
+   "schizosaccharomyces-pombe-arabidopsis-thaliana": 2494,
+   "dictyostelium-discoideum-human": 3563,
+   "dictyostelium-discoideum-mus-musculus": 3498,
+   "dictyostelium-discoideum-rattus-norvegicus": 3115,
+   "dictyostelium-discoideum-zebrafish": 2851,
+   "dictyostelium-discoideum-worm": 3014,
+   "dictyostelium-discoideum-fly": 3255,
+   "dictyostelium-discoideum-yeast": 2538,
+   "dictyostelium-discoideum-schizosaccharomyces-pombe": 2521,
+   "dictyostelium-discoideum-arabidopsis-thaliana": 3011,
+   "arabidopsis-thaliana-human": 6894,
+   "arabidopsis-thaliana-mus-musculus": 6640,
+   "arabidopsis-thaliana-rattus-norvegicus": 6020,
+   "arabidopsis-thaliana-zebrafish": 5634,
+   "arabidopsis-thaliana-worm": 5690,
+   "arabidopsis-thaliana-fly": 6150,
+   "arabidopsis-thaliana-yeast": 5056,
+   "arabidopsis-thaliana-schizosaccharomyces-pombe": 4903,
+   "arabidopsis-thaliana-dictyostelium-discoideum": 5472,
+   "mus-musculus-schizosaccharomyces-pombe": 3944,
+   "mus-musculus-dictyostelium-discoideum": 4751,
+   "mus-musculus-arabidopsis-thaliana": 4935,
+   "rattus-norvegicus-schizosaccharomyces-pombe": 3307,
+   "rattus-norvegicus-dictyostelium-discoideum": 3999,
+   "rattus-norvegicus-arabidopsis-thaliana": 4125,
+   "zebrafish-schizosaccharomyces-pombe": 2899,
+   "zebrafish-dictyostelium-discoideum": 3497,
+   "zebrafish-arabidopsis-thaliana": 3642,
+   "worm-schizosaccharomyces-pombe": 2952,
+   "worm-dictyostelium-discoideum": 3456,
+   "worm-arabidopsis-thaliana": 3565,
+   "fly-schizosaccharomyces-pombe": 3251,
+   "fly-dictyostelium-discoideum": 3860,
+   "fly-arabidopsis-thaliana": 4133,
+   "yeast-schizosaccharomyces-pombe": 3440,
+   "yeast-dictyostelium-discoideum": 2515,
+   "yeast-arabidopsis-thaliana": 2718,
+   "human-escherichia-coli-83333": 713,
+   "schizosaccharomyces-pombe-escherichia-coli-83333": 496,
+   "dictyostelium-discoideum-escherichia-coli-83333": 523,
+   "arabidopsis-thaliana-escherichia-coli-83333": 1222,
+   "escherichia-coli-83333-human": 438,
+   "escherichia-coli-83333-mus-musculus": 425,
+   "escherichia-coli-83333-rattus-norvegicus": 401,
+   "escherichia-coli-83333-zebrafish": 343,
+   "escherichia-coli-83333-worm": 358,
+   "escherichia-coli-83333-fly": 362,
+   "escherichia-coli-83333-yeast": 440,
+   "escherichia-coli-83333-schizosaccharomyces-pombe": 397,
+   "escherichia-coli-83333-dictyostelium-discoideum": 397,
+   "escherichia-coli-83333-arabidopsis-thaliana": 526,
+   "mus-musculus-escherichia-coli-83333": 656,
+   "rattus-norvegicus-escherichia-coli-83333": 618,
+   "zebrafish-escherichia-coli-83333": 517,
+   "worm-escherichia-coli-83333": 531,
+   "fly-escherichia-coli-83333": 631,
+   "yeast-escherichia-coli-83333": 613
+  }
  }
 }

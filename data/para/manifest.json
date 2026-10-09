@@ -1,4 +1,13 @@
 {
+ "alliance": [
+  "fly",
+  "human",
+  "mus-musculus",
+  "rattus-norvegicus",
+  "worm",
+  "yeast",
+  "zebrafish"
+ ],
  "columns": [
   "key2",
   "rank",
@@ -46,15 +55,57 @@
  "keep": 10,
  "keep_low": 5,
  "license": "CC BY 4.0",
+ "panther": {
+  "columns": [
+   "key2",
+   "depth",
+   "from",
+   "to",
+   "family"
+  ],
+  "counts": {
+   "arabidopsis-thaliana": {
+    "proteins": 14373
+   },
+   "dictyostelium-discoideum": {
+    "proteins": 2514
+   },
+   "escherichia-coli-83333": {
+    "proteins": 1075
+   },
+   "schizosaccharomyces-pombe": {
+    "proteins": 1743
+   }
+  },
+  "files": [
+   "RefGenomeOrthologs",
+   "RefGenomeParalogs"
+  ],
+  "keep": 20,
+  "license": "CC BY 4.0",
+  "release": "19.0",
+  "source": "PANTHER",
+  "species": [
+   "schizosaccharomyces-pombe",
+   "arabidopsis-thaliana",
+   "dictyostelium-discoideum",
+   "escherichia-coli-83333"
+  ],
+  "url": "https://www.pantherdb.org"
+ },
  "release": [
   "9.0"
  ],
  "source": "Alliance of Genome Resources, paralogy (DIOPT)",
  "species": [
+  "arabidopsis-thaliana",
+  "dictyostelium-discoideum",
+  "escherichia-coli-83333",
   "fly",
   "human",
   "mus-musculus",
   "rattus-norvegicus",
+  "schizosaccharomyces-pombe",
   "worm",
   "yeast",
   "zebrafish"
