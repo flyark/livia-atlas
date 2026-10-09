@@ -121,6 +121,8 @@ a:hover { text-decoration: underline; }
 .actions { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 4px 0 20px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; height: 38px; padding: 0 16px; border-radius: 9px; font: 600 14px var(--sans); border: 1px solid var(--line); background: var(--card); color: var(--ink); cursor: pointer; }
 .btn:hover { text-decoration: none; border-color: var(--blue); color: var(--blue); }
+.btn.primary { background: var(--navy); border-color: var(--navy); color: #fff; }   /* the next step: one filled button at a time (nextStep) */
+.btn.primary:hover { background: var(--blue); border-color: var(--blue); color: #fff; }
 .flag { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 6px; background: #FFF4E0; color: #8A5A00; }
 .controls { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--ink-2); margin: 10px 0 12px; }
 .ctl { display: inline-flex; align-items: center; gap: 6px; }   /* a label and its control stay together */

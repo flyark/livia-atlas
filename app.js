@@ -2002,10 +2002,10 @@ function mcl(n, edges, inflation = 2, iters = 100) {
 }
 // The community menu every network card offers (the network builder adds finer settings): Leiden, Louvain, MCL or connected
 // parts, pairs weighted by best iLIS, and one seed for the visiting order and the layout's start (0: the fixed ones).
-const commHue = (n) => { if (n < TAB10.length) return TAB10[n]; const h = (n * 137.508) % 360, s = (62 + (n % 2) * 14) / 100, l = (42 + (n % 3) * 8) / 100, a = s * Math.min(l, 1 - l), f = (k0) => { const k = (k0 + h / 30) % 12; return Math.round(255 * (l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)))).toString(16).padStart(2, '0'); }; return `#${f(0)}${f(8)}${f(4)}`; };   // nine Tableau colors (no gray), then golden-angle hues as LIVIA's network page
-// Community palettes the network builder offers (Tableau 10, the default, is the one LIVIA and every other Atlas card use);
-// past a palette's end, golden-angle hues as commHue's. No gray in any: gray means "no community".
-const PALETTES = { tableau: ['Tableau 10', null],
+const commHue = (n) => { if (n < TAB60.length) return TAB60[n]; const h = (n * 137.508) % 360, s = (62 + (n % 2) * 14) / 100, l = (42 + (n % 3) * 8) / 100, a = s * Math.min(l, 1 - l), f = (k0) => { const k = (k0 + h / 30) % 12; return Math.round(255 * (l - a * Math.max(-1, Math.min(k - 3, 9 - k, 1)))).toString(16).padStart(2, '0'); }; return `#${f(0)}${f(8)}${f(4)}`; };   // the cluster colors (no gray): Tableau 10 up to nine groups, Tableau 20 (their pale pairs) up to 18, Tableau 20b/c up to 54, then golden-angle hues; one list, so a group keeps its color whatever the count (as LIVIA's network page)
+// Community palettes the network builder offers (Tableau, the default: Tableau 10, then Tableau 20's pale pairs past nine, as LIVIA and every other Atlas card);
+// past a palette's end, commHue's colors from its pale pairs on. No gray in any: gray means "no community".
+const PALETTES = { tableau: ['Tableau 10, then 20', null],
   okabe: ['Okabe–Ito (colorblind-safe)', ['#E69F00', '#56B4E9', '#009E73', '#0072B2', '#D55E00', '#CC79A7', '#F0E442']],
   muted: ['Tol Muted (soft, colorblind-safe)', ['#CC6677', '#332288', '#DDCC77', '#117733', '#88CCEE', '#882255', '#44AA99', '#999933', '#AA4499']],
   set2: ['Set2 (pastel)', ['#66C2A5', '#FC8D62', '#8DA0CB', '#E78AC3', '#A6D854', '#FFD92F', '#E5C494']],
@@ -4235,7 +4235,8 @@ async function viewVirus(spId, taxid) {
         <label class="ctl"><input type="checkbox" id="vn-intra"> only pairs inside a community</label></div>
       <p class="muted" style="margin:2px 0 12px">Every protein of the virus is a node; an edge joins two proteins whose pair passed the cutoff, its width the iLIS. A black ring marks a protein predicted to form a homodimer; gray nodes have no partner at this cutoff. With communities (Leiden unless you choose another method, as LIVIA's network page), proteins predicted to pair with each other more than with the rest sit together, one color per group, and a pair inside a group is drawn in its color, the others light gray; without communities, pairs are shaded in gray by iLIS (darker is higher); the same seed always gives the same drawing. Click a protein for its page, an edge for the pair.</p>
       <div class="nw-stats" id="vn-stats"></div>
-      <div class="nw-body"><div class="net" id="vn-net"></div><aside class="nw-mods" id="vn-mods" hidden aria-label="Communities"></aside></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div></div>
+      <div class="nw-body"><div class="net" id="vn-net"></div><aside class="nw-mods" id="vn-mods" hidden aria-label="Communities"></aside></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div>
+      <div id="vn-chord-wrap" hidden><div class="cc-head"><h3>Community chord</h3><div class="muted">The pairs between communities, around one circle, as on the network builder.</div></div><div id="vn-chord"></div></div></div>
     <div class="card" id="vm-card"><div class="card-head"><h2>Pairs as a matrix <span class="muted" id="vm-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="the matrix shows every pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="vm-show"><option value="all">every pair</option><option value="10">past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label><label class="ctl">Colors <select id="vm-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
       <div id="vm-heat" style="width:100%"></div><div class="legend" id="vm-key"></div></div>
     <div class="card"><div class="card-head"><h2>Pairs <span class="muted" id="vp-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="list each protein's pair with itself as well"><input type="checkbox" id="vp-homo"> Homodimers</label><input type="search" id="vp-find" placeholder="Filter pairs" aria-label="Filter pairs by protein" style="width:170px"><button class="btn" id="vp-csv" type="button">↓ CSV</button></div></div>
@@ -4285,7 +4286,7 @@ async function viewVirus(spId, taxid) {
     const C = commNow(), grouped = !!C.m, idx = new Map(nodes.map((d, n) => [d.id, n])), t0 = performance.now(), cm = grouped ? communitiesBy(C.m, nodes.length, het.map((x) => [idx.get(x.a), idx.get(x.b), x.best]), C.seed) : nodes.map(() => 0), cms = performance.now() - t0;
     const csize = new Map(); nodes.forEach((d, n) => { d.c = cm[n]; csize.set(d.c, (csize.get(d.c) || 0) + 1); });
     const big = [...csize].filter(([c, sz]) => sz >= 3).map(([c]) => c).sort((a, b) => a - b);
-    const ccol = (d) => (!deg.get(d.id) ? '#C3CCD6' : !grouped ? '#1A5276' : big.includes(d.c) ? commHue(big.indexOf(d.c)) : SMALL_C);   // every community of 3+ its own color (ten Tableau colors, then golden-angle hues); groups of two the one gray-blue
+    const ccol = (d) => (!deg.get(d.id) ? '#C3CCD6' : !grouped ? '#1A5276' : big.includes(d.c) ? commHue(big.indexOf(d.c)) : SMALL_C);   // every community of 3+ its own color (commHue: Tableau 10, then Tableau 20 past nine); groups of two the one gray-blue
     const center = new Map();   // each group's place: groups on a ring around the largest, spaced by their size
     if (grouped) { const R0 = Math.min(W, H) * 0.42; big.forEach((c, n) => { if (n === 0) center.set(c, [W / 2, H / 2]); else { const t = (n - 1) / Math.max(1, big.length - 1) * 2 * Math.PI; center.set(c, [W / 2 + R0 * Math.cos(t), H / 2 + R0 * 0.8 * Math.sin(t)]); } }); }
     const home = (d) => center.get(d.c) || [W / 2, H / 2];
@@ -4339,6 +4340,10 @@ async function viewVirus(spId, taxid) {
       box2.innerHTML = !mods.length ? '<h3>Communities</h3><p class="muted">No community of 3 or more proteins at this cutoff.</p>' : `<h3>Communities <span class="muted">${fmtInt(mods.length)}, of 3 or more proteins</span></h3>` + mods.map((m) => `<div class="nw-mod"><div class="hd"><i style="display:inline-block;width:14px;height:14px;border-radius:50%;background:${ccol(m.mem[0])};border:1px solid #17263A;flex:none"></i>${esc(commWord(C.m, m.n + 1).replace(/^./, (ch) => ch.toUpperCase()))}<a class="hub" href="#/${sp.id}/${m.mem[0].row.key}" title="the protein with the most partners here">${esc(lab(m.mem[0].row))} →</a></div>
         <div class="st">${fmtInt(m.mem.length)} proteins · ${fmtInt(m.e)} pairs · mean iLIS ${m.mean.toFixed(3)}</div>
         <div class="mem">${m.mem.slice(0, 24).map((d) => `<a href="#/${sp.id}/${d.row.key}">${esc(lab(d.row))}</a>`).join(', ')}${m.mem.length > 24 ? ` <span class="muted">+${fmtInt(m.mem.length - 24)} more</span>` : ''}</div></div>`).join(''); }
+    // the community chord, as the network builder's: every pair past the cutoff (not only the edges drawn), communities of 3+ in their colors
+    { const wrap = $('#vn-chord-wrap'); wrap.hidden = big.length < 2;
+      if (!wrap.hidden) chordCard($('#vn-chord'), { sp, groups: big.map((c, n) => ({ name: commWord(C.m, n + 1).replace(/^./, (ch) => ch.toUpperCase()), short: `C${n + 1}`, color: commHue(n) })),
+        nodes: nodes.map((d) => ({ gene: G(d.id), key: d.row.key, g: big.indexOf(d.c) })), edges: het.map((x) => ({ a: idx.get(x.a), b: idx.get(x.b), w: x.best })) }); }
     VN = { disp() { Object.assign(ND, vnDisp()); circle.attr('r', rd).attr('stroke', ND.nbord ? '#17263A' : 'none'); hring.attr('r', (d) => rd(d) + 3);   // a Display option changed: restyle in place, nothing moves
       label.attr('fill', ND.lbcol).attr('stroke', ND.lbout ? 'rgba(255,255,255,0.92)' : 'none'); ecol(); relabel(d3.zoomTransform(svg.node()).k); } };
     svgExport($('#vn-x'), `atlas_virus_${v.taxid}_network`, () => $('svg', box));
@@ -4484,11 +4489,13 @@ async function viewNested(spId, q) {
   $('#ns-filebtn').onclick = () => $('#ns-file').click();
   const nsTable = tableInput({ card: $('#ns-in'), file: $('#ns-file'), sheetWrap: $('#ns-sheet-wrap'), sheet: $('#ns-sheet'), onStatus: status,
     onText: (t) => { $('#ns-ids').value = t; run(); } });
+  const nsNext = nextStep([$('#ns-ids')], $('#ns-ex'), $('#ns-go'));
   examplePicker($('#ns-ex'), sp.id, (t) => { nsTable.clear();
     const R = readIdInput(sp, t), bait = R.T ? R.T.rows.find((r) => r.includes('bait')) : null;   // an example with a bait names it in the role column
     if (!bait) { $('#ns-baits').value = ''; status('This example has no bait; name one in the Baits box, then Build.'); $('#ns-ids').value = t; return; }
     const bn = [bait[R.col], ...bait].find((x) => x && resolveHow(sp, String(x).trim(), true)) || ''; $('#ns-baits').value = bn; $('#ns-ids').value = t.split('\n').filter((l) => !l.split('\t').includes('bait')).join('\n'); run(); });
   async function run() {
+    nsNext();
     const Rb = readIdInput(sp, $('#ns-baits').value), Rc = readIdInput(sp, $('#ns-ids').value, S.col); S.col = Rc.col;
     const res1 = (toks) => { const ok = [], miss = []; for (const t of toks) { const h = resolveHow(sp, t, true); if (h) { if (!ok.includes(h.row.i)) ok.push(h.row.i); } else miss.push(t); } return { ok, miss }; };
     const B = res1(Rb.toks), C = res1(Rc.toks); S.k = +$('#ns-k').value; S.rounds = +$('#ns-rounds').value; S.strict = $('#ns-strict').checked; S.para = $('#ns-para').checked;
@@ -4658,7 +4665,14 @@ function examplePicker(host, spId, onLoad) {   // host: an element; onLoad(text,
     const sel = host.querySelector('.ex-pick'), cite = () => { const x = xs[+sel.value];
       host.querySelector('.ex-cite').innerHTML = `<a href="https://doi.org/${esc(x.doi)}" target="_blank" rel="noopener">${esc(x.cite)}</a>, ${esc(x.license)} · <a href="data/examples/${esc(x.file)}" download>download</a>`; };
     sel.onchange = cite; cite();
-    host.querySelector('.ex-load').onclick = async () => { const x = xs[+sel.value]; let t; try { t = await getText(`data/examples/${x.file}`); } catch (e) { return; } onLoad(t, x); }; });
+    host.querySelector('.ex-load').onclick = async () => { const x = xs[+sel.value]; let t; try { t = await getText(`data/examples/${x.file}`); } catch (e) { return; } onLoad(t, x); host.dispatchEvent(new Event('ex-ready')); };
+    host.dispatchEvent(new Event('ex-ready')); });
+}
+// One filled button at a time shows the next step: the example's Load while the boxes are empty, the draw button once they hold
+// proteins. Returns the check, for the places that fill a box from code.
+function nextStep(inputs, host, go) {
+  const f = () => { const empty = inputs.every((t) => !t.value.trim()), ex = host.querySelector('.ex-load'); go.classList.toggle('primary', !empty); if (ex) ex.classList.toggle('primary', empty); };
+  inputs.forEach((t) => t.addEventListener('input', f)); host.addEventListener('ex-ready', f); f(); return f;
 }
 // Community chord (network builder): the communities around one circle, CellPhoneDB style. Ribbons join two communities by
 // the pairs between them (or a protein ring with every pair drawn); a lower-triangle matrix of pair counts; the pairs of a
@@ -5048,7 +5062,7 @@ async function viewNetwork(spId, q) {
     const D = (S.data || []).find((x) => x.name === S.ncol), base = (d) => (d.q ? '#1A5276' : '#AEBBCA');
     if (!D) return { fill: base, key: '' };
     const none = '#DDE3EA';
-    if (D.kind === 'cat') { const cats = [...new Set(D.vals.values())].sort(), col = (v) => TAB10[cats.indexOf(v) % TAB10.length];
+    if (D.kind === 'cat') { const cats = [...new Set(D.vals.values())].sort(), col = (v) => commHue(cats.indexOf(v));
       return { fill: (d) => (D.vals.has(d.id) ? col(D.vals.get(d.id)) : none),
         key: `<div class="kbrow"><span class="muted">proteins by ${esc(D.name)}:</span>${cats.map((v) => `<span><i style="background:${col(v)};border-radius:50%"></i>${esc(v)}</span>`).join('')}<span><i style="background:${none};border-radius:50%"></i>no value</span></div>` }; }
     const raw = [...D.vals.values()].filter(Number.isFinite), isP = PCOL.test(D.name) || (raw.length && raw.every((v) => v > 0 && v <= 1) && d3.median(raw) < 0.2);
@@ -5151,6 +5165,7 @@ async function viewNetwork(spId, q) {
     $('#nw-table').textContent = tableNote; return R.toks;
   }
   async function draw(seed = null) {   // seed: the positions and zoom to keep when a click adds partners
+    nwNext();
     if (!EXPECT) $('#nw-loaded').hidden = true;   // the loaded file's check holds for its own drawing only
     const scanWas = !$('#nw-kscan-out').hidden && SCAN ? SCAN.key : null; SCAN = null; $('#nw-kscan-out').hidden = true; $('#nw-khint').textContent = '';   // a draw that stops early leaves no list to suggest for
     hideTip(); const toks = readInput();
@@ -5387,7 +5402,7 @@ async function viewNetwork(spId, q) {
       let nx = 0; for (let n = 0; n < groups.length; n++) if (CI[n] < 0) { while (used.has(nx)) nx++; CI[n] = nx; used.add(nx); }
       groups.forEach((k, n) => { const t = gname2.get(k); if (t && /\d+$/.test(t)) gname2.set(k, t.replace(/\d+$/, String(CI[n] + 1))); }); }
     PREVG = catOrder ? null : new Map(groups.map((k, n) => [CI[n], memOf(k)]));
-    const hullG = g.append('g').attr('class', 'nw-hulls').style('pointer-events', 'none'), GCOL = (n) => GC.get(groups[n]) || (catOrder ? (S.pal === 'tableau' ? TAB10[catOrder.indexOf(groups[n]) % TAB10.length] : palHue(S.pal, catOrder.indexOf(groups[n]))) : palHue(S.pal, CI[n]));   // the palette for table-column groups too
+    const hullG = g.append('g').attr('class', 'nw-hulls').style('pointer-events', 'none'), GCOL = (n) => GC.get(groups[n]) || (catOrder ? palHue(S.pal, catOrder.indexOf(groups[n])) : palHue(S.pal, CI[n]));   // the palette for table-column groups too
     const hulls = hullG.selectAll('g').data(groups).join('g'); hullG.attr('display', S.hulls ? null : 'none');   // outlines are a display option (off, as LIVIA's network page)
     hulls.append('path').attr('fill', (k, n) => GCOL(n)).attr('fill-opacity', 0.07).attr('stroke', (k, n) => GCOL(n)).attr('stroke-opacity', 0.45).attr('stroke-width', 1.5).attr('stroke-linejoin', 'round');
     const drawHulls = () => { if (!groups.length || !S.hulls) return; hulls.each(function (k) { const pts = []; for (const d of nodes) if (gk.get(d.id) === k && d.x != null) { const rr = rd(d) + 14; for (let a = 0; a < 6; a++) pts.push([d.x + rr * Math.cos(a * Math.PI / 3), d.y + rr * Math.sin(a * Math.PI / 3)]); }
@@ -5560,6 +5575,7 @@ async function viewNetwork(spId, q) {
   $('#nw-go').onclick = () => draw();
   $('#nw-eg').onclick = (e) => { e.preventDefault(); $('#nw-ids').value = eg; $('#nw-ids').dispatchEvent(new Event('input', { bubbles: true })); S.autoPick = true; draw(); };   // the suggested proteins, drawn
   $('#nw-filebtn').onclick = () => $('#nw-file').click();
+  const nwNext = nextStep([$('#nw-ids')], $('#nw-ex'), $('#nw-go'));
   examplePicker($('#nw-ex'), sp.id, (t) => { nwTable.clear(); $('#nw-ids').value = t;
     S.col = null; S.exp = []; S.ncolUser = false; S.autoPick = true; draw(); });   // an example opens with each hit's top partners, so the list grows outward
   const nwTable = tableInput({ card: $('#nw-in'), file: $('#nw-file'), sheetWrap: $('#nw-sheet-wrap'), sheet: $('#nw-sheet'), onStatus: status,
