@@ -448,7 +448,7 @@ async function edges(sp, setId = '') {   // setId: that thematic set's edges (sa
     const memo = new Map();
     const adj = { get(v) {
       if (!(v >= 0 && v < N) || off[v] === off[v + 1]) return undefined;
-      if (!memo.has(v)) { if (memo.size > 500) memo.clear(); const m = new Map();
+      if (!memo.has(v)) { if (memo.size > 2000) memo.delete(memo.keys().next().value); const m = new Map();   // the oldest goes, not the whole cache: a tree search revisits proteins
         for (let x = off[v]; x < off[v + 1]; x++) m.set(nb[x], { best: best[x] / 1000, avg: avg[x] >= 0 ? avg[x] / 1000 : NaN, src: src[x], iptm: ipt[x] >= 0 ? ipt[x] / 100 : NaN, ipta: ipa[x] >= 0 ? ipa[x] / 100 : NaN }); memo.set(v, m); }
       return memo.get(v); } };
     return { adj };
@@ -5803,6 +5803,7 @@ function enhanceTables(root = app) {
 }
 async function route() {
   const gen = ++ROUTE, { parts, q } = hashPath(), setId = q.get('set') || '', here = location.hash;
+  if (SEQFIT) SEQFIT.disconnect();   // the last page's sequence panels are gone; the new page's register themselves
   // The same page with another isoform or scope (?iso=, ?set=) keeps the reader where they were: the page holds its height
   // while it redraws, then returns to the same place. Any other page starts at the top.
   const path = parts.join('/'), stay = path === LAST_PATH, keepY = window.scrollY; LAST_PATH = path;
@@ -5848,11 +5849,9 @@ route();
   const pin = () => {
     raf = 0;
     const line = Math.max(0, ...['.top', '.subnav'].map((q) => { const e = document.querySelector(q); return e ? e.getBoundingClientRect().bottom : 0; }));
-    for (const t of document.querySelectorAll('table.pt')) {
-      const r = t.getBoundingClientRect(), h = t.tHead ? t.tHead.offsetHeight : 0;
-      const y = h && r.top < line ? Math.max(0, Math.min(line - r.top, r.height - 2 * h)) : 0;
-      t.style.setProperty('--hy', `${y}px`); t.classList.toggle('pinned', y > 0);
-    }
+    const ts = [...document.querySelectorAll('table.pt')];   // every measurement first, then every style change: one layout per frame, not one per table
+    const ys = ts.map((t) => { const r = t.getBoundingClientRect(), h = t.tHead ? t.tHead.offsetHeight : 0; return h && r.top < line ? Math.max(0, Math.min(line - r.top, r.height - 2 * h)) : 0; });
+    ts.forEach((t, n) => { t.style.setProperty('--hy', `${ys[n]}px`); t.classList.toggle('pinned', ys[n] > 0); });
   };
   const later = () => { if (!raf) raf = requestAnimationFrame(pin); };
   addEventListener('scroll', later, { passive: true }); addEventListener('resize', later);
