@@ -1,0 +1,186 @@
+{
+ "format": "livia-atlas/1",
+ "id": "dmelppi",
+ "title": "DmelPPI",
+ "short": "DmelPPI",
+ "speciesId": "fly",
+ "species": {
+  "name": "Drosophila melanogaster",
+  "taxon": 7227
+ },
+ "ids": "FlyBase polypeptide (FBpp) -- the isoform DmelPPI folded. FBgn, gene symbol, isoform symbol and UniProt accession are carried per protein (fb_2026_03 / r6.67, with the authors' own mapping where fb_2026_03 has no row).",
+ "source": {
+  "name": "DmelPPI",
+  "citation": "Peng J, Zhao L. A predicted structural interactome reveals binding interference from intrinsically disordered regions. PLOS Computational Biology 22, e1013899 (2026); preprint bioRxiv 2025.08.15.670535.",
+  "doi": "10.1371/journal.pcbi.1013899",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "data": [
+   {
+    "role": "models, PAE and per-pair metadata as used here",
+    "figshareArticle": 30582146,
+    "doi": "10.6084/m9.figshare.30582146.v1",
+    "url": "https://doi.org/10.6084/m9.figshare.30582146.v1",
+    "files": [
+     "PDB.zip",
+     "pae_raw.zip",
+     "json_meta.zip"
+    ]
+   },
+   {
+    "role": "the same models and PAE, served per pair from the authors' public bucket",
+    "url": "https://storage.googleapis.com/dmelppi_zhaolab",
+    "files": [
+     "mpdb/<pair>.pdb.gz",
+     "mPAE/<pair>.pae.asc.xz"
+    ]
+   },
+   {
+    "role": "FBpp to FBgn / symbol / UniProt mapping, from the authors",
+    "url": "https://github.com/pjhustc/DmelPPI"
+   }
+  ],
+  "predictor": "AlphaFold2-Multimer; the authors released one of five models per pair, the one they ranked highest",
+  "selection": "Drosophila melanogaster protein pairs with a STRING score >= 0.9",
+  "website": "https://melppi.github.io"
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "inclusive": true,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  },
+  "paeSource": {
+   "file": "pae_raw.zip (figshare 30582146); identical, cell for cell, to the public bucket mPAE files",
+   "quantized": true,
+   "levels": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5,
+    5.0,
+    6.0,
+    7.0,
+    8.0,
+    9.0,
+    10.0,
+    11.0,
+    12.0,
+    13.0
+   ],
+   "note": "The source publishes PAE on these 17 levels only: 0.5 A steps below 5 A, 1.0 A steps from 5 to 13 A, clipped at 1 and 13. pae_raw.zip stores them as integer half-angstroms (value = integer / 2) and equals the bucket mPAE value in every cell on the 8 pairs checked (2026-10-07). There is no full-precision PAE in the record, so scores here inherit this quantization; the effect below was measured by snapping full-precision ColabFold PAE (0.01 A) to the same 17 levels and rescoring with this same lis.py. The error is NOT symmetric: on that sample iLIS and LIS moved down or not at all, never up, so an iLIS here is a slight under-estimate and the positive counts are a floor, not a ceiling.",
+   "measuredEffect": {
+    "pairs": 161,
+    "iLIS": {
+     "unchanged_le_5e4": 103,
+     "n": 161,
+     "mean_abs": 0.00641,
+     "max_abs": 0.0404,
+     "median_abs": 0.0,
+     "signed_mean": -0.00641,
+     "moved_down": 58,
+     "moved_up": 0,
+     "direction": "quantization only ever lowers this score"
+    },
+    "LIS": {
+     "unchanged_le_5e4": 97,
+     "n": 161,
+     "mean_abs": 0.00725,
+     "max_abs": 0.0388,
+     "median_abs": 0.0,
+     "signed_mean": -0.00725,
+     "moved_down": 64,
+     "moved_up": 0,
+     "direction": "quantization only ever lowers this score"
+    },
+    "cLIS": {
+     "unchanged_le_5e4": 104,
+     "n": 161,
+     "mean_abs": 0.00516,
+     "max_abs": 0.0443,
+     "median_abs": 0.0,
+     "signed_mean": -0.00491,
+     "moved_down": 52,
+     "moved_up": 5,
+     "direction": "moves both ways"
+    },
+    "ipSAE": {
+     "unchanged_le_5e4": 122,
+     "n": 161,
+     "mean_abs": 0.00165,
+     "max_abs": 0.037,
+     "median_abs": 0.0,
+     "signed_mean": -0.00113,
+     "moved_down": 16,
+     "moved_up": 23,
+     "direction": "moves both ways"
+    },
+    "callFlips": {
+     "0.223": {
+      "flips": 2,
+      "of": 161,
+      "gained": 0,
+      "lost": 2,
+      "positives_full_precision": 9,
+      "positives_quantized": 7
+     },
+     "0.339": {
+      "flips": 0,
+      "of": 161,
+      "gained": 0,
+      "lost": 0,
+      "positives_full_precision": 3,
+      "positives_quantized": 3
+     },
+     "0.551": {
+      "flips": 0,
+      "of": 161,
+      "gained": 0,
+      "lost": 0,
+      "positives_full_precision": 1,
+      "positives_quantized": 1
+     }
+    }
+   }
+  },
+  "pTMSource": {
+   "available": false,
+   "servedAs": "empty cell",
+   "note": "DmelPPI publishes no pTM: the deposited NPZ/json metadata carry iptm only, and pTM is a global AlphaFold confidence output that cannot be derived from the released PAE or pLDDT. The column therefore ships empty rather than as a value. v0.1.7 of this screen wrote the literal string \"nan\" in all 55,422 bundle rows; v0.1.7b writes an empty cell, which is the convention every other Atlas screen uses for a quantity the source does not provide."
+  },
+  "modelsPerPair": "1 served of 5 folded: the authors released the model they ranked highest, so rank is always 1 and iLIS_best == iLIS_avg.",
+  "structures": "not served: the bundles hold scores, maps and sequences only. The authors' models are on figshare (10.6084/m9.figshare.30582146)."
+ },
+ "counts": {
+  "proteins": 5010,
+  "pairs": 27711,
+  "predictions": 27711,
+  "runs": 27711,
+  "pairsFpr10": 10601,
+  "pairsFpr5": 7155,
+  "pairsFpr1": 3019,
+  "genes": 5007,
+  "genePairs": 27708,
+  "genePairsWithSeveralIsoformPairs": 3,
+  "proteinsWithoutCurrentFlyBaseRow": 176
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id",
+ "keyBy": "polypeptide"
+}

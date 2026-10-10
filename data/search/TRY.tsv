@@ -34,7 +34,7 @@ TRYB2_HUMAN	human	P20231	TPSB2	P20231	19	109
 TRYD_HUMAN	human	Q9BZJ3	TPSD1	Q9BZJ3	11	55		
 TRYG1_HUMAN	human	Q9NRR2	TPSG1	Q9NRR2	13	113		
 TRYNITY	fly	FBgn0284435	tyn	Q8MS37	0	9	RE15579p (Trynity, isoform A) (Trynity, isoform B) (Trynity,	w
-TRYP	fly	FBgn0003965	v	P20351	0	2	Tryptophan 2,3-dioxygenase (TDO) (EC 1.13.11.11) (Protein ve	w
+TRYP	fly	FBgn0003965	v	P20351	0	6	Tryptophan 2,3-dioxygenase (TDO) (EC 1.13.11.11) (Protein ve	w
 TRYP	leishmania-infantum	A0A6L0X3Y6	TRYP	A0A6L0X3Y6	3	15	thioredoxin-dependent peroxiredoxin	
 TRYP	leishmania-infantum	A4HWK2	TRYP	A4HWK2	4	15	thioredoxin-dependent peroxiredoxin	
 TRYP	leishmania-infantum	A4HWK3	TRYP	A4HWK3	5	15	thioredoxin-dependent peroxiredoxin	
@@ -47,15 +47,15 @@ TRYPSIN	fly	FBgn0010358	deltaTry	C0HKA2	46	248	Trypsin delta (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0010359	gammaTry	C0HKA2	47	248	Trypsin delta (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0010425	epsilonTry	P35005	31	246	Trypsin epsilon (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0011554	etaTry	P42279	45	245	Trypsin eta (EC 3.4.21.4)	w
-TRYPSIN	fly	FBgn0011555	thetaTry	P42278	33	245	Trypsin theta (EC 3.4.21.4)	w
-TRYPSIN	fly	FBgn0011556	zetaTry	P42280	45	247	Trypsin zeta (EC 3.4.21.4)	w
+TRYPSIN	fly	FBgn0011555	thetaTry	P42278	33	246	Trypsin theta (EC 3.4.21.4)	w
+TRYPSIN	fly	FBgn0011556	zetaTry	P42280	45	249	Trypsin zeta (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0015001	iotaTry	P52905	43	249	Trypsin iota (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0015316	Try29F	Q9VLF5	39	249	trypsin (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0025378	CG3795	Q8MRL2	2	7	trypsin (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0029826	CG6041	Q9W454	0	1	trypsin (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0029827	CG6048	Q9W453	47	246	trypsin (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0031248	CG11912	Q9VPN7	52	244	trypsin (EC 3.4.21.4)	w
-TRYPSIN	fly	FBgn0033362	CG8172	A8DY75	81	253	trypsin (EC 3.4.21.4)	w
+TRYPSIN	fly	FBgn0033362	CG8172	A8DY75	82	254	trypsin (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0034661	tpr	Q9W2C8	75	251	trypsin (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0034666	CG9294	Q7KVM3	69	245	trypsin (EC 3.4.21.4)	w
 TRYPSIN	fly	FBgn0036287	CG10663	A8JNS0	38	253	trypsin (EC 3.4.21.4)	w
@@ -109,7 +109,7 @@ TRYPSINOGEN	human	P07477	PRSS1	P07477	60	290	Serine protease 1 (EC 3.4.21.4) (An
 TRYPSINOGEN	human	P07478	PRSS2	P07478	22	105	Trypsin-2 (EC 3.4.21.4) (Anionic trypsinogen) (Serine protea	w
 TRYPSINOGEN	human	P35030	PRSS3	P35030	49	310	Trypsin-3 (EC 3.4.21.4) (Brain trypsinogen) (Mesotrypsin) (M	w
 TRYPSINOGEN	human	Q8NHM4	PRSS3P2	Q8NHM4	6	24	Putative trypsin-6 (EC 3.4.21.4) (Serine protease 3 pseudoge	w
-TRYPTAMIN	fly	FBgn0003965	v	P20351	0	2	Tryptophan 2,3-dioxygenase (TDO) (EC 1.13.11.11) (Protein ve	w
+TRYPTAMIN	fly	FBgn0003965	v	P20351	0	6	Tryptophan 2,3-dioxygenase (TDO) (EC 1.13.11.11) (Protein ve	w
 TRYPTAMIN	human	P48775	TDO2	P48775	3	108	Tryptophan 2,3-dioxygenase (TDO) (EC 1.13.11.11) (Tryptamin 	w
 TRYPTASE	human	A0A087X1U0	TPSB2	A0A087X1U0	4	16	Tryptase beta 2	w
 TRYPTASE	human	P12544	GZMA	P12544	35	163	Granzyme A (EC 3.4.21.78) (CTL tryptase) (Cytotoxic T-lympho	w
@@ -122,10 +122,10 @@ TRYPTASE-1	human	Q15661	TPSAB1	Q15661	15	60	Tryptase alpha/beta-1 (Tryptase-1) (
 TRYPTASE-2	human	P20231	TPSB2	P20231	19	109	Tryptase beta-2 (Tryptase-2) (EC 3.4.21.59) (Tryptase II)	w
 TRYPTASE-3	human	Q9BZJ3	TPSD1	Q9BZJ3	11	55	Tryptase delta (EC 3.4.21.59) (Delta-tryptase) (HmMCP-3-like	w
 TRYPTIC	human	Q9Y337	KLK5	Q9Y337	77	300	Kallikrein-5 (EC 3.4.21.-) (Kallikrein-like protein 2) (KLK-	w
-TRYPTOPHAN	fly	FBgn0001208	Hn	P17276	3	46	Protein henna (EC 1.14.16.1) (EC 1.14.16.4) (Phe-4-monooxyge	w
-TRYPTOPHAN	fly	FBgn0003965	v	P20351	0	2	Tryptophan 2,3-dioxygenase (TDO) (EC 1.13.11.11) (Protein ve	w
-TRYPTOPHAN	fly	FBgn0035187	Trhn	Q9W0K2	4	22	tryptophan 5-monooxygenase (EC 1.14.16.4)	w
-TRYPTOPHAN	fly	FBgn0263510	nclb	A1Z8D0	4	56	Periodic tryptophan protein 1 homolog (PWP1) (Protein no chi	w
+TRYPTOPHAN	fly	FBgn0001208	Hn	P17276	5	57	Protein henna (EC 1.14.16.1) (EC 1.14.16.4) (Phe-4-monooxyge	w
+TRYPTOPHAN	fly	FBgn0003965	v	P20351	0	6	Tryptophan 2,3-dioxygenase (TDO) (EC 1.13.11.11) (Protein ve	w
+TRYPTOPHAN	fly	FBgn0035187	Trhn	Q9W0K2	6	35	tryptophan 5-monooxygenase (EC 1.14.16.4)	w
+TRYPTOPHAN	fly	FBgn0263510	nclb	A1Z8D0	13	90	Periodic tryptophan protein 1 homolog (PWP1) (Protein no chi	w
 TRYPTOPHAN	human	P17752	TPH1	P17752	11	89	Tryptophan 5-hydroxylase 1 (EC 1.14.16.4) (Tryptophan 5-mono	w
 TRYPTOPHAN	human	P31146	CORO1A	P31146	40	411	Coronin-1A (Coronin-like protein A) (Clipin-A) (Coronin-like	w
 TRYPTOPHAN	human	P48775	TDO2	P48775	3	108	Tryptophan 2,3-dioxygenase (TDO) (EC 1.13.11.11) (Tryptamin 	w
@@ -148,8 +148,8 @@ TRYPTOPHAN	zebrafish	Q6P102	ywhabl	Q6P102	13	70	Tyrosine 3-monooxygenase/tryptop
 TRYPTOPHAN	zebrafish	Q7SY53	tdo2b	Q7SY53	1	3	Tryptophan 2,3-dioxygenase B	w
 TRYPTOPHAN	zebrafish	Q7ZUM0	ywhaqa	Q7ZUM0	26	99	Tyrosine 3-monooxygenase/tryptophan 5-monooxygenase activati	w
 TRYPTOPHAN	zebrafish	Q7ZWE1	pwp1	Q7ZWE1	2	13	Periodic tryptophan protein 1 homolog	w
-TRYPTOPHAN--TRNA	fly	FBgn0010803	TrpRS	Q0KI98	1	62	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
-TRYPTOPHAN--TRNA	fly	FBgn0036763	TrpRS-m	Q9VVL8	1	21	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
+TRYPTOPHAN--TRNA	fly	FBgn0010803	TrpRS	Q0KI98	4	69	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
+TRYPTOPHAN--TRNA	fly	FBgn0036763	TrpRS-m	Q9VVL8	3	25	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
 TRYPTOPHAN--TRNA	human	P23381	WARS1	P23381	2	177	Tryptophan--tRNA ligase, cytoplasmic (EC 6.1.1.2) (Interfero	w
 TRYPTOPHAN--TRNA	human	Q9UGM6	WARS2	Q9UGM6	2	85	Tryptophan--tRNA ligase, mitochondrial (EC 6.1.1.2) ((Mt)Trp	w
 TRYPTOPHAN--TRNA	worm	C0HKD6	prx-10	C0HKD6	0	10	Tryptophan--tRNA ligase, mitochondrial	w
@@ -159,8 +159,8 @@ TRYPTOPHAN--TRNA	yeast	Q12109	WRS1	Q12109	1	26	Tryptophan--tRNA ligase, cytoplas
 TRYPTOPHAN--TRNA	zebrafish	Q5CZN2	zgc:110828	Q5CZN2	0	1	tryptophan--tRNA ligase	w
 TRYPTOPHAN-RICH	human	O00258	GET1	O00258	11	175	Guided entry of tail-anchored proteins factor 1 (Congenital 	w
 TRYPTOPHANASE	human	P48775	TDO2	P48775	3	108	Tryptophan 2,3-dioxygenase (TDO) (EC 1.13.11.11) (Tryptamin 	w
-TRYPTOPHANYL-TRNA	fly	FBgn0010803	TrpRS	Q0KI98	1	62	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
-TRYPTOPHANYL-TRNA	fly	FBgn0036763	TrpRS-m	Q9VVL8	1	21	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
+TRYPTOPHANYL-TRNA	fly	FBgn0010803	TrpRS	Q0KI98	4	69	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
+TRYPTOPHANYL-TRNA	fly	FBgn0036763	TrpRS-m	Q9VVL8	3	25	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
 TRYPTOPHANYL-TRNA	human	P23381	WARS1	P23381	2	177	Tryptophan--tRNA ligase, cytoplasmic (EC 6.1.1.2) (Interfero	w
 TRYPTOPHANYL-TRNA	human	Q9UGM6	WARS2	Q9UGM6	2	85	Tryptophan--tRNA ligase, mitochondrial (EC 6.1.1.2) ((Mt)Trp	w
 TRYR	leishmania-infantum	A4HSF7	TRYR	A4HSF7	0	42	Trypanothione reductase	

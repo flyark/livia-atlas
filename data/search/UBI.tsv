@@ -1,6 +1,6 @@
 UBI-D4	human	Q92785	DPF2	Q92785	127	695	Zinc finger protein ubi-d4 (Apoptosis response zinc finger p	w
-UBI-P5E	fly	FBgn0086558	Ubi-p5E	Q9W418	45	608	GH17761p (Ubiquitin-5E, isoform A) (Ubiquitin-5E, isoform B)	
-UBI-P63E	fly	FBgn0003943	Ubi-p63E	P0CG69	49	632	Polyubiquitin [Cleaved into: Ubiquitin]	
+UBI-P5E	fly	FBgn0086558	Ubi-p5E	Q9W418	45	609	GH17761p (Ubiquitin-5E, isoform A) (Ubiquitin-5E, isoform B)	
+UBI-P63E	fly	FBgn0003943	Ubi-p63E	P0CG69	57	668	Polyubiquitin [Cleaved into: Ubiquitin]	
 UBI2	cladophialophora-carrionii	A0A1C1CZ23	ubi2	A0A1C1CZ23	36	372	Ubiquitin-60S ribosomal protein L40	
 UBI3	candida-albicans-237561	Q5A109	UBI3	Q5A109	49	385	Ubiquitin-ribosomal protein eS31 fusion protein	
 UBI3	schizosaccharomyces-pombe	P0C016	ubi3	P0C016	27	252	Ubiquitin-ribosomal protein eS31A fusion protein	
@@ -85,7 +85,7 @@ UBIQU	human	P61077	UBE2D3	P61077	191	483	Ubiquitin-conjugating enzyme E2 D3 (EC 
 UBIQU	human	P62837	UBE2D2	P62837	221	706	Ubiquitin-conjugating enzyme E2 D2 (EC 2.3.2.23) ((E3-indepe	w
 UBIQUI	human	Q13107	USP4	Q13107	9	289	Ubiquitin carboxyl-terminal hydrolase 4 (EC 3.4.19.12) (Deub	w
 UBIQUI	human	Q9NW38	FANCL	Q9NW38	15	152	E3 ubiquitin-protein ligase FANCL (EC 2.3.2.27) (Fanconi ane	w
-UBIQUILIN	fly	FBgn0031057	Ubqn	Q9VWD9	20	202	LD38919p (Ubiquilin, isoform A) (Ubiquilin, isoform B)	w
+UBIQUILIN	fly	FBgn0031057	Ubqn	Q9VWD9	25	217	LD38919p (Ubiquilin, isoform A) (Ubiquilin, isoform B)	w
 UBIQUILIN	worm	G5EFF7	ubql-1	G5EFF7	7	74	Ubiquilin	w
 UBIQUILIN-1	human	Q9UMX0	UBQLN1	Q9UMX0	69	592	Ubiquilin-1 (Protein linking IAP with cytoskeleton 1) (PLIC-	w
 UBIQUILIN-2	human	Q9UHD9	UBQLN2	Q9UHD9	77	838	Ubiquilin-2 (Chap1) (DSK2 homolog) (Protein linking IAP with	w
@@ -95,10 +95,10 @@ UBIQUILIN-LIKE	human	Q8IYU4	UBQLNL	Q8IYU4	20	194	Ubiquilin-like protein	w
 UBIQUINOL-CYTO	human	Q9NVA1	UQCC1	Q9NVA1	18	128	Ubiquinol-cytochrome c reductase complex assembly factor 1 (	w
 UBIQUINOL-CYTOC	human	O14949	UQCRQ	O14949	25	295	Cytochrome b-c1 complex subunit 8 (Complex III subunit 8) (C	w
 UBIQUINOL-CYTOCHRO	human	P08574	CYC1	P08574	31	354	Cytochrome c1, heme protein, mitochondrial (EC 7.1.1.8) (Com	w
-UBIQUINOL-CYTOCHROME	fly	FBgn0011227	ox	Q9XY35	16	135	Cytochrome b-c1 complex subunit 9 (Complex III subunit 9) (C	w
-UBIQUINOL-CYTOCHROME	fly	FBgn0034245	UQCR-6.4	Q500Y7	10	141	GEO11443p1 (RH56961p) (Ubiquinol-cytochrome c reductase 6.4 	w
-UBIQUINOL-CYTOCHROME	fly	FBgn0038271	UQCR-C1	Q9VFF0	9	211	GH01077p (Ubiquinol-cytochrome c reductase core protein 1, i	w
-UBIQUINOL-CYTOCHROME	fly	FBgn0250814	UQCR-C2	Q9VV75	22	231	AT02348p (Ubiquinol-cytochrome c reductase core protein 2, i	w
+UBIQUINOL-CYTOCHROME	fly	FBgn0011227	ox	Q9XY35	51	148	Cytochrome b-c1 complex subunit 9 (Complex III subunit 9) (C	w
+UBIQUINOL-CYTOCHROME	fly	FBgn0034245	UQCR-6.4	Q500Y7	43	148	GEO11443p1 (RH56961p) (Ubiquinol-cytochrome c reductase 6.4 	w
+UBIQUINOL-CYTOCHROME	fly	FBgn0038271	UQCR-C1	Q9VFF0	24	228	GH01077p (Ubiquinol-cytochrome c reductase core protein 1, i	w
+UBIQUINOL-CYTOCHROME	fly	FBgn0250814	UQCR-C2	Q9VV75	36	234	AT02348p (Ubiquinol-cytochrome c reductase core protein 2, i	w
 UBIQUINOL-CYTOCHROME	fly	FBgn0262842	UQCR-6.4L	M9NFG6	8	34	Ubiquinol-cytochrome c reductase 6.4 kDa subunit-like	w
 UBIQUINOL-CYTOCHROME	human	O14949	UQCRQ	O14949	25	295	Cytochrome b-c1 complex subunit 8 (Complex III subunit 8) (C	w
 UBIQUINOL-CYTOCHROME	human	O14957	UQCR11	O14957	44	223	Cytochrome b-c1 complex subunit 10 (Complex III subunit 10) 	w
@@ -113,7 +113,7 @@ UBIQUINOL-CYTOCHROME	human	Q9UDW1	UQCR10	Q9UDW1	57	271	Cytochrome b-c1 complex s
 UBIQUINOL-CYTOCHROME	worm	Q18485	C35D10.5	Q18485	1	4	Ubiquinol-cytochrome c chaperone domain-containing protein	w
 UBIQUINOL-CYTOCHROME	zebrafish	F1QJE0	uqcrc2a	F1QJE0	9	120	Ubiquinol-cytochrome c reductase core protein 2a	w
 UBIQUINOL-CYTOCHROME	zebrafish	Q6PBH6	zgc:73404	Q6PBH6	6	7	Ubiquinol-cytochrome c reductase core protein I	w
-UBIQUINOL-CYTOCHROME-C	fly	FBgn0013678	mt:Cyt-b	P18935	11	141	Cytochrome b (Complex III subunit 3) (Complex III subunit II	w
+UBIQUINOL-CYTOCHROME-C	fly	FBgn0013678	mt:Cyt-b	P18935	18	142	Cytochrome b (Complex III subunit 3) (Complex III subunit II	w
 UBIQUINOL-CYTOCHROME-C	human	P00156	MT-CYB	P00156	33	250	Cytochrome b (Complex III subunit 3) (Complex III subunit II	w
 UBIQUINOL-CYTOCHROME-C	human	P22695	UQCRC2	P22695	72	478	Cytochrome b-c1 complex subunit 2, mitochondrial (Complex II	w
 UBIQUINOL-CYTOCHROME-C	human	P31930	UQCRC1	P31930	20	342	Cytochrome b-c1 complex subunit 1, mitochondrial (Complex II	w
@@ -121,59 +121,59 @@ UBIQUINOL-CYTOCHROME-C	human	Q6UW78	UQCC3	Q6UW78	30	89	Ubiquinol-cytochrome-c re
 UBIQUINOL-CYTOCHROME-C	worm	G4SP89	CELE_Y48A5A.3	G4SP89	1	1	Ubiquinol-cytochrome-c reductase complex assembly factor 2	w
 UBIQUINOL-CYTOCHROME-C	zebrafish	B3DFP2	uqcc3	B3DFP2	1	1	Ubiquinol-cytochrome-c reductase complex assembly factor 3	w
 UBIQUINOL-CYTOCHROME-C	zebrafish	Q6PBU7	uqcc2	Q6PBU7	1	10	Ubiquinol-cytochrome-c reductase complex assembly factor 2	w
-UBIQUINONE	fly	FBgn0001989	ND-B17	Q9V3W2	7	88	GM23292p (NADH dehydrogenase (Ubiquinone) B17 subunit, isofo	w
-UBIQUINONE	fly	FBgn0011455	ND-SGDH	Q9VTU2	10	100	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
-UBIQUINONE	fly	FBgn0014028	SdhB	P21914	14	89	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
-UBIQUINONE	fly	FBgn0017567	ND-23	Q9VF27	24	141	NADH dehydrogenase (ubiquinone) 23 kDa subunit (EC 7.1.1.2)	w
-UBIQUINONE	fly	FBgn0019957	ND-42	P91929	12	134	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-UBIQUINONE	fly	FBgn0021967	ND-PDSW	Q9VQR2	15	136	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10	w
-UBIQUINONE	fly	FBgn0025839	ND-B14.5A	O97418	6	110	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
-UBIQUINONE	fly	FBgn0027785	NP15.6	Q9V3L7	13	145	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	w
-UBIQUINONE	fly	FBgn0029502	Coq7	Q9W3W4	7	32	5-demethoxyubiquinone hydroxylase, mitochondrial (DMQ hydrox	w
-UBIQUINONE	fly	FBgn0029868	ND-B16.6	Q9W402	7	120	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-UBIQUINONE	fly	FBgn0029888	ND-ASHI	Q9W3X7	8	114	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8,	w
-UBIQUINONE	fly	FBgn0029971	ND-MNLL	Q9W3N7	9	65	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	w
+UBIQUINONE	fly	FBgn0001989	ND-B17	Q9V3W2	14	96	GM23292p (NADH dehydrogenase (Ubiquinone) B17 subunit, isofo	w
+UBIQUINONE	fly	FBgn0011455	ND-SGDH	Q9VTU2	15	101	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
+UBIQUINONE	fly	FBgn0014028	SdhB	P21914	28	110	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
+UBIQUINONE	fly	FBgn0017567	ND-23	Q9VF27	41	151	NADH dehydrogenase (ubiquinone) 23 kDa subunit (EC 7.1.1.2)	w
+UBIQUINONE	fly	FBgn0019957	ND-42	P91929	28	142	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+UBIQUINONE	fly	FBgn0021967	ND-PDSW	Q9VQR2	24	160	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10	w
+UBIQUINONE	fly	FBgn0025839	ND-B14.5A	O97418	19	117	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
+UBIQUINONE	fly	FBgn0027785	NP15.6	Q9V3L7	42	156	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	w
+UBIQUINONE	fly	FBgn0029502	Coq7	Q9W3W4	11	33	5-demethoxyubiquinone hydroxylase, mitochondrial (DMQ hydrox	w
+UBIQUINONE	fly	FBgn0029868	ND-B16.6	Q9W402	23	129	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+UBIQUINONE	fly	FBgn0029888	ND-ASHI	Q9W3X7	16	125	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8,	w
+UBIQUINONE	fly	FBgn0029971	ND-MNLL	Q9W3N7	17	67	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	w
 UBIQUINONE	fly	FBgn0030352	sicily	Q9VYS5	11	58	NADH dehydrogenase (ubiquinone) complex I, assembly factor 6	w
-UBIQUINONE	fly	FBgn0030460	Coq5	Q9VYF8	2	15	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	w
-UBIQUINONE	fly	FBgn0030605	ND-B18	Q9VXZ0	8	120	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7	w
+UBIQUINONE	fly	FBgn0030460	Coq5	Q9VYF8	4	18	2-methoxy-6-polyprenyl-1,4-benzoquinol methylase, mitochondr	w
+UBIQUINONE	fly	FBgn0030605	ND-B18	Q9VXZ0	36	132	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7	w
 UBIQUINONE	fly	FBgn0030718	ND-20	Q9VXK7	10	117	LD31474p (NADH dehydrogenase (Ubiquinone) 20 kDa subunit, is	w
 UBIQUINONE	fly	FBgn0030853	ND-24	Q9VX36	15	138	NADH dehydrogenase (Ubiquinone) 24 kDa subunit, isoform A (N	w
-UBIQUINONE	fly	FBgn0030975	SdhBL	Q9VWN3	9	64	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
-UBIQUINONE	fly	FBgn0031021	ND-18	Q9VWI0	5	119	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitoc	w
-UBIQUINONE	fly	FBgn0031228	ND-15	Q7K1C0	7	90	GH23780p (MIP04232p) (NADH dehydrogenase (Ubiquinone) 15 kDa	w
-UBIQUINONE	fly	FBgn0031436	ND-B17.2	Q9VQD7	9	116	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-UBIQUINONE	fly	FBgn0031505	ND-B14.5B	Q9VQM2	8	100	NADH dehydrogenase [ubiquinone] 1 subunit C2	w
-UBIQUINONE	fly	FBgn0031684	ND-13A	Q9VMU0	8	109	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitoc	w
-UBIQUINONE	fly	FBgn0031713	Coq6	Q9VMQ5	3	73	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial (E	w
-UBIQUINONE	fly	FBgn0031771	ND-51	Q9VMI3	13	106	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
-UBIQUINONE	fly	FBgn0032511	ND-B22	Q9VJZ4	12	126	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
-UBIQUINONE	fly	FBgn0032922	Coq3	Q9VIF3	1	9	Ubiquinone biosynthesis O-methyltransferase, mitochondrial (	w
-UBIQUINONE	fly	FBgn0033570	ND-B14	Q7JZK1	10	121	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
-UBIQUINONE	fly	FBgn0033891	CG8067	Q7K1S1	3	36	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
-UBIQUINONE	fly	FBgn0033961	ND-B15	Q6IDF5	7	99	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
+UBIQUINONE	fly	FBgn0030975	SdhBL	Q9VWN3	10	66	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
+UBIQUINONE	fly	FBgn0031021	ND-18	Q9VWI0	19	126	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitoc	w
+UBIQUINONE	fly	FBgn0031228	ND-15	Q7K1C0	28	92	GH23780p (MIP04232p) (NADH dehydrogenase (Ubiquinone) 15 kDa	w
+UBIQUINONE	fly	FBgn0031436	ND-B17.2	Q9VQD7	21	125	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+UBIQUINONE	fly	FBgn0031505	ND-B14.5B	Q9VQM2	35	113	NADH dehydrogenase [ubiquinone] 1 subunit C2	w
+UBIQUINONE	fly	FBgn0031684	ND-13A	Q9VMU0	28	117	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitoc	w
+UBIQUINONE	fly	FBgn0031713	Coq6	Q9VMQ5	6	74	Ubiquinone biosynthesis monooxygenase COQ6, mitochondrial (E	w
+UBIQUINONE	fly	FBgn0031771	ND-51	Q9VMI3	24	109	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+UBIQUINONE	fly	FBgn0032511	ND-B22	Q9VJZ4	36	139	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
+UBIQUINONE	fly	FBgn0032922	Coq3	Q9VIF3	2	11	Ubiquinone biosynthesis O-methyltransferase, mitochondrial (	w
+UBIQUINONE	fly	FBgn0033570	ND-B14	Q7JZK1	46	137	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
+UBIQUINONE	fly	FBgn0033891	CG8067	Q7K1S1	3	38	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
+UBIQUINONE	fly	FBgn0033961	ND-B15	Q6IDF5	21	105	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
 UBIQUINONE	fly	FBgn0034007	ND-51L2	A1Z9Z7	32	333	NADH dehydrogenase (Ubiquinone) 51 kDa subunit-like 2, isofo	w
-UBIQUINONE	fly	FBgn0034251	ND-51L1	A1ZAW7	8	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
-UBIQUINONE	fly	FBgn0034576	ND-B14.7	Q7JYH3	4	72	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-UBIQUINONE	fly	FBgn0034645	ND-B12	Q9W2E8	7	108	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
-UBIQUINONE	fly	FBgn0034919	NdufAF3	Q9W1H9	9	44	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	w
-UBIQUINONE	fly	FBgn0035046	ND-19	Q9W125	12	122	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8	w
-UBIQUINONE	fly	FBgn0036222	SdhAL	Q8SX97	6	67	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
-UBIQUINONE	fly	FBgn0036706	ND-24L	Q9VVF0	9	102	AT21479p (NADH dehydrogenase (Ubiquinone) 24 kDa subunit-lik	w
-UBIQUINONE	fly	FBgn0037001	ND-39	Q9VPE2	10	134	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9	w
-UBIQUINONE	fly	FBgn0037172	ND-B14.5AL	Q9VNT3	2	84	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
+UBIQUINONE	fly	FBgn0034251	ND-51L1	A1ZAW7	17	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+UBIQUINONE	fly	FBgn0034576	ND-B14.7	Q7JYH3	29	93	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+UBIQUINONE	fly	FBgn0034645	ND-B12	Q9W2E8	26	113	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
+UBIQUINONE	fly	FBgn0034919	NdufAF3	Q9W1H9	12	46	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	w
+UBIQUINONE	fly	FBgn0035046	ND-19	Q9W125	38	137	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8	w
+UBIQUINONE	fly	FBgn0036222	SdhAL	Q8SX97	11	68	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
+UBIQUINONE	fly	FBgn0036706	ND-24L	Q9VVF0	20	105	AT21479p (NADH dehydrogenase (Ubiquinone) 24 kDa subunit-lik	w
+UBIQUINONE	fly	FBgn0037001	ND-39	Q9VPE2	20	140	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9	w
+UBIQUINONE	fly	FBgn0037172	ND-B14.5AL	Q9VNT3	10	85	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
 UBIQUINONE	fly	FBgn0037880	CG17726	Q9VGR2	3	36	Protein arginine methyltransferase NDUFAF7 homolog, mitochon	w
-UBIQUINONE	fly	FBgn0039112	SdhD	Q9VCI5	10	77	Succinate dehydrogenase [ubiquinone] cytochrome b small subu	w
-UBIQUINONE	fly	FBgn0039669	ND-20L	Q9VAK5	12	100	NADH dehydrogenase (Ubiquinone) 20 kDa subunit-like, isoform	w
-UBIQUINONE	fly	FBgn0040705	ND-B8	Q9VR00	5	117	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
-UBIQUINONE	fly	FBgn0047038	ND-13B	Q9VTB4	8	128	NADH dehydrogenase (Ubiquinone) 13 kDa B subunit (RH11203p)	w
-UBIQUINONE	fly	FBgn0050493	Coq9	Q8MKN0	7	16	Ubiquinone biosynthesis protein COQ9, mitochondrial	w
-UBIQUINONE	fly	FBgn0052174	Coq4	Q9VVG6	2	12	Ubiquinone biosynthesis protein COQ4 homolog, mitochondrial 	w
-UBIQUINONE	fly	FBgn0052230	ND-MLRQ	Q8SYJ2	7	73	GEO09626p1 (NADH dehydrogenase (Ubiquinone) MLRQ subunit, is	w
+UBIQUINONE	fly	FBgn0039112	SdhD	Q9VCI5	24	93	Succinate dehydrogenase [ubiquinone] cytochrome b small subu	w
+UBIQUINONE	fly	FBgn0039669	ND-20L	Q9VAK5	23	104	NADH dehydrogenase (Ubiquinone) 20 kDa subunit-like, isoform	w
+UBIQUINONE	fly	FBgn0040705	ND-B8	Q9VR00	30	120	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
+UBIQUINONE	fly	FBgn0047038	ND-13B	Q9VTB4	43	137	NADH dehydrogenase (Ubiquinone) 13 kDa B subunit (RH11203p)	w
+UBIQUINONE	fly	FBgn0050493	Coq9	Q8MKN0	8	20	Ubiquinone biosynthesis protein COQ9, mitochondrial	w
+UBIQUINONE	fly	FBgn0052174	Coq4	Q9VVG6	4	14	Ubiquinone biosynthesis protein COQ4 homolog, mitochondrial 	w
+UBIQUINONE	fly	FBgn0052230	ND-MLRQ	Q8SYJ2	13	75	GEO09626p1 (NADH dehydrogenase (Ubiquinone) MLRQ subunit, is	w
 UBIQUINONE	fly	FBgn0058002	ND-AGGG	Q7PL91	7	29	GEO11417p1 (NADH dehydrogenase (Ubiquinone) AGGG subunit, is	w
 UBIQUINONE	fly	FBgn0085468	ND-MWFE	A8DYC4	4	99	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-UBIQUINONE	fly	FBgn0085736	CG40472	Q7PL91	4	80	GEO11417p1 (NADH dehydrogenase (Ubiquinone) AGGG subunit, is	w
+UBIQUINONE	fly	FBgn0085736	CG40472	Q7PL91	15	80	GEO11417p1 (NADH dehydrogenase (Ubiquinone) AGGG subunit, is	w
 UBIQUINONE	fly	FBgn0261439	SdhA	Q94523	17	99	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
-UBIQUINONE	fly	FBgn0266582	ND-30	Q9VZU4	15	128	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitoc	w
+UBIQUINONE	fly	FBgn0266582	ND-30	Q9VZU4	34	143	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitoc	w
 UBIQUINONE	human	A1L188	NDUFAF8	A1L188	11	104	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	w
 UBIQUINONE	human	E9PQ53	NDUFC2-KCTD14	E9PQ53	17	74	NADH dehydrogenase [ubiquinone] 1 subunit C2, isoform 2 (NDU	w
 UBIQUINONE	human	O00217	NDUFS8	O00217	48	488	NADH dehydrogenase [ubiquinone] iron-sulfur protein 8, mitoc	w
@@ -256,44 +256,44 @@ UBIQUINONE	zebrafish	Q6PC49	zgc:73107	Q6PC49	4	4	NADH dehydrogenase [ubiquinone]
 UBIQUINONE	zebrafish	Q8AW03	zgc:56717	Q8AW03	5	5	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
 UBIQUIT	human	P57075	UBASH3A	P57075	35	213	Ubiquitin-associated and SH3 domain-containing protein A (Cb	w
 UBIQUIT	human	Q96EH8	NEURL3	Q96EH8	1	31	E3 ubiquitin-protein ligase NEURL3 (EC 2.3.2.27) (Lung-induc	w
-UBIQUITI	fly	FBgn0264848	vih	Q9VTY6	14	128	Ubiquitin-conjugating enzyme E2 C (EC 2.3.2.23) ((E3-indepen	w
+UBIQUITI	fly	FBgn0264848	vih	Q9VTY6	24	135	Ubiquitin-conjugating enzyme E2 C (EC 2.3.2.23) ((E3-indepen	w
 UBIQUITI	human	P22681	CBL	P22681	133	789	E3 ubiquitin-protein ligase CBL (EC 2.3.2.27) (Casitas B-lin	w
 UBIQUITI	human	Q76N89	HECW1	Q76N89	31	226	E3 ubiquitin-protein ligase HECW1 (EC 2.3.2.26) (HECT, C2 an	w
 UBIQUITI	human	Q9P2P5	HECW2	Q9P2P5	51	467	E3 ubiquitin-protein ligase HECW2 (EC 2.3.2.26) (HECT, C2 an	w
 UBIQUITI	human	Q9Y5T5	USP16	Q9Y5T5	14	100	Ubiquitin carboxyl-terminal hydrolase 16 (EC 3.4.19.12) (Deu	w
 UBIQUITIN	fly	FBgn0000173	ben	P35128	38	160	Ubiquitin-conjugating enzyme E2 N (EC 2.3.2.23) (E2 ubiquiti	w
-UBIQUITIN	fly	FBgn0000524	dx	Q23985	6	77	Protein deltex (Probable E3 ubiquitin-protein ligase deltex)	w
-UBIQUITIN	fly	FBgn0003330	Sce	Q9VB08	78	495	E3 ubiquitin-protein ligase RING1 (EC 2.3.2.27) (RING-type E	w
-UBIQUITIN	fly	FBgn0003410	sina	P21461	42	159	E3 ubiquitin-protein ligase sina (EC 2.3.2.27) (RING-type E3	w
-UBIQUITIN	fly	FBgn0003557	Su(dx)	Q9Y0H4	21	74	E3 ubiquitin-protein ligase Su(dx) (EC 2.3.2.26) (HECT-type 	w
-UBIQUITIN	fly	FBgn0003941	RpL40	P18101	16	136	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) [Cle	w
+UBIQUITIN	fly	FBgn0000524	dx	Q23985	6	78	Protein deltex (Probable E3 ubiquitin-protein ligase deltex)	w
+UBIQUITIN	fly	FBgn0003330	Sce	Q9VB08	79	496	E3 ubiquitin-protein ligase RING1 (EC 2.3.2.27) (RING-type E	w
+UBIQUITIN	fly	FBgn0003410	sina	P21461	43	159	E3 ubiquitin-protein ligase sina (EC 2.3.2.27) (RING-type E3	w
+UBIQUITIN	fly	FBgn0003557	Su(dx)	Q9Y0H4	22	77	E3 ubiquitin-protein ligase Su(dx) (EC 2.3.2.26) (HECT-type 	w
+UBIQUITIN	fly	FBgn0003941	RpL40	P18101	63	219	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) [Cle	w
 UBIQUITIN	fly	FBgn0003942	RpS27A	P15357	102	830	Ubiquitin-ribosomal protein eS31 fusion protein [Cleaved int	w
-UBIQUITIN	fly	FBgn0003943	Ubi-p63E	P0CG69	49	632	Polyubiquitin [Cleaved into: Ubiquitin]	w
-UBIQUITIN	fly	FBgn0004436	Ubc6	P25153	13	65	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN	fly	FBgn0003943	Ubi-p63E	P0CG69	57	668	Polyubiquitin [Cleaved into: Ubiquitin]	w
+UBIQUITIN	fly	FBgn0004436	Ubc6	P25153	14	71	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
 UBIQUITIN	fly	FBgn0005632	faf	P55824	0	19	Probable ubiquitin carboxyl-terminal hydrolase FAF (EC 3.4.1	w
-UBIQUITIN	fly	FBgn0010288	Uch	P35122	21	199	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12) (Ubiqui	w
-UBIQUITIN	fly	FBgn0011217	eff	P25867	45	169	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN	fly	FBgn0011327	Uch-L5	Q9XZ61	5	72	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
-UBIQUITIN	fly	FBgn0013717	not	Q9VVR1	13	70	Ubiquitin carboxyl-terminal hydrolase nonstop (EC 3.4.19.12)	w
-UBIQUITIN	fly	FBgn0015320	Ubc2	P52485	24	98	Ubiquitin-conjugating enzyme E2-24 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN	fly	FBgn0015321	Ubc4	P52486	27	78	Ubiquitin-conjugating enzyme E2-22 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN	fly	FBgn0010288	Uch	P35122	23	201	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12) (Ubiqui	w
+UBIQUITIN	fly	FBgn0011217	eff	P25867	48	207	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN	fly	FBgn0011327	Uch-L5	Q9XZ61	8	86	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+UBIQUITIN	fly	FBgn0013717	not	Q9VVR1	20	72	Ubiquitin carboxyl-terminal hydrolase nonstop (EC 3.4.19.12)	w
+UBIQUITIN	fly	FBgn0015320	Ubc2	P52485	27	106	Ubiquitin-conjugating enzyme E2-24 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN	fly	FBgn0015321	Ubc4	P52486	27	79	Ubiquitin-conjugating enzyme E2-22 kDa (EC 2.3.2.23) (E2 ubi	w
 UBIQUITIN	fly	FBgn0016756	Usp47	Q24574	1	13	Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Ubi	w
-UBIQUITIN	fly	FBgn0017418	ari-1	Q94981	8	87	E3 ubiquitin-protein ligase ariadne-1 (EC 2.3.2.31) (Protein	w
-UBIQUITIN	fly	FBgn0017456	Ubc84D	P52487	15	47	Ubiquitin-conjugating enzyme E2-18 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN	fly	FBgn0017418	ari-1	Q94981	9	88	E3 ubiquitin-protein ligase ariadne-1 (EC 2.3.2.31) (Protein	w
+UBIQUITIN	fly	FBgn0017456	Ubc84D	P52487	15	50	Ubiquitin-conjugating enzyme E2-18 kDa (EC 2.3.2.23) (E2 ubi	w
 UBIQUITIN	fly	FBgn0024997	CG2681	Q9W4W4	0	8	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0025186	ari-2	O76924	4	49	Potential E3 ubiquitin-protein ligase ariadne-2 (EC 2.3.2.31	w
 UBIQUITIN	fly	FBgn0026076	UBL3	Q9VXN1	0	2	LD03728p (Ubiquitin like 3, isoform A) (Ubiquitin like 3, is	w
 UBIQUITIN	fly	FBgn0026316	Ubc10	Q7K738	14	60	Ubiquitin-conjugating enzyme E2-18 kDa (EC 2.3.2.23) (Ubiqui	w
-UBIQUITIN	fly	FBgn0027052	STUB1	Q9XYW6	27	125	E3 ubiquitin-protein ligase CHIP (EC 2.3.2.27) (RING-type E3	w
+UBIQUITIN	fly	FBgn0027052	STUB1	Q9XYW6	29	127	E3 ubiquitin-protein ligase CHIP (EC 2.3.2.27) (RING-type E3	w
 UBIQUITIN	fly	FBgn0027609	morgue	Q9Y165	14	81	BcDNA.GH02435 (F box/ubiquitin conjugase) (Modifier of rpr a	w
 UBIQUITIN	fly	FBgn0028467	Ube4A	Q9U4F8	3	23	Ubiquitin conjugation factor E4 A (EC 2.3.2.27)	w
-UBIQUITIN	fly	FBgn0028476	Usp1	Q8I077	7	23	BcDNA.LD22910 (LD32685p) (Ubiquitin specific protease 1, iso	w
-UBIQUITIN	fly	FBgn0028847	CG9014	Q9VJW5	10	52	E3 ubiquitin-protein ligase NRDP1 (EC 2.3.2.27) (RING finger	w
-UBIQUITIN	fly	FBgn0029006	Smurf	Q9V853	19	72	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
-UBIQUITIN	fly	FBgn0029152	Mkrn1	Q9VP20	2	18	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
+UBIQUITIN	fly	FBgn0028476	Usp1	Q8I077	7	24	BcDNA.LD22910 (LD32685p) (Ubiquitin specific protease 1, iso	w
+UBIQUITIN	fly	FBgn0028847	CG9014	Q9VJW5	11	53	E3 ubiquitin-protein ligase NRDP1 (EC 2.3.2.27) (RING finger	w
+UBIQUITIN	fly	FBgn0029006	Smurf	Q9V853	25	90	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
+UBIQUITIN	fly	FBgn0029152	Mkrn1	Q9VP20	2	20	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0029661	CG16781	M9PDP1	1	18	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 UBIQUITIN	fly	FBgn0029763	Usp16-45	Q9W4C3	2	8	Ubiquitin carboxyl-terminal hydrolase 16/45 (EC 3.4.19.12) (	w
-UBIQUITIN	fly	FBgn0029819	Usp30	Q9W462	8	53	Ubiquitin carboxyl-terminal hydrolase 30 homolog (dUSP30) (E	w
+UBIQUITIN	fly	FBgn0029819	Usp30	Q9W462	9	54	Ubiquitin carboxyl-terminal hydrolase 30 homolog (dUSP30) (E	w
 UBIQUITIN	fly	FBgn0029911	detr	Q9W3V3	2	13	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0030015	CG10761	Q9W3I6	0	9	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 UBIQUITIN	fly	FBgn0030366	Usp7	Q9VYQ8	17	82	Ubiquitin carboxyl-terminal hydrolase 7 (EC 3.4.19.12) (Ubiq	w
@@ -304,41 +304,41 @@ UBIQUITIN	fly	FBgn0030578	CG5347	Q9VY20	0	4	RING-type E3 ubiquitin transferase (
 UBIQUITIN	fly	FBgn0030674	HUWE1	X2JF73	0	0	HECT-type E3 ubiquitin transferase (EC 2.3.2.26)	w
 UBIQUITIN	fly	FBgn0030693	sordd1	Q9VXP1	12	74	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0030809	Ubr1	Q9VX91	0	14	E3 ubiquitin-protein ligase UBR1 (EC 2.3.2.27) (N-recognin) 	w
-UBIQUITIN	fly	FBgn0030863	Ube2S	Q9VX25	10	97	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
+UBIQUITIN	fly	FBgn0030863	Ube2S	Q9VX25	15	101	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
 UBIQUITIN	fly	FBgn0030973	CG7332	Q9VWN5	4	58	Ubiquitin carboxyl-terminal hydrolase MINDY-3 homolog (EC 3.	w
 UBIQUITIN	fly	FBgn0031187	Usp2	X2JG37	16	112	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
 UBIQUITIN	fly	FBgn0031384	CG4238	Q9VQ67	1	14	HECT-type E3 ubiquitin transferase (EC 2.3.2.26)	w
 UBIQUITIN	fly	FBgn0031857	LUBEL	Q8IPJ3	4	9	E3 ubiquitin-protein ligase lubel (EC 2.3.2.31) (Linear Ubiq	w
-UBIQUITIN	fly	FBgn0032054	Mocs3	Q9VLJ8	3	57	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
+UBIQUITIN	fly	FBgn0032054	Mocs3	Q9VLJ8	3	62	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
 UBIQUITIN	fly	FBgn0032208	Ufd4	Q9VL06	0	0	E3 ubiquitin-protein ligase Ufd4 (EC 2.3.2.26) (Ubiquitin fu	w
 UBIQUITIN	fly	FBgn0032214	CG4968	Q9VL00	22	50	Ubiquitin thioesterase otubain-like (EC 3.4.19.12) (Ubiquiti	w
-UBIQUITIN	fly	FBgn0032216	Usp14	Q9VKZ8	10	150	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+UBIQUITIN	fly	FBgn0032216	Usp14	Q9VKZ8	16	167	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
 UBIQUITIN	fly	FBgn0032877	CG2617	Q9VIK5	0	9	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0033916	Usp20-33	Q7JW61	3	45	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
 UBIQUITIN	fly	FBgn0034109	CG7747	Q7K231	7	104	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0034411	CG18605	A0A0B4JD40	0	2	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0034989	CG3356	Q9W196	10	57	HECT-type E3 ubiquitin transferase (EC 2.3.2.26)	w
 UBIQUITIN	fly	FBgn0035024	CG11414	Q9W149	57	344	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-UBIQUITIN	fly	FBgn0035207	Herc4	E8NHA2	5	14	HECT and RLD domain containing E3 ubiquitin ligase 4, isofor	w
-UBIQUITIN	fly	FBgn0035233	Pex10	Q9W0D7	6	53	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-UBIQUITIN	fly	FBgn0035333	CG1317	Q9W023	2	19	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-UBIQUITIN	fly	FBgn0035402	Usp5	Q9VZU7	2	27	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+UBIQUITIN	fly	FBgn0035207	Herc4	E8NHA2	5	15	HECT and RLD domain containing E3 ubiquitin ligase 4, isofor	w
+UBIQUITIN	fly	FBgn0035233	Pex10	Q9W0D7	7	58	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
+UBIQUITIN	fly	FBgn0035333	CG1317	Q9W023	3	20	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
+UBIQUITIN	fly	FBgn0035402	Usp5	Q9VZU7	3	32	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
 UBIQUITIN	fly	FBgn0035483	Mul1	Q9VZJ9	6	69	Mitochondrial E3 ubiquitin protein ligase 1 (EC 2.3.2.27) (M	w
 UBIQUITIN	fly	FBgn0035593	Yod1	M9PED6	7	33	Ubiquitin thioesterase OTU (EC 3.4.19.12)	w
 UBIQUITIN	fly	FBgn0036082	CG12362	Q9VT94	7	28	RBR-type E3 ubiquitin transferase (EC 2.3.2.31)	w
-UBIQUITIN	fly	FBgn0036136	Ufd1	Q9VTF9	5	74	Ubiquitin fusion degradation protein 1 homolog (UB fusion pr	w
+UBIQUITIN	fly	FBgn0036136	Ufd1	Q9VTF9	8	78	Ubiquitin fusion degradation protein 1 homolog (UB fusion pr	w
 UBIQUITIN	fly	FBgn0036143	CG14142	Q9VTG6	0	1	Ubiquitin carboxyl-terminal hydrolase MINDY (EC 3.4.19.12)	w
 UBIQUITIN	fly	FBgn0036621	roq	Q9VV48	6	67	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0036809	CG12477	Q9VVS2	0	2	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0036913	Usp32	M9PD06	1	12	Ubiquitin specific protease 32	w
 UBIQUITIN	fly	FBgn0037242	March5	Q9VN18	0	16	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
-UBIQUITIN	fly	FBgn0037734	trbd	Q9VH90	7	39	Ubiquitin thioesterase trabid (dTrbd) (EC 3.4.19.12)	w
+UBIQUITIN	fly	FBgn0037734	trbd	Q9VH90	8	39	Ubiquitin thioesterase trabid (dTrbd) (EC 3.4.19.12)	w
 UBIQUITIN	fly	FBgn0038125	CG8141	Q9VFY3	0	27	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0038296	Kpc1	Q9VFC4	1	15	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0038627	CG7694	Q9VE61	2	6	E3 ubiquitin-protein ligase RNF181 homolog (EC 2.3.2.27) (RI	w
-UBIQUITIN	fly	FBgn0038862	Usp8	Q9VDD8	5	46	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
+UBIQUITIN	fly	FBgn0038862	Usp8	Q9VDD8	5	47	Ubiquitin carboxyl-terminal hydrolase (EC 3.4.19.12)	w
 UBIQUITIN	fly	FBgn0039498	CG17991	Q9VB61	1	20	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
-UBIQUITIN	fly	FBgn0039875	sip3	Q95SP2	12	64	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	w
+UBIQUITIN	fly	FBgn0039875	sip3	Q95SP2	15	66	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	w
 UBIQUITIN	fly	FBgn0040294	POSH	Q7K4D1	46	192	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0040355	CG3526	Q9W4V2	34	372	E3 ubiquitin-protein ligase KCMF1 (RING-type E3 ubiquitin tr	w
 UBIQUITIN	fly	FBgn0051721	Trim9	M9MRI4	4	34	E3 ubiquitin-protein ligase TRIM9 (EC 2.3.2.27) (Anomalies i	w
@@ -346,19 +346,19 @@ UBIQUITIN	fly	FBgn0052581	sordd2	Q8IR26	10	54	RING-type E3 ubiquitin transferase
 UBIQUITIN	fly	FBgn0052847	CG32847	Q8IQM1	27	412	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0053144	CG33144	Q7JR34	2	16	RBR-type E3 ubiquitin transferase (EC 2.3.2.31)	w
 UBIQUITIN	fly	FBgn0061469	Ube3a	Q9VTH1	4	24	HECT-type E3 ubiquitin transferase (EC 2.3.2.26)	w
-UBIQUITIN	fly	FBgn0085337	CG34308	A0A1Z1CK50	0	25	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
+UBIQUITIN	fly	FBgn0085337	CG34308	A0A1Z1CK50	1	29	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0086442	mib2	Q9VJ14	7	91	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 UBIQUITIN	fly	FBgn0086694	Bre1	Q9VRP9	8	82	E3 ubiquitin-protein ligase Bre1 (EC 2.3.2.27) (RING-type E3	w
-UBIQUITIN	fly	FBgn0259174	Nedd4	Q9VVI3	17	95	E3 ubiquitin-protein ligase Nedd-4 (DNedd4) (EC 2.3.2.26) (H	w
-UBIQUITIN	fly	FBgn0259794	sinah	Q8T3Y0	33	115	Probable E3 ubiquitin-protein ligase sinah (EC 2.3.2.27) (RI	w
+UBIQUITIN	fly	FBgn0259174	Nedd4	Q9VVI3	18	95	E3 ubiquitin-protein ligase Nedd-4 (DNedd4) (EC 2.3.2.26) (H	w
+UBIQUITIN	fly	FBgn0259794	sinah	Q8T3Y0	34	115	Probable E3 ubiquitin-protein ligase sinah (EC 2.3.2.27) (RI	w
 UBIQUITIN	fly	FBgn0260866	dnr1	A0A0B4KFY0	0	4	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-UBIQUITIN	fly	FBgn0260936	scny	Q9VRP5	7	46	Ubiquitin carboxyl-terminal hydrolase 36 (EC 3.4.19.12) (Deu	w
+UBIQUITIN	fly	FBgn0260936	scny	Q9VRP5	8	46	Ubiquitin carboxyl-terminal hydrolase 36 (EC 3.4.19.12) (Deu	w
 UBIQUITIN	fly	FBgn0261931	Hecw	Q9W326	17	90	HECT-type E3 ubiquitin transferase (EC 2.3.2.26)	w
-UBIQUITIN	fly	FBgn0262166	caly	Q7K5N4	9	103	Ubiquitin carboxyl-terminal hydrolase calypso (EC 3.4.19.12)	w
+UBIQUITIN	fly	FBgn0262166	caly	Q7K5N4	9	104	Ubiquitin carboxyl-terminal hydrolase calypso (EC 3.4.19.12)	w
 UBIQUITIN	fly	FBgn0262517	Ltn1	Q9VW09	0	4	E3 ubiquitin-protein ligase listerin (EC 2.3.2.27) (Listerin	w
-UBIQUITIN	fly	FBgn0263601	mib1	Q9VUX2	7	64	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
+UBIQUITIN	fly	FBgn0263601	mib1	Q9VUX2	8	65	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
 UBIQUITIN	fly	FBgn0267351	Topors	Q9V8P9	4	17	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
-UBIQUITIN	fly	FBgn0267384	Ubc7	Q9VXE8	19	96	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
+UBIQUITIN	fly	FBgn0267384	Ubc7	Q9VXE8	19	99	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
 UBIQUITIN	fly	FBgn0283503	Neurl4	A0A1L4AAD6	0	5	Neuralized E3 ubiquitin protein ligase 4	w
 UBIQUITIN	fly	FBgn0283649	elgi	Q9VUV7	7	33	E3 ubiquitin-protein ligase NRDP1 (EC 2.3.2.27) (RING finger	w
 UBIQUITIN	human	A0A1B0GTR7	TINCR	A0A1B0GTR7	1	9	TINCR ubiquitin domain containing	w
@@ -829,10 +829,10 @@ UBIQUITIN	zebrafish	X1WHK1	ftr73	X1WHK1	0	1	E3 ubiquitin/ISG15 ligase TRIM25 iso
 UBIQUITIN-	human	Q8NFA0	USP32	Q8NFA0	9	272	Ubiquitin carboxyl-terminal hydrolase 32 (EC 3.4.19.12) (Deu	w
 UBIQUITIN-	human	Q96DC9	OTUB2	Q96DC9	9	188	Ubiquitin thioesterase OTUB2 (EC 3.4.19.12) (Deubiquitinatin	w
 UBIQUITIN-	human	Q9Y385	UBE2J1	Q9Y385	35	241	Ubiquitin-conjugating enzyme E2 J1 (EC 2.3.2.23) (E2 ubiquit	w
-UBIQUITIN-5E	fly	FBgn0086558	Ubi-p5E	Q9W418	45	608	GH17761p (Ubiquitin-5E, isoform A) (Ubiquitin-5E, isoform B)	w
-UBIQUITIN-ACTIVATING	fly	FBgn0023143	Uba1	Q8T0L3	24	232	E1 ubiquitin-activating enzyme (EC 6.2.1.45) (Ubiquitin-acti	w
-UBIQUITIN-ACTIVATING	fly	FBgn0030305	Uba5	Q9VYY3	6	85	Ubiquitin-like modifier-activating enzyme 5 (Ubiquitin-activ	w
-UBIQUITIN-ACTIVATING	fly	FBgn0263697	Uba3	Q9V6U8	4	47	Nedd8-activating enzyme E1 catalytic subunit (EC 6.2.1.64) (	w
+UBIQUITIN-5E	fly	FBgn0086558	Ubi-p5E	Q9W418	45	609	GH17761p (Ubiquitin-5E, isoform A) (Ubiquitin-5E, isoform B)	w
+UBIQUITIN-ACTIVATING	fly	FBgn0023143	Uba1	Q8T0L3	26	234	E1 ubiquitin-activating enzyme (EC 6.2.1.45) (Ubiquitin-acti	w
+UBIQUITIN-ACTIVATING	fly	FBgn0030305	Uba5	Q9VYY3	10	104	Ubiquitin-like modifier-activating enzyme 5 (Ubiquitin-activ	w
+UBIQUITIN-ACTIVATING	fly	FBgn0263697	Uba3	Q9V6U8	12	61	Nedd8-activating enzyme E1 catalytic subunit (EC 6.2.1.64) (	w
 UBIQUITIN-ACTIVATING	human	A0AVT1	UBA6	A0AVT1	28	227	Ubiquitin-like modifier-activating enzyme 6 (Ubiquitin-activ	w
 UBIQUITIN-ACTIVATING	human	O95352	ATG7	O95352	25	492	Ubiquitin-like modifier-activating enzyme ATG7 (ATG12-activa	w
 UBIQUITIN-ACTIVATING	human	P22314	UBA1	P22314	36	398	Ubiquitin-like modifier-activating enzyme 1 (EC 6.2.1.45) (P	w
@@ -867,26 +867,26 @@ UBIQUITIN-BINDING	yeast	Q08412	CUE5	Q08412	6	24	Ubiquitin-binding protein CUE5	w
 UBIQUITIN-CON	human	P63146	UBE2B	P63146	45	371	Ubiquitin-conjugating enzyme E2 B (EC 2.3.2.23) (E2 ubiquiti	w
 UBIQUITIN-CONJUGATIN	human	Q9C0C9	UBE2O	Q9C0C9	231	731	(E3-independent) E2 ubiquitin-conjugating enzyme (EC 2.3.2.2	w
 UBIQUITIN-CONJUGATING	fly	FBgn0000173	ben	P35128	38	160	Ubiquitin-conjugating enzyme E2 N (EC 2.3.2.23) (E2 ubiquiti	w
-UBIQUITIN-CONJUGATING	fly	FBgn0004436	Ubc6	P25153	13	65	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN-CONJUGATING	fly	FBgn0011217	eff	P25867	45	169	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN-CONJUGATING	fly	FBgn0015320	Ubc2	P52485	24	98	Ubiquitin-conjugating enzyme E2-24 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN-CONJUGATING	fly	FBgn0015321	Ubc4	P52486	27	78	Ubiquitin-conjugating enzyme E2-22 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN-CONJUGATING	fly	FBgn0017456	Ubc84D	P52487	15	47	Ubiquitin-conjugating enzyme E2-18 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN-CONJUGATING	fly	FBgn0004436	Ubc6	P25153	14	71	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN-CONJUGATING	fly	FBgn0011217	eff	P25867	48	207	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN-CONJUGATING	fly	FBgn0015320	Ubc2	P52485	27	106	Ubiquitin-conjugating enzyme E2-24 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN-CONJUGATING	fly	FBgn0015321	Ubc4	P52486	27	79	Ubiquitin-conjugating enzyme E2-22 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN-CONJUGATING	fly	FBgn0017456	Ubc84D	P52487	15	50	Ubiquitin-conjugating enzyme E2-18 kDa (EC 2.3.2.23) (E2 ubi	w
 UBIQUITIN-CONJUGATING	fly	FBgn0026316	Ubc10	Q7K738	14	60	Ubiquitin-conjugating enzyme E2-18 kDa (EC 2.3.2.23) (Ubiqui	w
-UBIQUITIN-CONJUGATING	fly	FBgn0029996	UbcE2H	Q7JW03	5	26	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
+UBIQUITIN-CONJUGATING	fly	FBgn0029996	UbcE2H	Q7JW03	5	29	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
 UBIQUITIN-CONJUGATING	fly	FBgn0030386	CG2574	Q9VYN3	9	41	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
-UBIQUITIN-CONJUGATING	fly	FBgn0030863	Ube2S	Q9VX25	10	97	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
+UBIQUITIN-CONJUGATING	fly	FBgn0030863	Ube2S	Q9VX25	15	101	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
 UBIQUITIN-CONJUGATING	fly	FBgn0031331	CG5440	Q9VQ00	8	50	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
 UBIQUITIN-CONJUGATING	fly	FBgn0031896	CG4502	Q9VM35	0	6	Ubiquitin-conjugating enzyme E2Q-like protein CG4502 (EC 2.3	w
-UBIQUITIN-CONJUGATING	fly	FBgn0033544	CG7220	A1Z8B5	14	32	N-terminal E2 ubiquitin-conjugating enzyme (EC 2.3.2.23) (EC	w
-UBIQUITIN-CONJUGATING	fly	FBgn0035601	Uev1A	Q9VRL1	20	217	GEO06356p1 (LD28904p) (Ubiquitin-conjugating enzyme variant 	w
-UBIQUITIN-CONJUGATING	fly	FBgn0037987	CG14739	Q9VGD6	1	11	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
-UBIQUITIN-CONJUGATING	fly	FBgn0038515	CG5823	Q9VEJ4	3	30	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
+UBIQUITIN-CONJUGATING	fly	FBgn0033544	CG7220	A1Z8B5	14	35	N-terminal E2 ubiquitin-conjugating enzyme (EC 2.3.2.23) (EC	w
+UBIQUITIN-CONJUGATING	fly	FBgn0035601	Uev1A	Q9VRL1	20	219	GEO06356p1 (LD28904p) (Ubiquitin-conjugating enzyme variant 	w
+UBIQUITIN-CONJUGATING	fly	FBgn0037987	CG14739	Q9VGD6	2	12	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
+UBIQUITIN-CONJUGATING	fly	FBgn0038515	CG5823	Q9VEJ4	4	33	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
 UBIQUITIN-CONJUGATING	fly	FBgn0058045	CG40045	Q8SYG3	10	144	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
-UBIQUITIN-CONJUGATING	fly	FBgn0264848	vih	Q9VTY6	14	128	Ubiquitin-conjugating enzyme E2 C (EC 2.3.2.23) ((E3-indepen	w
+UBIQUITIN-CONJUGATING	fly	FBgn0264848	vih	Q9VTY6	24	135	Ubiquitin-conjugating enzyme E2 C (EC 2.3.2.23) ((E3-indepen	w
 UBIQUITIN-CONJUGATING	fly	FBgn0266717	Bruce	A0A0B4KG50	0	0	BIR repeat containing ubiquitin-conjugating enzyme, isoform 	w
 UBIQUITIN-CONJUGATING	fly	FBgn0267383	Ubc87F	Q9VFR8	5	58	E2 ubiquitin-conjugating enzyme (EC 2.3.2.23)	w
-UBIQUITIN-CONJUGATING	fly	FBgn0267384	Ubc7	Q9VXE8	19	96	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
+UBIQUITIN-CONJUGATING	fly	FBgn0267384	Ubc7	Q9VXE8	19	99	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
 UBIQUITIN-CONJUGATING	human	A0A087WY85	UBE2D3	A0A087WY85	120	247	E2 ubiquitin-conjugating enzyme	w
 UBIQUITIN-CONJUGATING	human	A0A1B0GUS4	UBE2L5	A0A1B0GUS4	12	127	Ubiquitin-conjugating enzyme E2 L5 (EC 2.3.2.23) (Ubiquitin-	w
 UBIQUITIN-CONJUGATING	human	A1L167	UBE2QL1	A1L167	4	53	Ubiquitin-conjugating enzyme E2Q-like protein 1 (EC 2.3.2.23	w
@@ -992,8 +992,8 @@ UBIQUITIN-CONJUGATING	zebrafish	Q7ZVK2	ube2g1a	Q7ZVK2	11	82	Ubiquitin-conjugatin
 UBIQUITIN-CONJUGATING	zebrafish	Q803M4	ube2al	Q803M4	19	87	E2 ubiquitin-conjugating enzyme	w
 UBIQUITIN-CONJUGATING	zebrafish	Q803V7	cdc34a	Q803V7	16	90	E2 ubiquitin-conjugating enzyme	w
 UBIQUITIN-CONJUGATING	zebrafish	X1WFM4	ube2q2	X1WFM4	4	10	E2 ubiquitin-conjugating enzyme	w
-UBIQUITIN-FOLD	fly	FBgn0034061	Ufc1	Q7K1Z5	1	9	Ubiquitin-fold modifier-conjugating enzyme 1 (Ufm1-conjugati	w
-UBIQUITIN-FOLD	fly	FBgn0085220	Ufm1	A8DYH2	4	10	Ubiquitin-fold modifier 1	w
+UBIQUITIN-FOLD	fly	FBgn0034061	Ufc1	Q7K1Z5	2	13	Ubiquitin-fold modifier-conjugating enzyme 1 (Ufm1-conjugati	w
+UBIQUITIN-FOLD	fly	FBgn0085220	Ufm1	A8DYH2	8	15	Ubiquitin-fold modifier 1	w
 UBIQUITIN-FOLD	human	O95164	UBL3	O95164	7	72	Ubiquitin-like protein 3 (Membrane-anchored ubiquitin-fold p	w
 UBIQUITIN-FOLD	human	P61960	UFM1	P61960	16	140	Ubiquitin-fold modifier 1	w
 UBIQUITIN-FOLD	human	Q9Y3C8	UFC1	Q9Y3C8	9	158	Ubiquitin-fold modifier-conjugating enzyme 1 (Ufm1-conjugati	w
@@ -1004,14 +1004,14 @@ UBIQUITIN-FOLD	zebrafish	Q803Y4	ufm1	Q803Y4	6	14	Ubiquitin-fold modifier 1	w
 UBIQUITIN-HOMOLOGY	human	P63165	SUMO1	P63165	100	449	Small ubiquitin-related modifier 1 (SUMO-1) (GAP-modifying p	w
 UBIQUITIN-HY	human	O75317	USP12	O75317	16	122	Ubiquitin carboxyl-terminal hydrolase 12 (EC 3.4.19.12) (Deu	w
 UBIQUITIN-LIKE	fly	FBgn0022224	ubl	Q9V998	8	76	Ubiquitin-like protein 5	w
-UBIQUITIN-LIKE	fly	FBgn0027526	Ublcp1	Q9XZ16	85	1050	Ubiquitin-like domain-containing CTD phosphatase 1 (EC 3.1.3	w
-UBIQUITIN-LIKE	fly	FBgn0029512	Aos1	Q7KSM5	2	33	SUMO-activating enzyme subunit 1 (Ubiquitin-like 1-activatin	w
-UBIQUITIN-LIKE	fly	FBgn0029856	CG11700	R9PY16	36	349	Ubiquitin-like domain-containing protein	w
-UBIQUITIN-LIKE	fly	FBgn0030305	Uba5	Q9VYY3	6	85	Ubiquitin-like modifier-activating enzyme 5 (Ubiquitin-activ	w
-UBIQUITIN-LIKE	fly	FBgn0032725	Nedd8	Q9VJ33	24	243	NEDD8 (Neddylin) (Ubiquitin-like protein Nedd8)	w
-UBIQUITIN-LIKE	fly	FBgn0034366	Atg7	Q7JY94	7	69	Ubiquitin-like modifier-activating enzyme ATG7 (Autophagy-re	w
+UBIQUITIN-LIKE	fly	FBgn0027526	Ublcp1	Q9XZ16	87	1050	Ubiquitin-like domain-containing CTD phosphatase 1 (EC 3.1.3	w
+UBIQUITIN-LIKE	fly	FBgn0029512	Aos1	Q7KSM5	5	40	SUMO-activating enzyme subunit 1 (Ubiquitin-like 1-activatin	w
+UBIQUITIN-LIKE	fly	FBgn0029856	CG11700	R9PY16	37	350	Ubiquitin-like domain-containing protein	w
+UBIQUITIN-LIKE	fly	FBgn0030305	Uba5	Q9VYY3	10	104	Ubiquitin-like modifier-activating enzyme 5 (Ubiquitin-activ	w
+UBIQUITIN-LIKE	fly	FBgn0032725	Nedd8	Q9VJ33	27	246	NEDD8 (Neddylin) (Ubiquitin-like protein Nedd8)	w
+UBIQUITIN-LIKE	fly	FBgn0034366	Atg7	Q7JY94	13	84	Ubiquitin-like modifier-activating enzyme ATG7 (Autophagy-re	w
 UBIQUITIN-LIKE	fly	FBgn0038960	CG13855	Q9VD15	0	11	IQ and ubiquitin-like domain-containing protein	w
-UBIQUITIN-LIKE	fly	FBgn0052110	CG32110	Q8IQH8	6	33	Ubiquitin-like protease family profile domain-containing pro	w
+UBIQUITIN-LIKE	fly	FBgn0052110	CG32110	Q8IQH8	8	39	Ubiquitin-like protease family profile domain-containing pro	w
 UBIQUITIN-LIKE	human	A0AVT1	UBA6	A0AVT1	28	227	Ubiquitin-like modifier-activating enzyme 6 (Ubiquitin-activ	w
 UBIQUITIN-LIKE	human	A6NDN8	UBIML	A6NDN8	2	7	Putative ubiquitin-like protein FUBI-like protein ENSP000003	w
 UBIQUITIN-LIKE	human	G2XKQ0	SUMO1P1	G2XKQ0	23	95	Small ubiquitin-related modifier 5 (SUMO-5) (SUMO1 pseudogen	w
@@ -1098,8 +1098,8 @@ UBIQUITIN-LIKE	zebrafish	Q6TGS9	ubl3b	Q6TGS9	1	1	Ubiquitin-like protein	w
 UBIQUITIN-LIKE	zebrafish	Q7T3A5	ubl7b	Q7T3A5	19	393	Ubiquitin-like 7	w
 UBIQUITIN-LIKE	zebrafish	Q7ZWB2	ubl4a	Q7ZWB2	33	517	Ubiquitin-like protein 4A	w
 UBIQUITIN-LIKE	zebrafish	X1WER2	uba5	X1WER2	4	87	Ubiquitin-like modifier-activating enzyme 5	w
-UBIQUITIN-LIKE-CONJUGATING	fly	FBgn0036813	Atg3	Q9VVS6	7	63	Ubiquitin-like-conjugating enzyme ATG3 (Autophagy-related pr	w
-UBIQUITIN-LIKE-CONJUGATING	fly	FBgn0040780	Atg10	Q4V6A8	3	36	Ubiquitin-like-conjugating enzyme ATG10 (Autophagy-related p	w
+UBIQUITIN-LIKE-CONJUGATING	fly	FBgn0036813	Atg3	Q9VVS6	9	63	Ubiquitin-like-conjugating enzyme ATG3 (Autophagy-related pr	w
+UBIQUITIN-LIKE-CONJUGATING	fly	FBgn0040780	Atg10	Q4V6A8	5	36	Ubiquitin-like-conjugating enzyme ATG10 (Autophagy-related p	w
 UBIQUITIN-LIKE-CONJUGATING	human	Q9H0Y0	ATG10	Q9H0Y0	13	262	Ubiquitin-like-conjugating enzyme ATG10 (EC 2.3.2.-) (Autoph	w
 UBIQUITIN-LIKE-CONJUGATING	human	Q9NT62	ATG3	Q9NT62	31	331	Ubiquitin-like-conjugating enzyme ATG3 (EC 2.3.2.-) (Autopha	w
 UBIQUITIN-LIKE-CONJUGATING	worm	Q18991	atg-10	Q18991	3	18	Ubiquitin-like-conjugating enzyme ATG10	w
@@ -1113,56 +1113,56 @@ UBIQUITIN-LIKE-SPECIFIC	yeast	Q02724	ULP1	Q02724	9	203	Ubiquitin-like-specific p
 UBIQUITIN-PRO	human	P49459	UBE2A	P49459	48	458	Ubiquitin-conjugating enzyme E2 A (EC 2.3.2.23) (E2 ubiquiti	w
 UBIQUITIN-PROCESSING	human	Q9Y5T5	USP16	Q9Y5T5	14	100	Ubiquitin carboxyl-terminal hydrolase 16 (EC 3.4.19.12) (Deu	w
 UBIQUITIN-PROTE	human	Q8IWF7	UBE2DNL	Q8IWF7	0	7	Putative ubiquitin-conjugating enzyme E2 D2-like protein (Ub	w
-UBIQUITIN-PROTEIN	fly	FBgn0000524	dx	Q23985	6	77	Protein deltex (Probable E3 ubiquitin-protein ligase deltex)	w
-UBIQUITIN-PROTEIN	fly	FBgn0003330	Sce	Q9VB08	78	495	E3 ubiquitin-protein ligase RING1 (EC 2.3.2.27) (RING-type E	w
-UBIQUITIN-PROTEIN	fly	FBgn0003410	sina	P21461	42	159	E3 ubiquitin-protein ligase sina (EC 2.3.2.27) (RING-type E3	w
-UBIQUITIN-PROTEIN	fly	FBgn0003557	Su(dx)	Q9Y0H4	21	74	E3 ubiquitin-protein ligase Su(dx) (EC 2.3.2.26) (HECT-type 	w
-UBIQUITIN-PROTEIN	fly	FBgn0004436	Ubc6	P25153	13	65	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN-PROTEIN	fly	FBgn0005616	msl-2	P50534	18	103	E3 ubiquitin-protein ligase msl-2 (EC 2.3.2.27) (Protein mal	w
-UBIQUITIN-PROTEIN	fly	FBgn0011217	eff	P25867	45	169	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN-PROTEIN	fly	FBgn0015320	Ubc2	P52485	24	98	Ubiquitin-conjugating enzyme E2-24 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN-PROTEIN	fly	FBgn0015321	Ubc4	P52486	27	78	Ubiquitin-conjugating enzyme E2-22 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN-PROTEIN	fly	FBgn0017418	ari-1	Q94981	8	87	E3 ubiquitin-protein ligase ariadne-1 (EC 2.3.2.31) (Protein	w
-UBIQUITIN-PROTEIN	fly	FBgn0017456	Ubc84D	P52487	15	47	Ubiquitin-conjugating enzyme E2-18 kDa (EC 2.3.2.23) (E2 ubi	w
-UBIQUITIN-PROTEIN	fly	FBgn0020224	Cbl	Q9VSK2	23	156	E3 ubiquitin-protein ligase CBL (EC 2.3.2.27)	w
+UBIQUITIN-PROTEIN	fly	FBgn0000524	dx	Q23985	6	78	Protein deltex (Probable E3 ubiquitin-protein ligase deltex)	w
+UBIQUITIN-PROTEIN	fly	FBgn0003330	Sce	Q9VB08	79	496	E3 ubiquitin-protein ligase RING1 (EC 2.3.2.27) (RING-type E	w
+UBIQUITIN-PROTEIN	fly	FBgn0003410	sina	P21461	43	159	E3 ubiquitin-protein ligase sina (EC 2.3.2.27) (RING-type E3	w
+UBIQUITIN-PROTEIN	fly	FBgn0003557	Su(dx)	Q9Y0H4	22	77	E3 ubiquitin-protein ligase Su(dx) (EC 2.3.2.26) (HECT-type 	w
+UBIQUITIN-PROTEIN	fly	FBgn0004436	Ubc6	P25153	14	71	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN-PROTEIN	fly	FBgn0005616	msl-2	P50534	24	105	E3 ubiquitin-protein ligase msl-2 (EC 2.3.2.27) (Protein mal	w
+UBIQUITIN-PROTEIN	fly	FBgn0011217	eff	P25867	48	207	Ubiquitin-conjugating enzyme E2-17 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN-PROTEIN	fly	FBgn0015320	Ubc2	P52485	27	106	Ubiquitin-conjugating enzyme E2-24 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN-PROTEIN	fly	FBgn0015321	Ubc4	P52486	27	79	Ubiquitin-conjugating enzyme E2-22 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN-PROTEIN	fly	FBgn0017418	ari-1	Q94981	9	88	E3 ubiquitin-protein ligase ariadne-1 (EC 2.3.2.31) (Protein	w
+UBIQUITIN-PROTEIN	fly	FBgn0017456	Ubc84D	P52487	15	50	Ubiquitin-conjugating enzyme E2-18 kDa (EC 2.3.2.23) (E2 ubi	w
+UBIQUITIN-PROTEIN	fly	FBgn0020224	Cbl	Q9VSK2	25	156	E3 ubiquitin-protein ligase CBL (EC 2.3.2.27)	w
 UBIQUITIN-PROTEIN	fly	FBgn0025186	ari-2	O76924	4	49	Potential E3 ubiquitin-protein ligase ariadne-2 (EC 2.3.2.31	w
-UBIQUITIN-PROTEIN	fly	FBgn0027052	STUB1	Q9XYW6	27	125	E3 ubiquitin-protein ligase CHIP (EC 2.3.2.27) (RING-type E3	w
-UBIQUITIN-PROTEIN	fly	FBgn0028847	CG9014	Q9VJW5	10	52	E3 ubiquitin-protein ligase NRDP1 (EC 2.3.2.27) (RING finger	w
-UBIQUITIN-PROTEIN	fly	FBgn0029006	Smurf	Q9V853	19	72	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
+UBIQUITIN-PROTEIN	fly	FBgn0027052	STUB1	Q9XYW6	29	127	E3 ubiquitin-protein ligase CHIP (EC 2.3.2.27) (RING-type E3	w
+UBIQUITIN-PROTEIN	fly	FBgn0028847	CG9014	Q9VJW5	11	53	E3 ubiquitin-protein ligase NRDP1 (EC 2.3.2.27) (RING finger	w
+UBIQUITIN-PROTEIN	fly	FBgn0029006	Smurf	Q9V853	25	90	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
 UBIQUITIN-PROTEIN	fly	FBgn0029661	CG16781	M9PDP1	1	18	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 UBIQUITIN-PROTEIN	fly	FBgn0030015	CG10761	Q9W3I6	0	9	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 UBIQUITIN-PROTEIN	fly	FBgn0030600	hiw	Q9NB71	0	0	E3 ubiquitin-protein ligase highwire (EC 2.3.2.33) (Protein 	w
 UBIQUITIN-PROTEIN	fly	FBgn0030809	Ubr1	Q9VX91	0	14	E3 ubiquitin-protein ligase UBR1 (EC 2.3.2.27) (N-recognin) 	w
-UBIQUITIN-PROTEIN	fly	FBgn0030863	Ube2S	Q9VX25	10	97	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
+UBIQUITIN-PROTEIN	fly	FBgn0030863	Ube2S	Q9VX25	15	101	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
 UBIQUITIN-PROTEIN	fly	FBgn0031772	CG13994	Q9VMI2	5	11	E3 ubiquitin-protein ligase PPP1R11 (Protein phosphatase 1 r	w
 UBIQUITIN-PROTEIN	fly	FBgn0031857	LUBEL	Q8IPJ3	4	9	E3 ubiquitin-protein ligase lubel (EC 2.3.2.31) (Linear Ubiq	w
 UBIQUITIN-PROTEIN	fly	FBgn0032208	Ufd4	Q9VL06	0	0	E3 ubiquitin-protein ligase Ufd4 (EC 2.3.2.26) (Ubiquitin fu	w
-UBIQUITIN-PROTEIN	fly	FBgn0032812	Hakai	M9PBE2	114	589	E3 ubiquitin-protein ligase Hakai (EC 2.3.2.27)	w
+UBIQUITIN-PROTEIN	fly	FBgn0032812	Hakai	M9PBE2	115	589	E3 ubiquitin-protein ligase Hakai (EC 2.3.2.27)	w
 UBIQUITIN-PROTEIN	fly	FBgn0035232	CG12099	Q9W0D8	3	9	E3 ubiquitin-protein ligase RNF10 (RING finger protein 10)	w
-UBIQUITIN-PROTEIN	fly	FBgn0036897	Rnf146	B7Z078	2	18	E3 ubiquitin-protein ligase (EC 2.3.2.27)	w
+UBIQUITIN-PROTEIN	fly	FBgn0036897	Rnf146	B7Z078	5	27	E3 ubiquitin-protein ligase (EC 2.3.2.27)	w
 UBIQUITIN-PROTEIN	fly	FBgn0037242	March5	Q9VN18	0	16	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 UBIQUITIN-PROTEIN	fly	FBgn0037442	gzl	Q9VI20	283	2390	E3 ubiquitin-protein ligase Godzilla (EC 2.3.2.27)	w
 UBIQUITIN-PROTEIN	fly	FBgn0037653	Iru	Q9VHI7	6	13	E3 ubiquitin-protein ligase Iruka (EC 2.3.2.27)	w
 UBIQUITIN-PROTEIN	fly	FBgn0037655	Kcmf1	Q95RX5	3	24	E3 ubiquitin-protein ligase Kcmf1 (EC 2.3.2.27)	w
-UBIQUITIN-PROTEIN	fly	FBgn0037781	Fancl	Q8T913	12	38	E3 ubiquitin-protein ligase Fancl (EC 2.3.2.27) (Fanconi ane	w
+UBIQUITIN-PROTEIN	fly	FBgn0037781	Fancl	Q8T913	12	39	E3 ubiquitin-protein ligase Fancl (EC 2.3.2.27) (Fanconi ane	w
 UBIQUITIN-PROTEIN	fly	FBgn0038627	CG7694	Q9VE61	2	6	E3 ubiquitin-protein ligase RNF181 homolog (EC 2.3.2.27) (RI	w
 UBIQUITIN-PROTEIN	fly	FBgn0039498	CG17991	Q9VB61	1	20	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
-UBIQUITIN-PROTEIN	fly	FBgn0039875	sip3	Q95SP2	12	64	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	w
+UBIQUITIN-PROTEIN	fly	FBgn0039875	sip3	Q95SP2	15	66	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	w
 UBIQUITIN-PROTEIN	fly	FBgn0040355	CG3526	Q9W4V2	34	372	E3 ubiquitin-protein ligase KCMF1 (RING-type E3 ubiquitin tr	w
-UBIQUITIN-PROTEIN	fly	FBgn0041100	park	Q7KTX7	26	198	E3 ubiquitin-protein ligase parkin (EC 2.3.2.31)	w
+UBIQUITIN-PROTEIN	fly	FBgn0041100	park	Q7KTX7	27	203	E3 ubiquitin-protein ligase parkin (EC 2.3.2.31)	w
 UBIQUITIN-PROTEIN	fly	FBgn0051357	Kaz	Q8MSB1	17	99	E3 ubiquitin-protein transferase MAEA (Macrophage erythrobla	w
 UBIQUITIN-PROTEIN	fly	FBgn0051721	Trim9	M9MRI4	4	34	E3 ubiquitin-protein ligase TRIM9 (EC 2.3.2.27) (Anomalies i	w
 UBIQUITIN-PROTEIN	fly	FBgn0086694	Bre1	Q9VRP9	8	82	E3 ubiquitin-protein ligase Bre1 (EC 2.3.2.27) (RING-type E3	w
-UBIQUITIN-PROTEIN	fly	FBgn0259174	Nedd4	Q9VVI3	17	95	E3 ubiquitin-protein ligase Nedd-4 (DNedd4) (EC 2.3.2.26) (H	w
-UBIQUITIN-PROTEIN	fly	FBgn0259794	sinah	Q8T3Y0	33	115	Probable E3 ubiquitin-protein ligase sinah (EC 2.3.2.27) (RI	w
-UBIQUITIN-PROTEIN	fly	FBgn0260635	Diap1	Q24306	34	135	Death-associated inhibitor of apoptosis 1 (EC 2.3.2.27) (Apo	w
+UBIQUITIN-PROTEIN	fly	FBgn0259174	Nedd4	Q9VVI3	18	95	E3 ubiquitin-protein ligase Nedd-4 (DNedd4) (EC 2.3.2.26) (H	w
+UBIQUITIN-PROTEIN	fly	FBgn0259794	sinah	Q8T3Y0	34	115	Probable E3 ubiquitin-protein ligase sinah (EC 2.3.2.27) (RI	w
+UBIQUITIN-PROTEIN	fly	FBgn0260635	Diap1	Q24306	36	138	Death-associated inhibitor of apoptosis 1 (EC 2.3.2.27) (Apo	w
 UBIQUITIN-PROTEIN	fly	FBgn0260794	ctrip	Q9VN58	0	3	E3 ubiquitin-protein ligase (EC 2.3.2.26)	w
 UBIQUITIN-PROTEIN	fly	FBgn0260970	Ubr3	M9PDZ8	1	9	E3 ubiquitin-protein ligase (EC 2.3.2.27)	w
 UBIQUITIN-PROTEIN	fly	FBgn0261624	I-3	Q9VRC5	5	7	E3 ubiquitin-protein ligase PPP1R11 (Protein phosphatase 1 r	w
 UBIQUITIN-PROTEIN	fly	FBgn0262517	Ltn1	Q9VW09	0	4	E3 ubiquitin-protein ligase listerin (EC 2.3.2.27) (Listerin	w
-UBIQUITIN-PROTEIN	fly	FBgn0263601	mib1	Q9VUX2	7	64	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
+UBIQUITIN-PROTEIN	fly	FBgn0263601	mib1	Q9VUX2	8	65	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
 UBIQUITIN-PROTEIN	fly	FBgn0267351	Topors	Q9V8P9	4	17	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
-UBIQUITIN-PROTEIN	fly	FBgn0267384	Ubc7	Q9VXE8	19	96	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
+UBIQUITIN-PROTEIN	fly	FBgn0267384	Ubc7	Q9VXE8	19	99	Ubiquitin-conjugating enzyme E2 S (EC 2.3.2.23) (E2 ubiquiti	w
 UBIQUITIN-PROTEIN	fly	FBgn0283649	elgi	Q9VUV7	7	33	E3 ubiquitin-protein ligase NRDP1 (EC 2.3.2.27) (RING finger	w
 UBIQUITIN-PROTEIN	human	A0A1B0GUS4	UBE2L5	A0A1B0GUS4	12	127	Ubiquitin-conjugating enzyme E2 L5 (EC 2.3.2.23) (Ubiquitin-	w
 UBIQUITIN-PROTEIN	human	A0A2R8Y4M4	LOC122513141	A0A2R8Y4M4	0	2	E3 ubiquitin-protein ligase RNF182	w
@@ -1621,8 +1621,8 @@ UBIQUITIN-PROTEIN	zebrafish	Q9DFG8	mkrn2	Q9DFG8	0	2	E3 ubiquitin-protein ligase 
 UBIQUITIN-PROTEIN	zebrafish	U6C7X6	itcha	U6C7X6	23	65	E3 ubiquitin-protein ligase	w
 UBIQUITIN-PROTEIN	zebrafish	X1WBJ0	trim65	X1WBJ0	0	1	E3 ubiquitin-protein ligase TRIM65	w
 UBIQUITIN-PROTEIN	zebrafish	X1WG91	dtx3lb.2	X1WG91	0	3	E3 ubiquitin-protein ligase	w
-UBIQUITIN-RELATED	fly	FBgn0053276	Urm1	Q7KU86	48	288	Ubiquitin-related modifier 1 homolog	w
-UBIQUITIN-RELATED	fly	FBgn0264922	Sumo	O97102	93	387	Small ubiquitin-related modifier (SUMO)	w
+UBIQUITIN-RELATED	fly	FBgn0053276	Urm1	Q7KU86	56	297	Ubiquitin-related modifier 1 homolog	w
+UBIQUITIN-RELATED	fly	FBgn0264922	Sumo	O97102	115	429	Small ubiquitin-related modifier (SUMO)	w
 UBIQUITIN-RELATED	human	G2XKQ0	SUMO1P1	G2XKQ0	23	95	Small ubiquitin-related modifier 5 (SUMO-5) (SUMO1 pseudogen	w
 UBIQUITIN-RELATED	human	P55854	SUMO3	P55854	67	310	Small ubiquitin-related modifier 3 (SUMO-3) (SMT3 homolog 1)	w
 UBIQUITIN-RELATED	human	P61956	SUMO2	P61956	134	714	Small ubiquitin-related modifier 2 (SUMO-2) (HSMT3) (SMT3 ho	w
@@ -1637,7 +1637,7 @@ UBIQUITIN-RELATED	zebrafish	F2Z4T6	urm1	F2Z4T6	2	14	Ubiquitin-related modifier 1
 UBIQUITIN-RELATED	zebrafish	Q6DHL4	sumo2	Q6DHL4	35	131	Small ubiquitin-related modifier 2	w
 UBIQUITIN-RELATED	zebrafish	Q6NV25	sumo3l	Q6NV25	34	111	Small ubiquitin-related modifier 3-like	w
 UBIQUITIN-RELATED	zebrafish	Q7SZR5	sumo1	Q7SZR5	40	163	Small ubiquitin-related modifier 1	w
-UBIQUITIN-RIBOSOMAL	fly	FBgn0003941	RpL40	P18101	16	136	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) [Cle	w
+UBIQUITIN-RIBOSOMAL	fly	FBgn0003941	RpL40	P18101	63	219	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) [Cle	w
 UBIQUITIN-RIBOSOMAL	fly	FBgn0003942	RpS27A	P15357	102	830	Ubiquitin-ribosomal protein eS31 fusion protein [Cleaved int	w
 UBIQUITIN-RIBOSOMAL	human	P62979	RPS27A	P62979	295	3241	Ubiquitin-ribosomal protein eS31 fusion protein (Ubiquitin c	w
 UBIQUITIN-RIBOSOMAL	human	P62987	UBA52	P62987	307	4128	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) (Ubi	w
@@ -1645,10 +1645,10 @@ UBIQUITIN-RIBOSOMAL	zebrafish	Q3B7P7	uba52	Q3B7P7	108	1037	Ubiquitin-ribosomal p
 UBIQUITIN-RIBOSOMAL	zebrafish	Q7SXA3	rps27a	Q7SXA3	140	1114	Ubiquitin-ribosomal protein eS31 fusion protein	w
 UBIQUITIN-SP	human	O75604	USP2	O75604	26	277	Ubiquitin carboxyl-terminal hydrolase 2 (EC 3.4.19.12) (41 k	w
 UBIQUITIN-SP	human	Q86UV5	USP48	Q86UV5	12	250	Ubiquitin carboxyl-terminal hydrolase 48 (EC 3.4.19.12) (Deu	w
-UBIQUITIN-SPE	fly	FBgn0029819	Usp30	Q9W462	8	53	Ubiquitin carboxyl-terminal hydrolase 30 homolog (dUSP30) (E	w
+UBIQUITIN-SPE	fly	FBgn0029819	Usp30	Q9W462	9	54	Ubiquitin carboxyl-terminal hydrolase 30 homolog (dUSP30) (E	w
 UBIQUITIN-SPEC	human	P40818	USP8	P40818	49	225	Ubiquitin carboxyl-terminal hydrolase 8 (EC 3.4.19.12) (Deub	w
 UBIQUITIN-SPECIFI	human	P35125	USP6	P35125	12	133	Ubiquitin carboxyl-terminal hydrolase 6 (EC 3.4.19.12) (Deub	w
-UBIQUITIN-SPECIFIC	fly	FBgn0039025	Usp12-46	Q9VCT9	4	32	RE52890p (Ubiquitin-specific protease 12/46 (EC 3.4.22.-))	w
+UBIQUITIN-SPECIFIC	fly	FBgn0039025	Usp12-46	Q9VCT9	4	33	RE52890p (Ubiquitin-specific protease 12/46 (EC 3.4.22.-))	w
 UBIQUITIN-SPECIFIC	human	O75604	USP2	O75604	26	277	Ubiquitin carboxyl-terminal hydrolase 2 (EC 3.4.19.12) (41 k	w
 UBIQUITIN-SPECIFIC	human	Q5W0Q7	USPL1	Q5W0Q7	102	543	SUMO-specific isopeptidase USPL1 (EC 3.4.22.-) (Ubiquitin-sp	w
 UBIQUITIN-SPECIFIC	human	Q70EK8	USP53	Q70EK8	29	196	Ubiquitin carboxyl-terminal hydrolase 53 (EC 3.4.19.12) (Ubi	w
@@ -1659,9 +1659,9 @@ UBIQUITIN-SPECIFIC	human	Q92995	USP13	Q92995	10	172	Ubiquitin carboxyl-terminal 
 UBIQUITIN-SPECIFIC	human	Q93009	USP7	Q93009	94	896	Ubiquitin C-terminal hydrolase 7 (EC 3.4.19.12) (Deubiquitin	w
 UBIQUITIN-SPECIFIC	zebrafish	E7EYZ1	usp18	E7EYZ1	10	41	Ubiquitin-specific peptidase 18	w
 UBIQUITIN-SPECIFIC-PROC	human	Q9UHP3	USP25	Q9UHP3	27	230	Ubiquitin carboxyl-terminal hydrolase 25 (EC 3.4.19.12) (Deu	w
-UBIQUITIN-SPECIFIC-PROCESSIN	fly	FBgn0260936	scny	Q9VRP5	7	46	Ubiquitin carboxyl-terminal hydrolase 36 (EC 3.4.19.12) (Deu	w
+UBIQUITIN-SPECIFIC-PROCESSIN	fly	FBgn0260936	scny	Q9VRP5	8	46	Ubiquitin carboxyl-terminal hydrolase 36 (EC 3.4.19.12) (Deu	w
 UBIQUITIN-SPECIFIC-PROCESSING	fly	FBgn0005632	faf	P55824	0	19	Probable ubiquitin carboxyl-terminal hydrolase FAF (EC 3.4.1	w
-UBIQUITIN-SPECIFIC-PROCESSING	fly	FBgn0013717	not	Q9VVR1	13	70	Ubiquitin carboxyl-terminal hydrolase nonstop (EC 3.4.19.12)	w
+UBIQUITIN-SPECIFIC-PROCESSING	fly	FBgn0013717	not	Q9VVR1	20	72	Ubiquitin carboxyl-terminal hydrolase nonstop (EC 3.4.19.12)	w
 UBIQUITIN-SPECIFIC-PROCESSING	fly	FBgn0016756	Usp47	Q24574	1	13	Ubiquitin carboxyl-terminal hydrolase 47 (EC 3.4.19.12) (Ubi	w
 UBIQUITIN-SPECIFIC-PROCESSING	fly	FBgn0030366	Usp7	Q9VYQ8	17	82	Ubiquitin carboxyl-terminal hydrolase 7 (EC 3.4.19.12) (Ubiq	w
 UBIQUITIN-SPECIFIC-PROCESSING	fly	FBgn0032214	CG4968	Q9VL00	22	50	Ubiquitin thioesterase otubain-like (EC 3.4.19.12) (Ubiquiti	w
@@ -1699,15 +1699,15 @@ UBIQUITIN-SPECIFIC-PROCESSING	human	Q9UPU5	USP24	Q9UPU5	7	108	Ubiquitin carboxyl
 UBIQUITIN-SPECIFIC-PROCESSING	human	Q9Y2K6	USP20	Q9Y2K6	38	271	Ubiquitin carboxyl-terminal hydrolase 20 (EC 3.4.19.12) (Deu	w
 UBIQUITIN-SPECIFIC-PROCESSING	human	Q9Y4E8	USP15	Q9Y4E8	33	546	Ubiquitin carboxyl-terminal hydrolase 15 (EC 3.4.19.12) (Deu	w
 UBIQUITIN-SPECIFIC-PROCESSING	human	Q9Y6I4	USP3	Q9Y6I4	15	181	Ubiquitin carboxyl-terminal hydrolase 3 (EC 3.4.19.12) (Deub	w
-UBIQUITINATION	fly	FBgn0029006	Smurf	Q9V853	19	72	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
+UBIQUITINATION	fly	FBgn0029006	Smurf	Q9V853	25	90	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
 UBIQUITINATION	fly	FBgn0032467	Ube4B	Q9VK44	5	36	LD24832p (Ubiquitination factor E4B, isoform A) (Ubiquitinat	w
 UBIQUITINATION	human	Q9HAU4	SMURF2	Q9HAU4	55	400	E3 ubiquitin-protein ligase SMURF2 (hSMURF2) (EC 2.3.2.26) (	w
 UBIQUITINATION	human	Q9HCE7	SMURF1	Q9HCE7	59	672	E3 ubiquitin-protein ligase SMURF1 (hSMURF1) (EC 2.3.2.26) (	w
 UBIQUITINATION	human	Q9UPX6	MINAR1	Q9UPX6	2	20	Major intrinsically disordered Notch2-binding receptor 1 (Me	w
 UBIQUITINATION-P	human	Q9BSL1	UBAC1	Q9BSL1	11	141	Ubiquitin-associated domain-containing protein 1 (UBA domain	w
 UBIQUITINATION-PROMOTING	human	Q5XPI4	RNF123	Q5XPI4	65	773	E3 ubiquitin-protein ligase RNF123 (EC 2.3.2.27) (Kip1 ubiqu	w
-UBIQUITINYL	fly	FBgn0030969	Usp39	Q9VWP1	2	56	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	w
-UBIQUITINYL	fly	FBgn0032210	CYLD	Q8IPC5	6	32	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	w
+UBIQUITINYL	fly	FBgn0030969	Usp39	Q9VWP1	3	57	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	w
+UBIQUITINYL	fly	FBgn0032210	CYLD	Q8IPC5	7	32	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	w
 UBIQUITINYL	fly	FBgn0036180	Duba	Q9VTK7	5	10	ubiquitinyl hydrolase 1 (EC 3.4.19.12) (Deubiquitinating enz	w
 UBIQUITINYL	fly	FBgn0050421	Usp15-31	Q9W117	2	44	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	w
 UBIQUITINYL	fly	FBgn0052479	Usp10	Q9W0L7	9	81	ubiquitinyl hydrolase 1 (EC 3.4.19.12)	w
@@ -1728,9 +1728,9 @@ UBIQUITINYL	zebrafish	E7FD00	usp43b	E7FD00	7	70	ubiquitinyl hydrolase 1	w
 UBIQUITINYL	zebrafish	F1QPN8	otud5b	F1QPN8	7	14	ubiquitinyl hydrolase 1	w
 UBIQUITINYL	zebrafish	F1QY38	usp42	F1QY38	0	4	ubiquitinyl hydrolase 1	w
 UBIQUITINYL	zebrafish	X1WEZ5	otud7a	X1WEZ5	3	12	ubiquitinyl hydrolase 1	w
-UBIQUITOUS	fly	FBgn0036760	CG5567	Q9VVL5	2	7	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	w
-UBIQUITOUS	fly	FBgn0052487	CG32487	Q9VZW4	0	1	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	w
-UBIQUITOUS	fly	FBgn0052488	CG32488	Q8SXC9	0	1	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	w
+UBIQUITOUS	fly	FBgn0036760	CG5567	Q9VVL5	2	9	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	w
+UBIQUITOUS	fly	FBgn0052487	CG32487	Q9VZW4	2	4	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	w
+UBIQUITOUS	fly	FBgn0052488	CG32488	Q8SXC9	2	5	Glycerol-3-phosphate phosphatase (EC 3.1.3.21) (EC 3.1.3.48)	w
 UBIQUITOUS	human	A6NDG6	PGP	A6NDG6	5	79	Phosphoglycolate phosphatase (EC 3.1.3.18) (Aspartate-based 	w
 UBIQUITOUS	human	O75840	KLF7	O75840	25	346	Krueppel-like factor 7 (Ubiquitous krueppel-like factor)	w
 UBIQUITOUS	human	P12532	CKMT1A	P12532	15	167	Creatine kinase U-type, mitochondrial (EC 2.7.3.2) (Acidic-t	w
@@ -1744,7 +1744,7 @@ UBIQUITOUS	human	Q9NYL9	TMOD3	Q9NYL9	19	331	Tropomodulin-3 (Ubiquitous tropomodu
 UBIQUITOUS	human	Q9UHJ3	SFMBT1	Q9UHJ3	17	117	Scm-like with four MBT domains protein 1 (hSFMBT) (Renal ubi	w
 UBIQUITOUS	human	Q9Y679	AUP1	Q9Y679	22	256	Lipid droplet-regulating VLDL assembly factor AUP1 (Ancient 	w
 UBIQUITOUSLY	fly	FBgn0027609	morgue	Q9Y165	14	81	BcDNA.GH02435 (F box/ubiquitin conjugase) (Modifier of rpr a	w
-UBIQUITOUSLY	fly	FBgn0032330	Samuel	Q9VKL0	5	78	SAM-motif ubiquitously expressed punctatedly localized prote	w
+UBIQUITOUSLY	fly	FBgn0032330	Samuel	Q9VKL0	6	80	SAM-motif ubiquitously expressed punctatedly localized prote	w
 UBIQUITOUSLY	human	Q9NPG3	UBN1	Q9NPG3	38	144	Ubinuclein-1 (HIRA-binding protein) (Protein VT4) (Ubiquitou	w
 UBIQUITOUSLY	human	Q9UBK9	UXT	Q9UBK9	26	270	Protein UXT (Androgen receptor trapped clone 27 protein) (AR	w
 UBIQUITOUSLY-EXPRESSED	human	P55055	NR1H2	P55055	148	550	Oxysterols receptor LXR-beta (Liver X receptor beta) (Nuclea	w

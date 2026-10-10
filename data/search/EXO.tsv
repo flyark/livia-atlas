@@ -29,8 +29,8 @@ EXO5	zebrafish	F1Q514	exo5	F1Q514	0	3	Exonuclease V
 EXO5_HUMAN	human	Q9H790	EXO5	Q9H790	9	40		
 EXO70	candida-albicans-237561	Q5AH25	EXO70	Q5AH25	5	23	Exocyst complex protein EXO70	
 EXO70	cladophialophora-carrionii	A0A1C1CHV0	exo70	A0A1C1CHV0	11	57	Exocyst complex protein EXO70	
-EXO70	fly	FBgn0266667	Exo70	Q9VSJ8	21	120	Exocyst complex component 7 (Exocyst complex component Exo70	w
-EXO70	fly	FBgn0266667	Exo70	Q9VSJ8	21	120	Exocyst complex component 7 (Exocyst complex component Exo70	w
+EXO70	fly	FBgn0266667	Exo70	Q9VSJ8	22	120	Exocyst complex component 7 (Exocyst complex component Exo70	w
+EXO70	fly	FBgn0266667	Exo70	Q9VSJ8	22	120	Exocyst complex component 7 (Exocyst complex component Exo70	w
 EXO70	human	Q9UPT5	EXOC7	Q9UPT5	29	218		
 EXO70	schizosaccharomyces-pombe	Q10339	exo70	Q10339	3	33	Exocyst complex component exo70	
 EXO70	yeast	P19658	EXO70	P19658	8	44	Exocyst complex component EXO70	
@@ -57,7 +57,7 @@ EXO70H5	arabidopsis-thaliana	F4IIS8	EXO70H5	F4IIS8	3	44	Exocyst subunit Exo70 fa
 EXO70H6	arabidopsis-thaliana	Q9LQP9	EXO70H6	Q9LQP9	2	45	Exocyst subunit Exo70 family protein	
 EXO70H7	arabidopsis-thaliana	Q9FN91	EXO70H7	Q9FN91	0	51	Exocyst subunit Exo70 family protein	
 EXO70H8	arabidopsis-thaliana	Q9SIB0	EXO70H8	Q9SIB0	3	43	Exocyst subunit Exo70 family protein	
-EXO70_236	fly	FBgn0266667	Exo70	Q9VSJ8	21	120		
+EXO70_236	fly	FBgn0266667	Exo70	Q9VSJ8	22	120		
 EXO84	candida-albicans-237561	Q59XM1	EXO84	Q59XM1	6	24	Exocyst complex component EXO84	
 EXO84	cladophialophora-carrionii	A0A1C1C7V1	exo84	A0A1C1C7V1	7	31	Exocyst complex component EXO84	
 EXO84	fly	FBgn0290418	Exo84	Q8SWU0	14	65	Exocyst 84	
@@ -139,13 +139,13 @@ EXOC8	rattus-norvegicus	O54924	Exoc8	O54924	13	42	Exocyst complex component 8
 EXOC8_HUMAN	human	Q8IYI6	EXOC8	Q8IYI6	37	243		
 EXOCRINE	human	Q8WWR9	PPDPFL	Q8WWR9	7	50	Pancreatic progenitor cell differentiation and proliferation	w
 EXOCRINE	human	Q9H3Y8	PPDPF	Q9H3Y8	10	68	Pancreatic progenitor cell differentiation and proliferation	w
-EXOCYST	fly	FBgn0266667	Exo70	Q9VSJ8	21	120	Exocyst complex component 7 (Exocyst complex component Exo70	w
-EXOCYST	fly	FBgn0266669	Sec3	Q9VVG4	11	52	Exocyst complex component 1 (Exocyst complex component Sec3)	w
+EXOCYST	fly	FBgn0266667	Exo70	Q9VSJ8	22	120	Exocyst complex component 7 (Exocyst complex component Exo70	w
+EXOCYST	fly	FBgn0266669	Sec3	Q9VVG4	12	52	Exocyst complex component 1 (Exocyst complex component Sec3)	w
 EXOCYST	fly	FBgn0266670	Sec5	Q9VQQ9	16	91	Exocyst complex component 2 (Exocyst complex component Sec5)	w
-EXOCYST	fly	FBgn0266671	Sec6	Q9V8K2	10	85	Exocyst complex component 3 (Exocyst complex component Sec6)	w
-EXOCYST	fly	FBgn0266672	Sec8	Q9VNH6	14	77	Exocyst complex component 4 (Exocyst complex component Sec8)	w
-EXOCYST	fly	FBgn0266673	Sec10	Q9XTM1	17	97	Exocyst complex component 5 (Exocyst complex component Sec10	w
-EXOCYST	fly	FBgn0266674	Sec15	Q9VDE6	18	60	Exocyst complex component 6 (Exocyst complex component Sec15	w
+EXOCYST	fly	FBgn0266671	Sec6	Q9V8K2	12	85	Exocyst complex component 3 (Exocyst complex component Sec6)	w
+EXOCYST	fly	FBgn0266672	Sec8	Q9VNH6	16	77	Exocyst complex component 4 (Exocyst complex component Sec8)	w
+EXOCYST	fly	FBgn0266673	Sec10	Q9XTM1	20	97	Exocyst complex component 5 (Exocyst complex component Sec10	w
+EXOCYST	fly	FBgn0266674	Sec15	Q9VDE6	18	61	Exocyst complex component 6 (Exocyst complex component Sec15	w
 EXOCYST	fly	FBgn0290418	Exo84	Q8SWU0	14	65	Exocyst 84	w
 EXOCYST	human	A0A1B0GW35	EXOC1L	A0A1B0GW35	19	166	Exocyst complex component 1-like	w
 EXOCYST	human	O00471	EXOC5	O00471	35	226	Exocyst complex component 5 (Exocyst complex component Sec10	w
@@ -193,9 +193,9 @@ EXOCYTOSIS	zebrafish	A0A8M9PNB2	rims2a	A0A8M9PNB2	0	30	Regulating synaptic membr
 EXOCYTOSIS	zebrafish	A5PMY1	rims3	A5PMY1	0	9	Regulating synaptic membrane exocytosis 3	w
 EXOCYTOSIS	zebrafish	E7F2S0	rims4	E7F2S0	0	9	Regulating synaptic membrane exocytosis 4	w
 EXOD1	human	A8K979	ERI2	A8K979	7	35		
-EXODEOXYRIBONUCLEASE	fly	FBgn0004406	PolG1	Q27607	2	57	DNA polymerase subunit gamma-1, mitochondrial (EC 2.7.7.7) (	w
+EXODEOXYRIBONUCLEASE	fly	FBgn0004406	PolG1	Q27607	3	57	DNA polymerase subunit gamma-1, mitochondrial (EC 2.7.7.7) (	w
 EXODEOXYRIBONUCLEASE	fly	FBgn0259113	PolA1	P26019	15	79	DNA polymerase alpha catalytic subunit (EC 2.7.7.7) (3'-5' e	w
-EXODEOXYRIBONUCLEASE	fly	FBgn0263600	PolD1	P54358	6	87	DNA polymerase delta catalytic subunit (EC 2.7.7.7) (3'-5' e	w
+EXODEOXYRIBONUCLEASE	fly	FBgn0263600	PolD1	P54358	7	92	DNA polymerase delta catalytic subunit (EC 2.7.7.7) (3'-5' e	w
 EXODEOXYRIBONUCLEASE	fly	FBgn0264326	PolE1	Q9VCN1	2	9	DNA polymerase epsilon catalytic subunit 1 (EC 2.7.7.7) (3'-	w
 EXODEOXYRIBONUCLEASE	human	P28340	POLD1	P28340	22	613	DNA polymerase delta catalytic subunit (EC 2.7.7.7) (3'-5' e	w
 EXODEOXYRIBONUCLEASE	human	P54098	POLG	P54098	13	155	DNA polymerase subunit gamma-1 (EC 2.7.7.7) (3'-5' exodeoxyr	w
@@ -222,7 +222,7 @@ EXON	virus	A0A2Z5E1E0		A0A2Z5E1E0	3	55	U exon	w
 EXON	virus	A8W995		A8W995	1	31	U exon protein	w
 EXON	virus	P0DJX2		P0DJX2	2	45	U exon protein	w
 EXON	virus	Q9IIG7		Q9IIG7	0	23	U exon	w
-EXONUCLEASE	fly	FBgn0015553	tos	Q24558	7	97	Exonuclease 1 (EC 3.1.-.-) (Exonuclease I) (Protein tosca)	w
+EXONUCLEASE	fly	FBgn0015553	tos	Q24558	13	103	Exonuclease 1 (EC 3.1.-.-) (Exonuclease I) (Protein tosca)	w
 EXONUCLEASE	fly	FBgn0032924	Nbr	Q9VIF1	4	65	Exonuclease mut-7 homolog (EC 3.1.-.-) (Exonuclease 3'-5' do	w
 EXONUCLEASE	fly	FBgn0036330	CG11263	Q9VU31	0	5	Protein Exd1 homolog (DmExd1) (Exonuclease 3'-5' domain-cont	w
 EXONUCLEASE	fly	FBgn0036405	CG6833	Q9VUC3	3	20	RNA exonuclease 4	w
@@ -325,8 +325,8 @@ EXOPOLYPHOSPHATASE	human	Q86TP1	PRUNE1	Q86TP1	6	80	Exopolyphosphatase PRUNE1 (EC
 EXOPOLYPHOSPHATASE	zebrafish	E7F6P6	prune	E7F6P6	0	16	Exopolyphosphatase PRUNE1	w
 EXORIBONUCLEASE	fly	FBgn0020261	pcm	E1JJR3	11	111	5'-3' exoribonuclease 1 (EC 3.1.13.-)	w
 EXORIBONUCLEASE	fly	FBgn0030793	Rai1	Q9VXA8	1	10	Decapping and exoribonuclease protein Rai1 (DXO) (EC 3.1.13.	w
-EXORIBONUCLEASE	fly	FBgn0031868	Rat1	Q9VM71	0	45	5'-3' exoribonuclease 2 homolog (EC 3.1.13.-) (Ribonucleic a	w
-EXORIBONUCLEASE	fly	FBgn0035111	Dis3l2	Q8IRJ7	13	89	Dis3 like 3'-5' exoribonuclease 2, isoform C (EC 3.1.13.-) (	w
+EXORIBONUCLEASE	fly	FBgn0031868	Rat1	Q9VM71	2	61	5'-3' exoribonuclease 2 homolog (EC 3.1.13.-) (Ribonucleic a	w
+EXORIBONUCLEASE	fly	FBgn0035111	Dis3l2	Q8IRJ7	15	90	Dis3 like 3'-5' exoribonuclease 2, isoform C (EC 3.1.13.-) (	w
 EXORIBONUCLEASE	fly	FBgn0265192	Snp	Q95RQ4	5	33	3'-5' exonuclease Snipper (EC 3.1.15.-) (ERI1 exoribonucleas	w
 EXORIBONUCLEASE	human	A8K979	ERI2	A8K979	7	35	ERI1 exoribonuclease 2 (EC 3.1.-.-) (Exonuclease domain-cont	w
 EXORIBONUCLEASE	human	O43414	ERI3	O43414	15	108	ERI1 exoribonuclease 3 (EC 3.1.-.-) (Prion interactor 1) (Pr	w
@@ -372,7 +372,7 @@ EXOSC1	mus-musculus	Q9DAA6	Exosc1	Q9DAA6	6	104	Exosome complex component CSL4
 EXOSC1	rattus-norvegicus	M0RDC9	Exosc1	M0RDC9	4	146	Exosome complex component CSL4	
 EXOSC1	zebrafish	B8A4H5	exosc1	B8A4H5	4	109	Exosome complex component CSL4	
 EXOSC10	dictyostelium-discoideum	Q55AW0	exosc10	Q55AW0	7	111	3-5 exonuclease	
-EXOSC10	fly	FBgn0038269	Rrp6	Q9VFF3	26	190	Exosome complex component 10 homolog (RRP6/EXOSC10) (EC 3.1.	w
+EXOSC10	fly	FBgn0038269	Rrp6	Q9VFF3	37	196	Exosome complex component 10 homolog (RRP6/EXOSC10) (EC 3.1.	w
 EXOSC10	human	Q01780	EXOSC10	Q01780	64	484	Exosome complex component 10 (EC 3.1.13.-) (Autoantigen PM/S	
 EXOSC10	mus-musculus	P56960	Exosc10	P56960	29	178	Exosome complex component 10	
 EXOSC10	rattus-norvegicus	D4A1X2	Exosc10	D4A1X2	46	285	Exosome complex component 10	
@@ -410,9 +410,9 @@ EXOSC9	mus-musculus	Q9JHI7	Exosc9	Q9JHI7	8	108	Exosome complex component RRP45
 EXOSC9	rattus-norvegicus	Q4QR75	Exosc9	Q4QR75	7	130	Exosome complex component RRP45	
 EXOSC9	zebrafish	Q5XJQ5	exosc9	Q5XJQ5	7	116	Exosome complex component RRP45	
 EXOSOMAL	human	Q9NYP8	EPCIP	Q9NYP8	6	54	Exosomal polycystin-1-interacting protein (B37) (Polycystin-	w
-EXOSOME	fly	FBgn0030789	Rrp45	Q8T4A9	19	149	Exosome complex component RRP45 (Exosome component 9)	w
-EXOSOME	fly	FBgn0038269	Rrp6	Q9VFF3	26	190	Exosome complex component 10 homolog (RRP6/EXOSC10) (EC 3.1.	w
-EXOSOME	fly	FBgn0260648	Rrp40	Q8IPX7	9	114	Exosome complex component RRP40 (Ribosomal RNA-processing pr	w
+EXOSOME	fly	FBgn0030789	Rrp45	Q8T4A9	24	149	Exosome complex component RRP45 (Exosome component 9)	w
+EXOSOME	fly	FBgn0038269	Rrp6	Q9VFF3	37	196	Exosome complex component 10 homolog (RRP6/EXOSC10) (EC 3.1.	w
+EXOSOME	fly	FBgn0260648	Rrp40	Q8IPX7	10	115	Exosome complex component RRP40 (Ribosomal RNA-processing pr	w
 EXOSOME	human	P42285	MTREX	P42285	46	758	Exosome RNA helicase MTR4 (EC 3.6.4.13) (ATP-dependent RNA h	w
 EXOSOME	human	Q01780	EXOSC10	Q01780	64	484	Exosome complex component 10 (EC 3.1.13.-) (Autoantigen PM/S	w
 EXOSOME	human	Q06265	EXOSC9	Q06265	25	343	Exosome complex component RRP45 (Autoantigen PM/Scl 1) (Exos	w
@@ -466,10 +466,10 @@ EXOSTOSIN-1	worm	O01704	rib-1	O01704	1	11	Exostosin-1 homolog	w
 EXOSTOSIN-1A	zebrafish	Q5IGR8	ext1a	Q5IGR8	2	10	Exostosin-1a	w
 EXOSTOSIN-1B	zebrafish	Q5IGR7	ext1b	Q5IGR7	2	10	Exostosin-1b	w
 EXOSTOSIN-1C	zebrafish	Q5IGR6	ext1c	Q5IGR6	2	10	Exostosin-1c	w
-EXOSTOSIN-2	fly	FBgn0029175	sotv	Q9Y169	410	2397	Exostosin-2 (EC 2.4.1.224) (EC 2.4.1.225) (Protein sister of	w
+EXOSTOSIN-2	fly	FBgn0029175	sotv	Q9Y169	410	2399	Exostosin-2 (EC 2.4.1.224) (EC 2.4.1.225) (Protein sister of	w
 EXOSTOSIN-2	human	Q93063	EXT2	Q93063	14	149	Exostosin-2 (EC 2.4.1.224) (Exostosin glycosyltransferase 2)	w
 EXOSTOSIN-2	zebrafish	A0A8M1N3H0	ext2	A0A8M1N3H0	3	4	Exostosin-2	w
-EXOSTOSIN-3	fly	FBgn0027535	botv	Q9XZ08	58	2378	Exostosin-3 (EC 2.4.1.223) (Protein brother of tout-velu)	w
+EXOSTOSIN-3	fly	FBgn0027535	botv	Q9XZ08	58	2379	Exostosin-3 (EC 2.4.1.223) (Protein brother of tout-velu)	w
 EXOSTOSIN-L	human	Q92935	EXTL1	Q92935	5	56	Exostosin-like 1 (EC 2.4.1.224) (Exostosin-L) (Glucuronosyl-	w
 EXOSTOSIN-LIKE	human	O43909	EXTL3	O43909	12	138	Exostosin-like 3 (EC 2.4.1.223) (EXT-related protein 1) (Glu	w
 EXOSTOSIN-LIKE	human	Q92935	EXTL1	Q92935	5	56	Exostosin-like 1 (EC 2.4.1.224) (Exostosin-L) (Glucuronosyl-	w

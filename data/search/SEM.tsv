@@ -4,8 +4,8 @@ SEM-4	worm	G5EFF4	sem-4	G5EFF4	2	64	Spalt-like protein sem-4	w
 SEM-4	worm	G5EFF4	sem-4	G5EFF4	2	64	Spalt-like protein sem-4	w
 SEM-5	worm	P29355	sem-5	P29355	17	198	Sex muscle abnormal protein 5	
 SEM1	candida-albicans-237561	A0A1D8PMQ0	SEM1	A0A1D8PMQ0	6	51	26S proteasome complex subunit SEM1	
-SEM1	fly	FBgn0266666	Sem1	Q9VM46	15	137	Probable 26S proteasome complex subunit sem1	w
-SEM1	fly	FBgn0266666	Sem1	Q9VM46	15	137	Probable 26S proteasome complex subunit sem1	w
+SEM1	fly	FBgn0266666	Sem1	Q9VM46	31	143	Probable 26S proteasome complex subunit sem1	w
+SEM1	fly	FBgn0266666	Sem1	Q9VM46	31	143	Probable 26S proteasome complex subunit sem1	w
 SEM1	human	P60896	SEM1	P60896	44	588	26S proteasome complex subunit SEM1 (26S proteasome complex 	
 SEM1	human	Q6ZVN7	SEM1	Q6ZVN7	19	228	Putative protein SEM1, isoform 2	
 SEM1	mus-musculus	P60897	Sem1	P60897	8	104	26S proteasome complex subunit SEM1	
@@ -258,7 +258,7 @@ SEMG1	mus-musculus	Q8BS30	Semg1	Q8BS30	0	6	Semenogelin 1
 SEMG1_HUMAN	human	P04279	SEMG1	P04279	21	188		
 SEMG2	human	Q02383	SEMG2	Q02383	10	89	Semenogelin-2 (Semenogelin II) (SGII)	
 SEMG2_HUMAN	human	Q02383	SEMG2	Q02383	10	89		
-SEMIALDEHYDE	fly	FBgn0052099	CG32099	Q8SXB3	0	8	L-aminoadipate-semialdehyde dehydrogenase-phosphopantetheiny	w
+SEMIALDEHYDE	fly	FBgn0052099	CG32099	Q8SXB3	1	10	L-aminoadipate-semialdehyde dehydrogenase-phosphopantetheiny	w
 SEMIALDEHYDE	human	O43488	AKR7A2	O43488	14	131	Aflatoxin B1 aldehyde reductase member 2 (EC 1.1.1.n11) (AFB	w
 SEMIALDEHYDE	human	P49419	ALDH7A1	P49419	9	170	Alpha-aminoadipic semialdehyde dehydrogenase (Alpha-AASA deh	w
 SEMIALDEHYDE	human	P51649	ALDH5A1	P51649	17	113	Succinate-semialdehyde dehydrogenase, mitochondrial (EC 1.2.	w
@@ -270,15 +270,15 @@ SEMIALDEHYDE	zebrafish	E7FD66	aass	E7FD66	1	12	Alpha-aminoadipic semialdehyde sy
 SEMIALDEHYDE	zebrafish	Q66I21	aldh8a1	Q66I21	0	1	2-aminomuconic semialdehyde dehydrogenase	w
 SEMICARBAZIDE-SENSITIVE	human	O75106	AOC2	O75106	6	122	Amine oxidase [copper-containing] 2 (EC 1.4.3.21) (Amine oxi	w
 SEMICARBAZIDE-SENSITIVE	human	Q16853	AOC3	Q16853	11	423	Amine oxidase [copper-containing] 3 (EC 1.4.3.21) (Amine oxi	w
-SEMINAL	fly	FBgn0028944	Semp1	Q9VJN9	27	245	Seminal metalloprotease 1 (EC 3.4.24.-)	w
-SEMINAL	fly	FBgn0030259	CG1545	Q9VZ39	41	243	Seminal fluid protein	w
+SEMINAL	fly	FBgn0028944	Semp1	Q9VJN9	27	246	Seminal metalloprotease 1 (EC 3.4.24.-)	w
+SEMINAL	fly	FBgn0030259	CG1545	Q9VZ39	43	245	Seminal fluid protein	w
 SEMINAL	fly	FBgn0033703	CG13170	A1Z8V3	37	245	Seminal fluid protein	w
 SEMINAL	fly	FBgn0034737	CG11362	Q9W242	28	245	Seminal fluid protein	w
 SEMINAL	fly	FBgn0053710	CG33710	Q4ABJ9	1	1	Seminal fluid protein	w
 SEMINAL	fly	FBgn0085320	CG34291	A8JRD6	29	244	Seminal fluid protein	w
-SEMINAL	fly	FBgn0259949	Sfp23F	B4ZJ89	37	256	Seminal fluid protein 23F	w
+SEMINAL	fly	FBgn0259949	Sfp23F	B4ZJ89	38	257	Seminal fluid protein 23F	w
 SEMINAL	fly	FBgn0259951	Sfp24Ba	B9EQU3	38	256	GEO10356p1 (MIP01406p) (MIP10950p) (Seminal fluid protein 24	w
-SEMINAL	fly	FBgn0259952	Sfp24Bb	B4ZJ91	15	256	Seminal fluid protein 24Bb	w
+SEMINAL	fly	FBgn0259952	Sfp24Bb	B4ZJ91	16	257	Seminal fluid protein 24Bb	w
 SEMINAL	fly	FBgn0259953	Sfp24Bd	E1JHS1	27	243	Seminal fluid protein 24Bd	w
 SEMINAL	fly	FBgn0259956	Sfp24C1	E1JHS6	38	256	Seminal fluid protein 24C1	w
 SEMINAL	fly	FBgn0259957	CG42467	E1JHS7	30	243	Seminal fluid protein	w
@@ -290,29 +290,29 @@ SEMINAL	fly	FBgn0259962	Sfp33A1	E1JHF8	36	253	Seminal fluid protein 33A1	w
 SEMINAL	fly	FBgn0259963	Sfp33A2	C9QPH0	31	256	GEO11785p1 (RT03116p) (Seminal fluid protein 33A2)	w
 SEMINAL	fly	FBgn0259964	Sfp33A3	E1JHG2	48	256	GEO13384p1 (Seminal fluid protein 33A3)	w
 SEMINAL	fly	FBgn0259965	Sfp35C	D1Z365	38	257	RT04067p (Seminal fluid protein 35C, isoform A) (Seminal flu	w
-SEMINAL	fly	FBgn0259966	Sfp51E	B4ZJ99	36	256	Seminal fluid protein 51E	w
-SEMINAL	fly	FBgn0259967	Sfp53D	Q6IGA5	34	243	GEO11767p1 (HDC06796) (RT03201p) (Seminal fluid protein 53D)	w
+SEMINAL	fly	FBgn0259966	Sfp51E	B4ZJ99	36	257	Seminal fluid protein 51E	w
+SEMINAL	fly	FBgn0259967	Sfp53D	Q6IGA5	34	244	GEO11767p1 (HDC06796) (RT03201p) (Seminal fluid protein 53D)	w
 SEMINAL	fly	FBgn0259968	Sfp60F	E1JGX1	18	259	Seminal fluid protein 60F, isoform A	w
 SEMINAL	fly	FBgn0259969	Sfp65A	B4ZJA2	18	256	RT03039p (Seminal fluid protein 65A)	w
 SEMINAL	fly	FBgn0259970	Sfp70A4	B4ZJA3	47	256	GEO11768p1 (RT03208p) (Seminal fluid protein 70A4) (Seminal 	w
 SEMINAL	fly	FBgn0259972	Sfp77F	B4ZJA4	25	256	GEO11793p1 (RT04080p) (Seminal fluid protein 77F) (Seminal f	w
 SEMINAL	fly	FBgn0259973	Sfp79B	B4ZJA5	47	255	GEO11741p1 (RT02906p) (Seminal fluid protein 79)	w
 SEMINAL	fly	FBgn0259974	Sfp84E	E1JJ84	7	247	Seminal fluid protein 84E	w
-SEMINAL	fly	FBgn0259975	Sfp87B	B4ZJA7	16	253	GEO13347p1 (Seminal fluid protein 87B)	w
+SEMINAL	fly	FBgn0259975	Sfp87B	B4ZJA7	17	254	GEO13347p1 (Seminal fluid protein 87B)	w
 SEMINAL	fly	FBgn0261054	Sfp24Bc	C4NAN9	21	256	Seminal fluid protein 24Bc	w
-SEMINAL	fly	FBgn0261055	Sfp26Ad	Q6IHT7	19	255	HDC01001 (Seminal fluid protein 26Ad, isoform A) (Seminal fl	w
-SEMINAL	fly	FBgn0261057	Sfp36F	C4NAP2	52	256	Seminal fluid protein 36F (Seminal fluid protein 36F, isofor	w
-SEMINAL	fly	FBgn0261058	Sfp38D	C4NAP3	42	244	Seminal fluid protein 38D (Seminal fluid protein 38D, isofor	w
+SEMINAL	fly	FBgn0261055	Sfp26Ad	Q6IHT7	20	256	HDC01001 (Seminal fluid protein 26Ad, isoform A) (Seminal fl	w
+SEMINAL	fly	FBgn0261057	Sfp36F	C4NAP2	52	257	Seminal fluid protein 36F (Seminal fluid protein 36F, isofor	w
+SEMINAL	fly	FBgn0261058	Sfp38D	C4NAP3	42	247	Seminal fluid protein 38D (Seminal fluid protein 38D, isofor	w
 SEMINAL	fly	FBgn0261059	Sfp78E	M9PG65	50	244	Seminal fluid protein 78E, isoform B	w
 SEMINAL	fly	FBgn0261060	Sfp93F	E1JIS3	33	256	Seminal fluid protein 93F	w
 SEMINAL	fly	FBgn0261061	Sfp96F	C4NAP6	54	256	Seminal fluid protein 96F	w
 SEMINAL	fly	FBgn0261567	CG42681	M9MRU4	4	244	Seminal fluid protein	w
-SEMINAL	fly	FBgn0261568	CG42682	M9MRP0	31	243	Seminal fluid protein	w
+SEMINAL	fly	FBgn0261568	CG42682	M9MRP0	31	244	Seminal fluid protein	w
 SEMINAL	fly	FBgn0262003	CG42821	Q2PDQ6	29	243	Seminal fluid protein	w
 SEMINAL	fly	FBgn0262358	CG43056	M9ND23	48	244	Seminal fluid protein	w
 SEMINAL	fly	FBgn0262363	CG43061	A0A0B4K6L9	30	243	Seminal fluid protein	w
 SEMINAL	fly	FBgn0262540	CG43094	A0A0B4K7C7	28	243	Seminal fluid protein	w
-SEMINAL	fly	FBgn0262571	CG43111	A0A0B4K7X0	17	243	Seminal fluid protein	w
+SEMINAL	fly	FBgn0262571	CG43111	A0A0B4K7X0	17	245	Seminal fluid protein	w
 SEMINAL	fly	FBgn0263024	CG43319	A0A0B4K6K5	38	261	Seminal fluid protein	w
 SEMINAL	fly	FBgn0263270	CG43396	A0A0B4K6X0	0	0	Seminal fluid protein	w
 SEMINAL	fly	FBgn0264330	CG43789	A0A0B4KES8	21	243	Seminal fluid protein	w
@@ -328,9 +328,9 @@ SEMINAL	human	Q075Z2	BSPH1	Q075Z2	2	33	Binder of sperm protein homolog 1 (Bovine
 SEMINASE	fly	FBgn0037036	Sems	Q9VP95	26	251	Seminase (EC 3.4.21.-)	w
 SEMININ	human	P07288	KLK3	P07288	70	334	Prostate-specific antigen (PSA) (EC 3.4.21.77) (Gamma-semino	w
 SEML_HUMAN	human	Q6ZVN7	SEM1	Q6ZVN7	19	228		
-SEMMELWEIS	fly	FBgn0030310	PGRP-SA	Q9VYX7	28	263	Peptidoglycan-recognition protein SA (EC 3.4.17.13) (Protein	w
+SEMMELWEIS	fly	FBgn0030310	PGRP-SA	Q9VYX7	28	265	Peptidoglycan-recognition protein SA (EC 3.4.17.13) (Protein	w
 SEMO-1	worm	Q9XXF9	semo-1	Q9XXF9	0	19	Methanethiol oxidase	
-SEMP1	fly	FBgn0028944	Semp1	Q9VJN9	27	245	Seminal metalloprotease 1 (EC 3.4.24.-)	
+SEMP1	fly	FBgn0028944	Semp1	Q9VJN9	27	246	Seminal metalloprotease 1 (EC 3.4.24.-)	
 SEMP1	human	O95832	CLDN1	O95832	26	421		
 SEMP2L1	mus-musculus	E9PXF3	Semp2l1	E9PXF3	8	16	SUMO/sentrin specific peptidase 2-like 1	
 SEMP2L2A	mus-musculus	G3X9P9	Semp2l2a	G3X9P9	8	18	SUMO/sentrin specific peptidase 2-like 2A	

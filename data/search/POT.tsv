@@ -51,10 +51,10 @@ POTA2	pseudomonas-aeruginosa	Q9HY19	potA2	Q9HY19	41	73	Spermidine/putrescine imp
 POTASSI	human	P78508	KCNJ10	P78508	24	263	ATP-sensitive inward rectifier potassium channel 10 (ATP-dep	w
 POTASSI	human	Q14802	FXYD3	Q14802	13	115	FXYD domain-containing ion transport regulator 3 (Chloride c	w
 POTASSIUM	fly	FBgn0003353	sei	Q7JPB9	1	13	GH12235p (Putative potassium channel subunit homolog) (Seizu	w
-POTASSIUM	fly	FBgn0005564	Shal	P17971	10	138	Potassium voltage-gated channel protein Shal (Shaker cognate	w
+POTASSIUM	fly	FBgn0005564	Shal	P17971	11	138	Potassium voltage-gated channel protein Shal (Shaker cognate	w
 POTASSIUM	fly	FBgn0028704	Nckx30C	Q9U6A0	0	2	Sodium/potassium/calcium exchanger Nckx30C (Na(+)/K(+)/Ca(2+	w
 POTASSIUM	fly	FBgn0029761	SK	X2JDR8	1	2	Small conductance calcium-activated potassium channel, isofo	w
-POTASSIUM	fly	FBgn0032706	Irk3	B7YZX2	2	11	Inwardly rectifying potassium channel 3, isoform D	w
+POTASSIUM	fly	FBgn0032706	Irk3	B7YZX2	3	12	Inwardly rectifying potassium channel 3, isoform D	w
 POTASSIUM	fly	FBgn0033494	KCNQ	A1Z856	17	152	KCNQ potassium channel, isoform F	w
 POTASSIUM	fly	FBgn0034636	twz	D5SHR0	1	26	BTB/POZ domain-containing protein Tiwaz (Potassium channel t	w
 POTASSIUM	fly	FBgn0037238	CG1090	Q9VN12	0	5	Probable sodium/potassium/calcium exchanger CG1090 (Na(+)/K(	w
@@ -342,7 +342,7 @@ POTASSIUM-TRANSPORTING	fly	FBgn0002921	Atpalpha	P13607	10	175	Sodium/potassium-t
 POTASSIUM-TRANSPORTING	fly	FBgn0015776	nrv1	Q24046	196	2419	Sodium/potassium-transporting ATPase subunit beta-1 (Protein	w
 POTASSIUM-TRANSPORTING	fly	FBgn0015777	nrv2	Q24048	224	2418	Sodium/potassium-transporting ATPase subunit beta-2 (Protein	w
 POTASSIUM-TRANSPORTING	fly	FBgn0085442	NKAIN	A6MHQ4	3	10	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
-POTASSIUM-TRANSPORTING	fly	FBgn0267363	JYalpha	A8QI34	6	10	Sodium/potassium-transporting ATPase subunit alpha	w
+POTASSIUM-TRANSPORTING	fly	FBgn0267363	JYalpha	A8QI34	7	11	Sodium/potassium-transporting ATPase subunit alpha	w
 POTASSIUM-TRANSPORTING	human	O00168	FXYD1	O00168	19	162	Phospholemman (FXYD domain-containing ion transport regulato	w
 POTASSIUM-TRANSPORTING	human	P05023	ATP1A1	P05023	14	351	Sodium/potassium-transporting ATPase subunit alpha-1 (Na(+)/	w
 POTASSIUM-TRANSPORTING	human	P05026	ATP1B1	P05026	16	271	Sodium/potassium-transporting ATPase subunit beta-1 (Sodium/	w
@@ -459,11 +459,11 @@ POTEJ_HUMAN	human	P0CG39	POTEJ	P0CG39	31	162
 POTEKP	human	Q9BYX7	POTEKP	Q9BYX7	1	23	Putative beta-actin-like protein 3 (Kappa-actin) (POTE ankyr	
 POTEM	human	A6NI47	POTEM	A6NI47	1	50	Putative POTE ankyrin domain family member M	
 POTEM_HUMAN	human	A6NI47	POTEM	A6NI47	1	50		
-POTENTIAL	fly	FBgn0002774	mle	P24785	13	246	Dosage compensation regulator mle (EC 3.6.4.13) (Protein mal	w
+POTENTIAL	fly	FBgn0002774	mle	P24785	13	247	Dosage compensation regulator mle (EC 3.6.4.13) (Protein mal	w
 POTENTIAL	fly	FBgn0003861	trp	P19334	9	105	Transient receptor potential protein	w
-POTENTIAL	fly	FBgn0011770	Gip	P36951	1	14	Putative hydroxypyruvate isomerase (EC 5.3.1.22) (GIP-like p	w
+POTENTIAL	fly	FBgn0011770	Gip	P36951	1	16	Putative hydroxypyruvate isomerase (EC 5.3.1.22) (GIP-like p	w
 POTENTIAL	fly	FBgn0016047	nompA	A1Z8J4	0	3	No mechanoreceptor potential A, isoform A (No mechanorecepto	w
-POTENTIAL	fly	FBgn0016919	nompB	Q7KRS6	14	107	No mechanoreceptor potential B, isoform D	w
+POTENTIAL	fly	FBgn0016919	nompB	Q7KRS6	17	109	No mechanoreceptor potential B, isoform D	w
 POTENTIAL	fly	FBgn0016920	nompC	Q9VMR4	0	3	No mechanoreceptor potential C, isoform H	w
 POTENTIAL	fly	FBgn0025186	ari-2	O76924	4	49	Potential E3 ubiquitin-protein ligase ariadne-2 (EC 2.3.2.31	w
 POTENTIAL	fly	FBgn0032593	Trpgamma	B7YZW4	3	77	Transient receptor potential cation channel gamma, isoform D	w
@@ -471,9 +471,9 @@ POTENTIAL	fly	FBgn0035113	pyx	Q9W0T5	2	6	Transient receptor potential channel py
 POTENTIAL	fly	FBgn0035934	TrpA1	G8IQ59	2	36	TRPA1 isoform D (Transient receptor potential cation channel	w
 POTENTIAL	fly	FBgn0060296	pain	Q9W0Y6	0	6	Transient receptor potential cation channel protein painless	w
 POTENTIAL	fly	FBgn0260933	rempA	Q7KTZ4	5	42	Reduced mechanoreceptor potential A, isoform B	w
-POTENTIAL	fly	FBgn0261361	CG42638	Q9VW35	0	3	SD02261p (Transient receptor potential cation channel, mucol	w
+POTENTIAL	fly	FBgn0261361	CG42638	Q9VW35	1	4	SD02261p (Transient receptor potential cation channel, mucol	w
 POTENTIAL	fly	FBgn0262516	Trpml	Q9VW35	0	21	SD02261p (Transient receptor potential cation channel, mucol	w
-POTENTIAL	fly	FBgn0262738	norpA	P13217	8	74	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase (E	w
+POTENTIAL	fly	FBgn0262738	norpA	P13217	13	82	1-phosphatidylinositol 4,5-bisphosphate phosphodiesterase (E	w
 POTENTIAL	fly	FBgn0265194	Trpm	A8DYE2	38	722	Transient receptor potential cation channel trpm (Transient 	w
 POTENTIAL	human	O75762	TRPA1	O75762	6	89	Transient receptor potential cation channel subfamily A memb	w
 POTENTIAL	human	O94759	TRPM2	O94759	8	26	Transient receptor potential cation channel subfamily M memb	w

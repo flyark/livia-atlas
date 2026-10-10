@@ -118,7 +118,7 @@ RIBJ	trypanosoma-cruzi	Q4D3E8	RibJ	Q4D3E8	0	4	Riboflavin transporter RibJ
 RIBO	human	Q9NPI5	NMRK2	Q9NPI5	6	62	Nicotinamide riboside kinase 2 (NRK 2) (NmR-K 2) (EC 2.7.1.2	w
 RIBO-1	worm	Q9GZH4	ribo-1	Q9GZH4	4	30	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	
 RIBOFLA	human	Q9NWF4	SLC52A1	Q9NWF4	2	175	Solute carrier family 52, riboflavin transporter, member 1 (	w
-RIBOFLAVIN	fly	FBgn0014930	Rfk	O76206	1	12	Putative riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-	w
+RIBOFLAVIN	fly	FBgn0014930	Rfk	O76206	1	14	Putative riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-	w
 RIBOFLAVIN	fly	FBgn0039882	Rift	Q9V9S9	0	5	Riboflavin transporter	w
 RIBOFLAVIN	human	Q969G6	RFK	Q969G6	13	108	Riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-phosphotr	w
 RIBOFLAVIN	human	Q9HAB3	SLC52A2	Q9HAB3	4	192	Solute carrier family 52, riboflavin transporter, member 2 (	w
@@ -130,8 +130,8 @@ RIBOFLAVIN	yeast	Q03778	FMN1	Q03778	0	7	Riboflavin kinase	w
 RIBOFLAVIN	yeast	Q08777	MCH5	Q08777	1	6	Riboflavin transporter MCH5	w
 RIBOFLAVIN	zebrafish	A0A8M1P3I8	rfk	A0A8M1P3I8	1	1	riboflavin kinase	w
 RIBOFLAVIN	zebrafish	E7FE37	rfk	E7FE37	1	14	Riboflavin kinase	w
-RIBOKINASE	fly	FBgn0025640	CG13369	O77425	1	9	Ribokinase (RK) (EC 2.7.1.15)	w
-RIBOKINASE	fly	FBgn0032424	CG17010	Q9VK96	1	8	Ribokinase (RK) (EC 2.7.1.15)	w
+RIBOKINASE	fly	FBgn0025640	CG13369	O77425	2	15	Ribokinase (RK) (EC 2.7.1.15)	w
+RIBOKINASE	fly	FBgn0032424	CG17010	Q9VK96	1	12	Ribokinase (RK) (EC 2.7.1.15)	w
 RIBOKINASE	human	Q9H477	RBKS	Q9H477	3	57	Ribokinase (RK) (EC 2.7.1.15)	w
 RIBOKINASE	worm	Q19133	CELE_F07A11.5	Q19133	0	25	Ribokinase	w
 RIBOKINASE	yeast	P25332	RBK1	P25332	0	6	Ribokinase	w
@@ -142,25 +142,25 @@ RIBONUCL	human	Q9UQG0	ERVK-11	Q9UQG0	8	11	Endogenous retrovirus group K member 1
 RIBONUCLEAR	human	O15116	LSM1	O15116	21	187	U6 snRNA-associated Sm-like protein LSm1 (Cancer-associated 	w
 RIBONUCLEAR	human	Q9Y333	LSM2	Q9Y333	28	327	U6 snRNA-associated Sm-like protein LSm2 (Protein G7b) (Smal	w
 RIBONUCLEASE	fly	FBgn0010406	RNaseX25	Q9VSC3	26	247	Ribonuclease X25 (EC 4.6.1.19)	w
-RIBONUCLEASE	fly	FBgn0011725	twin	Q8IMX1	43	476	poly(A)-specific ribonuclease (EC 3.1.13.4) (Carbon cataboli	w
-RIBONUCLEASE	fly	FBgn0023171	rnh1	Q7JY33	0	8	Ribonuclease H1 (RNase H1) (EC 3.1.26.4)	w
-RIBONUCLEASE	fly	FBgn0026702	Pop1	Q7KVW2	1	42	FI18256p1 (POP1 ribonuclease P/MRP subunit)	w
+RIBONUCLEASE	fly	FBgn0011725	twin	Q8IMX1	44	477	poly(A)-specific ribonuclease (EC 3.1.13.4) (Carbon cataboli	w
+RIBONUCLEASE	fly	FBgn0023171	rnh1	Q7JY33	0	9	Ribonuclease H1 (RNase H1) (EC 3.1.26.4)	w
+RIBONUCLEASE	fly	FBgn0026702	Pop1	Q7KVW2	5	42	FI18256p1 (POP1 ribonuclease P/MRP subunit)	w
 RIBONUCLEASE	fly	FBgn0026722	drosha	Q7KNF1	4	209	ribonuclease III (EC 3.1.26.3)	w
 RIBONUCLEASE	fly	FBgn0028426	RNaseZ	Q8MKW7	0	6	Ribonuclease Z, mitochondrial (RNase Z) (EC 3.1.26.11) (Juve	w
 RIBONUCLEASE	fly	FBgn0029858	mldr	Q9W413	5	70	Mitochondrial ribonuclease P catalytic subunit (EC 3.1.26.5)	w
 RIBONUCLEASE	fly	FBgn0030507	CG11164	Q9VYA4	26	115	Ribonuclease H2 subunit B (Ribonuclease HI subunit B)	w
-RIBONUCLEASE	fly	FBgn0031252	CG13690	Q9VPP5	4	37	Ribonuclease H2 subunit A (RNase H2 subunit A) (EC 3.1.26.4)	w
+RIBONUCLEASE	fly	FBgn0031252	CG13690	Q9VPP5	7	49	Ribonuclease H2 subunit A (RNase H2 subunit A) (EC 3.1.26.4)	w
 RIBONUCLEASE	fly	FBgn0033092	Rpp25	Q0E9N4	10	45	FI09323p (Ribonuclease P/MRP subunit p25, isoform A) (Ribonu	w
-RIBONUCLEASE	fly	FBgn0033352	PAN2	A1Z7K9	8	85	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
-RIBONUCLEASE	fly	FBgn0034351	rswl	Q7JUX9	2	29	Mitochondrial ribonuclease P protein 1 homolog (Mitochondria	w
-RIBONUCLEASE	fly	FBgn0035397	PAN3	Q95RR8	86	1269	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
-RIBONUCLEASE	fly	FBgn0035831	Pop4	Q9VSC6	5	50	Ribonuclease P protein subunit p29	w
-RIBONUCLEASE	fly	FBgn0036696	Pop5	Q9VVE0	4	47	Ribonuclease P/MRP protein subunit POP5	w
+RIBONUCLEASE	fly	FBgn0033352	PAN2	A1Z7K9	8	88	PAN2-PAN3 deadenylation complex catalytic subunit PAN2 (EC 3	w
+RIBONUCLEASE	fly	FBgn0034351	rswl	Q7JUX9	4	30	Mitochondrial ribonuclease P protein 1 homolog (Mitochondria	w
+RIBONUCLEASE	fly	FBgn0035397	PAN3	Q95RR8	89	1275	PAN2-PAN3 deadenylation complex subunit PAN3 (PAB1P-dependen	w
+RIBONUCLEASE	fly	FBgn0035831	Pop4	Q9VSC6	8	50	Ribonuclease P protein subunit p29	w
+RIBONUCLEASE	fly	FBgn0036696	Pop5	Q9VVE0	8	47	Ribonuclease P/MRP protein subunit POP5	w
 RIBONUCLEASE	fly	FBgn0039744	Rpp14b	Q9VAA7	2	32	GEO10372p1 (MIP16728p) (Ribonuclease P/MRP subunit p14 b)	w
-RIBONUCLEASE	fly	FBgn0053082	Rpp21	Q86B65	2	31	Ribonuclease P/MRP subunit p21, isoform A (Ribonuclease P/MR	w
-RIBONUCLEASE	fly	FBgn0066304	Rpp20	Q2MGL3	4	50	Ribonuclease P protein subunit p20 (RNaseP protein p20)	w
-RIBONUCLEASE	fly	FBgn0085346	Rpp14a	A8JRG8	2	30	Ribonuclease P/MRP subunit p14 a	w
-RIBONUCLEASE	fly	FBgn0262116	RNASEK	Q8MSF5	13	103	Ribonuclease kappa (RNase K) (RNase kappa) (EC 3.1.-.-)	w
+RIBONUCLEASE	fly	FBgn0053082	Rpp21	Q86B65	5	31	Ribonuclease P/MRP subunit p21, isoform A (Ribonuclease P/MR	w
+RIBONUCLEASE	fly	FBgn0066304	Rpp20	Q2MGL3	6	50	Ribonuclease P protein subunit p20 (RNaseP protein p20)	w
+RIBONUCLEASE	fly	FBgn0085346	Rpp14a	A8JRG8	5	30	Ribonuclease P/MRP subunit p14 a	w
+RIBONUCLEASE	fly	FBgn0262116	RNASEK	Q8MSF5	13	104	Ribonuclease kappa (RNase K) (RNase kappa) (EC 3.1.-.-)	w
 RIBONUCLEASE	human	A0A096LP39	TRIM39-RPP21	A0A096LP39	4	33	Ribonuclease P/MRP subunit p21	w
 RIBONUCLEASE	human	A1KZ92	PXDNL	A1KZ92	27	342	Probable oxidoreductase PXDNL (EC 1.-.-.-) (Cardiac peroxida	w
 RIBONUCLEASE	human	A2A288	ZC3H12D	A2A288	3	19	Probable ribonuclease ZC3H12D (EC 3.1.-.-) (MCP-induced prot	w
@@ -275,36 +275,36 @@ RIBONUCLEASES	yeast	P38291	POP7	P38291	6	81	Ribonucleases P/MRP protein subunit 
 RIBONUCLEASES	yeast	P41812	POP1	P41812	3	53	Ribonucleases P/MRP protein subunit POP1	w
 RIBONUCLEASES	yeast	P53218	POP6	P53218	2	48	Ribonucleases P/MRP protein subunit POP6	w
 RIBONUCLEASES	yeast	P53833	POP3	P53833	2	47	Ribonucleases P/MRP protein subunit POP3	w
-RIBONUCLEIC	fly	FBgn0031868	Rat1	Q9VM71	0	45	5'-3' exoribonuclease 2 homolog (EC 3.1.13.-) (Ribonucleic a	w
+RIBONUCLEIC	fly	FBgn0031868	Rat1	Q9VM71	2	61	5'-3' exoribonuclease 2 homolog (EC 3.1.13.-) (Ribonucleic a	w
 RIBONUCLEOPROTEIN	fly	FBgn0000392	cup	Q9VMA3	35	154	Protein cup (Oskar ribonucleoprotein complex 147 kDa subunit	w
-RIBONUCLEOPROTEIN	fly	FBgn0000426	SmF	Q24297	31	222	Small nuclear ribonucleoprotein F (snRNP-F) (Membrane-associ	w
+RIBONUCLEOPROTEIN	fly	FBgn0000426	SmF	Q24297	49	227	Small nuclear ribonucleoprotein F (snRNP-F) (Membrane-associ	w
 RIBONUCLEOPROTEIN	fly	FBgn0001215	Hrb98DE	P07909	15	149	Heterogeneous nuclear ribonucleoprotein A1 (hnRNP A1) (PEN r	w
-RIBONUCLEOPROTEIN	fly	FBgn0003449	snf	P43332	19	264	U1 small nuclear ribonucleoprotein A (U1 snRNP A) (U1-A) (U1	w
+RIBONUCLEOPROTEIN	fly	FBgn0003449	snf	P43332	27	264	U1 small nuclear ribonucleoprotein A (U1 snRNP A) (U1-A) (U1	w
 RIBONUCLEOPROTEIN	fly	FBgn0004237	Hrb87F	P48810	5	43	Heterogeneous nuclear ribonucleoprotein 87F (HRP36.1 protein	w
-RIBONUCLEOPROTEIN	fly	FBgn0004838	Hrb27C	P48809	5	81	Heterogeneous nuclear ribonucleoprotein 27C (Hrb27-C) (HRP48	w
+RIBONUCLEOPROTEIN	fly	FBgn0004838	Hrb27C	P48809	6	81	Heterogeneous nuclear ribonucleoprotein 27C (Hrb27-C) (HRP48	w
 RIBONUCLEOPROTEIN	fly	FBgn0004903	Rb97D	Q02926	3	27	Ribonucleoprotein RB97D	w
-RIBONUCLEOPROTEIN	fly	FBgn0011638	La	P40796	5	46	La protein homolog (La autoantigen homolog) (La ribonucleopr	w
-RIBONUCLEOPROTEIN	fly	FBgn0011824	Gar1	Q7KVQ0	12	123	Probable H/ACA ribonucleoprotein complex subunit 1 (GCR 101 	w
-RIBONUCLEOPROTEIN	fly	FBgn0016978	snRNP-U1-70K	P17133	12	142	U1 small nuclear ribonucleoprotein 70 kDa (U1 snRNP 70 kDa) 	w
-RIBONUCLEOPROTEIN	fly	FBgn0021895	ytr	Q9W1I6	0	43	U4/U6.U5 small nuclear ribonucleoprotein 27 kDa protein (U4/	w
-RIBONUCLEOPROTEIN	fly	FBgn0023167	SmD3	O44437	26	216	Small nuclear ribonucleoprotein Sm D3 (Sm-D3) (snRNP core pr	w
-RIBONUCLEOPROTEIN	fly	FBgn0029148	NHP2	Q9V3U2	22	402	H/ACA ribonucleoprotein complex subunit 2-like protein (H/AC	w
-RIBONUCLEOPROTEIN	fly	FBgn0032051	CG13097	Q9VLK1	23	139	U3 small nucleolar ribonucleoprotein protein MPP10	w
-RIBONUCLEOPROTEIN	fly	FBgn0032701	CG10341	Q9VJ62	12	62	H/ACA ribonucleoprotein complex non-core subunit NAF1	w
-RIBONUCLEOPROTEIN	fly	FBgn0033210	U2A	Q9V4Q8	22	210	Probable U2 small nuclear ribonucleoprotein A' (U2 snRNP A')	w
-RIBONUCLEOPROTEIN	fly	FBgn0033548	Nop10	Q9V5P6	8	108	H/ACA ribonucleoprotein complex subunit 3 (Nucleolar protein	w
+RIBONUCLEOPROTEIN	fly	FBgn0011638	La	P40796	7	51	La protein homolog (La autoantigen homolog) (La ribonucleopr	w
+RIBONUCLEOPROTEIN	fly	FBgn0011824	Gar1	Q7KVQ0	19	128	Probable H/ACA ribonucleoprotein complex subunit 1 (GCR 101 	w
+RIBONUCLEOPROTEIN	fly	FBgn0016978	snRNP-U1-70K	P17133	23	142	U1 small nuclear ribonucleoprotein 70 kDa (U1 snRNP 70 kDa) 	w
+RIBONUCLEOPROTEIN	fly	FBgn0021895	ytr	Q9W1I6	1	43	U4/U6.U5 small nuclear ribonucleoprotein 27 kDa protein (U4/	w
+RIBONUCLEOPROTEIN	fly	FBgn0023167	SmD3	O44437	45	220	Small nuclear ribonucleoprotein Sm D3 (Sm-D3) (snRNP core pr	w
+RIBONUCLEOPROTEIN	fly	FBgn0029148	NHP2	Q9V3U2	45	429	H/ACA ribonucleoprotein complex subunit 2-like protein (H/AC	w
+RIBONUCLEOPROTEIN	fly	FBgn0032051	CG13097	Q9VLK1	36	156	U3 small nucleolar ribonucleoprotein protein MPP10	w
+RIBONUCLEOPROTEIN	fly	FBgn0032701	CG10341	Q9VJ62	15	62	H/ACA ribonucleoprotein complex non-core subunit NAF1	w
+RIBONUCLEOPROTEIN	fly	FBgn0033210	U2A	Q9V4Q8	48	210	Probable U2 small nuclear ribonucleoprotein A' (U2 snRNP A')	w
+RIBONUCLEOPROTEIN	fly	FBgn0033548	Nop10	Q9V5P6	14	114	H/ACA ribonucleoprotein complex subunit 3 (Nucleolar protein	w
 RIBONUCLEOPROTEIN	fly	FBgn0035424	Larp4B	Q9I7T7	13	78	La-related protein Larp4B (La ribonucleoprotein domain famil	w
-RIBONUCLEOPROTEIN	fly	FBgn0036063	CG6674	Q9VT74	3	19	U5 small nuclear ribonucleoprotein TSSC4	w
-RIBONUCLEOPROTEIN	fly	FBgn0036487	Prp31	Q9VUM1	8	88	U4/U6 small nuclear ribonucleoprotein Prp31 (Pre-mRNA-proces	w
-RIBONUCLEOPROTEIN	fly	FBgn0039566	CG4849	Q9VAX8	21	343	116 kDa U5 small nuclear ribonucleoprotein component (U5 snR	w
-RIBONUCLEOPROTEIN	fly	FBgn0259937	Nop60B	O44081	14	149	H/ACA ribonucleoprotein complex subunit 4 (EC 5.4.99.-) (Nuc	w
+RIBONUCLEOPROTEIN	fly	FBgn0036063	CG6674	Q9VT74	5	20	U5 small nuclear ribonucleoprotein TSSC4	w
+RIBONUCLEOPROTEIN	fly	FBgn0036487	Prp31	Q9VUM1	9	88	U4/U6 small nuclear ribonucleoprotein Prp31 (Pre-mRNA-proces	w
+RIBONUCLEOPROTEIN	fly	FBgn0039566	CG4849	Q9VAX8	28	345	116 kDa U5 small nuclear ribonucleoprotein component (U5 snR	w
+RIBONUCLEOPROTEIN	fly	FBgn0259937	Nop60B	O44081	33	176	H/ACA ribonucleoprotein complex subunit 4 (EC 5.4.99.-) (Nuc	w
 RIBONUCLEOPROTEIN	fly	FBgn0260771	Larp7	Q9W362	5	31	La-related protein 7 (La ribonucleoprotein domain family mem	w
-RIBONUCLEOPROTEIN	fly	FBgn0261789	SmD2	Q9VI10	34	294	Probable small nuclear ribonucleoprotein Sm D2 (Sm-D2) (snRN	w
-RIBONUCLEOPROTEIN	fly	FBgn0261790	SmE	Q9VLV5	19	206	Probable small nuclear ribonucleoprotein E (snRNP-E) (Sm pro	w
-RIBONUCLEOPROTEIN	fly	FBgn0261791	SNRPG	Q9VXE0	32	279	Probable small nuclear ribonucleoprotein G (snRNP-G) (Sm pro	w
-RIBONUCLEOPROTEIN	fly	FBgn0261792	snRNP-U1-C	Q9VE17	6	106	U1 small nuclear ribonucleoprotein C (U1 snRNP C) (U1-C) (U1	w
-RIBONUCLEOPROTEIN	fly	FBgn0261933	SmD1	Q9VU02	21	236	Probable small nuclear ribonucleoprotein Sm D1 (Sm-D1) (snRN	w
-RIBONUCLEOPROTEIN	fly	FBgn0263396	sqd	Q08473	82	535	RNA-binding protein squid (Heterogeneous nuclear ribonucleop	w
+RIBONUCLEOPROTEIN	fly	FBgn0261789	SmD2	Q9VI10	49	302	Probable small nuclear ribonucleoprotein Sm D2 (Sm-D2) (snRN	w
+RIBONUCLEOPROTEIN	fly	FBgn0261790	SmE	Q9VLV5	37	214	Probable small nuclear ribonucleoprotein E (snRNP-E) (Sm pro	w
+RIBONUCLEOPROTEIN	fly	FBgn0261791	SNRPG	Q9VXE0	49	284	Probable small nuclear ribonucleoprotein G (snRNP-G) (Sm pro	w
+RIBONUCLEOPROTEIN	fly	FBgn0261792	snRNP-U1-C	Q9VE17	13	108	U1 small nuclear ribonucleoprotein C (U1 snRNP C) (U1-C) (U1	w
+RIBONUCLEOPROTEIN	fly	FBgn0261933	SmD1	Q9VU02	36	241	Probable small nuclear ribonucleoprotein Sm D1 (Sm-D1) (snRN	w
+RIBONUCLEOPROTEIN	fly	FBgn0263396	sqd	Q08473	85	549	RNA-binding protein squid (Heterogeneous nuclear ribonucleop	w
 RIBONUCLEOPROTEIN	fly	FBgn0263599	Brr2	Q9VUV9	3	22	U5 small nuclear ribonucleoprotein 200 kDa helicase (EC 3.6.	w
 RIBONUCLEOPROTEIN	fly	FBgn0267791	HnRNP-K	A1ZBW0	26	470	Heterogeneous nuclear ribonucleoprotein K, isoform C (RE0551	w
 RIBONUCLEOPROTEIN	human	A0A2R8Y4L2	HNRNPA1L3	A0A2R8Y4L2	1	17	Heterogeneous nuclear ribonucleoprotein A1-like 3 (Heterogen	w
@@ -507,7 +507,7 @@ RIBONUCLEOPROTEIN	zebrafish	Q803J4	hnrnpc	Q803J4	22	169	Heterogeneous nuclear ri
 RIBONUCLEOPROTEIN	zebrafish	Q8JGS0	snrpc	Q8JGS0	5	83	U1 small nuclear ribonucleoprotein C	w
 RIBONUCLEOPROTEIN	zebrafish	Q8JHH1	snrpd1	Q8JHH1	23	265	Small nuclear ribonucleoprotein Sm D1	w
 RIBONUCLEOPROTEIN	zebrafish	R4GDR2	snrpb2	R4GDR2	5	226	Small nuclear ribonucleoprotein polypeptide B2	w
-RIBONUCLEOPROTEIN-ASSOCIATED	fly	FBgn0262601	SmB	Q05856	36	208	Small nuclear ribonucleoprotein-associated protein B (snRNP-	w
+RIBONUCLEOPROTEIN-ASSOCIATED	fly	FBgn0262601	SmB	Q05856	51	212	Small nuclear ribonucleoprotein-associated protein B (snRNP-	w
 RIBONUCLEOPROTEIN-ASSOCIATED	human	O43818	RRP9	O43818	22	308	U3 small nucleolar RNA-interacting protein 2 (RRP9 homolog) 	w
 RIBONUCLEOPROTEIN-ASSOCIATED	human	P14678	SNRPB	P14678	69	587	Small nuclear ribonucleoprotein-associated proteins B and B'	w
 RIBONUCLEOPROTEIN-ASSOCIATED	human	P63162	SNRPN	P63162	51	286	Small nuclear ribonucleoprotein-associated protein N (snRNP-	w
@@ -518,8 +518,8 @@ RIBONUCLEOPROTEIN-ASSOCIATED	zebrafish	Q9I9E5	snrpb	Q9I9E5	21	238	Small nuclear 
 RIBONUCLEOPROTEINS	human	P07910	HNRNPC	P07910	143	801	Heterogeneous nuclear ribonucleoproteins C1/C2 (hnRNP C1/C2)	w
 RIBONUCLEOPROTEINS	human	P22626	HNRNPA2B1	P22626	31	639	Heterogeneous nuclear ribonucleoproteins A2/B1 (hnRNP A2/B1)	w
 RIBONUCLEOPROTEINS	zebrafish	A0A8M9QGR2	Hnrpc	A0A8M9QGR2	26	179	Heterogeneous nuclear ribonucleoproteins C1/C2 isoform X4	w
-RIBONUCLEOSIDE-DIPHOSPHATE	fly	FBgn0011703	RnrL	P48591	13	205	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
-RIBONUCLEOSIDE-DIPHOSPHATE	fly	FBgn0011704	RnrS	P48592	13	310	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
+RIBONUCLEOSIDE-DIPHOSPHATE	fly	FBgn0011703	RnrL	P48591	13	219	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
+RIBONUCLEOSIDE-DIPHOSPHATE	fly	FBgn0011704	RnrS	P48592	15	321	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
 RIBONUCLEOSIDE-DIPHOSPHATE	human	P23921	RRM1	P23921	4	260	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
 RIBONUCLEOSIDE-DIPHOSPHATE	human	P31350	RRM2	P31350	8	212	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
 RIBONUCLEOSIDE-DIPHOSPHATE	human	Q7LG56	RRM2B	Q7LG56	4	84	Ribonucleoside-diphosphate reductase subunit M2 B (EC 1.17.4	w
@@ -736,10 +736,10 @@ RIBONUCLEOSIDE-DIPHOSPHATE	zebrafish	G3G7U0	rrm2l	G3G7U0	4	12	Ribonucleoside-dip
 RIBONUCLEOSIDE-DIPHOSPHATE	zebrafish	P79732	rrm1	P79732	3	23	Ribonucleoside-diphosphate reductase large subunit	w
 RIBONUCLEOSIDE-DIPHOSPHATE	zebrafish	P79733	rrm2	P79733	4	13	Ribonucleoside-diphosphate reductase subunit M2	w
 RIBONUCLEOSIDE-DIPHOSPHATE	zebrafish	Q7ZYW0	rrm2b	Q7ZYW0	2	14	Ribonucleoside-diphosphate reductase subunit M2 B	w
-RIBONUCLEOTIDE	fly	FBgn0000052	Pfas	P35421	1	72	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
-RIBONUCLEOTIDE	fly	FBgn0000053	Gart	P00967	2	95	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
-RIBONUCLEOTIDE	fly	FBgn0011703	RnrL	P48591	13	205	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
-RIBONUCLEOTIDE	fly	FBgn0011704	RnrS	P48592	13	310	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
+RIBONUCLEOTIDE	fly	FBgn0000052	Pfas	P35421	1	73	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
+RIBONUCLEOTIDE	fly	FBgn0000053	Gart	P00967	2	99	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
+RIBONUCLEOTIDE	fly	FBgn0011703	RnrL	P48591	13	219	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
+RIBONUCLEOTIDE	fly	FBgn0011704	RnrS	P48592	15	321	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
 RIBONUCLEOTIDE	human	O15067	PFAS	O15067	2	165	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
 RIBONUCLEOTIDE	human	P22102	GART	P22102	0	260	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
 RIBONUCLEOTIDE	human	P23921	RRM1	P23921	4	260	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
@@ -748,10 +748,10 @@ RIBONUCLEOTIDE	human	Q7LG56	RRM2B	Q7LG56	4	84	Ribonucleoside-diphosphate reducta
 RIBONUCLEOTIDE	virus	A0A7R5WLX1	RNRL	A0A7R5WLX1	6	187	Ribonucleotide reductase large subunit	w
 RIBONUCLEOTIDE	yeast	Q04964	SML1	Q04964	3	31	Ribonucleotide reductase inhibitor protein SML1	w
 RIBOPH	human	P04843	RPN1	P04843	40	760	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-RIBOPHORIN-2	fly	FBgn0034277	OstDelta	Q7K110	18	166	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+RIBOPHORIN-2	fly	FBgn0034277	OstDelta	Q7K110	20	167	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 RIBOPROTEIN	fly	FBgn0036733	U4-U6-60K	Q9VVI0	18	136	SD09427p (U4-U6 small nuclear riboprotein factor 60K)	w
-RIBOPROTEIN	fly	FBgn0053505	U3-55K	Q8MSW9	9	123	LD17611p (U3 small nuclear riboprotein factor 55K)	w
-RIBOSE-5-PHOSPHATE	fly	FBgn0050410	Rpi	Q8MLS2	1	8	ribose-5-phosphate isomerase (EC 5.3.1.6) (Phosphoriboisomer	w
+RIBOPROTEIN	fly	FBgn0053505	U3-55K	Q8MSW9	23	143	LD17611p (U3 small nuclear riboprotein factor 55K)	w
+RIBOSE-5-PHOSPHATE	fly	FBgn0050410	Rpi	Q8MLS2	1	16	ribose-5-phosphate isomerase (EC 5.3.1.6) (Phosphoriboisomer	w
 RIBOSE-5-PHOSPHATE	human	P49247	RPIA	P49247	6	96	Ribose-5-phosphate isomerase (EC 5.3.1.6) (Phosphoriboisomer	w
 RIBOSE-5-PHOSPHATE	yeast	Q12189	RKI1	Q12189	1	6	Ribose-5-phosphate isomerase	w
 RIBOSE-5-PHOSPHATE	zebrafish	Q5U3H4	zgc:103524	Q5U3H4	1	1	ribose-5-phosphate isomerase	w
@@ -776,187 +776,187 @@ RIBOSIDE	zebrafish	F1QSN9	nmrk2	F1QSN9	0	20	Nicotinamide riboside kinase 2	w
 RIBOSIDE	zebrafish	Q5BJ19	nmrk1	Q5BJ19	1	22	Nicotinamide riboside kinase 1	w
 RIBOSIDE-SENSITIVE	human	Q99808	SLC29A1	Q99808	8	214	Equilibrative nucleoside transporter 1 (hENT1) (Equilibrativ	w
 RIBOSOMA	human	Q5T280	SPOUT1	Q5T280	9	279	28S rRNA (uridine-N(3))-methyltransferase (EC 2.1.1.-) (Cent	w
-RIBOSOMAL	fly	FBgn0000100	RpLP0	P19889	31	396	Large ribosomal subunit protein uL10 (60S acidic ribosomal p	w
-RIBOSOMAL	fly	FBgn0001995	mRpL4	Q9V3D0	17	407	Large ribosomal subunit protein uL4m	w
-RIBOSOMAL	fly	FBgn0002579	RpL36	P49630	37	306	Large ribosomal subunit protein eL36 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0002590	RpS5a	Q24186	36	389	Small ribosomal subunit protein uS7A (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0002593	RpLP1	P08570	22	306	Large ribosomal subunit protein P1 (60S acidic ribosomal pro	w
-RIBOSOMAL	fly	FBgn0002622	RpS3	Q06559	30	468	Small ribosomal subunit protein uS3 (40S ribosomal protein S	w
-RIBOSOMAL	fly	FBgn0002626	RpL32	A0A1B3Q3R0	24	330	Large ribosomal subunit protein eL32 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0003274	RpLP2	P05389	21	236	Large ribosomal subunit protein P2 (60S acidic ribosomal pro	w
-RIBOSOMAL	fly	FBgn0003279	RpL4	P09180	46	551	Large ribosomal subunit protein uL4 (60S ribosomal protein L	w
-RIBOSOMAL	fly	FBgn0003517	sta	P38979	45	487	Small ribosomal subunit protein uS2 (40S ribosomal protein S	w
-RIBOSOMAL	fly	FBgn0003714	tko	D3DMP8	18	379	Small ribosomal subunit protein uS12m	w
-RIBOSOMAL	fly	FBgn0003941	RpL40	P18101	16	136	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) [Cle	w
+RIBOSOMAL	fly	FBgn0000100	RpLP0	P19889	47	401	Large ribosomal subunit protein uL10 (60S acidic ribosomal p	w
+RIBOSOMAL	fly	FBgn0001995	mRpL4	Q9V3D0	46	410	Large ribosomal subunit protein uL4m	w
+RIBOSOMAL	fly	FBgn0002579	RpL36	P49630	60	309	Large ribosomal subunit protein eL36 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0002590	RpS5a	Q24186	68	394	Small ribosomal subunit protein uS7A (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0002593	RpLP1	P08570	45	311	Large ribosomal subunit protein P1 (60S acidic ribosomal pro	w
+RIBOSOMAL	fly	FBgn0002622	RpS3	Q06559	51	477	Small ribosomal subunit protein uS3 (40S ribosomal protein S	w
+RIBOSOMAL	fly	FBgn0002626	RpL32	A0A1B3Q3R0	53	335	Large ribosomal subunit protein eL32 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0003274	RpLP2	P05389	41	244	Large ribosomal subunit protein P2 (60S acidic ribosomal pro	w
+RIBOSOMAL	fly	FBgn0003279	RpL4	P09180	64	558	Large ribosomal subunit protein uL4 (60S ribosomal protein L	w
+RIBOSOMAL	fly	FBgn0003517	sta	P38979	72	490	Small ribosomal subunit protein uS2 (40S ribosomal protein S	w
+RIBOSOMAL	fly	FBgn0003714	tko	D3DMP8	44	379	Small ribosomal subunit protein uS12m	w
+RIBOSOMAL	fly	FBgn0003941	RpL40	P18101	63	219	Ubiquitin-ribosomal protein eL40 fusion protein (CEP52) [Cle	w
 RIBOSOMAL	fly	FBgn0003942	RpS27A	P15357	102	830	Ubiquitin-ribosomal protein eS31 fusion protein [Cleaved int	w
-RIBOSOMAL	fly	FBgn0004403	RpS14a	C0HKA0	29	366	Small ribosomal subunit protein uS11A (40S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0004403	RpS14a	C0HKA0	45	369	Small ribosomal subunit protein uS11A (40S ribosomal protein	w
 RIBOSOMAL	fly	FBgn0004404	RpS14b	C0HKA0	26	354	Small ribosomal subunit protein uS11A (40S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0004867	RpS2	P31009	32	454	Small ribosomal subunit protein uS5 (40S ribosomal protein S	w
-RIBOSOMAL	fly	FBgn0005533	RpS17	P17704	69	439	Small ribosomal subunit protein eS17 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0005593	RpL7	P32100	29	373	Large ribosomal subunit protein uL30 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0010078	RpL23	P48159	47	453	Large ribosomal subunit protein uL14 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0010198	RpS15Aa	P48149	25	314	Small ribosomal subunit protein uS8A (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0010265	RpS13	Q03334	37	403	Small ribosomal subunit protein uS15 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0010408	RpS9	P55935	21	429	Small ribosomal subunit protein uS4 (40S ribosomal protein S	w
-RIBOSOMAL	fly	FBgn0010409	RpL18A	P41093	28	349	Large ribosomal subunit protein eL20 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0010411	RpS18	P41094	31	440	Small ribosomal subunit protein uS13 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0004867	RpS2	P31009	65	464	Small ribosomal subunit protein uS5 (40S ribosomal protein S	w
+RIBOSOMAL	fly	FBgn0005533	RpS17	P17704	103	444	Small ribosomal subunit protein eS17 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0005593	RpL7	P32100	55	377	Large ribosomal subunit protein uL30 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0010078	RpL23	P48159	79	459	Large ribosomal subunit protein uL14 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0010198	RpS15Aa	P48149	50	314	Small ribosomal subunit protein uS8A (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0010265	RpS13	Q03334	67	410	Small ribosomal subunit protein uS15 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0010408	RpS9	P55935	49	437	Small ribosomal subunit protein uS4 (40S ribosomal protein S	w
+RIBOSOMAL	fly	FBgn0010409	RpL18A	P41093	50	356	Large ribosomal subunit protein eL20 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0010411	RpS18	P41094	59	447	Small ribosomal subunit protein uS13 (40S ribosomal protein 	w
 RIBOSOMAL	fly	FBgn0010412	RpS19a	P39018	38	346	Small ribosomal subunit protein eS19A (40S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0011272	RpL13	P41126	30	327	Large ribosomal subunit protein eL13 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0011284	RpS4	P41042	28	334	Small ribosomal subunit protein eS4 (40S ribosomal protein S	w
-RIBOSOMAL	fly	FBgn0011787	mRpL12	Q9VSR5	5	177	GM03767p (Mitochondrial ribosomal protein L12) (RE53508p)	w
-RIBOSOMAL	fly	FBgn0013325	RpL11	P46222	29	421	Large ribosomal subunit protein uL5 (60S ribosomal protein L	w
-RIBOSOMAL	fly	FBgn0014023	mRpL47	Q8T3V6	15	241	Large ribosomal subunit protein uL29m	w
-RIBOSOMAL	fly	FBgn0014026	RpL7A	P46223	31	408	Large ribosomal subunit protein eL8 (60S ribosomal protein L	w
-RIBOSOMAL	fly	FBgn0015288	RpL22	P50887	41	352	Large ribosomal subunit protein eL22 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0015521	RpS21	O76927	33	350	Small ribosomal subunit protein eS21 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0015756	RpL9	P50882	29	444	Large ribosomal subunit protein uL6 (60S ribosomal protein L	w
-RIBOSOMAL	fly	FBgn0016726	RpL29	Q24154	28	231	Large ribosomal subunit protein eL29 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0017545	RpS3A	P55830	26	369	Small ribosomal subunit protein eS1 (40S ribosomal protein S	w
-RIBOSOMAL	fly	FBgn0017579	RpL14	P55841	33	311	Large ribosomal subunit protein eL14 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0019936	RpS20	P55828	24	409	Small ribosomal subunit protein uS10 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0020618	Rack1	O18640	66	781	Small ribosomal subunit protein RACK1 (Guanine nucleotide-bi	w
-RIBOSOMAL	fly	FBgn0020910	RpL3	O16797	39	467	Large ribosomal subunit protein uL3 (60S ribosomal protein L	w
-RIBOSOMAL	fly	FBgn0022069	Nnp-1	Q9VJZ7	16	128	Ribosomal RNA processing protein 1 homolog (NNP-1 homolog) (	w
-RIBOSOMAL	fly	FBgn0023170	RpL39	O16130	16	286	Large ribosomal subunit protein eL39 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0023519	mRpL16	Q9W547	18	314	Large ribosomal subunit protein uL16m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0023542	Nmd3	O46050	6	115	60S ribosomal export protein NMD3	w
-RIBOSOMAL	fly	FBgn0024182	waw	Q9VRH6	23	445	Translation factor waclaw, mitochondrial (EC 3.6.5.-) (Elong	w
-RIBOSOMAL	fly	FBgn0024733	RpL10	O61231	81	749	Large ribosomal subunit protein uL16 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0026261	bonsai	Q8WTC1	21	370	Small ribosomal subunit protein uS15m (28S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0026372	RpL23A	Q9W0A8	20	383	Ribosomal protein L23A	w
-RIBOSOMAL	fly	FBgn0026741	mRpL18	Q7JVK1	7	143	HL07956p (Mitochondrial ribosomal protein L18)	w
+RIBOSOMAL	fly	FBgn0011272	RpL13	P41126	53	333	Large ribosomal subunit protein eL13 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0011284	RpS4	P41042	51	340	Small ribosomal subunit protein eS4 (40S ribosomal protein S	w
+RIBOSOMAL	fly	FBgn0011787	mRpL12	Q9VSR5	22	181	GM03767p (Mitochondrial ribosomal protein L12) (RE53508p)	w
+RIBOSOMAL	fly	FBgn0013325	RpL11	P46222	62	431	Large ribosomal subunit protein uL5 (60S ribosomal protein L	w
+RIBOSOMAL	fly	FBgn0014023	mRpL47	Q8T3V6	40	243	Large ribosomal subunit protein uL29m	w
+RIBOSOMAL	fly	FBgn0014026	RpL7A	P46223	56	412	Large ribosomal subunit protein eL8 (60S ribosomal protein L	w
+RIBOSOMAL	fly	FBgn0015288	RpL22	P50887	59	354	Large ribosomal subunit protein eL22 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0015521	RpS21	O76927	58	353	Small ribosomal subunit protein eS21 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0015756	RpL9	P50882	51	452	Large ribosomal subunit protein uL6 (60S ribosomal protein L	w
+RIBOSOMAL	fly	FBgn0016726	RpL29	Q24154	58	242	Large ribosomal subunit protein eL29 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0017545	RpS3A	P55830	45	375	Small ribosomal subunit protein eS1 (40S ribosomal protein S	w
+RIBOSOMAL	fly	FBgn0017579	RpL14	P55841	53	316	Large ribosomal subunit protein eL14 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0019936	RpS20	P55828	49	415	Small ribosomal subunit protein uS10 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0020618	Rack1	O18640	81	785	Small ribosomal subunit protein RACK1 (Guanine nucleotide-bi	w
+RIBOSOMAL	fly	FBgn0020910	RpL3	O16797	59	475	Large ribosomal subunit protein uL3 (60S ribosomal protein L	w
+RIBOSOMAL	fly	FBgn0022069	Nnp-1	Q9VJZ7	27	139	Ribosomal RNA processing protein 1 homolog (NNP-1 homolog) (	w
+RIBOSOMAL	fly	FBgn0023170	RpL39	O16130	39	288	Large ribosomal subunit protein eL39 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0023519	mRpL16	Q9W547	41	315	Large ribosomal subunit protein uL16m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0023542	Nmd3	O46050	35	177	60S ribosomal export protein NMD3	w
+RIBOSOMAL	fly	FBgn0024182	waw	Q9VRH6	23	446	Translation factor waclaw, mitochondrial (EC 3.6.5.-) (Elong	w
+RIBOSOMAL	fly	FBgn0024733	RpL10	O61231	101	754	Large ribosomal subunit protein uL16 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0026261	bonsai	Q8WTC1	42	370	Small ribosomal subunit protein uS15m (28S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0026372	RpL23A	Q9W0A8	62	390	Ribosomal protein L23A	w
+RIBOSOMAL	fly	FBgn0026741	mRpL18	Q7JVK1	22	144	HL07956p (Mitochondrial ribosomal protein L18)	w
 RIBOSOMAL	fly	FBgn0027494	RpS10a	Q9VB14	22	293	Small ribosomal subunit protein eS10A (40S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0028648	mRpL50	Q9V3E3	3	11	Large ribosomal subunit protein mL50 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0028697	RpL15	O17445	41	341	Large ribosomal subunit protein eL15 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0029714	CG3527	Q9W4J5	8	161	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1	w
-RIBOSOMAL	fly	FBgn0029718	mRpL30	Q9W4I3	8	174	Large ribosomal subunit protein uL30m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0029785	RpL35	Q9W499	43	367	60S ribosomal protein L35	w
-RIBOSOMAL	fly	FBgn0029897	RpL17	Q9W3W8	47	431	Large ribosomal subunit protein uL22 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0028648	mRpL50	Q9V3E3	11	39	Large ribosomal subunit protein mL50 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0028697	RpL15	O17445	66	350	Large ribosomal subunit protein eL15 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0029714	CG3527	Q9W4J5	28	176	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1	w
+RIBOSOMAL	fly	FBgn0029718	mRpL30	Q9W4I3	24	176	Large ribosomal subunit protein uL30m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0029785	RpL35	Q9W499	82	374	60S ribosomal protein L35	w
+RIBOSOMAL	fly	FBgn0029897	RpL17	Q9W3W8	74	436	Large ribosomal subunit protein uL22 (60S ribosomal protein 	w
 RIBOSOMAL	fly	FBgn0030136	RpS28b	Q9W334	33	364	Small ribosomal subunit protein eS28 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0030433	mRpL49	Q9VYI3	6	201	Large ribosomal subunit protein mL49 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0030552	mRpL38	Q9VY48	15	118	Large ribosomal subunit protein mL38 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0030572	mRpS25	Q9VY28	8	163	Small ribosomal subunit protein mS25 (28S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0030433	mRpL49	Q9VYI3	28	205	Large ribosomal subunit protein mL49 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0030552	mRpL38	Q9VY48	27	120	Large ribosomal subunit protein mL38 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0030572	mRpS25	Q9VY28	13	163	Small ribosomal subunit protein mS25 (28S ribosomal protein 	w
 RIBOSOMAL	fly	FBgn0030616	RpL37-1	Q9VXX8	19	229	Large ribosomal subunit protein eL37A (Probable 60S ribosoma	w
-RIBOSOMAL	fly	FBgn0030686	mRpL3	Q9VXQ0	28	425	Large ribosomal subunit protein uL3m (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0030692	mRpS30	Q9VXP3	9	160	GH05406p (Mitochondrial ribosomal protein S30, isoform A) (M	w
-RIBOSOMAL	fly	FBgn0030786	mRpL22	Q9VXB5	22	410	Large ribosomal subunit protein uL22m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0031231	mRpL10	Q9VPL3	23	243	Large ribosomal subunit protein uL10m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0031357	mRpL48	Q9VQ35	10	143	Mitochondrial ribosomal protein L48, isoform A (Mitochondria	w
-RIBOSOMAL	fly	FBgn0031639	mRpS2	Q8MSS7	19	353	Mitochondrial ribosomal protein S2 (RE59650p)	w
-RIBOSOMAL	fly	FBgn0031651	mRpL24	Q9VMY1	12	361	Large ribosomal subunit protein uL24m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0031660	mRpL28	Q9VMX0	13	147	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0031980	RpL36A	Q9VLT7	12	239	Large ribosomal subunit protein eL42	w
-RIBOSOMAL	fly	FBgn0032050	CG13096	Q9VLK2	26	222	Ribosomal L1 domain-containing protein CG13096	w
-RIBOSOMAL	fly	FBgn0032053	mRpL51	Q9VLJ9	6	134	Large ribosomal subunit protein mL51 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0032236	mRpS7	Q9VKX4	20	341	Small ribosomal subunit protein uS7m (28S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0032261	CG6094	Q9VKU3	13	184	Large ribosomal subunit protein mL62 (EC 3.1.1.29) (Peptidyl	w
-RIBOSOMAL	fly	FBgn0032404	RpL7-like	Q9VKC1	66	662	IP16805p (IP16905p) (RH63749p) (Ribosomal protein L7-like, i	w
-RIBOSOMAL	fly	FBgn0032518	RpL24	Q9VJY6	26	286	Large ribosomal subunit protein eL24 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0032720	mRpL13	Q9VJ38	24	416	Large ribosomal subunit protein uL13m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0032849	mRpS18B	Q9VIN9	14	130	Small ribosomal subunit protein mS40 (28S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0032987	RpL21	Q9V9M7	35	380	60S ribosomal protein L21	w
-RIBOSOMAL	fly	FBgn0033208	mRpL52	Q7JWG9	12	148	Large ribosomal subunit protein mL52 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0033480	mRpL42	Q7K0A0	8	135	Large ribosomal subunit protein mL42	w
+RIBOSOMAL	fly	FBgn0030686	mRpL3	Q9VXQ0	55	427	Large ribosomal subunit protein uL3m (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0030692	mRpS30	Q9VXP3	18	160	GH05406p (Mitochondrial ribosomal protein S30, isoform A) (M	w
+RIBOSOMAL	fly	FBgn0030786	mRpL22	Q9VXB5	49	412	Large ribosomal subunit protein uL22m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0031231	mRpL10	Q9VPL3	31	246	Large ribosomal subunit protein uL10m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0031357	mRpL48	Q9VQ35	14	145	Mitochondrial ribosomal protein L48, isoform A (Mitochondria	w
+RIBOSOMAL	fly	FBgn0031639	mRpS2	Q8MSS7	39	356	Mitochondrial ribosomal protein S2 (RE59650p)	w
+RIBOSOMAL	fly	FBgn0031651	mRpL24	Q9VMY1	35	365	Large ribosomal subunit protein uL24m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0031660	mRpL28	Q9VMX0	29	149	Large ribosomal subunit protein bL28m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0031980	RpL36A	Q9VLT7	41	244	Large ribosomal subunit protein eL42	w
+RIBOSOMAL	fly	FBgn0032050	CG13096	Q9VLK2	59	235	Ribosomal L1 domain-containing protein CG13096	w
+RIBOSOMAL	fly	FBgn0032053	mRpL51	Q9VLJ9	24	138	Large ribosomal subunit protein mL51 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0032236	mRpS7	Q9VKX4	42	342	Small ribosomal subunit protein uS7m (28S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0032261	CG6094	Q9VKU3	26	188	Large ribosomal subunit protein mL62 (EC 3.1.1.29) (Peptidyl	w
+RIBOSOMAL	fly	FBgn0032404	RpL7-like	Q9VKC1	91	666	IP16805p (IP16905p) (RH63749p) (Ribosomal protein L7-like, i	w
+RIBOSOMAL	fly	FBgn0032518	RpL24	Q9VJY6	49	289	Large ribosomal subunit protein eL24 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0032720	mRpL13	Q9VJ38	49	418	Large ribosomal subunit protein uL13m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0032849	mRpS18B	Q9VIN9	26	130	Small ribosomal subunit protein mS40 (28S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0032987	RpL21	Q9V9M7	47	385	60S ribosomal protein L21	w
+RIBOSOMAL	fly	FBgn0033208	mRpL52	Q7JWG9	25	150	Large ribosomal subunit protein mL52 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0033480	mRpL42	Q7K0A0	17	137	Large ribosomal subunit protein mL42	w
 RIBOSOMAL	fly	FBgn0033555	RpS15Ab	Q7KR04	17	324	Small ribosomal subunit protein uS8B (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0033699	RpS11	Q0E9B6	32	451	Small ribosomal subunit protein uS17 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0033816	Ptcd3	A1Z9A8	15	144	Small ribosomal subunit protein mS39 (Protein PTCD3 homolog,	w
-RIBOSOMAL	fly	FBgn0033907	mRpS16	Q9V6Y3	15	241	Small ribosomal subunit protein bS16m (28S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0033912	RpS23	Q8T3U2	32	445	Small ribosomal subunit protein uS12 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0034001	mRpL41	Q7JZM8	10	195	Large ribosomal subunit protein mL41 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0034065	Rrp42	Q29QQ9	27	167	Ribosomal RNA-processing protein 42	w
-RIBOSOMAL	fly	FBgn0034138	RpS15	Q7JZW2	22	333	Small ribosomal subunit protein uS19 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0034361	mRpS28	A1ZBA5	12	134	FI07234p (Mitochondrial ribosomal protein S28)	w
-RIBOSOMAL	fly	FBgn0034422	CG7137	Q7K2B0	9	65	Ribosomal RNA-processing protein 8 (EC 2.1.1.-)	w
-RIBOSOMAL	fly	FBgn0034579	mRpL54	Q9W2M8	9	112	Large ribosomal subunit protein mL54	w
-RIBOSOMAL	fly	FBgn0034727	mRpS29	Q9W253	14	243	Small ribosomal subunit protein mS29	w
-RIBOSOMAL	fly	FBgn0034743	RpS16	Q9W237	58	601	Small ribosomal subunit protein uS9 (40S ribosomal protein S	w
-RIBOSOMAL	fly	FBgn0034822	RpL37-2	Q9W1U6	8	195	Large ribosomal subunit protein L37-2 (Large ribosomal subun	w
-RIBOSOMAL	fly	FBgn0034837	RpL22-like	Q9W1T1	10	233	Large ribosomal subunit protein eL22 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0034893	mRpL43	Q9W1L1	18	246	Large ribosomal subunit protein mL43	w
-RIBOSOMAL	fly	FBgn0034968	RpL12	Q9W1B9	47	416	Large ribosomal subunit protein uL11 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0034986	mRpS17	Q9W199	10	149	GEO07594p1 (Mitochondrial ribosomal protein S17) (RE28524p)	w
-RIBOSOMAL	fly	FBgn0035122	mRpL17	Q9W0S6	24	290	Large ribosomal subunit protein bL17m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0035272	mRpL46	Q9W086	22	235	Large ribosomal subunit protein mL46 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0035335	mRpL23	Q9W021	7	199	Large ribosomal subunit protein uL23m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0035374	mRpS35	Q9VZX6	23	196	LD06441p (Mitochondrial ribosomal protein S35)	w
-RIBOSOMAL	fly	FBgn0035422	RpL28	Q9VZS5	13	243	Large ribosomal subunit protein eL28 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0035534	mRpS6	Q9VZD5	27	234	Small ribosomal subunit protein bS6m (28S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0035753	RpL18	Q9VS34	41	341	Large ribosomal subunit protein eL18 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0036135	mRpL2	Q9VTF8	10	397	Mitochondrial ribosomal protein L2	w
+RIBOSOMAL	fly	FBgn0033699	RpS11	Q0E9B6	70	458	Small ribosomal subunit protein uS17 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0033816	Ptcd3	A1Z9A8	23	144	Small ribosomal subunit protein mS39 (Protein PTCD3 homolog,	w
+RIBOSOMAL	fly	FBgn0033907	mRpS16	Q9V6Y3	41	241	Small ribosomal subunit protein bS16m (28S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0033912	RpS23	Q8T3U2	65	452	Small ribosomal subunit protein uS12 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0034001	mRpL41	Q7JZM8	25	197	Large ribosomal subunit protein mL41 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0034065	Rrp42	Q29QQ9	30	167	Ribosomal RNA-processing protein 42	w
+RIBOSOMAL	fly	FBgn0034138	RpS15	Q7JZW2	46	338	Small ribosomal subunit protein uS19 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0034361	mRpS28	A1ZBA5	17	134	FI07234p (Mitochondrial ribosomal protein S28)	w
+RIBOSOMAL	fly	FBgn0034422	CG7137	Q7K2B0	12	73	Ribosomal RNA-processing protein 8 (EC 2.1.1.-)	w
+RIBOSOMAL	fly	FBgn0034579	mRpL54	Q9W2M8	21	117	Large ribosomal subunit protein mL54	w
+RIBOSOMAL	fly	FBgn0034727	mRpS29	Q9W253	25	244	Small ribosomal subunit protein mS29	w
+RIBOSOMAL	fly	FBgn0034743	RpS16	Q9W237	97	607	Small ribosomal subunit protein uS9 (40S ribosomal protein S	w
+RIBOSOMAL	fly	FBgn0034822	RpL37-2	Q9W1U6	24	196	Large ribosomal subunit protein L37-2 (Large ribosomal subun	w
+RIBOSOMAL	fly	FBgn0034837	RpL22-like	Q9W1T1	41	236	Large ribosomal subunit protein eL22 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0034893	mRpL43	Q9W1L1	37	248	Large ribosomal subunit protein mL43	w
+RIBOSOMAL	fly	FBgn0034968	RpL12	Q9W1B9	71	422	Large ribosomal subunit protein uL11 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0034986	mRpS17	Q9W199	22	149	GEO07594p1 (Mitochondrial ribosomal protein S17) (RE28524p)	w
+RIBOSOMAL	fly	FBgn0035122	mRpL17	Q9W0S6	57	293	Large ribosomal subunit protein bL17m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0035272	mRpL46	Q9W086	46	239	Large ribosomal subunit protein mL46 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0035335	mRpL23	Q9W021	20	201	Large ribosomal subunit protein uL23m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0035374	mRpS35	Q9VZX6	46	196	LD06441p (Mitochondrial ribosomal protein S35)	w
+RIBOSOMAL	fly	FBgn0035422	RpL28	Q9VZS5	34	246	Large ribosomal subunit protein eL28 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0035534	mRpS6	Q9VZD5	53	235	Small ribosomal subunit protein bS6m (28S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0035753	RpL18	Q9VS34	59	349	Large ribosomal subunit protein eL18 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0036135	mRpL2	Q9VTF8	23	401	Mitochondrial ribosomal protein L2	w
 RIBOSOMAL	fly	FBgn0036213	RpL10Ab	Q9VTP4	15	260	Large ribosomal subunit protein uL1 (60S ribosomal protein L	w
-RIBOSOMAL	fly	FBgn0036335	mRpL20	Q9VU36	17	210	LP04985p (Mitochondrial ribosomal protein L20)	w
-RIBOSOMAL	fly	FBgn0036462	mRpL39	Q9VUJ0	24	212	Large ribosomal subunit protein mL39 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0036557	mRpS31	Q9VUX1	19	140	Small ribosomal subunit protein mS31 (28S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0036774	mRpS26	Q9VVN2	19	155	Small ribosomal subunit protein mS26 (28S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0036825	RpL26	Q9VVU2	15	401	Large ribosomal subunit protein uL24 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0036853	mRpL21	Q9VVX4	8	230	Large ribosomal subunit protein bL21m	w
-RIBOSOMAL	fly	FBgn0036990	mRpL15	Q9VPF6	26	398	Large ribosomal subunit protein uL15m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0037102	CRIF	Q9VP13	12	159	Large ribosomal subunit protein mL64 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0037328	RpL35A	Q9VNB9	28	323	Large ribosomal subunit protein eL33 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0037330	mRpL44	Q9VNC1	11	199	Large ribosomal subunit protein mL44	w
-RIBOSOMAL	fly	FBgn0037351	RpL13A	Q9VNE9	45	434	Large ribosomal subunit protein uL13 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0037529	mRpS9	Q8SXF0	24	246	Mitochondrial ribosomal protein S9 (RH44312p)	w
-RIBOSOMAL	fly	FBgn0037566	mRpL1	Q9VHT5	25	311	Large ribosomal subunit protein uL1m	w
-RIBOSOMAL	fly	FBgn0037608	mRpL19	Q9VHN6	23	266	Large ribosomal subunit protein bL19m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0036335	mRpL20	Q9VU36	32	210	LP04985p (Mitochondrial ribosomal protein L20)	w
+RIBOSOMAL	fly	FBgn0036462	mRpL39	Q9VUJ0	29	213	Large ribosomal subunit protein mL39 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0036557	mRpS31	Q9VUX1	30	141	Small ribosomal subunit protein mS31 (28S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0036774	mRpS26	Q9VVN2	26	155	Small ribosomal subunit protein mS26 (28S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0036825	RpL26	Q9VVU2	27	405	Large ribosomal subunit protein uL24 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0036853	mRpL21	Q9VVX4	36	233	Large ribosomal subunit protein bL21m	w
+RIBOSOMAL	fly	FBgn0036990	mRpL15	Q9VPF6	38	399	Large ribosomal subunit protein uL15m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0037102	CRIF	Q9VP13	26	162	Large ribosomal subunit protein mL64 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0037328	RpL35A	Q9VNB9	57	326	Large ribosomal subunit protein eL33 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0037330	mRpL44	Q9VNC1	27	202	Large ribosomal subunit protein mL44	w
+RIBOSOMAL	fly	FBgn0037351	RpL13A	Q9VNE9	46	434	Large ribosomal subunit protein uL13 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0037529	mRpS9	Q8SXF0	46	248	Mitochondrial ribosomal protein S9 (RH44312p)	w
+RIBOSOMAL	fly	FBgn0037566	mRpL1	Q9VHT5	40	313	Large ribosomal subunit protein uL1m	w
+RIBOSOMAL	fly	FBgn0037608	mRpL19	Q9VHN6	56	270	Large ribosomal subunit protein bL19m (39S ribosomal protein	w
 RIBOSOMAL	fly	FBgn0037686	RpL34b	Q9VHE5	13	251	Large ribosomal subunit protein eL34 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0037892	mRpL40	Q9VGP7	21	183	Large ribosomal subunit protein mL40	w
-RIBOSOMAL	fly	FBgn0038234	mRpL11	Q9VFJ2	22	339	Large ribosomal subunit protein uL11m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0037892	mRpL40	Q9VGP7	40	187	Large ribosomal subunit protein mL40	w
+RIBOSOMAL	fly	FBgn0038234	mRpL11	Q9VFJ2	51	341	Large ribosomal subunit protein uL11m (39S ribosomal protein	w
 RIBOSOMAL	fly	FBgn0038277	RpS5b	Q9VFE4	18	367	Small ribosomal subunit protein uS7B (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0038281	RpL10Aa	Q9VFE0	12	235	Large ribosomal subunit protein uL1	w
-RIBOSOMAL	fly	FBgn0038307	mRpS10	Q9VFB2	24	345	Small ribosomal subunit protein uS10m (28S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0038319	mRpL9	Q9VF89	8	188	Large ribosomal subunit protein bL9m (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0038426	mRpS33	Q9VEV5	10	136	Small ribosomal subunit protein mS33	w
-RIBOSOMAL	fly	FBgn0038474	mRpS11	Q9VEN6	13	345	Mitochondrial ribosomal protein S11 (RE01527p)	w
-RIBOSOMAL	fly	FBgn0038678	mRpL55	Q9VE04	57	523	Large ribosomal subunit protein mL55 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0038834	RpS30	Q9VDH8	49	284	Ribosomal protein S30, isoform A (Ribosomal protein S30, iso	w
-RIBOSOMAL	fly	FBgn0038923	mRpL35	Q8MS27	7	140	Large ribosomal subunit protein bL35m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0039129	RpS19b	Q7KS38	26	294	Small ribosomal subunit protein eS19B (40S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0039159	mRpS24	Q9VCC3	18	132	Small ribosomal subunit protein uS3m (28S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0038281	RpL10Aa	Q9VFE0	31	237	Large ribosomal subunit protein uL1	w
+RIBOSOMAL	fly	FBgn0038307	mRpS10	Q9VFB2	47	346	Small ribosomal subunit protein uS10m (28S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0038319	mRpL9	Q9VF89	18	191	Large ribosomal subunit protein bL9m (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0038426	mRpS33	Q9VEV5	18	137	Small ribosomal subunit protein mS33	w
+RIBOSOMAL	fly	FBgn0038474	mRpS11	Q9VEN6	31	345	Mitochondrial ribosomal protein S11 (RE01527p)	w
+RIBOSOMAL	fly	FBgn0038678	mRpL55	Q9VE04	69	527	Large ribosomal subunit protein mL55 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0038834	RpS30	Q9VDH8	80	289	Ribosomal protein S30, isoform A (Ribosomal protein S30, iso	w
+RIBOSOMAL	fly	FBgn0038923	mRpL35	Q8MS27	27	143	Large ribosomal subunit protein bL35m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0039129	RpS19b	Q7KS38	53	296	Small ribosomal subunit protein eS19B (40S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0039159	mRpS24	Q9VCC3	29	132	Small ribosomal subunit protein uS3m (28S ribosomal protein 	w
 RIBOSOMAL	fly	FBgn0039182	Rrp5	Q9VC94	19	211	rRNA biogenesis protein RRP5 (Ribosomal RNA-processing prote	w
-RIBOSOMAL	fly	FBgn0039300	RpS27	Q9VBU9	34	357	40S ribosomal protein S27	w
-RIBOSOMAL	fly	FBgn0039359	RpL27	Q9VBN5	17	302	60S ribosomal protein L27	w
-RIBOSOMAL	fly	FBgn0039406	RpL34a	Q9VBH8	25	249	Large ribosomal subunit protein eL34 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0039555	mRpS22	Q9VAY9	21	140	GH07821p (Mitochondrial ribosomal protein S22)	w
-RIBOSOMAL	fly	FBgn0039713	RpS8	Q8MLY8	40	367	Small ribosomal subunit protein eS8 (40S ribosomal protein S	w
-RIBOSOMAL	fly	FBgn0039739	RpS28a	Q9VAB9	7	267	Small ribosomal subunit protein eS28 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0039757	RpS7	Q9VA91	21	382	Small ribosomal subunit protein eS7 (40S ribosomal protein S	w
-RIBOSOMAL	fly	FBgn0039765	mRpS18C	Q9VA81	10	154	GEO10172p1 (IP02765p) (IP02768p) (Mitochondrial ribosomal pr	w
-RIBOSOMAL	fly	FBgn0039835	mRpL32	Q9V9Z1	11	224	Large ribosomal subunit protein bL32m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0039857	RpL6	Q9V9W3	29	303	Large ribosomal subunit protein eL6 (60S ribosomal protein L	w
-RIBOSOMAL	fly	FBgn0040007	RpL38	Q9W5N2	24	322	Large ribosomal subunit protein eL38 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0040389	mRpL14	Q9W4Z2	9	138	Large ribosomal subunit protein uL14m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0040907	mRpL33	Q9W4L1	6	57	Large ribosomal subunit protein bL33m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0042112	mRpL36	Q9I7Q9	3	235	Ribosomal protein	w
-RIBOSOMAL	fly	FBgn0044030	mRpS14	Q9VWI3	17	308	GEO10158p1 (IP02458p) (Mitochondrial ribosomal protein S14, 	w
-RIBOSOMAL	fly	FBgn0044511	mRpS21	Q8I0J3	8	93	Mitochondrial ribosomal protein S21, isoform A (Mitochondria	w
+RIBOSOMAL	fly	FBgn0039300	RpS27	Q9VBU9	63	362	40S ribosomal protein S27	w
+RIBOSOMAL	fly	FBgn0039359	RpL27	Q9VBN5	33	306	60S ribosomal protein L27	w
+RIBOSOMAL	fly	FBgn0039406	RpL34a	Q9VBH8	49	250	Large ribosomal subunit protein eL34 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0039555	mRpS22	Q9VAY9	35	140	GH07821p (Mitochondrial ribosomal protein S22)	w
+RIBOSOMAL	fly	FBgn0039713	RpS8	Q8MLY8	72	373	Small ribosomal subunit protein eS8 (40S ribosomal protein S	w
+RIBOSOMAL	fly	FBgn0039739	RpS28a	Q9VAB9	24	268	Small ribosomal subunit protein eS28 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0039757	RpS7	Q9VA91	42	387	Small ribosomal subunit protein eS7 (40S ribosomal protein S	w
+RIBOSOMAL	fly	FBgn0039765	mRpS18C	Q9VA81	31	154	GEO10172p1 (IP02765p) (IP02768p) (Mitochondrial ribosomal pr	w
+RIBOSOMAL	fly	FBgn0039835	mRpL32	Q9V9Z1	33	227	Large ribosomal subunit protein bL32m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0039857	RpL6	Q9V9W3	52	314	Large ribosomal subunit protein eL6 (60S ribosomal protein L	w
+RIBOSOMAL	fly	FBgn0040007	RpL38	Q9W5N2	50	326	Large ribosomal subunit protein eL38 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0040389	mRpL14	Q9W4Z2	21	141	Large ribosomal subunit protein uL14m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0040907	mRpL33	Q9W4L1	9	60	Large ribosomal subunit protein bL33m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0042112	mRpL36	Q9I7Q9	39	243	Ribosomal protein	w
+RIBOSOMAL	fly	FBgn0044030	mRpS14	Q9VWI3	32	308	GEO10158p1 (IP02458p) (Mitochondrial ribosomal protein S14, 	w
+RIBOSOMAL	fly	FBgn0044511	mRpS21	Q8I0J3	18	95	Mitochondrial ribosomal protein S21, isoform A (Mitochondria	w
 RIBOSOMAL	fly	FBgn0050481	mRpL53	A1Z9J6	8	123	Large ribosomal subunit protein mL53 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0051450	mRpS18A	Q9VHQ0	8	160	FI06460p (GEO10512p1) (Mitochondrial ribosomal protein S18A)	w
-RIBOSOMAL	fly	FBgn0053002	mRpL27	Q86BM8	13	244	Mitochondrial ribosomal protein L27, isoform A (Mitochondria	w
-RIBOSOMAL	fly	FBgn0064225	RpL5	Q9W5R8	29	401	Large ribosomal subunit protein uL18 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0066084	RpL41	Q962S2	5	95	60S ribosomal protein L41	w
-RIBOSOMAL	fly	FBgn0083983	mRpL34	Q0E959	1	1	Large ribosomal subunit protein bL34m (39S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0085211	RpS28-like	A8DYY3	6	40	Small ribosomal subunit protein eS28 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0086472	RpS25	P48588	29	289	Small ribosomal subunit protein eS25 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0086710	RpL30	Q9VJ19	24	318	Large ribosomal subunit protein eL30 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0260407	mRpS23	Q8IP62	10	140	Mitochondrial ribosomal protein S23	w
-RIBOSOMAL	fly	FBgn0260648	Rrp40	Q8IPX7	9	114	Exosome complex component RRP40 (Ribosomal RNA-processing pr	w
-RIBOSOMAL	fly	FBgn0261380	mRpL37	Q9VGW9	5	24	Large ribosomal subunit protein mL37 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0261592	RpS6	P29327	46	421	Small ribosomal subunit protein eS6 (40S ribosomal protein S	w
-RIBOSOMAL	fly	FBgn0261596	RpS24	Q9W229	33	348	40S ribosomal protein S24	w
-RIBOSOMAL	fly	FBgn0261597	RpS26	P13008	46	299	Small ribosomal subunit protein eS26 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0261599	RpS29	Q9VH69	25	356	Small ribosomal subunit protein uS14 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0261602	RpL8	Q9V3G1	15	452	Large ribosomal subunit protein uL2 (60S ribosomal protein L	w
-RIBOSOMAL	fly	FBgn0261608	RpL37A	Q9VMU4	19	298	Large ribosomal subunit protein eL43 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0051450	mRpS18A	Q9VHQ0	23	160	FI06460p (GEO10512p1) (Mitochondrial ribosomal protein S18A)	w
+RIBOSOMAL	fly	FBgn0053002	mRpL27	Q86BM8	46	253	Mitochondrial ribosomal protein L27, isoform A (Mitochondria	w
+RIBOSOMAL	fly	FBgn0064225	RpL5	Q9W5R8	46	404	Large ribosomal subunit protein uL18 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0066084	RpL41	Q962S2	14	96	60S ribosomal protein L41	w
+RIBOSOMAL	fly	FBgn0083983	mRpL34	Q0E959	2	2	Large ribosomal subunit protein bL34m (39S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0085211	RpS28-like	A8DYY3	11	40	Small ribosomal subunit protein eS28 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0086472	RpS25	P48588	50	291	Small ribosomal subunit protein eS25 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0086710	RpL30	Q9VJ19	58	322	Large ribosomal subunit protein eL30 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0260407	mRpS23	Q8IP62	19	141	Mitochondrial ribosomal protein S23	w
+RIBOSOMAL	fly	FBgn0260648	Rrp40	Q8IPX7	10	115	Exosome complex component RRP40 (Ribosomal RNA-processing pr	w
+RIBOSOMAL	fly	FBgn0261380	mRpL37	Q9VGW9	25	58	Large ribosomal subunit protein mL37 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0261592	RpS6	P29327	87	430	Small ribosomal subunit protein eS6 (40S ribosomal protein S	w
+RIBOSOMAL	fly	FBgn0261596	RpS24	Q9W229	63	354	40S ribosomal protein S24	w
+RIBOSOMAL	fly	FBgn0261597	RpS26	P13008	76	303	Small ribosomal subunit protein eS26 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0261599	RpS29	Q9VH69	51	360	Small ribosomal subunit protein uS14 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0261602	RpL8	Q9V3G1	54	460	Large ribosomal subunit protein uL2 (60S ribosomal protein L	w
+RIBOSOMAL	fly	FBgn0261608	RpL37A	Q9VMU4	39	302	Large ribosomal subunit protein eL43 (60S ribosomal protein 	w
 RIBOSOMAL	fly	FBgn0262866	S6kII	Q9VR61	218	1313	Ribosomal protein S6 kinase II, isoform A (EC 2.7.11.-) (Rib	w
-RIBOSOMAL	fly	FBgn0263863	mRpL45	Q9VCX3	10	131	Large ribosomal subunit protein mL45 (39S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0283472	S6k	Q94533	181	1237	Ribosomal protein S6 kinase (EC 2.7.11.1)	w
-RIBOSOMAL	fly	FBgn0285947	RpS10b	Q9VWG3	14	277	Small ribosomal subunit protein eS10B (40S ribosomal protein	w
-RIBOSOMAL	fly	FBgn0285948	RpL27A	P41092	21	405	Large ribosomal subunit protein uL15 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0285949	RpL31	Q9V597	15	347	Large ribosomal subunit protein eL31 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0285950	RpL19	P36241	52	335	Large ribosomal subunit protein eL19 (60S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0285951	mRpS34	Q9VV39	5	91	Mitochondrial ribosomal protein S34 (RH73723p)	w
-RIBOSOMAL	fly	FBgn0286213	RpS12	P80455	24	356	Small ribosomal subunit protein eS12 (40S ribosomal protein 	w
-RIBOSOMAL	fly	FBgn0287187	mRpS5	Q8SYP9	23	388	Small ribosomal subunit protein uS5m (28S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0263863	mRpL45	Q9VCX3	31	134	Large ribosomal subunit protein mL45 (39S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0283472	S6k	Q94533	185	1247	Ribosomal protein S6 kinase (EC 2.7.11.1)	w
+RIBOSOMAL	fly	FBgn0285947	RpS10b	Q9VWG3	28	281	Small ribosomal subunit protein eS10B (40S ribosomal protein	w
+RIBOSOMAL	fly	FBgn0285948	RpL27A	P41092	37	411	Large ribosomal subunit protein uL15 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0285949	RpL31	Q9V597	27	351	Large ribosomal subunit protein eL31 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0285950	RpL19	P36241	87	342	Large ribosomal subunit protein eL19 (60S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0285951	mRpS34	Q9VV39	24	92	Mitochondrial ribosomal protein S34 (RH73723p)	w
+RIBOSOMAL	fly	FBgn0286213	RpS12	P80455	38	358	Small ribosomal subunit protein eS12 (40S ribosomal protein 	w
+RIBOSOMAL	fly	FBgn0287187	mRpS5	Q8SYP9	45	389	Small ribosomal subunit protein uS5m (28S ribosomal protein 	w
 RIBOSOMAL	human	A0A0A6YYL6	RPL17-C18orf32	A0A0A6YYL6	30	455	Large ribosomal subunit protein uL22	w
 RIBOSOMAL	human	A0A1W2PQS6	RPS10-NUDT3	A0A1W2PQS6	46	340	Small ribosomal subunit protein eS10	w
 RIBOSOMAL	human	A0A8I5KQE6	RPSA2	A0A8I5KQE6	1	2	Small ribosomal subunit protein uS2B (37 kDa laminin recepto	w
@@ -1751,21 +1751,21 @@ RIBOSOMAL	zebrafish	Q8JHJ1	rpl35	Q8JHJ1	29	505	Large ribosomal subunit protein u
 RIBOSOMAL	zebrafish	Q90Z10	rpl13	Q90Z10	24	422	Large ribosomal subunit protein eL13	w
 RIBOSOMAL	zebrafish	Q9PV90	rplp0	Q9PV90	20	433	Large ribosomal subunit protein uL10	w
 RIBOSOMAL	zebrafish	X1WHQ5	mrpl12	X1WHQ5	6	173	Large ribosomal subunit protein bL12m	w
-RIBOSOME	fly	FBgn0025366	Ip259	O76994	11	196	Ribosome biogenesis protein NSA2 homolog	w
-RIBOSOME	fly	FBgn0027525	LTV1	Q7KN79	21	110	Protein LTV1 homolog (Low temperature viability protein 1) (	w
-RIBOSOME	fly	FBgn0028744	CG5033	Q7K0Y1	18	173	Ribosome biogenesis protein BOP1 homolog	w
-RIBOSOME	fly	FBgn0029714	CG3527	Q9W4J5	8	161	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1	w
-RIBOSOME	fly	FBgn0030061	Nop53	Q9W3C2	26	147	Ribosome biogenesis protein NOP53	w
-RIBOSOME	fly	FBgn0032298	CG6724	Q9VKQ3	25	237	Ribosome biogenesis protein WDR12 homolog	w
-RIBOSOME	fly	FBgn0032408	CG6712	Q9VKB4	21	137	Probable ribosome production factor 1 (Ribosome biogenesis p	w
-RIBOSOME	fly	FBgn0033485	RpLP0-like	Q7K1Q7	16	350	Ribosome assembly factor mrt4	w
-RIBOSOME	fly	FBgn0035714	Sbds	Q9VRY5	3	90	Ribosome maturation protein SBDS	w
-RIBOSOME	fly	FBgn0035980	mRRF1	Q9VSW4	4	151	FI06490p (Mitochondrial ribosome recycling factor 1)	w
-RIBOSOME	fly	FBgn0037073	Tsr1	Q9VP47	8	115	Pre-rRNA-processing protein TSR1 homolog (Tsr1 ribosome asse	w
-RIBOSOME	fly	FBgn0037899	RpL24-like	Q9VGN9	26	215	Probable ribosome biogenesis protein RLP24	w
-RIBOSOME	fly	FBgn0038585	Non3	Q9VEB3	17	114	Ribosome production factor 2 homolog (Brix domain-containing	w
-RIBOSOME	fly	FBgn0039233	CG7006	Q9VC28	8	126	60S ribosome subunit biogenesis protein NIP7 homolog	w
-RIBOSOME	fly	FBgn0052409	CG32409	Q8I937	26	115	Ribosome biogenesis regulatory protein	w
+RIBOSOME	fly	FBgn0025366	Ip259	O76994	37	230	Ribosome biogenesis protein NSA2 homolog	w
+RIBOSOME	fly	FBgn0027525	LTV1	Q7KN79	33	121	Protein LTV1 homolog (Low temperature viability protein 1) (	w
+RIBOSOME	fly	FBgn0028744	CG5033	Q7K0Y1	36	187	Ribosome biogenesis protein BOP1 homolog	w
+RIBOSOME	fly	FBgn0029714	CG3527	Q9W4J5	28	176	Ribosomal RNA small subunit methyltransferase NEP1 (EC 2.1.1	w
+RIBOSOME	fly	FBgn0030061	Nop53	Q9W3C2	53	168	Ribosome biogenesis protein NOP53	w
+RIBOSOME	fly	FBgn0032298	CG6724	Q9VKQ3	37	258	Ribosome biogenesis protein WDR12 homolog	w
+RIBOSOME	fly	FBgn0032408	CG6712	Q9VKB4	47	178	Probable ribosome production factor 1 (Ribosome biogenesis p	w
+RIBOSOME	fly	FBgn0033485	RpLP0-like	Q7K1Q7	42	393	Ribosome assembly factor mrt4	w
+RIBOSOME	fly	FBgn0035714	Sbds	Q9VRY5	4	91	Ribosome maturation protein SBDS	w
+RIBOSOME	fly	FBgn0035980	mRRF1	Q9VSW4	11	154	FI06490p (Mitochondrial ribosome recycling factor 1)	w
+RIBOSOME	fly	FBgn0037073	Tsr1	Q9VP47	18	129	Pre-rRNA-processing protein TSR1 homolog (Tsr1 ribosome asse	w
+RIBOSOME	fly	FBgn0037899	RpL24-like	Q9VGN9	67	231	Probable ribosome biogenesis protein RLP24	w
+RIBOSOME	fly	FBgn0038585	Non3	Q9VEB3	43	154	Ribosome production factor 2 homolog (Brix domain-containing	w
+RIBOSOME	fly	FBgn0039233	CG7006	Q9VC28	24	171	60S ribosome subunit biogenesis protein NIP7 homolog	w
+RIBOSOME	fly	FBgn0052409	CG32409	Q8I937	47	144	Ribosome biogenesis regulatory protein	w
 RIBOSOME	fly	FBgn0259152	Clbn	Q9VBX1	7	101	Ribosome quality control complex subunit NEMF homolog (Prote	w
 RIBOSOME	human	E9PRG8	RSMC	E9PRG8	3	57	28S rRNA/ribosome and sororin micro-cofactor	w
 RIBOSOME	human	L0R8F8	MIEF1	L0R8F8	9	253	Mitochondrial ribosome and complex I assembly factor AltMIEF	w
@@ -1858,7 +1858,7 @@ RIBOSOME	zebrafish	Q7SX91	rrs1	Q7SX91	18	117	Ribosome biogenesis regulatory prot
 RIBOSOME	zebrafish	Q7ZTZ2	rsl24d1	Q7ZTZ2	27	230	Probable ribosome biogenesis protein RLP24	w
 RIBOSOME	zebrafish	Q8JHH5	airim	Q8JHH5	2	3	AFG2-interacting ribosome maturation factor	w
 RIBOSOME-ASSOCIATED	fly	FBgn0032031	CG13390	Q9VLN0	4	100	Mitochondrial ribosome-associated GTPase 2	w
-RIBOSOME-ASSOCIATED	fly	FBgn0039020	CG17141	Q9VCU5	2	143	Mitochondrial ribosome-associated GTPase 1 (Mitochondrial GT	w
+RIBOSOME-ASSOCIATED	fly	FBgn0039020	CG17141	Q9VCU5	2	144	Mitochondrial ribosome-associated GTPase 1 (Mitochondrial GT	w
 RIBOSOME-ASSOCIATED	human	Q8N6R1	SERP2	Q8N6R1	23	84	Stress-associated endoplasmic reticulum protein 2 (Ribosome-	w
 RIBOSOME-ASSOCIATED	human	Q9BT17	MTG1	Q9BT17	6	348	Mitochondrial ribosome-associated GTPase 1 (GTP-binding prot	w
 RIBOSOME-ASSOCIATED	human	Q9H4K7	MTG2	Q9H4K7	10	355	Mitochondrial ribosome-associated GTPase 2 (GTP-binding prot	w
@@ -1889,14 +1889,14 @@ RIBOSOME-RELEASING	yeast	P39677	MEF2	P39677	6	197	Ribosome-releasing factor 2, m
 RIBOSOME-RELEASING	zebrafish	A0JMI9	gfm2	A0JMI9	7	98	Ribosome-releasing factor 2, mitochondrial	w
 RIBOSYL	human	Q9NWW6	NMRK1	Q9NWW6	3	65	Nicotinamide riboside kinase 1 (NRK 1) (NmR-K 1) (EC 2.7.1.2	w
 RIBOSYLATION	fly	FBgn0013749	Arf4	P40945	21	153	ADP ribosylation factor 4 (dARF II)	w
-RIBOSYLATION	fly	FBgn0013750	Arf6	P40946	27	108	ADP-ribosylation factor 6 (ARF6) (ADP ribosylation factor at	w
+RIBOSYLATION	fly	FBgn0013750	Arf6	P40946	33	123	ADP-ribosylation factor 6 (ARF6) (ADP ribosylation factor at	w
 RIBOSYLATION	fly	FBgn0039889	Arl4	H9XVM3	6	29	ADP ribosylation factor-like 4, isoform B	w
 RIBOSYLATION	human	I3L3L1	ARL17B	I3L3L1	2	10	ADP ribosylation factor like GTPase 17A	w
 RIBOSYLDIHYDRONICOTINAMIDE	human	P16083	NQO2	P16083	2	192	Ribosyldihydronicotinamide dehydrogenase [quinone] (EC 1.10.	w
 RIBOSYLNICOTINAMIDE	human	Q9NWW6	NMRK1	Q9NWW6	3	65	Nicotinamide riboside kinase 1 (NRK 1) (NmR-K 1) (EC 2.7.1.2	w
 RIBULOSE-5-PHOSPHATE-3-EPIMERASE	human	Q96AT9	RPE	Q96AT9	5	115	Ribulose-phosphate 3-epimerase (EC 5.1.3.1) (Ribulose-5-phos	w
 RIBULOSE-5-PHOSPHATE-3-EPIMERASE-LIKE	human	Q2QD12	RPEL1	Q2QD12	1	30	Ribulose-phosphate 3-epimerase-like protein 1 (EC 5.1.3.1) (	w
-RIBULOSE-PHOSPHATE	fly	FBgn0050499	Rpe	Q95RV5	3	83	Ribulose-phosphate 3-epimerase (EC 5.1.3.1)	w
+RIBULOSE-PHOSPHATE	fly	FBgn0050499	Rpe	Q95RV5	5	95	Ribulose-phosphate 3-epimerase (EC 5.1.3.1)	w
 RIBULOSE-PHOSPHATE	human	Q2QD12	RPEL1	Q2QD12	1	30	Ribulose-phosphate 3-epimerase-like protein 1 (EC 5.1.3.1) (	w
 RIBULOSE-PHOSPHATE	human	Q96AT9	RPE	Q96AT9	5	115	Ribulose-phosphate 3-epimerase (EC 5.1.3.1) (Ribulose-5-phos	w
 RIBULOSE-PHOSPHATE	worm	Q95ZW2	CELE_F08F8.7	Q95ZW2	0	9	Ribulose-phosphate 3-epimerase	w

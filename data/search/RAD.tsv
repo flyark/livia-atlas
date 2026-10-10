@@ -11,8 +11,8 @@ RAD-54.L2	worm	Q18241	rad-54.l2	Q18241	2	50	Helicase ARIP4
 RAD-8	worm	Q4W4Z2	rad-8	Q4W4Z2	1	4	Reticulon-4-interacting protein 1, mitochondrial	
 RAD1	candida-albicans-237561	A0A1D8PIP5	RAD1	A0A1D8PIP5	5	64	SsDNA endodeoxyribonuclease	
 RAD1	dictyostelium-discoideum	Q55E62	rad1	Q55E62	2	9	Cell cycle checkpoint protein RAD1	
-RAD1	fly	FBgn0026778	Rad1	Q9VQD4	2	22	DNA repair protein Rad1 (IP03973p2) (Radiation insensitive 1	w
-RAD1	fly	FBgn0026778	Rad1	Q9VQD4	2	22	DNA repair protein Rad1 (IP03973p2) (Radiation insensitive 1	w
+RAD1	fly	FBgn0026778	Rad1	Q9VQD4	3	22	DNA repair protein Rad1 (IP03973p2) (Radiation insensitive 1	w
+RAD1	fly	FBgn0026778	Rad1	Q9VQD4	3	22	DNA repair protein Rad1 (IP03973p2) (Radiation insensitive 1	w
 RAD1	human	O60671	RAD1	O60671	21	106	Cell cycle checkpoint protein RAD1 (hRAD1) (Rad1-like DNA da	
 RAD1	human	P55042	RRAD	P55042	18	90	GTP-binding protein RAD (RAD1) (Ras associated with diabetes	w
 RAD1	human	Q9BSD3	RHNO1	Q9BSD3	17	168	RAD9, HUS1, RAD1-interacting nuclear orphan protein 1 (RAD9,	w
@@ -41,8 +41,8 @@ RAD16	schizosaccharomyces-pombe	P36617	rad16	P36617	4	74	DNA repair protein rad1
 RAD16	yeast	P31244	RAD16	P31244	2	63	DNA repair protein RAD16	
 RAD17	arabidopsis-thaliana	Q9MBA3	RAD17	Q9MBA3	12	49	Cell cycle checkpoint protein RAD17	
 RAD17	dictyostelium-discoideum	Q54D34	rad17	Q54D34	5	17	Cell cycle checkpoint protein RAD17	
-RAD17	fly	FBgn0025808	Rad17	O96532	10	39	Rad17	w
-RAD17	fly	FBgn0025808	Rad17	O96532	10	39	Rad17	w
+RAD17	fly	FBgn0025808	Rad17	O96532	12	47	Rad17	w
+RAD17	fly	FBgn0025808	Rad17	O96532	12	47	Rad17	w
 RAD17	human	O75943	RAD17	O75943	25	288	Cell cycle checkpoint protein RAD17 (hRad17) (RF-C/activator	
 RAD17	mus-musculus	Q6NXW6	Rad17	Q6NXW6	12	38	Cell cycle checkpoint protein RAD17	
 RAD17	rattus-norvegicus	E9PTL1	Rad17	E9PTL1	11	39	Cell cycle checkpoint protein RAD17	
@@ -64,7 +64,7 @@ RAD2	candida-albicans-237561	A0A1D8PLU8	RAD2	A0A1D8PLU8	5	40	SsDNA endodeoxyribo
 RAD2	human	P39748	FEN1	P39748	10	278		
 RAD2	schizosaccharomyces-pombe	P39750	rad2	P39750	2	53	Flap endonuclease 1	
 RAD2	yeast	P07276	RAD2	P07276	10	48	DNA repair protein RAD2	
-RAD21	fly	FBgn0260987	vtd	O96689	15	70	FI11703p (Rad21 mitotic cohesin) (Verthandi, isoform A)	w
+RAD21	fly	FBgn0260987	vtd	O96689	16	72	FI11703p (Rad21 mitotic cohesin) (Verthandi, isoform A)	w
 RAD21	human	O60216	RAD21	O60216	56	454	Double-strand-break repair protein rad21 homolog (hHR21) (Nu	
 RAD21	mus-musculus	Q61550	Rad21	Q61550	20	86	Double-strand-break repair protein rad21 homolog	
 RAD21	rattus-norvegicus	F7EK71	Rad21	F7EK71	16	66	RAD21 cohesin complex component	
@@ -86,9 +86,9 @@ RAD21L1	zebrafish	A0JMM5	rad21l1	A0JMM5	15	51	Double-strand-break repair protein
 RAD21_HUMAN	human	O60216	RAD21	O60216	56	454		
 RAD22	schizosaccharomyces-pombe	P36592	rad22	P36592	5	38	DNA repair and recombination protein rad22	
 RAD23	candida-albicans-237561	A0A1D8PGE3	RAD23	A0A1D8PGE3	20	198	UV excision repair protein RAD23	
-RAD23	fly	FBgn0026777	Rad23	Q9V3W9	21	174	UV excision repair protein RAD23	w
-RAD23	fly	FBgn0026777	Rad23	Q9V3W9	21	174	UV excision repair protein RAD23	w
-RAD23	fly	FBgn0039147	CG10694	Q9VCD5	19	163	UV excision repair protein RAD23	w
+RAD23	fly	FBgn0026777	Rad23	Q9V3W9	22	180	UV excision repair protein RAD23	w
+RAD23	fly	FBgn0026777	Rad23	Q9V3W9	22	180	UV excision repair protein RAD23	w
+RAD23	fly	FBgn0039147	CG10694	Q9VCD5	22	163	UV excision repair protein RAD23	w
 RAD23	human	P54725	RAD23A	P54725	69	469	Lysine-specific demethylase RAD23A (EC 1.14.11.-) (UV excisi	w
 RAD23	human	P54727	RAD23B	P54727	61	471	Lysine-specific demethylase RAD23B (EC 1.14.11.-) (UV excisi	w
 RAD23	oryza-sativa-subsp-japonica	Q40742	RAD23	Q40742	65	728	Probable ubiquitin receptor RAD23	
@@ -166,9 +166,9 @@ RAD50_366	fly	FBgn0034728	rad50	A0A0B4K7L0	4	34
 RAD50_HUMAN	human	Q92878	RAD50	Q92878	22	419		
 RAD51	arabidopsis-thaliana	P94102	RAD51	P94102	8	54	DNA repair protein RAD51 homolog 1	
 RAD51	candida-albicans-237561	Q59UY8	RAD51	Q59UY8	4	64	DNA repair protein RAD51 homolog	
-RAD51	fly	FBgn0003479	spn-A	Q27297	6	200	DNA repair protein Rad51 homolog (Protein spindle-A) (RecA p	w
-RAD51	fly	FBgn0003482	spn-D	Q8SZ30	4	49	DNA repair protein RAD51 homolog 3	w
-RAD51	fly	FBgn0033389	Rad51D	A1Z7R8	3	62	Rad51 recombinase D	w
+RAD51	fly	FBgn0003479	spn-A	Q27297	10	217	DNA repair protein Rad51 homolog (Protein spindle-A) (RecA p	w
+RAD51	fly	FBgn0003482	spn-D	Q8SZ30	6	52	DNA repair protein RAD51 homolog 3	w
+RAD51	fly	FBgn0033389	Rad51D	A1Z7R8	5	65	Rad51 recombinase D	w
 RAD51	human	C9JYJ0	RAD51B	C9JYJ0	6	75	DNA repair protein RAD51 homolog 2	w
 RAD51	human	O15315	RAD51B	O15315	4	76	DNA repair protein RAD51 homolog 2 (R51H2) (RAD51 homolog B)	w
 RAD51	human	O43502	RAD51C	O43502	16	305	DNA repair protein RAD51 homolog 3 (R51H3) (RAD51 homolog C)	w
@@ -211,7 +211,7 @@ RAD51C	rattus-norvegicus	G3V6U0	Rad51c	G3V6U0	3	62	DNA repair protein RAD51 homo
 RAD51C	zebrafish	A0A8M9QC24	rad51c	A0A8M9QC24	4	75	DNA repair protein RAD51 homolog 3	
 RAD51D	arabidopsis-thaliana	Q9LQQ2	RAD51D	Q9LQQ2	4	52	DNA repair protein RAD51 homolog 4	
 RAD51D	dictyostelium-discoideum	Q1ZXF0	rad51d	Q1ZXF0	3	25	Probable DNA repair protein RAD51 homolog 4	
-RAD51D	fly	FBgn0033389	Rad51D	A1Z7R8	3	62	Rad51 recombinase D	
+RAD51D	fly	FBgn0033389	Rad51D	A1Z7R8	5	65	Rad51 recombinase D	
 RAD51D	human	O75771	RAD51D	O75771	17	221	DNA repair protein RAD51 homolog 4 (R51H3) (RAD51 homolog D)	
 RAD51D	mus-musculus	O55230	Rad51d	O55230	7	75	DNA repair protein RAD51 homolog 4	
 RAD51D	oryza-sativa-subsp-japonica	A0A075DNI2	RAD51D	A0A075DNI2	4	56	Os09g0104200 protein	
@@ -239,12 +239,12 @@ RAD53	yeast	P22216	RAD53	P22216	7	124	Serine/threonine-protein kinase RAD53 (EC 
 RAD53_YEAST	yeast	P22216	RAD53	P22216	7	124		
 RAD54	candida-albicans-237561	Q5AKX3	RAD54	Q5AKX3	0	22	DNA-dependent ATPase	
 RAD54	dictyostelium-discoideum	Q54RP8	rad54	Q54RP8	1	14	SNF2-related domain-containing protein	
-RAD54	fly	FBgn0002989	okr	O76460	2	47	DNA repair and recombination protein RAD54-like (DmRAD54) (E	w
+RAD54	fly	FBgn0002989	okr	O76460	3	51	DNA repair and recombination protein RAD54-like (DmRAD54) (E	w
 RAD54	human	Q92698	RAD54L	Q92698	3	139	DNA repair and recombination protein RAD54-like (EC 3.6.4.-)	w
 RAD54	human	Q9Y620	RAD54B	Q9Y620	6	154	DNA repair and recombination protein RAD54B (EC 3.6.4.-) (RA	w
 RAD54	oryza-sativa-subsp-japonica	A4PBL4	RAD54	A4PBL4	4	99	DNA repair and recombination protein RAD54	
 RAD54	yeast	P32863	RAD54	P32863	0	27	DNA repair and recombination protein RAD54	
-RAD54-LIKE	fly	FBgn0002989	okr	O76460	2	47	DNA repair and recombination protein RAD54-like (DmRAD54) (E	w
+RAD54-LIKE	fly	FBgn0002989	okr	O76460	3	51	DNA repair and recombination protein RAD54-like (DmRAD54) (E	w
 RAD54-LIKE	human	Q92698	RAD54L	Q92698	3	139	DNA repair and recombination protein RAD54-like (EC 3.6.4.-)	w
 RAD54-LIKE	human	Q9Y4B4	RAD54L2	Q9Y4B4	14	174	Helicase ARIP4 (EC 5.6.2.-) (Androgen receptor-interacting p	w
 RAD54-LIKE	worm	G5EEN6	rad-54.l	G5EEN6	1	21	DNA repair and recombination protein RAD54-like	w
@@ -295,7 +295,7 @@ RAD8	schizosaccharomyces-pombe	P36607	rad8	P36607	2	10	DNA repair protein rad8
 RAD9	arabidopsis-thaliana	F4J7B7	RAD9	F4J7B7	12	87	Cell cycle checkpoint control protein family	
 RAD9	candida-albicans-237561	A0A1D8PNH8	RAD9	A0A1D8PNH8	1	41	Chromatin-binding protein	
 RAD9	dictyostelium-discoideum	Q869Q1	rad9	Q869Q1	4	22	Component of 9-1-1 complex	
-RAD9	fly	FBgn0025807	Rad9	A8JNV5	6	37	Cell cycle checkpoint control protein	
+RAD9	fly	FBgn0025807	Rad9	A8JNV5	10	39	Cell cycle checkpoint control protein	
 RAD9	human	Q6WBX8	RAD9B	Q6WBX8	10	49	Cell cycle checkpoint control protein RAD9B (DNA repair exon	w
 RAD9	human	Q99638	RAD9A	Q99638	29	167	Cell cycle checkpoint control protein RAD9A (hRAD9) (EC 3.1.	w
 RAD9	human	Q9BSD3	RHNO1	Q9BSD3	17	168	RAD9, HUS1, RAD1-interacting nuclear orphan protein 1 (RAD9,	w
@@ -312,7 +312,7 @@ RAD9B	mus-musculus	Q6WBX7	Rad9b	Q6WBX7	16	49	Cell cycle checkpoint control prote
 RAD9B	rattus-norvegicus	Q499V3	Rad9b	Q499V3	10	47	Cell cycle checkpoint control protein RAD9B	
 RAD9B	zebrafish	B0S509	rad9b	B0S509	6	41	Cell cycle checkpoint control protein	
 RAD9B_HUMAN	human	Q6WBX8	RAD9B	Q6WBX8	10	49		
-RAD9_304	fly	FBgn0025807	Rad9	A8JNV5	6	37		
+RAD9_304	fly	FBgn0025807	Rad9	A8JNV5	10	39		
 RADA	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PN90	radA	Q9PN90	0	5	DNA repair protein RadA	
 RADA	escherichia-coli-83333	P24554	radA	P24554	0	2	DNA repair protein RadA	
 RADA	haemophilus-influenzae	P45266	radA	P45266	0	1	DNA repair protein RadA	
@@ -329,11 +329,11 @@ RADA	streptococcus-pneumoniae	Q8DRP0	radA	Q8DRP0	0	2	DNA repair protein RadA
 RADB	methanocaldococcus-jannaschii	Q57702	radB	Q57702	0	17	DNA repair and recombination protein RadB	
 RADC	worm	A0A0K3AYA6	CELE_Y46H3A.4	A0A0K3AYA6	0	1	RadC domain-containing protein	w
 RADD	escherichia-coli-83333	P33919	radD	P33919	0	28	Putative DNA repair helicase RadD	
-RADIAL	fly	FBgn0032478	Rsph1	Q9VK29	2	5	AT19426p (Radial spoke head protein 1)	w
+RADIAL	fly	FBgn0032478	Rsph1	Q9VK29	3	9	AT19426p (Radial spoke head protein 1)	w
 RADIAL	fly	FBgn0034957	Rsph4a	Q9W1D3	6	31	GH13165p (Radial spoke head protein 4a)	w
 RADIAL	fly	FBgn0038000	Rsbp15	Q9VGC1	4	17	AT09290p (Radial spoke binding protein 15)	w
-RADIAL	fly	FBgn0051803	Rsph9	Q8T3V7	2	16	Radial spoke head protein 9 homolog	w
-RADIAL	fly	FBgn0052392	Rsph3	Q9VRY7	22	100	GH13213p (Radial spoke head protein 3, isoform B)	w
+RADIAL	fly	FBgn0051803	Rsph9	Q8T3V7	3	16	Radial spoke head protein 9 homolog	w
+RADIAL	fly	FBgn0052392	Rsph3	Q9VRY7	23	100	GH13213p (Radial spoke head protein 3, isoform B)	w
 RADIAL	human	B2RC85	RSPH10B2	B2RC85	2	32	Radial spoke head 10 homolog B2	w
 RADIAL	human	P0C881	RSPH10B	P0C881	1	23	Radial spoke head 10 homolog B	w
 RADIAL	human	P56597	NME5	P56597	7	81	Nucleoside diphosphate kinase 5 (NDK5) (Inhibitor of p53-ind	w
@@ -350,8 +350,8 @@ RADIAL	zebrafish	A0A8M1QHY3	rsph4a	A0A8M1QHY3	8	74	Radial spoke head component 4
 RADIAL	zebrafish	F1QPC4	rsph3	F1QPC4	11	55	Radial spoke head 3	w
 RADIAL	zebrafish	Q08CH7	rsph10b	Q08CH7	0	9	Radial spoke head 10 homolog B	w
 RADIAL	zebrafish	Q5TYW6	rsph9	Q5TYW6	2	59	Radial spoke head protein 9 homolog	w
-RADIATION	fly	FBgn0026778	Rad1	Q9VQD4	2	22	DNA repair protein Rad1 (IP03973p2) (Radiation insensitive 1	w
-RADIATION	fly	FBgn0032499	Uvrag	Q9VK07	13	58	UV radiation resistance-associated gene protein (UV-resistan	w
+RADIATION	fly	FBgn0026778	Rad1	Q9VQD4	3	22	DNA repair protein Rad1 (IP03973p2) (Radiation insensitive 1	w
+RADIATION	fly	FBgn0032499	Uvrag	Q9VK07	17	58	UV radiation resistance-associated gene protein (UV-resistan	w
 RADIATION	human	Q6P2D8	XRRA1	Q6P2D8	7	47	X-ray radiation resistance-associated protein 1	w
 RADIATION	human	Q9P2Y5	UVRAG	Q9P2Y5	32	147	UV radiation resistance-associated gene protein (p63)	w
 RADIATION	worm	A7DT33	CELE_Y34B4A.2	A7DT33	6	20	UV radiation resistance-associated gene protein-like	w
@@ -376,7 +376,7 @@ RADIL_HUMAN	human	Q96JH8	RADIL	Q96JH8	51	256
 RADIN	human	Q96PL5	ERMAP	Q96PL5	40	146	Erythroid membrane-associated protein (hERMAP) (Radin blood 	w
 RADIOPROTECTIVE	human	Q99467	CD180	Q99467	12	212	CD180 antigen (Lymphocyte antigen 64) (Radioprotective 105 k	w
 RADISH	fly	FBgn0265597	rsh	X2JDH0	1	4	Radish, isoform I	w
-RADIXIN	fly	FBgn0086384	Mer	Q24564	44	230	Moesin/ezrin/radixin homolog 2 (Ezrin-moesin-radixin 2) (Mer	w
+RADIXIN	fly	FBgn0086384	Mer	Q24564	45	230	Moesin/ezrin/radixin homolog 2 (Ezrin-moesin-radixin 2) (Mer	w
 RADIXIN	human	P35241	RDX	P35241	43	612	Radixin	w
 RADIXIN	worm	G5EBK3	erm-1	G5EBK3	0	38	Moesin/ezrin/radixin homolog 1	w
 RADIXIN	worm	H2KZV9	frm-2	H2KZV9	1	8	Moesin/ezrin/radixin homolog 1	w

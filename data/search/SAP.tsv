@@ -10,7 +10,7 @@ SAP-3	human	P17900	GM2A	P17900	9	149	Ganglioside GM2 activator (Cerebroside sulf
 SAP-49	worm	Q09442	sap-49	Q09442	11	106	Splicing factor 3B subunit 4	
 SAP-90	human	P78352	DLG4	P78352	57	586	Disks large homolog 4 (Postsynaptic density protein 95) (PSD	w
 SAP-97	human	Q12959	DLG1	Q12959	43	388	Disks large homolog 1 (Synapse-associated protein 97) (SAP-9	w
-SAP-R	fly	FBgn0000416	Sap-r	Q9Y125	10	65	BcDNA.GH08312 (Saposin-related protein) (Saposin-related, is	
+SAP-R	fly	FBgn0000416	Sap-r	Q9Y125	13	70	BcDNA.GH08312 (Saposin-related protein) (Saposin-related, is	
 SAP1	arabidopsis-thaliana	Q6NNI8	SAP1	Q6NNI8	1	21	Zinc finger A20 and AN1 domain-containing stress-associated 	
 SAP1	human	O15263	DEFB4A	O15263	23	239	Defensin beta 4A (Beta-defensin 2) (BD-2) (hBD-2) (Defensin,	w
 SAP1	human	P07602	PSAP	P07602	22	201		
@@ -52,7 +52,7 @@ SAP155	human	O75533	SF3B1	O75533	63	799
 SAP155	yeast	P43612	SAP155	P43612	5	43	SIT4-associating protein SAP155	
 SAP16	oryza-sativa-subsp-japonica	Q0D5B9	SAP16	Q0D5B9	4	23	Zinc finger AN1 and C2H2 domain-containing stress-associated	
 SAP17	oryza-sativa-subsp-japonica	Q6H595	SAP17	Q6H595	0	21	Zinc finger AN1 domain-containing stress-associated protein 	
-SAP18	fly	FBgn0024491	Bin1	Q9VEX9	13	76	Histone deacetylase complex subunit SAP18 (18 kDa Sin3-assoc	w
+SAP18	fly	FBgn0024491	Bin1	Q9VEX9	17	77	Histone deacetylase complex subunit SAP18 (18 kDa Sin3-assoc	w
 SAP18	human	O00422	SAP18	O00422	68	407	Histone deacetylase complex subunit SAP18 (18 kDa Sin3-assoc	
 SAP18	mus-musculus	O55128	Sap18	O55128	16	72	Histone deacetylase complex subunit SAP18	
 SAP18	oryza-sativa-subsp-japonica	P0C282	SAP18	P0C282	1	24	Zinc finger A20 domain-containing stress-associated protein 	
@@ -74,8 +74,8 @@ SAP25	mus-musculus	Q1EHW4	Sap25	Q1EHW4	1	1	Histone deacetylase complex subunit S
 SAP25_HUMAN	human	Q8TEE9	SAP25	Q8TEE9	3	36		
 SAP3	arabidopsis-thaliana	Q9ZNU9	SAP3	Q9ZNU9	1	18	Zinc finger A20 and AN1 domain-containing stress-associated 	
 SAP3	oryza-sativa-subsp-japonica	Q5JN07	SAP3	Q5JN07	2	24	Zinc finger A20 and AN1 domain-containing stress-associated 	
-SAP30	fly	FBgn0030788	Sap30	Q9VXB3	64	405	Histone deacetylase complex subunit SAP30 homolog (SIN3-asso	w
-SAP30	fly	FBgn0030788	Sap30	Q9VXB3	64	405	Histone deacetylase complex subunit SAP30 homolog (SIN3-asso	w
+SAP30	fly	FBgn0030788	Sap30	Q9VXB3	65	405	Histone deacetylase complex subunit SAP30 homolog (SIN3-asso	w
+SAP30	fly	FBgn0030788	Sap30	Q9VXB3	65	405	Histone deacetylase complex subunit SAP30 homolog (SIN3-asso	w
 SAP30	human	O75446	SAP30	O75446	74	545	Histone deacetylase complex subunit SAP30 (30 kDa Sin3-assoc	
 SAP30	mus-musculus	O88574	Sap30	O88574	8	56	Histone deacetylase complex subunit SAP30	
 SAP30	rattus-norvegicus	D3ZC08	Sap30	D3ZC08	8	57	Sin3A associated protein 30	
@@ -164,7 +164,7 @@ SAPIENS	zebrafish	Q6PC03	mrgbp	Q6PC03	5	68	C20orf20 homolog (H. sapiens)	w
 SAPIENS	zebrafish	Q7ZVG4	prelid3b	Q7ZVG4	4	4	C20orf45 homolog (H. sapiens)	w
 SAPK	human	O43734	TRAF3IP2	O43734	18	105	E3 ubiquitin ligase TRAF3IP2 (EC 2.3.2.27) (Adapter protein 	w
 SAPK	human	Q04323	UBXN1	Q04323	35	226	UBX domain-containing protein 1 (SAPK substrate protein 1) (	w
-SAPK-INTERACTING	fly	FBgn0033935	Sin1	Q9V719	9	67	Stress-activated map kinase-interacting protein 1 (SAPK-inte	w
+SAPK-INTERACTING	fly	FBgn0033935	Sin1	Q9V719	10	68	Stress-activated map kinase-interacting protein 1 (SAPK-inte	w
 SAPK1	human	P45983	MAPK8	P45983	294	1907		
 SAPK1	oryza-sativa-subsp-japonica	Q75LR7	SAPK1	Q75LR7	1	16	Serine/threonine-protein kinase SAPK1	
 SAPK10	oryza-sativa-subsp-japonica	Q75H77	SAPK10	Q75H77	2	17	Serine/threonine-protein kinase SAPK10	
@@ -202,7 +202,7 @@ SAPOSIN-B	human	P07602	PSAP	P07602	22	201	Prosaposin (Proactivator polypeptide) 
 SAPOSIN-B-VAL	human	P07602	PSAP	P07602	22	201	Prosaposin (Proactivator polypeptide) [Cleaved into: Saposin	w
 SAPOSIN-LIKE	human	Q9Y2B0	CNPY2	Q9Y2B0	7	96	Protein canopy homolog 2 (MIR-interacting saposin-like prote	w
 SAPOSIN-LIKE	worm	Q10018	spp-11	Q10018	0	2	Saposin-like protein 11	w
-SAPOSIN-RELATED	fly	FBgn0000416	Sap-r	Q9Y125	10	65	BcDNA.GH08312 (Saposin-related protein) (Saposin-related, is	w
+SAPOSIN-RELATED	fly	FBgn0000416	Sap-r	Q9Y125	13	70	BcDNA.GH08312 (Saposin-related protein) (Saposin-related, is	w
 SAPS	human	O75170	PPP6R2	O75170	22	138	Serine/threonine-protein phosphatase 6 regulatory subunit 2 	w
 SAPS	human	O75563	SKAP2	O75563	41	167		
 SAPS	human	Q5H9R7	PPP6R3	Q5H9R7	21	271	Serine/threonine-protein phosphatase 6 regulatory subunit 3 	w

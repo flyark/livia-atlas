@@ -60,20 +60,36 @@
     "pairsFpr5": 606,
     "pairsFpr1": 297
    }
+  },
+  {
+   "id": "dmelppi",
+   "short": "DmelPPI",
+   "title": "DmelPPI",
+   "citation": "Peng J, Zhao L. A predicted structural interactome reveals binding interference from intrinsically disordered regions. PLOS Computational Biology 22, e1013899 (2026); preprint bioRxiv 2025.08.15.670535.",
+   "url": "",
+   "counts": {
+    "proteins": 5010,
+    "pairs": 27711,
+    "predictions": 27711,
+    "runs": 27711,
+    "pairsFpr10": 10601,
+    "pairsFpr5": 7155,
+    "pairsFpr1": 3019
+   }
   }
  ],
  "counts": {
-  "proteins": 14037,
-  "pairs": 1209608,
-  "predictions": 7536984,
-  "runs": 1618348,
-  "pairsFpr10": 158817,
-  "pairsFpr5": 77441,
-  "pairsFpr1": 12293,
+  "proteins": 14048,
+  "pairs": 1218736,
+  "predictions": 7564695,
+  "runs": 1646059,
+  "pairsFpr10": 166186,
+  "pairsFpr5": 82209,
+  "pairsFpr1": 14319,
   "genes": 13938,
   "constructs": 27978,
-  "pairsInSeveral": 30473,
-  "pairsTested": 1223219
+  "pairsInSeveral": 49056,
+  "pairsTested": 1232347
  },
  "files": {
   "proteins": "proteins.json",

@@ -37,7 +37,7 @@ PRIC2_HUMAN	human	Q7Z3G6	PRICKLE2	Q7Z3G6	6	68
 PRIC320	human	Q3L8U1	CHD9	Q3L8U1	0	46		
 PRIC3_HUMAN	human	O43900	PRICKLE3	O43900	20	102		
 PRIC4_HUMAN	human	Q2TBC4	PRICKLE4	Q2TBC4	12	57		
-PRICKLE	fly	FBgn0003090	pk	A1Z6W3	9	37	Protein prickle (Protein spiny legs)	w
+PRICKLE	fly	FBgn0003090	pk	A1Z6W3	10	40	Protein prickle (Protein spiny legs)	w
 PRICKLE	human	O43900	PRICKLE3	O43900	20	102	Prickle planar cell polarity protein 3 (LIM domain only prot	w
 PRICKLE	zebrafish	F1Q6J9	prickle1a	F1Q6J9	0	9	Prickle homolog 1a	w
 PRICKLE	zebrafish	F1REQ6	prickle2b	F1REQ6	0	9	Prickle homolog 2b	w
@@ -65,12 +65,12 @@ PRICKLE4	rattus-norvegicus	F1M759	Prickle4	F1M759	7	37	Prickle planar cell polar
 PRIL	methanocaldococcus-jannaschii	Q58112	priL	Q58112	1	2	DNA primase large subunit PriL	
 PRIM	fly	FBgn0034103	prim	Q7JWE4	0	2	GEO09629p1 (Primacord) (RH57845p)	
 PRIM	human	P10515	DLAT	P10515	16	241	Dihydrolipoyllysine-residue acetyltransferase component of p	w
-PRIM1	fly	FBgn0011762	Prim1	Q24317	4	34	DNA primase small subunit (EC 2.7.7.-) (DNA polymerase subun	
+PRIM1	fly	FBgn0011762	Prim1	Q24317	13	57	DNA primase small subunit (EC 2.7.7.-) (DNA polymerase subun	
 PRIM1	human	P49642	PRIM1	P49642	11	244	DNA primase small subunit (EC 2.7.7.102) (DNA primase 49 kDa	
 PRIM1	mus-musculus	P20664	Prim1	P20664	1	51	DNA primase small subunit	
 PRIM1	rattus-norvegicus	F1LNK6	Prim1	F1LNK6	2	37	DNA primase	
 PRIM2	dictyostelium-discoideum	Q55BM5	prim2	Q55BM5	2	17	DNA primase large subunit	
-PRIM2	fly	FBgn0259676	Prim2	Q9VPH2	5	35	DNA primase large subunit (DNA polymerase subunit beta) (Sup	
+PRIM2	fly	FBgn0259676	Prim2	Q9VPH2	11	55	DNA primase large subunit (DNA polymerase subunit beta) (Sup	
 PRIM2	human	P49643	PRIM2	P49643	15	139	DNA primase large subunit (DNA primase 58 kDa subunit) (p58)	
 PRIM2	mus-musculus	P33610	Prim2	P33610	7	50	DNA primase large subunit	
 PRIM2	rattus-norvegicus	O89044	Prim2	O89044	5	49	DNA primase large subunit	
@@ -90,8 +90,8 @@ PRIMARY	human	Q92674	CENPI	Q92674	37	400	Centromere protein I (CENP-I) (FSH prim
 PRIMARY	human	Q96BN6	FAM149B1	Q96BN6	4	21	Primary cilium assembly protein FAM149B1	w
 PRIMARY	human	Q99836	MYD88	Q99836	32	370	Myeloid differentiation primary response protein MyD88	w
 PRIMARY	zebrafish	Q5XJ85	myd88	Q5XJ85	14	260	Myeloid differentiation primary response protein MyD88	w
-PRIMASE	fly	FBgn0011762	Prim1	Q24317	4	34	DNA primase small subunit (EC 2.7.7.-) (DNA polymerase subun	w
-PRIMASE	fly	FBgn0259676	Prim2	Q9VPH2	5	35	DNA primase large subunit (DNA polymerase subunit beta) (Sup	w
+PRIMASE	fly	FBgn0011762	Prim1	Q24317	13	57	DNA primase small subunit (EC 2.7.7.-) (DNA polymerase subun	w
+PRIMASE	fly	FBgn0259676	Prim2	Q9VPH2	11	55	DNA primase large subunit (DNA polymerase subunit beta) (Sup	w
 PRIMASE	human	A0A3B3ITS8	?	A0A3B3ITS8	1	7	DNA primase AEP	w
 PRIMASE	human	P49642	PRIM1	P49642	11	244	DNA primase small subunit (EC 2.7.7.102) (DNA primase 49 kDa	w
 PRIMASE	human	P49643	PRIM2	P49643	15	139	DNA primase large subunit (DNA primase 58 kDa subunit) (p58)	w
@@ -128,7 +128,7 @@ PRIMASE	yeast	P20457	PRI2	P20457	5	37	DNA primase large subunit	w
 PRIMASE	zebrafish	B8JIP2	prim2	B8JIP2	4	34	DNA primase large subunit	w
 PRIMASE	zebrafish	Q32PL8	primpol	Q32PL8	2	14	DNA-directed primase/polymerase protein	w
 PRIMA_HUMAN	human	Q86XR5	PRIMA1	Q86XR5	15	102		
-PRIME	fly	FBgn0032512	Bdp1	Q9VJZ3	118	392	B double prime 1, isoform A (FI12401p)	w
+PRIME	fly	FBgn0032512	Bdp1	Q9VJZ3	119	392	B double prime 1, isoform A (FI12401p)	w
 PRIME	human	Q5T0F9	CC2D1B	Q5T0F9	7	54	Coiled-coil and C2 domain-containing protein 1B (Five prime 	w
 PRIME	human	Q6P1N0	CC2D1A	Q6P1N0	27	172	Coiled-coil and C2 domain-containing protein 1A (Akt kinase-	w
 PRIME	human	Q9BQ50	TREX2	Q9BQ50	4	96	Three prime repair exonuclease 2 (EC 3.1.11.2) (3'-5' exonuc	w

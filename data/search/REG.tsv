@@ -1,4 +1,4 @@
-REG	fly	FBgn0029133	REG	Q9V3P3	2	90	LD45860p (Proteasome regulator dREG) (Proteasome regulator g	
+REG	fly	FBgn0029133	REG	Q9V3P3	3	104	LD45860p (Proteasome regulator dREG) (Proteasome regulator g	
 REG	human	P05451	REG1A	P05451	12	120		
 REG-1-BETA	human	P48304	REG1B	P48304	20	111	Lithostathine-1-beta (Pancreatic stone protein 2) (PSP-2) (R	w
 REG-2	fly	FBgn0016715	Reg-2	Q94915	0	3	Rhythmically expressed gene 2 protein (dREG-2)	
@@ -40,10 +40,10 @@ REGA	dictyostelium-discoideum	Q23917	regA	Q23917	1	2	3,5-cyclic-nucleotide phosp
 REGAN	human	P05187	ALPP	P05187	6	163	Alkaline phosphatase, placental type (EC 3.1.3.1) (Alkaline 	w
 REGE-1	worm	Q95YE2	rege-1	Q95YE2	0	5	Endoribonuclease rege-1	w
 REGE-1	worm	Q95YE2	rege-1	Q95YE2	0	5	Endoribonuclease rege-1	w
-REGENA	fly	FBgn0017550	Rga	Q94547	55	484	Regulator of gene activity (Protein regena) (CCR4-NOT transc	w
+REGENA	fly	FBgn0017550	Rga	Q94547	56	484	Regulator of gene activity (Protein regena) (CCR4-NOT transc	w
 REGENER	human	Q12974	PTP4A2	Q12974	21	278	Protein tyrosine phosphatase type IVA 2 (EC 3.1.3.48) (HU-PP	w
 REGENERATI	human	Q6UW15	REG3G	Q6UW15	22	200	Regenerating islet-derived protein 3-gamma (REG-3-gamma) (Pa	w
-REGENERATING	fly	FBgn0024734	PRL-1	O61722	220	994	PRL-1 phosphatase (EC 3.1.3.48) (Phosphatase of regenerating	w
+REGENERATING	fly	FBgn0024734	PRL-1	O61722	220	995	PRL-1 phosphatase (EC 3.1.3.48) (Phosphatase of regenerating	w
 REGENERATING	human	O75365	PTP4A3	O75365	14	216	Protein tyrosine phosphatase type IVA 3 (EC 3.1.3.48) (PRL-R	w
 REGENERATING	human	P05451	REG1A	P05451	12	120	Lithostathine-1-alpha (Islet cells regeneration factor) (ICR	w
 REGENERATING	human	P48304	REG1B	P48304	20	111	Lithostathine-1-beta (Pancreatic stone protein 2) (PSP-2) (R	w
@@ -61,7 +61,7 @@ REGENERATION-RELATED	human	Q16612	NREP	Q16612	1	28	Neuronal regeneration-related
 REGI	human	P01701	IGLV1-51	P01701	51	239	Immunoglobulin lambda variable 1-51 (Ig lambda chain V-I reg	w
 REGI	human	Q9UDT6	CLIP2	Q9UDT6	41	106	CAP-Gly domain-containing linker protein 2 (Cytoplasmic link	w
 REGION	fly	FBgn0016970	l(2)k10201	Q9V574	1	9	Protein lethal(2)k10201 (Wunen region B protein)	w
-REGION	fly	FBgn0020497	emb	Q9TVM2	11	168	Exportin-1 (Chromosome region maintenance 1 protein) (Protei	w
+REGION	fly	FBgn0020497	emb	Q9TVM2	11	172	Exportin-1 (Chromosome region maintenance 1 protein) (Protei	w
 REGION	fly	FBgn0033326	CG14743	A1Z7I2	0	4	Sodium/calcium exchanger membrane region domain-containing p	w
 REGION	fly	FBgn0033599	CG13223	A1Z8H3	0	6	Sodium/calcium exchanger membrane region domain-containing p	w
 REGION	fly	FBgn0034389	Mctp	Q7JZN2	0	2	Multiple C2 domain and transmembrane region protein	w
@@ -347,7 +347,7 @@ REGNASE-1	fly	FBgn0038769	Regnase-1	Q8T0D9	1	11	LD08718p (Regnase 1)
 REGNASE-1	human	Q5D1E8	ZC3H12A	Q5D1E8	12	88	Endoribonuclease ZC3H12A (EC 3.1.-.-) (Monocyte chemotactic 	w
 REGR	streptococcus-pneumoniae	Q8DR72	regR	Q8DR72	0	6	Transcription regulator, member of GalR family	
 REGRESSOR	human	P81172	HAMP	P81172	23	210	Hepcidin (Liver-expressed antimicrobial peptide 1) (LEAP-1) 	w
-REGU	fly	FBgn0029006	Smurf	Q9V853	19	72	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
+REGU	fly	FBgn0029006	Smurf	Q9V853	25	90	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
 REGU	human	Q9P2B2	PTGFRN	Q9P2B2	21	172	Prostaglandin F2 receptor negative regulator (CD9 partner 1)	w
 REGUCALCIN	fly	FBgn0030362	regucalcin	Q76NR6	61	463	Regucalcin, isoform D (EC 3.1.1.17)	w
 REGUCALCIN	fly	FBgn0030362	regucalcin	Q76NR6	61	463	Regucalcin, isoform D (EC 3.1.1.17)	w
@@ -407,23 +407,23 @@ REGULATION-ASSOCIATED	human	Q8NEF9	SRFBP1	Q8NEF9	36	253	Serum response factor-bi
 REGULATION-ASSOCIATED	human	Q96KG9	SCYL1	Q96KG9	44	220	N-terminal kinase-like protein (Coated vesicle-associated ki	w
 REGULATION-ASSOCIATED	worm	O16657	C03H5.3	O16657	0	2	SRF-dependent transcription regulation-associated protein	w
 REGULATO	human	Q8TF01	PNISR	Q8TF01	18	163	Arginine/serine-rich protein PNISR (PNN-interacting serine/a	w
-REGULATOR	fly	FBgn0000662	fl(2)d	Q9Y091	22	140	Pre-mRNA-splicing regulator female-lethal(2)D (dFL(2)D)	w
-REGULATOR	fly	FBgn0002638	Rcc1	P25171	16	85	Regulator of chromosome condensation (Chromatin-binding prot	w
-REGULATOR	fly	FBgn0002774	mle	P24785	13	246	Dosage compensation regulator mle (EC 3.6.4.13) (Protein mal	w
+REGULATOR	fly	FBgn0000662	fl(2)d	Q9Y091	26	146	Pre-mRNA-splicing regulator female-lethal(2)D (dFL(2)D)	w
+REGULATOR	fly	FBgn0002638	Rcc1	P25171	17	89	Regulator of chromosome condensation (Chromatin-binding prot	w
+REGULATOR	fly	FBgn0002774	mle	P24785	13	247	Dosage compensation regulator mle (EC 3.6.4.13) (Protein mal	w
 REGULATOR	fly	FBgn0003028	ovo	P51521	25	129	Transcriptional regulator ovo (Transcriptional repressor sha	w
 REGULATOR	fly	FBgn0003302	rux	P50445	9	74	Cell cycle negative regulator roughex	w
-REGULATOR	fly	FBgn0017550	Rga	Q94547	55	484	Regulator of gene activity (Protein regena) (CCR4-NOT transc	w
-REGULATOR	fly	FBgn0017551	Rca1	Q9VM76	43	234	GH14043p (Regulator of cyclin A1)	w
+REGULATOR	fly	FBgn0017550	Rga	Q94547	56	484	Regulator of gene activity (Protein regena) (CCR4-NOT transc	w
+REGULATOR	fly	FBgn0017551	Rca1	Q9VM76	43	235	GH14043p (Regulator of cyclin A1)	w
 REGULATOR	fly	FBgn0020278	loco	Q9VCX1	8	17	Regulator of G-protein signaling loco (RGS) (Locomotion defe	w
 REGULATOR	fly	FBgn0020407	asun	Q9VEX5	7	38	Protein asunder (Cell cycle regulator Mat89Bb) (Integrator c	w
 REGULATOR	fly	FBgn0021800	Reph	Q8MRQ2	3	3	GH05923p (Regulator of eph expression, isoform B)	w
-REGULATOR	fly	FBgn0024291	Sirt1	Q9VK34	115	535	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	w
-REGULATOR	fly	FBgn0024941	RSG7	Q9VXA3	13	31	LP21163p (Regulator of G-protein signaling 7, isoform A) (Re	w
-REGULATOR	fly	FBgn0025638	Roc1a	B7Z114	13	260	Regulator of cullins 1a, isoform C	w
-REGULATOR	fly	FBgn0029133	REG	Q9V3P3	2	90	LD45860p (Proteasome regulator dREG) (Proteasome regulator g	w
+REGULATOR	fly	FBgn0024291	Sirt1	Q9VK34	119	539	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	w
+REGULATOR	fly	FBgn0024941	RSG7	Q9VXA3	13	33	LP21163p (Regulator of G-protein signaling 7, isoform A) (Re	w
+REGULATOR	fly	FBgn0025638	Roc1a	B7Z114	25	296	Regulator of cullins 1a, isoform C	w
+REGULATOR	fly	FBgn0029133	REG	Q9V3P3	3	104	LD45860p (Proteasome regulator dREG) (Proteasome regulator g	w
 REGULATOR	fly	FBgn0029798	Rtel1	Q9W484	5	74	Regulator of telomere elongation helicase 1 homolog (EC 3.6.	w
 REGULATOR	fly	FBgn0029816	CG12729	Q9W466	1	5	PI31 proteasome regulator N-terminal domain-containing prote	w
-REGULATOR	fly	FBgn0030354	Upf1	Q9VYS3	12	161	Regulator of nonsense transcripts 1 homolog (EC 3.6.4.12) (E	w
+REGULATOR	fly	FBgn0030354	Upf1	Q9VYS3	12	162	Regulator of nonsense transcripts 1 homolog (EC 3.6.4.12) (E	w
 REGULATOR	fly	FBgn0030623	PPYR1	Q9VXX1	47	372	AT19571p (Protein phosphatase Y regulator 1)	w
 REGULATOR	fly	FBgn0030685	Graf	X2JDY8	2	49	Rho GTPase-activating protein Graf (GTPase regulator associa	w
 REGULATOR	fly	FBgn0030800	Nprl2	Q9VXA0	42	463	GATOR complex protein NPRL2 (Nitrogen permease regulator 2-l	w
@@ -437,13 +437,13 @@ REGULATOR	fly	FBgn0035703	Bulli	Q9VRX1	2	3	Regulator of MON1-CCZ1 complex (Prote
 REGULATOR	fly	FBgn0036397	Nprl3	Q9VUB4	11	85	GATOR complex protein NPRL3 (Nitrogen permease regulator 3-l	w
 REGULATOR	fly	FBgn0039338	XNP	Q9GQN5	12	172	Transcriptional regulator ATRX homolog (EC 3.6.4.12) (ATP-de	w
 REGULATOR	fly	FBgn0039972	Marf1	Q7KWG9	2	46	Meiosis regulator and mRNA stability factor 1, isoform D (Me	w
-REGULATOR	fly	FBgn0040291	Roc1b	Q9NHX0	32	521	RING-box protein 1B (Regulator of cullins 1b)	w
-REGULATOR	fly	FBgn0040344	Lztr1	M9PGD0	0	3	Leucine zipper like transcription regulator 1, isoform D	w
-REGULATOR	fly	FBgn0044020	Roc2	Q7JWH5	16	100	MIP07211p (RE61847p) (Regulator of cullins 2, isoform A) (Re	w
+REGULATOR	fly	FBgn0040291	Roc1b	Q9NHX0	39	548	RING-box protein 1B (Regulator of cullins 1b)	w
+REGULATOR	fly	FBgn0040344	Lztr1	M9PGD0	0	4	Leucine zipper like transcription regulator 1, isoform D	w
+REGULATOR	fly	FBgn0044020	Roc2	Q7JWH5	18	100	MIP07211p (RE61847p) (Regulator of cullins 2, isoform A) (Re	w
 REGULATOR	fly	FBgn0051694	Ifrd1	Q9VQI5	11	138	Interferon-related developmental regulator 1 (LP04564p)	w
-REGULATOR	fly	FBgn0053172	CG33172	Q86B53	2	14	tRNA (34-2'-O)-methyltransferase regulator WDR6	w
-REGULATOR	fly	FBgn0053288	CG33288	Q7KTW3	1	15	Regulator of chromosome condensation	w
-REGULATOR	fly	FBgn0062440	EMRE	Q7JX57	1	12	Essential MCU regulator, mitochondrial	w
+REGULATOR	fly	FBgn0053172	CG33172	Q86B53	2	15	tRNA (34-2'-O)-methyltransferase regulator WDR6	w
+REGULATOR	fly	FBgn0053288	CG33288	Q7KTW3	2	18	Regulator of chromosome condensation	w
+REGULATOR	fly	FBgn0062440	EMRE	Q7JX57	1	13	Essential MCU regulator, mitochondrial	w
 REGULATOR	fly	FBgn0263026	CG43321	M9NEV9	1	8	Essential MCU regulator, mitochondrial (Single-pass membrane	w
 REGULATOR	human	A0A087WZ82	FXYD6-FXYD2	A0A087WZ82	2	26	FXYD domain-containing ion transport regulator	w
 REGULATOR	human	A0A0U1RRE5	NBDY	A0A0U1RRE5	4	44	Negative regulator of P-body association (P-body dissociatin	w

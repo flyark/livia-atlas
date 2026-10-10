@@ -14,7 +14,7 @@ SPH6	arabidopsis-thaliana	F2Q9V4	SPH6	F2Q9V4	0	5	S-protein homolog 6
 SPH74	arabidopsis-thaliana	Q2HQ46	SPH74	Q2HQ46	0	5	S-protein homolog 74	
 SPH8	arabidopsis-thaliana	B3H453	SPH8	B3H453	1	5	S-protein homolog 8	
 SPH9	arabidopsis-thaliana	Q9FF19	SPH9	Q9FF19	1	5	S-protein homolog 9	
-SPH93	fly	FBgn0032638	SPH93	Q9VJD7	69	243	RH50269p (Serine protease homolog 93)	
+SPH93	fly	FBgn0032638	SPH93	Q9VJD7	70	244	RH50269p (Serine protease homolog 93)	
 SPHE	fly	FBgn0030774	sphe	Q9VXC8	49	256	LP05929p (Spheroide)	
 SPHEROIDE	fly	FBgn0030774	sphe	Q9VXC8	49	256	LP05929p (Spheroide)	w
 SPHEROIDIN	virus	P29815	AMV187	P29815	2	276	Spheroidin	w
@@ -29,7 +29,7 @@ SPHINGOID	human	Q8N5B7	CERS5	Q8N5B7	52	404	Ceramide synthase 5 (CerS5) (LAG1 lon
 SPHINGOID	yeast	Q06147	LCB5	Q06147	0	19	Sphingoid long chain base kinase 5	w
 SPHINGOID	yeast	Q08417	RSB1	Q08417	0	6	Sphingoid long-chain base transporter RSB1	w
 SPHINGOID	yeast	Q12246	LCB4	Q12246	1	15	Sphingoid long chain base kinase 4	w
-SPHINGOLIPID	fly	FBgn0001941	ifc	Q94515	4	51	Sphingolipid delta(4)-desaturase DES1 (EC 1.14.19.17) (Degen	w
+SPHINGOLIPID	fly	FBgn0001941	ifc	Q94515	7	63	Sphingolipid delta(4)-desaturase DES1 (EC 1.14.19.17) (Degen	w
 SPHINGOLIPID	human	O15121	DEGS1	O15121	13	134	Sphingolipid delta(4)-desaturase DES1 (EC 1.14.19.17) (Cell 	w
 SPHINGOLIPID	human	P17900	GM2A	P17900	9	149	Ganglioside GM2 activator (Cerebroside sulfate activator pro	w
 SPHINGOLIPID	human	Q6QHC5	DEGS2	Q6QHC5	2	31	Sphingolipid delta(4)-desaturase/C4-monooxygenase DES2 (EC 1	w
@@ -39,7 +39,7 @@ SPHINGOLIPID	yeast	P38992	SUR2	P38992	0	25	Sphingolipid C4-hydroxylase SUR2	w
 SPHINGOLIPID	yeast	P53252	PIL1	P53252	9	127	Sphingolipid long chain base-responsive protein PIL1	w
 SPHINGOLIPID	yeast	Q12230	LSP1	Q12230	14	117	Sphingolipid long chain base-responsive protein LSP1	w
 SPHINGOLIPID	zebrafish	F1QW74	degs2	F1QW74	0	1	sphingolipid 4-desaturase	w
-SPHINGOMYELIN	fly	FBgn0034997	Asm	D6W4U0	46	272	Sphingomyelin phosphodiesterase (EC 3.1.4.12)	w
+SPHINGOMYELIN	fly	FBgn0034997	Asm	D6W4U0	48	279	Sphingomyelin phosphodiesterase (EC 3.1.4.12)	w
 SPHINGOMYELIN	fly	FBgn0039768	CG15533	Q9VA78	21	246	Sphingomyelin phosphodiesterase (EC 3.1.4.12)	w
 SPHINGOMYELIN	fly	FBgn0039769	CG15534	Q9VA77	21	245	Sphingomyelin phosphodiesterase (EC 3.1.4.12)	w
 SPHINGOMYELIN	fly	FBgn0052380	SMSr	Q9VS60	0	8	Ceramide phosphoethanolamine synthase (CPE synthase) (EC 2.7	w
@@ -61,7 +61,7 @@ SPHINGOMYELIN	zebrafish	F1QG30	smpd5	F1QG30	1	7	Sphingomyelin phosphodiesterase 
 SPHINGOMYELIN	zebrafish	F1QUD7	smpd2a	F1QUD7	1	8	Sphingomyelin phosphodiesterase 2	w
 SPHINGOMYELIN	zebrafish	Q6DEI3	sgms2b	Q6DEI3	0	6	Sphingomyelin synthase 2b	w
 SPHINGOMYELIN	zebrafish	Q6PFJ7	smpd4	Q6PFJ7	0	8	Sphingomyelin phosphodiesterase 4	w
-SPHINGOMYELINASE	fly	FBgn0035421	nSMase	Q9VZS6	2	63	Putative neutral sphingomyelinase (EC 3.1.4.12)	w
+SPHINGOMYELINASE	fly	FBgn0035421	nSMase	Q9VZS6	2	67	Putative neutral sphingomyelinase (EC 3.1.4.12)	w
 SPHINGOMYELINASE	human	O60906	SMPD2	O60906	7	131	Sphingomyelin phosphodiesterase 2 (EC 3.1.4.12) (Lyso-platel	w
 SPHINGOMYELINASE	human	P17405	SMPD1	P17405	8	145	Sphingomyelin phosphodiesterase (EC 3.1.4.12) (EC 3.1.4.3) (	w
 SPHINGOMYELINASE	human	Q92636	NSMAF	Q92636	9	129	Protein FAN (Factor associated with neutral sphingomyelinase	w
@@ -72,8 +72,8 @@ SPHINGOMYELINASE	zebrafish	F1QZ06	nsmaf	F1QZ06	5	24	Neutral sphingomyelinase (N-
 SPHINGOMYELINASE-LIKE	human	Q92484	SMPDL3A	Q92484	5	51	Cyclic GMP-AMP phosphodiesterase SMPDL3A (2',3'-cGAMP phosph	w
 SPHINGOMYELINASE-LIKE	human	Q92485	SMPDL3B	Q92485	7	84	Acid sphingomyelinase-like phosphodiesterase 3b (ASM-like ph	w
 SPHINGOMYELINASE-LIKE	zebrafish	A0A8M1P530	smpdl3b	A0A8M1P530	0	1	Acid sphingomyelinase-like phosphodiesterase	w
-SPHINGOSINE	fly	FBgn0030300	Sk1	Q9VYY8	5	74	sphingosine kinase (EC 2.7.1.91)	w
-SPHINGOSINE	fly	FBgn0052484	Sk2	Q9VZW0	8	81	sphingosine kinase (EC 2.7.1.91)	w
+SPHINGOSINE	fly	FBgn0030300	Sk1	Q9VYY8	6	76	sphingosine kinase (EC 2.7.1.91)	w
+SPHINGOSINE	fly	FBgn0052484	Sk2	Q9VZW0	9	81	sphingosine kinase (EC 2.7.1.91)	w
 SPHINGOSINE	human	O95136	S1PR2	O95136	22	227	Sphingosine 1-phosphate receptor 2 (S1P receptor 2) (S1P2) (	w
 SPHINGOSINE	human	O95977	S1PR4	O95977	17	269	Sphingosine 1-phosphate receptor 4 (S1P receptor 4) (S1P4) (	w
 SPHINGOSINE	human	P21453	S1PR1	P21453	32	427	Sphingosine 1-phosphate receptor 1 (S1P receptor 1) (S1P1) (	w
@@ -99,7 +99,7 @@ SPHINGOSINE	zebrafish	Q9DDK4	s1pr1	Q9DDK4	6	19	Sphingosine 1-phosphate receptor 
 SPHINGOSINE	zebrafish	Q9I8K8	s1pr2	Q9I8K8	0	3	Sphingosine 1-phosphate receptor 2	w
 SPHINGOSINE-1-PHOSPHATASE	human	Q8IWX5	SGPP2	Q8IWX5	0	23	Sphingosine-1-phosphate phosphatase 2 (SPPase2) (Spp2) (hSPP	w
 SPHINGOSINE-1-PHOSPHATASE	human	Q9BX95	SGPP1	Q9BX95	1	78	Sphingosine-1-phosphate phosphatase 1 (SPPase1) (Spp1) (hSPP	w
-SPHINGOSINE-1-PHOSPHATE	fly	FBgn0010591	Sply	Q9V7Y2	2	94	Sphingosine-1-phosphate lyase (S1PL) (SP-lyase) (SPL) (EC 4.	w
+SPHINGOSINE-1-PHOSPHATE	fly	FBgn0010591	Sply	Q9V7Y2	2	102	Sphingosine-1-phosphate lyase (S1PL) (SP-lyase) (SPL) (EC 4.	w
 SPHINGOSINE-1-PHOSPHATE	human	A6NFX1	MFSD2B	A6NFX1	1	64	Sphingosine-1-phosphate transporter MFSD2B (Major facilitato	w
 SPHINGOSINE-1-PHOSPHATE	human	O95470	SGPL1	O95470	3	240	Sphingosine-1-phosphate lyase 1 (S1PL) (SP-lyase 1) (SPL 1) 	w
 SPHINGOSINE-1-PHOSPHATE	human	Q8IVW8	SPNS2	Q8IVW8	11	104	Sphingosine-1-phosphate transporter SPNS2 (Protein spinster 	w

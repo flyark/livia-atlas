@@ -22,12 +22,12 @@ CHR5	glycine-max	I1N520	CHR5	I1N520	0	2	Chalcone reductase
 CHR7	arabidopsis-thaliana	F4JTF6	CHR7	F4JTF6	9	249	CHD3-type chromatin-remodeling factor CHR7	
 CHR719	oryza-sativa-subsp-japonica	Q60EX7	CHR719	Q60EX7	8	36	Probable ATP-dependent DNA helicase CHR719	
 CHR8	arabidopsis-thaliana	Q9ZV43	CHR8	Q9ZV43	7	178	Protein CHROMATIN REMODELING 8	
-CHRAC	fly	FBgn0011604	Iswi	Q24368	23	231	Chromatin-remodeling complex ATPase chain Iswi (EC 3.6.4.-) 	w
-CHRAC	fly	FBgn0043002	Chrac-14	Q9V444	20	93	DNA polymerase epsilon subunit 3 (Chromatin accessibility co	w
+CHRAC	fly	FBgn0011604	Iswi	Q24368	24	232	Chromatin-remodeling complex ATPase chain Iswi (EC 3.6.4.-) 	w
+CHRAC	fly	FBgn0043002	Chrac-14	Q9V444	34	127	DNA polymerase epsilon subunit 3 (Chromatin accessibility co	w
 CHRAC-1	human	Q9NRG0	CHRAC1	Q9NRG0	19	118	Chromatin accessibility complex protein 1 (CHRAC-1) (Chromat	w
-CHRAC-14	fly	FBgn0043002	Chrac-14	Q9V444	20	93	DNA polymerase epsilon subunit 3 (Chromatin accessibility co	
+CHRAC-14	fly	FBgn0043002	Chrac-14	Q9V444	34	127	DNA polymerase epsilon subunit 3 (Chromatin accessibility co	
 CHRAC-15	human	Q9NRG0	CHRAC1	Q9NRG0	19	118	Chromatin accessibility complex protein 1 (CHRAC-1) (Chromat	w
-CHRAC-16	fly	FBgn0043001	Chrac-16	Q9V452	4	24	Chromatin accessibility complex 16kD protein	
+CHRAC-16	fly	FBgn0043001	Chrac-16	Q9V452	5	24	Chromatin accessibility complex 16kD protein	
 CHRAC-17	human	Q9NRF9	POLE3	Q9NRF9	32	176	DNA polymerase epsilon subunit 3 (Arsenic-transactivated pro	w
 CHRAC1	human	Q9NRG0	CHRAC1	Q9NRG0	19	118	Chromatin accessibility complex protein 1 (CHRAC-1) (Chromat	
 CHRAC1	mus-musculus	Q9JKP8	Chrac1	Q9JKP8	2	12	Chromatin accessibility complex protein 1	
@@ -422,15 +422,15 @@ CHRNE	zebrafish	A2BG85	chrne	A2BG85	10	10	Acetylcholine receptor subunit epsilon
 CHRNG	human	P07510	CHRNG	P07510	33	118	Acetylcholine receptor subunit gamma	
 CHRNG	mus-musculus	P04760	Chrng	P04760	16	16	Acetylcholine receptor subunit gamma	
 CHRNG	zebrafish	E7F9V1	chrng	E7F9V1	10	10	Acetylcholine receptor subunit gamma precursor	
-CHRO	fly	FBgn0044324	Chro	Q86BS3	16	77	Chromator, isoform A (Chromator, isoform B) (Chromator, isof	
+CHRO	fly	FBgn0044324	Chro	Q86BS3	17	77	Chromator, isoform A (Chromator, isoform B) (Chromator, isof	
 CHRO	human	Q8WU17	RNF139	Q8WU17	9	101	E3 ubiquitin-protein ligase RNF139 (EC 2.3.2.27) (RING finge	w
 CHRO	human	Q9NRZ9	HELLS	Q9NRZ9	6	243	Lymphoid-specific helicase (LSH) (EC 3.6.4.-) (Proliferation	w
 CHROM1	human	Q3L8U1	CHD9	Q3L8U1	0	46	ATP-dependent chromatin remodeler CHD9 (EC 3.6.4.-) (Chromat	w
 CHROMAFFIN	human	P54219	SLC18A1	P54219	2	177	Chromaffin granule amine transporter (Solute carrier family 	w
 CHROMAFFIN	human	Q9Y2Q0	ATP8A1	Q9Y2Q0	9	80	Phospholipid-transporting ATPase IA (EC 7.6.2.1) (ATPase cla	w
-CHROMATID	fly	FBgn0034495	CG11788	Q4V3Z5	5	17	Sister chromatid cohesion protein DCC1	w
+CHROMATID	fly	FBgn0034495	CG11788	Q4V3Z5	8	22	Sister chromatid cohesion protein DCC1	w
 CHROMATID	fly	FBgn0038300	Mau2	Q9VFC0	20	60	MAU2 chromatid cohesion factor homolog (Cohesin loading comp	w
-CHROMATID	fly	FBgn0283440	solo	B6JUP5	4	39	Sister chromatid cohesion protein solo (Sisters on the loose	w
+CHROMATID	fly	FBgn0283440	solo	B6JUP5	5	40	Sister chromatid cohesion protein solo (Sisters on the loose	w
 CHROMATID	human	Q29RF7	PDS5A	Q29RF7	50	370	Sister chromatid cohesion protein PDS5 homolog A (Cell proli	w
 CHROMATID	human	Q9BVC3	DSCC1	Q9BVC3	17	164	Sister chromatid cohesion protein DCC1 (Defective in sister 	w
 CHROMATID	human	Q9NTI5	PDS5B	Q9NTI5	28	325	Sister chromatid cohesion protein PDS5 homolog B (Androgen-i	w
@@ -448,18 +448,18 @@ CHROMATID	zebrafish	Q66I84	dscc1	Q66I84	3	17	Sister chromatid cohesion protein D
 CHROMATID	zebrafish	X1WEK0	esco1	X1WEK0	2	21	Establishment of sister chromatid cohesion N-acetyltransfera	w
 CHROMATIDS	fly	FBgn0004655	wapl	Q9W517	0	1	Protein wings apart-like (Protein parallel sister chromatids	w
 CHROMATIN	fly	FBgn0004861	ph-p	P39769	32	112	Polyhomeotic-proximal chromatin protein	w
-CHROMATIN	fly	FBgn0010278	Ssrp	Q05344	65	535	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
-CHROMATIN	fly	FBgn0016685	Nlp	Q27415	26	201	Nucleoplasmin-like protein (Chromatin decondensation protein	w
+CHROMATIN	fly	FBgn0010278	Ssrp	Q05344	72	541	FACT complex subunit Ssrp1 (Chorion-factor 5) (Facilitates c	w
+CHROMATIN	fly	FBgn0016685	Nlp	Q27415	29	203	Nucleoplasmin-like protein (Chromatin decondensation protein	w
 CHROMATIN	fly	FBgn0027620	Acf	Q9V9T4	11	92	ATP-dependent chromatin assembly factor large subunit	w
 CHROMATIN	fly	FBgn0030054	Caf1-180	Q9W3D1	9	65	Chromatin assembly factor 1, p180 subunit (Chromatin assembl	w
 CHROMATIN	fly	FBgn0031655	Marcal1	Q9VMX6	3	31	SWI/SNF-related matrix-associated actin-dependent regulator 	w
 CHROMATIN	fly	FBgn0032157	Etl1	Q9VL72	2	19	SWI/SNF-related matrix-associated actin-dependent regulator 	w
-CHROMATIN	fly	FBgn0033526	Caf1-105	A1Z898	14	60	Chromatin assembly factor 1, p105 subunit	w
-CHROMATIN	fly	FBgn0035624	Eaf6	Q9VRN3	5	51	Chromatin modification-related protein MEAF6 (Esa1-associate	w
+CHROMATIN	fly	FBgn0033526	Caf1-105	A1Z898	14	62	Chromatin assembly factor 1, p105 subunit	w
+CHROMATIN	fly	FBgn0035624	Eaf6	Q9VRN3	7	53	Chromatin modification-related protein MEAF6 (Esa1-associate	w
 CHROMATIN	fly	FBgn0039863	Zmynd8	Q7KRS9	0	2	MYND-type zinc finger-containing chromatin reader Zmynd8	w
-CHROMATIN	fly	FBgn0043001	Chrac-16	Q9V452	4	24	Chromatin accessibility complex 16kD protein	w
-CHROMATIN	fly	FBgn0043002	Chrac-14	Q9V444	20	93	DNA polymerase epsilon subunit 3 (Chromatin accessibility co	w
-CHROMATIN	fly	FBgn0263979	Caf1-55	Q24572	53	613	Chromatin assembly factor 1 p55 subunit (CAF-1 p55 subunit) 	w
+CHROMATIN	fly	FBgn0043001	Chrac-16	Q9V452	5	24	Chromatin accessibility complex 16kD protein	w
+CHROMATIN	fly	FBgn0043002	Chrac-14	Q9V444	34	127	DNA polymerase epsilon subunit 3 (Chromatin accessibility co	w
+CHROMATIN	fly	FBgn0263979	Caf1-55	Q24572	60	625	Chromatin assembly factor 1 p55 subunit (CAF-1 p55 subunit) 	w
 CHROMATIN	human	O14646	CHD1	O14646	21	402	ATP-dependent chromatin remodeler CHD1 (EC 3.6.4.-) (Chromo 	w
 CHROMATIN	human	O14647	CHD2	O14647	7	150	ATP-dependent chromatin remodeler CHD2 (EC 3.6.4.-) (Chromo 	w
 CHROMATIN	human	O60264	SMARCA5	O60264	58	676	SWI/SNF-related matrix-associated actin-dependent regulator 	w
@@ -556,11 +556,11 @@ CHROMATIN	zebrafish	Q7ZW44	chtopa	Q7ZW44	5	29	Chromatin target of PRMT1a	w
 CHROMATIN	zebrafish	Q802C8	smarcd1	Q802C8	9	97	SWI/SNF-related matrix-associated actin-dependent regulator 	w
 CHROMATIN	zebrafish	Q803S1	smarce1	Q803S1	13	76	SWI/SNF-related matrix-associated actin-dependent regulator 	w
 CHROMATIN-ASSOCIATED	human	Q5U623	ATF7IP2	Q5U623	7	29	Activating transcription factor 7-interacting protein 2 (ATF	w
-CHROMATIN-BINDING	fly	FBgn0002638	Rcc1	P25171	16	85	Regulator of chromosome condensation (Chromatin-binding prot	w
+CHROMATIN-BINDING	fly	FBgn0002638	Rcc1	P25171	17	89	Regulator of chromosome condensation (Chromatin-binding prot	w
 CHROMATIN-BINDING	human	Q9BUA3	SPINDOC	Q9BUA3	12	72	Spindlin interactor and repressor of chromatin-binding prote	w
 CHROMATIN-LINKED	fly	FBgn0032979	Clamp	Q9V9N4	36	417	Chromatin-linked adaptor for MSL proteins	w
-CHROMATIN-MODIFYING	fly	FBgn0027565	CG5498	Q9Y124	2	25	Charged multivesicular body protein 7 (Chromatin-modifying p	w
-CHROMATIN-MODIFYING	fly	FBgn0037231	Vps24	Q9VN02	6	61	Charged multivesicular body protein 3 (Chromatin-modifying p	w
+CHROMATIN-MODIFYING	fly	FBgn0027565	CG5498	Q9Y124	5	25	Charged multivesicular body protein 7 (Chromatin-modifying p	w
+CHROMATIN-MODIFYING	fly	FBgn0037231	Vps24	Q9VN02	8	62	Charged multivesicular body protein 3 (Chromatin-modifying p	w
 CHROMATIN-MODIFYING	human	O43633	CHMP2A	O43633	17	161	Charged multivesicular body protein 2a (Chromatin-modifying 	w
 CHROMATIN-MODIFYING	human	Q7LBR1	CHMP1B	Q7LBR1	7	101	Charged multivesicular body protein 1b (CHMP1.5) (Chromatin-	w
 CHROMATIN-MODIFYING	human	Q8WUX9	CHMP7	Q8WUX9	9	147	Charged multivesicular body protein 7 (Chromatin-modifying p	w
@@ -573,7 +573,7 @@ CHROMATIN-MODIFYING	human	Q9NZZ3	CHMP5	Q9NZZ3	17	178	Charged multivesicular body
 CHROMATIN-MODIFYING	human	Q9UQN3	CHMP2B	Q9UQN3	8	143	Charged multivesicular body protein 2b (CHMP2.5) (Chromatin-	w
 CHROMATIN-MODIFYING	human	Q9Y3E7	CHMP3	Q9Y3E7	20	197	Charged multivesicular body protein 3 (Chromatin-modifying p	w
 CHROMATIN-RELATED	human	Q3L8U1	CHD9	Q3L8U1	0	46	ATP-dependent chromatin remodeler CHD9 (EC 3.6.4.-) (Chromat	w
-CHROMATIN-REMODELING	fly	FBgn0011604	Iswi	Q24368	23	231	Chromatin-remodeling complex ATPase chain Iswi (EC 3.6.4.-) 	w
+CHROMATIN-REMODELING	fly	FBgn0011604	Iswi	Q24368	24	232	Chromatin-remodeling complex ATPase chain Iswi (EC 3.6.4.-) 	w
 CHROMATIN-REMODELING	human	Q3L8U1	CHD9	Q3L8U1	0	46	ATP-dependent chromatin remodeler CHD9 (EC 3.6.4.-) (Chromat	w
 CHROMATIN-REMODELING	human	Q6AI39	BICRAL	Q6AI39	15	136	BRD4-interacting chromatin-remodeling complex-associated pro	w
 CHROMATIN-REMODELING	human	Q96T23	RSF1	Q96T23	41	191	Remodeling and spacing factor 1 (Rsf-1) (HBV pX-associated p	w
@@ -596,7 +596,7 @@ CHROMATIN-REMODELING	zebrafish	A2BE84	bcl11ab	A2BE84	1	9	BAF chromatin-remodelin
 CHROMATIN-REMODELING	zebrafish	E7F8Y0	bicral	E7F8Y0	8	108	BICRA-like chromatin-remodeling complex-associated protein	w
 CHROMATIN-SPECIFIC	human	Q08945	SSRP1	Q08945	94	788	FACT complex subunit SSRP1 (Chromatin-specific transcription	w
 CHROMATIN-SPECIFIC	human	Q9Y5B9	SUPT16H	Q9Y5B9	55	650	FACT complex subunit SPT16 (Chromatin-specific transcription	w
-CHROMATOR	fly	FBgn0044324	Chro	Q86BS3	16	77	Chromator, isoform A (Chromator, isoform B) (Chromator, isof	w
+CHROMATOR	fly	FBgn0044324	Chro	Q86BS3	17	77	Chromator, isoform A (Chromator, isoform B) (Chromator, isof	w
 CHROMO	fly	FBgn0004400	rhi	Q7JXA8	51	392	Chromo domain-containing protein rhino (Heterochromatin prot	w
 CHROMO	human	O14646	CHD1	O14646	21	402	ATP-dependent chromatin remodeler CHD1 (EC 3.6.4.-) (Chromo 	w
 CHROMO	human	O14647	CHD2	O14647	7	150	ATP-dependent chromatin remodeler CHD2 (EC 3.6.4.-) (Chromo 	w
@@ -649,7 +649,7 @@ CHROMODOMAIN	human	Q9Y232	CDYL	Q9Y232	29	295	Chromodomain Y-like protein (CDY-li
 CHROMODOMAIN	human	Q9Y6F7	CDY2A	Q9Y6F7	13	90	Testis-specific chromodomain protein Y 2 (EC 2.3.1.48)	w
 CHROMODOMAIN	human	Q9Y6F8	CDY1	Q9Y6F8	25	173	Testis-specific chromodomain protein Y 1 (EC 2.3.1.48)	w
 CHROMODOMAIN	zebrafish	E7F6P0	cdyl	E7F6P0	32	256	Chromodomain Y-like protein	w
-CHROMODOMAIN-HELICASE-DNA-BINDING	fly	FBgn0023395	Chd3	O16102	14	383	Chromodomain-helicase-DNA-binding protein 3 (EC 3.6.4.12) (A	w
+CHROMODOMAIN-HELICASE-DNA-BINDING	fly	FBgn0023395	Chd3	O16102	14	384	Chromodomain-helicase-DNA-binding protein 3 (EC 3.6.4.12) (A	w
 CHROMODOMAIN-HELICASE-DNA-BINDING	worm	O17909	chd-1	O17909	3	41	Chromodomain-helicase-DNA-binding protein 1	w
 CHROMODOMAIN-HELICASE-DNA-BINDING	zebrafish	A0A8M9PQJ3	sp100.2	A0A8M9PQJ3	1	6	Chromodomain-helicase-DNA-binding protein 5 isoform X2	w
 CHROMODOMAIN-HELICASE-DNA-BINDING	zebrafish	Q7ZU90	chd1l	Q7ZU90	4	139	Chromodomain-helicase-DNA-binding protein 1-like	w
@@ -661,11 +661,11 @@ CHROMOGRANIN-C	human	P13521	SCG2	P13521	9	60	Secretogranin-2 (Chromogranin-C) (S
 CHROMOKINESIN-A	human	O95239	KIF4A	O95239	37	311	Chromosome-associated kinesin KIF4A (Chromokinesin-A)	w
 CHROMOKINESIN-B	human	Q2VIQ3	KIF4B	Q2VIQ3	16	89	Chromosome-associated kinesin KIF4B (Chromokinesin-B)	w
 CHROMOSHADOW	fly	FBgn0030994	HP1D3csd	Q9VWK9	0	5	Heterochromatin protein 1D3 chromoshadow domain (RE13279p)	w
-CHROMOSHADOW	fly	FBgn0263084	HP1Lcsd	A0A0B4K7M5	0	0	Heterochromatin protein 1L chromoshadow domain	w
+CHROMOSHADOW	fly	FBgn0263084	HP1Lcsd	A0A0B4K7M5	1	1	Heterochromatin protein 1L chromoshadow domain	w
 CHROMOSO	human	Q96P11	NSUN5	Q96P11	15	197	28S rRNA (cytosine-C(5))-methyltransferase (EC 2.1.1.-) (NOL	w
 CHROMOSOMA	human	Q8NDH6	ICA1L	Q8NDH6	8	36	Islet cell autoantigen 1-like protein (Amyotrophic lateral s	w
 CHROMOSOMAL	fly	FBgn0000412	D1	P22058	83	528	Chromosomal protein D1	w
-CHROMOSOMAL	fly	FBgn0003607	Su(var)205	P05205	86	711	Heterochromatin protein 1 (HP1) (Non-histone chromosomal pro	w
+CHROMOSOMAL	fly	FBgn0003607	Su(var)205	P05205	89	711	Heterochromatin protein 1 (HP1) (Non-histone chromosomal pro	w
 CHROMOSOMAL	fly	FBgn0010313	corto	P41046	9	56	Centrosomal and chromosomal factor (CCF) (Chromocentrosomin)	w
 CHROMOSOMAL	fly	FBgn0020412	JIL-1	Q9V3I5	225	1211	Chromosomal serine/threonine-protein kinase JIL-1 (EC 2.7.11	w
 CHROMOSOMAL	human	O00479	HMGN4	O00479	28	758	High mobility group nucleosome-binding domain-containing pro	w
@@ -718,21 +718,21 @@ CHROMOSOMAL	yeast	P11632	NHP6A	P11632	3	98	Non-histone chromosomal protein 6A	w
 CHROMOSOMAL	yeast	P11633	NHP6B	P11633	3	68	Non-histone chromosomal protein 6B	w
 CHROMOSOMAL	yeast	P47134	BIR1	P47134	4	53	Chromosomal passenger complex protein BIR1	w
 CHROMOSOMAL	zebrafish	A3KPI6	si:ch211-288g17.3	A3KPI6	1	9	Chromosomal protein D1	w
-CHROMOSOME	fly	FBgn0002638	Rcc1	P25171	16	85	Regulator of chromosome condensation (Chromatin-binding prot	w
-CHROMOSOME	fly	FBgn0003227	rec	Q9VF30	2	49	DNA replication licensing factor REC (Protein mini chromosom	w
-CHROMOSOME	fly	FBgn0015376	cutlet	Q8IQ05	8	27	Chromosome transmission fidelity protein 18 homolog (CTF18) 	w
-CHROMOSOME	fly	FBgn0020497	emb	Q9TVM2	11	168	Exportin-1 (Chromosome region maintenance 1 protein) (Protei	w
+CHROMOSOME	fly	FBgn0002638	Rcc1	P25171	17	89	Regulator of chromosome condensation (Chromatin-binding prot	w
+CHROMOSOME	fly	FBgn0003227	rec	Q9VF30	5	57	DNA replication licensing factor REC (Protein mini chromosom	w
+CHROMOSOME	fly	FBgn0015376	cutlet	Q8IQ05	8	28	Chromosome transmission fidelity protein 18 homolog (CTF18) 	w
+CHROMOSOME	fly	FBgn0020497	emb	Q9TVM2	11	172	Exportin-1 (Chromosome region maintenance 1 protein) (Protei	w
 CHROMOSOME	fly	FBgn0021760	chb	Q9NBD7	5	38	CLIP-associating protein (Misexpression suppressor of ras 7)	w
 CHROMOSOME	fly	FBgn0022213	Cse1	Q9XZU1	5	30	Exportin-2 (Exp2) (Cellular apoptosis susceptibility protein	w
-CHROMOSOME	fly	FBgn0032929	Mcm10	Q9VIE6	4	70	Protein MCM10 homolog (Sensitized chromosome inheritance mod	w
-CHROMOSOME	fly	FBgn0033890	Ctf4	Q494K2	6	81	Chromosome transmission fidelity 4 (LD47422p)	w
+CHROMOSOME	fly	FBgn0032929	Mcm10	Q9VIE6	9	73	Protein MCM10 homolog (Sensitized chromosome inheritance mod	w
+CHROMOSOME	fly	FBgn0033890	Ctf4	Q494K2	12	89	Chromosome transmission fidelity 4 (LD47422p)	w
 CHROMOSOME	fly	FBgn0037551	Arl8	Q9VHV5	15	167	ADP-ribosylation factor-like protein 8 (Novel small G protei	w
-CHROMOSOME	fly	FBgn0037831	Cap-H2	Q8INL2	4	19	Chromosome associated protein H2, isoform E	w
+CHROMOSOME	fly	FBgn0037831	Cap-H2	Q8INL2	4	20	Chromosome associated protein H2, isoform E	w
 CHROMOSOME	fly	FBgn0038478	cal1	Q9VEN2	4	14	Chromosome alignment defect 1	w
-CHROMOSOME	fly	FBgn0053288	CG33288	Q7KTW3	1	15	Regulator of chromosome condensation	w
+CHROMOSOME	fly	FBgn0053288	CG33288	Q7KTW3	2	18	Regulator of chromosome condensation	w
 CHROMOSOME	fly	FBgn0087021	Spc25	Q9V3V7	9	20	Kinetochore protein Spc25 (Chromosome alignment defect 2) (M	w
 CHROMOSOME	fly	FBgn0259876	Cap-G	A1Z987	7	28	Chromosome associated protein G, isoform F	w
-CHROMOSOME	fly	FBgn0267449	WDY	B4F7L9	0	0	WD repeat-containing protein on Y chromosome (WD40 Y)	w
+CHROMOSOME	fly	FBgn0267449	WDY	B4F7L9	7	19	WD repeat-containing protein on Y chromosome (WD40 Y)	w
 CHROMOSOME	human	A0A0A6YYL3	POTEB	A0A0A6YYL3	13	51	POTE ankyrin domain family member B (ANKRD26-like family B m	w
 CHROMOSOME	human	A0A1B0GTG0	C10orf95	A0A1B0GTG0	0	2	Chromosome 10 open reading frame 95	w
 CHROMOSOME	human	A6NDE4	RBMY1B	A6NDE4	0	10	RNA-binding motif protein, Y chromosome, family 1 member B	w
@@ -858,16 +858,16 @@ CHROMOSOME-ASSOCIATED	human	Q8WYR4	RSPH1	Q8WYR4	43	177	Radial spoke head 1 homol
 CHROMOSOME-ASSOCIATED	human	Q9BPX3	NCAPG	Q9BPX3	48	317	Condensin complex subunit 3 (Chromosome-associated protein G	w
 CHROMOSOME-ASSOCIATED	human	Q9NTJ3	SMC4	Q9NTJ3	38	532	Structural maintenance of chromosomes protein 4 (SMC protein	w
 CHROMOSOMES	fly	FBgn0015391	glu	Q9V3A7	19	127	Structural maintenance of chromosomes protein	w
-CHROMOSOMES	fly	FBgn0015615	SMC3	Q9VXE9	12	62	Structural maintenance of chromosomes protein	w
-CHROMOSOMES	fly	FBgn0027783	SMC2	Q7KK96	9	34	Structural maintenance of chromosomes protein	w
-CHROMOSOMES	fly	FBgn0030657	cerv	Q9VXT3	6	47	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
-CHROMOSOMES	fly	FBgn0031848	Nse1	Q9VMA0	6	32	Non-structural maintenance of chromosomes element 1 homolog 	w
-CHROMOSOMES	fly	FBgn0032251	Nse4	Q9VKV4	7	67	Non-structural maintenance of chromosomes element 4	w
+CHROMOSOMES	fly	FBgn0015615	SMC3	Q9VXE9	13	64	Structural maintenance of chromosomes protein	w
+CHROMOSOMES	fly	FBgn0027783	SMC2	Q7KK96	11	37	Structural maintenance of chromosomes protein	w
+CHROMOSOMES	fly	FBgn0030657	cerv	Q9VXT3	9	47	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
+CHROMOSOMES	fly	FBgn0031848	Nse1	Q9VMA0	9	33	Non-structural maintenance of chromosomes element 1 homolog 	w
+CHROMOSOMES	fly	FBgn0032251	Nse4	Q9VKV4	8	68	Non-structural maintenance of chromosomes element 4	w
 CHROMOSOMES	fly	FBgn0036730	qjt	Q9VVH7	6	32	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
-CHROMOSOMES	fly	FBgn0040283	SMC1	Q9VCD8	11	56	Structural maintenance of chromosomes protein	w
-CHROMOSOMES	fly	FBgn0052438	SMC5	Q8IPT2	10	57	Structural maintenance of chromosomes protein 5	w
+CHROMOSOMES	fly	FBgn0040283	SMC1	Q9VCD8	11	57	Structural maintenance of chromosomes protein	w
+CHROMOSOMES	fly	FBgn0052438	SMC5	Q8IPT2	11	61	Structural maintenance of chromosomes protein 5	w
 CHROMOSOMES	fly	FBgn0259195	CG42299	Q9VXT4	3	40	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
-CHROMOSOMES	fly	FBgn0259196	CG42300	Q9VXT8	5	33	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
+CHROMOSOMES	fly	FBgn0259196	CG42300	Q9VXT8	7	33	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
 CHROMOSOMES	human	A6NHR9	SMCHD1	A6NHR9	9	244	Structural maintenance of chromosomes flexible hinge domain-	w
 CHROMOSOMES	human	O95347	SMC2	O95347	40	458	Structural maintenance of chromosomes protein 2 (SMC protein	w
 CHROMOSOMES	human	Q14683	SMC1A	Q14683	50	636	Structural maintenance of chromosomes protein 1A (SMC protei	w
@@ -925,5 +925,5 @@ CHRONOLOGICALLY	fly	FBgn0086758	chinmo	Q7KU09	99	367	Chronologically inappropria
 CHRONOPHAGE	fly	FBgn0029939	Cph	A0A023GPJ3	38	97	Chronophage	w
 CHRONOPHIN	human	Q96GD0	PDXP	Q96GD0	5	101	Chronophin (EC 3.1.3.16) (EC 3.1.3.74) (Pyridoxal phosphate 	w
 CHROWDED	fly	FBgn0015372	RabX1	Q9V3C2	9	40	LD47384p (Rab-related GTP-binding protein Chrowded) (RabX1)	w
-CHRO_158	fly	FBgn0044324	Chro	Q86BS3	16	77		
-CHRO_163	fly	FBgn0044324	Chro	Q86BS3	16	77		
+CHRO_158	fly	FBgn0044324	Chro	Q86BS3	17	77		
+CHRO_163	fly	FBgn0044324	Chro	Q86BS3	17	77		

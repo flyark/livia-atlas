@@ -16,7 +16,7 @@ SIR1	yeast	P21691	SIR1	P21691	0	18	Regulatory protein SIR1
 SIR1_HUMAN	human	Q96EB6	SIRT1	Q96EB6	72	593		
 SIR2	candida-albicans-237561	O59923	SIR2	O59923	5	27	NAD-dependent histone deacetylase SIR2	
 SIR2	cladophialophora-carrionii	A0A1C1CTM1	SIR2	A0A1C1CTM1	8	68	NAD-dependent histone deacetylase SIR2	
-SIR2	fly	FBgn0029783	Sirt4	Q8IRR5	39	421	NAD-dependent protein deacylase Sirt4 (EC 2.3.1.286) (Regula	w
+SIR2	fly	FBgn0029783	Sirt4	Q8IRR5	40	427	NAD-dependent protein deacylase Sirt4 (EC 2.3.1.286) (Regula	w
 SIR2	fly	FBgn0039631	Sirt7	Q9VAQ1	38	370	NAD-dependent protein deacetylase Sirt7 (EC 2.3.1.286) (Regu	w
 SIR2	human	Q96EB6	SIRT1	Q96EB6	72	593	NAD-dependent protein deacetylase sirtuin-1 (hSIRT1) (EC 2.3	w
 SIR2	human	Q9BPY3	SIRAL1	Q9BPY3	10	186	SIR2 antiphage-like protein 1 (Protein FAM118B)	w
@@ -53,7 +53,7 @@ SIR3_HUMAN	human	Q9NTG7	SIRT3	Q9NTG7	134	504
 SIR4	yeast	P11978	SIR4	P11978	4	71	Regulatory protein SIR4	
 SIR4-INTERACTING	yeast	P38262	SIF2	P38262	4	87	SIR4-interacting protein SIF2	w
 SIR41_CAEEL	worm	Q20480	sir-2.2	Q20480	3	38		
-SIR4_DROME	fly	FBgn0029783	Sirt4	Q8IRR5	39	421		
+SIR4_DROME	fly	FBgn0029783	Sirt4	Q8IRR5	40	427		
 SIR4_HUMAN	human	Q9Y6E7	SIRT4	Q9Y6E7	47	376		
 SIR5_DANRE	zebrafish	Q6DHI5	sirt5	Q6DHI5	8	92		
 SIR5_HUMAN	human	Q9NXA8	SIRT5	Q9NXA8	38	148		
@@ -93,16 +93,16 @@ SIRPD_HUMAN	human	Q9H106	SIRPD	Q9H106	23	252
 SIRPG	human	Q9P1W8	SIRPG	Q9P1W8	20	221	Signal-regulatory protein gamma (SIRP-gamma) (CD172 antigen-	
 SIRPG_HUMAN	human	Q9P1W8	SIRPG	Q9P1W8	20	221		
 SIRR	mycobacterium-tuberculosis	I6Y1Q2	sirR	I6Y1Q2	0	6	Manganese transport regulator	
-SIRT1	fly	FBgn0024291	Sirt1	Q9VK34	115	535	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	
+SIRT1	fly	FBgn0024291	Sirt1	Q9VK34	119	539	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	
 SIRT1	human	Q86WX3	RPS19BP1	Q86WX3	23	238	Active regulator of SIRT1 (40S ribosomal protein S19-binding	w
 SIRT1	human	Q96EB6	SIRT1	Q96EB6	72	593	NAD-dependent protein deacetylase sirtuin-1 (hSIRT1) (EC 2.3	
 SIRT1	mus-musculus	Q923E4	Sirt1	Q923E4	26	244	NAD-dependent protein deacetylase sirtuin-1	
 SIRT1	rattus-norvegicus	A0A0G2JZ79	Sirt1	A0A0G2JZ79	23	197	NAD-dependent protein deacetylase sirtuin-1	
 SIRT1	zebrafish	E7F0U9	rps19bp1	E7F0U9	5	74	Active regulator of SIRT1	w
 SIRT1	zebrafish	E7F8W3	sirt1	E7F8W3	26	259	protein acetyllysine N-acetyltransferase	
-SIRT1_618	fly	FBgn0024291	Sirt1	Q9VK34	115	535		
-SIRT1_799	fly	FBgn0024291	Sirt1	Q9VK34	115	535		
-SIRT2	fly	FBgn0038788	Sirt2	Q9I7I7	10	86	Sirtuin 2	
+SIRT1_618	fly	FBgn0024291	Sirt1	Q9VK34	119	539		
+SIRT1_799	fly	FBgn0024291	Sirt1	Q9VK34	119	539		
+SIRT2	fly	FBgn0038788	Sirt2	Q9I7I7	11	89	Sirtuin 2	
 SIRT2	human	Q8IXJ6	SIRT2	Q8IXJ6	27	267	NAD-dependent protein deacetylase sirtuin-2 (EC 2.3.1.286) (	
 SIRT2	mus-musculus	Q8VDQ8	Sirt2	Q8VDQ8	6	56	NAD-dependent protein deacetylase sirtuin-2	
 SIRT2	rattus-norvegicus	Q5RJQ4	Sirt2	Q5RJQ4	6	56	NAD-dependent protein deacetylase sirtuin-2	
@@ -115,8 +115,8 @@ SIRT3	rattus-norvegicus	C6ZII9	Sirt3	C6ZII9	6	48	NAD-dependent protein deacetyla
 SIRT3	zebrafish	A0A8M3AUK3	sirt3	A0A8M3AUK3	4	4	NAD-dependent protein deacetylase sirtuin-3, mitochondrial i	
 SIRT3	zebrafish	A1L2B7	sirt3	A1L2B7	11	56	NAD-dependent protein deacetylase sirtuin-3, mitochondrial	
 SIRT3.1.S	xenopus-laevis	A0A8J1KJA7	sirt3.1.S	A0A8J1KJA7	6	7	NAD-dependent protein deacetylase sirtuin-3 isoform X1	
-SIRT4	fly	FBgn0029783	Sirt4	Q8IRR5	39	421	NAD-dependent protein deacylase Sirt4 (EC 2.3.1.286) (Regula	w
-SIRT4	fly	FBgn0029783	Sirt4	Q8IRR5	39	421	NAD-dependent protein deacylase Sirt4 (EC 2.3.1.286) (Regula	w
+SIRT4	fly	FBgn0029783	Sirt4	Q8IRR5	40	427	NAD-dependent protein deacylase Sirt4 (EC 2.3.1.286) (Regula	w
+SIRT4	fly	FBgn0029783	Sirt4	Q8IRR5	40	427	NAD-dependent protein deacylase Sirt4 (EC 2.3.1.286) (Regula	w
 SIRT4	human	Q9Y6E7	SIRT4	Q9Y6E7	47	376	NAD-dependent protein lipoamidase sirtuin-4, mitochondrial (	
 SIRT4	mus-musculus	Q8R216	Sirt4	Q8R216	12	28	NAD-dependent protein lipoamidase sirtuin-4, mitochondrial	
 SIRT4	pan-troglodytes	H2Q706	SIRT4	H2Q706	14	15	NAD-dependent protein lipoamidase sirtuin-4, mitochondrial	
@@ -130,7 +130,7 @@ SIRT5	pan-troglodytes	K7AYD4	SIRT5	K7AYD4	10	10	NAD-dependent protein deacylase 
 SIRT5	rattus-norvegicus	Q68FX9	Sirt5	Q68FX9	10	40	NAD-dependent protein deacylase sirtuin-5, mitochondrial	
 SIRT5	zebrafish	Q6DHI5	sirt5	Q6DHI5	8	92	NAD-dependent protein deacylase sirtuin-5, mitochondrial	
 SIRT5-A	xenopus-laevis	Q5HZN8	sirt5-a	Q5HZN8	3	4	NAD-dependent protein deacylase sirtuin-5A, mitochondrial	
-SIRT6	fly	FBgn0037802	Sirt6	Q9VH08	69	410	Sirtuin 6	
+SIRT6	fly	FBgn0037802	Sirt6	Q9VH08	70	411	Sirtuin 6	
 SIRT6	human	Q8N6T7	SIRT6	Q8N6T7	137	1054	NAD-dependent protein deacylase sirtuin-6 (EC 2.3.1.-) (NAD-	
 SIRT6	mus-musculus	P59941	Sirt6	P59941	7	69	NAD-dependent protein deacylase sirtuin-6	
 SIRT6	schistosoma-mansoni	T1VXV7	Sirt6	T1VXV7	3	29	protein acetyllysine N-acetyltransferase	
@@ -141,10 +141,10 @@ SIRT7	mus-musculus	Q8BKJ9	Sirt7	Q8BKJ9	1	46	NAD-dependent protein deacetylase si
 SIRT7	rattus-norvegicus	B2RZ55	Sirt7	B2RZ55	4	43	NAD-dependent protein deacetylase sirtuin-7	
 SIRT7	zebrafish	A0A2R8QUG9	sirt7	A0A2R8QUG9	8	67	NAD-dependent protein deacetylase sirtuin-7	
 SIRTU	human	Q8IXJ6	SIRT2	Q8IXJ6	27	267	NAD-dependent protein deacetylase sirtuin-2 (EC 2.3.1.286) (	w
-SIRTUIN	fly	FBgn0037802	Sirt6	Q9VH08	69	410	Sirtuin 6	w
-SIRTUIN	fly	FBgn0038788	Sirt2	Q9I7I7	10	86	Sirtuin 2	w
+SIRTUIN	fly	FBgn0037802	Sirt6	Q9VH08	70	411	Sirtuin 6	w
+SIRTUIN	fly	FBgn0038788	Sirt2	Q9I7I7	11	89	Sirtuin 2	w
 SIRTUIN	human	Q8N6T7	SIRT6	Q8N6T7	137	1054	NAD-dependent protein deacylase sirtuin-6 (EC 2.3.1.-) (NAD-	w
-SIRTUIN-1	fly	FBgn0024291	Sirt1	Q9VK34	115	535	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	w
+SIRTUIN-1	fly	FBgn0024291	Sirt1	Q9VK34	119	539	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	w
 SIRTUIN-1	human	Q96EB6	SIRT1	Q96EB6	72	593	NAD-dependent protein deacetylase sirtuin-1 (hSIRT1) (EC 2.3	w
 SIRTUIN-2	human	Q8IXJ6	SIRT2	Q8IXJ6	27	267	NAD-dependent protein deacetylase sirtuin-2 (EC 2.3.1.286) (	w
 SIRTUIN-2	zebrafish	Q7ZVK3	sirt2	Q7ZVK3	2	62	NAD-dependent protein deacetylase sirtuin-2	w
@@ -157,4 +157,4 @@ SIRTUIN-5	zebrafish	Q6DHI5	sirt5	Q6DHI5	8	92	NAD-dependent protein deacylase sir
 SIRTUIN-6	human	Q8N6T7	SIRT6	Q8N6T7	137	1054	NAD-dependent protein deacylase sirtuin-6 (EC 2.3.1.-) (NAD-	w
 SIRTUIN-7	human	Q9NRC8	SIRT7	Q9NRC8	68	1078	NAD-dependent protein deacetylase sirtuin-7 (EC 2.3.1.286) (	w
 SIRTUIN-7	zebrafish	A0A2R8QUG9	sirt7	A0A2R8QUG9	8	67	NAD-dependent protein deacetylase sirtuin-7	w
-SIRUP	fly	FBgn0031971	Sirup	Q9VLU6	4	8	Succinate dehydrogenase assembly factor 4, mitochondrial (SD	
+SIRUP	fly	FBgn0031971	Sirup	Q9VLU6	5	8	Succinate dehydrogenase assembly factor 4, mitochondrial (SD	

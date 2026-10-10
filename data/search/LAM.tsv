@@ -1,4 +1,4 @@
-LAM	fly	FBgn0002525	Lam	P08928	26	145	Lamin Dm0	
+LAM	fly	FBgn0002525	Lam	P08928	27	147	Lamin Dm0	
 LAM-1	human	P14151	SELL	P14151	22	507	L-selectin (CD62 antigen-like family member L) (Leukocyte ad	w
 LAM1	yeast	P38851	LAM1	P38851	0	8	Membrane-anchored lipid-binding protein LAM1	
 LAM4	yeast	P38800	LAM4	P38800	5	35	Membrane-anchored lipid-binding protein LAM4	
@@ -124,7 +124,7 @@ LAMC3_HUMAN	human	Q9Y6N6	LAMC3	Q9Y6N6	14	65
 LAMC_435	fly	FBgn0010397	LamC	A0A0B4KFY9	4	30		
 LAMC_457	fly	FBgn0010397	LamC	A0A0B4KFY9	4	30		
 LAME	fly	FBgn0039039	lmd	Q962I0	67	354	LD47926p (Lame duck, isoform B) (Zn finger transcription fac	w
-LAMIN	fly	FBgn0002525	Lam	P08928	26	145	Lamin Dm0	w
+LAMIN	fly	FBgn0002525	Lam	P08928	27	147	Lamin Dm0	w
 LAMIN	fly	FBgn0010397	LamC	A0A0B4KFY9	4	30	Lamin C, isoform B	w
 LAMIN	human	P02545	LMNA	P02545	132	1292	Prelamin-A/C [Cleaved into: Lamin-A/C (70 kDa lamin) (Renal 	w
 LAMIN	human	Q8IXW0	LMNTD2	Q8IXW0	6	53	Lamin tail domain-containing protein 2	w
@@ -135,7 +135,7 @@ LAMIN-1	worm	Q21443	lmn-1	Q21443	13	67	Lamin-1	w
 LAMIN-A	human	P02545	LMNA	P02545	132	1292	Prelamin-A/C [Cleaved into: Lamin-A/C (70 kDa lamin) (Renal 	w
 LAMIN-ASSOCIATED	human	Q5JTV8	TOR1AIP1	Q5JTV8	37	233	Torsin-1A-interacting protein 1 (Lamin-associated protein 1B	w
 LAMIN-ASSOCIATED	human	Q9Y6X4	FAM169A	Q9Y6X4	9	68	Soluble lamin-associated protein of 75 kDa (SLAP75) (Protein	w
-LAMIN-B	fly	FBgn0034657	LBR	Q8MLV1	21	232	Lamin-B receptor (dLBR)	w
+LAMIN-B	fly	FBgn0034657	LBR	Q8MLV1	21	234	Lamin-B receptor (dLBR)	w
 LAMIN-B1	human	P20700	LMNB1	P20700	81	679	Lamin-B1	w
 LAMIN-B2	human	Q03252	LMNB2	Q03252	37	293	Lamin-B2	w
 LAMIN-B2	zebrafish	B3DFN3	lmnb2	B3DFN3	3	27	Lamin-B2	w
@@ -148,7 +148,7 @@ LAMINARASE-RESISTANCE	yeast	P25579	LRE1	P25579	2	13	Laminarase-resistance protei
 LAMINET-1	human	Q9Y2I2	NTNG1	Q9Y2I2	35	396	Netrin-G1 (Laminet-1)	w
 LAMINET-2	human	Q96CW9	NTNG2	Q96CW9	6	106	Netrin-G2 (Laminet-2)	w
 LAMININ	fly	FBgn0002526	LanA	Q00174	1	8	Laminin subunit alpha (Laminin A chain)	w
-LAMININ	fly	FBgn0003517	sta	P38979	45	487	Small ribosomal subunit protein uS2 (40S ribosomal protein S	w
+LAMININ	fly	FBgn0003517	sta	P38979	72	490	Small ribosomal subunit protein uS2 (40S ribosomal protein S	w
 LAMININ	fly	FBgn0267348	LanB2	P15215	3	40	Laminin subunit gamma-1 (Laminin B2 chain)	w
 LAMININ	fly	FBgn0289933	LanB1	P11046	7	39	Laminin B1	w
 LAMININ	human	A0A8I5KQE6	RPSA2	A0A8I5KQE6	1	2	Small ribosomal subunit protein uS2B (37 kDa laminin recepto	w
@@ -221,8 +221,8 @@ LAMP-3	human	P08962	CD63	P08962	23	362	CD63 antigen (Granulophysin) (Lysosomal-a
 LAMP-3	human	Q9UQV4	LAMP3	Q9UQV4	62	547	Lysosome-associated membrane glycoprotein 3 (LAMP-3) (Lysoso	w
 LAMP-LIKE	human	Q9UJQ1	LAMP5	Q9UJQ1	19	154	Lysosome-associated membrane glycoprotein 5 (Brain and dendr	w
 LAMP1	arabidopsis-thaliana	Q7Y228	LAMP1	Q7Y228	0	45	Probable glutamate carboxypeptidase LAMP1	
-LAMP1	fly	FBgn0032949	Lamp1	Q9V9S0	416	2475	FI04419p (Lamp1)	w
-LAMP1	fly	FBgn0032949	Lamp1	Q9V9S0	416	2475	FI04419p (Lamp1)	w
+LAMP1	fly	FBgn0032949	Lamp1	Q9V9S0	418	2477	FI04419p (Lamp1)	w
+LAMP1	fly	FBgn0032949	Lamp1	Q9V9S0	418	2477	FI04419p (Lamp1)	w
 LAMP1	human	P11279	LAMP1	P11279	81	926	Lysosome-associated membrane glycoprotein 1 (LAMP-1) (Lysoso	
 LAMP1	mus-musculus	P11438	Lamp1	P11438	3	73	Lysosome-associated membrane glycoprotein 1	
 LAMP1	rattus-norvegicus	P14562	Lamp1	P14562	0	65	Lysosome-associated membrane glycoprotein 1	
@@ -243,38 +243,38 @@ LAMP5	zebrafish	A8WFR0	lamp5	A8WFR0	1	3	Lysosome-associated membrane glycoprotei
 LAMP5_HUMAN	human	Q9UJQ1	LAMP5	Q9UJQ1	19	154		
 LAMR1	human	P08865	RPSA	P08865	55	937		
 LAMS	human	P55268	LAMB2	P55268	13	178		
-LAMTOR1	fly	FBgn0036932	Lamtor1	Q9VW73	18	129	Ragulator complex protein LAMTOR1 (Late endosomal/lysosomal 	w
-LAMTOR1	fly	FBgn0036932	Lamtor1	Q9VW73	18	129	Ragulator complex protein LAMTOR1 (Late endosomal/lysosomal 	w
+LAMTOR1	fly	FBgn0036932	Lamtor1	Q9VW73	20	134	Ragulator complex protein LAMTOR1 (Late endosomal/lysosomal 	w
+LAMTOR1	fly	FBgn0036932	Lamtor1	Q9VW73	20	134	Ragulator complex protein LAMTOR1 (Late endosomal/lysosomal 	w
 LAMTOR1	human	Q6IAA8	LAMTOR1	Q6IAA8	35	698	Ragulator complex protein LAMTOR1 (Late endosomal/lysosomal 	
 LAMTOR1	mus-musculus	Q9CQ22	Lamtor1	Q9CQ22	10	74	Ragulator complex protein LAMTOR1	
 LAMTOR1	rattus-norvegicus	Q6P791	Lamtor1	Q6P791	13	67	Ragulator complex protein LAMTOR1	
 LAMTOR1	zebrafish	E7FBZ6	lamtor1	E7FBZ6	10	67	Ragulator complex protein LAMTOR1	w
 LAMTOR1	zebrafish	E7FBZ6	lamtor1	E7FBZ6	10	67	Ragulator complex protein LAMTOR1	w
-LAMTOR2	fly	FBgn0034350	Lamtor2	Q9V8I2	6	48	Ragulator complex protein LAMTOR2 homolog (Late endosomal/ly	w
-LAMTOR2	fly	FBgn0034350	Lamtor2	Q9V8I2	6	48	Ragulator complex protein LAMTOR2 homolog (Late endosomal/ly	w
+LAMTOR2	fly	FBgn0034350	Lamtor2	Q9V8I2	9	56	Ragulator complex protein LAMTOR2 homolog (Late endosomal/ly	w
+LAMTOR2	fly	FBgn0034350	Lamtor2	Q9V8I2	9	56	Ragulator complex protein LAMTOR2 homolog (Late endosomal/ly	w
 LAMTOR2	human	Q9Y2Q5	LAMTOR2	Q9Y2Q5	18	232	Ragulator complex protein LAMTOR2 (Endosomal adaptor protein	
 LAMTOR2	mus-musculus	Q9JHS3	Lamtor2	Q9JHS3	6	67	Ragulator complex protein LAMTOR2	
 LAMTOR2	worm	Q9N2U6	lmtr-2	Q9N2U6	3	52	Ragulator complex protein LAMTOR2 homolog	w
 LAMTOR2	zebrafish	Q6DEG4	lamtor2	Q6DEG4	6	63	Ragulator complex protein LAMTOR2	w
 LAMTOR2	zebrafish	Q6DEG4	lamtor2	Q6DEG4	6	63	Ragulator complex protein LAMTOR2	w
-LAMTOR3	fly	FBgn0032642	Lamtor3	Q9VJD2	7	53	Ragulator complex protein LAMTOR3 homolog (Late endosomal/ly	w
-LAMTOR3	fly	FBgn0032642	Lamtor3	Q9VJD2	7	53	Ragulator complex protein LAMTOR3 homolog (Late endosomal/ly	w
+LAMTOR3	fly	FBgn0032642	Lamtor3	Q9VJD2	9	61	Ragulator complex protein LAMTOR3 homolog (Late endosomal/ly	w
+LAMTOR3	fly	FBgn0032642	Lamtor3	Q9VJD2	9	61	Ragulator complex protein LAMTOR3 homolog (Late endosomal/ly	w
 LAMTOR3	human	Q9UHA4	LAMTOR3	Q9UHA4	17	235	Ragulator complex protein LAMTOR3 (Late endosomal/lysosomal 	
 LAMTOR3	mus-musculus	O88653	Lamtor3	O88653	10	74	Ragulator complex protein LAMTOR3	
 LAMTOR3	rattus-norvegicus	Q5U204	Lamtor3	Q5U204	7	72	Ragulator complex protein LAMTOR3	
 LAMTOR3	zebrafish	Q503S6	lamtor3	Q503S6	7	56	Ragulator complex protein LAMTOR3	w
 LAMTOR3	zebrafish	Q503S6	lamtor3	Q503S6	7	56	Ragulator complex protein LAMTOR3	w
-LAMTOR4	fly	FBgn0035469	Lamtor4	M9PBM4	14	112	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	
+LAMTOR4	fly	FBgn0035469	Lamtor4	M9PBM4	14	116	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	
 LAMTOR4	human	Q0VGL1	LAMTOR4	Q0VGL1	22	116	Ragulator complex protein LAMTOR4 (Late endosomal/lysosomal 	
 LAMTOR4	mus-musculus	Q8CF66	Lamtor4	Q8CF66	12	57	Ragulator complex protein LAMTOR4	
 LAMTOR4	rattus-norvegicus	D4AD29	Lamtor4	D4AD29	10	56	Ragulator complex protein LAMTOR4	
 LAMTOR4	zebrafish	Q0P3X8	lamtor4	Q0P3X8	8	49	Ragulator complex protein LAMTOR4	w
 LAMTOR4	zebrafish	Q0P3X8	lamtor4	Q0P3X8	8	49	Ragulator complex protein LAMTOR4	w
-LAMTOR5	fly	FBgn0026090	Lamtor5	O96824	12	73	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	
+LAMTOR5	fly	FBgn0026090	Lamtor5	O96824	14	77	Late endosomal/lysosomal adaptor and MAPK and MTOR activator	
 LAMTOR5	human	O43504	LAMTOR5	O43504	23	224	Ragulator complex protein LAMTOR5 (Hepatitis B virus X-inter	
 LAMTOR5	mus-musculus	Q9D1L9	Lamtor5	Q9D1L9	13	73	Ragulator complex protein LAMTOR5	
 LAMTOR5	rattus-norvegicus	D3ZF11	Lamtor5	D3ZF11	11	70	Ragulator complex protein LAMTOR5	
 LAMTOR5	worm	E5QCH0	CELE_D1054.19	E5QCH0	0	2	Ragulator complex protein LAMTOR5	w
 LAMTOR5	zebrafish	E7FA90	lamtor5	E7FA90	7	59	Ragulator complex protein LAMTOR5	w
 LAMTOR5	zebrafish	E7FA90	lamtor5	E7FA90	7	59	Ragulator complex protein LAMTOR5	w
-LAM_595	fly	FBgn0002525	Lam	P08928	26	145		
+LAM_595	fly	FBgn0002525	Lam	P08928	27	147		

@@ -5,7 +5,7 @@ GAL	mus-musculus	P47212	Gal	P47212	4	29	Galanin peptides
 GAL	rattus-norvegicus	P10683	Gal	P10683	5	28	Galanin peptides	
 GAL	zebrafish	E7EZ53	gal	E7EZ53	6	44	Galanin peptides	
 GAL-1	human	P09382	LGALS1	P09382	41	526	Galectin-1 (Gal-1) (14 kDa laminin-binding protein) (HLBP14)	w
-GAL-1-P	fly	FBgn0263200	Galt	Q9VMA2	0	17	Probable galactose-1-phosphate uridylyltransferase (Gal-1-P 	w
+GAL-1-P	fly	FBgn0263200	Galt	Q9VMA2	0	18	Probable galactose-1-phosphate uridylyltransferase (Gal-1-P 	w
 GAL-1-P	human	P07902	GALT	P07902	1	41	Galactose-1-phosphate uridylyltransferase (Gal-1-P uridylylt	w
 GAL-10	human	Q05315	CLC	Q05315	16	71	Galectin-10 (Gal-10) (Charcot-Leyden crystal protein) (CLC) 	w
 GAL-12	human	Q96DT0	LGALS12	Q96DT0	4	80	Galectin-12 (Gal-12) (Galectin-related inhibitor of prolifer	w
@@ -98,7 +98,7 @@ GALACTOSE	human	Q9NS84	CHST7	Q9NS84	9	44	Carbohydrate sulfotransferase 7 (EC 2.8
 GALACTOSE	human	Q9Y4C5	CHST2	Q9Y4C5	5	35	Carbohydrate sulfotransferase 2 (EC 2.8.2.-) (Galactose/N-ac	w
 GALACTOSE	yeast	P04387	GAL80	P04387	3	28	Galactose/lactose metabolism regulatory protein GAL80	w
 GALACTOSE	yeast	P13181	GAL2	P13181	0	8	Galactose transporter	w
-GALACTOSE-1-PHOSPHATE	fly	FBgn0263200	Galt	Q9VMA2	0	17	Probable galactose-1-phosphate uridylyltransferase (Gal-1-P 	w
+GALACTOSE-1-PHOSPHATE	fly	FBgn0263200	Galt	Q9VMA2	0	18	Probable galactose-1-phosphate uridylyltransferase (Gal-1-P 	w
 GALACTOSE-1-PHOSPHATE	human	P07902	GALT	P07902	1	41	Galactose-1-phosphate uridylyltransferase (Gal-1-P uridylylt	w
 GALACTOSE-1-PHOSPHATE	worm	Q27536	ZK1058.3	Q27536	0	3	Probable galactose-1-phosphate uridylyltransferase	w
 GALACTOSE-1-PHOSPHATE	yeast	P08431	GAL7	P08431	0	14	Galactose-1-phosphate uridylyltransferase	w
@@ -115,8 +115,8 @@ GALACTOSE-SPECIFIC	human	P17931	LGALS3	P17931	75	687	Galectin-3 (Gal-3) (35 kDa 
 GALACTOSE-TYPE	human	Q8IUN9	CLEC10A	Q8IUN9	28	251	C-type lectin domain family 10 member A (C-type lectin super	w
 GALACTOSI	human	Q495W5	POFUT4	Q495W5	3	137	GDP-fucose protein O-fucosyltransferase 4 (EC 2.4.1.221) (Al	w
 GALACTOSIDASE	fly	FBgn0001089	Gal	Q9VMJ5	2	10	Beta galactosidase, isoform A (EC 3.2.1.23) (LP09580p)	w
-GALACTOSIDE	fly	FBgn0032117	FutB	Q9VLC1	446	2387	Alpha-(1,3)-fucosyltransferase B (EC 2.4.1.-) (Galactoside 3	w
-GALACTOSIDE	fly	FBgn0044872	FutC	P83088	277	2386	Alpha-(1,3)-fucosyltransferase C (EC 2.4.1.-) (Galactoside 3	w
+GALACTOSIDE	fly	FBgn0032117	FutB	Q9VLC1	447	2388	Alpha-(1,3)-fucosyltransferase B (EC 2.4.1.-) (Galactoside 3	w
+GALACTOSIDE	fly	FBgn0044872	FutC	P83088	278	2388	Alpha-(1,3)-fucosyltransferase C (EC 2.4.1.-) (Galactoside 3	w
 GALACTOSIDE	human	A0A2R8YDJ6	ST3GAL3	A0A2R8YDJ6	1	14	CMP-N-acetylneuraminate-beta-1,4-galactoside alpha-2,3-sialy	w
 GALACTOSIDE	human	P19526	FUT1	P19526	14	89	Galactoside alpha-(1,2)-fucosyltransferase 1 (Alpha(1,2)FT 1	w
 GALACTOSIDE	human	Q10981	FUT2	Q10981	17	135	Galactoside alpha-(1,2)-fucosyltransferase 2 (Alpha(1,2)FT 2	w
@@ -155,7 +155,7 @@ GALACTOSYLCERAMIDE	human	Q99999	GAL3ST1	Q99999	1	63	Galactosylceramide sulfotran
 GALACTOSYLGALACTOSYLGLUCOSYLCERAMIDASE	human	P06280	GLA	P06280	4	105	Alpha-galactosidase A (EC 3.2.1.22) (Alpha-D-galactosidase A	w
 GALACTOSYLGALACTOSYLXYLOSYLPROTEIN	fly	FBgn0032135	GlcAT-S	E1JHC8	184	2387	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
 GALACTOSYLGALACTOSYLXYLOSYLPROTEIN	fly	FBgn0036144	GlcAT-P	Q9VTG7	281	2388	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
-GALACTOSYLGALACTOSYLXYLOSYLPROTEIN	fly	FBgn0066114	GlcAT-I	O97422	58	2386	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
+GALACTOSYLGALACTOSYLXYLOSYLPROTEIN	fly	FBgn0066114	GlcAT-I	O97422	60	2389	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
 GALACTOSYLGALACTOSYLXYLOSYLPROTEIN	human	O94766	B3GAT3	O94766	8	144	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
 GALACTOSYLGALACTOSYLXYLOSYLPROTEIN	human	Q9NPZ5	B3GAT2	Q9NPZ5	5	58	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
 GALACTOSYLGALACTOSYLXYLOSYLPROTEIN	human	Q9P2W7	B3GAT1	Q9P2W7	21	440	Galactosylgalactosylxylosylprotein 3-beta-glucuronosyltransf	w
@@ -173,7 +173,7 @@ GALACTOSYLGALACTOSYLXYLOSYLPROTEIN	zebrafish	Q6DBR2	b3gat2	Q6DBR2	3	7	Galactosyl
 GALACTOSYLGLUCOSYLCERAMIDE	human	Q00973	B4GALNT1	Q00973	3	181	Beta-1,4 N-acetylgalactosaminyltransferase 1 (EC 2.4.1.92) (	w
 GALACTOSYLTR	human	P21127	CDK11B	P21127	196	1399	Cyclin-dependent kinase 11B (EC 2.7.11.22) (EC 2.7.11.23) (C	w
 GALACTOSYLTRANS	human	Q9Y5Z6	B3GALT1	Q9Y5Z6	11	144	Beta-1,3-galactosyltransferase 1 (Beta-1,3-GalTase 1) (Beta3	w
-GALACTOSYLTRANSF	fly	FBgn0039258	beta4GalT7	Q9VBZ9	351	2384	Beta-1,4-galactosyltransferase 7 (EC 2.4.1.133) (Proteoglyca	w
+GALACTOSYLTRANSF	fly	FBgn0039258	beta4GalT7	Q9VBZ9	352	2387	Beta-1,4-galactosyltransferase 7 (EC 2.4.1.133) (Proteoglyca	w
 GALACTOSYLTRANSFERAS	human	Q9UBV7	B4GALT7	Q9UBV7	13	147	Beta-1,4-galactosyltransferase 7 (Beta-1,4-GalTase 7) (Beta4	w
 GALACTOSYLTRANSFERAS	human	Q9UQ88	CDK11A	Q9UQ88	199	1416	Cyclin-dependent kinase 11A (EC 2.7.11.22) (EC 2.7.11.23) (C	w
 GALACTOSYLTRANSFERASE	fly	FBgn0000221	brn	Q24157	351	2605	Beta-1,3-galactosyltransferase brn (EC 2.4.1.62) (Brainiac p	w
@@ -182,11 +182,11 @@ GALACTOSYLTRANSFERASE	fly	FBgn0031466	CG3119	Q9VQH4	8	14	N-acetylgalactosaminide
 GALACTOSYLTRANSFERASE	fly	FBgn0031468	CG2975	Q9VQH6	8	17	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
 GALACTOSYLTRANSFERASE	fly	FBgn0031469	CG18558	Q9VQH7	0	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
 GALACTOSYLTRANSFERASE	fly	FBgn0031472	CG2983	Q9VQI0	9	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
-GALACTOSYLTRANSFERASE	fly	FBgn0031491	alpha4GT1	Q9VQK4	134	2391	Alpha1,4-galactosyltransferase 1 (EC 2.4.1.-) (GH17972p)	w
+GALACTOSYLTRANSFERASE	fly	FBgn0031491	alpha4GT1	Q9VQK4	134	2392	Alpha1,4-galactosyltransferase 1 (EC 2.4.1.-) (GH17972p)	w
 GALACTOSYLTRANSFERASE	fly	FBgn0033271	CG8708	Q7JRF9	8	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
-GALACTOSYLTRANSFERASE	fly	FBgn0039258	beta4GalT7	Q9VBZ9	351	2384	Beta-1,4-galactosyltransferase 7 (EC 2.4.1.133) (Proteoglyca	w
-GALACTOSYLTRANSFERASE	fly	FBgn0039378	alpha4GT2	Q9VBL5	274	2396	Alpha1,4-galactosyltransferase 2	w
-GALACTOSYLTRANSFERASE	fly	FBgn0054056	CG34056	Q9W0L4	8	15	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
+GALACTOSYLTRANSFERASE	fly	FBgn0039258	beta4GalT7	Q9VBZ9	352	2387	Beta-1,4-galactosyltransferase 7 (EC 2.4.1.133) (Proteoglyca	w
+GALACTOSYLTRANSFERASE	fly	FBgn0039378	alpha4GT2	Q9VBL5	274	2397	Alpha1,4-galactosyltransferase 2	w
+GALACTOSYLTRANSFERASE	fly	FBgn0054056	CG34056	Q9W0L4	9	17	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
 GALACTOSYLTRANSFERASE	fly	FBgn0054057	CG34057	Q2PE08	8	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
 GALACTOSYLTRANSFERASE	fly	FBgn0085481	CG34452	A8JNT2	8	14	N-acetylgalactosaminide beta-1,3-galactosyltransferase (EC 2	w
 GALACTOSYLTRANSFERASE	human	A0A087X009	ABO	A0A087X009	0	2	ABO, alpha 1-3-N-acetylgalactosaminyltransferase and alpha 1	w
@@ -322,8 +322,8 @@ GALECTIN-RELATED	human	A4D1Z8	GRIFIN	A4D1Z8	1	30	Grifin (Galectin-related inter-
 GALECTIN-RELATED	human	Q3ZCW2	LGALSL	Q3ZCW2	21	173	Galectin-related protein (Galectin-like protein) (Lectin gal	w
 GALECTIN-RELATED	human	Q96DT0	LGALS12	Q96DT0	4	80	Galectin-12 (Gal-12) (Galectin-related inhibitor of prolifer	w
 GALECTIN_330	fly	FBgn0031213	galectin	Q9VPI6	2	18		
-GALENE	fly	FBgn0035192	galene	Q9W0J0	7	11	FI03418p (Galene)	w
-GALENE	fly	FBgn0035192	galene	Q9W0J0	7	11	FI03418p (Galene)	w
+GALENE	fly	FBgn0035192	galene	Q9W0J0	8	12	FI03418p (Galene)	w
+GALENE	fly	FBgn0035192	galene	Q9W0J0	8	12	FI03418p (Galene)	w
 GALE_HUMAN	human	Q14376	GALE	Q14376	3	114		
 GALF	escherichia-coli-83333	P0AAB6	galF	P0AAB6	0	1	UTP--glucose-1-phosphate uridylyltransferase	
 GALF	salmonella-typhimurium	P0A2K7	galF	P0A2K7	1	2	UTP--glucose-1-phosphate uridylyltransferase	
@@ -487,9 +487,9 @@ GALP	rattus-norvegicus	Q9QXQ6	Galp	Q9QXQ6	2	4	Galanin-like peptide
 GALP	salmonella-typhimurium	Q7CPT9	galP	Q7CPT9	0	1	MFS family galactose:proton symporter	
 GALPHAF	fly	FBgn0010223	Galphaf	Q05337	4	38	Guanine nucleotide-binding protein G(f) subunit alpha (G pro	
 GALPHAI	fly	FBgn0001104	Galphai	P20353	50	216	G protein alpha i subunit (Guanine nucleotide-binding protei	
-GALPHAO	fly	FBgn0001122	Galphao	P16378	17	87	G protein alpha o subunit (Guanine nucleotide-binding protei	
+GALPHAO	fly	FBgn0001122	Galphao	P16378	20	90	G protein alpha o subunit (Guanine nucleotide-binding protei	
 GALPHAQ	fly	FBgn0004435	Galphaq	P23625	31	133	G protein alpha subunit q	
-GALPHAS	fly	FBgn0001123	Galphas	P20354	58	326	G protein alpha s subunit (Adenylate cyclase-stimulating G a	
+GALPHAS	fly	FBgn0001123	Galphas	P20354	59	329	G protein alpha s subunit (Adenylate cyclase-stimulating G a	
 GALP_HUMAN	human	Q9UBC7	GALP	Q9UBC7	9	111		
 GALR	escherichia-coli-83333	P03024	galR	P03024	1	14	HTH-type transcriptional regulator GalR	
 GALR	haemophilus-influenzae	P31766	galR	P31766	0	7	HTH-type transcriptional regulator GalR	
@@ -522,7 +522,7 @@ GALS	salmonella-typhimurium	P41030	galS	P41030	1	16	HTH-type transcriptional reg
 GALS	shigella-dysenteriae-serotype-1	Q32EN6	galS	Q32EN6	1	16	Mgl repressor	
 GALS3	arabidopsis-thaliana	O65431	GALS3	O65431	0	1	Galactan beta-1,4-galactosyltransferase GALS3	
 GALT	escherichia-coli-83333	P09148	galT	P09148	0	2	Galactose-1-phosphate uridylyltransferase	
-GALT	fly	FBgn0263200	Galt	Q9VMA2	0	17	Probable galactose-1-phosphate uridylyltransferase (Gal-1-P 	
+GALT	fly	FBgn0263200	Galt	Q9VMA2	0	18	Probable galactose-1-phosphate uridylyltransferase (Gal-1-P 	
 GALT	haemophilus-influenzae	P31764	galT	P31764	0	1	Galactose-1-phosphate uridylyltransferase	
 GALT	human	O43286	B4GALT5	O43286	8	105	Beta-1,4-galactosyltransferase 5 (Beta-1,4-GalTase 5) (Beta4	w
 GALT	human	P07902	GALT	P07902	1	41	Galactose-1-phosphate uridylyltransferase (Gal-1-P uridylylt	

@@ -28,12 +28,12 @@ FLACC1	human	Q96Q35	FLACC1	Q96Q35	6	49	Flagellum-associated coiled-coil domain-c
 FLACC1	mus-musculus	Q8BVM7	Flacc1	Q8BVM7	0	1	Flagellum-associated coiled-coil domain-containing protein 1	
 FLAD	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PA11	flaD	Q0PA11	5	21	Flagellin	
 FLAD-1	worm	Q22017	flad-1	Q22017	0	2	Probable FAD synthase	
-FLAD1	fly	FBgn0030431	Flad1	Q9VYI5	5	34	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	
+FLAD1	fly	FBgn0030431	Flad1	Q9VYI5	5	35	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	
 FLAD1	human	Q8NFF5	FLAD1	Q8NFF5	9	148	Bifunctional FAD diphosphatase/FAD synthase [Includes: FAD d	
 FLAD1	mus-musculus	Q8R123	Flad1	Q8R123	0	9	FAD synthase	
 FLAD1	rattus-norvegicus	D4A4P4	Flad1	D4A4P4	0	4	FAD synthase	
 FLAD1	zebrafish	Q68EH8	flad1	Q68EH8	0	5	FAD synthase	
-FLAD2	fly	FBgn0032522	Flad2	Q9VJY1	1	3	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	
+FLAD2	fly	FBgn0032522	Flad2	Q9VJY1	1	4	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	
 FLAF	methanocaldococcus-jannaschii	Q58307	flaF	Q58307	1	4	Putative flagella-related protein F	
 FLAF1	human	O75400	PRPF40A	O75400	86	569		
 FLAG	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q0PAW9	flaG	Q0PAW9	0	51	Flagellar protein	
@@ -45,7 +45,7 @@ FLAGELLA	human	Q9Y4P9	SPEF1	Q9Y4P9	7	47	Sperm flagella and cilia-associated prot
 FLAGELLA-	human	Q0VFZ6	CFAP210	Q0VFZ6	11	85	Cilia- and flagella- associated protein 210 (Coiled-coil dom	w
 FLAGELLA-	zebrafish	E7F133	cfap210	E7F133	2	71	Cilia- and flagella- associated protein 210 isoform X1	w
 FLAGELLA-ASSOCIATED	fly	FBgn0025612	CG3062	Q9W4I5	0	23	Protein Flattop homolog (Cilia- and flagella-associated prot	w
-FLAGELLA-ASSOCIATED	fly	FBgn0029747	CG5062	Q9W4E4	1	14	Cilia- and flagella-associated protein 45	w
+FLAGELLA-ASSOCIATED	fly	FBgn0029747	CG5062	Q9W4E4	1	15	Cilia- and flagella-associated protein 45	w
 FLAGELLA-ASSOCIATED	fly	FBgn0031430	CG3528	Q9VQD0	2	13	Cilia- and flagella-associated protein 299	w
 FLAGELLA-ASSOCIATED	fly	FBgn0031720	CG14013	Q9VMP6	0	0	Cilia- and flagella-associated protein 299	w
 FLAGELLA-ASSOCIATED	fly	FBgn0031721	CG14017	Q9VMP5	0	1	Cilia- and flagella-associated protein 299	w
@@ -150,9 +150,9 @@ FLAMINGO	human	Q9HCU4	CELSR2	Q9HCU4	3	113	Cadherin EGF LAG seven-pass G-type rec
 FLAMINGO	human	Q9NYQ6	CELSR1	Q9NYQ6	2	70	Cadherin EGF LAG seven-pass G-type receptor 1 (Cadherin fami	w
 FLAMINGO	human	Q9NYQ7	CELSR3	Q9NYQ7	0	10	Cadherin EGF LAG seven-pass G-type receptor 3 (Cadherin fami	w
 FLANA	human	Q9GZP9	DERL2	Q9GZP9	19	234		
-FLAP	fly	FBgn0025832	Fen1	Q7K7A9	9	144	Flap endonuclease 1 (FEN-1) (EC 3.1.-.-) (Flap structure-spe	w
+FLAP	fly	FBgn0025832	Fen1	Q7K7A9	15	164	Flap endonuclease 1 (FEN-1) (EC 3.1.-.-) (Flap structure-spe	w
 FLAP	fly	FBgn0034693	flap	Q9W294	40	232	Uncharacterized protein, isoform A	
-FLAP	fly	FBgn0263831	Gen	Q9VRJ0	3	63	Flap endonuclease GEN (EC 3.1.-.-) (Flap structure-specific 	w
+FLAP	fly	FBgn0263831	Gen	Q9VRJ0	4	63	Flap endonuclease GEN (EC 3.1.-.-) (Flap structure-specific 	w
 FLAP	human	P20292	ALOX5AP	P20292	2	27		
 FLAP	human	P39748	FEN1	P39748	10	278	Flap endonuclease 1 (FEN-1) (EC 3.1.-.-) (DNase IV) (Flap st	w
 FLAP	human	Q17RS7	GEN1	Q17RS7	6	146	Flap endonuclease GEN homolog 1 (EC 3.1.-.-)	w
@@ -213,12 +213,12 @@ FLAVODOXIN	human	Q9NV66	TYW1	Q9NV66	5	142	S-adenosyl-L-methionine-dependent tRNA
 FLAVODOXIN-LIKE	worm	Q9N535	CELE_Y32H12A.6	Q9N535	1	4	Flavodoxin-like domain-containing protein	w
 FLAVOHEMOPROTEIN	human	Q7L1T6	CYB5R4	Q7L1T6	4	76	Cytochrome b5 reductase 4 (EC 1.6.2.2) (Flavohemoprotein b5/	w
 FLAVOHEMOPROTEIN	yeast	P39676	YHB1	P39676	2	79	Flavohemoprotein	w
-FLAVOKINASE	fly	FBgn0014930	Rfk	O76206	1	12	Putative riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-	w
+FLAVOKINASE	fly	FBgn0014930	Rfk	O76206	1	14	Putative riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-	w
 FLAVOKINASE	human	Q969G6	RFK	Q969G6	13	108	Riboflavin kinase (EC 2.7.1.26) (ATP:riboflavin 5'-phosphotr	w
-FLAVOPROTEIN	fly	FBgn0010516	wal	Q7KN94	20	163	Electron transfer flavoprotein subunit alpha (Alpha-ETF)	w
-FLAVOPROTEIN	fly	FBgn0031771	ND-51	Q9VMI3	13	106	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
-FLAVOPROTEIN	fly	FBgn0034251	ND-51L1	A1ZAW7	8	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
-FLAVOPROTEIN	fly	FBgn0036222	SdhAL	Q8SX97	6	67	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
+FLAVOPROTEIN	fly	FBgn0010516	wal	Q7KN94	20	164	Electron transfer flavoprotein subunit alpha (Alpha-ETF)	w
+FLAVOPROTEIN	fly	FBgn0031771	ND-51	Q9VMI3	24	109	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+FLAVOPROTEIN	fly	FBgn0034251	ND-51L1	A1ZAW7	17	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+FLAVOPROTEIN	fly	FBgn0036222	SdhAL	Q8SX97	11	68	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
 FLAVOPROTEIN	fly	FBgn0039697	Etfb	Q0KHZ6	25	143	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
 FLAVOPROTEIN	fly	FBgn0261439	SdhA	Q94523	17	99	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
 FLAVOPROTEIN	human	P13804	ETFA	P13804	49	357	Electron transfer flavoprotein subunit alpha, mitochondrial 	w
@@ -247,7 +247,7 @@ FLAVOPROTEIN	zebrafish	A3KP85	etfbkmt	A3KP85	9	13	Electron transfer flavoprotein
 FLAVOPROTEIN	zebrafish	Q7ZUS9	etfa	Q7ZUS9	14	48	Electron transfer flavoprotein subunit alpha	w
 FLAVOPROTEIN	zebrafish	Q7ZV76	zgc:56177	Q7ZV76	24	25	Electron transfer flavoprotein subunit beta	w
 FLAVOPROTEIN-LIKE	yeast	P25349	YCP4	P25349	0	25	Flavoprotein-like protein YCP4	w
-FLAVOPROTEIN-UBIQUINONE	fly	FBgn0286783	Etf-QO	Q7JWF1	2	20	Electron transfer flavoprotein-ubiquinone oxidoreductase (ET	w
+FLAVOPROTEIN-UBIQUINONE	fly	FBgn0286783	Etf-QO	Q7JWF1	2	22	Electron transfer flavoprotein-ubiquinone oxidoreductase (ET	w
 FLAVOPROTEIN-UBIQUINONE	human	Q16134	ETFDH	Q16134	16	131	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	w
 FLAVOPROTEIN-UBIQUINONE	worm	Q11190	let-721	Q11190	3	13	Electron transfer flavoprotein-ubiquinone oxidoreductase, mi	w
 FLAVOPROTEIN-UBIQUINONE	yeast	Q08822	CIR2	Q08822	2	12	Probable electron transfer flavoprotein-ubiquinone oxidoredu	w

@@ -4,7 +4,7 @@ LIP	zea-mays	P49081	LIP	P49081	0	2	Malate synthase, glyoxysomal
 LIP-1	human	Q13136	PPFIA1	Q13136	93	338	Liprin-alpha-1 (LAR-interacting protein 1) (LIP-1) (Protein 	w
 LIP-1	worm	V6CIV8	lip-1	V6CIV8	4	9	Dual specificity protein phosphatase lip-1	w
 LIP-1	worm	V6CIV8	lip-1	V6CIV8	4	9	Dual specificity protein phosphatase lip-1	w
-LIP-SYN	fly	FBgn0029158	Las	Q7JQW6	1	16	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
+LIP-SYN	fly	FBgn0029158	Las	Q7JQW6	3	23	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
 LIP-SYN	human	O43766	LIAS	O43766	6	102	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
 LIP1	arabidopsis-thaliana	Q71DJ5	LIP1	Q71DJ5	0	3	Triacylglycerol lipase 1	
 LIP1	arabidopsis-thaliana	Q9ZWT1	LIP1	Q9ZWT1	0	2	Lipoyl synthase, mitochondrial	
@@ -69,7 +69,7 @@ LIPA4_HUMAN	human	O75335	PPFIA4	O75335	35	127
 LIPASE	fly	FBgn0023495	Lip3	O46108	18	409	Lipase 3 (DmLip3) (EC 3.1.1.-)	w
 LIPASE	fly	FBgn0023496	Lip1	O46107	30	391	Lipase 1 (DmLip1) (EC 3.1.1.-)	w
 LIPASE	fly	FBgn0024740	Lip2	Q9VKR5	13	163	Lipase	w
-LIPASE	fly	FBgn0029942	CG2059	Q9W3R8	0	12	sn-1-specific diacylglycerol lipase ABHD11 (EC 3.1.1.116) (A	w
+LIPASE	fly	FBgn0029942	CG2059	Q9W3R8	0	13	sn-1-specific diacylglycerol lipase ABHD11 (EC 3.1.1.116) (A	w
 LIPASE	fly	FBgn0031533	CG2772	Q9VQQ5	26	391	Lipase	w
 LIPASE	fly	FBgn0031735	CG11029	Q9VMM8	487	2606	Phospholipase B1, membrane-associated (EC 3.1.1.3) (EC 3.1.1	w
 LIPASE	fly	FBgn0032264	Lip4	M9PCU5	16	169	Lipase 4, isoform C (EC 3.1.1.3)	w
@@ -82,7 +82,7 @@ LIPASE	fly	FBgn0034491	Hsl	Q7JR83	21	230	Hormone-sensitive lipase, isoform A (Ho
 LIPASE	fly	FBgn0034990	CG11406	Q59E63	18	163	Lipase	w
 LIPASE	fly	FBgn0035453	CG10357	Q9VZN6	22	390	Lipase domain-containing protein	w
 LIPASE	fly	FBgn0036367	CG10116	Q9VU78	24	245	Lipase domain-containing protein	w
-LIPASE	fly	FBgn0036996	mag	Q9VPE9	30	443	Lipase	w
+LIPASE	fly	FBgn0036996	mag	Q9VPE9	30	446	Lipase	w
 LIPASE	fly	FBgn0038067	CG11598	Q0KI77	40	391	Lipase	w
 LIPASE	fly	FBgn0038068	CG11600	Q9VG48	11	162	Lipase	w
 LIPASE	fly	FBgn0038069	CG11608	Q9VG47	25	391	Lipase	w
@@ -92,7 +92,7 @@ LIPASE	fly	FBgn0042207	CG18530	Q9VG50	35	391	Lipase	w
 LIPASE	fly	FBgn0051089	CG31089	Q9VBK6	29	392	Lipase	w
 LIPASE	fly	FBgn0051091	CG31091	Q8IMS3	26	392	Lipase	w
 LIPASE	fly	FBgn0261244	inaE	B7Z150	19	167	sn-1-specific diacylglycerol lipase (EC 3.1.1.116)	w
-LIPASE	fly	FBgn0265271	CG14717	Q9VGJ4	0	13	sn-1-specific diacylglycerol lipase ABHD11 (EC 3.1.1.116) (A	w
+LIPASE	fly	FBgn0265271	CG14717	Q9VGJ4	0	15	sn-1-specific diacylglycerol lipase ABHD11 (EC 3.1.1.116) (A	w
 LIPASE	human	O95870	ABHD16A	O95870	3	132	Phosphatidylserine lipase ABHD16A (EC 3.1.-.-) (Alpha/beta h	w
 LIPASE	human	P06858	LPL	P06858	19	317	Lipoprotein lipase (LPL) (EC 3.1.1.34) (Phospholipase A1) (E	w
 LIPASE	human	P07098	LIPF	P07098	5	58	Gastric triacylglycerol lipase (GL) (Gastric lipase) (EC 3.1	w
@@ -225,14 +225,14 @@ LIPI	human	Q6XZB0	LIPI	Q6XZB0	3	25	Lipase member I (LIPI) (EC 3.1.1.-) (Cancer/t
 LIPI	mus-musculus	F6YQT7	Lipi	F6YQT7	0	1	Lipase member H	
 LIPI	mycobacterium-tuberculosis	P71668	lipI	P71668	0	34	Esterase LipI	
 LIPID	fly	FBgn0030456	CG4332	Q9VYG3	16	58	Lipid scramblase CLPTM1L (Cisplatin resistance-related prote	w
-LIPID	fly	FBgn0030608	Lsd2	Q9VXY7	1	75	Lipid storage droplets surface-binding protein 2 (Lsd2)	w
+LIPID	fly	FBgn0030608	Lsd2	Q9VXY7	2	75	Lipid storage droplets surface-binding protein 2 (Lsd2)	w
 LIPID	fly	FBgn0032136	Apoltp	Q7KTG2	0	6	Apolipoprotein lipid transfer particle	w
 LIPID	fly	FBgn0033194	Vps13	A1Z713	0	2	Intermembrane lipid transfer protein Vps13 (Vacuolar protein	w
 LIPID	fly	FBgn0035206	sturkopf	Q9W0H3	2	21	Lipid droplet-associated hydrolase (EC 3.1.1.-) (Lipid dropl	w
 LIPID	fly	FBgn0035420	hob	Q9VZS7	4	90	Protein hobbit (Bridge-like lipid transfer protein family me	w
 LIPID	fly	FBgn0039114	Lsd1	Q9VCI3	0	17	Lipid storage droplets surface-binding protein 1	w
 LIPID	fly	FBgn0052113	Vps13D	Q9VU08	1	29	Intermembrane lipid transfer protein Vps13D (Vacuolar protei	w
-LIPID	fly	FBgn0260750	Mulk	Q9VL10	4	14	Acylglycerol kinase, mitochondrial (EC 2.7.1.107) (EC 2.7.1.	w
+LIPID	fly	FBgn0260750	Mulk	Q9VL10	5	16	Acylglycerol kinase, mitochondrial (EC 2.7.1.107) (EC 2.7.1.	w
 LIPID	human	A0JNW5	BLTP3B	A0JNW5	15	72	Bridge-like lipid transfer protein family member 3B (Syntaxi	w
 LIPID	human	O14494	PLPP1	O14494	5	72	Phospholipid phosphatase 1 (EC 3.1.3.-) (EC 3.1.3.106) (EC 3	w
 LIPID	human	O14495	PLPP3	O14495	4	97	Phospholipid phosphatase 3 (EC 3.1.3.-) (EC 3.1.3.4) (Lipid 	w
@@ -352,7 +352,7 @@ LIPID-RECOGNITION	worm	Q20312	CELE_F42A10.7	Q20312	0	3	MD-2-related lipid-recogn
 LIPID-RECOGNITION	worm	Q23509	CELE_ZK470.6	Q23509	2	32	MD-2-related lipid-recognition domain-containing protein	w
 LIPID-RECOGNITION	worm	Q8TA47	CELE_Y51F10.7	Q8TA47	0	3	MD-2-related lipid-recognition domain-containing protein	w
 LIPID-RECOGNITION	worm	Q9BKP8	C17F4.7	Q9BKP8	0	4	MD-2-related lipid-recognition domain-containing protein	w
-LIPID-TRANSFER	fly	FBgn0015808	ScpX	Q9VJ43	2	41	Sterol carrier protein 2 (EC 2.3.1.155) (EC 2.3.1.16) (EC 2.	w
+LIPID-TRANSFER	fly	FBgn0015808	ScpX	Q9VJ43	3	43	Sterol carrier protein 2 (EC 2.3.1.155) (EC 2.3.1.16) (EC 2.	w
 LIPID-TRANSFER	human	P22307	SCP2	P22307	7	111	Sterol carrier protein 2 (SCP-2) (Acetyl-CoA C-myristoyltran	w
 LIPID-TRANSFER	worm	G5EDP2	daf-22	G5EDP2	1	16	Non-specific lipid-transfer protein-like 2	w
 LIPID-TRANSFER	worm	Q23655	nlt-1	Q23655	1	2	Non-specific lipid-transfer protein-like 1	w
@@ -406,10 +406,10 @@ LIPOAMIDASE	human	Q9Y6E7	SIRT4	Q9Y6E7	47	376	NAD-dependent protein lipoamidase s
 LIPOAMIDE	human	O14874	BCKDK	O14874	17	190	Branched-chain alpha-ketoacid dehydrogenase kinase (BCKDH ki	w
 LIPOAMIDE	human	P11182	DBT	P11182	12	230	Lipoamide acyltransferase component of branched-chain alpha-	w
 LIPOAMIDE	worm	Q23571	dbt-1	Q23571	3	26	Lipoamide acyltransferase component of branched-chain alpha-	w
-LIPOATE	fly	FBgn0029158	Las	Q7JQW6	1	16	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
+LIPOATE	fly	FBgn0029158	Las	Q7JQW6	3	23	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
 LIPOATE	human	O43766	LIAS	O43766	6	102	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
 LIPOATE	human	Q9Y234	LIPT1	Q9Y234	18	59	Lipoyl amidotransferase LIPT1, mitochondrial (EC 2.3.1.200) 	w
-LIPOATE-PROTEIN	fly	FBgn0037251	Lipt2	Q9VN27	6	27	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
+LIPOATE-PROTEIN	fly	FBgn0037251	Lipt2	Q9VN27	7	29	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
 LIPOATE-PROTEIN	human	A6NK58	LIPT2	A6NK58	27	58	Octanoyl-[acyl-carrier-protein]:protein N-octanoyltransferas	w
 LIPOATE-PROTEIN	human	Q9Y234	LIPT1	Q9Y234	18	59	Lipoyl amidotransferase LIPT1, mitochondrial (EC 2.3.1.200) 	w
 LIPOATE-PROTEIN	yeast	P47051	AIM22	P47051	1	9	Putative lipoate-protein ligase A	w
@@ -447,7 +447,7 @@ LIPOCORTIN	human	P08758	ANXA5	P08758	10	554	Annexin A5 (Anchorin CII) (Annexin V
 LIPOCORTIN	human	P09525	ANXA4	P09525	6	212	Annexin A4 (35-beta calcimedin) (Annexin IV) (Annexin-4) (Ca	w
 LIPOCORTIN	human	P12429	ANXA3	P12429	3	190	Annexin A3 (35-alpha calcimedin) (Annexin III) (Annexin-3) (	w
 LIPODYSTROPHY	human	Q96G97	BSCL2	Q96G97	25	206	Seipin (Bernardinelli-Seip congenital lipodystrophy type 2 p	w
-LIPOIC	fly	FBgn0029158	Las	Q7JQW6	1	16	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
+LIPOIC	fly	FBgn0029158	Las	Q7JQW6	3	23	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
 LIPOIC	human	O43766	LIAS	O43766	6	102	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
 LIPOIC	human	P23434	GCSH	P23434	87	491	Glycine cleavage system H protein, mitochondrial (Lipoic aci	w
 LIPOLYSIS-STIMULATED	human	Q86X29	LSR	Q86X29	34	243	Lipolysis-stimulated lipoprotein receptor (Angulin-1)	w
@@ -546,15 +546,15 @@ LIPOXYGENASE	zebrafish	F1R442	alox5b.3	F1R442	0	23	Arachidonate 5-lipoxygenase b
 LIPOXYGENASE	zebrafish	Q7T2A9	alox12	Q7T2A9	2	24	Arachidonate 12-lipoxygenase	w
 LIPOXYGENASE-ACTIVATING	human	P20292	ALOX5AP	P20292	2	27	Arachidonate 5-lipoxygenase-activating protein (FLAP) (MK-88	w
 LIPOXYGENASE-ACTIVATING	zebrafish	F1QKS8	alox5ap	F1QKS8	1	4	Arachidonate 5-lipoxygenase-activating protein	w
-LIPOYL	fly	FBgn0029158	Las	Q7JQW6	1	16	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
-LIPOYL	fly	FBgn0037251	Lipt2	Q9VN27	6	27	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
+LIPOYL	fly	FBgn0029158	Las	Q7JQW6	3	23	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
+LIPOYL	fly	FBgn0037251	Lipt2	Q9VN27	7	29	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
 LIPOYL	human	A6NK58	LIPT2	A6NK58	27	58	Octanoyl-[acyl-carrier-protein]:protein N-octanoyltransferas	w
 LIPOYL	human	O43766	LIAS	O43766	6	102	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
 LIPOYL	human	Q9Y234	LIPT1	Q9Y234	18	59	Lipoyl amidotransferase LIPT1, mitochondrial (EC 2.3.1.200) 	w
 LIPOYL	worm	Q21452	lias-1	Q21452	1	5	Lipoyl synthase, mitochondrial	w
 LIPOYL	yeast	P32875	LIP5	P32875	5	37	Lipoyl synthase, mitochondrial	w
 LIPOYL	zebrafish	Q6PHG4	lias	Q6PHG4	1	2	Lipoyl synthase, mitochondrial	w
-LIPOYLTRANSFERASE	fly	FBgn0037251	Lipt2	Q9VN27	6	27	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
+LIPOYLTRANSFERASE	fly	FBgn0037251	Lipt2	Q9VN27	7	29	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
 LIPOYLTRANSFERASE	human	A6NK58	LIPT2	A6NK58	27	58	Octanoyl-[acyl-carrier-protein]:protein N-octanoyltransferas	w
 LIPOYLTRANSFERASE	human	Q9Y234	LIPT1	Q9Y234	18	59	Lipoyl amidotransferase LIPT1, mitochondrial (EC 2.3.1.200) 	w
 LIPP_HUMAN	human	P16233	PNLIP	P16233	3	78		
@@ -594,13 +594,13 @@ LIPS-9	worm	O62271	lips-9	O62271	1	2	LIPaSe related
 LIPS_HUMAN	human	Q05469	LIPE	Q05469	4	138		
 LIPT	mycobacterium-tuberculosis	O53488	lipT	O53488	0	14	Carboxylic ester hydrolase	
 LIPT-1	worm	O45303	lipt-1	O45303	5	21	BPL/LPL catalytic domain-containing protein	
-LIPT1	fly	FBgn0265178	Lipt1	Q8SX78	10	40	LD05679p (LD22815p)	
+LIPT1	fly	FBgn0265178	Lipt1	Q8SX78	12	47	LD05679p (LD22815p)	
 LIPT1	human	Q9Y234	LIPT1	Q9Y234	18	59	Lipoyl amidotransferase LIPT1, mitochondrial (EC 2.3.1.200) 	
 LIPT1	mus-musculus	Q8VCM4	Lipt1	Q8VCM4	10	18	Lipoyl amidotransferase LIPT1, mitochondrial	
 LIPT1	pan-troglodytes	H2QIE7	LIPT1	H2QIE7	12	12	Lipoyltransferase 1	
 LIPT1	rattus-norvegicus	D3Z7Z4	Lipt1	D3Z7Z4	9	15	Lipoyl amidotransferase LIPT1, mitochondrial	
 LIPT1.L	xenopus-laevis	A0A1L8HGT8	lipt1.L	A0A1L8HGT8	8	8	lipoyltransferase 1 L homeolog isoform X1	
-LIPT2	fly	FBgn0037251	Lipt2	Q9VN27	6	27	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	
+LIPT2	fly	FBgn0037251	Lipt2	Q9VN27	7	29	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	
 LIPT2	human	A6NK58	LIPT2	A6NK58	27	58	Octanoyl-[acyl-carrier-protein]:protein N-octanoyltransferas	
 LIPT2	mus-musculus	Q9D009	Lipt2	Q9D009	16	19	Octanoyl-	
 LIPT2	pan-troglodytes	H2Q4E2	LIPT2	H2Q4E2	19	20	Putative lipoyltransferase 2, mitochondrial	
@@ -608,7 +608,7 @@ LIPT2	rattus-norvegicus	D3Z9Z2	Lipt2	D3Z9Z2	17	17	Putative lipoyltransferase 2, 
 LIPT2	zebrafish	Q29R99	lipt2	Q29R99	7	14	Octanoyl-	
 LIPT2.S	xenopus-laevis	A0A1L8HBD3	lipt2.S	A0A1L8HBD3	7	7	Putative lipoyltransferase 2, mitochondrial	
 LIPT2_DANRE	zebrafish	Q29R99	lipt2	Q29R99	7	14		
-LIPT2_DROME	fly	FBgn0037251	Lipt2	Q9VN27	6	27		
+LIPT2_DROME	fly	FBgn0037251	Lipt2	Q9VN27	7	29		
 LIPT2_HUMAN	human	A6NK58	LIPT2	A6NK58	27	58		
 LIPT_HUMAN	human	Q9Y234	LIPT1	Q9Y234	18	59		
 LIPU	mycobacterium-tuberculosis	O53424	lipU	O53424	1	35	Esterase LipU	

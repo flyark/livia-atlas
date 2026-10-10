@@ -1,12 +1,12 @@
 SUB	arabidopsis-thaliana	Q8RWZ1	SUB	Q8RWZ1	1	46	Protein STRUBBELIG	
-SUB	fly	FBgn0003545	sub	Q9V877	4	113	Kinesin-like protein subito (Protein double or nothing)	
+SUB	fly	FBgn0003545	sub	Q9V877	5	113	Kinesin-like protein subito (Protein double or nothing)	
 SUB-FAMILY	fly	FBgn0000241	bw	P12428	3	26	Protein brown (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
 SUB-FAMILY	fly	FBgn0003515	st	P45843	1	6	Protein scarlet (EC 7.6.2.-) (ATP-binding cassette transport	w
-SUB-FAMILY	fly	FBgn0003996	w	P10090	4	54	Protein white (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
-SUB-FAMILY	fly	FBgn0035244	Abcb7	Q9W0C5	4	27	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
+SUB-FAMILY	fly	FBgn0003996	w	P10090	4	56	Protein white (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
+SUB-FAMILY	fly	FBgn0035244	Abcb7	Q9W0C5	4	32	Iron-sulfur clusters transporter ABCB7, mitochondrial (ATP-b	w
 SUB-FAMILY	fly	FBgn0038376	Hmt-1	Q9VF20	14	291	ATP-binding cassette sub-family B member 6 (EC 7.6.2.5) (ABC	w
-SUB-FAMILY	fly	FBgn0039890	Abcd1	Q7JUN3	1	16	ATP-binding cassette sub-family D member 1 (EC 7.6.2.4)	w
-SUB-FAMILY	fly	FBgn0086706	pix	Q9VSS1	7	191	Protein Pixie (ATP-binding cassette sub-family E member 1)	w
+SUB-FAMILY	fly	FBgn0039890	Abcd1	Q7JUN3	2	25	ATP-binding cassette sub-family D member 1 (EC 7.6.2.4)	w
+SUB-FAMILY	fly	FBgn0086706	pix	Q9VSS1	11	191	Protein Pixie (ATP-binding cassette sub-family E member 1)	w
 SUB-FAMILY	human	O14678	ABCD4	O14678	2	81	Lysosomal cobalamin transporter ABCD4 (EC 7.6.2.8) (ATP-bind	w
 SUB-FAMILY	human	O15438	ABCC3	O15438	1	51	ATP-binding cassette sub-family C member 3 (EC 7.6.2.-) (EC 	w
 SUB-FAMILY	human	O15439	ABCC4	O15439	1	158	ATP-binding cassette sub-family C member 4 (EC 7.6.2.-) (EC 	w
@@ -93,27 +93,27 @@ SUBCLASS	human	Q8IVU1	IGDCC3	Q8IVU1	11	61	Immunoglobulin superfamily DCC subclas
 SUBCLASS	human	Q8TDY8	IGDCC4	Q8TDY8	28	149	Immunoglobulin superfamily DCC subclass member 4 (Neighbor o	w
 SUBCLASS	human	Q92859	NEO1	Q92859	28	195	Neogenin (Immunoglobulin superfamily DCC subclass member 2)	w
 SUBCOM	human	P00736	C1R	P00736	64	573	Complement C1r subcomponent (EC 3.4.21.41) (Complement compo	w
-SUBCOMPLEX	fly	FBgn0011455	ND-SGDH	Q9VTU2	10	100	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
-SUBCOMPLEX	fly	FBgn0019957	ND-42	P91929	12	134	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-SUBCOMPLEX	fly	FBgn0021967	ND-PDSW	Q9VQR2	15	136	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10	w
-SUBCOMPLEX	fly	FBgn0025839	ND-B14.5A	O97418	6	110	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
-SUBCOMPLEX	fly	FBgn0027785	NP15.6	Q9V3L7	13	145	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	w
-SUBCOMPLEX	fly	FBgn0029868	ND-B16.6	Q9W402	7	120	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-SUBCOMPLEX	fly	FBgn0029888	ND-ASHI	Q9W3X7	8	114	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8,	w
-SUBCOMPLEX	fly	FBgn0029971	ND-MNLL	Q9W3N7	9	65	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	w
-SUBCOMPLEX	fly	FBgn0030605	ND-B18	Q9VXZ0	8	120	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7	w
-SUBCOMPLEX	fly	FBgn0031436	ND-B17.2	Q9VQD7	9	116	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-SUBCOMPLEX	fly	FBgn0032511	ND-B22	Q9VJZ4	12	126	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
-SUBCOMPLEX	fly	FBgn0033570	ND-B14	Q7JZK1	10	121	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
-SUBCOMPLEX	fly	FBgn0033891	CG8067	Q7K1S1	3	36	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
-SUBCOMPLEX	fly	FBgn0033961	ND-B15	Q6IDF5	7	99	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
-SUBCOMPLEX	fly	FBgn0034576	ND-B14.7	Q7JYH3	4	72	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-SUBCOMPLEX	fly	FBgn0034645	ND-B12	Q9W2E8	7	108	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
-SUBCOMPLEX	fly	FBgn0034919	NdufAF3	Q9W1H9	9	44	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	w
-SUBCOMPLEX	fly	FBgn0035046	ND-19	Q9W125	12	122	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8	w
-SUBCOMPLEX	fly	FBgn0037001	ND-39	Q9VPE2	10	134	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9	w
-SUBCOMPLEX	fly	FBgn0037172	ND-B14.5AL	Q9VNT3	2	84	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
-SUBCOMPLEX	fly	FBgn0040705	ND-B8	Q9VR00	5	117	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
+SUBCOMPLEX	fly	FBgn0011455	ND-SGDH	Q9VTU2	15	101	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
+SUBCOMPLEX	fly	FBgn0019957	ND-42	P91929	28	142	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+SUBCOMPLEX	fly	FBgn0021967	ND-PDSW	Q9VQR2	24	160	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10	w
+SUBCOMPLEX	fly	FBgn0025839	ND-B14.5A	O97418	19	117	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
+SUBCOMPLEX	fly	FBgn0027785	NP15.6	Q9V3L7	42	156	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	w
+SUBCOMPLEX	fly	FBgn0029868	ND-B16.6	Q9W402	23	129	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+SUBCOMPLEX	fly	FBgn0029888	ND-ASHI	Q9W3X7	16	125	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8,	w
+SUBCOMPLEX	fly	FBgn0029971	ND-MNLL	Q9W3N7	17	67	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	w
+SUBCOMPLEX	fly	FBgn0030605	ND-B18	Q9VXZ0	36	132	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7	w
+SUBCOMPLEX	fly	FBgn0031436	ND-B17.2	Q9VQD7	21	125	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+SUBCOMPLEX	fly	FBgn0032511	ND-B22	Q9VJZ4	36	139	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
+SUBCOMPLEX	fly	FBgn0033570	ND-B14	Q7JZK1	46	137	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
+SUBCOMPLEX	fly	FBgn0033891	CG8067	Q7K1S1	3	38	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
+SUBCOMPLEX	fly	FBgn0033961	ND-B15	Q6IDF5	21	105	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
+SUBCOMPLEX	fly	FBgn0034576	ND-B14.7	Q7JYH3	29	93	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+SUBCOMPLEX	fly	FBgn0034645	ND-B12	Q9W2E8	26	113	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
+SUBCOMPLEX	fly	FBgn0034919	NdufAF3	Q9W1H9	12	46	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	w
+SUBCOMPLEX	fly	FBgn0035046	ND-19	Q9W125	38	137	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8	w
+SUBCOMPLEX	fly	FBgn0037001	ND-39	Q9VPE2	20	140	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9	w
+SUBCOMPLEX	fly	FBgn0037172	ND-B14.5AL	Q9VNT3	10	85	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
+SUBCOMPLEX	fly	FBgn0040705	ND-B8	Q9VR00	30	120	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
 SUBCOMPLEX	fly	FBgn0085468	ND-MWFE	A8DYC4	4	99	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
 SUBCOMPLEX	human	A1L188	NDUFAF8	A1L188	11	104	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	w
 SUBCOMPLEX	human	O15239	NDUFA1	O15239	54	265	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
@@ -172,25 +172,25 @@ SUBDOMAIN	human	Q6P1S2	MISO1	Q6P1S2	3	34	Mitochondrial inner membrane subdomain 
 SUBDOMAIN-CONTAINING	human	E5RQL4	FTCDNL1	E5RQL4	1	11	Formiminotransferase N-terminal subdomain-containing protein	w
 SUBDOMAIN-CONTAINING	zebrafish	A0AB32U0I8	ftcdnl1	A0AB32U0I8	0	1	Formiminotransferase N-terminal subdomain-containing protein	w
 SUBDUED	fly	FBgn0038721	subdued	A0A0B4JCY1	1	2	Anoctamin	
-SUBFAMILY	fly	FBgn0000546	EcR	P34021	126	506	Ecdysone receptor (20-hydroxy-ecdysone receptor) (20E recept	w
+SUBFAMILY	fly	FBgn0000546	EcR	P34021	128	508	Ecdysone receptor (20-hydroxy-ecdysone receptor) (20E recept	w
 SUBFAMILY	fly	FBgn0000560	eg	P15370	102	394	Protein embryonic gonad (Nuclear receptor subfamily 0 group 	w
 SUBFAMILY	fly	FBgn0000568	Eip75B	P13055	117	396	Ecdysone-induced protein 75B, isoform B (E75-C) (Nuclear rec	w
-SUBFAMILY	fly	FBgn0001078	ftz-f1	P33244	64	193	Nuclear hormone receptor FTZ-F1 (FTZ-F1 alpha) (Nuclear rece	w
+SUBFAMILY	fly	FBgn0001078	ftz-f1	P33244	64	194	Nuclear hormone receptor FTZ-F1 (FTZ-F1 alpha) (Nuclear rece	w
 SUBFAMILY	fly	FBgn0001323	knrl	P13054	107	365	Knirps-related protein (Nuclear receptor subfamily 0 group A	w
-SUBFAMILY	fly	FBgn0003720	tll	P18102	59	413	Protein tailless (Nuclear receptor subfamily 2 group E membe	w
-SUBFAMILY	fly	FBgn0003964	usp	P20153	35	437	Protein ultraspiracle (Chorion factor 1) (Nuclear receptor s	w
-SUBFAMILY	fly	FBgn0004179	Csp	Q03751	4	68	DnaJ homolog subfamily C member 5 homolog (Cysteine string p	w
-SUBFAMILY	fly	FBgn0004865	Eip78C	P45447	126	418	Ecdysone-induced protein 78C (DR-78) (Nuclear receptor subfa	w
+SUBFAMILY	fly	FBgn0003720	tll	P18102	59	415	Protein tailless (Nuclear receptor subfamily 2 group E membe	w
+SUBFAMILY	fly	FBgn0003964	usp	P20153	35	439	Protein ultraspiracle (Chorion factor 1) (Nuclear receptor s	w
+SUBFAMILY	fly	FBgn0004179	Csp	Q03751	6	68	DnaJ homolog subfamily C member 5 homolog (Cysteine string p	w
+SUBFAMILY	fly	FBgn0004865	Eip78C	P45447	127	420	Ecdysone-induced protein 78C (DR-78) (Nuclear receptor subfa	w
 SUBFAMILY	fly	FBgn0015239	Hr78	Q24142	77	639	Nuclear hormone receptor HR78 (dHR78) (Nuclear receptor XR78	w
-SUBFAMILY	fly	FBgn0015240	Hr96	Q24143	74	423	Nuclear hormone receptor HR96 (dHR96) (Nuclear receptor subf	w
+SUBFAMILY	fly	FBgn0015240	Hr96	Q24143	75	426	Nuclear hormone receptor HR96 (dHR96) (Nuclear receptor subf	w
 SUBFAMILY	fly	FBgn0015381	dsf	Q9VML1	71	352	Protein dissatisfaction (Nuclear receptor subfamily 2 group 	w
 SUBFAMILY	fly	FBgn0030658	CG7872	Q9VXT2	0	3	DnaJ homolog subfamily C member 25 homolog	w
 SUBFAMILY	fly	FBgn0030805	wus	Q9VX95	1	18	DnaJ homolog subfamily C member 22	w
 SUBFAMILY	fly	FBgn0031170	Abca3	Q9VRG4	0	13	ATP binding cassette subfamily A, isoform B (EC 3.6.1.3)	w
 SUBFAMILY	fly	FBgn0031655	Marcal1	Q9VMX6	3	31	SWI/SNF-related matrix-associated actin-dependent regulator 	w
 SUBFAMILY	fly	FBgn0032157	Etl1	Q9VL72	2	19	SWI/SNF-related matrix-associated actin-dependent regulator 	w
-SUBFAMILY	fly	FBgn0038127	CG8476	Q9VFY1	2	9	DnaJ homolog subfamily B member 9 (Endoplasmic reticulum DNA	w
-SUBFAMILY	fly	FBgn0261239	Hr39	Q05192	133	369	Nuclear hormone receptor FTZ-F1 beta (Nuclear hormone recept	w
+SUBFAMILY	fly	FBgn0038127	CG8476	Q9VFY1	3	11	DnaJ homolog subfamily B member 9 (Endoplasmic reticulum DNA	w
+SUBFAMILY	fly	FBgn0261239	Hr39	Q05192	133	370	Nuclear hormone receptor FTZ-F1 beta (Nuclear hormone recept	w
 SUBFAMILY	fly	FBgn0261873	sdt	E2QD98	8	14	MAGUK p55 subfamily member 5	w
 SUBFAMILY	fly	FBgn0265194	Trpm	A8DYE2	38	722	Transient receptor potential cation channel trpm (Transient 	w
 SUBFAMILY	fly	FBgn0287183	l(3)80Fg	Q7PLG1	232	2405	DnaJ homolog subfamily C member 16 (Endoplasmic reticulum DN	w
@@ -664,7 +664,7 @@ SUBGROUP	human	Q9UPI3	FLVCR2	Q9UPI3	0	33	Choline/ethanolamine transporter FLVCR2
 SUBGROUP	human	Q9Y5Y0	FLVCR1	Q9Y5Y0	2	201	Choline/ethanolamine transporter FLVCR1 (Feline leukemia vir	w
 SUBI	mycobacterium-tuberculosis	P71744	subI	P71744	1	5	Probable sulfate-binding lipoprotein SubI	
 SUBI-1	glycine-max	P69325	SUBI-1	P69325	83	1550	Polyubiquitin	
-SUBITO	fly	FBgn0003545	sub	Q9V877	4	113	Kinesin-like protein subito (Protein double or nothing)	w
+SUBITO	fly	FBgn0003545	sub	Q9V877	5	113	Kinesin-like protein subito (Protein double or nothing)	w
 SUBMAXILLARY	human	P02814	SMR3B	P02814	6	137	Submaxillary gland androgen-regulated protein 3B (Proline-ri	w
 SUBMAXILLARY	human	Q99954	SMR3A	Q99954	3	81	Submaxillary gland androgen-regulated protein 3A (Proline-ri	w
 SUBS-4	worm	Q9XX03	subs-4	Q9XX03	0	1	Glycosyltransferase family 92 protein	
@@ -681,14 +681,14 @@ SUBSTITUTE	human	Q8IYD2	KLHDC8A	Q8IYD2	3	40	Kelch domain-containing protein 8A (
 SUBSTRACTION	human	Q14197	MRPL58	Q14197	21	487	Large ribosomal subunit protein mL62 (39S ribosomal protein 	w
 SUBSTRATE	fly	FBgn0000241	bw	P12428	3	26	Protein brown (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
 SUBSTRATE	fly	FBgn0003515	st	P45843	1	6	Protein scarlet (EC 7.6.2.-) (ATP-binding cassette transport	w
-SUBSTRATE	fly	FBgn0003996	w	P10090	4	54	Protein white (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
-SUBSTRATE	fly	FBgn0024248	chico	Q9XTN2	15	89	Insulin receptor substrate 1 (dIRS) (Protein chico)	w
-SUBSTRATE	fly	FBgn0031450	Hrs	Q960X8	21	113	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
+SUBSTRATE	fly	FBgn0003996	w	P10090	4	56	Protein white (EC 7.6.2.-) (EC 7.6.2.6) (ATP-binding cassett	w
+SUBSTRATE	fly	FBgn0024248	chico	Q9XTN2	19	90	Insulin receptor substrate 1 (dIRS) (Protein chico)	w
+SUBSTRATE	fly	FBgn0031450	Hrs	Q960X8	25	118	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
 SUBSTRATE	fly	FBgn0031610	Paris	Q9VR05	32	412	Zinc finger protein Paris (Parkin-interacting substrate)	w
-SUBSTRATE	fly	FBgn0035060	Eps-15	Q9W111	61	368	Epidermal growth factor receptor pathway substrate clone 15,	w
+SUBSTRATE	fly	FBgn0035060	Eps-15	Q9W111	61	369	Epidermal growth factor receptor pathway substrate clone 15,	w
 SUBSTRATE	fly	FBgn0052082	IRSp53	Q8IQE6	2	47	Insulin receptor substrate 53 kDa, isoform A	w
-SUBSTRATE	fly	FBgn0260750	Mulk	Q9VL10	4	14	Acylglycerol kinase, mitochondrial (EC 2.7.1.107) (EC 2.7.1.	w
-SUBSTRATE	fly	FBgn0267824	PRAS40	Q7JXA2	4	23	LOBE (Proline-rich Akt substrate 40 kDa) (RE53130p)	w
+SUBSTRATE	fly	FBgn0260750	Mulk	Q9VL10	5	16	Acylglycerol kinase, mitochondrial (EC 2.7.1.107) (EC 2.7.1.	w
+SUBSTRATE	fly	FBgn0267824	PRAS40	Q7JXA2	6	27	LOBE (Proline-rich Akt substrate 40 kDa) (RE53130p)	w
 SUBSTRATE	human	A1X283	SH3PXD2B	A1X283	42	181	SH3 and PX domain-containing protein 2B (Adapter protein HOF	w
 SUBSTRATE	human	O14654	IRS4	O14654	54	337	Insulin receptor substrate 4 (IRS-4) (160 kDa phosphotyrosin	w
 SUBSTRATE	human	O14964	HGS	O14964	80	539	Hepatocyte growth factor-regulated tyrosine kinase substrate	w
@@ -814,7 +814,7 @@ SUBTYPE	zebrafish	E7FD73	ptger3	E7FD73	15	36	Prostaglandin E2 receptor EP3 subty
 SUBTYPE	zebrafish	Q2N1D9	ptger4a	Q2N1D9	11	38	Prostaglandin E2 receptor EP4 subtype (Prostanoid EP4 recept	w
 SUBTYPE	zebrafish	Q5RI92	ptger2b	Q5RI92	1	13	Prostaglandin E receptor 2b (subtype EP2)	w
 SUBTYPE-3	human	P32247	BRS3	P32247	9	111	Bombesin receptor subtype-3 (BRS-3)	w
-SUBU	fly	FBgn0028691	Rpn9	Q7KMP8	11	103	26S proteasome non-ATPase regulatory subunit 13 (26S proteas	w
+SUBU	fly	FBgn0028691	Rpn9	Q7KMP8	15	121	26S proteasome non-ATPase regulatory subunit 13 (26S proteas	w
 SUBU	human	P01215	CGA	P01215	14	54	Glycoprotein hormones alpha chain (Anterior pituitary glycop	w
 SUBU	human	P08195	SLC3A2	P08195	17	434	Amino acid transporter heavy chain SLC3A2 (4F2 cell-surface 	w
 SUBU	human	P14406	COX7A2	P14406	51	240	Cytochrome c oxidase subunit 7A2, mitochondrial (Cytochrome 	w
@@ -825,8 +825,8 @@ SUBU	human	Q07955	SRSF1	Q07955	76	749	Serine/arginine-rich splicing factor 1 (Al
 SUBU	human	Q13651	IL10RA	Q13651	55	552	Interleukin-10 receptor subunit alpha (IL-10 receptor subuni	w
 SUBU	human	Q6ZYL4	GTF2H5	Q6ZYL4	30	269	General transcription factor IIH subunit 5 (General transcri	w
 SUBU	human	Q9UNM6	PSMD13	Q9UNM6	28	284	26S proteasome non-ATPase regulatory subunit 13 (26S proteas	w
-SUBUN	fly	FBgn0040773	COX7C	Q7JW00	10	93	Cytochrome c oxidase subunit 7C, isoform A (Cytochrome c oxi	w
-SUBUN	fly	FBgn0260985	RfC4	P53034	9	100	Replication factor C subunit 2 (Activator 1 40 kDa subunit) 	w
+SUBUN	fly	FBgn0040773	COX7C	Q7JW00	42	102	Cytochrome c oxidase subunit 7C, isoform A (Cytochrome c oxi	w
+SUBUN	fly	FBgn0260985	RfC4	P53034	11	113	Replication factor C subunit 2 (Activator 1 40 kDa subunit) 	w
 SUBUN	human	O00231	PSMD11	O00231	29	373	26S proteasome non-ATPase regulatory subunit 11 (26S proteas	w
 SUBUN	human	O75971	SNAPC5	O75971	41	292	snRNA-activating protein complex subunit 5 (SNAPc subunit 5)	w
 SUBUN	human	O95298	NDUFC2	O95298	23	203	NADH dehydrogenase [ubiquinone] 1 subunit C2 (Complex I-B14.	w
@@ -848,7 +848,7 @@ SUBUN	human	Q96RN5	MED15	Q96RN5	43	212	Mediator of RNA polymerase II transcripti
 SUBUN	human	Q9ULG1	INO80	Q9ULG1	22	301	Chromatin-remodeling ATPase INO80 (hINO80) (EC 3.6.4.-) (DNA	w
 SUBUN	human	Q9Y6H6	KCNE3	Q9Y6H6	56	466	Potassium voltage-gated channel subfamily E member 3 (MinK-r	w
 SUBUN	human	Q9Y6J6	KCNE2	Q9Y6J6	17	159	Potassium voltage-gated channel subfamily E member 2 (MinK-r	w
-SUBUNI	fly	FBgn0013678	mt:Cyt-b	P18935	11	141	Cytochrome b (Complex III subunit 3) (Complex III subunit II	w
+SUBUNI	fly	FBgn0013678	mt:Cyt-b	P18935	18	142	Cytochrome b (Complex III subunit 3) (Complex III subunit II	w
 SUBUNI	human	P00156	MT-CYB	P00156	33	250	Cytochrome b (Complex III subunit 3) (Complex III subunit II	w
 SUBUNI	human	P38606	ATP6V1A	P38606	14	329	V-type proton ATPase catalytic subunit A (V-ATPase subunit A	w
 SUBUNI	human	P48454	PPP3CC	P48454	69	263	Serine/threonine-protein phosphatase 2B catalytic subunit ga	w
@@ -869,8 +869,8 @@ SUBUNIT-ASSOCIATED	human	Q96SN8	CDK5RAP2	Q96SN8	40	199	CDK5 regulatory subunit-a
 SUBUNIT-ASSOCIATED	human	Q96SZ6	CDK5RAP1	Q96SZ6	14	148	Mitochondrial tRNA methylthiotransferase CDK5RAP1 (EC 2.8.4.	w
 SUBUNIT-ASSOCIATED	zebrafish	A8WGJ0	zgc:162738	A8WGJ0	3	3	CDK5 regulatory subunit-associated protein 1	w
 SUBUNIT-LIKE	fly	FBgn0034007	ND-51L2	A1Z9Z7	32	333	NADH dehydrogenase (Ubiquinone) 51 kDa subunit-like 2, isofo	w
-SUBUNIT-LIKE	fly	FBgn0036706	ND-24L	Q9VVF0	9	102	AT21479p (NADH dehydrogenase (Ubiquinone) 24 kDa subunit-lik	w
-SUBUNIT-LIKE	fly	FBgn0039669	ND-20L	Q9VAK5	12	100	NADH dehydrogenase (Ubiquinone) 20 kDa subunit-like, isoform	w
+SUBUNIT-LIKE	fly	FBgn0036706	ND-24L	Q9VVF0	20	105	AT21479p (NADH dehydrogenase (Ubiquinone) 24 kDa subunit-lik	w
+SUBUNIT-LIKE	fly	FBgn0039669	ND-20L	Q9VAK5	23	104	NADH dehydrogenase (Ubiquinone) 20 kDa subunit-like, isoform	w
 SUBUNIT-LIKE	fly	FBgn0051477	ATPsynepsilonL	Q9VH24	4	47	ATP synthase, epsilon subunit-like, isoform A (ATP synthase,	w
 SUBUNIT-LIKE	fly	FBgn0262842	UQCR-6.4L	M9NFG6	8	34	Ubiquinol-cytochrome c reductase 6.4 kDa subunit-like	w
 SUBUNIT-LIKE	human	A0A3B3IU46	RAMACL	A0A3B3IU46	1	46	RNA guanine-N7 methyltransferase-activating subunit-like pro	w
@@ -890,7 +890,7 @@ SUBUNIT-RELATED	human	Q15695	ZRSR2P1	Q15695	9	62	U2 small nuclear ribonucleoprot
 SUBUNIT-RELATED	human	Q15696	ZRSR2	Q15696	18	139	U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa s	w
 SUBUNIT-RELATED	human	Q9NQR9	G6PC2	Q9NQR9	2	61	Glucose-6-phosphatase 2 (G-6-Pase 2) (G6Pase 2) (EC 3.1.3.9)	w
 SUBUNIT-RELATED	zebrafish	A0A8M1QHE8	zrsr2	A0A8M1QHE8	6	60	U2 small nuclear ribonucleoprotein auxiliary factor 35 kDa s	w
-SUBUNITS	fly	FBgn0011290	Taf12	P49905	71	552	Transcription initiation factor TFIID subunit 12 (TAFII30 al	w
+SUBUNITS	fly	FBgn0011290	Taf12	P49905	79	554	Transcription initiation factor TFIID subunit 12 (TAFII30 al	w
 SUBUNITS	human	Q16514	TAF12	Q16514	101	642	Transcription initiation factor TFIID subunit 12 (Transcript	w
 SUBUNITS	human	Q3T906	GNPTAB	Q3T906	11	79	N-acetylglucosamine-1-phosphotransferase subunits alpha/beta	w
 SUBUNITS	human	Q9NV88	INTS9	Q9NV88	26	356	Integrator complex subunit 9 (Int9) (Protein related to CPSF	w

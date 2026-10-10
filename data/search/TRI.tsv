@@ -2,7 +2,7 @@ TRI	arabidopsis-thaliana	Q9ZW16	TRI	Q9ZW16	0	5	Tropinone reductase homolog At2g2
 TRI-SNRN	human	O43290	SART1	O43290	68	501	U4/U6.U5 tri-snRNP-associated protein 1 (SNU66 homolog) (hSn	w
 TRI-SNRNP	zebrafish	Q6DG11	sart1	Q6DG11	17	109	Spliceosome-associated factor 1, recruiter of U4/U6.U5 tri-s	w
 TRI-SNRNP-A	human	Q8WVK2	SNRNP27	Q8WVK2	15	404	U4/U6.U5 small nuclear ribonucleoprotein 27 kDa protein (U4/	w
-TRI-SNRNP-ASSOCIATED	fly	FBgn0021895	ytr	Q9W1I6	0	43	U4/U6.U5 small nuclear ribonucleoprotein 27 kDa protein (U4/	w
+TRI-SNRNP-ASSOCIATED	fly	FBgn0021895	ytr	Q9W1I6	1	43	U4/U6.U5 small nuclear ribonucleoprotein 27 kDa protein (U4/	w
 TRI-SNRNP-ASSOCIATED	human	O43290	SART1	O43290	68	501	U4/U6.U5 tri-snRNP-associated protein 1 (SNU66 homolog) (hSn	w
 TRI-SNRNP-ASSOCIATED	human	Q53GS9	USP39	Q53GS9	23	357	Ubiquitin carboxyl-terminal hydrolase 39 (EC 3.4.19.12) (SAD	w
 TRI1	candida-albicans-237561	A0A1D8PCC6	TRI1	A0A1D8PCC6	1	36	Uncharacterized protein	
@@ -86,9 +86,9 @@ TRIACYLGLYCEROL	yeast	P54857	TGL2	P54857	1	29	Triacylglycerol lipase 2	w
 TRIACYLGLYCEROL	yeast	Q12043	TGL5	Q12043	2	33	Triacylglycerol lipase 5	w
 TRIACYLGLYCEROL	zebrafish	A0AB32TQQ9	pnpla3	A0AB32TQQ9	0	9	triacylglycerol lipase	w
 TRIACYLGLYCEROL	zebrafish	E7FGN6	pnpla2	E7FGN6	1	10	triacylglycerol lipase	w
-TRIAD	fly	FBgn0024945	NitFhit	O76464	1	17	Nitrilase and fragile histidine triad fusion protein NitFhit	w
+TRIAD	fly	FBgn0024945	NitFhit	O76464	4	29	Nitrilase and fragile histidine triad fusion protein NitFhit	w
 TRIAD	fly	FBgn0031378	CG15362	Q9VQ59	41	246	Adenosine 5'-monophosphoramidase HINT3 (Histidine triad nucl	w
-TRIAD	fly	FBgn0031459	HINT1	Q8STA5	9	174	Histidine triad nucleotide binding protein 1, isoform A (EC 	w
+TRIAD	fly	FBgn0031459	HINT1	Q8STA5	9	175	Histidine triad nucleotide binding protein 1, isoform A (EC 	w
 TRIAD	fly	FBgn0054015	CG34015	Q6IIA4	2	4	Adenosine 5'-monophosphoramidase HINT3 (Histidine triad nucl	w
 TRIAD	human	P49773	HINT1	P49773	10	202	Adenosine 5'-monophosphoramidase HINT1 (EC 3.9.1.-) (Desumoy	w
 TRIAD	human	Q96C86	DCPS	Q96C86	5	296	m7GpppX diphosphatase (EC 3.6.1.59) (DCS-1) (Decapping scave	w
@@ -169,7 +169,7 @@ TRIF	human	Q8IUC6	TICAM1	Q8IUC6	36	282
 TRIF-RELATED	human	Q86XR7	TICAM2	Q86XR7	18	255	TIR domain-containing adapter molecule 2 (TICAM-2) (Putative	w
 TRIFIC	human	Q7Z4K8	TRIM46	Q7Z4K8	34	170		
 TRIFORCE	fly	FBgn0035199	tfc	Q8IRH8	33	251	LP02252p (Triforce, isoform B)	w
-TRIFUNCTIONAL	fly	FBgn0000053	Gart	P00967	2	95	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
+TRIFUNCTIONAL	fly	FBgn0000053	Gart	P00967	2	99	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
 TRIFUNCTIONAL	human	P22102	GART	P22102	0	260	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
 TRIFUNCTIONAL	human	P40939	HADHA	P40939	36	604	Trifunctional enzyme subunit alpha, mitochondrial (78 kDa ga	w
 TRIFUNCTIONAL	human	P55084	HADHB	P55084	32	481	Trifunctional enzyme subunit beta, mitochondrial (TP-beta) [	w
@@ -183,7 +183,7 @@ TRIGGER	human	Q99618	CDCA3	Q99618	31	306	Cell division cycle-associated protein 
 TRIGGER	worm	K8ERW1	CELE_F40F11.3	K8ERW1	5	37	Trigger_C domain-containing protein	w
 TRIGGER	yeast	P36119	RQT4	P36119	1	11	RQC trigger complex subunit RQT4	w
 TRIGGER	yeast	P53137	CUE3	P53137	1	8	RQC trigger complex subunit CUE3	w
-TRIGGERING	fly	FBgn0028738	ETH	Q9W103	32	246	Ecdysis triggering hormone (RT04180p)	w
+TRIGGERING	fly	FBgn0028738	ETH	Q9W103	32	247	Ecdysis triggering hormone (RT04180p)	w
 TRIGGERING	human	O14931	NCR3	O14931	60	468	Natural cytotoxicity triggering receptor 3 (Activating natur	w
 TRIGGERING	human	O76036	NCR1	O76036	82	399	Natural cytotoxicity triggering receptor 1 (Lymphocyte antig	w
 TRIGGERING	human	O95944	NCR2	O95944	34	143	Natural cytotoxicity triggering receptor 2 (Lymphocyte antig	w
@@ -520,12 +520,12 @@ TRIMETHYLAMINOBUTYRALDEHYDE	human	P49189	ALDH9A1	P49189	13	170	4-trimethylaminob
 TRIMETHYLAMINOBUTYRALDEHYDE	worm	Q20352	alh-11	Q20352	5	11	4-trimethylaminobutyraldehyde dehydrogenase	w
 TRIMETHYLAMINOBUTYRALDEHYDE	zebrafish	Q7ZVB2	aldh9a1a	Q7ZVB2	7	9	4-trimethylaminobutyraldehyde dehydrogenase A	w
 TRIMETHYLAMINOBUTYRALDEHYDE	zebrafish	Q802W2	aldh9a1b	Q802W2	2	3	4-trimethylaminobutyraldehyde dehydrogenase B	w
-TRIMETHYLGUANOSINE	fly	FBgn0266195	Tgs1	Q9VEA4	3	27	Trimethylguanosine synthase	w
+TRIMETHYLGUANOSINE	fly	FBgn0266195	Tgs1	Q9VEA4	3	29	Trimethylguanosine synthase	w
 TRIMETHYLGUANOSINE	human	Q96RS0	TGS1	Q96RS0	46	255	Trimethylguanosine synthase (EC 2.1.1.-) (CLL-associated ant	w
 TRIMETHYLGUANOSINE	worm	Q94013	tgs-1	Q94013	0	7	Trimethylguanosine synthase	w
 TRIMETHYLGUANOSINE	yeast	Q12052	TGS1	Q12052	2	11	Trimethylguanosine synthase	w
 TRIMETHYLGUANOSINE	zebrafish	A0A8M1RLP2	lyn	A0A8M1RLP2	2	13	Trimethylguanosine synthase	w
-TRIMETHYLLYSINE	fly	FBgn0038795	Tmlh	Q9VDM7	3	17	Trimethyllysine dioxygenase, mitochondrial (EC 1.14.11.8) (E	w
+TRIMETHYLLYSINE	fly	FBgn0038795	Tmlh	Q9VDM7	3	19	Trimethyllysine dioxygenase, mitochondrial (EC 1.14.11.8) (E	w
 TRIMETHYLLYSINE	human	Q9NVH6	TMLHE	Q9NVH6	2	89	Trimethyllysine dioxygenase, mitochondrial (EC 1.14.11.8) (E	w
 TRIMETHYLLYSINE	worm	Q21526	gbh-2	Q21526	1	3	Trimethyllysine dioxygenase, mitochondrial	w
 TRIML1	human	Q8N9V2	TRIML1	Q8N9V2	16	53	Probable E3 ubiquitin-protein ligase TRIML1 (EC 2.3.2.27) (R	
@@ -556,7 +556,7 @@ TRIO-ASSOCIATED	human	Q9H2D6	TRIOBP	Q9H2D6	40	237	TRIO and F-actin-binding prote
 TRIOBP	human	Q9H2D6	TRIOBP	Q9H2D6	40	237	TRIO and F-actin-binding protein (Protein Tara) (TRF1-associ	
 TRIOKINASE	human	Q3LXA3	TKFC	Q3LXA3	2	125	Triokinase/FMN cyclase (Bifunctional ATP-dependent dihydroxy	w
 TRIOKINASE	worm	Q9N5C4	CELE_W02H5.8	Q9N5C4	0	3	Triokinase/FMN cyclase	w
-TRIOSE	fly	FBgn0086355	Tpi	P29613	7	154	Triose phosphate isomerase	w
+TRIOSE	fly	FBgn0086355	Tpi	P29613	8	160	Triose phosphate isomerase	w
 TRIOSE-PHOSPHATE	human	P60174	TPI1	P60174	1	290	Triosephosphate isomerase (TIM) (EC 5.3.1.1) (Methylglyoxal 	w
 TRIOSEPHOSPHATE	human	P60174	TPI1	P60174	1	290	Triosephosphate isomerase (TIM) (EC 5.3.1.1) (Methylglyoxal 	w
 TRIOSEPHOSPHATE	worm	Q10657	tpi-1	Q10657	0	62	Triosephosphate isomerase	w
@@ -568,7 +568,7 @@ TRIO_HUMAN	human	O75962	TRIO	O75962	7	68
 TRIP	human	Q32MZ4	LRRFIP1	Q32MZ4	17	182		
 TRIP	human	Q9BWF2	TRAIP	Q9BWF2	39	212		
 TRIP	human	Q9UJV3	MID2	Q9UJV3	45	340	E3 ubiquitin-protein ligase MID2 (EC 2.3.2.27) (Midin-2) (Mi	w
-TRIP-1	fly	FBgn0015834	eIF3i	O02195	10	153	Eukaryotic translation initiation factor 3 subunit I (eIF3i)	w
+TRIP-1	fly	FBgn0015834	eIF3i	O02195	27	171	Eukaryotic translation initiation factor 3 subunit I (eIF3i)	w
 TRIP-10	human	Q15642	TRIP10	Q15642	45	237	Cdc42-interacting protein 4 (Protein Felic) (Salt tolerant p	w
 TRIP-11	human	Q15643	TRIP11	Q15643	24	234	Thyroid receptor-interacting protein 11 (TR-interacting prot	w
 TRIP-4	human	Q15650	TRIP4	Q15650	77	534	Activating signal cointegrator 1 (ASC-1) (Thyroid receptor-i	w
@@ -752,8 +752,8 @@ TRIPEPTIDYL-PEPTIDASE	worm	Q09541	tpp-2	Q09541	0	11	Tripeptidyl-peptidase 2	w
 TRIPEPTIDYL-PEPTIDASE	zebrafish	F8W2M8	tpp1	F8W2M8	2	19	Tripeptidyl-peptidase 1	w
 TRIPEPTIDYL-PEPTIDASE	zebrafish	R4GDQ0	tpp2	R4GDQ0	0	4	Tripeptidyl-peptidase 2	w
 TRIPHOSPH	human	O95671	ASMTL	O95671	4	110	Probable bifunctional dTTP/UTP pyrophosphatase/methyltransfe	w
-TRIPHOSPHATASE	fly	FBgn0024945	NitFhit	O76464	1	17	Nitrilase and fragile histidine triad fusion protein NitFhit	w
-TRIPHOSPHATASE	fly	FBgn0031663	CG8891	Q9VMW7	1	142	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
+TRIPHOSPHATASE	fly	FBgn0024945	NitFhit	O76464	4	29	Nitrilase and fragile histidine triad fusion protein NitFhit	w
+TRIPHOSPHATASE	fly	FBgn0031663	CG8891	Q9VMW7	2	151	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
 TRIPHOSPHATASE	human	P36639	NUDT1	P36639	3	118	Oxidized purine nucleoside triphosphate hydrolase (EC 3.6.1.	w
 TRIPHOSPHATASE	human	P49789	FHIT	P49789	2	102	Bis(5'-adenosyl)-triphosphatase (EC 3.6.1.29) (AP3A hydrolas	w
 TRIPHOSPHATASE	human	Q9BY32	ITPA	Q9BY32	4	146	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
@@ -814,8 +814,8 @@ TRIPHOSPHATASE	yeast	Q03220	CTL1	Q03220	1	20	Polynucleotide 5'-triphosphatase CT
 TRIPHOSPHATASE	zebrafish	Q566N0	enpp4	Q566N0	0	2	Bis(5'-adenosyl)-triphosphatase enpp4	w
 TRIPHOSPHATASE	zebrafish	Q6PBZ7	fhit	Q6PBZ7	0	8	Bis(5'-adenosyl)-triphosphatase	w
 TRIPHOSPHATE	fly	FBgn0030556	mRNA-cap	Q9VY44	44	959	mRNA-capping enzyme [Includes: mRNA 5'-triphosphate monophos	w
-TRIPHOSPHATE	fly	FBgn0031663	CG8891	Q9VMW7	1	142	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
-TRIPHOSPHATE	fly	FBgn0250837	dUTPase	Q9V3I1	7	189	Deoxyuridine 5'-triphosphate nucleotidohydrolase (dUTPase) (	w
+TRIPHOSPHATE	fly	FBgn0031663	CG8891	Q9VMW7	2	151	Inosine triphosphate pyrophosphatase (ITPase) (Inosine triph	w
+TRIPHOSPHATE	fly	FBgn0250837	dUTPase	Q9V3I1	10	215	Deoxyuridine 5'-triphosphate nucleotidohydrolase (dUTPase) (	w
 TRIPHOSPHATE	human	O60942	RNGTT	O60942	19	340	mRNA-capping enzyme (HCAP1) (HCE) [Includes: mRNA 5'-triphos	w
 TRIPHOSPHATE	human	O75354	ENTPD6	O75354	6	67	Ectonucleoside triphosphate diphosphohydrolase 6 (NTPDase 6)	w
 TRIPHOSPHATE	human	O75355	ENTPD3	O75355	4	61	Ectonucleoside triphosphate diphosphohydrolase 3 (NTPDase 3)	w
@@ -917,11 +917,11 @@ TRIPLE	human	Q9H4I2	ZHX3	Q9H4I2	26	106	Zinc fingers and homeoboxes protein 3 (Tr
 TRIPLE	worm	H2KYW4	C43E11.12	H2KYW4	0	4	Transcription factor TFIIIC triple barrel domain-containing 	w
 TRIPLE	zebrafish	F6P0H3	cthrc1b	F6P0H3	1	22	Collagen triple helix repeat-containing 1b	w
 TRIPLE	zebrafish	Q6AXL0	cthrc1a	Q6AXL0	1	22	Collagen triple helix repeat containing 1a	w
-TRIPLE-A	fly	FBgn0028684	Rpt5	Q9V3V6	14	192	26S proteasome regulatory complex subunit p50 (GH12068p) (Re	w
-TRIPLE-A	fly	FBgn0028685	Rpt4	Q9W414	10	192	Regulatory particle triple-A ATPase 4 (EC 3.6.1.3)	w
+TRIPLE-A	fly	FBgn0028684	Rpt5	Q9V3V6	25	219	26S proteasome regulatory complex subunit p50 (GH12068p) (Re	w
+TRIPLE-A	fly	FBgn0028685	Rpt4	Q9W414	14	214	Regulatory particle triple-A ATPase 4 (EC 3.6.1.3)	w
 TRIPLE-A	fly	FBgn0028686	Rpt3	Q9V405	9	143	26S proteasome regulatory complex subunit p48A (CG16916 prot	w
 TRIPLE-A	fly	FBgn0036224	Rpt4R	Q9VTQ9	6	74	AT06668p (Regulatory particle triple-A ATPase 4-related, iso	w
-TRIPLE-A	fly	FBgn0037742	Rpt3R	Q9VH79	5	69	RE01104p (Regulatory particle triple-A ATPase 3-related, iso	w
+TRIPLE-A	fly	FBgn0037742	Rpt3R	Q9VH79	9	69	RE01104p (Regulatory particle triple-A ATPase 3-related, iso	w
 TRIPLET	human	O95319	CELF2	O95319	7	75	CUGBP Elav-like family member 2 (CELF-2) (Bruno-like protein	w
 TRIPLET	human	P07196	NEFL	P07196	73	283	Neurofilament light polypeptide (NF-L) (68 kDa neurofilament	w
 TRIPLET	human	P07197	NEFM	P07197	79	263	Neurofilament medium polypeptide (NF-M) (160 kDa neurofilame	w
@@ -1010,4 +1010,4 @@ TRITHORAX	human	Q9UMN6	KMT2B	Q9UMN6	23	258	Histone-lysine N-methyltransferase 2B
 TRITHORAX	worm	Q9N4J9	CELE_F54A3.6	Q9N4J9	0	2	Trithorax group protein osa	w
 TRITHORAX-LIKE	fly	FBgn0013263	Trl	M9PFM7	93	432	Trithorax-like, isoform K	w
 TRITHORAX-RELATED	fly	FBgn0023518	trr	Q8IRW8	2	14	Histone-lysine N-methyltransferase trr (EC 2.1.1.354) (Lysin	w
-TRIVET	fly	FBgn0085391	trv	E1JIZ9	1	11	Trivet, isoform I	w
+TRIVET	fly	FBgn0085391	trv	E1JIZ9	1	13	Trivet, isoform I	w

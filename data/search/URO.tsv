@@ -1,6 +1,6 @@
 URO	arabidopsis-thaliana	Q9LTD6	URO	Q9LTD6	0	8	At3g23140	
 URO	fly	FBgn0003961	Uro	P16163	1	104	Uricase (EC 1.7.3.3) (Urate oxidase)	
-URO-D	fly	FBgn0033428	Urod	Q9V595	0	13	Uroporphyrinogen decarboxylase (UPD) (URO-D) (EC 4.1.1.37)	w
+URO-D	fly	FBgn0033428	Urod	Q9V595	0	22	Uroporphyrinogen decarboxylase (UPD) (URO-D) (EC 4.1.1.37)	w
 URO-D	human	P06132	UROD	P06132	4	139	Uroporphyrinogen decarboxylase (UPD) (URO-D) (EC 4.1.1.37)	w
 UROC1	human	Q96N76	UROC1	Q96N76	1	90	Urocanate hydratase (Urocanase) (EC 4.2.1.49) (Imidazolonepr	
 UROC28	human	Q9GZY1	PBOV1	Q9GZY1	1	16		
@@ -14,7 +14,7 @@ UROCORTIN	zebrafish	Q1LYP1	ucn3l	Q1LYP1	1	4	Novel protein similar to vertebrate 
 UROCORTIN-2	human	Q96RP3	UCN2	Q96RP3	4	42	Urocortin-2 (Stresscopin-related peptide) (Urocortin II) (Uc	w
 UROCORTIN-3	human	Q969E3	UCN3	Q969E3	18	152	Urocortin-3 (Stresscopin) (Urocortin III) (Ucn III)	w
 UROCORTIN-RELATED	human	Q96RP3	UCN2	Q96RP3	4	42	Urocortin-2 (Stresscopin-related peptide) (Urocortin II) (Uc	w
-UROD	fly	FBgn0033428	Urod	Q9V595	0	13	Uroporphyrinogen decarboxylase (UPD) (URO-D) (EC 4.1.1.37)	
+UROD	fly	FBgn0033428	Urod	Q9V595	0	22	Uroporphyrinogen decarboxylase (UPD) (URO-D) (EC 4.1.1.37)	
 UROD	human	P06132	UROD	P06132	4	139	Uroporphyrinogen decarboxylase (UPD) (URO-D) (EC 4.1.1.37)	
 UROD	mus-musculus	P70697	Urod	P70697	0	10	Uroporphyrinogen decarboxylase	
 UROD	rattus-norvegicus	P32362	Urod	P32362	0	7	Uroporphyrinogen decarboxylase	
@@ -49,12 +49,12 @@ UROPLAKIN-3B	human	Q9BT76	UPK3B	Q9BT76	1	21	Uroplakin-3b (UP3b) (Uroplakin IIIb)
 UROPLAKIN-3B-LIKE	human	B0FP48	UPK3BL1	B0FP48	15	167	Uroplakin-3b-like protein 1	w
 UROPLAKIN-3B-LIKE	human	E5RIL1	UPK3BL2	E5RIL1	13	107	Uroplakin-3b-like protein 2	w
 UROPONTIN	human	P10451	SPP1	P10451	155	1106	Osteopontin (Bone sialoprotein 1) (Nephropontin) (Secreted p	w
-UROPORPHYRINOGEN	fly	FBgn0033428	Urod	Q9V595	0	13	Uroporphyrinogen decarboxylase (UPD) (URO-D) (EC 4.1.1.37)	w
+UROPORPHYRINOGEN	fly	FBgn0033428	Urod	Q9V595	0	22	Uroporphyrinogen decarboxylase (UPD) (URO-D) (EC 4.1.1.37)	w
 UROPORPHYRINOGEN	human	P06132	UROD	P06132	4	139	Uroporphyrinogen decarboxylase (UPD) (URO-D) (EC 4.1.1.37)	w
 UROPORPHYRINOGEN	yeast	P32347	HEM12	P32347	0	6	Uroporphyrinogen decarboxylase	w
 UROPORPHYRINOGEN	zebrafish	Q9PTS2	urod	Q9PTS2	0	16	Uroporphyrinogen decarboxylase	w
-UROPORPHYRINOGEN-III	fly	FBgn0030066	Uros1	Q9W3B3	0	8	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
-UROPORPHYRINOGEN-III	fly	FBgn0038361	Uros2	Q9VF38	0	5	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
+UROPORPHYRINOGEN-III	fly	FBgn0030066	Uros1	Q9W3B3	0	11	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
+UROPORPHYRINOGEN-III	fly	FBgn0038361	Uros2	Q9VF38	0	7	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
 UROPORPHYRINOGEN-III	human	P10746	UROS	P10746	1	70	Uroporphyrinogen-III synthase (UROIIIS) (UROS) (EC 4.2.1.75)	w
 UROPORPHYRINOGEN-III	worm	Q21753	CELE_R05G6.5	Q21753	2	62	Uroporphyrinogen-III synthase	w
 UROPORPHYRINOGEN-III	yeast	P06174	HEM4	P06174	0	2	Uroporphyrinogen-III synthase	w
@@ -63,8 +63,8 @@ UROS	arabidopsis-thaliana	O48721	UROS	O48721	0	1	Uroporphyrinogen-III synthase, 
 UROS	human	P10746	UROS	P10746	1	70	Uroporphyrinogen-III synthase (UROIIIS) (UROS) (EC 4.2.1.75)	
 UROS	mus-musculus	P51163	Uros	P51163	0	1	Uroporphyrinogen-III synthase	
 UROS	oryza-sativa-subsp-japonica	Q10QR9	UROS	Q10QR9	0	19	Uroporphyrinogen-III synthase, chloroplastic	
-UROS1	fly	FBgn0030066	Uros1	Q9W3B3	0	8	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	
-UROS2	fly	FBgn0038361	Uros2	Q9VF38	0	5	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	
+UROS1	fly	FBgn0030066	Uros1	Q9W3B3	0	11	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	
+UROS2	fly	FBgn0038361	Uros2	Q9VF38	0	7	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	
 UROTENSIN	human	O95399	UTS2	O95399	4	23	Urotensin-2 (Urotensin II) (U-II) (UII)	w
 UROTENSIN	human	Q765I0	UTS2B	Q765I0	38	140	Urotensin-2B (Urotensin II-related peptide) (Urotensin IIB) 	w
 UROTENSIN	human	Q9UKP6	UTS2R	Q9UKP6	15	93	Urotensin-2 receptor (UR-2-R) (G protein-coupled receptor 14	w

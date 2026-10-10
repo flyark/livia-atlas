@@ -11,9 +11,9 @@ FOLA	mycobacterium-tuberculosis	P9WNX1	folA	P9WNX1	1	10	Dihydrofolate reductase
 FOLA	pseudomonas-aeruginosa	Q9I6E3	folA	Q9I6E3	0	6	Dihydrofolate reductase	
 FOLA	salmonella-typhimurium	Q8ZRW1	folA	Q8ZRW1	0	8	Dihydrofolate reductase	
 FOLA	shigella-dysenteriae-serotype-1	Q32K48	folA	Q32K48	0	7	Dihydrofolate reductase	
-FOLATE	fly	FBgn0039817	CG15553	Q9VA14	0	2	Proton-coupled folate transporter	w
+FOLATE	fly	FBgn0039817	CG15553	Q9VA14	0	4	Proton-coupled folate transporter	w
 FOLATE	fly	FBgn0263607	l(3)72Dp	Q8IQM9	29	259	folate gamma-glutamyl hydrolase (EC 3.4.19.9)	w
-FOLATE	fly	FBgn0263608	l(3)72Dr	Q9VV00	18	247	folate gamma-glutamyl hydrolase (EC 3.4.19.9)	w
+FOLATE	fly	FBgn0263608	l(3)72Dr	Q9VV00	18	248	folate gamma-glutamyl hydrolase (EC 3.4.19.9)	w
 FOLATE	human	A6ND01	IZUMO1R	A6ND01	9	64	Sperm-egg fusion protein Juno (Folate receptor 4) (Folate re	w
 FOLATE	human	P14207	FOLR2	P14207	5	85	Folate receptor beta (FR-beta) (Folate receptor 2) (Folate r	w
 FOLATE	human	P15328	FOLR1	P15328	31	393	Folate receptor alpha (FR-alpha) (Adult folate-binding prote	w
@@ -113,7 +113,7 @@ FOLK	mycobacterium-tuberculosis	P9WNC7	folK	P9WNC7	0	1	2-amino-4-hydroxy-6-hydro
 FOLK	pseudomonas-aeruginosa	Q9HV71	folK	Q9HV71	0	2	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosph	
 FOLK	salmonella-typhimurium	Q8ZRQ9	folK	Q8ZRQ9	0	1	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosph	
 FOLK	shigella-dysenteriae-serotype-1	Q32JW5	folK	Q32JW5	0	1	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosph	
-FOLLICLE	fly	FBgn0000644	Fcp3C	P11450	45	251	Follicle cell protein 3C-1	w
+FOLLICLE	fly	FBgn0000644	Fcp3C	P11450	46	253	Follicle cell protein 3C-1	w
 FOLLICLE	human	O95678	KRT75	O95678	79	214	Keratin, type II cytoskeletal 75 (Cytokeratin-75) (CK-75) (K	w
 FOLLICLE-STIMULATING	human	P01225	FSHB	P01225	20	176	Follitropin subunit beta (Follicle-stimulating hormone beta 	w
 FOLLICLE-STIMULATING	human	P23945	FSHR	P23945	26	220	Follicle-stimulating hormone receptor (FSH-R) (Follitropin r	w
@@ -122,7 +122,7 @@ FOLLICLE-STIMULATING	zebrafish	Q6TCF7	fshb	Q6TCF7	1	9	Follicle-stimulating hormo
 FOLLICULAR	human	A2A288	ZC3H12D	A2A288	3	19	Probable ribonuclease ZC3H12D (EC 3.1.-.-) (MCP-induced prot	w
 FOLLICULAR	human	Q06136	KDSR	Q06136	12	182	3-ketodihydrosphingosine reductase (KDS reductase) (EC 1.1.1	w
 FOLLICULAR	human	Q8NFU4	FDCSP	Q8NFU4	1	63	Follicular dendritic cell secreted peptide (FDC secreted pro	w
-FOLLICULIN	fly	FBgn0261111	BHD	Q9VS33	5	65	Folliculin	w
+FOLLICULIN	fly	FBgn0261111	BHD	Q9VS33	6	72	Folliculin	w
 FOLLICULIN	human	Q8NFG4	FLCN	Q8NFG4	13	156	Folliculin (BHD skin lesion fibrofolliculoma protein) (Birt-	w
 FOLLICULIN	zebrafish	F1R3E5	flcn	F1R3E5	4	27	Folliculin	w
 FOLLICULIN-INTERACTING	human	Q8TF40	FNIP1	Q8TF40	25	180	Folliculin-interacting protein 1	w
@@ -130,7 +130,7 @@ FOLLICULIN-INTERACTING	human	Q9P278	FNIP2	Q9P278	9	92	Folliculin-interacting pro
 FOLLICULIN-INTERACTING	zebrafish	A0A0R4IT71	fnip1	A0A0R4IT71	4	142	Folliculin-interacting protein 1	w
 FOLLICULIN-INTERACTING	zebrafish	B8A4V9	fnip2	B8A4V9	2	17	Folliculin-interacting protein 2	w
 FOLLICULOGENESIS-SPECIFIC	human	Q6QHK4	FIGLA	Q6QHK4	66	376	Factor in the germline alpha (FIGalpha) (Class C basic helix	w
-FOLLISTATIN	fly	FBgn0259878	Fs	Q86NV3	62	253	Follistatin, isoform A (GH04473p)	w
+FOLLISTATIN	fly	FBgn0259878	Fs	Q86NV3	63	253	Follistatin, isoform A (GH04473p)	w
 FOLLISTATIN	human	P19883	FST	P19883	12	149	Follistatin (FS) (Activin-binding protein)	w
 FOLLISTATIN	zebrafish	Q2PMI4	fstb	Q2PMI4	0	15	Follistatin 2	w
 FOLLISTATIN-A	zebrafish	Q9YHV4	fsta	Q9YHV4	0	15	Follistatin-A	w
@@ -179,10 +179,10 @@ FOLT-2	worm	O45166	folt-2	O45166	0	24	Folate-like transporter 2
 FOLT1	arabidopsis-thaliana	Q7XA87	FOLT1	Q7XA87	0	1	Folate transporter 1, chloroplastic	
 FOLX	pseudomonas-aeruginosa	Q9HYG7	folX	Q9HYG7	0	1	Dihydroneopterin triphosphate 2'-epimerase	
 FOLX	shigella-dysenteriae-serotype-1	Q32DN5	folX	Q32DN5	0	1	Dihydroneopterin triphosphate 2'-epimerase	
-FOLYLPOLY-GAMMA-GLUTAMATE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	10	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
+FOLYLPOLY-GAMMA-GLUTAMATE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	14	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
 FOLYLPOLY-GAMMA-GLUTAMATE	human	Q04609	FOLH1	Q04609	10	165	Glutamate carboxypeptidase 2 (EC 3.4.17.21) (Cell growth-inh	w
 FOLYLPOLY-GAMMA-GLUTAMATE	human	Q05932	FPGS	Q05932	13	89	Folylpolyglutamate synthase, mitochondrial (EC 6.3.2.17) (Fo	w
-FOLYLPOLYGLUTAMATE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	10	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
+FOLYLPOLYGLUTAMATE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	14	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
 FOLYLPOLYGLUTAMATE	human	Q05932	FPGS	Q05932	13	89	Folylpolyglutamate synthase, mitochondrial (EC 6.3.2.17) (Fo	w
 FOLYLPOLYGLUTAMATE	worm	Q09509	F25B5.6	Q09509	0	12	Putative folylpolyglutamate synthase	w
 FOLYLPOLYGLUTAMATE	yeast	P36001	RMA1	P36001	0	7	Probable folylpolyglutamate synthase	w

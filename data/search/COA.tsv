@@ -8,7 +8,7 @@ COA-7	worm	Q23450	coa-7	Q23450	1	18	Cytochrome c oxidase assembly factor 7 homol
 COA-ACYL	yeast	Q12283	MCT1	Q12283	2	31	Malonyl CoA-acyl carrier protein transacylase, mitochondrial	w
 COA-TRANS	human	P55809	OXCT1	P55809	2	146	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondr	w
 COA-TRANSFER	human	Q9BYC2	OXCT2	Q9BYC2	2	46	Succinyl-CoA:3-ketoacid coenzyme A transferase 2, mitochondr	w
-COA-TRANSFERASE	fly	FBgn0035298	Scot	Q9W058	1	8	Succinyl-CoA:3-ketoacid-coenzyme A transferase, mitochondria	w
+COA-TRANSFERASE	fly	FBgn0035298	Scot	Q9W058	1	15	Succinyl-CoA:3-ketoacid-coenzyme A transferase, mitochondria	w
 COA-TRANSFERASE	human	P55809	OXCT1	P55809	2	146	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondr	w
 COA-TRANSFERASE	human	Q9BYC2	OXCT2	Q9BYC2	2	46	Succinyl-CoA:3-ketoacid coenzyme A transferase 2, mitochondr	w
 COA-TRANSFERASE	human	Q9HAC7	SUGCT	Q9HAC7	4	85	Succinyl-CoA:glutarate CoA-transferase (EC 2.8.3.-) (Dermal 	w
@@ -99,10 +99,10 @@ COAC1	zea-mays	K7VYZ9	COAC1	K7VYZ9	0	38	Mitochondrial carrier protein CoAc1
 COAC2	zea-mays	B4F8I5	COAC2	B4F8I5	0	38	Mitochondrial carrier protein CoAc2	
 COACTIVAT	human	Q5SV97	PERM1	Q5SV97	6	35	PGC-1 and ERR-induced regulator in muscle protein 1 (PPARGC1	w
 COACTIVATING	human	Q9H0E9	BRD8	Q9H0E9	51	244	Bromodomain-containing protein 8 (Skeletal muscle abundant p	w
-COACTIVATOR	fly	FBgn0015299	Ssb-c31a	Q9VLR5	5	69	RNA polymerase II transcriptional coactivator (p11)	w
+COACTIVATOR	fly	FBgn0015299	Ssb-c31a	Q9VLR5	5	70	RNA polymerase II transcriptional coactivator (p11)	w
 COACTIVATOR	fly	FBgn0031698	Ncoa6	A8DYV5	8	20	Nuclear receptor coactivator 6, isoform F	w
 COACTIVATOR	fly	FBgn0036746	Crtc	M9PFU2	1	2	CREB-regulated transcription coactivator, isoform B	w
-COACTIVATOR	fly	FBgn0037770	Art4	Q9VH48	2	77	Probable histone-arginine methyltransferase CARMER (EC 2.1.1	w
+COACTIVATOR	fly	FBgn0037770	Art4	Q9VH48	3	79	Probable histone-arginine methyltransferase CARMER (EC 2.1.1	w
 COACTIVATOR	human	O43294	TGFB1I1	O43294	28	146	Transforming growth factor beta-1-induced transcript 1 prote	w
 COACTIVATOR	human	P46937	YAP1	P46937	223	974	Transcriptional coactivator YAP1 (Yes-associated protein 1) 	w
 COACTIVATOR	human	P53999	SUB1	P53999	15	559	Activated RNA polymerase II transcriptional coactivator p15 	w
@@ -212,7 +212,7 @@ COASY	mus-musculus	Q9DBL7	Coasy	Q9DBL7	1	14	Bifunctional coenzyme A synthase
 COASY	rattus-norvegicus	Q5XIA5	Coasy	Q5XIA5	1	16	Bifunctional coenzyme A synthase	
 COASY	zebrafish	Q66HW0	coasy	Q66HW0	0	16	Bifunctional coenzyme A synthase	
 COASY_HUMAN	human	Q13057	COASY	Q13057	8	133		
-COAT	fly	FBgn0025724	beta'COP	O62621	7	82	Coatomer subunit beta' (Beta'-coat protein) (Beta'-COP)	w
+COAT	fly	FBgn0025724	beta'COP	O62621	8	83	Coatomer subunit beta' (Beta'-coat protein) (Beta'-COP)	w
 COAT	human	O60641	SNAP91	O60641	26	98	Clathrin coat assembly protein AP180 (91 kDa synaptosomal-as	w
 COAT	human	P31146	CORO1A	P31146	40	411	Coronin-1A (Coronin-like protein A) (Clipin-A) (Coronin-like	w
 COAT	human	P35606	COPB2	P35606	30	484	Coatomer subunit beta' (Beta'-coat protein) (Beta'-COP) (p10	w
@@ -240,11 +240,11 @@ COATED	human	O95782	AP2A1	O95782	46	484	AP-2 complex subunit alpha-1 (100 kDa co
 COATED	human	Q6P3W7	SCYL2	Q6P3W7	11	187	SCY1-like protein 2 (Coated vesicle-associated kinase of 104	w
 COATED	human	Q96KG9	SCYL1	Q96KG9	44	220	N-terminal kinase-like protein (Coated vesicle-associated ki	w
 COATOMER	fly	FBgn0008635	betaCOP	P45437	18	177	Coatomer subunit beta (Beta-coat protein) (Beta-COP)	w
-COATOMER	fly	FBgn0025724	beta'COP	O62621	7	82	Coatomer subunit beta' (Beta'-coat protein) (Beta'-COP)	w
-COATOMER	fly	FBgn0025725	alphaCOP	Q9W0B8	9	82	Coatomer subunit alpha	w
-COATOMER	fly	FBgn0027496	epsilonCOP	Q9Y0Y5	12	146	Coatomer subunit epsilon	w
-COATOMER	fly	FBgn0028968	gammaCOP	A0A0B4KHL2	10	69	Coatomer subunit gamma	w
-COATOMER	fly	FBgn0028969	deltaCOP	Q9W555	11	86	Coatomer subunit delta	w
+COATOMER	fly	FBgn0025724	beta'COP	O62621	8	83	Coatomer subunit beta' (Beta'-coat protein) (Beta'-COP)	w
+COATOMER	fly	FBgn0025725	alphaCOP	Q9W0B8	10	82	Coatomer subunit alpha	w
+COATOMER	fly	FBgn0027496	epsilonCOP	Q9Y0Y5	13	146	Coatomer subunit epsilon	w
+COATOMER	fly	FBgn0028968	gammaCOP	A0A0B4KHL2	11	70	Coatomer subunit gamma	w
+COATOMER	fly	FBgn0028969	deltaCOP	Q9W555	14	87	Coatomer subunit delta	w
 COATOMER	fly	FBgn0040512	zetaCOP	Q9VV89	4	66	Coatomer subunit zeta	w
 COATOMER	human	O14579	COPE	O14579	16	321	Coatomer subunit epsilon (Epsilon-coat protein) (Epsilon-COP	w
 COATOMER	human	P35606	COPB2	P35606	30	484	Coatomer subunit beta' (Beta'-coat protein) (Beta'-COP) (p10	w

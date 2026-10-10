@@ -1,7 +1,7 @@
 TRM-1	worm	Q23270	trm-1	Q23270	0	19	tRNA (guanine(26)-N(2))-dimethyltransferase	
 TRM-2A	worm	Q9N5L0	trm-2a	Q9N5L0	0	3	tRNA (uracil(54)-C(5))-methyltransferase	
 TRM1	candida-albicans-237561	Q5A863	TRM1	Q5A863	0	11	tRNA (guanine(26)-N(2))-dimethyltransferase	
-TRM1	fly	FBgn0032430	Trm1	Q9VK89	0	24	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	
+TRM1	fly	FBgn0032430	Trm1	Q9VK89	0	41	tRNA (guanine(26)-N(2))-dimethyltransferase (EC 2.1.1.216) (	
 TRM1	methanocaldococcus-jannaschii	Q58356	trm1	Q58356	0	2	tRNA (guanine(26)-N(2))-dimethyltransferase	
 TRM1	schizosaccharomyces-pombe	Q9P804	trm1	Q9P804	0	12	tRNA (guanine(26)-N(2))-dimethyltransferase	
 TRM1	virus	F5HC79	TRM1	F5HC79	4	167	Tripartite terminase subunit 1	
@@ -24,12 +24,12 @@ TRM10	schizosaccharomyces-pombe	O14214	trm10	O14214	0	3	tRNA (guanine(9)-N1)-met
 TRM10	yeast	Q12400	TRM10	Q12400	0	7	tRNA (guanine(9)-N1)-methyltransferase	
 TRM10-TYPE	worm	O62096	C37A5.7	O62096	0	2	SAM-dependent MTase TRM10-type domain-containing protein	w
 TRM11	arabidopsis-thaliana	Q9LIN4	TRM11	Q9LIN4	3	15	tRNA (guanine(10)-N(2))-methyltransferase	
-TRM11	fly	FBgn0037250	CG1074	Q960G1	2	12	tRNA (guanine(10)-N2)-methyltransferase homolog (tRNA guanos	w
+TRM11	fly	FBgn0037250	CG1074	Q960G1	5	25	tRNA (guanine(10)-N2)-methyltransferase homolog (tRNA guanos	w
 TRM11	schizosaccharomyces-pombe	O94636	trm11	O94636	1	8	tRNA (guanine(10)-N(2))-methyltransferase	
 TRM11	yeast	Q12463	TRM11	Q12463	1	9	tRNA (guanine(10)-N(2))-methyltransferase	
 TRM112	schizosaccharomyces-pombe	Q09723	trm112	Q09723	7	23	Multifunctional methyltransferase subunit trm112	
 TRM112	yeast	P53738	TRM112	P53738	9	104	Multifunctional methyltransferase subunit TRM112	
-TRM112-LIKE	fly	FBgn0037061	Trmt112	Q9VP65	6	76	Multifunctional methyltransferase subunit TRM112-like protei	w
+TRM112-LIKE	fly	FBgn0037061	Trmt112	Q9VP65	9	84	Multifunctional methyltransferase subunit TRM112-like protei	w
 TRM112-LIKE	human	Q9UI30	TRMT112	Q9UI30	16	192	Multifunctional methyltransferase subunit TRM112-like protei	w
 TRM112-LIKE	worm	O45241	C04H5.1	O45241	9	27	Multifunctional methyltransferase subunit TRM112-like protei	w
 TRM112-LIKE	zebrafish	Q503F3	trmt112	Q503F3	11	98	Multifunctional methyltransferase subunit TRM112-like protei	w
@@ -123,7 +123,7 @@ TRM6	arabidopsis-thaliana	F4J8I0	TRM6	F4J8I0	4	115	Serine-rich adhesin for plate
 TRM6	arabidopsis-thaliana	O80846	TRM6	O80846	1	7	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
 TRM6	candida-albicans-237561	Q5A6Q4	TRM6	Q5A6Q4	1	8	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
 TRM6	cladophialophora-carrionii	A0A1C1CVX0	trm6	A0A1C1CVX0	1	3	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
-TRM6	fly	FBgn0031832	Trmt6	Q8MS69	3	22	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
+TRM6	fly	FBgn0031832	Trmt6	Q8MS69	12	34	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
 TRM6	human	Q9UJA5	TRMT6	Q9UJA5	14	131		
 TRM6	worm	Q94416	trmt-6	Q94416	2	11	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
 TRM6	yeast	P41814	GCD10	P41814	2	36	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	w
@@ -240,7 +240,7 @@ TRMT1	mus-musculus	Q3TX08	Trmt1	Q3TX08	0	39	tRNA (guanine(26)-N(2))-dimethyltran
 TRMT1	rattus-norvegicus	A0A140UHW6	Trmt1	A0A140UHW6	0	12	tRNA (guanine(26)-N(2))-dimethyltransferase	
 TRMT1	zebrafish	F1QGD9	trmt1	F1QGD9	0	13	tRNA (guanine(26)-N(2))-dimethyltransferase	
 TRMT1-LIKE	human	Q7Z2T5	TRMT1L	Q7Z2T5	6	262	tRNA (guanine(27)-N(2))-dimethyltransferase (EC 2.1.1.-) (tR	w
-TRMT10A	fly	FBgn0031189	Trmt10A	Q9VR56	0	9	tRNA methyltransferase 10 homolog A (EC 2.1.1.221) (RNA (gua	
+TRMT10A	fly	FBgn0031189	Trmt10A	Q9VR56	2	13	tRNA methyltransferase 10 homolog A (EC 2.1.1.221) (RNA (gua	
 TRMT10A	human	Q8TBZ6	TRMT10A	Q8TBZ6	4	56	tRNA methyltransferase 10 homolog A (EC 2.1.1.221) (RNA (gua	
 TRMT10A	mus-musculus	Q8C1Z8	Trmt10a	Q8C1Z8	0	4	tRNA methyltransferase 10 homolog A	
 TRMT10A	rattus-norvegicus	Q4KLI2	Trmt10a	Q4KLI2	0	5	tRNA methyltransferase 10 homolog A	
@@ -263,7 +263,7 @@ TRMT11	rattus-norvegicus	Q7TNK6	Trmt11	Q7TNK6	1	7	tRNA (guanine(10)-N(2))-methyl
 TRMT11	worm	Q9N4H1	CELE_Y71F9AL.1	Q9N4H1	1	9	tRNA (guanine(10)-N(2))-methyltransferase TRMT11	w
 TRMT11	zebrafish	A0A8M1PGS2	trmt11	A0A8M1PGS2	1	9	tRNA (guanine(10)-N(2))-methyltransferase TRMT11	w
 TRMT11	zebrafish	A0A8M1PGS2	trmt11	A0A8M1PGS2	1	9	tRNA (guanine(10)-N(2))-methyltransferase TRMT11	w
-TRMT112	fly	FBgn0037061	Trmt112	Q9VP65	6	76	Multifunctional methyltransferase subunit TRM112-like protei	
+TRMT112	fly	FBgn0037061	Trmt112	Q9VP65	9	84	Multifunctional methyltransferase subunit TRM112-like protei	
 TRMT112	human	Q9UI30	TRMT112	Q9UI30	16	192	Multifunctional methyltransferase subunit TRM112-like protei	
 TRMT112	mus-musculus	Q9DCG9	Trmt112	Q9DCG9	9	92	Multifunctional methyltransferase subunit TRM112-like protei	
 TRMT112	rattus-norvegicus	B2RYS9	Trmt112	B2RYS9	8	140	Multifunctional methyltransferase subunit TRM112-like protei	
@@ -277,7 +277,7 @@ TRMT1L	human	Q7Z2T5	TRMT1L	Q7Z2T5	6	262	tRNA (guanine(27)-N(2))-dimethyltransfer
 TRMT1L	mus-musculus	A2RSY6	Trmt1l	A2RSY6	0	16	tRNA (guanine(27)-N(2))-dimethyltransferase	
 TRMT1L	rattus-norvegicus	Q496Z9	Trmt1l	Q496Z9	0	11	tRNA (guanine(27)-N(2))-dimethyltransferase	
 TRMT1L	zebrafish	A0A8N7TEL4	trmt1l	A0A8N7TEL4	1	12	tRNA (guanine(27)-N(2))-dimethyltransferase	
-TRMT2A	fly	FBgn0036838	Trmt2a	Q9VVV7	3	19	tRNA (uracil(54)-C(5))-methyltransferase (EC 2.1.1.35)	
+TRMT2A	fly	FBgn0036838	Trmt2a	Q9VVV7	4	22	tRNA (uracil(54)-C(5))-methyltransferase (EC 2.1.1.35)	
 TRMT2A	human	Q8IZ69	TRMT2A	Q8IZ69	10	211	tRNA (uracil-5-)-methyltransferase homolog A (EC 2.1.1.35) (	
 TRMT2B	human	Q96GJ1	TRMT2B	Q96GJ1	1	68	tRNA (uracil-5-)-methyltransferase homolog B (EC 2.1.1.35) (	
 TRMT44	human	Q8IYL2	TRMT44	Q8IYL2	5	71	Probable tRNA (uracil-O(2)-)-methyltransferase (EC 2.1.1.211	
@@ -289,12 +289,12 @@ TRMT5	rattus-norvegicus	A0A0G2JU45	Trmt5	A0A0G2JU45	1	5	tRNA (guanine(37)-N1)-me
 TRMT5	zebrafish	B8A5G9	trmt5	B8A5G9	0	3	tRNA (guanine(37)-N(1))-methyltransferase	
 TRMT5.L	xenopus-laevis	A0A8J0T9C6	trmt5.L	A0A8J0T9C6	1	1	tRNA (guanine(37)-N1)-methyltransferase	
 TRMT6	dictyostelium-discoideum	Q54UB1	trmt6	Q54UB1	1	5	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
-TRMT6	fly	FBgn0031832	Trmt6	Q8MS69	3	22	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
+TRMT6	fly	FBgn0031832	Trmt6	Q8MS69	12	34	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
 TRMT6	human	Q9UJA5	TRMT6	Q9UJA5	14	131	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
 TRMT6	mus-musculus	Q8CE96	Trmt6	Q8CE96	2	16	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
 TRMT6	rattus-norvegicus	D3ZVK3	Trmt6	D3ZVK3	2	8	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
 TRMT6	zebrafish	A0A8M1N890	trmt6	A0A8M1N890	3	9	tRNA (adenine(58)-N(1))-methyltransferase non-catalytic subu	
-TRMT61	fly	FBgn0290420	Trmt61	Q9VBH7	4	17	tRNA methyltransferase 61	
+TRMT61	fly	FBgn0290420	Trmt61	Q9VBH7	8	26	tRNA methyltransferase 61	
 TRMT61A	dictyostelium-discoideum	Q86JJ0	trmt61a	Q86JJ0	2	4	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	
 TRMT61A	human	Q96FX7	TRMT61A	Q96FX7	13	125	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	
 TRMT61A	mus-musculus	Q80XC2	Trmt61a	Q80XC2	2	14	tRNA (adenine(58)-N(1))-methyltransferase catalytic subunit 	

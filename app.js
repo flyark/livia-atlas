@@ -139,7 +139,7 @@ const REF = {
   leiden: ['Traag et al. 2019', '10.1038/s41598-019-41695-z'],
   schmid2025: ['Schmid et al. 2025', '10.1101/2025.11.10.687652'], kim2025: ['Kim et al. 2025', '10.1101/2025.10.10.681672'],
   han2026: ['Han et al. 2026', '10.64898/2026.03.27.714458'], hannarain2026: ['Han, Narain et al. 2026', '10.64898/2026.09.29.755321'],
-  mitomatch: ['Swaminathan et al. 2026', '10.1038/s41467-026-77112-z'],
+  mitomatch: ['Swaminathan et al. 2026', '10.1038/s41467-026-77112-z'], dmelppi: ['Peng & Zhao 2026', '10.1371/journal.pcbi.1013899'],
 };
 const cite = (k) => `<a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">${REF[k][0]}</a>`;
 // A screen's reference, the one text About and the pair page's Prediction sources both use: the named papers, Han et al. for
@@ -150,10 +150,11 @@ const SCREEN_SRC = { 'human-predictomes': ['schmid2025', 'Schmid, E. W. et al. (
   flypredictome: ['flypredictome', 'Kim, A.-R. et al. (2026). FlyPredictome: a structural atlas of predicted protein-protein interactions in <i>Drosophila</i>. <i>bioRxiv</i>.'],
   'viral-dimers-afdb': ['hannarain2026', 'Han, Y., Narain, R. et al. (2026). Systematic exploration of predicted quaternary structures within pandemic-relevant viral proteomes. <i>bioRxiv</i>. Models: AlphaFold Database viral protein complexes, EMBL-EBI / Google DeepMind / NVIDIA and collaborators, CC BY 4.0.'] };
 const AFDB_SRC = ['han2026', 'Han, Y. et al. (2026). AlphaFold Database expands to proteome-scale quaternary structures. <i>bioRxiv</i>. Models: AlphaFold Database complexes release, EMBL-EBI / Google DeepMind / NVIDIA and collaborators, CC BY 4.0.'];
+const DMEL_SRC = ['dmelppi', 'Peng, J. &amp; Zhao, L. (2026). A predicted structural interactome reveals binding interference from intrinsically disordered regions. <i>PLOS Comput. Biol.</i> 22, e1013899. Data: DmelPPI, figshare (10.6084/m9.figshare.30582146), CC BY 4.0.'];
 const MITO_SRC = ['mitomatch', 'Swaminathan, A. B. et al. (2026). The predicted interactome of the human mitochondrial proteome. <i>Nat. Commun.</i> 17, 10162. Data: MitoMatch, Zenodo (10.5281/zenodo.21232148), CC BY 4.0.'];
 const LIVIA_SRC = ['livia', 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.'];
 function screenCite(d) {
-  const [k, text] = SCREEN_SRC[d.id] || (/^afdb-het-/.test(d.id) ? AFDB_SRC : /^mitomatch-/.test(d.id) ? MITO_SRC : /kinase-kinase$/.test(d.id) ? LIVIA_SRC : [null, esc(d.source || d.title || d.id)]);
+  const [k, text] = SCREEN_SRC[d.id] || (/^afdb-het-/.test(d.id) ? AFDB_SRC : /^mitomatch-/.test(d.id) ? MITO_SRC : d.id === 'dmelppi' ? DMEL_SRC : /kinase-kinase$/.test(d.id) ? LIVIA_SRC : [null, esc(d.source || d.title || d.id)]);
   return { k, text, url: k ? `https://doi.org/${REF[k][1]}` : d.paper || '', short: k ? ({ livia: 'Kim & Perrimon 2026', flypredictome: 'Kim et al. 2026' }[k] || REF[k][0]) : (d.source || d.title || d.id).replace(/ · .*$/, '') };   // short: author and year, as the screens' chips cite them
 }
 const dataLine = (d) => { const sc = screenCite(d);   // one line per screen: the license of its data, and whom to cite
@@ -1731,6 +1732,7 @@ async function viewAbout() {
     ['AlphaFold Database heterodimers (EMBL-EBI / Google DeepMind / NVIDIA; Han et al. 2026)', 'one heterodimer screen per species, rescored with lis.py', licOf(/^afdb-het-/), doi('han2026'), 'Han et al. 2026'],
     ['AlphaFold Database viral protein complexes (Han, Narain et al. 2026)', 'the virus pages', licOf(/^viral-dimers-afdb$/), ((reg.datasets || []).find((d) => d.id === 'viral-dimers-afdb') || {}).paper || 'https://alphafold.ebi.ac.uk', 'Han, Narain et al. 2026'],
     ['MitoMatch (Swaminathan et al. 2026)', 'the human mitochondrial proteome screen and its orthologs in eleven species, rescored with lis.py', licOf(/^mitomatch-/), doi('mitomatch'), 'Swaminathan et al. 2026'],
+    ['DmelPPI (Peng &amp; Zhao 2026)', 'the fly structural interactome screen, rescored with lis.py', licOf(/^dmelppi$/), doi('dmelppi'), 'Peng & Zhao 2026'],
     ['AlphaFold Database homodimers (Han et al. 2026)', 'the Homodimer card and the homodimer lists', (reg.homodimers && reg.homodimers.license) || 'CC BY 4.0', doi('han2026'), 'Han et al. 2026'],
     ['BioGRID 5.0.261', 'reported physical and genetic interactions', 'MIT', 'https://thebiogrid.org', 'thebiogrid.org'],
     ['Alliance of Genome Resources 9.0', 'orthologs (stringent set) and paralogs', 'CC BY 4.0', 'https://www.alliancegenome.org', 'alliancegenome.org'],

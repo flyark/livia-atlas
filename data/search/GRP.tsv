@@ -1,4 +1,4 @@
-GRP	fly	FBgn0261278	grp	O61661	255	1309	Serine/threonine-protein kinase grp (EC 2.7.11.1) (Chk1 homo	
+GRP	fly	FBgn0261278	grp	O61661	259	1328	Serine/threonine-protein kinase grp (EC 2.7.11.1) (Chk1 homo	
 GRP	glycine-max	K7LSZ0	GRP	K7LSZ0	0	21	Glycine-rich RNA-binding protein	
 GRP	human	P07492	GRP	P07492	60	427	Gastrin-releasing peptide (GRP) [Cleaved into: Neuromedin-C 	
 GRP	human	Q3ZCW2	LGALSL	Q3ZCW2	21	173		
@@ -11,7 +11,7 @@ GRP-1	worm	P34512	grp-1	P34512	8	17	GTP exchange factor for ARFs 1
 GRP-10	human	P07492	GRP	P07492	60	427	Gastrin-releasing peptide (GRP) [Cleaved into: Neuromedin-C 	w
 GRP-170	human	Q9Y4L1	HYOU1	Q9Y4L1	26	299	Hypoxia up-regulated protein 1 (150 kDa oxygen-regulated pro	w
 GRP-75	human	P38646	HSPA9	P38646	90	799	Stress-70 protein, mitochondrial (mt-HSP70) (EC 3.6.4.10) (7	w
-GRP-78	fly	FBgn0001218	Hsc70-3	P29844	76	522	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
+GRP-78	fly	FBgn0001218	Hsc70-3	P29844	90	537	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
 GRP-78	human	P11021	HSPA5	P11021	121	1350	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	w
 GRP-94	human	P14625	HSP90B1	P14625	41	644	Endoplasmin (EC 3.6.4.-) (94 kDa glucose-regulated protein) 	w
 GRP-PREFERRING	human	P30550	GRPR	P30550	12	189	Gastrin-releasing peptide receptor (GRP-R) (GRP-preferring b	w
@@ -25,7 +25,7 @@ GRP1-BINDING	human	Q9Y2L6	FRMD4B	Q9Y2L6	32	186	FERM domain-containing protein 4B
 GRP14	arabidopsis-thaliana	Q1PDZ0	GRP14	Q1PDZ0	0	5	Glycine-rich protein	
 GRP16	arabidopsis-thaliana	Q9LY08	GRP16	Q9LY08	0	2	Tapetal oleosin GRP-16	
 GRP17	arabidopsis-thaliana	Q9LY09	GRP17	Q9LY09	0	4	Tapetal oleosin GRP-17	
-GRP170	fly	FBgn0023529	Grp170	O46067	45	389	Hypoxia up-regulated protein 1	
+GRP170	fly	FBgn0023529	Grp170	O46067	46	391	Hypoxia up-regulated protein 1	
 GRP170	human	Q9Y4L1	HYOU1	Q9Y4L1	26	299		
 GRP18	arabidopsis-thaliana	Q9LY10	GRP18	Q9LY10	0	7	Glycine-rich protein	
 GRP18-27	human	P07492	GRP	P07492	60	427	Gastrin-releasing peptide (GRP) [Cleaved into: Neuromedin-C 	w
@@ -57,7 +57,7 @@ GRPA	dictyostelium-discoideum	Q54C46	grpA	Q54C46	1	16	Golgi reassembly stacking 
 GRPE	campylobacter-jejuni-subsp-jejuni-serotype-o-2	O69297	grpE	O69297	1	80	Protein GrpE	
 GRPE	dictyostelium-discoideum	Q54QF9	grpE	Q54QF9	2	34	GrpE protein homolog, mitochondrial	
 GRPE	escherichia-coli-83333	P09372	grpE	P09372	1	26	Protein GrpE	
-GRPE	fly	FBgn0014877	Roe1	P48604	5	113	GrpE protein homolog, mitochondrial (dRoe1)	w
+GRPE	fly	FBgn0014877	Roe1	P48604	6	115	GrpE protein homolog, mitochondrial (dRoe1)	w
 GRPE	haemophilus-influenzae	P43732	grpE	P43732	1	11	Protein GrpE	
 GRPE	helicobacter-pylori	P55970	grpE	P55970	1	12	Protein GrpE	
 GRPE	human	Q8TAA5	GRPEL2	Q8TAA5	8	104	GrpE protein homolog 2, mitochondrial (Mt-GrpE#2) (Nucleotid	w
@@ -91,7 +91,7 @@ GRPEL2	rattus-norvegicus	A0A8I5ZVY3	Grpel2	A0A8I5ZVY3	4	45	GrpE protein homolog
 GRPEL2	zebrafish	E7F0C3	grpel2	E7F0C3	4	84	GrpE protein homolog 2, mitochondrial	
 GRPEL2.L	xenopus-laevis	Q5U571	grpel2.L	Q5U571	1	1	GrpE like 2, mitochondrial L homeolog	
 GRPE_CAEEL	worm	Q18421	C34C12.8	Q18421	4	67		
-GRPE_DROME	fly	FBgn0014877	Roe1	P48604	5	113		
+GRPE_DROME	fly	FBgn0014877	Roe1	P48604	6	115		
 GRPE_YEAST	yeast	P38523	MGE1	P38523	6	91		
 GRPL2_HUMAN	human	Q4G1C9	GLIPR1L2	Q4G1C9	2	46		
 GRPP	human	P01275	GCG	P01275	24	409	Pro-glucagon [Cleaved into: Glicentin; Glicentin-related pol	w
@@ -100,5 +100,5 @@ GRPR	mus-musculus	P21729	Grpr	P21729	2	16	Gastrin-releasing peptide receptor
 GRPR	rattus-norvegicus	P52500	Grpr	P52500	2	20	Gastrin-releasing peptide receptor	
 GRPR	zebrafish	E7F6G4	grpr	E7F6G4	1	9	Gastrin-releasing peptide receptor	
 GRPR_HUMAN	human	P30550	GRPR	P30550	12	189		
-GRP_313	fly	FBgn0261278	grp	O61661	255	1309		
+GRP_313	fly	FBgn0261278	grp	O61661	259	1328		
 GRP_HUMAN	human	P07492	GRP	P07492	60	427		

@@ -24,9 +24,9 @@ HMG-BOX	yeast	Q12219	CIM1	Q12219	0	2	Mitochondrial HMG-box protein CIM1	w
 HMG-BOX	zebrafish	A0A0R4J7S6	wdhd1	A0A0R4J7S6	6	53	WD repeat and HMG-box DNA-binding protein 1	w
 HMG-BOX-CONTAINING	fly	FBgn0038978	tHMG1	Q9VCZ5	36	385	Testis-enriched HMG-box-containing protein 1	w
 HMG-BOX-CONTAINING	fly	FBgn0038979	tHMG2	E1JIT5	26	394	Testis-enriched HMG-box-containing protein 2, isoform B	w
-HMG-COA	fly	FBgn0010611	Hmgs	Q7K4Q9	3	141	Hydroxymethylglutaryl-CoA synthase (HMG-CoA synthase) (EC 2.	w
-HMG-COA	fly	FBgn0028475	Hrd3	Q9V415	6	54	HMG-coA reductase degradation 3, isoform A (HMG-coA reductas	w
-HMG-COA	fly	FBgn0263782	Hmgcr	P14773	1	26	3-hydroxy-3-methylglutaryl-coenzyme A reductase (HMG-CoA red	w
+HMG-COA	fly	FBgn0010611	Hmgs	Q7K4Q9	4	142	Hydroxymethylglutaryl-CoA synthase (HMG-CoA synthase) (EC 2.	w
+HMG-COA	fly	FBgn0028475	Hrd3	Q9V415	8	56	HMG-coA reductase degradation 3, isoform A (HMG-coA reductas	w
+HMG-COA	fly	FBgn0263782	Hmgcr	P14773	1	31	3-hydroxy-3-methylglutaryl-coenzyme A reductase (HMG-CoA red	w
 HMG-COA	human	P04035	HMGCR	P04035	10	225	3-hydroxy-3-methylglutaryl-coenzyme A reductase (HMG-CoA red	w
 HMG-COA	human	P35914	HMGCL	P35914	7	131	Hydroxymethylglutaryl-CoA lyase, mitochondrial (HL) (HMG-CoA	w
 HMG-COA	human	P54868	HMGCS2	P54868	3	79	Hydroxymethylglutaryl-CoA synthase, mitochondrial (HMG-CoA s	w
@@ -130,7 +130,7 @@ HMGBCG	human	Q9UGU5	HMGXB4	Q9UGU5	30	157
 HMGC2_HUMAN	human	Q8TB92	HMGCLL1	Q8TB92	2	58		
 HMGCL	arabidopsis-thaliana	O81027	HMGCL	O81027	1	32	Hydroxymethylglutaryl-CoA lyase, mitochondrial	
 HMGCL	cladophialophora-carrionii	A0A1C1CXZ8	HMGCL	A0A1C1CXZ8	0	5	hydroxymethylglutaryl-CoA lyase	
-HMGCL	fly	FBgn0031877	Hmgcl	Q9VM58	1	32	hydroxymethylglutaryl-CoA lyase (EC 4.1.3.4)	
+HMGCL	fly	FBgn0031877	Hmgcl	Q9VM58	2	41	hydroxymethylglutaryl-CoA lyase (EC 4.1.3.4)	
 HMGCL	human	P35914	HMGCL	P35914	7	131	Hydroxymethylglutaryl-CoA lyase, mitochondrial (HL) (HMG-CoA	
 HMGCL	mus-musculus	P38060	Hmgcl	P38060	3	18	Hydroxymethylglutaryl-CoA lyase, mitochondrial	
 HMGCL	pan-troglodytes	H2PYB3	HMGCL	H2PYB3	1	1	Hydroxymethylglutaryl-CoA lyase, mitochondrial	
@@ -141,7 +141,7 @@ HMGCLL1	mus-musculus	Q8JZS7	Hmgcll1	Q8JZS7	1	9	3-hydroxy-3-methylglutaryl-CoA ly
 HMGCLL1	rattus-norvegicus	D4A5C3	Hmgcll1	D4A5C3	1	8	3-hydroxy-3-methylglutaryl-CoA lyase, cytoplasmic	
 HMGCLL1	zebrafish	A8WG57	hmgcll1	A8WG57	0	16	3-hydroxy-3-methylglutaryl-CoA lyase, cytoplasmic	
 HMGCL_HUMAN	human	P35914	HMGCL	P35914	7	131		
-HMGCR	fly	FBgn0263782	Hmgcr	P14773	1	26	3-hydroxy-3-methylglutaryl-coenzyme A reductase (HMG-CoA red	
+HMGCR	fly	FBgn0263782	Hmgcr	P14773	1	31	3-hydroxy-3-methylglutaryl-coenzyme A reductase (HMG-CoA red	
 HMGCR	human	P04035	HMGCR	P04035	10	225	3-hydroxy-3-methylglutaryl-coenzyme A reductase (HMG-CoA red	
 HMGCR	mus-musculus	Q01237	Hmgcr	Q01237	2	17	3-hydroxy-3-methylglutaryl-coenzyme A reductase	
 HMGCR	rattus-norvegicus	P51639	Hmgcr	P51639	3	13	3-hydroxy-3-methylglutaryl-coenzyme A reductase	
@@ -197,7 +197,7 @@ HMGR	leishmania-infantum	A4I602	HMGR	A4I602	0	3	3-hydroxy-3-methylglutaryl coenz
 HMGR	zea-mays	O24594	HMGR	O24594	0	3	3-hydroxy-3-methylglutaryl-coenzyme A reductase	
 HMGR-1	worm	Q19207	hmgr-1	Q19207	2	6	3-hydroxy-3-methylglutaryl coenzyme A reductase	
 HMGS	arabidopsis-thaliana	P54873	HMGS	P54873	0	51	Hydroxymethylglutaryl-CoA synthase	
-HMGS	fly	FBgn0010611	Hmgs	Q7K4Q9	3	141	Hydroxymethylglutaryl-CoA synthase (HMG-CoA synthase) (EC 2.	
+HMGS	fly	FBgn0010611	Hmgs	Q7K4Q9	4	142	Hydroxymethylglutaryl-CoA synthase (HMG-CoA synthase) (EC 2.	
 HMGS-1	worm	P54871	hmgs-1	P54871	0	23	Hydroxymethylglutaryl-CoA synthase	
 HMGX1	human	Q9NP66	HMG20A	Q9NP66	101	601		
 HMGX2	human	Q9P0W2	HMG20B	Q9P0W2	72	514		

@@ -17,7 +17,7 @@ COX-7C	worm	O18687	cox-7c	O18687	1	67	Cytochrome c oxidase polypeptide VIIc
 COX1	arabidopsis-thaliana	P60620	COX1	P60620	4	4	Cytochrome c oxidase subunit 1	
 COX1	candida-albicans-237561	P0C8K9	COX1	P0C8K9	5	61	Cytochrome c oxidase subunit 1	
 COX1	cladophialophora-carrionii	A0A1C1C634	cox1	A0A1C1C634	8	61	Cytochrome c oxidase subunit 1	
-COX1	fly	FBgn0013674	mt:CoI	P00399	19	97		
+COX1	fly	FBgn0013674	mt:CoI	P00399	35	102		
 COX1	glycine-max	P07506	COX1	P07506	15	290	Cytochrome c oxidase subunit 1	
 COX1	human	P23219	PTGS1	P23219	7	267		
 COX1	oryza-sativa-subsp-japonica	P14578	COX1	P14578	10	163	Cytochrome c oxidase subunit 1	
@@ -32,7 +32,7 @@ COX1/2	dictyostelium-discoideum	O21042	cox1/2	O21042	2	45	Cytochrome c oxidase s
 COX10	arabidopsis-thaliana	O64886	COX10	O64886	0	7	Protoheme IX farnesyltransferase, mitochondrial	
 COX10	cladophialophora-carrionii	A0A1C1CEG2	cox10	A0A1C1CEG2	1	6	Protoheme IX farnesyltransferase, mitochondrial	
 COX10	dictyostelium-discoideum	Q54JB3	cox10	Q54JB3	1	9	Probable protoheme IX farnesyltransferase, mitochondrial	
-COX10	fly	FBgn0032222	Cox10	Q9VKZ1	2	20	Protoheme IX farnesyltransferase, mitochondrial (Heme O synt	
+COX10	fly	FBgn0032222	Cox10	Q9VKZ1	5	29	Protoheme IX farnesyltransferase, mitochondrial (Heme O synt	
 COX10	human	Q12887	COX10	Q12887	9	129	Protoheme IX farnesyltransferase, mitochondrial (EC 2.5.1.14	
 COX10	mus-musculus	Q8CFY5	Cox10	Q8CFY5	8	45	Protoheme IX farnesyltransferase, mitochondrial	
 COX10	pan-troglodytes	H2QCB0	COX10	H2QCB0	3	3	Protoheme IX farnesyltransferase, mitochondrial	
@@ -46,8 +46,8 @@ COX10_HUMAN	human	Q12887	COX10	Q12887	9	129
 COX11	arabidopsis-thaliana	Q8GWR0	COX11	Q8GWR0	3	25	Cytochrome c oxidase assembly protein COX11, mitochondrial	
 COX11	candida-albicans-237561	Q59PA0	COX11	Q59PA0	0	9	Cox11p	
 COX11	dictyostelium-discoideum	Q54HM6	cox11	Q54HM6	3	15	Cytochrome c oxidase assembly protein COX11, mitochondrial	
-COX11	fly	FBgn0051648	Cox11	Q9VMQ6	4	19	Cytochrome c oxidase copper chaperone COX11 (RE57459p)	w
-COX11	fly	FBgn0051648	Cox11	Q9VMQ6	4	19	Cytochrome c oxidase copper chaperone COX11 (RE57459p)	w
+COX11	fly	FBgn0051648	Cox11	Q9VMQ6	5	21	Cytochrome c oxidase copper chaperone COX11 (RE57459p)	w
+COX11	fly	FBgn0051648	Cox11	Q9VMQ6	5	21	Cytochrome c oxidase copper chaperone COX11 (RE57459p)	w
 COX11	human	Q9Y6N1	COX11	Q9Y6N1	7	75	Cytochrome c oxidase assembly protein COX11, mitochondrial	
 COX11	mus-musculus	Q6P8I6	Cox11	Q6P8I6	4	11	Cytochrome c oxidase assembly protein COX11, mitochondrial	
 COX11	pan-troglodytes	K7A1T8	COX11	K7A1T8	4	4	COX11 cytochrome c oxidase assembly homolog	
@@ -106,7 +106,7 @@ COX16_HUMAN	human	Q9P0S2	COX16	Q9P0S2	21	149
 COX17	candida-albicans-237561	A0A1D8PGA3	COX17	A0A1D8PGA3	1	4	Copper metallochaperone	
 COX17	cladophialophora-carrionii	A0A1C1CAZ8	COX17	A0A1C1CAZ8	1	7	Cytochrome c oxidase copper chaperone	
 COX17	dictyostelium-discoideum	Q54ID0	cox17	Q54ID0	2	12	Cytochrome c oxidase copper chaperone	
-COX17	fly	FBgn0030610	Cox17	Q9VXY5	2	8	LP17418p	
+COX17	fly	FBgn0030610	Cox17	Q9VXY5	5	12	LP17418p	
 COX17	human	Q14061	COX17	Q14061	16	117	Cytochrome c oxidase copper chaperone	
 COX17	mus-musculus	P56394	Cox17	P56394	6	15	Cytochrome c oxidase copper chaperone	
 COX17	rattus-norvegicus	A0ABK0L402	Cox17	A0ABK0L402	1	7	Cytochrome c oxidase copper chaperone COX17	
@@ -146,14 +146,14 @@ COX19_HUMAN	human	Q49B96	COX19	Q49B96	19	115
 COX19_YEAST	yeast	Q3E731	COX19	Q3E731	2	4		
 COX1_CAEEL	worm	P24893	ctc-1	P24893	12	80		
 COX1_DANRE	zebrafish	Q9MIY8	mt-co1	Q9MIY8	21	116		
-COX1_DROME	fly	FBgn0013674	mt:CoI	P00399	19	97		
+COX1_DROME	fly	FBgn0013674	mt:CoI	P00399	35	102		
 COX1_HUMAN	human	P00395	MT-CO1	P00395	28	231		
 COX1_YEAST	yeast	P00401	COX1	P00401	9	67		
 COX2	arabidopsis-thaliana	A0A2P2CLF0	cox2	A0A2P2CLF0	5	5	Cytochrome c oxidase subunit 2	
 COX2	arabidopsis-thaliana	P93285	COX2	P93285	11	119	Cytochrome c oxidase subunit 2	
 COX2	candida-albicans-237561	Q9B8D8	COX2	Q9B8D8	7	57	Cytochrome c oxidase subunit 2	
 COX2	cladophialophora-carrionii	A0A1C1C617	COX2	A0A1C1C617	8	76	Cytochrome c oxidase subunit 2	
-COX2	fly	FBgn0013675	mt:CoII	P00408	27	198		
+COX2	fly	FBgn0013675	mt:CoII	P00408	38	202		
 COX2	glycine-max	I1L0V0	COX2	I1L0V0	9	262	Cytochrome c oxidase subunit 2	
 COX2	glycine-max	P05491	COX2	P05491	12	262	Cytochrome c oxidase subunit 2	
 COX2	glycine-max	Q02226	COX2	Q02226	11	261	Cytochrome c oxidase subunit 2, mitochondrial	
@@ -181,14 +181,14 @@ COX24	schizosaccharomyces-pombe	Q9P7H5	cox24	Q9P7H5	0	2	Small ribosomal subunit 
 COX26	yeast	Q2V2P9	COX26	Q2V2P9	3	35	Cytochrome c oxidase subunit 26, mitochondrial	
 COX2_CAEEL	worm	P24894	ctc-2	P24894	10	86		
 COX2_DANRE	zebrafish	Q9MIY7	mt-co2	Q9MIY7	17	136		
-COX2_DROME	fly	FBgn0013675	mt:CoII	P00408	27	198		
+COX2_DROME	fly	FBgn0013675	mt:CoII	P00408	38	202		
 COX2_HUMAN	human	P00403	MT-CO2	P00403	49	398		
 COX2_YEAST	yeast	P00410	COX2	P00410	14	88		
 COX3	arabidopsis-thaliana	A0A2P2CLH8	cox3	A0A2P2CLH8	6	6	Cytochrome c oxidase subunit 3	
 COX3	arabidopsis-thaliana	P92514	COX3	P92514	4	113	Cytochrome c oxidase subunit 3	
 COX3	cladophialophora-carrionii	A0A1C1C654	COX3	A0A1C1C654	5	76	Cytochrome c oxidase subunit 3	
 COX3	dictyostelium-discoideum	O21049	cox3	O21049	6	67	Cytochrome c oxidase subunit 3	
-COX3	fly	FBgn0013676	mt:CoIII	P00417	16	93		
+COX3	fly	FBgn0013676	mt:CoIII	P00417	22	93		
 COX3	glycine-max	A0A0R0H600	cox3	A0A0R0H600	8	266	Cytochrome c oxidase subunit 3	
 COX3	glycine-max	P14853	COX3	P14853	7	266	Cytochrome c oxidase subunit 3	
 COX3	oryza-sativa-subsp-japonica	Q8HCR6	cox3	Q8HCR6	10	159	Cytochrome c oxidase subunit 3	
@@ -199,7 +199,7 @@ COX3	zea-mays	Q6R9A2	cox3	Q6R9A2	7	119	Cytochrome c oxidase subunit 3
 COX3A	candida-albicans-237561	Q9B1P9	COX3A	Q9B1P9	5	57	Cytochrome c oxidase subunit 3	
 COX3_CAEEL	worm	P24891	ctc-3	P24891	8	73		
 COX3_DANRE	zebrafish	Q9MIY4	mt-co3	Q9MIY4	18	114		
-COX3_DROME	fly	FBgn0013676	mt:CoIII	P00417	16	93		
+COX3_DROME	fly	FBgn0013676	mt:CoIII	P00417	22	93		
 COX3_HUMAN	human	P00414	MT-CO3	P00414	30	181		
 COX3_YEAST	yeast	P00420	COX3	P00420	8	66		
 COX4	candida-albicans-237561	Q5ALV5	COX4	Q5ALV5	3	58	Cytochrome c oxidase subunit 4, mitochondrial	
@@ -224,14 +224,14 @@ COX4I2	mus-musculus	Q91W29	Cox4i2	Q91W29	10	104	Cytochrome c oxidase subunit 4 i
 COX4I2	pan-troglodytes	H2QK52	COX4I2	H2QK52	3	3	Cytochrome c oxidase subunit 4	
 COX4I2	rattus-norvegicus	Q91Y94	Cox4i2	Q91Y94	12	136	Cytochrome c oxidase subunit 4 isoform 2, mitochondrial	
 COX4I2.L	xenopus-laevis	Q6PH92	cox4i2.L	Q6PH92	3	3	Cytochrome c oxidase subunit 4	
-COX4L	fly	FBgn0033020	COX4L	Q8T4H8	7	97	Cytochrome c oxidase subunit 4	
+COX4L	fly	FBgn0033020	COX4L	Q8T4H8	13	103	Cytochrome c oxidase subunit 4	
 COX4L2	human	Q96KJ9	COX4I2	Q96KJ9	14	140		
 COX4NB	human	O43402	EMC8	O43402	24	220		
 COX4_YEAST	yeast	P04037	COX4	P04037	5	148		
 COX5	candida-albicans-237561	Q5APK5	COX5	Q5APK5	5	55	Cytochrome c oxidase subunit Va	
 COX5	cladophialophora-carrionii	A0A1C1CAV5	cox5	A0A1C1CAV5	5	73	Cytochrome c oxidase polypeptide V	
 COX5	schizosaccharomyces-pombe	O74988	cox5	O74988	3	39	Cytochrome c oxidase polypeptide 5, mitochondrial	
-COX5A	fly	FBgn0019624	COX5A	Q94514	11	181	Cytochrome c oxidase subunit 5A, mitochondrial (Cytochrome c	
+COX5A	fly	FBgn0019624	COX5A	Q94514	34	195	Cytochrome c oxidase subunit 5A, mitochondrial (Cytochrome c	
 COX5A	human	P20674	COX5A	P20674	36	365	Cytochrome c oxidase subunit 5A, mitochondrial (Cytochrome c	
 COX5A	mus-musculus	P12787	Cox5a	P12787	16	164	Cytochrome c oxidase subunit 5A, mitochondrial	
 COX5A	pan-troglodytes	B0VYX1	COX5A	B0VYX1	8	8	Cytochrome c oxidase subunit 5A, mitochondrial	
@@ -242,9 +242,9 @@ COX5AA	zebrafish	Q4VBU7	cox5aa	Q4VBU7	9	109	Cytochrome c oxidase subunit 5A, mit
 COX5AB	zebrafish	A0A0R4IVC8	cox5ab	A0A0R4IVC8	7	109	Cytochrome c oxidase subunit 5A, mitochondrial	
 COX5AB	zebrafish	A0A8M1P7E4	cox5ab	A0A8M1P7E4	6	7	Cytochrome c oxidase subunit 5A, mitochondrial	
 COX5A_CAEEL	worm	P55954	cox-5A	P55954	7	103		
-COX5A_DROME	fly	FBgn0019624	COX5A	Q94514	11	181		
+COX5A_DROME	fly	FBgn0019624	COX5A	Q94514	34	195		
 COX5A_HUMAN	human	P20674	COX5A	P20674	36	365		
-COX5B	fly	FBgn0031830	COX5B	Q9VMB9	13	126	Cytochrome c oxidase subunit 5B, isoform A (Cytochrome c oxi	
+COX5B	fly	FBgn0031830	COX5B	Q9VMB9	36	141	Cytochrome c oxidase subunit 5B, isoform A (Cytochrome c oxi	
 COX5B	human	P10606	COX5B	P10606	15	299	Cytochrome c oxidase subunit 5B, mitochondrial (Cytochrome c	
 COX5B	mus-musculus	P19536	Cox5b	P19536	8	111	Cytochrome c oxidase subunit 5B, mitochondrial	
 COX5B	pan-troglodytes	A0A2I3SSM6	COX5B	A0A2I3SSM6	4	4	Cytochrome c oxidase subunit 5B, mitochondrial	
@@ -258,7 +258,7 @@ COX5B.1.L	xenopus-laevis	A0A1L8H1N7	cox5b.1.L	A0A1L8H1N7	3	3	cytochrome c oxidas
 COX5B1	zebrafish	A0A8M1PZK0	cox5b1	A0A8M1PZK0	4	4	cytochrome c oxidase subunit 5B, mitochondrial-like	
 COX5B2	zebrafish	Q0P3U4	cox5b2	Q0P3U4	6	110	Cytochrome c oxidase subunit 5B, mitochondrial	
 COX5BB	zebrafish	A0AB13A3X0	cox5bb	A0AB13A3X0	6	110	Cytochrome c oxidase subunit 5B, mitochondrial	
-COX5BL	fly	FBgn0031831	COX5BL	Q9VMB8	5	92	Cytochrome c oxidase subunit 5B-like (GEO10787p1) (IP07710p)	
+COX5BL	fly	FBgn0031831	COX5BL	Q9VMB8	16	94	Cytochrome c oxidase subunit 5B-like (GEO10787p1) (IP07710p)	
 COX5B_HUMAN	human	P10606	COX5B	P10606	15	299		
 COX5C	oryza-sativa-subsp-japonica	Q9SXX7	COX5C	Q9SXX7	3	18	Cytochrome c oxidase subunit 5C	
 COX6	candida-albicans-237561	A0A1D8PH08	COX6	A0A1D8PH08	4	55	Cytochrome c oxidase subunit 6, mitochondrial	
@@ -278,11 +278,11 @@ COX6A2	pan-troglodytes	H2QB05	COX6A2	H2QB05	2	2	Cytochrome c oxidase subunit
 COX6A2	rattus-norvegicus	P10817	Cox6a2	P10817	19	143	Cytochrome c oxidase subunit 6A2, mitochondrial	
 COX6A2	zebrafish	Q66I77	cox6a2	Q66I77	8	106	Cytochrome c oxidase subunit	
 COX6AH	human	Q02221	COX6A2	Q02221	26	152		
-COX6AL	fly	FBgn0050093	COX6AL	Q4QPY7	6	84	Cytochrome c oxidase subunit 6A-like (GEO12072p1) (IP05686p)	
+COX6AL	fly	FBgn0050093	COX6AL	Q4QPY7	9	85	Cytochrome c oxidase subunit 6A-like (GEO12072p1) (IP05686p)	
 COX6AL	human	P12074	COX6A1	P12074	21	175		
-COX6AL2	fly	FBgn0036830	COX6AL2	Q9VVU8	2	86	Cytochrome c oxidase subunit 6A-like 2, isoform B (Cytochrom	
+COX6AL2	fly	FBgn0036830	COX6AL2	Q9VVU8	7	87	Cytochrome c oxidase subunit 6A-like 2, isoform B (Cytochrom	
 COX6A_CAEEL	worm	Q20779	cox-6A	Q20779	4	101		
-COX6B	fly	FBgn0031066	COX6B	Q9VWD1	4	120	Cytochrome c oxidase subunit	
+COX6B	fly	FBgn0031066	COX6B	Q9VWD1	22	127	Cytochrome c oxidase subunit	
 COX6B	human	P14854	COX6B1	P14854	13	267		
 COX6B-1	arabidopsis-thaliana	Q9S7L9	COX6B-1	Q9S7L9	4	106	Cytochrome c oxidase subunit 6b-1	
 COX6B-1	oryza-sativa-subsp-japonica	Q9SXV0	COX6b-1	Q9SXV0	2	157	Cytochrome c oxidase subunit 6b	
@@ -313,7 +313,7 @@ COX6C_HUMAN	human	P09669	COX6C	P09669	47	331
 COX7	candida-albicans-237561	A0A1D8PJG0	COX7	A0A1D8PJG0	1	12	Cytochrome c oxidase subunit VII	
 COX7	schizosaccharomyces-pombe	G2TRP5	cox7	G2TRP5	4	20	Cytochrome c oxidase subunit 7	
 COX7	yeast	P10174	COX7	P10174	2	43	Cytochrome c oxidase subunit 7, mitochondrial	
-COX7A	fly	FBgn0040529	COX7A	A0A0B4K6C3	10	48	Cytochrome c oxidase subunit 7A, isoform B (EC 1.9.3.1)	
+COX7A	fly	FBgn0040529	COX7A	A0A0B4K6C3	17	52	Cytochrome c oxidase subunit 7A, isoform B (EC 1.9.3.1)	
 COX7A-RELATED	human	O14548	COX7A2L	O14548	23	150	Cytochrome c oxidase subunit 7A2-like, mitochondrial (Cytoch	w
 COX7A1	human	P24310	COX7A1	P24310	43	186	Cytochrome c oxidase subunit 7A1, mitochondrial (Cytochrome 	
 COX7A1	mus-musculus	P56392	Cox7a1	P56392	21	114	Cytochrome c oxidase subunit 7A1, mitochondrial	
@@ -338,13 +338,13 @@ COX7A2L.S	xenopus-laevis	Q2VPF0	cox7a2l.S	Q2VPF0	1	1	MGC132390 protein
 COX7A2P2	human	O60397	COX7A2P2	O60397	9	16	Putative cytochrome c oxidase subunit 7A3, mitochondrial (Cy	
 COX7A3	human	O60397	COX7A2P2	O60397	9	16		
 COX7AH	human	P24310	COX7A1	P24310	43	186		
-COX7AL	fly	FBgn0037579	COX7AL	Q9VHR9	2	87	Cytochrome c oxidase subunit 7A-like (EC 1.9.3.1) (IP06967p)	
+COX7AL	fly	FBgn0037579	COX7AL	Q9VHR9	6	87	Cytochrome c oxidase subunit 7A-like (EC 1.9.3.1) (IP06967p)	
 COX7AL	human	P14406	COX7A2	P14406	51	240		
-COX7AL2	fly	FBgn0085201	COX7AL2	Q6IHY5	14	84	Cytochrome c oxidase subunit 7A-like 2, isoform A (Cytochrom	
+COX7AL2	fly	FBgn0085201	COX7AL2	Q6IHY5	15	84	Cytochrome c oxidase subunit 7A-like 2, isoform A (Cytochrom	
 COX7AL2	human	O60397	COX7A2P2	O60397	9	16		
 COX7AP2	human	O60397	COX7A2P2	O60397	9	16		
 COX7AR	human	O14548	COX7A2L	O14548	23	150		
-COX7B	fly	FBgn0040793	COX7B	Q9VVG5	4	12	RH19679p	
+COX7B	fly	FBgn0040793	COX7B	Q9VVG5	19	28	RH19679p	
 COX7B	human	P24311	COX7B	P24311	68	314	Cytochrome c oxidase subunit 7B, mitochondrial (Cytochrome c	
 COX7B	mus-musculus	P56393	Cox7b	P56393	22	104	Cytochrome c oxidase subunit 7B, mitochondrial	
 COX7B	pan-troglodytes	H2QYU1	COX7B	H2QYU1	1	1	Cytochrome c oxidase subunit 7B	
@@ -354,7 +354,7 @@ COX7B2	mus-musculus	Q9D2H1	Cox7b2	Q9D2H1	24	100	Cytochrome c oxidase subunit 7B,
 COX7B2	pan-troglodytes	A0A2J8L2Y4	COX7B2	A0A2J8L2Y4	2	2	Cytochrome c oxidase subunit 7B2	
 COX7B2	rattus-norvegicus	A0A0G2K6P0	Cox7b2	A0A0G2K6P0	22	114	Cytochrome c oxidase subunit 7B, mitochondrial	
 COX7B_HUMAN	human	P24311	COX7B	P24311	68	314		
-COX7C	fly	FBgn0040773	COX7C	Q7JW00	10	93	Cytochrome c oxidase subunit 7C, isoform A (Cytochrome c oxi	
+COX7C	fly	FBgn0040773	COX7C	Q7JW00	42	102	Cytochrome c oxidase subunit 7C, isoform A (Cytochrome c oxi	
 COX7C	human	P15954	COX7C	P15954	42	226	Cytochrome c oxidase subunit 7C, mitochondrial (Cytochrome c	
 COX7C	mus-musculus	P17665	Cox7c	P17665	8	114	Cytochrome c oxidase subunit 7C, mitochondrial	
 COX7C	pan-troglodytes	P60025	COX7C	P60025	2	2	Cytochrome c oxidase subunit 7C, mitochondrial	
@@ -367,7 +367,7 @@ COX7RP	human	O14548	COX7A2L	O14548	23	150
 COX7R_HUMAN	human	O14548	COX7A2L	O14548	23	150		
 COX7S_HUMAN	human	O60397	COX7A2P2	O60397	9	16		
 COX8	candida-albicans-237561	A0A1D8PHJ3	COX8	A0A1D8PHJ3	2	52	Cytochrome c oxidase subunit 8, mitochondrial	
-COX8	fly	FBgn0263911	COX8	Q9VP19	16	40	Cytochrome c oxidase subunit 8, isoform A (Cytochrome c oxid	
+COX8	fly	FBgn0263911	COX8	Q9VP19	33	58	Cytochrome c oxidase subunit 8, isoform A (Cytochrome c oxid	
 COX8	human	P10176	COX8A	P10176	80	507		
 COX8	schizosaccharomyces-pombe	Q9P4W1	cox8	Q9P4W1	2	20	Cytochrome c oxidase polypeptide VIII, mitochondrial	
 COX8	yeast	P04039	COX8	P04039	2	58	Cytochrome c oxidase subunit 8, mitochondrial	

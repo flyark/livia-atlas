@@ -9,7 +9,7 @@ TRAF-INTERACTING	human	Q92844	TANK	Q92844	81	320	TRAF family member-associated N
 TRAF-INTERACTING	human	Q96CG3	TIFA	Q96CG3	11	117	TRAF-interacting protein with FHA domain-containing protein 	w
 TRAF-INTERACTING	human	Q9BWF2	TRAIP	Q9BWF2	39	212	E3 ubiquitin-protein ligase TRAIP (EC 2.3.2.27) (RING finger	w
 TRAF-INTERACTING	zebrafish	A0A1D5NSL5	tifa	A0A1D5NSL5	4	16	TRAF-interacting protein with FHA domain-containing protein 	w
-TRAF-LIKE	fly	FBgn0030748	Traf-like	Q8IR14	13	177	RE66324p (TNF-receptor-associated factor-like, isoform A)	
+TRAF-LIKE	fly	FBgn0030748	Traf-like	Q8IR14	16	178	RE66324p (TNF-receptor-associated factor-like, isoform A)	
 TRAF-TYPE	human	O14545	TRAFD1	O14545	16	83	TRAF-type zinc finger domain-containing protein 1 (Protein F	w
 TRAF-TYPE	zebrafish	A4IG51	trafd1	A4IG51	0	3	TRAF-type zinc finger domain-containing protein 1	w
 TRAF-TYPE-CONTAINING	fly	FBgn0266918	CG32486	Q9VZV5	4	24	Zinc finger TRAF-type-containing protein 1 homolog (Cysteine	w
@@ -72,7 +72,7 @@ TRAF4_HUMAN	human	Q9BUZ4	TRAF4	Q9BUZ4	31	350
 TRAF5	human	O00463	TRAF5	O00463	61	252	TNF receptor-associated factor 5 (RING finger protein 84)	
 TRAF5	mus-musculus	P70191	Traf5	P70191	13	56	TNF receptor-associated factor 5	
 TRAF5_HUMAN	human	O00463	TRAF5	O00463	61	252		
-TRAF6	fly	FBgn0265464	Traf6	Q9W3I9	27	139	GH01161p (TNF-receptor-associated factor 6)	
+TRAF6	fly	FBgn0265464	Traf6	Q9W3I9	39	143	GH01161p (TNF-receptor-associated factor 6)	
 TRAF6	human	Q9Y4K3	TRAF6	Q9Y4K3	123	673	TNF receptor-associated factor 6 (EC 2.3.2.27) (E3 ubiquitin	
 TRAF6	mus-musculus	P70196	Traf6	P70196	56	292	TNF receptor-associated factor 6	
 TRAF6	rattus-norvegicus	B5DF45	Traf6	B5DF45	46	267	TNF receptor-associated factor 6	
@@ -94,8 +94,8 @@ TRAFD1	human	O14545	TRAFD1	O14545	16	83	TRAF-type zinc finger domain-containing 
 TRAFD1	mus-musculus	Q3UDK1	Trafd1	Q3UDK1	0	3	TRAF-type zinc finger domain-containing protein 1	
 TRAFD1	rattus-norvegicus	Q99MM4	Trafd1	Q99MM4	1	4	TRAF-type zinc finger domain-containing protein 1	
 TRAFD1	zebrafish	A4IG51	trafd1	A4IG51	0	3	TRAF-type zinc finger domain-containing protein 1	
-TRAFFIC	fly	FBgn0000964	tj	M9PG80	118	388	Traffic jam, isoform C	w
-TRAFFIC	fly	FBgn0086605	CG9853	Q9VN19	2	25	Golgi to ER traffic protein 4 homolog	w
+TRAFFIC	fly	FBgn0000964	tj	M9PG80	119	389	Traffic jam, isoform C	w
+TRAFFIC	fly	FBgn0086605	CG9853	Q9VN19	2	26	Golgi to ER traffic protein 4 homolog	w
 TRAFFIC	human	Q7L5D6	GET4	Q7L5D6	23	194	Golgi to ER traffic protein 4 homolog (Conserved edge-expres	w
 TRAFFIC	human	Q8IVI9	NOSTRIN	Q8IVI9	6	48	Nostrin (BM247 homolog) (Nitric oxide synthase traffic induc	w
 TRAFFIC	yeast	P40056	GET2	P40056	4	19	Golgi to ER traffic protein 2	w
@@ -103,15 +103,15 @@ TRAFFIC	yeast	P53192	GET1	P53192	2	8	Golgi to ER traffic protein 1	w
 TRAFFIC	yeast	Q12125	GET4	Q12125	3	16	Golgi to ER traffic protein 4	w
 TRAFFIC	zebrafish	F1R3Y3	get4	F1R3Y3	7	25	Golgi to ER traffic protein 4 homolog	w
 TRAFFICKER	human	Q8IVI9	NOSTRIN	Q8IVI9	6	48	Nostrin (BM247 homolog) (Nitric oxide synthase traffic induc	w
-TRAFFICKING	fly	FBgn0032204	CG4953	Q95TN1	4	14	Probable trafficking protein particle complex subunit 13 hom	w
+TRAFFICKING	fly	FBgn0032204	CG4953	Q95TN1	4	15	Probable trafficking protein particle complex subunit 13 hom	w
 TRAFFICKING	fly	FBgn0033605	CG9067	A1Z8I0	7	44	Trafficking protein particle complex subunit 2-like protein	w
-TRAFFICKING	fly	FBgn0035251	Vta1	Q9W0B3	42	166	GH19706p (RH70193p) (Vesicle trafficking 1)	w
-TRAFFICKING	fly	FBgn0038303	SIDL	Q9VFB7	13	42	Trafficking protein particle complex subunit 10 (Shal Intera	w
-TRAFFICKING	fly	FBgn0260859	Bet3	Q9VSY8	13	70	Trafficking protein particle complex subunit	w
-TRAFFICKING	fly	FBgn0260860	Bet5	Q9VA95	6	84	Trafficking protein particle complex subunit	w
-TRAFFICKING	fly	FBgn0260861	Trs23	Q9VLI9	8	56	Trafficking protein particle complex subunit	w
-TRAFFICKING	fly	FBgn0266723	Trs31	Q7K2Q8	13	54	Trafficking protein particle complex subunit 5	w
-TRAFFICKING	fly	FBgn0266724	Trs20	Q9VUZ1	15	436	Probable trafficking protein particle complex subunit 2 (TRA	w
+TRAFFICKING	fly	FBgn0035251	Vta1	Q9W0B3	46	168	GH19706p (RH70193p) (Vesicle trafficking 1)	w
+TRAFFICKING	fly	FBgn0038303	SIDL	Q9VFB7	14	42	Trafficking protein particle complex subunit 10 (Shal Intera	w
+TRAFFICKING	fly	FBgn0260859	Bet3	Q9VSY8	13	73	Trafficking protein particle complex subunit	w
+TRAFFICKING	fly	FBgn0260860	Bet5	Q9VA95	7	85	Trafficking protein particle complex subunit	w
+TRAFFICKING	fly	FBgn0260861	Trs23	Q9VLI9	8	58	Trafficking protein particle complex subunit	w
+TRAFFICKING	fly	FBgn0266723	Trs31	Q7K2Q8	14	56	Trafficking protein particle complex subunit 5	w
+TRAFFICKING	fly	FBgn0266724	Trs20	Q9VUZ1	15	437	Probable trafficking protein particle complex subunit 2 (TRA	w
 TRAFFICKING	fly	FBgn0286567	gry	Q8IRE3	6	13	Trafficking protein particle complex subunit 11	w
 TRAFFICKING	human	A5PLN9	TRAPPC13	A5PLN9	13	120	Trafficking protein particle complex subunit 13	w
 TRAFFICKING	human	O43617	TRAPPC3	O43617	16	110	Trafficking protein particle complex subunit 3 (BET3 homolog	w

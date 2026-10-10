@@ -1,4 +1,4 @@
-STA	fly	FBgn0003517	sta	P38979	45	487	Small ribosomal subunit protein uS2 (40S ribosomal protein S	
+STA	fly	FBgn0003517	sta	P38979	72	490	Small ribosomal subunit protein uS2 (40S ribosomal protein S	
 STA	human	P50402	EMD	P50402	81	742		
 STA-1	worm	Q9NAD6	sta-1	Q9NAD6	4	103	Signal transducer and activator of transcription 1	
 STA-2	worm	Q20977	sta-2	Q20977	2	36	Signal transducer and activator of transcription b	
@@ -34,7 +34,7 @@ STABILIZER	human	Q8IYX7	SAXO1	Q8IYX7	2	86	Stabilizer of axonemal microtubules 1	
 STABILIZER	human	Q8NA69	SAXO5	Q8NA69	2	24	Stabilizer of axonemal microtubules 5 (Testis-expressed prot	w
 STABILIZER	human	Q8TC05	SAXO6	Q8TC05	5	41	Stabilizer of axonemal microtubules 6 (Nuclear protein MDM1)	w
 STABILIZER	zebrafish	A0A8M1N8B9	saxo2	A0A8M1N8B9	5	32	Stabilizer of axonemal microtubules 2	w
-STABILIZING	fly	FBgn0039743	Jasper	Q9VAA9	14	49	JIL-1 anchoring and stabilizing protein, isoform A (JIL-1 an	w
+STABILIZING	fly	FBgn0039743	Jasper	Q9VAA9	15	49	JIL-1 anchoring and stabilizing protein, isoform A (JIL-1 an	w
 STABILIZING	human	Q07326	PIGF	Q07326	3	47	GPI ethanolamine phosphate transferase, stabilizing subunit 	w
 STABILIZING	human	Q8TBF5	PIGX	Q8TBF5	3	82	GPI alpha-1,4-mannosyltransferase I, stabilizing subunit (Ph	w
 STABILIZING	human	Q9UIM3	FKBPL	Q9UIM3	33	118	FK506-binding protein-like (WAF-1/CIP1 stabilizing protein 3	w
@@ -107,7 +107,7 @@ STAGA	human	O94864	SUPT7L	O94864	32	95	STAGA complex 65 subunit gamma (Adenocarc
 STAGA	zebrafish	A0A0R4IR35	supt3h	A0A0R4IR35	11	201	SPT3 homolog, SAGA and STAGA complex component	w
 STAGA	zebrafish	Q5EAS4	supt7l	Q5EAS4	8	45	STAGA complex 65 subunit gamma	w
 STAGE	human	O60447	EVI5	O60447	47	155	Ecotropic viral integration site 5 protein homolog (EVI-5) (	w
-STAI	fly	FBgn0266521	stai	M9NEA1	0	18	Stathmin, isoform D	
+STAI	fly	FBgn0266521	stai	M9NEA1	0	19	Stathmin, isoform D	
 STALK	human	H7C0C1	?	H7C0C1	8	79	ATP synthase peripheral stalk subunit OSCP, mitochondrial	w
 STALK	human	O75947	ATP5PD	O75947	9	320	ATP synthase peripheral stalk subunit d, mitochondrial (ATPa	w
 STALK	human	P18859	ATP5PF	P18859	13	332	ATP synthase peripheral stalk subunit F6, mitochondrial (ATP	w
@@ -120,7 +120,7 @@ STALK-MEMBRANE	human	P24539	ATP5PB	P24539	25	324	ATP synthase peripheral stalk s
 STALL	fly	FBgn0086408	stl	Q9W1Z6	53	249	Stall, isoform C (Stall, isoform E (EC 3.4.24.-))	w
 STALLED	human	Q92616	GCN1	Q92616	7	504	Stalled ribosome sensor GCN1 (GCN1 eIF-2-alpha kinase activa	w
 STALP_HUMAN	human	Q96FJ0	STAMBPL1	Q96FJ0	21	166		
-STAM	fly	FBgn0027363	Stam	Q9XTL2	326	1245	Jak pathway signal transduction adaptor molecule (LD02639p) 	
+STAM	fly	FBgn0027363	Stam	Q9XTL2	329	1245	Jak pathway signal transduction adaptor molecule (LD02639p) 	
 STAM	human	O95630	STAMBP	O95630	30	195	STAM-binding protein (EC 3.4.19.-) (Associated molecule with	w
 STAM	human	Q92783	STAM	Q92783	51	236	Signal transducing adapter molecule 1 (STAM-1)	
 STAM	mus-musculus	P70297	Stam	P70297	23	110	Signal transducing adapter molecule 1	
@@ -155,7 +155,7 @@ STAMP	human	Q6EMB2	TTLL5	Q6EMB2	22	112
 STAMP1	human	Q8NFT2	STEAP2	Q8NFT2	7	60		
 STAMP2	human	Q687X5	STEAP4	Q687X5	6	111		
 STAN	fly	FBgn0024836	stan	A0A0B4KER2	0	1	Starry night, isoform F	
-STAND	fly	FBgn0003527	stil	P92189	0	2	Protein stand still	w
+STAND	fly	FBgn0003527	stil	P92189	1	6	Protein stand still	w
 STANLEY-CUP	fly	FBgn0050044	s-cup	A8DYB9	1	6	Stanley-cup	w
 STANNIN	human	O75324	SNN	O75324	16	73	Stannin (AG8_1)	w
 STANNIOCALCIN-1	human	P52823	STC1	P52823	1	72	Stanniocalcin-1 (STC-1)	w
@@ -173,12 +173,12 @@ STAP2	mus-musculus	Q8R0L1	Stap2	Q8R0L1	2	16	Signal-transducing adaptor protein 2
 STAP2	rattus-norvegicus	M0R887	Stap2	M0R887	4	16	Signal-transducing adaptor protein 2	
 STAP2A	zebrafish	Q7T2F4	stap2a	Q7T2F4	1	4	Novel protein (Zgc:63913)	
 STAP2_HUMAN	human	Q9UGK3	STAP2	Q9UGK3	6	34		
-STAPHYLOCOCCAL	fly	FBgn0035121	Tudor-SN	Q9W0S7	10	199	Staphylococcal nuclease domain-containing protein 1 (EC 3.1.	w
+STAPHYLOCOCCAL	fly	FBgn0035121	Tudor-SN	Q9W0S7	11	200	Staphylococcal nuclease domain-containing protein 1 (EC 3.1.	w
 STAPHYLOCOCCAL	human	Q7KZF4	SND1	Q7KZF4	24	389	Staphylococcal nuclease domain-containing protein 1 (EC 3.1.	w
 STAPHYLOCOCCAL	worm	Q19328	tsn-1	Q19328	1	36	Staphylococcal nuclease domain-containing protein 1	w
 STAPHYLOCOCCAL	zebrafish	Q7ZT42	snd1	Q7ZT42	6	34	Staphylococcal nuclease domain-containing protein 1	w
 STAR	fly	FBgn0003310	S	P42519	236	2432	Protein Star	w
-STAR	fly	FBgn0004177	mts	P23696	235	1200	Serine/threonine-protein phosphatase PP2A (EC 3.1.3.16) (Pro	w
+STAR	fly	FBgn0004177	mts	P23696	243	1204	Serine/threonine-protein phosphatase PP2A (EC 3.1.3.16) (Pro	w
 STAR	human	P25092	GUCY2C	P25092	7	78		
 STAR	human	P49675	STAR	P49675	23	84	Steroidogenic acute regulatory protein, mitochondrial (StAR)	
 STAR	mus-musculus	P51557	Star	P51557	12	27	Steroidogenic acute regulatory protein, mitochondrial	
@@ -211,7 +211,7 @@ STAR5_HUMAN	human	Q9NSY2	STARD5	Q9NSY2	2	69
 STAR6_HUMAN	human	P59095	STARD6	P59095	3	68		
 STAR7_HUMAN	human	Q9NQZ5	STARD7	Q9NQZ5	7	57		
 STAR8_HUMAN	human	Q92502	STARD8	Q92502	18	100		
-STARCH	fly	FBgn0266064	Glys	Q9VFC8	3	49	Glycogen [starch] synthase (EC 2.4.1.11) (Glycogen synthase)	w
+STARCH	fly	FBgn0266064	Glys	Q9VFC8	3	50	Glycogen [starch] synthase (EC 2.4.1.11) (Glycogen synthase)	w
 STARCH	human	P13807	GYS1	P13807	11	193	Glycogen [starch] synthase, muscle (EC 2.4.1.11) (Glycogen s	w
 STARCH	human	P54840	GYS2	P54840	4	125	Glycogen [starch] synthase, liver (EC 2.4.1.11) (Glycogen sy	w
 STARCH-BINDING	human	O95210	STBD1	O95210	30	139	Starch-binding domain-containing protein 1 (Genethonin-1) (G	w
@@ -263,7 +263,7 @@ STARD8	rattus-norvegicus	D4A5B9	Stard8	D4A5B9	1	4	StAR-related lipid transfer do
 STARD8	zebrafish	B0S5B4	stard8	B0S5B4	0	3	StAR-related lipid transfer (START) domain-containing 8	
 STARGAZIN	worm	G5EBI8	stg-2	G5EBI8	1	12	STarGazin (Mammalian calcium channel) homolog	w
 STARGAZIN	worm	G5EDT2	stg-1	G5EDT2	0	17	STarGazin (Mammalian calcium channel) homolog	w
-STARGAZIN-LIKE	fly	FBgn0288700	stg1	Q7JUQ5	2	18	stargazin-like protein	w
+STARGAZIN-LIKE	fly	FBgn0288700	stg1	Q7JUQ5	3	19	stargazin-like protein	w
 STARMAKER	zebrafish	A2VD23	stm	A2VD23	2	83	Protein starmaker	w
 STARRY	fly	FBgn0024836	stan	A0A0B4KER2	0	1	Starry night, isoform F	w
 STARS	human	Q8N0Z2	ABRA	Q8N0Z2	9	58	Actin-binding Rho-activating protein (Striated muscle activa	w
@@ -295,8 +295,8 @@ STARVATION	yeast	P25343	RVS161	P25343	10	105	Reduced viability upon starvation p
 STARVATION	yeast	P39743	RVS167	P39743	14	224	Reduced viability upon starvation protein 167	w
 STARVATION	yeast	P42950	GSM1	P42950	0	5	Glucose starvation modulator protein 1	w
 STARVATION-INDUCED	human	Q6NUM9	RETSAT	Q6NUM9	6	198	All-trans-retinol 13,14-reductase (EC 1.3.99.23) (All-trans-	w
-STARVATION-UPREGULATED	fly	FBgn0031971	Sirup	Q9VLU6	4	8	Succinate dehydrogenase assembly factor 4, mitochondrial (SD	w
-STARVIN	fly	FBgn0086708	stv	A8JNS4	18	47	Starvin, isoform E	w
+STARVATION-UPREGULATED	fly	FBgn0031971	Sirup	Q9VLU6	5	8	Succinate dehydrogenase assembly factor 4, mitochondrial (SD	w
+STARVIN	fly	FBgn0086708	stv	A8JNS4	19	47	Starvin, isoform E	w
 STAR_DANRE	zebrafish	Q9DG10	star	Q9DG10	9	25		
 STAR_HUMAN	human	P49675	STAR	P49675	23	84		
 STAS	fly	FBgn0030850	stas	Q9VX39	4	71	Transmembrane protein 41 homolog (Protein stasimon)	
@@ -327,7 +327,7 @@ STAT3	human	P40763	STAT3	P40763	74	1586	Signal transducer and activator of trans
 STAT3	mus-musculus	P42227	Stat3	P42227	19	314	Signal transducer and activator of transcription 3	
 STAT3	rattus-norvegicus	P52631	Stat3	P52631	17	292	Signal transducer and activator of transcription 3	
 STAT3	zebrafish	O93599	stat3	O93599	8	74	Signal transducer and activator of transcription	
-STAT3-INTERACTING	fly	FBgn0033540	Elp2	Q7K4B3	16	366	Elongator complex protein 2 (ELP2) (Stat3-interacting protei	w
+STAT3-INTERACTING	fly	FBgn0033540	Elp2	Q7K4B3	16	370	Elongator complex protein 2 (ELP2) (Stat3-interacting protei	w
 STAT3-INTERACTING	human	Q6IA86	ELP2	Q6IA86	2	113	Elongator complex protein 2 (ELP2) (SHINC-2) (STAT3-interact	w
 STAT3-INTERACTING	human	Q7Z4H9	FAM220A	Q7Z4H9	2	17	Protein FAM220A (STAT3-interacting protein as a repressor)	w
 STAT3_HUMAN	human	P40763	STAT3	P40763	74	1586		
@@ -348,10 +348,10 @@ STAT6	mus-musculus	P52633	Stat6	P52633	8	58	Signal transducer and transcription 
 STAT6	rattus-norvegicus	A0ABK0M257	Stat6	A0ABK0M257	8	52	Signal transducer and activator of transcription 6	
 STAT6	zebrafish	B3DGV1	stat6	B3DGV1	2	24	Signal transducer and activator of transcription	
 STAT6_HUMAN	human	P42226	STAT6	P42226	31	311		
-STAT92E	fly	FBgn0016917	Stat92E	A0A0B4KGE1	62	553	Signal transducer and activator of transcription	
+STAT92E	fly	FBgn0016917	Stat92E	A0A0B4KGE1	64	554	Signal transducer and activator of transcription	
 STATH	human	P02808	STATH	P02808	18	183	Statherin	
 STATHERIN	human	P02808	STATH	P02808	18	183	Statherin	w
-STATHMIN	fly	FBgn0266521	stai	M9NEA1	0	18	Stathmin, isoform D	w
+STATHMIN	fly	FBgn0266521	stai	M9NEA1	0	19	Stathmin, isoform D	w
 STATHMIN	human	H3BQB6	STMND1	H3BQB6	2	8	Stathmin domain-containing protein 1	w
 STATHMIN	human	P16949	STMN1	P16949	19	215	Stathmin (Leukemia-associated phosphoprotein p18) (Metablast	w
 STATHMIN	human	Q8TAS1	UHMK1	Q8TAS1	325	1282	Serine/threonine-protein kinase Kist (EC 2.7.11.1) (Kinase i	w
@@ -397,4 +397,4 @@ STAUFEN	human	O95793	STAU1	O95793	159	1289	Double-stranded RNA-binding protein S
 STAUFEN	human	Q9NUL3	STAU2	Q9NUL3	25	278	Double-stranded RNA-binding protein Staufen homolog 2	w
 STAUFEN	zebrafish	A0A8M1PJS2	stau1	A0A8M1PJS2	2	32	Double-stranded RNA-binding protein Staufen homolog 1	w
 STAUFEN	zebrafish	Q7ZW47	stau2	Q7ZW47	3	32	Double-stranded RNA-binding protein Staufen homolog 2	w
-STA_142_146	fly	FBgn0003517	sta	P38979	45	487		
+STA_142_146	fly	FBgn0003517	sta	P38979	72	490		

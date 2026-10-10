@@ -5,8 +5,8 @@ VIT	zebrafish	A0A8M6Z998	vit	A0A8M6Z998	3	94	Vitrin
 VIT-1	human	Q86XK2	FBXO11	Q86XK2	9	144	F-box only protein 11 (Protein arginine N-methyltransferase 	w
 VIT1	arabidopsis-thaliana	Q9ZUA5	VIT1	Q9ZUA5	0	4	Vacuolar iron transporter 1	
 VIT1	human	Q86XK2	FBXO11	Q86XK2	9	144		
-VITAMIN	fly	FBgn0035103	Vdup1	Q0E8K8	7	84	FI21816p1 (FI22362p1) (Vitamin D[[3]] up-regulated protein 1	w
-VITAMIN	fly	FBgn0035245	Ggcx	Q9W0C4	0	3	Gamma-glutamyl carboxylase, isoform A (EC 4.1.1.90) (Gamma-g	w
+VITAMIN	fly	FBgn0035103	Vdup1	Q0E8K8	9	84	FI21816p1 (FI22362p1) (Vitamin D[[3]] up-regulated protein 1	w
+VITAMIN	fly	FBgn0035245	Ggcx	Q9W0C4	1	6	Gamma-glutamyl carboxylase, isoform A (EC 4.1.1.90) (Gamma-g	w
 VITAMIN	human	O75915	ARL6IP5	O75915	11	243	PRA1 family protein 3 (ADP-ribosylation factor-like protein 	w
 VITAMIN	human	P02774	GC	P02774	38	679	Vitamin D-binding protein (DBP) (VDB) (Gc protein-derived ma	w
 VITAMIN	human	P04070	PROC	P04070	15	235	Vitamin K-dependent protein C (EC 3.4.21.69) (Anticoagulant 	w
@@ -34,19 +34,19 @@ VITAMIN	zebrafish	F1QZU6	prozb	F1QZU6	0	3	Protein Z, vitamin K-dependent plasma 
 VITAMIN	zebrafish	F6P2A1	cyp2r1	F6P2A1	0	7	Vitamin D 25-hydroxylase	w
 VITAMIN	zebrafish	Q1L673	vdrb	Q1L673	15	39	Vitamin D3 receptor B	w
 VITAMIN-B12	human	Q99707	MTR	Q99707	3	214	Methionine synthase (MS) (EC 2.1.1.13) (5-methyltetrahydrofo	w
-VITAMIN-K-EPOXIDE	fly	FBgn0053544	Vkor	A1ZAJ5	0	9	vitamin-K-epoxide reductase (warfarin-sensitive) (EC 1.17.4.	w
+VITAMIN-K-EPOXIDE	fly	FBgn0053544	Vkor	A1ZAJ5	1	10	vitamin-K-epoxide reductase (warfarin-sensitive) (EC 1.17.4.	w
 VITAMIN-K-EPOXIDE	zebrafish	E7F6X2	vkorc1	E7F6X2	0	5	vitamin-K-epoxide reductase (warfarin-sensitive)	w
 VITAMIN-K-EPOXIDE	zebrafish	Q502B2	vkorc1l1	Q502B2	0	1	vitamin-K-epoxide reductase (warfarin-sensitive)	w
 VITELLIFORM	human	O76090	BEST1	O76090	1	22	Bestrophin-1 (TU15B) (Vitelliform macular dystrophy protein 	w
 VITELLIFORM	human	Q8N1M1	BEST3	Q8N1M1	1	16	Bestrophin-3 (Vitelliform macular dystrophy 2-like protein 3	w
 VITELLIFORM	human	Q8NFU0	BEST4	Q8NFU0	0	24	Bestrophin-4 (Vitelliform macular dystrophy 2-like protein 2	w
 VITELLIFORM	human	Q8NFU1	BEST2	Q8NFU1	0	35	Bestrophin-2a (Vitelliform macular dystrophy 2-like protein 	w
-VITELLINE	fly	FBgn0003979	Vm26Aa	P11449	29	245	Vitelline membrane protein Vm26Aa (Protein SV17.5) (Protein 	w
-VITELLINE	fly	FBgn0003980	Vm26Ab	P13238	32	269	Vitelline membrane protein Vm26Ab (Protein SV23) (Protein TU	w
-VITELLINE	fly	FBgn0003983	Vm34Ca	Q06521	20	260	Vitelline membrane protein Vm34Ca	w
-VITELLINE	fly	FBgn0014076	Vm32E	Q9VKI3	31	262	Vitelline membrane protein Vm32E	w
+VITELLINE	fly	FBgn0003979	Vm26Aa	P11449	29	247	Vitelline membrane protein Vm26Aa (Protein SV17.5) (Protein 	w
+VITELLINE	fly	FBgn0003980	Vm26Ab	P13238	33	273	Vitelline membrane protein Vm26Ab (Protein SV23) (Protein TU	w
+VITELLINE	fly	FBgn0003983	Vm34Ca	Q06521	20	264	Vitelline membrane protein Vm34Ca	w
+VITELLINE	fly	FBgn0014076	Vm32E	Q9VKI3	32	268	Vitelline membrane protein Vm32E	w
 VITELLINE	fly	FBgn0085362	Vml	A8JUV4	37	244	Vitelline membrane-like, isoform A (Vitelline membrane-like,	w
-VITELLINE	fly	FBgn0086266	Vm26Ac	Q9VMK5	31	244	IP19021p (IP19215p) (IP19415p) (IP19521p) (Vitelline membran	w
+VITELLINE	fly	FBgn0086266	Vm26Ac	Q9VMK5	32	245	IP19021p (IP19215p) (IP19415p) (IP19521p) (Vitelline membran	w
 VITELLINE	human	Q7Z5L0	VMO1	Q7Z5L0	2	44	Vitelline membrane outer layer protein 1 homolog	w
 VITELLINE	worm	G5EBG1	CELE_Y57G11A.2	G5EBG1	0	2	Vitelline membrane outer layer protein 1	w
 VITELLINE	worm	Q9N2S5	txt-3	Q9N2S5	1	16	Vitelline membrane outer layer protein 1	w
@@ -71,7 +71,7 @@ VITF3L	virus	Q8JL91	VITF3L	Q8JL91	6	169	Intermediate transcription factor 3 larg
 VITF3L	virus	Q8V2N2	VITF3L	Q8V2N2	10	208	Intermediate transcription factor 3 large subunit	
 VITF3L	virus	Q8V4V4	VITF3L	Q8V4V4	4	187	Intermediate transcription factor 3 large subunit	
 VITILIGO-ASSOCIATED	human	Q86XK2	FBXO11	Q86XK2	9	144	F-box only protein 11 (Protein arginine N-methyltransferase 	w
-VITO	fly	FBgn0052418	vito	Q8SWS7	10	95	Nucleolar protein 12	
+VITO	fly	FBgn0052418	vito	Q8SWS7	10	96	Nucleolar protein 12	
 VITO1	human	Q8N8G2	VGLL2	Q8N8G2	56	332		
 VITREORETINOPATHY	human	Q00604	NDP	Q00604	12	318	Norrin (Norrie disease protein) (X-linked exudative vitreore	w
 VITRIN	human	Q6UXI7	VIT	Q6UXI7	4	93	Vitrin	w

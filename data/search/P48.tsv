@@ -42,13 +42,13 @@ P48145	human	P48145	NPBWR1	P48145	9	62	Neuropeptides B/W receptor type 1 (G prot
 P48146	human	P48146	NPBWR2	P48146	9	100	Neuropeptides B/W receptor type 2 (G protein-coupled recepto	
 P48147	human	P48147	PREP	P48147	16	165	Prolyl endopeptidase (PE) (EC 3.4.21.26) (Post-proline cleav	
 P48148	fly	FBgn0014020	Rho1	P48148	88	578	Ras-like GTP-binding protein Rho1	
-P48149	fly	FBgn0010198	RpS15Aa	P48149	25	314	Small ribosomal subunit protein uS8A (40S ribosomal protein 	
+P48149	fly	FBgn0010198	RpS15Aa	P48149	50	314	Small ribosomal subunit protein uS8A (40S ribosomal protein 	
 P48150	worm	P48150	rps-14	P48150	14	326	Small ribosomal subunit protein uS11	
 P48152	worm	P48152	rps-3	P48152	6	298	Small ribosomal subunit protein uS3	
 P48154	worm	P48154	rps-3A	P48154	15	258	Small ribosomal subunit protein eS1	
 P48156	worm	P48156	rps-8	P48156	17	271	Small ribosomal subunit protein eS8	
 P48158	worm	P48158	rpl-23	P48158	24	293	Large ribosomal subunit protein uL14	
-P48159	fly	FBgn0010078	RpL23	P48159	47	453	Large ribosomal subunit protein uL14 (60S ribosomal protein 	
+P48159	fly	FBgn0010078	RpL23	P48159	79	459	Large ribosomal subunit protein uL14 (60S ribosomal protein 	
 P48160	dictyostelium-discoideum	P48160	rpl27a	P48160	10	282	Large ribosomal subunit protein uL15	
 P48162	worm	P48162	rpl-23A.1	P48162	10	256	Large ribosomal subunit protein uL23A	
 P48163	human	P48163	ME1	P48163	3	124	NADP-dependent malic enzyme (NADP-ME) (EC 1.1.1.40) (Malic e	
@@ -116,7 +116,7 @@ P48363	yeast	P48363	PAC10	P48363	5	25	Prefoldin subunit 3
 P48365	yeast	P48365	GYP7	P48365	1	9	GTPase-activating protein GYP7	
 P48370	helicobacter-pylori	P48370	gyrA	P48370	1	14	DNA gyrase subunit A	
 P48372	pseudomonas-aeruginosa	P48372	gyrA	P48372	3	28	DNA gyrase subunit A	
-P48375	fly	FBgn0013954	Fkbp12	P48375	45	321	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	
+P48375	fly	FBgn0013954	Fkbp12	P48375	53	327	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	
 P48376	worm	P48376	clk-1	P48376	4	13	NADPH-dependent 3-demethoxyubiquinone 3-hydroxylase, mitocho	
 P48377	mus-musculus	P48377	Rfx1	P48377	0	8	MHC class II regulatory factor RFX1	
 P48378	human	P48378	RFX2	P48378	9	80	DNA-binding protein RFX2 (Regulatory factor X 2)	
@@ -155,7 +155,7 @@ P48458	worm	P48458	C06A1.3	P48458	1	3	Putative serine/threonine-protein phosphat
 P48459	worm	P48459	C23G10.1	P48459	4	15	Serine/threonine-protein phosphatase C23G10.1	
 P48460	worm	P48460	C27B7.6	P48460	0	5	Putative serine/threonine-protein phosphatase C27B7.6	
 P48461	fly	FBgn0003134	Pp1alpha-96A	P48461	225	1055	Serine/threonine-protein phosphatase alpha-1 isoform (EC 3.1	
-P48462	fly	FBgn0000711	flw	Q8T0U6	267	1095		
+P48462	fly	FBgn0000711	flw	Q8T0U6	270	1099		
 P48482	arabidopsis-thaliana	P48482	TOPP2	P48482	6	70	Serine/threonine-protein phosphatase PP1 isozyme 2	
 P48483	arabidopsis-thaliana	P48483	TOPP3	P48483	6	68	Serine/threonine-protein phosphatase PP1 isozyme 3	
 P48484	arabidopsis-thaliana	P48484	TOPP4	P48484	10	73	Serine/threonine-protein phosphatase PP1 isozyme 4	
@@ -213,30 +213,30 @@ P48578	arabidopsis-thaliana	P48578	PP2A4	P48578	14	77	Serine/threonine-protein p
 P48581	yeast	P48581	RAD17	P48581	3	23	DNA damage checkpoint control protein RAD17	
 P48582	yeast	P48582	BRO1	P48582	7	47	Vacuolar-sorting protein BRO1	
 P48583	worm	P48583	erd-2.1	P48583	1	53	ER lumen protein-retaining receptor erd-2.1	
-P48588	fly	FBgn0086472	RpS25	P48588	29	289	Small ribosomal subunit protein eS25 (40S ribosomal protein 	
+P48588	fly	FBgn0086472	RpS25	P48588	50	291	Small ribosomal subunit protein eS25 (40S ribosomal protein 	
 P48589	yeast	P48589	RPS12	P48589	24	800	Small ribosomal subunit protein eS12	
-P48591	fly	FBgn0011703	RnrL	P48591	13	205	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	
-P48592	fly	FBgn0011704	RnrS	P48592	13	310	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	
-P48593	fly	FBgn0004910	Eip63F-1	P48593	5	58	Calcium-binding protein E63-1	
+P48591	fly	FBgn0011703	RnrL	P48591	13	219	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	
+P48592	fly	FBgn0011704	RnrS	P48592	15	321	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	
+P48593	fly	FBgn0004910	Eip63F-1	P48593	6	61	Calcium-binding protein E63-1	
 P48594	human	P48594	SERPINB4	P48594	7	290	Serpin B4 (Leupin) (Peptidase inhibitor 11) (PI-11) (Squamou	
 P48595	human	P48595	SERPINB10	P48595	1	81	Serpin B10 (Bomapin) (Peptidase inhibitor 10) (PI-10)	
-P48596	fly	FBgn0003162	Pu	P48596	0	26	GTP cyclohydrolase 1 (EC 3.5.4.16) (GTP cyclohydrolase I) (G	
+P48596	fly	FBgn0003162	Pu	P48596	0	30	GTP cyclohydrolase 1 (EC 3.5.4.16) (GTP cyclohydrolase I) (G	
 P48598	fly	FBgn0015218	eIF4E1	P48598	37	256	Eukaryotic translation initiation factor 4E1 (eIF-4F 25 kDa 	
 P48599	oryza-sativa-subsp-japonica	P48599	eIF4E	P48599	25	304	Eukaryotic translation initiation factor 4E-1	
 P48600	oryza-sativa-subsp-japonica	P48600	Os10g0467600	P48600	12	306	Eukaryotic translation initiation factor isoform 4E-2	
 P48601	fly	FBgn0015282	Rpt2	P48601	13	173	26S proteasome regulatory subunit 4 (P26s4)	
-P48602	fly	FBgn0265262	Vha68-1	P48602	4	100	V-type proton ATPase catalytic subunit A isoform 1 (V-ATPase	
-P48603	fly	FBgn0011570	cpb	P48603	12	152	F-actin-capping protein subunit beta	
-P48604	fly	FBgn0014877	Roe1	P48604	5	113	GrpE protein homolog, mitochondrial (dRoe1)	
+P48602	fly	FBgn0265262	Vha68-1	P48602	10	100	V-type proton ATPase catalytic subunit A isoform 1 (V-ATPase	
+P48603	fly	FBgn0011570	cpb	P48603	14	155	F-actin-capping protein subunit beta	
+P48604	fly	FBgn0014877	Roe1	P48604	6	115	GrpE protein homolog, mitochondrial (dRoe1)	
 P48605	fly	FBgn0015019	CCT3	P48605	14	259	T-complex protein 1 subunit gamma (TCP-1-gamma) (CCT-gamma) 	
 P48606	yeast	P48606	RBL2	P48606	2	15	Tubulin-specific chaperone A	
-P48607	fly	FBgn0003495	spz	P48607	29	273	Protein spaetzle [Cleaved into: Protein spaetzle C-106]	
+P48607	fly	FBgn0003495	spz	P48607	30	275	Protein spaetzle [Cleaved into: Protein spaetzle C-106]	
 P48608	fly	FBgn0011202	dia	M9NCZ5	9	111		
 P48609	fly	FBgn0013762	Cdk5	P48609	119	1183	Cyclin-dependent kinase 5 homolog (EC 2.7.11.22) (Cell divis	
 P48610	fly	FBgn0000116	Argk1	P48610	41	448	Arginine kinase 1	
-P48611	fly	FBgn0003141	pr	P48611	1	64	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	
-P48612	fly	FBgn0011207	pelo	P48612	4	145	Protein pelota	
-P48613	fly	FBgn0003710	tipE	P48613	1	3	Protein tipE (Temperature-induced paralytic E)	
+P48611	fly	FBgn0003141	pr	P48611	1	70	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	
+P48612	fly	FBgn0011207	pelo	P48612	5	147	Protein pelota	
+P48613	fly	FBgn0003710	tipE	P48613	1	5	Protein tipE (Temperature-induced paralytic E)	
 P48614	mus-musculus	P48614	Wnt10b	P48614	5	15	Protein Wnt-10b	
 P48615	mus-musculus	P48615	Wnt11	P48615	11	48	Protein Wnt-11	
 P48621	glycine-max	P48621	FAD7	P48621	0	5	Omega-3 fatty acid desaturase, chloroplastic	
@@ -304,7 +304,7 @@ P48788	human	P48788	TNNI2	P48788	21	152	Troponin I, fast skeletal muscle (Tropon
 P48794	mus-musculus	P48794	Spam1	P48794	0	9	Hyaluronidase PH-20	
 P48802	zebrafish	P48802	fgf3	P48802	11	76	Fibroblast growth factor 3	
 P48807	rattus-norvegicus	P48807	Fgf5	P48807	9	94	Fibroblast growth factor 5	
-P48809	fly	FBgn0004838	Hrb27C	P48809	5	81	Heterogeneous nuclear ribonucleoprotein 27C (Hrb27-C) (HRP48	
+P48809	fly	FBgn0004838	Hrb27C	P48809	6	81	Heterogeneous nuclear ribonucleoprotein 27C (Hrb27-C) (HRP48	
 P48810	fly	FBgn0004237	Hrb87F	P48810	5	43	Heterogeneous nuclear ribonucleoprotein 87F (HRP36.1 protein	
 P48812	brugia-malayi	P48812	G3PD	P48812	0	89	Glyceraldehyde-3-phosphate dehydrogenase	
 P48813	yeast	P48813	GNP1	P48813	0	26	High-affinity glutamine permease	
@@ -326,7 +326,7 @@ P48973	rattus-norvegicus	P48973	Cxcl10	P48973	14	86	C-X-C motif chemokine 10
 P48974	rattus-norvegicus	P48974	Avpr1b	P48974	2	13	Vasopressin V1b receptor	
 P48985	mus-musculus	P48985	Atoh1	P48985	4	12	Transcription factor Atoh1	
 P48986	mus-musculus	P48986	Neurod6	P48986	1	7	Neurogenic differentiation factor 6	
-P48987	fly	FBgn0010433	ato	P48987	69	412	Protein atonal	
+P48987	fly	FBgn0010433	ato	P48987	70	413	Protein atonal	
 P48989	candida-albicans-237561	P48989	HTB1	P48989	11	69	Histone H2B.1	
 P48990	candida-albicans-237561	P48990	TIM54	P48990	2	11	Mitochondrial import inner membrane translocase subunit TIM5	
 P48994	fly	FBgn0005614	trpl	P48994	9	39	Transient-receptor-potential-like protein	

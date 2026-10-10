@@ -6,7 +6,7 @@ RAB-10	fly	FBgn0030221	Rab9Db	Q9W2S9	2	32	Ras-related protein Rab-10	w
 RAB-10	fly	FBgn0052670	Rab9Fb	Q8IR98	6	32	Ras-related protein Rab-10	w
 RAB-10	fly	FBgn0052671	Rab9Fa	Q9VZ47	3	61	Ras-related protein Rab-10	w
 RAB-10	fly	FBgn0052673	Rab9E	Q8IRK8	2	32	Ras-related protein Rab-10	w
-RAB-10	fly	FBgn0067052	Rab9D	Q8IRK9	2	31	Ras-related protein Rab-10	w
+RAB-10	fly	FBgn0067052	Rab9D	Q8IRK9	2	32	Ras-related protein Rab-10	w
 RAB-10	human	P61026	RAB10	P61026	69	401	Ras-related protein Rab-10 (EC 3.6.5.2)	w
 RAB-10	worm	Q94148	rab-10	Q94148	7	42	Ras-related protein Rab-10	w
 RAB-10	worm	Q94148	rab-10	Q94148	7	42	Ras-related protein Rab-10	w
@@ -20,7 +20,7 @@ RAB-12	human	Q6IQ22	RAB12	Q6IQ22	13	121	Ras-related protein Rab-12 (EC 3.6.5.2)	
 RAB-12	zebrafish	Q502Q0	rab12	Q502Q0	7	21	Ras-related protein Rab-12	w
 RAB-13	human	P51153	RAB13	P51153	53	273	Ras-related protein Rab-13 (EC 3.6.5.2) (Cell growth-inhibit	w
 RAB-13	zebrafish	Q7T3A4	rab13	Q7T3A4	11	37	Ras-related protein Rab-13	w
-RAB-14	fly	FBgn0015791	Rab14	Q86BK8	16	47	Ras-related protein Rab-14	w
+RAB-14	fly	FBgn0015791	Rab14	Q86BK8	18	48	Ras-related protein Rab-14	w
 RAB-14	human	P61106	RAB14	P61106	72	359	Ras-related protein Rab-14 (EC 3.6.5.2)	w
 RAB-14	worm	Q93874	rab-14	Q93874	6	30	Ras-related protein Rab-14	w
 RAB-14	worm	Q93874	rab-14	Q93874	6	30	Ras-related protein Rab-14	w
@@ -205,8 +205,8 @@ RAB10	mus-musculus	P61027	Rab10	P61027	14	55	Ras-related protein Rab-10
 RAB10	rattus-norvegicus	P35281	Rab10	P35281	9	53	Ras-related protein Rab-10	
 RAB10	zebrafish	Q6DGV5	rab10	Q6DGV5	6	35	small monomeric GTPase	
 RAB10_HUMAN	human	P61026	RAB10	P61026	69	401		
-RAB11	fly	FBgn0015790	Rab11	O18335	62	264	Rab11 (GM06568p) (RE11886p) (Rab11, isoform A) (Rab11, isofo	w
-RAB11	fly	FBgn0015790	Rab11	O18335	62	264	Rab11 (GM06568p) (RE11886p) (Rab11, isoform A) (Rab11, isofo	w
+RAB11	fly	FBgn0015790	Rab11	O18335	69	268	Rab11 (GM06568p) (RE11886p) (Rab11, isoform A) (Rab11, isofo	w
+RAB11	fly	FBgn0015790	Rab11	O18335	69	268	Rab11 (GM06568p) (RE11886p) (Rab11, isoform A) (Rab11, isofo	w
 RAB11	fly	FBgn0027335	Rip11	Q9VWS3	7	22	Rab11 interacting protein, isoform A	w
 RAB11	human	O75154	RAB11FIP3	O75154	24	108	Rab11 family-interacting protein 3 (FIP3) (FIP3-Rab11) (Rab1	w
 RAB11	human	P62491	RAB11A	P62491	232	1242		
@@ -271,7 +271,7 @@ RAB13	zebrafish	Q7T3A4	rab13	Q7T3A4	11	37	Ras-related protein Rab-13
 RAB13-BINDING	human	Q8IY33	MICALL2	Q8IY33	31	168	MICAL-like protein 2 (Junctional Rab13-binding protein) (Mol	w
 RAB13_HUMAN	human	P51153	RAB13	P51153	53	273		
 RAB14	dictyostelium-discoideum	P36410	rab14	P36410	2	9	Ras-related protein Rab-14	
-RAB14	fly	FBgn0015791	Rab14	Q86BK8	16	47	Ras-related protein Rab-14	
+RAB14	fly	FBgn0015791	Rab14	Q86BK8	18	48	Ras-related protein Rab-14	
 RAB14	human	P61106	RAB14	P61106	72	359	Ras-related protein Rab-14 (EC 3.6.5.2)	
 RAB14	mus-musculus	Q91V41	Rab14	Q91V41	7	30	Ras-related protein Rab-14	
 RAB14	rattus-norvegicus	A0ABK0LXD4	Rab14	A0ABK0LXD4	7	20	RAB14, member RAS onco family	
@@ -297,14 +297,14 @@ RAB17	zea-mays	A3KLI1	rab17	A3KLI1	0	1	Dehydrin DHN1
 RAB17_HUMAN	human	Q9H0T7	RAB17	Q9H0T7	38	144		
 RAB18	arabidopsis-thaliana	P30185	RAB18	P30185	0	1	Dehydrin Rab18	
 RAB18	dictyostelium-discoideum	Q54GY8	rab18	Q54GY8	3	9	Ras-related protein Rab-18	
-RAB18	fly	FBgn0015794	Rab18	Q9W4A0	11	37	GH11193p (Rab18)	w
-RAB18	fly	FBgn0015794	Rab18	Q9W4A0	11	37	GH11193p (Rab18)	w
+RAB18	fly	FBgn0015794	Rab18	Q9W4A0	17	45	GH11193p (Rab18)	w
+RAB18	fly	FBgn0015794	Rab18	Q9W4A0	17	45	GH11193p (Rab18)	w
 RAB18	human	Q9NP72	RAB18	Q9NP72	40	264	Ras-related protein Rab-18 (EC 3.6.5.2)	
 RAB18	mus-musculus	P35293	Rab18	P35293	8	29	Ras-related protein Rab-18	
 RAB18	rattus-norvegicus	Q5EB77	Rab18	Q5EB77	4	20	Ras-related protein Rab-18	
 RAB18A	zebrafish	Q6P129	rab18a	Q6P129	2	11	small monomeric GTPase	
 RAB18B	zebrafish	Q6DHC1	rab18b	Q6DHC1	5	14	Ras-related protein Rab-18-B	
-RAB18_71	fly	FBgn0015794	Rab18	Q9W4A0	11	37		
+RAB18_71	fly	FBgn0015794	Rab18	Q9W4A0	17	45		
 RAB18_HUMAN	human	Q9NP72	RAB18	Q9NP72	40	264		
 RAB19	fly	FBgn0015793	Rab19	O18339	17	61	RE48347p (Rab-related protein 3) (Rab19, isoform A) (Rab19, 	w
 RAB19	fly	FBgn0015793	Rab19	O18339	17	61	RE48347p (Rab-related protein 3) (Rab19, isoform A) (Rab19, 	w
@@ -431,8 +431,8 @@ RAB2L	human	O15211	RGL2	O15211	19	84
 RAB3	fly	FBgn0005586	Rab3	P25228	6	56	Rab3	w
 RAB3	fly	FBgn0005586	Rab3	P25228	6	56	Rab3	w
 RAB3	fly	FBgn0025864	Crag	Q9W3D3	3	4	DENN domain-containing protein Crag (Calmodulin-binding prot	w
-RAB3	fly	FBgn0027505	Rab3-GAP	Q9VKB9	3	67	Rab3 GTPase-activating protein non-catalytic subunit (Rab3 G	w
-RAB3	fly	FBgn0051935	Rab3GAP1	Q9VQ26	3	4	Rab3 GTPase-activating protein catalytic subunit	w
+RAB3	fly	FBgn0027505	Rab3-GAP	Q9VKB9	3	68	Rab3 GTPase-activating protein non-catalytic subunit (Rab3 G	w
+RAB3	fly	FBgn0051935	Rab3GAP1	Q9VQ26	3	5	Rab3 GTPase-activating protein catalytic subunit	w
 RAB3	fly	FBgn0053547	Rim	A0A0B4K6M2	1	9	Rab3 interacting molecule, isoform F (Rab3 interacting molec	w
 RAB3	human	Q15042	RAB3GAP1	Q15042	29	203	Rab3 GTPase-activating protein catalytic subunit (RAB3 GTPas	w
 RAB3	human	Q8WXG6	MADD	Q8WXG6	12	221	MAP kinase-activating death domain protein (Differentially e	w
@@ -441,7 +441,7 @@ RAB3	worm	Q22670	rbg-2	Q22670	1	4	Rab3 GTPase-activating protein regulatory subu
 RAB3	worm	Q93538	rbg-1	Q93538	2	4	Rab3 GTPase-activating protein catalytic subunit	w
 RAB3	zebrafish	K7DYN0	rab3gap2	K7DYN0	1	5	RAB3 GTPase-activating protein subunit 2 (non-catalytic)	w
 RAB3	zebrafish	Q6NUV0	rab3gap1	Q6NUV0	7	9	Rab3 GTPase-activating protein catalytic subunit	w
-RAB3-GAP	fly	FBgn0027505	Rab3-GAP	Q9VKB9	3	67	Rab3 GTPase-activating protein non-catalytic subunit (Rab3 G	
+RAB3-GAP	fly	FBgn0027505	Rab3-GAP	Q9VKB9	3	68	Rab3 GTPase-activating protein non-catalytic subunit (Rab3 G	
 RAB3-GAP	human	Q15042	RAB3GAP1	Q15042	29	203	Rab3 GTPase-activating protein catalytic subunit (RAB3 GTPas	w
 RAB3-GAP	human	Q9H2M9	RAB3GAP2	Q9H2M9	11	154	Rab3 GTPase-activating protein non-catalytic subunit (RGAP-i	w
 RAB3-GAP150	human	Q9H2M9	RAB3GAP2	Q9H2M9	11	154	Rab3 GTPase-activating protein non-catalytic subunit (RGAP-i	w
@@ -458,8 +458,8 @@ RAB31	human	Q13636	RAB31	Q13636	53	189	Ras-related protein Rab-31 (EC 3.6.5.2) (
 RAB31	mus-musculus	Q921E2	Rab31	Q921E2	16	28	Ras-related protein Rab-31	
 RAB31	rattus-norvegicus	Q6GQP4	Rab31	Q6GQP4	15	27	Ras-related protein Rab-31	
 RAB31_HUMAN	human	Q13636	RAB31	Q13636	53	189		
-RAB32	fly	FBgn0002567	Rab32	A1Z7S3	7	37	Rab32, isoform B	w
-RAB32	fly	FBgn0002567	Rab32	A1Z7S3	7	37	Rab32, isoform B	w
+RAB32	fly	FBgn0002567	Rab32	A1Z7S3	8	38	Rab32, isoform B	w
+RAB32	fly	FBgn0002567	Rab32	A1Z7S3	8	38	Rab32, isoform B	w
 RAB32	human	Q13637	RAB32	Q13637	59	269	Ras-related protein Rab-32 (EC 3.6.5.2)	
 RAB32	mus-musculus	Q9CZE3	Rab32	Q9CZE3	7	18	Ras-related protein Rab-32	
 RAB32	rattus-norvegicus	A0ABK0LDU5	Rab32	A0ABK0LDU5	6	18	RAB32, member RAS oncogene family	
@@ -468,7 +468,7 @@ RAB32B	dictyostelium-discoideum	Q55E31	rab32B	Q55E31	0	1	Ras-related protein Rab
 RAB32B	zebrafish	A0A8M9Q6D4	rab32b	A0A8M9Q6D4	1	7	Ras-related protein Rab	
 RAB32C	dictyostelium-discoideum	Q8MXQ2	rab32C	Q8MXQ2	1	4	Ras-related protein Rab-32C	
 RAB32D	dictyostelium-discoideum	Q54P07	rab32D	Q54P07	0	1	Ras-related protein Rab-32D	
-RAB32_59	fly	FBgn0002567	Rab32	A1Z7S3	7	37		
+RAB32_59	fly	FBgn0002567	Rab32	A1Z7S3	8	38		
 RAB32_HUMAN	human	Q13637	RAB32	Q13637	59	269		
 RAB33A	human	Q14088	RAB33A	Q14088	65	212	Ras-related protein Rab-33A (EC 3.6.5.2) (Small GTP-binding 	
 RAB33A	mus-musculus	P97950	Rab33a	P97950	6	36	Ras-related protein Rab-33A	
@@ -486,8 +486,8 @@ RAB34	zebrafish	A0A8M1Q809	rab34b	A0A8M1Q809	5	23	RAB34, member RAS oncogene fam
 RAB34A	zebrafish	Q5XJS4	rab34a	Q5XJS4	6	25	Ras-related protein Rab-34	
 RAB34B	zebrafish	A0A8M1Q809	rab34b	A0A8M1Q809	5	23	RAB34, member RAS oncogene family b	
 RAB34_HUMAN	human	Q9BZG1	RAB34	Q9BZG1	23	131		
-RAB35	fly	FBgn0031090	Rab35	Q9W5X0	15	55	LD21953p (Rab35, isoform A) (Rab35, isoform B) (Rab35, isofo	w
-RAB35	fly	FBgn0031090	Rab35	Q9W5X0	15	55	LD21953p (Rab35, isoform A) (Rab35, isoform B) (Rab35, isofo	w
+RAB35	fly	FBgn0031090	Rab35	Q9W5X0	16	56	LD21953p (Rab35, isoform A) (Rab35, isoform B) (Rab35, isofo	w
+RAB35	fly	FBgn0031090	Rab35	Q9W5X0	16	56	LD21953p (Rab35, isoform A) (Rab35, isoform B) (Rab35, isofo	w
 RAB35	human	Q15286	RAB35	Q15286	155	761	Ras-related protein Rab-35 (EC 3.6.5.2) (GTP-binding protein	
 RAB35	mus-musculus	Q6PHN9	Rab35	Q6PHN9	16	50	Ras-related protein Rab-35	
 RAB35	rattus-norvegicus	Q5U316	Rab35	Q5U316	17	51	Ras-related protein Rab-35	
@@ -547,7 +547,7 @@ RAB3DA	zebrafish	F6NMA7	rab3da	F6NMA7	5	20	Ras-related protein Rab-3
 RAB3DB	zebrafish	Q6DI07	rab3db	Q6DI07	3	18	small monomeric GTPase	
 RAB3D_HUMAN	human	O95716	RAB3D	O95716	22	161		
 RAB3GAP	human	Q15042	RAB3GAP1	Q15042	29	203		
-RAB3GAP1	fly	FBgn0051935	Rab3GAP1	Q9VQ26	3	4	Rab3 GTPase-activating protein catalytic subunit	
+RAB3GAP1	fly	FBgn0051935	Rab3GAP1	Q9VQ26	3	5	Rab3 GTPase-activating protein catalytic subunit	
 RAB3GAP1	human	Q15042	RAB3GAP1	Q15042	29	203	Rab3 GTPase-activating protein catalytic subunit (RAB3 GTPas	
 RAB3GAP1	mus-musculus	Q80UJ7	Rab3gap1	Q80UJ7	4	7	Rab3 GTPase-activating protein catalytic subunit	
 RAB3GAP1	rattus-norvegicus	P69735	Rab3gap1	P69735	5	7	Rab3 GTPase-activating protein catalytic subunit	
@@ -615,9 +615,9 @@ RAB4B	mus-musculus	Q91ZR1	Rab4b	Q91ZR1	6	27	Ras-related protein Rab-4B
 RAB4B	rattus-norvegicus	P51146	Rab4b	P51146	8	28	Ras-related protein Rab-4B	
 RAB4B	zebrafish	Q68EK7	rab4b	Q68EK7	13	34	Ras-related protein Rab-4B	
 RAB4B_HUMAN	human	P61018	RAB4B	P61018	42	241		
-RAB5	fly	FBgn0014010	Rab5	Q9V3I2	81	342	Ras-related protein Rab5 (Drab5) (EC 3.6.5.2) (Small monomer	w
-RAB5	fly	FBgn0014010	Rab5	Q9V3I2	81	342	Ras-related protein Rab5 (Drab5) (EC 3.6.5.2) (Small monomer	w
-RAB5	fly	FBgn0262937	Rabex-5	Q9W0H9	65	421	Rabaptin-5-associated exchange factor for Rab5 (SD03358p)	w
+RAB5	fly	FBgn0014010	Rab5	Q9V3I2	83	345	Ras-related protein Rab5 (Drab5) (EC 3.6.5.2) (Small monomer	w
+RAB5	fly	FBgn0014010	Rab5	Q9V3I2	83	345	Ras-related protein Rab5 (Drab5) (EC 3.6.5.2) (Small monomer	w
+RAB5	fly	FBgn0262937	Rabex-5	Q9W0H9	67	426	Rabaptin-5-associated exchange factor for Rab5 (SD03358p)	w
 RAB5	human	O95825	CRYZL1	O95825	5	78	Ferry endosomal RAB5 effector complex subunit 4 (Fy-4) (Crys	w
 RAB5	human	P20339	RAB5A	P20339	204	917		
 RAB5	human	Q6ZMI0	PPP1R21	Q6ZMI0	25	173	Protein phosphatase 1 regulatory subunit 21 (Coiled-coil dom	w
@@ -662,10 +662,10 @@ RAB5IF	rattus-norvegicus	Q5FVK9	Rab5if	Q5FVK9	1	113	RAB5 interacting factor
 RAB5IF	zebrafish	F1RD59	rab5if	F1RD59	1	64	RAB5-interacting factor	
 RAB5IP	human	Q9UH99	SUN2	Q9UH99	26	252		
 RAB5L	human	P51148	RAB5C	P51148	118	665	Ras-related protein Rab-5C (EC 3.6.5.2) (L1880) (RAB5L)	w
-RAB5_25_194	fly	FBgn0014010	Rab5	Q9V3I2	81	342		
+RAB5_25_194	fly	FBgn0014010	Rab5	Q9V3I2	83	345		
 RAB6	dictyostelium-discoideum	Q55FK2	rab6	Q55FK2	7	46	Ras-related protein Rab-6	
-RAB6	fly	FBgn0015797	Rab6	O18334	55	212	Ras-related protein Rab6 (Protein warthog)	w
-RAB6	fly	FBgn0015797	Rab6	O18334	55	212	Ras-related protein Rab6 (Protein warthog)	w
+RAB6	fly	FBgn0015797	Rab6	O18334	59	212	Ras-related protein Rab6 (Protein warthog)	w
+RAB6	fly	FBgn0015797	Rab6	O18334	59	212	Ras-related protein Rab6 (Protein warthog)	w
 RAB6	human	P20340	RAB6A	P20340	97	427		
 RAB6	human	Q9Y3P9	RABGAP1	Q9Y3P9	71	326	Rab GTPase-activating protein 1 (GAP and centrosome-associat	w
 RAB6-INTERACTING	fly	FBgn0053052	Gorab	Q8IQQ4	2	12	RAB6-interacting golgin	w
@@ -703,8 +703,8 @@ RAB6IP1	human	Q6IQ26	DENND5A	Q6IQ26	12	101
 RAB6IP1-LIKE	human	Q6ZUT9	DENND5B	Q6ZUT9	10	95	DENN domain-containing protein 5B (Rab6IP1-like protein)	w
 RAB6IP2	human	Q8IUD2	ERC1	Q8IUD2	97	276		
 RAB6KIFL	human	O95235	KIF20A	O95235	105	1247		
-RAB7	fly	FBgn0015795	Rab7	O76742	27	204	Ras-related protein Rab7 (DRab7) (EC 3.6.5.2) (Small monomer	w
-RAB7	fly	FBgn0015795	Rab7	O76742	27	204	Ras-related protein Rab7 (DRab7) (EC 3.6.5.2) (Small monomer	w
+RAB7	fly	FBgn0015795	Rab7	O76742	38	217	Ras-related protein Rab7 (DRab7) (EC 3.6.5.2) (Small monomer	w
+RAB7	fly	FBgn0015795	Rab7	O76742	38	217	Ras-related protein Rab7 (DRab7) (EC 3.6.5.2) (Small monomer	w
 RAB7	human	P51149	RAB7A	P51149	136	948		
 RAB7	human	Q8TC07	TBC1D15	Q8TC07	29	207	TBC1 domain family member 15 (GTPase-activating protein RAB7	w
 RAB7	leishmania-infantum	E9AGQ4	RAB7	E9AGQ4	6	45	Ras-related protein Rab-7b	
@@ -728,10 +728,10 @@ RAB7B_HUMAN	human	Q96AH8	RAB7B	Q96AH8	51	295
 RAB7L1	human	O14966	RAB29	O14966	45	216		
 RAB7L_HUMAN	human	O14966	RAB29	O14966	45	216		
 RAB7P	glycine-max	Q43462	Rab7p	Q43462	22	244	Rab7p protein	
-RAB7_5_181	fly	FBgn0015795	Rab7	O76742	27	204		
-RAB7_72	fly	FBgn0015795	Rab7	O76742	27	204		
-RAB8	fly	FBgn0262518	Rab8	O18338	18	104	LD44762p (Rab8) (Rab8, isoform C)	w
-RAB8	fly	FBgn0262518	Rab8	O18338	18	104	LD44762p (Rab8) (Rab8, isoform C)	w
+RAB7_5_181	fly	FBgn0015795	Rab7	O76742	38	217		
+RAB7_72	fly	FBgn0015795	Rab7	O76742	38	217		
+RAB8	fly	FBgn0262518	Rab8	O18338	26	108	LD44762p (Rab8) (Rab8, isoform C)	w
+RAB8	fly	FBgn0262518	Rab8	O18338	26	108	LD44762p (Rab8) (Rab8, isoform C)	w
 RAB8	human	P61006	RAB8A	P61006	110	445		
 RAB8	worm	G5EFC1	rab-8	G5EFC1	11	55	Rab8	w
 RAB8A	dictyostelium-discoideum	P20790	rab8A	P20790	4	12	Ras-related protein Rab-8A	
@@ -748,8 +748,8 @@ RAB8B	zebrafish	A5PLC7	rab8b	A5PLC7	8	40	small monomeric GTPase
 RAB8B_HUMAN	human	Q92930	RAB8B	Q92930	69	279		
 RAB8IP	human	Q12851	MAP4K2	Q12851	22	243		
 RAB8IPL1	human	Q8IVH8	MAP4K3	Q8IVH8	40	252		
-RAB9	fly	FBgn0032782	Rab9	Q9VIW6	11	45	RE17845p (Rab9)	w
-RAB9	fly	FBgn0032782	Rab9	Q9VIW6	11	45	RE17845p (Rab9)	w
+RAB9	fly	FBgn0032782	Rab9	Q9VIW6	12	47	RE17845p (Rab9)	w
+RAB9	fly	FBgn0032782	Rab9	Q9VIW6	12	47	RE17845p (Rab9)	w
 RAB9	human	P51151	RAB9A	P51151	166	728		
 RAB9	human	Q7Z6M1	RABEPK	Q7Z6M1	12	142	Rab9 effector protein with kelch motifs (40 kDa Rab9 effecto	w
 RAB9	zebrafish	A0A8M2BKC8	zmp:0000001301	A0A8M2BKC8	1	38	Rab9 effector protein with kelch motifs	w
@@ -764,7 +764,7 @@ RAB9B	mus-musculus	Q8BHH2	Rab9b	Q8BHH2	10	41	Ras-related protein Rab-9B
 RAB9B	rattus-norvegicus	D3ZP15	Rab9b	D3ZP15	10	43	small monomeric GTPase	
 RAB9B	zebrafish	A0A8M3BF01	rab9b	A0A8M3BF01	13	53	small monomeric GTPase	
 RAB9B_HUMAN	human	Q9NP90	RAB9B	Q9NP90	40	197		
-RAB9D	fly	FBgn0067052	Rab9D	Q8IRK9	2	31	Ras-related protein Rab-10	
+RAB9D	fly	FBgn0067052	Rab9D	Q8IRK9	2	32	Ras-related protein Rab-10	
 RAB9DB	fly	FBgn0030221	Rab9Db	Q9W2S9	2	32	Ras-related protein Rab-10	
 RAB9E	fly	FBgn0052673	Rab9E	Q8IRK8	2	32	Ras-related protein Rab-10	
 RAB9FA	fly	FBgn0052671	Rab9Fa	Q9VZ47	3	61	Ras-related protein Rab-10	
@@ -803,9 +803,9 @@ RABAC1	mus-musculus	Q9Z0S9	Rabac1	Q9Z0S9	0	56	Prenylated Rab acceptor protein 1
 RABAC1	rattus-norvegicus	O35394	Rabac1	O35394	0	25	Prenylated Rab acceptor protein 1	
 RABAN	human	Q9P2R3	ANKFY1	Q9P2R3	22	230	Ankyrin repeat and FYVE domain-containing protein 1 (Ankyrin	w
 RABAPTIN-4	human	Q15276	RABEP1	Q15276	71	270	Rab GTPase-binding effector protein 1 (Rabaptin-4) (Rabaptin	w
-RABAPTIN-5	fly	FBgn0034585	Rbpn-5	Q9W2M0	11	29	LD23155p (Rabaptin-5)	w
+RABAPTIN-5	fly	FBgn0034585	Rbpn-5	Q9W2M0	14	30	LD23155p (Rabaptin-5)	w
 RABAPTIN-5	human	Q15276	RABEP1	Q15276	71	270	Rab GTPase-binding effector protein 1 (Rabaptin-4) (Rabaptin	w
-RABAPTIN-5-ASSOCIATED	fly	FBgn0262937	Rabex-5	Q9W0H9	65	421	Rabaptin-5-associated exchange factor for Rab5 (SD03358p)	w
+RABAPTIN-5-ASSOCIATED	fly	FBgn0262937	Rabex-5	Q9W0H9	67	426	Rabaptin-5-associated exchange factor for Rab5 (SD03358p)	w
 RABAPTIN-5-ASSOCIATED	human	Q9UJ41	RABGEF1	Q9UJ41	63	595	Rab5 GDP/GTP exchange factor (RAP1) (Rabaptin-5-associated e	w
 RABAPTIN-5ALPHA	human	Q15276	RABEP1	Q15276	71	270	Rab GTPase-binding effector protein 1 (Rabaptin-4) (Rabaptin	w
 RABAPTIN-5BETA	human	Q9H5N1	RABEP2	Q9H5N1	38	133	Rab GTPase-binding effector protein 2 (Rabaptin-5beta)	w
@@ -832,7 +832,7 @@ RABE1E	arabidopsis-thaliana	Q9SF91	RABE1E	Q9SF91	4	12	Ras-related protein RABE1e
 RABE1_HUMAN	human	Q15276	RABEP1	Q15276	71	270		
 RABE2_HUMAN	human	Q9H5N1	RABEP2	Q9H5N1	38	133		
 RABEK_HUMAN	human	Q7Z6M1	RABEPK	Q7Z6M1	12	142		
-RABENOSYN-5	fly	FBgn0261064	Rbsn-5	Q9VLS5	45	415	LD29542p (Rabenosyn-5)	w
+RABENOSYN-5	fly	FBgn0261064	Rbsn-5	Q9VLS5	47	418	LD29542p (Rabenosyn-5)	w
 RABENOSYN-5	human	Q9H1K0	RBSN	Q9H1K0	26	102	Rabenosyn-5 (110 kDa protein) (FYVE finger-containing Rab5 e	w
 RABEP1	human	Q15276	RABEP1	Q15276	71	270	Rab GTPase-binding effector protein 1 (Rabaptin-4) (Rabaptin	
 RABEP1	mus-musculus	O35551	Rabep1	O35551	12	38	Rab GTPase-binding effector protein 1	
@@ -846,7 +846,7 @@ RABEPK	human	Q7Z6M1	RABEPK	Q7Z6M1	12	142	Rab9 effector protein with kelch motifs
 RABEPK	mus-musculus	Q8VCH5	Rabepk	Q8VCH5	1	38	Rab9 effector protein with kelch motifs	
 RABEPK	rattus-norvegicus	Q4V8F4	Rabepk	Q4V8F4	0	28	Rab9 effector protein with kelch motifs	
 RABEPK	zebrafish	Q6GQN7	rabepk	Q6GQN7	2	44	Rab9 effector protein with kelch motifs	
-RABEX-5	fly	FBgn0262937	Rabex-5	Q9W0H9	65	421	Rabaptin-5-associated exchange factor for Rab5 (SD03358p)	
+RABEX-5	fly	FBgn0262937	Rabex-5	Q9W0H9	67	426	Rabaptin-5-associated exchange factor for Rab5 (SD03358p)	
 RABEX-5	human	Q9UJ41	RABGEF1	Q9UJ41	63	595	Rab5 GDP/GTP exchange factor (RAP1) (Rabaptin-5-associated e	w
 RABEX5	human	Q9UJ41	RABGEF1	Q9UJ41	63	595		
 RABF1	arabidopsis-thaliana	Q9CB01	RABF1	Q9CB01	16	56	Ras-related protein RABF1	
@@ -881,13 +881,13 @@ RABGEF1	human	Q9UJ41	RABGEF1	Q9UJ41	63	595	Rab5 GDP/GTP exchange factor (RAP1) (
 RABGEF1	mus-musculus	Q9JM13	Rabgef1	Q9JM13	19	60	Rab5 GDP/GTP exchange factor	
 RABGEF1	zebrafish	Q6P6Y4	rabgef1	Q6P6Y4	16	77	RAB guanine nucleotide exchange factor (GEF) 1	
 RABGGTA	dictyostelium-discoideum	Q55DQ4	rabggta	Q55DQ4	7	61	Geranylgeranyl transferase type-2 subunit alpha	
-RABGGTA	fly	FBgn0037293	RabGGTa	Q9VN77	9	52	Geranylgeranyl transferase type-2 subunit alpha (EC 2.5.1.60	
+RABGGTA	fly	FBgn0037293	RabGGTa	Q9VN77	10	54	Geranylgeranyl transferase type-2 subunit alpha (EC 2.5.1.60	
 RABGGTA	human	Q92696	RABGGTA	Q92696	14	277	Geranylgeranyl transferase type-2 subunit alpha (EC 2.5.1.60	
 RABGGTA	mus-musculus	Q9JHK4	Rabggta	Q9JHK4	5	67	Geranylgeranyl transferase type-2 subunit alpha	
 RABGGTA	rattus-norvegicus	Q08602	Rabggta	Q08602	4	59	Geranylgeranyl transferase type-2 subunit alpha	
 RABGGTA	zebrafish	A0A8M1NBE9	rabggta	A0A8M1NBE9	3	49	Geranylgeranyl transferase type-2 subunit alpha	
 RABGGTB	dictyostelium-discoideum	B0G172	rabggtb	B0G172	2	66	Probable geranylgeranyl transferase type-2 subunit beta	
-RABGGTB	fly	FBgn0028970	RabGGTb	Q9XZ68	11	78	Geranylgeranyl transferase type-2 subunit beta (EC 2.5.1.60)	
+RABGGTB	fly	FBgn0028970	RabGGTb	Q9XZ68	12	79	Geranylgeranyl transferase type-2 subunit beta (EC 2.5.1.60)	
 RABGGTB	human	P53611	RABGGTB	P53611	19	254	Geranylgeranyl transferase type-2 subunit beta (EC 2.5.1.60)	
 RABGGTB	mus-musculus	P53612	Rabggtb	P53612	3	74	Geranylgeranyl transferase type-2 subunit beta	
 RABGGTB	rattus-norvegicus	Q08603	Rabggtb	Q08603	2	62	Geranylgeranyl transferase type-2 subunit beta	
@@ -971,8 +971,8 @@ RABX1	fly	FBgn0015372	RabX1	Q9V3C2	9	40	LD47384p (Rab-related GTP-binding protei
 RABX2	fly	FBgn0030200	RabX2	Q9W2V3	9	71	Ras-related protein Rab-10	
 RABX4	fly	FBgn0051118	RabX4	Q9VC31	3	16	RabX4	w
 RABX4	fly	FBgn0051118	RabX4	Q9VC31	3	16	RabX4	w
-RABX5	fly	FBgn0035255	RabX5	Q9W0A7	5	34	RabX5	w
-RABX5	fly	FBgn0035255	RabX5	Q9W0A7	5	34	RabX5	w
+RABX5	fly	FBgn0035255	RabX5	Q9W0A7	6	34	RabX5	w
+RABX5	fly	FBgn0035255	RabX5	Q9W0A7	6	34	RabX5	w
 RABX5_HUMAN	human	Q9UJ41	RABGEF1	Q9UJ41	63	595		
 RABX6	fly	FBgn0035155	RabX6	M9PE35	1	7	RabX6, isoform B	w
 RABX6	fly	FBgn0035155	RabX6	M9PE35	1	7	RabX6, isoform B	w

@@ -62,11 +62,11 @@ MAN7	oryza-sativa-subsp-japonica	Q2RBB1	MAN7	Q2RBB1	0	4	Mannan endo-1,4-beta-man
 MAN8	oryza-sativa-subsp-japonica	Q0IQJ7	MAN8	Q0IQJ7	2	35	Mannan endo-1,4-beta-mannosidase 8	
 MAN9	oryza-sativa-subsp-japonica	Q6Z310	MAN9	Q6Z310	1	35	Putative mannan endo-1,4-beta-mannosidase 9	
 MAN9-MANNOSIDASE	human	P33908	MAN1A1	P33908	14	149	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IA (EC 3.2.1.	w
-MAN9GLCNAC2	fly	FBgn0032234	gny	Q9VKX7	1	12	Probable dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucos	w
+MAN9GLCNAC2	fly	FBgn0032234	gny	Q9VKX7	2	19	Probable dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucos	w
 MAN9GLCNAC2	human	Q9Y672	ALG6	Q9Y672	7	82	Dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucosyltransfe	w
 MAN9GLCNAC2	worm	Q09226	algn-6	Q09226	1	1	Probable dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucos	w
 MAN9GLCNAC2	yeast	Q12001	ALG6	Q12001	1	6	Dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucosyltransfe	w
-MAN9GLCNAC2-PP-DOLICHYL	fly	FBgn0032234	gny	Q9VKX7	1	12	Probable dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucos	w
+MAN9GLCNAC2-PP-DOLICHYL	fly	FBgn0032234	gny	Q9VKX7	2	19	Probable dolichyl pyrophosphate Man9GlcNAc2 alpha-1,3-glucos	w
 MAN9GLCNAC2-SPECIFIC	human	Q9UKM7	MAN1B1	Q9UKM7	11	151	Endoplasmic reticulum mannosyl-oligosaccharide 1,2-alpha-man	w
 MANA	dictyostelium-discoideum	P34098	manA	P34098	0	2	Lysosomal alpha-mannosidase	
 MANA	escherichia-coli-83333	P00946	manA	P00946	0	3	Mannose-6-phosphate isomerase	
@@ -101,8 +101,8 @@ MANEAL	rattus-norvegicus	F1M1G2	Maneal	F1M1G2	0	6	Mannosidase, endo-alpha-like
 MANEAL	zebrafish	Q1L8D2	maneal	Q1L8D2	1	19	Glycoprotein endo-alpha-1,2-mannosidase-like protein	
 MANEA_HUMAN	human	Q5SRI9	MANEA	Q5SRI9	18	114		
 MANEL_HUMAN	human	Q5VSG8	MANEAL	Q5VSG8	11	110		
-MANF	fly	FBgn0027095	Manf	Q9XZ63	22	250	Mesencephalic astrocyte-derived neurotrophic factor homolog 	w
-MANF	fly	FBgn0027095	Manf	Q9XZ63	22	250	Mesencephalic astrocyte-derived neurotrophic factor homolog 	w
+MANF	fly	FBgn0027095	Manf	Q9XZ63	26	256	Mesencephalic astrocyte-derived neurotrophic factor homolog 	w
+MANF	fly	FBgn0027095	Manf	Q9XZ63	26	256	Mesencephalic astrocyte-derived neurotrophic factor homolog 	w
 MANF	human	P55145	MANF	P55145	11	130	Mesencephalic astrocyte-derived neurotrophic factor (Arginin	
 MANF	mus-musculus	Q9CXI5	Manf	Q9CXI5	0	3	Mesencephalic astrocyte-derived neurotrophic factor	
 MANF	rattus-norvegicus	P0C5H9	Manf	P0C5H9	0	5	Mesencephalic astrocyte-derived neurotrophic factor	
@@ -117,7 +117,7 @@ MANGANESE-DEPENDENT	human	Q3LIE5	ADPRM	Q3LIE5	10	123	Manganese-dependent ADP-rib
 MANGANESE-DEPENDENT	zebrafish	Q7T291	adprm	Q7T291	1	5	Manganese-dependent ADP-ribose/CDP-alcohol diphosphatase	w
 MANGANESE-TRANSPORTING	worm	P90747	catp-8	P90747	0	13	Probable manganese-transporting ATPase catp-8	w
 MANGETOUT	fly	FBgn0050361	mtt	A0A0B4KF15	2	19	Mangetout, isoform G	w
-MANHEIM	fly	FBgn0028525	c(2)M	Q9VJL5	2	7	Crossover suppressor on 2 of manheim (GM03132p)	w
+MANHEIM	fly	FBgn0028525	c(2)M	Q9VJL5	2	8	Crossover suppressor on 2 of manheim (GM03132p)	w
 MANI	human	A1KXE4	FAM168B	A1KXE4	6	80		
 MANIC	human	O00587	MFNG	O00587	8	77	Beta-1,3-N-acetylglucosaminyltransferase manic fringe (EC 2.	w
 MANIC	zebrafish	Q5YB40	mfng	Q5YB40	1	17	Beta-1,3-N-acetylglucosaminyltransferase manic fringe	w
@@ -144,7 +144,7 @@ MANNOPROTEIN	yeast	P47001	CIS3	P47001	0	14	Cell wall mannoprotein CIS3	w
 MANNOPROTEIN	yeast	Q03178	PIR1	Q03178	0	14	Cell wall mannoprotein PIR1	w
 MANNOPROTEIN	yeast	Q03180	PIR3	Q03180	0	4	Cell wall mannoprotein PIR3	w
 MANNOPROTEIN	yeast	Q12355	PST1	Q12355	0	8	Cell wall mannoprotein PST1	w
-MANNOSE	fly	FBgn0032799	Dpm1	Q9VIU7	3	65	Dolichol-phosphate mannosyltransferase subunit 1 (DPM syntha	w
+MANNOSE	fly	FBgn0032799	Dpm1	Q9VIU7	5	78	Dolichol-phosphate mannosyltransferase subunit 1 (DPM syntha	w
 MANNOSE	human	A0PJK1	SLC5A10	A0PJK1	6	38	Sodium/mannose cotransporter SLC5A10 (Sodium/glucose cotrans	w
 MANNOSE	human	A5D8T8	CLEC18A	A5D8T8	3	37	C-type lectin domain family 18 member A (Mannose receptor-li	w
 MANNOSE	human	O60664	PLIN3	O60664	17	298	Perilipin-3 (47 kDa mannose 6-phosphate receptor-binding pro	w
@@ -162,7 +162,7 @@ MANNOSE	yeast	Q06815	MRL1	Q06815	0	24	Mannose 6-phosphate receptor-like protein 
 MANNOSE	zebrafish	A0A0R4INM0	mrc1a	A0A0R4INM0	0	1	Macrophage mannose receptor 1	w
 MANNOSE	zebrafish	A0A286YBI9	mrc2	A0A286YBI9	0	1	C-type mannose receptor 2	w
 MANNOSE	zebrafish	F1Q7N5	slc5a10	F1Q7N5	0	1	Sodium/mannose cotransporter SLC5A10	w
-MANNOSE-1-PHOSPHATE	fly	FBgn0037279	Gmppb	Q7JZB4	2	62	Mannose-1-phosphate guanyltransferase beta (EC 2.7.7.13) (GD	w
+MANNOSE-1-PHOSPHATE	fly	FBgn0037279	Gmppb	Q7JZB4	3	68	Mannose-1-phosphate guanyltransferase beta (EC 2.7.7.13) (GD	w
 MANNOSE-1-PHOSPHATE	human	Q96IJ6	GMPPA	Q96IJ6	5	94	Mannose-1-phosphate guanylyltransferase regulatory subunit a	w
 MANNOSE-1-PHOSPHATE	human	Q9Y5P6	GMPPB	Q9Y5P6	6	159	Mannose-1-phosphate guanylyltransferase catalytic subunit be	w
 MANNOSE-1-PHOSPHATE	worm	A3QMC8	tag-335	A3QMC8	1	15	Mannose-1-phosphate guanylyltransferase catalytic subunit be	w
@@ -170,7 +170,7 @@ MANNOSE-1-PHOSPHATE	yeast	P41940	PSA1	P41940	1	216	Mannose-1-phosphate guanyltra
 MANNOSE-1-PHOSPHATE	zebrafish	Q6DBU5	gmppb	Q6DBU5	3	17	Mannose-1-phosphate guanylyltransferase catalytic subunit be	w
 MANNOSE-1-PHOSPHATE	zebrafish	Q6GMK8	gmppaa	Q6GMK8	1	13	Mannose-1-phosphate guanylyltransferase regulatory subunit a	w
 MANNOSE-1-PHOSPHATE	zebrafish	Q7SXP8	gmppab	Q7SXP8	1	11	Mannose-1-phosphate guanylyltransferase regulatory subunit a	w
-MANNOSE-6-PHOSPHATE	fly	FBgn0286506	Mpi	Q9VH77	0	19	mannose-6-phosphate isomerase (EC 5.3.1.8) (Phosphohexomutas	w
+MANNOSE-6-PHOSPHATE	fly	FBgn0286506	Mpi	Q9VH77	1	27	mannose-6-phosphate isomerase (EC 5.3.1.8) (Phosphohexomutas	w
 MANNOSE-6-PHOSPHATE	human	O60664	PLIN3	O60664	17	298	Perilipin-3 (47 kDa mannose 6-phosphate receptor-binding pro	w
 MANNOSE-6-PHOSPHATE	human	P11717	IGF2R	P11717	8	264	Cation-independent mannose-6-phosphate receptor (CI Man-6-P 	w
 MANNOSE-6-PHOSPHATE	human	P20645	M6PR	P20645	14	208	Cation-dependent mannose-6-phosphate receptor (CD Man-6-P re	w
@@ -189,16 +189,16 @@ MANNOSE-BINDING	human	Q9H0V9	LMAN2L	Q9H0V9	20	173	VIP36-like protein (Lectin man
 MANNOSE-BINDING	human	Q9HAT1	LMAN1L	Q9HAT1	6	60	Protein ERGIC-53-like (ERGIC53-like protein) (Lectin mannose	w
 MANNOSE-BINDING	zebrafish	A0A8M9PXC5	hbl1	A0A8M9PXC5	2	15	Mannose-binding protein C isoform X4	w
 MANNOSE-BINDING	zebrafish	A5PMC4	lman2	A5PMC4	7	31	Lectin, mannose-binding 2	w
-MANNOSE-P-DOLICHOL	fly	FBgn0031662	CG3792	Q9VMW8	0	14	Mannose-P-dolichol utilization defect 1 protein homolog	w
+MANNOSE-P-DOLICHOL	fly	FBgn0031662	CG3792	Q9VMW8	0	18	Mannose-P-dolichol utilization defect 1 protein homolog	w
 MANNOSE-P-DOLICHOL	human	O75352	MPDU1	O75352	1	125	Mannose-P-dolichol utilization defect 1 protein (Suppressor 	w
 MANNOSE-P-DOLICHOL	worm	Q20157	mpdu-1	Q20157	0	16	Mannose-P-dolichol utilization defect 1 protein homolog	w
 MANNOSE-SPECIFIC	human	P49257	LMAN1	P49257	33	450	Protein ERGIC-53 (ER-Golgi intermediate compartment 53 kDa p	w
 MANNOSID	human	O60476	MAN1A2	O60476	8	111	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IB (EC 3.2.1.	w
-MANNOSIDASE	fly	FBgn0023511	Edem1	M9PG98	3	33	alpha-1,2-Mannosidase (EC 3.2.1.-)	w
+MANNOSIDASE	fly	FBgn0023511	Edem1	M9PG98	4	33	alpha-1,2-Mannosidase (EC 3.2.1.-)	w
 MANNOSIDASE	fly	FBgn0032480	Edem2	Q9VK27	1	14	alpha-1,2-Mannosidase (EC 3.2.1.-)	w
 MANNOSIDASE	fly	FBgn0039634	alpha-Man-Ib	Q9VAP8	0	11	alpha-1,2-Mannosidase (EC 3.2.1.-)	w
 MANNOSIDASE	fly	FBgn0051202	alpha-Man-Ic	Q8IMK0	0	6	alpha-1,2-Mannosidase (EC 3.2.1.-)	w
-MANNOSIDASE	fly	FBgn0259170	alpha-Man-Ia	Q8IRL4	295	2433	alpha-1,2-Mannosidase (EC 3.2.1.-)	w
+MANNOSIDASE	fly	FBgn0259170	alpha-Man-Ia	Q8IRL4	295	2434	alpha-1,2-Mannosidase (EC 3.2.1.-)	w
 MANNOSIDASE	human	O00462	MANBA	O00462	6	106	Beta-mannosidase (EC 3.2.1.25) (Lysosomal beta A mannosidase	w
 MANNOSIDASE	human	O00754	MAN2B1	O00754	2	72	Lysosomal alpha-mannosidase (Laman) (EC 3.2.1.24) (Lysosomal	w
 MANNOSIDASE	human	O60476	MAN1A2	O60476	8	111	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IB (EC 3.2.1.	w
@@ -229,16 +229,16 @@ MANNOSIDASE	zebrafish	E9QJF1	edem1	E9QJF1	3	19	alpha-1,2-Mannosidase	w
 MANNOSIDASE	zebrafish	Q5RHM7	man1a1	Q5RHM7	0	2	alpha-1,2-Mannosidase	w
 MANNOSIDASE-LIKE	human	Q5VSG8	MANEAL	Q5VSG8	11	110	Glycoprotein endo-alpha-1,2-mannosidase-like protein (EC 3.2	w
 MANNOSIDASE-LIKE	zebrafish	Q1L8D2	maneal	Q1L8D2	1	19	Glycoprotein endo-alpha-1,2-mannosidase-like protein	w
-MANNOSIDE	fly	FBgn0039738	Mgat2	Q961U0	374	2384	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+MANNOSIDE	fly	FBgn0039738	Mgat2	Q961U0	375	2384	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
 MANNOSYL	yeast	P33300	SUR1	P33300	1	10	Mannosyl phosphorylinositol ceramide synthase SUR1	w
 MANNOSYL	yeast	P35206	CSG2	P35206	2	12	Mannosyl phosphorylinositol ceramide synthase regulatory pro	w
 MANNOSYL	yeast	P38287	CSH1	P38287	1	5	Mannosyl phosphorylinositol ceramide synthase CSH1	w
-MANNOSYL-GLYCOPROTEIN	fly	FBgn0030839	ENGase	Q9VX51	0	4	mannosyl-glycoprotein endo-beta-N-acetylglucosaminidase (EC 	w
-MANNOSYL-GLYCOPROTEIN	fly	FBgn0034521	Mgat1	Q60GL7	234	2389	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
-MANNOSYL-GLYCOPROTEIN	fly	FBgn0036446	Mgat4a	Q9VUH4	2	7	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
-MANNOSYL-GLYCOPROTEIN	fly	FBgn0036447	Mgat4b	Q9VUH5	1	6	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
-MANNOSYL-GLYCOPROTEIN	fly	FBgn0039738	Mgat2	Q961U0	374	2384	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
-MANNOSYL-GLYCOPROTEIN	fly	FBgn0051849	Mgat3	Q95RF3	1	23	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
+MANNOSYL-GLYCOPROTEIN	fly	FBgn0030839	ENGase	Q9VX51	2	6	mannosyl-glycoprotein endo-beta-N-acetylglucosaminidase (EC 	w
+MANNOSYL-GLYCOPROTEIN	fly	FBgn0034521	Mgat1	Q60GL7	235	2391	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+MANNOSYL-GLYCOPROTEIN	fly	FBgn0036446	Mgat4a	Q9VUH4	3	8	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
+MANNOSYL-GLYCOPROTEIN	fly	FBgn0036447	Mgat4b	Q9VUH5	1	7	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
+MANNOSYL-GLYCOPROTEIN	fly	FBgn0039738	Mgat2	Q961U0	375	2384	Alpha-1,6-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
+MANNOSYL-GLYCOPROTEIN	fly	FBgn0051849	Mgat3	Q95RF3	1	24	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
 MANNOSYL-GLYCOPROTEIN	human	A6NG13	MGAT4D	A6NG13	4	17	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
 MANNOSYL-GLYCOPROTEIN	human	P26572	MGAT1	P26572	4	107	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
 MANNOSYL-GLYCOPROTEIN	human	Q09327	MGAT3	Q09327	4	36	Beta-1,4-mannosyl-glycoprotein 4-beta-N-acetylglucosaminyltr	w
@@ -260,7 +260,7 @@ MANNOSYL-GLYCOPROTEIN	zebrafish	E7FDN9	si:ch73-91k6.2	E7FDN9	1	3	Alpha-1,6-manno
 MANNOSYL-GLYCOPROTEIN	zebrafish	F1QTA6	mgat1a	F1QTA6	2	6	Alpha-1,3-mannosyl-glycoprotein 2-beta-N-acetylglucosaminylt	w
 MANNOSYL-GLYCOPROTEIN	zebrafish	Q1ECU6	mgat5	Q1ECU6	0	32	alpha-1,6-mannosyl-glycoprotein 6-beta-N-acetylglucosaminylt	w
 MANNOSYL-GLYCOPROTEIN	zebrafish	Q5U3T0	mgat4c	Q5U3T0	0	2	Alpha-1,3-mannosyl-glycoprotein 4-beta-N-acetylglucosaminylt	w
-MANNOSYL-OLIGOSACCHARIDE	fly	FBgn0030289	Gcs1	Q9VZ04	116	2384	Mannosyl-oligosaccharide glucosidase (EC 3.2.1.106)	w
+MANNOSYL-OLIGOSACCHARIDE	fly	FBgn0030289	Gcs1	Q9VZ04	118	2387	Mannosyl-oligosaccharide glucosidase (EC 3.2.1.106)	w
 MANNOSYL-OLIGOSACCHARIDE	human	O60476	MAN1A2	O60476	8	111	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IB (EC 3.2.1.	w
 MANNOSYL-OLIGOSACCHARIDE	human	P33908	MAN1A1	P33908	14	149	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IA (EC 3.2.1.	w
 MANNOSYL-OLIGOSACCHARIDE	human	P49641	MAN2A2	P49641	3	110	Alpha-mannosidase 2x (EC 3.2.1.114) (Alpha-mannosidase IIx) 	w
@@ -277,17 +277,17 @@ MANNOSYLGLYCOPROTEIN	human	Q09328	MGAT5	Q09328	15	321	Alpha-1,6-mannosylglycopro
 MANNOSYLGLYCOPROTEIN	human	Q3V5L5	MGAT5B	Q3V5L5	21	326	Alpha-1,6-mannosylglycoprotein 6-beta-N-acetylglucosaminyltr	w
 MANNOSYLTRANSFERASE	fly	FBgn0001404	egh	O01346	0	9	Beta-1,4-mannosyltransferase egh (EC 2.4.1.-) (Protein egghe	w
 MANNOSYLTRANSFERASE	fly	FBgn0003292	rt	Q9VTK2	2	15	Protein O-mannosyltransferase 1 (EC 2.4.1.109) (Dolichyl-pho	w
-MANNOSYLTRANSFERASE	fly	FBgn0032799	Dpm1	Q9VIU7	3	65	Dolichol-phosphate mannosyltransferase subunit 1 (DPM syntha	w
-MANNOSYLTRANSFERASE	fly	FBgn0034649	PIG-M	Q9W2E4	2	13	GPI mannosyltransferase 1 (EC 2.4.1.-) (GPI mannosyltransfer	w
-MANNOSYLTRANSFERASE	fly	FBgn0035401	Alg2	Q9VZU8	3	40	Alpha-1,3/1,6-mannosyltransferase ALG2 (EC 2.4.1.132) (EC 2.	w
-MANNOSYLTRANSFERASE	fly	FBgn0035464	PIG-B	Q9VZM5	2	14	GPI mannosyltransferase 3 (EC 2.4.1.-) (GPI mannosyltransfer	w
-MANNOSYLTRANSFERASE	fly	FBgn0037108	Alg11	Q9VP06	0	17	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
-MANNOSYLTRANSFERASE	fly	FBgn0037743	Alg12	Q9VH78	12	60	Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransfera	w
-MANNOSYLTRANSFERASE	fly	FBgn0039293	Alg9	Q9VBV8	3	12	Mannosyltransferase (EC 2.4.1.-)	w
-MANNOSYLTRANSFERASE	fly	FBgn0053977	Dpm3	Q2PDR0	17	137	Dolichol-phosphate mannosyltransferase subunit 3	w
-MANNOSYLTRANSFERASE	fly	FBgn0086368	tw	Q9W5D4	1	16	Protein O-mannosyl-transferase 2 (EC 2.4.1.109) (Dolichyl-ph	w
-MANNOSYLTRANSFERASE	fly	FBgn0265174	PIG-V	Q9V7W1	1	8	GPI mannosyltransferase 2 (EC 2.4.1.-) (GPI mannosyltransfer	w
-MANNOSYLTRANSFERASE	fly	FBgn0266438	PIG-Z	Q8MT80	0	7	GPI mannosyltransferase 4 (EC 2.4.1.-) (GPI mannosyltransfer	w
+MANNOSYLTRANSFERASE	fly	FBgn0032799	Dpm1	Q9VIU7	5	78	Dolichol-phosphate mannosyltransferase subunit 1 (DPM syntha	w
+MANNOSYLTRANSFERASE	fly	FBgn0034649	PIG-M	Q9W2E4	5	31	GPI mannosyltransferase 1 (EC 2.4.1.-) (GPI mannosyltransfer	w
+MANNOSYLTRANSFERASE	fly	FBgn0035401	Alg2	Q9VZU8	3	43	Alpha-1,3/1,6-mannosyltransferase ALG2 (EC 2.4.1.132) (EC 2.	w
+MANNOSYLTRANSFERASE	fly	FBgn0035464	PIG-B	Q9VZM5	5	31	GPI mannosyltransferase 3 (EC 2.4.1.-) (GPI mannosyltransfer	w
+MANNOSYLTRANSFERASE	fly	FBgn0037108	Alg11	Q9VP06	1	24	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
+MANNOSYLTRANSFERASE	fly	FBgn0037743	Alg12	Q9VH78	13	63	Dol-P-Man:Man(7)GlcNAc(2)-PP-Dol alpha-1,6-mannosyltransfera	w
+MANNOSYLTRANSFERASE	fly	FBgn0039293	Alg9	Q9VBV8	4	17	Mannosyltransferase (EC 2.4.1.-)	w
+MANNOSYLTRANSFERASE	fly	FBgn0053977	Dpm3	Q2PDR0	19	143	Dolichol-phosphate mannosyltransferase subunit 3	w
+MANNOSYLTRANSFERASE	fly	FBgn0086368	tw	Q9W5D4	1	17	Protein O-mannosyl-transferase 2 (EC 2.4.1.109) (Dolichyl-ph	w
+MANNOSYLTRANSFERASE	fly	FBgn0265174	PIG-V	Q9V7W1	3	21	GPI mannosyltransferase 2 (EC 2.4.1.-) (GPI mannosyltransfer	w
+MANNOSYLTRANSFERASE	fly	FBgn0266438	PIG-Z	Q8MT80	1	11	GPI mannosyltransferase 4 (EC 2.4.1.-) (GPI mannosyltransfer	w
 MANNOSYLTRANSFERASE	human	O60762	DPM1	O60762	7	208	Dolichol-phosphate mannosyltransferase subunit 1 (EC 2.4.1.8	w
 MANNOSYLTRANSFERASE	human	Q2TAA5	ALG11	Q2TAA5	2	149	GDP-Man:Man(3)GlcNAc(2)-PP-Dol alpha-1,2-mannosyltransferase	w
 MANNOSYLTRANSFERASE	human	Q86VD9	PIGZ	Q86VD9	0	23	GPI alpha-1,2-mannosyltransferase 4 (EC 2.4.1.-) (GPI mannos	w

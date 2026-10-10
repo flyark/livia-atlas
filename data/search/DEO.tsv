@@ -31,7 +31,7 @@ DEOR	shigella-dysenteriae-serotype-1	Q32I33	deoR	Q32I33	0	1	Transcriptional repr
 DEOXY-5	human	Q8TCD5	NT5C	Q8TCD5	10	185	5'(3')-deoxyribonucleotidase, cytosolic type (EC 3.1.3.-) (C	w
 DEOXY-5	human	Q9NPB1	NT5M	Q9NPB1	8	86	5'(3')-deoxyribonucleotidase, mitochondrial (5',3'-nucleotid	w
 DEOXY-D-GLYCERO-D-GALACTO-NONONATE	human	Q9NR45	NANS	Q9NR45	2	138	N-acetylneuraminate-9-phosphate synthase (EC 2.5.1.57) (3-de	w
-DEOXY-D-RIBOSE	fly	FBgn0033735	Dera	Q7K209	2	26	deoxyribose-phosphate aldolase (EC 4.1.2.4) (2-deoxy-D-ribos	w
+DEOXY-D-RIBOSE	fly	FBgn0033735	Dera	Q7K209	3	31	deoxyribose-phosphate aldolase (EC 4.1.2.4) (2-deoxy-D-ribos	w
 DEOXY-D-RIBOSE	human	Q9Y315	DERA	Q9Y315	6	74	Deoxyribose-phosphate aldolase (DERA) (EC 4.1.2.4) (2-deoxy-	w
 DEOXY-GLUCOSE	yeast	P32330	DGR2	P32330	3	7	2-deoxy-glucose resistant protein 2	w
 DEOXYADENOSINE	human	P27707	DCK	P27707	3	188	Deoxycytidine kinase (dCK) (EC 2.7.1.74) (Deoxyadenosine kin	w
@@ -43,7 +43,7 @@ DEOXYCYTIDINE	virus	P21974	FPV059	P21974	8	250	Probable deoxycytidine kinase FPV
 DEOXYCYTIDINE	virus	Q9J579	FPV151	Q9J579	4	250	Probable deoxycytidine kinase FPV151	w
 DEOXYCYTIDINE-TRIPHOSPHATASE	human	Q9H773	DCTPP1	Q9H773	2	100	dCTP pyrophosphatase 1 (EC 3.6.1.12) (Deoxycytidine-triphosp	w
 DEOXYCYTIDYL	human	Q9UBZ9	REV1	Q9UBZ9	25	174	Translesion synthesis protein REV1 (Alpha integrin-binding p	w
-DEOXYCYTIDYLATE	fly	FBgn0036959	CG6951	Q9VWA2	0	42	Probable deoxycytidylate deaminase (EC 3.5.4.12) (dCMP deami	w
+DEOXYCYTIDYLATE	fly	FBgn0036959	CG6951	Q9VWA2	0	43	Probable deoxycytidylate deaminase (EC 3.5.4.12) (dCMP deami	w
 DEOXYCYTIDYLATE	human	P30085	CMPK1	P30085	2	193	UMP-CMP kinase (EC 2.7.4.14) (Deoxycytidylate kinase) (CK) (	w
 DEOXYCYTIDYLATE	human	P32321	DCTD	P32321	1	71	Deoxycytidylate deaminase (EC 3.5.4.12) (dCMP deaminase)	w
 DEOXYCYTIDYLATE	yeast	P06773	DCD1	P06773	0	5	Deoxycytidylate deaminase	w
@@ -54,7 +54,7 @@ DEOXYGUANOSINE	human	P27707	DCK	P27707	3	188	Deoxycytidine kinase (dCK) (EC 2.7.
 DEOXYGUANOSINE	human	Q16854	DGUOK	Q16854	8	193	Deoxyguanosine kinase, mitochondrial (EC 2.7.1.113) (Deoxyad	w
 DEOXYGUANOSINE	zebrafish	A5WUY2	dguok	A5WUY2	1	71	deoxyguanosine kinase	w
 DEOXYHYPUSINE	fly	FBgn0035854	Dhps	Q9VSF4	1	11	Probable deoxyhypusine synthase (DHS) (EC 2.5.1.46)	w
-DEOXYHYPUSINE	fly	FBgn0261479	nero	Q9V9U4	1	7	Deoxyhypusine hydroxylase (DOHH) (EC 1.14.99.29) (Deoxyhypus	w
+DEOXYHYPUSINE	fly	FBgn0261479	nero	Q9V9U4	4	12	Deoxyhypusine hydroxylase (DOHH) (EC 1.14.99.29) (Deoxyhypus	w
 DEOXYHYPUSINE	human	P49366	DHPS	P49366	6	128	Deoxyhypusine synthase (DHS) (EC 2.5.1.46)	w
 DEOXYHYPUSINE	human	Q9BU89	DOHH	Q9BU89	19	159	Deoxyhypusine hydroxylase (hDOHH) (EC 1.14.99.29) (Deoxyhypu	w
 DEOXYHYPUSINE	worm	Q17949	dohh-1	Q17949	0	8	Deoxyhypusine hydroxylase	w
@@ -134,12 +134,12 @@ DEOXYRIBONUCLEOSIDE	fly	FBgn0022338	dnk	Q9XZT6	2	204	Deoxynucleoside kinase (EC 
 DEOXYRIBONUCLEOTIDASE	human	Q8TCD5	NT5C	Q8TCD5	10	185	5'(3')-deoxyribonucleotidase, cytosolic type (EC 3.1.3.-) (C	w
 DEOXYRIBONUCLEOTIDASE	human	Q9NPB1	NT5M	Q9NPB1	8	86	5'(3')-deoxyribonucleotidase, mitochondrial (5',3'-nucleotid	w
 DEOXYRIBOSE-5-PHOSPHATE	human	P12956	XRCC6	P12956	63	756	DNA repair protein Ku70 (EC 4.2.99.18) (EC 5.6.2.4) (5'-deox	w
-DEOXYRIBOSE-PHOSPHATE	fly	FBgn0033735	Dera	Q7K209	2	26	deoxyribose-phosphate aldolase (EC 4.1.2.4) (2-deoxy-D-ribos	w
+DEOXYRIBOSE-PHOSPHATE	fly	FBgn0033735	Dera	Q7K209	3	31	deoxyribose-phosphate aldolase (EC 4.1.2.4) (2-deoxy-D-ribos	w
 DEOXYRIBOSE-PHOSPHATE	human	P06746	POLB	P06746	17	125	DNA polymerase beta (EC 2.7.7.7) (5'-deoxyribose-phosphate l	w
 DEOXYRIBOSE-PHOSPHATE	human	P54098	POLG	P54098	13	155	DNA polymerase subunit gamma-1 (EC 2.7.7.7) (3'-5' exodeoxyr	w
 DEOXYRIBOSE-PHOSPHATE	human	Q9Y315	DERA	Q9Y315	6	74	Deoxyribose-phosphate aldolase (DERA) (EC 4.1.2.4) (2-deoxy-	w
 DEOXYRIBOSE-PHOSPHATE	worm	Q19264	F09E5.3	Q19264	0	35	Putative deoxyribose-phosphate aldolase	w
-DEOXYURIDINE	fly	FBgn0250837	dUTPase	Q9V3I1	7	189	Deoxyuridine 5'-triphosphate nucleotidohydrolase (dUTPase) (	w
+DEOXYURIDINE	fly	FBgn0250837	dUTPase	Q9V3I1	10	215	Deoxyuridine 5'-triphosphate nucleotidohydrolase (dUTPase) (	w
 DEOXYURIDINE	human	O00142	TK2	O00142	9	137	Thymidine kinase 2, mitochondrial (EC 2.7.1.21) (2'-deoxyuri	w
 DEOXYURIDINE	human	P33316	DUT	P33316	10	203	Deoxyuridine 5'-triphosphate nucleotidohydrolase, mitochondr	w
 DEOXYURIDINE	human	Q6ZN92	DUTL	Q6ZN92	1	5	Putative inactive deoxyuridine 5'-triphosphate nucleotidohyd	w

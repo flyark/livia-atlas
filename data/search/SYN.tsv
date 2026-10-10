@@ -1,8 +1,8 @@
-SYN	fly	FBgn0004575	Syn	E2QCY9	1	9	Synapsin, isoform D	
+SYN	fly	FBgn0004575	Syn	E2QCY9	2	14	Synapsin, isoform D	
 SYN	human	O15061	SYNM	O15061	38	172		
 SYN-1	human	O95988	TCL1B	O95988	12	136	T-cell leukemia/lymphoma protein 1B (Oncogene TCL-1B) (Oncog	w
 SYN1	arabidopsis-thaliana	Q9S7T7	SYN1	Q9S7T7	18	54	Sister chromatid cohesion 1 protein 1	
-SYN1	fly	FBgn0037130	Syn1	Q9VNY2	4	23	IP02644p (Syntrophin-like 1, isoform B) (Syntrophin-like 1, 	
+SYN1	fly	FBgn0037130	Syn1	Q9VNY2	5	24	IP02644p (Syntrophin-like 1, isoform B) (Syntrophin-like 1, 	
 SYN1	human	P17600	SYN1	P17600	17	131	Synapsin-1 (Brain protein 4.1) (Synapsin I)	
 SYN1	mus-musculus	O88935	Syn1	O88935	5	69	Synapsin-1	
 SYN1	rattus-norvegicus	P09951	Syn1	P09951	2	48	Synapsin-1	
@@ -17,7 +17,7 @@ SYN1B	dictyostelium-discoideum	Q55DR2	syn1B	Q55DR2	9	51	t-SNARE family protein
 SYN1L_HUMAN	human	A6NDD5	SYNDIG1L	A6NDD5	7	131		
 SYN1_HUMAN	human	P17600	SYN1	P17600	17	131		
 SYN2	arabidopsis-thaliana	Q9FQ20	SYN2	Q9FQ20	12	53	Sister chromatid cohesion 1 protein 2	
-SYN2	fly	FBgn0034135	Syn2	A1ZAH3	7	23	FI16515p1 (Syntrophin-like 2, isoform E)	
+SYN2	fly	FBgn0034135	Syn2	A1ZAH3	8	24	FI16515p1 (Syntrophin-like 2, isoform E)	
 SYN2	human	Q92777	SYN2	Q92777	11	133	Synapsin-2 (Synapsin II)	
 SYN2	mus-musculus	Q64332	Syn2	Q64332	3	91	Synapsin-2	
 SYN2	rattus-norvegicus	Q63537	Syn2	Q63537	4	76	Synapsin-2	
@@ -63,7 +63,7 @@ SYNAPSE-ASSOCIATED	human	Q9BYB0	SHANK3	Q9BYB0	86	452	SH3 and multiple ankyrin re
 SYNAPSE-ASSOCIATED	human	Q9UPX8	SHANK2	Q9UPX8	34	131	SH3 and multiple ankyrin repeat domains protein 2 (Shank2) (	w
 SYNAPSES	fly	FBgn0034602	Lapsyn	Q9W2J7	4	19	GH22922p (Leucine-rich repeat activity-regulated protein at 	w
 SYNAPSES	worm	Q19469	sad-1	Q19469	13	44	Serine/threonine kinase SAD-1 (EC 2.7.11.1) (Synapses of Amp	w
-SYNAPSIN	fly	FBgn0004575	Syn	E2QCY9	1	9	Synapsin, isoform D	w
+SYNAPSIN	fly	FBgn0004575	Syn	E2QCY9	2	14	Synapsin, isoform D	w
 SYNAPSIN	human	O14994	SYN3	O14994	12	101	Synapsin-3 (Synapsin III)	w
 SYNAPSIN	human	P17600	SYN1	P17600	17	131	Synapsin-1 (Brain protein 4.1) (Synapsin I)	w
 SYNAPSIN	human	Q92777	SYN2	Q92777	11	133	Synapsin-2 (Synapsin II)	w
@@ -111,8 +111,8 @@ SYNAPTIC	zebrafish	Q0P3X7	?	Q0P3X7	1	1	Synaptic plasticity regulator PANTS	w
 SYNAPTIC	zebrafish	Q1L899	insy1	Q1L899	1	3	Inhibitory synaptic factor 1	w
 SYNAPTIC	zebrafish	Q8JFV8	vat1	Q8JFV8	0	3	Synaptic vesicle membrane protein VAT-1 homolog	w
 SYNAPTIC	zebrafish	X1WCQ3	sv2bb	X1WCQ3	0	1	Synaptic vesicle glycoprotein 2B	w
-SYNAPTOBREVIN	fly	FBgn0003660	Syb	P18489	469	2770	Synaptobrevin	w
-SYNAPTOBREVIN	fly	FBgn0013342	nSyb	Q9W0C1	258	2502	neuronal Synaptobrevin	w
+SYNAPTOBREVIN	fly	FBgn0003660	Syb	P18489	475	2770	Synaptobrevin	w
+SYNAPTOBREVIN	fly	FBgn0013342	nSyb	Q9W0C1	270	2505	neuronal Synaptobrevin	w
 SYNAPTOBREVIN	human	O15498	YKT6	O15498	29	324	Synaptobrevin homolog YKT6 (EC 2.3.1.-)	w
 SYNAPTOBREVIN	yeast	P31109	SNC1	P31109	16	54	Synaptobrevin homolog 1	w
 SYNAPTOBREVIN	yeast	P33328	SNC2	P33328	18	71	Synaptobrevin homolog 2	w
@@ -123,7 +123,7 @@ SYNAPTOBREVIN-1	human	P23763	VAMP1	P23763	31	171	Vesicle-associated membrane pro
 SYNAPTOBREVIN-1	worm	O02495	snb-1	O02495	13	112	Synaptobrevin-1	w
 SYNAPTOBREVIN-2	human	P63027	VAMP2	P63027	58	469	Vesicle-associated membrane protein 2 (VAMP-2) (Synaptobrevi	w
 SYNAPTOBREVIN-3	human	Q15836	VAMP3	Q15836	87	566	Vesicle-associated membrane protein 3 (VAMP-3) (Cellubrevin)	w
-SYNAPTOBREVIN-LIKE	fly	FBgn0266186	Vamp7	Q7JYX5	28	117	Vesicle-associated membrane protein 7 (Synaptobrevin-like pr	w
+SYNAPTOBREVIN-LIKE	fly	FBgn0266186	Vamp7	Q7JYX5	31	117	Vesicle-associated membrane protein 7 (Synaptobrevin-like pr	w
 SYNAPTOBREVIN-LIKE	human	P51809	VAMP7	P51809	47	243	Vesicle-associated membrane protein 7 (VAMP-7) (Synaptobrevi	w
 SYNAPTOBREVIN-LIKE	worm	P34351	snb-5	P34351	14	109	Synaptobrevin-like protein 5	w
 SYNAPTOGENESIS	worm	B1Q236	syg-1	B1Q236	1	12	Synaptogenesis protein syg-1	w
@@ -179,9 +179,9 @@ SYNAPTOPODIN	zebrafish	U3JAM7	synpo2lb	U3JAM7	1	13	Synaptopodin 2-like protein	w
 SYNAPTOPODIN-2	human	Q9UMS6	SYNPO2	Q9UMS6	8	42	Synaptopodin-2 (Genethonin-2) (Myopodin)	w
 SYNAPTOPORIN	human	Q8TBG9	SYNPR	Q8TBG9	7	108	Synaptoporin	w
 SYNAPTOPORIN	zebrafish	Q801U9	synprb	Q801U9	0	6	Synaptoporin	w
-SYNAPTOSOMAL-ASSOCIATED	fly	FBgn0011288	Snap25	P36975	29	91	Synaptosomal-associated protein 25 (SNAP-25) (Synaptosomal-a	w
+SYNAPTOSOMAL-ASSOCIATED	fly	FBgn0011288	Snap25	P36975	30	94	Synaptosomal-associated protein 25 (SNAP-25) (Synaptosomal-a	w
 SYNAPTOSOMAL-ASSOCIATED	fly	FBgn0266720	Snap24	Q9VH76	33	120	Synaptosomal-associated protein	w
-SYNAPTOSOMAL-ASSOCIATED	fly	FBgn0290324	Snap29	Q9W1I8	40	109	Synaptosomal-associated protein 29kDa	w
+SYNAPTOSOMAL-ASSOCIATED	fly	FBgn0290324	Snap29	Q9W1I8	42	109	Synaptosomal-associated protein 29kDa	w
 SYNAPTOSOMAL-ASSOCIATED	human	O00161	SNAP23	O00161	77	329	Synaptosomal-associated protein 23 (SNAP-23) (Vesicle-membra	w
 SYNAPTOSOMAL-ASSOCIATED	human	O60641	SNAP91	O60641	26	98	Clathrin coat assembly protein AP180 (91 kDa synaptosomal-as	w
 SYNAPTOSOMAL-ASSOCIATED	human	O95295	SNAPIN	O95295	34	241	SNARE-associated protein Snapin (Biogenesis of lysosome-rela	w
@@ -196,8 +196,8 @@ SYNAPTOSOMAL-ASSOCIATED	zebrafish	Q4V9B6	fj55h11	Q4V9B6	58	102	Synaptosomal-asso
 SYNAPTOSOMAL-ASSOCIATED	zebrafish	Q5TZ66	snap25a	Q5TZ66	57	133	Synaptosomal-associated protein 25-A	w
 SYNAPTOSOMAL-ASSOCIATED	zebrafish	Q6PC54	snap25b	Q6PC54	53	122	Synaptosomal-associated protein 25-B	w
 SYNAPTOSOMAL-ASSOCIATED	zebrafish	Q7ZVE4	snap23.1	Q7ZVE4	47	102	Synaptosomal-associated protein	w
-SYNAPTOTAGMIN	fly	FBgn0004242	Syt1	P21521	6	47	Synaptotagmin 1 (p65)	w
-SYNAPTOTAGMIN	fly	FBgn0028400	Syt4	Q9U6P7	2	23	FI18813p1 (Synaptotagmin 4) (Synaptotagmin IV)	w
+SYNAPTOTAGMIN	fly	FBgn0004242	Syt1	P21521	7	49	Synaptotagmin 1 (p65)	w
+SYNAPTOTAGMIN	fly	FBgn0028400	Syt4	Q9U6P7	2	24	FI18813p1 (Synaptotagmin 4) (Synaptotagmin IV)	w
 SYNAPTOTAGMIN	fly	FBgn0039900	Syt7	Q9V4C4	0	14	Synaptotagmin 7, isoform A (Synaptotagmin 7, isoform M)	w
 SYNAPTOTAGMIN	fly	FBgn0261085	Syt12	Q9VYE1	0	18	FI18604p1 (Synaptotagmin 12, isoform A) (Synaptotagmin 12, i	w
 SYNAPTOTAGMIN	fly	FBgn0261086	Syt14	A0A0B4KF61	1	6	Synaptotagmin 14, isoform D	w
@@ -312,7 +312,7 @@ SYNDAPIN	fly	FBgn0053094	Synd	A0A0B4KH28	4	62	Syndapin, isoform C (Syndapin, iso
 SYNDAPIN-1	human	Q9BY11	PACSIN1	Q9BY11	33	156	Protein kinase C and casein kinase substrate in neurons prot	w
 SYNDAPIN-2	human	Q9UNF0	PACSIN2	Q9UNF0	37	232	Protein kinase C and casein kinase substrate in neurons prot	w
 SYNDAPIN-II	human	Q9UNF0	PACSIN2	Q9UNF0	37	232	Protein kinase C and casein kinase substrate in neurons prot	w
-SYNDECAN	fly	FBgn0010415	Sdc	E1JGQ9	948	2474	Syndecan	w
+SYNDECAN	fly	FBgn0010415	Sdc	E1JGQ9	951	2477	Syndecan	w
 SYNDECAN	worm	A0FLQ5	crb-3	A0FLQ5	3	8	Syndecan	w
 SYNDECAN	worm	P50605	sdn-1	P50605	3	28	Probable syndecan	w
 SYNDECAN-1	human	P18827	SDC1	P18827	31	295	Syndecan-1 (SYND1) (CD antigen CD138)	w
@@ -333,20 +333,20 @@ SYNDIG1L	human	A6NDD5	SYNDIG1L	A6NDD5	7	131	Synapse differentiation-inducing gen
 SYNDIG4	human	Q99946	PRRT1	Q99946	4	65	Proline-rich transmembrane protein 1 (Dispanin subfamily D m	w
 SYNDROM	human	O43709	BUD23	O43709	27	259	18S rRNA (guanine-N(7))-methyltransferase (EC 2.1.1.-) (Bud 	w
 SYNDROME	fly	FBgn0002906	Blm	Q9VGI8	5	69	RecQ-like DNA helicase Blm (EC 5.6.2.4) (Bloom syndrome heli	w
-SYNDROME	fly	FBgn0023508	Ocrl	O46094	14	45	EG:86E4.5 protein (LD39196p) (Oculocerebrorenal syndrome of 	w
+SYNDROME	fly	FBgn0023508	Ocrl	O46094	16	53	EG:86E4.5 protein (LD39196p) (Oculocerebrorenal syndrome of 	w
 SYNDROME	fly	FBgn0025388	Alms1a	Q5BI31	1	7	Centrosome-associated protein Alms1a (Alstrom syndrome prote	w
 SYNDROME	fly	FBgn0026239	gukh	Q9VE13	5	28	Wiskott-Aldrich syndrome protein family member (WASP family 	w
-SYNDROME	fly	FBgn0030395	Mks1	Q9VYM3	3	11	Tectonic-like complex member Mks1 (Meckel syndrome type 1 pr	w
-SYNDROME	fly	FBgn0031255	BBS8	Q9VPP9	6	29	Bardet-Biedl syndrome 8	w
+SYNDROME	fly	FBgn0030395	Mks1	Q9VYM3	4	12	Tectonic-like complex member Mks1 (Meckel syndrome type 1 pr	w
+SYNDROME	fly	FBgn0031255	BBS8	Q9VPP9	7	29	Bardet-Biedl syndrome 8	w
 SYNDROME	fly	FBgn0033159	Dscam1	A0A0B4K823	2	30	Down syndrome cell adhesion molecule 1, isoform BX	w
-SYNDROME	fly	FBgn0033578	BBS4	A1Z8E9	8	34	Bardet-Biedl syndrome 4 protein homolog	w
-SYNDROME	fly	FBgn0033973	HPS1	Q7K3N1	1	15	GH27401p (Hermansky-Pudlak syndrome 1)	w
+SYNDROME	fly	FBgn0033578	BBS4	A1Z8E9	9	34	Bardet-Biedl syndrome 4 protein homolog	w
+SYNDROME	fly	FBgn0033973	HPS1	Q7K3N1	2	16	GH27401p (Hermansky-Pudlak syndrome 1)	w
 SYNDROME	fly	FBgn0034261	HPS4	A1ZAX8	2	15	Hermansky-Pudlak syndrome 4, isoform A	w
 SYNDROME	fly	FBgn0034622	BBS9	B7YZM8	7	48	Bardet-Biedl syndrome 9	w
-SYNDROME	fly	FBgn0035741	BBS1	Q9VS19	7	77	Bardet-Biedl syndrome 1	w
-SYNDROME	fly	FBgn0037280	BBS5	Q9I7P3	9	43	Bardet-Biedl syndrome 5 (FI16106p1)	w
-SYNDROME	fly	FBgn0039155	Kal1	Q9VCC7	31	247	FI03681p (KAL-1) (Kallmann syndrome 1) (RH39295p)	w
-SYNDROME	fly	FBgn0041781	SCAR	F2FB81	15	66	Wiskott-Aldrich syndrome protein family member (WASP family 	w
+SYNDROME	fly	FBgn0035741	BBS1	Q9VS19	9	80	Bardet-Biedl syndrome 1	w
+SYNDROME	fly	FBgn0037280	BBS5	Q9I7P3	10	44	Bardet-Biedl syndrome 5 (FI16106p1)	w
+SYNDROME	fly	FBgn0039155	Kal1	Q9VCC7	31	248	FI03681p (KAL-1) (Kallmann syndrome 1) (RH39295p)	w
+SYNDROME	fly	FBgn0041781	SCAR	F2FB81	16	67	Wiskott-Aldrich syndrome protein family member (WASP family 	w
 SYNDROME	fly	FBgn0086679	p	Q9VHN9	2	19	BLOC-2 complex member HPS5 homolog (Hermansky-Pudlak syndrom	w
 SYNDROME	fly	FBgn0261046	Dscam3	Q7KSE9	0	2	Down syndrome cell adhesion molecule 3, isoform E	w
 SYNDROME	fly	FBgn0263219	Dscam4	M9PHS6	1	7	Down syndrome cell adhesion molecule 4, isoform I (Down synd	w
@@ -492,7 +492,7 @@ SYNE4	rattus-norvegicus	A0A0G2JWQ6	Syne4	A0A0G2JWQ6	1	19	Spectrin repeat contain
 SYNE4	rattus-norvegicus	Q5M844	Syne4	Q5M844	6	17	Nesprin-4	
 SYNE4_HUMAN	human	Q8N205	SYNE4	Q8N205	19	133		
 SYNECTIN	human	O14908	GIPC1	O14908	32	197	PDZ domain-containing protein GIPC1 (GAIP C-terminus-interac	w
-SYNEMBRYN	fly	FBgn0028292	ric8a	Q9W358	15	62	Synembryn (Protein Ric-8)	w
+SYNEMBRYN	fly	FBgn0028292	ric8a	Q9W358	18	63	Synembryn (Protein Ric-8)	w
 SYNEMBRYN	human	Q9NVN3	RIC8B	Q9NVN3	5	114	Chaperone Ric-8B (Brain synembryn) (hSyn) (Synembryn-B)	w
 SYNEMBRYN	zebrafish	X1WG58	si:ch211-195b15.7	X1WG58	0	22	Synembryn	w
 SYNEMBRYN-A	human	Q9NPQ8	RIC8A	Q9NPQ8	18	145	Chaperone Ric-8A (Synembryn-A)	w
@@ -524,7 +524,7 @@ SYNGR3A	zebrafish	Q503N6	syngr3a	Q503N6	0	14	Synaptogyrin
 SYNGR3B	zebrafish	A7E288	syngr3b	A7E288	0	6	Synaptogyrin	
 SYNGR4	human	O95473	SYNGR4	O95473	7	55	Synaptogyrin-4	
 SYNIP	human	Q6ZWJ1	STXBP4	Q6ZWJ1	41	133	Syntaxin-binding protein 4 (Syntaxin 4-interacting protein) 	w
-SYNJ	fly	FBgn0034691	Synj	Q5U0V7	1	50	phosphoinositide 5-phosphatase (EC 3.1.3.36)	
+SYNJ	fly	FBgn0034691	Synj	Q5U0V7	1	51	phosphoinositide 5-phosphatase (EC 3.1.3.36)	
 SYNJ1	human	O43426	SYNJ1	O43426	5	90	Polyphosphatidylinositol phosphatase SYNJ1 (Synaptojanin-1) 	
 SYNJ1	zebrafish	E9QHF3	synj1	E9QHF3	5	71	Synaptojanin-1	
 SYNJ1_HUMAN	human	O43426	SYNJ1	O43426	5	90		
@@ -555,7 +555,7 @@ SYNOVIAL	human	Q4ZHG4	FNDC1	Q4ZHG4	2	66	Fibronectin type III domain-containing p
 SYNOVIAL	human	Q86TM6	SYVN1	Q86TM6	45	324	E3 ubiquitin-protein ligase synoviolin (EC 2.3.2.27) (RING-t	w
 SYNOVIAL	zebrafish	X1WH62	ssx2ipa	X1WH62	2	6	Synovial sarcoma, X breakpoint 2 interacting protein a isofo	w
 SYNOVIOCYTE	human	Q96ER3	SAAL1	Q96ER3	23	227	Protein SAAL1 (Synoviocyte proliferation-associated in colla	w
-SYNOVIOLIN	fly	FBgn0039875	sip3	Q95SP2	12	64	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	w
+SYNOVIOLIN	fly	FBgn0039875	sip3	Q95SP2	15	66	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	w
 SYNOVIOLIN	human	Q86TM6	SYVN1	Q86TM6	45	324	E3 ubiquitin-protein ligase synoviolin (EC 2.3.2.27) (RING-t	w
 SYNOVIOLIN	zebrafish	Q803I8	syvn1	Q803I8	12	45	E3 ubiquitin-protein ligase synoviolin	w
 SYNP2_HUMAN	human	Q9UMS6	SYNPO2	Q9UMS6	8	42		
@@ -591,14 +591,14 @@ SYNTABULIN	zebrafish	A0A8M2B4L2	sybu	A0A8M2B4L2	2	8	Syntabulin isoform X1	w
 SYNTAPHILIN	human	O15079	SNPH	O15079	14	57	Syntaphilin	w
 SYNTAPHILIN	zebrafish	A0A8M9Q3K9	snphb	A0A8M9Q3K9	2	2	Syntaphilin b	w
 SYNTAPHILIN-RELATED	human	Q9NX95	SYBU	Q9NX95	19	55	Syntabulin (Golgi-localized syntaphilin-related protein) (Sy	w
-SYNTAXIN	fly	FBgn0013343	Syx1A	A0A0B4JCZ4	28	243	Syntaxin 1A, isoform B	w
-SYNTAXIN	fly	FBgn0031106	Syx16	Q9VR90	38	128	Syntaxin 16	w
-SYNTAXIN	fly	FBgn0035540	Syx17	M9PEM1	6	25	Syntaxin 17, isoform B	w
-SYNTAXIN	fly	FBgn0036341	Syx13	Q9VU45	15	57	LD27581p (Syntaxin 13, isoform A) (Syntaxin 13, isoform B)	w
-SYNTAXIN	fly	FBgn0036643	Syx8	Q9VV76	22	89	Syntaxin 8	w
-SYNTAXIN	fly	FBgn0037084	Syx6	Q7JY00	22	145	HL02043p (Syntaxin 6, isoform E)	w
-SYNTAXIN	fly	FBgn0039212	Syx18	Q9VC58	28	60	LD37002p (Syntaxin 18)	w
-SYNTAXIN	fly	FBgn0267849	Syx7	Q7K0X9	23	150	LD23667p (Syntaxin 7, isoform A) (Syntaxin 7, isoform B)	w
+SYNTAXIN	fly	FBgn0013343	Syx1A	A0A0B4JCZ4	34	249	Syntaxin 1A, isoform B	w
+SYNTAXIN	fly	FBgn0031106	Syx16	Q9VR90	40	129	Syntaxin 16	w
+SYNTAXIN	fly	FBgn0035540	Syx17	M9PEM1	9	35	Syntaxin 17, isoform B	w
+SYNTAXIN	fly	FBgn0036341	Syx13	Q9VU45	22	57	LD27581p (Syntaxin 13, isoform A) (Syntaxin 13, isoform B)	w
+SYNTAXIN	fly	FBgn0036643	Syx8	Q9VV76	28	89	Syntaxin 8	w
+SYNTAXIN	fly	FBgn0037084	Syx6	Q7JY00	33	145	HL02043p (Syntaxin 6, isoform E)	w
+SYNTAXIN	fly	FBgn0039212	Syx18	Q9VC58	29	61	LD37002p (Syntaxin 18)	w
+SYNTAXIN	fly	FBgn0267849	Syx7	Q7K0X9	29	150	LD23667p (Syntaxin 7, isoform A) (Syntaxin 7, isoform B)	w
 SYNTAXIN	human	Q6ZWJ1	STXBP4	Q6ZWJ1	41	133	Syntaxin-binding protein 4 (Syntaxin 4-interacting protein) 	w
 SYNTAXIN	human	Q9UL45	BLOC1S6	Q9UL45	34	171	Biogenesis of lysosome-related organelles complex 1 subunit 	w
 SYNTAXIN	worm	P83528	syx-6	P83528	16	66	Putative syntaxin 6	w
@@ -635,10 +635,10 @@ SYNTAXIN-3	human	Q13277	STX3	Q13277	24	221	Syntaxin-3	w
 SYNTAXIN-3	worm	Q20024	syx-3	Q20024	6	37	Putative syntaxin-3	w
 SYNTAXIN-3	zebrafish	B8A651	stx3a	B8A651	17	116	Syntaxin-3	w
 SYNTAXIN-3	zebrafish	Q6PHV0	stx3b	Q6PHV0	10	117	Syntaxin-3	w
-SYNTAXIN-4	fly	FBgn0024980	Syx4	Q7KVY7	21	74	Syntaxin-4	w
+SYNTAXIN-4	fly	FBgn0024980	Syx4	Q7KVY7	23	74	Syntaxin-4	w
 SYNTAXIN-4	human	Q12846	STX4	Q12846	41	446	Syntaxin-4 (Renal carcinoma antigen NY-REN-31)	w
 SYNTAXIN-4	worm	P91409	syx-4	P91409	6	38	Putative syntaxin-4	w
-SYNTAXIN-5	fly	FBgn0011708	Syx5	Q24509	31	130	Syntaxin-5 (Sed5 protein) (dSed5)	w
+SYNTAXIN-5	fly	FBgn0011708	Syx5	Q24509	35	131	Syntaxin-5 (Sed5 protein) (dSed5)	w
 SYNTAXIN-5	human	Q13190	STX5	Q13190	50	314	Syntaxin-5	w
 SYNTAXIN-5	worm	Q20797	syx-5	Q20797	25	110	Putative syntaxin-5	w
 SYNTAXIN-5	zebrafish	Q6DG84	stx5a	Q6DG84	30	116	Syntaxin-5	w
@@ -671,132 +671,132 @@ SYNTENIN-2	human	Q9H190	SDCBP2	Q9H190	9	155	Syntenin-2 (Similar to TACIP18) (SIT
 SYNTH	human	P07814	EPRS1	P07814	9	439	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
 SYNTH	human	Q9NPH2	ISYNA1	Q9NPH2	0	110	Inositol-3-phosphate synthase 1 (IPS 1) (EC 5.5.1.4) (Myo-in	w
 SYNTH	human	Q9Y606	PUS1	Q9Y606	8	159	Pseudouridylate synthase 1 homolog (EC 5.4.99.-) (tRNA pseud	w
-SYNTHASE	fly	FBgn0000052	Pfas	P35421	1	72	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
-SYNTHASE	fly	FBgn0000075	amd	P18486	1	6	3,4-dihydroxyphenylacetaldehyde synthase (DHPAA synthase) (D	w
-SYNTHASE	fly	FBgn0000239	bur	Q9VIE7	4	114	GMP synthase (glutamine-hydrolyzing) (EC 6.3.5.2) (Glutamine	w
+SYNTHASE	fly	FBgn0000052	Pfas	P35421	1	73	Phosphoribosylformylglycinamidine synthase (FGAM synthase) (	w
+SYNTHASE	fly	FBgn0000075	amd	P18486	1	10	3,4-dihydroxyphenylacetaldehyde synthase (DHPAA synthase) (D	w
+SYNTHASE	fly	FBgn0000239	bur	Q9VIE7	4	117	GMP synthase (glutamine-hydrolyzing) (EC 6.3.5.2) (Glutamine	w
 SYNTHASE	fly	FBgn0000527	e	Q9VDC6	1	16	Beta-alanyl-bioamine nonribosomal peptide synthetase ebony (	w
 SYNTHASE	fly	FBgn0001311	kkv	Q8IPN4	1	9	chitin synthase (EC 2.4.1.16)	w
-SYNTHASE	fly	FBgn0003141	pr	P48611	1	64	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
+SYNTHASE	fly	FBgn0003141	pr	P48611	1	70	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
 SYNTHASE	fly	FBgn0003189	r	P05990	1	98	Multifunctional protein r (Protein rudimentary) [Includes: G	w
-SYNTHASE	fly	FBgn0003257	r-l	Q01637	0	69	Uridine 5'-monophosphate synthase (UMP synthase) (Rudimentar	w
+SYNTHASE	fly	FBgn0003257	r-l	Q01637	0	72	Uridine 5'-monophosphate synthase (UMP synthase) (Rudimentar	w
 SYNTHASE	fly	FBgn0005278	Sams	P40320	1	104	S-adenosylmethionine synthase (AdoMet synthase) (EC 2.5.1.6)	w
-SYNTHASE	fly	FBgn0010217	ATPsynbeta	L0MQ04	17	236	ATP synthase subunit beta (EC 7.1.2.2)	w
-SYNTHASE	fly	FBgn0010247	Parp1	P35875	10	453	Poly [ADP-ribose] polymerase (PARP) (EC 2.4.2.30) (NAD(+) AD	w
-SYNTHASE	fly	FBgn0010350	Cds	P56079	3	30	Phosphatidate cytidylyltransferase, photoreceptor-specific (	w
-SYNTHASE	fly	FBgn0010611	Hmgs	Q7K4Q9	3	141	Hydroxymethylglutaryl-CoA synthase (HMG-CoA synthase) (EC 2.	w
-SYNTHASE	fly	FBgn0010612	ATPsynG	Q9VKM3	8	66	ATP synthase subunit	w
-SYNTHASE	fly	FBgn0010786	Hmbs	Q9W0G4	0	7	hydroxymethylbilane synthase (EC 2.5.1.61) (Hydroxymethylbil	w
-SYNTHASE	fly	FBgn0011211	blw	P35381	11	156	ATP synthase subunit alpha, mitochondrial (Protein bellwethe	w
+SYNTHASE	fly	FBgn0010217	ATPsynbeta	L0MQ04	20	240	ATP synthase subunit beta (EC 7.1.2.2)	w
+SYNTHASE	fly	FBgn0010247	Parp1	P35875	12	457	Poly [ADP-ribose] polymerase (PARP) (EC 2.4.2.30) (NAD(+) AD	w
+SYNTHASE	fly	FBgn0010350	Cds	P56079	4	40	Phosphatidate cytidylyltransferase, photoreceptor-specific (	w
+SYNTHASE	fly	FBgn0010611	Hmgs	Q7K4Q9	4	142	Hydroxymethylglutaryl-CoA synthase (HMG-CoA synthase) (EC 2.	w
+SYNTHASE	fly	FBgn0010612	ATPsynG	Q9VKM3	35	107	ATP synthase subunit	w
+SYNTHASE	fly	FBgn0010786	Hmbs	Q9W0G4	0	15	hydroxymethylbilane synthase (EC 2.5.1.61) (Hydroxymethylbil	w
+SYNTHASE	fly	FBgn0011211	blw	P35381	16	173	ATP synthase subunit alpha, mitochondrial (Protein bellwethe	w
 SYNTHASE	fly	FBgn0011676	Nos	Q27571	3	125	Nitric oxide synthase (dNOS) (EC 1.14.13.39)	w
-SYNTHASE	fly	FBgn0013672	mt:ATPase6	P00850	6	64	ATP synthase subunit a (F-ATPase protein 6)	w
-SYNTHASE	fly	FBgn0013673	mt:ATPase8	P84345	9	44	ATP synthase protein 8 (A6L) (F-ATPase subunit 8)	w
-SYNTHASE	fly	FBgn0016120	ATPsynD	Q24251	6	158	ATP synthase subunit d, mitochondrial (ATPase subunit d)	w
-SYNTHASE	fly	FBgn0016691	ATPsynO	Q24439	9	163	ATP synthase subunit O, mitochondrial (Oligomycin sensitivit	w
-SYNTHASE	fly	FBgn0019644	ATPsynB	Q94516	13	129	ATP synthase subunit b, mitochondrial (ATPase subunit b) (FO	w
-SYNTHASE	fly	FBgn0020235	ATPsyngamma	O01666	18	130	ATP synthase subunit gamma, mitochondrial (F-ATPase gamma su	w
+SYNTHASE	fly	FBgn0013672	mt:ATPase6	P00850	20	72	ATP synthase subunit a (F-ATPase protein 6)	w
+SYNTHASE	fly	FBgn0013673	mt:ATPase8	P84345	11	45	ATP synthase protein 8 (A6L) (F-ATPase subunit 8)	w
+SYNTHASE	fly	FBgn0016120	ATPsynD	Q24251	12	190	ATP synthase subunit d, mitochondrial (ATPase subunit d)	w
+SYNTHASE	fly	FBgn0016691	ATPsynO	Q24439	22	194	ATP synthase subunit O, mitochondrial (Oligomycin sensitivit	w
+SYNTHASE	fly	FBgn0019644	ATPsynB	Q94516	16	161	ATP synthase subunit b, mitochondrial (ATPase subunit b) (FO	w
+SYNTHASE	fly	FBgn0020235	ATPsyngamma	O01666	35	157	ATP synthase subunit gamma, mitochondrial (F-ATPase gamma su	w
 SYNTHASE	fly	FBgn0020236	Acly	Q7KN85	1	163	ATP-citrate synthase (EC 2.3.3.8) (ATP-citrate (pro-S-)-lyas	w
-SYNTHASE	fly	FBgn0020385	pug	O96553	2	19	C-1-tetrahydrofolate synthase, cytoplasmic (C1-THF synthase)	w
-SYNTHASE	fly	FBgn0020764	Alas	O18680	2	51	5-aminolevulinate synthase (EC 2.3.1.37) (5-aminolevulinic a	w
-SYNTHASE	fly	FBgn0024558	Dph5	Q8IN02	0	6	diphthine methyl ester synthase (EC 2.1.1.314)	w
-SYNTHASE	fly	FBgn0024920	Ts	O76511	2	61	Thymidylate synthase (TS) (TSase) (EC 2.1.1.45)	w
+SYNTHASE	fly	FBgn0020385	pug	O96553	2	27	C-1-tetrahydrofolate synthase, cytoplasmic (C1-THF synthase)	w
+SYNTHASE	fly	FBgn0020764	Alas	O18680	4	55	5-aminolevulinate synthase (EC 2.3.1.37) (5-aminolevulinic a	w
+SYNTHASE	fly	FBgn0024558	Dph5	Q8IN02	1	13	diphthine methyl ester synthase (EC 2.1.1.314)	w
+SYNTHASE	fly	FBgn0024920	Ts	O76511	2	81	Thymidylate synthase (TS) (TSase) (EC 2.1.1.45)	w
 SYNTHASE	fly	FBgn0025335	Cpes	O77475	3	120	Ceramide phosphoethanolamine synthase (CPE synthase) (EC 2.7	w
-SYNTHASE	fly	FBgn0025373	Fpps	Q7KN61	2	35	Farnesyl pyrophosphate synthase	w
-SYNTHASE	fly	FBgn0025885	Inos	O97477	1	198	Inositol-3-phosphate synthase (MIP synthase) (EC 5.5.1.4) (M	w
-SYNTHASE	fly	FBgn0026565	Ass	O97069	0	48	Argininosuccinate synthase (EC 6.3.4.5) (Citrulline--asparta	w
-SYNTHASE	fly	FBgn0027560	Tps1	Q9Y119	3	38	BcDNA.GH08860 (RE05454p) (Trehalose-6-phosphate synthase 1 (	w
-SYNTHASE	fly	FBgn0028342	ATPsyndelta	Q9W2X6	6	100	ATP synthase, delta subunit, isoform A (ATP synthase, delta 	w
+SYNTHASE	fly	FBgn0025373	Fpps	Q7KN61	4	43	Farnesyl pyrophosphate synthase	w
+SYNTHASE	fly	FBgn0025885	Inos	O97477	1	200	Inositol-3-phosphate synthase (MIP synthase) (EC 5.5.1.4) (M	w
+SYNTHASE	fly	FBgn0026565	Ass	O97069	0	50	Argininosuccinate synthase (EC 6.3.4.5) (Citrulline--asparta	w
+SYNTHASE	fly	FBgn0027560	Tps1	Q9Y119	4	40	BcDNA.GH08860 (RE05454p) (Trehalose-6-phosphate synthase 1 (	w
+SYNTHASE	fly	FBgn0028342	ATPsyndelta	Q9W2X6	26	139	ATP synthase, delta subunit, isoform A (ATP synthase, delta 	w
 SYNTHASE	fly	FBgn0029091	Chs2	Q9VNW7	3	70	chitin synthase (EC 2.4.1.16)	w
-SYNTHASE	fly	FBgn0029158	Las	Q7JQW6	1	16	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
+SYNTHASE	fly	FBgn0029158	Las	Q7JQW6	3	23	Lipoyl synthase, mitochondrial (EC 2.8.1.8) (Lipoate synthas	w
 SYNTHASE	fly	FBgn0030029	CG15343	Q9W3G8	0	5	pyridoxal 5'-phosphate synthase (EC 1.4.3.5)	w
-SYNTHASE	fly	FBgn0030066	Uros1	Q9W3B3	0	8	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
+SYNTHASE	fly	FBgn0030066	Uros1	Q9W3B3	0	11	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
 SYNTHASE	fly	FBgn0030336	Dph6	Q8MRI4	0	12	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w
-SYNTHASE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	10	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
-SYNTHASE	fly	FBgn0030431	Flad1	Q9VYI5	5	34	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	w
-SYNTHASE	fly	FBgn0030506	DNAlig4	Q9VYA5	7	43	DNA ligase 4 (EC 6.5.1.1) (DNA ligase IV) (Polydeoxyribonucl	w
-SYNTHASE	fly	FBgn0030512	Nadsyn	Q9VYA0	1	9	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	w
-SYNTHASE	fly	FBgn0030670	Pis	Q8SX37	0	52	CDP-diacylglycerol--inositol 3-phosphatidyltransferase (CDIP	w
+SYNTHASE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	14	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
+SYNTHASE	fly	FBgn0030431	Flad1	Q9VYI5	5	35	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	w
+SYNTHASE	fly	FBgn0030506	DNAlig4	Q9VYA5	7	47	DNA ligase 4 (EC 6.5.1.1) (DNA ligase IV) (Polydeoxyribonucl	w
+SYNTHASE	fly	FBgn0030512	Nadsyn	Q9VYA0	3	16	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	w
+SYNTHASE	fly	FBgn0030670	Pis	Q8SX37	1	62	CDP-diacylglycerol--inositol 3-phosphatidyltransferase (CDIP	w
 SYNTHASE	fly	FBgn0031060	Tcs4	Q9VWD6	4	25	Probable tRNA N6-adenosine threonylcarbamoyltransferase, mit	w
 SYNTHASE	fly	FBgn0031108	CG15459	Q9VR92	4	40	ATP synthase membrane subunit K, mitochondrial	w
-SYNTHASE	fly	FBgn0031227	Pus10	Q9VPK7	1	4	Putative tRNA pseudouridine synthase Pus10 (EC 5.4.99.25) (C	w
+SYNTHASE	fly	FBgn0031227	Pus10	Q9VPK7	1	5	Putative tRNA pseudouridine synthase Pus10 (EC 5.4.99.25) (C	w
 SYNTHASE	fly	FBgn0031238	Dus1	Q9VPM1	2	13	tRNA-dihydrouridine(16/17) synthase [NAD(P)(+)] (EC 1.3.1.88	w
-SYNTHASE	fly	FBgn0031312	Tango14	Q9VPX8	1	8	ditrans,polycis-polyprenyl diphosphate synthase [(2E,6E)-far	w
+SYNTHASE	fly	FBgn0031312	Tango14	Q9VPX8	2	13	ditrans,polycis-polyprenyl diphosphate synthase [(2E,6E)-far	w
 SYNTHASE	fly	FBgn0031941	ATPsynGL	Q9VLY0	2	50	ATP synthase subunit	w
-SYNTHASE	fly	FBgn0032222	Cox10	Q9VKZ1	2	20	Protoheme IX farnesyltransferase, mitochondrial (Heme O synt	w
-SYNTHASE	fly	FBgn0032224	Sps2	Q9VKY8	0	6	Selenide, water dikinase 2 (EC 2.7.9.3) (Selenium donor prot	w
+SYNTHASE	fly	FBgn0032222	Cox10	Q9VKZ1	5	29	Protoheme IX farnesyltransferase, mitochondrial (Heme O synt	w
+SYNTHASE	fly	FBgn0032224	Sps2	Q9VKY8	0	11	Selenide, water dikinase 2 (EC 2.7.9.3) (Selenium donor prot	w
 SYNTHASE	fly	FBgn0032256	RluA-2	Q9VKU8	2	44	LD40728p (RluA pseudouridine synthase 2, isoform A) (RluA ps	w
-SYNTHASE	fly	FBgn0032522	Flad2	Q9VJY1	1	3	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	w
-SYNTHASE	fly	FBgn0032799	Dpm1	Q9VIU7	3	65	Dolichol-phosphate mannosyltransferase subunit 1 (DPM syntha	w
+SYNTHASE	fly	FBgn0032522	Flad2	Q9VJY1	1	4	FAD synthase (EC 2.7.7.2) (FAD pyrophosphorylase) (FMN adeny	w
+SYNTHASE	fly	FBgn0032799	Dpm1	Q9VIU7	5	78	Dolichol-phosphate mannosyltransferase subunit 1 (DPM syntha	w
 SYNTHASE	fly	FBgn0032819	Dus3	Q9VIS4	7	58	tRNA-dihydrouridine(47) synthase [NAD(P)(+)] (EC 1.3.1.-) (t	w
-SYNTHASE	fly	FBgn0033983	Agps	Q9V778	0	13	Alkyldihydroxyacetonephosphate synthase (Alkyl-DHAP synthase	w
+SYNTHASE	fly	FBgn0033983	Agps	Q9V778	2	15	Alkyldihydroxyacetonephosphate synthase (Alkyl-DHAP synthase	w
 SYNTHASE	fly	FBgn0034382	mElo	Q6NN18	3	78	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 SYNTHASE	fly	FBgn0034383	CG17821	A1ZBD2	4	57	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
-SYNTHASE	fly	FBgn0035032	ATPsynF	Q9W141	4	115	Putative ATP synthase subunit f, mitochondrial	w
+SYNTHASE	fly	FBgn0035032	ATPsynF	Q9W141	21	139	Putative ATP synthase subunit f, mitochondrial	w
 SYNTHASE	fly	FBgn0035854	Dhps	Q9VSF4	1	11	Probable deoxyhypusine synthase (DHS) (EC 2.5.1.46)	w
-SYNTHASE	fly	FBgn0035901	Pus7	Q9VSK9	6	64	Pseudouridylate synthase 7 homolog (EC 5.4.99.-)	w
+SYNTHASE	fly	FBgn0035901	Pus7	Q9VSK9	6	68	Pseudouridylate synthase 7 homolog (EC 5.4.99.-)	w
 SYNTHASE	fly	FBgn0036030	Prps	Q9VT33	1	115	Ribose-phosphate pyrophosphokinase 2 (EC 2.7.6.1) (Phosphori	w
 SYNTHASE	fly	FBgn0036128	Elo68beta	A8JNR0	3	76	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
-SYNTHASE	fly	FBgn0036194	Dph1	Q9VTM2	5	20	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
+SYNTHASE	fly	FBgn0036194	Dph1	Q9VTM2	5	23	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
 SYNTHASE	fly	FBgn0036272	Sms	X2JGL7	6	163	Spermine synthase, isoform D (EC 2.5.1.22)	w
-SYNTHASE	fly	FBgn0036345	CG17300	Q9VU49	4	57	ATP synthase subunit b	w
-SYNTHASE	fly	FBgn0036515	AIMP2	Q9VUR3	7	39	Probable aminoacyl tRNA synthase complex-interacting multifu	w
+SYNTHASE	fly	FBgn0036345	CG17300	Q9VU49	13	62	ATP synthase subunit b	w
+SYNTHASE	fly	FBgn0036515	AIMP2	Q9VUR3	8	39	Probable aminoacyl tRNA synthase complex-interacting multifu	w
 SYNTHASE	fly	FBgn0036568	ATPsynbetaL	Q8T4C4	3	66	ATP synthase subunit beta (EC 7.1.2.2)	w
 SYNTHASE	fly	FBgn0036663	Glts	M9NFH8	1	37	glutamate synthase (NADH) (EC 1.4.1.14)	w
-SYNTHASE	fly	FBgn0037044	Pdss2	Q9VP87	3	30	Decaprenyl diphosphate synthase subunit 2, isoform A (Decapr	w
-SYNTHASE	fly	FBgn0037146	P5cs	Q9VNW6	0	83	Delta-1-pyrroline-5-carboxylate synthase [Includes: Glutamat	w
-SYNTHASE	fly	FBgn0037347	SecS	Q9VNE3	0	8	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	w
+SYNTHASE	fly	FBgn0037044	Pdss2	Q9VP87	3	37	Decaprenyl diphosphate synthase subunit 2, isoform A (Decapr	w
+SYNTHASE	fly	FBgn0037146	P5cs	Q9VNW6	0	98	Delta-1-pyrroline-5-carboxylate synthase [Includes: Glutamat	w
+SYNTHASE	fly	FBgn0037347	SecS	Q9VNE3	0	9	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	w
 SYNTHASE	fly	FBgn0037356	CG12170	Q9VNF5	11	1185	3-oxoacyl-[acyl-carrier-protein] synthase	w
-SYNTHASE	fly	FBgn0037513	pyd3	Q9VI04	0	51	Beta-alanine synthase (EC 3.5.1.6) (Pyd3 (EC 3.5.1.-))	w
+SYNTHASE	fly	FBgn0037513	pyd3	Q9VI04	0	59	Beta-alanine synthase (EC 3.5.1.6) (Pyd3 (EC 3.5.1.-))	w
 SYNTHASE	fly	FBgn0037723	SpdS	Q9VHA1	1	160	Spermidine synthase, isoform A (Spermidine synthase, isoform	w
-SYNTHASE	fly	FBgn0037728	cPges	Q9VH95	15	233	Prostaglandin E synthase 3 homolog	w
+SYNTHASE	fly	FBgn0037728	cPges	Q9VH95	23	241	Prostaglandin E synthase 3 homolog	w
 SYNTHASE	fly	FBgn0037761	CG8534	Q9VH59	2	57	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 SYNTHASE	fly	FBgn0037763	CG16904	Q9VH57	1	69	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 SYNTHASE	fly	FBgn0037764	CG9459	Q4V3H4	1	57	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 SYNTHASE	fly	FBgn0037765	CG9458	Q9VH55	3	59	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
-SYNTHASE	fly	FBgn0037988	Cs2	Q95TZ4	2	73	Citrate synthase	w
-SYNTHASE	fly	FBgn0038045	Nans	Q9VG74	0	3	Sialic acid synthase (N-acetylneuraminate synthase) (EC 2.5.	w
-SYNTHASE	fly	FBgn0038224	ATPsynE	O77134	6	50	ATP synthase subunit e, mitochondrial	w
-SYNTHASE	fly	FBgn0038272	Dph2	Q9VFE9	4	12	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
-SYNTHASE	fly	FBgn0038361	Uros2	Q9VF38	0	5	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
-SYNTHASE	fly	FBgn0038811	Pus1	E1JIR1	0	6	Pseudouridine synthase 1, isoform B	w
-SYNTHASE	fly	FBgn0038925	Cchl	Q9VD55	6	72	Holocytochrome c-type synthase (EC 4.4.1.17)	w
+SYNTHASE	fly	FBgn0037988	Cs2	Q95TZ4	3	78	Citrate synthase	w
+SYNTHASE	fly	FBgn0038045	Nans	Q9VG74	0	5	Sialic acid synthase (N-acetylneuraminate synthase) (EC 2.5.	w
+SYNTHASE	fly	FBgn0038224	ATPsynE	O77134	40	80	ATP synthase subunit e, mitochondrial	w
+SYNTHASE	fly	FBgn0038272	Dph2	Q9VFE9	4	13	2-(3-amino-3-carboxypropyl)histidine synthase subunit 2	w
+SYNTHASE	fly	FBgn0038361	Uros2	Q9VF38	0	7	uroporphyrinogen-III synthase (EC 4.2.1.75) (Hydroxymethylbi	w
+SYNTHASE	fly	FBgn0038811	Pus1	E1JIR1	2	12	Pseudouridine synthase 1, isoform B	w
+SYNTHASE	fly	FBgn0038925	Cchl	Q9VD55	7	74	Holocytochrome c-type synthase (EC 4.4.1.17)	w
 SYNTHASE	fly	FBgn0038983	CG5326	Q9VCZ0	6	112	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 SYNTHASE	fly	FBgn0038986	sit	Q9VCY6	8	62	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
-SYNTHASE	fly	FBgn0039030	CG6660	Q9VCT3	8	86	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
-SYNTHASE	fly	FBgn0039280	Mocs2B	Q9VBX2	16	57	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (Moly	w
-SYNTHASE	fly	FBgn0039360	Cls	Q8MZC4	0	21	Probable cardiolipin synthase (CMP-forming) (CLS) (EC 2.7.8.	w
+SYNTHASE	fly	FBgn0039030	CG6660	Q9VCT3	9	87	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
+SYNTHASE	fly	FBgn0039280	Mocs2B	Q9VBX2	22	64	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (Moly	w
+SYNTHASE	fly	FBgn0039360	Cls	Q8MZC4	0	25	Probable cardiolipin synthase (CMP-forming) (CLS) (EC 2.7.8.	w
 SYNTHASE	fly	FBgn0040651	CG15458	Q9VR93	2	26	ATP synthase membrane subunit K, mitochondrial	w
 SYNTHASE	fly	FBgn0042627	FASN2	M9PB21	0	9	Fatty acid synthase (EC 1.1.1.100) (EC 1.3.1.39) (EC 2.3.1.4	w
 SYNTHASE	fly	FBgn0046332	gskt	P83101	195	1152	Putative glycogen synthase kinase-3 homolog (GSK-3) (EC 2.7.	w
 SYNTHASE	fly	FBgn0050008	CG30008	Q8SXD1	2	59	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 SYNTHASE	fly	FBgn0051141	CG31141	Q8IMY2	1	58	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
-SYNTHASE	fly	FBgn0051472	sgll	Q9VHZ5	1	25	pyridoxal 5'-phosphate synthase (EC 1.4.3.5)	w
-SYNTHASE	fly	FBgn0051473	CG31473	Q8INR5	2	3	pyridoxal 5'-phosphate synthase (EC 1.4.3.5)	w
+SYNTHASE	fly	FBgn0051472	sgll	Q9VHZ5	2	29	pyridoxal 5'-phosphate synthase (EC 1.4.3.5)	w
+SYNTHASE	fly	FBgn0051473	CG31473	Q8INR5	3	6	pyridoxal 5'-phosphate synthase (EC 1.4.3.5)	w
 SYNTHASE	fly	FBgn0051477	ATPsynepsilonL	Q9VH24	4	47	ATP synthase, epsilon subunit-like, isoform A (ATP synthase,	w
 SYNTHASE	fly	FBgn0051522	CG31522	A0A0B4KF65	3	86	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 SYNTHASE	fly	FBgn0051523	CG31523	Q95T98	9	135	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 SYNTHASE	fly	FBgn0051719	RluA-1	Q9VKV0	5	31	FI04540p (RluA pseudouridine synthase 1, isoform A) (RluA ps	w
 SYNTHASE	fly	FBgn0052072	Elo68alpha	Q5JZZ4	3	59	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
-SYNTHASE	fly	FBgn0052220	Csas	Q8IQV0	0	25	CMP-sialic acid synthase	w
+SYNTHASE	fly	FBgn0052220	Csas	Q8IQV0	0	27	CMP-sialic acid synthase	w
 SYNTHASE	fly	FBgn0052380	SMSr	Q9VS60	0	8	Ceramide phosphoethanolamine synthase (CPE synthase) (EC 2.7	w
 SYNTHASE	fly	FBgn0053110	CG33110	Q9VCY5	6	58	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
-SYNTHASE	fly	FBgn0061361	Tcs1	Q8SYJ9	15	381	Threonylcarbamoyl-AMP synthase (EC 2.7.7.87)	w
+SYNTHASE	fly	FBgn0061361	Tcs1	Q8SYJ9	15	382	Threonylcarbamoyl-AMP synthase (EC 2.7.7.87)	w
 SYNTHASE	fly	FBgn0067628	CG33331	Q8INF2	0	6	Phosphatidate cytidylyltransferase, mitochondrial (EC 2.7.7.	w
-SYNTHASE	fly	FBgn0083167	Neb-cGP	Q9W2U8	6	44	ATP synthase membrane subunit K, mitochondrial	w
+SYNTHASE	fly	FBgn0083167	Neb-cGP	Q9W2U8	20	58	ATP synthase membrane subunit K, mitochondrial	w
 SYNTHASE	fly	FBgn0083976	CG34140	Q0E8K6	0	8	tRNA pseudouridine synthase (EC 5.4.99.12)	w
 SYNTHASE	fly	FBgn0086348	se	Q9VSL3	17	103	Pyrimidodiazepine synthase (EC 1.5.4.1) (Protein sepia)	w
 SYNTHASE	fly	FBgn0260229	Mocs2A	P0C919	2	5	Molybdopterin synthase sulfur carrier subunit (Molybdenum co	w
 SYNTHASE	fly	FBgn0260942	bond	Q9VCY7	4	72	Elongation of very long chain fatty acids protein (EC 2.3.1.	w
 SYNTHASE	fly	FBgn0261955	Cs1	Q9W401	10	281	Citrate synthase 1	w
-SYNTHASE	fly	FBgn0266064	Glys	Q9VFC8	3	49	Glycogen [starch] synthase (EC 2.4.1.11) (Glycogen synthase)	w
-SYNTHASE	fly	FBgn0266195	Tgs1	Q9VEA4	3	27	Trimethylguanosine synthase	w
-SYNTHASE	fly	FBgn0266268	FeCH	Q9V9S8	3	91	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	w
+SYNTHASE	fly	FBgn0266064	Glys	Q9VFC8	3	50	Glycogen [starch] synthase (EC 2.4.1.11) (Glycogen synthase)	w
+SYNTHASE	fly	FBgn0266195	Tgs1	Q9VEA4	3	29	Trimethylguanosine synthase	w
+SYNTHASE	fly	FBgn0266268	FeCH	Q9V9S8	4	98	Ferrochelatase, mitochondrial (EC 4.98.1.1) (Heme synthase) 	w
 SYNTHASE	fly	FBgn0266452	Ctps	Q9VUL1	17	753	CTP synthase (EC 6.3.4.2) (CTP synthetase) (UTP--ammonia lig	w
-SYNTHASE	fly	FBgn0267823	Gmer	Q9W1X8	0	135	Probable GDP-L-fucose synthase (EC 1.1.1.271) (GDP-4-keto-6-	w
+SYNTHASE	fly	FBgn0267823	Gmer	Q9W1X8	0	137	Probable GDP-L-fucose synthase (EC 1.1.1.271) (GDP-4-keto-6-	w
 SYNTHASE	fly	FBgn0283427	FASN1	B7Z001	0	49	Fatty acid synthase (EC 1.1.1.100) (EC 1.3.1.39) (EC 2.3.1.4	w
-SYNTHASE	fly	FBgn0283681	Tcs3	Q9VV41	4	23	Probable tRNA N6-adenosine threonylcarbamoyltransferase (EC 	w
-SYNTHASE	fly	FBgn0285943	knon	A1ZAH1	4	62	ATP synthase subunit d, mitochondrial	w
+SYNTHASE	fly	FBgn0283681	Tcs3	Q9VV41	4	24	Probable tRNA N6-adenosine threonylcarbamoyltransferase (EC 	w
+SYNTHASE	fly	FBgn0285943	knon	A1ZAH1	11	63	ATP synthase subunit d, mitochondrial	w
 SYNTHASE	fly	FBgn0287184	FASN3	Q7PLB8	1	8	Fatty acid synthase 3 (EC 1.-.-.-, EC 2.3.1.41)	w
-SYNTHASE	fly	FBgn0287585	Pss	Q9VPD3	0	6	Phosphatidylserine synthase (EC 2.7.8.29)	w
+SYNTHASE	fly	FBgn0287585	Pss	Q9VPD3	0	12	Phosphatidylserine synthase (EC 2.7.8.29)	w
 SYNTHASE	human	A0A494C100	?	A0A494C100	1	34	Cardiolipin synthase (CMP-forming)	w
 SYNTHASE	human	A0A669KAY5	DUS4L-BCAP29	A0A669KAY5	1	5	tRNA-dihydrouridine(20a/20b) synthase	w
 SYNTHASE	human	A1L3X0	ELOVL7	A1L3X0	3	75	Very long chain fatty acid elongase 7 (EC 2.3.1.199) (3-keto	w
@@ -1405,8 +1405,8 @@ SYNTHASE-2	human	Q9H7Z7	PTGES2	Q9H7Z7	24	156	Prostaglandin E synthase 2 (EC 5.3.
 SYNTHASE-ASSOCIATED	human	O60256	PRPSAP2	O60256	8	201	Phosphoribosyl pyrophosphate synthase-associated protein 2 (	w
 SYNTHASE-ASSOCIATED	human	Q14558	PRPSAP1	Q14558	6	165	Phosphoribosyl pyrophosphate synthase-associated protein 1 (	w
 SYNTHASE-ASSOCIATED	zebrafish	Q803V2	prpsap2	Q803V2	3	7	Phosphoribosyl pyrophosphate synthase-associated protein 2	w
-SYNTHASE-COUPLING	fly	FBgn0016119	ATPsynCF6	Q24407	9	135	ATP synthase-coupling factor 6, mitochondrial (ATPase subuni	w
-SYNTHASE-COUPLING	fly	FBgn0035585	ATPsynCF6L	Q9VZ72	3	64	ATP synthase-coupling factor 6, mitochondrial	w
+SYNTHASE-COUPLING	fly	FBgn0016119	ATPsynCF6	Q24407	27	154	ATP synthase-coupling factor 6, mitochondrial (ATPase subuni	w
+SYNTHASE-COUPLING	fly	FBgn0035585	ATPsynCF6L	Q9VZ72	8	64	ATP synthase-coupling factor 6, mitochondrial	w
 SYNTHASE-COUPLING	human	Q99766	DMAC2L	Q99766	17	174	ATP synthase subunit s, mitochondrial (ATP synthase-coupling	w
 SYNTHASE-COUPLING	worm	O16517	atp-4	O16517	3	45	ATP synthase-coupling factor 6, mitochondrial	w
 SYNTHASE-COUPLING	zebrafish	Q6NYF7	atp5pf	Q6NYF7	4	53	ATP synthase-coupling factor 6, mitochondrial	w
@@ -1415,7 +1415,7 @@ SYNTHASE-INTERACTING	human	Q9Y314	NOSIP	Q9Y314	12	137	Nitric oxide synthase-inte
 SYNTHASE-INTERACTING	worm	Q21755	R05G6.4	Q21755	0	22	Nitric oxide synthase-interacting protein homolog	w
 SYNTHASE-INTERACTING	zebrafish	Q5U3S7	nosip	Q5U3S7	0	4	Nitric oxide synthase-interacting protein	w
 SYNTHASE-LIKE	fly	FBgn0034047	cGlr1	A1ZA55	0	5	Cyclic GMP-AMP synthase-like receptor 1 (cGLR1) (EC 2.7.7.-)	w
-SYNTHASE-LIKE	fly	FBgn0035868	CG7194	Q9VSH0	5	16	Cyclic GMP-AMP synthase-like protein (EC 2.7.7.-)	w
+SYNTHASE-LIKE	fly	FBgn0035868	CG7194	Q9VSH0	5	17	Cyclic GMP-AMP synthase-like protein (EC 2.7.7.-)	w
 SYNTHASE-LIKE	fly	FBgn0041780	Ssl2	Q9VAQ9	2	21	Strictosidine synthase-like 2 (EC 4.3.3.2)	w
 SYNTHASE-LIKE	human	A1L0T0	HACL2	A1L0T0	8	213	2-hydroxyacyl-CoA lyase 2 (EC 4.1.2.-) (Acetolactate synthas	w
 SYNTHASE-LIKE	human	Q15646	OASL	Q15646	38	852	2'-5'-oligoadenylate synthase-like protein (2'-5'-OAS-relate	w
@@ -1437,12 +1437,12 @@ SYNTHASE-LYSINE	zebrafish	Q501S4	cskmt	Q501S4	7	10	Citrate synthase-lysine N-met
 SYNTHASE-RELATED	fly	FBgn0052380	SMSr	Q9VS60	0	8	Ceramide phosphoethanolamine synthase (CPE synthase) (EC 2.7	w
 SYNTHASE-RELATED	human	Q8TEA8	DTD1	Q8TEA8	3	46	D-aminoacyl-tRNA deacylase 1 (DTD) (EC 3.1.1.96) (DNA-unwind	w
 SYNTHASE-RELATED	human	Q96LT4	SAMD8	Q96LT4	2	30	Sphingomyelin synthase-related protein 1 (SMSr) (EC 2.7.8.-)	w
-SYNTHESIS	fly	FBgn0000316	cin	P39205	0	28	Molybdenum cofactor synthesis protein cinnamon [Includes: Mo	w
-SYNTHESIS	fly	FBgn0032054	Mocs3	Q9VLJ8	3	57	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
-SYNTHESIS	fly	FBgn0034270	PIG-A	Q7JUM3	3	15	phosphatidylinositol N-acetylglucosaminyltransferase (EC 2.4	w
-SYNTHESIS	fly	FBgn0039280	Mocs2B	Q9VBX2	16	57	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (Moly	w
+SYNTHESIS	fly	FBgn0000316	cin	P39205	0	32	Molybdenum cofactor synthesis protein cinnamon [Includes: Mo	w
+SYNTHESIS	fly	FBgn0032054	Mocs3	Q9VLJ8	3	62	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
+SYNTHESIS	fly	FBgn0034270	PIG-A	Q7JUM3	5	20	phosphatidylinositol N-acetylglucosaminyltransferase (EC 2.4	w
+SYNTHESIS	fly	FBgn0039280	Mocs2B	Q9VBX2	22	64	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (Moly	w
 SYNTHESIS	fly	FBgn0260229	Mocs2A	P0C919	2	5	Molybdopterin synthase sulfur carrier subunit (Molybdenum co	w
-SYNTHESIS	fly	FBgn0262467	Scox	Q9VMX4	6	28	AT19154p (Synthesis of cytochrome c oxidase)	w
+SYNTHESIS	fly	FBgn0262467	Scox	Q9VMX4	10	33	AT19154p (Synthesis of cytochrome c oxidase)	w
 SYNTHESIS	human	O95396	MOCS3	O95396	4	130	Adenylyltransferase and sulfurtransferase MOCS3 (Molybdenum 	w
 SYNTHESIS	human	O96007	MOCS2	O96007	2	31	Molybdopterin synthase catalytic subunit (EC 2.8.1.12) (MOCO	w
 SYNTHESIS	human	O96033	MOCS2	O96033	266	2181	Molybdopterin synthase sulfur carrier subunit (MOCO1-A) (Mol	w
@@ -1463,67 +1463,67 @@ SYNTHESIS-ASSOCIATED	yeast	P43614	KEG1	P43614	0	13	Beta-1,6-glucan synthesis-ass
 SYNTHESIS-STEP	human	Q9NZB8	MOCS1	Q9NZB8	8	135	Molybdenum cofactor biosynthesis protein 1 (Cell migration-i	w
 SYNTHESIZING	human	Q96MH6	TMEM68	Q96MH6	4	74	DGAT1/2-independent enzyme synthesizing storage lipids (DIES	w
 SYNTHETA	human	P41250	GARS1	P41250	8	177	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
-SYNTHETAS	fly	FBgn0037643	ScsbetaA	Q95U38	12	159	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
-SYNTHETASE	fly	FBgn0000053	Gart	P00967	2	95	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
+SYNTHETAS	fly	FBgn0037643	ScsbetaA	Q95U38	15	160	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
+SYNTHETASE	fly	FBgn0000053	Gart	P00967	2	99	Trifunctional purine biosynthetic protein adenosine-3 [Inclu	w
 SYNTHETASE	fly	FBgn0000527	e	Q9VDC6	1	16	Beta-alanyl-bioamine nonribosomal peptide synthetase ebony (	w
 SYNTHETASE	fly	FBgn0001142	Gs1	P20477	3	163	Glutamine synthetase 1, mitochondrial (EC 6.3.1.2) (Glutamat	w
-SYNTHETASE	fly	FBgn0001145	Gs2	X2JDA5	0	62	Glutamine synthetase (EC 6.3.1.2)	w
-SYNTHETASE	fly	FBgn0002069	AspRS	Q7K0E6	7	162	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	w
-SYNTHETASE	fly	FBgn0004888	Scsalpha1	Q94522	14	141	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
+SYNTHETASE	fly	FBgn0001145	Gs2	X2JDA5	1	66	Glutamine synthetase (EC 6.3.1.2)	w
+SYNTHETASE	fly	FBgn0002069	AspRS	Q7K0E6	7	165	Aspartate--tRNA ligase, cytoplasmic (EC 6.1.1.12) (Aspartyl-	w
+SYNTHETASE	fly	FBgn0004888	Scsalpha1	Q94522	21	145	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
 SYNTHETASE	fly	FBgn0005674	GluProRS	P28668	9	98	Bifunctional glutamate/proline--tRNA ligase (Bifunctional am	w
-SYNTHETASE	fly	FBgn0010803	TrpRS	Q0KI98	1	62	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
-SYNTHETASE	fly	FBgn0012034	AcCoAS	Q9VP61	4	76	Acetyl-coenzyme A synthetase (EC 6.2.1.1) (Acetate--CoA liga	w
+SYNTHETASE	fly	FBgn0010803	TrpRS	Q0KI98	4	69	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
+SYNTHETASE	fly	FBgn0012034	AcCoAS	Q9VP61	6	85	Acetyl-coenzyme A synthetase (EC 6.2.1.1) (Acetate--CoA liga	w
 SYNTHETASE	fly	FBgn0020389	Papss	Q8IQV1	3	100	PAPS synthetase, isoform D (EC 2.7.1.25, EC 2.7.7.4)	w
-SYNTHETASE	fly	FBgn0020513	Paics	Q9I7S8	5	240	Bifunctional phosphoribosylaminoimidazole carboxylase/phosph	w
-SYNTHETASE	fly	FBgn0021750	SerRS-m	Q9VF85	3	25	serine--tRNA ligase (EC 6.1.1.11) (Seryl-tRNA synthetase)	w
-SYNTHETASE	fly	FBgn0027079	ValRS	A0A0B4KF06	0	33	Valine--tRNA ligase (EC 6.1.1.9) (Valyl-tRNA synthetase)	w
-SYNTHETASE	fly	FBgn0027080	TyrRS	Q9VV60	2	49	Tyrosine--tRNA ligase (EC 6.1.1.1) (Tyrosyl-tRNA synthetase)	w
-SYNTHETASE	fly	FBgn0027081	ThrRS	Q9VKB0	6	220	threonine--tRNA ligase (EC 6.1.1.3) (Threonyl-tRNA synthetas	w
-SYNTHETASE	fly	FBgn0027082	ProRS-m	Q9VZY9	2	43	proline--tRNA ligase (EC 6.1.1.15) (Prolyl-tRNA synthetase)	w
-SYNTHETASE	fly	FBgn0027083	MetRS-m	Q9VFL5	2	43	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Mitoch	w
-SYNTHETASE	fly	FBgn0027084	LysRS	Q9W327	11	98	Lysine--tRNA ligase (EC 6.1.1.6) (Lysyl-tRNA synthetase)	w
-SYNTHETASE	fly	FBgn0027085	LeuRS-m	Q9VZ82	1	51	leucine--tRNA ligase (EC 6.1.1.4) (Leucyl-tRNA synthetase)	w
+SYNTHETASE	fly	FBgn0020513	Paics	Q9I7S8	5	242	Bifunctional phosphoribosylaminoimidazole carboxylase/phosph	w
+SYNTHETASE	fly	FBgn0021750	SerRS-m	Q9VF85	5	36	serine--tRNA ligase (EC 6.1.1.11) (Seryl-tRNA synthetase)	w
+SYNTHETASE	fly	FBgn0027079	ValRS	A0A0B4KF06	0	34	Valine--tRNA ligase (EC 6.1.1.9) (Valyl-tRNA synthetase)	w
+SYNTHETASE	fly	FBgn0027080	TyrRS	Q9VV60	2	51	Tyrosine--tRNA ligase (EC 6.1.1.1) (Tyrosyl-tRNA synthetase)	w
+SYNTHETASE	fly	FBgn0027081	ThrRS	Q9VKB0	7	226	threonine--tRNA ligase (EC 6.1.1.3) (Threonyl-tRNA synthetas	w
+SYNTHETASE	fly	FBgn0027082	ProRS-m	Q9VZY9	6	47	proline--tRNA ligase (EC 6.1.1.15) (Prolyl-tRNA synthetase)	w
+SYNTHETASE	fly	FBgn0027083	MetRS-m	Q9VFL5	5	47	Methionine--tRNA ligase, mitochondrial (EC 6.1.1.10) (Mitoch	w
+SYNTHETASE	fly	FBgn0027084	LysRS	Q9W327	13	111	Lysine--tRNA ligase (EC 6.1.1.6) (Lysyl-tRNA synthetase)	w
+SYNTHETASE	fly	FBgn0027085	LeuRS-m	Q9VZ82	3	55	leucine--tRNA ligase (EC 6.1.1.4) (Leucyl-tRNA synthetase)	w
 SYNTHETASE	fly	FBgn0027086	IleRS	Q8MSW0	5	101	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
-SYNTHETASE	fly	FBgn0027088	GlyRS	Q9VUK8	1	71	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
-SYNTHETASE	fly	FBgn0027090	GlnRS	Q9Y105	13	282	Probable glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tR	w
-SYNTHETASE	fly	FBgn0027091	CysRS	Q7KN90	1	21	Cysteine--tRNA ligase, cytoplasmic (EC 6.1.1.16) (Cysteinyl-	w
-SYNTHETASE	fly	FBgn0027093	ArgRS	Q9VXN4	4	96	Probable arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (A	w
-SYNTHETASE	fly	FBgn0027094	AlaRS	Q9VLM8	2	121	Alanine--tRNA ligase, cytoplasmic (EC 6.1.1.7) (Alanyl-tRNA 	w
-SYNTHETASE	fly	FBgn0027493	Adss	Q9Y0Y2	0	213	Adenylosuccinate synthetase (AMPSase) (AdSS) (EC 6.3.4.4) (I	w
-SYNTHETASE	fly	FBgn0027780	CG13401	Q9VLL0	0	10	Beta-alanine-activating enzyme (EC 6.2.1.-) (Acyl-CoA synthe	w
-SYNTHETASE	fly	FBgn0028962	AlaRS-m	Q9VRJ1	0	30	Alanine--tRNA ligase, mitochondrial (EC 6.1.1.7) (Alanyl-tRN	w
-SYNTHETASE	fly	FBgn0029118	ScsbetaG	Q9V470	9	175	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
-SYNTHETASE	fly	FBgn0030007	alpha-PheRS	Q9W3J5	1	11	Phenylalanine--tRNA ligase alpha subunit (EC 6.1.1.20) (Phen	w
+SYNTHETASE	fly	FBgn0027088	GlyRS	Q9VUK8	1	74	Glycine--tRNA ligase (EC 6.1.1.14) (Diadenosine tetraphospha	w
+SYNTHETASE	fly	FBgn0027090	GlnRS	Q9Y105	20	286	Probable glutamine--tRNA ligase (EC 6.1.1.18) (Glutaminyl-tR	w
+SYNTHETASE	fly	FBgn0027091	CysRS	Q7KN90	1	24	Cysteine--tRNA ligase, cytoplasmic (EC 6.1.1.16) (Cysteinyl-	w
+SYNTHETASE	fly	FBgn0027093	ArgRS	Q9VXN4	4	98	Probable arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (A	w
+SYNTHETASE	fly	FBgn0027094	AlaRS	Q9VLM8	2	126	Alanine--tRNA ligase, cytoplasmic (EC 6.1.1.7) (Alanyl-tRNA 	w
+SYNTHETASE	fly	FBgn0027493	Adss	Q9Y0Y2	0	216	Adenylosuccinate synthetase (AMPSase) (AdSS) (EC 6.3.4.4) (I	w
+SYNTHETASE	fly	FBgn0027780	CG13401	Q9VLL0	1	11	Beta-alanine-activating enzyme (EC 6.2.1.-) (Acyl-CoA synthe	w
+SYNTHETASE	fly	FBgn0028962	AlaRS-m	Q9VRJ1	0	31	Alanine--tRNA ligase, mitochondrial (EC 6.1.1.7) (Alanyl-tRN	w
+SYNTHETASE	fly	FBgn0029118	ScsbetaG	Q9V470	9	176	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
+SYNTHETASE	fly	FBgn0030007	alpha-PheRS	Q9W3J5	1	16	Phenylalanine--tRNA ligase alpha subunit (EC 6.1.1.20) (Phen	w
 SYNTHETASE	fly	FBgn0030336	Dph6	Q8MRI4	0	12	Diphthine--ammonia ligase (EC 6.3.1.14) (ATP-binding domain-	w
-SYNTHETASE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	10	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
-SYNTHETASE	fly	FBgn0030512	Nadsyn	Q9VYA0	1	9	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	w
+SYNTHETASE	fly	FBgn0030407	Fpgs1	Q9VYL1	0	14	Folylpolyglutamate synthase (EC 6.3.2.17) (Folylpoly-gamma-g	w
+SYNTHETASE	fly	FBgn0030512	Nadsyn	Q9VYA0	3	16	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	w
 SYNTHETASE	fly	FBgn0030882	Gss1	Q86B44	1	120	Glutathione synthetase (GSH-S) (EC 6.3.2.3)	w
-SYNTHETASE	fly	FBgn0031497	SerRS	Q9VQL1	5	180	serine--tRNA ligase (EC 6.1.1.11) (Seryl-tRNA synthetase)	w
+SYNTHETASE	fly	FBgn0031497	SerRS	Q9VQL1	5	183	serine--tRNA ligase (EC 6.1.1.11) (Seryl-tRNA synthetase)	w
 SYNTHETASE	fly	FBgn0032997	CG17486	Q5LJP9	0	4	Asparagine synthetase domain-containing protein CG17486	w
 SYNTHETASE	fly	FBgn0033900	CysRS-m	Q7K3P0	0	19	cysteine--tRNA ligase (EC 6.1.1.16) (Cysteinyl-tRNA syntheta	w
-SYNTHETASE	fly	FBgn0034401	MetRS	A1ZBE9	7	56	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
-SYNTHETASE	fly	FBgn0035064	TyrRS-m	Q9W107	1	15	Tyrosine--tRNA ligase, mitochondrial (EC 6.1.1.1) (Mitochond	w
+SYNTHETASE	fly	FBgn0034401	MetRS	A1ZBE9	7	58	Methionine--tRNA ligase, cytoplasmic (EC 6.1.1.10) (Methiony	w
+SYNTHETASE	fly	FBgn0035064	TyrRS-m	Q9W107	1	26	Tyrosine--tRNA ligase, mitochondrial (EC 6.1.1.1) (Mitochond	w
 SYNTHETASE	fly	FBgn0035942	ValRS-m	Q9VSR7	2	13	valine--tRNA ligase (EC 6.1.1.9) (Valyl-tRNA synthetase)	w
-SYNTHETASE	fly	FBgn0036569	IleRS-m	Q9VUY4	2	49	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
-SYNTHETASE	fly	FBgn0036629	GluRS-m	Q9VV59	7	184	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
-SYNTHETASE	fly	FBgn0036763	TrpRS-m	Q9VVL8	1	21	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
+SYNTHETASE	fly	FBgn0036569	IleRS-m	Q9VUY4	2	51	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
+SYNTHETASE	fly	FBgn0036629	GluRS-m	Q9VV59	8	184	Nondiscriminating glutamyl-tRNA synthetase EARS2, mitochondr	w
+SYNTHETASE	fly	FBgn0036763	TrpRS-m	Q9VVL8	3	25	tryptophan--tRNA ligase (EC 6.1.1.2) (Tryptophanyl-tRNA synt	w
 SYNTHETASE	fly	FBgn0037332	Hcs	A0A0B4LGM5	3	22	Holocarboxylase synthetase, isoform C (EC 6.3.4.15)	w
-SYNTHETASE	fly	FBgn0037526	ArgRS-m	Q8SXK2	0	25	arginine--tRNA ligase (EC 6.1.1.19) (Arginyl-tRNA synthetase	w
-SYNTHETASE	fly	FBgn0037643	ScsbetaA	Q95U38	12	159	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
+SYNTHETASE	fly	FBgn0037526	ArgRS-m	Q8SXK2	0	28	arginine--tRNA ligase (EC 6.1.1.19) (Arginyl-tRNA synthetase	w
+SYNTHETASE	fly	FBgn0037643	ScsbetaA	Q95U38	15	160	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
 SYNTHETASE	fly	FBgn0038708	Scsalpha2	Q9VDW7	5	47	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
-SYNTHETASE	fly	FBgn0039175	beta-PheRS	Q9VCA5	2	35	Phenylalanine--tRNA ligase beta subunit (EC 6.1.1.20) (Pheny	w
-SYNTHETASE	fly	FBgn0039184	CG6432	Q9VC92	1	15	Acyl-CoA synthetase short-chain family member 3, mitochondri	w
-SYNTHETASE	fly	FBgn0040319	Gclc	Q9W3K5	6	134	Glutamate--cysteine ligase (EC 6.3.2.2) (Gamma-ECS) (GCS) (G	w
-SYNTHETASE	fly	FBgn0046114	Gclm	Q9VCW6	5	114	GCS light chain (Gamma-ECS regulatory subunit) (Gamma-glutam	w
-SYNTHETASE	fly	FBgn0051739	AspRS-m	Q9VJH2	2	29	Aspartyl-tRNA synthetase, mitochondrial	w
+SYNTHETASE	fly	FBgn0039175	beta-PheRS	Q9VCA5	2	40	Phenylalanine--tRNA ligase beta subunit (EC 6.1.1.20) (Pheny	w
+SYNTHETASE	fly	FBgn0039184	CG6432	Q9VC92	2	24	Acyl-CoA synthetase short-chain family member 3, mitochondri	w
+SYNTHETASE	fly	FBgn0040319	Gclc	Q9W3K5	6	136	Glutamate--cysteine ligase (EC 6.3.2.2) (Gamma-ECS) (GCS) (G	w
+SYNTHETASE	fly	FBgn0046114	Gclm	Q9VCW6	5	115	GCS light chain (Gamma-ECS regulatory subunit) (Gamma-glutam	w
+SYNTHETASE	fly	FBgn0051739	AspRS-m	Q9VJH2	2	30	Aspartyl-tRNA synthetase, mitochondrial	w
 SYNTHETASE	fly	FBgn0052495	Gss2	Q86B44	0	5	Glutathione synthetase (GSH-S) (EC 6.3.2.3)	w
-SYNTHETASE	fly	FBgn0086443	AsnRS	Q9V434	3	125	Asparagine--tRNA ligase, cytoplasmic (EC 6.1.1.22) (Asparagi	w
-SYNTHETASE	fly	FBgn0261270	Sps1	O18373	2	87	Inactive selenide, water dikinase-like protein (Protein patu	w
-SYNTHETASE	fly	FBgn0261285	Ppcs	E2QD26	2	89	Phosphopantothenoylcysteine synthetase, isoform C (EC 6.3.2.	w
+SYNTHETASE	fly	FBgn0086443	AsnRS	Q9V434	3	129	Asparagine--tRNA ligase, cytoplasmic (EC 6.1.1.22) (Asparagi	w
+SYNTHETASE	fly	FBgn0261270	Sps1	O18373	2	89	Inactive selenide, water dikinase-like protein (Protein patu	w
+SYNTHETASE	fly	FBgn0261285	Ppcs	E2QD26	2	93	Phosphopantothenoylcysteine synthetase, isoform C (EC 6.3.2.	w
 SYNTHETASE	fly	FBgn0261439	SdhA	Q94523	17	99	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
 SYNTHETASE	fly	FBgn0266452	Ctps	Q9VUL1	17	753	CTP synthase (EC 6.3.4.2) (CTP synthetase) (UTP--ammonia lig	w
 SYNTHETASE	fly	FBgn0270926	Asns	Q7KTW9	0	35	Asparagine synthetase [glutamine-hydrolyzing] (EC 6.3.5.4) (	w
-SYNTHETASE	fly	FBgn0275436	PheRS-m	O16129	2	12	Probable phenylalanine--tRNA ligase, mitochondrial (EC 6.1.1	w
+SYNTHETASE	fly	FBgn0275436	PheRS-m	O16129	2	25	Probable phenylalanine--tRNA ligase, mitochondrial (EC 6.1.1	w
 SYNTHETASE	fly	FBgn0284253	LeuRS	Q9VQR8	3	66	leucine--tRNA ligase (EC 6.1.1.4) (Leucyl-tRNA synthetase)	w
 SYNTHETASE	human	A2RTX5	TARS3	A2RTX5	12	145	Threonine--tRNA ligase 2, cytoplasmic (EC 6.1.1.3) (Threonyl	w
 SYNTHETASE	human	A6NEY8	PRORSD1P	A6NEY8	7	39	Putative prolyl-tRNA synthetase associated domain-containing	w
@@ -1681,6 +1681,6 @@ SYNTROPHIN-3	human	Q13425	SNTB2	Q13425	22	211	Beta-2-syntrophin (59 kDa dystroph
 SYNTROPHIN-4	human	Q9NSN8	SNTG1	Q9NSN8	15	122	Gamma-1-syntrophin (G1SYN) (Syntrophin-4) (SYN4)	w
 SYNTROPHIN-5	human	Q9NY99	SNTG2	Q9NY99	13	109	Gamma-2-syntrophin (G2SYN) (Syntrophin-5) (SYN5)	w
 SYNTROPHIN-ASSOCIATED	human	Q9Y2H9	MAST1	Q9Y2H9	63	379	Microtubule-associated serine/threonine-protein kinase 1 (EC	w
-SYNTROPHIN-LIKE	fly	FBgn0034135	Syn2	A1ZAH3	7	23	FI16515p1 (Syntrophin-like 2, isoform E)	w
-SYNTROPHIN-LIKE	fly	FBgn0037130	Syn1	Q9VNY2	4	23	IP02644p (Syntrophin-like 1, isoform B) (Syntrophin-like 1, 	w
+SYNTROPHIN-LIKE	fly	FBgn0034135	Syn2	A1ZAH3	8	24	FI16515p1 (Syntrophin-like 2, isoform E)	w
+SYNTROPHIN-LIKE	fly	FBgn0037130	Syn1	Q9VNY2	5	24	IP02644p (Syntrophin-like 1, isoform B) (Syntrophin-like 1, 	w
 SYNTROPHIN-LIKE	human	Q13425	SNTB2	Q13425	22	211	Beta-2-syntrophin (59 kDa dystrophin-associated protein A1 b	w

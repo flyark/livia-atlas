@@ -7,7 +7,7 @@ SORBIN	human	O60504	SORBS3	O60504	78	270	Vinexin (SH3-containing adapter molecul
 SORBIN	human	O94875	SORBS2	O94875	57	157	Sorbin and SH3 domain-containing protein 2 (Arg-binding prot	w
 SORBIN	human	Q9BX66	SORBS1	Q9BX66	52	194	Sorbin and SH3 domain-containing protein 1 (Ponsin) (SH3 dom	w
 SORBIN	worm	G5EC32	sorb-1	G5EC32	7	74	Sorbin and SH3 domain-containing protein 1 homolog	w
-SORBITOL	fly	FBgn0022359	Sord2	O96299	2	16	Sorbitol dehydrogenase (Polyol dehydrogenase)	w
+SORBITOL	fly	FBgn0022359	Sord2	O96299	3	21	Sorbitol dehydrogenase (Polyol dehydrogenase)	w
 SORBITOL	fly	FBgn0024289	Sord1	O97479	1	19	Sorbitol dehydrogenase (Polyol dehydrogenase)	w
 SORBITOL	human	Q00796	SORD	Q00796	7	194	Sorbitol dehydrogenase (SDH) (EC 1.1.1.-) ((R,R)-butanediol 	w
 SORBITOL	worm	Q21702	CELE_R04B5.5	Q21702	2	10	Sorbitol dehydrogenase	w
@@ -46,10 +46,10 @@ SORD	mus-musculus	Q64442	Sord	Q64442	0	25	Sorbitol dehydrogenase
 SORD	rattus-norvegicus	P27867	Sord	P27867	0	10	Sorbitol dehydrogenase	
 SORD	zebrafish	F1Q713	sord	F1Q713	0	17	Sorbitol dehydrogenase	
 SORD1	fly	FBgn0024289	Sord1	O97479	1	19	Sorbitol dehydrogenase (Polyol dehydrogenase)	
-SORD2	fly	FBgn0022359	Sord2	O96299	2	16	Sorbitol dehydrogenase (Polyol dehydrogenase)	
+SORD2	fly	FBgn0022359	Sord2	O96299	3	21	Sorbitol dehydrogenase (Polyol dehydrogenase)	
 SORDD1	fly	FBgn0030693	sordd1	Q9VXP1	12	74	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	
 SORDD2	fly	FBgn0052581	sordd2	Q8IR26	10	54	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	
-SORDL	fly	FBgn0270925	Sordl	B7Z0M7	1	18	Uncharacterized protein, isoform E	
+SORDL	fly	FBgn0270925	Sordl	B7Z0M7	5	45	Uncharacterized protein, isoform E	
 SORF-1	worm	Q23533	sorf-1	Q23533	1	2	Suppressor of organelle fusion 1	
 SORF-2	worm	Q10122	sorf-2	Q10122	1	10	Suppressor of organelle fusion 2	
 SORF1	virus	Q6UDF9	sORF1	Q6UDF9	1	69	Tegument protein UL47 homolog	
@@ -84,26 +84,26 @@ SORTILIN	human	Q99523	SORT1	Q99523	49	357	Sortilin (100 kDa NT receptor) (Glycop
 SORTILIN	zebrafish	A5PMG8	sort1b	A5PMG8	3	30	Sortilin	w
 SORTILIN	zebrafish	Q6NUT7	sort1	Q6NUT7	2	70	Sortilin	w
 SORTILIN-RELATED	human	Q92673	SORL1	Q92673	17	247	Sortilin-related receptor (Low-density lipoprotein receptor 	w
-SORTING	fly	FBgn0016038	Vsp37A	O77259	4	25	EG:115C2.5 protein (RE69619p) (Vacuolar protein sorting 37A,	w
-SORTING	fly	FBgn0022027	Vps25	Q7JXV9	11	44	Vacuolar protein-sorting-associated protein 25 (ESCRT-II com	w
-SORTING	fly	FBgn0031310	Vps29	Q9VPX5	8	45	Vacuolar protein sorting-associated protein 29 (Vesicle prot	w
+SORTING	fly	FBgn0016038	Vsp37A	O77259	6	25	EG:115C2.5 protein (RE69619p) (Vacuolar protein sorting 37A,	w
+SORTING	fly	FBgn0022027	Vps25	Q7JXV9	13	45	Vacuolar protein-sorting-associated protein 25 (ESCRT-II com	w
+SORTING	fly	FBgn0031310	Vps29	Q9VPX5	9	45	Vacuolar protein sorting-associated protein 29 (Vesicle prot	w
 SORTING	fly	FBgn0031457	Snx21	Q9VQG1	0	2	LD12265p (Sorting nexin 21, isoform A)	w
-SORTING	fly	FBgn0031534	Snx1	Q9VQQ6	8	136	FI18122p1 (Sorting nexin 1, isoform A)	w
-SORTING	fly	FBgn0032005	Snx6	M9NDI3	12	63	Sorting nexin 6, isoform B	w
+SORTING	fly	FBgn0031534	Snx1	Q9VQQ6	10	140	FI18122p1 (Sorting nexin 1, isoform A)	w
+SORTING	fly	FBgn0032005	Snx6	M9NDI3	15	68	Sorting nexin 6, isoform B	w
 SORTING	fly	FBgn0032191	Snx17	Q9VL28	6	26	LD15323p (Sorting nexin 17)	w
 SORTING	fly	FBgn0034265	Snx16	Q7JR96	4	12	SD19533p (Sorting nexin 16)	w
-SORTING	fly	FBgn0034271	Vps50	A1ZAY8	5	5	FI23003p1 (Vacuolar protein sorting 50)	w
-SORTING	fly	FBgn0034744	Vps20	Q9W236	5	85	Vacuolar protein sorting 20, isoform A (Vacuolar protein sor	w
-SORTING	fly	FBgn0035704	Vps8	Q9VRX2	9	24	Vacuolar protein sorting-associated protein 8 homolog (Vacuo	w
-SORTING	fly	FBgn0037299	Vps37B	Q9VN88	8	39	LD45836p (Vacuolar protein sorting 37B, isoform A) (Vacuolar	w
+SORTING	fly	FBgn0034271	Vps50	A1ZAY8	5	6	FI23003p1 (Vacuolar protein sorting 50)	w
+SORTING	fly	FBgn0034744	Vps20	Q9W236	14	87	Vacuolar protein sorting 20, isoform A (Vacuolar protein sor	w
+SORTING	fly	FBgn0035704	Vps8	Q9VRX2	10	25	Vacuolar protein sorting-associated protein 8 homolog (Vacuo	w
+SORTING	fly	FBgn0037299	Vps37B	Q9VN88	11	40	LD45836p (Vacuolar protein sorting 37B, isoform A) (Vacuolar	w
 SORTING	fly	FBgn0037622	CG8202	Q9VHM2	4	8	VPS35 endosomal protein sorting factor-like	w
-SORTING	fly	FBgn0038065	Snx3	Q9VG51	6	58	RE52028p (Sorting nexin 3, isoform A) (Sorting nexin 3, isof	w
-SORTING	fly	FBgn0039335	Vps33B	Q9VBR1	9	31	Vacuolar protein sorting 33B	w
-SORTING	fly	FBgn0040475	SH3PX1	Q9NCC3	9	89	Sorting nexin	w
-SORTING	fly	FBgn0052758	Snx27	Q9W486	3	21	LD13361p (Sorting nexin 27, isoform A)	w
-SORTING	fly	FBgn0261049	Vps45	Q9VHB5	11	56	SD10846p (Vacuolar protein sorting 45)	w
-SORTING	fly	FBgn0283469	Vps4	Q9Y162	19	211	BcDNA.GH02678 (Vacuolar protein sorting 4, isoform A (EC 3.6	w
-SORTING	fly	FBgn0290431	Vps2	Q9VBI3	6	44	Vacuolar protein sorting 2	w
+SORTING	fly	FBgn0038065	Snx3	Q9VG51	6	60	RE52028p (Sorting nexin 3, isoform A) (Sorting nexin 3, isof	w
+SORTING	fly	FBgn0039335	Vps33B	Q9VBR1	12	32	Vacuolar protein sorting 33B	w
+SORTING	fly	FBgn0040475	SH3PX1	Q9NCC3	10	91	Sorting nexin	w
+SORTING	fly	FBgn0052758	Snx27	Q9W486	4	21	LD13361p (Sorting nexin 27, isoform A)	w
+SORTING	fly	FBgn0261049	Vps45	Q9VHB5	16	61	SD10846p (Vacuolar protein sorting 45)	w
+SORTING	fly	FBgn0283469	Vps4	Q9Y162	20	212	BcDNA.GH02678 (Vacuolar protein sorting 4, isoform A (EC 3.6	w
+SORTING	fly	FBgn0290431	Vps2	Q9VBI3	16	45	Vacuolar protein sorting 2	w
 SORTING	human	O14559	ARHGAP33	O14559	6	32	Rho GTPase-activating protein 33 (Rho-type GTPase-activating	w
 SORTING	human	O60493	SNX3	O60493	13	259	Sorting nexin-3 (Protein SDP3)	w
 SORTING	human	O60749	SNX2	O60749	29	266	Sorting nexin-2 (Transformation-related gene 9 protein) (TRG	w
@@ -188,25 +188,25 @@ SORTING	zebrafish	Q6P3G2	snx27b	Q6P3G2	2	28	Sorting nexin-27	w
 SORTING	zebrafish	Q7ZZB1	snx9a	Q7ZZB1	2	21	Sorting nexin	w
 SORTING	zebrafish	Q803G5	samm50a	Q803G5	4	27	Sorting and assembly machinery component 50 homolog A	w
 SORTING-ASSOCIAT	human	O43633	CHMP2A	O43633	17	161	Charged multivesicular body protein 2a (Chromatin-modifying 	w
-SORTING-ASSOCIATED	fly	FBgn0000257	car	M9PF72	12	126	Vacuolar protein sorting-associated protein 33A	w
-SORTING-ASSOCIATED	fly	FBgn0000482	dor	Q24314	17	124	Vacuolar protein sorting-associated protein 18 homolog (Prot	w
-SORTING-ASSOCIATED	fly	FBgn0002566	lt	Q7PL76	13	58	Vacuolar protein sorting-associated protein 41 homolog (Prot	w
-SORTING-ASSOCIATED	fly	FBgn0011232	scat	Q9VLC0	10	42	Vacuolar protein sorting-associated protein 54 (Protein scat	w
-SORTING-ASSOCIATED	fly	FBgn0014411	Vps26	Q9W552	5	33	Vacuolar protein sorting-associated protein 26 (VPS26 protei	w
-SORTING-ASSOCIATED	fly	FBgn0021814	Vps28	Q9V359	6	72	Vacuolar protein sorting-associated protein 28 homolog (ESCR	w
-SORTING-ASSOCIATED	fly	FBgn0031310	Vps29	Q9VPX5	8	45	Vacuolar protein sorting-associated protein 29 (Vesicle prot	w
-SORTING-ASSOCIATED	fly	FBgn0031598	Vps53	Q9VQY8	16	61	Vacuolar protein sorting-associated protein 53 homolog	w
-SORTING-ASSOCIATED	fly	FBgn0031710	Vps52	Q9VMQ8	18	64	Vacuolar protein sorting-associated protein 52 homolog	w
-SORTING-ASSOCIATED	fly	FBgn0032321	YL-1	Q9VKM6	64	442	Vacuolar protein sorting-associated protein 72 homolog (Prot	w
+SORTING-ASSOCIATED	fly	FBgn0000257	car	M9PF72	15	128	Vacuolar protein sorting-associated protein 33A	w
+SORTING-ASSOCIATED	fly	FBgn0000482	dor	Q24314	20	126	Vacuolar protein sorting-associated protein 18 homolog (Prot	w
+SORTING-ASSOCIATED	fly	FBgn0002566	lt	Q7PL76	15	60	Vacuolar protein sorting-associated protein 41 homolog (Prot	w
+SORTING-ASSOCIATED	fly	FBgn0011232	scat	Q9VLC0	12	43	Vacuolar protein sorting-associated protein 54 (Protein scat	w
+SORTING-ASSOCIATED	fly	FBgn0014411	Vps26	Q9W552	6	34	Vacuolar protein sorting-associated protein 26 (VPS26 protei	w
+SORTING-ASSOCIATED	fly	FBgn0021814	Vps28	Q9V359	9	72	Vacuolar protein sorting-associated protein 28 homolog (ESCR	w
+SORTING-ASSOCIATED	fly	FBgn0031310	Vps29	Q9VPX5	9	45	Vacuolar protein sorting-associated protein 29 (Vesicle prot	w
+SORTING-ASSOCIATED	fly	FBgn0031598	Vps53	Q9VQY8	16	62	Vacuolar protein sorting-associated protein 53 homolog	w
+SORTING-ASSOCIATED	fly	FBgn0031710	Vps52	Q9VMQ8	20	65	Vacuolar protein sorting-associated protein 52 homolog	w
+SORTING-ASSOCIATED	fly	FBgn0032321	YL-1	Q9VKM6	69	442	Vacuolar protein sorting-associated protein 72 homolog (Prot	w
 SORTING-ASSOCIATED	fly	FBgn0033194	Vps13	A1Z713	0	2	Intermembrane lipid transfer protein Vps13 (Vacuolar protein	w
-SORTING-ASSOCIATED	fly	FBgn0034380	Vps51	Q8MSY4	11	68	Vacuolar protein sorting-associated protein 51 homolog (Prot	w
-SORTING-ASSOCIATED	fly	FBgn0034708	Vps35	Q9W277	10	72	Vacuolar protein sorting-associated protein 35	w
-SORTING-ASSOCIATED	fly	FBgn0035704	Vps8	Q9VRX2	9	24	Vacuolar protein sorting-associated protein 8 homolog (Vacuo	w
-SORTING-ASSOCIATED	fly	FBgn0038593	Vps39	Q9VEA2	15	149	Vacuolar protein sorting-associated protein 39 homolog	w
-SORTING-ASSOCIATED	fly	FBgn0039702	Vps16B	Q9VAG4	14	81	Vacuolar protein sorting-associated protein 16B (Protein ful	w
+SORTING-ASSOCIATED	fly	FBgn0034380	Vps51	Q8MSY4	12	69	Vacuolar protein sorting-associated protein 51 homolog (Prot	w
+SORTING-ASSOCIATED	fly	FBgn0034708	Vps35	Q9W277	13	72	Vacuolar protein sorting-associated protein 35	w
+SORTING-ASSOCIATED	fly	FBgn0035704	Vps8	Q9VRX2	10	25	Vacuolar protein sorting-associated protein 8 homolog (Vacuo	w
+SORTING-ASSOCIATED	fly	FBgn0038593	Vps39	Q9VEA2	18	151	Vacuolar protein sorting-associated protein 39 homolog	w
+SORTING-ASSOCIATED	fly	FBgn0039702	Vps16B	Q9VAG4	16	81	Vacuolar protein sorting-associated protein 16B (Protein ful	w
 SORTING-ASSOCIATED	fly	FBgn0052113	Vps13D	Q9VU08	1	29	Intermembrane lipid transfer protein Vps13D (Vacuolar protei	w
-SORTING-ASSOCIATED	fly	FBgn0052350	Vps11	Q8SX81	6	35	Vacuolar protein sorting-associated protein 11 homolog	w
-SORTING-ASSOCIATED	fly	FBgn0285911	Vps16A	Q9VHG1	13	59	Vacuolar protein sorting-associated protein 16 homolog (Prot	w
+SORTING-ASSOCIATED	fly	FBgn0052350	Vps11	Q8SX81	9	38	Vacuolar protein sorting-associated protein 11 homolog	w
+SORTING-ASSOCIATED	fly	FBgn0285911	Vps16A	Q9VHG1	16	60	Vacuolar protein sorting-associated protein 16 homolog (Prot	w
 SORTING-ASSOCIATED	human	A5D8V6	VPS37C	A5D8V6	31	162	Vacuolar protein sorting-associated protein 37C (hVps37C) (E	w
 SORTING-ASSOCIATED	human	O14972	VPS26C	O14972	11	96	Vacuolar protein sorting-associated protein 26C (Down syndro	w
 SORTING-ASSOCIATED	human	O75351	VPS4B	O75351	12	144	Vacuolar protein sorting-associated protein 4B (EC 3.6.4.6) 	w

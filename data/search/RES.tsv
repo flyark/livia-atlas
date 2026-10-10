@@ -43,7 +43,7 @@ RESISTANCE	fly	FBgn0004513	Mdr65	Q00748	2	35	Multidrug resistance protein homolo
 RESISTANCE	fly	FBgn0010241	Mdr50	Q5BI62	0	34	LP14331p (Multi drug resistance 50 (EC 3.6.1.3))	w
 RESISTANCE	fly	FBgn0013576	mtd	A0A0B4K620	3	18	Oxidation resistance protein 1	w
 RESISTANCE	fly	FBgn0028468	rtet	Q9V395	0	11	BcDNA.LD28419 (Tetracycline resistance)	w
-RESISTANCE	fly	FBgn0036194	Dph1	Q9VTM2	5	20	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
+RESISTANCE	fly	FBgn0036194	Dph1	Q9VTM2	5	23	2-(3-amino-3-carboxypropyl)histidine synthase subunit 1 (EC 	w
 RESISTANCE	fly	FBgn0263316	Mrp4	Q9VGM1	1	58	Multidrug resistance protein 4 (EC 3.6.1.3) (SD11716p)	w
 RESISTANCE	human	O75815	BCAR3	O75815	22	176	Breast cancer anti-estrogen resistance protein 3 (Novel SH2-	w
 RESISTANCE	human	P08183	ABCB1	P08183	1	93	ATP-dependent translocase ABCB1 (ATP-binding cassette sub-fa	w
@@ -84,7 +84,7 @@ RESISTANCE	yeast	Q06139	CIS1	Q06139	0	5	Citrinin resistance protein, mitochondri
 RESISTANCE	yeast	Q08952	OXR1	Q08952	0	7	Oxidation resistance protein 1	w
 RESISTANCE	zebrafish	A0A8M9PD70	oxr1a	A0A8M9PD70	4	6	oxidation resistance protein 1 isoform X1	w
 RESISTANCE	zebrafish	B5DE36	bcar1	B5DE36	33	170	Breast cancer anti-estrogen resistance protein 1	w
-RESISTANCE-ASSOCIATED	fly	FBgn0032499	Uvrag	Q9VK07	13	58	UV radiation resistance-associated gene protein (UV-resistan	w
+RESISTANCE-ASSOCIATED	fly	FBgn0032499	Uvrag	Q9VK07	17	58	UV radiation resistance-associated gene protein (UV-resistan	w
 RESISTANCE-ASSOCIATED	human	A4FU01	MTMR11	A4FU01	7	58	Myotubularin-related protein 11 (Cisplatin resistance-associ	w
 RESISTANCE-ASSOCIATED	human	O15440	ABCC5	O15440	2	111	ATP-binding cassette sub-family C member 5 (EC 7.6.2.-) (EC 	w
 RESISTANCE-ASSOCIATED	human	O95255	ABCC6	O95255	0	66	ATP-binding cassette sub-family C member 6 (EC 7.6.2.-) (EC 	w
@@ -109,7 +109,7 @@ RESISTANCE-CONFERRING	yeast	P38767	ERC1	P38767	0	4	Ethionine resistance-conferri
 RESISTANCE-RELATED	fly	FBgn0030456	CG4332	Q9VYG3	16	58	Lipid scramblase CLPTM1L (Cisplatin resistance-related prote	w
 RESISTANCE-RELATED	human	Q14764	MVP	Q14764	8	284	Major vault protein (MVP) (Lung resistance-related protein)	w
 RESISTANCE-RELATED	human	Q96KA5	CLPTM1L	Q96KA5	5	154	Lipid scramblase CLPTM1L (Cisplatin resistance-related prote	w
-RESISTANT	fly	FBgn0000075	amd	P18486	1	6	3,4-dihydroxyphenylacetaldehyde synthase (DHPAA synthase) (D	w
+RESISTANT	fly	FBgn0000075	amd	P18486	1	10	3,4-dihydroxyphenylacetaldehyde synthase (DHPAA synthase) (D	w
 RESISTANT	fly	FBgn0004244	Rdl	M9PBZ1	3	37	Resistant to dieldrin, isoform G	w
 RESISTANT	human	Q5JU85	IQSEC2	Q5JU85	66	331	IQ motif and SEC7 domain-containing protein 2 (Brefeldin A r	w
 RESISTANT	human	Q7Z5B4	RIC3	Q7Z5B4	10	93	Protein RIC-3 (Resistant to inhibitor of cholinesterase 3)	w
@@ -164,7 +164,7 @@ RESPONDER	human	P49788	RARRES1	P49788	27	133	Retinoic acid receptor responder pr
 RESPONDER	human	Q99969	RARRES2	Q99969	20	269	Retinoic acid receptor responder protein 2 (Chemerin) (RAR-r	w
 RESPONDER	zebrafish	A0A0R4INS8	rarres3	A0A0R4INS8	3	131	Retinoic acid receptor responder 3	w
 RESPONDER	zebrafish	Q6DHK9	rarres3l	Q6DHK9	4	131	Retinoic acid receptor responder 3-like	w
-RESPONSE	fly	FBgn0004101	bs	Q24535	46	447	Serum response factor homolog (dSRF) (Protein blistered)	w
+RESPONSE	fly	FBgn0004101	bs	Q24535	47	449	Serum response factor homolog (dSRF) (Protein blistered)	w
 RESPONSE	fly	FBgn0004396	CrebA	P29747	92	386	Cyclic AMP response element-binding protein A (cAMP response	w
 RESPONSE	fly	FBgn0023023	Crmp	Q8IPQ2	2	54	Collapsin response mediator protein (EC 3.5.2.2, EC 3.5.2.-)	w
 RESPONSE	fly	FBgn0029974	dpr14	Q9W3N2	3	7	Defective proboscis extension response 14, isoform A (Defect	w
@@ -172,7 +172,7 @@ RESPONSE	fly	FBgn0030051	spirit	Q7K3Y1	44	244	GH03360p (Serine protease immune r
 RESPONSE	fly	FBgn0030723	dpr18	Q9VXK1	2	4	Defective proboscis extension response 18 (RE24718p)	w
 RESPONSE	fly	FBgn0032233	dpr19	Q9VKX8	4	7	Defective proboscis extension response 19, isoform A (Defect	w
 RESPONSE	fly	FBgn0034286	dpr13	A1ZB15	3	6	Defective proboscis extension response 13, isoform B (IP0431	w
-RESPONSE	fly	FBgn0034647	pirk	Q9W2E6	4	10	Poor Imd response upon knock-in, isoform A (Poor Imd respons	w
+RESPONSE	fly	FBgn0034647	pirk	Q9W2E6	5	11	Poor Imd response upon knock-in, isoform A (Poor Imd respons	w
 RESPONSE	fly	FBgn0035170	dpr20	Q9W0L9	2	4	Defective proboscis extension response 20 (GH16485p)	w
 RESPONSE	fly	FBgn0035976	PGRP-LC	Q9GNK5	601	2820	Peptidoglycan-recognition protein LC (Immune response defici	w
 RESPONSE	fly	FBgn0036165	chrb	Q9VTI8	6	32	Protein charybde (Protein charybdis) (Protein regulated in d	w
@@ -183,12 +183,12 @@ RESPONSE	fly	FBgn0038282	dpr9	Q9VFD9	6	17	Defective proboscis extension response
 RESPONSE	fly	FBgn0040305	MTF-1	A8JNP3	45	354	Metal response element-binding transcription Factor-1, isofo	w
 RESPONSE	fly	FBgn0040726	dpr1	A1ZBY3	6	8	Defective proboscis extension response 1, isoform A (Defecti	w
 RESPONSE	fly	FBgn0040823	dpr6	X2J8X8	44	253	Defective proboscis extension response 6, isoform F	w
-RESPONSE	fly	FBgn0041094	scyl	Q9VTH4	6	32	Protein scylla (Protein regulated in development and DNA dam	w
+RESPONSE	fly	FBgn0041094	scyl	Q9VTH4	7	33	Protein scylla (Protein regulated in development and DNA dam	w
 RESPONSE	fly	FBgn0051361	dpr17	Q9VGD3	4	13	Defective proboscis extension response 17, isoform A (Defect	w
 RESPONSE	fly	FBgn0052057	dpr10	Q9VT83	4	9	Defective proboscis extension response 10, isoform A (Defect	w
 RESPONSE	fly	FBgn0052069	Insep	Q9VTE1	2	9	Immediate early response 3-interacting protein 1	w
 RESPONSE	fly	FBgn0052600	dpr8	Q9VY33	6	13	Defective proboscis extension response 8, isoform A (Defecti	w
-RESPONSE	fly	FBgn0053194	CheA29a	Q8T0X8	28	245	Chemosensory protein A 29a (Putative pheromone response fact	w
+RESPONSE	fly	FBgn0053194	CheA29a	Q8T0X8	28	246	Chemosensory protein A 29a (Putative pheromone response fact	w
 RESPONSE	fly	FBgn0053202	dpr11	Q8MRE6	3	8	Defective proboscis extension response 11, isoform B (Defect	w
 RESPONSE	fly	FBgn0053481	dpr7	A8DZ27	6	9	Defective proboscis extension response 7, isoform F	w
 RESPONSE	fly	FBgn0053512	dpr4	Q59DX6	5	6	Defective proboscis extension response 4 (FI04761p)	w

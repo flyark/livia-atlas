@@ -9,7 +9,7 @@ SOD-4	onchocerca-volvulus	Q07449	sod-4	Q07449	1	29	Extracellular superoxide dism
 SOD-4	worm	P34461	sod-4	P34461	2	15	Extracellular superoxide dismutase	
 SOD-5	worm	Q27538	sod-5	Q27538	6	16	Superoxide dismutase	
 SOD1	candida-albicans-237561	A0A1D8PLJ3	SOD1	A0A1D8PLJ3	1	18	Superoxide dismutase	
-SOD1	fly	FBgn0003462	Sod1	P61851	6	153	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (Superoxide dismu	
+SOD1	fly	FBgn0003462	Sod1	P61851	7	157	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (Superoxide dismu	
 SOD1	glycine-max	Q7M1R5	SOD1	Q7M1R5	2	98	Superoxide dismutase	
 SOD1	human	P00441	SOD1	P00441	22	458	Superoxide dismutase [Cu-Zn] (EC 1.15.1.1) (EC 1.8.-.-) (Hyd	
 SOD1	mus-musculus	P08228	Sod1	P08228	9	69	Superoxide dismutase	
@@ -24,7 +24,7 @@ SOD2	cladophialophora-carrionii	A0A1C1C8U4	SOD2	A0A1C1C8U4	0	2	Na(+)/H(+) antipo
 SOD2	cladophialophora-carrionii	A0A1C1CUU0	sod2	A0A1C1CUU0	0	2	Na(+)/H(+) antiporter	
 SOD2	cladophialophora-carrionii	A0A1C1D0I2	SOD2	A0A1C1D0I2	1	83	Superoxide dismutase	
 SOD2	dictyostelium-discoideum	Q55BJ9	sod2	Q55BJ9	5	80	Superoxide dismutase	
-SOD2	fly	FBgn0010213	Sod2	Q00637	17	303	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	
+SOD2	fly	FBgn0010213	Sod2	Q00637	20	305	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	
 SOD2	human	F5H3C5	SOD2	F5H3C5	4	265	Superoxide dismutase	
 SOD2	human	P04179	SOD2	P04179	17	428	Superoxide dismutase [Mn], mitochondrial (EC 1.15.1.1)	
 SOD2	mus-musculus	P09671	Sod2	P09671	10	285	Superoxide dismutase	
@@ -88,7 +88,7 @@ SODCC2	oryza-sativa-subsp-japonica	P28757	SODCC2	P28757	1	37	Superoxide dismutas
 SODCP	oryza-sativa-subsp-japonica	P93407	SODCP	P93407	1	40	Superoxide dismutase	
 SODC_CAEEL	worm	P34697	sod-1	P34697	6	65		
 SODC_DANRE	zebrafish	O73872	sod1	O73872	5	53		
-SODC_DROME	fly	FBgn0003462	Sod1	P61851	6	153		
+SODC_DROME	fly	FBgn0003462	Sod1	P61851	7	157		
 SODC_HUMAN	human	P00441	SOD1	P00441	22	458		
 SODC_YEAST	yeast	P00445	SOD1	P00445	3	61		
 SODD	dictyostelium-discoideum	Q54TU5	sodD	Q54TU5	1	1	Superoxide dismutase	
@@ -97,7 +97,7 @@ SODE	dictyostelium-discoideum	Q54G70	sodE	Q54G70	1	1	Superoxide dismutase
 SODE_HUMAN	human	P08294	SOD3	P08294	6	90		
 SODF	dictyostelium-discoideum	Q54TW8	sodF	Q54TW8	1	1	Probable superoxide dismutase	
 SODH-1	fly	FBgn0024289	Sord1	O97479	1	19		
-SODH-2	fly	FBgn0022359	Sord2	O96299	2	16		
+SODH-2	fly	FBgn0022359	Sord2	O96299	3	21		
 SODH-2	worm	O45687	sodh-2	O45687	3	11	Alcohol dehydrogenase 2	
 SODI	human	Q9NY46	SCN3A	Q9NY46	5	85	Sodium channel protein type 3 subunit alpha (Sodium channel 	w
 SODIU	human	Q9Y5Y9	SCN10A	Q9Y5Y9	2	14	Sodium channel protein type 10 subunit alpha (Peripheral ner	w
@@ -117,7 +117,7 @@ SODIUM	fly	FBgn0040297	Nhe2	B7YZY2	5	22	Sodium/hydrogen exchanger	w
 SODIUM	fly	FBgn0051547	NKCC	Q9VNC7	0	4	GH09711p (Sodium potassium chloride cotransporter, isoform B	w
 SODIUM	fly	FBgn0085434	NaCP60E	A0A0B4KFH8	0	1	Sodium channel protein	w
 SODIUM	fly	FBgn0085442	NKAIN	A6MHQ4	3	10	Sodium/potassium-transporting ATPase subunit beta-1-interact	w
-SODIUM	fly	FBgn0267363	JYalpha	A8QI34	6	10	Sodium/potassium-transporting ATPase subunit alpha	w
+SODIUM	fly	FBgn0267363	JYalpha	A8QI34	7	11	Sodium/potassium-transporting ATPase subunit alpha	w
 SODIUM	fly	FBgn0285944	para	M9PJP5	2	35	Sodium channel protein	w
 SODIUM	human	A0PJK1	SLC5A10	A0PJK1	6	38	Sodium/mannose cotransporter SLC5A10 (Sodium/glucose cotrans	w
 SODIUM	human	O00168	FXYD1	O00168	19	162	Phospholemman (FXYD domain-containing ion transport regulato	w
@@ -369,7 +369,7 @@ SODIUM-PHOSPHATE	human	Q06495	SLC34A1	Q06495	3	80	Sodium-dependent phosphate tra
 SODIUM-PHOSPHATE	human	Q8N130	SLC34A3	Q8N130	1	69	Sodium-dependent phosphate transport protein 2C (Sodium-phos	w
 SODM	staphylococcus-aureus-93061	Q2G261	sodM	Q2G261	0	70	Superoxide dismutase	
 SODM1_CAEEL	worm	P31161	sod-2	P31161	5	115		
-SODM_DROME	fly	FBgn0010213	Sod2	Q00637	17	303		
+SODM_DROME	fly	FBgn0010213	Sod2	Q00637	20	305		
 SODM_HUMAN	human	P04179	SOD2	P04179	17	428		
 SODM_YEAST	yeast	P00447	SOD2	P00447	3	69		
 SODQ	fly	FBgn0039386	Sodq	Q9VBK8	19	266	superoxide dismutase (EC 1.15.1.1)	

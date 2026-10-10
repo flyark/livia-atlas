@@ -32,8 +32,8 @@ VACCINIA-RELATED	human	Q8IV63	VRK3	Q8IV63	22	220	Serine/threonine-protein kinase
 VACCINIA-RELATED	human	Q99986	VRK1	Q99986	61	1470	Serine/threonine-protein kinase VRK1 (EC 2.7.11.1) (Vaccinia	w
 VACCINIA-RELATED	worm	Q19848	vrk-1	Q19848	2	22	Serine/threonine-protein kinase VRK1 (EC 2.7.11.1) (Vaccinia	w
 VACCINIA-RELATED	zebrafish	Q7ZUS1	vrk1	Q7ZUS1	1	31	Serine/threonine-protein kinase VRK1 (EC 2.7.11.1) (Vaccinia	w
-VACHT	fly	FBgn0270928	VAChT	O17444	2	47	Vesicular acetylcholine transporter (VAChT)	w
-VACHT	fly	FBgn0270928	VAChT	O17444	2	47	Vesicular acetylcholine transporter (VAChT)	w
+VACHT	fly	FBgn0270928	VAChT	O17444	3	48	Vesicular acetylcholine transporter (VAChT)	w
+VACHT	fly	FBgn0270928	VAChT	O17444	3	48	Vesicular acetylcholine transporter (VAChT)	w
 VACHT	human	Q16572	SLC18A3	Q16572	2	138		
 VACHT_HUMAN	human	Q16572	SLC18A3	Q16572	2	138		
 VACJ	salmonella-typhimurium	Q7CQ32	vacJ	Q7CQ32	4	12	Lipoprotein	
@@ -41,58 +41,58 @@ VACJ	shigella-dysenteriae-serotype-1	Q32DI6	vacJ	Q32DI6	1	9	Lipoprotein
 VACL-14	worm	Q21225	vacl-14	Q21225	1	14	Protein VAC14 homolog	
 VACM-1	human	Q93034	CUL5	Q93034	48	512	Cullin-5 (CUL-5) (Vasopressin-activated calcium-mobilizing r	w
 VACM1	human	Q93034	CUL5	Q93034	48	512		
-VACUOLAR	fly	FBgn0000257	car	M9PF72	12	126	Vacuolar protein sorting-associated protein 33A	w
-VACUOLAR	fly	FBgn0000482	dor	Q24314	17	124	Vacuolar protein sorting-associated protein 18 homolog (Prot	w
-VACUOLAR	fly	FBgn0002566	lt	Q7PL76	13	58	Vacuolar protein sorting-associated protein 41 homolog (Prot	w
+VACUOLAR	fly	FBgn0000257	car	M9PF72	15	128	Vacuolar protein sorting-associated protein 33A	w
+VACUOLAR	fly	FBgn0000482	dor	Q24314	20	126	Vacuolar protein sorting-associated protein 18 homolog (Prot	w
+VACUOLAR	fly	FBgn0002566	lt	Q7PL76	15	60	Vacuolar protein sorting-associated protein 41 homolog (Prot	w
 VACUOLAR	fly	FBgn0003969	vap	Q8IR23	24	222	GH13542p (RasGap protein) (Vacuolar peduncle, isoform A) (Va	w
-VACUOLAR	fly	FBgn0005671	Vha55	P31409	13	206	V-type proton ATPase subunit B (V-ATPase subunit B) (V-ATPas	w
-VACUOLAR	fly	FBgn0011232	scat	Q9VLC0	10	42	Vacuolar protein sorting-associated protein 54 (Protein scat	w
-VACUOLAR	fly	FBgn0014411	Vps26	Q9W552	5	33	Vacuolar protein sorting-associated protein 26 (VPS26 protei	w
-VACUOLAR	fly	FBgn0016038	Vsp37A	O77259	4	25	EG:115C2.5 protein (RE69619p) (Vacuolar protein sorting 37A,	w
-VACUOLAR	fly	FBgn0021814	Vps28	Q9V359	6	72	Vacuolar protein sorting-associated protein 28 homolog (ESCR	w
-VACUOLAR	fly	FBgn0022027	Vps25	Q7JXV9	11	44	Vacuolar protein-sorting-associated protein 25 (ESCRT-II com	w
-VACUOLAR	fly	FBgn0022097	Vha36-1	Q9V7D2	14	86	V-type proton ATPase subunit D 1 (V-ATPase subunit D 1) (Vac	w
-VACUOLAR	fly	FBgn0027779	VhaSFD	Q9V3J1	7	97	Vacuolar H[+]-ATPase SFD subunit	w
+VACUOLAR	fly	FBgn0005671	Vha55	P31409	16	206	V-type proton ATPase subunit B (V-ATPase subunit B) (V-ATPas	w
+VACUOLAR	fly	FBgn0011232	scat	Q9VLC0	12	43	Vacuolar protein sorting-associated protein 54 (Protein scat	w
+VACUOLAR	fly	FBgn0014411	Vps26	Q9W552	6	34	Vacuolar protein sorting-associated protein 26 (VPS26 protei	w
+VACUOLAR	fly	FBgn0016038	Vsp37A	O77259	6	25	EG:115C2.5 protein (RE69619p) (Vacuolar protein sorting 37A,	w
+VACUOLAR	fly	FBgn0021814	Vps28	Q9V359	9	72	Vacuolar protein sorting-associated protein 28 homolog (ESCR	w
+VACUOLAR	fly	FBgn0022027	Vps25	Q7JXV9	13	45	Vacuolar protein-sorting-associated protein 25 (ESCRT-II com	w
+VACUOLAR	fly	FBgn0022097	Vha36-1	Q9V7D2	17	86	V-type proton ATPase subunit D 1 (V-ATPase subunit D 1) (Vac	w
+VACUOLAR	fly	FBgn0027779	VhaSFD	Q9V3J1	7	98	Vacuolar H[+]-ATPase SFD subunit	w
 VACUOLAR	fly	FBgn0028662	VhaPPA1-1	Q9VFE3	11	89	V-type proton ATPase 16 kDa proteolipid subunit c (Vacuolar 	w
-VACUOLAR	fly	FBgn0031310	Vps29	Q9VPX5	8	45	Vacuolar protein sorting-associated protein 29 (Vesicle prot	w
-VACUOLAR	fly	FBgn0031598	Vps53	Q9VQY8	16	61	Vacuolar protein sorting-associated protein 53 homolog	w
-VACUOLAR	fly	FBgn0031640	Mon1	Q9VR38	9	27	Vacuolar fusion protein MON1 homolog (Dmon1)	w
-VACUOLAR	fly	FBgn0031710	Vps52	Q9VMQ8	18	64	Vacuolar protein sorting-associated protein 52 homolog	w
-VACUOLAR	fly	FBgn0032321	YL-1	Q9VKM6	64	442	Vacuolar protein sorting-associated protein 72 homolog (Prot	w
+VACUOLAR	fly	FBgn0031310	Vps29	Q9VPX5	9	45	Vacuolar protein sorting-associated protein 29 (Vesicle prot	w
+VACUOLAR	fly	FBgn0031598	Vps53	Q9VQY8	16	62	Vacuolar protein sorting-associated protein 53 homolog	w
+VACUOLAR	fly	FBgn0031640	Mon1	Q9VR38	9	29	Vacuolar fusion protein MON1 homolog (Dmon1)	w
+VACUOLAR	fly	FBgn0031710	Vps52	Q9VMQ8	20	65	Vacuolar protein sorting-associated protein 52 homolog	w
+VACUOLAR	fly	FBgn0032321	YL-1	Q9VKM6	69	442	Vacuolar protein sorting-associated protein 72 homolog (Prot	w
 VACUOLAR	fly	FBgn0033194	Vps13	A1Z713	0	2	Intermembrane lipid transfer protein Vps13 (Vacuolar protein	w
-VACUOLAR	fly	FBgn0033706	Vha36-2	A1Z8V7	8	48	FI16532p1 (Vacuolar H[+] ATPase 36kD subunit 2)	w
-VACUOLAR	fly	FBgn0034271	Vps50	A1ZAY8	5	5	FI23003p1 (Vacuolar protein sorting 50)	w
-VACUOLAR	fly	FBgn0034380	Vps51	Q8MSY4	11	68	Vacuolar protein sorting-associated protein 51 homolog (Prot	w
-VACUOLAR	fly	FBgn0034708	Vps35	Q9W277	10	72	Vacuolar protein sorting-associated protein 35	w
-VACUOLAR	fly	FBgn0034744	Vps20	Q9W236	5	85	Vacuolar protein sorting 20, isoform A (Vacuolar protein sor	w
-VACUOLAR	fly	FBgn0035470	Ccz1	Q9VZL5	3	8	Vacuolar fusion protein CCZ1 homolog (Caffeine-calcium-zinc 	w
-VACUOLAR	fly	FBgn0035704	Vps8	Q9VRX2	9	24	Vacuolar protein sorting-associated protein 8 homolog (Vacuo	w
-VACUOLAR	fly	FBgn0036740	Vps60	Q9VVI9	6	73	Charged multivesicular body protein 5 (Vacuolar protein-sort	w
+VACUOLAR	fly	FBgn0033706	Vha36-2	A1Z8V7	14	48	FI16532p1 (Vacuolar H[+] ATPase 36kD subunit 2)	w
+VACUOLAR	fly	FBgn0034271	Vps50	A1ZAY8	5	6	FI23003p1 (Vacuolar protein sorting 50)	w
+VACUOLAR	fly	FBgn0034380	Vps51	Q8MSY4	12	69	Vacuolar protein sorting-associated protein 51 homolog (Prot	w
+VACUOLAR	fly	FBgn0034708	Vps35	Q9W277	13	72	Vacuolar protein sorting-associated protein 35	w
+VACUOLAR	fly	FBgn0034744	Vps20	Q9W236	14	87	Vacuolar protein sorting 20, isoform A (Vacuolar protein sor	w
+VACUOLAR	fly	FBgn0035470	Ccz1	Q9VZL5	3	13	Vacuolar fusion protein CCZ1 homolog (Caffeine-calcium-zinc 	w
+VACUOLAR	fly	FBgn0035704	Vps8	Q9VRX2	10	25	Vacuolar protein sorting-associated protein 8 homolog (Vacuo	w
+VACUOLAR	fly	FBgn0036740	Vps60	Q9VVI9	10	73	Charged multivesicular body protein 5 (Vacuolar protein-sort	w
 VACUOLAR	fly	FBgn0036998	CG5969	Q9VPE4	6	13	Vacuolar ATPase assembly integral membrane protein VMA21 hom	w
-VACUOLAR	fly	FBgn0037299	Vps37B	Q9VN88	8	39	LD45836p (Vacuolar protein sorting 37B, isoform A) (Vacuolar	w
-VACUOLAR	fly	FBgn0037402	Vha14-2	Q9VNL3	4	52	V-type proton ATPase subunit F 2 (V-ATPase subunit F 2) (Vac	w
-VACUOLAR	fly	FBgn0038593	Vps39	Q9VEA2	15	149	Vacuolar protein sorting-associated protein 39 homolog	w
-VACUOLAR	fly	FBgn0039058	VhaAC39-2	Q9VCQ3	7	77	Probable V-type proton ATPase subunit d 2 (V-ATPase subunit 	w
-VACUOLAR	fly	FBgn0039335	Vps33B	Q9VBR1	9	31	Vacuolar protein sorting 33B	w
-VACUOLAR	fly	FBgn0039702	Vps16B	Q9VAG4	14	81	Vacuolar protein sorting-associated protein 16B (Protein ful	w
+VACUOLAR	fly	FBgn0037299	Vps37B	Q9VN88	11	40	LD45836p (Vacuolar protein sorting 37B, isoform A) (Vacuolar	w
+VACUOLAR	fly	FBgn0037402	Vha14-2	Q9VNL3	10	52	V-type proton ATPase subunit F 2 (V-ATPase subunit F 2) (Vac	w
+VACUOLAR	fly	FBgn0038593	Vps39	Q9VEA2	18	151	Vacuolar protein sorting-associated protein 39 homolog	w
+VACUOLAR	fly	FBgn0039058	VhaAC39-2	Q9VCQ3	14	78	Probable V-type proton ATPase subunit d 2 (V-ATPase subunit 	w
+VACUOLAR	fly	FBgn0039335	Vps33B	Q9VBR1	12	32	Vacuolar protein sorting 33B	w
+VACUOLAR	fly	FBgn0039702	Vps16B	Q9VAG4	16	81	Vacuolar protein sorting-associated protein 16B (Protein ful	w
 VACUOLAR	fly	FBgn0040377	Vha36-3	Q9NEF6	5	44	V-type proton ATPase subunit D 2 (V-ATPase subunit D 2) (Vac	w
 VACUOLAR	fly	FBgn0052113	Vps13D	Q9VU08	1	29	Intermembrane lipid transfer protein Vps13D (Vacuolar protei	w
-VACUOLAR	fly	FBgn0052350	Vps11	Q8SX81	6	35	Vacuolar protein sorting-associated protein 11 homolog	w
+VACUOLAR	fly	FBgn0052350	Vps11	Q8SX81	9	38	Vacuolar protein sorting-associated protein 11 homolog	w
 VACUOLAR	fly	FBgn0086785	Vps36	Q9VU87	5	60	Vacuolar protein-sorting-associated protein 36 (ESCRT-II com	w
-VACUOLAR	fly	FBgn0261049	Vps45	Q9VHB5	11	56	SD10846p (Vacuolar protein sorting 45)	w
-VACUOLAR	fly	FBgn0262512	Vha14-1	Q24583	5	75	V-type proton ATPase subunit F 1 (V-ATPase subunit F 1) (V-A	w
-VACUOLAR	fly	FBgn0262514	VhaPPA1-2	Q9VFE5	12	85	V-type proton ATPase 16 kDa proteolipid subunit c (Vacuolar 	w
-VACUOLAR	fly	FBgn0262515	VhaAC45	Q7JR49	260	2438	V-type proton ATPase subunit S1 (Vacuolar H(+) ATPase AC45 a	w
-VACUOLAR	fly	FBgn0262736	Vha16-1	P23380	11	130	V-type proton ATPase 16 kDa proteolipid subunit c (V-ATPase 	w
+VACUOLAR	fly	FBgn0261049	Vps45	Q9VHB5	16	61	SD10846p (Vacuolar protein sorting 45)	w
+VACUOLAR	fly	FBgn0262512	Vha14-1	Q24583	10	78	V-type proton ATPase subunit F 1 (V-ATPase subunit F 1) (V-A	w
+VACUOLAR	fly	FBgn0262514	VhaPPA1-2	Q9VFE5	18	85	V-type proton ATPase 16 kDa proteolipid subunit c (Vacuolar 	w
+VACUOLAR	fly	FBgn0262515	VhaAC45	Q7JR49	267	2438	V-type proton ATPase subunit S1 (Vacuolar H(+) ATPase AC45 a	w
+VACUOLAR	fly	FBgn0262736	Vha16-1	P23380	16	130	V-type proton ATPase 16 kDa proteolipid subunit c (V-ATPase 	w
 VACUOLAR	fly	FBgn0263598	Vha68-2	Q27331	9	346	V-type proton ATPase catalytic subunit A isoform 2 (V-ATPase	w
-VACUOLAR	fly	FBgn0265262	Vha68-1	P48602	4	100	V-type proton ATPase catalytic subunit A isoform 1 (V-ATPase	w
-VACUOLAR	fly	FBgn0283469	Vps4	Q9Y162	19	211	BcDNA.GH02678 (Vacuolar protein sorting 4, isoform A (EC 3.6	w
-VACUOLAR	fly	FBgn0283535	Vha26	P54611	5	92	V-type proton ATPase subunit E (V-ATPase subunit E) (V-ATPas	w
-VACUOLAR	fly	FBgn0283536	Vha13	Q9XZH6	2	60	V-type proton ATPase subunit G (V-ATPase subunit G) (V-ATPas	w
-VACUOLAR	fly	FBgn0285910	VhaAC39-1	Q9W4P5	12	110	V-type proton ATPase subunit d 1 (V-ATPase subunit d 1) (V-A	w
-VACUOLAR	fly	FBgn0285911	Vps16A	Q9VHG1	13	59	Vacuolar protein sorting-associated protein 16 homolog (Prot	w
-VACUOLAR	fly	FBgn0287825	Vha44	Q9V7N5	8	76	V-type proton ATPase subunit C (V-ATPase subunit C) (Vacuola	w
-VACUOLAR	fly	FBgn0290431	Vps2	Q9VBI3	6	44	Vacuolar protein sorting 2	w
+VACUOLAR	fly	FBgn0265262	Vha68-1	P48602	10	100	V-type proton ATPase catalytic subunit A isoform 1 (V-ATPase	w
+VACUOLAR	fly	FBgn0283469	Vps4	Q9Y162	20	212	BcDNA.GH02678 (Vacuolar protein sorting 4, isoform A (EC 3.6	w
+VACUOLAR	fly	FBgn0283535	Vha26	P54611	9	92	V-type proton ATPase subunit E (V-ATPase subunit E) (V-ATPas	w
+VACUOLAR	fly	FBgn0283536	Vha13	Q9XZH6	8	60	V-type proton ATPase subunit G (V-ATPase subunit G) (V-ATPas	w
+VACUOLAR	fly	FBgn0285910	VhaAC39-1	Q9W4P5	17	111	V-type proton ATPase subunit d 1 (V-ATPase subunit d 1) (V-A	w
+VACUOLAR	fly	FBgn0285911	Vps16A	Q9VHG1	16	60	Vacuolar protein sorting-associated protein 16 homolog (Prot	w
+VACUOLAR	fly	FBgn0287825	Vha44	Q9V7N5	13	77	V-type proton ATPase subunit C (V-ATPase subunit C) (Vacuola	w
+VACUOLAR	fly	FBgn0290431	Vps2	Q9VBI3	16	45	Vacuolar protein sorting 2	w
 VACUOLAR	human	A5D8V6	VPS37C	A5D8V6	31	162	Vacuolar protein sorting-associated protein 37C (hVps37C) (E	w
 VACUOLAR	human	O14972	VPS26C	O14972	11	96	Vacuolar protein sorting-associated protein 26C (Down syndro	w
 VACUOLAR	human	O15342	ATP6V0E1	O15342	13	113	V-type proton ATPase subunit e 1 (V-ATPase subunit e 1) (V-A	w
@@ -313,7 +313,7 @@ VACUOLAR	zebrafish	Q7ZV03	vps26b	Q7ZV03	3	34	Vacuolar protein sorting-associated
 VACUOLAR	zebrafish	Q7ZV68	vps29	Q7ZV68	5	69	Vacuolar protein sorting-associated protein 29	w
 VACUOLAR	zebrafish	Q7ZVK4	vps36	Q7ZVK4	7	75	Vacuolar protein-sorting-associated protein 36	w
 VACUOLAR	zebrafish	Q803R2	ccz1	Q803R2	3	36	Vacuolar fusion protein CCZ1 homolog	w
-VACUOLAR-SORTING	fly	FBgn0260940	lsn	Q9VD72	3	33	Vacuolar-sorting protein SNF8	w
+VACUOLAR-SORTING	fly	FBgn0260940	lsn	Q9VD72	5	34	Vacuolar-sorting protein SNF8	w
 VACUOLAR-SORTING	human	Q96H20	SNF8	Q96H20	7	136	Vacuolar-sorting protein SNF8 (ELL-associated protein of 30 	w
 VACUOLAR-SORTING	worm	Q18258	vps-22	Q18258	3	45	Vacuolar-sorting protein SNF8	w
 VACUOLAR-SORTING	yeast	P39929	SNF7	P39929	10	86	Vacuolar-sorting protein SNF7	w

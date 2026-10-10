@@ -1,5 +1,5 @@
-ARG	fly	FBgn0023535	Arg	O76895	1	85	Arginase (EC 3.5.3.1)	
-ARG	fly	FBgn0023535	Arg	O76895	1	85	Arginase (EC 3.5.3.1)	
+ARG	fly	FBgn0023535	Arg	O76895	2	85	Arginase (EC 3.5.3.1)	
+ARG	fly	FBgn0023535	Arg	O76895	2	85	Arginase (EC 3.5.3.1)	
 ARG	human	P42684	ABL2	P42684	207	1496		
 ARG	human	Q9P2R6	RERE	Q9P2R6	18	160		
 ARG	plasmodium-falciparum-36329	Q8I384	ARG	Q8I384	0	2	Arginase	
@@ -145,7 +145,7 @@ ARGI	salmonella-typhimurium	Q08016	argI	Q08016	0	2	Ornithine carbamoyltransferas
 ARGI	shigella-dysenteriae-serotype-1	Q328S8	argI	Q328S8	0	1	Ornithine carbamoyltransferase	
 ARGI1_HUMAN	human	P05089	ARG1	P05089	10	301		
 ARGI2_HUMAN	human	P78540	ARG2	P78540	7	148		
-ARGINASE	fly	FBgn0023535	Arg	O76895	1	85	Arginase (EC 3.5.3.1)	w
+ARGINASE	fly	FBgn0023535	Arg	O76895	2	85	Arginase (EC 3.5.3.1)	w
 ARGINASE	human	P05089	ARG1	P05089	10	301	Arginase-1 (EC 3.5.3.1) (Liver-type arginase) (Type I argina	w
 ARGINASE	human	P78540	ARG2	P78540	7	148	Arginase-2, mitochondrial (EC 3.5.3.1) (Arginase II) (Kidney	w
 ARGINASE	human	Q9BSE5	AGMAT	Q9BSE5	1	93	Guanidino acid hydrolase, mitochondrial (EC 3.5.3.-) (Argina	w
@@ -156,19 +156,19 @@ ARGINASE	zebrafish	Q6PH54	arg2	Q6PH54	2	18	Arginase	w
 ARGINASE-1	human	P05089	ARG1	P05089	10	301	Arginase-1 (EC 3.5.3.1) (Liver-type arginase) (Type I argina	w
 ARGINASE-2	human	P78540	ARG2	P78540	7	148	Arginase-2, mitochondrial (EC 3.5.3.1) (Arginase II) (Kidney	w
 ARGININE	fly	FBgn0000116	Argk1	P48610	41	448	Arginine kinase 1	w
-ARGININE	fly	FBgn0015925	csul	Q9U6Y9	5	68	Protein arginine N-methyltransferase 5 (EC 2.1.1.-) (JBP1 ho	w
+ARGININE	fly	FBgn0015925	csul	Q9U6Y9	9	72	Protein arginine N-methyltransferase 5 (EC 2.1.1.-) (JBP1 ho	w
 ARGININE	fly	FBgn0031456	Tnpo-SR	Q9VQG0	15	407	LD21546p (Transportin-Serine/Arginine rich, isoform A) (Tran	w
 ARGININE	fly	FBgn0031592	Art2	Q9VQX9	1	7	Arginine methyltransferase 2, isoform A (Arginine methyltran	w
-ARGININE	fly	FBgn0032329	Art8	Q8SX32	6	34	Arginine methyltransferase 8 (RE49877p)	w
-ARGININE	fly	FBgn0034817	Art7	Q9W1V1	1	18	Protein arginine N-methyltransferase 7 (Dart7) (EC 2.1.1.-)	w
-ARGININE	fly	FBgn0035957	Argk2	Q9VST4	18	305	arginine kinase (EC 2.7.3.3)	w
-ARGININE	fly	FBgn0037770	Art4	Q9VH48	2	77	Probable histone-arginine methyltransferase CARMER (EC 2.1.1	w
-ARGININE	fly	FBgn0037834	Art1	Q9VGW7	3	61	Arginine methyltransferase 1 (EC 2.1.1.319, EC 2.1.1.321, EC	w
+ARGININE	fly	FBgn0032329	Art8	Q8SX32	6	35	Arginine methyltransferase 8 (RE49877p)	w
+ARGININE	fly	FBgn0034817	Art7	Q9W1V1	1	19	Protein arginine N-methyltransferase 7 (Dart7) (EC 2.1.1.-)	w
+ARGININE	fly	FBgn0035957	Argk2	Q9VST4	19	305	arginine kinase (EC 2.7.3.3)	w
+ARGININE	fly	FBgn0037770	Art4	Q9VH48	3	79	Probable histone-arginine methyltransferase CARMER (EC 2.1.1	w
+ARGININE	fly	FBgn0037834	Art1	Q9VGW7	3	64	Arginine methyltransferase 1 (EC 2.1.1.319, EC 2.1.1.321, EC	w
 ARGININE	fly	FBgn0037880	CG17726	Q9VGR2	3	36	Protein arginine methyltransferase NDUFAF7 homolog, mitochon	w
 ARGININE	fly	FBgn0038188	Art9	Q9VFP9	2	9	Arginine methyltransferase 9 (EC 2.1.1.321)	w
 ARGININE	fly	FBgn0038189	Art6	Q9VFP8	1	12	Arginine methyltransferase 6 (EC 2.1.1.321) (IP11481p)	w
-ARGININE	fly	FBgn0038306	Art3	Q9VFB3	1	10	Arginine methyltransferase 3, isoform A (EC 2.1.1.321) (LD34	w
-ARGININE	fly	FBgn0038373	Argk3	Q9VF23	10	307	arginine kinase (EC 2.7.3.3)	w
+ARGININE	fly	FBgn0038306	Art3	Q9VFB3	2	10	Arginine methyltransferase 3, isoform A (EC 2.1.1.321) (LD34	w
+ARGININE	fly	FBgn0038373	Argk3	Q9VF23	15	320	arginine kinase (EC 2.7.3.3)	w
 ARGININE	fly	FBgn0050274	CG30274	Q8MMD7	23	245	arginine kinase (EC 2.7.3.3)	w
 ARGININE	human	A6NHX0	CASTOR2	A6NHX0	9	80	Cytosolic arginine sensor for mTORC1 subunit 2 (Cellular arg	w
 ARGININE	human	A6NNA2	SRRM3	A6NNA2	19	96	Serine/arginine repetitive matrix protein 3	w
@@ -290,8 +290,8 @@ ARGININE	zebrafish	Q6PFM0	jmjd6	Q6PFM0	0	14	Bifunctional arginine demethylase an
 ARGININE	zebrafish	Q7ZVS6	castor2	Q7ZVS6	1	9	Cytosolic arginine sensor for mTORC1 subunit 2	w
 ARGININE	zebrafish	Q7ZVW9	arglu1b	Q7ZVW9	0	20	Arginine and glutamate-rich protein 1-B	w
 ARGININE-	human	Q9Y3Y2	CHTOP	Q9Y3Y2	29	259	Chromatin target of PRMT1 protein (Friend of PRMT1 protein) 	w
-ARGININE--TRNA	fly	FBgn0027093	ArgRS	Q9VXN4	4	96	Probable arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (A	w
-ARGININE--TRNA	fly	FBgn0037526	ArgRS-m	Q8SXK2	0	25	arginine--tRNA ligase (EC 6.1.1.19) (Arginyl-tRNA synthetase	w
+ARGININE--TRNA	fly	FBgn0027093	ArgRS	Q9VXN4	4	98	Probable arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (A	w
+ARGININE--TRNA	fly	FBgn0037526	ArgRS-m	Q8SXK2	0	28	arginine--tRNA ligase (EC 6.1.1.19) (Arginyl-tRNA synthetase	w
 ARGININE--TRNA	human	P54136	RARS1	P54136	11	291	Arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (Arginyl-tR	w
 ARGININE--TRNA	human	Q5T160	RARS2	Q5T160	7	195	Probable arginine--tRNA ligase, mitochondrial (EC 6.1.1.19) 	w
 ARGININE--TRNA	worm	Q18316	rars-2	Q18316	1	30	Probable arginine--tRNA ligase, mitochondrial	w
@@ -302,14 +302,14 @@ ARGININE--TRNA	zebrafish	Q6PGW8	zgc:63702	Q6PGW8	1	1	arginine--tRNA ligase	w
 ARGININE-FIFTY	human	A6NJG6	ARGFX	A6NJG6	59	344	Arginine-fifty homeobox	w
 ARGININE-GLUTAMIC	human	Q9P2R6	RERE	Q9P2R6	18	160	Arginine-glutamic acid dipeptide repeats protein (Atrophin-1	w
 ARGININE-GLUTAMIC	zebrafish	E7FCG5	rereb	E7FCG5	4	25	Arginine-glutamic acid dipeptide repeats protein	w
-ARGININE-HYDROXYLASE	fly	FBgn0033891	CG8067	Q7K1S1	3	36	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
+ARGININE-HYDROXYLASE	fly	FBgn0033891	CG8067	Q7K1S1	3	38	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
 ARGININE-HYDROXYLASE	human	Q5TEU4	NDUFAF5	Q5TEU4	10	159	Arginine-hydroxylase NDUFAF5, mitochondrial (EC 1.-.-.-) (NA	w
 ARGININE-HYDROXYLASE	worm	Q9NAP7	CELE_K09E4.3	Q9NAP7	1	5	Arginine-hydroxylase NDUFAF5, mitochondrial	w
 ARGININE-HYDROXYLASE	zebrafish	A3KP37	ndufaf5	A3KP37	5	46	Arginine-hydroxylase NDUFAF5, mitochondrial	w
 ARGININE-PHENYLALANINE-AMIDE	human	P83859	QRFP	P83859	9	141	Orexigenic neuropeptide QRFP (P518) [Cleaved into: QRF-amide	w
 ARGININE-RELATED	human	Q96IZ7	RSRC1	Q96IZ7	39	556	Serine/Arginine-related protein 53 (SRrp53) (Arginine/serine	w
 ARGININE-RELATED	zebrafish	A0AB32T9U9	rsrc1	A0AB32T9U9	6	508	Serine/Arginine-related protein 53	w
-ARGININE-RICH	fly	FBgn0028554	x16	Q9V3V0	5	25	Serine/arginine-rich splicing factor x16 (SR family splicing	w
+ARGININE-RICH	fly	FBgn0028554	x16	Q9V3V0	6	32	Serine/arginine-rich splicing factor x16 (SR family splicing	w
 ARGININE-RICH	human	O75494	SRSF10	O75494	30	282	Serine/arginine-rich splicing factor 10 (40 kDa SR-repressor	w
 ARGININE-RICH	human	P55145	MANF	P55145	11	130	Mesencephalic astrocyte-derived neurotrophic factor (Arginin	w
 ARGININE-RICH	human	P78362	SRPK2	P78362	382	1845	SRSF protein kinase 2 (EC 2.7.11.1) (SFRS protein kinase 2) 	w
@@ -351,8 +351,8 @@ ARGININE-SPECIFIC	yeast	P07258	CPA1	P07258	2	15	Carbamoyl phosphate synthase arg
 ARGININE-TRNA--PROTEIN	fly	FBgn0025720	Ate1	A0A0B4KFD5	0	2	Arginyl-tRNA--protein transferase 1 (Arginyltransferase 1) (	w
 ARGININE-TRNA--PROTEIN	human	O95260	ATE1	O95260	8	123	Arginyl-tRNA--protein transferase 1 (Arginyltransferase 1) (	w
 ARGININE-VASOPRESSIN	human	P01185	AVP	P01185	17	156	Vasopressin-neurophysin 2-copeptin (AVP-NPII) [Cleaved into:	w
-ARGININOSUCCINATE	fly	FBgn0026565	Ass	O97069	0	48	Argininosuccinate synthase (EC 6.3.4.5) (Citrulline--asparta	w
-ARGININOSUCCINATE	fly	FBgn0032076	Argl	Q9VLG9	0	43	Argininosuccinate lyase, isoform B (Argininosuccinate lyase,	w
+ARGININOSUCCINATE	fly	FBgn0026565	Ass	O97069	0	50	Argininosuccinate synthase (EC 6.3.4.5) (Citrulline--asparta	w
+ARGININOSUCCINATE	fly	FBgn0032076	Argl	Q9VLG9	2	46	Argininosuccinate lyase, isoform B (Argininosuccinate lyase,	w
 ARGININOSUCCINATE	human	P00966	ASS1	P00966	0	258	Argininosuccinate synthase (EC 6.3.4.5) (Citrulline--asparta	w
 ARGININOSUCCINATE	human	P04424	ASL	P04424	0	56	Argininosuccinate lyase (ASAL) (EC 4.3.2.1) (Arginosuccinase	w
 ARGININOSUCCINATE	yeast	P04076	ARG4	P04076	0	6	Argininosuccinate lyase	w
@@ -363,8 +363,8 @@ ARGINOSUCCINASE	human	P04424	ASL	P04424	0	56	Argininosuccinate lyase (ASAL) (EC 
 ARGINYL	human	Q9H4A4	RNPEP	Q9H4A4	3	89	Aminopeptidase B (AP-B) (EC 3.4.11.6) (Arginine aminopeptida	w
 ARGINYL	human	Q9HAU8	RNPEPL1	Q9HAU8	3	28	Aminopeptidase RNPEPL1 (EC 3.4.11.-) (Arginyl aminopeptidase	w
 ARGINYL-HYDROXYLASE	human	Q8N371	KDM8	Q8N371	13	231	Bifunctional peptidase and arginyl-hydroxylase JMJD5 (EC 1.1	w
-ARGINYL-TRNA	fly	FBgn0027093	ArgRS	Q9VXN4	4	96	Probable arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (A	w
-ARGINYL-TRNA	fly	FBgn0037526	ArgRS-m	Q8SXK2	0	25	arginine--tRNA ligase (EC 6.1.1.19) (Arginyl-tRNA synthetase	w
+ARGINYL-TRNA	fly	FBgn0027093	ArgRS	Q9VXN4	4	98	Probable arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (A	w
+ARGINYL-TRNA	fly	FBgn0037526	ArgRS-m	Q8SXK2	0	28	arginine--tRNA ligase (EC 6.1.1.19) (Arginyl-tRNA synthetase	w
 ARGINYL-TRNA	human	P54136	RARS1	P54136	11	291	Arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (Arginyl-tR	w
 ARGINYL-TRNA	human	Q5T160	RARS2	Q5T160	7	195	Probable arginine--tRNA ligase, mitochondrial (EC 6.1.1.19) 	w
 ARGINYL-TRNA--PROTEIN	fly	FBgn0025720	Ate1	A0A0B4KFD5	0	2	Arginyl-tRNA--protein transferase 1 (Arginyltransferase 1) (	w
@@ -385,9 +385,9 @@ ARGK	escherichia-coli-83333	P27254	argK	P27254	0	3	GTPase ArgK
 ARGK	fly	FBgn0000116	Argk1	P48610	41	448		
 ARGK-1	worm	O45518	argk-1	O45518	0	2	arginine kinase	
 ARGK1	fly	FBgn0000116	Argk1	P48610	41	448	Arginine kinase 1	
-ARGK2	fly	FBgn0035957	Argk2	Q9VST4	18	305	arginine kinase (EC 2.7.3.3)	
-ARGK3	fly	FBgn0038373	Argk3	Q9VF23	10	307	arginine kinase (EC 2.7.3.3)	
-ARGL	fly	FBgn0032076	Argl	Q9VLG9	0	43	Argininosuccinate lyase, isoform B (Argininosuccinate lyase,	
+ARGK2	fly	FBgn0035957	Argk2	Q9VST4	19	305	arginine kinase (EC 2.7.3.3)	
+ARGK3	fly	FBgn0038373	Argk3	Q9VF23	15	320	arginine kinase (EC 2.7.3.3)	
+ARGL	fly	FBgn0032076	Argl	Q9VLG9	2	46	Argininosuccinate lyase, isoform B (Argininosuccinate lyase,	
 ARGL1_HUMAN	human	Q9NWB6	ARGLU1	Q9NWB6	14	339		
 ARGLU1	fly	FBgn0051712	Arglu1	Q9VL63	2	21	UPF0430 protein CG31712	
 ARGLU1	human	Q9NWB6	ARGLU1	Q9NWB6	14	339	Arginine and glutamate-rich protein 1	
@@ -408,7 +408,7 @@ ARGONAUTE	worm	G5ED77	alg-3	G5ED77	1	28	Argonaute (Plant)-Like protein	w
 ARGONAUTE	worm	O62275	wago-4	O62275	0	28	Argonaute protein wago-4	w
 ARGONAUTE	worm	Q09249	hrde-1	Q09249	0	55	Argonaute protein hrde-1	w
 ARGONAUTE	worm	Q21770	wago-1	Q21770	1	46	Argonaute protein wago-1	w
-ARGONAUTE-1	fly	FBgn0262739	AGO1	Q32KD4	10	217	Argonaute-1, isoform A (Argonaute-1, isoform C) (Argonaute-1	w
+ARGONAUTE-1	fly	FBgn0262739	AGO1	Q32KD4	10	222	Argonaute-1, isoform A (Argonaute-1, isoform C) (Argonaute-1	w
 ARGONAUTE-1	human	Q9UL18	AGO1	Q9UL18	27	387	Protein argonaute-1 (Argonaute1) (hAgo1) (Argonaute RISC cat	w
 ARGONAUTE-1	worm	G5EES3	alg-1	G5EES3	2	54	Protein argonaute-1	w
 ARGONAUTE-1	worm	O16720	alg-2	O16720	2	34	Protein argonaute-1	w
@@ -426,7 +426,7 @@ ARGONAUTE2	human	Q9UKV8	AGO2	Q9UKV8	41	653	Protein argonaute-2 (Argonaute2) (hAg
 ARGONAUTE3	human	Q9H9G7	AGO3	Q9H9G7	15	240	Protein argonaute-3 (Argonaute3) (hAgo3) (EC 3.1.26.n2) (Arg	w
 ARGONAUTE4	human	Q9HCK5	AGO4	Q9HCK5	13	177	Protein argonaute-4 (Argonaute4) (hAgo4) (Argonaute RISC cat	w
 ARGOS	arabidopsis-thaliana	Q6NMD6	ARGOS	Q6NMD6	0	22	Protein AUXIN-REGULATED GENE INVOLVED IN ORGAN SIZE	
-ARGOS	fly	FBgn0004569	aos	Q00805	56	300	Protein giant-lens (Protein argos) (Protein strawberry)	w
+ARGOS	fly	FBgn0004569	aos	Q00805	57	300	Protein giant-lens (Protein argos) (Protein strawberry)	w
 ARGOS	oryza-sativa-subsp-japonica	Q7X6L2	ARGOS	Q7X6L2	0	9	Protein AUXIN-REGULATED GENE INVOLVED IN ORGAN SIZE	
 ARGP	escherichia-coli-83333	P0A8S1	argP	P0A8S1	0	2	HTH-type transcriptional regulator ArgP	
 ARGP	fly	FBgn0051469	Argp	Q8ING6	204	1246	acid phosphatase (EC 3.1.3.2)	
@@ -445,10 +445,10 @@ ARGR	salmonella-typhimurium	Q8ZK37	argR	Q8ZK37	0	2	Arginine repressor
 ARGR	shigella-dysenteriae-serotype-1	Q32BA2	argR	Q32BA2	0	2	Arginine repressor	
 ARGR	staphylococcus-aureus-93061	Q2FUX5	argR	Q2FUX5	1	3	Arginine repressor	
 ARGR	staphylococcus-aureus-93061	Q2FY49	argR	Q2FY49	0	3	Arginine repressor	
-ARGRS	fly	FBgn0027093	ArgRS	Q9VXN4	4	96	Probable arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (A	
+ARGRS	fly	FBgn0027093	ArgRS	Q9VXN4	4	98	Probable arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (A	
 ARGRS	human	P54136	RARS1	P54136	11	291	Arginine--tRNA ligase, cytoplasmic (EC 6.1.1.19) (Arginyl-tR	w
 ARGRS	human	Q5T160	RARS2	Q5T160	7	195	Probable arginine--tRNA ligase, mitochondrial (EC 6.1.1.19) 	w
-ARGRS-M	fly	FBgn0037526	ArgRS-m	Q8SXK2	0	25	arginine--tRNA ligase (EC 6.1.1.19) (Arginyl-tRNA synthetase	
+ARGRS-M	fly	FBgn0037526	ArgRS-m	Q8SXK2	0	28	arginine--tRNA ligase (EC 6.1.1.19) (Arginyl-tRNA synthetase	
 ARGS	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PNC0	argS	Q9PNC0	0	18	Arginine--tRNA ligase	
 ARGS	escherichia-coli-83333	P11875	argS	P11875	0	21	Arginine--tRNA ligase	
 ARGS	glycine-max	I1J4G8	ARGS	I1J4G8	0	87	arginine--tRNA ligase	

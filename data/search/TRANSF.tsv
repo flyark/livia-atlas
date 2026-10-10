@@ -1,11 +1,11 @@
-TRANSF	fly	FBgn0032477	Alg7	Q9VK30	0	6	UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosam	w
+TRANSF	fly	FBgn0032477	Alg7	Q9VK30	1	14	UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosam	w
 TRANSF	human	A8MQ27	NEURL1B	A8MQ27	3	42	E3 ubiquitin-protein ligase NEURL1B (EC 2.3.2.27) (Neuralize	w
 TRANSF	worm	A3QMD3	oac-58	A3QMD3	0	1	Acyl_transf_3 domain-containing protein	w
 TRANSF	worm	O16467	oac-29	O16467	0	2	Acyl_transf_3 domain-containing protein	w
 TRANSF	worm	O45374	oac-17	O45374	0	2	Acyl_transf_3 domain-containing protein	w
 TRANSFE	human	Q969M7	UBE2F	Q969M7	13	137	NEDD8-conjugating enzyme UBE2F (EC 2.3.2.34) (NEDD8 carrier 	w
 TRANSFE	human	Q9NS91	RAD18	Q9NS91	77	532	E3 ubiquitin-protein ligase RAD18 (EC 2.3.2.27) (Postreplica	w
-TRANSFER	fly	FBgn0010516	wal	Q7KN94	20	163	Electron transfer flavoprotein subunit alpha (Alpha-ETF)	w
+TRANSFER	fly	FBgn0010516	wal	Q7KN94	20	164	Electron transfer flavoprotein subunit alpha (Alpha-ETF)	w
 TRANSFER	fly	FBgn0027569	cert	Q9Y128	151	1162	Ceramide transfer protein (Collagen type IV alpha-3-binding 	w
 TRANSFER	fly	FBgn0027872	rdgBbeta	Q9U9P7	0	4	Cytoplasmic phosphatidylinositol transfer protein 1 (Retinal	w
 TRANSFER	fly	FBgn0032136	Apoltp	Q7KTG2	0	6	Apolipoprotein lipid transfer particle	w
@@ -15,7 +15,7 @@ TRANSFER	fly	FBgn0035420	hob	Q9VZS7	4	90	Protein hobbit (Bridge-like lipid trans
 TRANSFER	fly	FBgn0039697	Etfb	Q0KHZ6	25	143	Electron transfer flavoprotein subunit beta (Beta-ETF)	w
 TRANSFER	fly	FBgn0052113	Vps13D	Q9VU08	1	29	Intermembrane lipid transfer protein Vps13D (Vacuolar protei	w
 TRANSFER	fly	FBgn0266369	Mtp	Q9VIH3	36	350	Microsomal triacylglycerol transfer protein (MTP)	w
-TRANSFER	fly	FBgn0286783	Etf-QO	Q7JWF1	2	20	Electron transfer flavoprotein-ubiquinone oxidoreductase (ET	w
+TRANSFER	fly	FBgn0286783	Etf-QO	Q7JWF1	2	22	Electron transfer flavoprotein-ubiquinone oxidoreductase (ET	w
 TRANSFER	human	A0JNW5	BLTP3B	A0JNW5	15	72	Bridge-like lipid transfer protein family member 3B (Syntaxi	w
 TRANSFER	human	A6NH11	GLTPD2	A6NH11	2	23	Glycolipid transfer protein domain-containing protein 2	w
 TRANSFER	human	O00562	PITPNM1	O00562	9	84	Membrane-associated phosphatidylinositol transfer protein 1 	w
@@ -97,71 +97,71 @@ TRANSFER	zebrafish	Q802Z3	pitpnbl	Q802Z3	1	3	Phosphatidylinositol transfer prote
 TRANSFER	zebrafish	Q803U3	pitpnaa	Q803U3	1	3	Phosphatidylinositol transfer protein alpha isoform	w
 TRANSFER	zebrafish	Q9DFS4	stard3	Q9DFS4	0	8	StAR-related lipid transfer protein 3	w
 TRANSFERABLE	human	Q9Y5U2	TSSC4	Q9Y5U2	18	135	U5 small nuclear ribonucleoprotein TSSC4 (Tumor-suppressing 	w
-TRANSFERASE	fly	FBgn0000524	dx	Q23985	6	77	Protein deltex (Probable E3 ubiquitin-protein ligase deltex)	w
-TRANSFERASE	fly	FBgn0003330	Sce	Q9VB08	78	495	E3 ubiquitin-protein ligase RING1 (EC 2.3.2.27) (RING-type E	w
-TRANSFERASE	fly	FBgn0003410	sina	P21461	42	159	E3 ubiquitin-protein ligase sina (EC 2.3.2.27) (RING-type E3	w
-TRANSFERASE	fly	FBgn0003557	Su(dx)	Q9Y0H4	21	74	E3 ubiquitin-protein ligase Su(dx) (EC 2.3.2.26) (HECT-type 	w
+TRANSFERASE	fly	FBgn0000524	dx	Q23985	6	78	Protein deltex (Probable E3 ubiquitin-protein ligase deltex)	w
+TRANSFERASE	fly	FBgn0003330	Sce	Q9VB08	79	496	E3 ubiquitin-protein ligase RING1 (EC 2.3.2.27) (RING-type E	w
+TRANSFERASE	fly	FBgn0003410	sina	P21461	43	159	E3 ubiquitin-protein ligase sina (EC 2.3.2.27) (RING-type E3	w
+TRANSFERASE	fly	FBgn0003557	Su(dx)	Q9Y0H4	22	77	E3 ubiquitin-protein ligase Su(dx) (EC 2.3.2.26) (HECT-type 	w
 TRANSFERASE	fly	FBgn0010044	GstD8	Q9VG92	30	86	Glutathione S transferase D8 (EC 1.11.1.9, EC 2.5.1.18) (IP0	w
-TRANSFERASE	fly	FBgn0010226	GstS1	A0A0B4KFT5	14	184	glutathione transferase (EC 2.5.1.18)	w
-TRANSFERASE	fly	FBgn0014868	Ost48	Q24319	145	2606	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+TRANSFERASE	fly	FBgn0010226	GstS1	A0A0B4KFT5	16	185	glutathione transferase (EC 2.5.1.18)	w
+TRANSFERASE	fly	FBgn0014868	Ost48	Q24319	148	2609	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 TRANSFERASE	fly	FBgn0015000	betaggt-I	Q24173	5	51	Geranylgeranyl transferase type-1 subunit beta (EC 2.5.1.59)	w
-TRANSFERASE	fly	FBgn0017418	ari-1	Q94981	8	87	E3 ubiquitin-protein ligase ariadne-1 (EC 2.3.2.31) (Protein	w
+TRANSFERASE	fly	FBgn0017418	ari-1	Q94981	9	88	E3 ubiquitin-protein ligase ariadne-1 (EC 2.3.2.31) (Protein	w
 TRANSFERASE	fly	FBgn0024997	CG2681	Q9W4W4	0	8	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0025186	ari-2	O76924	4	49	Potential E3 ubiquitin-protein ligase ariadne-2 (EC 2.3.2.31	w
 TRANSFERASE	fly	FBgn0025720	Ate1	A0A0B4KFD5	0	2	Arginyl-tRNA--protein transferase 1 (Arginyltransferase 1) (	w
 TRANSFERASE	fly	FBgn0025814	Mgstl	Q8SY19	2	93	glutathione transferase (EC 2.5.1.18)	w
-TRANSFERASE	fly	FBgn0027052	STUB1	Q9XYW6	27	125	E3 ubiquitin-protein ligase CHIP (EC 2.3.2.27) (RING-type E3	w
+TRANSFERASE	fly	FBgn0027052	STUB1	Q9XYW6	29	127	E3 ubiquitin-protein ligase CHIP (EC 2.3.2.27) (RING-type E3	w
 TRANSFERASE	fly	FBgn0027590	GstE12	Q9XYZ9	36	139	Glutathione S transferase E12, isoform A (Glutathione S tran	w
-TRANSFERASE	fly	FBgn0028847	CG9014	Q9VJW5	10	52	E3 ubiquitin-protein ligase NRDP1 (EC 2.3.2.27) (RING finger	w
-TRANSFERASE	fly	FBgn0028970	RabGGTb	Q9XZ68	11	78	Geranylgeranyl transferase type-2 subunit beta (EC 2.5.1.60)	w
-TRANSFERASE	fly	FBgn0029006	Smurf	Q9V853	19	72	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
-TRANSFERASE	fly	FBgn0029152	Mkrn1	Q9VP20	2	18	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
+TRANSFERASE	fly	FBgn0028847	CG9014	Q9VJW5	11	53	E3 ubiquitin-protein ligase NRDP1 (EC 2.3.2.27) (RING finger	w
+TRANSFERASE	fly	FBgn0028970	RabGGTb	Q9XZ68	12	79	Geranylgeranyl transferase type-2 subunit beta (EC 2.5.1.60)	w
+TRANSFERASE	fly	FBgn0029006	Smurf	Q9V853	25	90	E3 ubiquitin-protein ligase Smurf1 (EC 2.3.2.26) (HECT-type 	w
+TRANSFERASE	fly	FBgn0029152	Mkrn1	Q9VP20	2	20	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0029661	CG16781	M9PDP1	1	18	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 TRANSFERASE	fly	FBgn0029911	detr	Q9W3V3	2	13	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-TRANSFERASE	fly	FBgn0029980	Dhdds	Q9W3M6	2	14	Alkyl transferase (EC 2.5.1.-)	w
+TRANSFERASE	fly	FBgn0029980	Dhdds	Q9W3M6	3	20	Alkyl transferase (EC 2.5.1.-)	w
 TRANSFERASE	fly	FBgn0030015	CG10761	Q9W3I6	0	9	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 TRANSFERASE	fly	FBgn0030484	GstT4	Q8MRM0	19	90	GH16740p (Glutathione S transferase T4 (EC 1.11.1.9, EC 2.5.	w
 TRANSFERASE	fly	FBgn0030514	Mgrn1	Q9VY98	4	21	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0030577	CG5334	Q9VY21	0	8	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0030578	CG5347	Q9VY20	0	4	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-TRANSFERASE	fly	FBgn0030657	cerv	Q9VXT3	6	47	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
+TRANSFERASE	fly	FBgn0030657	cerv	Q9VXT3	9	47	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
 TRANSFERASE	fly	FBgn0030674	HUWE1	X2JF73	0	0	HECT-type E3 ubiquitin transferase (EC 2.3.2.26)	w
 TRANSFERASE	fly	FBgn0030693	sordd1	Q9VXP1	12	74	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0030809	Ubr1	Q9VX91	0	14	E3 ubiquitin-protein ligase UBR1 (EC 2.3.2.27) (N-recognin) 	w
 TRANSFERASE	fly	FBgn0031117	GstT3	E1JJS1	29	85	Glutathione S transferase T3, isoform B (EC 1.11.1.9, EC 2.5	w
 TRANSFERASE	fly	FBgn0031384	CG4238	Q9VQ67	1	14	HECT-type E3 ubiquitin transferase (EC 2.3.2.26)	w
-TRANSFERASE	fly	FBgn0032015	Ostgamma	Q8SY53	6	77	GH11935p (Oligosaccharide transferase gamma subunit)	w
-TRANSFERASE	fly	FBgn0032477	Alg7	Q9VK30	0	6	UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosam	w
+TRANSFERASE	fly	FBgn0032015	Ostgamma	Q8SY53	14	90	GH11935p (Oligosaccharide transferase gamma subunit)	w
+TRANSFERASE	fly	FBgn0032477	Alg7	Q9VK30	1	14	UDP-N-acetylglucosamine--dolichyl-phosphate N-acetylglucosam	w
 TRANSFERASE	fly	FBgn0032877	CG2617	Q9VIK5	0	9	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-TRANSFERASE	fly	FBgn0033187	PIG-G	A1Z705	1	8	GPI ethanolamine phosphate transferase 2	w
+TRANSFERASE	fly	FBgn0033187	PIG-G	A1Z705	3	12	GPI ethanolamine phosphate transferase 2	w
 TRANSFERASE	fly	FBgn0033381	GstE13	Q7JVI6	30	86	Glutathione S transferase E13, isoform A (EC 2.5.1.18) (Glut	w
-TRANSFERASE	fly	FBgn0033479	PIG-N	A1Z838	0	3	GPI ethanolamine phosphate transferase 1 (EC 2.-.-.-)	w
+TRANSFERASE	fly	FBgn0033479	PIG-N	A1Z838	1	7	GPI ethanolamine phosphate transferase 1 (EC 2.-.-.-)	w
 TRANSFERASE	fly	FBgn0034109	CG7747	Q7K231	7	104	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0034335	GstE1	Q7KK90	32	96	GH14654p (Glutathione S transferase E1 (EC 2.5.1.18)) (Gluta	w
-TRANSFERASE	fly	FBgn0034346	PIG-O	A1ZB84	2	11	GPI ethanolamine phosphate transferase 3	w
+TRANSFERASE	fly	FBgn0034346	PIG-O	A1ZB84	2	14	GPI ethanolamine phosphate transferase 3	w
 TRANSFERASE	fly	FBgn0034354	GstE11	Q7JVZ8	28	107	Glutathione S transferase E11, isoform A (Glutathione S tran	w
 TRANSFERASE	fly	FBgn0034411	CG18605	A0A0B4JD40	0	2	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0034583	CG10527	Q9W2M4	4	78	Farnesoic acid O-methyl transferase domain-containing protei	w
 TRANSFERASE	fly	FBgn0034989	CG3356	Q9W196	10	57	HECT-type E3 ubiquitin transferase (EC 2.3.2.26)	w
 TRANSFERASE	fly	FBgn0035024	CG11414	Q9W149	57	344	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-TRANSFERASE	fly	FBgn0035233	Pex10	Q9W0D7	6	53	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-TRANSFERASE	fly	FBgn0035298	Scot	Q9W058	1	8	Succinyl-CoA:3-ketoacid-coenzyme A transferase, mitochondria	w
-TRANSFERASE	fly	FBgn0035333	CG1317	Q9W023	2	19	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
+TRANSFERASE	fly	FBgn0035233	Pex10	Q9W0D7	7	58	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
+TRANSFERASE	fly	FBgn0035298	Scot	Q9W058	1	15	Succinyl-CoA:3-ketoacid-coenzyme A transferase, mitochondria	w
+TRANSFERASE	fly	FBgn0035333	CG1317	Q9W023	3	20	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0035483	Mul1	Q9VZJ9	6	69	Mitochondrial E3 ubiquitin protein ligase 1 (EC 2.3.2.27) (M	w
-TRANSFERASE	fly	FBgn0035904	GstO3	Q9VSL2	51	227	Glutathione S transferase O3 (EC 1.8.5.1, EC 2.5.1.18) (Glut	w
+TRANSFERASE	fly	FBgn0035904	GstO3	Q9VSL2	52	227	Glutathione S transferase O3 (EC 1.8.5.1, EC 2.5.1.18) (Glut	w
 TRANSFERASE	fly	FBgn0035906	GstO2	Q9VSL5	27	110	Glutathione S transferase O2, isoform A (EC 1.8.5.1, EC 2.5.	w
 TRANSFERASE	fly	FBgn0035907	GstO1	Q9VSL6	22	103	Glutathione S transferase O1 (EC 1.8.5.1, EC 2.5.1.18) (Glut	w
 TRANSFERASE	fly	FBgn0036082	CG12362	Q9VT94	7	28	RBR-type E3 ubiquitin transferase (EC 2.3.2.31)	w
 TRANSFERASE	fly	FBgn0036621	roq	Q9VV48	6	67	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-TRANSFERASE	fly	FBgn0036667	kud	Q9VVA8	4	25	Transmembrane protein 258 (Dolichyl-diphosphooligosaccharide	w
+TRANSFERASE	fly	FBgn0036667	kud	Q9VVA8	5	25	Transmembrane protein 258 (Dolichyl-diphosphooligosaccharide	w
 TRANSFERASE	fly	FBgn0036730	qjt	Q9VVH7	6	32	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
 TRANSFERASE	fly	FBgn0036809	CG12477	Q9VVS2	0	2	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0037242	March5	Q9VN18	0	16	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
-TRANSFERASE	fly	FBgn0037251	Lipt2	Q9VN27	6	27	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
-TRANSFERASE	fly	FBgn0037293	RabGGTa	Q9VN77	9	52	Geranylgeranyl transferase type-2 subunit alpha (EC 2.5.1.60	w
-TRANSFERASE	fly	FBgn0037347	SecS	Q9VNE3	0	8	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	w
-TRANSFERASE	fly	FBgn0037467	Ufl1	Q9VI55	6	57	E3 UFM1-protein ligase 1 homolog (EC 2.3.2.-) (E3 UFM1-prote	w
-TRANSFERASE	fly	FBgn0037778	mtTFB2	Q9VH38	16	379	Dimethyladenosine transferase 2, mitochondrial (EC 2.1.1.-) 	w
+TRANSFERASE	fly	FBgn0037251	Lipt2	Q9VN27	7	29	Putative lipoyltransferase 2, mitochondrial (EC 2.3.1.181) (	w
+TRANSFERASE	fly	FBgn0037293	RabGGTa	Q9VN77	10	54	Geranylgeranyl transferase type-2 subunit alpha (EC 2.5.1.60	w
+TRANSFERASE	fly	FBgn0037347	SecS	Q9VNE3	0	9	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	w
+TRANSFERASE	fly	FBgn0037467	Ufl1	Q9VI55	8	59	E3 UFM1-protein ligase 1 homolog (EC 2.3.2.-) (E3 UFM1-prote	w
+TRANSFERASE	fly	FBgn0037778	mtTFB2	Q9VH38	17	380	Dimethyladenosine transferase 2, mitochondrial (EC 2.1.1.-) 	w
 TRANSFERASE	fly	FBgn0037915	CG6790	Q9VGM0	0	4	GPI ethanolamine phosphate transferase 1 (EC 2.-.-.-)	w
 TRANSFERASE	fly	FBgn0037916	CG5342	Q9VGL9	0	4	GPI ethanolamine phosphate transferase 1 (EC 2.-.-.-)	w
 TRANSFERASE	fly	FBgn0038020	GstD9	Q9VGA0	32	88	Glutathione S transferase D9, isoform A (Glutathione S trans	w
@@ -172,17 +172,17 @@ TRANSFERASE	fly	FBgn0038627	CG7694	Q9VE61	2	6	E3 ubiquitin-protein ligase RNF181
 TRANSFERASE	fly	FBgn0039010	CG4907	Q9VCV7	0	4	GPI ethanolamine phosphate transferase 1 (EC 2.-.-.-)	w
 TRANSFERASE	fly	FBgn0039498	CG17991	Q9VB61	1	20	E3 ubiquitin-protein ligase MARCHF5 (Membrane-associated RIN	w
 TRANSFERASE	fly	FBgn0039518	CG13978	Q9VB32	0	3	GPI ethanolamine phosphate transferase 1 (EC 2.-.-.-)	w
-TRANSFERASE	fly	FBgn0039627	CG11837	Q9VAQ5	9	214	Probable dimethyladenosine transferase (EC 2.1.1.183) (Proba	w
-TRANSFERASE	fly	FBgn0039875	sip3	Q95SP2	12	64	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	w
+TRANSFERASE	fly	FBgn0039627	CG11837	Q9VAQ5	20	235	Probable dimethyladenosine transferase (EC 2.1.1.183) (Proba	w
+TRANSFERASE	fly	FBgn0039875	sip3	Q95SP2	15	66	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	w
 TRANSFERASE	fly	FBgn0040294	POSH	Q7K4D1	46	192	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0040355	CG3526	Q9W4V2	34	372	E3 ubiquitin-protein ligase KCMF1 (RING-type E3 ubiquitin tr	w
 TRANSFERASE	fly	FBgn0042206	GstD10	Q9VGA1	32	82	Glutathione S transferase D10, isoform A (EC 2.5.1.18) (Glut	w
 TRANSFERASE	fly	FBgn0050000	GstT1	Q7K0B6	34	94	Glutathione S transferase T1 (EC 1.11.1.9, EC 2.5.1.18) (RE6	w
 TRANSFERASE	fly	FBgn0050005	GstT2	A1Z7X7	34	84	Glutathione S transferase T2 (EC 1.11.1.9, EC 2.5.1.18)	w
 TRANSFERASE	fly	FBgn0051357	Kaz	Q8MSB1	17	99	E3 ubiquitin-protein transferase MAEA (Macrophage erythrobla	w
-TRANSFERASE	fly	FBgn0051460	CG31460	Q8INQ7	30	384	Protein KRTCAP2 homolog (Dolichyl-diphosphooligosaccharide--	w
+TRANSFERASE	fly	FBgn0051460	CG31460	Q8INQ7	31	384	Protein KRTCAP2 homolog (Dolichyl-diphosphooligosaccharide--	w
 TRANSFERASE	fly	FBgn0051721	Trim9	M9MRI4	4	34	E3 ubiquitin-protein ligase TRIM9 (EC 2.3.2.27) (Anomalies i	w
-TRANSFERASE	fly	FBgn0052099	CG32099	Q8SXB3	0	8	L-aminoadipate-semialdehyde dehydrogenase-phosphopantetheiny	w
+TRANSFERASE	fly	FBgn0052099	CG32099	Q8SXB3	1	10	L-aminoadipate-semialdehyde dehydrogenase-phosphopantetheiny	w
 TRANSFERASE	fly	FBgn0052581	sordd2	Q8IR26	10	54	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0052847	CG32847	Q8IQM1	27	412	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0053144	CG33144	Q7JR34	2	16	RBR-type E3 ubiquitin transferase (EC 2.3.2.31)	w
@@ -198,21 +198,21 @@ TRANSFERASE	fly	FBgn0063496	GstE4	A1ZB69	34	84	Glutathione S transferase E4 (EC 
 TRANSFERASE	fly	FBgn0063497	GstE3	A1ZB68	30	89	FI01423p (Glutathione S transferase E3 (EC 2.5.1.18))	w
 TRANSFERASE	fly	FBgn0063498	GstE2	Q7JYZ9	33	83	Glutathione S transferase E2 (EC 2.5.1.18) (RE69679p)	w
 TRANSFERASE	fly	FBgn0063499	GstE10	Q4V6J1	36	83	Glutathione S transferase E10, isoform A (EC 2.5.1.18) (Glut	w
-TRANSFERASE	fly	FBgn0085337	CG34308	A0A1Z1CK50	0	25	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
+TRANSFERASE	fly	FBgn0085337	CG34308	A0A1Z1CK50	1	29	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
 TRANSFERASE	fly	FBgn0086442	mib2	Q9VJ14	7	91	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-TRANSFERASE	fly	FBgn0086532	Spt-I	Q6NR46	6	116	Serine palmitoyltransferase 1 (EC 2.3.1.50) (Long chain base	w
+TRANSFERASE	fly	FBgn0086532	Spt-I	Q6NR46	7	116	Serine palmitoyltransferase 1 (EC 2.3.1.50) (Long chain base	w
 TRANSFERASE	fly	FBgn0086694	Bre1	Q9VRP9	8	82	E3 ubiquitin-protein ligase Bre1 (EC 2.3.2.27) (RING-type E3	w
-TRANSFERASE	fly	FBgn0259174	Nedd4	Q9VVI3	17	95	E3 ubiquitin-protein ligase Nedd-4 (DNedd4) (EC 2.3.2.26) (H	w
+TRANSFERASE	fly	FBgn0259174	Nedd4	Q9VVI3	18	95	E3 ubiquitin-protein ligase Nedd-4 (DNedd4) (EC 2.3.2.26) (H	w
 TRANSFERASE	fly	FBgn0259195	CG42299	Q9VXT4	3	40	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
-TRANSFERASE	fly	FBgn0259196	CG42300	Q9VXT8	5	33	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
-TRANSFERASE	fly	FBgn0259794	sinah	Q8T3Y0	33	115	Probable E3 ubiquitin-protein ligase sinah (EC 2.3.2.27) (RI	w
+TRANSFERASE	fly	FBgn0259196	CG42300	Q9VXT8	7	33	E3 SUMO-protein ligase NSE2 (E3 SUMO-protein transferase NSE	w
+TRANSFERASE	fly	FBgn0259794	sinah	Q8T3Y0	34	115	Probable E3 ubiquitin-protein ligase sinah (EC 2.3.2.27) (RI	w
 TRANSFERASE	fly	FBgn0260866	dnr1	A0A0B4KFY0	0	4	RING-type E3 ubiquitin transferase (EC 2.3.2.27)	w
-TRANSFERASE	fly	FBgn0261381	mtTFB1	Q9VTM5	2	114	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
+TRANSFERASE	fly	FBgn0261381	mtTFB1	Q9VTM5	4	116	Dimethyladenosine transferase 1, mitochondrial (EC 2.1.1.-) 	w
 TRANSFERASE	fly	FBgn0261403	sxc	Q7KJA9	6	53	protein O-GlcNAc transferase (EC 2.4.1.255)	w
 TRANSFERASE	fly	FBgn0261931	Hecw	Q9W326	17	90	HECT-type E3 ubiquitin transferase (EC 2.3.2.26)	w
 TRANSFERASE	fly	FBgn0262517	Ltn1	Q9VW09	0	4	E3 ubiquitin-protein ligase listerin (EC 2.3.2.27) (Listerin	w
-TRANSFERASE	fly	FBgn0263601	mib1	Q9VUX2	7	64	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
-TRANSFERASE	fly	FBgn0263852	Dad1	Q9VLM5	6	66	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+TRANSFERASE	fly	FBgn0263601	mib1	Q9VUX2	8	65	E3 ubiquitin-protein ligase mind-bomb (EC 2.3.2.27) (Mind bo	w
+TRANSFERASE	fly	FBgn0263852	Dad1	Q9VLM5	13	72	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 TRANSFERASE	fly	FBgn0264672	Eogt	Q9VQB7	1	16	EGF domain-specific O-linked N-acetylglucosamine transferase	w
 TRANSFERASE	fly	FBgn0267351	Topors	Q9V8P9	4	17	E3 ubiquitin-protein ligase Topors (EC 2.3.2.27) (RING-type 	w
 TRANSFERASE	fly	FBgn0283649	elgi	Q9VUV7	7	33	E3 ubiquitin-protein ligase NRDP1 (EC 2.3.2.27) (RING finger	w
@@ -615,17 +615,17 @@ TRANSFORMATION-RELATED	human	Q9Y512	SAMM50	Q9Y512	10	202	Sorting and assembly ma
 TRANSFORMATION-SENSITIVE	human	O75762	TRPA1	O75762	6	89	Transient receptor potential cation channel subfamily A memb	w
 TRANSFORMATION-SENSITIVE	human	P31948	STIP1	P31948	47	683	Stress-induced-phosphoprotein 1 (STI1) (Hsc70/Hsp90-organizi	w
 TRANSFORMED	human	A2A288	ZC3H12D	A2A288	3	19	Probable ribonuclease ZC3H12D (EC 3.1.-.-) (MCP-induced prot	w
-TRANSFORMER	fly	FBgn0003741	tra	P11596	2	15	Female-specific protein transformer	w
+TRANSFORMER	fly	FBgn0003741	tra	P11596	3	15	Female-specific protein transformer	w
 TRANSFORMER	fly	FBgn0031055	et	M9NE35	2	10	Eye transformer, isoform C	w
 TRANSFORMER	fly	FBgn0038914	fit	Q9VD66	28	244	Female-specific independent of transformer (RH40291p)	w
 TRANSFORMER	worm	P34708	tra-1	P34708	1	56	Sex-determining transformer protein 1	w
 TRANSFORMER	worm	P34709	tra-2	P34709	0	6	Sex-determining transformer protein 2	w
-TRANSFORMER-2	fly	FBgn0003742	tra2	P19018	8	72	Transformer-2 sex-determining protein	w
+TRANSFORMER-2	fly	FBgn0003742	tra2	P19018	15	102	Transformer-2 sex-determining protein	w
 TRANSFORMER-2	human	P62995	TRA2B	P62995	23	260	Transformer-2 protein homolog beta (TRA-2 beta) (TRA2-beta) 	w
 TRANSFORMER-2	human	Q13595	TRA2A	Q13595	27	318	Transformer-2 protein homolog alpha (TRA-2 alpha) (TRA2-alph	w
 TRANSFORMER-2	zebrafish	Q7T2A0	tra2a	Q7T2A0	5	133	Transformer-2 protein homolog alpha	w
-TRANSFORMING	fly	FBgn0026620	tacc	A0A0B4JD97	9	29	Transforming acidic coiled-coil protein, isoform K	w
-TRANSFORMING	fly	FBgn0041789	Pax	Q2PDT4	13	115	Transforming growth factor beta-1-induced transcript 1 prote	w
+TRANSFORMING	fly	FBgn0026620	tacc	A0A0B4JD97	9	30	Transforming acidic coiled-coil protein, isoform K	w
+TRANSFORMING	fly	FBgn0041789	Pax	Q2PDT4	14	116	Transforming growth factor beta-1-induced transcript 1 prote	w
 TRANSFORMING	human	H3BV60	TGFBR3L	H3BV60	10	77	Transforming growth factor-beta receptor type 3-like protein	w
 TRANSFORMING	human	O00292	LEFTY2	O00292	7	75	Left-right determination factor 2 (Endometrial bleeding-asso	w
 TRANSFORMING	human	O14901	KLF11	O14901	97	385	Krueppel-like factor 11 (Transforming growth factor-beta-ind	w
@@ -670,5 +670,5 @@ TRANSFORMING	zebrafish	F1QV49	tacc1	F1QV49	2	10	Transforming acidic coiled-coil-
 TRANSFORMING	zebrafish	Q1LX18	shc2	Q1LX18	7	44	SHC (Src homology 2 domain-containing)-transforming protein 	w
 TRANSFORMING	zebrafish	Q66I23	tgfb3	Q66I23	4	30	Transforming growth factor beta	w
 TRANSFORMING	zebrafish	Q6AXL3	nrros	Q6AXL3	2	22	Transforming growth factor beta activator LRRC33	w
-TRANSFORMYLASE	fly	FBgn0039241	Atic	Q9VC18	0	104	Bifunctional purine biosynthesis protein ATIC (EC 2.1.2.3) (	w
+TRANSFORMYLASE	fly	FBgn0039241	Atic	Q9VC18	0	108	Bifunctional purine biosynthesis protein ATIC (EC 2.1.2.3) (	w
 TRANSFORMYLASE	human	P31939	ATIC	P31939	0	219	Bifunctional purine biosynthesis protein ATIC (AICAR transfo	w

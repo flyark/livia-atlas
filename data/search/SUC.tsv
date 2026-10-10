@@ -19,7 +19,7 @@ SUCA	pseudomonas-aeruginosa	Q9I3D3	sucA	Q9I3D3	4	39	2-oxoglutarate dehydrogenase
 SUCA	salmonella-typhimurium	Q8ZQU1	sucA	Q8ZQU1	0	33	2-oxoglutarate dehydrogenase E1 component	
 SUCA	shigella-dysenteriae-serotype-1	Q32IK5	sucA	Q32IK5	0	24	2-oxoglutarate dehydrogenase E1 component	
 SUCA-1	worm	P53588	suca-1	P53588	2	22	Succinate--CoA ligase	
-SUCA_DROME	fly	FBgn0004888	Scsalpha1	Q94522	14	141		
+SUCA_DROME	fly	FBgn0004888	Scsalpha1	Q94522	21	145		
 SUCA_HUMAN	human	P53597	SUCLG1	P53597	32	262		
 SUCA_YEAST	yeast	P53598	LSC1	P53598	1	30		
 SUCB	escherichia-coli-83333	P0AFG6	sucB	P0AFG6	1	38	Dihydrolipoyllysine-residue succinyltransferase component of	
@@ -46,16 +46,16 @@ SUCC	salmonella-typhimurium	P66869	sucC	P66869	2	28	Succinate--CoA ligase
 SUCC	shigella-dysenteriae-serotype-1	Q32IK3	sucC	Q32IK3	1	20	Succinate--CoA ligase	
 SUCC	staphylococcus-aureus-93061	Q2FZ37	sucC	Q2FZ37	1	16	Succinate--CoA ligase	
 SUCCINA	human	Q9HAC7	SUGCT	Q9HAC7	4	85	Succinyl-CoA:glutarate CoA-transferase (EC 2.8.3.-) (Dermal 	w
-SUCCINATE	fly	FBgn0014028	SdhB	P21914	14	89	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
+SUCCINATE	fly	FBgn0014028	SdhB	P21914	28	110	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
 SUCCINATE	fly	FBgn0028844	CG15283	Q9VJS6	1	4	Succinate dehydrogenase assembly factor 4, mitochondrial	w
-SUCCINATE	fly	FBgn0030975	SdhBL	Q9VWN3	9	64	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
-SUCCINATE	fly	FBgn0031971	Sirup	Q9VLU6	4	8	Succinate dehydrogenase assembly factor 4, mitochondrial (SD	w
+SUCCINATE	fly	FBgn0030975	SdhBL	Q9VWN3	10	66	Succinate dehydrogenase [ubiquinone] iron-sulfur subunit, mi	w
+SUCCINATE	fly	FBgn0031971	Sirup	Q9VLU6	5	8	Succinate dehydrogenase assembly factor 4, mitochondrial (SD	w
 SUCCINATE	fly	FBgn0033274	CG14757	Q4V5I9	4	20	Succinate dehydrogenase assembly factor 2-A, mitochondrial (	w
 SUCCINATE	fly	FBgn0033523	CG12895	A1Z897	6	17	Succinate dehydrogenase assembly factor 2-B, mitochondrial (	w
-SUCCINATE	fly	FBgn0036222	SdhAL	Q8SX97	6	67	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
-SUCCINATE	fly	FBgn0037873	SdhC	Q9VGS3	10	66	RH44771p (Succinate dehydrogenase, subunit C, isoform A (EC 	w
-SUCCINATE	fly	FBgn0038437	Sdhaf3	Q8SZ16	4	25	Succinate dehydrogenase assembly factor 3, mitochondrial (SD	w
-SUCCINATE	fly	FBgn0039112	SdhD	Q9VCI5	10	77	Succinate dehydrogenase [ubiquinone] cytochrome b small subu	w
+SUCCINATE	fly	FBgn0036222	SdhAL	Q8SX97	11	68	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
+SUCCINATE	fly	FBgn0037873	SdhC	Q9VGS3	28	100	RH44771p (Succinate dehydrogenase, subunit C, isoform A (EC 	w
+SUCCINATE	fly	FBgn0038437	Sdhaf3	Q8SZ16	7	27	Succinate dehydrogenase assembly factor 3, mitochondrial (SD	w
+SUCCINATE	fly	FBgn0039112	SdhD	Q9VCI5	24	93	Succinate dehydrogenase [ubiquinone] cytochrome b small subu	w
 SUCCINATE	fly	FBgn0261439	SdhA	Q94523	17	99	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
 SUCCINATE	human	A6NFY7	SDHAF1	A6NFY7	19	105	Succinate dehydrogenase assembly factor 1, mitochondrial (SD	w
 SUCCINATE	human	F5H5T6	?	F5H5T6	2	7	Succinate dehydrogenase assembly factor 2, mitochondrial	w
@@ -93,9 +93,9 @@ SUCCINATE	zebrafish	Q5XIY4	sdhaf3	Q5XIY4	3	27	Succinate dehydrogenase assembly f
 SUCCINATE	zebrafish	Q68FN7	sdhdb	Q68FN7	6	30	Succinate dehydrogenase	w
 SUCCINATE	zebrafish	Q6DGM2	sdhda	Q6DGM2	2	26	Succinate dehydrogenase	w
 SUCCINATE	zebrafish	Q7ZVF3	sdha	Q7ZVF3	14	65	Succinate dehydrogenase	w
-SUCCINATE--COA	fly	FBgn0004888	Scsalpha1	Q94522	14	141	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
-SUCCINATE--COA	fly	FBgn0029118	ScsbetaG	Q9V470	9	175	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
-SUCCINATE--COA	fly	FBgn0037643	ScsbetaA	Q95U38	12	159	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
+SUCCINATE--COA	fly	FBgn0004888	Scsalpha1	Q94522	21	145	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
+SUCCINATE--COA	fly	FBgn0029118	ScsbetaG	Q9V470	9	176	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
+SUCCINATE--COA	fly	FBgn0037643	ScsbetaA	Q95U38	15	160	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
 SUCCINATE--COA	fly	FBgn0038708	Scsalpha2	Q9VDW7	5	47	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
 SUCCINATE--COA	human	P53597	SUCLG1	P53597	32	262	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
 SUCCINATE--COA	human	Q96I99	SUCLG2	Q96I99	14	237	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
@@ -116,17 +116,17 @@ SUCCINATE-SEMIALDEHYDE	human	P51649	ALDH5A1	P51649	17	113	Succinate-semialdehyde
 SUCCINATE-SEMIALDEHYDE	worm	O02266	alh-7	O02266	4	8	Succinate-semialdehyde dehydrogenase, mitochondrial	w
 SUCCINATE-SEMIALDEHYDE	yeast	P38067	UGA2	P38067	1	8	Succinate-semialdehyde dehydrogenase	w
 SUCCINATE-SEMIALDEHYDE	zebrafish	A0A8M3AQW4	aldh5a1	A0A8M3AQW4	4	5	Succinate-semialdehyde dehydrogenase	w
-SUCCINATE-UBIQUINONE	fly	FBgn0039112	SdhD	Q9VCI5	10	77	Succinate dehydrogenase [ubiquinone] cytochrome b small subu	w
+SUCCINATE-UBIQUINONE	fly	FBgn0039112	SdhD	Q9VCI5	24	93	Succinate dehydrogenase [ubiquinone] cytochrome b small subu	w
 SUCCINIC	human	O43488	AKR7A2	O43488	14	131	Aflatoxin B1 aldehyde reductase member 2 (EC 1.1.1.n11) (AFB	w
 SUCCINIC	human	P51649	ALDH5A1	P51649	17	113	Succinate-semialdehyde dehydrogenase, mitochondrial (EC 1.2.	w
-SUCCINOCARBOXAMIDE	fly	FBgn0020513	Paics	Q9I7S8	5	240	Bifunctional phosphoribosylaminoimidazole carboxylase/phosph	w
+SUCCINOCARBOXAMIDE	fly	FBgn0020513	Paics	Q9I7S8	5	242	Bifunctional phosphoribosylaminoimidazole carboxylase/phosph	w
 SUCCINOCARBOXAMIDE	human	P22234	PAICS	P22234	2	280	Bifunctional phosphoribosylaminoimidazole carboxylase/phosph	w
 SUCCINOCARBOXAMIDE	zebrafish	A0AB32TF25	paics	A0AB32TF25	0	7	Bifunctional phosphoribosylaminoimidazole carboxylase/phosph	w
 SUCCINYL	fly	FBgn0261439	SdhA	Q94523	17	99	Succinate dehydrogenase [ubiquinone] flavoprotein subunit, m	w
-SUCCINYL-COA	fly	FBgn0004888	Scsalpha1	Q94522	14	141	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
-SUCCINYL-COA	fly	FBgn0029118	ScsbetaG	Q9V470	9	175	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
-SUCCINYL-COA	fly	FBgn0035298	Scot	Q9W058	1	8	Succinyl-CoA:3-ketoacid-coenzyme A transferase, mitochondria	w
-SUCCINYL-COA	fly	FBgn0037643	ScsbetaA	Q95U38	12	159	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
+SUCCINYL-COA	fly	FBgn0004888	Scsalpha1	Q94522	21	145	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
+SUCCINYL-COA	fly	FBgn0029118	ScsbetaG	Q9V470	9	176	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
+SUCCINYL-COA	fly	FBgn0035298	Scot	Q9W058	1	15	Succinyl-CoA:3-ketoacid-coenzyme A transferase, mitochondria	w
+SUCCINYL-COA	fly	FBgn0037643	ScsbetaA	Q95U38	15	160	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
 SUCCINYL-COA	fly	FBgn0038708	Scsalpha2	Q9VDW7	5	47	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
 SUCCINYL-COA	human	P55809	OXCT1	P55809	2	146	Succinyl-CoA:3-ketoacid coenzyme A transferase 1, mitochondr	w
 SUCCINYL-COA	human	Q96I99	SUCLG2	Q96I99	14	237	Succinate--CoA ligase [GDP-forming] subunit beta, mitochondr	w
@@ -135,12 +135,12 @@ SUCCINYL-COA	human	Q9HAC7	SUGCT	Q9HAC7	4	85	Succinyl-CoA:glutarate CoA-transfera
 SUCCINYL-COA	human	Q9P2R7	SUCLA2	Q9P2R7	22	274	Succinate--CoA ligase [ADP-forming] subunit beta, mitochondr	w
 SUCCINYL-COA	worm	Q09450	C05C10.3	Q09450	0	46	Probable succinyl-CoA:3-ketoacid coenzyme A transferase, mit	w
 SUCCINYL-COA	zebrafish	Q6AZB2	oxct1a	Q6AZB2	0	2	Succinyl-CoA:3-ketoacid-coenzyme A transferase	w
-SUCCINYL-COE	fly	FBgn0004888	Scsalpha1	Q94522	14	141	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
+SUCCINYL-COE	fly	FBgn0004888	Scsalpha1	Q94522	21	145	Succinate--CoA ligase [ADP/GDP-forming] subunit alpha, mitoc	w
 SUCCINYL-COENZYME	human	Q8N9L9	ACOT4	Q8N9L9	8	91	Peroxisomal succinyl-coenzyme A thioesterase (EC 3.1.2.3) (A	w
 SUCCINYL-COENZYME	zebrafish	A0A8M9Q6D0	acot16	A0A8M9Q6D0	0	5	Peroxisomal succinyl-coenzyme A thioesterase-like isoform X4	w
 SUCCINYL-TRANSFERRING	zebrafish	A0A8M2BJT5	ogdha	A0A8M2BJT5	4	4	oxoglutarate dehydrogenase (succinyl-transferring)	w
 SUCCINYL-TRANSFERRING	zebrafish	A0A8N7UVR5	ogdhl	A0A8N7UVR5	3	3	oxoglutarate dehydrogenase (succinyl-transferring)	w
-SUCCINYLTRANSFERASE	fly	FBgn0037891	Dlst	Q9VGQ1	5	105	Dihydrolipoyllysine-residue succinyltransferase component of	w
+SUCCINYLTRANSFERASE	fly	FBgn0037891	Dlst	Q9VGQ1	6	107	Dihydrolipoyllysine-residue succinyltransferase component of	w
 SUCCINYLTRANSFERASE	human	P36957	DLST	P36957	16	322	Dihydrolipoyllysine-residue succinyltransferase component of	w
 SUCCINYLTRANSFERASE	worm	O45148	dlst-1	O45148	3	52	Dihydrolipoyllysine-residue succinyltransferase component of	w
 SUCCINYLTRANSFERASE	yeast	P19262	KGD2	P19262	2	68	Dihydrolipoyllysine-residue succinyltransferase component of	w

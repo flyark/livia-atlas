@@ -2,7 +2,7 @@ ISO-ANP	human	P16860	NPPB	P16860	27	271	Natriuretic peptides B (Brain natriureti
 ISO1	fly	FBgn0026179	Iqsec	Q9VP80	7	14	FI21420p1 (Loner ISO1) (Schizo, isoform B)	w
 ISOAMYL	human	Q2TAA2	IAH1	Q2TAA2	0	99	Isoamyl acetate-hydrolyzing esterase 1 homolog (EC 3.1.-.-)	w
 ISOAMYL	yeast	P41734	IAH1	P41734	0	4	Isoamyl acetate-hydrolyzing esterase	w
-ISOASPARTYL	fly	FBgn0030653	CG7860	Q9VXT7	1	34	Probable isoaspartyl peptidase/L-asparaginase CG7860 (EC 3.4	w
+ISOASPARTYL	fly	FBgn0030653	CG7860	Q9VXT7	2	34	Probable isoaspartyl peptidase/L-asparaginase CG7860 (EC 3.4	w
 ISOASPARTYL	human	Q7L266	ASRGL1	Q7L266	3	53	Isoaspartyl peptidase/L-asparaginase (EC 3.4.19.5) (EC 3.5.1	w
 ISOASPARTYL	zebrafish	F1R0Q9	si:dkey-103j14.5	F1R0Q9	1	2	Isoaspartyl peptidase/L-asparaginase	w
 ISOASPARTYL	zebrafish	Q5BKW9	asrgl1	Q5BKW9	1	2	Isoaspartyl peptidase/L-asparaginase	w
@@ -27,9 +27,9 @@ ISOCHORISMATASE	human	Q96CN7	ISOC1	Q96CN7	3	82	Isochorismatase domain-containing
 ISOCHORISMATASE	worm	Q20062	marb-1	Q20062	0	57	Isochorismatase domain-containing protein 1	w
 ISOCHORISMATASE	zebrafish	A0JME6	isoc2	A0JME6	0	2	Isochorismatase domain-containing protein 2	w
 ISOCHORISMATASE	zebrafish	Q08C33	isoc1	Q08C33	1	3	Isochorismatase domain-containing protein 1	w
-ISOCITRATE	fly	FBgn0001248	Idh	B7Z0E0	9	272	Isocitrate dehydrogenase [NADP] (EC 1.1.1.42)	w
-ISOCITRATE	fly	FBgn0027291	Idh3a	Q9VWH4	13	200	Probable isocitrate dehydrogenase [NAD] subunit alpha, mitoc	w
-ISOCITRATE	fly	FBgn0035005	CG3483	Q9W172	8	47	isocitrate dehydrogenase (NAD(+)) (EC 1.1.1.41) (Isocitric d	w
+ISOCITRATE	fly	FBgn0001248	Idh	B7Z0E0	11	277	Isocitrate dehydrogenase [NADP] (EC 1.1.1.42)	w
+ISOCITRATE	fly	FBgn0027291	Idh3a	Q9VWH4	13	201	Probable isocitrate dehydrogenase [NAD] subunit alpha, mitoc	w
+ISOCITRATE	fly	FBgn0035005	CG3483	Q9W172	8	49	isocitrate dehydrogenase (NAD(+)) (EC 1.1.1.41) (Isocitric d	w
 ISOCITRATE	fly	FBgn0038922	Idh3b	Q9VD58	12	80	GH26270p (Isocitrate dehydrogenase 3b, isoform A (EC 1.1.1.4	w
 ISOCITRATE	fly	FBgn0052026	CG32026	Q8T0R3	6	52	isocitrate dehydrogenase (NAD(+)) (EC 1.1.1.41) (Isocitric d	w
 ISOCITRATE	human	A0A087WZN1	IDH3B	A0A087WZN1	4	55	Isocitrate dehydrogenase	w
@@ -56,14 +56,14 @@ ISOCITRATE	zebrafish	F1QZA4	idh3g	F1QZA4	10	21	Isocitrate dehydrogenase	w
 ISOCITRATE	zebrafish	Q6IQR5	idh3b	Q6IQR5	3	14	Isocitrate dehydrogenase	w
 ISOCITRATE	zebrafish	Q6NV33	idh3a	Q6NV33	7	23	Isocitrate dehydrogenase	w
 ISOCITRATE	zebrafish	Q7ZUP6	zgc:55485	Q7ZUP6	3	3	Isocitrate dehydrogenase [NADP]	w
-ISOCITRIC	fly	FBgn0027291	Idh3a	Q9VWH4	13	200	Probable isocitrate dehydrogenase [NAD] subunit alpha, mitoc	w
-ISOCITRIC	fly	FBgn0035005	CG3483	Q9W172	8	47	isocitrate dehydrogenase (NAD(+)) (EC 1.1.1.41) (Isocitric d	w
+ISOCITRIC	fly	FBgn0027291	Idh3a	Q9VWH4	13	201	Probable isocitrate dehydrogenase [NAD] subunit alpha, mitoc	w
+ISOCITRIC	fly	FBgn0035005	CG3483	Q9W172	8	49	isocitrate dehydrogenase (NAD(+)) (EC 1.1.1.41) (Isocitric d	w
 ISOCITRIC	fly	FBgn0052026	CG32026	Q8T0R3	6	52	isocitrate dehydrogenase (NAD(+)) (EC 1.1.1.41) (Isocitric d	w
 ISOCITRIC	human	O43837	IDH3B	O43837	13	122	Isocitrate dehydrogenase [NAD] subunit beta, mitochondrial (	w
 ISOCITRIC	human	P50213	IDH3A	P50213	14	171	Isocitrate dehydrogenase [NAD] subunit alpha, mitochondrial 	w
 ISOCITRIC	human	P51553	IDH3G	P51553	15	119	Isocitrate dehydrogenase [NAD] subunit gamma, mitochondrial 	w
 ISOELECTRIC	human	P02810	PRH1	P02810	20	320	Salivary acidic proline-rich phosphoprotein 1/2 (Db-s) (PRP-	w
-ISOENZYME	fly	FBgn0033754	Ak6	Q7JYV7	16	106	Adenylate kinase isoenzyme 6 homolog (AK6) (DAK6) (EC 2.7.4.	w
+ISOENZYME	fly	FBgn0033754	Ak6	Q7JYV7	20	107	Adenylate kinase isoenzyme 6 homolog (AK6) (DAK6) (EC 2.7.4.	w
 ISOENZYME	human	P00568	AK1	P00568	0	288	Adenylate kinase isoenzyme 1 (AK 1) (EC 2.7.4.3) (EC 2.7.4.4	w
 ISOENZYME	human	Q9Y3D8	AK6	Q9Y3D8	19	106	Adenylate kinase isoenzyme 6 (AK6) (EC 2.7.4.3) (Adrenal gla	w
 ISOENZYME	human	Q9Y6K8	AK5	Q9Y6K8	7	95	Adenylate kinase isoenzyme 5 (AK 5) (EC 2.7.4.3) (EC 2.7.4.6	w
@@ -76,7 +76,7 @@ ISOENZYME	zebrafish	A0A8M1N034	AK6	A0A8M1N034	2	6	Adenylate kinase isoenzyme 6	w
 ISOENZYME	zebrafish	A5PMF1	ak5	A5PMF1	1	8	Adenylate kinase isoenzyme 5	w
 ISOENZYME	zebrafish	Q32LW9	pdp2	Q32LW9	2	3	Putative pyruvate dehydrogenase phosphatase isoenzyme 2	w
 ISOENZYME	zebrafish	Q68EH2	ak1	Q68EH2	0	8	Adenylate kinase isoenzyme 1	w
-ISOF	fly	FBgn0027621	Pfrx	Q9VWH7	7	84	6-phosphofructo 2-kinase/fructose 2,6-bisphosphatase long fo	w
+ISOF	fly	FBgn0027621	Pfrx	Q9VWH7	8	85	6-phosphofructo 2-kinase/fructose 2,6-bisphosphatase long fo	w
 ISOF	fly	FBgn0028425	JhI-21	Q9VKC2	5	95	Amino acid transporter protein JHI-21 (Juvenile hormone Indu	w
 ISOFO	fly	FBgn0025456	CREG	Q9VEK7	22	588	Cellular repressor of E1A-stimulated genes, isoform A (Cellu	w
 ISOFO	fly	FBgn0032123	Oatp30B	Q9VLB3	0	5	Organic anion transporting polypeptide 30B, isoform A (Organ	w
@@ -101,7 +101,7 @@ ISOFORMS	worm	Q22866	lev-11	Q22866	11	82	Tropomyosin isoforms a/b/d/f	w
 ISOGLOBOTRIAOSYLCERAMIDE	human	U3KPV4	A3GALT2	U3KPV4	0	32	Alpha-1,3-galactosyltransferase 2 (EC 2.4.1.87) (Isoglobotri	w
 ISOLATED	human	Q9NR55	BATF3	Q9NR55	119	594	Basic leucine zipper transcriptional factor ATF-like 3 (B-AT	w
 ISOLEUCINE--TRNA	fly	FBgn0027086	IleRS	Q8MSW0	5	101	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
-ISOLEUCINE--TRNA	fly	FBgn0036569	IleRS-m	Q9VUY4	2	49	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
+ISOLEUCINE--TRNA	fly	FBgn0036569	IleRS-m	Q9VUY4	2	51	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
 ISOLEUCINE--TRNA	human	P41252	IARS1	P41252	10	422	Isoleucine--tRNA ligase, cytoplasmic (EC 6.1.1.5) (Isoleucyl	w
 ISOLEUCINE--TRNA	human	Q9NSE4	IARS2	Q9NSE4	8	303	Isoleucine--tRNA ligase, mitochondrial (EC 6.1.1.5) (Isoleuc	w
 ISOLEUCINE--TRNA	worm	E2JL04	iars-2	E2JL04	1	29	isoleucine--tRNA ligase	w
@@ -111,41 +111,41 @@ ISOLEUCINE--TRNA	yeast	P48526	ISM1	P48526	0	34	Isoleucine--tRNA ligase, mitochon
 ISOLEUCINE--TRNA	zebrafish	A0A8M1NS03	iars2	A0A8M1NS03	2	2	isoleucine--tRNA ligase	w
 ISOLEUCINE--TRNA	zebrafish	F1QUQ0	iars2	F1QUQ0	1	32	isoleucine--tRNA ligase	w
 ISOLEUCYL-TRNA	fly	FBgn0027086	IleRS	Q8MSW0	5	101	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
-ISOLEUCYL-TRNA	fly	FBgn0036569	IleRS-m	Q9VUY4	2	49	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
+ISOLEUCYL-TRNA	fly	FBgn0036569	IleRS-m	Q9VUY4	2	51	isoleucine--tRNA ligase (EC 6.1.1.5) (Isoleucyl-tRNA synthet	w
 ISOLEUCYL-TRNA	human	P41252	IARS1	P41252	10	422	Isoleucine--tRNA ligase, cytoplasmic (EC 6.1.1.5) (Isoleucyl	w
 ISOLEUCYL-TRNA	human	Q9NSE4	IARS2	Q9NSE4	8	303	Isoleucine--tRNA ligase, mitochondrial (EC 6.1.1.5) (Isoleuc	w
 ISOMALTASE	human	P14410	SI	P14410	0	7	Sucrase-isomaltase, intestinal [Cleaved into: Sucrase (EC 3.	w
 ISOMERA	human	Q9BV20	MRI1	Q9BV20	1	105	Methylthioribose-1-phosphate isomerase (M1Pi) (MTR-1-P isome	w
 ISOMERASE	fly	FBgn0002936	ninaA	P15425	9	69	Peptidyl-prolyl cis-trans isomerase, rhodopsin-specific isoz	w
 ISOMERASE	fly	FBgn0002937	ninaB	Q9VFS2	0	5	Carotenoid isomerooxygenase (EC 1.13.11.65) (Beta-carotene 1	w
-ISOMERASE	fly	FBgn0003074	Pgi	P52029	3	237	Glucose-6-phosphate isomerase (GPI) (EC 5.3.1.9) (Phosphoglu	w
+ISOMERASE	fly	FBgn0003074	Pgi	P52029	3	241	Glucose-6-phosphate isomerase (GPI) (EC 5.3.1.9) (Phosphoglu	w
 ISOMERASE	fly	FBgn0003401	shu	Q9W1I9	6	24	Inactive peptidyl-prolyl cis-trans isomerase shutdown	w
-ISOMERASE	fly	FBgn0004432	Cyp1	P25007	58	493	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	w
+ISOMERASE	fly	FBgn0004432	Cyp1	P25007	59	494	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	w
 ISOMERASE	fly	FBgn0010470	Fkbp14	A0A0B4K7C5	78	577	peptidylprolyl isomerase (EC 5.2.1.8)	w
-ISOMERASE	fly	FBgn0011770	Gip	P36951	1	14	Putative hydroxypyruvate isomerase (EC 5.3.1.22) (GIP-like p	w
-ISOMERASE	fly	FBgn0013269	Fkbp39	P54397	49	200	39 kDa FK506-binding nuclear protein (EC 5.2.1.8) (Peptidyl-	w
-ISOMERASE	fly	FBgn0013954	Fkbp12	P48375	45	321	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	w
+ISOMERASE	fly	FBgn0011770	Gip	P36951	1	16	Putative hydroxypyruvate isomerase (EC 5.3.1.22) (GIP-like p	w
+ISOMERASE	fly	FBgn0013269	Fkbp39	P54397	63	213	39 kDa FK506-binding nuclear protein (EC 5.2.1.8) (Peptidyl-	w
+ISOMERASE	fly	FBgn0013954	Fkbp12	P48375	53	327	Peptidyl-prolyl cis-trans isomerase Fkbp12 (PPIase Fkbp12) (	w
 ISOMERASE	fly	FBgn0015379	dod	P54353	50	215	Putative peptidyl-prolyl cis-trans isomerase dodo (PPIase do	w
 ISOMERASE	fly	FBgn0027617	Ppil4	Q9XYZ6	5	19	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
-ISOMERASE	fly	FBgn0028382	cyp33	Q9V3G3	14	105	Peptidyl-prolyl cis-trans isomerase E (PPIase E) (EC 5.2.1.8	w
-ISOMERASE	fly	FBgn0029174	Fkbp59	Q9VL78	22	186	FK506-binding protein 59 (EC 5.2.1.8) (Peptidyl-prolyl cis-t	w
-ISOMERASE	fly	FBgn0031717	Gnpda	Q9VMP9	1	77	Glucosamine-6-phosphate isomerase (EC 3.5.99.6) (Glucosamine	w
+ISOMERASE	fly	FBgn0028382	cyp33	Q9V3G3	16	106	Peptidyl-prolyl cis-trans isomerase E (PPIase E) (EC 5.2.1.8	w
+ISOMERASE	fly	FBgn0029174	Fkbp59	Q9VL78	24	193	FK506-binding protein 59 (EC 5.2.1.8) (Peptidyl-prolyl cis-t	w
+ISOMERASE	fly	FBgn0031717	Gnpda	Q9VMP9	2	79	Glucosamine-6-phosphate isomerase (EC 3.5.99.6) (Glucosamine	w
 ISOMERASE	fly	FBgn0033089	CG17266	Q4V5H1	21	119	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
 ISOMERASE	fly	FBgn0033527	CG11777	Q8MKJ6	12	64	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
-ISOMERASE	fly	FBgn0034753	CG2852	Q9W227	90	488	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
-ISOMERASE	fly	FBgn0035141	Cypl	Q9W0Q2	11	94	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
-ISOMERASE	fly	FBgn0036207	CG10907	Q9VTN7	26	134	Spliceosome-associated protein CWC27 homolog (Probable inact	w
+ISOMERASE	fly	FBgn0034753	CG2852	Q9W227	91	488	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
+ISOMERASE	fly	FBgn0035141	Cypl	Q9W0Q2	14	95	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
+ISOMERASE	fly	FBgn0036207	CG10907	Q9VTN7	29	134	Spliceosome-associated protein CWC27 homolog (Probable inact	w
 ISOMERASE	fly	FBgn0036415	CG7768	Q7K2I4	5	73	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	w
 ISOMERASE	fly	FBgn0037696	GstZ1	Q9VHD3	2	10	Probable maleylacetoacetate isomerase 1 (MAAI 1) (EC 5.2.1.2	w
-ISOMERASE	fly	FBgn0037697	GstZ2	Q9VHD2	8	17	Probable maleylacetoacetate isomerase 2 (MAAI 2) (EC 5.2.1.2	w
-ISOMERASE	fly	FBgn0037930	CG14715	Q9VGK3	92	482	peptidylprolyl isomerase (EC 5.2.1.8)	w
+ISOMERASE	fly	FBgn0037697	GstZ2	Q9VHD2	8	18	Probable maleylacetoacetate isomerase 2 (MAAI 2) (EC 5.2.1.2	w
+ISOMERASE	fly	FBgn0037930	CG14715	Q9VGK3	93	482	peptidylprolyl isomerase (EC 5.2.1.8)	w
 ISOMERASE	fly	FBgn0039305	CG11858	Q9VBU4	2	8	Peptidyl-prolyl cis-trans isomerase (EC 5.2.1.8)	w
-ISOMERASE	fly	FBgn0039581	Moca-cyp	Q9VAW1	11	90	peptidylprolyl isomerase (EC 5.2.1.8)	w
+ISOMERASE	fly	FBgn0039581	Moca-cyp	Q9VAW1	13	92	peptidylprolyl isomerase (EC 5.2.1.8)	w
 ISOMERASE	fly	FBgn0039849	Mri1	Q9V9X4	0	45	Methylthioribose-1-phosphate isomerase (M1Pi) (MTR-1-P isome	w
-ISOMERASE	fly	FBgn0050410	Rpi	Q8MLS2	1	8	ribose-5-phosphate isomerase (EC 5.3.1.6) (Phosphoriboisomer	w
-ISOMERASE	fly	FBgn0052845	CG32845	Q8IRJ5	0	9	peptidylprolyl isomerase (EC 5.2.1.8)	w
-ISOMERASE	fly	FBgn0086355	Tpi	P29613	7	154	Triose phosphate isomerase	w
-ISOMERASE	fly	FBgn0286506	Mpi	Q9VH77	0	19	mannose-6-phosphate isomerase (EC 5.3.1.8) (Phosphohexomutas	w
+ISOMERASE	fly	FBgn0050410	Rpi	Q8MLS2	1	16	ribose-5-phosphate isomerase (EC 5.3.1.6) (Phosphoriboisomer	w
+ISOMERASE	fly	FBgn0052845	CG32845	Q8IRJ5	0	10	peptidylprolyl isomerase (EC 5.2.1.8)	w
+ISOMERASE	fly	FBgn0086355	Tpi	P29613	8	160	Triose phosphate isomerase	w
+ISOMERASE	fly	FBgn0286506	Mpi	Q9VH77	1	27	mannose-6-phosphate isomerase (EC 5.3.1.8) (Phosphohexomutas	w
 ISOMERASE	human	A0A075B759	PPIAL4E	A0A075B759	50	378	Peptidyl-prolyl cis-trans isomerase A-like 4E (PPIase A-like	w
 ISOMERASE	human	A0A075B767	PPIAL4H	A0A075B767	67	415	Peptidyl-prolyl cis-trans isomerase A-like 4H (PPIase A-like	w
 ISOMERASE	human	A0A0B4J2A2	PPIAL4C	A0A0B4J2A2	55	336	Peptidyl-prolyl cis-trans isomerase A-like 4C (PPIase A-like	w
@@ -351,7 +351,7 @@ ISOMERASE-LIKE	human	Q96L50	LRR1	Q96L50	76	579	Leucine-rich repeat protein 1 (4-
 ISOMERASE-LIKE	human	Q9H2H8	PPIL3	Q9H2H8	25	131	Peptidyl-prolyl cis-trans isomerase-like 3 (PPIase) (EC 5.2.	w
 ISOMERASE-LIKE	human	Q9Y3C6	PPIL1	Q9Y3C6	30	281	Peptidyl-prolyl cis-trans isomerase-like 1 (PPIase) (EC 5.2.	w
 ISOMERASE-RELATED	human	Q14554	PDIA5	Q14554	4	118	Protein disulfide-isomerase A5 (EC 5.3.4.1) (Protein disulfi	w
-ISOMERIZING	fly	FBgn0039580	Gfat2	Q9VAW3	1	179	glutamine--fructose-6-phosphate transaminase (isomerizing) (	w
+ISOMERIZING	fly	FBgn0039580	Gfat2	Q9VAW3	1	182	glutamine--fructose-6-phosphate transaminase (isomerizing) (	w
 ISOMERIZING	fly	FBgn0287209	Gfat1	Q7PLC7	1	115	glutamine--fructose-6-phosphate transaminase (isomerizing) (	w
 ISOMERIZING	human	O94808	GFPT2	O94808	7	161	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
 ISOMERIZING	human	Q06210	GFPT1	Q06210	9	259	Glutamine--fructose-6-phosphate aminotransferase [isomerizin	w
@@ -364,7 +364,7 @@ ISOMEROHYDROLASE	zebrafish	Q6PBW5	rpe65a	Q6PBW5	1	1	Retinoid isomerohydrolase	w
 ISOMEROOXYGENASE	fly	FBgn0002937	ninaB	Q9VFS2	0	5	Carotenoid isomerooxygenase (EC 1.13.11.65) (Beta-carotene 1	w
 ISOPENTENYL	human	Q13907	IDI1	Q13907	7	55	Isopentenyl-diphosphate Delta-isomerase 1 (EC 5.3.3.2) (Isop	w
 ISOPENTENYL	human	Q9BXS1	IDI2	Q9BXS1	1	23	Isopentenyl-diphosphate delta-isomerase 2 (EC 5.3.3.2) (Isop	w
-ISOPENTENYL-DIPHOSPHATE	fly	FBgn0038876	Idi	Q9VDC2	1	7	isopentenyl-diphosphate Delta-isomerase (EC 5.3.3.2)	w
+ISOPENTENYL-DIPHOSPHATE	fly	FBgn0038876	Idi	Q9VDC2	4	13	isopentenyl-diphosphate Delta-isomerase (EC 5.3.3.2)	w
 ISOPENTENYL-DIPHOSPHATE	human	Q13907	IDI1	Q13907	7	55	Isopentenyl-diphosphate Delta-isomerase 1 (EC 5.3.3.2) (Isop	w
 ISOPENTENYL-DIPHOSPHATE	human	Q9BXS1	IDI2	Q9BXS1	1	23	Isopentenyl-diphosphate delta-isomerase 2 (EC 5.3.3.2) (Isop	w
 ISOPENTENYL-DIPHOSPHATE	human	Q9H3H1	TRIT1	Q9H3H1	0	44	tRNA dimethylallyltransferase (EC 2.5.1.75) (Isopentenyl-dip	w
@@ -400,17 +400,17 @@ ISOT3	human	Q92995	USP13	Q92995	10	172
 ISOTOCIN	zebrafish	E4W698	oxtrb	E4W698	0	11	Isotocin receptor-like 1	w
 ISOTOCIN	zebrafish	E4W699	oxtra	E4W699	0	24	Isotocin receptor-like 2	w
 ISOTYPE-SPECIFIC-INTERACTING	human	Q8TEW0	PARD3	Q8TEW0	116	441	Partitioning defective 3 homolog (PAR-3) (PARD-3) (Atypical 	w
-ISOVALERYL-COA	fly	FBgn0035911	Ivd	Q9VSL9	6	19	Isovaleryl-CoA dehydrogenase, mitochondrial (EC 1.3.8.1) (EC	w
+ISOVALERYL-COA	fly	FBgn0035911	Ivd	Q9VSL9	6	23	Isovaleryl-CoA dehydrogenase, mitochondrial (EC 1.3.8.1) (EC	w
 ISOVALERYL-COA	human	P26440	IVD	P26440	23	417	Isovaleryl-CoA dehydrogenase, mitochondrial (IVD) (EC 1.3.8.	w
 ISOVALERYL-COA	worm	G5EEH6	ivd-1	G5EEH6	7	14	Isovaleryl-CoA dehydrogenase, mitochondrial	w
 ISOVALERYL-COA	zebrafish	Q7ZTH9	sb:cb425	Q7ZTH9	10	10	Isovaleryl-CoA dehydrogenase, mitochondrial	w
 ISOZY	human	P28845	HSD11B1	P28845	17	128	11-beta-hydroxysteroid dehydrogenase 1 (11-DH) (11-beta-HSD1	w
 ISOZYM	human	P30520	ADSS2	P30520	8	149	Adenylosuccinate synthetase isozyme 2 (AMPSase 2) (AdSS 2) (	w
 ISOZYM	human	Q8N142	ADSS1	Q8N142	2	23	Adenylosuccinate synthetase isozyme 1 (AMPSase 1) (AdSS 1) (	w
-ISOZYME	fly	FBgn0000442	Pkg21D	Q03042	91	1110	cGMP-dependent protein kinase, isozyme 1 (cGK) (EC 2.7.11.12	w
-ISOZYME	fly	FBgn0000721	for	Q03043	122	1118	cGMP-dependent protein kinase, isozyme 2 forms cD4/T1/T3A/T3	w
+ISOZYME	fly	FBgn0000442	Pkg21D	Q03042	91	1112	cGMP-dependent protein kinase, isozyme 1 (cGK) (EC 2.7.11.12	w
+ISOZYME	fly	FBgn0000721	for	Q03043	122	1120	cGMP-dependent protein kinase, isozyme 2 forms cD4/T1/T3A/T3	w
 ISOZYME	fly	FBgn0002936	ninaA	P15425	9	69	Peptidyl-prolyl cis-trans isomerase, rhodopsin-specific isoz	w
-ISOZYME	fly	FBgn0003091	Pkc53E	P05130	224	1120	Protein kinase C, brain isozyme (PKC) (EC 2.7.11.13) (dPKC53	w
+ISOZYME	fly	FBgn0003091	Pkc53E	P05130	225	1127	Protein kinase C, brain isozyme (PKC) (EC 2.7.11.13) (dPKC53	w
 ISOZYME	fly	FBgn0004784	inaC	P13677	46	1122	Protein kinase C, eye isozyme (EC 2.7.11.13) (Eye-PKC) (Inac	w
 ISOZYME	human	O00757	FBP2	O00757	1	117	Fructose-1,6-bisphosphatase isozyme 2 (FBPase 2) (EC 3.1.3.1	w
 ISOZYME	human	O60825	PFKFB2	O60825	8	103	6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase 2 (6PF-	w

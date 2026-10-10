@@ -1,4 +1,4 @@
-SNX	fly	FBgn0037924	snx	Q9VGL0	4	5	LD43047p	
+SNX	fly	FBgn0037924	snx	Q9VGL0	6	8	LD43047p	
 SNX	human	P20073	ANXA7	P20073	8	271		
 SNX-1	worm	Q9GYJ9	snx-1	Q9GYJ9	3	52	PX domain-containing protein	
 SNX-13	worm	Q9U2U6	snx-13	Q9U2U6	0	1	Sorting nexin-13	
@@ -9,7 +9,7 @@ SNX-3	worm	Q9XW41	snx-3	Q9XW41	2	20	Sorting nexin-3
 SNX-6	worm	D9PTP5	snx-6	D9PTP5	6	40	PX domain-containing protein	
 SNX-L	human	Q969T3	SNX21	Q969T3	9	96	Sorting nexin-21 (Sorting nexin L) (SNX-L)	w
 SNX1	arabidopsis-thaliana	Q9FG38	SNX1	Q9FG38	2	22	Sorting nexin 1	
-SNX1	fly	FBgn0031534	Snx1	Q9VQQ6	8	136	FI18122p1 (Sorting nexin 1, isoform A)	
+SNX1	fly	FBgn0031534	Snx1	Q9VQQ6	10	140	FI18122p1 (Sorting nexin 1, isoform A)	
 SNX1	human	Q13596	SNX1	Q13596	24	267	Sorting nexin-1	
 SNX1	mus-musculus	Q9WV80	Snx1	Q9WV80	10	46	Sorting nexin-1	
 SNX1	rattus-norvegicus	Q99N27	Snx1	Q99N27	10	45	Sorting nexin-1	
@@ -63,8 +63,8 @@ SNX18_HUMAN	human	Q96RF0	SNX18	Q96RF0	28	110
 SNX19	human	Q92543	SNX19	Q92543	13	90	Sorting nexin-19	
 SNX19_HUMAN	human	Q92543	SNX19	Q92543	13	90		
 SNX1A	zebrafish	F1Q9I7	snx1a	F1Q9I7	7	25	Sorting nexin-1	
-SNX1_216	fly	FBgn0031534	Snx1	Q9VQQ6	8	136		
-SNX1_23	fly	FBgn0031534	Snx1	Q9VQQ6	8	136		
+SNX1_216	fly	FBgn0031534	Snx1	Q9VQQ6	10	140		
+SNX1_23	fly	FBgn0031534	Snx1	Q9VQQ6	10	140		
 SNX1_HUMAN	human	Q13596	SNX1	Q13596	24	267		
 SNX2	human	O60749	SNX2	O60749	29	266	Sorting nexin-2 (Transformation-related gene 9 protein) (TRG	
 SNX2	mus-musculus	Q9CWK8	Snx2	Q9CWK8	11	63	Sorting nexin-2	
@@ -84,7 +84,7 @@ SNX25	human	Q9H3E2	SNX25	Q9H3E2	5	60	Sorting nexin-25
 SNX25	mus-musculus	Q3ZT31	Snx25	Q3ZT31	0	1	Sorting nexin-25	
 SNX25_HUMAN	human	Q9H3E2	SNX25	Q9H3E2	5	60		
 SNX26	human	O14559	ARHGAP33	O14559	6	32		
-SNX27	fly	FBgn0052758	Snx27	Q9W486	3	21	LD13361p (Sorting nexin 27, isoform A)	
+SNX27	fly	FBgn0052758	Snx27	Q9W486	4	21	LD13361p (Sorting nexin 27, isoform A)	
 SNX27	human	Q96L92	SNX27	Q96L92	79	593	Sorting nexin-27	
 SNX27	mus-musculus	Q3UHD6	Snx27	Q3UHD6	4	56	Sorting nexin-27	
 SNX27	rattus-norvegicus	Q8K4V4	Snx27	Q8K4V4	5	50	Sorting nexin-27	
@@ -103,14 +103,14 @@ SNX2_HUMAN	human	O60749	SNX2	O60749	29	266
 SNX3	arabidopsis-thaliana	F4HZJ6	SNX3	F4HZJ6	2	3	Phox (PX) domain-containing protein	
 SNX3	candida-albicans-237561	Q5A748	SNX3	Q5A748	1	4	Sorting nexin-3	
 SNX3	cladophialophora-carrionii	A0A1C1CYU3	snx3	A0A1C1CYU3	0	3	Sorting nexin-3	
-SNX3	fly	FBgn0038065	Snx3	Q9VG51	6	58	RE52028p (Sorting nexin 3, isoform A) (Sorting nexin 3, isof	
+SNX3	fly	FBgn0038065	Snx3	Q9VG51	6	60	RE52028p (Sorting nexin 3, isoform A) (Sorting nexin 3, isof	
 SNX3	human	O60493	SNX3	O60493	13	259	Sorting nexin-3 (Protein SDP3)	
 SNX3	mus-musculus	O70492	Snx3	O70492	5	26	Sorting nexin-3	
 SNX3	rattus-norvegicus	Q5U211	Snx3	Q5U211	4	21	Sorting nexin-3	
 SNX3	schizosaccharomyces-pombe	O94291	snx3	O94291	0	8	Sorting nexin-3	
 SNX3	yeast	Q08826	SNX3	Q08826	0	22	Sorting nexin-3	
 SNX3	zebrafish	Q3B7E7	snx3	Q3B7E7	2	14	Sorting nexin-3	
-SNX3-PA	fly	FBgn0038065	Snx3	Q9VG51	6	58		
+SNX3-PA	fly	FBgn0038065	Snx3	Q9VG51	6	60		
 SNX30	human	Q5VWJ9	SNX30	Q5VWJ9	19	71	Sorting nexin-30	
 SNX30	human	Q8WV41	SNX33	Q8WV41	36	141		
 SNX30	mus-musculus	Q8CE50	Snx30	Q8CE50	6	19	Sorting nexin-30	
@@ -130,7 +130,7 @@ SNX33	mus-musculus	Q4VAA7	Snx33	Q4VAA7	4	10	Sorting nexin-33
 SNX33	rattus-norvegicus	D4A3X7	Snx33	D4A3X7	4	19	Sorting nexin	
 SNX33	zebrafish	B5RHZ3	snx33	B5RHZ3	1	19	Sorting nexin	
 SNX33_HUMAN	human	Q8WV41	SNX33	Q8WV41	36	141		
-SNX3_77	fly	FBgn0038065	Snx3	Q9VG51	6	58		
+SNX3_77	fly	FBgn0038065	Snx3	Q9VG51	6	60		
 SNX3_HUMAN	human	O60493	SNX3	O60493	13	259		
 SNX4	arabidopsis-thaliana	F4IJE1	SNX4	F4IJE1	0	3	Phox domain-containing protein	
 SNX4	candida-albicans-237561	Q5AD77	SNX4	Q5AD77	3	16	Sorting nexin-4	
@@ -150,7 +150,7 @@ SNX5	human	Q9Y5X3	SNX5	Q9Y5X3	28	215	Sorting nexin-5
 SNX5	mus-musculus	Q9D8U8	Snx5	Q9D8U8	15	66	Sorting nexin-5	
 SNX5	rattus-norvegicus	B1H267	Snx5	B1H267	10	52	Sorting nexin-5	
 SNX5_HUMAN	human	Q9Y5X3	SNX5	Q9Y5X3	28	215		
-SNX6	fly	FBgn0032005	Snx6	M9NDI3	12	63	Sorting nexin 6, isoform B	
+SNX6	fly	FBgn0032005	Snx6	M9NDI3	15	68	Sorting nexin 6, isoform B	
 SNX6	human	Q9UNH7	SNX6	Q9UNH7	29	285	Sorting nexin-6 (TRAF4-associated factor 2) [Cleaved into: S	
 SNX6	mus-musculus	Q6P8X1	Snx6	Q6P8X1	13	44	Sorting nexin-6	
 SNX6	rattus-norvegicus	F7FPM8	Snx6	F7FPM8	9	30	Sorting nexin	

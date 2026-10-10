@@ -8,7 +8,7 @@ P29033	human	P29033	GJB2	P29033	9	204	Gap junction beta-2 protein (Connexin-26) 
 P29034	human	P29034	S100A2	P29034	48	819	Protein S100-A2 (CAN19) (Protein S-100L) (S100 calcium-bindi	
 P29037	mus-musculus	P29037	Tbp	P29037	38	245	TATA-box-binding protein	
 P29038	zea-mays	P29038	?	P29038	0	40	L-lactate dehydrogenase	
-P29052	fly	FBgn0004915	TfIIB	P29052	56	522	Transcription initiation factor IIB (General transcription f	
+P29052	fly	FBgn0004915	TfIIB	P29052	70	523	Transcription initiation factor IIB (General transcription f	
 P29055	yeast	P29055	SUA7	P29055	8	169	Transcription initiation factor IIB	
 P29056	yeast	P29056	BRF1	P29056	10	136	Transcription factor IIIB 70 kDa subunit	
 P29066	rattus-norvegicus	P29066	Arrb1	P29066	40	262	Beta-arrestin-1	
@@ -46,7 +46,7 @@ P29281	haemophilus-influenzae	P29281	crp	P29281	0	7	cAMP-activated global transc
 P29288	rattus-norvegicus	P29288	Acp5	P29288	0	7	Tartrate-resistant acid phosphatase type 5	
 P29293	rattus-norvegicus	P29293	Acr	P29293	2	5	Acrosin	
 P29295	yeast	P29295	HRR25	P29295	21	211	Casein kinase I homolog HRR25 (EC 2.7.11.1)	
-P29310	fly	FBgn0004907	14-3-3zeta	P29310	149	533	14-3-3 protein zeta (14-3-3-like protein) (Protein Leonardo)	
+P29310	fly	FBgn0004907	14-3-3zeta	P29310	153	536	14-3-3 protein zeta (14-3-3-like protein) (Protein Leonardo)	
 P29311	yeast	P29311	BMH1	P29311	32	187	Protein BMH1	
 P29314	rattus-norvegicus	P29314	Rps9	P29314	16	652	Small ribosomal subunit protein uS4	
 P29315	rattus-norvegicus	P29315	Rnh1	P29315	4	7	Ribonuclease inhibitor	
@@ -56,7 +56,7 @@ P29320	human	P29320	EPHA3	P29320	193	1445	Ephrin type-A receptor 3 (EC 2.7.10.1)
 P29321	rattus-norvegicus	P29321	Epha8	P29321	4	17	Ephrin type-A receptor 8	
 P29322	human	P29322	EPHA8	P29322	51	293	Ephrin type-A receptor 8 (EC 2.7.10.1) (EPH- and ELK-related	
 P29323	human	P29323	EPHB2	P29323	55	444	Ephrin type-B receptor 2 (EC 2.7.10.1) (Developmentally-regu	
-P29327	fly	FBgn0261592	RpS6	P29327	46	421	Small ribosomal subunit protein eS6 (40S ribosomal protein S	
+P29327	fly	FBgn0261592	RpS6	P29327	87	430	Small ribosomal subunit protein eS6 (40S ribosomal protein S	
 P29340	yeast	P29340	PEX4	P29340	17	50	Ubiquitin-conjugating enzyme E2-21 kDa	
 P29341	mus-musculus	P29341	Pabpc1	P29341	15	212	Polyadenylate-binding protein 1	
 P29348	rattus-norvegicus	P29348	Gnat3	P29348	63	118	Guanine nucleotide-binding protein G(t) subunit alpha-3	
@@ -93,7 +93,7 @@ P29401	human	P29401	TKT	P29401	7	361	Transketolase (TK) (EC 2.2.1.1)
 P29402	arabidopsis-thaliana	P29402	CNX1	P29402	2	128	Calnexin homolog 1	
 P29410	rattus-norvegicus	P29410	Ak2	P29410	10	32	Adenylate kinase 2, mitochondrial	
 P29411	rattus-norvegicus	P29411	Ak3	P29411	5	17	GTP:AMP phosphotransferase AK3, mitochondrial	
-P29413	fly	FBgn0005585	Calr	P29413	93	606	Calreticulin	
+P29413	fly	FBgn0005585	Calr	P29413	93	608	Calreticulin	
 P29414	rattus-norvegicus	P29414	Gja3	P29414	0	19	Gap junction alpha-3 protein	
 P29416	mus-musculus	P29416	Hexa	P29416	1	36	Beta-hexosaminidase subunit alpha	
 P29418	rattus-norvegicus	P29418	Atp5f1e	P29418	5	54	ATP synthase F(1) complex subunit epsilon, mitochondrial	
@@ -121,7 +121,7 @@ P29477	mus-musculus	P29477	Nos2	P29477	4	37	Nitric oxide synthase, inducible
 P29478	yeast	P29478	SEC65	P29478	12	181	Signal recognition particle subunit SEC65	
 P29496	yeast	P29496	MCM5	P29496	1	104	Minichromosome maintenance protein 5	
 P29498	schistosoma-mansoni	P29498	?	P29498	1	7	14 kDa fatty acid-binding protein	
-P29503	fly	FBgn0002932	neur	P29503	12	26	Protein neuralized	
+P29503	fly	FBgn0002932	neur	P29503	12	27	Protein neuralized	
 P29505	dictyostelium-discoideum	P29505	cxeA	P29505	3	70	Cytochrome c oxidase subunit 5	
 P29506	worm	P29506	unc-4	P29506	10	139	Homeobox protein unc-4	
 P29508	human	P29508	SERPINB3	P29508	4	312	Serpin B3 (Protein T4-A) (Squamous cell carcinoma antigen 1)	
@@ -140,7 +140,7 @@ P29534	rattus-norvegicus	P29534	Vcam1	P29534	5	82	Vascular cell adhesion protein
 P29536	human	P29536	LMOD1	P29536	9	55	Leiomodin-1 (64 kDa autoantigen 1D) (64 kDa autoantigen 1D3)	
 P29545	oryza-sativa-subsp-japonica	P29545	Os07g0662500	P29545	9	87	Elongation factor 1-beta	
 P29547	yeast	P29547	CAM1	P29547	5	46	Elongation factor 1-gamma 1	
-P29555	fly	FBgn0000014	abd-A	P29555	93	532	Homeobox protein abdominal-A	
+P29555	fly	FBgn0000014	abd-A	P29555	94	532	Homeobox protein abdominal-A	
 P29558	human	P29558	RBMS1	P29558	32	218	RNA-binding motif, single-stranded-interacting protein 1 (Si	
 P29590	human	P29590	PML	P29590	73	985	Protein PML (E3 SUMO-protein ligase PML) (EC 2.3.2.-) (Promy	
 P29594	mus-musculus	P29594	Casp2	P29594	8	46	Caspase-2	
@@ -148,7 +148,7 @@ P29595	mus-musculus	P29595	Nedd8	P29595	30	263	Ubiquitin-like protein NEDD8
 P29596	rattus-norvegicus	P29596	Atf3	P29596	21	52	Cyclic AMP-dependent transcription factor ATF-3	
 P29597	human	P29597	TYK2	P29597	341	1475	Non-receptor tyrosine-protein kinase TYK2 (EC 2.7.10.2)	
 P29598	rattus-norvegicus	P29598	Plau	P29598	5	64	Urokinase-type plasminogen activator	
-P29613	fly	FBgn0086355	Tpi	P29613	7	154	Triose phosphate isomerase	
+P29613	fly	FBgn0086355	Tpi	P29613	8	160	Triose phosphate isomerase	
 P29615	fly	FBgn0004429	LysP	P29615	50	258	Lysozyme P (EC 3.2.1.17) (1,4-beta-N-acetylmuramidase P)	
 P29618	oryza-sativa-subsp-japonica	P29618	CDKA-1	P29618	62	246	Cyclin-dependent kinase A-1	
 P29619	oryza-sativa-subsp-japonica	P29619	CDKA-2	P29619	61	245	Cyclin-dependent kinase A-2	
@@ -158,7 +158,7 @@ P29622	human	P29622	SERPINA4	P29622	27	367	Kallistatin (Kallikrein inhibitor) (P
 P29673	fly	FBgn0267978	ap	P29673	88	421	Protein apterous	
 P29676	rattus-norvegicus	P29676	Epo	P29676	11	62	Erythropoietin	
 P29680	escherichia-coli-83333	P29680	hemE	P29680	0	5	Uroporphyrinogen decarboxylase	
-P29681	fly	FBgn0001254	ImpE2	P29681	37	244	20-hydroxyecdysone protein (20-HE)	
+P29681	fly	FBgn0001254	ImpE2	P29681	38	245	20-hydroxyecdysone protein (20-HE)	
 P29691	worm	P29691	eef-2	P29691	5	228	Elongation factor 2	
 P29692	human	P29692	EEF1D	P29692	104	657	Elongation factor 1-delta (EF-1-delta) (Antigen NY-CO-4)	
 P29699	mus-musculus	P29699	Ahsg	P29699	0	51	Alpha-2-HS-glycoprotein	
@@ -217,10 +217,10 @@ P29818	virus	P29818	AMV183	P29818	5	278	Uncharacterized protein AMV183/G2R
 P29819	virus	P29819	AMV185	P29819	7	278	Uncharacterized protein AMV185/G3L	
 P29825	virus	P29825	m002L	P29825	12	156	Tumor necrosis factor soluble receptor	
 P29826	rattus-norvegicus	P29826	RT1-Bb	P29826	12	99	Rano class II histocompatibility antigen, B-1 beta chain	
-P29829	fly	FBgn0004623	Gbeta76C	P29829	16	75	Guanine nucleotide-binding protein subunit beta-2	
+P29829	fly	FBgn0004623	Gbeta76C	P29829	16	76	Guanine nucleotide-binding protein subunit beta-2	
 P29835	oryza-sativa-subsp-japonica	P29835	Os05g0499100	P29835	0	69	19 kDa globulin	
 P29843	fly	FBgn0001216	Hsc70-1	P29843	36	129	Heat shock 70 kDa protein cognate 1 (Heat shock 70 kDa prote	
-P29844	fly	FBgn0001218	Hsc70-3	P29844	76	522	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	
+P29844	fly	FBgn0001218	Hsc70-3	P29844	90	537	Endoplasmic reticulum chaperone BiP (EC 3.6.4.10) (78 kDa gl	
 P29845	fly	FBgn0001220	Hsc70-5	P29845	59	283	Heat shock 70 kDa protein cognate 5	
 P29847	salmonella-typhimurium	P29847	cysE	P29847	0	2	Serine acetyltransferase	
 P29848	salmonella-typhimurium	P29848	cysM	P29848	0	6	Cysteine synthase B	

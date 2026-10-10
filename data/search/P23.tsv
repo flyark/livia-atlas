@@ -1,4 +1,4 @@
-P23	fly	FBgn0037728	cPges	Q9VH95	15	233		
+P23	fly	FBgn0037728	cPges	Q9VH95	23	241		
 P23	human	Q15185	PTGES3	Q15185	49	537		
 P23-1	arabidopsis-thaliana	Q8L7U4	P23-1	Q8L7U4	8	99	Co-chaperone protein p23-1	
 P23-2	arabidopsis-thaliana	Q6ID70	P23-2	Q6ID70	4	99	Co-chaperone protein p23-2	
@@ -22,7 +22,7 @@ P23008_PBA3B63FEDF	virus	P23008_pba3b63fedf		P23008	2	9	Viral protein genome lin
 P23008_PD6DA420C4E	virus	P23008_pd6da420c4e		P23008	3	9	Capsid protein VP3	
 P23008_PD93419BEC1	virus	P23008_pd93419bec1		P23008	3	9	Protease 2A	
 P23008_PEA194F1B44	virus	P23008_pea194f1b44		P23008	2	9	Capsid protein VP2	
-P23023	fly	FBgn0000504	dsx	A0A0B4KGR7	68	442		
+P23023	fly	FBgn0000504	dsx	A0A0B4KGR7	68	443		
 P23025	human	P23025	XPA	P23025	19	226	DNA repair protein complementing XP-A cells (Xeroderma pigme	
 P23056	virus	P23056	P/V	P23056	2	6	Phosphoprotein	
 P23057	virus	P23057	P/V	P23057	0	6	Non-structural protein V	
@@ -34,7 +34,7 @@ P23097	rattus-norvegicus	P23097	Mmp13	P23097	3	25	Collagenase 3
 P23109	human	P23109	AMPD1	P23109	2	70	AMP deaminase 1 (EC 3.5.4.6) (AMP deaminase isoform M) (Myoa	
 P23111	zea-mays	P23111	CDC2	P23111	27	84	Cell division control protein 2 homolog	
 P23116	mus-musculus	P23116	Eif3a	P23116	15	142	Eukaryotic translation initiation factor 3 subunit A	
-P23128	fly	FBgn0004419	me31B	P23128	26	444	ATP-dependent RNA helicase me31b (EC 3.6.4.13) (Maternal exp	
+P23128	fly	FBgn0004419	me31B	P23128	29	447	ATP-dependent RNA helicase me31b (EC 3.6.4.13) (Maternal exp	
 P23141	human	P23141	CES1	P23141	1	42	Liver carboxylesterase 1 (Acyl-coenzyme A:cholesterol acyltr	
 P23142	human	P23142	FBLN1	P23142	49	382	Fibulin-1 (FIBL-1)	
 P23173	escherichia-coli-83333	P23173	tnaB	P23173	0	3	Low affinity tryptophan permease	
@@ -101,7 +101,7 @@ P23372	virus	P23372	OPG070	P23372	3	218	Protein OPG070
 P23373	virus	P23373	OPG072	P23373	14	218	Probable FAD-linked sulfhydryl oxidase OPG072	
 P23377	rattus-norvegicus	P23377	Furin	P23377	0	19	Furin	
 P23378	human	P23378	GLDC	P23378	5	295	Glycine dehydrogenase (decarboxylating), mitochondrial (EC 1	
-P23380	fly	FBgn0262736	Vha16-1	P23380	11	130	V-type proton ATPase 16 kDa proteolipid subunit c (V-ATPase 	
+P23380	fly	FBgn0262736	Vha16-1	P23380	16	130	V-type proton ATPase 16 kDa proteolipid subunit c (V-ATPase 	
 P23381	human	P23381	WARS1	P23381	2	177	Tryptophan--tRNA ligase, cytoplasmic (EC 6.1.1.2) (Interfero	
 P23385	rattus-norvegicus	P23385	Grm1	P23385	5	40	Metabotropic glutamate receptor 1	
 P23394	yeast	P23394	PRP28	P23394	2	74	Pre-mRNA-splicing ATP-dependent RNA helicase PRP28	
@@ -128,7 +128,7 @@ P23481	escherichia-coli-83333	P23481	hyfA	P23481	0	2	Hydrogenase-4 component A
 P23482	escherichia-coli-83333	P23482	hyfB	P23482	4	17	Hydrogenase-4 component B	
 P23484	escherichia-coli-83333	P23484	fecI	P23484	2	14	Ferric citrate uptake sigma factor FecI	
 P23485	escherichia-coli-83333	P23485	fecR	P23485	3	6	Ferric citrate uptake sigma factor regulator FecR	
-P23488	fly	FBgn0004414	msopa	P23488	48	256	Male-specific opa-containing protein (Protein dromsopa)	
+P23488	fly	FBgn0004414	msopa	P23488	49	257	Male-specific opa-containing protein (Protein dromsopa)	
 P23490	human	P23490	LORICRIN	P23490	8	229	Loricrin	
 P23492	mus-musculus	P23492	Pnp	P23492	1	16	Purine nucleoside phosphorylase	
 P23493	yeast	P23493	MBR1	P23493	0	6	Mitochondrial biogenesis regulation protein 1	
@@ -156,7 +156,7 @@ P23562	rattus-norvegicus	P23562	Slc4a1	P23562	0	35	Band 3 anion transport protei
 P23565	rattus-norvegicus	P23565	Ina	P23565	5	17	Alpha-internexin	
 P23566	schizosaccharomyces-pombe	P23566	rhp6	P23566	7	44	Ubiquitin-conjugating enzyme E2 2	
 P23570	rattus-norvegicus	P23570	Irf1	P23570	6	54	Interferon regulatory factor 1	
-P23572	fly	FBgn0004106	Cdk1	P23572	134	1273	Cyclin-dependent kinase 1 (CDK1) (EC 2.7.11.22) (EC 2.7.11.2	
+P23572	fly	FBgn0004106	Cdk1	P23572	150	1312	Cyclin-dependent kinase 1 (CDK1) (EC 2.7.11.22) (EC 2.7.11.2	
 P23573	fly	FBgn0004107	Cdk2	P23573	81	1324	Cyclin-dependent kinase 2 (EC 2.7.11.22) (EC 2.7.11.23) (Cel	
 P23574	rattus-norvegicus	P23574	Gabrg1	P23574	16	29	Gamma-aminobutyric acid receptor subunit gamma-1	
 P23576	rattus-norvegicus	P23576	Gabra2	P23576	18	32	Gamma-aminobutyric acid receptor subunit alpha-2	
@@ -190,14 +190,14 @@ P23642	yeast	P23642	VAN1	P23642	2	23	Mannan polymerase I complex VAN1 subunit
 P23643	yeast	P23643	VPS3	P23643	7	22	Vacuolar protein sorting-associated protein 3	
 P23644	yeast	P23644	TOM40	P23644	8	81	Mitochondrial import receptor subunit TOM40	
 P23645	fly	FBgn0000180	bib	M9PB86	5	20		
-P23647	fly	FBgn0001079	fu	P23647	162	1154	Serine/threonine-protein kinase fused (EC 2.7.11.1)	
+P23647	fly	FBgn0001079	fu	P23647	163	1154	Serine/threonine-protein kinase fused (EC 2.7.11.1)	
 P23654	fly	FBgn0004108	Nrt	P23654	143	2397	Neurotactin	
 P23677	human	P23677	ITPKA	P23677	6	38	Inositol-trisphosphate 3-kinase A (EC 2.7.1.127) (Inositol 1	
 P23679	salmonella-typhimurium	P23679	glnD	P23679	0	3	Bifunctional uridylyltransferase/uridylyl-removing enzyme	
 P23680	rattus-norvegicus	P23680	Apcs	P23680	0	13	Serum amyloid P-component	
 P23686	arabidopsis-thaliana	P23686	SAM1	P23686	1	65	S-adenosylmethionine synthase 1	
 P23693	rattus-norvegicus	P23693	Tnni3	P23693	17	62	Troponin I, cardiac muscle	
-P23696	fly	FBgn0004177	mts	P23696	235	1200	Serine/threonine-protein phosphatase PP2A (EC 3.1.3.16) (Pro	
+P23696	fly	FBgn0004177	mts	P23696	243	1204	Serine/threonine-protein phosphatase PP2A (EC 3.1.3.16) (Pro	
 P23708	mus-musculus	P23708	Nfya	P23708	5	25	Nuclear transcription factor Y subunit alpha	
 P23711	rattus-norvegicus	P23711	Hmox2	P23711	0	9	Heme oxygenase 2	
 P23721	escherichia-coli-83333	P23721	serC	P23721	0	3	Phosphoserine aminotransferase	

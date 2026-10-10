@@ -23,12 +23,12 @@ RHO-1	zebrafish	A0A8M1RQZ2	LOC100330554	A0A8M1RQZ2	12	17	Gamma-aminobutyric acid
 RHO-1	zebrafish	Q5TZ16	gabrr1	Q5TZ16	10	17	Gamma-aminobutyric acid receptor subunit rho-1	w
 RHO-2	human	P28476	GABRR2	P28476	32	60	Gamma-aminobutyric acid receptor subunit rho-2 (GABA(A) rece	w
 RHO-3	human	A8MPY1	GABRR3	A8MPY1	34	45	Gamma-aminobutyric acid receptor subunit rho-3 (GABA(A) rece	w
-RHO-4	fly	FBgn0030318	rho-4	Q9VYW6	0	16	Rhomboid-4 (EC 3.4.21.-) (Rhomboid-4, isoform B) (SD06923p)	
-RHO-4-PB	fly	FBgn0030318	rho-4	Q9VYW6	0	16		
-RHO-4-PB_258_321	fly	FBgn0030318	rho-4	Q9VYW6	0	16		
+RHO-4	fly	FBgn0030318	rho-4	Q9VYW6	0	18	Rhomboid-4 (EC 3.4.21.-) (Rhomboid-4, isoform B) (SD06923p)	
+RHO-4-PB	fly	FBgn0030318	rho-4	Q9VYW6	0	18		
+RHO-4-PB_258_321	fly	FBgn0030318	rho-4	Q9VYW6	0	18		
 RHO-5	fly	FBgn0041723	rho-5	Q76NQ1	4	68	Inactive rhomboid protein 1 (iRhom) (Rhomboid family protein	
-RHO-6	fly	FBgn0032415	rho-6	Q86BL6	0	5	Rhomboid-6, isoform B (EC 3.4.21.-)	
-RHO-7	fly	FBgn0033672	rho-7	A1Z8R8	2	15	Presenilins-associated rhomboid-like protein, mitochondrial 	
+RHO-6	fly	FBgn0032415	rho-6	Q86BL6	1	6	Rhomboid-6, isoform B (EC 3.4.21.-)	
+RHO-7	fly	FBgn0033672	rho-7	A1Z8R8	3	22	Presenilins-associated rhomboid-like protein, mitochondrial 	
 RHO-ACTIVATING	human	Q8N0Z2	ABRA	Q8N0Z2	9	58	Actin-binding Rho-activating protein (Striated muscle activa	w
 RHO-ACTIVATING	worm	O62234	CELE_F36F2.1	O62234	0	5	Actin-binding Rho-activating protein	w
 RHO-ACTIVATING	zebrafish	A0A8N7UW36	abraa	A0A8N7UW36	0	2	Actin-binding Rho-activating protein	w
@@ -71,7 +71,7 @@ RHO-PA	fly	FBgn0004635	rho	P20350	7	64
 RHO-PA_195_326	fly	FBgn0004635	rho	P20350	7	64		
 RHO-PA_94_331	fly	FBgn0004635	rho	P20350	7	64		
 RHO-PA_99_316	fly	FBgn0004635	rho	P20350	7	64		
-RHO-RELATED	fly	FBgn0036980	RhoBTB	M9PG08	4	17	Rho-related BTB domain containing, isoform B	w
+RHO-RELATED	fly	FBgn0036980	RhoBTB	M9PG08	4	20	Rho-related BTB domain containing, isoform B	w
 RHO-RELATED	human	O00212	RHOD	O00212	122	779	Rho-related GTP-binding protein RhoD (EC 3.6.5.2) (Rho-relat	w
 RHO-RELATED	human	O94844	RHOBTB1	O94844	32	376	Rho-related BTB domain-containing protein 1 (EC 3.6.5.2)	w
 RHO-RELATED	human	O94955	RHOBTB3	O94955	25	303	Rho-related BTB domain-containing protein 3 (EC 3.6.1.-)	w
@@ -204,7 +204,7 @@ RHOB	human	P62745	RHOB	P62745	219	1308	Rho-related GTP-binding protein RhoB (EC 
 RHOB	human	Q8IUC4	RHPN2	Q8IUC4	11	84	Rhophilin-2 (76 kDa RhoB effector protein) (GTP-Rho-binding 	w
 RHOB	mus-musculus	P62746	Rhob	P62746	25	78	Rho-related GTP-binding protein RhoB	
 RHOB	rattus-norvegicus	P62747	Rhob	P62747	32	91	Rho-related GTP-binding protein RhoB	
-RHOBTB	fly	FBgn0036980	RhoBTB	M9PG08	4	17	Rho-related BTB domain containing, isoform B	
+RHOBTB	fly	FBgn0036980	RhoBTB	M9PG08	4	20	Rho-related BTB domain containing, isoform B	
 RHOBTB1	human	O94844	RHOBTB1	O94844	32	376	Rho-related BTB domain-containing protein 1 (EC 3.6.5.2)	
 RHOBTB1	mus-musculus	Q9DAK3	Rhobtb1	Q9DAK3	2	40	Rho-related BTB domain-containing protein 1	
 RHOBTB1	rattus-norvegicus	A0A0G2JWZ1	Rhobtb1	A0A0G2JWZ1	3	50	Rho-related BTB domain containing 1	
@@ -239,8 +239,8 @@ RHODANESE-LIKE	human	H0UI37	TSTD3	H0UI37	7	117	Thiosulfate sulfurtransferase/rho
 RHODANESE-LIKE	human	Q5T7W7	TSTD2	Q5T7W7	4	63	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
 RHODANESE-LIKE	zebrafish	A0A0G2KNS1	LOC561325	A0A0G2KNS1	4	67	Thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
 RHODANESE-LIKE	zebrafish	A0A8M9Q576	si:dkey-34l15.1	A0A8M9Q576	5	5	thiosulfate sulfurtransferase/rhodanese-like domain-containi	w
-RHODOPSIN	fly	FBgn0019940	Rh6	O01668	4	14	Rhodopsin 6	w
-RHODOPSIN	fly	FBgn0025697	santa-maria	Q9VM10	2	95	Scavenger receptor acting in neural tissue and majority of r	w
+RHODOPSIN	fly	FBgn0019940	Rh6	O01668	5	15	Rhodopsin 6	w
+RHODOPSIN	fly	FBgn0025697	santa-maria	Q9VM10	2	96	Scavenger receptor acting in neural tissue and majority of r	w
 RHODOPSIN	fly	FBgn0038749	Xport-A	Q9VDS3	0	28	Exit protein of rhodopsin and TRP A (GEO04066p1) (GH04205p)	w
 RHODOPSIN	fly	FBgn0260234	Xport-B	E1JIQ5	1	12	Exit protein of rhodopsin and TRP B, isoform A (Exit protein	w
 RHODOPSIN	human	P08100	RHO	P08100	43	320	Rhodopsin (Opsin-2)	w
@@ -293,13 +293,13 @@ RHOGAP4	human	P98171	ARHGAP4	P98171	29	198
 RHOGAP5	human	Q13017	ARHGAP5	Q13017	26	93		
 RHOGAP54D	fly	FBgn0034249	RhoGAP54D	A1ZAW3	1	13	FI17823p1 (Rho GTPase activating protein at 54D, isoform A) 	
 RHOGAP54D_769	fly	FBgn0034249	RhoGAP54D	A1ZAW3	1	13		
-RHOGAP5A	fly	FBgn0029778	RhoGAP5A	Q9W4A9	1	33	Rho GTPase activating protein at 5A, isoform A	
+RHOGAP5A	fly	FBgn0029778	RhoGAP5A	Q9W4A9	3	36	Rho GTPase activating protein at 5A, isoform A	
 RHOGAP6	human	O43182	ARHGAP6	O43182	17	112		
-RHOGAP68F	fly	FBgn0036257	RhoGAP68F	Q9VTU3	14	77	Rho GTPase-activating protein 68F	
-RHOGAP71E	fly	FBgn0036518	RhoGAP71E	B7Z058	0	1	Rho GTPase activating protein at 71E, isoform D	
-RHOGAP92B	fly	FBgn0038747	RhoGAP92B	Q9VDS5	4	45	Rho GTPase-activating protein 92B	
-RHOGAP92B_601	fly	FBgn0038747	RhoGAP92B	Q9VDS5	4	45		
-RHOGAP92B_603	fly	FBgn0038747	RhoGAP92B	Q9VDS5	4	45		
+RHOGAP68F	fly	FBgn0036257	RhoGAP68F	Q9VTU3	14	79	Rho GTPase-activating protein 68F	
+RHOGAP71E	fly	FBgn0036518	RhoGAP71E	B7Z058	1	2	Rho GTPase activating protein at 71E, isoform D	
+RHOGAP92B	fly	FBgn0038747	RhoGAP92B	Q9VDS5	5	47	Rho GTPase-activating protein 92B	
+RHOGAP92B_601	fly	FBgn0038747	RhoGAP92B	Q9VDS5	5	47		
+RHOGAP92B_603	fly	FBgn0038747	RhoGAP92B	Q9VDS5	5	47		
 RHOGAP93B	fly	FBgn0038853	RhoGAP93B	Q9VDE9	10	28	FI04035p (Rho GTPase activating protein at 93B)	
 RHOGAP93B_238	fly	FBgn0038853	RhoGAP93B	Q9VDE9	10	28		
 RHOGAP93B_348	fly	FBgn0038853	RhoGAP93B	Q9VDE9	10	28		
@@ -310,8 +310,8 @@ RHOGAPX-1	human	O43182	ARHGAP6	O43182	17	112	Rho GTPase-activating protein 6 (Rh
 RHOGB	zebrafish	Q803F2	rhogb	Q803F2	19	86	Rho-related GTP-binding protein RhoG	
 RHOGC	zebrafish	Q803L7	rhogc	Q803L7	17	49	Rho-related GTP-binding protein RhoG	
 RHOGD	zebrafish	Q6PE28	rhogd	Q6PE28	18	49	Rho-related GTP-binding protein RhoG	
-RHOGDI	fly	FBgn0036921	RhoGDI	Q9VW59	24	274	LD16419p (RhoGDI, isoform A) (RhoGDI, isoform B)	w
-RHOGDI	fly	FBgn0036921	RhoGDI	Q9VW59	24	274	LD16419p (RhoGDI, isoform A) (RhoGDI, isoform B)	w
+RHOGDI	fly	FBgn0036921	RhoGDI	Q9VW59	25	275	LD16419p (RhoGDI, isoform A) (RhoGDI, isoform B)	w
+RHOGDI	fly	FBgn0036921	RhoGDI	Q9VW59	25	275	LD16419p (RhoGDI, isoform A) (RhoGDI, isoform B)	w
 RHOGEF	human	O94887	FARP2	O94887	18	259	FERM, ARHGEF and pleckstrin domain-containing protein 2 (FER	w
 RHOGEF	human	P98174	FGD1	P98174	18	113	FYVE, RhoGEF and PH domain-containing protein 1 (Faciogenita	w
 RHOGEF	human	Q5JSP0	FGD3	Q5JSP0	15	129	FYVE, RhoGEF and PH domain-containing protein 3 (Zinc finger	w
@@ -378,11 +378,11 @@ RHOMBOID	zebrafish	A5PMS4	rhbdd3	A5PMS4	0	18	Rhomboid domain-containing 3	w
 RHOMBOID	zebrafish	E7F9C6	rhbdf1b	E7F9C6	2	12	Inactive rhomboid protein	w
 RHOMBOID	zebrafish	E9QI41	rhbdd2	E9QI41	0	19	Rhomboid domain-containing 2	w
 RHOMBOID	zebrafish	Q6GMF8	rhbdf1	Q6GMF8	2	12	Inactive rhomboid protein 1	w
-RHOMBOID-4	fly	FBgn0030318	rho-4	Q9VYW6	0	16	Rhomboid-4 (EC 3.4.21.-) (Rhomboid-4, isoform B) (SD06923p)	w
+RHOMBOID-4	fly	FBgn0030318	rho-4	Q9VYW6	0	18	Rhomboid-4 (EC 3.4.21.-) (Rhomboid-4, isoform B) (SD06923p)	w
 RHOMBOID-5	fly	FBgn0041723	rho-5	Q76NQ1	4	68	Inactive rhomboid protein 1 (iRhom) (Rhomboid family protein	w
-RHOMBOID-6	fly	FBgn0032415	rho-6	Q86BL6	0	5	Rhomboid-6, isoform B (EC 3.4.21.-)	w
-RHOMBOID-7	fly	FBgn0033672	rho-7	A1Z8R8	2	15	Presenilins-associated rhomboid-like protein, mitochondrial 	w
-RHOMBOID-LIKE	fly	FBgn0033672	rho-7	A1Z8R8	2	15	Presenilins-associated rhomboid-like protein, mitochondrial 	w
+RHOMBOID-6	fly	FBgn0032415	rho-6	Q86BL6	1	6	Rhomboid-6, isoform B (EC 3.4.21.-)	w
+RHOMBOID-7	fly	FBgn0033672	rho-7	A1Z8R8	3	22	Presenilins-associated rhomboid-like protein, mitochondrial 	w
+RHOMBOID-LIKE	fly	FBgn0033672	rho-7	A1Z8R8	3	22	Presenilins-associated rhomboid-like protein, mitochondrial 	w
 RHOMBOID-LIKE	human	A0A1W2PP11	?	A0A1W2PP11	0	4	Presenilin-associated rhomboid-like protein, mitochondrial	w
 RHOMBOID-LIKE	human	O75783	RHBDL1	O75783	7	57	Rhomboid-related protein 1 (RRP) (EC 3.4.21.105) (Rhomboid-l	w
 RHOMBOID-LIKE	human	Q8TEB9	RHBDD1	Q8TEB9	83	363	Rhomboid-related protein 4 (RRP4) (EC 3.4.21.105) (Rhomboid 	w
@@ -441,8 +441,8 @@ RHOTEKIN	zebrafish	A2BI20	rtkna	A2BI20	3	13	Rhotekin	w
 RHOTEKIN	zebrafish	E7F528	rtknb	E7F528	0	9	Rhotekin 2b	w
 RHOTEKIN-2	human	Q8IZC4	RTKN2	Q8IZC4	13	64	Rhotekin-2 (Pleckstrin homology domain-containing family K m	w
 RHOTEKIN-2	zebrafish	Q5XIZ9	rtkn2	Q5XIZ9	1	9	Rhotekin-2	w
-RHOU	fly	FBgn0083940	RhoU	Q0KHU4	7	45	RhoU, isoform B (RhoU, isoform C)	w
-RHOU	fly	FBgn0083940	RhoU	Q0KHU4	7	45	RhoU, isoform B (RhoU, isoform C)	w
+RHOU	fly	FBgn0083940	RhoU	Q0KHU4	15	57	RhoU, isoform B (RhoU, isoform C)	w
+RHOU	fly	FBgn0083940	RhoU	Q0KHU4	15	57	RhoU, isoform B (RhoU, isoform C)	w
 RHOU	human	Q7L0Q8	RHOU	Q7L0Q8	98	610	Rho-related GTP-binding protein RhoU (EC 3.6.5.2) (CDC42-lik	
 RHOU	mus-musculus	Q9EQT3	Rhou	Q9EQT3	23	50	Rho-related GTP-binding protein RhoU	
 RHOU	zebrafish	E7F7Z2	si:ch211-133l11.10	E7F7Z2	7	22	Rho-related GTP-binding protein RhoU isoform X3	w

@@ -16,14 +16,14 @@ TBC-8	worm	I2HAA0	tbc-8	I2HAA0	2	4	Rab GTPase-activating protein tbc-8	w
 TBC-8	worm	I2HAA0	tbc-8	I2HAA0	2	4	Rab GTPase-activating protein tbc-8	w
 TBC-9	worm	G5EBE2	tbc-9	G5EBE2	8	32	Rab-GAP TBC domain-containing protein	
 TBC-CONTAINING	human	O95759	TBC1D8	O95759	12	95	TBC1 domain family member 8 (AD 3) (Vascular Rab-GAP/TBC-con	w
-TBC1	fly	FBgn0031233	Tbc1d15-17	Q9VPL5	13	28	LD27216p (TBC1 domain family member 15/17, isoform A) (TBC1 	w
+TBC1	fly	FBgn0031233	Tbc1d15-17	Q9VPL5	15	29	LD27216p (TBC1 domain family member 15/17, isoform A) (TBC1 	w
 TBC1	fly	FBgn0031304	TBC1D23	Q9VPW9	2	11	TBC1 domain family member 23	w
 TBC1	fly	FBgn0032249	TBC1D16	Q9VKV6	3	3	FI04439p (TBC1 domain family member 16)	w
 TBC1	fly	FBgn0037074	Tbc1d8-9	Q9VP46	5	38	GH16847p (TBC1 domain family member 8/9, isoform A)	w
 TBC1	fly	FBgn0037917	wkd	Q9VGL8	3	9	TBC1 domain family member whacked	w
 TBC1	fly	FBgn0038129	TBC1D5	Q9VFX6	7	23	GH10459p (TBC1 domain family member 5)	w
 TBC1	fly	FBgn0038304	CG12241	Q9VFB6	0	3	RUN and TBC1 domain-containing protein 3	w
-TBC1	fly	FBgn0039158	TBC1d7	Q9VCC4	1	12	TBC1 domain family member 7	w
+TBC1	fly	FBgn0039158	TBC1d7	Q9VCC4	1	13	TBC1 domain family member 7	w
 TBC1	human	A0A087WT91	TBC1D3F	A0A087WT91	0	4	TBC1 domain family member 3F	w
 TBC1	human	A0A087WVF3	TBC1D3D	A0A087WVF3	0	11	TBC1 domain family member 3D	w
 TBC1	human	A0A087WXS9	TBC1D3I	A0A087WXS9	1	12	TBC1 domain family member 3I	w
@@ -128,7 +128,7 @@ TBC1D15	human	Q8TC07	TBC1D15	Q8TC07	29	207	TBC1 domain family member 15 (GTPase-
 TBC1D15	mus-musculus	Q9CXF4	Tbc1d15	Q9CXF4	5	20	TBC1 domain family member 15	
 TBC1D15	rattus-norvegicus	F7EZ89	Tbc1d15	F7EZ89	6	19	TBC1 domain family member 15	
 TBC1D15	zebrafish	A0A8M1NT23	tbc1d15	A0A8M1NT23	2	5	TBC1 domain family member 15	
-TBC1D15-17	fly	FBgn0031233	Tbc1d15-17	Q9VPL5	13	28	LD27216p (TBC1 domain family member 15/17, isoform A) (TBC1 	
+TBC1D15-17	fly	FBgn0031233	Tbc1d15-17	Q9VPL5	15	29	LD27216p (TBC1 domain family member 15/17, isoform A) (TBC1 	
 TBC1D16	fly	FBgn0032249	TBC1D16	Q9VKV6	3	3	FI04439p (TBC1 domain family member 16)	
 TBC1D16	human	Q8TBP0	TBC1D16	Q8TBP0	11	78	TBC1 domain family member 16	
 TBC1D17	human	Q9HA65	TBC1D17	Q9HA65	24	112	TBC1 domain family member 17	
@@ -215,7 +215,7 @@ TBC1D5	zebrafish	F1QXM3	tbc1d5	F1QXM3	20	29	TBC1 domain family member 5
 TBC1D5A	dictyostelium-discoideum	Q54VM3	tbc1d5A	Q54VM3	1	3	TBC1 domain family member 5 homolog A	
 TBC1D5B	dictyostelium-discoideum	Q54TA5	tbc1d5B	Q54TA5	1	3	TBC1 domain family member 5 homolog B	
 TBC1D6	human	Q5TC63	GRTP1	Q5TC63	17	126		
-TBC1D7	fly	FBgn0039158	TBC1d7	Q9VCC4	1	12	TBC1 domain family member 7	
+TBC1D7	fly	FBgn0039158	TBC1d7	Q9VCC4	1	13	TBC1 domain family member 7	
 TBC1D7	human	Q9P0N9	TBC1D7	Q9P0N9	14	142	TBC1 domain family member 7 (Cell migration-inducing protein	
 TBC1D7	mus-musculus	Q9D0K0	Tbc1d7	Q9D0K0	1	12	TBC1 domain family member 7	
 TBC1D7	rattus-norvegicus	D4AAY4	Tbc1d7	D4AAY4	0	14	TBC1 domain family member 7	
@@ -262,23 +262,23 @@ TBC7	human	Q9P0N9	TBC1D7	Q9P0N9	14	142
 TBC8B_HUMAN	human	Q0IIM8	TBC1D8B	Q0IIM8	7	76		
 TBC9B_HUMAN	human	Q66K14	TBC1D9B	Q66K14	9	134		
 TBCA	dictyostelium-discoideum	Q75JC8	tbca	Q75JC8	1	3	Tubulin-specific chaperone A	
-TBCA	fly	FBgn0039869	Tbca	Q9V9U7	7	17	Tubulin-specific chaperone A	
+TBCA	fly	FBgn0039869	Tbca	Q9V9U7	8	19	Tubulin-specific chaperone A	
 TBCA	human	O75347	TBCA	O75347	20	167	Tubulin-specific chaperone A (TCP1-chaperonin cofactor A) (T	
 TBCA	mus-musculus	P48428	Tbca	P48428	9	11	Tubulin-specific chaperone A	
 TBCA	zebrafish	Q7ZV25	tbca	Q7ZV25	7	16	Tubulin-specific chaperone A	
 TBCA-1	worm	Q95XR1	tbca-1	Q95XR1	10	14	Tubulin-specific chaperone A	
 TBCA_HUMAN	human	O75347	TBCA	O75347	20	167		
 TBCB	dictyostelium-discoideum	Q54Z01	tbcb	Q54Z01	2	5	Tubulin-specific chaperone B	
-TBCB	fly	FBgn0034451	Tbcb	A1ZBM2	6	10	Tubulin-binding cofactor B	
-TBCB	fly	FBgn0034451	Tbcb	A1ZBM2	6	10	Tubulin-binding cofactor B	
+TBCB	fly	FBgn0034451	Tbcb	A1ZBM2	7	13	Tubulin-binding cofactor B	
+TBCB	fly	FBgn0034451	Tbcb	A1ZBM2	7	13	Tubulin-binding cofactor B	
 TBCB	human	Q99426	TBCB	Q99426	18	122	Tubulin-folding cofactor B (Cytoskeleton-associated protein 	
 TBCB	mus-musculus	Q9D1E6	Tbcb	Q9D1E6	5	20	Tubulin-folding cofactor B	
 TBCB	rattus-norvegicus	Q1RP74	Tbcb	Q1RP74	0	3	Tubulin-folding cofactor B	
 TBCB-1	worm	Q20728	tbcb-1	Q20728	2	19	Tubulin-specific chaperone B	
 TBCB_HUMAN	human	Q99426	TBCB	Q99426	18	122		
 TBCC	dictyostelium-discoideum	Q54PY1	tbcc	Q54PY1	0	4	Tubulin-specific chaperone C	
-TBCC	fly	FBgn0051961	Tbcc	Q95TP0	3	14	LD34582p (Tubulin-binding cofactor C, isoform A) (Tubulin-bi	
-TBCC	fly	FBgn0051961	Tbcc	Q95TP0	3	14	LD34582p (Tubulin-binding cofactor C, isoform A) (Tubulin-bi	
+TBCC	fly	FBgn0051961	Tbcc	Q95TP0	4	14	LD34582p (Tubulin-binding cofactor C, isoform A) (Tubulin-bi	
+TBCC	fly	FBgn0051961	Tbcc	Q95TP0	4	14	LD34582p (Tubulin-binding cofactor C, isoform A) (Tubulin-bi	
 TBCC	human	Q15814	TBCC	Q15814	17	69	Tubulin-specific chaperone C (Tubulin-folding cofactor C) (C	
 TBCC	human	Q9NVR7	TBCCD1	Q9NVR7	7	70	TBCC domain-containing protein 1	w
 TBCC	mus-musculus	Q8VCN9	Tbcc	Q8VCN9	2	8	Tubulin-specific chaperone C	
@@ -293,8 +293,8 @@ TBCCD1	rattus-norvegicus	Q5FVR8	Tbccd1	Q5FVR8	0	3	TBCC domain-containing protein
 TBCCD1	zebrafish	A4QP31	tbccd1	A4QP31	1	6	TBCC domain-containing protein 1	
 TBCC_HUMAN	human	Q15814	TBCC	Q15814	17	69		
 TBCD	dictyostelium-discoideum	Q55G93	tbcd	Q55G93	1	1	Tubulin-specific chaperone D	
-TBCD	fly	FBgn0027509	Tbcd	Q9VQ78	2	15	Tubulin-specific chaperone D	
-TBCD	fly	FBgn0027509	Tbcd	Q9VQ78	2	15	Tubulin-specific chaperone D	
+TBCD	fly	FBgn0027509	Tbcd	Q9VQ78	3	15	Tubulin-specific chaperone D	
+TBCD	fly	FBgn0027509	Tbcd	Q9VQ78	3	15	Tubulin-specific chaperone D	
 TBCD	human	Q9BTW9	TBCD	Q9BTW9	13	252	Tubulin-specific chaperone D (Beta-tubulin cofactor D) (tfcD	
 TBCD	mus-musculus	Q8BYA0	Tbcd	Q8BYA0	3	19	Tubulin-specific chaperone D	
 TBCD	rattus-norvegicus	F1M1D5	Tbcd	F1M1D5	1	3	Tubulin-specific chaperone D	
@@ -307,7 +307,7 @@ TBCD7_HUMAN	human	Q9P0N9	TBC1D7	Q9P0N9	14	142
 TBCD8_HUMAN	human	O95759	TBC1D8	O95759	12	95		
 TBCD9_HUMAN	human	Q6ZT07	TBC1D9	Q6ZT07	12	94		
 TBCD_HUMAN	human	Q9BTW9	TBCD	Q9BTW9	13	252		
-TBCE	fly	FBgn0033055	Tbce	A1Z6J5	2	11	Tubulin-specific chaperone E (Tubulin-folding cofactor E)	
+TBCE	fly	FBgn0033055	Tbce	A1Z6J5	2	13	Tubulin-specific chaperone E (Tubulin-folding cofactor E)	
 TBCE	human	A0A2R8Y809	TBCE	A0A2R8Y809	1	5	Tubulin-specific chaperone E	
 TBCE	human	Q15813	TBCE	Q15813	13	138	Tubulin-specific chaperone E (Tubulin-folding cofactor E)	
 TBCE	mus-musculus	Q8CIV8	Tbce	Q8CIV8	0	7	Tubulin-specific chaperone E	

@@ -78,10 +78,10 @@ PROCESSED	human	Q9H6D3	XKR8	Q9H6D3	2	48	XK-related protein 8 (hXkr8) [Cleaved in
 PROCESSED	human	Q9NZV1	CRIM1	Q9NZV1	6	108	Cysteine-rich motor neuron 1 protein (CRIM-1) (Cysteine-rich	w
 PROCESSED	human	Q9UBE0	SAE1	Q9UBE0	21	195	SUMO-activating enzyme subunit 1 (Ubiquitin-like 1-activatin	w
 PROCESSED	human	Q9UNH7	SNX6	Q9UNH7	29	285	Sorting nexin-6 (TRAF4-associated factor 2) [Cleaved into: S	w
-PROCESSING	fly	FBgn0022069	Nnp-1	Q9VJZ7	16	128	Ribosomal RNA processing protein 1 homolog (NNP-1 homolog) (	w
-PROCESSING	fly	FBgn0031492	Prp40	Q9VQK5	9	89	LD24714p (Pre-mRNA processing factor 40)	w
+PROCESSING	fly	FBgn0022069	Nnp-1	Q9VJZ7	27	139	Ribosomal RNA processing protein 1 homolog (NNP-1 homolog) (	w
+PROCESSING	fly	FBgn0031492	Prp40	Q9VQK5	11	89	LD24714p (Pre-mRNA processing factor 40)	w
 PROCESSING	fly	FBgn0033688	Prp8	A1Z8U0	10	26	Pre-mRNA processing factor 8	w
-PROCESSING	fly	FBgn0036915	Prp3	Q9VW52	23	135	Precursor RNA processing 3, isoform A	w
+PROCESSING	fly	FBgn0036915	Prp3	Q9VW52	37	138	Precursor RNA processing 3, isoform A	w
 PROCESSING	fly	FBgn0037656	CG11986	Q9VHI3	0	2	Abasic site processing protein HMCES (Embryonic stem cell-sp	w
 PROCESSING	human	O60476	MAN1A2	O60476	8	111	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IB (EC 3.2.1.	w
 PROCESSING	human	P33908	MAN1A1	P33908	14	149	Mannosyl-oligosaccharide 1,2-alpha-mannosidase IA (EC 3.2.1.	w
@@ -109,7 +109,7 @@ PROCESSING	zebrafish	Q5EB15	zgc:110738	Q5EB15	5	5	Peptidase (Mitochondrial proce
 PROCESSING	zebrafish	Q5U3T6	wu:fj83d11	Q5U3T6	4	4	Peptidase (Mitochondrial processing) alpha	w
 PROCESSING	zebrafish	U3JAJ0	wdr33	U3JAJ0	14	102	Pre-mRNA 3' end processing protein WDR33 isoform 2	w
 PROCESSING-ASSOCIATED	yeast	Q03002	FRK1	Q03002	1	29	Fatty acyl-CoA synthetase and RNA processing-associated kina	w
-PROCESSIVITY	fly	FBgn0037345	PolZ2	Q9VNE1	51	142	DNA polymerase zeta subunit 2 (DNA polymerase zeta Rev7 subu	w
+PROCESSIVITY	fly	FBgn0037345	PolZ2	Q9VNE1	52	142	DNA polymerase zeta subunit 2 (DNA polymerase zeta Rev7 subu	w
 PROCESSIVITY	virus	A0A060Q5A2	UL42	A0A060Q5A2	4	68	DNA polymerase processivity factor	w
 PROCESSIVITY	virus	A0A068CE86	UL42	A0A068CE86	2	66	DNA polymerase processivity factor	w
 PROCESSIVITY	virus	A0A077B5X2	ORF18	A0A077B5X2	4	76	DNA polymerase processivity factor	w
@@ -182,7 +182,7 @@ PROCESSIVITY	virus	Q9E1Z9		Q9E1Z9	3	68	DNA polymerase processivity factor	w
 PROCESSIVITY	virus	Q9QJ40	U27	Q9QJ40	2	95	DNA polymerase processivity factor	w
 PROCESSIVITY	virus	U3GPJ6	U27	U3GPJ6	3	79	DNA polymerase processivity factor	w
 PROCESSIVITY	yeast	P38927	REV7	P38927	4	27	DNA polymerase zeta processivity subunit	w
-PROCESSOME	fly	FBgn0020305	dbe	Q9VPU8	23	161	KRR1 small subunit processome component homolog (KRR-R motif	w
+PROCESSOME	fly	FBgn0020305	dbe	Q9VPU8	46	176	KRR1 small subunit processome component homolog (KRR-R motif	w
 PROCESSOME	human	O75691	UTP20	O75691	10	827	Small subunit processome component 20 homolog (Down-regulate	w
 PROCESSOME	human	Q13601	KRR1	Q13601	62	455	KRR1 small subunit processome component homolog (HIV-1 Rev-b	w
 PROCESSOME	human	Q8NDD1	FSAF1	Q8NDD1	43	360	40S small subunit processome assembly factor 1	w
@@ -198,7 +198,7 @@ PROCI	human	P05154	SERPINA5	P05154	33	293
 PROCO	human	O15072	ADAMTS3	O15072	6	98	A disintegrin and metalloproteinase with thrombospondin moti	w
 PROCOAGULANT	human	P00451	F8	P00451	1	17	Coagulation factor VIII (Antihemophilic factor) (AHF) (Proco	w
 PROCOL	human	O95450	ADAMTS2	O95450	15	107	A disintegrin and metalloproteinase with thrombospondin moti	w
-PROCOLLAGEN	fly	FBgn0036147	Plod	Q9VTH0	21	278	Procollagen-lysine,2-oxoglutarate 5-dioxygenase (Procollagen	w
+PROCOLLAGEN	fly	FBgn0036147	Plod	Q9VTH0	21	279	Procollagen-lysine,2-oxoglutarate 5-dioxygenase (Procollagen	w
 PROCOLLAGEN	human	O15072	ADAMTS3	O15072	6	98	A disintegrin and metalloproteinase with thrombospondin moti	w
 PROCOLLAGEN	human	O60568	PLOD3	O60568	14	213	Multifunctional procollagen lysine hydroxylase and glycosylt	w
 PROCOLLAGEN	human	O95450	ADAMTS2	O95450	15	107	A disintegrin and metalloproteinase with thrombospondin moti	w
@@ -211,7 +211,7 @@ PROCOLLAGEN	worm	Q20679	let-268	Q20679	0	1	Multifunctional procollagen lysine hy
 PROCOLLAGEN	zebrafish	B3DJG2	pcolceb	B3DJG2	0	5	Procollagen C-endopeptidase enhancer b	w
 PROCOLLAGEN	zebrafish	Q1ECX8	pcolcea	Q1ECX8	1	10	Procollagen C-endopeptidase enhancer a	w
 PROCOLLAGEN	zebrafish	X1WCE6	colgalt1a	X1WCE6	1	11	procollagen galactosyltransferase	w
-PROCOLLAGEN-LYSINE	fly	FBgn0036147	Plod	Q9VTH0	21	278	Procollagen-lysine,2-oxoglutarate 5-dioxygenase (Procollagen	w
+PROCOLLAGEN-LYSINE	fly	FBgn0036147	Plod	Q9VTH0	21	279	Procollagen-lysine,2-oxoglutarate 5-dioxygenase (Procollagen	w
 PROCOLLAGEN-LYSINE	human	O00469	PLOD2	O00469	10	209	Procollagen-lysine,2-oxoglutarate 5-dioxygenase 2 (EC 1.14.1	w
 PROCOLLAGEN-LYSINE	human	O60568	PLOD3	O60568	14	213	Multifunctional procollagen lysine hydroxylase and glycosylt	w
 PROCOLLAGEN-LYSINE	human	Q02809	PLOD1	Q02809	22	275	Procollagen-lysine,2-oxoglutarate 5-dioxygenase 1 (EC 1.14.1	w

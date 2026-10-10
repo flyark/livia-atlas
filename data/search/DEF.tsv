@@ -1,6 +1,6 @@
 DEF	campylobacter-jejuni-subsp-jejuni-serotype-o-2	Q9PIT8	def	Q9PIT8	5	55	Peptide deformylase	
 DEF	escherichia-coli-83333	P0A6K3	def	P0A6K3	11	55	Peptide deformylase	
-DEF	fly	FBgn0010385	Def	P36192	21	264	Defensin	
+DEF	fly	FBgn0010385	Def	P36192	21	266	Defensin	
 DEF	haemophilus-influenzae	P44786	def	P44786	10	52	Peptide deformylase	
 DEF	helicobacter-pylori	P56419	def	P56419	10	57	Peptide deformylase	
 DEF	human	Q68CQ4	UTP25	Q68CQ4	28	319		
@@ -21,7 +21,7 @@ DEF	streptococcus-pneumoniae	Q8DP79	def	Q8DP79	7	53	Peptide deformylase
 DEF-3	human	P78332	RBM6	P78332	35	219	RNA-binding protein 6 (Lung cancer antigen NY-LU-12) (Protei	w
 DEF-6	human	Q9H4E7	DEF6	Q9H4E7	27	117	Differentially expressed in FDCP 6 homolog (DEF-6) (IRF4-bin	w
 DEF-8	human	Q6ZN54	DEF8	Q6ZN54	6	78	Differentially expressed in FDCP 8 homolog (DEF-8)	w
-DEF-G1	fly	FBgn0263133	mEFG1	Q9VM33	5	273	Elongation factor G, mitochondrial (EF-Gmt) (Elongation fact	w
+DEF-G1	fly	FBgn0263133	mEFG1	Q9VM33	11	273	Elongation factor G, mitochondrial (EF-Gmt) (Elongation fact	w
 DEF1	candida-albicans-237561	G1UB67	DEF1	G1UB67	1	30	Transcriptional regulator DEF1	
 DEF1	candida-albicans-237561	Q5AMM4	DEF1	Q5AMM4	0	3	RNA polymerase II degradation factor 1	
 DEF1	cladophialophora-carrionii	A0A1C1C6E2	def1	A0A1C1C6E2	8	68	Peptide deformylase	
@@ -219,7 +219,7 @@ DEFB9	rattus-norvegicus	Q32ZI2	Defb9	Q32ZI2	0	2	Beta-defensin 9
 DEFCAP	human	Q9C000	NLRP1	Q9C000	17	290		
 DEFECATION	worm	P34501	dec-7	P34501	2	18	Defecation cycle abnormal dec-7	w
 DEFECT	fly	FBgn0002873	mud	Q8IR55	1	10	Mushroom body defect, isoform H	w
-DEFECT	fly	FBgn0031662	CG3792	Q9VMW8	0	14	Mannose-P-dolichol utilization defect 1 protein homolog	w
+DEFECT	fly	FBgn0031662	CG3792	Q9VMW8	0	18	Mannose-P-dolichol utilization defect 1 protein homolog	w
 DEFECT	fly	FBgn0037949	prd1	Q9VGI1	3	19	FI23955p1 (Pruning defect 1, isoform A)	w
 DEFECT	fly	FBgn0038478	cal1	Q9VEN2	4	14	Chromosome alignment defect 1	w
 DEFECT	fly	FBgn0087021	Spc25	Q9V3V7	9	20	Kinetochore protein Spc25 (Chromosome alignment defect 2) (M	w
@@ -235,9 +235,9 @@ DEFECT	yeast	Q04216	DLT1	Q04216	1	3	Defect at low temperature protein 1	w
 DEFECT	yeast	Q06132	SGD1	Q06132	4	42	Suppressor of glycerol defect protein 1	w
 DEFECTIVE	fly	FBgn0000427	dec	P18171	0	6	Defective chorion protein, FC177 isoform	w
 DEFECTIVE	fly	FBgn0000808	gd	O62589	34	250	Serine protease gd (EC 3.4.21.-) (Protein gastrulation defec	w
-DEFECTIVE	fly	FBgn0003984	vn	Q94918	59	310	Protein vein (Epidermal growth factor-like protein) (Protein	w
+DEFECTIVE	fly	FBgn0003984	vn	Q94918	60	311	Protein vein (Epidermal growth factor-like protein) (Protein	w
 DEFECTIVE	fly	FBgn0003997	hid	Q24106	16	95	Cell death protein hid (Protein head involution defective) (	w
-DEFECTIVE	fly	FBgn0020307	dve	Q9W268	15	121	Defective proventriculus, isoform A (IP14647p)	w
+DEFECTIVE	fly	FBgn0020307	dve	Q9W268	17	126	Defective proventriculus, isoform A (IP14647p)	w
 DEFECTIVE	fly	FBgn0023090	dtr	Q8INT5	0	10	Dynein axonemal assembly factor 1 homolog (Defective transmi	w
 DEFECTIVE	fly	FBgn0025776	ind	Q7KUL4	89	384	Intermediate neuroblasts defective	w
 DEFECTIVE	fly	FBgn0027500	spd-2	Q9VV79	8	39	BcDNA.LD24702 (Spindle defective 2 (EC 3.6.1.13))	w
@@ -248,8 +248,8 @@ DEFECTIVE	fly	FBgn0033784	SCCRO3	Q8T8S1	10	53	DCN1-like protein 3 (DCNL3) (DCUN1
 DEFECTIVE	fly	FBgn0034286	dpr13	A1ZB15	3	6	Defective proboscis extension response 13, isoform B (IP0431	w
 DEFECTIVE	fly	FBgn0034908	CG5543	Q9W1J3	5	39	Gastrulation defective protein 1 homolog	w
 DEFECTIVE	fly	FBgn0035170	dpr20	Q9W0L9	2	4	Defective proboscis extension response 20 (GH16485p)	w
-DEFECTIVE	fly	FBgn0036510	SCCRO	M9NDR9	16	89	Defective in cullin neddylation protein	w
-DEFECTIVE	fly	FBgn0036967	SCCRO4	Q9VWB1	9	74	DCN1-like protein 4 (DCNL4) (DCUN1 domain-containing protein	w
+DEFECTIVE	fly	FBgn0036510	SCCRO	M9NDR9	22	100	Defective in cullin neddylation protein	w
+DEFECTIVE	fly	FBgn0036967	SCCRO4	Q9VWB1	11	84	DCN1-like protein 4 (DCNL4) (DCUN1 domain-containing protein	w
 DEFECTIVE	fly	FBgn0037295	dpr16	A0A0B4LGN7	4	6	Defective proboscis extension response 16, isoform C	w
 DEFECTIVE	fly	FBgn0037908	dpr5	Q961T8	4	10	Defective proboscis extension response 5, isoform A (GH08163	w
 DEFECTIVE	fly	FBgn0037993	dpr15	Q9VGD0	58	246	Defective proboscis extension response 15, isoform A (Defect	w
@@ -269,7 +269,7 @@ DEFECTIVE	fly	FBgn0053516	dpr3	Q59E13	4	6	Defective proboscis extension response
 DEFECTIVE	fly	FBgn0085414	dpr12	A1Z6H9	2	5	Defective proboscis extension response 12, isoform C (IP1704	w
 DEFECTIVE	fly	FBgn0260995	dpr21	A0A0C4DHN4	2	4	Defective proboscis extension response 21	w
 DEFECTIVE	fly	FBgn0261871	dpr2	Q59DZ4	5	9	Defective proboscis extension response 2, isoform F (Defecti	w
-DEFECTIVE	fly	FBgn0261930	vnd	P22808	121	385	Homeobox protein vnd (Homeobox protein NK-2) (Protein ventra	w
+DEFECTIVE	fly	FBgn0261930	vnd	P22808	122	385	Homeobox protein vnd (Homeobox protein NK-2) (Protein ventra	w
 DEFECTIVE	fly	FBgn0263490	mld	A0A0B4K7S6	1	3	Molting defective, isoform D	w
 DEFECTIVE	human	Q5TIA1	MEI1	Q5TIA1	3	33	Meiosis inhibitor protein 1 (Meiosis defective protein 1)	w
 DEFECTIVE	human	Q5VT97	SYDE2	Q5VT97	26	127	Rho GTPase-activating protein SYDE2 (Synapse defective prote	w
@@ -320,10 +320,10 @@ DEFECTIVE-3	worm	Q21691	nrde-3	Q21691	0	37	Nuclear RNAi defective-3 protein	w
 DEFECTS	fly	FBgn0020278	loco	Q9VCX1	8	17	Regulator of G-protein signaling loco (RGS) (Locomotion defe	w
 DEFECTS	fly	FBgn0038168	omd	Q9VFS6	10	44	Integrator complex subunit 5 (Protein oocyte maintenance def	w
 DEFECTS	human	Q9H790	EXO5	Q9H790	9	40	Exonuclease V (Exo V) (hExo5) (EC 3.1.-.-) (Defects in morph	w
-DEFENDER	fly	FBgn0263852	Dad1	Q9VLM5	6	66	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
+DEFENDER	fly	FBgn0263852	Dad1	Q9VLM5	13	72	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
 DEFENDER	human	P61803	DAD1	P61803	11	118	Dolichyl-diphosphooligosaccharide--protein glycosyltransfera	w
-DEFENSE	fly	FBgn0261534	l(2)34Fc	Q9V3Y3	25	294	Defense protein l(2)34Fc	w
-DEFENSIN	fly	FBgn0010385	Def	P36192	21	264	Defensin	w
+DEFENSE	fly	FBgn0261534	l(2)34Fc	Q9V3Y3	26	295	Defense protein l(2)34Fc	w
+DEFENSIN	fly	FBgn0010385	Def	P36192	21	266	Defensin	w
 DEFENSIN	human	A0A096LNP1	DEFB131B	A0A096LNP1	4	18	Beta-defensin 131B (Defensin, beta 131)	w
 DEFENSIN	human	A8MXU0	DEFB108A	A8MXU0	1	23	Putative beta-defensin 108A (Defensin, beta 108A) (Defensin,	w
 DEFENSIN	human	O15263	DEFB4A	O15263	23	239	Defensin beta 4A (Beta-defensin 2) (BD-2) (hBD-2) (Defensin,	w
@@ -368,7 +368,7 @@ DEFENSIN-6	human	Q01524	DEFA6	Q01524	7	83	Defensin-6 (Defensin, alpha 6)	w
 DEFENSIN-LIKE	human	P81534	DEFB103A	P81534	19	220	Beta-defensin 103 (Beta-defensin 3) (BD-3) (DEFB-3) (HBD3) (	w
 DEFI6_HUMAN	human	Q9H4E7	DEF6	Q9H4E7	27	117		
 DEFI8_HUMAN	human	Q6ZN54	DEF8	Q6ZN54	6	78		
-DEFICIENCY	fly	FBgn0013983	imd	Q7K4Z4	15	125	Protein immune deficiency	w
+DEFICIENCY	fly	FBgn0013983	imd	Q7K4Z4	17	127	Protein immune deficiency	w
 DEFICIENCY	human	Q8NI22	MCFD2	Q8NI22	9	169	Multiple coagulation factor deficiency protein 2 (Neural ste	w
 DEFICIENCY-ASSOCIATED	human	Q8WYA0	IFT81	Q8WYA0	57	334	Intraflagellar transport protein 81 homolog (Carnitine defic	w
 DEFICIENT	fly	FBgn0035976	PGRP-LC	Q9GNK5	601	2820	Peptidoglycan-recognition protein LC (Immune response defici	w
@@ -407,7 +407,7 @@ DEFLATED	fly	FBgn0036038	defl	Q9VT41	11	45	Integrator complex subunit 7 (Protein
 DEFM_HUMAN	human	Q9HBH1	PDF	Q9HBH1	34	211		
 DEFORMED	fly	FBgn0000439	Dfd	P07548	82	414	Homeotic protein deformed	w
 DEFORMED	fly	FBgn0000520	dwg	Q9W4V9	40	398	Deformed wings (LD45751p)	w
-DEFORMED	fly	FBgn0013799	Deaf1	Q24180	92	461	Deformed epidermal autoregulatory factor 1 (Protein DEAF-1)	w
+DEFORMED	fly	FBgn0013799	Deaf1	Q24180	93	462	Deformed epidermal autoregulatory factor 1 (Protein DEAF-1)	w
 DEFORMED	human	O75398	DEAF1	O75398	77	387	Deformed epidermal autoregulatory factor 1 homolog (Nuclear 	w
 DEFORMITY	human	Q68DA7	FMN1	Q68DA7	14	92	Formin-1 (Limb deformity protein homolog)	w
 DEFORMYLASE	fly	FBgn0051278	CG31278	Q9VGY2	29	133	Peptide deformylase (EC 3.5.1.88)	w

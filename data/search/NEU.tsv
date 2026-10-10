@@ -45,7 +45,7 @@ NEUL4_HUMAN	human	Q96JN8	NEURL4	Q96JN8	3	141
 NEUL_HUMAN	human	Q9BYT8	NLN	Q9BYT8	9	84		
 NEUM_HUMAN	human	P17677	GAP43	P17677	9	75		
 NEUN	human	A6NFN3	RBFOX3	A6NFN3	5	69	RNA binding protein fox-1 homolog 3 (Fox-1 homolog C) (Neuro	w
-NEUR	fly	FBgn0002932	neur	P29503	12	26	Protein neuralized	
+NEUR	fly	FBgn0002932	neur	P29503	12	27	Protein neuralized	
 NEUR	human	O14594	NCAN	O14594	18	123		
 NEUR	human	Q92886	NEUROG1	Q92886	120	433	Neurogenin-1 (NGN-1) (Class A basic helix-loop-helix protein	w
 NEUR	worm	A0A2C9C387	CELE_M03F8.6	A0A2C9C387	0	2	Neur_chan_LBD domain-containing protein	w
@@ -69,7 +69,7 @@ NEURABIN-I	human	Q9ULJ8	PPP1R9A	Q9ULJ8	32	171	Neurabin-1 (Neurabin-I) (Neural ti
 NEURABIN-II	human	Q96SB3	PPP1R9B	Q96SB3	55	272	Neurabin-2 (Neurabin-II) (Protein phosphatase 1 regulatory s	w
 NEURAL	fly	FBgn0001257	ImpL2	Q09024	36	297	Neural/ectodermal development factor IMP-L2	w
 NEURAL	fly	FBgn0015550	tap	O16867	78	404	Basic helix-loop-helix neural transcription factor TAP (Prot	w
-NEURAL	fly	FBgn0025697	santa-maria	Q9VM10	2	95	Scavenger receptor acting in neural tissue and majority of r	w
+NEURAL	fly	FBgn0025697	santa-maria	Q9VM10	2	96	Scavenger receptor acting in neural tissue and majority of r	w
 NEURAL	fly	FBgn0033085	CG15908	Q4QPU3	21	246	Synaptic plasticity regulator PANTS (Plasticity-associated n	w
 NEURAL	fly	FBgn0036036	CG14174	Q9VT39	0	0	Nucleolus and neural progenitor protein-like N-terminal doma	w
 NEURAL	fly	FBgn0053126	NLaz	M9PBN2	27	248	Neural lazarillo, isoform B	w
@@ -145,7 +145,7 @@ NEURAL-SPECIFIC	human	Q76B58	BRINP3	Q76B58	24	142	BMP/retinoic acid-inducible ne
 NEURAL-SPECIFIC	human	Q9C0B6	BRINP2	Q9C0B6	16	139	BMP/retinoic acid-inducible neural-specific protein 2 (DBCCR	w
 NEURAL-TUBE	human	Q6NSI3	FAM53A	Q6NSI3	5	23	Protein FAM53A (Dorsal neural-tube nuclear protein)	w
 NEURALIN-1	human	Q9BU40	CHRDL1	Q9BU40	12	72	Chordin-like protein 1 (Neuralin-1) (Neurogenesin-1) (Ventro	w
-NEURALIZED	fly	FBgn0002932	neur	P29503	12	26	Protein neuralized	w
+NEURALIZED	fly	FBgn0002932	neur	P29503	12	27	Protein neuralized	w
 NEURALIZED	fly	FBgn0283503	Neurl4	A0A1L4AAD6	0	5	Neuralized E3 ubiquitin protein ligase 4	w
 NEURALIZED-2	human	A8MQ27	NEURL1B	A8MQ27	3	42	E3 ubiquitin-protein ligase NEURL1B (EC 2.3.2.27) (Neuralize	w
 NEURALIZED-LIKE	fly	FBgn0035059	CG3894	Q9W112	6	56	Neuralized-like protein 2	w
@@ -453,10 +453,10 @@ NEUROMODULIN	human	P17677	GAP43	P17677	9	75	Neuromodulin (Axonal membrane protei
 NEUROMODULIN	zebrafish	A0A8M1P7P8	gap43	A0A8M1P7P8	2	15	Neuromodulin	w
 NEUROMUSCULIN	fly	FBgn0262509	nrm	M9NE05	2	5	Neuromusculin, isoform E	w
 NEURON	fly	FBgn0035815	Snmp2	E1JI63	1	22	Sensory neuron membrane protein 2 (SNMP2Dmel)	w
-NEURON	fly	FBgn0036450	Tdrd3	Q9VUH8	15	84	Survival of motor neuron-related-splicing factor 30 (Surviva	w
-NEURON	fly	FBgn0036641	Smn	Q9VV74	37	229	Survival motor neuron protein	w
-NEURON	fly	FBgn0039977	Spf30	Q95RI7	9	56	Survival of motor neuron-related-splicing factor 30 (Surviva	w
-NEURON	fly	FBgn0260004	Snmp1	Q9VDD3	1	22	Sensory neuron membrane protein 1 (SNMP1Dmel)	w
+NEURON	fly	FBgn0036450	Tdrd3	Q9VUH8	16	84	Survival of motor neuron-related-splicing factor 30 (Surviva	w
+NEURON	fly	FBgn0036641	Smn	Q9VV74	42	229	Survival motor neuron protein	w
+NEURON	fly	FBgn0039977	Spf30	Q95RI7	15	60	Survival of motor neuron-related-splicing factor 30 (Surviva	w
+NEURON	fly	FBgn0260004	Snmp1	Q9VDD3	2	24	Sensory neuron membrane protein 1 (SNMP1Dmel)	w
 NEURON	human	O14893	GEMIN2	O14893	20	244	Gem-associated protein 2 (Gemin-2) (Component of gems 2) (Su	w
 NEURON	human	O75940	SMNDC1	O75940	23	198	Survival of motor neuron-related-splicing factor 30 (30 kDa 	w
 NEURON	human	P09936	UCHL1	P09936	42	443	Ubiquitin carboxyl-terminal hydrolase isozyme L1 (UCH-L1) (E	w
@@ -480,8 +480,8 @@ NEURON-DERIVED	human	Q8TB73	NDNF	Q8TB73	10	92	Protein NDNF (Neuron-derived neuro
 NEURON-DERIVED	human	Q92570	NR4A3	Q92570	4	99	Nuclear receptor subfamily 4 group A member 3 (Mitogen-induc	w
 NEURON-DERIVED	human	Q9UMX5	NENF	Q9UMX5	16	133	Neudesin (Cell immortalization-related protein 2) (Neuron-de	w
 NEURON-ENRICHED	human	P42857	NSG1	P42857	32	154	Neuronal vesicle trafficking-associated protein 1 (Neuron-en	w
-NEURON-RELATED-SPLICING	fly	FBgn0036450	Tdrd3	Q9VUH8	15	84	Survival of motor neuron-related-splicing factor 30 (Surviva	w
-NEURON-RELATED-SPLICING	fly	FBgn0039977	Spf30	Q95RI7	9	56	Survival of motor neuron-related-splicing factor 30 (Surviva	w
+NEURON-RELATED-SPLICING	fly	FBgn0036450	Tdrd3	Q9VUH8	16	84	Survival of motor neuron-related-splicing factor 30 (Surviva	w
+NEURON-RELATED-SPLICING	fly	FBgn0039977	Spf30	Q95RI7	15	60	Survival of motor neuron-related-splicing factor 30 (Surviva	w
 NEURON-RELATED-SPLICING	human	O75940	SMNDC1	O75940	23	198	Survival of motor neuron-related-splicing factor 30 (30 kDa 	w
 NEURON-RELATED-SPLICING	worm	Q965Q9	CELE_Y50D4C.3	Q965Q9	2	18	Survival of motor neuron-related-splicing factor 30	w
 NEURON-RELATED-SPLICING	zebrafish	Q7ZV80	smndc1	Q7ZV80	1	24	Survival of motor neuron-related-splicing factor 30	w
@@ -502,7 +502,7 @@ NEURON-SPECIFIC	human	Q9NYX4	CALY	Q9NYX4	30	112	Neuron-specific vesicular protei
 NEURON-SPECIFIC	human	Q9Y328	NSG2	Q9Y328	15	79	Neuronal vesicle trafficking-associated protein 2 (Neuron-sp	w
 NEURON-SPECIFIC	zebrafish	Q6PC34	hpca	Q6PC34	3	24	Neuron-specific calcium-binding protein hippocalcin	w
 NEURONAL	fly	FBgn0003130	Poxn	P23758	121	429	Paired box pox-neuro protein (Paired box neuronal protein)	w
-NEURONAL	fly	FBgn0013342	nSyb	Q9W0C1	258	2502	neuronal Synaptobrevin	w
+NEURONAL	fly	FBgn0013342	nSyb	Q9W0C1	270	2505	neuronal Synaptobrevin	w
 NEURONAL	fly	FBgn0037937	Fer3	Q9VGJ5	43	378	Protein Fer3 (Basic helix-loop-helix protein N-twist) (Nephe	w
 NEURONAL	human	A6NFN3	RBFOX3	A6NFN3	5	69	RNA binding protein fox-1 homolog 3 (Fox-1 homolog C) (Neuro	w
 NEURONAL	human	O00198	HRK	O00198	15	94	Activator of apoptosis harakiri (BH3-interacting domain-cont	w
@@ -649,13 +649,13 @@ NEURONAL-SPECIFIC	human	P47874	OMP	P47874	1	81	Olfactory marker protein (Olfacto
 NEURONAL-SPECIFIC	human	Q8TAP4	LMO3	Q8TAP4	50	523	LIM domain only protein 3 (LMO-3) (Neuronal-specific transcr	w
 NEURONAL-SPECIFIC	human	Q9UH03	SEPTIN3	Q9UH03	13	90	Neuronal-specific septin-3	w
 NEURONAL-SPECIFIC	zebrafish	A2BGU8	septin3	A2BGU8	11	15	Neuronal-specific septin-3	w
-NEURONALLY	fly	FBgn0265351	Gfr	Q9VHT4	0	4	GDP-fucose transporter 1 (Neuronally altered carbohydrate) (	w
+NEURONALLY	fly	FBgn0265351	Gfr	Q9VHT4	0	7	GDP-fucose transporter 1 (Neuronally altered carbohydrate) (	w
 NEURONALLY-EXPRESSED	human	P54762	EPHB1	P54762	164	1436	Ephrin type-B receptor 1 (EC 2.7.10.1) (ELK) (EPH tyrosine k	w
 NEURONATIN	human	Q16517	NNAT	Q16517	31	272	Neuronatin	w
 NEURONECTIN	human	P24821	TNC	P24821	14	158	Tenascin (TN) (Cytotactin) (GMEM) (GP 150-225) (Glioma-assoc	w
 NEURONOSTATIN	human	P61278	SST	P61278	75	619	Somatostatin (Growth hormone release-inhibiting factor) [Cle	w
 NEURONS	fly	FBgn0003270	amos	Q9Y0A7	65	392	Basic helix-loop-helix transcription factor amos (Absent MD 	w
-NEURONS	fly	FBgn0086675	fne	Q9VYI0	2	19	Found in neurons, isoform A (Found in neurons, isoform B) (F	w
+NEURONS	fly	FBgn0086675	fne	Q9VYI0	2	20	Found in neurons, isoform A (Found in neurons, isoform B) (F	w
 NEURONS	human	I3L273	GFY	I3L273	6	112	Golgi-associated olfactory signaling regulator (Golgi protei	w
 NEURONS	human	Q99578	RIT2	Q99578	38	190	GTP-binding protein Rit2 (EC 3.6.5.2) (Ras-like protein expr	w
 NEURONS	human	Q9BY11	PACSIN1	Q9BY11	33	156	Protein kinase C and casein kinase substrate in neurons prot	w
@@ -669,10 +669,10 @@ NEURONS	zebrafish	Q7ZUY8	pacsin3	Q7ZUY8	2	12	Protein kinase C and casein kinase 
 NEUROPATHY	fly	FBgn0003656	sws	Q9U969	394	2401	Neuropathy target esterase sws (Swiss cheese) (DSWS) (EC 3.1	w
 NEUROPATHY	human	Q8IY17	PNPLA6	Q8IY17	8	134	Patatin-like phospholipase domain-containing protein 6 (EC 3	w
 NEUROPEPTIDE	fly	FBgn0023178	Pdf	O96690	56	268	Protein PDF [Cleaved into: PDF precursor-related peptide (PA	w
-NEUROPEPTIDE	fly	FBgn0027109	NPF	Q9VET0	42	265	Neuropeptide F (NPF) (dNPF)	w
-NEUROPEPTIDE	fly	FBgn0032840	sNPF	Q9VIQ0	43	245	Short neuropeptide F [Cleaved into: sNPF-associated peptide 	w
-NEUROPEPTIDE	fly	FBgn0036934	sNPF-R	Q9VW75	2	31	GH23382p (Neuropeptide F-like receptor) (Short neuropeptide 	w
-NEUROPEPTIDE	fly	FBgn0037408	NPFR	A0A0B4K601	8	35	Neuropeptide F receptor, isoform D	w
+NEUROPEPTIDE	fly	FBgn0027109	NPF	Q9VET0	42	266	Neuropeptide F (NPF) (dNPF)	w
+NEUROPEPTIDE	fly	FBgn0032840	sNPF	Q9VIQ0	45	247	Short neuropeptide F [Cleaved into: sNPF-associated peptide 	w
+NEUROPEPTIDE	fly	FBgn0036934	sNPF-R	Q9VW75	3	31	GH23382p (Neuropeptide F-like receptor) (Short neuropeptide 	w
+NEUROPEPTIDE	fly	FBgn0037408	NPFR	A0A0B4K601	9	35	Neuropeptide F receptor, isoform D	w
 NEUROPEPTIDE	fly	FBgn0038147	CCHa2	Q8SXL2	48	257	Neuropeptide CCHamide-2	w
 NEUROPEPTIDE	fly	FBgn0038199	CCHa1	Q4V4I9	63	244	Neuropeptide CCHamide-1	w
 NEUROPEPTIDE	fly	FBgn0038880	SIFaR	Q8IN35	7	13	Neuropeptide SIFamide receptor	w
@@ -727,7 +727,7 @@ NEUROPEPTIDE-GLYCINE-GLUTAMIC	human	P20382	PMCH	P20382	46	311	Pro-MCH [Cleaved i
 NEUROPEPTIDE-LIKE	fly	FBgn0035092	Nplp1	B7YZQ9	48	249	Neuropeptide-like 1, isoform C	w
 NEUROPEPTIDE-LIKE	fly	FBgn0040717	Nplp4	Q9VQ66	20	258	Neuropeptide-like 4 (YSY peptide)	w
 NEUROPEPTIDE-LIKE	fly	FBgn0040718	CG15353	Q9VQ65	16	246	Neuropeptide-like 4	w
-NEUROPEPTIDE-LIKE	fly	FBgn0042201	Nplp3	Q9VV28	40	254	Neuropeptide-like 3 [Cleaved into: SHA-peptide; VVI-amide pe	w
+NEUROPEPTIDE-LIKE	fly	FBgn0042201	Nplp3	Q9VV28	40	255	Neuropeptide-like 3 [Cleaved into: SHA-peptide; VVI-amide pe	w
 NEUROPEPTIDE-LIKE	fly	FBgn0287423	Nplp2	A0A0S0WH10	17	297	Neuropeptide-like 2, isoform C	w
 NEUROPEPTIDE-LIKE	worm	G3MU46	mihp-1	G3MU46	0	1	Neuropeptide-like protein 38	w
 NEUROPEPTIDE-LIKE	worm	G5EGN6	nlp-15	G5EGN6	0	1	Neuropeptide-Like Protein	w
@@ -811,7 +811,7 @@ NEUROSECRETORY	zebrafish	A0A8M1PRV3	si:dkey-175g6.2	A0A8M1PRV3	0	12	Neurosecreto
 NEUROSERPIN	human	Q99574	SERPINI1	Q99574	6	65	Neuroserpin (Peptidase inhibitor 12) (PI-12) (Serpin I1)	w
 NEUROSERPIN	zebrafish	B3DJI9	serpini1	B3DJI9	0	2	Neuroserpin precursor	w
 NEUROSIN	human	Q92876	KLK6	Q92876	61	218	Kallikrein-6 (EC 3.4.21.-) (Neurosin) (Protease M) (SP59) (S	w
-NEUROSPECIFIC	fly	FBgn0020391	Nrk	Q9V6K3	626	3483	Tyrosine-protein kinase transmembrane receptor Ror2 (dRor2) 	w
+NEUROSPECIFIC	fly	FBgn0020391	Nrk	Q9V6K3	627	3483	Tyrosine-protein kinase transmembrane receptor Ror2 (dRor2) 	w
 NEUROTACTIN	fly	FBgn0004108	Nrt	P23654	143	2397	Neurotactin	w
 NEUROTACTIN	human	P78423	CX3CL1	P78423	47	378	Fractalkine (C-X3-C motif chemokine 1) (CX3C membrane-anchor	w
 NEUROTENSIN	human	O95665	NTSR2	O95665	14	128	Neurotensin receptor type 2 (NT-R-2) (NTR2) (Levocabastine-s	w
@@ -820,7 +820,7 @@ NEUROTENSIN	human	P30990	NTS	P30990	28	319	Neurotensin/neuromedin N [Cleaved int
 NEUROTENSIN	human	Q99523	SORT1	Q99523	49	357	Sortilin (100 kDa NT receptor) (Glycoprotein 95) (Gp95) (Neu	w
 NEUROTENSIN	human	Q9BYT8	NLN	Q9BYT8	9	84	Neurolysin, mitochondrial (EC 3.4.24.16) (Angiotensin-bindin	w
 NEUROTENSIN	zebrafish	E7EZ19	ntsr1	E7EZ19	13	33	Neurotensin receptor 1 (high affinity)	w
-NEUROTIC	fly	FBgn0033901	Ofut1	Q9V6X7	2	13	GDP-fucose protein O-fucosyltransferase 1 (EC 2.4.1.221) (Ne	w
+NEUROTIC	fly	FBgn0033901	Ofut1	Q9V6X7	2	15	GDP-fucose protein O-fucosyltransferase 1 (EC 2.4.1.221) (Ne	w
 NEUROTOXIN	human	P10153	RNASE2	P10153	26	252	Non-secretory ribonuclease (EC 4.6.1.18) (Eosinophil-derived	w
 NEUROTOXIN-LIKE	human	P0DP58	LYNX1	P0DP58	22	183	Ly-6/neurotoxin-like protein 1 (Endogenous prototoxin LYNX1)	w
 NEUROTRANSMITTER	human	O14804	TAAR5	O14804	12	102	Trace amine-associated receptor 5 (TaR-5) (Trace amine recep	w
@@ -847,7 +847,7 @@ NEUROTRANSMITTER-GATED	worm	Q93323	lgc-21	Q93323	7	13	Neurotransmitter-gated ion
 NEUROTRANSMITTER-GATED	worm	Q9NAM5	lgc-19	Q9NAM5	1	1	Neurotransmitter-gated ion-channel ligand-binding domain-con	w
 NEUROTRIMIN	human	Q9P121	NTM	Q9P121	11	121	Neurotrimin (hNT) (IgLON family member 2)	w
 NEUROTRIMIN	zebrafish	E7FH58	ntm	E7FH58	2	16	Neurotrimin	w
-NEUROTROPHIC	fly	FBgn0027095	Manf	Q9XZ63	22	250	Mesencephalic astrocyte-derived neurotrophic factor homolog 	w
+NEUROTROPHIC	fly	FBgn0027095	Manf	Q9XZ63	26	256	Mesencephalic astrocyte-derived neurotrophic factor homolog 	w
 NEUROTROPHIC	fly	FBgn0035379	spz5	Q9VZX1	32	255	Protein spaetzle 5 (Neurotrophic factor 2) (Protein spatzle 	w
 NEUROTROPHIC	fly	FBgn0262869	Gfrl	A0A0B4K7J4	2	21	Glial cell line-derived neurotrophic family receptor-like, i	w
 NEUROTROPHIC	human	O43559	FRS3	O43559	45	164	Fibroblast growth factor receptor substrate 3 (FGFR substrat	w
@@ -874,7 +874,7 @@ NEUROTROPHIC	zebrafish	A4QNW4	cdnf	A4QNW4	1	3	Cerebral dopamine neurotrophic fac
 NEUROTROPHIC	zebrafish	Q6NZ01	bdnf	Q6NZ01	2	99	Brain-derived neurotrophic factor	w
 NEUROTROPHIC	zebrafish	Q98TU0	gdnf	Q98TU0	8	50	Glial cell line-derived neurotrophic factor	w
 NEUROTROPHIC-LIKE	fly	FBgn0050418	nord	Q9W192	30	249	Protein NDNF (Neuron-derived neurotrophic-like factor) (Prot	w
-NEUROTROPHIN	fly	FBgn0261526	NT1	Q9VZA9	61	253	Neurotrophin 1, isoform F (Neurotrophin 1, isoform G) (Neuro	w
+NEUROTROPHIN	fly	FBgn0261526	NT1	Q9VZA9	62	254	Neurotrophin 1, isoform F (Neurotrophin 1, isoform G) (Neuro	w
 NEUROTROPHIN	human	P08138	NGFR	P08138	58	384	Tumor necrosis factor receptor superfamily member 16 (Gp80-L	w
 NEUROTROPHIN	human	Q96GC6	ZNF274	Q96GC6	16	51	Neurotrophin receptor-interacting factor homolog (Zinc finge	w
 NEUROTROPHIN	human	Q9Y5V3	MAGED1	Q9Y5V3	40	372	Melanoma-associated antigen D1 (MAGE tumor antigen CCF) (MAG	w
@@ -903,8 +903,8 @@ NEUTR	human	P11215	ITGAM	P11215	26	190	Integrin alpha-M (CD11 antigen-like famil
 NEUTRAL	fly	FBgn0003464	sol	P27398	22	75	Calpain-D (EC 3.4.22.-) (Calcium-activated neutral proteinas	w
 NEUTRAL	fly	FBgn0025866	CalpB	Q9VT65	7	22	Calpain-B (EC 3.4.22.-) (Calcium-activated neutral proteinas	w
 NEUTRAL	fly	FBgn0033368	CG13743	Q8MRD1	0	2	Putative sodium-coupled neutral amino acid transporter 11 (S	w
-NEUTRAL	fly	FBgn0035421	nSMase	Q9VZS6	2	63	Putative neutral sphingomyelinase (EC 3.1.4.12)	w
-NEUTRAL	fly	FBgn0039774	CDase	Q9VA70	17	299	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.23) (Neutral	w
+NEUTRAL	fly	FBgn0035421	nSMase	Q9VZS6	2	67	Putative neutral sphingomyelinase (EC 3.1.4.12)	w
+NEUTRAL	fly	FBgn0039774	CDase	Q9VA70	18	304	Neutral ceramidase (N-CDase) (NCDase) (EC 3.5.1.23) (Neutral	w
 NEUTRAL	human	A8MX76	CAPN14	A8MX76	10	62	Calpain-14 (EC 3.4.22.-) (Calcium-activated neutral proteina	w
 NEUTRAL	human	O60906	SMPD2	O60906	7	131	Sphingomyelin phosphodiesterase 2 (EC 3.1.4.12) (Lyso-platel	w
 NEUTRAL	human	O75387	SLC43A1	O75387	2	87	Large neutral amino acids transporter small subunit 3 (L-typ	w

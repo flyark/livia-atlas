@@ -37,7 +37,7 @@ ALKAL2	rattus-norvegicus	B2RZ42	Alkal2	B2RZ42	1	2	ALK and LTK ligand 2
 ALKAL2A	zebrafish	E7F5F0	alkal2a	E7F5F0	0	2	ALK and LTK ligand 2a	
 ALKAL2B	zebrafish	E7FAP8	alkal2b	E7FAP8	0	2	ALK and LTK ligand 2b	
 ALKALI	fly	A0A0B4LHS1	Mlc1	A0A0B4LHS1	7	63	Myosin light chain alkali	w
-ALKALI	fly	FBgn0002772	Mlc1	P06742	11	100	Myosin light chain alkali	w
+ALKALI	fly	FBgn0002772	Mlc1	P06742	12	101	Myosin light chain alkali	w
 ALKALI	human	P05976	MYL1	P05976	26	193	Myosin light chain 1/3, skeletal muscle isoform (MLC1/MLC3) 	w
 ALKALI	human	P08590	MYL3	P08590	18	121	Myosin light chain 3 (Cardiac myosin light chain 1) (CMLC1) 	w
 ALKALI	human	P12829	MYL4	P12829	29	220	Myosin light chain 4 (Myosin light chain 1, embryonic muscle	w
@@ -47,7 +47,7 @@ ALKALI	zebrafish	Q6P0G6	myl1	Q6P0G6	4	61	Myosin, light chain 1, alkali	w
 ALKALINE	fly	FBgn0016123	Alp4	Q24238	35	1197	Alkaline phosphatase 4 (EC 3.1.3.1)	w
 ALKALINE	fly	FBgn0030661	Alp11	Q9VXS8	80	973	alkaline phosphatase (EC 3.1.3.1)	w
 ALKALINE	fly	FBgn0032779	Alp12	Q9VIW9	38	957	alkaline phosphatase (EC 3.1.3.1)	w
-ALKALINE	fly	FBgn0033423	Alp6	Q7K3X8	128	1214	Alkaline phosphatase (EC 3.1.3.1)	w
+ALKALINE	fly	FBgn0033423	Alp6	Q7K3X8	128	1215	Alkaline phosphatase (EC 3.1.3.1)	w
 ALKALINE	fly	FBgn0034710	Alp7	Q9W275	65	1208	Alkaline phosphatase (EC 3.1.3.1)	w
 ALKALINE	fly	FBgn0034712	Alp8	Q9W273	44	1207	Alkaline phosphatase (EC 3.1.3.1)	w
 ALKALINE	fly	FBgn0035619	Alp10	Q9VRM8	87	1208	alkaline phosphatase (EC 3.1.3.1)	w
@@ -55,7 +55,7 @@ ALKALINE	fly	FBgn0035620	Alp9	Q9VRM9	57	1211	alkaline phosphatase (EC 3.1.3.1)	w
 ALKALINE	fly	FBgn0037786	Alp13	Q9VH28	128	974	alkaline phosphatase (EC 3.1.3.1)	w
 ALKALINE	fly	FBgn0038845	Alp5	Q9VDG4	28	1212	Alkaline phosphatase (EC 3.1.3.1)	w
 ALKALINE	fly	FBgn0043791	phu	Q9VHD0	33	1208	Alkaline phosphatase (EC 3.1.3.1)	w
-ALKALINE	fly	FBgn0045064	bwa	M9PDG7	2	57	Alkaline ceramidase (EC 3.5.1.-)	w
+ALKALINE	fly	FBgn0045064	bwa	M9PDG7	5	62	Alkaline ceramidase (EC 3.5.1.-)	w
 ALKALINE	fly	FBgn0283479	Alp1	M9PD70	51	1211	alkaline phosphatase (EC 3.1.3.1)	w
 ALKALINE	fly	FBgn0283480	Alp2	Q9W274	44	1208	Alkaline phosphatase (EC 3.1.3.1)	w
 ALKALINE	human	O14638	ENPP3	O14638	2	22	Ectonucleotide pyrophosphatase/phosphodiesterase family memb	w
@@ -89,8 +89,8 @@ ALKALINE	zebrafish	A0A8M1P6A3	acer3	A0A8M1P6A3	0	1	Alkaline ceramidase	w
 ALKALINE	zebrafish	E7FCF4	acer2	E7FCF4	0	4	Alkaline ceramidase	w
 ALKALINE	zebrafish	Q568I2	acer1	Q568I2	0	3	Alkaline ceramidase 1	w
 ALKB	dictyostelium-discoideum	Q54N08	alkB	Q54N08	1	2	Alpha-ketoglutarate-dependent dioxygenase alkB	
-ALKB	fly	FBgn0065035	AlkB	Q7KUZ2	1	40	AlkB, isoform A (EC 4.2.99.18) (AlkB, isoform B) (HDC19127) 	w
-ALKB	fly	FBgn0065035	AlkB	Q7KUZ2	1	40	AlkB, isoform A (EC 4.2.99.18) (AlkB, isoform B) (HDC19127) 	w
+ALKB	fly	FBgn0065035	AlkB	Q7KUZ2	2	42	AlkB, isoform A (EC 4.2.99.18) (AlkB, isoform B) (HDC19127) 	w
+ALKB	fly	FBgn0065035	AlkB	Q7KUZ2	2	42	AlkB, isoform A (EC 4.2.99.18) (AlkB, isoform B) (HDC19127) 	w
 ALKB	human	Q13686	ALKBH1	Q13686	5	84	Nucleic acid dioxygenase ALKBH1 (EC 1.14.11.-) (Alkylated DN	w
 ALKB	human	Q3KRA9	ALKBH6	Q3KRA9	6	51	Probable RNA/DNA demethylase ALKBH6 (EC 1.14.11.-) (Alkylate	w
 ALKB	human	Q6NS38	ALKBH2	Q6NS38	2	75	DNA oxidative demethylase ALKBH2 (EC 1.14.11.33) (Alkylated 	w
@@ -153,7 +153,7 @@ ALKBH7	pan-troglodytes	H2QF45	ALKBH7	H2QF45	9	9	AlkB homolog 7
 ALKBH7	rattus-norvegicus	M0R7T2	Alkbh7	M0R7T2	6	8	Alpha-ketoglutarate-dependent dioxygenase alkB homolog 7, mi	
 ALKBH7.L	xenopus-laevis	A0A1L8H331	alkbh7.L	A0A1L8H331	4	4	alpha-ketoglutarate-dependent dioxygenase alkB homolog 7, mi	
 ALKBH8	arabidopsis-thaliana	Q8RWY1	ALKBH8	Q8RWY1	0	3	Alkylated DNA repair protein ALKBH8 homolog	
-ALKBH8	fly	FBgn0034748	Alkbh8	Q9W232	2	14	Fe2OG dioxygenase domain-containing protein	
+ALKBH8	fly	FBgn0034748	Alkbh8	Q9W232	5	23	Fe2OG dioxygenase domain-containing protein	
 ALKBH8	human	Q96BT7	ALKBH8	Q96BT7	6	75	tRNA (carboxymethyluridine(34)-5-O)-methyltransferase ALKBH8	
 ALKBH8	mus-musculus	Q80Y20	Alkbh8	Q80Y20	1	4	tRNA (carboxymethyluridine(34)-5-O)-methyltransferase ALKBH8	
 ALKBH8	rattus-norvegicus	A0ABK0M2G8	Alkbh8	A0ABK0M2G8	1	4	AlkB homolog 8, tRNA methyltransferase	
@@ -169,14 +169,14 @@ ALKL1_HUMAN	human	Q6UXT8	ALKAL1	Q6UXT8	3	40
 ALKL2_HUMAN	human	Q6UX46	ALKAL2	Q6UX46	5	29		
 ALKMO_HUMAN	human	Q6ZNB7	AGMO	Q6ZNB7	1	12		
 ALKT	pseudomonas-aeruginosa	Q9HTK9	alkT	Q9HTK9	2	8	Rubredoxin-NAD(+) reductase	
-ALKYL	fly	FBgn0029980	Dhdds	Q9W3M6	2	14	Alkyl transferase (EC 2.5.1.-)	w
+ALKYL	fly	FBgn0029980	Dhdds	Q9W3M6	3	20	Alkyl transferase (EC 2.5.1.-)	w
 ALKYL	worm	Q5FC21	CELE_T01G1.4	Q5FC21	1	2	Alkyl transferase	w
 ALKYL	yeast	Q08347	BDS1	Q08347	0	1	Alkyl/aryl-sulfatase BDS1	w
 ALKYL-2-	human	Q86U10	ASPG	Q86U10	2	59	60 kDa lysophospholipase (LysoLP) (EC 3.1.1.5) (Lysophosphol	w
 ALKYL-2-ACETYLGLYCEROPHOSPHOCHOLINE	human	P04180	LCAT	P04180	4	145	Phosphatidylcholine-sterol acyltransferase (EC 2.3.1.43) (1-	w
 ALKYL-2-ACETYLGLYCEROPHOSPHOCHOLINE	human	Q13093	PLA2G7	Q13093	7	139	Platelet-activating factor acetylhydrolase (PAF acetylhydrol	w
 ALKYL-2-ACETYLGLYCEROPHOSPHOCHOLINE	worm	G5EGT1	paf-1	G5EGT1	0	2	1-alkyl-2-acetylglycerophosphocholine esterase	w
-ALKYL-DHAP	fly	FBgn0033983	Agps	Q9V778	0	13	Alkyldihydroxyacetonephosphate synthase (Alkyl-DHAP synthase	w
+ALKYL-DHAP	fly	FBgn0033983	Agps	Q9V778	2	15	Alkyldihydroxyacetonephosphate synthase (Alkyl-DHAP synthase	w
 ALKYL-DHAP	human	O00116	AGPS	O00116	14	198	Alkyldihydroxyacetonephosphate synthase, peroxisomal (Alkyl-	w
 ALKYLADENINE	human	P29372	MPG	P29372	14	129	DNA-3-methyladenine glycosylase (EC 3.2.2.21) (3-alkyladenin	w
 ALKYLAMINE	human	O95050	INMT	O95050	4	59	Indolethylamine N-methyltransferase (Indolamine N-methyltran	w
@@ -190,13 +190,13 @@ ALKYLATED	human	Q9BT30	ALKBH7	Q9BT30	19	111	RNA demethylase ALKBH7, mitochondria
 ALKYLATED	human	Q9NXW9	ALKBH4	Q9NXW9	8	91	Alpha-ketoglutarate-dependent dioxygenase alkB homolog 4 (Al	w
 ALKYLCOBALAMIN	human	Q9Y4U1	MMACHC	Q9Y4U1	12	88	Cyanocobalamin reductase / alkylcobalamin dealkylase (Alkylc	w
 ALKYLCOBALAMIN	zebrafish	Q5RFU5	mmachc	Q5RFU5	1	4	Cyanocobalamin reductase / alkylcobalamin dealkylase	w
-ALKYLDIHYDROXYACETONEPHOSPHATE	fly	FBgn0033983	Agps	Q9V778	0	13	Alkyldihydroxyacetonephosphate synthase (Alkyl-DHAP synthase	w
+ALKYLDIHYDROXYACETONEPHOSPHATE	fly	FBgn0033983	Agps	Q9V778	2	15	Alkyldihydroxyacetonephosphate synthase (Alkyl-DHAP synthase	w
 ALKYLDIHYDROXYACETONEPHOSPHATE	human	O00116	AGPS	O00116	14	198	Alkyldihydroxyacetonephosphate synthase, peroxisomal (Alkyl-	w
 ALKYLDIHYDROXYACETONEPHOSPHATE	worm	O45218	ads-1	O45218	1	4	Alkyldihydroxyacetonephosphate synthase	w
 ALKYLGLYCEROL	human	Q6ZNB7	AGMO	Q6ZNB7	1	12	Alkylglycerol monooxygenase (EC 1.14.16.5) (Transmembrane pr	w
 ALKYLGLYCEROL	worm	O17554	agmo-1	O17554	0	11	Alkylglycerol monooxygenase	w
 ALKYLGLYCEROL	zebrafish	Q6NYE4	agmo	Q6NYE4	0	5	Alkylglycerol monooxygenase	w
-ALKYLGLYCERONE-PHOSPHATE	fly	FBgn0033983	Agps	Q9V778	0	13	Alkyldihydroxyacetonephosphate synthase (Alkyl-DHAP synthase	w
+ALKYLGLYCERONE-PHOSPHATE	fly	FBgn0033983	Agps	Q9V778	2	15	Alkyldihydroxyacetonephosphate synthase (Alkyl-DHAP synthase	w
 ALKYLGLYCERONE-PHOSPHATE	human	O00116	AGPS	O00116	14	198	Alkyldihydroxyacetonephosphate synthase, peroxisomal (Alkyl-	w
 ALKYLGUANINE	worm	Q19263	agt-2	Q19263	0	1	AlkylGuanine DNA alkylTransferase	w
 ALKYLTRANSFERASE	worm	Q19263	agt-2	Q19263	0	1	AlkylGuanine DNA alkylTransferase	w

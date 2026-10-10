@@ -15,7 +15,7 @@ REDB	dictyostelium-discoideum	Q55CT1	redB	Q55CT1	0	16	NADPH--cytochrome P450 red
 REDC	dictyostelium-discoideum	Q54JL0	redC	Q54JL0	1	7	NADPH-dependent diflavin oxidoreductase 1	
 REDD-1	fly	FBgn0036165	chrb	Q9VTI8	6	32	Protein charybde (Protein charybdis) (Protein regulated in d	w
 REDD-1	human	Q9NX09	DDIT4	Q9NX09	10	118	DNA damage-inducible transcript 4 protein (HIF-1 responsive 	w
-REDD-2	fly	FBgn0041094	scyl	Q9VTH4	6	32	Protein scylla (Protein regulated in development and DNA dam	w
+REDD-2	fly	FBgn0041094	scyl	Q9VTH4	7	33	Protein scylla (Protein regulated in development and DNA dam	w
 REDD-2	human	Q96D03	DDIT4L	Q96D03	30	191	DNA damage-inducible transcript 4-like protein (HIF-1 respon	w
 REDD1	human	Q9NX09	DDIT4	Q9NX09	10	118		
 REDD2	human	Q96D03	DDIT4L	Q96D03	30	191		
@@ -28,9 +28,9 @@ REDOX-REGULATORY	human	Q9BRX8	PRXL2A	Q9BRX8	4	128	Peroxiredoxin-like 2A (Peroxir
 REDU	human	P15121	AKR1B1	P15121	15	229	Aldo-keto reductase family 1 member B1 (EC 1.1.1.21) (EC 1.1	w
 REDU	human	P15559	NQO1	P15559	5	303	NAD(P)H dehydrogenase [quinone] 1 (EC 1.6.5.2) (Azoreductase	w
 REDUCED	fly	FBgn0003270	amos	Q9Y0A7	65	392	Basic helix-loop-helix transcription factor amos (Absent MD 	w
-REDUCED	fly	FBgn0003339	Scr	P09077	142	585	Sex combs reduced	w
+REDUCED	fly	FBgn0003339	Scr	P09077	143	585	Sex combs reduced	w
 REDUCED	fly	FBgn0004646	ogre	P27716	1	9	Innexin inx1 (Innexin-1) (Protein optic ganglion reduced) (P	w
-REDUCED	fly	FBgn0243486	rdo	X2J6K6	3	13	Reduced ocelli, isoform B	w
+REDUCED	fly	FBgn0243486	rdo	X2J6K6	4	14	Reduced ocelli, isoform B	w
 REDUCED	fly	FBgn0260933	rempA	Q7KTZ4	5	42	Reduced mechanoreceptor potential A, isoform B	w
 REDUCED	fly	FBgn0284408	trol	Q9W4Y3	0	1	Terribly reduced optic lobes, isoform AT	w
 REDUCED	human	P41440	SLC19A1	P41440	4	134	Reduced folate transporter (FOLT) (Cyclic dinucleotide:anion	w
@@ -47,44 +47,44 @@ REDUCING	human	Q969Z3	MTARC2	Q969Z3	11	61	Mitochondrial amidoxime reducing compo
 REDUCING	human	Q9BZI7	UPF3B	Q9BZI7	32	169	Regulator of nonsense transcripts 3B (Nonsense mRNA reducing	w
 REDUCING	human	Q9H1J1	UPF3A	Q9H1J1	11	90	Regulator of nonsense transcripts 3A (Nonsense mRNA reducing	w
 REDUCT	human	Q92506	HSD17B8	Q92506	7	104	(3R)-3-hydroxyacyl-CoA dehydrogenase (EC 1.1.1.n12) (17-beta	w
-REDUCTAS	fly	FBgn0039112	SdhD	Q9VCI5	10	77	Succinate dehydrogenase [ubiquinone] cytochrome b small subu	w
+REDUCTAS	fly	FBgn0039112	SdhD	Q9VCI5	24	93	Succinate dehydrogenase [ubiquinone] cytochrome b small subu	w
 REDUCTAS	human	Q8N3Y7	SDR16C5	Q8N3Y7	11	72	Epidermal retinol dehydrogenase 2 (EPHD-2) (RDH-E2) (EC 1.1.	w
 REDUCTASE	fly	FBgn0000565	MsrA	M9PCL6	1	18	peptide-methionine (S)-S-oxide reductase (EC 1.8.4.11) (Pept	w
-REDUCTASE	fly	FBgn0004087	Dhfr	P17719	13	245	Dihydrofolate reductase (EC 1.5.1.3)	w
-REDUCTASE	fly	FBgn0011227	ox	Q9XY35	16	135	Cytochrome b-c1 complex subunit 9 (Complex III subunit 9) (C	w
-REDUCTASE	fly	FBgn0011703	RnrL	P48591	13	205	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
-REDUCTASE	fly	FBgn0011704	RnrS	P48592	13	310	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
-REDUCTASE	fly	FBgn0013678	mt:Cyt-b	P18935	11	141	Cytochrome b (Complex III subunit 3) (Complex III subunit II	w
-REDUCTASE	fly	FBgn0014032	Sptr	O76752	1	6	Sepiapterin reductase (EC 1.1.1.153)	w
+REDUCTASE	fly	FBgn0004087	Dhfr	P17719	14	259	Dihydrofolate reductase (EC 1.5.1.3)	w
+REDUCTASE	fly	FBgn0011227	ox	Q9XY35	51	148	Cytochrome b-c1 complex subunit 9 (Complex III subunit 9) (C	w
+REDUCTASE	fly	FBgn0011703	RnrL	P48591	13	219	Ribonucleoside-diphosphate reductase large subunit (EC 1.17.	w
+REDUCTASE	fly	FBgn0011704	RnrS	P48592	15	321	Ribonucleoside-diphosphate reductase subunit M2 (EC 1.17.4.1	w
+REDUCTASE	fly	FBgn0013678	mt:Cyt-b	P18935	18	142	Cytochrome b (Complex III subunit 3) (Complex III subunit II	w
+REDUCTASE	fly	FBgn0014032	Sptr	O76752	1	16	Sepiapterin reductase (EC 1.1.1.153)	w
 REDUCTASE	fly	FBgn0015582	dare	Q9V3T9	7	17	NADPH:adrenodoxin oxidoreductase, mitochondrial (AR) (Adreno	w
 REDUCTASE	fly	FBgn0015623	Cpr	Q27597	2	106	NADPH--cytochrome P450 reductase (CPR) (P450R) (EC 1.6.2.4)	w
-REDUCTASE	fly	FBgn0015781	P5cr1	Q9V3F8	1	62	Pyrroline-5-carboxylate reductase (EC 1.5.1.2)	w
+REDUCTASE	fly	FBgn0015781	P5cr1	Q9V3F8	1	63	Pyrroline-5-carboxylate reductase (EC 1.5.1.2)	w
 REDUCTASE	fly	FBgn0020653	Trxr1	P91938	15	219	Thioredoxin reductase 1, mitochondrial (EC 1.8.1.9)	w
 REDUCTASE	fly	FBgn0023550	FarO	Q9W508	0	6	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
 REDUCTASE	fly	FBgn0027583	CG7601	Q9Y140	0	24	Dehydrogenase/reductase SDR family protein 7-like (EC 1.1.-.	w
-REDUCTASE	fly	FBgn0028475	Hrd3	Q9V415	6	54	HMG-coA reductase degradation 3, isoform A (HMG-coA reductas	w
+REDUCTASE	fly	FBgn0028475	Hrd3	Q9V415	8	56	HMG-coA reductase degradation 3, isoform A (HMG-coA reductas	w
 REDUCTASE	fly	FBgn0029821	CG4020	Q9W459	1	2	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
 REDUCTASE	fly	FBgn0030799	CG4872	Q8SY58	0	9	Ketimine reductase mu-crystallin (EC 1.5.1.25) (NADP-regulat	w
 REDUCTASE	fly	FBgn0030995	CG7914	Q9VWK8	1	25	cytochrome-b5 reductase (EC 1.6.2.2)	w
-REDUCTASE	fly	FBgn0032014	Pprd	Q9VLP9	0	7	Polyprenol reductase (EC 1.3.1.94)	w
+REDUCTASE	fly	FBgn0032014	Pprd	Q9VLP9	2	10	Polyprenol reductase (EC 1.3.1.94)	w
 REDUCTASE	fly	FBgn0032055	Sgp	Q9VLJ7	0	3	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
 REDUCTASE	fly	FBgn0033464	CG1441	Q7K3T3	0	2	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
-REDUCTASE	fly	FBgn0033883	Mecr	Q9V6U9	1	40	Enoyl-[acyl-carrier-protein] reductase, mitochondrial (EC 1.	w
+REDUCTASE	fly	FBgn0033883	Mecr	Q9V6U9	1	44	Enoyl-[acyl-carrier-protein] reductase, mitochondrial (EC 1.	w
 REDUCTASE	fly	FBgn0034142	CG8306	Q960W6	0	15	Putative fatty acyl-CoA reductase CG8306 (EC 1.2.1.84)	w
 REDUCTASE	fly	FBgn0034143	CG8303	A1ZAI3	1	14	Putative fatty acyl-CoA reductase CG8303 (EC 1.2.1.84)	w
-REDUCTASE	fly	FBgn0034145	CG5065	A1ZAI5	0	5	Putative fatty acyl-CoA reductase CG5065 (EC 1.2.1.84)	w
-REDUCTASE	fly	FBgn0034245	UQCR-6.4	Q500Y7	10	141	GEO11443p1 (RH56961p) (Ubiquinol-cytochrome c reductase 6.4 	w
-REDUCTASE	fly	FBgn0034442	CG11257	A1ZBK6	3	42	cytochrome-b5 reductase (EC 1.6.2.2)	w
-REDUCTASE	fly	FBgn0034500	Ppdh	Q7K0F7	0	14	Carbonyl reductase, isoform A (Carbonyl reductase, isoform B	w
+REDUCTASE	fly	FBgn0034145	CG5065	A1ZAI5	0	6	Putative fatty acyl-CoA reductase CG5065 (EC 1.2.1.84)	w
+REDUCTASE	fly	FBgn0034245	UQCR-6.4	Q500Y7	43	148	GEO11443p1 (RH56961p) (Ubiquinol-cytochrome c reductase 6.4 	w
+REDUCTASE	fly	FBgn0034442	CG11257	A1ZBK6	3	43	cytochrome-b5 reductase (EC 1.6.2.2)	w
+REDUCTASE	fly	FBgn0034500	Ppdh	Q7K0F7	0	15	Carbonyl reductase, isoform A (Carbonyl reductase, isoform B	w
 REDUCTASE	fly	FBgn0035471	Tecr	Q9VZL3	7	139	very-long-chain enoyl-CoA reductase (EC 1.3.1.93)	w
 REDUCTASE	fly	FBgn0035588	Dhrs4	Q9VRJ4	3	42	Dehydrogenase/reductase 4 (EC 1.1.1.184, EC 1.1.1.270) (SD02	w
-REDUCTASE	fly	FBgn0035964	Dhpr	Q9VSU6	0	9	Dihydropteridine reductase (EC 1.5.1.34) (HDHPR) (Quinoid di	w
+REDUCTASE	fly	FBgn0035964	Dhpr	Q9VSU6	0	16	Dihydropteridine reductase (EC 1.5.1.34) (HDHPR) (Quinoid di	w
 REDUCTASE	fly	FBgn0036211	CG5946	X2JGK6	4	47	NADH-cytochrome b5 reductase (EC 1.6.2.2)	w
-REDUCTASE	fly	FBgn0037146	P5cs	Q9VNW6	0	83	Delta-1-pyrroline-5-carboxylate synthase [Includes: Glutamat	w
-REDUCTASE	fly	FBgn0037170	Trxr2	Q9VNT5	10	58	Thioredoxin reductase 2, mitochondrial (EC 1.8.1.9)	w
+REDUCTASE	fly	FBgn0037146	P5cs	Q9VNW6	0	98	Delta-1-pyrroline-5-carboxylate synthase [Includes: Glutamat	w
+REDUCTASE	fly	FBgn0037170	Trxr2	Q9VNT5	10	62	Thioredoxin reductase 2, mitochondrial (EC 1.8.1.9)	w
 REDUCTASE	fly	FBgn0038032	CG10096	Q9VG87	0	3	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
 REDUCTASE	fly	FBgn0038033	CG10097	Q9VG86	0	3	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
-REDUCTASE	fly	FBgn0038271	UQCR-C1	Q9VFF0	9	211	GH01077p (Ubiquinol-cytochrome c reductase core protein 1, i	w
+REDUCTASE	fly	FBgn0038271	UQCR-C1	Q9VFF0	24	228	GH01077p (Ubiquinol-cytochrome c reductase core protein 1, i	w
 REDUCTASE	fly	FBgn0038449	CG17562	Q9VES7	0	3	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
 REDUCTASE	fly	FBgn0038450	CG17560	Q9VES6	0	3	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
 REDUCTASE	fly	FBgn0038451	CG14893	Q9VES5	0	4	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
@@ -92,21 +92,21 @@ REDUCTASE	fly	FBgn0038516	P5cr2	Q9VEJ3	1	65	Pyrroline-5-carboxylate reductase (E
 REDUCTASE	fly	FBgn0038519	Prx3	Q9VEJ0	3	29	Thioredoxin-dependent peroxide reductase, mitochondrial (EC 	w
 REDUCTASE	fly	FBgn0038751	CG4770	Q9VDS1	0	4	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
 REDUCTASE	fly	FBgn0039131	CG12268	Q9VCF6	0	5	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
-REDUCTASE	fly	FBgn0039304	Kdsr	Q9VBU5	6	171	3-dehydrosphinganine reductase (EC 1.1.1.102)	w
-REDUCTASE	fly	FBgn0039620	wat	Q8MS59	1	23	Fatty acyl-CoA reductase wat (Protein waterproof) (EC 1.2.1.	w
+REDUCTASE	fly	FBgn0039304	Kdsr	Q9VBU5	6	178	3-dehydrosphinganine reductase (EC 1.1.1.102)	w
+REDUCTASE	fly	FBgn0039620	wat	Q8MS59	1	24	Fatty acyl-CoA reductase wat (Protein waterproof) (EC 1.2.1.	w
 REDUCTASE	fly	FBgn0040309	Prx2	Q9V3P0	6	147	Peroxiredoxin 2 (EC 1.11.1.24) (Cytosolic thioredoxin peroxi	w
-REDUCTASE	fly	FBgn0043456	Ndf	M9MRG2	16	137	Cytokine-like nuclear factor N-PAC (Glyoxylate reductase 1 h	w
+REDUCTASE	fly	FBgn0043456	Ndf	M9MRG2	19	141	Cytokine-like nuclear factor N-PAC (Glyoxylate reductase 1 h	w
 REDUCTASE	fly	FBgn0043792	CG30427	Q8MMC6	0	6	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
-REDUCTASE	fly	FBgn0053544	Vkor	A1ZAJ5	0	9	vitamin-K-epoxide reductase (warfarin-sensitive) (EC 1.17.4.	w
-REDUCTASE	fly	FBgn0058064	ARY	D2A6K3	0	4	Aldehyde reductase Y, isoform D (EC 1.-.-.-, EC 1.1.1.112, E	w
+REDUCTASE	fly	FBgn0053544	Vkor	A1ZAJ5	1	10	vitamin-K-epoxide reductase (warfarin-sensitive) (EC 1.17.4.	w
+REDUCTASE	fly	FBgn0058064	ARY	D2A6K3	1	6	Aldehyde reductase Y, isoform D (EC 1.-.-.-, EC 1.1.1.112, E	w
 REDUCTASE	fly	FBgn0085371	CG34342	A8JNC9	0	2	Fatty acyl-CoA reductase (EC 1.2.1.84)	w
 REDUCTASE	fly	FBgn0086254	Ar1	M9PF61	39	447	Aldo-keto reductase 1B, isoform C (EC 1.1.1.112, EC 1.1.1.21	w
-REDUCTASE	fly	FBgn0250814	UQCR-C2	Q9VV75	22	231	AT02348p (Ubiquinol-cytochrome c reductase core protein 2, i	w
+REDUCTASE	fly	FBgn0250814	UQCR-C2	Q9VV75	36	234	AT02348p (Ubiquinol-cytochrome c reductase core protein 2, i	w
 REDUCTASE	fly	FBgn0262112	sro	Q9VAH3	1	4	Short-chain dehydrogenase/reductase (Shroud (EC 1.1.1.239, E	w
 REDUCTASE	fly	FBgn0262842	UQCR-6.4L	M9NFG6	8	34	Ubiquinol-cytochrome c reductase 6.4 kDa subunit-like	w
-REDUCTASE	fly	FBgn0263782	Hmgcr	P14773	1	26	3-hydroxy-3-methylglutaryl-coenzyme A reductase (HMG-CoA red	w
-REDUCTASE	fly	FBgn0267376	SelR	Q8INK9	7	52	Methionine-R-sulfoxide reductase B1 (EC 1.8.4.12) (Selenopro	w
-REDUCTASE	fly	FBgn0286198	Lkrsdh	Q9VLX0	0	21	Lysine ketoglutarate reductase/saccharopine dehydrogenase, i	w
+REDUCTASE	fly	FBgn0263782	Hmgcr	P14773	1	31	3-hydroxy-3-methylglutaryl-coenzyme A reductase (HMG-CoA red	w
+REDUCTASE	fly	FBgn0267376	SelR	Q8INK9	8	54	Methionine-R-sulfoxide reductase B1 (EC 1.8.4.12) (Selenopro	w
+REDUCTASE	fly	FBgn0286198	Lkrsdh	Q9VLX0	0	22	Lysine ketoglutarate reductase/saccharopine dehydrogenase, i	w
 REDUCTASE	human	A0PJE2	DHRS12	A0PJE2	2	57	Dehydrogenase/reductase SDR family member 12 (EC 1.1.-.-) (S	w
 REDUCTASE	human	A6NKP2	SDR42E2	A6NKP2	1	14	Putative short-chain dehydrogenase/reductase family 42E memb	w
 REDUCTASE	human	A6NNS2	DHRS7C	A6NNS2	4	57	Dehydrogenase/reductase SDR family member 7C (EC 1.1.1.105) 	w
@@ -666,12 +666,12 @@ REDUCTASE-LIKE	worm	Q9U3N5	selt-1.1	Q9U3N5	2	19	Thioredoxin reductase-like selen
 REDUCTASE-RELATED	human	O60218	AKR1B10	O60218	13	127	Aldo-keto reductase family 1 member B10 (EC 1.1.1.300) (EC 1	w
 REDUCTASE-RELATED	human	Q9BY49	PECR	Q9BY49	4	87	Peroxisomal trans-2-enoyl-CoA reductase (TERP) (EC 1.3.1.38)	w
 REDUCTION	fly	FBgn0032034	Rcd4	Q9VLM6	2	6	Protein PPP1R35 homolog (Protein Rcd4) (Reduction in Cnn dot	w
-REDUCTION	fly	FBgn0033897	Rcd1	A0A0B4KF25	17	46	Reduction in Cnn dots 1, isoform E (EC 3.-.-.-)	w
+REDUCTION	fly	FBgn0033897	Rcd1	A0A0B4KF25	17	47	Reduction in Cnn dots 1, isoform E (EC 3.-.-.-)	w
 REDUCTION	fly	FBgn0034530	Rcd6	Q7JR73	0	2	LD20239p (RE02054p) (Reduction in Cnn dots 6, isoform A) (Re	w
 REDUCTION	fly	FBgn0037012	Rcd2	Q8SXY5	2	10	RE54525p (Reduction in Cnn dots 2)	w
-REDUCTION	fly	FBgn0250838	roh	Q0E8X7	1	12	Reduction of Rh1, isoform A (Reduction of Rh1, isoform B)	w
+REDUCTION	fly	FBgn0250838	roh	Q0E8X7	4	15	Reduction of Rh1, isoform A (Reduction of Rh1, isoform B)	w
 REDUCTION	fly	FBgn0260461	Rcd7	Q9VW08	0	3	FI06002p (Reduction in Cnn dots 7, isoform A) (Reduction in 	w
 REDUCTION	fly	FBgn0263239	dar1	Q9VZN4	53	357	Dendritic arbor reduction protein 1	w
-REDUCTION	fly	FBgn0263832	Rcd5	Q9VZJ3	30	111	GH01794p (Reduction in Cnn dots 5)	w
+REDUCTION	fly	FBgn0263832	Rcd5	Q9VZJ3	42	122	GH01794p (Reduction in Cnn dots 5)	w
 REDUCTOISOMERASE	yeast	P06168	ILV5	P06168	0	64	Ketol-acid reductoisomerase, mitochondrial	w
 RED_HUMAN	human	Q13123	IK	Q13123	60	367		

@@ -1,7 +1,7 @@
 SOL	fly	FBgn0003464	sol	P27398	22	75	Calpain-D (EC 3.4.22.-) (Calcium-activated neutral proteinas	
 SOL-1	worm	Q93212	sol-1	Q93212	0	6	Suppressor of lurcher protein 1	
 SOL-2	worm	Q9XUU2	sol-2	Q9XUU2	0	5	CUB domain-containing protein	
-SOL1	fly	FBgn0085431	Sol1	A8JQY3	41	267	Uncharacterized protein, isoform C	
+SOL1	fly	FBgn0085431	Sol1	A8JQY3	42	268	Uncharacterized protein, isoform C	
 SOL1	schizosaccharomyces-pombe	O74365	sol1	O74365	6	35	SWI/SNF chromatin-remodeling complex subunit sol1	
 SOL1	yeast	P50278	SOL1	P50278	1	17	6-phosphogluconolactonase-like protein 1	
 SOL2	yeast	P37262	SOL2	P37262	2	16	6-phosphogluconolactonase-like protein 2	
@@ -18,13 +18,13 @@ SOLH	human	O75808	CAPN15	O75808	13	109
 SOLH1_HUMAN	human	Q5JUK2	SOHLH1	Q5JUK2	71	432		
 SOLH2_HUMAN	human	Q9NX45	SOHLH2	Q9NX45	34	376		
 SOLID	human	Q969W9	PMEPA1	Q969W9	26	193	Protein TMEPAI (Prostate transmembrane protein androgen indu	w
-SOLO	fly	FBgn0283440	solo	B6JUP5	4	39	Sister chromatid cohesion protein solo (Sisters on the loose	w
-SOLO	fly	FBgn0283440	solo	B6JUP5	4	39	Sister chromatid cohesion protein solo (Sisters on the loose	w
+SOLO	fly	FBgn0283440	solo	B6JUP5	5	40	Sister chromatid cohesion protein solo (Sisters on the loose	w
+SOLO	fly	FBgn0283440	solo	B6JUP5	5	40	Sister chromatid cohesion protein solo (Sisters on the loose	w
 SOLO	human	Q86VW0	SESTD1	Q86VW0	12	81		
 SOLO	human	Q8TER5	ARHGEF40	Q8TER5	27	143		
 SOLUBLE	fly	FBgn0013973	Gycbeta100B	Q9VA09	8	89	Guanylate cyclase soluble subunit beta-1 (EC 4.6.1.2) (Guany	w
 SOLUBLE	fly	FBgn0027570	Nep2	A0A0B4K692	365	2601	Neprilysin-2 (EC 3.4.24.11) [Cleaved into: Neprilysin-2, sol	w
-SOLUBLE	fly	FBgn0033483	egr	Q8MUJ1	404	2725	Protein eiger [Cleaved into: Protein eiger, membrane form; P	w
+SOLUBLE	fly	FBgn0033483	egr	Q8MUJ1	406	2725	Protein eiger [Cleaved into: Protein eiger, membrane form; P	w
 SOLUBLE	fly	FBgn0038295	Gyc88E	Q8INF0	9	75	Soluble guanylate cyclase 88E (EC 4.6.1.2)	w
 SOLUBLE	fly	FBgn0038435	Gyc89Da	Q9VEU6	9	90	Soluble guanylate cyclase 89Da (EC 4.6.1.2)	w
 SOLUBLE	fly	FBgn0038436	Gyc89Db	Q9VEU5	10	93	Soluble guanylate cyclase 89Db (EC 4.6.1.2)	w
@@ -117,8 +117,8 @@ SOLUTE	fly	FBgn0032433	Oatp33Ea	Q9VK84	0	2	Solute carrier organic anion transpor
 SOLUTE	fly	FBgn0032664	Slc25A46b	Q9VJA5	2	6	FI08023p (Solute carrier family 25 member 46b)	w
 SOLUTE	fly	FBgn0033368	CG13743	Q8MRD1	0	2	Putative sodium-coupled neutral amino acid transporter 11 (S	w
 SOLUTE	fly	FBgn0033388	CG8046	A1Z7R6	0	2	Probable peptidoglycan muropeptide transporter SLC46 (Solute	w
-SOLUTE	fly	FBgn0033665	Zip48C	Q8SWW2	0	6	Zinc transporter ZIP11 (Solute carrier family 39 member 11) 	w
-SOLUTE	fly	FBgn0033762	ZnT49B	A1Z935	17	355	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Solut	w
+SOLUTE	fly	FBgn0033665	Zip48C	Q8SWW2	1	9	Zinc transporter ZIP11 (Solute carrier family 39 member 11) 	w
+SOLUTE	fly	FBgn0033762	ZnT49B	A1Z935	19	359	Proton-coupled zinc antiporter SLC30A9, mitochondrial (Solut	w
 SOLUTE	fly	FBgn0034032	CG8195	Q7K3M9	1	12	Solute carrier family 35 member F5	w
 SOLUTE	fly	FBgn0034715	Oatp58Db	Q9W270	0	6	Solute carrier organic anion transporter family member	w
 SOLUTE	fly	FBgn0034716	Oatp58Dc	Q9W269	0	5	Solute carrier organic anion transporter family member	w
@@ -135,8 +135,8 @@ SOLUTE	fly	FBgn0040383	CG5254	Q9V3T2	0	5	Mitochondrial 2-oxodicarboxylate carrie
 SOLUTE	fly	FBgn0050277	Oatp58Da	Q9W271	0	4	Solute carrier organic anion transporter family member	w
 SOLUTE	fly	FBgn0051634	Oatp26F	Q8SY02	0	26	Solute carrier organic anion transporter family member	w
 SOLUTE	fly	FBgn0067783	DPCoAC	Q9VDL7	0	3	Mitochondrial coenzyme A transporter SLC25A42 (Solute carrie	w
-SOLUTE	fly	FBgn0250820	meigo	Q9VDD7	0	24	Solute carrier family 35 member B1 homolog (Protein medial g	w
-SOLUTE	fly	FBgn0265351	Gfr	Q9VHT4	0	4	GDP-fucose transporter 1 (Neuronally altered carbohydrate) (	w
+SOLUTE	fly	FBgn0250820	meigo	Q9VDD7	0	25	Solute carrier family 35 member B1 homolog (Protein medial g	w
+SOLUTE	fly	FBgn0265351	Gfr	Q9VHT4	0	7	GDP-fucose transporter 1 (Neuronally altered carbohydrate) (	w
 SOLUTE	human	A0A3B3IRK5	?	A0A3B3IRK5	0	5	Solute carrier family 25 member 32	w
 SOLUTE	human	A0AV02	SLC12A8	A0AV02	0	23	Solute carrier family 12 member 8 (Cation-chloride cotranspo	w
 SOLUTE	human	A0PJK1	SLC5A10	A0PJK1	6	38	Sodium/mannose cotransporter SLC5A10 (Sodium/glucose cotrans	w
@@ -583,5 +583,5 @@ SOLUTE	zebrafish	Q7ZWA7	slc25a10	Q7ZWA7	1	1	Solute carrier family 25 (Mitochondr
 SOLUTE	zebrafish	Q9I9R3	slc40a1	Q9I9R3	0	3	Solute carrier family 40 member 1	w
 SOLUTE	zebrafish	X1WH55	slc12a7a	X1WH55	1	11	Solute carrier family 12 member 7 isoform X4	w
 SOLUTE-BINDING	worm	Q9XUB4	glr-9	Q9XUB4	0	1	Solute-binding protein family 3/N-terminal domain-containing	w
-SOLWIND	fly	FBgn0037460	sowi	Q4V5H8	0	7	IP07034p (IP07134p) (Solwind)	w
+SOLWIND	fly	FBgn0037460	sowi	Q4V5H8	4	16	IP07034p (IP07134p) (Solwind)	w
 SOL_250	fly	FBgn0003464	sol	P27398	22	75		

@@ -6,9 +6,9 @@ NAD-CAPPED	human	Q9BQG2	NUDT12	Q9BQG2	3	53	NAD-capped RNA hydrolase NUDT12 (DeNA
 NAD-CAPPED	worm	Q19427	ndx-9	Q19427	0	3	NAD-capped RNA hydrolase ndx-9	w
 NAD-CAPPED	yeast	P53164	NPY1	P53164	0	8	NAD-capped RNA hydrolase NPY1	w
 NAD-CAPPED	zebrafish	A0A8M9Q9P3	nudt12	A0A8M9Q9P3	0	13	NAD-capped RNA hydrolase NUDT12	w
-NAD-DEPENDENT	fly	FBgn0010222	Nmdmc	Q04448	1	14	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohy	w
-NAD-DEPENDENT	fly	FBgn0024291	Sirt1	Q9VK34	115	535	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	w
-NAD-DEPENDENT	fly	FBgn0029783	Sirt4	Q8IRR5	39	421	NAD-dependent protein deacylase Sirt4 (EC 2.3.1.286) (Regula	w
+NAD-DEPENDENT	fly	FBgn0010222	Nmdmc	Q04448	1	22	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohy	w
+NAD-DEPENDENT	fly	FBgn0024291	Sirt1	Q9VK34	119	539	NAD-dependent histone deacetylase sirtuin-1 (EC 2.3.1.286) (	w
+NAD-DEPENDENT	fly	FBgn0029783	Sirt4	Q8IRR5	40	427	NAD-dependent protein deacylase Sirt4 (EC 2.3.1.286) (Regula	w
 NAD-DEPENDENT	fly	FBgn0039631	Sirt7	Q9VAQ1	38	370	NAD-dependent protein deacetylase Sirt7 (EC 2.3.1.286) (Regu	w
 NAD-DEPENDENT	human	P13995	MTHFD2	P13995	14	135	Bifunctional methylenetetrahydrofolate dehydrogenase/cyclohy	w
 NAD-DEPENDENT	human	P23368	ME2	P23368	3	117	NAD-dependent malic enzyme, mitochondrial (NAD-ME) (EC 1.1.1	w
@@ -151,56 +151,56 @@ NADE	streptococcus-pneumoniae	P65509	nadE	P65509	0	1	NH(3)-dependent NAD(+) synt
 NADE2	human	Q5H9J7	BEX5	Q5H9J7	24	97		
 NADE3	human	Q9NWD9	BEX4	Q9NWD9	8	54		
 NADE_HUMAN	human	Q6IA69	NADSYN1	Q6IA69	6	108		
-NADH	fly	FBgn0001989	ND-B17	Q9V3W2	7	88	GM23292p (NADH dehydrogenase (Ubiquinone) B17 subunit, isofo	w
-NADH	fly	FBgn0011455	ND-SGDH	Q9VTU2	10	100	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
-NADH	fly	FBgn0013679	mt:ND1	P18929	19	177	NADH-ubiquinone oxidoreductase chain 1 (EC 7.1.1.2) (NADH de	w
-NADH	fly	FBgn0013680	mt:ND2	P03896	14	110	NADH-ubiquinone oxidoreductase chain 2 (EC 7.1.1.2) (NADH de	w
-NADH	fly	FBgn0013681	mt:ND3	P18930	12	124	NADH-ubiquinone oxidoreductase chain 3 (EC 7.1.1.2) (NADH de	w
-NADH	fly	FBgn0013683	mt:ND4L	P18934	11	110	NADH-ubiquinone oxidoreductase chain 4L (EC 7.1.1.2) (NADH d	w
-NADH	fly	FBgn0013684	mt:ND5	P18932	21	102	NADH-ubiquinone oxidoreductase chain 5 (EC 7.1.1.2) (NADH de	w
-NADH	fly	FBgn0013685	mt:ND6	P18933	7	41	NADH-ubiquinone oxidoreductase chain 6 (EC 7.1.1.2) (NADH de	w
-NADH	fly	FBgn0017567	ND-23	Q9VF27	24	141	NADH dehydrogenase (ubiquinone) 23 kDa subunit (EC 7.1.1.2)	w
-NADH	fly	FBgn0019957	ND-42	P91929	12	134	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-NADH	fly	FBgn0021967	ND-PDSW	Q9VQR2	15	136	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10	w
-NADH	fly	FBgn0025839	ND-B14.5A	O97418	6	110	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
-NADH	fly	FBgn0027785	NP15.6	Q9V3L7	13	145	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	w
-NADH	fly	FBgn0029868	ND-B16.6	Q9W402	7	120	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-NADH	fly	FBgn0029888	ND-ASHI	Q9W3X7	8	114	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8,	w
-NADH	fly	FBgn0029971	ND-MNLL	Q9W3N7	9	65	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	w
+NADH	fly	FBgn0001989	ND-B17	Q9V3W2	14	96	GM23292p (NADH dehydrogenase (Ubiquinone) B17 subunit, isofo	w
+NADH	fly	FBgn0011455	ND-SGDH	Q9VTU2	15	101	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
+NADH	fly	FBgn0013679	mt:ND1	P18929	29	178	NADH-ubiquinone oxidoreductase chain 1 (EC 7.1.1.2) (NADH de	w
+NADH	fly	FBgn0013680	mt:ND2	P03896	20	110	NADH-ubiquinone oxidoreductase chain 2 (EC 7.1.1.2) (NADH de	w
+NADH	fly	FBgn0013681	mt:ND3	P18930	28	124	NADH-ubiquinone oxidoreductase chain 3 (EC 7.1.1.2) (NADH de	w
+NADH	fly	FBgn0013683	mt:ND4L	P18934	21	111	NADH-ubiquinone oxidoreductase chain 4L (EC 7.1.1.2) (NADH d	w
+NADH	fly	FBgn0013684	mt:ND5	P18932	34	102	NADH-ubiquinone oxidoreductase chain 5 (EC 7.1.1.2) (NADH de	w
+NADH	fly	FBgn0013685	mt:ND6	P18933	9	42	NADH-ubiquinone oxidoreductase chain 6 (EC 7.1.1.2) (NADH de	w
+NADH	fly	FBgn0017567	ND-23	Q9VF27	41	151	NADH dehydrogenase (ubiquinone) 23 kDa subunit (EC 7.1.1.2)	w
+NADH	fly	FBgn0019957	ND-42	P91929	28	142	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+NADH	fly	FBgn0021967	ND-PDSW	Q9VQR2	24	160	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10	w
+NADH	fly	FBgn0025839	ND-B14.5A	O97418	19	117	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
+NADH	fly	FBgn0027785	NP15.6	Q9V3L7	42	156	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	w
+NADH	fly	FBgn0029868	ND-B16.6	Q9W402	23	129	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+NADH	fly	FBgn0029888	ND-ASHI	Q9W3X7	16	125	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8,	w
+NADH	fly	FBgn0029971	ND-MNLL	Q9W3N7	17	67	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	w
 NADH	fly	FBgn0030352	sicily	Q9VYS5	11	58	NADH dehydrogenase (ubiquinone) complex I, assembly factor 6	w
-NADH	fly	FBgn0030605	ND-B18	Q9VXZ0	8	120	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7	w
+NADH	fly	FBgn0030605	ND-B18	Q9VXZ0	36	132	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7	w
 NADH	fly	FBgn0030718	ND-20	Q9VXK7	10	117	LD31474p (NADH dehydrogenase (Ubiquinone) 20 kDa subunit, is	w
 NADH	fly	FBgn0030853	ND-24	Q9VX36	15	138	NADH dehydrogenase (Ubiquinone) 24 kDa subunit, isoform A (N	w
-NADH	fly	FBgn0031021	ND-18	Q9VWI0	5	119	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitoc	w
-NADH	fly	FBgn0031228	ND-15	Q7K1C0	7	90	GH23780p (MIP04232p) (NADH dehydrogenase (Ubiquinone) 15 kDa	w
-NADH	fly	FBgn0031436	ND-B17.2	Q9VQD7	9	116	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-NADH	fly	FBgn0031505	ND-B14.5B	Q9VQM2	8	100	NADH dehydrogenase [ubiquinone] 1 subunit C2	w
-NADH	fly	FBgn0031684	ND-13A	Q9VMU0	8	109	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitoc	w
-NADH	fly	FBgn0031771	ND-51	Q9VMI3	13	106	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
-NADH	fly	FBgn0032511	ND-B22	Q9VJZ4	12	126	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
-NADH	fly	FBgn0033570	ND-B14	Q7JZK1	10	121	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
-NADH	fly	FBgn0033891	CG8067	Q7K1S1	3	36	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
-NADH	fly	FBgn0033961	ND-B15	Q6IDF5	7	99	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
+NADH	fly	FBgn0031021	ND-18	Q9VWI0	19	126	NADH dehydrogenase [ubiquinone] iron-sulfur protein 4, mitoc	w
+NADH	fly	FBgn0031228	ND-15	Q7K1C0	28	92	GH23780p (MIP04232p) (NADH dehydrogenase (Ubiquinone) 15 kDa	w
+NADH	fly	FBgn0031436	ND-B17.2	Q9VQD7	21	125	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+NADH	fly	FBgn0031505	ND-B14.5B	Q9VQM2	35	113	NADH dehydrogenase [ubiquinone] 1 subunit C2	w
+NADH	fly	FBgn0031684	ND-13A	Q9VMU0	28	117	NADH dehydrogenase [ubiquinone] iron-sulfur protein 6, mitoc	w
+NADH	fly	FBgn0031771	ND-51	Q9VMI3	24	109	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+NADH	fly	FBgn0032511	ND-B22	Q9VJZ4	36	139	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
+NADH	fly	FBgn0033570	ND-B14	Q7JZK1	46	137	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
+NADH	fly	FBgn0033891	CG8067	Q7K1S1	3	38	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
+NADH	fly	FBgn0033961	ND-B15	Q6IDF5	21	105	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
 NADH	fly	FBgn0034007	ND-51L2	A1Z9Z7	32	333	NADH dehydrogenase (Ubiquinone) 51 kDa subunit-like 2, isofo	w
-NADH	fly	FBgn0034251	ND-51L1	A1ZAW7	8	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
-NADH	fly	FBgn0034576	ND-B14.7	Q7JYH3	4	72	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-NADH	fly	FBgn0034645	ND-B12	Q9W2E8	7	108	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
-NADH	fly	FBgn0034919	NdufAF3	Q9W1H9	9	44	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	w
-NADH	fly	FBgn0035046	ND-19	Q9W125	12	122	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8	w
+NADH	fly	FBgn0034251	ND-51L1	A1ZAW7	17	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+NADH	fly	FBgn0034576	ND-B14.7	Q7JYH3	29	93	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+NADH	fly	FBgn0034645	ND-B12	Q9W2E8	26	113	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
+NADH	fly	FBgn0034919	NdufAF3	Q9W1H9	12	46	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	w
+NADH	fly	FBgn0035046	ND-19	Q9W125	38	137	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8	w
 NADH	fly	FBgn0036663	Glts	M9NFH8	1	37	glutamate synthase (NADH) (EC 1.4.1.14)	w
-NADH	fly	FBgn0036706	ND-24L	Q9VVF0	9	102	AT21479p (NADH dehydrogenase (Ubiquinone) 24 kDa subunit-lik	w
-NADH	fly	FBgn0037001	ND-39	Q9VPE2	10	134	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9	w
-NADH	fly	FBgn0037172	ND-B14.5AL	Q9VNT3	2	84	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
+NADH	fly	FBgn0036706	ND-24L	Q9VVF0	20	105	AT21479p (NADH dehydrogenase (Ubiquinone) 24 kDa subunit-lik	w
+NADH	fly	FBgn0037001	ND-39	Q9VPE2	20	140	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9	w
+NADH	fly	FBgn0037172	ND-B14.5AL	Q9VNT3	10	85	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
 NADH	fly	FBgn0037880	CG17726	Q9VGR2	3	36	Protein arginine methyltransferase NDUFAF7 homolog, mitochon	w
-NADH	fly	FBgn0039669	ND-20L	Q9VAK5	12	100	NADH dehydrogenase (Ubiquinone) 20 kDa subunit-like, isoform	w
-NADH	fly	FBgn0040705	ND-B8	Q9VR00	5	117	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
-NADH	fly	FBgn0047038	ND-13B	Q9VTB4	8	128	NADH dehydrogenase (Ubiquinone) 13 kDa B subunit (RH11203p)	w
-NADH	fly	FBgn0052230	ND-MLRQ	Q8SYJ2	7	73	GEO09626p1 (NADH dehydrogenase (Ubiquinone) MLRQ subunit, is	w
+NADH	fly	FBgn0039669	ND-20L	Q9VAK5	23	104	NADH dehydrogenase (Ubiquinone) 20 kDa subunit-like, isoform	w
+NADH	fly	FBgn0040705	ND-B8	Q9VR00	30	120	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
+NADH	fly	FBgn0047038	ND-13B	Q9VTB4	43	137	NADH dehydrogenase (Ubiquinone) 13 kDa B subunit (RH11203p)	w
+NADH	fly	FBgn0052230	ND-MLRQ	Q8SYJ2	13	75	GEO09626p1 (NADH dehydrogenase (Ubiquinone) MLRQ subunit, is	w
 NADH	fly	FBgn0058002	ND-AGGG	Q7PL91	7	29	GEO11417p1 (NADH dehydrogenase (Ubiquinone) AGGG subunit, is	w
 NADH	fly	FBgn0085468	ND-MWFE	A8DYC4	4	99	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-NADH	fly	FBgn0085736	CG40472	Q7PL91	4	80	GEO11417p1 (NADH dehydrogenase (Ubiquinone) AGGG subunit, is	w
-NADH	fly	FBgn0262952	mt:ND4	P18931	14	130	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	w
-NADH	fly	FBgn0266582	ND-30	Q9VZU4	15	128	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitoc	w
+NADH	fly	FBgn0085736	CG40472	Q7PL91	15	80	GEO11417p1 (NADH dehydrogenase (Ubiquinone) AGGG subunit, is	w
+NADH	fly	FBgn0262952	mt:ND4	P18931	21	132	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	w
+NADH	fly	FBgn0266582	ND-30	Q9VZU4	34	143	NADH dehydrogenase [ubiquinone] iron-sulfur protein 3, mitoc	w
 NADH	human	A0A3B3ISG8	?	A0A3B3ISG8	3	144	NADH dehydrogenase	w
 NADH	human	A1L188	NDUFAF8	A1L188	11	104	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	w
 NADH	human	E7ENQ6	?	E7ENQ6	5	79	NADH dehydrogenase	w
@@ -365,32 +365,32 @@ NADH-CYTOCHROME	zebrafish	Q0P487	cyb5r2	Q0P487	0	12	NADH-cytochrome b5 reductase
 NADH-CYTOCHROME	zebrafish	Q6NYE6	cyb5r3	Q6NYE6	3	18	NADH-cytochrome b5 reductase	w
 NADH-UBIQUIN	human	P49821	NDUFV1	P49821	43	484	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
 NADH-UBIQUINON	human	Q9UI09	NDUFA12	Q9UI09	25	411	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-NADH-UBIQUINONE	fly	FBgn0011455	ND-SGDH	Q9VTU2	10	100	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
-NADH-UBIQUINONE	fly	FBgn0013679	mt:ND1	P18929	19	177	NADH-ubiquinone oxidoreductase chain 1 (EC 7.1.1.2) (NADH de	w
-NADH-UBIQUINONE	fly	FBgn0013680	mt:ND2	P03896	14	110	NADH-ubiquinone oxidoreductase chain 2 (EC 7.1.1.2) (NADH de	w
-NADH-UBIQUINONE	fly	FBgn0013681	mt:ND3	P18930	12	124	NADH-ubiquinone oxidoreductase chain 3 (EC 7.1.1.2) (NADH de	w
-NADH-UBIQUINONE	fly	FBgn0013683	mt:ND4L	P18934	11	110	NADH-ubiquinone oxidoreductase chain 4L (EC 7.1.1.2) (NADH d	w
-NADH-UBIQUINONE	fly	FBgn0013684	mt:ND5	P18932	21	102	NADH-ubiquinone oxidoreductase chain 5 (EC 7.1.1.2) (NADH de	w
-NADH-UBIQUINONE	fly	FBgn0013685	mt:ND6	P18933	7	41	NADH-ubiquinone oxidoreductase chain 6 (EC 7.1.1.2) (NADH de	w
-NADH-UBIQUINONE	fly	FBgn0017566	ND-75	Q94511	27	148	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	w
-NADH-UBIQUINONE	fly	FBgn0019957	ND-42	P91929	12	134	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-NADH-UBIQUINONE	fly	FBgn0025839	ND-B14.5A	O97418	6	110	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
-NADH-UBIQUINONE	fly	FBgn0027785	NP15.6	Q9V3L7	13	145	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	w
-NADH-UBIQUINONE	fly	FBgn0029888	ND-ASHI	Q9W3X7	8	114	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8,	w
-NADH-UBIQUINONE	fly	FBgn0029971	ND-MNLL	Q9W3N7	9	65	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	w
-NADH-UBIQUINONE	fly	FBgn0032511	ND-B22	Q9VJZ4	12	126	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
-NADH-UBIQUINONE	fly	FBgn0033570	ND-B14	Q7JZK1	10	121	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
-NADH-UBIQUINONE	fly	FBgn0033961	ND-B15	Q6IDF5	7	99	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
-NADH-UBIQUINONE	fly	FBgn0034251	ND-51L1	A1ZAW7	8	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
-NADH-UBIQUINONE	fly	FBgn0034576	ND-B14.7	Q7JYH3	4	72	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-NADH-UBIQUINONE	fly	FBgn0034645	ND-B12	Q9W2E8	7	108	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
-NADH-UBIQUINONE	fly	FBgn0037001	ND-39	Q9VPE2	10	134	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9	w
-NADH-UBIQUINONE	fly	FBgn0037172	ND-B14.5AL	Q9VNT3	2	84	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
+NADH-UBIQUINONE	fly	FBgn0011455	ND-SGDH	Q9VTU2	15	101	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5,	w
+NADH-UBIQUINONE	fly	FBgn0013679	mt:ND1	P18929	29	178	NADH-ubiquinone oxidoreductase chain 1 (EC 7.1.1.2) (NADH de	w
+NADH-UBIQUINONE	fly	FBgn0013680	mt:ND2	P03896	20	110	NADH-ubiquinone oxidoreductase chain 2 (EC 7.1.1.2) (NADH de	w
+NADH-UBIQUINONE	fly	FBgn0013681	mt:ND3	P18930	28	124	NADH-ubiquinone oxidoreductase chain 3 (EC 7.1.1.2) (NADH de	w
+NADH-UBIQUINONE	fly	FBgn0013683	mt:ND4L	P18934	21	111	NADH-ubiquinone oxidoreductase chain 4L (EC 7.1.1.2) (NADH d	w
+NADH-UBIQUINONE	fly	FBgn0013684	mt:ND5	P18932	34	102	NADH-ubiquinone oxidoreductase chain 5 (EC 7.1.1.2) (NADH de	w
+NADH-UBIQUINONE	fly	FBgn0013685	mt:ND6	P18933	9	42	NADH-ubiquinone oxidoreductase chain 6 (EC 7.1.1.2) (NADH de	w
+NADH-UBIQUINONE	fly	FBgn0017566	ND-75	Q94511	42	157	NADH-ubiquinone oxidoreductase 75 kDa subunit, mitochondrial	w
+NADH-UBIQUINONE	fly	FBgn0019957	ND-42	P91929	28	142	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+NADH-UBIQUINONE	fly	FBgn0025839	ND-B14.5A	O97418	19	117	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
+NADH-UBIQUINONE	fly	FBgn0027785	NP15.6	Q9V3L7	42	156	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11	w
+NADH-UBIQUINONE	fly	FBgn0029888	ND-ASHI	Q9W3X7	16	125	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8,	w
+NADH-UBIQUINONE	fly	FBgn0029971	ND-MNLL	Q9W3N7	17	67	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1 	w
+NADH-UBIQUINONE	fly	FBgn0032511	ND-B22	Q9VJZ4	36	139	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9 	w
+NADH-UBIQUINONE	fly	FBgn0033570	ND-B14	Q7JZK1	46	137	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6	w
+NADH-UBIQUINONE	fly	FBgn0033961	ND-B15	Q6IDF5	21	105	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4 	w
+NADH-UBIQUINONE	fly	FBgn0034251	ND-51L1	A1ZAW7	17	91	NADH dehydrogenase [ubiquinone] flavoprotein 1, mitochondria	w
+NADH-UBIQUINONE	fly	FBgn0034576	ND-B14.7	Q7JYH3	29	93	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
+NADH-UBIQUINONE	fly	FBgn0034645	ND-B12	Q9W2E8	26	113	NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3 	w
+NADH-UBIQUINONE	fly	FBgn0037001	ND-39	Q9VPE2	20	140	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9	w
+NADH-UBIQUINONE	fly	FBgn0037172	ND-B14.5AL	Q9VNT3	10	85	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7	w
 NADH-UBIQUINONE	fly	FBgn0039331	ND-49L	Q9VBR4	5	100	Complex I-49kD (NADH-ubiquinone oxidoreductase 49 kDa subuni	w
-NADH-UBIQUINONE	fly	FBgn0039909	ND-49	Q9V4E0	16	122	Complex I-49kD (NADH-ubiquinone oxidoreductase 49 kDa subuni	w
-NADH-UBIQUINONE	fly	FBgn0040705	ND-B8	Q9VR00	5	117	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
+NADH-UBIQUINONE	fly	FBgn0039909	ND-49	Q9V4E0	30	130	Complex I-49kD (NADH-ubiquinone oxidoreductase 49 kDa subuni	w
+NADH-UBIQUINONE	fly	FBgn0040705	ND-B8	Q9VR00	30	120	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	w
 NADH-UBIQUINONE	fly	FBgn0085468	ND-MWFE	A8DYC4	4	99	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1	w
-NADH-UBIQUINONE	fly	FBgn0262952	mt:ND4	P18931	14	130	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	w
+NADH-UBIQUINONE	fly	FBgn0262952	mt:ND4	P18931	21	132	NADH-ubiquinone oxidoreductase chain 4 (EC 7.1.1.2) (NADH de	w
 NADH-UBIQUINONE	human	O00217	NDUFS8	O00217	48	488	NADH dehydrogenase [ubiquinone] iron-sulfur protein 8, mitoc	w
 NADH-UBIQUINONE	human	O00483	COXFA4	O00483	42	433	Cytochrome c oxidase subunit FA4 (Complex I-MLRQ) (CI-MLRQ) 	w
 NADH-UBIQUINONE	human	O14561	NDUFAB1	O14561	130	619	Acyl carrier protein, mitochondrial (ACP) (CI-SDAP) (NADH-ub	w
@@ -476,9 +476,9 @@ NADK-1	worm	Q9N4A9	nadk-1	Q9N4A9	1	5	NAD(+) kinase
 NADK-2	worm	Q9XXI5	nadk-2	Q9XXI5	1	2	NAD kinase 2, mitochondrial	
 NADK1	arabidopsis-thaliana	Q56YN3	NADK1	Q56YN3	2	2	NAD(H) kinase 1	
 NADK1A	fly	FBgn0033853	Nadk1a	Q6IDH2	2	23	NAD(+) kinase (EC 2.7.1.23)	
-NADK1B	fly	FBgn0053156	Nadk1b	A1Z9F4	1	19	NAD(+) kinase (EC 2.7.1.23)	
+NADK1B	fly	FBgn0053156	Nadk1b	A1Z9F4	2	21	NAD(+) kinase (EC 2.7.1.23)	
 NADK2	arabidopsis-thaliana	Q9C5W3	NADK2	Q9C5W3	1	6	NAD kinase 2, chloroplastic	
-NADK2	fly	FBgn0033373	Nadk2	A0A0B4KEG0	0	5	NAD kinase 2, mitochondrial (EC 2.7.1.23) (NAD kinase domain	
+NADK2	fly	FBgn0033373	Nadk2	A0A0B4KEG0	1	7	NAD kinase 2, mitochondrial (EC 2.7.1.23) (NAD kinase domain	
 NADK2	human	Q4G0N4	NADK2	Q4G0N4	3	71	NAD kinase 2, mitochondrial (EC 2.7.1.23) (Mitochondrial NAD	
 NADK2	mus-musculus	Q8C5H8	Nadk2	Q8C5H8	2	3	NAD kinase 2, mitochondrial	
 NADK2	pan-troglodytes	H2QQS1	NADK2	H2QQS1	2	2	NAD kinase 2, mitochondrial	
@@ -492,8 +492,8 @@ NADK_HUMAN	human	O95544	NADK	O95544	6	97
 NADL1.1	zebrafish	Q90478	nadl1.1	Q90478	2	10	Neural cell adhesion molecule L1.1	
 NADL1.2	zebrafish	Q90479	nadl1.2	Q90479	0	11	Neural cell adhesion molecule L1.2	
 NADL2_HUMAN	human	Q58DX5	NAALADL2	Q58DX5	8	52		
-NADP	fly	FBgn0001248	Idh	B7Z0E0	9	272	Isocitrate dehydrogenase [NADP] (EC 1.1.1.42)	w
-NADP	fly	FBgn0086450	su(r)	Q9W374	0	53	Dihydropyrimidine dehydrogenase [NADP(+)] (DHPDHase) (DPD) (	w
+NADP	fly	FBgn0001248	Idh	B7Z0E0	11	277	Isocitrate dehydrogenase [NADP] (EC 1.1.1.42)	w
+NADP	fly	FBgn0086450	su(r)	Q9W374	0	55	Dihydropyrimidine dehydrogenase [NADP(+)] (DHPDHase) (DPD) (	w
 NADP	human	O75874	IDH1	O75874	9	295	Isocitrate dehydrogenase [NADP] cytoplasmic (IDH) (IDH1) (EC	w
 NADP	human	P14550	AKR1A1	P14550	5	111	Aldo-keto reductase family 1 member A1 (EC 1.1.1.2) (EC 1.1.	w
 NADP	human	P15121	AKR1B1	P15121	15	229	Aldo-keto reductase family 1 member B1 (EC 1.1.1.21) (EC 1.1	w
@@ -608,7 +608,7 @@ NADR	mycobacterium-tuberculosis	P96394	nadR	P96394	0	2	Possible transcriptional 
 NADR	salmonella-typhimurium	P24518	nadR	P24518	0	6	Trifunctional NAD biosynthesis/regulator protein NadR	
 NADR	shigella-dysenteriae-serotype-1	Q327K5	nadR	Q327K5	0	7	Trifunctional NAD biosynthesis/regulator protein NadR	
 NADR	worm	O01619	unc-132	O01619	0	2	NadR/Ttd14 AAA domain-containing protein	w
-NADSYN	fly	FBgn0030512	Nadsyn	Q9VYA0	1	9	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	
+NADSYN	fly	FBgn0030512	Nadsyn	Q9VYA0	3	16	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	
 NADSYN1	human	Q6IA69	NADSYN1	Q6IA69	6	108	Glutamine-dependent NAD(+) synthetase (EC 6.3.5.1) (NAD(+) s	
 NADSYN1	mus-musculus	Q711T7	Nadsyn1	Q711T7	0	2	Glutamine-dependent NAD(+) synthetase	
 NADSYN1	rattus-norvegicus	Q812E8	Nadsyn1	Q812E8	0	1	Glutamine-dependent NAD(+) synthetase	

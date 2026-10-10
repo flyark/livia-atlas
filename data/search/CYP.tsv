@@ -63,7 +63,7 @@ CYP-M	human	P30405	PPIF	P30405	121	695	Peptidyl-prolyl cis-trans isomerase F, mi
 CYP-S1	human	P23284	PPIB	P23284	101	806	Peptidyl-prolyl cis-trans isomerase B (PPIase B) (EC 5.2.1.8	w
 CYP1	candida-albicans-237561	P22011	CYP1	P22011	1	55	Peptidyl-prolyl cis-trans isomerase	
 CYP1	cladophialophora-carrionii	A0A1C1CPK8	cyp1	A0A1C1CPK8	12	104	Peptidyl-prolyl cis-trans isomerase	
-CYP1	fly	FBgn0004432	Cyp1	P25007	58	493	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	
+CYP1	fly	FBgn0004432	Cyp1	P25007	59	494	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8) (C	
 CYP1	glycine-max	A0A0R0HEL8	CYP1	A0A0R0HEL8	29	417	Peptidyl-prolyl cis-trans isomerase	
 CYP1	glycine-max	Q8W171	Cyp1	Q8W171	34	418	Peptidyl-prolyl cis-trans isomerase 1	
 CYP10	cladophialophora-carrionii	A0A1C1C8R6	CYP10	A0A1C1C8R6	5	59	Peptidyl-prolyl cis-trans isomerase	
@@ -369,10 +369,10 @@ CYP309A2	fly	FBgn0041337	Cyp309a2	P82713	0	2	Probable cytochrome P450 309a2 (EC 
 CYP31	glycine-max	I1J9Q2	CYP31	I1J9Q2	60	423	PPIase cyclophilin-type domain-containing protein	
 CYP310A1	fly	FBgn0032693	Cyp310a1	Q9VJ71	0	6	Probable cytochrome P450 310a1 (EC 1.14.-.-) (CYPCCCXA1)	
 CYP311A1	fly	FBgn0030367	Cyp311a1	Q9VYQ7	0	1	Probable cytochrome P450 311a1 (EC 1.14.-.-) (CYPCCCXIA1)	
-CYP312A1	fly	FBgn0036778	Cyp312a1	Q9VVN6	0	6	Probable cytochrome P450 312a1 (EC 1.14.-.-) (CYPCCCXIIA1)	
+CYP312A1	fly	FBgn0036778	Cyp312a1	Q9VVN6	0	7	Probable cytochrome P450 312a1 (EC 1.14.-.-) (CYPCCCXIIA1)	
 CYP313A1	fly	FBgn0038236	Cyp313a1	Q9VFJ0	2	6	Probable cytochrome P450 313a1 (EC 1.14.-.-) (CYPCCCXIIIA1)	
 CYP313A2	fly	FBgn0038006	Cyp313a2	Q9VGB4	1	5	Probable cytochrome P450 313a2 (EC 1.14.-.-) (CYPCCCXIIIA2)	
-CYP313A3	fly	FBgn0038007	Cyp313a3	Q9VGB3	1	5	Probable cytochrome P450 313a3 (EC 1.14.-.-) (CYPCCCXIIIA3)	
+CYP313A3	fly	FBgn0038007	Cyp313a3	Q9VGB3	1	7	Probable cytochrome P450 313a3 (EC 1.14.-.-) (CYPCCCXIIIA3)	
 CYP313A4	fly	FBgn0038076	Cyp313a4	Q9VG40	1	5	Probable cytochrome P450 313a4 (EC 1.14.-.-) (CYPCCCXIIIA4)	
 CYP313A5	fly	FBgn0038005	Cyp313a5	Q9VGB5	0	5	Probable cytochrome P450 313a5 (EC 1.14.-.-) (CYPCCCXIIIA5)	
 CYP313B1	fly	FBgn0037601	Cyp313b1	Q9VHP4	0	4	Probable cytochrome P450 313b1 (EC 1.14.-.-) (CYPCCCXIIIB1)	
@@ -380,7 +380,7 @@ CYP316A1	fly	FBgn0035790	Cyp316a1	Q9VS78	1	3	Probable cytochrome P450 316a1 (EC 
 CYP317A1	fly	FBgn0033982	Cyp317a1	Q9V776	0	2	Probable cytochrome P450 317a1 (EC 1.14.-.-) (CYPCCCXVIIA1)	
 CYP318A1	fly	FBgn0030369	Cyp318a1	Q9VYQ5	1	5	Probable cytochrome P450 318a1 (EC 1.14.-.-) (CYPCCCXVIIIA1)	
 CYP32	glycine-max	I1LGV6	CYP32	I1LGV6	65	424	Peptidyl-prolyl cis-trans isomerase CYP32	
-CYP33	fly	FBgn0028382	cyp33	Q9V3G3	14	105	Peptidyl-prolyl cis-trans isomerase E (PPIase E) (EC 5.2.1.8	
+CYP33	fly	FBgn0028382	cyp33	Q9V3G3	16	106	Peptidyl-prolyl cis-trans isomerase E (PPIase E) (EC 5.2.1.8	
 CYP33	human	Q9UNP9	PPIE	Q9UNP9	33	287		
 CYP34	glycine-max	A0A0R0HSJ5	CYP34	A0A0R0HSJ5	25	414	Peptidyl-prolyl cis-trans isomerase	
 CYP35	glycine-max	I1LTT0	CYP35	I1LTT0	4	111	peptidylprolyl isomerase	
@@ -865,20 +865,20 @@ CYPCCCIVA1	fly	FBgn0038095	Cyp304a1	Q9VG17	0	1	Probable cytochrome P450 304a1 (E
 CYPCCCIXA1	fly	FBgn0031432	Cyp309a1	Q9VQD2	1	4	Probable cytochrome P450 309a1 (EC 1.14.-.-) (CYPCCCIXA1)	w
 CYPCCCIXA2	fly	FBgn0041337	Cyp309a2	P82713	0	2	Probable cytochrome P450 309a2 (EC 1.14.-.-) (CYPCCCIXA2)	w
 CYPCCCVA1	fly	FBgn0036910	Cyp305a1	Q9VW43	1	3	Probable cytochrome P450 305a1 (EC 1.14.-.-) (CYPCCCVA1)	w
-CYPCCCVIA1	fly	FBgn0004959	phtm	Q9VWR5	1	13	Cytochrome P450 306a1 (CYPCCCVIA1) (EC 1.14.-.-) (Protein ph	w
-CYPCCCVIIA1	fly	FBgn0003486	spo	Q9VRM7	0	8	Cytochrome P450 307a1 (EC 1.14.-.-) (CYPCCCVIIA1) (Protein s	w
+CYPCCCVIA1	fly	FBgn0004959	phtm	Q9VWR5	1	14	Cytochrome P450 306a1 (CYPCCCVIA1) (EC 1.14.-.-) (Protein ph	w
+CYPCCCVIIA1	fly	FBgn0003486	spo	Q9VRM7	0	9	Cytochrome P450 307a1 (EC 1.14.-.-) (CYPCCCVIIA1) (Protein s	w
 CYPCCCVIIIA1	fly	FBgn0030949	Cyp308a1	Q9VWR2	0	1	Probable cytochrome P450 308a1 (EC 1.14.-.-) (CYPCCCVIIIA1)	w
 CYPCCCXA1	fly	FBgn0032693	Cyp310a1	Q9VJ71	0	6	Probable cytochrome P450 310a1 (EC 1.14.-.-) (CYPCCCXA1)	w
 CYPCCCXIA1	fly	FBgn0030367	Cyp311a1	Q9VYQ7	0	1	Probable cytochrome P450 311a1 (EC 1.14.-.-) (CYPCCCXIA1)	w
-CYPCCCXIIA1	fly	FBgn0036778	Cyp312a1	Q9VVN6	0	6	Probable cytochrome P450 312a1 (EC 1.14.-.-) (CYPCCCXIIA1)	w
+CYPCCCXIIA1	fly	FBgn0036778	Cyp312a1	Q9VVN6	0	7	Probable cytochrome P450 312a1 (EC 1.14.-.-) (CYPCCCXIIA1)	w
 CYPCCCXIIIA1	fly	FBgn0038236	Cyp313a1	Q9VFJ0	2	6	Probable cytochrome P450 313a1 (EC 1.14.-.-) (CYPCCCXIIIA1)	w
 CYPCCCXIIIA2	fly	FBgn0038006	Cyp313a2	Q9VGB4	1	5	Probable cytochrome P450 313a2 (EC 1.14.-.-) (CYPCCCXIIIA2)	w
-CYPCCCXIIIA3	fly	FBgn0038007	Cyp313a3	Q9VGB3	1	5	Probable cytochrome P450 313a3 (EC 1.14.-.-) (CYPCCCXIIIA3)	w
+CYPCCCXIIIA3	fly	FBgn0038007	Cyp313a3	Q9VGB3	1	7	Probable cytochrome P450 313a3 (EC 1.14.-.-) (CYPCCCXIIIA3)	w
 CYPCCCXIIIA4	fly	FBgn0038076	Cyp313a4	Q9VG40	1	5	Probable cytochrome P450 313a4 (EC 1.14.-.-) (CYPCCCXIIIA4)	w
 CYPCCCXIIIA5	fly	FBgn0038005	Cyp313a5	Q9VGB5	0	5	Probable cytochrome P450 313a5 (EC 1.14.-.-) (CYPCCCXIIIA5)	w
 CYPCCCXIIIB1	fly	FBgn0037601	Cyp313b1	Q9VHP4	0	4	Probable cytochrome P450 313b1 (EC 1.14.-.-) (CYPCCCXIIIB1)	w
-CYPCCCXIVA1	fly	FBgn0003388	shd	Q9VUF8	0	9	Ecdysone 20-monooxygenase (E20MO) (EC 1.14.99.22) (CYPCCCXIV	w
-CYPCCCXVA1	fly	FBgn0003312	sad	Q9VGH1	1	4	Cytochrome P450 315a1, mitochondrial (EC 1.14.99.-) (CYPCCCX	w
+CYPCCCXIVA1	fly	FBgn0003388	shd	Q9VUF8	1	11	Ecdysone 20-monooxygenase (E20MO) (EC 1.14.99.22) (CYPCCCXIV	w
+CYPCCCXVA1	fly	FBgn0003312	sad	Q9VGH1	1	7	Cytochrome P450 315a1, mitochondrial (EC 1.14.99.-) (CYPCCCX	w
 CYPCCCXVIA1	fly	FBgn0035790	Cyp316a1	Q9VS78	1	3	Probable cytochrome P450 316a1 (EC 1.14.-.-) (CYPCCCXVIA1)	w
 CYPCCCXVIIA1	fly	FBgn0033982	Cyp317a1	Q9V776	0	2	Probable cytochrome P450 317a1 (EC 1.14.-.-) (CYPCCCXVIIA1)	w
 CYPCCCXVIIIA1	fly	FBgn0030369	Cyp318a1	Q9VYQ5	1	5	Probable cytochrome P450 318a1 (EC 1.14.-.-) (CYPCCCXVIIIA1)	w
@@ -887,7 +887,7 @@ CYPD	human	P30405	PPIF	P30405	121	695	Peptidyl-prolyl cis-trans isomerase F, mit
 CYPD	human	Q08752	PPID	Q08752	33	221		
 CYPD	salmonella-typhimurium	Q8ZRB8	cypD	Q8ZRB8	2	13	Periplasmic chaperone PpiD	
 CYPE	dictyostelium-discoideum	Q9NI62	cypE	Q9NI62	5	87	Peptidyl-prolyl cis-trans isomerase cypE	
-CYPE	fly	FBgn0015031	cype	Q9VMS1	20	101	Cyclope, isoform A (Cyclope, isoform B) (Cyclope, isoform C)	
+CYPE	fly	FBgn0015031	cype	Q9VMS1	49	116	Cyclope, isoform A (Cyclope, isoform B) (Cyclope, isoform C)	
 CYPH	human	O43447	PPIH	O43447	38	255		
 CYPHER	fly	FBgn0030001	cyr	Q9W3K2	1	2	Cypher, isoform B (Cypher, isoform C) (FI18759p1)	w
 CYPHER	human	O75112	LDB3	O75112	9	49	LIM domain-binding protein 3 (Protein cypher) (Z-band altern	w
@@ -944,7 +944,7 @@ CYPIXC1	fly	FBgn0015040	Cyp9c1	Q9W130	0	3	Cytochrome P450 9c1 (EC 1.14.-.-) (CYP
 CYPIXF2	fly	FBgn0038037	Cyp9f2	Q9VG82	1	31	Probable cytochrome P450 9f2 (EC 1.14.-.-) (CYPIXF2)	w
 CYPIXH1	fly	FBgn0033775	Cyp9h1	Q9V6H1	0	3	Probable cytochrome P450 9h1 (EC 1.14.-.-) (CYPIXH1)	w
 CYPJ	human	Q9H2H8	PPIL3	Q9H2H8	25	131	Peptidyl-prolyl cis-trans isomerase-like 3 (PPIase) (EC 5.2.	w
-CYPL	fly	FBgn0035141	Cypl	Q9W0Q2	11	94	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	
+CYPL	fly	FBgn0035141	Cypl	Q9W0Q2	14	95	Peptidyl-prolyl cis-trans isomerase (PPIase) (EC 5.2.1.8)	
 CYPL1	human	Q9Y3C6	PPIL1	Q9Y3C6	30	281		
 CYPLI	human	Q16850	CYP51A1	Q16850	11	209	Lanosterol 14-alpha demethylase (LDM) (EC 1.14.14.154) (CYPL	w
 CYPOR	human	P16435	POR	P16435	13	259		

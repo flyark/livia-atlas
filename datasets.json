@@ -24,7 +24,8 @@
    "datasets": [
     "flypredictome",
     "afdb-het-7227",
-    "mitomatch-7227"
+    "mitomatch-7227",
+    "dmelppi"
    ],
    "structs": true
   },
@@ -3078,6 +3079,24 @@
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7b-mitomatch/livia-atlas-mitomatch-7227.zip",
     "offsets": "data/screens/mitomatch-7227/offsets.json"
+   }
+  },
+  {
+   "id": "dmelppi",
+   "license": "CC BY 4.0",
+   "species": "fly",
+   "title": "DmelPPI: a predicted structural interactome of Drosophila melanogaster",
+   "short": "DmelPPI",
+   "color": "#5B6FA8",
+   "base": "data/screens/dmelppi/",
+   "status": "live",
+   "models": 1,
+   "modelsNote": "of the five AlphaFold2-Multimer models the authors folded per pair, they released the one they ranked highest, and that one is scored; this screen serves scores, maps and sequences, not models, and its pTM column is empty because the deposition carries ipTM only",
+   "source": "Peng & Zhao 2026 · DmelPPI",
+   "paper": "https://doi.org/10.1371/journal.pcbi.1013899",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7b-dmelppi/livia-atlas-dmelppi.zip",
+    "offsets": "data/screens/dmelppi/offsets.json"
    }
   },
   {

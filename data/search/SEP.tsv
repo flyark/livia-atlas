@@ -1,7 +1,7 @@
 SEP	human	O43157	PLXNB1	O43157	45	244		
 SEP-1	worm	G5ED39	sep-1	G5ED39	1	28	Separin homolog sep-1	w
 SEP-1	worm	G5ED39	sep-1	G5ED39	1	28	Separin homolog sep-1	w
-SEP-TRNA	fly	FBgn0037347	SecS	Q9VNE3	0	8	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	w
+SEP-TRNA	fly	FBgn0037347	SecS	Q9VNE3	0	9	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	w
 SEP1	arabidopsis-thaliana	P29382	SEP1	P29382	20	29	Developmental protein SEPALLATA 1	
 SEP1	arabidopsis-thaliana	Q9M7I9	SEP1	Q9M7I9	2	181	Stress enhanced protein 1, chloroplastic	
 SEP1	fly	FBgn0011710	Septin1	P42207	10	183		
@@ -26,7 +26,7 @@ SEP7	candida-albicans-237561	Q59VX8	SEP7	Q59VX8	5	9	Septation protein 7
 SEPA	dictyostelium-discoideum	Q8T2I8	sepA	Q8T2I8	0	7	Serine/threonine-protein kinase sepA	
 SEPA-1	worm	G5EC37	sepa-1	G5EC37	0	10	Protein sepa-1	w
 SEPA-1	worm	G5EC37	sepa-1	G5EC37	0	10	Protein sepa-1	w
-SEPARASE	fly	FBgn0035627	Sse	Q9VRN6	3	46	separase (EC 3.4.22.49)	w
+SEPARASE	fly	FBgn0035627	Sse	Q9VRN6	4	51	separase (EC 3.4.22.49)	w
 SEPARASE	human	Q14674	ESPL1	Q14674	35	470	Separin (EC 3.4.22.49) (Caspase-like protein ESPL1) (Extra s	w
 SEPARASE	worm	Q23491	CELE_ZK430.5	Q23491	1	10	separase	w
 SEPARATE	fly	FBgn0290467	ssep	A1Z755	0	0	sisters separate	w
@@ -46,8 +46,8 @@ SEPHS1	rattus-norvegicus	D3ZFY0	Sephs1	D3ZFY0	2	8	Selenide, water dikinase 1
 SEPHS1	zebrafish	Q7ZW38	sephs1	Q7ZW38	1	6	Selenide, water dikinase 1	
 SEPHS2	human	Q99611	SEPHS2	Q99611	6	108	Selenide, water dikinase 2 (EC 2.7.9.3) (Selenium donor prot	
 SEPIA	fly	FBgn0086348	se	Q9VSL3	17	103	Pyrimidodiazepine synthase (EC 1.5.4.1) (Protein sepia)	w
-SEPIAPTERIN	fly	FBgn0003141	pr	P48611	1	64	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
-SEPIAPTERIN	fly	FBgn0014032	Sptr	O76752	1	6	Sepiapterin reductase (EC 1.1.1.153)	w
+SEPIAPTERIN	fly	FBgn0003141	pr	P48611	1	70	6-pyruvoyl tetrahydrobiopterin synthase (PTP synthase) (PTPS	w
+SEPIAPTERIN	fly	FBgn0014032	Sptr	O76752	1	16	Sepiapterin reductase (EC 1.1.1.153)	w
 SEPIAPTERIN	human	P35270	SPR	P35270	12	167	Sepiapterin reductase (SPR) (EC 1.1.1.153)	w
 SEPIAPTERIN	zebrafish	A0A8M1N6P5	spra	A0A8M1N6P5	4	4	Sepiapterin reductase	w
 SEPIAPTERIN	zebrafish	B3DJY2	sprb	B3DJY2	2	11	Sepiapterin reductase	w
@@ -209,7 +209,7 @@ SEPT8_HUMAN	human	Q92599	SEPTIN8	Q92599	15	139
 SEPT9	human	Q9UHD8	SEPTIN9	Q9UHD8	35	318		
 SEPT9B	zebrafish	Q58EK7	septin9b	Q58EK7	11	15	Sept9b protein	w
 SEPT9_HUMAN	human	Q9UHD8	SEPTIN9	Q9UHD8	35	318		
-SEPTIN	fly	FBgn0024191	sip1	Q9Y103	71	348	Septin-interacting protein 1 (Septin and tuftelin-interactin	w
+SEPTIN	fly	FBgn0024191	sip1	Q9Y103	73	348	Septin-interacting protein 1 (Septin and tuftelin-interactin	w
 SEPTIN	fly	FBgn0026361	Septin5	Q7KLG8	4	7	Septin	w
 SEPTIN	fly	FBgn0031878	sip2	Q7KTL5	13	68	LD08056p (Septin interacting protein 2, isoform B)	w
 SEPTIN	fly	FBgn0259923	Septin4	Q0KHR7	12	104	Septin	w
@@ -245,8 +245,8 @@ SEPTIN-8-A	zebrafish	Q642H3	sept8a	Q642H3	11	15	Septin-8-A	w
 SEPTIN-8-B	zebrafish	A4FUM1	sept8b	A4FUM1	11	15	Septin-8-B	w
 SEPTIN-9	human	Q9UHD8	SEPTIN9	Q9UHD8	35	318	Septin-9 (MLL septin-like fusion protein MSF-A) (MLL septin-	w
 SEPTIN-ASSOCIATED	human	Q6ZSZ5	ARHGEF18	Q6ZSZ5	30	86	Rho guanine nucleotide exchange factor 18 (114 kDa Rho-speci	w
-SEPTIN-INTERACTING	fly	FBgn0024191	sip1	Q9Y103	71	348	Septin-interacting protein 1 (Septin and tuftelin-interactin	w
-SEPTIN-INTERACTING	fly	FBgn0039875	sip3	Q95SP2	12	64	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	w
+SEPTIN-INTERACTING	fly	FBgn0024191	sip1	Q9Y103	73	348	Septin-interacting protein 1 (Septin and tuftelin-interactin	w
+SEPTIN-INTERACTING	fly	FBgn0039875	sip3	Q95SP2	15	66	E3 ubiquitin-protein ligase HRD1 (EC 2.3.2.27) (RING-type E3	w
 SEPTIN-LIKE	human	Q9UHD8	SEPTIN9	Q9UHD8	35	318	Septin-9 (MLL septin-like fusion protein MSF-A) (MLL septin-	w
 SEPTIN-TYPE	worm	Q8I4C9	unc-61	Q8I4C9	1	5	Septin-type G domain-containing protein	w
 SEPTIN1	fly	FBgn0011710	Septin1	P42207	10	183	Septin-1 (DIFF6 protein homolog) (Protein innocent bystander	

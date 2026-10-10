@@ -5,10 +5,10 @@ HEX-3	worm	G5EDG9	hex-3	G5EDG9	0	6	beta-N-acetylhexosaminidase
 HEX-4	worm	Q8WTK2	hex-4	Q8WTK2	0	6	beta-N-acetylhexosaminidase	
 HEX-5	worm	G5EEC8	hex-5	G5EEC8	1	7	beta-N-acetylhexosaminidase	
 HEX-A	fly	FBgn0001186	Hex-A	Q9W330	29	258	Phosphotransferase (EC 2.7.1.-)	
-HEX-C	fly	FBgn0001187	Hex-C	Q7JYW9	7	108	Phosphotransferase (EC 2.7.1.-)	
-HEX-T	fly	FBgn0042710	Hex-T	Q9NFT7	6	100	Hexokinase type 2 (EC 2.7.1.1)	
-HEX-T1	fly	FBgn0042711	Hexl	Q9NFT9	3	101		
-HEX-T2	fly	FBgn0042710	Hex-T	Q9NFT7	6	100		
+HEX-C	fly	FBgn0001187	Hex-C	Q7JYW9	8	112	Phosphotransferase (EC 2.7.1.-)	
+HEX-T	fly	FBgn0042710	Hex-T	Q9NFT7	10	107	Hexokinase type 2 (EC 2.7.1.1)	
+HEX-T1	fly	FBgn0042711	Hexl	Q9NFT9	3	105		
+HEX-T2	fly	FBgn0042710	Hex-T	Q9NFT7	10	107		
 HEX1	candida-albicans-237561	A0A1D8PNR7	HEX1	A0A1D8PNR7	0	1	Beta-hexosaminidase	
 HEX1	cladophialophora-carrionii	A0A1C1CZQ5	HEX1	A0A1C1CZQ5	0	1	Beta-hexosaminidase	
 HEX1	human	Q9UQ84	EXO1	Q9UQ84	24	193		
@@ -22,7 +22,7 @@ HEXA-AS1	human	Q9H8Q6	HEXA-AS1	Q9H8Q6	0	1	Putative uncharacterized protein encod
 HEXA1	dictyostelium-discoideum	P13723	hexa1	P13723	3	4	Beta-hexosaminidase subunit A1	
 HEXA2	dictyostelium-discoideum	Q54SC9	hexa2	Q54SC9	4	4	Beta-hexosaminidase subunit A2	
 HEXABRACHION	human	P24821	TNC	P24821	14	158	Tenascin (TN) (Cytotactin) (GMEM) (GP 150-225) (Glioma-assoc	w
-HEXAGON	fly	FBgn0015926	dah	Q24175	3	24	Discontinuous actin hexagon (LD05408p)	w
+HEXAGON	fly	FBgn0015926	dah	Q24175	4	25	Discontinuous actin hexagon (LD05408p)	w
 HEXAKISPHOSPHATE	human	O43314	PPIP5K2	O43314	9	101	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
 HEXAKISPHOSPHATE	human	Q6PFW1	PPIP5K1	Q6PFW1	3	58	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
 HEXAKISPHOSPHATE	human	Q92551	IP6K1	Q92551	3	121	Inositol hexakisphosphate kinase 1 (InsP6 kinase 1) (EC 2.7.	w
@@ -35,8 +35,8 @@ HEXAKISPHOSPHATE	zebrafish	E7F4I8	ppip5k1b	E7F4I8	0	6	Inositol hexakisphosphate 
 HEXAKISPHOSPHATE	zebrafish	E7FFN5	ppip5k1a	E7FFN5	1	6	Inositol hexakisphosphate and diphosphoinositol-pentakisphos	w
 HEXAMERIN-1-ALPHA	fly	FBgn0002562	Lsp1alpha	P11995	5	250	Larval serum protein 1 alpha chain (Hexamerin-1-alpha)	w
 HEXAMERIN-1-BETA	fly	FBgn0002563	Lsp1beta	P11996	7	253	Larval serum protein 1 beta chain (Hexamerin-1-beta)	w
-HEXAMERIN-1-GAMMA	fly	FBgn0002564	Lsp1gamma	P11997	2	252	Larval serum protein 1 gamma chain (Hexamerin-1-gamma)	w
-HEXAMERIN-2	fly	FBgn0002565	Lsp2	Q24388	5	287	Larval serum protein 2 (LSP-2) (Hexamerin-2)	w
+HEXAMERIN-1-GAMMA	fly	FBgn0002564	Lsp1gamma	P11997	3	252	Larval serum protein 1 gamma chain (Hexamerin-1-gamma)	w
+HEXAMERIN-2	fly	FBgn0002565	Lsp2	Q24388	6	287	Larval serum protein 2 (LSP-2) (Hexamerin-2)	w
 HEXAMETHYLENE	fly	FBgn0038251	Hexim	Q8INF6	10	47	Hexamethylene bisacetamide inducible, isoform B	w
 HEXAMETHYLENE	human	O94992	HEXIM1	O94992	120	967	Protein HEXIM1 (Cardiac lineage protein 1) (Estrogen down-re	w
 HEXAMETHYLENE	human	Q96MH2	HEXIM2	Q96MH2	11	124	Protein HEXIM2 (Hexamethylene bis-acetamide-inducible protei	w
@@ -76,18 +76,18 @@ HEXIM1	zebrafish	A5D8S8	hexim1	A5D8S8	3	46	Protein HEXIM1	w
 HEXIM2	human	Q96MH2	HEXIM2	Q96MH2	11	124	Protein HEXIM2 (Hexamethylene bis-acetamide-inducible protei	
 HEXIM2	mus-musculus	Q3TVI4	Hexim2	Q3TVI4	3	16	Protein HEXIM2	
 HEXIM2	rattus-norvegicus	A6HJQ2	Hexim2	A6HJQ2	5	17	HEXIM P-TEFb complex subunit 2	
-HEXL	fly	FBgn0042711	Hexl	Q9NFT9	3	101	Hexokinase type 1 (EC 2.7.1.1)	
+HEXL	fly	FBgn0042711	Hexl	Q9NFT9	3	105	Hexokinase type 1 (EC 2.7.1.1)	
 HEXO1	arabidopsis-thaliana	A7WM73	HEXO1	A7WM73	2	8	Beta-hexosaminidase 1	
-HEXO1	fly	FBgn0041630	Hexo1	Q0E8H9	2	12	beta-N-acetylhexosaminidase (EC 3.2.1.52)	
+HEXO1	fly	FBgn0041630	Hexo1	Q0E8H9	2	18	beta-N-acetylhexosaminidase (EC 3.2.1.52)	
 HEXO1	human	Q9UQ84	EXO1	Q9UQ84	24	193	Exonuclease 1 (hExo1) (EC 3.1.-.-) (Exonuclease I) (hExoI)	w
 HEXO2	arabidopsis-thaliana	Q9SYK0	HEXO2	Q9SYK0	1	6	Beta-hexosaminidase 2	
 HEXO2	cladophialophora-carrionii	A0A1C1CYN3	HEXO2	A0A1C1CYN3	0	1	Beta-hexosaminidase	
-HEXO2	fly	FBgn0041629	Hexo2	Q9W3C4	25	257	beta-N-acetylhexosaminidase (EC 3.2.1.52)	
+HEXO2	fly	FBgn0041629	Hexo2	Q9W3C4	27	261	beta-N-acetylhexosaminidase (EC 3.2.1.52)	
 HEXO3	arabidopsis-thaliana	Q8L7S6	HEXO3	Q8L7S6	1	5	Beta-hexosaminidase 3	
 HEXO5	human	Q9H790	EXO5	Q9H790	9	40	Exonuclease V (Exo V) (hExo5) (EC 3.1.-.-) (Defects in morph	w
 HEXOI	human	Q9UQ84	EXO1	Q9UQ84	24	193	Exonuclease 1 (hExo1) (EC 3.1.-.-) (Exonuclease I) (hExoI)	w
-HEXOKINASE	fly	FBgn0042710	Hex-T	Q9NFT7	6	100	Hexokinase type 2 (EC 2.7.1.1)	w
-HEXOKINASE	fly	FBgn0042711	Hexl	Q9NFT9	3	101	Hexokinase type 1 (EC 2.7.1.1)	w
+HEXOKINASE	fly	FBgn0042710	Hex-T	Q9NFT7	10	107	Hexokinase type 2 (EC 2.7.1.1)	w
+HEXOKINASE	fly	FBgn0042711	Hexl	Q9NFT9	3	105	Hexokinase type 1 (EC 2.7.1.1)	w
 HEXOKINASE	human	P19367	HK1	P19367	6	258	Hexokinase-1 (EC 2.7.1.1) (Brain form hexokinase) (Hexokinas	w
 HEXOKINASE	human	P35557	GCK	P35557	2	97	Hexokinase-4 (HK4) (EC 2.7.1.1) (Glucokinase) (Hexokinase ty	w
 HEXOKINASE	human	P52789	HK2	P52789	2	147	Hexokinase-2 (EC 2.7.1.1) (Hexokinase type II) (HK II) (Hexo	w
@@ -371,8 +371,8 @@ HEXOSE-6-PHOSPHATE	human	O95479	H6PD	O95479	5	255	GDH/6PGL endoplasmic bifunctio
 HEXOSE-BINDING	zebrafish	E9QFM3	hbl2	E9QFM3	1	9	Hexose-binding lectin 2	w
 HEXOSYLTRANSFERASE	fly	FBgn0030662	Chsy	Q7KUZ9	131	2380	Hexosyltransferase (EC 2.4.1.-)	w
 HEXOSYLTRANSFERASE	fly	FBgn0031986	CG8673	Q9VLT0	287	2394	Hexosyltransferase (EC 2.4.1.-)	w
-HEXOSYLTRANSFERASE	fly	FBgn0033315	beta3GalTII	A1Z7G9	158	2386	Hexosyltransferase (EC 2.4.1.-)	w
-HEXOSYLTRANSFERASE	fly	FBgn0033500	Csgalnact	A1Z863	92	2384	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0033315	beta3GalTII	A1Z7G9	158	2388	Hexosyltransferase (EC 2.4.1.-)	w
+HEXOSYLTRANSFERASE	fly	FBgn0033500	Csgalnact	A1Z863	92	2385	Hexosyltransferase (EC 2.4.1.-)	w
 HEXOSYLTRANSFERASE	fly	FBgn0035558	CG11357	Q9VZA6	280	2611	Hexosyltransferase (EC 2.4.1.-)	w
 HEXOSYLTRANSFERASE	fly	FBgn0040373	CG3038	Q95RP8	589	2383	Hexosyltransferase (EC 2.4.1.-)	w
 HEXOSYLTRANSFERASE	fly	FBgn0050036	CG30036	A1Z8R4	116	2385	Hexosyltransferase (EC 2.4.1.-)	w

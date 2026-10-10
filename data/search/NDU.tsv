@@ -17,7 +17,7 @@ NDUA6_HUMAN	human	P56556	NDUFA6	P56556	14	320
 NDUA7_HUMAN	human	O95182	NDUFA7	O95182	15	320		
 NDUA8_HUMAN	human	P51970	NDUFA8	P51970	22	366		
 NDUA9_HUMAN	human	Q16795	NDUFA9	Q16795	21	442		
-NDUAA_DROME	fly	FBgn0019957	ND-42	P91929	12	134		
+NDUAA_DROME	fly	FBgn0019957	ND-42	P91929	28	142		
 NDUAA_HUMAN	human	O95299	NDUFA10	O95299	25	227		
 NDUAB_HUMAN	human	Q86Y39	NDUFA11	Q86Y39	6	151		
 NDUAC_CAEEL	worm	Q9N2W7	ndua-12	Q9N2W7	6	102		
@@ -58,7 +58,7 @@ NDUF-9	worm	Q9N3H3	nduf-9	Q9N3H3	9	136	NADH dehydrogenase
 NDUF2_HUMAN	human	Q8N183	NDUFAF2	Q8N183	12	175		
 NDUF3_DANRE	zebrafish	A1L1F1	ndufaf3	A1L1F1	6	40		
 NDUF3_HUMAN	human	Q9BU61	NDUFAF3	Q9BU61	14	187		
-NDUF4_DROME	fly	FBgn0037777	NdufAF4	Q9VH39	1	42		
+NDUF4_DROME	fly	FBgn0037777	NdufAF4	Q9VH39	2	43		
 NDUF4_HUMAN	human	Q9P032	NDUFAF4	Q9P032	13	218		
 NDUF5_DANRE	zebrafish	A3KP37	ndufaf5	A3KP37	5	46		
 NDUF5_HUMAN	human	Q5TEU4	NDUFAF5	Q5TEU4	10	159		
@@ -108,7 +108,7 @@ NDUFA2	rattus-norvegicus	A0A8I5ZKJ3	Ndufa2	A0A8I5ZKJ3	8	9	NADH dehydrogenase [ub
 NDUFA2	rattus-norvegicus	D3ZS58	Ndufa2	D3ZS58	9	199	NADH dehydrogenase	
 NDUFA2	zebrafish	Q4VBI5	ndufa2	Q4VBI5	14	238	NADH dehydrogenase	
 NDUFA2.L	xenopus-laevis	A0A1L8GWZ4	ndufa2.L	A0A1L8GWZ4	4	6	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2	
-NDUFA3	fly	FBgn0040931	NdufA3	Q9W380	4	46	RH45008p	
+NDUFA3	fly	FBgn0040931	NdufA3	Q9W380	14	54	RH45008p	
 NDUFA3	human	O95167	NDUFA3	O95167	34	346	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 3	
 NDUFA3	mus-musculus	Q9CQ91	Ndufa3	Q9CQ91	4	122	NADH dehydrogenase	
 NDUFA3	pan-troglodytes	Q0MQ96	NDUFA3	Q0MQ96	2	2	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 3	
@@ -171,7 +171,7 @@ NDUFAB1	pan-troglodytes	Q0MQC3	NDUFAB1	Q0MQC3	23	23	Acyl carrier protein, mitoch
 NDUFAB1	rattus-norvegicus	D3ZF13	Ndufab1	D3ZF13	92	508	Acyl carrier protein	
 NDUFAB1.L	xenopus-laevis	Q3B8C5	ndufab1.L	Q3B8C5	18	18	Acyl carrier protein	
 NDUFAB1B	zebrafish	F1QCE9	ndufab1b	F1QCE9	64	429	Acyl carrier protein	
-NDUFAF1	fly	FBgn0039689	NdufAF1	Q9VAI1	6	35	Complex I intermediate-associated protein 30, mitochondrial	
+NDUFAF1	fly	FBgn0039689	NdufAF1	Q9VAI1	7	41	Complex I intermediate-associated protein 30, mitochondrial	
 NDUFAF1	human	Q9Y375	NDUFAF1	Q9Y375	23	214	Complex I intermediate-associated protein 30, mitochondrial 	
 NDUFAF1	mus-musculus	Q9CWX2	Ndufaf1	Q9CWX2	12	74	Complex I intermediate-associated protein 30, mitochondrial	
 NDUFAF1	pan-troglodytes	H2Q979	NDUFAF1	H2Q979	7	7	Complex I intermediate-associated protein 30, mitochondrial	
@@ -183,14 +183,14 @@ NDUFAF2	pan-troglodytes	K7BBH1	NDUFAF2	K7BBH1	3	3	NADH dehydrogenase (Ubiquinone
 NDUFAF2	rattus-norvegicus	A0A0G2JZF6	Ndufaf2	A0A0G2JZF6	8	48	NADH:ubiquinone oxidoreductase complex assembly factor 2	
 NDUFAF2	zebrafish	A9C3R5	ndufaf2	A9C3R5	2	33	NADH dehydrogenase	
 NDUFAF2.L	xenopus-laevis	Q5U569	ndufaf2.L	Q5U569	1	1	LOC495351 protein	
-NDUFAF3	fly	FBgn0034919	NdufAF3	Q9W1H9	9	44	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	
+NDUFAF3	fly	FBgn0034919	NdufAF3	Q9W1H9	12	46	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	
 NDUFAF3	human	Q9BU61	NDUFAF3	Q9BU61	14	187	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	
 NDUFAF3	mus-musculus	Q9JKL4	Ndufaf3	Q9JKL4	7	63	NADH dehydrogenase	
 NDUFAF3	pan-troglodytes	H2QMK7	NDUFAF3	H2QMK7	7	7	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	
 NDUFAF3	rattus-norvegicus	O08776	Ndufaf3	O08776	7	43	NADH dehydrogenase	
 NDUFAF3	zebrafish	A1L1F1	ndufaf3	A1L1F1	6	40	NADH dehydrogenase	
-NDUFAF4	fly	FBgn0037777	NdufAF4	Q9VH39	1	42	Protein NDUFAF4 homolog	w
-NDUFAF4	fly	FBgn0037777	NdufAF4	Q9VH39	1	42	Protein NDUFAF4 homolog	w
+NDUFAF4	fly	FBgn0037777	NdufAF4	Q9VH39	2	43	Protein NDUFAF4 homolog	w
+NDUFAF4	fly	FBgn0037777	NdufAF4	Q9VH39	2	43	Protein NDUFAF4 homolog	w
 NDUFAF4	human	Q9P032	NDUFAF4	Q9P032	13	218	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	
 NDUFAF4	mus-musculus	Q9D1H6	Ndufaf4	Q9D1H6	2	53	NADH dehydrogenase	
 NDUFAF4	pan-troglodytes	H2QTF6	NDUFAF4	H2QTF6	1	1	NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly 	
@@ -199,7 +199,7 @@ NDUFAF4	zebrafish	A0A8M1RMT7	ndufaf4	A0A8M1RMT7	1	1	NADH dehydrogenase [ubiquino
 NDUFAF4	zebrafish	E7FDX3	ndufaf4	E7FDX3	1	30	NADH dehydrogenase	
 NDUFAF5	cladophialophora-carrionii	A0A1C1C6U2	NDUFAF5	A0A1C1C6U2	1	4	NADH dehydrogenase	
 NDUFAF5	dictyostelium-discoideum	Q54JW0	ndufaf5	Q54JW0	2	3	Arginine-hydroxylase NDUFAF5, mitochondrial	
-NDUFAF5	fly	FBgn0033891	CG8067	Q7K1S1	3	36	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
+NDUFAF5	fly	FBgn0033891	CG8067	Q7K1S1	3	38	Arginine-hydroxylase NDUFAF5, mitochondrial (NADH dehydrogen	w
 NDUFAF5	human	Q5TEU4	NDUFAF5	Q5TEU4	10	159	Arginine-hydroxylase NDUFAF5, mitochondrial (EC 1.-.-.-) (NA	
 NDUFAF5	mus-musculus	A2APY7	Ndufaf5	A2APY7	6	39	Arginine-hydroxylase NDUFAF5, mitochondrial	
 NDUFAF5	pan-troglodytes	H2QJZ4	NDUFAF5	H2QJZ4	5	5	Chromosome 20 open reading frame 7	
@@ -382,7 +382,7 @@ NDUFV2	pan-troglodytes	Q0MQI9	NDUFV2	Q0MQI9	3	3	NADH dehydrogenase [ubiquinone] 
 NDUFV2	rattus-norvegicus	P19234	Ndufv2	P19234	9	252	NADH dehydrogenase	
 NDUFV2	zebrafish	Q6PBX8	ndufv2	Q6PBX8	16	233	NADH dehydrogenase	
 NDUFV2.L	xenopus-laevis	A0A1L8FYH9	ndufv2.L	A0A1L8FYH9	3	3	NADH dehydrogenase [ubiquinone] flavoprotein 2, mitochondria	
-NDUFV3	fly	FBgn0030292	NdufV3	Q9VZ01	3	55	RH44935p	
+NDUFV3	fly	FBgn0030292	NdufV3	Q9VZ01	9	63	RH44935p	
 NDUFV3	human	M5A8F1	ERVH48-1	M5A8F1	1	5	Suppressyn (Endogenous retrovirus group 48 member 1) (NDUFV3	w
 NDUFV3	human	P56181	NDUFV3	P56181	20	254	NADH dehydrogenase [ubiquinone] flavoprotein 3, mitochondria	
 NDUFV3	mus-musculus	Q8BK30	Ndufv3	Q8BK30	5	117	NADH dehydrogenase	
@@ -397,12 +397,12 @@ NDUO-3	worm	P24895	nduo-3	P24895	9	76	NADH-ubiquinone oxidoreductase chain 3
 NDUO-4	worm	P24892	nduo-4	P24892	11	92	NADH-ubiquinone oxidoreductase chain 4	
 NDUO-5	worm	P24896	nduo-5	P24896	10	81	NADH-ubiquinone oxidoreductase chain 5	
 NDUS-8	worm	Q22619	ndus-8	Q22619	16	147	Probable NADH dehydrogenase	
-NDUS1_DROME	fly	FBgn0017566	ND-75	Q94511	27	148		
+NDUS1_DROME	fly	FBgn0017566	ND-75	Q94511	42	157		
 NDUS1_HUMAN	human	P28331	NDUFS1	P28331	48	479		
 NDUS2_HUMAN	human	O75306	NDUFS2	O75306	31	544		
-NDUS3_DROME	fly	FBgn0266582	ND-30	Q9VZU4	15	128		
+NDUS3_DROME	fly	FBgn0266582	ND-30	Q9VZU4	34	143		
 NDUS3_HUMAN	human	O75489	NDUFS3	O75489	32	518		
-NDUS4_DROME	fly	FBgn0031021	ND-18	Q9VWI0	5	119		
+NDUS4_DROME	fly	FBgn0031021	ND-18	Q9VWI0	19	126		
 NDUS4_HUMAN	human	O43181	NDUFS4	O43181	17	363		
 NDUS5_HUMAN	human	O43920	NDUFS5	O43920	27	305		
 NDUS6_CAEEL	worm	Q19724	nduf-6	Q19724	10	100		
@@ -410,7 +410,7 @@ NDUS6_HUMAN	human	O75380	NDUFS6	O75380	18	423
 NDUS7_CAEEL	worm	Q94360	nduf-7	Q94360	13	94		
 NDUS7_HUMAN	human	O75251	NDUFS7	O75251	44	383		
 NDUS8_CAEEL	worm	Q22619	ndus-8	Q22619	16	147		
-NDUS8_DROME	fly	FBgn0017567	ND-23	Q9VF27	24	141		
+NDUS8_DROME	fly	FBgn0017567	ND-23	Q9VF27	41	151		
 NDUS8_HUMAN	human	O00217	NDUFS8	O00217	48	488		
 NDUV-2	worm	Q20719	nduv-2	Q20719	5	93	Probable NADH dehydrogenase	
 NDUV-3	worm	Q95XG6	nduv-3	Q95XG6	0	43	NADH dehydrogenase	

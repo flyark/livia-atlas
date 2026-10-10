@@ -20,7 +20,7 @@ SEC-61.B	worm	Q95XS2	sec-61.b	Q95XS2	5	150	Protein transport protein Sec61 subun
 SEC-61.G	worm	Q19967	sec-61.G	Q19967	2	114	Protein transport protein Sec61 subunit gamma	
 SEC-8	worm	Q9XWS2	sec-8	Q9XWS2	12	27	Exocyst complex component 4	
 SEC-C	worm	Q9XWH5	CELE_Y57A10B.6	Q9XWH5	1	9	SEC-C motif-containing protein	w
-SEC-TRNA	fly	FBgn0037347	SecS	Q9VNE3	0	8	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	w
+SEC-TRNA	fly	FBgn0037347	SecS	Q9VNE3	0	9	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	w
 SEC1	candida-albicans-237561	Q5AH58	SEC1	Q5AH58	5	12	Sec1p	
 SEC1	cladophialophora-carrionii	A0A1C1C9S7	sec1	A0A1C1C9S7	2	17	Protein transport protein sec1	
 SEC1	dictyostelium-discoideum	Q54QC8	sec1	Q54QC8	3	16	Protein transport protein sec1	
@@ -34,8 +34,8 @@ SEC1	worm	Q20364	sly-1	Q20364	4	31	Sec1 family domain-containing protein 1	w
 SEC1	yeast	P30619	SEC1	P30619	6	72	Protein transport protein SEC1	
 SEC1	zebrafish	A0A8M1PC92	scfd1	A0A8M1PC92	6	41	Sec1 family domain-containing protein 1	w
 SEC10	candida-albicans-237561	A0A1D8PMS7	SEC10	A0A1D8PMS7	4	21	Exocyst subunit	
-SEC10	fly	FBgn0266673	Sec10	Q9XTM1	17	97	Exocyst complex component 5 (Exocyst complex component Sec10	w
-SEC10	fly	FBgn0266673	Sec10	Q9XTM1	17	97	Exocyst complex component 5 (Exocyst complex component Sec10	w
+SEC10	fly	FBgn0266673	Sec10	Q9XTM1	20	97	Exocyst complex component 5 (Exocyst complex component Sec10	w
+SEC10	fly	FBgn0266673	Sec10	Q9XTM1	20	97	Exocyst complex component 5 (Exocyst complex component Sec10	w
 SEC10	human	O00471	EXOC5	O00471	35	226		
 SEC10	oryza-sativa-subsp-japonica	Q2QV94	SEC10	Q2QV94	22	147	Exocyst complex component 5	
 SEC10	schizosaccharomyces-pombe	O13705	sec10	O13705	4	14	Exocyst complex component sec10	
@@ -48,7 +48,7 @@ SEC11	ajellomyces-capsulatus	C0NKT8	SEC11	C0NKT8	2	11	Signal peptidase complex c
 SEC11	candida-albicans-237561	Q5A869	SEC11	Q5A869	2	14	Signal peptidase complex catalytic subunit SEC11	
 SEC11	cladophialophora-carrionii	A0A1C1CFT4	SEC11	A0A1C1CFT4	2	18	Signal peptidase complex catalytic subunit SEC11	
 SEC11	dictyostelium-discoideum	Q86JD4	sec11	Q86JD4	2	10	Signal peptidase complex catalytic subunit sec11	
-SEC11	fly	FBgn0262801	twr	O97066	329	2398	Signal peptidase complex catalytic subunit SEC11 (EC 3.4.21.	w
+SEC11	fly	FBgn0262801	twr	O97066	332	2404	Signal peptidase complex catalytic subunit SEC11 (EC 3.4.21.	w
 SEC11	human	H0YNG3	SEC11A	H0YNG3	2	44	Signal peptidase complex catalytic subunit SEC11	w
 SEC11	human	P0C7V7	SEC11B	P0C7V7	3	23	Putative signal peptidase complex catalytic subunit SEC11B (	w
 SEC11	human	P67812	SEC11A	P67812	15	107	Signal peptidase complex catalytic subunit SEC11A (EC 3.4.21	w
@@ -78,8 +78,8 @@ SEC12_HUMAN	human	Q9HCU5	PREB	Q9HCU5	50	544
 SEC13	candida-albicans-237561	Q5AEF2	SEC13	Q5AEF2	7	49	Protein transport protein SEC13	
 SEC13	cladophialophora-carrionii	A0A1C1D2N9	SEC13	A0A1C1D2N9	8	124	Protein transport protein SEC13	
 SEC13	dictyostelium-discoideum	Q54DS8	sec13	Q54DS8	6	76	Protein SEC13 homolog	
-SEC13	fly	FBgn0024509	Sec13	Q9V3J4	51	378	Protein SEC13 homolog (GATOR complex protein SEC13) (Secreto	w
-SEC13	fly	FBgn0024509	Sec13	Q9V3J4	51	378	Protein SEC13 homolog (GATOR complex protein SEC13) (Secreto	w
+SEC13	fly	FBgn0024509	Sec13	Q9V3J4	65	399	Protein SEC13 homolog (GATOR complex protein SEC13) (Secreto	w
+SEC13	fly	FBgn0024509	Sec13	Q9V3J4	65	399	Protein SEC13 homolog (GATOR complex protein SEC13) (Secreto	w
 SEC13	human	P55735	SEC13	P55735	34	305	Protein SEC13 homolog (GATOR2 complex protein SEC13) (SEC13-	
 SEC13	human	Q9BVC4	MLST8	Q9BVC4	25	252	Target of rapamycin complex subunit LST8 (TORC subunit LST8)	w
 SEC13	mus-musculus	Q9D1M0	Sec13	Q9D1M0	15	168	Protein SEC13 homolog	
@@ -124,8 +124,8 @@ SEC14L4	mus-musculus	Q8R0F9	Sec14l4	Q8R0F9	0	1	SEC14-like protein 4
 SEC14L5	human	O43304	SEC14L5	O43304	2	61	SEC14-like protein 5	
 SEC14L6	human	B5MCN3	SEC14L6	B5MCN3	2	33	SEC14-like protein 6	
 SEC15	candida-albicans-237561	A0A1D8PM29	SEC15	A0A1D8PM29	2	19	Exocyst complex component SEC15	
-SEC15	fly	FBgn0266674	Sec15	Q9VDE6	18	60	Exocyst complex component 6 (Exocyst complex component Sec15	w
-SEC15	fly	FBgn0266674	Sec15	Q9VDE6	18	60	Exocyst complex component 6 (Exocyst complex component Sec15	w
+SEC15	fly	FBgn0266674	Sec15	Q9VDE6	18	61	Exocyst complex component 6 (Exocyst complex component Sec15	w
+SEC15	fly	FBgn0266674	Sec15	Q9VDE6	18	61	Exocyst complex component 6 (Exocyst complex component Sec15	w
 SEC15	schizosaccharomyces-pombe	O75006	sec15	O75006	6	24	Exocyst complex component sec15	
 SEC15	yeast	P22224	SEC15	P22224	8	47	Exocyst complex component SEC15	
 SEC15-LIKE	human	Q8TAG9	EXOC6	Q8TAG9	28	200	Exocyst complex component 6 (Exocyst complex component Sec15	w
@@ -137,7 +137,7 @@ SEC15B	human	Q9Y2D4	EXOC6B	Q9Y2D4	21	159
 SEC15L	human	Q8TAG9	EXOC6	Q8TAG9	28	200		
 SEC15L1	human	Q8TAG9	EXOC6	Q8TAG9	28	200		
 SEC15L2	human	Q9Y2D4	EXOC6B	Q9Y2D4	21	159		
-SEC15_97_766	fly	FBgn0266674	Sec15	Q9VDE6	18	60		
+SEC15_97_766	fly	FBgn0266674	Sec15	Q9VDE6	18	61		
 SEC16	fly	FBgn0052654	Sec16	X2JEM2	4	39	Secretory 16, isoform I	
 SEC16	human	O15027	SEC16A	O15027	48	441		
 SEC16	human	Q96JE7	SEC16B	Q96JE7	7	61	Protein transport protein Sec16B (Leucine zipper transcripti	w
@@ -166,7 +166,7 @@ SEC2	worm	Q20759	rabi-1	Q20759	4	41	GDP/GTP exchange factor Sec2 N-terminal doma
 SEC2	yeast	P17065	SEC2	P17065	4	49	Rab guanine nucleotide exchange factor SEC2	
 SEC20	candida-albicans-237561	A0A1D8PPX8	SEC20	A0A1D8PPX8	17	26	Sec20p	
 SEC20	dictyostelium-discoideum	Q55GJ4	sec20	Q55GJ4	11	62	Sec20 family protein	
-SEC20	fly	FBgn0037383	Sec20	Q9VNI9	12	60	IP18173p (Secretory 20, isoform A) (Secretory 20, isoform B)	
+SEC20	fly	FBgn0037383	Sec20	Q9VNI9	15	60	IP18173p (Secretory 20, isoform A) (Secretory 20, isoform B)	
 SEC20	human	Q12981	BNIP1	Q12981	20	129	Vesicle transport protein SEC20 (BCL2/adenovirus E1B 19 kDa 	w
 SEC20	schizosaccharomyces-pombe	O42852	sec20	O42852	6	34	Protein transport protein sec20	
 SEC20	worm	C0Z1Y7	sec-20	C0Z1Y7	5	54	Vesicle transport protein SEC20	w
@@ -181,7 +181,7 @@ SEC21	yeast	P39552	MST28	P39552	0	9	Multicopy suppressor of SEC21 protein 28	w
 SEC21	yeast	P53176	MST27	P53176	1	13	Multicopy suppressor of SEC21 protein 27	w
 SEC22	candida-albicans-237561	A0A1D8PSL3	SEC22	A0A1D8PSL3	7	38	Protein transport protein SEC22	
 SEC22	cladophialophora-carrionii	A0A1C1CPM6	sec22	A0A1C1CPM6	5	41	Protein transport protein SEC22	
-SEC22	fly	FBgn0260855	Sec22	M9PGI6	24	163	Secretory 22, isoform B	
+SEC22	fly	FBgn0260855	Sec22	M9PGI6	34	166	Secretory 22, isoform B	
 SEC22	human	O75396	SEC22B	O75396	66	481	Vesicle-trafficking protein SEC22b (ER-Golgi SNARE of 24 kDa	w
 SEC22	human	Q96IW7	SEC22A	Q96IW7	33	226	Vesicle-trafficking protein SEC22a (SEC22 vesicle-traffickin	w
 SEC22	human	Q9BRL7	SEC22C	Q9BRL7	16	169	Vesicle-trafficking protein SEC22c (SEC22 vesicle-traffickin	w
@@ -211,8 +211,8 @@ SEC22L3	human	Q9BRL7	SEC22C	Q9BRL7	16	169
 SEC23	candida-albicans-237561	Q5A455	SEC23	Q5A455	5	20	Protein transport protein SEC23	
 SEC23	cladophialophora-carrionii	A0A1C1CH05	SEC23	A0A1C1CH05	7	25	Protein transport protein SEC23	
 SEC23	dictyostelium-discoideum	Q54T59	sec23	Q54T59	13	42	Protein transport protein SEC23	
-SEC23	fly	FBgn0262125	Sec23	A0A0B4K5Z8	17	127	Protein transport protein SEC23	w
-SEC23	fly	FBgn0262125	Sec23	A0A0B4K5Z8	17	127	Protein transport protein SEC23	w
+SEC23	fly	FBgn0262125	Sec23	A0A0B4K5Z8	20	132	Protein transport protein SEC23	w
+SEC23	fly	FBgn0262125	Sec23	A0A0B4K5Z8	20	132	Protein transport protein SEC23	w
 SEC23	worm	Q9U2Z1	sec-23	Q9U2Z1	7	65	Protein transport protein SEC23	w
 SEC23	yeast	P15303	SEC23	P15303	15	117	Protein transport protein SEC23	
 SEC23	zebrafish	A0A8M6Z6P7	sec23b	A0A8M6Z6P7	11	38	Protein transport protein SEC23	w
@@ -267,7 +267,7 @@ SEC24C	rattus-norvegicus	B5DEG8	Sec24c	B5DEG8	9	62	SEC24 homolog C, COPII coat c
 SEC24C	worm	Q19371	sec-24.1	Q19371	1	60	Protein transport protein Sec24C	w
 SEC24C	zebrafish	A0A0R4IMX2	sec24c	A0A0R4IMX2	8	76	Protein transport protein Sec24C	w
 SEC24C	zebrafish	A0A0R4IMX2	sec24c	A0A0R4IMX2	8	76	Protein transport protein Sec24C	w
-SEC24CD	fly	FBgn0262126	Sec24CD	M9PC99	8	47	Secretory 24CD, isoform C	
+SEC24CD	fly	FBgn0262126	Sec24CD	M9PC99	8	48	Secretory 24CD, isoform C	
 SEC24D	human	O94855	SEC24D	O94855	24	127	Protein transport protein Sec24D (SEC24-related protein D)	
 SEC24D	mus-musculus	Q6NXL1	Sec24d	Q6NXL1	13	78	SEC24 homolog D, COPII coat complex component	
 SEC24D	rattus-norvegicus	G3V9S9	Sec24d	G3V9S9	11	66	SEC24 homolog D, COPII coat complex component	
@@ -284,8 +284,8 @@ SEC27	yeast	P41811	SEC27	P41811	9	143	Coatomer subunit beta
 SEC28	schizosaccharomyces-pombe	O74767	sec28	O74767	2	38	Probable coatomer subunit epsilon	
 SEC28	yeast	P40509	SEC28	P40509	8	89	Coatomer subunit epsilon	
 SEC3	candida-albicans-237561	A0A1D8PMI1	SEC3	A0A1D8PMI1	1	9	GTP-Rho binding exocyst subunit	
-SEC3	fly	FBgn0266669	Sec3	Q9VVG4	11	52	Exocyst complex component 1 (Exocyst complex component Sec3)	w
-SEC3	fly	FBgn0266669	Sec3	Q9VVG4	11	52	Exocyst complex component 1 (Exocyst complex component Sec3)	w
+SEC3	fly	FBgn0266669	Sec3	Q9VVG4	12	52	Exocyst complex component 1 (Exocyst complex component Sec3)	w
+SEC3	fly	FBgn0266669	Sec3	Q9VVG4	12	52	Exocyst complex component 1 (Exocyst complex component Sec3)	w
 SEC3	human	Q9NV70	EXOC1	Q9NV70	50	275		
 SEC3	yeast	P33332	SEC3	P33332	6	46	Exocyst complex component SEC3	
 SEC31	cladophialophora-carrionii	A0A1C1D0E0	sec31	A0A1C1D0E0	2	14	Protein transport protein SEC31	
@@ -337,17 +337,17 @@ SEC5B	arabidopsis-thaliana	F4HWE6	SEC5B	F4HWE6	13	136	Exocyst complex component 
 SEC5L1	human	Q96KP1	EXOC2	Q96KP1	26	237		
 SEC6	arabidopsis-thaliana	Q94AI6	SEC6	Q94AI6	8	169	Exocyst complex component SEC6	
 SEC6	candida-albicans-237561	Q5A7K3	SEC6	Q5A7K3	4	16	SNARE-binding exocyst subunit	
-SEC6	fly	FBgn0266671	Sec6	Q9V8K2	10	85	Exocyst complex component 3 (Exocyst complex component Sec6)	w
-SEC6	fly	FBgn0266671	Sec6	Q9V8K2	10	85	Exocyst complex component 3 (Exocyst complex component Sec6)	w
+SEC6	fly	FBgn0266671	Sec6	Q9V8K2	12	85	Exocyst complex component 3 (Exocyst complex component Sec6)	w
+SEC6	fly	FBgn0266671	Sec6	Q9V8K2	12	85	Exocyst complex component 3 (Exocyst complex component Sec6)	w
 SEC6	human	O60645	EXOC3	O60645	16	251		
 SEC6	schizosaccharomyces-pombe	O74846	sec6	O74846	11	53	Exocyst complex component sec6	
 SEC6	yeast	P32844	SEC6	P32844	10	44	Exocyst complex component SEC6	
 SEC61	candida-albicans-237561	Q9P8E3	SEC61	Q9P8E3	5	101	Protein transport protein SEC61 subunit alpha	
-SEC61	fly	FBgn0010638	Sec61beta	Q7JZN0	23	220	Protein transport protein Sec61 subunit beta	w
-SEC61	fly	FBgn0031049	Sec61gamma	Q9VWE9	5	145	Protein transport protein Sec61 gamma-2 subunit	w
+SEC61	fly	FBgn0010638	Sec61beta	Q7JZN0	35	226	Protein transport protein Sec61 subunit beta	w
+SEC61	fly	FBgn0031049	Sec61gamma	Q9VWE9	13	147	Protein transport protein Sec61 gamma-2 subunit	w
 SEC61	fly	FBgn0033691	CG8860	Q9V668	3	117	Protein transport protein Sec61 gamma-1 subunit	w
-SEC61	fly	FBgn0034510	CG13426	A1ZBU4	7	133	Protein transport protein Sec61 subunit gamma	w
-SEC61	fly	FBgn0086357	Sec61alpha	Q8STG9	11	333	DSec61alpha (LD29847p) (Sec61 alpha subunit, isoform A) (Sec	w
+SEC61	fly	FBgn0034510	CG13426	A1ZBU4	8	133	Protein transport protein Sec61 subunit gamma	w
+SEC61	fly	FBgn0086357	Sec61alpha	Q8STG9	17	342	DSec61alpha (LD29847p) (Sec61 alpha subunit, isoform A) (Sec	w
 SEC61	human	P60059	SEC61G	P60059	38	346	Protein transport protein Sec61 subunit gamma	w
 SEC61	human	P60468	SEC61B	P60468	118	844	Protein transport protein Sec61 subunit beta	w
 SEC61	human	P61619	SEC61A1	P61619	14	526	Protein transport protein Sec61 subunit alpha isoform 1 (Sec	w
@@ -371,13 +371,13 @@ SEC61A2	mus-musculus	Q9JLR1	Sec61a2	Q9JLR1	2	199	Protein transport protein Sec61
 SEC61A2	rattus-norvegicus	D3ZEH3	Sec61a2	D3ZEH3	8	375	SEC61 translocon subunit alpha 2	
 SEC61AL1	zebrafish	Q90ZM2	sec61al1	Q90ZM2	4	258	Protein transport protein Sec61 subunit alpha-like 1	
 SEC61AL2	zebrafish	Q90YL4	sec61al2	Q90YL4	5	258	Protein transport protein Sec61 subunit alpha-like 2	
-SEC61ALPHA	fly	FBgn0086357	Sec61alpha	Q8STG9	11	333	DSec61alpha (LD29847p) (Sec61 alpha subunit, isoform A) (Sec	
+SEC61ALPHA	fly	FBgn0086357	Sec61alpha	Q8STG9	17	342	DSec61alpha (LD29847p) (Sec61 alpha subunit, isoform A) (Sec	
 SEC61B	dictyostelium-discoideum	Q54YR4	sec61b	Q54YR4	6	149	Protein transport protein Sec61 subunit beta	
 SEC61B	human	P60468	SEC61B	P60468	118	844	Protein transport protein Sec61 subunit beta	
 SEC61B	mus-musculus	Q9CQS8	Sec61b	Q9CQS8	13	181	Protein transport protein Sec61 subunit beta	
 SEC61B	rattus-norvegicus	A0ABK0LXI6	Sec61b	A0ABK0LXI6	21	430	SEC61 translocon subunit beta	
 SEC61B	zebrafish	Q6DGH3	sec61b	Q6DGH3	8	209	Protein transport protein Sec61 subunit beta	
-SEC61BETA	fly	FBgn0010638	Sec61beta	Q7JZN0	23	220	Protein transport protein Sec61 subunit beta	
+SEC61BETA	fly	FBgn0010638	Sec61beta	Q7JZN0	35	226	Protein transport protein Sec61 subunit beta	
 SEC61G	dictyostelium-discoideum	Q54JV6	sec61g	Q54JV6	3	128	Protein transport protein Sec61 subunit gamma	
 SEC61G	human	P60059	SEC61G	P60059	38	346	Protein transport protein Sec61 subunit gamma	
 SEC61G	mus-musculus	P60060	Sec61g	P60060	5	183	Protein transport protein Sec61 subunit gamma	
@@ -385,11 +385,11 @@ SEC61G	zebrafish	F2Z4R1	sec61g	F2Z4R1	3	198	Protein transport protein Sec61 subu
 SEC61G-PS4	rattus-norvegicus	Q6TXH4	Sec61g-ps4	Q6TXH4	4	237	Protein transport protein Sec61 subunit gamma	
 SEC61G2	arabidopsis-thaliana	P0DI75	SEC61G2	P0DI75	9	287	Protein transport protein Sec61 subunit gamma-2	
 SEC61G3	arabidopsis-thaliana	Q9SMP2	SEC61G3	Q9SMP2	7	288	Protein transport protein Sec61 subunit gamma-3	
-SEC61GAMMA	fly	FBgn0031049	Sec61gamma	Q9VWE9	5	145	Protein transport protein Sec61 gamma-2 subunit	
+SEC61GAMMA	fly	FBgn0031049	Sec61gamma	Q9VWE9	13	147	Protein transport protein Sec61 gamma-2 subunit	
 SEC61GL2	rattus-norvegicus	A0A0G2K7E7	Sec61gl2	A0A0G2K7E7	5	237	Protein transport protein Sec61 subunit gamma	
 SEC62	candida-albicans-237561	Q5AI21	SEC62	Q5AI21	3	17	Translocation protein SEC62	
 SEC62	cladophialophora-carrionii	A0A1C1CY18	sec62	A0A1C1CY18	1	17	Translocation protein SEC62	
-SEC62	fly	FBgn0011584	Trp1	Q9VL49	5	29	Translocation protein SEC62	w
+SEC62	fly	FBgn0011584	Trp1	Q9VL49	8	29	Translocation protein SEC62	w
 SEC62	human	Q99442	SEC62	Q99442	41	454	Translocation protein SEC62 (Translocation protein 1) (TP-1)	
 SEC62	mus-musculus	Q8BU14	Sec62	Q8BU14	2	25	Translocation protein SEC62	
 SEC62	rattus-norvegicus	Q7TP42	Sec62	Q7TP42	3	33	Translocation protein SEC62	
@@ -398,7 +398,7 @@ SEC62	worm	Q18093	C18E9.2	Q18093	1	16	Translocation protein SEC62	w
 SEC62	yeast	P21825	SEC62	P21825	2	54	Translocation protein SEC62	
 SEC62_HUMAN	human	Q99442	SEC62	Q99442	41	454		
 SEC63	candida-albicans-237561	A0A1D8PSM6	SEC63	A0A1D8PSM6	3	14	Protein-transporting protein	
-SEC63	fly	FBgn0035771	Sec63	Q9VS57	13	86	RE14391p (Secretory 63)	
+SEC63	fly	FBgn0035771	Sec63	Q9VS57	16	88	RE14391p (Secretory 63)	
 SEC63	human	A2PYH4	HFM1	A2PYH4	9	150	Probable ATP-dependent DNA helicase HFM1 (EC 5.6.2.4) (DNA 3	w
 SEC63	human	Q9UGP8	SEC63	Q9UGP8	25	376	Translocation protein SEC63 homolog (DnaJ homolog subfamily 	
 SEC63	mus-musculus	Q8VHE0	Sec63	Q8VHE0	7	43	Translocation protein SEC63 homolog	
@@ -443,8 +443,8 @@ SEC73	schizosaccharomyces-pombe	O13817	sec73	O13817	1	3	Protein transport protei
 SEC74	schizosaccharomyces-pombe	Q10491	sec74	Q10491	1	4	Arf guanine nucleotide exchange factor sec74	
 SEC8	arabidopsis-thaliana	Q93YU5	SEC8	Q93YU5	13	126	Exocyst complex component SEC8	
 SEC8	candida-albicans-237561	A0A1D8PPF9	SEC8	A0A1D8PPF9	5	16	Exocyst complex component Sec8	
-SEC8	fly	FBgn0266672	Sec8	Q9VNH6	14	77	Exocyst complex component 4 (Exocyst complex component Sec8)	w
-SEC8	fly	FBgn0266672	Sec8	Q9VNH6	14	77	Exocyst complex component 4 (Exocyst complex component Sec8)	w
+SEC8	fly	FBgn0266672	Sec8	Q9VNH6	16	77	Exocyst complex component 4 (Exocyst complex component Sec8)	w
+SEC8	fly	FBgn0266672	Sec8	Q9VNH6	16	77	Exocyst complex component 4 (Exocyst complex component Sec8)	w
 SEC8	human	Q96A65	EXOC4	Q96A65	28	309		
 SEC8	schizosaccharomyces-pombe	O74562	sec8	O74562	4	20	Exocyst complex component sec8	
 SEC8	yeast	P32855	SEC8	P32855	4	38	Exocyst complex component SEC8	
@@ -541,10 +541,10 @@ SECG	pseudomonas-aeruginosa	Q9HV52	secG	Q9HV52	1	46	Protein-export membrane prot
 SECG	salmonella-typhimurium	Q7CPQ0	secG	Q7CPQ0	1	41	Protein-export membrane protein SecG	
 SECG	shigella-dysenteriae-serotype-1	Q32BF8	secG	Q32BF8	2	42	Protein-export membrane protein SecG	
 SECG	streptococcus-pneumoniae	Q8DQ31	secG	Q8DQ31	1	42	Protein-export membrane protein SecG	
-SECIS-BINDING	fly	FBgn0087039	Sbp2	Q9VSH1	3	21	GH01354p (SECIS-binding protein 2)	w
+SECIS-BINDING	fly	FBgn0087039	Sbp2	Q9VSH1	4	22	GH01354p (SECIS-binding protein 2)	w
 SECIS-BINDING	human	Q93073	SECISBP2L	Q93073	34	198	Selenocysteine insertion sequence-binding protein 2-like (SE	w
 SECIS-BINDING	human	Q96T21	SECISBP2	Q96T21	35	221	Selenocysteine insertion sequence-binding protein 2 (SECIS-b	w
-SECIS-DEPENDENT	fly	FBgn0035916	GAPsec	Q9VSM8	0	1	FI07835p (GTPase activating protein, SECIS-dependent read-th	w
+SECIS-DEPENDENT	fly	FBgn0035916	GAPsec	Q9VSM8	1	2	FI07835p (GTPase activating protein, SECIS-dependent read-th	w
 SECISBP2	human	Q96T21	SECISBP2	Q96T21	35	221	Selenocysteine insertion sequence-binding protein 2 (SECIS-b	
 SECISBP2	mus-musculus	Q3U1C4	Secisbp2	Q3U1C4	13	89	Selenocysteine insertion sequence-binding protein 2	
 SECISBP2	rattus-norvegicus	Q9QX72	Secisbp2	Q9QX72	29	217	Selenocysteine insertion sequence-binding protein 2	
@@ -562,7 +562,7 @@ SECOND	human	Q9NR28	DIABLO	Q9NR28	21	360	Diablo IAP-binding mitochondrial protei
 SECOND	human	Q9ULL8	SHROOM4	Q9ULL8	21	135	Protein Shroom4 (Second homolog of apical protein)	w
 SECONDARY	human	O00585	CCL21	O00585	46	267	C-C motif chemokine 21 (6Ckine) (Beta-chemokine exodus-2) (S	w
 SECONDARY	human	Q6UX34	SNORC	Q6UX34	6	86	Protein SNORC (Secondary ossification center-associated regu	w
-SECP43	fly	FBgn0031607	Secp43	Q8SXG7	10	142	tRNA selenocysteine-associated protein 1	
+SECP43	fly	FBgn0031607	Secp43	Q8SXG7	13	143	tRNA selenocysteine-associated protein 1	
 SECP43	human	Q9NX07	TRNAU1AP	Q9NX07	10	138		
 SECR	human	P47872	SCTR	P47872	14	111	Secretin receptor (SCT-R) (SECR)	w
 SECR	human	Q9H336	CRISPLD1	Q9H336	2	23	Cysteine-rich secretory protein LCCL domain-containing 1 (Co	w
@@ -581,7 +581,7 @@ SECRETED	fly	FBgn0026562	SPARC	O97365	39	280	BM-40 (MIP10412p1) (Secreted protei
 SECRETED	fly	FBgn0033789	CG13324	A1Z979	30	260	Salivary secreted peptide	w
 SECRETED	fly	FBgn0034709	Swim	Q7JWQ7	20	276	RE01730p (Secreted Wg-interacting molecule, isoform A) (Secr	w
 SECRETED	fly	FBgn0036101	NijA	Q8MPP0	26	249	Ninjurin-A (dNINJ-A) [Cleaved into: Secreted ninjurin-A]	w
-SECRETED	fly	FBgn0036545	GXIVsPLA2	Q9VUV6	36	254	GXIVsPLA2, isoform A (GXIVsPLA2, isoform D (EC 3.1.1.4)) (Gr	w
+SECRETED	fly	FBgn0036545	GXIVsPLA2	Q9VUV6	37	255	GXIVsPLA2, isoform A (GXIVsPLA2, isoform D (EC 3.1.1.4)) (Gr	w
 SECRETED	fly	FBgn0038279	Sdr	Q9VFE2	112	1323	FI18055p1 (Secreted decoy of InR, isoform A) (Secreted decoy	w
 SECRETED	fly	FBgn0050413	CG30413	Q8MLS3	13	243	Salivary secreted peptide	w
 SECRETED	fly	FBgn0051419	CG31419	Q9VEL4	23	243	Secreted protein	w
@@ -719,7 +719,7 @@ SECRETED-SIGNALING	fly	FBgn0000221	brn	Q24157	351	2605	Beta-1,3-galactosyltransf
 SECRETIN	human	P09683	SCT	P09683	28	266	Secretin	w
 SECRETIN	human	P47872	SCTR	P47872	14	111	Secretin receptor (SCT-R) (SECR)	w
 SECRETION	fly	FBgn0003372	Sgs1	Q9VR49	0	4	Salivary gland secretion 1	w
-SECRETION	fly	FBgn0003374	Sgs4	Q00725	29	249	Salivary gland secretion 4	w
+SECRETION	fly	FBgn0003374	Sgs4	Q00725	31	254	Salivary gland secretion 4	w
 SECRETION	fly	FBgn0053653	Cadps	Q9NHE5	1	19	Calcium-dependent secretion activator	w
 SECRETION	human	Q86UW7	CADPS2	Q86UW7	5	81	Calcium-dependent secretion activator 2 (Calcium-dependent a	w
 SECRETION	human	Q9ULU8	CADPS	Q9ULU8	9	124	Calcium-dependent secretion activator 1 (Calcium-dependent a	w
@@ -762,24 +762,24 @@ SECRETOGRANIN-3	human	Q8WXD2	SCG3	Q8WXD2	0	28	Secretogranin-3 (Secretogranin III
 SECRETOGRANIN-3	zebrafish	A3KQQ9	scg3	A3KQQ9	0	5	Secretogranin-3	w
 SECRETOGRANIN-5	human	P05408	SCG5	P05408	6	47	Neuroendocrine protein 7B2 (Pituitary polypeptide) (Secretog	w
 SECRETONEURIN	human	P13521	SCG2	P13521	9	60	Secretogranin-2 (Chromogranin-C) (Secretogranin II) (SgII) [	w
-SECRETORY	fly	FBgn0002855	Acp26Aa	P10333	14	248	Accessory gland-specific peptide 26Aa (Male accessory gland 	w
-SECRETORY	fly	FBgn0002856	Acp26Ab	P10334	18	257	Accessory gland-specific peptide 26Ab (Male accessory gland 	w
-SECRETORY	fly	FBgn0002863	Acp95EF	P16548	26	261	Accessory gland-specific peptide 95EF (Male accessory gland 	w
-SECRETORY	fly	FBgn0011668	Mst57Da	Q9VBL6	41	277	Accessory gland-specific peptide 57Da (Male accessory gland 	w
-SECRETORY	fly	FBgn0011669	Mst57Db	Q9VBL7	0	4	Accessory gland-specific peptide 57Db (Male accessory gland 	w
-SECRETORY	fly	FBgn0011670	Mst57Dc	Q9V3J3	22	256	Accessory gland-specific peptide 57Dc (45 kDa cAMP-dependent	w
-SECRETORY	fly	FBgn0024509	Sec13	Q9V3J4	51	378	Protein SEC13 homolog (GATOR complex protein SEC13) (Secreto	w
+SECRETORY	fly	FBgn0002855	Acp26Aa	P10333	19	267	Accessory gland-specific peptide 26Aa (Male accessory gland 	w
+SECRETORY	fly	FBgn0002856	Acp26Ab	P10334	19	259	Accessory gland-specific peptide 26Ab (Male accessory gland 	w
+SECRETORY	fly	FBgn0002863	Acp95EF	P16548	26	262	Accessory gland-specific peptide 95EF (Male accessory gland 	w
+SECRETORY	fly	FBgn0011668	Mst57Da	Q9VBL6	42	278	Accessory gland-specific peptide 57Da (Male accessory gland 	w
+SECRETORY	fly	FBgn0011669	Mst57Db	Q9VBL7	4	10	Accessory gland-specific peptide 57Db (Male accessory gland 	w
+SECRETORY	fly	FBgn0011670	Mst57Dc	Q9V3J3	24	260	Accessory gland-specific peptide 57Dc (45 kDa cAMP-dependent	w
+SECRETORY	fly	FBgn0024509	Sec13	Q9V3J4	65	399	Protein SEC13 homolog (GATOR complex protein SEC13) (Secreto	w
 SECRETORY	fly	FBgn0028538	Sec71	Q9VJW1	2	19	LD29171p (Secretory 71)	w
 SECRETORY	fly	FBgn0033339	Sec31	A0A0B4LEZ1	12	83	Secretory 31, isoform D	w
 SECRETORY	fly	FBgn0033460	Sec24AB	A1Z813	15	120	Secretory 24AB, isoform A (Secretory 24AB, isoform B)	w
-SECRETORY	fly	FBgn0035771	Sec63	Q9VS57	13	86	RE14391p (Secretory 63)	w
+SECRETORY	fly	FBgn0035771	Sec63	Q9VS57	16	88	RE14391p (Secretory 63)	w
 SECRETORY	fly	FBgn0036727	SecCl	Q9VVH4	9	15	IP12572p (IP12772p) (Secretory chloride channel, isoform A) 	w
-SECRETORY	fly	FBgn0037383	Sec20	Q9VNI9	12	60	IP18173p (Secretory 20, isoform A) (Secretory 20, isoform B)	w
+SECRETORY	fly	FBgn0037383	Sec20	Q9VNI9	15	60	IP18173p (Secretory 20, isoform A) (Secretory 20, isoform B)	w
 SECRETORY	fly	FBgn0040285	Scamp	Q9VXV6	5	63	Secretory carrier-associated membrane protein (Secretory car	w
-SECRETORY	fly	FBgn0050457	CG30457	A1ZAR4	24	251	Skin secretory protein xP2-like	w
+SECRETORY	fly	FBgn0050457	CG30457	A1ZAR4	24	252	Skin secretory protein xP2-like	w
 SECRETORY	fly	FBgn0052654	Sec16	X2JEM2	4	39	Secretory 16, isoform I	w
-SECRETORY	fly	FBgn0260855	Sec22	M9PGI6	24	163	Secretory 22, isoform B	w
-SECRETORY	fly	FBgn0262126	Sec24CD	M9PC99	8	47	Secretory 24CD, isoform C	w
+SECRETORY	fly	FBgn0260855	Sec22	M9PGI6	34	166	Secretory 22, isoform B	w
+SECRETORY	fly	FBgn0262126	Sec24CD	M9PC99	8	48	Secretory 24CD, isoform C	w
 SECRETORY	human	A0A2R8Y3M9	?	A0A2R8Y3M9	1	2	Group XIIA secretory phospholipase A2	w
 SECRETORY	human	A0PK05	TMEM72	A0PK05	1	68	Transmembrane protein 72 (Kidney-specific secretory protein 	w
 SECRETORY	human	O14828	SCAMP3	O14828	11	260	Secretory carrier-associated membrane protein 3 (Secretory c	w
@@ -862,7 +862,7 @@ SECRETORY-TRANSFORMING	human	P08620	FGF4	P08620	45	464	Fibroblast growth factor 
 SECRETORY-TRANSFORMING	human	P10767	FGF6	P10767	43	413	Fibroblast growth factor 6 (FGF-6) (Heparin secretory-transf	w
 SECRETORY-TYPE	human	Q9UNK4	PLA2G2D	Q9UNK4	7	117	Group IID secretory phospholipase A2 (GIID sPLA2) (sPLA2-IID	w
 SECR_HUMAN	human	P09683	SCT	P09683	28	266		
-SECS	fly	FBgn0037347	SecS	Q9VNE3	0	8	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	
+SECS	fly	FBgn0037347	SecS	Q9VNE3	0	9	O-phosphoseryl-tRNA(Sec) selenium transferase (EC 2.9.1.2) (	
 SECS-1	worm	Q18953	secs-1	Q18953	0	11	O-phosphoseryl-tRNA(Sec) selenium transferase	
 SECTM1	human	Q8WVN6	SECTM1	Q8WVN6	8	75	Secreted and transmembrane protein 1 (Protein K-12)	
 SECTM1A	mus-musculus	Q921W8	Sectm1a	Q921W8	1	1	Secreted and transmembrane protein 1A	

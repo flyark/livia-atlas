@@ -1,6 +1,6 @@
 ENO	campylobacter-jejuni-subsp-jejuni-serotype-o-2	P42448	eno	P42448	0	64	Enolase	
 ENO	escherichia-coli-83333	P0A6P9	eno	P0A6P9	0	45	Enolase	
-ENO	fly	FBgn0000579	Eno	P15007	6	338	Enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase) (2	
+ENO	fly	FBgn0000579	Eno	P15007	7	339	Enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase) (2	
 ENO	helicobacter-pylori	P48285	eno	P48285	1	31	Enolase	
 ENO	klebsiella-pneumoniae-subsp-pneumoniae	A0A0H3GUG9	eno	A0A0H3GUG9	0	172	Enolase	
 ENO	methanocaldococcus-jannaschii	Q60173	eno	Q60173	0	23	Enolase	
@@ -73,7 +73,7 @@ ENOG_HUMAN	human	P09104	ENO2	P09104	17	578
 ENOK	fly	FBgn0034975	enok	Q9W1A9	4	14	histone acetyltransferase (EC 2.3.1.48)	
 ENOL	leishmania-infantum	A4HW62	ENOL	A4HW62	0	19	phosphopyruvate hydratase	
 ENOL-1	worm	Q27527	enol-1	Q27527	0	87	Enolase	
-ENOLASE	fly	FBgn0000579	Eno	P15007	6	338	Enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase) (2	w
+ENOLASE	fly	FBgn0000579	Eno	P15007	7	339	Enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase) (2	w
 ENOLASE	human	A6NNW6	ENO4	A6NNW6	5	117	Enolase 4 (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lyase)	w
 ENOLASE	human	P06733	ENO1	P06733	23	1544	Alpha-enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lya	w
 ENOLASE	human	P09104	ENO2	P09104	17	578	Gamma-enolase (EC 4.2.1.11) (2-phospho-D-glycerate hydro-lya	w
@@ -85,7 +85,7 @@ ENOLASE	yeast	P00925	ENO2	P00925	3	153	Enolase 2	w
 ENOLASE	yeast	P40893	REE1	P40893	0	6	Regulation of enolase protein 1	w
 ENOLASE	zebrafish	F1Q510	enosf1	F1Q510	0	16	Mitochondrial enolase superfamily member 1	w
 ENOLASE	zebrafish	Q08BC6	eno4	Q08BC6	5	50	Enolase 4	w
-ENOLASE-PHOSPHATASE	fly	FBgn0037305	Enoph	Q9VN95	0	39	Enolase-phosphatase E1 (EC 3.1.3.77) (2,3-diketo-5-methylthi	w
+ENOLASE-PHOSPHATASE	fly	FBgn0037305	Enoph	Q9VN95	1	39	Enolase-phosphatase E1 (EC 3.1.3.77) (2,3-diketo-5-methylthi	w
 ENOLASE-PHOSPHATASE	human	Q9UHY7	ENOPH1	Q9UHY7	6	123	Enolase-phosphatase E1 (EC 3.1.3.77) (2,3-diketo-5-methylthi	w
 ENOLASE-PHOSPHATASE	worm	Q21012	F58H1.3	Q21012	0	3	Enolase-phosphatase E1	w
 ENOLASE-PHOSPHATASE	yeast	P32626	UTR4	P32626	0	2	Enolase-phosphatase E1	w
@@ -95,7 +95,7 @@ ENOLASE-PHOSPHATASE	zebrafish	X1WH50	si:ch211-137a8.4	X1WH50	0	35	Enolase-phosph
 ENOLASE-RELATED	yeast	P0CX11	ERR2	P0CX11	3	20	Enolase-related protein 2	w
 ENOLASE-RELATED	yeast	P42222	ERR3	P42222	3	15	Enolase-related protein 3	w
 ENOL_HUMAN	human	P0DO92	CDIPTOSP	P0DO92	1	6		
-ENOPH	fly	FBgn0037305	Enoph	Q9VN95	0	39	Enolase-phosphatase E1 (EC 3.1.3.77) (2,3-diketo-5-methylthi	
+ENOPH	fly	FBgn0037305	Enoph	Q9VN95	1	39	Enolase-phosphatase E1 (EC 3.1.3.77) (2,3-diketo-5-methylthi	
 ENOPH1	human	Q9UHY7	ENOPH1	Q9UHY7	6	123	Enolase-phosphatase E1 (EC 3.1.3.77) (2,3-diketo-5-methylthi	
 ENOPH1	mus-musculus	Q8BGB7	Enoph1	Q8BGB7	0	1	Enolase-phosphatase E1	
 ENOPH1	rattus-norvegicus	Q5PPH0	Enoph1	Q5PPH0	0	1	Enolase-phosphatase E1	
@@ -115,20 +115,20 @@ ENOX1_HUMAN	human	Q8TC92	ENOX1	Q8TC92	4	34
 ENOX2	human	Q16206	ENOX2	Q16206	13	55	Ecto-NOX disulfide-thiol exchanger 2 (APK1 antigen) (Cytosol	
 ENOX2	zebrafish	E7EZB6	enox2	E7EZB6	0	1	Ecto-NOX disulfide-thiol exchanger 2	
 ENOX2_HUMAN	human	Q16206	ENOX2	Q16206	13	55		
-ENOYL	fly	FBgn0033883	Mecr	Q9V6U9	1	40	Enoyl-[acyl-carrier-protein] reductase, mitochondrial (EC 1.	w
+ENOYL	fly	FBgn0033883	Mecr	Q9V6U9	1	44	Enoyl-[acyl-carrier-protein] reductase, mitochondrial (EC 1.	w
 ENOYL	human	Q9BV79	MECR	Q9BV79	3	120	Enoyl-[acyl-carrier-protein] reductase, mitochondrial (EC 1.	w
 ENOYL	worm	Q23624	CELE_ZK829.7	Q23624	1	10	Enoyl reductase (ER) domain-containing protein	w
-ENOYL-	fly	FBgn0033883	Mecr	Q9V6U9	1	40	Enoyl-[acyl-carrier-protein] reductase, mitochondrial (EC 1.	w
+ENOYL-	fly	FBgn0033883	Mecr	Q9V6U9	1	44	Enoyl-[acyl-carrier-protein] reductase, mitochondrial (EC 1.	w
 ENOYL-	human	Q9BV79	MECR	Q9BV79	3	120	Enoyl-[acyl-carrier-protein] reductase, mitochondrial (EC 1.	w
 ENOYL-	worm	O45903	W09H1.5	O45903	2	11	Enoyl-	w
 ENOYL-	worm	Q9XXC8	Y48A6B.9	Q9XXC8	1	4	Enoyl-	w
 ENOYL-	yeast	P38071	ETR1	P38071	1	17	Enoyl-	w
 ENOYL-	zebrafish	E7EYZ5	LOC101884755	E7EYZ5	1	15	Enoyl-	w
 ENOYL-	zebrafish	Q6GQN8	mecr	Q6GQN8	2	16	Enoyl-	w
-ENOYL-COA	fly	FBgn0028479	Mtpalpha	Q9V397	2	58	enoyl-CoA hydratase (EC 4.2.1.17)	w
-ENOYL-COA	fly	FBgn0030731	Mfe2	Q9VXJ0	1	190	Peroxisomal multifunctional enzyme type 2 (DmMFE-2) [Include	w
-ENOYL-COA	fly	FBgn0033761	CG8778	A1Z934	1	39	Enoyl-CoA hydratase, mitochondrial (EC 4.2.1.17) (EC 5.3.3.8	w
-ENOYL-COA	fly	FBgn0033879	Echs1	Q7JR58	1	179	Enoyl-CoA hydratase, mitochondrial (EC 4.2.1.17) (EC 5.3.3.8	w
+ENOYL-COA	fly	FBgn0028479	Mtpalpha	Q9V397	3	70	enoyl-CoA hydratase (EC 4.2.1.17)	w
+ENOYL-COA	fly	FBgn0030731	Mfe2	Q9VXJ0	1	193	Peroxisomal multifunctional enzyme type 2 (DmMFE-2) [Include	w
+ENOYL-COA	fly	FBgn0033761	CG8778	A1Z934	2	41	Enoyl-CoA hydratase, mitochondrial (EC 4.2.1.17) (EC 5.3.3.8	w
+ENOYL-COA	fly	FBgn0033879	Echs1	Q7JR58	1	188	Enoyl-CoA hydratase, mitochondrial (EC 4.2.1.17) (EC 5.3.3.8	w
 ENOYL-COA	fly	FBgn0034191	CG6984	Q7K1C3	1	7	Enoyl-CoA hydratase domain-containing protein 3, mitochondri	w
 ENOYL-COA	fly	FBgn0035471	Tecr	Q9VZL3	7	139	very-long-chain enoyl-CoA reductase (EC 1.3.1.93)	w
 ENOYL-COA	fly	FBgn0037027	HIPP1	Q9VPB0	100	390	Enoyl-CoA hydratase, mitochondrial (Enoyl-CoA hydratase 1) (	w
@@ -163,4 +163,4 @@ ENOYL-COA	zebrafish	Q7ZZ04	echs1	Q7ZZ04	3	126	Enoyl-CoA hydratase, mitochondrial
 ENOYL-COA-PRODUCING	human	Q16698	DECR1	Q16698	2	190	2,4-dienoyl-CoA reductase [(3E)-enoyl-CoA-producing], mitoch	w
 ENOYL-COA-PRODUCING	human	Q9NUI1	DECR2	Q9NUI1	6	103	Peroxisomal 2,4-dienoyl-CoA reductase [(3E)-enoyl-CoA-produc	w
 ENOYL-COENZYME	zebrafish	Q7ZTH6	fb14g10	Q7ZTH6	6	7	Hydroxyacyl-Coenzyme A dehydrogenase/3-ketoacyl-Coenzyme A t	w
-ENO_10_58	fly	FBgn0000579	Eno	P15007	6	338		
+ENO_10_58	fly	FBgn0000579	Eno	P15007	7	339		
