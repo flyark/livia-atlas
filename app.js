@@ -529,9 +529,10 @@ function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: li
   return ds.raw.get(rel);
 }
 async function csvRows(zip, csvName) {   // a bundle's lis.py rows; merged() reads them once and lets them go (a big bundle's rows run to hundreds of MB)
-  const t = parseCSV(await zip.file(csvName).async('string')), seen = new Set();
-  // A row written twice (a self-pair filed under both of its proteins, which are one bundle) is one prediction, not two runs
-  const rows = t.slice(1).filter((r) => { if (r.length <= 10) return false; const k = r.join('\u0001'); if (seen.has(k)) return false; seen.add(k); return true; });
+  const t = parseCSV(await zip.file(csvName).async('string'));
+  // A row written twice in a row (a self-pair filed under both of its proteins, which are one bundle) is one prediction, not two
+  // runs. Only the row right before counts: a pair folded twice can have two identical runs, and those sit apart in the file.
+  let last = null; const rows = t.slice(1).filter((r) => { if (r.length <= 10) return false; const k = r.join('\u0001'); if (k === last) return false; last = k; return true; });
   return { header: t[0], H: Object.fromEntries(t[0].map((k, i) => [k, i])), rows };
 }
 // Every prediction of one protein across the screens of its species. A pair predicted in two screens, or both ways
