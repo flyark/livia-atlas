@@ -291,7 +291,9 @@ const HOST_DOWN = new Map(), hostOf = (u) => { try { return new URL(u).host; } c
 const isDown = (u) => (HOST_DOWN.get(hostOf(u)) || 0) > Date.now();
 async function offAt(ds, path, zurl, rel) {   // a bundle's [offset, length] in one zip: the screen's map, or its shard (files.offsetShards: <map>/<last two characters of the name>.json)
   let k = path, u = new URL(path, location.href).href;
-  if ((ds.manifest.files || {}).offsetShards) { const nm = rel.split('/').pop().replace(/\.[^.]+$/, ''), xx = (nm.length >= 2 ? nm.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_');
+  // A UniProt entry name (DONS_HUMAN) is keyed by the part before its species mnemonic, as in build/offsets_shards.py: by its last
+  // two characters every protein of a species would share one shard as large as the whole map.
+  if ((ds.manifest.files || {}).offsetShards) { const nm0 = rel.split('/').pop().replace(/\.[^.]+$/, ''), en = /^([A-Z0-9]+)_[A-Z0-9]+$/.exec(nm0), nm = en ? en[1] : nm0, xx = (nm.length >= 2 ? nm.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_');
     k = `${path}|${xx}`; u = new URL(path.replace(/\.json$/, `/${xx}.json`), location.href).href; }
   if (!OFFS.has(k)) OFFS.set(k, fetch(u + zkey(zurl)).then((r) => (r.ok ? r.json() : {})).catch(() => ({})));
   return (await OFFS.get(k))[rel] || null;
