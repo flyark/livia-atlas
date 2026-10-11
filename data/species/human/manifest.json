@@ -85,18 +85,82 @@
     "pairsFpr5": 2500,
     "pairsFpr1": 972
    }
+  },
+  {
+   "id": "ddr-matrix",
+   "short": "Genome maintenance matrix",
+   "title": "Genome maintenance protein matrix (Schmid & Walter 2025)",
+   "citation": "Schmid EW, Walter JC (2025). Molecular Cell 85, 1216-1232.e5.",
+   "url": "https://doi.org/10.1016/j.molcel.2025.01.034",
+   "counts": {
+    "proteins": 287,
+    "pairs": 40458,
+    "predictions": 121374,
+    "runs": 40458,
+    "pairsFpr10": 3800,
+    "pairsFpr5": 1604,
+    "pairsFpr1": 236
+   }
+  },
+  {
+   "id": "ddr-donson",
+   "short": "DONSON interactome",
+   "title": "DONSON versus the human proteome (Schmid & Walter 2025)",
+   "citation": "Schmid EW, Walter JC (2025). Molecular Cell 85, 1216-1232.e5.",
+   "url": "https://doi.org/10.1016/j.molcel.2025.01.034",
+   "counts": {
+    "proteins": 20171,
+    "pairs": 20171,
+    "predictions": 60522,
+    "runs": 20174,
+    "pairsFpr10": 915,
+    "pairsFpr5": 333,
+    "pairsFpr1": 17
+   }
+  },
+  {
+   "id": "ddr-stk19",
+   "short": "STK19 interactome",
+   "title": "STK19 versus the human proteome (Schmid & Walter 2025)",
+   "citation": "Schmid EW, Walter JC (2025). Molecular Cell 85, 1216-1232.e5.",
+   "url": "https://doi.org/10.1016/j.molcel.2025.01.034",
+   "counts": {
+    "proteins": 20216,
+    "pairs": 20216,
+    "predictions": 60648,
+    "runs": 20216,
+    "pairsFpr10": 907,
+    "pairsFpr5": 557,
+    "pairsFpr1": 183
+   }
+  },
+  {
+   "id": "ddr-usp37",
+   "short": "USP37 interactome",
+   "title": "USP37 versus the human proteome (Schmid & Walter 2025)",
+   "citation": "Schmid EW, Walter JC (2025). Molecular Cell 85, 1216-1232.e5.",
+   "url": "https://doi.org/10.1016/j.molcel.2025.01.034",
+   "counts": {
+    "proteins": 19150,
+    "pairs": 19150,
+    "predictions": 57453,
+    "runs": 19151,
+    "pairsFpr10": 1725,
+    "pairsFpr5": 745,
+    "pairsFpr1": 79
+   }
   }
  ],
  "counts": {
-  "proteins": 20526,
-  "pairs": 2246930,
-  "predictions": 7315123,
-  "runs": 2581903,
-  "pairsFpr10": 276442,
-  "pairsFpr5": 154127,
-  "pairsFpr1": 39414,
-  "pairsInSeveral": 338778,
-  "pairsTested": 2246973
+  "proteins": 20665,
+  "pairs": 2336504,
+  "predictions": 7414842,
+  "runs": 2681622,
+  "pairsFpr10": 282779,
+  "pairsFpr5": 156769,
+  "pairsFpr1": 39761,
+  "pairsInSeveral": 348923,
+  "pairsTested": 2336547
  },
  "files": {
   "proteins": "proteins.json",

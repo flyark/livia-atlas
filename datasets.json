@@ -11,7 +11,11 @@
     "human-kinase-tf",
     "human-kinase-kinase",
     "afdb-het-9606",
-    "mitomatch-9606"
+    "mitomatch-9606",
+    "ddr-matrix",
+    "ddr-donson",
+    "ddr-stk19",
+    "ddr-usp37"
    ],
    "structs": true
   },
@@ -2973,6 +2977,78 @@
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7b-mitomatch/livia-atlas-mitomatch-9606.zip",
     "offsets": "data/screens/mitomatch-9606/offsets.json"
+   }
+  },
+  {
+   "id": "ddr-matrix",
+   "license": "CC0",
+   "species": "human",
+   "title": "Genome maintenance protein matrix (Schmid & Walter 2025)",
+   "short": "Genome maintenance matrix",
+   "color": "#B5533C",
+   "base": "data/screens/ddr-matrix/",
+   "status": "live",
+   "models": 3,
+   "modelsNote": "three models per pair under the deposition's own rank labels, which for part of the matrix are not ranks 1 to 3; this screen serves scores, maps and sequences, not PAE or models",
+   "source": "Schmid & Walter 2025 · Molecular Cell",
+   "paper": "https://doi.org/10.1016/j.molcel.2025.01.034",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.9-ddr/ddr-matrix/livia-atlas-ddr-matrix.zip",
+    "offsets": "data/screens/ddr-matrix/offsets.json"
+   }
+  },
+  {
+   "id": "ddr-donson",
+   "license": "CC0",
+   "species": "human",
+   "title": "DONSON versus the human proteome (Schmid & Walter 2025)",
+   "short": "DONSON interactome",
+   "color": "#3F7F8C",
+   "base": "data/screens/ddr-donson/",
+   "status": "live",
+   "models": 3,
+   "modelsNote": "three ranked models per pair, as the deposition released them; this screen serves scores, maps and sequences, not PAE or models",
+   "source": "Schmid & Walter 2025 · Molecular Cell",
+   "paper": "https://doi.org/10.1016/j.molcel.2025.01.034",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.9-ddr/ddr-donson/livia-atlas-ddr-donson.zip",
+    "offsets": "data/screens/ddr-donson/offsets.json"
+   }
+  },
+  {
+   "id": "ddr-stk19",
+   "license": "CC0",
+   "species": "human",
+   "title": "STK19 versus the human proteome (Schmid & Walter 2025)",
+   "short": "STK19 interactome",
+   "color": "#7A8B3C",
+   "base": "data/screens/ddr-stk19/",
+   "status": "live",
+   "models": 3,
+   "modelsNote": "three ranked models per pair, as the deposition released them; this screen serves scores, maps and sequences, not PAE or models",
+   "source": "Schmid & Walter 2025 · Molecular Cell",
+   "paper": "https://doi.org/10.1016/j.molcel.2025.01.034",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.9-ddr/ddr-stk19/livia-atlas-ddr-stk19.zip",
+    "offsets": "data/screens/ddr-stk19/offsets.json"
+   }
+  },
+  {
+   "id": "ddr-usp37",
+   "license": "CC0",
+   "species": "human",
+   "title": "USP37 versus the human proteome (Schmid & Walter 2025)",
+   "short": "USP37 interactome",
+   "color": "#C47A1E",
+   "base": "data/screens/ddr-usp37/",
+   "status": "live",
+   "models": 3,
+   "modelsNote": "three ranked models per pair, as the deposition released them; this screen serves scores, maps and sequences, not PAE or models",
+   "source": "Schmid & Walter 2025 · Molecular Cell",
+   "paper": "https://doi.org/10.1016/j.molcel.2025.01.034",
+   "zip": {
+    "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.9-ddr/ddr-usp37/livia-atlas-ddr-usp37.zip",
+    "offsets": "data/screens/ddr-usp37/offsets.json"
    }
   },
   {

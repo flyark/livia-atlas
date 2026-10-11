@@ -141,6 +141,7 @@ const REF = {
   han2026: ['Han et al. 2026', '10.64898/2026.03.27.714458'], hannarain2026: ['Han, Narain et al. 2026', '10.64898/2026.09.29.755321'],
   mitomatch: ['Swaminathan et al. 2026', '10.1038/s41467-026-77112-z'], dmelppi: ['Peng & Zhao 2026', '10.1371/journal.pcbi.1013899'],
   roothair: ['Urzúa Lehuedé et al. 2025', '10.1111/nph.20406'], abf2: ['Salinas-Grenet et al. 2026', '10.64898/2026.08.28.747924'],
+  schmidwalter2025: ['Schmid & Walter 2025', '10.1016/j.molcel.2025.01.034'],
 };
 const cite = (k) => `<a href="https://doi.org/${REF[k][1]}" target="_blank" rel="noopener">${REF[k][0]}</a>`;
 // A screen's reference, the one text About and the pair page's Prediction sources both use: the named papers, Han et al. for
@@ -154,10 +155,11 @@ const AFDB_SRC = ['han2026', 'Han, Y. et al. (2026). AlphaFold Database expands 
 const ARATH_SRC = { 'arabidopsis-roothair': ['roothair', 'Urzúa Lehuedé, T., Berdion Gabarain, V., Ibeas, M. A., Salinas-Grenet, H. et al. (2025). Two antagonistic gene regulatory networks drive Arabidopsis root hair growth at low temperature linked to a low-nutrient environment. <i>New Phytol.</i> 245, 2645–2664.'],
   'arabidopsis-abf2': ['abf2', 'Salinas-Grenet, H., Johnson, N. R., Ibeas, M. A. et al. (2026). ABF2 and bZIP2 remodel root system architecture under combined phosphate deficiency and salinity in Arabidopsis. <i>bioRxiv</i>.'] };
 const DMEL_SRC = ['dmelppi', 'Peng, J. &amp; Zhao, L. (2026). A predicted structural interactome reveals binding interference from intrinsically disordered regions. <i>PLOS Comput. Biol.</i> 22, e1013899. Data: DmelPPI, figshare (10.6084/m9.figshare.30582146), CC BY 4.0.'];
+const DDR_SRC = ['schmidwalter2025', 'Schmid, E. W. &amp; Walter, J. C. (2025). <i>Mol. Cell</i> 85, 1216–1232.e5. Data: SBGrid Data Bank 1155 (10.15785/SBGRID/1155), CC0.'];
 const MITO_SRC = ['mitomatch', 'Swaminathan, A. B. et al. (2026). The predicted interactome of the human mitochondrial proteome. <i>Nat. Commun.</i> 17, 10162. Data: MitoMatch, Zenodo (10.5281/zenodo.21232148), CC BY 4.0.'];
 const LIVIA_SRC = ['livia', 'Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.'];
 function screenCite(d) {
-  const [k, text] = SCREEN_SRC[d.id] || ARATH_SRC[d.id] || (/^afdb-het-/.test(d.id) ? AFDB_SRC : /^mitomatch-/.test(d.id) ? MITO_SRC : d.id === 'dmelppi' ? DMEL_SRC : /kinase-kinase$/.test(d.id) ? LIVIA_SRC : [null, esc(d.source || d.title || d.id)]);
+  const [k, text] = SCREEN_SRC[d.id] || ARATH_SRC[d.id] || (/^afdb-het-/.test(d.id) ? AFDB_SRC : /^mitomatch-/.test(d.id) ? MITO_SRC : d.id === 'dmelppi' ? DMEL_SRC : /^ddr-/.test(d.id) ? DDR_SRC : /kinase-kinase$/.test(d.id) ? LIVIA_SRC : [null, esc(d.source || d.title || d.id)]);
   return { k, text, url: k ? `https://doi.org/${REF[k][1]}` : d.paper || '', short: k ? ({ livia: 'Kim & Perrimon 2026', flypredictome: 'Kim et al. 2026' }[k] || REF[k][0]) : (d.source || d.title || d.id).replace(/ · .*$/, '') };   // short: author and year, as the screens' chips cite them
 }
 const dataLine = (d) => { const sc = screenCite(d);   // one line per screen: the license of its data, and whom to cite
@@ -527,8 +529,10 @@ function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: li
   return ds.raw.get(rel);
 }
 async function csvRows(zip, csvName) {   // a bundle's lis.py rows; merged() reads them once and lets them go (a big bundle's rows run to hundreds of MB)
-  const t = parseCSV(await zip.file(csvName).async('string'));
-  return { header: t[0], H: Object.fromEntries(t[0].map((k, i) => [k, i])), rows: t.slice(1).filter((r) => r.length > 10) };
+  const t = parseCSV(await zip.file(csvName).async('string')), seen = new Set();
+  // A row written twice (a self-pair filed under both of its proteins, which are one bundle) is one prediction, not two runs
+  const rows = t.slice(1).filter((r) => { if (r.length <= 10) return false; const k = r.join('\u0001'); if (seen.has(k)) return false; seen.add(k); return true; });
+  return { header: t[0], H: Object.fromEntries(t[0].map((k, i) => [k, i])), rows };
 }
 // Every prediction of one protein across the screens of its species. A pair predicted in two screens, or both ways
 // round in one, keeps every model; each keeps its screen and chain order (its "run") and rank. A gene-keyed bundle
@@ -1754,6 +1758,7 @@ async function viewAbout() {
     ['AlphaFold Database viral protein complexes (Han, Narain et al. 2026)', 'the virus pages', licOf(/^viral-dimers-afdb$/), ((reg.datasets || []).find((d) => d.id === 'viral-dimers-afdb') || {}).paper || 'https://alphafold.ebi.ac.uk', 'Han, Narain et al. 2026'],
     ['MitoMatch (Swaminathan et al. 2026)', 'the human mitochondrial proteome screen and its orthologs in eleven species, rescored with lis.py', licOf(/^mitomatch-/), doi('mitomatch'), 'Swaminathan et al. 2026'],
     ['DmelPPI (Peng &amp; Zhao 2026)', 'the fly structural interactome screen, rescored with lis.py', licOf(/^dmelppi$/), doi('dmelppi'), 'Peng & Zhao 2026'],
+    ['Walter laboratory genome-maintenance screens (Schmid &amp; Walter 2025)', 'the human genome-maintenance matrix and the DONSON, STK19 and USP37 screens, rescored with lis.py', licOf(/^ddr-/), doi('schmidwalter2025'), 'Schmid & Walter 2025'],
     ['Arabidopsis root-hair regulators (Urzúa Lehuedé et al. 2025)', 'the Arabidopsis root-hair transcription factor pairs', licOf(/^arabidopsis-roothair$/), doi('roothair'), 'Urzúa Lehuedé et al. 2025'],
     ['Arabidopsis ABF2 and bZIP2 (Salinas-Grenet et al. 2026)', 'the Arabidopsis ABF2 and bZIP2 pairs', licOf(/^arabidopsis-abf2$/), doi('abf2'), 'Salinas-Grenet et al. 2026'],
     ['AlphaFold Database homodimers (Han et al. 2026)', 'the Homodimer card and the homodimer lists', (reg.homodimers && reg.homodimers.license) || 'CC BY 4.0', doi('han2026'), 'Han et al. 2026'],

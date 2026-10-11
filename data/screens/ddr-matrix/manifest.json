@@ -1,0 +1,71 @@
+{
+ "format": "livia-atlas/1",
+ "id": "ddr-matrix",
+ "title": "Genome maintenance protein matrix (Schmid & Walter 2025)",
+ "short": "Genome maintenance matrix",
+ "speciesId": "human",
+ "species": {
+  "name": "Homo sapiens",
+  "taxon": 9606
+ },
+ "ids": "UniProt entry name, the key the human proteome-wide screen uses. The name is resolved from the sequence that was folded, not from the name the deposition gave the chain; each protein record carries the deposition's own name as a synonym wherever the two differ.",
+ "source": {
+  "name": "Walter laboratory",
+  "citation": "Schmid EW, Walter JC (2025). Molecular Cell 85, 1216-1232.e5.",
+  "short": "Schmid & Walter 2025",
+  "doi": "10.1016/j.molcel.2025.01.034",
+  "url": "https://doi.org/10.1016/j.molcel.2025.01.034",
+  "data": {
+   "repository": "SBGrid Data Bank",
+   "id": 1155,
+   "doi": "10.15785/SBGRID/1155",
+   "url": "https://doi.org/10.15785/SBGRID/1155",
+   "license": "CC0"
+  },
+  "license": "CC0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "licenseNote": "CC0 on the deposition. The predictions are the Walter laboratory's; the scores served here were recomputed from them with lis.py.",
+  "method": "AlphaFold-Multimer, multimer v3 weights, one seed per pair, 3 models per pair",
+  "selection": "A near-complete all-by-all over a curated set of genome-maintenance proteins: 287 proteins and 40458 pairs, where a complete all-by-all including self-pairs would be 41,328."
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "method": "AlphaFold-Multimer with the multimer v3 weights and one seed per pair; both are taken from the released filenames (alphafold2_multimer_v3, seed_000), which is where they are verifiable. The deposition states no software versions and no run parameters anywhere: the structure files are bare coordinates with no header, the per-model JSON carries only pae, ptm, iptm and max_pae, and the archive holds no configuration file. Scores here are lis.py (AFM-LIS) recomputed from the deposited coordinates and PAE, PAE <= 12 and C-beta <= 8, inclusive.",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "inclusive": true,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  },
+  "idResolution": "Protein identity is resolved PER SCREEN from the sequence that screen folded, not from the name the deposition gave the chain. Over the 59832 chain occurrences across the four screens, 58822 carry a sequence whose own name UniProt confirms; 439 resolve to a different UniProt entry name than the deposition gave them; 537 match no current UniProt sequence and keep the deposition name; and 26 resolve only to an accession-style TrEMBL name, where the deposition mnemonic is kept instead, an accession-style key being one nothing else in the Atlas could ever join. Resolution has to be per screen because a protein does not always carry one sequence across screens (see multiSequence), so the entry name its sequence resolves to can differ between them.",
+  "idDisagreements": "The deposition's chain names have drifted along UniProt renames, and the drift is BETWEEN screens rather than inside any one of them. The clearest case: LIPG_HUMAN is 398 aa in the DONSON screen, which is today's LIPF, and 500 aa in the STK19 and USP37 screens, where it really is LIPG; correspondingly LIPE_HUMAN appears only in the DONSON screen at 500 aa, which is today's LIPG. The same shift puts DUS2_HUMAN (314 aa) where today's DUSP2 belongs and DUS2L_HUMAN (493 aa) where today's DUS2 belongs. Keying by the deposition name would have put one protein's scores on another's node, and no length check would have revealed it. Beyond the shifts, a few hundred names are plain UniProt renames of the same protein (CA109_HUMAN to AIRIM_HUMAN, DOP1_HUMAN to DOP1A_HUMAN, LSMD1_HUMAN to NAA38_HUMAN, FAIM3_HUMAN to FCMR_HUMAN among them), which resolve to the current name so they join the proteins the index already holds instead of appending duplicates. Within a screen, merging two deposition names onto one key happens rarely and only when their sequences are byte-identical: ddr-matrix 3, ddr-donson 2, ddr-stk19 0, ddr-usp37 1. Where two names resolve to one entry but carry DIFFERENT sequences they are isoforms of one protein, which one id per screen cannot hold, so they are kept apart under their own deposition names and recorded: NDK8_HUMAN at 137 aa beside TXND3_HUMAN at 588 aa (TXNDC3 having been renamed NME8) in three screens, and AKAP2_HUMAN at 379 aa beside PALM2_HUMAN at 859 aa in the DONSON screen. The full per-protein table ships as identity_report.tsv beside md5s.txt.",
+  "multiSequence": "144 proteins were folded from more than one sequence across the four screens, and 50 of those are the SAME LENGTH in every screen with different residues, so a length comparison cannot see them. Each screen therefore serves, in its own s/{id}.fa, the sequence that screen folded: lis.py's LIR and cLIR indices are positions in the folded sequence, so serving another screen's sequence would shift every interface residue shown. The pattern is systematic rather than scattered -- the DONSON set disagrees with the STK19 and USP37 sets on most of them, including the bait STK19_HUMAN itself (254 aa in three screens, 368 aa in the DONSON screen) -- which is the DONSON set having been built from an older proteome release than the other two.",
+  "paeQuantization": "The deposited PAE is rounded to integers: every value in the three single-bait screens, and 93.90% of the matrix screen's rows (the rest carry full 0.01 precision). Inside the 12 A window lis.py's LIS term consumes, an integer grid leaves only 13 distinct values. Measured by scoring the matrix's full-precision pairs twice, as deposited and rounded (n=26), the rounding moves iLIS by a median of 0.0000 and at worst -0.0265, never upward, and flipped no interaction call. Counted over all pairs, 2.56% sit within 0.0265 of the 10% FPR cutoff, so that is the fraction whose call the rounding could in principle move; a result resting on such a pair should be checked against the model rather than taken from the score. The contact counts are a different matter: rounding admits borderline pairs whose LIS weight is about 1 - 12/12 = 0, which shifts LIA by up to +556 while leaving iLIS essentially unchanged. Do not compare LIA or cLIA between this dataset and screens scored from unrounded PAE.",
+  "emptyCells": "The LIpLDDT and cLIpLDDT columns are empty where the pair has no interface residue under the C-beta cutoff, which is the correct value and not a missing one; the LIR_indices and cLIR_indices columns carry [] in those same rows. structure_file is empty by Atlas convention. pLDDT comes from the deposited coordinates' B-factors, which is ColabFold's own per-residue definition, because the deposited JSON carries no pLDDT array. Every other column is filled.",
+  "modelRanks": "Three models are served per pair, carrying the deposition's own rank labels as scored. 37437 of 40458 pairs carry ranks 1, 2 and 3; the rest are three of the five models under labels that are neither always the top three nor always distinct (1380 pairs have no rank 1, 584 carry a duplicated label). The rank to model-number mapping differs per pair, so the model number is read from the file and never inferred from the rank.",
+  "cutoffProximity": "3800 pairs reach the 10% FPR cutoff (0.223). 1333 pairs (3.29%) sit within 0.0265 of it, which is the largest iLIS shift the deposited PAE rounding was measured to cause.",
+  "excluded": "One pair is excluded: its three models are not all the same complex. Two of them are a 2,693-residue complex and the third a 2,702-residue one, built from different isoforms of both proteins, with two files carrying the same rank label and none carrying rank 1. All three scored iLIS 0.0000, so no interaction call depends on the exclusion, but serving them as three ranked models of one pair would be false."
+ },
+ "counts": {
+  "proteins": 287,
+  "pairs": 40458,
+  "predictions": 121374,
+  "runs": 40458,
+  "pairsFpr10": 3800,
+  "pairsFpr5": 1604,
+  "pairsFpr1": 236,
+  "models": 3
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id"
+}
