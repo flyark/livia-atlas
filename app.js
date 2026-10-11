@@ -3349,10 +3349,15 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   /* Interaction Residues: any partner, any screen, any model */
   const partnersByScore = [...B.partners].sort((a, b) => b.best - a.best);
   const PLACE = (key) => sp.byKey.get(key) || { key, gene: key, acc: '', clen: 0, len: 0, occ: [] };
+  // The list holds the partners past the 10% FPR cutoff (at least the twenty best) and whichever partner is chosen; a protein
+  // folded against a proteome has twenty thousand partners, and a list of them all weighs more than the rest of the page. Every
+  // partner stays reachable through the Find partner box, which adds its hit to the list.
+  const resOption = (p) => { const c = partnerCluster.get(p.id); return `<option value="${esc(p.id)}">${esc(gname(p.id))} — iLIS ${p.best.toFixed(3)}${c ? ` (${clusterLabel(c, true)})` : ''}</option>`; };
   function fillPartners() {
     const sel = $('#res-partner'), keep = sel.value || (partnersByScore[0] && partnersByScore[0].id);
-    sel.innerHTML = partnersByScore.map((p) => { const c = partnerCluster.get(p.id);
-      return `<option value="${esc(p.id)}">${esc(gname(p.id))} — iLIS ${p.best.toFixed(3)}${c ? ` (${clusterLabel(c, true)})` : ''}</option>`; }).join('');
+    const n = Math.max(20, partnersByScore.filter((p) => p.best >= CUT[10]).length), list = partnersByScore.slice(0, n);
+    if (keep && !list.some((p) => p.id === keep)) { const k = partnersByScore.find((p) => p.id === keep); if (k) list.push(k); }
+    sel.innerHTML = list.map(resOption).join('');
     if (keep) sel.value = keep;
     if (!$('#res-body').childElementCount) pickPartner();
   }
@@ -3374,7 +3379,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   $('#res-rank').onchange = drawResidues;
   $('#res-find').oninput = (e) => { const q = e.target.value.trim().toLowerCase(); if (!q) return;
     const hit = partnersByScore.find((p) => gname(p.id).toLowerCase() === q) || partnersByScore.find((p) => gname(p.id).toLowerCase().startsWith(q)) || partnersByScore.find((p) => p.id.toLowerCase().includes(q));
-    if (hit && hit.id !== $('#res-partner').value) { $('#res-partner').value = hit.id; pickPartner(); } };
+    if (hit && hit.id !== $('#res-partner').value) { const sel = $('#res-partner'); if (![...sel.options].some((o) => o.value === hit.id)) sel.insertAdjacentHTML('beforeend', resOption(hit)); sel.value = hit.id; pickPartner(); } };
 
   /* 3D structure: the AlphaFold DB model in LIVIA's Mol* page, colored like clip.html */
   const pale3D = (h) => { const v = [1, 3, 5].map((i) => parseInt(h.slice(i, i + 2), 16)), lum = (0.2126 * v[0] + 0.7152 * v[1] + 0.0722 * v[2]) / 255; return lum > 0.62 && Math.max(...v) - Math.min(...v) < 110; };
