@@ -1075,12 +1075,13 @@ const setBadges = (sets) => sets.map((s) => `<span class="src" style="--c:${SET_
 const runColor = (sp, p) => (p.set ? SET_COL[p.set] || '#5B6B7F' : sp.dsColor[p.di]);
 // A protein's predicted sequence: from a bundle FASTA when one carries it, else a screen's per-protein s/<name>.fa.
 const SEQS = new Map();
-function seqOf(sp, R, B) {
+function seqOf(sp, R, B, di) {   // di: the screen of the shown prediction, whose sequence file is tried first
   if (!R) return Promise.resolve('');
-  const s = B && B.seqs.get(R.key), want = R.clen || 0; if (s && (!want || s.length === want)) return Promise.resolve(s);   // a bundle can carry another isoform under the gene's key (fly yki: 395 aa there, 418 aa folded)
+  const s = B && B.seqs.get(R.key), want = R.clen || 0; if (s && (!want || s.length === want)) return Promise.resolve(s);   // a bundle can carry another isoform under the gene's key than the one a screen folded
   return (async () => {
     let first = '';
-    for (const o of R.occ || []) {
+    const occ = [...(R.occ || [])].sort((a, b) => (a.di === di ? 0 : 1) - (b.di === di ? 0 : 1));
+    for (const o of occ) {
       let ds; try { ds = await dataset(sp.dsIds[o.di]); } catch (e) { continue; }
       const f = ds.manifest.files && ds.manifest.files.sequence; if (!f) continue;
       const rel = f.replace('{id}', o.name), ck = ds.id + '|' + rel;
@@ -1453,7 +1454,7 @@ async function ifaceView(host, { sp, P, O, pred, B, canvasId }) {
   host._redraw();
   attachExport(canvasId, `atlas_${P.gene}_vs_${O.gene}_residues`, host._redraw);
   const ownSeq = (s) => [B.seqs.get(s.name), ((B.cons && B.cons.get(s.name)) || {}).seq].find((q) => q && q.length === s.len) || B.seqs.get(s.name) || '';   // the one of the folded length
-  const seqFor = (R, s) => (s.own ? Promise.resolve(ownSeq(s)) : !s.span && [B.seqs.get(s.name), ((B.cons && B.cons.get(s.name)) || {}).seq].some((q) => q && q.length === s.len) ? Promise.resolve(ownSeq(s)) : seqOf(sp, s.len === R.len && R.len !== R.clen ? { ...R, clen: R.len } : R, B));   // drawn on the reference: its length, not the folded one   // the reference, or the construct's own (from the bundle FASTA or its constructs.tsv seq)
+  const seqFor = (R, s) => (s.own ? Promise.resolve(ownSeq(s)) : !s.span && [B.seqs.get(s.name), ((B.cons && B.cons.get(s.name)) || {}).seq].some((q) => q && q.length === s.len) ? Promise.resolve(ownSeq(s)) : seqOf(sp, { ...R, clen: s.len || R.clen }, B, pred.di));   // drawn on the reference: its length, not the folded one   // the reference, or the construct's own (from the bundle FASTA or its constructs.tsv seq)
   const [qs, os] = await Promise.all([seqFor(P, q), seqFor(O, o)]);
   if (host._tok !== tok) return;
   T[0].seq = qs; T[1].seq = os;
@@ -2327,19 +2328,26 @@ function readIdInput(sp, raw, colPref = null) {
   return { toks, T, col: all ? 'all' : col, strongN: strong.length, named: named.length, data, note };
 }
 // Residue lookup input: "983", "T983", "T983A", "p.T983A" or "Thr983Ala" → { n, wt, mut } (one-letter codes)
-const AA3 = { ALA: 'A', ARG: 'R', ASN: 'N', ASP: 'D', CYS: 'C', GLN: 'Q', GLU: 'E', GLY: 'G', HIS: 'H', ILE: 'I', LEU: 'L', LYS: 'K', MET: 'M', PHE: 'F', PRO: 'P', SER: 'S', THR: 'T', TRP: 'W', TYR: 'Y', VAL: 'V', TER: '*' };
-function parseRes(v) {
-  let t = String(v || '').trim().toUpperCase().replace(/^P\./, '');
-  t = t.replace(/^([A-Z]{3})(\d+)([A-Z]{3})?$/, (m, a, n, b) => (AA3[a] || '?') + n + (b ? AA3[b] || '?' : ''));
-  const m = t.match(/^([A-Z])?(\d+)([A-Z*])?$/);
-  return m && +m[2] > 0 ? { n: +m[2], wt: m[1] || '', mut: m[3] || '' } : { n: 0, wt: '', mut: '' };
+function parseRes(v) {   // a residue number (983; the T983A of an older link still gives 983) or a short sequence (ETLKKG; other characters ignored)
+  const t = String(v || '').trim().toUpperCase().replace(/^P\./, '');
+  const m = t.match(/^[A-Z]{0,3}(\d+)[A-Z*]{0,3}$/); if (m && +m[1] > 0) return { n: +m[1], seq: '' };
+  const q = t.replace(/[^A-Z]/g, ''); return q.length >= 3 ? { n: 0, seq: q } : { n: 0, seq: '' };
 }
-const resLabel = (r) => `${r.wt}${r.n}${r.mut}`;
+const resLabel = (r) => r.seq || String(r.n);
+const resSlack = (q) => Math.floor(q.length / 5);   // mismatches allowed when a sequence is looked up: one per five residues
+function matchSeq(seq, q) {   // where a short sequence sits in a longer one: the fewest mismatches (up to resSlack), the earliest among ties; X in the query matches any residue
+  const n = q.length, allow = resSlack(q); let best = null;
+  for (let i = 0; i + n <= seq.length; i++) {
+    let mm = 0; for (let j = 0; j < n && mm <= allow; j++) if (q[j] !== 'X' && q[j] !== seq[i + j]) mm++;
+    if (mm <= allow && (!best || mm < best.mm)) { best = { s: i + 1, e: i + n, mm }; if (!mm) break; }
+  }
+  return best;
+}
 async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only that thematic set's predictions; iso: one isoform ('reference' or a construct)
   const gen = ROUTE, gone = () => stale(gen);   // after every await: stop if the reader has moved to another page
   /* BioGRID: partners with a reported interaction, from the species file (reported); marked once it arrives */
   const CUT0 = [5, 1].includes(+hashPath().q.get('cut')) ? +hashPath().q.get('cut') : 10;   // the cutoff the link asks for (10% unless cut=5 or cut=1)
-  let RESV = parseRes(hashPath().q.get('res')), RESQ = RESV.n, resScrolled = false;   // residue lookup: ?res=983 or ?res=T983A in the link
+  let RESV = parseRes(hashPath().q.get('res')), RESQ = RESV.n || RESV.seq, resScrolled = false;   // residue lookup: ?res=983 or ?res=ETLKKG in the link
   let KB = null, scKnown = 'pass';   // rings in the Overview: 'pass' (partners past the 10% FPR cutoff), 'all' or 'off'
   const kbOf = (key) => { if (!KB) return null; const r = sp.byKey.get(key); if (!r || r.i == null || r.i === P.i) return null;
     const ph = KB.pubs(P.i, r.i), ge = KB.gen(P.i, r.i); return ph || ge ? { ph, ge } : null; };
@@ -2392,7 +2400,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:${BAND[1]}"></i>1%</span><span><i style="background:${BAND[5]}"></i>5%</span><span><i style="background:${BAND[10]}"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div>
           <div class="legend tl-key" id="tl-m3d" hidden></div></div></div></div>
     <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
-        <div class="clip-ctl"><label class="ctl muted" title="a residue number or a variant (983, T983A): which predictions, partners and sites contact it; the link keeps it">Residue<input type="text" id="res-q" placeholder="983 or T983A" spellcheck="false" autocomplete="off" value="${esc(RESQ ? resLabel(RESV) : '')}"></label><div class="ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg" title="the cutoff of this card and of the frequency and fingerprint cards below it; kept in the link (other cards have their own)">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === CUT0 ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
+        <div class="clip-ctl"><label class="ctl muted" title="a residue number or a short sequence (983, ETLKKG): which predictions, partners and sites contact it; the link keeps it">Residue<input type="text" id="res-q" placeholder="983 or a sequence" spellcheck="false" autocomplete="off" value="${esc(RESQ ? resLabel(RESV) : '')}"></label><div class="ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg" title="the cutoff of this card and of the frequency and fingerprint cards below it; kept in the link (other cards have their own)">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === CUT0 ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
       <p class="sites-answer" id="sites-answer">Finding the binding sites…</p><p class="res-look" id="res-look" hidden></p>
       <div class="plot" id="sites-map"></div><p class="sites-bg muted" id="sites-bg"></p><p class="sites-more" id="sites-more" hidden></p><div class="domlegend" id="sites-domains"></div>
       <p class="muted sites-note">How the sites are found: LIVIA cLIP, run in your browser on the predictions shown, takes the residues of ${esc(P.gene)} that
@@ -2400,7 +2408,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         average linkage and chooses the number of clusters by silhouette. Each cluster is a site, numbered by its number of models; the map has one lane per major site, one
         with at least 3 partners and 2% of all partners, and shows the minor sites when asked. Solid marks
         a site's footprint, the residues at least 30% of its predictions contact; lighter shades, how often the other residues are contacted. Click a lane to
-        show only that site on the page; the partners of each site are listed under Clusters. Type a residue number or a variant (for example <span id="res-eg">T983A</span>) to see which
+        show only that site on the page; the partners of each site are listed under Clusters. Type a residue number or a short sequence (for example <span id="res-eg">ETLKKG</span>; up to one mismatch per five residues, X matches any residue) to see which
         predictions, partners and sites contact it; the link keeps it.</p><p class="note" id="clip-aside" hidden></p></div>
     <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners in each cluster, largest first; a partner with predictions in two clusters is listed under both</span></div><div class="clinfo" id="cluster-info"></div><div class="legend" id="info-kb" hidden></div></div>
     <div class="card" id="c-3d"><div class="card-head"><h2>3D structure</h2><span class="muted" id="struct-badge"></span></div>
@@ -2513,17 +2521,6 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     row.innerHTML = `<span class="lbl">${WORD}</span>${BA.choices.map((c) => `<a class="src scope-chip${c === ISO ? ' on' : ''}" style="--c:#1A5276" href="${isoHref(c)}"
       title="${esc(c.label)}: ${fmtInt(c.n)} model${c.n === 1 ? '' : 's'}">${esc(isoName(c))} <span class="n">${fmtInt(c.n)}</span></a>`).join('')}`;
     if (ISO !== BA.choices[0]) document.title = `${P.gene} · ${isoName(ISO)} · LIVIA Atlas`;
-  }
-  {
-    const n = new Map(), by = new Map();   // each screen and set counts its own models, a sequence pair once
-    for (const p of B0.preds) for (const k of [sp.dsIds[p.di], ...(p.tags || [])]) { if (!by.has(k)) by.set(k, []); by.get(k).push(p); }
-    for (const [k, ps] of by) n.set(k, countOnce(ps));
-    if (B0.split) for (const c of B0.split.summary.choices) {   // the isoform files, counted from the gene's summary
-      const d = sp.dsIds[B0.split.part.di]; n.set(d, (n.get(d) || 0) + c.models);
-      for (const [t, k] of Object.entries(c.sets || {})) n.set(t, (n.get(t) || 0) + k); }
-    const sets = TS0 ? TS0.list.filter((x) => n.get(x.id)).sort((x, y) => (x.type === 'screen' ? 0 : 1) - (y.type === 'screen' ? 0 : 1)) : [];
-    if (sets.length) $('#scope').innerHTML = `<span class="lbl">Predicted in</span> ${srcRefs(sp, P.src)}<span class="sep"></span><label class="scope-sets">sets <select id="scope-set" aria-label="Show the models of one set">${[['', 'all'], ...sets.map((x) => [x.id, `${x.short} (${fmtInt(n.get(x.id) || 0)})`])].map(([v, l]) => `<option value="${esc(v)}"${(SET ? SET.id : '') === v || (!v && !sets.some((x) => SET && x.id === SET.id)) ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>`;
-    { const ss = $('#scope-set'); if (ss) ss.onchange = () => { location.hash = ss.value ? `#/${sp.id}/${P.key}?set=${encodeURIComponent(ss.value)}` : `#/${sp.id}/${P.key}`; }; }   // a set, as its chip did: the same ?set= scope
   }
   if (notIn) { const bar = $('#setbar'); bar.hidden = false;   // the scope asked for does not apply to this protein
     const ds0 = (REG.datasets || []).find((d) => d.id === notIn), known = ds0 || notIn !== setId;   // a screen of the registry, a set of this protein's screens, or no such set
@@ -3214,10 +3211,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     ans.innerHTML = `<b>${esc(P.gene)}</b>: ${fmtInt(np)} partner${np === 1 ? ' is' : 's are'} predicted, past the ${cut}% FPR cutoff, to contact ${K === 1 ? 'one site' : `${K} sites`}${partnerCluster.has(P.key) ? ` (including ${esc(P.gene)}\'s pair with itself; the header tiles count only the other partners)` : ''}.`
       + ` The site with the most partners (${clusterLabel(big.c)}), at ${where(big)}, is contacted by ${fmtInt(big.partners.length)} of them${big.partners.length ? `, including ${andList(names(steady(big.partners).slice(0, 3)))}` : ''}.`
       + outOfSites();
-    { const [pos] = [...big.hits].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0] || [], aa = pos && qSeq ? qSeq[pos - 1] : '';   // the most contacted residue of the largest site
-      if (pos) { const ex = aa ? `${pos} or ${aa}${pos}${aa === 'A' ? 'G' : 'A'}` : `${pos}`, box = $('#res-q'); box.placeholder = ex;
-        box.closest('label').title = `a residue number or a variant (${ex.replace(' or ', ', ')}): which predictions, partners and sites contact it; the link keeps it`;
-        const eg = $('#res-eg'); if (eg && aa) eg.textContent = ex.split(' or ')[1]; } }
+    { const [pos] = [...big.hits].sort((a, b) => b[1] - a[1] || a[0] - b[0])[0] || [], six = pos && qSeq ? qSeq.slice(Math.max(0, pos - 3), Math.max(0, pos - 3) + 6) : '';   // the most contacted residue of the largest site, and the sequence around it
+      if (pos) { const ex = six.length >= 3 ? `${pos} or ${six}` : `${pos}`, box = $('#res-q'); box.placeholder = ex;
+        box.closest('label').title = `a residue number or a short sequence (${ex.replace(' or ', ', ')}; up to one mismatch per five residues, X matches any residue): which predictions, partners and sites contact it; the link keeps it`;
+        const eg = $('#res-eg'); if (eg && six.length >= 3) eg.textContent = six; } }
     const nMajor = sites.filter((st) => major(st, np)).length, collapse = !sitesAll && nMajor > 0 && nMajor < K;
     const shown = collapse ? lanesOrder.filter((st) => major(st, np) || (!allOn() && ACTIVE.has(st.c))) : lanesOrder;   // a site chosen elsewhere stays in view
     drawSitesMap(map, shown, doms); { const dl = $('#sites-domains'); if (dl) dl.innerHTML = domLegend(doms); } renderResLook(sites); attachExport('sites-canvas', `atlas_${P.gene}_sites`, () => drawSitesMap(map, shown, doms));
@@ -3230,26 +3227,30 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       : `The ${nMajor} major sites, each with at least 3 partners and 2% of all partners; ${K - nMajor} minor site${K - nMajor === 1 ? '' : 's'} hidden. <button class="more" type="button">Show all ${K} sites</button>`;
       $('button', more).onclick = () => { sitesAll = !sitesAll; renderSites(); }; }
   }
-  function renderResLook(sites) {   // the residue in the link: its contacts past the cutoff, by site and partner
-    const box = $('#res-look'); if (!box) return; const r = RESQ, L = M.plen;
-    box.hidden = !r; if (!r) return;
-    if (r > L) { box.innerHTML = `Residue ${r} is past the end of the sequence shown here (${fmtInt(L)} residues).`; return; }
-    const hit = M.preds.map((p, i) => i).filter((i) => M.fingerprints[i].includes(r)), best = new Map();
+  const resSpan = () => (RESV.seq ? (qSeq ? matchSeq(qSeq, RESV.seq) : null) : RESV.n ? { s: RESV.n, e: RESV.n, mm: 0 } : null);   // the looked-up residue, or the stretch a looked-up sequence matches
+  function renderResLook(sites) {   // the residue or sequence in the link: its contacts past the cutoff, by site and partner
+    const box = $('#res-look'); if (!box) return; const L = M.plen;
+    box.hidden = !RESQ; if (!RESQ) return;
+    const at = resSpan(); if (!at) {   // a sequence with no place in the one shown
+      const k = resSlack(RESV.seq);
+      box.innerHTML = `<b>${esc(RESV.seq)}</b>: <span class="res-warn">${qSeq ? `not found in the sequence shown here (${fmtInt(L)} residues; up to ${k} mismatch${k === 1 ? '' : 'es'} allowed, X matches any residue).` : 'the sequence shown here is not available, so a sequence cannot be placed; type a residue number.'}</span>`; return; }
+    if (at.s > L) { box.innerHTML = `Residue ${at.s} is past the end of the sequence shown here (${fmtInt(L)} residues).`; return; }
+    const one = at.s === at.e, inR = (r) => r >= at.s && r <= at.e;
+    const hit = M.preds.map((p, i) => i).filter((i) => M.fingerprints[i].some(inR)), best = new Map();
     for (const i of hit) { const k = who(M.preds[i].partner).key; if (k !== P.key) best.set(k, Math.max(best.get(k) || 0, M.preds[i].iLIS || 0)); }
-    const inS = sites.map((st) => ({ st, h: st.hits.get(r) || 0 })).filter((x) => x.h).sort((a, b) => b.h - a.h);
-    const top = [...best].sort((a, b) => b[1] - a[1]), shown = top.slice(0, 12), aa = qSeq && qSeq[r - 1] ? qSeq[r - 1] : '';
-    const off = RESV.wt && aa && RESV.wt !== aa ? `<span class="res-warn">This sequence has ${esc(aa)} at ${r}, not ${esc(RESV.wt)}; check the numbering (isoform or construct).</span> ` : '';
-    box.innerHTML = `<b>${esc(RESV.wt && !aa ? RESV.wt : aa)}${r}${RESV.mut ? esc(RESV.mut) : ''}</b>: ` + off + (!hit.length ? `no prediction past the ${cut}% FPR cutoff contacts it.`
+    const inS = sites.map((st) => ({ st, h: Math.max(0, ...[...st.hits].filter(([r]) => inR(r)).map(([, h]) => h)) })).filter((x) => x.h).sort((a, b) => b.h - a.h);
+    const top = [...best].sort((a, b) => b[1] - a[1]), shown = top.slice(0, 12), aa = one && qSeq && qSeq[at.s - 1] ? qSeq[at.s - 1] : '';
+    const head = one ? `${esc(aa)}${at.s}` : `${esc(RESV.seq)} at ${at.s}–${at.e}${at.mm ? ` (${at.mm} mismatch${at.mm === 1 ? '' : 'es'})` : ''}`;
+    box.innerHTML = `<b>${head}</b>: ` + (!hit.length ? `no prediction past the ${cut}% FPR cutoff contacts ${one ? 'it' : 'these residues'}.`
       : `contacted in ${fmtInt(hit.length)} of ${fmtInt(M.preds.length)} predictions past the ${cut}% FPR cutoff, by ${fmtInt(best.size)} partner${best.size === 1 ? '' : 's'}`
-        + `, in ${inS.map((x) => `<span style="color:${clusterColor(x.st.c, M.k)}">●</span> ${clusterLabel(x.st.c)} (${x.h} of ${x.st.n}${x.st.foot.includes(r) ? ', in its footprint' : ''})`).join(', ')}.`
+        + `, in ${inS.map((x) => `<span style="color:${clusterColor(x.st.c, M.k)}">●</span> ${clusterLabel(x.st.c)} (${x.h} of ${x.st.n}${x.st.foot.some(inR) ? ', in its footprint' : ''})`).join(', ')}.`
         + ` Partners: ${shown.map(([k]) => `<a href="#/${sp.id}/${P.key}/${k}${scopeQ}">${esc(gname(k))}</a>`).join(', ')}${top.length > shown.length ? ` and ${top.length - shown.length} more` : ''}.`)
-      + ` <button class="more" type="button" id="res-copy">Copy link</button>`
-      + (RESV.mut ? `<span class="res-note">A contact in a prediction says where partners bind, not what the substitution does to them; the page does not predict its effect.</span>` : '');
+      + ` <button class="more" type="button" id="res-copy">Copy link</button>`;
     $('#res-copy').onclick = (e) => { navigator.clipboard && navigator.clipboard.writeText(location.href).then(() => { e.target.textContent = 'Copied'; }, () => {}); };
     if (!resScrolled) { resScrolled = true; $('#c-sites').scrollIntoView({ block: 'start' }); }
   }
   function setRes(v) {   // keep the residue in the link without reloading the page
-    RESV = parseRes(v); RESQ = RESV.n; resScrolled = true;
+    RESV = parseRes(v); RESQ = RESV.n || RESV.seq; resScrolled = true;
     const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); RESQ ? u.set('res', resLabel(RESV)) : u.delete('res');
     history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`);
     if (clustered()) renderSites();
@@ -3280,9 +3281,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       for (let r = 1; r <= L; r++) { const v = bgd.f[r] / (bgd.max || 1); if (v > 0) g.fillRect(xOf(r), y0 + hh * (1 - v), Math.max(1, bw), hh * v); }
       g.fillStyle = '#4A596F'; g.font = '9.5px "IBM Plex Sans", system-ui, sans-serif'; g.textBaseline = 'middle'; g.textAlign = 'right'; g.fillText('Background', AXL - 6, y0 + hh / 2); g.textAlign = 'left'; }   // smaller: the margin is shared with the other plots
     drawTicks(g, resTicks(L, W - AXL - AXR, xtWant()), top + sites.length * LH + BGH + 2, (r) => xOf(r) + bw / 2, W);
-    if (RESQ >= 1 && RESQ <= L) { const x = Math.round(xOf(RESQ) + bw / 2) + 0.5;   // the looked-up residue
-      g.strokeStyle = '#17263A'; g.lineWidth = 1.5; g.beginPath(); g.moveTo(x, top); g.lineTo(x, top + sites.length * LH); g.stroke();   // dark: no cluster has this color
-      g.fillStyle = '#17263A'; g.beginPath(); g.moveTo(x - 4, top - 5); g.lineTo(x + 4, top - 5); g.lineTo(x, top); g.closePath(); g.fill(); }
+    { const at = RESQ ? resSpan() : null;   // the looked-up residue, or the stretch of a looked-up sequence
+      if (at && at.s >= 1 && at.s <= L) { const hh = sites.length * LH, x0 = Math.round(xOf(at.s)) + 0.5, x1 = Math.round(xOf(Math.min(L, at.e) + 1)) + 0.5, x = at.e > at.s ? (x0 + x1) / 2 : Math.round(xOf(at.s) + bw / 2) + 0.5;
+        g.strokeStyle = '#17263A'; g.lineWidth = 1.5; g.beginPath();   // dark: no cluster has this color
+        if (at.e > at.s) { g.fillStyle = 'rgba(23,38,58,0.14)'; g.fillRect(x0, top, Math.max(1, x1 - x0), hh); g.moveTo(x0, top); g.lineTo(x0, top + hh); g.moveTo(x1, top); g.lineTo(x1, top + hh); }
+        else { g.moveTo(x, top); g.lineTo(x, top + hh); }
+        g.stroke();
+        g.fillStyle = '#17263A'; g.beginPath(); g.moveTo(x - 4, top - 5); g.lineTo(x + 4, top - 5); g.lineTo(x, top); g.closePath(); g.fill(); } }
     cv.onmousemove = (e) => { const b = cv.getBoundingClientRect(), x = e.clientX - b.left, y = e.clientY - b.top, j = Math.floor((y - top) / LH), r = Math.floor((x - AXL) / bw) + 1;
       const hd = y < top && doms.find((d) => r >= d.s && r <= d.e && y >= 4 + d.lane * DRH && y <= 16 + d.lane * DRH);
       if (hd) { cv.style.cursor = ''; return showTip(domTip(hd), e.clientX, e.clientY); }   // a domain box: its name and span
