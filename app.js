@@ -333,10 +333,15 @@ async function speciesIndex(id) {   // the species index: one row per protein ov
   const reg = await regSpecies(id);
   if (!reg) throw new Error(`Unknown species “${id}”.`);
   const base = new URL(reg.base, location.href).href;
-  const [manifest, prot] = await Promise.all([speciesManifest(id), getJSON(base + 'proteins.json')]);
-  const c = Object.fromEntries(prot.columns.map((k, i) => [k, i]));
+  const [manifest, prot] = await Promise.all([speciesManifest(id), getJSON(base + (reg.index || 'proteins.json'))]);
+  // index.json (build/compact_index.py) is proteins.json written smaller: acc 0 = the key, clen 0 = len, a last column en, and occ
+  // tokens 'di' (the name is the key) or 'di.' (the name is en) beside 'di:name'. Undone here, so every row reads as proteins.json's.
+  const cmp = prot.format === 'livia-atlas-index/1', c = Object.fromEntries(prot.columns.map((k, i) => [k, i])), ce = cmp ? prot.columns.length - 1 : -1;
   const rows = prot.rows.map((r, i) => {
-    const occ = String(r[c.occ] || '').split(' ').filter(Boolean).map((t) => { const k = t.indexOf(':'); return { di: +t.slice(0, k), name: t.slice(k + 1) }; });
+    if (cmp) { r = r.slice(); if (r[c.acc] === 0) r[c.acc] = r[c.key]; if (r[c.clen] === 0) r[c.clen] = r[c.len]; }
+    const occ = String(r[c.occ] || '').split(' ').filter(Boolean).map((t) => { const k = t.indexOf(':');
+      if (k < 0) { const dot = t.endsWith('.'); return { di: +(dot ? t.slice(0, -1) : t), name: dot ? r[ce] : r[c.key] }; }
+      return { di: +t.slice(0, k), name: t.slice(k + 1) }; });
     return { i, key: r[c.key], gene: (r[c.gene] && r[c.gene] !== '?' ? r[c.gene] : '') || r[c.acc] || r[c.key], acc: r[c.acc], name: r[c.name], syn: r[c.syn], len: r[c.len], clen: r[c.clen], status: r[c.status], occ,
       id: occ.length ? occ[0].name : r[c.key], partners: r[c.partners], pos10: r[c.pos10], pos5: r[c.pos5], pos1: r[c.pos1], best: r[c.bestIlis],
       src: occ.reduce((m, o) => m | (1 << o.di), 0) };
@@ -438,10 +443,20 @@ async function edges(sp, setId = '') {   // setId: that thematic set's edges (sa
     // An average is one screen's: read for a screen or a set, never from the merged species file (averages across screens are not calibrated).
     // Every protein's neighbours side by side in typed arrays (scores in thousandths, exact to the file's 3 decimals):
     // a few MB where a Map per protein took tens. adj.get(i) builds one protein's Map when a network asks for it.
+    const grp = !setId && (sp.manifest.files || {}).edgesGrp;   // the species file packed (build/compact_index.py): '#d' starts row i += d, then 'dj<TAB>iLIS x 1000<TAB>ipTM x 100<TAB>src' per pair
+    if (grp) url = sp.base + grp;
     const text = await getText(url), nl = text.indexOf('\n'), head = text.slice(0, nl).split('\t');
     const cb = head.indexOf('iLIS_best'), ca = setId ? head.indexOf('iLIS_avg') : -1, cs = head.indexOf('src'), cp = head.indexOf('ipTM_best'), cq = head.indexOf('ipTM_avg'), N = sp.rows.length;
     const I = [], J = [], BE = [], AV = [], SR = [], IP = [], IQ = [];
-    for (let p = nl + 1; p < text.length;) {
+    if (grp) { if (head[0] !== 'livia-edges/1') throw new Error('The pair file has an unknown layout.');
+      let gi = -1, gj = 0;
+      for (let p = nl + 1; p < text.length;) {
+        let e = text.indexOf('\n', p); if (e < 0) e = text.length;
+        if (e > p) { if (text.charCodeAt(p) === 35) { gi += +text.slice(p + 1, e); gj = gi; }
+          else { const t = text.slice(p, e).split('\t'); gj += +t[0]; if (gi < N && gj < N) { I.push(gi); J.push(gj); BE.push(+t[1]); AV.push(-1); SR.push(+t[3]); IP.push(t[2] === '' ? -1 : +t[2]); IQ.push(-1); } } }
+        p = e + 1;
+      } }
+    else for (let p = nl + 1; p < text.length;) {
       let e = text.indexOf('\n', p); if (e < 0) e = text.length;
       if (e > p) { const t = text.slice(p, e).split('\t'), i = map ? map[+t[0]] : +t[0], j = map ? map[+t[1]] : +t[1];
         if (i >= 0 && j >= 0 && i < N && j < N) { I.push(i); J.push(j); BE.push(Math.round(+t[cb] * 1000)); AV.push(ca >= 0 && t[ca] !== '' ? Math.round(+t[ca] * 1000) : -1); SR.push(cs >= 0 ? +t[cs] : dbit); IP.push(cp >= 0 ? Math.round(+t[cp] * 100) : -1); IQ.push(cq >= 0 && t[cq] !== '' ? Math.round(+t[cq] * 100) : -1); } }
@@ -450,7 +465,7 @@ async function edges(sp, setId = '') {   // setId: that thematic set's edges (sa
     const off = new Uint32Array(N + 1);
     for (let k = 0; k < I.length; k++) { off[I[k] + 1]++; off[J[k] + 1]++; }
     for (let v = 0; v < N; v++) off[v + 1] += off[v];
-    const at = off.slice(0, N), nb = new Int32Array(2 * I.length), best = new Int16Array(2 * I.length), avg = new Int16Array(2 * I.length), src = new Uint8Array(2 * I.length), ipt = new Int16Array(2 * I.length), ipa = new Int16Array(2 * I.length);
+    const at = off.slice(0, N), nb = new Int32Array(2 * I.length), best = new Int16Array(2 * I.length), avg = new Int16Array(2 * I.length), src = new Uint16Array(2 * I.length), ipt = new Int16Array(2 * I.length), ipa = new Int16Array(2 * I.length);
     const put = (a, b, k) => { const x = at[a]++; nb[x] = b; best[x] = BE[k]; avg[x] = AV[k]; src[x] = SR[k]; ipt[x] = IP[k]; ipa[x] = IQ[k]; };
     for (let k = 0; k < I.length; k++) { put(I[k], J[k], k); put(J[k], I[k], k); }
     const memo = new Map();
@@ -600,7 +615,7 @@ async function virusStruct(sp, ia, ib) {
 }
 // The link to a virus pair's model in LIVIA, wired: the database's copy, or a byte-range read of the release archive.
 // An AFDB heterodimer pair (species with one AFDB screen): its model and PAE in the heterodimer release at EBI, addresses from
-// structs/<k>.tsv (pairs past 10% FPR, each under both proteins.json rows // 1000 when files.structsBoth, else under the lower one); null below the cutoff.
+// structs/<k>.tsv (pairs past 10% FPR, each under both proteins.json rows divided by files.structsStep, 1000 when absent, when files.structsBoth, else under the lower one); null below the cutoff.
 const HET_URL = (tar) => `https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/heterodimers/${tar}`;
 // Each row: a, b, entity, tar, cif_off, cif_len, pae_off, pae_len, then every lis.py score in VMCOL order (build/afdb_struct_scores.py).
 function hetShard(sp, k) {
@@ -610,16 +625,17 @@ function hetShard(sp, k) {
 }
 const hetPair = (r) => { const m = {}; VMCOL.forEach((k, n) => { if (r[8 + n] != null && r[8 + n] !== '') m[k] = +r[8 + n]; });
   return { model: r[2], shown: false, addr: { tar: r[3], cif_off: +r[4], cif_len: +r[5], pae_off: +r[6], pae_len: +r[7] }, m }; };
+const structStep = (sp) => (sp.manifest.files || {}).structsStep || 1000;   // rows per structs file (build/structs_step.py)
 async function afdbStruct(sp, ia, ib) {
   if (ia == null || ib == null) return null;
   const k = (sp.manifest.files || {}).structsBoth ? ia : Math.min(ia, ib);   // under both rows: the query's own shard, the one its page already read
-  const r = (await hetShard(sp, Math.floor(k / 1000))).find((x) => (+x[0] === ia && +x[1] === ib) || (+x[0] === ib && +x[1] === ia));
+  const r = (await hetShard(sp, Math.floor(k / structStep(sp)))).find((x) => (+x[0] === ia && +x[1] === ib) || (+x[0] === ib && +x[1] === ia));
   return r ? hetPair(r) : null;
 }
 // Every AFDB pair of row i the Atlas indexes (past 10% FPR): its model, archive address and scores, keyed by the partner's row.
 async function afdbPartnerRows(sp, i, partners) {
-  const ks = new Set([Math.floor(i / 1000)]);
-  if (!(sp.manifest.files || {}).structsBoth) for (const p of partners) { const r = sp.byKey.get(p.id); if (r) ks.add(Math.floor(Math.min(i, r.i) / 1000)); }   // older layout: pairs sit under the lower row only
+  const st = structStep(sp), ks = new Set([Math.floor(i / st)]);
+  if (!(sp.manifest.files || {}).structsBoth) for (const p of partners) { const r = sp.byKey.get(p.id); if (r) ks.add(Math.floor(Math.min(i, r.i) / st)); }   // older layout: pairs sit under the lower row only
   const out = new Map();
   for (const rows of await Promise.all([...ks].map((k) => hetShard(sp, k)))) for (const r of rows) { const a = +r[0], b = +r[1]; if (a === i || b === i) out.set(a === i ? b : a, hetPair(r)); }
   return out;
@@ -724,22 +740,35 @@ async function openFromArchive(model, ad, link) {
     tab.status(`Could not read ${model} from the AlphaFold Database archive (${e.message || e}). Close this tab and try again from the Atlas.`, true);
   }
 }
-// Homodimers (REG.homodimers): the AlphaFold Database homodimer release rescored with lis.py, one gzip CSV per species, read
-// whole once and kept. One model per entry. The
+// Homodimers (REG.homodimers): the AlphaFold Database homodimer release rescored with lis.py, one gzip CSV per species on
+// flyrnai.org. The site reads the columns below from derived files in this repo (species.<sp>.slim, build/homodimer_index.py):
+// a protein page reads data/homodimers/<sp>/<xx>.tsv for its accessions (xx = last two characters of the canonical accession),
+// the species list reads all.tsv; without them, the whole CSV once. One model per entry. The
 // card calls it with the same iLIS cutoffs as pairs of two proteins (author, 2026-10-05).
 const HOMO = new Map(), HOMO_COLS = ['entry', 'uniprot_A', 'gene_A', 'len_i', 'iLIS', 'iLISA', 'ipSAE', 'actifpTM', 'ipTM', 'pLDDT', 'pDockQ2', 'LIR_i', 'cLIR_i', 'LIR_indices_i', 'cLIR_indices_i', 'src_tar', 'cif_offset', 'cif_size', 'pae_offset', 'pae_size'];
 const HOMO_URL = (tar) => `${REG.homodimers.structBase}${tar}${/\.tar$/.test(tar) ? '' : '.tar'}`;
-function homoRows(spId) {
+const homoTSV = (t) => { const L = t.split('\n').filter(Boolean), hdr = (L.shift() || '').split('\t');
+  return L.map((l) => { const v = l.split('\t'); return Object.fromEntries(hdr.map((k, i) => [k, v[i] == null ? '' : v[i]])); }); };
+function homoRows(spId, part) {   // part: one shard's suffix (a protein page), or none (every entry)
   const H = REG && REG.homodimers, f = H && H.species && H.species[spId];
   if (!f) return Promise.resolve([]);
-  if (!HOMO.has(spId)) HOMO.set(spId, fetch(H.base + f.file).then(async (res) => {
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const b = new Uint8Array(await res.arrayBuffer());   // gzip bytes, or text when something on the way already unpacked them
-    const text = b[0] === 0x1f && b[1] === 0x8b ? await new Response(new Blob([b]).stream().pipeThrough(new DecompressionStream('gzip'))).text() : new TextDecoder().decode(b);
-    const rows = parseCSV(text), hdr = rows.shift() || [], ix = Object.fromEntries(hdr.map((k, i) => [k, i]));
-    return rows.filter((r) => r.length > 1).map((r) => Object.fromEntries(HOMO_COLS.filter((k) => ix[k] != null).map((k) => [k, r[ix[k]]])));
-  }).catch(() => { HOMO.delete(spId); return []; }));
-  return HOMO.get(spId);
+  const k = `${spId}|${f.slim ? part || 'all' : 'all'}`;
+  if (!HOMO.has(k)) HOMO.set(k, (f.slim ? fetch(`data/homodimers/${spId}/${part || 'all'}.tsv`).then((res) => { if (res.status === 404) return ''; if (!res.ok) throw new Error(`HTTP ${res.status}`); return res.text(); }).then(homoTSV)
+    : fetch(H.base + f.file).then(async (res) => {
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const b = new Uint8Array(await res.arrayBuffer());   // gzip bytes, or text when something on the way already unpacked them
+      const text = b[0] === 0x1f && b[1] === 0x8b ? await new Response(new Blob([b]).stream().pipeThrough(new DecompressionStream('gzip'))).text() : new TextDecoder().decode(b);
+      const rows = parseCSV(text), hdr = rows.shift() || [], ix = Object.fromEntries(hdr.map((k2, i) => [k2, i]));
+      return rows.filter((r) => r.length > 1).map((r) => Object.fromEntries(HOMO_COLS.filter((c) => ix[c] != null).map((c) => [c, r[ix[c]]])));
+    })).catch(() => { HOMO.delete(k); return []; }));
+  return HOMO.get(k);
+}
+const homoShardKey = (u) => (String(u).split('-')[0].slice(-2) || '_').toLowerCase().replace(/[^a-z0-9_-]/g, '_');   // as build/homodimer_index.py hkey
+async function homoRowsFor(spId, P) {   // the entries a protein page can show: the shards of its key and accessions
+  const ids = [...new Set([P.key, ...String(P.acc || '').split(/\s+/)].filter(Boolean))], f = REG && REG.homodimers && REG.homodimers.species[spId];
+  if (!f || !f.slim) return homoRows(spId);
+  const have = f.parts == null ? null : new Set(String(f.parts).split(' '));   // the shards that exist (registry): no request for another
+  return (await Promise.all([...new Set(ids.map(homoShardKey))].filter((x) => !have || have.has(x)).map((x) => homoRows(spId, x)))).flat();
 }
 // A protein page's entries: its own accession first, then its isoforms (P49771-2 on P49771's page, labeled as such).
 function homoFor(rows, P) {
@@ -763,7 +792,7 @@ async function homoCard(sp, P, gone, B) {
   const card = $('#c-homo'), H = REG && REG.homodimers, afdb = !!(H && H.species && H.species[sp.id]);
   if (!card) return;
   const mine = B ? B.preds.filter((p) => p.partner === P.key && Number.isFinite(p.iLIS)).sort((a, b) => b.iLIS - a.iLIS) : [];
-  const list = afdb ? homoFor(await homoRows(sp.id), P) : [];
+  const list = afdb ? homoFor(await homoRowsFor(sp.id, P), P) : [];
   if (gone() || (!list.length && !mine.length) || !card.isConnected) return;
   card.hidden = false; const nb = app.querySelector('.subnav button[data-t="c-homo"]'); if (nb) nb.hidden = false;
   const src = afdb ? `<a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a>` : '';
@@ -1127,17 +1156,18 @@ function liviaScript(path) {
 const liviaReady = () => Promise.all([liviaScript('js/clip-resolver.js'), liviaScript('js/livia-viewer.js')]);
 const exportsReady = () => liviaScript('js/canvas2svg.js').then(() => liviaScript('js/livia-maps.js'));
 // Domains → [{start, end, name, src}] on the UniProt sequence: Pfam for every protein, so orthologs carry the same names. The
-// site's tables (data/dom/<last two characters of the accession>.json and names.json, built from the Pfam release by
+// site's tables (data/dom/<last two characters of the accession>.json and names/<Pfam number % 128>.json, built from the Pfam release by
 // build/domains_pfam.py) answer first; given the sequence the domains will be placed on, a table entry is used only when that
 // sequence is the one Pfam annotated (its CRC64). Otherwise, and for a protein the tables lack, a live lookup: Pfam through InterPro, UniProt's
 // Domain / DNA-binding / zinc-finger features where Pfam has none. Without a sequence to place them on, none are drawn.
 const DOMT = new Map(), DOMS = new Map(), DOML = new Map();   // table file → Promise; accession → table entry; accession → live lookup
 const domShard = (k) => { if (!DOMT.has(k)) DOMT.set(k, getJSON(`data/dom/${k}.json`).catch((e) => { if (!/HTTP 404/.test(e.message)) DOMT.delete(k); return null; })); return DOMT.get(k); };   // no file for the suffix: remembered; a failed read: tried again later
-let DOMN = null;   // data/dom/names.json: Pfam number → family description, read once for every shard
-const domNames = () => { if (!DOMN) DOMN = getJSON('data/dom/names.json').catch(() => { DOMN = null; return null; }); return DOMN; };
-const domTable = (acc) => { if (!DOMS.has(acc)) DOMS.set(acc, Promise.all([domShard(acc.slice(-2).toLowerCase()), domNames()]).then(([t, n]) => {   // a shard row: [first 8 hex of the CRC64, start, end, Pfam number, ...]
-  const h = t && t[acc]; if (!h || !n) return null; const doms = [];
-  for (let i = 1; i + 2 < h.length; i += 3) { const pf = `PF${String(h[i + 2]).padStart(5, '0')}`; doms.push({ start: h[i], end: h[i + 1], name: n[h[i + 2]] || pf, pfam: pf, src: 'Pfam' }); }
+const DOMN = new Map();   // data/dom/names/<Pfam number % 128>.json: Pfam number → family description, each file read once (build/domains_pfam.py)
+const domNameFile = (k) => { if (!DOMN.has(k)) DOMN.set(k, getJSON(`data/dom/names/${k}.json`).catch(() => { DOMN.delete(k); return {}; })); return DOMN.get(k); };
+const domTable = (acc) => { if (!DOMS.has(acc)) DOMS.set(acc, domShard(acc.slice(-2).toLowerCase()).then(async (t) => {   // a shard row: [first 8 hex of the CRC64, start, end, Pfam number, ...]
+  const h = t && t[acc]; if (!h) return null; const nums = []; for (let i = 3; i < h.length; i += 3) nums.push(h[i]);
+  const files = new Map(await Promise.all([...new Set(nums.map((n) => n % 128))].map(async (k) => [k, await domNameFile(k)]))), doms = [];
+  for (let i = 1; i + 2 < h.length; i += 3) { const pf = `PF${String(h[i + 2]).padStart(5, '0')}`; doms.push({ start: h[i], end: h[i + 1], name: (files.get(h[i + 2] % 128) || {})[h[i + 2]] || pf, pfam: pf, src: 'Pfam' }); }
   return { crc: h[0], doms }; })); return DOMS.get(acc); };
 const domLive = (acc) => { if (!DOML.has(acc)) DOML.set(acc, liviaReady().then(async () => { const pf = await CLIPResolver.fetchPfam(acc); if (pf.length) return pf.map((d) => ({ ...d, src: 'Pfam' }));
   return (await CLIPResolver.fetchDomains(acc)).map((d) => ({ ...d, src: 'UniProt' })); }).catch(() => [])); return DOML.get(acc); };
@@ -3981,13 +4011,29 @@ const fpSetmap = () => (FPSET ||= fetch('data/screens/flypredictome/setmap.tsv')
 const ORTHO_DS = { 'human-kinase-tf': '9606/9606', 'human-kinase-kinase': '9606/9606', 'zebrafish-kinase-kinase': '7955/7955', 'worm-kinase-kinase': '6239/6239', 'yeast-kinase-kinase': '4932/4932' }, OSET = new Map(), OMAP = new Map();
 const oSetmap = (ds) => { if (!OSET.has(ds)) OSET.set(ds, fetch(`data/screens/${ds}/setmap.tsv`).then((r) => (r.ok ? r.text() : '')).then((t) => {
   const L = t.trim().split('\n').filter(Boolean); if (!L.length) return null; const h = L.shift().split('\t'), si = h.indexOf('set'), ai = Math.max(h.indexOf('kinase'), h.indexOf('a')), bi = Math.max(h.indexOf('tfs'), h.indexOf('bs')); if (si < 0 || ai < 0 || bi < 0) return null;
-  const m = new Map(); for (const l of L) { const f = l.split('\t'), set = (f[si] || '').trim(), a = f[ai]; if (!set || !a) continue; for (const b of (f[bi] || '').trim().split(',')) if (b) m.set(a + '___' + b, set); }
+  const m = OMAP.get(ds) || new Map(); for (const l of L) { const f = l.split('\t'), set = (f[si] || '').trim(), a = f[ai]; if (!set || !a) continue; for (const b of (f[bi] || '').trim().split(',')) if (b) m.set(a + '___' + b, set); }
   OMAP.set(ds, m); return m; }).catch(() => null)); return OSET.get(ds); };
+// A large map is read in shards (files.setmapShards, build/setmap_shards.py): setmap/<xx>.tsv holds each run (a, b, set) under
+// both of its names, xx as for the offsets shards. Every run on a page includes the page's protein, so the fewest shards that
+// cover all the page's runs (almost always the one of that protein) answer them all.
+const setKey = (n) => { const en = /^([A-Z0-9]+)_[A-Z0-9]+$/.exec(n); n = en ? en[1] : n; return (n.length >= 2 ? n.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_'); };
+const OSH = new Map();
+const oSetShard = (ds, k) => { const id = `${ds}|${k}`; if (!OSH.has(id)) OSH.set(id, fetch(`data/screens/${ds}/setmap/${k}.tsv`).then((r) => (r.status === 404 ? '' : r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`)))).then((t) => {
+  const m = OMAP.get(ds) || new Map(); for (const l of t.trim().split('\n').slice(1)) { const [a, b, set] = l.split('\t'); if (a && b && set) m.set(a + '___' + b, set); }
+  OMAP.set(ds, m); return m; }).catch(() => { OSH.delete(id); return null; })); return OSH.get(id); };
+async function oSetFor(ds, names) {   // the SET map entries for these run names (a___b)
+  let man = null; try { man = (await dataset(ds)).manifest; } catch (e) { /* no manifest: the whole map */ }
+  if (!man || !(man.files || {}).setmapShards) return oSetmap(ds);
+  const runs = names.map((n) => { const at = n.indexOf('___'); return at < 0 ? null : [setKey(n.slice(0, at)), setKey(n.slice(at + 3))]; }).filter(Boolean), keys = new Set();
+  let left = runs; while (left.length) { const cnt = new Map(); for (const r of left) for (const k of new Set(r)) cnt.set(k, (cnt.get(k) || 0) + 1);
+    const best = [...cnt].sort((x, y) => y[1] - x[1])[0][0]; keys.add(best); left = left.filter((r) => !r.includes(best)); }
+  await Promise.all([...keys].map((k) => oSetShard(ds, k)));
+  return OMAP.get(ds) || null; }
 const linkMaps = async (sp, B) => {   // the SET maps a page's runs need: FlyPredictome's, and an ortholog-search screen's only when the page has its runs
   if (!B || !B.runs) return;
   if (sp.dsIds.includes('flypredictome')) B.fpSet = await fpSetmap();
-  const want = new Set([...B.runs.values()].map((r) => r.ds).filter((d) => ORTHO_DS[d]));
-  B.oSet = new Map(); for (const d of want) { const m = await oSetmap(d); if (m) B.oSet.set(d, m); } };
+  const want = new Map(); for (const r of B.runs.values()) if (ORTHO_DS[r.ds] && r.name) { if (!want.has(r.ds)) want.set(r.ds, []); want.get(r.ds).push(r.name); }
+  B.oSet = new Map(); for (const [d, names] of want) { const m = await oSetFor(d, names); if (m) B.oSet.set(d, m); } };
 const FP_DETAILS = 'https://www.flyrnai.org/tools/fly_predictome/web/';
 const fpUrl0 = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); if (!ru || !ru.name) return ''; const at = ru.name.indexOf('___'); if (at < 0) return '';
   const a = encodeURIComponent(ru.name.slice(0, at)), b = encodeURIComponent(ru.name.slice(at + 3));

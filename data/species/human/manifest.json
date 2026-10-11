@@ -169,7 +169,9 @@
   "paralogs": "paralogs.json",
   "biogridShards": 256,
   "structsBoth": true,
-  "absent": "absent.json"
+  "absent": "absent.json",
+  "structsStep": 100,
+  "edgesGrp": "edges.grp"
  },
  "folded": {
   "runs": 1995381

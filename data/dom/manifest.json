@@ -1,6 +1,6 @@
 {
  "coordinates": "alignment (ali_start, ali_end), as InterPro shows them, on the UniProt sequence with that CRC64",
- "format": "<last two characters of the accession>.json = {accession: [first 8 hex of the CRC64, start, end, Pfam number, ...]}; names.json = {Pfam number: family description}",
+ "format": "<last two characters of the accession>.json = {accession: [first 8 hex of the CRC64, start, end, Pfam number, ...]}; names.json = {Pfam number: family description}, also split as names/<number % 128>.json",
  "license": "CC0",
  "release": "38.2",
  "source": "Pfam",
