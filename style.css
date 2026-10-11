@@ -349,7 +349,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .srcs { margin-top: 8px; font-size: 13px; color: var(--ink-3); display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 .screens { display: grid; gap: 10px; margin-top: 8px; }
 .screen { display: grid; grid-template-columns: 110px 1fr; gap: 12px; align-items: start; padding: 10px 12px; border: 1px solid var(--line-2); border-radius: 10px; background: #FBFCFD; }
-.screen .src { justify-self: start; }
+.screen .src { justify-self: start; max-width: 100%; white-space: normal; }   /* a long screen name wraps inside its column, never over the title */
 .screen.sub { margin-left: 24px; }
 @media (max-width: 480px) { .screen.sub { margin-left: 12px; } }
 @media (max-width: 480px) { .screen { grid-template-columns: minmax(0, 1fr); gap: 6px; } }
@@ -752,9 +752,6 @@ button.linkish:focus-visible { outline: 2px solid #1A5276; outline-offset: 2px; 
 #hl tr.hl-open td { background: #F7F9FB; padding: 10px 12px; }
 .flag.iso-diff { background: none; color: var(--ink-3, #5F6771); font-weight: 400; padding: 0 2px; cursor: help; }   /* quiet: 13% of multi-isoform pairs differ; the pair page lists each isoform's value */
 .iso-via { font-size: 11.5px; white-space: nowrap; }
-.more-screens { margin-top: 10px; }
-.more-screens > summary { cursor: pointer; font-weight: 600; color: var(--ink-2); padding: 4px 0; }
-.more-screens[open] > summary { margin-bottom: 8px; }
 .orth-thin { margin: 6px 0 0; font-size: 13px; }
 .psrc-tbl td.ref { min-width: 240px; white-space: normal; line-height: 1.45; }
 .psrc-tbl td, .psrc-tbl th { white-space: normal; }
