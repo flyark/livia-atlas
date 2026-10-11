@@ -1,0 +1,61 @@
+{
+ "format": "livia-atlas/1",
+ "id": "arabidopsis-abf2",
+ "title": "Arabidopsis ABF2, bZIP2 and their partners under combined phosphate deficiency and salinity (Salinas-Grenet et al. 2026)",
+ "short": "Salinas-Grenet et al. 2026",
+ "speciesId": "arabidopsis-thaliana",
+ "species": {
+  "name": "Arabidopsis thaliana",
+  "taxon": 3702
+ },
+ "ids": "UniProt accession. The source ids were a mix of UniProt entry names (e.g. ATHB5_ARATH) and bare TAIR loci (e.g. AT1G06180), sometimes both for the same protein; each protein record carries all of its source ids as synonyms, so either form still finds it.",
+ "source": {
+  "name": "Estevez and Álvarez labs, Universidad Andrés Bello, Santiago, with the Perrimon lab, Harvard Medical School",
+  "citation": "Salinas-Grenet H, Johnson NR, Ibeas MA, Moyano TC, Pérez-Díaz J, Achá-Escobar R, Ahumada-Langer L, Kim AR, Berdion Gabarain V, Vásquez-Marambio G, Perrimon N, Álvarez JM, Estevez JM. ABF2 and bZIP2 remodel root system architecture under combined phosphate deficiency and salinity in Arabidopsis. bioRxiv (2026).",
+  "short": "Salinas-Grenet et al. 2026",
+  "doi": "10.64898/2026.08.28.747924",
+  "url": "https://doi.org/10.64898/2026.08.28.747924",
+  "preprint": true,
+  "method": "ColabFold / AlphaFold2-Multimer (alphafold2_multimer_v3), 5 models per pair, 5 recycles, no templates, mmseqs2_uniref_env MSAs, 1 seed, no dropout. All five models are served.",
+  "selection": "Pairs among ABF2, bZIP2 and their partners.",
+  "licenseNote": "Not stated: neither paper licenses the predictions (the New Phytologist article is subscription-only; the preprint's CC BY-NC-ND covers its text), and both say the models are available from the authors."
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "inclusive": true,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  },
+  "idResolution": "Identity is resolved by EXACT SEQUENCE, not by the source id, and all 67 source ids across the six source runs of both Arabidopsis screens resolve that way, onto 48 UniProt accessions (the two screens share none of them). The sequence actually folded is matched against reference proteome UP000006548 and the Swiss-Prot entry preferred among ties, so every served accession carries the sequence the models were built from -- verified, 0 of 48 disagree. Sequence has to lead because the ids are a mix of UniProt entry names and bare TAIR loci, 9 of the entry names have since been deleted from UniProt, and 5 ids name a different protein than their own sequence does.",
+  "idDisagreements": "Five source ids disagree with their own sequence, and the sequence was followed in every case. AT1G74840 is the one outright mislabel: its folded sequence is At1g79990, coatomer subunit beta-prime-1 (Q9CAA0), and it is the same protein as the id A0A178WGE9_ARATH in the same data. The other four pick a different accession for the same gene: AT1G19000 -> Q9LMC7 (not B9DFL2), AT4G36740 -> A0A1P8B6F4 / HB40 (not O23208, which differs by one residue from what was folded), B5RID5_ARATH -> Q00466 / HAT7, and Q9LDI5_ARATH -> A0A1I9LP58 / MYB107, the last two because B5RID5 and Q9LDI5 are no longer in the reference proteome. An id-first join would have served all five under an accession whose sequence is not the one that was modelled.",
+  "mergedIds": "18 accessions are reached by more than one source id, because the data names many proteins both by UniProt entry name and by TAIR locus (AT5G65310 and ATHB5_ARATH are both P46667), and one by three ids (AI5L5_ARATH, AT1G45249, AT1G45259 -> Q9M7Q4). Every such group was checked to carry one sequence, and no heterodimer collapses into a self-pair under accession keying (0 flips). Each protein record lists all of its source ids as synonyms.",
+  "repeatRuns": "pairs < runs because 94 accession pairs in this screen were folded twice, under two different naming schemes, and BOTH runs are published: the pair page lists every model of every run and the edge takes the best iLIS over both. The two runs differ in ColabFold version only -- 1.5.2 (commit f59147db) versus 1.5.5 (commit 57b220e0) -- with every other setting identical across every source run (alphafold2_multimer_v3, 5 models, 5 recycles, no templates, mmseqs2_uniref_env, 1 seed, no dropout) and byte-identical input sequences. 93 of the 94 span the two versions, and all 93 of those are folded in the OPPOSITE chain order between the two runs, so the two runs of a pair never share a name string and must be grouped on the sorted accession pair.",
+  "engineReproducibility": "Measured on the 93 twice-folded pairs whose runs span the two engine versions, rank-1 rows: iLIS exactly equal in 49 (53%), mean |delta| 0.0220, median 0.0000, max 0.2841; ipTM 32 (34%), 0.0157 / 0.0100 / 0.1400; ipSAE 35 (38%), 0.0162 / 0.0009 / 0.1548; actifpTM 6 (6%), 0.0469 / 0.0255 / 0.6303; pLDDT 13 (14%), 0.5215 / 0.2000 / 4.3000. The iLIS interaction call at the FPR10 cutoff (0.223) agrees on 89 of 93 (95.7%). Two cautions. actifpTM is by far the least reproducible column -- exactly equal in 6 of 93, worst case 0.63 -- so small cross-screen actifpTM differences are engine noise until shown otherwise. And the distribution is bimodal, so quote the exactly-equal fraction and the max rather than the mean. Rank-1 model choice does not explain which pairs reproduce (same model id in 65 of 93).",
+  "emptyCells": "The LIpLDDT and cLIpLDDT columns are empty in 44.6% and 62.8% of rows. These are correct, not missing: emptiness coincides exactly with LIR==0 and cLIR==0 -- no interface residue under the Cbeta cutoff, so there is nothing to report -- verified with 0 mismatches over all 2,570 source rows of both screens. The LIR_indices and cLIR_indices columns are never empty; they carry [] in those same rows. structure_file is empty by Atlas convention in every screen: it would publish an internal path. Every other column, model and ipSAE and actifpTM and the four pDockQ families included, is filled in every row, and no cell anywhere carries the string \"nan\".",
+  "homodimerGap": "34 homodimers were never folded and so are absent rather than measured negative: every self-pair of two of this screen's source runs, 21 of 21 and 13 of 13. This screen requested 470 pairs and scored 436; every heterodimer was folded. The omission is systematic -- those self-pair records were never searched -- and is deliberate, not a gap left to repair."
+ },
+ "counts": {
+  "proteins": 36,
+  "pairs": 342,
+  "predictions": 2180,
+  "runs": 436,
+  "pairsFpr10": 126,
+  "pairsFpr5": 105,
+  "pairsFpr1": 65
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id",
+ "bundleBase": "https://www.flyrnai.org/livia-atlas/versions/v0.1.8b-arabidopsis/arabidopsis-abf2/"
+}

@@ -341,7 +341,9 @@
    "base": "data/species/arabidopsis-thaliana/",
    "datasets": [
     "afdb-het-3702",
-    "mitomatch-3702"
+    "mitomatch-3702",
+    "arabidopsis-roothair",
+    "arabidopsis-abf2"
    ],
    "group": "Model organisms",
    "taxon": 3702,
@@ -3134,6 +3136,32 @@
     "url": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7b-mitomatch/livia-atlas-mitomatch-3702.zip",
     "offsets": "data/screens/mitomatch-3702/offsets.json"
    }
+  },
+  {
+   "id": "arabidopsis-roothair",
+   "species": "arabidopsis-thaliana",
+   "title": "Arabidopsis root-hair gene regulatory network transcription factors and their partners (Urzúa Lehuedé et al. 2025)",
+   "short": "Urzúa Lehuedé et al. 2025",
+   "color": "#4E8F5A",
+   "base": "data/screens/arabidopsis-roothair/",
+   "status": "live",
+   "models": 5,
+   "recycles": 5,
+   "source": "Urzúa Lehuedé et al. 2025 · New Phytologist",
+   "paper": "https://doi.org/10.1111/nph.20406"
+  },
+  {
+   "id": "arabidopsis-abf2",
+   "species": "arabidopsis-thaliana",
+   "title": "Arabidopsis ABF2, bZIP2 and their partners under combined phosphate deficiency and salinity (Salinas-Grenet et al. 2026)",
+   "short": "Salinas-Grenet et al. 2026",
+   "color": "#8A6E3C",
+   "base": "data/screens/arabidopsis-abf2/",
+   "status": "live",
+   "models": 5,
+   "recycles": 5,
+   "source": "Salinas-Grenet et al. 2026 · bioRxiv",
+   "paper": "https://doi.org/10.64898/2026.08.28.747924"
   },
   {
    "id": "mitomatch-44689",

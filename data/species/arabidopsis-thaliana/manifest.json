@@ -37,18 +37,50 @@
     "pairsFpr5": 210,
     "pairsFpr1": 114
    }
+  },
+  {
+   "id": "arabidopsis-roothair",
+   "short": "Urzúa Lehuedé et al. 2025",
+   "title": "Arabidopsis root-hair gene regulatory network transcription factors and their partners (Urzúa Lehuedé et al. 2025)",
+   "citation": "Urzúa Lehuedé T, Berdion Gabarain V, Ibeas MA, Salinas-Grenet H, Achá-Escobar R, Moyano TC, Ferrero L, Núñez-Lillo G, Pérez-Díaz J, Perotti MF, Miguel VN, Spies FP, Rosas MA, Kawamura A, Rodríguez-García DR, Kim AR, Nolan T, Moreno AA, Sugimoto K, Perrimon N, Sanguinet KA, Meneses C, Chan RL, Ariel F, Álvarez JM, Estevez JM. Two antagonistic gene regulatory networks drive Arabidopsis root hair growth at low temperature linked to a low-nutrient environment. New Phytologist 245, 2645-2664 (2025).",
+   "url": "https://doi.org/10.1111/nph.20406",
+   "counts": {
+    "proteins": 12,
+    "pairs": 78,
+    "predictions": 390,
+    "runs": 78,
+    "pairsFpr10": 36,
+    "pairsFpr5": 28,
+    "pairsFpr1": 23
+   }
+  },
+  {
+   "id": "arabidopsis-abf2",
+   "short": "Salinas-Grenet et al. 2026",
+   "title": "Arabidopsis ABF2, bZIP2 and their partners under combined phosphate deficiency and salinity (Salinas-Grenet et al. 2026)",
+   "citation": "Salinas-Grenet H, Johnson NR, Ibeas MA, Moyano TC, Pérez-Díaz J, Achá-Escobar R, Ahumada-Langer L, Kim AR, Berdion Gabarain V, Vasquez-Marambio G, Perrimon N, Álvarez JM, Estevez JM. ABF2 and bZIP2 remodel root system architecture under combined phosphate deficiency and salinity in Arabidopsis. bioRxiv (2026).",
+   "url": "https://doi.org/10.64898/2026.08.28.747924",
+   "counts": {
+    "proteins": 36,
+    "pairs": 342,
+    "predictions": 2180,
+    "runs": 436,
+    "pairsFpr10": 126,
+    "pairsFpr5": 105,
+    "pairsFpr1": 65
+   }
   }
  ],
  "counts": {
-  "proteins": 17797,
-  "pairs": 460119,
-  "predictions": 460220,
-  "runs": 460220,
-  "pairsFpr10": 37405,
-  "pairsFpr5": 24208,
-  "pairsFpr1": 9069,
-  "pairsInSeveral": 101,
-  "pairsTested": 460119
+  "proteins": 17801,
+  "pairs": 460500,
+  "predictions": 460607,
+  "runs": 460607,
+  "pairsFpr10": 37540,
+  "pairsFpr5": 24317,
+  "pairsFpr1": 9139,
+  "pairsInSeveral": 107,
+  "pairsTested": 460500
  },
  "files": {
   "proteins": "proteins.json",

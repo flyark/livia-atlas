@@ -1,0 +1,57 @@
+{
+ "format": "livia-atlas/1",
+ "id": "arabidopsis-roothair",
+ "title": "Arabidopsis root-hair gene regulatory network transcription factors and their partners (Urzúa Lehuedé et al. 2025)",
+ "short": "Urzúa Lehuedé et al. 2025",
+ "speciesId": "arabidopsis-thaliana",
+ "species": {
+  "name": "Arabidopsis thaliana",
+  "taxon": 3702
+ },
+ "ids": "UniProt accession. The source ids were a mix of UniProt entry names (e.g. ATHB5_ARATH) and bare TAIR loci (e.g. AT1G06180), sometimes both for the same protein; each protein record carries all of its source ids as synonyms, so either form still finds it.",
+ "source": {
+  "name": "Estevez and Álvarez labs, Universidad Andrés Bello, Santiago, with the Perrimon lab, Harvard Medical School",
+  "citation": "Urzúa Lehuedé T, Berdion Gabarain V, Ibeas MA, Salinas-Grenet H, Achá-Escobar R, Moyano TC, Ferrero L, Núñez-Lillo G, Pérez-Díaz J, Perotti MF, Miguel VN, Spies FP, Rosas MA, Kawamura A, Rodríguez-García DR, Kim AR, Nolan T, Moreno AA, Sugimoto K, Perrimon N, Sanguinet KA, Meneses C, Chan RL, Ariel F, Álvarez JM, Estevez JM. Two antagonistic gene regulatory networks drive Arabidopsis root hair growth at low temperature linked to a low-nutrient environment. New Phytologist 245, 2645-2664 (2025).",
+  "short": "Urzúa Lehuedé et al. 2025",
+  "doi": "10.1111/nph.20406",
+  "url": "https://doi.org/10.1111/nph.20406",
+  "method": "ColabFold / AlphaFold2-Multimer (alphafold2_multimer_v3), 5 models per pair, 5 recycles, no templates, mmseqs2_uniref_env MSAs, 1 seed, no dropout. All five models are served.",
+  "selection": "Pairs among the root-hair gene regulatory network transcription factors and their partners, RHD6, RSL4, GTL1, DF1, ATHB-13, ATHB-16 and ATHB-20 among them.",
+  "licenseNote": "Not stated: neither paper licenses the predictions (the New Phytologist article is subscription-only; the preprint's CC BY-NC-ND covers its text), and both say the models are available from the authors."
+ },
+ "analysis": {
+  "tool": "lis.py (AFM-LIS)",
+  "paeCutoff": 12,
+  "cbCutoff": 8,
+  "inclusive": true,
+  "cutoffs": {
+   "iLIS": {
+    "fpr10": 0.223,
+    "fpr5": 0.339,
+    "fpr1": 0.551
+   }
+  },
+  "idResolution": "Identity is resolved by EXACT SEQUENCE, not by the source id, and all 67 source ids across the six source runs of both Arabidopsis screens resolve that way, onto 48 UniProt accessions (the two screens share none of them). The sequence actually folded is matched against reference proteome UP000006548 and the Swiss-Prot entry preferred among ties, so every served accession carries the sequence the models were built from -- verified, 0 of 48 disagree. Sequence has to lead because the ids are a mix of UniProt entry names and bare TAIR loci, 9 of the entry names have since been deleted from UniProt, and 5 ids name a different protein than their own sequence does.",
+  "idDisagreements": "Five source ids disagree with their own sequence, and the sequence was followed in every case. AT1G74840 is the one outright mislabel: its folded sequence is At1g79990, coatomer subunit beta-prime-1 (Q9CAA0), and it is the same protein as the id A0A178WGE9_ARATH in the same data. The other four pick a different accession for the same gene: AT1G19000 -> Q9LMC7 (not B9DFL2), AT4G36740 -> A0A1P8B6F4 / HB40 (not O23208, which differs by one residue from what was folded), B5RID5_ARATH -> Q00466 / HAT7, and Q9LDI5_ARATH -> A0A1I9LP58 / MYB107, the last two because B5RID5 and Q9LDI5 are no longer in the reference proteome. An id-first join would have served all five under an accession whose sequence is not the one that was modelled.",
+  "mergedIds": "18 accessions are reached by more than one source id, because the data names many proteins both by UniProt entry name and by TAIR locus (AT5G65310 and ATHB5_ARATH are both P46667), and one by three ids (AI5L5_ARATH, AT1G45249, AT1G45259 -> Q9M7Q4). Every such group was checked to carry one sequence, and no heterodimer collapses into a self-pair under accession keying (0 flips). Each protein record lists all of its source ids as synonyms.",
+  "emptyCells": "The LIpLDDT and cLIpLDDT columns are empty in 35.4% and 49.2% of rows. These are correct, not missing: emptiness coincides exactly with LIR==0 and cLIR==0 -- no interface residue under the Cbeta cutoff, so there is nothing to report -- verified with 0 mismatches over all 2,570 source rows of both screens. The LIR_indices and cLIR_indices columns are never empty; they carry [] in those same rows. structure_file is empty by Atlas convention in every screen: it would publish an internal path. Every other column, model and ipSAE and actifpTM and the four pDockQ families included, is filled in every row, and no cell anywhere carries the string \"nan\"."
+ },
+ "counts": {
+  "proteins": 12,
+  "pairs": 78,
+  "predictions": 390,
+  "runs": 78,
+  "pairsFpr10": 36,
+  "pairsFpr5": 28,
+  "pairsFpr1": 23
+ },
+ "files": {
+  "proteins": "proteins.json",
+  "edges": "edges.tsv",
+  "sequences": "seqs.fasta",
+  "bundle": "b/{id}.zip",
+  "sequence": "s/{id}.fa"
+ },
+ "nameKey": "id",
+ "bundleBase": "https://www.flyrnai.org/livia-atlas/versions/v0.1.8b-arabidopsis/arabidopsis-roothair/"
+}
