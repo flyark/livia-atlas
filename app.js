@@ -750,22 +750,37 @@ function homoTrack(e) {
   return `<div class="hd-track">${lane('interaction residues (LIR)', idxRuns(e.LIR_indices_i), 'hd-lir', 'interaction residues')}${lane('contact residues (cLIR)', idxRuns(e.cLIR_indices_i), 'hd-clir', 'contact residues')}
     <div class="hd-lane hd-axis"><span class="hd-lab"></span><div class="hd-ticks"><span style="left:0">1</span>${ticks.map((t) => `<span style="left:${(100 * (t - 1)) / L}%">${fmtInt(t)}</span>`).join('')}<span class="end" style="right:0">${fmtInt(L)}</span></div></div></div>`;
 }
-async function homoCard(sp, P, gone) {
-  const card = $('#c-homo'), H = REG && REG.homodimers;
-  if (!card || !H || !H.species || !H.species[sp.id]) return;
-  const list = homoFor(await homoRows(sp.id), P);
-  if (gone() || !list.length || !card.isConnected) return;
+// The protein paired with itself: the screens' own predictions of that pair (every model, by screen; FlyPredictome folds
+// most genes with themselves) and the AlphaFold Database homodimer release's entry when the species has one.
+async function homoCard(sp, P, gone, B) {
+  const card = $('#c-homo'), H = REG && REG.homodimers, afdb = !!(H && H.species && H.species[sp.id]);
+  if (!card) return;
+  const mine = B ? B.preds.filter((p) => p.partner === P.key && Number.isFinite(p.iLIS)).sort((a, b) => b.iLIS - a.iLIS) : [];
+  const list = afdb ? homoFor(await homoRows(sp.id), P) : [];
+  if (gone() || (!list.length && !mine.length) || !card.isConnected) return;
   card.hidden = false; const nb = app.querySelector('.subnav button[data-t="c-homo"]'); if (nb) nb.hidden = false;
-  const src = `<a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a>`;
-  $('#homo-sub').innerHTML = `${esc(P.gene)} paired with itself, from the AlphaFold Database homodimer release (${src}), rescored with lis.py · one model per protein · <a href="#/${sp.id}/homodimers">all homodimers of ${esc(sp.reg.label)} →</a>`;
+  const src = afdb ? `<a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a>` : '';
+  const mask = mine.reduce((m, p) => m | (1 << p.di), 0);
+  $('#homo-sub').innerHTML = `${esc(P.gene)} paired with itself${mine.length ? `, predicted in ${srcRefs(sp, mask)}` : ''}${list.length ? `${mine.length ? ', and' : ','} from the AlphaFold Database homodimer release (${src}), rescored with lis.py, one model per protein` : ''}${afdb ? ` · <a href="#/${sp.id}/homodimers">all homodimers of ${esc(sp.reg.label)} →</a>` : ''}`;
+  $('#homo-body').innerHTML = '<div id="homo-own"></div><div id="homo-afdb"></div>';
+  const sc = [['iLIS', 'iLIS'], ['iLISA', 'iLISA'], ['ipSAE', 'ipSAE'], ['ipTM', 'ipTM'], ['pDockQ2', 'pDockQ2'], ['actifpTM', 'actifpTM*']];
+  const kpis = (val, lir, clir) => `<div class="kpis hd-scores">${sc.map(([k, l]) => { const v = val(k), f = FPR[k] && Number.isFinite(v);
+    return `<div class="kpi"><b${f ? ` style="${bandSty(FPR[k], v)}"` : ''}>${vmfmt(k, v)}</b><span>${l}${k === 'iLIS' && f ? ` ${bandChip(bandIn(FPR.iLIS, v))}` : ''}</span></div>`; }).join('')}<div class="kpi"><b>${fmtInt(lir || 0)} / ${fmtInt(clir || 0)}</b><span>LIR / cLIR residues</span></div></div>`;
+  if (mine.length) {   // by screen, the best model first; the other models of a run are listed by rank
+    const by = new Map(); for (const p of mine) { if (!by.has(p.di)) by.set(p.di, []); by.get(p.di).push(p); }
+    $('#homo-own').innerHTML = [...by].map(([di, ps]) => { const b = ps[0], d = (REG.datasets || []).find((x) => x.id === sp.dsIds[di]) || { id: sp.dsIds[di] }, cite = screenCite(d), u = fpUrl(B, b.run, b.rank);
+      const runs = new Set(ps.map((p) => p.run)).size, others = ps.slice(1).map((p) => `${p.rank ? `rank ${p.rank}` : 'model'} ${vmfmt('iLIS', p.iLIS)}`).join(', ');
+      return `<p class="hd-line"><b>${cite.url ? `<a href="${esc(cite.url)}" target="_blank" rel="noopener">${esc(cite.short)} ↗</a>` : esc(cite.short)}</b> · ${fmtInt(ps.length)} model${ps.length === 1 ? '' : 's'}${runs > 1 ? ` in ${fmtInt(runs)} runs` : ''} · best${b.rank ? ` rank ${b.rank}` : ''}${Number.isFinite(b.qLen) ? ` · ${fmtInt(b.qLen)} aa per copy` : ''}${u ? ` <a class="btn hd-open" href="${esc(u)}" target="_blank" rel="noopener" title="this model's run in LIVIA, structures and PAE read from FlyPredictome">Open in LIVIA ↗</a>` : ''}</p>
+        ${kpis((k) => b[k], b.qLIR, b.qcLIR)}${b.qL ? homoTrack({ len_i: b.qLen, LIR_indices_i: b.qL, cLIR_indices_i: b.qC }) : ''}${others ? `<p class="muted hd-note">Other models: ${others}.</p>` : ''}`; }).join('')
+      + `<p class="muted hd-note">Called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}); each score is colored by the band it passes; actifpTM* is approximate.</p>`;
+  }
+  if (!list.length) return;
   const ctl = $('#homo-ctl');
   ctl.innerHTML = list.length > 1 ? `<label class="ctl">Entry <select id="homo-pick" aria-label="Homodimer entry">${list.map((e, n) => `<option value="${n}">${esc(e.uniprot_A)}${e.iso ? ' (isoform)' : ''}</option>`).join('')}</select></label>` : '';
   const show = (e) => {
-    const sc = [['iLIS', 'iLIS'], ['iLISA', 'iLISA'], ['ipSAE', 'ipSAE'], ['ipTM', 'ipTM'], ['pDockQ2', 'pDockQ2'], ['actifpTM', 'actifpTM*']];
-    const num = (k) => vmfmt(k, e[k] === '' || e[k] == null ? NaN : +e[k]);
-    $('#homo-body').innerHTML = `<p class="hd-line"><b>${esc(e.entry)}</b>${e.iso ? ` · <span class="flag">isoform ${esc(e.uniprot_A)}</span>` : ` · ${esc(e.uniprot_A)}`} · ${fmtInt(+e.len_i)} aa per copy${Number.isFinite(parseFloat(e.pLDDT)) ? ` · pLDDT ${(+e.pLDDT).toFixed(1)}` : ''} <span id="homo-struct"></span></p>
-      <div class="kpis hd-scores">${sc.map(([k, l]) => { const v = e[k] === '' || e[k] == null ? NaN : +e[k], f = FPR[k] && Number.isFinite(v);
-        return `<div class="kpi"><b${f ? ` style="${bandSty(FPR[k], v)}"` : ''}>${num(k)}</b><span>${l}${k === 'iLIS' && f ? ` ${bandChip(bandIn(FPR.iLIS, v))}` : ''}</span></div>`; }).join('')}<div class="kpi"><b>${fmtInt(+e.LIR_i || 0)} / ${fmtInt(+e.cLIR_i || 0)}</b><span>LIR / cLIR residues</span></div></div>
+    const num = (k) => (e[k] === '' || e[k] == null ? NaN : +e[k]);
+    $('#homo-afdb').innerHTML = `<p class="hd-line"><b>${esc(e.entry)}</b>${e.iso ? ` · <span class="flag">isoform ${esc(e.uniprot_A)}</span>` : ` · ${esc(e.uniprot_A)}`} · ${fmtInt(+e.len_i)} aa per copy${Number.isFinite(parseFloat(e.pLDDT)) ? ` · pLDDT ${(+e.pLDDT).toFixed(1)}` : ''} <span id="homo-struct"></span></p>
+      ${kpis(num, +e.LIR_i, +e.cLIR_i)}
       ${homoTrack(e)}
       <p class="muted hd-note">Called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}); each score is colored by the band it passes; actifpTM* is approximate. From the AlphaFold Database homodimer release: the current files hold the entries the release lists (${esc(H.selection)}); the full set is being scored. Interaction residues (LIR) have a confident predicted aligned error to the other copy; contact residues (cLIR) also lie at Cβ ≤ 8 Å from it. The track shows the first copy (chain A), numbered from its first residue; the second copy is the same protein.</p>`;
     const ad = { hd: true, tar: e.src_tar, cif_off: +e.cif_offset, cif_len: +e.cif_size, pae_off: +e.pae_offset, pae_len: +e.pae_size };
@@ -2466,7 +2481,6 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div id="para-body"></div></div>
     <div class="card" id="c-homo" hidden><div class="card-head"><div><h2>Homodimer <span class="tag-alpha">alpha</span></h2><div class="muted" id="homo-sub"></div></div><div class="controls" style="margin:0" id="homo-ctl"></div></div>
       <div id="homo-body"></div></div>`;
-  setTimeout(() => homoCard(sp, P, gone), 1200);   /* the species' homodimer table, after the page's own reads have started */
   { const bar = $('.subnav'); let cur = null, raf = 0;
     const spy = () => { raf = 0; if (!bar || !bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
       const lim = bar.getBoundingClientRect().bottom + 24; let on = null;
@@ -2502,6 +2516,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (SET && !(B && B.preds.length)) { notIn = SET.type === 'dataset' ? (SET.short || SET.title) : `${TS0 ? TS0.ds.reg.short : ''}'s ${SET.title} ${SET.type === 'screen' ? 'screen' : 'category'}`; SET = null; B = null; } if (!B) B = B0; }
   catch (e) { if (!gone()) $('#clip-sub').textContent = e.message; return; }
   if (gone()) return;
+  homoCard(sp, P, gone, B0).catch(() => {});   // the protein with itself: the screens' own self-pairs (every screen, whatever the scope) and the species' homodimer table
   const scopeQ = SET ? `?set=${encodeURIComponent(SET.id)}` : '';
   { const cb = app.querySelector('.phead .cite-link'); if (cb) cb.dataset.ds = (SET && SET.type === 'dataset' ? [SET.id] : SET && TS0 ? [TS0.ds.id] : sp.dsIds.filter((_, i) => P.src & (1 << i))).join(','); }   // Cite: the scope's screen (a set's own screen), or every screen when no scope applies
   // Isoforms folded separately (a construct too unlike the reference to be drawn on it): the page shows one at a time,
