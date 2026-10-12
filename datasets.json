@@ -3420,105 +3420,118 @@
   "title": "AlphaFold Database homodimers",
   "source": "Han et al. 2026 · bioRxiv",
   "paper": "https://doi.org/10.64898/2026.03.27.714458",
-  "base": "https://www.flyrnai.org/livia-atlas/live/homodimers/",
+  "base": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-homodimers/",
   "structBase": "https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/homodimers/",
-  "frozen": "https://www.flyrnai.org/livia-atlas/versions/v0.1.6-homodimers/",
-  "frozenName": "v0.1.6-homodimers",
+  "frozen": "https://www.flyrnai.org/livia-atlas/versions/v0.1.7-homodimers/",
+  "frozenName": "v0.1.7-homodimers",
   "models": 1,
   "recycles": "up to 6",
   "modelsNote": "model_1_multimer_v3 via ColabFold; no templates; recycling stopped early at an ipTM threshold of 0.1",
   "runNote": "as recorded in each model file; the release paper's Methods give four recycles",
   "license": "CC BY 4.0",
-  "selection": "the higher of its two directions passes ipSAE ≥ 0.60 and pDockQ2 ≥ 0.23",
   "species": {
    "human": {
     "file": "homodimer_lis_human.csv.gz",
-    "entries": 4802,
-    "onPages": 2889,
-    "slim": true,
-    "md5": "5a0e659e160b474b158a94f6036374aa",
-    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
+    "entries": 91684,
+    "onPages": 38994,
+    "slim": 2,
+    "md5": "5c1a51da21b9cb6982ac10769b817d3b",
+    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 o1 o2 o3 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
    },
    "mus-musculus": {
     "file": "homodimer_lis_mouse.csv.gz",
-    "entries": 3209,
-    "onPages": 1810,
-    "slim": true,
-    "md5": "d17baa56a131922519a66293f27bca07",
+    "entries": 55263,
+    "onPages": 21271,
+    "slim": 2,
+    "md5": "7c758b14656fd9041c1b4421c9e6235e",
     "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
    },
    "rattus-norvegicus": {
     "file": "homodimer_lis_rat.csv.gz",
-    "entries": 3699,
-    "onPages": 1449,
-    "slim": true,
-    "md5": "77ae4f0641979d22b5df1fc94a49afb8",
+    "entries": 47923,
+    "onPages": 15289,
+    "slim": 2,
+    "md5": "5e9a02dfa28b44f03b7113bd4e080a53",
     "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
    },
    "fly": {
     "file": "homodimer_lis_fly.csv.gz",
-    "entries": 1613,
-    "onPages": 1119,
-    "slim": true,
-    "md5": "a9077924020c9b277e903e025c7046ce",
-    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v8 v9 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
+    "entries": 20003,
+    "onPages": 13233,
+    "slim": 2,
+    "md5": "5b88d3281efb65c58ddb90421f3e0809",
+    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
    },
    "worm": {
     "file": "homodimer_lis_worm.csv.gz",
-    "entries": 1707,
-    "onPages": 1105,
-    "slim": true,
-    "md5": "9bcf054579af8aa1d828590602b14043",
-    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c3 c4 c5 c6 c7 c8 c9 d0 d1 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 f0 f1 f2 f3 f4 f6 f9 g0 g1 g2 g3 g4 g5 g7 g8 g9 h0 h2 h3 h4 h5 h6 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n1 n3 n4 n6 n7 n8 n9 p0 p2 p3 p4 p5 p6 p7 p8 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r1 r2 r3 r4 r5 r6 r7 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t9 u0 u1 u2 u3 u5 u6 u7 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y2 y3 y4 y5 y6 y7 y8 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
+    "entries": 26546,
+    "onPages": 12210,
+    "slim": 2,
+    "md5": "d992fb91d6bcddbb294f8c965064da12",
+    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
    },
    "zebrafish": {
     "file": "homodimer_lis_zebrafish.csv.gz",
-    "entries": 3140,
-    "onPages": 1306,
-    "slim": true,
-    "md5": "0fcc3106d17cf7347220f310488c344a",
+    "entries": 39951,
+    "onPages": 12672,
+    "slim": 2,
+    "md5": "ca26dfeb04de2c971e7553df804effa5",
     "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
    },
    "yeast": {
     "file": "homodimer_lis_budding_yeast.csv.gz",
-    "entries": 653,
-    "onPages": 641,
-    "slim": true,
-    "md5": "7daacfbdfabd3dd79964fdb46ceedbe7",
-    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 d2 h4 k4 q3"
+    "entries": 6416,
+    "onPages": 5612,
+    "slim": 2,
+    "md5": "ea96f7fbf0346544d334c6e9a1f044e6",
+    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a2 a3 a4 a5 a6 a7 a8 a9 b0 b2 b3 b4 b5 b6 b7 b8 b9 c1 c2 c3 c6 c7 d0 d1 d2 d3 d5 d7 d9 e0 e1 e2 e4 e5 e6 e8 e9 f1 f2 f3 f4 f5 f7 f8 f9 g0 g1 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i4 i5 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l6 l7 l8 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s4 s5 s8 s9 t0 t1 t2 t3 t4 t5 t7 t9 u1 u2 u3 u4 u5 u6 u7 u8 v2 v3 v7 v8 w0 w1 w2 w3 w4 w7 w9 x0 x1 x2 x5 x7 x8 x9 y1 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z7 z8 z9"
    },
    "schizosaccharomyces-pombe": {
     "file": "homodimer_lis_fission_yeast.csv.gz",
-    "entries": 578,
-    "onPages": 498,
-    "slim": true,
-    "md5": "f24909d8ca87f63f8113efbad2ebc2fd",
-    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a5 a6 a7 b2 b3 c2 c8 c9 d0 d8 e2 e3 e6 e7 e9 f2 f3 f9 g8 g9 h0 h1 h7 i0 i1 i2 i3 i4 i6 i8 i9 j0 j2 j3 j4 j5 j6 j7 j9 k0 k1 k7 k8 k9 l3 l4 l5 l6 l9 m1 m2 m4 m7 m8 m9 n0 n1 n2 n3 n4 n7 p0 p2 p5 p6 p7 p8 p9 q1 q2 q4 q6 r3 r7 r8 s6 t3 t6 t9 u1 u3 u4 u5 u6 u9 v0 v1 v3 v8 w5 w6 w8 w9 x2 x3 x5 y2 y6 y7 y8 z0 z6 z7"
+    "entries": 4983,
+    "onPages": 4146,
+    "slim": 2,
+    "md5": "7c6fb13b4db843777bcf40c8e3970706",
+    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
    },
    "arabidopsis-thaliana": {
     "file": "homodimer_lis_arabidopsis.csv.gz",
-    "entries": 3597,
-    "onPages": 2110,
-    "slim": true,
-    "md5": "95235292c1bd881861af72b2f0b97581",
+    "entries": 40220,
+    "onPages": 19215,
+    "slim": 2,
+    "md5": "65ffe35535ffd02ecb5afc93ed290e99",
     "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
    },
    "dictyostelium-discoideum": {
     "file": "homodimer_lis_dictyostelium.csv.gz",
-    "entries": 876,
-    "onPages": 520,
-    "slim": true,
-    "md5": "4d3f8a357b72df1fbcf5d675e0b43606",
-    "parts": "00 01 02 03 04 06 07 08 09 10 11 12 13 14 15 16 17 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b2 b3 b4 b5 b8 b9 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g6 g7 g8 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m6 m7 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q1 q2 q3 q4 q5 q6 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t6 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x9 y0 y1 y2 y3 y4 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z7 z8 z9"
+    "entries": 11654,
+    "onPages": 4784,
+    "slim": 2,
+    "md5": "462ecdaeaeb2cc2a80cc230aeef3b0dc",
+    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
    },
    "escherichia-coli-83333": {
     "file": "homodimer_lis_ecoli_k12.csv.gz",
-    "entries": 1206,
-    "onPages": 812,
-    "slim": true,
-    "md5": "b3764dc381681f6e50d8b4bb4bdeb864",
-    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a1 a2 a3 a4 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 c2 c4 c6 c7 c8 c9 d0 d2 d3 d4 d5 d7 e0 e1 e3 e4 e5 e6 e7 e9 f0 f1 f3 f4 f6 f8 g0 g1 g2 g3 g4 g6 g8 h3 h5 h6 h7 h8 h9 i0 i1 i3 i4 i5 i6 i7 i8 j0 j1 j2 j5 j6 j7 j8 j9 k0 k1 k2 k5 k6 k7 k8 k9 l0 l1 l2 l5 l6 l7 l8 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n1 n2 n3 n5 n7 n9 p0 p1 p2 p3 p4 p5 p7 p8 p9 q0 q2 q3 q4 q6 q7 q9 r0 r2 r3 r4 r5 r7 r8 r9 s0 s1 s2 s3 s4 s5 s7 s9 t0 t1 t2 t4 t5 t6 u0 u2 u3 u4 u5 u6 u7 u8 v0 v1 v5 v6 v8 w2 w3 w4 w8 w9 x0 x1 x2 x3 x5 x7 x9 y0 y1 y3 y5 y8 y9 z0 z1 z3 z4 z6"
+    "entries": 4380,
+    "onPages": 2597,
+    "slim": 2,
+    "md5": "a8b04711feeedd9393ab0149c711e16b",
+    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 o0 o1 o2 o3 o4 o5 o7 o8 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
+   },
+   "xenopus-laevis": {
+    "file": "homodimer_lis_xenopus_laevis.csv.gz",
+    "entries": 52764,
+    "onPages": 782,
+    "slim": 2,
+    "md5": "6e8353b1483e629293a4b1ee26aae27b",
+    "parts": "00 01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 z0 z1 z2 z3 z4 z5 z6 z7 z8 z9"
    }
-  }
+  },
+  "unscored": {
+   "n": 2455,
+   "file": "unscoreable.tsv",
+   "note": "2,445 incomplete in the source archive (no structure or no PAE), 10 that could not be scored"
+  },
+  "nopageShards": "00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 0g 0h 0i 0j 0k 0l 0n 0o 0p 0q 0r 0s 0t 0u 0v 0w 10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 1g 1h 1i 1j 1k 1l 1m 1n 1p 1q 1r 1s 1w 1x 1y 20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 2g 2h 2i 2j 2k 2l 2m 2n 2o 2p 2q 2r 2s 2t 2u 2w 2z 30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 3g 3h 3i 3j 3k 3l 3m 3n 3r 3s 3w 3x 3y 40 41 42 43 44 45 46 47 48 49 4_ 4a 4b 4c 4d 4e 4f 4g 4h 4i 4j 4k 4l 4m 4n 4p 4r 4s 4w 4x 4y 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 5g 5h 5j 5k 5l 5m 5p 5r 5w 60 61 62 63 64 65 66 67 68 69 6a 6b 6c 6d 6e 6f 6g 6h 6i 6k 6l 6m 6n 6p 6r 6s 6w 70 71 72 73 74 75 76 77 78 79 7a 7b 7c 7d 7e 7f 7h 7l 7p 7r 7w 80 81 82 83 84 85 86 87 88 89 8a 8b 8c 8d 8e 8f 8g 8h 8l 8n 8o 8q 8w 90 91 92 93 94 95 96 97 98 99 9a 9b 9c 9d 9e 9f 9g 9h 9j 9l 9m 9n 9o 9p 9q 9r 9s 9t 9u 9w 9x _0 _1 _2 _3 _4 _5 _6 _7 _8 _9 __ _a _b _c _d _e _f _g _h _i _j _k _l _m _p _r _s _t _v _w _x _y _z a0 a1 a2 a3 a4 a5 a6 a7 a8 a9 aa ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az b0 b1 b2 b3 b4 b5 b6 b7 b8 b9 ba bb bc bd be bf bg bh bi bj bk bl bm bn bo bp bq br bs bt bu bv bw bx by bz c0 c1 c2 c3 c4 c5 c6 c7 c8 c9 ca cb cc cd ce cf cg ch ci cj ck cl cm cn co cp cq cr cs ct cu cv cw cx cy cz d0 d1 d2 d3 d4 d5 d6 d7 d8 d9 da db dc dd de df dg dh di dj dk dl dm dn do dp dq dr ds dt du dv dx dy dz e0 e1 e2 e3 e4 e5 e6 e7 e8 e9 ea eb ec ed ee ef eg eh ei ej ek el em en eo ep eq er es et eu ev ew ex ey ez f0 f1 f2 f3 f4 f5 f6 f7 f8 f9 fa fb fc fd fe ff fg fh fi fj fk fl fm fn fo fp fq fr fs ft fu fv fw fx fy fz g0 g1 g2 g3 g4 g5 g6 g7 g8 g9 ga gb gc gd ge gf gg gh gi gj gk gl gm gn go gp gq gr gs gt gu gv gw gx gy gz h0 h1 h2 h3 h4 h5 h6 h7 h8 h9 h_ ha hb hc hd he hf hg hh hi hj hk hl hm hn ho hp hq hr hs ht hu hv hw hx hy hz i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 i_ ia ib ic id ie if ig ih ii ij ik il im in io ip iq ir is it iv ix iy iz j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 ja jb jc jd je jf jg jh ji jj jk jl jm jo jp jq jr jt ju jv jx jy jz k0 k1 k2 k3 k4 k5 k6 k7 k8 k9 ka kb kc kd ke kf kg kh ki kk kl km kn ko kp kq kr ks kt ku kv kx ky kz l0 l1 l2 l3 l4 l5 l6 l7 l8 l9 la lb lc ld le lf lg lh li lj lk ll lm ln lo lp lq lr ls lt lu lv lw lx ly lz m0 m1 m2 m3 m4 m5 m6 m7 m8 m9 ma mb mc md me mf mg mh mi mj mk ml mm mn mo mp mr ms mt mu mw mx my n0 n1 n2 n3 n4 n5 n6 n7 n8 n9 na nb nc nd ne nf ng nh ni nj nk nl nm nn no np nq nr ns nt nu nv nw nx ny nz o0 o1 o2 o3 o4 o5 o6 o7 o8 o9 oa ob oc od oe of og oh oi oj ok ol om on oo op oq or os ot ou ov ow ox oy oz p0 p1 p2 p3 p4 p5 p6 p7 p8 p9 pa pb pc pd pe pf pg ph pi pj pk pl pm pn po pp pq pr ps pt pu pv pw px py pz q0 q1 q2 q3 q4 q5 q6 q7 q8 q9 qa qb qc qd qf qh qi qk ql qm qo qp qr qs r0 r1 r2 r3 r4 r5 r6 r7 r8 r9 r_ ra rb rc rd re rf rg rh ri rj rk rl rm rn ro rp rq rr rs rt ru rv rw rx ry rz s0 s1 s2 s3 s4 s5 s6 s7 s8 s9 sa sb sc sd se sf sg sh si sj sk sl sm sn so sp sq sr ss st su sv sw sx sy sz t0 t1 t2 t3 t4 t5 t6 t7 t8 t9 ta tb tc td te tf tg th ti tj tk tl tm tn to tp tq tr ts tt tu tv tw tx ty tz u0 u1 u2 u3 u4 u5 u6 u7 u8 u9 ua ub uc ud uf ug uh ui uk ul um un up ur us ut ux uz v0 v1 v2 v3 v4 v5 v6 v7 v8 v9 v_ va vb vc vd ve vf vg vh vi vk vl vm vn vp vr vs vx vy w0 w1 w2 w3 w4 w5 w6 w7 w8 w9 w_ wa wb wd we wf wg wh wi wk wl wm wn wo wr ws wt x0 x1 x2 x3 x4 x5 x6 x7 x8 x9 xa xb xc xd xe xf xg xh xi xk xl xn xo xp xq xr xt xu xx y0 y1 y2 y3 y4 y5 y6 y7 y8 y9 ya yb yc yd ye yg yh yi yk yl ym yn yp yr ys yt yx yy yz z0 z1 z2 z3 z4 z5 z6 z7 z8 z9 z_ za zb ze zf zl zn zp zr zt"
  }
 }

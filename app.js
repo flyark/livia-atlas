@@ -723,9 +723,11 @@ function liviaTab(w) {
   return { status(text, error) { last = { type: 'livia-status', text, error: !!error }; if (ready) post(last); if (error && ready) done(); },
     load(msg) { done(); handTo(w, msg); } };
 }
-async function openFromArchive(model, ad, link) {
+async function openFromArchive(model, ad0, link) {   // ad0: the archive address, or a promise of it (a list row whose address is in its protein's file)
   const w = window.open(`${LIVIA}universal.html?post=1`, '_blank'); if (!w) return;
-  const tab = liviaTab(w), mb = ((ad.cif_len + ad.pae_len) / 1048576).toFixed(1);
+  const tab = liviaTab(w), ad = await ad0;
+  if (!ad) { tab.status(`Could not find where ${model} sits in the release archive. Close this tab and try again from the Atlas.`, true); return; }
+  const mb = ((ad.cif_len + ad.pae_len) / 1048576).toFixed(1);
   const txt = link.textContent; link.textContent = 'reading…';
   tab.status(`Reading ${model} from the AlphaFold Database release archive at EBI (${mb} MB)…`);
   const onRelay = () => tab.status(`EBI's secure address did not answer; reading ${model} through LIVIA's proxy instead (${mb} MB)…`);
@@ -818,7 +820,7 @@ async function homoCard(sp, P, gone, B) {
     $('#homo-afdb').innerHTML = `<p class="hd-line"><b>${esc(e.entry)}</b>${e.iso ? ` · <span class="flag">isoform ${esc(e.uniprot_A)}</span>` : ` · ${esc(e.uniprot_A)}`} · ${fmtInt(+e.len_i)} aa per copy${Number.isFinite(parseFloat(e.pLDDT)) ? ` · pLDDT ${(+e.pLDDT).toFixed(1)}` : ''} <span id="homo-struct"></span></p>
       ${kpis(num, +e.LIR_i, +e.cLIR_i)}
       ${homoTrack(e)}
-      <p class="muted hd-note">Called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}); each score is colored by the band it passes; actifpTM* is approximate. From the AlphaFold Database homodimer release: the current files hold the entries the release lists; the full set is being scored. Interaction residues (LIR) have a confident predicted aligned error to the other copy; contact residues (cLIR) also lie at Cβ ≤ 8 Å from it. The track shows the first copy (chain A), numbered from its first residue; the second copy is the same protein.</p>`;
+      <p class="muted hd-note">Called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}); each score is colored by the band it passes; actifpTM* is approximate. Interaction residues (LIR) have a confident predicted aligned error to the other copy; contact residues (cLIR) also lie at Cβ ≤ 8 Å from it. The track shows the first copy (chain A), numbered from its first residue; the second copy is the same protein.</p>`;
     const ad = { hd: true, tar: e.src_tar, cif_off: +e.cif_offset, cif_len: +e.cif_size, pae_off: +e.pae_offset, pae_len: +e.pae_size };
     if (e.src_tar && [ad.cif_off, ad.cif_len, ad.pae_off, ad.pae_len].every(Number.isFinite)) structLink($('#homo-struct'), { model: e.entry, shown: false, addr: ad }, 'hd-open');
   };
@@ -826,7 +828,11 @@ async function homoCard(sp, P, gone, B) {
   const pick = $('#homo-pick'); if (pick) pick.onchange = () => show(list[+pick.value]);
 }
 let HNP = null;   // the homodimer entries with no protein page, [species, accession, gene] (build/homodimer_index.py), read on a search that finds nothing
-const homoNoPage = () => { if (!HNP) HNP = getJSON('data/homodimers/nopage.json').catch(() => { HNP = null; return []; }); return HNP; };
+const HNPK = new Map(), hnpKey = (s) => String(s).toLowerCase().slice(-2).padStart(2, '_').replace(/[^a-z0-9]/g, '_');   // as build/homodimer_index.py tkey: a term's last two characters
+const homoNoPage = (term) => { const H = REG && REG.homodimers, ks = H && H.nopageShards;
+  if (!ks) { if (!HNP) HNP = getJSON('data/homodimers/nopage.json').catch(() => { HNP = null; return []; }); return HNP; }   // older layout: one file
+  const k = hnpKey(term); if (!ks.split(' ').includes(k)) return Promise.resolve([]);
+  if (!HNPK.has(k)) HNPK.set(k, getJSON(`data/homodimers/nopage/${k}.json`).catch(() => { HNPK.delete(k); return []; })); return HNPK.get(k); };
 // The homodimer release's own page (#/datasets/homodimers): per species its entries, how many land on a protein page (the
 // join homoFor uses, counted by build/homodimer_index.py into the registry), its list and its file; what the columns are.
 async function viewHomoDataset() {
@@ -844,7 +850,7 @@ async function viewHomoDataset() {
     ['src_tar, cif_offset, cif_size, pae_offset, pae_size', 'where the model and its PAE sit in the release archive at EBI (byte ranges), which the site reads to open the structure in LIVIA']];
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/homodimers">Homodimers</a></div>
     <h1>${esc(H.title)}</h1>
-    <p class="muted" style="max-width:900px">Each protein paired with itself, from the AlphaFold Database homodimer release (${src}), one model per protein, rescored with lis.py. Homodimers are called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}). The current files hold the entries the release lists (${esc(H.selection)}); the full set is being scored. Models ${esc(H.license || 'CC BY 4.0')}; cite the release (${src}) and LIVIA.</p>
+    <p class="muted" style="max-width:900px">Each protein paired with itself, from the AlphaFold Database homodimer release (${src}), one model per protein, rescored with lis.py. Homodimers are called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}). Every target entry of the release is scored${H.unscored ? `, except ${fmtInt(H.unscored.n)} (${esc(H.unscored.note)}; listed in ${esc(H.unscored.file)} beside the files)` : ''}. Models ${esc(H.license || 'CC BY 4.0')}; cite the release (${src}) and LIVIA.</p>
     ${H.models ? `<p class="pname" style="margin:-4px 0 12px">Run settings: ${runSettings(H)}${H.runNote ? ` <span class="muted">· ${esc(H.runNote)}</span>` : ''}</p>` : ''}
     <div class="kpis"><div class="kpi"><b>${fmtInt(tot)}</b><span>entries</span></div><div class="kpi"><b>${fmtInt(on)}</b><span>on a protein page</span></div><div class="kpi"><b>${fmtInt(sps.length)}</b><span>species</span></div></div>
     <div class="card"><div class="card-head"><h2>Species</h2><span class="muted">each list holds every entry, those without a protein page too</span></div>
@@ -862,25 +868,32 @@ async function viewHomoList(spId, q) {
   if (!H || !H.species || !H.species[spId]) { app.innerHTML = `<div class="empty">No homodimers for ${esc(sp.reg.label)}. <a href="#/datasets/homodimers">The species with homodimers</a></div>`; return; }
   document.title = `Homodimers · ${sp.reg.label} · LIVIA Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / Homodimers</div><h1>Homodimers <span class="muted" style="font-weight:500">${spName(sp.reg.name)}</span></h1>
-    <p class="muted" style="max-width:900px">Every entry of the AlphaFold Database homodimer release for this species (<a href="#/datasets/homodimers">about the release and its files</a>), one model per protein, rescored with lis.py and called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR). The current files hold the entries the release lists; the full set is being scored.</p>
+    <p class="muted" style="max-width:900px">Every entry of the AlphaFold Database homodimer release for this species (<a href="#/datasets/homodimers">about the release and its files</a>), one model per protein, rescored with lis.py and called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR).</p>
     <div class="card"><div class="controls" style="margin:0 0 10px"><input type="search" id="hl-q" placeholder="filter by gene, UniProt accession or entry" aria-label="Filter homodimers" style="width:300px" value="${esc(q.get('q') || '')}">
       <label class="ctl" title="entries whose UniProt accession has no protein page (some are other entries of a gene that has one, marked gene page)"><input type="checkbox" id="hl-nopage"> only entries without a page</label>
-      <label class="ctl">Show <select id="hl-band" aria-label="Which homodimers"><option value="0">every entry</option><option value="10">past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label><span class="muted" id="hl-note">Loading…</span></div>
+      <label class="ctl">Show <select id="hl-band" aria-label="Which homodimers"><option value="0">every entry</option><option value="10"${H.species[spId].slim === 2 && !(q.get('q') || '').trim() ? ' selected' : ''}>past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label><span class="muted" id="hl-note">Loading…</span></div>
       <div class="tbl-wrap"><table class="pt" id="hl"></table></div><div class="pager" id="hl-pager"></div></div>`;
-  const rows = await homoRows(spId); if (stale(gen)) return;
+  const split = H.species[spId].slim === 2, total = H.species[spId].entries;   // split: the rows past 10% FPR first (list10.tsv), the rest (listrest.tsv) when the reader asks for every entry or filters
+  const rows = await homoRows(spId, split ? 'list10' : undefined); if (stale(gen)) return;
   const idx = new Map(); for (const r of sp.rows) { idx.set(String(r.key), r); for (const t of String(r.acc || '').split(/\s+/)) if (t && !idx.has(t)) idx.set(t, r); }
-  const L = rows.map((e) => { const u = String(e.uniprot_A || ''), page = idx.get(u) || idx.get(u.split('-')[0]) || null, g0 = /^[?\s]*$/.test(e.gene_A || '') ? '' : e.gene_A;
-    return { e, page, iso: u.includes('-'), gene: g0 || (page && page.gene) || u, gpage: !page && g0 && sp.byGene.has(g0) ? sp.byGene.get(g0) : null }; });   // gpage: another UniProt entry of a gene that has a page
+  const full = (e) => (e.src_tar != null ? Promise.resolve(e) : homoRows(spId, homoShardKey(e.uniprot_A)).then((rs) => { const f = rs.find((r) => r.entry === e.entry); if (f) Object.assign(e, f); return f ? e : null; }));   // a list row's residue runs and archive address, from its protein's file
+  let rest = split ? null : 'done';
+  const wantRest = () => split && rest === null && (+$('#hl-band').value === 0 || $('#hl-q').value.trim() !== '');
+  const loadRest = () => { rest = 'loading'; homoRows(spId, 'listrest').then((rs) => { if (stale(gen)) return; for (const e of rs) L.push(row(e)); rest = 'done'; draw(); }); };
+  const row = (e) => { const u = String(e.uniprot_A || ''), page = idx.get(u) || idx.get(u.split('-')[0]) || null, g0 = /^[?\s]*$/.test(e.gene_A || '') ? '' : e.gene_A;
+    return { e, page, iso: u.includes('-'), gene: g0 || (page && page.gene) || u, gpage: !page && g0 && sp.byGene.has(g0) ? sp.byGene.get(g0) : null }; };   // gpage: another UniProt entry of a gene that has a page
+  const L = rows.map(row);
   const T = { sort: 'iLIS', asc: false, page: 0, open: new Set() }, N = (x) => (x === '' || x == null ? NaN : +x);
   const COL = [['gene', 'Gene'], ['acc', 'UniProt'], ['len', 'Length'], ['iLIS', 'iLIS'], ['ipSAE', 'ipSAE'], ['ipTM', 'ipTM'], ['pDockQ2', 'pDockQ2'], ['LIR', 'Interaction'], ['cLIR', 'Contact'], ['s', 'Structure']];
   const key = (x, c) => (c === 'gene' ? x.gene.toLowerCase() : c === 'acc' ? x.e.uniprot_A : c === 'len' ? N(x.e.len_i) : c === 'LIR' ? N(x.e.LIR_i) : c === 'cLIR' ? N(x.e.cLIR_i) : N(x.e[c]));
   const draw = () => {
+    if (wantRest()) loadRest();
     const f = $('#hl-q').value.trim().toLowerCase(), np = $('#hl-nopage').checked;
     const bf = +$('#hl-band').value, bmin = bf ? CUT[bf] : -Infinity;
     let V = L.filter((x) => (!np || !x.page) && N(x.e.iLIS) >= bmin && (!f || x.gene.toLowerCase().includes(f) || String(x.e.uniprot_A).toLowerCase().includes(f) || String(x.e.entry).toLowerCase().includes(f)));
     V.sort((a, b) => { const x = key(a, T.sort), y = key(b, T.sort), d = typeof x === 'string' ? x.localeCompare(y) : (Number.isFinite(x) ? x : -1) - (Number.isFinite(y) ? y : -1); return T.asc ? d : -d; });
     const per = 100, pages = Math.max(1, Math.ceil(V.length / per)); T.page = Math.min(T.page, pages - 1);
-    $('#hl-note').textContent = `${fmtInt(V.length)} of ${fmtInt(L.length)} entries · ${fmtInt(L.filter((x) => x.page).length)} on a protein page`;
+    $('#hl-note').textContent = rest === 'loading' ? `Loading the other ${fmtInt(total - L.length)} entries…` : `${fmtInt(V.length)} of ${fmtInt(rest === 'done' ? L.length : total)} entries${rest === 'done' ? ` · ${fmtInt(L.filter((x) => x.page).length)} on a protein page` : ''}`;
     const sc = (k, x) => vmfmt(k, N(x.e[k])), scb = (k, x) => (FPR[k] && Number.isFinite(N(x.e[k])) ? ` style="${bandSty(FPR[k], N(x.e[k]))}"` : '');   // each score in the color of the band it passes, as for pairs of two proteins
     $('#hl').innerHTML = `<thead><tr>${COL.map(([c, l]) => `<th data-c="${c}"${['gene', 'acc', 's'].includes(c) ? '' : ' class="n"'}${c === 's' ? '' : ' style="cursor:pointer"'}>${l}${T.sort === c ? (T.asc ? ' ▲' : ' ▼') : ''}</th>`).join('')}</tr></thead><tbody>`
       + V.slice(T.page * per, (T.page + 1) * per).map((x) => { const i = L.indexOf(x), op = T.open.has(i);
@@ -890,13 +903,16 @@ async function viewHomoList(spId, q) {
     $('#hl-pager').innerHTML = pages > 1 ? `<button class="btn" id="hl-prev" ${T.page ? '' : 'disabled'}>Previous</button><span>Page ${T.page + 1} of ${pages}</span><button class="btn" id="hl-next" ${T.page < pages - 1 ? '' : 'disabled'}>Next</button>` : '';
     if (pages > 1) { $('#hl-prev').onclick = () => { T.page--; draw(); }; $('#hl-next').onclick = () => { T.page++; draw(); }; }
     $('#hl').querySelectorAll('th[data-c]').forEach((th) => { if (th.dataset.c !== 's') th.onclick = () => { const c = th.dataset.c; T.asc = T.sort === c ? !T.asc : c === 'gene' || c === 'acc'; T.sort = c; T.page = 0; draw(); }; });
-    $('#hl').querySelectorAll('.hl-x').forEach((b) => { b.onclick = () => { const i = +b.dataset.i; if (T.open.has(i)) T.open.delete(i); else T.open.add(i); draw(); }; });
-    $('#hl').querySelectorAll('a.arch').forEach((a) => { a.onclick = (ev) => { ev.preventDefault(); const e = L[+a.dataset.i].e, ad = { hd: true, tar: e.src_tar, cif_off: +e.cif_offset, cif_len: +e.cif_size, pae_off: +e.pae_offset, pae_len: +e.pae_size }; openFromArchive(e.entry, ad, a); }; });
+    $('#hl').querySelectorAll('.hl-x').forEach((b) => { b.onclick = () => { const i = +b.dataset.i; if (T.open.has(i)) { T.open.delete(i); draw(); return; } T.open.add(i); full(L[i].e).then(() => { if (!stale(gen)) draw(); }); }; });
+    $('#hl').querySelectorAll('a.arch').forEach((a) => { a.onclick = (ev) => { ev.preventDefault(); const e0 = L[+a.dataset.i].e;
+      openFromArchive(e0.entry, full(e0).then((e) => (e && e.src_tar ? { hd: true, tar: e.src_tar, cif_off: +e.cif_offset, cif_len: +e.cif_size, pae_off: +e.pae_offset, pae_len: +e.pae_size } : null)), a); }; });
   };
   { let t; $('#hl-q').oninput = () => { T.page = 0; clearTimeout(t); t = setTimeout(() => { draw(); const [path] = location.hash.split('?'), v = $('#hl-q').value.trim(); history.replaceState(null, '', v ? `${path}?q=${encodeURIComponent(v)}` : path); }, 150); }; }
   $('#hl-nopage').onchange = () => { T.page = 0; draw(); }; $('#hl-band').onchange = () => { T.page = 0; draw(); };
-  const q0 = (q.get('q') || '').trim(); if (q0) { const hit = L.findIndex((x) => String(x.e.uniprot_A).toLowerCase() === q0.toLowerCase()); if (hit >= 0 && !L[hit].page) T.open.add(hit); }   // arrived from search: its row opened
-  draw();
+  const q0 = (q.get('q') || '').trim();
+  const openHit = () => { if (!q0) return; const hit = L.findIndex((x) => String(x.e.uniprot_A).toLowerCase() === q0.toLowerCase()); if (hit >= 0 && !L[hit].page && !T.open.has(hit)) { T.open.add(hit); full(L[hit].e).then(() => { if (!stale(gen)) draw(); }); } };   // arrived from search: its row opened
+  openHit(); draw();
+  if (q0 && rest !== 'done') { const t0 = setInterval(() => { if (stale(gen)) return clearInterval(t0); if (rest === 'done') { clearInterval(t0); openHit(); draw(); } }, 200); }
 }
 // Hand data to a LIVIA tab opened with ?post=1 (cLIP, network): ping until it says it is ready, then post (its handshake).
 function handTo(w, msg) {
@@ -1339,7 +1355,7 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
         const near = sps.filter((sp) => sp && !sp.viruses).map((sp) => [sp, nearRow(sp, t0)]).filter(([, r]) => r).slice(0, 3);
         return near.length ? ` Close: ${near.map(([sp, r]) => `<a href="#/${sp.id}/${encodeURIComponent(r.key)}">${esc(r.gene)}</a>${many ? ` <span class="muted">(${esc(sp.reg.label)})</span>` : ''}`).join(', ')}.` : ' Try a gene symbol, UniProt accession, FlyBase ID or protein name.'; })()}</div>` : '');
     box.hidden = !box.innerHTML;
-    if (!items.length && t.length >= 2) homoNoPage().then((list) => {   // no protein page: a protein with only a homodimer entry opens on its row in the species' homodimer list
+    if (!items.length && t.length >= 2) homoNoPage(t).then((list) => {   // no protein page: a protein with only a homodimer entry opens on its row in the species' homodimer list
       if (q !== input.value) return; const hit = list.filter(([s2, a, g]) => (!spId || s2 === spId) && (a.toLowerCase() === t || a.split('-')[0].toLowerCase() === t || String(g).toLowerCase() === t)).slice(0, 5);
       if (!hit.length) return; const note = box.querySelector('.sg-note'); if (!note) return; const lab2 = (id) => { const x = (REG.species || []).find((y) => y.id === id); return x ? x.label : id; };
       note.insertAdjacentHTML('beforeend', ` Homodimer only, no protein page: ${hit.map(([s2, a, g]) => `<a href="#/${s2}/homodimers?q=${encodeURIComponent(a)}">${esc(g || a)}</a> <span class="muted">(${esc(a)}, ${esc(lab2(s2))})</span>`).join(', ')}.`); box.hidden = false; });
@@ -1605,7 +1621,7 @@ function homoDsCard(reg) {   // the homodimer release: on protein pages and its 
   return `<div class="ds live" data-ds="homodimers"><span class="badge on">On protein pages</span><h3><a href="#/datasets/homodimers">${esc(H.title)}</a></h3>
     <div class="sp">${fmtInt(sps.length)} species · one model per protein · called with the iLIS cutoffs</div>
     <div class="stats"><div><b>${fmtInt(n)}</b><span>entries</span></div></div>
-    <div class="src-line"><a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a> — the current files hold the entries the release lists (${esc(H.selection)}); the full set is being scored</div></div>`;
+    <div class="src-line"><a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a></div></div>`;
 }
 async function fillDsStats() {
   const live = (await registry()).datasets.filter((x) => x.status === 'live');
@@ -1831,7 +1847,7 @@ async function viewAbout() {
       <p><b>Three ways partners are counted or ranked.</b> The header tiles and the partner lists count a partner when its <i>best model</i>, over every model of every screen, passes. Predicted binding sites (cLIP) cluster <i>every model</i> that passes, whatever its rank, so a partner can sit in more than one site when its models bind in different ways. Top partners ranks by iLIS alone, each pair by its <i>best model</i>, whatever its number of models; a pair folded both full length and as a part (a fragment, a peptide) is shown by its best full-length model. The cards say which rule they use.</p>
       <p><b>What the false-positive rates mean.</b> The cutoffs were set on the top-ranked of five AlphaFold-Multimer models × five recycles per pair (the reference sets above); screens with other settings, or pairs folded in many runs, get them as a guide. The Atlas applies them to a pair's best model, which on that set gives 10.4%, 5.3% and 1.1%. A pair folded in several runs or constructs has more models to choose its best from (some pairs were folded in dozens of runs), so for it the stated rate is a lower bound. In a one-model screen (the AlphaFold Database heterodimers, viral dimers included) the best model is the only model, which was not the setting of the calibration either, so there the rates are a guide. The cutoffs were not calibrated separately for bacteria, plants or viruses.</p>
       <p><b>Limits.</b> Every interaction here is a prediction, not an experiment. BioGRID marks depend on which proteins have been studied and on how each screen chose its pairs (a literature-derived set is reported by design), so a reported share is not a measure of accuracy. A site contacted by many partners can be a surface many proteins are predicted to touch (a DNA-binding face, a kinase domain in a kinase screen) rather than a specific binding site; its partner list and the screens they come from can help tell them apart. Paralogs that share an oligomerization domain can be predicted to pair through it whether or not they do in cells. Contacts in disordered regions count only where the predicted aligned error is at most 12 Å, but they remain the least certain. Network chance tests compare only pairs that were folded where the Atlas knows which were.</p>
-      <p><b>Homodimers.</b> A protein page can show its homodimer from the AlphaFold Database homodimer release, rescored with lis.py. Homodimers are called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}), and the card colors each score by its band. The current files hold the entries the release lists (${esc((reg.homodimers || {}).selection || 'its confidence filter')}); the full set is being scored. It has one model per protein and does not enter the partner counts, binding sites or networks.</p></div>
+      <p><b>Homodimers.</b> A protein page can show its homodimer from the AlphaFold Database homodimer release, rescored with lis.py. Homodimers are called with the same iLIS cutoffs as pairs of two proteins (10% / 5% / 1% FPR: iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}), and the card colors each score by its band. Every target entry of the release is scored, apart from the archive's own incomplete entries; the iLIS cutoffs were calibrated on pairs of two proteins and are applied to homodimers unchanged. It has one model per protein and does not enter the partner counts, binding sites or networks.</p></div>
     <div class="card"><h2>Cite</h2>
       <ul class="refs">
         ${ref('livia', 'LIVIA: Kim, A.-R. &amp; Perrimon, N. (2026). LIVIA: a browser-based tool for assessing and visualizing predicted protein interactions. <i>bioRxiv</i>.')}
