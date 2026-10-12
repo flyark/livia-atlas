@@ -3045,6 +3045,12 @@
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-ddr-matrix.zip",
     "offsets": "data/screens/ddr-matrix/offsets.json"
+   },
+   "modelsAt": {
+    "label": "SBGrid Data Bank 1155",
+    "url": "https://doi.org/10.15785/SBGRID/1155",
+    "file": "predictomes_ddr_dataset.tar.gz (149 GB)",
+    "how": "rsync -av rsync://data.sbgrid.org/10.15785/SBGRID/1155 ."
    }
   },
   {
@@ -3063,6 +3069,12 @@
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-ddr-donson.zip",
     "offsets": "data/screens/ddr-donson/offsets.json"
+   },
+   "modelsAt": {
+    "label": "SBGrid Data Bank 1155",
+    "url": "https://doi.org/10.15785/SBGRID/1155",
+    "file": "hs_dons_vs_proteome.tar.gz (38 GB)",
+    "how": "rsync -av rsync://data.sbgrid.org/10.15785/SBGRID/1155 ."
    }
   },
   {
@@ -3081,6 +3093,12 @@
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-ddr-stk19.zip",
     "offsets": "data/screens/ddr-stk19/offsets.json"
+   },
+   "modelsAt": {
+    "label": "SBGrid Data Bank 1155",
+    "url": "https://doi.org/10.15785/SBGRID/1155",
+    "file": "hs_stk19_vs_proteome.tar.gz (28 GB)",
+    "how": "rsync -av rsync://data.sbgrid.org/10.15785/SBGRID/1155 ."
    }
   },
   {
@@ -3099,6 +3117,12 @@
    "zip": {
     "url": "https://www.flyrnai.org/livia-atlas/live/livia-atlas-ddr-usp37.zip",
     "offsets": "data/screens/ddr-usp37/offsets.json"
+   },
+   "modelsAt": {
+    "label": "SBGrid Data Bank 1155",
+    "url": "https://doi.org/10.15785/SBGRID/1155",
+    "file": "hs_usp37_vs_proteome.tar.gz (60 GB)",
+    "how": "rsync -av rsync://data.sbgrid.org/10.15785/SBGRID/1155 ."
    }
   },
   {
