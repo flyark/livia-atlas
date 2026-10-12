@@ -89,7 +89,7 @@ const avgView = (cuts, v, n, digits, what) => (n >= 5 ? { txt: v.toFixed(digits)
   : n >= 2 ? { txt: v.toFixed(digits), sty: 'color:#5F6771;font-style:italic', band: 'no band', tip: `${what} of ${n} models; the average cutoffs were set on five-model runs, so no band` }
   : { txt: '—', sty: 'color:#5F6771', band: '', tip: 'one model: no average' });
 const AUTO_N = 250;   // the network's auto partner count keeps the drawing near this many proteins
-const DATA = 'https://www.flyrnai.org/livia-atlas/', ARCHIVE = 'https://doi.org/10.5281/zenodo.22964479';   // the Atlas data files: versions/<name>/ frozen, live/ what the site reads
+const DATA = 'https://www.flyrnai.org/livia-atlas/', ARCHIVE = 'https://doi.org/10.5281/zenodo.22964479';   // the Atlas data files: the site reads each screen from its frozen versions/<name>/ folder, named in datasets.json
 const verUrl = (v) => `${DATA}index.html${v ? `#${v}` : '#live'}`;   // the data files' own page: every version with its files, sizes and md5s, one anchor each
 // "Cite this view": the page, its link and the date, with the Atlas data record, copied for a methods section or a legend
 const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" data-cite="${esc(title)}" data-ds="${esc(ds.join(','))}" title="copy a citation of this page: its title, link and date, the Atlas data version it reads, and the screens its predictions come from">Cite</button>`;
@@ -98,7 +98,7 @@ const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" dat
 // licenses (CC BY) require.
 const REC_VERSION = { 22964480: '1.0', 22967610: '1.1', 22968056: '1.2', 22984781: '0.1.3', 23063255: '0.1.4', 23104149: '0.1.5' };   // the Atlas record's versions on Zenodo
 const verOf = (d) => { const u = (d && d.zip && d.zip.url) || '', m = /\/versions\/([^/]+)\//.exec(u); if (m) return m[1]; const r = recOf(d); return r && REC_VERSION[r] ? `v${REC_VERSION[r]}` : ''; };   // the data version a screen is read from
-const DATA_INDEX = `${DATA}index.html`;   // the data files' own page: every version, its files and md5s (the live data keep changing, so citations name no version)
+const DATA_INDEX = `${DATA}index.html`;   // the data files' own page: every version, its files and md5s
 const archiveOf = () => 'LIVIA Atlas data';   // no link while the data site is not public
 const archiveLine = () => 'LIVIA Atlas data';
 const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && ((d.zip.fallback || {}).url || d.zip.zenodo || d.zip.url)) || ''); return m ? m[1] : null; };   // a screen served from flyrnai.org keeps its Zenodo record in zip.zenodo
