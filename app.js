@@ -216,6 +216,10 @@ async function getFile(url, as) {
 }
 const getJSON = (url) => getFile(url, 'json'), getText = (url) => getFile(url, 'text');
 async function registry() { if (!REG) REG = await getJSON('datasets.json'); return REG; }
+// The bulkiest lookup files (BioGRID pairs, structure lists, homodimer rows, search shards) are published from a second Pages repo
+// on the same origin, flyark/livia-atlas-data (datasets.json store, kept in step by atlas/build/store_sync.py), at the same paths.
+const store = (p) => { const s = REG && REG.store; if (!s) return p; const root = new URL('./', location.href).href, u = new URL(p, location.href).href;
+  return u.startsWith(root) ? new URL(u.slice(root.length), new URL(s, root)).href : u; };
 const regDataset = async (id) => (await registry()).datasets.find((d) => d.id === id);
 const regSpecies = async (id) => ((await registry()).species || []).find((s) => s.id === id);
 const coreSpecies = (reg) => (reg.species || []).filter((s) => !s.group);   // the Atlas's own screens; grouped species (one AFDB screen each) are listed on #/species
@@ -383,7 +387,7 @@ async function parseReported(sp, t) {
 }
 function reported(sp) {   // every reported pair of the species: the network views
   if (!(sp.manifest.files || {}).biogridShards) return Promise.resolve(null);   // a species without BioGRID records (zebrafish, viruses) has no file to ask for
-  if (!sp.known) sp.known = (async () => { let t; try { t = await getText(sp.base + 'biogrid.tsv'); } catch (e) { return null; } return parseReported(sp, t); })();
+  if (!sp.known) sp.known = (async () => { let t; try { t = await getText(store(sp.base + 'biogrid.tsv')); } catch (e) { return null; } return parseReported(sp, t); })();
   return sp.known;
 }
 // What the release folded for one virus: every pair of its proteins, or how many of the possible pairs and homodimers (for some
@@ -396,7 +400,7 @@ function reportedOf(sp, i) {
   const S = (sp.manifest.files || {}).biogridShards; if (!S || i == null) return reported(sp);
   // always the protein's shard, even when the whole file is loaded: the shard carries each pair's publications
   sp.knownShard = sp.knownShard || new Map(); const k = i % S;
-  if (!sp.knownShard.has(k)) sp.knownShard.set(k, (async () => { let t; try { t = await getText(`${sp.base}biogrid/${k}.tsv`); } catch (e) { return reported(sp); } return parseReported(sp, t); })());
+  if (!sp.knownShard.has(k)) sp.knownShard.set(k, (async () => { let t; try { t = await getText(store(`${sp.base}biogrid/${k}.tsv`)); } catch (e) { return reported(sp); } return parseReported(sp, t); })());
   return sp.knownShard.get(k);
 }
 // Every pair folded in the species' screens (data/species/<sp>/tested.bin, built by tools/tested_index.py): whether a pair
@@ -620,7 +624,7 @@ const HET_URL = (tar) => `https://ftp.ebi.ac.uk/pub/databases/alphafold/collabor
 // Each row: a, b, entity, tar, cif_off, cif_len, pae_off, pae_len, then every lis.py score in VMCOL order (build/afdb_struct_scores.py).
 function hetShard(sp, k) {
   sp.hstr = sp.hstr || new Map();
-  if (!sp.hstr.has(k)) sp.hstr.set(k, getText(sp.base + `structs/${k}.tsv`).then((t) => t.trim().split('\n').slice(1).map((l) => l.split('\t'))).catch(() => []));
+  if (!sp.hstr.has(k)) sp.hstr.set(k, getText(store(sp.base + `structs/${k}.tsv`)).then((t) => t.trim().split('\n').slice(1).map((l) => l.split('\t'))).catch(() => []));
   return sp.hstr.get(k);
 }
 const hetPair = (r) => { const m = {}; VMCOL.forEach((k, n) => { if (r[8 + n] != null && r[8 + n] !== '') m[k] = +r[8 + n]; });
@@ -755,7 +759,7 @@ function homoRows(spId, part) {   // part: one shard's suffix (a protein page), 
   const H = REG && REG.homodimers, f = H && H.species && H.species[spId];
   if (!f) return Promise.resolve([]);
   const k = `${spId}|${f.slim ? part || 'all' : 'all'}`;
-  if (!HOMO.has(k)) HOMO.set(k, (f.slim ? fetch(`data/homodimers/${spId}/${part || 'all'}.tsv`).then((res) => { if (res.status === 404) return ''; if (!res.ok) throw new Error(`HTTP ${res.status}`); return res.text(); }).then(homoTSV)
+  if (!HOMO.has(k)) HOMO.set(k, (f.slim ? fetch(store(`data/homodimers/${spId}/${part || 'all'}.tsv`)).then((res) => { if (res.status === 404) return ''; if (!res.ok) throw new Error(`HTTP ${res.status}`); return res.text(); }).then(homoTSV)
     : fetch(H.base + f.file).then(async (res) => {
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const b = new Uint8Array(await res.arrayBuffer());   // gzip bytes, or text when something on the way already unpacked them
@@ -830,9 +834,9 @@ async function homoCard(sp, P, gone, B) {
 let HNP = null;   // the homodimer entries with no protein page, [species, accession, gene] (build/homodimer_index.py), read on a search that finds nothing
 const HNPK = new Map(), hnpKey = (s) => String(s).toLowerCase().slice(-2).padStart(2, '_').replace(/[^a-z0-9]/g, '_');   // as build/homodimer_index.py tkey: a term's last two characters
 const homoNoPage = (term) => { const H = REG && REG.homodimers, ks = H && H.nopageShards;
-  if (!ks) { if (!HNP) HNP = getJSON('data/homodimers/nopage.json').catch(() => { HNP = null; return []; }); return HNP; }   // older layout: one file
+  if (!ks) { if (!HNP) HNP = getJSON(store('data/homodimers/nopage.json')).catch(() => { HNP = null; return []; }); return HNP; }   // older layout: one file
   const k = hnpKey(term); if (!ks.split(' ').includes(k)) return Promise.resolve([]);
-  if (!HNPK.has(k)) HNPK.set(k, getJSON(`data/homodimers/nopage/${k}.json`).catch(() => { HNPK.delete(k); return []; })); return HNPK.get(k); };
+  if (!HNPK.has(k)) HNPK.set(k, getJSON(store(`data/homodimers/nopage/${k}.json`)).catch(() => { HNPK.delete(k); return []; })); return HNPK.get(k); };
 // The homodimer release's own page (#/datasets/homodimers): per species its entries, how many land on a protein page (the
 // join homoFor uses, counted by build/homodimer_index.py into the registry), its list and its file; what the columns are.
 async function viewHomoDataset() {
@@ -1290,12 +1294,12 @@ let SIDX = null; const SSH = new Map();
 const ACC_RE = /^(?:[OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9](?:[A-Z][A-Z0-9]{2}[0-9]){1,2})$/;   // a UniProt accession
 async function searchOthers(q, skip = SPL) {   // skip: species the caller searched by index already
   const Q = q.trim().toUpperCase(); if (!Q) return [];
-  let k;
+  await registry(); let k;
   if (Q.length < 3) k = 'short';   // names of one or two characters, one small file
-  else { if (!SIDX) SIDX = getJSON('data/search/index.json').then((j) => new Set(j.split)).catch(() => new Set());
+  else { if (!SIDX) SIDX = getJSON(store('data/search/index.json')).then((j) => new Set(j.split)).catch(() => new Set());
     const split = await SIDX; let L = 3; while (split.has(Q.slice(0, L)) && Q.length > L) L++;
     k = Q.slice(0, L).replace(/[^A-Z0-9_-]/g, '_'); }
-  if (!SSH.has(k)) SSH.set(k, getText(`data/search/${k}.tsv`).then((t) => t.trim().split('\n').map((l) => l.split('\t'))).catch(() => []));
+  if (!SSH.has(k)) SSH.set(k, getText(store(`data/search/${k}.tsv`)).then((t) => t.trim().split('\n').map((l) => l.split('\t'))).catch(() => []));
   const reg = await registry(), lab = new Map((reg.species || []).map((x) => [x.id, x])), best = new Map();   // a protein's best-scoring line: MDM4's gene line, not the name word "Mdm2-like" read first
   for (const [n, sid, key, gene, acc, pos10, partners, name, kind] of await SSH.get(k)) {
     if (!n || !n.startsWith(Q) || skip.has(sid)) continue;
