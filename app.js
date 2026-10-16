@@ -3229,22 +3229,23 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     g.setTransform(1, 0, 0, 1, 0, 0);                                           // rows in device pixels: integer edges, no seams
     const X = (x) => Math.round(x * dpr), rowsHd = Math.round(rowsH * dpr), rowTop = (row) => Math.round(row * rowsHd / n);
     const sx0 = X(34), sx1 = X(AXL - 8), rx0 = X(AXL), rx1 = X(W - AXR);
+    const hit = fpHit(), found = $('#fp-found'), mine = hit ? M.order.filter((i) => who(M.preds[i].partner).key === hit.id) : [];
+    const on = new Set(order), lit = mine.some((i) => on.has(i)), RED = '#E41A1C';   // a found partner with rows shown: the others in light gray (the author, 2026-10-16)
     for (let row = 0; row < n; row++) { const i = order[row]; if (i == null) continue; const y0 = rowTop(row), hh = Math.max(1, rowTop(row + 1) - y0);
       g.fillStyle = clusterColor(M.labels[i], k); g.fillRect(sx0, y0, sx1 - sx0, hh);
       g.fillStyle = '#F7FBFF'; g.fillRect(rx0, y0, rx1 - rx0, hh);
-      g.fillStyle = '#08306B'; for (const [s, e] of runs(M.fingerprints[i])) { const x0 = X(xOf(s)), x1 = Math.max(x0 + 1, X(xOf(e + 1))); g.fillRect(x0, y0, x1 - x0, hh); } }
-    const hit = fpHit(), found = $('#fp-found'), mine = hit ? M.order.filter((i) => who(M.preds[i].partner).key === hit.id) : [];
+      g.fillStyle = lit ? '#C9D1DB' : '#08306B'; for (const [s, e] of runs(M.fingerprints[i])) { const x0 = X(xOf(s)), x1 = Math.max(x0 + 1, X(xOf(e + 1))); g.fillRect(x0, y0, x1 - x0, hh); } }
     $('#fp-find').classList.toggle('nf', hit === false); found.hidden = !hit;
-    if (hit) {   // its rows: contacts in black on a white band edged in black (outside the cluster palettes), at least 3 px tall however many rows share the height, and a marker at the right
-      const on = new Set(order), cl = [...new Set(mine.map((i) => M.labels[i]))].sort((a, b) => a - b), mh = Math.round(3 * dpr), col = '#111';
+    if (hit) {   // its rows: contacts in red on a light red band, at least 3 px tall however many rows share the height, and a marker at the right
+      const cl = [...new Set(mine.map((i) => M.labels[i]))].sort((a, b) => a - b), mh = Math.round(3 * dpr);
       order.forEach((i, row) => { if (!mine.includes(i)) return; const yc = (rowTop(row) + rowTop(row + 1)) / 2, y0 = Math.round(yc - mh / 2);
-        g.fillStyle = '#fff'; g.fillRect(rx0, y0 - 1, rx1 - rx0, mh + 2); g.fillStyle = '#111'; g.fillRect(rx0, y0 - 1, rx1 - rx0, 1); g.fillRect(rx0, y0 + mh, rx1 - rx0, 1);
-        g.fillStyle = col; for (const [s, e] of runs(M.fingerprints[i])) { const x0 = X(xOf(s)), x1 = Math.max(x0 + 1, X(xOf(e + 1))); g.fillRect(x0, y0, x1 - x0, mh); }
+        g.fillStyle = '#FDE4E4'; g.fillRect(rx0, y0 - 1, rx1 - rx0, mh + 2);
+        g.fillStyle = RED; for (const [s, e] of runs(M.fingerprints[i])) { const x0 = X(xOf(s)), x1 = Math.max(x0 + 1, X(xOf(e + 1))); g.fillRect(x0, y0, x1 - x0, mh); }
         g.beginPath(); g.moveTo(rx1 + X(2), yc); g.lineTo(rx1 + X(11), yc - X(5)); g.lineTo(rx1 + X(11), yc + X(5)); g.closePath(); g.fill(); });
       const shownN = mine.filter((i) => on.has(i)).length;
       found.innerHTML = !mine.length ? `<b>${esc(gname(hit.id))}</b> has no model past the ${cut}% FPR cutoff.`
-        : `<b style="color:${col}">${esc(gname(hit.id))}</b>: ${mine.length} model${mine.length === 1 ? '' : 's'}, in ${cl.map((c) => `<span style="color:${clusterColor(c, k)}">●</span> ${clusterLabel(c)}`).join(', ')}`
-          + (shownN < mine.length ? ` · ${mine.length - shownN} hidden by the cluster choice above` : '') + ' · marked in black';
+        : `<b style="color:${RED}">${esc(gname(hit.id))}</b>: ${mine.length} model${mine.length === 1 ? '' : 's'}, in ${cl.map((c) => `<span style="color:${clusterColor(c, k)}">●</span> ${clusterLabel(c)}`).join(', ')}`
+          + (shownN < mine.length ? ` · ${mine.length - shownN} hidden by the cluster choice above` : '') + (shownN ? ' · marked in red, the other models in gray' : '');
     }
     const Z = M.Z || [];
     if (all && Z.length === n - 1 && n >= 2) {                                  // row dendrogram: leaves at the strip, root at the left; x ∝ merge distance
