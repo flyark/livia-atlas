@@ -1535,8 +1535,10 @@ async function ifaceView(host, { sp, P, O, pred, B, canvasId }) {
   host.innerHTML = `${none ? `<p class="note">This model has no residue pair with PAE ≤ 12 Å between the two proteins, so it has no interaction residues.</p>` : ''}
     <div class="ifmap"><canvas id="${canvasId}" role="img" aria-label="Interaction and contact residues of this prediction on both proteins, with their domains"></canvas></div><div class="domlegend iface-doms" hidden></div><div class="seqpanels"><div class="seqp"></div><div class="seqp"></div></div>`;
   const cv = $('canvas', host);
-  const T = [{ gene: P.gene, name: q.name, label: q.label, len: q.len, span: q.span, own: q.own, lir: qL, clir: qC, lirSet: new Set(qL), clirSet: new Set(qC), col: PAIR_COL.q, doms: [] },
-    { gene: O.gene, name: o.name, label: o.label, len: o.len, span: o.span, own: o.own, lir: pL, clir: pC, lirSet: new Set(pL), clirSet: new Set(pC), col: PAIR_COL.p, doms: [] }];
+  const T = [{ gene: P.gene, name: q.name, label: q.label, len: q.len, span: q.span, own: q.own, lir: qL, clir: qC, lirSet: new Set(qL), clirSet: new Set(qC), col: (host._cols || PAIR_COL).q, doms: [] },
+    { gene: O.gene, name: o.name, label: o.label, len: o.len, span: o.span, own: o.own, lir: pL, clir: pC, lirSet: new Set(pL), clirSet: new Set(pC), col: (host._cols || PAIR_COL).p, doms: [] }];
+  let paint = null;   // the sequence panels, once their sequences are read
+  host._recolor = () => { const c = host._cols || PAIR_COL; T[0].col = c.q; T[1].col = c.p; host._redraw(); if (paint) paint(); };   // the pair page's Palette changed (its 3D card)
   host._redraw = () => drawIfaceTracks(cv, T);
   host._redraw();
   attachExport(canvasId, `atlas_${P.gene}_vs_${O.gene}_residues`, host._redraw);
@@ -1547,9 +1549,8 @@ async function ifaceView(host, { sp, P, O, pred, B, canvasId }) {
   T[0].seq = qs; T[1].seq = os;
   if (host._onIface) host._onIface(T, pred);   // the 3D card of the pair page: the same residues on each protein's own model
   const panels = host.querySelectorAll('.seqp');
-  panels[0].innerHTML = seqPanel(q.label, qs, qL, qC, PAIR_COL.q, T[0].len, q.span);
-  panels[1].innerHTML = seqPanel(o.label, os, pL, pC, PAIR_COL.p, T[1].len, o.span);
-  fitSeqs(panels[0]); fitSeqs(panels[1]);
+  paint = () => { const c = host._cols || PAIR_COL; panels[0].innerHTML = seqPanel(q.label, qs, qL, qC, c.q, T[0].len, q.span); panels[1].innerHTML = seqPanel(o.label, os, pL, pC, c.p, T[1].len, o.span); fitSeqs(panels[0]); fitSeqs(panels[1]); };
+  paint();
   // Domain coordinates fit only the UniProt sequence: a full-length human construct; for fly, a FlyBase reference that is
   // UniProt's sequence (checked against the AlphaFold DB entry). The construct's sequence goes along for the table's checksum.
   // Another isoform or a fragment (fly HGTX: 587 aa folded, UniProt shorter): placed through an alignment, as on the Frequency card.
@@ -4314,7 +4315,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
       <div class="mono-dl" id="mono-dl"><span class="muted">Download</span>${[['q', P], ['p', O]].map(([k, R]) => `<span class="mono-dl-p"><b style="color:var(--${k === 'q' ? 'query' : 'partner'}-t)">${esc(R.gene)}</b><button type="button" class="more" data-dl="${k}" disabled>model (.cif)</button><button type="button" class="more" data-dl="${k}-cxc" disabled title="a ChimeraX script that opens this AlphaFold DB model and colors it as shown here">ChimeraX script (.cxc)</button></span>`).join('')}</div></div>
     <div class="card"><div class="card-head"><h2>Interaction residues</h2><select id="model-pick" aria-label="Model" style="font:13px var(--sans);padding:5px 8px;border:1px solid var(--line);border-radius:7px">${rowsP.map((p, i) =>
         `<option value="${i}">${esc(lab(p))}${consSet.has(p) && !consOnly ? ' (construct)' : ''} · rank ${tRank(p)}${Number.isFinite(p.model) ? ` · model ${p.model}` : ''} · iLIS ${fmtNum(p.iLIS, 3)}</option>`).join('')}</select></div>
-      <div class="legend" style="margin:2px 0 12px"><span><i style="background:#E0E0E0"></i>not an interaction residue</span><span><i style="background:#80CBC4"></i><i style="background:#FFAB91;margin-left:-2px"></i>interaction residue (LIR: PAE ≤ 12 Å)${tipQ('LIR needs only PAE ≤ 12 Å to the partner, not contact, so in a confident complex most of a chain can qualify.')}</span><span><i style="background:#00897B"></i><i style="background:#E64A19;margin-left:-2px"></i>contact (cLIR: also Cβ ≤ 8 Å)</span></div>
+      <div class="legend" id="iface-key" style="margin:2px 0 12px"></div>
       <div id="iface"></div></div>`;
   const more = $('#models-more'), setOpen = (on) => { app.querySelectorAll('.models tbody tr.below').forEach((x) => { x.hidden = !on; }); more.setAttribute('aria-expanded', String(on));
     more.textContent = on ? `Hide the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the cutoff` : `Show the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the ${CUTP}% FPR cutoff (iLIS ${CUT[CUTP]})`; };
@@ -4340,10 +4341,14 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     ['#cfd8dc', '#546e7a', '#f8bbd0', '#c2185b', 'Slate / Rose'], ['#c5cae9', '#303f9f', '#ffe0b2', '#e65100', 'Indigo / Tangerine'], ['#a8d5ba', '#2e7d32', '#ef9a9a', '#c62828', 'Green / Red'],
     ['#4DD0E1', '#1A237E', '#FFAB91', '#B71C1C', 'Cyan / Navy / Peach / Crimson'], ['#81D4FA', '#283593', '#EF9A9A', '#C62828', 'Sky / Indigo / Salmon / Red'], ['#AED581', '#1B5E20', '#FFD54F', '#B71C1C', 'Lime / Forest / Gold / Maroon'],
     ['#80CBC4', '#004D40', '#FFCC80', '#BF360C', 'Mint / DarkTeal / Apricot / Burnt'], ['#CE93D8', '#4A148C', '#FFF176', '#E65100', 'Orchid / Purple / Yellow / Fire'], ['#BBDEFB', '#0D47A1', '#A5D6A7', '#F4511E', 'Blue / Navy / Sage / Ember']];
-  const MONO = { mode: 'lir', T: null, pal: 0, solid: false, more: false, gap: 10, seg: 3, complete: true, gray: true }, CIFS = new Map();   // CIFS: cifUrl → its text, so a pair with itself reads its model once
+  const MONO = { mode: 'lir', T: null, pal: 0, shade: 'grad', more: false, gap: 10, seg: 3, complete: true, gray: true }, CIFS = new Map();   // CIFS: cifUrl → its text, so a pair with itself reads its model once
   const MS = Object.fromEntries([['q', P], ['p', O]].map(([k, R]) => [k, { k, i: k === 'q' ? 0 : 1, R, frame: `mono-${k}`, entry: null, plddt: null, doms: null, map: null, mapOK: false, placed: '', shown: false, ready: false }]));
   const G0 = '#E0E0E0', MONO_THICK = 1.8;   // the gray cartoon; the interaction residues' cartoon, this many times as thick
-  const palCols = (s) => { const p = PALS[MONO.pal], c = s.i ? [p[2], p[3]] : [p[0], p[1]]; return MONO.solid ? [c[1], c[1]] : c; };   // [LIR, cLIR]; Solid: the cLIR color for both, as LIVIA
+  const tint = (h, t) => '#' + [1, 3, 5].map((j) => Math.round(255 - (255 - parseInt(h.slice(j, j + 2), 16)) * t).toString(16).padStart(2, '0')).join('');   // toward white: t of the color's depth kept
+  const SHADES = [['grad', 'Gradient', 'LIR light, cLIR dark'], ['solid', 'Solid', 'one color per protein'], ['faint', 'Pale LIR', 'interaction residues faded close to white, contact residues (cLIR) in color'], ['clir', 'Contacts only', 'interaction residues white, only the contact residues (cLIR) in color']];
+  const palCols = (s) => { const p = PALS[MONO.pal], c = s.i ? [p[2], p[3]] : [p[0], p[1]];   // [LIR, cLIR] by the Palette shade; Solid as LIVIA (the cLIR color for both)
+    return MONO.shade === 'solid' ? [c[1], c[1]] : MONO.shade === 'faint' ? [tint(c[1], 0.2), c[1]] : MONO.shade === 'clir' ? ['#FFFFFF', c[1]] : c; };
+  const sw = (c) => `<i style="background:${c}${c === '#FFFFFF' ? ';box-shadow:inset 0 0 0 1px #C9D2DC' : ''}"></i>`;   // a key swatch; white one outlined
   const monoId = (s) => s.entry && (/AF-[A-Z0-9]+(?:-F\d+)?/.exec(s.entry.cifUrl) || [])[0];   // AF-P35222-F1, or the newer AF-0000000365833896
   const monoMsg = (s, t) => { const m = $(`#${s.frame}-msg`); if (m) { m.hidden = !t; m.innerHTML = t || ''; } };
   const onModel = (s, r) => { const sr = s.map ? s.map[r - 1] : r; return sr >= 1 && sr <= s.entry.seq.length ? sr : 0; };
@@ -4398,22 +4403,27 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     const box = $('#mono-key'); if (!box) return;
     if (MONO.mode === 'plddt') box.innerHTML = [['#0053D6', 'very high (&gt; 90)'], ['#65CBF3', 'confident (70–90)'], ['#FFDB13', 'low (50–70)'], ['#FF7D45', 'very low (&lt; 50)']].map(([c, l]) => `<span><i style="background:${c}"></i>${l}</span>`).join('') + '<span class="muted">pLDDT of each AlphaFold DB model</span>';
     else if (MONO.mode === 'dom') box.innerHTML = [MS.q, MS.p].filter((s, j) => !j || s.R.key !== P.key).map((s) => `<div class="mono-dk"><b style="color:var(--${s.i ? 'partner' : 'query'}-t)">${esc(s.R.gene)}</b>${!s.doms ? '<span class="muted">domains not read yet</span>' : s.doms.length ? s.doms.map((d) => `<span><i style="background:${d.col}"></i>D${d.idx} ${esc(d.name)} <span class="muted">(${d.start}–${d.end})</span></span>`).join('') : '<span class="muted">no domain annotated</span>'}</div>`).join('');
-    else { const [lq, cq] = palCols(MS.q), [lp, cp] = palCols(MS.p);
-      box.innerHTML = `${MONO.complete && MONO.gray ? `<span><i style="background:${G0}"></i>not an interaction residue</span>` : ''}<span><i style="background:${lq}"></i><i style="background:${lp};margin-left:-2px"></i>interaction residue (LIR: PAE ≤ 12 Å)</span><span><i style="background:${cq}"></i><i style="background:${cp};margin-left:-2px"></i>contact (cLIR: also Cβ ≤ 8 Å)</span><span class="muted">of the model selected in Ranked models, drawn thicker${MONO.gap ? `; gaps of up to ${MONO.gap} residues bridged` : ''}</span>`; }
+    else { const [lq, cq] = palCols(MS.q), [lp, cp] = palCols(MS.p), only = ['faint', 'clir'].includes(MONO.shade);
+      box.innerHTML = `${MONO.complete && MONO.gray ? `<span>${sw(G0)}not an interaction residue</span>` : ''}<span>${sw(lq)}${sw(lp).replace('<i style="', '<i style="margin-left:-2px;')}interaction residue (LIR: PAE ≤ 12 Å)</span><span>${sw(cq)}${sw(cp).replace('<i style="', '<i style="margin-left:-2px;')}contact (cLIR: also Cβ ≤ 8 Å)</span><span class="muted">of the model selected in Ranked models, ${only ? 'the contacts' : 'both'} drawn thicker${MONO.gap ? `; gaps of up to ${MONO.gap} residues bridged` : ''}</span>`; }
+  }
+  function ifaceSync() {   // the Interaction residues card in the 3D card's palette and shade (the author, 2026-10-16): its key, tracks and sequences
+    const [lq, cq] = palCols(MS.q), [lp, cp] = palCols(MS.p), f = $('#iface'), k = $('#iface-key');
+    if (f) { f._cols = { q: { base: G0, lir: lq, clir: cq }, p: { base: G0, lir: lp, clir: cp } }; if (f._recolor) f._recolor(); }
+    if (k) k.innerHTML = `<span>${sw(G0)}not an interaction residue</span><span>${sw(lq)}${sw(lp).replace('<i style="', '<i style="margin-left:-2px;')}interaction residue (LIR: PAE ≤ 12 Å)${tipQ('LIR needs only PAE ≤ 12 Å to the partner, not contact, so in a confident complex most of a chain can qualify.')}</span><span>${sw(cq)}${sw(cp).replace('<i style="', '<i style="margin-left:-2px;')}contact (cLIR: also Cβ ≤ 8 Å)</span>`;
   }
   function monoBar() {   // LIVIA's 3D bar: Color by; that choice's options; LIR display
     const bar = $('#mono-bar'); if (!bar) return;
-    const chip = (p, j) => `<button type="button" class="chip${MONO.pal === j ? ' on' : ''}" data-pal="${j}" title="${p[4]}"><span class="strip">${(MONO.solid ? [p[1], p[3]] : [p[0], p[1], p[3], p[2]]).map((c) => `<i style="background:${c}"></i>`).join('')}</span>${p[4]}</button>`;
+    const chip = (p, j) => `<button type="button" class="chip${MONO.pal === j ? ' on' : ''}" data-pal="${j}" title="${p[4]}"><span class="strip">${(MONO.shade === 'solid' ? [p[1], p[3]] : MONO.shade === 'faint' ? [tint(p[1], 0.2), p[1], p[3], tint(p[3], 0.2)] : MONO.shade === 'clir' ? ['#FFFFFF', p[1], p[3], '#FFFFFF'] : [p[0], p[1], p[3], p[2]]).map(sw).join('')}</span>${p[4]}</button>`;
     let h = `<div class="row"><span class="lab">Color by</span><div class="seg">${[['lir', 'Interaction residues', 'the interaction and contact residues of the model selected in Ranked models'], ['plddt', 'pLDDT', 'the AlphaFold confidence of each model'], ['dom', 'Domains', "each protein's domains (Pfam, else UniProt), D1, D2 … from its start"]].map(([m, l, t]) => `<button type="button" data-m="${m}" class="${MONO.mode === m ? 'on' : ''}" title="${t}">${l}</button>`).join('')}</div></div>`;
-    if (MONO.mode === 'lir') h += `<div class="row"><span class="lab">Palette</span><div class="seg">${[[false, 'Gradient', 'LIR light, cLIR dark'], [true, 'Solid', 'one color per protein']].map(([v, l, t]) => `<button type="button" data-solid="${v ? 1 : 0}" class="${MONO.solid === v ? 'on' : ''}" title="${t}">${l}</button>`).join('')}</div>${PALS.slice(0, MONO.more ? PALS.length : 6).map(chip).join('')}<button type="button" class="more" data-more="1">${MONO.more ? 'fewer ↑' : 'more ↓'}</button></div>`
+    if (MONO.mode === 'lir') h += `<div class="row"><span class="lab">Palette</span><div class="seg">${SHADES.map(([v, l, t]) => `<button type="button" data-shade="${v}" class="${MONO.shade === v ? 'on' : ''}" title="${t}">${l}</button>`).join('')}</div>${PALS.slice(0, MONO.more ? PALS.length : 6).map(chip).join('')}<button type="button" class="more" data-more="1">${MONO.more ? 'fewer ↑' : 'more ↓'}</button></div>`
       + `<div class="row"><span class="lab">LIR display</span><label title="bridge breaks of up to this many residues, for a continuous cartoon">Fill gaps ≤ <input type="number" id="mono-gap" min="0" max="200" value="${MONO.gap}" aria-label="Fill gaps up to"></label><span class="pipe">|</span><label title="drop interaction segments shorter than this">Min segment ≥ <input type="number" id="mono-seg" min="1" max="50" value="${MONO.seg}" aria-label="Minimum segment"></label><button type="button" class="btn mono-apply" id="mono-apply">Apply</button><span class="pipe">|</span>`
       + `<label title="display every residue instead of the interaction residues only"><input type="checkbox" id="mono-complete"${MONO.complete ? ' checked' : ''}> Complete structure</label><label title="color the other residues gray, not in the interaction color"><input type="checkbox" id="mono-gray"${MONO.gray ? ' checked' : ''}${MONO.complete ? '' : ' disabled'}> Gray non-LIR</label></div>`;
     else if (MONO.mode === 'dom') h += '<div class="row"><span class="lab">Domains from</span><span class="muted">Pfam (via InterPro), else UniProt; D1, D2 … from each protein\'s start</span></div>';
     else h += '<div class="row"><span class="lab">Scale</span><span class="muted">AlphaFold confidence per residue, as in the key below</span></div>';
     bar.innerHTML = h;
-    const all = () => { monoRecolor(MS.q); monoRecolor(MS.p); monoKey(); };
+    const all = () => { monoRecolor(MS.q); monoRecolor(MS.p); monoKey(); ifaceSync(); };
     bar.querySelectorAll('[data-m]').forEach((b) => b.onclick = () => { MONO.mode = b.dataset.m; monoBar(); all(); });
-    bar.querySelectorAll('[data-solid]').forEach((b) => b.onclick = () => { MONO.solid = b.dataset.solid === '1'; monoBar(); all(); });
+    bar.querySelectorAll('[data-shade]').forEach((b) => b.onclick = () => { MONO.shade = b.dataset.shade; monoBar(); all(); });
     bar.querySelectorAll('[data-pal]').forEach((b) => b.onclick = () => { MONO.pal = +b.dataset.pal; monoBar(); all(); });
     bar.querySelectorAll('[data-more]').forEach((b) => b.onclick = () => { MONO.more = !MONO.more; monoBar(); });
     const ap = $('#mono-apply', bar);
@@ -4441,7 +4451,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   }
   function monoSend(s) {   // LIVIA's color message (applyColorsToMolstarFrame), the interaction residues' cartoon thicker: a short stretch on a thin loop shows without atoms (the author, 2026-10-16)
     const f = document.getElementById(s.frame); if (!f || !f.contentWindow) return;
-    const mvs = buildMvsJson(monoComps(s), 'mmcif'), hot = new Set(MONO.mode === 'lir' && !(MONO.complete && !MONO.gray) ? palCols(s) : []);
+    const mvs = buildMvsJson(monoComps(s), 'mmcif'), hot = new Set(MONO.mode === 'lir' && !(MONO.complete && !MONO.gray) ? (['faint', 'clir'].includes(MONO.shade) ? palCols(s).slice(1) : palCols(s)) : []);
     const walk = (n) => { if (!n || typeof n !== 'object') return;
       if (n.kind === 'representation' && n.params && n.params.type === 'cartoon' && (n.children || []).some((c) => c.kind === 'color' && hot.has(c.params.color))) n.params.size_factor = MONO_THICK;
       (n.children || []).forEach(walk); };
@@ -4486,7 +4496,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     const [k, kind] = b.dataset.dl.split('-'), s = MS[k]; if (!s.entry) return;
     if (kind === 'cxc') save(monoCxc(s), `atlas_${s.R.gene}_in_${(s.i ? P : O).gene}_3d.cxc`.replace(/[^\w.-]+/g, '_'), 'text/plain');
     else save(await CIFS.get(s.entry.cifUrl), `${monoId(s) || s.R.acc}.cif`, 'chemical/x-mmcif'); });
-  monoBar(); monoHead(MS.q); monoHead(MS.p); monoKey();
+  monoBar(); monoHead(MS.q); monoHead(MS.p); monoKey(); ifaceSync();
   pick(rowsP.indexOf(best));
   pairRefs(sp, P, O, () => stale(gen)).catch(() => {}).then(() => { if (!stale(gen)) { pairSources(sp, P, O, part, consOnly); mountSections(); } });   // Prediction sources under the BioGRID card, or where it would sit
   { const hasFp = !!fpBest(B, part), none = () => { if (!hasFp && part.bm && !$('#pair-struct').childElementCount) { const ma = modelsAt(sp.dsIds[part.bm.di]); $('#pair-struct').innerHTML = ma ? `<a class="btn" href="${esc(ma.url)}" target="_blank" rel="noopener" title="${esc(modelsAtTip(ma))}">Models at SBGrid ↗</a> <span class="muted">rsync only</span>` : `<span class="muted no3d" title="${esc(why3d(B, part.bm.run))}">no structure in LIVIA</span>`; } };   // the best FlyPredictome run that opens, else the AFDB model, else why neither
