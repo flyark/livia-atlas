@@ -1236,6 +1236,10 @@ const ORTHS = new Map();   // data/orth/<species>/<2 chars>.json: a protein's hi
 function orthShard(spId, key, isPrefix = false) { const pre = isPrefix ? key : key.slice(-2).toLowerCase(), ck = spId + '/' + pre;
   if (!ORTHS.has(ck)) ORTHS.set(ck, getJSON(`data/orth/${spId}/${pre}.json`).catch(() => ({})));
   return ORTHS.get(ck); }
+const ownScreens = (reg) => (reg.datasets || []).some((d) => !/^afdb-het-|^viral-dimers-afdb$|^mitomatch-|^arabidopsis-/.test(d));   // a proteome-wide or targeted screen of its own, beyond the AFDB heterodimers, the mitochondrial MitoMatch screens and the small Arabidopsis sets
+let PARAM = null; const PARAS = new Map();   // data/para: the manifest, and a protein's paralogs by the key's last two characters
+const paraMan = () => { if (!PARAM) PARAM = getJSON('data/para/manifest.json').catch(() => null); return PARAM; };
+const paraShard = (spId, key) => { const ck = `${spId}/${key.slice(-2).toLowerCase()}`; if (!PARAS.has(ck)) PARAS.set(ck, getJSON(`data/para/${ck}.json`).catch(() => ({}))); return PARAS.get(ck); };
 const USEQ = new Map();   // accession → Promise<sequence> from UniProt, for a construct whose sequence the bundle does not carry
 const uniprotSeq = (acc) => { if (!acc) return Promise.resolve('');
   if (!USEQ.has(acc)) USEQ.set(acc, fetch(`https://rest.uniprot.org/uniprotkb/${encodeURIComponent(acc)}.fasta`).then((r) => (r.ok ? r.text() : '')).then((t) => t.split('\n').slice(1).join('').trim()).catch(() => { USEQ.delete(acc); return ''; }));
@@ -2781,7 +2785,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const order = man.species || [], ord = (o) => { if (o.reg2.seqOnly) { const z = order.indexOf('zebrafish'); return (z < 0 ? 98 : z - 0.5) + (o.sp2 === 'xenopus-laevis' ? 0.1 : 0); } const i = order.indexOf(o.sp2); return i < 0 ? 99 : i; };   // Xenopus among the vertebrates, before zebrafish
     return out.sort((a, b) => ord(a) - ord(b));   // the Alliance's species order (mammals, zebrafish, fly, worm, yeast), read from its file by the build, then PANTHER's other species
   }
-  const orthOwn = (o) => (o.reg2.datasets || []).some((d) => !/^afdb-het-|^viral-dimers-afdb$|^mitomatch-|^arabidopsis-/.test(d));   // a proteome-wide or targeted screen of its own, beyond the AFDB heterodimers, the mitochondrial MitoMatch screens and the small Arabidopsis sets
+  const orthOwn = (o) => ownScreens(o.reg2);
   const orthOpened = () => (ORTH.list || []).map((o) => ORTH.open.get(o.sp2)).filter(Boolean);   // loaded orthologs in the list's order, whatever order they loaded in
   async function orthNames() {   // the species with tables, named as on the species pages (one-word labels in lower case)
     const ids = [...(await orthSpecies())], ls = ids.map((id) => { const r = (REG.species || []).find((x) => x.id === id), l = r ? r.label : id; return /^[A-Z][a-z]+$/.test(l) ? l.toLowerCase() : l; });
@@ -4023,7 +4027,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   async function paraInit() {
     const sub = $('#para-sub'), host = $('#para-body'), low = $('#para-low'); if (!host) return;
     if (!PARA) { let man = null, sh = null, E = null;
-      try { [man, sh] = await Promise.all([getJSON('data/para/manifest.json'), getJSON(`data/para/${sp.id}/${P.key.slice(-2).toLowerCase()}.json`).catch(() => ({}))]); } catch (e) { man = null; }
+      try { [man, sh] = await Promise.all([paraMan(), paraShard(sp.id, P.key)]); } catch (e) { man = null; }
       if (gone()) return;
       if (!man || !(man.species || []).includes(sp.id)) { const ls = ((man && man.species) || []).map((id) => { const r = (REG.species || []).find((x) => x.id === id), l = r ? r.label : id; return /^[A-Z][a-z]+$/.test(l) ? l.toLowerCase() : l; });
         sub.textContent = `No paralog table for ${sp.reg.label}: the Alliance of Genome Resources and PANTHER's reference genomes cover ${ls.length > 1 ? `${ls.slice(0, -1).join(', ')} and ${ls[ls.length - 1]}` : ls.join('')}.`; low.closest('label').hidden = true; $('#c-para .orth-show').hidden = true; return; }
@@ -4238,6 +4242,110 @@ async function pairRefs(sp, P, O, gone) {
   for (const td of app.querySelectorAll('#c-refs td.t.muted')) td.textContent = '';
 }
 const kbTip0 = (K, ph, ge) => `reported in BioGRID ${K.release}: ${[ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ')}`;
+// The pair's orthologs and paralogs (the author, 2026-10-18): whether the same pair is predicted between the two proteins' orthologs in
+// the Atlas's other species, and which members of the two paralog families are predicted to pair. Three states throughout: past
+// 10% FPR (best iLIS over every screen and model); folded below it (the species' index of tested pairs); never folded in these
+// screens, not a negative. A species without that index tells only past 10% FPR from not.
+function pairHomologs(sp, P, O, gen, own) {
+  const once = (id, f) => { const el = $(id); if (!el) return; const io = new IntersectionObserver((es) => { if (es.some((e) => e.isIntersecting)) { io.disconnect(); f(); } }, { rootMargin: '300px' }); io.observe(el); };
+  once('#c-xorth', () => pairOrth(sp, P, O, gen, own));
+  once('#c-xpara', () => pairPara(sp, P, O, gen));
+}
+const xCell = (E, TP, a, b) => { if (a.i === b.i) return { st: 'self' };
+  const e = (E.adj.get(a.i) || new Map()).get(b.i); if (e && e.best >= CUT[10]) return { st: 'pred', v: e.best };
+  if (!TP) return { st: 'none' }; if (!TP.has(a.i, b.i)) return { st: 'never' };
+  return { st: 'below', v: TP.score ? Math.min(TP.score(a.i, b.i), CUT[10] - 0.001) : NaN, exact: false }; };   // below the cutoff whatever the index's 1-byte rounding, as in the network's matrix
+const xSay = (c) => (c.st === 'pred' ? `best iLIS ${c.v.toFixed(3)}, ${bandLabel[bandOf(c.v)]}` : c.st === 'below' ? `folded, below 10% FPR${Number.isFinite(c.v) ? ` (best iLIS ≈${c.v.toFixed(2)})` : ''}`
+  : c.st === 'never' ? 'never folded in these screens: not tested, not a negative' : c.st === 'none' ? 'not past 10% FPR (this species has no index of tested pairs, so folded and never folded look alike)' : c.st === 'self' ? 'the same protein' : '');
+const xHeat = (v) => { const t = Math.max(0, Math.min(1, (v - CUT[10]) / (0.85 - CUT[10]))); return `background:${d3.interpolateBlues(0.35 + 0.65 * t)};color:${t > 0.3 ? '#fff' : 'var(--ink)'}`; };   // the network matrix's Blues above the 10% FPR cut (HEATCS0), so a pair has one color on both
+async function xBest(spY, As, Bs) {   // the best of every pair between the two lists (rows of spY's index): past 10% FPR, else folded, else never folded
+  const combos = []; for (const a of As) for (const b of Bs) if (a.i !== b.i) combos.push([a, b]);
+  if (!combos.length) return { st: 'self', n: 0, a: As[0], b: Bs[0] };
+  const E = await edges(spY, ''), rank = { pred: 3, below: 2, never: 1, none: 1 }; let top = null;
+  const TP = combos.some(([a, b]) => xCell(E, null, a, b).st === 'pred') ? null : await tested(spY);   // the index of tested pairs only when nothing is past the cutoff
+  for (const [a, b] of combos) { const c = xCell(E, TP, a, b), r = rank[c.st] || 0, t = top ? rank[top.st] : -1;
+    if (r > t || (r === t && (c.v || 0) > (top.v || 0))) top = { ...c, a, b }; }
+  if (top.st === 'none') {   // no index of tested pairs (Mus musculus, rat, PANTHER's species): the orthologs' own predictions say folded (with its exact iLIS) or never folded
+    let all = true; const seen = new Map();
+    for (const a of [...new Set(combos.map(([x]) => x))]) { let B2 = null; try { B2 = await merged(spY, a); } catch (e) { all = false; continue; }
+      for (const [x, b] of combos) { if (x !== a) continue; const p = (B2.partners || []).find((y) => y.id === b.key && !y.rep); if (p && Number.isFinite(p.best) && (!seen.has('v') || p.best > seen.get('v').v)) seen.set('v', { st: p.best >= CUT[10] ? 'pred' : 'below', v: p.best, exact: true, a, b }); } }
+    if (seen.has('v')) top = seen.get('v'); else if (all) top = { ...top, st: 'never' }; }
+  else if (top.st === 'below' && top.exact === false) { try { const B2 = await merged(spY, top.a), p = (B2.partners || []).find((y) => y.id === top.b.key && !y.rep); if (p && Number.isFinite(p.best)) top = { ...top, v: Math.min(p.best, CUT[10] - 0.001), exact: true }; } catch (e) { /* the index's rounded score stays */ } }   // the exact iLIS from the ortholog's own predictions
+  return { ...top, n: combos.length };
+}
+async function pairOrth(sp, P, O, gen, own) {
+  const sub = $('#xorth-sub'), body = $('#xorth-body'); if (!sub) return;
+  const man = await orthMan(); if (stale(gen)) return;
+  const AL = new Set(man.alliance || man.species || []);
+  if (!(man.species || []).includes(sp.id)) { sub.textContent = `No ortholog table for ${sp.reg.label}: it is in neither the Alliance of Genome Resources nor PANTHER's reference genomes.`; return; }
+  const [sa, sb] = await Promise.all([orthShard(sp.id, P.key), orthShard(sp.id, O.key)]); if (stale(gen)) return;
+  const hits = (sh, R, y) => (((sh || {})[R.key] || {})[y] || []).map((x) => ({ k: x[0], sym: (AL.has(sp.id) && AL.has(y) ? x[5] : x[4]) || x[0] }));   // Alliance rows: [key2, methods, of, best, best_rev, symbol]; PANTHER's: [key2, least diverged, ancestor, family, symbol]
+  const rows = (man.species || []).filter((y) => y !== sp.id).map((y) => ({ y, reg: (REG.species || []).find((s) => s.id === y), a: hits(sa, P, y), b: hits(sb, O, y), s: null })).filter((r) => r.reg);
+  const both = rows.filter((r) => r.a.length && r.b.length);
+  const names = (L) => `${L.slice(0, 2).map((h) => esc(h.sym)).join(', ')}${L.length > 2 ? ` <span class="muted">+${L.length - 2}</span>` : ''}`;
+  const who = (r, R, L) => (r.s && r.s[R] ? `<a href="#/${r.y}/${esc(r.s[R].key)}">${esc(r.s[R].gene)}</a>${L.length > 1 ? ` <span class="muted" title="${esc(L.map((h) => h.sym).join(', '))}">+${L.length - 1}</span>` : ''}` : L.length ? names(L) : '<span class="muted">none in the Atlas</span>');
+  const render = () => {
+    const done = both.filter((r) => r.s && r.s.st && !r.s.busy), n = (st) => done.filter((r) => r.s.st === st).length, left = both.length - done.length;
+    sub.innerHTML = `The same pair between the two proteins' orthologs in the Atlas's other species, at the same cutoff (best iLIS over every screen and model). Orthologs from the <a href="https://www.alliancegenome.org" target="_blank" rel="noopener">Alliance of Genome Resources</a> (stringent set), <a href="https://www.pantherdb.org" target="_blank" rel="noopener">PANTHER</a> where the Alliance has none.`;
+    if (!both.length) { body.innerHTML = `<p class="muted" style="margin:6px 0 0">No species where both ${esc(P.gene)} and ${esc(O.gene)} have an ortholog among the Atlas proteins.</p>`; return; }
+    const sum = done.length ? `Also predicted between the orthologs in <b>${n('pred')}</b> of ${done.length} species checked${n('below') ? ` · folded below 10% FPR in ${n('below')}` : ''}${n('never') ? ` · never folded in ${n('never')}` : ''}${n('none') ? ` · not past 10% FPR in ${n('none')}` : ''}${n('self') ? ` · one ortholog for both in ${n('self')}` : ''}${left ? ` · reading ${left} more` : ''}` : 'Reading the orthologs\' predictions…';
+    body.innerHTML = `<div class="xsum">${sum}</div><div class="tbl-wrap"><table class="pt compact xorth"><thead><tr><th>Species</th><th>Ortholog of <span style="color:var(--query-t)">${esc(P.gene)}</span></th><th>Ortholog of <span style="color:var(--partner-t)">${esc(O.gene)}</span></th><th class="n">iLIS</th><th>The pair there</th></tr></thead><tbody>`
+      + (Number.isFinite(own) ? `<tr class="xo-own"><td>${spName(sp.reg.label)}</td><td>${esc(P.gene)}</td><td>${esc(O.gene)}</td><td class="n"><b style="color:${BAND_TXT[bandOf(own)]}">${own.toFixed(3)}</b> ${bandChip(bandOf(own))}</td><td>this pair</td></tr>` : '')
+      + rows.map((r) => { const s = r.s, ok = r.a.length && r.b.length;
+        const go = (t) => (s && s.a && s.b ? `<a href="#/${r.y}/${esc(s.a.key)}/${esc(s.b.key)}">${t}</a>` : t);
+        const sc = s && (s.st === 'pred' || s.st === 'below') && Number.isFinite(s.v) ? go(`<b style="color:${BAND_TXT[bandOf(s.v)]}">${s.exact === false ? '≈' + s.v.toFixed(2) : s.v.toFixed(3)}</b>`) + ` ${bandChip(bandOf(s.v))}` : '<span class="muted">–</span>';
+        const res = !ok ? `<span class="muted">no ortholog of ${esc(!r.a.length && !r.b.length ? `${P.gene} or ${O.gene}` : !r.a.length ? P.gene : O.gene)}</span>`
+          : !s || s.busy ? '<span class="muted">reading…</span>'
+          : s.st === 'fail' ? `<span class="muted">could not be read (${esc(s.msg || '')})</span>` : s.st === 'out' ? '<span class="muted">the orthologs are not in this species\' index</span>'
+          : (s.st === 'pred' ? 'also predicted here' : s.st === 'below' ? 'folded, below 10% FPR' : s.st === 'none' ? `<span class="muted" title="${esc(xSay(s))}">not past 10% FPR</span>` : `<span class="muted">${esc(xSay(s))}</span>`)
+            + (s.n > 1 ? ` <span class="muted">· best of ${s.n} ortholog pairs</span>` : '');
+        return `<tr${ok ? '' : ' class="xo-none"'}><td>${spName(r.reg.label)}</td><td>${who(r, 'a', r.a)}</td><td>${who(r, 'b', r.b)}</td><td class="n">${ok ? sc : ''}</td><td>${res}</td></tr>`; }).join('') + '</tbody></table></div>';
+  };
+  const check = async (r) => { if (r.s) return; r.s = { busy: true }; render();
+    try { const spY = await species(r.y), As = r.a.map((h) => spY.byKey.get(h.k)).filter(Boolean), Bs = r.b.map((h) => spY.byKey.get(h.k)).filter(Boolean);
+      r.s = !As.length || !Bs.length ? { st: 'out' } : await xBest(spY, As, Bs); } catch (e) { r.s = { st: 'fail', msg: e.message }; }
+    if (stale(gen)) return; render(); };
+  render();
+  const queue = [...both.filter((r) => ownScreens(r.reg)), ...both.filter((r) => !ownScreens(r.reg))];   // every species by itself (the author, 2026-10-18: no Check button), those with screens of their own first, three at a time
+  await Promise.all([0, 1, 2].map(async () => { for (let r = queue.shift(); r; r = queue.shift()) { await check(r); if (stale(gen)) return; } }));
+}
+async function pairPara(sp, P, O, gen) {
+  const sub = $('#xpara-sub'), body = $('#xpara-body'); if (!sub) return;
+  const man = await paraMan(); if (stale(gen)) return;
+  if (!man || !(man.species || []).includes(sp.id)) { sub.textContent = `No paralog table for ${sp.reg.label}.`; return; }
+  const pan = ((man.panther || {}).species || []).includes(sp.id), [sa, sb] = await Promise.all([paraShard(sp.id, P.key), paraShard(sp.id, O.key)]); if (stale(gen)) return;
+  const rel = new Map(), MAXF = 60;   // a family past 60 members is cut there, closest first
+  const fam = (R, sh) => { let h = [...((sh || {})[R.key] || [])]; if (pan) h.sort((x, y) => y[1] - x[1]); else h = h.filter((x) => x[6]);   // PANTHER: the most recent duplication first; the Alliance: its rank, moderate and high confidence
+    const out = [R], seen = new Set([R.i]);
+    for (const x of h) { const r = sp.byKey.get(x[0]); if (!r || seen.has(r.i) || out.length >= MAXF) continue; seen.add(r.i); out.push(r);
+      if (!rel.has(r.i)) rel.set(r.i, pan ? `PANTHER family ${x[4]}` : `paralog of ${R.gene}: ${x[2]}% identity, ${['low', 'moderate', 'high'][x[6]]} confidence`); }
+    return out; };
+  const RA = fam(P, sa), RB = fam(O, sb), src = pan ? 'PANTHER (gene trees)' : 'the Alliance of Genome Resources (DIOPT, moderate and high confidence)';
+  if (RA.length < 2 && RB.length < 2) { sub.textContent = `Neither ${P.gene} nor ${O.gene} has a paralog among the ${spLow(sp.reg.label)} Atlas proteins in ${src}.`; return; }
+  sub.textContent = 'Reading the predictions…';
+  let E, TP; try { [E, TP] = await Promise.all([edges(sp, ''), tested(sp)]); } catch (e) { sub.textContent = `The predictions did not load (${e.message}).`; return; }
+  if (stale(gen)) return;
+  const M = RA.map((a) => RB.map((b) => xCell(E, TP, a, b))), U = new Map();
+  RA.forEach((a, i) => RB.forEach((b, j) => { if (M[i][j].st !== 'self') U.set(a.i < b.i ? `${a.i},${b.i}` : `${b.i},${a.i}`, M[i][j].st); }));   // a pair in both families' rows counts once
+  const cnt = (st) => [...U.values()].filter((x) => x === st).length;
+  sub.innerHTML = `Rows: ${esc(P.gene)} and its paralogs; columns: ${esc(O.gene)} and its paralogs; paralogs from ${src} among the Atlas proteins. Each cell is the pair's best iLIS over every screen and model; click one to open it.`;
+  let all = false;
+  const render = () => {
+    const kr = RA.map((_, i) => all || i === 0 || M[i].some((c) => c.st === 'pred')), kc = RB.map((_, j) => all || j === 0 || M.some((r) => r[j].st === 'pred'));
+    const ri = RA.map((_, i) => i).filter((i) => kr[i]), ci = RB.map((_, j) => j).filter((j) => kc[j]), hid = RA.length + RB.length - ri.length - ci.length;
+    const cell = (i, j) => { const a = RA[i], b = RB[j], c = M[i][j], t = `${a.gene} × ${b.gene}: ${xSay(c)}`, link = c.st === 'pred' || c.st === 'below';
+      const inner = c.st === 'pred' || (c.st === 'below' && Number.isFinite(c.v)) ? c.v.toFixed(2) : c.st === 'self' ? '=' : '';
+      return `<td class="xc x-${c.st}${i === 0 && j === 0 ? ' x-cur' : ''}"${c.st === 'pred' ? ` style="${xHeat(c.v)}"` : ''} title="${esc(t)}">${link ? `<a href="#/${sp.id}/${esc(a.key)}/${esc(b.key)}">${inner}</a>` : inner}</td>`; };
+    const head = (R, k, col) => `<a href="#/${sp.id}/${esc(R.key)}"${k === 0 ? ` style="color:${col};font-weight:600"` : ''} title="${esc(k === 0 ? 'this pair' : rel.get(R.i) || '')}">${esc(R.gene)}</a>`;
+    body.innerHTML = `<div class="xsum">${fmtInt(cnt('pred'))} of ${fmtInt(U.size)} pairs past 10% FPR${TP ? ` · ${fmtInt(cnt('below'))} folded below it · ${fmtInt(cnt('never'))} never folded` : ''}${RA.length >= MAXF || RB.length >= MAXF ? ` · families cut at ${MAXF}` : ''}</div>`
+      + `<div class="tbl-wrap xpara-wrap"><table class="xpara"><thead><tr><th></th>${ci.map((j) => `<th class="xh">${head(RB[j], j, 'var(--partner-t)')}</th>`).join('')}</tr></thead><tbody>`
+      + ri.map((i) => `<tr><th class="xr">${head(RA[i], i, 'var(--query-t)')}</th>${ci.map((j) => cell(i, j)).join('')}</tr>`).join('') + '</tbody></table></div>'
+      + `<div class="legend" style="margin-top:8px"><span><i class="x-ramp" style="background:linear-gradient(90deg,${[0, 0.25, 0.5, 0.75, 1].map((t) => d3.interpolateBlues(0.35 + 0.65 * t)).join(',')})"></i>best iLIS, ${CUT[10]} (10% FPR) to 0.85, as in the network matrix</span>${TP ? '<span><i class="x-below"></i>folded, below 10% FPR</span><span><i class="x-never"></i>never folded: not tested, not a negative</span>' : '<span><i class="x-none"></i>not past 10% FPR (folded or not: no index of tested pairs here)</span>'}<span><i class="x-cur-k"></i>this pair</span>${M.some((r) => r.some((c) => c.st === 'self')) ? '<span><i class="x-self"></i>the same protein</span>' : ''}</div>`
+      + (hid || all ? `<div class="pager"><button type="button" class="more" id="xpara-all">${all ? 'Show only the rows and columns with a pair past 10% FPR' : `Show all ${RA.length} × ${RB.length}`}</button></div>` : '');
+    const b = $('#xpara-all'); if (b) b.onclick = () => { all = !all; render(); };
+  };
+  render();
+}
 async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pair was opened from (a screen or a thematic set)
   const gen = ROUTE, sp = await species(spId), P = resolveRow(sp, q1), O0 = resolveRow(sp, q2);
   if (stale(gen)) return;
@@ -4316,7 +4424,9 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     <div class="card"><div class="card-head"><h2>Interaction residues</h2><select id="model-pick" aria-label="Model" style="font:13px var(--sans);padding:5px 8px;border:1px solid var(--line);border-radius:7px">${rowsP.map((p, i) =>
         `<option value="${i}">${esc(lab(p))}${consSet.has(p) && !consOnly ? ' (construct)' : ''} · rank ${tRank(p)}${Number.isFinite(p.model) ? ` · model ${p.model}` : ''} · iLIS ${fmtNum(p.iLIS, 3)}</option>`).join('')}</select></div>
       <div class="legend" id="iface-key" style="margin:2px 0 12px"></div>
-      <div id="iface"></div></div>`;
+      <div id="iface"></div></div>${O0 && O0.key !== P.key ? `
+    <div class="card" id="c-xorth"><div class="card-head"><div><h2>Orthologs of the pair</h2><div class="muted" id="xorth-sub">The orthologs load when this card scrolls into view.</div></div></div><div id="xorth-body"></div></div>
+    <div class="card" id="c-xpara"><div class="card-head"><div><h2>Paralogs of the pair</h2><div class="muted" id="xpara-sub">The paralogs load when this card scrolls into view.</div></div></div><div id="xpara-body"></div></div>` : ''}`;
   const more = $('#models-more'), setOpen = (on) => { app.querySelectorAll('.models tbody tr.below').forEach((x) => { x.hidden = !on; }); more.setAttribute('aria-expanded', String(on));
     more.textContent = on ? `Hide the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the cutoff` : `Show the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the ${CUTP}% FPR cutoff (iLIS ${CUT[CUTP]})`; };
   if (more) more.onclick = () => setOpen(more.getAttribute('aria-expanded') !== 'true');
@@ -4497,6 +4607,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     if (kind === 'cxc') save(monoCxc(s), `atlas_${s.R.gene}_in_${(s.i ? P : O).gene}_3d.cxc`.replace(/[^\w.-]+/g, '_'), 'text/plain');
     else save(await CIFS.get(s.entry.cifUrl), `${monoId(s) || s.R.acc}.cif`, 'chemical/x-mmcif'); });
   monoBar(); monoHead(MS.q); monoHead(MS.p); monoKey(); ifaceSync();
+  if (O0 && O0.key !== P.key) pairHomologs(sp, P, O0, gen, part.best);
   pick(rowsP.indexOf(best));
   pairRefs(sp, P, O, () => stale(gen)).catch(() => {}).then(() => { if (!stale(gen)) { pairSources(sp, P, O, part, consOnly); mountSections(); } });   // Prediction sources under the BioGRID card, or where it would sit
   { const hasFp = !!fpBest(B, part), none = () => { if (!hasFp && part.bm && !$('#pair-struct').childElementCount) { const ma = modelsAt(sp.dsIds[part.bm.di]); $('#pair-struct').innerHTML = ma ? `<a class="btn" href="${esc(ma.url)}" target="_blank" rel="noopener" title="${esc(modelsAtTip(ma))}">Models at SBGrid ↗</a> <span class="muted">rsync only</span>` : `<span class="muted no3d" title="${esc(why3d(B, part.bm.run))}">no structure in LIVIA</span>`; } };   // the best FlyPredictome run that opens, else the AFDB model, else why neither
