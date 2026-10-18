@@ -4315,7 +4315,7 @@ async function pairPara(sp, P, O, gen) {
   if (!man || !(man.species || []).includes(sp.id)) { sub.textContent = `No paralog table for ${sp.reg.label}.`; return; }
   const pan = ((man.panther || {}).species || []).includes(sp.id), [sa, sb] = await Promise.all([paraShard(sp.id, P.key), paraShard(sp.id, O.key)]); if (stale(gen)) return;
   const rel = new Map(), MAXF = 60;   // a family past 60 members is cut there, closest first
-  const fam = (R, sh) => { let h = [...((sh || {})[R.key] || [])]; if (pan) h.sort((x, y) => y[1] - x[1]); else h = h.filter((x) => x[6]);   // PANTHER: the most recent duplication first; the Alliance: its rank, moderate and high confidence
+  const fam = (R, sh) => { let h = [...((sh || {})[R.key] || [])]; if (pan) h.sort((x, y) => y[1] - x[1]); else h = h.filter((x) => x[6]).sort((x, y) => x[1] - y[1]);   // PANTHER: the most recent duplication first; the Alliance: its rank, moderate and high confidence
     const out = [R], seen = new Set([R.i]);
     for (const x of h) { const r = sp.byKey.get(x[0]); if (!r || seen.has(r.i) || out.length >= MAXF) continue; seen.add(r.i); out.push(r);
       if (!rel.has(r.i)) rel.set(r.i, pan ? `PANTHER family ${x[4]}` : `paralog of ${R.gene}: ${x[2]}% identity, ${['low', 'moderate', 'high'][x[6]]} confidence`); }
@@ -4413,7 +4413,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
         <tr><th class="n sub q">${esc(P.gene)}</th><th class="n sub p">${esc(O.gene)}</th><th class="n sub q">${esc(P.gene)}</th><th class="n sub p">${esc(O.gene)}</th></tr></thead>
         <tbody>${rowsP.map((p, i) => { const cn = consSet.has(p) && !consOnly, bl = !consSet.has(p) && fold && !(p.iLIS >= CUT[CUTP] || p === best);
           return `<tr data-i="${i}"${cn ? ' class="cons" hidden' : bl ? ' class="below" hidden' : ''}><td>${srcCell(p)}${consSet.has(p) ? ` <span class="flag">${esc([kindOf(p.qc), kindOf(p.pc)].filter((k) => KIND_DROP.has(k)).join(', '))}</span>` : ''}</td><td>${rowsP.find((x) => x.run === p.run) === p ? cell3d(p) : ''}</td><td title="${Number.isFinite(p.rank) ? `the predictor's own label: rank ${p.rank} of its run` : ''}">${tRank(p)}</td>${hasModel ? `<td>${Number.isFinite(p.model) ? p.model : '–'}</td>` : ''}
-          <td class="n">${fmtNum(p.iLIS, 3)} <span class="band b${bandOf(p.iLIS)}">${bandLabel[bandOf(p.iLIS)]}</span></td>
+          <td class="n"><b style="color:${BAND_TXT[bandOf(p.iLIS)]};font-weight:${BAND_W[bandOf(p.iLIS)]}">${fmtNum(p.iLIS, 3)}</b> <span class="band b${bandOf(p.iLIS)}">${bandLabel[bandOf(p.iLIS)]}</span></td>
           ${band(FPR.iLISA, p.iLISA, 1)}${band(FPR.ipTM, p.ipTM, 2)}${band(FPR.LIS, p.LIS, 3)}${band(FPR.cLIS, p.cLIS, 3)}${band(FPR.ipSAE, p.ipSAE, 3)}${band(FPR.actifpTM, p.actifpTM, 3)}${pdq(band(FPR.pDockQ, p.pDockQ, 3))}${pdq(band(FPR.LIpDockQ, p.LIpDockQ, 3))}${pdq(band(FPR.pDockQ2, p.pDockQ2, 3))}${pdq(band(FPR.LIpDockQ2, p.LIpDockQ2, 3))}${num(p.qLIR, 0)}${num(p.pLIR, 0)}${num(p.qcLIR, 0)}${num(p.pcLIR, 0)}</tr>`; }).join('')}</tbody></table></div>
       <div class="pager"><button class="more" type="button" id="models-pdq" aria-expanded="false">Show pDockQ, LIpDockQ, pDockQ2 and LIpDockQ2</button>${fold ? `<button class="more" type="button" id="models-more" aria-expanded="false">Show the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the ${CUTP}% FPR cutoff (iLIS ${CUT[CUTP]})</button>` : ''}${consPreds.length && !consOnly ? `<button class="more" type="button" id="models-cons" aria-expanded="false">Show the ${fmtInt(consPreds.length)} construct model${consPreds.length === 1 ? '' : 's'} (not counted)</button>` : ''}</div></div>
     <div class="card" id="c-mono"><div class="card-head"><div><h2>Interaction residues in 3D</h2><div class="muted">each protein as predicted alone in the AlphaFold Database, so the two are shown apart, not docked</div></div></div>
@@ -4590,7 +4590,10 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
       window.removeEventListener('message', onReady); s.ready = true;
       try { const w = f.contentWindow, pl = w._viewer.plugin, sync = () => w.document.body.classList.toggle('mono-ctl', !!pl.layout.state.showControls);   // LIVIA keeps Mol*'s panel by the parent page's width; in this narrow frame it opens only from the wrench button
         pl.layout.setProps({ showControls: false }); pl.layout.events.updated.subscribe(sync); sync(); } catch (err) {}
-      monoSend(s); };   // always: the page was built without the thicker interaction cartoon
+      monoSend(s);   // always: the page was built without the thicker interaction cartoon
+      const fit = () => { try { const pl = f.contentWindow._viewer.plugin; if (pl.canvas3d) pl.canvas3d.handleResize(); pl.managers.camera.reset(); } catch (err) {} };   // the camera was framed while the panel's room was still there, so it came up zoomed in until Reset Zoom (the author, 2026-10-18)
+      setTimeout(fit, 400); setTimeout(fit, 1500);
+      let rt = 0, w0 = 0; new ResizeObserver(([en]) => { const w = Math.round(en.contentRect.width); if (!w || Math.abs(w - w0) < 8) return; w0 = w; clearTimeout(rt); rt = setTimeout(fit, 300); }).observe(f); };   // the frame resized (a window resized, a tab opened in the background): framed again
     window.addEventListener('message', onReady);
     // A narrow panel: LIVIA's page hides Mol*'s viewport buttons and controls panel there but keeps the panel's room, at the right or,
     // in Mol*'s portrait layout (a half-width window), at the bottom with the structure in a 75 px strip.
