@@ -776,6 +776,11 @@ function predReader(sp) {   // byte ranges of one tar through the proxy, kept fo
 }
 async function predLocate(ar, name) {   // { sp, off, len, rd } of the pair's six PAE and model files, else null
   const [a, b] = name.split('___'); if (!a || !b) return null;
+  if (ar.addr) {   // an exact address table (registry archive.addr: <addr><xx>.json, {"A_HUMAN__B_HUMAN": [split, offset, length]}), when one is registered
+    const x = a.replace(/_HUMAN$/, ''), xx = (x.length >= 2 ? x.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_');
+    const v = (await predJson(new URL(`${ar.addr}${xx}.json`, location.href).href))[`${a}__${b}`];
+    if (v) return { sp: v[0], off: v[1], len: v[2], rd: predReader(v[0]) };
+  }
   const pl = await predPlace(ar, a, b); if (!pl) return null;
   const [sp, place] = pl, sz = (await predJson(predUrl(ar, '_splits.json')))[String(sp).padStart(2, '0')]; if (!sz) return null;
   const T = [a, b], cmp = (k) => (k[0] < T[0] ? -1 : k[0] > T[0] ? 1 : k[1] < T[1] ? -1 : k[1] > T[1] ? 1 : 0);
