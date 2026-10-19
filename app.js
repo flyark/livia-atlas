@@ -780,20 +780,21 @@ async function predLocate(ar, name) {   // { sp, off, len, rd } of the pair's si
   const [sp, place] = pl, sz = (await predJson(predUrl(ar, '_splits.json')))[String(sp).padStart(2, '0')]; if (!sz) return null;
   const T = [a, b], cmp = (k) => (k[0] < T[0] ? -1 : k[0] > T[0] ? 1 : k[1] < T[1] ? -1 : k[1] > T[1] ? 1 : 0);
   const rd = predReader(sp), W = 262144;
-  let lo = { byte: 0, place: 0 }, hi = { byte: sz[1], place: sz[0] };   // lo: a member start at or before the pair; hi: one past it
-  for (let probe = 0; probe < 12 && lo.place < place - 1; probe++) {
-    let g = lo.byte + ((place - lo.place) / (hi.place - lo.place)) * (hi.byte - lo.byte) - 1572864;   // aim a little before the pair
+  let lo = { byte: 0, place: 0 }, hi = { byte: sz[1], place: sz[0] }, over = 0;   // lo: a member start at or before the pair; hi: one past it; over: probes in a row that landed past it
+  for (let probe = 0; probe < 16 && lo.place < place - 1; probe++) {
+    let g = lo.byte + ((place - lo.place) / (hi.place - lo.place)) * (hi.byte - lo.byte) - 1572864 * 2 ** over;   // aim a little before the pair, further each time a probe lands past it
     g = Math.floor(Math.min(Math.max(g, lo.byte + 512), hi.byte - 512) / 512) * 512;
-    let m = null; for (let o = g, k = 0; !m && o < hi.byte && k < 14; o += W << k++) m = await rd.scan(o, Math.min(W, hi.byte - o));   // inside a long MSA: jump on, twice as far each time
-    if (!m || !m.key) break;
+    let m = null; for (let o = g, k = 0; !m && o < hi.byte && k < 48; o += 2 * W, k++) m = await rd.scan(o, Math.min(W, hi.byte - o));   // inside a long MSA: every other window (a pair's six files and the next MSA header span more than one)
+    if (!m) { hi = { byte: g, place: hi.place }; over++; continue; }   // nothing from g on before hi: aim lower next time
+    if (!m.key) break;
     const c = cmp(m.key);
     if (c < 0 || (c === 0 && m.a3m)) {
       if (m.start <= lo.byte) break;
-      let p = place; if (c < 0) { const q = await predPlace(ar, m.key[0], m.key[1]); if (!q || q[0] !== sp) break; p = q[1]; }
-      lo = { byte: m.start, place: p };
+      let p = place; if (c < 0) { const q = await predPlace(ar, m.key[0], m.key[1]); p = q && q[0] === sp ? q[1] : lo.place; }   // a pair listed under another split: keep the old place
+      lo = { byte: m.start, place: p }; over = 0;
     } else {
-      let p = place + 0.5; if (c > 0) { const q = await predPlace(ar, m.key[0], m.key[1]); if (!q || q[0] !== sp) break; p = q[1]; }
-      hi = { byte: m.start, place: p };
+      let p = place + 0.5; if (c > 0) { const q = await predPlace(ar, m.key[0], m.key[1]); p = q && q[0] === sp ? q[1] : hi.place; }
+      hi = { byte: m.start, place: p }; over++;
     }
   }
   let first = null, end = 0;
