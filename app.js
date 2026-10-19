@@ -727,6 +727,59 @@ async function archRange(ad, o, n, onRelay) {
       if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 700 * (t + 1)));   // EBI sometimes refuses one connection: retry
     } }
 }
+// The Human Predictome archive (registry archive: { kind: 'predictome', addr, label }): the lab's 100 tars on AWS S3, read by byte
+// range through LIVIA's proxy (the bucket sends no CORS headers; the lab agreed, 2026-10-19). Each pair is one stretch of a tar:
+// its 3 PAE files and 3 models (xz), after its MSA. The address shards (<addr><xx>.json, xx as offAt keys an entry name, by the
+// first protein) map the pair's name in the screen's table, A___B, to [split, offset, length].
+const archOf = (dsId) => (((REG && REG.datasets) || []).find((x) => x.id === dsId) || {}).archive || null;
+const PADDR = new Map();
+async function predAddr(ar, name) {
+  const [a, b] = name.split('___'); if (!a || !b) return null;
+  const en = /^([A-Z0-9]+)_[A-Z0-9]+$/.exec(a), nm = en ? en[1] : a, xx = (nm.length >= 2 ? nm.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_');
+  const u = new URL(`${DEV && ar.dev ? ar.dev : ar.addr}${xx}.json`, location.href).href;
+  if (!PADDR.has(u)) PADDR.set(u, fetch(u).then((r) => (r.ok ? r.json() : {})).catch(() => { PADDR.delete(u); return {}; }));
+  return (await PADDR.get(u))[`${a}__${b}`] || null;
+}
+function tarMembers(buf) {   // ustar members of one stretch: GNU long names (././@LongLink, type L) carry the next member's name
+  const out = [], td = new TextDecoder(); let long = '';
+  for (let o = 0; o + 512 <= buf.length;) {
+    const h = buf.subarray(o, o + 512); if (!h[0]) break;
+    const size = parseInt(td.decode(h.subarray(124, 136)).replace(/\0/g, '').trim() || '0', 8), type = String.fromCharCode(h[156]), body = buf.subarray(o + 512, o + 512 + size);
+    if (type === 'L') long = td.decode(body).replace(/\0+$/, '');
+    else { if (type === '0' || type === '\0') out.push({ name: (long || td.decode(h.subarray(0, 100)).replace(/\0+$/, '')).split('/').pop(), data: body }); long = ''; }
+    o += 512 + Math.ceil(size / 512) * 512; }
+  return out;
+}
+let XZP = null;
+const xzLib = () => XZP || (XZP = new Promise((res, rej) => { if (window['xz-decompress']) return res(window['xz-decompress']);
+  const s = document.createElement('script'); s.src = 'https://cdn.jsdelivr.net/npm/xz-decompress@0.2.3/dist/package/xz-decompress.min.js';
+  s.onload = () => res(window['xz-decompress']); s.onerror = () => { XZP = null; rej(new Error('the xz decoder did not load')); }; document.head.appendChild(s); }));
+async function openPredictome(ar, name, link) {   // one pair's three models and PAE files in a LIVIA tab
+  const w = window.open(`${LIVIA}universal.html?post=1`, '_blank'); if (!w) return;
+  const tab = liviaTab(w), txt = link.textContent, nice = name.replace('___', ' × ');
+  link.textContent = 'reading…';
+  try {
+    const ad = await predAddr(ar, name);
+    if (!ad) { tab.status(`Could not find where ${nice} sits in ${ar.label}. Close this tab and try again from the Atlas.`, true); link.textContent = txt; return; }
+    const [sp, o, n] = ad, mb = (n / 1048576).toFixed(1);
+    tab.status(`Reading ${nice} from ${ar.label} (${mb} MB)…`);
+    const r = await fetch(`${RELAY}?predictome=data_split_${String(sp).padStart(2, '0')}.tar&range=${o}-${o + n - 1}`);
+    if (r.status !== 206) throw new Error(`the proxy answered ${r.status}`);
+    const buf = new Uint8Array(await r.arrayBuffer()); if (buf.length !== n) throw new Error('short read');
+    tab.status(`Unpacking ${nice}…`);
+    const [{ XzReadableStream }, { zipSync }] = await Promise.all([xzLib(), import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm')]);
+    const files = {}; for (const m of tarMembers(buf)) { if (!/\.(json|pdb)\.xz$/.test(m.name)) continue;
+      files[m.name.replace(/\.xz$/, '')] = new Uint8Array(await new Response(new XzReadableStream(new Blob([m.data]).stream())).arrayBuffer()); }
+    if (!Object.keys(files).some((k) => k.endsWith('.pdb'))) throw new Error('no model in the stretch read');
+    tab.load({ type: 'livia-load', name: `${name.replace('___', '__')}_predictome.zip`, data: zipSync(files).buffer }); link.textContent = txt;
+  } catch (e) {
+    link.textContent = 'not read'; link.title = `${ar.label} could not be read (${e.message || e}); try again.`;
+    tab.status(`Could not read ${nice} from ${ar.label} (${e.message || e}). Close this tab and try again from the Atlas.`, true);
+  }
+}
+const predLink = (ar, dsId, name, cls, text) => `<a class="${cls}" href="#" data-parch="${esc(dsId)}" data-pname="${esc(name)}" title="${esc(`the pair's three models and PAE files in LIVIA, read from ${ar.label} when opened (about 0.5 MB)`)}">${esc(text)}</a>`;
+document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a[data-pname]'); if (!a) return; e.preventDefault();
+  const ar = archOf(a.dataset.parch); if (ar && a.textContent !== 'reading…') openPredictome(ar, a.dataset.pname, a); });
 // A LIVIA tab opened with ?post=1: status lines while the Atlas reads (LIVIA shows them in place of a blank page), then the data.
 function liviaTab(w) {
   const origin = new URL(LIVIA, location.href).origin; let last = null, ready = false, n = 0;
@@ -4189,6 +4242,7 @@ function open3d(host, sp, B, P, pred, R2, alive, text = 'Open in LIVIA ↗') {
   if (!host) return; host.innerHTML = '';
   const fu = pred && fpUrl(B, pred.run);
   if (fu) { host.innerHTML = `<a class="btn" href="${esc(fu)}" target="_blank" rel="noopener" title="this model's run in ${fpPage(B, pred.run)}, structures and PAE read from FlyPredictome">${esc(text)}</a>`; return; }
+  const ar = pred && archOf(sp.dsIds[pred.di]), an = ar && ((B.runs.get(pred.run) || {}).name || ''); if (an && an.includes('___')) { host.innerHTML = predLink(ar, sp.dsIds[pred.di], an, 'btn', text); return; }
   const ma = pred && modelsAt(sp.dsIds[pred.di]); if (ma) { host.innerHTML = `<a class="btn" href="${esc(ma.url)}" target="_blank" rel="noopener" title="${esc(modelsAtTip(ma))}">Models at SBGrid ↗</a> <span class="muted">rsync only</span>`; return; }
   if (pred && (sp.viruses || (isAfdbRun(sp, pred) && sp.reg && sp.reg.structs))) { pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (alive()) structLink(host, x, 'btn', text); }); return; }
   if (pred) host.innerHTML = `<span class="muted no3d" title="${esc(why3d(B, pred.run))}">no structure in LIVIA</span>`; }
@@ -4414,6 +4468,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     return `<span class="src" style="--c:${sp.dsColor[p.di]}">${esc(ru.label || runLabel(sp, B, p.run, P))}</span>${ru.set ? `<span class="set-tag" style="--c:${SET_COL[ru.set] || '#5B6B7F'}">${esc(ru.set)}</span>` : ''}${p.rep ? ` <span class="rep-tag" title="repeat of ${esc(runLabel(sp, B, (B.runs.get(p.run) || {}).repeatOf, P))}">repeat</span>` : ''}`; };
   const cell3d = (p) => { const fu = fpUrl(B, p.run);   // a run's first row: LIVIA when it opens there, the AFDB model (filled in below), else why not
     if (fu) return `<a class="fp-open" href="${esc(fu)}" target="_blank" rel="noopener" title="this run in ${fpPage(B, p.run)}, read from FlyPredictome">LIVIA ↗</a>`;
+    const ar = archOf(sp.dsIds[p.di]), an = ar && ((B.runs.get(p.run) || {}).name || ''); if (an && an.includes('___')) return predLink(ar, sp.dsIds[p.di], an, 'fp-open', 'LIVIA ↗');
     const ma = modelsAt(sp.dsIds[p.di]); if (ma) return `<a href="${esc(ma.url)}" target="_blank" rel="noopener" title="${esc(modelsAtTip(ma))}">SBGrid ↗</a>`;
     if (sp.viruses || (isAfdbRun(sp, p) && sp.reg && sp.reg.structs)) return '<span class="afdb3d"></span>';
     return `<span class="muted" title="${esc(why3d(B, p.run))}">–</span>`; };
@@ -4658,7 +4713,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   if (O0 && O0.key !== P.key) pairHomologs(sp, P, O0, gen, part.best);
   pick(rowsP.indexOf(best));
   pairRefs(sp, P, O, () => stale(gen)).catch(() => {}).then(() => { if (!stale(gen)) { pairSources(sp, P, O, part, consOnly); mountSections(); } });   // Prediction sources under the BioGRID card, or where it would sit
-  { const hasFp = !!fpBest(B, part), none = () => { if (!hasFp && part.bm && !$('#pair-struct').childElementCount) { const ma = modelsAt(sp.dsIds[part.bm.di]); $('#pair-struct').innerHTML = ma ? `<a class="btn" href="${esc(ma.url)}" target="_blank" rel="noopener" title="${esc(modelsAtTip(ma))}">Models at SBGrid ↗</a> <span class="muted">rsync only</span>` : `<span class="muted no3d" title="${esc(why3d(B, part.bm.run))}">no structure in LIVIA</span>`; } };   // the best FlyPredictome run that opens, else the AFDB model, else why neither
+  { const hasFp = !!fpBest(B, part), none = () => { if (!hasFp && part.bm && !$('#pair-struct').childElementCount) { const ma = modelsAt(sp.dsIds[part.bm.di]), ar = archOf(sp.dsIds[part.bm.di]), an = ar && ((B.runs.get(part.bm.run) || {}).name || ''); $('#pair-struct').innerHTML = an && an.includes('___') ? predLink(ar, sp.dsIds[part.bm.di], an, 'btn', 'Open in LIVIA ↗') : ma ? `<a class="btn" href="${esc(ma.url)}" target="_blank" rel="noopener" title="${esc(modelsAtTip(ma))}">Models at SBGrid ↗</a> <span class="muted">rsync only</span>` : `<span class="muted no3d" title="${esc(why3d(B, part.bm.run))}">no structure in LIVIA</span>`; } };   // the best FlyPredictome run that opens, else the AFDB model, else why neither
     if (sp.viruses || (sp.reg && sp.reg.structs)) { const R2 = sp.byKey.get(O.key); pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (stale(gen)) return; structLink($('#pair-struct'), x, 'btn', hasFp ? 'AFDB model in LIVIA ↗' : 'Open in LIVIA ↗'); none();
       app.querySelectorAll('.models .afdb3d').forEach((h) => { structLink(h, x, 'fp-open', 'LIVIA ↗'); if (!h.childElementCount) h.innerHTML = '<span class="muted" title="no AFDB model the Atlas indexes for this pair">–</span>'; }); }); } else none(); }   // a virus pair: its model in LIVIA
   let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { const f = $('#iface'); if (f && f._redraw) f._redraw(); }, 150); };
