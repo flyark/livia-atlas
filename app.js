@@ -4296,6 +4296,12 @@ async function pairOrth(sp, P, O, gen, own) {
   const both = rows.filter((r) => r.a.length && r.b.length);
   const names = (L) => `${L.slice(0, 2).map((h) => esc(h.sym)).join(', ')}${L.length > 2 ? ` <span class="muted">+${L.length - 2}</span>` : ''}`;
   const who = (r, R, L) => (r.s && r.s[R] ? `<a href="#/${r.y}/${esc(r.s[R].key)}">${esc(r.s[R].gene)}</a>${L.length > 1 ? ` <span class="muted" title="${esc(L.map((h) => h.sym).join(', '))}">+${L.length - 1}</span>` : ''}` : L.length ? names(L) : '<span class="muted">none in the Atlas</span>');
+  // by default only the species with something to show: a score, or a BioGRID report (the author, 2026-10-19); species with
+  // no ortholog, or never folded and not reported, sit behind a button; a species still being read appears once it is read
+  let showAll = false;
+  const shown = (r) => { const s = r.s; return !!(r.a.length && r.b.length && s && !s.busy && (!['never', 'out'].includes(s.st) || (r.k && r.k.ph + r.k.ge))); };
+  const nOrth = () => rows.filter((r) => !(r.a.length && r.b.length)).length, nWait = () => both.filter((r) => !r.s || r.s.busy).length;
+  const nNone = () => both.filter((r) => r.s && !r.s.busy && !shown(r)).length, hidden = () => rows.filter((r) => !shown(r)).length;
   const render = () => {
     const fin = both.filter((r) => r.s && r.s.st && !r.s.busy), done = fin.filter((r) => !['out', 'fail'].includes(r.s.st)), bad = fin.length - done.length, n = (st) => done.filter((r) => r.s.st === st).length, left = both.length - fin.length, nk = done.filter((r) => r.k && r.k.ph + r.k.ge).length;
     sub.innerHTML = `The same pair between the two proteins' orthologs in the Atlas's other species, at the same cutoff (best iLIS over every screen and model). Orthologs from the <a href="https://www.alliancegenome.org" target="_blank" rel="noopener">Alliance of Genome Resources</a> (stringent set), <a href="https://www.pantherdb.org" target="_blank" rel="noopener">PANTHER</a> where the Alliance has none.`;
@@ -4303,7 +4309,7 @@ async function pairOrth(sp, P, O, gen, own) {
     const sum = fin.length ? `Also predicted between the orthologs in <b>${n('pred')}</b> of ${done.length} species checked${n('below') ? ` · folded below 10% FPR in ${n('below')}` : ''}${n('never') ? ` · no prediction available in ${n('never')}` : ''}${n('none') ? ` · not past 10% FPR in ${n('none')}` : ''}${n('self') ? ` · one ortholog for both in ${n('self')}` : ''}${bad ? ` · could not be read in ${bad}` : ''}${nk ? ` · reported in BioGRID in ${nk}` : ''}${left ? ` · reading ${left} more` : ''}` : 'Reading the orthologs\' predictions…';
     body.innerHTML = `<div class="xsum">${sum}</div><div class="tbl-wrap"><table class="pt compact xorth"><thead><tr><th>Species</th><th>Ortholog of <span style="color:var(--query-t)">${esc(P.gene)}</span></th><th>Ortholog of <span style="color:var(--partner-t)">${esc(O.gene)}</span></th><th class="n">iLIS</th><th>The pair there</th><th>BioGRID</th></tr></thead><tbody>`
       + (Number.isFinite(own) ? `<tr class="xo-own"><td>${spName(sp.reg.label)}</td><td>${esc(P.gene)}</td><td>${esc(O.gene)}</td><td class="n"><b style="color:${BAND_TXT[bandOf(own)]}">${own.toFixed(3)}</b> ${bandChip(bandOf(own))}</td><td>this pair</td><td>${ownK === undefined ? '' : kbCell(ownK)}</td></tr>` : '')
-      + rows.map((r) => { const s = r.s, ok = r.a.length && r.b.length;
+      + rows.filter((r) => showAll || shown(r)).map((r) => { const s = r.s, ok = r.a.length && r.b.length;
         const go = (t) => (s && s.a && s.b ? `<a href="#/${r.y}/${esc(s.a.key)}/${esc(s.b.key)}">${t}</a>` : t);
         const sc = s && (s.st === 'pred' || s.st === 'below') && Number.isFinite(s.v) ? go(`<b style="color:${BAND_TXT[bandOf(s.v)]}">${s.exact === false ? '≈' + s.v.toFixed(2) : s.v.toFixed(3)}</b>`) + ` ${bandChip(bandOf(s.v))}` : '<span class="muted">–</span>';
         const res = !ok ? `<span class="muted">no ortholog of ${esc(!r.a.length && !r.b.length ? `${P.gene} or ${O.gene}` : !r.a.length ? P.gene : O.gene)}</span>`
@@ -4311,7 +4317,9 @@ async function pairOrth(sp, P, O, gen, own) {
           : s.st === 'fail' ? `<span class="muted">could not be read (${esc(s.msg || '')})</span>` : s.st === 'out' ? '<span class="muted">the orthologs are not in this species\' index</span>'
           : (s.st === 'pred' ? 'also predicted here' : s.st === 'below' ? 'folded, below 10% FPR' : s.st === 'none' ? `<span class="muted" title="${esc(xSay(s))}">not past 10% FPR</span>` : `<span class="muted">${esc(xSay(s))}</span>`)
             + (s.n > 1 ? ` <span class="muted">· best of ${s.n} ortholog pairs</span>` : '');
-        return `<tr${ok ? '' : ' class="xo-none"'}><td>${spName(r.reg.label)}</td><td>${who(r, 'a', r.a)}</td><td>${who(r, 'b', r.b)}</td><td class="n">${ok ? sc : ''}</td><td>${res}</td><td>${ok && s && !s.busy && r.k !== undefined ? kbCell(r.k) : ''}</td></tr>`; }).join('') + '</tbody></table></div>';
+        return `<tr${ok ? '' : ' class="xo-none"'}><td>${spName(r.reg.label)}</td><td>${who(r, 'a', r.a)}</td><td>${who(r, 'b', r.b)}</td><td class="n">${ok ? sc : ''}</td><td>${res}</td><td>${ok && s && !s.busy && r.k !== undefined ? kbCell(r.k) : ''}</td></tr>`; }).join('') + '</tbody></table></div>'
+      + (hidden() ? `<div class="pager"><button type="button" class="more" id="xorth-all">${showAll ? 'Show only the species with a prediction or a BioGRID report' : `Show the other ${hidden()} species (${[nOrth() ? `no ortholog in ${nOrth()}` : '', nNone() ? `no prediction in ${nNone()}` : '', nWait() ? `reading ${nWait()}` : ''].filter(Boolean).join(', ')})`}</button></div>` : '');
+    const bt = $('#xorth-all'); if (bt) bt.onclick = () => { showAll = !showAll; render(); };
   };
   const check = async (r) => { if (r.s) return; r.s = { busy: true }; render();
     try { const spY = await species(r.y), As = r.a.map((h) => spY.byKey.get(h.k)).filter(Boolean), Bs = r.b.map((h) => spY.byKey.get(h.k)).filter(Boolean);
