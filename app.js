@@ -4351,7 +4351,7 @@ async function pairPara(sp, P, O, gen) {
     const cell = (i, j) => { const a = RA[i], b = RB[j], c = M[i][j], k = KB && KB[i] && KB[i][j], link = c.st === 'pred' || c.st === 'below';
       const t = `${a.gene} × ${b.gene}: ${xSay(c)}${k ? ` · reported in BioGRID ${k.release}: ${kbWord(k)}` : ''}`;
       const inner = c.st === 'pred' || (c.st === 'below' && Number.isFinite(c.v)) ? c.v.toFixed(2) : c.st === 'self' ? '=' : '';
-      return `<td class="xc x-${c.st}${i === 0 && j === 0 ? ' x-cur' : ''}${k ? ` xk-${k.ph && k.ge ? 'pg' : k.ph ? 'p' : 'g'}` : ''}"${c.st === 'pred' ? ` style="${xHeat(c.v)}"` : ''} title="${esc(t)}">${link ? `<a href="#/${sp.id}/${esc(a.key)}/${esc(b.key)}">${inner}</a>` : inner}</td>`; };
+      return `<td class="xc x-${c.st}${i === 0 && j === 0 ? ' x-cur' : ''}${k ? ` xk-${k.ph && k.ge ? 'pg' : k.ph ? 'p' : 'g'}` : ''}"${c.st === 'pred' ? ` style="${xHeat(c.v)}"` : ''} title="${esc(t)}">${link ? `<a href="#/${sp.id}/${esc(a.key)}/${esc(b.key)}" aria-label="${esc(t)}">${inner}</a>` : inner}</td>`; };
     const head = (R, k, col) => `<a href="#/${sp.id}/${esc(R.key)}"${k === 0 ? ` style="color:${col};font-weight:600"` : ''} title="${esc(k === 0 ? 'this pair' : rel.get(R.i) || '')}">${esc(R.gene)}</a>`;
     body.innerHTML = `<div class="xsum">${fmtInt(cnt('pred'))} of ${fmtInt(U.size)} pairs past 10% FPR${TP ? ` · ${fmtInt(cnt('below'))} folded below it · ${fmtInt(cnt('never'))} with no prediction available` : ''}${RA.length >= MAXF || RB.length >= MAXF ? ` · families cut at ${MAXF}` : ''}</div>`
       + `<div class="tbl-wrap xpara-wrap"><table class="xpara"><thead><tr><th></th>${ci.map((j) => `<th class="xh">${head(RB[j], j, 'var(--partner-t)')}</th>`).join('')}</tr></thead><tbody>`
