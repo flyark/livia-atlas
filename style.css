@@ -873,3 +873,10 @@ a[data-m3d] { white-space: nowrap; }
 .x-self { background: repeating-linear-gradient(45deg, #EEF1F5 0 3px, #fff 3px 6px); color: #9AA5B1; }
 .xpara td.x-cur { box-shadow: 0 0 0 2px var(--ink); }
 .legend i.x-cur-k { background: #fff; box-shadow: inset 0 0 0 2px var(--ink); }
+/* paralog matrix: a pair reported in BioGRID gets a corner in the BioGRID edge colors (physical blue, genetic orange, both orchid) */
+.xpara td.xc { position: relative; }
+.xpara td[class*="xk-"]::after, .legend i.xk-k::after { content: ""; position: absolute; top: 0; right: 0; border-style: solid; border-width: 0 8px 8px 0; border-color: transparent; border-top-right-radius: 4px; }
+.xpara td.xk-p::after, .legend i.xk-p::after { border-right-color: #2166AC; }
+.xpara td.xk-g::after, .legend i.xk-g::after { border-right-color: #E66100; }
+.xpara td.xk-pg::after, .legend i.xk-pg::after { border-right-color: #C04ACB; }
+.legend i.xk-k { position: relative; background: #fff; box-shadow: inset 0 0 0 1px #C3CCD6; }

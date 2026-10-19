@@ -4273,6 +4273,18 @@ async function xBest(spY, As, Bs) {   // the best of every pair between the two 
   else if (top.st === 'below' && top.exact === false) { try { const B2 = await merged(spY, top.a), p = (B2.partners || []).find((y) => y.id === top.b.key && !y.rep); if (p && Number.isFinite(p.best)) top = { ...top, v: Math.min(p.best, CUT[10] - 0.001), exact: true }; } catch (e) { /* the index's rounded score stays */ } }   // the exact iLIS from the ortholog's own predictions
   return { ...top, n: combos.length };
 }
+// BioGRID between two lists of proteins (rows of sp's index): the pair with the most publications, from the first list's shards
+// (each shard holds every pair of its proteins) → { ph, ge, release, a, b } (ph = ge = 0: not reported), or null (no records)
+async function xKB(sp, As, Bs) {
+  if (!(sp.manifest.files || {}).biogridShards) return null;
+  let top = { ph: 0, ge: 0, release: '' };
+  for (const a of As) { const K = await reportedOf(sp, a.i); if (!K) return null; top.release = K.release;
+    for (const b of Bs) { if (a.i === b.i) continue; const ph = K.pubs(a.i, b.i), ge = K.gen(a.i, b.i); if (ph + ge > top.ph + top.ge) top = { ph, ge, release: K.release, a, b }; } }
+  return top;
+}
+const kbWord = (k) => [k.ph ? `physical, ${k.ph} publication${k.ph === 1 ? '' : 's'}` : '', k.ge ? `genetic, ${k.ge} publication${k.ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ');
+const kbCell = (k) => (!k ? '<span class="muted" title="no BioGRID records for this species">–</span>' : !(k.ph + k.ge) ? '<span class="muted">not reported</span>'
+  : `<span class="kb-mark${k.ph ? ' kb-p' : ''}${k.ge ? ' kb-g' : ''}" title="${esc(`reported in BioGRID ${k.release}: ${kbWord(k)}${k.a ? ` (${k.a.gene} × ${k.b.gene})` : ''}`)}">${k.ph && k.ge ? 'both' : k.ph ? 'physical' : 'genetic'} · ${k.ph + k.ge}</span>`);
 async function pairOrth(sp, P, O, gen, own) {
   const sub = $('#xorth-sub'), body = $('#xorth-body'); if (!sub) return;
   const man = await orthMan(); if (stale(gen)) return;
@@ -4285,12 +4297,12 @@ async function pairOrth(sp, P, O, gen, own) {
   const names = (L) => `${L.slice(0, 2).map((h) => esc(h.sym)).join(', ')}${L.length > 2 ? ` <span class="muted">+${L.length - 2}</span>` : ''}`;
   const who = (r, R, L) => (r.s && r.s[R] ? `<a href="#/${r.y}/${esc(r.s[R].key)}">${esc(r.s[R].gene)}</a>${L.length > 1 ? ` <span class="muted" title="${esc(L.map((h) => h.sym).join(', '))}">+${L.length - 1}</span>` : ''}` : L.length ? names(L) : '<span class="muted">none in the Atlas</span>');
   const render = () => {
-    const done = both.filter((r) => r.s && r.s.st && !r.s.busy), n = (st) => done.filter((r) => r.s.st === st).length, left = both.length - done.length;
+    const done = both.filter((r) => r.s && r.s.st && !r.s.busy), n = (st) => done.filter((r) => r.s.st === st).length, left = both.length - done.length, nk = done.filter((r) => r.k && r.k.ph + r.k.ge).length;
     sub.innerHTML = `The same pair between the two proteins' orthologs in the Atlas's other species, at the same cutoff (best iLIS over every screen and model). Orthologs from the <a href="https://www.alliancegenome.org" target="_blank" rel="noopener">Alliance of Genome Resources</a> (stringent set), <a href="https://www.pantherdb.org" target="_blank" rel="noopener">PANTHER</a> where the Alliance has none.`;
     if (!both.length) { body.innerHTML = `<p class="muted" style="margin:6px 0 0">No species where both ${esc(P.gene)} and ${esc(O.gene)} have an ortholog among the Atlas proteins.</p>`; return; }
-    const sum = done.length ? `Also predicted between the orthologs in <b>${n('pred')}</b> of ${done.length} species checked${n('below') ? ` · folded below 10% FPR in ${n('below')}` : ''}${n('never') ? ` · no prediction available in ${n('never')}` : ''}${n('none') ? ` · not past 10% FPR in ${n('none')}` : ''}${n('self') ? ` · one ortholog for both in ${n('self')}` : ''}${left ? ` · reading ${left} more` : ''}` : 'Reading the orthologs\' predictions…';
-    body.innerHTML = `<div class="xsum">${sum}</div><div class="tbl-wrap"><table class="pt compact xorth"><thead><tr><th>Species</th><th>Ortholog of <span style="color:var(--query-t)">${esc(P.gene)}</span></th><th>Ortholog of <span style="color:var(--partner-t)">${esc(O.gene)}</span></th><th class="n">iLIS</th><th>The pair there</th></tr></thead><tbody>`
-      + (Number.isFinite(own) ? `<tr class="xo-own"><td>${spName(sp.reg.label)}</td><td>${esc(P.gene)}</td><td>${esc(O.gene)}</td><td class="n"><b style="color:${BAND_TXT[bandOf(own)]}">${own.toFixed(3)}</b> ${bandChip(bandOf(own))}</td><td>this pair</td></tr>` : '')
+    const sum = done.length ? `Also predicted between the orthologs in <b>${n('pred')}</b> of ${done.length} species checked${n('below') ? ` · folded below 10% FPR in ${n('below')}` : ''}${n('never') ? ` · no prediction available in ${n('never')}` : ''}${n('none') ? ` · not past 10% FPR in ${n('none')}` : ''}${n('self') ? ` · one ortholog for both in ${n('self')}` : ''}${nk ? ` · reported in BioGRID in ${nk}` : ''}${left ? ` · reading ${left} more` : ''}` : 'Reading the orthologs\' predictions…';
+    body.innerHTML = `<div class="xsum">${sum}</div><div class="tbl-wrap"><table class="pt compact xorth"><thead><tr><th>Species</th><th>Ortholog of <span style="color:var(--query-t)">${esc(P.gene)}</span></th><th>Ortholog of <span style="color:var(--partner-t)">${esc(O.gene)}</span></th><th class="n">iLIS</th><th>The pair there</th><th>BioGRID</th></tr></thead><tbody>`
+      + (Number.isFinite(own) ? `<tr class="xo-own"><td>${spName(sp.reg.label)}</td><td>${esc(P.gene)}</td><td>${esc(O.gene)}</td><td class="n"><b style="color:${BAND_TXT[bandOf(own)]}">${own.toFixed(3)}</b> ${bandChip(bandOf(own))}</td><td>this pair</td><td>${ownK === undefined ? '' : kbCell(ownK)}</td></tr>` : '')
       + rows.map((r) => { const s = r.s, ok = r.a.length && r.b.length;
         const go = (t) => (s && s.a && s.b ? `<a href="#/${r.y}/${esc(s.a.key)}/${esc(s.b.key)}">${t}</a>` : t);
         const sc = s && (s.st === 'pred' || s.st === 'below') && Number.isFinite(s.v) ? go(`<b style="color:${BAND_TXT[bandOf(s.v)]}">${s.exact === false ? '≈' + s.v.toFixed(2) : s.v.toFixed(3)}</b>`) + ` ${bandChip(bandOf(s.v))}` : '<span class="muted">–</span>';
@@ -4299,13 +4311,15 @@ async function pairOrth(sp, P, O, gen, own) {
           : s.st === 'fail' ? `<span class="muted">could not be read (${esc(s.msg || '')})</span>` : s.st === 'out' ? '<span class="muted">the orthologs are not in this species\' index</span>'
           : (s.st === 'pred' ? 'also predicted here' : s.st === 'below' ? 'folded, below 10% FPR' : s.st === 'none' ? `<span class="muted" title="${esc(xSay(s))}">not past 10% FPR</span>` : `<span class="muted">${esc(xSay(s))}</span>`)
             + (s.n > 1 ? ` <span class="muted">· best of ${s.n} ortholog pairs</span>` : '');
-        return `<tr${ok ? '' : ' class="xo-none"'}><td>${spName(r.reg.label)}</td><td>${who(r, 'a', r.a)}</td><td>${who(r, 'b', r.b)}</td><td class="n">${ok ? sc : ''}</td><td>${res}</td></tr>`; }).join('') + '</tbody></table></div>';
+        return `<tr${ok ? '' : ' class="xo-none"'}><td>${spName(r.reg.label)}</td><td>${who(r, 'a', r.a)}</td><td>${who(r, 'b', r.b)}</td><td class="n">${ok ? sc : ''}</td><td>${res}</td><td>${ok && s && !s.busy && r.k !== undefined ? kbCell(r.k) : ''}</td></tr>`; }).join('') + '</tbody></table></div>';
   };
   const check = async (r) => { if (r.s) return; r.s = { busy: true }; render();
     try { const spY = await species(r.y), As = r.a.map((h) => spY.byKey.get(h.k)).filter(Boolean), Bs = r.b.map((h) => spY.byKey.get(h.k)).filter(Boolean);
-      r.s = !As.length || !Bs.length ? { st: 'out' } : await xBest(spY, As, Bs); } catch (e) { r.s = { st: 'fail', msg: e.message }; }
+      r.s = !As.length || !Bs.length ? { st: 'out' } : await xBest(spY, As, Bs);
+      if (As.length && Bs.length) r.k = await xKB(spY, As, Bs).catch(() => undefined); } catch (e) { r.s = { st: 'fail', msg: e.message }; }
     if (stale(gen)) return; render(); };
-  render();
+  let ownK; render();
+  xKB(sp, [P], [O]).then((k) => { ownK = k; if (!stale(gen)) render(); }).catch(() => {});
   const queue = [...both.filter((r) => ownScreens(r.reg)), ...both.filter((r) => !ownScreens(r.reg))];   // every species by itself (the author, 2026-10-18: no Check button), those with screens of their own first, three at a time
   await Promise.all([0, 1, 2].map(async () => { for (let r = queue.shift(); r; r = queue.shift()) { await check(r); if (stale(gen)) return; } }));
 }
@@ -4329,22 +4343,32 @@ async function pairPara(sp, P, O, gen) {
   RA.forEach((a, i) => RB.forEach((b, j) => { if (M[i][j].st !== 'self') U.set(a.i < b.i ? `${a.i},${b.i}` : `${b.i},${a.i}`, M[i][j].st); }));   // a pair in both families' rows counts once
   const cnt = (st) => [...U.values()].filter((x) => x === st).length;
   sub.innerHTML = `Rows: ${esc(P.gene)} and its paralogs; columns: ${esc(O.gene)} and its paralogs; paralogs from ${src} among the Atlas proteins. Each cell is the pair's best iLIS over every screen and model; click one to open it.`;
-  let all = false;
+  let all = true, KB, kbCut = 0;   // every row and column at first (the author, 2026-10-18); KB: BioGRID per cell, read after the first draw
+  const fr = RA.map((_, i) => i === 0 || M[i].some((c) => c.st === 'pred')), fc = RB.map((_, j) => j === 0 || M.some((r) => r[j].st === 'pred'));
+  const hid = fr.filter((x) => !x).length + fc.filter((x) => !x).length;   // what the filter would hide
   const render = () => {
-    const kr = RA.map((_, i) => all || i === 0 || M[i].some((c) => c.st === 'pred')), kc = RB.map((_, j) => all || j === 0 || M.some((r) => r[j].st === 'pred'));
-    const ri = RA.map((_, i) => i).filter((i) => kr[i]), ci = RB.map((_, j) => j).filter((j) => kc[j]), hid = RA.length + RB.length - ri.length - ci.length;
-    const cell = (i, j) => { const a = RA[i], b = RB[j], c = M[i][j], t = `${a.gene} × ${b.gene}: ${xSay(c)}`, link = c.st === 'pred' || c.st === 'below';
+    const ri = RA.map((_, i) => i).filter((i) => all || fr[i]), ci = RB.map((_, j) => j).filter((j) => all || fc[j]);
+    const cell = (i, j) => { const a = RA[i], b = RB[j], c = M[i][j], k = KB && KB[i] && KB[i][j], link = c.st === 'pred' || c.st === 'below';
+      const t = `${a.gene} × ${b.gene}: ${xSay(c)}${k ? ` · reported in BioGRID ${k.release}: ${kbWord(k)}` : ''}`;
       const inner = c.st === 'pred' || (c.st === 'below' && Number.isFinite(c.v)) ? c.v.toFixed(2) : c.st === 'self' ? '=' : '';
-      return `<td class="xc x-${c.st}${i === 0 && j === 0 ? ' x-cur' : ''}"${c.st === 'pred' ? ` style="${xHeat(c.v)}"` : ''} title="${esc(t)}">${link ? `<a href="#/${sp.id}/${esc(a.key)}/${esc(b.key)}">${inner}</a>` : inner}</td>`; };
+      return `<td class="xc x-${c.st}${i === 0 && j === 0 ? ' x-cur' : ''}${k ? ` xk-${k.ph && k.ge ? 'pg' : k.ph ? 'p' : 'g'}` : ''}"${c.st === 'pred' ? ` style="${xHeat(c.v)}"` : ''} title="${esc(t)}">${link ? `<a href="#/${sp.id}/${esc(a.key)}/${esc(b.key)}">${inner}</a>` : inner}</td>`; };
     const head = (R, k, col) => `<a href="#/${sp.id}/${esc(R.key)}"${k === 0 ? ` style="color:${col};font-weight:600"` : ''} title="${esc(k === 0 ? 'this pair' : rel.get(R.i) || '')}">${esc(R.gene)}</a>`;
     body.innerHTML = `<div class="xsum">${fmtInt(cnt('pred'))} of ${fmtInt(U.size)} pairs past 10% FPR${TP ? ` · ${fmtInt(cnt('below'))} folded below it · ${fmtInt(cnt('never'))} with no prediction available` : ''}${RA.length >= MAXF || RB.length >= MAXF ? ` · families cut at ${MAXF}` : ''}</div>`
       + `<div class="tbl-wrap xpara-wrap"><table class="xpara"><thead><tr><th></th>${ci.map((j) => `<th class="xh">${head(RB[j], j, 'var(--partner-t)')}</th>`).join('')}</tr></thead><tbody>`
       + ri.map((i) => `<tr><th class="xr">${head(RA[i], i, 'var(--query-t)')}</th>${ci.map((j) => cell(i, j)).join('')}</tr>`).join('') + '</tbody></table></div>'
-      + `<div class="legend" style="margin-top:8px"><span><i class="x-ramp" style="background:linear-gradient(90deg,${[0, 0.25, 0.5, 0.75, 1].map((t) => d3.interpolateBlues(0.35 + 0.65 * t)).join(',')})"></i>best iLIS, ${CUT[10]} (10% FPR) to 0.85, as in the network matrix</span>${TP ? '<span><i class="x-below"></i>folded, below 10% FPR</span><span><i class="x-never"></i>no prediction available</span>' : '<span><i class="x-none"></i>not past 10% FPR (folded or not: no index of tested pairs here)</span>'}<span><i class="x-cur-k"></i>this pair</span>${M.some((r) => r.some((c) => c.st === 'self')) ? '<span><i class="x-self"></i>the same protein</span>' : ''}</div>`
-      + (hid || all ? `<div class="pager"><button type="button" class="more" id="xpara-all">${all ? 'Show only the rows and columns with a pair past 10% FPR' : `Show all ${RA.length} × ${RB.length}`}</button></div>` : '');
+      + `<div class="legend" style="margin-top:8px"><span><i class="x-ramp" style="background:linear-gradient(90deg,${[0, 0.25, 0.5, 0.75, 1].map((t) => d3.interpolateBlues(0.35 + 0.65 * t)).join(',')})"></i>best iLIS, ${CUT[10]} (10% FPR) to 0.85, as in the network matrix</span>${TP ? '<span><i class="x-below"></i>folded, below 10% FPR</span><span><i class="x-never"></i>no prediction available</span>' : '<span><i class="x-none"></i>not past 10% FPR (folded or not: no index of tested pairs here)</span>'}<span><i class="x-cur-k"></i>this pair</span>${M.some((r) => r.some((c) => c.st === 'self')) ? '<span><i class="x-self"></i>the same protein</span>' : ''}${KB && KB.n ? `<span>reported in BioGRID ${esc(KB.release)}: <i class="xk-k xk-p"></i>physical <i class="xk-k xk-g"></i>genetic <i class="xk-k xk-pg"></i>both${kbCut ? ` (${kbCut})` : ''}</span>` : KB ? `<span class="muted">none of these pairs is reported in BioGRID ${esc(KB.release)}${kbCut ? ` (${kbCut})` : ''}</span>` : KB === null ? '<span class="muted">no BioGRID records for this species</span>' : ''}</div>`
+      + (hid ? `<div class="pager"><button type="button" class="more" id="xpara-all">${all ? 'Show only the rows and columns with a pair past 10% FPR' : `Show all ${RA.length} × ${RB.length}`}</button></div>` : '');
     const b = $('#xpara-all'); if (b) b.onclick = () => { all = !all; render(); };
   };
   render();
+  // BioGRID: each pair is in both proteins' shards, so read the shorter side's (rows or columns), at most 24 of them
+  if (!(sp.manifest.files || {}).biogridShards) { KB = null; render(); return; }
+  const byRow = RA.length <= RB.length, L = (byRow ? RA : RB).slice(0, 24); kbCut = (byRow ? RA : RB).length > 24 ? `first 24 ${byRow ? 'rows' : 'columns'}` : 0;
+  const G = RA.map(() => RB.map(() => null)); let n = 0, release = '';
+  for (let x = 0; x < L.length; x++) { let K; try { K = await reportedOf(sp, L[x].i); } catch (e) { K = null; } if (stale(gen)) return; if (!K) continue; release = K.release;
+    for (let y = 0; y < (byRow ? RB : RA).length; y++) { const i = byRow ? x : y, j = byRow ? y : x, a = RA[i], b = RB[j]; if (a.i === b.i) continue;
+      const ph = K.pubs(a.i, b.i), ge = K.gen(a.i, b.i); if (ph + ge) { G[i][j] = { ph, ge, release: K.release }; n++; } } }
+  KB = Object.assign(G, { n, release }); render();
 }
 async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pair was opened from (a screen or a thematic set)
   const gen = ROUTE, sp = await species(spId), P = resolveRow(sp, q1), O0 = resolveRow(sp, q2);
