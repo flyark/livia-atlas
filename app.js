@@ -4539,7 +4539,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     else if (s.entry && MONO.mode === 'dom') tail = s.doms ? ` · ${s.doms.length ? `${fmtInt(s.doms.length)} domain${s.doms.length === 1 ? '' : 's'}` : 'no domain annotated'}` : ' · reading its domains…';
     else if (s.placed && MONO.mode !== 'plddt') tail = ` · <span class="res-warn">${esc(s.placed)}</span>`;
     const id = monoId(s);
-    h.innerHTML = `<b style="color:var(--${s.i ? 'partner' : 'query'}-t)">${esc(s.R.gene)}</b>${s.entry ? ` <span class="muted">${id ? `AlphaFold DB ${esc(id)}` : 'AlphaFold DB'} · ${fmtInt(s.entry.seq.length)} aa${tail}</span>` : ''}`;
+    h.innerHTML = `<b style="color:var(--${s.i ? 'partner' : 'query'}-t)">${esc(s.R.gene)}</b>${s.entry ? ` <span class="muted">${id ? `AlphaFold DB ${esc(id)}` : 'AlphaFold DB'}${s.alt ? ` (${esc(s.alt.id)}: another UniProt entry of ${esc(s.R.gene)}; ${esc(s.R.acc)} has no model)` : ''} · ${fmtInt(s.entry.seq.length)} aa${tail}</span>` : ''}`;
   }
   function monoKey() {
     const box = $('#mono-key'); if (!box) return;
@@ -4600,12 +4600,25 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     walk(mvs.root); f.contentWindow.postMessage({ type: 'updateColors', mvsStr: JSON.stringify(mvs) }, '*');
   }
   function monoRecolor(s) { monoHead(s); if (s.shown && s.ready) monoSend(s); }
+  async function monoSibling(s) {   // the gene's other entries with a model: the one that lines up best with the folded sequence (by length when it is not read yet)
+    const sibs = await siblingEntries(sp, s.R); if (stale(gen) || !sibs.length) return null;
+    const got = (await Promise.all(sibs.slice(0, 12).map(async (x) => { const m = await afdbEntry(x.acc).catch(() => null); return m && !m.failed ? { ...x, entry: m, seq: m.seq || x.seq } : null; }))).filter(Boolean);
+    if (!got.length) return null;
+    const ts = ((MONO.T && MONO.T[s.i]) || {}).seq || '', L0 = ts.length || s.R.clen || s.R.len || 0;
+    const c = got.map((x) => { const mi = ts && x.seq ? CLIPResolver.alignMap(ts, x.seq) : null; return { ...x, covered: mi ? mi.covered : 0 }; })
+      .sort((a, b) => b.covered - a.covered || Math.abs(a.len - L0) - Math.abs(b.len - L0));
+    return ts && c[0].covered < 0.8 * Math.min(ts.length, c[0].seq.length) ? null : c[0];   // the bar monoMap places residues by
+  }
   async function monoLoad(s) {
     const R = s.R;
     if (!R.acc) { monoMsg(s, `No UniProt accession for ${esc(R.gene)}, so there is no AlphaFold DB model to show.`); return; }
     monoMsg(s, `Loading the AlphaFold DB model of ${esc(R.gene)}…`);
     try { await liviaReady(); } catch (e) { if (!stale(gen)) monoMsg(s, esc(e.message)); return; }
-    const e = await afdbEntry(R.acc); if (stale(gen)) return;
+    let e = await afdbEntry(R.acc); if (stale(gen)) return; s.alt = null;
+    if (!e && !['construct', 'other species'].includes(R.status)) {   // as on the protein page: another UniProt entry of the gene (an isoform or fragment entry) with a model stands in, its residues placed by alignment
+      monoMsg(s, `No AlphaFold DB model for ${esc(R.acc)}. Looking for a model of another UniProt entry of ${esc(R.gene)}…`);
+      const alt = await monoSibling(s); if (stale(gen)) return;
+      if (alt) { e = alt.entry; s.alt = alt; } }
     if (e && e.failed) { monoMsg(s, `The AlphaFold DB model of ${esc(R.acc)} could not be loaded (no answer from alphafold.ebi.ac.uk). Reload the page to try again.`); return; }
     if (!e) { monoMsg(s, `No AlphaFold DB model for ${esc(R.acc)}${(R.clen || R.len) > 2700 ? ' (the database has none for proteins longer than 2,700 residues)' : ''}.`); return; }
     if (!CIFS.has(e.cifUrl)) CIFS.set(e.cifUrl, fetch(e.cifUrl).then((r) => { if (!r.ok) throw new Error(String(r.status)); return r.text(); }));
@@ -4613,7 +4626,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     if (stale(gen)) return;
     s.entry = e; s.plddt = parseBfactorsPerResidue(text, 'cif'); monoMap(s); monoHead(s);
     app.querySelectorAll(`#mono-dl [data-dl="${s.k}"], #mono-dl [data-dl="${s.k}-cxc"]`).forEach((b) => { b.disabled = false; });
-    domainsOf(R.acc, e.seq).then((d) => { if (stale(gen)) return; s.doms = [...(d || [])].sort((x, y) => x.start - y.start).map((x, j) => ({ ...x, idx: j + 1, col: DOM3D_COLORS[j % DOM3D_COLORS.length] })); monoRecolor(s); if (MONO.mode === 'dom') monoKey(); }).catch(() => { s.doms = []; });   // D1, D2 … per protein, as on the protein page
+    domainsOf(s.alt ? s.alt.acc : R.acc, e.seq).then((d) => { if (stale(gen)) return; s.doms = [...(d || [])].sort((x, y) => x.start - y.start).map((x, j) => ({ ...x, idx: j + 1, col: DOM3D_COLORS[j % DOM3D_COLORS.length] })); monoRecolor(s); if (MONO.mode === 'dom') monoKey(); }).catch(() => { s.doms = []; });   // D1, D2 … per protein, as on the protein page
     const comps = monoComps(s);
     // A recolor sent while the viewer page is booting is lost, so once this frame says it is ready the colors go again
     const onReady = (ev) => { if (!ev.data || ev.data.type !== 'molstarReady') return; const f = document.getElementById(s.frame);
