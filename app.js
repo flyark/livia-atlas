@@ -727,18 +727,86 @@ async function archRange(ad, o, n, onRelay) {
       if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 700 * (t + 1)));   // EBI sometimes refuses one connection: retry
     } }
 }
-// The Human Predictome archive (registry archive: { kind: 'predictome', addr, label }): the lab's 100 tars on AWS S3, read by byte
-// range through LIVIA's proxy (the bucket sends no CORS headers; the lab agreed, 2026-10-19). Each pair is one stretch of a tar:
-// its 3 PAE files and 3 models (xz), after its MSA. The address shards (<addr><xx>.json, xx as offAt keys an entry name, by the
-// first protein) map the pair's name in the screen's table, A___B, to [split, offset, length].
+// The Human Predictome archive (registry archive: { kind: 'predictome', order, label }): the lab's 100 tars on AWS S3 (about 40 GB
+// each), read by byte range through LIVIA's proxy (the bucket sends no CORS headers; the lab agreed, 2026-10-19). Each pair is one
+// stretch of a tar: its MSA, then its 3 PAE files and 3 models (xz); the Atlas reads the six after the MSA. A tar has no index,
+// but its pairs sit in sorted order (protein 1, then protein 2, full entry names), the order of the lab's lis.py table for that
+// split, and a pair's byte position runs close to its place in it. The order table (<order><xx>.json, xx as offAt keys the first
+// protein; names without _HUMAN; split * 100000 + place) and <order>_splits.json ([pairs, bytes] per split) are built by
+// walterlab/predictome_order.py from the lab's tables; predLocate guesses the byte position from the place and corrects it from
+// the headers a few range reads find, then steps member by member to the pair's first PAE file.
 const archOf = (dsId) => (((REG && REG.datasets) || []).find((x) => x.id === dsId) || {}).archive || null;
-const PADDR = new Map();
-async function predAddr(ar, name) {
+const PORD = new Map();
+const predJson = (u) => { if (!PORD.has(u)) PORD.set(u, fetch(u).then((r) => (r.ok ? r.json() : {})).catch(() => { PORD.delete(u); return {}; })); return PORD.get(u); };
+const predUrl = (ar, f) => store(`${ar.order}${f}`);
+async function predPlace(ar, a, b) {   // [split, place] of the pair of entry names a, b (with _HUMAN), else null
+  const x = a.replace(/_HUMAN$/, ''), y = b.replace(/_HUMAN$/, ''), xx = (x.length >= 2 ? x.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_');
+  const v = (await predJson(predUrl(ar, `${xx}.json`)))[`${x}__${y}`]; return v == null ? null : [Math.floor(v / 100000), v % 100000];
+}
+const PRED_TD = new TextDecoder();
+function predHdr(h) {   // a ustar header block (checksum checked) → { type, size, name }, else null
+  if (h.length < 512 || h[257] !== 0x75 || h[258] !== 0x73 || h[259] !== 0x74 || h[260] !== 0x61 || h[261] !== 0x72) return null;
+  let sum = 0; for (let k = 0; k < 512; k++) sum += k >= 148 && k < 156 ? 32 : h[k];
+  if (parseInt(PRED_TD.decode(h.subarray(148, 156)).replace(/[\0 ]/g, ''), 8) !== sum) return null;
+  return { type: String.fromCharCode(h[156]), size: parseInt(PRED_TD.decode(h.subarray(124, 136)).replace(/[\0 ]/g, '') || '0', 8), name: PRED_TD.decode(h.subarray(0, 100)).replace(/\0+$/, '') };
+}
+const predKey = (nm) => { const m = /(?:^|\/)([A-Z0-9]+_[A-Z0-9]+)__([A-Z0-9]+_[A-Z0-9]+)__\d+aa/.exec(nm); return m ? [m[1], m[2]] : null; };
+const pad512 = (n) => Math.ceil(n / 512) * 512;
+function predReader(sp) {   // byte ranges of one tar through the proxy, kept for the rest of the search
+  const chunks = [], tar = `data_split_${String(sp).padStart(2, '0')}.tar`; let reads = 0, bytes = 0, min = 65536;
+  const get = async (o, n, min = 0) => {
+    for (const c of chunks) if (o >= c.o && o + n <= c.o + c.b.length) return c.b.subarray(o - c.o, o - c.o + n);
+    const m = Math.max(n, min), r = await fetch(`${RELAY}?predictome=${tar}&range=${o}-${o + m - 1}`);
+    if (r.status !== 206) throw new Error(`the proxy answered ${r.status}`);
+    const b = new Uint8Array(await r.arrayBuffer()); if (b.length < n) throw new Error('short read');
+    reads++; bytes += b.length; chunks.push({ o, b }); return b.subarray(0, n);
+  };
+  const member = async (p) => {   // the member whose first header is at p: { name, key, a3m, start, end }
+    let h = predHdr(await get(p, 512, min)); if (!h) return null;
+    let name = h.name, q = p;
+    if (h.type === 'L') { name = PRED_TD.decode(await get(p + 512, h.size, min)).replace(/\0+$/, ''); q = p + 512 + pad512(h.size); h = predHdr(await get(q, 512, min)); if (!h) return null; }
+    return { name, key: predKey(name), a3m: /\.a3m/.test(name), start: p, end: q + 512 + pad512(h.size) };
+  };
+  const scan = async (o, n) => {   // the first member starting in [o, o + n), from one read
+    const b = await get(o, n);
+    for (let i = 0; i + 512 <= b.length; i += 512) { const h = predHdr(b.subarray(i, i + 512)); if (h) return member(o + i); }
+    return null;
+  };
+  return { get, member, scan, wide: () => { min = 1048576; }, stats: () => ({ reads, bytes }) };
+}
+async function predLocate(ar, name) {   // { sp, off, len, rd } of the pair's six PAE and model files, else null
   const [a, b] = name.split('___'); if (!a || !b) return null;
-  const en = /^([A-Z0-9]+)_[A-Z0-9]+$/.exec(a), nm = en ? en[1] : a, xx = (nm.length >= 2 ? nm.slice(-2).toLowerCase() : '_').replace(/[^a-z0-9_-]/g, '_');
-  const u = new URL(`${DEV && ar.dev ? ar.dev : ar.addr}${xx}.json`, location.href).href;
-  if (!PADDR.has(u)) PADDR.set(u, fetch(u).then((r) => (r.ok ? r.json() : {})).catch(() => { PADDR.delete(u); return {}; }));
-  return (await PADDR.get(u))[`${a}__${b}`] || null;
+  const pl = await predPlace(ar, a, b); if (!pl) return null;
+  const [sp, place] = pl, sz = (await predJson(predUrl(ar, '_splits.json')))[String(sp).padStart(2, '0')]; if (!sz) return null;
+  const T = [a, b], cmp = (k) => (k[0] < T[0] ? -1 : k[0] > T[0] ? 1 : k[1] < T[1] ? -1 : k[1] > T[1] ? 1 : 0);
+  const rd = predReader(sp), W = 262144;
+  let lo = { byte: 0, place: 0 }, hi = { byte: sz[1], place: sz[0] };   // lo: a member start at or before the pair; hi: one past it
+  for (let probe = 0; probe < 12 && lo.place < place - 1; probe++) {
+    let g = lo.byte + ((place - lo.place) / (hi.place - lo.place)) * (hi.byte - lo.byte) - 1572864;   // aim a little before the pair
+    g = Math.floor(Math.min(Math.max(g, lo.byte + 512), hi.byte - 512) / 512) * 512;
+    let m = null; for (let o = g, k = 0; !m && o < hi.byte && k < 14; o += W << k++) m = await rd.scan(o, Math.min(W, hi.byte - o));   // inside a long MSA: jump on, twice as far each time
+    if (!m || !m.key) break;
+    const c = cmp(m.key);
+    if (c < 0 || (c === 0 && m.a3m)) {
+      if (m.start <= lo.byte) break;
+      let p = place; if (c < 0) { const q = await predPlace(ar, m.key[0], m.key[1]); if (!q || q[0] !== sp) break; p = q[1]; }
+      lo = { byte: m.start, place: p };
+    } else {
+      let p = place + 0.5; if (c > 0) { const q = await predPlace(ar, m.key[0], m.key[1]); if (!q || q[0] !== sp) break; p = q[1]; }
+      hi = { byte: m.start, place: p };
+    }
+  }
+  let first = null, end = 0;
+  for (let p = lo.byte, hop = 0; hop < 200; hop++) {   // member by member to the pair's files after its MSA
+    const m = await rd.member(p); if (!m) break;
+    if (!m.key) { p = m.end; continue; }   // the split's folder entry
+    const c = cmp(m.key);
+    if (c > 0) break;
+    if (c === 0 && !m.a3m) { if (first == null) { first = m.start; rd.wide(); } end = m.end; }   // the pair's files: one read from here on
+    else if (first != null) break;
+    p = m.end;
+  }
+  return first == null ? null : { sp, off: first, len: end - first, rd };
 }
 function tarMembers(buf) {   // ustar members of one stretch: GNU long names (././@LongLink, type L) carry the next member's name
   const out = [], td = new TextDecoder(); let long = '';
@@ -759,13 +827,11 @@ async function openPredictome(ar, name, link) {   // one pair's three models and
   const tab = liviaTab(w), txt = link.textContent, nice = name.replace('___', ' × ');
   link.textContent = 'reading…';
   try {
-    const ad = await predAddr(ar, name);
-    if (!ad) { tab.status(`Could not find where ${nice} sits in ${ar.label}. Close this tab and try again from the Atlas.`, true); link.textContent = txt; return; }
-    const [sp, o, n] = ad, mb = (n / 1048576).toFixed(1);
-    tab.status(`Reading ${nice} from ${ar.label} (${mb} MB)…`);
-    const r = await fetch(`${RELAY}?predictome=data_split_${String(sp).padStart(2, '0')}.tar&range=${o}-${o + n - 1}`);
-    if (r.status !== 206) throw new Error(`the proxy answered ${r.status}`);
-    const buf = new Uint8Array(await r.arrayBuffer()); if (buf.length !== n) throw new Error('short read');
+    tab.status(`Finding ${nice} in ${ar.label}…`);
+    const loc = await predLocate(ar, name);
+    if (!loc) { tab.status(`Could not find ${nice} in ${ar.label}. Close this tab and try again from the Atlas.`, true); link.textContent = txt; return; }
+    tab.status(`Reading ${nice} from ${ar.label} (${(loc.len / 1048576).toFixed(1)} MB)…`);
+    const buf = await loc.rd.get(loc.off, loc.len);
     tab.status(`Unpacking ${nice}…`);
     const [{ XzReadableStream }, { zipSync }] = await Promise.all([xzLib(), import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm')]);
     const files = {}; for (const m of tarMembers(buf)) { if (!/\.(json|pdb)\.xz$/.test(m.name)) continue;
@@ -777,7 +843,7 @@ async function openPredictome(ar, name, link) {   // one pair's three models and
     tab.status(`Could not read ${nice} from ${ar.label} (${e.message || e}). Close this tab and try again from the Atlas.`, true);
   }
 }
-const predLink = (ar, dsId, name, cls, text) => `<a class="${cls}" href="#" data-parch="${esc(dsId)}" data-pname="${esc(name)}" title="${esc(`the pair's three models and PAE files in LIVIA, read from ${ar.label} when opened (about 0.5 MB)`)}">${esc(text)}</a>`;
+const predLink = (ar, dsId, name, cls, text) => `<a class="${cls}" href="#" data-parch="${esc(dsId)}" data-pname="${esc(name)}" title="${esc(`the pair's three models and PAE files in LIVIA, read from ${ar.label} when opened (a few MB)`)}">${esc(text)}</a>`;
 document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a[data-pname]'); if (!a) return; e.preventDefault();
   const ar = archOf(a.dataset.parch); if (ar && a.textContent !== 'reading…') openPredictome(ar, a.dataset.pname, a); });
 // A LIVIA tab opened with ?post=1: status lines while the Atlas reads (LIVIA shows them in place of a blank page), then the data.

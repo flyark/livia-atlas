@@ -681,6 +681,11 @@
    "source": "Schmid et al. 2025 · bioRxiv",
    "paper": "https://www.biorxiv.org/content/10.1101/2025.11.10.687652v1",
    "dev": "../data/human-predictomes/",
+   "archive": {
+    "kind": "predictome",
+    "label": "the Human Predictome archive (Walter lab, AWS)",
+    "order": "data/predictome/"
+   },
    "models": 3,
    "recycles": 3,
    "modelsNote": "AlphaFold-Multimer v3 models 1, 2 and 4; ColabFold 1.5.2, modified; templates on",
