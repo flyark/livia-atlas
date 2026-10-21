@@ -684,7 +684,9 @@
    "archive": {
     "kind": "predictome",
     "label": "the Human Predictome archive (Walter lab, AWS)",
-    "order": "data/predictome/"
+    "order": "data/predictome/",
+    "addr": "https://www.flyrnai.org/livia-atlas/versions/predictome-addr-v1/",
+    "addrSummaryMd5": "bf5c6a43fca33a3180bee9e3504b8cb8"
    },
    "models": 3,
    "recycles": 3,
