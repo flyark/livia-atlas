@@ -1660,14 +1660,15 @@ function ifaceSide(B, R, name, len) {
   if (placed) return { label, len: R.len, shift: c.off, span: [c.off + 1, c.off + len], own: false, name };
   return { label, len: len || 1, shift: 0, span: null, own: true, name };
 }
-async function ifaceView(host, { sp, P, O, pred, B, canvasId }) {
+let seqFoldOpen = false;   // the protein page's folded sequences: open stays open across partners
+async function ifaceView(host, { sp, P, O, pred, B, canvasId, foldSeq }) {
   const tok = (host._tok = (host._tok || 0) + 1);
   const side = (R, name, len) => ifaceSide(B, R, name, len);
   const q = side(P, pred.qc, pred.qLen), o = side(O, pred.pc, pred.pLen), sh = (s, k) => expand(s).map((r) => r + k);
   const qL = sh(pred.qL, q.shift), qC = sh(pred.qC, q.shift), pL = sh(pred.pL, o.shift), pC = sh(pred.pC, o.shift);
   const none = !qL.length && !pL.length && !qC.length && !pC.length;
   host.innerHTML = `${none ? `<p class="note">This model has no residue pair with PAE ≤ 12 Å between the two proteins, so it has no interaction residues.</p>` : ''}
-    <div class="ifmap"><canvas id="${canvasId}" role="img" aria-label="Interaction and contact residues of this prediction on both proteins, with their domains"></canvas></div><div class="domlegend iface-doms" hidden></div><div class="seqpanels"><div class="seqp"></div><div class="seqp"></div></div>`;
+    <div class="ifmap"><canvas id="${canvasId}" role="img" aria-label="Interaction and contact residues of this prediction on both proteins, with their domains"></canvas></div><div class="domlegend iface-doms" hidden></div>${foldSeq ? `<details class="how seqfold"${seqFoldOpen ? ' open' : ''}><summary>Sequences</summary>` : ''}<div class="seqpanels"><div class="seqp"></div><div class="seqp"></div></div>${foldSeq ? '</details>' : ''}`;   // the protein page folds them (one protein against many); the pair page keeps them open
   const cv = $('canvas', host);
   const T = [{ gene: P.gene, name: q.name, label: q.label, len: q.len, span: q.span, own: q.own, lir: qL, clir: qC, lirSet: new Set(qL), clirSet: new Set(qC), col: (host._cols || PAIR_COL).q, doms: [] },
     { gene: O.gene, name: o.name, label: o.label, len: o.len, span: o.span, own: o.own, lir: pL, clir: pC, lirSet: new Set(pL), clirSet: new Set(pC), col: (host._cols || PAIR_COL).p, doms: [] }];
@@ -1682,7 +1683,8 @@ async function ifaceView(host, { sp, P, O, pred, B, canvasId }) {
   if (host._tok !== tok) return;
   T[0].seq = qs; T[1].seq = os;
   if (host._onIface) host._onIface(T, pred);   // the 3D card of the pair page: the same residues on each protein's own model
-  const panels = host.querySelectorAll('.seqp');
+  const panels = host.querySelectorAll('.seqp'), fold = host.querySelector('.seqfold');
+  if (fold) fold.addEventListener('toggle', () => { seqFoldOpen = fold.open; if (fold.open && paint) paint(); });   // the panels fit their width only when shown
   paint = () => { const c = host._cols || PAIR_COL; panels[0].innerHTML = seqPanel(q.label, qs, qL, qC, c.q, T[0].len, q.span); panels[1].innerHTML = seqPanel(o.label, os, pL, pC, c.p, T[1].len, o.span); fitSeqs(panels[0]); fitSeqs(panels[1]); };
   paint();
   // Domain coordinates fit only the UniProt sequence: a full-length human construct; for fly, a FlyBase reference that is
@@ -3640,7 +3642,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function drawResidues() {
     const id = $('#res-partner').value, part = B.partners.find((p) => p.id === id); if (!part) return;
     const pred = part.preds[+$('#res-rank').value] || part.preds[0];
-    ifaceView($('#res-body'), { sp, P, O: PLACE(id), pred, B, canvasId: 'res-canvas' });
+    ifaceView($('#res-body'), { sp, P, O: PLACE(id), pred, B, canvasId: 'res-canvas', foldSeq: true });
     const pid = $('#res-partner').value, pi = $('#res-rank').value;   // the selected model's own structure, not the pair's AFDB model whatever is selected
     open3d($('#res-struct'), sp, B, P, pred, sp.byKey.get(pid), () => !gone() && $('#res-partner') && $('#res-partner').value === pid && $('#res-rank').value === pi);
   }
