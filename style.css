@@ -575,6 +575,7 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 .pt.ref-tbl { width: 100%; table-layout: fixed; }
 .pt.ref-tbl th:nth-child(1) { width: 90px; } .pt.ref-tbl th:nth-child(2) { width: 150px; } .pt.ref-tbl th:nth-child(4) { width: 170px; } .pt.ref-tbl th:nth-child(5) { width: 64px; }
 .pt.ref-tbl td.t, .pt.ref-tbl td.a { white-space: normal; line-height: 1.4; }
+.pt.ref-tbl td:nth-child(2) { white-space: normal; overflow-wrap: anywhere; line-height: 1.4; }   /* a long DOI wraps in its column instead of running under the title */
 @media (max-width: 600px) { .pt.ref-tbl { table-layout: auto; min-width: 560px; } .pt.ref-tbl th:nth-child(n) { width: auto; } }   /* phones: the table keeps a readable width and scrolls in its wrapper instead of squeezing the titles under the authors */
 
 .lede-src { margin: -6px auto 18px; max-width: 640px; font-size: 13.5px; color: var(--ink-3); text-align: center; }   /* the source line under the home lede */

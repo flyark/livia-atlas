@@ -4376,6 +4376,13 @@ async function pairRefs(sp, P, O, gone) {
       tr.querySelector('.t').textContent = r ? r.title || '' : ''; tr.querySelector('.t').classList.remove('muted');
       if (r) { const au = r.authors || []; tr.querySelector('.a').textContent = au.length ? au[0].name + (au.length > 1 ? ' et al.' : '') : ''; tr.querySelector('.y').textContent = (r.pubdate || '').slice(0, 4); } }
   }
+  const dois = [...new Set(rows.map(([, x]) => x).filter((x) => x.startsWith('DOI:')).map((x) => x.slice(4)))].slice(0, 60);   // Crossref for rows BioGRID lists by DOI only (preprints)
+  const cr = new Map(await Promise.all(dois.map((v) => fetch(`https://api.crossref.org/works/${encodeURIComponent(v)}`).then((r) => (r.ok ? r.json() : null)).then((j) => [v, j && j.message], () => [v, null]))));
+  if (gone()) return;
+  for (const tr of app.querySelectorAll('#c-refs tr[data-ref^="DOI:"]')) { const m = cr.get(tr.dataset.ref.slice(4)); if (!m) continue;
+    tr.querySelector('.t').textContent = new DOMParser().parseFromString((m.title || [])[0] || '', 'text/html').body.textContent.trim(); tr.querySelector('.t').classList.remove('muted');
+    const au = m.author || [], a0 = au[0]; tr.querySelector('.a').textContent = a0 ? (a0.family ? `${a0.family} ${(a0.given || '').split(/[\s-]+/).filter(Boolean).map((g) => g[0]).join('')}`.trim() : a0.name || '') + (au.length > 1 ? ' et al.' : '') : '';
+    tr.querySelector('.y').textContent = String((((m.issued || {})['date-parts'] || [[]])[0] || [])[0] || ''); }
   for (const td of app.querySelectorAll('#c-refs td.t.muted')) td.textContent = '';
 }
 const kbTip0 = (K, ph, ge) => `reported in BioGRID ${K.release}: ${[ph ? `physical, ${ph} publication${ph === 1 ? '' : 's'}` : '', ge ? `genetic, ${ge} publication${ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ')}`;
