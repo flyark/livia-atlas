@@ -4313,11 +4313,11 @@ const why3d = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); if (!ru) 
   if (ORTHO_DS[ru.ds]) return 'this run is in a batch FlyPredictome does not show, so it cannot open in LIVIA';
   if (archOf(ru.ds) && !/___/.test(ru.name || '')) return 'the Atlas has no archive address for this run';
   if (archOf(ru.ds)) return `below the 10% FPR cutoff (iLIS < ${CUT[10]}): the Atlas opens this screen's models only for pairs past it`;
+  const ma = modelsAt(ru.ds); if (ma) return `this screen's models are in ${ma.label}, which serves them by rsync only, not to a browser`;
   return 'the models of this screen are not available to the Atlas'; };
-// A screen whose models sit in a deposition the browser cannot read (registry modelsAt: SBGrid serves rsync only): a link
-// there, with the file to fetch and how, instead of "Open in LIVIA".
+// A screen whose models sit in a deposition the browser cannot read (registry modelsAt: SBGrid serves rsync only): no link
+// there (the author, 2026-10-26: a link that cannot open is worse than none), only the reason in why3d.
 const modelsAt = (dsId) => (((REG && REG.datasets) || []).find((x) => x.id === dsId) || {}).modelsAt || null;
-const modelsAtTip = (m) => `the models and PAE files of this screen are in ${m.label}, which offers them only by rsync, not in the browser: ${m.file}, with \`${m.how}\`; inside it the files are named with the deposition's own chain names`;
 const isAfdbRun = (sp, p) => /^afdb-het-/.test(sp.dsIds[p.di] || '');
 // The chosen model's structure in LIVIA, one wording everywhere ("Open in LIVIA ↗"): its run on FlyPredictome when that opens,
 // the AFDB model through the release archive for an AFDB or virus pair, else the reason there is none.
@@ -4326,7 +4326,6 @@ function open3d(host, sp, B, P, pred, R2, alive, text = 'Open in LIVIA ↗') {
   const fu = pred && fpUrl(B, pred.run);
   if (fu) { host.innerHTML = `<a class="btn" href="${esc(fu)}" target="_blank" rel="noopener" title="this model's run in ${fpPage(B, pred.run)}, structures and PAE read from FlyPredictome">${esc(text)}</a>`; return; }
   const ar = pred && archOf(sp.dsIds[pred.di]), an = ar && ((B.runs.get(pred.run) || {}).name || ''), pp = an && (B.partners || []).find((x) => x.preds.includes(pred)); if (an && an.includes('___') && pp && predPass(pp.preds, pred.run)) { host.innerHTML = predLink(ar, sp.dsIds[pred.di], an, 'btn', text); return; }
-  const ma = pred && modelsAt(sp.dsIds[pred.di]); if (ma) { host.innerHTML = `<a class="btn" href="${esc(ma.url)}" target="_blank" rel="noopener" title="${esc(modelsAtTip(ma))}">Models at SBGrid ↗</a> <span class="muted">rsync only</span>`; return; }
   if (pred && (sp.viruses || (isAfdbRun(sp, pred) && sp.reg && sp.reg.structs))) { pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (alive()) structLink(host, x, 'btn', text); }); return; }
   if (pred) host.innerHTML = `<span class="muted no3d" title="${esc(why3d(B, pred.run))}">no structure in LIVIA</span>`; }
 // A pair's best run that opens in LIVIA from FlyPredictome: its best-iLIS run when that one has a SET, else its best run that has.
@@ -4561,7 +4560,6 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   const cell3d = (p) => { const fu = fpUrl(B, p.run);   // a run's first row: LIVIA when it opens there, the AFDB model (filled in below), else why not
     if (fu) return `<a class="fp-open" href="${esc(fu)}" target="_blank" rel="noopener" title="this run in ${fpPage(B, p.run)}, read from FlyPredictome">LIVIA ↗</a>`;
     const ar = archOf(sp.dsIds[p.di]), an = ar && ((B.runs.get(p.run) || {}).name || ''); if (an && an.includes('___') && predPass(rowsP, p.run)) return predLink(ar, sp.dsIds[p.di], an, 'fp-open', 'LIVIA ↗');
-    const ma = modelsAt(sp.dsIds[p.di]); if (ma) return `<a href="${esc(ma.url)}" target="_blank" rel="noopener" title="${esc(modelsAtTip(ma))}">SBGrid ↗</a>`;
     if (sp.viruses || (isAfdbRun(sp, p) && sp.reg && sp.reg.structs)) return '<span class="afdb3d"></span>';
     return `<span class="muted" title="${esc(why3d(B, p.run))}">–</span>`; };
   const pdq = (h) => h.replace('<td', '<td data-pdq');
@@ -4806,7 +4804,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   if (O0 && O0.key !== P.key) pairHomologs(sp, P, O0, gen, part.best);
   pick(rowsP.indexOf(best));
   pairRefs(sp, P, O, () => stale(gen)).catch(() => {}).then(() => { if (!stale(gen)) { pairSources(sp, P, O, part, consOnly); mountSections(); } });   // Prediction sources under the BioGRID card, or where it would sit
-  { const hasFp = !!fpBest(B, part), none = () => { if (!hasFp && part.bm && !$('#pair-struct').childElementCount) { const ma = modelsAt(sp.dsIds[part.bm.di]), ar = archOf(sp.dsIds[part.bm.di]), an = ar && ((B.runs.get(part.bm.run) || {}).name || ''); $('#pair-struct').innerHTML = an && an.includes('___') && predPass(part.preds, part.bm.run) ? predLink(ar, sp.dsIds[part.bm.di], an, 'btn', 'Open in LIVIA ↗') : ma ? `<a class="btn" href="${esc(ma.url)}" target="_blank" rel="noopener" title="${esc(modelsAtTip(ma))}">Models at SBGrid ↗</a> <span class="muted">rsync only</span>` : `<span class="muted no3d" title="${esc(why3d(B, part.bm.run))}">no structure in LIVIA</span>`; } };   // the best FlyPredictome run that opens, else the AFDB model, else why neither
+  { const hasFp = !!fpBest(B, part), none = () => { if (!hasFp && part.bm && !$('#pair-struct').childElementCount) { const ar = archOf(sp.dsIds[part.bm.di]), an = ar && ((B.runs.get(part.bm.run) || {}).name || ''); $('#pair-struct').innerHTML = an && an.includes('___') && predPass(part.preds, part.bm.run) ? predLink(ar, sp.dsIds[part.bm.di], an, 'btn', 'Open in LIVIA ↗') : `<span class="muted no3d" title="${esc(why3d(B, part.bm.run))}">no structure in LIVIA</span>`; } };   // the best FlyPredictome run that opens, else the AFDB model, else why neither
     if (sp.viruses || (sp.reg && sp.reg.structs)) { const R2 = sp.byKey.get(O.key); pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (stale(gen)) return; structLink($('#pair-struct'), x, 'btn', hasFp ? 'AFDB model in LIVIA ↗' : 'Open in LIVIA ↗'); none();
       app.querySelectorAll('.models .afdb3d').forEach((h) => { structLink(h, x, 'fp-open', 'LIVIA ↗'); if (!h.childElementCount) h.innerHTML = '<span class="muted" title="no AFDB model the Atlas indexes for this pair">–</span>'; }); }); } else none(); }   // a virus pair: its model in LIVIA
   let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { const f = $('#iface'); if (f && f._redraw) f._redraw(); }, 150); };
