@@ -1751,7 +1751,6 @@ async function viewHome() {
         to see who is predicted to bind it, how confidently, and where.</p>
       <p class="lede-src">cLIP is part of <a href="${LIVIA}" target="_blank" rel="noopener">LIVIA</a>, a browser-based tool for assessing and visualizing predicted protein interactions
         (Kim &amp; Perrimon, 2026, <a href="https://doi.org/${REF.livia[1]}" target="_blank" rel="noopener">bioRxiv</a>).</p>
-      <p class="dev-note">Under active development: data and pages may change daily, sometimes hourly.</p>
       <div id="home-search" class="hero-search"></div>
       <div class="totals"><span>${tot('runs')} predictions</span><span>${tot('predictions')} models</span><span>${tot('pairs')} protein pairs</span>
         <span>${tot('proteins')} proteins</span></div>
