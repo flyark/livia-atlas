@@ -882,3 +882,7 @@ a[data-m3d] { white-space: nowrap; }
 .xpara td.xk-pg::after, .legend i.xk-pg { background: #C04ACB; }
 .xorth .xo-alt { font-size: 12px; margin-top: 2px; }
 .seqfold { margin-top: 12px; }
+.clip-yours { margin-top: 2px; }   /* the cLIP card's line on your predictions */
+.clip-yours label { display: inline-flex; gap: 5px; align-items: center; cursor: pointer; }
+.clip-yours .linkbtn { font: inherit; color: var(--navy); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+.yours-only { border-bottom: 1px dotted #5B3A86; }   /* a partner only in your predictions: no pair page to open */

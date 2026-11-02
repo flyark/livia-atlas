@@ -1273,7 +1273,7 @@ function isoformFiles(all, split, sp, P, scope, onlyDi, setId) {
   };
   all.only = (id) => (id ? null : all);
 }
-const runLabel = (sp, B, rid, P) => { const ru = B.runs.get(rid); if (!ru) return ''; if (ru.label) return ru.label + (ru.set ? ` (set: ${ru.set})` : '');
+const runLabel = (sp, B, rid, P) => { const ru = B.runs.get(rid); if (!ru) return rid === 'yours' ? 'your predictions' : ''; if (ru.label) return ru.label + (ru.set ? ` (set: ${ru.set})` : '');
   const O = sp.byKey.get(ru.key), og = O ? O.gene : ru.key;
   return sp.dsShort[ru.di] + (ru.twin ? ` · ${ru.qi ? P.gene + '–' + og : og + '–' + P.gene}` : ''); };
 // FlyPredictome's source categories (the paper's), as badges
@@ -2657,7 +2657,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <ol class="toplist" id="toplist"></ol>
           <div class="legend tl-key"><span>FPR band, each value by its own benchmarked cutoff</span><span class="tl-keys"><span><i style="background:${BAND[1]}"></i>1%</span><span><i style="background:${BAND[5]}"></i>5%</span><span><i style="background:${BAND[10]}"></i>10%</span><span><i style="background:#A7B2BF"></i>below</span></span></div>
           <div class="legend tl-key" id="tl-m3d" hidden></div></div></div></div>
-    <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div></div>
+    <div class="card" id="c-sites"><div class="card-head"><div><h2>Predicted binding sites</h2><div class="muted" id="clip-sub">Loading the predictions…</div><div class="muted clip-yours" id="clip-yours"></div></div>
         <div class="clip-ctl"><label class="ctl muted" title="a residue number, a short sequence (983, ETLKKG) or a motif (LXXLL, [ST]P; every match): which models, partners and sites contact it; the link keeps it">Residue<input type="text" id="res-q" class="res-q" placeholder="983 or a sequence" spellcheck="false" autocomplete="off" value="${esc(RESQ ? resLabel(RESV) : '')}"></label><div class="ctl"><span class="muted">iLIS cutoff</span><div class="seg" id="cut-seg" title="the cutoff of this card and of the frequency and fingerprint cards below it; kept in the link (other cards have their own)">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === CUT0 ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}</div></div></div></div>
       <p class="sites-answer" id="sites-answer">Finding the binding sites…</p><p class="res-look" id="res-look" hidden></p>
       <div class="plot" id="sites-map"></div><div class="sites-bg muted" id="sites-bg"></div><p class="sites-more" id="sites-more" hidden></p><div class="domlegend" id="sites-domains"></div>
@@ -2816,6 +2816,22 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const gname = (key) => { const r = sp.byKey.get(key); return r ? r.gene : key; };
   const range = (k) => Array.from({ length: k }, (_, i) => i + 1);
   let cut = CUT0, M = null, ACTIVE = new Set(), NET = null, infoOpen = new Set(), clipJob = 0;   // clipJob: the clustering run the page waits for; an older one's result is dropped
+  let YC = null, ATB = null, ATS = null; const atlasHas = (k) => { if (ATB !== B) { ATB = B; ATS = new Set(B.partners.map((x) => x.id)); } return ATS.has(k); };   // your models in the last clustering; the partners the Atlas screens have
+  const pairA = (k) => (atlasHas(k) ? `<a href="#/${sp.id}/${P.key}/${k}${scopeQ}">${esc(gname(k))}</a>` : `<span class="yours-only" title="only in your predictions">${esc(gname(k))}</span>`);   // a partner's name: its pair page, or plain when only your predictions have it
+  const yoursStrip = () => {   // the cLIP card's line on your predictions: load them, or cluster them with the Atlas models
+    const el = $('#clip-yours'); if (!el) return; const Y = YOURS && YOURS.spId === sp.id ? YOURS : null, was = $('#clip-yours-on'), on = was ? was.checked : true;
+    if (!Y) { el.innerHTML = `<button class="linkbtn" id="clip-yours-load" type="button" title="lis.py output (CSV, or the zip LIVIA opens) with a FASTA or an identity map; read in this page only, not uploaded; the Network page draws the same predictions">+ your own predictions</button><input type="file" id="clip-yours-file" accept="${YOURS_ACCEPT}" multiple hidden>`;
+      $('#clip-yours-load').onclick = () => $('#clip-yours-file').click();
+      $('#clip-yours-file').onchange = async (e) => { const fs = [...e.target.files]; e.target.value = ''; if (!fs.length) return;
+        try { const y = await yoursLoad(sp, fs, (m) => { el.textContent = m; }); if (gone()) return; YOURS = y; } catch (err) { if (gone()) return; yoursStrip(); el.insertAdjacentHTML('afterbegin', `<span>${esc(err.message)} </span>`); return; }
+        yoursStrip(); cluster(); };
+      return; }
+    const nm = (Y.byRow.get(P.i) || []).filter((x) => x.pkey !== P.key).length;
+    if (YC && YC.err) { el.textContent = `Your models could not be placed on this axis (${YC.err}); the clustering shows the Atlas models only.`; return; }
+    if (!nm) { el.innerHTML = `Your predictions (${esc(Y.files.map((f) => f.name).join(', '))}) have no model of ${esc(P.gene)} with a partner past the 10% cutoff.`; return; }
+    const N = YC && YC.n, pl = N ? [['same', 'the same sequence'], ['stretch', 'placed by an exact stretch'], ['aligned', 'placed by alignment'], ['assumed', 'read in the same numbering: same length, no sequence'], ['out', 'left out: not placed on this axis']].filter(([k]) => N[k]).map(([k, t]) => `${fmtInt(N[k])} ${t}`).join(', ') : '';
+    el.innerHTML = `<label title="your models of ${esc(P.gene)} past the 10% cutoff, clustered with the Atlas models; read in this page only"><input type="checkbox" id="clip-yours-on"${on ? ' checked' : ''}> cluster your ${fmtInt(nm)} model${nm === 1 ? '' : 's'} of ${esc(P.gene)} with the Atlas models</label>${on && pl ? ` <span>(${pl})</span>` : ''}`;
+    $('#clip-yours-on').onchange = () => { yoursStrip(); cluster(); }; };
   const predCluster = new Map(), partnerCluster = new Map();
   // A partner folded as several constructs (a receptor's isoforms, its fragments): each one's scores and cluster, so a
   // partner that binds through one isoform and not another shows it. One row per gene; the constructs open under it.
@@ -2842,7 +2858,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const S = { state: 'loading', map: null, mapOK: false };              // AlphaFold DB model of this protein
   const V = { mode: 'cluster', thr: 0.5, minC: 5, amCut: 0, shown: false, want: false };
   const toStruct = (r) => (S.map ? S.map[r - 1] : r);
-  const who = (label) => B.labels.get(label) || { key: label, run: null };    // a cLIP partner label → partner key + screen run
+  const who = (label) => B.labels.get(label) || (String(label).startsWith('yours~') ? { key: String(label).split('~')[1], run: 'yours', yours: true } : { key: label, run: null });    // a cLIP partner label → partner key + screen run (yours~key: your predictions)
   const xtWant = () => { const v = +((app.querySelector('.xticks') || {}).value); return v >= 2 ? Math.min(40, v) : 0; };
   { const byDs = new Map(); for (const p of B.preds) { if (!byDs.has(p.di)) byDs.set(p.di, new Set()); byDs.get(p.di).add(p.qLen); }   // the construct each screen folded
     const lens = new Set(B.preds.map((p) => p.qLen)), ref = sp.manifest.keyedBy ? 'FlyBase reference' : 'UniProt';
@@ -3227,7 +3243,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     box.innerHTML = open.map((st) => { const sh = ORTH.shared.get(st.sp2), m2 = st.m[cut], cell = new Map();
       for (const p of sh.pairs) { const k = p.c1 + '|' + p.c2; if (!cell.has(k)) cell.set(k, []); cell.get(k).push(p); }   // both partners are clustered: orthShared keeps only those
       const name1 = (k) => esc(gname(k)), name2 = (k) => { const r = st.sp2obj.byKey.get(k); return esc(r ? r.gene : k); };
-      const link = (p) => `<a href="#/${sp.id}/${P.key}/${p.k1}${scopeQ}">${name1(p.k1)}</a> ↔ <a href="#/${st.sp2}/${encodeURIComponent(st.P2.key)}/${encodeURIComponent(p.k2)}">${name2(p.k2)}</a>`;
+      const link = (p) => `${atlasHas(p.k1) ? `<a href="#/${sp.id}/${P.key}/${p.k1}${scopeQ}">${name1(p.k1)}</a>` : `<span class="yours-only" title="only in your predictions">${name1(p.k1)}</span>`} ↔ <a href="#/${st.sp2}/${encodeURIComponent(st.P2.key)}/${encodeURIComponent(p.k2)}">${name2(p.k2)}</a>`;
       const cells = [...cell].map(([k, ps]) => { const [c1, c2] = k.split('|').map(Number); return { c1, c2, ps }; }).sort((a, b) => b.ps.length - a.ps.length || a.c1 - b.c1 || a.c2 - b.c2);
       const LIST = cells.length <= 4;   // a few filled cells read as lines; a grid only when there is something to cross
       const title = `<b>Shared partners with ${orthLabel(st)}</b> <span class="muted">· ${fmtInt(sh.pairs.length)} of its ${fmtInt(sh.n2)} partners in sites ${sh.pairs.length === 1 ? 'has' : 'have'} an ortholog among ${esc(P.gene)}'s partners in sites</span>`;   // sites hold every model past the cutoff, on both sides
@@ -3251,7 +3267,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     let m = null, err = null;
     const progress = (s) => { if (gone() || job !== clipJob) return;
       $('#clip-sub').textContent = `Clustering ${fmtInt(s.n)} models past the ${cut}% FPR cutoff…${s.thinned ? ` (one model per pair, because ${fmtInt(s.thinned.from)} passed)` : ''}`; };
-    try { m = await trackLoad(`Clustering ${P.gene}'s partners (${cut}% FPR)`, runClip(CQ.rows, B.qLabel, CUT[cut], progress), 'task'); } catch (e) { err = e; }
+    let rows = CQ.rows; YC = null;
+    if (YOURS && YOURS.spId === sp.id && (!$('#clip-yours-on') || $('#clip-yours-on').checked)) { try { YC = await yoursClipRows(YOURS, P, CQ, qSeq); } catch (e) { YC = { rows: [], n: {}, keys: new Set(), err: e.message || String(e) }; } if (gone() || job !== clipJob) return; if (YC && YC.rows.length) rows = CQ.rows.concat(YC.rows); }   // your models join the clustering
+    try { m = await trackLoad(`Clustering ${P.gene}'s partners (${cut}% FPR)`, runClip(rows, B.qLabel, CUT[cut], progress), 'task'); } catch (e) { err = e; }
     if (gone() || job !== clipJob) return;
     if (location.search.includes('debug')) window.__clip = m;   // a local test reads the fingerprints and labels
     M = m; if (err) $('#clip-sub').textContent = `Clustering failed: ${err.message}`;
@@ -3265,7 +3283,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const n = M ? M.fingerprints.length : 0, k = clustered() ? M.k : 0;
     const thin = M && M.thinned ? (M.thinned.how === 'rank1' ? ` · one model per pair, its top-ranked passing model, because ${fmtInt(M.thinned.from)} models passed (the frequency and the sites count pairs)`
       : ` · the ${fmtInt(M.thinned.to)} pairs with the highest iLIS, one model each, because ${fmtInt(M.thinned.from)} models passed`) : '';
-    if (M) $('#clip-sub').textContent = clustered() ? `${fmtInt(n)} models of ${fmtInt(partnerCluster.size)} partners past iLIS ${CUT[cut]} (${cut}% FPR) · query ${fmtInt(M.plen)} aa · cosine distance, average linkage, silhouette${thin}`
+    yoursStrip();
+    const nY = M ? M.preds.filter((p) => String(p.partner).startsWith('yours~')).length : 0, yTxt = nY ? ` · ${fmtInt(nY)} of them from your predictions` : '';
+    if (M) $('#clip-sub').textContent = clustered() ? `${fmtInt(n)} models of ${fmtInt(partnerCluster.size)} partners past iLIS ${CUT[cut]} (${cut}% FPR)${yTxt} · query ${fmtInt(M.plen)} aa · cosine distance, average linkage, silhouette${thin}`
       : `${n ? 'Only one prediction' : 'No predictions'} past the ${cut}% FPR cutoff, so there is nothing to cluster.`;
     const want = !clustered() && V.mode === 'cluster' ? 'plddt' : clustered() && V.auto && S.mapOK ? 'cluster' : null;   // no clusters: show pLDDT until there are
     if (want) { V.auto = want === 'plddt'; V.mode = want; app.querySelectorAll('#cmode button').forEach((b) => b.classList.toggle('on', b.dataset.m === want)); }
@@ -3408,7 +3428,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const res = h.r >= 1 && h.r <= L ? `<br>residue ${qSeq[h.r - 1] || ''}${h.r}${M.fingerprints[h.i].includes(h.r) ? ' · contact' : ''}` : '';
       showTip(`<b>${esc(gname(w.key))}</b> · ${esc(runLabel(sp, B, w.run, P))} · rank ${p.rank} · iLIS ${p.iLIS.toFixed(3)} · <span style="color:${clusterColor(c, k)}">●</span> ${clusterLabel(c)}${res}`, e.clientX, e.clientY); };
     cv.onmouseleave = hideTip;
-    cv.onclick = (e) => { const h = at(e); if (!h) return; hideTip(); location.hash = `#/${sp.id}/${P.key}/${who(M.preds[h.i].partner).key}${scopeQ}`; };
+    cv.onclick = (e) => { const h = at(e); if (!h) return; hideTip(); const w = who(M.preds[h.i].partner); if (w.yours && !atlasHas(w.key)) return; location.hash = `#/${sp.id}/${P.key}/${w.key}${scopeQ}`; };   // a partner only in your predictions has no pair page
     resMarkNote('#c-fp'); attachExport('heatmap', `atlas_${P.gene}_fingerprint`, drawHeatmap);
   }
 
@@ -3461,7 +3481,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (!clustered()) { ans.innerHTML = M ? `No binding site to show: ${M.fingerprints.length ? 'only one model is' : 'no model is'} past the ${cut}% FPR cutoff.` : 'Finding the binding sites…';
       map.innerHTML = ''; $('#sites-domains').innerHTML = ''; $('#sites-more').hidden = true; return; }
     const sites = sitesOf(), doms = qDomains(M.plen), K = sites.length, np = partnerCluster.size, big = sites[0], lanesOrder = [...sites].sort((a, b) => a.c - b.c);
-    const names = (ps) => ps.map((x) => `<a href="#/${sp.id}/${P.key}/${x.key}${scopeQ}">${esc(gname(x.key))}</a>`);
+    const names = (ps) => ps.map((x) => pairA(x.key));
     const andList = (xs) => (xs.length < 3 ? xs.join(' and ') : `${xs.slice(0, -1).join(', ')} and ${xs[xs.length - 1]}`);
     // the partners named as examples: the largest share of models past the cutoff first, then the average iLIS, so a pair
     // past it in one model of three is not named before one past it in all (3 of 3 counts as 5 of 5); at equal shares, one-model pairs last (the sites card's own rule for naming examples; Top partners ranks by iLIS alone)
@@ -3542,7 +3562,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     box.innerHTML = `<b>${head}</b>: ` + (!hit.length ? `no model past the ${cut}% FPR cutoff contacts ${one ? 'it' : 'these residues'}.`
       : `contacted in ${fmtInt(hit.length)} of ${fmtInt(M.preds.length)} models past the ${cut}% FPR cutoff, by ${fmtInt(best.size)} partner${best.size === 1 ? '' : 's'}`
         + `, in ${inS.map((x) => `<span style="color:${clusterColor(x.st.c, M.k)}">●</span> ${clusterLabel(x.st.c)} (${x.h} of ${x.st.n}${x.st.foot.some(inR) ? ', in its footprint' : ''})`).join(', ')}.`
-        + byMatch + ` Partners: ${shown.map(([k]) => `<a href="#/${sp.id}/${P.key}/${k}${scopeQ}">${esc(gname(k))}</a>`).join(', ')}${top.length > shown.length ? ` and ${top.length - shown.length} more` : ''}.`)
+        + byMatch + ` Partners: ${shown.map(([k]) => pairA(k)).join(', ')}${top.length > shown.length ? ` and ${top.length - shown.length} more` : ''}.`)
       + ` <button class="more" type="button" id="res-copy">Copy link</button>`;
     $('#res-copy').onclick = (e) => { navigator.clipboard && navigator.clipboard.writeText(location.href).then(() => { e.target.textContent = 'Copied'; }, () => {}); };
     if (!resScrolled) { resScrolled = true; $('#c-sites').scrollIntoView({ block: 'start' }); }
@@ -3609,6 +3629,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       const rows = [...(mem[c] || [])].map((x) => sp.byKey.get(x) || { key: x, gene: x }).sort((a, b) => a.gene.toLowerCase().localeCompare(b.gene.toLowerCase()));
       const show = infoOpen.has(c) ? rows : rows.slice(0, cap);
       return `<div class="cl-row"><i style="background:${clusterColor(c, M.k)}"></i><div><b${(() => { const st = siteBy.get(c), q = st && bgRatio(st); return q != null ? ` title="background over this site's footprint: ${q.toFixed(1)}× the protein mean"` : ''; })()}>${clusterLabel(c)}</b> <span class="muted">(${fmtInt(rows.length)} partner${rows.length === 1 ? '' : 's'}, ${fmtInt(cnt[c])} model${cnt[c] === 1 ? '' : 's'})${anyRep ? ` · <span title="partners with a physical or genetic interaction reported in BioGRID ${KB.release}">${rows.filter((r) => kbOf(r.key)).length} of ${rows.length} reported</span>` : ''}</span>: ${show.map((r) => { const kb = kbOf(r.key);
+        if (!atlasHas(r.key)) return `<span class="yours-only" title="only in your predictions">${esc(r.gene)}</span>`;
         return `<a href="#/${sp.id}/${P.key}/${r.key}${scopeQ}"${kb ? ` class="${kb.ph ? 'kb-p' : ''}${kb.ph && kb.ge ? ' ' : ''}${kb.ge ? 'kb-g' : ''}" title="${kbTip(kb)}"` : ''}>${esc(r.gene)}</a>`; }).join(', ')}${rows.length > cap ? ` <button class="more" data-c="${c}">${infoOpen.has(c) ? 'show fewer' : `+${rows.length - cap} more`}</button>` : ''}</div></div>`; }).join('');
     box.querySelectorAll('.more').forEach((b) => b.onclick = () => { const c = +b.dataset.c; infoOpen.has(c) ? infoOpen.delete(c) : infoOpen.add(c); renderClusterInfo(); });
     const leg = $('#info-kb'), all = [...new Set(Object.values(mem).flatMap((x) => [...x]))].map(kbOf).filter(Boolean);
@@ -5553,9 +5574,9 @@ async function yoursRead(files) {   // → the lis.py tables, FASTA texts and ot
   return out;
 }
 function yoursPairs(lis) {   // → pairs by their two names (best model kept) and, per name, the predictions naming it (up to 50)
-  const P = new Map(), labs = new Map(); let rows = 0;
+  const P = new Map(), labs = new Map(), models = []; let rows = 0;   // models: every model past the 10% cutoff, with its residues, for the protein pages' cLIP
   for (const { text } of lis) {
-    const R = parseCSV(text), h = R[0].map((x) => x.trim()), cn = h.indexOf('name'), ci = h.indexOf('chain_i'), cj = h.indexOf('chain_j'), cl = h.indexOf('iLIS'), cp = h.indexOf('ipTM');
+    const R = parseCSV(text), h = R[0].map((x) => x.trim()), keep = CLIP_COLS.map((c) => h.indexOf(c)), cn = h.indexOf('name'), ci = h.indexOf('chain_i'), cj = h.indexOf('chain_j'), cl = h.indexOf('iLIS'), cp = h.indexOf('ipTM');
     for (let r = 1; r < R.length; r++) {
       const t = R[r], nm = (t[cn] || '').trim(), v = parseFloat(t[cl]); if (!nm || !Number.isFinite(v)) continue;
       const parts = nm.split('___').map((x) => x.trim()).filter(Boolean); if (parts.length < 2) continue;
@@ -5563,10 +5584,11 @@ function yoursPairs(lis) {   // → pairs by their two names (best model kept) a
       const [a, ca] = pick(ci >= 0 ? t[ci] : '', 0), [b, cb] = pick(cj >= 0 ? t[cj] : '', 1); rows++;
       for (const [l, c] of [[a, ca], [b, cb]]) { const o = labs.get(l) || labs.set(l, []).get(l); if (o.length < 50) o.push(`${nm}\u0000${c}`); }   // the predictions naming it, for an identity map by name and chain
       if (a === b) continue;   // a homodimer is not a pair here
+      if (v >= CUT[10]) models.push({ a, b, row: Object.fromEntries(CLIP_COLS.map((c, n) => [c, keep[n] >= 0 ? t[keep[n]] || '' : ''])) });
       const k = a < b ? `${a}\t${b}` : `${b}\t${a}`, ip = cp >= 0 ? parseFloat(t[cp]) : NaN, x = P.get(k);
       if (!x) P.set(k, { a: a < b ? a : b, b: a < b ? b : a, best: v, iptm: ip, n: 1, name: nm });
       else { x.n++; if (v > x.best) { x.best = v; x.iptm = ip; x.name = nm; } } } }
-  return { P, labs, rows };
+  return { P, labs, rows, models };
 }
 function yoursMaps(maps) {   // identity maps, as LIVIA reads them: name + chain → the row's other values, or any value → its row's values
   return maps.map(({ text }) => { const R = parseCSV(text), h = R[0].map((x) => x.trim().toLowerCase()), cn = h.indexOf('name'), cc = h.indexOf('chain'), skip = new Set([cn, cc, h.indexOf('start'), h.indexOf('end')]);
@@ -5580,27 +5602,60 @@ async function yoursResolve(sp, labs, maps, fasta, onStep) {   // name → speci
   for (const [lab, occ] of labs) for (const m of M) { let r = null;
     if (m.nc) { for (const k of occ) { const vs = m.by.get(k); if (vs && (r = tryVals(vs, lab))) break; } } else { const vs = m.by.get(lab); r = vs && tryVals(vs, lab); }
     if (r) { row.set(lab, r); how.set(lab, 'identity map'); break; } }
-  let down = false;
-  if (fasta.length) { await liviaReady(); const seqs = CLIPResolver.parseFastaToSeqMap(fasta.join('\n')).map, todo = [...labs.keys()].filter((l) => !row.has(l) && seqs[l]);
+  let down = false, seqs = {};
+  if (fasta.length) { await liviaReady(); seqs = CLIPResolver.parseFastaToSeqMap(fasta.join('\n')).map; const todo = [...labs.keys()].filter((l) => !row.has(l) && seqs[l]);
     for (let k = 0; k < todo.length; k += 8) { onStep(`Recognizing proteins by sequence: ${fmtInt(k)} of ${fmtInt(todo.length)}…`);
       await Promise.all(todo.slice(k, k + 8).map(async (lab) => { const hits = await CLIPResolver.indexExact(seqs[lab]); if (hits == null) { down = true; return; }
         const mine = hits.filter((h) => String(h.tax) === String(sp.reg.taxon)).sort((p, q) => /-\d+$/.test(p.acc) - /-\d+$/.test(q.acc) || q.reviewed - p.reviewed);
         for (const h of mine) { const r = tryVals([h.acc, h.acc.split('-')[0]], ''); if (r) { row.set(lab, r); how.set(lab, 'sequence'); return; } }
         if (hits.length && !mine.length) other.push(lab); })); } }
   for (const lab of labs.keys()) if (!row.has(lab)) { const h = resolveHow(sp, lab, true); if (h) { row.set(lab, h.row); how.set(lab, 'name'); } }
-  return { row, how, other, down };
+  return { row, how, other, down, seqs };
 }
 async function yoursLoad(sp, files, onStep) {   // → YOURS for this species, from the reader's files
   onStep(`Reading ${fmtInt(files.length)} file${files.length === 1 ? '' : 's'}…`);
   const F = await yoursRead(files);
   if (!F.lis.length) throw new Error(`No lis.py table among ${files.map((f) => f.name).join(', ')}: it needs the columns name (A___B) and iLIS.`);
-  const { P, labs, rows } = yoursPairs(F.lis), R = await yoursResolve(sp, labs, F.maps, F.fasta, onStep), adj = new Map();
+  const { P, labs, rows, models } = yoursPairs(F.lis), R = await yoursResolve(sp, labs, F.maps, F.fasta, onStep), adj = new Map();
+  const byRow = new Map(), add = (i, x) => { if (!byRow.has(i)) byRow.set(i, []); byRow.get(i).push(x); };   // per protein: its models past the cutoff, which side it is, and the partner
+  for (const md of models) { const ra = R.row.get(md.a), rb = R.row.get(md.b); if (!ra || !rb || ra.i === rb.i) continue;
+    add(ra.i, { row: md.row, q: 'i', lab: md.a, pkey: rb.key }); add(rb.i, { row: md.row, q: 'j', lab: md.b, pkey: ra.key }); }
   const put = (i, j, u) => { if (!adj.has(i)) adj.set(i, new Map()); const m = adj.get(i), x = m.get(j); if (!x || u.best > x.best) m.set(j, u); };
   let drawn = 0, past = 0;
   for (const u of P.values()) { const ra = R.row.get(u.a), rb = R.row.get(u.b); if (!ra || !rb || ra.i === rb.i) continue; drawn++; if (u.best >= CUT[10]) past++; put(ra.i, rb.i, u); put(rb.i, ra.i, u); }
   const byHow = new Map(); for (const h of R.how.values()) byHow.set(h, (byHow.get(h) || 0) + 1);
-  return { spId: sp.id, adj, files: F.files, skipped: F.skipped, nFasta: F.fasta.length, nMaps: F.maps.length, rows, pairs: P.size, drawn, past, labs: labs.size, byHow, down: R.down,
+  return { spId: sp.id, adj, byRow, seqs: R.seqs, files: F.files, skipped: F.skipped, nFasta: F.fasta.length, nMaps: F.maps.length, rows, pairs: P.size, drawn, past, labs: labs.size, byHow, down: R.down,
     missing: [...labs.keys()].filter((l) => !R.row.has(l)), other: R.other, keys: [...new Set([...R.row.values()].map((r) => r.key))] };
+}
+// Your predictions on a protein page: the models past the 10% cutoff with the protein as one chain, its residues placed on the
+// axis cLIP clusters on: the same sequence, a stretch found exactly once in it, or an alignment that lines up most of the shorter
+// sequence (CLIPResolver.alignMap, as for domains); with no sequence, only a model of the axis's own length, read as its own
+// numbering ("assumed"). Other models are left out and counted. Labels are yours~<partner key>, numbered when a pair has
+// several runs; the partner side is left as it is.
+async function yoursClipRows(Y, P, CQ, qSeq) {
+  const list = Y.byRow.get(P.i) || [], rows = [], n = { same: 0, stretch: 0, aligned: 0, assumed: 0, out: 0 }, keys = new Set(), runs = new Map(), maps = new Map();
+  const placeOf = async (lab, qLen) => {   // → [how, residue → axis residue or null], or null when it cannot be placed
+    if (maps.has(lab + '|' + qLen)) return maps.get(lab + '|' + qLen);
+    const us = (Y.seqs || {})[lab] || '', ax = CQ.qLen; let r = null;
+    if (us && us.length !== qLen) r = null;   // the FASTA's sequence is not the folded construct
+    else if (!us || !qSeq) r = qLen === ax ? ['assumed', (x) => x] : null;
+    else if (us === qSeq) r = ['same', (x) => x];
+    else { const at = qSeq.indexOf(us);
+      if (at >= 0 && qSeq.indexOf(us, at + 1) < 0) r = ['stretch', (x) => x + at];
+      else { try { await liviaReady(); const mi = CLIPResolver.alignMap(us, qSeq); if (mi && mi.covered >= 0.8 * Math.min(us.length, qSeq.length)) r = ['aligned', (x) => mi.map[x - 1] || null]; } catch (e) { r = null; } } }
+    maps.set(lab + '|' + qLen, r); return r; };
+  for (const x of list) {
+    if (x.pkey === P.key) continue;   // the protein with itself: a homodimer, not a partner
+    const q = x.q, o = { ...x.row }, qLen = +o['len_' + q], pl = await placeOf(x.lab, qLen);
+    if (!pl) { n.out++; continue; }
+    const [how, f] = pl; n[how]++;
+    const mv = (v) => rangesOf([...new Set(expand(v).map(f).filter((r) => r != null && r >= 1 && r <= CQ.qLen))].sort((a, b) => a - b));
+    if (how !== 'same' && how !== 'assumed') { o['LIR_indices_' + q] = mv(o['LIR_indices_' + q]); o['cLIR_indices_' + q] = mv(o['cLIR_indices_' + q]); }
+    o['len_' + q] = String(CQ.qLen);
+    const rk = `${x.pkey}|${o.name}`; if (!runs.has(rk)) runs.set(rk, [...runs.keys()].filter((k) => k.startsWith(x.pkey + '|')).length + 1);
+    const lab = `yours~${x.pkey}` + (runs.get(rk) > 1 ? `~${runs.get(rk)}` : '');
+    o.name = q === 'i' ? `${P.key}___${lab}` : `${lab}___${P.key}`; rows.push(o); keys.add(x.pkey); }
+  return { rows, n, keys };
 }
 // The edge list with the reader's pairs laid over it: a pair the Atlas has keeps the Atlas's numbers and gains `u`; a pair only
 // the reader has takes its iLIS and ipTM, with no screen (src 0). Every reader of E.adj (tree, top partners, significance) sees both.
