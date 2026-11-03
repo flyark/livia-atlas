@@ -6597,13 +6597,25 @@ async function viewNetwork(spId, q) {
 
 /* ── router ─────────────────────────────────────────────────────────────────────────────────────────── */
 // GoatCounter counts page loads only; the atlas routes by #/…, so each view is counted by hand, on the atlas's own
-// counter (livia-atlas.goatcounter.com). A view is counted by its species only ('/human', '/virus', …; every other page as
-// '/'): the counter shows how much each species is used, never which protein, pair or virus a reader opened.
+// counter (livia-atlas.goatcounter.com). GoatCounter counts a visit once per path per session, so a view is counted two ways:
+// a page by its kind ('/human', '/human/protein', '/human/pair', '/human/network', '/datasets', '/about', …), and a protein,
+// pair or virus page also as an event named by what it shows ('human/TP53', 'human/TP53/MDM2'), so each one opened counts.
 // Every species of the registry counts under its own id (the list grows with the Atlas; a fixed list sent new species to '/').
 async function trackView() {
   const reg = await registry().catch(() => null), ids = new Set(((reg && reg.species) || []).map((x) => x.id));
-  const sp = location.hash.replace(/^#\/?/, '').split(/[/?]/)[0], path = ids.has(sp) ? `/${sp}` : '/';
-  const count = () => window.goatcounter && window.goatcounter.count && window.goatcounter.count({ path, title: path === '/' ? 'LIVIA Atlas' : `${sp} · LIVIA Atlas` });
+  const { parts } = hashPath(), sp = parts[0] || '', title = document.title;
+  let path = '/', event = '';
+  if (ids.has(sp)) {
+    const k = parts[1], kind = !k ? '' : ['network', 'nested', 'homodimers'].includes(k) && parts.length === 2 ? k
+      : k === 'taxon' ? 'virus' : parts.length === 2 ? 'protein' : 'pair';
+    path = `/${sp}${kind ? `/${kind}` : ''}`;
+    if (['protein', 'pair', 'virus'].includes(kind)) event = parts.join('/');
+  } else if (['datasets', 'about', 'species'].includes(sp)) path = `/${sp}`;
+  const count = () => {
+    if (!(window.goatcounter && window.goatcounter.count)) return;
+    window.goatcounter.count({ path, title: path === '/' ? 'LIVIA Atlas' : `${path.slice(1).replace(/\//g, ' · ')} · LIVIA Atlas` });
+    if (event) window.goatcounter.count({ path: event, title: title.replace(/ · LIVIA Atlas$/, ''), event: true });
+  };
   if (window.goatcounter && window.goatcounter.count) count(); else window.addEventListener('load', () => setTimeout(count, 0), { once: true });
 }
 const hashPath = () => { const [path, q] = location.hash.replace(/^#\/?/, '').split('?'); return { parts: path.split('/').filter(Boolean).map(decodeURIComponent), q: new URLSearchParams(q || '') }; };
