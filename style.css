@@ -750,6 +750,9 @@ table.cuts td.mdl { color: var(--ink-3); text-align: left; font-variant-numeric:
 /* network builder, as LIVIA's network page: a stats row, the drawing with a Communities list beside it */
 .nw-stats { display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: baseline; margin: 0 0 10px; font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .nw-stats b { color: var(--ink); font-size: 16px; font-weight: 700; }
+.nw-statrow { display: flex; flex-wrap: wrap; gap: 6px 22px; align-items: baseline; justify-content: space-between; margin: 0 0 10px; }
+.nw-statrow .nw-stats { margin: 0; }
+.nw-findbox input { max-width: 100%; }
 .nw-body { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 14px; align-items: start; }
 .nw-body > .net { height: 680px; }
 .nw-mods { max-height: 680px; overflow-y: auto; padding-right: 4px; }
