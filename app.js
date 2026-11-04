@@ -447,11 +447,12 @@ async function testedFor(sp, ij) {
 async function edgesFor(sp, ij) {
   const out = new Map(), key = (a, b) => `${Math.min(a, b)},${Math.max(a, b)}`, S = (sp.manifest.files || {}).edgesShards;
   const ks = S ? new Set(ij.map(([a, b]) => Math.min(a, b) % S)) : null;
-  if (!S || (sp.edgesBy && sp.edgesBy.has('')) || ks.size > 75) {
-    const E = await edges(sp);
+  const whole = async () => { const E = await edges(sp);
     for (const [a, b] of ij) { const x = (E.adj.get(a) || new Map()).get(b); if (x) out.set(key(a, b), { best: x.best, iptm: x.iptm, src: x.src }); }
-    return out; }
+    return out; };
+  if (!S || (sp.edgesBy && sp.edgesBy.has('')) || ks.size > 75) return whole();
   const want = new Set(ij.map(([a, b]) => key(a, b)));
+  try {
   await Promise.all([...ks].map(async (k) => {
     const text = await getText(store(`${sp.base}edges/${k}.grp`)), L = text.split('\n');
     if (!L[0].startsWith('livia-edges/1')) throw new Error('The pair file has an unknown layout.');
@@ -460,6 +461,7 @@ async function edgesFor(sp, ij) {
       if (l.charCodeAt(0) === 35) { i += +l.slice(1); j = i; continue; }
       const t = l.split('\t'); j += +t[0]; const kk = key(i, j);
       if (want.has(kk)) out.set(kk, { best: +t[1] / 1000, iptm: t[2] === '' ? NaN : +t[2] / 100, src: +t[3] }); } }));
+  } catch (e) { out.clear(); return whole(); }   // a shard did not load: the whole file
   return out;
 }
 // testedFor as the index's own interface (has, score) for just those pairs
@@ -4140,7 +4142,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       link.filter((d) => !st.kb && !d.q && same(d) != null).raise(); link.filter(st.hit).raise();   // group pairs, then reported pairs, on top
       const keep = shown(); link.attr('display', (d) => (keep(d) ? null : 'none'));
       $('#net-kbkey').innerHTML = st.kb ? edgeKey(st, K, links) : `<div class="kbrow"><span class="muted">pairs inside a ${ND.col === 'cluster' ? 'cluster' : 'community'} in its color, the others and ${esc(P.gene)}'s own pairs light gray; width: ${ONE ? 'iLIS' : 'best iLIS'}</span></div>`; };
-    link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS ${ONE ? d.best.toFixed(3) : `best ${d.best.toFixed(3)}${Number.isFinite(d.avg) ? ` · average ${d.avg.toFixed(3)}` : ''}`}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
+    // a pair between two partners: its BioGRID record needs the whole file, read the first time one is pointed at (the protein's own pairs come from its shard)
+    let kbState = K || !hasKB ? 'done' : '';
+    const nid = (v) => (typeof v === 'object' ? v.id : v);
+    const kbFor = (d) => { if (d.q || kbState === 'done') return ''; if (kbState === 'failed') return ' · BioGRID did not load';
+      if (!kbState) { kbState = 'loading'; reported(sp).then((W) => { if (!W) { kbState = 'failed'; return; } links.forEach((l) => { if (!l.q) { l.pubs = W.pubs(nid(l.source), nid(l.target)); l.gen = W.gen(nid(l.source), nid(l.target)); } }); kbState = 'done'; }).catch(() => { kbState = 'failed'; }); }
+      return ' · checking BioGRID…'; };
+    link.on('mousemove', (ev, d) => showTip(`<b>${esc(sp.rows[typeof d.source === 'object' ? d.source.id : d.source].gene)}</b> × <b>${esc(sp.rows[typeof d.target === 'object' ? d.target.id : d.target].gene)}</b> · iLIS ${ONE ? d.best.toFixed(3) : `best ${d.best.toFixed(3)}${Number.isFinite(d.avg) ? ` · average ${d.avg.toFixed(3)}` : ''}`}${d.pubs || d.gen ? ` · reported in BioGRID (${kbPubs(d.pubs, d.gen)})` : ''}${kbFor(d)}`, ev.clientX, ev.clientY)).on('mouseleave', hideTip);
     const r = (d) => (d.q ? 18 : 6 + Math.min(10, Math.sqrt(deg.get(d.id) || 1) * 1.6));   // the layout's spacing (collisions), kept so a seed repeats the same drawing
     const node = g.append('g').selectAll('g').data(nodes).join('g').style('cursor', 'pointer')
       .call(d3.drag().on('start', (ev, d) => { if (!ev.active) sim.alphaTarget(0.25).restart(); d.fx = d.x; d.fy = d.y; })
@@ -5772,7 +5780,7 @@ async function viewPairs(spId, q) {
   tableInput({ card: $('#pr-in'), file: $('#pr-file'), sheetWrap: $('#pr-sheet-wrap'), sheet: $('#pr-sheet'), onStatus: (h) => { $('#pr-note').innerHTML = h; },
     onText: (t) => { const P = pairLines(t); $('#pr-ids').value = P.map(([a, b]) => `${a} ${b}`).join('\n'); $('#pr-note').textContent = `${fmtInt(P.length)} pair${P.length === 1 ? '' : 's'} read`; go(); } });
   speciesCombo($('#pr-sp'), REG);
-  $('#pr-sp').onchange = (e) => { const P = pairLines($('#pr-ids').value); if (P.length) pairKeep({ text: P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join('\n'), of: P.length > PAIR_MAX ? P.length : 0 }); location.hash = `#/pairs/${e.target.value}`; };
+  $('#pr-sp').onchange = (e) => { const P = pairLines($('#pr-ids').value); pairKeep(P.length ? { text: P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join('\n'), of: P.length > PAIR_MAX ? P.length : 0 } : null); location.hash = `#/pairs/${e.target.value}`; };
   if (!qtext) return;
 
   // The lookup
