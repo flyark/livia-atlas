@@ -1761,36 +1761,6 @@ async function viewHome() {
   mountSearch($('#home-search'), { big: true, autofocus: true });
   showcase();
 }
-function dsCard(d) {
-  const live = d.status === 'live', spx = ((REG && REG.species) || []).find((s) => s.id === d.species);
-  const rec = d.status === 'record' && d.zip && d.zip.record;   // in the data files only: in nearly all of its pairs one protein belongs to another taxon (95% or more in every such set), so no species page; its own short page
-  const head = `<span class="badge ${live ? 'on' : 'soon'}">${live ? 'Searchable' : d.status === 'external' ? 'Separate site' : d.status === 'record' ? 'No species page' : 'Planned'}</span>
-    <h3>${live ? `<a href="#/datasets/${d.id}">${esc(d.title)}</a>` : rec ? `<a href="#/datasets/${esc(d.id)}" title="no species page: in nearly all of its pairs one protein belongs to another taxon, so the Atlas has no species page for it">${esc(d.title)}</a>` : d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)}</a>` : esc(d.title)}</h3>
-    <div class="sp">${spName(spx ? spx.name : d.speciesName || d.species || '')}${live && d.short ? ` · <span class="src" style="--c:${d.color}">${esc(d.short)}</span>` : ''}</div>${live && d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}`;
-  const src = d.paper ? `<a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.source)} ↗</a>` : esc(d.source);   // every paper reference links to the paper
-  return `<div class="ds ${live ? 'live' : ''}" data-ds="${d.id}">${head}${live ? '<div class="stats"></div>' : ''}
-    <div class="src-line">${src}${d.note ? ` — ${esc(d.note)}` : ''}</div>${live || d.status === 'record' ? dataLine(d) : ''}</div>`;
-}
-function homoDsCard(reg) {   // the homodimer release: on protein pages and its lists; its card counts entries (isoforms included) and nothing past a cutoff
-  const H = reg.homodimers; if (!H || !H.species) return '';
-  const sps = Object.keys(H.species), n = sps.reduce((a, k) => a + (H.species[k].entries || 0), 0);
-  return `<div class="ds live" data-ds="homodimers"><span class="badge on">On protein pages</span><h3><a href="#/datasets/homodimers">${esc(H.title)}</a></h3>
-    <div class="sp">${fmtInt(sps.length)} species · one model per protein · called with the iLIS cutoffs</div>
-    <div class="stats"><div><b>${fmtInt(n)}</b><span>entries</span></div></div>
-    <div class="src-line"><a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a></div></div>`;
-}
-async function fillDsStats() {
-  const live = (await registry()).datasets.filter((x) => x.status === 'live');
-  const got = await Promise.all(live.map((d) => dataset(d.id).catch(() => null)));   // every manifest at once, then the cards in order
-  for (const [n, d] of live.entries()) {
-    const s = got[n]; if (!s) continue;
-    const k = s.manifest.counts, box = app.querySelector(`[data-ds="${d.id}"] .stats`);
-    if (box) box.innerHTML = `<div><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div><b>${fmtInt(k.pairsFpr10)}</b><span>past 10% FPR${cutNote(10)}</span></div>`;
-    const TS = await setsOf(s).catch(() => null), scr = TS ? TS.list.filter((x) => x.type === 'screen') : [];   // its named screens, as thematic sets
-    if (box && scr.length && !box.parentElement.querySelector('.setchips')) box.insertAdjacentHTML('afterend', `<div class="setchips"><span>Sets</span>${scr.map((x) =>
-      `<a class="src" style="--c:${x.color}" href="#/datasets/${d.id}/${x.id}">${esc(x.short)}</a>`).join('')}<a href="#/datasets/${d.id}">all ${TS.list.length} ›</a></div>`);
-  }
-}
 // The home banner: example proteins from every species, precomputed by LIVIA cLIP (atlas build/make_showcase.js), one
 // every 7 s, each with its contact residue frequency over its clustered fingerprints. Hover or focus pauses it; with
 // reduced motion it only moves when asked.
@@ -1884,38 +1854,53 @@ async function showcase() {
   show(0); run();
 }
 
+// The Datasets page: a reference list. One entry per paper, with what it covers: each screen (or set) it gave the Atlas,
+// its species, and its proteins, pairs and pairs past 10% FPR. Screens of one paper share one entry (the AFDB heterodimer
+// screens, MitoMatch, the kinase–kinase and genome-maintenance screens); a long list folds.
 async function viewDatasets() {
   const gen = ROUTE, reg = await registry();
   if (stale(gen)) return;
   document.title = 'Datasets · LIVIA Atlas';
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a></div><h1 class="sr-only">Datasets</h1>
-    <h2 class="section-h" style="margin-top:4px">Datasets</h2>
-    <p class="muted" style="font-size:14px;margin:-6px 0 14px">Each card links to the source of its screen. The scores and tables are under CC BY 4.0. A copy is also archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo ↗</a>, which the site reads when the lab's server is down. A card counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Cards marked No species page are sets in which nearly every pair (95% or more) joins a protein of another taxon, so they have no species page here.</p>
-    <div class="datasets live-row" id="ds-cards">${reg.datasets.filter((d) => d.status !== 'planned').map(dsCard).join('')}${homoDsCard(reg)}</div>`;
-  fillDsStats(); setCards(gen, reg);
-}
-// A screen kept as a set inside a larger dataset (the fly kinase–kinase and kinase–TF screens in FlyPredictome) gets its
-// own card, placed after the other screens of its kind; it cites what they cite.
-async function setCards(gen, reg) {
-  const live = reg.datasets.filter((x) => x.status === 'live');
-  const all = await Promise.all(live.map((d) => dataset(d.id).then(setsOf).catch(() => null)));   // every set list at once, then the cards in order
-  for (const [n, d] of live.entries()) {
-    const TS = all[n];
-    if (stale(gen) || !TS) continue;
-    const spx = (reg.species || []).find((s) => s.id === d.species);
+  const shown = reg.datasets.filter((d) => d.status !== 'planned'), refs = new Map();
+  for (const d of shown) { const sc = screenCite(d), key = sc.k || `id:${d.id}`;
+    if (!refs.has(key)) refs.set(key, { sc, d, rows: [] }); refs.get(key).rows.push(d); }
+  const H = reg.homodimers;
+  if (H && H.species) { const g = refs.get('han2026'); if (g) g.homo = H; }   // the homodimer release comes from the same paper
+  const spOf = (id) => (reg.species || []).find((s) => s.id === id);
+  const row = (d) => { const spx = spOf(d.species), live = d.status === 'live';
+    const name = live || d.status === 'record' ? `<a href="#/datasets/${esc(d.id)}">${esc(d.title.replace(/ \([^()]* (?:19|20)\d\d\)$/, ''))}</a>` : d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.title)} ↗</a>` : esc(d.title);
+    const note = d.status === 'record' ? ' <span class="muted">no species page</span>' : d.status === 'external' ? ' <span class="muted">separate site</span>' : '';
+    return `<tr data-ds="${esc(d.id)}"><td>${name}${note}</td><td>${spName(spx ? spx.name : d.speciesName || d.species || '')}</td><td class="n" data-k="proteins"></td><td class="n" data-k="pairs"></td><td class="n" data-k="pairsFpr10"></td></tr>`; };
+  const head = `<thead><tr><th>Dataset</th><th>Species</th><th class="n">Proteins</th><th class="n">Pairs</th><th class="n">Past 10% FPR</th></tr></thead>`;
+  const entry = ({ sc, d, rows, homo }) => {
+    const citation = sc.k ? `${sc.text} <a href="${esc(sc.url)}" target="_blank" rel="noopener">doi.org/${esc(REF[sc.k][1])}</a>` : `${esc(d.source || d.title)}${d.paper ? ` <a href="${esc(d.paper)}" target="_blank" rel="noopener">${esc(d.paper.replace(/^https?:\/\//, ''))}</a>` : ''}`;
+    const sps = new Set(rows.map((x) => x.species || x.speciesName).filter(Boolean)), lic = [...new Set(rows.map((x) => x.license).filter(Boolean))].join(', ') || 'not stated';
+    const homoRow = homo ? `<tr data-ds="homodimers"><td><a href="#/datasets/homodimers">${esc(homo.title)}</a></td><td>${fmtInt(Object.keys(homo.species).length)} species</td><td class="n">${fmtInt(Object.keys(homo.species).reduce((a, k) => a + (homo.species[k].entries || 0), 0))} <span class="muted">entries</span></td><td class="n">–</td><td class="n">–</td></tr>` : '';
+    const n = rows.length + (homo ? 1 : 0), tbl = `<div class="tbl-wrap"><table class="sets">${head}<tbody>${rows.map(row).join('')}${homoRow}</tbody></table></div>`;
+    return `<li><div class="ref-cit">${citation}</div>
+      <div class="ref-cov muted">${sps.size > 1 ? `${fmtInt(sps.size)} species · ` : ''}data license ${esc(lic)}</div>
+      ${n > 6 ? `<details class="ref-more"><summary>${fmtInt(n)} datasets</summary>${tbl}</details>` : tbl}</li>`; };
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a></div>
+    <div class="card"><h1 style="margin:0 0 6px">Datasets</h1>
+    <p class="muted" style="margin:0 0 4px">The papers whose predictions the Atlas holds, and what each covers. Each dataset links to its page, with its run settings and source files. The scores and tables are under CC BY 4.0; a copy is archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo ↗</a>, which the site reads when the lab's server is down.</p>
+    <p class="muted" style="margin:0 0 4px">A dataset counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Past 10% FPR: the pair's best model has iLIS ≥ ${CUT[10].toFixed(3)}.</p>
+    <ol class="reflist">${[...refs.values()].map(entry).join('')}</ol></div>`;
+  // the counts: every manifest at once; a screen kept as a set inside a larger dataset (the fly kinase–kinase and kinase–TF
+  // screens in FlyPredictome) joins the entry of the paper its kind cites, after that paper's own rows
+  const live = shown.filter((x) => x.status === 'live'), got = await Promise.all(live.map((d) => dataset(d.id).catch(() => null)));
+  if (stale(gen)) return;
+  const fill = (tr, k) => { if (tr && k) tr.querySelectorAll('td[data-k]').forEach((td) => { td.textContent = fmtInt(k[td.dataset.k] || 0); }); };
+  live.forEach((d, i) => { if (got[i]) fill(app.querySelector(`tr[data-ds="${d.id}"]`), got[i].manifest.counts); });
+  Promise.all(shown.filter((x) => x.status === 'record' && x.base).map((d) => getJSON(d.base + 'manifest.json').then((m) => { if (!stale(gen)) fill(app.querySelector(`tr[data-ds="${d.id}"]`), m && m.counts); }).catch(() => {})));   // a set with no species page: its own manifest
+  const sets = await Promise.all(got.map((s) => (s ? setsOf(s).catch(() => null) : null))); if (stale(gen)) return;
+  live.forEach((d, i) => { const TS = sets[i]; if (!TS) return;
     for (const s of TS.list.filter((x) => x.type === 'screen')) {
-      const box = $('#ds-cards'); if (!box || box.querySelector(`[data-set="${d.id}/${s.id}"]`)) continue;
-      const kin = reg.datasets.filter((x) => x.short === s.short && x.id !== d.id), cite = kin[0], k = s.counts || {};
-      const src = cite ? (cite.paper ? `<a href="${esc(cite.paper)}" target="_blank" rel="noopener">${esc(cite.source)} ↗</a>` : esc(cite.source)) : '';
-      const card = `<div class="ds live" data-set="${d.id}/${s.id}"><span class="badge on">Searchable</span>
-        <h3><a href="#/datasets/${d.id}/${s.id}">${esc(spx ? spx.label : d.species)} ${esc(s.title.charAt(0).toLowerCase() + s.title.slice(1))}</a></h3>
-        <div class="sp">${spName(spx ? spx.name : d.species)} · <span class="src" style="--c:${s.color}">${esc(s.short)}</span></div>${d.models ? `<div class="sp">${runSettings(d)}</div>` : ''}
-        <div class="stats"><div><b>${fmtInt(k.proteins)}</b><span>proteins</span></div><div><b>${fmtInt(k.pairs)}</b><span>pairs</span></div><div><b>${fmtInt(k.pairsFpr10)}</b><span>past 10% FPR${cutNote(10)}</span></div></div>
-        <div class="src-line">${src}${src ? ' · ' : ''}a set within <a href="#/datasets/${d.id}">${esc(d.title)}</a></div>${dataLine(cite || d)}</div>`;
-      const after = kin.map((x) => box.querySelector(`[data-ds="${x.id}"]`)).filter(Boolean)[0];
-      if (after) after.insertAdjacentHTML('afterend', card); else box.insertAdjacentHTML('beforeend', card);
-    }
-  }
+      const kin = reg.datasets.filter((x) => x.short === s.short && x.id !== d.id), at = kin.map((x) => app.querySelector(`tr[data-ds="${x.id}"]`)).filter(Boolean).pop();
+      if (!at || app.querySelector(`tr[data-set="${d.id}/${s.id}"]`)) continue;
+      const spx = spOf(d.species);
+      at.insertAdjacentHTML('afterend', `<tr data-set="${d.id}/${s.id}"><td><a href="#/datasets/${d.id}/${s.id}">${esc(spx ? spx.label : d.species)} ${esc(s.title.charAt(0).toLowerCase() + s.title.slice(1))}</a> <span class="muted">a set within ${esc(d.title)}</span></td><td>${spName(spx ? spx.name : d.species)}</td><td class="n" data-k="proteins"></td><td class="n" data-k="pairs"></td><td class="n" data-k="pairsFpr10"></td></tr>`);
+      fill(at.nextElementSibling, s.counts);
+    } });
 }
 
 async function viewSpeciesList() {   // every species: model organisms (the Atlas's own screens, then AFDB ones), other species, viral proteomes

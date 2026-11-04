@@ -889,3 +889,11 @@ a[data-m3d] { white-space: nowrap; }
 .clip-yours label { display: inline-flex; gap: 5px; align-items: center; cursor: pointer; }
 .clip-yours .linkbtn { font: inherit; color: var(--navy); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
 .yours-only { border-bottom: 1px dotted #5B3A86; }   /* a partner only in your predictions: no pair page to open */
+/* Datasets: a reference list, one entry per paper with the datasets it gave */
+.reflist { margin: 14px 0 0; padding-left: 1.6em; display: flex; flex-direction: column; gap: 22px; }
+.reflist > li { padding-left: 4px; }
+.reflist > li::marker { color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.ref-cit { font-size: 15px; line-height: 1.5; color: var(--ink); }
+.ref-cov { font-size: 13px; margin: 2px 0 8px; }
+.ref-more > summary { cursor: pointer; font-size: 13.5px; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
+.reflist .sets td:nth-child(2) { min-width: 140px; }
