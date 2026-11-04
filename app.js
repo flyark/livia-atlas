@@ -2439,7 +2439,7 @@ function nearRow(sp, t) {   // a protein here whose gene symbol is the name with
   if (!r && k.length >= 4) for (const [kk, rr] of sp.nearIx) if (Math.abs(kk.length - k.length) <= 1 && lev1(kk, k)) { r = rr; break; }
   return r || null;
 }
-const netLink = (spId, names) => `#/${spId}/network?ids=${encodeURIComponent(names.join(','))}`;
+const netLink = (spId, names) => `#/network/${spId}?ids=${encodeURIComponent(names.join(','))}`;
 async function explainMissing(sp, missing, { all = missing, link = netLink } = {}) {
   const toks = [...new Set(missing)].slice(0, 200), left = new Set(toks), out = [], reg = await registry(), heads = [];
   if (sp.absent === undefined) sp.absent = (sp.manifest.files || {}).absent ? await getJSON(sp.base + sp.manifest.files.absent).catch(() => null) : null;   // real genes the screens do not hold (UniProt, human)
@@ -2706,7 +2706,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <label class="ctl" title="draw only each partner's strongest pairs with the other partners (kept when strong for either); 0 draws every pair. Every partner keeps its pair with ${esc(P.gene)}">Strongest <input type="number" id="net-topk" min="0" max="50" step="1" value="0" style="width:52px"> pairs per protein</label></div>
       <details class="how" style="margin:2px 0 12px"><summary>How to read the network</summary><p>${esc(P.gene)} at the center; partners sit closer the higher their iLIS and are filled with the color of their binding-site cluster (or, as you choose, of the community they form through their pairs with each other). Pairs inside a group are drawn in its color, the others light gray. Edges between partners join partners
         predicted to bind each other, in any screen${setId ? ' (on this screen or set page, in it only)' : ''}. Drag to move, scroll to zoom, click to open.</p></details>
-      <p class="net-links"><a href="#/${sp.id}/network?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a><span id="net-open"></span></p>
+      <p class="net-links"><a href="#/network/${sp.id}?ids=${encodeURIComponent(P.gene)}&add=top&k=10">Build a network with other proteins →</a><span id="net-open"></span></p>
       <div class="nw-stats" id="net-stats"></div>
       <div class="nw-body"><div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div><aside class="nw-mods" id="net-mods" hidden aria-label="Groups of partners"></aside></div>
       <div class="netkey"><div class="kbkey" id="net-kbkey"></div>
@@ -4068,7 +4068,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     netBox.innerHTML = '<svg></svg>';
     if (!nb.length) { netBox.innerHTML = '<div class="empty">No partners past this cutoff.</div>'; return; }
     const nodes = [{ id: P.i, row: P, q: true }, ...nb.map(([j, e]) => ({ id: j, row: sp.rows[j], e }))];
-    { const o = $('#net-open'); if (o) o.innerHTML = ` · <a href="#/${sp.id}/network?ids=${encodeURIComponent(nodes.map((d) => d.row.key).join(','))}&add=none">Open these ${fmtInt(nodes.length)} proteins in the network builder →</a>`; }   // every protein drawn, as the builder's input: how they connect, no center
+    { const o = $('#net-open'); if (o) o.innerHTML = ` · <a href="#/network/${sp.id}?ids=${encodeURIComponent(nodes.map((d) => d.row.key).join(','))}&add=none">Open these ${fmtInt(nodes.length)} proteins in the network builder →</a>`; }   // every protein drawn, as the builder's input: how they connect, no center
     const links = nb.map(([j, e]) => ({ source: P.i, target: j, best: e.best, avg: e.avg, q: true }));
     for (let a = 1; a < nodes.length; a++) { const mm = E.adj.get(nodes[a].id); if (!mm) continue;
       for (let b = a + 1; b < nodes.length; b++) { const e = mm.get(nodes[b].id); if (e && e.best >= c) links.push({ source: nodes[a].id, target: nodes[b].id, best: e.best, avg: e.avg }); } }
@@ -4202,7 +4202,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     host.innerHTML = `<div class="tbl-wrap"><table class="pt compact para-tbl${PARA.pan ? ' para-pan' : ''}"><thead><tr><th>Paralog</th>${PARA.pan ? '<th title="the duplication lies on this branch of PANTHER’s species tree, from the older clade to the younger one; ND: not determined">Duplicated between</th><th title="the PANTHER family both genes belong to">Family</th>' : '<th class="num" title="identical residues over the aligned length">Identity</th><th class="num" title="similar residues over the aligned length">Similarity</th><th class="num">Aligned</th><th class="num" title="how many of the Alliance\'s prediction methods call the pair">Methods</th><th>Confidence</th>'}<th class="num">Shared partners${tipQ(`Partners of both proteins past 10% FPR: the number both have, of ${P.gene}'s ${fmtInt(PARA.mine.size)} and the paralog's own count; the link draws them.`)}</th><th class="num" title="the two proteins as a predicted pair past 10% FPR: its best iLIS">As a pair</th></tr></thead><tbody>`
       + rows.map((x) => `<tr${x.conf ? '' : ' class="para-low"'}><td>${x.r ? `<a href="#/${sp.id}/${esc(x.k2)}">${esc(x.r.gene)}</a>${x.r.name ? ` <span class="muted">${esc(short(x.r.name))}</span>` : ''}` : `${esc(x.k2)} <span class="muted">not in the Atlas index</span>`}</td>`
         + (PARA.pan ? `<td>${esc(x.from)} → ${esc(x.to)}</td><td><a href="https://www.pantherdb.org/panther/family.do?clsAccession=${encodeURIComponent(x.fam)}" target="_blank" rel="noopener">${esc(x.fam)}</a></td>` : `<td class="num">${x.id}%</td><td class="num">${x.sim}%</td><td class="num">${fmtInt(x.len)} aa</td><td class="num">${x.meth}</td><td>${CONFW[x.conf]}</td>`)
-        + `<td class="num">${x.shared == null ? '–' : x.shared ? `<a href="#/${sp.id}/network?ids=${encodeURIComponent(`${P.key},${x.k2}`)}&add=link&hops=1&cut=10" title="draw ${esc(P.gene)}, ${esc(x.r.gene)} and the partners they share">${fmtInt(x.shared)}</a> <span class="muted">of ${fmtInt(PARA.mine.size)} · ${fmtInt(x.theirs)}</span>` : `0 <span class="muted">of ${fmtInt(PARA.mine.size)} · ${fmtInt(x.theirs)}</span>`}</td>`
+        + `<td class="num">${x.shared == null ? '–' : x.shared ? `<a href="#/network/${sp.id}?ids=${encodeURIComponent(`${P.key},${x.k2}`)}&add=link&hops=1&cut=10" title="draw ${esc(P.gene)}, ${esc(x.r.gene)} and the partners they share">${fmtInt(x.shared)}</a> <span class="muted">of ${fmtInt(PARA.mine.size)} · ${fmtInt(x.theirs)}</span>` : `0 <span class="muted">of ${fmtInt(PARA.mine.size)} · ${fmtInt(x.theirs)}</span>`}</td>`
         + `<td class="num">${x.pair != null ? `<a href="#/${sp.id}/${esc(P.key)}/${esc(x.k2)}"><span class="para-ilis">iLIS </span>${x.pair.toFixed(3)}</a>` : '–'}</td></tr>`).join('') + '</tbody></table></div>'
       + '<div class="plot" id="para-wrap"></div><div class="legend" id="para-key"></div><div id="para-sites"></div><div id="para-aln"></div>';
     paraSites(); if (PALN.c) paraAlign(); paraLoad();
@@ -4854,7 +4854,7 @@ async function viewSpecies(spId) {
       <input type="search" id="vir-filter" placeholder="Filter by name or family" aria-label="Filter viruses by name, family, genus or species" style="width:220px"></div>
       <div class="tbl-wrap"><table class="pt" id="vir-t"></table></div><p class="muted" id="vir-note" style="margin:8px 0 0"></p></div>` : ''}
     <div class="card"><div class="card-head"><div><h2>Network of your proteins-of-interest</h2><div class="muted">name a few proteins; see the predicted pairs among them and, if you like, the partners they share</div></div>
-      <a class="btn" href="#/${sp.id}/network">Build a network →</a></div></div>
+      <a class="btn" href="#/network/${sp.id}">Build a network →</a></div></div>
     <div class="card"><h2>Screens</h2><div class="screens">${[...MAJ.major, ...MAJ.rest].map(scrCard).join('')}</div>
       ${sp.dsIds.length > 1 ? `<p class="muted" style="margin:10px 0 0">${fmtInt(c.pairsInSeveral)} pairs were predicted in more than one screen; their pages keep every model with its source.</p>` : ''}${sp.manifest.datasets.some((d) => /^afdb-het-/.test(d.id)) ? '<p class="muted" style="margin:6px 0 0">An AFDB screen\'s counts include its pairs with a protein of another taxon; this page counts only the pairs within its own taxon.</p>' : ''}</div>
     <div class="card"><h2>Most connected proteins <span class="muted">partners past the 10% FPR cutoff, any screen</span></h2>
@@ -5155,7 +5155,7 @@ async function viewNested(spId, q) {
     rounds: [1, 2, 3].includes(+q.get('rounds')) ? +q.get('rounds') : 3, strict: q.get('strict') === '1', para: q.get('para') === '1', hidden: false, col: null,
     cm: COMM_OPTS.some(([x]) => x === q.get('cm')) ? q.get('cm') : '', seed: Math.min(999999, Math.max(0, parseInt(q.get('seed'), 10) || 0)) };   // communities color the proteins (columns stay rounds)
   const G = sp.manifest.keyedBy ? 'genes' : 'proteins';
-  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/${sp.id}/network">Network</a> / <a href="${esc(location.hash)}">Nested</a></div>
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="#/network/${sp.id}">Network</a> / <a href="${esc(location.hash)}">Nested</a></div>
     <div class="dshead"><h1>Nested network <span class="tag-alpha">alpha</span></h1><div class="pname">${esc(sp.reg.label)} · baits, then the candidates predicted to join them, round by round</div></div>
     <div class="card" id="ns-in"><div class="card-head"><h2>Baits and candidates</h2><span class="muted">names as in the network builder: symbols, accessions, older names, or a table · drop a file (Excel, CSV, TSV) for the candidates</span></div>
       <label class="nlab">Baits<textarea class="ids" id="ns-baits" rows="2" spellcheck="false" placeholder="one or a few ${G}">${esc(S.baits.split(',').join(', '))}</textarea></label>
@@ -5202,7 +5202,7 @@ async function viewNested(spId, q) {
     const cands = C.ok.filter((i) => !B.ok.includes(i));
     const qs = new URLSearchParams({ baits: B.ok.map((i) => sp.rows[i].key).join(','), cut: S.cut, k: S.k, rounds: S.rounds }); if (S.strict) qs.set('strict', '1'); if (S.para) qs.set('para', '1'); if (Rc.toks.length <= 400) qs.set('ids', Rc.toks.join(','));
     if (S.cm) qs.set('cm', S.cm); if (S.seed) qs.set('seed', S.seed);
-    history.replaceState(null, '', `#/${sp.id}/nested?${qs}`);
+    history.replaceState(null, '', `#/nested/${sp.id}?${qs}`);
     { const mbox = $('#ns-miss'), mtok = String((+mbox.dataset.t || 0) + 1), miss = [...B.miss, ...C.miss]; mbox.dataset.t = mtok; mbox.hidden = true;   // why names were not found, as in the builder
       if (miss.length) explainMissing(sp, miss).then((L) => { if (mbox.dataset.t !== mtok || !L.length) return; mbox.innerHTML = `<b>${fmtInt(new Set(miss).size)} name${new Set(miss).size === 1 ? '' : 's'} not used${L.head ? `: ${L.head}` : ''}</b>` + L.map((x) => `<div>${x}</div>`).join(''); mbox.hidden = false; }); }
     if (!B.ok.length) { status(`Name at least one bait the ${esc(sp.reg.label)} screens hold${B.miss.length ? ` (not in the Atlas index: ${esc(B.miss.join(', '))})` : ''}.`); return; }
@@ -5711,14 +5711,14 @@ async function viewPairs(spId, q) {
       if (P.length) { showEg(P); egEl.parentElement.hidden = false; } }).catch(() => {}); }
   const go = () => { const P = pairLines($('#pr-ids').value); if (!P.length) { $('#pr-note').textContent = 'No pair to search: two names per line.'; return; }
     const qs = P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join(';');
-    location.hash = `#/${sp.id}/pairs?${new URLSearchParams({ q: qs, ...(P.length > PAIR_MAX ? { of: P.length } : {}) })}`; };   // of: how many the list had, when only the first PAIR_MAX are searched
+    location.hash = `#/pairs/${sp.id}?${new URLSearchParams({ q: qs, ...(P.length > PAIR_MAX ? { of: P.length } : {}) })}`; };   // of: how many the list had, when only the first PAIR_MAX are searched
   $('#pr-go').onclick = go;
   $('#pr-ids').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); go(); } };
   $('#pr-filebtn').onclick = () => $('#pr-file').click();
   tableInput({ card: $('#pr-in'), file: $('#pr-file'), sheetWrap: $('#pr-sheet-wrap'), sheet: $('#pr-sheet'), onStatus: (h) => { $('#pr-note').innerHTML = h; },
     onText: (t) => { const P = pairLines(t); $('#pr-ids').value = P.map(([a, b]) => `${a} ${b}`).join('\n'); $('#pr-note').textContent = `${fmtInt(P.length)} pair${P.length === 1 ? '' : 's'} read`; go(); } });
   speciesCombo($('#pr-sp'), REG);
-  $('#pr-sp').onchange = (e) => { const P = pairLines($('#pr-ids').value); location.hash = `#/${e.target.value}/pairs${P.length ? `?${new URLSearchParams({ q: P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join(';') })}` : ''}`; };
+  $('#pr-sp').onchange = (e) => { const P = pairLines($('#pr-ids').value); location.hash = `#/pairs/${e.target.value}${P.length ? `?${new URLSearchParams({ q: P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join(';') })}` : ''}`; };
   if (!qtext) return;
 
   // The lookup
@@ -5744,7 +5744,7 @@ async function viewPairs(spId, q) {
   // names not in this species: why (too long for the screens, not in them), and a switch when they look like another species' IDs
   const miss = [...new Set(res.flatMap((r) => [!r.A ? r.qa : null, !r.B ? r.qb : null]).filter(Boolean))];
   if (miss.length) {
-    const L = await explainMissing(sp, miss, { link: (id, names) => `#/${id}/pairs?${new URLSearchParams({ q: q.get('q') || '' })}` }).catch(() => []); if (stale(gen)) return;
+    const L = await explainMissing(sp, miss, { link: (id, names) => `#/pairs/${id}?${new URLSearchParams({ q: q.get('q') || '' })}` }).catch(() => []); if (stale(gen)) return;
     $('#pr-miss').innerHTML = `<div>Not found in ${esc(sp.reg.label)}: ${miss.slice(0, 30).map((t) => `<b>${esc(t)}</b>`).join(', ')}${miss.length > 30 ? ` and ${fmtInt(miss.length - 30)} more` : ''}.</div>` + L.map((x) => `<div>${x}</div>`).join(''); $('#pr-miss').hidden = false;
   }
   const cnt = (f) => res.filter(f).length, chip = (n, lab, col) => (n ? `<span><b${col ? ` style="color:${col}"` : ''}>${fmtInt(n)}</b> ${lab}</span>` : '');
@@ -5771,7 +5771,7 @@ async function viewPairs(spId, q) {
     $('#pr-t').querySelectorAll('th[data-k]').forEach((th) => { if (th.dataset.k === 'go') return; th.onclick = () => { const k = th.dataset.k; SO.asc = SO.k === k ? !SO.asc : ['n', 'a', 'b', 'st', 'src'].includes(k); SO.k = k; draw(); }; }); };
   draw();
   const prots = [...new Set(res.flatMap((r) => [r.A, r.B]).filter(Boolean).map((R) => R.gene))];
-  $('#pr-net').href = `#/${sp.id}/network?${new URLSearchParams({ ids: prots.join(','), add: 'none' })}`; $('#pr-net').hidden = !prots.length;
+  $('#pr-net').href = `#/network/${sp.id}?${new URLSearchParams({ ids: prots.join(','), add: 'none' })}`; $('#pr-net').hidden = !prots.length;
   $('#pr-link').onclick = async () => { const b = $('#pr-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
   $('#pr-csv').onclick = () => { const csvq = (v) => (/[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
     const base = `${location.origin}${location.pathname.replace(/index\.html$/, '')}`, ids = (R) => (R ? (byKey ? [R.key, R.acc || ''] : [R.acc || R.key]) : byKey ? ['', ''] : ['']);
@@ -5807,7 +5807,7 @@ async function viewNetwork(spId, q) {
   const GC = new Map();   // community colors the reader picked in the Communities list, by group key (this page only)
   let SELN = null, PREVG = null;   // the highlighted protein (Click: highlight it); the last drawing's communities, color index → members, so a click that adds partners keeps each community's color
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Network</a></div>
-    <div class="dshead"><h1>Network of your proteins-of-interest <span class="tag-alpha">alpha</span></h1><div class="pname inl"><a href="#/${sp.id}/nested">Nested network →</a> · baits and candidates, accepted round by round</div><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
+    <div class="dshead"><h1>Network of your proteins-of-interest <span class="tag-alpha">alpha</span></h1><div class="pname inl"><a href="#/nested/${sp.id}">Nested network →</a> · baits and candidates, accepted round by round</div><div class="pname">${esc(sp.reg.label)} · the predicted pairs among the ${sp.manifest.keyedBy ? 'genes' : 'proteins'} you name</div></div>
     <div class="card" id="nw-in"><div class="card-head"><h2>Proteins</h2><span class="muted">gene symbols, UniProt accessions (isoforms too)${sp.manifest.keyedBy ? ', FlyBase IDs, CG numbers' : ''} or older names · commas, spaces or new lines, or a table · or drop a file (Excel, CSV, TSV) on this card</span></div>
       <textarea class="ids" id="nw-ids" rows="3" spellcheck="false" placeholder="gene symbols or UniProt accessions, one per line or separated by commas">${esc(S.ids.split(',').join(', '))}</textarea>
       <div class="muted" style="margin:4px 0 0;font-size:13px">Or try the ${esc(sp.reg.label)} proteins with the most partners: <a href="#" id="nw-eg" title="put these in the box and draw their network">${esc(eg)}</a></div>
@@ -6121,7 +6121,7 @@ async function viewNetwork(spId, q) {
     const cats = (S.data || []).filter((x) => x.kind === 'cat'); if (S.grp.startsWith('col:') && !cats.some((x) => 'col:' + x.name === S.grp)) S.grp = '';
     $('#nw-grp').innerHTML = [['', 'none'], ['leiden', 'communities · Leiden'], ['comm', 'communities · Louvain'], ['mcl', 'communities · MCL'], ['cc', 'connected parts'], ...cats.map((x) => ['col:' + x.name, x.name])].map(([v, l]) => `<option value="${esc(v)}"${v === S.grp ? ' selected' : ''}>${esc(l)}</option>`).join(''); showRes();
     S.ids = toks.join(','); S.add = $('#nw-add').value; if (!S.kAuto) S.k = Math.max(1, Math.min(50, +$('#nw-k').value || 10)); S.set = $('#nw-set').value; if (+$('#nw-k').value !== S.k) $('#nw-k').value = S.k;   // the box shows the number used
-    const writeURL = () => { history.replaceState(null, '', `#/${sp.id}/network?${params()}`); };
+    const writeURL = () => { history.replaceState(null, '', `#/network/${sp.id}?${params()}`); };
     writeURL();
     if (!toks.length) { status('Name at least one protein.'); $('#nw-card').hidden = true; return; }
     if (toks.length === 1 && $('#nw-add').value !== 'top' && !seed) { $('#nw-add').value = 'top'; S.add = 'top'; showK(); }   // one protein alone has no pair: show its top partners
@@ -6570,7 +6570,7 @@ async function viewNetwork(spId, q) {
   const numBox = (id, key, lo, hi, int = false, blank = null) => { let t = 0; $(id).oninput = () => { const raw = $(id).value.trim(), v = raw === '' ? blank : int ? parseInt(raw, 10) : parseFloat(raw);
     if (v == null || !Number.isFinite(v) || (raw !== '' && (v < lo || v > hi))) return; S[key] = v; clearTimeout(t); t = setTimeout(redraw, 400); }; };
   numBox('#nw-res', 'res', 0.1, 5); numBox('#nw-infl', 'infl', 1.2, 6); numBox('#nw-cruns', 'cruns', 1, 50, true); numBox('#nw-cseed', 'cseed', 0, 999999, true, 0);
-  { const dURL = () => history.replaceState(null, '', `#/${sp.id}/network?${params()}`), dset = (k, v) => { S[k] = v; dURL(); if (net && net.disp) net.disp(); };   // the Display options restyle in place
+  { const dURL = () => history.replaceState(null, '', `#/network/${sp.id}?${params()}`), dset = (k, v) => { S[k] = v; dURL(); if (net && net.disp) net.disp(); };   // the Display options restyle in place
     [['#nw-nsize', 'nsize', 0.3, 3, false], ['#nw-ew', 'ewid', 0.2, 3, false], ['#nw-lbdeg', 'lbdeg', 1, 50, true], ['#nw-lbtop', 'lbtop', 0, 500, true], ['#nw-lbsize', 'lbsize', 6, 24, true], ['#nw-topk', 'topk', 0, 50, true]].forEach(([id, k, lo, hi, int]) => {
       $(id).oninput = () => { const raw = $(id).value.trim(), v = raw === '' ? (k === 'lbtop' || k === 'topk' ? 0 : null) : int ? parseInt(raw, 10) : parseFloat(raw); if (v == null || !Number.isFinite(v) || v < lo || v > hi) return; dset(k, v); }; });
     [['#nw-lbout', 'lbout'], ['#nw-nbord', 'nbord'], ['#nw-hulls', 'hulls'], ['#nw-intra', 'intra']].forEach(([id, k]) => { $(id).onchange = (e) => dset(k, e.target.checked); });
@@ -6593,10 +6593,10 @@ async function viewNetwork(spId, q) {
   $('#nw-xsp').onchange = (e) => { S.xsp = e.target.value; $('#nw-xo-wrap').hidden = !S.xsp; redraw(); };
   $('#nw-xo').onchange = (e) => { S.xo = e.target.value; redraw(); };
   speciesCombo($('#nw-sp'), REG);
-  $('#nw-sp').onchange = (e) => { const raw = $('#nw-ids').value, ids = S.ids || (/\t/.test(raw) ? '' : raw.split(/[\s,;]+/).filter(Boolean).join(',')); location.hash = `#/${e.target.value}/network?${new URLSearchParams({ ids, add: $('#nw-add').value })}`; };   // the names drawn last; a pasted table is not split into its cells
+  $('#nw-sp').onchange = (e) => { const raw = $('#nw-ids').value, ids = S.ids || (/\t/.test(raw) ? '' : raw.split(/[\s,;]+/).filter(Boolean).join(',')); location.hash = `#/network/${e.target.value}?${new URLSearchParams({ ids, add: $('#nw-add').value })}`; };   // the names drawn last; a pasted table is not split into its cells
   $('#nw-heat-cs').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
   $('#nw-heat-show').onchange = () => { if (heatArgs) heatmap(...heatArgs); };
-  $('#nw-ncol').onchange = (e) => { S.ncol = e.target.value; S.ncolUser = true; history.replaceState(null, '', `#/${sp.id}/network?${params()}`); if (net && net.recolor) net.recolor(); };   // the link keeps the choice at once
+  $('#nw-ncol').onchange = (e) => { S.ncol = e.target.value; S.ncolUser = true; history.replaceState(null, '', `#/network/${sp.id}?${params()}`); if (net && net.recolor) net.recolor(); };   // the link keeps the choice at once
   $('#nw-check').onclick = async () => { if (!net || !net.extra.length) return; const b = $('#nw-check'); if (b.dataset.busy) return; b.dataset.busy = '1';
     const e2 = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
     b.textContent = 'Checking…'; await checkFolded(net.extra.map(e2), (n, of) => { b.textContent = `Checking ${n} of ${of} proteins…`; });
@@ -6685,7 +6685,7 @@ async function viewNetwork(spId, q) {
     if (!X || X.format !== 'livia-atlas-network-settings' || !X.settings || typeof X.settings !== 'object') { status(`${esc(f.name)} is not a settings file from this page (saved with ↓ Settings).`); return; }
     if (!((REG && REG.species) || []).some((s) => s.id === X.species)) { status(`${esc(f.name)} is for a species the Atlas does not have (“${esc(String(X.species))}”).`); return; }
     const qs = new URLSearchParams(); for (const [k, v] of Object.entries(X.settings)) if (v != null && v !== '' && typeof v !== 'object') qs.set(k, String(v)); else if (k === 'grp' && v === '') qs.set('grp', 'none');   // a file from before Leiden was the default
-    NW_PENDING = { sp: X.species, file: f.name, X }; const h = `#/${X.species}/network?${qs}`;
+    NW_PENDING = { sp: X.species, file: f.name, X }; const h = `#/network/${X.species}?${qs}`;
     if (location.hash === h) route(); else location.hash = h; };
   let POS0 = null, EXPECT = null, YEXP = null;   // YEXP: a settings file saved with your predictions, waiting for them   // from a loaded settings file: where each protein was drawn, and the result to compare with
   if (NW_PENDING && NW_PENDING.sp === sp.id) { const { X, file } = NW_PENDING; NW_PENDING = null;
@@ -6721,7 +6721,8 @@ async function viewNetwork(spId, q) {
 // Every species of the registry counts under its own id (the list grows with the Atlas; a fixed list sent new species to '/').
 async function trackView() {
   const reg = await registry().catch(() => null), ids = new Set(((reg && reg.species) || []).map((x) => x.id));
-  const { parts } = hashPath(), sp = parts[0] || '', title = document.title;
+  const { parts: P } = hashPath(), title = document.title;
+  const parts = ['network', 'pairs', 'nested'].includes(P[0]) && P.length === 2 ? [P[1], P[0]] : P, sp = parts[0] || '';   // a tool page counts under its species, as before
   let path = '/', event = '';
   if (ids.has(sp)) {
     const k = parts[1], kind = !k ? '' : ['network', 'nested', 'homodimers', 'pairs'].includes(k) && parts.length === 2 ? k
@@ -6742,7 +6743,7 @@ let LAST_PATH = null, holdTimer = null, NET_SP = '', NW_PENDING = null;   // NET
 function markNav(parts) {   // the header tab of the page shown: species (their proteins and pairs too), network, datasets, about
   const sp = parts.length && REG && (REG.species || []).some((s) => s.id === parts[0]);
   const on = !parts.length ? '' : parts[0] === 'about' ? 'about' : ['datasets', 'themes'].includes(parts[0]) ? 'datasets'
-    : parts[0] === 'pairs' || (sp && parts[1] === 'pairs') ? 'pairs' : sp && ['network', 'nested'].includes(parts[1]) ? 'network' : parts[0] === 'species' || sp ? 'species' : '';
+    : parts[0] === 'pairs' ? 'pairs' : ['network', 'nested'].includes(parts[0]) ? 'network' : parts[0] === 'species' || sp ? 'species' : '';
   document.querySelectorAll('.top nav a[data-nav]').forEach((a) => { if (a.dataset.nav === on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
 }
 // Every page with three or more cards gets the section bar the protein page has: sticky, the card in view marked, a
@@ -6819,11 +6820,14 @@ async function route() {
     else if (parts[0] === 'about') viewAbout();
     else if (parts[0] === 'species' && parts.length === 1) await viewSpeciesList();
     else if (parts[0] === 'themes') { location.replace('#/datasets'); return; }   // themes retired: the datasets cover them
-    else if (parts[0] === 'pairs' && parts.length === 1) { location.replace(`#/${NET_SP || (coreSpecies(REG)[0] || {}).id || 'human'}/pairs${q.toString() ? `?${q}` : ''}`); return; }   // the header's Pairs tab
-    else if (parts[0] === 'network' && parts.length === 1) {   // the header's Network tab: the network page of the species last shown, else the first species
-      location.replace(`#/${NET_SP || (coreSpecies(REG)[0] || {}).id || 'human'}/network${q.toString() ? `?${q}` : ''}`); return;
+    else if (['network', 'pairs', 'nested'].includes(parts[0])) {   // the tool pages: #/network/<species>, #/pairs/<species>, #/nested/<species>
+      const tool = parts[0], spId = parts[1];
+      if (parts.length !== 2 || !(await regSpecies(spId))) {   // the header's tab (no species): the species last shown, else the first species
+        location.replace(`#/${tool}/${NET_SP || (coreSpecies(REG)[0] || {}).id || 'human'}${q.toString() ? `?${q}` : ''}`); return;
+      }
+      NET_SP = spId; await (tool === 'network' ? viewNetwork : tool === 'pairs' ? viewPairs : viewNested)(spId, q);
     }
-    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'pairs' && parts.length === 2) await viewPairs(parts[0], q); else if (parts[1] === 'nested' && parts.length === 2) await viewNested(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts[1] === 'homodimers' && parts.length === 2) await viewHomoList(parts[0], q); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
+    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (['network', 'pairs', 'nested'].includes(parts[1]) && parts.length === 2) { location.replace(`#/${parts[1]}/${parts[0]}${q.toString() ? `?${q}` : ''}`); return; } else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts[1] === 'homodimers' && parts.length === 2) await viewHomoList(parts[0], q); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);
       if (parts.length === 1 || !d.species) { location.replace(`#/datasets/${d.id}`); return; }
