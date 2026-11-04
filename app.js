@@ -1781,7 +1781,7 @@ async function viewHome() {
   if (stale(gen)) return;
   const tot = (k) => `<b data-tot="${k}">…</b>`;   // filled once every species manifest has arrived; the page paints first
   { const fill = (all) => { if (stale(gen)) return; const ok = all.every(Boolean); for (const el of app.querySelectorAll('[data-tot]')) el.textContent = ok ? fmtInt(all.reduce((s, m) => s + (m.counts[el.dataset.tot] || 0), 0)) : '…'; };   // a manifest that did not arrive leaves the placeholder, never a low number
-    Promise.all((reg.species || []).map((x) => speciesManifest(x.id).catch(() => null))).then(fill); }
+    Promise.all((reg.species || []).map((x) => (x.counts ? { counts: x.counts } : speciesManifest(x.id).catch(() => null)))).then(fill); }   // the registry's copy of the counts, else the manifest
   app.innerHTML = `
     <section class="hero hero-center">
       <h1>Where does <span class="ini">each&nbsp;partner</span> bind?</h1>
@@ -1925,14 +1925,15 @@ async function viewDatasets() {
     <p class="muted" style="margin:0 0 4px">The papers whose predictions the Atlas holds, and what each covers. Each dataset links to its page, with its run settings and source files. The scores and tables are under CC BY 4.0; a copy is archived on <a href="${ARCHIVE}" target="_blank" rel="noopener">Zenodo ↗</a>, which the site reads when the lab's server is down.</p>
     <p class="muted" style="margin:0 0 4px">A dataset counts its whole screen; a species page counts only that species' own proteins and pairs (an AlphaFold Database heterodimer screen can pair a species' proteins with those of another taxon), so the two can differ. Past 10% FPR: the pair's best model has iLIS ≥ ${CUT[10].toFixed(3)}.</p>
     <ol class="reflist">${[...refs.values()].map(entry).join('')}</ol></div>`;
-  // the counts: every manifest at once; a screen kept as a set inside a larger dataset (the fly kinase–kinase and kinase–TF
-  // screens in FlyPredictome) joins the entry of the paper its kind cites, after that paper's own rows
-  const live = shown.filter((x) => x.status === 'live'), got = await Promise.all(live.map((d) => dataset(d.id).catch(() => null)));
-  if (stale(gen)) return;
+  // the counts: the registry's copy (registry_counts.py), else each manifest; a screen kept as a set inside a larger dataset
+  // (the fly kinase–kinase and kinase–TF screens in FlyPredictome) joins the entry of the paper its kind cites, after that paper's own rows
   const fill = (tr, k) => { if (tr && k) tr.querySelectorAll('td[data-k]').forEach((td) => { td.textContent = fmtInt(k[td.dataset.k] || 0); }); };
-  live.forEach((d, i) => { if (got[i]) fill(app.querySelector(`tr[data-ds="${d.id}"]`), got[i].manifest.counts); });
-  Promise.all(shown.filter((x) => x.status === 'record' && x.base).map((d) => getJSON(d.base + 'manifest.json').then((m) => { if (!stale(gen)) fill(app.querySelector(`tr[data-ds="${d.id}"]`), m && m.counts); }).catch(() => {})));   // a set with no species page: its own manifest
-  const sets = await Promise.all(got.map((s) => (s ? setsOf(s).catch(() => null) : null))); if (stale(gen)) return;
+  const live = shown.filter((x) => x.status === 'live');
+  const got = await Promise.all(live.map((d) => (d.counts ? null : dataset(d.id).catch(() => null)))); if (stale(gen)) return;
+  live.forEach((d, i) => fill(app.querySelector(`tr[data-ds="${d.id}"]`), d.counts || (got[i] && got[i].manifest.counts)));
+  shown.filter((x) => x.status === 'record' && x.base).forEach((d) => { const tr = () => app.querySelector(`tr[data-ds="${d.id}"]`);   // a set with no species page: its own manifest
+    if (d.counts) fill(tr(), d.counts); else getJSON(d.base + 'manifest.json').then((m) => { if (!stale(gen)) fill(tr(), m && m.counts); }).catch(() => {}); });
+  const sets = await Promise.all(live.map((d, i) => (d.sets ? { list: d.sets } : d.counts ? null : got[i] ? setsOf(got[i]).catch(() => null) : null))); if (stale(gen)) return;
   live.forEach((d, i) => { const TS = sets[i]; if (!TS) return;
     for (const s of TS.list.filter((x) => x.type === 'screen')) {
       const kin = reg.datasets.filter((x) => x.short === s.short && x.id !== d.id), at = kin.map((x) => app.querySelector(`tr[data-ds="${x.id}"]`)).filter(Boolean).pop();
@@ -1955,7 +1956,7 @@ async function viewSpeciesList() {   // every species: model organisms (the Atla
     <div class="card"><h1 style="margin:0">Species</h1>
     ${groups.filter(([, xs]) => xs.length).map(([g, xs]) => `<h2 style="margin:18px 0 6px">${esc(g)} <span class="muted">${fmtInt(xs.length)}</span></h2>${note(xs) ? `<p class="muted" style="margin:0 0 8px">${note(xs)}</p>` : ''}
       <div class="tbl-wrap"><table class="sets spl"><thead><tr><th>Species</th><th class="n">Taxon</th><th class="n">Proteins</th><th class="n">Protein pairs</th><th class="n">Past 10% FPR</th></tr></thead><tbody>${xs.map(row).join('')}</tbody></table></div>`).join('')}</div>`;
-  const ms = await Promise.all(list.map((x) => speciesManifest(x.id).catch(() => null))); if (stale(gen)) return;
+  const ms = await Promise.all(list.map((x) => (x.counts && x.taxon ? { counts: x.counts, species: { taxon: x.taxon } } : speciesManifest(x.id).catch(() => null)))); if (stale(gen)) return;   // the registry's copy of the counts, else the manifest
   list.forEach((x, i) => { const m = ms[i], tr = app.querySelector(`table.spl a[href="#/${x.id}"]`); if (!m || !tr) return;
     const r = tr.closest('tr'), tx = r.querySelector('td[data-tx]'); if (tx && !tx.textContent && m.species && m.species.taxon) tx.textContent = m.species.taxon;
     r.querySelectorAll('td[data-k]').forEach((td) => { td.textContent = fmtInt(m.counts[td.dataset.k] || 0); }); });
@@ -4863,7 +4864,8 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
 /* species page: the merged index — its screens, counts and most connected proteins */
 async function viewSpecies(spId) {
   const gen = ROUTE, sp = await species(spId), c = sp.manifest.counts, hubs = [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 24);
-  const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
+  const TSs = await Promise.all(sp.dsIds.map(async (id) => { const R = (REG.datasets || []).find((x) => x.id === id); if (R && R.counts && !R.sets) return null;   // the registry says it has no sets: no manifest to read
+    try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
   if (stale(gen)) return;
   document.title = `${sp.reg.label} · LIVIA Atlas`;
   const scrCard = (di) => { const d = sp.manifest.datasets[di]; return `<div class="screen"><span class="src" style="--c:${sp.dsColor[di]}">${esc(d.short)}</span>
@@ -5824,7 +5826,8 @@ async function viewPairs(spId, q) {
 }
 async function viewNetwork(spId, q) {
   const gen = ROUTE, sp = await species(spId);
-  const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
+  const TSs = await Promise.all(sp.dsIds.map(async (id) => { const R = (REG.datasets || []).find((x) => x.id === id); if (R && R.counts && !R.sets) return null;   // the registry says it has no sets: no manifest to read
+    try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
   if (stale(gen)) return;
   document.title = `Network · ${sp.reg.label} · LIVIA Atlas`;
   const scopes = [['', sp.dsIds.length > 1 ? 'every screen' : sp.dsShort[0]], ...(sp.dsIds.length > 1 ? sp.manifest.datasets.map((d) => [d.id, d.short]) : []),

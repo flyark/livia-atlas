@@ -19,7 +19,14 @@
     "ddr-usp37"
    ],
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 20665,
+    "pairs": 2336504,
+    "pairsFpr10": 282779,
+    "runs": 2681622,
+    "predictions": 7414842
+   }
   },
   {
    "id": "fly",
@@ -34,7 +41,14 @@
     "dmelppi"
    ],
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 14048,
+    "pairs": 1218736,
+    "pairsFpr10": 166186,
+    "runs": 1646059,
+    "predictions": 7564695
+   }
   },
   {
    "id": "zebrafish",
@@ -48,7 +62,14 @@
     "mitomatch-7955"
    ],
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 13108,
+    "pairs": 269442,
+    "pairsFpr10": 32943,
+    "runs": 269659,
+    "predictions": 286771
+   }
   },
   {
    "id": "yeast",
@@ -63,7 +84,14 @@
     "mitomatch-559292"
    ],
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 5763,
+    "pairs": 160067,
+    "pairsFpr10": 10508,
+    "runs": 160213,
+    "predictions": 164473
+   }
   },
   {
    "id": "worm",
@@ -77,7 +105,14 @@
     "mitomatch-6239"
    ],
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 11174,
+    "pairs": 142235,
+    "pairsFpr10": 12681,
+    "runs": 142539,
+    "predictions": 151775
+   }
   },
   {
    "id": "virus",
@@ -88,7 +123,14 @@
     "viral-dimers-afdb"
    ],
    "heading": "Viral protein interactions",
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 41774,
+    "pairs": 1694023,
+    "pairsFpr10": 63132,
+    "runs": 1694023,
+    "predictions": 1694023
+   }
   },
   {
    "id": "madurella-mycetomatis",
@@ -101,7 +143,14 @@
    "group": "Other species",
    "taxon": 100816,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 5431,
+    "pairs": 85246,
+    "pairsFpr10": 5815,
+    "runs": 85246,
+    "predictions": 85246
+   }
   },
   {
    "id": "mus-musculus",
@@ -115,7 +164,14 @@
    "group": "Model organisms",
    "taxon": 10090,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 15526,
+    "pairs": 292688,
+    "pairsFpr10": 38241,
+    "runs": 293225,
+    "predictions": 293225
+   }
   },
   {
    "id": "rattus-norvegicus",
@@ -129,7 +185,14 @@
    "group": "Model organisms",
    "taxon": 10116,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 14688,
+    "pairs": 340069,
+    "pairsFpr10": 39004,
+    "runs": 340417,
+    "predictions": 340417
+   }
   },
   {
    "id": "klebsiella-pneumoniae-subsp-pneumoniae",
@@ -142,7 +205,14 @@
    "group": "Other species",
    "taxon": 1125630,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 3693,
+    "pairs": 67446,
+    "pairsFpr10": 3680,
+    "runs": 67446,
+    "predictions": 67446
+   }
   },
   {
    "id": "nocardia-brasiliensis",
@@ -155,7 +225,14 @@
    "group": "Other species",
    "taxon": 1133849,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 4808,
+    "pairs": 97453,
+    "pairsFpr10": 4665,
+    "runs": 97453,
+    "predictions": 97453
+   }
   },
   {
    "id": "sporothrix-schenckii",
@@ -168,7 +245,14 @@
    "group": "Other species",
    "taxon": 1391915,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 5288,
+    "pairs": 93672,
+    "pairsFpr10": 6631,
+    "runs": 93672,
+    "predictions": 93672
+   }
   },
   {
    "id": "fonsecaea-pedrosoi-cbs-271-37",
@@ -181,7 +265,14 @@
    "group": "Other species",
    "taxon": 1442368,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 5654,
+    "pairs": 69797,
+    "pairsFpr10": 5745,
+    "runs": 69797,
+    "predictions": 69797
+   }
   },
   {
    "id": "streptococcus-pneumoniae",
@@ -194,7 +285,14 @@
    "group": "Other species",
    "taxon": 171101,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 1103,
+    "pairs": 9597,
+    "pairsFpr10": 1056,
+    "runs": 9597,
+    "predictions": 9597
+   }
   },
   {
    "id": "trypanosoma-brucei-brucei-185431",
@@ -207,7 +305,14 @@
    "group": "Other species",
    "taxon": 185431,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 3718,
+    "pairs": 82847,
+    "pairsFpr10": 5153,
+    "runs": 82847,
+    "predictions": 82847
+   }
   },
   {
    "id": "campylobacter-jejuni-subsp-jejuni-serotype-o-2",
@@ -220,7 +325,14 @@
    "group": "Other species",
    "taxon": 192222,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 1498,
+    "pairs": 20970,
+    "pairsFpr10": 968,
+    "runs": 20970,
+    "predictions": 20970
+   }
   },
   {
    "id": "pseudomonas-aeruginosa",
@@ -233,7 +345,14 @@
    "group": "Other species",
    "taxon": 208964,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 3562,
+    "pairs": 47082,
+    "pairsFpr10": 3795,
+    "runs": 47082,
+    "predictions": 47082
+   }
   },
   {
    "id": "candida-albicans-237561",
@@ -246,7 +365,14 @@
    "group": "Other species",
    "taxon": 237561,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 3998,
+    "pairs": 57259,
+    "pairsFpr10": 5308,
+    "runs": 57259,
+    "predictions": 57259
+   }
   },
   {
    "id": "neisseria-gonorrhoeae",
@@ -259,7 +385,14 @@
    "group": "Other species",
    "taxon": 242231,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 1154,
+    "pairs": 11368,
+    "pairsFpr10": 663,
+    "runs": 11368,
+    "predictions": 11368
+   }
   },
   {
    "id": "methanocaldococcus-jannaschii",
@@ -272,7 +405,14 @@
    "group": "Other species",
    "taxon": 243232,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 745,
+    "pairs": 4822,
+    "pairsFpr10": 365,
+    "runs": 4822,
+    "predictions": 4822
+   }
   },
   {
    "id": "mycobacterium-leprae",
@@ -285,7 +425,14 @@
    "group": "Other species",
    "taxon": 272631,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 1199,
+    "pairs": 17485,
+    "pairsFpr10": 684,
+    "runs": 17485,
+    "predictions": 17485
+   }
   },
   {
    "id": "schizosaccharomyces-pombe",
@@ -299,7 +446,14 @@
    "group": "Model organisms",
    "taxon": 284812,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 4262,
+    "pairs": 67710,
+    "pairsFpr10": 6275,
+    "runs": 67803,
+    "predictions": 67803
+   }
   },
   {
    "id": "shigella-dysenteriae-serotype-1",
@@ -312,7 +466,14 @@
    "group": "Other species",
    "taxon": 300267,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 2289,
+    "pairs": 21034,
+    "pairsFpr10": 1381,
+    "runs": 21034,
+    "predictions": 21034
+   }
   },
   {
    "id": "dracunculus-medinensis",
@@ -325,7 +486,14 @@
    "group": "Other species",
    "taxon": 318479,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 6980,
+    "pairs": 150690,
+    "pairsFpr10": 10087,
+    "runs": 150690,
+    "predictions": 150690
+   }
   },
   {
    "id": "trypanosoma-cruzi",
@@ -338,7 +506,14 @@
    "group": "Other species",
    "taxon": 353153,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 8111,
+    "pairs": 280562,
+    "pairsFpr10": 16017,
+    "runs": 280562,
+    "predictions": 280562
+   }
   },
   {
    "id": "trichuris-trichiura",
@@ -351,7 +526,14 @@
    "group": "Other species",
    "taxon": 36087,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 6481,
+    "pairs": 163977,
+    "pairsFpr10": 10859,
+    "runs": 163977,
+    "predictions": 163977
+   }
   },
   {
    "id": "plasmodium-falciparum-36329",
@@ -364,7 +546,14 @@
    "group": "Other species",
    "taxon": 36329,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 2608,
+    "pairs": 33361,
+    "pairsFpr10": 2722,
+    "runs": 33361,
+    "predictions": 33361
+   }
   },
   {
    "id": "arabidopsis-thaliana",
@@ -380,7 +569,14 @@
    "group": "Model organisms",
    "taxon": 3702,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 17801,
+    "pairs": 460500,
+    "pairsFpr10": 37540,
+    "runs": 460607,
+    "predictions": 460607
+   }
   },
   {
    "id": "glycine-max",
@@ -393,7 +589,14 @@
    "group": "Other species",
    "taxon": 3847,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 30449,
+    "pairs": 1821316,
+    "pairsFpr10": 122066,
+    "runs": 1821316,
+    "predictions": 1821316
+   }
   },
   {
    "id": "oryza-sativa-subsp-japonica",
@@ -406,7 +609,14 @@
    "group": "Other species",
    "taxon": 39947,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 19297,
+    "pairs": 634573,
+    "pairsFpr10": 40389,
+    "runs": 634573,
+    "predictions": 634573
+   }
   },
   {
    "id": "dictyostelium-discoideum",
@@ -420,7 +630,14 @@
    "group": "Model organisms",
    "taxon": 44689,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 5033,
+    "pairs": 64025,
+    "pairsFpr10": 6374,
+    "runs": 64140,
+    "predictions": 64140
+   }
   },
   {
    "id": "ajellomyces-capsulatus",
@@ -433,7 +650,14 @@
    "group": "Other species",
    "taxon": 447093,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 4941,
+    "pairs": 81333,
+    "pairsFpr10": 6342,
+    "runs": 81333,
+    "predictions": 81333
+   }
   },
   {
    "id": "zea-mays",
@@ -446,7 +670,14 @@
    "group": "Other species",
    "taxon": 4577,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 11093,
+    "pairs": 339243,
+    "pairsFpr10": 22348,
+    "runs": 339243,
+    "predictions": 339243
+   }
   },
   {
    "id": "paracoccidioides-lutzii",
@@ -459,7 +690,14 @@
    "group": "Other species",
    "taxon": 502779,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 4993,
+    "pairs": 70885,
+    "pairsFpr10": 6087,
+    "runs": 70885,
+    "predictions": 70885
+   }
   },
   {
    "id": "leishmania-infantum",
@@ -472,7 +710,14 @@
    "group": "Other species",
    "taxon": 5671,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 3743,
+    "pairs": 73940,
+    "pairsFpr10": 4505,
+    "runs": 73940,
+    "predictions": 73940
+   }
   },
   {
    "id": "schistosoma-mansoni",
@@ -485,7 +730,14 @@
    "group": "Other species",
    "taxon": 6183,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 6516,
+    "pairs": 125900,
+    "pairsFpr10": 10648,
+    "runs": 125900,
+    "predictions": 125900
+   }
   },
   {
    "id": "shigella-flexneri",
@@ -498,7 +750,14 @@
    "group": "Other species",
    "taxon": 623,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 230,
+    "pairs": 395,
+    "pairsFpr10": 93,
+    "runs": 395,
+    "predictions": 395
+   }
   },
   {
    "id": "strongyloides-stercoralis",
@@ -511,7 +770,14 @@
    "group": "Other species",
    "taxon": 6248,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 5974,
+    "pairs": 159088,
+    "pairsFpr10": 9737,
+    "runs": 159088,
+    "predictions": 159088
+   }
   },
   {
    "id": "brugia-malayi",
@@ -524,7 +790,14 @@
    "group": "Other species",
    "taxon": 6279,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 4876,
+    "pairs": 73553,
+    "pairsFpr10": 5980,
+    "runs": 73553,
+    "predictions": 73553
+   }
   },
   {
    "id": "onchocerca-volvulus",
@@ -537,7 +810,14 @@
    "group": "Other species",
    "taxon": 6282,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 6187,
+    "pairs": 112814,
+    "pairsFpr10": 9081,
+    "runs": 112814,
+    "predictions": 112814
+   }
   },
   {
    "id": "wuchereria-bancrofti",
@@ -550,7 +830,14 @@
    "group": "Other species",
    "taxon": 6293,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 587,
+    "pairs": 2566,
+    "pairsFpr10": 217,
+    "runs": 2566,
+    "predictions": 2566
+   }
   },
   {
    "id": "haemophilus-influenzae",
@@ -563,7 +850,14 @@
    "group": "Other species",
    "taxon": 71421,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 1006,
+    "pairs": 8056,
+    "pairsFpr10": 593,
+    "runs": 8056,
+    "predictions": 8056
+   }
   },
   {
    "id": "mycobacterium-tuberculosis",
@@ -576,7 +870,14 @@
    "group": "Other species",
    "taxon": 83332,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 2351,
+    "pairs": 31148,
+    "pairsFpr10": 1764,
+    "runs": 31148,
+    "predictions": 31148
+   }
   },
   {
    "id": "escherichia-coli-83333",
@@ -589,7 +890,14 @@
    "group": "Model organisms",
    "taxon": 83333,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 2623,
+    "pairs": 33097,
+    "pairsFpr10": 4193,
+    "runs": 33097,
+    "predictions": 33097
+   }
   },
   {
    "id": "pan-troglodytes",
@@ -601,7 +909,14 @@
    ],
    "group": "Model organisms",
    "taxon": 9598,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 963,
+    "pairs": 2610,
+    "pairsFpr10": 2497,
+    "runs": 2610,
+    "predictions": 2610
+   }
   },
   {
    "id": "xenopus-laevis",
@@ -613,7 +928,14 @@
    ],
    "group": "Model organisms",
    "taxon": 8355,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 797,
+    "pairs": 1635,
+    "pairsFpr10": 1494,
+    "runs": 1635,
+    "predictions": 1635
+   }
   },
   {
    "id": "helicobacter-pylori",
@@ -626,7 +948,14 @@
    "group": "Other species",
    "taxon": 85962,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 1208,
+    "pairs": 9328,
+    "pairsFpr10": 590,
+    "runs": 9328,
+    "predictions": 9328
+   }
   },
   {
    "id": "cladophialophora-carrionii",
@@ -639,7 +968,14 @@
    "group": "Other species",
    "taxon": 86049,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 5939,
+    "pairs": 94678,
+    "pairsFpr10": 6848,
+    "runs": 94678,
+    "predictions": 94678
+   }
   },
   {
    "id": "staphylococcus-aureus-93061",
@@ -652,7 +988,14 @@
    "group": "Other species",
    "taxon": 93061,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 1288,
+    "pairs": 10381,
+    "pairsFpr10": 791,
+    "runs": 10381,
+    "predictions": 10381
+   }
   },
   {
    "id": "salmonella-typhimurium",
@@ -665,7 +1008,14 @@
    "group": "Other species",
    "taxon": 99287,
    "structs": true,
-   "index": "index.json"
+   "index": "index.json",
+   "counts": {
+    "proteins": 2831,
+    "pairs": 25171,
+    "pairsFpr10": 2660,
+    "runs": 25171,
+    "predictions": 25171
+   }
   }
  ],
  "datasets": [
@@ -703,6 +1053,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b06bd1e5083671a3e304129f774dd880",
     "bytes": 863832661
+   },
+   "counts": {
+    "proteins": 20200,
+    "pairs": 1614047,
+    "pairsFpr10": 181603
    }
   },
   {
@@ -729,6 +1084,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "faf365b82f05d1cf170ab44024c821ee",
     "bytes": 285600319
+   },
+   "counts": {
+    "proteins": 1481,
+    "pairs": 376964,
+    "pairsFpr10": 59297
    }
   },
   {
@@ -755,7 +1115,122 @@
     "bytes": 1107986336
    },
    "models": 5,
-   "recycles": 5
+   "recycles": 5,
+   "counts": {
+    "proteins": 14031,
+    "pairs": 1098702,
+    "pairsFpr10": 148604
+   },
+   "sets": [
+    {
+     "id": "kinase-tf",
+     "type": "screen",
+     "title": "Kinase–transcription factor screen",
+     "short": "Kinase–TF",
+     "color": "#9A4A8F",
+     "counts": {
+      "proteins": 1257,
+      "pairs": 214080,
+      "pairsFpr10": 34265
+     }
+    },
+    {
+     "id": "kinase-kinase",
+     "type": "screen",
+     "title": "Kinase–kinase screen",
+     "short": "Kinase–kinase",
+     "color": "#6B5B95",
+     "counts": {
+      "proteins": 263,
+      "pairs": 34271,
+      "pairsFpr10": 4546
+     }
+    },
+    {
+     "id": "ligand-receptor",
+     "type": "category",
+     "title": "Ligand–receptor",
+     "short": "Ligand–receptor",
+     "color": "#2B7A78",
+     "counts": {
+      "proteins": 2728,
+      "pairs": 576444,
+      "pairsFpr10": 69618
+     }
+    },
+    {
+     "id": "kinase",
+     "type": "category",
+     "title": "Kinase",
+     "short": "Kinase",
+     "color": "#B04A73",
+     "counts": {
+      "proteins": 3327,
+      "pairs": 247320,
+      "pairsFpr10": 38779
+     }
+    },
+    {
+     "id": "literature-derived",
+     "type": "category",
+     "title": "Literature-derived",
+     "short": "Literature-derived",
+     "color": "#8C6D31",
+     "counts": {
+      "proteins": 8200,
+      "pairs": 40941,
+      "pairsFpr10": 7020
+     }
+    },
+    {
+     "id": "large-scale-proteomics",
+     "type": "category",
+     "title": "Large-scale proteomics",
+     "short": "Large-scale proteomics",
+     "color": "#2B5F8E",
+     "counts": {
+      "proteins": 5516,
+      "pairs": 40131,
+      "pairsFpr10": 5163
+     }
+    },
+    {
+     "id": "subcellular-organelle",
+     "type": "category",
+     "title": "Subcellular organelle",
+     "short": "Subcellular organelle",
+     "color": "#5E7D2B",
+     "counts": {
+      "proteins": 582,
+      "pairs": 15540,
+      "pairsFpr10": 1765
+     }
+    },
+    {
+     "id": "inferred-from-orthologs",
+     "type": "category",
+     "title": "Inferred from orthologs",
+     "short": "Inferred from orthologs",
+     "color": "#B5543C",
+     "counts": {
+      "proteins": 568,
+      "pairs": 1690,
+      "pairsFpr10": 256
+     }
+    },
+    {
+     "id": "other",
+     "type": "category",
+     "title": "Other",
+     "short": "Other",
+     "color": "#5B6B7F",
+     "counts": {
+      "proteins": 13948,
+      "pairs": 184861,
+      "pairsFpr10": 27356
+     }
+    }
+   ]
   },
   {
    "id": "human-kinase-kinase",
@@ -780,7 +1255,12 @@
     "bytes": 5586940
    },
    "models": 5,
-   "recycles": 5
+   "recycles": 5,
+   "counts": {
+    "proteins": 243,
+    "pairs": 4057,
+    "pairsFpr10": 1233
+   }
   },
   {
    "id": "zebrafish-kinase-kinase",
@@ -805,7 +1285,12 @@
     "bytes": 5600950
    },
    "models": 5,
-   "recycles": 5
+   "recycles": 5,
+   "counts": {
+    "proteins": 252,
+    "pairs": 4278,
+    "pairsFpr10": 1228
+   }
   },
   {
    "id": "yeast-kinase-kinase",
@@ -830,7 +1315,12 @@
     "bytes": 1367089
    },
    "models": 5,
-   "recycles": 5
+   "recycles": 5,
+   "counts": {
+    "proteins": 105,
+    "pairs": 1070,
+    "pairsFpr10": 186
+   }
   },
   {
    "id": "worm-kinase-kinase",
@@ -855,7 +1345,12 @@
     "bytes": 2976405
    },
    "models": 5,
-   "recycles": 5
+   "recycles": 5,
+   "counts": {
+    "proteins": 187,
+    "pairs": 2309,
+    "pairsFpr10": 557
+   }
   },
   {
    "id": "viral-dimers-afdb",
@@ -882,7 +1377,12 @@
     "bytes": 963555107
    },
    "recycles": 12,
-   "modelsNote": "model_1_multimer_v3 via OpenFold (NVIDIA BioNeMo); unpaired Logan-enriched MSAs"
+   "modelsNote": "model_1_multimer_v3 via OpenFold (NVIDIA BioNeMo); unpaired Logan-enriched MSAs",
+   "counts": {
+    "proteins": 41774,
+    "pairs": 1694023,
+    "pairsFpr10": 63132
+   }
   },
   {
    "id": "afdb-het-100816",
@@ -908,6 +1408,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "813de3fcdb2b1ec27f7a87d88c86193b",
     "bytes": 996806243
+   },
+   "counts": {
+    "proteins": 5431,
+    "pairs": 85246,
+    "pairsFpr10": 5815
    }
   },
   {
@@ -934,6 +1439,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "f6dd9f0633e600d23196afdbe54c6e94",
     "bytes": 995310411
+   },
+   "counts": {
+    "proteins": 18657,
+    "pairs": 295369,
+    "pairsFpr10": 36856
    }
   },
   {
@@ -960,6 +1470,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "f6dd9f0633e600d23196afdbe54c6e94",
     "bytes": 995310411
+   },
+   "counts": {
+    "proteins": 17436,
+    "pairs": 344948,
+    "pairsFpr10": 38085
    }
   },
   {
@@ -986,6 +1501,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 3693,
+    "pairs": 67446,
+    "pairsFpr10": 3680
    }
   },
   {
@@ -1012,6 +1532,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 4808,
+    "pairs": 97453,
+    "pairsFpr10": 4665
    }
   },
   {
@@ -1039,7 +1564,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Staphylococcus aureus (taxon 1280)"
+   "speciesName": "Staphylococcus aureus (taxon 1280)",
+   "counts": {
+    "proteins": 25,
+    "pairs": 19,
+    "pairsFpr10": 4
+   }
   },
   {
    "id": "afdb-het-132416",
@@ -1066,7 +1596,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Plasmodium falciparum (taxon 132416)"
+   "speciesName": "Plasmodium falciparum (taxon 132416)",
+   "counts": {
+    "proteins": 24,
+    "pairs": 23,
+    "pairsFpr10": 5
+   }
   },
   {
    "id": "afdb-het-1391915",
@@ -1092,6 +1627,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 5288,
+    "pairs": 93672,
+    "pairsFpr10": 6631
    }
   },
   {
@@ -1118,6 +1658,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 5654,
+    "pairs": 69797,
+    "pairsFpr10": 5745
    }
   },
   {
@@ -1145,7 +1690,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Pseudomonas putida"
+   "speciesName": "Pseudomonas putida",
+   "counts": {
+    "proteins": 45,
+    "pairs": 44,
+    "pairsFpr10": 3
+   }
   },
   {
    "id": "afdb-het-171101",
@@ -1171,6 +1721,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 1105,
+    "pairs": 9600,
+    "pairsFpr10": 1056
    }
   },
   {
@@ -1197,6 +1752,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 3718,
+    "pairs": 82847,
+    "pairsFpr10": 5153
    }
   },
   {
@@ -1223,6 +1783,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 1507,
+    "pairs": 21172,
+    "pairsFpr10": 975
    }
   },
   {
@@ -1250,7 +1815,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Staphylococcus aureus (taxon 196620)"
+   "speciesName": "Staphylococcus aureus (taxon 196620)",
+   "counts": {
+    "proteins": 183,
+    "pairs": 245,
+    "pairsFpr10": 18
+   }
   },
   {
    "id": "afdb-het-199310",
@@ -1277,7 +1847,12 @@
     "md5": "813de3fcdb2b1ec27f7a87d88c86193b",
     "bytes": 996806243
    },
-   "speciesName": "Escherichia coli O6:H1"
+   "speciesName": "Escherichia coli O6:H1",
+   "counts": {
+    "proteins": 16,
+    "pairs": 15,
+    "pairsFpr10": 0
+   }
   },
   {
    "id": "afdb-het-208964",
@@ -1303,6 +1878,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 3565,
+    "pairs": 47112,
+    "pairsFpr10": 3800
    }
   },
   {
@@ -1330,7 +1910,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Mycobacterium bovis"
+   "speciesName": "Mycobacterium bovis",
+   "counts": {
+    "proteins": 458,
+    "pairs": 727,
+    "pairsFpr10": 31
+   }
   },
   {
    "id": "afdb-het-237561",
@@ -1356,6 +1941,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 4009,
+    "pairs": 57624,
+    "pairsFpr10": 5326
    }
   },
   {
@@ -1382,6 +1972,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 1154,
+    "pairs": 11368,
+    "pairsFpr10": 663
    }
   },
   {
@@ -1408,6 +2003,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "813de3fcdb2b1ec27f7a87d88c86193b",
     "bytes": 996806243
+   },
+   "counts": {
+    "proteins": 745,
+    "pairs": 4822,
+    "pairsFpr10": 365
    }
   },
   {
@@ -1434,6 +2034,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 1199,
+    "pairs": 17485,
+    "pairsFpr10": 684
    }
   },
   {
@@ -1460,6 +2065,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 4248,
+    "pairs": 67642,
+    "pairsFpr10": 6211
    }
   },
   {
@@ -1487,7 +2097,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Candida albicans (taxon 294748)"
+   "speciesName": "Candida albicans (taxon 294748)",
+   "counts": {
+    "proteins": 218,
+    "pairs": 257,
+    "pairsFpr10": 15
+   }
   },
   {
    "id": "afdb-het-300267",
@@ -1513,6 +2128,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
+   },
+   "counts": {
+    "proteins": 2289,
+    "pairs": 21034,
+    "pairsFpr10": 1381
    }
   },
   {
@@ -1540,7 +2160,12 @@
     "md5": "f6dd9f0633e600d23196afdbe54c6e94",
     "bytes": 995310411
    },
-   "speciesName": "Shigella sonnei"
+   "speciesName": "Shigella sonnei",
+   "counts": {
+    "proteins": 11,
+    "pairs": 10,
+    "pairsFpr10": 0
+   }
   },
   {
    "id": "afdb-het-31033",
@@ -1567,7 +2192,12 @@
     "md5": "813de3fcdb2b1ec27f7a87d88c86193b",
     "bytes": 996806243
    },
-   "speciesName": "Takifugu rubripes"
+   "speciesName": "Takifugu rubripes",
+   "counts": {
+    "proteins": 266,
+    "pairs": 265,
+    "pairsFpr10": 10
+   }
   },
   {
    "id": "afdb-het-318479",
@@ -1593,6 +2223,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 6980,
+    "pairs": 150690,
+    "pairsFpr10": 10087
    }
   },
   {
@@ -1619,6 +2254,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
+   },
+   "counts": {
+    "proteins": 8111,
+    "pairs": 280562,
+    "pairsFpr10": 16017
    }
   },
   {
@@ -1646,7 +2286,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Campylobacter jejuni subsp. jejuni serotype O:23/36"
+   "speciesName": "Campylobacter jejuni subsp. jejuni serotype O:23/36",
+   "counts": {
+    "proteins": 161,
+    "pairs": 167,
+    "pairsFpr10": 9
+   }
   },
   {
    "id": "afdb-het-36087",
@@ -1672,6 +2317,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "f6dd9f0633e600d23196afdbe54c6e94",
     "bytes": 995310411
+   },
+   "counts": {
+    "proteins": 6481,
+    "pairs": 163977,
+    "pairsFpr10": 10859
    }
   },
   {
@@ -1698,6 +2348,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 2609,
+    "pairs": 33366,
+    "pairsFpr10": 2722
    }
   },
   {
@@ -1724,6 +2379,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "f6dd9f0633e600d23196afdbe54c6e94",
     "bytes": 995310411
+   },
+   "counts": {
+    "proteins": 17787,
+    "pairs": 460763,
+    "pairsFpr10": 37295
    }
   },
   {
@@ -1751,7 +2411,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Brassica napus"
+   "speciesName": "Brassica napus",
+   "counts": {
+    "proteins": 550,
+    "pairs": 549,
+    "pairsFpr10": 16
+   }
   },
   {
    "id": "afdb-het-3711",
@@ -1778,7 +2443,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Brassica campestris"
+   "speciesName": "Brassica campestris",
+   "counts": {
+    "proteins": 58,
+    "pairs": 57,
+    "pairsFpr10": 4
+   }
   },
   {
    "id": "afdb-het-3726",
@@ -1805,7 +2475,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Raphanus sativus"
+   "speciesName": "Raphanus sativus",
+   "counts": {
+    "proteins": 90,
+    "pairs": 89,
+    "pairsFpr10": 8
+   }
   },
   {
    "id": "afdb-het-3728",
@@ -1832,7 +2507,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Sinapis alba"
+   "speciesName": "Sinapis alba",
+   "counts": {
+    "proteins": 91,
+    "pairs": 89,
+    "pairsFpr10": 2
+   }
   },
   {
    "id": "afdb-het-3847",
@@ -1858,6 +2538,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "799e06136692d2cbe5fbc71ecac507a9",
     "bytes": 1011477413
+   },
+   "counts": {
+    "proteins": 30449,
+    "pairs": 1821317,
+    "pairsFpr10": 122066
    }
   },
   {
@@ -1885,7 +2570,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Vicia faba"
+   "speciesName": "Vicia faba",
+   "counts": {
+    "proteins": 8,
+    "pairs": 7,
+    "pairsFpr10": 3
+   }
   },
   {
    "id": "afdb-het-39946",
@@ -1912,7 +2602,12 @@
     "md5": "f6dd9f0633e600d23196afdbe54c6e94",
     "bytes": 995310411
    },
-   "speciesName": "Oryza sativa subsp. indica"
+   "speciesName": "Oryza sativa subsp. indica",
+   "counts": {
+    "proteins": 145,
+    "pairs": 141,
+    "pairsFpr10": 3
+   }
   },
   {
    "id": "afdb-het-39947",
@@ -1938,6 +2633,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "813de3fcdb2b1ec27f7a87d88c86193b",
     "bytes": 996806243
+   },
+   "counts": {
+    "proteins": 19302,
+    "pairs": 634633,
+    "pairsFpr10": 40390
    }
   },
   {
@@ -1965,7 +2665,12 @@
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
    },
-   "speciesName": "Nicotiana tabacum"
+   "speciesName": "Nicotiana tabacum",
+   "counts": {
+    "proteins": 705,
+    "pairs": 704,
+    "pairsFpr10": 26
+   }
   },
   {
    "id": "afdb-het-44689",
@@ -1991,6 +2696,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 5014,
+    "pairs": 63917,
+    "pairsFpr10": 6260
    }
   },
   {
@@ -2017,6 +2727,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 4941,
+    "pairs": 81333,
+    "pairsFpr10": 6342
    }
   },
   {
@@ -2044,7 +2759,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Saccharum officinarum"
+   "speciesName": "Saccharum officinarum",
+   "counts": {
+    "proteins": 60,
+    "pairs": 59,
+    "pairsFpr10": 3
+   }
   },
   {
    "id": "afdb-het-4565",
@@ -2071,7 +2791,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Triticum aestivum"
+   "speciesName": "Triticum aestivum",
+   "counts": {
+    "proteins": 32,
+    "pairs": 47,
+    "pairsFpr10": 9
+   }
   },
   {
    "id": "afdb-het-4577",
@@ -2097,6 +2822,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
+   },
+   "counts": {
+    "proteins": 11097,
+    "pairs": 340316,
+    "pairsFpr10": 22401
    }
   },
   {
@@ -2123,6 +2853,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 4993,
+    "pairs": 70885,
+    "pairsFpr10": 6087
    }
   },
   {
@@ -2150,7 +2885,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Candida albicans (taxon 5476)"
+   "speciesName": "Candida albicans (taxon 5476)",
+   "counts": {
+    "proteins": 21,
+    "pairs": 20,
+    "pairsFpr10": 5
+   }
   },
   {
    "id": "afdb-het-562",
@@ -2177,7 +2917,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Escherichia coli (taxon 562)"
+   "speciesName": "Escherichia coli (taxon 562)",
+   "counts": {
+    "proteins": 101,
+    "pairs": 110,
+    "pairsFpr10": 15
+   }
   },
   {
    "id": "afdb-het-5671",
@@ -2203,6 +2948,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 3743,
+    "pairs": 73940,
+    "pairsFpr10": 4505
    }
   },
   {
@@ -2230,7 +2980,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Trypanosoma brucei brucei (taxon 5702)"
+   "speciesName": "Trypanosoma brucei brucei (taxon 5702)",
+   "counts": {
+    "proteins": 59,
+    "pairs": 88,
+    "pairsFpr10": 3
+   }
   },
   {
    "id": "afdb-het-5839",
@@ -2257,7 +3012,12 @@
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
    },
-   "speciesName": "Plasmodium falciparum (taxon 5839)"
+   "speciesName": "Plasmodium falciparum (taxon 5839)",
+   "counts": {
+    "proteins": 4,
+    "pairs": 3,
+    "pairsFpr10": 0
+   }
   },
   {
    "id": "afdb-het-6183",
@@ -2283,6 +3043,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 6516,
+    "pairs": 125909,
+    "pairsFpr10": 10649
    }
   },
   {
@@ -2309,6 +3074,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 1297,
+    "pairs": 5037,
+    "pairsFpr10": 852
    }
   },
   {
@@ -2335,6 +3105,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 5974,
+    "pairs": 159088,
+    "pairsFpr10": 9737
    }
   },
   {
@@ -2361,6 +3136,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 4942,
+    "pairs": 73681,
+    "pairsFpr10": 5986
    }
   },
   {
@@ -2387,6 +3167,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 6200,
+    "pairs": 112827,
+    "pairsFpr10": 9082
    }
   },
   {
@@ -2413,6 +3198,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 601,
+    "pairs": 2796,
+    "pairsFpr10": 231
    }
   },
   {
@@ -2440,7 +3230,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Yersinia pestis"
+   "speciesName": "Yersinia pestis",
+   "counts": {
+    "proteins": 145,
+    "pairs": 172,
+    "pairsFpr10": 4
+   }
   },
   {
    "id": "afdb-het-6584",
@@ -2467,7 +3262,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Spisula solidissima"
+   "speciesName": "Spisula solidissima",
+   "counts": {
+    "proteins": 409,
+    "pairs": 408,
+    "pairsFpr10": 79
+   }
   },
   {
    "id": "afdb-het-6832",
@@ -2494,7 +3294,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Tigriopus californicus"
+   "speciesName": "Tigriopus californicus",
+   "counts": {
+    "proteins": 42,
+    "pairs": 41,
+    "pairsFpr10": 5
+   }
   },
   {
    "id": "afdb-het-7004",
@@ -2521,7 +3326,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Locusta migratoria"
+   "speciesName": "Locusta migratoria",
+   "counts": {
+    "proteins": 97,
+    "pairs": 97,
+    "pairsFpr10": 8
+   }
   },
   {
    "id": "afdb-het-71421",
@@ -2547,6 +3357,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 1006,
+    "pairs": 8056,
+    "pairsFpr10": 593
    }
   },
   {
@@ -2574,7 +3389,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Ceratitis capitata"
+   "speciesName": "Ceratitis capitata",
+   "counts": {
+    "proteins": 106,
+    "pairs": 105,
+    "pairsFpr10": 13
+   }
   },
   {
    "id": "afdb-het-7240",
@@ -2601,7 +3421,12 @@
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
    },
-   "speciesName": "Drosophila simulans"
+   "speciesName": "Drosophila simulans",
+   "counts": {
+    "proteins": 258,
+    "pairs": 259,
+    "pairsFpr10": 23
+   }
   },
   {
    "id": "afdb-het-83332",
@@ -2627,6 +3452,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 2406,
+    "pairs": 31697,
+    "pairsFpr10": 1799
    }
   },
   {
@@ -2653,6 +3483,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 2822,
+    "pairs": 35920,
+    "pairsFpr10": 4641
    }
   },
   {
@@ -2680,7 +3515,12 @@
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
    },
-   "speciesName": "Escherichia coli O157:H7"
+   "speciesName": "Escherichia coli O157:H7",
+   "counts": {
+    "proteins": 10,
+    "pairs": 9,
+    "pairsFpr10": 0
+   }
   },
   {
    "id": "afdb-het-8355",
@@ -2707,7 +3547,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Xenopus laevis"
+   "speciesName": "Xenopus laevis",
+   "counts": {
+    "proteins": 443,
+    "pairs": 441,
+    "pairsFpr10": 63
+   }
   },
   {
    "id": "afdb-het-85636",
@@ -2734,7 +3579,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Oenothera elata subsp. hookeri"
+   "speciesName": "Oenothera elata subsp. hookeri",
+   "counts": {
+    "proteins": 122,
+    "pairs": 121,
+    "pairsFpr10": 3
+   }
   },
   {
    "id": "afdb-het-85962",
@@ -2760,6 +3610,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 1208,
+    "pairs": 9328,
+    "pairsFpr10": 590
    }
   },
   {
@@ -2786,6 +3641,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
+   },
+   "counts": {
+    "proteins": 5939,
+    "pairs": 94678,
+    "pairsFpr10": 6848
    }
   },
   {
@@ -2813,7 +3673,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Salmonella typhi"
+   "speciesName": "Salmonella typhi",
+   "counts": {
+    "proteins": 34,
+    "pairs": 31,
+    "pairsFpr10": 3
+   }
   },
   {
    "id": "afdb-het-93061",
@@ -2839,6 +3704,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 1304,
+    "pairs": 10620,
+    "pairsFpr10": 805
    }
   },
   {
@@ -2866,7 +3736,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Trichosurus vulpecula"
+   "speciesName": "Trichosurus vulpecula",
+   "counts": {
+    "proteins": 98,
+    "pairs": 112,
+    "pairsFpr10": 28
+   }
   },
   {
    "id": "afdb-het-9395",
@@ -2893,7 +3768,12 @@
     "md5": "bd86facaa563e73e8d682820361aa047",
     "bytes": 995789885
    },
-   "speciesName": "Tupaia glis"
+   "speciesName": "Tupaia glis",
+   "counts": {
+    "proteins": 2,
+    "pairs": 1,
+    "pairsFpr10": 0
+   }
   },
   {
    "id": "afdb-het-9544",
@@ -2920,7 +3800,12 @@
     "md5": "f6dd9f0633e600d23196afdbe54c6e94",
     "bytes": 995310411
    },
-   "speciesName": "Macaca mulatta"
+   "speciesName": "Macaca mulatta",
+   "counts": {
+    "proteins": 3,
+    "pairs": 2,
+    "pairsFpr10": 0
+   }
   },
   {
    "id": "afdb-het-9555",
@@ -2947,7 +3832,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Papio anubis"
+   "speciesName": "Papio anubis",
+   "counts": {
+    "proteins": 54,
+    "pairs": 53,
+    "pairsFpr10": 3
+   }
   },
   {
    "id": "afdb-het-9598",
@@ -2974,7 +3864,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Pan troglodytes"
+   "speciesName": "Pan troglodytes",
+   "counts": {
+    "proteins": 327,
+    "pairs": 325,
+    "pairsFpr10": 14
+   }
   },
   {
    "id": "afdb-het-99287",
@@ -3000,6 +3895,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 3033,
+    "pairs": 26186,
+    "pairsFpr10": 2722
    }
   },
   {
@@ -3027,7 +3927,12 @@
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
    },
-   "speciesName": "Ovis aries"
+   "speciesName": "Ovis aries",
+   "counts": {
+    "proteins": 175,
+    "pairs": 174,
+    "pairsFpr10": 41
+   }
   },
   {
    "id": "afdb-het-9986",
@@ -3054,7 +3959,12 @@
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
    },
-   "speciesName": "Oryctolagus cuniculus"
+   "speciesName": "Oryctolagus cuniculus",
+   "counts": {
+    "proteins": 1016,
+    "pairs": 1017,
+    "pairsFpr10": 137
+   }
   },
   {
    "id": "afdb-het-4932",
@@ -3080,6 +3990,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "b16370263fe56d232815821f3d2b4ffb",
     "bytes": 494783956
+   },
+   "counts": {
+    "proteins": 148,
+    "pairs": 148,
+    "pairsFpr10": 13
    }
   },
   {
@@ -3106,6 +4021,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
+   },
+   "counts": {
+    "proteins": 5756,
+    "pairs": 158840,
+    "pairsFpr10": 10243
    }
   },
   {
@@ -3132,6 +4052,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
+   },
+   "counts": {
+    "proteins": 11124,
+    "pairs": 139719,
+    "pairsFpr10": 11867
    }
   },
   {
@@ -3158,6 +4083,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
+   },
+   "counts": {
+    "proteins": 9740,
+    "pairs": 138938,
+    "pairsFpr10": 13570
    }
   },
   {
@@ -3184,6 +4114,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "67535c352018c3ea9c89c342f0b3f9a6",
     "bytes": 995154943
+   },
+   "counts": {
+    "proteins": 12609,
+    "pairs": 263985,
+    "pairsFpr10": 30450
    }
   },
   {
@@ -3210,6 +4145,11 @@
     "doi": "10.5281/zenodo.22964479",
     "md5": "813de3fcdb2b1ec27f7a87d88c86193b",
     "bytes": 996806243
+   },
+   "counts": {
+    "proteins": 17326,
+    "pairs": 598295,
+    "pairsFpr10": 60123
    }
   },
   {
@@ -3230,6 +4170,11 @@
     "offsets": "data/screens/mitomatch-9606/offsets.json",
     "md5": "ab977237cd508b6c82e4bc162ff24f0d",
     "bytes": 4216028
+   },
+   "counts": {
+    "proteins": 986,
+    "pairs": 2830,
+    "pairsFpr10": 2763
    }
   },
   {
@@ -3256,6 +4201,11 @@
     "url": "https://doi.org/10.15785/SBGRID/1155",
     "file": "predictomes_ddr_dataset.tar.gz (149 GB)",
     "how": "rsync -av rsync://data.sbgrid.org/10.15785/SBGRID/1155 ."
+   },
+   "counts": {
+    "proteins": 287,
+    "pairs": 40458,
+    "pairsFpr10": 3800
    }
   },
   {
@@ -3282,6 +4232,11 @@
     "url": "https://doi.org/10.15785/SBGRID/1155",
     "file": "hs_dons_vs_proteome.tar.gz (38 GB)",
     "how": "rsync -av rsync://data.sbgrid.org/10.15785/SBGRID/1155 ."
+   },
+   "counts": {
+    "proteins": 20171,
+    "pairs": 20171,
+    "pairsFpr10": 915
    }
   },
   {
@@ -3308,6 +4263,11 @@
     "url": "https://doi.org/10.15785/SBGRID/1155",
     "file": "hs_stk19_vs_proteome.tar.gz (28 GB)",
     "how": "rsync -av rsync://data.sbgrid.org/10.15785/SBGRID/1155 ."
+   },
+   "counts": {
+    "proteins": 20216,
+    "pairs": 20216,
+    "pairsFpr10": 907
    }
   },
   {
@@ -3334,6 +4294,11 @@
     "url": "https://doi.org/10.15785/SBGRID/1155",
     "file": "hs_usp37_vs_proteome.tar.gz (60 GB)",
     "how": "rsync -av rsync://data.sbgrid.org/10.15785/SBGRID/1155 ."
+   },
+   "counts": {
+    "proteins": 19150,
+    "pairs": 19150,
+    "pairsFpr10": 1725
    }
   },
   {
@@ -3354,6 +4319,11 @@
     "offsets": "data/screens/mitomatch-9598/offsets.json",
     "md5": "76d1753f1848058853a09371fecde4e2",
     "bytes": 3962478
+   },
+   "counts": {
+    "proteins": 963,
+    "pairs": 2610,
+    "pairsFpr10": 2497
    }
   },
   {
@@ -3374,6 +4344,11 @@
     "offsets": "data/screens/mitomatch-10090/offsets.json",
     "md5": "f3a1f96410ab83e7ac2616a85034fa5e",
     "bytes": 3746268
+   },
+   "counts": {
+    "proteins": 955,
+    "pairs": 2417,
+    "pairsFpr10": 2227
    }
   },
   {
@@ -3394,6 +4369,11 @@
     "offsets": "data/screens/mitomatch-10116/offsets.json",
     "md5": "39b0bc006b8c6b2ca4a3a6fba450a82f",
     "bytes": 3546350
+   },
+   "counts": {
+    "proteins": 920,
+    "pairs": 2221,
+    "pairsFpr10": 2058
    }
   },
   {
@@ -3414,6 +4394,11 @@
     "offsets": "data/screens/mitomatch-8355/offsets.json",
     "md5": "bd1a82208509e6903545c13517c7a461",
     "bytes": 2924743
+   },
+   "counts": {
+    "proteins": 797,
+    "pairs": 1635,
+    "pairsFpr10": 1494
    }
   },
   {
@@ -3434,6 +4419,11 @@
     "offsets": "data/screens/mitomatch-7955/offsets.json",
     "md5": "7bd2e35baaaeccfffb69baa514a4a8b4",
     "bytes": 2830393
+   },
+   "counts": {
+    "proteins": 796,
+    "pairs": 1577,
+    "pairsFpr10": 1436
    }
   },
   {
@@ -3454,6 +4444,11 @@
     "offsets": "data/screens/mitomatch-7227/offsets.json",
     "md5": "8c59052afb7860dfb298379f581c5ae9",
     "bytes": 1484579
+   },
+   "counts": {
+    "proteins": 494,
+    "pairs": 709,
+    "pairsFpr10": 659
    }
   },
   {
@@ -3474,6 +4469,11 @@
     "offsets": "data/screens/dmelppi/offsets.json",
     "md5": "065fc82a8da8a53baaf03985c1a0275a",
     "bytes": 25598863
+   },
+   "counts": {
+    "proteins": 5010,
+    "pairs": 27711,
+    "pairsFpr10": 10601
    }
   },
   {
@@ -3494,6 +4494,11 @@
     "offsets": "data/screens/mitomatch-6239/offsets.json",
     "md5": "9b7737f4a3b6f1fa664c2946a025445f",
     "bytes": 1204971
+   },
+   "counts": {
+    "proteins": 408,
+    "pairs": 521,
+    "pairsFpr10": 488
    }
   },
   {
@@ -3514,6 +4519,11 @@
     "offsets": "data/screens/mitomatch-3702/offsets.json",
     "md5": "a01ecafd8a1d438c0dd3cabb90c1aadc",
     "bytes": 662559
+   },
+   "counts": {
+    "proteins": 237,
+    "pairs": 254,
+    "pairsFpr10": 236
    }
   },
   {
@@ -3527,7 +4537,12 @@
    "models": 5,
    "recycles": 5,
    "source": "Urzúa Lehuedé et al. 2025 · New Phytologist",
-   "paper": "https://doi.org/10.1111/nph.20406"
+   "paper": "https://doi.org/10.1111/nph.20406",
+   "counts": {
+    "proteins": 12,
+    "pairs": 78,
+    "pairsFpr10": 36
+   }
   },
   {
    "id": "arabidopsis-abf2",
@@ -3540,7 +4555,12 @@
    "models": 5,
    "recycles": 5,
    "source": "Salinas-Grenet et al. 2026 · bioRxiv",
-   "paper": "https://doi.org/10.64898/2026.08.28.747924"
+   "paper": "https://doi.org/10.64898/2026.08.28.747924",
+   "counts": {
+    "proteins": 36,
+    "pairs": 342,
+    "pairsFpr10": 126
+   }
   },
   {
    "id": "mitomatch-44689",
@@ -3560,6 +4580,11 @@
     "offsets": "data/screens/mitomatch-44689/offsets.json",
     "md5": "526620f88d2606dfcaf0ff5e471ee4fd",
     "bytes": 633995
+   },
+   "counts": {
+    "proteins": 226,
+    "pairs": 223,
+    "pairsFpr10": 202
    }
   },
   {
@@ -3580,6 +4605,11 @@
     "offsets": "data/screens/mitomatch-559292/offsets.json",
     "md5": "debe737e3f993aeff9d502d89649ee81",
     "bytes": 468799
+   },
+   "counts": {
+    "proteins": 183,
+    "pairs": 172,
+    "pairsFpr10": 163
    }
   },
   {
@@ -3600,6 +4630,11 @@
     "offsets": "data/screens/mitomatch-284812/offsets.json",
     "md5": "a21fc4d9ae889b50cab630b7d84c464a",
     "bytes": 480841
+   },
+   "counts": {
+    "proteins": 193,
+    "pairs": 163,
+    "pairsFpr10": 152
    }
   }
  ],
