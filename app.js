@@ -5716,6 +5716,12 @@ function withYours(E0, Y) {
 // species files the network reads (edges past 10% FPR, tested.bin for a pair folded below it, BioGRID shards), so a
 // long list costs no per-protein read. One species per search; a name another species knows is named with a link there.
 const PAIR_MAX = 2000;
+// A search stays out of the address: #/pairs/<species> holds the page, this tab keeps the pairs (for a reload, a change of species,
+// a return to the tab). Copy link makes a ?q= link on request, while it stays short enough to paste anywhere; opening one searches it.
+const PAIR_LINK_CHARS = 2000; let PAIR_CUR = null;
+const pairCur = () => { if (PAIR_CUR) return PAIR_CUR; try { return JSON.parse(sessionStorage.getItem('atlas-pairs')); } catch (e) { return null; } };
+function pairKeep(v) { PAIR_CUR = v; try { if (v) sessionStorage.setItem('atlas-pairs', JSON.stringify(v)); else sessionStorage.removeItem('atlas-pairs'); } catch (e) { /* no storage: it lasts until the tab reloads */ } }
+const pairQuery = (text) => new URLSearchParams({ q: text.split('\n').join(';') }).toString();
 function pairLines(text) {   // → [[name1, name2, line number]], and a header's two name columns when the text is a table
   const lines = String(text || '').split(/\r?\n/).map((l) => l.trim()).filter(Boolean); if (!lines.length) return [];
   const sep = (l) => (l.includes('\t') ? '\t' : /[,;]/.test(l) ? null : '');
@@ -5723,7 +5729,7 @@ function pairLines(text) {   // → [[name1, name2, line number]], and a header'
     return l.split(/\s*×\s*|\s+x\s+|___|\s+/i).filter(Boolean); };
   let rows = lines.map(cells), ia = 0, ib = 1;
   const h = rows[0].map((c) => c.toLowerCase().replace(/[\s.-]+/g, '_'));
-  const PREF = ['flybase', 'uniprot', 'protein', 'gene', 'symbol', 'name', 'id', 'accession'];
+  const PREF = ['input', 'flybase', 'uniprot', 'protein', 'gene', 'symbol', 'name', 'id', 'accession'];
   const pairOf = () => { for (const p of PREF) { const a = h.findIndex((c) => new RegExp(`^${p}_?(1|a)$`).test(c)), b = h.findIndex((c) => new RegExp(`^${p}_?(2|b)$`).test(c)); if (a >= 0 && b >= 0) return [a, b]; }
     const a = h.findIndex((c) => /^bait/.test(c)), b = h.findIndex((c) => /^prey/.test(c)); return a >= 0 && b >= 0 ? [a, b] : null; };
   const hp = pairOf(), joined = h.findIndex((c) => /^(name|pair|job|jobs|complex)$/.test(c));
@@ -5735,14 +5741,15 @@ function pairLines(text) {   // → [[name1, name2, line number]], and a header'
 async function viewPairs(spId, q) {
   const gen = ROUTE, sp = await species(spId); if (stale(gen)) return;
   document.title = `Pairs · ${sp.reg.label} · LIVIA Atlas`;
-  const qtext = (q.get('q') || '').split(';').map((x) => x.trim()).filter(Boolean).join('\n'), byKey = sp.manifest.keyedBy;
+  if (q.get('q')) { pairKeep({ text: q.get('q').split(';').map((x) => x.trim()).filter(Boolean).join('\n'), of: +q.get('of') || 0 }); history.replaceState(null, '', `#/pairs/${sp.id}`); }   // a shared link: search it, and the address stays the page's
+  const CUR = pairCur(), qtext = CUR ? CUR.text : '', byKey = sp.manifest.keyedBy;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Pairs</a></div>
     <div class="dshead"><h1>Search pairs</h1><div class="pname">${esc(sp.reg.label)} · your pairs, each with its best iLIS over every model and screen</div></div>
     <div class="card" id="pr-in"><div class="card-head"><h2>Pairs</h2><span class="muted">two proteins per line: gene symbols, UniProt accessions${byKey ? ', FlyBase IDs, CG numbers' : ''} or older names, separated by a space, comma, tab or × · or a table with two name columns (a network CSV of the Atlas reads as is) · or drop a file on this card</span></div>
       <textarea class="ids" id="pr-ids" rows="5" spellcheck="false" placeholder="one pair per line, e.g.&#10;${byKey ? 'yki sd&#10;wts mats' : 'TP53 MDM2&#10;BRCA1 BARD1'}">${esc(qtext)}</textarea>
       <div class="muted" style="margin:4px 0 0;font-size:13px">Or try: <a href="#" id="pr-eg"></a></div>
       <div class="controls" style="margin-top:8px"><button class="btn primary" id="pr-go" type="button" title="look up every pair (⌘ or Ctrl-Enter in the box)">Search</button>
-        <button class="btn" id="pr-filebtn" type="button" title="a table or a list of pairs: txt, csv, tsv or Excel; you can also drop the file on this card">Load a file</button><input type="file" id="pr-file" accept="${FILE_ACCEPT}" hidden>
+        <button class="btn" id="pr-filebtn" type="button" title="a table or a list of pairs: txt, csv, tsv or Excel; you can also drop the file on this card">Load a file</button><button class="btn" id="pr-clear" type="button" title="empty the box and the results"${qtext ? '' : ' hidden'}>Clear</button><input type="file" id="pr-file" accept="${FILE_ACCEPT}" hidden>
         <label class="ctl" id="pr-sheet-wrap" hidden>Sheet <select id="pr-sheet"></select></label>
         <label class="ctl" title="the species whose screens are searched; switching keeps your pairs">Species <select id="pr-sp">${((REG && REG.species) || []).map((x) => `<option value="${x.id}"${x.id === sp.id ? ' selected' : ''}>${esc(x.label)}</option>`).join('')}</select></label>
         <span class="muted" id="pr-note"></span></div></div>
@@ -5757,15 +5764,15 @@ async function viewPairs(spId, q) {
       for (const r of [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 3)) { const m = E.adj.get(r.i); if (!m) continue; const [j] = [...m].sort((x, y) => y[1].best - x[1].best)[0]; P.push([r.gene, sp.rows[j].gene]); }
       if (P.length) { showEg(P); egEl.parentElement.hidden = false; } }).catch(() => {}); }
   const go = () => { const P = pairLines($('#pr-ids').value); if (!P.length) { $('#pr-note').textContent = 'No pair to search: two names per line.'; return; }
-    const qs = P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join(';');
-    location.hash = `#/pairs/${sp.id}?${new URLSearchParams({ q: qs, ...(P.length > PAIR_MAX ? { of: P.length } : {}) })}`; };   // of: how many the list had, when only the first PAIR_MAX are searched
+    pairKeep({ text: P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join('\n'), of: P.length > PAIR_MAX ? P.length : 0 }); route(); };
+  $('#pr-clear').onclick = () => { pairKeep(null); route(); };
   $('#pr-go').onclick = go;
   $('#pr-ids').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); go(); } };
   $('#pr-filebtn').onclick = () => $('#pr-file').click();
   tableInput({ card: $('#pr-in'), file: $('#pr-file'), sheetWrap: $('#pr-sheet-wrap'), sheet: $('#pr-sheet'), onStatus: (h) => { $('#pr-note').innerHTML = h; },
     onText: (t) => { const P = pairLines(t); $('#pr-ids').value = P.map(([a, b]) => `${a} ${b}`).join('\n'); $('#pr-note').textContent = `${fmtInt(P.length)} pair${P.length === 1 ? '' : 's'} read`; go(); } });
   speciesCombo($('#pr-sp'), REG);
-  $('#pr-sp').onchange = (e) => { const P = pairLines($('#pr-ids').value); location.hash = `#/pairs/${e.target.value}${P.length ? `?${new URLSearchParams({ q: P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join(';') })}` : ''}`; };
+  $('#pr-sp').onchange = (e) => { const P = pairLines($('#pr-ids').value); if (P.length) pairKeep({ text: P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join('\n'), of: P.length > PAIR_MAX ? P.length : 0 }); location.hash = `#/pairs/${e.target.value}`; };
   if (!qtext) return;
 
   // The lookup
@@ -5790,12 +5797,12 @@ async function viewPairs(spId, q) {
   // names not in this species: why (too long for the screens, not in them), and a switch when they look like another species' IDs
   const miss = [...new Set(res.flatMap((r) => [!r.A ? r.qa : null, !r.B ? r.qb : null]).filter(Boolean))];
   if (miss.length) {
-    const L = await explainMissing(sp, miss, { link: (id, names) => `#/pairs/${id}?${new URLSearchParams({ q: q.get('q') || '' })}` }).catch(() => []); if (stale(gen)) return;
+    const L = await explainMissing(sp, miss, { link: (id) => `#/pairs/${id}` }).catch(() => []); if (stale(gen)) return;
     $('#pr-miss').innerHTML = `<div>Not found in ${esc(sp.reg.label)}: ${miss.slice(0, 30).map((t) => `<b>${esc(t)}</b>`).join(', ')}${miss.length > 30 ? ` and ${fmtInt(miss.length - 30)} more` : ''}.</div>` + L.map((x) => `<div>${x}</div>`).join(''); $('#pr-miss').hidden = false;
   }
   const render = () => { $('#pr-stats').innerHTML = stats(); draw(); };
   const cnt = (f) => res.filter(f).length, chip = (n, lab, col) => (n ? `<span><b${col ? ` style="color:${col}"` : ''}>${fmtInt(n)}</b> ${lab}</span>` : '');
-  const of = +q.get('of') || 0;
+  const of = (CUR && CUR.of) || 0;
   const stats = () => `<span><b>${fmtInt(res.length)}</b> pair${res.length === 1 ? '' : 's'}${of > res.length ? ` <span class="muted">(the first ${fmtInt(res.length)} of the ${fmtInt(of)} given)</span>` : ''}</span>` + chip(cnt((r) => r.b === 1), 'past 1% FPR', BAND_TXT[1]) + chip(cnt((r) => r.b === 5), 'past 5% FPR', BAND_TXT[5]) + chip(cnt((r) => r.b === 10), 'past 10% FPR', BAND_TXT[10])
     + chip(cnt((r) => r.st === 'low'), 'folded, below 10% FPR') + chip(cnt((r) => r.st === 'none'), 'never folded in these screens') + chip(cnt((r) => r.st === 'unknown'), 'not past 10% FPR') + chip(cnt((r) => r.st === 'homo'), 'same protein') + chip(cnt((r) => r.st === 'missing'), 'with a name not found') + (res.some((r) => r.st === 'wait') ? '<span class="muted">checking the pairs below 10% FPR…</span>' : '');
   const stTxt = (r) => (r.st === 'pass' ? bandChip(r.b) : r.st === 'low' ? '<span class="muted">folded, below 10% FPR</span>' : r.st === 'none' ? '<span class="muted">never folded in these screens</span>'
@@ -5819,7 +5826,10 @@ async function viewPairs(spId, q) {
   render();
   const prots = [...new Set(res.flatMap((r) => [r.A, r.B]).filter(Boolean).map((R) => R.gene))];
   $('#pr-net').href = `#/network/${sp.id}?${new URLSearchParams({ ids: prots.join(','), add: 'none' })}`; $('#pr-net').hidden = !prots.length;
-  $('#pr-link').onclick = async () => { const b = $('#pr-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
+  { const lq = pairQuery(qtext), b = $('#pr-link');
+    if (lq.length > PAIR_LINK_CHARS) { b.disabled = true; b.title = 'this list is too long for a link: the CSV keeps it, and loads back here'; }
+    else { const url = `${location.origin}${location.pathname}#/pairs/${sp.id}?${lq}`;
+      b.onclick = async () => { try { await navigator.clipboard.writeText(url); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', url); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); }; } }
   $('#pr-csv').onclick = () => { const csvq = (v) => (/[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
     const base = `${location.origin}${location.pathname.replace(/index\.html$/, '')}`, ids = (R) => (R ? (byKey ? [R.key, R.acc || ''] : [R.acc || R.key]) : byKey ? ['', ''] : ['']);
     const head = `Input_1,Input_2,Protein_1,Protein_2,${byKey ? 'FlyBase_1,UniProt_1,FlyBase_2,UniProt_2' : 'UniProt_1,UniProt_2'},pair_page,iLIS_best,ipTM_best,status,screens,reference,BioGRID_physical,BioGRID_genetic,species,page_build`;
