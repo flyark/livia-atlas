@@ -5665,6 +5665,123 @@ function withYours(E0, Y) {
     if (!memo.has(v)) { const m = new Map(E0.adj.get(v) || []); for (const [j, u] of mu) { const e = m.get(j); m.set(j, e ? { ...e, u } : { best: u.best, avg: NaN, src: 0, iptm: u.iptm, ipta: NaN, u, uonly: true }); } memo.set(v, m); }
     return memo.get(v); } } };
 }
+// Pairs: the reader's own list of pairs, two proteins per line, looked up in one species. Every pair is answered from the
+// species files the network reads (edges past 10% FPR, tested.bin for a pair folded below it, BioGRID shards), so a
+// long list costs no per-protein read. One species per search; a name another species knows is named with a link there.
+const PAIR_MAX = 2000;
+function pairLines(text) {   // → [[name1, name2, line number]], and a header's two name columns when the text is a table
+  const lines = String(text || '').split(/\r?\n/).map((l) => l.trim()).filter(Boolean); if (!lines.length) return [];
+  const sep = (l) => (l.includes('\t') ? '\t' : /[,;]/.test(l) ? null : '');
+  const cells = (l) => { const s = sep(l); if (s === '\t') return l.split('\t').map((c) => c.trim()); if (s === null) return (parseCSV(l.replace(/;/g, ','))[0] || []).map((c) => c.trim());
+    return l.split(/\s*×\s*|\s+x\s+|___|\s+/i).filter(Boolean); };
+  let rows = lines.map(cells), ia = 0, ib = 1;
+  const h = rows[0].map((c) => c.toLowerCase().replace(/[\s.-]+/g, '_'));
+  const PREF = ['flybase', 'uniprot', 'protein', 'gene', 'symbol', 'name', 'id', 'accession'];
+  const pairOf = () => { for (const p of PREF) { const a = h.findIndex((c) => new RegExp(`^${p}_?(1|a)$`).test(c)), b = h.findIndex((c) => new RegExp(`^${p}_?(2|b)$`).test(c)); if (a >= 0 && b >= 0) return [a, b]; }
+    const a = h.findIndex((c) => /^bait/.test(c)), b = h.findIndex((c) => /^prey/.test(c)); return a >= 0 && b >= 0 ? [a, b] : null; };
+  const hp = pairOf(), joined = h.findIndex((c) => /^(name|pair|job|jobs|complex)$/.test(c));
+  if (hp) { [ia, ib] = hp; rows = rows.slice(1); }
+  else if (joined >= 0 && rows.length > 1 && String(rows[1][joined] || '').includes('___')) { rows = rows.slice(1).map((r) => String(r[joined]).split('___')); }
+  else if (h.length >= 2 && h.some((c) => /protein|gene|symbol|uniprot|name|partner/.test(c)) && rows.length > 1) rows = rows.slice(1);   // a header we cannot place: the first two columns
+  return rows.map((r, n) => [String(r[ia] || '').replace(/^"|"$/g, ''), String(r[ib] || '').replace(/^"|"$/g, ''), n + 1]).filter(([a, b]) => a && b);
+}
+async function viewPairs(spId, q) {
+  const gen = ROUTE, sp = await species(spId); if (stale(gen)) return;
+  document.title = `Pairs · ${sp.reg.label} · LIVIA Atlas`;
+  const qtext = (q.get('q') || '').split(';').map((x) => x.trim()).filter(Boolean).join('\n'), byKey = sp.manifest.keyedBy;
+  app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / <a href="${esc(location.hash)}">Pairs</a></div>
+    <div class="dshead"><h1>Search pairs</h1><div class="pname">${esc(sp.reg.label)} · your pairs, each with its best iLIS over every model and screen</div></div>
+    <div class="card" id="pr-in"><div class="card-head"><h2>Pairs</h2><span class="muted">two proteins per line: gene symbols, UniProt accessions${byKey ? ', FlyBase IDs, CG numbers' : ''} or older names, separated by a space, comma, tab or × · or a table with two name columns (a network CSV of the Atlas reads as is) · or drop a file on this card</span></div>
+      <textarea class="ids" id="pr-ids" rows="5" spellcheck="false" placeholder="one pair per line, e.g.&#10;${byKey ? 'yki sd&#10;wts mats' : 'TP53 MDM2&#10;BRCA1 BARD1'}">${esc(qtext)}</textarea>
+      <div class="muted" style="margin:4px 0 0;font-size:13px">Or try: <a href="#" id="pr-eg"></a></div>
+      <div class="controls" style="margin-top:8px"><button class="btn primary" id="pr-go" type="button" title="look up every pair (⌘ or Ctrl-Enter in the box)">Search</button>
+        <button class="btn" id="pr-filebtn" type="button" title="a table or a list of pairs: txt, csv, tsv or Excel; you can also drop the file on this card">Load a file</button><input type="file" id="pr-file" accept="${FILE_ACCEPT}" hidden>
+        <label class="ctl" id="pr-sheet-wrap" hidden>Sheet <select id="pr-sheet"></select></label>
+        <label class="ctl" title="the species whose screens are searched; switching keeps your pairs">Species <select id="pr-sp">${((REG && REG.species) || []).map((x) => `<option value="${x.id}"${x.id === sp.id ? ' selected' : ''}>${esc(x.label)}</option>`).join('')}</select></label>
+        <span class="muted" id="pr-note"></span></div></div>
+    <div class="card" id="pr-out" hidden><div class="card-head"><h2>Results</h2><div class="controls" style="margin:0"><button class="btn" id="pr-csv" type="button" title="every row below as a table, with each pair's page">↓ CSV</button><button class="btn" id="pr-link" type="button" title="a link that opens this search">Copy link</button><a class="btn" id="pr-net" href="#" title="the network of every protein found, only these proteins">Draw as a network</a></div></div>
+      <div class="nw-stats" id="pr-stats"></div><div class="miss" id="pr-miss" hidden></div>
+      <div class="tbl-wrap"><table class="pt" id="pr-t"></table></div></div>`;
+  const eg = byKey ? [['yki', 'sd'], ['wts', 'mats'], ['hpo', 'sav']] : sp.id === 'human' ? [['TP53', 'MDM2'], ['BRCA1', 'BARD1'], ['CTNNB1', 'APC']] : null;
+  const egEl = $('#pr-eg'), showEg = (P) => { egEl.textContent = P.map((p) => p.join(' × ')).join(', '); egEl.onclick = (e) => { e.preventDefault(); $('#pr-ids').value = P.map((p) => p.join(' ')).join('\n'); go(); }; };
+  if (eg) showEg(eg);
+  else { egEl.parentElement.hidden = true;   // another species: the proteins with the most partners, each with its strongest one
+    edges(sp).then((E) => { if (stale(gen)) return; const P = [];
+      for (const r of [...sp.rows].sort((a, b) => b.pos10 - a.pos10).slice(0, 3)) { const m = E.adj.get(r.i); if (!m) continue; const [j] = [...m].sort((x, y) => y[1].best - x[1].best)[0]; P.push([r.gene, sp.rows[j].gene]); }
+      if (P.length) { showEg(P); egEl.parentElement.hidden = false; } }).catch(() => {}); }
+  const go = () => { const P = pairLines($('#pr-ids').value); if (!P.length) { $('#pr-note').textContent = 'No pair to search: two names per line.'; return; }
+    const qs = P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join(';');
+    location.hash = `#/${sp.id}/pairs?${new URLSearchParams({ q: qs, ...(P.length > PAIR_MAX ? { of: P.length } : {}) })}`; };   // of: how many the list had, when only the first PAIR_MAX are searched
+  $('#pr-go').onclick = go;
+  $('#pr-ids').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); go(); } };
+  $('#pr-filebtn').onclick = () => $('#pr-file').click();
+  tableInput({ card: $('#pr-in'), file: $('#pr-file'), sheetWrap: $('#pr-sheet-wrap'), sheet: $('#pr-sheet'), onStatus: (h) => { $('#pr-note').innerHTML = h; },
+    onText: (t) => { const P = pairLines(t); $('#pr-ids').value = P.map(([a, b]) => `${a} ${b}`).join('\n'); $('#pr-note').textContent = `${fmtInt(P.length)} pair${P.length === 1 ? '' : 's'} read`; go(); } });
+  speciesCombo($('#pr-sp'), REG);
+  $('#pr-sp').onchange = (e) => { const P = pairLines($('#pr-ids').value); location.hash = `#/${e.target.value}/pairs${P.length ? `?${new URLSearchParams({ q: P.slice(0, PAIR_MAX).map(([a, b]) => `${a} ${b}`).join(';') })}` : ''}`; };
+  if (!qtext) return;
+
+  // The lookup
+  const IN = pairLines(qtext).slice(0, PAIR_MAX);
+  $('#pr-out').hidden = false; $('#pr-stats').innerHTML = `<span class="muted">Looking up ${fmtInt(IN.length)} pair${IN.length === 1 ? '' : 's'}…</span>`;
+  const [E, T] = await Promise.all([edges(sp).catch(() => null), tested(sp)]); if (stale(gen)) return;
+  const res = IN.map(([a, b, n]) => ({ n, qa: a, qb: b, A: resolveRow(sp, a), B: resolveRow(sp, b) }));
+  const ks = new Set(); res.forEach((r) => { if (r.A && r.B) ks.add(r.A.i); });
+  const KS = new Map(); await Promise.all([...ks].map(async (i) => { KS.set(i, await reportedOf(sp, i).catch(() => null)); })); if (stale(gen)) return;
+  const homo = new Map();
+  for (const r of res) {
+    if (!r.A || !r.B) { r.st = 'missing'; r.rank = 6; continue; }
+    const K = KS.get(r.A.i); r.pubs = K ? K.pubs(r.A.i, r.B.i) : 0; r.gen = K ? K.gen(r.A.i, r.B.i) : 0;
+    if (r.A.i === r.B.i) { r.st = 'homo'; r.rank = 4;
+      if (!homo.has(r.A.key)) homo.set(r.A.key, homoRowsFor(sp.id, r.A).then((rows) => homoFor(rows, r.A).find((x) => !x.iso)).catch(() => null));
+      const h = await homo.get(r.A.key); if (stale(gen)) return; if (h && Number.isFinite(+h.iLIS)) { r.best = +h.iLIS; r.iptm = Number.isFinite(+h.ipTM) ? +h.ipTM : NaN; }
+      continue; }
+    const e = E && E.adj.get(r.A.i), x = e && e.get(r.B.i);
+    if (x) { r.st = 'pass'; r.best = x.best; r.iptm = x.iptm; r.src = x.src; r.b = bandOf(x.best); r.rank = { 1: 0, 5: 1, 10: 2 }[r.b]; }
+    else if (T && T.has(r.A.i, r.B.i)) { r.st = 'low'; r.best = T.score(r.A.i, r.B.i); r.approx = true; r.rank = 3; }
+    else { r.st = T && E ? 'none' : 'unknown'; r.rank = 5; }   // without both files it is not known whether the pair was folded
+  }
+  // names not in this species: why (too long for the screens, not in them), and a switch when they look like another species' IDs
+  const miss = [...new Set(res.flatMap((r) => [!r.A ? r.qa : null, !r.B ? r.qb : null]).filter(Boolean))];
+  if (miss.length) {
+    const L = await explainMissing(sp, miss, { link: (id, names) => `#/${id}/pairs?${new URLSearchParams({ q: q.get('q') || '' })}` }).catch(() => []); if (stale(gen)) return;
+    $('#pr-miss').innerHTML = `<div>Not found in ${esc(sp.reg.label)}: ${miss.slice(0, 30).map((t) => `<b>${esc(t)}</b>`).join(', ')}${miss.length > 30 ? ` and ${fmtInt(miss.length - 30)} more` : ''}.</div>` + L.map((x) => `<div>${x}</div>`).join(''); $('#pr-miss').hidden = false;
+  }
+  const cnt = (f) => res.filter(f).length, chip = (n, lab, col) => (n ? `<span><b${col ? ` style="color:${col}"` : ''}>${fmtInt(n)}</b> ${lab}</span>` : '');
+  const of = +q.get('of') || 0;
+  $('#pr-stats').innerHTML = `<span><b>${fmtInt(res.length)}</b> pair${res.length === 1 ? '' : 's'}${of > res.length ? ` <span class="muted">(the first ${fmtInt(res.length)} of the ${fmtInt(of)} given)</span>` : ''}</span>` + chip(cnt((r) => r.b === 1), 'past 1% FPR', BAND_TXT[1]) + chip(cnt((r) => r.b === 5), 'past 5% FPR', BAND_TXT[5]) + chip(cnt((r) => r.b === 10), 'past 10% FPR', BAND_TXT[10])
+    + chip(cnt((r) => r.st === 'low'), 'folded, below 10% FPR') + chip(cnt((r) => r.st === 'none'), 'never folded in these screens') + chip(cnt((r) => r.st === 'unknown'), 'not past 10% FPR') + chip(cnt((r) => r.st === 'homo'), 'same protein') + chip(cnt((r) => r.st === 'missing'), 'with a name not found');
+  const stTxt = (r) => (r.st === 'pass' ? bandChip(r.b) : r.st === 'low' ? '<span class="muted">folded, below 10% FPR</span>' : r.st === 'none' ? '<span class="muted">never folded in these screens</span>'
+    : r.st === 'unknown' ? '<span class="muted">not past 10% FPR</span>' : r.st === 'homo' ? `<a href="#/${sp.id}/${r.A.key}" title="the protein's page: its homodimer card">same protein: homodimer</a>` : '<span class="muted">name not found</span>');
+  const stPlain = (r) => (r.st === 'pass' ? `past ${r.b}% FPR` : r.st === 'low' ? 'folded, below 10% FPR' : r.st === 'none' ? 'never folded in these screens' : r.st === 'unknown' ? 'not past 10% FPR' : r.st === 'homo' ? 'same protein: homodimer' : 'name not found');
+  const nm = (R, raw) => (R ? `<a href="#/${sp.id}/${encodeURIComponent(R.key)}">${esc(R.gene)}</a>${R.gene.toLowerCase() !== String(raw).toLowerCase() ? ` <span class="muted" title="as you wrote it">${esc(raw)}</span>` : ''}` : `<span class="muted">${esc(raw)}</span>`);
+  const pageOf = (r) => (r.A && r.B && r.A.i !== r.B.i && r.st !== 'none' && r.st !== 'unknown' ? `#/${sp.id}/${encodeURIComponent(r.A.key)}/${encodeURIComponent(r.B.key)}` : '');
+  const COLS = [['n', '#', (r) => r.n], ['a', 'Protein 1', (r) => (r.A ? r.A.gene : r.qa).toLowerCase()], ['b', 'Protein 2', (r) => (r.B ? r.B.gene : r.qb).toLowerCase()],
+    ['best', 'Best iLIS', (r) => (Number.isFinite(r.best) ? r.best : -1)], ['iptm', 'ipTM', (r) => (Number.isFinite(r.iptm) ? r.iptm : -1)], ['st', 'Status', (r) => r.rank],
+    ['src', 'Screens', (r) => (r.src ? sp.dsShort.filter((_, di) => r.src & (1 << di)).join(' + ') : '')], ['pubs', 'BioGRID', (r) => r.pubs || 0], ['go', '', () => 0]];
+  const SO = { k: 'n', asc: true };
+  const hb = (r) => (r.st === 'pass' ? r.b : r.st === 'homo' && Number.isFinite(r.best) ? bandOf(r.best) : 0);   // a homodimer is called with the same cutoffs
+  const draw = () => { const c = COLS.find((x) => x[0] === SO.k), rows = [...res].sort((x, y) => { const a = c[2](x), b = c[2](y); return (a < b ? -1 : a > b ? 1 : 0) * (SO.asc ? 1 : -1) || x.n - y.n; });
+    $('#pr-t').innerHTML = `<thead><tr>${COLS.map(([k, l]) => `<th data-k="${k}" class="${['n', 'best', 'iptm', 'pubs'].includes(k) ? 'n ' : ''}${k === SO.k ? `sorted${SO.asc ? ' asc' : ''}` : ''}">${l}</th>`).join('')}</tr></thead><tbody>${rows.map((r) => { const pg = pageOf(r);
+      return `<tr><td class="n muted">${r.n}</td><td class="g">${nm(r.A, r.qa)}</td><td class="g">${nm(r.B, r.qb)}</td>
+        <td class="n v" style="color:${BAND_TXT[hb(r)]};font-weight:${hb(r) ? 700 : 400}" title="${r.approx ? 'best iLIS to about ±0.002 (the folded-pair index)' : ''}">${Number.isFinite(r.best) ? (r.approx ? '≈' : '') + r.best.toFixed(3) : '–'}</td>
+        <td class="n">${Number.isFinite(r.iptm) ? r.iptm.toFixed(2) : '–'}</td><td>${stTxt(r)}</td><td>${r.src ? srcBadges(sp, r.src) : ''}</td>
+        <td class="n" title="${r.pubs || r.gen ? `BioGRID: ${r.pubs || 0} physical, ${r.gen || 0} genetic publication${(r.gen || 0) === 1 ? '' : 's'}` : ''}">${r.pubs ? fmtInt(r.pubs) : r.A && r.B ? '0' : ''}</td>
+        <td>${pg ? `<a href="${pg}" title="the pair's page: its interaction residues and every model">view</a>` : ''}</td></tr>`; }).join('')}</tbody>`;
+    $('#pr-t').querySelectorAll('th[data-k]').forEach((th) => { if (th.dataset.k === 'go') return; th.onclick = () => { const k = th.dataset.k; SO.asc = SO.k === k ? !SO.asc : ['n', 'a', 'b', 'st', 'src'].includes(k); SO.k = k; draw(); }; }); };
+  draw();
+  const prots = [...new Set(res.flatMap((r) => [r.A, r.B]).filter(Boolean).map((R) => R.gene))];
+  $('#pr-net').href = `#/${sp.id}/network?${new URLSearchParams({ ids: prots.join(','), add: 'none' })}`; $('#pr-net').hidden = !prots.length;
+  $('#pr-link').onclick = async () => { const b = $('#pr-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
+  $('#pr-csv').onclick = () => { const csvq = (v) => (/[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v));
+    const base = `${location.origin}${location.pathname.replace(/index\.html$/, '')}`, ids = (R) => (R ? (byKey ? [R.key, R.acc || ''] : [R.acc || R.key]) : byKey ? ['', ''] : ['']);
+    const head = `Input_1,Input_2,Protein_1,Protein_2,${byKey ? 'FlyBase_1,UniProt_1,FlyBase_2,UniProt_2' : 'UniProt_1,UniProt_2'},pair_page,iLIS_best,ipTM_best,status,screens,reference,BioGRID_physical,BioGRID_genetic,species,page_build`;
+    const text = head + '\n' + res.map((r) => { const pg = pageOf(r), m = r.src || 0;
+      return [csvq(r.qa), csvq(r.qb), csvq(r.A ? r.A.gene : ''), csvq(r.B ? r.B.gene : ''), ...ids(r.A), ...ids(r.B), pg ? base + pg : '', Number.isFinite(r.best) ? r.best.toFixed(3) : '', Number.isFinite(r.iptm) ? r.iptm.toFixed(2) : '',
+        csvq(stPlain(r) + (r.approx ? ' (iLIS to about 0.002)' : '')), csvq(sp.dsShort.filter((_, di) => m & (1 << di)).join(' + ')), csvq([...new Set(sp.dsIds.filter((_, di) => m & (1 << di)).map(refOf).filter(Boolean))].join('; ')),
+        r.A && r.B ? r.pubs || 0 : '', r.A && r.B ? r.gen || 0 : '', csvq(sp.reg.label), BUILD].join(','); }).join('\n') + '\n';
+    const u = URL.createObjectURL(new Blob(['﻿' + text], { type: 'text/csv;charset=utf-8' })), d = document.createElement('a'); d.href = u; d.download = `atlas_${sp.id}_pairs.csv`; d.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
+}
 async function viewNetwork(spId, q) {
   const gen = ROUTE, sp = await species(spId);
   const TSs = await Promise.all(sp.dsIds.map(async (id) => { try { return await setsOf(await dataset(id)); } catch (e) { return null; } }));
@@ -6607,7 +6724,7 @@ async function trackView() {
   const { parts } = hashPath(), sp = parts[0] || '', title = document.title;
   let path = '/', event = '';
   if (ids.has(sp)) {
-    const k = parts[1], kind = !k ? '' : ['network', 'nested', 'homodimers'].includes(k) && parts.length === 2 ? k
+    const k = parts[1], kind = !k ? '' : ['network', 'nested', 'homodimers', 'pairs'].includes(k) && parts.length === 2 ? k
       : k === 'taxon' ? 'virus' : parts.length === 2 ? 'protein' : 'pair';
     path = `/${sp}${kind ? `/${kind}` : ''}`;
     if (['protein', 'pair', 'virus'].includes(kind)) event = parts.join('/');
@@ -6625,7 +6742,7 @@ let LAST_PATH = null, holdTimer = null, NET_SP = '', NW_PENDING = null;   // NET
 function markNav(parts) {   // the header tab of the page shown: species (their proteins and pairs too), network, datasets, about
   const sp = parts.length && REG && (REG.species || []).some((s) => s.id === parts[0]);
   const on = !parts.length ? '' : parts[0] === 'about' ? 'about' : ['datasets', 'themes'].includes(parts[0]) ? 'datasets'
-    : sp && ['network', 'nested'].includes(parts[1]) ? 'network' : parts[0] === 'species' || sp ? 'species' : '';
+    : parts[0] === 'pairs' || (sp && parts[1] === 'pairs') ? 'pairs' : sp && ['network', 'nested'].includes(parts[1]) ? 'network' : parts[0] === 'species' || sp ? 'species' : '';
   document.querySelectorAll('.top nav a[data-nav]').forEach((a) => { if (a.dataset.nav === on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
 }
 // Every page with three or more cards gets the section bar the protein page has: sticky, the card in view marked, a
@@ -6702,10 +6819,11 @@ async function route() {
     else if (parts[0] === 'about') viewAbout();
     else if (parts[0] === 'species' && parts.length === 1) await viewSpeciesList();
     else if (parts[0] === 'themes') { location.replace('#/datasets'); return; }   // themes retired: the datasets cover them
+    else if (parts[0] === 'pairs' && parts.length === 1) { location.replace(`#/${NET_SP || (coreSpecies(REG)[0] || {}).id || 'human'}/pairs${q.toString() ? `?${q}` : ''}`); return; }   // the header's Pairs tab
     else if (parts[0] === 'network' && parts.length === 1) {   // the header's Network tab: the network page of the species last shown, else the first species
       location.replace(`#/${NET_SP || (coreSpecies(REG)[0] || {}).id || 'human'}/network${q.toString() ? `?${q}` : ''}`); return;
     }
-    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'nested' && parts.length === 2) await viewNested(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts[1] === 'homodimers' && parts.length === 2) await viewHomoList(parts[0], q); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
+    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (parts[1] === 'network' && parts.length === 2) await viewNetwork(parts[0], q); else if (parts[1] === 'pairs' && parts.length === 2) await viewPairs(parts[0], q); else if (parts[1] === 'nested' && parts.length === 2) await viewNested(parts[0], q); else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts[1] === 'homodimers' && parts.length === 2) await viewHomoList(parts[0], q); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);
       if (parts.length === 1 || !d.species) { location.replace(`#/datasets/${d.id}`); return; }
