@@ -944,7 +944,7 @@ async function homoCard(sp, P, gone, B) {
   card.hidden = false; const nb = app.querySelector('.subnav button[data-t="c-homo"]'); if (nb) nb.hidden = false;
   const src = afdb ? `<a href="${esc(H.paper)}" target="_blank" rel="noopener">${esc(H.source)} ↗</a>` : '';
   const mask = mine.reduce((m, p) => m | (1 << p.di), 0);
-  $('#homo-sub').innerHTML = `${esc(P.gene)} paired with itself${mine.length ? `, predicted in ${srcRefs(sp, mask)}` : ''}${list.length ? `${mine.length ? ', and' : ','} from the AlphaFold Database homodimer release (${src}), rescored with lis.py, one model per protein` : ''}${afdb ? ` · <a href="#/${sp.id}/homodimers">all homodimers of ${esc(sp.reg.label)} →</a>` : ''}`;
+  $('#homo-sub').innerHTML = `${esc(P.gene)} paired with itself${mine.length ? `, predicted in ${srcRefs(sp, mask)}` : ''}${list.length ? `${mine.length ? ', and' : ','} from the AlphaFold Database homodimer release (${src}), rescored with lis.py, one model per protein` : ''}${afdb ? ` · <a href="#/homodimers/${sp.id}">all homodimers of ${esc(sp.reg.label)} →</a>` : ''}`;
   $('#homo-body').innerHTML = '<div id="homo-own"></div><div id="homo-afdb"></div>';
   const sc = [['iLIS', 'iLIS'], ['iLISA', 'iLISA'], ['ipSAE', 'ipSAE'], ['ipTM', 'ipTM'], ['pDockQ2', 'pDockQ2'], ['actifpTM', 'actifpTM*']];
   const kpis = (val, lir, clir) => `<div class="kpis hd-scores">${sc.map(([k, l]) => { const v = val(k), f = FPR[k] && Number.isFinite(v);
@@ -1001,12 +1001,12 @@ async function viewHomoDataset() {
     <div class="card"><div class="card-head"><h2>Species</h2><span class="muted">each list holds every entry, those without a protein page too</span></div>
       <div class="tbl-wrap"><table class="sets"><thead><tr><th>Species</th><th class="n">Entries</th><th class="n">On a protein page</th><th>List</th></tr></thead><tbody>
       ${sps.map((x) => `<tr><td>${x.sp ? `<a href="#/${x.id}">${spName(x.sp.name)}</a>` : esc(x.id)}</td><td class="n">${fmtInt(x.f.entries)}</td><td class="n">${fmtInt(x.f.onPages || 0)}</td>
-        <td><a href="#/${x.id}/homodimers">all ${fmtInt(x.f.entries)} →</a></td></tr>`).join('')}</tbody></table></div>
+        <td><a href="#/homodimers/${x.id}">all ${fmtInt(x.f.entries)} →</a></td></tr>`).join('')}</tbody></table></div>
       </div>
     <div class="card"><div class="card-head"><h2>Columns</h2></div><dl class="hd-cols">${COLS.map(([k, t]) => `<dt>${esc(k)}</dt><dd>${esc(t)}</dd>`).join('')}</dl>
       <p class="muted" style="margin:8px 0 0;font-size:13.5px">Every other column is lis.py's (the same as in the screens' tables) or the release's own (af_*). The release's filter was read as the higher of its two directions (AB, BA) for both ipSAE and pDockQ2.</p></div>`;
 }
-// One species' homodimers (#/<sp>/homodimers): every entry, sortable and filterable, 100 a page. An entry with a protein page
+// One species' homodimers (#/homodimers/<sp>): every entry, sortable and filterable, 100 a page. An entry with a protein page
 // links to it; one without opens in place with its residue track and scores. ?q= filters (search lands here on its row).
 async function viewHomoList(spId, q) {
   const gen = ROUTE, reg = await registry(), H = reg.homodimers, sp = await species(spId); if (stale(gen)) return;
@@ -1508,7 +1508,7 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
     if (!items.length && t.length >= 2) homoNoPage(t).then((list) => {   // no protein page: a protein with only a homodimer entry opens on its row in the species' homodimer list
       if (q !== input.value) return; const hit = list.filter(([s2, a, g]) => (!spId || s2 === spId) && (a.toLowerCase() === t || a.split('-')[0].toLowerCase() === t || String(g).toLowerCase() === t)).slice(0, 5);
       if (!hit.length) return; const note = box.querySelector('.sg-note'); if (!note) return; const lab2 = (id) => { const x = (REG.species || []).find((y) => y.id === id); return x ? x.label : id; };
-      note.insertAdjacentHTML('beforeend', ` Homodimer only, no protein page: ${hit.map(([s2, a, g]) => `<a href="#/${s2}/homodimers?q=${encodeURIComponent(a)}">${esc(g || a)}</a> <span class="muted">(${esc(a)}, ${esc(lab2(s2))})</span>`).join(', ')}.`); box.hidden = false; });
+      note.insertAdjacentHTML('beforeend', ` Homodimer only, no protein page: ${hit.map(([s2, a, g]) => `<a href="#/homodimers/${s2}?q=${encodeURIComponent(a)}">${esc(g || a)}</a> <span class="muted">(${esc(a)}, ${esc(lab2(s2))})</span>`).join(', ')}.`); box.hidden = false; });
     [...box.querySelectorAll('.sg')].forEach((d, k) => d.onclick = () => go(items[k]));
     paint();
   }
@@ -6707,7 +6707,7 @@ async function viewNetwork(spId, q) {
 async function trackView() {
   const reg = await registry().catch(() => null), ids = new Set(((reg && reg.species) || []).map((x) => x.id));
   const { parts: P } = hashPath(), title = document.title;
-  const parts = ['network', 'pairs', 'nested'].includes(P[0]) && P.length === 2 ? [P[1], P[0]] : P, sp = parts[0] || '';   // a tool page counts under its species, as before
+  const parts = ['network', 'pairs', 'nested', 'homodimers'].includes(P[0]) && P.length === 2 ? [P[1], P[0]] : P, sp = parts[0] || '';   // a tool page counts under its species, as before
   let path = '/', event = '';
   if (ids.has(sp)) {
     const k = parts[1], kind = !k ? '' : ['network', 'nested', 'homodimers', 'pairs'].includes(k) && parts.length === 2 ? k
@@ -6728,7 +6728,7 @@ let LAST_PATH = null, holdTimer = null, NET_SP = '', NW_PENDING = null;   // NET
 function markNav(parts) {   // the header tab of the page shown: species (their proteins and pairs too), network, datasets, about
   const sp = parts.length && REG && (REG.species || []).some((s) => s.id === parts[0]);
   const on = !parts.length ? '' : parts[0] === 'about' ? 'about' : ['datasets', 'themes'].includes(parts[0]) ? 'datasets'
-    : parts[0] === 'pairs' ? 'pairs' : ['network', 'nested'].includes(parts[0]) ? 'network' : parts[0] === 'species' || sp ? 'species' : '';
+    : parts[0] === 'pairs' ? 'pairs' : ['network', 'nested'].includes(parts[0]) ? 'network' : ['species', 'homodimers'].includes(parts[0]) || sp ? 'species' : '';
   document.querySelectorAll('.top nav a[data-nav]').forEach((a) => { if (a.dataset.nav === on) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current'); });
 }
 // Every page with three or more cards gets the section bar the protein page has: sticky, the card in view marked, a
@@ -6805,6 +6805,10 @@ async function route() {
     else if (parts[0] === 'about') viewAbout();
     else if (parts[0] === 'species' && parts.length === 1) await viewSpeciesList();
     else if (parts[0] === 'themes') { location.replace('#/datasets'); return; }   // themes retired: the datasets cover them
+    else if (parts[0] === 'homodimers') {   // one species' homodimer list: #/homodimers/<species>; with no species, the release's own page
+      if (parts.length !== 2 || !(await regSpecies(parts[1]))) { location.replace('#/datasets/homodimers'); return; }
+      NET_SP = parts[1]; await viewHomoList(parts[1], q);
+    }
     else if (['network', 'pairs', 'nested'].includes(parts[0])) {   // the tool pages: #/network/<species>, #/pairs/<species>, #/nested/<species>
       const tool = parts[0], spId = parts[1];
       if (parts.length !== 2 || !(await regSpecies(spId))) {   // the header's tab (no species): the species last shown, else the first species
@@ -6812,7 +6816,7 @@ async function route() {
       }
       NET_SP = spId; await (tool === 'network' ? viewNetwork : tool === 'pairs' ? viewPairs : viewNested)(spId, q);
     }
-    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (['network', 'pairs', 'nested'].includes(parts[1]) && parts.length === 2) { location.replace(`#/${parts[1]}/${parts[0]}${q.toString() ? `?${q}` : ''}`); return; } else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts[1] === 'homodimers' && parts.length === 2) await viewHomoList(parts[0], q); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
+    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (['network', 'pairs', 'nested', 'homodimers'].includes(parts[1]) && parts.length === 2) { location.replace(`#/${parts[1]}/${parts[0]}${q.toString() ? `?${q}` : ''}`); return; } else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);
       if (parts.length === 1 || !d.species) { location.replace(`#/datasets/${d.id}`); return; }
