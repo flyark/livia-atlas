@@ -419,12 +419,12 @@ function reportedOf(sp, i) {
 // another index is not used. → { has(a, b), P } or null (no file, or not this index)
 // A few pairs' entries in the folded-pair index, read by byte range (the header, each first protein's offsets, its partner
 // list, one score byte) instead of the whole file (7 MB for human): the Pairs search with a short list. The whole file when
-// it is already loaded, when many proteins are asked, or when the server answers a range with the whole file.
+// it is already loaded, when many proteins or pairs are asked (a range request per pair), or when the server answers a range with the whole file.
 // → Map 'i,j' → best iLIS (≈, NaN in a file without scores) or -1 when the pair was never folded; null when unreadable
 async function testedFor(sp, ij) {
   const out = new Map(), key = (a, b) => `${Math.min(a, b)},${Math.max(a, b)}`, f = (sp.manifest.files || {}).tested; if (!f) return null;
   const firsts = [...new Set(ij.map(([a, b]) => Math.min(a, b)))];
-  if (sp.testedP || firsts.length > 40) { const T = await tested(sp); if (!T) return null; for (const [a, b] of ij) out.set(key(a, b), T.has(a, b) ? T.score(a, b) : -1); return out; }
+  if (sp.testedP || firsts.length > 40 || ij.length > 120) { const T = await tested(sp); if (!T) return null; for (const [a, b] of ij) out.set(key(a, b), T.has(a, b) ? T.score(a, b) : -1); return out; }
   const url = sp.base + f, rng = async (s, n) => { const r = await fetch(url, { headers: { Range: `bytes=${s}-${s + n - 1}` } }); if (r.status !== 206) throw new Error('no range'); return new DataView(await r.arrayBuffer()); };
   try {
     const offs = new Map(firsts.filter((i) => i >= 0 && i < sp.rows.length).map((i) => { const p = rng(32 + 4 * i, 8); p.catch(() => {}); return [i, p]; }));   // each protein's offsets, alongside the header
@@ -5736,7 +5736,8 @@ async function viewPairs(spId, q) {
   $('#pr-out').hidden = false; $('#pr-stats').innerHTML = `<span class="muted">Looking up ${fmtInt(IN.length)} pair${IN.length === 1 ? '' : 's'}…</span>`;
   const res = IN.map(([a, b, n]) => ({ n, qa: a, qb: b, A: resolveRow(sp, a), B: resolveRow(sp, b) }));
   const ks = new Set(); res.forEach((r) => { if (r.A && r.B) ks.add(r.A.i); });
-  const KS = new Map(), [E] = await Promise.all([edges(sp).catch(() => null), ...[...ks].map(async (i) => { KS.set(i, await reportedOf(sp, i).catch(() => null)); })]); if (stale(gen)) return;   // the pair file and the BioGRID shards together
+  const KS = new Map(), shards = new Set([...ks].map((i) => i % 256)).size > 75;   // past ~75 of the 256 BioGRID shards, the whole file is lighter
+  const [E] = await Promise.all([edges(sp).catch(() => null), shards ? reported(sp).then((K) => { for (const i of ks) KS.set(i, K); }).catch(() => {}) : Promise.all([...ks].map(async (i) => { KS.set(i, await reportedOf(sp, i).catch(() => null)); }))]); if (stale(gen)) return;   // the pair file and BioGRID together
   const homo = new Map();
   for (const r of res) {
     if (!r.A || !r.B) { r.st = 'missing'; r.rank = 6; continue; }
