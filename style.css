@@ -74,20 +74,6 @@ a:hover { text-decoration: underline; }
 .chips .lbl { font-size: 13px; color: var(--ink-3); margin-right: 2px; }
 .chips a.sp-link { color: var(--ink-2); font-weight: 600; text-decoration: underline; text-decoration-color: var(--line); text-underline-offset: 3px; }
 .chips a.sp-link:hover { color: var(--blue); text-decoration-color: currentColor; }
-.section-h { font-family: var(--display); font-weight: 700; font-size: 22px; letter-spacing: -0.015em; margin: 44px 0 14px; }
-.datasets { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
-.ds { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
-.ds.live { box-shadow: var(--shadow); }
-.ds h3 { margin: 0; font-family: var(--display); font-size: 19px; font-weight: 700; letter-spacing: -0.01em; }
-.ds .sp { font-size: 13px; color: var(--ink-3); }   /* species names come in italics from spName; common names stay upright */
-.ds .stats { display: grid; grid-template-columns: repeat(3, auto); justify-content: start; gap: 4px 22px; }
-.ds .stats div { display: flex; flex-direction: column; }
-.ds .stats b { font-family: var(--mono); font-size: 17px; font-weight: 600; }
-.ds .stats span { font-size: 12px; color: var(--ink-3); }
-.ds .src-line { font-size: 13px; color: var(--ink-2); }
-.ds .badge { align-self: flex-start; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; padding: 3px 8px; border-radius: 6px; }
-.badge.on { background: #E3F4EE; color: var(--fpr5-t); }
-.badge.soon { background: #F1F3F6; color: var(--ink-3); }
 
 /* ── cards / protein page ── */
 .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 20px 22px; margin-bottom: 18px; box-shadow: var(--shadow); }
@@ -160,8 +146,6 @@ table.pt { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 /* network */
 .net { position: relative; height: 600px; border: 1px solid var(--line-2); border-radius: 10px; background: #FFFFFF; overflow: hidden; }
 .net svg { width: 100%; height: 100%; display: block; cursor: grab; }
-.net .tip { position: absolute; pointer-events: none; background: rgba(23, 38, 58, 0.92); color: #fff; font-size: 12.5px; padding: 6px 9px; border-radius: 7px; white-space: nowrap; transform: translate(-50%, -130%); }
-.net .tip[hidden] { display: none; }
 
 .empty { padding: 30px; text-align: center; color: var(--ink-3); }
 .loading { color: var(--ink-3); font-size: 14px; padding: 18px 0; }
@@ -173,7 +157,6 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .card-head { display: flex; align-items: center; justify-content: space-between; gap: 12px 20px; flex-wrap: wrap; margin-bottom: 4px; }
 .card-head h2 { margin: 0; }
 .phead .actions { margin: 16px 0 0; }
-.datasets { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
 .reading { max-width: 820px; margin-inline: auto; }
 .showcase { background: var(--card); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); padding: 18px 20px 16px; }
 .showcase .sc-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 8px; }
@@ -202,11 +185,6 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 @media (prefers-reduced-motion: reduce) { .showcase .sc-top, .showcase .sc-stage, .showcase .sc-foot, .showcase .sc-dots button::after, .showcase .sc-arrow { transition: none; } }
 
 /* datasets: live cards share the row; planned ones sit below, quieter */
-.live-row { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-.pl { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; align-items: baseline; padding: 12px 16px; border: 1px dashed var(--line); border-radius: var(--r); color: var(--ink-2); font-size: 13.5px; }
-.pl b { color: var(--ink); }
-.pl span:last-child { grid-column: 1 / -1; color: var(--ink-3); }
-.ds .stats { grid-template-columns: repeat(3, minmax(0, 1fr)); justify-content: stretch; }
 .dshead { margin-bottom: 16px; }
 .dshead h1 { font-family: var(--display); font-weight: 800; font-size: clamp(32px, 4.6vw, 48px); letter-spacing: -0.02em; line-height: 1.02; margin: 0; }
 .dshead h1 .tag-alpha { vertical-align: super; margin-left: 6px; font-size: 11px; letter-spacing: 0.06em; }   /* a page still taking shape */
@@ -245,7 +223,6 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .chip i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; }
 .card h3 { font-size: 14px; font-weight: 600; margin: 0 0 8px; color: var(--ink); }
 .hot { align-items: center; }
-.hot .hot-lbl { background: none; color: var(--ink-3); font-family: var(--sans); padding-left: 0; }
 .mdot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; vertical-align: 0; }
 .more { all: unset; cursor: pointer; font-size: 12.5px; color: var(--blue); font-weight: 600; }
 .more:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; border-radius: 3px; }
@@ -273,7 +250,6 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .cite-box { display: block; width: 100%; max-width: 720px; margin: 10px 0 0; font: 12.5px var(--mono, monospace); padding: 8px; border: 1px solid var(--line); border-radius: 7px; resize: vertical; }
 .sites-bg { margin: 2px 0 6px; font-size: 12.5px; line-height: 1.5; }
 .res-look { margin: -4px 0 10px; font-size: 13.5px; line-height: 1.55; color: var(--ink-2); border-left: 3px solid var(--ink); padding: 2px 0 2px 10px; }
-.explain { color: var(--ink-2); font-size: 13.5px; margin: 12px 0 0; }
 .cl-chips { margin: 8px 0 10px; gap: 6px; }
 .cl-chips:empty { display: none; }
 .cchip { all: unset; display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px; font: 500 12.5px var(--sans);
@@ -292,7 +268,6 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .domlegend > b { color: var(--ink); }
 .clinfo { display: grid; gap: 8px; font-size: 13.5px; line-height: 1.65; }
 .cl-row { display: grid; grid-template-columns: 14px 1fr; gap: 10px; padding: 8px 12px; border: 1px solid var(--line-2); border-radius: 10px; background: #FBFCFD; }
-.cl-names { margin-top: 2px; }   /* the partner names on their own line, under the cluster's summary */
 .cl-row > i { width: 13px; height: 13px; border-radius: 3px; margin-top: 5px; }
 /* reported in BioGRID: a highlighter mark in the network's colors, light (physical blue, genetic orange, both orchid) */
 .clinfo a.kb-p, .clinfo a.kb-g, #c-pt .pt td.g a.kb-p, #c-pt .pt td.g a.kb-g, .kb-mark { padding: 1px 5px; border-radius: 4px; text-decoration: none; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
@@ -309,8 +284,6 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .v3d-msg { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; text-align: center; padding: 20px; color: var(--ink-3); font-size: 14px; background: #fff; }
 .v3d-msg[hidden] { display: none; }
 .amgrad { display: inline-block; width: 140px; height: 10px; border-radius: 5px; background: linear-gradient(90deg, #2C7BB6, #E0E0E0, #D7191C); align-self: center; }
-.scat2 { position: relative; }
-.scat2 svg, .scat2 canvas { position: absolute; left: 0; top: 0; }
 .netkey { display: flex; flex-wrap: wrap; gap: 14px 48px; justify-content: center; align-items: flex-start; margin-top: 14px; font-size: 12.5px; color: var(--ink-2); }
 .netkey > div { display: flex; flex-direction: column; gap: 6px; }
 #net-legend { justify-content: center; }
@@ -439,7 +412,6 @@ details.how > :not(summary) { margin: 4px 0; line-height: 1.5; }
 }
 .cite { font-size: 13px; color: var(--ink-2); margin-top: 6px; }
 .cite a { color: var(--blue); }
-.src-line a { color: var(--blue); }
 .totals { display: flex; flex-wrap: wrap; gap: 6px 22px; margin-top: 14px; font-size: 13.5px; color: var(--ink-3); }
 .totals b { font-family: var(--mono); color: var(--ink); font-weight: 600; }
 table.cuts { border-collapse: collapse; margin: 14px 0 6px; font-size: 13.5px; width: 100%; }
@@ -463,15 +435,10 @@ table.cuts thead th { font-size: 12px; color: var(--ink-3); font-weight: 600; }
 .showcase .sc-own a:hover { text-decoration: underline; }   /* cLIP and its initials, as the title's teal (beats .sc-top span) */
 .sg .sub .sp-tag { font-family: var(--sans); font-size: 11px; font-weight: 600; color: var(--ink-2); background: var(--line-2); border-radius: 5px; padding: 1px 6px; margin-right: 6px; }
 .seq-flow .out { color: #B9C2CD; }
-.chips .lbl.sp { margin-left: 10px; }
 select { max-width: 100%; }
 .setbar { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: -6px 0 16px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--card, #fff); font-size: 14px; color: var(--ink-2); }
-.setchips { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 10px; font-size: 13px; }
-.setchips > span { color: var(--ink-3); margin-right: 2px; }
-.setchips a.src { text-decoration: none; }
 .scope { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
 .scope .lbl { color: var(--ink-3); margin-right: 2px; }
-.scope .sep { width: 1px; height: 18px; background: var(--line); margin: 0 4px; }
 .scope-chip { text-decoration: none; cursor: pointer; }
 .scope-chip .n { font-family: var(--mono); font-size: 11px; color: var(--ink-2); margin-left: 3px; }   /* ink, not the chip color: readable on every chip */
 .scope-chip.on .n { color: inherit; }

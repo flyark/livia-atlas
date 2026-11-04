@@ -90,7 +90,6 @@ const avgView = (cuts, v, n, digits, what) => (n >= 5 ? { txt: v.toFixed(digits)
   : { txt: '—', sty: 'color:#5F6771', band: '', tip: 'one model: no average' });
 const AUTO_N = 250;   // the network's auto partner count keeps the drawing near this many proteins
 const DATA = 'https://www.flyrnai.org/livia-atlas/', ARCHIVE = 'https://doi.org/10.5281/zenodo.22964479';   // the Atlas data files: the site reads each screen from its frozen versions/<name>/ folder, named in datasets.json
-const verUrl = (v) => `${DATA}index.html${v ? `#${v}` : '#live'}`;   // the data files' own page: every version with its files, sizes and md5s, one anchor each
 // "Cite this view": the page, its link and the date, with the Atlas data record, copied for a methods section or a legend
 const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" data-cite="${esc(title)}" data-ds="${esc(ds.join(','))}" title="copy a citation of this page: its title, link and date, the Atlas data version it reads, and the screens its predictions come from">Cite</button>`;
 // A page's citation: the page (title, link, date), the Atlas data version each of its screens is read from (a frozen
@@ -98,7 +97,6 @@ const citeBtn = (title, ds = []) => `<button class="cite-link" type="button" dat
 // licenses (CC BY) require.
 const REC_VERSION = { 22964480: '1.0', 22967610: '1.1', 22968056: '1.2', 22984781: '0.1.3', 23063255: '0.1.4', 23104149: '0.1.5' };   // the Atlas record's versions on Zenodo
 const verOf = (d) => { const u = (d && d.zip && d.zip.url) || '', m = /\/versions\/([^/]+)\//.exec(u); if (m) return m[1]; const r = recOf(d); return r && REC_VERSION[r] ? `v${REC_VERSION[r]}` : ''; };   // the data version a screen is read from
-const DATA_INDEX = `${DATA}index.html`;   // the data files' own page: every version, its files and md5s
 const archiveOf = () => 'LIVIA Atlas data';   // no link while the data site is not public
 const archiveLine = () => 'LIVIA Atlas data';
 const recOf = (d) => { const m = /records\/(\d+)\//.exec((d && d.zip && ((d.zip.fallback || {}).url || d.zip.zenodo || d.zip.url)) || ''); return m ? m[1] : null; };   // a screen served from flyrnai.org keeps its Zenodo record in zip.zenodo
@@ -417,14 +415,15 @@ function reportedOf(sp, i) {
 // Every pair folded in the species' screens (data/species/<sp>/tested.bin, built by tools/tested_index.py): whether a pair
 // was tested at all, below the cutoff or not. The file names the index it was built for (rows and key hash); a file for
 // another index is not used. → { has(a, b), P } or null (no file, or not this index)
-// A few pairs' entries in the folded-pair index, read by byte range (the header, each first protein's offsets, its partner
-// list, one score byte) instead of the whole file (7 MB for human): the Pairs search with a short list. The whole file when
-// it is already loaded, when many proteins or pairs are asked (a range request per pair), or when the server answers a range with the whole file.
+// A few proteins' entries in the folded-pair index, read by byte range (the header, then for each first protein its offsets,
+// partner list and scores: three small requests) instead of the whole file (7 MB for human): the Pairs search, the pair page's
+// paralog matrix and ortholog cells. The whole file when it is already loaded, when many proteins are asked, or when the
+// server answers a range with the whole file.
 // → Map 'i,j' → best iLIS (≈, NaN in a file without scores) or -1 when the pair was never folded; null when unreadable
 async function testedFor(sp, ij) {
   const out = new Map(), key = (a, b) => `${Math.min(a, b)},${Math.max(a, b)}`, f = (sp.manifest.files || {}).tested; if (!f) return null;
-  const firsts = [...new Set(ij.map(([a, b]) => Math.min(a, b)))];
-  if (sp.testedP || firsts.length > 40 || ij.length > 120) { const T = await tested(sp); if (!T) return null; for (const [a, b] of ij) out.set(key(a, b), T.has(a, b) ? T.score(a, b) : -1); return out; }
+  const firsts = [...new Set(ij.map(([a, b]) => Math.min(a, b)))];   // three requests per first protein: past ~40, the one file is quicker
+  if (sp.testedP || firsts.length > 40) { const T = await tested(sp); if (!T) return null; for (const [a, b] of ij) out.set(key(a, b), T.has(a, b) ? T.score(a, b) : -1); return out; }
   const url = sp.base + f, rng = async (s, n) => { const r = await fetch(url, { headers: { Range: `bytes=${s}-${s + n - 1}` } }); if (r.status !== 206) throw new Error('no range'); return new DataView(await r.arrayBuffer()); };
   try {
     const offs = new Map(firsts.filter((i) => i >= 0 && i < sp.rows.length).map((i) => { const p = rng(32 + 4 * i, 8); p.catch(() => {}); return [i, p]; }));   // each protein's offsets, alongside the header
@@ -435,13 +434,16 @@ async function testedFor(sp, ij) {
     const NB = 32 + 4 * (N + 1), SC = NB + 2 * P;
     await Promise.all(firsts.map(async (i) => { if (!offs.has(i)) return;
       const o = await offs.get(i), lo = o.getUint32(0, true), hi = o.getUint32(4, true);
-      const nb = hi > lo ? await rng(NB + 2 * lo, 2 * (hi - lo)) : null;
-      await Promise.all(ij.filter(([a, b]) => Math.min(a, b) === i).map(async ([a, b]) => { const j = Math.max(a, b); let x = -1;
-        if (nb) { let l = 0, r = hi - lo; while (l < r) { const m = (l + r) >> 1; if (nb.getUint16(2 * m, true) < j) l = m + 1; else r = m; } if (l < hi - lo && nb.getUint16(2 * l, true) === j) x = lo + l; }
-        out.set(key(a, b), x < 0 ? -1 : ver === 'LVTP2' ? (await rng(SC + x, 1)).getUint8(0) / 255 : NaN); })); }));
+      const [nb, sc] = hi > lo ? await Promise.all([rng(NB + 2 * lo, 2 * (hi - lo)), ver === 'LVTP2' ? rng(SC + lo, hi - lo) : null]) : [null, null];
+      for (const [a, b] of ij.filter(([a, b]) => Math.min(a, b) === i)) { const j = Math.max(a, b); let x = -1;
+        if (nb) { let l = 0, r = hi - lo; while (l < r) { const m = (l + r) >> 1; if (nb.getUint16(2 * m, true) < j) l = m + 1; else r = m; } if (l < hi - lo && nb.getUint16(2 * l, true) === j) x = l; }
+        out.set(key(a, b), x < 0 ? -1 : sc ? sc.getUint8(x) / 255 : NaN); } }));
     return out;
   } catch (e) { const T = await tested(sp); if (!T) return null; for (const [a, b] of ij) out.set(key(a, b), T.has(a, b) ? T.score(a, b) : -1); return out; }
 }
+// testedFor as the index's own interface (has, score) for just those pairs
+const testedLookup = async (sp, ij) => { const m = await testedFor(sp, ij); if (!m) return null; const k = (a, b) => `${Math.min(a, b)},${Math.max(a, b)}`;
+  return { has: (a, b) => (m.get(k(a, b)) ?? -1) !== -1, score: (a, b) => { const v = m.get(k(a, b)); return v === undefined || v === -1 ? NaN : v; } }; };
 function tested(sp) {
   const f = (sp.manifest.files || {}).tested; if (!f) return Promise.resolve(null);
   if (!sp.testedP) sp.testedP = (async () => {
@@ -571,7 +573,7 @@ function bundleRaw(ds, name) {   // one screen's cLIP bundle for one protein: li
     const job = (async () => {
       const res = await screenFile(ds, rel);
       if (!res) throw new Error(`No interaction data for ${name}.`);
-      const bytes = await res.arrayBuffer(), zip = await JSZip.loadAsync(bytes), files = Object.keys(zip.files);
+      const bytes = await res.arrayBuffer(), zip = await (await jszip()).loadAsync(bytes), files = Object.keys(zip.files);
       const csvName = files.find((f) => /\.csv$/i.test(f) && !/identity[_-]?map/i.test(f)), faName = files.find((f) => /\.(fa|fasta)$/i.test(f));
       const conName = files.find((f) => /(^|\/)constructs\.tsv$/.test(f));
       return { rel, bytes, csvName, faName, ...(await csvRows(zip, csvName)),
@@ -618,12 +620,6 @@ function merged(sp, P, scope = '', whole = false) {   // scope: one screen of th
     while (sp.cache.size > 6) sp.cache.delete(sp.cache.keys().next().value);   // the proteins read most recently
   } else { const job = sp.cache.get(ck); sp.cache.delete(ck); sp.cache.set(ck, job); }
   return sp.cache.get(ck);
-}
-// The models a view of just these predictions counts: one run per sequence pair, its highest-iLIS run.
-function countOnce(list) {
-  const best = new Map(), n = new Map();
-  for (const p of list) { n.set(p.run, (n.get(p.run) || 0) + 1); const b = best.get(p.sp); if (!b || (p.iLIS || 0) > b.v) best.set(p.sp, { v: p.iLIS || 0, run: p.run }); }
-  let s = 0; for (const b of best.values()) s += n.get(b.run); return s;
 }
 // A pair of the viral release that the AlphaFold Database does not display: its model and PAE read by byte range from the
 // release archive at EBI (zstd members of chunk_N.tar; addresses from the Atlas index), unpacked in the browser (fzstd,
@@ -1095,8 +1091,8 @@ function handTo(w, msg) {
 // A split gene's bundle as one file again (the download): its rows from every isoform file, its constructs and sequences.
 async function wholeBundle(ds, raw) {
   const subs = await Promise.all(raw.isoforms.choices.map((c) => bundleRaw(ds, c.file)));
-  const texts = await Promise.all([raw, ...subs].map(async (r) => (await JSZip.loadAsync(r.bytes)).file(r.csvName).async('string')));
-  const main = await JSZip.loadAsync(raw.bytes), zip = new JSZip(), nl = texts[0].indexOf('\n') + 1;
+  const texts = await Promise.all([raw, ...subs].map(async (r) => (await (await jszip()).loadAsync(r.bytes)).file(r.csvName).async('string')));
+  const main = await (await jszip()).loadAsync(raw.bytes), zip = new (await jszip())(), nl = texts[0].indexOf('\n') + 1;
   zip.file(raw.csvName, texts[0].slice(0, nl) + texts.map((t) => t.slice(t.indexOf('\n') + 1)).join(''));
   for (const f of ['constructs.tsv', raw.faName].filter(Boolean)) zip.file(f, await main.file(f).async('string'));
   return zip.generateAsync({ type: 'blob', compression: 'DEFLATE', compressionOptions: { level: 6 } });
@@ -1123,7 +1119,6 @@ function isoSplit(cons, preds) {
   return v.sort((x, y) => y.best - x.best);
 }
 const isoLab = (lab, len) => (/\(\d[\d,]* aa\)/.test(lab || '') ? lab : `${lab} (${fmtInt(len)} aa)`);   // a construct's label with its length, once
-const siteLabel = (c, nm) => String((c && c.label) || nm).replace(/ site$/, '').replace(/ site (\d+)$/, ' $1');   // "yki S107 site" -> "yki S107"
 // The predictions of the given bundles merged into one view of the protein: its partners, its clustering choices, cLIP rows.
 async function assemble(sp, P, parts, scope, onlyDi, setId) {
       const preds = [], runs = new Map(), seqs = new Map(), cons = new Map(), sets = [], TS = (parts.find((x) => x.TS) || {}).TS || null;
@@ -1136,7 +1131,7 @@ async function assemble(sp, P, parts, scope, onlyDi, setId) {
         return x && y ? sno(x) + '|' + sno(y) : `${seqId(C, q, ql)}|${seqId(C, o, ol)}`; };   // (their placement, or names and lengths, without a FASTA)
       let refSeq0 = '';   // the gene-keyed screen's reference sequence: a model of another screen with this very sequence sits on the same axis
       for (const part of parts) {
-        if (!part.raw.rows) Object.assign(part.raw, await csvRows(await JSZip.loadAsync(part.raw.bytes), part.raw.csvName));   // read again: an earlier view let them go
+        if (!part.raw.rows) Object.assign(part.raw, await csvRows(await (await jszip()).loadAsync(part.raw.bytes), part.raw.csvName));   // read again: an earlier view let them go
         const C = part.raw.cons;
         if (C) for (const [nm, c] of C) cons.set(nm, c);
         if (C && !refSeq0) refSeq0 = part.raw.seqs.get(P.key) || '';
@@ -1310,7 +1305,6 @@ const srcRefs = (sp, mask) => { const seen = new Set();
   return sp.dsIds.filter((_, di) => mask & (1 << di)).map((id) => ((REG && REG.datasets) || []).find((d) => d.id === id) || { id, short: id }).map((d) => screenCite(d))
     .filter((sc) => !seen.has(sc.short) && seen.add(sc.short)).map((sc) => sc.url ? `<a href="${esc(sc.url)}" target="_blank" rel="noopener">${esc(sc.short)} ↗</a>` : esc(sc.short)).join(', '); };
 const setBadges = (sets) => sets.map((s) => `<span class="src" style="--c:${SET_COL[s] || '#5B6B7F'}">${esc(s)}</span>`).join('');
-const runColor = (sp, p) => (p.set ? SET_COL[p.set] || '#5B6B7F' : sp.dsColor[p.di]);
 // A protein's predicted sequence: from a bundle FASTA when one carries it, else a screen's per-protein s/<name>.fa.
 const SEQS = new Map();
 function seqOf(sp, R, B, di) {   // di: the screen of the shown prediction, whose sequence file is tried first
@@ -4053,7 +4047,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
 
   /* network: edge color = what BioGRID reports for the pair, edge width = best iLIS */
   const netBox = $('#net');
-  ['#net-shade', '#net-kb', '#net-ev'].forEach((q) => { $(q).onchange = () => { $('#net-ev').disabled = !$('#net-kb').checked; if (NET && NET.restyle) NET.restyle(); }; });
+  let NETK = false;   // whether the drawn network has the whole BioGRID file
+  ['#net-shade', '#net-kb', '#net-ev'].forEach((q) => { $(q).onchange = () => { $('#net-ev').disabled = !$('#net-kb').checked; if ($('#net-kb').checked && !NETK) { drawNet(); return; } if (NET && NET.restyle) NET.restyle(); }; });   // BioGRID on for the first time: read it and redraw
   { const w = d3.select('#net-w'); [[CUT[10], 10], [0.5, 95], [0.8, 180]].forEach(([a, x0]) => { w.append('line').attr('x1', x0).attr('x2', x0 + 44).attr('y1', 10).attr('y2', 10).attr('stroke', '#50637A').attr('stroke-width', EWID(a)).attr('stroke-linecap', 'round');
       w.append('text').attr('x', x0 + 22).attr('y', 27).attr('text-anchor', 'middle').attr('font-size', 10.5).attr('font-family', 'IBM Plex Mono').attr('fill', '#5A697C').text(a === CUT[10] ? String(CUT[10]) : a >= 0.8 ? '0.8+' : a.toFixed(1)); }); }
   const io = new IntersectionObserver(async (ents) => { if (!ents.some((e) => e.isIntersecting)) return; io.disconnect(); await drawNet(); }, { rootMargin: '200px' });
@@ -4068,7 +4063,11 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   $('#net-col').onchange = () => { if (NET && NET.recolor) { NET.disp(); NET.recolor(); } };
   { const lb = $('#net-shade') && $('#net-shade').closest('label'); if (lb) lb.hidden = true; }   // pairs are colored by group or by BioGRID here; the width carries the iLIS
   async function drawNet() {
-    let E, K; try { [E, K] = await Promise.all([edges(sp, B.setId), reported(sp)]); } catch (e) { if (!gone()) netBox.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
+    // BioGRID: the whole species file (3 MB for human) only once the reader turns the BioGRID coloring on; until then the
+    // protein's own shard, already read for its partner table, marks its own pairs
+    const hasKB = !!(sp.manifest.files || {}).biogridShards;
+    let E, K, Kq; try { [E, K, Kq] = await Promise.all([edges(sp, B.setId), hasKB && $('#net-kb').checked ? reported(sp) : null, hasKB ? reportedOf(sp, P.i).catch(() => null) : null]); } catch (e) { if (!gone()) netBox.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
+    NETK = !!K;
     if (gone()) return;
     const n = +$('#net-n').value, c = CUT[+$('#net-cut').value];
     const qAdj = ISO ? new Map(B.partners.filter((x) => x.id !== P.key && !x.rep && sp.byKey.has(x.id)).map((x) => [sp.byKey.get(x.id).i, { best: x.best, avg: x.nAvg > 1 ? x.avg : NaN, src: x.src }]))   // this isoform's partners
@@ -4082,8 +4081,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const links = nb.map(([j, e]) => ({ source: P.i, target: j, best: e.best, avg: e.avg, q: true }));
     for (let a = 1; a < nodes.length; a++) { const mm = E.adj.get(nodes[a].id); if (!mm) continue;
       for (let b = a + 1; b < nodes.length; b++) { const e = mm.get(nodes[b].id); if (e && e.best >= c) links.push({ source: nodes[a].id, target: nodes[b].id, best: e.best, avg: e.avg }); } }
-    const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); l.pubs = K ? K.pubs(l.source, l.target) : 0; l.gen = K ? K.gen(l.source, l.target) : 0; });
-    if (!K) { $('#net-kb').checked = false; $('#net-kb').disabled = true; $('#net-ev').disabled = true; }
+    const deg = new Map(); links.forEach((l) => { deg.set(l.source, (deg.get(l.source) || 0) + 1); deg.set(l.target, (deg.get(l.target) || 0) + 1); const KK = K || (l.q ? Kq : null); l.pubs = KK ? KK.pubs(l.source, l.target) : 0; l.gen = KK ? KK.gen(l.source, l.target) : 0; });
+    if (!hasKB || ($('#net-kb').checked && !K)) { $('#net-kb').checked = false; $('#net-kb').disabled = true; $('#net-ev').disabled = true; }
     { const mb = $('#net-mods'); if (mb) mb.hidden = false; }   // the list's column is in place before the drawing measures its box, and stays (a message when it has no group)
     const svg = d3.select(netBox).select('svg'), W = netBox.clientWidth, H = netBox.clientHeight;
     svg.attr('width', W).attr('height', H);
@@ -4435,7 +4434,7 @@ async function xBest(spY, As, Bs) {   // the best of every pair between the two 
   const combos = []; for (const a of As) for (const b of Bs) if (a.i !== b.i) combos.push([a, b]);
   if (!combos.length) return { st: 'self', n: 0, a: As[0], b: Bs[0] };
   const E = await edges(spY, ''), rank = { pred: 3, below: 2, never: 1, none: 1 }; let top = null;
-  const TP = combos.some(([a, b]) => xCell(E, null, a, b).st === 'pred') ? null : await tested(spY);   // the index of tested pairs only when nothing is past the cutoff
+  const TP = combos.some(([a, b]) => xCell(E, null, a, b).st === 'pred') ? null : await testedLookup(spY, combos.map(([a, b]) => [a.i, b.i]));   // the index of tested pairs only when nothing is past the cutoff
   for (const [a, b] of combos) { const c = xCell(E, TP, a, b), r = rank[c.st] || 0, t = top ? rank[top.st] : -1;
     if (r > t || (r === t && (c.v || 0) > (top.v || 0))) top = { ...c, a, b }; }
   const alt = combos.map(([a, b]) => ({ ...xCell(E, TP, a, b), a, b }));   // every ortholog pair, for the row's list when there are several
@@ -4520,7 +4519,7 @@ async function pairPara(sp, P, O, gen) {
   const RA = fam(P, sa), RB = fam(O, sb), src = pan ? 'PANTHER (gene trees)' : 'the Alliance of Genome Resources (DIOPT, moderate and high confidence)';
   if (RA.length < 2 && RB.length < 2) { sub.textContent = `Neither ${P.gene} nor ${O.gene} has a paralog among the ${spLow(sp.reg.label)} Atlas proteins in ${src}.`; return; }
   sub.textContent = 'Reading the predictions…';
-  let E, TP; try { [E, TP] = await Promise.all([edges(sp, ''), tested(sp)]); } catch (e) { sub.textContent = `The predictions did not load (${e.message}).`; return; }
+  let E, TP; try { [E, TP] = await Promise.all([edges(sp, ''), testedLookup(sp, RA.flatMap((a) => RB.filter((b) => a.i !== b.i).map((b) => [a.i, b.i])))]); } catch (e) { sub.textContent = `The predictions did not load (${e.message}).`; return; }
   if (stale(gen)) return;
   const M = RA.map((a) => RB.map((b) => xCell(E, TP, a, b))), U = new Map();
   RA.forEach((a, i) => RB.forEach((b, j) => { if (M[i][j].st !== 'self') U.set(a.i < b.i ? `${a.i},${b.i}` : `${b.i},${a.i}`, M[i][j].st); }));   // a pair in both families' rows counts once
@@ -5361,6 +5360,9 @@ function tableInput({ card, file, sheetWrap, sheet, onText, onStatus, intercept 
   dropZone(card, use);
   return { clear: () => { book = null; sheetWrap.hidden = true; } };
 }
+// JSZip, only when a prediction bundle is read or written (protein and pair pages, a dropped zip)
+const jszip = () => (window.JSZip ? Promise.resolve(window.JSZip) : (window.__jszipP = window.__jszipP || new Promise((ok, no) => {
+  const s = document.createElement('script'); s.src = 'https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js'; s.onload = () => ok(window.JSZip); s.onerror = () => { window.__jszipP = null; no(new Error('The zip reader did not load.')); }; document.head.appendChild(s); })));
 const plotly = () => (window.Plotly ? Promise.resolve(window.Plotly) : (window.__plotlyP = window.__plotlyP || new Promise((ok, no) => {
   const s = document.createElement('script'); s.src = 'https://cdn.jsdelivr.net/npm/plotly.js-dist-min@2.35.2/plotly.min.js'; s.onload = () => ok(window.Plotly); s.onerror = () => no(new Error('Plotly did not load')); document.head.appendChild(s); })));
 // The network builder's example tables: published IP-MS hit lists (the paper's own cutoff), under CC BY 4.0
@@ -5578,7 +5580,7 @@ async function yoursRead(files) {   // → the lis.py tables, FASTA texts and ot
     if (isLisHead(h)) out.lis.push({ file: name, text: t }); else if (/\.(csv|tsv|txt)$/i.test(name) && h.length >= 2) out.maps.push({ file: name, text: t }); else out.skipped.push(name); };
   for (const f of files) {
     const buf = await f.arrayBuffer(); out.files.push({ name: f.name, bytes: buf.byteLength, sha256: hexOf(await crypto.subtle.digest('SHA-256', buf)) });
-    if (/\.zip$/i.test(f.name)) { const z = await JSZip.loadAsync(buf);
+    if (/\.zip$/i.test(f.name)) { const z = await (await jszip()).loadAsync(buf);
       for (const [n, e] of Object.entries(z.files)) if (!e.dir && !/(^|\/)(__MACOSX|\.)/.test(n) && (FASTA_RE.test(n) || /\.(csv|tsv|txt)$/i.test(n))) take(n, await e.async('string')); }
     else take(f.name, new TextDecoder().decode(buf)); }
   return out;
