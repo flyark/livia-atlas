@@ -417,6 +417,31 @@ function reportedOf(sp, i) {
 // Every pair folded in the species' screens (data/species/<sp>/tested.bin, built by tools/tested_index.py): whether a pair
 // was tested at all, below the cutoff or not. The file names the index it was built for (rows and key hash); a file for
 // another index is not used. → { has(a, b), P } or null (no file, or not this index)
+// A few pairs' entries in the folded-pair index, read by byte range (the header, each first protein's offsets, its partner
+// list, one score byte) instead of the whole file (7 MB for human): the Pairs search with a short list. The whole file when
+// it is already loaded, when many proteins are asked, or when the server answers a range with the whole file.
+// → Map 'i,j' → best iLIS (≈, NaN in a file without scores) or -1 when the pair was never folded; null when unreadable
+async function testedFor(sp, ij) {
+  const out = new Map(), key = (a, b) => `${Math.min(a, b)},${Math.max(a, b)}`, f = (sp.manifest.files || {}).tested; if (!f) return null;
+  const firsts = [...new Set(ij.map(([a, b]) => Math.min(a, b)))];
+  if (sp.testedP || firsts.length > 40) { const T = await tested(sp); if (!T) return null; for (const [a, b] of ij) out.set(key(a, b), T.has(a, b) ? T.score(a, b) : -1); return out; }
+  const url = sp.base + f, rng = async (s, n) => { const r = await fetch(url, { headers: { Range: `bytes=${s}-${s + n - 1}` } }); if (r.status !== 206) throw new Error('no range'); return new DataView(await r.arrayBuffer()); };
+  try {
+    const offs = new Map(firsts.filter((i) => i >= 0 && i < sp.rows.length).map((i) => { const p = rng(32 + 4 * i, 8); p.catch(() => {}); return [i, p]; }));   // each protein's offsets, alongside the header
+    const h = await rng(0, 32), td = new TextDecoder(), ver = td.decode(new Uint8Array(h.buffer, 0, 5)); if (ver !== 'LVTP1' && ver !== 'LVTP2') return null;
+    const N = h.getUint32(6, true), P = h.getUint32(10, true), sha = td.decode(new Uint8Array(h.buffer, 14, 12)); if (N !== sp.rows.length) return null;
+    const dig = await crypto.subtle.digest('SHA-1', new TextEncoder().encode(sp.rows.map((r) => r.key).join('\n')));
+    if ([...new Uint8Array(dig)].map((b) => b.toString(16).padStart(2, '0')).join('').slice(0, 12) !== sha) return null;
+    const NB = 32 + 4 * (N + 1), SC = NB + 2 * P;
+    await Promise.all(firsts.map(async (i) => { if (!offs.has(i)) return;
+      const o = await offs.get(i), lo = o.getUint32(0, true), hi = o.getUint32(4, true);
+      const nb = hi > lo ? await rng(NB + 2 * lo, 2 * (hi - lo)) : null;
+      await Promise.all(ij.filter(([a, b]) => Math.min(a, b) === i).map(async ([a, b]) => { const j = Math.max(a, b); let x = -1;
+        if (nb) { let l = 0, r = hi - lo; while (l < r) { const m = (l + r) >> 1; if (nb.getUint16(2 * m, true) < j) l = m + 1; else r = m; } if (l < hi - lo && nb.getUint16(2 * l, true) === j) x = lo + l; }
+        out.set(key(a, b), x < 0 ? -1 : ver === 'LVTP2' ? (await rng(SC + x, 1)).getUint8(0) / 255 : NaN); })); }));
+    return out;
+  } catch (e) { const T = await tested(sp); if (!T) return null; for (const [a, b] of ij) out.set(key(a, b), T.has(a, b) ? T.score(a, b) : -1); return out; }
+}
 function tested(sp) {
   const f = (sp.manifest.files || {}).tested; if (!f) return Promise.resolve(null);
   if (!sp.testedP) sp.testedP = (async () => {
@@ -5709,10 +5734,9 @@ async function viewPairs(spId, q) {
   // The lookup
   const IN = pairLines(qtext).slice(0, PAIR_MAX);
   $('#pr-out').hidden = false; $('#pr-stats').innerHTML = `<span class="muted">Looking up ${fmtInt(IN.length)} pair${IN.length === 1 ? '' : 's'}…</span>`;
-  const [E, T] = await Promise.all([edges(sp).catch(() => null), tested(sp)]); if (stale(gen)) return;
   const res = IN.map(([a, b, n]) => ({ n, qa: a, qb: b, A: resolveRow(sp, a), B: resolveRow(sp, b) }));
   const ks = new Set(); res.forEach((r) => { if (r.A && r.B) ks.add(r.A.i); });
-  const KS = new Map(); await Promise.all([...ks].map(async (i) => { KS.set(i, await reportedOf(sp, i).catch(() => null)); })); if (stale(gen)) return;
+  const KS = new Map(), [E] = await Promise.all([edges(sp).catch(() => null), ...[...ks].map(async (i) => { KS.set(i, await reportedOf(sp, i).catch(() => null)); })]); if (stale(gen)) return;   // the pair file and the BioGRID shards together
   const homo = new Map();
   for (const r of res) {
     if (!r.A || !r.B) { r.st = 'missing'; r.rank = 6; continue; }
@@ -5723,8 +5747,7 @@ async function viewPairs(spId, q) {
       continue; }
     const e = E && E.adj.get(r.A.i), x = e && e.get(r.B.i);
     if (x) { r.st = 'pass'; r.best = x.best; r.iptm = x.iptm; r.src = x.src; r.b = bandOf(x.best); r.rank = { 1: 0, 5: 1, 10: 2 }[r.b]; }
-    else if (T && T.has(r.A.i, r.B.i)) { r.st = 'low'; r.best = T.score(r.A.i, r.B.i); r.approx = true; r.rank = 3; }
-    else { r.st = T && E ? 'none' : 'unknown'; r.rank = 5; }   // without both files it is not known whether the pair was folded
+    else { r.st = 'wait'; r.rank = 5; }   // below 10% FPR or never folded: the folded-pair index says, after the first draw
   }
   // names not in this species: why (too long for the screens, not in them), and a switch when they look like another species' IDs
   const miss = [...new Set(res.flatMap((r) => [!r.A ? r.qa : null, !r.B ? r.qb : null]).filter(Boolean))];
@@ -5732,15 +5755,16 @@ async function viewPairs(spId, q) {
     const L = await explainMissing(sp, miss, { link: (id, names) => `#/pairs/${id}?${new URLSearchParams({ q: q.get('q') || '' })}` }).catch(() => []); if (stale(gen)) return;
     $('#pr-miss').innerHTML = `<div>Not found in ${esc(sp.reg.label)}: ${miss.slice(0, 30).map((t) => `<b>${esc(t)}</b>`).join(', ')}${miss.length > 30 ? ` and ${fmtInt(miss.length - 30)} more` : ''}.</div>` + L.map((x) => `<div>${x}</div>`).join(''); $('#pr-miss').hidden = false;
   }
+  const render = () => { $('#pr-stats').innerHTML = stats(); draw(); };
   const cnt = (f) => res.filter(f).length, chip = (n, lab, col) => (n ? `<span><b${col ? ` style="color:${col}"` : ''}>${fmtInt(n)}</b> ${lab}</span>` : '');
   const of = +q.get('of') || 0;
-  $('#pr-stats').innerHTML = `<span><b>${fmtInt(res.length)}</b> pair${res.length === 1 ? '' : 's'}${of > res.length ? ` <span class="muted">(the first ${fmtInt(res.length)} of the ${fmtInt(of)} given)</span>` : ''}</span>` + chip(cnt((r) => r.b === 1), 'past 1% FPR', BAND_TXT[1]) + chip(cnt((r) => r.b === 5), 'past 5% FPR', BAND_TXT[5]) + chip(cnt((r) => r.b === 10), 'past 10% FPR', BAND_TXT[10])
-    + chip(cnt((r) => r.st === 'low'), 'folded, below 10% FPR') + chip(cnt((r) => r.st === 'none'), 'never folded in these screens') + chip(cnt((r) => r.st === 'unknown'), 'not past 10% FPR') + chip(cnt((r) => r.st === 'homo'), 'same protein') + chip(cnt((r) => r.st === 'missing'), 'with a name not found');
+  const stats = () => `<span><b>${fmtInt(res.length)}</b> pair${res.length === 1 ? '' : 's'}${of > res.length ? ` <span class="muted">(the first ${fmtInt(res.length)} of the ${fmtInt(of)} given)</span>` : ''}</span>` + chip(cnt((r) => r.b === 1), 'past 1% FPR', BAND_TXT[1]) + chip(cnt((r) => r.b === 5), 'past 5% FPR', BAND_TXT[5]) + chip(cnt((r) => r.b === 10), 'past 10% FPR', BAND_TXT[10])
+    + chip(cnt((r) => r.st === 'low'), 'folded, below 10% FPR') + chip(cnt((r) => r.st === 'none'), 'never folded in these screens') + chip(cnt((r) => r.st === 'unknown'), 'not past 10% FPR') + chip(cnt((r) => r.st === 'homo'), 'same protein') + chip(cnt((r) => r.st === 'missing'), 'with a name not found') + (res.some((r) => r.st === 'wait') ? '<span class="muted">checking the pairs below 10% FPR…</span>' : '');
   const stTxt = (r) => (r.st === 'pass' ? bandChip(r.b) : r.st === 'low' ? '<span class="muted">folded, below 10% FPR</span>' : r.st === 'none' ? '<span class="muted">never folded in these screens</span>'
-    : r.st === 'unknown' ? '<span class="muted">not past 10% FPR</span>' : r.st === 'homo' ? `<a href="#/${sp.id}/${r.A.key}" title="the protein's page: its homodimer card">same protein: homodimer</a>` : '<span class="muted">name not found</span>');
-  const stPlain = (r) => (r.st === 'pass' ? `past ${r.b}% FPR` : r.st === 'low' ? 'folded, below 10% FPR' : r.st === 'none' ? 'never folded in these screens' : r.st === 'unknown' ? 'not past 10% FPR' : r.st === 'homo' ? 'same protein: homodimer' : 'name not found');
+    : r.st === 'unknown' ? '<span class="muted">not past 10% FPR</span>' : r.st === 'wait' ? '<span class="muted">checking…</span>' : r.st === 'homo' ? `<a href="#/${sp.id}/${r.A.key}" title="the protein's page: its homodimer card">same protein: homodimer</a>` : '<span class="muted">name not found</span>');
+  const stPlain = (r) => (r.st === 'pass' ? `past ${r.b}% FPR` : r.st === 'low' ? 'folded, below 10% FPR' : r.st === 'none' ? 'never folded in these screens' : r.st === 'unknown' || r.st === 'wait' ? 'not past 10% FPR' : r.st === 'homo' ? 'same protein: homodimer' : 'name not found');
   const nm = (R, raw) => (R ? `<a href="#/${sp.id}/${encodeURIComponent(R.key)}">${esc(R.gene)}</a>${R.gene.toLowerCase() !== String(raw).toLowerCase() ? ` <span class="muted" title="as you wrote it">${esc(raw)}</span>` : ''}` : `<span class="muted">${esc(raw)}</span>`);
-  const pageOf = (r) => (r.A && r.B && r.A.i !== r.B.i && r.st !== 'none' && r.st !== 'unknown' ? `#/${sp.id}/${encodeURIComponent(r.A.key)}/${encodeURIComponent(r.B.key)}` : '');
+  const pageOf = (r) => (r.A && r.B && r.A.i !== r.B.i && !['none', 'unknown', 'wait'].includes(r.st) ? `#/${sp.id}/${encodeURIComponent(r.A.key)}/${encodeURIComponent(r.B.key)}` : '');
   const COLS = [['n', '#', (r) => r.n], ['a', 'Protein 1', (r) => (r.A ? r.A.gene : r.qa).toLowerCase()], ['b', 'Protein 2', (r) => (r.B ? r.B.gene : r.qb).toLowerCase()],
     ['best', 'Best iLIS', (r) => (Number.isFinite(r.best) ? r.best : -1)], ['iptm', 'ipTM', (r) => (Number.isFinite(r.iptm) ? r.iptm : -1)], ['st', 'Status', (r) => r.rank],
     ['src', 'Screens', (r) => (r.src ? sp.dsShort.filter((_, di) => r.src & (1 << di)).join(' + ') : '')], ['pubs', 'BioGRID', (r) => r.pubs || 0], ['go', '', () => 0]];
@@ -5754,7 +5778,7 @@ async function viewPairs(spId, q) {
         <td class="n" title="${r.pubs || r.gen ? `BioGRID: ${r.pubs || 0} physical, ${r.gen || 0} genetic publication${(r.gen || 0) === 1 ? '' : 's'}` : ''}">${r.pubs ? fmtInt(r.pubs) : r.A && r.B ? '0' : ''}</td>
         <td>${pg ? `<a href="${pg}" title="the pair's page: its interaction residues and every model">view</a>` : ''}</td></tr>`; }).join('')}</tbody>`;
     $('#pr-t').querySelectorAll('th[data-k]').forEach((th) => { if (th.dataset.k === 'go') return; th.onclick = () => { const k = th.dataset.k; SO.asc = SO.k === k ? !SO.asc : ['n', 'a', 'b', 'st', 'src'].includes(k); SO.k = k; draw(); }; }); };
-  draw();
+  render();
   const prots = [...new Set(res.flatMap((r) => [r.A, r.B]).filter(Boolean).map((R) => R.gene))];
   $('#pr-net').href = `#/network/${sp.id}?${new URLSearchParams({ ids: prots.join(','), add: 'none' })}`; $('#pr-net').hidden = !prots.length;
   $('#pr-link').onclick = async () => { const b = $('#pr-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
@@ -5766,6 +5790,13 @@ async function viewPairs(spId, q) {
         csvq(stPlain(r) + (r.approx ? ' (iLIS to about 0.002)' : '')), csvq(sp.dsShort.filter((_, di) => m & (1 << di)).join(' + ')), csvq([...new Set(sp.dsIds.filter((_, di) => m & (1 << di)).map(refOf).filter(Boolean))].join('; ')),
         r.A && r.B ? r.pubs || 0 : '', r.A && r.B ? r.gen || 0 : '', csvq(sp.reg.label), BUILD].join(','); }).join('\n') + '\n';
     const u = URL.createObjectURL(new Blob(['﻿' + text], { type: 'text/csv;charset=utf-8' })), d = document.createElement('a'); d.href = u; d.download = `atlas_${sp.id}_pairs.csv`; d.click(); setTimeout(() => URL.revokeObjectURL(u), 3000); };
+  const wait = res.filter((r) => r.st === 'wait'); if (!wait.length) return;
+  const T = await testedFor(sp, wait.map((r) => [r.A.i, r.B.i])).catch(() => null); if (stale(gen)) return;
+  for (const r of wait) { const s = T && T.get(`${Math.min(r.A.i, r.B.i)},${Math.max(r.A.i, r.B.i)}`);
+    if (!T || !E || s === undefined) r.st = 'unknown';   // without both files it is not known whether the pair was folded
+    else if (s === -1) r.st = 'none';
+    else { r.st = 'low'; r.best = s; r.approx = true; r.rank = 3; } }
+  render();
 }
 async function viewNetwork(spId, q) {
   const gen = ROUTE, sp = await species(spId);
