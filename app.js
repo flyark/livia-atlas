@@ -1402,6 +1402,16 @@ function siblingEntries(sp, P) {
 let ORTHM = null;   // data/orth/manifest.json: the species with an ortholog table
 const orthMan = () => { if (!ORTHM) ORTHM = getJSON('data/orth/manifest.json').catch(() => ({})); return ORTHM; };   // species, source, release
 const orthSpecies = () => orthMan().then((m) => new Set(m.species || []));
+// data/orth/<sp>/to/<y>.tsv (orth_to.py): every protein of one species with its orthologs' keys in another, best first, one
+// file in place of the shards when a page asks about many proteins at once. → Map key → [key2, …]; null without the files
+const ORTHTO = new Map();
+async function orthTo(spId, y) { const ck = spId + '>' + y;
+  if (!ORTHTO.has(ck)) ORTHTO.set(ck, (async () => { if (!(await orthMan()).to) return null;
+    const text = await getText(`data/orth/${spId}/to/${y}.tsv`), m = new Map(), L = text.split('\n');
+    if (!L[0].startsWith('livia-orth-to/1')) return null;
+    for (let n = 1; n < L.length; n++) { const l = L[n]; if (!l) continue; const t = l.indexOf('\t'); m.set(l.slice(0, t), l.slice(t + 1).split(',')); }
+    return m; })().catch(() => { ORTHTO.delete(ck); return null; }));
+  return ORTHTO.get(ck); }
 const ORTHS = new Map();   // data/orth/<species>/<2 chars>.json: a protein's hits in the other species, by the key's last two characters
 function orthShard(spId, key, isPrefix = false) { const pre = isPrefix ? key : key.slice(-2).toLowerCase(), ck = spId + '/' + pre;
   if (!ORTHS.has(ck)) ORTHS.set(ck, getJSON(`data/orth/${spId}/${pre}.json`).catch(() => ({})));
@@ -3254,11 +3264,13 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const m2 = st.m[cut]; if (!m2 || !clustered()) return;
     const best2 = new Map();   // the ortholog's partners in its sites (clustered: every model past the cutoff): key2 → its cluster (by the best model)
     m2.preds.forEach((p, i) => { const w = st.B2.labels.get(p.partner), k2 = w ? w.key : p.partner; if (k2 === st.P2.key) return; const b = best2.get(k2); if (!b || p.iLIS > b.iLIS) best2.set(k2, { iLIS: p.iLIS, c: m2.labels[i] }); });
-    const keys2 = [...best2.keys()], shards = await Promise.all([...new Set(keys2.map((k) => k.slice(-2).toLowerCase()))].map((pre) => orthShard(sp2, pre, true).then((s) => [pre, s]).catch(() => [pre, {}])));
+    const keys2 = [...best2.keys()], TO = await orthTo(sp2, sp.id);   // one file for every partner; else each partner's shard
+    const shards = TO ? [] : await Promise.all([...new Set(keys2.map((k) => k.slice(-2).toLowerCase()))].map((pre) => orthShard(sp2, pre, true).then((s) => [pre, s]).catch(() => [pre, {}])));
     if (gone()) return;
     const SH = new Map(shards), pairs = [];
-    for (const k2 of keys2) { const ent = (SH.get(k2.slice(-2).toLowerCase()) || {})[k2], hits = ent && ent[sp.id]; if (!hits) continue;
-      const k1 = hits[0][0]; if (!partnerCluster.has(k1)) continue;
+    const first = (k2) => { if (TO) { const h = TO.get(k2); return h ? h[0] : null; } const ent = (SH.get(k2.slice(-2).toLowerCase()) || {})[k2], hits = ent && ent[sp.id]; return hits ? hits[0][0] : null; };
+    for (const k2 of keys2) { const k1 = first(k2); if (!k1) continue;
+      if (!partnerCluster.has(k1)) continue;
       pairs.push({ k1, k2, c1: partnerCluster.get(k1), c2: best2.get(k2).c }); }
     ORTH.shared.set(sp2, { n2: keys2.length, pairs });
     renderOrthShared(); drawOrth();   // the marks show which sites an ortholog pair shares
@@ -6273,13 +6285,14 @@ async function viewNetwork(spId, q) {
   const pk = (a, b) => (a < b ? `${a},${b}` : `${b},${a}`);
   async function orthPairs(ids, c) {
     const have = await orthSpecies(), ys = (S.xsp === 'all' ? [...have] : [S.xsp]).filter((y) => y !== sp.id && have.has(y) && (REG.species || []).some((s) => s.id === y));
-    const pres = [...new Set(ids.map((i) => sp.rows[i].key.slice(-2).toLowerCase()))], sh = new Map(await Promise.all(pres.map(async (p) => [p, await orthShard(sp.id, p, true)])));
-    const orthOf = (i) => { const k = sp.rows[i].key, s = sh.get(k.slice(-2).toLowerCase()); return (s && s[k]) || {}; };
+    const TOs = new Map(await Promise.all(ys.map(async (y) => [y, await orthTo(sp.id, y)])));   // one file per species; else the drawn proteins' shards
+    const pres = ys.every((y) => TOs.get(y)) ? [] : [...new Set(ids.map((i) => sp.rows[i].key.slice(-2).toLowerCase()))], sh = new Map(await Promise.all(pres.map(async (p) => [p, await orthShard(sp.id, p, true)])));
+    const orthKeys = (i, y) => { const k = sp.rows[i].key, T = TOs.get(y); if (T) return T.get(k) || []; const s = sh.get(k.slice(-2).toLowerCase()); return ((s && s[k] && s[k][y]) || []).map((x) => x[0]); };
     const ev = new Map(), used = [], failed = [];
     for (const y of ys) {
       let spY, EY; try { spY = await species(y); EY = await edges(spY, ''); } catch (e) { failed.push(y); continue; }
       const inv = new Map();   // that species' protein → the drawn proteins it is an ortholog of
-      for (const i of ids) for (const [k2] of orthOf(i)[y] || []) { const r = spY.byKey.get(k2); if (!r) continue; if (!inv.has(r.i)) inv.set(r.i, []); inv.get(r.i).push(i); }
+      for (const i of ids) for (const k2 of orthKeys(i, y)) { const r = spY.byKey.get(k2); if (!r) continue; if (!inv.has(r.i)) inv.set(r.i, []); inv.get(r.i).push(i); }
       if (inv.size) used.push(y);
       for (const [ya, as] of inv) for (const [yb, e] of EY.adj.get(ya) || []) { if (yb <= ya || e.best < c) continue; const bs = inv.get(yb); if (!bs) continue;
         for (const a of as) for (const b of bs) { if (a === b) continue; const k = pk(a, b); if (!ev.has(k)) ev.set(k, []); const L = ev.get(k), x = L.find((z) => z.y === y), v = { y, a2: spY.rows[ya].gene, b2: spY.rows[yb].gene, k2: `${spY.rows[ya].key}/${spY.rows[yb].key}`, best: e.best };
