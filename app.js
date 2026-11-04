@@ -441,6 +441,27 @@ async function testedFor(sp, ij) {
     return out;
   } catch (e) { const T = await tested(sp); if (!T) return null; for (const [a, b] of ij) out.set(key(a, b), T.has(a, b) ? T.score(a, b) : -1); return out; }
 }
+// A few pairs' scores past the cutoff, from the species pair file's shards (edges_shards.py: 256 files by the pair's smaller
+// row, ~5 kB each gzipped for human) instead of the whole file (1.35 MB): the Pairs search. The whole file when it is already
+// read, when the species has no shards, or past ~75 shards. → Map 'i,j' (smaller first) → { best, iptm, src }
+async function edgesFor(sp, ij) {
+  const out = new Map(), key = (a, b) => `${Math.min(a, b)},${Math.max(a, b)}`, S = (sp.manifest.files || {}).edgesShards;
+  const ks = S ? new Set(ij.map(([a, b]) => Math.min(a, b) % S)) : null;
+  if (!S || (sp.edgesBy && sp.edgesBy.has('')) || ks.size > 75) {
+    const E = await edges(sp);
+    for (const [a, b] of ij) { const x = (E.adj.get(a) || new Map()).get(b); if (x) out.set(key(a, b), { best: x.best, iptm: x.iptm, src: x.src }); }
+    return out; }
+  const want = new Set(ij.map(([a, b]) => key(a, b)));
+  await Promise.all([...ks].map(async (k) => {
+    const text = await getText(store(`${sp.base}edges/${k}.grp`)), L = text.split('\n');
+    if (!L[0].startsWith('livia-edges/1')) throw new Error('The pair file has an unknown layout.');
+    let i = -1, j = 0;
+    for (let n = 1; n < L.length; n++) { const l = L[n]; if (!l) continue;
+      if (l.charCodeAt(0) === 35) { i += +l.slice(1); j = i; continue; }
+      const t = l.split('\t'); j += +t[0]; const kk = key(i, j);
+      if (want.has(kk)) out.set(kk, { best: +t[1] / 1000, iptm: t[2] === '' ? NaN : +t[2] / 100, src: +t[3] }); } }));
+  return out;
+}
 // testedFor as the index's own interface (has, score) for just those pairs
 const testedLookup = async (sp, ij) => { const m = await testedFor(sp, ij); if (!m) return null; const k = (a, b) => `${Math.min(a, b)},${Math.max(a, b)}`;
   return { has: (a, b) => (m.get(k(a, b)) ?? -1) !== -1, score: (a, b) => { const v = m.get(k(a, b)); return v === undefined || v === -1 ? NaN : v; } }; };
@@ -5739,7 +5760,7 @@ async function viewPairs(spId, q) {
   const res = IN.map(([a, b, n]) => ({ n, qa: a, qb: b, A: resolveRow(sp, a), B: resolveRow(sp, b) }));
   const ks = new Set(); res.forEach((r) => { if (r.A && r.B) ks.add(r.A.i); });
   const KS = new Map(), shards = new Set([...ks].map((i) => i % 256)).size > 75;   // past ~75 of the 256 BioGRID shards, the whole file is lighter
-  const [E] = await Promise.all([edges(sp).catch(() => null), shards ? reported(sp).then((K) => { for (const i of ks) KS.set(i, K); }).catch(() => {}) : Promise.all([...ks].map(async (i) => { KS.set(i, await reportedOf(sp, i).catch(() => null)); }))]); if (stale(gen)) return;   // the pair file and BioGRID together
+  const [E] = await Promise.all([edgesFor(sp, res.filter((r) => r.A && r.B && r.A.i !== r.B.i).map((r) => [r.A.i, r.B.i])).catch(() => null), shards ? reported(sp).then((K) => { for (const i of ks) KS.set(i, K); }).catch(() => {}) : Promise.all([...ks].map(async (i) => { KS.set(i, await reportedOf(sp, i).catch(() => null)); }))]); if (stale(gen)) return;   // the pair file and BioGRID together
   const homo = new Map();
   for (const r of res) {
     if (!r.A || !r.B) { r.st = 'missing'; r.rank = 6; continue; }
@@ -5748,7 +5769,7 @@ async function viewPairs(spId, q) {
       if (!homo.has(r.A.key)) homo.set(r.A.key, homoRowsFor(sp.id, r.A).then((rows) => homoFor(rows, r.A).find((x) => !x.iso)).catch(() => null));
       const h = await homo.get(r.A.key); if (stale(gen)) return; if (h && Number.isFinite(+h.iLIS)) { r.best = +h.iLIS; r.iptm = Number.isFinite(+h.ipTM) ? +h.ipTM : NaN; }
       continue; }
-    const e = E && E.adj.get(r.A.i), x = e && e.get(r.B.i);
+    const x = E && E.get(`${Math.min(r.A.i, r.B.i)},${Math.max(r.A.i, r.B.i)}`);
     if (x) { r.st = 'pass'; r.best = x.best; r.iptm = x.iptm; r.src = x.src; r.b = bandOf(x.best); r.rank = { 1: 0, 5: 1, 10: 2 }[r.b]; }
     else { r.st = 'wait'; r.rank = 5; }   // below 10% FPR or never folded: the folded-pair index says, after the first draw
   }
