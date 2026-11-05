@@ -6256,9 +6256,10 @@ async function viewNetwork(spId, q) {
     $('#nw-khint').textContent = keep.size >= CAP && Q.size < CAP && (S.add === 'top' || S.exp.length) ? `capped at ${CAP} proteins: a higher number gives the first proteins more partners and later ones fewer` : '';
     SIG = new Map(); let sigCut = 0;   // each added partner: how many proteins-of-interest it pairs with, and the chance of that many
     { const cand = [...keep].filter((i) => !Q.has(i));
-      if (cand.length) { if (!S.set && TPN == null) { try { TPN = await tested(sp); } catch (e) { TPN = null; } if (stale(gen)) return; }
+      if (cand.length) { if (!S.set && TPN == null && Q.size >= 3) { try { TPN = await tested(sp); } catch (e) { TPN = null; } }   // three or more proteins-of-interest: the enrichment test reads the whole index anyway
+        const TPx = S.set ? null : TPN || await testedLookup(sp, cand.flatMap((j) => [...Q].map((q) => [j, q]))).catch(() => null); if (stale(gen)) return;   // else only these pairs: never kept as TPN, which answers for every pair
         const posKey = bandKey(), fpr = { pos10: 0.1, pos5: 0.05, pos1: 0.01 }[posKey];
-        const pcOf = (i) => { const r = sp.rows[i]; return r.partners ? ((r[posKey] || 0) + 20 * fpr) / (r.partners + 20) : fpr; }, TPx = S.set ? null : TPN;   // as the nested network: shrunk toward the benchmark rate
+        const pcOf = (i) => { const r = sp.rows[i]; return r.partners ? ((r[posKey] || 0) + 20 * fpr) / (r.partners + 20) : fpr; };   // as the nested network: shrunk toward the benchmark rate
         const rows = cand.map((j) => { let k = 0, m = 0; const mj = EA.adj.get(j) || new Map(); for (const q of Q) { const e = mj.get(q); if (e && passE(e)) k++; if (!TPx || TPx.has(j, q)) m++; } m = Math.max(m, k); return { j, k, m, p: binomTail(m, pcOf(j), k) }; });
         const qv = bhQ(rows.map((x) => x.p)); rows.forEach((x, n) => SIG.set(x.j, { k: x.k, m: x.m, p: x.p, q: qv[n], t: !!TPx }));
         if (S.sig) for (const x of rows) if (SIG.get(x.j).q > 0.05 && !(treeInfo && treeInfo.nodes.has(x.j))) { keep.delete(x.j); sigCut++; } } }   // the tree's partners stay: it is drawn whole
@@ -6318,7 +6319,7 @@ async function viewNetwork(spId, q) {
     const lab = (y) => spName(((REG.species || []).find((s) => s.id === y) || {}).label || y);
     return { ev, ys: used, names: used.length ? used.map(lab).join(', ') : 'no species', lab, skipped: failed.length ? `the predictions of ${failed.map(lab).join(', ')} did not load` : '' };
   }
-  let heatArgs = null, heatSeen = false;
+  let heatArgs = null, heatSeen = false, heatTP = null, heatRun = 0;
   new IntersectionObserver((es) => { if (!heatSeen && heatArgs && es.some((e) => e.isIntersecting)) { heatSeen = true; heatmap(...heatArgs); } }, { rootMargin: '400px' }).observe($('#nw-heat-wrap'));
   // The drawn proteins as a matrix, apart from the network's cutoff: every folded pair colored by its best iLIS on one scale
   // (below 10% FPR from the index of tested pairs); never folded white. Without the index (or with a screen filter) only the
@@ -6330,9 +6331,11 @@ async function viewNetwork(spId, q) {
     const ord = [...nodes].sort((a, b) => (gi(a) - gi(b)) || (b.q - a.q) || ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || a.row.gene.localeCompare(b.row.gene));
     const M = new Map(), key = (a, b) => (a < b ? a + ',' + b : b + ',' + a);
     for (const l of links) { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; M.set(key(a, b), l); }
-    if (!S.set && TPN == null) { try { TPN = await tested(sp); } catch (e) { TPN = null; } if (SCAN) SCAN.TP = TPN; }   // the matrix marks folded pairs
+    const hk = ord.map((d) => d.id).sort((a, b) => a - b).join(','), run = ++heatRun;   // the matrix marks folded pairs: those of these proteins, one read per list (Show and the colors draw again)
+    if (!S.set && !(heatTP && heatTP.key === hk)) { const ij = []; ord.forEach((d, i) => { for (let j = i; j < n; j++) ij.push([d.id, ord[j].id]); });
+      const T = ord.filter((d) => d.q).length >= 3 ? await tested(sp).catch(() => null) : await testedLookup(sp, ij).catch(() => null); heatTP = { key: T ? hk : '', TP: T }; if (run !== heatRun) return; }   // nothing read: tried again next time
     const gcount = new Map(); ord.forEach((d) => gcount.set(d.row.gene, (gcount.get(d.row.gene) || 0) + 1));
-    const TP = S.set ? null : TPN, cut = cutV(), names = ord.map((d) => (gcount.get(d.row.gene) > 1 ? `${d.row.gene} (${d.row.key})` : d.row.gene));   // two proteins with one symbol (two accessions) keep their own rows
+    const TP = S.set ? null : heatTP.TP, cut = cutV(), names = ord.map((d) => (gcount.get(d.row.gene) > 1 ? `${d.row.gene} (${d.row.key})` : d.row.gene));   // two proteins with one symbol (two accessions) keep their own rows
     const minV = FPRSHOW($('#nw-heat-show').value), E0 = EB;   // the matrix: every pair in the edge table (the screen's, with a filter), apart from the network's cutoff
     const pairOf = (a, b) => { const e = E0 && (E0.adj.get(a) || new Map()).get(b); if (e) return { v: e.best, ip: e.iptm, exact: true };
       const l = M.get(key(a, b)); if (l) return { v: l.best, ip: l.iptm, exact: true };
