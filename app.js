@@ -6877,7 +6877,7 @@ function enhanceTables(root = app) {
     [...t.tHead.rows[0].cells].forEach((th, k) => { th.classList.add('sortable'); th.title = th.title || 'click to sort';
       th.onclick = () => { const asc = th.dataset.dir !== 'asc'; [...t.tHead.rows[0].cells].forEach((x) => { delete x.dataset.dir; x.classList.remove('sorted', 'asc'); });
         th.dataset.dir = asc ? 'asc' : 'desc'; th.classList.add('sorted'); if (asc) th.classList.add('asc');
-        const rows = [...t.tBodies[0].rows], val = (r) => (r.cells[k] ? r.cells[k].textContent.trim() : ''), allNum = rows.every((r) => val(r) === '' || val(r) === '—' || num(val(r)) != null);
+        const rows = [...t.tBodies[0].rows], val = (r) => (r.cells[k] ? r.cells[k].textContent.trim() : ''), allNum = rows.every((r) => /^[-–—]?$/.test(val(r)) || num(val(r)) != null);   // a blank cell is '', '-', '–' or '—'
         rows.sort((a, b) => { const x = val(a), y = val(b); const d = allNum ? (num(x) ?? -Infinity) - (num(y) ?? -Infinity) : x.localeCompare(y); return asc ? d : -d; });
         for (const r of rows) t.tBodies[0].appendChild(r); }; });
   }
