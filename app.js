@@ -5151,14 +5151,16 @@ async function viewVirus(spId, taxid) {
     VN = { disp() { Object.assign(ND, vnDisp()); circle.attr('r', rd).attr('stroke', ND.nbord ? '#17263A' : 'none'); hring.attr('r', (d) => rd(d) + 3);   // a Display option changed: restyle in place, nothing moves
       label.attr('fill', ND.lbcol).attr('stroke', ND.lbout ? 'rgba(255,255,255,0.92)' : 'none'); ecol(); relabel(d3.zoomTransform(svg.node()).k); } };
     svgExport($('#vn-x'), `atlas_virus_${v.taxid}_network`, () => $('svg', box));
-    vmatrix(nodes, all, grouped ? (d) => (big.includes(d.c) ? big.indexOf(d.c) : big.length) : () => 0, deg);   // every pair of the virus, whatever the page's cutoff
+    vmatrix(nodes, all, grouped ? (d) => (big.includes(d.c) ? big.indexOf(d.c) : big.length) : () => 0, deg,
+      grouped ? big.map((c, m) => ({ short: `C${m + 1}`, name: commWord(C.m, m + 1).replace(/^./, (ch) => ch.toUpperCase()), color: commHue(m) })) : []);   // every pair of the virus, whatever the page's cutoff
   }
   // Every pair of the virus's proteins as a matrix (the diagonal: the protein with itself). The release folded every pair of a
   // virus (a few viruses miss some), so every cell but a missing pair is colored by its iLIS on one scale; rows follow the communities.
-  async function vmatrix(nodes, P, grp, deg) {
+  async function vmatrix(nodes, P, grp, deg, gmeta = []) {
     const box = $('#vm-heat'), n = nodes.length; if (n < 2) { $('#vm-card').hidden = true; return; }
     const ord = [...nodes].sort((a, b) => (grp(a) - grp(b)) || ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || R(a.id).gene.localeCompare(R(b.id).gene));
     const names = ord.map((d) => lab(d.row) + (ord.filter((x) => lab(x.row) === lab(d.row)).length > 1 ? ` (${d.row.key})` : '')), M = new Map();
+    const { spans, byRow } = heatSpans(ord, grp, gmeta), hasC = spans.length > 0, nmTag = (k) => names[k] + (byRow[k] ? ` (${byRow[k].short})` : '');
     for (const x of P) M.set(x.a < x.b ? x.a + ',' + x.b : x.b + ',' + x.a, x);
     const TP = await tested(sp), minV = FPRSHOW($('#vm-show').value);   // below 10% FPR: the index of every folded pair, with its score
     const zi = [], tx = []; let past = 0, below = 0, miss = 0, homo = 0;
@@ -5166,26 +5168,33 @@ async function viewVirus(spId, taxid) {
       for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, x = M.get(a < b ? a + ',' + b : b + ',' + a), f = !x && TP ? TP.has(a, b) : !x ? null : true;
         const v = x ? x.best : TP && f ? Math.min(TP.score(a, b), CUT[10] - 0.001) : null;   // not in the edge table: below the cutoff, whatever the 1-byte rounding
         ri.push(v != null && Number.isFinite(v) && v >= minV ? v : null);
-        rt.push(`${names[i]} × ${i === j ? 'itself' : names[j]}<br>${x ? `iLIS ${x.best.toFixed(3)}${Number.isFinite(x.iptm) ? ` · ipTM ${x.iptm.toFixed(2)}` : ''}` : v != null ? `iLIS ≈${v.toFixed(2)}` : TP ? 'not folded in the release' : 'below 10% FPR'}`);
+        rt.push(`${nmTag(i)} × ${i === j ? 'itself' : nmTag(j)}<br>${x ? `iLIS ${x.best.toFixed(3)}${Number.isFinite(x.iptm) ? ` · ipTM ${x.iptm.toFixed(2)}` : ''}` : v != null ? `iLIS ≈${v.toFixed(2)}` : TP ? 'not folded in the release' : 'below 10% FPR'}`);
         if (j >= i) { if (i === j && v != null && v >= CUT[10]) homo++; else if (i !== j) { if (v != null && v >= CUT[10]) past++; else if (v != null) below++; else if (TP) miss++; } } }
       zi.push(ri); tx.push(rt); }
     $('#vm-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} pair${plS(past)} and ${fmtInt(homo)} homodimer${plS(homo)} past 10% FPR` + (TP ? ` · ${fmtInt(below)} below it` : ' · the index of every pair did not load, so the pairs below it are blank') + (miss ? ` · ${fmtInt(miss)} not folded in the release` : '');
     $('#vm-key').innerHTML = `<span class="muted">${TP ? 'every pair of the virus on one scale' : 'the pairs past 10% FPR'}, whatever the network's cutoff; the diagonal is the protein with itself</span>${miss ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>not folded in the release</span>' : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
     let Pl; try { Pl = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
     if (!zi.some((r) => r.some((x) => x != null))) { Pl.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to ${esc($('#vm-show').options[0].text)}.</div>`; return; }
-    const shapes = []; ord.forEach((d, k) => { if (k && grp(d) !== grp(ord[k - 1])) for (const s of [{ x0: k - 0.5, x1: k - 0.5, y0: -0.5, y1: n - 0.5 }, { y0: k - 0.5, y1: k - 0.5, x0: -0.5, x1: n - 0.5 }]) shapes.push({ type: 'line', ...s, line: { color: '#5B6573', width: 1 } }); });
+    const ticksIn = (lo, hi) => { const a = Math.max(0, Math.ceil(Math.min(lo, hi))), z = Math.min(n - 1, Math.floor(Math.max(lo, hi))), step = Math.max(1, Math.ceil((z - a + 1) / 80)), tv = [];
+      for (let k = a; k <= z; k += step) tv.push(k); return { tickvals: tv, ticktext: tv.map((k) => names[k]) }; };
     const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
     if (box.querySelector(':scope > .empty')) box.innerHTML = '';
-    Pl.react(box, [
-      { type: 'heatmap', z: zi, x: names, y: names, text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0($('#vm-cs').value), zmin: 0, zmax: 0.85, colorbar: heatBar(box), xgap: 1, ygap: 1, hoverongaps: false }],
-      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: heatMargin(box), plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
-        xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain' },
-        yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x' }, dragmode: 'zoom' },
+    const ov0 = heatOverlay(box, n, spans);
+    await Pl.react(box, [
+      { type: 'heatmap', z: zi, x: [...names.keys()], y: [...names.keys()], text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0($('#vm-cs').value), zmin: 0, zmax: 0.85, colorbar: heatBar(box), xgap: 1, ygap: 1, hoverongaps: false }],
+      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: heatMargin(box, hasC), plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes: ov0.shapes, annotations: ov0.annotations,
+        xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain', tickmode: 'array', ...ticksIn(-0.5, n - 0.5), range: [-0.5, n - 0.5], zeroline: false, ...(hasC ? { ticks: 'outside', ticklen: 20, tickcolor: 'rgba(0,0,0,0)' } : {}) },
+        yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x', tickmode: 'array', ...ticksIn(-0.5, n - 0.5), zeroline: false, ...(hasC ? { ticks: 'outside', ticklen: 26, tickcolor: 'rgba(0,0,0,0)' } : {}) }, dragmode: 'zoom' },
       { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: `atlas_virus_${v.taxid}_matrix`, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
+    if (hasC) { const ov1 = heatOverlay(box, n, spans); if (ov1.sig !== ov0.sig) await Pl.relayout(box, { shapes: ov1.shapes, annotations: ov1.annotations }); heatCommKey(spans, $('#vm-key'), Pl, box, n); } else box.__commSync = null;
     box.removeAllListeners && box.removeAllListeners('plotly_click'); box.removeAllListeners && box.removeAllListeners('plotly_relayout');
-    box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`, e2 = ev.event || {}; window.open(u, '_blank'); });
-    box.on('plotly_relayout', (ev) => { const xr = ev['xaxis.range[0]'] != null ? [ev['xaxis.range[0]'], ev['xaxis.range[1]']] : Array.isArray(ev['xaxis.range']) ? ev['xaxis.range'] : ev['xaxis.autorange'] ? [-0.5, n - 0.5] : null;
-      if (!xr) return; const f = Math.max(6, Math.min(14, 520 / Math.max(1, Math.abs(xr[1] - xr[0])))); if (Math.abs(f - (box.__tick || tick)) < 0.5) return; box.__tick = f; Pl.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f }); });
+    box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`; window.open(u, '_blank'); });
+    box.on('plotly_relayout', (ev) => { if (!Object.keys(ev).some((k) => /^[xy]axis\.(range|autorange)/.test(k) || k === 'autosize' || k === 'width')) return;
+      const fl = box._fullLayout, xr = (fl && fl.xaxis.range) || [-0.5, n - 0.5], yr = (fl && fl.yaxis.range) || [n - 0.5, -0.5];
+      const shown = Math.max(1, Math.min(Math.abs(xr[1] - xr[0]), Math.abs(yr[1] - yr[0]))), f = Math.max(6, Math.min(14, 520 / shown)), tx2 = ticksIn(xr[0], xr[1]), ty2 = ticksIn(yr[0], yr[1]), ov = heatOverlay(box, n, spans, xr, yr);
+      box.__tick = f; if (box.__commSync) box.__commSync();
+      Pl.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f, 'xaxis.tickvals': tx2.tickvals, 'xaxis.ticktext': tx2.ticktext, 'yaxis.tickvals': ty2.tickvals, 'yaxis.ticktext': ty2.ticktext, ...(hasC ? { shapes: ov.shapes, annotations: ov.annotations } : {}) }).then(() => {
+        if (!hasC) return; const ov2 = heatOverlay(box, n, spans, xr, yr); if (ov2.sig !== ov.sig) Pl.relayout(box, { shapes: ov2.shapes, annotations: ov2.annotations }); }); });
   }
   const vnum = (id, lo, hi, d) => { const x = parseFloat($(id).value); return Number.isFinite(x) ? Math.min(hi, Math.max(lo, x)) : d; };
   function vnDisp() { return { nsize: vnum('#vn-nsize', 0.3, 3, 1), ewid: vnum('#vn-ew', 0.2, 3, 1), lbdeg: vnum('#vn-lbdeg', 0, 50, 0), lbtop: vnum('#vn-lbtop', 0, 500, 0), lbsize: vnum('#vn-lbsize', 6, 24, 11),
@@ -5415,8 +5424,58 @@ const heatNarrow = (box) => (box.clientWidth || 900) < 600;
 const heatBar = (box) => (heatNarrow(box)   // a phone: a horizontal bar under the matrix, so the cells keep the full width
   ? { orientation: 'h', x: 0.5, xanchor: 'center', y: -0.02, yanchor: 'top', len: 0.8, thickness: 10, title: { text: `best iLIS (10% FPR at ${CUT[10]})`, side: 'top' }, tickangle: 0, tickvals: [0, CUT[10], 0.8], ticktext: ['0', String(CUT[10]), '0.8'] }
   : { x: 1.02, xanchor: 'left', xpad: 6, thickness: 12, len: 0.7, title: { text: `best iLIS (10% FPR at ${CUT[10]})`, side: 'right' }, ...HEATTICKS });
-const heatMargin = (box) => (heatNarrow(box) ? { l: 110, r: 20, t: 110, b: 80 } : { l: 110, r: 90, t: 110, b: 20 });
+const heatMargin = (box, comm = false) => (heatNarrow(box) ? { l: comm ? 128 : 110, r: 20, t: comm ? 128 : 110, b: 80 } : { l: comm ? 128 : 110, r: 90, t: comm ? 128 : 110, b: 20 });
 const FPRSHOW = (sel) => ({ all: 0, 10: CUT[10], 5: CUT[5], 1: CUT[1] }[sel] ?? 0);   // a matrix's own filter, apart from the network's cutoff
+const heatDark = (c) => { const x = d3.rgb(c), f = (u) => { u /= 255; return u <= 0.03928 ? u / 12.92 : ((u + 0.055) / 1.055) ** 2.4; }; return 0.2126 * f(x.r) + 0.7152 * f(x.g) + 0.0722 * f(x.b) < 0.45; };
+function heatSpans(ord, grpOf, gmeta) {   // contiguous community blocks along the ordered rows/columns of a pair matrix
+  if (!gmeta || !gmeta.length || !ord.length) return { spans: [], byRow: ord.map(() => null) };
+  const spans = [], byRow = ord.map((d) => { const g = grpOf(d); return g >= 0 && g < gmeta.length ? gmeta[g] : null; });
+  ord.forEach((d, k) => { const g = grpOf(d), prev = spans[spans.length - 1]; if (prev && prev.g === g) prev.e = k; else spans.push({ g, s: k, e: k, meta: g >= 0 && g < gmeta.length ? gmeta[g] : null }); });
+  return { spans, byRow };
+}
+function heatOverlay(box, n, spans, xr = [-0.5, n - 0.5], yr = [n - 0.5, -0.5]) {   // community divider lines + top/left color strips & C1..Ck labels, clipped to the visible zoom range
+  if (!spans.length) return { shapes: [], annotations: [], sig: '' };
+  const fl = box._fullLayout, xa = fl && fl.xaxis, ya = fl && fl.yaxis, xd = (xa && xa.domain) || [0, 1], yd = (ya && ya.domain) || [0, 1];
+  const pw = Math.max(120, (xa && xa._length) || ((box.clientWidth || 800) - 220) * (xd[1] - xd[0])), ph = Math.max(120, (ya && ya._length) || pw);
+  const ux = (xd[1] - xd[0]) / pw, uy = (yd[1] - yd[0]) / ph, vx0 = Math.min(xr[0], xr[1]), vx1 = Math.max(xr[0], xr[1]), vy0 = Math.min(yr[0], yr[1]), vy1 = Math.max(yr[0], yr[1]);
+  const shapes = [], annotations = [], ty0 = yd[1] + 1.5 * uy, ty1 = yd[1] + 16.5 * uy, lx0 = xd[0] - 22.5 * ux, lx1 = xd[0] - 1.5 * ux;
+  for (const sp of spans) {
+    if (sp.s > 0) {
+      const k = sp.s - 0.5;
+      if (k > vx0 && k < vx1) shapes.push({ type: 'line', xref: 'x', yref: 'y', x0: k, x1: k, y0: vy0, y1: vy1, line: { color: '#5B6573', width: 1 } });
+      if (k > vy0 && k < vy1) shapes.push({ type: 'line', xref: 'x', yref: 'y', x0: vx0, x1: vx1, y0: k, y1: k, line: { color: '#5B6573', width: 1 } });
+    }
+    const col = sp.meta ? sp.meta.color : '#D5DCE4', fg = sp.meta && heatDark(col) ? '#FFFFFF' : '#17263A', lab = sp.meta ? String(sp.meta.short || '') : '';
+    const xlo = Math.max(sp.s - 0.5, vx0), xhi = Math.min(sp.e + 0.5, vx1);
+    if (xhi > xlo) {
+      shapes.push({ type: 'rect', xref: 'x', yref: 'paper', x0: xlo, x1: xhi, y0: ty0, y1: ty1, fillcolor: col, line: { color: '#FFFFFF', width: 1 }, layer: 'above' });
+      const wpx = ((xhi - xlo) / Math.max(1e-6, vx1 - vx0)) * pw;
+      if (lab && wpx >= lab.length * 6.2 + 6) annotations.push({ xref: 'x', yref: 'paper', x: (xlo + xhi) / 2, y: (ty0 + ty1) / 2, text: `<b>${esc(lab)}</b>`, showarrow: false, xanchor: 'center', yanchor: 'middle', font: { size: 10, family: 'IBM Plex Sans, sans-serif', color: fg } });
+    }
+    const ylo = Math.max(sp.s - 0.5, vy0), yhi = Math.min(sp.e + 0.5, vy1);
+    if (yhi > ylo) {
+      shapes.push({ type: 'rect', xref: 'paper', yref: 'y', x0: lx0, x1: lx1, y0: ylo, y1: yhi, fillcolor: col, line: { color: '#FFFFFF', width: 1 }, layer: 'above' });
+      const hpx = ((yhi - ylo) / Math.max(1e-6, vy1 - vy0)) * ph, vert = lab.length > 3;
+      if (lab && hpx >= (vert ? lab.length * 6 + 6 : 12)) annotations.push({ xref: 'paper', yref: 'y', x: (lx0 + lx1) / 2, y: (ylo + yhi) / 2, text: `<b>${esc(lab)}</b>`, textangle: vert ? -90 : 0, showarrow: false, xanchor: 'center', yanchor: 'middle', font: { size: 10, family: 'IBM Plex Sans, sans-serif', color: fg } });
+    }
+  }
+  return { shapes, annotations, sig: `${xd[0].toFixed(4)},${xd[1].toFixed(4)},${yd[0].toFixed(4)},${yd[1].toFixed(4)},${Math.round(pw)},${Math.round(ph)}` };
+}
+function heatCommKey(spans, keyEl, Pl, box, n) {   // community swatches under the matrix; clicking one zooms to its block (again resets)
+  if (!spans.length || !keyEl) return;
+  const row = document.createElement('div'); row.style.cssText = 'flex-basis:100%;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center';
+  row.innerHTML = '<span class="muted">Communities:</span>' + spans.map((sp, idx) => sp.meta
+    ? `<span data-sp="${idx}" style="cursor:pointer;padding:2px 6px;border-radius:5px;transition:background .12s" title="click to zoom into ${esc(sp.meta.short)}${sp.meta.name && sp.meta.name !== sp.meta.short ? ' (' + esc(sp.meta.name) + ')' : ''}; click again or double-click the matrix to show all"><i style="background:${sp.meta.color}"></i><b>${esc(sp.meta.short)}</b>${sp.meta.name && sp.meta.name.toLowerCase() !== sp.meta.short.toLowerCase() && !/^community \d+$/i.test(sp.meta.name) ? ' · ' + esc(sp.meta.name) : ''} (${fmtInt(sp.e - sp.s + 1)})</span>`
+    : `<span class="muted" style="padding:2px 4px"><i style="background:#D5DCE4"></i>ungrouped (${fmtInt(sp.e - sp.s + 1)})</span>`).join('');
+  keyEl.prepend(row);
+  const sync = () => { const fl = box._fullLayout, xr = (fl && fl.xaxis && fl.xaxis.range) || [-0.5, n - 0.5];
+    row.querySelectorAll('[data-sp]').forEach((el) => { const sp = spans[+el.dataset.sp], on = Math.abs(Math.min(xr[0], xr[1]) - (sp.s - 0.5)) < 0.2 && Math.abs(Math.max(xr[0], xr[1]) - (sp.e + 0.5)) < 0.2;
+      el.style.background = on ? '#E8EEF5' : 'transparent'; el.style.boxShadow = on ? 'inset 0 0 0 1px #B8C7D9' : 'none'; }); };
+  box.__commSync = sync;
+  row.querySelectorAll('[data-sp]').forEach((el) => { el.onclick = () => { const sp = spans[+el.dataset.sp], fl = box._fullLayout, xr = (fl && fl.xaxis && fl.xaxis.range) || [-0.5, n - 0.5];
+    const same = Math.abs(Math.min(xr[0], xr[1]) - (sp.s - 0.5)) < 0.2 && Math.abs(Math.max(xr[0], xr[1]) - (sp.e + 0.5)) < 0.2;
+    Pl.relayout(box, same ? { 'xaxis.range': [-0.5, n - 0.5], 'yaxis.range': [n - 0.5, -0.5] } : { 'xaxis.range': [sp.s - 0.5, sp.e + 0.5], 'yaxis.range': [sp.e + 0.5, sp.s - 0.5] }); }; });
+}
 // Tables loaded or dropped: text files as they are; Excel workbooks read in the browser (SheetJS 0.20.3 from its own CDN, loaded on first use), each
 // sheet as tab-separated text. The sheet with the most rows is the default and the others stay one click away.
 let XLSXp = null;
@@ -6001,7 +6060,7 @@ async function viewNetwork(spId, q) {
           <label class="ctl" title="name color">Name color <input type="color" id="nw-lbcol" value="${S.lbcol}" aria-label="Name color"></label>
           <label class="ctl"><input type="checkbox" id="nw-nbord"${S.nbord ? ' checked' : ''}> protein border</label>
           <label class="ctl" title="outline each community and name it on the drawing"><input type="checkbox" id="nw-hulls"${S.hulls ? ' checked' : ''}> community outlines</label>
-          <label class="ctl" title="the palette of the communities: the network, its outlines, the Communities list and the community chord. A color picked by hand in the Communities list stays">Community colors <select id="nw-pal">${Object.entries(PALETTES).map(([k, [l]]) => `<option value="${k}"${S.pal === k ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
+          <label class="ctl" title="the palette of the communities: the network, its outlines, the Communities list, the community chord and the matrix. A color picked by hand in the Communities list stays">Community colors <select id="nw-pal">${Object.entries(PALETTES).map(([k, [l]]) => `<option value="${k}"${S.pal === k ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
           <label class="ctl" title="draw only each protein's strongest pairs (a pair stays when it is among the strongest of either protein); 0 draws every pair. The communities are found on every pair">Strongest <input type="number" id="nw-topk" min="0" max="50" step="1" value="${S.topk}" style="width:52px"> pairs per protein</label>
           <label class="ctl" title="draw only the pairs inside a community"><input type="checkbox" id="nw-intra"${S.intra ? ' checked' : ''}> only pairs inside a community</label></div>
         <span class="optlab">Share</span><div class="controls"><button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-copyids" type="button" title="copy every protein in this network (yours and the added partners), comma separated">Copy proteins</button><button class="btn" id="nw-useids" type="button" title="put every protein in this network into the input box and draw it again as the proteins-of-interest">Use as input</button><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button>
@@ -6401,11 +6460,13 @@ async function viewNetwork(spId, q) {
   // The drawn proteins as a matrix, apart from the network's cutoff: every folded pair colored by its best iLIS on one scale
   // (below 10% FPR from the index of tested pairs); never folded white. Without the index (or with a screen filter) only the
   // edge table's pairs at >= 10% FPR are known, and the rest stay blank. Rows follow the grouping.
-  async function heatmap(nodes, links, gk, groups, gname2, deg) {
-    heatArgs = [nodes, links, gk, groups, gname2, deg];
+  async function heatmap(nodes, links, gk, groups, gname2, deg, gmetaFn = null) {
+    heatArgs = [nodes, links, gk, groups, gname2, deg, gmetaFn];
     const wrap = $('#nw-heat-wrap'), box = $('#nw-heat'), n = nodes.length; wrap.hidden = n < 2; if (n < 2) return;
     const gi = (d) => { const x = groups.indexOf(gk.get(d.id)); return x < 0 ? groups.length : x; };
     const ord = [...nodes].sort((a, b) => (gi(a) - gi(b)) || (b.q - a.q) || ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || a.row.gene.localeCompare(b.row.gene));
+    const gmeta = typeof gmetaFn === 'function' ? gmetaFn() : Array.isArray(gmetaFn) ? gmetaFn : [];
+    const { spans, byRow } = heatSpans(ord, gi, gmeta), hasC = spans.length > 0;
     const M = new Map(), key = (a, b) => (a < b ? a + ',' + b : b + ',' + a);
     for (const l of links) { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; M.set(key(a, b), l); }
     const hk = ord.map((d) => d.id).sort((a, b) => a - b).join(','), run = ++heatRun;   // the matrix marks folded pairs: those of these proteins, one read per list (Show and the colors draw again)
@@ -6413,6 +6474,7 @@ async function viewNetwork(spId, q) {
       const T = ord.filter((d) => d.q).length >= 3 ? await tested(sp).catch(() => null) : await testedLookup(sp, ij).catch(() => null); heatTP = { key: T ? hk : '', TP: T }; if (run !== heatRun) return; }   // nothing read: tried again next time
     const gcount = new Map(); ord.forEach((d) => gcount.set(d.row.gene, (gcount.get(d.row.gene) || 0) + 1));
     const TP = S.set ? null : heatTP.TP, cut = cutV(), names = ord.map((d) => (gcount.get(d.row.gene) > 1 ? `${d.row.gene} (${d.row.key})` : d.row.gene));   // two proteins with one symbol (two accessions) keep their own rows
+    const nmTag = (k) => names[k] + (byRow[k] ? ` (${byRow[k].short})` : '');
     const minV = FPRSHOW($('#nw-heat-show').value), E0 = EB;   // the matrix: every pair in the edge table (the screen's, with a filter), apart from the network's cutoff
     const pairOf = (a, b) => { const e = E0 && (E0.adj.get(a) || new Map()).get(b); if (e) return { v: e.best, ip: e.iptm, exact: true };
       const l = M.get(key(a, b)); if (l) return { v: l.best, ip: l.iptm, exact: true };
@@ -6421,33 +6483,36 @@ async function viewNetwork(spId, q) {
     for (let i = 0; i < n; i++) { const ri = [], rt = [];
       for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, q = pairOf(a, b), v = q && Number.isFinite(q.v) ? q.v : null;
         ri.push(v != null && v >= minV ? v : null);
-        rt.push(`${names[i]} × ${i === j ? 'itself' : names[j]}<br>${!q ? 'never folded in these screens' : v == null ? (TP ? 'folded' : `below 10% FPR or not folded${S.set ? ' in this screen' : ''}`) : `best iLIS ${q.exact ? v.toFixed(3) : '≈' + v.toFixed(2)}${Number.isFinite(q.ip) ? ` · ipTM ${q.ip.toFixed(2)}` : ''}${v >= CUT[1] ? ' · 1% FPR' : v >= CUT[5] ? ' · 5% FPR' : v >= CUT[10] ? ' · 10% FPR' : ''}`}`);
+        rt.push(`${nmTag(i)} × ${i === j ? 'itself' : nmTag(j)}<br>${!q ? 'never folded in these screens' : v == null ? (TP ? 'folded' : `below 10% FPR or not folded${S.set ? ' in this screen' : ''}`) : `best iLIS ${q.exact ? v.toFixed(3) : '≈' + v.toFixed(2)}${Number.isFinite(q.ip) ? ` · ipTM ${q.ip.toFixed(2)}` : ''}${v >= CUT[1] ? ' · 1% FPR' : v >= CUT[5] ? ' · 5% FPR' : v >= CUT[10] ? ' · 10% FPR' : ''}`}`);
         if (j > i) { if (!q) never++; else if (v != null && v >= CUT[10]) past++; else folded++; } }
       zi.push(ri); tx.push(rt); }
     $('#nw-heat-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} of ${fmtInt(n * (n - 1) / 2)} pair${plS(n * (n - 1) / 2)} past 10% FPR` + (!TP ? (S.set ? ' in this screen' : '') : ` · ${fmtInt(folded)} folded below it`) + (TP ? ` · ${fmtInt(never)} never folded` : '');
     $('#nw-heat-key').innerHTML = `<span class="muted">${!TP ? `only pairs past 10% FPR are listed${S.set ? ' for this screen' : ''}; the others are blank` : "every folded pair on one scale, whatever the network's cutoff"}</span>${TP ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>never folded</span>' : ''}${minV ? `<span class="muted">showing ≥ ${minV}</span>` : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
     let P; try { P = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
     if (!zi.some((r) => r.some((x) => x != null))) { P.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to ${esc($('#nw-heat-show').options[0].text)}.</div>`; return; }
-    const shapes = []; ord.forEach((d, k) => { if (k && gi(d) !== gi(ord[k - 1])) for (const s of [{ x0: k - 0.5, x1: k - 0.5, y0: -0.5, y1: n - 0.5 }, { y0: k - 0.5, y1: k - 0.5, x0: -0.5, x1: n - 0.5 }]) shapes.push({ type: 'line', ...s, line: { color: '#5B6573', width: 1 } }); });
-    const ticksIn = (lo, hi) => {   // at most 60 row names at a time, spread over what is shown (every name once they fit): a label per row costs ~10x on every zoom and pan
-      const a = Math.max(0, Math.ceil(Math.min(lo, hi))), z = Math.min(n - 1, Math.floor(Math.max(lo, hi))), step = Math.max(1, Math.ceil((z - a + 1) / 60)), tv = [];
+    const ticksIn = (lo, hi) => {   // at most 80 row names at a time, spread over what is shown (every name once they fit): a label per row costs ~10x on every zoom and pan
+      const a = Math.max(0, Math.ceil(Math.min(lo, hi))), z = Math.min(n - 1, Math.floor(Math.max(lo, hi))), step = Math.max(1, Math.ceil((z - a + 1) / 80)), tv = [];
       for (let k = a; k <= z; k += step) tv.push(k); return { tickvals: tv, ticktext: tv.map((k) => names[k]) }; };
     const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
     const cs = $('#nw-heat-cs').value || 'Blues';
     if (box.querySelector(':scope > .empty')) box.innerHTML = '';
-    P.react(box, [
+    const ov0 = heatOverlay(box, n, spans);
+    await P.react(box, [
       { type: 'heatmap', z: zi, x: [...names.keys()], y: [...names.keys()], text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0(cs), zmin: 0, zmax: 0.85, colorbar: heatBar(box), xgap: 1, ygap: 1, hoverongaps: false }],   // axes by row number, names as labels: a repeated name never merges two rows, and every row is labeled
-      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: heatMargin(box), plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes,
-        xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain', tickmode: 'array', ...ticksIn(-0.5, n - 0.5), range: [-0.5, n - 0.5], zeroline: false },
-        yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x', tickmode: 'array', ...ticksIn(-0.5, n - 0.5), zeroline: false }, dragmode: 'zoom' },
+      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: heatMargin(box, hasC), plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes: ov0.shapes, annotations: ov0.annotations,
+        xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain', tickmode: 'array', ...ticksIn(-0.5, n - 0.5), range: [-0.5, n - 0.5], zeroline: false, ...(hasC ? { ticks: 'outside', ticklen: 20, tickcolor: 'rgba(0,0,0,0)' } : {}) },
+        yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x', tickmode: 'array', ...ticksIn(-0.5, n - 0.5), zeroline: false, ...(hasC ? { ticks: 'outside', ticklen: 26, tickcolor: 'rgba(0,0,0,0)' } : {}) }, dragmode: 'zoom' },
       { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: `atlas_${sp.id}_matrix`, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
+    if (hasC) { const ov1 = heatOverlay(box, n, spans); if (ov1.sig !== ov0.sig) await P.relayout(box, { shapes: ov1.shapes, annotations: ov1.annotations }); heatCommKey(spans, $('#nw-heat-key'), P, box, n); } else box.__commSync = null;
     box.removeAllListeners && box.removeAllListeners('plotly_click'); box.removeAllListeners && box.removeAllListeners('plotly_relayout');
     box.on('plotly_relayout', (ev) => {   // zoomed in, the labels grow with the room each one has (6 to 14 px)
-      if (!Object.keys(ev).some((k) => /^[xy]axis\.(range|autorange)/.test(k))) return;   // a zoom or pan, not this handler's own label update
+      if (!Object.keys(ev).some((k) => /^[xy]axis\.(range|autorange)/.test(k) || k === 'autosize' || k === 'width')) return;   // a zoom or pan, not this handler's own label update
       const fl = box._fullLayout, xr = (fl && fl.xaxis.range) || [-0.5, n - 0.5], yr = (fl && fl.yaxis.range) || [n - 0.5, -0.5];   // each axis labels the rows it shows (a zoom box need not be square)
-      const shown = Math.max(1, Math.min(Math.abs(xr[1] - xr[0]), Math.abs(yr[1] - yr[0]))), f = Math.max(6, Math.min(14, 520 / shown)), tx = ticksIn(xr[0], xr[1]), ty = ticksIn(yr[0], yr[1]);
-      box.__tick = f; P.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f, 'xaxis.tickvals': tx.tickvals, 'xaxis.ticktext': tx.ticktext, 'yaxis.tickvals': ty.tickvals, 'yaxis.ticktext': ty.ticktext }); });
-    box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`, e2 = ev.event || {}; window.open(u, '_blank'); });
+      const shown = Math.max(1, Math.min(Math.abs(xr[1] - xr[0]), Math.abs(yr[1] - yr[0]))), f = Math.max(6, Math.min(14, 520 / shown)), tx = ticksIn(xr[0], xr[1]), ty = ticksIn(yr[0], yr[1]), ov = heatOverlay(box, n, spans, xr, yr);
+      box.__tick = f; if (box.__commSync) box.__commSync();
+      P.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f, 'xaxis.tickvals': tx.tickvals, 'xaxis.ticktext': tx.ticktext, 'yaxis.tickvals': ty.tickvals, 'yaxis.ticktext': ty.ticktext, ...(hasC ? { shapes: ov.shapes, annotations: ov.annotations } : {}) }).then(() => {
+        if (!hasC) return; const ov2 = heatOverlay(box, n, spans, xr, yr); if (ov2.sig !== ov.sig) P.relayout(box, { shapes: ov2.shapes, annotations: ov2.annotations }); }); });
+    box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`; window.open(u, '_blank'); });
   }
   function graph(nodes, links, extra = [], seed = null, xo = [], XO = null) {
     const box = $('#nw-net'); box.innerHTML = '<svg></svg>'; if (!seed) GC.clear();   // communities are found again: picked colors start over (a click that adds partners keeps them)
@@ -6604,7 +6669,7 @@ async function viewNetwork(spId, q) {
     };
     // the community colors changed (a palette, a hand pick): every place that shows them, nothing moves
     const paintGroups = (list = true) => { recolor(); hulls.select('path').attr('fill', (k, n) => GCOL(n)).attr('stroke', (k, n) => GCOL(n));
-      hullTxt.each(function (k, n) { d3.select(this).select('tspan').attr('fill', GCOL(n)); }); if (list) mods(); paintChord(true); };
+      hullTxt.each(function (k, n) { d3.select(this).select('tspan').attr('fill', GCOL(n)); }); if (list) mods(); paintChord(true); if (heatSeen && heatArgs) heatmap(...heatArgs); };
     mods();
     const placeLabels = liftLabels(g, node);
     hullLabG.raise();   // group names above the protein-name layer too
@@ -6676,7 +6741,8 @@ async function viewNetwork(spId, q) {
         edges: links.map((l) => ({ a: ix.get(typeof l.source === 'object' ? l.source.id : l.source), b: ix.get(typeof l.target === 'object' ? l.target.id : l.target), w: l.best })).filter((e) => e.a != null && e.b != null && Number.isFinite(e.w)) }, keep);
     }
     paintChord(); net.repaint = paintGroups; net.hl = hl;
-    heatArgs = [nodes, links, gk, groups, gname2, deg]; $('#nw-heat-wrap').hidden = nodes.length < 2; if (heatSeen) heatmap(...heatArgs);   // the matrix (Plotly, 1 MB) draws once its card is near the viewport
+    const heatMeta = () => { const cat = S.grp.startsWith('col:'); return groups.map((k, n) => ({ name: gname2.get(k) || String(k), short: cat ? String(gname2.get(k) || k) : `C${CI[n] + 1}`, color: GCOL(n) })); };
+    heatArgs = [nodes, links, gk, groups, gname2, deg, heatMeta]; $('#nw-heat-wrap').hidden = nodes.length < 2; if (heatSeen) heatmap(...heatArgs);   // the matrix (Plotly, 1 MB) draws once its card is near the viewport
   }
   $('#nw-go').onclick = () => draw();
   $('#nw-eg').onclick = (e) => { e.preventDefault(); $('#nw-ids').value = eg; $('#nw-ids').dispatchEvent(new Event('input', { bubbles: true })); S.autoPick = true; draw(); };   // the suggested proteins, drawn
