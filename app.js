@@ -544,7 +544,7 @@ async function edges(sp, setId = '') {   // setId: that thematic set's edges (sa
       if (!memo.has(v)) { if (memo.size > 2000) memo.delete(memo.keys().next().value); const m = new Map();   // the oldest goes, not the whole cache: a tree search revisits proteins
         for (let x = off[v]; x < off[v + 1]; x++) m.set(nb[x], { best: best[x] / 1000, avg: avg[x] >= 0 ? avg[x] / 1000 : NaN, src: src[x], iptm: ipt[x] >= 0 ? ipt[x] / 100 : NaN, ipta: ipa[x] >= 0 ? ipa[x] / 100 : NaN }); memo.set(v, m); }
       return memo.get(v); } };
-    return { adj };
+    return { adj, csr: { off, nb, best, ipt } };
   })().catch((e) => { sp.edgesBy.delete(setId); throw e; }));   // a failed read is not kept: the next draw tries again
   return sp.edgesBy.get(setId);
 }
@@ -2176,9 +2176,22 @@ async function viewDataset(dsId) {   // one screen: what it is, its counts and f
 }
 
 /* ── protein page: LIVIA cLIP, natively, over every screen, with a partner overview, a network and a partner table ── */
-let CLIPW = null, clipSeq = 0; const clipWait = new Map();
+let CLIPW = null, clipSeq = 0, ATLAS_WASM_P = null; const clipWait = new Map();
+function ensureAtlasWasm() {
+  if (window.LiviaWasm) return window.LiviaWasm.ready();
+  if (!ATLAS_WASM_P) {
+    ATLAS_WASM_P = new Promise((res) => {
+      const s = document.createElement('script');
+      s.src = 'livia-wasm.js?v=20261115a';
+      s.onload = () => { if (!window.LiviaWasm) ATLAS_WASM_P = null; (window.LiviaWasm ? window.LiviaWasm.ready() : Promise.resolve(false)).then(res); };
+      s.onerror = () => { s.remove(); ATLAS_WASM_P = null; res(false); };
+      document.head.appendChild(s);
+    });
+  }
+  return ATLAS_WASM_P;
+}
 function runClip(rows, gene, cut, progress = null) {   // progress({ n, pairs, thinned }): what the worker is about to cluster
-  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20261006a'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (!w) return;
+  if (!CLIPW) { CLIPW = new Worker('clipworker.js?v=20261115a'); CLIPW.onmessage = (e) => { const w = clipWait.get(e.data.id); if (!w) return;
     if (e.data.stage) { if (w.progress) w.progress(e.data); return; }
     clipWait.delete(e.data.id); e.data.ok ? w.resolve(e.data) : w.reject(new Error(e.data.message)); }; }
   const id = ++clipSeq;
@@ -2230,7 +2243,7 @@ const HOMO_RING = '#111111';   // a black ring (community colors include red) ar
 const homoKey = (n) => `<span><i style="background:#fff;border:3px solid ${HOMO_RING};border-radius:50%;box-sizing:border-box"></i>predicted homodimer${n == null ? '' : ` (${fmtInt(n)})`}</span>`;
 // A seeded random number generator (mulberry32): the same seed gives the same numbers, so a seeded layout or community run
 // repeats exactly. Callers treat seed 0 as no randomness at all (the fixed order or start they always had).
-const seededRandom = (seed) => { let a = seed >>> 0; return () => { a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; };
+const seededRandom = (seed) => { let a = seed >>> 0, calls = 0; const fn = () => { calls++; a = (a + 0x6D2B79F5) | 0; let t = Math.imul(a ^ (a >>> 15), 1 | a); t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t; return ((t ^ (t >>> 14)) >>> 0) / 4294967296; }; fn._seed = seed >>> 0; fn._fresh = () => calls === 0; return fn; };
 let V3D_URL = null;   // the protein page's Mol* page, kept to be freed when the next one is made
 let MONO_URLS = [];   // the pair page's two Mol* pages, freed when the next pair page is drawn
 const SIMS = {};   // the running force layout of each network view: a redraw or a new page stops the old one instead of letting it tick on detached nodes
@@ -2336,6 +2349,10 @@ function louvain(n, edges, gamma = 1, rand = null) {
 // with a resolution (higher: more, smaller communities). Deterministic like louvain(): nodes in index order (or a seeded
 // order with rand), and the refinement merges each node into its best well-connected part rather than a random one.
 function leiden(n, edges, gamma = 1, rand = null) {
+  if (window.LiviaWasm && window.LiviaWasm.isReady() && (rand === null || (rand._seed != null && rand._fresh && rand._fresh()))) {
+    const wOut = window.LiviaWasm.leidenAtlas(n, edges, gamma, rand ? rand._seed : 0);
+    if (wOut) return wOut;
+  }
   let N = n, E = edges.map(([u, v, w]) => [u, v, w]), P = [...Array(n).keys()];
   const member = [...Array(n).keys()].map((i) => [i]);
   for (let level = 0; level < 20; level++) {
@@ -5751,7 +5768,7 @@ async function yoursClipRows(Y, P, CQ, qSeq) {
 // the reader has takes its iLIS and ipTM, with no screen (src 0). Every reader of E.adj (tree, top partners, significance) sees both.
 function withYours(E0, Y) {
   const memo = new Map();
-  return { ...E0, adj: { get(v) { const mu = Y.adj.get(v); if (!mu) return E0.adj.get(v);
+  return { ...E0, csr: null, adj: { get(v) { const mu = Y.adj.get(v); if (!mu) return E0.adj.get(v);
     if (!memo.has(v)) { const m = new Map(E0.adj.get(v) || []); for (const [j, u] of mu) { const e = m.get(j); m.set(j, e ? { ...e, u } : { best: u.best, avg: NaN, src: 0, iptm: u.iptm, ipta: NaN, u, uonly: true }); } memo.set(v, m); }
     return memo.get(v); } } };
 }
@@ -6154,7 +6171,32 @@ async function viewNetwork(spId, q) {
   // at the highest prize, each step takes the protein whose prize most outweighs its path, and stops when none does (a prize-collecting
   // tree, as Omics Integrator builds). Deterministic: ties go to the lower index.
   function steinerAdd(Q, keep, E, CAP) {
-    const prize = prizes(Q), inT = new Set(), terms = new Set(Q), qn = (i) => { let k = 0; for (const [j, e] of E.adj.get(i) || []) if (j !== i && Q.has(j) && passE(e)) k++; return k; };
+    const prize = prizes(Q);
+    if (window.LiviaWasm && window.LiviaWasm.isReady() && E.csr) {
+      const termsArr = [...Q];
+      const prizesArr = prize ? termsArr.map((t) => prize.get(t)) : [];
+      const { off, nb: cNb, best: cBest, ipt: cIpt } = E.csr, N0 = sp.rows.length;
+      let mCnt = 0;
+      for (let x = 0, xm = cNb.length; x < xm; x++) {
+        const b = cBest[x] / 1000, ip = cIpt[x] >= 0 ? cIpt[x] / 100 : NaN;
+        if (passS(b, ip)) mCnt++;
+      }
+      const flatE = new Float64Array(mCnt * 3);
+      let pos = 0;
+      for (let u = 0; u < N0; u++) {
+        for (let x = off[u], xe = off[u + 1]; x < xe; x++) {
+          const b = cBest[x] / 1000, ip = cIpt[x] >= 0 ? cIpt[x] / 100 : NaN;
+          if (passS(b, ip)) { flatE[pos++] = u; flatE[pos++] = cNb[x]; flatE[pos++] = b; }
+        }
+      }
+      const wRes = window.LiviaWasm.steinerAdd(N0, flatE, termsArr, prizesArr, CAP, true);
+      if (wRes) {
+        const inT = new Set(wRes.nodes);
+        for (const u of inT) keep.add(u);
+        return { joined: wRes.joined, of: Q.size, added: wRes.nodes.filter((u) => !Q.has(u)).length, cost: wRes.cost, prize: !!prize, nodes: inT };
+      }
+    }
+    const inT = new Set(), terms = new Set(Q), qn = (i) => { let k = 0; for (const [j, e] of E.adj.get(i) || []) if (j !== i && Q.has(j) && passE(e)) k++; return k; };
     const start = [...Q].sort((a, b) => (prize ? prize.get(b) - prize.get(a) : qn(b) - qn(a)) || a - b)[0]; inT.add(start); terms.delete(start);
     let cost = 0, joined = 1;
     while (terms.size && inT.size < CAP) {
@@ -6941,9 +6983,9 @@ async function route() {
       if (parts.length !== 2 || !(await regSpecies(spId))) {   // the header's tab (no species): the species last shown, else the first species
         location.replace(`#/${tool}/${NET_SP || (coreSpecies(REG)[0] || {}).id || 'human'}${q.toString() ? `?${q}` : ''}`); return;
       }
-      NET_SP = spId; await (tool === 'network' ? viewNetwork : tool === 'pairs' ? viewPairs : viewNested)(spId, q);
+      NET_SP = spId; if (tool === 'network') await ensureAtlasWasm(); await (tool === 'network' ? viewNetwork : tool === 'pairs' ? viewPairs : viewNested)(spId, q);
     }
-    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (['network', 'pairs', 'nested', 'homodimers'].includes(parts[1]) && parts.length === 2) { location.replace(`#/${parts[1]}/${parts[0]}${q.toString() ? `?${q}` : ''}`); return; } else if (parts[1] === 'taxon' && parts.length === 3) await viewVirus(parts[0], parts[2]); else if (parts.length === 2) await viewProtein(parts[0], parts[1], setId, q.get('iso')); else await viewPair(parts[0], parts[1], parts[2], setId); }
+    else if (await regSpecies(parts[0])) { NET_SP = parts[0]; if (parts.length === 1) await viewSpecies(parts[0]); else if (['network', 'pairs', 'nested', 'homodimers'].includes(parts[1]) && parts.length === 2) { location.replace(`#/${parts[1]}/${parts[0]}${q.toString() ? `?${q}` : ''}`); return; } else if (parts[1] === 'taxon' && parts.length === 3) { await ensureAtlasWasm(); await viewVirus(parts[0], parts[2]); } else if (parts.length === 2) { await ensureAtlasWasm(); await viewProtein(parts[0], parts[1], setId, q.get('iso')); } else await viewPair(parts[0], parts[1], parts[2], setId); }
     else if (await regDataset(parts[0])) {   // links from before the species pages: #/<screen>/<name>[/<name>]
       const d = await regDataset(parts[0]);
       if (parts.length === 1 || !d.species) { location.replace(`#/datasets/${d.id}`); return; }

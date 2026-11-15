@@ -10,18 +10,21 @@
 // the pairs with the highest iLIS; the residue frequency and the sites then count pairs, not models.
 // Input: lis.py rows as objects (header → value), already merged across screens and named "<query>___<partner>".
 // Messages back: { id, stage: 'clustering', n, pairs, thinned } while it runs, then { id, ok: true, … }.
-const LIMIT = 4000;
+const LIMIT_JS = 4000;
+const LIMIT_WASM = 12000;
 let loaded = false;
 self.onmessage = (ev) => {
   const { id, livia, rows, gene, cut } = ev.data;
   try {
-    if (!loaded) { importScripts(livia + 'js/clip-pipeline.js?v=20261006a', livia + 'js/clip-clustering.js', 'clipfast.js?v=20261002a'); loaded = true; }
+    if (!loaded) { importScripts('livia-wasm.js?v=20261115a', livia + 'js/clip-pipeline.js?v=20261006a', livia + 'js/clip-clustering.js?v=20261115a', 'clipfast.js?v=20261002a'); loaded = true; }
+    const hasWasm = typeof LiviaWasm === 'object' && LiviaWasm && LiviaWasm.isReady();
+    const limit = hasWasm ? LIMIT_WASM : LIMIT_JS;
     let use = rows, thinned = null;
     const pairs = (rs) => new Set(rs.map((r) => r.name)).size;
-    if (rows.length > LIMIT) {   // one model per pair: its top-ranked model among those that pass (ranks start at 1, or at 0 for AlphaFold 3 output)
+    if (rows.length > limit) {   // one model per pair: its top-ranked model among those that pass (ranks start at 1, or at 0 for AlphaFold 3 output)
       const minRank = new Map(); for (const r of rows) { const k = +r.rank; if (!minRank.has(r.name) || k < minRank.get(r.name)) minRank.set(r.name, k); }
       use = rows.filter((r) => +r.rank === minRank.get(r.name)); thinned = { from: rows.length, how: 'rank1', pairs: pairs(use) };
-      if (use.length > LIMIT) { use = [...use].sort((a, b) => +b.iLIS - +a.iLIS).slice(0, LIMIT); thinned.how = 'top'; thinned.pairs = pairs(use); }
+      if (use.length > limit) { use = [...use].sort((a, b) => +b.iLIS - +a.iLIS).slice(0, limit); thinned.how = 'top'; thinned.pairs = pairs(use); }
       thinned.to = use.length;
     }
     const pipe = CLIPPipeline.runPipelineRows(CLIPPipeline.convertRows(use), gene, { ilisCutoff: cut, topN: Infinity, sortBy: 'iLIS' });
@@ -29,12 +32,20 @@ self.onmessage = (ev) => {
     self.postMessage({ id, stage: 'clustering', n, pairs: pairs(pipe.rows), thinned });
     let k = n ? 1 : 0, labels = n ? [1] : [], Z = [], order = n ? [0] : [];
     if (n >= 2) {
-      const D = CLIPFast.cosineDistMatrix(pipe.fingerprints);
-      Z = CLIPFast.averageLinkage(D, n);
-      const optimalK = CLIPCluster.findOptimalK(Z, D, n, 30, 0.05), raw = CLIPCluster.fcluster(Z, n, optimalK);
-      const cnt = {}; for (const l of raw) cnt[l] = (cnt[l] || 0) + 1;
-      const remap = {}; Object.keys(cnt).map(Number).sort((x, y) => cnt[y] - cnt[x] || x - y).forEach((old, i) => { remap[old] = i + 1; });
-      k = optimalK; labels = raw.map((l) => remap[l]); order = CLIPCluster.leafOrder(Z, n);
+      const wRes = hasWasm ? LiviaWasm.clipFromFingerprints(pipe.fingerprints, 30, 0.05) : null;
+      if (wRes) {
+        k = wRes.optimalK;
+        labels = wRes.labels;
+        Z = wRes.linkage;
+        order = wRes.order;
+      } else {
+        const D = CLIPFast.cosineDistMatrix(pipe.fingerprints);
+        Z = CLIPFast.averageLinkage(D, n);
+        const optimalK = CLIPCluster.findOptimalK(Z, D, n, 30, 0.05), raw = CLIPCluster.fcluster(Z, n, optimalK);
+        const cnt = {}; for (const l of raw) cnt[l] = (cnt[l] || 0) + 1;
+        const remap = {}; Object.keys(cnt).map(Number).sort((x, y) => cnt[y] - cnt[x] || x - y).forEach((old, i) => { remap[old] = i + 1; });
+        k = optimalK; labels = raw.map((l) => remap[l]); order = CLIPCluster.leafOrder(Z, n);
+      }
     }
     self.postMessage({ id, ok: true, k, labels, order, Z, plen: pipe.proteinLen, fingerprints: pipe.fingerprints, thinned,
       preds: pipe.rows.map((r) => ({ partner: String(r.Symbol_2), rank: +r.Rank, iLIS: +r.iLIS })) });
