@@ -864,3 +864,25 @@ a[data-m3d] { white-space: nowrap; }
 .ref-cov { font-size: 13px; margin: 2px 0 8px; }
 .ref-more > summary { cursor: pointer; font-size: 13.5px; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
 .reflist .sets td:nth-child(2) { min-width: 140px; }
+/* Pair matrix: multi-select community filter and cross-community pair summary */
+.hm-comm { margin: 8px 0 6px; display: flex; flex-direction: column; gap: 7px; }
+.hm-comm[hidden] { display: none; }
+.hm-bar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12.5px; }
+.hm-pill { display: inline-flex; align-items: center; gap: 5px; font: 500 12.5px var(--sans); padding: 4px 9px; border-radius: 7px; border: 1px solid var(--line); background: #fff; color: var(--ink-2); cursor: pointer; transition: background .12s, border-color .12s, box-shadow .12s; }
+.hm-pill:hover { border-color: #9FB0C3; color: var(--ink); }
+.hm-pill.on { background: #EDF3FA; border-color: var(--navy); color: var(--ink); font-weight: 600; box-shadow: inset 0 0 0 1px rgba(26, 82, 118, 0.18); }
+.hm-pill i { display: inline-block; width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.hm-pill .cnt { color: var(--ink-3); font-variant-numeric: tabular-nums; font-weight: 400; }
+.hm-mode { margin-left: 4px; }
+.hm-mode button { font-size: 12px; padding: 4px 9px; }
+.hm-act { font: 500 12px var(--sans); padding: 4px 9px; border-radius: 7px; border: 1px solid var(--line); background: #fff; color: var(--ink-2); cursor: pointer; }
+.hm-act:hover { border-color: var(--blue); color: var(--blue); }
+.hm-more { font: 500 12px var(--sans); color: var(--blue); background: none; border: 0; padding: 0 3px; cursor: pointer; }
+.hm-more:hover { text-decoration: underline; }
+.hm-xsum { background: #F7F9FC; border: 1px solid var(--line-2); border-radius: 8px; padding: 8px 11px; font-size: 12.5px; line-height: 1.55; color: var(--ink-2); display: flex; flex-direction: column; gap: 4px; }
+.hm-xrow { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: baseline; }
+.hm-xpair { display: inline-flex; align-items: center; gap: 4px; font-weight: 600; color: var(--ink); }
+.hm-xpair i { display: inline-block; width: 9px; height: 9px; border-radius: 2px; }
+.hm-xlink { display: inline-flex; gap: 4px; align-items: baseline; padding: 1px 6px; border-radius: 5px; background: #fff; border: 1px solid var(--line-2); text-decoration: none; color: var(--ink); font-size: 12px; }
+.hm-xlink:hover { border-color: var(--blue); color: var(--blue); }
+.hm-xlink .num { color: var(--ink-3); font-family: var(--mono); font-size: 11.5px; }

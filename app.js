@@ -5041,8 +5041,8 @@ async function viewVirus(spId, taxid) {
       <div class="nw-stats" id="vn-stats"></div>
       <div class="nw-body"><div class="net" id="vn-net"></div><aside class="nw-mods" id="vn-mods" hidden aria-label="Communities"></aside></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div>
       <div id="vn-chord-wrap" hidden><div class="cc-head"><h3>Community chord</h3><div class="muted">The pairs between communities, around one circle, as on the network builder.</div></div><div id="vn-chord"></div></div></div>
-    <div class="card" id="vm-card"><div class="card-head"><h2>Pairs as a matrix <span class="muted" id="vm-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="the matrix shows every pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="vm-show"><option value="all">every pair</option><option value="10">past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label><label class="ctl">Colors <select id="vm-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
-      <div id="vm-heat" style="width:100%"></div><div class="legend" id="vm-key"></div></div>
+    <div class="card" id="vm-card"><div class="card-head"><h2>Pairs as a matrix <span class="muted" id="vm-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="the matrix shows every pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="vm-show"><option value="all">every pair</option><option value="10">past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label><label class="ctl">Colors <select id="vm-cs">${['Viridis', 'Blues', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
+      <div id="vm-comm" class="hm-comm" hidden></div><div id="vm-heat" style="width:100%"></div><div class="legend" id="vm-key"></div></div>
     <div class="card"><div class="card-head"><h2>Pairs <span class="muted" id="vp-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="list each protein's pair with itself as well"><input type="checkbox" id="vp-homo"> Homodimers</label><input type="search" id="vp-find" placeholder="Filter pairs" aria-label="Filter pairs by protein" style="width:170px"><button class="btn" id="vp-csv" type="button">↓ CSV</button></div></div>
       <p class="legend-text">iLIS and ipTM are colored by the false-positive-rate band they pass, each by its own benchmarked cutoffs (every cutoff is on the About page).</p><div class="legend" style="margin:0 0 10px">
         ${[1, 5, 10, 0].map((f) => `<span><i style="background:${BAND[f]}"></i>${f ? f + '% FPR' : 'below 10% FPR'}</span>`).join('')}<span class="muted">Click a column to sort.</span></div>
@@ -5160,41 +5160,22 @@ async function viewVirus(spId, taxid) {
     const box = $('#vm-heat'), n = nodes.length; if (n < 2) { $('#vm-card').hidden = true; return; }
     const ord = [...nodes].sort((a, b) => (grp(a) - grp(b)) || ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || R(a.id).gene.localeCompare(R(b.id).gene));
     const names = ord.map((d) => lab(d.row) + (ord.filter((x) => lab(x.row) === lab(d.row)).length > 1 ? ` (${d.row.key})` : '')), M = new Map();
-    const { spans, byRow } = heatSpans(ord, grp, gmeta), hasC = spans.length > 0, nmTag = (k) => names[k] + (byRow[k] ? ` (${byRow[k].short})` : '');
+    const { spans, byRow } = heatSpans(ord, grp, gmeta), nmTag = (k) => names[k] + (byRow[k] ? ` (${byRow[k].short})` : '');
     for (const x of P) M.set(x.a < x.b ? x.a + ',' + x.b : x.b + ',' + x.a, x);
     const TP = await tested(sp), minV = FPRSHOW($('#vm-show').value);   // below 10% FPR: the index of every folded pair, with its score
-    const zi = [], tx = []; let past = 0, below = 0, miss = 0, homo = 0;
-    for (let i = 0; i < n; i++) { const ri = [], rt = [];
+    const zv = [], tx = []; let past = 0, below = 0, miss = 0, homo = 0;
+    for (let i = 0; i < n; i++) { const rv = [], rt = [];
       for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, x = M.get(a < b ? a + ',' + b : b + ',' + a), f = !x && TP ? TP.has(a, b) : !x ? null : true;
         const v = x ? x.best : TP && f ? Math.min(TP.score(a, b), CUT[10] - 0.001) : null;   // not in the edge table: below the cutoff, whatever the 1-byte rounding
-        ri.push(v != null && Number.isFinite(v) && v >= minV ? v : null);
+        rv.push(v != null && Number.isFinite(v) ? v : null);
         rt.push(`${nmTag(i)} × ${i === j ? 'itself' : nmTag(j)}<br>${x ? `iLIS ${x.best.toFixed(3)}${Number.isFinite(x.iptm) ? ` · ipTM ${x.iptm.toFixed(2)}` : ''}` : v != null ? `iLIS ≈${v.toFixed(2)}` : TP ? 'not folded in the release' : 'below 10% FPR'}`);
         if (j >= i) { if (i === j && v != null && v >= CUT[10]) homo++; else if (i !== j) { if (v != null && v >= CUT[10]) past++; else if (v != null) below++; else if (TP) miss++; } } }
-      zi.push(ri); tx.push(rt); }
+      zv.push(rv); tx.push(rt); }
     $('#vm-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} pair${plS(past)} and ${fmtInt(homo)} homodimer${plS(homo)} past 10% FPR` + (TP ? ` · ${fmtInt(below)} below it` : ' · the index of every pair did not load, so the pairs below it are blank') + (miss ? ` · ${fmtInt(miss)} not folded in the release` : '');
-    $('#vm-key').innerHTML = `<span class="muted">${TP ? 'every pair of the virus on one scale' : 'the pairs past 10% FPR'}, whatever the network's cutoff; the diagonal is the protein with itself</span>${miss ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>not folded in the release</span>' : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
+    const keyHtml = `<span class="muted">${TP ? 'every pair of the virus on one scale' : 'the pairs past 10% FPR'}, whatever the network's cutoff; the diagonal is the protein with itself</span>${miss ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>not folded in the release</span>' : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
+    $('#vm-key').innerHTML = keyHtml;
     let Pl; try { Pl = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
-    if (!zi.some((r) => r.some((x) => x != null))) { Pl.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to ${esc($('#vm-show').options[0].text)}.</div>`; return; }
-    const ticksIn = (lo, hi) => { const a = Math.max(0, Math.ceil(Math.min(lo, hi))), z = Math.min(n - 1, Math.floor(Math.max(lo, hi))), step = Math.max(1, Math.ceil((z - a + 1) / 80)), tv = [];
-      for (let k = a; k <= z; k += step) tv.push(k); return { tickvals: tv, ticktext: tv.map((k) => names[k]) }; };
-    const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
-    if (box.querySelector(':scope > .empty')) box.innerHTML = '';
-    const ov0 = heatOverlay(box, n, spans);
-    await Pl.react(box, [
-      { type: 'heatmap', z: zi, x: [...names.keys()], y: [...names.keys()], text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0($('#vm-cs').value), zmin: 0, zmax: 0.85, colorbar: heatBar(box), xgap: 1, ygap: 1, hoverongaps: false }],
-      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: heatMargin(box, hasC), plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes: ov0.shapes, annotations: ov0.annotations,
-        xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain', tickmode: 'array', ...ticksIn(-0.5, n - 0.5), range: [-0.5, n - 0.5], zeroline: false, ...(hasC ? { ticks: 'outside', ticklen: 20, tickcolor: 'rgba(0,0,0,0)' } : {}) },
-        yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x', tickmode: 'array', ...ticksIn(-0.5, n - 0.5), zeroline: false, ...(hasC ? { ticks: 'outside', ticklen: 26, tickcolor: 'rgba(0,0,0,0)' } : {}) }, dragmode: 'zoom' },
-      { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: `atlas_virus_${v.taxid}_matrix`, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
-    if (hasC) { const ov1 = heatOverlay(box, n, spans); if (ov1.sig !== ov0.sig) await Pl.relayout(box, { shapes: ov1.shapes, annotations: ov1.annotations }); heatCommKey(spans, $('#vm-key'), Pl, box, n); } else box.__commSync = null;
-    box.removeAllListeners && box.removeAllListeners('plotly_click'); box.removeAllListeners && box.removeAllListeners('plotly_relayout');
-    box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`; window.open(u, '_blank'); });
-    box.on('plotly_relayout', (ev) => { if (!Object.keys(ev).some((k) => /^[xy]axis\.(range|autorange)/.test(k) || k === 'autosize' || k === 'width')) return;
-      const fl = box._fullLayout, xr = (fl && fl.xaxis.range) || [-0.5, n - 0.5], yr = (fl && fl.yaxis.range) || [n - 0.5, -0.5];
-      const shown = Math.max(1, Math.min(Math.abs(xr[1] - xr[0]), Math.abs(yr[1] - yr[0]))), f = Math.max(6, Math.min(14, 520 / shown)), tx2 = ticksIn(xr[0], xr[1]), ty2 = ticksIn(yr[0], yr[1]), ov = heatOverlay(box, n, spans, xr, yr);
-      box.__tick = f; if (box.__commSync) box.__commSync();
-      Pl.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f, 'xaxis.tickvals': tx2.tickvals, 'xaxis.ticktext': tx2.ticktext, 'yaxis.tickvals': ty2.tickvals, 'yaxis.ticktext': ty2.ticktext, ...(hasC ? { shapes: ov.shapes, annotations: ov.annotations } : {}) }).then(() => {
-        if (!hasC) return; const ov2 = heatOverlay(box, n, spans, xr, yr); if (ov2.sig !== ov.sig) Pl.relayout(box, { shapes: ov2.shapes, annotations: ov2.annotations }); }); });
+    await renderHeatMatrix(Pl, { box, commEl: $('#vm-comm'), keyEl: $('#vm-key'), keyHtml, spId: sp.id, scopeKey: `v:${v.taxid}`, ord, names, spans, zv, tx, minV, cs: $('#vm-cs').value, fname: `atlas_virus_${v.taxid}_matrix`, showOpt0: $('#vm-show').options[0].text });
   }
   const vnum = (id, lo, hi, d) => { const x = parseFloat($(id).value); return Number.isFinite(x) ? Math.min(hi, Math.max(lo, x)) : d; };
   function vnDisp() { return { nsize: vnum('#vn-nsize', 0.3, 3, 1), ewid: vnum('#vn-ew', 0.2, 3, 1), lbdeg: vnum('#vn-lbdeg', 0, 50, 0), lbtop: vnum('#vn-lbtop', 0, 500, 0), lbsize: vnum('#vn-lbsize', 6, 24, 11),
@@ -5430,51 +5411,151 @@ const heatDark = (c) => { const x = d3.rgb(c), f = (u) => { u /= 255; return u <
 function heatSpans(ord, grpOf, gmeta) {   // contiguous community blocks along the ordered rows/columns of a pair matrix
   if (!gmeta || !gmeta.length || !ord.length) return { spans: [], byRow: ord.map(() => null) };
   const spans = [], byRow = ord.map((d) => { const g = grpOf(d); return g >= 0 && g < gmeta.length ? gmeta[g] : null; });
-  ord.forEach((d, k) => { const g = grpOf(d), prev = spans[spans.length - 1]; if (prev && prev.g === g) prev.e = k; else spans.push({ g, s: k, e: k, meta: g >= 0 && g < gmeta.length ? gmeta[g] : null }); });
+  ord.forEach((d, k) => { const g = grpOf(d), meta = g >= 0 && g < gmeta.length ? gmeta[g] : null, key = meta ? 'c:' + g : 'u', prev = spans[spans.length - 1];
+    if (prev && prev.key === key) prev.e = k; else spans.push({ key, g, s: k, e: k, meta }); });
   return { spans, byRow };
 }
-function heatOverlay(box, n, spans, xr = [-0.5, n - 0.5], yr = [n - 0.5, -0.5]) {   // community divider lines + top/left color strips & C1..Ck labels, clipped to the visible zoom range
-  if (!spans.length) return { shapes: [], annotations: [], sig: '' };
-  const fl = box._fullLayout, xa = fl && fl.xaxis, ya = fl && fl.yaxis, xd = (xa && xa.domain) || [0, 1], yd = (ya && ya.domain) || [0, 1];
-  const pw = Math.max(120, (xa && xa._length) || ((box.clientWidth || 800) - 220) * (xd[1] - xd[0])), ph = Math.max(120, (ya && ya._length) || pw);
-  const ux = (xd[1] - xd[0]) / pw, uy = (yd[1] - yd[0]) / ph, vx0 = Math.min(xr[0], xr[1]), vx1 = Math.max(xr[0], xr[1]), vy0 = Math.min(yr[0], yr[1]), vy1 = Math.max(yr[0], yr[1]);
-  const shapes = [], annotations = [], ty0 = yd[1] + 1.5 * uy, ty1 = yd[1] + 16.5 * uy, lx0 = xd[0] - 22.5 * ux, lx1 = xd[0] - 1.5 * ux;
-  for (const sp of spans) {
-    if (sp.s > 0) {
-      const k = sp.s - 0.5;
-      if (k > vx0 && k < vx1) shapes.push({ type: 'line', xref: 'x', yref: 'y', x0: k, x1: k, y0: vy0, y1: vy1, line: { color: '#5B6573', width: 1 } });
-      if (k > vy0 && k < vy1) shapes.push({ type: 'line', xref: 'x', yref: 'y', x0: vx0, x1: vx1, y0: k, y1: k, line: { color: '#5B6573', width: 1 } });
-    }
-    const col = sp.meta ? sp.meta.color : '#D5DCE4', fg = sp.meta && heatDark(col) ? '#FFFFFF' : '#17263A', lab = sp.meta ? String(sp.meta.short || '') : '';
+function heatOverlay(box, nx, ny, cSpans, rSpans, showLab = false, xr = [-0.5, nx - 0.5], yr = [ny - 0.5, -0.5]) {   // community divider lines + symmetric top/left color strips
+  if (!cSpans.length && !rSpans.length) return { shapes: [], annotations: [], sig: '' };
+  const fl = box._fullLayout, sz = fl && fl._size, xa = fl && fl.xaxis, ya = fl && fl.yaxis;
+  const sw = Math.max(120, (sz && sz.w) || ((box.clientWidth || 800) - 220)), sh = Math.max(120, (sz && sz.h) || sw);
+  const pw = Math.max(80, (xa && xa._length) || sw), ph = Math.max(80, (ya && ya._length) || sh);
+  const vx0 = Math.max(-0.5, Math.min(xr[0], xr[1])), vx1 = Math.min(nx - 0.5, Math.max(xr[0], xr[1]));
+  const vy0 = Math.max(-0.5, Math.min(yr[0], yr[1])), vy1 = Math.min(ny - 0.5, Math.max(yr[0], yr[1]));
+  const xPx = sz && xa && xa._offset != null && xa.c2p ? xa._offset + Math.max(0, xa.c2p(vx0)) : (sz ? sz.l : 0);
+  const yPx = sz && ya && ya._offset != null && ya.c2p ? ya._offset + Math.max(0, ya.c2p(vy0)) : (sz ? sz.t : 0);
+  const x0Cell = sz ? (xPx - sz.l) / sw : 0, y1Cell = sz ? 1 - (yPx - sz.t) / sh : 1;
+  const ux = 1 / sw, uy = 1 / sh, barPx = showLab ? 16 : 11, gapPx = 2;
+  const shapes = [], annotations = [], ty0 = y1Cell + gapPx * uy, ty1 = y1Cell + (gapPx + barPx) * uy, lx0 = x0Cell - (gapPx + barPx) * ux, lx1 = x0Cell - gapPx * ux;
+  for (const sp of cSpans) {
+    if (sp.s > 0) { const k = sp.s - 0.5; if (k > vx0 && k < vx1) shapes.push({ type: 'line', xref: 'x', yref: 'y', x0: k, x1: k, y0: vy0, y1: vy1, line: { color: '#5B6573', width: 1 } }); }
+    const col = sp.meta ? sp.meta.color : '#D5DCE4', fg = sp.meta && heatDark(col) ? '#FFFFFF' : '#17263A', lab = showLab && sp.meta ? String(sp.meta.short || '') : '';
     const xlo = Math.max(sp.s - 0.5, vx0), xhi = Math.min(sp.e + 0.5, vx1);
     if (xhi > xlo) {
       shapes.push({ type: 'rect', xref: 'x', yref: 'paper', x0: xlo, x1: xhi, y0: ty0, y1: ty1, fillcolor: col, line: { color: '#FFFFFF', width: 1 }, layer: 'above' });
       const wpx = ((xhi - xlo) / Math.max(1e-6, vx1 - vx0)) * pw;
-      if (lab && wpx >= lab.length * 6.2 + 6) annotations.push({ xref: 'x', yref: 'paper', x: (xlo + xhi) / 2, y: (ty0 + ty1) / 2, text: `<b>${esc(lab)}</b>`, showarrow: false, xanchor: 'center', yanchor: 'middle', font: { size: 10, family: 'IBM Plex Sans, sans-serif', color: fg } });
+      if (lab && wpx >= lab.length * 6.2 + 6) annotations.push({ xref: 'x', yref: 'paper', x: (xlo + xhi) / 2, y: (ty0 + ty1) / 2, text: `<b>${esc(lab)}</b>`, showarrow: false, xanchor: 'center', yanchor: 'middle', font: { size: 9.5, family: 'IBM Plex Sans, sans-serif', color: fg } });
     }
+  }
+  for (const sp of rSpans) {
+    if (sp.s > 0) { const k = sp.s - 0.5; if (k > vy0 && k < vy1) shapes.push({ type: 'line', xref: 'x', yref: 'y', x0: vx0, x1: vx1, y0: k, y1: k, line: { color: '#5B6573', width: 1 } }); }
+    const col = sp.meta ? sp.meta.color : '#D5DCE4', fg = sp.meta && heatDark(col) ? '#FFFFFF' : '#17263A', lab = showLab && sp.meta ? String(sp.meta.short || '') : '';
     const ylo = Math.max(sp.s - 0.5, vy0), yhi = Math.min(sp.e + 0.5, vy1);
     if (yhi > ylo) {
       shapes.push({ type: 'rect', xref: 'paper', yref: 'y', x0: lx0, x1: lx1, y0: ylo, y1: yhi, fillcolor: col, line: { color: '#FFFFFF', width: 1 }, layer: 'above' });
-      const hpx = ((yhi - ylo) / Math.max(1e-6, vy1 - vy0)) * ph, vert = lab.length > 3;
-      if (lab && hpx >= (vert ? lab.length * 6 + 6 : 12)) annotations.push({ xref: 'paper', yref: 'y', x: (lx0 + lx1) / 2, y: (ylo + yhi) / 2, text: `<b>${esc(lab)}</b>`, textangle: vert ? -90 : 0, showarrow: false, xanchor: 'center', yanchor: 'middle', font: { size: 10, family: 'IBM Plex Sans, sans-serif', color: fg } });
+      const hpx = ((yhi - ylo) / Math.max(1e-6, vy1 - vy0)) * ph, vert = lab.length > 2;
+      if (lab && hpx >= (vert ? lab.length * 6 + 6 : 12)) annotations.push({ xref: 'paper', yref: 'y', x: (lx0 + lx1) / 2, y: (ylo + yhi) / 2, text: `<b>${esc(lab)}</b>`, textangle: vert ? -90 : 0, showarrow: false, xanchor: 'center', yanchor: 'middle', font: { size: 9.5, family: 'IBM Plex Sans, sans-serif', color: fg } });
     }
   }
-  return { shapes, annotations, sig: `${xd[0].toFixed(4)},${xd[1].toFixed(4)},${yd[0].toFixed(4)},${yd[1].toFixed(4)},${Math.round(pw)},${Math.round(ph)}` };
+  return { shapes, annotations, sig: `${x0Cell.toFixed(4)},${y1Cell.toFixed(4)},${Math.round(sw)},${Math.round(sh)},${Math.round(pw)},${Math.round(ph)},${showLab ? 1 : 0}` };
 }
-function heatCommKey(spans, keyEl, Pl, box, n) {   // community swatches under the matrix; clicking one zooms to its block (again resets)
-  if (!spans.length || !keyEl) return;
-  const row = document.createElement('div'); row.style.cssText = 'flex-basis:100%;display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center';
-  row.innerHTML = '<span class="muted">Communities:</span>' + spans.map((sp, idx) => sp.meta
-    ? `<span data-sp="${idx}" style="cursor:pointer;padding:2px 6px;border-radius:5px;transition:background .12s" title="click to zoom into ${esc(sp.meta.short)}${sp.meta.name && sp.meta.name !== sp.meta.short ? ' (' + esc(sp.meta.name) + ')' : ''}; click again or double-click the matrix to show all"><i style="background:${sp.meta.color}"></i><b>${esc(sp.meta.short)}</b>${sp.meta.name && sp.meta.name.toLowerCase() !== sp.meta.short.toLowerCase() && !/^community \d+$/i.test(sp.meta.name) ? ' · ' + esc(sp.meta.name) : ''} (${fmtInt(sp.e - sp.s + 1)})</span>`
-    : `<span class="muted" style="padding:2px 4px"><i style="background:#D5DCE4"></i>ungrouped (${fmtInt(sp.e - sp.s + 1)})</span>`).join('');
-  keyEl.prepend(row);
-  const sync = () => { const fl = box._fullLayout, xr = (fl && fl.xaxis && fl.xaxis.range) || [-0.5, n - 0.5];
-    row.querySelectorAll('[data-sp]').forEach((el) => { const sp = spans[+el.dataset.sp], on = Math.abs(Math.min(xr[0], xr[1]) - (sp.s - 0.5)) < 0.2 && Math.abs(Math.max(xr[0], xr[1]) - (sp.e + 0.5)) < 0.2;
-      el.style.background = on ? '#E8EEF5' : 'transparent'; el.style.boxShadow = on ? 'inset 0 0 0 1px #B8C7D9' : 'none'; }); };
-  box.__commSync = sync;
-  row.querySelectorAll('[data-sp]').forEach((el) => { el.onclick = () => { const sp = spans[+el.dataset.sp], fl = box._fullLayout, xr = (fl && fl.xaxis && fl.xaxis.range) || [-0.5, n - 0.5];
-    const same = Math.abs(Math.min(xr[0], xr[1]) - (sp.s - 0.5)) < 0.2 && Math.abs(Math.max(xr[0], xr[1]) - (sp.e + 0.5)) < 0.2;
-    Pl.relayout(box, same ? { 'xaxis.range': [-0.5, n - 0.5], 'yaxis.range': [n - 0.5, -0.5] } : { 'xaxis.range': [sp.s - 0.5, sp.e + 0.5], 'yaxis.range': [sp.e + 0.5, sp.s - 0.5] }); }; });
+async function renderHeatMatrix(Pl, cfg) {   // shared interactive matrix with multi-community selection and cross-community views
+  const { box, commEl, keyEl, keyHtml, spId, scopeKey, ord, names, spans, zv, tx, minV, cs, fname, showOpt0 } = cfg, n = ord.length, hasC = spans.length > 0;
+  let st = box.__hm;
+  if (!st || st.scope !== scopeKey) st = box.__hm = { scope: scopeKey, sel: new Set(), mode: 'sub', swap: false, lab: false };
+  const validKeys = new Set(spans.map((s) => s.key));
+  for (const k of [...st.sel]) if (!validKeys.has(k)) st.sel.delete(k);
+  const spanLabel = (sp) => (sp.meta ? sp.meta.short : 'ungrouped');
+  const spanColor = (sp) => (sp.meta ? sp.meta.color : '#D5DCE4');
+  async function drawSlice() {
+    const picked = hasC ? spans.filter((s) => st.sel.has(s.key)) : [];
+    let rIdx = [], cIdx = [], rSpans = [], cSpans = [], crossMask = false;
+    if (!picked.length) {
+      rIdx = cIdx = [...ord.keys()]; rSpans = cSpans = spans;
+    } else if (picked.length === 1) {
+      const p = picked[0]; for (let k = p.s; k <= p.e; k++) rIdx.push(k); cIdx = rIdx;
+      rSpans = cSpans = [{ ...p, s: 0, e: rIdx.length - 1 }];
+    } else if (picked.length === 2 && st.mode === 'cross') {
+      const [pR, pC] = st.swap ? [picked[1], picked[0]] : [picked[0], picked[1]];
+      for (let k = pR.s; k <= pR.e; k++) rIdx.push(k);
+      for (let k = pC.s; k <= pC.e; k++) cIdx.push(k);
+      rSpans = [{ ...pR, s: 0, e: rIdx.length - 1 }]; cSpans = [{ ...pC, s: 0, e: cIdx.length - 1 }];
+    } else {
+      const sub = [];
+      for (const p of picked) { const s0 = rIdx.length; for (let k = p.s; k <= p.e; k++) rIdx.push(k); sub.push({ ...p, s: s0, e: rIdx.length - 1 }); }
+      cIdx = rIdx; rSpans = cSpans = sub; crossMask = st.mode === 'cross';
+    }
+    const ny = rIdx.length, nx = cIdx.length, rNames = rIdx.map((k) => names[k]), cNames = cIdx.map((k) => names[k]);
+    const rSpanAt = Array(ny).fill(null), cSpanAt = Array(nx).fill(null);
+    rSpans.forEach((sp) => { for (let i = sp.s; i <= sp.e; i++) rSpanAt[i] = sp; });
+    cSpans.forEach((sp) => { for (let j = sp.s; j <= sp.e; j++) cSpanAt[j] = sp; });
+    const zSub = [], tSub = [];
+    for (let i = 0; i < ny; i++) {
+      const ri = [], rt = [], oi = rIdx[i];
+      for (let j = 0; j < nx; j++) {
+        const oj = cIdx[j], sameC = crossMask && rSpanAt[i] && cSpanAt[j] && rSpanAt[i].key === cSpanAt[j].key;
+        if (sameC) { ri.push(null); rt.push(`${names[oi]} × ${oi === oj ? 'itself' : names[oj]}<br>inside ${spanLabel(rSpanAt[i])} (hidden in Between communities only)`); }
+        else { const v = zv[oi][oj]; ri.push(v != null && Number.isFinite(v) && v >= minV ? v : null); rt.push(tx[oi][oj]); }
+      }
+      zSub.push(ri); tSub.push(rt);
+    }
+    if (commEl) {
+      commEl.hidden = !hasC;
+      if (hasC) {
+        let xhtml = '';
+        if (picked.length >= 2) {
+          const posRows = [], zeroRows = [];
+          for (let a = 0; a < picked.length; a++) for (let b = a + 1; b < picked.length; b++) {
+            const A = picked[a], B = picked[b], hits = []; let low = 0;
+            for (let i = A.s; i <= A.e; i++) for (let j = B.s; j <= B.e; j++) { const v = zv[i][j]; if (v != null && Number.isFinite(v)) { if (v >= CUT[10]) hits.push({ oi: i, oj: j, v }); else low++; } }
+            hits.sort((p, q) => q.v - p.v);
+            if (hits.length) posRows.push({ A, B, hits, low }); else zeroRows.push({ A, B, low });
+          }
+          posRows.sort((p, q) => (q.hits.length - p.hits.length) || (q.hits[0].v - p.hits[0].v));
+          xhtml = `<div class="hm-xsum">`
+            + (posRows.length ? posRows.map(({ A, B, hits }) => {
+              const linkHtml = (h) => `<a class="hm-xlink" href="#/${spId}/${ord[h.oi].row.key}/${ord[h.oj].row.key}" target="_blank" rel="noopener">${esc(names[h.oi])} × ${esc(names[h.oj])} <span class="num">${h.v.toFixed(3)}</span></a>`;
+              return `<div class="hm-xrow"><span class="hm-xpair"><i style="background:${spanColor(A)}"></i>${esc(spanLabel(A))} × <i style="background:${spanColor(B)}"></i>${esc(spanLabel(B))}</span><span><b>${fmtInt(hits.length)}</b> pair${plS(hits.length)} past 10% FPR:</span>${hits.slice(0, 6).map(linkHtml).join('')}${hits.length > 6 ? `<span class="hm-extra" hidden style="display:none">${hits.slice(6).map(linkHtml).join('')}</span><button type="button" class="hm-more" data-n="${hits.length - 6}">+${fmtInt(hits.length - 6)} more</button>` : ''}</div>`;
+            }).join('') : '')
+            + (zeroRows.length ? `<div class="hm-xrow muted">No pairs past 10% FPR between: ${zeroRows.map(({ A, B, low }) => `${esc(spanLabel(A))} × ${esc(spanLabel(B))} (${low ? fmtInt(low) + ' folded below ' + CUT[10] : 'none folded'})`).join(' · ')}</div>` : '')
+            + `</div>`;
+        }
+        commEl.innerHTML = `<div class="hm-bar"><span class="muted">Communities</span>`
+          + `<button type="button" class="hm-pill${!picked.length ? ' on' : ''}" data-all="1" title="show every protein in the matrix">All <span class="cnt">${fmtInt(n)}</span></button>`
+          + spans.map((sp) => `<button type="button" class="hm-pill${st.sel.has(sp.key) ? ' on' : ''}" data-k="${esc(sp.key)}" title="${sp.meta && sp.meta.name && !/^community \d+$/i.test(sp.meta.name) ? esc(sp.meta.name) + ' · ' : ''}click to select one or several communities">${sp.meta ? `<i style="background:${sp.meta.color}"></i><b>${esc(sp.meta.short)}</b>` : `<i style="background:#D5DCE4"></i>ungrouped`} <span class="cnt">${fmtInt(sp.e - sp.s + 1)}</span></button>`).join('')
+          + (picked.length >= 2 ? `<span class="seg hm-mode" role="group" aria-label="Cross-community matrix mode"><button type="button" data-m="sub" class="${st.mode === 'sub' ? 'on' : ''}" title="square submatrix of the selected communities, showing pairs inside each and pairs between them">With intra-community</button><button type="button" data-m="cross" class="${st.mode === 'cross' ? 'on' : ''}" title="${picked.length === 2 ? 'rectangular matrix with the first community as rows and the second as columns' : 'show only pairs between different selected communities'}">Between communities only</button></span>` : '')
+          + (picked.length === 2 && st.mode === 'cross' ? `<button type="button" class="hm-act" data-swap="1" title="swap row and column communities">⇄ Swap axes</button>` : '')
+          + (picked.length ? `<button type="button" class="hm-act" data-copy="1" title="copy the proteins of the selected communities, comma separated">Copy proteins</button>` : `<span class="muted">click two or more to inspect pairs between communities</span>`)
+          + `</div>` + xhtml;
+        commEl.querySelector('[data-all]').onclick = () => { st.sel.clear(); st.swap = false; drawSlice(); };
+        commEl.querySelectorAll('[data-k]').forEach((b) => { b.onclick = () => { const k = b.dataset.k; if (st.sel.has(k)) st.sel.delete(k); else st.sel.add(k); if (st.sel.size === spans.length && spans.length > 1) st.sel.clear(); st.swap = false; drawSlice(); }; });
+        commEl.querySelectorAll('.hm-mode button').forEach((b) => { b.onclick = () => { st.mode = b.dataset.m; drawSlice(); }; });
+        commEl.querySelectorAll('.hm-more').forEach((b) => { b.onclick = () => { const ex = b.previousElementSibling; if (!ex) return; const show = ex.hasAttribute('hidden'); if (show) { ex.removeAttribute('hidden'); ex.style.display = 'contents'; b.textContent = 'show fewer'; } else { ex.setAttribute('hidden', ''); ex.style.display = 'none'; b.textContent = `+${fmtInt(+b.dataset.n)} more`; } }; });
+        const sw = commEl.querySelector('[data-swap]'); if (sw) sw.onclick = () => { st.swap = !st.swap; drawSlice(); };
+        const cp = commEl.querySelector('[data-copy]'); if (cp) cp.onclick = () => { const seen = new Set(), list = []; for (const p of picked) for (let k = p.s; k <= p.e; k++) { const g = ord[k].row.gene || ord[k].row.key; if (!seen.has(g)) { seen.add(g); list.push(g); } }
+          navigator.clipboard && navigator.clipboard.writeText(list.join(', ')).then(() => { cp.textContent = `Copied ${fmtInt(list.length)}`; setTimeout(() => { if (cp.isConnected) cp.textContent = 'Copy proteins'; }, 1400); }); };
+      }
+    }
+    if (keyEl) keyEl.innerHTML = keyHtml;
+    if (!zSub.some((r) => r.some((x) => x != null))) {
+      Pl.purge(box); box.innerHTML = `<div class="empty">No pair${minV ? ` at ≥ ${minV}` : ''} in this view${minV && showOpt0 ? `; set Show to ${esc(showOpt0)}` : picked.length ? ' (click All above to return to the full matrix)' : ''}.</div>`; return;
+    }
+    const ticksFor = (arr, lo, hi) => { const m = arr.length, a = Math.max(0, Math.ceil(Math.min(lo, hi))), z = Math.min(m - 1, Math.floor(Math.max(lo, hi))), step = Math.max(1, Math.ceil((z - a + 1) / 80)), tv = [];
+      for (let k = a; k <= z; k += step) tv.push(k); return { tickvals: tv, ticktext: tv.map((k) => arr[k]) }; };
+    const maxN = Math.max(nx, ny), tick = Math.max(6, Math.min(12, 520 / maxN)), tickPad = st.lab ? 22 : 17;
+    const cell = Math.max(14, Math.min(32, Math.floor(620 / Math.max(1, maxN))));
+    const plotW = nx === ny ? Math.max(300, Math.min(box.clientWidth || 900, Math.max(360, Math.min(900, 18 * nx + 160)) + 120)) : Math.max(300, Math.min(box.clientWidth || 900, nx * cell + 280));
+    const plotH = nx === ny ? Math.max(300, Math.min(Math.max(360, Math.min(900, 18 * ny + 160)), (box.clientWidth || 900) + 40)) : Math.max(260, Math.min(900, ny * cell + 210));
+    if (box.querySelector(':scope > .empty')) box.innerHTML = '';
+    const ov0 = heatOverlay(box, nx, ny, cSpans, rSpans, st.lab);
+    const subTag = picked.length ? '_' + picked.map(spanLabel).join('-') + (st.mode === 'cross' ? '_cross' : '') : '';
+    await Pl.react(box, [
+      { type: 'heatmap', z: zSub, x: [...cNames.keys()], y: [...rNames.keys()], text: tSub, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0(cs), zmin: 0, zmax: 0.85, colorbar: heatBar(box), xgap: 1, ygap: 1, hoverongaps: false }],
+      { width: plotW, height: plotH, margin: heatMargin(box, hasC), plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes: ov0.shapes, annotations: ov0.annotations,
+        xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain', tickmode: 'array', ...ticksFor(cNames, -0.5, nx - 0.5), zeroline: false, ...(hasC ? { ticks: 'outside', ticklen: tickPad, tickcolor: 'rgba(0,0,0,0)' } : {}) },
+        yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x', constrain: 'domain', tickmode: 'array', ...ticksFor(rNames, -0.5, ny - 0.5), zeroline: false, ...(hasC ? { ticks: 'outside', ticklen: tickPad, tickcolor: 'rgba(0,0,0,0)' } : {}) }, dragmode: 'zoom' },
+      { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: fname + subTag, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
+    if (hasC) { const ov1 = heatOverlay(box, nx, ny, cSpans, rSpans, st.lab); if (ov1.sig !== ov0.sig) await Pl.relayout(box, { shapes: ov1.shapes, annotations: ov1.annotations }); }
+    box.removeAllListeners && box.removeAllListeners('plotly_click'); box.removeAllListeners && box.removeAllListeners('plotly_relayout');
+    box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[rIdx[p.pointIndex[0]]], b = ord[cIdx[p.pointIndex[1]]]; if (!a || !b) return; window.open(`#/${spId}/${a.row.key}/${b.row.key}`, '_blank'); });
+    box.on('plotly_relayout', (ev) => { if (!Object.keys(ev).some((k) => /^[xy]axis\.(range|autorange)/.test(k) || k === 'autosize' || k === 'width')) return;
+      const fl = box._fullLayout, xr = (fl && fl.xaxis.range) || [-0.5, nx - 0.5], yr = (fl && fl.yaxis.range) || [ny - 0.5, -0.5];
+      const shown = Math.max(1, Math.min(Math.abs(xr[1] - xr[0]), Math.abs(yr[1] - yr[0]))), f = Math.max(6, Math.min(14, 520 / shown)), tx2 = ticksFor(cNames, xr[0], xr[1]), ty2 = ticksFor(rNames, yr[0], yr[1]), ov = heatOverlay(box, nx, ny, cSpans, rSpans, st.lab, xr, yr);
+      box.__tick = f;
+      Pl.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f, 'xaxis.tickvals': tx2.tickvals, 'xaxis.ticktext': tx2.ticktext, 'yaxis.tickvals': ty2.tickvals, 'yaxis.ticktext': ty2.ticktext, ...(hasC ? { shapes: ov.shapes, annotations: ov.annotations } : {}) }).then(() => {
+        if (!hasC) return; const ov2 = heatOverlay(box, nx, ny, cSpans, rSpans, st.lab, xr, yr); if (ov2.sig !== ov.sig) Pl.relayout(box, { shapes: ov2.shapes, annotations: ov2.annotations }); }); });
+  }
+  await drawSlice();
 }
 // Tables loaded or dropped: text files as they are; Excel workbooks read in the browser (SheetJS 0.20.3 from its own CDN, loaded on first use), each
 // sheet as tab-separated text. The sheet with the most rows is the default and the others stay one click away.
@@ -6078,8 +6159,8 @@ async function viewNetwork(spId, q) {
 <div id="nw-chord-wrap" hidden><div class="cc-head"><h3>Community chord</h3><div class="muted">The pairs between communities, around one circle.</div></div><div id="nw-chord"></div></div>
 <div id="nw-heat-wrap" hidden><div class="card-head" style="margin-top:14px"><h3 style="margin:0">Pairs as a matrix</h3><div class="controls" style="margin:0"><span class="muted" id="nw-heat-note"></span>
         <label class="ctl" title="the matrix shows every folded pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="nw-heat-show"><option value="all">every folded pair</option><option value="10">past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label>
-        <label class="ctl">Colors <select id="nw-heat-cs">${['Blues', 'Viridis', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
-        <div id="nw-heat" style="width:100%"></div><div class="legend" id="nw-heat-key"></div></div></div>`;
+        <label class="ctl">Colors <select id="nw-heat-cs">${['Viridis', 'Blues', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
+        <div id="nw-heat-comm" class="hm-comm" hidden></div><div id="nw-heat" style="width:100%"></div><div class="legend" id="nw-heat-key"></div></div></div>`;
   $('#nw-add').value = S.add;
   $('#nw-hops').value = String(S.hops);
   const showK = () => { $('#nw-hops-wrap').hidden = $('#nw-add').value !== 'link'; $('#nw-prize-wrap').hidden = $('#nw-prize-note').hidden = $('#nw-add').value !== 'tree' || !(S.data || []).some((x) => x.kind === 'num'); $('#nw-k-wrap').hidden = $('#nw-add').value !== 'top' && S.click !== 'add'; $('#nw-kscan').hidden = $('#nw-add').value !== 'top'; if ($('#nw-add').value !== 'top') $('#nw-kscan-out').hidden = true; }; showK();   // the number also sets how many a click adds
@@ -6466,53 +6547,31 @@ async function viewNetwork(spId, q) {
     const gi = (d) => { const x = groups.indexOf(gk.get(d.id)); return x < 0 ? groups.length : x; };
     const ord = [...nodes].sort((a, b) => (gi(a) - gi(b)) || (b.q - a.q) || ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || a.row.gene.localeCompare(b.row.gene));
     const gmeta = typeof gmetaFn === 'function' ? gmetaFn() : Array.isArray(gmetaFn) ? gmetaFn : [];
-    const { spans, byRow } = heatSpans(ord, gi, gmeta), hasC = spans.length > 0;
+    const { spans, byRow } = heatSpans(ord, gi, gmeta);
     const M = new Map(), key = (a, b) => (a < b ? a + ',' + b : b + ',' + a);
     for (const l of links) { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; M.set(key(a, b), l); }
     const hk = ord.map((d) => d.id).sort((a, b) => a - b).join(','), run = ++heatRun;   // the matrix marks folded pairs: those of these proteins, one read per list (Show and the colors draw again)
     if (!S.set && !(heatTP && heatTP.key === hk)) { const ij = []; ord.forEach((d, i) => { for (let j = i; j < n; j++) ij.push([d.id, ord[j].id]); });
       const T = ord.filter((d) => d.q).length >= 3 ? await tested(sp).catch(() => null) : await testedLookup(sp, ij).catch(() => null); heatTP = { key: T ? hk : '', TP: T }; if (run !== heatRun) return; }   // nothing read: tried again next time
     const gcount = new Map(); ord.forEach((d) => gcount.set(d.row.gene, (gcount.get(d.row.gene) || 0) + 1));
-    const TP = S.set ? null : heatTP.TP, cut = cutV(), names = ord.map((d) => (gcount.get(d.row.gene) > 1 ? `${d.row.gene} (${d.row.key})` : d.row.gene));   // two proteins with one symbol (two accessions) keep their own rows
+    const TP = S.set ? null : heatTP.TP, names = ord.map((d) => (gcount.get(d.row.gene) > 1 ? `${d.row.gene} (${d.row.key})` : d.row.gene));   // two proteins with one symbol (two accessions) keep their own rows
     const nmTag = (k) => names[k] + (byRow[k] ? ` (${byRow[k].short})` : '');
     const minV = FPRSHOW($('#nw-heat-show').value), E0 = EB;   // the matrix: every pair in the edge table (the screen's, with a filter), apart from the network's cutoff
     const pairOf = (a, b) => { const e = E0 && (E0.adj.get(a) || new Map()).get(b); if (e) return { v: e.best, ip: e.iptm, exact: true };
       const l = M.get(key(a, b)); if (l) return { v: l.best, ip: l.iptm, exact: true };
       if (TP) { if (!TP.has(a, b)) return null; const s = TP.score ? Math.min(TP.score(a, b), CUT[10] - 0.001) : NaN; return { v: s, exact: false }; } return { v: NaN, exact: false }; };   // not an edge: below the cutoff, whatever the 1-byte rounding
-    const zi = [], tx = []; let past = 0, folded = 0, never = 0;
-    for (let i = 0; i < n; i++) { const ri = [], rt = [];
+    const zv = [], tx = []; let past = 0, folded = 0, never = 0;
+    for (let i = 0; i < n; i++) { const rv = [], rt = [];
       for (let j = 0; j < n; j++) { const a = ord[i].id, b = ord[j].id, q = pairOf(a, b), v = q && Number.isFinite(q.v) ? q.v : null;
-        ri.push(v != null && v >= minV ? v : null);
+        rv.push(v);
         rt.push(`${nmTag(i)} × ${i === j ? 'itself' : nmTag(j)}<br>${!q ? 'never folded in these screens' : v == null ? (TP ? 'folded' : `below 10% FPR or not folded${S.set ? ' in this screen' : ''}`) : `best iLIS ${q.exact ? v.toFixed(3) : '≈' + v.toFixed(2)}${Number.isFinite(q.ip) ? ` · ipTM ${q.ip.toFixed(2)}` : ''}${v >= CUT[1] ? ' · 1% FPR' : v >= CUT[5] ? ' · 5% FPR' : v >= CUT[10] ? ' · 10% FPR' : ''}`}`);
         if (j > i) { if (!q) never++; else if (v != null && v >= CUT[10]) past++; else folded++; } }
-      zi.push(ri); tx.push(rt); }
+      zv.push(rv); tx.push(rt); }
     $('#nw-heat-note').textContent = `${fmtInt(n)} × ${fmtInt(n)} · ${fmtInt(past)} of ${fmtInt(n * (n - 1) / 2)} pair${plS(n * (n - 1) / 2)} past 10% FPR` + (!TP ? (S.set ? ' in this screen' : '') : ` · ${fmtInt(folded)} folded below it`) + (TP ? ` · ${fmtInt(never)} never folded` : '');
-    $('#nw-heat-key').innerHTML = `<span class="muted">${!TP ? `only pairs past 10% FPR are listed${S.set ? ' for this screen' : ''}; the others are blank` : "every folded pair on one scale, whatever the network's cutoff"}</span>${TP ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>never folded</span>' : ''}${minV ? `<span class="muted">showing ≥ ${minV}</span>` : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
+    const keyHtml = `<span class="muted">${!TP ? `only pairs past 10% FPR are listed${S.set ? ' for this screen' : ''}; the others are blank` : "every folded pair on one scale, whatever the network's cutoff"}</span>${TP ? '<span><i style="background:#fff;border:1px solid #C3CCD6"></i>never folded</span>' : ''}${minV ? `<span class="muted">showing ≥ ${minV}</span>` : ''}<span class="muted">scroll or drag a box to zoom · double-click to reset · click a cell for the pair</span>`;
+    $('#nw-heat-key').innerHTML = keyHtml;
     let P; try { P = await plotly(); } catch (e) { box.innerHTML = `<div class="empty">${esc(e.message)}</div>`; return; }
-    if (!zi.some((r) => r.some((x) => x != null))) { P.purge(box); box.innerHTML = `<div class="empty">No pair at ≥ ${minV} here; set Show to ${esc($('#nw-heat-show').options[0].text)}.</div>`; return; }
-    const ticksIn = (lo, hi) => {   // at most 80 row names at a time, spread over what is shown (every name once they fit): a label per row costs ~10x on every zoom and pan
-      const a = Math.max(0, Math.ceil(Math.min(lo, hi))), z = Math.min(n - 1, Math.floor(Math.max(lo, hi))), step = Math.max(1, Math.ceil((z - a + 1) / 80)), tv = [];
-      for (let k = a; k <= z; k += step) tv.push(k); return { tickvals: tv, ticktext: tv.map((k) => names[k]) }; };
-    const side = Math.max(360, Math.min(900, 18 * n + 160)), tick = Math.max(6, Math.min(11, 520 / n));
-    const cs = $('#nw-heat-cs').value || 'Blues';
-    if (box.querySelector(':scope > .empty')) box.innerHTML = '';
-    const ov0 = heatOverlay(box, n, spans);
-    await P.react(box, [
-      { type: 'heatmap', z: zi, x: [...names.keys()], y: [...names.keys()], text: tx, hovertemplate: '%{text}<extra></extra>', colorscale: HEATCS0(cs), zmin: 0, zmax: 0.85, colorbar: heatBar(box), xgap: 1, ygap: 1, hoverongaps: false }],   // axes by row number, names as labels: a repeated name never merges two rows, and every row is labeled
-      { width: Math.max(300, Math.min(box.clientWidth || 900, side + 120)), height: Math.max(300, Math.min(side, (box.clientWidth || 900) + 40)), margin: heatMargin(box, hasC), plot_bgcolor: '#FFFFFF', paper_bgcolor: 'rgba(0,0,0,0)', shapes: ov0.shapes, annotations: ov0.annotations,
-        xaxis: { side: 'top', tickangle: -60, tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, constrain: 'domain', tickmode: 'array', ...ticksIn(-0.5, n - 0.5), range: [-0.5, n - 0.5], zeroline: false, ...(hasC ? { ticks: 'outside', ticklen: 20, tickcolor: 'rgba(0,0,0,0)' } : {}) },
-        yaxis: { autorange: 'reversed', tickfont: { size: tick, family: 'IBM Plex Sans, sans-serif' }, automargin: true, showgrid: false, scaleanchor: 'x', tickmode: 'array', ...ticksIn(-0.5, n - 0.5), zeroline: false, ...(hasC ? { ticks: 'outside', ticklen: 26, tickcolor: 'rgba(0,0,0,0)' } : {}) }, dragmode: 'zoom' },
-      { displaylogo: false, responsive: true, scrollZoom: true, toImageButtonOptions: { filename: `atlas_${sp.id}_matrix`, format: 'svg' }, modeBarButtonsToRemove: ['select2d', 'lasso2d'] });
-    if (hasC) { const ov1 = heatOverlay(box, n, spans); if (ov1.sig !== ov0.sig) await P.relayout(box, { shapes: ov1.shapes, annotations: ov1.annotations }); heatCommKey(spans, $('#nw-heat-key'), P, box, n); } else box.__commSync = null;
-    box.removeAllListeners && box.removeAllListeners('plotly_click'); box.removeAllListeners && box.removeAllListeners('plotly_relayout');
-    box.on('plotly_relayout', (ev) => {   // zoomed in, the labels grow with the room each one has (6 to 14 px)
-      if (!Object.keys(ev).some((k) => /^[xy]axis\.(range|autorange)/.test(k) || k === 'autosize' || k === 'width')) return;   // a zoom or pan, not this handler's own label update
-      const fl = box._fullLayout, xr = (fl && fl.xaxis.range) || [-0.5, n - 0.5], yr = (fl && fl.yaxis.range) || [n - 0.5, -0.5];   // each axis labels the rows it shows (a zoom box need not be square)
-      const shown = Math.max(1, Math.min(Math.abs(xr[1] - xr[0]), Math.abs(yr[1] - yr[0]))), f = Math.max(6, Math.min(14, 520 / shown)), tx = ticksIn(xr[0], xr[1]), ty = ticksIn(yr[0], yr[1]), ov = heatOverlay(box, n, spans, xr, yr);
-      box.__tick = f; if (box.__commSync) box.__commSync();
-      P.relayout(box, { 'xaxis.tickfont.size': f, 'yaxis.tickfont.size': f, 'xaxis.tickvals': tx.tickvals, 'xaxis.ticktext': tx.ticktext, 'yaxis.tickvals': ty.tickvals, 'yaxis.ticktext': ty.ticktext, ...(hasC ? { shapes: ov.shapes, annotations: ov.annotations } : {}) }).then(() => {
-        if (!hasC) return; const ov2 = heatOverlay(box, n, spans, xr, yr); if (ov2.sig !== ov.sig) P.relayout(box, { shapes: ov2.shapes, annotations: ov2.annotations }); }); });
-    box.on('plotly_click', (ev) => { const p = ev.points && ev.points[0]; if (!p || p.z == null) return; const a = ord[p.pointIndex[0]], b = ord[p.pointIndex[1]], u = `#/${sp.id}/${a.row.key}/${b.row.key}`; window.open(u, '_blank'); });
+    await renderHeatMatrix(P, { box, commEl: $('#nw-heat-comm'), keyEl: $('#nw-heat-key'), keyHtml, spId: sp.id, scopeKey: `nw:${sp.id}:${hk}`, ord, names, spans, zv, tx, minV, cs: $('#nw-heat-cs').value || 'Viridis', fname: `atlas_${sp.id}_matrix`, showOpt0: $('#nw-heat-show').options[0].text });
   }
   function graph(nodes, links, extra = [], seed = null, xo = [], XO = null) {
     const box = $('#nw-net'); box.innerHTML = '<svg></svg>'; if (!seed) GC.clear();   // communities are found again: picked colors start over (a click that adds partners keeps them)
