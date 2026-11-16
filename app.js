@@ -759,21 +759,22 @@ function structLink(host, x, cls, text = 'Open in LIVIA ↗') {
 // October 2026 while plain HTTP kept serving the same files, and a page served over HTTPS cannot read http://), the same range
 // through LIVIA's proxy, which reads it over HTTP server-side. Once the direct address fails, the rest of the visit uses the proxy.
 const RELAY = DEV ? 'http://localhost:8787/' : 'https://livia-proxy.flyark.workers.dev/';   // local preview: the worker run by hand (wrangler dev or a node wrapper)
-let viaRelay = false;
+let viaRelay = !DEV;   // EBI's HTTPS port stalls ~10 s in TLS handshake while plain HTTP via the worker answers in ~1–2 s; direct HTTPS stays as automatic fallback
 const archPath = (ad) => (ad.hd ? `homodimers/${ad.tar}${/\.tar$/.test(ad.tar) ? '' : '.tar'}` : ad.tar ? `heterodimers/${ad.tar}` : `pandemic_prep/chunk_${ad.chunk}.tar`);
 async function archRange(ad, o, n, onRelay) {
   const direct = ad.hd ? HOMO_URL(ad.tar) : ad.tar ? HET_URL(ad.tar) : ARCH_URL(ad.chunk);
-  const reach = async (url, init) => {   // a host that does not answer can hang for many seconds: 8 s to start answering, then no limit on the body
-    const c = new AbortController(), t = setTimeout(() => c.abort(new DOMException('no answer', 'TimeoutError')), 8000);
+  const reach = async (url, init, ms = 20000) => {
+    const c = new AbortController(), t = setTimeout(() => c.abort(new DOMException('no answer', 'TimeoutError')), ms);
     try { return await fetch(url, { ...init, signal: c.signal }); } finally { clearTimeout(t); } };
-  const read = async (relay) => { const r = relay ? await fetch(`${RELAY}?afdbArchive=${encodeURIComponent(archPath(ad))}&range=${o}-${o + n - 1}`)
-    : await reach(direct, { headers: { Range: `bytes=${o}-${o + n - 1}` } });
+  const read = async (relay) => { const r = relay ? await reach(`${RELAY}?afdbArchive=${encodeURIComponent(archPath(ad))}&range=${o}-${o + n - 1}`, {}, 15000)
+    : await reach(direct, { headers: { Range: `bytes=${o}-${o + n - 1}` } }, 20000);
     if (r.status !== 206) throw new Error(`the ${relay ? 'proxy' : 'archive'} answered ${r.status}`); const b = new Uint8Array(await r.arrayBuffer()); if (b.length !== n) throw new Error('short read'); return b; };
+  let mode = viaRelay;
   for (let t = 0; ; t++) {
-    try { return await read(viaRelay); }
+    try { return await read(mode); }
     catch (e) {
-      if (!viaRelay && (e instanceof TypeError || (e && e.name === 'TimeoutError'))) { viaRelay = true; if (onRelay) onRelay(); t = -1; continue; }   // no answer at all (refused: a TypeError; silent: the timeout): switch to the proxy
-      if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 700 * (t + 1)));   // EBI sometimes refuses one connection: retry
+      if (t === 0) { mode = !mode; if (mode && onRelay) onRelay(); continue; }   // if the primary path fails, immediately try the other path once before backoff retries
+      if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 600 * t));
     } }
 }
 // The Human Predictome archive (registry archive: { kind: 'predictome', order, label }): the lab's 100 tars on AWS S3 (about 40 GB
@@ -892,7 +893,7 @@ async function openPredictome(ar, name, link) {   // one pair's three models and
     const files = {}; for (const m of tarMembers(buf)) { if (!/\.(json|pdb)\.xz$/.test(m.name)) continue;
       files[m.name.replace(/\.xz$/, '')] = new Uint8Array(await new Response(new XzReadableStream(new Blob([m.data]).stream())).arrayBuffer()); }
     if (!Object.keys(files).some((k) => k.endsWith('.pdb'))) throw new Error('no model in the stretch read');
-    tab.load({ type: 'livia-load', name: `${name.replace('___', '__')}_predictome.zip`, data: zipSync(files).buffer }); link.textContent = txt;
+    tab.load({ type: 'livia-load', name: `${name.replace('___', '__')}_predictome.zip`, data: zipSync(files, { level: 0 }).buffer }); link.textContent = txt;
   } catch (e) {
     link.textContent = 'not read'; link.title = `${ar.label} could not be read (${e.message || e}); try again.`;
     tab.status(`Could not read ${nice} from ${ar.label} (${e.message || e}). Close this tab and try again from the Atlas.`, true);
@@ -907,15 +908,21 @@ const predLinkOf = (sp, B, x, cls, text) => predLink(archOf(sp.dsIds[x.di]), sp.
 document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a[data-pname]'); if (!a) return; e.preventDefault();
   const ar = archOf(a.dataset.parch); if (ar && a.textContent !== 'reading…') openPredictome(ar, a.dataset.pname, a); });
 // A LIVIA tab opened with ?post=1: status lines while the Atlas reads (LIVIA shows them in place of a blank page), then the data.
+function postToLivia(w, msg, origin) {
+  try {
+    const xfer = msg && msg.data instanceof ArrayBuffer ? [msg.data] : [];
+    w.postMessage(msg, origin, xfer);
+  } catch (e) { /* closed */ }
+}
 function liviaTab(w) {
   const origin = new URL(LIVIA, location.href).origin; let last = null, ready = false, n = 0;
-  const post = (m) => { try { w.postMessage(m, origin); } catch (e) { /* closed */ } };
+  const post = (m) => postToLivia(w, m, origin);
   const onMsg = (ev) => { if (ev.source !== w || !ev.data || ev.data.type !== 'livia-ready') return; if (!ready) { ready = true; if (last) post(last); if (last && last.error) done(); } };
   window.addEventListener('message', onMsg);
   const t = setInterval(() => { if (ready || w.closed || ++n > 240) { clearInterval(t); if (!ready) window.removeEventListener('message', onMsg); return; } post({ type: 'livia-ping' }); }, 250);   // a tab that never answers (closed, blocked): stop listening after 60 s
   const done = () => { window.removeEventListener('message', onMsg); clearInterval(t); };
   return { status(text, error) { last = { type: 'livia-status', text, error: !!error }; if (ready) post(last); if (error && ready) done(); },
-    load(msg) { done(); handTo(w, msg); } };
+    load(msg) { const wasReady = ready; done(); if (wasReady) post(msg); else handTo(w, msg); } };
 }
 async function openFromArchive(model, ad0, link) {   // ad0: the archive address, or a promise of it (a list row whose address is in its protein's file)
   const w = window.open(`${LIVIA}universal.html?post=1`, '_blank'); if (!w) return;
@@ -924,12 +931,12 @@ async function openFromArchive(model, ad0, link) {   // ad0: the archive address
   const mb = ((ad.cif_len + ad.pae_len) / 1048576).toFixed(1);
   const txt = link.textContent; link.textContent = 'reading…';
   tab.status(`Reading ${model} from the AlphaFold Database release archive at EBI (${mb} MB)…`);
-  const onRelay = () => tab.status(`EBI's secure address did not answer; reading ${model} through LIVIA's proxy instead (${mb} MB)…`);
+  const onRelay = () => tab.status(`Reading ${model} from the AlphaFold Database release archive (${mb} MB)…`);
   try {
     const [[{ decompress }, { zipSync }], cif, pae] = await Promise.all([Promise.all([import('https://cdn.jsdelivr.net/npm/fzstd@0.1.1/+esm'), import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm')]),
       archRange(ad, ad.cif_off, ad.cif_len, onRelay), archRange(ad, ad.pae_off, ad.pae_len, onRelay)]);
     tab.status(`Unpacking ${model}…`);
-    const zip = zipSync({ [`${model}-model_v1.cif`]: decompress(cif), [`${model}-predicted_aligned_error_v1.json`]: decompress(pae) });
+    const zip = zipSync({ [`${model}-model_v1.cif`]: decompress(cif), [`${model}-predicted_aligned_error_v1.json`]: decompress(pae) }, { level: 0 });
     tab.load({ type: 'livia-load', name: `${model}_${ad.hd ? 'homodimer' : ad.tar ? 'afdb' : 'viral'}.zip`, data: zip.buffer }); link.textContent = txt;
   } catch (e) {
     link.textContent = 'not read'; link.title = `The archive could not be read (${e.message || e}); try again.`;
@@ -1112,8 +1119,9 @@ async function viewHomoList(spId, q) {
 // Hand data to a LIVIA tab opened with ?post=1 (cLIP, network): ping until it says it is ready, then post (its handshake).
 function handTo(w, msg) {
   const origin = new URL(LIVIA, location.href).origin; let done = false, n = 0;
-  const onMsg = (ev) => { if (ev.source !== w || !ev.data || ev.data.type !== 'livia-ready' || done) return; done = true; window.removeEventListener('message', onMsg); clearInterval(t); w.postMessage(msg, origin); };
+  const onMsg = (ev) => { if (ev.source !== w || !ev.data || ev.data.type !== 'livia-ready' || done) return; done = true; window.removeEventListener('message', onMsg); clearInterval(t); postToLivia(w, msg, origin); };
   window.addEventListener('message', onMsg);
+  try { w.postMessage({ type: 'livia-ping' }, origin); } catch (e) { /* not loaded yet */ }
   const t = setInterval(() => { if (done || w.closed || ++n > 120) { clearInterval(t); window.removeEventListener('message', onMsg); return; } try { w.postMessage({ type: 'livia-ping' }, origin); } catch (e) { /* not loaded yet */ } }, 250);
 }
 // A split gene's bundle as one file again (the download): its rows from every isoform file, its constructs and sequences.
@@ -2688,6 +2696,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const nav = [['c-partners', 'Overview'], ['c-sites', 'Binding sites'], ['c-freq', 'Frequency'], ['c-fp', 'Fingerprint'], ['c-info', 'Clusters'], ['c-3d', '3D structure'], ['c-res', 'Residues'], ['c-net', 'Network'], ['c-pt', 'Interactors'], ['c-orth', 'Orthologs'], ['c-para', 'Paralogs'], ['c-homo', 'Homodimer']];   // answers first (who, where, which share), then evidence, then tools
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
+  const rlabBox = '<label class="xt fp-rlab" title="show cluster names and top partners at the right of the plot"><input type="checkbox" class="fp-rlabels" checked> right labels</label>';
   const resBox = `<label class="xt" title="a residue number, a short sequence (983, ETLKKG) or a motif (LXXLL, [ST]P; every match), marked on the site map, the frequency and the fingerprint; the link keeps it">Residue <input type="text" class="res-q" placeholder="983 or a sequence" spellcheck="false" autocomplete="off" aria-label="Residue number or short sequence to mark" value="${esc(RESQ ? resLabel(RESV) : '')}"></label>`;   // the Binding sites card's lookup again: typing in one box fills the others
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
   if (gone()) return;
@@ -2729,10 +2738,10 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         show only that site on the page; the partners of each site are listed under Clusters. Type a residue number, a short sequence (for example <span id="res-eg">ETLKKG</span>; up to one mismatch per five residues) or a motif, which marks every match
         (X or . any residue, [ST] either residue, [^P] any residue but P, X(2,3) two to three residues, B for D or N, Z for E or Q, J for I or L; for example LXXLL, [ST]P or PX(2,3)P;
         PROSITE patterns work too) to see which models, partners and sites contact it; the link keeps it. The Residue boxes of the frequency and fingerprint cards mark the same residues there.</p></details><p class="note" id="clip-aside" hidden></p></div>
-    <div class="card" id="c-freq"><div class="card-head"><h2>Contact residue frequency</h2><div class="card-tools"><span class="muted" id="freq-sub">models contacting each residue, by cluster</span><div class="ctl"><div class="seg fp-style" title="by cluster: each cluster in its own color, labeled at the right; classic: one color for every contact">${[['cluster', 'by cluster'], ['classic', 'classic']].map(([m, l]) => `<button data-st="${m}"${m === 'cluster' ? ' class="on"' : ''}>${l}</button>`).join('')}</div></div>${resBox}${xticks}</div></div>
+    <div class="card" id="c-freq"><div class="card-head"><div><h2>Contact residue frequency</h2><div class="muted" id="freq-sub">models contacting each residue, by cluster</div></div><div class="card-tools"><div class="ctl"><div class="seg fp-style" title="by cluster: each cluster in its own color; classic: one color for every contact">${[['cluster', 'by cluster'], ['classic', 'classic']].map(([m, l]) => `<button data-st="${m}"${m === 'cluster' ? ' class="on"' : ''}>${l}</button>`).join('')}</div></div>${rlabBox}${resBox}${xticks}</div></div>
       ${chips}<div class="plot" id="freq-wrap"></div><p class="sites-more" data-resmark hidden></p><div class="domlegend" id="freq-domains"></div><details class="how" id="hot-d" hidden><summary>Most contacted residues</summary><div class="hot" id="hot"></div></details></div>
-    <div class="card" id="c-fp"><div class="card-head"><h2>Clustered interaction fingerprint</h2><div class="card-tools"><span class="muted">one row per model, in dendrogram order · hover for the partner, click to open the pair</span>
-        <input type="search" id="fp-find" placeholder="Find partner" style="width:140px" aria-label="Find a partner in the fingerprint"><div class="ctl"><div class="seg fp-style" title="by cluster: each cluster in its own color, labeled at the right; classic: one color for every contact">${[['cluster', 'by cluster'], ['classic', 'classic']].map(([m, l]) => `<button data-st="${m}"${m === 'cluster' ? ' class="on"' : ''}>${l}</button>`).join('')}</div></div>${resBox}${xticks}</div></div>
+    <div class="card" id="c-fp"><div class="card-head"><div><h2>Clustered interaction fingerprint</h2><div class="muted">one row per model, in dendrogram order · hover for the partner, click to open the pair</div></div><div class="card-tools">
+        <input type="search" id="fp-find" placeholder="Find partner" style="width:122px" aria-label="Find a partner in the fingerprint"><div class="ctl"><div class="seg fp-style" title="by cluster: each cluster in its own color; classic: one color for every contact">${[['cluster', 'by cluster'], ['classic', 'classic']].map(([m, l]) => `<button data-st="${m}"${m === 'cluster' ? ' class="on"' : ''}>${l}</button>`).join('')}</div></div>${rlabBox}${resBox}${xticks}</div></div>
       ${chips}<div class="plot" id="fp-wrap"></div><p class="sites-more" id="fp-found" hidden></p><p class="sites-more" data-resmark hidden></p>
       <div class="legend" id="fp-legend"></div></div>
     <div class="card" id="c-info"><div class="card-head"><h2>Clusters</h2><span class="muted">the partners in each cluster, largest first; a partner with models in two clusters is listed under both</span></div><div class="clinfo" id="cluster-info"></div><div class="legend" id="info-kb" hidden></div></div>
@@ -2920,8 +2929,9 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const toStruct = (r) => (S.map ? S.map[r - 1] : r);
   const who = (label) => B.labels.get(label) || (String(label).startsWith('yours~') ? { key: String(label).split('~')[1], run: 'yours', yours: true } : { key: label, run: null });    // a cLIP partner label → partner key + screen run (yours~key: your predictions)
   const xtWant = () => { const v = +((app.querySelector('.xticks') || {}).value); return v >= 2 ? Math.min(40, v) : 0; };
-  const FPS = { style: 'cluster' };   // frequency + fingerprint: 'cluster' (each cluster in its color, labeled at the right) or 'classic' (bars in the most frequent cluster's color, contacts in navy)
-  const fpAXR = (W) => (FPS.style === 'cluster' && W >= 640 ? 150 : AXR);   // room for the cluster labels; both plots use it so their residue axes stay aligned
+  const FPS = { style: 'cluster', labels: true };   // frequency + fingerprint: 'cluster' (each cluster in its color, optional right labels) or 'classic' (bars in the most frequent cluster's color, contacts in navy)
+  const fpAXR = (W) => (FPS.style === 'cluster' && FPS.labels && W >= 640 ? 158 : AXR);   // room for the cluster labels; both plots use it so their residue axes stay aligned
+  let chipsAll = false;
   { const byDs = new Map(); for (const p of B.preds) { if (!byDs.has(p.di)) byDs.set(p.di, new Set()); byDs.get(p.di).add(p.qLen); }   // the construct each screen folded
     const lens = new Set(B.preds.map((p) => p.qLen)), ref = sp.manifest.keyedBy ? 'FlyBase reference' : 'UniProt';
     const f = !B.cons.size && lens.size > 1 ? `constructs differ between screens: ${[...byDs].map(([di, ls]) => `${sp.dsShort[di]} ${[...ls].map(fmtInt).join(' / ')} aa`).join(' · ')}${P.len ? `; UniProt ${fmtInt(P.len)} aa` : ''}`
@@ -3360,9 +3370,12 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     app.querySelectorAll('[data-chips]').forEach((box) => {
       if (!clustered()) { box.innerHTML = ''; return; }
       const sizes = {}; for (const l of M.labels) sizes[l] = (sizes[l] || 0) + 1;
-      box.innerHTML = `<button class="cchip all" data-c="all">All clusters (${fmtInt(M.labels.length)})</button>` + range(M.k).map((c) =>
-        `<button class="cchip" data-c="${c}"><i style="background:${clusterColor(c, M.k)}"></i>${clusterLabel(c, true)} (${sizes[c] || 0})</button>`).join('');
-      box.onclick = (e) => { const b = e.target.closest('.cchip'); if (b) toggleCluster(b.dataset.c); };
+      const all = range(M.k), fold = M.k > 12, keep = (c) => !fold || chipsAll || c <= 10 || (sizes[c] || 0) >= 3 || (!allOn() && ACTIVE.has(c));
+      const shown = all.filter(keep), hid = all.length - shown.length;
+      box.innerHTML = `<button class="cchip all" data-c="all">All clusters (${fmtInt(M.labels.length)})</button>` + shown.map((c) =>
+        `<button class="cchip" data-c="${c}"><i style="background:${clusterColor(c, M.k)}"></i>${clusterLabel(c, true)} (${sizes[c] || 0})</button>`).join('')
+        + (hid > 0 ? `<button type="button" class="cchip more-c" data-more="1" title="show the ${hid} smaller clusters of 1–2 models">+${fmtInt(hid)} minor</button>` : fold && chipsAll && all.some((c) => c > 10 && (sizes[c] || 0) < 3) ? `<button type="button" class="cchip more-c" data-more="1">fewer</button>` : '');
+      box.onclick = (e) => { const m = e.target.closest('[data-more]'); if (m) { chipsAll = !chipsAll; renderChips(); return; } const b = e.target.closest('.cchip'); if (b && b.dataset.c) toggleCluster(b.dataset.c); };
     });
     paintChips();
   }
@@ -3408,15 +3421,15 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const g = canvasCtx(cv, W, H);
     const yLabel = (text, y0, y1, color) => { g.save(); g.translate(13, (y0 + y1) / 2); g.rotate(-Math.PI / 2); g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = color; g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.fillText(text, 0, 0); g.restore(); };
     const yTicks = (vals, fmt, yOf) => { g.fillStyle = '#5A697C'; g.font = '10.5px "IBM Plex Mono", ui-monospace, monospace'; g.textAlign = 'right'; g.textBaseline = 'middle'; for (const v of vals) g.fillText(fmt(v), AXL - 6, yOf(v)); };
-    const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AXL, y0, W - AXL - R, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AXL + 0.5, y0); g.lineTo(AXL + 0.5, y1 + 0.5); g.lineTo(W - R, y1 + 0.5); g.stroke(); };
+    const frame = (y0, y1, white = false) => { g.fillStyle = white ? '#FFFFFF' : '#F6F8FB'; g.fillRect(AXL, y0, W - AXL - R, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AXL + 0.5, y0); g.lineTo(AXL + 0.5, y1 + 0.5); g.lineTo(W - R, y1 + 0.5); g.stroke(); };
     for (const d of doms) { const x0 = xOf(Math.max(1, d.s)), x1 = Math.max(x0 + 2, xOf(Math.min(L, d.e) + 1)), y = 4 + d.lane * DRH;   // domains D1, D2 … (names in the legend), as LIVIA cLIP
       g.fillStyle = '#E3E9F1'; g.fillRect(x0, y, x1 - x0, 12); g.strokeStyle = '#9FB0C4'; g.lineWidth = 0.6; g.strokeRect(x0 + 0.3, y + 0.3, x1 - x0 - 0.6, 11.4);
       g.fillStyle = '#34445A'; g.font = '10px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; const lb = 'D' + d.idx; if (g.measureText(lb).width < x1 - x0 - 2) g.fillText(lb, (x0 + x1) / 2, y + 6.5); }
-    frame(padT, fBase);   // # models contacting the residue; bar color = the residue's most frequent cluster
+    frame(padT, fBase, FPS.style === 'cluster');   // # models contacting the residue; pure white in by-cluster mode so blue clusters stay crisp
     g.strokeStyle = '#E3E8EE'; g.lineWidth = 1; for (const f of [0.5, 1]) { const y = Math.round(fBase - f * fH) + 0.5; g.beginPath(); g.moveTo(AXL, y); g.lineTo(W - R, y); g.stroke(); }
-    if (FPS.style === 'cluster') {   // all models as a gray area edged in black, each cluster's own count as a line in its color (largest cluster drawn first)
+    if (FPS.style === 'cluster') {   // all models as a light neutral area edged in charcoal, each cluster's own count as a line in its color (largest cluster drawn first)
       const yOf = (v) => fBase - v / max * fH, path = (val) => { g.beginPath(); for (let r = 1; r <= L; r++) { const x = xc(r), y = yOf(val(r)); if (r === 1) g.moveTo(x, y); else g.lineTo(x, y); } };
-      path((r) => tot[r]); g.lineTo(xc(L), fBase); g.lineTo(xc(1), fBase); g.closePath(); g.fillStyle = '#E3E8EE'; g.fill();
+      path((r) => tot[r]); g.lineTo(xc(L), fBase); g.lineTo(xc(1), fBase); g.closePath(); g.fillStyle = '#ECEFF3'; g.fill();
       path((r) => tot[r]); g.strokeStyle = '#1B2430'; g.lineWidth = 1.2; g.stroke();
       const size = new Map(); for (let i = 0; i < n; i++) { const c = M.labels[i]; if (ACTIVE.has(c)) size.set(c, (size.get(c) || 0) + 1); }
       if (R > AXR) { const lx = W - R + 8, list = [['all models', '#1B2430'], ...[...size.keys()].sort((a, z) => size.get(z) - size.get(a)).map((c) => [`${clusterLabel(c, true)} (${size.get(c)})`, clusterColor(c, k)])], fit = Math.max(1, Math.floor(fH / 13));   // the lines' key, in the gutter the fingerprint labels use
@@ -3470,7 +3483,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const on = new Set(order), lit = mine.some((i) => on.has(i)), RED = '#E41A1C';   // a found partner with rows shown: the others in light gray (the author, 2026-10-16)
     for (let row = 0; row < n; row++) { const i = order[row]; if (i == null) continue; const y0 = rowTop(row), hh = Math.max(1, rowTop(row + 1) - y0);
       g.fillStyle = clusterColor(M.labels[i], k); g.fillRect(sx0, y0, sx1 - sx0, hh);
-      g.fillStyle = '#F7FBFF'; g.fillRect(rx0, y0, rx1 - rx0, hh);
+      g.fillStyle = byCl ? '#FFFFFF' : '#F7FBFF'; g.fillRect(rx0, y0, rx1 - rx0, hh);
       g.fillStyle = lit ? '#C9D1DB' : byCl ? clusterColor(M.labels[i], k) : '#08306B'; for (const [s, e] of runs(M.fingerprints[i])) { const x0 = X(xOf(s)), x1 = Math.max(x0 + 1, X(xOf(e + 1))); g.fillRect(x0, y0, x1 - x0, hh); } }
     $('#fp-find').classList.toggle('nf', hit === false); found.hidden = !hit;
     if (hit) {   // its rows: contacts in red on a light red band, at least 3 px tall however many rows share the height, and a marker at the right
@@ -3508,7 +3521,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     }
     markRes(g, L, xOf, 0, rowsH, W, R);
     drawTicks(g, resTicks(L, W - AXL - R, xtWant()), rowsH + 2, (r) => xOf(r) + bw / 2, W);
-    $('#fp-legend').innerHTML = byCl ? `<span>contact residues (cLIR) in their model's cluster color</span><span><i style="background:#F7FBFF;box-shadow:inset 0 0 0 1px #C9D6E3"></i>no contact</span><span>left: dendrogram and cluster of each model${R > AXR ? '; right: each cluster, its models and the partners with the most models' : ''}</span>`
+    $('#fp-legend').innerHTML = byCl ? `<span>contact residues (cLIR) in their model's cluster color</span><span><i style="background:#FFFFFF;box-shadow:inset 0 0 0 1px #C9D6E3"></i>no contact</span><span>left: dendrogram and cluster of each model${R > AXR ? '; right: each cluster, its models and the partners with the most models' : ''}</span>`
       : '<span><i style="background:#08306B"></i>contact residue (cLIR)</span><span><i style="background:#F7FBFF;box-shadow:inset 0 0 0 1px #C9D6E3"></i>no contact</span><span>left: dendrogram and cluster of each model</span>';
     const at = (e) => { const b = cv.getBoundingClientRect(), x = e.clientX - b.left, y = e.clientY - b.top; if (y < 0 || y > rowsH || x < 30) return null;
       const i = order[Math.min(n - 1, Math.floor(y / rowsH * n))]; return i == null ? null : { i, r: Math.floor((x - AXL) / bw) + 1 }; };
@@ -3902,7 +3915,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       return { name: n, best: p.best, dot: c ? clusterColor(c, k) : '#DDE3EA', sty: bandSty(FPR.iLIS, p.best), tip: `iLIS ${p.best.toFixed(3)}: ${bandLabel[bandIn(FPR.iLIS, p.best)]}${c ? ` · ${clusterLabel(c)}` : ''}` }; }); };
   ['#sc-find', '#fp-find', '#res-find'].forEach((q) => partnerSuggest($(q), suggestItems));   // all three Find partner boxes suggest partners with their iLIS
   ['#sc-x', '#sc-y', '#sc-pts'].forEach((s) => { $(s).onchange = () => drawScatter(); });
-  app.querySelectorAll('.fp-style button').forEach((b) => { b.onclick = () => { FPS.style = b.dataset.st; app.querySelectorAll('.fp-style button').forEach((o) => o.classList.toggle('on', o.dataset.st === FPS.style)); $('#freq-sub').textContent = FPS.style === 'cluster' ? 'models contacting each residue, by cluster' : 'models contacting each residue, colored by their most frequent cluster'; if (clustered()) renderSites(); drawFreq(); drawHeatmap(); }; });   // one style for all three plots
+  app.querySelectorAll('.fp-style button').forEach((b) => { b.onclick = () => { FPS.style = b.dataset.st; app.querySelectorAll('.fp-style button').forEach((o) => o.classList.toggle('on', o.dataset.st === FPS.style)); app.querySelectorAll('.fp-rlab').forEach((el) => { el.hidden = FPS.style !== 'cluster'; }); $('#freq-sub').textContent = FPS.style === 'cluster' ? 'models contacting each residue, by cluster' : 'models contacting each residue, colored by their most frequent cluster'; if (clustered()) renderSites(); drawFreq(); drawHeatmap(); }; });   // one style for all three plots
+  app.querySelectorAll('.fp-rlabels').forEach((cb) => { cb.onchange = () => { FPS.labels = cb.checked; app.querySelectorAll('.fp-rlabels').forEach((o) => { o.checked = FPS.labels; }); if (clustered()) renderSites(); drawFreq(); drawHeatmap(); }; });
   { let t; $('#fp-find').oninput = () => { clearTimeout(t); t = setTimeout(() => { if (clustered()) drawHeatmap(); }, 120); }; }   // redraw once the typing pauses
   app.querySelectorAll('.res-q').forEach((i) => { i.onchange = (e) => setRes(e.target.value); i.onkeydown = (e) => { if (e.key === 'Enter') { e.preventDefault(); setRes(e.target.value); } }; });   // the three Residue boxes
   $('#sc-find').onchange = () => drawScatter();
@@ -5041,7 +5055,7 @@ async function viewVirus(spId, taxid) {
       <div class="nw-stats" id="vn-stats"></div>
       <div class="nw-body"><div class="net" id="vn-net"></div><aside class="nw-mods" id="vn-mods" hidden aria-label="Communities"></aside></div><div class="legend" id="vn-legend"></div><div id="vn-x"></div>
       <div id="vn-chord-wrap" hidden><div class="cc-head"><h3>Community chord</h3><div class="muted">The pairs between communities, around one circle, as on the network builder.</div></div><div id="vn-chord"></div></div></div>
-    <div class="card" id="vm-card"><div class="card-head"><h2>Pairs as a matrix <span class="muted" id="vm-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="the matrix shows every pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="vm-show"><option value="all">every pair</option><option value="10">past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label><label class="ctl">Colors <select id="vm-cs">${['Viridis', 'Blues', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
+    <div class="card" id="vm-card"><div class="card-head"><div><h2>Pairs as a matrix</h2><div class="muted" id="vm-note"></div></div><div class="controls" style="margin:0"><label class="ctl" title="the matrix shows every pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="vm-show"><option value="all">every pair</option><option value="10">past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label><label class="ctl">Colors <select id="vm-cs">${['Viridis', 'Blues', 'YlGnBu', 'Reds', 'Grays', 'Cividis'].map((k) => `<option>${k}</option>`).join('')}</select></label></div></div>
       <div id="vm-comm" class="hm-comm" hidden></div><div id="vm-heat" style="width:100%"></div><div class="legend" id="vm-key"></div></div>
     <div class="card"><div class="card-head"><h2>Pairs <span class="muted" id="vp-note"></span></h2><div class="controls" style="margin:0"><label class="ctl" title="list each protein's pair with itself as well"><input type="checkbox" id="vp-homo"> Homodimers</label><input type="search" id="vp-find" placeholder="Filter pairs" aria-label="Filter pairs by protein" style="width:170px"><button class="btn" id="vp-csv" type="button">↓ CSV</button></div></div>
       <p class="legend-text">iLIS and ipTM are colored by the false-positive-rate band they pass, each by its own benchmarked cutoffs (every cutoff is on the About page).</p><div class="legend" style="margin:0 0 10px">
