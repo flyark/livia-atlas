@@ -1443,22 +1443,23 @@ const uniprotJson = (acc) => { if (!acc) return Promise.resolve(null);
   if (!UJSON.has(acc)) UJSON.set(acc, fetch(`https://rest.uniprot.org/uniprotkb/${encodeURIComponent(acc)}.json`).then((r) => (r.ok ? r.json() : null)).catch(() => { UJSON.delete(acc); return null; }));
   return UJSON.get(acc); };
 async function proteinSeqOf(sp, r) {
-  const fromBundle = async () => {
-    for (const o of r.occ || []) {
-      try {
-        const ds = await dataset(sp.dsIds[o.di]), raw = await bundleRaw(ds, o.name);
-        const s = (raw.seqs && raw.seqs.get(o.name)) || (raw.cons && raw.cons.get(o.name) && raw.cons.get(o.name).seq) || '';
-        if (s) return s.replace(/\s+/g, '').toUpperCase();
-      } catch (e) { /* next screen */ }
-    }
+  const fromAtlas = async () => {
+    const s0 = (await seqOf(sp, r).catch(() => '')).replace(/\s+/g, '').toUpperCase();
+    if (s0) return s0;
+    try {
+      const B = await merged(sp, r);
+      const sb = (B && B.seqs && (B.seqs.get(r.key) || [...B.seqs.values()][0])) || '';
+      if (sb) return sb.replace(/\s+/g, '').toUpperCase();
+    } catch (e) { /* no bundle */ }
     return '';
   };
+  const acc0 = String(r.acc || '').trim().split(/[\s,;]+/)[0] || '';
   const isPep = String(r.key || '').includes('_p');
-  if (isPep || !r.acc) {
-    const b = await fromBundle();
+  if (isPep || !acc0) {
+    const b = await fromAtlas();
     if (b) return b;
-    if (isPep && r.acc) {
-      const j = await uniprotJson(r.acc), full = (j && j.sequence && j.sequence.value) ? j.sequence.value.toUpperCase() : '';
+    if (isPep && acc0) {
+      const j = await uniprotJson(acc0), full = (j && j.sequence && j.sequence.value) ? j.sequence.value.toUpperCase() : '';
       const wantLen = r.clen || r.len || 0, norm = (s) => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, '');
       const wantNm = norm(r.name);
       if (full && Array.isArray(j.features)) {
@@ -1470,9 +1471,12 @@ async function proteinSeqOf(sp, r) {
       }
       return wantLen && full.length === wantLen ? full : '';
     }
+    return '';
   }
-  const u = r.acc ? (await uniprotSeq(r.acc)).replace(/\s+/g, '').toUpperCase() : '';
-  return u || fromBundle();
+  const local = await seqOf(sp, r).catch(() => '');
+  if (local && local.trim()) return local.replace(/\s+/g, '').toUpperCase();
+  const u = (await uniprotSeq(acc0)).replace(/\s+/g, '').toUpperCase();
+  return u || fromAtlas();
 }
 function cleanAf3Seq(seq) {
   const map = { U: 'C', O: 'K', B: 'D', Z: 'E', J: 'L', X: 'A' };
@@ -1500,12 +1504,35 @@ async function exportComplexSeqs(sp, rows, stem, mode, btn) {
     return;
   }
   const safeStem = String(stem || 'atlas_proteins').replace(/[^\w.-]+/g, '_');
+  const chId = (n) => (n < 26 ? String.fromCharCode(65 + n) : String.fromCharCode(65 + Math.floor(n / 26) - 1) + String.fromCharCode(65 + (n % 26)));
   if (mode === 'af3') {
     const jobName = safeStem.replace(/[^A-Za-z0-9_.: -]/g, '_').slice(0, 100) || 'livia_atlas_complex';
     const chains = have.map(({ r, seq }) => ({ proteinChain: { sequence: cleanAf3Seq(seq), count: counts.get(r.key) || 1 } })).filter((c) => c.proteinChain.sequence.length > 0);
     const payload = JSON.stringify([{ name: jobName, modelSeeds: [], sequences: chains, dialect: 'alphafoldserver', version: 1 }], null, 2) + '\n';
     const u = URL.createObjectURL(new Blob([payload], { type: 'application/json' })), a = document.createElement('a');
     a.href = u; a.download = `${safeStem}_af3.json`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000);
+  } else if (mode === 'boltz') {
+    let ci = 0;
+    const blocks = [];
+    for (const { r, seq } of have) {
+      const cs = cleanAf3Seq(seq); if (!cs) continue;
+      const k = counts.get(r.key) || 1, ids = Array.from({ length: k }, () => chId(ci++));
+      blocks.push(`  - protein:\n      id: ${ids.length === 1 ? ids[0] : `[${ids.join(', ')}]`}\n      sequence: ${cs}`);
+    }
+    const yaml = `version: 1\nsequences:\n${blocks.join('\n')}\n`;
+    const u = URL.createObjectURL(new Blob([yaml], { type: 'text/yaml;charset=utf-8' })), a = document.createElement('a');
+    a.href = u; a.download = `${safeStem}_boltz.yaml`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000);
+  } else if (mode === 'colabfold') {
+    const seqs = [];
+    for (const { r, seq } of have) {
+      const cs = cleanAf3Seq(seq); if (!cs) continue;
+      const k = counts.get(r.key) || 1;
+      for (let t = 0; t < k; t++) seqs.push(cs);
+    }
+    const csvId = safeStem.replace(/[",\r\n:]+/g, '_');
+    const csv = `id,sequence\n${csvId},${seqs.join(':')}\n`;
+    const u = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' })), a = document.createElement('a');
+    a.href = u; a.download = `${safeStem}_colabfold.csv`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000);
   } else {
     const wrap60 = (s) => s.replace(/(.{60})/g, '$1\n').trim();
     const fasta = have.map(({ r, seq }) => `>${r.acc || r.key}|${r.gene || r.key}${r.name ? ' ' + short(r.name) : ''}\n${wrap60(seq)}`).join('\n') + '\n';
@@ -4862,7 +4889,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
         <div class="srcs">Predicted in ${srcRefs(sp, part.src)}${part.sets.length ? ` <span class="muted">· sets:</span> ${setBadges(part.sets)}` : ''}${scope ? ` <span class="muted">· only ${esc(label)} models shown · <a href="#/${sp.id}/${P.key}/${O.key}">every model</a></span>` : ''}</div>${consOnly ? `<div class="note" style="margin:8px 0">${esc(P.gene)} and ${esc(O.gene)} were folded only as constructs (${esc([...new Set(consPreds.flatMap((p) => [kindOf(p.qc), kindOf(p.pc)]).filter((k) => KIND_DROP.has(k)))].join(', '))}), which count nowhere gene-level; the scores below are those constructs'.</div>` : ''}${(() => { const d = consOnly ? null : isoSplit(B.cons, part.preds); return d ? `<div class="note" style="margin:8px 0"><b>Isoforms differ</b> at the 10% FPR cutoff (iLIS ${CUT[10]}): ${d.map((x) => `${esc(isoLab(x.q, x.ql))} × ${esc(isoLab(x.o, x.pl))} <b>${x.best.toFixed(3)}</b>`).join(' · ')}.</div>` : ''; })()}${(() => { const t = consOnly ? '' : overlapNote(sp, B, part.preds, P, true), cr = consPreds.length && !consOnly ? (() => { const by = new Map(); for (const p of consPreds) { const o = by.get(p.run) || { n: 0, best: 0, k: [kindOf(p.qc), kindOf(p.pc)].filter((x) => KIND_DROP.has(x)).join(', ') }; o.n++; o.best = Math.max(o.best, p.iLIS || 0); by.set(p.run, o); }
           return `<details class="ovl-all"><summary>Constructs: ${fmtInt(by.size)} run${by.size === 1 ? '' : 's'} not counted (phosphosite windows, mutants, tag or linker variants, engineered)</summary><ol>${[...by].sort((a, b) => b[1].best - a[1].best).map(([rid, o]) => `<li>${esc(runLabel(sp, B, rid, P))} <span class="muted">(${esc(o.k)}; ${o.n} model${o.n === 1 ? '' : 's'}; highest iLIS ${o.best.toFixed(3)})</span></li>`).join('')}</ol></details>`; })() : '';
         return t || cr ? `<div class="srcs muted ovl">${t}${cr}</div>` : ''; })()}
-        <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${O0 && O.key !== P.key ? `<a class="btn" href="#/network/${sp.id}?ids=${encodeURIComponent(P.key + ',' + O.key)}&amp;add=pair${scope ? '&amp;set=' + encodeURIComponent(setId) : ''}" title="shared partners of ${esc(P.gene)} and ${esc(O.gene)} plus each protein's top partners">Partner network →</a>` : ''}${O0 ? `<button class="btn" id="pair-fasta" type="button" title="download FASTA sequences of ${esc(P.gene)} and ${esc(O.gene)}">↓ FASTA</button><button class="btn" id="pair-af3" type="button" title="download an AlphaFold 3 Server input JSON for ${esc(P.gene)} and ${esc(O.gene)}">↓ AF3 JSON</button>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`, sp.dsIds.filter((_, i) => part.src & (1 << i)))}${(() => { const x = fpBest(B, part), fu = x && fpUrl(B, x.run); return fu ? `<a class="btn" href="${esc(fu)}" target="_blank" rel="noopener" title="${x === part.bm ? 'the best-iLIS model' : 'the best model that opens in LIVIA'}, in ${fpPage(B, x.run)} (structures and PAE read from FlyPredictome)">Open in LIVIA ↗</a>` : ''; })()}<span id="pair-struct"></span>${(() => { const di = part.preds.map((x) => x.di).find((d) => (REG.datasets.find((y) => y.id === sp.dsIds[d]) || {}).viewAt), va = di != null && REG.datasets.find((y) => y.id === sp.dsIds[di]).viewAt, acc = String(P.acc || P.key).split(/\s+/)[0].replace(/-\d+$/, '');   // the screen's own site (registry viewAt + the first protein's accession): a plain link, never a request from the page
+        <div class="actions"><a class="btn" href="#/${sp.id}/${P.key}">${esc(P.gene)} page</a>${O0 ? `<a class="btn" href="#/${sp.id}/${O.key}">${esc(O.gene)} page</a>` : ''}${O0 && O.key !== P.key ? `<a class="btn" href="#/network/${sp.id}?ids=${encodeURIComponent(P.key + ',' + O.key)}&amp;add=pair${scope ? '&amp;set=' + encodeURIComponent(setId) : ''}" title="shared partners of ${esc(P.gene)} and ${esc(O.gene)} plus each protein's top partners">Partner network →</a>` : ''}${O0 ? `<button class="btn" id="pair-fasta" type="button" title="download FASTA sequences of ${esc(P.gene)} and ${esc(O.gene)}">↓ FASTA</button><button class="btn" id="pair-af3" type="button" title="download an AlphaFold 3 Server input JSON for ${esc(P.gene)} and ${esc(O.gene)}">↓ AF3 JSON</button><button class="btn" id="pair-boltz" type="button" title="download a Boltz-2 input YAML for ${esc(P.gene)} and ${esc(O.gene)}">↓ Boltz YAML</button><button class="btn" id="pair-cf" type="button" title="download a ColabFold batch CSV for ${esc(P.gene)} and ${esc(O.gene)}">↓ ColabFold CSV</button>` : ''}${citeBtn(`${P.gene} × ${O.gene} (${sp.reg.label})`, sp.dsIds.filter((_, i) => part.src & (1 << i)))}${(() => { const x = fpBest(B, part), fu = x && fpUrl(B, x.run); return fu ? `<a class="btn" href="${esc(fu)}" target="_blank" rel="noopener" title="${x === part.bm ? 'the best-iLIS model' : 'the best model that opens in LIVIA'}, in ${fpPage(B, x.run)} (structures and PAE read from FlyPredictome)">Open in LIVIA ↗</a>` : ''; })()}<span id="pair-struct"></span>${(() => { const di = part.preds.map((x) => x.di).find((d) => (REG.datasets.find((y) => y.id === sp.dsIds[d]) || {}).viewAt), va = di != null && REG.datasets.find((y) => y.id === sp.dsIds[di]).viewAt, acc = String(P.acc || P.key).split(/\s+/)[0].replace(/-\d+$/, '');   // the screen's own site (registry viewAt + the first protein's accession): a plain link, never a request from the page
           return va ? `<a class="btn" href="${esc(va + encodeURIComponent(acc))}" target="_blank" rel="noopener" title="${esc(`${P.gene}'s predictions on Predictomes.org (Walter lab); find ${O.gene} in its list`)}">Predictomes.org ↗</a>` : ''; })()}</div></div>
       ${(() => { const nAll = part.preds.length, many = new Set(part.preds.map((x) => x.run)).size > 1, bestOf = one ? '' : many ? ` best of ${fmtInt(nAll)} model${plS(nAll)}` : ' best', ofRun = part.avgOther ? ` of its ${sp.dsShort[part.avgDi]} run (the best model came from a one-model run)` : many ? ' of the run with the highest iLIS' : '';   // folded in several runs: say which models each tile covers
       return `<div class="kpis"><div class="kpi"><b style="color:${BAND_TXT[b]}">${part.best.toFixed(3)}</b><span>iLIS${bestOf} ${bandChip(b)}</span></div>
@@ -4911,6 +4938,8 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   $('#model-pick').onchange = (e) => pick(+e.target.value);
   if ($('#pair-fasta')) $('#pair-fasta').onclick = (e) => exportComplexSeqs(sp, [P, O], `atlas_${sp.id}_${P.gene}_${O.gene}`, 'fasta', e.currentTarget);
   if ($('#pair-af3')) $('#pair-af3').onclick = (e) => exportComplexSeqs(sp, [P, O], `atlas_${sp.id}_${P.gene}_${O.gene}`, 'af3', e.currentTarget);
+  if ($('#pair-boltz')) $('#pair-boltz').onclick = (e) => exportComplexSeqs(sp, [P, O], `atlas_${sp.id}_${P.gene}_${O.gene}`, 'boltz', e.currentTarget);
+  if ($('#pair-cf')) $('#pair-cf').onclick = (e) => exportComplexSeqs(sp, [P, O], `atlas_${sp.id}_${P.gene}_${O.gene}`, 'colabfold', e.currentTarget);
   app.querySelectorAll('.models tbody tr').forEach((tr) => tr.onclick = () => pick(+tr.dataset.i));
   /* Interaction residues in 3D: each protein's own AlphaFold DB model, colored as in LIVIA's 3D viewer (Color by, Palette, LIR
      display) by the residues of the selected model, by its domains or by pLDDT; loaded when the card nears the view */
@@ -5713,7 +5742,7 @@ async function renderHeatMatrix(Pl, cfg) {   // shared interactive matrix with m
           + (picked.length >= 2 ? `<span class="seg hm-mode" role="group" aria-label="Cross-community matrix mode"><button type="button" data-m="sub" class="${st.mode === 'sub' ? 'on' : ''}" title="square submatrix of the selected communities, showing pairs inside each and pairs between them">With intra-community</button><button type="button" data-m="cross" class="${st.mode === 'cross' ? 'on' : ''}" title="${picked.length === 2 ? 'rectangular matrix with the first community as rows and the second as columns' : 'show only pairs between different selected communities'}">Between communities only</button></span>` : '')
           + (picked.length === 2 && st.mode === 'cross' ? `<button type="button" class="hm-act" data-swap="1" title="swap row and column communities">⇄ Swap axes</button>` : '')
           + (picked.length ? `<button type="button" class="hm-act" data-copy="1" title="copy the proteins of the selected communities, comma separated">Copy proteins</button>` : `<span class="muted">click two or more to inspect pairs between communities</span>`)
-          + (spObj && (picked.length || n <= 40) ? `<button type="button" class="hm-act" data-fasta="1" title="download FASTA sequences of ${picked.length ? 'the selected communities' : 'these proteins'}">↓ FASTA</button><button type="button" class="hm-act" data-af3="1" title="download an AlphaFold 3 Server input JSON for ${picked.length ? 'the selected communities' : 'these proteins'}">↓ AF3 JSON</button>` : '')
+          + (spObj && (picked.length || n <= 40) ? `<button type="button" class="hm-act" data-fasta="1" title="download FASTA sequences of ${picked.length ? 'the selected communities' : 'these proteins'}">↓ FASTA</button><button type="button" class="hm-act" data-af3="1" title="download an AlphaFold 3 Server input JSON for ${picked.length ? 'the selected communities' : 'these proteins'}">↓ AF3 JSON</button><button type="button" class="hm-act" data-boltz="1" title="download a Boltz-2 input YAML for ${picked.length ? 'the selected communities' : 'these proteins'}">↓ Boltz YAML</button><button type="button" class="hm-act" data-cf="1" title="download a ColabFold batch CSV for ${picked.length ? 'the selected communities' : 'these proteins'}">↓ ColabFold CSV</button>` : '')
           + `</div>` + xhtml;
         commEl.querySelector('[data-all]').onclick = () => { st.sel.clear(); st.swap = false; syncMatrixUrl(); drawSlice(); };
         commEl.querySelectorAll('[data-k]').forEach((b) => { b.onclick = () => { const k = b.dataset.k; if (st.sel.has(k)) st.sel.delete(k); else st.sel.add(k); st.swap = false; syncMatrixUrl(); drawSlice(); }; });
@@ -5726,6 +5755,8 @@ async function renderHeatMatrix(Pl, cfg) {   // shared interactive matrix with m
           navigator.clipboard && navigator.clipboard.writeText(list.join(', ')).then(() => { cp.textContent = `Copied ${fmtInt(list.length)}`; setTimeout(() => { if (cp.isConnected) cp.textContent = 'Copy proteins'; }, 1400); }); };
         const fb = commEl.querySelector('[data-fasta]'); if (fb) fb.onclick = () => exportComplexSeqs(spObj, selRows(), expStem(), 'fasta', fb);
         const ab = commEl.querySelector('[data-af3]'); if (ab) ab.onclick = () => exportComplexSeqs(spObj, selRows(), expStem(), 'af3', ab);
+        const bb = commEl.querySelector('[data-boltz]'); if (bb) bb.onclick = () => exportComplexSeqs(spObj, selRows(), expStem(), 'boltz', bb);
+        const cb2 = commEl.querySelector('[data-cf]'); if (cb2) cb2.onclick = () => exportComplexSeqs(spObj, selRows(), expStem(), 'colabfold', cb2);
       }
     }
     if (keyEl) keyEl.innerHTML = keyHtml;
@@ -6261,7 +6292,7 @@ async function viewNetwork(spId, q) {
     cut: q.get('cut') === 'c' ? 'c' : [10, 5, 1].includes(+q.get('cut')) ? +q.get('cut') : 5, res: Math.min(5, Math.max(0.1, +q.get('res') || 1)), lay: ['fr', 'kk', 'circle'].includes(q.get('lay')) ? q.get('lay') : 'force', lone: q.get('lone') === '1', cutv: Math.min(1, Math.max(CUT[10], +q.get('cutv') || 0.4)), iptm: Math.min(1, Math.max(0, +q.get('iptm') || 0)),
     set: scopes.some(([id]) => id === (q.get('set') || '')) ? q.get('set') || '' : '',
     mind: q.has('mind') && [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 2, mindUser: q.has('mind'), minq: q.get('minq') === '1', grp: !q.has('grp') ? 'leiden' : /^(comm|leiden|mcl|cc|col:.+)$/.test(q.get('grp')) ? q.get('grp') : '',   // Leiden communities unless the link says otherwise (grp=none), as LIVIA's network page
-    ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: ['open', 'add'].includes(q.get('click')) ? q.get('click') : 'select', col: null, data: [],   // exp: proteins expanded by a click (keys), in the order clicked
+    ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: ['open', 'add'].includes(q.get('click')) ? q.get('click') : 'select', rc: (q.get('rc') || '').split(',').map((s) => s.trim()).filter(Boolean), focusRc: q.get('focus') === 'rc', col: null, data: [],   // exp: proteins expanded by a click (keys), in the order clicked
     lseed: numIn(q.get('lseed'), 0, 999999, 0, true), liter: numIn(q.get('iters'), 0, 5000, 0, true), lspace: numIn(q.get('space'), 0.3, 3, 1), lrep: numIn(q.get('rep'), 0.2, 5, 1), lwt: q.get('wpull') !== '0',   // layout: seed (0: the fixed start), rounds (0: the layout's own number), spacing, repulsion, stronger pairs closer
     xsp: /^(all|[a-z0-9-]+)$/.test(q.get('xsp') || '') ? q.get('xsp') : '', xo: q.has('xo') ? (['never', 'below'].includes(q.get('xo')) ? q.get('xo') : '') : 'never',   // orthologs: the species checked, and the ortholog-only pairs drawn (dashed)
     infl: numIn(q.get('infl'), 1.2, 6, 2), cwt: ['iptm', 'eq'].includes(q.get('cw')) ? q.get('cw') : 'ilis', cruns: numIn(q.get('runs'), 1, 50, 1, true), cseed: numIn(q.get('cseed'), 0, 999999, 0, true), cmin: numIn(q.get('cmin'), 2, 50, 3, true),
@@ -6349,7 +6380,7 @@ async function viewNetwork(spId, q) {
           <label class="ctl" title="the palette of the communities: the network, its outlines, the Communities list, the community chord and the matrix. A color picked by hand in the Communities list stays">Community colors <select id="nw-pal">${Object.entries(PALETTES).map(([k, [l]]) => `<option value="${k}"${S.pal === k ? ' selected' : ''}>${esc(l)}</option>`).join('')}</select></label>
           <label class="ctl" title="draw only each protein's strongest pairs (a pair stays when it is among the strongest of either protein); 0 draws every pair. The communities are found on every pair">Strongest <input type="number" id="nw-topk" min="0" max="50" step="1" value="${S.topk}" style="width:52px"> pairs per protein</label>
           <label class="ctl" title="draw only the pairs inside a community"><input type="checkbox" id="nw-intra"${S.intra ? ' checked' : ''}> only pairs inside a community</label></div></div>
-        <span class="optlab">Share</span><div class="controls"><button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-copyids" type="button" title="copy every protein in this network (yours and the added partners), comma separated">Copy proteins</button><button class="btn" id="nw-useids" type="button" title="put every protein in this network into the input box and draw it again as the proteins-of-interest">Use as input</button><span class="ctl-sep" aria-hidden="true"></span><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button><button class="btn" id="nw-fasta" type="button" title="download FASTA sequences of the drawn proteins">↓ FASTA</button><button class="btn" id="nw-af3" type="button" title="download an AlphaFold 3 Server input JSON for the drawn proteins">↓ AF3 JSON</button><button class="btn" id="nw-save" type="button" title="a file with every setting that draws this network again: the proteins (and your table), cutoff, partners, layout and groups with their seeds, plus the Atlas and data versions and the result, so a drawing can be checked. Load it with Load settings, above">↓ Settings</button><span class="ctl-sep" aria-hidden="true"></span><button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div>
+        <span class="optlab">Share</span><div class="controls"><button class="btn" id="nw-link" type="button" title="copy a link that opens this network">Copy link</button><button class="btn" id="nw-copyids" type="button" title="copy every protein in this network (proteins-of-interest and added partners), comma separated">Copy proteins</button><button class="btn" id="nw-useids" type="button" title="put every protein in this network into the input box and draw it again as the proteins-of-interest">Use as input</button><span class="ctl-sep" aria-hidden="true"></span><button class="btn" id="nw-csv" type="button">↓ CSV</button><button class="btn" id="nw-graphml" type="button" title="the network for Cytoscape, Gephi or yEd: node group, edge iLIS, ipTM, screens and BioGRID publications">↓ GraphML</button><button class="btn" id="nw-fasta" type="button" title="download FASTA sequences of the drawn proteins">↓ FASTA</button><button class="btn" id="nw-af3" type="button" title="download an AlphaFold 3 Server input JSON for the drawn proteins">↓ AF3 JSON</button><button class="btn" id="nw-boltz" type="button" title="download a Boltz-2 input YAML for the drawn proteins">↓ Boltz YAML</button><button class="btn" id="nw-cf" type="button" title="download a ColabFold batch CSV for the drawn proteins">↓ ColabFold CSV</button><button class="btn" id="nw-save" type="button" title="a file with every setting that draws this network again: the proteins (and your table), cutoff, partners, layout and groups with their seeds, plus the Atlas and data versions and the result, so a drawing can be checked. Load it with Load settings, above">↓ Settings</button><span class="ctl-sep" aria-hidden="true"></span><button class="btn" id="nw-livia" type="button" title="the same network in LIVIA's network page: Leiden communities, layouts, Cytoscape export">Open in LIVIA Network ↗</button></div>
         <span class="optlab">Explore</span><div class="controls"><div class="ctl"><span>Click a protein to</span><div class="seg" id="nw-click"><button data-m="select" class="${S.click === 'select' ? 'on' : ''}" title="mark it and its pairs, the rest dimmed; nothing moves (click it again, or the background, to clear); ⌘ or Ctrl-click opens its page in a new tab">highlight it</button><button data-m="add" class="${S.click === 'add' ? 'on' : ''}" title="add its top partners past the cutoff, in place (the number per protein above); ⌘ or Ctrl-click opens its page in a new tab">add its partners</button><button data-m="open" class="${S.click === 'open' ? 'on' : ''}">open its page</button></div></div>
           <button class="btn" id="nw-unexp" type="button" style="display:none" title="remove the partners added by clicks">Undo added partners</button></div>
       </div>
@@ -6384,7 +6415,7 @@ async function viewNetwork(spId, q) {
   // The settings in the page's link: only those away from their defaults (all of them with all = true, for the settings file)
   const params = (all = false) => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }), put = (k, v, def) => { if (all || v !== def) qs.set(k, typeof v === 'boolean' ? (v ? '1' : '0') : v); };
     if (!S.kAuto && (all || S.add === 'top' || S.add === 'pair' || S.exp.length)) qs.set('k', S.k); qs.set('cut', S.cut); if (all || S.cut === 'c') qs.set('cutv', S.cutv); put('iptm', S.iptm, 0); if (all || S.add === 'link') qs.set('hops', S.hops);
-    put('mind', S.mind, S.add === 'pair' && !S.mindUser ? 1 : 2); put('minq', S.minq, false); put('lone', S.lone, false); put('set', S.set, ''); put('xsp', S.xsp, ''); if (S.xsp || all) put('xo', S.xo, 'never'); put('sig', S.sig, false); if (S.add === 'tree' || all) put('prize', S.prize, ''); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); put('exp', S.exp.join(','), ''); put('click', S.click, 'select');
+    put('mind', S.mind, S.add === 'pair' && !S.mindUser ? 1 : 2); put('minq', S.minq, false); put('lone', S.lone, false); put('set', S.set, ''); put('xsp', S.xsp, ''); if (S.xsp || all) put('xo', S.xo, 'never'); put('sig', S.sig, false); if (S.add === 'tree' || all) put('prize', S.prize, ''); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); put('exp', S.exp.join(','), ''); put('click', S.click, 'select'); put('rc', (S.rc || []).join(','), '');
     put('lay', S.lay, 'force'); put('lseed', S.lseed, 0); put('iters', S.liter, 0); put('space', S.lspace, 1); put('rep', S.lrep, 1); put('wpull', S.lwt, true);
     if (all || S.grp !== 'leiden') qs.set('grp', S.grp || 'none'); put('res', S.res, 1); put('infl', S.infl, 2); put('cw', S.cwt, 'ilis'); put('runs', S.cruns, 1); put('cseed', S.cseed, 0); put('cmin', S.cmin, 3);
     put('nsize', S.nsize, 1); put('ew', S.ewid, 1); put('lbdeg', S.lbdeg, 1); put('lbtop', S.lbtop, 0); put('lbsize', S.lbsize, 12); put('lbout', S.lbout, true); put('lbcol', S.lbcol.slice(1), '17263A'); put('nbord', S.nbord, true); put('hulls', S.hulls, false); put('pal', S.pal, 'tableau'); put('topk', S.topk, 0); put('intra', S.intra, false);
@@ -6775,8 +6806,8 @@ async function viewNetwork(spId, q) {
   // iLIS cutoff, one calibration for all). For the drawn proteins: pair key → [{ y: species, a2, b2 (names), k2 (that pair's
   // link), best }], one entry per species, its best ortholog pair. Species tables are read once and kept.
   const pk = (a, b) => (a < b ? `${a},${b}` : `${b},${a}`);
-  async function orthPairs(ids, c) {
-    const have = await orthSpecies(), ys = (S.xsp === 'all' ? [...have] : [S.xsp]).filter((y) => y !== sp.id && have.has(y) && (REG.species || []).some((s) => s.id === y));
+  async function orthPairs(ids, c, xspOpt = S.xsp) {
+    const have = await orthSpecies(), ys = (xspOpt === 'all' ? [...have] : [xspOpt]).filter((y) => y !== sp.id && have.has(y) && (REG.species || []).some((s) => s.id === y));
     const TOs = new Map(await Promise.all(ys.map(async (y) => [y, await orthTo(sp.id, y)])));   // one file per species; else the drawn proteins' shards
     const pres = ys.every((y) => TOs.get(y)) ? [] : [...new Set(ids.map((i) => sp.rows[i].key.slice(-2).toLowerCase()))], sh = new Map(await Promise.all(pres.map(async (p) => [p, await orthShard(sp.id, p, true)])));
     const orthKeys = (i, y) => { const k = sp.rows[i].key, T = TOs.get(y); if (T) return T.get(k) || []; const s = sh.get(k.slice(-2).toLowerCase()); return ((s && s[k] && s[k][y]) || []).map((x) => x[0]); };
@@ -6792,10 +6823,66 @@ async function viewNetwork(spId, q) {
     const lab = (y) => spName(((REG.species || []).find((s) => s.id === y) || {}).label || y);
     return { ev, ys: used, names: used.length ? used.map(lab).join(', ') : 'no species', lab, skipped: failed.length ? `the predictions of ${failed.map(lab).join(', ')} did not load` : '' };
   }
-  let rcArgs = null, rcSeen = false, rcRun = 0;
-  const RC_ST = { ids: null, userPicked: false, scale: 'len', resKind: 'clir', ribCol: 'prot', doms: true, selPair: null };
-  const RC_BUNDLES = new Map(), RC_DOMS = new Map(), RC_MAX = 12;
+  let rcArgs = null, rcSeen = false, rcRun = 0, rcOrthOpts = null;
+  const RC_ST = { ids: null, initTokens: S.rc.length ? S.rc.slice() : null, userPicked: false, scale: 'len', resKind: 'clir', ribCol: 'prot', doms: true, selPair: null, xsp: '', xspUser: false };
+  const RC_BUNDLES = new Map(), RC_DOMS = new Map(), RC_ORTH = new Map(), RC_MAX = 12;
   const RC_HUES = ['#6B21A8', '#2563EB', '#D97706', '#059669', '#DB2777', '#4F46E5', '#0D9488', '#9333EA', '#EA580C', '#0284C7'];
+  const syncRcUrl = () => {
+    S.rc = RC_ST.userPicked && RC_ST.ids && RC_ST.ids.length >= 2 ? RC_ST.ids.map((id) => sp.rows[id].key) : [];
+    history.replaceState(null, '', `#/network/${sp.id}?${params()}`);
+  };
+  const jumpToResChord = () => {
+    const t = $('#nw-reschord-wrap');
+    if (!t || t.hidden) return;
+    if (!rcSeen && rcArgs) { rcSeen = true; renderResChord(...rcArgs); }
+    window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' });
+  };
+  const curRcIdsOf = () => {
+    if (RC_ST.userPicked && RC_ST.ids && RC_ST.ids.length >= 2) return RC_ST.ids.slice();
+    if (!rcArgs) return [];
+    const [curNodes, curLinks, , , , curDeg, curQ] = rcArgs;
+    return defaultRcIds(curNodes, curLinks.filter((l) => !l.uonly), curDeg, curQ);
+  };
+  const toggleRcProtein = (id, jump = false) => {
+    if (!rcArgs) return;
+    const curIds = curRcIdsOf();
+    if (curIds.includes(id)) {
+      if (curIds.length <= 2) return;
+      RC_ST.ids = curIds.filter((x) => x !== id);
+    } else {
+      if (curIds.length >= RC_MAX) return;
+      RC_ST.ids = [...curIds, id];
+    }
+    RC_ST.userPicked = true;
+    syncRcUrl();
+    if (jump) { rcSeen = true; renderResChord(...rcArgs); jumpToResChord(); }
+    else if (rcSeen) renderResChord(...rcArgs);
+    if (net && net.syncPop) net.syncPop();
+  };
+  const loadRcCommunity = (gkVal, jump = false) => {
+    if (!gkVal || !rcArgs) return;
+    const [curNodes, curLinks, curGk] = rcArgs;
+    const pool = curNodes.filter((d) => curGk.get(d.id) === gkVal), poolIds = new Set(pool.map((d) => d.id));
+    if (pool.length < 2) return;
+    const gAdj = new Map(pool.map((d) => [d.id, new Map()]));
+    for (const l of curLinks) { if (l.uonly) continue; const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target;
+      if (poolIds.has(a) && poolIds.has(b)) { gAdj.get(a).set(b, l.best); gAdj.get(b).set(a, l.best); } }
+    const start = [...pool].sort((a, b) => (gAdj.get(b.id).size - gAdj.get(a.id).size) || (b.q - a.q) || a.row.gene.localeCompare(b.row.gene))[0];
+    const mem = [start.id];
+    while (mem.length < Math.min(8, pool.length)) {
+      let bestId = null, bestCnt = -1, bestSum = -1;
+      for (const d of pool) { if (mem.includes(d.id)) continue; const m = gAdj.get(d.id); let cnt = 0, sum = 0;
+        for (const p of mem) if (m.has(p)) { cnt++; sum += m.get(p); }
+        if (cnt > bestCnt || (cnt === bestCnt && sum > bestSum)) { bestId = d.id; bestCnt = cnt; bestSum = sum; } }
+      if (bestId == null) break;
+      mem.push(bestId);
+    }
+    RC_ST.ids = mem; RC_ST.userPicked = true; RC_ST.selPair = null;
+    syncRcUrl();
+    rcSeen = true; renderResChord(...rcArgs);
+    if (jump) jumpToResChord();
+    if (net && net.syncPop) net.syncPop();
+  };
   new IntersectionObserver((es) => { if (!rcSeen && rcArgs && es.some((e) => e.isIntersecting)) { rcSeen = true; renderResChord(...rcArgs); } }, { rootMargin: '450px' }).observe($('#nw-reschord-wrap'));
   const mergeResRanges = (arr, gap = 0) => {
     const xs = [...new Set(arr)].filter((n) => Number.isFinite(n) && n >= 1).sort((a, b) => a - b);
@@ -6868,7 +6955,8 @@ async function viewNetwork(spId, q) {
     const nodeById = new Map(nodes.map((d) => [d.id, d]));
     const defIds = defaultRcIds(nodes, atlasLinks, deg, Q);
     if (!RC_ST.userPicked || !RC_ST.ids) RC_ST.ids = defIds;
-    else { RC_ST.ids = RC_ST.ids.filter((id) => nodeById.has(id)).slice(0, RC_MAX); if (RC_ST.ids.length < 2) { RC_ST.ids = defIds; RC_ST.userPicked = false; } }
+    else { RC_ST.ids = RC_ST.ids.filter((id) => nodeById.has(id)).slice(0, RC_MAX); if (RC_ST.ids.length < 2) { RC_ST.ids = defIds; RC_ST.userPicked = false; syncRcUrl(); } }
+    if (!RC_ST.xspUser && S.xsp !== RC_ST.xsp) RC_ST.xsp = S.xsp;
     if (!host.dataset.init) {
       host.dataset.init = '1';
       host.innerHTML = `<div class="rc-pick"><span class="muted" style="font-weight:600">Proteins:</span><div class="rc-chips"></div>
@@ -6879,9 +6967,11 @@ async function viewNetwork(spId, q) {
         <div class="cc-bar" style="margin-top:4px">
           <label class="ctl">Arcs <select class="rc-scale"><option value="len">by sequence length</option><option value="compact">compact long proteins</option></select></label>
           <label class="ctl">Residues <select class="rc-kind"><option value="clir">contact (cLIR)</option><option value="lir">interaction (LIR)</option></select></label>
-          <label class="ctl">Ribbons <select class="rc-rcol"><option value="prot">protein colors</option><option value="ilis">iLIS band</option></select></label>
+          <label class="ctl">Ribbons <select class="rc-rcol"><option value="prot">protein colors</option><option value="ilis">iLIS band</option><option value="kb">BioGRID status</option></select></label>
+          <label class="ctl rc-xsp-wrap" hidden title="check pairs on this circle against predictions between their orthologs in another species">Orthologs <select class="rc-xsp" style="max-width:150px"></select></label>
           <label class="ctl"><input type="checkbox" class="rc-dom-cb" checked> Domains</label>
-          <span class="cc-sp"></span><button type="button" class="btn sm rc-copy" title="copy the names of the proteins selected on this circle">Copy proteins</button><button type="button" class="btn sm rc-fasta" title="download FASTA sequences of the proteins selected on this circle">↓ FASTA</button><button type="button" class="btn sm rc-af3" title="download an AlphaFold 3 Server input JSON for the proteins selected on this circle">↓ AF3 JSON</button></div>
+          <span class="cc-sp"></span><button type="button" class="btn sm rc-copy" title="copy the names of the proteins selected on this circle">Copy proteins</button><button type="button" class="btn sm rc-fasta" title="download FASTA sequences of the proteins selected on this circle">↓ FASTA</button><button type="button" class="btn sm rc-af3" title="download an AlphaFold 3 Server input JSON for the proteins selected on this circle">↓ AF3 JSON</button><button type="button" class="btn sm rc-boltz" title="download a Boltz-2 input YAML for the proteins selected on this circle">↓ Boltz YAML</button><button type="button" class="btn sm rc-cf" title="download a ColabFold batch CSV for the proteins selected on this circle">↓ ColabFold CSV</button></div>
+        <div class="legend rc-rkey" hidden style="margin:6px 0 2px"></div>
         <div class="cc-grid"><div><div class="rc-plot"></div><div class="rc-xbar"></div><p class="muted cc-off rc-note"></p></div>
           <div class="cc-side">
             <div class="cc-box rc-dom-box" hidden><div class="cc-h"><b>Domains on the circle</b></div><div class="muted cc-sub">Pfam domains along the selected sequences.</div><div class="rc-doms"></div></div>
@@ -6891,8 +6981,9 @@ async function viewNetwork(spId, q) {
       q('.rc-scale').onchange = (e) => { RC_ST.scale = e.target.value; if (rcArgs) renderResChord(...rcArgs); };
       q('.rc-kind').onchange = (e) => { RC_ST.resKind = e.target.value; if (rcArgs) renderResChord(...rcArgs); };
       q('.rc-rcol').onchange = (e) => { RC_ST.ribCol = e.target.value; if (rcArgs) renderResChord(...rcArgs); };
+      q('.rc-xsp').onchange = (e) => { RC_ST.xsp = e.target.value; RC_ST.xspUser = true; if (rcArgs) renderResChord(...rcArgs); };
       q('.rc-dom-cb').onchange = (e) => { RC_ST.doms = e.target.checked; if (rcArgs) renderResChord(...rcArgs); };
-      q('.rc-reset').onclick = () => { RC_ST.userPicked = false; RC_ST.selPair = null; if (rcArgs) renderResChord(...rcArgs); };
+      q('.rc-reset').onclick = () => { RC_ST.userPicked = false; RC_ST.selPair = null; syncRcUrl(); if (rcArgs) renderResChord(...rcArgs); if (net && net.syncPop) net.syncPop(); };
       q('.rc-clear-sel').onclick = () => { RC_ST.selPair = null; if (rcArgs) renderResChord(...rcArgs); };
       partnerSuggest(q('.rc-add'), () => {
         if (!rcArgs) return [];
@@ -6904,32 +6995,17 @@ async function viewNetwork(spId, q) {
         if (!val || !rcArgs) return;
         const curNodes = rcArgs[0], hit = curNodes.find((d) => d.row.gene.toLowerCase() === val) || curNodes.find((d) => d.row.gene.toLowerCase().startsWith(val));
         if (hit && !(RC_ST.ids || []).includes(hit.id) && (RC_ST.ids || []).length < RC_MAX) {
-          RC_ST.ids = [...(RC_ST.ids || []), hit.id]; RC_ST.userPicked = true; renderResChord(...rcArgs);
+          RC_ST.ids = [...(RC_ST.ids || []), hit.id]; RC_ST.userPicked = true; syncRcUrl(); renderResChord(...rcArgs); if (net && net.syncPop) net.syncPop();
         }
       };
-      q('.rc-grp-sel').onchange = (e) => {
-        const gkVal = e.target.value; e.target.value = ''; if (!gkVal || !rcArgs) return;
-        const [curNodes, curLinks, curGk] = rcArgs;
-        const pool = curNodes.filter((d) => curGk.get(d.id) === gkVal), poolIds = new Set(pool.map((d) => d.id));
-        if (pool.length < 2) return;
-        const gAdj = new Map(pool.map((d) => [d.id, new Map()]));
-        for (const l of curLinks) { if (l.uonly) continue; const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target;
-          if (poolIds.has(a) && poolIds.has(b)) { gAdj.get(a).set(b, l.best); gAdj.get(b).set(a, l.best); } }
-        const start = [...pool].sort((a, b) => (gAdj.get(b.id).size - gAdj.get(a.id).size) || (b.q - a.q) || a.row.gene.localeCompare(b.row.gene))[0];
-        const mem = [start.id];
-        while (mem.length < Math.min(8, pool.length)) {
-          let bestId = null, bestCnt = -1, bestSum = -1;
-          for (const d of pool) { if (mem.includes(d.id)) continue; const m = gAdj.get(d.id); let cnt = 0, sum = 0;
-            for (const p of mem) if (m.has(p)) { cnt++; sum += m.get(p); }
-            if (cnt > bestCnt || (cnt === bestCnt && sum > bestSum)) { bestId = d.id; bestCnt = cnt; bestSum = sum; } }
-          if (bestId == null) break;
-          mem.push(bestId);
-        }
-        RC_ST.ids = mem; RC_ST.userPicked = true; RC_ST.selPair = null; renderResChord(...rcArgs);
-      };
+      q('.rc-grp-sel').onchange = (e) => { const gkVal = e.target.value; e.target.value = ''; if (gkVal) loadRcCommunity(gkVal, false); };
     }
     const q = (s) => host.querySelector(s);
     q('.rc-scale').value = RC_ST.scale; q('.rc-kind').value = RC_ST.resKind; q('.rc-rcol').value = RC_ST.ribCol; q('.rc-dom-cb').checked = RC_ST.doms;
+    if (rcOrthOpts) {
+      q('.rc-xsp-wrap').hidden = false;
+      q('.rc-xsp').innerHTML = rcOrthOpts.map(([v, l]) => `<option value="${esc(v)}"${v === RC_ST.xsp ? ' selected' : ''}>${esc(l)}</option>`).join('');
+    } else q('.rc-xsp-wrap').hidden = true;
     q('.rc-reset').hidden = !RC_ST.userPicked;
     q('.rc-add').disabled = RC_ST.ids.length >= RC_MAX;
     q('.rc-add').placeholder = RC_ST.ids.length >= RC_MAX ? `Max ${RC_MAX} proteins` : '+ Add protein';
@@ -6955,7 +7031,7 @@ async function viewNetwork(spId, q) {
       return `<button type="button" class="rc-chip" data-id="${id}" title="${selIds.length > 2 ? `Remove ${esc(r.gene)} from the circle` : 'Keep at least 2 proteins'}"><i style="background:${colMap.get(id)}"></i><span>${esc(r.gene)}</span>${L0 ? `<span class="rc-aa">${fmtInt(L0)}aa</span>` : ''}${selIds.length > 2 ? '<span class="rc-x" aria-hidden="true">×</span>' : ''}</button>`;
     }).join('');
     q('.rc-chips').querySelectorAll('.rc-chip').forEach((btn) => {
-      btn.onclick = () => { if (selIds.length <= 2) return; const id = +btn.dataset.id; RC_ST.ids = RC_ST.ids.filter((x) => x !== id); RC_ST.userPicked = true; if (rcArgs) renderResChord(...rcArgs); };
+      btn.onclick = () => { if (selIds.length <= 2) return; const id = +btn.dataset.id; RC_ST.ids = RC_ST.ids.filter((x) => x !== id); RC_ST.userPicked = true; syncRcUrl(); if (rcArgs) renderResChord(...rcArgs); if (net && net.syncPop) net.syncPop(); };
     });
     // Quick-add pills for connected proteins not yet on the circle
     const candQuick = nodes.filter((d) => !selSet.has(d.id) && atlasLinks.some((l) => { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; return (a === d.id && selSet.has(b)) || (b === d.id && selSet.has(a)); }))
@@ -6964,7 +7040,7 @@ async function viewNetwork(spId, q) {
     if (candQuick.length && selIds.length < RC_MAX) {
       qkEl.hidden = false;
       qkEl.innerHTML = `<span>Add connected:</span>` + candQuick.map((d) => `<button type="button" class="rc-qbtn" data-id="${d.id}">+ ${esc(d.row.gene)}</button>`).join('');
-      qkEl.querySelectorAll('.rc-qbtn').forEach((b) => { b.onclick = () => { const id = +b.dataset.id; if (!RC_ST.ids.includes(id) && RC_ST.ids.length < RC_MAX) { RC_ST.ids = [...RC_ST.ids, id]; RC_ST.userPicked = true; if (rcArgs) renderResChord(...rcArgs); } }; });
+      qkEl.querySelectorAll('.rc-qbtn').forEach((b) => { b.onclick = () => { const id = +b.dataset.id; if (!RC_ST.ids.includes(id) && RC_ST.ids.length < RC_MAX) { RC_ST.ids = [...RC_ST.ids, id]; RC_ST.userPicked = true; syncRcUrl(); if (rcArgs) renderResChord(...rcArgs); if (net && net.syncPop) net.syncPop(); } }; });
     } else qkEl.hidden = true;
 
     const pairLinks = atlasLinks.filter((l) => { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; return selSet.has(a) && selSet.has(b); });
@@ -6977,7 +7053,16 @@ async function viewNetwork(spId, q) {
     { let rem = needPairs.filter(([a, b]) => !RC_BUNDLES.has(`${S.set}|${a}`) && !RC_BUNDLES.has(`${S.set}|${b}`));
       while (rem.length) { const cnt = new Map(); for (const [a, b] of rem) { cnt.set(a, (cnt.get(a) || 0) + 1); cnt.set(b, (cnt.get(b) || 0) + 1); }
         const top = [...cnt].sort((x, y) => y[1] - x[1])[0][0]; cover.add(top); rem = rem.filter(([a, b]) => a !== top && b !== top); } }
-    await Promise.all([...cover].map(rcBundleOf));
+    let rcXO = null;
+    const orthTask = (async () => {
+      if (!RC_ST.xsp) return null;
+      if (RC_ST.xsp === S.xsp && net && net.XO) return net.XO;
+      const ok = `${RC_ST.xsp}|${cutV()}|${[...selIds].sort((a, b) => a - b).join(',')}`;
+      if (!RC_ORTH.has(ok)) RC_ORTH.set(ok, orthPairs(selIds, cutV(), RC_ST.xsp).catch(() => null));
+      return RC_ORTH.get(ok);
+    })();
+    const kbTask = (RC_ST.ribCol === 'kb' && KBN === undefined) ? reported(sp).catch(() => null).then((res) => { KBN = res; }) : Promise.resolve();
+    [, rcXO] = await Promise.all([Promise.all([...cover].map(rcBundleOf)), orthTask, kbTask]);
     if (stale(gen) || myRun !== rcRun) return;
 
     const lenMap = new Map(selIds.map((id) => [id, Math.max(1, sp.rows[id].len || sp.rows[id].clen || 1)]));
@@ -6989,6 +7074,7 @@ async function viewNetwork(spId, q) {
       const Ba = haveA ? await rcBundleOf(a) : null, Bb = haveB ? await rcBundleOf(b) : null;
       const u = Ba ? a : b, v = Ba ? b : a, Bu = Ba || Bb;
       if (!Bu) continue;
+      await linkMaps(sp, Bu);
       let Bv = Ba ? Bb : Ba;
       const vKey = sp.rows[v].key, cands = Bu.preds.filter((p) => p.partner === vKey);
       if (!cands.length) continue;
@@ -7001,9 +7087,15 @@ async function viewNetwork(spId, q) {
       lenMap.set(v, Math.max(lenMap.get(v) || 1, sv.len || 1));
       const uL = expand(bestP.qL).map((r) => r + su.shift), uC = expand(bestP.qC).map((r) => r + su.shift);
       const vL = expand(bestP.pL).map((r) => r + sv.shift), vC = expand(bestP.pC).map((r) => r + sv.shift);
+      const pubs = KBN ? KBN.pubs(a, b) : (l.pubs || 0), genCnt = KBN ? KBN.gen(a, b) : (l.gen || 0);
+      const cons = RC_ST.xsp ? ((rcXO && rcXO.ev.get(pk(a, b))) || null) : (l.cons || null);
+      const fu = fpUrl(Bu, bestP.run), pm = !fu ? predPick(sp, Bu, cands, bestP) : null;
+      const liviaHtml = fu ? `<a class="fp-open" href="${esc(fu)}" target="_blank" rel="noopener" title="open this run in LIVIA">LIVIA ↗</a>`
+        : pm ? predLinkOf(sp, Bu, pm, 'fp-open', 'LIVIA ↗')
+        : (sp.viruses || (isAfdbRun(sp, bestP) && sp.reg && sp.reg.structs)) ? `<span class="rc-afdb3d" data-a="${a}" data-b="${b}"></span>` : '';
       pairData.push(u === a
-        ? { key, a, b, best: l.best, iptm: l.iptm, lA: uL, cA: uC, lB: vL, cB: vC }
-        : { key, a, b, best: l.best, iptm: l.iptm, lA: vL, cA: vC, lB: uL, cB: uC });
+        ? { key, a, b, best: l.best, iptm: l.iptm, pubs, gen: genCnt, cons, liviaHtml, lA: uL, cA: uC, lB: vL, cB: vC }
+        : { key, a, b, best: l.best, iptm: l.iptm, pubs, gen: genCnt, cons, liviaHtml, lA: vL, cA: vC, lB: uL, cB: uC });
     }
     pairData.sort((x, y) => y.best - x.best);
     if (RC_ST.selPair && !pairData.some((p) => p.key === RC_ST.selPair)) RC_ST.selPair = null;
@@ -7049,23 +7141,37 @@ async function viewNetwork(spId, q) {
       });
     }
     ribbons.sort((x, y) => x.pr.best - y.pr.best);
+    const orthLab = (y) => spName(((REG.species || []).find((s) => s.id === y) || {}).label || y);
+    const rKeyEl = q('.rc-rkey');
+    if (RC_ST.ribCol === 'ilis') {
+      rKeyEl.hidden = false;
+      rKeyEl.innerHTML = [1, 5, 10].map((f) => `<span><i style="background:${BAND[f]}"></i>${f}% FPR (iLIS ≥ ${CUT[f]})</span>`).join('');
+    } else if (RC_ST.ribCol === 'kb') {
+      rKeyEl.hidden = false;
+      rKeyEl.innerHTML = KBN === null ? `<span class="muted">No BioGRID records for ${esc(sp.reg.label)}</span>`
+        : `<span><i style="background:${KB_COL.p}"></i>BioGRID physical</span><span><i style="background:${KB_COL.g}"></i>genetic</span><span><i style="background:${KB_COL.pg}"></i>both</span><span><i style="background:#B8C4D0"></i>not in BioGRID</span>`;
+    } else { rKeyEl.hidden = true; rKeyEl.innerHTML = ''; }
     const ribGen = d3.ribbon().radius(R_RIB);
     const ribFill = (rb) => {
       if (RC_ST.ribCol === 'ilis') return BAND[bandOf(rb.pr.best)];
+      if (RC_ST.ribCol === 'kb') return (rb.pr.pubs || rb.pr.gen) ? kbCol(rb.pr) : '#B8C4D0';
       const ca = colMap.get(rb.pr.a), cb = colMap.get(rb.pr.b); if (ca === cb) return ca;
       const p1 = pt((rb.a0 + rb.a1) / 2, R_RIB), p2 = pt((rb.b0 + rb.b1) / 2, R_RIB);
       const lg = defs.append('linearGradient').attr('id', rb.gid).attr('gradientUnits', 'userSpaceOnUse').attr('x1', p1[0]).attr('y1', p1[1]).attr('x2', p2[0]).attr('y2', p2[1]);
       lg.append('stop').attr('offset', '0%').attr('stop-color', ca); lg.append('stop').attr('offset', '100%').attr('stop-color', cb);
       return `url(#${rb.gid})`;
     };
-    const baseOp = (rb) => (RC_ST.selPair ? (rb.pr.key === RC_ST.selPair ? 0.86 : 0.08) : 0.48);
+    const baseOp = (rb) => (RC_ST.selPair ? (rb.pr.key === RC_ST.selPair ? 0.86 : 0.08) : RC_ST.ribCol === 'kb' ? ((rb.pr.pubs || rb.pr.gen) ? 0.72 : 0.28) : 0.48);
     const rbPaths = root.append('g').selectAll('path').data(ribbons).join('path')
       .attr('d', (rb) => ribGen({ source: { startAngle: rb.a0, endAngle: rb.a1 }, target: { startAngle: rb.b0, endAngle: rb.b1 } }))
       .attr('fill', ribFill).attr('fill-opacity', baseOp)
-      .attr('stroke', (rb) => (RC_ST.selPair === rb.pr.key ? '#17263A' : 'none')).attr('stroke-width', 0.8).style('cursor', 'pointer')
+      .attr('stroke', (rb) => (RC_ST.selPair === rb.pr.key ? '#17263A' : rb.pr.cons ? '#D99B16' : 'none'))
+      .attr('stroke-width', (rb) => (RC_ST.selPair === rb.pr.key ? 1.1 : rb.pr.cons ? 1.4 : 0.8)).style('cursor', 'pointer')
       .on('mouseenter', (ev, rb) => { rbPaths.attr('fill-opacity', (x) => (x.pr.key === rb.pr.key ? 0.88 : 0.1)); })
       .on('mousemove', (ev, rb) => { const pr = rb.pr;
-        showTip(`<b>${esc(gname(pr.a))}</b> (${fmtResSpan(pr.cA.length ? pr.cA : pr.lA)}) × <b>${esc(gname(pr.b))}</b> (${fmtResSpan(pr.cB.length ? pr.cB : pr.lB)})<br>best iLIS <b>${pr.best.toFixed(3)}</b>${Number.isFinite(pr.iptm) ? ` · ipTM ${pr.iptm.toFixed(2)}` : ''}<br>${pr.cA.length} &amp; ${pr.cB.length} contact residues (cLIR) · click to isolate, double-click for pair page`, ev.clientX, ev.clientY); })
+        const kbLine = (pr.pubs || pr.gen) ? `<br>reported in BioGRID (${kbPubs(pr.pubs, pr.gen)})` : '';
+        const orthLine = pr.cons ? `<br><b>conserved</b> in ${pr.cons.map((x) => `${orthLab(x.y)}: ${esc(x.a2)} × ${esc(x.b2)} (${x.best.toFixed(3)})`).join(', ')}` : '';
+        showTip(`<b>${esc(gname(pr.a))}</b> (${fmtResSpan(pr.cA.length ? pr.cA : pr.lA)}) × <b>${esc(gname(pr.b))}</b> (${fmtResSpan(pr.cB.length ? pr.cB : pr.lB)})<br>best iLIS <b>${pr.best.toFixed(3)}</b>${Number.isFinite(pr.iptm) ? ` · ipTM ${pr.iptm.toFixed(2)}` : ''}${kbLine}${orthLine}<br>${pr.cA.length} &amp; ${pr.cB.length} contact residues (cLIR) · click to isolate, double-click for pair page`, ev.clientX, ev.clientY); })
       .on('mouseleave', () => { hideTip(); rbPaths.attr('fill-opacity', baseOp); })
       .on('click', (ev, rb) => { RC_ST.selPair = RC_ST.selPair === rb.pr.key ? null : rb.pr.key; if (rcArgs) renderResChord(...rcArgs); })
       .on('dblclick', (ev, rb) => { hideTip(); window.open(`#/${sp.id}/${sp.rows[rb.pr.a].key}/${sp.rows[rb.pr.b].key}`, '_blank'); });
@@ -7155,25 +7261,39 @@ async function viewNetwork(spId, q) {
     }
     // Pairs table & CSV download
     q('.rc-clear-sel').hidden = !RC_ST.selPair;
-    q('.rc-psub').textContent = pairData.length ? `${fmtInt(pairData.length)} predicted pair${plS(pairData.length)} past iLIS ${cutV()} · click a row or ribbon to isolate its residues.` : `No predicted pair among these ${selIds.length} proteins past iLIS ${cutV()}.`;
+    const nConsRc = pairData.filter((p) => p.cons && p.cons.length).length;
+    q('.rc-psub').textContent = pairData.length ? `${fmtInt(pairData.length)} predicted pair${plS(pairData.length)} past iLIS ${cutV()}${nConsRc ? ` · ${fmtInt(nConsRc)} conserved in orthologs` : ''} · click a row or ribbon to isolate its residues.` : `No predicted pair among these ${selIds.length} proteins past iLIS ${cutV()}.`;
     q('.rc-pairs').innerHTML = pairData.length ? `<table><thead><tr><th>Pair</th><th>${RC_ST.resKind === 'lir' ? 'LIR spans' : 'cLIR spans'}</th><th class="n">iLIS</th><th></th></tr></thead><tbody>`
       + pairData.map((pr) => {
         const sA = fmtResSpan(RC_ST.resKind === 'lir' ? pr.lA : (pr.cA.length ? pr.cA : pr.lA));
         const sB = fmtResSpan(RC_ST.resKind === 'lir' ? pr.lB : (pr.cB.length ? pr.cB : pr.lB));
-        return `<tr data-pk="${pr.key}" class="${RC_ST.selPair === pr.key ? 'sel' : ''}"><td><span class="cc-dot" style="background:${colMap.get(pr.a)}"></span><b>${esc(gname(pr.a))}</b> × <span class="cc-dot" style="background:${colMap.get(pr.b)}"></span><b>${esc(gname(pr.b))}</b></td><td class="rc-span">${esc(sA)} × ${esc(sB)}</td><td class="n">${pr.best.toFixed(3)}</td><td class="lk"><a href="#/${sp.id}/${sp.rows[pr.a].key}/${sp.rows[pr.b].key}" target="_blank" rel="noopener" title="open the pair page in a new tab">pair ↗</a></td></tr>`;
+        const kbBadge = (pr.pubs || pr.gen) ? `<span class="rc-kb-dot" style="background:${kbCol(pr)}" title="reported in BioGRID (${esc(kbPubs(pr.pubs, pr.gen))})"></span>` : '';
+        const orthBadges = pr.cons && pr.cons.length ? `<div class="rc-orth-row">${pr.cons.slice(0, 3).map((x) => `<a class="rc-orth-pill" href="#/${x.y}/${x.k2}" target="_blank" rel="noopener" title="conserved ortholog pair in ${orthLab(x.y)}: ${esc(x.a2)} × ${esc(x.b2)} (best iLIS ${x.best.toFixed(3)})">★ ${orthLab(x.y)}: ${esc(x.a2)} × ${esc(x.b2)} ↗</a>`).join('')}${pr.cons.length > 3 ? `<span class="muted">+${pr.cons.length - 3}</span>` : ''}</div>` : '';
+        const lvSep = pr.liviaHtml && !pr.liviaHtml.includes('rc-afdb3d') ? `${pr.liviaHtml} · ` : pr.liviaHtml;
+        return `<tr data-pk="${pr.key}" class="${RC_ST.selPair === pr.key ? 'sel' : ''}"><td><span class="cc-dot" style="background:${colMap.get(pr.a)}"></span><b>${esc(gname(pr.a))}</b> × <span class="cc-dot" style="background:${colMap.get(pr.b)}"></span><b>${esc(gname(pr.b))}</b>${kbBadge}${orthBadges}</td><td class="rc-span">${esc(sA)} × ${esc(sB)}</td><td class="n">${pr.best.toFixed(3)}</td><td class="lk">${lvSep}<a href="#/${sp.id}/${sp.rows[pr.a].key}/${sp.rows[pr.b].key}" target="_blank" rel="noopener" title="open the pair page in a new tab">pair ↗</a></td></tr>`;
       }).join('') + `</tbody></table>` : '';
     q('.rc-pairs').querySelectorAll('tr[data-pk]').forEach((tr) => {
       tr.onclick = (ev) => { if (ev.target.closest('a')) return; RC_ST.selPair = RC_ST.selPair === tr.dataset.pk ? null : tr.dataset.pk; if (rcArgs) renderResChord(...rcArgs); };
+    });
+    q('.rc-pairs').querySelectorAll('.rc-afdb3d').forEach((el2) => {
+      pairStruct(sp, +el2.dataset.a, +el2.dataset.b).then((x) => {
+        if (stale(gen) || myRun !== rcRun || !el2.isConnected) return;
+        structLink(el2, x, 'fp-open', 'LIVIA ↗');
+        if (el2.childElementCount) el2.insertAdjacentText('afterend', ' · ');
+      }).catch(() => {});
     });
     const rcRows = () => selIds.map((id) => sp.rows[id]), rcStem = () => `atlas_${sp.id}_${selIds.slice(0, 4).map(gname).join('_')}${selIds.length > 4 ? `_plus${selIds.length - 4}` : ''}`;
     q('.rc-copy').onclick = async () => { const b = q('.rc-copy'), t = selIds.map(gname).join(', ');
       try { await navigator.clipboard.writeText(t); b.textContent = `Copied ${fmtInt(selIds.length)}`; } catch (e) { window.prompt('Copy these proteins:', t); } setTimeout(() => { if (b.isConnected) b.textContent = 'Copy proteins'; }, 1400); };
     q('.rc-fasta').onclick = (e) => exportComplexSeqs(sp, rcRows(), rcStem(), 'fasta', e.currentTarget);
     q('.rc-af3').onclick = (e) => exportComplexSeqs(sp, rcRows(), rcStem(), 'af3', e.currentTarget);
+    q('.rc-boltz').onclick = (e) => exportComplexSeqs(sp, rcRows(), rcStem(), 'boltz', e.currentTarget);
+    q('.rc-cf').onclick = (e) => exportComplexSeqs(sp, rcRows(), rcStem(), 'colabfold', e.currentTarget);
     q('.rc-csv').onclick = () => {
       const csvq = (v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v);
-      const head = ['protein_1', 'id_1', 'len_1', 'cLIR_1', 'LIR_1', 'protein_2', 'id_2', 'len_2', 'cLIR_2', 'LIR_2', 'iLIS_best', 'ipTM_best', 'pair_page'];
-      const rowsCsv = pairData.map((pr) => [gname(pr.a), sp.rows[pr.a].key, lenMap.get(pr.a), rangesOf(pr.cA), rangesOf(pr.lA), gname(pr.b), sp.rows[pr.b].key, lenMap.get(pr.b), rangesOf(pr.cB), rangesOf(pr.lB), pr.best.toFixed(3), Number.isFinite(pr.iptm) ? pr.iptm.toFixed(2) : '', `${location.origin}${location.pathname.replace(/index\.html$/, '')}#/${sp.id}/${sp.rows[pr.a].key}/${sp.rows[pr.b].key}`]);
+      const orthCol = (ev2) => (ev2 && ev2.length ? ev2.map((x) => `${((REG.species || []).find((z) => z.id === x.y) || {}).label || x.y}: ${x.a2} × ${x.b2} (${x.best.toFixed(3)})`).join('; ') : '');
+      const head = ['protein_1', 'id_1', 'len_1', 'cLIR_1', 'LIR_1', 'protein_2', 'id_2', 'len_2', 'cLIR_2', 'LIR_2', 'iLIS_best', 'ipTM_best', 'BioGRID_physical', 'BioGRID_genetic', 'orthologs', 'pair_page'];
+      const rowsCsv = pairData.map((pr) => [gname(pr.a), sp.rows[pr.a].key, lenMap.get(pr.a), rangesOf(pr.cA), rangesOf(pr.lA), gname(pr.b), sp.rows[pr.b].key, lenMap.get(pr.b), rangesOf(pr.cB), rangesOf(pr.lB), pr.best.toFixed(3), Number.isFinite(pr.iptm) ? pr.iptm.toFixed(2) : '', pr.pubs || 0, pr.gen || 0, orthCol(pr.cons), `${location.origin}${location.pathname.replace(/index\.html$/, '')}#/${sp.id}/${sp.rows[pr.a].key}/${sp.rows[pr.b].key}`]);
       const txt = '\ufeff' + [head, ...rowsCsv].map((r) => r.map(csvq).join(',')).join('\n') + '\n';
       const u = URL.createObjectURL(new Blob([txt], { type: 'text/csv;charset=utf-8' })), a = document.createElement('a'); a.href = u; a.download = `atlas_${sp.id}_residue_chord.csv`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000);
     };
@@ -7381,10 +7501,11 @@ async function viewNetwork(spId, q) {
       const nm = (k) => { const t = gname2.get(k) || k; return t.charAt(0).toUpperCase() + t.slice(1); };
       box2.hidden = false;
       box2.innerHTML = `<h3>Communities <span class="muted">${fmtInt(gl.length)}, of ${S.cmin} or more proteins</span></h3>` + (gl.length ? '' : `<p class="muted">No community of ${S.cmin} or more proteins.</p>`) + gl.map((m) => { const hub = m.mem[0];
-        return `<div class="nw-mod"><div class="hd"><input type="color" value="${GCOL(m.n)}" data-k="${esc(m.k)}" aria-label="color of ${esc(nm(m.k))}" title="community color">${esc(nm(m.k))}<a class="hub" href="#/${sp.id}/${hub.row.key}" title="the protein with the most pairs here: its page, with its partners and predicted binding sites">${esc(hub.row.gene)} →</a></div>
+        return `<div class="nw-mod"><div class="hd"><input type="color" value="${GCOL(m.n)}" data-k="${esc(m.k)}" aria-label="color of ${esc(nm(m.k))}" title="community color">${esc(nm(m.k))}<button type="button" class="nw-mod-rc" data-gk="${esc(m.k)}" title="load up to 8 connected proteins of this community into the Residue chord">Chord ↓</button><a class="hub" href="#/${sp.id}/${hub.row.key}" title="the protein with the most pairs here: its page, with its partners and predicted binding sites">${esc(hub.row.gene)} →</a></div>
           <div class="st">${fmtInt(m.mem.length)} protein${plS(m.mem.length)} · ${fmtInt(m.e)} pair${plS(m.e)} · mean iLIS ${m.mean.toFixed(3)}</div>
           <div class="mem">${m.mem.slice(0, 24).map((d) => `<a href="#/${sp.id}/${d.row.key}">${esc(d.row.gene)}</a>`).join(', ')}${m.mem.length > 24 ? ` <span class="muted">+${fmtInt(m.mem.length - 24)} more</span>` : ''}</div></div>`; }).join('');
       box2.querySelectorAll('input[type=color]').forEach((inp) => { inp.oninput = () => { GC.set(inp.dataset.k, inp.value); paintGroups(false); }; });
+      box2.querySelectorAll('.nw-mod-rc').forEach((btn) => { btn.onclick = () => loadRcCommunity(btn.dataset.gk, true); });
     };
     // the community colors changed (a palette, a hand pick): every place that shows them, nothing moves
     const paintGroups = (list = true) => { recolor(); hulls.select('path').attr('fill', (k, n) => GCOL(n)).attr('stroke', (k, n) => GCOL(n));
@@ -7392,8 +7513,9 @@ async function viewNetwork(spId, q) {
     mods();
     const placeLabels = liftLabels(g, node);
     hullLabG.raise();   // group names above the protein-name layer too
-    node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} pair${(deg.get(d.id) || 0) === 1 ? '' : 's'} in this network · ${fmtInt(d.row.pos10)} partner${plS(d.row.pos10)} past 10% FPR in the Atlas${SIG.has(d.id) ? (() => { const x = SIG.get(d.id), f = (v) => (v < 0.001 ? v.toExponential(1) : v.toFixed(3)); return `<br>pairs with ${fmtInt(x.k)} of the ${fmtInt(x.m)} protein${plS(x.m)}-of-interest${x.t ? ' it was folded with' : ''} · p ${f(x.p)}, q ${f(x.q)}${x.q <= 0.05 ? ' (more than chance)' : ''}`; })() : ''}${(S.data || []).filter((x) => x.vals.has(d.id)).map((x) => `<br>${esc(x.name)}: ${esc(String(x.vals.get(d.id)))}`).join('')}<br>${S.click === 'add' ? `click to add its top ${S.k} partner${plS(S.k)} · ${NEWTAB.replace('opens it', 'opens its page')}` : S.click === 'select' ? `click to highlight its pairs · ${NEWTAB.replace('opens it', 'opens its page')}` : `click opens its page in a new tab`}`, ev.clientX, ev.clientY))
+    node.on('mousemove', (ev, d) => showTip(`<b>${esc(d.row.gene)}</b>${d.row.name ? ` · ${esc(short(d.row.name))}` : ''}<br>${fmtInt(deg.get(d.id) || 0)} pair${(deg.get(d.id) || 0) === 1 ? '' : 's'} in this network · ${fmtInt(d.row.pos10)} partner${plS(d.row.pos10)} past 10% FPR in the Atlas${SIG.has(d.id) ? (() => { const x = SIG.get(d.id), f = (v) => (v < 0.001 ? v.toExponential(1) : v.toFixed(3)); return `<br>pairs with ${fmtInt(x.k)} of the ${fmtInt(x.m)} protein${plS(x.m)}-of-interest${x.t ? ' it was folded with' : ''} · p ${f(x.p)}, q ${f(x.q)}${x.q <= 0.05 ? ' (more than chance)' : ''}`; })() : ''}${(S.data || []).filter((x) => x.vals.has(d.id)).map((x) => `<br>${esc(x.name)}: ${esc(String(x.vals.get(d.id)))}`).join('')}<br>${S.click === 'add' ? `click to add its top ${S.k} partner${plS(S.k)} · Shift-click toggles Residue chord · ${NEWTAB.replace('opens it', 'opens its page')}` : S.click === 'select' ? `click to highlight &amp; add to Residue chord · Shift-click toggles directly · ${NEWTAB.replace('opens it', 'opens its page')}` : `click opens its page in a new tab · Shift-click toggles Residue chord`}`, ev.clientX, ev.clientY))
       .on('mouseleave', hideTip).on('click', (ev, d) => { if (ev.defaultPrevented) return; hideTip();
+        if (ev.shiftKey) { ev.stopPropagation(); toggleRcProtein(d.id, false); return; }
         if (ev.metaKey || ev.ctrlKey || S.click === 'open') { window.open(`#/${sp.id}/${d.row.key}`, '_blank'); return; }   // a new tab: the network stays where it is
         if (S.click === 'select') { ev.stopPropagation(); hl(SELN === d.id ? null : d.id); return; }
         S.exp.push(d.row.key);   // a second click on the same protein adds its next partners
@@ -7447,16 +7569,48 @@ async function viewNetwork(spId, q) {
       label.attr('fill', S.lbcol).attr('stroke', S.lbout ? 'rgba(255,255,255,0.92)' : 'none');
       hullG.attr('display', S.hulls ? null : 'none'); hullLabG.attr('display', S.hulls ? null : 'none'); drawHulls();
       restyle(); relabel(d3.zoomTransform(svg.node()).k); };
+    const popEl = el('<div class="nw-pop" hidden></div>');
+    box.appendChild(popEl);
+    const heatMeta = () => { const cat = S.grp.startsWith('col:'); return groups.map((k, n) => ({ name: gname2.get(k) || String(k), short: cat ? String(gname2.get(k) || k) : `C${CI[n] + 1}`, color: GCOL(n) })); };
+    rcArgs = [nodes, links, gk, groups, gname2, deg, Q, heatMeta];
+    if (RC_ST.initTokens) {
+      const toks = RC_ST.initTokens; RC_ST.initTokens = null;
+      const picked = [];
+      for (const t of toks) {
+        const low = t.toLowerCase();
+        const hit = nodes.find((d) => d.row.key.toLowerCase() === low || (d.row.acc && d.row.acc.toLowerCase() === low) || d.row.gene.toLowerCase() === low);
+        if (hit && !picked.includes(hit.id) && picked.length < RC_MAX) picked.push(hit.id);
+      }
+      if (picked.length >= 2) { RC_ST.ids = picked; RC_ST.userPicked = true; syncRcUrl(); }
+    }
+    const syncPop = () => {
+      if (!SELN || $('#nw-reschord-wrap').hidden && nodes.length < 2) { popEl.hidden = !SELN; if (!SELN) return; }
+      const d = nodes.find((n) => n.id === SELN);
+      if (!d) { popEl.hidden = true; return; }
+      const rcAvail = nodes.length >= 2 && links.some((l) => !l.uonly);
+      const curRc = rcAvail ? curRcIdsOf() : [], inRc = curRc.includes(d.id);
+      const canToggle = inRc ? curRc.length > 2 : curRc.length < RC_MAX;
+      const rcTxt = inRc ? (curRc.length > 2 ? '✓ In Residue chord (remove)' : '✓ In Residue chord') : curRc.length >= RC_MAX ? `Residue chord full (${RC_MAX})` : '+ Residue chord';
+      popEl.hidden = false;
+      popEl.innerHTML = `<div class="nw-pop-hd"><b>${esc(d.row.gene)}</b><span class="muted">· ${fmtInt(deg.get(d.id) || 0)} pair${plS(deg.get(d.id) || 0)}</span><button type="button" class="nw-pop-x" aria-label="Clear highlight">×</button></div>`
+        + `<div class="nw-pop-act">${rcAvail ? `<button type="button" class="btn sm nw-pop-rc"${canToggle ? '' : ' disabled'}>${rcTxt}</button><button type="button" class="btn sm nw-pop-jmp" title="scroll to the Residue chord">Chord ↓</button>` : ''}<a class="btn sm" href="#/${sp.id}/${d.row.key}" target="_blank" rel="noopener">Page ↗</a></div>`;
+      popEl.querySelector('.nw-pop-x').onclick = () => hl(null);
+      const rcBtn = popEl.querySelector('.nw-pop-rc');
+      if (rcBtn) rcBtn.onclick = () => toggleRcProtein(d.id, false);
+      const jmpBtn = popEl.querySelector('.nw-pop-jmp');
+      if (jmpBtn) jmpBtn.onclick = () => { if (!inRc && curRc.length < RC_MAX) toggleRcProtein(d.id, true); else jumpToResChord(); };
+    };
     // highlight (Click: highlight it): the protein, its partners and its pairs at full strength, the rest dimmed; nothing moves
     function hl(id) { SELN = id && nodes.some((n) => n.id === id) ? id : null; const ends = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
       const nb = new Set(SELN ? [SELN] : []); if (SELN) for (const l of [...links, ...extra, ...xo]) { const [a, b] = ends(l); if (a === SELN) nb.add(b); else if (b === SELN) nb.add(a); }
       node.attr('opacity', (d) => (!SELN || nb.has(d.id) ? null : 0.15));
       g.selectAll('text').filter(function () { const d = this.__data__; return d && d.row; }).attr('opacity', function () { return !SELN || nb.has(this.__data__.id) ? null : 0.15; });
       for (const sel of [link, dash, halo, xol]) sel.attr('opacity', (l) => { if (!SELN) return null; const [a, b] = ends(l); return a === SELN || b === SELN ? 1 : 0.05; });
-      restyle(); }
+      restyle(); syncPop(); }
     svg.on('click.hl', (ev) => { if (S.click === 'select' && SELN && !ev.defaultPrevented && !(ev.target.__data__ && ev.target.__data__.row)) hl(null); });
+    $('#nw-reschord-wrap').hidden = nodes.length < 2 || !links.some((l) => !l.uonly);
     hl(SELN);   // a redraw keeps the highlight
-    net = { link, nodes, links, extra, restyle, recolor, focus, gk, groups, gname2, gq, gnote, xo, XO, disp };
+    net = { link, nodes, links, extra, restyle, recolor, focus, gk, groups, gname2, gq, gnote, xo, XO, disp, syncPop };
     if (EXPECT) { const X = EXPECT; EXPECT = null; checkLoaded(X); }   // loaded settings: does this drawing match the saved one?
     function paintChord(keep = false) {   // the community chord: the groups of this drawing in their colors, every pair by its best iLIS
       const wrap = $('#nw-chord-wrap'), gidx = new Map(groups.map((k, n) => [k, n])), ix = new Map(nodes.map((d, i) => [d.id, i])), cat = S.grp.startsWith('col:');
@@ -7477,14 +7631,15 @@ async function viewNetwork(spId, q) {
               return `<a class="nw-sh-chip" href="#/${sp.id}/${d.row.key}" title="${aName} × ${esc(d.row.gene)}: iLIS ${va.toFixed(3)} · ${bName} × ${esc(d.row.gene)}: iLIS ${vb.toFixed(3)}"><i style="background:${ROLE_COLS.both}"></i><b>${esc(d.row.gene)}</b><span class="num">${va.toFixed(3)} · ${vb.toFixed(3)}</span></a>`;
             }).join('')}</div>` : '');
           const jmp = shEl.querySelector('.rc-jump');
-          if (jmp) jmp.onclick = (ev) => { ev.preventDefault(); const t = $('#nw-reschord-wrap'); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); };
+          if (jmp) jmp.onclick = (ev) => { ev.preventDefault(); jumpToResChord(); };
         } else { shEl.hidden = true; shEl.innerHTML = ''; }
       } }
     paintChord(); net.repaint = paintGroups; net.hl = hl;
-    const heatMeta = () => { const cat = S.grp.startsWith('col:'); return groups.map((k, n) => ({ name: gname2.get(k) || String(k), short: cat ? String(gname2.get(k) || k) : `C${CI[n] + 1}`, color: GCOL(n) })); };
-    rcArgs = [nodes, links, gk, groups, gname2, deg, Q, heatMeta];
-    $('#nw-reschord-wrap').hidden = nodes.length < 2 || !links.some((l) => !l.uonly);
-    if (rcSeen && !$('#nw-reschord-wrap').hidden) renderResChord(...rcArgs);
+    if (S.focusRc && !$('#nw-reschord-wrap').hidden) {
+      S.focusRc = false; rcSeen = true;
+      renderResChord(...rcArgs);
+      requestAnimationFrame(() => jumpToResChord());
+    } else if (rcSeen && !$('#nw-reschord-wrap').hidden) renderResChord(...rcArgs);
     heatArgs = [nodes, links, gk, groups, gname2, deg, heatMeta]; $('#nw-heat-wrap').hidden = nodes.length < 2; if (heatSeen) heatmap(...heatArgs);   // the matrix (Plotly, 1 MB) draws once its card is near the viewport
     mountSections();
   }
@@ -7553,8 +7708,10 @@ async function viewNetwork(spId, q) {
   orthSpecies().then((have) => { if (stale(gen) || !have.has(sp.id)) { S.xsp = ''; return; }
     const ys = [...have].filter((y) => y !== sp.id && (REG.species || []).some((s) => s.id === y)), lab = (y) => ((REG.species || []).find((s) => s.id === y) || {}).label || y;
     if (S.xsp && S.xsp !== 'all' && !ys.includes(S.xsp)) S.xsp = '';
+    rcOrthOpts = [['', 'none'], ['all', `every species (${ys.length})`], ...ys.map((y) => [y, lab(y)])];
     $('#nw-xsp').innerHTML = [['', 'none'], ['all', `every species with orthologs (${ys.length})`], ...ys.map((y) => [y, lab(y)])].map(([v, l]) => `<option value="${esc(v)}"${v === S.xsp ? ' selected' : ''}>${esc(l)}</option>`).join('');
-    $('#nw-xo').value = S.xo; $('#nw-xsp-wrap').hidden = false; $('#nw-xo-wrap').hidden = !S.xsp; });
+    $('#nw-xo').value = S.xo; $('#nw-xsp-wrap').hidden = false; $('#nw-xo-wrap').hidden = !S.xsp;
+    if (rcSeen && rcArgs) renderResChord(...rcArgs); });
   $('#nw-xsp').onchange = (e) => { S.xsp = e.target.value; $('#nw-xo-wrap').hidden = !S.xsp; redraw(); };
   $('#nw-xo').onchange = (e) => { S.xo = e.target.value; redraw(); };
   speciesCombo($('#nw-sp'), REG);
@@ -7584,6 +7741,8 @@ async function viewNetwork(spId, q) {
   const drawnRows = () => (net ? [...net.nodes].sort((a, b) => (b.q - a.q) || a.row.gene.localeCompare(b.row.gene)).map((d) => d.row) : []);
   $('#nw-fasta').onclick = (e) => exportComplexSeqs(sp, drawnRows(), `atlas_${sp.id}_network`, 'fasta', e.currentTarget);
   $('#nw-af3').onclick = (e) => exportComplexSeqs(sp, drawnRows(), `atlas_${sp.id}_network`, 'af3', e.currentTarget);
+  $('#nw-boltz').onclick = (e) => exportComplexSeqs(sp, drawnRows(), `atlas_${sp.id}_network`, 'boltz', e.currentTarget);
+  $('#nw-cf').onclick = (e) => exportComplexSeqs(sp, drawnRows(), `atlas_${sp.id}_network`, 'colabfold', e.currentTarget);
   $('#nw-link').onclick = async () => { const b = $('#nw-link'); try { await navigator.clipboard.writeText(location.href); b.textContent = yoursOn() ? 'Copied, without your predictions' : 'Copied'; } catch (e) { window.prompt('Copy this link:', location.href); } setTimeout(() => { b.textContent = 'Copy link'; }, 1500); };
   const yoursCol = (u) => (u ? `iLIS ${u.best.toFixed(3)}; ipTM ${Number.isFinite(u.iptm) ? u.iptm.toFixed(2) : 'NA'}; ${u.n} model${u.n === 1 ? '' : 's'}; ${u.name}` : '');   // your predictions' best model of the pair
   const rowsOut = () => (net ? net.links.map((l) => { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; return { a, b, l }; }) : []);
@@ -7629,7 +7788,7 @@ async function viewNetwork(spId, q) {
   const MEANING = { ids: 'proteins-of-interest, as the Atlas resolved them', add: "none: only these proteins; link: + partners linking them; top: + each one's top partners; pair: + shared & each one's top partners; tree: + the fewest partners connecting them (a Steiner tree, each pair costing 1.05 − best iLIS)", prize: 'tree: the table column whose numbers score each protein-of-interest (blank: none, every reachable one joins)', sig: '1: only added partners linking more proteins-of-interest than chance (BH q ≤ 0.05)', hops: 'partners a linking path may pass through (add = link)',
     k: 'partners per protein (add = top or pair, and per click); absent: picked for you', cut: 'cutoff: 10, 5 or 1 (% FPR), or c for the custom iLIS in cutv', cutv: 'custom iLIS cutoff (cut = c)', iptm: 'also require a best ipTM of at least this (0: none)',
     set: 'the screens used (blank: every screen)', mind: 'Min. pairs: added partners with fewer pairs in the drawing are hidden, repeatedly', minq: '1: Min. pairs applies to proteins-of-interest too', lone: '1: proteins with no pair are hidden',
-    color: 'what the proteins are colored by: role: for two-protein partner roles, a table column, or comm: for the communities', exp: 'proteins expanded by clicks, in the order clicked', click: 'what a click on a protein does',
+    color: 'what the proteins are colored by: role: for two-protein partner roles, a table column, or comm: for the communities', exp: 'proteins expanded by clicks, in the order clicked', click: 'what a click on a protein does', rc: 'proteins selected on the Residue chord circle (blank: chosen automatically)',
     lay: 'layout: force, fr (spring, Fruchterman-Reingold), kk (Kamada-Kawai) or circle', lseed: 'layout seed (0: the fixed start)', iters: "layout rounds (0: the layout's own number)", space: 'spacing (force, spring)', rep: 'repulsion (force)', wpull: '1: stronger pairs closer (force, spring)',
     grp: 'groups: leiden (the default), comm (Louvain), mcl (MCL), cc (connected parts), col:<table column> or none', res: 'resolution (Leiden, Louvain)', infl: 'inflation (MCL)', cw: 'pair weight for communities: ilis (best iLIS), iptm (best ipTM) or eq (equal)',
     runs: 'runs, the highest modularity kept (Leiden, Louvain)', cseed: 'community seed (0: the order of the list)', cmin: 'the smallest group outlined', pal: 'community palette: tableau (the default), okabe, muted, set2, observable or tab20',
