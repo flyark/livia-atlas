@@ -939,3 +939,24 @@ a[data-m3d] { white-space: nowrap; }
 .nw-sh-chip i, .nw-sh-chip .sh-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #6B21A8; flex: none; }
 .nw-sh-chip .num { font-size: 11.5px; color: var(--ink-3); font-family: var(--mono); }
 .nw-subsec { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line-2); scroll-margin-top: calc(var(--top-h) + 64px); }
+/* Residue chord: user-picked proteins around a sequence-scaled circle with domains and pairwise contact ribbons */
+.rc-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin: 8px 0 6px; padding: 8px 11px; background: #F8FAFC; border: 1px solid var(--line-2); border-radius: 9px; font-size: 13px; }
+.rc-chips { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.rc-chip { display: inline-flex; align-items: center; gap: 5px; padding: 3px 8px; border-radius: 999px; border: 1px solid var(--line); background: #fff; font: 500 12.5px var(--sans); color: var(--ink); cursor: pointer; transition: border-color .12s, background .12s; }
+.rc-chip:hover { border-color: var(--blue); }
+.rc-chip i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.rc-chip .rc-aa { font-size: 11px; color: var(--ink-3); font-family: var(--mono); }
+.rc-chip .rc-x { color: var(--ink-3); font-weight: 700; margin-left: 1px; line-height: 1; }
+.rc-chip:hover .rc-x { color: #B03A2E; }
+.rc-quick { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; margin: 4px 0 8px; font-size: 12px; color: var(--ink-3); }
+.rc-qbtn { all: unset; display: inline-flex; align-items: center; gap: 3px; padding: 2px 7px; border-radius: 999px; border: 1px dashed var(--line); background: #fff; color: var(--ink-2); font: 500 12px var(--sans); cursor: pointer; }
+.rc-qbtn:hover { border-color: var(--blue); color: var(--blue); border-style: solid; }
+.cc-grid > div { min-width: 0; }
+.rc-pick select { max-width: 100%; }
+.rc-plot svg { display: block; width: 100%; max-width: min(680px, 100%); height: auto; margin: 0 auto; }
+.rc-doms { display: grid; gap: 5px; font-size: 12.5px; line-height: 1.5; max-height: 210px; overflow: auto; }
+.rc-dom-row { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: baseline; }
+.rc-pairs tr.sel td { background: #EDF3FA; }
+.rc-pairs tr { cursor: pointer; }
+.rc-span { font-family: var(--mono); font-size: 11.5px; color: var(--ink-2); }
+.btn[hidden] { display: none; }

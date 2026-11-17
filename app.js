@@ -6358,6 +6358,7 @@ async function viewNetwork(spId, q) {
       <div class="netkey"><div class="kbkey" id="nw-key"></div><div class="kbkey" id="nw-nkey"></div>
         <div><span>Edge width · ${sp.one ? 'iLIS' : 'best iLIS'}</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div>
       <div class="nw-shared" id="nw-shared" hidden></div>
+<div class="nw-subsec" id="nw-reschord-wrap" data-subsec="Residue chord" hidden><div class="cc-head" style="margin-top:0"><h3>Residue chord</h3><div class="muted">Contact residues (cLIR), domains and predicted pairs around one circle for selected proteins.</div></div><div id="nw-reschord"></div></div>
 <div class="nw-subsec" id="nw-chord-wrap" data-subsec="Community chord" hidden><div class="cc-head" style="margin-top:0"><h3>Community chord</h3><div class="muted">The pairs between communities, around one circle.</div></div><div id="nw-chord"></div></div>
 <div class="nw-subsec" id="nw-heat-wrap" data-subsec="Pairs as a matrix" hidden><div class="card-head" style="margin-top:0"><h3 style="margin:0">Pairs as a matrix</h3><div class="controls" style="margin:0"><span class="muted" id="nw-heat-note"></span>
         <label class="ctl" title="the matrix shows every folded pair on one scale; this filter is its own, apart from the network's cutoff">Show <select id="nw-heat-show"><option value="all">every folded pair</option><option value="10">past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label>
@@ -6762,7 +6763,7 @@ async function viewNetwork(spId, q) {
       + `<br><span class="nw-sum-sub">${esc(howText)}${over ? ` · the first ${CAP} of ${fmtInt(over)} protein${plS(over)} drawn` : ''}${S.add === 'pair' ? ` · ${fmtInt(pairShared)} shared partner${plS(pairShared)} + up to ${S.k} top partner${plS(S.k)} per protein` : ''}${pruned ? ` · ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} hidden with fewer than ${S.mind} pair${S.mind === 1 ? '' : 's'} in the drawing` : ''}${lone ? ` · ${fmtInt(lone)} protein${lone === 1 ? '' : 's'} with no pair hidden` : ''}${treeInfo ? ` · the fewest partners connecting them: ${fmtInt(treeInfo.added)} added, joining ${treeInfo.joined === treeInfo.of ? `all ${fmtInt(treeInfo.of)}` : `${fmtInt(treeInfo.joined)} of ${fmtInt(treeInfo.of)}`} protein${plS(treeInfo.of)}-of-interest${treeInfo.joined < treeInfo.of ? ` (${treeInfo.of - treeInfo.joined === 1 ? `the other one ${treeInfo.prize ? 'is not worth a partner by its score, or ' : ''}was not reached by a short path; it is drawn as it is` : `the other ${fmtInt(treeInfo.of - treeInfo.joined)} ${treeInfo.prize ? 'are not worth a partner by their score, or ' : ''}were not reached by a short path; they are drawn as they are`})` : ''} (Steiner tree, total cost ${treeInfo.cost.toFixed(2)}${treeInfo.prize ? `; scores from ${esc(S.prize)}` : ''})` : ''}${sigCut ? ` · ${fmtInt(sigCut)} added partner${sigCut === 1 ? '' : 's'} hidden as linking no more proteins-of-interest than chance (q > 0.05)${treeInfo ? "; the tree's own partners are kept" : ''}` : ''}${S.add === 'link' && (links.length > 2000 || keep.size >= CAP) ? ` · a dense network: fewer partners in between, a higher Min. pairs or a stricter cutoff thins it` : ''}${hopCut ? ' · the search for linking partners stopped at the nearest ones in this dense network' : ''}${autoNote ? ` · ${esc(autoNote)}` : ''}</span>`);
     $('#nw-card').hidden = false;
     if (!links.length && EXPECT) { const X = EXPECT; EXPECT = null; POS0 = null; $('#nw-loaded').innerHTML = `<b>Not the saved result</b> · settings from ${esc(X.file)}: no predicted pair is drawn with these settings now.`; $('#nw-loaded').classList.add('bad'); $('#nw-loaded').hidden = false; }
-    if (!links.length) { ROLE_INFO = null; $('#nw-shared').hidden = true; $('#nw-chord-wrap').hidden = true; $('#nw-enrich').hidden = true; $('#nw-net').innerHTML = pruned && S.mind ? `<div class="empty">No predicted pair among these proteins at this cutoff, and the ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} were hidden by Min. pairs (fewer than ${S.mind} pair${plS(S.mind)}). Set Min. pairs lower, or try a lower cutoff.</div>` : '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; heatmap([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), [], new Map(), [], new Map(), new Map()); mountSections(); return; }   // the matrix still shows the pairs below this cutoff
+    if (!links.length) { ROLE_INFO = null; $('#nw-shared').hidden = true; $('#nw-reschord-wrap').hidden = true; $('#nw-chord-wrap').hidden = true; $('#nw-enrich').hidden = true; $('#nw-net').innerHTML = pruned && S.mind ? `<div class="empty">No predicted pair among these proteins at this cutoff, and the ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} were hidden by Min. pairs (fewer than ${S.mind} pair${plS(S.mind)}). Set Min. pairs lower, or try a lower cutoff.</div>` : '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; heatmap([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), [], new Map(), [], new Map(), new Map()); mountSections(); return; }   // the matrix still shows the pairs below this cutoff
     if (K === null) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
     if (TPN) for (const d of extra) { const k = fkey(d.source, d.target); if (!FOLD.has(k)) FOLD.set(k, TPN.has(d.source, d.target) ? { st: 'low', best: TPN.score ? TPN.score(d.source, d.target) : NaN } : { st: 'none' }); }   // the index says folded or not; the score comes on hover
     graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i), grew: grew.has(i), expd: expd.has(i) })), links, extra, seed, xo, XO, Q);
@@ -6788,6 +6789,388 @@ async function viewNetwork(spId, q) {
           if (!x) L.push(v); else if (e.best > x.best) Object.assign(x, v); } } }
     const lab = (y) => spName(((REG.species || []).find((s) => s.id === y) || {}).label || y);
     return { ev, ys: used, names: used.length ? used.map(lab).join(', ') : 'no species', lab, skipped: failed.length ? `the predictions of ${failed.map(lab).join(', ')} did not load` : '' };
+  }
+  let rcArgs = null, rcSeen = false, rcRun = 0;
+  const RC_ST = { ids: null, userPicked: false, scale: 'len', resKind: 'clir', ribCol: 'prot', doms: true, selPair: null };
+  const RC_BUNDLES = new Map(), RC_DOMS = new Map(), RC_MAX = 12;
+  const RC_HUES = ['#6B21A8', '#2563EB', '#D97706', '#059669', '#DB2777', '#4F46E5', '#0D9488', '#9333EA', '#EA580C', '#0284C7'];
+  new IntersectionObserver((es) => { if (!rcSeen && rcArgs && es.some((e) => e.isIntersecting)) { rcSeen = true; renderResChord(...rcArgs); } }, { rootMargin: '450px' }).observe($('#nw-reschord-wrap'));
+  const mergeResRanges = (arr, gap = 0) => {
+    const xs = [...new Set(arr)].filter((n) => Number.isFinite(n) && n >= 1).sort((a, b) => a - b);
+    if (!xs.length) return [];
+    const out = [[xs[0], xs[0]]];
+    for (let i = 1; i < xs.length; i++) { const last = out[out.length - 1]; if (xs[i] - last[1] <= 1 + gap) last[1] = xs[i]; else out.push([xs[i], xs[i]]); }
+    return out;
+  };
+  const fmtResSpan = (arr) => { const rs = mergeResRanges(arr, 1); if (!rs.length) return '–';
+    const parts = rs.map(([a, b]) => (a === b ? String(a) : `${a}–${b}`));
+    return parts.length <= 3 ? parts.join(', ') : `${parts.slice(0, 2).join(', ')} +${parts.length - 2}`; };
+  function defaultRcIds(nodes, links, deg, Q) {
+    const idSet = new Set(nodes.map((d) => d.id)), adj = new Map();
+    for (const d of nodes) adj.set(d.id, new Map());
+    for (const l of links) { if (l.uonly) continue; const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target;
+      if (idSet.has(a) && idSet.has(b)) { adj.get(a).set(b, l.best); adj.get(b).set(a, l.best); } }
+    if (ROLE_INFO) {
+      const { qA, qB, map, wA, wB } = ROLE_INFO, out = [qA, qB].filter((i) => idSet.has(i));
+      const sh = nodes.filter((d) => map.get(d.id) === 'both').sort((x, y) => ((wA.get(y.id) || 0) + (wB.get(y.id) || 0)) - ((wA.get(x.id) || 0) + (wB.get(x.id) || 0)) || x.row.gene.localeCompare(y.row.gene));
+      for (const d of sh) { if (out.length >= 8) break; if (!out.includes(d.id)) out.push(d.id); }
+      if (out.length < 5) {
+        const rest = nodes.filter((d) => !out.includes(d.id) && (adj.get(d.id) || new Map()).size > 0)
+          .sort((x, y) => Math.max(wA.get(y.id) || 0, wB.get(y.id) || 0) - Math.max(wA.get(x.id) || 0, wB.get(x.id) || 0) || x.row.gene.localeCompare(y.row.gene));
+        for (const d of rest) { if (out.length >= Math.min(6, nodes.length)) break; out.push(d.id); }
+      }
+      return out;
+    }
+    const conn = nodes.filter((d) => (adj.get(d.id) || new Map()).size > 0);
+    if (conn.length <= 8) return (conn.length >= 2 ? conn : nodes.slice(0, 8)).map((d) => d.id);
+    const seedNode = [...conn].sort((a, b) => (b.q - a.q) || ((adj.get(b.id).size) - (adj.get(a.id).size)) || a.row.gene.localeCompare(b.row.gene))[0];
+    const picked = [seedNode.id];
+    while (picked.length < 6) {
+      let bestId = null, bestLinks = -1, bestSum = -1, bestQ = -1;
+      for (const d of conn) {
+        if (picked.includes(d.id)) continue;
+        const m = adj.get(d.id); let cnt = 0, sum = 0;
+        for (const p of picked) if (m.has(p)) { cnt++; sum += m.get(p); }
+        const qv = Q.has(d.id) ? 1 : 0;
+        if (cnt > bestLinks || (cnt === bestLinks && (qv > bestQ || (qv === bestQ && sum > bestSum)))) { bestId = d.id; bestLinks = cnt; bestSum = sum; bestQ = qv; }
+      }
+      if (bestId == null) break;
+      picked.push(bestId);
+    }
+    return picked;
+  }
+  async function rcBundleOf(i) {
+    const k = `${S.set}|${i}`;
+    if (!RC_BUNDLES.has(k)) RC_BUNDLES.set(k, merged(sp, sp.rows[i], S.set, true).catch(() => null));
+    return RC_BUNDLES.get(k);
+  }
+  async function rcDomsOf(i, L) {
+    if (RC_DOMS.has(i)) return RC_DOMS.get(i);
+    const R = sp.rows[i]; if (!R || !R.acc) { RC_DOMS.set(i, []); return []; }
+    const job = domTable(R.acc).then((t) => {
+      if (!t || !t.doms) return [];
+      const fit = t.doms.filter((d) => d.start >= 1 && d.end <= L && d.end >= d.start).sort((a, b) => a.start - b.start || (b.end - b.start) - (a.end - a.start));
+      const kept = []; let end = 0;
+      for (const d of fit) if (d.start > end - 4) { kept.push({ ...d, idx: kept.length + 1 }); end = Math.max(end, d.end); }
+      return kept;
+    }).catch(() => []);
+    RC_DOMS.set(i, job);
+    return job;
+  }
+  async function renderResChord(nodes, links, gk, groups, gname2, deg, Q, gmetaFn = null) {
+    rcArgs = [nodes, links, gk, groups, gname2, deg, Q, gmetaFn];
+    const wrap = $('#nw-reschord-wrap'), host = $('#nw-reschord');
+    const atlasLinks = links.filter((l) => !l.uonly);
+    if (!wrap || !host || nodes.length < 2 || !atlasLinks.length) { if (wrap) wrap.hidden = true; return; }
+    wrap.hidden = false;
+    const nodeById = new Map(nodes.map((d) => [d.id, d]));
+    const defIds = defaultRcIds(nodes, atlasLinks, deg, Q);
+    if (!RC_ST.userPicked || !RC_ST.ids) RC_ST.ids = defIds;
+    else { RC_ST.ids = RC_ST.ids.filter((id) => nodeById.has(id)).slice(0, RC_MAX); if (RC_ST.ids.length < 2) { RC_ST.ids = defIds; RC_ST.userPicked = false; } }
+    if (!host.dataset.init) {
+      host.dataset.init = '1';
+      host.innerHTML = `<div class="rc-pick"><span class="muted" style="font-weight:600">Proteins:</span><div class="rc-chips"></div>
+          <input type="search" class="rc-add" placeholder="+ Add protein" aria-label="Add a protein to the residue chord" style="width:148px">
+          <select class="rc-grp-sel" aria-label="Load a group into the residue chord" hidden></select>
+          <button type="button" class="btn sm rc-reset" hidden>Reset</button></div>
+        <div class="rc-quick" hidden></div>
+        <div class="cc-bar" style="margin-top:4px">
+          <label class="ctl">Arcs <select class="rc-scale"><option value="len">by sequence length</option><option value="compact">compact long proteins</option></select></label>
+          <label class="ctl">Residues <select class="rc-kind"><option value="clir">contact (cLIR)</option><option value="lir">interaction (LIR)</option></select></label>
+          <label class="ctl">Ribbons <select class="rc-rcol"><option value="prot">protein colors</option><option value="ilis">iLIS band</option></select></label>
+          <label class="ctl"><input type="checkbox" class="rc-dom-cb" checked> Domains</label>
+          <span class="cc-sp"></span><button type="button" class="btn rc-csv">↓ Pairs CSV</button></div>
+        <div class="cc-grid"><div><div class="rc-plot"></div><div class="rc-xbar"></div><p class="muted cc-off rc-note"></p></div>
+          <div class="cc-side">
+            <div class="cc-box rc-dom-box" hidden><div class="cc-h"><b>Domains on the circle</b></div><div class="muted cc-sub">Pfam domains along the selected sequences.</div><div class="rc-doms"></div></div>
+            <div class="cc-box"><div class="cc-h"><b class="rc-ph">Predicted pairs on the circle</b><button type="button" class="btn sm rc-clear-sel" hidden>Show all</button></div><div class="muted cc-sub rc-psub">Click a ribbon or row to isolate one pair's residues.</div><div class="cc-pairs rc-pairs"></div></div>
+          </div></div>`;
+      const q = (s) => host.querySelector(s);
+      q('.rc-scale').onchange = (e) => { RC_ST.scale = e.target.value; if (rcArgs) renderResChord(...rcArgs); };
+      q('.rc-kind').onchange = (e) => { RC_ST.resKind = e.target.value; if (rcArgs) renderResChord(...rcArgs); };
+      q('.rc-rcol').onchange = (e) => { RC_ST.ribCol = e.target.value; if (rcArgs) renderResChord(...rcArgs); };
+      q('.rc-dom-cb').onchange = (e) => { RC_ST.doms = e.target.checked; if (rcArgs) renderResChord(...rcArgs); };
+      q('.rc-reset').onclick = () => { RC_ST.userPicked = false; RC_ST.selPair = null; if (rcArgs) renderResChord(...rcArgs); };
+      q('.rc-clear-sel').onclick = () => { RC_ST.selPair = null; if (rcArgs) renderResChord(...rcArgs); };
+      partnerSuggest(q('.rc-add'), () => {
+        if (!rcArgs) return [];
+        const curNodes = rcArgs[0], curSet = new Set(RC_ST.ids || []);
+        return curNodes.filter((d) => !curSet.has(d.id)).map((d) => ({ name: d.row.gene, best: 0, dot: d.q ? '#1A5276' : '#AEBBCA', sty: '', tip: `${fmtInt(d.row.len || d.row.clen || 0)} aa` })).sort((a, b) => a.name.localeCompare(b.name));
+      });
+      q('.rc-add').onchange = () => {
+        const val = q('.rc-add').value.trim().toLowerCase(); q('.rc-add').value = '';
+        if (!val || !rcArgs) return;
+        const curNodes = rcArgs[0], hit = curNodes.find((d) => d.row.gene.toLowerCase() === val) || curNodes.find((d) => d.row.gene.toLowerCase().startsWith(val));
+        if (hit && !(RC_ST.ids || []).includes(hit.id) && (RC_ST.ids || []).length < RC_MAX) {
+          RC_ST.ids = [...(RC_ST.ids || []), hit.id]; RC_ST.userPicked = true; renderResChord(...rcArgs);
+        }
+      };
+      q('.rc-grp-sel').onchange = (e) => {
+        const gkVal = e.target.value; e.target.value = ''; if (!gkVal || !rcArgs) return;
+        const [curNodes, curLinks, curGk] = rcArgs;
+        const pool = curNodes.filter((d) => curGk.get(d.id) === gkVal), poolIds = new Set(pool.map((d) => d.id));
+        if (pool.length < 2) return;
+        const gAdj = new Map(pool.map((d) => [d.id, new Map()]));
+        for (const l of curLinks) { if (l.uonly) continue; const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target;
+          if (poolIds.has(a) && poolIds.has(b)) { gAdj.get(a).set(b, l.best); gAdj.get(b).set(a, l.best); } }
+        const start = [...pool].sort((a, b) => (gAdj.get(b.id).size - gAdj.get(a.id).size) || (b.q - a.q) || a.row.gene.localeCompare(b.row.gene))[0];
+        const mem = [start.id];
+        while (mem.length < Math.min(8, pool.length)) {
+          let bestId = null, bestCnt = -1, bestSum = -1;
+          for (const d of pool) { if (mem.includes(d.id)) continue; const m = gAdj.get(d.id); let cnt = 0, sum = 0;
+            for (const p of mem) if (m.has(p)) { cnt++; sum += m.get(p); }
+            if (cnt > bestCnt || (cnt === bestCnt && sum > bestSum)) { bestId = d.id; bestCnt = cnt; bestSum = sum; } }
+          if (bestId == null) break;
+          mem.push(bestId);
+        }
+        RC_ST.ids = mem; RC_ST.userPicked = true; RC_ST.selPair = null; renderResChord(...rcArgs);
+      };
+    }
+    const q = (s) => host.querySelector(s);
+    q('.rc-scale').value = RC_ST.scale; q('.rc-kind').value = RC_ST.resKind; q('.rc-rcol').value = RC_ST.ribCol; q('.rc-dom-cb').checked = RC_ST.doms;
+    q('.rc-reset').hidden = !RC_ST.userPicked;
+    q('.rc-add').disabled = RC_ST.ids.length >= RC_MAX;
+    q('.rc-add').placeholder = RC_ST.ids.length >= RC_MAX ? `Max ${RC_MAX} proteins` : '+ Add protein';
+    const gmeta = typeof gmetaFn === 'function' ? gmetaFn() : Array.isArray(gmetaFn) ? gmetaFn : [];
+    const gSel = q('.rc-grp-sel');
+    if (groups.length >= 1) {
+      gSel.hidden = false;
+      gSel.innerHTML = `<option value="">Load group…</option>` + groups.map((k, n) => { const m = gmeta[n] || {}, cnt = nodes.filter((d) => gk.get(d.id) === k).length;
+        return cnt >= 2 ? `<option value="${esc(k)}">${esc(m.name || gname2.get(k) || k)} (${cnt > 8 ? 'top 8 of ' + fmtInt(cnt) : fmtInt(cnt)})</option>` : ''; }).join('');
+    } else gSel.hidden = true;
+    const selIds = RC_ST.ids.slice(), selSet = new Set(selIds);
+    const colMap = new Map();
+    if (ROLE_INFO) {
+      let hi = 0;
+      for (const id of selIds) {
+        if (id === ROLE_INFO.qA) colMap.set(id, ROLE_COLS.qA);
+        else if (id === ROLE_INFO.qB) colMap.set(id, ROLE_COLS.qB);
+        else colMap.set(id, RC_HUES[hi++ % RC_HUES.length]);
+      }
+    } else selIds.forEach((id, idx) => colMap.set(id, palHue(S.pal, idx)));
+    q('.rc-chips').innerHTML = selIds.map((id) => {
+      const r = sp.rows[id], L0 = r.len || r.clen || 0;
+      return `<button type="button" class="rc-chip" data-id="${id}" title="${selIds.length > 2 ? `Remove ${esc(r.gene)} from the circle` : 'Keep at least 2 proteins'}"><i style="background:${colMap.get(id)}"></i><span>${esc(r.gene)}</span>${L0 ? `<span class="rc-aa">${fmtInt(L0)}aa</span>` : ''}${selIds.length > 2 ? '<span class="rc-x" aria-hidden="true">×</span>' : ''}</button>`;
+    }).join('');
+    q('.rc-chips').querySelectorAll('.rc-chip').forEach((btn) => {
+      btn.onclick = () => { if (selIds.length <= 2) return; const id = +btn.dataset.id; RC_ST.ids = RC_ST.ids.filter((x) => x !== id); RC_ST.userPicked = true; if (rcArgs) renderResChord(...rcArgs); };
+    });
+    // Quick-add pills for connected proteins not yet on the circle
+    const candQuick = nodes.filter((d) => !selSet.has(d.id) && atlasLinks.some((l) => { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; return (a === d.id && selSet.has(b)) || (b === d.id && selSet.has(a)); }))
+      .sort((a, b) => (b.q - a.q) || ((deg.get(b.id) || 0) - (deg.get(a.id) || 0)) || a.row.gene.localeCompare(b.row.gene)).slice(0, 10);
+    const qkEl = q('.rc-quick');
+    if (candQuick.length && selIds.length < RC_MAX) {
+      qkEl.hidden = false;
+      qkEl.innerHTML = `<span>Add connected:</span>` + candQuick.map((d) => `<button type="button" class="rc-qbtn" data-id="${d.id}">+ ${esc(d.row.gene)}</button>`).join('');
+      qkEl.querySelectorAll('.rc-qbtn').forEach((b) => { b.onclick = () => { const id = +b.dataset.id; if (!RC_ST.ids.includes(id) && RC_ST.ids.length < RC_MAX) { RC_ST.ids = [...RC_ST.ids, id]; RC_ST.userPicked = true; if (rcArgs) renderResChord(...rcArgs); } }; });
+    } else qkEl.hidden = true;
+
+    const pairLinks = atlasLinks.filter((l) => { const a = typeof l.source === 'object' ? l.source.id : l.source, b = typeof l.target === 'object' ? l.target.id : l.target; return selSet.has(a) && selSet.has(b); });
+    const myRun = ++rcRun;
+    host.dataset.busy = '1';
+    if (!q('.rc-plot svg')) q('.rc-plot').innerHTML = `<div class="loading" style="padding:24px;text-align:center">Reading residue coordinates…</div>`;
+    // Greedy vertex cover over pairLinks so as few protein bundles as needed are fetched in parallel
+    const needPairs = pairLinks.map((l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target]);
+    const cover = new Set();
+    { let rem = needPairs.filter(([a, b]) => !RC_BUNDLES.has(`${S.set}|${a}`) && !RC_BUNDLES.has(`${S.set}|${b}`));
+      while (rem.length) { const cnt = new Map(); for (const [a, b] of rem) { cnt.set(a, (cnt.get(a) || 0) + 1); cnt.set(b, (cnt.get(b) || 0) + 1); }
+        const top = [...cnt].sort((x, y) => y[1] - x[1])[0][0]; cover.add(top); rem = rem.filter(([a, b]) => a !== top && b !== top); } }
+    await Promise.all([...cover].map(rcBundleOf));
+    if (stale(gen) || myRun !== rcRun) return;
+
+    const lenMap = new Map(selIds.map((id) => [id, Math.max(1, sp.rows[id].len || sp.rows[id].clen || 1)]));
+    const pairData = [];
+    for (const l of pairLinks) {
+      const a0 = typeof l.source === 'object' ? l.source.id : l.source, b0 = typeof l.target === 'object' ? l.target.id : l.target;
+      const a = Math.min(a0, b0), b = Math.max(a0, b0), key = `${a},${b}`;
+      const haveA = RC_BUNDLES.has(`${S.set}|${a}`), haveB = RC_BUNDLES.has(`${S.set}|${b}`);
+      const Ba = haveA ? await rcBundleOf(a) : null, Bb = haveB ? await rcBundleOf(b) : null;
+      const u = Ba ? a : b, v = Ba ? b : a, Bu = Ba || Bb;
+      if (!Bu) continue;
+      let Bv = Ba ? Bb : Ba;
+      const vKey = sp.rows[v].key, cands = Bu.preds.filter((p) => p.partner === vKey);
+      if (!cands.length) continue;
+      const passing = cands.filter((p) => passS(p.iLIS || 0, p.ipTM));
+      const bestP = (passing.length ? passing : cands).sort((x, y) => (y.iLIS || 0) - (x.iLIS || 0))[0];
+      if (!Bv && sp.manifest.keyedBy && sp.rows[v].len && bestP.pLen && bestP.pLen < sp.rows[v].len) Bv = await rcBundleOf(v);
+      const su = ifaceSide(Bu, sp.rows[u], bestP.qc, bestP.qLen);
+      const sv = Bv ? ifaceSide(Bv, sp.rows[v], bestP.pc, bestP.pLen) : { len: Math.max(sp.rows[v].len || sp.rows[v].clen || 1, bestP.pLen || 1), shift: 0 };
+      lenMap.set(u, Math.max(lenMap.get(u) || 1, su.len || 1));
+      lenMap.set(v, Math.max(lenMap.get(v) || 1, sv.len || 1));
+      const uL = expand(bestP.qL).map((r) => r + su.shift), uC = expand(bestP.qC).map((r) => r + su.shift);
+      const vL = expand(bestP.pL).map((r) => r + sv.shift), vC = expand(bestP.pC).map((r) => r + sv.shift);
+      pairData.push(u === a
+        ? { key, a, b, best: l.best, iptm: l.iptm, lA: uL, cA: uC, lB: vL, cB: vC }
+        : { key, a, b, best: l.best, iptm: l.iptm, lA: vL, cA: vC, lB: uL, cB: uC });
+    }
+    pairData.sort((x, y) => y.best - x.best);
+    if (RC_ST.selPair && !pairData.some((p) => p.key === RC_ST.selPair)) RC_ST.selPair = null;
+    const domMap = new Map(await Promise.all(selIds.map(async (id) => [id, RC_ST.doms ? await rcDomsOf(id, lenMap.get(id)) : []])));
+    if (stale(gen) || myRun !== rcRun) return;
+
+    // Draw the circular sequence + domain + contact ribbon SVG
+    const plotEl = q('.rc-plot'); plotEl.innerHTML = '';
+    const W = 800, C = 400, NS = 'http://www.w3.org/2000/svg';
+    const svg = d3.select(plotEl).append('svg').attr('viewBox', `0 0 ${W} ${W}`).attr('width', W).attr('height', W).attr('xmlns', NS).attr('font-family', "'IBM Plex Sans', Helvetica, Arial, sans-serif");
+    const root = svg.append('g').attr('transform', `translate(${C},${C})`), defs = svg.append('defs');
+    const padA = selIds.length <= 4 ? 0.08 : selIds.length <= 7 ? 0.062 : 0.044;
+    const avail = Math.max(0.5, 2 * Math.PI - padA * selIds.length), minArc = Math.min(0.16, avail / selIds.length * 0.45);
+    const rawW = selIds.map((id) => (RC_ST.scale === 'compact' ? Math.sqrt(lenMap.get(id)) : lenMap.get(id)));
+    const totW = rawW.reduce((s, v) => s + v, 0) || 1;
+    let spans = rawW.map((w) => Math.max(minArc, (w / totW) * avail));
+    const sumS = spans.reduce((s, v) => s + v, 0); spans = spans.map((v) => v * (avail / sumS));
+    const arcPos = new Map();
+    { let cur = 0; selIds.forEach((id, idx) => { arcPos.set(id, { s: cur, e: cur + spans[idx], L: lenMap.get(id) }); cur += spans[idx] + padA; }); }
+    const angAt = (id, r) => { const p = arcPos.get(id), cl = Math.max(0.5, Math.min(p.L + 0.5, r)); return p.s + ((cl - 0.5) / p.L) * (p.e - p.s); };
+    const pt = (a, rad) => [rad * Math.sin(a), -rad * Math.cos(a)];
+    const R_RIB = 220, R_TR0 = 223, R_TR1 = 233, R_PR0 = 236, R_PR1 = 248, R_DM0 = 252, R_DM1 = 266;
+
+    // Build ribbon segments per pair (exact non-ambiguous patch mapping)
+    const ribbons = [];
+    for (const pr of pairData) {
+      const rA = RC_ST.resKind === 'lir' ? pr.lA : (pr.cA.length ? pr.cA : pr.lA);
+      const rB = RC_ST.resKind === 'lir' ? pr.lB : (pr.cB.length ? pr.cB : pr.lB);
+      const pAs = mergeResRanges(rA, 24), pBs = mergeResRanges(rB, 24);
+      if (!pAs.length || !pBs.length) continue;
+      const segs = pAs.length === 1 && pBs.length === 1 ? [[pAs[0], pBs[0]]]
+        : pAs.length > 1 && pBs.length === 1 ? pAs.map((pa) => [pa, pBs[0]])
+        : pAs.length === 1 && pBs.length > 1 ? pBs.map((pb) => [pAs[0], pb])
+        : [[[pAs[0][0], pAs[pAs.length - 1][1]], [pBs[0][0], pBs[pBs.length - 1][1]]]];
+      const spanAng = (id, [r0, r1]) => {
+        const p = arcPos.get(id); let a0 = angAt(id, r0 - 0.4), a1 = angAt(id, r1 + 0.4);
+        if (a1 - a0 < 0.014) { const mid = (a0 + a1) / 2; a0 = Math.max(p.s, mid - 0.007); a1 = Math.min(p.e, mid + 0.007); }
+        return [a0, a1];
+      };
+      segs.forEach(([sa, sb], si) => {
+        const [a0, a1] = spanAng(pr.a, sa), [b0, b1] = spanAng(pr.b, sb);
+        ribbons.push({ pr, sa, sb, a0, a1, b0, b1, gid: `rc-g-${pr.a}-${pr.b}-${si}` });
+      });
+    }
+    ribbons.sort((x, y) => x.pr.best - y.pr.best);
+    const ribGen = d3.ribbon().radius(R_RIB);
+    const ribFill = (rb) => {
+      if (RC_ST.ribCol === 'ilis') return BAND[bandOf(rb.pr.best)];
+      const ca = colMap.get(rb.pr.a), cb = colMap.get(rb.pr.b); if (ca === cb) return ca;
+      const p1 = pt((rb.a0 + rb.a1) / 2, R_RIB), p2 = pt((rb.b0 + rb.b1) / 2, R_RIB);
+      const lg = defs.append('linearGradient').attr('id', rb.gid).attr('gradientUnits', 'userSpaceOnUse').attr('x1', p1[0]).attr('y1', p1[1]).attr('x2', p2[0]).attr('y2', p2[1]);
+      lg.append('stop').attr('offset', '0%').attr('stop-color', ca); lg.append('stop').attr('offset', '100%').attr('stop-color', cb);
+      return `url(#${rb.gid})`;
+    };
+    const baseOp = (rb) => (RC_ST.selPair ? (rb.pr.key === RC_ST.selPair ? 0.86 : 0.08) : 0.48);
+    const rbPaths = root.append('g').selectAll('path').data(ribbons).join('path')
+      .attr('d', (rb) => ribGen({ source: { startAngle: rb.a0, endAngle: rb.a1 }, target: { startAngle: rb.b0, endAngle: rb.b1 } }))
+      .attr('fill', ribFill).attr('fill-opacity', baseOp)
+      .attr('stroke', (rb) => (RC_ST.selPair === rb.pr.key ? '#17263A' : 'none')).attr('stroke-width', 0.8).style('cursor', 'pointer')
+      .on('mouseenter', (ev, rb) => { rbPaths.attr('fill-opacity', (x) => (x.pr.key === rb.pr.key ? 0.88 : 0.1)); })
+      .on('mousemove', (ev, rb) => { const pr = rb.pr;
+        showTip(`<b>${esc(gname(pr.a))}</b> (${fmtResSpan(pr.cA.length ? pr.cA : pr.lA)}) × <b>${esc(gname(pr.b))}</b> (${fmtResSpan(pr.cB.length ? pr.cB : pr.lB)})<br>best iLIS <b>${pr.best.toFixed(3)}</b>${Number.isFinite(pr.iptm) ? ` · ipTM ${pr.iptm.toFixed(2)}` : ''}<br>${pr.cA.length} &amp; ${pr.cB.length} contact residues (cLIR) · click to isolate, double-click for pair page`, ev.clientX, ev.clientY); })
+      .on('mouseleave', () => { hideTip(); rbPaths.attr('fill-opacity', baseOp); })
+      .on('click', (ev, rb) => { RC_ST.selPair = RC_ST.selPair === rb.pr.key ? null : rb.pr.key; if (rcArgs) renderResChord(...rcArgs); })
+      .on('dblclick', (ev, rb) => { hideTip(); window.open(`#/${sp.id}/${sp.rows[rb.pr.a].key}/${sp.rows[rb.pr.b].key}`, '_blank'); });
+    if (!ribbons.length) root.append('text').attr('text-anchor', 'middle').attr('dy', '0.35em').attr('font-size', 14).attr('fill', '#627085').text(pairData.length ? 'No contact residues on these models' : 'No predicted pair among the selected proteins at this cutoff');
+
+    // Inner residue contact track (LIR soft, cLIR dark) + protein sequence arc + Pfam domain outer ring
+    const activePairs = RC_ST.selPair ? pairData.filter((p) => p.key === RC_ST.selPair) : pairData;
+    const resArc = d3.arc().innerRadius(R_TR0).outerRadius(R_TR1), protArc = d3.arc().innerRadius(R_PR0).outerRadius(R_PR1), domArc = d3.arc().innerRadius(R_DM0).outerRadius(R_DM1);
+    for (const id of selIds) {
+      const pos = arcPos.get(id), gP = root.append('g');
+      gP.append('path').attr('d', resArc({ startAngle: pos.s, endAngle: pos.e })).attr('fill', '#EEF2F6');
+      const lirAll = [], clirAll = [];
+      for (const pr of activePairs) { if (pr.a === id) { lirAll.push(...pr.lA); clirAll.push(...pr.cA); } else if (pr.b === id) { lirAll.push(...pr.lB); clirAll.push(...pr.cB); } }
+      for (const [r0, r1] of mergeResRanges(lirAll, 1)) {
+        const a0 = angAt(id, r0 - 0.45), a1 = Math.max(a0 + 0.003, angAt(id, r1 + 0.45));
+        gP.append('path').attr('d', resArc({ startAngle: a0, endAngle: Math.min(pos.e, a1) })).attr('fill', '#8EB8D9');
+      }
+      for (const [r0, r1] of mergeResRanges(clirAll, 1)) {
+        const a0 = angAt(id, r0 - 0.45), a1 = Math.max(a0 + 0.004, angAt(id, r1 + 0.45));
+        gP.append('path').attr('d', resArc({ startAngle: a0, endAngle: Math.min(pos.e, a1) })).attr('fill', '#17263A');
+      }
+      const nP = pairData.filter((p) => p.a === id || p.b === id).length, uClir = new Set(clirAll).size;
+      gP.append('path').attr('d', protArc({ startAngle: pos.s, endAngle: pos.e })).attr('fill', colMap.get(id)).style('cursor', 'pointer')
+        .on('mouseenter', () => { rbPaths.attr('fill-opacity', (rb) => (rb.pr.a === id || rb.pr.b === id ? 0.88 : 0.08)); })
+        .on('mousemove', (ev) => showTip(`<b>${esc(gname(id))}</b> · ${fmtInt(pos.L)} aa<br>${nP} pair${plS(nP)} on this circle · ${fmtInt(uClir)} contact residue${plS(uClir)} (cLIR)<br>click opens ${esc(gname(id))} in a new tab`, ev.clientX, ev.clientY))
+        .on('mouseleave', () => { hideTip(); rbPaths.attr('fill-opacity', baseOp); })
+        .on('click', () => { hideTip(); window.open(`#/${sp.id}/${sp.rows[id].key}`, '_blank'); });
+      if (RC_ST.doms) {
+        for (const d of domMap.get(id) || []) {
+          const da0 = angAt(id, d.start - 0.4), da1 = Math.min(pos.e, Math.max(da0 + 0.008, angAt(id, d.end + 0.4)));
+          gP.append('path').attr('d', domArc({ startAngle: da0, endAngle: da1 })).attr('fill', '#DCE7F3').attr('stroke', '#6E88A6').attr('stroke-width', 0.9).style('cursor', 'pointer')
+            .on('mousemove', (ev) => showTip(`<b>${esc(gname(id))} · D${d.idx} ${esc(d.name)}</b><br>residues ${fmtInt(d.start)}–${fmtInt(d.end)}${d.pfam ? ` (${esc(d.pfam)})` : ''}`, ev.clientX, ev.clientY))
+            .on('mouseleave', hideTip);
+          if (da1 - da0 >= 0.14) {
+            const dm = (da0 + da1) / 2, dp = pt(dm, (R_DM0 + R_DM1) / 2), rot = ((dm * 180) / Math.PI) + (dm > Math.PI / 2 && dm < 1.5 * Math.PI ? 180 : 0);
+            const maxCh = Math.floor((da1 - da0) * R_DM0 / 6.2), txt = d.name.length <= maxCh ? d.name : `D${d.idx}`;
+            gP.append('text').attr('transform', `translate(${dp[0]},${dp[1]}) rotate(${rot})`).attr('text-anchor', 'middle').attr('dy', '0.35em')
+              .attr('font-size', 9.5).attr('font-weight', 600).attr('fill', '#2B3E55').style('pointer-events', 'none').text(txt);
+          }
+        }
+      }
+      // Sequence ruler ticks along the outer edge
+      const rT0 = RC_ST.doms && (domMap.get(id) || []).length ? R_DM1 + 2 : R_PR1 + 2;
+      if (pos.e - pos.s >= 0.24) {
+        const want = Math.max(2, Math.min(6, Math.floor((pos.e - pos.s) * 2.4)));
+        const ticks = resTicks(pos.L, 200, want);
+        for (const tr of ticks) {
+          const ta = angAt(id, tr), la = tr === 1 ? Math.min(pos.e, ta + 0.01) : tr === pos.L ? Math.max(pos.s, ta - 0.01) : ta;
+          const p0 = pt(ta, rT0), p1 = pt(ta, rT0 + 4), ptTxt = pt(la, rT0 + 12);
+          gP.append('line').attr('x1', p0[0]).attr('y1', p0[1]).attr('x2', p1[0]).attr('y2', p1[1]).attr('stroke', '#9AA8B8').attr('stroke-width', 0.9);
+          gP.append('text').attr('x', ptTxt[0]).attr('y', ptTxt[1]).attr('text-anchor', 'middle').attr('dy', '0.35em')
+            .attr('font-size', 9.5).attr('font-family', "'IBM Plex Mono', monospace").attr('fill', '#6B7785').text(tr);
+        }
+      }
+    }
+    // Upright gene labels outside the ticks, with bounding-box anti-collision step-out
+    const rLabBase = RC_ST.doms ? 298 : 280;
+    const labData = selIds.map((id) => { const pos = arcPos.get(id), mid = (pos.s + pos.e) / 2; return { id, mid, L: pos.L, p: pt(mid, rLabBase) }; });
+    const labs = root.append('g').selectAll('text').data(labData).join('text')
+      .attr('x', (d) => d.p[0]).attr('y', (d) => d.p[1])
+      .attr('dy', (d) => (Math.cos(d.mid) > 0.25 ? '0' : Math.cos(d.mid) < -0.25 ? '0.8em' : '0.35em'))
+      .attr('text-anchor', (d) => (Math.abs(Math.sin(d.mid)) < 0.22 ? 'middle' : Math.sin(d.mid) > 0 ? 'start' : 'end')).style('cursor', 'pointer')
+      .on('click', (ev, d) => window.open(`#/${sp.id}/${sp.rows[d.id].key}`, '_blank'));
+    labs.append('tspan').attr('font-size', 14).attr('font-weight', 700).attr('fill', (d) => chainTxt(colMap.get(d.id))).text((d) => gname(d.id));
+    labs.append('tspan').attr('font-size', 11.5).attr('fill', '#6B7785').text((d) => ` (${fmtInt(d.L)} aa)`);
+    { const placed = [], over = (a, b) => a.x < b.x + b.width && b.x < a.x + a.width && a.y < b.y + b.height && b.y < a.y + a.height;
+      labs.each(function (d) { const el2 = this; let bx = el2.getBBox(); if (!bx.width) return;
+        for (let k = 1; k <= 5 && placed.some((p) => over(bx, p)); k++) { const qp = pt(d.mid, rLabBase + k * 17); d3.select(el2).attr('x', qp[0]).attr('y', qp[1]); bx = el2.getBBox(); }
+        placed.push(bx); }); }
+    { const bb = root.node().getBBox();
+      if (bb && bb.width > 0 && bb.height > 0) {
+        const pad = 16, vw = Math.ceil(bb.width + 2 * pad), vh = Math.ceil(bb.height + 2 * pad);
+        root.attr('transform', `translate(${Math.round(-bb.x + pad)},${Math.round(-bb.y + pad)})`);
+        svg.attr('viewBox', `0 0 ${vw} ${vh}`).attr('width', vw).attr('height', vh);
+      } }
+
+    svgExport(q('.rc-xbar'), `atlas_${sp.id}_residue_chord`, () => q('.rc-plot svg'));
+    const uOnlyCnt = links.filter((l) => l.uonly && selSet.has(typeof l.source === 'object' ? l.source.id : l.source) && selSet.has(typeof l.target === 'object' ? l.target.id : l.target)).length;
+    q('.rc-note').textContent = `Inner ring: dark ticks = contact residues (cLIR), blue ticks = interaction residues (LIR)${RC_ST.doms ? ' · outer boxes = Pfam domains' : ''}${uOnlyCnt ? ` · ${uOnlyCnt} pair${plS(uOnlyCnt)} only in loaded predictions have no Atlas bundle here` : ''}.`;
+
+    // Domains legend box
+    const domRows = selIds.filter((id) => (domMap.get(id) || []).length > 0);
+    q('.rc-dom-box').hidden = !RC_ST.doms || !domRows.length;
+    if (RC_ST.doms && domRows.length) {
+      q('.rc-doms').innerHTML = domRows.map((id) => `<div class="rc-dom-row"><span><i class="cc-dot" style="background:${colMap.get(id)}"></i><b>${esc(gname(id))}</b></span>`
+        + domMap.get(id).map((d) => `<span><b>D${d.idx}</b> ${esc(d.name)} <span class="muted">(${d.start}–${d.end})</span></span>`).join('') + `</div>`).join('');
+    }
+    // Pairs table & CSV download
+    q('.rc-clear-sel').hidden = !RC_ST.selPair;
+    q('.rc-psub').textContent = pairData.length ? `${fmtInt(pairData.length)} predicted pair${plS(pairData.length)} past iLIS ${cutV()} · click a row or ribbon to isolate its residues.` : `No predicted pair among these ${selIds.length} proteins past iLIS ${cutV()}.`;
+    q('.rc-pairs').innerHTML = pairData.length ? `<table><thead><tr><th>Pair</th><th>${RC_ST.resKind === 'lir' ? 'LIR spans' : 'cLIR spans'}</th><th class="n">iLIS</th><th></th></tr></thead><tbody>`
+      + pairData.map((pr) => {
+        const sA = fmtResSpan(RC_ST.resKind === 'lir' ? pr.lA : (pr.cA.length ? pr.cA : pr.lA));
+        const sB = fmtResSpan(RC_ST.resKind === 'lir' ? pr.lB : (pr.cB.length ? pr.cB : pr.lB));
+        return `<tr data-pk="${pr.key}" class="${RC_ST.selPair === pr.key ? 'sel' : ''}"><td><span class="cc-dot" style="background:${colMap.get(pr.a)}"></span><b>${esc(gname(pr.a))}</b> × <span class="cc-dot" style="background:${colMap.get(pr.b)}"></span><b>${esc(gname(pr.b))}</b></td><td class="rc-span">${esc(sA)} × ${esc(sB)}</td><td class="n">${pr.best.toFixed(3)}</td><td class="lk"><a href="#/${sp.id}/${sp.rows[pr.a].key}/${sp.rows[pr.b].key}" target="_blank" rel="noopener" title="open the pair page in a new tab">pair ↗</a></td></tr>`;
+      }).join('') + `</tbody></table>` : '';
+    q('.rc-pairs').querySelectorAll('tr[data-pk]').forEach((tr) => {
+      tr.onclick = (ev) => { if (ev.target.closest('a')) return; RC_ST.selPair = RC_ST.selPair === tr.dataset.pk ? null : tr.dataset.pk; if (rcArgs) renderResChord(...rcArgs); };
+    });
+    q('.rc-csv').onclick = () => {
+      const csvq = (v) => (/[",\n]/.test(v) ? `"${String(v).replace(/"/g, '""')}"` : v);
+      const head = ['protein_1', 'id_1', 'len_1', 'cLIR_1', 'LIR_1', 'protein_2', 'id_2', 'len_2', 'cLIR_2', 'LIR_2', 'iLIS_best', 'ipTM_best', 'pair_page'];
+      const rowsCsv = pairData.map((pr) => [gname(pr.a), sp.rows[pr.a].key, lenMap.get(pr.a), rangesOf(pr.cA), rangesOf(pr.lA), gname(pr.b), sp.rows[pr.b].key, lenMap.get(pr.b), rangesOf(pr.cB), rangesOf(pr.lB), pr.best.toFixed(3), Number.isFinite(pr.iptm) ? pr.iptm.toFixed(2) : '', `${location.origin}${location.pathname.replace(/index\.html$/, '')}#/${sp.id}/${sp.rows[pr.a].key}/${sp.rows[pr.b].key}`]);
+      const txt = '\ufeff' + [head, ...rowsCsv].map((r) => r.map(csvq).join(',')).join('\n') + '\n';
+      const u = URL.createObjectURL(new Blob([txt], { type: 'text/csv;charset=utf-8' })), a = document.createElement('a'); a.href = u; a.download = `atlas_${sp.id}_residue_chord.csv`; a.click(); setTimeout(() => URL.revokeObjectURL(u), 3000);
+    };
+    if (myRun === rcRun) delete host.dataset.busy;
   }
   let heatArgs = null, heatSeen = false, heatTP = null, heatRun = 0;
   new IntersectionObserver((es) => { if (!heatSeen && heatArgs && es.some((e) => e.isIntersecting)) { heatSeen = true; heatmap(...heatArgs); } }, { rootMargin: '400px' }).observe($('#nw-heat-wrap'));
@@ -6998,7 +7381,7 @@ async function viewNetwork(spId, q) {
     };
     // the community colors changed (a palette, a hand pick): every place that shows them, nothing moves
     const paintGroups = (list = true) => { recolor(); hulls.select('path').attr('fill', (k, n) => GCOL(n)).attr('stroke', (k, n) => GCOL(n));
-      hullTxt.each(function (k, n) { d3.select(this).select('tspan').attr('fill', GCOL(n)); }); if (list) mods(); paintChord(true); if (heatSeen && heatArgs) heatmap(...heatArgs); };
+      hullTxt.each(function (k, n) { d3.select(this).select('tspan').attr('fill', GCOL(n)); }); if (list) mods(); paintChord(true); if (rcSeen && rcArgs) renderResChord(...rcArgs); if (heatSeen && heatArgs) heatmap(...heatArgs); };
     mods();
     const placeLabels = liftLabels(g, node);
     hullLabG.raise();   // group names above the protein-name layer too
@@ -7081,15 +7464,20 @@ async function viewNetwork(spId, q) {
           const { qA, qB, map, wA, wB } = ROLE_INFO, aName = esc(gname(qA)), bName = esc(gname(qB));
           const shared = nodes.filter((d) => map.get(d.id) === 'both').sort((x, y) => ((wA.get(y.id) || 0) + (wB.get(y.id) || 0)) - ((wA.get(x.id) || 0) + (wB.get(x.id) || 0)) || x.row.gene.localeCompare(y.row.gene));
           shEl.hidden = false;
-          shEl.innerHTML = `<div class="nw-shared-hd"><b>Shared partners of ${aName} and ${bName} (${fmtInt(shared.length)})</b>${shared.length ? `<span class="muted">best iLIS with ${aName} · ${bName} — click a partner to open its page</span>` : `<span class="muted">none past iLIS ${cutV()} in this drawing</span>`}</div>`
+          shEl.innerHTML = `<div class="nw-shared-hd"><b>Shared partners of ${aName} and ${bName} (${fmtInt(shared.length)})</b>${shared.length ? `<span class="muted">best iLIS with ${aName} · ${bName} — click a partner for its page · <a href="#" class="rc-jump">Residue chord ↓</a></span>` : `<span class="muted">none past iLIS ${cutV()} in this drawing</span>`}</div>`
             + (shared.length ? `<div class="nw-shared-list">${shared.map((d) => {
               const va = wA.get(d.id) || 0, vb = wB.get(d.id) || 0;
               return `<a class="nw-sh-chip" href="#/${sp.id}/${d.row.key}" title="${aName} × ${esc(d.row.gene)}: iLIS ${va.toFixed(3)} · ${bName} × ${esc(d.row.gene)}: iLIS ${vb.toFixed(3)}"><i style="background:${ROLE_COLS.both}"></i><b>${esc(d.row.gene)}</b><span class="num">${va.toFixed(3)} · ${vb.toFixed(3)}</span></a>`;
             }).join('')}</div>` : '');
+          const jmp = shEl.querySelector('.rc-jump');
+          if (jmp) jmp.onclick = (ev) => { ev.preventDefault(); const t = $('#nw-reschord-wrap'); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); };
         } else { shEl.hidden = true; shEl.innerHTML = ''; }
       } }
     paintChord(); net.repaint = paintGroups; net.hl = hl;
     const heatMeta = () => { const cat = S.grp.startsWith('col:'); return groups.map((k, n) => ({ name: gname2.get(k) || String(k), short: cat ? String(gname2.get(k) || k) : `C${CI[n] + 1}`, color: GCOL(n) })); };
+    rcArgs = [nodes, links, gk, groups, gname2, deg, Q, heatMeta];
+    $('#nw-reschord-wrap').hidden = nodes.length < 2 || !links.some((l) => !l.uonly);
+    if (rcSeen && !$('#nw-reschord-wrap').hidden) renderResChord(...rcArgs);
     heatArgs = [nodes, links, gk, groups, gname2, deg, heatMeta]; $('#nw-heat-wrap').hidden = nodes.length < 2; if (heatSeen) heatmap(...heatArgs);   // the matrix (Plotly, 1 MB) draws once its card is near the viewport
     mountSections();
   }
