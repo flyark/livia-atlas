@@ -141,6 +141,7 @@ table.pt { width: 100%; border-collapse: collapse; font-size: 13.5px; }
 .pt tr:hover td { background: #F8FAFC; }
 .pt td.g a { font-weight: 600; }
 .pt td.n { font-family: var(--mono); font-variant-numeric: tabular-nums; text-align: right; }
+.pt td.spn { font-family: var(--mono); font-variant-numeric: tabular-nums; font-size: 12px; color: var(--ink-2); }
 .pt td.nm { color: var(--ink-3); max-width: 340px; overflow: hidden; text-overflow: ellipsis; }
 .pt.compact th, .pt.compact td { padding: 6px 7px; }
 .pt.compact td.n, .pt.compact th.n { font-size: 12.5px; }
@@ -249,7 +250,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .subnav button.on, .subnav button.on:hover { background: #1A5276; color: #fff; }   /* the section in view, as LIVIA's section bar */
 .clip-ctl { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 8px 10px; margin-left: auto; }   /* stays right when the head wraps */
 .clip-ctl > span, .clip-ctl .ctl, .clip-ctl .seg button { white-space: nowrap; }
-.clip-ctl input[type=text] { font: 13px var(--sans); width: 116px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink); }
+.clip-ctl input[type=text] { font: 13px var(--sans); width: 138px; padding: 5px 8px; border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink); }
 @media (max-width: 720px) {   /* phones: the residue box and the cutoff buttons wrap inside the card instead of running past it */
   .clip-ctl { margin-left: 0; justify-content: flex-start; max-width: 100%; }
   .clip-ctl .ctl { flex-wrap: wrap; max-width: 100%; }
@@ -371,7 +372,7 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .xt { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; color: var(--ink-2); white-space: nowrap; }
 .xt[hidden] { display: none; }
 .xt input:not([type=checkbox]) { width: 62px; font: 12.5px var(--mono); padding: 4px 6px; border: 1px solid var(--line); border-radius: 6px; }
-.xt input.res-q { width: 108px; font: 12.5px var(--sans); background: #fff; color: var(--ink); }   /* the Residue box of the frequency and fingerprint cards */
+.xt input.res-q { width: 124px; font: 12.5px var(--sans); background: #fff; color: var(--ink); }   /* the Residue box of the frequency and fingerprint cards */
 /* LIVIA's figure export bar (↓ SVG · ↓ PNG · W · H · font ×), for the SVG figures too */
 .xbar { display: flex; flex-wrap: wrap; gap: 5px 8px; align-items: center; justify-content: center; margin-top: 6px; font-size: 0.72rem; color: #6B6B6B; }
 .xbar button { font-size: 0.72rem; color: #2471A3; background: none; border: none; cursor: pointer; font-weight: 600; padding: 0 6px; }

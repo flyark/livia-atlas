@@ -1,0 +1,71 @@
+# LIVIA Atlas
+
+> LIVIA Atlas (https://flyark.github.io/livia-atlas/) is a searchable browser-based atlas of AlphaFold-Multimer protein-protein interaction screens resolved to individual residues across human, mouse, rat, fly, zebrafish, C. elegans, yeast, viral proteomes, and over 40 additional species, with ortholog and paralog comparisons.
+
+## Scoring & Residue Definitions
+
+- **LIR (Local interaction residues)**: Cross-chain residue pairs with `PAE ≤ 12 Å`. Covers structured interfaces as well as disordered segments folded upon binding.
+- **cLIR (Contact residues)**: Subset of LIR that also satisfies `Cβ ≤ 8 Å` (`Cα` for Gly) in 3D space.
+- **LIS / cLIS / iLIS**:
+  - `LIS`: Mean of `(12 - PAE) / 12` over cross-chain residue pairs with `PAE ≤ 12 Å`.
+  - `cLIS`: Mean of `(12 - PAE) / 12` over cross-chain residue pairs with `PAE ≤ 12 Å` and `Cβ ≤ 8 Å`.
+  - `iLIS = sqrt(LIS * cLIS)`: Primary interaction confidence score.
+- **Benchmarked `iLIS` False-Positive-Rate (FPR) Cutoffs** (calibrated on the top-ranked of five models per pair):
+  - `10% FPR`: `iLIS ≥ 0.223`
+  - `5% FPR`: `iLIS ≥ 0.339`
+  - `1% FPR`: `iLIS ≥ 0.551`
+- **cLIP (clustered Local Interaction Profiler)**: Groups passing models on a protein page by cosine distance over their query `cLIR` fingerprints (average linkage, silhouette cluster selection). Each cluster defines a binding site footprint (residues contacted by `≥ 30%` of the cluster's models).
+
+## Direct Hash URL Routes
+
+LIVIA Atlas is a client-side single-page application routed by `location.hash`:
+
+- **Home**: `https://flyark.github.io/livia-atlas/#/`
+- **Species list**: `https://flyark.github.io/livia-atlas/#/species`
+- **Datasets**: `https://flyark.github.io/livia-atlas/#/datasets`
+- **Protein page**: `https://flyark.github.io/livia-atlas/#/<species>/<gene_or_accession>`
+  - Core `<species>` IDs: `human`, `fly`, `zebrafish`, `worm`, `yeast`, `mus-musculus`, `rattus-norvegicus`, `virus` (plus species listed on `#/species`).
+  - Accepts primary gene symbols, UniProt accessions (`P04637`), or FlyBase IDs (`FBgn0000117`). Unknown aliases or older synonyms fall back automatically to a live UniProt synonym lookup with direct links.
+  - **Query parameters on protein pages**:
+    - `?res=<query>`: Marks and evaluates a single residue (`?res=18`), a residue range (`?res=15-29`), a peptide sequence (`?res=ETFSDLWKLL`, up to 1 mismatch per 5 residues), or an ELM/PROSITE motif (`?res=LXXLL`, `?res=[ST]P`). Populates `#res-look` in plain DOM text with matched coordinates, sequence, domain context, AlphaFold DB monomer `pLDDT` mean and min-max, `cLIR` contacting partners/clusters, and `LIR`-only partners.
+    - `?cut=10` | `?cut=5` | `?cut=1`: Sets the active FPR cutoff for binding-site clustering (`10%`, `5%`, or `1%`).
+    - `?set=<dataset_or_set_id>`: Scopes the protein page to one screen or thematic set.
+    - `?iso=<construct_id>`: Selects a specific isoform or construct when folded separately.
+- **Pair page**: `https://flyark.github.io/livia-atlas/#/<species>/<proteinA>/<proteinB>`
+  - Shows every ranked model across screens, full `lis.py` metrics (`iLIS`, `iLISA`, `ipTM`, `LIS`, `cLIS`, `ipSAE`, `actifpTM*`, `pDockQ`, `pDockQ2`), exact `LIR` and `cLIR` residue tracks and sequences, BioGRID literature records, ortholog/paralog pair matrices, and sequence exports (`↓ FASTA`, `↓ AF3 JSON`, `↓ Boltz YAML`, `↓ ColabFold CSV`).
+- **Network builder**: `https://flyark.github.io/livia-atlas/#/network/<species>?ids=<comma_separated_genes>&cut=5`
+  - Optional parameters: `add=none|top|link|tree|pair`, `k=<top_k>`, `rc=<comma_separated_genes>&focus=rc` (opens the Residue chord diagram for up to 12 proteins).
+
+## Plain-Text DOM Anchors (Protein Page)
+
+Browser agents reading DOM text on `#/<species>/<gene>` can inspect:
+
+- `#sites-answer`: One-paragraph summary of passing partners, binding-site count, and top cluster footprint stretches.
+- `#res-look`: Detailed plain-text readout when `?res=<query>` or `#res-q` is set (sequence, domain overlap, AlphaFold DB `pLDDT` mean/range, `cLIR` partners, and `LIR`-only partners).
+- `#cluster-info`: Every cLIP cluster with partner count, model count, consensus `footprint` residue stretches, and linked partner gene names.
+- `#pt`: Sortable Interactors table including best-model `iLIS`, `iLISA`, `ipTM`, `Contacts`, `Contact spans` (query `cLIR` stretches), and `↓ CSV` export (`#pt-csv`) containing exact `query_cLIR_ranges`, `query_LIR_ranges`, `partner_cLIR_ranges`, and `partner_LIR_ranges`.
+
+## JavaScript Inspection API (`window.LIVIA_ATLAS`)
+
+When accessing LIVIA Atlas from an automated browser or DevTools console, use `window.LIVIA_ATLAS` instead of scraping canvas plots:
+
+```js
+// 1. Resolve a gene symbol, UniProt accession, or UniProt alias/synonym:
+await window.LIVIA_ATLAS.resolve('TP53', 'human');
+// -> { ok: true, species: 'human', key: 'P04637', gene: 'TP53', acc: 'P04637', hash: '#/human/P04637', ... }
+
+// 2. Wait for asynchronous bundle loading, cLIP clustering, domains, and AlphaFold DB pLDDT to finish:
+const data = await window.LIVIA_ATLAS.waitReady();
+// -> Structured object for the current 'protein', 'pair', or 'network' view:
+//    protein, sequence, counts, domains, plddt ({ mean, min, max, perResidue }),
+//    clusters (with footprintStretches and partners), and partners (with queryCLIRRanges and queryLIRRanges).
+
+// 3. Query a residue, residue range, peptide sequence, or motif on the active protein page:
+window.LIVIA_ATLAS.queryRegion('15-29', { mark: true });
+// -> { ok: true, spans, domains, domainContext, plddt: { mean, min, max },
+//      clirModels, clirPartners, lirModels, lirOnlyPartners, clusters }
+```
+
+## Citation
+
+Kim A-R & Perrimon N (2026). LIVIA, bioRxiv. https://doi.org/10.64898/2026.05.01.721633
