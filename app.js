@@ -1725,7 +1725,7 @@ document.addEventListener('keydown', (e) => {
 function mountSearch(host, { big = false, spId = null, autofocus = false, only = null, set = '' } = {}) {   // spId null: every species; only: a set's keys
   host.innerHTML = `<div class="search ${big ? 'big' : ''}">
       <svg class="glass" width="${big ? 20 : 17}" height="${big ? 20 : 17}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
-      <input type="search" placeholder="${big ? (spId ? (spId === 'virus' ? 'Virus, protein name or accession' : 'Gene, accession or protein name') : 'Gene, UniProt accession, FlyBase ID, protein or virus') : 'Search a protein or virus'}" aria-label="Search proteins" autocomplete="off" spellcheck="false">
+      <input type="search" placeholder="${big ? (spId ? (spId === 'virus' ? 'Virus, protein name or accession' : 'Gene, pair (A B), accession or protein name') : 'Gene, protein pair (A B), UniProt accession, FlyBase ID or virus') : 'Search a protein, pair (A B) or virus'}" aria-label="Search proteins" autocomplete="off" spellcheck="false">
       ${only ? '' : '<kbd class="search-kbd" aria-hidden="true" title="Press / or Ctrl+K to search">/</kbd>'}
       <div class="suggest" hidden></div></div>`;
   const wrap = $('.search', host), input = $('input', host), box = $('.suggest', host);
@@ -1770,19 +1770,41 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
     if (prot.some((h) => h.base >= 80)) prot = prot.filter((h) => h.base !== 45 && !h.accPre);   // a protein named exactly (p53 is TP53): accessions that merely start with the query (P53…) are noise
     // a virus named exactly (or by a common name) first, then exact gene matches, then viruses named in part ("Tor" is a gene first)
     const exact = prot.filter((h) => h.base >= 80), rest = prot.filter((h) => h.base < 80);
-    items = [...vir.filter((x) => x.score === 3), ...exact, ...vir.filter((x) => x.score < 3), ...rest].slice(0, 10);
-    on = items.length ? 0 : -1;
-    const manyX = many || others.length > 0;
-    let pairHint = '';   // two names with no match: a pair page, from the loaded indexes or the name shards
-    if (!items.length && !spId && !only) { const two = q.trim().split(/[\s,;×]+/).filter(Boolean);
+    const pairItems = [];
+    if (!only) {
+      const raw = q.trim(), STOP2 = new Set(['protein', 'proteins', 'human', 'mouse', 'yeast', 'virus', 'kinase', 'factor', 'subunit', 'receptor', 'complex', 'domain', 'homolog']);
+      let two = raw.split(/\s*(?:[×/;,:]|\s+(?:x|vs\.?|and|\+|–|—|-)\s+)\s*/i).filter(Boolean);
+      if (two.length !== 2) { const ws = raw.split(/\s+/).filter(Boolean); if (ws.length === 2 && ws.every((w) => w.length >= 2 && !STOP2.has(w.toLowerCase()))) two = ws; }
+      if (two.length !== 2 && !exact.length && /^[^\s-]+-[^\s-]+$/.test(raw)) two = raw.split('-').filter(Boolean);
       if (two.length === 2) {
-        for (const sp of sps.filter((x) => x && !x.viruses)) { const a = resolveHow(sp, two[0], true), b = resolveHow(sp, two[1], true); if (a && b && a.row !== b.row) { pairHint = ` As a pair: <a href="#/${sp.id}/${encodeURIComponent(a.row.key)}/${encodeURIComponent(b.row.key)}">${esc(a.row.gene)} × ${esc(b.row.gene)}</a> <span class="muted">(${esc(sp.reg.label)})</span>.`; break; } }
-        if (!pairHint) { const [ra, rb] = await Promise.all(two.map((x) => searchOthers(x))); if (q !== input.value) return;
-          for (const a of ra.filter((h) => h.base >= 80)) { const b = rb.find((h) => h.base >= 80 && h.sp.id === a.sp.id && h.row.key !== a.row.key); if (b) { pairHint = ` As a pair: <a href="#/${a.sp.id}/${encodeURIComponent(a.row.key)}/${encodeURIComponent(b.row.key)}">${esc(a.row.gene)} × ${esc(b.row.gene)}</a> <span class="muted">(${esc(a.sp.reg.label)})</span>.`; break; } } } } }
-    box.innerHTML = items.map(({ row: r, sp, v }) => (v ? `<div class="sg"><b>${esc(v.name)}</b><span class="nm">virus${v.n != null ? ` · ${fmtInt(v.n)} protein${plS(v.n)}` : ''}</span><span class="ct">${v.n != null ? `${fmtInt(v.hpos + v.mpos)} pair${plS(v.hpos + v.mpos)} past 10% FPR` : ''}</span>
+        const seenP = new Set();
+        for (const sp of sps.filter((x) => x && !x.viruses)) {
+          const a = resolveHow(sp, two[0], true), b = resolveHow(sp, two[1], true);
+          if (a && b && a.row.key !== b.row.key) {
+            const pk = `${sp.id}:${a.row.key}:${b.row.key}`;
+            if (!seenP.has(pk)) { seenP.add(pk); pairItems.push({ pair: true, pk, sp, a: a.row, b: b.row, hash: `#/${sp.id}/${encodeURIComponent(a.row.key)}/${encodeURIComponent(b.row.key)}${set ? '?set=' + encodeURIComponent(set) : ''}` }); }
+          }
+        }
+        if (!pairItems.length && !spId) {
+          const [ra, rb] = await Promise.all(two.map((x) => searchOthers(x))); if (q !== input.value) return;
+          for (const a of ra.filter((h) => h.base >= 80)) {
+            const b = rb.find((h) => h.base >= 80 && h.sp.id === a.sp.id && h.row.key !== a.row.key);
+            if (b) { pairItems.push({ pair: true, pk: `${a.sp.id}:${a.row.key}:${b.row.key}`, sp: a.sp, a: a.row, b: b.row, hash: `#/${a.sp.id}/${encodeURIComponent(a.row.key)}/${encodeURIComponent(b.row.key)}` }); break; }
+          }
+        }
+      }
+    }
+    items = [...pairItems.slice(0, 3), ...vir.filter((x) => x.score === 3), ...exact, ...vir.filter((x) => x.score < 3), ...rest].slice(0, 10);
+    on = items.length ? 0 : -1;
+    const manyX = many || others.length > 0 || pairItems.length > 1;
+    let pairHint = '';
+    box.innerHTML = items.map((it) => { const { row: r, sp, v } = it;
+      if (it.pair) return `<div class="sg" data-pk="${esc(it.pk)}"><b>${esc(it.a.gene)} × ${esc(it.b.gene)}</b><span class="nm">protein pair</span><span class="ct" data-pct>open pair →</span>
+        <span class="sub">${manyX ? `<span class="sp-tag">${spName(sp.reg.label)}</span>` : ''}${esc(it.a.acc || it.a.key)} × ${esc(it.b.acc || it.b.key)}</span></div>`;
+      return v ? `<div class="sg"><b>${esc(v.name)}</b><span class="nm">virus${v.n != null ? ` · ${fmtInt(v.n)} protein${plS(v.n)}` : ''}</span><span class="ct">${v.n != null ? `${fmtInt(v.hpos + v.mpos)} pair${plS(v.hpos + v.mpos)} past 10% FPR` : ''}</span>
         <span class="sub">${manyX ? `<span class="sp-tag">${spName(sp.reg.label)}</span>` : ''}its proteins' network · taxon ${v.taxid}</span></div>`
       : `<div class="sg"><b>${esc(r.gene)}</b><span class="nm">${esc(short(r.name))}</span><span class="ct" title="pairs past the 10% FPR cutoff / pairs folded">${fmtInt(r.pos10)} / ${fmtInt(r.partners)}</span>
-        <span class="sub">${manyX ? `<span class="sp-tag">${spName(sp.reg.label)}</span>` : ''}${r.virus ? `${esc(r.virus.name)} · ` : ''}${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`)).join('')
+        <span class="sub">${manyX ? `<span class="sp-tag">${spName(sp.reg.label)}</span>` : ''}${r.virus ? `${esc(r.virus.name)} · ` : ''}${esc(r.acc || '—')} · ${esc(r.id)}</span></div>`; }).join('')
       || (q.trim() ? `<div class="sg-note">No match.${(() => { const t0 = q.trim();
         if (/^ENS[A-Z]*[GTP]\d{6,}/i.test(t0) || /^\d+$/.test(t0)) return ' Ensembl and Entrez IDs are not in the Atlas: try the gene symbol or UniProt accession.';
         if (pairHint) return pairHint;
@@ -1806,6 +1828,13 @@ function mountSearch(host, { big = false, spId = null, autofocus = false, only =
     });
     [...box.querySelectorAll('.sg')].forEach((d, k) => d.onclick = () => go(items[k]));
     paint();
+    for (const it of pairItems.slice(0, 3)) {
+      if (it.a.i != null && it.b.i != null) edges(it.sp, set).then((E) => {
+        if (q !== input.value || !box.isConnected) return;
+        const ed = (E.adj.get(it.a.i) || new Map()).get(it.b.i), elCt = box.querySelector(`.sg[data-pk="${CSS.escape(it.pk)}"] [data-pct]`);
+        if (ed && elCt) { elCt.textContent = `iLIS ${ed.best.toFixed(3)}`; elCt.style.cssText = bandSty(FPR.iLIS, ed.best); }
+      }).catch(() => {});
+    }
   }
   let _autoFocusing = false;
   input.addEventListener('focus', () => { if (_autoFocusing) return; if (!input.value.trim()) showRecent(); });
@@ -1920,13 +1949,18 @@ function drawIfaceTracks(cv, tracks) {
     y += 20 + gap;
   }
   cv.onmousemove = (e) => { const b = cv.getBoundingClientRect(), x = e.clientX - b.left, yy = e.clientY - b.top;
-    const hd = cv._doms.find((k) => x >= k.x0 && x <= k.x1 && yy >= k.y0 && yy <= k.y1); if (hd) return showTip(domTip(hd.d), e.clientX, e.clientY);   // a domain box
-    const blk = cv._blocks.find((k) => yy >= k.y0 - 4 && yy <= k.y1 + 4); if (!blk) return hideTip();
-    const t = blk.t, r = Math.floor((x - pad) / (W - 2 * pad) * t.len) + 1; if (r < 1 || r > t.len) return hideTip();
+    const hd = cv._doms.find((k) => x >= k.x0 && x <= k.x1 && yy >= k.y0 && yy <= k.y1); if (hd) { cv.style.cursor = ''; if (cv._onResHover) cv._onResHover(-1, 0); return showTip(domTip(hd.d), e.clientX, e.clientY); }
+    const blk = cv._blocks.find((k) => yy >= k.y0 - 4 && yy <= k.y1 + 4); if (!blk) { cv.style.cursor = ''; if (cv._onResHover) cv._onResHover(-1, 0); return hideTip(); }
+    const t = blk.t, r = Math.floor((x - pad) / (W - 2 * pad) * t.len) + 1; if (r < 1 || r > t.len) { cv.style.cursor = ''; if (cv._onResHover) cv._onResHover(-1, 0); return hideTip(); }
+    cv.style.cursor = cv._onResClick ? 'pointer' : '';
+    if (cv._onResHover) cv._onResHover(tracks.indexOf(t), r);
     const st = t.span && (r < t.span[0] || r > t.span[1]) ? 'not in the folded construct' : t.clirSet.has(r) ? 'contact (cLIR)' : t.lirSet.has(r) ? 'interaction (LIR)' : 'not an interaction residue';
     const dom = t.doms.filter((d) => r >= d.start && r <= d.end).map((d) => d.name).join(', ');
     showTip(`<b>${esc(t.gene)}</b> ${t.seq && t.seq[r - 1] ? t.seq[r - 1] : ''}${r} · ${st}${dom ? `<br>${esc(dom)}` : ''}`, e.clientX, e.clientY); };
-  cv.onmouseleave = hideTip;
+  cv.onmouseleave = () => { cv.style.cursor = ''; if (cv._onResHover) cv._onResHover(-1, 0); hideTip(); };
+  cv.onclick = (e) => { if (!cv._onResClick) return; const b = cv.getBoundingClientRect(), x = e.clientX - b.left, yy = e.clientY - b.top;
+    const blk = cv._blocks.find((k) => yy >= k.y0 - 4 && yy <= k.y1 + 4); if (!blk) return;
+    const t = blk.t, r = Math.floor((x - pad) / (W - 2 * pad) * t.len) + 1; if (r >= 1 && r <= t.len) cv._onResClick(tracks.indexOf(t), r); };
 }
 // A sequence fills its line: the font (11–14.5 px) is chosen so a whole number of 10-residue groups spans the width,
 // on a phone as on a wide screen, instead of leaving a ragged gap at the right.
@@ -1951,8 +1985,8 @@ function seqPanel(label, seq, lir, clir, col, len, span) {   // span: the folded
     if (i % 10 === 0) { if (i) body += '</span><wbr>'; const n = Math.min(i + 10, seq.length);   // a 1–2 residue last group: its number runs right, clear of the one before
       body += `<span class="g10${n - i < 3 ? ' tail' : ''}" data-n="${n}">`; }
     const r = i + 1, ch = seq[i];
-    body += C.has(r) ? `<span class="c" style="background:${chainTxt(col.clir)}">${ch}</span>` : L.has(r) ? `<span class="l" style="background:${col.lir}">${ch}</span>`
-      : span && (r < span[0] || r > span[1]) ? `<span class="out">${ch}</span>` : ch;
+    body += C.has(r) ? `<span class="c" data-r="${r}" style="background:${chainTxt(col.clir)}">${ch}</span>` : L.has(r) ? `<span class="l" data-r="${r}" style="background:${col.lir}">${ch}</span>`
+      : span && (r < span[0] || r > span[1]) ? `<span class="out" data-r="${r}">${ch}</span>` : `<span data-r="${r}">${ch}</span>`;
   }
   return head + `<div class="seq-flow">${body}</span></div>`;
 }
@@ -1981,6 +2015,8 @@ async function ifaceView(host, { sp, P, O, pred, B, canvasId, foldSeq }) {
   const T = [{ gene: P.gene, name: q.name, label: q.label, len: q.len, span: q.span, own: q.own, lir: qL, clir: qC, lirSet: new Set(qL), clirSet: new Set(qC), col: (host._cols || PAIR_COL).q, doms: [] },
     { gene: O.gene, name: o.name, label: o.label, len: o.len, span: o.span, own: o.own, lir: pL, clir: pC, lirSet: new Set(pL), clirSet: new Set(pC), col: (host._cols || PAIR_COL).p, doms: [] }];
   let paint = null;   // the sequence panels, once their sequences are read
+  cv._onResHover = (idx, r) => { if (host._onResHover) host._onResHover(idx, r); };
+  cv._onResClick = (idx, r) => { if (host._onResClick) host._onResClick(idx, r); };
   host._recolor = () => { const c = host._cols || PAIR_COL; T[0].col = c.q; T[1].col = c.p; host._redraw(); if (paint) paint(); };   // the pair page's Palette changed (its 3D card)
   host._redraw = () => drawIfaceTracks(cv, T);
   host._redraw();
@@ -1995,6 +2031,23 @@ async function ifaceView(host, { sp, P, O, pred, B, canvasId, foldSeq }) {
   if (fold) fold.addEventListener('toggle', () => { seqFoldOpen = fold.open; if (fold.open && paint) paint(); });   // the panels fit their width only when shown
   paint = () => { const c = host._cols || PAIR_COL; panels[0].innerHTML = seqPanel(q.label, qs, qL, qC, c.q, T[0].len, q.span); panels[1].innerHTML = seqPanel(o.label, os, pL, pC, c.p, T[1].len, o.span); fitSeqs(panels[0]); fitSeqs(panels[1]); };
   paint();
+  [0, 1].forEach((idx) => {
+    const pEl = panels[idx]; if (!pEl) return;
+    pEl.onmousemove = (ev) => {
+      const spEl = ev.target && ev.target.closest && ev.target.closest('[data-r]');
+      if (!spEl) { hideTip(); if (host._onResHover) host._onResHover(-1, 0); return; }
+      const r = +spEl.dataset.r, t = T[idx];
+      if (host._onResHover) host._onResHover(idx, r);
+      const st = t.span && (r < t.span[0] || r > t.span[1]) ? 'not in the folded construct' : t.clirSet.has(r) ? 'contact (cLIR)' : t.lirSet.has(r) ? 'interaction (LIR)' : 'not an interaction residue';
+      const dom = t.doms.filter((d) => r >= d.start && r <= d.end).map((d) => d.name).join(', ');
+      showTip(`<b>${esc(t.gene)}</b> ${t.seq && t.seq[r - 1] ? t.seq[r - 1] : ''}${r} · ${st}${dom ? `<br>${esc(dom)}` : ''}`, ev.clientX, ev.clientY);
+    };
+    pEl.onmouseleave = () => { hideTip(); if (host._onResHover) host._onResHover(-1, 0); };
+    pEl.onclick = (ev) => {
+      const spEl = ev.target && ev.target.closest && ev.target.closest('[data-r]');
+      if (spEl && host._onResClick) host._onResClick(idx, +spEl.dataset.r);
+    };
+  });
   // Domain coordinates fit only the UniProt sequence: a full-length human construct; for fly, a FlyBase reference that is
   // UniProt's sequence (checked against the AlphaFold DB entry). The construct's sequence goes along for the table's checksum.
   // Another isoform or a fragment (fly HGTX: 587 aa folded, UniProt shorter): placed through an alignment, as on the Frequency card.
@@ -3088,6 +3141,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     <div class="card" id="c-pt"><div class="card-head"><h2>Interactors</h2>
       <div class="controls" style="margin:0"><select id="pt-src" aria-label="Which screens"><option value="0">all screens</option>${sp.dsIds.map((_, di) => (P.src & (1 << di) ? `<option value="${1 << di}">${esc(sp.dsShort[di])}</option>` : '')).join('')}</select>
         <select id="pt-band" aria-label="Which partners, by FPR band"><option value="10">past 10% FPR (iLIS ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ${CUT[1]})</option><option value="0">all predicted</option></select>
+        <select id="pt-cl" aria-label="Which binding-site cluster" hidden><option value="0">all clusters</option></select>
+        <select id="pt-kb" aria-label="Literature status in BioGRID" hidden><option value="">all literature</option><option value="unrep">not in BioGRID</option><option value="rep">reported in BioGRID</option><option value="ph">reported: physical</option><option value="ge">reported: genetic</option></select>
         <label class="ctl" id="pt-showsrc-wrap" title="which screen each partner was predicted in"><input type="checkbox" id="pt-showsrc"> Source</label><label class="ctl" title="only the partners whose model opens in LIVIA (a LIVIA ↗ link)"><input type="checkbox" id="pt-struct"> Structure in LIVIA</label><input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"><button class="btn" id="pt-csv" type="button" style="height:28px;padding:0 10px;font-size:12.5px" title="download the shown interactors as CSV, with contact and local interaction residue ranges">↓ CSV</button></div></div>
       <div class="muted card-note" id="pt-note" style="margin:2px 0 10px"></div>
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>
@@ -3688,12 +3743,26 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       box.onclick = (e) => { const m = e.target.closest('[data-more]'); if (m) { chipsAll = !chipsAll; renderChips(); return; } const b = e.target.closest('.cchip'); if (b && b.dataset.c) toggleCluster(b.dataset.c); };
     });
     paintChips();
+    syncPtClusterMenu();
+  }
+  function syncPtClusterMenu() {
+    const sel = $('#pt-cl'); if (!sel) return;
+    if (!clustered()) { sel.hidden = true; if (T && T.cl !== '0') T.cl = '0'; return; }
+    const pCnt = {}; for (const [, c] of partnerCluster) pCnt[c] = (pCnt[c] || 0) + 1;
+    const prev = sel.value || '0';
+    sel.innerHTML = '<option value="0">all clusters</option>'
+      + (!allOn() ? `<option value="active">selected sites (${[...ACTIVE].sort((a, b) => a - b).map((c) => 'C' + c).join(', ')})</option>` : '')
+      + range(M.k).map((c) => `<option value="${c}">${clusterLabel(c)} (${fmtInt(pCnt[c] || 0)})</option>`).join('')
+      + '<option value="none">not clustered</option>';
+    sel.hidden = false;
+    sel.value = [...sel.options].some((o) => o.value === prev) ? prev : '0';
+    if (T) T.cl = sel.value;
   }
   function toggleCluster(c) {   // as clip.html: from "all", a click isolates that cluster; further clicks add or remove
     if (c === 'all') ACTIVE = new Set(range(M.k));
     else { const id = +c; if (allOn()) ACTIVE = new Set([id]); else if (ACTIVE.has(id)) { ACTIVE.delete(id); if (!ACTIVE.size) ACTIVE = new Set(range(M.k)); } else ACTIVE.add(id); }
     replaceHashParams((u) => { if (allOn()) u.delete('cl'); else u.set('cl', [...ACTIVE].sort((a, b) => a - b).join(',')); });
-    paintChips(); renderSites(); drawFreq(); drawHeatmap(); recolor3D(); drawOrth(); if (PALN.trk) drawOrth(PCFG);   // both plots' sites follow the clusters shown
+    paintChips(); syncPtClusterMenu(); if (T && T.cl === 'active') drawTable(); renderSites(); drawFreq(); drawHeatmap(); recolor3D(); drawOrth(); if (PALN.trk) drawOrth(PCFG);   // both plots' sites follow the clusters shown
   }
   function paintChips() {
     const all = allOn();
@@ -4163,6 +4232,19 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const id = $('#res-partner').value, part = B.partners.find((p) => p.id === id); if (!part) return;
     const pred = part.preds[+$('#res-rank').value] || part.preds[0];
     ifaceView($('#res-body'), { sp, P, O: PLACE(id), pred, B, canvasId: 'res-canvas', foldSeq: true });
+    $('#res-body')._onResHover = (idx, r) => hover3D(idx === 0 ? r : 0);
+    $('#res-body')._onResClick = (idx, r) => {
+      if (idx !== 0 || !r || typeof focusMolstarResidue !== 'function') return;
+      if (!V.shown || !V.ready) {
+        V.pendingFocus = r;
+        show3D();
+        const c3 = $('#c-3d');
+        if (c3) c3.scrollIntoView({ block: 'nearest' });
+        return;
+      }
+      const sr = toStruct(r);
+      if (sr) focusMolstarResidue('viewer3d-frame', 'A', sr);
+    };
     const pid = $('#res-partner').value, pi = $('#res-rank').value;   // the selected model's own structure, not the pair's AFDB model whatever is selected
     open3d($('#res-struct'), sp, B, P, pred, sp.byKey.get(pid), () => !gone() && $('#res-partner') && $('#res-partner').value === pid && $('#res-rank').value === pi);
   }
@@ -4220,7 +4302,15 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const comps = colorComponents(), built = JSON.stringify(comps);
     const onReady = (ev) => { if (!ev.data || ev.data.type !== 'molstarReady') return; const f = $('#viewer3d-frame');
       if (gone() || !f || ev.source === f.contentWindow) window.removeEventListener('message', onReady);
-      if (!gone() && f && ev.source === f.contentWindow && JSON.stringify(colorComponents()) !== built) recolor3D(); };
+      if (!gone() && f && ev.source === f.contentWindow) {
+        V.ready = true;
+        if (JSON.stringify(colorComponents()) !== built) recolor3D();
+        if (V.pendingFocus && typeof focusMolstarResidue === 'function') {
+          const sr = toStruct(V.pendingFocus);
+          V.pendingFocus = 0;
+          if (sr) setTimeout(() => focusMolstarResidue('viewer3d-frame', 'A', sr), 120);
+        }
+      } };
     window.addEventListener('message', onReady);
     if (V3D_URL) { try { URL.revokeObjectURL(V3D_URL); } catch (e) {} }   // the previous page's Mol* page (it embeds the whole structure) is freed
     V3D_URL = URL.createObjectURL(new Blob([buildMolstarPage(S.text, 'mmcif', comps, LIVIA)], { type: 'text/html' })); frame.src = V3D_URL;
@@ -4463,13 +4553,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const pm = predPick(sp, B, p.preds || [], m || p.bm); if (pm && pm === (m || p.bm)) return tag3d(p, pm, false, predLinkOf(sp, B, pm, '', 'LIVIA ↗'));   // the row's own model from an archive screen
     const ax = r && AX ? AX.get(r.i) : null; return ax && ax.addr && ax.model ? tag3d(p, null, true, `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI">LIVIA ↗</a>`) : pm ? tag3d(p, pm, false, predLinkOf(sp, B, pm, '', 'LIVIA ↗')) : dash;
   }
-  reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; drawScatter(); drawTopList(); drawTable(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
+  reportedOf(sp, P.i).then((k) => { if (gone() || !k) return; KB = k; if ($('#pt-kb')) $('#pt-kb').hidden = false; drawScatter(); drawTopList(); drawTable(); if (clustered()) renderClusterInfo(); }).catch(() => {});   // this protein's shard
   $('#cut-seg').onclick = (e) => { const f = e.target.dataset.f; if (!f) return; cut = +f; [...$('#cut-seg').children].forEach((b) => b.classList.toggle('on', b.dataset.f === f));
     { const [path, qs] = location.hash.split('?'), u = new URLSearchParams(qs || ''); cut === 10 ? u.delete('cut') : u.set('cut', cut); history.replaceState(null, '', `${path}${u.toString() ? '?' + u : ''}`); }   // the link keeps the cutoff too
     cluster(); };
 
   /* partner table */
   const T = { sort: 'best', asc: false, page: 0, band: P.pos10 ? 10 : 0, filter: '', src: 0 };
+  T.cl = '0'; T.kb = '';
   // a virus protein: the virus page's pairs table, one row per partner (residues, the model in LIVIA, every score), from its virus's pairs file
   const VX = sp.id === 'virus' && sp.viruses ? new Map() : null;
   if (VX) { const v = sp.viruses.find((x) => (x.members || []).includes(P.i));
@@ -4504,6 +4595,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     if (T.band) list = list.filter((p) => p.best >= CUT[T.band]);
     if (T.struct) list = list.filter((p) => (VX ? !!(p.vx && p.vx.model && (p.vx.shown || p.vx.addr)) : !!((() => { const x = fpBest(B, p); return x && fpUrl(B, x.run, x.rank); })() || (p.ax && p.ax.addr && p.ax.model) || predPick(sp, B, p.preds || [], p.bm))));   // "Structure in LIVIA": the rows with a LIVIA ↗ link
     if (T.filter) { const f = T.filter.toLowerCase(); list = list.filter((p) => p.gene.toLowerCase().includes(f) || (p.name || '').toLowerCase().includes(f) || p.id.toLowerCase().includes(f) || (p.spn && p.spn.qC.includes(f))); }
+    if (T.cl && T.cl !== '0') {
+      if (T.cl === 'active') { if (clustered() && !allOn()) list = list.filter((p) => p.c && ACTIVE.has(p.c)); }
+      else if (T.cl === 'none') list = list.filter((p) => !p.c);
+      else list = list.filter((p) => p.c === +T.cl);
+    }
+    if (T.kb && KB) {
+      list = list.filter((p) => { const k0 = kbOf(p.id); return T.kb === 'unrep' ? !k0 : T.kb === 'rep' ? !!k0 : T.kb === 'ph' ? !!(k0 && k0.ph) : !!(k0 && k0.ge); });
+    }
     const key = T.sort;
     list.sort((a, b) => {
       if (key === 'spans') { const ax = Number.isFinite(a.spans), bx = Number.isFinite(b.spans); if (ax !== bx) return ax ? -1 : 1; if (!ax) return 0; return (a.spans - b.spans) * (T.asc ? 1 : -1); }
@@ -4567,6 +4666,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   { let t; $('#pt-filter').oninput = (e) => { T.filter = e.target.value; T.page = 0; clearTimeout(t); t = setTimeout(drawTable, 120); }; }   // the table rebuilds once the typing pauses
   $('#pt-showsrc-wrap').hidden = !SRC0; $('#pt-showsrc').onchange = (e) => { T.showSrc = e.target.checked; drawTable(); };
   $('#pt-struct').onchange = (e) => { T.struct = e.target.checked; T.page = 0; drawTable(); };
+  if ($('#pt-cl')) $('#pt-cl').onchange = (e) => { T.cl = e.target.value; T.page = 0; drawTable(); };
+  if ($('#pt-kb')) $('#pt-kb').onchange = (e) => { T.kb = e.target.value; T.page = 0; drawTable(); };
   if ($('#pt-csv')) $('#pt-csv').onclick = () => {
     const csvEsc = (v) => { const s = v == null || Number.isNaN(v) ? '' : String(v); return /[\x22,\n\r]/.test(s) ? `"${s.replace(/\x22/g, '""')}"` : s; };
     const mcols = VX ? VMCOL : ['iLIS', ...BCOL];
@@ -5540,8 +5641,17 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
       try { const w = f.contentWindow, pl = w._viewer.plugin, sync = () => w.document.body.classList.toggle('mono-ctl', !!pl.layout.state.showControls);   // LIVIA keeps Mol*'s panel by the parent page's width; in this narrow frame it opens only from the wrench button
         pl.layout.setProps({ showControls: false }); pl.layout.events.updated.subscribe(sync); sync(); } catch (err) {}
       monoSend(s);   // always: the page was built without the thicker interaction cartoon
-      const fit = () => { try { const pl = f.contentWindow._viewer.plugin; if (pl.canvas3d) pl.canvas3d.handleResize(); pl.managers.camera.reset(); } catch (err) {} };   // the camera was framed while the panel's room was still there, so it came up zoomed in until Reset Zoom (the author, 2026-10-18)
-      setTimeout(fit, 400); setTimeout(fit, 1500);
+      const flushFocus = () => {
+        if (s.pendingFocus && s.entry && s.mapOK && typeof focusMolstarResidue === 'function') {
+          const sr = onModel(s, s.pendingFocus);
+          s.pendingFocus = 0;
+          if (sr) focusMolstarResidue(s.frame, 'A', sr);
+          return true;
+        }
+        return false;
+      };
+      const fit = () => { try { const pl = f.contentWindow._viewer.plugin; if (pl.canvas3d) pl.canvas3d.handleResize(); if (!flushFocus()) pl.managers.camera.reset(); } catch (err) {} };   // the camera was framed while the panel's room was still there, so it came up zoomed in until Reset Zoom (the author, 2026-10-18)
+      setTimeout(fit, 400); setTimeout(() => { if (!s.pendingFocus) fit(); }, 1500);
       let rt = 0, w0 = 0; new ResizeObserver(([en]) => { const w = Math.round(en.contentRect.width); if (!w || Math.abs(w - w0) < 8) return; w0 = w; clearTimeout(rt); rt = setTimeout(fit, 300); }).observe(f); };   // the frame resized (a window resized, a tab opened in the background): framed again
     window.addEventListener('message', onReady);
     // A narrow panel: LIVIA's page hides Mol*'s viewport buttons and controls panel there but keeps the panel's room, at the right or,
@@ -5552,6 +5662,36 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     $(`#${s.frame}`).src = url; s.shown = true; monoMsg(s, '');
   }
   $('#iface')._onIface = (T) => { MONO.T = T; renderPairResLook(); for (const s of [MS.q, MS.p]) { if (s.entry) monoMap(s); monoRecolor(s); } };   // a model selected (a Ranked models row or the menu): both structures follow it
+  let _monoHov = '';
+  $('#iface')._onResHover = (idx, r) => {
+    if (typeof highlightMolstarResidue !== 'function') return;
+    if (idx < 0 || !r) {
+      if (_monoHov) { _monoHov = ''; for (const s of [MS.q, MS.p]) if (s.shown && s.ready) highlightMolstarResidue(s.frame, null); }
+      return;
+    }
+    const s = idx === 0 ? MS.q : MS.p, o = idx === 0 ? MS.p : MS.q;
+    if (!s.shown || !s.ready || !s.entry || !s.mapOK) return;
+    const sr = onModel(s, r), key = `${s.frame}:${sr}`;
+    if (key === _monoHov) return;
+    _monoHov = key;
+    if (o.shown && o.ready) highlightMolstarResidue(o.frame, null);
+    highlightMolstarResidue(s.frame, sr ? 'A' : null, sr || null);
+  };
+  $('#iface')._onResClick = (idx, r) => {
+    if (typeof focusMolstarResidue !== 'function' || idx < 0 || !r) return;
+    const s = idx === 0 ? MS.q : MS.p;
+    if (!s.shown || !s.ready) {
+      s.pendingFocus = r;
+      monoLoad(MS.q);
+      monoLoad(MS.p);
+      const cm = $('#c-mono');
+      if (cm) cm.scrollIntoView({ block: 'nearest' });
+      return;
+    }
+    if (!s.entry || !s.mapOK) return;
+    const sr = onModel(s, r);
+    if (sr) focusMolstarResidue(s.frame, 'A', sr);
+  };
   { const io = new IntersectionObserver((ents) => { if (ents.some((x) => x.isIntersecting)) { io.disconnect(); monoLoad(MS.q); monoLoad(MS.p); } }, { rootMargin: '300px' }); io.observe($('#c-mono')); }   // a load-on-click button went unnoticed (the author, 2026-10-16)
   app.querySelectorAll('#mono-dl [data-dl]').forEach((b) => b.onclick = async () => {   // each AlphaFold DB model as read, and its own ChimeraX script (the author, 2026-10-16: one script per protein)
     const save = (text, name, type) => { const u = URL.createObjectURL(new Blob([text], { type })), a = document.createElement('a'); a.href = u; a.download = name; a.click(); setTimeout(() => URL.revokeObjectURL(u), 5000); };

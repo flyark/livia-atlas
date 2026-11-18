@@ -310,6 +310,8 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .seq-flow .g10.tail::before { right: auto; left: 0; }
 .seq-flow .c { color: #fff; font-weight: 600; border-radius: 2px; }
 .seq-flow .l { border-radius: 2px; }
+.seq-flow [data-r] { cursor: pointer; }
+.seq-flow [data-r]:hover { outline: 1px solid #17263A; border-radius: 2px; }
 
 /* pair page */
 .pairwho { display: grid; grid-template-columns: repeat(2, minmax(0, auto)); justify-content: start; gap: 8px 40px; margin-top: 12px; }
