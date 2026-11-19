@@ -241,7 +241,7 @@ function dataset(id) {   // one screen: its manifest; proteins.json only when a 
     if (!reg || !reg.base) throw new Error(`Unknown dataset “${id}”.`);
     const base = new URL(DEV && reg.dev ? reg.dev : reg.base, location.href).href;   // each screen is its own Pages repo
     return { id, reg, base, manifest: await getJSON(base + 'manifest.json'), raw: new Map(), rows: null };
-  })().catch((e) => { delete DSC[id]; throw e; });
+  })().catch((e) => { if (!/HTTP 404\b/.test(String(e && e.message))) delete DSC[id]; throw e; });
   return DSC[id];
 }
 // Thematic sets of a dataset (sets.json): views over the one dataset, each a list of its prediction runs — a screen the
@@ -336,7 +336,7 @@ async function datasetRows(ds) {
 const SPM = {};
 function speciesManifest(id) {   // a species' counts and screens only (the home page needs no more)
   if (!SPM[id]) SPM[id] = (async () => { const reg = await regSpecies(id); if (!reg) throw new Error(`Unknown species “${id}”.`); return getJSON(new URL(reg.base, location.href).href + 'manifest.json'); })()
-    .catch((e) => { delete SPM[id]; throw e; });
+    .catch((e) => { if (!/HTTP 404\b/.test(String(e && e.message))) delete SPM[id]; throw e; });
   return SPM[id];
 }
 const SPL = new Set();   // species whose index has arrived: the search reads them whole, and the name shards for every other species
@@ -3071,7 +3071,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR${cutNote(5)}</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div></div>
     <div class="srcs scope isorow" id="isorow" hidden></div>
     <div class="setbar" id="setbar" hidden></div>
-    <nav class="subnav" aria-label="Sections">${nav.map(([t, l]) => `<button data-t="${t}"${t === 'c-homo' ? ' hidden' : ''}>${l}</button>`).join('')}</nav>
+    <nav class="subnav" aria-label="Sections"><span class="subnav-ctx" id="subnav-ctx" title="Back to top"><b>${esc(P.gene)}</b><span class="ctx-sp">${esc(sp.reg.label)}</span><span class="ctx-tag" id="subnav-ctx-cl" hidden></span></span>${nav.map(([t, l]) => `<button data-t="${t}"${t === 'c-homo' ? ' hidden' : ''}>${l}</button>`).join('')}</nav>
     <div class="card" id="c-iso" hidden></div>
     <div class="card" id="c-partners"><div class="card-head"><div><h2>Overview</h2><div class="muted">each partner by its best model</div></div>
         <div class="controls" style="margin:0"><label>Y <select id="sc-y"></select></label><label>X <select id="sc-x"></select></label>
@@ -3143,7 +3143,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <select id="pt-band" aria-label="Which partners, by FPR band"><option value="10">past 10% FPR (iLIS ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ${CUT[1]})</option><option value="0">all predicted</option></select>
         <select id="pt-cl" aria-label="Which binding-site cluster" hidden><option value="0">all clusters</option></select>
         <select id="pt-kb" aria-label="Literature status in BioGRID" hidden><option value="">all literature</option><option value="unrep">not in BioGRID</option><option value="rep">reported in BioGRID</option><option value="ph">reported: physical</option><option value="ge">reported: genetic</option></select>
-        <label class="ctl" id="pt-showsrc-wrap" title="which screen each partner was predicted in"><input type="checkbox" id="pt-showsrc"> Source</label><label class="ctl" title="only the partners whose model opens in LIVIA (a LIVIA ↗ link)"><input type="checkbox" id="pt-struct"> Structure in LIVIA</label><input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"><button class="btn" id="pt-csv" type="button" style="height:28px;padding:0 10px;font-size:12.5px" title="download the shown interactors as CSV, with contact and local interaction residue ranges">↓ CSV</button></div></div>
+        <label class="ctl" id="pt-showsrc-wrap" title="which screen each partner was predicted in"><input type="checkbox" id="pt-showsrc"> Source</label><label class="ctl" title="only the partners whose model opens in LIVIA (a LIVIA ↗ link)"><input type="checkbox" id="pt-struct"> Structure in LIVIA</label><input type="search" id="pt-filter" placeholder="Filter partners" style="width:180px"><button class="btn pt-reset-btn" id="pt-reset" type="button" hidden title="Reset partner table filters to defaults">Reset filters</button><button class="btn" id="pt-csv" type="button" style="height:28px;padding:0 10px;font-size:12.5px" title="download the shown interactors as CSV, with contact and local interaction residue ranges">↓ CSV</button></div></div>
       <div class="muted card-note" id="pt-note" style="margin:2px 0 10px"></div>
       <div class="tbl-wrap"><table class="pt" id="pt"></table></div><div class="pager" id="pager"></div></div>
     <div class="card" id="c-orth"><div class="card-head"><div><h2>Orthologs</h2><div class="muted" id="orth-sub">The orthologs load when this card scrolls into view.</div></div><div class="controls" style="margin:0">${xticks}<span class="ctl orth-show" title="what the plot draws besides the bars">Show <label><input type="checkbox" data-o="dom"> domains</label><label><input type="checkbox" data-o="id"> identity</label><label><input type="checkbox" data-o="pl"> pLDDT</label></span></div></div>
@@ -3155,13 +3155,19 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div id="homo-body"></div></div>`;
   { const bar = $('.subnav'); let cur = null, raf = 0;
     const spy = () => { raf = 0; if (!bar || !bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
+      const phead = $('.phead');
+      if (phead) bar.classList.toggle('stuck', phead.getBoundingClientRect().bottom <= (document.querySelector('.top')?.offsetHeight || 56));
       const lim = bar.getBoundingClientRect().bottom + 24; let on = null;
       for (const b of bar.querySelectorAll('button')) { const t = document.getElementById(b.dataset.t); if (t && !t.hidden && t.getBoundingClientRect().top <= lim) on = b; }
       if (on === cur) return; cur = on; bar.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === on));
       if (on && bar.scrollWidth > bar.clientWidth + 1) bar.scrollTo({ left: Math.max(0, on.offsetLeft - (bar.clientWidth - on.offsetWidth) / 2), behavior: 'auto' }); };
     const onScroll = () => { if (!raf) raf = requestAnimationFrame(spy); };
     window.addEventListener('scroll', onScroll, { passive: true }); requestAnimationFrame(spy);
-    if (bar) subnavEdge(bar); }
+    if (bar) {
+      subnavEdge(bar);
+      const ctxEl = $('#subnav-ctx', bar);
+      if (ctxEl) ctxEl.onclick = () => window.scrollTo({ top: 0, behavior: 'auto' });
+    } }
   app.querySelectorAll('.subnav button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); });
   if ($('#copy-md')) $('#copy-md').onclick = (e) => copyAtlasMarkdown(e.currentTarget);
   { const dm = $('.dmenu'), shut = (e) => { if (!dm || !dm.isConnected) { document.removeEventListener('click', shut); return; } if (dm.open && !dm.contains(e.target)) dm.open = false; }; document.addEventListener('click', shut); }
@@ -3340,7 +3346,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
           <td class="iso-top">${t.top.map((x) => `<a href="#/${sp.id}/${x.id}${scopeQ}">${esc(gname(x.id))}</a> <span class="num">${x.best.toFixed(2)}</span>`).join(' · ')}</td></tr>`; }).join('')}
       </tbody></table></div>
       <p class="muted" style="margin:10px 0 0;font-size:13.5px">All ${fmtInt(BA.choices.length)} together${BA.split && sp.dsIds.length > 1 ? ` in ${esc(BA.split.part.ds.reg.short)}'s isoform files` : ''}: ${fmtInt(all.n)} partner${plS(all.n)}, ${fmtInt(all.p10)} past the 10% FPR cutoff${BA.split && sp.dsIds.length > 1 ? ' (the reference row also counts the other screens, so it can be larger)' : ''}.${few ? ` ${fmtInt(few)} ${few === 1 ? 'construct' : 'constructs'} folded with a single partner ${few === 1 ? 'is' : 'are'} not listed.` : ''}</p>`;
-    if (!card.hidden) { const nav = $('.subnav'), btn = document.createElement('button'); btn.dataset.t = 'c-iso'; btn.textContent = `${WORD}s`; nav.prepend(btn);
+    if (!card.hidden) { const nav = $('.subnav'), btn = document.createElement('button'); btn.dataset.t = 'c-iso'; btn.textContent = `${WORD}s`; const ctx0 = nav && nav.querySelector('.subnav-ctx'); if (ctx0) ctx0.after(btn); else nav.prepend(btn);
       btn.onclick = () => window.scrollTo({ top: card.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); }
   }
   app.querySelectorAll('.xticks').forEach((i) => { i.oninput = () => { app.querySelectorAll('.xticks').forEach((o) => { if (o !== i) o.value = i.value; }); drawFreq(); drawHeatmap(); drawOrth(); if (PALN.trk) drawOrth(PCFG); }; });
@@ -3749,14 +3755,14 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const sel = $('#pt-cl'); if (!sel) return;
     if (!clustered()) { sel.hidden = true; if (T && T.cl !== '0') T.cl = '0'; return; }
     const pCnt = {}; for (const [, c] of partnerCluster) pCnt[c] = (pCnt[c] || 0) + 1;
-    const prev = sel.value || '0';
+    const prev = (T && T.cl && T.cl !== '0') ? T.cl : (sel.value || '0');
     sel.innerHTML = '<option value="0">all clusters</option>'
       + (!allOn() ? `<option value="active">selected sites (${[...ACTIVE].sort((a, b) => a - b).map((c) => 'C' + c).join(', ')})</option>` : '')
       + range(M.k).map((c) => `<option value="${c}">${clusterLabel(c)} (${fmtInt(pCnt[c] || 0)})</option>`).join('')
       + '<option value="none">not clustered</option>';
     sel.hidden = false;
     sel.value = [...sel.options].some((o) => o.value === prev) ? prev : '0';
-    if (T) T.cl = sel.value;
+    if (T) { T.cl = sel.value; if (T.cl !== '0') drawTable(); }
   }
   function toggleCluster(c) {   // as clip.html: from "all", a click isolates that cluster; further clicks add or remove
     if (c === 'all') ACTIVE = new Set(range(M.k));
@@ -3768,6 +3774,15 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const all = allOn();
     app.querySelectorAll('[data-chips] .cchip').forEach((b) => { const c = b.dataset.c;
       if (c === 'all') b.classList.toggle('sel', all); else { b.classList.toggle('sel', !all && ACTIVE.has(+c)); b.classList.toggle('off', !all && !ACTIVE.has(+c)); } });
+    const tag = $('#subnav-ctx-cl');
+    if (tag) {
+      if (clustered() && !all) {
+        tag.textContent = [...ACTIVE].sort((a, b) => a - b).map((c) => 'C' + c).join(', ');
+        tag.hidden = false;
+      } else {
+        tag.hidden = true;
+      }
+    }
   }
   function emptyPlot(host, msg) { host.innerHTML = `<div class="plot-empty">${msg}</div>`; }
   function qDomains(L) {   // domains (Pfam, else UniProt's) sit on the UniProt sequence: placed directly when the clustered construct is that sequence, through an alignment when it is another isoform (fly yki: 418 aa folded, UniProt 395 aa)
@@ -4297,13 +4312,29 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   function show3D() {
     V.want = true; if (S.state !== 'ready' || V.shown) return;
     const frame = $('#viewer3d-frame'); if (!frame) return;
+    const comps = colorComponents(), built = JSON.stringify(comps);
+    if (WARM3D.frame && WARM3D.ready && typeof Element.prototype.moveBefore === 'function' && typeof swapMolstarStructure === 'function' && WARM3D.frame !== frame && frame.parentElement) {
+      try {
+        WARM3D.frame.title = frame.title || '3D structure';
+        frame.parentElement.moveBefore(WARM3D.frame, frame);
+        frame.remove();
+        swapMolstarStructure('viewer3d-frame', S.text, comps, 'mmcif');
+        V.shown = true; V.ready = true; $('#v3d-msg').hidden = true; legend3D();
+        if (V.pendingFocus && typeof focusMolstarResidue === 'function') {
+          const sr = toStruct(V.pendingFocus);
+          V.pendingFocus = 0;
+          if (sr) setTimeout(() => focusMolstarResidue('viewer3d-frame', 'A', sr), 220);
+        }
+        return;
+      } catch (_e) { WARM3D.frame = null; WARM3D.ready = false; }
+    }
     // A color update sent while the viewer page is still booting is lost (clustering can finish in that window), so
     // once the viewer says it is ready, the colors are sent again if they changed since it was built.
-    const comps = colorComponents(), built = JSON.stringify(comps);
     const onReady = (ev) => { if (!ev.data || ev.data.type !== 'molstarReady') return; const f = $('#viewer3d-frame');
       if (gone() || !f || ev.source === f.contentWindow) window.removeEventListener('message', onReady);
       if (!gone() && f && ev.source === f.contentWindow) {
         V.ready = true;
+        WARM3D.frame = f; WARM3D.ready = true;
         if (JSON.stringify(colorComponents()) !== built) recolor3D();
         if (V.pendingFocus && typeof focusMolstarResidue === 'function') {
           const sr = toStruct(V.pendingFocus);
@@ -4559,8 +4590,19 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     cluster(); };
 
   /* partner table */
-  const T = { sort: 'best', asc: false, page: 0, band: P.pos10 ? 10 : 0, filter: '', src: 0 };
-  T.cl = '0'; T.kb = '';
+  const ptDefBand = P.pos10 ? 10 : 0;
+  const ptQ = hashPath().q;
+  const T = {
+    sort: 'best',
+    asc: false,
+    page: 0,
+    band: ptQ.has('band') ? +ptQ.get('band') : ptDefBand,
+    filter: ptQ.get('q') || '',
+    src: ptQ.has('src') ? (SETS ? ptQ.get('src') : +ptQ.get('src')) : (SETS ? '' : 0),
+    struct: ptQ.get('struct') === '1',
+    cl: ptQ.get('ptcl') || '0',
+    kb: ptQ.get('kb') || ''
+  };
   // a virus protein: the virus page's pairs table, one row per partner (residues, the model in LIVIA, every score), from its virus's pairs file
   const VX = sp.id === 'virus' && sp.viruses ? new Map() : null;
   if (VX) { const v = sp.viruses.find((x) => (x.members || []).includes(P.i));
@@ -4659,15 +4701,47 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     $('#pager').innerHTML = pages > 1 ? `<button class="btn" id="pp" ${T.page ? '' : 'disabled'}>Previous</button><span>Page ${T.page + 1} of ${pages}</span><button class="btn" id="pn" ${T.page < pages - 1 ? '' : 'disabled'}>Next</button>` : '';
     if (pages > 1) { $('#pp').onclick = () => { T.page--; drawTable(); }; $('#pn').onclick = () => { T.page++; drawTable(); }; }
   }
+  const syncPtUrlAndReset = () => {
+    const defSrc = SETS ? '' : 0;
+    const dirty = T.band !== ptDefBand || T.src !== defSrc || !!T.filter || !!T.struct || (T.cl && T.cl !== '0') || !!T.kb;
+    const rb = $('#pt-reset');
+    if (rb) rb.hidden = !dirty;
+    replaceHashParams((u) => {
+      if (T.band !== ptDefBand) u.set('band', String(T.band)); else u.delete('band');
+      if (T.src !== defSrc && T.src) u.set('src', String(T.src)); else u.delete('src');
+      if (T.filter) u.set('q', T.filter); else u.delete('q');
+      if (T.struct) u.set('struct', '1'); else u.delete('struct');
+      if (T.cl && T.cl !== '0') u.set('ptcl', T.cl); else u.delete('ptcl');
+      if (T.kb) u.set('kb', T.kb); else u.delete('kb');
+    });
+  };
   $('#pt-band').value = String(T.band);
-  $('#pt-band').onchange = (e) => { T.band = +e.target.value; T.page = 0; drawTable(); };
+  $('#pt-band').onchange = (e) => { T.band = +e.target.value; T.page = 0; syncPtUrlAndReset(); drawTable(); };
   if (SETS) $('#pt-src').innerHTML = `<option value="">all categories</option>${SETS.map((x) => `<option>${esc(x)}</option>`).join('')}`;   // one screen: filter by its categories
-  $('#pt-src').onchange = (e) => { T.src = SETS ? e.target.value : +e.target.value; T.page = 0; drawTable(); };
-  { let t; $('#pt-filter').oninput = (e) => { T.filter = e.target.value; T.page = 0; clearTimeout(t); t = setTimeout(drawTable, 120); }; }   // the table rebuilds once the typing pauses
+  if (T.src) $('#pt-src').value = String(T.src);
+  $('#pt-src').onchange = (e) => { T.src = SETS ? e.target.value : +e.target.value; T.page = 0; syncPtUrlAndReset(); drawTable(); };
+  if (T.filter) $('#pt-filter').value = T.filter;
+  { let t; $('#pt-filter').oninput = (e) => { T.filter = e.target.value; T.page = 0; syncPtUrlAndReset(); clearTimeout(t); t = setTimeout(drawTable, 120); }; }   // the table rebuilds once the typing pauses
   $('#pt-showsrc-wrap').hidden = !SRC0; $('#pt-showsrc').onchange = (e) => { T.showSrc = e.target.checked; drawTable(); };
-  $('#pt-struct').onchange = (e) => { T.struct = e.target.checked; T.page = 0; drawTable(); };
-  if ($('#pt-cl')) $('#pt-cl').onchange = (e) => { T.cl = e.target.value; T.page = 0; drawTable(); };
-  if ($('#pt-kb')) $('#pt-kb').onchange = (e) => { T.kb = e.target.value; T.page = 0; drawTable(); };
+  $('#pt-struct').checked = !!T.struct;
+  $('#pt-struct').onchange = (e) => { T.struct = e.target.checked; T.page = 0; syncPtUrlAndReset(); drawTable(); };
+  if ($('#pt-cl')) $('#pt-cl').onchange = (e) => { T.cl = e.target.value; T.page = 0; syncPtUrlAndReset(); drawTable(); };
+  if ($('#pt-kb')) {
+    if (T.kb) $('#pt-kb').value = T.kb;
+    $('#pt-kb').onchange = (e) => { T.kb = e.target.value; T.page = 0; syncPtUrlAndReset(); drawTable(); };
+  }
+  if ($('#pt-reset')) $('#pt-reset').onclick = () => {
+    T.band = ptDefBand; T.src = SETS ? '' : 0; T.filter = ''; T.struct = false; T.cl = '0'; T.kb = ''; T.page = 0;
+    $('#pt-band').value = String(T.band);
+    $('#pt-src').value = String(T.src);
+    $('#pt-filter').value = '';
+    $('#pt-struct').checked = false;
+    if ($('#pt-cl')) $('#pt-cl').value = '0';
+    if ($('#pt-kb')) $('#pt-kb').value = '';
+    syncPtUrlAndReset();
+    drawTable();
+  };
+  syncPtUrlAndReset();
   if ($('#pt-csv')) $('#pt-csv').onclick = () => {
     const csvEsc = (v) => { const s = v == null || Number.isNaN(v) ? '' : String(v); return /[\x22,\n\r]/.test(s) ? `"${s.replace(/\x22/g, '""')}"` : s; };
     const mcols = VX ? VMCOL : ['iLIS', ...BCOL];
@@ -5329,6 +5403,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
       <div id="iface"></div></div>${O0 && O0.key !== P.key ? `
     <div class="card" id="c-xorth"><div class="card-head"><div><h2>Orthologs of the pair</h2><div class="muted" id="xorth-sub">The orthologs load when this card scrolls into view.</div></div></div><div id="xorth-body"></div></div>
     <div class="card" id="c-xpara"><div class="card-head"><div><h2>Paralogs of the pair</h2><div class="muted" id="xpara-sub">The paralogs load when this card scrolls into view.</div></div></div><div id="xpara-body"></div></div>` : ''}`;
+  app.dataset.subnavCtx = JSON.stringify({ title: `${P.gene} × ${O.gene}`, sub: `iLIS ${part.best.toFixed(3)}` });
   const more = $('#models-more'), setOpen = (on) => { app.querySelectorAll('.models tbody tr.below').forEach((x) => { x.hidden = !on; }); more.setAttribute('aria-expanded', String(on));
     more.textContent = on ? `Hide the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the cutoff` : `Show the ${fmtInt(nBelow)} model${nBelow === 1 ? '' : 's'} below the ${CUTP}% FPR cutoff (iLIS ${CUT[CUTP]})`; };
   if (more) more.onclick = () => setOpen(more.getAttribute('aria-expanded') !== 'true');
@@ -8486,12 +8561,27 @@ function mountSections() {
     return; }
   if (targets.length < 3) return;
   const items = targets.map(([c, lab], i) => { if (!c.id) c.id = `sec-${i}`; return [c.id, lab]; });
-  const bar = el(`<nav class="subnav auto" aria-label="Sections">${items.map(([t, l]) => `<button data-t="${t}">${esc(l)}</button>`).join('')}</nav>`);
+  let ctxHtml = '';
+  if (app.dataset.subnavCtx) {
+    try {
+      const c = JSON.parse(app.dataset.subnavCtx);
+      if (c && c.title) ctxHtml = `<span class="subnav-ctx" title="Back to top"><b>${esc(c.title)}</b>${c.sub ? `<span class="ctx-sp">${esc(c.sub)}</span>` : ''}</span>`;
+    } catch (_e) {}
+  }
+  const bar = el(`<nav class="subnav auto" aria-label="Sections">${ctxHtml}${items.map(([t, l]) => `<button data-t="${t}">${esc(l)}</button>`).join('')}</nav>`);
   const firstCard = app.querySelector(':scope > .card, :scope > .reading');
   (firstCard || targets[0][0]).before(bar);
+  if (ctxHtml) {
+    const ctxEl = $('.subnav-ctx', bar);
+    if (ctxEl) ctxEl.onclick = () => window.scrollTo({ top: 0, behavior: 'auto' });
+  }
   bar.querySelectorAll('button').forEach((b) => b.onclick = () => { const t = document.getElementById(b.dataset.t); if (t) window.scrollTo({ top: t.getBoundingClientRect().top + window.scrollY - barsBottom(), behavior: 'auto' }); });
   let cur = null, raf = 0;
   const spy = () => { raf = 0; if (!bar.isConnected) { window.removeEventListener('scroll', onScroll); return; }
+    if (ctxHtml) {
+      const head = app.querySelector('.phead, .pairhead');
+      if (head) bar.classList.toggle('stuck', head.getBoundingClientRect().bottom <= (document.querySelector('.top')?.offsetHeight || 56));
+    }
     const lim = bar.getBoundingClientRect().bottom + 24; let on = null;
     for (const b of bar.querySelectorAll('button')) { if (b.hidden) continue; const t = document.getElementById(b.dataset.t); if (t && !t.hidden && !t.closest('[hidden]') && t.getBoundingClientRect().top <= lim) on = b; }
     if (on === cur) return; cur = on; bar.querySelectorAll('button').forEach((b) => b.classList.toggle('on', b === on));
@@ -8528,7 +8618,57 @@ function enhanceTables(root = app) {
         for (const r of rows) t.tBodies[0].appendChild(r); }; });
   }
 }
+const WARM3D = { frame: null, ready: false, park: null };
+function parkWarm3D() {
+  if (!WARM3D.frame || !WARM3D.ready || typeof Element.prototype.moveBefore !== 'function') return;
+  if (!WARM3D.frame.isConnected) { WARM3D.frame = null; WARM3D.ready = false; return; }
+  if (!WARM3D.park) {
+    const p = document.createElement('div');
+    p.id = 'atlas-warm-3d-park';
+    p.setAttribute('aria-hidden', 'true');
+    p.style.cssText = 'position:fixed;left:-9999px;top:-9999px;width:400px;height:400px;visibility:hidden;pointer-events:none;';
+    document.body.appendChild(p);
+    WARM3D.park = p;
+  }
+  if (WARM3D.frame.parentElement !== WARM3D.park) {
+    try { WARM3D.park.moveBefore(WARM3D.frame, null); } catch (_e) { WARM3D.frame = null; WARM3D.ready = false; }
+  }
+}
+const PREFETCHED = new Set();
+function bindHoverPrefetch() {
+  let tid = 0, curHref = '';
+  const cancel = () => { clearTimeout(tid); tid = 0; curHref = ''; };
+  document.addEventListener('pointerover', (ev) => {
+    const a = ev.target && ev.target.closest && ev.target.closest('a[href^="#/"]');
+    if (!a) return;
+    const href = a.getAttribute('href') || '';
+    if (!href || href === curHref || href === location.hash) return;
+    cancel();
+    curHref = href;
+    tid = setTimeout(() => {
+      tid = 0;
+      const raw = href.slice(2).split('?')[0];
+      const ps = raw.split('/').filter(Boolean).map(decodeURIComponent);
+      if (ps.length !== 2 && ps.length !== 3) return;
+      const [spId, key] = ps;
+      if (!SPC[spId] || PREFETCHED.has(`${spId}:${key}`)) return;
+      SPC[spId].then((sp) => {
+        if (!sp || !sp.byKey) return;
+        const row = sp.byKey.get(key);
+        if (!row) return;
+        PREFETCHED.add(`${spId}:${key}`);
+        if (PREFETCHED.size > 40) PREFETCHED.delete(PREFETCHED.values().next().value);
+        merged(sp, row).catch(() => {});
+      }).catch(() => {});
+    }, 120);
+  }, true);
+  document.addEventListener('pointerout', (ev) => {
+    if (ev.target && ev.target.closest && ev.target.closest('a[href^="#/"]')) cancel();
+  }, true);
+}
 async function route() {
+  parkWarm3D();
+  delete app.dataset.subnavCtx;
   const gen = ++ROUTE, { parts, q } = hashPath(), setId = q.get('set') || '', here = location.hash;
   ATLAS_STATE = { view: 'loading', isReady: () => false, clusteringReady: () => false, structureReady: () => false, inspect: () => ({ view: 'loading', hash: location.hash }), queryRegion: null };
   if (SEQFIT) SEQFIT.disconnect();   // the last page's sequence panels are gone; the new page's register themselves
@@ -8701,6 +8841,7 @@ window.LIVIA_ATLAS = {
   }
 };
 window.addEventListener('hashchange', route);
+bindHoverPrefetch();
 route();
 // Column headers stay in view while a long table scrolls under the page header (and a protein page's section bar). The
 // wrapper scrolls sideways, which stops CSS sticky, so the header cells are moved down instead, never past the last row.
