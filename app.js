@@ -3294,7 +3294,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const kbTip = (kb) => `reported in BioGRID ${KB.release}: ${[kb.ph ? `physical, ${kb.ph} publication${kb.ph === 1 ? '' : 's'}` : '', kb.ge ? `genetic, ${kb.ge} publication${kb.ge === 1 ? '' : 's'}` : ''].filter(Boolean).join('; ')}`;
   const hq0 = hashPath().q;
   const qp = new URLSearchParams(); if (setId) qp.set('set', setId); if (iso) qp.set('iso', iso); if (RESQ) qp.set('res', resLabel(RESV)); if (CUT0 !== 10) qp.set('cut', CUT0);
-  for (const k of ['fpst', 'rlab', 'cl']) if (hq0.get(k)) qp.set(k, hq0.get(k));
+  for (const k of ['fpst', 'freqst', 'rlab', 'cl']) if (hq0.get(k)) qp.set(k, hq0.get(k));
   const sp = await species(spId), P = resolveRow(sp, q), qs = qp.toString() ? `?${qp}` : '';
   if (gone()) return;
   if (!P) { app.innerHTML = `<div class="empty">No protein “${esc(q)}” in the ${esc(spLow(sp.reg.label))} screens. <a href="#/${sp.id}">Search ${esc(spLow(sp.reg.label))} proteins</a><div class="miss" id="pp-miss" hidden style="text-align:left;max-width:640px;margin:12px auto 0"></div></div>`;
@@ -3315,6 +3315,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const chips = '<div class="chips cl-chips" data-chips></div>';
   const xticks = '<label class="xt">x-ticks <input type="number" class="xticks" min="2" max="40" placeholder="auto"></label>';
   const fpStyle0 = hq0.get('fpst') === 'classic' ? 'classic' : 'cluster', rlab0 = hq0.get('rlab') !== '0';
+  const freqStyle0 = hq0.get('freqst') === 'total' || hq0.get('fpst') === 'total' ? 'total' : fpStyle0;
+  const freqSubTxt = (s) => (s === 'total' ? 'total models contacting each residue' : s === 'cluster' ? 'models contacting each residue, by cluster' : 'models contacting each residue, colored by their most frequent cluster');
   const rlabBox = `<label class="xt fp-rlab"${fpStyle0 !== 'cluster' ? ' hidden' : ''} title="show cluster names and top partners at the right of the plot"><input type="checkbox" class="fp-rlabels"${rlab0 ? ' checked' : ''}> right labels</label>`;
   const resBox = `<label class="xt" title="a residue number, a residue range (10-19), a short sequence (ETLKKG) or a motif (LXXLL, [ST]P; every match), marked on the site map, the frequency and the fingerprint; the link keeps it">Residue <input type="text" class="res-q" placeholder="10-19, 983 or motif" spellcheck="false" autocomplete="off" aria-label="Residue number, range or sequence to mark" value="${esc(RESQ ? resLabel(RESV) : '')}"></label>`;   // the Binding sites card's lookup again: typing in one box fills the others
   const occ = (await Promise.all(P.occ.map(async (o) => { try { return { ...o, ds: await dataset(sp.dsIds[o.di]) }; } catch (e) { return null; } }))).filter(Boolean);
@@ -3357,7 +3359,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         show only that site on the page; the partners of each site are listed under Clusters. Type a residue number, a residue range (for example 10-19), a short sequence (for example <span id="res-eg">ETLKKG</span>; up to one mismatch per five residues) or a motif, which marks every match
         (X or . any residue, [ST] either residue, [^P] any residue but P, X(2,3) two to three residues, B for D or N, Z for E or Q, J for I or L; for example LXXLL, [ST]P or PX(2,3)P;
         PROSITE patterns work too) to see its sequence, domain, AlphaFold DB pLDDT and which models, partners and sites contact or include it; the link keeps it. The Residue boxes of the frequency and fingerprint cards mark the same residues there.</p></details><p class="note" id="clip-aside" hidden></p></div>
-    <div class="card" id="c-freq"><div class="card-head"><div><h2>Contact residue frequency</h2><div class="muted" id="freq-sub">${fpStyle0 === 'cluster' ? 'models contacting each residue, by cluster' : 'models contacting each residue, colored by their most frequent cluster'}</div></div><div class="card-tools"><div class="ctl"><div class="seg fp-style" title="by cluster: each cluster in its own color; classic: one color for every contact">${[['cluster', 'by cluster'], ['classic', 'classic']].map(([m, l]) => `<button data-st="${m}"${m === fpStyle0 ? ' class="on"' : ''}>${l}</button>`).join('')}</div></div>${rlabBox}${resBox}${xticks}</div></div>
+    <div class="card" id="c-freq"><div class="card-head"><div><h2>Contact residue frequency</h2><div class="muted" id="freq-sub">${freqSubTxt(freqStyle0)}</div></div><div class="card-tools"><div class="ctl"><div class="seg fp-style freq-style" title="by cluster: each cluster over all models; all models: combined total only; classic: bars colored by the most frequent cluster">${[['cluster', 'by cluster'], ['total', 'all models'], ['classic', 'classic']].map(([m, l]) => `<button data-st="${m}"${m === freqStyle0 ? ' class="on"' : ''}>${l}</button>`).join('')}</div></div>${rlabBox}${resBox}${xticks}</div></div>
       ${chips}<div class="plot" id="freq-wrap"></div><p class="sites-more" data-resmark hidden></p><div class="domlegend" id="freq-domains"></div><details class="how" id="hot-d" hidden><summary>Most contacted residues</summary><div class="hot" id="hot"></div></details></div>
     <div class="card" id="c-fp"><div class="card-head"><div><h2>Clustered interaction fingerprint</h2><div class="muted">one row per model, in dendrogram order · hover for the partner, click to open the pair</div></div><div class="card-tools">
         <input type="search" id="fp-find" placeholder="Find partner" style="width:122px" aria-label="Find a partner in the fingerprint"><div class="ctl"><div class="seg fp-style" title="by cluster: each cluster in its own color; classic: one color for every contact">${[['cluster', 'by cluster'], ['classic', 'classic']].map(([m, l]) => `<button data-st="${m}"${m === fpStyle0 ? ' class="on"' : ''}>${l}</button>`).join('')}</div></div>${rlabBox}${resBox}${xticks}</div></div>
@@ -3568,7 +3570,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   const toStruct = (r) => (S.map ? S.map[r - 1] : r);
   const who = (label) => B.labels.get(label) || (String(label).startsWith('yours~') ? { key: String(label).split('~')[1], run: 'yours', yours: true } : { key: label, run: null });    // a cLIP partner label → partner key + screen run (yours~key: your predictions)
   const xtWant = () => { const v = +((app.querySelector('.xticks') || {}).value); return v >= 2 ? Math.min(40, v) : 0; };
-  const FPS = { style: fpStyle0, labels: rlab0 };   // frequency + fingerprint: 'cluster' (each cluster in its color, optional right labels) or 'classic' (bars in the most frequent cluster's color, contacts in navy)
+  const FPS = { style: fpStyle0, freqStyle: freqStyle0, labels: rlab0 };   // frequency + fingerprint: 'cluster', 'total' (frequency only: all models line), or 'classic'
   let initCl = (hq0.get('cl') || '').split(',').map((x) => parseInt(x, 10)).filter((x) => Number.isFinite(x) && x >= 1);
   const fpAXR = (W) => (FPS.style === 'cluster' && FPS.labels && W >= 640 ? 158 : AXR);   // room for the cluster labels; both plots use it so their residue axes stay aligned
   let chipsAll = false;
@@ -4087,24 +4089,33 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
     const g = canvasCtx(cv, W, H);
     const yLabel = (text, y0, y1, color) => { g.save(); g.translate(13, (y0 + y1) / 2); g.rotate(-Math.PI / 2); g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = color; g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.fillText(text, 0, 0); g.restore(); };
     const yTicks = (vals, fmt, yOf) => { g.fillStyle = '#5A697C'; g.font = '10.5px "IBM Plex Mono", ui-monospace, monospace'; g.textAlign = 'right'; g.textBaseline = 'middle'; for (const v of vals) g.fillText(fmt(v), AXL - 6, yOf(v)); };
-    const frame = (y0, y1, white = false) => { g.fillStyle = white ? '#FFFFFF' : '#F6F8FB'; g.fillRect(AXL, y0, W - AXL - R, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AXL + 0.5, y0); g.lineTo(AXL + 0.5, y1 + 0.5); g.lineTo(W - R, y1 + 0.5); g.stroke(); };
+    const frame = (y0, y1) => { g.fillStyle = '#F6F8FB'; g.fillRect(AXL, y0, W - AXL - R, y1 - y0); g.strokeStyle = '#D5DDE6'; g.lineWidth = 1; g.beginPath(); g.moveTo(AXL + 0.5, y0); g.lineTo(AXL + 0.5, y1 + 0.5); g.lineTo(W - R, y1 + 0.5); g.stroke(); };
+    const hgrid = (y0, y1) => { g.strokeStyle = '#E3E8EE'; g.lineWidth = 1; for (const f of [0.5, 1]) { const y = Math.round(y1 - f * (y1 - y0)) + 0.5; g.beginPath(); g.moveTo(AXL, y); g.lineTo(W - R, y); g.stroke(); } };
     for (const d of doms) { const x0 = xOf(Math.max(1, d.s)), x1 = Math.max(x0 + 2, xOf(Math.min(L, d.e) + 1)), y = 4 + d.lane * DRH;   // domains D1, D2 … (names in the legend), as LIVIA cLIP
       g.fillStyle = '#E3E9F1'; g.fillRect(x0, y, x1 - x0, 12); g.strokeStyle = '#9FB0C4'; g.lineWidth = 0.6; g.strokeRect(x0 + 0.3, y + 0.3, x1 - x0 - 0.6, 11.4);
       g.fillStyle = '#34445A'; g.font = '10px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle'; const lb = 'D' + d.idx; if (g.measureText(lb).width < x1 - x0 - 2) g.fillText(lb, (x0 + x1) / 2, y + 6.5); }
-    frame(padT, fBase, FPS.style === 'cluster');   // # models contacting the residue; pure white in by-cluster mode so blue clusters stay crisp
-    g.strokeStyle = '#E3E8EE'; g.lineWidth = 1; for (const f of [0.5, 1]) { const y = Math.round(fBase - f * fH) + 0.5; g.beginPath(); g.moveTo(AXL, y); g.lineTo(W - R, y); g.stroke(); }
-    if (FPS.style === 'cluster') {   // all models as a light neutral area edged in charcoal, each cluster's own count as a line in its color (largest cluster drawn first)
+    frame(padT, fBase); hgrid(padT, fBase);   // # models contacting the residue, matching the pLDDT and AM path. panel background
+    const fst = FPS.freqStyle || FPS.style;
+    if (fst === 'cluster' || fst === 'total') {   // all models as a soft cool-slate area edged in charcoal; in by-cluster mode, each cluster's line on top
       const yOf = (v) => fBase - v / max * fH, path = (val) => { g.beginPath(); for (let r = 1; r <= L; r++) { const x = xc(r), y = yOf(val(r)); if (r === 1) g.moveTo(x, y); else g.lineTo(x, y); } };
-      path((r) => tot[r]); g.lineTo(xc(L), fBase); g.lineTo(xc(1), fBase); g.closePath(); g.fillStyle = '#ECEFF3'; g.fill();
-      path((r) => tot[r]); g.strokeStyle = '#1B2430'; g.lineWidth = 1.2; g.stroke();
-      const size = new Map(); for (let i = 0; i < n; i++) { const c = M.labels[i]; if (ACTIVE.has(c)) size.set(c, (size.get(c) || 0) + 1); }
-      if (R > AXR) { const lx = W - R + 8, list = [['all models', '#1B2430'], ...[...size.keys()].sort((a, z) => size.get(z) - size.get(a)).map((c) => [`${clusterLabel(c, true)} (${size.get(c)})`, clusterColor(c, k)])], fit = Math.max(1, Math.floor(fH / 13));   // the lines' key, in the gutter the fingerprint labels use
+      path((r) => tot[r]); g.lineTo(xc(L), fBase); g.lineTo(xc(1), fBase); g.closePath(); g.fillStyle = fst === 'total' ? '#DCE4EE' : '#E2E8F0'; g.fill();
+      path((r) => tot[r]); g.strokeStyle = '#1B2430'; g.lineWidth = fst === 'total' ? 1.5 : 1.2; g.stroke();
+      const size = new Map(); let activeN = 0; for (let i = 0; i < n; i++) { const c = M.labels[i]; if (ACTIVE.has(c)) { activeN++; size.set(c, (size.get(c) || 0) + 1); } }
+      if (R > AXR) {
+        const lx = W - R + 8;
+        const headLab = allOn() ? `all models (${activeN})` : `selected (${activeN})`;
+        const list = fst === 'total' ? [[headLab, '#1B2430']]
+          : [['all models', '#1B2430'], ...[...size.keys()].sort((a, z) => size.get(z) - size.get(a)).map((c) => [`${clusterLabel(c, true)} (${size.get(c)})`, clusterColor(c, k)])];
+        const fit = Math.max(1, Math.floor(fH / 13));
         g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.textAlign = 'left'; g.textBaseline = 'middle';
-        list.slice(0, fit).forEach(([t, col], j) => { const y = padT + 7 + j * 13; g.strokeStyle = col; g.lineWidth = 2; g.beginPath(); g.moveTo(lx, y); g.lineTo(lx + 14, y); g.stroke(); g.fillStyle = '#34445A'; g.fillText(j === fit - 1 && list.length > fit ? `+ ${list.length - fit + 1} more` : t, lx + 20, y); }); }
-      g.lineWidth = 1.5; for (const c of [...size.keys()].sort((a, z) => size.get(z) - size.get(a))) {   // only where the cluster has contacts (and the step down to zero beside them), so absent clusters draw no baseline
-        const v = (r) => (r >= 1 && r <= L && byC[r] && byC[r][c]) || 0; g.beginPath(); let on = false;
-        for (let r = 1; r <= L; r++) { if (!v(r) && !v(r - 1) && !v(r + 1)) { on = false; continue; } const x = xc(r), y = yOf(v(r)); if (on) g.lineTo(x, y); else g.moveTo(x, y); on = true; }
-        g.strokeStyle = clusterColor(c, k); g.stroke(); }
+        list.slice(0, fit).forEach(([t, col], j) => { const y = padT + 7 + j * 13; g.strokeStyle = col; g.lineWidth = 2; g.beginPath(); g.moveTo(lx, y); g.lineTo(lx + 14, y); g.stroke(); g.fillStyle = '#34445A'; g.fillText(j === fit - 1 && list.length > fit ? `+ ${list.length - fit + 1} more` : t, lx + 20, y); });
+      }
+      if (fst === 'cluster') {
+        g.lineWidth = 1.5; for (const c of [...size.keys()].sort((a, z) => size.get(z) - size.get(a))) {   // only where the cluster has contacts (and the step down to zero beside them), so absent clusters draw no baseline
+          const v = (r) => (r >= 1 && r <= L && byC[r] && byC[r][c]) || 0; g.beginPath(); let on = false;
+          for (let r = 1; r <= L; r++) { if (!v(r) && !v(r - 1) && !v(r + 1)) { on = false; continue; } const x = xc(r), y = yOf(v(r)); if (on) g.lineTo(x, y); else g.moveTo(x, y); on = true; }
+          g.strokeStyle = clusterColor(c, k); g.stroke(); }
+      }
     } else for (let r = 1; r <= L; r++) { if (!tot[r]) continue; let dom = 1, b = -1; const cc = byC[r]; for (const c in cc) if (cc[c] > b) { b = cc[c]; dom = +c; }
       const h = tot[r] / max * fH; g.fillStyle = clusterColor(dom, k); g.fillRect(xOf(r), fBase - h, Math.max(1, bw), h); }
     yTicks([...new Set([0, Math.round(max / 2), max])], String, (v) => fBase - v / max * fH); yLabel('# models', padT, fBase, '#34445A');
@@ -4112,8 +4123,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       for (let r = 1; r <= L; r++) { const sr = toStruct(r), v = sr ? vals(sr) : null; if (v == null) { prev = null; continue; } const x = xc(r), y = yOf(v);
         if (prev) { const mx = (prev.x + x) / 2, my = (prev.y + y) / 2; g.strokeStyle = col(prev.v); g.beginPath(); g.moveTo(prev.x, prev.y); g.lineTo(mx, my); g.stroke(); g.strokeStyle = col(v); g.beginPath(); g.moveTo(mx, my); g.lineTo(x, y); g.stroke(); }
         prev = { x, y, v }; } };
-    if (pl) { frame(pTop, pBase); const yOf = (v) => pBase - v / 100 * pH; line((sr) => S.plddt.get('A:' + sr), yOf, plddtCol); yTicks([0, 50, 100], String, yOf); yLabel('pLDDT', pTop, pBase, '#2F6FA8'); }
-    if (am) { frame(aTop, aBase); const yOf = (v) => aBase - v * aH; line((sr) => S.am[sr], yOf, amCol); yTicks([0, 0.5, 1], (v) => v.toFixed(1), yOf); yLabel('AM path.', aTop, aBase, '#A33'); }
+    if (pl) { frame(pTop, pBase); hgrid(pTop, pBase); const yOf = (v) => pBase - v / 100 * pH; line((sr) => S.plddt.get('A:' + sr), yOf, plddtCol); yTicks([0, 50, 100], String, yOf); yLabel('pLDDT', pTop, pBase, '#2F6FA8'); }
+    if (am) { frame(aTop, aBase); hgrid(aTop, aBase); const yOf = (v) => aBase - v * aH; line((sr) => S.am[sr], yOf, amCol); yTicks([0, 0.5, 1], (v) => v.toFixed(1), yOf); yLabel('AM path.', aTop, aBase, '#A33'); }
     markRes(g, L, xOf, padT, aBase, W, R);   // through the pLDDT and AlphaMissense rows too
     drawTicks(g, resTicks(L, W - AXL - R, xtWant()), aBase + 2, xc, W);
     cv.onmousemove = (e) => { const b = cv.getBoundingClientRect(), r = Math.floor((e.clientX - b.left - AXL) / bw) + 1; if (r < 1 || r > L) { hover3D(0); return hideTip(); }
@@ -4711,7 +4722,23 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       return { name: n, best: p.best, dot: c ? clusterColor(c, k) : '#DDE3EA', sty: bandSty(FPR.iLIS, p.best), tip: `iLIS ${p.best.toFixed(3)}: ${bandLabel[bandIn(FPR.iLIS, p.best)]}${c ? ` · ${clusterLabel(c)}` : ''}` }; }); };
   ['#sc-find', '#fp-find', '#res-find'].forEach((q) => partnerSuggest($(q), suggestItems));   // all three Find partner boxes suggest partners with their iLIS
   ['#sc-x', '#sc-y', '#sc-pts'].forEach((s) => { $(s).onchange = () => drawScatter(); });
-  app.querySelectorAll('.fp-style button').forEach((b) => { b.onclick = () => { FPS.style = b.dataset.st; replaceHashParams((u) => { FPS.style === 'cluster' ? u.delete('fpst') : u.set('fpst', FPS.style); }); app.querySelectorAll('.fp-style button').forEach((o) => o.classList.toggle('on', o.dataset.st === FPS.style)); app.querySelectorAll('.fp-rlab').forEach((el) => { el.hidden = FPS.style !== 'cluster'; }); $('#freq-sub').textContent = FPS.style === 'cluster' ? 'models contacting each residue, by cluster' : 'models contacting each residue, colored by their most frequent cluster'; if (clustered()) renderSites(); drawFreq(); drawHeatmap(); }; });   // one style for all three plots
+  app.querySelectorAll('.fp-style button').forEach((b) => { b.onclick = () => {
+    const st = b.dataset.st;
+    if (st === 'total') {
+      FPS.freqStyle = 'total';
+      replaceHashParams((u) => { u.set('freqst', 'total'); });
+      app.querySelectorAll('.freq-style button').forEach((o) => o.classList.toggle('on', o.dataset.st === 'total'));
+      $('#freq-sub').textContent = freqSubTxt('total');
+      drawFreq();
+      return;
+    }
+    FPS.style = st; FPS.freqStyle = st;
+    replaceHashParams((u) => { FPS.style === 'cluster' ? u.delete('fpst') : u.set('fpst', FPS.style); u.delete('freqst'); });
+    app.querySelectorAll('.fp-style button').forEach((o) => o.classList.toggle('on', o.dataset.st === FPS.style));
+    app.querySelectorAll('.fp-rlab').forEach((el) => { el.hidden = FPS.style !== 'cluster'; });
+    $('#freq-sub').textContent = freqSubTxt(FPS.freqStyle);
+    if (clustered()) renderSites(); drawFreq(); drawHeatmap();
+  }; });
   app.querySelectorAll('.fp-rlabels').forEach((cb) => { cb.onchange = () => { FPS.labels = cb.checked; replaceHashParams((u) => { FPS.labels ? u.delete('rlab') : u.set('rlab', '0'); }); app.querySelectorAll('.fp-rlabels').forEach((o) => { o.checked = FPS.labels; }); if (clustered()) renderSites(); drawFreq(); drawHeatmap(); }; });
   { let t; $('#fp-find').oninput = () => { clearTimeout(t); t = setTimeout(() => { if (clustered()) drawHeatmap(); }, 120); }; }   // redraw once the typing pauses
   app.querySelectorAll('.res-q').forEach((i) => { i.onchange = (e) => setRes(e.target.value); i.onkeydown = (e) => { if (e.key === 'Enter') { e.preventDefault(); setRes(e.target.value); } }; });   // the three Residue boxes
