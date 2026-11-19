@@ -373,6 +373,14 @@ footer .wrap { padding-block: 22px; font-size: 13px; color: var(--ink-3); displa
 .dmenu > summary::-webkit-details-marker { display: none; }
 .dm-pop { position: absolute; z-index: 25; top: calc(100% + 6px); left: 0; min-width: 380px; background: var(--card); border: 1px solid var(--line); border-radius: 12px;
   box-shadow: 0 12px 40px rgba(23, 38, 58, 0.16); padding: 8px; display: grid; gap: 4px; }
+.dm-pop.dm-compact { min-width: 220px; padding: 6px; gap: 2px; }
+.dm-item { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 8px 10px; border: 0; border-radius: 8px; background: transparent; color: var(--ink); font: 500 13.5px var(--sans); text-align: left; text-decoration: none; cursor: pointer; }
+.dm-item:hover { background: #F6F8FB; color: var(--blue); text-decoration: none; }
+.dm-sep { height: 1px; background: var(--line-2); margin: 4px 6px; }
+#pair-struct { display: contents; }
+#pair-struct:empty { display: none; }
+.pairwho .who a.who-link { font-weight: 700; text-decoration: none; }
+.pairwho .who a.who-link:hover { text-decoration: underline; text-underline-offset: 2px; }
 .dm-row { display: grid; grid-template-columns: minmax(110px, auto) 1fr auto; gap: 14px; align-items: center; padding: 7px 8px; border-radius: 8px; font-size: 13.5px; }
 .dm-row:hover { background: #F6F8FB; }
 /* card tools: caption + x-ticks, as LIVIA cLIP */
