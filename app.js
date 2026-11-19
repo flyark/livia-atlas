@@ -752,31 +752,146 @@ function structLink(host, x, cls, text = 'Open in LIVIA ↗') {
   if (!x || !x.model || !(x.shown || x.addr)) return;
   const a = document.createElement('a'); a.className = cls; a.textContent = text;
   if (x.shown) { a.href = `${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}`; a.target = '_blank'; a.rel = 'noopener'; a.title = `${x.model} in LIVIA, from the AlphaFold Database`; }
-  else { a.href = '#'; a.title = `${x.model} in LIVIA, read from the release archive at EBI (${((x.addr.cif_len + x.addr.pae_len) / 1048576).toFixed(1)} MB${x.addr.hd ? '' : '; not displayed by the AlphaFold Database'})`;
+  else { warmEbi(); a.href = '#'; a.title = `${x.model} in LIVIA, read from the release archive at EBI (${((x.addr.cif_len + x.addr.pae_len) / 1048576).toFixed(1)} MB${x.addr.hd ? '' : '; not displayed by the AlphaFold Database'})`;
     a.onclick = (e) => { e.preventDefault(); openFromArchive(x.model, x.addr, a); }; }
   host.appendChild(a);
 }
-// EBI's release archives by byte range: https://ftp.ebi.ac.uk first; when that host does not answer (it stopped taking HTTPS in
-// October 2026 while plain HTTP kept serving the same files, and a page served over HTTPS cannot read http://), the same range
-// through LIVIA's proxy, which reads it over HTTP server-side. Once the direct address fails, the rest of the visit uses the proxy.
-const RELAY = DEV ? 'http://localhost:8787/' : 'https://livia-proxy.flyark.workers.dev/';   // local preview: the worker run by hand (wrangler dev or a node wrapper)
-let viaRelay = !DEV;   // EBI's HTTPS port stalls ~10 s in TLS handshake while plain HTTP via the worker answers in ~1–2 s; direct HTTPS stays as automatic fallback
+// Direct HTTPS to ftp.ebi.ac.uk first (CORS + Range, ~3-5 MB/s on a warm Keep-Alive socket).
+// Because EBI's HTTPS TLS handshake occasionally stalls for 10-15 s, warmEbi() pre-warms a
+// Keep-Alive socket in the background, and archRange() hedges with HTTP/2 parallel-chunked
+// requests (up to 12 streams of ~400 KB) via the Cloudflare relay if direct headers do not
+// arrive quickly; whichever finishes first wins and aborts the other.
+const RELAY = DEV ? 'http://localhost:8787/' : 'https://livia-proxy.flyark.workers.dev/';
+let viaRelay = false, ebiWarm = false, ebiWarming = false;
+function warmEbi() {
+  if (ebiWarm || ebiWarming) return;
+  ebiWarming = true;
+  fetch('https://ftp.ebi.ac.uk/pub/databases/alphafold/collaborations/nvda/', { method: 'HEAD', mode: 'cors' })
+    .then((r) => { if (r.ok || r.status === 403 || r.status === 404) { ebiWarm = true; viaRelay = false; } })
+    .catch(() => {})
+    .finally(() => { ebiWarming = false; });
+}
+document.addEventListener('pointerover', (e) => { if (e.target && e.target.closest && e.target.closest('a.arch')) warmEbi(); }, { passive: true });
 const archPath = (ad) => (ad.hd ? `homodimers/${ad.tar}${/\.tar$/.test(ad.tar) ? '' : '.tar'}` : ad.tar ? `heterodimers/${ad.tar}` : `pandemic_prep/chunk_${ad.chunk}.tar`);
-async function archRange(ad, o, n, onRelay) {
+async function archStream(url, init, expectLen, headMs, stallMs, onProg, onHeaders, extSig) {
+  const c = new AbortController();
+  const onExt = () => c.abort(new DOMException('superseded', 'AbortError'));
+  if (extSig) {
+    if (extSig.aborted) throw new DOMException('superseded', 'AbortError');
+    extSig.addEventListener('abort', onExt, { once: true });
+  }
+  let t = setTimeout(() => c.abort(new DOMException('no answer', 'TimeoutError')), headMs);
+  const bump = () => { clearTimeout(t); t = setTimeout(() => c.abort(new DOMException('stalled', 'TimeoutError')), stallMs); };
+  let got = 0;
+  try {
+    const r = await fetch(url, { ...init, signal: c.signal });
+    if (r.status !== 206) throw new Error(`answered ${r.status}`);
+    if (onHeaders) onHeaders();
+    if (!r.body || !r.body.getReader) {
+      bump();
+      const b = new Uint8Array(await r.arrayBuffer());
+      if (b.length !== expectLen) throw new Error('short read');
+      if (onProg) onProg(b.length);
+      return b;
+    }
+    const out = new Uint8Array(expectLen);
+    const reader = r.body.getReader();
+    bump();
+    for (;;) {
+      const { done, value } = await reader.read();
+      if (done) break;
+      if (value && value.byteLength) {
+        bump();
+        if (got + value.byteLength > expectLen) throw new Error('long read');
+        out.set(value, got);
+        got += value.byteLength;
+        if (onProg) onProg(value.byteLength);
+      }
+    }
+    if (got !== expectLen) throw new Error('short read');
+    return out;
+  } catch (e) {
+    if (got && onProg) onProg(-got);
+    throw e;
+  } finally {
+    clearTimeout(t);
+    if (extSig) extSig.removeEventListener('abort', onExt);
+  }
+}
+async function archRange(ad, o, n, onRelay, onProg) {
   const direct = ad.hd ? HOMO_URL(ad.tar) : ad.tar ? HET_URL(ad.tar) : ARCH_URL(ad.chunk);
-  const reach = async (url, init, ms = 20000) => {
-    const c = new AbortController(), t = setTimeout(() => c.abort(new DOMException('no answer', 'TimeoutError')), ms);
-    try { return await fetch(url, { ...init, signal: c.signal }); } finally { clearTimeout(t); } };
-  const read = async (relay) => { const r = relay ? await reach(`${RELAY}?afdbArchive=${encodeURIComponent(archPath(ad))}&range=${o}-${o + n - 1}`, {}, 15000)
-    : await reach(direct, { headers: { Range: `bytes=${o}-${o + n - 1}` } }, 20000);
-    if (r.status !== 206) throw new Error(`the ${relay ? 'proxy' : 'archive'} answered ${r.status}`); const b = new Uint8Array(await r.arrayBuffer()); if (b.length !== n) throw new Error('short read'); return b; };
-  let mode = viaRelay;
-  for (let t = 0; ; t++) {
-    try { return await read(mode); }
-    catch (e) {
-      if (t === 0) { mode = !mode; if (mode && onRelay) onRelay(); continue; }   // if the primary path fails, immediately try the other path once before backoff retries
-      if (t >= 2) throw e; await new Promise((res) => setTimeout(res, 600 * t));
-    } }
+  const relayChunk = async (p, a, len, sig, report) => {
+    for (let attempt = 0; attempt < 2; attempt++) {
+      try {
+        return await archStream(`${RELAY}?afdbArchive=${p}&range=${a}-${a + len - 1}`, {}, len, 12000, 12000, report, null, sig);
+      } catch (e) {
+        if (attempt === 1 || (sig && sig.aborted)) throw e;
+      }
+    }
+  };
+  const readRelay = async (sig, report) => {
+    const p = encodeURIComponent(archPath(ad));
+    if (n <= 262144) {
+      return relayChunk(p, o, n, sig, report);
+    }
+    const k = Math.min(12, Math.max(2, Math.ceil(n / 409600)));
+    const step = Math.ceil(n / k);
+    const parts = await Promise.all(Array.from({ length: k }, (_, i) => {
+      const a = o + i * step, len = Math.min(step, o + n - a);
+      if (len <= 0) return Promise.resolve(new Uint8Array(0));
+      return relayChunk(p, a, len, sig, report);
+    }));
+    const out = new Uint8Array(n);
+    let pos = 0;
+    for (const part of parts) { out.set(part, pos); pos += part.length; }
+    return out;
+  };
+  const readDirect = (sig, onHdr, report) => archStream(direct, { headers: { Range: `bytes=${o}-${o + n - 1}` } }, n, 18000, 10000, report, onHdr, sig);
+  if (viaRelay) {
+    try { return await readRelay(null, onProg); }
+    catch (_e) { const b = await readDirect(null, null, onProg); ebiWarm = true; viaRelay = false; return b; }
+  }
+  const cDirect = new AbortController(), cRelay = new AbortController();
+  let directHdr = false, hedgeTid = 0, directGot = 0, relayGot = 0, reported = 0;
+  const syncProg = () => {
+    if (!onProg) return;
+    const best = Math.min(n, Math.max(directGot, relayGot));
+    if (best > reported) { onProg(best - reported); reported = best; }
+  };
+  const onDirectProg = (d) => { directGot = Math.max(0, directGot + d); syncProg(); };
+  const onRelayProg = (d) => { relayGot = Math.max(0, relayGot + d); syncProg(); };
+  return new Promise((resolve, reject) => {
+    let settled = false, failed = 0, launched = 1, lastErr = null;
+    const win = (buf, usedRelay) => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(hedgeTid);
+      if (onProg && reported < n) { onProg(n - reported); reported = n; }
+      if (usedRelay) cDirect.abort(); else { ebiWarm = true; cRelay.abort(); }
+      resolve(buf);
+    };
+    const lose = (e) => {
+      lastErr = e;
+      failed++;
+      if (!settled && failed >= launched) {
+        if (launched === 1) {
+          clearTimeout(hedgeTid);
+          startRelay();
+        } else {
+          settled = true;
+          reject(lastErr);
+        }
+      }
+    };
+    const startRelay = () => {
+      if (settled || launched > 1) return;
+      launched = 2;
+      if (onRelay) onRelay();
+      readRelay(cRelay.signal, onRelayProg).then((b) => { viaRelay = !directHdr; win(b, true); }, lose);
+    };
+    hedgeTid = setTimeout(() => { if (!directHdr && !settled) startRelay(); }, ebiWarm ? 2500 : 1200);
+    readDirect(cDirect.signal, () => { directHdr = true; ebiWarm = true; clearTimeout(hedgeTid); }, onDirectProg).then((b) => win(b, false), lose);
+  });
 }
 // The Human Predictome archive (registry archive: { kind: 'predictome', order, label }): the lab's 100 tars on AWS S3 (about 40 GB
 // each), read by byte range through LIVIA's proxy (the bucket sends no CORS headers; the lab agreed, 2026-10-19). Each pair is one
@@ -890,11 +1005,22 @@ async function openPredictome(ar, name, link) {   // one pair's three models and
     tab.status(`Reading ${nice} from ${ar.label} (${(loc.len / 1048576).toFixed(1)} MB)…`);
     const buf = await loc.rd.get(loc.off, loc.len);
     tab.status(`Unpacking ${nice}…`);
-    const [{ XzReadableStream }, { zipSync }] = await Promise.all([xzLib(), import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm')]);
-    const files = {}; for (const m of tarMembers(buf)) { if (!/\.(json|pdb)\.xz$/.test(m.name)) continue;
-      files[m.name.replace(/\.xz$/, '')] = new Uint8Array(await new Response(new XzReadableStream(new Blob([m.data]).stream())).arrayBuffer()); }
+    const { XzReadableStream } = await xzLib();
+    const files = {};
+    for (const m of tarMembers(buf)) {
+      if (!/\.(json|pdb)\.xz$/.test(m.name)) continue;
+      files[m.name.replace(/\.xz$/, '')] = new Uint8Array(await new Response(new XzReadableStream(new Blob([m.data]).stream())).arrayBuffer());
+    }
     if (!Object.keys(files).some((k) => k.endsWith('.pdb'))) throw new Error('no model in the stretch read');
-    tab.load({ type: 'livia-load', name: `${name.replace('___', '__')}_predictome.zip`, data: zipSync(files, { level: 0 }).buffer }); link.textContent = txt;
+    const niceName = `${name.replace('___', '__')}_predictome`;
+    await tab.waitReady(3000);
+    if (tab.supportsRaw()) {
+      tab.load({ type: 'livia-load-files', name: niceName, files: Object.entries(files).map(([fn, u8]) => ({ name: fn, data: u8ToBuf(u8) })) });
+    } else {
+      const { zipSync } = await import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm');
+      tab.load({ type: 'livia-load', name: `${niceName}.zip`, data: zipSync(files, { level: 0 }).buffer });
+    }
+    link.textContent = txt;
   } catch (e) {
     link.textContent = 'not read'; link.title = `${ar.label} could not be read (${e.message || e}); try again.`;
     tab.status(`Could not read ${nice} from ${ar.label} (${e.message || e}). Close this tab and try again from the Atlas.`, true);
@@ -909,36 +1035,96 @@ const predLinkOf = (sp, B, x, cls, text) => predLink(archOf(sp.dsIds[x.di]), sp.
 document.addEventListener('click', (e) => { const a = e.target.closest && e.target.closest('a[data-pname]'); if (!a) return; e.preventDefault();
   const ar = archOf(a.dataset.parch); if (ar && a.textContent !== 'reading…') openPredictome(ar, a.dataset.pname, a); });
 // A LIVIA tab opened with ?post=1: status lines while the Atlas reads (LIVIA shows them in place of a blank page), then the data.
+const u8ToBuf = (u8) => (u8.byteOffset === 0 && u8.byteLength === u8.buffer.byteLength ? u8.buffer : u8.buffer.slice(u8.byteOffset, u8.byteOffset + u8.byteLength));
 function postToLivia(w, msg, origin) {
   try {
-    const xfer = msg && msg.data instanceof ArrayBuffer ? [msg.data] : [];
+    const xfer = [];
+    if (msg && msg.data instanceof ArrayBuffer) xfer.push(msg.data);
+    if (msg && Array.isArray(msg.files)) {
+      for (const f of msg.files) if (f && f.data instanceof ArrayBuffer) xfer.push(f.data);
+    }
     w.postMessage(msg, origin, xfer);
   } catch (e) { /* closed */ }
 }
 function liviaTab(w) {
-  const origin = new URL(LIVIA, location.href).origin; let last = null, ready = false, n = 0;
+  const origin = new URL(LIVIA, location.href).origin; let last = null, ready = false, rawOk = false, n = 0;
+  let resolveReady = null;
+  const readyP = new Promise((r) => { resolveReady = r; });
   const post = (m) => postToLivia(w, m, origin);
-  const onMsg = (ev) => { if (ev.source !== w || !ev.data || ev.data.type !== 'livia-ready') return; if (!ready) { ready = true; if (last) post(last); if (last && last.error) done(); } };
+  const onMsg = (ev) => { if (ev.source !== w || !ev.data || ev.data.type !== 'livia-ready') return; if (!ready) { ready = true; rawOk = !!ev.data.rawFiles; if (resolveReady) resolveReady(); if (last) post(last); if (last && last.error) done(); } };
   window.addEventListener('message', onMsg);
   const t = setInterval(() => { if (ready || w.closed || ++n > 240) { clearInterval(t); if (!ready) window.removeEventListener('message', onMsg); return; } post({ type: 'livia-ping' }); }, 250);   // a tab that never answers (closed, blocked): stop listening after 60 s
   const done = () => { window.removeEventListener('message', onMsg); clearInterval(t); };
-  return { status(text, error) { last = { type: 'livia-status', text, error: !!error }; if (ready) post(last); if (error && ready) done(); },
-    load(msg) { const wasReady = ready; done(); if (wasReady) post(msg); else handTo(w, msg); } };
+  return {
+    waitReady(ms = 3000) { return ready ? Promise.resolve() : Promise.race([readyP, new Promise((r) => setTimeout(r, ms))]); },
+    supportsRaw() { return rawOk; },
+    status(text, error, pct) { last = { type: 'livia-status', text, error: !!error, ...(typeof pct === 'number' ? { pct } : {}) }; if (ready) post(last); if (error && ready) done(); },
+    load(msg) { const wasReady = ready; done(); if (wasReady) post(msg); else handTo(w, msg); }
+  };
 }
-async function openFromArchive(model, ad0, link) {   // ad0: the archive address, or a promise of it (a list row whose address is in its protein's file)
+const ARCH_CACHE = new Map();
+async function openFromArchive(model, ad0, link) {
   const w = window.open(`${LIVIA}universal.html?post=1`, '_blank'); if (!w) return;
   const tab = liviaTab(w), ad = await ad0;
   if (!ad) { tab.status(`Could not find where ${model} sits in the release archive. Close this tab and try again from the Atlas.`, true); return; }
-  const mb = ((ad.cif_len + ad.pae_len) / 1048576).toFixed(1);
+  const totalBytes = ad.cif_len + ad.pae_len;
+  const mb = (totalBytes / 1048576).toFixed(1);
   const txt = link.textContent; link.textContent = 'reading…';
-  tab.status(`Reading ${model} from the AlphaFold Database release archive at EBI (${mb} MB)…`);
-  const onRelay = () => tab.status(`Reading ${model} from the AlphaFold Database release archive (${mb} MB)…`);
+  let viaStr = viaRelay ? 'proxy' : 'EBI';
+  let doneBytes = 0, lastPaint = 0;
+  const paintProg = (force) => {
+    const now = performance.now();
+    if (!force && now - lastPaint < 150) return;
+    lastPaint = now;
+    const pct = totalBytes > 0 ? Math.min(99, (doneBytes / totalBytes) * 100) : 0;
+    const gotMb = (Math.max(0, doneBytes) / 1048576).toFixed(1);
+    tab.status(`Reading ${model} from the AlphaFold Database archive (${viaStr}, ${gotMb} / ${mb} MB)…`, false, pct);
+  };
+  const onProg = (delta) => { doneBytes = Math.max(0, doneBytes + delta); paintProg(false); };
+  const onRelay = () => { viaStr = 'relay'; paintProg(true); };
+  paintProg(true);
   try {
-    const [[{ decompress }, { zipSync }], cif, pae] = await Promise.all([Promise.all([import('https://cdn.jsdelivr.net/npm/fzstd@0.1.1/+esm'), import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm')]),
-      archRange(ad, ad.cif_off, ad.cif_len, onRelay), archRange(ad, ad.pae_off, ad.pae_len, onRelay)]);
-    tab.status(`Unpacking ${model}…`);
-    const zip = zipSync({ [`${model}-model_v1.cif`]: decompress(cif), [`${model}-predicted_aligned_error_v1.json`]: decompress(pae) }, { level: 0 });
-    tab.load({ type: 'livia-load', name: `${model}_${ad.hd ? 'homodimer' : ad.tar ? 'afdb' : 'viral'}.zip`, data: zip.buffer }); link.textContent = txt;
+    const cacheKey = `${archPath(ad)}:${ad.cif_off}:${ad.pae_off}`;
+    const zstdP = import('https://cdn.jsdelivr.net/npm/fzstd@0.1.1/+esm');
+    let cif, pae;
+    if (ARCH_CACHE.has(cacheKey)) {
+      ({ cif, pae } = ARCH_CACHE.get(cacheKey));
+      doneBytes = totalBytes;
+      paintProg(true);
+    } else {
+      if (!ebiWarm) warmEbi();
+      if (viaRelay) {
+        [cif, pae] = await Promise.all([
+          archRange(ad, ad.cif_off, ad.cif_len, onRelay, onProg),
+          archRange(ad, ad.pae_off, ad.pae_len, onRelay, onProg)
+        ]);
+      } else {
+        cif = await archRange(ad, ad.cif_off, ad.cif_len, onRelay, onProg);
+        pae = await archRange(ad, ad.pae_off, ad.pae_len, onRelay, onProg);
+      }
+      ARCH_CACHE.set(cacheKey, { cif, pae });
+      if (ARCH_CACHE.size > 4) ARCH_CACHE.delete(ARCH_CACHE.keys().next().value);
+    }
+    const { decompress } = await zstdP;
+    tab.status(`Unpacking ${model}…`, false, 99);
+    const cifRaw = decompress(cif), paeRaw = decompress(pae);
+    const labelName = `${model}_${ad.hd ? 'homodimer' : ad.tar ? 'afdb' : 'viral'}`;
+    await tab.waitReady(3000);
+    if (tab.supportsRaw()) {
+      tab.load({
+        type: 'livia-load-files',
+        name: labelName,
+        files: [
+          { name: `${model}-model_v1.cif`, data: u8ToBuf(cifRaw) },
+          { name: `${model}-predicted_aligned_error_v1.json`, data: u8ToBuf(paeRaw) }
+        ]
+      });
+    } else {
+      const { zipSync } = await import('https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm');
+      const zip = zipSync({ [`${model}-model_v1.cif`]: cifRaw, [`${model}-predicted_aligned_error_v1.json`]: paeRaw }, { level: 0 });
+      tab.load({ type: 'livia-load', name: `${labelName}.zip`, data: zip.buffer });
+    }
+    link.textContent = txt;
   } catch (e) {
     link.textContent = 'not read'; link.title = `The archive could not be read (${e.message || e}); try again.`;
     tab.status(`Could not read ${model} from the AlphaFold Database archive (${e.message || e}). Close this tab and try again from the Atlas.`, true);
