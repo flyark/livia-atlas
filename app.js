@@ -3405,7 +3405,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
       <div class="nw-stats" id="net-stats"></div>
       <div class="nw-body"><div class="net" id="net"><div class="loading" style="padding:20px">Loading the network…</div></div><aside class="nw-mods" id="net-mods" hidden aria-label="Groups of partners"></aside></div>
       <div class="netkey"><div class="kbkey" id="net-kbkey"></div>
-        <div><span>Edge width · ${sp.one ? 'iLIS' : 'best iLIS'}</span><svg id="net-w" width="260" height="30" aria-hidden="true"></svg></div></div>
+        <div><span>Edge width · ${sp.one ? 'iLIS' : 'best iLIS'}</span><svg id="net-w" width="260" height="30" viewBox="0 0 260 30" style="max-width:100%" aria-hidden="true"></svg></div></div>
       <div class="legend" id="net-legend"></div><div id="net-x"></div></div>
     <div class="card" id="c-pt"><div class="card-head"><h2>Interactors</h2>
       <div class="controls" style="margin:0"><select id="pt-src" aria-label="Which screens"><option value="0">all screens</option>${sp.dsIds.map((_, di) => (P.src & (1 << di) ? `<option value="${1 << di}">${esc(sp.dsShort[di])}</option>` : '')).join('')}</select>
@@ -7253,7 +7253,7 @@ async function viewNetwork(spId, q) {
     mind: q.has('mind') && [0, 1, 2, 3].includes(+q.get('mind')) ? +q.get('mind') : 2, mindUser: q.has('mind'), minq: q.get('minq') === '1', grp: !q.has('grp') ? 'leiden' : /^(comm|leiden|mcl|cc|col:.+)$/.test(q.get('grp')) ? q.get('grp') : '',   // Leiden communities unless the link says otherwise (grp=none), as LIVIA's network page
     ncol: q.get('color') || '', ncolUser: !!q.get('color'), exp: (q.get('exp') || '').split(',').filter(Boolean), click: ['open', 'add'].includes(q.get('click')) ? q.get('click') : 'select', rc: (q.get('rc') || '').split(',').map((s) => s.trim()).filter(Boolean), focusRc: q.get('focus') === 'rc', col: null, data: [],   // exp: proteins expanded by a click (keys), in the order clicked
     lseed: numIn(q.get('lseed'), 0, 999999, 0, true), liter: numIn(q.get('iters'), 0, 5000, 0, true), lspace: numIn(q.get('space'), 0.3, 3, 1), lrep: numIn(q.get('rep'), 0.2, 5, 1), lwt: q.get('wpull') !== '0',   // layout: seed (0: the fixed start), rounds (0: the layout's own number), spacing, repulsion, stronger pairs closer
-    xsp: /^(all|[a-z0-9-]+)$/.test(q.get('xsp') || '') ? q.get('xsp') : '', xo: q.has('xo') ? (['never', 'below'].includes(q.get('xo')) ? q.get('xo') : '') : 'never',   // orthologs: the species checked, and the ortholog-only pairs drawn (dashed)
+    xsp: /^(all|[a-z0-9-]+)$/.test(q.get('xsp') || '') ? q.get('xsp') : '', xo: q.has('xo') ? (['never', 'below'].includes(q.get('xo')) ? q.get('xo') : '') : 'never', kb: q.get('kb') === '1' || q.get('unpred') === '1', ev: ['pg', 'p', 'g'].includes(q.get('ev')) ? q.get('ev') : 'pg', unpred: q.get('unpred') === '1',   // orthologs and BioGRID overlay state
     infl: numIn(q.get('infl'), 1.2, 6, 2), cwt: ['iptm', 'eq'].includes(q.get('cw')) ? q.get('cw') : 'ilis', cruns: numIn(q.get('runs'), 1, 50, 1, true), cseed: numIn(q.get('cseed'), 0, 999999, 0, true), cmin: numIn(q.get('cmin'), 2, 50, 3, true),
     // display, as LIVIA's network page (drawing only: the proteins, pairs and communities stay the same): protein size, pair width, which proteins are named,
     // name size, outline and color, protein border, community outlines, the strongest pairs per protein, only pairs inside a community
@@ -7301,8 +7301,8 @@ async function viewNetwork(spId, q) {
       <div class="miss" id="nw-u-miss" hidden></div></div>
     <div class="card" id="nw-card" hidden><div class="card-head"><h2>Network</h2></div>
       <div class="optgrid">
-        <span class="optlab">Pairs</span><div class="controls">${edgeCtl('nw')}
-          <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"> + reported, not predicted</label>
+        <span class="optlab">Pairs</span><div class="controls">${edgeCtl('nw', S.kb)}
+          <label title="also draw pairs reported in BioGRID that were not predicted past the cutoff"><input type="checkbox" id="nw-unpred"${S.unpred ? ' checked' : ''}> + reported, not predicted</label>
           <button class="btn" id="nw-check" type="button" style="display:none" title="for each dashed pair: was it folded and scored below the cutoff, or never folded in these screens? Reads each protein's predictions">Check which were folded</button>
           <span class="ctl" id="nw-xsp-wrap" hidden><label class="ctl" title="check every pair against the predictions between the two proteins' orthologs in other species (Alliance stringent orthologs, or PANTHER's for the species the Alliance does not cover; the same iLIS cutoff): a pair predicted here and between the orthologs is conserved, drawn with a gold halo">Orthologs in <select id="nw-xsp"></select></label>
             <label class="ctl" id="nw-xo-wrap" title="also draw, dashed in teal, the pairs predicted between the orthologs that this species has no prediction for">+ ortholog-only pairs <select id="nw-xo"><option value="">off</option><option value="never">where never folded here</option><option value="below">also where scored below the cutoff here</option></select></label></span></div>
@@ -7348,7 +7348,7 @@ async function viewNetwork(spId, q) {
       <div class="nw-body"><div class="net" id="nw-net"></div><aside class="nw-mods" id="nw-mods" aria-label="Communities"></aside></div>
 
       <div class="netkey"><div class="kbkey" id="nw-key"></div><div class="kbkey" id="nw-nkey"></div>
-        <div><span>Edge width · ${sp.one ? 'iLIS' : 'best iLIS'}</span><svg id="nw-w" width="260" height="30" aria-hidden="true"></svg></div></div><div id="nw-x"></div>
+        <div><span>Edge width · ${sp.one ? 'iLIS' : 'best iLIS'}</span><svg id="nw-w" width="260" height="30" viewBox="0 0 260 30" style="max-width:100%" aria-hidden="true"></svg></div></div><div id="nw-x"></div>
       <div class="nw-shared" id="nw-shared" hidden></div>
 <div class="nw-subsec" id="nw-reschord-wrap" data-subsec="Residue chord" hidden><div class="cc-head" style="margin-top:0"><h3>Residue chord</h3><div class="muted">Contact residues (cLIR), domains and predicted pairs around one circle for selected proteins.</div></div><div id="nw-reschord"></div></div>
 <div class="nw-subsec" id="nw-chord-wrap" data-subsec="Community chord" hidden><div class="cc-head" style="margin-top:0"><h3>Community chord</h3><div class="muted">The pairs between communities, around one circle.</div></div><div id="nw-chord"></div></div>
@@ -7358,6 +7358,7 @@ async function viewNetwork(spId, q) {
         <div id="nw-heat-comm" class="hm-comm" hidden></div><div id="nw-heat" style="width:100%"></div><div class="legend" id="nw-heat-key"></div></div></div>`;
   $('#nw-add').value = S.add;
   $('#nw-hops').value = String(S.hops);
+  $('#nw-ev').value = S.ev;
   const updatePrizeNote = () => {
     const el = $('#nw-prize-note'); if (!el) return;
     if ($('#nw-add').value !== 'tree' || !S.prize) { el.hidden = true; el.innerHTML = ''; return; }
@@ -7374,7 +7375,7 @@ async function viewNetwork(spId, q) {
   // The settings in the page's link: only those away from their defaults (all of them with all = true, for the settings file)
   const params = (all = false) => { const qs = new URLSearchParams({ ids: S.ids, add: S.add }), put = (k, v, def) => { if (all || v !== def) qs.set(k, typeof v === 'boolean' ? (v ? '1' : '0') : v); };
     if (!S.kAuto && (all || S.add === 'top' || S.add === 'pair' || S.exp.length)) qs.set('k', S.k); qs.set('cut', S.cut); if (all || S.cut === 'c') qs.set('cutv', S.cutv); put('iptm', S.iptm, 0); if (all || S.add === 'link') qs.set('hops', S.hops);
-    put('mind', S.mind, S.add === 'pair' && !S.mindUser ? 1 : 2); put('minq', S.minq, false); put('lone', S.lone, false); put('set', S.set, ''); put('xsp', S.xsp, ''); if (S.xsp || all) put('xo', S.xo, 'never'); put('sig', S.sig, false); if (S.add === 'tree' || all) put('prize', S.prize, ''); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); put('exp', S.exp.join(','), ''); put('click', S.click, 'select'); put('rc', (S.rc || []).join(','), '');
+    put('mind', S.mind, S.add === 'pair' && !S.mindUser ? 1 : 2); put('minq', S.minq, false); put('lone', S.lone, false); put('set', S.set, ''); put('kb', S.kb, false); if (S.kb || all) put('ev', S.ev, 'pg'); put('unpred', S.unpred, false); put('xsp', S.xsp, ''); if (S.xsp || all) put('xo', S.xo, 'never'); put('sig', S.sig, false); if (S.add === 'tree' || all) put('prize', S.prize, ''); if (S.ncolUser && S.ncol) qs.set('color', S.ncol); put('exp', S.exp.join(','), ''); put('click', S.click, 'select'); put('rc', (S.rc || []).join(','), '');
     put('lay', S.lay, 'force'); put('lseed', S.lseed, 0); put('iters', S.liter, 0); put('space', S.lspace, 1); put('rep', S.lrep, 1); put('wpull', S.lwt, true);
     if (all || S.grp !== 'leiden') qs.set('grp', S.grp || 'none'); put('res', S.res, 1); put('infl', S.infl, 2); put('cw', S.cwt, 'ilis'); put('runs', S.cruns, 1); put('cseed', S.cseed, 0); put('cmin', S.cmin, 3);
     put('nsize', S.nsize, 1); put('ew', S.ewid, 1); put('lbdeg', S.lbdeg, 1); put('lbtop', S.lbtop, 0); put('lbsize', S.lbsize, 12); put('lbout', S.lbout, true); put('lbcol', S.lbcol.slice(1), '17263A'); put('nbord', S.nbord, true); put('hulls', S.hulls, false); put('pal', S.pal, 'tableau'); put('topk', S.topk, 0); put('intra', S.intra, false);
@@ -7766,7 +7767,7 @@ async function viewNetwork(spId, q) {
       edges: drawnLinks.map((l) => ({ a: sp.rows[l.source].gene, keyA: sp.rows[l.source].key, b: sp.rows[l.target].gene, keyB: sp.rows[l.target].key, bestILIS: +l.best.toFixed(3), ipTM: Number.isFinite(l.iptm) ? +l.iptm.toFixed(2) : null }))
     });
     if (!links.length) { ROLE_INFO = null; $('#nw-shared').hidden = true; $('#nw-reschord-wrap').hidden = true; $('#nw-chord-wrap').hidden = true; $('#nw-enrich').hidden = true; $('#nw-net').innerHTML = pruned && S.mind ? `<div class="empty">No predicted pair among these proteins at this cutoff, and the ${fmtInt(pruned)} ${S.minq ? 'protein' : 'added partner'}${pruned === 1 ? '' : 's'} were hidden by Min. pairs (fewer than ${S.mind} pair${plS(S.mind)}). Set Min. pairs lower, or try a lower cutoff.</div>` : '<div class="empty">No predicted pair among these proteins at this cutoff. Try + partners, or a lower cutoff.</div>'; net = null; ATLAS_STATE = { view: 'network', clusteringReady: () => true, structureReady: () => true, isReady: () => true, queryRegion: null, inspect: () => netInspect([...keep], []) }; heatmap([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i) })), [], new Map(), [], new Map(), new Map()); mountSections(); return; }   // the matrix still shows the pairs below this cutoff
-    if (K === null) { $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; }
+    if (K === null) { S.kb = false; S.unpred = false; $('#nw-kb').checked = false; $('#nw-kb').disabled = true; $('#nw-ev').disabled = true; $('#nw-unpred').checked = false; $('#nw-unpred').disabled = true; }
     if (TPN) for (const d of extra) { const k = fkey(d.source, d.target); if (!FOLD.has(k)) FOLD.set(k, TPN.has(d.source, d.target) ? { st: 'low', best: TPN.score ? TPN.score(d.source, d.target) : NaN } : { st: 'none' }); }   // the index says folded or not; the score comes on hover
     ATLAS_STATE = { view: 'network', clusteringReady: () => true, structureReady: () => true, isReady: () => true, queryRegion: null, inspect: () => netInspect([...keep], links) };
     graph([...keep].map((i) => ({ id: i, row: sp.rows[i], q: Q.has(i), grew: grew.has(i), expd: expd.has(i) })), links, extra, seed, xo, XO, Q);
@@ -7782,16 +7783,20 @@ async function viewNetwork(spId, q) {
     const pres = ys.every((y) => TOs.get(y)) ? [] : [...new Set(ids.map((i) => sp.rows[i].key.slice(-2).toLowerCase()))], sh = new Map(await Promise.all(pres.map(async (p) => [p, await orthShard(sp.id, p, true)])));
     const orthKeys = (i, y) => { const k = sp.rows[i].key, T = TOs.get(y); if (T) return T.get(k) || []; const s = sh.get(k.slice(-2).toLowerCase()); return ((s && s[k] && s[k][y]) || []).map((x) => x[0]); };
     const ev = new Map(), used = [], failed = [];
-    for (const y of ys) {
-      let spY, EY; try { spY = await species(y); EY = await edges(spY, ''); } catch (e) { failed.push(y); continue; }
+    const loaded = await Promise.all(ys.map(async (y) => {
+      try { const spY = await species(y), EY = await edges(spY, ''); return { y, spY, EY }; } catch (e) { return { y, err: e }; }
+    }));
+    for (const { y, spY, EY, err } of loaded) {
+      if (err) { failed.push(y); continue; }
       const inv = new Map();   // that species' protein → the drawn proteins it is an ortholog of
       for (const i of ids) for (const k2 of orthKeys(i, y)) { const r = spY.byKey.get(k2); if (!r) continue; if (!inv.has(r.i)) inv.set(r.i, []); inv.get(r.i).push(i); }
       if (inv.size) used.push(y);
       for (const [ya, as] of inv) for (const [yb, e] of EY.adj.get(ya) || []) { if (yb <= ya || e.best < c) continue; const bs = inv.get(yb); if (!bs) continue;
         for (const a of as) for (const b of bs) { if (a === b) continue; const k = pk(a, b); if (!ev.has(k)) ev.set(k, []); const L = ev.get(k), x = L.find((z) => z.y === y), v = { y, a2: spY.rows[ya].gene, b2: spY.rows[yb].gene, k2: `${spY.rows[ya].key}/${spY.rows[yb].key}`, best: e.best };
           if (!x) L.push(v); else if (e.best > x.best) Object.assign(x, v); } } }
-    const lab = (y) => spName(((REG.species || []).find((s) => s.id === y) || {}).label || y);
-    return { ev, ys: used, names: used.length ? used.map(lab).join(', ') : 'no species', lab, skipped: failed.length ? `the predictions of ${failed.map(lab).join(', ')} did not load` : '' };
+    const plain = (y) => ((REG.species || []).find((s) => s.id === y) || {}).label || y;
+    const lab = (y) => spName(plain(y));
+    return { ev, ys: used, names: used.length ? used.map(lab).join(', ') : 'no species', plainNames: used.length ? used.map(plain).join(', ') : 'no species', lab, skipped: failed.length ? `the predictions of ${failed.map(lab).join(', ')} did not load` : '' };
   }
   let rcArgs = null, rcSeen = false, rcRun = 0, rcOrthOpts = null;
   const RC_ST = { ids: null, initTokens: S.rc.length ? S.rc.slice() : null, userPicked: false, scale: 'len', resKind: 'clir', ribCol: 'prot', doms: true, selPair: null, xsp: '', xspUser: false };
@@ -8111,7 +8116,8 @@ async function viewNetwork(spId, q) {
       });
     }
     ribbons.sort((x, y) => x.pr.best - y.pr.best);
-    const orthLab = (y) => spName(((REG.species || []).find((s) => s.id === y) || {}).label || y);
+    const orthPlain = (y) => ((REG.species || []).find((s) => s.id === y) || {}).label || y;
+    const orthLab = (y) => spName(orthPlain(y));
     const rKeyEl = q('.rc-rkey');
     if (RC_ST.ribCol === 'ilis') {
       rKeyEl.hidden = false;
@@ -8238,7 +8244,7 @@ async function viewNetwork(spId, q) {
         const sA = fmtResSpan(RC_ST.resKind === 'lir' ? pr.lA : (pr.cA.length ? pr.cA : pr.lA));
         const sB = fmtResSpan(RC_ST.resKind === 'lir' ? pr.lB : (pr.cB.length ? pr.cB : pr.lB));
         const kbBadge = (pr.pubs || pr.gen) ? `<span class="rc-kb-dot" style="background:${kbCol(pr)}" title="reported in BioGRID (${esc(kbPubs(pr.pubs, pr.gen))})"></span>` : '';
-        const orthBadges = pr.cons && pr.cons.length ? `<div class="rc-orth-row">${pr.cons.slice(0, 3).map((x) => `<a class="rc-orth-pill" href="#/${x.y}/${x.k2}" target="_blank" rel="noopener" title="conserved ortholog pair in ${orthLab(x.y)}: ${esc(x.a2)} × ${esc(x.b2)} (best iLIS ${x.best.toFixed(3)})">★ ${orthLab(x.y)}: ${esc(x.a2)} × ${esc(x.b2)} ↗</a>`).join('')}${pr.cons.length > 3 ? `<span class="muted">+${pr.cons.length - 3}</span>` : ''}</div>` : '';
+        const orthBadges = pr.cons && pr.cons.length ? `<div class="rc-orth-row">${pr.cons.slice(0, 3).map((x) => `<a class="rc-orth-pill" href="#/${x.y}/${x.k2}" target="_blank" rel="noopener" title="conserved ortholog pair in ${esc(orthPlain(x.y))}: ${esc(x.a2)} × ${esc(x.b2)} (best iLIS ${x.best.toFixed(3)})">★ ${orthLab(x.y)}: ${esc(x.a2)} × ${esc(x.b2)} ↗</a>`).join('')}${pr.cons.length > 3 ? `<span class="muted">+${pr.cons.length - 3}</span>` : ''}</div>` : '';
         const lvSep = pr.liviaHtml && !pr.liviaHtml.includes('rc-afdb3d') ? `${pr.liviaHtml} · ` : pr.liviaHtml;
         return `<tr data-pk="${pr.key}" class="${RC_ST.selPair === pr.key ? 'sel' : ''}"><td><span class="cc-dot" style="background:${colMap.get(pr.a)}"></span><b>${esc(gname(pr.a))}</b> × <span class="cc-dot" style="background:${colMap.get(pr.b)}"></span><b>${esc(gname(pr.b))}</b>${kbBadge}${orthBadges}</td><td class="rc-span">${esc(sA)} × ${esc(sB)}</td><td class="n">${pr.best.toFixed(3)}</td><td class="lk">${lvSep}<a href="#/${sp.id}/${sp.rows[pr.a].key}/${sp.rows[pr.b].key}" target="_blank" rel="noopener" title="open the pair page in a new tab">pair ↗</a></td></tr>`;
       }).join('') + `</tbody></table>` : '';
@@ -8407,7 +8413,8 @@ async function viewNetwork(spId, q) {
       dash.attr('stroke-dasharray', (d) => ((fo(d) || {}).st === 'none' ? '1.2 4.5' : '5 4')).attr('stroke-opacity', (d) => ((fo(d) || {}).st === 'none' ? 0.55 : 0.75));
       const nf = (s) => shownExtra.filter((d) => (fo(d) || {}).st === s).length, nck = shownExtra.filter((d) => fo(d)).length;
       const foldKey = shownExtra.length && nck ? `<div class="kbrow"><span class="muted">reported, not predicted (${fmtInt(shownExtra.length)}):</span><span><i class="kb-dash"></i>folded, scored below the cutoff (${fmtInt(nf('low'))})</span><span><i class="kb-dot"></i>never folded in these screens (${fmtInt(nf('none'))})</span>${nck < shownExtra.length ? `<span class="muted">not checked (${fmtInt(shownExtra.length - nck)})</span>` : ''}${nf('err') ? `<span class="muted">could not be checked (${fmtInt(nf('err'))})</span>` : ''}</div>` : '';
-      const xoKey = XO ? `<div class="kbrow"><span class="muted">orthologs in ${XO.names}:</span><span><i class="kb-cons"></i>conserved: also predicted between the orthologs (${fmtInt(halo.size())})</span>${S.xo ? `<span><i class="kb-xo"></i>predicted only between the orthologs, ${S.xo === 'never' ? 'never folded here' : S.set ? 'not predicted in this scope' : 'not predicted here'} (${fmtInt(xo.length)})</span>` : ''}</div>` : '';
+      const xoHead = XO ? (XO.ys.length > 3 ? `<span class="muted kb-tip" title="Orthologs in: ${esc(XO.plainNames)}">orthologs in ${fmtInt(XO.ys.length)} species:</span>` : `<span class="muted">orthologs in ${XO.names}:</span>`) : '';
+      const xoKey = XO ? `<div class="kbrow">${xoHead}<span><i class="kb-cons"></i>conserved: also predicted between the orthologs (${fmtInt(halo.size())})</span>${S.xo ? `<span><i class="kb-xo"></i>predicted only between the orthologs, ${S.xo === 'never' ? 'never folded here' : S.set ? 'not predicted in this scope' : 'not predicted here'} (${fmtInt(xo.length)})</span>` : ''}</div>` : '';
       const nU = links.filter(uPass).length, nUo = links.filter((l) => l.uonly).length;
       const uKey = nU ? `<div class="kbrow"><span><i class="kb-yours"></i>past the cutoff in your predictions (${fmtInt(nU)}${nUo ? `; ${fmtInt(nUo)} of them only there, not in the Atlas pairs past 10% FPR${S.set ? ' in this scope' : ''}` : ''})</span></div>` : '';
       $('#nw-key').innerHTML = (byC && !st.kb ? `<div class="kbrow"><span class="muted">edges inside a ${S.grp === 'cc' ? 'connected part' : 'community'} in its color, between them light gray; width: best iLIS</span></div>` : edgeKey(st, K, links, shownExtra)) + foldKey + xoKey + uKey + (homo.size ? `<div class="kbrow">${homoKey(homo.size)}</div>` : '');
@@ -8693,8 +8700,8 @@ async function viewNetwork(spId, q) {
     const e2 = (l) => [typeof l.source === 'object' ? l.source.id : l.source, typeof l.target === 'object' ? l.target.id : l.target];
     b.textContent = 'Checking…'; await checkFolded(net.extra.map(e2), (n, of) => { b.textContent = `Checking ${n} of ${of} protein${plS(of)}…`; });
     delete b.dataset.busy; if (net && net.restyle) net.restyle(); };
-  ['#nw-shade', '#nw-kb', '#nw-ev'].forEach((q) => { $(q).onchange = () => { $('#nw-ev').disabled = !$('#nw-kb').checked; if ($('#nw-kb').checked && KBN === undefined) { draw(); return; } if (net && net.restyle) net.restyle(); }; });   // the first BioGRID tick reads the species file and redraws
-  $('#nw-unpred').onchange = () => { if ($('#nw-unpred').checked && !$('#nw-kb').disabled) { $('#nw-kb').checked = true; $('#nw-ev').disabled = false; } draw(); };   // those lines only mean something with the crimson layer
+  ['#nw-shade', '#nw-kb', '#nw-ev'].forEach((q) => { $(q).onchange = () => { S.kb = $('#nw-kb').checked; S.ev = $('#nw-ev').value; $('#nw-ev').disabled = !S.kb; if (!S.kb && $('#nw-unpred').checked) { S.unpred = false; $('#nw-unpred').checked = false; } history.replaceState(null, '', `#/network/${sp.id}?${params()}`); if (S.kb && KBN === undefined) { draw(); return; } if (net && net.restyle) net.restyle(); }; });   // the first BioGRID tick reads the species file and redraws
+  $('#nw-unpred').onchange = () => { S.unpred = $('#nw-unpred').checked; if (S.unpred && !$('#nw-kb').disabled) { S.kb = true; $('#nw-kb').checked = true; $('#nw-ev').disabled = false; } history.replaceState(null, '', `#/network/${sp.id}?${params()}`); draw(); };   // those lines only mean something with the crimson layer
   $('#nw-ids').onkeydown = (e) => { if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) { e.preventDefault(); draw(); } };
   const drawnIds = () => (net ? [...net.nodes].sort((a, b) => (b.q - a.q) || a.row.gene.localeCompare(b.row.gene)).map((d) => d.row.gene) : []);   // yours first, then the added, by name
   // Find: the proteins of the drawn network, with the iLIS of each one's strongest pair here; picking one centers it

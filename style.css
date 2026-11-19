@@ -119,14 +119,16 @@ a:hover { text-decoration: underline; }
 .flag { display: inline-block; font-size: 12px; padding: 2px 8px; border-radius: 6px; background: #FFF4E0; color: #8A5A00; }
 .controls { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; font-size: 13px; color: var(--ink-2); margin: 10px 0 12px; }
 .ctl { display: inline-flex; align-items: center; gap: 6px; }   /* a label and its control stay together */
-.controls select, .controls input[type=search], .controls input[type=number] { font: 13px var(--sans); padding: 5px 8px; border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink); }
-.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.controls select, .controls input[type=search], .controls input[type=number] { font: 13px var(--sans); padding: 5px 8px; border: 1px solid var(--line); border-radius: 7px; background: #fff; color: var(--ink); max-width: 100%; }
+#nw-xsp-wrap { flex-wrap: wrap; max-width: 100%; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; max-width: 100%; }
 .seg button { font: 600 12.5px var(--sans); padding: 6px 11px; border: 0; background: #fff; color: var(--ink-2); cursor: pointer; border-left: 1px solid var(--line); }
 .seg button:first-child { border-left: 0; }
 .seg button.on { background: var(--navy); color: #fff; }
+@media (max-width: 640px) { .seg { flex-wrap: wrap; } .seg button { flex: 1 1 auto; border-top: 1px solid var(--line); margin-top: -1px; } }
 
 .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 12.5px; color: var(--ink-2); margin-top: 8px; }
-.legend i { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+.legend i:empty { display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
 .hot { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
 .hot span { font-family: var(--mono); font-size: 12.5px; padding: 3px 8px; border-radius: 6px; background: #E0F2F1; color: #00695C; }
 
@@ -556,8 +558,10 @@ textarea.ids:focus { outline: 2px solid var(--blue); outline-offset: 1px; }
 /* BioGRID key under a network */
 .kbrow { display: flex; align-items: center; gap: 8px; font-size: 12.5px; color: var(--ink-2); margin-top: 6px; flex-wrap: wrap; }
 .kbkey .kbrow { gap: 6px 14px; margin-top: 0; }
-.kbkey .kbrow span { display: inline-flex; align-items: center; gap: 6px; }
-.kbkey .kbrow i { display: inline-block; width: 26px; height: 4px; border-radius: 2px; }
+.kbkey .kbrow > span:not(.muted) { display: inline-flex; align-items: center; gap: 6px; }
+.kbkey .kbrow > span.muted { display: inline; line-height: 1.5; }
+.kbkey .kbrow > span.muted.kb-tip { text-decoration: underline dotted var(--line); text-underline-offset: 3px; cursor: help; }
+.kbkey .kbrow i:empty { display: inline-block; flex: none; width: 26px; height: 4px; border-radius: 2px; }
 .kbkey .kbrow i.kb-dash { height: 0; border-top: 1.5px dashed #5B6573; border-radius: 0; }
 .kbkey .kbrow i.kb-dot { height: 0; border-top: 2px dotted #5B6573; border-radius: 0; opacity: 0.8; }
 .kbkey .kbrow i.kb-cons { height: 4px; background: #50637A; border-radius: 3px; box-shadow: 0 0 0 3.5px rgba(242, 193, 78, 0.8); }   /* conserved: an edge in its gold halo */
