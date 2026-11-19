@@ -31,6 +31,8 @@ LIVIA Atlas is a client-side single-page application routed by `location.hash`:
     - `?cut=10` | `?cut=5` | `?cut=1`: Sets the active FPR cutoff for binding-site clustering (`10%`, `5%`, or `1%`).
     - `?set=<dataset_or_set_id>`: Scopes the protein page to one screen or thematic set.
     - `?iso=<construct_id>`: Selects a specific isoform or construct when folded separately.
+    - `?fpst=cluster|classic`, `?freqst=total`, `?rlab=0`: Controls Contact residue frequency (`by cluster`, `all models`, or `classic`), fingerprint style, and right-side labels.
+    - `?band=0|10|5|1`, `?ptcl=<cluster_id|active|none>`, `?kb=rep|unrep|ph|ge`, `?struct=1`, `?q=<filter>`: Pre-filters the Interactors table (FPR cutoff, cluster, BioGRID literature evidence, LIVIA 3D structure availability, or partner/contact-span text filter).
 - **Pair page**: `https://flyark.github.io/livia-atlas/#/<species>/<proteinA>/<proteinB>`
   - Shows every ranked model across screens, full `lis.py` metrics (`iLIS`, `iLISA`, `ipTM`, `LIS`, `cLIS`, `ipSAE`, `actifpTM*`, `pDockQ`, `pDockQ2`), exact `LIR` and `cLIR` residue tracks and sequences, BioGRID literature records, ortholog/paralog pair matrices, and sequence exports (`↓ FASTA`, `↓ AF3 JSON`, `↓ Boltz YAML`, `↓ ColabFold CSV`).
   - **Query parameters on pair pages**:
