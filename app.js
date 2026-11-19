@@ -7281,7 +7281,7 @@ async function viewNetwork(spId, q) {
       <div class="controls nw-bar nw-bar-build"><label class="ctl">Show <select id="nw-add"><option value="none">only these proteins</option><option value="link" title="partners on a path between two proteins-of-interest; through 1 is a partner two of them share">+ partners linking them</option><option value="top">+ each one's top partners</option><option value="pair" title="every partner shared between two or more proteins-of-interest, plus each protein's own top partners">+ shared &amp; each one's top partners</option><option value="tree" title="the fewest added partners that connect your proteins-of-interest through strong pairs (a Steiner tree); with a score column, each protein joins only when its score outweighs the cost of reaching it">+ the fewest partners connecting them</option></select></label>
         <label class="ctl" id="nw-prize-wrap" hidden title="a number column of your table as each protein-of-interest's weight: its score, ranked up to 1.5 (p-values and FDRs by −log10, fold changes by size either way); a protein joins the tree only while its score outweighs the cost of the path to it; none: every protein-of-interest that can be reached joins">Score <select id="nw-prize"></select>${tipQ('Weighs each protein-of-interest by a number column of your table: p-values and FDRs count smaller as stronger (−log10 scale); fold changes and scores count by magnitude either sign. With none, every reachable protein-of-interest joins.')}</label>
         <span id="nw-hops-wrap" title="how many added partners a path between two proteins-of-interest may pass through: 1 is a partner two of them share, 2 and 3 reach further">through up to <select id="nw-hops" aria-label="Partners a path may pass through"><option value="1">1 partner</option><option value="2">2 partners</option><option value="3">3 partners</option></select></span>
-        <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein <label class="ctl" title="pick the number for you: the most partners per protein, up to 10, that keep the drawing near ${AUTO_N} proteins; typing a number turns it off"><input type="checkbox" id="nw-kauto"${S.kAuto ? ' checked' : ''}> auto</label> <button type="button" class="btn" id="nw-kscan" title="how deep each protein’s ranked partners stay shared with another protein-of-interest, compared with random lists; exploratory">Suggest</button></span>
+        <span id="nw-k-wrap"><input type="number" id="nw-k" min="1" max="50" value="${S.k}" style="width:56px" aria-label="partners per protein"> per protein <label class="ctl" title="pick the number for you: for a pair, up to 15 own (non-shared) partners per protein keeping the drawing near 30 proteins; for larger lists, up to 10 keeping it near ${AUTO_N} proteins; typing a number turns it off"><input type="checkbox" id="nw-kauto"${S.kAuto ? ' checked' : ''}> auto</label> <button type="button" class="btn" id="nw-kscan" title="how deep each protein’s ranked partners stay shared with another protein-of-interest, compared with random lists; exploratory">Suggest</button></span>
         <div class="ctl"><span>Cutoff</span><div class="seg" id="nw-cut">${[10, 5, 1].map((f) => `<button data-f="${f}" class="${f === S.cut ? 'on' : ''}">${f}% FPR · ${CUT[f].toFixed(3)}</button>`).join('')}<button data-f="c" class="${S.cut === 'c' ? 'on' : ''}" title="an iLIS cutoff of your own">custom</button></div>
           <input type="number" id="nw-cutv" min="${CUT[10]}" max="1" step="0.01" value="${S.cutv}" style="width:70px${S.cut === 'c' ? '' : ';display:none'}" aria-label="custom iLIS cutoff" title="iLIS from ${CUT[10]} (the edge list holds the pairs past 10% FPR) to 1"></div>
         <label class="ctl" title="also require this ipTM (best over models); blank or 0 for none">ipTM ≥ <input type="number" id="nw-iptm" min="0" max="1" step="0.05" value="${S.iptm || ''}" placeholder="any" style="width:64px"></label>
@@ -7706,13 +7706,36 @@ async function viewNetwork(spId, q) {
       [...D].filter(([, t]) => t.d1 + t.d2 <= h + 1).sort((a, b) => (a[1].d1 + a[1].d2) - (b[1].d1 + b[1].d2) || b[1].n - a[1].n || gname(a[0]).localeCompare(gname(b[0])))
         .slice(0, CAP - keep.size).forEach(([j]) => keep.add(j)); }
     else if (S.add === 'top') expandTop(Q, S.k, keep);
-    else if (S.add === 'pair') {   // every partner shared between two or more proteins-of-interest, plus each protein's own top k partners
+    else if (S.add === 'pair') {   // every partner shared between two or more proteins-of-interest, plus each protein's own top k unique partners
       const sh = new Map();
       for (const i of Q) for (const [j, e] of nb(i)) { if (Q.has(j)) continue; const cur = sh.get(j) || { n: 0, sum: 0 }; cur.n++; cur.sum += e.best; sh.set(j, cur); }
       const sharedIds = [...sh].filter(([, v]) => v.n >= 2).sort((a, b) => b[1].n - a[1].n || b[1].sum - a[1].sum || gname(a[0]).localeCompare(gname(b[0]))).map(([j]) => j);
       for (const j of sharedIds) { if (keep.size >= CAP) break; keep.add(j); pairShared++; }
-      if (S.kAuto) { const kCap = Q.size <= 2 ? 8 : 10; let k = 1; for (let t = 2; t <= kCap; t++) { const n = expandTop(Q, t, new Set(keep)).size; if (n > AUTO_N || n >= CAP) break; k = t; } S.k = k; $('#nw-k').value = k; writeURL(); }
-      expandTop(Q, S.k, keep); }
+      const baseKeep = new Set(keep);
+      const expandOwn = (k, into) => {
+        for (const i of Q) {
+          let got = 0;
+          for (const j of nbS(i)) {
+            if (baseKeep.has(j)) continue;
+            if (into.size >= CAP) break;
+            into.add(j);
+            if (++got >= k) break;
+          }
+        }
+        return into;
+      };
+      if (S.kAuto) {
+        const target = Q.size <= 2 ? 30 : AUTO_N, kCap = Q.size <= 2 ? 15 : 10;
+        let k = 1, prevN = expandOwn(1, new Set(baseKeep)).size;
+        for (let t = 2; t <= kCap; t++) {
+          const n = expandOwn(t, new Set(baseKeep)).size;
+          if (n === prevN) break;
+          if (n > target || n >= CAP) break;
+          k = t; prevN = n;
+        }
+        S.k = k; $('#nw-k').value = k; writeURL();
+      }
+      expandOwn(S.k, keep); }
     let treeInfo = null; if (S.add === 'tree') treeInfo = Q.size >= 2 ? steinerAdd(Q, keep, E, CAP) : null;
     let expNote = '', lastFresh = 0, lastAdded = 0;   // what the latest click could add, and did
     for (const key of S.exp) {   // clicks: each expanded protein's top partners, in the order clicked, while under the cap
