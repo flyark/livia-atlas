@@ -28,18 +28,19 @@ LIVIA Atlas is a client-side single-page application routed by `location.hash`:
   - Accepts primary gene symbols, UniProt accessions (`P04637`), or FlyBase IDs (`FBgn0000117`). Unknown aliases or older synonyms fall back automatically to a live UniProt synonym lookup with direct links.
   - **Query parameters on protein pages**:
     - `?res=<query>`: Marks and evaluates a single residue (`?res=18`), a residue range (`?res=15-29`), comma-separated multi-spans or mutations (`?res=10-19,188-202`, `?res=R175,R248,R273`), a peptide sequence (`?res=ETFSDLWKLL`, up to 1 mismatch per 5 residues), or an ELM/PROSITE motif (`?res=LXXLL`, `?res=[ST]P`, `?res=PX(2,3)P`). Populates `#res-look` in plain DOM text with matched coordinates, sequence, domain context, AlphaFold DB monomer `pLDDT` mean and min-max, per-match counts, `cLIR` contacting partners/clusters, and `LIR`-only partners.
-    - `?cut=10` | `?cut=5` | `?cut=1`: Sets the active FPR cutoff for binding-site clustering (`10%`, `5%`, or `1%`).
+    - `?cut=10` | `?cut=5` | `?cut=1`: Sets the active AFM-v2.3 reference cutoff for binding-site clustering (`10%`, `5%`, or `1%` reference tier).
+    - `?cons=1`: Restricts binding-site clustering to partners passing the active cutoff in `≥ 2` models (multi-model screens only; filters 1/5 single-seed hits).
     - `?set=<dataset_or_set_id>`: Scopes the protein page to one screen or thematic set.
     - `?iso=<construct_id>`: Selects a specific isoform or construct when folded separately.
     - `?fpst=cluster|classic`, `?freqst=total`, `?rlab=0`: Controls Contact residue frequency (`by cluster`, `all models`, or `classic`), fingerprint style, and right-side labels.
-    - `?band=0|10|5|1`, `?ptcl=<cluster_id|active|none>`, `?kb=rep|unrep|ph|ge`, `?struct=1`, `?q=<filter>`: Pre-filters the Interactors table (FPR cutoff, cluster, BioGRID literature evidence, LIVIA 3D structure availability, or partner/contact-span text filter).
+    - `?band=0|10|5|1`, `?ptcl=<cluster_id|active|none>`, `?kb=rep|unrep|ph|ge`, `?struct=1`, `?ptcons=1`, `?q=<filter>`: Pre-filters the Interactors table (reference cutoff, cluster, BioGRID literature evidence, LIVIA 3D structure availability, `≥ 2`-model consensus, or partner/contact-span text filter).
 - **Pair page**: `https://flyark.github.io/livia-atlas/#/<species>/<proteinA>/<proteinB>`
   - Shows every ranked model across screens, full `lis.py` metrics (`iLIS`, `iLISA`, `ipTM`, `LIS`, `cLIS`, `ipSAE`, `actifpTM*`, `pDockQ`, `pDockQ2`), exact `LIR` and `cLIR` residue tracks and sequences, BioGRID literature records, ortholog/paralog pair matrices, and sequence exports (`↓ FASTA`, `↓ AF3 JSON`, `↓ Boltz YAML`, `↓ ColabFold CSV`).
   - **Query parameters on pair pages**:
     - `?rank=<n>`: Pre-selects ranked model `n` (1-based by `iLIS`).
     - `?resA=<query>&resB=<query>`: Marks and evaluates specific residues, ranges, comma-separated spans, or motifs on Protein A and/or Protein B, populating `#pair-res-look` with selected-model and all-model `cLIR` / `LIR` overlap counts.
 - **Network builder**: `https://flyark.github.io/livia-atlas/#/network/<species>?ids=<comma_separated_genes>&cut=5`
-  - Optional parameters: `add=none|top|link|tree|pair`, `k=<top_k>`, `rc=<comma_separated_genes>&focus=rc` (opens the Residue chord diagram for up to 12 proteins).
+  - Optional parameters: `ex=<example_tsv_filename>` (auto-loads a built-in example table such as `network_human_rbbp4_apms.tsv`), `add=none|top|link|tree|pair`, `k=<top_k>`, `rc=<comma_separated_genes>&focus=rc` (opens the Residue chord diagram for up to 12 proteins).
 
 ## One-Click Markdown Export & Plain-Text DOM Anchors
 
