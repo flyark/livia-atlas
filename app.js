@@ -2379,18 +2379,6 @@ async function viewHome() {
         <span>${tot('proteins')} proteins</span></div>
       <div class="chips">${coreSpecies(reg).map((x, i) => `<span class="chip-group">${i ? '' : '<span class="lbl">Try</span>'}${reg.species.length > 1 ? `<a class="lbl sp-link" href="#/${x.id}" title="every ${esc(spLow(x.label))} protein, screen and network">${esc(x.label)}</a>` : ''}`
         + (TRY[x.id] || []).map((g) => (Array.isArray(g) ? `<a class="chip" href="#/${x.id}/${g[1]}">${esc(g[0])}</a>` : `<a class="chip" href="#/${x.id}/${encodeURIComponent(g)}">${esc(g)}</a>`)).join('') + '</span>').join('')}${[...new Set((reg.species || []).filter((x) => x.group).map((x) => x.group))].sort((a, b) => (b === 'Model organisms') - (a === 'Model organisms')).map((g) => `<span class="chip-group"><a class="lbl sp-link" href="#/species" title="one AlphaFold Database heterodimer screen per species">${esc(g === 'Model organisms' ? 'More model organisms' : g)} (${fmtInt(reg.species.filter((x) => x.group === g).length)})</a></span>`).join('')}</div>
-      <div class="paper-strip" aria-label="Paper examples">
-        <div class="paper-strip-hd"><b>Explore Paper Examples (1-Click)</b><span>Jump directly to headline views from Kim &amp; Perrimon (2026)</span></div>
-        <div class="paper-pills">
-          <a class="paper-pill" href="#/human/P05412"><span class="ft">Fig. 2c</span><b>JUN (c-Jun) cLIP</b><span class="pm">JNK δ-domain</span></a>
-          <a class="paper-pill" href="#/human/P04637?res=R248"><span class="ft">Fig. 3b</span><b>TP53 R248</b><span class="pm">variant query</span></a>
-          <a class="paper-pill" href="#/human/P04637/Q00987"><span class="ft">Fig. 3c</span><b>TP53 × MDM2</b><span class="pm">paralog matrix</span></a>
-          <a class="paper-pill" href="#/network/human?ex=network_human_rbbp4_apms.tsv"><span class="ft">Fig. 4</span><b>RBBP4 AP-MS</b><span class="pm">Steiner network</span></a>
-          <a class="paper-pill" href="#/virus/taxon/10254"><span class="ft">Fig. 5</span><b>Vaccinia virus</b><span class="pm">218 proteins</span></a>
-          <a class="paper-pill" href="#/human/Q7KZI7?res=T595"><span class="ft">ED Fig. 7</span><b>MARK2 T595</b><span class="pm">kinase hotspot</span></a>
-          <a class="paper-pill" href="${LIVIA}universal.html?ex=alphafold3" target="_blank" rel="noopener"><span class="ft">Fig. 1</span><b>TP53–MDM2 AF3</b><span class="pm">in LIVIA ↗</span></a>
-        </div>
-      </div>
       <div class="showcase" id="showcase" aria-roledescription="carousel" aria-label="Example proteins"></div>
     </section>`;
   mountSearch($('#home-search'), { big: true, autofocus: true });
@@ -3353,7 +3341,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR${cutNote(5)}</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div></div>
     <div class="srcs scope isorow" id="isorow" hidden></div>
     <div class="setbar" id="setbar" hidden></div>
-    ${sp.one ? `<div class="caveat-bar"><b>Single-model AlphaFold DB screen:</b> high specificity for structured interfaces, but single-model folding misses ~52% of multi-model hits (especially disordered motifs). Displayed iLIS tiers (${CUT[10]} / ${CUT[5]} / ${CUT[1]}) are standardized AFM-v2.3 heterodimer reference cutoffs.</div>` : ''}
+    ${sp.one ? `<div class="caveat-bar"><b>Single-model AlphaFold DB screen:</b> high specificity for structured interfaces, with lower sensitivity than multi-model screens (especially for disordered motifs). Displayed iLIS tiers (${CUT[10]} / ${CUT[5]} / ${CUT[1]}) are standardized AFM-v2.3 heterodimer reference cutoffs.</div>` : ''}
     <div class="exec-sum" id="exec-sum" hidden></div>
     <nav class="subnav" aria-label="Sections"><span class="subnav-ctx" id="subnav-ctx" title="Back to top"><b>${esc(P.gene)}</b><span class="ctx-sp">${esc(sp.reg.label)}</span><span class="ctx-tag" id="subnav-ctx-cl" hidden></span></span>${nav.map(([t, l]) => `<button data-t="${t}"${t === 'c-homo' ? ' hidden' : ''}>${l}</button>`).join('')}</nav>
     <div class="card" id="c-iso" hidden></div>
@@ -6208,7 +6196,7 @@ async function viewSpecies(spId) {
     return { major, rest: all.filter((di) => !major.includes(di)) }; })();
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a></div>
     <div class="dshead"><h1>${esc(sp.reg.heading || sp.reg.label + ' protein interactions')}</h1><div class="pname">${spName(sp.reg.name)} · from the available interactome datasets, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
-    ${sp.one ? `<div class="caveat-bar"><b>Single-model AlphaFold DB screen:</b> high specificity for structured interfaces, but single-model folding misses ~52% of multi-model positive calls (especially disordered motifs). Displayed iLIS tiers (${CUT[10]} / ${CUT[5]} / ${CUT[1]}) are standardized AFM-v2.3 heterodimer reference cutoffs.</div>` : ''}
+    ${sp.one ? `<div class="caveat-bar"><b>Single-model AlphaFold DB screen:</b> high specificity for structured interfaces, with lower sensitivity than multi-model screens (especially for disordered motifs). Displayed iLIS tiers (${CUT[10]} / ${CUT[5]} / ${CUT[1]}) are standardized AFM-v2.3 heterodimer reference cutoffs.</div>` : ''}
     ${kpiRow(c)}
     <div class="card"><h2>Search</h2><div id="sp-search" style="margin-top:10px"></div></div>
     ${sp.viruses ? `<div class="card" id="vir-card"><div class="card-head"><div><h2>Viruses</h2><div class="muted">${fmtInt(sp.viruses.length)} viruses, each with the pairs of its proteins that the AlphaFold Database release folded (nearly every pair; the release left some out). Open one for its network.</div></div>
