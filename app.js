@@ -23,7 +23,7 @@ const VTAX = { 'monkeypox virus': ['Monkeypox virus', 619591], 'variola virus': 
   'human herpesvirus 1': ['Human herpesvirus 1', 10299], 'human herpesvirus 2': ['Human herpesvirus 2', 10310], 'human herpesvirus 8 type p': ['Human herpesvirus 8 type P', 868565],
   'human cytomegalovirus': ['Human cytomegalovirus', 295027], 'varicella-zoster virus': ['Varicella-zoster virus', 10338], 'human papillomavirus type 16': ['Human papillomavirus type 16', 333760],
   'hepatitis b virus': ['Hepatitis B virus', 10407], 'zaire ebolavirus': ['Zaire ebolavirus', 128952] };
-const cutNote = (f) => `<i class="kc" tabindex="0" role="note" data-tip="AFM-v2.3 heterodimer reference tier (calibrated at ${f}% empirical FPR on top-ranked 5-model ColabFold alphafold2_multimer_v3), applied to each pair's best model; reference tier only for single-model AFDB, homodimers, and other predictors (see About)">iLIS ≥ ${CUT[f].toFixed(3)}</i>`;   // the cutoff under a "past … FPR" count, its scope on hover
+const cutNote = (f) => `<i class="kc" tabindex="0" role="note" data-tip="iLIS reference cutoff (${f}% empirical FPR on the top-ranked of five heterodimer models predicted with AlphaFold-Multimer v2.3 weights; ColabFold --model-type alphafold2_multimer_v3), applied to each pair's best model; reference tier only for single-model AFDB, homodimers, and other predictors (see About)">iLIS ≥ ${CUT[f].toFixed(3)}</i>`;   // the cutoff under a "past … FPR" count, its scope on hover
 const BAND = { 1: '#6B21A8', 5: '#0C735C', 10: '#875F00', 0: '#A7B2BF' };   // LIVIA's band colors (js/livia-core.js ilisColor)
 const bandOf = (v) => (v >= CUT[1] ? 1 : v >= CUT[5] ? 5 : v >= CUT[10] ? 10 : 0);
 const bandLabel = { 1: '1% FPR', 5: '5% FPR', 10: '10% FPR', 0: 'below' };
@@ -1274,7 +1274,7 @@ async function homoCard(sp, P, gone, B) {
       const runs = new Set(ps.map((p) => p.run)).size, mlab = (p) => (Number.isFinite(p.model) ? `model ${p.model}` : p.rank ? `rank ${p.rank}` : 'model'), others = ps.slice(1).map((p) => `${mlab(p)} ${vmfmt('iLIS', p.iLIS)}`).join(', ');
       return `<p class="hd-line"><b>${esc(sp.dsShort[di] || d.id)}</b> · ${cite.url ? `<a href="${esc(cite.url)}" target="_blank" rel="noopener">${esc(cite.short)} ↗</a>` : esc(cite.short)} · ${fmtInt(ps.length)} model${ps.length === 1 ? '' : 's'}${runs > 1 ? ` in ${fmtInt(runs)} runs` : ''} · best ${mlab(b)}${Number.isFinite(b.qLen) ? ` · ${fmtInt(b.qLen)} aa per copy` : ''}${u ? ` <a class="btn hd-open" href="${esc(u)}" target="_blank" rel="noopener" title="this model's run in LIVIA, structures and PAE read from FlyPredictome">Open in LIVIA ↗</a>` : ''}</p>
         ${kpis((k) => b[k], b.qLIR, b.qcLIR)}${b.qL ? homoTrack({ len_i: b.qLen, LIR_indices_i: b.qL, cLIR_indices_i: b.qC }) : ''}${others ? `<p class="muted hd-note">Other models: ${others}.</p>` : ''}`; }).join('')
-      + `<details class="how hd-note"><summary>How homodimers are called</summary><p>Evaluated with heterodimer AFM-v2.3 reference cutoffs (iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}, corresponding to 10% / 5% / 1% heterodimer FPR), not separately calibrated on homodimers (C2 symmetry and coiled-coils increase call rates); each score is colored by the reference band it passes; actifpTM* is approximate.</p></details>`;
+      + `<details class="how hd-note"><summary>How homodimers are called</summary><p>Evaluated with heterodimer AlphaFold-Multimer v2.3 reference cutoffs (iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}, corresponding to 10% / 5% / 1% heterodimer FPR), not separately calibrated on homodimers (C2 symmetry and coiled-coils increase call rates); each score is colored by the reference band it passes; actifpTM* is approximate.</p></details>`;
   }
   if (!list.length) return;
   const ctl = $('#homo-ctl');
@@ -1284,7 +1284,7 @@ async function homoCard(sp, P, gone, B) {
     $('#homo-afdb').innerHTML = `<p class="hd-line"><b>${esc(e.entry)}</b>${e.iso ? ` · <span class="flag">isoform ${esc(e.uniprot_A)}</span>` : ` · ${esc(e.uniprot_A)}`} · ${fmtInt(+e.len_i)} aa per copy${Number.isFinite(parseFloat(e.pLDDT)) ? ` · pLDDT ${(+e.pLDDT).toFixed(1)}` : ''} <span id="homo-struct"></span></p>
       ${kpis(num, +e.LIR_i, +e.cLIR_i)}
       ${homoTrack(e)}
-      <details class="how hd-note"><summary>How homodimers are called</summary><p>Evaluated with heterodimer AFM-v2.3 reference cutoffs (iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}, corresponding to 10% / 5% / 1% heterodimer FPR), not separately calibrated on homodimers (C2 symmetry and coiled-coils increase call rates); each score is colored by the reference band it passes; actifpTM* is approximate. Interaction residues (LIR) have a confident predicted aligned error to the other copy; contact residues (cLIR) also lie at Cβ ≤ 8 Å from it. The track shows the first copy (chain A), numbered from its first residue; the second copy is the same protein.</p></details>`;
+      <details class="how hd-note"><summary>How homodimers are called</summary><p>Evaluated with heterodimer AlphaFold-Multimer v2.3 reference cutoffs (iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}, corresponding to 10% / 5% / 1% heterodimer FPR), not separately calibrated on homodimers (C2 symmetry and coiled-coils increase call rates); each score is colored by the reference band it passes; actifpTM* is approximate. Interaction residues (LIR) have a confident predicted aligned error to the other copy; contact residues (cLIR) also lie at Cβ ≤ 8 Å from it. The track shows the first copy (chain A), numbered from its first residue; the second copy is the same protein.</p></details>`;
     const ad = { hd: true, tar: e.src_tar, cif_off: +e.cif_offset, cif_len: +e.cif_size, pae_off: +e.pae_offset, pae_len: +e.pae_size };
     if (e.src_tar && [ad.cif_off, ad.cif_len, ad.pae_off, ad.pae_len].every(Number.isFinite)) structLink($('#homo-struct'), { model: e.entry, shown: false, addr: ad }, 'hd-open');
   };
@@ -1314,7 +1314,7 @@ async function viewHomoDataset() {
     ['src_tar, cif_offset, cif_size, pae_offset, pae_size', 'where the model and its PAE sit in the release archive at EBI (byte ranges), which the site reads to open the structure in LIVIA']];
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/datasets">Datasets</a> / <a href="#/datasets/homodimers">Homodimers</a></div>
     <h1>${esc(H.title)}</h1>
-    <p class="muted">Each protein paired with itself, from the AlphaFold Database homodimer release (${src}), one model per protein, rescored with lis.py. Homodimers are evaluated with heterodimer AFM-v2.3 reference cutoffs (iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}, not separately calibrated on homodimers; C2 symmetry and coiled-coils increase call rates). Every target entry of the release is scored${H.unscored ? `, except ${fmtInt(H.unscored.n)} (${esc(H.unscored.note)}; listed in ${esc(H.unscored.file)} beside the files)` : ''}. Models ${esc(H.license || 'CC BY 4.0')}; cite the release (${src}) and LIVIA.</p>
+    <p class="muted">Each protein paired with itself, from the AlphaFold Database homodimer release (${src}), one model per protein, rescored with lis.py. Homodimers are evaluated with heterodimer AlphaFold-Multimer v2.3 reference cutoffs (iLIS ${CUT[10]} / ${CUT[5]} / ${CUT[1]}, not separately calibrated on homodimers; C2 symmetry and coiled-coils increase call rates). Every target entry of the release is scored${H.unscored ? `, except ${fmtInt(H.unscored.n)} (${esc(H.unscored.note)}; listed in ${esc(H.unscored.file)} beside the files)` : ''}. Models ${esc(H.license || 'CC BY 4.0')}; cite the release (${src}) and LIVIA.</p>
     ${H.models ? `<p class="pname" style="margin:-4px 0 12px">Run settings: ${runSettings(H)}${H.runNote ? ` <span class="muted">· ${esc(H.runNote)}</span>` : ''}</p>` : ''}
     <div class="kpis"><div class="kpi"><b>${fmtInt(tot)}</b><span>entries</span></div><div class="kpi"><b>${fmtInt(on)}</b><span>on a protein page</span></div><div class="kpi"><b>${fmtInt(sps.length)}</b><span>species</span></div></div>
     <div class="card"><div class="card-head"><div><h2>Species</h2><div class="muted">each list holds every entry, those without a protein page too</div></div></div>
@@ -1332,7 +1332,7 @@ async function viewHomoList(spId, q) {
   if (!H || !H.species || !H.species[spId]) { app.innerHTML = `<div class="empty">No homodimers for ${esc(sp.reg.label)}. <a href="#/datasets/homodimers">The species with homodimers</a></div>`; return; }
   document.title = `Homodimers · ${sp.reg.label} · LIVIA Atlas`;
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a> / Homodimers</div><h1>Homodimers <span class="muted" style="font-weight:500">${spName(sp.reg.name)}</span></h1>
-    <p class="muted">Every entry of the AlphaFold Database homodimer release for this species (<a href="#/datasets/homodimers">about the release and its files</a>), one model per protein, rescored with lis.py and evaluated with heterodimer AFM-v2.3 reference cutoffs (10% / 5% / 1% heterodimer FPR, not separately calibrated on homodimers; C2 symmetry and coiled-coils increase call rates).</p>
+    <p class="muted">Every entry of the AlphaFold Database homodimer release for this species (<a href="#/datasets/homodimers">about the release and its files</a>), one model per protein, rescored with lis.py and evaluated with heterodimer AlphaFold-Multimer v2.3 reference cutoffs (10% / 5% / 1% heterodimer FPR, not separately calibrated on homodimers; C2 symmetry and coiled-coils increase call rates).</p>
     <div class="card"><div class="controls" style="margin:0 0 10px"><input type="search" id="hl-q" placeholder="filter by gene, UniProt accession or entry" aria-label="Filter homodimers" style="width:300px" value="${esc(q.get('q') || '')}">
       <label class="ctl" title="entries whose UniProt accession has no protein page (some are other entries of a gene that has one, marked gene page)"><input type="checkbox" id="hl-nopage"> only entries without a page</label>
       <label class="ctl">Show <select id="hl-band" aria-label="Which homodimers"><option value="0">every entry</option><option value="10"${H.species[spId].slim === 2 && !(q.get('q') || '').trim() ? ' selected' : ''}>past 10% FPR (iLIS ≥ ${CUT[10]})</option><option value="5">past 5% FPR (iLIS ≥ ${CUT[5]})</option><option value="1">past 1% FPR (iLIS ≥ ${CUT[1]})</option></select></label><span class="muted" id="hl-note">Loading…</span></div>
@@ -3341,7 +3341,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         <div class="kpi f5"><b id="kp-5">${fmtInt(P.pos5)}</b><span>past 5% FPR${cutNote(5)}</span></div><div class="kpi f1"><b id="kp-1">${fmtInt(P.pos1)}</b><span>past 1% FPR${cutNote(1)}</span></div></div></div>
     <div class="srcs scope isorow" id="isorow" hidden></div>
     <div class="setbar" id="setbar" hidden></div>
-    ${sp.one ? `<div class="caveat-bar"><b>Single-model AlphaFold DB screen:</b> high specificity for structured interfaces, with lower sensitivity than multi-model screens (especially for disordered motifs). Displayed iLIS tiers (${CUT[10]} / ${CUT[5]} / ${CUT[1]}) are standardized AFM-v2.3 heterodimer reference cutoffs.</div>` : ''}
+    ${sp.one ? `<div class="caveat-bar"><b>Single-model AlphaFold DB screen:</b> high specificity for structured interfaces, with lower sensitivity than multi-model screens (especially for disordered motifs). Displayed iLIS tiers (${CUT[10]} / ${CUT[5]} / ${CUT[1]}) are standardized AlphaFold-Multimer v2.3 heterodimer reference cutoffs.</div>` : ''}
     <div class="exec-sum" id="exec-sum" hidden></div>
     <nav class="subnav" aria-label="Sections"><span class="subnav-ctx" id="subnav-ctx" title="Back to top"><b>${esc(P.gene)}</b><span class="ctx-sp">${esc(sp.reg.label)}</span><span class="ctx-tag" id="subnav-ctx-cl" hidden></span></span>${nav.map(([t, l]) => `<button data-t="${t}"${t === 'c-homo' ? ' hidden' : ''}>${l}</button>`).join('')}</nav>
     <div class="card" id="c-iso" hidden></div>
@@ -4953,7 +4953,8 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
   // The 3D cell of a top partner, as the partner table's: its run in LIVIA from FlyPredictome when a SET is known, else the AFDB
   // model (displayed, or read from the release archive); a dash when there is none
   function tl3d(p, m) {   // m: the row's model; its own run when that opens in LIVIA
-    const r = sp.byKey.get(p.id), dash = `<span class="muted" title="${esc(no3dWhy(B, p, AX))}">–</span>`;
+    const r = sp.byKey.get(p.id), runId = (m && m.run) || (p.bm && p.bm.run), pend = isFpPending(B, runId);
+    const dash = `<span class="muted" style="${pend ? 'font-size:12px' : ''}" title="${esc(no3dWhy(B, p, AX))}">${pend ? 'pending' : '–'}</span>`;
     if (VX) { const x = r && VX.get(r.i); return x && x.shown && x.model ? `<a href="${LIVIA}dimer.html?id=${encodeURIComponent(x.model)}" target="_blank" rel="noopener" title="${esc(x.model)} in LIVIA, from the AlphaFold Database">LIVIA ↗</a>`
       : x && x.addr && x.model ? `<a href="#" class="arch" data-m="${esc(x.model)}" title="${esc(x.model)} in LIVIA, read from the release archive at EBI">LIVIA ↗</a>` : dash; }
     const x = m && fpUrl(B, m.run) ? m : fpBest(B, p), fu = x && fpUrl(B, x.run, x.rank); if (fu) return tag3d(p, x, false, `<a href="${esc(fu)}" target="_blank" rel="noopener" title="${x === p.bm ? 'the best-iLIS run of this pair' : x === m ? "this row's model" : `this pair's best run on FlyPredictome (${esc(sp.dsShort[x.di])}, iLIS ${(x.iLIS || 0).toFixed(3)})`}, in ${fpPage(B, x.run)}">LIVIA ↗</a>`);
@@ -5073,7 +5074,7 @@ async function viewProtein(spId, q, setId = '', iso = null) {   // setId: only t
         ${showSrc() ? `<td class="srcc"${(() => { const t = overlapNote(sp, B, p.preds, P); return t ? ` title="${esc(t)}"` : ''; })()}>${SETS ? setBadges(p.sets) : srcBadges(sp, p.src)}</td>` : ''}
         <td><a href="${href}" title="the pair's page: its interaction residues and every model">view</a></td>
         <td>${(() => { const x = fpBest(B, p), fu = x && fpUrl(B, x.run, x.rank); return fu ? tag3d(p, x, false, `<a href="${esc(fu)}" target="_blank" rel="noopener" title="${x === p.bm ? 'the best-iLIS run of this pair' : `this pair's best run on FlyPredictome (${esc(sp.dsShort[x.di])}, iLIS ${(x.iLIS || 0).toFixed(3)})`}, in ${fpPage(B, x.run)}">LIVIA ↗</a>`) : ''; })() || (() => { const pm = predPick(sp, B, p.preds || [], p.bm); return pm && pm === p.bm ? tag3d(p, pm, false, predLinkOf(sp, B, pm, '', 'LIVIA ↗')) : ''; })() || (ax && ax.addr && ax.model ? tag3d(p, null, true, `<a href="#" class="arch" data-m="${esc(ax.model)}" title="${esc(ax.model)} in LIVIA, read from the release archive at EBI (${((ax.addr.cif_len + ax.addr.pae_len) / 1048576).toFixed(1)} MB)">LIVIA ↗</a>`)
-          : (() => { const pm = predPick(sp, B, p.preds || [], p.bm); return pm ? tag3d(p, pm, false, predLinkOf(sp, B, pm, '', 'LIVIA ↗')) : ''; })() || `<span class="muted" title="${esc(no3dWhy(B, p, AX))}">–</span>`)}</td>
+          : (() => { const pm = predPick(sp, B, p.preds || [], p.bm); return pm ? tag3d(p, pm, false, predLinkOf(sp, B, pm, '', 'LIVIA ↗')) : ''; })() || (() => { const pend = p.bm && isFpPending(B, p.bm.run); return `<span class="muted" style="${pend ? 'font-size:12px' : ''}" title="${esc(no3dWhy(B, p, AX))}">${pend ? 'pending' : '–'}</span>`; })())}</td>
         <td class="n v"><a href="${href}" style="color:${BAND_TXT[b]};font-weight:${BAND_W[b]}" title="${bandLabel[b]}${fromScr(p.bm)}">${p.best.toFixed(3)}</a></td>
         ${BCOL.map((kk) => { const val = p['b:' + kk]; return kk === 'ipTM' ? `<td class="n v" style="${bandSty(FPR.ipTM, val)}" title="the best model's ipTM">${vmfmt(kk, val)}</td>` : `<td class="n">${vmfmt(kk, val)}</td>`; }).join('')}
         <td class="n"${p.spn.tip ? ` title="${esc(p.spn.tip)}"` : ''}>${fmtInt(p.contacts)}</td>${ONE ? '' : `<td class="n" title="models past the 10% FPR cutoff, of the pair's models in the screens shown${p.preds.length > p.counted.length ? `; the scores in this row leave out repeat runs of the same two sequences, keeping the run with the highest iLIS (${p.counted.length} of the ${p.preds.length} model${plS(p.preds.length)})` : ''}">${p.pass} / ${p.preds.length}</td>`}<td class="spn"${p.spn.tip ? ` title="${esc(p.spn.tip)}"` : ''}>${p.spn.short ? esc(p.spn.short) : '<span class="muted">–</span>'}</td></tr>${subs}`; }).join('')}</tbody>`;
@@ -5483,18 +5484,19 @@ const runScores = (B, rid, rk) => {   // rk: the rank LIVIA opens first (the row
   const r = {}; for (const [rk, x] of xs) if (rk != null) r[rk] = ATLAS_K.map((k) => (Number.isFinite(x[k]) ? +x[k].toFixed(4) : null));
   return '#atlas=' + encodeURIComponent(JSON.stringify({ k: ATLAS_K, r, ...(rk > 1 && r[rk] ? { o: rk } : {}) })); };
 const fpUrl = (B, rid, rk) => { const u = fpUrl0(B, rid); return u ? u + runScores(B, rid, rk) : ''; };
-// Why a pair has no 3D link: its best run is a FlyPredictome run the FlyPredictome server does not show yet (no SET), or no model the Atlas can open
+const isFpPending = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); return !!(ru && (ru.ds === 'flypredictome' || ORTHO_DS[ru.ds]) && !fpUrl(B, ru.id)); };
+// Why a pair has no 3D link: its best run is a FlyPredictome / Ortholog Interactome run pending server upload, or no model the Atlas can open
 const no3dWhy = (B, p, AX) => { const ru = p && p.bm && B.runs && B.runs.get(p.bm.run);
-  if (ru && ru.ds === 'flypredictome' && !fpUrl(B, ru.id)) return 'its best run is not on the FlyPredictome server yet (a batch FlyPredictome has not loaded), so it cannot open in LIVIA';
-  if (ru && ORTHO_DS[ru.ds] && !fpUrl(B, ru.id)) return 'its best run is in a batch FlyPredictome does not show, so it cannot open in LIVIA';
+  if (ru && ru.ds === 'flypredictome' && !fpUrl(B, ru.id)) return '3D coordinates and PAE for this batch will open in LIVIA once added to the FlyPredictome server';
+  if (ru && ORTHO_DS[ru.ds] && !fpUrl(B, ru.id)) return '3D coordinates and PAE for this batch will open in LIVIA once added to the FlyPredictome Ortholog Interactome server (sequences can be exported via ↓ Export in the meantime)';
   if (ru && archOf(ru.ds)) return predPass(p.preds || [], p.bm.run) ? 'the Atlas has no archive address for this run' : `below the 10% FPR cutoff (iLIS < ${CUT[10]}): the Atlas opens this screen's models only for pairs past it`;
   return AX ? 'no AFDB model the Atlas indexes for this pair (indexed past the 10% FPR cutoff)' : 'the models of this screen are not available to the Atlas'; };
 const fpPage = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); return ru && ORTHO_DS[ru.ds] ? "LIVIA's ortholog page" : "LIVIA's FlyPredictome page"; };
 const fpLink = (B, rid) => { const u = fpUrl(B, rid); return u ? ` <a class="fp-open" href="${esc(u)}" target="_blank" rel="noopener" title="this run in ${fpPage(B, rid)}, read from FlyPredictome">Open in LIVIA ↗</a>` : ''; };
 // Why a run has no structure in LIVIA, said where a link would be.
 const why3d = (B, rid) => { const ru = B && B.runs && B.runs.get(rid); if (!ru) return '';
-  if (ru.ds === 'flypredictome') return 'this run is not on the FlyPredictome server yet (a batch FlyPredictome has not loaded), so it cannot open in LIVIA';
-  if (ORTHO_DS[ru.ds]) return 'this run is in a batch FlyPredictome does not show, so it cannot open in LIVIA';
+  if (ru.ds === 'flypredictome') return '3D coordinates and PAE for this batch will open in LIVIA once added to the FlyPredictome server';
+  if (ORTHO_DS[ru.ds]) return '3D coordinates and PAE for this batch will open in LIVIA once added to the FlyPredictome Ortholog Interactome server (sequences can be exported via ↓ Export in the meantime)';
   if (archOf(ru.ds) && !/___/.test(ru.name || '')) return 'the Atlas has no archive address for this run';
   if (archOf(ru.ds)) return `below the 10% FPR cutoff (iLIS < ${CUT[10]}): the Atlas opens this screen's models only for pairs past it`;
   const ma = modelsAt(ru.ds); if (ma) return `this screen's models are in ${ma.label}, which serves them by rsync only, not to a browser`;
@@ -5511,7 +5513,7 @@ function open3d(host, sp, B, P, pred, R2, alive, text = 'Open in LIVIA ↗') {
   if (fu) { host.innerHTML = `<a class="btn" href="${esc(fu)}" target="_blank" rel="noopener" title="this model's run in ${fpPage(B, pred.run)}, structures and PAE read from FlyPredictome">${esc(text)}</a>`; return; }
   const ar = pred && archOf(sp.dsIds[pred.di]), an = ar && ((B.runs.get(pred.run) || {}).name || ''), pp = an && (B.partners || []).find((x) => x.preds.includes(pred)); if (an && an.includes('___') && pp && predPass(pp.preds, pred.run)) { host.innerHTML = predLink(ar, sp.dsIds[pred.di], an, 'btn', text); return; }
   if (pred && (sp.viruses || (isAfdbRun(sp, pred) && sp.reg && sp.reg.structs))) { pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (alive()) structLink(host, x, 'btn', text); }); return; }
-  if (pred) host.innerHTML = `<span class="muted no3d" title="${esc(why3d(B, pred.run))}">no structure in LIVIA</span>`; }
+  if (pred) host.innerHTML = `<span class="muted no3d" title="${esc(why3d(B, pred.run))}">${isFpPending(B, pred.run) ? '3D pending (FlyPredictome update)' : 'no structure in LIVIA'}</span>`; }
 // A pair's best run that opens in LIVIA from FlyPredictome: its best-iLIS run when that one has a SET, else its best run that has.
 const fpBest = (B, p) => { if (!p.bm) return null; if (fpUrl(B, p.bm.run)) return p.bm;
   let t = null; for (const x of p.preds) if ((!t || (x.iLIS || 0) > (t.iLIS || 0)) && fpUrl(B, x.run)) t = x; return t; };
@@ -5750,7 +5752,8 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
     if (fu) return `<a class="fp-open" href="${esc(fu)}" target="_blank" rel="noopener" title="this run in ${fpPage(B, p.run)}, read from FlyPredictome">LIVIA ↗</a>`;
     const ar = archOf(sp.dsIds[p.di]), an = ar && ((B.runs.get(p.run) || {}).name || ''); if (an && an.includes('___') && predPass(rowsP, p.run)) return predLink(ar, sp.dsIds[p.di], an, 'fp-open', 'LIVIA ↗');
     if (sp.viruses || (isAfdbRun(sp, p) && sp.reg && sp.reg.structs)) return '<span class="afdb3d"></span>';
-    return `<span class="muted" title="${esc(why3d(B, p.run))}">–</span>`; };
+    const pend = isFpPending(B, p.run);
+    return `<span class="muted" style="${pend ? 'font-size:12px' : ''}" title="${esc(why3d(B, p.run))}">${pend ? 'pending' : '–'}</span>`; };
   const pdq = (h) => h.replace('<td', '<td data-pdq');
   // Ranked models: a long table opens on the models past the link's cutoff (10% unless cut=5 or cut=1) and the best model;
   // the rest open on request. All shown when every model or none passes, or when there are 10 rows or fewer.
@@ -6171,7 +6174,7 @@ async function viewPair(spId, q1, q2, setId = '') {   // setId: the scope the pa
   { const wantRk = Math.max(0, parseInt(hqP.get('rank'), 10) || 0), rkIdx = wantRk >= 1 ? rowsP.findIndex((p) => (!consSet.has(p) || consOnly) && tRank(p) === wantRk) : -1;
     pick(rkIdx >= 0 ? rkIdx : rowsP.indexOf(best)); }
   pairRefs(sp, P, O, () => stale(gen)).catch(() => {}).then(() => { if (!stale(gen)) { pairSources(sp, P, O, part, consOnly); mountSections(); } });   // Prediction sources under the BioGRID card, or where it would sit
-  { const hasFp = !!fpBest(B, part), none = () => { if (!hasFp && part.bm && !$('#pair-struct').childElementCount) { const ar = archOf(sp.dsIds[part.bm.di]), an = ar && ((B.runs.get(part.bm.run) || {}).name || ''); $('#pair-struct').innerHTML = an && an.includes('___') && predPass(part.preds, part.bm.run) ? predLink(ar, sp.dsIds[part.bm.di], an, 'btn primary', 'Open in LIVIA ↗') : `<span class="muted no3d" title="${esc(why3d(B, part.bm.run))}">no structure in LIVIA</span>`; } };   // the best FlyPredictome run that opens, else the AFDB model, else why neither
+  { const hasFp = !!fpBest(B, part), none = () => { if (!hasFp && part.bm && !$('#pair-struct').childElementCount) { const ar = archOf(sp.dsIds[part.bm.di]), an = ar && ((B.runs.get(part.bm.run) || {}).name || ''); $('#pair-struct').innerHTML = an && an.includes('___') && predPass(part.preds, part.bm.run) ? predLink(ar, sp.dsIds[part.bm.di], an, 'btn primary', 'Open in LIVIA ↗') : `<span class="muted no3d" title="${esc(why3d(B, part.bm.run))}">${isFpPending(B, part.bm.run) ? '3D pending (FlyPredictome update)' : 'no structure in LIVIA'}</span>`; } };   // the best FlyPredictome run that opens, else the AFDB model, else why neither
     if (sp.viruses || (sp.reg && sp.reg.structs)) { const R2 = sp.byKey.get(O.key); pairStruct(sp, P.i, R2 ? R2.i : null).then((x) => { if (stale(gen)) return; structLink($('#pair-struct'), x, hasFp ? 'btn' : 'btn primary', hasFp ? 'AFDB model ↗' : 'Open in LIVIA ↗'); none();
       app.querySelectorAll('.models .afdb3d').forEach((h) => { structLink(h, x, 'fp-open', 'LIVIA ↗'); if (!h.childElementCount) h.innerHTML = '<span class="muted" title="no AFDB model the Atlas indexes for this pair">–</span>'; }); }); } else none(); }   // a virus pair: its model in LIVIA
   let rsz; window.onresize = () => { clearTimeout(rsz); rsz = setTimeout(() => { const f = $('#iface'); if (f && f._redraw) f._redraw(); }, 150); };
@@ -6196,7 +6199,7 @@ async function viewSpecies(spId) {
     return { major, rest: all.filter((di) => !major.includes(di)) }; })();
   app.innerHTML = `<div class="crumbs"><a href="#/">Atlas</a> / <a href="#/${sp.id}">${esc(sp.reg.label)}</a></div>
     <div class="dshead"><h1>${esc(sp.reg.heading || sp.reg.label + ' protein interactions')}</h1><div class="pname">${spName(sp.reg.name)} · from the available interactome datasets, one page per ${sp.manifest.keyedBy ? 'gene' : 'protein'}</div></div>
-    ${sp.one ? `<div class="caveat-bar"><b>Single-model AlphaFold DB screen:</b> high specificity for structured interfaces, with lower sensitivity than multi-model screens (especially for disordered motifs). Displayed iLIS tiers (${CUT[10]} / ${CUT[5]} / ${CUT[1]}) are standardized AFM-v2.3 heterodimer reference cutoffs.</div>` : ''}
+    ${sp.one ? `<div class="caveat-bar"><b>Single-model AlphaFold DB screen:</b> high specificity for structured interfaces, with lower sensitivity than multi-model screens (especially for disordered motifs). Displayed iLIS tiers (${CUT[10]} / ${CUT[5]} / ${CUT[1]}) are standardized AlphaFold-Multimer v2.3 heterodimer reference cutoffs.</div>` : ''}
     ${kpiRow(c)}
     <div class="card"><h2>Search</h2><div id="sp-search" style="margin-top:10px"></div></div>
     ${sp.viruses ? `<div class="card" id="vir-card"><div class="card-head"><div><h2>Viruses</h2><div class="muted">${fmtInt(sp.viruses.length)} viruses, each with the pairs of its proteins that the AlphaFold Database release folded (nearly every pair; the release left some out). Open one for its network.</div></div>
